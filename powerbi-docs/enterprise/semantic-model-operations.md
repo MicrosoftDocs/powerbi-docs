@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
 ms.topic: reference
-ms.date: 11/06/2024
+ms.date: 11/07/2024
 
 ---
 
@@ -26,40 +26,38 @@ Use semantic model logs to:
 
 This table lists the semantic model logs. For more information on the events and drill-down into the `ExecutionMetrics` event, see [Events and schema](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure#events-and-schema).
 
-| Column Name | Type | Description |
+| ColumnName | ColumnType | Description |
 |--|--|--|
-| ApplicationContext | dynamic | Property bag of unique identifiers providing details about the application executing the request. for example, report ID. |
+| ApplicationContext | dynamic | Property bag of unique identifiers providing details about the application executing the request. For example, report ID. |
 | ApplicationName | string | Contains the name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program. |
+| CallerIpAddress | string | Called IP address |
+| CapacityId | string | Unique identifier of the capacity hosting the artifact being operated on. |
+| Category | string | Category of the events, like Audit/Security/Request. |
+| CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
+| CpuTimeMs | long | Amount of CPU time (in milliseconds) used by the event. |
+| CustomerTenantId | string | Fabric tenant identifier |
 | DatasetMode | string | The mode of the semantic model. Import, DirectQuery, or Composite. |
-| EventText | string | Contains verbose information associated with the operation, for example, DAX Query. |
+| DurationMs | long | Amount of time (in milliseconds) taken by the   operation. |
+| EventText | string | Contains verbose information associated with the   operation, for example, DAX Query. |
+| ExecutingUser | string | The user running the operation. |
+| Identity | dynamic | Information about user and claims. |
+| ItemId | string | Unique identifier of the resource logging the data. |
+| ItemKind | string | Type of artifact logging the operation, for example, semantic model. |
+| ItemName | string | The name of the Power BI artifact logging this   operation. |
+| Level | string | Contains the severity level of the operation being logged. Success, informational, warning, or wrror. |
 | OperationDetailName | string | More details about the operation |
+| OperationId | string | Unique identifier of the operation or the request. Same as `XmlaRequestId` |
+| OperationName | string | The operation associated with the log record. |
 | ProgressCounter | long | Progress counter |
+| Region | string | Contains the Fabric region |
 | ReplicaId | string | Replica identifier that will let you identify the replica when Query Scale Out (QSO) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled semantic models the ReplicaId is always 'AAA' |
+| Status | string | Status of the operation. |
 | StatusCode | int | Status code of the operation. It covers success and failure. |
+| Timestamp | datetime | The timestamp (UTC) of when the log was generated. |
 | User | string | The user associated with the running operation. Used when an end-user identity must be impersonated on the server. |
+| WorkspaceId | string | Unique identifier of the workspace containing the item being operated on. |
+| WorkspaceMonitoringTableName | string | Name of the table the events are available in Fabric Workspace monitoring |
+| WorkspaceName | string | Name of the Fabric workspace containing the item. |
 | XmlaObjectPath | string | Object path. A comma-separated list of parents, starting with the object's parent. |
 | XmlaProperties | string | Properties of the XMLA request |
-| XmlaRequestId | string | Unique Identifier of request. |
-| XmlaSessionId | string |  |
-| Timestamp | datetime | The timestamp (UTC) of when the log was generated. |
-| ArtifactId | string | Unique identifier of the resource logging the data. |
-| ArtifactKind | string | Type of artifact logging the operation, for example, semantic model. |
-| CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
-| CustomerTenantId | string | Fabric tenant identifier |
-| Level | string | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
-| Category | string | Category of the events, like Audit/Security/Request. |
-| OperationId | string |  |
-| PremiumCapacityId | string | Unique identifier of the capacity hosting the artifact being operated on. |
-| TableName | string | Contains the table name for monitoring database where the event is surfaced. |
-| WorkspaceId | string | Unique identifier of the workspace containing the item being operated on. |
-| OperationName | string | The operation associated with the log record. |
-| ArtifactName | string | The name of the Power BI artifact logging this operation. |
-| WorkspaceName | string | Name of the Fabric workspace containing the item. |
-| PremiumCapacityName | string | Contains the name of Fabric capacity. |
-| Identity | dynamic | Information about user and claims. |
-| DurationMs | long | Amount of time (in milliseconds) taken by the operation. |
-| Status | string | Status of the operation. |
-| CallerIpAddress | string |  |
-| Region | string | Contains the Fabric region. |
-| CpuTimeMs | long | Amount of CPU time (in milliseconds) used by the event. |
-| ExecutingUser | string | The user running the operation. |
+| XmlaSessionId | string | Analysis services session identifier |
