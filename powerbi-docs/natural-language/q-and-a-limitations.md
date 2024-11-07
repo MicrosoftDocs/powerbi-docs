@@ -45,18 +45,6 @@ The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from
 - Direct Query   
 - DirectLake
 
-## Supported data sources 
-
-Power BI Q&A supports the following configurations of data sources in the Power BI service:
-
-- Import mode  
-- Direct Query   
-- Live connect to Azure Analysis Services
-- Live connect to on-premise SQL Server Analysis Services tabular models
-- DirectLake models 
-
-In each of these configurations, row-level security is supported. Object-level security is supported for models hosted in the Power BI service but not for live connect to Azure Analysis Services or on-premise SQL Server Analysis Services models. 
-
 ## DirectQuery support for Q&A  
 
 Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCTCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources.  
