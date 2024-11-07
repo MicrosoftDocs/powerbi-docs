@@ -51,7 +51,7 @@ The review questions only store questions asked about your data model for up to 
 
 Users can also keep their questions from being recorded by selecting **Settings** > **General** and setting the **Q&A option** to Off.
 
-:::image type="content" source="media/q-and-a-limitations/privacy-q-and-a-questions.png:::" alt-text="Screenshot of showing limitations of Q&A.":::
+:::image type="content" source="/media/q-and-a-limitations/privacy-q-and-a-questions.png:::" alt-text="Screenshot of showing limitations of Q&A.":::
 
 ## Teach Q&A limitations
 
