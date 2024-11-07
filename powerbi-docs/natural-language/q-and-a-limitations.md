@@ -62,7 +62,7 @@ Teach Q&A allows you to define unrecognized terms by assigning a word to a field
 - Products > 100
 - Products greater than 100
 - Products = 100
-- Products equals 100
+- Products equal 100
 - Products < 100
 
 ### Statements not supported
