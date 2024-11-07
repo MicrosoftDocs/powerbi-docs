@@ -65,8 +65,6 @@ Teach Q&A allows you to define unrecognized terms by assigning a word to a field
 - Products equals 100
 - Products < 100
 
-Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported. 
-
 ### Statements not supported
 
 - Multiple conditions aren't supported. As a workaround, create a Data Analysis Expressions (DAX) calculated column that evaluates a multi-condition statement Boolean and use this field instead.
