@@ -65,7 +65,7 @@ A DirectQuery connection to Dataverse is a good choice when the report's query r
 > [!NOTE]
 > The 20,000 row size isn't a hard limit. However, each data source query must return a result within 10 minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design considerations.
 
-You can improve the performance of larger semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)) by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
+You can improve the performance of larger semantic models by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
 
 Even larger semantic models—with several hundreds of thousand or even millions of rows—can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
 
@@ -370,7 +370,7 @@ For more information on table storage modes including dual storage, see [Manage 
 
 ### Enable single-sign on
 
-When you publish a DirectQuery model to the Power BI service, you can use the semantic model settings to enable single sign-on (SSO) by using Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
+When you publish a DirectQuery model to the Power BI service, you can use the semantic model settings to enable single sign-on (SSO) by using Microsoft Entra ID OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
 
 When the SSO option is enabled, Power BI sends the report user's authenticated Microsoft Entra credentials in the queries to Dataverse. This option enables Power BI to honor the security settings that are set up in the data source.
 

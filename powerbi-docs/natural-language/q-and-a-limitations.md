@@ -7,7 +7,6 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 11/07/2024
-
 ---
 # Limitations of Power BI Q&A
 
@@ -83,8 +82,8 @@ Users can also keep their questions from being recorded by selecting **Settings*
 
 Teach Q&A allows you to define unrecognized terms by assigning a word to a field or filter condition. When defining filtering conditions, you can only use a limited subset of language, including: 
 
-- Product category is accessories
-- Product category is not accessories
+- Product category which is accessories
+- Product category which is not accessories 
 - Products > 100
 - Products greater than 100
 - Products = 100

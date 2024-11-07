@@ -10,7 +10,7 @@ ms.date: 07/19/2023
 ---
 # Plan translation for multiple-language reports in Power BI
 
-When it comes to localizing Power BI items, such as semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)) and reports, there are three types of translations.
+When it comes to localizing Power BI items, such as semantic models and reports, there are three types of translations.
 
 - Metadata translation
 - Report label translation

@@ -44,7 +44,7 @@ When you talk with other people, determine whether they're using the term _shari
 In the Power BI service, consumers can view a report or dashboard when they have permission to both:
 
 - View the Power BI item that contains the visualizations (such as a report or dashboard).
-- Read the underlying data (semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md)—or other source).
+- Read the underlying data (semantic model or other source).
 
 You can provide read-only access to consumers by using different techniques. The common techniques used by self-service content creators include:
 
@@ -252,7 +252,7 @@ When you share an individual item, the default experience results in a [sharing 
 
 - **People in your organization:** When enabled in your Power BI tenant settings, this type of sharing link is a straightforward way to provide read-only access to everyone within the organization. However, the sharing link won't work for external users. This option is best suited to when anyone can view the content, and the link can be freely shared throughout the organization. Unless it's disabled by the _Allow shareable links to grant access to everyone in your organization_ tenant setting, this type of sharing is the default.
 - **People with existing access:** This option doesn't create a new sharing link. Rather, it allows you to retrieve the URL so you can send it to someone who already has access.
-- **Specific people:** This option produces a sharing link for specific users or groups. We recommend that you use this option most of the time because it provides specific access. If you commonly work with external users, you can use this type of link for guest users who already exist in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). For more information about the planned invitation process to create guest users, see the [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md) article.
+- **Specific people:** This option produces a sharing link for specific users or groups. We recommend that you use this option most of the time because it provides specific access. If you commonly work with external users, you can use this type of link for guest users who already exist in Microsoft Entra ID. For more information about the planned invitation process to create guest users, see the [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md) article.
 
 > [!IMPORTANT]
 > We recommend that you consider restricting the _[Allow shareable links to grant access to everyone in your organization](/power-bi/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization)_ tenant setting to members of a group. You can create a group name like _Power BI Share to Entire Organization_, and then add a small number of users who understand the implications of organization-wide sharing. If you're concerned about existing organization-wide links, you can use the [admin API](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) to find all items that have been shared with the entire organization.

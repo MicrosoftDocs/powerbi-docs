@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/24/2024
+ms.date: 10/29/2024
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
@@ -36,6 +36,12 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 1. [Save and share your exploration](#5-save-and-share-your-exploration). 
 
 ## 1. Create your exploration
+
+### From the New button in a workspace
+
+Select the **New** button at the top of a workspace, then select **Exploration**.
+
+:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting Explore this data.":::
 
 There are a few ways to create your exploration:
 
