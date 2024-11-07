@@ -23,6 +23,8 @@ Copilot is turned on by default in Fabric. Administrators can turn off Copilot i
 This article provides an overview of the Copilot capabilities for Power BI.
 
 > [!NOTE]
+> Copilot in Fabric is now generally available, starting with the Microsoft Power BI experience. The Copilot in Fabric experiences for Data Factory, Data Engineering, Data Science, Data Warehouse, and Real-Time Intelligence are in preview.
+>
 > Copilot isn't yet supported for sovereign clouds due to GPU availability.
 
 ## Before you start using Copilot
