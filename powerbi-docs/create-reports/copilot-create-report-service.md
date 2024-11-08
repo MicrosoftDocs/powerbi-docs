@@ -88,7 +88,7 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
 ## Enhanced Report Creation (Public Preview)
 
-When you use the preview toggle in edit mode to switch into the Copilot public preview experience, you have access to the new updates to report creation in the Power BI Service. With these new updates, you can work with Copilot to clarify intent and details of reports created. Report outlines are also provided to help improve transparency on what data fields copilot is using to build a report. These updates aim to make it easier to generate more relevant and transparent Power BI reports with Copilot. Learn more about using Copilot preview features [here.](copilot-preview-toggle,md)
+When you use the preview toggle in edit mode to switch into the Copilot public preview experience, you have access to the new updates to report creation in the Power BI Service. With these new updates, you can work with Copilot to clarify intent and details of reports created. Report outlines are also provided to help improve transparency on what data fields copilot is using to build a report. These updates aim to make it easier to generate more relevant and transparent Power BI reports with Copilot. Learn more about using Copilot preview features [here.](copilot-preview-toggle.md)
 
 ## Create a narrative summary
 
