@@ -19,10 +19,10 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 - Import mode
 - [Direct Query](#teach-qa-limitations) 
 - Live connect to Azure Analysis Services
-- Live connect to on-premise SQL Server Analysis Services tabular models
+- Live connect to on-premises SQL Server Analysis Services tabular models
 - DirectLake models
 
-In each of these configurations, row-level security is also supported. Object-level security is supported for models hosted in the Power BI service but not for live connect to Azure Analysis Services or on-premise SQL Server Analysis Services models.
+In each of these configurations, row-level security is also supported. Object-level security is supported for models hosted in the Power BI service but not for live connect to Azure Analysis Services or on-premises SQL Server Analysis Services models.
 
 ## DirectQuery support for Q&A
 
