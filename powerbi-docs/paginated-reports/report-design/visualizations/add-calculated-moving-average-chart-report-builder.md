@@ -1,6 +1,6 @@
 ---
 title: "Add a calculated moving average to a series on a chart in Power BI paginated report | Microsoft Docs"
-description: Learn how the Moving Average formula price indicator can be shown on a chart to identify trends in Power BI Report Builder.
+description: Learn how to add the Moving Average formula price indicator on a chart to identify trends in Power BI Report Builder.
 ms.date: 11/07/2024
 ms.service: powerbi
 ms.subservice: report-builder
