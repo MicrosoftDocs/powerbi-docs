@@ -830,8 +830,10 @@
           href: ../paginated-reports/report-design/add-remove-margins-from-chart-report-builder.md
         - name: Add empty points to a chart
           href: ../paginated-reports/report-design/visualizations/add-empty-points-chart-report-builder.md
-        - name: Add a moving average to a chart
+        - name: About adding a moving average to a chart
           href: ../paginated-reports/report-design/visualizations/add-moving-average-chart-report-builder.md
+        - name: Add a calculated moving average to a series on a chart
+          href: ../paginated-reports/report-design/visualizations/add-calculated-moving-average-chart-report-builder.md
         - name: Add or delete an indicator in a report
           href: ../paginated-reports/report-design/visualizations/add-delete-indicator-report-builder.md
         - name: Show ToolTips on a series
