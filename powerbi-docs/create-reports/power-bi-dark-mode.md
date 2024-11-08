@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 11/08/2024
 LocalizationGroup: Create reports
 ---
-# Create Power BI reports in dark mode
+#  Dark mode in Power BI Desktope
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
