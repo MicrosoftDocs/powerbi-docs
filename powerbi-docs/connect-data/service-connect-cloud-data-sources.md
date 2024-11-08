@@ -107,7 +107,7 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 
 * You can't mix an Excel on-premises data source with an existing Analysis Services DirectQuery data source; you can only include an Excel on-premises data source to your report if it's in a separate query. In such situations, you can map the Excel data source to a gateway, and leave the Analysis Services DirectQuery cloud data source as-is.
 
-* PowerBI Dataflows Gen1 and Fabric Dataflows Gen2 do not support sharable cloud connections. Other versions like PowerApps Dataflows do support sharable cloud connections. 
+* Power BI Dataflow Gen1 and Fabric Dataflow Gen2 don't support sharable cloud connections. Other versions, like Power Apps dataflows, do support sharable cloud connections.
 
 ## Related content
 
