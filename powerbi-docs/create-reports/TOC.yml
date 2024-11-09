@@ -148,6 +148,8 @@
             href: /fabric/get-started/copilot-power-bi-privacy-security?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
           - name: Copilot in Fabric and Power BI FAQ
             href: /fabric/get-started/copilot-faq-fabric?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+        - name: Copilot for Power BI Mobile
+          href: consumer/mobile/mobile-apps-copilot.md
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
     - name: Examine report elements with Performance Analyzer

@@ -18,15 +18,12 @@ Copilot in the Power BI Mobile apps brings the power of AI directly to your fing
 
 With Copilot in Power BI Mobile apps, you no longer have to analyze data by yourself. Copilot provides report summaries and insights, to help you make data driven decisions anytime, anywhere.
 
-This article shows how to
+This article shows how to:
 
-Generate summaries and insights
-
-Explore Copilot results further
-
-Change or refine your query
-
-Share Copilot's results with others 
+* [Generate summaries and insights](#get-summmaries-and-insights)
+* [Explore Copilot results further](#explore-copilots-results-further)
+* [Change or refine your query](#change-or-refine-your-query)
+* [Share Copilot's results with others](#share-the-result-with-colleagues)
 
 ## Get summmaries and insights
 
@@ -38,17 +35,21 @@ Share Copilot's results with others
 
       :::image type="content" source="./media/mobile-apps-copilot/copilot-choose-prompt.png" alt-text="Screenshot showing the summary and insights prompts." border="false":::
 
-Copilot generates its response. You can take the following actions:
-
-* **Explore the data further**: Copilot's results contain references to the visuals it used to formulate its answer. Tap a reference to opens the related visual. The visual is interactive, so you can dive into it deeper, long-tapping for tooltips, drilling down or up, or exploring more of your data as needed.
-
-* **Change or refine your query**: Tap one of the suggested prompts at the bottom of the chat window to change or refine your query. For example, you can ask Copilot to shorten its response, provide more detail, etc. Tap the refresh button to the side of the suggestions to see more prompts.
-
-* **Copy the result to the clipboard for sharing with colleagues**: Tap the Copy icon to copy Copilot's answer to the clipboard. You can then paste it into an email, Teams chat, or any other platform to share it with colleagues.
-
-The following image describes the features of the result.
+Copilot generates its response. The following image describes what you can do with the response.
 
 :::image type="content" source="./media/mobile-apps-copilot/copilot-mobile-chat-pane.png" alt-text="Screenshot explaining the features of the Copilot in Power BI Mobile chat pane." border="false":::
+
+## Explore Copilot's results further
+
+Copilot's results contain references to the visuals it used to formulate its answer. Tap a reference to opens the related visual. The visual is interactive, so you can dive into it deeper, long-tapping for tooltips, drilling down or up, or exploring more of your data as needed.
+
+## Change or refine your query
+
+Tap one of the suggested prompts at the bottom of the chat window to change or refine your query. For example, you can ask Copilot to shorten its response, provide more detail, etc. Tap the refresh button to the side of the suggestions to see more prompts.
+
+## Share the result with colleagues
+
+Copy the result to the clipboard for sharing with colleagues: Tap the Copy icon to copy Copilot's answer to the clipboard. You can then paste it into an email, Teams chat, or any other platform to share it with colleagues.
 
 ## Related content
 
