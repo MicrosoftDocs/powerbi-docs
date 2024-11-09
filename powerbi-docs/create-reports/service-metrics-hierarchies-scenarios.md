@@ -1,21 +1,23 @@
 ---
 title: "Scenarios: When to use hierarchies in Power BI scorecards"
-description: Hierarchies are a big feature, and you may be wondering where to get started or how to use it in your organization.  To help you, we’ve compiled a few useful scenarios.
+description: Hierarchies are a popular feature in Power BI. Here are a few useful scenarios to help you get started in your organization.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: how-to
-ms.date: 11/29/2022
+ms.topic: concept-article
+ms.date: 10/22/2024
 ms.custom: intro-get-started
+#customer intent: As a Power BI user I want to learn about how to get started with hierarchies in Power BI.
 ---
+
 # Scenarios: When to use hierarchies in Power BI scorecards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics support cascading scorecards that roll up along hierarchies you set up in your scorecard. Hierarchies are a big feature, and you may be wondering where to get started or how to use it in your organization.  To help you, we’ve compiled a few useful scenarios where cascading scorecards provide an elegant, large-scale, and most importantly efficient solution.  They may help inspire you. Here are the three scenarios:
+Metrics support cascading scorecards that roll up along hierarchies you set up in your scorecard. Here are three useful scenarios where cascading scorecards provide an elegant, large-scale, and efficient solution:
 
 - Scenario 1: [Measuring organizational health across teams](#scenario-1-measuring-organizational-health-across-teams)
 - Scenario 2: [Retail metrics across locations and product areas](#scenario-2-retail-metrics-across-locations-and-product-areas)
@@ -31,7 +33,7 @@ This scorecard becomes not only an artifact for metric tracking, but an integral
 
 ## Scenario 2: Retail metrics across locations and product areas
 
-For retail scenarios, it’s often useful to create two hierarchies and use the slicer to view cross sections between them.  Here, a retail organization has set up a scorecard that has a geography and a product hierarchy, so they can look at their standard metrics by product, location, or a combination of both.  Here they are looking at laptop metrics in Germany.  They could even dive deeper and look at specific laptop models in Berlin.
+For retail scenarios, it’s often useful to create two hierarchies and use the slicer to view cross sections between them.  Here, a retail organization sets up a scorecard that has a geography and a product hierarchy, so they can look at their standard metrics by product, location, or a combination of both.  Here they're looking at laptop metrics in Germany.  They could even dive deeper and look at specific laptop models in Berlin.
 
 This view is helpful because the owners can be mapped as part of the hierarchy as well, ensuring that the appropriate branch manager owns and manages metrics for each retail location.
 
@@ -45,9 +47,9 @@ This view shows both hierarchies selected.
 
 ## Scenario 3: Organizational hierarchies
 
-We often see senior leadership use scorecards driven by organizational hierarchies. There is a set of metrics that the company tracks along an organizational hierarchy – in many cases, compliance metrics.  Each person’s team is required to meet these standards, and leadership needs a fast and easy way to see the overall numbers and break them down according to the org hierarchy to see whose team is performing well, and who is behind.
+We often see senior leadership use scorecards driven by organizational hierarchies. There's a set of metrics that the company tracks along an organizational hierarchy – in many cases, compliance metrics.  Each person’s team is required to meet these standards. Leadership needs a fast and easy way to see the overall numbers and break them down according to the org hierarchy to see whose team is performing well, and who is behind.
 
-This scorecard uses the organizational hierarchy as the scorecard hierarchy, so that all metrics can be broken down by the accountable person.  The heatmap view is also useful in this scenario. It allows you to get a deeper, side by side glance of whose team is red and whose is green, and identify specific teams that need to increase compliance performance.  The heatmap view of organizational scorecards drives alignment and clarity at every level of the business.
+This scorecard uses the organizational hierarchy as the scorecard hierarchy, so that all metrics are broken down by the accountable person.  The heatmap view is also useful in this scenario. It allows you to get a deeper, side by side glance of whose team is red and whose is green, and identify specific teams that need to increase compliance performance.  The heatmap view of organizational scorecards drives alignment and clarity at every level of the business.
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scenario-3-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 3 above." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scenario-3-1.png":::
 

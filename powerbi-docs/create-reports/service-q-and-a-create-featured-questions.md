@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 02/28/2023
+ms.date: 11/05/2024
 LocalizationGroup: Ask questions of your data
+#customer intent: As a Power BI user I want to learn how to create and add featured questions in Power BI.
 ---
 # Create Q&A featured questions for Power BI dashboards
 
@@ -26,7 +27,7 @@ If you have edit permission for a semantic model, you can add your own featured 
 - You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - If you want to follow along, get the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) in the Power BI service.
 
-## Create a featured question
+### Create a featured question
 
 This article uses the Retail Analysis sample. Follow these step-by-step instructions to explore a semantic model.
 
