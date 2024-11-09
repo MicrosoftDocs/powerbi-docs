@@ -21,15 +21,13 @@ For related "What's New" information, see:
 
 ## November 2024
 
-### Copilot come to the Power BI mobile apps!
+### Copilot comes to the Power BI mobile apps!
 
-Copilot in the Power BI Mobile apps brings the power of AI directly to your fingertips, enhancing your mobile experience by offering a quick and simple way to dive into your data while on the go.
-
-With Copilot in Power BI Mobile apps, you no longer have to analyze data by yourself. Copilot provides report summaries and insights, to help you make data driven decisions anytime, anywhere.
+You no longer have to analyze data by yourself in the Power BI mobile apps! Now Copilot now can provide report summaries and insights to help you make data driven decisions on the go, anytime, anywhere. Just tap the **Copilot** icon in the report header, choose the desired prompt, and Copilot does the rest!
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/copilot-whats-new.png" alt-text="Screenshot illustrating how to use Copilot in the Power BI mobile apps." border="false":::
 
-[Check out our documentation!](./mobile-apps-copilot.md)
+Check out our [blog](https://powerbi.microsoft.com/en-us/blog/28441/preview/) and [documentation!](./mobile-apps-copilot.md)
 
 ## September 2024
 
