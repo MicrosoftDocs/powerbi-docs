@@ -14,18 +14,16 @@ ms.date: 11/09/2024
 
 # Copilot in the Power BI Mobile Apps
 
-Copilot in the Power BI Mobile apps brings the power of AI directly to your fingertips, enhancing your mobile experience by offering a quick and simple way to dive into your data while on the go.
-
-With Copilot in Power BI Mobile apps, you no longer have to analyze data by yourself. Copilot provides report summaries and insights, to help you make data driven decisions anytime, anywhere.
+Copilot in the Power BI Mobile apps provides report summaries and insights to help you make data driven decisions on the go, anytime, anywhere.
 
 This article shows how to:
 
-* [Generate summaries and insights](#get-summmaries-and-insights)
-* [Explore Copilot results further](#explore-copilots-results-further)
-* [Change or refine your query](#change-or-refine-your-query)
+* [Use Copilot to generate summaries and insights](#use-copilot-to-generate-summaries-and-insights)
+* [Drill down into Copilot's results](#drill-down-into-copilots-results)
+* [Change or refine your Copilot prompt](#change-or-refine-your-copilot-prompt)
 * [Share Copilot's results with others](#share-copilots-results-with-others)
 
-## Get summmaries and insights
+## Use Copilot to generate summaries and insights
 
 1. Open the report and tap the Copilot icon
 
@@ -39,11 +37,11 @@ Copilot generates its response. The following image describes what you can do wi
 
 :::image type="content" source="./media/mobile-apps-copilot/copilot-mobile-chat-pane.png" alt-text="Screenshot explaining the features of the Copilot in Power BI Mobile chat pane." border="false":::
 
-## Explore Copilot's results further
+## Drill down into Copilot's results
 
 Copilot's results contain references to the visuals it used to formulate its answer. Tap a reference to open the related visual. The visual is interactive, so you can dive into it deeper, long-tapping for tooltips, drilling down or up, or exploring more of your data as needed.
 
-## Change or refine your query
+## Change or refine your Copilot prompt
 
 Tap one of the suggested prompts at the bottom of the chat window to change or refine your query. For example, you can ask Copilot to shorten its response, provide more detail, etc. Tap the refresh button to the side of the suggestions to see more prompts.
 
