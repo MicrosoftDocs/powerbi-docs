@@ -29,11 +29,11 @@ This article shows how to:
 
    :::image type="content" source="./media/mobile-apps-copilot/open-copilot.png" alt-text="Screenshot showing the Copilot icon in a report header.":::
 
-2. Choose the prompt you want in the Copilot chat window that opens. You can choose to Copilot generate an executive summary of the current page or insights based on the data on the page.
+2. In the Copilot chat window that opens, choose the prompt that best suits your needs. You can choose get an executive summary of the current page or insights based on the data on the page.
 
       :::image type="content" source="./media/mobile-apps-copilot/copilot-choose-prompt.png" alt-text="Screenshot showing the summary and insights prompts." border="false":::
 
-Copilot generates its response. The following image and sections describe what you can do with the response.
+Copilot generates its response. The following image and the sections after it describe what you can do with the response.
 
 :::image type="content" source="./media/mobile-apps-copilot/copilot-mobile-chat-pane.png" alt-text="Screenshot explaining the features of the Copilot in Power BI Mobile chat pane." border="false":::
 
