@@ -14,7 +14,7 @@ ms.date: 11/09/2024
 
 # Copilot in the Power BI Mobile Apps
 
-Copilot in the Power BI Mobile apps provides report summaries and insights to help you make data driven decisions on the go, anytime, anywhere.
+Copilot in the Power BI Mobile apps provides report summaries and insights to help you make data-driven decisions on the go, anytime, anywhere.
 
 This article shows how to:
 
@@ -25,15 +25,15 @@ This article shows how to:
 
 ## Use Copilot to generate summaries and insights
 
-1. Open the report and tap the Copilot icon
+1. Open the report you're interested in and tap the **Copilot** icon
 
    :::image type="content" source="./media/mobile-apps-copilot/open-copilot.png" alt-text="Screenshot showing the Copilot icon in a report header.":::
 
-2. Choose **Get a summary** to get an executive summary of the current page, or **Uncover more** to have Copilot generate insights about the data on the page.
+2. Choose the prompt you want in the Copilot chat window that opens. You can choose to Copilot generate an executive summary of the current page insights about the data on the page.
 
       :::image type="content" source="./media/mobile-apps-copilot/copilot-choose-prompt.png" alt-text="Screenshot showing the summary and insights prompts." border="false":::
 
-Copilot generates its response. The following image describes what you can do with the response.
+Copilot generates its response. The following image and sections describe what you can do with the response.
 
 :::image type="content" source="./media/mobile-apps-copilot/copilot-mobile-chat-pane.png" alt-text="Screenshot explaining the features of the Copilot in Power BI Mobile chat pane." border="false":::
 
