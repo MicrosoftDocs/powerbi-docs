@@ -29,7 +29,7 @@ This article shows how to:
 
    :::image type="content" source="./media/mobile-apps-copilot/open-copilot.png" alt-text="Screenshot showing the Copilot icon in a report header.":::
 
-2. Choose the prompt you want in the Copilot chat window that opens. You can choose to Copilot generate an executive summary of the current page insights about the data on the page.
+2. Choose the prompt you want in the Copilot chat window that opens. You can choose to Copilot generate an executive summary of the current page or insights based on the data on the page.
 
       :::image type="content" source="./media/mobile-apps-copilot/copilot-choose-prompt.png" alt-text="Screenshot showing the summary and insights prompts." border="false":::
 
