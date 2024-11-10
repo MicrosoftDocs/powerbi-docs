@@ -27,7 +27,7 @@ This article shows how to:
 
 1. Open the report you're interested in and tap the **Copilot** icon
 
-   :::image type="content" source="./media/mobile-apps-copilot/open-copilot.png" alt-text="Screenshot showing the Copilot icon in a report header.":::
+   :::image type="content" source="./media/mobile-apps-copilot/open-copilot.png" alt-text="Screenshot showing the Copilot icon in a report header." border="false":::
 
 2. In the Copilot chat window that opens, choose the prompt that best suits your needs. You can choose get an executive summary of the current page or insights based on the data on the page.
 
