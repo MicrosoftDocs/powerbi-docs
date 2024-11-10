@@ -39,7 +39,7 @@ The following image shows a response in the Copilot chat window (in its enlarged
 
 Copilot's results contain references to the visuals it used to formulate its answer. Tap a reference to open the related visual. The visual is interactive, so you can dive into it deeper, long-tapping for tooltips, drilling down or up, etc.
 
-To make it easier to see and explore all the references, tap the **References** link at the bottom of the response.
+To make it easier to see and explore all the references, tap the **References** link at the bottom of the response to get a hyperlinked list of all the references.
 
 ## Change or refine your Copilot prompt
 
@@ -49,7 +49,7 @@ To view more suggestions, tap the refresh button to the side of the prompt sugge
 
 ## Share Copilot's results with others
 
-To share Copilot's response with others, tap the **Copy** icon at the top of response. The response will be copied to the clipboard. You can then paste it into an email, Teams chat, or any other platform to share it with colleagues.
+To share Copilot's response with others, tap the **Copy** icon at the top of response. The response will be copied to the clipboard. You can then paste it into an email, Teams chat, or any other platform to share it with colleagues. The copied response includes a link to the report so that recipients can easily refer to the report, if they so desire.
 
 ## Related content
 
