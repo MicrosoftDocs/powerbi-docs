@@ -35,7 +35,7 @@ The following image shows a response in the Copilot chat window (in its enlarged
 
 :::image type="content" source="./media/mobile-apps-copilot/copilot-mobile-chat-pane.png" alt-text="Screenshot explaining the features of the Copilot in Power BI Mobile chat pane." border="false":::
 
-## Drill down into Copilot's results
+## Dive down into Copilot's results
 
 Copilot's results contain references to the visuals it used to formulate its answer. Tap a reference to open the related visual. The visual is interactive, so you can dive into it deeper, long-tapping for tooltips, drilling down or up, etc.
 
