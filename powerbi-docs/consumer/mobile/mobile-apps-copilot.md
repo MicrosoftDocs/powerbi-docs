@@ -35,8 +35,6 @@ Copilot generates its response. You can enlarge the chat window to show more of 
 
 If you want to return to the report, you can close the chat window by tapping the **X** at the top of the window. The chat history stays intact until the report is refreshed or closed, so unless that happens, you can see all the prompts and responses again by tapping the Copilot button.
 
-The chat history stays intact as long as you don’t exit or refresh the report.
-
 The following image shows a response in the Copilot chat window (in its enlarged state) and points out the controls you have to work with the response.
 
 :::image type="content" source="./media/mobile-apps-copilot/copilot-mobile-chat-pane.png" alt-text="Screenshot explaining the features of the Copilot in Power BI Mobile chat pane." border="false":::
@@ -49,7 +47,7 @@ To make it easier to see and explore all the references, tap the **References** 
 
 ## Refine Copilot's response with suggested prompts
 
-To change or refine your query, tap one of the suggested prompts at the bottom of the chat window. For example, For example, using a suggested responses, you can ask Copilot to provide more detail or to make the response shorter.
+To change or refine your query, tap one of the suggested prompts at the bottom of the chat window. For example, For example, using suggested responses, you can ask Copilot to provide more detail or to make the response shorter.
 
 To view more suggestions, tap the refresh button to the side of the prompt suggestions.
 
