@@ -25,11 +25,11 @@ Copilot in the Power BI Mobile apps makes it possible to get AI-generated report
    > [!NOTE]
    > You can use Copilot for any report that meets [Copilot for Power BI requirements](../../create-reports/copilot-introduction.md). If you don't see the Copilot icon in the report header, it probably means that the report does not meet these requirements.
 
-2. In the Copilot chat window that opens, choose the prompt that best suits your needs. You can choose get an executive summary of the current page or insights based on the data on the page.
+2. In the Copilot chat window that opens, choose the prompt that best suits your needs. You can choose to get an executive summary of the current page or insights based on the data on the page.
 
       :::image type="content" source="./media/mobile-apps-copilot/copilot-choose-prompt.png" alt-text="Screenshot showing the summary and insights prompts." border="false":::
 
-Copilot generates its response. You can enlarge the chat window to show more of the response if necessary. If you want to return to the report, you can close the chat window by tapping the **X** at the top of the window. The chat is saved until the report is refreshed or closed, so unless that happens, you'll be able to see all the prompts and responses again when you tap the Copilot button again. 
+Copilot generates its response. You can enlarge the chat window to show more of the response if necessary. If you want to return to the report, you can close the chat window by tapping the **X** at the top of the window. The chat is saved until the report is refreshed or closed, so unless that happens, you can see all the prompts and responses again by tapping the Copilot button.
 
 The following image shows a response in the Copilot chat window (in its enlarged state) and points out the controls you have to work with the response.
 
@@ -43,7 +43,7 @@ To make it easier to see and explore all the references, tap the **References** 
 
 ## Change or refine your Copilot prompt
 
-To change or refine your query, tap one of the suggested prompts at the bottom of the chat window. For example, by default, when creating a summary, Copilot by default summarizes the current page. Using a suggested respose, you can ask it to summarize the entire report. Likewise, you can ask it shorten the response, provide more detail, etc.
+To change or refine your query, tap one of the suggested prompts at the bottom of the chat window. For example, by default, when creating a summary, Copilot by default summarizes the current page. Using a suggested response, you can ask it to summarize the entire report. Likewise, you can ask it to shorten the response, provide more detail, etc.
 
 To view more suggestions, tap the refresh button to the side of the prompt suggestions.
 
