@@ -14,9 +14,9 @@ ms.date: 11/11/2024
 
 # Copilot in the Power BI Mobile Apps (preview)
 
-| :::image type="content" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" alt-text="Apple logo"::: | :::image type="content" source="./media/mobile-apps-logo-images/android-logo-40-px.png" alt-text="Android logo"::: |
-|:------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
-| iPhones                                                                                                      | Android phones                                                                                                     |
+| :::image type="content" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" alt-text="Apple logo" border="false"::: | :::image type="content" source="./media/mobile-apps-logo-images/android-logo-40-px.png" alt-text="Android logo" border="false"::: |
+|:---------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|
+| iPhones                                                                                                                     | Android phones                                                                                                                    |
 
 Copilot in the Power BI Mobile apps makes it possible to get AI-generated report summaries and insights to help you make data-driven decisions on the go, anytime, anywhere. You no longer have to spend time analyzing the data yourself. You just tap the Copilot icon in the report header, choose the prompt that best suits your needs, and Copilot provides what you asked for. You can then explore the data further, refine your query, or share Copilot's response with others. This article shows you how to accomplish these tasks and provides information about Copilot in Power BI Mobile.
 
