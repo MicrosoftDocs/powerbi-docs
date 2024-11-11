@@ -20,7 +20,7 @@ ms.date: 11/11/2024
 
 Copilot in the Power BI Mobile apps makes it possible to get AI-generated report summaries and insights to help you make data-driven decisions on the go, anytime, anywhere. You no longer have to spend time analyzing the data yourself. You just tap the Copilot icon in the report header, choose the prompt that best suits your needs, and Copilot provides what you asked for. You can then explore the data further, refine your query, or share Copilot's response with others. This article shows you how to accomplish these tasks and provides information about Copilot in Power BI Mobile.
 
-## Use Copilot to analyze reports
+## Use Copilot to generate summaries and insights
 
 1. Open the report you're interested in and tap the **Copilot** icon.
 
@@ -51,7 +51,7 @@ To make it easier to see and explore all the references, tap the **References** 
 
 ## Refine Copilot's response with suggested prompts
 
-To change or refine your query, tap one of the suggested prompts at the bottom of the chat window. For example, For example, using suggested responses, you can ask Copilot to provide more detail or to make the response shorter.
+To change or refine your query, tap one of the suggested prompts at the bottom of the chat window. For example, using suggested responses, you can ask Copilot to provide more detail or to make the response shorter.
 
 To view more suggestions, tap the refresh button to the side of the prompt suggestions.
 
