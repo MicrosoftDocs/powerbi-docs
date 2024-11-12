@@ -85,3 +85,4 @@ If you include a message in the email, the message appears above the Summary gen
 - The copilot summary is run on behalf of the subscription owner, much like email subscriptions.
 - User-defined prompts aren't supported.
 - Your email may not contain a copilot summary if copilot takes too long to respond. This usually happens with large reports.
+- If you choose filters and "Include my changes" when you save your subscription, the copilot summary is generated for the report with the filters when the subscription was saved. 
