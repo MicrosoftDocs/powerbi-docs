@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual #Don't change
-ms.date: 11/11/2024
+ms.date: 11/12/2024
 
 #customer intent: As a user of Power BI in the Power BI mobile app, I want to understand how I can use Copilot in Power BI Mobile to help me understand my reports quickly.
 
