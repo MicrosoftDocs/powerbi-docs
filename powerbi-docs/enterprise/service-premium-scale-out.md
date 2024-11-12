@@ -41,7 +41,7 @@ QSO is designed to leverage the available compute power of a given capacity SKU 
 
 However, the current load on a capacity might by high enough to cause [throttling](/fabric/enterprise/throttling) if more replicas are added. Throttling prevents additional read-only replicas from reaching a sustained high CPU usage. In such cases, a new scale out read-only replica isn't created.
 
-A replica is removed when CU use reduces and consistently stays low.
+A replica is removed when CU usage for the model reduces sufficiently and consistently stays low enough.
 
 ## Prerequisites
 
