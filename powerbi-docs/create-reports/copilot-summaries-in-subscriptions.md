@@ -33,7 +33,7 @@ The copilot summary is present in the email even when reports are delivered to O
 
 1. Select **Subscribe to report** , then select **Create a subscription**.
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscibe-to-report.png" alt-text="Screenshot showing how to subscribe to a report." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscibe-to-report.png":::
+:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-to-report.png" alt-text="Screenshot showing how to subscribe to a report." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-to-report.png":::
 
 
 2. Select **Standard Subscription**. You can choose to modify the **Subscription name**, **Recipients** who should receive the copilot summary in email.
