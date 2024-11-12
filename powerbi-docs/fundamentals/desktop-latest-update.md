@@ -66,7 +66,7 @@ The following updates are new to Power BI Desktop this month:
 * Define new measure in DAX query view quick queries [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1012707413)  [[video]](https://youtu.be/4MmIZEwVGbc?t=879)  [[article]](../transform-model/dax-query-view.md#quick-queries)
 * Performance improvements for models with calculation groups and format strings in Excel [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc590458605)  [[video]](https://youtu.be/4MmIZEwVGbc?t=933)  
 * DLP policies restrict access action for semantic models (public preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1145376750)  
-* Semantic modeling in Visual Studio Code with the new TMDL extension (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc351002445)  [[video]](https://youtu.be/4MmIZEwVGbc?t=1217)  [[article]](/analysis-services/tmdl/tmdl-overview?view=asallproducts-allversions)
+* Semantic modeling in Visual Studio Code with the new TMDL extension (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc351002445)  [[video]](https://youtu.be/4MmIZEwVGbc?t=1217)  [[article]](/analysis-services/tmdl/tmdl-overview)
 
 ### Visuals
 * Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc391990696)  
