@@ -261,7 +261,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 ### Power BI Desktop
 
-* Direct publishing from Power BI Desktop to the Power BI service is not supported for guest users, even if they have higher-level permissions. To update or publish reports, guest users need to start from the Power BI service, using, for example, **Get Data**.
+* Directly publishing a protected .pbix file from Power BI Desktop to the Power BI service is not supported for guest users, even if they have higher-level permissions. To update or publish reports from a protected .pbix file, guest users need to start from the Power BI service, using **Get Data**, for example.
 
 * Power BI Desktop for Power BI Report Server doesn't support information protection. If you try to open a protected .pbix file, the file won't open and you'll receive an error message. Sensitivity-labeled .pbix files that aren't encrypted can be opened as normal.
 
