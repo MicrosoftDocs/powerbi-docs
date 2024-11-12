@@ -1,25 +1,25 @@
 ---
-title: Add copilot summaries to email subscriptions
-description: You can add copilot summaries to Power BI report subscriptions.
+title: Add Copilot summaries to email subscriptions
+description: You can add Copilot summaries to Power BI report subscriptions.
 author: nirusrin
 ms.author: nisrinivasan
 ms.reviewer: maggieMSFT
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/18/2024
-LocalizationGroup: Create report subscriptions with copilot summaries
-no-loc: [Copilot]
+ms.date: 11/12/2024
+LocalizationGroup: Create report subscriptions with Copilot summaries
+no-loc: [copilot]
 ms.collection: ce-skilling-ai-copilot
-#customer intent: As a report subscription creator, I want copilot report summaries to be delivered in my subscription email.
+#customer intent: As a report subscription creator, I want Copilot report summaries to be delivered in my subscription email.
 ---
 
-# Create reports subscriptions with copilot summaries in the Power BI service (Preview)
+# Create reports subscriptions with Copilot summaries in the Power BI service (Preview)
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-You can include a copilot generated summary for your Power BI report page or full report attachment in your email subscription to get insights. All the recipients of the email subscription receive the copilot summary in the email. This feature is currently supported only for Standard Subscriptions.  
-The copilot summary is present in the email even when reports are delivered to OneDrive or SharePoint
+You can include a Copilot generated summary for your Power BI report page or full report attachment in your email subscription to get insights. All the recipients of the email subscription receive the Copilot summary in the email. This feature is currently supported only for Standard Subscriptions.  
+The Copilot summary is present in the email even when reports are delivered to OneDrive or SharePoint
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-copilot-summaries-in-email-subscriptions.gif" alt-text="Animation showing how to subscribe to a copilot summary." lightbox="media/copilot-summaries-in-subscriptions/power-bi-copilot-summaries-in-email-subscriptions.gif":::
 
@@ -29,22 +29,22 @@ The copilot summary is present in the email even when reports are delivered to O
 - [Subscription Requirements](../collaborate-share/end-user-subscribe.md#requirements)
   
 
-## How to set up copilot in email subscriptions
+## How to set up Copilot in email subscriptions
 
 1. Select **Subscribe to report** , then select **Create a subscription**.
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-to-report.png" alt-text="Screenshot showing how to subscribe to a report." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-to-report.png":::
 
 
-2. Select **Standard Subscription**. You can choose to modify the **Subscription name**, **Recipients** who should receive the copilot summary in email.
+2. Select **Standard Subscription**. You can choose to modify the **Subscription name**, **Recipients** who should receive the Copilot summary in email.
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-standard-subscription.png" alt-text="Screenshot showing creating a standard subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-standard-subscription.png":::
 
-3. You can choose to receive a copilot summary of a single report page or the full report by choosing **Attach full report**. 
+3. You can choose to receive a Copilot summary of a single report page or the full report by choosing **Attach full report**. 
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-attach-full-report.png" alt-text="Screenshot showing FRA subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-attach-full-report.png":::
 
-You can also choose to deliver the full report to a OneDrive or SharePoint location.The copilot summary will still be delivered to the recipients via email, along with the link to the OneDrive or Sharepoint location.
+You can also choose to deliver the full report to a OneDrive or SharePoint location.The Copilot summary will still be delivered to the recipients via email, along with the link to the OneDrive or Sharepoint location.
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-send-to.png" alt-text="Screenshot showing OneDrive SharePoint subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-send-to.png":::
 
@@ -54,22 +54,22 @@ You can also choose to deliver the full report to a OneDrive or SharePoint locat
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-email.png" alt-text="Screenshot showing opt-in for summary for the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-email.png":::
 
-6. When you select **Preview summary**, you will see a summary generated by copilot. 
+6. When you select **Preview summary**, you will see a summary generated by Copilot. 
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-preview-copilot-summary.png" alt-text="Screenshot showing the preview for summary for the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-preview-copilot-summary.png":::
 
 > [!NOTE]
 > The preview displays a point in time summary of the report data. The summary will change based on the subscription schedule and data.
 
-7. For existing subscriptions, you can opt-in to receive copilot summaries by turning on the toggle.
+7. For existing subscriptions, you can opt-in to receive Copilot summaries by turning on the toggle.
 
 > [!NOTE]
-> For new subscriptions that are copilot eligible, the copilot summary is enabled by default. You could choose to opt-out of including copilot summaries in subscription emails by turning off the toggle.
+> For new subscriptions that are Copilot eligible, the Copilot summary is enabled by default. You could choose to opt-out of including Copilot summaries in subscription emails by turning off the toggle.
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-off.png" alt-text="Screenshot showing the opt-out for the summary in the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-off.png":::
 
 8. You can choose to include an email subject, message , an image of a report page, a link to the report in Power BI and permission to view the report in Power BI.
-If you include a message in the email, the message appears above the Summary generated by copilot.
+If you include a message in the email, the message appears above the Summary generated by Copilot.
 
 9. **Save** the subscription.
 
@@ -82,7 +82,7 @@ If you include a message in the email, the message appears above the Summary gen
 
 ## Limitations and considerations
 - Copilot summaries for email subscriptions aren't supported for dynamic per recipient subscriptions, paginated reports, scrorecards, and dashboards.
-- The copilot summary is run on behalf of the subscription owner, much like email subscriptions.
+- The Copilot summary is run on behalf of the subscription owner, much like email subscriptions.
 - User-defined prompts aren't supported.
-- Your email may not contain a copilot summary if copilot takes too long to respond. This usually happens with large reports.
-- If you choose filters and "Include my changes" when you save your subscription, the copilot summary is generated for the report with the filters when the subscription was saved. 
+- Your email may not contain a Copilot summary if Copilot takes too long to respond. This usually happens with large reports.
+- If you choose filters and "Include my changes" when you save your subscription, the Copilot summary is generated for the report with the filters when the subscription was saved. 
