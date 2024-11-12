@@ -38,6 +38,8 @@
         href: mobile-apps-view-dashboard.md
       - name: "Reports in the mobile apps"
         href: mobile-reports-in-the-mobile-apps.md
+      - name: "Use Copilot to generate summaries and insights"
+        href: mobile-apps-copilot.md
       - name: "Work with metrics"
         href: mobile-apps-metrics.md
       - name: "Interact with tiles in the mobile apps"
