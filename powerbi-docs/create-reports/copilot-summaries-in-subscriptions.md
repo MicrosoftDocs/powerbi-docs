@@ -80,7 +80,7 @@ If you include a message in the email, the message appears above the Summary gen
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png" alt-text="Screenshot showing the send now option." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png":::
 
-## Limitations and Considerations
+## Limitations and considerations
 - Copilot summaries for email subscriptions aren't supported for dynamic per recipient subscriptions, paginated reports, scrorecards, and dashboards.
 - The copilot summary is run on behalf of the subscription owner, much like email subscriptions.
 - User-defined prompts aren't supported.
