@@ -40,7 +40,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) |
 | Paginated reports | Yes | Yes | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) |
-| Personalize visuals | No | No | You can [interact with a report to see different data](../consumer/end-user-paginated-report#interact-with-a-paginated-report), but you can't modify the report itself. |
+| Personalize visuals | No | No | You can [interact with a report to see different data](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report), but you can't modify the report itself. |
 | Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | Real-time streaming | No | Yes | [Real-time streaming in Power BI](../connect-data/service-real-time-streaming.md) |
 | Automatic page refresh for DirectQuery models | No | Yes | [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) |
