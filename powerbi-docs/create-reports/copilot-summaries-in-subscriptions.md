@@ -14,7 +14,7 @@ ms.collection: ce-skilling-ai-copilot
 #customer intent: As a report subscription creator, I want copilot report summaries to be delivered in my subscription email.
 ---
 
-# Create reports subscriptions with copilot summaries in the Power BI service 
+# Create reports subscriptions with copilot summaries in the Power BI service (Preview)
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
