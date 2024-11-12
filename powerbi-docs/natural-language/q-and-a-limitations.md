@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 11/06/2024
+ms.date: 11/12/2024
 ---
 # Limitations of Power BI Q&A
 
@@ -43,7 +43,7 @@ The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from
 
 - Import mode  
 - Direct Query   
-- DirectLake
+- DirectLake - coming soon
 
 ## Review question limitations
 
@@ -64,6 +64,8 @@ Teach Q&A allows you to define unrecognized terms by assigning a word to a field
 - Products = 100
 - Products equal 100
 - Products < 100
+
+Currrently, redefining a recognized term or defining other types of conditions or phrases isn't supported.
 
 ### Statements not supported
 
