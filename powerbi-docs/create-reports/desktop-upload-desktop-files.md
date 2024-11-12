@@ -44,7 +44,7 @@ The semantic model, and any reports you created in Power BI Desktop, upload to y
 
 This process is straightforward, but you should know the following:
 
-* Direct publishing from Power BI Desktop to the Power BI service is not supported for guest users, even if they have higher-level permissions. To update or publish reports, guest users need to start from the Power BI service, using, for example, **Get Data**.
+* Directly publishing a protected .pbix file from Power BI Desktop to the Power BI service is not supported for guest users, even if they have higher-level permissions. To update or publish reports from a protected .pbix file, guest users need to start from the Power BI service, using **Get Data**, for example.
 * Two or more semantic models in Power BI with the same name as the Power BI Desktop file could cause publishing to fail. Make sure you have only one semantic model in Power BI with the same name. You can also rename the file and publish, creating a new semantic model with same name as the file.
 * If you rename or delete a column or measure, any visualizations you already have in Power BI with that field could be broken.
 * Power BI ignores some format changes of existing columns. For example, if you change a column’s format from 0.25 to 25%.
@@ -74,7 +74,7 @@ To learn more about creating folders in Microsoft Fabric workspaces, read the [c
 
 ## Considerations and Limitations
 
-* Direct publishing from Power BI Desktop to the Power BI service is not supported for guest users, even if they have higher-level permissions. To update or publish reports, guest users need to start from the Power BI service, using, for example, **Get Data**.
+* Directly publishing a protected .pbix file from Power BI Desktop to the Power BI service is not supported for guest users, even if they have higher-level permissions. To update or publish reports from a protected .pbix file, guest users need to start from the Power BI service, using **Get Data**, for example.
 
 * The following storage mode conversions are not supported during republish:
    * If you first publish a report using Import mode, you won't be able to overwrite the report and the semantic model with a DirectQuery or Live Connect based report. This will not work.
