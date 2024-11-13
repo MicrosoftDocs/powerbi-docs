@@ -16,7 +16,7 @@ ms.date: 11/13/2024
 
 The Power BI service can introduce terminology that is unfamiliar or confusing. The glossary is a great place to look up terminology&mdash;you might want to bookmark it. Another great resource for learning about the building blocks that make up Power BI service is [Basic concepts for the Power BI service business user](end-user-basic-concepts.md). The article gives a high level overview of the Power BI *pieces* and how they're connected.
 
-This glossary is a community effort. If you don't see a word here, please ask us to add it (you can use the documentation feedback button at the bottom of this article).
+This glossary is a community effort. If you don't see a word here, ask us to add it (you can use the documentation feedback button at the bottom of this article).
 
 ## A
 
@@ -105,11 +105,11 @@ A method of connecting to SQL Server Analysis Services data models. Also called 
 
 ### connector
 
-Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk, and more than 100 additional data sources.
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk, and more than 100 other data sources.
 
 ### container
 
-The areas on the navigation pane are *containers*. In the nav pane you find containers for: Browse, Data hub, Apps, Metrics, Deployment pipelines, Learn, Workspaces, and Home.
+The areas on the navigation pane are *containers*. In the nav pane, you find containers for: Browse, Data hub, Apps, Metrics, Deployment pipelines, Learn, Workspaces, and Home.
 
 ### content
 
@@ -276,7 +276,7 @@ First instance: navigation pane. Subsequent mentions or tight spaces: nav pane.
 ### license
 
 Your level of access is determined by the Power BI license associated with your account and the capacity type where content is stored. For example, in shared capacity, a user with a Power BI Pro license can collaborate only with users who are also assigned a Pro license. In shared capacity, a free license enables access to only the user’s personal workspace. However, when content is in Premium capacity, users with a Pro license can share that content with users who are assigned a free license.
-A license is assigned to a user and can be a free or Pro license. Depending on how the license was acquired, it might be paid or unpaid. The accounts are either per-user or organizational. Per-user accounts are available as *free* or *Pro*.  A Power BI *free* user is either using stand-alone Power BI Desktop or is using Power BI service stand-alone or is using Power BI service within an organization that has a Premium organizational subscription. The Power BI per-user *Pro* account is a paid monthly subscription that allows for collaboration and sharing of content with other *Pro* users.
+A license is assigned to a user and can be a free, Power BI Premium Per User(PPU) Pro license. Depending on how the license was acquired, it might be paid or unpaid. The accounts are either per-user or organizational. Per-user accounts are available as *free*, *PPU*, or *Pro*. A Power BI *free* user is either using stand-alone Power BI Desktop or the Power BI service. The Power BI per-user *Pro* account is a paid monthly subscription that allows for collaboration and sharing of content with other *Pro* users.
 The organizational *Premium* (also known as *Premium capacity*) subscription adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* subscription, are able to do more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content hosted on Power BI Premium capacity.
 
 ### list page or **content list**
@@ -299,7 +299,7 @@ Apps that allow you to run Power BI on iOS, Android, and Windows mobile devices.
 
 ### modeling
 
-[Power BI Desktop] Getting the connected data ready for use in Power BI. This includes creating relationships between tables in multiple data sources, creating measures, and assigning metrics.
+[Power BI Desktop] Getting the connected data ready for use in Power BI. "Getting the data ready" includes creating relationships between tables in multiple data sources, creating measures, and assigning metrics.
 
 ### My workspace
 
@@ -366,7 +366,7 @@ What a user can and can't do in Power BI is based on permissions. As a *consumer
 
 ### phone report
 
-The name for a Power BI report that's formatted for viewing on a phone.
+The name for a Power BI report formatted for viewing on a phone.
 
 ### phone view
 
@@ -378,7 +378,7 @@ The action a report *designer* takes when placing a visual, usually from a repor
 
 ### Power BI, **Power BI service**, **Power BI Desktop**, **Power BI mobile**
 
-Some of the Power BI offerings. *Power BI* is the general term. It's often used in place of a full product name, such as *Power BI service* and *Power BI mobile*, after the first mention of the full product name.
+Some of the Power BI offerings. *Power BI* is the general term. It can be used in place of a full product name, such as *Power BI service* and *Power BI mobile*.
 
 ### Power BI Desktop
 
@@ -526,7 +526,7 @@ In Power BI, a snapshot is a static image compared with a live image of a tile, 
 
 ### SQL Server Analysis Services (SSAS)
 
-An online analytical data engine used in decision support and business analytics, providing the analytical data for business reports and client applications such as Power BI, Excel, Reporting Services reports, and other data visualization tools.
+An online analytical data engine used in decision support and business analytics. It provides the analytical data for business reports and client applications such as Power BI, Excel, Reporting Services reports, and other data visualization tools.
 
 ### SQL Server Reporting Services (SSRS)
 

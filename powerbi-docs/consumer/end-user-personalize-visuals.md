@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 
 It's hard to make one visual that satisfies everyone's requirements. So, when a colleague shares a report with you, you might want to make changes to the visuals&mdash;without having to ask your colleague to make the changes for you.
 
-Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a [bookmark](end-user-bookmarks.md) to come back to. You don't even need edit permission for the report.
+Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a [bookmark](end-user-bookmarks.md) to come back to. You don't need edit permission for the report.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-new.png" alt-text="Screenshot of a report visual with the Personalize menu highlighted.":::
 
@@ -106,7 +106,7 @@ If you have reshare and read permissions, when you share the report you can choo
 
 ### Reset all your changes to a report
 
-From the upper-right corner of your report canvas, select **Reset to default**. Resestting removes all your changes in the report and sets it back to the author's last saved view of the report.
+From the upper-right corner of your report canvas, select **Reset to default**. Resetting removes all your changes in the report and sets it back to the author's last saved view of the report.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all-new.png" alt-text="Screenshot of the reset icon on the report canvas.":::
 
