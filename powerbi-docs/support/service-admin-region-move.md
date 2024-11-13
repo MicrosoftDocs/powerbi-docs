@@ -70,11 +70,8 @@ To find out the best way to contact support, read [Power BI support options](ser
 
 1. Go to [Power Platform Admin Center Help + support](https://admin.powerplatform.microsoft.com/support) and sign in using admin credentials.
 1. Select **New support request**, then select the following options to request a region move.
-   - Product: Power BI
-   - Tell us what you need help with: Move to a different region
-   - Problem type: Administration
-   - Problem Subtype: Tenant Management
-   - Are you contacting us to move your tenant to another region: Yes
+   - Product: Power BI or Fabric Admin & Management
+   - Tell us what you need help with: **Move to a different region**
    
    Select **See solutions** to move to the next screen.
 
