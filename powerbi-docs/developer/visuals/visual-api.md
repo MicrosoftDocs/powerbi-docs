@@ -112,6 +112,8 @@ public update(options: VisualUpdateOptions): void
 * `operationKind?: VisualDataChangeOperationKind` - flag indicating type of data change (**Create** | **Append**)
 * `jsonFilters?: IFilter[]` - collection of applied json filters
 * `isInFocus?: boolean` - flag to indicate if the visual is in focus mode or not
+* `pendingChanges?: PendingChanges` - flag to indicate that local filter changes are made but yet applied to the report, usually triggered when **apply all slicers** button exists `pendingChanges[Filter]: boolean`
+
 
 ## getFormattingModel *(optional)*
 
