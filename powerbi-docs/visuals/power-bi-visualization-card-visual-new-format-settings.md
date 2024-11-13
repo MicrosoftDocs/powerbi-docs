@@ -7,7 +7,7 @@ ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/15/2024
+ms.date: 10/28/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for the (new) Card visual so that I can effectively and more easily format (new) Card visuals in Power BI Desktop.
 ---
@@ -33,7 +33,7 @@ To format and customize your column chart in **Power BI Desktop**, select the **
 
 ## Format settings
 
-### Layout
+### Layout settings
 
 #### Layout
 
@@ -49,6 +49,37 @@ With the ability to configure and display multiple cards in a single container, 
 [!INCLUDE [layout-layout-space-between-columns](../includes/core-visuals/layout-layout-space-between-columns.md)]
 [!INCLUDE [layout-layout-space-between-cards](../includes/core-visuals/layout-layout-space-between-cards.md)]
 
+#### Shape
+
+The **Shape** settings let you customize the appearance of your visual by adjusting shape-related properties using  the key options you can find in this section.
+
+[!INCLUDE [global-rounded-corners](../includes/core-visuals/global-rounded-corners.md)]
+[!INCLUDE [global-customize-corners](../includes/core-visuals/global-customize-corners.md)]
+[!INCLUDE [global-top-left-corner](../includes/core-visuals/global-top-left-corner.md)]
+[!INCLUDE [global-top-right-corner](../includes/core-visuals/global-top-right-corner.md)]
+[!INCLUDE [global-bottom-left-corner](../includes/core-visuals/global-bottom-left-corner.md)]
+[!INCLUDE [global-bottom-right-corner](../includes/core-visuals/global-bottom-right-corner.md)]
+
+#### Background
+
+The **Background** toggle, when enabled, lets you customize the background of your visual to enhance appearance and readability.
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-background-image-browse](../includes/core-visuals/global-background-image-browse.md)]
+[!INCLUDE [global-image-fit](../includes/core-visuals/global-image-fit.md)]
+[!INCLUDE [image-transparency](../includes/core-visuals/image-transparency.md)]
+
+#### Border and gridlines
+
+The **Border and gridlines** settings, only available when Layout style is set to Table, lets you customize the color, style, thickness, transparency, and rows shown, to enhance the visual's appearance and ensuring it aligns with your report's overall design.
+
+[!INCLUDE [customize-lines-toggle](../includes/core-visuals/customize-lines-toggle.md)]
+[!INCLUDE [border-&-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-width-0-12](../includes/core-visuals/global-width-0-12.md)]
+
 #### Overflow
 
 The **Overflow** settings provide flexibility in displaying more cards that don't fit within the initial view. You can define settings to allow users to flip through paginated cards, or scroll continuously, either vertically or horizontally, to view all the data within the visual.
@@ -56,7 +87,13 @@ The **Overflow** settings provide flexibility in displaying more cards that don'
 [!INCLUDE [layout-overflow-overflow-style](../includes/core-visuals/layout-overflow-overflow-style.md)]
 [!INCLUDE [layout-overflow-overflow-direction](../includes/core-visuals/layout-overflow-overflow-direction.md)]
 
-### Callout values
+#### Padding
+
+The **Padding** settings allow you to adjust the space between the content of the card and its border on all sides of the card’s content to create a more balanced and visually appealing layout. Increasing the padding can give the content more breathing room, while decreasing it can make the content appear more compact.
+
+[!INCLUDE [global-padding](../includes/core-visuals/global-padding.md)]
+
+### Callout values settings
 
 #### Apply settings to
 
@@ -99,7 +136,7 @@ The **Layout** section is designed to enhance the presentation of your data vi
 [!INCLUDE [global-vertical-alignment](../includes/core-visuals/global-vertical-alignment.md)]
 [!INCLUDE [callout-values-layout-callout-size](../includes/core-visuals/callout-values-layout-callout-size.md)]
 
-### Reference labels
+### Reference labels settings
 
 #### Apply settings to
 
@@ -155,7 +192,7 @@ The **Divider** toggle, when enabled, displays a customizable visual division be
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [border-&-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
-[!INCLUDE [border-&-divider-line-width](../includes/core-visuals/border-&-divider-width.md)]
+[!INCLUDE [global-width-0-12](../includes/core-visuals/global-width-0-12.md)]
 [!INCLUDE [reference-labels-divider-ignore-padding](../includes/core-visuals/reference-labels-divider-ignore-padding.md)]
 
 #### Background
@@ -181,7 +218,7 @@ The **Spacing** menu provides options to adjust the layout and appearance of ref
 [!INCLUDE [reference-labels-spacing-padding-after](../includes/core-visuals/reference-labels-spacing-padding-after.md)]
 [!INCLUDE [reference-labels-spacing-outer-padding](../includes/core-visuals/reference-labels-spacing-outer-padding.md)]
 
-### Images
+### Images settings
 
 #### Apply settings to
 
@@ -237,7 +274,7 @@ The **Background** toggle, when enabled, provides more options to customize the 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [global-background-image-browse](../includes/core-visuals/global-background-image-browse.md)]
-[!INCLUDE [cards-background-image-fit](../includes/core-visuals/cards-background-image-fit.md)]
+[!INCLUDE [global-image-fit](../includes/core-visuals/global-image-fit.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 #### Border
@@ -245,7 +282,7 @@ The **Background** toggle, when enabled, provides more options to customize the 
 The **Border** toggle, when enabled, provides customization options to customize the borders and enhance the visual appeal of your cards.
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
-[!INCLUDE [border-&-accent-bar-width](../includes/core-visuals/border-&-accent-bar-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 #### Shadow
@@ -281,7 +318,7 @@ The **Accent bar** toggle, when enabled, is a simple yet effective way to draw
 [!INCLUDE [cards-accent-bar-position](../includes/core-visuals/cards-accent-bar-position.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
-[!INCLUDE [border-&-accent-bar-width](../includes/core-visuals/border-&-accent-bar-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 
 ## Related content
 

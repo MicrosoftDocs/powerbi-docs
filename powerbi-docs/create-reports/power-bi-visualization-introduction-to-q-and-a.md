@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 03/01/2023
+ms.date: 10/22/2024
 LocalizationGroup: Ask questions of your data
+#customer intent: As a Power BI user I want to learn how to create question and answer visuals in Power Bi.
 ---
 
 # Create a Q&A visual in a dashboard in Power BI
@@ -23,7 +24,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 - You just need a [Fabric free license](../consumer/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
 - You need a Power BI Pro license to edit dashboards in other workspaces in the Power BI service. Read about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md). You also need at least a Contributor role in that workspace. Read about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
-- To follow along, you must use a report that you can edit, so we'll use one of the samples available with Power BI.
+- To follow along, you must use a report that you can edit, use one of the samples available with Power BI.
 
 ## Create a Q&A visual in a dashboard
 
@@ -53,7 +54,9 @@ How would we go about creating this line chart using Q&A?
 
 ## Create the same visual in the report editor
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+Use the following steps to create the same visual in the report editor:
+
+## Power BI Desktop
 
 1. Download the [Retail Analysis Sample](sample-retail-analysis.md#get-the-pbix-file-for-this-sample) .pbix file, and open it in Power BI Desktop.
 
@@ -65,7 +68,7 @@ How would we go about creating this line chart using Q&A?
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-desktop-report-visual-2.png" alt-text="Screenshot showing the chart tile for Last Year Sales and This Year Sales in Reports view.":::
 
-# [Power BI service](#tab/powerbi-service)
+## Power BI service
 
 1. Go back to the Retail Analysis Sample dashboard.
 
@@ -80,9 +83,7 @@ How would we go about creating this line chart using Q&A?
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-edit-report.png" alt-text="Screenshot showing the Edit report button.":::
 
----
-
-4. Select the area chart and review the settings in the **Fields** pane. The report creator built this chart by selecting these three values (**Last Year Sales** and **This Year Sales > Value** from the **Sales** table, and **FiscalMonth** from the **Time** table) and organizing them in the **Axis** and **Values** wells of the **Visualizations** pane.
+1. Select the area chart and review the settings in the **Fields** pane. The report creator built this chart by selecting these three values (**Last Year Sales** and **This Year Sales > Value** from the **Sales** table, and **FiscalMonth** from the **Time** table) and organizing them in the **Axis** and **Values** wells of the **Visualizations** pane.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-desktop-visualizations-2.png" alt-text="Screenshot showing the Visualization pane.":::
 

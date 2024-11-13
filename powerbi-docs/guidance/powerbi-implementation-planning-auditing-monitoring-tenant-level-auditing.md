@@ -130,7 +130,7 @@ Here are some common questions that user activity data can answer.
   - Who is doing (too much) sharing from their personal workspace?
   - Who is doing a significant amount of exporting?
   - Who is regularly downloading content?
-  - Who is publishing many new semantic models—[previously known as datasets](../connect-data/service-datasets-rename.md)?
+  - Who is publishing many new semantic models?
   - Who is using subscriptions heavily?
 - **Improve governance and compliance efforts**
   - When are tenant settings changed, and by which Power BI administrator?
@@ -187,7 +187,7 @@ There are two main ways to build a tenant inventory. For more information about 
 
 #### Users and groups data
 
-As your analytical needs grow, you'll likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. To retrieve that data, you can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) users and groups.
+As your analytical needs grow, you'll likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. To retrieve that data, you can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Microsoft Entra ID users and groups.
 
 Data that's retrieved from the Power BI REST APIs includes an email address to describe the user, or the name of a security group. This data is a snapshot at a given point in time.
 
@@ -1327,7 +1327,7 @@ Beginning with Az version 7, the Az cmdlets now reference the Microsoft Graph AP
 You might find articles and blog posts online that suggest alternative options that aren't presented in this section. We strongly recommend that you _**do not**_ create new solutions (and/or migrate your existing solutions) by using any of the following APIs or modules.
 
 - **AzureRM PowerShell modules:** Deprecated and will be retired. They've been replaced with the Az PowerShell module.
-- **Azure AD Graph API and Azure AD PowerShell module:** Deprecated and will be retired. This change is the result of the migration from Azure AD Graph to Microsoft Graph (note that Graph appears in both names, but _Microsoft Graph_ is the future direction). All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK. (Microsoft Entra ID is [now known as Microsoft Entra ID](/azure/active-directory/fundamentals/new-name).)
+- **Azure AD Graph API and Azure AD PowerShell module:** Deprecated and will be retired. This change is the result of the migration from Azure AD Graph to Microsoft Graph (note that Graph appears in both names, but _Microsoft Graph_ is the future direction). All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK.
 - **MS Online (MSOL) PowerShell module:** Deprecated and will be retired. All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK.
 
 > [!CAUTION]

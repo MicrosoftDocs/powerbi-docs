@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/10/2024
+ms.date: 12/12/2024
 LocalizationGroup: Model your data
 no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
@@ -67,7 +67,7 @@ The visual calculations window opens in **Edit** mode. The **Edit** mode screen 
 * A **formula bar** where you can add visual calculations
 * The **visual matrix** which shows the data in the visual, and displays the results of visual calculations as you add them. Any styling or theming you apply to your visual isn't applied to the visual matrix.
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen.":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png":::
 
 To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by typing:
 
@@ -237,7 +237,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * A visual calculation can't refer to itself on the same or different detail level.
 * [Personalization](../consumer/end-user-personalize-visuals.md) of visual calculations or hidden fields isn't available.
 * You can't use the [Publish to web](../collaborate-share/service-publish-to-web.md) functionality with reports that use visual calculations or hidden fields.
-* You can't [export underlying data](../visuals/power-bi-visualization-export-data.md) from visuals that use visual calculations or hidden fields.
+* When exporting data from visuals, visual calculation results are not included in the [underlying data](../visuals/power-bi-visualization-export-data.md) export. Hidden fields are never included in the export, except when exporting the [underlying data](../visuals/power-bi-visualization-export-data.md).
 * You can't use the *see records* drill-through functionality with visuals that use visual calculations or hidden fields.
 * You can't apply [conditional formatting](../create-reports/desktop-conditional-table-formatting.md) on visual calculations.
 * You can't set [data categories](desktop-data-categorization.md) on visual calculations.
@@ -249,6 +249,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
 * You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
 * You can't set a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) on a visual calculation nor use a visual calculation as a dynamic format string for a field or measure.
+* You can't use the Path option of Azure Maps with visual calculations.
 
 ## Next steps
 

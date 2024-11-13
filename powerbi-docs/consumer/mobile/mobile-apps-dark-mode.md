@@ -1,14 +1,14 @@
 ---
-title: Dark mode
+title: Dark mode in Power BI Mobile
 description: Learn about dark mode, the differences between light mode and dark mode, and how to turn dark mode on and off on Power BI services.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 11/08/2024
 ---
-# Dark mode
+# Dark mode in Power BI Mobile
 
 To accommodate your individual viewing preferences, the Power BI mobile apps support both light and dark screen modes. Dark mode reduces the brightness of the screen, making it easier to see your content.
 
@@ -28,3 +28,7 @@ On iOS and Android devices, to switch between light and dark mode, or to let dev
 On Windows devices, open the **Settings** page, select **Options**, and then set the appearance as desired.
 
 ![Screenshot of appearance settings for the Power B I Windows app. ](media/mobile-apps-dark-mode/powerbi-mobile-appearance-settings-windows.png)
+
+## Related content
+
+* [Dark mode in Power BI Desktop](../../create-reports/power-bi-dark-mode.md)

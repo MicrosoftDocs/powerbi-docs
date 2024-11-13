@@ -7,7 +7,7 @@ ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/02/2024
+ms.date: 10/18/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for matrix visuals so that I can effectively and more easily format my matrix visuals in Power BI Desktop and Power BI Service.
 ---
@@ -55,14 +55,14 @@ To format and customize your matrix visual in the **Power BI service**, select t
 The **Horizontal gridlines** toggle, when enabled, allows you to add lines horizontally across the chart to improve readability and to visually separate data points, while allowing you to also adjust line color and width.
 
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
-[!INCLUDE [grid-horizontal-&-vertical-gridlines-width](../includes/core-visuals/grid-horizontal-&-vertical-gridlines-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 
 #### Vertical gridlines
 
 The **Vertical gridlines** toggle, when enabled, allows you to add lines vertically across the chart to improve readability and to visually separate data points, while allowing you to also adjust line color and width.
 
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
-[!INCLUDE [grid-horizontal-&-vertical-gridlines-width](../includes/core-visuals/grid-horizontal-&-vertical-gridlines-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 
 #### Border
 
@@ -71,7 +71,7 @@ The **Border** settings allow you to customize the appearance of the borders aro
 [!INCLUDE [grid-border-selection](../includes/core-visuals/grid-border-selection.md)]
 [!INCLUDE [grid-border-border-position](../includes/core-visuals/grid-border-border-position.md)]
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
-[!INCLUDE [grid-horizontal-&-vertical-gridlines-width](../includes/core-visuals/grid-horizontal-&-vertical-gridlines-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 
 #### Options
 
@@ -94,7 +94,7 @@ The **Border** settings allow you to customize the appearance of the borders aro
 [!INCLUDE [blank-rows-border-border-position](../includes/core-visuals/blank-rows-border-border-position.md)]
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
-[!INCLUDE [grid-&-blank-rows-border-width](../includes/core-visuals/grid-&-blank-rows-border-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 
 ### Values settings
 

@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/09/2024
+ms.date: 10/24/2024
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,27 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## October 2024 QFE 2
+*Version 2.137.1102.0, Released: October 28, 2024*
+
+Bug fixes/improvements:
+
+* Fixed issue with disambiguation preference settings when using composite models
+* Fixed a browser compatibility issue
+* Upgrade from npgsql 4.0.16 to npgsql 4.0.17, which fixed the issue of PostgreSQL connections not working when using prefer or required secure connections
+
+
+ 
+## October 2024 QFE 1
+*Version 2.137.952.0, Released: October 21, 2024*
+
+Bug fixes/improvements:
+
+* Fixed issue with importing/opening a *Live Connected* report
+* Downgraded Drill ODBC driver version from 1.5.14 to 1.5.5
+* Fixed refresh issue with the Dremio connector
+* Fixed the Navigator dialog, allowing Perspective selections when using Composite models
 
 
 ## September 2024 QFE 1 
