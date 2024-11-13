@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 07/07/2023
+ms.date: 11/11/2024
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -56,20 +56,25 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
 1. Select **My workspace** in the navigation pane.
 
-1. Select **New** > **Semantic model** to initiate the import process. The **Add data to start building a report** page opens.
+1. Select **New item** > **Semantic model** to initiate the import process. The **Add data to start building a report** page opens.
 
-   :::image type="content" source="media/service-get-started/new-dataset.png" alt-text="Screenshot that shows how to create a new semantic model to initiate the import process." border="false":::
-
-   > [!NOTE]
-   > If you select **Upload** instead of **New**, the Power BI service uploads the entire Excel workbook. You can then open and edit the workbook in Excel Online.
+   :::image type="content" source="media/service-get-started/power-bi-new-mode.png" alt-text="Screenshot that shows how to create a new semantic model to initiate the import process." border="false":::
 
 1. On the **Add data to start building a report** page, select **Excel**.
 
    :::image type="content" source="media/service-get-started/build-excel-report.png" alt-text="Screenshot that shows how to build a report from an Excel semantic model." border="false":::
 
+   > [!NOTE]
+   > If you select **Upload** instead of **New**, the Power BI service uploads the entire Excel workbook. You can then open and edit the workbook in Excel Online.
+
 1. In the **Select a file** dialog, browse to the location where you saved the Excel file on your computer.
 
-1. Select the file and choose **Import**.
+1. Select the file and choose **Select** > **Link to file** > **Next**.
+
+> [!NOTE]
+> If the file doesn't open, try removing the Sensitivity label.
+
+1. Select the data to use by placing a checkmark next to **financials** and choosing **Create**.
 
    The Power BI service imports the sample data from the Excel file as a semantic model and opens the Financial Sample page.
    

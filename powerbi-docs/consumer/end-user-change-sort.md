@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.custom: video-removed
-ms.date: 07/11/2024
+ms.date: 11/11/2024
 #customer intent: As a PBI business user, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
@@ -39,6 +39,8 @@ Visuals can be sorted alphabetically or numerically. If the content is text, sor
 To change the sort order, select either **Sort ascending** or **Sort descending**. The following example shows the visual sorted by **Opportunity Count** in ascending order. The field and order that are sorted are indicated with a checkmark.
 
 :::image type="content" source="media/end-user-change-sort/power-bi-sort-value.png" alt-text="Screenshot showing the sales per square feet option selected from the menu.":::
+
+In some cases, the report designer set up the visual to sort by month. If this is true, sort the visual ascending or descending. Your visual sorts the months by calendar order. To learn more, see [Sort by other criteria](#sort-by-other-criteria).
 
 ## Sort by multiple columns
 
