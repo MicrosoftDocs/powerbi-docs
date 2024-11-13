@@ -40,7 +40,7 @@ To change the sort order, select either **Sort ascending** or **Sort descending*
 
 :::image type="content" source="media/end-user-change-sort/power-bi-sort-value.png" alt-text="Screenshot showing the sales per square feet option selected from the menu.":::
 
-In some cases, the report designer set up the visual to sort by month. If this is true, sort the visual ascending or descending. Your visual sorts the months by calendar order. To learn more, see [Sort by other criteria](#sort-by-other-criteria).
+In some cases, the report designer sets up the visual to sort by month. If this is true, sort the visual ascending or descending. Your visual sorts the months by calendar order. To learn more, see [Sort by other criteria](#sort-by-other-criteria).
 
 ## Sort by multiple columns
 

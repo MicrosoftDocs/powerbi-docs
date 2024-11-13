@@ -71,8 +71,8 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
 1. Select the file and choose **Select** > **Link to file** > **Next**.
 
-> [!NOTE]
-> If the file doesn't open, try removing the Sensitivity label.
+   > [!NOTE]
+   > If the file doesn't open, try removing the Sensitivity label.
 
 1. Select the data to use by placing a checkmark next to **financials** and choosing **Create**.
 
