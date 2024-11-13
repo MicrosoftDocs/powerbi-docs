@@ -1240,6 +1240,8 @@
     items: 
     - name: Rename content
       href: service-rename.md
+    - name: Change owner of a report
+      href: power-bi-change-owner.md
     - name: Set item contacts
       href: service-item-contact.md
     - name: Delete almost anything
