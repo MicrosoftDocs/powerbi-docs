@@ -144,6 +144,7 @@ Many functions have an optional **:::no-loc text="Reset":::** parameter that is 
 
 To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter.
 For example, the following visual calculations are equivalent and return the sum of *Sales Amount* that starts from 0 for every year:
+
 ```dax
 RUNNINGSUM([Sales Amount], HIGHESTPARENT)
 ```
@@ -153,6 +154,7 @@ RUNNINGSUM([Sales Amount], 1)
 ```
 
 In contrast, the following visual calculations both return the sum of *Sales Amount* that starts from 0 for every Quarter:
+
 ```dax
 RUNNINGSUM([Sales Amount], LOWESTPARENT)
 ```
@@ -161,7 +163,8 @@ RUNNINGSUM([Sales Amount], LOWESTPARENT)
 RUNNINGSUM([Sales Amount], 2)
 ```
 
-Finally, this visual calculation does **not** reset, and continues adding the *Sales Amount* value for each month to the previous values, without restarting. 
+Finally, this visual calculation does **not** reset, and continues adding the *Sales Amount* value for each month to the previous values, without restarting.
+
 ```dax
 RUNNINGSUM([Sales Amount])
 ```
@@ -185,7 +188,7 @@ You can think of the ORDERBY and PARTITIONBY pair as pinning field references do
 
 You can use many of the existing DAX functions in visual calculations. Since visual calculations work within the confines of the visual matrix, functions that rely on model relationships such as [USERELATIONSHIP](/dax/userelationship-function-dax), [RELATED](/dax/related-function-dax) or [RELATEDTABLE](/dax/relatedtable-function-dax) aren't available.
 
-Visual calculations also introduce a set of functions specific to visual calculations. Many of these functions are easier to use shortcuts to DAX window functions. 
+Visual calculations also introduce a set of functions specific to visual calculations. Many of these functions are easier to use shortcuts to DAX window functions.
 
 > [!NOTE]
 > Only use the visual calculations specific functions mentioned in the table below. Other visual calculations specific functions are for internal use only at this time and should not be used. Refer to the table below for any updates of the functions available for use as this preview progresses.
@@ -206,7 +209,7 @@ Visual calculations also introduce a set of functions specific to visual calcula
 | [RUNNINGSUM](/dax/runningsum-function-dax) | Adds a running sum on an axis. | RunningSumSales = RUNNINGSUM([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
 
 ## Formatting visual calculations
- 
+
 You can format a visual calculation using data types and formatting options. You can also set a [custom visual level format string](../create-reports/desktop-custom-format-strings.md). Use the **Data format** options in the General section of the formatting pane for your visual to set the format:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage.":::
@@ -252,7 +255,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 
 ## Next steps
 
-The following articles may be useful when learning and using visual calculations: 
+The following articles may be useful when learning and using visual calculations:
 
 * [Using calculations options in Power BI Desktop](desktop-calculations-options.md)
 * [Create measures for data analysis in Power BI Desktop](desktop-measures.md)
@@ -260,4 +263,3 @@ The following articles may be useful when learning and using visual calculations
 * [OFFSET DAX function](/dax/offset-function-dax)
 * [INDEX DAX function](/dax/index-function-dax)
 * [ORDERBY DAX function](/dax/orderby-function-dax)
-
