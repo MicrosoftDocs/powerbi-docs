@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/27/2024
+ms.date: 09/19/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -55,7 +55,7 @@ You must belong to the Billing admin role to purchase or assign licenses for you
 
 ### Admin roles for managing licenses and subscriptions
 
-After the licenses and subscriptions are purchased, Billing, License, or User admins can manage licenses for an organization. For details about these four admin roles, see [Admin roles.](/fabric/admin/microsoft-fabric-admin#microsoft-365-admin-roles)
+After the licenses and subscriptions are purchased, License, or User admins can manage licenses for an organization. For details about these admin roles, see [Admin roles.](/fabric/admin/microsoft-fabric-admin#microsoft-365-admin-roles)
 
 ## Get Fabric or Power BI for your organization
 

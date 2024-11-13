@@ -114,6 +114,8 @@
           href: copilot-create-report-service.md
         - name: Create reports in Power BI Desktop with Copilot
           href: copilot-create-desktop-report.md
+        - name: Create report subscriptions with Copilot summaries 
+          href: copilot-summaries-in-subscriptions.md
         - name: Ask Copilot questions about data in the model
           href: copilot-pane-summarize-report-data.md
         - name: Write prompts for Copilot report pages
@@ -1238,6 +1240,8 @@
     items: 
     - name: Rename content
       href: service-rename.md
+    - name: Change owner of a report
+      href: power-bi-change-owner.md
     - name: Set item contacts
       href: service-item-contact.md
     - name: Delete almost anything
