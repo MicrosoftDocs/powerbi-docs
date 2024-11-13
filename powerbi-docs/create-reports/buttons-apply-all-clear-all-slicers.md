@@ -99,6 +99,8 @@ Some things to keep in mind with these buttons:
 
 - Hiding the last Apply all slicers button releases its control over the slicers. They revert to instantly applying selections as you make selections.
 
+- In case the report contains Clear and Apply buttons along with any custom visuals, to ensure default behavior of the native and custom visuals, after **Clear All Slicers** is pressed you are requested to press **Apply All Slicers** button for changes to apply. 
+
 ### Considerations about the slicers
 
 Some things to keep in mind with the slicers:
