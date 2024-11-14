@@ -61,7 +61,7 @@ You can create a Microsoft Entra app from the Azure portal or by using Powershel
 
 <a name='create-an-azure-ad-app-in-the-azure-portal'></a>
 
-### [Create a Microsoft Entra app in the Azure portal](#tab/azure-portal)
+### [Create an app in the Azure portal](#tab/azure-portal)
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#allservices).
 
@@ -102,7 +102,7 @@ You can create a Microsoft Entra app from the Azure portal or by using Powershel
    >[!NOTE]
    >After you leave this window, the client secret value is hidden, and you can't view or copy it again.
 
-### [Create a Microsoft Entra app by using PowerShell](#tab/powershell)
+### [Create an app using PowerShell](#tab/powershell)
 
 <a name='create-an-azure-ad-app-by-using-powershell'></a>
 
