@@ -36,7 +36,7 @@ If you're a report owner, you might receive an email from **Microsoft Power BI**
 
     The user’s **Pending** access request opens automatically. Select **Approve** to grant the user *Read* permissions to the report.
 
-    :::image type="content" source="media/service-request-access/power-bi-share-report-request-access.png" alt-text="Screenshot of pending access requests.":::
+    :::image type="content" source="media/service-request-access/manage-access-fabric.png" alt-text="Screenshot of pending access requests.":::
 
 1. After you've approved the user’s request, you can select the **Direct access** tab to modify their permissions and give them **Reshare** permissions as well.
 
