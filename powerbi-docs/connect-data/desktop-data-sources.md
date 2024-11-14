@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/13/2024
+ms.date: 11/12/2024
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI Desktop user, I want to understand the available data sources and how to connect to them, so that I can effectively analyze and visualize my data.
 ---
@@ -77,24 +77,16 @@ The **Database** category provides the following data connections:
 * Amazon Redshift
 * Impala
 * Google BigQuery
-* Google BigQuery (Microsoft Entra ID) (Beta)
+* Google BigQuery (Microsoft Entra ID)
 * Vertica
 * Snowflake
 * Essbase
 * AtScale Models
 * Actian (Beta)
 * Amazon Athena
-* AtScale cubes
 * BI Connector
-* ClickHouse (Beta)
 * Data Virtuality LDW
-* Denodo
-* Dremio Software
-* Dremio Cloud
 * Exact Online Premium (Beta)
-* Exasol
-* Indexima
-* InterSystems Health Insight
 * Jethro (Beta)
 * Kyligence
 * Linkar PICK Style / MultiValue Databases (Beta)
@@ -102,6 +94,16 @@ The **Database** category provides the following data connections:
 * MarkLogic
 * MongoDB Atlas SQL
 * TIBCO® Data Virtualization
+* AtScale cubes
+* Denodo
+* Dremio Software
+* Dremio Cloud
+* Exasol
+* MongoDB Atlas SQL
+* ClickHouse (beta)
+* InterSystems Health Insight
+* KX kdb Insights Enterprise (beta)
+* Kyvos ODBC (beta)
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File** > **Options and settings** > **Options**, then selecting **Preview features** and enabling the connector. If you don't see some of the connectors mentioned previously and want to use them, check your **Preview features** settings. Also note that any data source marked as **Beta** or **Preview** has limited support and functionality, and shouldn't be used in production environments.
@@ -116,6 +118,7 @@ The **Microsoft Fabric** category provides the following data connections:
 * Warehouses
 * Lakehouses
 * KQL Databases
+* Metric Sets
 
 ### Power Platform data sources
 
@@ -145,7 +148,7 @@ The **Azure** category provides the following data connections:
 * Azure Cost Management
 * Azure Resource Graph
 * Azure HDInsight on AKS Trino (Beta)
-* Azure Cosmos DB v2 (Beta)
+* Azure Cosmos DB v2
 * Azure Databricks
 * Azure Synapse Analytics workspace (Beta)
 
@@ -182,9 +185,7 @@ The **Online Services** category provides the following data connections:
 * Asana (Beta)
 * Assemble Views
 * Autodesk Construction Cloud
-* Automation Anywhere
 * Automy Data Analytics (Beta)
-* BuildingConnected & TradeTapp (Beta)
 * CData Connect Cloud
 * Dynamics 365 Customer Insights (Beta)
 * Databricks
@@ -194,27 +195,33 @@ The **Online Services** category provides the following data connections:
 * eWay-CRM
 * FactSet Analytics
 * Palantir Foundry
-* Funnel
 * Hexagon PPM Smart® API
 * Industrial App Store
-* Intune Data Warehouse (Beta)
-* LEAP (Beta)
-* Planview OKR (Beta)
+* Planview OKR (beta)
 * Planview ProjectPlace
-* Product Insights (Beta)
-* Profisee
 * Quickbase
-* Samsara (Beta)
-* Smartsheet (Beta)
 * SoftOne BI (Beta)
 * Planview IdeaPlace
-* Supermetrics (Beta)
-* TeamDesk (Beta)
+* TeamDesk (beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
+* Zoho Creator
+* Automation Anywhere
+* CData Connect Cloud
+* Dynamics 365 Customer Insights (beta)
+* Databricks
+* Funnel
+* Intune Data Warehouse (Beta)
+* LEAP (Beta)
+* LinkedIn Learning
+* Product Insights (Beta)
+* Profisee
+* Samsara (Beta)
+* Supermetrics (beta)
 * Viva Insights
 * Zendesk (Beta)
-* Zoho Creator
+* BuildingConnected & TradeTapp (beta)
+* Smartsheet (Beta)
 
 ### Other data sources
 
@@ -236,26 +243,15 @@ The **Other** category provides the following data connections:
 * Amazon OpenSearch Service (Beta)
 * Anaplan
 * Solver
-* BitSight Security Ratings
 * Bloomberg Data and Analytics
-* BQE Core
-* Wolters Kluwer CCH Tagetik
 * Celonis EMS
 * Cherwell (Beta)
 * CloudBluePSA (Beta)
 * Cognite Data Fusion
-* Delta Sharing
-* Eduframe (Beta)
-* Emplifi Metrics (Beta)
 * EQuIS
 * FactSet RMS (Beta)
-* FHIR
-* Google Sheets
-* Information Grid (Beta)
 * inwink (Beta)
-* Jamf Pro (Beta)
 * Kognitwin
-* LinkedIn Learning (Beta)
 * MicroStrategy for Power BI
 * OneStream (Beta)
 * OpenSearch Project (Beta)
@@ -264,22 +260,29 @@ The **Other** category provides the following data connections:
 * Roamler (Beta)
 * SIS-CC SDMX (Beta)
 * Shortcuts Business Insights (Beta)
-* SingleStore Direct Query Connector
-* Siteimprove
-* Socialbakers Metrics 1.1.0 (Beta)
-* SolarWinds Service Desk
 * Starburst Enterprise
 * SumTotal
 * SurveyMonkey
-* Microsoft Teams Personal Analytics (Beta)
 * Tenforce (Smart)List
 * Usercube (Beta)
 * Vena
 * Vessel Insight
-* Windsor (Beta)
 * Wrike (Beta)
 * Zucchetti HR Infinity (Beta)
-
+* BitSight Security Ratings
+* BQE CORE
+* Wolters Kluwer CCH Tagetik
+* Delta Sharing
+* Eduframe (Beta)
+* FHIR
+* Google Sheets
+* InformationGrid
+* Jamf Pro (Beta)
+* SingleStore Direct Query Connector
+* Siteimprove
+* SolarWinds Service Desk
+* Microsoft Teams Personal Analytics (Beta)
+* Windsor (beta)
 * Blank Query
 
 > [!NOTE]

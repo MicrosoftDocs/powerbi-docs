@@ -6,7 +6,7 @@ ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview  
-ms.date: 07/29/2024
+ms.date: 11/11/2024
 # customer intent: As a Power BI user, I want an understanding of Microsoft Fabric and how it relates to the Power BI service so that I know how to use these two services separately or together.
 ---
 
@@ -42,7 +42,7 @@ The data for all of these workloads is consolidated in a multicloud data lake ca
 
  AI capabilities are seamlessly embedded within Fabric, eliminating the need for manual integration. With Fabric, you can easily transition your raw data into actionable insights.
 
-To learn more about Fabric, read [What is Power BI](/fabric/get-started/microsoft-fabric-overview).
+To learn more about Fabric, read [What is Fabric](/fabric/get-started/microsoft-fabric-overview).
 
 ## How do I migrate from Power BI to Fabric?
 

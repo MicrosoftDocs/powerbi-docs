@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/10/2024
+ms.date: 12/12/2024
 LocalizationGroup: Model your data
 no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
@@ -249,6 +249,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
 * You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
 * You can't set a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) on a visual calculation nor use a visual calculation as a dynamic format string for a field or measure.
+* You can't use the Path option of Azure Maps with visual calculations.
 
 ## Next steps
 
