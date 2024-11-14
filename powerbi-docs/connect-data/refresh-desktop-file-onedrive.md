@@ -1,6 +1,6 @@
 ---
-title: Refresh a semantic model from OneDrive or SharePoint Online
-description: Refresh a semantic model created from a Power BI Desktop file on OneDrive, or SharePoint Online.
+title: Refresh a Power BI Desktop File (pbix file) from OneDrive or SharePoint Online
+description: Refresh a Power BI Desktop File (pbix file) created from OneDrive, or SharePoint Online.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 11/10/2023
 LocalizationGroup: Data refresh
 ---
-# Refresh a semantic model stored on OneDrive or SharePoint Online
+# Refresh a Power BI Desktop File (pbix file) stored on OneDrive or SharePoint Online
 Importing files from OneDrive or SharePoint Online into the Power BI service is a great way to make sure your work in Power BI Desktop stays in sync with the Power BI service.
 
 ## Advantages of storing a Power BI Desktop file on OneDrive or SharePoint Online
