@@ -145,7 +145,7 @@ To auto-create a report:
 
 1. In your workspace, select the **Retail Analysis Sample** semantic model to open it.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" ? alt-text="Screenshot showing the Retail Analysis Sample semantic model entry in your workspace.":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample semantic model entry in your workspace.":::
 
 1. Select **Explore this data**, then **Auto create a report**.
 
