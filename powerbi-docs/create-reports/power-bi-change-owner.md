@@ -22,6 +22,7 @@ The report needs to live in a workspace that can have more than one member. It c
 
 ## Add owners to the workspace
 
+1. Create a workspace.
 1. Add other people to the workspace.
 1. Make at least one of those people an owner of the workspace.
 
