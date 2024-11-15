@@ -389,7 +389,7 @@ Additional things to keep in mind about publishing apps:
 - Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 - When using "Add a Link", you can only open embed links in the content area.
 - Apps can have a maximum of 200 dashboards.
-- Creating new subscriptions aren't support for scorecard items from within an app by app users. As a workaround: workspace admins or item owners can create subscriptions from the source item and add app consumers as recipients, recipients can manage their subscriptions in preferences > notifications.
+- Creating a subscription from a scorecard from within an app isn't supported. As a workaround, workspace admins or item owners can create subscriptions from the source scorecard and add app consumers as recipients, recipients can manage their subscriptions in preferences > notifications.
 
 ## Related content
 
