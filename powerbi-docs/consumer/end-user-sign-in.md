@@ -7,8 +7,8 @@ ms.reviewer: mihart
 Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: conceptual
-ms.date: 08/14/2024
+ms.topic: how-to
+ms.date: 11/14/2024
 LocalizationGroup: Get started
 ---
 
@@ -20,11 +20,14 @@ This article is for Power BI business users who are signing in to the Power BI s
 
 ## Power BI accounts
 
-Before you can sign in to the Power BI service, you need an [account and a license](end-user-license.md). There are several ways to get an account and license. This article describes a common scenario where employees at a corporation use their work email to sign in to their Power BI account. And, the employees use licenses that were purchased and allocated for their employees. 
+Before you can sign in to the Power BI service, you need an [account and a license](end-user-license.md). There are several ways to get an account and license. This article describes a common scenario where employees at a corporation use their work email to sign in to their Power BI account. And, the employees use licenses that were purchased and allocated for them by their corporation. 
 
 ## Sign in for the first time
 
 Use your work email to log in to the Power BI service for the first time. Follow the steps here for general guidance. The exact screens may vary from what you see here, depending on your version of Microsoft software, browser version, and how your admin set up your license and environment.
+
+> [!IMPORTANT]
+> Use a work or school account to sign in to the Power BI service. Commercial accounts like @hotmail and @gmail aren't supported. 
 
 ### Step 1: Open the Power BI service
 
