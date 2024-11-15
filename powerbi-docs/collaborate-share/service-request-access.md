@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/01/2023
+ms.date: 11/15/2024
 LocalizationGroup: Share your work
 ---
 # Request or grant access to shared dashboards or reports
@@ -30,11 +30,14 @@ If someone sends you a link to a dashboard or a report, but it's not shared with
 
 If you're a report owner, you might receive an email from **Microsoft Power BI** saying that someone has requested access to your report.
 
-:::image type="content" source="media/service-request-access/power-bi-request-access-email.png" alt-text="Screenshot of email requesting access to your report.":::
+1. In the email, select **Grant access**.
 
-1. Select **Grant access**.
+   The user’s **Pending** access request opens automatically. Select one of the options:
 
-    The user’s **Pending** access request opens automatically. Select **Approve** to grant the user *Read* permissions to the report.
+   - **Admin** to grant the user *Read* permissions to the report.
+   - **Member**
+   - **Contributor**
+   - Or **Remove** them.
 
     :::image type="content" source="media/service-request-access/manage-access-fabric.png" alt-text="Screenshot of pending access requests.":::
 
