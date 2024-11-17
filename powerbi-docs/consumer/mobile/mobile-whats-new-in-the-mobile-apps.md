@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/17/2024
+ms.date: 11/12/2024
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,28 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## November 2024
+
+### Copilot comes to the Power BI mobile apps! (iOS and Android phones) (preview)
+
+You no longer have to analyze data by yourself in the Power BI mobile apps! Now Copilot can provide report summaries and insights to help you make data driven decisions on the go, anytime, anywhere. Just tap the **Copilot** icon in the report header, choose the desired prompt in the chat window that opens (currently you can choose to get either an executive summary or insights), and Copilot does the rest! Once Copilot has generated its response, you can further explore your data by tapping the references provided in the response, or use the suggested prompts at the bottom of the chat window to change or refine your query.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/copilot-whats-new.png" alt-text="Screenshot illustrating how to use Copilot in the Power BI mobile apps." border="false":::
+
+Copilot in Power BI Mobile can be used with any report that meets [Copilot for Power BI requirements](../../create-reports/copilot-introduction.md).
+
+Check out our [blog](https://powerbi.microsoft.com/blog/introducing-copilot-in-power-bi-mobile-apps-preview/) and [documentation](./mobile-apps-copilot.md)!
+
+## September 2024
+
+### NFC support (preview)
+
+The Power BI mobile apps now support NFC! Register any Power BI content on an NFC tag to create seamless connections between your data and the physical locations it's relevant to. This feature is especially useful for frontline workers who need quick access to data. For example, a retail manager could quickly access inventory data by tapping their phone on an NFC tag placed on a storage shelf.
+
+To use an NFC tag with the Power BI mobile app, open the desired Power BI content (report, report page, dashboard, scorecard. etc.) and use the new **NFC** operation in the app's header to register that content on an NFC tag. Then place the tag in the desired location or object. After that, anyone with permission to access the item can get to it by touching the tag with their phone. Check out our [demo](https://www.youtube.com/watch?v=N3gd4wfsmvo&ab_channel=MicrosoftPowerBI&t=21m42s) and [documentation](./mobile-apps-nfc-tags.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/nfc-tags-whats-new.png" alt-text="Screenshot illustrating how to register and read NFC tags with a phone using the Power BI mobile app." border="false":::
 
 ## June 2024
 

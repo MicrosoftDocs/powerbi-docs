@@ -1,79 +1,328 @@
 ---
-title: Card visual format settings
-description: This document explains all available Format settings for Card visuals in Power BI Desktop and Power BI Service.
+title: (new) Card visual format settings
+description: This article provides a clear overview of all available Format settings for the (new) Card visual in Power BI Desktop.
 author: JaedenArmstrong
 ms.author: miguelmyers
-ms.reviewer:
-ms.custom:
+ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/13/2024
+ms.date: 10/28/2024
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for card visuals so that I can effectively and more easily format card visuals in Power BI Desktop and Power BI Service.
+#customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for the (new) Card visual so that I can effectively and more easily format (new) Card visuals in Power BI Desktop.
 ---
 
-# Card visual format settings
+# (new) Card visual format settings
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-## Overview
+This article provides a comprehensive and detailed exposition of all format settings available for the (new) Card visual in Power BI Desktop.
 
-The document you are about to delve into will provide a comprehensive and detailed exposition of the various format settings available for card visuals in both Power BI Desktop and Power BI Service.
+Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements, callout values, and reference labels, to advanced card settings, and image controls, we’ll cover every setting for (new) Card visual formatting.
 
-Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements, callout values, and reference labels, to advanced card settings, and image controls, this document will cover every setting for card visual formatting, ensuring that you can present your data in the most effective and visually appealing way possible.
+Whether you’re a seasoned Power BI user or new to data visualization, if you're looking to understand all the format options available for the (new) Card visual, this guide has got you covered as you explore how to tailor the (new) Card visual to perfectly fit your needs.
 
-Whether you’re a seasoned Power BI user or new to data visualization, this document will be an invaluable resource for mastering card visual formatting in Power BI Desktop and Power BI Service, providing you with a detailed explanation for each setting and control.
+> [!IMPORTANT]
+> The (new) Card visual is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ## Prerequisites
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+To format and customize your column chart in **Power BI Desktop**, select the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
 
-To format and customize your column chart in **Power BI Desktop**, simply click the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/(new)-card-format-settings-desktop.png" alt-text="Power BI Desktop screenshot showing the Visualizations pane, Format visual icon, and both the Visual and General tabs highlighted.":::
 
-   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-desktop.png" alt-text="Power BI Desktop screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+## Format settings
 
-# [Power BI Service](#tab/powerbi-service)
+### Layout settings
 
-To format and customize your column chart in **Power BI Service**, simply click the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+#### Layout
 
-   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-service.png" alt-text="Power BI Service screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+With the ability to configure and display multiple cards in a single container, these settings provide comprehensive control over the layout and appearance of each card.
 
----
+[!INCLUDE [layout-layout-arrangement](../includes/core-visuals/layout-layout-arrangement.md)]
+[!INCLUDE [layout-layout-style](../includes/core-visuals/layout-layout-style.md)]
+[!INCLUDE [layout-layout-max-rows-shown](../includes/core-visuals/layout-layout-max-rows-shown.md)]
+[!INCLUDE [layout-layout-columns-shown](../includes/core-visuals/layout-layout-columns-shown.md)]
+[!INCLUDE [layout-layout-max-cards-shown](../includes/core-visuals/layout-layout-max-cards-shown.md)]
+[!INCLUDE [layout-layout-customize-spacing](../includes/core-visuals/layout-layout-customize-spacing.md)]
+[!INCLUDE [layout-layout-space-between-rows](../includes/core-visuals/layout-layout-space-between-rows.md)]
+[!INCLUDE [layout-layout-space-between-columns](../includes/core-visuals/layout-layout-space-between-columns.md)]
+[!INCLUDE [layout-layout-space-between-cards](../includes/core-visuals/layout-layout-space-between-cards.md)]
 
-> [!NOTE]
-> [!INCLUDE [prerequisites-share-your-report](../includes/core-visuals/prerequisites-share-your-report.md)]
+#### Shape
 
-## X-axis settings
+The **Shape** settings let you customize the appearance of your visual by adjusting shape-related properties using  the key options you can find in this section.
 
-### Type
+[!INCLUDE [global-rounded-corners](../includes/core-visuals/global-rounded-corners.md)]
+[!INCLUDE [global-customize-corners](../includes/core-visuals/global-customize-corners.md)]
+[!INCLUDE [global-top-left-corner](../includes/core-visuals/global-top-left-corner.md)]
+[!INCLUDE [global-top-right-corner](../includes/core-visuals/global-top-right-corner.md)]
+[!INCLUDE [global-bottom-left-corner](../includes/core-visuals/global-bottom-left-corner.md)]
+[!INCLUDE [global-bottom-right-corner](../includes/core-visuals/global-bottom-right-corner.md)]
 
-The **Type** setting within x-axis options is only available when you choose a single data field that is either numerical or date/time.
+#### Background
 
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-type-type.md)]
+The **Background** toggle, when enabled, lets you customize the background of your visual to enhance appearance and readability.
 
-### Range
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-background-image-browse](../includes/core-visuals/global-background-image-browse.md)]
+[!INCLUDE [global-image-fit](../includes/core-visuals/global-image-fit.md)]
+[!INCLUDE [image-transparency](../includes/core-visuals/image-transparency.md)]
 
-The availability of **Range** settings depends on configuring the x-axis **Type** as **Continuous**. Once the X-axis Type is specified as Continuous, you can access and adjust all the Range settings shown below.
+#### Border and gridlines
 
-[!INCLUDE [axis-range-maximum](../includes/core-visuals/axis-range-maximum.md)]
-[!INCLUDE [axis-range-minimum](../includes/core-visuals/axis-range-minimum.md)]
-[!INCLUDE [axis-range-logarithmic-scale](../includes/core-visuals/axis-range-logarithmic-scale.md)]
-[!INCLUDE [xaxis-range-invert-range](../includes/core-visuals/xaxis-range-invert-range.md)]
+The **Border and gridlines** settings, only available when Layout style is set to Table, lets you customize the color, style, thickness, transparency, and rows shown, to enhance the visual's appearance and ensuring it aligns with your report's overall design.
 
+[!INCLUDE [customize-lines-toggle](../includes/core-visuals/customize-lines-toggle.md)]
+[!INCLUDE [border-&-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-width-0-12](../includes/core-visuals/global-width-0-12.md)]
 
+#### Overflow
 
+The **Overflow** settings provide flexibility in displaying more cards that don't fit within the initial view. You can define settings to allow users to flip through paginated cards, or scroll continuously, either vertically or horizontally, to view all the data within the visual.
 
-## Considerations and technical aspects
+[!INCLUDE [layout-overflow-overflow-style](../includes/core-visuals/layout-overflow-overflow-style.md)]
+[!INCLUDE [layout-overflow-overflow-direction](../includes/core-visuals/layout-overflow-overflow-direction.md)]
 
-### Considerations
-- Display units suffix changes according to location/system settings. 
-- Axis colors defined by conditional formatting are based to a general value rather that by individual category.
+#### Padding
 
-### Technical aspects
+The **Padding** settings allow you to adjust the space between the content of the card and its border on all sides of the card’s content to create a more balanced and visually appealing layout. Increasing the padding can give the content more breathing room, while decreasing it can make the content appear more compact.
+
+[!INCLUDE [global-padding](../includes/core-visuals/global-padding.md)]
+
+### Callout values settings
+
+#### Apply settings to
+
+[!INCLUDE [global-apply-settings-to-series](../includes/core-visuals/global-apply-settings-to-series.md)]
+[!INCLUDE [global-apply-settings-to-series-menu](../includes/core-visuals/global-apply-settings-to-series-menu.md)]
+
+#### Values
+
+The visibility of **Values** can be toggled on or off to make them apparent or to hide them. When toggled on, you can access and adjust all the Values settings shown here.
+
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [callout-values-horixontal-alignment](../includes/core-visuals/callout-values-values-horizontal-alignment.md)]
+[!INCLUDE [callout-values-values-text-wrap](../includes/core-visuals/callout-values-values-text-wrap.md)]
+[!INCLUDE [global-display-units](../includes/core-visuals/global-display-units.md)]
+[!INCLUDE [global-format-code-fx](../includes/core-visuals/global-format-code-fx.md)]
+[!INCLUDE [global-value-decimal-places](../includes/core-visuals/global-value-decimal-places.md)]
+[!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
+
+#### Label
+
+The **Label** toggle, when enabled, allows you to display labels for your callout values. You can customize the appearance of these labels in your visualizations, including options for changing the displayed text, label hierarchy, font, text size, color, and alignment of the labels, ensuring they precisely match the report.
+
+[!INCLUDE [callout-values-label-text](../includes/core-visuals/callout-values-label-text.md)]
+[!INCLUDE [callout-values-label-heading](../includes/core-visuals/callout-values-label-heading.md)]
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-display-units](../includes/core-visuals/global-display-units.md)]
+[!INCLUDE [callout-values-label-position](../includes/core-visuals/callout-values-label-position.md)]
+[!INCLUDE [callout-values-label-space-between-label-and-value](../includes/core-visuals/callout-values-label-space-between-label-and-value.md)]
+[!INCLUDE [callout-values-label-match-value-alignment](../includes/core-visuals/callout-values-label-match-value-alignment.md)]
+[!INCLUDE [callout-values-label-align-baselines](../includes/core-visuals/callout-values-label-align-baselines.md)]
+
+#### Layout
+
+The **Layout** section is designed to enhance the presentation of your data visualizations by offering settings for vertical alignment and callout size as shown here.
+
+[!INCLUDE [global-vertical-alignment](../includes/core-visuals/global-vertical-alignment.md)]
+[!INCLUDE [callout-values-layout-callout-size](../includes/core-visuals/callout-values-layout-callout-size.md)]
+
+### Reference labels settings
+
+#### Apply settings to
+
+[!INCLUDE [global-apply-settings-to-series](../includes/core-visuals/global-apply-settings-to-series.md)]
+[!INCLUDE [reference-labels-apply-settings-to-select-series](../includes/core-visuals/reference-labels-apply-settings-to-select-series.md)]
+[!INCLUDE [reference-labels-add-label](../includes/core-visuals/reference-labels-add-label.md)]
+[!INCLUDE [reference-labels-apply-settings-to-select-label](../includes/core-visuals/reference-labels-apply-settings-to-select-label.md)]
+
+#### Options
+
+The **Options** menu is available when **Apply settings to** is set for **All series**.
+
+[!INCLUDE [reference-labels-options-position](../includes/core-visuals/reference-labels-options-position.md)]
+
+#### Title
+
+The **Title** toggle, when enabled, controls the visibility of the Series title. When enabled, an array of settings becomes available, as shown, allowing users to fully adjust the appearance of the Series title.
+
+[!INCLUDE [data-labels-title-content](../includes/core-visuals/data-labels-title-content.md)]
+[!INCLUDE [reference-labels-title-text](../includes/core-visuals/reference-labels-title-text.md)]
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+
+#### Value
+
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-display-units](../includes/core-visuals/global-display-units.md)]
+[!INCLUDE [global-format-code-fx](../includes/core-visuals/global-format-code-fx.md)]
+[!INCLUDE [reference-labels-value-value-decimal-places](../includes/core-visuals/global-value-decimal-places-fx.md)]
+[!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
+
+#### Detail
+
+The **Detail** toggle, when enabled, provides users the option to add and format more data to include detailed information in the Reference label when desired. The individual availability of each setting is dependent on which options have been selected for both series and labels.
+
+[!INCLUDE [reference-labels-detail-data](../includes/core-visuals/reference-labels-detail-data.md)]
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [reference-labels-detail-font-color](../includes/core-visuals/reference-labels-detail-font-color.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-display-units](../includes/core-visuals/global-display-units.md)]
+[!INCLUDE [global-format-code-fx](../includes/core-visuals/global-format-code-fx.md)]
+[!INCLUDE [global-value-decimal-places](../includes/core-visuals/global-value-decimal-places.md)]
+[!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
+
+#### Divider
+
+The **Divider** toggle, when enabled, displays a customizable visual division between the Callout values and the Reference label, and also makes the Background toggle available for more customization options.
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [border-&-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
+[!INCLUDE [global-width-0-12](../includes/core-visuals/global-width-0-12.md)]
+[!INCLUDE [reference-labels-divider-ignore-padding](../includes/core-visuals/reference-labels-divider-ignore-padding.md)]
+
+#### Background
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+
+#### Layout
+
+[!INCLUDE [reference-labels-layout-arrangement](../includes/core-visuals/reference-labels-layout-arrangement.md)]
+[!INCLUDE [reference-labels-layout-style](../includes/core-visuals/reference-labels-layout-style.md)]
+[!INCLUDE [reference-labels-layout-value-area](../includes/core-visuals/reference-labels-layout-value-area.md)]
+[!INCLUDE [reference-labels-layout-horizontal-alignment](../includes/core-visuals/reference-labels-layout-horizontal-alignment.md)]
+[!INCLUDE [reference-labels-layout-vertical-alignment](../includes/core-visuals/reference-labels-layout-vertical-alignment.md)]
+
+#### Spacing
+
+The **Spacing** menu provides options to adjust the layout and appearance of reference labels in a card visual. It allows you to customize the space between labels, divider line padding, and outer padding. 
+
+[!INCLUDE [reference-labels-spacing-space-between-labels](../includes/core-visuals/reference-labels-spacing-space-between-labels.md)]
+[!INCLUDE [reference-labels-spacing-customize-outer-padding](../includes/core-visuals/reference-labels-spacing-customize-outer-padding.md)]
+[!INCLUDE [reference-labels-spacing-padding-before](../includes/core-visuals/reference-labels-spacing-padding-before.md)]
+[!INCLUDE [reference-labels-spacing-padding-after](../includes/core-visuals/reference-labels-spacing-padding-after.md)]
+[!INCLUDE [reference-labels-spacing-outer-padding](../includes/core-visuals/reference-labels-spacing-outer-padding.md)]
+
+### Images settings
+
+#### Apply settings to
+
+[!INCLUDE [global-apply-settings-to-series](../includes/core-visuals/global-apply-settings-to-series.md)]
+[!INCLUDE [global-apply-settings-to-series-menu](../includes/core-visuals/global-apply-settings-to-series-menu.md)]
+
+#### Image
+
+[!INCLUDE [images-image-image-type](../includes/core-visuals/images-image-image-type.md)]
+[!INCLUDE [images-image-browse](../includes/core-visuals/images-image-browse.md)]
+[!INCLUDE [images-image-image-url](../includes/core-visuals/images-image-image-url.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [images-image-position](../includes/core-visuals/images-image-position.md)]
+[!INCLUDE [global-vertical-alignment](../includes/core-visuals/global-vertical-alignment.md)]
+[!INCLUDE [images-image-space-between-image-and-callout](../includes/core-visuals/images-image-space-between-image-and-callout.md)]
+[!INCLUDE [images-image-fix-size](../includes/core-visuals/images-image-fix-size.md)]
+[!INCLUDE [images-image-image-area-size](../includes/core-visuals/images-image-image-area-size.md)]
+[!INCLUDE [images-image-size](../includes/core-visuals/images-image-size.md)]
+[!INCLUDE [images-image-alt-text](../includes/core-visuals/images-image-alt-text.md)]
+
+### Card settings
+
+#### Apply settings to
+
+[!INCLUDE [global-apply-settings-to-series](../includes/core-visuals/global-apply-settings-to-series.md)]
+[!INCLUDE [global-apply-settings-to-series-menu](../includes/core-visuals/global-apply-settings-to-series-menu.md)]
+
+#### Shape
+
+[!INCLUDE [cards-shape-shape](../includes/core-visuals/shape-shape.md)]
+[!INCLUDE [cards-shape-rounded-corners](../includes/core-visuals/shape-rounded-corners.md)]
+[!INCLUDE [cards-shape-size-of-top-snips](../includes/core-visuals/shape-size-of-top-snips.md)]
+[!INCLUDE [cards-shape-size-of-bottom-snips](../includes/core-visuals/shape-size-of-bottom-snips.md)]
+[!INCLUDE [cards-shape-customize-style](../includes/core-visuals/shape-customize-style.md)]
+[!INCLUDE [cards-shape-top-left-corner](../includes/core-visuals/shape-top-left-corner.md)]
+[!INCLUDE [cards-shape-top-right-corner](../includes/core-visuals/shape-top-right-corner.md)]
+[!INCLUDE [cards-shape-bottom-left-corner](../includes/core-visuals/shape-bottom-left-corner.md)]
+[!INCLUDE [cards-shape-bottom-right-corner](../includes/core-visuals/shape-bottom-right-corner.md)]
+
+#### Padding
+
+[!INCLUDE [global-padding-size](../includes/core-visuals/global-padding-size.md)]
+[!INCLUDE [global-padding-padding](../includes/core-visuals/global-padding-padding.md)]
+
+#### Alignment
+
+[!INCLUDE [cards-alignment-certical-alignment](../includes/core-visuals/cards-alignment-vertical-alignment.md)]
+
+#### Background
+
+The **Background** toggle, when enabled, provides more options to customize the background of your cards.
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-background-image-browse](../includes/core-visuals/global-background-image-browse.md)]
+[!INCLUDE [global-image-fit](../includes/core-visuals/global-image-fit.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+
+#### Border
+
+The **Border** toggle, when enabled, provides customization options to customize the borders and enhance the visual appeal of your cards.
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+
+#### Shadow
+
+The **Shadow** toggle, when enabled, enhances the visual appeal of your cards by giving them a three-dimensional look and can help certain elements stand out in your report.
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-shadow-offset](../includes/core-visuals/global-shadow-offset.md)]
+[!INCLUDE [global-shadow-and-glow-position](../includes/core-visuals/global-shadow-and-glow-position.md)]
+[!INCLUDE [cards-shadow-size](../includes/core-visuals/cards-shadow-size.md)]
+[!INCLUDE [cards-shadow-glow-blur](../includes/core-visuals/cards-shadow-glow-blur.md)]
+[!INCLUDE [cards-shadow-glow-angle](../includes/core-visuals/cards-shadow-glow-angle.md)]
+[!INCLUDE [cards-shadow-glow-distance](../includes/core-visuals/cards-shadow-glow-distance.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+
+#### Glow
+
+The **Glow** toggle, when enabled, enhances the visual appeal of your cards by giving them a luminous soft light effect around the cards and can help certain elements stand out in your report.
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [cards-glow-offset](../includes/core-visuals/cards-glow-offset.md)]
+[!INCLUDE [global-shadow-and-glow-position](../includes/core-visuals/global-shadow-and-glow-position.md)]
+[!INCLUDE [cards-glow-size](../includes/core-visuals/cards-glow-size.md)]
+[!INCLUDE [cards-shadow-glow-blur](../includes/core-visuals/cards-shadow-glow-blur.md)]
+[!INCLUDE [cards-shadow-glow-angle](../includes/core-visuals/cards-shadow-glow-angle.md)]
+[!INCLUDE [cards-shadow-glow-distance](../includes/core-visuals/cards-shadow-glow-distance.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+
+#### Accent bar
+
+The **Accent bar** toggle, when enabled, is a simple yet effective way to draw attention to key metrics on your cards and providing more visual cues to highlight important information, using these settings.
+
+[!INCLUDE [cards-accent-bar-position](../includes/core-visuals/cards-accent-bar-position.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 
 ## Related content
 
-* [Column charts in Power BI](power-bi-visualization-column-charts.md)
-* [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
+* [Create a (new) Card visual](power-bi-visualization-new-card.md)
+* [Considerations and limitations for (new) card visuals)](power-bi-visualization-card-visual-considerations.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

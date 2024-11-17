@@ -6,9 +6,11 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: how-to
-ms.date: 11/17/2023
+ms.topic: concept-article
+ms.date: 09/18/2024
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Model your data
+#customer intent: As a Power BI user I want to learn how to create and use measures.
 ---
 # Create measures for data analysis in Power BI Desktop
 
@@ -23,12 +25,13 @@ In Power BI Desktop, measures are created and displayed in *Report View*, *Data 
 :::image type="content" source="media/desktop-measures/measuresinpbid_measinfieldlist.png" alt-text="Screenshot of Measure fields in the Fields pane.":::
 
 ## Report level measures
+
 Report level measures or report measures are custom calculations or metrics created directly within a report, based on an existing dataset or a live connection. These measures allow users to add specific business logic, create visual calculations, or perform calculations that are relevant to the report's context without altering the original dataset. Report level measures are written using Data Analysis Expressions (DAX) and can be used in visualizations within the report to provide additional insights and tailor the data presentation to meet specific analytical needs. They enhance flexibility, enabling users to derive new insights from existing data models dynamically.
 
 > [!NOTE]
 > You might also be interested in *quick measures*, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn Data Analysis Expressions (DAX) syntax, since their automatically created DAX formulas are available to review. For more information, see [quick measures](desktop-quick-measures.md).
-> 
-> 
+>
+>
 
 ## Data Analysis Expressions
 
@@ -80,7 +83,7 @@ You can make a field appear in multiple folders by using a semicolon to separate
 
 You can create a special table that contains only measures. That table always appears at the top of the **Fields**. To do so, create a table with just one column. You can use **Enter data** to create that table. Then move your measures to that table. Finally, hide the column, but not the table, that you created. Select the arrow at the top of **Fields** to close and reopen the fields list to see your changes.
 
-:::image type="content" source="media/desktop-measures/measures-05.png" alt-text="Screenshot of the changed fields list.":::
+:::image type="content" source="media/desktop-measures/measures-05.png" alt-text="Screenshot of the changed fields list":::
 
 > [!TIP]
 > Hidden measures are displayed and accessible in Power BI Desktop, however, you won't see hidden measures in Excel or the Power BI services, since Excel and the Power BI service are considered client tools.
@@ -89,7 +92,7 @@ You can create a special table that contains only measures. That table always ap
 
 With *dynamic format strings*, you can customize how measures appear in visuals by conditionally applying a format string with a separate DAX expression. To learn more, see [Dynamic format strings](../create-reports/desktop-dynamic-format-strings.md).
 
-## Learn more
+## Related Content
 
 We’ve only provided you with a quick introduction to measures here. There’s a lot more to help you learn how to create your own. For more information, see [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md). You can download a sample file and get step-by-step lessons on how to create more measures.  
 

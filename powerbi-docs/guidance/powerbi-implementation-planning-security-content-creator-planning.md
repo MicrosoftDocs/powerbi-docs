@@ -15,7 +15,7 @@ ms.date: 12/12/2022
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This security planning article describes strategies for content creators who are responsible for creating semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)), dataflows, datamarts, reports, or dashboards. It's primarily targeted at:
+This security planning article describes strategies for content creators who are responsible for creating semantic models, dataflows, datamarts, reports, or dashboards. It's primarily targeted at:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization.
 - **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
@@ -862,7 +862,7 @@ If a different user needs to set up refresh or set semantic model parameters, th
 > [!CAUTION]
 > Taking semantic model ownership permanently removes any stored credentials for the semantic model. Credentials must be re-entered to allow data refresh operations to resume.
 
-Ideally, the semantic model owner is the user who's responsible for the semantic model. You should update the semantic model owner when they leave the organization or change roles. Also, be aware that when the semantic model owner's user account is disabled in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)), data refresh is automatically disabled. In this case, another user must take ownership of the semantic model to allow data refresh operations to resume.
+Ideally, the semantic model owner is the user who's responsible for the semantic model. You should update the semantic model owner when they leave the organization or change roles. Also, be aware that when the semantic model owner's user account is disabled in Microsoft Entra ID, data refresh is automatically disabled. In this case, another user must take ownership of the semantic model to allow data refresh operations to resume.
 
 ### Dataflow owner
 

@@ -10,6 +10,6 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Overflow direction
+##### Overflow direction
 
 This option lets you set the scroll direction to either **Vertical** or **Horizontal**, depending on how you want users to navigate through the overflowed cards.

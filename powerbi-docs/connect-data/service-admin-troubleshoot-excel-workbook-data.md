@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/24/2023
+ms.date: 10/17/2024
 ms.custom: ''
 LocalizationGroup: Troubleshooting
 ---
@@ -15,6 +15,8 @@ LocalizationGroup: Troubleshooting
 
 > [!NOTE]  
 > This article applies to Excel 2007 and later.
+
+Use the information in this article to understand and resolve an error where data isn't found in the Excel workbook when you try importing it into the Power BI service.
 
 When you import an Excel workbook into the Power BI service, you might see the following error:
 
@@ -53,7 +55,7 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
 
    ![Screenshot shows the Excel workbook with a range of cells selected.](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-2.png)
 
-1. In the ribbon on the **INSERT** tab, select **Table**. Or, as a shortcut, press **Ctrl** + **T**.
+1. In the ribbon on the **Insert** tab, select **Table**. Or, as a shortcut, press **Ctrl** + **T**.
 
    ![Screenshot shows insert table selected.](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-3.png)
 
@@ -67,11 +69,7 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
 
 1. Save your workbook.
 
-1. Return to the Power BI service. Select **Create**, then choose **these options**.
-
-   :::image type="content" source="./media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png" alt-text="Screenshot shows the Create page with these options highlighted." lightbox="./media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png":::
-
-1. In the **Add data to get started** window, select **Excel**.
+1. Return to the Power BI service. Select **Create** from the navigation pane, then select the **Excel** tile under **Add data to start building a report**.
 
    ![Screenshot shows Add data to get started where you can choose Excel files.](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-files.png)
 

@@ -1,13 +1,14 @@
 ---
-title: Set geographic filters in Power BI Desktop for the mobile apps
+title: Set geographic filters in Power BI Desktop
 description: Learn how to set your model’s geographic filtering in Power BI Desktop, so you can automatically filter data for your location in Power BI mobile apps.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/28/2023
+ms.date: 10/01/2024
 LocalizationGroup: Model your data
+#customer intent: As a Power BI user I want to learn hot to set geographic filtering for Power BI models.
 ---
 # Set geographic filters in Power BI Desktop for use in the mobile app
 
@@ -26,7 +27,7 @@ For example, say you're a sales manager that travels to meet customers, and you 
 
 2. Select a column with geographic data, for example, a City column.
 
-    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-column.png" alt-text="Screenshot of the Data Category dropdown list with City highlighted.":::
+    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-column.png" alt-text="Screenshot of the Data Category dropdown list with City highlighted." lightbox="media/desktop-mobile-geofiltering/power-bi-desktop-geo-column.png":::
 
 3. On the **Column tools** tab, select **Data category**, then the correct category, in this example, **City**.
 
@@ -41,9 +42,9 @@ For example, say you're a sales manager that travels to meet customers, and you 
 
 ## Create visuals with your geographic data
 
-1. Switch to the Report view, :::image type="icon" source="media/desktop-mobile-geofiltering/power-bi-desktop-report-icon.png"::: and create visuals that use the geographic fields in your data.
+1. Switch to the Report view :::image type="icon" source="media/desktop-mobile-geofiltering/power-bi-desktop-report-icon.png":::, and create visuals that use the geographic fields in your data.
 
-    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-report.png" alt-text="Screenshot of Report view showing a map and a clustered bar chart visual.":::
+    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-report.png" alt-text="Screenshot of Report view showing a map and a clustered bar chart visual." lightbox="media/desktop-mobile-geofiltering/power-bi-desktop-geo-report.png":::
 
     In this example, the model also contains a calculated column that brings city and state together into one column. To learn more, see [creating calculated columns in Power BI Desktop](desktop-calculated-columns.md).
 

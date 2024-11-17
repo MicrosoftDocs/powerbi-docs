@@ -43,7 +43,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Report consumers can also view reports using [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Server administrators manage the Windows server infrastructure. |
 | ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Database administrators manage Power BI Report Server, including the report server databases, and SQL Server Agent. |
-| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | SQL Server Agent jobs periodically [refresh import semantic models](../report-server/configure-scheduled-refresh.md)—[previously known as datasets](../connect-data/service-datasets-rename.md). |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | SQL Server Agent jobs periodically [refresh import semantic models](../report-server/configure-scheduled-refresh.md). |
 | ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Administrators oversee and monitor activity in Power BI Report Server. |
 
 ## Key points

@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/03/2024
+ms.date: 06/04/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -85,6 +85,10 @@ To see the **Copilot** button in your report, you first need to select a semanti
     Continue creating the pages that Copilot suggests. Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
 
 1. If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
+
+## Enhanced Report Creation (Public Preview)
+
+When you use the preview toggle in edit mode to switch into the Copilot public preview experience, you have access to the new updates to report creation in the Power BI Service. With these new updates, you can work with Copilot to clarify intent and details of reports created. Report outlines are also provided to help improve transparency on what data fields copilot is using to build a report. These updates aim to make it easier to generate more relevant and transparent Power BI reports with Copilot. Learn more about using Copilot preview features [here.](copilot-preview-toggle.md)
 
 ## Create a narrative summary
 

@@ -7,7 +7,7 @@ manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 07/29/2024
+ms.date: 11/12/2024
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -117,7 +117,7 @@ Downstream inheritance is a critical link in Power BI's end-to-end information p
 
 ## Data loss prevention (DLP) policies
 
-Power BI leverages Microsoft 365 data loss prevention to enable central security teams to use data loss prevention policies to enforce their organization's DLP policies in Power BI. See [Data loss prevention policies for Power BI](service-security-dlp-policies-for-power-bi-overview.md) for detail.
+Power BI leverages Microsoft 365 data loss prevention to enable central security teams to use data loss prevention policies to enforce their organization's DLP policies in Power BI. See [Data loss prevention policies for Fabric and Power BI](/fabric/governance/data-loss-prevention-overview) for detail.
 
 ## Default label policy
 
@@ -260,6 +260,8 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
     * If the semantic model owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
 
 ### Power BI Desktop
+
+* Directly publishing a protected .pbix file from Power BI Desktop to the Power BI service is not supported for guest users, even if they have higher-level permissions. To update or publish reports from a protected .pbix file, guest users need to start from the Power BI service, using **Get Data**, for example.
 
 * Power BI Desktop for Power BI Report Server doesn't support information protection. If you try to open a protected .pbix file, the file won't open and you'll receive an error message. Sensitivity-labeled .pbix files that aren't encrypted can be opened as normal.
 

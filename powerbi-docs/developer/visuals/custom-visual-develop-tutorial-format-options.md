@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/19/2023
+ms.date: 10/10/2024
 #customer intent: As a Power BI visual developer, I want to learn how to add formatting options to my custom visual so I can customize the visual appearance.
 ---
 
@@ -185,7 +185,7 @@ Now let's add new group called *color* for configuring the circle color and thic
 11. In the **update** method, after the declaration of the **radius** variable, add the following code.
 
     ```typescript
-    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews);
+    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews[0]);
     this.visualSettings.circle.circleThickness.value = Math.max(0, this.visualSettings.circle.circleThickness.value);
     this.visualSettings.circle.circleThickness.value = Math.min(10, this.visualSettings.circle.circleThickness.value);
     ```

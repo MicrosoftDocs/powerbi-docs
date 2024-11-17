@@ -3,7 +3,7 @@ title:  Introduction to tooltip utils in Power BI visuals
 description: Learn how to install, import, and use tooltip utils to simplify tooltip customization in your Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article

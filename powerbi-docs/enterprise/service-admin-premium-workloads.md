@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/13/2023
+ms.date: 09/25/2024
 LocalizationGroup: Premium
 ---
 
@@ -93,7 +93,7 @@ Use the settings in the table below to control workload behavior. Settings with 
 | **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to semantic models with client applications and tools](service-premium-connect-tools.md). |
 | **[Max Intermediate Row Set Count](#max-intermediate-row-set-count)** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. The upper limit might need to be further constrained based on what the datasource supports. |
 | **[Max Offline Semantic model Size (GB)](#max-offline-semantic-model-size)** | The maximum size of the offline semantic model in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
-| **[Max Result Row Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is 2147483647, and the allowable range is between 100000 and 2147483647. |
+| **[Max Result Row Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is 2147483647, and the allowable range is between 10000 and 2147483647. |
 | **[Query Memory Limit (%)](#query-memory-limit)** | The maximum percentage of available memory in the workload that can be used for executing an MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
 | **[Query Timeout (seconds)](#query-timeout)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't time out. |
 | **[Automatic page refresh](#automatic-page-refresh)** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on fixed intervals. |
@@ -241,7 +241,7 @@ Paginated reports offer the same capabilities that SQL Server Reporting Services
 
 ### Outbound connectivity
 
-Outbound connectivity is turned on by default. It allows paginated reports to make requests for fetching external resources such as images, and call external APIs and Azure functions defined using custom code in paginated reports. A global admin or a Power BI service admin can disable this setting in the Power BI admin portal.
+Outbound connectivity is turned on by default. It allows paginated reports to make requests for fetching external resources such as images, and call external APIs and Azure functions defined using custom code in paginated reports. A Fabric administrator can disable this setting in the Power BI admin portal.
 
 To get to the outbound connectivity settings, follow these steps:
 

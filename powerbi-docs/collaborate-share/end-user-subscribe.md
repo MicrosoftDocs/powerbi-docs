@@ -320,8 +320,6 @@ Paginated reports allow you to specify the view of the report people receive in 
 
 - Subscriptions can be sent with either the currently selected or default parameters for your report. You may set different parameter values for each subscription you create for your report. 
 
-- If your report author set expression-based parameters (for example, the default is always today's date), the subscription uses that as the default value. You can change other parameter values and choose to use current values. But unless you explicitly change that value as well, the subscription uses the expression-based parameter. 
-
 ### Update parameters for an existing paginated report subscription
 
 If you have an existing subscription to a paginated report, and you want to update the parameters applied to the report, follow these steps. 

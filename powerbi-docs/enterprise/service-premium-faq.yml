@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: faq
-  ms.date: 04/22/2024
+  ms.date: 11/13/2024
   LocalizationGroup: Premium
   
 title: Power BI Premium FAQ
@@ -103,7 +103,7 @@ sections:
         answer: |
           This table lists the key differences between F SKUs and P SKUs.
 
-          | Capability                 | P1 of higher                 | F64 or higher |
+          | Capability                 | P1 or higher                 | F64 or higher |
           |----------------------------|------------------------------|---------------|
           | Commitment                 | Monthly or yearly            | Monthly, yearly and pay as you go |
           | Pricing                    | Global                       | Regional      |

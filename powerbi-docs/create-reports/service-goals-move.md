@@ -1,6 +1,6 @@
 ---
 title: Arrange columns, metrics, and scorecards
-description: Learn how to customize your Power BI scorecards to meet your teams' needs.
+description: Learn how to customize your Power BI scorecards to meet your teams' needs by arranging columns, metrics, and scorecards effectively for your team.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,13 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/12/2022
+ms.date: 10/24/2024
+#customer intent: As a Power BI user I want to learn how to customize Power BI scorecards.
 ---
 # Arrange columns, metrics, and scorecards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-In some scenarios, you may want to hide a column, or put the columns in a different order. You may also want to reorder the metrics in a scorecard, make one metric a submetric of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make these changes, moving metrics and scorecards, deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
+In some scenarios, you can hide a column, or put the columns in a different order. You can also reorder the metrics in a scorecard, make one metric a submetric of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make these changes, moving metrics and scorecards, deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
 
 :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
 
@@ -22,7 +23,7 @@ In some scenarios, you may want to hide a column, or put the columns in a differ
 
 It's easy to reorder metrics on the scorecard, or make them submetrics.
 
-- Select a metric and drag it up or down. Indent it slightly to make it a submetric of another metric. 
+- Select a metric and drag it up or down. Indent it slightly to make it a submetric of another metric.
 
   :::image type="content" source="media/service-goals-move/power-bi-move-metric.png" alt-text="Screenshot that shows moving a metric, and making it a submetric.":::
 
@@ -41,7 +42,7 @@ It's easy to reorder metrics on the scorecard, or make them submetrics.
 
 1. Open the scorecard in edit mode, and select the arrow icon next to any column > **Column settings**.
 1. Select **Show/Hide columns**.
-1. In **Edit view columns**, select **Reset to default** or select the column you want to view. 
+1. In **Edit view columns**, select **Reset to default** or select the column you want to view.
 
     :::image type="content" source="media/service-goals-move/power-bi-goals-edit-view-columns.png" alt-text="Screenshot of moving a column in the Edit view columns pane.":::
 
@@ -55,20 +56,19 @@ Many organizations have 'template' scorecards that different departments or busi
 1. On the **File** menu, select **Move scorecard** or **Copy scorecard**.
 
     :::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-scorecard.png" alt-text="Screenshot of move and copy scorecard options in File menu.":::
-    
+
 2. You see a dropdown list of workspaces you have access to. Select the workspace you’d like to move or copy the scorecard to > **Continue**.
 
     :::image type="content" source="media/service-goals-move/power-bi-goals-move-scorecard.png" alt-text="Screenshot of move scorecard dialog.":::
-     
-    When you copy a scorecard, you have the option to include or exclude check-in history. This makes it easy to reuse the same scorecard for a newer time period (for example, for fiscal year scorecards) so you don't have to do this all over again. 
-     
-    :::image type="content" source="media/service-goals-move/power-bi-goals-copy-scorecard.png" alt-text="Screenshot of copy scorecard dialog.":::
-       
- 3. You’ll get a notice when the move or copy operation is complete. It can take a few seconds. Select **Open Scorecard** to open the scorecard in the selected workspace.
- 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-toast.png" alt-text="Screenshot of notice on completion of move and copy scorecard.":::
-     
-     
+
+    When you copy a scorecard, you have the option to include or exclude check-in history. This makes it easy to reuse the same scorecard for a newer time period (for example, for fiscal year scorecards) so you don't have to do this all over again.
+
+    :::image type="content" source="media/service-goals-move/power-bi-goals-copy-scorecard.png" alt-text="Screenshot of copy the scorecard dialog.":::
+
+ You’ll get a notice when the move or copy operation is complete. It can take a few seconds. Select **Open Scorecard** to open the scorecard in the selected workspace.
+
+:::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-toast.png" alt-text="Screenshot of notice on completion of move and copy scorecard.":::
+
 ## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)

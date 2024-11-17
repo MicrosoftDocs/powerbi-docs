@@ -97,7 +97,7 @@ The two queries named **Translated Month Names Table** and **Translated Day Name
 
 ## Configure sort values
 
-When you run these two queries for the first time, they create two tables in the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) with the names **Translated Month Names Table** and **Translated Day Names Table**. There's a translation column for each language. You need to configure the sort column for each of the translation columns:
+When you run these two queries for the first time, they create two tables in the semantic model with the names **Translated Month Names Table** and **Translated Day Names Table**. There's a translation column for each language. You need to configure the sort column for each of the translation columns:
 
 - Configure the translation columns in **Translated Month Names Table** to use the sort column  **MonthNumber**
 - Configure the translations columns in **Translated Day Names Table** to use the sort column **DayNumber**

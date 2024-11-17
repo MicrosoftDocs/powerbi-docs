@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/20/2024
+ms.date: 10/29/2024
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
@@ -22,7 +22,7 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 ## Get started 
 
-1. [Find a dataset or report](#1-find-a-dataset-or-report-youd-like-to-explore) you’d like to explore.
+1. [Create your exploration](#1-create-your-exploration) to find data you’d like to explore.
 
 1. [Have Copilot write an overview of the data](#2-create-an-overview-of-the-data-with-copilot)
 
@@ -35,9 +35,21 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 1. [Save and share your exploration](#5-save-and-share-your-exploration). 
 
-## 1. Find a dataset or report you’d like to explore
+## 1. Create your exploration
 
-For a given dataset, report, or datamart, begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view. 
+### From the New button in a workspace
+
+Select the **New** button at the top of a workspace, then select **Exploration**.
+
+:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting Explore this data.":::
+
+There are a few ways to create your exploration:
+
+You can select the **New** button at the top of a workspace, then select **Exploration**, as shown in the following screenshot.
+
+:::image type="content" source="media/explore-data-service/more-options-explore-data-b.png" alt-text="Screenshot showing selecting Explore.":::
+
+Or for a given dataset, report, or datamart, you can begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view, as shown in the following screenshot: 
 
 :::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting Explore this data.":::
 
@@ -116,7 +128,7 @@ In this exploration experience, the filters are added as pills at the top of vie
 
 ### Save your exploration
 
-To save and share your exploration, select the **Save** button in the upper-left corner. In the dialog, you can name the exploration, pick a workspace to save it to, and add a sensitivity label, if applicable.  This will save your current canvas layout (horizontal or vertical) of the exploration as well.
+To save and share your exploration, select the **Save** button in the upper-left corner. In the dialog, you can name the exploration, pick a workspace to save it to, and add a sensitivity label, if applicable.  This saves your current canvas layout (horizontal or vertical) of the exploration as well.
 
 > [!NOTE]
 > You can only save explorations to workspaces in a Premium capacity at this time. 
@@ -151,7 +163,7 @@ You can share this new report as with other reports by using the **Share** butto
 - Exploration authors need build permissions on the dataset to create an exploration and open the Explore dialog.
 - When you save, the destination workspace must be in a Premium capacity. 
 - Changing a sensitivity label on a dataset doesn't currently propagate down to the exploration that you create for it.
-- There is currently a known issue when you attempt to save an exploration from the Datamart SQL editor entry point.
+- There's currently a known issue when you attempt to save an exploration from the Datamart SQL editor entry point.
 - Explore isn't currently supported for streaming datasets. 
 - If you save to **My workspace**, you may need to refresh your page to see the newly saved exploration artifact.
 

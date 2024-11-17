@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
-ms.date: 03/07/2024
+ms.date: 09/25/2024
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -130,7 +130,7 @@ Here are some common questions that user activity data can answer.
   - Who is doing (too much) sharing from their personal workspace?
   - Who is doing a significant amount of exporting?
   - Who is regularly downloading content?
-  - Who is publishing many new semantic models—[previously known as datasets](../connect-data/service-datasets-rename.md)?
+  - Who is publishing many new semantic models?
   - Who is using subscriptions heavily?
 - **Improve governance and compliance efforts**
   - When are tenant settings changed, and by which Power BI administrator?
@@ -187,7 +187,7 @@ There are two main ways to build a tenant inventory. For more information about 
 
 #### Users and groups data
 
-As your analytical needs grow, you'll likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. To retrieve that data, you can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) users and groups.
+As your analytical needs grow, you'll likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. To retrieve that data, you can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Microsoft Entra ID users and groups.
 
 Data that's retrieved from the Power BI REST APIs includes an email address to describe the user, or the name of a security group. This data is a snapshot at a given point in time.
 
@@ -416,7 +416,7 @@ The remainder of this section provides a brief introduction to each of the optio
 
 ###### Admin monitoring workspace
 
-The [admin monitoring workspace](/fabric/admin/monitoring-workspace) contains pre-defined reports and semantic models in the Power BI service. It's a convenient way for Fabric administrators and global administrators to view recent audit data and help them understand user activities.
+The [admin monitoring workspace](/fabric/admin/monitoring-workspace) contains pre-defined reports and semantic models in the Power BI service. It's a convenient way for Fabric administrators to view recent audit data and help them understand user activities.
 
 ###### Try-it in API documentation
 
@@ -904,7 +904,7 @@ Here are several reasons why storing the raw data in its original state is a bes
 
 - **All data available in history:** New attributes and new event types will become available over time. Storing all the raw data is a good way to ensure that you'll always have access to whatever data was available at the time you extracted it. Even when it takes you time—which could be weeks or months—to realize that new data attributes are available, it's possible to analyze them historically because you captured them in the raw data.
 - **Resilient to change:** If the raw data format changes, the process that extracts the data isn't impacted. Because some auditing data is time-sensitive, it's important to make sure that you design a data extraction process that won't fail when a change occurs in the source.
-- **Roles and responsibilities:** Different team members (such as data engineers or global administrators) might be responsible for creating the processes to access, extract, and store the raw audit data. Simplifying the data extraction process makes it easier for multiple teams to work together.
+- **Roles and responsibilities:** Different team members (such as data engineers or Fabric administrators) might be responsible for creating the processes to access, extract, and store the raw audit data. Simplifying the data extraction process makes it easier for multiple teams to work together.
 
 Here are some options for storing raw data.
 
@@ -1057,7 +1057,7 @@ For information about which option to use, see [Choose APIs or PowerShell cmdlet
 > [!TIP]
 > For examples of how to access the Power BI activity log with PowerShell, see [Access the Power BI activity log](admin-activity-log.md).
 
-Power BI activity log data is available to all Power BI administrators, Power Platform administrators, and global administrators. The data can be accessed from the unified audit log, available to certain Exchange Online roles. For more information, see [Track user activities in Power BI](../enterprise/service-admin-auditing.md).
+Power BI activity log data is available to all Fabric administrators and Power Platform administrators. The data can be accessed from the unified audit log, available to certain Exchange Online roles. For more information, see [Track user activities in Power BI](../enterprise/service-admin-auditing.md).
 
 We recommend that you use the Power BI activity log when your intention is to only retrieve Power BI audit log records.
 
@@ -1240,7 +1240,7 @@ For Power BI tenant-level auditing, you might extract and store the following at
 - **Other user properties:** Other descriptive attributes about users might be available in Microsoft Entra ID. Some examples of built-in [user profile attributes](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) that have analytical value include job title, department, manager, region, and office location.
 - **Members of a security group:** Most data sources provide the name of a group (for example, the Power BI activity log records that a security group was assigned to a workspace role). Retrieving the group membership improves your ability to fully analyze what an individual user is doing or has access to.
 - **User licenses:** It's useful to analyze which [user licenses](../fundamentals/service-features-license-type.md)—free, Power BI Pro, or Power BI Premium Per User (PPU)—are assigned to users. This data can help you to identify who's not using their license. It also helps you to analyze all users (distinct users with a license) versus active users (with recent activities). If you're considering adding or expanding your Power BI Premium licenses, we recommend that you analyze the user license data together with user activity data to perform a cost analysis.
-- **Members of the administrator roles:** You can compile a list of your Power BI administrators are (which includes Power Platform administrators and global administrators).
+- **Members of the administrator roles:** You can compile a list of your Power BI administrators are (which includes Power Platform administrators).
 
 For the authoritative reference of Power BI license information that you can find in the audit data from Microsoft Graph, see [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 
@@ -1327,7 +1327,7 @@ Beginning with Az version 7, the Az cmdlets now reference the Microsoft Graph AP
 You might find articles and blog posts online that suggest alternative options that aren't presented in this section. We strongly recommend that you _**do not**_ create new solutions (and/or migrate your existing solutions) by using any of the following APIs or modules.
 
 - **AzureRM PowerShell modules:** Deprecated and will be retired. They've been replaced with the Az PowerShell module.
-- **Azure AD Graph API and Azure AD PowerShell module:** Deprecated and will be retired. This change is the result of the migration from Azure AD Graph to Microsoft Graph (note that Graph appears in both names, but _Microsoft Graph_ is the future direction). All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK. (Microsoft Entra ID is [now known as Microsoft Entra ID](/azure/active-directory/fundamentals/new-name).)
+- **Azure AD Graph API and Azure AD PowerShell module:** Deprecated and will be retired. This change is the result of the migration from Azure AD Graph to Microsoft Graph (note that Graph appears in both names, but _Microsoft Graph_ is the future direction). All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK.
 - **MS Online (MSOL) PowerShell module:** Deprecated and will be retired. All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK.
 
 > [!CAUTION]
