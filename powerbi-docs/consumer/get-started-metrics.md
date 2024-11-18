@@ -19,13 +19,13 @@ Metric sets aim to help organizations define, discover, and reuse trusted metric
 
 ## Licensing Requirements
 
-Metrics is a premium feature because it's a Fabric feature. Users can access various aspects of the experience depending on their license.
+Warning: For Metrics sets to be used, an organization must have Fabric enabled in the tenant settings.    
 
-|Permission|Minimum license requirements|
+|Permission|Requirements|
 |----|----|
-|Author and share metric sets and metrics (limited)|Power BI Pay-per-user (PPU). **License Limitations**: Fabric features are accessible only to users with PPU licenses; sharing outside PPU-licensed users requires Premium capacity.|
-|View metric sets and metrics|Power BI PPU License|
-|Use Copilot summaries for metrics|Power BI Premium or Fabric F64 or greater capacity|
+|Author and share metric sets and metrics|Power BI Premium workspace or Fabric workspace|
+|View metric sets and metrics|Power BI Premium License|
+|Use Copilot summaries for metrics|Power BI Premium workspace or Fabric F64 or greater capacity|
 
 > [!NOTE]
 > If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.
