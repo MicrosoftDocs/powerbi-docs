@@ -35,7 +35,7 @@ On the **View** tab, select **Bookmarks**.
 
 ![Screenshot showing how to turn on the Bookmarks pane in Power BI Desktop.](media/desktop-bookmarks/bookmarks_03.png)
 
-## [Power BI service](#tab/powerbi-service)
+## Power BI service
 
 Open a report in Editing view.
 
@@ -110,13 +110,13 @@ Read more about [using bookmarks as a slideshow](../consumer/end-user-bookmarks.
 
 The **Selection** pane is similar to the **Bookmarks** pane. They both display a list of all objects on the current page and allow you to select an object and specify whether it's visible.
 
-## [Power BI Desktop](#tab/powerbi-desktop)
+## Power BI Desktop Selection Pane
 
 In Power BI Desktop, the Selection pane is on the **View** tab.
 
 ![Screenshot showing enabling the Selection pane.](media/desktop-bookmarks/bookmarks_08.png)
 
-## [Power BI service](#tab/powerbi-service)
+## Power BI Edit Report
 
 When you're editing a report in the Power BI service, the **Selection pane** is on the **View** menu. You don't see it if you can't edit the report.
 
@@ -139,7 +139,7 @@ It's important to note that slicers continue to filter a report page, regardless
 
 You can link bookmarks to shapes and images. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. Read more about [using buttons in Power BI](desktop-buttons.md). Consider also creating a [bookmark navigator](button-navigators.md#bookmark-navigator), which creates a set of buttons all linked automatically to a group of bookmarks.
 
-## [Power BI Desktop](#tab/powerbi-desktop)
+## Power BI Desktop Bookmark
 
 To assign a bookmark to a button in Power BI Desktop:
 
@@ -152,7 +152,7 @@ To assign a bookmark to a button in Power BI Desktop:
 
    ![Screenshot showing adding a bookmark link to an object.](media/desktop-bookmarks/bookmarks-button.png)
 
-## [Power BI service](#tab/powerbi-service)
+## Power BI Bookmark
 
 To assign a bookmark to a button in the Power BI service:
 
@@ -220,7 +220,7 @@ When you use the **View** feature of bookmarks, the following details apply:
 
 In this release of bookmark features, there are a few considerations and limitations to keep in mind.
 
-- Most Power BI visuals work well with bookmarks. However, if you encounter problems with bookmarks and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
+- Most Power BI visuals work well with bookmarks. However, if you encounter problems with bookmarks and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual.
 - If you add a slicer to a page where you previously created bookmarks, the slicer is cleared.
 - Bookmarks apply to the state of the visuals on a report page, and not to the visuals' location on the report page. You can create a bookmark and then move visuals on that page. Selecting the bookmark doesn't return those visuals to their previous locations.
 
