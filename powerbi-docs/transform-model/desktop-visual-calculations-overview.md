@@ -135,15 +135,17 @@ Many functions have an optional **:::no-loc text="Axis":::** parameter, which ca
 
 ## :::no-loc text="Reset":::
 
-Many functions have an optional **:::no-loc text="Reset":::** parameter that is available in visual calculations only. :::no-loc text="Reset"::: influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. The :::no-loc text="Reset"::: parameter is set to None by default, which means the visual calculation is never restarted. Reset expects there to be multiple levels on the axis. If there's only one level on the axis, you can use [PARTITIONBY](/dax/partitionby-function-dax). The following list describes the only valid values for the :::no-loc text="Reset"::: parameter:
+Many functions have an optional **:::no-loc text="Reset":::** parameter that is available in visual calculations only. :::no-loc text="Reset"::: influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. The :::no-loc text="Reset"::: parameter is set to None by default, which means the visual calculation is never restarted. Reset expects there to be multiple levels on the axis. If there's only one level on the axis, you can use [PARTITIONBY](/dax/partitionby-function-dax). The following list describes the valid values for the :::no-loc text="Reset"::: parameter:
 
 * **:::no-loc text="NONE":::** is the default value and doesn't reset the calculation.
 * **:::no-loc text="HIGHESTPARENT":::** resets the calculation when the value of the highest parent on the axis changes.
 * **:::no-loc text="LOWESTPARENT":::** resets the calculations when the value of the lowest parent on the axis changes.
-* A numerical value, referring to the fields on the axis, with the highest field being one.
+* A **numerical value**, referring to the fields on the axis, with the highest field being one.
+* A **field reference** as long as the field is on the visual.
 
 To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter.
 For example, the following visual calculations are equivalent and return the sum of *Sales Amount* that starts from 0 for every year:
+
 ```dax
 RUNNINGSUM([Sales Amount], HIGHESTPARENT)
 ```
@@ -152,7 +154,13 @@ RUNNINGSUM([Sales Amount], HIGHESTPARENT)
 RUNNINGSUM([Sales Amount], 1)
 ```
 
+```dax
+RUNNINGSUM([Sales Amount], [Year])
+```
+
+
 In contrast, the following visual calculations both return the sum of *Sales Amount* that starts from 0 for every Quarter:
+
 ```dax
 RUNNINGSUM([Sales Amount], LOWESTPARENT)
 ```
@@ -161,7 +169,13 @@ RUNNINGSUM([Sales Amount], LOWESTPARENT)
 RUNNINGSUM([Sales Amount], 2)
 ```
 
-Finally, this visual calculation does **not** reset, and continues adding the *Sales Amount* value for each month to the previous values, without restarting. 
+```dax
+RUNNINGSUM([Sales Amount], [Quarter])
+```
+
+
+Finally, this visual calculation does **not** reset, and continues adding the *Sales Amount* value for each month to the previous values, without restarting.
+
 ```dax
 RUNNINGSUM([Sales Amount])
 ```
