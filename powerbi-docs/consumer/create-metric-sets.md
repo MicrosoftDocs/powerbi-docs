@@ -23,7 +23,7 @@ To create and manage metrics sets, you must:
 - create the metric set in a Premium workspace
 - turn Fabric on for your organization
 - be at least in a Contributor role in the workspace
-- You must have build permission for a semantic model
+- have build permission for a semantic model
 
 ## Create a metric set
 
