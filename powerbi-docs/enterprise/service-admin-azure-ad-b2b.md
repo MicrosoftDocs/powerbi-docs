@@ -101,7 +101,7 @@ If you have access to more than one tenant, you can switch between tenants using
 
 ### From external orgs tab
 
-The discoverability for B2B content feature in Power BI makes accessing shared B2B content easy for consumers. Power BI users who are guest users in any other tenant will now see a new tab on their home page (in their home tenant) called *From external orgs*. When you select the tab, it will list all the items shared with you from external tenants that you can access as a guest user. You can filter and sort through the list to find content easily, and see which organization is sharing a specific item with you. When you select an item on the tab, a new window will open and take you to the relevant provider tenant where you can access the item.
+The discoverability for B2B content feature in Power BI makes accessing shared B2B content easy for consumers. Power BI users who are guest users in any other tenant have a tab on their home page (in their home tenant) called *From external orgs*. When you select the tab, it lists all the items shared with you from external tenants that you can access as a guest user. You can filter and sort through the list to find content easily, and see which organization is sharing a specific item with you. When you select an item on the tab, a new window opens and takes you to the relevant provider tenant where you can access the item.
 
 ![Screenshot of the Azure portal with the from external orgs tab called out.](media/service-admin-azure-ad-b2b/from-external-orgs-tab.png)
 
