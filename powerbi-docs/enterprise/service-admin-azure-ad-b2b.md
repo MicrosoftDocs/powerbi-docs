@@ -8,7 +8,7 @@ ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/24/2024
+ms.date: 11/19/2024
 LocalizationGroup: Administration
 ---
 
@@ -35,7 +35,6 @@ Most email addresses are supported for guest user invitations, including persona
 > [!NOTE]
 > In Microsoft Entra ID, external users can be set to UserType Member. In Power BI, support for UserType Member is currently in preview. Note the following:
 > * External members currently can't use the Power BI license they have in their home tenant to access content and perform activities in the provider tenant. Rather, they must explicitly be granted an appropriate license in the provider tenant. External members are similar to internal users on the provider tenant.
-> * Microsoft Purview Information Protection is not supported for external members. Admins in the provider tenant are advised not to enable information protection for external members.
 >
 > In some situations, external members may see errors during their first sign-in attempt on the provider tenant. To unblock these external members, grant them permission to a Power BI item, such as a workspace, semantic model, or report, and then have them sign in again.
 
@@ -89,7 +88,20 @@ The guest user must sign in with their organization email address. They'll recei
 
 ## Discoverability for B2B content
 
-The discoverability for B2B content feature in Power BI makes accessing shared B2B content easy for consumers. Power BI users who are guest users in any other tenant will now see a new tab on their home page (in their home tenant) called *From external orgs*. When you select the tab, it will list all the items shared with you from external tenants that you can access as a guest user. You can filter and sort through the list to find content easily, and see which organization is sharing a specific item with you. When you select an item on the tab, a new window will open and take you to the relevant provider tenant where you can access the item.
+### Tenant switcher
+
+If you have access to more than one tenant, you can switch between tenants using the tenant switcher.
+
+1. Select your profile picture to open your account manager and choose **Switch**.
+
+1. In the **Switch tenant (preview)** dialog, open the dropdown menu and choose the tenant you want to nagivate to.
+
+   > [!NOTE]
+   > The dropdown list displays a maximum of 50 tenants.
+
+### From external orgs tab
+
+The discoverability for B2B content feature in Power BI makes accessing shared B2B content easy for consumers. Power BI users who are guest users in any other tenant have a tab on their home page (in their home tenant) called *From external orgs*. When you select the tab, it lists all the items shared with you from external tenants that you can access as a guest user. You can filter and sort through the list to find content easily, and see which organization is sharing a specific item with you. When you select an item on the tab, a new window opens and takes you to the relevant provider tenant where you can access the item.
 
 ![Screenshot of the Azure portal with the from external orgs tab called out.](media/service-admin-azure-ad-b2b/from-external-orgs-tab.png)
 
