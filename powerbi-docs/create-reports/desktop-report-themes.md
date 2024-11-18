@@ -6,17 +6,16 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/12/2024
+ms.date: 11/18/2024
 LocalizationGroup: Create reports
+#customer intent: As a Power Bi user I want to learn how to use report themes to create a custom color palette.
 ---
 # Use report themes in Power BI Desktop
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 With Power BI Desktop *report themes*, you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme as their defaults. A few exceptions are described later in this article.
-
 You can select report themes by going to the **View** ribbon. In the **Themes** section, select the dropdown arrow, and then select the theme you want. Available themes are similar to themes seen in other Microsoft products, such as Microsoft PowerPoint.
-
 ![Screenshot of the Themes dropdown menu.](media/desktop-report-themes/report-themes-dropdown-menu.png)
 
 The two types of report themes:
@@ -29,9 +28,9 @@ The two types of report themes:
 
 To apply a report theme to a Power BI Desktop report, you can select from the following options:
 
-* Select from the [available built-in report themes](#built-in-report-themes) that are built into Power BI Desktop.
-* [Customize a theme](#customize-and-save-a-theme-in-power-bi-desktop) by using the **Customize theme** dialog.
-* [Import a custom theme JSON file](#import-custom-report-theme-files).
+- Select from the [available built-in report themes](#built-in-report-themes) that are built into Power BI Desktop.
+- [Customize a theme](#customize-and-save-a-theme-in-power-bi-desktop) by using the **Customize theme** dialog.
+- [Import a custom theme JSON file](#import-custom-report-theme-files).
 
 > [!NOTE]
 > You can only apply themes in Power BI Desktop. You can't apply themes to existing reports within the Power BI service.
@@ -63,7 +62,7 @@ Follow these steps to select from the available built-in report themes. See the 
 ### Built-in report themes
 
 The following table shows the available built-in report themes.
-    
+
 | Built-in report theme | Default color sequence |
 |------ |---------- |
 | Default | ![Diagram of the color sequence for the Default theme.](media/desktop-report-themes/report-themes-color-scheme-default.png)|
@@ -130,9 +129,9 @@ Customizing the current theme in this way is fast and simple. However, you can a
 
 ### Update the base theme
 
-Power BI makes changes to themes, including new defaults for formatting settings, as a part of a new base theme. So as not to disturb existing reports, these changes don’t propagate to custom themes. If you've customized a built-in theme, you may not see fixes to issues or updates to your reports without updating your base themes. 
+Power BI makes changes to themes, including new defaults for formatting settings, as a part of a new base theme. So as not to disturb existing reports, these changes don’t propagate to custom themes. If you've customized a built-in theme, you may not see fixes to issues or updates to your reports without updating your base themes.
 
-To see if you're using an outdated theme, on the **View** ribbon, select the **Themes** dropdown button and select **Customize current theme**. If your theme is out of date, you’ll see a banner at the top of your theme, encouraging you to update to the latest base theme. 
+To see if you're using an outdated theme, on the **View** ribbon, select the **Themes** dropdown button and select **Customize current theme**. If your theme is out of date, you’ll see a banner at the top of your theme, encouraging you to update to the latest base theme.
 
 Select **Update theme** to see the changes, then select **Apply**.
 
@@ -256,7 +255,7 @@ To export the currently applied theme from Power BI Desktop:
 
 2. Near the bottom of the dropdown menu, select **Save current theme**.
 
-4. From the **Save As** dialog box, go to a directory in which to save the JSON file, and then select **Save**.
+3. From the **Save As** dialog box, go to a directory in which to save the JSON file, and then select **Save**.
 
 ## Report theme JSON file format
 
@@ -276,7 +275,7 @@ When you create a JSON file, you can specify that all charts use a font size of 
 
 When you import your theme file, Power BI validates it to make sure it can successfully read its full contents. If Power BI finds fields it doesn’t understand, it shows you a message letting you know that the theme file is invalid, and inviting you to reimport with a corrected theme file. Power BI also publishes the schema it uses to check your theme file in a public location, updating it automatically whenever we change it in Power BI, so that you can ensure your theme files are always current.
 
-Power BI validates custom themes based on a _JSON schema_.  This [JSON schema is available for download](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) for use with an IDE that supports JSON validation, which can help identify available formatting options and highlight invalid theme formatting. More information is available in the [Report Theme JSON Schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema).
+Power BI validates custom themes based on a *JSON schema*.  This [JSON schema is available for download](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) for use with an IDE that supports JSON validation, which can help identify available formatting options and highlight invalid theme formatting. More information is available in the [Report Theme JSON Schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema).
 
 > [!NOTE]
 > Modifying a custom JSON report theme in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) is safe.  The dialog doesn't modify theme settings that it can't control and updates the changes made to the report theme that's in place.
