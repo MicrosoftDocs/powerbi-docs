@@ -94,7 +94,11 @@ If you have access to more than one tenant, you can switch between tenants using
 
 1. Select your profile picture to open your account manager and choose **Switch**.
 
+   :::image type="content" source="media/service-admin-azure-ad-b2b/tenant-switcher-link.png" alt-text="Screenshot of the tenant switcher link in the Fabric account manager pane.":::
+
 1. In the **Switch tenant (preview)** dialog, open the dropdown menu and choose the tenant you want to nagivate to.
+
+   :::image type="content" source="media/service-admin-azure-ad-b2b/tenant-switcher-selector.png" alt-text="Screenshot of the tenant switcher selector where you can choose which tenant you want to switch to.":::
 
    > [!NOTE]
    > The dropdown list displays a maximum of 50 tenants.
