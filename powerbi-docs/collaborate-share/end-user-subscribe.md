@@ -363,7 +363,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Power BI reports**  
 
 - Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you have to re-create your subscription.
-- If you acess a report using a bookmark, the subscription will also be executed against the bookmark (filters will be the same as that of the bookmark) and **not** against the filters applied when the subscription is created. You can get around this by creating a bookmark with the required filters and create a subscription. 
+- If you access a report using a bookmark, the subscription will also be executed against the bookmark (filters will be the same as that of the bookmark) and **not** against the filters applied when the subscription is created. You can get around this by creating a bookmark with the required filters and create a subscription. 
 
 **Apps** 
 
