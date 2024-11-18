@@ -125,7 +125,7 @@ The following aren't supported for **Export to PowerPoint**. Either the **PowerP
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 * Visuals [displayed as a Data table or displayed with "Show as a table"](../consumer/end-user-show-data.md) export the visual in its default state, without the table.   
 * Visuals in a drill-down state are exported in their default state.
-* If you acess a report using a bookmark, the export will also be executed against the bookmark (filters will be the same as that of the bookmark) and **not** against the filters applied when the export is triggered. You can get around this by creating a bookmark with the required filters and then export the report.
+* If you access a report using a bookmark, the export will also be executed against the bookmark (filters will be the same as that of the bookmark) and **not** against the filters applied when the export is triggered. You can get around this by creating a bookmark with the required filters and then export the report.
 * Export to PowerPoint isn't currently supported for tenants in the China North region. 
 * Export to PDF supports Unicode 6 and earlier. If for example, Unicode 7 is used, Power BI export displays that image as a blank box. 
 
