@@ -96,7 +96,7 @@ If you have access to more than one tenant, you can switch between tenants using
 
    :::image type="content" source="media/service-admin-azure-ad-b2b/tenant-switcher-link.png" alt-text="Screenshot of the tenant switcher link in the Fabric account manager pane.":::
 
-1. In the **Switch tenant (preview)** dialog, open the dropdown menu and choose the tenant you want to nagivate to.
+1. In the **Switch tenant (preview)** dialog, open the dropdown menu and choose the tenant you want to navigate to.
 
    :::image type="content" source="media/service-admin-azure-ad-b2b/tenant-switcher-selector.png" alt-text="Screenshot of the tenant switcher selector where you can choose which tenant you want to switch to.":::
 
@@ -217,7 +217,7 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
 
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 
-* If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.
+* If you share directly to a guest user, Power BI sends them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.
 * If you disable the **Guest users can browse and access Fabric content** tenant setting, guest users continue to have any workspace role and item permissions that they were previously granted, or will be granted, in the provider environment. For more information, see the [Guest users can browse and access Fabric content](/fabric/admin/service-admin-portal-export-sharing#guest-users-can-browse-and-access-fabric-content) tenant setting.  
 
 ## Related content
