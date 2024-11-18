@@ -174,6 +174,8 @@ There are some limitations to the B2B experience that you should be aware of:
 
 * On the Home page, the “From external orgs” tab won't list content shared from other clouds.
 
+* Cross-cloud sharing does not work when sharing with a security group. For instance, if a user using Power BI in a national cloud invites a security group from the public cloud or vise versa, access is granted. This is because the service can't resolve the members of these groups across clouds.
+
 ## Admin Info for B2B Collaboration 
 
 The following tenant level settings in Power BI provide controls to admins. See [Export and sharing admin settings](/fabric/admin/service-admin-portal-export-sharing) for documentation on these settings: 
