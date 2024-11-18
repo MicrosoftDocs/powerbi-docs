@@ -19,7 +19,8 @@ Metric sets aim to help organizations define, discover, and reuse trusted metric
 
 ## Licensing Requirements
 
-Warning: For Metrics sets to be used, an organization must have Fabric enabled in the tenant settings.    
+> [!WARNING]
+> For Metrics sets to be used, an organization must have Fabric enabled in the tenant settings.    
 
 |Permission|Requirements|
 |----|----|
