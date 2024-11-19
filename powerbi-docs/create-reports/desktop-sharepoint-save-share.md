@@ -84,6 +84,12 @@ Upon saving, a dialog box appears while the file is being uploaded to the OneDri
 > [!NOTE]
 > If the user isn’t signed in when attempting to save, they are prompted to sign in.
 
+## Updated file picker for saving and uploading Power BI files to OneDrive and SharePoint (Preview)
+
+New updates to the file picker in Power BI desktop make it easier to save to and open files from OneDrive and SharePoint. Now, you can smoothly navigate between folders in various OneDrive and SharePoint folders, pin and unpin recent files and folders (open-mode only), and have easy access to reports in OneDrive and SharePoint. 
+
+To enable the new file picker experience, select **File > Options and Settings > Options > Preview Features > Save to OneDrive and SharePoint**, and then select **Show the new file saving and open experience** checkbox. You will need to restart Power BI Desktop after you make the selection. 
+
 ## Background upload for existing Power BI files in OneDrive and SharePoint (Preview)
 
 When new changes are saved to a file already uploaded to OneDrive, the top of the toolbar indicates that the new changes are uploading in the background to OneDrive. 
