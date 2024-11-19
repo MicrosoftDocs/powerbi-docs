@@ -21,6 +21,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-report-data.md",
+            "redirect_url": "/power-bi/create-reports/copilot-pane-summarize-content",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false
