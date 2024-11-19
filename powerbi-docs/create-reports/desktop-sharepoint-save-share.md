@@ -69,7 +69,7 @@ New updates to the file picker in Power BI desktop make it easier to save to and
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png" alt-text="Example of selecting a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png":::
 
-You can also easily pin and unpin recent files and folders in the file picker while opening files in OneDrive and SharePoint. Simply select or deselct the pin icon next to the file to pin or unpin the file. 
+You can also easily pin and unpin recent files and folders in the file picker while opening files in OneDrive and SharePoint. Simply select or deselect the pin icon next to the file to pin or unpin the file. 
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png" alt-text="Example of pinning a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png":::
 
