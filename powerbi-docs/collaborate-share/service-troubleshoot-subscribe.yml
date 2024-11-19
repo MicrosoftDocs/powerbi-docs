@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: troubleshooting
-  ms.date: 09/09/2024
+  ms.date: 11/12/2024
   LocalizationGroup: Share your work
     
 title: Frequently asked questions about Troubleshooting Power BI subscriptions
@@ -17,6 +17,7 @@ summary: |
   
   If you encounter a scenario that isn't listed here, and it's causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/). 
   
+  To learn how to create a subscription, see [Email subscriptions for reports and dashboards](end-user-subscribe.md).
 
 sections:
   - name: Ignored  

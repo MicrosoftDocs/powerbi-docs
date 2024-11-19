@@ -20,10 +20,10 @@ Metric sets aim to help organizations define, discover, and reuse trusted metric
 
 To create and manage metrics sets, you must:
 
-- have a Power BI Pay-per-user(PPU)/Premium license to author and share metrics in standard workspaces.
-- work in a Fabric capacity.
-- be at least in a Contributor role in a workspace. Read more about roles in workspaces.
-- have build permission for a semantic model.
+- create the metric set in a Premium workspace
+- turn Fabric on for your organization
+- be at least in a Contributor role in the workspace
+- have build permission for a semantic model
 
 ## Create a metric set
 

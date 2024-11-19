@@ -1,15 +1,16 @@
 ---
-title: Introduction to enabling and disabling self-service
-description: How-to information for admins to turn on and turn off the ability for users to try, buy, or sign up for Power BI and Fabric.
+title: About self-service sign-ups and purchases 
+description: Overview information for admins about self-service options for Power BI.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/16/2024
+ms.date: 11/11/2024
 ms.custom: licensing support, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 LocalizationGroup: Administration
+#customer intent: As a Billing administrator, I need to understand self-service in Power BI. 
 ---
 # Introduction to enabling and disabling self-service sign-up and purchasing
 
@@ -17,7 +18,9 @@ Billing administrators can determine whether to enable or disable self-service s
 
 Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you block individual sign-up, you may want to get Fabric (Free) licenses for your organization and assign them to all users.
 
-Turning off self-service purchase keeps users from performing actions that require a paid license. These actions include sharing, exporting, and creating workspaces for collaboration. 
+Turning off self-service purchase keeps users from performing actions that require a paid license. These actions include sharing, exporting, and creating workspaces for collaboration.
+
+This article is an overview of self-service in Power BI. To learn how to enable and disable self-service, see [Instructions for enabling and disabling self-service sign-up and purchasing of licenses and subscriptions](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
 > [!NOTE]
 >If you acquired Power BI through a Microsoft Cloud Solution Provider (CSP), the settings might be disabled to block users from signing up individually. Your CSP can act as the admin for your organization, requiring that you contact them to help you change this setting.
