@@ -540,30 +540,34 @@
         href: use-monitor-metrics.md
       - name: Create connected metrics
         href: service-goals-create-connected.md
-      - name: Create linked metrics
-        href: service-metrics-linked-metrics.md
-      - name: Create automated status rules
-        href: service-metrics-status-rules.md
     - name: Scorecards
       items: 
       - name: Get started with metrics
         href: service-goals-introduction.md
       - name: Create scorecards and manual metrics
-          href: service-goals-create.md
+        href: service-goals-create.md
       - name: Create submetrics
-          href: service-metrics-submetrics.md 
+        href: service-metrics-submetrics.md
+      - name: Create linked metrics
+        href: service-metrics-linked-metrics.md
+      - name: Create automated status rules
+        href: service-metrics-status-rules.md
       - name: Create custom statuses
-          href: service-goals-custom-status.md 
+        href: service-goals-custom-status.md 
       - name: Stay on top of your metrics
-          href: service-goals-check-in.md        
+        href: service-goals-check-in.md        
       - name: Create email subscriptions for metrics
-          href: service-metrics-subscriptions.md        
+        href: service-metrics-subscriptions.md        
       - name: Follow your metrics
-          href: service-metrics-follow.md        
+        href: service-metrics-follow.md        
       - name: Set metric-level permissions
-          href: service-goals-set-permissions.md
+        href: service-goals-set-permissions.md
       - name: Arrange metrics and columns in scorecards
         href: service-goals-move.md
+      - name: Create linked metrics
+        href: service-metrics-linked-metrics.md
+      - name: Create automated status rules
+        href: service-metrics-status-rules.md
       - name: Metrics and Power Automate
         href: service-goals-power-automate.md
       - name: Create and add scorecards to reports
