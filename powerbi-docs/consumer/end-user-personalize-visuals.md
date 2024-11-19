@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/12/2024
+ms.date: 11/12/2024
 LocalizationGroup: Reports
 ---
 
@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 
 It's hard to make one visual that satisfies everyone's requirements. So, when a colleague shares a report with you, you might want to make changes to the visuals&mdash;without having to ask your colleague to make the changes for you.
 
-Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a [bookmark](end-user-bookmarks.md) to come back to. You don't even need edit permission for the report.
+Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a [bookmark](end-user-bookmarks.md) to come back to. You don't need edit permission for the report.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-new.png" alt-text="Screenshot of a report visual with the Personalize menu highlighted.":::
 
@@ -106,7 +106,7 @@ If you have reshare and read permissions, when you share the report you can choo
 
 ### Reset all your changes to a report
 
-From the upper-right corner of your report canvas, select **Reset to default**. Resestting removes all your changes in the report and sets it back to the author's last saved view of the report.
+From the upper-right corner of your report canvas, select **Reset to default**. Resetting removes all your changes in the report and sets it back to the author's last saved view of the report.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all-new.png" alt-text="Screenshot of the reset icon on the report canvas.":::
 
@@ -129,6 +129,7 @@ Currently the feature has a few limitations to be aware of.
 - **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have permissions to personalize a visual, check with your Power BI admin or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
+- This feature is not available in Report Server. 
 
 ## Related content
 

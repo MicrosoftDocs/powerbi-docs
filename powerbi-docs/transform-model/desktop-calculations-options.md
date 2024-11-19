@@ -18,7 +18,7 @@ Power BI provides five options for adding calculations into your Power BI report
 
 The following table shows the options available to add calculations in Power BI:
 
-| Aspect | Custom column | Calculate column | Calculated table | Measure | Visual calculation |
+| Aspect | Custom column | Calculated column | Calculated table | Measure | Visual calculation |
 | --- | --- | --- | --- | --- | --- |
 | Language | M | DAX | DAX | DAX | DAX |
 | Computed at | Data refresh | Data refresh | Data refresh | On demand | On demand |
