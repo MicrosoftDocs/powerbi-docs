@@ -44,7 +44,7 @@ This table lists the semantic model logs. For more information on the events and
 | ItemId | string | Unique identifier of the resource logging the data. |
 | ItemKind | string | Type of artifact logging the operation, for example, semantic model. |
 | ItemName | string | The name of the Power BI artifact logging this   operation. |
-| Level | string | Contains the severity level of the operation being logged. Success, informational, warning, or wrror. |
+| Level | string | Contains the severity level of the operation being logged. Success, informational, warning, or error. |
 | OperationDetailName | string | More details about the operation |
 | OperationId | string | Unique identifier of the operation or the request. Same as `XmlaRequestId` |
 | OperationName | string | The operation associated with the log record. |
