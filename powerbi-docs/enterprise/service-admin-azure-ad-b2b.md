@@ -34,7 +34,7 @@ Most email addresses are supported for guest user invitations, including persona
 
 > [!NOTE]
 > In Microsoft Entra ID, external users can be set to UserType Member. In Power BI, support for UserType Member is currently in preview. Note the following:
-> * External members currently can't use the Power BI license they have in their home tenant to access content and perform activities in the provider tenant. Rather, they must explicitly be granted an appropriate license in the provider tenant. External members are similar to internal users on the provider tenant.
+> * Microsoft Purview Information Protection is not supported for external members. Admins in the provider tenant are advised not to enable information protection for external members.
 >
 > In some situations, external members may see errors during their first sign-in attempt on the provider tenant. To unblock these external members, grant them permission to a Power BI item, such as a workspace, semantic model, or report, and then have them sign in again.
 
