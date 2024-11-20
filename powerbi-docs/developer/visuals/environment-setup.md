@@ -23,8 +23,7 @@ In this article, you learn how to:
 >
 > * [Install *node.js*](#install-nodejs).
 > * [Install *pbiviz*](#install-pbiviz).
-> * [Set up the Power BI desktop for developing a visual](#how-to-enable-developer-mode-in-power-bi-desktop).
-> * [Set up Power BI service for developing a visual](#how-to-enable-developer-mode-in-the-web-service).
+> * [Enable Power BI developer mode](#enable-developer-mode).
 
 ## Install node.js
 
