@@ -67,7 +67,7 @@ To develop a Power BI visual in the Desktop or on the web, developer mode must b
 
 ### [How to enable developer mode in Power BI Desktop](#tab/desktop)
 
-To enable the *Develop a visual* setting in the Power BI desktop. To enable this option, follow the instructions in this section.
+To develop a Power BI visual in the Desktop, enable the *Develop a visual* setting. This setting only stays enabled for the current session. You must enable this setting in each session where you import a visual from a file.
 
 1. From the Power BI desktop, navigate to **File** > **Options and settings**  > **Options**
    :::image type="content" source="./media/environment-setup/desktop-options.png" alt-text="Screenshot of Options menu in the Power BI desktop.":::
@@ -77,8 +77,7 @@ To enable the *Develop a visual* setting in the Power BI desktop. To enable this
 
 ### [How to enable developer mode in the web service](#tab/service)
 
-To develop a Power BI visual, enable custom visual developer mode in Power BI service.
-To enable this option, follow the instructions in this section.
+To develop a Power BI visual in the Power BI service, enable custom visual *developer mode*. This setting stays enabled until you disable it.
 
 1. Go to [Power BI developer settings](https://app.powerbi.com/user/user-settings/developer-settings?experience=power-bi).
 
