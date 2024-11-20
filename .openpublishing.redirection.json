@@ -21,6 +21,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-report-data.md",
+            "redirect_url": "/power-bi/create-reports/copilot-pane-summarize-content",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false
@@ -53,6 +58,26 @@
         {
             "source_path": "powerbi-docs/learning-catalog/developer-online-course.md",
             "redirect_url": "/power-bi/developer/embedded/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/get-started-metrics.md",
+            "redirect_url": "/power-bi/create-reports/get-started-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/create-metric-sets.md",
+            "redirect_url": "/power-bi/create-reports/create-metric-sets",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer//view-explore-metrics.md",
+            "redirect_url": "/power-bi/create-reports//view-explore-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/use-monitor-metrics.md",
+            "redirect_url": "/power-bi/create-reports/use-monitor-metrics",
             "redirect_document_id": false
         },
         {
