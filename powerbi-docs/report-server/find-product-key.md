@@ -28,7 +28,7 @@ You downloaded [Power BI Report Server](get-started.md), and you have a SQL Serv
 > For more details, see the section "Use of Power BI Report Server – SQL Server Enterprise Edition" in [SQL Server licensing](https://www.microsoft.com/licensing/terms/productoffering/SQLServer/EAEAS).
 
 ## Purchased Power BI Premium
-If your organization has purchased Power BI Premium capacity, you can get the key for Power BI Report Server from the **Premium Settings** tab in the [admin portal](../admin/admin-center#how-to-get-to-the-admin-portal). The key is accessible to only users with Global admin, Fabric admin, or Power BI Premium capacity admin privileges.
+If your organization has purchased Power BI Premium capacity, you can get the key for Power BI Report Server from the **Premium Settings** tab in the [admin portal](../admin/admin-center.md#how-to-get-to-the-admin-portal). The key is accessible to only users with Global admin, Fabric admin, or Power BI Premium capacity admin privileges.
 
 :::image type="content" source="./media/find-product-key/pbirs-product-key.png" alt-text="Screenshot of Power BI Report Server key within Premium settings." lightbox="./media/find-product-key/pbirs-product-key.png":::
 
@@ -37,7 +37,7 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 :::image type="content" source="./media/find-product-key/pbirs-product-key-dialog.png" alt-text="Screenshot of Power BI Report Server product key.":::
 
 ## Purchased F64+ Reserved Instance
-If your organization has purchased F64 SKU and above reserved instances, you can get the key for Power BI Report Server from the **Capacity Settings** tab in the [admin portal](../admin/admin-center#how-to-get-to-the-admin-portal). The key is only accessible to users with Global admin, Fabric admin, or Power BI Premium capacity admin privileges.
+If your organization has purchased F64 SKU and above reserved instances, you can get the key for Power BI Report Server from the **Capacity Settings** tab in the [admin portal](../admin/admin-center.md#how-to-get-to-the-admin-portal). The key is only accessible to users with Global admin, Fabric admin, or Power BI Premium capacity admin privileges.
 
 :::image type="content" source="./media/find-product-key/fabric-pbirs-product-key.png" alt-text="Screenshot of Power BI Report Server key within Fabric settings." lightbox="./media/find-product-key/fabric-pbirs-product-key.png":::
 
