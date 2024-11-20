@@ -23,8 +23,8 @@ In this article, you learn how to:
 >
 > * [Install *node.js*](#install-nodejs).
 > * [Install *pbiviz*](#install-pbiviz).
-> * [Set up the Power BI desktop for developing a visual](#set-up-power-bi-desktop-for-developing-a-visual)
-> * [Set up Power BI service for developing a visual](#set-up-power-bi-service-for-developing-a-visual).
+> * [Set up the Power BI desktop for developing a visual](#how-to-enable-developer-mode-in-power-bi-desktop).
+> * [Set up Power BI service for developing a visual](#how-to-enable-developer-mode-in-the-web-service).
 
 ## Install node.js
 
@@ -72,21 +72,20 @@ To enable the *Develop a visual* setting in the Power BI desktop. To enable this
 
 1. From the Power BI desktop, navigate to **File** > **Options and settings**  > **Options**
    :::image type="content" source="./media/environment-setup/desktop-options.png" alt-text="Screenshot of Options menu in the Power BI desktop.":::
-1. Scroll down to Report settings in the **Current file** section, and enable the *Develop a visual* check box.
+1. Select **Report settings** in the **Current file** section, and enable the *Develop a visual* check box.
    :::image type="content" source="./media/environment-setup/desktop-developer-mode.png" alt-text="Screenshot of Developer mode enabled in Power BI desktop.":::
 1. Select **OK**
 
-### [How to enable developer mode in Fabric](#tab/fabric)
+### [How to enable developer mode in the web service](#tab/service)
 
 To develop a Power BI visual, enable custom visual developer mode in Power BI service.
 To enable this option, follow the instructions in this section.
 
-1. Sign in to [Power BI developer settings](https://app.powerbi.com/user/user-settings/developer-settings?experience=power-bi).
+1. Go to [Power BI developer settings](https://app.powerbi.com/user/user-settings/developer-settings?experience=power-bi).
 
-1. Enable the **Power BI Developer mode** switch. check box, and then select **Apply**.
+1. Enable the **Power BI Developer mode** switch.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the enable developer mode, in the Power BI settings, general tab.](media/environment-setup/developer-settings.png)
+   :::image type="content" source="media/environment-setup/developer-settings.png" alt-text="Screenshot of the enable developer mode, in the Power BI settings, Developer settings tab.":::
 
 ---
 
