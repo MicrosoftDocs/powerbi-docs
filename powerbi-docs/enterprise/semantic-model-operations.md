@@ -5,13 +5,13 @@ author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
 ms.topic: reference
-ms.date: 11/07/2024
+ms.date: 11/20/2024
 
 ---
 
 # Semantic model operations
 
-Semantic model operation logs are part of the workspace monitoring logs and are registered in the Eventhouse KQL database, which is part of the Real-Time Intelligence solution. You can use these logs to monitor the usage and performance of your workspace.
+Semantic model operation logs are part of the [workspace monitoring](/fabric/get-started/workspace-monitoring-overview) logs and are registered in the Eventhouse KQL database, which is part of the Real-Time Intelligence solution. You can use these logs to monitor the usage and performance of your workspace.
 
 ## Semantic model operation logs
 
