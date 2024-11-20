@@ -58,28 +58,29 @@ If you download or receive a Power BI visual file, you have to [import](#import-
 Power BI visuals are packaged as *.pbiviz* files that can be stored on your computer. You can share these files with other Power BI users. You can download visual files from AppSource onto your computer, but you can also get custom visuals from a trusted friend or colleague. Custom visuals that come from sources other than official Microsoft sources should be imported only if you trust the source.
 
 1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com).
-2. Select the ellipsis from the visualizations pane.
+1. Enable [developer mode](./environment-setup.md#enable-developer-mode) for Power BI Desktop. This setting stays enabled for the current session only and must be repeated every time you import a visual from a file.
+1. Select the ellipsis from the visualizations pane.
 
    :::image type="content" source="media/import-visual/ellipsis.png" alt-text="Screenshot of the Power BI Visualizations Pane, which shows the ellipses icon is highlighted.":::
 
-3. Select **Import a visual from a file** from the menu.
+1. Select **Import a visual from a file** from the menu.
 
    :::image type="content" source="media/import-visual/import-from-file.png" alt-text="Screenshot of the Power BI Visualizations Pane, which shows the Import a visual from a file option is highlighted.":::
 
-4. If you get a message cautioning you about importing custom files, select **Import** if you trust the source of the file.
+1. If you get a message cautioning you about importing custom files, select **Import** if you trust the source of the file.
 
    :::image type="content" source="media/import-visual/caution.png" alt-text="Screenshot of the Power BI caution: import custom visual dialog box.":::
   
-5. Navigate to the folder that has the custom visual file (*.pbiviz*) and open it.
-6. When the visual has successfully imported, select **OK**.
+1. Navigate to the folder that has the custom visual file (*.pbiviz*) and open it.
+1. When the visual has successfully imported, select **OK**.
 
    :::image type="content" source="media/import-visual/success.png" alt-text="Screenshot of the Power BI successful import dialog box.":::
 
-7. The visual now appears as a new icon in the visualizations pane of the current report. Select the new visual icon to create the visual on the report canvas.
+1. The visual now appears as a new icon in the visualizations pane of the current report. Select the new visual icon to create the visual on the report canvas.
 
    :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of the Power BI Visualizations pane, which shows the new imported visuals.":::
 
-8. If you want the visual to remain on the **Visualizations** pane so you can use it in future reports, right-click the visual's icon and select **Pin to visualization pane**.
+1. If you want the visual to remain on the **Visualizations** pane so you can use it in future reports, right-click the visual's icon and select **Pin to visualization pane**.
 
 ## Related content
 
