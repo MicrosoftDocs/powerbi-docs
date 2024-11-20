@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/31/2024
+ms.date: 11/20/2024
 ms.custom: engagement-fy23
 #customer intent: As a Power BI visual developer, I want to learn how to set up my environment so that I can develop a Power BI visual.
 ---
@@ -62,9 +62,13 @@ Confirm that the Power BI visuals tools package is installed. In PowerShell, run
 >[!div class="mx-imgBorder"]
 >![Screenshot of the output of executing the command p b i viz in PowerShell.](media/environment-setup/pbiviz-verify.png)
 
-## Set up Power BI desktop for developing a visual
+## Enable developer mode
 
-To develop a Power BI visual, enable the *Develop a visual* option in the Power BI desktop. To enable this option, follow the instructions in this section.
+To develop a Power BI visual in the Desktop or on the web, developer mode must be enabled.
+
+### [How to enable developer mode in Power BI Desktop](#tab/desktop)
+
+To enable the *Develop a visual* setting in the Power BI desktop. To enable this option, follow the instructions in this section.
 
 1. From the Power BI desktop, navigate to **File** > **Options and settings**  > **Options**
    :::image type="content" source="./media/environment-setup/desktop-options.png" alt-text="Screenshot of Options menu in the Power BI desktop.":::
@@ -72,7 +76,7 @@ To develop a Power BI visual, enable the *Develop a visual* option in the Power 
    :::image type="content" source="./media/environment-setup/desktop-developer-mode.png" alt-text="Screenshot of Developer mode enabled in Power BI desktop.":::
 1. Select **OK**
 
-## Set up Power BI service for developing a visual
+### [How to enable developer mode in Fabric](#tab/fabric)
 
 To develop a Power BI visual, enable custom visual developer mode in Power BI service.
 To enable this option, follow the instructions in this section.
@@ -83,6 +87,8 @@ To enable this option, follow the instructions in this section.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the enable developer mode, in the Power BI settings, general tab.](media/environment-setup/developer-settings.png)
+
+---
 
 ## Related content
 
