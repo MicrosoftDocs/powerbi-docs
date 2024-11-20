@@ -61,6 +61,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/get-started-metrics.md",
+            "redirect_url": "/power-bi/create-reports/get-started-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/create-metric-sets.md",
+            "redirect_url": "/power-bi/create-reports/create-metric-sets",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer//view-explore-metrics.md",
+            "redirect_url": "/power-bi/create-reports//view-explore-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/use-monitor-metrics.md",
+            "redirect_url": "/power-bi/create-reports/use-monitor-metrics",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/learning-catalog/learning-catalog-administrator.md",
             "redirect_url": "/fabric/admin/",
             "redirect_document_id": false
