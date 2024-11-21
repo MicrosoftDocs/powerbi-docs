@@ -274,7 +274,7 @@ Even if you don't know Python, you can use [Copilot](/fabric/get-started/copilot
 
 #### Fabric Activator integration with Power BI reports
 
-Content creators or consumers who build or use Power BI reports can use [Activator](/fabric/real-time-intelligence/data-activator/data-activator-get-data-power-bi) to automate actions and notifications based on data changes. Similar to [data alerts from dashboard tiles](../create-reports/service-set-data-alerts.md), a user can set alerts on a Power BI visual and define triggers for those alerts. The user can also extend this functionality to use [Custom actions to trigger a Power Automate flow](/fabric/real-time-intelligence/data-activator/activator-trigger-power-automate-flows) that can initiate other downstream changes.
+Content creators or consumers who build or use Power BI reports can use [Activator](/fabric/real-time-intelligence/data-activator/activator-get-data-power-bi) to automate actions and notifications based on data changes. Similar to [data alerts from dashboard tiles](../create-reports/service-set-data-alerts.md), a user can set alerts on a Power BI visual and define triggers for those alerts. The user can also extend this functionality to use [Custom actions to trigger a Power Automate flow](/fabric/real-time-intelligence/data-activator/activator-trigger-power-automate-flows) that can initiate other downstream changes.
 
 Use cases for Activator integration with Power BI include:
 
