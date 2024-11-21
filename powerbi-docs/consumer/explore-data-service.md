@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/29/2024
+ms.date: 11/04/2024
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
@@ -37,6 +37,12 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 ## 1. Create your exploration
 
+## From an artifact in a list
+
+:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting the More options menu from a workspace list.":::
+
+For a given dataset, report, or datamart, begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view. 
+
 ### From the New button in a workspace
 
 Select the **New** button at the top of a workspace, then select **Exploration**.
@@ -51,7 +57,7 @@ You can select the **New** button at the top of a workspace, then select **Explo
 
 Or for a given dataset, report, or datamart, you can begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view, as shown in the following screenshot: 
 
-:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting Explore this data.":::
+:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting New report item.":::
 
 You also see this option in the Data hub details page as part of the **Discover business insights** action card: 
 
