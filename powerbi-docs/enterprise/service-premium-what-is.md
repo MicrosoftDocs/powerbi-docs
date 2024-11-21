@@ -161,11 +161,8 @@ The following known limitations currently apply to Power BI Premium.
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Power BI Premium Per User](service-premium-per-user-faq.yml)
+* [Power BI Premium Per User](service-premium-per-user-faq.yml)
 
-> [!div class="nextstepaction"]
-> [Managing Premium capacities](service-premium-capacity-manage.md)
+* [Managing Premium capacities](service-premium-capacity-manage.md)
 
-> [!div class="nextstepaction"]
-> [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)
+* [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)
