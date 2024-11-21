@@ -6,8 +6,9 @@ ms.author: monaberdugo
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 02/05/2023
+ms.topic: concept-article
+ms.date: 10/10/2024
+#customer intent: As a Power BI developer, I want to learn which tokens my app needs to authenticate against Azure and Power BI service so that I can embed Power BI content in my app.
 ---
 
 # Embedded analytics access tokens
@@ -35,7 +36,7 @@ For both [*embed for your customers*](./embedded-analytics-power-bi.md#embed-for
 
 You can acquire a Microsoft Entra token in one of the following ways:
 
-* Use the external [Postman](https://www.postman.com/) tool to acquire a token. For more information, see this [Power BI Community thread](https://community.powerbi.com/t5/Developer/Power-BI-REST-API-using-postman-generate-embed-token/m-p/310153#M9157). The request URL for a service principal must be `https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token`, but for a master user, it can be either `https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token` or `https://login.microsoftonline.com/common/oauth2/token`.
+* Use an external tool, such as [Bruno](https://www.usebruno.com/downloads), to acquire a token. The request URL is `https://login.windows.net/{{tenantId}}/oauth2/token`. Replace {tenantID} with your tenant ID.
 
 * Follow the sample solutions at [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples/). For example:  
   

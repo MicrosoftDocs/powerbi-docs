@@ -46,9 +46,11 @@
         "Power BI"
       ],
       "titleSuffix": "Power BI",
-      "feedback_system": "GitHub",
+      "feedback_system": "Standard",
+      "feedback_product_url": "https://ideas.fabric.microsoft.com/?forum=2d80fd4a-16cb-4189-896b-e0dac5e08b41",
+      "feedback_help_link_url": "https://community.fabric.microsoft.com/powerbi",
+      "feedback_help_link_type": "ask-the-community",
       "feedback_github_repo": "MicrosoftDocs/powerbi-docs",
-      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi",
       "search.appverid": "met150",
       "search.app": [
         "fabric-powerbi-docs",
@@ -62,6 +64,25 @@
               "**/*.md": [
                  "show_binary_rating"
               ]
+          },
+          "ms.subservice": {
+              "collaborate-share/**/*.md": "pbi-collaborate-share",
+              "connect-data/**/*.md": "pbi-data-sources",
+              "consumer/**/*.md": "pbi-explore",
+              "create-reports/**/*.md": "pbi-reports-dashboards",
+              "developer/**/*.md": "powerbi-developer",
+              "enterprise/**/*.md": "powerbi-admin",
+              "fundamentals/**/*.md": "pbi-fundamentals",
+              "guidance/**/*.md": "admin",
+              "guided-learning/**/*.md": "*",
+              "learning-catalog/**/*.md": "*",
+              "natural-language/**/*.md": "powerbi-ai",
+              "paginated-reports/**/*.md": "pbi-reports-dashboards",
+              "report-server/**/*.md": "powerbi-report-server",
+              "support/**/*.md": "pbi-troubleshooting",
+              "transform-model/**/*.md": "pbi-transform-model",
+              "troubleshoot/**/*.md": "*",
+              "visuals/**/*.md": "pbi-visuals"
           }
     },
     "template": [],

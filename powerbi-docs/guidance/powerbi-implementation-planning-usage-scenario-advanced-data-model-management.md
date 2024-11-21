@@ -1,12 +1,13 @@
 ---
 title: "Power BI usage scenarios: Advanced data model management"
 description: "Learn how Power BI advanced data model management is about empowering creators with advanced data modeling and publishing capabilities."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/13/2024
 ---
 
@@ -14,7 +15,7 @@ ms.date: 02/13/2024
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This usage scenario focuses on *advanced data model management*, which is when a Power BI content creator relies on a third-party tool to develop, manage, or optimize data models. Some third-party tools are *[external tools](../transform-model/desktop-external-tools.md)*, which Power BI Desktop supports directly. You can also manage a published a data model (semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md)) by communicating directly with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) in the Power BI service.
+This usage scenario focuses on *advanced data model management*, which is when a Power BI content creator relies on a third-party tool to develop, manage, or optimize data models. Some third-party tools are *[external tools](../transform-model/desktop-external-tools.md)*, which Power BI Desktop supports directly. You can also manage a published a data model (semantic model) by communicating directly with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) in the Power BI service.
 
 Data models are hosted in either the Power BI service, Azure Analysis Services (AAS), or SQL Server Analysis Services (SSAS). This usage scenario focuses on using the XMLA endpoint in the Power BI service.
 
@@ -31,6 +32,8 @@ You can achieve connectivity to a data model by using the *[XML for Analysis (XM
 ## Scenario diagram
 
 The focus of this advanced data model management usage scenario is on using [Tabular Editor](#tabular-editor) to manage the data model. You can publish a data model to the Power BI service by using the XMLA endpoint, which is available with Power BI Premium.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 > [!TIP]
 > We recommend that you review the [self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md) usage scenario if you're not familiar with it. The advanced data model management scenario builds upon that scenario.

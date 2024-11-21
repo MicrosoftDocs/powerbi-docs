@@ -4,7 +4,7 @@ description: Learn how to create, edit, resize, move, rename, pin, delete, and a
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-lJKgWnvl6bQ
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -18,11 +18,6 @@ LocalizationGroup: Dashboards
 ## Dashboard *owners* versus dashboard *consumers*
 
 When you create or own a dashboard, you have many options for changing the look and default behavior of the tiles on that dashboard. Use the following settings and strategies to design the dashboard *consuming* experience for your colleagues. Will selecting a tile open the underlying report, a custom URL, or a different dashboard? Maybe you'll [add a tile that displays a video or streaming data](service-dashboard-add-widget.md)? You might even want to [create a tile that has interactive slicers](service-dashboard-pin-live-tile-from-report.md). As a *creator* you have many options.
-
-> [!NOTE]
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/lJKgWnvl6bQ]
 
 This article covers how to:
 

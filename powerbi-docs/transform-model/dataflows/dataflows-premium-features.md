@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 05/03/2024
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -73,7 +73,7 @@ To change the default setting and enable the enhanced compute engine, do the fol
 
 After the enhanced compute engine is on, return to **dataflows** and you should see a performance improvement in any computed table that performs complex operations, such as *joins* or *group by* operations for dataflows created from existing linked entities on the same capacity.
 
-To make the best use of the compute engine, split the ETL stage into two separate dataflows, in the following way:
+To make the best use of the compute engine, split the ETL stage into two separate dataflows in the same workspace, in the following way:
 
 * **Dataflow 1** - this dataflow should only be ingesting all of the required from a data source.
 * **Dataflow 2** - perform all ETL operations in this second dataflow, but ensure you're referencing Dataflow 1, which should be on the same capacity. Also ensure you perform operations that can fold first: filter, group by, distinct, join). And perform these operations before any other operation, to ensure the compute engine is utilized.
@@ -84,7 +84,7 @@ To make the best use of the compute engine, split the ETL stage into two separat
 
 **Answer:** If you enable the enhanced compute engine, there are two possible explanations that could lead to slower refresh times:
 
-* When the enhanced compute engine is enabled, it requires some memory to function properly. As such, memory available to perform a refresh is reduced and therefore increases the likelihood of refreshes to be queued. That increase then reduces the number of dataflows that can refresh concurrently. To address this problem, when enabling enhanced compute, increase the memory assigned for dataflows to ensure that the memory available for concurrent dataflow refreshes remains the same.
+* When the enhanced compute engine is enabled, it requires some memory to function properly. As such, memory available to perform a refresh is reduced and therefore increases the likelihood of refreshes to be queued. That increase then reduces the number of dataflows that can refresh concurrently. To address this problem, when enabling enhanced compute, spread dataflow refreshes over time and evaluate if your capacity size is adequate, to ensure that there is memory available for concurrent dataflow refreshes.
 
 * Another reason you might encounter slower refreshes is that the compute engine only works on top of existing entities. If your dataflow references a data source that's not a dataflow, you won't see an improvement. There will be no performance increase, because in some big data scenarios, the initial read from a data source would be slower because the data needs to be passed to the enhanced compute engine.  
 
@@ -144,6 +144,9 @@ There are a few known limitations with DirectQuery and dataflows:
 
 * Under data source settings, the dataflow connector will show invalid credentials if you're using DirectQuery. This warning doesn't affect the behavior, and the semantic model will work properly.
 
+* When a dataflow has 340 columns or more, using the dataflow connector in Power BI Desktop with the enhanced compute engine setting enabled results in the DirectQuery option being disabled for the dataflow. To use DirectQuery in such configurations, use fewer than 340 columns.
+
+
 ## Computed entities
 
 You can perform **in-storage computations** when using **dataflows** with a Power BI Premium subscription. This feature lets you perform calculations on your existing dataflows, and return results that enable you to focus on report creation and analytics.
@@ -156,11 +159,13 @@ To perform in-storage computations, you first must create the dataflow and bring
 
 * When you work with dataflows created in an organization's Azure Data Lake Storage Gen2 account, linked entities and computed entities only work properly when the entities reside in the same storage account.
 
+* Computed entities is only supported within a single workspace.
+
 As a best practice, when doing computations on data joined by on-premises and cloud data, create a new dataflow for each source (one for on-premises and one for cloud) and then create a third dataflow to merge/compute over these two data sources.
 
 ## Linked entities
 
-You can reference existing dataflows by using linked entities with a Power BI Premium subscription, which lets you either perform calculations on these entities using computed entities or allows you to create a "single source of the truth" table that you can reuse within multiple dataflows.
+You can reference existing dataflows in the same workspace by using linked entities with a Power BI Premium subscription, which lets you either perform calculations on these entities using computed entities or allows you to create a "single source of the truth" table that you can reuse within multiple dataflows. 
 
 ## Incremental refresh
 

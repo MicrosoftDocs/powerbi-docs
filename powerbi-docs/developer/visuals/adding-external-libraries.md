@@ -1,13 +1,14 @@
 ---
 title:  Adding external libraries to Power BI visuals
-description: Learn how to install, import, and call external libraries in Power BI visuals.
+description: Learn how to install, import, and call external libraries in Power BI visuals to enhance your visualizations with additional functionality.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 11/09/2022
+ms.topic: how-to
+ms.date: 1/09/2024
+#customer intent: As a developer, I want to learn how to use external libraries in Power BI visuals so I can enhance my visualizations with additional functionality.
 ---
 
 # How to add external libraries
@@ -66,5 +67,4 @@ For a full example, see the [Power BI visualizations](https://github.com/Microso
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Set up your environment for developing a Power BI visual](environment-setup.md)
+[Set up your environment for developing a Power BI visual](environment-setup.md)

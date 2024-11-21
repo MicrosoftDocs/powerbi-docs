@@ -1,6 +1,6 @@
 ---
 title: Power BI visual data point selections
-description: Learn how to use the selection manager to add data point selections to Power BI visuals.
+description: Learn how to use the selection manager to add data point selections to Power BI visuals and make them interactive.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: rkarlin
@@ -8,7 +8,8 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/29/2022
+ms.date: 12/29/2023
+#customer intent: As a Power BI visual developer, I want to learn how to add data point selections to my visual so that I can make it interactive.
 ---
 
 # Add interactivity into visual by Power BI visuals selections
@@ -382,5 +383,3 @@ button.addEventListener("click", (mouseEvent) => {
 > [!div class="nextstepaction"]
 > [Add a context menu for visuals data points](context-menu.md)
 
-> [!div class="nextstepaction"]
-> [Add selections into Power BI Visuals](utils-interactivity-selections.md)

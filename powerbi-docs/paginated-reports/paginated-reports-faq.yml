@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 01/16/2024
+  ms.date: 10/18/2024
 
 title: "Paginated reports in Power BI: FAQ"
 summary: |
@@ -16,7 +16,10 @@ summary: |
   
   This article answers frequently asked questions about paginated reports. These reports are highly formatted, print-ready output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
   
-  This article answers many common questions people have about paginated reports in Power BI, and about Power BI Report Builder, the standalone tool for authoring paginated reports. You don't need a [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md) to publish paginated reports to My Workspace. You do need a PPU or Power BI Pro license and write access to publish to other workspaces. Users with free, Pro, and PPU licenses can view the content. To learn more about licensing, see [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)
+  This article answers many common questions people have about paginated reports in Power BI, and about Power BI Report Builder, the standalone tool for authoring paginated reports. To learn more about licensing, see [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md).
+
+  > [!NOTE]
+  > A "free" license is only good if the customer is using an F64 SKU or P1 SKU or higher. Otherwise the customer would be required to have a Pro or PPU license to view Power BI content.
 
 sections:
   - name: Administration
@@ -192,7 +195,14 @@ sections:
           In some customer scenarios, admins have allowed external users to their organization access to workspaces and content. 
 
           What is an external user? One example would be a BikeManufacturer (`user@MyBikes.com`) account that has been given access to the Contoso (`user@Contoso.com`) tenant. An external user may see an "Access denied" error or see no content with Power BI Report Builder when accessing workspaces, or editing or creating reports. We look to adding this functionality in a future update.
-          
+            
+      - question: |
+          Is there a limit to the number of data sources per paginated report?
+        answer: |
+          Paginated reports are limited to 250 data sources per report.
+
+          Generally, customers have three or four data sources per report. We have set an upper limit of 250 data sources. If the report has more data sources than 250, the report doesn't publish. If it's an existing published report, the report isn't rendered.          
+
 additionalContent: |
 
   ## Next steps

@@ -1,10 +1,10 @@
 ---
 title: Tips and Tricks for maps (including Bing Maps integration)
 description: 'Tips and Tricks for Power BI Map visualizations, visuals, locations, longitude and latitude, and how they work with Bing Maps. '
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
-ms.custom: video-ajTPGNpthcg
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -62,11 +62,6 @@ Make sure each field only has a single location category. For example, your City
 ### 3. Use specific Latitude and Longitude
 
 Add latitude and longitude values to your semantic model. This data removes any ambiguity and returns results more quickly. Latitude and Longitude fields must be in *Decimal Number* format, which you can set in the data model.
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/ajTPGNpthcg]
 
 ### 4. Use Place category for columns with full location information
 

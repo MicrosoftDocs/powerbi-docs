@@ -13,8 +13,7 @@ ms.custom: template-how-to; subject-moving-resources
 # Move between regions
 
 > [!IMPORTANT]
-> At this time, we only offer the tenant migration service to customers with a P (Premium) SKU or F (Fabric) SKU.  
-
+> At this time, we only offer the tenant migration service to customers with a P (Premium) SKU and F64 and above SKU. 
 The location selected during sign-up determines your default data region. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact Microsoft support to manage the migration for you.
 
 > [!CAUTION]
@@ -48,15 +47,15 @@ The migration process moves all tenant data to the new region. The GUID assigned
 - Some usage data collected before migration is unavailable after migration. Usage data in the following sources will be lost:
   - [Power BI Activity Log](../admin/service-admin-auditing.md)
   - View count in [Lineage view](../collaborate-share/service-data-lineage.md)
-  - [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md)
-   - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
+  - [Data protection metrics report](/fabric/governance/use-microsoft-purview-hub)
+  - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
 - If Fabric Metadata is linked to the Purview Data Map, it continues to be stored in the home region of the tenant. You can choose to delete the assets manually by navigating to Microsoft Purview and following the steps described here: [Asset management in the Microsoft Purview Data Catalog.](/purview/catalog-asset-details#delete-asset/)
 
 ### Preparation steps
 
    Our support team works with you to verify that the following steps are done to prepare for the migration:
 
-   - We can't migrate capacities and Premium workspaces, so you have to delete all capacities before migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
+- We can't migrate capacities and Premium workspaces, so you have to delete all capacities before migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
 
    - To avoid conflicts during migration, delete any gateways that are already in the target region.
 
@@ -71,11 +70,8 @@ To find out the best way to contact support, read [Power BI support options](ser
 
 1. Go to [Power Platform Admin Center Help + support](https://admin.powerplatform.microsoft.com/support) and sign in using admin credentials.
 1. Select **New support request**, then select the following options to request a region move.
-   - Product: Power BI
-   - Tell us what you need help with: Move to a different region
-   - Problem type: Administration
-   - Problem Subtype: Tenant Management
-   - Are you contacting us to move your tenant to another region: Yes
+   - Product: Power BI or Fabric Admin & Management
+   - Tell us what you need help with: **Move to a different region**
    
    Select **See solutions** to move to the next screen.
 

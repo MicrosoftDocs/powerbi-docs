@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Fabric adoption roadmap maturity levels"
 description: "A description of the maturity levels used in the Microsoft Fabric adoption roadmap series of articles."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
@@ -28,7 +28,7 @@ The three types of adoption depicted in the above diagram include:
 
 As the four arrows in the previous diagram indicate, the three types of adoption are all strongly inter-related:
 
-- **Solution adoption affects user adoption.** A well-designed and well-managed solution—which could be many things, such as a set of reports, a Power BI app, a semantic model ([previously known as a dataset](/power-bi/connect-data/service-datasets-rename)) or a Fabric lakehouse—impacts and guides users on how to use analytics in an optimal way.
+- **Solution adoption affects user adoption.** A well-designed and well-managed solution—which could be many things, such as a set of reports, a Power BI app, a semantic model, or a Fabric lakehouse—impacts and guides users on how to use analytics in an optimal way.
 - **User adoption impacts organizational adoption.** The patterns and practices used by individual users influence organizational adoption decisions, policies, and practices.
 - **Organizational adoption influences user adoption.** Effective organizational practices—including mentoring, training, support, and community—encourage users to do the right thing in their day-to-day workflow.
 - **User adoption affects solution adoption.** Stronger user adoption, because of the effective use of analytics by educated and informed users, contributes to stronger and more successful individual solutions.

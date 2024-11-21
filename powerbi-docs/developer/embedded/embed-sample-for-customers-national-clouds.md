@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom:
-ms.date: 03/07/2023
+ms.date: 03/07/2024
 ---
 
 # Tutorial: Embed Power BI content into your application for national/regional clouds
@@ -136,10 +136,7 @@ Now that you have an access token, you can continue embedding as you would on an
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData)
-
->[!div class="nextstepaction"]
->[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
+* [Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData)
+* [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

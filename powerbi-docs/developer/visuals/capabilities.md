@@ -1,13 +1,14 @@
 ---
 title: Capabilities and properties of Power BI visuals
-description: This article describes the capabilities.json file and properties of Power BI visuals.
+description: This article describes the capabilities.json file and properties of Power BI visuals that can be defined in the file.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 07/12/2023
+ms.topic: concept-article
+ms.date: 12/12/2023
+#customer intent: To understand the capabilities.json file and properties of Power BI visuals.
 ---
 
 # Capabilities and properties of Power BI visuals
@@ -40,7 +41,7 @@ When you create a new visual, the default *capabilities.json* file includes the 
 
 The above objects are the ones needed for data-binding. They can be edited as necessary for your visual.
 
-The following additional root objects are optional and can be added as needed:
+The following other root objects are optional and can be added as needed:
 
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](highlight.md)
@@ -50,8 +51,8 @@ The following additional root objects are optional and can be added as needed:
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)
-* [supportsLandingPage](landing-page.md#creating-a-landing-page)
-* [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
+* [supportsLandingPage](landing-page.md#create-a-landing-page)
+* [supportsEmptyDataView](landing-page.md#create-a-landing-page)
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
 * [subtotals](total-subtotal-api.md)
 * [keepAllMetadataColumns](dataview-mappings.md#keep-all-metadata-columns)
@@ -87,7 +88,7 @@ The following are types of privileges that must be defined:
 
 To allow a visual to access an external resource or web site, add that information as a *privilege* in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
-The following is an example of privileges setting allowing access to external resources:
+The following code is an example of privileges setting allowing access to external resources:
 
 ```json
 {
@@ -115,7 +116,7 @@ This `ExportContent` setting enables the visual to export data to files in the f
 
 This setting is separate from and not affected by download restrictions applied in the organization's [export and sharing](/power-bi/admin/service-admin-portal-export-sharing) tenant settings.
 
-The following is an example of a privileges setting that allows downloading to a file:
+The following code is an example of a privileges setting that allows downloading to a file:
 
 ```json
 "privileges": [
@@ -175,7 +176,7 @@ The user drags data fields into them to bind data the data fields to the objects
 
 ### DataRole properties
 
-DataRoles are defined by the following properties:
+Define DataRoles with the following properties:
 
 * **name**: The internal name of this data field (must be unique).
 * **displayName**: The name displayed to the user in the **Properties** pane.
@@ -269,7 +270,7 @@ For more information, see [Understand data view mapping in Power BI visuals](dat
 
 ## objects: define property pane options
 
-Objects describe customizable properties that are associated with the visual. The objects defined in this section are the objects that appear in the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Each object can have multiple properties, and each property has a type that's associated with it.
+Objects describe customizable properties that are associated with the visual. The objects defined in this section are the objects that appear in the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Each object can have multiple properties, and each property has a type associated with it.
 
 ```json
 "objects": {

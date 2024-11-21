@@ -1,6 +1,6 @@
 ---
 title: View Power BI files in OneDrive and SharePoint
-description: Learn how to view Power BI Desktop files in SharePoint document libraries and OneDrive for Business.
+description: Learn how to view Power BI Desktop files in SharePoint document libraries and OneDrive.
 author: ajburnle
 ms.author: ajburnle
 ms.reviewer: lukaszp
@@ -9,7 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: View Power BI file in SharePoint and OneDrive
 ms.topic: how-to
 ms.custom: 
-ms.date: 10/11/2023
+ms.date: 09/25/2024
 LocalizationGroup: Share your work
 ---
 # View Power BI files in OneDrive and SharePoint
@@ -21,11 +21,11 @@ You can quickly view Power BI files in OneDrive and SharePoint without needing t
 
 ## Enable viewing Power BI files in OneDrive and SharePoint
 
-Viewing Power BI files in OneDrive for Business and SharePoint is enabled **by default**. 
+Viewing Power BI files in OneDrive and SharePoint is enabled **by default**. 
 
 If you **do not** want this capability on in your tenant, your admin will need to [**disable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
 
-If the capability isn't enabled in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the optimal viewing experience, we encourage admins to enable the functionality. 
+If the capability isn't turned on in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the best viewing experience and to ensure you always have a backup of your file in the cloud, we encourage admins to turn on the functionality. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png" alt-text="Screenshot of capability disabled view." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png":::
 
@@ -122,9 +122,15 @@ The preview provides a limited experience with options to download the .pbix fil
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-preview.png" alt-text="Screenshot of preview view of Power BI file in OneDrive and SharePoint." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-preview.png":::
 
+## Version history
+
+You can also use the built-in Microsoft 365 version history capability to track report activity and return to old versions of a file. From your OneDrive and SharePoint document library, select the ellipsis **(...)** next to the Power BI file name and select **Version history** from the options. After selecting **Version history**, you will be able to store, track, and restore the file whenever a change is made.
+
+:::image type="content" source="media/service-sharepoint-viewer/powerbi-onedrive-version-history.png" alt-text="Screenshot of version history." lightbox="media/service-sharepoint-viewer/powerbi-onedrive-version-history.png":::
+
 ## Prerequisites to viewing report in OneDrive and SharePoint
 
-To view a report in OneDrive for Business or SharePoint Online, you must:
+To view a report in OneDrive or SharePoint Online, you must:
 
 -	Be signed in to OneDrive with your Microsoft Entra account.
 -	Have at least read access to the file.
@@ -145,7 +151,7 @@ To view a report in OneDrive for Business or SharePoint Online, you must:
 
 ## Semantic model mode
 
-To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode. Files with other modes prompt you to download the file to open locally in Power BI Desktop.
+To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode or **live connected to a semantic model** in the Power BI service. Files with other modes prompt you to download the file to open locally in Power BI Desktop.
 
 ### Audit logs
 
@@ -164,7 +170,7 @@ Interaction with the Power BI file is audited in Power BI activity logs. Some of
 - View
 - Open report
 
-Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
+Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
 
 OneDrive and SharePoint Power BI file activity in the audit logs appear with [property values](/microsoft-365/compliance/audit-log-detailed-properties) **Workload** and/or **EventSource** set to **OneDrive**.
 

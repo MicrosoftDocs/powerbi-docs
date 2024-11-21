@@ -7,7 +7,7 @@ services: power-bi-embedded
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/18/2022
+ms.date: 08/05/2024
 #Customer intent: As an ISV, I want embed reports for my customers using RLS to protect sensitive data and adhere to compliance rules for data security.
 ---
 
@@ -19,9 +19,9 @@ This article explains how to embed Power BI content that uses RLS into a standar
 
 ## Prerequisites
 
-For a detailed explanation on how to set up RLS, refer to [Row-level security (RLS) with Power BI](/power-bi/enterprise/service-admin-rls).
+For a detailed explanation on how to set up RLS, refer to [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security).
 
-When you [define your RLS roles](/power-bi/enterprise/service-admin-rls#define-roles-and-rules-in-power-bi-desktop), keep in mind that the DAX expression you use determines if the RLS model is static or dynamic.
+When you [define your RLS roles](/fabric/security/service-admin-row-level-security#define-roles-and-rules-in-power-bi-desktop), keep in mind that the DAX expression you use determines if the RLS model is static or dynamic.
 
 ## When to use static and dynamic security
 
@@ -93,7 +93,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
         var rlsIdentity = new EffectiveIdentity(
             username: "France",
             roles: new List<string>{ "CountryDynamic" },
-            datasets: new List<string>{ datasetId.ToString()}
+            datasets: datasetIds.Select(id => id.ToString()).ToList());
         );
        
         // Create a request for getting an embed token for the rls identity defined above

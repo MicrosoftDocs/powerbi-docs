@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 
 # Bring your own encryption keys for Power BI
 
-Power BI encrypts data *at-rest* and *in process*. By default, Power BI uses Microsoft-managed keys to encrypt your data. In Power BI Premium, you can also use your own keys for data at-rest that's imported into a semantic model. This approach is often described as *bring your own key* (BYOK). For more information, see [Data source and storage considerations](#data-source-and-storage-considerations). 
+By default, Power BI uses Microsoft-managed keys to encrypt your data. In Power BI Premium, you can also use your own keys for data at-rest that's imported into a semantic model. This approach is often described as *bring your own key* (BYOK). For more information, see [Data source and storage considerations](#data-source-and-storage-considerations). 
 
 ## Why use BYOK?
 

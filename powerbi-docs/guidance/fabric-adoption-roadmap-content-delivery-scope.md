@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Content delivery scope"
 description: "Develop scopes for how data, analytics, and business intelligence (BI) content is owned and managed to drive strong and successful adoption of Microsoft Fabric."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
@@ -136,7 +136,7 @@ Here are the characteristics of enterprise content delivery.
 - A centralized team of experts manages the content end-to-end and publishes it for others to consume.
 - Formal delivery of data solutions like reports, lakehouses, and Power BI apps is a high priority to ensure consumers have the best experience.
 - The content is highly sensitive, subject to regulatory requirements, or is considered extremely critical.
-- Published enterprise-level semantic models ([previously known as datasets](/power-bi/connect-data/service-datasets-rename)) and dataflows might be used as a source for self-service creators, thus creating a chain of dependencies to the source data.
+- Published enterprise-level semantic models and dataflows might be used as a source for self-service creators, thus creating a chain of dependencies to the source data.
 - Stability and a consistent experience for consumers are highly important. Application lifecycle management, such as [deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview) and [DevOps techniques](https://powerbi.microsoft.com/blog/automate-deployments-with-deployment-pipelines-api-preview/), is commonly used. Change management processes to review and approve changes before they're deployed are commonly used for enterprise content, for example, by a change review board or similar group.
 - Processes exist to gather requirements, prioritize efforts, and plan for new projects or enhancements to existing content.
 - Integration with other enterprise-level data architecture and management services could exist, possibly with other Azure services and Power Platform products.
@@ -171,6 +171,8 @@ Here are some guidelines to help you become successful with enterprise content d
 >   - Will there be an approval process? [Governance](fabric-adoption-roadmap-governance.md) can become more complicated when the content delivery scope is broader than the owner of the content. For example, when an app that's owned by a divisional sales team is distributed to the entire organization.
 > - **Create helpful documentation:** Ensure that you have sufficient training documentation and support so that your content creators understand when it's appropriate to use [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces), [apps](/power-bi/collaborate-share/service-create-distribute-apps), or [per-item sharing (direct access or link)](https://powerbi.microsoft.com/blog/announcing-the-new-sharing-experience/).
 > - **Create a licensing strategy:** Ensure that you have a specific strategy in place to handle [Fabric licensing](/fabric/enterprise/licenses) considerations. Create a process for how workspaces could be assigned each license type, and the prerequisites required for the type of content that could be assigned to Premium.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Questions to ask
 

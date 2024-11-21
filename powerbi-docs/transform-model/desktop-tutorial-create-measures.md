@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: tutorial
-ms.date: 12/29/2022
+ms.date: 03/15/2024
 LocalizationGroup: Learn more
 ---
 # Tutorial: Create your own measures in Power BI Desktop
@@ -243,3 +243,8 @@ Measures give you the power to get the insights you want from your data. You've 
 - If you want to take a deeper dive into DAX formulas and create some more advanced measures, see [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
   
 - Be sure to add the [Data Analysis Expressions (DAX) Reference](/dax/index) to your favorites. This reference is where you'll find detailed info on DAX syntax, operators, and over 200 DAX functions.
+
+Other articles of interest:
+
+* [Using visual calculations (preview)](desktop-visual-calculations-overview.md)
+* [Using calculations options in Power BI Desktop](desktop-calculations-options.md)

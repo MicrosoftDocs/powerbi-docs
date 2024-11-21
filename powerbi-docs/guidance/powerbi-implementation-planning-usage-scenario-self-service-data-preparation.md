@@ -1,12 +1,13 @@
 ---
 title: "Power BI usage scenarios: Self-service data preparation"
 description: "Learn how Power BI self-service data preparation is about using dataflows to centralize data cleansing and transformation work."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 05/12/2022
 ---
 
@@ -25,7 +26,7 @@ Dataflows are created by using [Power Query Online](https://powerquery.microsoft
 
 ## Scenario diagram
 
-The following diagram depicts a high-level overview of the most common user actions and Power BI components that support self-service data preparation. The primary focus is on creating a dataflow in Power Query Online that becomes a source of data for multiple semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)). The goal is for many semantic models to leverage the data preparation that's done once by the dataflow.
+The following diagram depicts a high-level overview of the most common user actions and Power BI components that support self-service data preparation. The primary focus is on creating a dataflow in Power Query Online that becomes a source of data for multiple semantic models. The goal is for many semantic models to leverage the data preparation that's done once by the dataflow.
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation-inline.svg" alt-text="Diagram shows self-service data preparation, which is about dataflows for centralizing data cleansing and transformation work. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation-expanded.svg" border="false":::
 
@@ -94,7 +95,9 @@ When a semantic model creator [connects to a dataflow](../transform-model/deskto
 
 ### Dataflow advanced features
 
-There are many design techniques, patterns, and best practices for dataflows that can take them from self-service to enterprise-ready. Dataflows in a workspace that has its license mode set to **Premium per user** or **Premium per capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md).
+There are many design techniques, patterns, and best practices for dataflows that can take them from self-service to enterprise-ready. Dataflows in a workspace that has its license mode set to **Premium per user**, **Premium capacity**, or **Fabric capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 > [!NOTE]
 > One of the [advanced features](../transform-model/dataflows/dataflows-premium-features.md) is incremental refresh for dataflows. Although incremental refresh for *semantic models* is a Power BI Pro feature, incremental refresh for dataflows is a Premium feature.

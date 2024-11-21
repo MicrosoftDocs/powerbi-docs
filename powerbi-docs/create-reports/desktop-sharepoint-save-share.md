@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/14/2023
+ms.date: 09/25/2024
 LocalizationGroup: Create reports
 ---
 # Power BI Desktop OneDrive and SharePoint integration
@@ -57,7 +57,7 @@ Your files from OneDrive for Business and SharePoint are available for you to op
 
 Select the file to open it in Power BI Desktop.  
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png" alt-text="Screenshot of report opened from OneDrive or SharePoint" lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png" alt-text="Screenshot of report opened from OneDrive or SharePoint." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png":::
 
 You can also navigate to a new OneDrive or SharePoint location through the **Quick access** option on the left. 
 
@@ -77,8 +77,22 @@ To save an existing file to OneDrive or SharePoint, select the **Save as** optio
 
 The default save location is your parent OneDrive folder, unless you change it. The default save location is the first option that appears in your save list. 
 
+Upon saving, a dialog box appears while the file is being uploaded to the OneDrive or SharePoint location. You can cancel the upload directly on the dialog box. This dialog shows up the first time a new file is uploaded. 
+
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-updated-save-onedrive.png" alt-text="Screenshot of save dialog box in Power BI." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-updated-save-onedrive.png":::
+
 > [!NOTE]
-> If the user isn’t signed in when attempting to save, they are prompted to sign in. 
+> If the user isn’t signed in when attempting to save, they are prompted to sign in.
+
+## Background upload for existing Power BI files in OneDrive and SharePoint (Preview)
+
+When new changes are saved to a file already uploaded to OneDrive, the top of the toolbar indicates that the new changes are uploading in the background to OneDrive. 
+
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png" alt-text="Screenshot of background upload for Power BI and ODSP." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png":::
+
+To enable background upload, select **File > Options and Settings > Options > Preview Features,** and then select **Saving to OneDrive and SharePoint uploads the file in the background** checkbox. You will need to restart Power BI Desktop after you make the selection. 
+
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png" alt-text="Toggle for background upload for Power BI and ODSP." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png":::
 
 ## Change the default save location
 
@@ -102,6 +116,10 @@ After the file is saved, the Microsoft 365 share dialog prompts you to add the e
 
 You can also manage who has access to the file through the **Manage Access** option under the Share button. 
 
+To get a direct link to where the file is stored in OneDrive, you can select the title bar flyout in the toolbar to access more information about the file. You can select **View your file in OneDrive** to get a direct link to the Power BI file in OneDrive. 
+
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png" alt-text="Screenshot of link to file in OneDrive." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png":::
+
 > [!NOTE]
 > The new capabilities respect the OneDrive and SharePoint organizational settings for sharing.
 
@@ -118,7 +136,7 @@ Learn more about how users can [view Power BI files in their browser](../collabo
 
 -	These features don’t work with personal OneDrive accounts.   
 -	When you share a link to a file with another person, the recipient has to sign-in before they can view the file.
--	Only **.PBIX files** can be saved to OneDrive and SharePoint. 
+-	Only **.PBIX files** can be saved to OneDrive and SharePoint.
 
 ### Collaborating on reports 
 
@@ -165,7 +183,7 @@ The following use cases apply when sharing a link to a Power BI file saved in On
 
 When you save and share Power BI files in OneDrive and SharePoint document libraries, Power BI admins can access activity through [unified audit logs](../admin/service-admin-auditing.md#use-the-audit-log). 
 
-Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
+Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
 
 OneDrive and SharePoint Power BI file activity in the audit logs appear with property values **Workload** and/or **EventSource** set to **OneDrive**.
 

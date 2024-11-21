@@ -1,13 +1,14 @@
 ---
 title: The authentication API in Power BI custom visuals
-description: This article describes the API used to obtain access tokens for single sign-on (SSO) users.
+description: This article describes the Authentication API needed to obtain Microsoft Entra ID access tokens for single sign-on (SSO) users.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov , david
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
-ms.date: 12/12/2023
+ms.topic: concept-article
+ms.date: 06/26/2024
+#customer intent: To understand how to use the Authentication API in Power BI custom visuals.
 ---
 
 # Authentication API
@@ -31,32 +32,71 @@ The following environments are supported:
 
 The following environments aren't yet supported:
 
-* Sovereign clouds
 * RS Service
 * Embedded analytics
-* Teams (partially supported if consents are granted in advance)
+* Teams
 
 ## How to use the Authentication API
 
-In the *capabilities.json* file, add the "AADAuthentication" privilege with your Microsoft Entra ID registered application URI. Fabric will generate a token with this audience, and deliver it to the visual.  
-The visual can then utilize the token to authenticate against the audience https://contoso.com, representing its backend service:
+In the *capabilities.json* file, add the "AADAuthentication" privilege with a Microsoft Entra ID registered application URI for each supported cloud. Fabric generates a token according to the audience configured for the current cloud, and delivers it to the visual.  
+The visual can then utilize the token to authenticate against the respective audience, representing its backend service:
 
 ```json
 "privileges": [
     {
         "name": "AADAuthentication",
-        "parameters": [
-            "https://contoso.com"
-        ]
+        "parameters": {
+            "COM": "https://contoso.com",
+            "CN": "https://contoso.cn"
+        }
     }
 ]
 ```
 
-In the *pbiviz.json* file, set the API version to 5.7.0 or higher:
+In the *pbiviz.json* file, set the API version to **5.9.1** or higher:
 
 The newly exposed **AcquireAADTokenService** contains two methods:
 
-* **acquireAADToken**: Returns the token for the visual or null if it can't be fetched.
+* **acquireAADToken**: Returns an authentication token payload of type `AcquireAADTokenResult` for the visual or null if it can't be fetched.
+
+    ```typescript
+     /**
+     * Enum representing the various clouds supported by the Authentication API.
+     */
+    export const enum CloudName {
+        COM = "COM",         // Commercial Cloud
+        CN = "CN",           // China Cloud
+        GCC = "GCC",         // US Government Community Cloud
+        GCCHIGH = "GCCHIGH", // US Government Community Cloud High
+        DOD = "DOD",         // US Department of Defense Cloud
+    }
+ 
+    /**
+     * Interface representing information about the user associated with the token.
+     */
+    export interface AcquireAADTokenUserInfo {
+        userId?: string;   // Unique identifier for the user
+        tenantId?: string; // Unique identifier for the tenant
+    }
+ 
+    /**
+     * Interface representing information about the fabric environment.
+     */
+    export interface AcquireAADTokenFabricInfo {
+        cloudName?: CloudName; // Name of the cloud environment
+    }
+ 
+    /**
+     * Interface representing the result of acquiring a Microsoft Entra ID token.
+     */
+    export interface AcquireAADTokenResult {
+        accessToken?: string;       // Access token issued by Microsoft Entra ID
+        expiresOn?: number;         // Expiration time of the access token
+        userInfo?: AcquireAADTokenUserInfo;     // Information about the user associated with the token
+        fabricInfo?: AcquireAADTokenFabricInfo; // Information about the fabric environment
+    }
+    ```
+
 * **acquireAADTokenstatus**: Returns one of the following privilege statuses associated with acquiring the token.
 
   * **Allowed**: The privilege is allowed in the current environment.
@@ -66,24 +106,24 @@ The newly exposed **AcquireAADTokenService** contains two methods:
 
 The following sample code demonstrates how to acquire a Microsoft Entra ID token using the API:
 
-```typescript
-// Step 1: Check the status of AAD token acquisition
-const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenstatus();
+ ```typescript
+    // Step 1: Check the status of AAD token acquisition 
+    const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenstatus(); 
  
-// Step 2: Verify if acquiring the token is allowed
-if (acquireTokenStatus === PrivilegeStatus.Allowed) {
+    // Step 2: Verify if acquiring the token is allowed 
+    if (acquireTokenStatus === PrivilegeStatus.Allowed) { 
  
-    // Step 3: Acquire the Microsoft Entra ID token
-    const { accessToken }: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken();
+        // Step 3: Acquire the Microsoft Entra ID token
+        const acquireAADTokenResult: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken(); 
  
-    // Step 4: Confirm successful acquisition of the access token
-    if (accessToken) {
+        // Step 4: Confirm successful acquisition of the access token
+        if (acquireAADTokenResult.accessToken) { 
  
-        // Step 5: Call your backend API with the obtained token
-    }
-}
+            // Step 5: Call your backend API with the obtained token 
+        } 
+    } 
  
-// Step 6: Handle unsuccessful AAD token acquisition
+    // Step 6: Handle unsuccessful AAD token acquisition 
 ```
 
 ## Considerations and limitations
@@ -100,7 +140,7 @@ Token acquisition is blocked if any of the following conditions apply:​
 
 * The visual isn't publicly approved or isn't a debug visual.
 
-* The visual’s backend service, configured as the audience by the visual, doesn't have appropriate consents for the Graph API in the consumer tenant using the visual. For more about consents, see [tenant administrator consent](entra-id-authentication.md#consenting-the-isv-app).
+* The visual’s backend service, configured as the audience by the visual, doesn't have appropriate consents for the Graph API in the consumer tenant using the visual. For more about consent, see [tenant administrator consent](entra-id-authentication.md#isv-consent).
 
 ## Related content
 

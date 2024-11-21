@@ -1,8 +1,8 @@
 ---
 title: Create an ArcGIS map in Power BI
 description: 'Create an ArcGIS map by ESRI in Power BI. ArcGIS for Power BI is a mapping visualization that helps you to enrich your data, reports, and dashboards.'
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: lukasz'
 featuredvideoid: ''
 ms.service: powerbi
@@ -82,6 +82,10 @@ To add a map to a report, follow these steps:
    :::image type="content" source="media/power-bi-visualizations-arcgis/last-year-sales.png" alt-text="Screenshot shows a map with sales information displayed as size.":::
 
 You have created your first ArcGIS for Power BI visualization. Next, learn how to refine and format the visualization using basemaps, location types, themes, and more.
+
+## Embed a map-enabled ArcGIS for Power BI report
+
+You can embed a map-enabled ArcGIS for Power BI report containing private, secure, or proprietary ArcGIS data in a secure website or app. Viewers of the report must sign in to an ArcGIS account to view it. See [Content sharing](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/embed-a-map-enabled-report.htm) for general information about embedding ArcGIS content.
 
 ## Format an ArcGIS for Power BI visualization
 

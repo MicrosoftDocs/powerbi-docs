@@ -6,7 +6,7 @@
     expanded: false
     items:
     - name: Active known issues for Power BI + Fabric - chart
-      href: /fabric/get-started/fabric-known-issues.md
+      href: /fabric/get-started/fabric-known-issues
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
   - name: Troubleshoot
@@ -79,6 +79,8 @@
     - name: Account and license
       expanded: false
       items:
+      - name: Troubleshoot getting a license
+        href: ../support/service-troubleshoot-signup.md   
       - name: Troubleshoot sign-in issues
         href: ../support/power-bi-cannot-sign-in.md   
       - name: Troubleshoot sign-in for Power BI Desktop
@@ -99,6 +101,8 @@
     - name: Visuals
       expanded: false
       items:
+      - name: Troubleshoot visualizations in Power BI
+        href: ../visuals/power-bi-visualization-troubleshoot.md
       - name: Debug Power BI custom visuals
         href: ../developer/visuals/visuals-how-to-debug.md
       - name: Troubleshoot custom visuals in Power BI Desktop for Power BI Report Server

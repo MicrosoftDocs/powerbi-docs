@@ -1,12 +1,13 @@
 ---
 title: "Power BI usage scenarios: Customizable managed self-service BI"
 description: "Learn how Power BI customizable managed self-service BI is about creating new specialized semantic models by extending and personalizing existing semantic models."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 05/26/2022
 ---
 
@@ -16,7 +17,7 @@ ms.date: 05/26/2022
 
 As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-ownership-and-management.md#managed-self-service), *managed self-service BI* is characterized by a blended approach that emphasizes *discipline at the core* and *flexibility at the edge*. The data architecture is usually maintained by a single team of centralized BI experts, while reporting responsibility belongs to creators within departments or business units.
 
-However, when the core data architecture doesn't include all data required, semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) creators can extend, personalize, or customize existing shared semantic models. New specialized semantic models can be created that meet business requirements not met by existing centrally delivered semantic models. Importantly, there's no duplication of core data. This usage scenario is called *customizable managed self-service BI*.
+However, when the core data architecture doesn't include all data required, semantic model creators can extend, personalize, or customize existing shared semantic models. New specialized semantic models can be created that meet business requirements not met by existing centrally delivered semantic models. Importantly, there's no duplication of core data. This usage scenario is called *customizable managed self-service BI*.
 
 > [!NOTE]
 > This customizable managed self-service BI scenario is the second of the self-service BI scenarios. This scenario builds upon what can be done with a centralized shared semantic model (that was introduced in the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario). A list of all scenarios can be found in the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
@@ -96,7 +97,7 @@ A report creator might find a semantic model in the [data hub](../connect-data/s
 
 There are several advantages to publishing reports to a workspace different from where the semantic model is stored.
 
-First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](../enterprise/service-admin-rls.md) to take effect when necessary for users assigned to the viewer role.
+First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](/fabric/security/service-admin-row-level-security) to take effect when necessary for users assigned to the viewer role.
 
 ### Dependency and impact analysis
 

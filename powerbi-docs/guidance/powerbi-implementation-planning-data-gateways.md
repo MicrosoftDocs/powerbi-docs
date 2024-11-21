@@ -1,12 +1,13 @@
 ---
 title: "Power BI implementation planning: Data gateways"
 description: "Learn how to plan and implement on-premises data gateways and virtual network (VNet) data gateways for Microsoft Fabric."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/13/2024
 ---
 
@@ -211,9 +212,11 @@ A [VNet gateway](/data-integration/vnet/overview) allows multiple users to conne
 A VNet gateway is a Microsoft managed service. If your organization uses private networks, you need a VNet gateway.
 
 > [!IMPORTANT]
-> If you're considering using the VNet gateway service, discuss it with your IT teams that handle networking and security. These teams can help ensure that everything is set up, such as [private endpoints](/power-bi/enterprise/service-security-private-links) (if applicable) and gateway [communication](/data-integration/gateway/service-gateway-communication).
+> If you're considering using the VNet gateway service, discuss it with your IT teams that handle networking and security. These teams can help ensure that everything is set up, such as [private endpoints](/fabric/security/security-private-links-overview) (if applicable) and gateway [communication](/data-integration/gateway/service-gateway-communication).
 >
 > A VNet gateway is only supported for Power BI Fabric or Premium capacities. The VNet gateway is billed as an [additive premium infrastructure charge](https://powerbi.microsoft.com/blog/vnet-data-gateway-for-fabric-and-power-bi-is-now-generally-available/) for that capacity.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 The following diagram depicts a high-level overview of a VNet gateway.
 
@@ -460,7 +463,7 @@ Content creators will need access to a gateway connection to successfully connec
 Gateway roles let you control who can manage the gateway and its data source connections. These roles work similarly to [workspace roles](/power-bi/collaborate-share/service-roles-new-workspaces), allowing different permissions depending on the role. Using roles helps you to manage gateway access more effectively.
 
 > [!TIP]
-> We recommend using [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to manage role membership instead of individual accounts. That way, it's easier to manage users, particularly across multiple gateways. You can use the same security groups to manage other access control, like [row-level security](/power-bi/enterprise/service-admin-rls#working-with-members) role membership and [app audience](/power-bi/collaborate-share/service-create-distribute-apps#create-and-manage-multiple-audiences) membership.
+> We recommend using [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to manage role membership instead of individual accounts. That way, it's easier to manage users, particularly across multiple gateways. You can use the same security groups to manage other access control, like [row-level security](/fabric/security/service-admin-row-level-security#working-with-members) role membership and [app audience](/power-bi/collaborate-share/service-create-distribute-apps#create-and-manage-multiple-audiences) membership.
 
 > [!IMPORTANT]
 > A user who just needs to use the gateway to connect to a data source doesn't need to belong to a gateway role. In this case, they'll only have the _User_ connection role.

@@ -1,7 +1,7 @@
 ---
 title: "Set the locale for a Power BI paginated report or text box | Microsoft Docs"
 description: Use the Language property on a text box to provide the locale setting for formats in a Power BI paginated report that display data that differ by language and region in Power BI Report Builder.
-ms.date: 06/28/2023
+ms.date: 03/13/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,11 +9,11 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Set the locale for a paginated report or text box (Power BI Report Builder)
+# Set the locale for a Power BI paginated report or text box (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  The **Language** property on a Power BI paginated report or a text box contains the locale setting, which determines the default formats for displaying report data that differ by language and region, for example, date, currency, or number values. The **Language** property on a text box overrides the **Language** property on the report. If no value is specified for **Language**, Power BI Services uses the language setting of the browser for published reports.
+  The **Language** property on a Power BI paginated report or a text box contains the locale setting, which determines the default formats for displaying report data that differ by language and region, for example, date, currency, or number values. The **Language** property on a text box overrides the **Language** property on the report. If no value is specified for **Language**, the Power BI service uses the language setting of the browser for published reports. By default, the Power BI language is the browser language, but you can overwrite that in the Power BI settings and use a fixed language.
   
  For HTML reports, you can override the default **Language** value and use the language specified by the HTTP header of the browser client by using the built-in field User!Language in an expression for the **Language** property of a report or a text box.  
   
@@ -41,7 +41,24 @@ ms.reviewer: saurkumar
   
     - **NumeralVariant** property: type or select the variant of the format to use for numbers in the text box.  
   
-    - **UnicodeBiDi** property: select the level of bidirectional embedding to use in the text box.  
+    - **UnicodeBiDi** property: select the level of bidirectional embedding to use in the text box.
+  
+## Set translated labels for a paginated report parameter prompt (Power BI Report Builder)
+
+The **User!Language** expression can be used to define translated parameter prompts based on the user's browser language. To do so, follow these steps:
+
+1. In Design view, define the [parameter](../../paginated-reports/parameters/paginated-reports-create-parameters.md).
+2. Specify the **Name** for the parameter.
+3. For the **Prompt**, define an [expression](../../paginated-reports/expressions/expression-uses-reports-report-builder.md). For example:
+
+     ```=IIF(User!Language.StartsWith("en"), "Color", "Farbe")```
+   
+    :::image type="content" source="media/set-locale-parameter-prompts-2.png" alt-text="Screenshot of locale for parameter prompt.":::
+
+    To support more than two languages, use the [VB Switch function](/office/vba/language/reference/user-interface-help/switch-function).
+
+> [!NOTE]
+> The Power BI language that's used for when the report is executed in the Power BI service. By default the Power BI language is the browser language, but users can overwrite that in the Power BI settings and use a fixed language.
   
 ## Related content
 

@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/15/2024
+ms.date: 09/17/2024
 LocalizationGroup: Dashboards
 ---
 
@@ -326,8 +326,8 @@ In addition to the above differences between previous and improved usage metrics
 - Initializing the Usage Metrics Report semantic model might fail due to a timeout encountered during refresh. Refer to the [Troubleshooting section](#troubleshoot-refresh-issues) below to resolve this or any general refresh issue.
 - Sharing is disabled for the usage metrics report. To give people read access to the report, open the report and use the **Manage permissions** option to grant direct access.
 - In some scenarios, you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occurred during the report load. 
-- If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
-- If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) and **Block Public Internet Access** in Power BI, the refresh for the semantic model will fail and the usage metrics report won't show any data.
+- If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
+- If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) and **Block Public Internet Access** in Power BI, the refresh for the semantic model will fail and the usage metrics report won't show any data.
 - In order to create and refresh the usage metrics report, the user is required to authenticate to enable the backend API calls to extract the tenant telemetry. For privacy reasons, guest users aren't allowed this authentication. This authentication is only allowed for members of the tenant.
 - Page views that are made from mobile devices aren't shown in the usage metrics report.
 - Duplicate reports with different Report ObjectIds in the usage metrics report can show up for the following scenarios:
@@ -345,6 +345,8 @@ In addition to the above differences between previous and improved usage metrics
 - Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.
 - When a report is deleted, the ReportIds can show up in the usage metrics but not be available in the Reports semantic model.
 - Customers may be unable to view or download the usage metrics semantic model from Power BI service.
+- To access the user metrics report's semantic model settings and refresh history, follow the steps in [Update usage metrics report credentials](#update-usage-metrics-report-credentials).
+- The report views count is influenced by subscriptions running on the reports. When the subscription service captures a snapshot of the report for emails, it triggers a flow that logs a ViewReport event.
 
 ## Frequently asked questions
 
@@ -429,7 +431,7 @@ Follow these steps to delete the semantic model and then create a fresh data ref
     > [!NOTE]
     > This **Try it** button does not apply to GCC customers since their API endpoint is different.
 
-    You can use this API to delete the semantic model. You can use Postman or other API tools to make an API call on this endpoint to delete the semantic model. 
+    You can use this API to delete the semantic model. You can use API tools to make an API call on this endpoint to delete the semantic model. 
 
 1. If you don't see a **Try it** button, use the trigger **Scheduled cloud flow**. Select a starting time and run it every hour. Then refresh the semantic model. Let the flow run once, then switch off the flow. Read more about [cloud flows in Power Automate](/power-automate/run-scheduled-tasks).
     

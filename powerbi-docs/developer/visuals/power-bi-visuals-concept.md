@@ -4,11 +4,12 @@ description: Learn about the Visual API, and how Power BI handles the interactio
 author: mberdugo
 ms.author: monaberdugo
 manager:
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/04/2023
+ms.topic: concept-article
+ms.date: 01/04/2024
+#customer intent: As a Power BI visual developer, I want to learn how to integrate my visual with Power BI so that I can create a seamless experience for users.
 ---
 
 # Power BI visuals system integration

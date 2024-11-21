@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 02/08/2023
+ms.date: 6/04/2024
 ---
 
 # Troubleshoot REST APIs
@@ -62,7 +62,6 @@ When using the [Datasets - Update Parameters In Group](/rest/api/power-bi/datase
 
 ## Related content
 
-> [!div class="nextstepaction"]
->[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
+[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

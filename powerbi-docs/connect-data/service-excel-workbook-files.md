@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/10/2023
-ms.custom: video-l2wy4XgQIu0
+ms.custom: video-removed
 LocalizationGroup: Data from files
 ---
 
@@ -129,15 +129,6 @@ If you upload from OneDrive for Business, when you save changes, Power BI synchr
 > [!NOTE]
 > Pinned report pages don't support the automatic refresh feature.
 
-## Prepare your workbook for Power BI
-
-Watch this video to learn more about how to make sure your Excel workbooks are ready for Power BI:
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/l2wy4XgQIu0]
-
 ## Where to save your workbook file
 
 Where you save your workbook file makes a difference.
@@ -175,7 +166,7 @@ To build new workbooks connected to a semantic data model in your Excel workbook
 
 For cases where you include a workbook in a Power BI organizational app, remember to republish the app with the new items.
 
-To learn which workbooks can be affected by the deprecation of local workbooks and refresh capabilities, use the **workbooks** Power BI admin REST API. It lists the workbooks in your organization. You must be a member of the Power BI admin role or a Global Administrator to call this API.
+To learn which workbooks can be affected by the deprecation of local workbooks and refresh capabilities, use the **workbooks** Power BI admin REST API. It lists the workbooks in your organization. You must be a Fabric administrator to call this API.
 
 ```
 GET https://api.powerbi.com/v1.0/myorg/admin/workbooks

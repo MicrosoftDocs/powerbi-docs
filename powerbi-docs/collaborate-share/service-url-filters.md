@@ -7,7 +7,7 @@ ms.reviewer: 'kayu'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 09/01/2023
+ms.date: 07/16/2024
 ms.topic: how-to
 LocalizationGroup: Reports
 ---
@@ -28,7 +28,7 @@ Another use for query string parameters is for someone creating an advanced Powe
 
 ## Query string parameter syntax for filtering
 
-With parameters, you can filter the report for one or more values, even if those values contain spaces or special characters. The basic syntax is fairly straightforward; start with the report URL, add a question mark, and then add your filter syntax.
+With parameters, you can filter the report for one or more values, even if those values contain spaces or special characters. The basic syntax is fairly straightforward; start with the report URL, then add your filter syntax in a query string. A query string in a URL starts with a question mark (?), for example:
 
 *URL*?filter=*Table*/*Field* eq '*value*'
 
@@ -36,6 +36,10 @@ With parameters, you can filter the report for one or more values, even if those
 
 * **Table** and **Field** names are case-sensitive; **value** isn't.
 * Fields that are hidden from report view can still be filtered.
+
+If the filter parameter isn't the first parameter in the query string, it is joined to the previous parameter with an ampersand (&), for example:
+
+*URL?reportId=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&pageName=ReportSection*&filter=*Table*/*Field* eq '*value*'
 
 ### Field types
 
@@ -141,20 +145,21 @@ There are other differences between V3 and V4. OData V3 does not support Dates, 
 
 ### Special characters in table and column names
 
-Special characters and spaces in table and column names require more formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* starting with an underscore and an X (**_x**), then the four-digit **Unicode**, then another underscore. If the Unicode is fewer than four characters, you need to pad it with zeroes. Here are some examples.
+Special characters, spaces, and leading numbers in table and column names require more formatting. When your query contains spaces, dashes, leading numbers, or other non-ASCII characters, prefix those special characters with an *escape code* starting with an underscore and an X (**_x**), then the four-digit **Unicode**, then another underscore. If the Unicode is fewer than four characters, you need to pad it with zeroes. Here are some examples.
 
 |Identifier  |Unicode  | Coding for Power BI  |
 |---------|---------|---------|
-|**Table Name**     | Space is 00x20        |  Table_x0020_Name       |
-|**Column**@**Number**     |   @ is 00x40     |  Column_x0040_Number       |
-|**[Column]**     |  [ is 0x005B ] is 0x005D       |  _x005B_Column_x005D_       |
-|**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
+|**Table Name**     | Space is 00x20        |  Table\_x0020\_Name       |
+|**Column**@**Number**     |   @ is 00x40     |  Column\_x0040\_Number       |
+|**[Column]**     |  [ is 0x005B ] is 0x005D       |  \_x005B\_Column_x005D_       |
+|**Column+Plus**     | + is 0x2B        |  Column\_x002B\_Plus       |
+|**2TableName**|2 is x0032|\_x0032\_TableName\_|
 
-Table_x0020_Name/Column_x002B_Plus eq 3
+Table\_x0020\_Name/Column\_x002B\_Plus eq 3
 ![Screenshot of table visual rendering special characters for Unicode.](media/service-url-filters/power-bi-special-characters1.png)
 
 
-Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]'
+Table\_x0020\_Special/\_x005B\_Column\_x0020\_Brackets\_x005D\_ eq '[C]'
 ![Screenshot of table visual rendering special characters for coding for Power B I.](media/service-url-filters/power-bi-special-characters2.png)
 
 ### Special characters in values

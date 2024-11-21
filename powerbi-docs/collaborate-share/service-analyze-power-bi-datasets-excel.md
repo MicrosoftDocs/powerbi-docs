@@ -68,9 +68,9 @@ To refresh all objects connected to a Power BI semantic model, use either of the
     > [!NOTE]
     > If you have other connections in your Excel workbook, Refresh All will update all the data in your workbook, including Power BI data.
 
-- In the Excel Desktop ribbon, select **Data** > **Queries & Connections**. In the **Queries & Connections** pane,  select **Refresh**. 
+- In the Excel Desktop ribbon, select **Data** > **Queries & Connections**. In the **Queries & Connections** pane,  select **Refresh**.
 
-    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png" alt-text="Screenshot showing the Queries and Connections pane." lightbox="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png":::
+    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-pane.png" alt-text="Screenshot showing the Queries and Connections pane." lightbox="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-pane.png":::
 
 ## Related content
 

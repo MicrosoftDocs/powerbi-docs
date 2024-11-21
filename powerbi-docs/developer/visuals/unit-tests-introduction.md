@@ -3,11 +3,12 @@ title: Introduction to unit tests for Power BI visual projects
 description: Learn how to write unit tests for Power BI custom visuals by using the Karma JavaScript testing framework.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/1/2022
+ms.date: 12/1/2023
+#customer intent: As a Power BI visual developer, I want to learn how to write unit tests for my visual so that I can ensure the visual works as expected.
 ---
 
 # Tutorial: Add unit tests for Power BI visual projects

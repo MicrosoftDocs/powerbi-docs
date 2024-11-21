@@ -26,7 +26,13 @@
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
     - name: "Work with DAX query view"
-      href: dax-query-view.md  
+      href: dax-query-view.md
+    - name: "Copilot DAX query features"
+      href: dax-query-copilot-features.md
+    - name: "Use Copilot to write and explain DAX queries"
+      href: dax-query-copilot-create.md
+    - name: Use Copilot to create measure descriptions
+      href: desktop-measure-copilot-descriptions.md
     - name: "Work with Model explorer (preview)"
       href: model-explorer.md        
     - name: "Understand model relationships"
@@ -43,6 +49,8 @@
       href: desktop-storage-mode.md
     - name: "Work with multidimensional models in Power BI"
       href: ../connect-data/desktop-default-member-multidimensional-models.md            
+    - name: "Work with value filter behavior (preview)"
+      href: value-filter-behavior.md
   - name: Datamarts (preview)
     items: 
     - name: "Introduction to datamarts (preview)"

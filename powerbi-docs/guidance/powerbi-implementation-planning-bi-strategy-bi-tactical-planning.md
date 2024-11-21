@@ -1,12 +1,13 @@
 ---
 title: "Power BI implementation planning: BI tactical planning"
 description: "This article helps you to identify your business intelligence key results and form actionable plans to achieve incremental progress toward your strategic BI objectives."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 01/24/2024
 ---
 

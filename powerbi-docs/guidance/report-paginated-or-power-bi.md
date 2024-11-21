@@ -1,12 +1,13 @@
 ---
 title: When to use paginated reports in Power BI
 description: Guidance for when to use Power BI paginated reports.
-author: maggiemsft
-ms.author: maggies
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/17/2022
 ---
 
@@ -41,7 +42,7 @@ There are many compelling scenarios when you might favor developing a Power BI p
 - **Precision layout**: You can design highly formatted, print-ready layouts—to the exact size and location configured in fractions of inches, or centimeters.
 - **Dynamic layout**: You can produce highly responsive layouts by setting many report properties to use VB.NET expressions. Expressions have access to many core .NET Framework libraries.
 - **Render-specific layout**: You can use expressions to modify the report layout based on the rendering format applied. For example, you can design the report to disable toggling visibility (to drill down and drill up) when it's rendered using a non-interactive format, like PDF.
-- **Native queries**: You don't need to first publish a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)). It's possible to author native queries (or use stored procedures) for any [supported data source](../paginated-reports/paginated-reports-data-sources.md). Queries can include parameterization.
+- **Native queries**: You don't need to first publish a Power BI semantic model. It's possible to author native queries (or use stored procedures) for any [supported data source](../paginated-reports/paginated-reports-data-sources.md). Queries can include parameterization.
 - **Graphic query designers**: Power BI Report Builder includes graphic query designers to help you write, and test, your dataset queries.
 - **Static datasets**: You can define a dataset, and enter data directly into your report definition. This capability is especially useful to support a demo, or for delivering a proof of concept (POC).
 - **Data integration**: You can combine data from different data sources, or with static datasets. It's done by creating custom fields using VB.NET expressions.

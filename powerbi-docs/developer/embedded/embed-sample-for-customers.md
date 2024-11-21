@@ -7,24 +7,24 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/09/2023
-
+ms.date: 10/21/2024
+#customer intent: As a developer, I want to learn how to embed Power BI content into my application, so that I can provide my users with interactive reports, dashboards, and tiles.
 ---
 
-# Tutorial: Embed Power BI content using a sample *embed for your customers'* application
+# Tutorial: Embed Power BI content using a sample *embed for your customers* application
 
 [!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
-**Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards and tiles, into your application.
+**Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards, and tiles, into your application.
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 >[!div class="checklist"]
 >
 >* Set up your embedded environment.
 >* Configure an *embed for your customers* (also known as *app owns data*) sample application.
 
-To use your application, your users won't need to sign in to Power BI or have a Power BI license.
+To use your application, your users don't need to sign in to Power BI or have a Power BI license.
 
 We recommend using the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
 
@@ -49,19 +49,19 @@ The code samples support the following browsers:
 
 ## Prerequisites
 
-Before you start this tutorial, verify that you have both the Power BI and code dependencies listed below:
+Before you start this tutorial, verify that you have the following the Power BI and code dependencies:
 
 * **Power BI dependencies**
 
   * Your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md).
 
-  * To authenticate your app against Power BI, you'll need one of the following:
+  * To authenticate your app against Power BI, you need one of the following:
 
     * [Service principal](embed-service-principal.md) - a Microsoft Entra [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Microsoft Entra ID to authenticate your app.
 
-    * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
+    * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) license - This is your **master user** and your app uses it to authenticate to Power BI.
 
-    * A Power BI [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license - This will be your **master user** and your app will use it to authenticate to Power BI.
+    * A Power BI [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license - This is your **master user** and your app uses it to authenticate to Power BI.
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
@@ -72,7 +72,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
 
-* An integrated development environment (IDE). We recommend using one of the following:
+* An integrated development environment (IDE). We recommend using one of the following environments:
 
   * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -96,7 +96,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * [Node.js](https://nodejs.org/en/download/)
 
-* An integrated development environment (IDE). We recommend using one of the following:
+* An integrated development environment (IDE). We recommend using one of the following environments:
 
   * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -111,7 +111,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
     >* If you're installing *Python* for the first time, select the **Add Python to PATH** option, to add the installation to the `PATH` variable.
     >* If you already have *Python* installed, verify that the `PATH` variable includes its installation path. For more information, see the [Excursus: Setting environment variables](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) Python documentation (this link refers to Python 3).
 
-* An integrated development environment (IDE). We recommend using one of the following:
+* An integrated development environment (IDE). We recommend using one of the following environments:
 
   * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -141,9 +141,9 @@ To create an *embed for your customers* sample app, follow these steps:
 
 ## Step 1 - Select your authentication method
 
-Your embedded solution will vary depending on the authentication method you select. Therefore, it's important to understand the differences between the authentication methods, and decide which one best suits your solution.
+Your embedded solution varies depending on the authentication method you select. Therefore, it's important to understand the differences between the authentication methods, and decide which one best suits your solution.
 
-The table below describes a few key differences between the [service principal](embed-service-principal.md) and **master user** authentication methods.
+The following table describes a few key differences between the [service principal](embed-service-principal.md) and **master user** authentication methods.
 
 |Consideration  |Service principal  |Master user  |
 |---------|---------|---------|
@@ -179,9 +179,9 @@ Registering your application with Microsoft Entra ID allows you to:
 
 ## Step 5 - Get the embedding parameter values
 
-To embed your content, you need to obtain certain parameter values. The table below shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
+To embed your content, you need to obtain certain parameter values. The following table shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
 
-Before you embed your content, make sure you have all the values listed below. Some of the values will differ, depending on the authentication method you're using.
+Before you embed your content, make sure you have all the values listed below. Some of the values might differ, depending on the authentication method you're using.
 
 |Parameter   |Service principal   |Master user  |
 |-------------------|---|---|
@@ -209,7 +209,7 @@ Before you embed your content, make sure you have all the values listed below. S
 
 Alternatively, you can find the workspace ID in the **Admin portal** settings by selecting **Details** next to the workspace name.
 
-  :::image type="content" source="media/embed-sample-for-customers/workspace-details.png" alt-text="A screenshot showing how to find the workspace I D from the admin settings.":::
+  :::image type="content" source="media/embed-sample-for-customers/workspace-details.png" alt-text="A screenshot showing how to find the workspace ID from the admin settings.":::
 
 ### Report ID
 
@@ -262,7 +262,7 @@ For a Microsoft Entra app to be able to access the Power BI content and APIs, a 
 
 2. Select **Tenant settings** and then scroll down to the **Developer settings** section.
 
-3. Expand **Allow service principals to use Power BI APIs**, and enable this option.
+3. Expand **Service principals can use Fabric APIs**, and enable this option.
 
     :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="A screenshot showing how to enable the developer settings option, in the tenant settings menu option, in Power B I service.":::
 
@@ -276,9 +276,9 @@ For a Microsoft Entra app to be able to access the Power BI content and APIs, a 
 
 To enable your Microsoft Entra app access objects such as reports, dashboards and semantic models in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
 
-1. Sign in to Power BI service.
+1. Sign in to Fabric.
 
-2. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
+2. Scroll to the workspace you want to enable access for, and select **Manage access**.
 
     :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power B I workspace.":::
 
@@ -383,7 +383,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     g. In the **Installed JREs** window, select the available *jre*, and select **Apply and Close**.
 
-    h. In the **Tomcat Server** window, select **Finish**. You'll be able to see the Tomcat server in the *Servers* tab.
+    h. In the **Tomcat Server** window, select **Finish**. You can see the Tomcat server in the *Servers* tab.
 
 8. Open the project in Eclipse:
 
@@ -400,7 +400,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. In the **Package Explorer** pane, right-click **AppOwnsData**, and select **Properties**.
 
-    b. In the **Properties for AppOwnsData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomcat v9.0*.
+    b. In the **Properties for AppOwnsData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection includes the version of *Apache Tomcat* you're using, for example *Apache Tomcat v9.0*.
 
     c. Select  **Apply and Close**.
 
@@ -476,7 +476,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 7. Verify that you're in the **Python** > **Embed for your customers** folder, and that the file **requirements.txt** is in the folder, and run `pip3 install -r requirements.txt`.
 
-8. Open the **App Owns Data** folder using your preferred IDE. We recommend using one of the following:
+8. Open the **App Owns Data** folder using your preferred IDE. We recommend using one of the following environments:
 
     * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -499,7 +499,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 11. Save the file.
 
-12. Run the project by doing the following:
+12. Run the project by doing the following steps:
 
     a. In **PowerShell** or **Command Prompt**, navigate to the **Python** > **Embed for your customers** > **AppOwnesData** folder, and execute `flask run`.
 

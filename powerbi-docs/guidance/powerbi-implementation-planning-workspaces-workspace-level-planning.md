@@ -1,12 +1,13 @@
 ---
 title: "Power BI implementation planning: Workspace-level workspace planning"
 description: "This article introduces the Power BI workspace tactical planning decisions you should make at the workspace level."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/24/2023
 ---
 
@@ -40,7 +41,7 @@ With these two examples in mind, consider two specific aspects of workspace purp
 
 The primary objective of a workspace in the Fabric portal is to facilitate [collaboration](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports#collaborate-in-a-workspace) among multiple people. There are many ways that collaboration can happen in a workspace:
 
-- **Team-based development:** Multiple people can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)), while other users might focus on building reports.
+- **Team-based development:** Multiple people can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the semantic model, while other users might focus on building reports.
 - **Testing and validations:** Users might need to perform data validations for new content. Subject matter experts from the business unit might need to perform user acceptance testing (UAT), or a data quality team might need to validate the accuracy of the semantic model.
 - **Enhancements:** Stakeholders and consumers of the content might suggest enhancements to the content as circumstances change.
 - **Ownership transfer:** Another person or team might [take over responsibility](fabric-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that was created by someone else.
@@ -159,7 +160,7 @@ Different business units and departments might use workspaces slightly different
 
 The following options present some suggestions about how you can organize workspaces by subject and scope.
 
-In some cases, you might already have some useful [groups](/azure/active-directory/fundamentals/new-name) established in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). You can then use them to manage access to resources for the defined subject area and scope. However, you might need to create some new groups to suit this purpose. See the [workspace access](#workspace-access) section below for considerations.
+In some cases, you might already have some useful groups established in Microsoft Entra ID. You can then use them to manage access to resources for the defined subject area and scope. However, you might need to create some new groups to suit this purpose. See the [workspace access](#workspace-access) section below for considerations.
 
 #### Option 1: Workspace per subject area or project
 
@@ -251,7 +252,7 @@ The advantages for separating data workspaces from reporting workspaces include:
 - Access management can be centralized for critical organizational data. Managing access separately for the data workspace compared with reporting workspace(s) is useful when different people are responsible for data and reports. With managed self-service BI, it's common to have many report creators and fewer data creators.
 - Limiting who can edit and manage semantic models minimizes the risk of unintentional changes, especially to critical data items that are reused for many purposes or by many users. Physical separation reduces the chances of inadvertent, or unapproved, changes. This extra layer of protection is helpful for [certified](/power-bi/collaborate-share/service-endorse-content#certify-content) semantic models, which are relied upon for their quality and trustworthiness.
 - Co-ownership scenarios are clarified. When shared semantic models are delivered from a centralized BI or IT team, while reports are published by self-service content creators (in business units), it's a good practice to segregate the semantic models into a separate workspace. This approach avoids the ambiguity of co-ownership scenarios because ownership and responsibility per workspace is more clearly defined.
-- Row-level security (RLS) is enforced. When you encourage creators to work in different workspaces, they won't have unnecessary edit permission to the original semantic model. The advantage is that [RLS](/power-bi/enterprise/service-admin-rls) and/or [object-level security (OLS)](/analysis-services/tabular-models/object-level-security) will be enforced for content creators (and also content viewers).
+- Row-level security (RLS) is enforced. When you encourage creators to work in different workspaces, they won't have unnecessary edit permission to the original semantic model. The advantage is that [RLS](/fabric/security/service-admin-row-level-security) and/or [object-level security (OLS)](/analysis-services/tabular-models/object-level-security) will be enforced for content creators (and also content viewers).
 
 The disadvantages for separating data workspaces from reporting workspaces include:
 
@@ -322,7 +323,7 @@ The effective use of groups for workspace roles can require considerable plannin
 Lastly, the examples show one workspace - _Quarterly Financials_ - but often it's possible to manage a collection of workspaces with one set of groups. For example, multiple workspaces owned and managed by the finance team might be able to use the same groups.
 
 > [!NOTE]
-> You'll often plan security more broadly, taking into consideration semantic model [Read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) permission requirements, and [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) requirements. For more information about what to consider for supporting report consumers and content creators, see the [security planning](powerbi-implementation-planning-security-overview.md) articles. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
+> You'll often plan security more broadly, taking into consideration semantic model [Read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) permission requirements, and [row-level security (RLS)](/fabric/security/service-admin-row-level-security) requirements. For more information about what to consider for supporting report consumers and content creators, see the [security planning](powerbi-implementation-planning-security-overview.md) articles. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
@@ -349,7 +350,11 @@ There are several settings you can set up for each individual workspace. These s
 
 ### Workspace license mode
 
-Each workspace has a [license mode](/fabric/get-started/workspaces#license-mode) setting. It can be set to **Pro**, **Premium per user (PPU)**, **Fabric capacity**, **Embedded**, or **Trial**. The [type of license](/fabric/enterprise/licenses#microsoft-fabric-license-types) is important for workspace planning because it determines:
+Each workspace has a [license mode](/fabric/get-started/workspaces#license-mode) setting. It can be set to **Pro**, **Premium per user**, **Premium capacity**, **Embedded**, **Fabric capacity**, or **Trial**.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
+The [type of license](/fabric/enterprise/licenses#microsoft-fabric-license-types) is important for workspace planning because it determines:
 
 - **Features:** Different features are supported. PPU includes more features (such as [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)) that aren't available in Pro. Many more Fabric features (such as [lakehouses](/fabric/data-engineering/lakehouse-overview)) become available for workspaces assigned to a Fabric capacity.
 - **Content access:** The license type determines who can access content in the workspace:

@@ -3,11 +3,12 @@ title: Package a Power BI visual
 description: Learn how to enter property values, update an icon, and package a Power BI visual so it can be shared and imported by other users.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/3/2022
+ms.date: 06/03/2024
+#customer intent: As a Power BI visual developer, I want to learn how to package a Power BI visual so that I can share it with others.
 ---
 
 # Package a Power BI visual
@@ -80,8 +81,5 @@ The package outputs to the */dist/* folder of the project. The package contains 
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Publish Power BI visuals to Partner Center](office-store.md)
-
-> [!div class="nextstepaction"]
-> [Import a custom visual](import-visual.md)
+* [Publish Power BI visuals to Partner Center](office-store.md)
+* [Import a custom visual](import-visual.md)

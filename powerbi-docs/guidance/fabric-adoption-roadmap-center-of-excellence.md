@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Center of Excellence"
 description: "Establish a Center of Excellence (COE) to drive strong and successful adoption of Microsoft Fabric."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
@@ -87,7 +87,7 @@ Very generalized roles within a COE are listed below. It's common for multiple p
 | Coach | Coaches and educates others on data and BI skills via [office hours](fabric-adoption-roadmap-mentoring-and-user-enablement.md#office-hours) (community engagement), [best practices reviews](fabric-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews), or [co-development projects](fabric-adoption-roadmap-mentoring-and-user-enablement.md#co-development-projects). Oversees and participates in the discussion channel of the internal community. Interacts with, and supports, the [champions network](fabric-adoption-roadmap-community-of-practice.md#champions-network). |
 | Trainer | Develops, curates, and delivers internal training materials, documentation, and resources. |
 | Data analyst | Domain-specific subject matter expert. Acts as a liaison between the COE and the business unit. Content creator for the business unit. Assists with content certification. Works on co-development projects and proofs of concept. |
-| Data modeler | Creates and manages data assets (such as shared semantic model—[previously known as a dataset](/power-bi/connect-data/service-datasets-rename)—and dataflows) to support other self-service content creators. |
+| Data modeler | Creates and manages data assets (such as shared semantic model and dataflows) to support other self-service content creators. |
 | Report creator | Creates and publishes reports, dashboards, and metrics. |
 | Data engineer | Plans for deployment and architecture, including integration with other services and data platforms. Publishes data assets which are utilized broadly across the organization (such as a lakehouse, data warehouse, data pipeline, dataflow, or semantic model). |
 | User support | Assists with the resolution of data discrepancies and escalated help desk support issues. |
@@ -190,6 +190,8 @@ Funding is important because it impacts the way the COE communicates and engages
 > The choice of funding model can determine how the COE actively grows its influence and ability to help. The funding model can also have a big impact on where authority resides and how decision-making works. Further, it impacts the types of services a COE can offer, such as co-development projects and/or best practices reviews. For more information, see the [Mentoring and user enablement](fabric-adoption-roadmap-mentoring-and-user-enablement.md) article.
 
 Some organizations cover the COE operating costs with chargebacks to business units based on the usage goals of Fabric. For a shared capacity, this could be based on number of active users. For Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks are directly correlated to the business value gained.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Considerations and key actions
 

@@ -1,12 +1,13 @@
 ---
 title: "Power BI implementation planning: Defender for Cloud Apps for Power BI"
 description: "Learn about using Defender for Cloud Apps with Power BI."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 09/15/2022
 ---
 
@@ -89,7 +90,7 @@ Access policies and session policies allow you to:
   - Help users make the right decisions during their normal workflow.
   - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-info-protection.md#data-classification-and-protection-policy) without affecting their productivity.
 
-To provide real-time controls, access policies and session policies work with Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)), relying on the reverse proxy capabilities of [Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad). Instead of user requests and responses going through the app (the Power BI service in this case), they go through a reverse proxy (Defender for Cloud Apps).
+To provide real-time controls, access policies and session policies work with Microsoft Entra ID, relying on the reverse proxy capabilities of [Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad). Instead of user requests and responses going through the app (the Power BI service in this case), they go through a reverse proxy (Defender for Cloud Apps).
 
 Redirection doesn't affect the user experience. However, the [URL for the Power BI service](/defender-cloud-apps/proxy-intro-aad#how-session-control-works) will change to _https://app.powerbi.com.mcas.ms_ once you've set up Microsoft Entra ID for conditional access app control with Power BI. Also, users will receive a notification when they sign in to the Power BI service that announces that the app is monitored by Defender for Cloud Apps.
 
@@ -190,7 +191,7 @@ When an activity is blocked in real time, it's important to provide the user wit
 
 Some types of policies in Defender for Cloud Apps can have a customized message. Here are two examples of user notifications.
 
-**Example 1:** You can define a real-time session control policy that prevents all exports and downloads when the sensitivity label for the Power BI item (like a report or semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md)) is set to _Highly Restricted_. The customized block message in Defender for Cloud Apps reads: _Files with a Highly Restricted label are not permitted to be downloaded from the Power BI service. Please view the content online in the Power BI service. Contact the Power BI support team with any questions._
+**Example 1:** You can define a real-time session control policy that prevents all exports and downloads when the sensitivity label for the Power BI item (like a report or semantic model) is set to _Highly Restricted_. The customized block message in Defender for Cloud Apps reads: _Files with a Highly Restricted label are not permitted to be downloaded from the Power BI service. Please view the content online in the Power BI service. Contact the Power BI support team with any questions._
 
 **Example 2:** You can define a real-time access policy that prevents a user from signing in to the Power BI service when they're not using a machine managed by the organization. The customized block message in Defender for Cloud Apps reads: _The Power BI service might not be accessed on a personal device. Please use the device provided by the organization. Contact the Power BI support team with any questions._
 
@@ -236,7 +237,7 @@ Here are two examples of administrator alerts.
 Before you create policies in Defender for Cloud Apps, it's a good idea to first create a naming convention. A naming convention is helpful when there are many types of policies for many types of applications. It's also useful when Power BI administrators become involved in monitoring.
 
 > [!TIP]
-> Consider granting Defender for Cloud Apps access to your Power BI administrators. Use the [admin role](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls#power-bi-admin-role-in-defender-for-cloud-apps), which allows viewing the activity log, sign-in events, and events related to the Power BI service.
+> Consider granting Defender for Cloud Apps access to your Power BI administrators. Use the [admin role](/fabric/governance/service-security-using-defender-for-cloud-apps-controls#power-bi-admin-role-in-defender-for-cloud-apps), which allows viewing the activity log, sign-in events, and events related to the Power BI service.
 
 Consider a naming convention template that includes component placeholders: \<Application\> - \<Description\> - \<Action\> - \<Type of Policy\>
 
@@ -272,7 +273,7 @@ There are other attributes that don't need to be included in the policy name. Th
 
 ## Licensing requirements
 
-Specific licenses must be in place to monitor a Power BI tenant. Administrators must have one of the following [licenses](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls#defender-for-cloud-apps-licensing).
+Specific licenses must be in place to monitor a Power BI tenant. Administrators must have one of the following [licenses](/fabric/governance/service-security-using-defender-for-cloud-apps-controls#defender-for-cloud-apps-licensing).
 
 - **Microsoft Defender for Cloud Apps:** Provides Defender for Cloud Apps capabilities for all supported applications (including the Power BI service).
 - **Office 365 Cloud App Security:** Provides Defender for Cloud Apps capabilities for Office 365 apps that are part of the Office 365 E5 suite (including the Power BI service).
@@ -372,7 +373,7 @@ Power BI administrators and security and compliance administrators will need to 
 - **Power BI administrators:** In addition to alerts generated by Defender for Cloud Apps, activities from the Power BI activity log are also displayed in the Defender for Cloud Apps portal.
 - **Security and compliance administrators:** The organization's security and compliance administrators will typically use Defender for Cloud Apps alerts.
 
-It's possible to provide your Power BI administrators with a [limited view](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls#power-bi-admin-role-in-defender-for-cloud-apps) in Defender for Cloud Apps. It uses a _scoped role_ to view the activity log, sign-in events, and events related to the Power BI service. This capability is a convenience for Power BI administrators.
+It's possible to provide your Power BI administrators with a [limited view](/fabric/governance/service-security-using-defender-for-cloud-apps-controls#power-bi-admin-role-in-defender-for-cloud-apps) in Defender for Cloud Apps. It uses a _scoped role_ to view the activity log, sign-in events, and events related to the Power BI service. This capability is a convenience for Power BI administrators.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 

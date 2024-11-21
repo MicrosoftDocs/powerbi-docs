@@ -1,14 +1,15 @@
 ---
 title: Configure scheduled refresh
-description: Learn how to select a gateway connection and configure a scheduled refresh in the Power BI service.
+description: Learn how to select a gateway connection and configure scheduled refresh for a semantic model in the Power BI service.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 08/13/2024
 LocalizationGroup: Data refresh
+#customer intent: As a Power BI user, I want to learn how to configure scheduled refresh for a semantic model in the Power BI service so that I can keep my data up to date and ensure accurate insights in my reports and dashboards.
 ---
 
 # Configure scheduled refresh
@@ -20,13 +21,13 @@ This article describes the options available for scheduled refresh for the [On-p
 
 To get to the **Schedule refresh** screen:
 
-1. In the navigation pane, under **Semantic models**, select a semantic model.
+1. Go to the workspace and select a semantic model from the workspace content list.
 
-1. Select **Refresh** > **Schedule refresh**.
+1. On the semantic model details page, select **Refresh** > **Schedule refresh**.
 
     :::image type="content" source="media/refresh-scheduled-refresh/dataset-schedule-refresh.png" alt-text="Screenshot of Power BI service's Schedule refresh menu item.":::
 
-## Gateway connection
+## Gateway and cloud connections
 
 You'll see different options here depending on whether you have a personal gateway or enterprise gateway online and available.
 
@@ -49,9 +50,9 @@ If you're using the personal gateway to refresh data, you must supply the creden
 You're only required to sign in to a data source the first time you use refresh on that semantic model. Once entered, those credentials are retained with the semantic model.
 
 > [!NOTE]
-> For some authentication methods, if the password you use to sign into a data source expires or is changed, you need to change it for the data source in **Data source credentials** too.
+> For some authentication methods, if the password you use to sign in to a data source expires or is changed, you need to change it for the data source in **Data source credentials** too.
 
-If there's a problem, typically it's either the gateway is offline because it couldn't sign in to Windows and start the service, or Power BI couldn't sign in to the data sources to query for updated data. If refresh fails, check the semantic model settings. If the gateway service is offline, **Status** is where you see the error. If Power BI can't sign into the data sources, you see an error in Data Source Credentials.
+If there's a problem, typically it's either the gateway is offline because it couldn't sign in to Windows and start the service, or Power BI couldn't sign in to the data sources to query for updated data. If refresh fails, check the semantic model settings. If the gateway service is offline, **Status** is where you see the error. If Power BI can't sign in to the data sources, you see an error in Data source credentials.
 
 ### On-premises data gateway
 
@@ -64,11 +65,11 @@ If you're using the on-premises data gateway to refresh data, you don't need to 
 
 ## Scheduled refresh
 
-The **Scheduled refresh** section is where you define the frequency and time slots to refresh the semantic model. Some data sources don't require a gateway to be configurable for refresh, while other data sources require a gateway.
+The **Refresh** section is where you define the frequency and time slots to refresh the semantic model. Some data sources don't require a gateway to be configurable for refresh, while other data sources require a gateway.
 
-In a Direct Query scenario, when a semantic model qualifies for performance optimization, **Refresh schedule** will be moved to the **Optimize performance** section.
+In a DirectQuery scenario, when a semantic model qualifies for performance optimization, **Refresh** will be moved to the **Optimize performance** section.
 
-Set the **Keep your data up to date** slider to **On** to configure the settings.
+Set the **Configure a refresh schedule** slider to **On** to configure the settings.
 
 > [!NOTE]
 > The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner. Refresh can begin as early as five minutes before the scheduled refresh time. 
@@ -86,22 +87,21 @@ Set the **Keep your data up to date** slider to **On** to configure the settings
 > [!TIP]
 > Power BI does not have a monthly refresh interval option. However, you can use Power Automate to create a custom refresh interval that occurs monthly, as described in the following [Power BI blog post](https://powerbi.microsoft.com/blog/refresh-your-power-bi-dataset-using-microsoft-flow/). 
 
-
-Certain semantic models are supported against different gateways for scheduled refresh. 
+Certain semantic models are supported against different gateways for scheduled refresh.
 
 ### Power BI Gateway - Personal
 
 **Power BI Desktop**
 
 * All online data sources shown in Power BI Desktop's **Get data** and Power Query Editor.
-* All on-premises data sources shown in Power BI Desktop's **Get data** and Power Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+* All on-premises data sources shown in Power BI Desktop's **Get data** and Power Query Editor except for Hadoop files (HDFS) and Microsoft Exchange.
 
 **Excel**
 
 * All online data sources shown in Power Query.
-* All on-premises data sources shown in Power Query except for Hadoop file (HDFS) and Microsoft Exchange.
+* All on-premises data sources shown in Power Query except for Hadoop files (HDFS) and Microsoft Exchange.
 * All online data sources shown in Power Pivot.
-* All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
+* All on-premises data sources shown in Power Pivot except for Hadoop files (HDFS) and Microsoft Exchange.
 
 > [!NOTE]
 > In Excel 2016 and later, **Launch Power Query Editor** is available from **Get Data** in the **Data** ribbon.
@@ -112,17 +112,15 @@ For information about supported data sources, see [Power BI data sources](power-
 
 ## Troubleshooting
 
-Sometimes refreshing data may not go as expected, typically due to an issue connected with a gateway. See these gateway troubleshooting articles for tools and known issues.
+Sometimes refreshing data might not go as expected, typically due to an issue connected with a gateway. See these gateway troubleshooting articles for tools and known issues.
 
-- [Troubleshoot the On-premises data gateway](service-gateway-onprem-tshoot.md)
-- [Troubleshoot the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
+* [Troubleshoot the on-premises data gateway](service-gateway-onprem-tshoot.md)
+* [Troubleshoot Power BI gateway (personal mode)](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## Related content
 
-- [Data refresh in Power BI](refresh-data.md)  
-- [Power BI Gateway - Personal](service-gateway-personal-mode.md)  
-- [On-premises data gateway (personal mode)](service-gateway-onprem.md)  
-- [Troubleshoot the On-premises data gateway](service-gateway-onprem-tshoot.md)  
-- [Troubleshoot the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
+* [Data refresh in Power BI](refresh-data.md)  
+* [Use a personal gateway in Power BI](service-gateway-personal-mode.md)  
+* [On-premises data gateway (overview)](service-gateway-onprem.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

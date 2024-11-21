@@ -5,8 +5,6 @@
   - name: About Support requests
     items:
     - name: Support overview
-      href: /power-platform/admin/support-overview
-    - name: How to contact Support
       href: service-support-options.md
     - name: Create a Support ticket
       href: create-support-ticket.md
@@ -28,7 +26,7 @@
     - name: Check the planned maintenance schedule
       href: service-planned-maintenance.md
     - name: Find out if your problem is a known issue
-      href: /fabric/get-started/fabric-known-issues.md
+      href: /fabric/get-started/fabric-known-issues
     - name: Look for an answer in the Community forum
       href: https://community.powerbi.com
     - name: Tips for getting answers to your Power BI questions

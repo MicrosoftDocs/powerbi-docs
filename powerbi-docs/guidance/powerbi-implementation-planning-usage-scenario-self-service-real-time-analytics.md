@@ -1,12 +1,13 @@
 ---
 title: "Power BI usage scenarios: Self-service real-time analytics"
 description: "Learn how business analysts can produce real-time Power BI reports."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 09/15/2022
 ---
 
@@ -21,7 +22,7 @@ Real-time reports allow organizations to monitor and make confident decisions ba
 > [!NOTE]
 > In this article, the term _real-time_ actually means _near real-time_. Near real-time means that there's always a degree of delay (known as latency), due to data processing and network transmission time.
 
-To develop self-service real-time analytics, the business analyst will first need to create (or connect to) a [DirectQuery semantic model](/power-bi/connect-data/service-dataset-modes-understand#directquery-mode)—[previously known as a dataset](../connect-data/service-datasets-rename.md). They can then build a report and set up its [automatic page refresh](/power-bi/create-reports/desktop-automatic-page-refresh) settings. Once set up, Power BI automatically refreshes report pages to show current data.
+To develop self-service real-time analytics, the business analyst will first need to create (or connect to) a [DirectQuery semantic model](/power-bi/connect-data/service-dataset-modes-understand#directquery-mode). They can then build a report and set up its [automatic page refresh](/power-bi/create-reports/desktop-automatic-page-refresh) settings. Once set up, Power BI automatically refreshes report pages to show current data.
 
 > [!TIP]
 > You can also achieve real-time analytics in Power BI by using _push datasets_. However, this topic is out of scope for this self-service real-time usage scenario because it targets developers. Push datasets usually involve developing a programmatic solution.
@@ -53,6 +54,8 @@ The above diagram depicts the following user actions, tools, and features:
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Report consumers view up-to-date content from a workspace or Power BI app. |
 | ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Capacity administrators can enable or disable the automatic page refresh feature. When the feature is disabled, automatic page refresh won't work for any reports stored in workspaces assigned to the capacity. Capacity administrators can also set a minimum refresh interval and a minimum execution interval. These minimum intervals will override any report page setting that uses a lower interval. |
 | ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | Fabric administrators oversee and monitor activity in the Fabric portal. |
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Key points
 

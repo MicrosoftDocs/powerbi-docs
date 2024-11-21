@@ -4,8 +4,9 @@ description: Best practices when creating a Power BI or Fabric support ticket
 author: mihart
 ms.author: rrubinstein
 ms.service: powerbi
+ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 05/19/2023
+ms.date: 08/13/2024
 ---
 
 # Best practices when creating a support ticket

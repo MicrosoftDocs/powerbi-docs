@@ -1,12 +1,13 @@
 ---
-title: Migrate multi-customer apps to the service principal profiles model
+title: Move multi-customer apps to service principal profile model
 description: Get better scalability by migrating Power BI embedded analytics multitenancy applications to the service principal profiles model
 author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/17/2023
+ms.date: 06/04/2024
+#customer intent: As a developer, I want to learn how to migrate my multi-customer app to the service principal profiles model so that I can get better scalability.
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
@@ -32,7 +33,7 @@ You also need to do the following steps:
 * Set up the service principal by following **the first three steps** of [Embed Power BI content with service principal](embed-service-principal.md#step-1---create-an-azure-ad-app).
 * From a Power BI tenant admin account, [enable creating profiles in the tenant](embed-multi-tenancy.md#prerequisites).
 
- :::image type="content" source="./media/migration-to-sp-profiles/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal switch.":::
+ :::image type="content" source="./media/migration-to-sp-profiles/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal showing the enable creating profiles switch.":::
 
 ## Migrate to service principal profiles
 
@@ -106,7 +107,6 @@ If you reused the same workspaces, you may want to delete the older permissions 
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Manage service principal profiles](embed-multi-tenancy.md)
+[Manage service principal profiles](embed-multi-tenancy.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

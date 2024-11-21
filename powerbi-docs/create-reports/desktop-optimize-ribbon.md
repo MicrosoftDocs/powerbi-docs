@@ -92,12 +92,6 @@ To learn more, see [Use Performance analyzer to examine report element performan
 
 If a report page has a number of slicers, consider adding *Apply all slicers* and *Clear all slicers* buttons to the page. These buttons apply all the slicers or clear all the slicers on a page with one click, reducing the number of unnecessary visual queries the slicers send. To learn more, see [Create Apply all and Clear all slicers buttons in Power BI reports](buttons-apply-all-clear-all-slicers.md).
 
-## Video
-
-See the Optimize ribbon features introduction at Microsoft Ignite 2022.  
-
-> [!VIDEO https://www.youtube.com/embed/TopbQfxcPxM]
-
 ## Related content
 
 * [DirectQuery optimization scenarios with the Optimize ribbon](desktop-optimize-ribbon-scenarios.md)  

@@ -1,13 +1,14 @@
 ---
 title: Add bookmark support for Power BI custom visuals
-description: Power BI visuals can handle bookmarks switching
+description: Learn how to add bookmark support to your custom visuals in Power BI so that you can switch between different bookmarked states.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/03/2023
+ms.date: 01/03/2024
+#customer intent: As a custom visuals developer, I want to learn how to add bookmark support to my visuals in Power BI so that I can switch between different bookmarked states.
 ---
 
 # Add bookmark support to visuals in Power BI reports
@@ -24,8 +25,8 @@ If your visual interacts with other visuals, selects data points, or filters oth
 > [!NOTE]
 >> Creating a visual that supports bookmarks requires:
 >
-> - [Powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/) version 3.0.0 or later for filter visuals and any visual that uses `InteractivityService`.
-> - Visual API version 1.11.0 or later for non-filter visuals that use `SelectionManager` instead of `InteractivityService`.
+> - Visual API version 1.11.0 or later for non-filter visuals that use `SelectionManager`.
+> - Visual API version 2.6.0 or later for filter visuals.
 > - To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ## How Power BI visuals interact with Power BI in report bookmarks
@@ -36,7 +37,7 @@ First, select one or more data points in your visual. The visual passes your sel
 
 Do this several times to create new bookmarks. After you create the bookmarks, you can switch between them.
 
-Each time you select a bookmark, Power BI restores the saved filter or selection state and passes it to the visuals. The visuals in the report are highlighted or filtered according to the state that's stored in the bookmark. To do this, your visual must pass the correct selection state to the host (for example, the colors of rendered data points).
+Each time you select a bookmark, Power BI restores the saved filter or selection state and passes it to the visuals. The visuals in the report are highlighted or filtered according to the state stored in the bookmark. To restore the correct state, your visual must pass the correct selection state to the host (for example, the colors of rendered data points).
 
 The new selection state (or filter) is communicated through the `options.jsonFilters` property in the `update` method. The `jsonFilters` can be either [`Advanced Filter`](filter-api.md#the-advanced-filter-api) or [`Tuple Filter`](filter-api.md#the-tuple-filter-api-multi-column-filter).
 
@@ -45,12 +46,15 @@ The new selection state (or filter) is communicated through the `options.jsonFil
 
 ## Visuals with selection
 
+> [!NOTE]
+> InteractivityService has been deprecated.
+
 If your visual interacts with other visuals using [Selection](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmark support in one of two ways:
 
-- Through [InteractivityService](#use-interactivityservice-to-restore-bookmark-selections) to manage selections, use the `applySelectionFromFilter`. This is the easier and preferred method.
-- Through [SelectionManager](#use-selectionmanager-to-restore-bookmark-selections), if your visual doesn't use **InteractivityService**.
+- Through [InteractivityService](#use-interactivityservice-to-restore-bookmark-selections---deprecated) to manage selections, use the `applySelectionFromFilter`. This is deprecated method.
+- Through [SelectionManager](#use-selectionmanager-to-restore-bookmark-selections).
 
-### Use **InteractivityService** to restore bookmark selections
+### Use **InteractivityService** to restore bookmark selections - deprecated
 
 If your visual uses [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts), you don't need any other actions to support the bookmarks in your visual.
 
@@ -58,7 +62,7 @@ When you select a bookmark, the utility automatically handles the visual's selec
 
 ### Use SelectionManager to restore bookmark selections
 
-If you're not using `InteractivityService`, you can save and recall bookmark selections using the `ISelectionManager.registerOnSelectCallback` method as follows:
+You can save and recall bookmark selections using the `ISelectionManager.registerOnSelectCallback` method as follows:
 
 When you select a bookmark, Power BI calls the `callback` method of the visual with the corresponding selections.
 
@@ -103,17 +107,15 @@ this.selectionManager.registerOnSelectCallback(
 );
 ```
 
-After you update the data points, they'll reflect the current selection state that's stored in the `filter` object. Then, when the data points are rendered, the custom visual's selection state will match the state of the bookmark.
+After you update the data points, they'll reflect the current selection state stored in the `filter` object. Then, when the data points are rendered, the custom visual's selection state matches the state of the bookmark.
 
 ## Visuals with a filter
-
-To support bookmarks in visuals that have a filter, use `InteractivityService`.
 
 Let's assume that the visual creates a filter of data by date range. You have `startDate` and `endDate` as the start and end dates of the range.
 
 The visual creates an advanced filter and calls the host method `applyJsonFilter` to filter data by the relevant conditions.
 
-The target is the table that's used for filtering.
+The target is the table used for filtering.
 
 ```typescript
 import { AdvancedFilter } from "powerbi-models";
@@ -177,9 +179,6 @@ if (jsonFilters
 
 After that, the visual changes its internal state to match the current conditions. The internal state includes the data points and visualization objects (lines, rectangles, and so on).
 
-> [!IMPORTANT]
-> In the above report bookmarks scenario, the visual shouldn't call `applyJsonFilter` to filter the other visuals. They will already be filtered by Power BI.
-
 The [Timeline Slicer](../../visuals/desktop-slicer-filter-date-range.md) visual changes the range selector to the corresponding data ranges.
 
 ## Save the filter state of the visual
@@ -194,8 +193,5 @@ To save a property value as a filter state, set the object property as `"filterS
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [What are bookmarks](../../consumer/end-user-bookmarks.md)
-
-> [!div class="nextstepaction"]
-> [Create bookmarks in desktop reports](../../create-reports/desktop-bookmarks.md#create-report-bookmarks)
+- [What are bookmarks](../../consumer/end-user-bookmarks.md)
+- [Create bookmarks in desktop reports](../../create-reports/desktop-bookmarks.md#create-report-bookmarks)

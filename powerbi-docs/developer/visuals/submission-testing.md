@@ -7,7 +7,8 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/09/2023
+ms.date: 06/09/2024
+#customer intent: As a Power BI visual developer, I want to learn how to test my custom visual before submitting it for publication so that it meets the required test cases.
 ---
 
 # Test a Power BI custom visual before submitting it for publication
@@ -44,7 +45,7 @@ To enable Developer mode, follow these steps:
 
 In Power BI service, Developer mode is kept per user account. Whenever a user loads the package from the local file, Power BI will ignore the AppSource version of the visual.
 
-To enable Developer mode in Power BI service, follow the instructions in [Set up Power BI service for developing a visual](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
+To enable Developer mode in Power BI service, follow the instructions in [Set up Power BI service for developing a visual](environment-setup.md#enable-developer-mode).
 
 ## General test cases
 

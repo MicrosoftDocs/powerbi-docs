@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Governance"
 description: "Effectively enforce governance to drive strong and successful adoption of Microsoft Fabric."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
@@ -434,7 +434,7 @@ Governance team structure, roles (including terminology), and responsibilities v
 | Center of Excellence | Mentors the community of creators and consumers to promote the effective use of Fabric for decision-making. Provides cross-departmental coordination of Fabric activities to improve practices, increase consistency, and reduce inefficiencies. For more information, see the [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md) article. |
 | Fabric champions | A subset of content creators found within the business units who help advance the adoption of Fabric. They contribute to data culture growth by advocating the use of best practices and actively assisting colleagues. For more information, see the [Community of practice](fabric-adoption-roadmap-community-of-practice.md) article. |
 | Fabric administrators | Day-to-day-system oversight responsibilities to support the internal processes, tools, and people. Handles monitoring, auditing, and management. For more information, see the [System oversight](fabric-adoption-roadmap-system-oversight.md) article. |
-| Information technology | Provides occasional assistance to Fabric administrators for services related to Fabric, such as Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)), Microsoft 365, Teams, SharePoint, or OneDrive. |
+| Information technology | Provides occasional assistance to Fabric administrators for services related to Fabric, such as Microsoft Entra ID, Microsoft 365, Teams, SharePoint, or OneDrive. |
 | Risk management | Reviews and assesses data sharing and security risks. Defines ethical data policies and standards. Communicates regulatory and legal requirements. |
 | Internal audit | Auditing of compliance with regulatory and internal requirements. |
 | Data steward | Collaborates with governance committee and/or COE to ensure that organizational data has acceptable data quality levels. |

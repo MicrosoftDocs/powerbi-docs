@@ -1,12 +1,13 @@
 ---
 title: Access the Power BI activity log
 description: Guidance and sample PowerShell script code to work with the Power BI activity log.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: sample
+ms.custom: fabric-cat
 ms.date: 04/25/2022
 ---
 
@@ -76,7 +77,7 @@ Connect-PowerBIServiceAccount
 ```
 
 > [!IMPORTANT]
-> Users without Power BI administrator privileges can't run any of the sample scripts that follow in this article. [Power BI administrators](/power-bi/admin/service-admin-role) have permission to manage the Power BI service and to retrieve tenant-wide metadata (such as activity log data). Although using service principal authentication is out of scope for these examples, we strongly recommend that you set up a [service principal](/power-bi/enterprise/read-only-apis-service-principal-authentication) for production-ready, unattended scripts that will run on a schedule.
+> Users without Power BI administrator privileges can't run any of the sample scripts that follow in this article. [Power BI administrators](/power-bi/admin/service-admin-role) have permission to manage the Power BI service and to retrieve tenant-wide metadata (such as activity log data). Although using service principal authentication is out of scope for these examples, we strongly recommend that you set up a [service principal](/fabric/admin/metadata-scanning-enable-read-only-apis) for production-ready, unattended scripts that will run on a schedule.
 >
 > Be sure to sign in before running any of the following scripts.
 
@@ -629,7 +630,7 @@ There are several advantages to using the [Get-PowerBIActivityEvent](/powershell
 
 - The cmdlet allows you to request one day of activity each time you make a call by using the cmdlet. Whereas when you communicate with the API directly, you can only request one hour per API request.
 - The cmdlet handles continuation tokens for you. If you use the API directly, you need to check the continuation token to determine whether there are any more results to come. Some APIs need to use pagination and continuation tokens for performance reasons when they return a large amount of data. They return the first set of records, then with a continuation token you can make a subsequent API call to retrieve the next set of records. You continue calling the API until a continuation token isn't returned. Using the continuation token is a way to consolidate multiple API requests so that you can consolidate a logical set of results. For an example of using a continuation token, see [Activity Events REST API](/rest/api/power-bi/admin/get-activity-events#get-the-next-set-of-audit-activity-events-by-sending-the-continuation-token-to-the-api-example).
-- The cmdlet handles Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) access token expirations for you. After you've authenticated, your access token expires after one hour (by default). In this case, the cmdlet automatically requests a refresh token for you. If you communicate with the API directly, you need to request a refresh token.
+- The cmdlet handles Microsoft Entra ID access token expirations for you. After you've authenticated, your access token expires after one hour (by default). In this case, the cmdlet automatically requests a refresh token for you. If you communicate with the API directly, you need to request a refresh token.
 
 For more information, see [Choose APIs or PowerShell cmdlets](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#choose-apis-or-powershell-cmdlets).
 

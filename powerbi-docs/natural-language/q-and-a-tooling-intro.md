@@ -7,6 +7,8 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 11/02/2023
+no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 # Intro to Q&A tooling to train Power BI Q&A (preview)
 

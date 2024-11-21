@@ -10,7 +10,7 @@ ms.date: 07/19/2023
 ---
 # Plan translation for multiple-language reports in Power BI
 
-When it comes to localizing Power BI items, such as semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)) and reports, there are three types of translations.
+When it comes to localizing Power BI items, such as semantic models and reports, there are three types of translations.
 
 - Metadata translation
 - Report label translation
@@ -47,8 +47,6 @@ A metadata translation represents the property for a semantic model object that'
 In addition to the **Caption** property, which tracks an object's display name, semantic model objects also support adding metadata translations for two other properties, which are **Description** and **DisplayFolder**.
 
 When you begin designing a semantic model that uses metadata translation, you can assume that you always need translations for the **Caption** property. If you require support for metadata translation for report authors who create and edit reports in the Power BI service, you also need to provide metadata translations for the **Description** and **DisplayFolder** properties.
-
-Power BI reports and semantic models that support metadata translation can only run in workspaces that are associated with a dedicated capacity created using Power BI Premium or the Power BI Embedded Service. Multiple-language reports don't load correctly when launched from a workspace in the shared capacity. If you're working in a Power BI workspace that doesn't display a diamond that indicates a Premium workspace, multiple-language reports might not work as expected.
 
 Power BI support for metadata translations only applies to semantic models. Power BI Desktop and the Power BI service don't support storing or loading translations for text values stored as part of the report layout.
 

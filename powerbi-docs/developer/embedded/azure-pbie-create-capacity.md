@@ -8,7 +8,7 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 07/13/2022
+ms.date: 08/02/2024
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -50,12 +50,12 @@ Before creating a Power BI Embedded capacity, make sure you're signed into Power
     * **Subscription** - The subscription you would like to create the capacity against.
 
     * **Resource group** - The resource group that contains this new capacity. Pick from an existing resource group, or create another. For more information, see [Azure Resource Manager overview](/azure/azure-resource-manager/resource-group-overview).
-
-    * **Resource name** - The resource name of the capacity.
+      
+    * **Resource name** - The resource name of the capacity. Please note that capacity name must be unique within the same region and must start with a letter and have 3 to 63 lowercase letters or numbers.
 
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
 
-    * **Size** - The [A SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
+    * **Size** - The [A SKU](./embedded-capacity.md) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md#sku-computing-power).
 
     * **Power BI capacity administrator** - An admin for the capacity.
         >[!NOTE]
@@ -234,7 +234,7 @@ Use this template to create a Power BI Embedded resource.
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](./embedded-multi-geo.md
 ).
 
-    * **SKU** - The [A SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
+    * **SKU** - The [A SKU](./embedded-capacity.md) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md#sku-computing-power).
 
     * **Admin** - An admin for the capacity.
         >[!NOTE]

@@ -49,7 +49,7 @@ To test paginated reports on different capacities, we executed three different t
 
 Our analysis for Power BI Premium shows that the number of concurrent users at any given time, including daily peak times, doesn't tend to exceed five percent of the total user base.  
 
-Based on the five percent concurrency ratio, the following table describes the approximate maximum number of users that a SKU can handle, before it's [overloaded](./../enterprise/service-premium-smoothing.md#how-to-detect-overload). When your capacity is overloaded, throttling will occur on your capacity. For more information, see [What happens to traffic during overload if I don't autoscale?](./../enterprise/service-premium-faq.yml#what-happens-to-traffic-during-overload-if-i-don-t-autoscale-)
+Based on the five percent concurrency ratio, the following table describes the approximate maximum number of users that a SKU can handle, before it's [overloaded](/fabric/enterprise/throttling#track-overages-and-rejected-operations). When your capacity is overloaded, throttling will occur on your capacity. For more information, see [What happens to traffic during overload if I don't autoscale?](./../enterprise/service-premium-faq.yml#what-happens-to-traffic-during-overload-if-i-don-t-autoscale-)
 
 | Workload   | F64 or P1 SKUs | F128 or P2 SKUs |
 |------------|----------------|-----------------|
@@ -91,9 +91,9 @@ Run the report several times, and use the metrics app to get the average CPU sec
 
 ### Calculate the max report renders
 
-Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](./../enterprise/service-premium-smoothing.md#how-to-detect-overload).
+Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](/fabric/enterprise/throttling#track-overages-and-rejected-operations). To learn more about Capacity Units (CU), SKU and Power BI v-cores, refer to [capacity concepts](/fabric/enterprise/licenses#capacity). 
 
-$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time (in seconds)}} $
+$ \text {max concurrent report renders} = {\text {capacity units for your capacity} \times {3.75} \over \text {your report's CPU processing time (in seconds)} } $
 
 ### Calculate the max number of users
 
@@ -107,7 +107,7 @@ You can use an extended formula to estimate the capacity needed for different re
 
 Upload several paginated reports with different number of daily renders, and use the metrics app to get the average CPU processing time for each one. The sum of all your report renders per day should be equal to 100%. When you have all the information, use this formula.
 
-$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over {\text {A renders} \times \text {A processing time}} + \text {B renders} \times \text {B processing time} + \text {...} + \text{N renders} \times \text{N processing time}}$
+$ \text {max concurrent report renders} = {\text {capacity units for your capacity} \times {3.75} \over {\text {A renders} \times \text {A processing time}} + \text {B renders} \times \text {B processing time} + \text {...} + \text{N renders} \times \text{N processing time}}$
 
 ## Examples
 
@@ -148,8 +148,8 @@ The formulas for an *F64* or a *P1* SKU will be:
 
 * [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 
-* [Performance smoothing](./../enterprise/service-premium-smoothing.md)
+* [Performance smoothing](/fabric/enterprise/throttling)
 
-* Using Autoscale with Power BI Premium](./../enterprise/service-premium-auto-scale.md)
+* [Using Autoscale with Power BI Premium](./../enterprise/service-premium-auto-scale.md)
 
 

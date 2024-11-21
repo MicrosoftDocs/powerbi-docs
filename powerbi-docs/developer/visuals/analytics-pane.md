@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 01/13/2024
+#customer intent: As a developer, I want to learn how to manage the Analytics pane in Power BI visuals so that I can create dynamic reference lines, like min, max, or average, in my visuals.
 ---
 
 # The Analytics pane in Power BI visuals

@@ -1,12 +1,13 @@
 ---
 title: "Power BI implementation planning: BI strategic planning"
 description: "This article helps you to define your business intelligence focus areas and objectives through strategic planning."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 01/24/2024
 ---
 

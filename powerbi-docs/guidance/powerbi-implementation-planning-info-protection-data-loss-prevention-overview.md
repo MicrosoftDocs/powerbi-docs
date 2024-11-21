@@ -1,12 +1,13 @@
 ---
 title: "Power BI implementation planning: Information protection and data loss prevention"
 description: "An introduction to the information protection and data loss prevention for Power BI articles."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 09/29/2023
 ---
 
@@ -76,7 +77,7 @@ Organizations commonly have external or internal requirements for classifying an
 Once you assign a sensitivity label to content in Power BI, you're able to gain knowledge and insight about:
 
 - Whether sensitive data is contained in a Power BI workspace.
-- Whether a particular Power BI item, like a semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md), is considered confidential.
+- Whether a particular Power BI item, like a semantic model, is considered confidential.
 - Who can access Power BI items that are considered sensitive.
 - Who has accessed sensitive data in the Power BI service.
 
@@ -102,10 +103,12 @@ The ability to detect where sensitive data is stored is another important aspect
 
 When a dataset has been published to the Power BI service and it's in a Premium workspace, you can use DLP for Power BI to detect the existence of certain sensitive information types within it. This capability is helpful to find sensitive data (such as financial data or personal data) that are stored in Power BI semantic models.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 This type of DLP policy for Power BI allows security administrators to monitor and detect when unauthorized sensitive data is uploaded to the Power BI service. They can depend on alerts to act quickly. Policy tips are also used to guide content creators and owners on how to properly handle sensitive data. For more information about DLP for Power BI, see [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention.md).
 
 > [!TIP]
-> Having properly classified data allows you to correlate, analyze, and report on it. In most cases, you'll need to correlate data from multiple sources to form a complete understanding. You can capture data by using tools like the [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) and the [Power BI activity log](/power-bi/enterprise/service-admin-auditing). For more information about these topics, as well as audit logs in the Microsoft Purview compliance portal, see [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md).
+> Having properly classified data allows you to correlate, analyze, and report on it. In most cases, you'll need to correlate data from multiple sources to form a complete understanding. You can capture data by using tools like the [Power BI scanner APIs](/fabric/governance/metadata-scanning-overview) and the [Power BI activity log](/power-bi/enterprise/service-admin-auditing). For more information about these topics, as well as audit logs in the Microsoft Purview compliance portal, see [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md).
 
 ### Use data encryption
 

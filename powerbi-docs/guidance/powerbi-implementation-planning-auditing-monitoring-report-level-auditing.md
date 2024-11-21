@@ -1,12 +1,13 @@
 ---
 title: "Power BI implementation planning: Report-level auditing"
 description: "Learn about report-level auditing planning for Power BI."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 04/25/2023
 ---
 
@@ -22,7 +23,7 @@ This report-level auditing article is targeted at multiple audiences:
 
 The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](fabric-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions might find the information in this article useful as well; however, they're not the primary target.
 
-This article focuses on auditing and monitoring of reports and visuals. However, achieving good performance for a report and its visuals isn't possible when the underlying semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) and/or data source doesn't perform well. For information about auditing and monitoring of semantic models, dataflows, and datamarts, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
+This article focuses on auditing and monitoring of reports and visuals. However, achieving good performance for a report and its visuals isn't possible when the underlying semantic model and/or data source doesn't perform well. For information about auditing and monitoring of semantic models, dataflows, and datamarts, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
 
 This article is the first article in the auditing and monitoring series because it describes built-in tools that content creators are likely to discover first. Ideally, you create shared semantic models (intended for reuse among many reports) before users create reports. Therefore, we recommend that you read this article together with the [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md) article.
 
@@ -134,7 +135,9 @@ Summarized information is available in the **Performance Analyzer** pane. You ca
 > - Whether [query caching](/power-bi/connect-data/power-bi-query-caching) is enabled
 > - Whether [query parallelization](https://powerbi.microsoft.com/blog/query-parallelization-helps-to-boost-power-bi-dataset-performance-in-directquery-mode/) is used
 > - The number of [active connections](/power-bi/connect-data/desktop-directquery-about#maximum-number-of-connections-option-for-directquery)
-> - Whether [row-level security](/power-bi/enterprise/service-admin-rls) (RLS) is enforced by the Power BI service.
+> - Whether [row-level security](/fabric/security/service-admin-row-level-security) (RLS) is enforced by the Power BI service.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 Data is logged when a user interacts with a report element. Logged data includes more than the visual display elements. It also includes:
 

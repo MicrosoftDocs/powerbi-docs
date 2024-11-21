@@ -1,12 +1,13 @@
 ---
 title: Create content to migrate to Power BI
 description: Guidance on creating and validating content when migrating to Power BI.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 08/20/2020
 ---
 
@@ -35,7 +36,7 @@ At this juncture, the same person who performed the POC might carry on with prod
 
 ### Develop new Import semantic model
 
-You might choose to create a new Import semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) when an existing Power BI semantic model doesn't already exist to meet your needs, or if it can't be enhanced to meet your needs.
+You might choose to create a new Import semantic model when an existing Power BI semantic model doesn't already exist to meet your needs, or if it can't be enhanced to meet your needs.
 
 Ideally, from the very beginning, consider decoupling the development work for data and reports. [Decoupling data and reports](report-separate-from-model.md) will facilitate the separation of work, and permissions, when different people are responsible for data modeling and reports. It makes for a more scalable approach and encourages data reusability.
 
@@ -46,7 +47,7 @@ The essential activities related to development of an Import semantic model incl
 - Create the [semantic model](../transform-model/desktop-modeling-view.md), including [date tables](../transform-model/desktop-date-tables.md).
 - Create and verify [model relationships](../transform-model/desktop-create-and-manage-relationships.md).
 - Define [measures](../transform-model/desktop-measures.md).
-- Set up [row-level security](../enterprise/service-admin-rls.md), if necessary.
+- Set up [row-level security](/fabric/security/service-admin-row-level-security), if necessary.
 - Configure synonyms and [optimize Q&A](../natural-language/q-and-a-best-practices.md).
 - Plan for scalability, performance, and concurrency, which might influence your decisions about data storage modes, such as using a [Composite model](../transform-model/desktop-composite-models.md) or [aggregations](../enterprise/aggregations-auto.md).
 
@@ -91,7 +92,7 @@ When validating security, there are two primary aspects to consider:
 - Data permissions
 - Access to semantic models, reports, and dashboards
 
-In an Import semantic model, data permissions are applied by defining [row-level security](../enterprise/service-admin-rls.md) (RLS). It's also possible that data permissions are enforced by the source system when using DirectQuery storage mode (possibly with [single sign-on](../connect-data/service-gateway-sso-overview.md)).
+In an Import semantic model, data permissions are applied by defining [row-level security](/fabric/security/service-admin-row-level-security) (RLS). It's also possible that data permissions are enforced by the source system when using DirectQuery storage mode (possibly with [single sign-on](../connect-data/service-gateway-sso-overview.md)).
 
 The main ways to grant access to Power BI content are:
 
@@ -113,6 +114,8 @@ During the development process, the Power BI solution should be published to a d
 Performance of the Power BI solution is important for consumer experience. Most reports should present visuals in under 10 seconds. If you have reports that take longer to load, pause and reconsider what might be contributing to delays. Report performance should be assessed regularly in the Power BI service, in addition to Power BI Desktop.
 
 Many performance issues arise from substandard [DAX (Data Analysis eXpressions)](../transform-model/desktop-quickstart-learn-dax-basics.md), poor semantic model design, or suboptimal report design (for instance, trying to render too many visuals on a single page). Technical environment issues, such as the network, an overloaded data gateway, or how a Premium capacity is configured can also contribute to performance issues. For more information, see the [Optimization guide for Power BI](power-bi-optimization.md) and [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Document the solution
 

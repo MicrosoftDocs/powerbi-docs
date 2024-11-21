@@ -2,12 +2,12 @@
 title: "Microsoft Fabric adoption roadmap"
 description: "The overview of the Microsoft Fabric adoption roadmap series of articles."
 author: peter-myers
-ms.author: v-myerspeter
-ms.reviewer: maroche
+ms.author: v-pemyers
+ms.reviewer: daengli
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 11/10/2024
 ---
 
 # Microsoft Fabric adoption roadmap
@@ -131,4 +131,4 @@ Experienced partners are available to help your organization succeed with adopti
 
 ## Acknowledgments
 
-The Microsoft Fabric adoption roadmap articles are written by Melissa Coates, Kurt Buhler, and Peter Myers. Matthew Roche, from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts. Reviewers include Cory Moore, James Ward, Timothy Bindas, Greg Moir, and Chuy Varela.
+The Microsoft Fabric adoption roadmap articles are written by [Melissa Coates](https://www.linkedin.com/in/melissacoatesprofile), [Kurt Buhler](https://www.linkedin.com/in/kurtbuhler), and [Peter Myers](https://www.linkedin.com/in/peterjsmyers). [Matthew Roche](https://www.linkedin.com/in/matthewroche), from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts. Reviewers include [Cory Moore](http://linkedin.com/in/coryamoore), James Ward, [Timothy Bindas](https://www.linkedin.com/in/tbindas/), [Greg Moir](https://www.linkedin.com/in/greg-moir-2a44b71a/), and [Chuy Varela](https://www.linkedin.com/in/chuy-varela-3b1a55b/).

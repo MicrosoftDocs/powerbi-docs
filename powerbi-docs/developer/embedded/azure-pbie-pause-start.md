@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 01/08/2022
+ms.date: 07/18/2024
 ---
 
 # Pause and start your Power BI Embedded capacity in the Azure portal
@@ -78,10 +78,7 @@ You can also start or pause your capacity from the command line using:
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Scale your Power BI Embedded capacity](azure-pbie-scale-capacity.md).
-
->[!div class="nextstepaction"]
->[How to embed your Power BI dashboards, reports and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
+* [Scale your Power BI Embedded capacity](azure-pbie-scale-capacity.md).
+* [How to embed your Power BI dashboards, reports and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

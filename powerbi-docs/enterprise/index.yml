@@ -31,9 +31,9 @@ landingContent:
           - text: Power BI Premium features
             url: service-premium-features.md           
       - linkListType: concept
-        links:            
+        links:
           - text: Power BI Premium architecture
-            url: service-premium-architecture.md
+            url: /fabric/security/security-fundamentals            
           - text: Managing Premium capacities
             url: service-premium-capacity-manage.md           
           - text: Power BI for US government
@@ -56,7 +56,7 @@ landingContent:
           - text: Sensitivity labels
             url: service-security-sensitivity-label-overview.md                  
           - text: Microsoft Defender for Cloud Apps
-            url: service-security-using-defender-for-cloud-apps-controls.md           
+            url: /fabric/governance/service-security-using-defender-for-cloud-apps-controls           
       - linkListType: how-to-guide
         links:            
           - text: Enable sensitivity labels
@@ -76,13 +76,13 @@ landingContent:
           - text: Power BI Desktop privacy levels
             url: desktop-privacy-levels.md 
           - text: Row-level security (RLS)
-            url: service-admin-rls.md                       
+            url: /fabric/security/service-admin-row-level-security                       
       - linkListType: how-to-guide
         links:                    
           - text: Use service tags
             url: service-premium-service-tags.md
-          - text: Private endpoints with Power BI
-            url: service-security-private-links.md
+          - text: Private endpoints
+            url: /fabric/security/security-private-links-overview
           - text: Bring your own encryption keys
             url: service-encryption-byok.md
 
@@ -91,7 +91,5 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Service principal authentication for read-only admin APIs
-            url: read-only-apis-service-principal-authentication.md
           - text: PowerShell cmdlets, REST APIs, and .NET Client library
             url: service-admin-reference.md          

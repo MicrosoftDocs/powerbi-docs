@@ -7,23 +7,26 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 07/15/2024
 LocalizationGroup: Share your work
 ---
 # Create reports based on semantic models from different workspaces
 
-Learn how you can create reports in your own workspaces based on semantic models in other workspaces. To build a report on top of an existing semantic model, you can start from Power BI Desktop or from the Power BI service, in your **My workspace** or in [another workspace](../collaborate-share/service-create-the-new-workspaces.md).
+This article describes how you can create reports in your own workspaces based on semantic models in other workspaces.
+
+> [!NOTE]
+> If you're building your report on multiple data sources, see also [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
+
+To build a report on top of an existing semantic model, you can start from Power BI Desktop or from the Power BI service, in your **My workspace** or in [another workspace](../collaborate-share/service-create-the-new-workspaces.md).
 
 - In the Power BI service: **Create** > **Report** > **Pick a published semantic model**.
 - In Power BI Desktop: from the **Home** ribbon, select **Get data** > **Power BI semantic models**.
-
-  ![Screenshot shows how to connect to an existing semantic model in the Power BI service and Power BI Desktop.](media/service-semantic models-across-workspaces/power-bi-connect-semantic model-pk.png)
 
 In both cases, the semantic model discovery experience starts in the **Data hub**. You see all the semantic models that you have access to, regardless of where they are:
 
 :::image type="content" source="media/service-datasets-across-workspaces/power-bi-select-dataset.png" alt-text="Screenshot shows an option to select a semantic model." lightbox="media/service-datasets-across-workspaces/power-bi-select-dataset.png":::
 
-One of the semantic models is labeled **Promoted**. Learn about that label in [Find an endorsed semantic model](#find-an-endorsed-semantic model), later in this article.
+One of the semantic models is labeled **Promoted**. Learn about that label in the section [Find an endorsed semantic model](#find-an-endorsed-semantic-model), later in this article.
 
 The semantic models in this list meet at least one of the following conditions:
 
@@ -56,4 +59,5 @@ There are two different kinds of endorsed semantic models. Semantic model owners
 ## Related content
 
 - [Use semantic models across workspaces](service-datasets-across-workspaces.md)
+- [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Mentoring and user enablement"
 description: "Mentor users to drive strong and successful adoption of Microsoft Fabric."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
@@ -87,7 +87,7 @@ Here are some examples of when a best practices review could be beneficial.
 - The finance team would like to [assign a workspace to a capacity](/power-bi/enterprise/service-admin-premium-manage#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices are followed. This type of review is common when the capacity is shared among multiple business units. (A review might not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new Fabric solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 
-A best practices review is most often focused on the semantic model ([previously known as a dataset](/power-bi/connect-data/service-datasets-rename)) design, though the review can encompass all types of data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or semantic model). The review can also encompass reporting items (such as reports, dashboards, or metrics).
+A best practices review is most often focused on the semantic model design, though the review can encompass all types of data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or semantic model). The review can also encompass reporting items (such as reports, dashboards, or metrics).
 
 Before content is deployed, a best practices review can be used to verify other design decisions, like:
 

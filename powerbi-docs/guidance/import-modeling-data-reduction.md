@@ -1,12 +1,13 @@
 ---
 title: Data reduction techniques for Import modeling
 description: Understand different techniques to help reduce the data loaded into Import models.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: denglishbi
+ms.author: daengli
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/10/2023
 ---
 
@@ -18,10 +19,12 @@ Import models are loaded with data that is compressed and optimized and then sto
 
 Despite the efficiencies achieved by the VertiPaq storage engine, it's important that you strive to minimize the data that is to be loaded into your models. It's especially true for large models, or models that you anticipate will grow to become large over time. Four compelling reasons include:
 
-- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host larger models depending on the SKU. For further information, read the [Power BI Premium support for large semantic models](../enterprise/service-premium-what-is.md) article. (Semantic models were [previously known as datasets](../connect-data/service-datasets-rename.md).)
+- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host larger models depending on the SKU. For further information, read the [Power BI Premium support for large semantic models](../enterprise/service-premium-what-is.md) article.
 - Smaller model sizes reduce contention for capacity resources, in particular memory. It allows more models to be concurrently loaded for longer periods of time, resulting in lower eviction rates.
 - Smaller models achieve faster data refresh, resulting in lower latency reporting, higher semantic model refresh throughput, and less pressure on source system and capacity resources.
 - Smaller table row counts can result in faster calculation evaluations, which can deliver better overall query performance.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 There are eight different data reduction techniques covered in this article. These techniques include:
 

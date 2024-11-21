@@ -1,12 +1,13 @@
 ---
 title: "Power BI implementation planning: BI strategy overview"
 description: "This article introduces the Power BI strategy planning articles."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 01/24/2024
 ---
 

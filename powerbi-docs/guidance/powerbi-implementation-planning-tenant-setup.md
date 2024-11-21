@@ -1,12 +1,13 @@
 ---
 title: "Power BI implementation planning: Tenant setup"
 description: "This article introduces important aspects to know about setting up your Fabric tenant for Power BI."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/24/2023
 ---
 
@@ -17,7 +18,7 @@ ms.date: 11/24/2023
 This tenant setup article introduces important aspects to know about setting up your Fabric tenant, with an emphasis on the Power BI experience. It's targeted at multiple audiences:
 
 - **Fabric administrators:** The administrators who are responsible for overseeing Fabric in the organization.
-- **Microsoft Entra administrators:** The team that's responsible for overseeing and managing Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)).
+- **Microsoft Entra administrators:** The team that's responsible for overseeing and managing Microsoft Entra ID.
 
 Fabric is part of a larger Microsoft ecosystem. If your organization is already using other cloud subscription services, such as Azure, Microsoft 365, or Dynamics 365, then Fabric operates within the same Microsoft Entra _tenant_. Your organizational domain (for example, _contoso.com_) is associated with Microsoft Entra ID. Like all Microsoft cloud services, your [Fabric tenant](/fabric/enterprise/licenses#tenant) relies on your organization's Microsoft Entra ID for identity and access management.
 
@@ -33,7 +34,8 @@ Most organizations have one Microsoft Entra tenant, so it's commonly true that a
 Usually, Microsoft Entra ID is set up before a Fabric implementation begins. However, sometimes it's when you provision a cloud service that you become aware of the importance of Microsoft Entra ID.
 
 > [!TIP]
-> Because most organizations have one Microsoft Entra tenant, it can be challenging to explore new features in an isolated way. For non-production testing purposes, consider using a free [Microsoft 365 E5 instant sandbox](https://developer.microsoft.com/microsoft-365/dev-program). It's available through the [Microsoft 365 Developer Program](/office/developer-program/microsoft-365-developer-program-faq).
+> Because most organizations have one Microsoft Entra tenant, it can be challenging to explore new features in an isolated way. You might qualify for a non-production developer tenant through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
+
 
 ### Unmanaged tenant
 
@@ -76,11 +78,11 @@ Fabric administrators periodically need to work with the Microsoft Entra adminis
 
 The following list includes some common reasons for collaboration between Fabric administrators and Microsoft Entra administrators.
 
-- **Security groups:** You'll need to create new [security groups](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) to properly manage the Fabric tenant settings. You might also need new groups to secure workspace content or for distributing content.
+- **Security groups:** You'll need to create new [security groups](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) to properly manage the Fabric tenant settings. You might also need new groups to secure workspace content or for distributing content.
 - **Security group ownership:** You might want to assign a [group owner](/azure/active-directory/fundamentals/active-directory-accessmanagement-managing-group-owners) to allow more flexibility in who can manage a security group. For example, it could be more efficient to permit the Center of Excellence (COE) to manage the memberships of certain Fabric-specific groups.
 - **Service principals:** You might need to create a Microsoft Entra app registration to provision a service principal. Authenticating with a service principal is a recommended practice when a Fabric administrator wants to run unattended, scheduled scripts that extract data by using the [admin APIs](/rest/api/power-bi/admin), or when [embedding content](/power-bi/developer/embedded/embed-service-principal) in an application.
 - **External users:** You'll need to understand how the settings for [external (guest) users](/azure/active-directory/external-identities/external-identities-overview) are set up in Microsoft Entra ID. There are several Fabric [tenant settings](/power-bi/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-access-power-bi) related to external users, and they rely on how Microsoft Entra ID is set up. Also, certain security capabilities for the Power BI workload only work when using the [planned invitation](/power-bi/enterprise/service-admin-azure-ad-b2b#planned-invites) approach for external users in Microsoft Entra ID.
-- **Real-time control policies:** You can choose to set up [real-time session control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a Power BI report when it has a specific sensitivity label.
+- **Real-time control policies:** You can choose to set up [real-time session control policies](/fabric/governance/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a Power BI report when it has a specific sensitivity label.
 
 For more information, see [Collaborate with other administrators](powerbi-implementation-planning-tenant-administration.md#collaborate-with-other-administrators).
 

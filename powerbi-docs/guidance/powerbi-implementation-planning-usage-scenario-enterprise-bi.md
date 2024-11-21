@@ -1,12 +1,13 @@
 ---
 title: "Power BI usage scenarios: Enterprise BI"
 description: "Learn how Power BI enterprise BI is about organization-wide content distribution at scale."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/17/2022
 ---
 
@@ -16,14 +17,16 @@ ms.date: 11/17/2022
 
 As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-delivery-scope.md#enterprise), *enterprise BI* is characterized by having a significantly larger number of content consumers, compared to a much smaller number of authors who create and publish content.
 
-The distinction between the enterprise BI and the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenarios is the use of [Power BI Premium capacity](../enterprise/service-premium-what-is.md), which allows content to be widely [distributed to consumers](../fundamentals/service-features-license-type.md) who have a Fabric free license. Consumers can include users within the organization, as well as [guest users](whitepaper-azure-b2b-power-bi.md) who are external to the organization.
+The distinction between the enterprise BI and the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenarios is the use of [Microsoft Fabric capacity](/fabric/enterprise/licenses#capacity-license) or [Power BI Premium capacity](../enterprise/service-premium-what-is.md), which allow content to be widely [distributed to consumers](../fundamentals/service-features-license-type.md) who have a Fabric free license. Consumers can include users within the organization, as well as [guest users](whitepaper-azure-b2b-power-bi.md) who are external to the organization.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 Large enterprise BI implementations often employ a centralized approach. Enterprise Power BI content is commonly maintained by a centralized team, for use broadly throughout the organization. The centralized team responsible for content management is usually IT, BI, or the [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md).
 
 > [!NOTE]
 > There are four *content collaboration and delivery* usage scenarios that build upon each other. The enterprise BI scenario is the fourth scenario. A list of all scenarios can be found in the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
 >
-> The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario introduces an important concept about decoupling semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) and report development. For simplicity, this concept isn't explicitly discussed in this article. You're encouraged to apply the concepts discussed in the managed self-service BI scenario whenever possible.
+> The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario introduces an important concept about decoupling semantic model and report development. For simplicity, this concept isn't explicitly discussed in this article. You're encouraged to apply the concepts discussed in the managed self-service BI scenario whenever possible.
 
 ## Scenario diagram
 

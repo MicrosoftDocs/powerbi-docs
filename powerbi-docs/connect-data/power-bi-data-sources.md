@@ -6,11 +6,14 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: conceptual
-ms.date: 06/09/2023
+ms.topic: concept-article
+ms.date: 08/28/2024
+#customer intent: As a Power BI user, I want to understand the data sources supported by Power BI and their capabilities so that I can effectively connect and analyze my data.
 ---
 
 # Power BI data sources
+
+This article provides general information on Power BI data sources including considerations, limitations, and links to additional resources.
 
 Power BI uses Power Query to connect to data sources. **Power BI data sources** are documented in the following article: [Power Query (including Power BI) connectors](/power-query/connectors/).
 
@@ -18,18 +21,15 @@ Each data source article in the Power Query documentation describes the capabili
 
 :::image type="content" source="media/power-bi-data-sources/power-bi-data-sources-01.png" alt-text="Screenshot showing DirectQuery as a capability of a data connector.":::
 
+For a list of the connectors available in Power Query, see [Connectors in Power Query](/power-query/connectors/).
 
-For a list of the connectors available in Power Query, see [connectors in Power Query](/power-query/connectors/).
-
-For information about dataflows in Power BI, see [connect to data sources for Power BI dataflows](../transform-model/dataflows/dataflows-configure-consume.md).
-
+For information about dataflows in Power BI, see [Configure and consume a dataflow](../transform-model/dataflows/dataflows-configure-consume.md).
 
 ## Considerations and limitations
 
 - Many data connectors for Power BI Desktop require Internet Explorer 10 (or newer) for authentication. 
 - Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
-- Power BI Desktop and the Power BI service may send multiple queries for any given query, to get schema information or the data itself, based in part on whether data is cached. This behavior is by design, for more information, see the Power Query article that describes [why a query may run multiple times](/power-query/multiple-queries).
-
+- Power BI Desktop and the Power BI service might send multiple queries for any given query, to get schema information or the data itself, based in part on whether data is cached. This behavior is by design. For more information, see the Power Query article that describes [why a query might run multiple times](/power-query/multiple-queries).
 
 ## Related content
 

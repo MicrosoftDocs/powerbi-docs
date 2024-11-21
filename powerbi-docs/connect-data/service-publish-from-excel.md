@@ -7,11 +7,13 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 07/19/2024
 LocalizationGroup: Data from files
 ---
 # Publish to Power BI from Microsoft Excel
 > [!IMPORTANT]
+> Publish to Power BI will be deprecated from Excel in Microsoft 365 starting August 19th, 2024, and Publish to Power BI will not be included in the Excel 2024 perpetual release. This doesn't impact prior versions of on-premises Office.
+> 
 > The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
 > - Upload of local workbooks to Power BI workspaces will no longer be allowed.
 > - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.

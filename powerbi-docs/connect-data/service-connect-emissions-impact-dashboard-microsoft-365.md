@@ -8,6 +8,7 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/19/2023
 LocalizationGroup: Connect to services
+no-loc: [Copilot]
 ---
 
 # Connect to the Emissions Impact Dashboard for Microsoft 365

@@ -1,20 +1,23 @@
 ---
 title: Troubleshoot report performance in Power BI
 description: Troubleshooting guide to diagnose slow report performance in Power BI.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: troubleshooting
-ms.date: 03/17/2022
+ms.custom: fabric-cat
+ms.date: 04/16/2024
 ---
 
 # Troubleshoot report performance in Power BI
 
 This article provides guidance that enables developers and administrators to troubleshoot slow report performance. It applies to Power BI reports, and also Power BI paginated reports.
 
-Slow reports can be identified by report users who experience reports that are slow to load, or slow to update when interacting with slicers or other features. When reports are hosted on a Premium capacity, slow reports can also be identified by monitoring the [Power BI Premium Metrics app](/power-bi/enterprise/service-premium-metrics-app). This app helps you to monitor the health and capacity of your Power BI Premium subscription.
+Slow reports can be identified by report users who experience reports that are slow to load, or slow to update when interacting with slicers or other features. When reports are hosted on a Premium capacity or [Fabric capacity](/fabric/enterprise/licenses), slow reports can also be identified by monitoring the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). This app helps you to monitor the health and capacity of your Power BI Premium subscription.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Follow flowchart steps
 
@@ -47,7 +50,7 @@ When the report is hosted on shared capacity, it's not possible to monitor capac
 
 First, determine if slow performance occurs at specific times of the day or month. If it does—and many users are opening the report at these times—consider two options:
 
-- Increase query throughput by migrating the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) to [Azure Analysis Services](/azure/analysis-services/analysis-services-overview), or a Premium capacity (flowchart terminator 4).
+- Increase query throughput by migrating the semantic model to [Azure Analysis Services](/azure/analysis-services/analysis-services-overview), or a Premium capacity (flowchart terminator 4).
 - Use Power BI Desktop [Performance Analyzer](../create-reports/desktop-performance-analyzer.md) to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues (flowchart terminator 5).
 
 If you determine there's no time pattern, next consider if slow performance is isolated to a specific geography or region. If it is, it's likely that the data source is remote and there's slow network communication. In this case, consider:

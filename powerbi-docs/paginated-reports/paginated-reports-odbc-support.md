@@ -7,7 +7,7 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 09/27/2023
+ms.date: 09/28/2023
 ---
 
 # Power BI gateway and Report Builder support for ODBC data sources
@@ -60,11 +60,6 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
     - Basic
     - Windows
 
-    >[!NOTE]
-    >The Anonymous authentication method isn't supported. You can select it for an ODBC data source, but you receive an "Unexpected error occurred" like the following one when rendering the report:
-
-    :::image type="content" source="media/paginated-reports-odbc-support/anonymous-error.png" alt-text="Screenshot of error message that says anonymous authentication isn't supported.":::
-
 1. When you select the **Add** button, the Power BI service connects to the ODBC data source using the supplied connection string and credentials to validate that the gateway is able to connect.
 
 ### ODBC connection string examples
@@ -82,11 +77,11 @@ In addition to creating ODBC data sources in the gateway up front, you can creat
 
 :::image type="content" source="media/paginated-reports-odbc-support/gateway-binding.png" alt-text="Screenshot of Create data source prompt.":::
 
-## Known issues
+## Limitations and considerations
 
 In general, all the limitations that apply to using the ODBC data extension in Power BI Report Builder apply to using the ODBC data extensions in the Power BI gateway as well.
 
-Here are some of the known limitations:
+Here are some of the limitations:
 
 - For most ODBC drivers, DateTime parameters require changes to the Command text in the RDL dataset to cast a DateTime parameter value to the appropriate format for a given ODBC data source.  
 
@@ -96,7 +91,7 @@ Here are some of the known limitations:
     >[!NOTE]
     >Some data sources might require specific formatting. You can use an expression to format the parameter in the preceding example. For example, `=Format(Parameters!Date.Value, "yyyy-MM-dd")`.
 
-- For some ODBC drivers, there's a behavior difference between the gateway and Power BI Report Builder. This may apply to all, some, or just one driver. One known example is that the *Simba-BigQuery* query requires casting of the parameter if it's not a string type. 
+- For some ODBC drivers, there's a behavior difference between the gateway and Power BI Report Builder. This may apply to all, some, or just one driver. One example is that the *Simba-BigQuery* query requires casting of the parameter if it's not a string type. 
 
    Example error string: "A data source used by this report returned an error. An exception encountered while accessing the target data source ERROR [42000] [Simba][BigQuery] (70) Invalid query: No matching signature for operator = for argument types: INT64, STRING. Supported signature: ANY = ANY at [2:7]"
 

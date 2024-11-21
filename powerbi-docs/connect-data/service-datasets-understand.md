@@ -6,8 +6,10 @@ ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: conceptual
-ms.date: 11/10/2023
+ms.topic: concept-article
+ms.custom: fabric-cat
+ms.date: 08/28/2024
+#customer intent: As a Power BI user, I want to understand Power BI semantic models so that I can effectively create and manage data sources for reporting and visualization.
 ---
 
 # Semantic models in the Power BI service
@@ -31,30 +33,29 @@ Except for streaming semantic models, semantic models represent data models, whi
 
 ### External-hosted models
 
-There are two types of external-hosted models: SQL Server Analysis Services and [Azure Analysis Services](/azure/analysis-services/analysis-services-overview).
+There are two types of externally hosted models: SQL Server Analysis Services and [Azure Analysis Services](/azure/analysis-services/analysis-services-overview).
 
-To connect to a SQL Server Analysis Services model, you must install an [on-premises data gateway](service-gateway-onprem.md) either on-premises or on a virtual machine-hosted infrastructure-as-a-service (IaaS). Azure Analysis Services doesn't require a gateway.
+To connect to a SQL Server Analysis Services model, you must install an [on-premises data gateway](service-gateway-onprem.md) either on premises or on a virtual machine-hosted infrastructure-as-a-service (IaaS). Azure Analysis Services doesn't require a gateway.
 
 It often makes sense to connect to Analysis Services when there are existing model investments, which typically form part of an enterprise data warehouse (EDW). Power BI can make a *live connection* to Analysis Services, and enforce data permissions by using the identity of the Power BI report user.
 
-SQL Server Analysis Services supports both multidimensional models, or cubes, and tabular models. As the following image shows, a live connection semantic model passes queries to external-hosted models.
+SQL Server Analysis Services supports both multidimensional models, or cubes, and tabular models. As the following image shows, a live connection semantic model passes queries to externally hosted models.
 
-![Diagram that shows how a live connection semantic model passes queries to an external-hosted model.](media/service-datasets-understand/live-connection-dataset.png)
+![Diagram that shows how a live connection semantic model passes queries to an externally hosted model.](media/service-datasets-understand/live-connection-dataset.png)
 
 ### Power BI Desktop-developed models
 
 You can use Power BI Desktop, a client application for Power BI development, to develop a model. A Power BI Desktop model is effectively an Analysis Services tabular model.
 
-You can develop three different types, or *modes*, of models by using Power BI Desktop: Import, DirectQuery, and Composite. You develop models by importing data from dataflows and then integrating them with external data sources. The mode depends on whether data is imported into the model, or whether it remains in the data source. For more information about the modes, see [Semantic model modes in the Power BI service](service-dataset-modes-understand.md).
+You can develop three different types, or *modes*, of models by using Power BI Desktop: Import, DirectQuery, and Composite. You develop models by importing data from dataflows and then integrating them with external data sources. The mode depends on whether data is imported into the model or whether it remains in the data source. For more information about the modes, see [Semantic model modes in the Power BI service](service-dataset-modes-understand.md).
 
 ### Semantic model ownership
 
-When working with semantic models using gateway and cloud connections, your ability to make changes to the semantic model is dependent on ownership of the semantic model. If you're not the owner, a warning is displayed stating that you're viewing the section of the semantic model information in read-only mode because you're not the semantic model owner. To make changes, you must either contact the semantic model owner to make changes, or take over ownership of the semantic model.
-
+When working with semantic models using gateway and cloud connections, your ability to make changes to the semantic model is dependent on ownership of the semantic model. If you're not the owner, a warning is displayed stating that you're viewing the section of the semantic model information in read-only mode because you're not the semantic model owner. To make changes, you must either contact the semantic model owner to request changes, or take over ownership of the semantic model.
 
 ### Row-level security
 
-External-hosted models and Power BI desktop models can enforce row-level security (RLS) to limit the data that certain users can retrieve. For example, users assigned to a **Salespeople** security group might be able to view report data only for the sales regions they're assigned to. RLS roles are *dynamic* or *static*. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md).
+Externally hosted models and Power BI desktop models can enforce row-level security (RLS) to limit the data that certain users can retrieve. For example, users assigned to a **Salespeople** security group might be able to view report data only for the sales regions they're assigned to. RLS roles are *dynamic* or *static*. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security).
 
 ### Excel workbook models
 
@@ -73,7 +74,7 @@ The following important facts and considerations apply to Power BI semantic mode
 
 - SQL Server Analysis Services-hosted models need a gateway to do live connection queries.
 - To query Power BI-hosted models that import data, you must fully load them into memory.
-- Power BI-hosted models that use Import need refresh to keep data current, and must use gateways when source data isn't accessible directly over the internet.
+- Power BI-hosted models that use Import mode need refresh to keep data current, and must use gateways when source data isn't accessible directly over the internet.
 - Power BI-hosted Import models can refresh according to a schedule, or a user can trigger on-demand refresh in the Power BI service.
 - Power BI-hosted models that use [DirectQuery](desktop-directquery-about.md) mode require connectivity to the source data. Power BI issues queries to the source data to retrieve current data. This mode must use gateways when source data isn't accessible directly over the internet.
 - Models can enforce RLS rules to filter data access to certain users.

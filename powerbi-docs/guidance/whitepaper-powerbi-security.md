@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/15/2023
+ms.date: 07/15/2023
 LocalizationGroup: Conceptual
 ---
 
 # Power BI security white paper
 
-**Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)), and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
+**Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, semantic models, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
 <!-- cspell:disable -->
 
@@ -94,7 +94,7 @@ Back-end functionality is served by micro-services running on different machines
 
 ### Power BI Premium infrastructure
 
-Power BI Premium offers a service for subscribers who require premium Power BI features, such as Dataflows, Paginated Reports, AI, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager.
+Power BI Premium offers a service for subscribers who require premium Power BI features, such as advanced AI, distribution to unlicensed users, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager.
 
 Power BI Premium capacities are hosted in back-end clusters that are independent of the regular Power BI back end – see above). This provides better isolation, resource allocation, supportability, security isolation, and scalability of the Premium offering.
 
@@ -108,7 +108,7 @@ The Power BI Premium infrastructure in an Azure region consists of multiple Powe
 
 The backbone of each cluster are compute resources managed by [Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview) and [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). Virtual Machine Scale Sets and Service Fabric allow fast and painless increase of compute nodes as usage grows and orchestrates the deployment, management, and monitoring of Power BI Premium services and applications.
 
-There are many surrounding resources that ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) exclusively.
+There are many surrounding resources that ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Microsoft Entra ID exclusively.
 
 Any request that comes to Power BI Premium infrastructure goes to front-end nodes first – they're the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front-end nodes authenticate the request, handle it, or forward it to the appropriate resources (for example, back-end nodes).
 
@@ -325,13 +325,13 @@ Using Private Link with Power BI provides the following benefits:
 * Private Link ensures that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
 * Network traffic isolation from non-Azure-based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.
 
-See [Private links for accessing Power BI](../enterprise/service-security-private-links.md) for additional information.
+See [Private links for accessing Power BI](/fabric/security/security-private-links-overview) for additional information.
 
-### VNet connectivity (preview - coming soon)
+### VNet connectivity
 
 While the Private Link integration feature provides secure inbound connections to Power BI, the VNet connectivity feature enables secure outbound connectivity from Power BI to data sources within a VNet.
 
-VNet gateways (Microsoft-managed) will eliminate the overhead of installing and monitoring on-premises data gateways for connecting to data sources associated with a VNet. They will, however, still follow the familiar process of managing security and data sources, as with an on-premises data gateway.
+VNet gateways (Microsoft-managed) eliminates the overhead of installing and monitoring on-premises data gateways for connecting to data sources associated with a VNet. However, they still follow the familiar process of managing security and data sources, as with an on-premises data gateway.
 
 The following is an overview of what happens when you interact with a Power BI report that is connected to a data source within a VNet using VNet gateways:
 
@@ -346,8 +346,6 @@ The following is an overview of what happens when you interact with a Power BI r
 1. The query is then sent to the data source for execution.
 
 1. After execution, the results are sent to the VNet gateway, and the PP VNet service securely pushes the data from the container to the Power BI cloud service.
-
-This feature will be available in public preview soon.
 
 ### Service principals
 
@@ -378,9 +376,9 @@ When information protection is enabled in Power BI:
 
 For more information, see [Sensitivity labels in Power BI](../enterprise/service-security-sensitivity-label-overview.md).
 
-### Microsoft Purview Data Loss Prevention (DLP) Policies for Power BI (preview)
+### Microsoft Purview Data Loss Prevention (DLP) Policies for Power BI
 
-Microsoft Purview's DLP policies can help organizations reduce the risk of sensitive business data leakage from Power BI. DLP policies can help them meet compliance requirements of government or industry regulations, such as GDPR (the European Union's General Data Protection Regulation) or CCPA (the California Consumer Privacy Act) and make sure their data in Power BI is managed.
+Microsoft Purview's DLP policies help organizations reduce the risk of sensitive business data leakage from Power BI. DLP policies help them meet compliance requirements of government or industry regulations, such as GDPR (the European Union's General Data Protection Regulation) or CCPA (the California Consumer Privacy Act) and make sure their data in Power BI is managed.
 
 When DLP policies for Power BI are set up:
 
@@ -393,7 +391,7 @@ When DLP policies for Power BI are set up:
 * If you are a semantic model owner, you can report an issue with a policy if you conclude that a sensitive info type has been falsely identified.
 * Automatic risk mitigations, such as alerts to the security admin, can be invoked.
 
-For more information, see [Data loss prevention policies for Power BI](../enterprise/service-security-dlp-policies-for-power-bi-overview.md).
+For more information, see [Data loss prevention policies for Fabric Power BI](/fabric/governance/data-loss-prevention-overview).
 
 ## Microsoft Defender for Cloud Apps for Power BI
 
@@ -407,7 +405,7 @@ With Defender for Cloud Apps, organizations can gain the following DLP capabilit
 * Work with the Defender for Cloud Apps built-in anomaly detection. The Defender for Cloud Apps anomaly detection policies provide out-of-the-box user behavioral analytics and machine learning so that you're ready from the outset to run advanced threat detection across your cloud environment. When an anomaly detection policy identifies a suspicious behavior, it triggers a security alert.
 * Power BI admin role in the Defender for Cloud Apps portal. Defender for Cloud Apps provides an app-specific admin role that can be used to grant Power BI admins only the permissions they need to access Power BI-relevant data in the portal, such as alerts, users at risk, activity logs, and other Power BI-related information.
 
-See [Using Microsoft Defender for Cloud Apps Controls in Power BI](../enterprise/service-security-using-defender-for-cloud-apps-controls.md) for additional details.
+See [Using Microsoft Defender for Cloud Apps Controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) for additional details.
 
 ## Preview security features
 
@@ -433,7 +431,7 @@ The following questions are common security questions and answers for Power BI. 
 
     If the data source is Azure Analysis Services or on-premises Analysis Services and Row Level Security (RLS) and/or object-level security (OLS) is configured, the Power BI service will apply that row level security, and users who don't have sufficient credentials to access the underlying data (which could be a query used in a dashboard, report, or other data artifact) won't see data for which the user doesn't have sufficient privileges.
 
-    [Row Level security with Power BI](../enterprise/service-admin-rls.md) can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within role.
+    [Row Level security with Power BI](/fabric/security/service-admin-row-level-security) can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within role.
 
     [Object-level security (OLS)](https://powerbi.microsoft.com/blog/object-level-security-ols-now-available-for-public-preview-in-power-bi-premium/) can be used to secure sensitive tables or columns. However, unlike row-level security, object-level security also secures object names and metadata. This helps prevent malicious users from discovering even the existence of such objects. Secured tables and columns are obscured in the field list when using reporting tools like Excel or Power BI, and moreover, users without permissions can't access secured metadata objects via DAX or any other method. From the standpoint of users without proper access permissions, secured tables and columns simply don't exist.
 

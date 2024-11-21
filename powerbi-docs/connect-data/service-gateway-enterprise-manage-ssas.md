@@ -7,17 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/15/2023
-ms.custom: video-Qb5EEjkHoLg, video-eATPS-c7YRU
+ms.date: 09/23/2024
+ms.custom: video-removed, video-removed
 LocalizationGroup: Gateways
+#customer intent: As a Power BI user I want to learn how to manage SQL Server Analysis services for the on-premisis gateway.
 ---
 # Manage SQL Server Analysis Services data sources
-
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 After you [install an on-premises data gateway](/data-integration/gateway/service-gateway-install), you can [add data sources](service-gateway-data-sources.md#add-a-data-source) to use with the gateway. This article describes how to add a SQL Server Analysis Services (SSAS) data source to your on-premises gateway to use for scheduled refresh or for live connections.
 
 To learn more about how to set up a live connection to SSAS, watch this [Power BI Walkthrough: Analysis Services Live Connect](https://www.youtube.com/watch?v=GPf0YS-Xbyo&feature=youtu.be) video.
+
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 > [!NOTE]
 > If you have an Analysis Services data source, you need to install the gateway on a computer joined to the same forest or domain as your Analysis Services server.
@@ -39,7 +40,7 @@ To connect to either a multidimensional or tabular Analysis Services data source
 
    > [!NOTE]
    > The Windows account you enter must be a member of the Server Administrator role on the Analysis Services instance you're connecting to. If this account's password is set to expire, users get a connection error unless you update the data source password. For more information about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
-   
+
 1. Configure the **Privacy level** for your data source. This setting controls how data can be combined for scheduled refresh. The privacy-level setting doesn't apply to live connections. To learn more about privacy levels for your data source, see [Set privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
    :::image type="content" source="media/service-gateway-enterprise-manage-ssas/privacy-level-setting.png" alt-text="Screenshot of the Privacy level setting." :::
@@ -52,25 +53,11 @@ You can now use this data source for scheduled refresh or live connections again
 
 ## User names for Analysis Services
 
-To learn about authentication with Analysis Services live connections in Power BI, watch this video:
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/Qb5EEjkHoLg]
-
 Each time a user interacts with a report connected to Analysis Services, the effective user name passes to the gateway and then passes on to your on-premises Analysis Services server. The email address that you use to sign in to Power BI passes to Analysis Services as the effective user in the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#effectiveusername) connection property.
 
 The email address must match a defined user principal name (UPN) within the local Active Directory (AD) domain. The UPN is a property of an AD account. The Windows account must be present in an Analysis Services role. If a match can't be found in AD, the sign-in isn't successful. To learn more about AD and user naming, see [User naming attributes](/windows/win32/ad/naming-properties).
 
 ## Map user names for Analysis Services data sources
-
-You can also map your Power BI sign-in name to a local directory UPN. To learn about UPN mapping in Power BI, watch this video:
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/eATPS-c7YRU]
 
 Power BI allows mapping user names for Analysis Services data sources. You can configure rules to map a Power BI sign-in user name to an `EffectiveUserName` that passes to the Analysis Services connection. This feature is a great workaround when your Microsoft Entra user name doesn't match a UPN in your local Active Directory instance. For example, if your email address is `meganb@contoso.onmicrosoft.com`, you can map it to `meganb@contoso.com`, and that value passes on to the gateway.
 
@@ -102,10 +89,6 @@ To do manual UPN mapping, follow these steps:
 1. Under **Map user names**, for each user name to map, enter values for **Original name** and **New name**, and then select **Add new rule**. The **Replace** value is the sign-in address for Power BI, and the **With** value is the value to replace it with. The replacement passes to the `EffectiveUserName` property for the Analysis Services connection.
 
    :::image type="content" source="media/service-gateway-enterprise-manage-ssas/add-new-rules.png" alt-text="Screenshot of Add new rule in the Map user names box.":::
-
-   For example:
-
-   :::image type="content" source="media/service-gateway-enterprise-manage-ssas/replace-with-rule.png" alt-text="Screenshot of example mapping rules." :::
 
    > [!NOTE]
    > Be sure not to change users that you don't intend to change. For example, if you replace the **Original name** of `contoso.com` with a **New name** of `@contoso.local`, all user sign-ins that contain `@contoso.com` are replaced with `@contoso.local`. Also, if you replace an **Original name** of `meganb@contoso.com` with a **New name** of `meganb@contoso.local`, a sign-in of `v-meganb@contoso.com` is sent as `v-meganb@contoso.local`.
@@ -267,9 +250,11 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 | **Server version** | **Required SKU** |
 | --- | --- |
-| 2012 SP1 CU4 or later |Business Intelligence and Enterprise SKU |
 | 2014 |Business Intelligence and Enterprise SKU |
 | 2016 |Standard SKU or higher |
+| 2017 |Standard SKU or higher |
+| 2019 |Standard SKU or higher |
+| 2022 |Standard SKU or higher |
 
 ## Related content
 

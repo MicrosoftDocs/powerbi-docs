@@ -1,5 +1,5 @@
 ---
-title: Move your Power BI embedded analytics application to production
+title: Move your Power BI embedded analytics app to production
 description: Find out how to move your Power BI embedded app to production by assigning a capacity to your workspace. See specifications for various capacities and SKUs.
 author: mberdugo
 ms.author: monaberdugo
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 01/20/2023
+ms.date: 01/20/2024
 #Customer intent: As an ISV developer, I want to embed a report, dashboard, or tile into an application so that my customers can share data.
 ---
 

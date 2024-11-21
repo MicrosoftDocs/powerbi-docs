@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 05/22/2024
 LocalizationGroup: Connect to data
 ---
 # Connect to semantic models in the Power BI service from Power BI Desktop
@@ -107,6 +107,7 @@ Now you and others can create and share custom reports, all from the same semant
 
 When you use the Power BI service live connection, keep a few considerations and limitations in mind.
 
+- In live connection mode, you cannot modify the data model itself (for example, you cannot add new columns or tables). You can only create measures (Report Measures), calculated columns, visual calculations and calculated tables.
 - Only users with Build permission for a semantic model can connect to a published semantic model by using the Power BI service live connection.
 - Hidden columns will become visible to users with Build permissions when they create live connections to the semantic model in Power BI Desktop.
 - Free users only see datasets that are in their **My Workspace** and in Premium or Fabric based workspaces.
@@ -117,6 +118,7 @@ When you use the Power BI service live connection, keep a few considerations and
 - If Members are required to publish, they need to download using the option *A Copy of your report and data*. Make the necessary changes then publish the report.
 - If you delete the shared semantic model in the Power BI service, reports based on that semantic model will no longer work properly or display visuals. You can no longer access that semantic model from Power BI Desktop.
 - Reports that share a semantic model on the Power BI service don't support automated deployments that use the Power BI REST API.
+- Since the Power BI service connection is live, connecting to a dataset with shared report in other users' *My Workspace* is not supported.
 
 
 ## Related content

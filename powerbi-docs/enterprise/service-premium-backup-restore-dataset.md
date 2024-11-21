@@ -1,5 +1,5 @@
 ---
-title: Backup and restore Power BI Premium semantic models
+title: How to Backup and restore Power BI Premium semantic models
 description: Learn about the backup and restore feature for semantic models with a Power BI Premium or Premium Per User license.
 author: KesemSharabi
 ms.author: kesharab
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2022
+ms.date: 07/25/2024
 LocalizationGroup: Premium
 ---
 
@@ -19,7 +19,7 @@ You can use [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-
 
 :::image type="content" source="media/service-premium-backup-restore-datasets/premium-backup-restore-datasets-01.png" alt-text="Screenshot of the SSMS window, back up is selected from the databases menu. The backup database dialog is open, OK is selected.":::
 
-The ability to backup and restore Power BI semantic models provides a migration path from Azure Analysis Services workloads to Power BI Premium. It also enables semantic model backups for multiple reasons, including corruption or loss, data retention requirements, and tenant movement, among others.
+The ability to backup and restore Power BI semantic models provides a migration path from Azure Analysis Services workloads to Power BI Premium. Backup and restore also enables semantic model backups for multiple reasons, including corruption or loss, data retention requirements, and tenant movement, among others.
 
 ## Using semantic model backup and restore
 
@@ -60,7 +60,7 @@ During backup and restore, the following actions apply:
 * Backup files are placed into the backup folder in the *power-bi-backup* container
 * For restore, you must place the backup files (.abf files) into the folder before conducting a restore
 
-If you rename a workspace, the backup folder in the *power-bi-backup* container is automatically renamed to match. However, if you have an existing folder with the same name as the renamed workspace, the automatic renaming for the backup folder will fail. 
+If you rename a workspace, the backup folder in the *power-bi-backup* container is automatically renamed to match. However, if you have an existing folder with the same name as the renamed workspace, the automatic renaming for the backup folder fails.
 
 ## Considerations and limitations
 
@@ -69,9 +69,14 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * Power BI must be able to access your ADLS Gen2 directly. Your ADLS Gen2 can't be located in a VNET and the firewall can't be turned on.
 
 * If your ADLS Gen2 is already working with **Backup and Restore**, and you disconnect and later reconfigure it to work with **Backup and Restore** again. You must first rename or move the previous backup folder, or the attempt will result in errors and failure.
+
 * **Restore** only supports restoring the database as a **Large Model (Premium)** database.
+
 * Only **enhanced format model (V3 model)** is allowed to be restored.
-* There's a new property, `ignoreIncompatibilities`, for the `restore` command that addresses Row-level security (RLS) incompatibilities between Azure Analysis Services (AAS) and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file for which some roles don't have *read* permissions, you must specify the `ignoreIncompatibilities` property in the `restore` command. If not specified, restore can fail. When specified, the role without the *read* permission is dropped. Currently, there's no setting in SSMS that supports the `ignoreIncompatibilities` property, however, you can specify it in a `restore` command using Tabular Model Scripting Language (TMSL). For example:
+
+* When access to account key on your storage account is [disabled](/azure/storage/common/shared-key-authorization-prevent#disable-shared-key-authorization), you might get this error: *Key based authentication is not permitted on this storage account*.
+
+* The property, `ignoreIncompatibilities` for the `restore` command addresses Row-level security (RLS) incompatibilities between Azure Analysis Services (AAS) and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file for which some roles don't have *read* permissions, you must specify the `ignoreIncompatibilities` property in the `restore` command. If not specified, restore can fail. When specified, the role without the *read* permission is dropped. Currently, there's no setting in SSMS that supports the `ignoreIncompatibilities` property, however, you can specify it in a `restore` command using Tabular Model Scripting Language (TMSL). For example:
 
     ```json
       {
@@ -115,15 +120,8 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 
 ## Related content
 
-* [What is Power BI Premium?](service-premium-what-is.md)
-* [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 * [Analysis Services cmdlets for PowerShell](https://www.powershellgallery.com/packages/Az.AnalysisServices)
+
 * [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)
-* [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
-* [Power BI Premium FAQ](service-premium-faq.yml)
-* [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
-* [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
+
 * [Configuring tenant and workspace storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
-
-More questions? [Ask the Power BI Community](https://community.powerbi.com/).
-

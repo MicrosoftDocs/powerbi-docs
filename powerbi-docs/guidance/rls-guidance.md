@@ -1,12 +1,13 @@
 ---
 title: Row-level security (RLS) guidance in Power BI Desktop
 description: Guidance for enforcing row-level security (RLS) in your data models with Power BI Desktop.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 5/23/2023
 ---
 
@@ -17,7 +18,7 @@ This article targets you as a data modeler working with Power BI Desktop. It des
 It's important to understand RLS filters _table rows_. They can't be configured to restrict access to model objects, including tables, columns, or measures.
 
 > [!NOTE]
-> This article doesn't describe RLS or how to set it up. For more information, see [Restrict data access with row-level security (RLS) for Power BI Desktop](/power-bi/enterprise/service-admin-rls).
+> This article doesn't describe RLS or how to set it up. For more information, see [Restrict data access with row-level security (RLS) for Power BI Desktop](/fabric/security/service-admin-row-level-security).
 >
 > Also, it doesn't cover enforcing RLS in live connections to external-hosted models with Azure Analysis Services or SQL Server Analysis Services. In these cases, RLS is enforced by Analysis Services. When Power BI connects using single-sign on (SSO), Analysis Services will enforce RLS (unless the account has admin privileges).
 
@@ -61,9 +62,9 @@ It's possible to measure the performance impact of RLS filters in Power BI Deskt
 
 ## Configure role mappings
 
-Once published to Power BI, you must map members to semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) roles. Only semantic model owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model).
+Once published to Power BI, you must map members to semantic model roles. Only semantic model owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](/fabric/security/service-admin-row-level-security#manage-security-on-your-model).
 
-Members can be user accounts, security groups, distribution groups or mail enabled groups. Whenever possible, we recommend you map security groups to semantic model roles. It involves managing security group memberships in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). Possibly, it delegates the task to your network administrators.
+Members can be user accounts, security groups, distribution groups or mail enabled groups. Whenever possible, we recommend you map security groups to semantic model roles. It involves managing security group memberships in Microsoft Entra ID. Possibly, it delegates the task to your network administrators.
 
 ## Validate roles
 
@@ -196,8 +197,8 @@ When a user views a report in either a workspace or an app, RLS might or might n
 
 For more information related to this article, check out the following resources:
 
-- [Row-level security (RLS) with Power BI](/power-bi/enterprise/service-admin-rls)
-- [Restrict data access with row-level security (RLS) for Power BI Desktop](/power-bi/enterprise/service-admin-rls)
+- [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security)
+- [Restrict data access with row-level security (RLS) for Power BI Desktop](/fabric/security/service-admin-row-level-security)
 - [Model relationships in Power BI Desktop](/power-bi/transform-model/desktop-relationships-understand)
 - [Power BI implementation planning: Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -7,7 +7,8 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/12/2022
+ms.date: 10/12/2024
+#customer intent: As a Power BI visual developer, I want to learn how to enable sorting options for my visual so that users can sort data in the visual.
 ---
 
 # Sorting options for Power BI visuals
@@ -16,7 +17,7 @@ This article describes the different options available for to specifying the way
 
 By default, a visual doesn't support modifying its sorting order, unless stated otherwise in the *capabilities.json* file.
 
-The *sorting* capability requires at least one of the following parameters.
+The *sorting* capability requires at least one of the following parameters:
 
 * [default](#default-sorting)
 * [implicit](#implicit-sorting)

@@ -1,12 +1,13 @@
 ---
 title: BI solution architecture in the Center of Excellence
 description: Learn what to consider when designing and developing a robust BI platform.
-author: davidiseminger
-ms.author: davidi
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 03/11/2022
 ---
 # BI solution architecture in the Center of Excellence
@@ -58,7 +59,11 @@ In a cloud BI platform, enterprise models can be deployed to a [Synapse SQL pool
 
 Business capabilities are enabled not by data alone, but by BI semantic models that describe concepts, relationships, rules, and standards. This way, they represent intuitive and easy-to-understand structures that define data relationships and encapsulate business rules as calculations. They can also enforce fine-grained data permissions, ensuring the right people have access to the right data. Importantly, they accelerate query performance, providing extremely responsive interactive analytics—even over terabytes of data. Like enterprise models, BI semantic models adopt naming conventions ensuring consistency.
 
-In a cloud BI platform, BI developers can deploy BI semantic models to [Azure Analysis Services](/azure/analysis-services/) or [Power BI Premium capacities](../enterprise/service-premium-what-is.md#capacities-and-skus). We recommend deploying to Power BI when it's used as your reporting and analytics layer. These products support different storage modes, allowing data model tables to cache their data or to use [DirectQuery](directquery-model-guidance.md), which is a technology that passes queries through to the underlying data source. DirectQuery is an ideal storage mode when model tables represent large data volumes or there's a need to deliver near-real time results. The two storage modes can be combined: [Composite models](composite-model-guidance.md) combine tables that use different storage modes in a single model.
+In a cloud BI platform, BI developers can deploy BI semantic models to [Azure Analysis Services](/azure/analysis-services/), [Power BI Premium capacities](../enterprise/service-premium-what-is.md#capacities-and-skus) of [Microsoft Fabric capacities](/fabric/enterprise/licenses#capacity-license).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
+We recommend deploying to Power BI when it's used as your reporting and analytics layer. These products support different storage modes, allowing data model tables to cache their data or to use [DirectQuery](directquery-model-guidance.md), which is a technology that passes queries through to the underlying data source. DirectQuery is an ideal storage mode when model tables represent large data volumes or there's a need to deliver near-real time results. The two storage modes can be combined: [Composite models](composite-model-guidance.md) combine tables that use different storage modes in a single model.
 
 For heavily queried models, [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) can be used to evenly distribute the query load across model replicas. It also allows you to scale your applications and create highly available BI semantic models.
 
@@ -160,4 +165,4 @@ For more information about this article, check out the following resources:
 
 Certified Power BI partners are available to help your organization succeed when setting up a COE. They can provide you with cost-effective training or an audit of your data. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
 
-You can also engage with experienced consulting partners. They can help you [assess](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluate](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL), or [implement](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.
+You can also engage with experienced consulting partners. They can help you [assess](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluate](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL), or [implement](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

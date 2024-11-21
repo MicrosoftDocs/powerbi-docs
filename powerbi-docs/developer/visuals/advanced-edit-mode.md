@@ -3,11 +3,11 @@ title: Advanced edit mode in Power BI visuals
 description: Learn how to enable and use the Advanced edit mode to configure advanced UI controls in Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 12/27/2022
+ms.date: 1/27/2024
 ---
 
 # Advanced edit mode in Power BI visuals
@@ -45,5 +45,4 @@ The **Back to report** button appears if the `advancedEditModeSupport` property 
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Add conditional formatting](conditional-format.md)
+[Add conditional formatting](conditional-format.md)

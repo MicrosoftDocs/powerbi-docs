@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/13/2024
+ms.date: 07/17/2024
 ms.custom: intro-whats-new
 ---
 
@@ -17,7 +17,96 @@ Learn about what's new in the latest versions of Power BI Report Server and Powe
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-## February 2024
+Reminder: [How you can find your report server product key](find-product-key.md)
+
+## September 2024
+
+Read the Power BI blog post, [Power BI Report Server September 2024 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2024-feature-summary/) for details.
+
+### Reporting
+
+- Data limit
+- Visuals, shapes and line enhancements 
+
+### Modeling
+Download large semantic models
+New INFO functions
+DAX query view is available in live connect 
+Add or update multiple measures in DAX query view
+
+### Visualizations
+
+- New visuals in AppSource
+- Attribute Control Chart by Nova Silva
+- PowerGantt Chart by Nova Silva
+- Advanced Geospatial Analytics Made Simple with Icon Map Pro for Power BI
+- Linear Gauge by Powerviz
+- Word Cloud by Powerviz
+- Filter by Powerviz
+- Download Button by JTA
+- Pie of Pie by JTA
+- Drill Down Timeline PRO by ZoomCharts
+- Drill Down Map PRO by ZoomCharts
+- Drill Down Pie PRO by ZoomCharts
+- Hierarchical Bar Chart
+- Deneb: Declarative Visualization in Power BI
+- Image
+- Skyline
+- StackedTrends Visual
+
+### Developers
+- New update for field parameter feature for custom visuals
+
+## May 2024
+
+Read the Power BI blog post, [Power BI Report Server May 2024 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2024-feature-summary/) for details.
+
+### Reporting
+
+- Expanding spatial data integration: Shapefile support in Azure Maps Visual
+- Data bars in matrix subtotal/total conditional formatting
+- Data labels alignment
+- New visual: 100% stacked area chart 
+- Line enhancements 
+- Enhance Q&A with Copilot-generated linguistic relationships 
+
+### Data connectivity
+
+- Snowflake connector update
+
+### Modeling
+
+- Data connectivity
+- Certified connectors updates
+
+### Visualizations
+
+- New visuals in AppSource
+- Multiple sparklines
+- Rose donut pie chart by Powerviz
+- xViz gantt chart by Lumel
+- Control chart XmR by Nova Silva
+- Drill down graph PRO
+- New visuals in AppSource
+- Dumbbell bar chart by Nova Silva
+- Date picker by Powerviz
+- Drill down combo PRO
+- PDF uploader/viewer
+- Inforiver premium matrix
+- KPI MatrixGrowth rate chart by DJEENI v1.4Aimplan Comment Visual
+- Financial reporting matrix by Profitbase
+- Horizon chart by Powerviz
+- Drill Down Scatter PRO by ZoomCharts
+- Image Gallery
+- Horizontal Bar Chart
+- Trends
+- Multi-pane card 1.1
+
+### Purview
+
+- More users can now collaborate with protected PBIX files in Power BI Desktop.
+
+## January 2024
 
 A focus of this release is on accessibility. Power BI customers will notice a continuation in the work done in the previous year. We continue to provide more inclusivity for both creators and consumers in 2024.
 
@@ -45,7 +134,7 @@ This month brings new formatting enhancements for column and bar charts in Power
 
 :::image type="content" source="media/whats-new/new-visual-formatting.png" alt-text="Screenshot showing enhanced formatting for column and bar charts in Power BI.":::
 
-##### Key Enhancements
+##### Key enhancements
 
 * **Apply Settings to All or Series**: Enjoy the versatility of applying formatting options globally across all categories or tailor them for each unique individual series, effortlessly and efficiently.  
 * **Transparency Control**: You can now adjust the fill color transparency to achieve the perfect balance of visibility and design.  
@@ -63,7 +152,7 @@ Data labels have more options, too. Discover new enhanced capabilities for
 
 :::image type="content" source="media/whats-new/extended-custom-data-labels.png" alt-text="Screenshot showing extended customization for data labels.":::
 
-##### Key Enhancements
+##### Key enhancements
 
 Explore these new features of data labels to increase the data density in your charts. These advancements are available for column, bar, line, and ribbon charts. 
 

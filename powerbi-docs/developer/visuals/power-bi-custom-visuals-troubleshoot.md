@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
-ms.date: 12/21/2022
+ms.date: 12/21/2023
 ---
 
 # Troubleshoot your Power BI developer environment setup
@@ -40,7 +40,7 @@ The developer icon looks like a prompt icon within the **Visualizations** tab.
 
 ![Visual selection](media/power-bi-custom-visuals-troubleshoot/powerbi-developer-visual-selection.png)
 
-If you don't see it, make sure you have [enabled developer mode in the Power BI settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
+If you don't see it, make sure you have [enabled developer mode in the Power BI settings](environment-setup.md#enable-developer-mode).
 
 > [!NOTE]
 > The developer visual is currently only available in the **Power BI service** and not in Power BI Desktop or the mobile app. The packaged visual will work everywhere.

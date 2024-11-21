@@ -38,6 +38,8 @@
         href: mobile-apps-view-dashboard.md
       - name: "Reports in the mobile apps"
         href: mobile-reports-in-the-mobile-apps.md
+      - name: "Use Copilot to generate summaries and insights"
+        href: mobile-apps-copilot.md
       - name: "Work with metrics"
         href: mobile-apps-metrics.md
       - name: "Interact with tiles in the mobile apps"
@@ -52,12 +54,14 @@
         href: mobile-apps-notification-center.md
       - name: "Create a deep link that goes to a specific location"
         href: mobile-apps-deep-link-specific-location.md
+      - name: "Connect data to locations with NFC tags"
+        href: mobile-apps-nfc-tags.md
       - name: "Filter a report by location in the Power BI mobile apps"
         href: mobile-apps-geographic-filtering.md
       - name: "Dark mode"
         href: mobile-apps-dark-mode.md
-      - name: "Using OAuth to connect to Reporting Services"
-        href: mobile-oauth-ssrs.md
+      - name: "Connect to Power BI Report Server and SSRS from Power BI mobile applications"
+        href: ../../report-server/mobile-oauth-ssrs.md
     - name: iOS and Android
       items: 
       - name: "Admin: Configuration using mobile device management"
@@ -82,8 +86,6 @@
         href: mobile-apps-scan-barcode.md
       - name: "Annotate and share in the mobile apps"
         href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-      - name: "Scan a barcode from the Power BI mobile app"
-        href: mobile-apps-scan-barcode.md
       - name: "Configure interaction settings"
         href: mobile-app-interaction-settings.md
       - name: "Work side by side with other apps"

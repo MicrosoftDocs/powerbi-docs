@@ -6,9 +6,9 @@ ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.custom: has-azure-ad-ps-ref
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.topic: troubleshooting
-ms.date: 01/24/2023
+ms.date: 01/24/2024
 ---
 
 # Troubleshoot your embedded application
@@ -108,25 +108,24 @@ We recommend you enable this policy only on a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning it. Here's a sample script for creating the policy and assigning it to the SP for this application:
 
-1. Install the [Azure Active Directory PowerShell module for Graph](/powershell/azure/active-directory/install-adv2).
+1. Install the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation).
 
 2. Run the following PowerShell commands line-by-line (making sure the variable `$sp` doesn't have more than one application as a result).
 
-```powershell
-Connect-AzureAD
-```
+   ```powershell
+   Connect-MgGraph -Scopes "Directory.Read.All","Policy.ReadWrite.ApplicationConfiguration"
 
-```powershell
-$sp = Get-AzureADServicePrincipal -SearchString "Name_Of_Application"
-```
+   $sp = Get-MgServicePrincipal -Filter "DisplayName eq 'Name_Of_Application'"
 
-```powershell
-$policy = New-AzureADPolicy -Definition @("{`"HomeRealmDiscoveryPolicy`":{`"AllowCloudPasswordValidation`":true}}") -DisplayName EnableDirectAuth -Type HomeRealmDiscoveryPolicy -IsOrganizationDefault $false
-```
+   $policy = New-MgBetaPolicyActivityBasedTimeoutPolicy -Definition @("{`"AllowCloudPasswordValidation`":true}") `
+      -DisplayName EnableDirectAuth -IsOrganizationDefault:$false
 
-```powershell
-Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id 
-```
+   $params = @{
+      "@odata.id" = "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/$policy.Id"
+   }
+   New-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $sp.Id `
+      -BodyParameter $params
+   ```
 
 After assigning the policy, wait approximately 15-20 seconds for propagation before testing.
 
@@ -259,9 +258,9 @@ Any user with read permissions for a semantic model can see the entire schema (t
 
 To manage which portion of the data your users can view, use one of the following methods:
 
-* Row-level filtering using Power BI [row-level security (RLS)](../../enterprise/service-admin-rls.md).
+* Row-level filtering using Power BI [row-level security (RLS)](/fabric/security/service-admin-row-level-security).
 
-* [Object level security (OLS)](/analysis-services/tabular-models/object-level-security).
+* [Object-level security (OLS)](/analysis-services/tabular-models/object-level-security).
 
 * Separate the data into different semantic models. For example, you can create a semantic model that only contains aggregated data and give your users access to only that semantic model.
 
@@ -360,7 +359,6 @@ For further assistance, [contact support](https://powerbi.microsoft.com/support/
 
 ## Related content
 
-> [!div class="nextstepaction"]
->[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
+[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

@@ -6,11 +6,11 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
-ms.topic: how-to
+ms.topic: concept-article
 ms.date: 11/10/2023
 LocalizationGroup: Data from files
+#customer intent: As a Power BI user I want to learn how to use data flows in Power BI.
 ---
-
 
 # Develop solutions with dataflows
 
@@ -36,7 +36,7 @@ Getting access to these [Premium features of dataflows](dataflows-premium-featur
 
 You can't consume PPU dataflows (or any other content) outside the PPU environment (such as in Premium or other SKUs or licenses).
 
-For Premium capacities, your consumers of dataflows in Power BI Desktop don't need explicit licenses to consume and publish to Power BI. But to publish to a workspace or share a resulting semantic model, you'll need at least a Pro license.
+For Premium capacities, your consumers of dataflows in Power BI Desktop don't need explicit licenses to consume and publish to Power BI. But to publish to a workspace or share a resulting semantic model, you need at least a Pro license.
 
 For PPU, everyone who creates or consumes PPU content must have a PPU license. This requirement varies from the rest of Power BI in that you need to explicitly license everyone with PPU. You can't mix Free, Pro, or even Premium capacities with PPU content unless you migrate the workspace to a Premium capacity.
 
@@ -100,7 +100,7 @@ Imagine you have a dataflow that's large, but you want to build semantic models 
 
 ### Solution: Use DirectQuery dataflows
 
-DirectQuery can be used whenever a workspace's enhanced compute engine (ECE) setting is configured explicitly to **On**. This setting is helpful when you have data that doesn't need to be loaded directly into a Power BI model. If you're configuring the ECE to be **On** for the first time, the changes that allow DirectQuery will occur during the next refresh. You'll need to refresh it when you enable it to have changes take place immediately. Refreshes on the initial dataflow load can be slower because Power BI writes data to both storage and a managed SQL engine.
+DirectQuery can be used whenever a workspace's enhanced compute engine (ECE) setting is configured explicitly to **On**. This setting is helpful when you have data that doesn't need to be loaded directly into a Power BI model. If you're configuring the ECE to be **On** for the first time, the changes that allow DirectQuery will occur during the next refresh. You need to refresh it when you enable it to have changes take place immediately. Refreshes on the initial dataflow load can be slower because Power BI writes data to both storage and a managed SQL engine.
 
 To summarize, by using DirectQuery with dataflows enables the following enhancements to your Power BI and dataflows processes:
 
@@ -139,7 +139,7 @@ Imagine you run a query on the source system, but you don't want to provide dire
 
 ### Solution 1: Use a view for the query or optimize the query
 
-By using an optimized data source and query is your best option. Often, the data source operates best with queries intended for it. Power Query has advanced query-folding capabilities to delegate these workloads. Power BI also provides step-folding indicators in Power Query Online. Read more about types of indicators in the [step-folding indicators documentation](/power-query/step-folding-indicators).
+By using an optimized data source and query is your best option. Often, the data source operates best with queries intended for it. Power Query advances query-folding capabilities to delegate these workloads. Power BI also provides step-folding indicators in Power Query Online. Read more about types of indicators in the [step-folding indicators documentation](/power-query/step-folding-indicators).
 
 ### Solution 2: Use Native Query
 
@@ -151,7 +151,7 @@ By breaking a dataflow into separate ingestion and consumption dataflows, you ca
 
 ## Ensure customers use dataflows whenever possible
 
-Imagine you have many dataflows that serve common purposes, such as conformed dimensions like customers, data tables, products, and geographies. Dataflows are already available in the ribbon for Power BI. Ideally, you want customers to primarily use the dataflows you've created.
+Imagine you have many dataflows that serve common purposes, such as conformed dimensions like customers, data tables, products, and geographies. Dataflows are already available in the ribbon for Power BI. Ideally, you want customers to primarily use the dataflows you created.
 
 ### Solution: Use endorsement to certify and promote dataflows
 
@@ -171,7 +171,7 @@ For more information about refresh, see [Understanding and optimizing dataflows 
 
 ## Ensure you protect data assets downstream
 
-You can use sensitivity labels to apply a data classification and any rules you configured on downstream items that connect to your dataflows. To learn more about sensitivity labels, see [sensitivity labels in Power BI](../../enterprise/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](../../enterprise/service-security-sensitivity-label-downstream-inheritance.md).
+You can use sensitivity labels to apply a data classification and any rules you configured on downstream items that connect to your dataflows. To learn more about sensitivity labels, see [sensitivity labels in Power BI](../../enterprise/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](/fabric/governance/service-security-sensitivity-label-downstream-inheritance).
 
 ## Multi-geo support
 

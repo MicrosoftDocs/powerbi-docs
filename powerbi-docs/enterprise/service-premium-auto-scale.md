@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/22/2023
+ms.date: 05/15/2024
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -18,7 +18,7 @@ Power BI Premium offers scale and performance for Power BI content in your organ
 
 :::image type="content" source="media/service-premium-auto-scale/service-premium-auto-scale-on.png" alt-text="Screenshot of the Power BI Admin portal screen showing P1 capacity settings.":::
 
-Autoscale uses an Azure subscription to automatically use more v-cores (virtual CPU cores) when the computing load on your Power BI Premium subscription would otherwise be slowed by its capacity. This article describes the steps necessary to get Autoscale working for your Power BI Premium subscription. Autoscale only works with Power BI Premium.
+Autoscale uses an Azure subscription to automatically use more v-cores (virtual CPU cores) when the computing load on your Power BI Premium subscription would otherwise be slowed by its capacity. This article describes the steps necessary to get Autoscale working for your Power BI Premium subscription and the conditions under which Autoscale is enabled. Autoscale only works with Power BI Premium.
 
 To enable Autoscale, the following steps need to be completed:
 
@@ -41,15 +41,9 @@ To select an Azure subscription to work with Autoscale, take the following steps
 
 1. Sign on to the Azure portal and in the search box type and select **Subscriptions**.
 
-   :::image type="content" source="media/service-premium-auto-scale/azure-auto-scale-search.png" alt-text="Screenshot of the Azure portal showing the word subscriptions in the search box." lightbox="media/service-premium-auto-scale/azure-auto-scale-search.png":::
-
 1. From the **Subscriptions** page, select the subscription you want to work with Autoscale.
 
-   :::image type="content" source="media/service-premium-auto-scale/azure-auto-scale-subscriptions.png" alt-text="Screenshot of the Azure portal showing a subscription name highlighted." lightbox="media/service-premium-auto-scale/azure-auto-scale-subscriptions.png":::
-
 1. From the *Settings* selections for your selected subscription, select **Resource groups**.
-
-    :::image type="content" source="media/service-premium-auto-scale/azure-auto-scale-resource-group-option.png" alt-text="Screenshot of the Azure portal showing the subscription pane. Resource groups is highlighted in the settings section." lightbox="media/service-premium-auto-scale/azure-auto-scale-resource-group-option.png":::
 
 1. Select **Create** to create a resource group to use with Autoscale.
 
@@ -91,6 +85,10 @@ The following steps show you how to enable and associate Autoscale with the reso
 The following short video shows how quickly you can configure Autoscale for Power BI Premium:
 
 :::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Animation that shows how to configure Autoscale for Premium Generation 2.":::
+
+## When is Autoscale triggered?
+
+You only pay for autoscale when it's triggered. Autoscale is triggered when [interactive throttling](/fabric/enterprise/throttling) is implemented on your capacity. When interactive operations on your capacity are delayed, autoscale v-cores are added to cover the overage. As long as the overage is not covered, v-cores are added to the capacity every 30 seconds, until the number of v-cores you allocated for autoscale is reached. Once an autoscale core is added, it remains active for a minimum of 24 hours. After 24 hours, your capacity's throttling state is evaluated and if the capacity isn't throttled, autoscale usage returns to zero.
 
 ## Disable Autoscale
 

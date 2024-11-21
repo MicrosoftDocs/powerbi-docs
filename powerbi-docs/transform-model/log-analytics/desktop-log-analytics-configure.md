@@ -127,7 +127,7 @@ The following table describes the **schema**.
 | Property | Existing Azure Analysis Services property | Description |
 | --- | --- | --- |
 | **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
-| **OperationName** | EventClass_s | The operation associated with the log record. |
+| **OperationName** | EventClass_s | The Analysis Services trace event associated with the log record. Refer to AS Trace Events [documentation](/analysis-services/trace-events/analysis-services-trace-events) page for more details about possible events for each category.|
 | **CorrelationId** | | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | **PowerBIWorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
 | **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
@@ -137,12 +137,12 @@ The following table describes the **schema**.
 | **ArtifactKind** | | Type of artifact logging the operation, for example, semantic model. |
 | **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
 | **ArtifactName** | DatabaseName_s | The name of the Power BI artifact logging this operation. |
-| **LogAnalyticsCategory**  | Unique | Category of the events, like Audit/Security/Request. |
+| **LogAnalyticsCategory**  | Unique | The Analysis Services trace event category associated with the log record. Refer to AS Trace Events [documentation](/analysis-services/trace-events/analysis-services-trace-events) page for more details about possible event categories.|
 | **DatasetMode** | | The mode of the semantic model. Import, DirectQuery, or Composite. |
 | **DurationMs** | Duration_s | Amount of time (in milliseconds) taken by the operation. |
 | **User** | User_s | The user associated with the running operation. Used when an end-user identity must be impersonated on the server. |
 | **ExecutingUser** | EffectiveUsername_s | The user running the operation. |
-| **OperationDetailName** | EventSubclass_s | More details about the operation. |
+| **OperationDetailName** | EventSubclass_s | More detail about Analysis Services trace event associated with the log record. Refer to 'Subclass' property of the trace event documentation page for more details about possible values, for example [Command Begin](/analysis-services/trace-events/command-events-data-columns#bkmk_1). |
 | **XmlaObjectPath** | ObjectPath_s | Object path. A comma-separated list of parents, starting with the object's parent. |
 | **PowerBIWorkspaceName** |  | Name of the Power BI workspace containing the artifact. |
 | **StatusCode** | Error_s | Status code of the operation. It covers success and failure. |
@@ -156,6 +156,149 @@ The following table describes the **schema**.
 | **CustomerTenantId** | | Customer's Power BI tenant identifier. |
 | **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
 | **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled semantic models the ReplicaId is always 'AAA'  |
+
+### ExecutionMetrics event
+
+For every **Discover**, **Command** and **Query** request, an event named **ExecutionMetrics** is produced at the end of the request. This event contains execution metrics for the request, which can assist you in diagnosing and troubleshooting more effectively. The ExecutionMetrics trace is correlated with the nearest **[Discover|Command|Query]End** event.
+
+
+The following KQL query retrieves the ExecutionMetrics events for all refresh operations of a Semantic Model in the last day:
+
+```sql
+let commands = PowerBIDatasetsWorkspace
+    | where TimeGenerated > ago(1d)
+    | where ArtifactId =~ "[Semantic Model Id]"
+    | where OperationName in ("CommandEnd")
+    | where EventText contains "<Refresh"
+    | project TimeGenerated, ArtifactId, CommandOperationName = OperationName, XmlaRequestId, CorrelationId, CommandText = EventText;
+let executionMetrics = PowerBIDatasetsWorkspace        
+    | where OperationName == "ExecutionMetrics"
+    | project TimeGenerated, XmlaRequestId, CorrelationId, EventText;
+commands
+| join kind=leftouter executionMetrics on XmlaRequestId
+
+```
+
+The following KQL query retrieves events that were throttled in the last day by workspace, item, and user:
+
+```sql
+let executionMetrics = PowerBIDatasetsWorkspace
+    | where TimeGenerated > ago(1d)    
+    | where OperationName == "ExecutionMetrics"    
+    | extend eventTextJson = parse_json(EventText)      
+    | extend capacityThrottlingMs=toint(eventTextJson.capacityThrottlingMs)
+    | where capacityThrottlingMs > 0;
+let commands = PowerBIDatasetsWorkspace    
+    | where OperationName in ("CommandEnd", "QueryEnd", "DiscoverEnd")    
+    | project
+        TimeGenerated,
+        ExecutingUser,
+        ArtifactId,
+        PowerBIWorkspaceId,
+        CommandOperationName = OperationName,
+        XmlaRequestId,
+        CorrelationId,
+        CommandText = EventText;
+commands
+| join kind=inner executionMetrics on XmlaRequestId
+| project
+    TimeGenerated,
+    ArtifactId,
+    PowerBIWorkspaceId,
+    ExecutingUser,
+    CommandOperationName,
+    XmlaRequestId,
+    EventText,
+    CommandText,
+    capacityThrottlingMs
+| summarize countThrottling = count(), avgThrottlingDuration = avg(capacityThrottlingMs) by PowerBIWorkspaceId, ArtifactId, ExecutingUser, CommandOperationName
+```
+
+The statistics are presented as a JSON text in the **EventText** property, see the following examples.
+
+#### [Refresh command](#tab/refresh)
+
+```json
+{
+    "timeStart": "2024-03-20T12:39:59.681Z",
+    "timeEnd": "2024-03-20T13:01:14.241Z",
+    "durationMs": 1274559,    
+    "vertipaqJobCpuTimeMs": 156,
+    "mEngineCpuTimeMs": 9617484,
+    "totalCpuTimeMs": 9618469,
+    "executionDelayMs": 10,
+    "approximatePeakMemConsumptionKB": 1683409,
+    "mEnginePeakMemoryKB": 1676816,
+    "tabularConnectionTimeoutMs": 18000000,    
+    "refreshParallelism": 16,
+    "vertipaqTotalRows": 114,
+    "intendedUsage": 2
+}
+```
+
+#### [DAX Query](#tab/query)
+
+```json
+{
+    "timeStart": "2024-05-07T13:42:21.362Z",
+    "timeEnd": "2024-05-07T13:43:30.505Z",
+    "durationMs": 69143,
+    "datasourceConnectionThrottleTimeMs": 0,
+    "directQueryConnectionTimeMs": 3,
+    "directQueryIterationTimeMs": 1,
+    "directQueryTotalTimeMs": 121872,
+    "queryProcessingCpuTimeMs": 16,
+    "totalCpuTimeMs": 63,
+    "executionDelayMs": 0,
+    "approximatePeakMemConsumptionKB": 3632,
+    "directQueryTimeoutMs": 225000,
+    "tabularConnectionTimeoutMs": 225000,
+    "queryDialect": 3,
+    "queryResultRows": 67,
+    "directQueryRequestCount": 2,
+    "directQueryTotalRows": 134
+}
+```
+---
+
+The following table describes all the possible properties. Not every property is emitted in each event, as the contents will depend on the request and the semantic model.
+
+| Property | Description |
+| --- | --- |
+| timeStart | The timestamp (UTC) of when the request started. |
+| timeEnd | The timestamp (UTC) of when the request ended. |
+| durationMs | Total duration of the execution. |
+| datasourceConnectionThrottleTimeMs | Total throttle time after hitting the datasource connection limit. Learn more about maximum concurrent connections [here](../../enterprise/service-premium-what-is.md#semantic-model-sku-limitation). |
+| externalQueryExecutionTimeMs | Total time spent on executing all external datasource queries during the request. |
+| directQueryConnectionTimeMs | Total time spent on creating new DirectQuery connection during the request |
+| directQueryIterationTimeMs | Total time spent on iterating the results returned by the DirectQuery queries. |
+| directQueryTotalTimeMs | Total time spent on executing and reading all DirectQuery queries during the request. |
+| executionDelayMs | Total time spent waiting for Analysis Services engine thread pool thread availability. |
+| totalCpuTimeMs | Total CPU time of the request. |
+| vertipaqJobCpuTimeMs | Total CPU time spent by Vertipaq engine.  |
+| mEngineCpuTimeMs | Total CPU time spent by PowerQuery engine.  |
+| queryProcessingCpuTimeMs | Total CPU time spent by tasks on Analysis Services query thread pool thread. |
+| approximatePeakMemoryConsumptionKB | Approximate peak total memory consumption during the request. |
+| mEnginePeakMemoryKB  | Approximate peak memory commit size (in kilobytes) across all PowerQuery engine mashup containers. |
+| directQueryTimeoutMs  | Timeout associated with DirectQuery queries. |
+| externalQueryTimeoutMs  | Timeout associated with queries to external datasources. |
+| tabularConnectionTimeoutMs  | Timeout associated with external tabular datasource connections (e.g. SQL). |
+| refreshParallelism  | Effective MaxParallelism used in the request.|
+| vertipaqTotalRows   | Total number of rows processed by the Vertipaq engine during a refresh operation.  |
+| queryResultRows   | Total number of rows returned as a result of the DAX query. |
+| directQueryTotalRows   | Total number of rows read from the various DirectQuery queries. |
+| directQueryRequestCount   | Total number of DirectQuery storage engine queries executed by the DAX engine. |
+| errorCount   | Total number of errors for the current request. |
+| qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
+| intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Dashboard tile/Query cache refresh (3) |
+| commandType    | Type of Analysis Services command requested by the client (e.g. Batch, Statement, Backup,...) |
+| discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](/analysis-services/trace-events/discover-events-data-columns#discover-begin-classdata-columns) for list of discover types. |
+| queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
+| capacityThrottlingMs     | Total time the request got delayed due to capacity throttling. Learn more about throttling [here](/fabric/enterprise/throttling). |
+
+
+- All durations and CPU times are presented in milliseconds.
+- Additional properties beyond those described in the table above may be encountered and these should be considered as undocumented and subject to change.
 
 ## Sample Log Analytics KQL queries
 

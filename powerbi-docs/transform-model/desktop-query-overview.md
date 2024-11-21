@@ -6,13 +6,17 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
-ms.date: 10/24/2023
+ms.topic: concept-article
+ms.date: 09/04/2024
+ms.custom: dFY25Q1-Linter
 LocalizationGroup: Transform and shape data
+#customer intent: As a Power BI user I want to learn abou the Power Query Editor.
 ---
 # Query overview in Power BI Desktop
 
 With Power BI Desktop you can connect to the world of data, create compelling and foundational reports, and share your efforts with others – who can then build on your work, and expand their business intelligence efforts.
+
+## Power BI Desktop Views
 
 Power BI Desktop has three views:
 
@@ -24,7 +28,7 @@ Access these views by selecting one of the three icons along the left side of Po
 
 :::image type="content" source="media/desktop-query-overview/query-overview-view-icons.png" alt-text="Screenshot of Power BI Desktop showing Report view selected.":::
 
-Power BI Desktop also comes with Power Query Editor. Use Power Query Editor to connect to one or many data sources, shape and transform the data to meet your needs, then load that model into Power BI Desktop.
+Power BI Desktop also comes with Power Query Editor. Use Power Query Editor to connect to one or many data sources, shape, and transform the data to meet your needs, then load that model into Power BI Desktop.
 
 This article provides an overview of the work with data in the Power Query Editor, but there's more to learn. At the end of this article, you'll find links to detailed guidance about supported data types. You'll also find guidance about connecting to data, shaping data, creating relationships, and how to get started.
 
@@ -44,14 +48,14 @@ After a query is loaded, Power Query Editor view becomes more interesting. If yo
 
 Here's how Power Query Editor appears after a data connection is established:
 
-1. In the ribbon, many buttons are now active to interact with the data in the query.
-2. In the left pane, queries are listed and available for selection, viewing, and shaping.
-3. In the center pane, data from the selected query is displayed and available for shaping.
-4. The **Query Settings** pane appears, listing the query's properties and applied steps.  
+* In the ribbon, many buttons are now active to interact with the data in the query.
+* In the left pane, queries are listed and available for selection, viewing, and shaping.
+* In the center pane, data from the selected query is displayed and available for shaping.
+* The **Query Settings** pane appears, listing the query's properties and applied steps.  
 
    :::image type="content" source="media/desktop-query-overview/query-overview-with-data-connection.png" alt-text="Screenshot of Power BI Desktop showing the Query Settings pane in Power Query Editor.":::
 
-Each of these four areas will be explained later: the ribbon, the Queries pane, the Data view, and the Query Settings pane.
+Each of these four areas are explained later: the ribbon, the Queries pane, the Data view, and the Query Settings pane.
 
 ## The query ribbon
 

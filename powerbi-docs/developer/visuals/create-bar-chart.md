@@ -1,13 +1,14 @@
 ---
 title: Build a bar chart visual in Power BI 
-description: Use this step-by-step guide to build a sample Power BI bar chart visual with code. 
+description: Learn how to build a sample Power BI visual with code using this step-by-step guide. This sample visual displays a bar chart.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/14/2023
+ms.date: 05/13/2024
+#customer intent: As a Power BI visual developer, I want to learn how to build a bar chart visual so I can display data in a simple, visual format.
 ---
 
 # Tutorial: Build a bar chart
@@ -40,7 +41,7 @@ Creating a bar chart visual involves the following steps:
 
 ## Create a new project
 
-The purpose of this tutorial is to help you understand how a visual is structured and written. You can follow these instructions to create a bar code visual from scratch, or you can [clone the source code repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial) and use it to follow along without creating your own visual.
+The purpose of this tutorial is to help you understand how a visual is structured and written. You can follow these instructions to create a bar code visual from scratch, or you can [clone the source code repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/main) and use it to follow along without creating your own visual.
 
 ## [Create a new visual](#tab/CreateNewVisual)
 
@@ -64,7 +65,7 @@ The purpose of this tutorial is to help you understand how a visual is structure
 
     The *tsconfig.json* "files" object points to the file where the main class of the visual is located.
 
-    Your final *tsconfig.json* file should look like [this](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/tsconfig.json).
+    Your final *tsconfig.json* file should look like [this](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/tsconfig.json).
 
 4. The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your *package.json* file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
 
@@ -186,19 +187,32 @@ Replace the content of the "objects" section with the following code:
                     }
                 }
             }
+        },
+        "colorSelector": {
+            "properties": {
+                "fill": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
         }
      },
 ```
 
 Save the *capabilities.json* file.
 
-Your final *capabilities* file should look like [the one in this example](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
+Your final *capabilities* file should look like [the one in this example](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/capabilities.json).
 
 ## Visual API
 
 All visuals start with a class that implements the `IVisual` interface. The *src/visual.ts* file is the default file that contains this class.
 
-In this tutorial, we call our `IVisual` file *barChart.ts*. [Download the file](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and save it to the */src* folder, if you didn't do so already. In this section, we go through this file in detail and describe the various sections.
+In this tutorial, we call our `IVisual` file *barChart.ts*. [Download the file](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChart.ts) and save it to the */src* folder, if you didn't do so already. In this section, we go through this file in detail and describe the various sections.
 
 ### Imports
 
@@ -208,22 +222,26 @@ The following modules are imported to your *barChart.ts* file:
 
 ```typescript
 import {
-    scaleBand, scaleLinear
-} from "d3-scale";
-import {
-    select as d3Select
+    BaseType,
+    select as d3Select,
+    Selection as d3Selection
 } from "d3-selection";
+import {
+    ScaleBand,
+    ScaleLinear,
+    scaleBand,
+    scaleLinear
+} from "d3-scale";
 import "./../style/visual.less";
 
-import { axisBottom } from "d3-axis";
+import { Axis, axisBottom } from "d3-axis";
 
-import powerbiVisualsApi from "powerbi-visuals-api";
-import powerbi = powerbiVisualsApi;
+import powerbi from "powerbi-visuals-api";
 
-type Selection<T1, T2 = T1> = d3.Selection<any, T1, any, T2>;
+type Selection<T extends BaseType> = d3Selection<T, any, any, any>;
 
+// powerbi.visuals
 import DataViewCategoryColumn = powerbi.DataViewCategoryColumn;
-import DataViewObjects = powerbi.DataViewObjects;
 import Fill = powerbi.Fill;
 import ISandboxExtendedColorPalette = powerbi.extensibility.ISandboxExtendedColorPalette;
 import ISelectionId = powerbi.visuals.ISelectionId;
@@ -232,44 +250,33 @@ import IVisualHost = powerbi.extensibility.visual.IVisualHost;
 import PrimitiveValue = powerbi.PrimitiveValue;
 import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
 import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
+import DataViewObjectPropertyIdentifier = powerbi.DataViewObjectPropertyIdentifier;
 
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
 
-import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
-import { getCategoricalObjectValue, getValue } from "./objectEnumerationUtility";
+import { BarChartSettingsModel } from "./barChartSettingsModel";
+import { dataViewObjects} from "powerbi-visuals-utils-dataviewutils";
 ```
 
 ### Interfaces
 
-Next, we define the viewmodel [interfaces](utils-interactivity-selections.md#defining-an-interface-for-data-points). The following three interfaces are used to describe our bar chart visual:
+Next, we define the visual interfaces. The following interface is used to describe our bar chart visual:
 
 * BarChartDataPoint
-* BarChartViewModel
-* BarChartSettings
 
-These interfaces are defined as follows:
+This interface is defined as follows:
 
 ```typescript
-/**
- * Interface for BarCharts viewmodel.
- *
- * @interface
- * @property {BarChartDataPoint[]} dataPoints - Set of data points the visual will render.
- * @property {number} dataMax                 - Maximum data value in the set of data points.
- */
-interface BarChartViewModel {
-    dataPoints: BarChartDataPoint[];
-    dataMax: number;
-    settings: BarChartSettings;
-}
-
 /**
  * Interface for BarChart data points.
  *
  * @interface
- * @property {number} value             - Data value for point.
+ * @property {PrimitiveValue} value     - Data value for point.
  * @property {string} category          - Corresponding category of data value.
  * @property {string} color             - Color corresponding to data point.
+ * @property {string} strokeColor       - Stroke color for data point column.
+ * @property {number} strokeWidth       - Stroke width for data point column.
  * @property {ISelectionId} selectionId - Id assigned to data point for cross filtering
  *                                        and visual interaction.
  */
@@ -281,31 +288,11 @@ interface BarChartDataPoint {
     strokeWidth: number;
     selectionId: ISelectionId;
 }
-
-/**
- * Interface for BarChart settings.
- *
- * @interface
- * @property {{show:boolean}} enableAxis - Object property that allows axis to be enabled.
-*/
-interface BarChartSettings {
-    enableAxis: {
-        show: boolean;
-        fill: string;
-    };
-}
-
-let defaultSettings: BarChartSettings = {
-    enableAxis: {
-        show: false,
-        fill: "#000000",
-    }
-};
 ```
 
 ### Visual transform
 
-Now that the data structures are defined, we need to map data onto them using the `visualTransform` function. This function receives data from the data view and transforms it to a format the visual can use. In this case, it returns the `BarChartViewModel` interface described in the previous section.
+Now that the data structure is defined, we need to map data onto it using the `createSelectorDataPoints` function. This function receives data from the data view and transforms it to a format the visual can use. In this case, it returns the `BarChartDataPoint[]` interface described in the previous section.
 
 The `DataView` contains the data to be visualized. This data can be in different forms, such as categorical or tabular. To build a categorical visual like a bar chart, use the *categorical* property on the `DataView`.
 
@@ -321,13 +308,9 @@ This function is called whenever the visual is updated.
  *                                        the visual had queried.
  * @param {IVisualHost} host            - Contains references to the host which contains services
  */
-function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarChartViewModel {
-    let dataViews = options.dataViews;
-    let viewModel: BarChartViewModel = {
-        dataPoints: [],
-        dataMax: 0,
-        settings: <BarChartSettings>{}
-    };
+function createSelectorDataPoints(options: VisualUpdateOptions, host: IVisualHost): BarChartDataPoint[] {
+    const barChartDataPoints: BarChartDataPoint[] = []
+    const dataViews = options.dataViews;
 
     if (!dataViews
         || !dataViews[0]
@@ -336,27 +319,16 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
         || !dataViews[0].categorical.categories[0].source
         || !dataViews[0].categorical.values
     ) {
-        return viewModel;
+        return barChartDataPoints;
     }
 
-    let categorical = dataViews[0].categorical;
-    let category = categorical.categories[0];
-    let dataValue = categorical.values[0];
+    const categorical = dataViews[0].categorical;
+    const category = categorical.categories[0];
+    const dataValue = categorical.values[0];
 
-    let barChartDataPoints: BarChartDataPoint[] = [];
-    let dataMax: number;
-
-    let colorPalette: ISandboxExtendedColorPalette = host.colorPalette;
-    let objects = dataViews[0].metadata.objects;
+    const colorPalette: ISandboxExtendedColorPalette = host.colorPalette;
 
     const strokeColor: string = getColumnStrokeColor(colorPalette);
-
-    let barChartSettings: BarChartSettings = {
-        enableAxis: {
-            show: getValue<boolean>(objects, 'enableAxis', 'show', defaultSettings.enableAxis.show),
-            fill: getAxisTextFillColor(objects, colorPalette, defaultSettings.enableAxis.fill),
-        }
-    };
 
     const strokeWidth: number = getColumnStrokeWidth(colorPalette.isHighContrast);
 
@@ -377,13 +349,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
         });
     }
 
-    dataMax = <number>dataValue.maxLocal;
-
-    return {
-        dataPoints: barChartDataPoints,
-        dataMax: dataMax,
-        settings: barChartSettings,
-    };
+    return barChartDataPoints;
 }
 
 ```
@@ -398,14 +364,15 @@ Before rendering the visual, we have to declare the members of the class:
 
 ```typescript
 export class BarChart implements IVisual {
-    private svg: Selection<any>;
+    private svg: Selection<SVGSVGElement>;
     private host: IVisualHost;
     private barContainer: Selection<SVGElement>;
-    private xAxis: Selection<SVGElement>;
+    private xAxis: Selection<SVGGElement>;
     private barDataPoints: BarChartDataPoint[];
-    private barChartSettings: BarChartSettings;
+    private formattingSettings: BarChartSettingsModel;
+    private formattingSettingsService: FormattingSettingsService;
 
-    private barSelection: d3.Selection<d3.BaseType, any, d3.BaseType, any>;
+    private barSelection: Selection<BaseType>;
 
     static Config = {
         xScalePadding: 0.1,
@@ -418,8 +385,8 @@ export class BarChart implements IVisual {
             left: 30,
         },
         xAxisFontMultiplier: 0.04,
-    }
- }
+    };
+}
 ```
 
 ### Construct the visual
@@ -438,6 +405,9 @@ Notice that it uses the d3 library to render the SVG.
      */
     constructor(options: VisualConstructorOptions) {
         this.host = options.host;
+        //Creating the formatting settings service.
+        const localizationManager = this.host.createLocalizationManager();
+        this.formattingSettingsService = new FormattingSettingsService(localizationManager);
 
         this.svg = d3Select(options.element)
             .append('svg')
@@ -463,7 +433,7 @@ We need to scale the visual so that the number of bars and current values fit in
 
 To calculate the scale, we use the `scaleLinear` and `scaleBand` methods that were imported earlier from the `d3-scale` library.
 
-The `viewModel.datamax` value holds the largest value of all current data points. This value is used to determine the height of the y axis. The scaling for the width of the x axis is determined by the number of categories bound to the visual in the `barchartdatapoint` interface.
+The `options.dataViews[0].categorical.values[0].maxLocal` value holds the largest value of all current data points. This value is used to determine the height of the y axis. The scaling for the width of the x axis is determined by the number of categories bound to the visual in the `barchartdatapoint` interface.
 
 For cases where the X axis is rendered, this visual also handles word breaks in case there isn't enough room to write out the entire name on the X axis.
 
@@ -481,47 +451,42 @@ In addition to scaling, the update method also handles selections and colors. Th
      *                                        the visual had queried.
      */
     public update(options: VisualUpdateOptions) {
-        let viewModel: BarChartViewModel = visualTransform(options, this.host);
-        let settings = this.barChartSettings = viewModel.settings;
-        this.barDataPoints = viewModel.dataPoints;
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(BarChartSettingsModel, options.dataViews?.[0]);
+        this.barDataPoints = createSelectorDataPoints(options, this.host);
+        this.formattingSettings.populateColorSelector(this.barDataPoints);
 
-        let width = options.viewport.width;
+        const width = options.viewport.width;
         let height = options.viewport.height;
 
         this.svg
             .attr("width", width)
             .attr("height", height);
 
-        if (settings.enableAxis.show) {
-            let margins = BarChart.Config.margins;
+        if (this.formattingSettings.enableAxis.show.value) {
+            const margins = BarChart.Config.margins;
             height -= margins.bottom;
         }
 
         this.xAxis
             .style("font-size", Math.min(height, width) * BarChart.Config.xAxisFontMultiplier)
-            .style("fill", settings.enableAxis.fill);
+            .style("fill", this.formattingSettings.enableAxis.fill.value.value);
 
-        let yScale = scaleLinear()
-            .domain([0, viewModel.dataMax])
+        const yScale: ScaleLinear<number, number> = scaleLinear()
+            .domain([0, <number>options.dataViews[0].categorical.values[0].maxLocal])
             .range([height, 0]);
 
-        let xScale = scaleBand()
-            .domain(viewModel.dataPoints.map(d => d.category))
+        const xScale: ScaleBand<string> = scaleBand()
+            .domain(this.barDataPoints.map(d => d.category))
             .rangeRound([0, width])
             .padding(0.2);
 
-        let xAxis = axisBottom(xScale);
+        const xAxis: Axis<string> = axisBottom(xScale);
 
-        const colorObjects = options.dataViews[0] ? options.dataViews[0].metadata.objects : null;
         this.xAxis.attr('transform', 'translate(0, ' + height + ')')
             .call(xAxis)
-            .attr("color", getAxisTextFillColor(
-                colorObjects,
-                this.host.colorPalette,
-                defaultSettings.enableAxis.fill
-            ));
+            .attr("color", this.formattingSettings.enableAxis.fill.value.value);
 
-        const textNodes = this.xAxis.selectAll("text")
+        const textNodes: Selection<SVGElement> = this.xAxis.selectAll("text");
         BarChart.wordBreak(textNodes, xScale.bandwidth(), height);
 
         this.barSelection = this.barContainer
@@ -537,9 +502,9 @@ In addition to scaling, the update method also handles selections and colors. Th
 
         barSelectionMerged
             .attr("width", xScale.bandwidth())
-            .attr("height", d => height - yScale(<number>d.value))
-            .attr("y", d => yScale(<number>d.value))
-            .attr("x", d => xScale(d.category))
+            .attr("height", (dataPoint: BarChartDataPoint) => height - yScale(<number>dataPoint.value))
+            .attr("y", (dataPoint: BarChartDataPoint) => yScale(<number>dataPoint.value))
+            .attr("x", (dataPoint: BarChartDataPoint) => xScale(dataPoint.category))
             .style("fill", (dataPoint: BarChartDataPoint) => dataPoint.color)
             .style("stroke", (dataPoint: BarChartDataPoint) => dataPoint.strokeColor)
             .style("stroke-width", (dataPoint: BarChartDataPoint) => `${dataPoint.strokeWidth}px`);
@@ -547,11 +512,10 @@ In addition to scaling, the update method also handles selections and colors. Th
         this.barSelection
             .exit()
             .remove();
-
     }
 
     private static wordBreak(
-        textNodes: Selection<any, SVGElement>,
+        textNodes: Selection<SVGElement>,
         allowedWidth: number,
         maxHeight: number
     ) {
@@ -565,194 +529,79 @@ In addition to scaling, the update method also handles selections and colors. Th
 
 ```
 
-### Populate the properties pane
+### Populate the properties pane using the formatting model Utils
 
-The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getformattingmodel-optional). This method builds and returns a modern *format pane formatting model* object containing all the [format pane](./format-pane.md) components and properties. It then places the object inside the **Format** pane.
-In our case, we create format cards for `enableAxis` and `colorSelector`, including formatting properties for `show` and `fill`, according to the *"objects"* in the *capabilities.json* file.
+The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getformattingmodel-optional). This method builds and returns a modern *format pane formatting model* object containing all the [format pane](./format-pane.md) components and properties. It then places the object inside the **Format** pane. In our case, we create format cards for `enableAxis` and `colorSelector`, including formatting properties for `show` and `fill`, according to the *"objects"* in the *capabilities.json* file. To add a color picker for each category on the **Property** pane, add a for loop on `barDataPoints` and for each one add a new color picker format property to the formatting model.
 
-To build a formatting model, the developer should be familiar with all its components, Check out the components of the format pane in Format Pane.
+To build a formatting model, the developer should be familiar with all its components. Check out the components of the format pane in [`Format Pane`](./format-pane.md). Check out `getFormattingModel` API of the [`FormattingModel utils`](./utils-formatting-model.md) in the [formatting model utils repository](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel).
 
-To add a color picker for each category on the **Property** pane, add a for loop on `barDataPoints` and for each one add a new color picker format property to the formatting model.
-
-```typescript
-    /** Gets the settings to display in the formatting pane */
-    public getFormattingModel(): powerbi.visuals.FormattingModel {
-        const enableAxisCard: powerbi.visuals.FormattingCard = {
-            displayName: "Enable Axis",
-            uid: "enableAxisCard_uid",
-            topLevelToggle: {
-                uid: "enableAxisCard_topLevelToggle_showToggleSwitch_uid",
-                suppressDisplayName: true,
-                control: {
-                    type: powerbi.visuals.FormattingComponent.ToggleSwitch,
-                    properties: {
-                        descriptor: {
-                            objectName: "enableAxis",
-                            propertyName: "show"
-                        },
-                        value: this.barChartSettings.enableAxis.show
-                    }
-                }
-            },
-            groups: [{
-                displayName: undefined,
-                uid: "enableAxisCard_group1_uid",
-                slices: [
-                    {
-                        uid: "enableAxisCard_group1_fill_uid",
-                        displayName: "Color",
-                        control: {
-                            type: powerbi.visuals.FormattingComponent.ColorPicker,
-                            properties: {
-                                descriptor: {
-                                    objectName: "enableAxis",
-                                    propertyName: "fill"
-                                },
-                                value: { value: this.barChartSettings.enableAxis.fill }
-                            }
-                        }
-                    }
-                ],
-            }],
-            revertToDefaultDescriptors: [
-                {
-                    objectName: "enableAxis",
-                    propertyName: "show"
-                },
-                {
-                    objectName: "enableAxis",
-                    propertyName: "fill"
-                }
-            ]
-        };
-
-        const colorSelectorCard: powerbi.visuals.FormattingCard = {
-            displayName: "Data Colors",
-            uid: "dataColorsCard_uid",
-            groups: [{
-                displayName: undefined,
-                uid: "dataColorsCard_group_uid",
-
-                slices: [],
-            }]
-        };
-
-        if (this.barDataPoints) {
-            this.barDataPoints.forEach(dataPoint => {
-                (colorSelectorCard.groups[0] as powerbi.visuals.FormattingGroup).slices.push(
-                    {
-                        uid: `dataColorsCard_group_colorSelector${dataPoint.category}_uid`,
-                        displayName: dataPoint.category,
-                        control: {
-                            type: powerbi.visuals.FormattingComponent.ColorPicker,
-                            properties: {
-                                descriptor: {
-                                    objectName: "colorSelector",
-                                    propertyName: "fill",
-                                    selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
-                                    altConstantValueSelector: dataPoint.selectionId.getSelector(),
-                                    instanceKind: powerbi.VisualEnumerationInstanceKinds.ConstantOrRule
-                                },
-                                value: { value: dataPoint.color }
-                            }
-                        }
-                    });
-            });
-
-            colorSelectorCard.revertToDefaultDescriptors = [
-                {
-                    objectName: "colorSelector",
-                    propertyName: "fill"
-                }
-            ]
-        }
-        return { cards: [enableAxisCard, colorSelectorCard] };
-    } 
-```
-
-## (Optional) Populate the properties pane using the formatting model Utils
-
-Populate the properties pane using the `getFormattingModel` API in the [formatting model utils repository](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel).
-
-For the full code of a sample bar chart with formatting model utils, see [the bar chart repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial-FormattingModelUtils).
-
+[Download the file](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChartSettingsModel.ts) and save it to the */src* folder.
 Declare formatting properties and their values in a formatting settings class:
 
 ```typescript
-import powerbi from "powerbi-visuals-api";
-import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 import { BarChartDataPoint } from "./barChart";
 
-import FormattingSettingsCard = formattingSettings.SimpleCard;
-import FormattingSettingsSlice = formattingSettings.Slice;
-import FormattingSettingsModel = formattingSettings.Model;
+import Card = formattingSettings.SimpleCard;
+import Model = formattingSettings.Model;
+import Slice = formattingSettings.Slice;
+import ColorPicker = formattingSettings.ColorPicker;
+import ToggleSwitch = formattingSettings.ToggleSwitch;
 
 /**
  * Enable Axis Formatting Card
  */
-class EnableAxisCardSettings extends FormattingSettingsCard {
-    // Formatting property `show` toggle switch (formatting simple slice)
-    show = new formattingSettings.ToggleSwitch({
+class EnableAxisCardSettings extends Card {
+    show = new ToggleSwitch({
         name: "show",
         displayName: undefined,
         value: false,
-        topLevelToggle: true,
-        show: true
     });
 
-    // Formatting property `fill` color picker (formatting simple slice)
-    fill = new formattingSettings.ColorPicker({
+    fill = new ColorPicker({
         name: "fill",
         displayName: "Color",
-        value: { value: "#000000" },
-        show: true
+        value: { value: "#000000" }
     });
-
+    topLevelSlice: ToggleSwitch = this.show;
     name: string = "enableAxis";
     displayName: string = "Enable Axis";
-    show: boolean = true;
-    slices: Array<FormattingSettingsSlice> = [this.show, this.fill];
+    slices: Slice[] = [this.fill];
 }
 
 /**
  * Color Selector Formatting Card
  */
-
-class ColorSelectorCardSettings extends FormattingSettingsCard {
+class ColorSelectorCardSettings extends Card {
     name: string = "colorSelector";
     displayName: string = "Data Colors";
 
     // slices will be populated in barChart settings model `populateColorSelector` method
-    slices: Array<FormattingSettingsSlice> = [];
+    slices: Slice[] = [];
 }
 
 /**
-* BarChart settings model class
-*
+* BarChart formatting settings model class
 */
-export class BarChartSettingsModel extends FormattingSettingsModel {
-
+export class BarChartSettingsModel extends Model {
     // Create formatting settings model formatting cards
     enableAxis = new EnableAxisCardSettings();
     colorSelector = new ColorSelectorCardSettings();
-    cards = [this.enableAxis, this.colorSelector];
+    cards: Card[] = [this.enableAxis, this.colorSelector];
 
     /**
      * populate colorSelector object categories formatting properties
      * @param dataPoints 
      */
     populateColorSelector(dataPoints: BarChartDataPoint[]) {
-        let slices = this.colorSelector.slices;
+        const slices: Slice[] = this.colorSelector.slices;
         if (dataPoints) {
             dataPoints.forEach(dataPoint => {
-                slices.push(new formattingSettings.ColorPicker({
+                slices.push(new ColorPicker({
                     name: "fill",
                     displayName: dataPoint.category,
                     value: { value: dataPoint.color },
-                    selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
-                    altConstantSelector: dataPoint.selectionId.getSelector(),
-                    instanceKind: powerbi.VisualEnumerationInstanceKinds.ConstantOrRule
+                    selector: dataPoint.selectionId.getSelector(),
                 }));
             });
         }
@@ -821,30 +670,6 @@ You can toggle these objects on or off in the **Property** pane.
 This example renders an X-axis on the bar chart as a static object.
 
 We already added the `enableAxis` property to the *capabilities* file and the barChartSettings interface.
-Add the following code to the *barChart.ts* file *before* the iVisual class to draw the X-axis:
-
-```typescript
-function getAxisTextFillColor(
-    objects: DataViewObjects,
-    colorPalette: ISandboxExtendedColorPalette,
-    defaultColor: string
-): string {
-    if (colorPalette.isHighContrast) {
-        return colorPalette.foreground.value;
-    }
-
-    return getValue<Fill>(
-        objects,
-        "enableAxis",
-        "fill",
-        {
-            solid: {
-                color: defaultColor,
-            }
-        },
-    ).solid.color;
-}
-```
 
 ## (Optional) Add color (data-bound objects)
 
@@ -872,13 +697,17 @@ function getColumnColorByIndex(
         }
     };
 
-    return getCategoricalObjectValue<Fill>(
-        category,
-        index,
-        'colorSelector',
-        'fill',
-        defaultColor
-    ).solid.color;
+    const prop: DataViewObjectPropertyIdentifier = {
+        objectName: "colorSelector",
+        propertyName: "fill"
+    };
+
+    let colorFromObjects: Fill;
+    if(category.objects?.[index]){
+        colorFromObjects = dataViewObjects.getValue(category?.objects[index], prop);
+    }
+
+    return colorFromObjects?.solid.color ?? defaultColor.solid.color;
 }
 
 function getColumnStrokeColor(colorPalette: ISandboxExtendedColorPalette): string {
@@ -894,73 +723,12 @@ function getColumnStrokeWidth(isHighContrast: boolean): number {
 }
 ```
 
-The `colorPalette` service, in the `visualTransform` function, manages these colors. Since `visualTransform` iterates through each of the data points, it's an ideal place to assign categorical objects like color.
+The `colorPalette` service, in the `createSelectorDataPoints` function, manages these colors. Since `createSelectorDataPoints` iterates through each of the data points, it's an ideal place to assign categorical objects like color.
 
 For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md).
 
 > [!NOTE]
-> Verify that your final *barChart.ts* file looks like this [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts), or download the [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and use it to replace your file.
-
-## Object enumeration utility (optional)
-
-Object property values are available as metadata in the `dataView`, but there's no service to help retrieve these values. `ObjectEnumerationUtility` is an optional set of static functions that iterate through the `dataView` and retrieve object values.
-Create a file called *objectEnumerationUtility.ts* in the `src` folder and copy the following code into it:
-
-```typescript
-/**
- * Gets property value for a particular object.
- *
- * @function
- * @param {DataViewObjects} objects - Map of defined objects.
- * @param {string} objectName       - Name of desired object.
- * @param {string} propertyName     - Name of desired property.
- * @param {T} defaultValue          - Default value of desired property.
- */
-export function getValue<T>(objects: DataViewObjects, objectName: string, propertyName: string, defaultValue: T ): T {
-    if(objects) {
-        let object = objects[objectName];
-        if(object) {
-            let property: <T>T = object[propertyName];
-            if(property !== undefined) {
-                return property;
-            }
-        }
-    }
-    return defaultValue;
-}
-
-/**
- * Gets property value for a particular object in a category.
- *
- * @function
- * @param {DataViewCategoryColumn} category - List of category objects.
- * @param {number} index                    - Index of category object.
- * @param {string} objectName               - Name of desired object.
- * @param {string} propertyName             - Name of desired property.
- * @param {T} defaultValue                  - Default value of desired property.
- */
-export function getCategoricalObjectValue<T>(category: DataViewCategoryColumn, index: number, objectName: string, propertyName: string, defaultValue: T): T {
-    let categoryObjects = category.objects;
-
-    if (categoryObjects) {
-        let categoryObject: DataViewObject = categoryObjects[index];
-        if (categoryObject) {
-            let object = categoryObject[objectName];
-            if (object) {
-                let property: T = <T>object[propertyName];
-                if (property !== undefined) {
-                    return property;
-                }
-            }
-        }
-    }
-    return defaultValue;
-}
-```
-
-The function `getCategoricalObjectValue` provides a convenient way to access properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
-
-See [*objectEnumerationUtility.ts*](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for the source code.
+> Verify that your final *barChart.ts* file looks like this [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChart.ts), or download the [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChart.ts) and use it to replace your file.
 
 ## Test the visual
 

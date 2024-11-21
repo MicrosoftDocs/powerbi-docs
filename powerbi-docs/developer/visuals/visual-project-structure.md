@@ -6,8 +6,9 @@ ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 08/09/2023
+ms.topic: concept-article
+ms.date: 06/09/2024
+#customer intent: As a Power BI developer, I want to learn about the files and their contents that are created by the Power BI visuals tool when I create a new visual.
 ---
 
 # Power BI visual project structure
@@ -111,7 +112,7 @@ The comments in the following code caption from the `pbiviz.json` file describe 
 > [!NOTE]
 >
 > * From version 3.x.x of the **pbiviz** tool,`externalJS` isn't supported.
-> * Version numbers should contain four digits in the following format `x.x.x.x`.
+> * Version numbers should contain four digits in the following format `x.x.x.x`. If your visual only has three digits, add a `.0` at the end.
 > * For localization support, [add the Power BI locale to your visual](./localization.md).
 
 ```json

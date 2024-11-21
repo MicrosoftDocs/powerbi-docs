@@ -1,12 +1,13 @@
 ---
 title: "Power BI usage scenarios"
 description: "An overview of the Power BI implementation planning usage scenario articles."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 12/09/2023
 ---
 
@@ -44,13 +45,15 @@ The following usage scenarios are about *content collaboration and delivery*. Th
     > [!NOTE]
     > Additional information about [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) and [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) are described in the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ## Self-service BI scenarios
 
 Four usage scenarios focus on supporting *self-service BI* activities, in which analytical responsibilities are handled by people throughout many areas of the organization. The content collaboration and delivery scenarios (described in the previous group of scenarios) also include aspects of self-service BI but from a slightly different viewpoint. The intention of this set of scenarios is to focus on several important aspects to plan for in a Power BI implementation.
 
 The self-service BI scenarios presented here primarily emphasize the use of *managed self-service BI* in which data management is centralized. Reusability of this centralized data is one of the primary goals. Business users take responsibility for creation of reports and dashboards.
 
-- **[Managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md):** The goal is for many report creators to reuse shared semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)). This scenario describes decoupling the report creation process from the semantic model creation process. To encourage report authors to find and reuse an existing shared semantic model, it should be endorsed and made discoverable in the data hub in the Power BI service.
+- **[Managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md):** The goal is for many report creators to reuse shared semantic models. This scenario describes decoupling the report creation process from the semantic model creation process. To encourage report authors to find and reuse an existing shared semantic model, it should be endorsed and made discoverable in the data hub in the Power BI service.
 - **[Customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md):** The focus is on the semantic model creator customizing or extending an existing semantic model to satisfy new requirements. This scenario describes publishing a customized data model where some tables are new while others are dependent on the existing shared semantic model.
 - **[Self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md):** The focus is on centralizing data preparation activities to improve consistency and reduce effort. This scenario describes creating Power BI dataflows to avoid repeating data preparation Power Query logic in many different Power BI Desktop files. A dataflow can be consumed as a data source by numerous semantic models.
 - **[Advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md):** The focus is on improving the reach and reusability of dataflows for multiple users, teams, and use cases. This scenario describes use of multiple workspaces based on purpose: staging, cleansed, and final.

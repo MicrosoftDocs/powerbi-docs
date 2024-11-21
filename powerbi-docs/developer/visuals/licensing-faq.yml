@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-custom-visuals
   ms.topic: faq
-  ms.date: 07/25/2023
+  ms.date: 07/25/2024
 title: Frequently asked questions about Custom visual license management and transactability
 summary: |
   This article answers some of the questions users often have about how to set up, pay for, and manage licenses for custom Power BI visuals that they purchase from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&exp=kyyw&page=1&filters=pay-as-you-go).
@@ -48,7 +48,7 @@ sections:
           You can pay for the licenses with a credit card.  
           Prepaid cards are not supported.
 
-          Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if that's set up for your company.
+          Billing admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if that's set up for your company.
 
           Read more about [setting payment methods](/microsoft-365/commerce/billing-and-payments/manage-payment-methods#change-a-payment-method-for-a-single-subscription).
           Follow [these steps](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles#view-my-billing-profiles) to see your billing profile.
@@ -137,7 +137,7 @@ sections:
           > [!NOTE]
           > After buying the visual, the buyer (owner) is automatically assigned a license. Their license is available after [refreshing the report](#once-i-assign-a-license--how-long-does-it-take-until-i-can-use-it-). It might take a few minutes.
 
-          If the tenant admin owns the licenses (organizational licenses), then any of the license admins (Global Admin, License Admin or User Admin) can manage the licenses.  
+          If the tenant admin owns the licenses (organizational licenses), then any of the license admins (License Admin or User Admin) can manage the licenses.  
           However, if the license owner isn't an admin, then only the purchaser/owner can manage the subscription and licenses.
 
       - question: |
@@ -180,7 +180,7 @@ sections:
       - question: |
           What happens if the subscription owner leaves the company?
         answer: |
-          Even if the owner of the subscription leaves the company, tenant admin purchases (typically known as organizational purchases) continue to work as-is. If the owner was an admin, any license admin (Global Admin, License Admin, User Admin) can continue to manage the licenses. The subscriptions can be managed by any Billing Admin or Global Admin with access to the billing account used for purchase.  
+          Even if the owner of the subscription leaves the company, tenant admin purchases (typically known as organizational purchases) continue to work as-is. If the owner was an admin, any license admin (License Admin, User Admin) can continue to manage the licenses. The subscriptions can be managed by any Billing Admin with access to the billing account used for purchase.  
           If the owner wasn't an admin, the license will continue to work as long as the subscription is active. However, the subscription can't be managed by anyone else.
           
       - question: |
@@ -191,7 +191,7 @@ sections:
       - question: |
           As an admin, can I cancel offer purchase from AppSource?
         answer: |
-          As a billing or global admin, you can see all subscriptions in the Microsoft 365 admin center, and you can cancel them.
+          As a billing admin, you can see all subscriptions in the Microsoft 365 admin center, and you can cancel them.
 
       - question: |
           How can I get more help or support for managing licenses?

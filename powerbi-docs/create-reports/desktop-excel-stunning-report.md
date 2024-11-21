@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 06/15/2022
+ms.date: 08/20/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 
 In this tutorial, you build a beautiful report from start to finish in 20 minutes! 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of finished Power BI report."::: 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of your completed Power B I report in the Power B I service." lightbox="media/desktop-excel-stunning-report/power-bi-excel-report-service.png"::: 
 
 Your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
@@ -47,7 +47,7 @@ You can get the data for this tutorial using one of two methods.
 
 When you open Power BI Desktop, select **Try a sample semantic model** from the blank canvas.
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample semantic model on the canvas."::: 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample semantic model on the canvas." lightbox="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png"::: 
 
 If you've landed on this tutorial from Power BI Desktop, go ahead and choose **Load data**.
 
@@ -68,7 +68,7 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 1. Select the **Financials** table, and choose **Transform Data**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Screenshot of Power BI Navigator with Financial sample data."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Screenshot of Power BI Navigator with Financial sample data." lightbox="media/desktop-excel-stunning-report/power-bi-financial-navigator.png"::: 
 
 1. Select the **Units Sold** column. On the **Transform** tab, select **Data Type**, then select **Whole Number**. Choose **Replace current** to change the column type. 
 
@@ -96,17 +96,19 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 1. Back on the **Home** tab, select **Close & Apply**. Our data is almost ready for building a report. 
 
-    You see the Sigma symbol in the Fields list? Power BI has detected that those fields are numeric. Power BI also indicates the date field with a calendar symbol.
+    You see the Sigma symbol in the Data list? Power BI has detected that those fields are numeric. Power BI also indicates the date field with a calendar symbol.
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Fields list with numeric fields and date field.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Data list with numeric fields and date field.":::
 
-### Extra credit: Write an expression in DAX
+## Extra credit: Write two expressions in DAX
 
-Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression and join two tables. 
+Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression to create a new measure, and another expression to create a whole table.
+
+### Create a new measure
 
 1. On the **Home** ribbon, select **New measure**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/desktop-new-measure-icon.png" alt-text="Screenshot of New measure icon on the Home ribbon.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/desktop-new-measure-icon.png" alt-text="Screenshot of New measure icon on the Home ribbon." lightbox="media/desktop-excel-stunning-report/desktop-new-measure-icon.png":::
 
 1. Type this expression to add all the numbers in the Units Sold column.
 
@@ -117,8 +119,10 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 1. Select the check mark to commit.
     
     :::image type="content" source="media/desktop-excel-stunning-report/dax-total-units-sold.png" alt-text="Screenshot of DAX expression Total Units Sold.":::
+
+ ### Create a new table
  
-1. Now select the **Data** view on the left.
+1. Now select the **Table view** icon on the left.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Data View icon.":::
 
@@ -136,7 +140,11 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression Calendar.":::
 
-1. Now select **Model** view on the left. 
+    Here are the first 23 rows of the single-column table you just created.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/calendar-result.png" alt-text="Screenshot of the calendar you created with the DAX expression.":::
+   
+1. Now select **Model view** on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
 
@@ -146,11 +154,15 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 ## Build your report 
 
-Now that you've transformed and loaded your data, it's time to create your report. In the Fields pane on the right, you see the fields in the data model you created. 
+Now that you've transformed and loaded your data, it's time to create your report. In the left rail, select **Report view**. 
+
+:::image type="content" source="media/desktop-excel-stunning-report/report-view-icon.png" alt-text="Screenshot of Report view icon.":::
+
+In the Data pane on the right, you see the fields in the data model you created. 
 
 Let’s build the final report, one visual at a time. 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Screenshot of all the elements of the report, by number.":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Screenshot of all the elements of the report, by number." lightbox="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png":::
 
 ### Visual 1: Add a title 
 
@@ -165,24 +177,24 @@ Let’s build the final report, one visual at a time.
 
 Now, you create a line chart to see which month and year had the highest profit. 
 
-1. From the Fields pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
-1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#extra-credit-write-an-expression-in-dax) earlier in this article, drag the **Date** field from your Calendar table instead. 
+1. From the Data pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
+1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#create-a-new-table) earlier in this article, drag the **Date** field from your Calendar table instead. 
 
     Power BI updates the column chart to show profit by the two years.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart." lightbox="media/desktop-excel-stunning-report/power-bi-column-year.png":::
 
-1. In the **Fields** section of the Visualizations pane, select the drop-down in the **X-axis** value. Change **Date** from **Date Hierarchy** to **Date**.
+1. In the **Add data to your visual** section of the Visualizations pane, select the drop-down in the **X-axis** value. Change **Date** from **Date Hierarchy** to **Date**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing Date hierarchy to Date.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Screenshot of changing Date hierarchy to Date.":::
 
     Power BI updates the column chart to show profit for each month.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Screenshot of column chart by month.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Screenshot of column chart by month." lightbox="media/desktop-excel-stunning-report/power-bi-column-month.png":::
 
 1. In the Visualizations pane, change the visualization type to **Line chart**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Screentshot of changing column to bar chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Screenshot of changing column to line chart.":::
 
     Now you can easily see that December 2014 had the most profit.
 
@@ -190,12 +202,12 @@ Now, you create a line chart to see which month and year had the highest profit.
 
 Create a map to see which country/region had the highest profits.
 
-1. From the Fields pane, drag the **Country** field to a blank area on your report canvas to create a map.
+1. From the Data pane, drag the **Country** field to a blank area on your report canvas to create a map.
 1. Drag the **Profit** field to the map.
 
     Power BI creates a map visual with bubbles representing the relative profit of each location. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of creating map chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of creating map chart." lightbox="media/desktop-excel-stunning-report/power-bi-map-visual.png":::
 
     Europe seems to be performing better than North America. 
 
@@ -206,27 +218,27 @@ Create a bar chart to determine which companies and segments to invest in.
 1. Drag the two charts you've created to be side by side in the top half of the canvas. Save some room on the left side of the canvas. 
 1. Select a blank area in the lower half of your report canvas. 
 
-1. In the Fields pane, select the **Sales**, **Product**, and **Segment** fields. 
+1. In the Data pane, select the **Sales**, **Product**, and **Segment** fields. 
 
     Power BI automatically creates a clustered column chart. 
 
 1. Drag the chart so it's wide enough to fill the space under the two upper charts.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png" alt-text="Screenshot of a clustered column chart." lightbox="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-expanded.png":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of a line chart." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
 
-    Looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
+    It looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
 
 ### Visual 5: Year slicer 
 
-Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-an-expression-in-dax) earlier in this tutorial.
+Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#create-a-new-table) earlier in this tutorial.
 
 
 **Date slicer using the original table**
 
-1. In the Fields pane, select the **Date** field in the Financials table. Drag it to the blank area on the left of the canvas. 
-2. In the Visualizations pane, choose **Slicer**. 
+1. In the Data pane, select the **Date** field in the Financials table. Drag it to the blank area on the left of the canvas. 
+1. In the Visualizations pane, choose **Slicer**. 
 
-    Power BI automatically creates a numeric range slicer. 
+    Slicer is the icon with a funnel next to a tab, but without the small lightning bolt. Power BI automatically creates a numeric range slicer. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-numeric-range.png" alt-text="Screenshot of Date numeric range slicer.":::
 
@@ -234,19 +246,19 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
 **Date slicer using the DAX table**
 
-1. In the Fields pane, select the **Date** field in the Calendar table. Drag it to the blank area on the left of the canvas. 
-2. In the Visualizations pane, choose **Slicer**. 
-3. In the Fields section of the Visualizations pane, select the drop-down in **Fields**. Remove Quarter and Day so only Year and Month are left. 
+1. In the Data pane, select the **Date** field in the Calendar table. Drag it to the blank area on the left of the canvas. 
+1. In the Visualizations pane, choose **Slicer**. 
+1. In the Data section of the Visualizations pane, select the drop-down in **Data**. Remove Quarter and Day so only Year and Month are left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Screenshot of changing the Date hierarchy.":::
 
-4. Expand each year and resize the visual, so all months are visible.
+1. Expand each year and resize the visual, so all months are visible.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Screenshot of date hierarchy slicer.":::
 
     We'll use this slicer in the finished report.
 
-Now if your manager asks to see just 2013 data, you can use either slicer to select years, or specific months of each year.
+Now if your manager asks to see just 2013 data, you can use the slicer to select years, or specific months of each year.
 
 ### Extra credit: Format the report
 
@@ -275,7 +287,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 **Add a background shape for the title**
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
-1. In the **Format shape** pane, in the **Outline** section, change **Transparency** to **100%**. 
+1. In the **Format shape** pane, in the **Visual border** section, set it to **Off**. 
 1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9** (blue). 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-color-5.png" alt-text="Screenshot of Theme color 5.":::
@@ -286,7 +298,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 **Add a background shape for visuals 2 and 3**
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it to be the width and height of Visuals 2 and 3. 
-1. In the **Format shape** pane, in the **Outline** section, change **Transparency** to **100%**. 
+1. In the **Format shape** pane, in the **Border** section, change **Transparency** to **100%**. 
 2. In the **Fill** section, set the color to **White, 10% darker**.
 3. On the **Format** tab, select **Send backward** > **Send to back**. 
 
@@ -294,7 +306,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 Here's how your final polished report will look:  
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of final, formatted report.":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of final, formatted report." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
 
 In summary, this report answers your manager’s top questions: 
 
@@ -312,7 +324,7 @@ In summary, this report answers your manager’s top questions:
 
 ## Save your report
 
-- On the **File** menu, select **Save**.
+- On the **File** menu, select **Save**, or hold **Ctrl** and then press the **S** key. If you're saving the report for the first time, you're prompted for a location to save it to.
 
 ## Publish to the Power BI service to share 
 

@@ -14,7 +14,7 @@ ms.date: 05/23/2023
 
 It's important to have insight into the availability of your mission-critical business applications. Power BI provides incident notification so you can optionally receive emails if there's a service disruption or degradation. While the Power BI 99.9% service level agreement (SLA) makes these occurrences rare, it's still possible for disruptions to occur. The following screenshot shows the type of email you'll receive if you enable notifications:
 
-![Screenshot of an email notifying the recipient of a refresh issue with Power BI.](media/service-interruption-notifications/refresh-notification-email.png)
+![Screenshot of an email notifying the recipient of a refresh issue with Power BI.](media/service-interruption-notifications/refresh-notification-email2.png)
 
 At this time, emails are sent for the following _reliability scenarios_:
 

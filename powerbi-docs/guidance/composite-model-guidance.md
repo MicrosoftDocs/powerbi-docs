@@ -1,12 +1,13 @@
 ---
 title: Composite model guidance in Power BI Desktop
 description: Guidance for developing Power BI composite models.
-author: davidiseminger
-ms.author: davidi
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/10/2023
 ---
 
@@ -21,7 +22,7 @@ This article targets data modelers developing Power BI composite models. It desc
 
 ## Composite model use cases
 
-By definition, a composite model combines multiple _source groups_. A source group can represent imported data or a connection to a DirectQuery source. A DirectQuery source can be either a relational database or another tabular model, which can be a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or an [Analysis Services tabular model](/analysis-services/tabular-models/tabular-models-ssas?view=asallproducts-allversions&preserve-view=true). When a tabular model connects to another tabular model, it's known as _chaining_. For more information, see [Using DirectQuery for Power BI semantic models and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services#chaining).
+By definition, a composite model combines multiple _source groups_. A source group can represent imported data or a connection to a DirectQuery source. A DirectQuery source can be either a relational database or another tabular model, which can be a Power BI semantic model or an [Analysis Services tabular model](/analysis-services/tabular-models/tabular-models-ssas?view=asallproducts-allversions&preserve-view=true). When a tabular model connects to another tabular model, it's known as _chaining_. For more information, see [Using DirectQuery for Power BI semantic models and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services#chaining).
 
 > [!NOTE]
 > When a model connects to a tabular model but doesn't extend it with additional data, it's not a composite model. In this case, it's a DirectQuery model that connects to a remote model—so it comprises just the one source group. You might create this type of model to modify source model object properties, like a table name, column sort order, or format string.

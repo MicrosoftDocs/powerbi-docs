@@ -17,6 +17,8 @@
       href: projects-azdo.md
     - name: "Azure DevOps build pipelines"
       href: projects-build-pipelines.md
+    - name: "Deploy using Fabric APIs"
+      href: /rest/api/fabric/articles/get-started/deploy-project?toc=/power-bi/developer/projects/TOC.json
   - name: External tools
     items:
     - name: External tools in Power BI Desktop

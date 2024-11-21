@@ -1,13 +1,14 @@
 ---
-title: Power BI embedded analytics assess load for capacity planning.
-description: Learn how to plan your Premium capacity in Power BI embedded analytics.
+title: Power BI embedded analytics assess load
+description: Learn how to asses your capacity load so yuo can plan your Premium capacity in Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 04/24/2022
+ms.date: 06/04/2024
+#customer intent: As an Admin, I want to learn how to assess my capacity so that I can plan better.
 ---
 
 # Assess your capacity load
@@ -16,7 +17,7 @@ This article explains how to simplify capacity planning for Power BI embedded an
 
 ## Load assessment tool
 
- The [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) can help you understand how much user load your capacity can handle. It uses PowerShell to create automated load tests against your capacities, and lets you choose which reports to test, and how many concurrent users to simulate.
+ The [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) can be used to for simulating interactive Power BI report traffic. It uses PowerShell to create automated load tests against your capacities, and lets you choose which reports to test, and how many concurrent users to simulate.
 
 The tool generates load on a capacity by continuously rendering each report with new filter values (to prevent unrealistically good performance due to report caching), until the token required for authenticating the tool against the service, expires.
 

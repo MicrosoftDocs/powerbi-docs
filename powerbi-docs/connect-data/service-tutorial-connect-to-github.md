@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 01/27/2023
+ms.date: 07/24/2024
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 LocalizationGroup: Connect to services
 ---
@@ -130,5 +130,4 @@ Now that you've finished the tutorial, you can delete the GitHub app.
 
 In this tutorial, you've connected to a GitHub public repo and gotten data, which Power BI has formatted in a dashboard and report. You've answered some questions about the data by exploring the dashboard and report. Now you can learn more about connecting to other services, such as Salesforce, Microsoft Dynamics, and Google Analytics.
 
-> [!div class="nextstepaction"]
-> [Connect to GitHub with a Power BI template app](service-connect-to-github.md)
+* [Connect to GitHub with a Power BI template app](service-connect-to-github.md)

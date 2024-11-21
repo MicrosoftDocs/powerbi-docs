@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 11/10/2023
+ms.date: 10/29/2024
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -41,12 +41,17 @@ If you've enabled tenant settings to allow service principals to use Power BI AP
 
 To use a service principal, be sure to specify the application identity information in the connection string as:
 
-- `User ID=<app:appid@tenantid>`
-- `Password=<application secret>`
+- **User ID** - *app:appid@tenantid*
 
-For example:
+- **Password**
 
-`Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:91ab91bb-6b32-4f6d-8bbc-97a0f9f8906b@19373176-316e-4dc7-834c-328902628ad4;Password=6drX...;`
+    - *cert:thumbprint* (recommended for security)
+
+      `Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:<appid>;Password=cert:<thumbprint>;`
+
+    - *application secret*
+      
+      `Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:<appid>;Password=<secret>;`
 
 If you receive the following error:
 
@@ -260,6 +265,26 @@ When republishing a live connected semantic model utilizing the Analysis Service
 :::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Couldn't publish to Power BI error.":::
 
 This is due to the semantic model being published having a different connection string but having the same name as the existing semantic model. To resolve this issue, either delete or rename the existing semantic model. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should be informed to update any bookmarks with the new report address to ensure they access the latest report.  
+
+## Live connected semantic model cannot be loaded
+
+Users trying to create a new Live Connected model or open an existing Live Connected model, using the March 2024 or later versions of Power BI Desktop, may encounter an error similar to the following: "**_We couldn't connect to your model in the Power BI service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
+
+:::image type="content" source="media/troubleshoot-xmla-endpoint/cannot-load-model.png" alt-text="Screenshot of cannot load model error.":::
+
+The error may occur when a proxy is configured in the user's environment and the proxy is preventing access to the Power BI service. Beginning with the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI service at endpoint ***.pbidedicated.windows.net** or the corresponding Power BI service endpoints for sovereign clouds.
+
+To validate whether the issue is a result of proxy settings, try the **SQL Server Analysis Services** connector in Power BI Desktop or any first-party or third-party external tool, such as **SQL Server Management Studio**, to connect to any premium workspace.
+
+Refer to the [establishing a client connection](#establishing-a-client-connection) section in this article for more information about testing general XML/A connectivity.
+
+## Excel workbook fails to open
+
+Excel workbook might fail to open with error, "**Initialization of the data source failed. Check the database server or contact your database administrator.**". If the workbook contains a connection to a Power BI semantic model, then check if the connection string contains the property "**Catalog Rebound=True**". If the property is found, remove it, save the workbook, and try opening it again.
+
+The "**Catalog Rebound=True**" property is automatically added by the Analysis Services OLE DB Provider (MSOLAP) in newer versions of Excel when the connection to Power BI semantic model is optimized by the provider. Because the property is persisted to the workbook, when the same workbook is opened in Excel that's using an older version of the provider that doesn't support the optimization, then Excel will fail to open the workbook.
+
+"**Catalog Rebound**" is meant for internal use only.
 
 ## Workspace/server alias
 

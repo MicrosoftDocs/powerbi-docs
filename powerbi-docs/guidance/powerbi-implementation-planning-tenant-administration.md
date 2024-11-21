@@ -1,13 +1,14 @@
 ---
 title: "Power BI implementation planning: Tenant administration"
 description: "This article introduces key considerations for administering a Fabric tenant."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/13/2024
+ms.custom: fabric-cat
+ms.date: 09/25/2024
 ---
 
 # Power BI implementation planning: Tenant administration
@@ -26,6 +27,8 @@ As described in the Fabric adoption [maturity levels](fabric-adoption-roadmap-ma
 
 > [!NOTE]
 > Administering Fabric [capacity](/fabric/enterprise/licenses#microsoft-fabric-concepts) (or Premium capacity) and managing the Power BI service are different concepts. While most organizations have just one [Power BI tenant](powerbi-implementation-planning-tenant-setup.md), an organization can provision multiple capacities for different workloads or business units.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Define scope of responsibilities
 
@@ -64,7 +67,7 @@ Here are some key points to consider when you select your administrators.
 - **Choose 2 to 4 administrators.** Because it's a high-privilege role, appoint only a few administrators. Strike the right balance: Having too many administrators increases the risk of unapproved changes occurring, while having too few administrators increases the risk that the system won't be sufficiently supported.
 - **Allow for occasional administrators.** If you have users who _occasionally_ need Fabric administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM). PIM lets you assign _just-in-time role permissions_ that expire after a few hours. This process provides a useful way to balance risk (of having too many full-time administrators) versus usability (allowing progress to occur). That's especially true in larger, decentralized organizations. When using PIM, delegation of the administrator role is logged and can optionally involve an approval workflow to grant rights.
 - **Make Fabric administration a priority.** Often, administration of a BI platform is just one of many responsibilities. Consider how you'll ensure that users are well supported, and your system is sufficiently managed.
-- **Regularly review who's assigned to all the related roles.** There are three roles that are permitted to manage the Power BI service: Fabric administrator, Power Platform administrator, and Global administrator. It's important that you audit the membership of these roles regularly.
+- **Regularly review who's assigned to all the related roles.** There are three roles that are permitted to manage the Power BI service: Fabric administrator and Power Platform administrator. It's important that you audit the membership of these roles regularly.
 
 For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
@@ -88,8 +91,8 @@ Here are some common reasons why a Fabric administrator collaborates with [other
 - **Device setup and installations:** You might need to work with IT, an infrastructure team, or a desktop support team in order to install, update, or manage [user devices](powerbi-implementation-planning-user-tools-devices.md).
 - **Subscriptions and license purchasing:** The Billing admin role in Microsoft 365 is required to manage subscriptions and purchase licenses. A billing administrator might also be responsible for cost analysis and management. For more information about centralized and decentralized (self-service) ways to manage licenses, see [User licenses](fabric-adoption-roadmap-system-oversight.md#user-licenses).
 - **License assignment and user management:** The License admin role in Microsoft 365 is required to assign licenses (that have been purchased) to specific users. The User admin role is required to manage the properties of a user. It's helpful to work with a user administrator when you're planning to implement automation based on user properties (for example, automatic license assignment or automatic group assignment). For more information, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
-- **Microsoft Entra administrators:** There are [various reasons](powerbi-implementation-planning-tenant-setup.md#microsoft-entra-administrators) why you need to work with Microsoft Entra ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) administrators. Often, reasons include the need to set up or manage users, groups, and service principals. For more information, see [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md).
-- **Source data access:** You might have to work with a system administrator or database administrator in order to get access to data on behalf of [content creators](powerbi-implementation-planning-security-content-creator-planning.md#creating-new-content). Sometimes, it might also be necessary to request access on behalf of content consumers when semantic models—[previously known as datasets](/power-bi/connect-data/service-datasets-rename)—[enforce data security based on the identity](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) of content consumers.
+- **Microsoft Entra administrators:** There are [various reasons](powerbi-implementation-planning-tenant-setup.md#microsoft-entra-administrators) why you need to work with Microsoft Entra administrators. Often, reasons include the need to set up or manage users, groups, and service principals. For more information, see [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md).
+- **Source data access:** You might have to work with a system administrator or database administrator in order to get access to data on behalf of [content creators](powerbi-implementation-planning-security-content-creator-planning.md#creating-new-content). Sometimes, it might also be necessary to request access on behalf of content consumers when semantic models [enforce data security based on the identity](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) of content consumers.
 - **Data loss prevention and data classification:** You might need to collaborate with your [Microsoft Purview](/training/modules/manage-power-bi-artifacts-use-microsoft-purview/) administrator for governance and information protection.
 - **Teams integration:** When integrating Power BI with [Microsoft Teams](/power-bi/collaborate-share/service-collaborate-microsoft-teams), you might need to collaborate with a Teams administrator.
 - **OneDrive and SharePoint integration:** When integrating Power BI with [OneDrive or SharePoint](/power-bi/create-reports/desktop-sharepoint-save-share), you might need to collaborate with other administrators.
@@ -169,7 +172,7 @@ Here are some factors to consider during the review process.
 You can compile the current state of your tenant settings in one of two ways.
 
 - View the tenant setting state within the [admin portal](/power-bi/admin/service-admin-portal).
-- Programmatically extract the tenant setting state by using the [Get Tenant Settings](/rest/api/fabric/admin/tenants/get-tenant-settings) REST API.
+- Programmatically extract the tenant setting state by using the [Get Tenant Settings](/rest/api/fabric/admin/tenants/list-tenant-settings) REST API.
 
 The following table presents how you could record the current state of your tenant settings.
 
@@ -238,7 +241,7 @@ At this point, make sure you have a repeatable method in place for documenting t
 
 Here are some aspects to consider for documentation.
 
-- **Extract snapshot data:** When documenting tenant setting values, we recommend that you create a new point-in-time snapshot regularly. For this purpose, creating a snapshot once a week is a good frequency. Use the [Get Tenant Settings](/rest/api/fabric/admin/tenants/get-tenant-settings) REST API to automate the process.
+- **Extract snapshot data:** When documenting tenant setting values, we recommend that you create a new point-in-time snapshot regularly. For this purpose, creating a snapshot once a week is a good frequency. Use the [Get Tenant Settings](/rest/api/fabric/admin/tenants/list-tenant-settings) REST API to automate the process.
 - **Provide admin access to snapshot data:** Administrators, the COE, and internal auditors should have access to all the snapshot data. To identify any tenant settings that have changed, compare two snapshots (for example, this week compared with last week). Data from the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data) complements the snapshot data to provide a complete understanding of what's changed, when, and by whom. For more information, see Step 6 below, which is about auditing tenant settings.
 - **Provide a summary of current settings to users:** The tenant setting values are one type of [documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation) that can be made available to your community of users in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal). It's a helpful reference for a user who, for example, doesn't understand why a feature isn't available to them. The documentation can also help users know which security group to request to join should they want to use a feature. To reduce the level of manual effort, the latest snapshot results from the REST API can be distributed to users as a Power BI report. Depending on your needs, you might need to merge the snapshot of data with other data that's manually maintained (such as the description of the tenant setting, justification for the setting, links to additional information, or link to a form to request access).
 
@@ -656,10 +659,10 @@ Power BI can integrate with Azure services to extend features and provide other 
 
 - **Data storage for dataflows (Gen1).** You can access the data for Power BI dataflows (Gen1) directly in Azure. A workspace can be connected to a storage account that's defined at the tenant level, or to a storage account that's specific to the workspace. This technique is sometimes referred to as _bring-your-own-lake (BYOL)_. The flexibility of a BYOL strategy is helpful when you want to reuse dataflows data beyond Power BI by allowing other processes, or other users, to view or access the data. For more information, see [Configure dataflow storage to use Azure Data Lake Storage Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) and the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario.
 - **Semantic model backup and restore.** You might need to back up and restore a semantic model for disaster recovery purposes, to meet data retention requirements, or to migrate a data model. For more information, see [Backup and restore semantic models with Power BI Premium](/power-bi/enterprise/service-premium-backup-restore-dataset).
-- **Azure Log Analytics integration.** You can analyze semantic model activity, performance, and trends. Log Analytics integration allows you to review diagnostic data that's generated by the Analysis Services engine (which hosts Power BI semantic models). For more information, see [Dataset event logs](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md#semantic-model-event-logs).
+- **Azure Log Analytics integration.** You can analyze semantic model activity, performance, and trends. Log Analytics integration allows you to review diagnostic data that's generated by the Analysis Services engine (which hosts Power BI semantic models). For more information, see [Semantic model event logs](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md#semantic-model-event-logs).
 
   > [!NOTE]
-  > The [dataset name change](../connect-data/service-datasets-rename.md) has been rolled out in the Power BI service and in documentation, though there might be some instances—like with event log operations—where the change hasn't occurred yet.
+  > The [dataset name change](../connect-data/service-datasets-rename.md) has been rolled out in the Power BI service and in documentation, though there might be some instances—like with event log [operation names](/fabric/admin/operation-list)—where the change hasn't occurred yet.
 
 If your main use case for using Azure connections is for data storage (BYOL described in the first point above), we recommend that you consider using [dataflows Gen2](/fabric/data-factory/dataflows-gen2-overview) and [OneLake](/fabric/onelake/onelake-overview) instead. Although both make use of ADLS Gen2 for data storage, they offer different capabilities, have slightly different purposes, and use different storage options (depending on how the data is written). For example: OneLake stores tabular data and dataflows Gen2 data in the open Delta Parquet format whereas the output from [Power BI dataflows (Gen1)](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration#reasons-to-use-the-adls-gen-2-workspace-or-tenant-connection) (with Azure connections) stores data in the common data model format. For more information, see [Getting from dataflow generation 1 to generation 2](/fabric/data-factory/dataflows-gen2-overview).
 

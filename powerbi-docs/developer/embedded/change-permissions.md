@@ -4,7 +4,7 @@ description: Learn how to change the API permissions on your Microsoft Entra app
 author: mberdugo
 ms.author: monaberdugo
 keywords: 
-ms.date: 11/7/2022
+ms.date: 10/21/2024
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -96,7 +96,7 @@ To change your Microsoft Entra app permissions programmatically, you'll need to 
      {
      "clientId":"{Service_Plan_ID}",
      "consentType":"AllPrincipals",
-     "resourceId":"c78a3685-1ce7-52cd-95f7-dc5aea8ec98e",
+     "resourceId":"a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
      "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
      "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
      "startTime":"2017-03-29T14:35:32.4933413+03:00"
@@ -117,7 +117,7 @@ To change your Microsoft Entra app permissions programmatically, you'll need to 
     {
     "clientId":"{Service_Plan_ID}",
     "consentType":"AllPrincipals",
-    "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
+    "resourceId":"a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
     "scope":"User.Read Directory.AccessAsUser.All",
     "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
     "startTime":"2017-03-29T14:35:32.4933413+03:00"

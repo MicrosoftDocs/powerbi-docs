@@ -3,11 +3,12 @@ title: The Identity filter API in Power BI custom visuals
 description: This article discusses how to create Power BI visuals can filter categorical so you can explore different types of data in depth in Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/09/2023
+ms.date: 06/17/2024
+#customer intent: As a Power BI visual developer, I want to learn how to create a visual that can filter categorical data using a semantic query so that I can explore different types of data in depth in Power BI embedded analytics.
 ---
 
 # Identity filter API

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 09/04/2023
+ms.date: 11/14/2024
 ---
 
 # Embed Power BI content with service principal and an application secret
@@ -57,14 +57,11 @@ To use service principal and an application ID for embedded analytics, you take 
 
 ## Step 1 - Create a Microsoft Entra app
 
-Create a Microsoft Entra app by using one of these methods:
-
-* [Create the app in the Azure portal](embed-service-principal.md#create-an-azure-ad-app-in-the-azure-portal).
-* [Create the app by using PowerShell](embed-service-principal.md#create-an-azure-ad-app-by-using-powershell).
+You can create a Microsoft Entra app from the Azure portal or by using Powershell:
 
 <a name='create-an-azure-ad-app-in-the-azure-portal'></a>
 
-### Create a Microsoft Entra app in the Azure portal
+### [Create an app in the Azure portal](#tab/azure-portal)
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#allservices).
 
@@ -105,20 +102,20 @@ Create a Microsoft Entra app by using one of these methods:
    >[!NOTE]
    >After you leave this window, the client secret value is hidden, and you can't view or copy it again.
 
-<a name='create-an-azure-ad-app-by-using-powershell'></a>
+### [Create an app using PowerShell](#tab/powershell)
 
-### Create a Microsoft Entra app by using PowerShell
+<a name='create-an-azure-ad-app-by-using-powershell'></a>
 
 The following sample [PowerShell](/powershell/azure/create-azure-service-principal-azureps) script creates a new Microsoft Entra app and a service principal. Before you run this script:
 
-- Install the [latest version of PowerShell](/powershell/scripting/install/installing-powershell-on-windows).
-- Install the [Microsoft Graph PowerShell SDK](/graph/sdks/sdk-installation#install-the-microsoft-graph-powershell-sdk).
+* Install the [latest version of PowerShell](/powershell/scripting/install/installing-powershell-on-windows).
+* Install the [Microsoft Graph PowerShell SDK](/graph/sdks/sdk-installation#install-the-microsoft-graph-powershell-sdk).
 
 After the script runs, make a note of the following information in the script output:
 
-- The client ID of the new app
-- The object ID of the new service principal
-- The value of the service principal secret
+* The client ID of the new app
+* The object ID of the new service principal
+* The value of the service principal secret
 
 ```powershell
 # Sign in as a user who's allowed to create an app.
@@ -148,6 +145,8 @@ $credential = Add-MgServicePrincipalPassword -ServicePrincipalId $($sp.Id)
 Write-Host "Credential of new service principal: " $($credential.SecretText)
 ```
 
+---
+
 <a name='step-2---create-an-azure-ad-security-group'></a>
 
 ## Step 2 - Create a Microsoft Entra security group
@@ -164,7 +163,7 @@ There are two ways to create a Microsoft Entra security group:
 
 ### Create a security group manually
 
-To create an Azure security group manually, follow the instructions in [Create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members).
+To create an Azure security group manually, follow the instructions in [Create a basic group](/entra/fundamentals/how-to-manage-groups#create-a-basic-group-and-add-members). Don't add members to the group at this time.
 
 ### Create a security group by using PowerShell
 
@@ -212,13 +211,13 @@ In the [**Power BI Admin portal**](../../admin/service-admin-portal.md), go to *
 
 ## Step 4 - Add the service principal to your workspace
 
-Your Microsoft Entra app can access your Power BI reports, dashboards, and semantic models only when it has access to your Power BI workspace. You provide that access by adding the app's service principal or its security group to your workspace as a member or admin.
+Your Microsoft Entra app can access your Power BI reports, dashboards, and semantic models only when it has access to your Power BI workspace as a **member** or **admin**. You provide that access by adding the app's service principal or its security group to your workspace.
 
 There are three ways to add a service principal or its security group to your workspace:
 
-- [Manually](#add-a-service-principal-or-security-group-manually)
-- [Use PowerShell](#add-a-service-principal-or-security-group-by-using-powershell)
-- Use the [Groups - add group user API](/rest/api/power-bi/groups/addgroupuser)
+* [Manually](#add-a-service-principal-or-security-group-manually)
+* [Use PowerShell](#add-a-service-principal-or-security-group-by-using-powershell)
+* Use the [Groups - add group user API](/rest/api/power-bi/groups/addgroupuser)
 
 ### Add a service principal or security group manually
 
@@ -299,7 +298,7 @@ After your content is embedded, you're ready to [move to production](move-to-pro
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI Admin portal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications can't use service principal.
 * [Dataflows](../../transform-model/dataflows/dataflows-introduction-self-service.md) management isn't supported.
-* Service principal only supports some read-only admin APIs. To enable service principal support for read-only admin APIs, you have to enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](../../enterprise/read-only-apis-service-principal-authentication.md).
+* Not all read-only APIs are supported by service principal. To enable service principal support for read-only admin APIs, enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](/fabric/admin/metadata-scanning-enable-read-only-apis).
 * When you use service principal with an [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose doesn't work.
 
 ## Related content

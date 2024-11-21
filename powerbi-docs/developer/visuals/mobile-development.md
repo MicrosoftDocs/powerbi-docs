@@ -3,11 +3,12 @@ title:  Mobile development in Power BI
 description: Learn how to create mobile-friendly Power BI visuals by using essential and recommended functions to add interactive functionality.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/19/2022
+ms.date: 1/19/2024
+#customer intent: As a Power BI visual developer, I want to learn how to create mobile-friendly visuals so that I can provide a better user experience on mobile devices.
 ---
 
 # How to create mobile-friendly Power BI visuals
@@ -76,5 +77,4 @@ Power BI visuals must render on all devices that support Power BI apps. For more
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Develop a Power BI circle card visual](./develop-circle-card.md)
+[Develop a Power BI circle card visual](./develop-circle-card.md)

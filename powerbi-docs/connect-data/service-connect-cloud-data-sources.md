@@ -1,5 +1,5 @@
 ---
-title: Connect to cloud data sources in the Power BI service (Preview)
+title: Connect to cloud data sources in the Power BI service
 description: Learn how to connect to cloud data sources and share connections in the Power BI service.
 author: davidiseminger
 ms.author: davidi
@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/23/2024
+ms.date: 10/29/2024
 LocalizationGroup: Connect to data
 ---
-# Connect to cloud data sources in the Power BI service (Preview)
+# Connect to cloud data sources in the Power BI service
 
 With Power BI, you can share cloud connections for semantic models and paginated reports, datamarts and dataflows, as well as Power Query Online experiences in *Get data*, enabling you to create multiple connection objects to the same cloud data source. For example, you can create separate connections to the same data source, with different credentials or privacy settings, and share the connections with others, alleviating the need for those users to manage their own separate cloud connections. 
 
@@ -29,7 +29,7 @@ The following table shows how various types of connections map to the two primar
 
 Connections using a personal cloud connection come with several limitations. For example, with a personal cloud connection you can only create a single personal cloud connection object to a given data source. All semantic models that connect to the data source use the same personal cloud connection object, so if you change the credentials of the personal cloud connection, all semantic models using that personal cloud connection are affected. Often that's not a desired outcome.
 
-Another limitation of personal cloud connection is that they can't be shared with others, so other users can't bind their semantic models and paginated reports to the personal cloud connection you own; users must maintain their own personal cloud connections. 
+Another limitation of a personal cloud connection is that they can't be shared with others, so other users can't bind their semantic models and paginated reports to the personal cloud connection you own; users must maintain their own personal cloud connections. 
 
 Shareable connections have no such limitations, and provide for more streamlined, more flexible connection management, including the following:
 
@@ -62,6 +62,33 @@ A pane appears called **New connection** and automatically populates the configu
 
 Enabling the creation of new connections makes it easy to create separate shareable cloud connections for individual semantic models, if needed. You can also display the connection management page from anywhere in the Power BI service by selecting the **Settings** gear in the upper right corner of the Power BI service, then select **Manage connections and gateways**. 
 
+### Create a shareable cloud connection using workspace identity 
+
+You can also create a shareable cloud connection using the **Workspace identity** authentication method, which uses the automatically managed service principal associated with the Fabric workspace to connect to data. To use the connection, the model owner must have *Contributor* (or higher) access to the workspace.
+
+To create a **Workspace identity**, follow these steps:
+
+1. Configure the workspace to have a **Workspace identity**. The Workspace identity is an automatically managed service principal associated with the Fabric workspace.
+2. Create a shareable cloud connection (SCC) with **Workspace identity** as the authentication method.
+3. Bind the data source to the SCC in the semantic model settings.
+
+Keep the following considerations in mind when creating or using a **Workspace identity**:
+
+* **Workspace identity** is only supported with Fabric data sources
+* The connection type being used must support the **Workspace identity** authentication type, which includes SQL Server and ADLS connectors. For the connection type being used, if there's a **Workspace identity** option under the *Authentication* setting, then that connector is supported.
+
+
+## Default connection settings
+
+When connecting to a Fabric data source specifically, your Entra ID Single Sign-On (SSO) credentials are used by default.
+
+You can also use a shareable cloud connection instead of the default connection settings to connect a semantic model to a Fabric data source, and thereby apply the settings you configured for that shareable cloud connection, such as fixed credentials. This enables you to bind the data source to the shareable cloud connection, and override the default SSO connection for that data source.
+
+To select your shareable cloud connection instead of your default SSO settings, select the shareable cloud connection in the **Maps to:** drop-down for the data source to which you want your semantic model to connect, as shown in the following image:
+
+:::image type="content" source="media/service-connect-cloud-data-sources/service-connect-cloud-data-sources-06.png" alt-text="Screenshot of using a shareable cloud connection instead of the default single sign-on credentials.":::
+
+If you don't have a shareable cloud connection, you can select *Create a connection* and create a new connection, as described in the previous section of this article.
 
 ## Using shareable cloud connections with paginated reports
 
@@ -78,13 +105,53 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 
 * **Shareable cloud connections also share your credentials** - when you allow others to user your shareable cloud connections, it's important to understand that you're letting others connect their own semantic models, paginated reports, and other artifacts to the corresponding data sources by using the connection details and credentials you provided. Make sure you only share connections (and their credentials) that you're authorized to share.
 
+* **Every user is limited to maximum 1000 data source connections in every cloud tenant**: If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit of 1000 connections. To resolve any related issues, you can manually remove existing data sources from the admin center or, alternatively, use the following PowerShell script to find and bulk-delete any data sources that exceed that limit.
+
+  ```powershell
+  ## required module "mcirosoftpowerbimgmt" Install-Module -Name DataGateway and sign in the same user who exceeded the 1000 limit
+  Import-Module -name microsoftpowerbimgmt
+  
+  ## get the gateway information per the sign in person. Choose Environment: Public, USGov, China, USGovHigh, USGovMil
+  $environment = "Public"
+  Connect-PowerBIServiceAccount -Environment $environment
+  
+  switch ($environment) {
+      "Public" { $baseURL = "https://api.powerbi.com/v2.0/myorg/me/"; Break }
+      "USGov" { $baseURL = "https://api.powerbigov.us/v2.0/myorg/me/"; Break }
+      "China" { $baseURL = "https://api.powerbi.cn/v2.0/myorg/me/"; Break }
+      "USGovHigh" { $baseURL = "https://api.high.powerbigov.us/v2.0/myorg/me/"; Break }
+      "USGovMil" { $baseURL = "https://api.mil.powerbigov.us/v2.0/myorg/me/"; Break }
+  }   
+  
+  $getDatasourcesURL = $baseURL + "gatewayClusterDatasources?$expand=users"
+  
+  $datasources = Invoke-PowerBIRestMethod -Url $getDatasourcesURL -Method GET | ConvertFrom-Json
+  
+  foreach($dataource in $datasources.value)
+  {
+      if($datasource.gatewayType -eq "TenantCloud")
+      {
+          "cloud datasource found with id = {0}, name = {1}" -f $dataource.id, $datasource.datasourceName
+          $gatewayId = $datasource.clusterId
+          $datasourceId = $dataource.id
+  
+          ## conditional logic to determine if name matches set
+          $deleteDatasourceURL = $baseURL + "gatewayClusters/$gatewayId/datasources/$datasourceId"
+          Invoke-PowerBIRestMethod -Url $deleteDatasourceURL -Method DELETE
+      }    
+  }
+  ```
+  If you're an ISV or any other Power BI Embedded app owner with many customers, use service principal profiles for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
+
 * You can't mix an Excel on-premises data source with an existing Analysis Services DirectQuery data source; you can only include an Excel on-premises data source to your report if it's in a separate query. In such situations, you can map the Excel data source to a gateway, and leave the Analysis Services DirectQuery cloud data source as-is.
+
+* Power BI Dataflow Gen1 and Fabric Dataflow Gen2 don't support sharable cloud connections. Other versions, like Power Apps dataflows, do support sharable cloud connections.
 
 ## Related content
 
 For more information about creating shareable cloud connections:
 
-* [Create and share cloud data sources in the Power BI service (Preview)](service-create-share-cloud-data-sources.md)
+* [Create and share cloud data sources in the Power BI service](service-create-share-cloud-data-sources.md)
 
 You can do all sorts of things with the Power BI service and Power BI Desktop. For more information on its capabilities, check out the following resources:
 

@@ -4,11 +4,12 @@ description: Learn how visuals can retrieve the Power BI locale to localize thei
 author: mberdugo
 ms.author: monaberdugo
 manager: 
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/10/2022
+ms.date: 10/10/2024
+#customer intent: As a Power BI visual developer, I want to learn how to localize my visual to the Power BI locale so that I can provide content in the user's language.
 ---
 
 # Add the local language to your Power BI visual
@@ -64,15 +65,13 @@ To test your visual, set Power BI to a language that isn't English. This section
 
     1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/).
 
-    2. Navigate to **Settings** > **Settings** > **Settings**.
+    2. Navigate to **Settings** > **General**.
 
-        >[!div class="mx-imgBorder"]
-        >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/localization/powerbi-settings.png)
+          :::image type="content" source="./media/localization/powerbi-settings.png" alt-text="Screenshot of the settings, general, menu option in Power B I service.":::
 
-    3. From the **General** tab, select **Language**. In the **Language Settings**, select the language you want Power BI to use, and then select **Apply**.
+    3. Select **Select display language** to select the language you want Power BI to use.
 
-        >[!div class="mx-imgBorder"]
-        >![A screenshot showing the language settings in Power BI service.](media/localization/webservice-settings.png)
+          :::image type="content" source="media/localization/webservice-settings.png" alt-text="Screenshot showing the language settings in Fabric.":::>
 
 ### Step 2 - Get the locale Power BI language
 
@@ -89,7 +88,7 @@ this.locale = options.host.locale;
 
 ### Step 3 - Set the visual display names
 
-Every visual displays information in the property pane. For example, a nonlocalized custom visual created by using the `pbiviz new` command, will show the *Category Data* and *Measure Data* fields in the property pane.
+Every visual displays information in the property pane. For example, a nonlocalized custom visual created by using the `pbiviz new` command shows the *Category Data* and *Measure Data* fields in the property pane.
 
 >[!div class="mx-imgBorder"]
 >![A screenshot showing the category data and measure data fields in a newly created Power BI visual.](media/localization/property-pane.png)
@@ -186,7 +185,7 @@ let legend: string = this.localization.getDisplayName("Role_Legend");
 > [!NOTE]
 > Relevant to API version 5.1+
 
-To support localization on format pane and analytics pane components, set localized string as the following:
+To support localization on format pane and analytics pane components, set localized string as follows:
 
 ```typescript
 displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");

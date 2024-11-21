@@ -1,12 +1,13 @@
 ---
 title: Prepare to migrate to Power BI
 description: Guidance on pre-migration steps when migrating to Power BI.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/27/2022
 ---
 
@@ -72,7 +73,7 @@ Some critical items to address early in a Power BI implementation include:
 - [Power BI tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) decisions, which should be documented.
 - [Workspace management](../collaborate-share/service-new-workspaces.md) decisions, which should be documented.
 - Considerations and preferences related to data and [content distribution methods](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md), such as apps, workspaces, sharing, subscriptions, and embedding of content.
-- Preferences related to [semantic model modes](../connect-data/service-dataset-modes-understand.md)—[previously known as dataset modes](../connect-data/service-datasets-rename.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [composite model](composite-model-guidance.md).
+- Preferences related to [semantic model modes](../connect-data/service-dataset-modes-understand.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [composite model](composite-model-guidance.md).
 - [Securing data and access](../enterprise/service-admin-power-bi-security.md).
 - Working with [shared semantic models](../connect-data/service-datasets-share.md) for reusability.
 - Applying [data certification](../collaborate-share/service-endorsement-overview.md) to promote the use of authoritative and trustworthy data.
@@ -89,14 +90,16 @@ Some critical items to address early in a Power BI implementation include:
 
 Your [BI solution architecture](powerbi-implementation-planning-usage-scenario-overview.md) will evolve and mature over time. Power BI setup tasks to handle right away include:
 
-- Power BI tenant setup and integration with Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)).
+- Power BI tenant setup and integration with Microsoft Entra ID.
 - Define [Power BI administrators](../admin/service-admin-role.md).
 - Procure and assign initial [user licenses](../enterprise/service-admin-licensing-organization.md).
 - Configure and review [Power BI tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings).
 - Setup [workspace roles](../collaborate-share/service-roles-new-workspaces.md) and assign access to Microsoft Entra security groups and users.
 - Configure an initial [data gateway](../connect-data/service-gateway-deployment-guidance.md) cluster—with a plan to update regularly.
-- Procure initial [Premium capacity license](../enterprise/service-admin-premium-purchase.md) (if applicable).
+- Procure initial [Premium capacity license](/power-bi/enterprise) (if applicable).
 - Configure [Premium capacity workloads](../enterprise/service-admin-premium-workloads.md)—with a plan to manage on an ongoing basis.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Define success criteria for migration
 

@@ -3,12 +3,13 @@ title: Introduction to use chart utils in Power BI visual
 description: Learn about the chart utils interfaces and methods to draw axes, data labels, and legends in Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-manager: rkarlin
-ms.reviewer: sranins
+manager: kfollis
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/11/2023
+ms.topic: concept-article
+ms.date: 01/11/2024
+#customer intent: As a Power BI visual developer, I want to learn how to use the chart utils interfaces and methods to draw axes, data labels, and legends in Power BI visuals.
 ---
 
 # Chart utils
@@ -689,8 +690,6 @@ This helper function simplifies Power BI Custom Visual legend creation.
 ```typescript
 function createLegend(
   legendParentElement: HTMLElement, // top visual element, container in which legend will be created
-  interactive: boolean, // indicates that legend should be interactive
-  interactivityService: IInteractivityService, // reference to IInteractivityService interface which need to create legend click events
   isScrollable: boolean = false, // indicates that legend could be scrollable or not
   legendPosition: LegendPosition = LegendPosition.Top // Position of the legend inside of legendParentElement container
 ): ILegend;
@@ -709,13 +708,8 @@ public constructor(options: VisualConstructorOptions) {
 
     //... some other init calls
 
-    if (this.behavior) {
-        this.interactivityService = createInteractivityService(hostServices);
-    }
     this.legend = createLegend(
         element,
-        options.interactivity && options.interactivity.isInteractiveLegend,
-        this.interactivityService,
         true);
 }
 ```
@@ -770,4 +764,4 @@ private renderLegend(): void {
 
 ## Related content
 
-- [Power BI visuals interactivity utils](utils-interactivity-selections.md)
+- [Add interactivity into visual by Power BI visuals selections](selection-api.md)

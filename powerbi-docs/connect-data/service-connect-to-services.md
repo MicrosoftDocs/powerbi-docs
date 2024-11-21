@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 07/26/2024
 LocalizationGroup: Connect to services
 ---
 # Connect to the services you use with Power BI
@@ -38,7 +38,7 @@ When the import is complete, the new app appears on the Apps page.
 
    ![Screenshot shows the Google Analytics dashboard, which displays data as visualizations.](media/service-connect-to-services/googleanalytics2.png)
 
-   Change the dashboard and report to fit the needs of your organization. Then [distribute your app to your colleagues](../collaborate-share/service-create-distribute-apps.md)
+   Change the dashboard and report to fit the needs of your organization. Then [distribute your app to your colleagues](../collaborate-share/service-create-distribute-apps.md).
 
 ## What's included
 
@@ -67,5 +67,5 @@ If you're interested in creating template apps to distribute yourself, see [Crea
 ## Related content
 
 * [Distribute apps to your colleagues](../collaborate-share/service-create-distribute-apps.md)
-* [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
+* [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

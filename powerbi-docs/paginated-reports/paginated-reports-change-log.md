@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/17/2023
+ms.date: 9/17/2024
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,54 @@ ms.date: 07/17/2023
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## September 2024
+
+Version 15.7.1812.222, released September 16, 2024
+
+- Power Query Online general availability.
+- Fixed issue editing data sources for PBI semantic models in a folder.
+- Fixed issue with sign in dialog in some cases.
+- Fixed issue preventing Report Builder being able to use window's "Run As A Different User."
+- Enhanced migration of SQL Azure based RDL reports in RdlMigration tool.
+- Added some additional telemetry.
+
+## July 2024
+
+Version 15.7.1811.11, released July 8, 2024
+
+- Fixed issue where Report Builder would fail to load properly in some cases.
+
+## June 2024
+
+Version 15.7.1810.53, released June 27, 2024
+
+- Fixed issue related to reports visible in My workspace.
+
+## May 2024
+
+Version 15.7.1809.28, released May 20, 2024
+
+- Fixes for Power Query Online interactions 
+- Various bug fixes
+
+### Features
+- Added support for subfolders in workspaces on Power BI service.
+- Added RDL Migration Tool to help migrate reports. This can be found in the RdlMigration folder of your installation directory. More information can be found in the article [Plan to migrate .rdl reports to Power BI](https://aka.ms/MigrateToPowerBI).
+
+## March 2024
+
+Version 15.7.1807.730, released March 24, 2024
+
+- Fixed issue with JPEG files not respecting the EXIF rotation property.
+- Updated to use the last MSAL authentication library functionality.
+- Various accessibility fixes across all areas of the product.
+- Bug fix for Power BI Report Builder freezing during certain operations.
+- Various bug fixes. 
+
+### Features
+- Power Query Online connectivity to hundreds of new data sources is now in preview.
+- Added support for TLS 1.3.
 
 ## July 2023
 

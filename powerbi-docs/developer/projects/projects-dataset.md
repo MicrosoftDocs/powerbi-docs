@@ -5,9 +5,9 @@ author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
-ms.subservice:
+ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/14/2024
+ms.date: 08/13/2024
 ---
 
 # Power BI Desktop project semantic model folder
@@ -22,12 +22,11 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [editorSettings.json](#pbieditorsettingsjson)
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [definition.pbidataset](#definitionpbidataset)<sup>[1](#required1)</sup>
+- [definition.pbism](#definitionpbism)<sup>[1](#required1)</sup>
 - [model.bim](#modelbim)<sup>[2](#required2)</sup>
 - [definition\ folder](#definition-folder)<sup>[3](#required3)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
-- [item.config.json](#itemconfigjson)
-- [item.metadata.json](#itemmetadatajson)
+- [.platform](#platform)
 
 <a name="required1">1</a> - This file is required.  
 <a name="required2">2</a> - This file is required when saving using TMSL format.  
@@ -71,11 +70,18 @@ The unappliedChanges.json file is automatically incorporated into the semantic m
 
 For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
 
-#### definition.pbidataset
+#### definition.pbism
 
 Contains the overall definition of a semantic model and core settings.
 
-For more information, see the [definition.pbidataset schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
+This file also specifies the supported semantic model definition formats through the 'version' property.
+
+| Version  | Supported formats    |
+|----------|----------------------------|
+| 1.0      | Semantic model definition must be stored as TMSL in the model.bim file. |
+| 4.0 or above | Semantic model definition can be stored as TMSL (model.bim file) or TMDL (\definition folder). |
+
+For more information, see the [definition.pbism schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
 
 
 #### model.bim
@@ -84,25 +90,19 @@ This file is only available if the Power BI project is saved using the TMSL form
 
 #### definition\ folder
 
-This file is only available if the Power BI project is saved using the [TMDL format](#tmdl-format). It replaces the [model.bim](#modelbim) file.  
+This folder is only available if the Power BI project is saved using the [TMDL format](#tmdl-format). It replaces the [model.bim](#modelbim) file.  
 
-This file contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
+This folder contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
 
 #### diagramLayout.json
 
 Contains diagram metadata that defines the structure of the semantic model associated with the report. During **PREVIEW**, this file doesn't support external editing.  
 
-#### item.config.json
+#### .platform
 
-Identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
+Fabric platform file that holds properties vital for establishing and maintaining the connection between Fabric items and Git.
 
-For more information, see the [item.config.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.config.md).
-
-#### item.metadata.json
-
-Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file).
-
-For more information, see the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md).
+To learn more, see [Git integration automatically generated system files](/fabric/cicd/git-integration/source-code-format#automatically-generated-system-files).
 
 ## TMDL format
 
@@ -170,12 +170,12 @@ If any invalid edits are made to the TMDL files, Power BI Desktop throws an erro
 
 :::image type="content" source="./media/projects-dataset/edit-error.png" alt-text="Screenshot of an error message for an invalid file.":::
 
-### Fabric Git Integration with TMDL
+### TMDL considerations and limitations
 
 During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) will still export the semantic model using TMSL by default. However, if the semantic model is imported into Fabric using Fabric Git Integration with TMDL format, then Fabric Git Integration will use TMDL format to export the semantic model definition to Git if there are any semantic model changes in the service.
 
 > [!IMPORTANT]
-> If you import your semantic model using any other import method, such as [Power BI Desktop Publish](https://learn.microsoft.com/power-bi/create-reports/desktop-upload-desktop-files), Fabric Git Integration will switch back to the default TMSL format.
+> If you import your semantic model using any other import method, such as [Power BI Desktop Publish](../../create-reports/desktop-upload-desktop-files.md), Fabric Git Integration will switch back to the default TMSL format.
 
 ## Related content
 

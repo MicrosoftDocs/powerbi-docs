@@ -8,33 +8,121 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: faq
-  ms.date: 12/19/2023
+  ms.date: 11/13/2024
   LocalizationGroup: Premium
   
 title: Power BI Premium FAQ
 summary: |
-  This article addresses questions frequently asked about Power BI Premium. For an overview, see [What is Power BI Premium?](service-premium-what-is.md).
+  [Power BI Premium](service-premium-what-is.md) transitioned to [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Learn about the transition and its impact.
   
-  * If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
-  * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
-  
-
 sections:
-  - name: Ignored
+  - name: Power BI Premium transition to Microsoft Fabric
     questions:
       - question: |
-          Power BI Premium
+          What's Microsoft Fabric?
         answer: |
-          This section addresses questions and answers for Power BI Premium. 
+          [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) is a platform that allows users to get, create, share, and visualize data using an array of tools. Power BI is a visualization tool, and is one of Fabric's [experiences](/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric). 
 
+      - question: |
+          What's Power BI Premium per capacity?
+        answer: |
+          Power BI Premium per capacity is another name for Power BI Premium. Power BI requires two types of licenses, a *per capacity* license and a *per user license*. For this reason, Power BI Premium is sometimes referred to as Power BI Premium per capacity. 
+
+      - question: |
+          What's happening to Power BI Premium?
+        answer: |
+          Power BI Premium transitioned to Microsoft Fabric. Power BI Premium is now part of Fabric. You can use Power BI in Fabric alongside all the other Fabric [workloads](/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric). Because of this change, the Power BI Premium SKUs are being retired.
+
+      - question: |
+          Can I use Power BI without Fabric?
+        answer: |
+          Power BI is part of the Fabric platform. To use Power BI without any of the other Fabric [experiences](/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric), disable the *Users can create Fabric items* [tenant switch](/fabric/admin/fabric-switch#enable-for-your-tenant).
+
+      - question: |
+          Can I buy Power BI Premium?
+        answer: |
+          No. P SKUs are no longer available for purchase they can only be renewed. To use the Power BI Premium features, you need to buy an F SKU. Purchasing an F SKU allows you to use all the Fabric features and the Power BI Premium features. You can read more about this transition in the [Power BI Premium P SKU](https://aka.ms/P-SKU-Blog).
+
+      - question: |
+          How do I buy Microsoft Fabric?
+        answer: |
+          To buy Fabric, start with the [Microsoft Fabric pricing](https://azure.microsoft.com/pricing/details/microsoft-fabric/) page. 
+
+      - question: |
+          How do I renew a P SKU?
+        answer: |
+          At the time of your next contract renewal, talk to your Microsoft representative about renewing your contract using an F SKU instead of your P SKU.
+
+      - question: |
+          I'm using Power BI Premium, how does the transition impact me?
+        answer: |
+          At the end of your current agreement with Microsoft, work with your Microsoft account representatives to migrate your P SKU purchase to an F SKU purchase. No immediate action is required. You can continue using your existing Power BI Premium capacity until the time of your next renewal.
+
+      - question: |
+          How do I migrate my Power BI Premium content to Fabric?
+        answer: |
+          To transfer your content to Fabric, you need to reassign your workspaces to a Fabric capacity. Workspaces can be assigned to a new capacity in the [admin portal](../enterprise/service-admin-premium-manage.md#assign-from-the-admin-portal) or the [workspace pane](/fabric/get-started/workspaces#license-mode). To accelerate the transfer process, admins can [reassign workspaces to a Fabric capacity in bulk](/power-bi/enterprise/service-admin-premium-manage#assign-from-the-admin-portal). 
+
+      - question: |
+          If I take no action, is my Power BI Premium capacity be automatically converted to a Fabric capacity?   
+        answer: |
+          No. Work with your Microsoft account representative to buy a Fabric capacity at the time of your next renewal. Then reassign your workspaces to the new Fabric capacity.  
+
+      - question: |
+          What happens to my Fabric and Power BI items once I cancel my P SKU capacity and purchase an F SKU capacity?    
+        answer: |
+          You can access your Power BI items for 90 days after your P SKU capacity subscription ends. During these 90 days, migrate your workspaces to your new F SKU capacity without losing access to your existing work. However, once the workspace is reassigned, all currently active jobs are canceled. Rerun those jobs after migration. Migration doesn't impact scheduled jobs. 
+
+      - question: |
+          Is Power BI Embedded included with Fabric's F SKUs?
+        answer: |
+          Yes, when you buy an F SKU you also get Power BI Embedded.        
+
+      - question: |
+          How do P SKUs compare to F SKUs?
+        answer: |
+          Stock Keeping Units (SKUs) indicate how much compute power your [capacity](/fabric/enterprise/licenses#capacity) has. You can find a comparison between P and F SKUs in [Capacity license](/fabric/enterprise/licenses#capacity-license).              
+
+      - question: |
+          How do I know what F SKU size I need? 
+        answer: |
+          To estimate the size of the capacity you need, work with your Microsoft account representatives. Your representatives can recommend which SKU to buy, according to your current consumption. You can use a [Fabric trial](/fabric/get-started/fabric-trial) to measure your capacity consumption. The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) can help you analyze your capacity’s consumption.  
+
+      - question: |
+          Do I need a Power BI Pro license with Fabric? 
+        answer: |
+          To create Power BI reports and consume content, you need a Power BI Pro license. With an F64 or higher SKU, you can view content with a Microsoft Fabric free license, if the content is in the capacity. Fabric items that aren't Power BI items, don't require a Pro license. For more information about user licenses in Fabric, see [Per user licenses](/fabric/enterprise/licenses#per-user-licenses).
+
+      - question: |
+          How can I continue to access Power BI Report Server without P SKUs?   
+        answer: |
+          Power BI Report Server is available through two different licenses: Fabric [reserved license](/azure/cost-management-billing/reservations/fabric-capacity) and SQL Server Enterprise Edition with Software Assurance.
+
+      - question: |
+          What are the key differences between F SKUs and P SKUs?  
+        answer: |
+          This table lists the key differences between F SKUs and P SKUs.
+
+          | Capability                 | P1 or higher                 | F64 or higher |
+          |----------------------------|------------------------------|---------------|
+          | Commitment                 | Monthly or yearly            | Monthly, yearly and pay as you go |
+          | Pricing                    | Global                       | Regional      |
+          | Power BI Report Server     | Included                     | Included with a [reserved license](/azure/cost-management-billing/reservations/fabric-capacity) |
+          | Power BI Embedded          | Included when buying EM SKUs | Included      |
+          | Azure features<sup>*</sup> | Not included                 | Included      |
+
+          <sup>*</sup> Fabric has Azure features such [Trusted workspace access](/fabric/security/security-trusted-workspace-access) and [Managed Private Endpoint](/azure/synapse-analytics/security/synapse-workspace-managed-private-endpoints) that are only available with F SKUs.
+
+  - name: Power BI Premium operations
+    questions:
       - question: |
           How can I control the costs of autoscaling?
         answer: |
           Autoscaling is an optional feature of Power BI Premium, and is subject to two limits, each if which is configured by Power BI administrators:
           
-          * **Proactive limit** – a proactive limit sets the rate of expenses that Autoscale can generate, by limiting the number of autoscale v-cores a capacity can use. For example, by setting a maximum autoscale of v-cores to one v-core, you ensure that the maximum charge you can incur is 30 days of autoscaling with one v-core.
+          * **Proactive limit** - a proactive limit sets the rate of expenses that Autoscale can generate, by limiting the number of autoscale v-cores a capacity can use. For example, by setting a maximum autoscale of v-cores to one v-core, you ensure that the maximum charge you can incur is 30 days of autoscaling with one v-core.
           
-          * **Reactive limit** – you can also set a reactive limit to the cost for autoscaling, by setting an expenditure limit on the Azure subscription used with autoscale. To set a reactive limit, you'll need to do the following:
+          * **Reactive limit** - you can also set a reactive limit to the cost for autoscaling, by setting an expenditure limit on the Azure subscription used with autoscale. To set a reactive limit, do the following:
           
             * Set an [Azure Policy](/azure/governance/policy/overview) to restrict the resource group to resources of type `microsoft.powerbidedicated/autoscalevcores` only.
 
@@ -47,13 +135,13 @@ sections:
           
           *Interactive utilization* is evaluated by considering all the interactive operations that completed on or near the current half-minute evaluation cycle.
           
-          *Background utilization* is evaluated by considering all the background operations that completed during the past twenty-four hours, where each background operation contributes only 1/2880 of its total CPU cost (there are 2880 evaluation cycles in each 24-hour period).
+          *Background utilization* is evaluated by considering all the background operations that completed during the past 24 hours, where each background operation contributes only 1/2,880 of its total CPU cost (there are 2,880 evaluation cycles in each 24-hour period).
           
           A capacity consists of a defined number of v-cores. The [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app tracks the utilization of your capacity v-cores. The CPU usage reported in the app drives the need to autoscale.
           
-          If you have a P1 subscription with eight v-cores, each evaluation cycle quota is 240 (8 × 30) seconds of CPU utilization. If the sum of both utilizations exceeds the total v-quota in your capacity, your capacity will autoscale using an additional v-core for the next 24 hours.
+          If you have a P1 subscription with eight v-cores, each evaluation cycle quota is 240 (8 × 30) seconds of CPU utilization. If the sum of both utilizations exceeds the total v-quota in your capacity, your capacity autoscales using an additional v-core for the next 24 hours.
           
-          Autoscale always looks at your current capacity size to evaluate how much resource you use. If you have already autoscaled using one v-core, your maximum capacity is now at 270 (240 + 1 × 30) seconds of CPU time in an evaluation cycle.
+          Autoscale always looks at your current capacity size to evaluate how much resource you use. If you autoscaled using one v-core, your maximum capacity is now at 270 (240 + 1 × 30) seconds of CPU time in an evaluation cycle.
           
           Autoscale always makes sure that no single interactive operation can consume all of your capacity, and you must have two or more interactive operations taking place in a single evaluation cycle to initiate autoscale.
           
@@ -71,22 +159,22 @@ sections:
 
           1. The amount of CPU seconds belonging to interactive queries affected by an overload event is summed.
 
-          2. The value form step 1 is multiplied by the count of interactive operations that were affected by throttling.
+          2. The value form step 1 is multiplied by the count of interactive operations that are affected by throttling.
 
       - question: |
           How can I use my utilization data to predict my capacity needs?
         answer: |
-          Your metrics report dataset retains 30 to 45 days of data. You can use the report to indicate how close you're to your capacity's maximum resources, and if you save monthly snapshots, you can compare them to indicate trends of growth and extrapolate the rate in which you'll arrive at 100% utilization of your resources.
+          Your metrics report dataset retains 30 to 45 days of data. Use the report to indicate how close you're to your capacity's maximum resources. If you save monthly snapshots, compare them to indicate trends of growth and extrapolate the rate to reach 100% utilization of your resources.
 
       - question: |
           How can my utilization data inform me I should turn on autoscale?
         answer: |
-          Utilization data doesn't currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
+          Utilization data doesn't currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. The information is added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
 
       - question: |
           How can I get notified that I'm approaching my max capacity?
         answer: |
-          The **Capacity management** page in the Power BI admin portal has a utilization notification checkbox. Users can choose the threshold at which an alert will be triggered (default is 80%) and the email address to which utilization alerts should be sent.
+          The **Capacity management** page in the Power BI admin portal has a utilization notification checkbox. Users can choose the threshold at which an alert is triggered (default is 80%) and the email address to which utilization alerts should be sent.
 
       - question: |
           How much data is Power BI storing? How can I retain more?
@@ -108,10 +196,12 @@ sections:
         answer: |
           When you buy a capacity, you get a predefined number of v-cores, as listed in [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
           
-          By displaying your capacity's CPU usage levels, the [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app helps you understand how your capacity is performing. To provide a simple way of measuring your capacity's performance, the app reports CPU usage for the number of v-cores your capacity has. Power BI makes throttling and autoscale decisions based on the data that's displayed in the app.      
-          
+          The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) helps you understand how your capacity is performing by displaying your capacity's CPU usage levels. To provide a way of measuring your capacity's performance, The app reports CPU usage for the number of v-cores your capacity has. Power BI makes throttling and autoscale decisions based on the data displayed in the app.      
+
+  - name: Premium Per User (PPU)
+    questions:          
       - question: |
-          Premium Per User (PPU)
+          Where can I learn more about Premium Per User (PPU)?
         answer: |
           For information about Premium Per User (PPU), see the [Power BI Premium Per User](service-premium-per-user-faq.yml) article.
           

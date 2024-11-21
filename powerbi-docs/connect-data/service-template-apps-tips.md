@@ -7,12 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 02/03/2023
+ms.date: 10/08/2024
+#customer intent: As a Power BI developer, I want to understand best practices for creating template apps to ensure they are robust, efficient, and provide a great user experience.
 ---
 
 # Tips for authoring template apps in Power BI
 
-When you're [authoring your template app](service-template-apps-create.md) in Power BI, part of the process is the logistics of creating the workspace, testing it, and production. But the other important part is obviously authoring the report and the dashboard. You can break down the authoring process into several components. Working on these components helps you create the best possible template app:
+When you're [authoring your template app](service-template-apps-create.md) in Power BI, part of the process is the logistics of creating the workspace, testing it, and putting it into production. But the other important part is obviously authoring the report and the dashboard. You can break down the authoring process into several components. Working on these components helps you create the best possible template app:
 
 * **Queries**. With queries, you [connect](desktop-connect-to-data.md) and [transform](../transform-model/desktop-query-overview.md) the data, and define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 * **Data model**. In the data model, you create [relationships](../transform-model/desktop-create-and-manage-relationships.md), [measures](../transform-model/desktop-measures.md), and Q&A improvements.  
@@ -20,7 +21,7 @@ When you're [authoring your template app](service-template-apps-create.md) in Po
 * **Dashboard** and **tiles**. [Dashboards](../consumer/end-user-dashboards.md) and [tiles](../create-reports/service-dashboard-create.md) offer an overview of the insights included.
 * **Sample data**. A sample makes your app discoverable immediately after installation.
 
-You might be familiar with each piece as existing Power BI features. When you build a template app, there are other things to consider for each piece. For details, see the following sections.
+You might be familiar with each piece as existing Power BI features. When you build a template app, there are other things to consider for each piece. This article describes theses considerations along with tips other helpful information related to authoring template apps.
 
 <a name="queries"></a>
 
@@ -32,7 +33,7 @@ For template apps, queries developed in Power BI Desktop are used to connect to 
 
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
 
-You can use the Data Connectors that are available in Power BI Desktop to connect to your API. You can use the Web Data Connector (**Get data** > **Web**) to connect to your Rest API or the OData connector (**Get data** > **OData feed**) to connect to your OData feed.
+You can use the data connectors that are available in Power BI Desktop to connect to your API. You can use the Web data connector (**Get data** > **Web**) to connect to your Rest API or the OData connector (**Get data** > **OData feed**) to connect to your OData feed.
 
 > [!NOTE]
 > Currently, template apps do not support custom connectors. We recommend exploring using Odatafeed Auth 2.0 as a mitigation for some of the connection use-cases or to submit your connector for certification. For details on how to develop a connector and certify it, see [Data Connectors](https://aka.ms/DataConnectors).
@@ -45,7 +46,7 @@ Power BI template apps can run multiple queries in parallel and for multiple use
 
 ### Schema enforcement
 
-Ensure your queries are resilient to changes in your system. Changes in schema on refresh can break the model. If the source could return null or a missing schema result for some queries, consider returning an empty table or a meaningful custom error message.
+Ensure your queries are resilient to changes in your system. Changes in schema can break the model during refresh. If the source could return null or a missing schema result for some queries, consider returning an empty table or a meaningful custom error message.
 
 ### Parameters
 
@@ -59,7 +60,7 @@ Ensure your queries are resilient to changes in your system. Changes in schema o
 * Ensure that all columns are typed appropriately.
 * Assign columns informative names. For more information, see [Q&A](#qa).  
 * For shared logic, consider using functions or queries.
-* Privacy levels are currently not supported in the service. If you get a prompt about privacy levels, you might need to rewrite the query to use relative paths.  
+* Privacy levels are currently not supported in the Power BI service. If you get a prompt about privacy levels, you might need to rewrite the query to use relative paths.  
 
 ## Data models
 
@@ -78,7 +79,7 @@ Make sure you've:
 
 * Applied formatting to all value columns. Apply types in the query.  
 * Applied formatting to all measures.
-* Set default summarization. In particular, set *Do Not Summarize* when applicable, for unique values, for example.  
+* Set default summarization. In particular, set *No calculation* when applicable, for unique values, for example.  
 * Set a data category, when applicable.
 * Set relationships, as necessary.  
 
@@ -88,16 +89,16 @@ The report pages offer extra insight into the data included in your template app
 
 ### Additional report tips
 
-* Use more than one visual per page for cross-filtering.  
+* Use more than one visual per page for cross filtering.  
 * Align the visuals carefully, with no overlapping.  
-* Ensure that the page is set to 4:3 or 16:9 mode for layout.  
+* Ensure that the page layout is set to 4:3 or 16:9 mode.
 * Ensure that all of the aggregations presented make numeric sense, for instance, averages or unique values.
 * Check that slicing produces rational results.  
 * Include your logo on at least the top report.  
 * Ensure that elements are in the client's color scheme to the extent possible.
 
 > [!NOTE]
-> A single template app cannot include more than twenty reports.  
+> A single template app cannot include more than 20 reports.  
 
 <a name="dashboard"></a>
 
@@ -105,7 +106,7 @@ The report pages offer extra insight into the data included in your template app
 
 The dashboard is the main point of interaction with your template app for your customers. It should include an overview of the content included, especially the important metrics for your business scenario.
 
-To create a dashboard for your template app, just upload your PBIX through **Get data** > **Files** or publish directly from Power BI Desktop.
+To create a dashboard for your template app, just upload your PBIX through **Get data** > **Files**, or publish directly from Power BI Desktop.
 
 ### Additional dashboard tips
 
@@ -117,7 +118,7 @@ To create a dashboard for your template app, just upload your PBIX through **Get
 
 ## Sample data
 
-A template app, as part of the app creation stage, wraps the cache data in the workspace as part of the app:
+A template app, as part of the app creation stage, wraps the cache data in the workspace as part of the app, which has the following benefits:
 
 * Allows the installer to understand the functionality and purpose of the app before connecting data.
 * Creates an experience that drives the installer to further explore app capabilities, which leads to connecting the app semantic model.
@@ -129,15 +130,15 @@ We recommend having quality sample data before creating the app to ensure that t
 Template apps can be published on AppSource. Follow these guidelines before submitting your app to AppSource:
 
 * Make sure that you create a template app with engaging sample data that can help the installer understand what the app can do. Empty reports and dashboards won't be approved.
-* Template apps support sample data only apps. Make sure to [check the static app checkbox](./service-template-apps-create.md#define-the-properties-of-the-template-app).
+* Template apps support sample data-only apps.
 * Have instructions for the validation team to follow that include credentials and parameters they can use to connect to the data.
-* Your application must include an [App icon](./service-template-apps-create.md#define-the-properties-of-the-template-app) in Power BI and on your cloud partner portal (CPP) offer.
+* Your application must include an [app logo](./service-template-apps-create.md#define-the-properties-of-the-template-app) in Power BI and on your cloud partner portal (CPP) offer.
 * Configure the [landing page](./service-template-apps-create.md#define-the-properties-of-the-template-app).
-* Make sure to follow the documentation about the [Power BI App offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+* Make sure to follow the documentation about the [Power BI app offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 * If a dashboard is part of your app, make sure it's not empty.
 * Install the app using the app link before submitting it. Make sure that you can connect the semantic model and that the app experience is as you planned.
 * Before uploading a PBIX file into the template workspace, make sure to unload any unnecessary connections.
-* Follow Power BI [Best design practices for reports and visuals](../visuals/power-bi-report-visualizations.md) to achieve maximum impact on your users and getting approved for distribution.
+* Follow Power BI [best design practices for reports and visuals](../create-reports/service-dashboards-design-tips.md) to achieve maximum impact on your users and for getting approved for distribution.
 
 ## Create a download link for the app
 
@@ -152,8 +153,9 @@ In order to redirect a user to the app's download link in Power BI, see the foll
 
 ## Automate parameter configuration during installation
 
-If you're an independent software vendor (ISV) and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This approach makes things easier for your customers. It also increases the likelihood of a successful installation because they don't have to supply details that they might not know. For more information, see [Automated configuration of a template app installation](template-apps-auto-install.md).
+If you're an ISV distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This approach makes things easier for your customers. It also increases the likelihood of a successful installation because they don't have to supply details that they might not know. For more information, see [Automated configuration of a template app installation](template-apps-auto-install.md).
 
 ## Related content
 
-- [What are Power BI template apps?](service-template-apps-overview.md)
+* [What are Power BI template apps?](service-template-apps-overview.md)
+* [Automated configuration of a template app installation](template-apps-auto-install.md)

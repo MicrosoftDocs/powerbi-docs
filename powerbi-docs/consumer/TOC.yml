@@ -78,14 +78,6 @@
       href: end-user-drill.md
     - name: "How to use an ArcGIS map in Power BI"
       href: end-user-arcgis.md
-  - name: Metrics
-    items: 
-    - name: "Get started with metrics"
-      href: ../create-reports/service-goals-introduction.md?context=/power-bi/consumer/context/context
-    - name: "Stay on top of your metrics"
-      href: ../create-reports/service-goals-check-in.md?context=/power-bi/consumer/context/context
-    - name: "View hierarchies in metrics"
-      href: ../create-reports/service-metrics-view-hierarchies.md?context=/power-bi/consumer/context/context
   - name: Paginated reports in Power BI
     items: 
     - name: "Paginated reports"
@@ -118,12 +110,10 @@
       href: end-user-print.md
     - name: "View related content"
       href: end-user-related.md
-    - name: "View recent content"
-      href: end-user-recent.md
     - name: "Search and sort content in Power BI"
       href: end-user-search-sort.md
   - name: Get data
-    items: 
+    items:
     - name: "Workspaces in Power BI"
       href: end-user-workspaces.md
     - name: "Apps in Power BI"
@@ -136,6 +126,9 @@
       href: ../connect-data/service-connect-to-services.md
     - name: "Get a sample app from the app marketplace"
       href: end-user-app-marketing.md
+    - name: Get started with org apps (preview)
+      href: ./org-app-items/org-app-items.md
+      displayName: apps, org apps, preview, distribution, sharing
   - name: Ask questions of your data
     items:
     - name: "Q&A in Power BI"
