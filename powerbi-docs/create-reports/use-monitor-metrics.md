@@ -18,14 +18,6 @@ There are methods for report authors and data scientists to use these metrics. T
 
 This article shows you how to use metrics in reports and notebooks. Also how to make sure accurate and trusted KPIs are used within your organization for higher data quality and simplified integration into complex models.
 
-## Prerequisites
-
-To create and manage metrics sets, you must:
-
-- have a Power BI Pay-per-user(PPU)/Premium license to author and share metrics in standard workspaces.
-- work in a Fabric capacity.
-- be at least in a Contributor role in a workspace. Read more about roles in workspaces.
-- have build permission for a semantic model.
 
 ## Use in a report
 
