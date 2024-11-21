@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
-ms.topic: conceptual
+ms.topic: concept
 ms.date: 11/21/2024
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
