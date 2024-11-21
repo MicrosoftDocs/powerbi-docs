@@ -45,7 +45,7 @@ To enable Developer mode, follow these steps:
 
 In Power BI service, Developer mode is kept per user account. Whenever a user loads the package from the local file, Power BI will ignore the AppSource version of the visual.
 
-To enable Developer mode in Power BI service, follow the instructions in [Set up Power BI service for developing a visual](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
+To enable Developer mode in Power BI service, follow the instructions in [Set up Power BI service for developing a visual](environment-setup.md#enable-developer-mode).
 
 ## General test cases
 
