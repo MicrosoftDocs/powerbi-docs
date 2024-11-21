@@ -1,6 +1,6 @@
 ---
 title: Set alerts on Power BI reports (public preview)
-description: Set alerts on Power BI reports with Data Activator.
+description: Set alerts on Power BI reports with Activator.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: mihart, lukaszp
@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 **APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for ***business users*** :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium or Fabric license
 
-With Data Activator, you can set data alerts on the reports that you're interested in following. Read more about it in [What is Data Activator?](/fabric/real-time-intelligence/data-activator/data-activator-introduction)
+With Fabric Activator, you can set data alerts on the reports that you're interested in following. Read more about it in [What is Activator?](/fabric/real-time-intelligence/data-activator/data-activator-introduction)
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ You can sign up for a [Microsoft Fabric free trial](https://aka.ms/try-fabric).
 1. Save the alert to a workspace with a Fabric capacity license.
 1. Select **Start my alert**, then select **Create alert**.
 
-Power BI creates a Data Activator reflex and connects it to the data in your Power BI semantic model. Data Activator automatically starts monitoring your data and notifies you when the condition is met.
+Power BI creates an Activator item and connects it to the data in your Power BI semantic model. Activator automatically starts monitoring your data and notifies you when the condition is met.
 
 ## Customize the trigger
 
@@ -53,8 +53,8 @@ You can further customize the trigger to:
 - Notify different users
 - Even launch a Power Automate workflow.
 
-For more information, read the [Data Activator](/fabric/real-time-intelligence/data-activator/data-activator-introduction) documentation.
+For more information, read the [Activator](/fabric/real-time-intelligence/data-activator/data-activator-introduction) documentation.
 
 ## Related content
 
-- [Data Activator](/fabric/real-time-intelligence/data-activator/data-activator-introduction)
+- [Fabric Activator](/fabric/real-time-intelligence/data-activator/data-activator-introduction)

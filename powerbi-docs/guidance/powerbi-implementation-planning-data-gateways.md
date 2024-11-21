@@ -620,7 +620,7 @@ The following table provides an overview of the typical issues you might encount
 > - Use [Data Factory](/fabric/data-factory/data-factory-overview) to copy gateway logs and land them in OneLake.
 > - Use notebooks to programmatically gather gateway information by using the [Power BI REST APIs](/rest/api/power-bi/gateways/get-gateways) and transform gateway log files to tables.
 > - Use Power BI to create a semantic model and report on gateway health.
-> - Use [Data Activator](/fabric/real-time-intelligence/data-activator/data-activator-introduction) to send alerts to gateway owners and administrators when there's anomalies or disruptions.
+> - Use [Fabric Activator](/fabric/real-time-intelligence/data-activator/data-activator-introduction) to send alerts to gateway owners and administrators when there's anomalies or disruptions.
 
 ### Monitor gateways
 

@@ -805,7 +805,7 @@ The following updates are new to Power BI Desktop this month:
 * More styling options for column and bar charts  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674238)  [[video]](https://youtu.be/PycL2_T0DxM?t=311) 
 * Extended customization for data labels  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674239)  [[video]](https://youtu.be/PycL2_T0DxM?t=526) 
 * Azure Maps clustering aggregation support for bubble layer  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674240)
-* Alerting on your Power BI reports with Data Activator  [[video]](https://youtu.be/PycL2_T0DxM?t=168)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674241)  [[article]](/fabric/real-time-intelligence/data-activator/data-activator-introduction)
+* Alerting on your Power BI reports with Fabric Activator  [[video]](https://youtu.be/PycL2_T0DxM?t=168)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674241)  [[article]](/fabric/real-time-intelligence/data-activator/data-activator-introduction)
 
 ### Data connectivity
 * OneLake data hub in Power BI Desktop  [[video]](https://youtu.be/PycL2_T0DxM?t=469)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674246)  [[article]](https://aka.ms/dax-queries)
