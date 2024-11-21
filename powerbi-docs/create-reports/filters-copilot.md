@@ -34,11 +34,7 @@ You administrator needs to enable the tenant switch before you start using Copil
 
 To get started, select the **Copilot** button in the ribbon in the Power BI service. In the service, the button is available in both edit mode and view mode.
 
-copilot-filters-copilot-icon.png A screenshot of a computer
-
-Once the copilot pane is open, make sure that there are existing slicers and filters on the report. For now, Copilot is only able to interact with existing filters on the report. It can't create new filters.  
-
-You can ask copilot to interact with your filters as the examples below: 
+:::image type="content" source="media/filters-copilot/copilot-filters-copilot-icon-pane.png" alt-text="Screenshot shows the icon for opening Copilot.":::
 
 ### Examples of filters
 
