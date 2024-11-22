@@ -19,7 +19,7 @@ LocalizationGroup: Share your work
 
 To create a new workspace, see [Create a workspace](service-create-the-new-workspaces.md).
 
-:::image type="content" source="media/service-roles-new-workspaces/power-bi-roles-access.png" alt-text="Screenshot of setting roles in the Access dialog of the workspace.":::
+:::image type="content" source="/media/filters-copilot/copilot-modify-filter-status.png" alt-text="Screenshot of setting roles in the Access dialog of the workspace.":::
 
 Roles let you manage who can do what in a workspace, so teams can collaborate. Workspaces allow you to assign roles to individuals, and also to user groups such as security groups, Microsoft 365 groups, and distribution lists.
 
