@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/21/2024
+ms.date: 11/20/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
