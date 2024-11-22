@@ -371,7 +371,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 - For [Power BI apps](../consumer/end-user-apps.md) you install, you can only create subscriptions for others if you're the owner of the app.
 
-- Subscriptions created within apps can be viewed and managed from the associated workspace by users with the admin role in that workspace.  
+- Subscriptions created within apps can be viewed and managed from the associated workspace by users with the admin role in that workspace. The workspace admin will have to install the app to view the subscriptions.
 
 **Unsupported features**    
 
