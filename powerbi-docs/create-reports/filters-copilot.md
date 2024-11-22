@@ -84,6 +84,7 @@ You can ask also Power BI Copilot to remove filters that are already applied.
 
 If you have filters that are already applied on the report and you want to add other filters on top of that you can do it, by appending the extra filter and referring that to the Copilot.
 
+:::image type="content" source="media/filters-copilot/copilot-remove-filters-status.png" alt-text="Screenshot shows using Copilot to clear a filter.":::
 
 ## Clear filters 
 
