@@ -63,7 +63,7 @@ Confirm that the Power BI visuals tools package is installed. In PowerShell, run
 
 ## Enable developer mode
 
-To develop a Power BI visual in the Desktop or on the web, developer mode must be enabled.
+To develop or upload your own Power BI visual in the Desktop or on the web, developer mode must be enabled.
 
 ### [How to enable developer mode in Power BI Desktop](#tab/desktop)
 
