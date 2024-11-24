@@ -24,14 +24,14 @@ The following diagram illustrates the end-to-end scenario with two development w
 
 :::image type="content" source="./media/projects-build-pipelines/pipeline.png" alt-text="Diagram showing workflow of DevOps pipeline." border="false" lightbox="./media/projects-build-pipelines/pipeline.png":::
 
-1. *User 1* develops [using Power BI Desktop](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools).
+1. *User 1* develops [using Power BI Desktop](/fabric/cicd/git-integration/manage-branches##scenario-1---develop-using-client-tools).
 
    1. Create a branch from main using **VS Code** (feature/datasetchange)
    1. Make changes to semantic model using Power BI Desktop
    1. Commit changes to remote repository branch using **VS Code**
    1. Create Pull Request to main branch using Azure DevOps
 
-1. At the same time, *User 2* develops [using another Fabric workspace](/fabric/cicd/git-integration/manage-branches#develop-using-another-workspace).
+1. At the same time, *User 2* develops [using another Fabric workspace](/fabric/cicd/git-integration/manage-branches#scenario-2---develop-using-another-workspace).
 
    1. Create branch from main using Fabric Git (feature/reportchange)
    1. Make report changes in the Fabric workspace
@@ -150,6 +150,8 @@ Create a branch directly from the Fabric Workspace:
    :::image type="content" source="./media/projects-build-pipelines/source-control.png" alt-text="Screenshot showing the source control screen to checkout a new branch.":::
 
    :::image type="content" source="./media/projects-build-pipelines/checkout-branch.png" alt-text="Screenshot showing how to checkout a new branch.":::
+
+   Alternatively, you can choose to develop within a separate, isolated workspace or in Power BI Desktop. For more information, see [Manage Git branches](/fabric/cicd/git-integration/manage-branches)
 
 1. Commit your changes to this new branch.
 
