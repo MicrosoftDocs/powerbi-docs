@@ -151,8 +151,6 @@ Create a branch directly from the Fabric Workspace:
 
    :::image type="content" source="./media/projects-build-pipelines/checkout-branch.png" alt-text="Screenshot showing how to checkout a new branch.":::
 
-   Alternatively, you can choose to develop within a separate, isolated workspace or in Power BI Desktop. For more information, see [develop using another workspace](/fabric/cicd/git-integration/manage-branches#develop-using-another-workspace)
-
 1. Commit your changes to this new branch.
 
    :::image type="content" source="./media/projects-build-pipelines/commit-change-to-branch.png" alt-text="Screenshot showing commit changes to branch.":::
