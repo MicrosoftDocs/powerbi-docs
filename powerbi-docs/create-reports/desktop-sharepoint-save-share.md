@@ -146,16 +146,6 @@ To share a file stored in OneDrive or SharePoint the following requirements must
 
 Learn more about how users can [view Power BI files in their browser](../collaborate-share/service-sharepoint-viewer.md) through links shared with them via Power BI Desktop.
 
-## Known Issues
-
-### Unable to open document
-
-If you have signed-in to Power BI on multiple different accounts, you can see files in the file menu that each account interacted with.  If you try to open one of the files that belongs to another account and receive an error, sign-in to the account that has access to the file and try again. 
-
-### Unable to create a new folder inside SharePoint
-
-For some specific SharePoint drives, users may not have permissions to create folders. As a result, when the user selects the "New Folder" button, the new folder is not added. To resolve this error, please work with an admin to ensure you have sufficient permissions. 
-
 ## Considerations and limitations
 
 -	These features don’t work with personal OneDrive accounts.   
@@ -233,3 +223,12 @@ If the account you're sign-in to in Power BI Desktop and your local OneDrive or 
 
 When you drag a Power BI file to a OneDrive or SharePoint location in the file system, the file is uploaded to the new location in OneDrive or SharePoint. If you try to open the file before the file has completed syncing to OneDrive or SharePoint, the file acts as a local file. Therefore, when you try to share a link to the file, you're prompted to save the file to OneDrive or SharePoint even though the file is syncing there. When you're prompted to save a file that is already saved, wait until the file has finished syncing and try again. Once the file has finished syncing to the new OneDrive or SharePoint location, you're able to share a link to the file without being prompted to save again.  
 
+## Troubleshooting and Known Issues
+
+### Unable to open document
+
+If you have signed-in to Power BI on multiple different accounts, you can see files in the file menu that each account interacted with.  If you try to open one of the files that belongs to another account and receive an error, sign-in to the account that has access to the file and try again. 
+
+### Unable to create a new folder inside SharePoint
+
+For some specific SharePoint document libraries, users may not have permissions to create folders. As a result, when the user selects the "New Folder" button, the new folder is not added. To resolve this error, please work with an admin to ensure you have sufficient permissions or choose a different OneDrive/SharePoint location. 
