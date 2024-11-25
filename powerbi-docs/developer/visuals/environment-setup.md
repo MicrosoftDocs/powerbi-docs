@@ -25,6 +25,14 @@ In this article, you learn how to:
 > * [Install *pbiviz*](#install-pbiviz).
 > * [Enable Power BI developer mode](#enable-developer-mode).
 
+## Prerequisites
+
+Before you start developing your Power BI visual, verify that you have everything listed in this section.
+
+* A **Power BI Pro** or **Premium Per User (PPU)** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
+* An integrated development environment (IDE) for developing JavaScript and TypeScript applications. [Visual Studio Code (VS Code)](https://www.visualstudio.com/) is ideal for developing visuals.
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://support.apple.com/guide/terminal/welcome/mac) (for Mac).
+
 ## Install node.js
 
 *Node.js* is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run any apps created on JavaScript.
@@ -63,7 +71,7 @@ Confirm that the Power BI visuals tools package is installed. In PowerShell, run
 
 ## Enable developer mode
 
-To develop a Power BI visual in the Desktop or on the web, developer mode must be enabled.
+To develop or upload your own Power BI visual in the Desktop or on the web, developer mode must be enabled.
 
 ### [How to enable developer mode in Power BI Desktop](#tab/desktop)
 
