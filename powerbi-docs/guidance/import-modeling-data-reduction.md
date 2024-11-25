@@ -13,7 +13,7 @@ ms.date: 11/25/2024
 
 # Data reduction techniques for Import modeling
 
-This article targets Power BI Desktop data modelers who develop and publish Power BI semantic models. Specifically, it describes various techniques to help reduce the data loaded into [Import models](../connect-data/service-dataset-modes-understand#import-mode.md).
+This article targets Power BI Desktop data modelers who develop and publish Power BI semantic models. Specifically, it describes various techniques to help reduce the data loaded into [Import models](../connect-data/service-dataset-modes-understand.md#import-mode).
 
 Import models are loaded with data that's compressed and optimized, and then stored to disk by the VertiPaq storage engine. When source data is loaded into memory, it's possible to achieve 10x compression, and so it's reasonable to expect that 10 GB of source data can compress to about 1 GB in size. Further, when persisted to disk an extra 20% reduction can be achieved.
 
