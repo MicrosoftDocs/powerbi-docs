@@ -10,12 +10,14 @@ ms.topic: concept-article
 ms.date: 11/1/2024
 LocalizationGroup: Get started
 
-#customer intent: As a business user, I want to learn about the metrics feature so that I ca use it in my organization.
+#customer intent: As a business user, I want to learn about the metrics feature so that I can use it in my organization.
 ---
 
 # Get started with Metrics
 
 Metric sets aim to help organizations define, discover, and reuse trusted metrics. Currently, metrics are defined in semantic layers as measures in models. Over time, these models become large and complex, making them difficult to manage and use which leads to the creation of many specific models. When organizations have many specific models, it causes data silos and duplicate metrics, resulting in more metric redefinitions. The Fragmentation in models makes it hard for users to trust existing metrics and creates logistical challenges. Metric sets address this issue by giving users tools to manage and reuse key metrics across the organization.  
+
+To use metric sets, a Power BI Admin must turn it on in tenant settings. [Metric hub tenant settings](/fabric/admin/service-admin-portal-goals-settings)
 
 ## Licensing Requirements
 
