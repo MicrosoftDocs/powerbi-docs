@@ -76,7 +76,7 @@ These filter types are supported:
 
 You can ask Power BI Copilot to apply an existing filter or slicer for the report. Once you complete the prompt, the filter or slicer is updated on the report accordingly.
 
-:::image type="content" source="media/filters-copilot/copilot-apply-filter-customer-type.png" alt-text="Screenshot shows applying a filter by using Copilot.":::
+:::image type="content" source="media/filters-copilot/copilot-apply-filter-customer-type.png" alt-text="Screenshot shows applying a filter by using Copilot." lightbox="media/filters-copilot/copilot-apply-filter-customer-type.png":::
 
 ## Remove a filter  
 
@@ -84,7 +84,7 @@ You can ask also Power BI Copilot to remove filters that are already applied.
 
 If you have filters that are already applied on the report and you want to add other filters on top of that you can do it, by appending the extra filter and referring that to the Copilot.
 
-:::image type="content" source="media/filters-copilot/copilot-remove-filters-status.png" alt-text="Screenshot shows using Copilot to clear a filter.":::
+:::image type="content" source="media/filters-copilot/copilot-remove-filters-status.png" alt-text="Screenshot shows using Copilot to clear a filter." lightbox="media/filters-copilot/copilot-remove-filters-status.png":::
 
 ## Clear filters 
 
