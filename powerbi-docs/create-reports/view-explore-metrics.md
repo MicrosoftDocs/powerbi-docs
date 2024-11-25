@@ -16,14 +16,6 @@ LocalizationGroup: Consumers
 
 This article shows you different methods to view, explore, and analyze metrics within Power BI. Methods include using the metric details, usage sections, and the Explore feature for in-depth analysis. You also learn the importance of metric details and how they provide better understanding and trustworthiness the metrics.
 
-## Prerequisites
-
-To create and manage metrics sets, you must:
-
-- have a Power BI Pay-per-user(PPU)/Premium license to author and share metrics in standard workspaces.
-- work in a Fabric capacity.
-- be at least in a Contributor role in a workspace. Read more about roles in workspaces.
-- have build permission for a semantic model.
 
 ## Metric details
 
