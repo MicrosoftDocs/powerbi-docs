@@ -18,7 +18,7 @@ ms.collection: ce-skilling-ai-copilot
 
 You can use Copilot in Power BI to set, clear, and delete filters. Given a Power BI report populated with visuals, now with Power BI Copilot you can interact with your filters and slicers on the report. With a Power BI report populated with visuals, you can now interact with your filters and slicers using Power BI Copilot. New users often find it unfamiliar to interact with filters on the filter pane or slicers. At the same time, they find it useful to ask Copilot for help with managing the existing filters in the report. You can now apply, remove, append, and clear filters by creating a prompt in the Copilot chat pane. 
 
-:::image type="content" source="media/filters-copilot/copilot-modify-filter-status.png" alt-text="Screenshot shows modifying a filter by using Copilot.":::
+:::image type="content" source="media/filters-copilot/copilot-modify-filter-status.png" alt-text="Screenshot shows modifying a filter by using Copilot." lightbox="media/filters-copilot/copilot-modify-filter-status.png":::
 
 Copilot is turned on by default in Fabric. Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 
