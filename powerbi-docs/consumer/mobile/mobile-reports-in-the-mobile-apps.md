@@ -131,7 +131,7 @@ For example:
 
 **Bookmarks** is present only if [bookmarks](mobile-reports-in-the-mobile-apps.md#bookmarks) have been set in the report. Both personal bookmarks that you can define in Power BI service and bookmarks defined by the report creator are shown. If one of the bookmarks has been defined as the default bookmark, the report will open to that view when it loads.
 
-**Annotate and share** might be turned off if there's an [Intune protection policy](/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+**Annotate and share** might be turned off if there's an [Intune protection policy](/mem/intune/apps/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
 
 **Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
 
