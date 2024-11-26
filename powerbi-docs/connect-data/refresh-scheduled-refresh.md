@@ -82,7 +82,7 @@ Set the **Configure a refresh schedule** slider to **On** to configure the setti
 ## What's supported?
 
 > [!NOTE]
-> Scheduled refresh will also get disabled automatically after four consecutive errors.
+> Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
 
 > [!TIP]
 > Power BI does not have a monthly refresh interval option. However, you can use Power Automate to create a custom refresh interval that occurs monthly, as described in the following [Power BI blog post](https://powerbi.microsoft.com/blog/refresh-your-power-bi-dataset-using-microsoft-flow/). 

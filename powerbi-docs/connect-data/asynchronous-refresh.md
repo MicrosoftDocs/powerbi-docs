@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/08/2024
+ms.date: 11/26/2024
 ---
 
 # Enhanced refresh with the Power BI REST API
@@ -141,14 +141,12 @@ The response body might look like the following example:
         "requestId": "474fc5a0-3d69-4c5d-adb4-8a846fa5580b",
         "startTime": "2020-12-07T01:05:54.157324Z",
         "refreshType": "ViaEnhancedApi",
-        "endTime": "2020-12-07T01:05:57.353371Z",
         "status": "Unknown"
     }
     {
         "requestId": "85a82498-2209-428c-b273-f87b3a1eb905",
         "refreshType": "ViaEnhancedApi",
         "startTime": "2020-12-07T01:05:54.157324Z",
-        "endTime": "2020-12-07T01:05:57.353371Z",
         "status": "Unknown",
         "extendedStatus": "NotStarted"
     }

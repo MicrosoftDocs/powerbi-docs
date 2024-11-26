@@ -536,12 +536,12 @@
         href: view-explore-metrics.md
       - name: "Use and monitor metrics"
         href: use-monitor-metrics.md
-      - name: Create connected metrics
-        href: service-goals-create-connected.md
     - name: Scorecards
       items: 
       - name: Get started with metrics
         href: service-goals-introduction.md
+      - name: Create connected metrics
+        href: service-goals-create-connected.md
       - name: Create scorecards and manual metrics
         href: service-goals-create.md
       - name: Create submetrics
