@@ -1,5 +1,5 @@
 ---
-title: Use field parameters to change visuals (preview)
+title: Use report readers to change visuals (preview)
 description: Learn how to let report readers dynamically change the visuals in a report by using field parameters.
 author: Sujata994
 ms.author: sunaraya
