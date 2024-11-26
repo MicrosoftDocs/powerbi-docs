@@ -9,39 +9,39 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 11/11/2022
 LocalizationGroup: Create reports
+#customer intent: 
 ---
+
+
 # Sort one column by another column in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 When you're editing a report in Power BI, you can choose a column to define the sort order of another column.
-
 Here's a common example. You have a Month Name column, and when you add it to a visual, the months are being sorted alphabetically: April, August, December, February, and so on. However, you want them to be sorted chronologically. This article shows how to set the sort order of one column by a different column, in Power BI Desktop or in the Power BI service.
 
-:::image type="content" source="media/desktop-sort-by-column/power-bi-alphabetical-sort-chart.png" alt-text="Screenshot of a line chart in Power BI Desktop with the months sorted alphabetically.":::
+:::image type="content" source="media/desktop-sort-by-column/power-bi-alphabetical-sort-chart.png" alt-text="Screenshot of a line chart in Power BI Desktop.":::
 
 > [!NOTE]
 > When you're reading a report, you can also change how the values in a visual are sorted. See [Change how a chart is sorted in a Power BI report](../consumer/end-user-change-sort.md) for details.
 
 ## Set the column to use for sorting
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+To set a different column to sort by in Power BI Desktop, both columns need to be at the same level of granularity. For example, to sort a column of month names correctly, you need a column that contains a number for each month. The sort order applies to any visual in the report that contains the sorted column. In the following example, the months are sorted alphabetically, but they should be sorted chronologically.
 
-To set a different column to sort by in Power BI Desktop, both columns need to be at the same level of granularity. For example, to sort a column of month names correctly, you need a column that contains a number for each month. The sort order will apply to any visual in the report that contains the sorted column. In the following example, the months are sorted alphabetically, but they should be sorted chronologically.
+1. Select the column that you want to sort, in this case, **Month**. Months in the visual are sorted alphabetically. In the **Fields** pane, the **Column tools** tab becomes active.
 
-1. Select the column that you want to sort, in this case, **Month**. Note that the months in the visual are sorted alphabetically. In the **Fields** pane, the **Column tools** tab becomes active.
-
-   :::image type="content" source="media/desktop-sort-by-column/power-bi-alphabetical-sort.png" alt-text="Screenshot of a Power BI Desktop chart with months sorted alphabetically. The Column tools tab is active, and the Sort by Column button is highlighted.":::
+   :::image type="content" source="media/desktop-sort-by-column/power-bi-alphabetical-sort.png" alt-text="Screenshot of a Power BI Desktop chart with months. The Column tools tab is active, and the Sort by Column button is highlighted.":::
 
 1. Select **Sort by Column**, then select the field you want to sort the other field by, in this case, **Month Number**.
 
-   :::image type="content" source="media/desktop-sort-by-column/power-bi-new-sort.png" alt-text="Screenshot of a chart with the months sorted alphabetically. The Sort by Column button is called out. In a menu below it, Month Number is highlighted.":::
+:::image type="content" source="media/desktop-sort-by-column/power-bi-new-sort.png" alt-text="Screenshot of a chart with the months sorted alphabetically. The Sort by Column button is called out. In a menu below it, Month Number is highlighted.":::
 
 1. The visual automatically sorts chronologically by the order of months in a year.
 
    :::image type="content" source="media/desktop-sort-by-column/power-bi-chronological-sort.png" alt-text="Screenshot of a line chart in Power BI Desktop with the months sorted chronologically.":::
 
-# [Power BI service](#tab/powerbi-service)
+## Set a different column to sort
 
 To set a different column to sort by in the Power BI service, both columns need to be at the same level of granularity. For example, to sort a column of month *names*, you need a column that contains a *number* for each month. In the following example, the months are being sorted alphabetically, but they should be sorted chronologically.
 
@@ -51,7 +51,7 @@ To set a different column to sort by in the Power BI service, both columns need 
 
 1. In the **Visualizations** pane, in the **Fields** section, locate the **Tooltip** fields bucket.
 
-   :::image type="content" source="media/desktop-sort-by-column/service-tooltips-fields-bucket.png" alt-text="Screenshot of the Power BI service Visualizations and Fields panes. In the Visualizations pane Fields section, the Tooltips fields bucket is highlighted.":::
+:::image type="content" source="media/desktop-sort-by-column/service-tooltips-fields-bucket.png" alt-text="Screenshot of the Power BI service Visualizations and Fields panes.":::
 
 1. Drag the **Month Number** field from the **Fields** pane to the **Tooltip** fields bucket in the **Visualization** pane.
 
