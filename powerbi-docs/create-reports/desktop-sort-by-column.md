@@ -7,7 +7,7 @@ ms.reviewer: 'sunaraya'
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/11/2022
+ms.date: 11/25/2024
 LocalizationGroup: Create reports
 #customer intent: 
 ---
