@@ -18,7 +18,7 @@ LocalizationGroup: Create reports
 
 You can create visually rich **report tooltips** that appear when you hover over visuals, based on report pages you create in **Power BI Desktop** and the **Power BI service**. By creating a report page that serves as your tooltip, your custom tooltips can include visuals, images, and any other collection of items you create in the report page.
 Just getting started modifying tooltips? Check out [Customize tooltips](desktop-custom-tooltips.md).
-You can create as many tooltip pages as you want. Each tooltip page can be associated with one or more fields in your report, so that when you hover over a visual that includes the selected field, the tooltip you created on your tooltip page appears when you hover over the visual, filtered by the datapoint over which your mouse is hovering.
+You can create as many tooltip pages as you want. Each tooltip page can be associated with one or more fields in your report, so that when you hover over a visual that includes the selected field, the tooltip you created on your tooltip page appears when you hover over the visual, filtered by the datapoint where your mouse is hovering.
 There are all sorts of interesting things you can do with report tooltips. Let's take a look at how to create tooltips and what you must do to configure them.
 
 ![Screenshot of report tooltips for Power BI.](media/desktop-tooltips/desktop-tooltips-00a.png)
@@ -48,7 +48,7 @@ To see the actual size of the tooltip, select the **View** tab from the ribbon. 
 
 To see the actual size of the tooltip, select the **View** tab from the ribbon. From there, select **Actual Size**, as shown in the following image.
 
-![Screenshot of page view drop down to show actual size for easier tooltip creation.](media/desktop-tooltips/service-tooltips-04.png)
+![Screenshot of page view drop down to show the actual size for easier tooltip creation.](media/desktop-tooltips/service-tooltips-04.png)
 
 ---
 
@@ -60,7 +60,7 @@ From there, you can create whatever visuals you would like to show up in your to
 
 ![Screenshot shows a customized report tooltip.](media/desktop-tooltips/desktop-tooltips-06.png)
 
-There are more steps to complete before your tooltip report page is ready to work as a tooltip. You need to configure the tooltip page in a few ways, as described in the next section. 
+There are more steps to complete before your tooltip report page is ready to work as a tooltip. You need to configure the tooltip page in a few ways, as described in the next section.
 
 ## Configure your tooltip report page
 
@@ -124,10 +124,11 @@ There are a few considerations and limitations for **tooltips** to keep in mind.
 
 * Button visuals also support tooltips.
 * Dashboards don't support page tooltips.
-* Python and R visuals aren't currently supported to be shown in report tooltips.
+* Python and R visuals aren't currently shown in report tooltips.
 * Clusters aren't currently supported as fields that can be shown in report tooltips.
-* When choosing a field to be shown for report tooltips, when using a field versus a category, visuals that contain that field will only show the specified tooltip when summarization with the selected field matches.
-* You can turn off tooltips completely for a visual in Power BI reports. However, when you pin that visual to a dashboard in the Power BI service, the basic tooltip will still be displayed.
+* Whenyou choose a field to show report tooltips, visuals that contain that field only show the specified tooltip when field summarization matches that field.
+* When you use a field versus a category, visuals that contain that field only show the specified tooltip when field summarization matches that field.
+* You can turn off tooltips completely for a visual in Power BI reports. However, when you pin that visual to a dashboard in the Power BI service, the basic tooltip is still displayed.
 
 ## Related content
 
