@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
 ms.date: 10/07/2024
+ms.custom: references_regions
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to know more about DAX measures using natural language.
 ---
@@ -34,7 +35,7 @@ This feature can be used to jump-start creation of common DAX measures scenarios
 - Information functions
 
 ## Enable measure suggestions
-To enable the feature, you will need to first navigate to the **Options** menu of Power BI Desktop and turn on the preview switch for **Quick measure suggestions**:
+To enable the feature, you need to first navigate to the **Options** menu of Power BI Desktop and turn on the preview switch for **Quick measure suggestions**:
 
 :::image type="content" source="media/quick-measure-suggestions/enable-preview.png" alt-text="Screenshot of how to enable preview from the options menu of Power BI Desktop.":::
 
@@ -55,31 +56,34 @@ To help demonstrate the feature here are some natural language examples for each
 Apply aggregations to a column to return a single value. Our supported aggregations include sum, count, distinct count, distinct count no blanks, average, min, max, median, variance, and standard deviation.
 
 Examples:
--	Show me sum of sales
--	Get total sales
--	Count products
--	How many products are there
--	Unique users
--	Distinct count of users no blanks
--	Get the number of unique users and exclude blanks
--	What is the max price
--	Median age
+
+- Show me sum of sales
+- Get total sales
+- Count products
+- How many products are there
+- Unique users
+- Distinct count of users no blanks
+- Get the number of unique users and exclude blanks
+- What is the max price
+- Median age
 
 #### Optional filters
 For aggregated columns, you can also specify one or more filter conditions. If there are multiple filter conditions, you can specify if you want an intersection (&&/AND) or union (||/OR) of the filters.
 
 Examples:
--	How many customers in London
--	Total sold units in 2022
--	Calculate sales where Product is Word and Region is North
--	Sales where Product is Word or Region is North
--	Sales filtered to Product is Word && Region is North
--	Sales for Product is Word || Region is North
+
+- How many customers in London
+- Total sold units in 2022
+- Calculate sales where Product is Word and Region is North
+- Sales where Product is Word or Region is North
+- Sales filtered to Product is Word && Region is North
+- Sales for Product is Word || Region is North
 
 ### Count of rows
 Count the number of records in the specified table. You don’t need to specify the table if there is only one table.
 
 Examples:
+
 - Count records of sales table
 - Count sales table
 - Sales table row count
@@ -119,110 +123,111 @@ Examples:
 - For the Sales table get the average of Price * Discount
 
 ### Selected value
-Get the selected value of a column. This is typically used when paired with a single-select slicer or filter so that the measure will return a non-blank value.
+Get the selected value of a column. This is typically used when paired with a single-select slicer or filter so that the measure returns a non-blank value.
 
 Examples:
 
--	What is the selected product
--	Which product is selected
--	Selected value for product
+- What is the selected product
+- Which product is selected
+- Selected value for product
 
 ### If condition
-Return values based on conditions. If you are returning string values, you will need to use double quotes. Conditions can use the following comparison operators: =, ==, <>, <, >, <=, >=
+Return values based on conditions. If you are returning string values, you need to use double quotes. Conditions can use the following comparison operators: =, ==, <>, <, >, <=, >=
 
 Examples:
 
--	If sales > 10,000 return "high sales" else "low sales"
--	If sales are greater than 10,000 display "high sales" otherwise display "low sales"
--	If selected value for product is blank, display "no product selected" else show selected product
--	If selected product = Power BI, show "PBI" else "other"
+- If sales > 10,000 return "high sales" else "low sales"
+- If sales are greater than 10,000 display "high sales" otherwise display "low sales"
+- If selected value for product is blank, display "no product selected" else show selected product
+- If selected product = Power BI, show "PBI" else "other"
 
 ### Text operations
 Perform text operations with columns, measures, or aggregated columns. For scenarios across columns within a table, we’ll merge (CONCATENATEX) the result in order to return a single value.
 
 Examples:
 
--	"The selected product is " & selected product 
--	Display "The selected product is " concatenated with the selected product 
--	Header_measure & " - " & Subheader_measure
--	For each row in Geography Dim table concatenate State & ", " & City and combine the result
--	For each row in Geography Dim table get State & ", " & City and merge
+- "The selected product is " & selected product 
+- Display "The selected product is " concatenated with the selected product 
+- Header_measure & " - " & Subheader_measure
+- For each row in Geography Dim table concatenate State & ", " & City and combine the result
+- For each row in Geography Dim table get State & ", " & City and merge
 
 ### Time intelligence
 These time intelligence scenarios require using a properly marked date table or auto date/time hierarchy. For YTD scenarios you can specify "fiscal" or "fiscal calendar" to base the calculation on the fiscal calendar (ends on June 30th).
 
 Examples:
 
--	YTD sales
--	Sales fiscal YTD 
--	Get the sales year to date
--	Sales MTD
--	Quarter to date sales
--	YTD sales for US and Canada
--	Change of sales from the previous year
--	Sales YoY change
--	Month over month change for sales
--	Sales QoQ Percent change 
--	Sales for the same period last year
--	Sales for the same period last month
--	28 day rolling average sales
--	28 – day rolling avg sales
+- YTD sales
+- Sales fiscal YTD 
+- Get the sales year to date
+- Sales MTD
+- Quarter to date sales
+- YTD sales for US and Canada
+- Change of sales from the previous year
+- Sales YoY change
+- Month over month change for sales
+- Sales QoQ Percent change 
+- Sales for the same period last year
+- Sales for the same period last month
+- 28 day rolling average sales
+- 28 – day rolling avg sales
 
 ### Relative time filtered value
 Apply a relative time filter that filters your measure or aggregated column to the last N hours / days / months / years.
 
 Examples:
 
--	Unique users in the last 4 hours
--	Unique users in the last 5 days
--	Total sales for the last 6 months
--	Total sales for the last 2 years
+- Unique users in the last 4 hours
+- Unique users in the last 5 days
+- Total sales for the last 6 months
+- Total sales for the last 2 years
 
 ### Most / least common value
 Return the value with the most or least number of occurrences in a specified column.
 
 Examples:
 
--	Most common value in Product
--	Which value in Product is most common
--	What is the most common value in Product
--	Which value in Product is least common
--	What is the least common value in Product
+- Most common value in Product
+- Which value in Product is most common
+- What is the most common value in Product
+- Which value in Product is least common
+- What is the least common value in Product
 
 ### Top N filtered value
 Compute a measure or aggregated column that is filtered to the top N categorical values based on that same measure or aggregated column.
 
 Examples:
 
--	Total sales for the top 3 products 
--	Sum of sales filtered to the top 3 products
--	Average score for the top 5 students
--	Avg score filtered to the top 5 students
+- Total sales for the top 3 products 
+- Sum of sales filtered to the top 3 products
+- Average score for the top 5 students
+- Avg score filtered to the top 5 students
 
 ### Top N values for a category
 Get a concatenated list of the top N values within a column based on a measure or aggregated column.
 
 Examples:
 
--	Top 3 products with the most total sales
--	Top 3 products by sales
--	What are the top 3 products in sales
+- Top 3 products with the most total sales
+- Top 3 products by sales
+- What are the top 3 products in sales
 
 ### Information functions
 Return system or user information such as the current date/time or the current user's email, domain, or username.
 
 Examples:
+
 - Today's date
--	Now 
--	Return the current user email
--	Return the current domain name and username
--	Return the current user’s domain login
+- Now 
+- Return the current user email
+- Return the current domain name and username
+- Return the current user’s domain login
 
 ## Limitations and considerations
 
-- Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you will still need to validate the DAX suggestions because they can be wrong or not match your intent.
+- Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you still need to validate the DAX suggestions because they can be wrong or not match your intent.
 - The feature isn't supported for LiveConnect data models.
--	The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature will be disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
+- The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature is disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
  
 :::image type="content" source="media/quick-measure-suggestions/quick-measure-suggestions-admin-setting.png" alt-text="Screenshot of the admin setting for measure suggestions.":::
 
