@@ -42,7 +42,7 @@ In addition, there are other features available to aggregate data in a visual. [
 
 The **Suggestions with Copilot** shows as disabled in Power BI Desktop versions before October 2024.
 
-## Related content
+## Describe a measure
 
 Here you can describe the measure you want to create and hit **Generate** (or enter key) to get DAX measure suggestions:
 
