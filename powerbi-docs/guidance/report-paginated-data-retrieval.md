@@ -42,7 +42,7 @@ In Power BI Report Builder, you can use the relational query designer to graphic
 
 Analytic data sources—also known as _data models_ or just _models_—are well suited to both operational and analytic reports, and can deliver fast summarized query results even over very large data volumes. Model measures and KPIs can encapsulate complex business rules to achieve summarization of data. These data sources, however, aren't suited to reports that need to retrieve very large volumes of data (in excess of 10,000 rows).
 
-In Power BI Report Builder, you have a choice of two query designers: The Analysis Services DAX query designer, and the Analysis Services MDX query designer. These designers can be used for Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) data sources, or any SQL Server Analysis Services or Azure Analysis Services model—tabular or multidimensional.
+In Power BI Report Builder, you have a choice of two query designers: The Analysis Services DAX query designer, and the Analysis Services MDX query designer. These designers can be used for Power BI semantic model data sources, or any SQL Server Analysis Services or Azure Analysis Services model—tabular or multidimensional.
 
 We recommend that you use the DAX query designer—providing it entirely meets your query needs. If the model doesn't define the measures you need, you'll need to switch to query mode. In this mode, you can customize the query statement by adding expressions (to achieve summarization).
 

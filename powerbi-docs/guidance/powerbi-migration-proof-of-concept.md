@@ -37,7 +37,7 @@ When conducting a POC, focus on the following goals:
 - Verify your assumptions about how a feature works.
 - Educate yourself on differences in how Power BI works compared with the legacy BI platform.
 - Validate initial understandings of certain requirements with subject matter experts.
-- Create a small semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) with real data to understand and detect any issues with the data structure, relationships, data types, or data values.
+- Create a small semantic model with real data to understand and detect any issues with the data structure, relationships, data types, or data values.
 - Experiment with, and validate, [DAX syntax](/dax/) expressions used by model calculations.
 - Test data source connectivity using a gateway (if it's to be a gateway source).
 - Test data refresh using a gateway (if it's to be a gateway source).

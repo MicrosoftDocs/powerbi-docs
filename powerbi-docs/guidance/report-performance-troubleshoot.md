@@ -50,7 +50,7 @@ When the report is hosted on shared capacity, it's not possible to monitor capac
 
 First, determine if slow performance occurs at specific times of the day or month. If it does—and many users are opening the report at these times—consider two options:
 
-- Increase query throughput by migrating the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) to [Azure Analysis Services](/azure/analysis-services/analysis-services-overview), or a Premium capacity (flowchart terminator 4).
+- Increase query throughput by migrating the semantic model to [Azure Analysis Services](/azure/analysis-services/analysis-services-overview), or a Premium capacity (flowchart terminator 4).
 - Use Power BI Desktop [Performance Analyzer](../create-reports/desktop-performance-analyzer.md) to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues (flowchart terminator 5).
 
 If you determine there's no time pattern, next consider if slow performance is isolated to a specific geography or region. If it is, it's likely that the data source is remote and there's slow network communication. In this case, consider:

@@ -3,7 +3,7 @@ title: Enable the Sync Slicers feature in Power BI visuals
 description: This article describes how to add the Sync Slicers feature to Power BI visuals so you can filter information across multiple pages in a Power BI report.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
@@ -22,7 +22,7 @@ For information about sync slicers and how they work, see [Sync and use slicers 
 
 ## How to enable the sync slicer feature
 
-In the *capabilities.json* file, set `"supportsSynchronizingFilterState": true`, as shown in the following example:
+In the [*capabilities.json* file](./visual-project-structure.md#capabilitiesjson), set `"supportsSynchronizingFilterState": true`, as shown in the following example:
 
 ```json
 {

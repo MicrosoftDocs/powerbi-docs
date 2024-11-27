@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/30/2024
+ms.date: 10/17/2024
 LocalizationGroup: Data from databases
 ---
 
 # Edit SAP variables in Power BI
 
-Report authors who use SAP Business Warehouse or SAP HANA with DirectQuery can allow end users to edit SAP variables in Power BI Premium and shared workspaces. This article describes the requirements for editing SAP variables, how to enable this feature, and how to edit variables in Power BI Desktop and the Power BI service.
+Report authors who use SAP Business Warehouse (BW) or SAP HANA with DirectQuery can allow end users to edit SAP variables in Power BI Premium and shared workspaces. This article describes the requirements for editing SAP variables, how to enable this feature, and how to edit variables in Power BI Desktop and the Power BI service.
 
 ## Requirements and limitations
 
@@ -29,7 +29,7 @@ The following lists describe the requirements and limitations for editing SAP va
 
 ### Limitations
 
-- **Multidimensional models only for SAP HANA.** For SAP HANA, the SAP edit variables feature works only with multidimensional models and doesn't work on relational sources. Ensure you have *not* selected **Treat SAP HANA as a relational database** in **Options > Global >  DirectQuery > DirectQuery options** when editing SAP HANA variables in Power BI.
+- **Multidimensional models only for SAP HANA.** For SAP HANA, the edit SAP variables feature works only with multidimensional models and doesn't work on relational sources. Ensure you have *not* selected **Treat SAP HANA as a relational source** in **Options > Global >  DirectQuery > DirectQuery options** when editing SAP HANA variables in Power BI.
 
 - **No sovereign cloud support.** Power Query Online isn't available in sovereign clouds, so sovereign clouds don't support the edit SAP variables feature.
 
@@ -51,9 +51,9 @@ To enable report users to edit SAP variables:
 
 ## Edit SAP variables
 
-In Power BI Desktop, you can edit variables by selecting **Transform data** > **Edit variables** in the ribbon. Report creators can add and select variables for the report by using the following dialog box:
+In Power BI Desktop, you can edit variables by selecting **Transform data** > **Edit variables** in the ribbon. Report creators can add and select variables for the report by using the following dialog:
 
-![Screenshot that shows the Add items dialog box.](media/service-edit-sap-variables/sap-variables-add-items.png)
+![Screenshot that shows the Add items dialog.](media/service-edit-sap-variables/sap-variables-add-items.png)
 
 After you publish a report that enables editing SAP variables, the **Edit variables** link appears in the **Filter** pane for the report in the Power BI service. The first time you publish the report, it might take up to five minutes before the **Edit variables** link appears.
 
@@ -66,11 +66,11 @@ To edit the variables in the Power BI service, report users can:
 
    ![Screenshot that shows the Edit variables link in the Filter pane.](media/service-edit-sap-variables/sap-edit-variables-link.png)
 
-1. In the **Edit variables** dialog box, edit and override the variable values, or select the **Reset** button to revert their changes.
+1. In the **Edit variables** dialog, edit and override the variable values, or select the **Reset** button to revert their changes.
 
-   ![Screenshot that shows the Edit variables dialog box in the Power BI service.](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
+   ![Screenshot that shows the Edit variables dialog in the Power BI service.](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-Similar to other Power BI persistence behaviors, any changes users make in the **Edit variables** dialog box persist only for that user. Selecting **Reset to default** in the top menu bar resets the report to its original state, including the variables.
+Similar to other Power BI persistence behaviors, any changes users make in the **Edit variables** dialog persist only for that user. Selecting **Reset to default** in the top menu bar resets the report to its original state, including the variables.
 
    ![Screenshot that shows Reset to default.](media/service-edit-sap-variables/reset-to-default.png)
 

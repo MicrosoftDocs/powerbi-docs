@@ -72,5 +72,4 @@ landingContent:
         links:
           - text: "Power BI videos"
             url: videos.md 
-          - text: "Webinars"
-            url: webinars.md
+          

@@ -147,7 +147,12 @@
     - name: Synchronize scale-out replicas   
       href: service-premium-scale-out-sync-replica.md  
     - name: Compare semantic model scale-out replicas      
-      href: service-premium-scale-out-app.md                     
+      href: service-premium-scale-out-app.md   
+  - name: Workspace monitoring
+    expanded: false
+    items:
+    - name: Semantic model operations
+      href: semantic-model-operations.md                       
   - name: Automation tools
     expanded: false
     items:

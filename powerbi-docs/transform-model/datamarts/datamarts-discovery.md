@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: concept-article
 ms.date: 09/24/2024
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Data from files
 ---
 
@@ -30,7 +31,7 @@ For more information about a datamart, to explore reports, to view lineage, or t
 
 A page displays the information about the datamart, provides a button to create a new report, share datamart, pull data into Excel or view lineage. Related reports for the selected datamart are also displayed, if any exist. You can also navigate to the datamart editor, its settings, or manage permissions.
 
-The page also shows the workspace where the datamart is located, its endorsement status, its last refresh time, and any sensitivity settings that have been applied. It also displays the datamart's SQL endpoint connection string and the datamart's description.
+The page also shows the workspace where the datamart is located, its endorsement status, its last refresh time, and any sensitivity settings that are applied. It also displays the datamart's SQL endpoint connection string and the datamart's description.
 
 The following image shows the datamarts information page.
 
@@ -44,7 +45,7 @@ The following image shows the lineage of a datamart.
 
 To view any dependent items of the selected datamart, select the **Impact analysis** menu, which is displayed along the right side of the screen.
 
-:::image type="content" source="media/datamarts-discovery/datamarts-discovery-03.png" alt-text="Screenshot of datamart impact analysis pane.":::
+:::image type="content" source="media/datamarts-discovery/datamarts-discovery-03.png" alt-text="Screenshot of datamart impact analysis pane." lightbox="media/datamarts-discovery/datamarts-discovery-03.png":::
 
 ### Data hub in Power BI Desktop
 
@@ -64,7 +65,7 @@ Selecting a datamart from the list enables the **Connect** button in the window.
 
 ## Related content
 
-This article provided information about creating reports using datamarts. 
+This article provided information about creating reports using datamarts.
 
 The following articles provide more information about datamarts and Power BI:
 

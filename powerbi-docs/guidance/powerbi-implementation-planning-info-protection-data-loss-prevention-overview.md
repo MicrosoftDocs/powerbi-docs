@@ -77,7 +77,7 @@ Organizations commonly have external or internal requirements for classifying an
 Once you assign a sensitivity label to content in Power BI, you're able to gain knowledge and insight about:
 
 - Whether sensitive data is contained in a Power BI workspace.
-- Whether a particular Power BI item, like a semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md), is considered confidential.
+- Whether a particular Power BI item, like a semantic model, is considered confidential.
 - Who can access Power BI items that are considered sensitive.
 - Who has accessed sensitive data in the Power BI service.
 
