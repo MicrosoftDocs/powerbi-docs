@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 # Quick measure suggestions with Copilot
 Quick measure suggestions assist creation of DAX measures using natural language instead of using templates or writing DAX from scratch. Quick measure suggestions with Copilot feature are no longer available in public preview.
 
-:::image type="content" source="media/quick-measure-suggestions/copilot-summary-internet-sales.png" alt-text="Screenshot of the Copilot pane with an example." lightbox="media/quick-measure-suggestions/copilot-summary-internet-sales.png":::
+:::image type="content" source="media/quick-measure-suggestions/quick-measure-copilot-pane.png" alt-text="Screenshot of the Copilot pane with an example." lightbox="media/quick-measure-suggestions/quick-measure-copilot-pane.png":::
 
 This feature can be used to jump-start creation of common DAX measures scenarios, such as:
 
