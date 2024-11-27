@@ -4,11 +4,11 @@ description: Learn how visuals can retrieve the Power BI locale to localize thei
 author: mberdugo
 ms.author: monaberdugo
 manager: 
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/10/2023
+ms.date: 10/10/2024
 #customer intent: As a Power BI visual developer, I want to learn how to localize my visual to the Power BI locale so that I can provide content in the user's language.
 ---
 

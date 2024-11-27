@@ -7,15 +7,14 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 07/05/2023
+ms.date: 10/17/2024
 LocalizationGroup: Connect to services
+#customer intent: As an Office 365 admin, I want to connect to Office365Mon with Power BI so that I can analyze outages and health performance data with an out-of-the-box dashboard and reports.
 ---
 
 # Connect to Office365Mon with Power BI
 
-Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon template app. Power BI retrieves your data, including outages and health probes, and then builds an out-of-the-box dashboard and reports based on that data.
-
-Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) for Power BI.
+Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon template app. Power BI retrieves your data, including outages and health probes, and then builds an out-of-the-box dashboard and reports based on that data. This article tells you how to install the [Office365Mon template app](https://msit.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) for Power BI app and connect it to your data.
 
 >[!NOTE]
 >You need an Office365Mon admin account to connect to and load the Power BI template app.
@@ -23,21 +22,21 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
 ## How to connect
 
 1. Select **Connect your data** at the top of the screen:
-   
+
    :::image type="content" source="media/service-connect-to-office365mon/connect-your-data.png" alt-text="Screenshot that shows the Connect your data link." lightbox="media/service-connect-to-office365mon/connect-your-data.png":::
 
 2. In the **Connect to Office365 Power BI Template Pack** window, select **Next**:
-   
+
    :::image type="content" source="media/service-connect-to-office365mon/connect-template.png" alt-text="Screenshot that shows the Connect to Office365 Power BI Template Pack window.":::
 
 3. In the **Authentication method** box, select **OAuth2**. You can change the privacy level if you want. For more information, select **Learn more** in the window. When you're done, select **Sign in and connect**.
-   
+  
    :::image type="content" source="media/service-connect-to-office365mon/connect-template-2.png" alt-text="Screenshot that shows connection options in the Connect to Office365 Power BI Template Pack window.":::
 
 4. When prompted, enter your Office365Mon admin credentials and complete the authentication process.
 
 5. After Power BI imports the data, you see a new dashboard, report, and semantic model in your workspace. Select **Office365Mon**.
-   
+
    :::image type="content" source="media/service-connect-to-office365mon/office365mon-dashboard.png" alt-text="Screenshot that shows the Office365Mon dashboard." lightbox="media/service-connect-to-office365mon/office365mon-dashboard.png":::
   
 **What now?**
@@ -53,5 +52,5 @@ If you see a **Need admin approval** error when you try to sign in to Office365M
 
 ## Related content
 
-- [What is Power BI?](../fundamentals/power-bi-overview.md)
-- [Get data for Power BI](service-get-data.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
+* [Get data for Power BI](service-get-data.md)

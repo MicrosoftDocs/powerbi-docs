@@ -4,7 +4,7 @@ description: Learn about the SVG utils package and see examples of how you can u
 author: mberdugo
 ms.author: monaberdugo
 manager: rkarlin
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article

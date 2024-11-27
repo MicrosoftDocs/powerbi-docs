@@ -1,7 +1,7 @@
 ---
 title: "Export Power BI paginated report to XML (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, the XML rendering extension renders a Power BI paginated report to XML format. Import XML into a database, use as a message, or send to applications.
-ms.date: 02/27/2023
+ms.date: 10/16/2024
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -162,6 +162,8 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
  The XSLT to apply to the output is defined either in the report definition file with the DataTransform property of the report or with the XSLT *DeviceInfo* parameter. If either of these values are set, the transform occurs each time the XML renderer is used. When using subscriptions, the XSLT must be defined in the RDL DataTransform property.  
   
  If an XSLT file is specified, by both the DataTransform definition property and the device information setting, the XSLT specified in DataTransform occurs first, followed by the XSLT set by the device information settings.  
+
+ The XSLT file should be available over the internet over https without needing authentication.
   
   
 ###  <a name="DeviceInfo"></a> Device information settings  

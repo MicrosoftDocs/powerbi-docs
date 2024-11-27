@@ -41,7 +41,7 @@ With these two examples in mind, consider two specific aspects of workspace purp
 
 The primary objective of a workspace in the Fabric portal is to facilitate [collaboration](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports#collaborate-in-a-workspace) among multiple people. There are many ways that collaboration can happen in a workspace:
 
-- **Team-based development:** Multiple people can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)), while other users might focus on building reports.
+- **Team-based development:** Multiple people can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the semantic model, while other users might focus on building reports.
 - **Testing and validations:** Users might need to perform data validations for new content. Subject matter experts from the business unit might need to perform user acceptance testing (UAT), or a data quality team might need to validate the accuracy of the semantic model.
 - **Enhancements:** Stakeholders and consumers of the content might suggest enhancements to the content as circumstances change.
 - **Ownership transfer:** Another person or team might [take over responsibility](fabric-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that was created by someone else.
@@ -160,7 +160,7 @@ Different business units and departments might use workspaces slightly different
 
 The following options present some suggestions about how you can organize workspaces by subject and scope.
 
-In some cases, you might already have some useful [groups](/azure/active-directory/fundamentals/new-name) established in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). You can then use them to manage access to resources for the defined subject area and scope. However, you might need to create some new groups to suit this purpose. See the [workspace access](#workspace-access) section below for considerations.
+In some cases, you might already have some useful groups established in Microsoft Entra ID. You can then use them to manage access to resources for the defined subject area and scope. However, you might need to create some new groups to suit this purpose. See the [workspace access](#workspace-access) section below for considerations.
 
 #### Option 1: Workspace per subject area or project
 

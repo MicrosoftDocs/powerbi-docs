@@ -1,6 +1,6 @@
 ---
 title: Customize statuses on your scorecard
-description: Learn how to customize the statuses in your Power BI scorecards to meet your teams' needs.
+description: Learn how to customize statuses in your Power BI scorecards to meet your teams' needs and ensure they align with your organization's specific requirements.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: carlylan
@@ -8,8 +8,9 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/01/2022
+ms.date: 10/23/2024
 ms.custom: sample-salesandreturns
+#customer intent: As a Power BI user I want ot learn how to customize the statuses in Power BI.
 ---
 # Customize statuses on your Power BI scorecard
 
@@ -39,11 +40,11 @@ You can also get to this area by editing a metric inline.
 
 Once you’re in the **Manage statuses** section, you can take a few different actions. You can create new statuses, rename existing statuses, and change the color associated with the status.  
 
-- To add a new status, select the **Add status** button at the top.  
-- To rename an existing status, highlight the text and type your new status name.
-- To change the color associated with a status, select the color picker to the right of the status and choose your desired color.
-- To delete a status, select the trash icon.
-- To reorder the statuses within the list, use the arrow buttons to move an item up, down, or select and drag the status to its new location.
+* To add a new status, select the **Add status** button at the top.  
+* To rename an existing status, highlight the text and type your new status name.
+* To change the color associated with a status, select the color picker to the right of the status and choose your desired color.
+* To delete a status, select the trash icon.
+* To reorder the statuses within the list, use the arrow buttons to move an item up, down, or select and drag the status to its new location.
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-4.png" alt-text="Screenshot of a status being reordered in the edit status pane.":::
 
@@ -51,7 +52,7 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-5.png" alt-text="Screenshot of A view of how you can sort the status column by ascending or descending priority.":::
 
-- To reset all statuses to the default settings (the original scorecard statuses), select **Reset statuses** at the top.
+* To reset all statuses to the default settings (the original scorecard statuses), select **Reset statuses** at the top.
 
 ## Delete statuses
 
@@ -65,9 +66,9 @@ You can customize the statuses to the terminology you use every day in your orga
 
 ## Related content
 
-- [Get started with metrics in Power BI](service-goals-introduction.md)
-- [Create scorecards and manual metrics in Power BI](service-goals-create.md)
-- [Create connected metrics in Power BI](service-goals-create-connected.md)
-- [Stay on top of your metrics in Power BI](service-goals-check-in.md)
+* [Get started with metrics in Power BI](service-goals-introduction.md)
+* [Create scorecards and manual metrics in Power BI](service-goals-create.md)
+* [Create connected metrics in Power BI](service-goals-create-connected.md)
+* [Stay on top of your metrics in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/20/2024
+ms.date: 10/31/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -23,6 +23,8 @@ Copilot is turned on by default in Fabric. Administrators can turn off Copilot i
 This article provides an overview of the Copilot capabilities for Power BI.
 
 > [!NOTE]
+> Copilot in Fabric is now generally available, starting with the Microsoft Power BI experience. The Copilot in Fabric experiences for Data Factory, Data Engineering, Data Science, Data Warehouse, and Real-Time Intelligence are in preview.
+>
 > Copilot isn't yet supported for sovereign clouds due to GPU availability.
 
 See the article [Create reports in the Power BI service with Copilot](copilot-create-report-service.md) for more details.  
@@ -46,7 +48,7 @@ After you create a page with Copilot, you see an outline in the Copilot chat pan
 
 ## Access Copilot in the Power BI service
 
-To access Copilot in the Power BI service, the workspace has to be running on F64 or Premium capacity.
+To access Copilot in the Power BI service, you need to have a Contributor role on the Fabric capacity (F64 or higher) or Premium capacity.
 
 - To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
 - To create the narrative visual and generate Copilot reports, you need edit access to the workspace.

@@ -1,26 +1,20 @@
 ---
-title: Quick measure suggestions
-description: Quick measure suggestions assist creation of DAX measures using natural language
+title: Quick measure suggestions with Copilot
+description: Suggestions with Copilot to help the creation of DAX measures using natural language, making it easier and faster to generate DAX formulas.
 author: Sujata994
 ms.author: sunaraya
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: how-to
-ms.date: 11/26/2024
+ms.topic: concept-article
 LocalizationGroup: Create reports
+#customer intent: As a Power BI user I want to know more about DAX measures using natural language.
 ---
-# Quick measure suggestions
+# Quick measure suggestions with Copilot
 Quick measure suggestions assist creation of DAX measures using natural language instead of using templates or writing DAX from scratch. Quick measure suggestions with Copilot feature are no longer available in public preview.
 
 :::image type="content" source="media/quick-measure-suggestions/copilot-summary-internet-sales.png" alt-text="Screenshot of the Copilot pane with an example." lightbox="media/quick-measure-suggestions/copilot-summary-internet-sales.png":::
-
-To continue to use natural language to write DAX formulas for measures, Microsoft Fabric Copilot in DAX query view can help you write DAX queries, which can include query-scoped measures that you can add to your model.
-
-Quick measures continue to let you choose a calculation from a list and create a measure using a drag-and-drop template, generating the DAX formula when you select **Add**. You can see and modify these measures in the DAX formula bar. Quick measure suggestions public preview introduced quick queries as a pane, allowing you to drag-and-drop from the Data pane instead of within a dialog. The quick measures continue to be in the Quick measures pane, and the dialog experience is no longer available.
-
-:::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion.":::
 
 This feature can be used to jump-start creation of common DAX measures scenarios, such as:
 
@@ -42,11 +36,13 @@ This feature can be used to jump-start creation of common DAX measures scenarios
 
 To enable the feature, navigate to the **Options** menu of Power BI Desktop and turn on the preview switch for **Quick measure suggestions**:
 
-:::image type="content" source="media/quick-measure-suggestions/enable-preview.png" alt-text="Screenshot of how to enable preview from the options menu of Power BI Desktop.":::
+Quick measure suggestions to assist creation of DAX formulas for [model measures](/power-bi/transform-model/desktop-tutorial-create-measures) using natural language is available in [DAX query view](/power-bi/transform-model/dax-query-view) using [Microsoft Fabric Copilot to write and explain DAX queries](/dax/dax-copilot). You can create measures in a DAX query that can be added to your model when you're ready. 
 
-After you have enabled the feature, you can access the Quick measure suggestions, by launching Quick measure from the Home or Modeling tab of the ribbon and selecting **Suggestions**:
+In addition, there are other features available to aggregate data in a visual. [Quick measures](/power-bi/transform-model/desktop-quick-measures) can help you create DAX measures using a template approach for commonly used measures, such as month-over-month change. [Visual calculations](/power-bi/transform-model/desktop-visual-calculations-overview) can create a DAX calculation such as running totals directly in a visual. 
 
-:::image type="content" source="media/quick-measure-suggestions/suggestions-tab.png" alt-text="Screenshot of how to access the feature from the suggestions tab of the Quick measure pane.":::
+The **Suggestions with Copilot** shows as disabled in Power BI Desktop versions before October 2024.
+
+## Related content
 
 Here you can describe the measure you want to create and hit **Generate** (or enter key) to get DAX measure suggestions:
 
@@ -221,3 +217,10 @@ Examples:
 -	The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature is disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
  
 :::image type="content" source="media/quick-measure-suggestions/quick-measure-suggestions-admin-setting.png" alt-text="Screenshot of the admin setting for measure suggestions.":::
+
+## Related content
+- [Use Data Analysis Expressions (DAX) documentation](/dax/)
+- [Use quick measures for common calculations](desktop-quick-measures.md)
+- [Create calculated columns in Power BI Desktop](desktop-calculated-columns.md)
+- [Create calculated tables in Power BI Desktop](desktop-calculated-tables.md)
+

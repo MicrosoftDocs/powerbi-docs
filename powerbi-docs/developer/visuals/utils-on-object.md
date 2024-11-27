@@ -3,7 +3,7 @@ title: On object formatting utils in Power BI visuals
 description: This article describes how to use on object utils for on-object formatting in Power BI custom visuals.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins, shafeeq
+ms.reviewer: tebercov , shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article

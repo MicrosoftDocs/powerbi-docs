@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: video-RE4M2hq
 ms.topic: how-to
-ms.date: 08/28/2024
+ms.date: 10/25/2024
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI Desktop user, I want to understand dynamic M query parameters and learn how to use them to improve data filtering and optimize query performance in my reports.
 ---
@@ -248,6 +248,7 @@ There are some considerations and limitations to take into account when you use 
 - If you use SQL sources, you might get a confirmation dialog every time the parameter value changes. This dialog is due to a security setting: **Require user approval for new native database queries**. You can find and turn off this setting in the **Security** section of the Power BI Desktop **Options**.
 - Dynamic M query parameters might not work when accessing a semantic model in Excel.
 - Dynamic M query parameters aren't supported on Power BI Report Server.
+- Switching data sources using dynamic M query parameters isn't supported in the Power BI service. See [refresh and dynamic data sources](refresh-data.md#refresh-and-dynamic-data-sources) for additional information.
 
 ### Unsupported out-of-box parameter types
 

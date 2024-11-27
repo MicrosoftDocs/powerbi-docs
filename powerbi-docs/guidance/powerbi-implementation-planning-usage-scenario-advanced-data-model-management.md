@@ -15,7 +15,7 @@ ms.date: 02/13/2024
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This usage scenario focuses on *advanced data model management*, which is when a Power BI content creator relies on a third-party tool to develop, manage, or optimize data models. Some third-party tools are *[external tools](../transform-model/desktop-external-tools.md)*, which Power BI Desktop supports directly. You can also manage a published a data model (semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md)) by communicating directly with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) in the Power BI service.
+This usage scenario focuses on *advanced data model management*, which is when a Power BI content creator relies on a third-party tool to develop, manage, or optimize data models. Some third-party tools are *[external tools](../transform-model/desktop-external-tools.md)*, which Power BI Desktop supports directly. You can also manage a published a data model (semantic model) by communicating directly with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) in the Power BI service.
 
 Data models are hosted in either the Power BI service, Azure Analysis Services (AAS), or SQL Server Analysis Services (SSAS). This usage scenario focuses on using the XMLA endpoint in the Power BI service.
 
