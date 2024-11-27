@@ -148,7 +148,7 @@ For comprehensive information, see this [blog post about new features for column
 
 #### Extended customization for data labels 
 
-Data labels have more options, too. Discover new enhanced capabilities for data labels that give you extended customization choices to seamlessly match your reporting needs. They bring integration of additional metrics, dramatically improving your data analysis experience. Here are this month’s highlights.
+Data labels have more options, too. Discover new enhanced capabilities for data labels that give you extended customization choices to seamlessly match your reporting needs. They bring integration of additional goals, dramatically improving your data analysis experience. Here are this month’s highlights.
 
 :::image type="content" source="media/whats-new/extended-custom-data-labels.png" alt-text="Screenshot showing extended customization for data labels.":::
 
