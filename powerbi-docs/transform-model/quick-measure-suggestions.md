@@ -8,13 +8,13 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/07/2024
+ms.date: 11/26/2024
 LocalizationGroup: Create reports
 ---
 # Quick measure suggestions
 Quick measure suggestions assist creation of DAX measures using natural language instead of using templates or writing DAX from scratch. Quick measure suggestions with Copilot feature are no longer available in public preview.
 
-:::image type="content" source="media/quick-measure-suggestions/quick-measure-copilot-pane.png" alt-text="Screenshot of the Copilot pane with an example." lightbox="media/quick-measure-suggestions/quick-measure-copilot-pane.png":::
+:::image type="content" source="media/quick-measure-suggestions/copilot-summary-internet-sales.png" alt-text="Screenshot of the Copilot pane with an example." lightbox="media/quick-measure-suggestions/copilot-summary-internet-sales.png":::
 
 To continue to use natural language to write DAX formulas for measures, Microsoft Fabric Copilot in DAX query view can help you write DAX queries, which can include query-scoped measures that you can add to your model.
 
