@@ -151,7 +151,7 @@ To get the preceding values, follow these steps:
 1. This installation URL holds the three URL parameters whose values you need. Use the **appId**, **packageKey**, and **ownerId** values for the application. A sample URL will be similar to what is shown here.
 
     ```html
-    https://app.powerbi.com/Redirect?action=InstallApp&appId=3c386...16bf71c67&packageKey=b2df4b...dLpHIUnum2pr6k&ownerId=72f9...1db47&buildVersion=5
+    https://app.powerbi.com/Redirect?action=InstallApp&appId=66667...9cccc0000&packageKey=b2df4b...dLpHIUnum2pr6k&ownerId=aaaa...22222&buildVersion=5
     ```
 
 #### Get the application ID
