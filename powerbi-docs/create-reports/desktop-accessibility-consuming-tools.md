@@ -89,7 +89,7 @@ The Power BI service attempts to detect the high contrast settings selected for 
 
 ## Screen reader
 
-When viewing a report, it's best to leave scan mode off. Power BI should be treated more like an application and less like a document, so its setup with custom navigation to make it easier to navigate. When using a screen reader with Power BI Desktop, you should also make sure your screen reader is open before you open Power BI Desktop.
+When viewing a report, it's best to leave scan mode off. Power BI should be treated more like an application and less like a document, so it's setup with custom navigation to make it easier to navigate. When using a screen reader with Power BI Desktop, you should also make sure your screen reader is open before you open Power BI Desktop.
 
 When readers navigate around objects, the screen reader reads the type of object and the object's title if the object has one. The screen reader also reads a description of that object, the alt text, if it's provided by the report author.
 
