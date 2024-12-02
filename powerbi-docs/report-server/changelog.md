@@ -16,6 +16,8 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+See [Download Power BI Report Server](download-powerbi-report-server.md) for more imformation about downloading and installing Power BI Report Server.
+
 ## September 2024
 
 ### Power BI Report Server
