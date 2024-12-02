@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/01/2024
+ms.date: 12/02/2024
 ---
 # Create a link to a specific location in the Power BI mobile apps
 
@@ -92,7 +92,7 @@ In the following examples, placeholders for the parameter values are highlighted
 
 For **apps, and for reports and dashboards that are part of an app**, the easiest way to get the link is to go to the app workspace and choose **Update app**. This opens the "publish app" experience. Open the permissions tab and expand the links section to see the links to the app and all its contents. You can use these links from outside Power BI to access the app and its contents directly.
 
-![Screenshot of Power BI publish app links highlighted.](./media/mobile-apps-links/mobile-link-copy-app-links.png)
+![Screenshot of Power BI publish app links highlighted.](./media/mobile-apps-deep-link-specific-location/mobile-link-copy-app-links.png)
 
 #### Links to items that aren't in an app
 
