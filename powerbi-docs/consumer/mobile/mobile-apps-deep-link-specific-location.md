@@ -92,7 +92,7 @@ In the following examples, placeholders for the parameter values are highlighted
 
 For **apps, and for reports and dashboards that are part of an app**, the easiest way to get the link is to go to the app workspace and choose **Update app**. This opens the "publish app" experience. Open the permissions tab and expand the links section to see the links to the app and all its contents. You can use these links from outside Power BI to access the app and its contents directly.
 
-![Screenshot of Power BI publish app links highlighted.](./media/mobile-apps-deep-link-specific-location/mobile-link-copy-app-links.png)
+:::image type="content" source="./media/mobile-apps-deep-link-specific-location/mobile-link-copy-app-links.png" alt-text="Screenshot of app permissions tab showing how to find deep links to the app, report, and dashboard included in the app.":::
 
 #### Links to items that aren't in an app
 
