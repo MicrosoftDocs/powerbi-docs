@@ -117,7 +117,7 @@ To activate, select **View > Show visuals as tables**. To revert back to origina
 
 ## Related content
 
-A collection articles for Power BI accessibility:
+A collection of articles for Power BI accessibility:
 
 * [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
 * [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
