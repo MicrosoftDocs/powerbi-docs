@@ -166,11 +166,11 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To find the 36-character report object ID, navigate to the specific report in the Power BI service. The following URL from the Power BI service illustrates the report ID you would need to extract.
 
-    https\://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+    https\://app.powerbi.com/groups/me/reports/**dddddddd-3333-4444-5555-eeeeeeeeeeee**
 
     If the report isn't in My Workspace, you need to add **&GroupObjectId=<36-character-group-id>** as well, either before or after the report ID. For example, in this case the deep link would be:
 
-    mspbi://app/OpenReport?ReportObjectId=**e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=**8cc900cc-7339-467f-8900-fec82d748248**
+    mspbi://app/OpenReport?ReportObjectId=**dddddddd-3333-4444-5555-eeeeeeeeeeee**&GroupObjectId=**ffffffff-5555-6666-7777-aaaaaaaaaaaa**
 
     Note the ampersand (&) between the two parameters.
 
