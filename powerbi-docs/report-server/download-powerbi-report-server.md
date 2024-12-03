@@ -27,7 +27,7 @@ For details and more information about what's new in this release, see [Change l
 
 ## Download PBIRS
 
-:::image type="icon" source="../media/download.svg" border="false"::: **[Download Power BI Report Server](https://aka.ms/powerbireportserverexe)**
+:::image type="icon" source="/media/download.svg" border="false"::: **[Download Power BI Report Server](https://aka.ms/powerbireportserverexe)**
 
 PBIRS September 2024 is the latest generally available (GA) version.
 
