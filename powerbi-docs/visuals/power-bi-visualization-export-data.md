@@ -269,4 +269,5 @@ If you find that you can't use this feature, reach out to the report owner and y
     - The semantic model of the embedded report is a composite model with direct query connection to another semantic model, and the embedding is done using a Service Principal.
     - The semantic model of the embedded report has at least one data source with Single-Sign-On enabled, and the embed token contains a [datasourceIdentity](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) [embed token](/rest/api/power-bi/embed-token/generate-token).
 
+- Long running queries through a Gateway may timeout with the error "Executing the query for export data operation resulted in an error".
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
