@@ -158,7 +158,7 @@ To assign a bookmark to a button in the Power BI service:
 
 1. From the top menu bar, select the **Buttons** icon and choose  **Blank**.
 
-:::image type="content" source="media/desktop-bookmarks/power-bi-button.png" alt-text="Screenshot showing how to select the Button options.":::
+   :::image type="content" source="media/desktop-bookmarks/power-bi-button.png" alt-text="Screenshot showing how to select the Button options.":::
 
 1. In the **Format button** pane, toggle the **Action** slider to **On**.
 
@@ -168,7 +168,6 @@ To assign a bookmark to a button in the Power BI service:
 
     :::image type="content" source="media/desktop-bookmarks/power-bi-button-action.png" alt-text="Screenshot showing how to add a bookmark as a button action.":::
 
----
 
 There are all sorts of interesting things you can do with object-linked bookmarking. You can create a visual table of contents on your report page, or you can provide different views (such as visual types) of the same information.
 
