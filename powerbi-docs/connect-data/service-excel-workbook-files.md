@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 12/03/2024
 ms.custom: video-removed
 LocalizationGroup: Data from files
 ---
@@ -57,7 +57,7 @@ Whether and how your PivotTables and charts appear in Power BI depends on where 
 
 ## Data types
 
-Assign data specific data types in Excel to improve your Power BI experience. Power BI supports these data types:
+Assign specific data types to data in Excel to improve your Power BI experience. Power BI supports these data types:
 
 - Whole number
 - Decimal number
@@ -76,7 +76,7 @@ There are two ways to explore Excel data in Power BI: upload and import. When yo
 
 You can use the **Upload** button to upload files to the Power BI service. In the workspace where you want to add the file, select **Upload** at the top of the page. In the drop-down list, select:
 
-- **OneDrive for Business** to connect to files that are stored in OneDrive for Business.
+- **OneDrive** to connect to files that are stored in OneDrive.
 - **SharePoint**  to connect to files on any SharePoint site that you have access to.
 - **Browse** to upload files from your computer.
 
@@ -84,9 +84,9 @@ You can use the **Upload** button to upload files to the Power BI service. In th
 
 If you upload a local file, Power BI adds a copy of the file to the workspace. If you use the **OneDrive for Business** or **SharePoint** options, Power BI creates a connection to the file. As you make changes to the file in SharePoint or OneDrive, Power BI automatically syncs those changes about once an hour.
 
-When you connect to an Excel file by using OneDrive for Business, you can't edit your workbook in Power BI. If you need to make changes, you can select **Edit** and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Changes are saved to the workbook on OneDrive.
+When you connect to an Excel file by using OneDrive, you can't edit your workbook in Power BI. If you need to make changes, you can select **Edit** and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Changes are saved to the workbook on OneDrive.
 
-You should connect to or upload data if you have only data in worksheets, or if you have ranges, PivotTables, and charts that you want to pin to dashboards.   
+You should connect to or upload data if you have only data in worksheets, or if you have ranges, PivotTables, and charts that you want to pin to dashboards.
 
 Local Excel workbooks open in Excel Online within Power BI. Unlike Excel workbooks stored on OneDrive or SharePoint team sites, you can't edit local Excel files within Power BI.
 
@@ -106,7 +106,7 @@ You can't use **Upload** to get files from personal OneDrive accounts, but you c
 
 ### Import Excel data into Power BI
 
-To import Excel data into Power BI, in **My workspace**, select **New** > **Semantic model** > **Excel**, and then find the file.
+To import Excel data into Power BI, in **My workspace**, select **New item** > **Semantic model** > **Excel**, and then find the file.
 
 The **My files** list allows you to add files from your documents folder and other personal sources.
 
@@ -116,7 +116,7 @@ Select **Browse this device** to add files from the device you're currently usin
 
 When you import Excel data, Power BI imports any supported data in tables and any data model into a new Power BI semantic model.
 
-You should import your data if you used **Get & Transform Data** or **Power Pivot** to load data into a data model. 
+You should import your data if you used **Get & Transform Data** or **Power Pivot** to load data into a data model.
 
 If you upload from OneDrive for Business, when you save changes, Power BI synchronizes them with the semantic model in Power BI, usually within about an hour. You can also select **Publish** to export your changes immediately. Any visualizations in reports and dashboards also update, based on the following refresh triggers:
 
@@ -139,11 +139,11 @@ Where you save your workbook file makes a difference.
 
   Excel also has a **Publish** command on the **File** menu. Using this **Publish** command is effectively the same as using **Upload** > **Browse** from Power BI. If you regularly make changes to the workbook, it's often easier to update your semantic model in Power BI.
 
-- **OneDrive for Business**. Signing in to OneDrive for Business with the same account as Power BI is the most effective way to keep your work in Excel in sync with your Power BI semantic model, reports, and dashboards. Both Power BI and OneDrive are in the cloud, and Power BI connects to your workbook file on OneDrive about once an hour. If Power BI finds any changes, it automatically updates your Power BI semantic model, reports, and dashboards.
+- **OneDrive**. Signing in to OneDrive with the same account as Power BI is the most effective way to keep your work in Excel in sync with your Power BI semantic model, reports, and dashboards. Both Power BI and OneDrive are in the cloud, and Power BI connects to your workbook file on OneDrive about once an hour. If Power BI finds any changes, it automatically updates your Power BI semantic model, reports, and dashboards.
 
   As when you have a file saved to a local drive, you can use **Publish** in Excel to update your Power BI semantic model and reports immediately. Otherwise, Power BI automatically synchronizes, usually within an hour.
 
-- **SharePoint team site**. Saving your Power BI Desktop files to a SharePoint team site is almost the same as saving them to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+- **SharePoint team site**. Saving your Power BI Desktop files to a SharePoint team site is almost the same as saving them to OneDrive. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 <a name="import-or-connect-to-an-excel-workbook-from-power-bi"></a>
 
@@ -156,11 +156,11 @@ Using the Excel **Publish to Power BI** feature is effectively the same as using
 
 ## Migrating your Excel workbooks
 
-For local Excel workbooks uploaded to a Power BI workspace, use the **Download Excel file** option to download the workbook. Then save it to OneDrive for Business or a SharePoint Document library (ODSP). You can then import the workbook from ODSP to the workspace again.
+For local Excel workbooks uploaded to a Power BI workspace, use the **Download Excel file** option to download the workbook. Then save it to OneDrive or a SharePoint Document library (ODSP). You can then import the workbook from ODSP to the workspace again.
 
 ![Screenshot that shows the download Excel file option for local workbooks.](media/service-excel-workbook-files/download-local-workbook.png)  
 
-To refresh data in Excel data models, you'll need to publish the data model as a Power BI semantic model. We recommend using the Power BI Desktop to import the model because it upgrades your data model to the latest version. This gives you the best future experience. Use the **Import** from **Power Query, Power Pivot, Power View** option on Power BI Desktop's **File** menu. 
+To refresh data in Excel data models, you'll need to publish the data model as a Power BI semantic model. We recommend using Power BI Desktop to import the model because it upgrades your data model to the latest version. This gives you the best future experience. Use the **Import** from **Power Query, Power Pivot, Power View** option on Power BI Desktop's **File** menu.
 
 To build new workbooks connected to a semantic data model in your Excel workbook, you should first publish the data model as a Power BI semantic model. Then in Excel use the **From Power BI (Microsoft)** option to connect your workbook to the semantic model. This option is available in the **Data ribbon**, under **Get Data** in the **From Power Platform** menu.
 
@@ -174,7 +174,7 @@ GET https://api.powerbi.com/v1.0/myorg/admin/workbooks
 
 The API provides a  list of all the Excel workbooks published in your organization. The list is formatted in JSON. 
 
-Below is an example output for the API. 
+Below is an example output for the API.
 
 ```
 [
@@ -195,7 +195,7 @@ Below is an example output for the API.
     }
 ]
 ```
-You can check if the Excel workbook is a local workbook by navigating to it in Power BI and seeing if it has the Download Excel file option is available.
+You can check if the Excel workbook is a local workbook by navigating to it in Power BI and seeing if the Download Excel file option is available.
 
 You can use PowerShell to call the API as shown in the example below:
 
@@ -203,8 +203,7 @@ You can use PowerShell to call the API as shown in the example below:
 Invoke-PowerBIRestMethod -Url "https://api.powerbi.com/v1.0/myorg/admin/workbooks" -Method GET
 ```
 
-To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. See [Power BI Cmdlets reference](/powershell/power-bi/overview) for details. You will need to call **Login-PowerBIServiceAccount** commandlet before calling **Invoke-PowerBIRestMethod**.
-
+To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. See [Power BI Cmdlets reference](/powershell/power-bi/overview) for details. You'll need to call **Login-PowerBIServiceAccount** commandlet before calling **Invoke-PowerBIRestMethod**.
 
 ## Troubleshooting and limitations
 

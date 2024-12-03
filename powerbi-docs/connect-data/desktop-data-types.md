@@ -1,14 +1,15 @@
 ---
 title: Data types in Power BI Desktop
-description: Learn about the different kinds of data types in Power BI Desktop and DAX expressions.
+description: Learn about the different kinds of data types supported by Power BI Desktop and DAX expressions.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: conceptual
-ms.date: 11/10/2023
+ms.topic: concept-article
+ms.date: 12/03/2024
 LocalizationGroup: Connect to data
+#customer intent: As a Power BI user, I want to understand the different data types available in Power BI Desktop so that I can properly format and analyze my data.
 ---
 # Data types in Power BI Desktop
 
@@ -20,19 +21,19 @@ This concept is important because some DAX functions have special data type requ
 
 ## Determine and specify a column's data type
 
-In Power BI Desktop, you can determine and specify a column's data type in the Power Query Editor, in Data View, or in Report View:
+In Power BI Desktop, you can determine and specify a column's data type in the Power Query Editor, in Table view, or in Report view:
 
 - In Power Query Editor, select the column and then select **Data Type** in the **Transform** group of the ribbon.
 
   ![Screenshot of the Power Query Editor, showing the Data type dropdown selection.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
 
-- In Data View or Report View, select the column, and then select the dropdown arrow next to **Data type** on the **Column tools** tab of the ribbon.
+- In Table view or Report view, select the column, and then select the dropdown arrow next to **Data type** on the **Column tools** tab of the ribbon.
 
-  ![Screenshot of Data View, showing the Data type dropdown selection.](media/desktop-data-types/pbiddatatypesindatareportview.png)
+  ![Screenshot of Table View, showing the Data type dropdown selection.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
-The Data Type dropdown selection in Power Query Editor has two data types not present in Data View or Report View: **Date/Time/Timezone** and **Duration**. When you load a column with these data types into the Power BI model, a **Date/Time/Timezone** column converts into a **Date/time** data type, and a **Duration** column converts into a **Decimal number** data type.
+The Data type dropdown selection in Power Query Editor has two data types not present in Table view or Report view: **Date/Time/Timezone** and **Duration**. When you load a column with these data types into the Power BI model, a **Date/Time/Timezone** column converts into a **Date/time** data type, and a **Duration** column converts into a **Decimal number** data type.
 
-The **Binary** data type isn't supported outside of the Power Query Editor. In the Power Query Editor, you can use the **Binary** data type when you load binary files if you convert it to other data types before loading it into the Power BI model. The **Binary** selection exists in the Data View and Report View menus for legacy reasons, but if you try to load **Binary** columns into the Power BI model, you might run into errors.
+The **Binary** data type isn't supported outside of the Power Query Editor. In the Power Query Editor, you can use the **Binary** data type when you load binary files if you convert it to other data types before loading it into the Power BI model. The **Binary** selection exists in the Table view and Report view menus for legacy reasons, but if you try to load **Binary** columns into the Power BI model, you might run into errors.
 
 ## Number types
 
@@ -65,11 +66,11 @@ As with the **Fixed decimal** type, the **Whole number** type can be useful when
 
 ### Accuracy of number type calculations
 
-Column values of **Decimal number** data type are stored as *approximate* data types, according to the IEEE 754 Standard for floating point numbers. Approximate data types have inherent precision limitations, because instead of storing exact number values, they may store extremely close, or rounded, approximations.
+Column values of **Decimal number** data type are stored as *approximate* data types, according to the IEEE 754 Standard for floating point numbers. Approximate data types have inherent precision limitations, because instead of storing exact number values, they might store extremely close, or rounded, approximations.
 
 Precision loss, or *imprecision*, can occur if the floating-point value can't reliably quantify the number of floating point digits. Imprecision can potentially appear as unexpected or inaccurate calculation results in some reporting scenarios.
 
-Equality-related comparison calculations between values of **Decimal number** data type can potentially return unexpected results. Equality comparisons include equals `=`, greater than `>`, less than `<`, greater than or equal to `>=`, and less than or equal to `<=`. 
+Equality-related comparison calculations between values of **Decimal number** data type can potentially return unexpected results. Equality comparisons include equals `=`, greater than `>`, less than `<`, greater than or equal to `>=`, and less than or equal to `<=`.
 
 This issue is most apparent when you use the [RANKX function](/dax/rankx-function-dax) in a DAX expression, which calculates the result twice, resulting in slightly different numbers. Report users might not notice the difference between the two numbers, but the rank result can be noticeably inaccurate. To avoid unexpected results, you can change the column data type from **Decimal number** to either **Fixed decimal number** or **Whole number**, or do a forced rounding by using [ROUND](/dax/round-function-dax). The **Fixed decimal number** data type has greater precision, because the decimal separator always has four digits to its right.
 
@@ -89,7 +90,7 @@ Power BI Desktop supports five **Date/Time** data types in Power Query Editor. B
 
 - **Date/Time/Timezone** represents a UTC date/time with a timezone offset, and converts into **Date/Time** when loaded into the model. The Power BI model doesn't adjust the timezone based on a user's location or locale. A value of 09:00 loaded into the model in the USA displays as 09:00 wherever the report is opened or viewed.
 
-- **Duration** represents a length of time, and converts into a **Decimal Number** type when loaded into the model. As **Decimal Number** type, you can add or subtract the values from **Date/Time** values with correct results, and easily use the values in visualizations that show magnitude.
+- **Duration** represents a length of time, and converts into a **Decimal number** type when loaded into the model. As **Decimal number** type, you can add or subtract the values from **Date/Time** values with correct results, and easily use the values in visualizations that show magnitude.
 
 ## Text type
 
@@ -109,7 +110,7 @@ After Power BI loads the data, capitalization of the duplicate names in the **Da
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-02.png" alt-text="Screenshot that shows the textual data with changed capitalization after loading into Power BI.":::
 
-This change happens because Power Query Editor is case sensitive, so it shows the data exactly as stored in the source system. The engine that stores data in Power BI is case insensitive, so treats the lowercase and uppercase versions of a character as identical. Power Query data loaded into the Power BI engine can change accordingly.
+This change happens because Power Query Editor is case sensitive, so it shows the data exactly as stored in the source system. The engine that stores data in Power BI is case insensitive, so it treats the lowercase and uppercase versions of a character as identical. Power Query data loaded into the Power BI engine can change accordingly.
 
 The Power BI engine evaluates each row individually when it loads data, starting from the top. For each text column, such as **Addressee**, the engine stores a dictionary of unique values, to improve performance through data compression. The engine sees the first three values in the **Addressee** column as unique and stores them in the dictionary. After that, because the engine is case insensitive, it evaluates the names as identical.
 
@@ -125,7 +126,7 @@ For the fourth row, the engine compares the value against the names in the dicti
 
 > [!NOTE]
 > Because the engine that stores and queries data in Power BI is case insensitive, take special care when you work in DirectQuery mode with a case-sensitive source. Power BI assumes that the source has eliminated duplicate rows. Because Power BI is case insensitive, it treats two values that differ only by case as duplicate, whereas the source might not treat them as such. In such cases, the final result is undefined.
-> 
+>
 > To avoid this situation, if you use DirectQuery mode with a case-sensitive data source, normalize casing in the source query or in Power Query Editor.
 
 ### Leading and trailing spaces
@@ -145,7 +146,7 @@ In Power Query Editor, the resulting data appears as follows.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-04.png" alt-text="Screenshot of textual data with various leading and trailing spaces in Power Query Editor.":::
 
-When you go to the **Data** tab in Power BI after you load the data, the same table looks like the following image, with the same number of rows as before.
+When you go to the **Table** tab in Power BI after you load the data, the same table looks like the following image, with the same number of rows as before.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-05.png" alt-text="Screenshot of the same textual data after loading into Power BI returns the same number of rows as before.":::
 
@@ -161,9 +162,9 @@ This behavior can also cause error messages related to relationships, because du
 
 In other situations, you might be unable to create a many-to-one or one-to-one relationship because duplicate values are detected.
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-text-07.png" alt-text="Screenshot of the relationship dialog showing a 'the cardinality you selected isn't valid for this relationship' error, which is related to duplicate values being detected.":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-07.png" alt-text="Screenshot of the relationship dialog showing an 'invalid cardinality for this relationship' error related to duplicate values being detected.":::
 
-You can trace these errors back to leading or trailing spaces, and resolve them by using [Text.Trim](/powerquery-m/text-trim), or **Trim** under **Transform**, to remove the spaces in Power Query Editor.
+You can trace these errors back to leading or trailing spaces, and resolve them by using [Text.Trim](/powerquery-m/text-trim), or **Format** > **Trim** under **Transform**, to remove the spaces in Power Query Editor.
 
 ## True/false type
 
@@ -203,7 +204,7 @@ When you make the change, the visualization shows the values in the **Subscribed
 
 Once you change the data type, republish to the Power BI service, and a refresh occurs, the report displays the values as *True* or *False*, as expected.
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-07.png" alt-text="Screenshot that shows true or false values that use the True/false data type appear as expected after refresh.":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-07.png" alt-text="Screenshot that shows true or false values that use the True/False data type appear as expected after refresh.":::
 
 To summarize, when working with Boolean data in Power BI, make sure your columns are set to the **True/False** data type in Power BI Desktop.
 
@@ -215,21 +216,22 @@ To summarize, when working with Boolean data in Power BI, make sure your columns
 
 You can use the **Binary** data type to represent any data with a binary format. In the Power Query Editor, you can use this data type when loading binary files if you convert it to other data types before you load it into the Power BI model.
 
-Binary columns aren't supported in the Power BI data model. The **Binary** selection exists in the Data View and Report View menus for legacy reasons, but if you try to load binary columns to the Power BI model, you might run into errors.
+Binary columns aren't supported in the Power BI data model. The **Binary** selection exists in the Table view and Report view menus for legacy reasons, but if you try to load binary columns to the Power BI model, you might run into errors.
 
 > [!NOTE]
 > If a binary column is in the output of the steps of a query, attempting to refresh the data through a gateway can cause errors. It's recommended that you explicitly remove any binary columns as the last step in your queries.
 
 ## Table type
-DAX uses a table data type in many functions, such as aggregations and time intelligence calculations. Some functions require a reference to a table. Other functions return a table that you can then use as input to other functions.
 
-In some functions that require a table as input, you can specify an expression that evaluates to a table. Some functions require a reference to a base table. For information about the requirements of specific functions, see the [DAX Function Reference](/dax/dax-function-reference).
+DAX uses a Table data type in many functions, such as aggregations and time intelligence calculations. Some functions require a reference to a table. Other functions return a table that you can then use as input to other functions.
+
+In some functions that require a table as input, you can specify an expression that evaluates to a table. Some functions require a reference to a base table. For information about the requirements of specific functions, see the [DAX function reference](/dax/dax-function-reference).
 
 ## Implicit and explicit data type conversion
 
 Each DAX function has specific requirements for the types of data to use as inputs and outputs. For example, some functions require integers for some arguments and dates for others. Other functions require text or tables.
 
-If the data in the column you specify as an argument is incompatible with the data type the function requires, DAX may return an error. However, wherever possible DAX attempts to implicitly convert the data to the required data type.
+If the data in the column you specify as an argument is incompatible with the data type the function requires, DAX might return an error. However, wherever possible DAX attempts to implicitly convert the data to the required data type.
 
 For example:
 
@@ -239,10 +241,11 @@ For example:
 - If you try to concatenate two numbers, DAX presents them as strings, and then concatenates. The expression *= 12 & 34* returns *"1234"*.
 
 ### Tables of implicit data conversions
+
 The operator determines the type of conversion DAX performs by casting the values it requires before doing the requested operation. The following tables list the operators, and the conversion DAX does on each data type when it pairs with the data type in the intersecting cell.
 
 > [!NOTE]
->  These tables don't include **Text** data type. When a number is represented in a text format, in some cases Power BI tries to determine the number type and represent the data as a number.
+> These tables don't include **Text** data type. When a number is represented in a text format, in some cases Power BI tries to determine the number type and represent the data as a number.
 
 #### Addition (+)
 
@@ -270,8 +273,8 @@ For example, if a subtraction operation uses a date with any other data type, DA
 
 > [!NOTE]
 > Data models support the unary operator, - (negative), but this operator doesn't change the data type of the operand.
-> 
-> 
+>
+>
 
 #### Multiplication (\*)
 
@@ -297,6 +300,7 @@ In the following table, the row header is the numerator and the column header is
 For example, if a division operation combines an integer with a currency value, DAX converts both values to real numbers, and the result is also a real number.
 
 ### Comparison operators
+
 In comparison expressions, DAX considers Boolean values greater than string values, and string values greater than numeric or date/time values. Numbers and date/time values have the same rank.
 
 DAX doesn't do any implicit conversions for Boolean or string values. BLANK or a blank value is converted to *0*, *""*, or *False*, depending on the data type of the other compared value.
@@ -319,6 +323,7 @@ DAX does implicit conversions for numeric or date/time types as the following ta
 | **Date/time** |REAL |REAL |REAL |Date/Time |
 
 ### Blanks, empty strings, and zero values
+
 DAX represents a null, blank value, empty cell, or missing value by the same new value type, a BLANK. You can also generate blanks by using the BLANK function, or test for blanks by using the ISBLANK function.
 
 How operations such as addition or concatenation handle blanks depends on the individual function. The following table summarizes the differences between how DAX and Microsoft Excel formulas handle blanks.
@@ -342,8 +347,8 @@ How operations such as addition or concatenation handle blanks depends on the in
 
 You can do all sorts of things with Power BI Desktop and data. For more information on Power BI capabilities, see the following resources:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
-* [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
-* [Data sources in Power BI Desktop](desktop-data-sources.md)
-* [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
+- [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+- [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
+- [Data sources in Power BI Desktop](desktop-data-sources.md)
+- [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)
+- [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

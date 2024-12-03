@@ -1,5 +1,5 @@
 ---
-title: Connect to semantic models in the Power BI service from Power BI Desktop
+title: Connect to semantic models in Power BI
 description: Use a shared, common semantic model to create multiple Power BI Desktop reports in multiple workspaces, and manage your report lifecycle.
 author: davidiseminger
 ms.author: davidi
@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/22/2024
+ms.date: 12/03/2024
 LocalizationGroup: Connect to data
+#customer intent: As a Power BI user, I want to understand Power BI live connection and semantic models so that I can effectively manage and utilize my data for reporting and analysis. 
 ---
 # Connect to semantic models in the Power BI service from Power BI Desktop
 
@@ -19,6 +20,7 @@ In Power BI Desktop, you can create a data model and publish it to the Power BI 
 This article discusses the benefits, best practices, considerations, and limitations of the Power BI service live connection feature.
 
 <a name="using-a-power-bi-service-live-connection-for-report-lifecycle-management"></a>
+
 ## Power BI live connection and report lifecycle management
 
 One challenge with the popularity of Power BI is the resulting proliferation of reports, dashboards, and underlying data models. It's easy to create compelling reports in Power BI Desktop, [publish](../create-reports/desktop-upload-desktop-files.md) those reports in the Power BI service, and create great dashboards from those semantic models.
@@ -41,7 +43,7 @@ In Power BI Desktop, the team business analyst creates a report and the semantic
 
 The business analyst can use the Build permission setting to make the report available for anyone in or out of the workspace to see and use. Team members in and out of the team workspace can now establish a live connection to the shared data model by using the Power BI service live connection feature. Team members can create their own unique reports, from the original semantic model, in their own workspaces.
 
-The following image shows how one Power BI Desktop report and its data model publish to the Power BI service. Others users connect to the data model by using the Power BI service live connection, and base their own unique reports in their own workspaces on the shared semantic model.
+The following image shows how one Power BI Desktop report and its data model publish to the Power BI service. Other users connect to the data model by using the Power BI service live connection, and base their own unique reports in their own workspaces on the shared semantic model.
 
 ![Diagram that shows multiple reports based on the same semantic model.](media/desktop-report-lifecycle-datasets/report-lifecycle_03.png)
 
@@ -51,7 +53,7 @@ You can see the usefulness of the Power BI service live connection for report li
 
 ### Publish a Power BI report and semantic model
 
-The first step in using a Power BI service live connection to manage report lifecycle is to publish a report and semantic model for teammates to use.
+The first step in using a Power BI service live connection to manage the report lifecycle is to publish a report and semantic model for teammates to use.
 
 1. To publish the report, from Power BI Desktop, select **Publish** from the **Home** tab.
 
@@ -73,7 +75,7 @@ The first step in using a Power BI service live connection to manage report life
 
    ![Screenshot that shows publishing succeeded.](media/desktop-report-lifecycle-datasets/report-lifecycle_07.png)
 
-1. Now that your report with its semantic model is in the Power BI service, you can *promote* it, or attest to its quality and reliability. You can also request for the report to be *certified* by a central authority in your Power BI tenant. For more information, see [Endorse your content](../collaborate-share/service-endorse-content.md).
+1. Now that your report with its semantic model is in the Power BI service, you can *promote* it, or attest to its quality and reliability. You can also request that the report be *certified* by a central authority in your Power BI tenant. For more information, see [Endorse your content](../collaborate-share/service-endorse-content.md).
 
 1. The last step is to set Build permission in the Power BI service for the semantic model the report is based on. Build permission determines who can see and use your semantic model. You can set Build permission in the workspace itself, or when you share an app from the workspace. For more information, see [Build permission for shared semantic models](service-datasets-build-permissions.md).
 
@@ -83,11 +85,11 @@ Teammates who have access to the workspace where the report and semantic model w
 
 1. In Power BI Desktop, on the **Home** tab, select **Get data** > **Power BI semantic models**.
 
-   Or, select **Get data**, and on the **Get Data** screen, select **Power Platform** in the left pane, select **Power BI semantic models**, and then select **Connect**.
+   Or, select **Get data**, and on the **Get Data** screen, under **All** in the left pane, select **Power BI semantic models**, and then select **Connect**.
 
    If you're not signed in, Power BI prompts you to sign in.
 
-1. The **Data hub** shows the workspaces you're a member of, and all the shared semantic models you have Build permission for in any workspace.
+1. The **OneLake Catalog** shows the workspaces you're a member of, and all the shared semantic models you have Build permission for in any workspace.
 
    To find the semantic model you want, you can:
 
@@ -99,7 +101,7 @@ Teammates who have access to the workspace where the report and semantic model w
 
 1. Select a semantic model, and then select **Connect** to establish a live connection to the selected semantic model. Power BI Desktop loads the semantic model fields and their values in real time.
 
-   ![Screenshot that shows semantic model fields in the Fields pane.](media/desktop-report-lifecycle-datasets/report-lifecycle_10.png)
+   ![Screenshot that shows semantic model fields in the Data pane.](media/desktop-report-lifecycle-datasets/report-lifecycle_10.png)
 
 Now you and others can create and share custom reports, all from the same semantic model. This approach is a great way to have one knowledgeable person create a well-formed semantic model. Many teammates can use that shared semantic model to create their own reports.
 
@@ -107,21 +109,21 @@ Now you and others can create and share custom reports, all from the same semant
 
 When you use the Power BI service live connection, keep a few considerations and limitations in mind.
 
-- In live connection mode, you cannot modify the data model itself (for example, you cannot add new columns or tables). You can only create measures (Report Measures), calculated columns, visual calculations and calculated tables.
+- In live connection mode, you can't modify the data model itself (for example, you can't add new columns or tables). You can only create measures (Report Measures), calculated columns, visual calculations, and calculated tables.
 - Only users with Build permission for a semantic model can connect to a published semantic model by using the Power BI service live connection.
-- Hidden columns will become visible to users with Build permissions when they create live connections to the semantic model in Power BI Desktop.
-- Free users only see datasets that are in their **My Workspace** and in Premium or Fabric based workspaces.
+- Hidden columns become visible to users with Build permission when they create live connections to the semantic model in Power BI Desktop.
+- Free users only see datasets that are in their **My Workspace** and in Premium or Fabric-based workspaces.
 - Because this connection is live, left navigation and modeling are disabled. The behavior is similar to a SQL Server Analysis Services (SSAS) connection. However, composite models in Power BI make it possible to combine data from different sources. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
-- Because this connection is live, row-level security (RLS) and similar connection behaviors are enforced. This behavior is the same as when connected to SSAS.
+- Because this connection is live, [row-level security (RLS)](fabric/security/service-admin-row-level-security) and similar connection behaviors are enforced. This behavior is the same as when connected to SSAS.
 - If the owner modifies the original shared *.pbix* file, the shared semantic model and report in the Power BI service are overwritten. Reports based on the semantic model aren't overwritten, but any changes to the semantic model reflect in the report.
-- Members of a workspace can't replace the original shared report. If they try to do so, they get a prompt to rename the file and publish. 
-- If Members are required to publish, they need to download using the option *A Copy of your report and data*. Make the necessary changes then publish the report.
+- Members of a workspace can't replace the original shared report. If they try to do so, they get a prompt to rename the file and publish.
+- If members are required to publish, they need to download using the option *A Copy of your report and data*. Make the necessary changes, then publish the report.
 - If you delete the shared semantic model in the Power BI service, reports based on that semantic model will no longer work properly or display visuals. You can no longer access that semantic model from Power BI Desktop.
 - Reports that share a semantic model on the Power BI service don't support automated deployments that use the Power BI REST API.
-- Since the Power BI service connection is live, connecting to a dataset with shared report in other users' *My Workspace* is not supported.
-
+- Since the Power BI service connection is live, connecting to a dataset with a shared report in other users' *My Workspace* is not supported.
 
 ## Related content
+
 For more information on DirectQuery and other Power BI data connection features, check out the following resources:
 
 - [Use DirectQuery in Power BI](desktop-directquery-about.md)
@@ -131,8 +133,8 @@ For more information on DirectQuery and other Power BI data connection features,
 For more information about Power BI, see the following articles:
 
 - [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
-- [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
+- [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 - [Data types in Power BI Desktop](desktop-data-types.md)
-- [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
+- [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)
 - [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
 - [Publish semantic models and reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md)
