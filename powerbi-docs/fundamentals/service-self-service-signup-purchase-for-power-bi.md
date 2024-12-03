@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 06/20/2024
+ms.date: 11/11/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 
@@ -21,6 +21,9 @@ This article explains how individuals within an organization can sign up for Pow
 These *self-service* methods include upgrading to a paid license, starting individual trials, and getting free licenses if your organization allows self-service. If the term self-service is new to you, or if you're an administrator who manages self-service, visit these admin articles [What is self-service?](/microsoft-365/admin/misc/self-service-sign-up) and [Self-service for Microsoft 365 products and services.](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
 If you're unable to sign up for Power BI or to purchase a Power BI individual license, it might be because your Microsoft 365 Billing administrator disabled self-service options. Ask them to [enable self-service sign-up and self-service-purchase.](../enterprise/service-admin-licensing-organization.md#enable-and-disable-self-service-sign-up-and-purchase)
+
+> [!IMPORTANT]
+> Signing up for the Power BI service requires a work or school email account. Consumer email accounts such as gmail or hotmail can't be used with the Power BI service. 
 
 ## Look up your current license or trial
 

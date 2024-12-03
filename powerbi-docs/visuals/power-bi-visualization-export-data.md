@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/03/2024
+ms.date: 11/30/2024
 ms.custom: sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -95,8 +95,8 @@ If the visual has filters applied, then the data you export is also filtered. If
 
 Select the **File format** for your export. You have three options. The first two support sensitivity labels. The third option, exporting to .csv, doesn't support sensitivity labels. 
 
-- Excel .xlsx file with live connections (up to 500,000 rows max)
-- Excel .xlsx file (up to 150,000 row max)
+- Excel .xlsx file with live connections (up to 500,000 rows max). When you choose this option, the exported file inherits the sensitivity label (if any) of the semantic model the report is based on. 
+- Excel .xlsx file (up to 150,000 row max). When you choose this option, the exported file inherits the sensitivity label (if any) of the report.
 - .csv file (up to 30,000 row max)
 
 For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
@@ -270,4 +270,5 @@ If you find that you can't use this feature, reach out to the report owner and y
     - The semantic model of the embedded report has at least one data source with Single-Sign-On enabled, and the embed token contains a [datasourceIdentity](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) [embed token](/rest/api/power-bi/embed-token/generate-token).
 
 - Long running queries through a Gateway may timeout with the error "Executing the query for export data operation resulted in an error".
+
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
