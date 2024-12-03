@@ -15,10 +15,14 @@ LocalizationGroup: Create reports
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 With conditional formatting for tables and matrixes in Power BI, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links. You can apply conditional formatting to any text or data field, as long as you base the formatting on a field that has numeric, color name or hex code, or web URL values.
+
 To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop or the Power BI service. In the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
+
 ![Conditional formatting menu](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
+
 To remove conditional formatting from a visualization, select **Remove conditional formatting** from the field's drop-down menu, and then select the type of formatting to remove.
-![Remove option in conditional formatting menu](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
+
+![Screenshot of the remove option in conditional formatting menu.](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
 
 > [!NOTE]
 > Conditional formatting overrides any custom background or font color you apply to the conditionally formatted cell.

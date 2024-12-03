@@ -102,7 +102,7 @@ When you have a collection of bookmarks you'd like to present in order, you can 
 
 - In the **Bookmarks** pane, select **View**.
 
-    :::image type="content" source="media/desktop-bookmarks/service-bookmarks-pane-view-slide-show.png" alt-text="Select View this content in the Bookmarks pane.":::
+    :::image type="content" source="media/desktop-bookmarks/service-bookmarks-pane-view-slide-show.png" alt-text="Screenshot of how to select the visual to view in the Bookmarks pane.":::
 
 Read more about [using bookmarks as a slideshow](../consumer/end-user-bookmarks.md#bookmarks-as-a-slideshow) in the Power BI service.
 
@@ -162,9 +162,9 @@ To assign a bookmark to a button in the Power BI service:
 
 1. In the **Format button** pane, toggle the **Action** slider to **On**.
 
-2. Expand the **Action** section. Under **Type**, select **Bookmark**.
+1. Expand the **Action** section. Under **Type**, select **Bookmark**.
 
-3. Under **Bookmarks**, select a bookmark.
+1. Under **Bookmarks**, select a bookmark.
 
     :::image type="content" source="media/desktop-bookmarks/power-bi-button-action.png" alt-text="Screenshot showing how to add a bookmark as a button action.":::
 

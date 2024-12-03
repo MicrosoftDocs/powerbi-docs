@@ -52,7 +52,7 @@ If your Power BI admin turned off the capability for your organization, you rece
 
 To open a Power BI file stored in OneDrive and SharePoint select **Open** from the file menu. Then select **OneDrive**.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-open.png" alt-text="A look at a screenshot of open in the file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-open.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-open.png" alt-text="Screenshot showing open in the file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-open.png":::
 
 Your files from OneDrive and SharePoint are available for you to open directly in Power BI Desktop.
 
@@ -76,7 +76,7 @@ Upon saving, you're prompted to enter the name of the file. You then select the 
 
 To save an existing file to OneDrive or SharePoint, select the **Save as** option from the file menu. Select **OneDrive** to find your desired location. Select **Save**.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-as.png" alt-text="A look at a screenshot of save as in the file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-save-as.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-as.png" alt-text="Screenshot showing save as in the file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-save-as.png":::
 
 The default save location is your parent OneDrive folder, unless you change it. The default save location is the first option that appears in your save list.
 Upon saving, a dialog box appears while the file is being uploaded to the OneDrive or SharePoint location. You can cancel the upload directly on the dialog box. This dialog shows up the first time a new file is uploaded. 
@@ -114,13 +114,13 @@ If the file hasn’t been saved, you're prompted to save. To share a link to the
 
 After the file is saved, the Microsoft 365 share dialog prompts you to add the email, name, or group you wish to share the file with. You can send the file to the desired recipients directly, or use **Copy link** to send a link to the file.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png" alt-text="A look at a screenshot of the sharing Power BI report." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png" alt-text="Screenshot showing the sharing Power BI report." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png":::
 
 You can also manage who has access to the file through the **Manage Access** option under the Share button.
 
 To get a direct link to where the file is stored in OneDrive, you can select the title bar flyout in the toolbar to access more information about the file. You can select **View your file in OneDrive** to get a direct link to the Power BI file in OneDrive.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png" alt-text="A look at a screenshot of link to file in OneDrive." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png" alt-text="Screenshot showing link to file in OneDrive." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png":::
 
 > [!NOTE]
 > The new capabilities respect the OneDrive and SharePoint organizational settings for sharing.
@@ -157,7 +157,7 @@ When the ability to Open in App on a shared link is available, users are able to
 
 Saving a Power BI Desktop file to a OneDrive or SharePoint location often takes some time depending on the file size. When saving the file, you might be invited to upload the file later. Selecting **Upload Later** allows you to continue working on the file and incorporating changes while the actual uploading to OneDrive or SharePoint happens after you select **Close** in Power BI Desktop. The app finishes closing once the upload to your designated OneDrive or SharePoint location is complete.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-upload-later.png" alt-text="A look at a screenshot of the upload later dialog." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-upload-later.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-upload-later.png" alt-text="Screenshot showing the upload later dialog." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-upload-later.png":::
 
 You can check the last upload status in the title bar of the Power BI report and trigger an upload if desired.
 
