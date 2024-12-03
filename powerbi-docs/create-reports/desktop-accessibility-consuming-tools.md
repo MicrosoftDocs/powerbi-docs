@@ -1,5 +1,5 @@
 ---
-title: Consuming reports in Power BI with accessibility tools
+title: Consume reports in Power BI with accessibility tools
 description: Learn how to use Power BI's built-in accessibility features to make consuming reports more accessible.
 author: davidiseminger
 ms.author: davidi
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 11/25/2024
+ms.date: 12/02/2024
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn how to use built-in accessibility features.
 ---
@@ -89,7 +89,7 @@ The Power BI service attempts to detect the high contrast settings selected for 
 
 ## Screen reader
 
-When viewing a report, it's best to leave scan mode off. Power BI should be treated more like an application and less like a document, so its setup with custom navigation to make it easier to navigate. When using a screen reader with Power BI Desktop, you should also make sure your screen reader is open before you open Power BI Desktop.
+When viewing a report, it's best to leave scan mode off. Power BI should be treated more like an application and less like a document, so it's setup with custom navigation to make it easier to navigate. When using a screen reader with Power BI Desktop, you should also make sure your screen reader is open before you open Power BI Desktop.
 
 When readers navigate around objects, the screen reader reads the type of object and the object's title if the object has one. The screen reader also reads a description of that object, the alt text, if it's provided by the report author.
 
@@ -109,7 +109,7 @@ Some users might prefer to consume data in a tabular format depending on their d
 
 To activate, select **View > Show visuals as tables**. To revert back to original visuals, select **View > Show original visuals**. Or, use the keyboard shortcut **Ctrl + Shift + F11** to toggle between the two views.
 
-Limitations & Notes:
+## Limitations & notes
 
 * Show Visuals as Tables doesn't apply to dashboards
 * Show Visuals as Tables only applies to the current report you're viewing (each new report needs activated)
@@ -117,7 +117,7 @@ Limitations & Notes:
 
 ## Related content
 
-A collection articles for Power BI accessibility:
+A collection of articles for Power BI accessibility:
 
 * [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
 * [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
