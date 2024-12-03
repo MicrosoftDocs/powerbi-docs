@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/26/2024
+ms.date: 12/03/2024
 ---
 
 # Enhanced refresh with the Power BI REST API
@@ -222,8 +222,8 @@ The refresh operation has the following considerations and limitations:
 
 #### Standard refresh operations
 
-- You can't cancel scheduled or on-demand manual model refreshes by using `DELETE /refreshes/<requestId>`.
-- Scheduled and on-demand manual model refreshes don't support getting refresh operation details by using `GET /refreshes/<requestId>`.
+- You can't cancel scheduled or on-demand model refreshes that were triggered by selecting the refresh button in the portal, using `DELETE /refreshes/<requestId>`.
+- Scheduled and on-demand model refreshes that were triggered by selecting the refresh button in the portal, don't support getting refresh operation details using `GET /refreshes/<requestId>`.
 - Get details and Cancel are new operations for enhanced refresh only. Standard refresh doesn't support these operations.
 
 #### Power BI Embedded
