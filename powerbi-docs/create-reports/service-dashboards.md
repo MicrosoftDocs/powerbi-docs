@@ -16,7 +16,9 @@ LocalizationGroup: Dashboards
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 A Power BI *dashboard* is a single page, often called a canvas, that tells a story through visualizations. Because it's limited to one page, a well-designed dashboard contains only the highlights of that story. Readers can view related reports for the details.
+
 ![Screenshot of an example Power BI dashboard.](media/service-dashboards/power-bi-dashboard2.png)
+
 Dashboards are a feature of the Power BI service. They're not available in Power BI Desktop. You can't create dashboards on mobile devices, but you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) them there.
 
 ## Dashboard basics
