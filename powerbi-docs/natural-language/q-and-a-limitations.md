@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 11/13/2024
+ms.date: 12/04/2024
 ---
 # Limitations of Power BI Q&A
 
@@ -54,7 +54,7 @@ The review questions only store questions asked about your data model for up to 
 
 Users can also keep their questions from being recorded by selecting **Settings** > **General** and setting the **Q&A option** to Off.
 
-:::image type="content" source="media/q-and-a-limitations/privacy-q-and-a-questions.png" alt-text="Screenshot showing limitations of Q&A.":::
+:::image type="content" source="media/q-and-a-limitations/privacy-q-and-a-questions.png" alt-text="Screenshot showing Privacy Help your dataset owners by sharing the questions you asked about their data.":::
 
 :::image type="content" source="media/q-and-a-limitations/privacy-q-and-a.png" alt-text="Privacy Help your dataset owners by sharing the questions you asked about their data.":::
 
