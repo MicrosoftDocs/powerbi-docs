@@ -21,8 +21,6 @@ You downloaded [Power BI Report Server](get-started.md), and you have a SQL Serv
 - Purchased [Software Assurance agreement](#purchased-software-assurance-agreement)
 
 > [!NOTE]
-> If you have a subscription license for SQL Server Enterprise Edition with Software Assurance, it also grants use rights to Power BI Report Server. Submit a support request through the software portal you normally use to get assistance for this scenario.
->
 > You can't use a developer product key in a production environment.
 >
 > For more details, see the section "Use of Power BI Report Server – SQL Server Enterprise Edition" in [SQL Server licensing](https://www.microsoft.com/licensing/terms/productoffering/SQLServer/EAEAS).
