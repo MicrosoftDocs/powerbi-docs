@@ -10,22 +10,25 @@ ms.topic: concept-article
 ms.date: 11/1/2024
 LocalizationGroup: Get started
 
-#customer intent: As a business user, I want to learn about the metrics feature so that I ca use it in my organization.
+#customer intent: As a business user, I want to learn about the metrics feature so that I can use it in my organization.
 ---
 
 # Get started with Metrics
 
 Metric sets aim to help organizations define, discover, and reuse trusted metrics. Currently, metrics are defined in semantic layers as measures in models. Over time, these models become large and complex, making them difficult to manage and use which leads to the creation of many specific models. When organizations have many specific models, it causes data silos and duplicate metrics, resulting in more metric redefinitions. The Fragmentation in models makes it hard for users to trust existing metrics and creates logistical challenges. Metric sets address this issue by giving users tools to manage and reuse key metrics across the organization.  
 
+To use metric sets, a Power BI Admin must turn it on in tenant settings. [Metric hub tenant settings](/fabric/admin/service-admin-portal-goals-settings)
+
 ## Licensing Requirements
 
-Metrics is a premium feature because it's a Fabric feature. Users can access various aspects of the experience depending on their license.
+> [!WARNING]
+> For Metrics sets to be used, an organization must have Fabric enabled in the tenant settings.    
 
-|Permission|Minimum license requirements|
+|Permission|Requirements|
 |----|----|
-|Author and share metric sets and metrics (limited)|Power BI Pay-per-user (PPU). **License Limitations**: Fabric features are accessible only to users with PPU licenses; sharing outside PPU-licensed users requires Premium capacity.|
-|View metric sets and metrics|Power BI PPU License|
-|Use Copilot summaries for metrics|Power BI Premium or Fabric F64 or greater capacity|
+|Author and share metric sets and metrics|Power BI Premium workspace or Fabric workspace|
+|View metric sets and metrics|Power BI Premium License|
+|Use Copilot summaries for metrics|Power BI Premium workspace or Fabric F64 or greater capacity|
 
 > [!NOTE]
 > If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.

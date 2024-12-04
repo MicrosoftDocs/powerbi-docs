@@ -55,7 +55,7 @@ The components of the Real-Time Intelligence sample experience are:
 
 * **KQL Queryset**: A KQL queryset is used to run queries, view, and customize query results on data from a KQL database. Read more about [KQL queryset](/fabric/real-time-intelligence/create-query-set).
 
-* **Real-Time Dashboard**: A Real-Time dashboard provides an up-to-the-second snapshot of various metrics and data points in a collection of tiles. Each tile has an underlying query and a visual representation. It allows you to visualize data in real-time, providing insights and enabling data exploration. Read more about [Real-Time dashboards](/fabric/real-time-intelligence/dashboard-real-time-create).
+* **Real-Time Dashboard**: A Real-Time dashboard provides an up-to-the-second snapshot of various goals and data points in a collection of tiles. Each tile has an underlying query and a visual representation. It allows you to visualize data in real-time, providing insights and enabling data exploration. Read more about [Real-Time dashboards](/fabric/real-time-intelligence/dashboard-real-time-create).
 
 * **Power BI**: is used to create real-time reports that display data from event streams and KQL databases managed by Real-Time Intelligence.
 

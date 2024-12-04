@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Roles in workspaces
 ms.topic: conceptual
-ms.date: 05/01/2024
+ms.date: 11/25/2024
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
@@ -45,7 +45,7 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 | Publish, Create, edit, and delete content, such as reports, in the workspace.  |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |
 | Create a report in another workspace based on a semantic model in this workspace.<sup>3</sup> |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |
 | Copy a report.<sup>3</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
-| Create metrics that's based on a semantic model in the workspace.<sup>3</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
+| Create goals that are based on a semantic model in the workspace.<sup>3</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
 | Schedule data refreshes via the on-premises gateway.<sup>4</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
 | Modify gateway connection settings.<sup>4</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
 | View and interact with an item.<sup>5</sup> |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |

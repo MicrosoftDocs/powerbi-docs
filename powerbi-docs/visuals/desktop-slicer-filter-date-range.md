@@ -7,7 +7,7 @@ ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/042024
+ms.date: 11/04/2024
 ms.custom: video-removed, sample-Sales-and-Marketing
 LocalizationGroup: Create reports
 ---

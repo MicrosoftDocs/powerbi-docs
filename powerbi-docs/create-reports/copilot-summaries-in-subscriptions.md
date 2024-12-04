@@ -19,7 +19,8 @@ ms.collection: ce-skilling-ai-copilot
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 You can include a Copilot generated summary for your Power BI report page or full report attachment in your email subscription to get insights. All the recipients of the email subscription receive the Copilot summary in the email. This feature is currently supported only for Standard Subscriptions.  
-The Copilot summary is present in the email even when reports are delivered to OneDrive or SharePoint
+
+The Copilot summary is present in the email even when reports are delivered to OneDrive or SharePoint.
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-copilot-summaries-in-email-subscriptions.gif" alt-text="Animation showing how to subscribe to a copilot summary." lightbox="media/copilot-summaries-in-subscriptions/power-bi-copilot-summaries-in-email-subscriptions.gif":::
 
@@ -31,57 +32,59 @@ The Copilot summary is present in the email even when reports are delivered to O
 
 ## How to set up Copilot in email subscriptions
 
-1. Select **Subscribe to report** , then select **Create a subscription**.
+1. Select **Subscribe to report**, then select **Create a subscription**.
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-to-report.png" alt-text="Screenshot showing how to subscribe to a report." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-to-report.png":::
+   :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-to-report.png" alt-text="Screenshot showing how to subscribe to a report." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-to-report.png":::
 
 
-2. Select **Standard Subscription**. You can choose to modify the **Subscription name**, **Recipients** who should receive the Copilot summary in email.
+1. Select **Standard Subscription**. You can choose to modify the **Subscription name**, **Recipients** who should receive the Copilot summary in email.
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-standard-subscription.png" alt-text="Screenshot showing creating a standard subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-standard-subscription.png":::
+   :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-standard-subscription.png" alt-text="Screenshot showing creating a standard subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-standard-subscription.png":::
 
-3. You can choose to receive a Copilot summary of a single report page or the full report by choosing **Attach full report**. 
+1. You can choose to receive a Copilot summary of a single report page or the full report by choosing **Attach full report**. 
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-attach-full-report.png" alt-text="Screenshot showing FRA subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-attach-full-report.png":::
+   :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-attach-full-report.png" alt-text="Screenshot showing FRA subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-attach-full-report.png":::
 
-You can also choose to deliver the full report to a OneDrive or SharePoint location.The Copilot summary will still be delivered to the recipients via email, along with the link to the OneDrive or Sharepoint location.
+   You can also choose to deliver the full report to a OneDrive or SharePoint location. The Copilot summary will still be delivered to the recipients via email, along with the link to the OneDrive or Sharepoint location.
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-send-to.png" alt-text="Screenshot showing OneDrive SharePoint subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-send-to.png":::
+   :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-send-to.png" alt-text="Screenshot showing OneDrive SharePoint subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-send-to.png":::
 
-4. Schedule the delivery of your report by choosing the frequency (Daily, Weekly, Monthly), Start, and End dates. [Learn more about creating subscriptions.](../collaborate-share/end-user-subscribe.md#subscribe-to-a-report-or-dashboard)
+1. Schedule the delivery of your report by choosing the frequency (Daily, Weekly, Monthly), Start, and End dates. [Learn more about creating subscriptions.](../collaborate-share/end-user-subscribe.md#subscribe-to-a-report-or-dashboard)
 
-5. In the **Summary by Copilot (preview)** section, you can select **Preview summary**. 
+1. In the **Summary by Copilot (preview)** section, you can select **Preview summary**. 
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-email.png" alt-text="Screenshot showing opt-in for summary for the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-email.png":::
+   :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-email.png" alt-text="Screenshot showing opt-in for summary for the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-email.png":::
 
-6. When you select **Preview summary**, you will see a summary generated by Copilot. 
+1. When you select **Preview summary**, you will see a summary generated by Copilot. 
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-preview-copilot-summary.png" alt-text="Screenshot showing the preview for summary for the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-preview-copilot-summary.png":::
+   :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-preview-copilot-summary.png" alt-text="Screenshot showing the preview for summary for the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-preview-copilot-summary.png":::
 
-> [!NOTE]
-> The preview displays a point in time summary of the report data. The summary will change based on the subscription schedule and data.
+   > [!NOTE]
+   > The preview displays a point in time summary of the report data. The summary will change based on the subscription schedule and data.
 
-7. For existing subscriptions, you can opt-in to receive Copilot summaries by turning on the toggle.
+1. For existing subscriptions, you can opt-in to receive Copilot summaries by turning on the toggle.
 
-> [!NOTE]
-> For new subscriptions that are Copilot eligible, the Copilot summary is enabled by default. You could choose to opt-out of including Copilot summaries in subscription emails by turning off the toggle.
+   > [!NOTE]
+   > For new subscriptions that are Copilot eligible, the Copilot summary is enabled by default. You could choose to opt-out of including Copilot summaries in subscription emails by turning off the toggle.
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-off.png" alt-text="Screenshot showing the opt-out for the summary in the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-off.png":::
+   :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-off.png" alt-text="Screenshot showing the opt-out for the summary in the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-off.png":::
 
-8. You can choose to include an email subject, message , an image of a report page, a link to the report in Power BI and permission to view the report in Power BI.
-If you include a message in the email, the message appears above the Summary generated by Copilot.
+1. You can choose to include an email subject, message, an image of a report page, a link to the report in Power BI and permission to view the report in Power BI.
 
-9. **Save** the subscription.
+   If you include a message in the email, the message appears above the Summary generated by Copilot.
 
-10. Once you save the subscription, you can test the subscription by selecting the **Send now** button.
+1. **Save** the subscription.
 
-> [!NOTE]
-> **Send now** will send the report to all email recipients.
+1. Once you save the subscription, you can test the subscription by selecting the **Send now** button.
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png" alt-text="Screenshot showing the send now option." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png":::
+   > [!NOTE]
+   > **Send now** will send the report to all email recipients.
+
+   :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png" alt-text="Screenshot showing the send now option." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png":::
 
 ## Limitations and considerations
-- Copilot summaries for email subscriptions aren't supported for dynamic per recipient subscriptions, paginated reports, scrorecards, and dashboards.
+
+- Copilot summaries for email subscriptions aren't supported for dynamic per recipient subscriptions, paginated reports, scorecards, and dashboards.
 - The Copilot summary is run on behalf of the subscription owner, much like email subscriptions.
 - User-defined prompts aren't supported.
 - Your email may not contain a Copilot summary if Copilot takes too long to respond. This usually happens with large reports.

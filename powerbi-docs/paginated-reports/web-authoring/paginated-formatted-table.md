@@ -218,7 +218,8 @@ After you save the report, you see a success or failure notification in the top 
 
 - You can create a paginated report in any workspace.
 - You can't create a paginated report from Power BI semantic models based on a live connection.
-- The online editor does *not* replicate all existing Power BI Report Builder functionality.  
+- The online editor does *not* replicate all existing Power BI Report Builder functionality.
+- The online editor doesn't support hierarchies.
 
 ## Related content
 

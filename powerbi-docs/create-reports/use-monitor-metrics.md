@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 11/1/2024
+ms.date: 11/26/2024
 LocalizationGroup: Consumers
 #customer intent: As a business user, I want learn the different ways I can use metrics and how to monitor them.
 ---
@@ -18,14 +18,6 @@ There are methods for report authors and data scientists to use these metrics. T
 
 This article shows you how to use metrics in reports and notebooks. Also how to make sure accurate and trusted KPIs are used within your organization for higher data quality and simplified integration into complex models.
 
-## Prerequisites
-
-To create and manage metrics sets, you must:
-
-- have a Power BI Pay-per-user(PPU)/Premium license to author and share metrics in standard workspaces.
-- work in a Fabric capacity.
-- be at least in a Contributor role in a workspace. Read more about roles in workspaces.
-- have build permission for a semantic model.
 
 ## Use in a report
 
@@ -60,7 +52,7 @@ You can save this back to your lakehouse so that the data is accessible outside 
 
 ## Use with APIs
 
-Metric sets are Fabric artifacts, so you can use the public APIs for Fabric artifacts. The APIs use the metric set metadata. However, Metric sets are made up of individual metrics, which aren't accessed via the public Fabric APIs. For more information, read [Microsoft Fabric REST API references](https://learn.microsoft.com/rest/api/fabric/articles/).
+Metric sets are Fabric artifacts, so you can use the public APIs for Fabric artifacts. The APIs use the metric set metadata. However, Metric sets are made up of individual metrics, which aren't accessed via the public Fabric APIs. For more information, read [Microsoft Fabric REST API references](/rest/api/fabric/articles/).
 
 To use metric data via API, you can use semantic link, and use SemPy, which is a python library that simplifies working with semantic data. You can use SemPy, which uses elements of APIs, to connect to a Power BI Measure that powers a metric. You can access a pregenerated code snippet in the **use in notebook** section of the metric details page. For more information, read [Use in notebooks](#use-in-notebooks) for more information.
 
