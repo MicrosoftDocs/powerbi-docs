@@ -56,8 +56,6 @@ Users can also keep their questions from being recorded by selecting **Settings*
 
 :::image type="content" source="media/q-and-a-limitations/privacy-q-and-a-questions.png" alt-text="Screenshot showing Privacy Help your dataset owners by sharing the questions you asked about their data.":::
 
-:::image type="content" source="media/q-and-a-limitations/privacy-q-and-a.png" alt-text="Privacy Help your dataset owners by sharing the questions you asked about their data.":::
-
 ## Teach Q&A limitations
 
 Teach Q&A allows you to define unrecognized terms by assigning a word to a field or filter condition. When defining filtering conditions, you can only use a limited subset of language, including: 
