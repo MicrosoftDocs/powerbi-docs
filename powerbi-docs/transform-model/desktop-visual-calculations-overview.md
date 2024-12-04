@@ -140,7 +140,10 @@ Many functions have an optional **:::no-loc text="Reset":::** parameter that is 
 * **:::no-loc text="NONE":::** is the default value and doesn't reset the calculation.
 * **:::no-loc text="HIGHESTPARENT":::** resets the calculation when the value of the highest parent on the axis changes.
 * **:::no-loc text="LOWESTPARENT":::** resets the calculations when the value of the lowest parent on the axis changes.
-* A **numerical value**, referring to the fields on the axis, with the highest field being one.
+* A **numerical value**, referring to the fields on the axis. The behavior depends on the value provided:
+    - If zero or omitted, the calculation does not reset. Equivalent to **:::no-loc text="NONE":::**.
+    - If positive, identifies the column starting from the highest, independent of grain. 1 is equivalent to **:::no-loc text="HIGHESTPARENT":::**.
+    - If negative, the integer identifies the column starting from the lowest, relative to the current grain. -1 is equivalent to **:::no-loc text="LOWESTPARENT":::**.
 * A **field reference** as long as the field is on the visual.
 
 To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter.
