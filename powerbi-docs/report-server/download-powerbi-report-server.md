@@ -27,10 +27,22 @@ For details and more information about what's new in this release, see [Change l
 
 ## Download PBIRS
 
-**[Download Power BI Report Server](https://aka.ms/powerbireportserverexe)**
+**[Download Power BI Report Server](https://aka.ms/pbireportserverexe)**
 
 PBIRS September 2024 is the latest generally available (GA) version.
 
 - Release name: Power BI Report Server (September 2024)
 - Build number: 15.0.1116.121
 - Release date: September 26, 2024
+
+## System Requirements
+
+- Supported Operating Systems:
+  - Windows 10
+  - Windows 11
+  - Windows Server 2019
+  - Windows Server 2022
+- .NET Framework 4.8 or later
+- SQL Server Database Engine (2014 SP3 or later), to store the report server database
+- SQL Server Analysis Services (2014 SP3 or later), for your Live Analysis Services data sources
+
