@@ -74,7 +74,7 @@ If the error occurs with an Excel 97-2003 XLS workbook, you can avoid using the 
 
 Subscription versions of Office 2013-2019 that use Click-to-Run installation technology register the Access Database Engine provider in a virtual registry location that only Microsoft Office processes can access. The Mashup Engine, which is responsible for running non-Microsoft 365 Excel and Power BI Desktop, isn't an Office process, so it can't use the Access Database Engine provider.
 
-To fix this situation, see [Unable to use the Access ODBC, OLEDB, or DAO interfaces outside Office Click-to-Run applications](https://learn.microsoft.com/office/troubleshoot/access/cannot-use-odbc-or-oledb) for installation guidance.
+To fix this situation, see [Unable to use the Access ODBC, OLEDB, or DAO interfaces outside Office Click-to-Run applications](/office/troubleshoot/access/cannot-use-odbc-or-oledb) for installation guidance.
 
 ## Other import issues
 
