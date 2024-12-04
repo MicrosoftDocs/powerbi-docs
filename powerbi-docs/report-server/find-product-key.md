@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: video-removed
-ms.date: 11/20/2024
+ms.date: 12/04/2024
 ---
 # How to find your report server product key
 
