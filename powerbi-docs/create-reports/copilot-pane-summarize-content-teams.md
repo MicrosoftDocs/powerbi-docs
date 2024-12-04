@@ -26,7 +26,7 @@ When you receive a Power BI report in a Teams chat, click on the new Copilot sum
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-Given a Power BI report populated with visuals, you might spend anywhere from 30 minutes to a couple hours combing through the report to fully understand your key questions, key insights, and what's going on at a high level, so you can summarize it for your leadership team. That length of time varies depending on how familiar you are with the data and how much involvement the analyst has in answering your questions. Now, with the summary feature in the Copilot pane, you can generate a summary of the data displayed in that report in seconds, instead of the minutes or hours to manually interpret the data and then write a summary, or ask an analyst to interpret and write a summary for you.
+Given a Power BI report populated with visuals, you might spend anywhere from 30 minutes to a couple hours combing through the report to understand fully your key questions, key insights, and what's going on at a high level, so you can summarize it for your leadership team. That length of time varies depending on how familiar you are with the data and how much involvement the analyst has in answering your questions. Now, with the summary feature in the Copilot pane, you can generate a summary of the data that is displayed in that report in seconds, instead of the minutes or hours to interpret the data manually. Then you can write a summary, or ask an analyst to interpret and write a summary for you.
 
 ## Get started with standard prompts
 
