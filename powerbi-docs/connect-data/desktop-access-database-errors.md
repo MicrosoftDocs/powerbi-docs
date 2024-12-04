@@ -19,7 +19,7 @@ In Power BI Desktop, imported Access databases and Excel 97-2003 XLS files both 
 - The Access Database Engine bit version, 32-bit or 64-bit, is different from the Power BI Desktop bit version.
 - You're using Access or XLS files with a Microsoft 365 subscription.
 
-This article explains these issues and how to troubleshoot them.
+This article explains these issues and tells you how to troubleshoot them.
 
 <a name="situation-1-no-access-database-engine-is-installed"></a>
 

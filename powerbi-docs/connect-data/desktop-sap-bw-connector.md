@@ -1,5 +1,5 @@
 ---
-title: SAP Business Warehouse (BW) Connector and Power BI Desktop
+title: SAP Business Warehouse (BW) Connector in Power BI Desktop
 description: See how to install and use the SAP BW Connector in Power BI Desktop, how to update version 1 SAP BW reports, and SAP BW Connector troubleshooting.
 author: davidiseminger
 ms.author: davidi

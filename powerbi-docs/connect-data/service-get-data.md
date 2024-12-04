@@ -44,9 +44,9 @@ To create content, you can import or create files or databases.
 
 To import files:
 
-1. Go to the workspace to which you want to import the files. Select **New item** and then **Semantic model**:
+1. Go to the workspace to which you want to import the files. Select **New item**, then, on the selection pane that opens, choose **Semantic model**:
 
-   :::image type="content" source="media/service-get-data/new-menu.png" alt-text="Screenshot that shows the New menu in My Workspace.":::
+   :::image type="content" source="media/service-get-data/new-menu.png" alt-text="Screenshot that shows the New item menu and semantic model tile on the selection pane in My Workspace.":::
 
 1. Select **Excel** or **CSV**. You can also paste or manually enter data.
 
@@ -54,9 +54,9 @@ To import files:
 
 When you import Excel or CSV files, or manually create a workbook, Power BI imports any supported data in tables and any data model into a new Power BI semantic model.
 
-You can also import files. Use this method for *.pbix* files. When you upload Excel files from OneDrive or SharePoint, Power BI creates a connection to the file. When you upload a local file, Power BI adds a copy of the file to the workspace.
+You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive or SharePoint, Power BI creates a connection to the file. When you upload a local file, Power BI adds a copy of the file to the workspace.
 
-To upload files, on the **My workspace** tab, select **Import** to upload local files or files from SharePoint or OneDrive:
+To upload files, on the **My workspace** tab, select **Upload** to upload local files or files from SharePoint or OneDrive:
 
 :::image type="content" source="media/service-get-data/upload.png" alt-text="Screenshot that shows the options in the Upload menu in My Workspace.":::
 
