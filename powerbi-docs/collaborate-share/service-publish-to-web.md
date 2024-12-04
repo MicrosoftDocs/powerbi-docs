@@ -173,10 +173,7 @@ The Power BI admin portal has settings that control who can publish to the web. 
 
 For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. Follow our [process for admin takeover](/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
 
-Established organizations usually already have a Power BI administrator. People in any of the following roles can act as a Power BI administrator:
-
-- Global administrators
-- Users with the Fabric administrator role in Microsoft Entra ID
+Established organizations usually already have a Power BI administrator. Users with the Fabric administrator role in Microsoft Entra ID can act as a Power BI administrator.
 
 You need to [find one of these people](/microsoft-365/business-video/admin-center-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](/fabric/admin/service-admin-portal-export-sharing#publish-to-web) in the admin portal.
 
