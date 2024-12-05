@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 02/28/2023
+ms.date: 12/05/2024
 LocalizationGroup: Ask questions of your data
 ---
 # Enable Q&A for live connections in Power BI
@@ -39,9 +39,9 @@ Once you have the data gateway set up, connect to your data from Power BI. Eithe
 1. In Power BI, select the cog icon :::image type="icon" source="media/service-q-and-a-direct-query/power-bi-cog-2.png"::: and choose **Settings**.
 
    :::image type="content" source="media/service-q-and-a-direct-query/powerbi-settings-2.png" alt-text="Screenshot of Settings menu, highlighting the Settings option.":::
-1. Select **Semantic models** and choose the semantic model to enable for Q&A.
+1. Select **Datasets** and choose the semantic model to enable for Q&A.
 
-   :::image type="content" source="media/service-q-and-a-direct-query/power-bi-q-and-a-settings-2.png" alt-text="Screenshot of Semantic models in Settings menu.":::
+   :::image type="content" source="media/service-q-and-a-direct-query/power-bi-q-and-a-settings-2.png" alt-text="Screenshot of Datasets in Settings menu.":::
 1. Expand **Q&A**, select the checkbox for **Turn on Q&A to ask natural language questions about your data**, and choose **Apply**.
 
    :::image type="content" source="media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query-2.png" alt-text="Screenshot highlighting the expanded Q&A area.":::
@@ -55,8 +55,9 @@ When you enable Q&A for your on-premises data, a subset of your data is cached i
 The feature has some limitations:
 
 * The feature is only available for SQL Server 2016 Analysis Services Tabular data sources. The feature is optimized to work with tabular data. The Q&A experience isn't supported for multi-dimensional. More data sources supported by the on-premises data gateway will be rolled out over time.
-* Full support for row-level security defined in SQL Server Analysis Services isn't available. While asking questions in Q&A, the “autocomplete” of questions while typing can show string values a user doesn't have access to. However, RLS defined in the model is respected for report and chart visuals, so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
-* Q&A isn't supported for data models with Object-level security (OLS). For more information, see [Q&A limitations](../natural-language/q-and-a-limitations.md).
+* Full support for row-level security defined in SQL Server Analysis Services isn't available. While you're asking questions in Q&A, the “autocomplete” of questions while typing can show string values you don't have access to. However, RLS defined in the model is respected for report and chart visuals, so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
+* Q&A isn't supported for data models with 0bject-level security (OLS). For more information, see [Q&A limitations](../natural-language/q-and-a-limitations.md).
+
 * Live connections are only supported with the on-premises data gateway. As a result, this feature can't be used with the personal gateway.
 
 ## Related content
