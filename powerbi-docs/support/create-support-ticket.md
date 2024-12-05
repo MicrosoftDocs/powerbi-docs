@@ -104,6 +104,6 @@ The steps you take to create a support ticket vary, depending on your role.
    
 ### Live Chat
 
-- Users who open support cases through PPAC might see the option to start a live chat session with a Microsoft Support representative. The option to start a live chat session appears on the **Contact** page.
+Users who open support cases through PPAC might see the option to start a live chat session with a Microsoft Support representative. The option to start a live chat session appears on the **Contact** page.
 
    :::image type="content" source="media/create-support-ticket/livechat.png" alt-text="Screenshot of the Contact tab, showing where to select Live Chat.":::
