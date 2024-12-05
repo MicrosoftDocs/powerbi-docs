@@ -68,10 +68,12 @@ The steps you take to create a support ticket vary, depending on your role.
 
 1. In the "Other resources" card, select **Get Microsoft help.** 
 
-      ![Screenshot of Get Microsoft help in Other resources card in the Help-Pane.](media/create-support-ticket/Help_pane_other_resources.png)
-
+   :::image type="content" source="media/create-support-ticket/Help_pane_other_resources.png" alt-text="Screenshot of Other Resouces card with link to Get Microsoft Help.":::
+   
    > [!NOTE]
    > If the admin sets a link to an internal Help Desk, [as described here](/fabric/admin/service-admin-portal-help-support), a link to **Help Desk** will be shown. However, admins will always be redirected to the **Help + Support** section in the **Admin Portal.**
+   
+   
    
 1. In the **Admin Portal**, navigate to **Help + Support** and click on **New support request.** 
 
@@ -82,7 +84,7 @@ The steps you take to create a support ticket vary, depending on your role.
    
    
    
-   :::image:::
+   :::image type="content" source="media/create-support-ticket/provide-issue-description.png" alt-text="Screenshot of the How can we help screen, showing where to find the issue description field.":::
    
 1. If you don't find the correct solution, answer a few additional questions to see possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
 
