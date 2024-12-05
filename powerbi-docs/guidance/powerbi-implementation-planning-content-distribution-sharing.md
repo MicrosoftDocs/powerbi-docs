@@ -412,7 +412,7 @@ Although content creators always require a license to publish and share content,
 
 #### Scenario 2: Consumers require Microsoft Fabric Free licenses
 
-When you distribute or share content that's published to a Fabric capacity, consumers still require a license to access that content. They can do so at no cost with a Microsoft Fabric Free license, and they don't need any other per-user license, like Power BI Pro. An organization has unlimited Microsoft Fabric Free licenses that they can use to provide access to Fabric and Power BI content.
+When you distribute or share content that's published to a Fabric capacity, consumers still require a license to access that content. They can do so at no cost with a Microsoft Fabric Free license, and they don't need any other per-user license, like Power BI Pro. An organization has unlimited Microsoft Fabric Free licenses that they can use to provide access to Fabric and Power BI content. In order to view Power BI content with a Microsoft Fabric Free license your capacity must be an F64 or larger SKU size.
 
 #### Scenario 3: Consumers require Power BI Pro licenses
 
