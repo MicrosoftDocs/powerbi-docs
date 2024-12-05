@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 112/05/2024
+ms.date: 12/05/2024
 LocalizationGroup: Ask questions of your data
 ---
 # Enable Q&A for live connections in Power BI
