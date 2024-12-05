@@ -56,7 +56,7 @@ After you choose a prompt, select **Enter** and watch Copilot generate your summ
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
-Copilot uses Azure Open AI to look at the visuals on the report, and create a natural language summary using the data in those visuals.  It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that are not currently applied.  You can summarize or answer questions across the entire report or for just the current page by indicating the scope in the prompt.
+Copilot uses Azure OpenAI to look at the visuals on the report, and create a natural language summary using the data in those visuals.  It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that are not currently applied.  You can summarize or answer questions across the entire report or for just the current page by indicating the scope in the prompt.
 
 ## Reference footnotes
 
