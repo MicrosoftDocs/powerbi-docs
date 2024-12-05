@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/12/2024
+ms.date: 112/05/2024
 LocalizationGroup: Ask questions of your data
 ---
 # Enable Q&A for live connections in Power BI
@@ -39,9 +39,9 @@ Once you have the data gateway set up, connect to your data from Power BI. Eithe
 1. In Power BI, select the cog icon :::image type="icon" source="media/service-q-and-a-direct-query/power-bi-cog-2.png"::: and choose **Settings**.
 
    :::image type="content" source="media/service-q-and-a-direct-query/powerbi-settings-2.png" alt-text="Screenshot of Settings menu, highlighting the Settings option.":::
-1. Select **Semantic models** and choose the semantic model to enable for Q&A.
+1. Select **Datasets** and choose the semantic model to enable for Q&A.
 
-   :::image type="content" source="media/service-q-and-a-direct-query/power-bi-q-and-a-settings-2.png" alt-text="Screenshot of Semantic models in Settings menu.":::
+   :::image type="content" source="media/service-q-and-a-direct-query/power-bi-q-and-a-settings-2.png" alt-text="Screenshot of Datasets in Settings menu.":::
 1. Expand **Q&A**, select the checkbox for **Turn on Q&A to ask natural language questions about your data**, and choose **Apply**.
 
    :::image type="content" source="media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query-2.png" alt-text="Screenshot highlighting the expanded Q&A area.":::
