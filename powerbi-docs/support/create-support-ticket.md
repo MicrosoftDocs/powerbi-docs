@@ -62,22 +62,27 @@ The steps you take to create a support ticket vary, depending on your role.
 
 1. From the top menu bar, select the question mark (**?**) to open the Fabric Help Pane. In the Help Pane, you can search for content from Microsoft Learn and the different Fabric workloads communities. 
 
-> [!NOTE]
-> Administrators can also navigate to the [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/) with their admin credentials to create a support ticket.
+   > [!NOTE]
+   > Administrators can also navigate to the [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/) with their admin credentials to create a support ticket.
+   
 
 1. In the "Other resources" card, select **Get Microsoft help.** 
 
-![Get Microsoft help in Other resources card in the Help-Pane.](media/create-support-ticket/image.png)
+      ![Screenshot of Get Microsoft help in Other resources card in the Help-Pane.](media/create-support-ticket/Help_pane_other_resources.png)
 
-> [!NOTE]
-> If the admin sets a link to an internal Help Desk, [as described here](), a link to **Help Desk** will be shown. However, admins will always be redirected to the **Help + Support** section in the **Admin Portal.**
-
+   > [!NOTE]
+   > If the admin sets a link to an internal Help Desk, [as described here](/fabric/admin/service-admin-portal-help-support), a link to **Help Desk** will be shown. However, admins will always be redirected to the **Help + Support** section in the **Admin Portal.**
+   
 1. In the **Admin Portal**, navigate to **Help + Support** and click on **New support request.** 
 
 1. Select the product you're experiencing an issue with.
 
 1. Fill in the description of the issue and select the arrow to the right of the text box. Solutions matching the issue's description appear.
-   :::image type="content" source="media/create-support-ticket/iframe-issue-description.png" alt-text="Screenshot of the Problem tab, showing where to enter the issue description.":::
+
+   
+   
+   
+   :::image:::
    
 1. If you don't find the correct solution, answer a few additional questions to see possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
 
