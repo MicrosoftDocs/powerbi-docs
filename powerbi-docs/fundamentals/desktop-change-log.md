@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/24/2024
+ms.date: 12/04/2024
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,31 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## November 2024 QFE 2
+
+*Version 2.138.1203.0, Released: November 27, 2024*
+
+Bug fixes/improvements:
+
+* Fixed a regression issue where users in certain regions were seeing an error because they can access and use the Copilot pane, even though it shouldn't have been available to them
+* Fixed an issue where incorrect column names were being returned from *AdomdDataReader* results after changing column format or aggregation, causing broken data views and visual updates.
+
+
+## November 2024 QFE 1
+*Version 2.138.1004.0, Released: November 19, 2024*
+
+Bug fixes/improvements:
+
+* Diagnostic telemetry to capture logs related to the broken data view and visuals issue, when a user changes the column format or aggregation
+* Disabled *Inline Sparkline Measure* since it broke previously created reports that used calculation groups with sparklines
+* Fixed an issue preventing users from connecting to SAP HANA due to a *Non-null assertion failure: queryName* error
+* Removed telemetry service suspend for Power BI Desktop applications, and introduced configuration for page visibility service
+* Fixed the endless retry of the V2 client-side copilot orchestrator and added a limit to the number of retries
+* Fixed an issue where Q&A tooling was broken due to improper error handling
+
+
 
 ## October 2024 QFE 2
 *Version 2.137.1102.0, Released: October 28, 2024*
