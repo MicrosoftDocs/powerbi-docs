@@ -70,7 +70,7 @@ class LabelsCardSetting extends formattingSettings.SimpleCard {
     });
 
     public fontSize: formattingSettings.NumUpDown = new formattingSettings.NumUpDown({
-        name: "fontFamily", // same as capabilities property name
+        name: "fontSize", // same as capabilities property name
         value: 11
     });
 

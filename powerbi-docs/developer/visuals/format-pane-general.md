@@ -26,28 +26,34 @@ In addition to all the old formatting pane capabilities, the [new formatting mod
 
 :::image type="content" source="media/format-pane/formatting-model.png" alt-text="Screenshot of the new formatting pane.":::
 
-To upgrade to API version 5.1+, set the `apiVersion` in your *pbiviz.json* file to `5.1` or later and do **one** of the following:
-
-* Use [formattingmodel util](./utils-formatting-model.md). (**Recommended**)
-* Without this util, use only APIs.
-
 ## Create a visual that supports the new format pane
 
-To create a custom visual that uses the new format pane:
+General steps to add the new format pane support to a custom visual:
 
-1. Define all the customizable [`objects`](./objects-properties.md) in your *capabilities.json* file.  
+1. Set the `apiVersion` in your *pbiviz.json* file to `5.1` or later.
+
+2. Define all the customizable [`objects`](./objects-properties.md) in your *capabilities.json* file. These objects will then be [mapped](#map-formatting-properties) to the properties of the formatting pane.
    The following properties are required for each object:
 
    * object name
    * property name
    * property type
   
-   All other properties, including `DisplayName` and `description`, are now optional.
+   All other properties, including `DisplayName` and `description`, are now optional. 
 
-2. Build the custom visual [**FormattingModel**](#formatting-model).
+3. Build the custom visual [**FormattingModel**](#formatting-model) by doing **one** of the following:
+
+* Use [formattingmodel util](./utils-formatting-model.md). (**Recommended**)
+* Without this util, use only APIs.
+
   Define the properties of your custom visual formatting model and build it using code (not JSON).
 
-3. Implement the `getFormattingModel` API in the custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions).
+4. Implement the `getFormattingModel` API in the custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions).
+
+## Example of formatting model implementation
+
+* Formatting model using [**formattingmodel util** example](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils). 
+* Formatting model using only [**APIs** example](format-pane-example.md).
 
 ## Map formatting properties
 
@@ -216,11 +222,6 @@ For now we have two composite slice types:
   | Right       | Numeric                   | NumUpDown        |
   | Top         | Numeric                   | NumUpDown        |
   | Bottom      | Numeric                   | NumUpDown        |
-
-## Example of formatting model implementation
-
-* Formatting model using formattingmodel util [example](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils). 
-* Formatting model using only APIs [example](format-pane-example.md).
 
 ## GitHub Resources
 
