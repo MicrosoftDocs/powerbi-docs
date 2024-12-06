@@ -155,7 +155,7 @@ The following table shows the formatting property types in *capabilities.json* f
 | Number           | <li>numeric</li> <li> integer </li>       | <li> [NumUpDown](formatting-model-numupdown.md) </li> <li>[Slider](formatting-model-slider.md)</li>     |
 | Enumeration list | enumeration:[]          | <li> [ItemDropdown](formatting-model-dropdown.md#itemdropdown-implementation)</li> <li> [ItemFlagsSelection](formatting-model-flagselection.md#itemflagsselections-implementation)</li><li> [AutoDropdown](formatting-model-dropdown.md#autodropdown-implementation)</li><li> [AutoFlagsSelection](formatting-model-flagselection.md#autoflagsselection-implementation)</li> <sup>*</sup> See note below       |
 | Color            | Fill                    | [ColorPicker](formatting-model-colorpicker.md)          |
-| Gradient         | FillRule                | [GradientBar](formatting-model-gradientbar.md): property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
+| Gradient         | FillRule                | GradientBar: property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
 | Text             | Text                    | <li>[TextInput](formatting-model-textinput.md)</li> <li>[TextArea](formatting-model-textarea.md)</li>  |
 
 Capabilities Formatting Objects

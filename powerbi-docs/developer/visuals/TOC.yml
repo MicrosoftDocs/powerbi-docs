@@ -99,8 +99,6 @@
               href: "formatting-model-slider.md"
             - name: "Color picker"
               href: "formatting-model-colorpicker.md"
-            - name: "Gradient bar"
-              href: "formatting-model-gradientbar.md"
             - name: "Dropdowns"
               href: "formatting-model-dropdown.md"
             - name: "Flag selections"
