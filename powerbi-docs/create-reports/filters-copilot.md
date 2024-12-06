@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-You can use Copilot in Power BI to set, clear, and delete filters. Given a Power BI report populated with visuals, now with Power BI Copilot you can interact with your filters and slicers on the report. With a Power BI report populated with visuals, you can now interact with your filters and slicers using Power BI Copilot. New users often find it unfamiliar to interact with filters on the filter pane or slicers. At the same time, they find it useful to ask Copilot for help with managing the existing filters in the report. You can now apply, remove, append, and clear filters by creating a prompt in the Copilot chat pane. 
+You can use Copilot in Power BI to set, clear, and delete filters. With a Power BI report populated with visuals, you can now interact with your filters and slicers using Power BI Copilot. New users often find it unfamiliar to interact with filters on the filter pane or slicers. At the same time, they find it useful to ask Copilot for help with managing the existing filters in the report. You can now apply, remove, append, and clear filters by creating a prompt in the Copilot chat pane. 
 
 :::image type="content" source="media/filters-copilot/copilot-modify-filter-status.png" alt-text="Screenshot shows modifying a filter by using Copilot." lightbox="media/filters-copilot/copilot-modify-filter-status.png":::
 
