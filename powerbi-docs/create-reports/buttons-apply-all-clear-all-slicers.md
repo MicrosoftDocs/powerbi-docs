@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 12/06/2024
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 ---
