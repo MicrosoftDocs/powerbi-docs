@@ -87,3 +87,8 @@ class LabelsCardSetting extends formattingSettings.SimpleCard {
     public slices: formattingSettings.Slice[] = [ this.minValue ];
 }
 ```
+
+## Related content
+
+[Format pane](format-pane-general.md)
+[Formatting model utils](utils-formatting-model.md)

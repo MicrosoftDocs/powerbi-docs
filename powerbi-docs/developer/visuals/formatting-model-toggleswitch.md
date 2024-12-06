@@ -92,4 +92,7 @@ export class VisualSettings extends formattingSettings.Model {
 }
 ```
 
+## Related content
 
+[Format pane](format-pane-general.md)
+[Formatting model utils](utils-formatting-model.md)

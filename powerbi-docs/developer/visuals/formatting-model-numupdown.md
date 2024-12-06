@@ -90,3 +90,7 @@ class LabelsCardSetting extends formattingSettings.SimpleCard {
 
 ![Screenshot of the NumUpDown validation](media/format-pane/num-up-down-max-warning.png)
 
+## Related content
+
+[Format pane](format-pane-general.md)
+[Formatting model utils](utils-formatting-model.md)

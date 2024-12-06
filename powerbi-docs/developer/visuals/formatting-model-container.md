@@ -124,16 +124,7 @@ Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#bu
 Here's the resulting pane:
 ![Screenshot of the Container.](media/format-pane/container.png)
 
-## GitHub Resources
-
-* All formatting model interfaces can be found in [GitHub - microsoft/powerbi-visuals-api: Power BI custom visuals API](https://github.com/microsoft/powerbi-visuals-api) in “formatting-model-api.d.ts”
-
-* We recommend using the new formatting model utils at [GitHub - microsoft/powerbi-visuals-utils-formattingmodel: Power BI visuals formatting model helper utils](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
-
-* You can find an example of a custom visual *SampleBarChart* that uses API version 5.1.0 and implements `getFormattingModel` using the new formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
-
 ## Related content
 
+[Format pane](format-pane-general.md)
 [Formatting model utils](utils-formatting-model.md)
-
-More questions? [Ask the Power BI Community](https://community.powerbi.com)

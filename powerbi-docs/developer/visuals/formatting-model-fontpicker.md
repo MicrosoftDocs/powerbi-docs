@@ -56,3 +56,8 @@ export class VisualSettings extends formattingSettings.Model {
     public cards: formattingSettings.SimpleCard[] = [this.labels];
 }
 ```
+
+## Related content
+
+[Format pane](format-pane-general.md)
+[Formatting model utils](utils-formatting-model.md)
