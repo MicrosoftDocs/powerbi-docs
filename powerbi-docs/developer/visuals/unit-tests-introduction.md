@@ -31,41 +31,27 @@ The examples in this article use the [bar chart](create-bar-chart.md) visual for
 Add the required libraries to the *package.json* file in the `devDependencies` section:
 
 ```json
-"@types/d3": "5.7.2",
-"@types/d3-selection": "^1.0.0",
-"@types/jasmine": "^3.10.2",
-"@types/jasmine-jquery": "^1.5.34",
-"@types/jquery": "^3.5.8",
-"@types/karma": "^6.3.1",
-"@types/lodash-es": "^4.17.5",
-"coveralls": "^3.1.1",
-"d3": "5.12.0",
-"jasmine": "^3.10.0",
-"jasmine-core": "^3.10.1",
-"jasmine-jquery": "^2.1.1",
-"jquery": "^3.6.0",
-"karma": "^6.3.9",
-"karma-chrome-launcher": "^3.1.0",
-"karma-coverage": "^2.0.3",
+"@types/jasmine": "^5.1.5",
+"@types/karma": "^6.3.9",
+"coverage-istanbul-loader": "^3.0.5",
+"jasmine": "^5.5.0",
+"karma": "^6.4.4",
+"karma-chrome-launcher": "^3.2.0",
+"karma-coverage": "^2.2.1",
 "karma-coverage-istanbul-reporter": "^3.0.3",
-"karma-jasmine": "^4.0.1",
+"karma-jasmine": "^5.1.0",
 "karma-junit-reporter": "^2.0.1",
-"karma-sourcemap-loader": "^0.3.8",
-"karma-typescript": "^5.5.2",
+"karma-sourcemap-loader": "^0.4.0",
+"karma-typescript": "^5.5.4",
 "karma-typescript-preprocessor": "^0.4.0",
-"karma-webpack": "^5.0.0",
-"powerbi-visuals-api": "^3.8.4",
-"powerbi-visuals-tools": "^3.3.2",
-"powerbi-visuals-utils-dataviewutils": "^2.4.1",
-"powerbi-visuals-utils-formattingutils": "^4.7.1",
-"powerbi-visuals-utils-interactivityutils": "^5.7.1",
-"powerbi-visuals-utils-tooltiputils": "^2.5.2",
-"puppeteer": "^11.0.0",
-"style-loader": "^3.3.1",
-"ts-loader": "~8.2.0",
-"ts-node": "^10.4.0",
-"tslint": "^5.20.1",
-"tslint-microsoft-contrib": "^6.2.0"
+"karma-webpack": "^5.0.1",
+"playwright-chromium": "^1.49.0",
+"powerbi-visuals-api": "~5.11.0",
+"powerbi-visuals-tools": "^5.6.0",
+"powerbi-visuals-utils-testutils": "6.1.1",
+"powerbi-visuals-utils-typeutils": "6.0.3",
+"style-loader": "^4.0.0",
+"ts-loader": "~9.5.1"
 ```
 
 To learn more about *package.json*, see the description at [npm-package.json](https://docs.npmjs.com/files/package.json).
@@ -89,10 +75,6 @@ const webpack = require("webpack");
 module.exports = {
     devtool: 'source-map',
     mode: 'development',
-    optimization : {
-        concatenateModules: false,
-        minimize: false
-    },
     module: {
         rules: [
             {
@@ -107,9 +89,9 @@ module.exports = {
             {
                 test: /\.tsx?$/i,
                 enforce: 'post',
-                include: /(src)/,
+                include: path.resolve(__dirname, 'src'),
                 exclude: /(node_modules|resources\/js\/vendor)/,
-                loader: 'istanbul-instrumenter-loader',
+                loader: 'coverage-istanbul-loader',
                 options: { esModules: true }
             },
             {
@@ -124,7 +106,9 @@ module.exports = {
                     {
                         loader: 'less-loader',
                         options: {
-                            paths: [path.resolve(__dirname, 'node_modules')]
+                            lessOptions: {
+                                paths: [path.resolve(__dirname, 'node_modules')]
+                            }
                         }
                     }
                 ]
@@ -148,6 +132,34 @@ module.exports = {
 };
 ```
 
+The following code is a sample of the *test.tsconfig.json* file:
+
+```json
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2022",
+    "sourceMap": true,
+    "outDir": "./.tmp/build/",
+    "sourceRoot": "../../src/",
+    "moduleResolution": "node",
+    "declaration": true,
+    "lib": [
+      "es2022",
+      "dom"
+  ]
+  },
+  "files": [
+    "./test/visualTest.ts"
+  ],
+  "include": [
+      "src/*.ts"
+  ]
+}
+```
+
 The following code is a sample of the *karma.conf.ts* file:
 
 ```typescript
@@ -161,20 +173,19 @@ const testRecursivePath = "test/visualTest.ts";
 const srcOriginalRecursivePath = "src/**/*.ts";
 const coverageFolder = "coverage";
 
-process.env.CHROME_BIN = require("puppeteer").executablePath();
+process.env.CHROME_BIN = require("playwright-chromium").chromium.executablePath();
 
-import { Config, ConfigOptions } from "karma";
-
-module.exports = (config: Config) => {
-    config.set(<ConfigOptions>{
+module.exports = (config) => {
+    config.set({
         mode: "development",
         browserNoActivityTimeout: 100000,
         browsers: ["ChromeHeadless"], // or specify Chrome to use the locally installed Chrome browser
         colors: true,
-        frameworks: ["jasmine"],
+        frameworks: ["jasmine", "webpack"],
         reporters: [
             "progress",
             "junit",
+            "coverage",
             "coverage-istanbul"
         ],
         junitReporter: {
@@ -194,23 +205,21 @@ module.exports = (config: Config) => {
             "karma-coverage-istanbul-reporter"
         ],
         files: [
-            "node_modules/jquery/dist/jquery.min.js",
-            "node_modules/jasmine-jquery/lib/jasmine-jquery.js",
-            {
-                pattern: './capabilities.json',
-                watched: false,
-                served: true,
-                included: false
-            },
             testRecursivePath,
             {
                 pattern: srcOriginalRecursivePath,
                 included: false,
                 served: true
+            },
+            {
+                pattern: './capabilities.json',
+                watched: false,
+                served: true,
+                included: false
             }
         ],
         preprocessors: {
-            [testRecursivePath]: ["webpack", "coverage"]
+            [testRecursivePath]: ["webpack"]
         },
         typescriptPreprocessor: {
             options: tsconfig.compilerOptions
@@ -228,6 +237,7 @@ module.exports = (config: Config) => {
             verbose: false
         },
         coverageReporter: {
+            type: "html",
             dir: path.join(__dirname, coverageFolder),
             reporters: [
                 // reporters not supporting the `file` property
@@ -255,11 +265,7 @@ If necessary, you can modify this configuration.
 
 The code in *karma.conf.js* contains the following variables:
 
-* `recursivePathToTests`: Locates the test code.
-
-* `srcRecursivePath`: Locates the output JavaScript code after compiling.
-
-* `srcCssRecursivePath`: Locates the output CSS after compiling less file with styles.
+* `testRecursivePath`: Locates the test code.
 
 * `srcOriginalRecursivePath`: Locates the source code of your visual.
 
@@ -273,7 +279,7 @@ The configuration file includes the following properties:
 
 * `preprocessors`: In this section, you configure actions that run before the unit tests run. The actions can precompile TypeScript to JavaScript, prepare source map files, and generate a code coverage report. You can disable `coverage` when you debug your tests. `coverage` generates more code for code coverage testing, which complicates debugging tests.
 
-For descriptions of all Karma configurations, go to the [Karma Configuration File](https://karma-runner.github.io/1.0/config/configuration-file.html) page.
+For descriptions of all Karma configurations, go to the [Karma Configuration File](https://karma-runner.github.io/6.4/config/configuration-file.html) page.
 
 For your convenience, you can add a test command into `scripts` in *package.json*:
 
@@ -282,10 +288,10 @@ For your convenience, you can add a test command into `scripts` in *package.json
     "scripts": {
         "pbiviz": "pbiviz",
         "start": "pbiviz start",
-        "typings":"node node_modules/typings/dist/bin.js i",
-        "lint": "tslint -r \"node_modules/tslint-microsoft-contrib\"  \"+(src|test)/**/*.ts\"",
-        "pretest": "pbiviz package --resources --no-minify --no-pbiviz --no-plugin",
-        "test": "karma start"
+        "package": "pbiviz package",
+        "pretest": "pbiviz package --resources --no-minify --no-pbiviz",
+        "test": "karma start",
+        "debug": "karma start --single-run=false --browsers=Chrome"
     }
     ...
 }
@@ -318,8 +324,8 @@ export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
     return new VisualClass(options);
   }
 
-  public get mainElement() {
-    return $(this.element).children("svg.barChart");
+  public get mainElement(): SVGElement | null {
+    return this.element.querySelector("svg.barChart");
   }
 }
 ```
@@ -353,7 +359,7 @@ describe("BarChart", () => {
 
   it("root DOM element is created", () => {
     visualBuilder.updateRenderTimeout(dataView, () => {
-      expect(visualBuilder.mainElement[0]).toBeInDOM();
+       expect(document.body.contains(visualBuilder.mainElement)).toBeTruthy();
     });
   });
 });
@@ -361,53 +367,17 @@ describe("BarChart", () => {
 
 Several Jasmine methods are called:
 
-* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe): Describes a test case. In the context of the Jasmine framework, `describe` often describes a suite or group of specs.
+* [`describe`](https://jasmine.github.io/api/5.5/global.html#describe): Describes a test case. In the context of the Jasmine framework, `describe` often describes a suite or group of specs.
 
-* `beforeEach`: Is called before each call of the `it` method, which is defined in the [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach) method.
+* `beforeEach`: Is called before each call of the `it` method, which is defined in the [`describe`](https://jasmine.github.io/api/5.5/global.html#beforeEach) method.
 
-* [`it`](https://jasmine.github.io/api/2.6/global.html#it): Defines a single spec. The `it` method should contain one or more `expectations`.
+* [`it`](https://jasmine.github.io/api/5.5/global.html#it): Defines a single spec. The `it` method should contain one or more `expectations`.
 
-* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect): Creates an expectation for a spec. A spec succeeds if all expectations pass without any failures.
+* [`expect`](https://jasmine.github.io/api/5.5/global.html#expect): Creates an expectation for a spec. A spec succeeds if all expectations pass without any failures.
 
-* `toBeInDOM`: Is one of the *matchers* methods. For more information about matchers, see [Jasmine Namespace: matchers](https://jasmine.github.io/api/2.6/matchers.html).
+* `toBeInDOM`: Is one of the *matchers* methods. For more information about matchers, see [Jasmine Namespace: matchers](https://jasmine.github.io/api/5.5/matchers.html).
 
 For more information about Jasmine, see the [Jasmine framework documentation](https://jasmine.github.io/) page.
-
-### Launch unit tests
-
-This test checks that the root SVG element for your visual exists when the visual runs. To run the unit test, enter the following command in the command-line tool:
-
-```cmd
-npm run test
-```
-
-`karma.js` runs the test case in the Chrome browser.
-
-:::image type="content" source="media/unit-tests-introduction/karmajs-chrome.png" alt-text="Screenshot of the Chrome browser, which shows that karma dot js is running the test case.":::
-
-> [!NOTE]
-> You must install Google Chrome locally.
-
-In the command-line window, you'll get following output:
-
-```cmd
-> karma start
-
-23 05 2017 12:24:26.842:WARN [watcher]: Pattern "E:/WORKSPACE/PowerBI/PowerBI-visuals-sampleBarChart/data/*.csv" does not match any file.
-23 05 2017 12:24:30.836:WARN [karma]: No captured browser, open https://localhost:9876/
-23 05 2017 12:24:30.849:INFO [karma]: Karma v1.3.0 server started at https://localhost:9876/
-23 05 2017 12:24:30.850:INFO [launcher]: Launching browser Chrome with unlimited concurrency
-23 05 2017 12:24:31.059:INFO [launcher]: Starting browser Chrome
-23 05 2017 12:24:33.160:INFO [Chrome 58.0.3029 (Windows 10 0.0.0)]: Connected on socket /#2meR6hjXFmsE_fjiAAAA with id 5875251
-Chrome 58.0.3029 (Windows 10 0.0.0): Executed 1 of 1 SUCCESS (0.194 secs / 0.011 secs)
-
-=============================== Coverage summary ===============================
-Statements   : 27.43% ( 65/237 )
-Branches     : 19.84% ( 25/126 )
-Functions    : 43.86% ( 25/57 )
-Lines        : 20.85% ( 44/211 )
-================================================================================
-```
 
 ### How to add static data for unit tests
 
@@ -426,7 +396,7 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
   public static MeasureColumn: string = "measure";
 
   public getDataView(columnNames?: string[]): DataView {
-    let dateView: any = this.createCategoricalDataViewBuilder(
+    let dataView: any = this.createCategoricalDataViewBuilder(
       [
           ...
       ],
@@ -458,11 +428,11 @@ When you put data into data-field buckets, Power BI produces a categorical `data
 
 In unit tests, you don't have access to Power BI core functions that you normally use to reproduce the data. But you need to map your static data to the categorical `dataview`. Use the `TestDataViewBuilder` class to map your static data.
 
-For more information about Data View mapping, see [DataViewMappings](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
+For more information about Data View mapping, see [DataViewMappings](dataview-mappings.md).
 
 In the `getDataView` method, you call the `createCategoricalDataViewBuilder` method with your data.
 
-In the `sampleBarChart` visual [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2) file, we have `dataRoles` and `dataViewMapping` objects:
+In the `sampleBarChart` visual [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/main/capabilities.json#L2) file, we have `dataRoles` and `dataViewMapping` objects:
 
 ```json
 "dataRoles": [
@@ -475,6 +445,11 @@ In the `sampleBarChart` visual [capabilities.json](https://github.com/Microsoft/
         "displayName": "Measure Data",
         "name": "measure",
         "kind": "Measure"
+    },
+    {
+      "displayName": "Tooltips",
+      "name": "Tooltips",
+      "kind": "Measure"
     }
 ],
 "dataViewMappings": [
@@ -627,50 +602,62 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 }
 ```
 
-Now, you can use the `SampleBarChartDataBuilder` class in your unit test.
+The `ValueType` class is defined in the powerbi-visuals-utils-typeutils package.
 
-The `ValueType` class is defined in the powerbi-visuals-utils-testutils package.
+Now, you can run the unit test.
 
-Add the powerbi-visuals-utils-testutils package to the dependencies. In the `package.json` file, locate the `dependencies` section and add the following code:
+### Launch unit tests
 
-```json
-"powerbi-visuals-utils-testutils": "^2.4.1",
-```
-
-Call
+This test checks that the root SVG element for your visual exists when the visual runs. To run the unit test, enter the following command in the command-line tool:
 
 ```cmd
-npm install
+npm run test
 ```
 
-to install `powerbi-visuals-utils-testutils` package.
+`karma.js` runs the test case in the Chrome browser.
 
-Now, you can run the unit test again. You must get the following output:
+:::image type="content" source="media/unit-tests-introduction/karmajs-chrome.png" alt-text="Screenshot of the Chrome browser, which shows that karma dot js is running the test case.":::
+
+> [!NOTE]
+> You must install Google Chrome locally.
+
+In the command-line window, you'll get following output:
 
 ```cmd
 > karma start
 
-23 05 2017 16:19:54.318:WARN [watcher]: Pattern "E:/WORKSPACE/PowerBI/PowerBI-visuals-sampleBarChart/data/*.csv" does not match any file.
-23 05 2017 16:19:58.333:WARN [karma]: No captured browser, open https://localhost:9876/
-23 05 2017 16:19:58.346:INFO [karma]: Karma v1.3.0 server started at https://localhost:9876/
-23 05 2017 16:19:58.346:INFO [launcher]: Launching browser Chrome with unlimited concurrency
-23 05 2017 16:19:58.394:INFO [launcher]: Starting browser Chrome
-23 05 2017 16:19:59.873:INFO [Chrome 58.0.3029 (Windows 10 0.0.0)]: Connected on socket /#NcNTAGH9hWfGMCuEAAAA with id 3551106
-Chrome 58.0.3029 (Windows 10 0.0.0): Executed 1 of 1 SUCCESS (1.266 secs / 1.052 secs)
+Webpack bundling...
+assets by status 8.31 KiB [compared for emit]
+  assets by path ../build/test/*.ts 1020 bytes
+    asset ../build/test/visualData.d.ts 512 bytes [compared for emit]
+    asset ../build/test/visualBuilder.d.ts 499 bytes [compared for emit]
+    asset ../build/test/visualTest.d.ts 11 bytes [compared for emit]
+  assets by path ../build/src/*.ts 6.67 KiB
+    asset ../build/src/barChart.d.ts 4.49 KiB [compared for emit]
+    asset ../build/src/barChartSettingsModel.d.ts 2.18 KiB [compared for emit]
+  asset visualTest.3941401795.js 662 bytes [compared for emit] (name: visualTest.3941401795) 1 related asset
+assets by status 2.48 MiB [emitted]
+  asset commons.js 2.48 MiB [emitted] (name: commons) (id hint: commons) 1 related asset
+  asset runtime.js 6.48 KiB [emitted] (name: runtime) 1 related asset
+Entrypoint visualTest.3941401795 2.48 MiB (2.34 MiB) = runtime.js 6.48 KiB commons.js 2.48 MiB visualTest.3941401795.js 662 bytes 3 auxiliary assets        
+webpack 5.97.0 compiled successfully in 3847 ms
+04 12 2024 11:01:19.255:INFO [karma-server]: Karma v6.4.4 server started at http://localhost:9876/
+04 12 2024 11:01:19.257:INFO [launcher]: Launching browsers ChromeHeadless with concurrency unlimited
+04 12 2024 11:01:19.277:INFO [launcher]: Starting browser ChromeHeadless
+04 12 2024 11:01:20.634:INFO [Chrome Headless 131.0.0.0 (Windows 10)]: Connected on socket QYSj9NyHQ14QjFBoAAAB with id 9616879
+Chrome Headless 131.0.0.0 (Windows 10): Executed 1 of 1 SUCCESS (0.016 secs / 0.025 secs)
+TOTAL: 1 SUCCESS
+TOTAL: 1 SUCCESS
 
 =============================== Coverage summary ===============================
-Statements   : 56.72% ( 135/238 )
-Branches     : 32.54% ( 41/126 )
-Functions    : 66.67% ( 38/57 )
-Lines        : 52.83% ( 112/212 )
+Statements   : 66.07% ( 187/283 )
+Branches     : 34.88% ( 45/129 )
+Functions    : 52.85% ( 37/70 )
+Lines        : 65.83% ( 185/281 )
 ================================================================================
 ```
 
-The summary shows that coverage has increased. To learn more about current code coverage, open the `coverage/html-report/index.html` file.
-
-:::image type="content" source="media/unit-tests-introduction/code-coverage-index.png" alt-text="Screenshot of the browser window, which shows the HTML code coverage report.":::
-
-Or look at the scope of the `src` folder:
+To learn more about current code coverage, open the `coverage/html-report/index.html` file.
 
 :::image type="content" source="media/unit-tests-introduction/code-coverage-src-folder.png" alt-text="Screenshot of the browser window, which shows the code coverage report for the visual dot ts file.":::
 

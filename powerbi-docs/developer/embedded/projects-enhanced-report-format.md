@@ -7,12 +7,11 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/10/2024
+ms.date: 12/06/2024
 LocalizationGroup: Create reports
 no-loc:
 #customer intent: As a report creator, I want to learn how to use the Power BI enhanced report format (PBIR).
 ---
-
 # Create a Power BI report in enhanced report format
 
 [!INCLUDE [applies-yes-desktop-no-service](../../includes/applies-yes-desktop-no-service.md)]
@@ -56,8 +55,8 @@ Initially, the PBIR format has some service restrictions, such as these:
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
-    
-These restrictions should be removed in the following months.  
+
+Refer to [PBIR documentation](/power-bi/developer/projects/projects-report#pbir-format) for more details.
 
 ## Next steps
 
