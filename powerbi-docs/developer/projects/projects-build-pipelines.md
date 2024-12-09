@@ -56,7 +56,7 @@ The following diagram illustrates the end-to-end scenario with two development w
 
 :::image type="content" source="./media/projects-build-pipelines/connect.png" alt-text="Screenshot showing the Git connection to DevOps.":::
 
-When Fabric Git integration finishes exporting your workspace items, your Azure DevOps branch will contain a folder for each item in your workspace:
+When Fabric Git integration finishes exporting your workspace items, your Azure DevOps branch contains a folder for each item in your workspace:
 
 :::image type="content" source="./media/projects-build-pipelines/connected-branch.png" alt-text="Screenshot showing the Azure DevOps branch with folders for different workspace items.":::
 
@@ -68,7 +68,7 @@ To create a new pipeline:
 
    :::image type="content" source="./media/projects-build-pipelines/create-pipeline.png" alt-text="Screenshot showing how to create a pipeline.":::
 
-1. Select **Azure Repos Git** and select the first repository (the same repository that's connected to the Fabric workspace):
+1. Select **Azure Repos Git** and select the first repository (the repository connected to the Fabric workspace):
 
    :::image type="content" source="./media/projects-build-pipelines/code.png" alt-text="Screenshot showing Azure repo Git selected as the code source for the pipeline.":::
 
