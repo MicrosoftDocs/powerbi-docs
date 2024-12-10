@@ -146,6 +146,8 @@ Power BI semantic model scale-out is enabled by default for a tenant. Power BI t
 
 * Disabling [Large semantic model storage format](service-premium-large-models.md) disables scale-out and loses all sync information.
 
+* When multiple read-only replicas are active, using Analyze in Excel for semantic models with Excel versions earlier than 16.0.18323.20000 can cause frequent connectivity issues with the error message "session ID cannot be found". To fix this issue, use a direct Power BI workspace connection (powerbi://) to the semantic model. Excel versions later than 16.0.18323.20000 will work without any connection property changes.
+
 ## Related content
 
 * [Configure semantic model scale-out](service-premium-scale-out-configure.md)
