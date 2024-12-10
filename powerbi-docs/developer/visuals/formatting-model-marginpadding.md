@@ -1,3 +1,15 @@
+---
+title: MarginPadding formatting slice
+description: This article describes how to implement MarginPadding slice in custom visuals using the formatting model utils
+author: kullJul
+ms.author: monaberdugo
+ms.reviewer: monaberdugo
+ms.service: powerbi
+ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
+ms.date: 12/12/2024
+---
+
 # MarginPadding formatting slice
 
 *MarginPadding* is a composite formatting slice that contains left, right, top and bottom padding properties all together. It is used to represent *numeric* or *integer* object types from `capabilities.json` file.

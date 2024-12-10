@@ -1,3 +1,15 @@
+---
+title: TextArea formatting slice
+description: This article describes how to implement TextArea slice in custom visuals using the formatting model utils
+author: kullJul
+ms.author: monaberdugo
+ms.reviewer: monaberdugo
+ms.service: powerbi
+ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
+ms.date: 12/12/2024
+---
+
 # TextArea formatting slice
 
 *TextArea* is a simple formatting slice which is used to represent *text* object type from `capabilities.json` file.
