@@ -8,12 +8,13 @@ ms.service: powerbi
 ms.custom: video-removed
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/22/2023
+ms.date: 10/17/2024
 LocalizationGroup: Connect to data
+#customer intent: As a Power BI Desktop user, I want to connect to LinkedIn Sales Navigator data so that I can analyze and build relationships using ready-made reports.
 ---
 # Connect to LinkedIn Sales Navigator in Power BI Desktop
 
-In Power BI Desktop, you can connect to *LinkedIn Sales Navigator* to help find and build relationships just like any other data source in Power BI Desktop, and create ready-made reports about your progress.
+In Power BI Desktop, you can connect to *LinkedIn Sales Navigator* to help find and build relationships just like any other data source in Power BI Desktop, and create ready-made reports about your progress.  This article tells you how to install [LinkedIn Sales Navigator](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.linkedin_navigator) and how to use it once it's connected to your data.
 
 :::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png" alt-text="Screenshot shows LinkedIn Sales Navigator Usage tab in the Power BI service." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png":::
 
@@ -64,11 +65,11 @@ To go from the sample data to your own data, select **edit app** in the top-righ
 
 :::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-16.png" alt-text="Screenshot shows the Connect your data link in the Power BI service." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-16.png":::
 
-From there you can connect your own data, selecting how many days of data to load. You can load up to 365 days of data. You need to sign in, again using the same email address you use to sign in to LinkedIn Sales Navigator through the website.
+From there you can connect your own data, selecting how many days of data to load. You can load up to 365 days of data. You need to sign in using the same email address you use to sign in to LinkedIn Sales Navigator through the website.
 
 ![Screenshot shows a dialog where you can sign in to connect to LinkedIn.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-17.png)
 
-The template app then refreshes the data in the app with your data. You can also set up a scheduled refresh, so the data in your app is as current as your refresh frequency specifies.
+The template app then refreshes the data in the app with your data. You can also [set up a scheduled refresh](refresh-scheduled-refresh.md), so the data in your app is as current as your refresh frequency specifies.
 
 Once the data updates, you can see the app populated with your own data.
 
@@ -81,7 +82,7 @@ If you run into problems when connecting to your data, you can contact [LinkedIn
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
-* [Data Sources in Power BI Desktop](desktop-data-sources.md)
-* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)
+* [Data sources in Power BI Desktop](desktop-data-sources.md)
+* [Shape and combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Import Excel workbooks into Power BI Desktop](desktop-import-excel-workbooks.md)
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)

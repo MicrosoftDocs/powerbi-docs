@@ -31,7 +31,7 @@ The primary purpose of this series of auditing and monitoring articles is to hel
 Troubleshooting and performance tuning are important components of auditing and monitoring your data assets. However, providing deep performance tuning guidance isn't a goal of these articles. Also, these articles aren't intended to provide a complete reference of all options available to developers.
 
 > [!IMPORTANT]
-> We recommend that you closely follow the [Power BI release plan](https://powerbi.microsoft.com/roadmap/) to learn about future enhancements of the auditing and monitoring capabilities.
+> We recommend that you closely follow the [Microsoft Fabric release plan](/fabric/release-plan/) to learn about future enhancements of the auditing and monitoring capabilities.
 
 ## Value of auditing and monitoring
 
@@ -45,7 +45,7 @@ As described in the [Fabric adoption roadmap](fabric-adoption-roadmap.md), adopt
 
 - **Organizational adoption:** The effectiveness of Power BI governance. It also refers to data management practices that support and enable business intelligence (BI) efforts.
 - **User adoption:** The extent to which Power BI consumers and creators continually increase their knowledge. It's concerned with whether they're actively using Power BI, and whether they're using it in an effective way.
-- **Solution adoption:** The impact and business value achieved for individual requirements and deployed Power BI items (like semantic models—[previously known as datasets](../connect-data/service-datasets-rename.md)—and reports).
+- **Solution adoption:** The impact and business value achieved for individual requirements and deployed Power BI items (like semantic models and reports).
 
 All types of auditing data can be used in many ways to assess and contribute towards actions that improve each aspect of adoption.
 

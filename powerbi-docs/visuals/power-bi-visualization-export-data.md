@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/03/2024
+ms.date: 11/30/2024
 ms.custom: sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -95,8 +95,8 @@ If the visual has filters applied, then the data you export is also filtered. If
 
 Select the **File format** for your export. You have three options. The first two support sensitivity labels. The third option, exporting to .csv, doesn't support sensitivity labels. 
 
-- Excel .xlsx file with live connections (up to 500,000 rows max)
-- Excel .xlsx file (up to 150,000 row max)
+- Excel .xlsx file with live connections (up to 500,000 rows max). When you choose this option, the exported file inherits the sensitivity label (if any) of the semantic model the report is based on. 
+- Excel .xlsx file (up to 150,000 row max). When you choose this option, the exported file inherits the sensitivity label (if any) of the report.
 - .csv file (up to 30,000 row max)
 
 For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
@@ -192,6 +192,8 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
 
+- The export to a *.csv* file will not contain any subtotal or total rows.
+
 - The maximum number of rows that the applications can export to an *.xlsx* file is 150,000. The actual number may be lower than 150,000 depending on query limits and visual types.
 
     For export from matrix visuals using *Data with current layout*, the export limit is 150,000 *data intersections*. For a table visual, each row has one *data intersection*. For a matrix visual, each row can have **1 or more** *data intersections*, so the exported rows count can be less than 150,000. (For example, if a matrix visual has three *data intersections* per row, the maximum row count is 150,000 / 3 = 50,000 rows.) The message "_Exported data exceeded the allowed volume. Some data may have been omitted._" is added at the footer of the Excel file when the limit is hit. To avoid this scenario, consider limiting the dimensions or filtering the data.
@@ -266,5 +268,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 - When using [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers), export data from a visual doesn't work in the following cases:
     - The semantic model of the embedded report is a composite model with direct query connection to another semantic model, and the embedding is done using a Service Principal.
     - The semantic model of the embedded report has at least one data source with Single-Sign-On enabled, and the embed token contains a [datasourceIdentity](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) [embed token](/rest/api/power-bi/embed-token/generate-token).
+
+- Long running queries through a Gateway may timeout with the error "Executing the query for export data operation resulted in an error".
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

@@ -39,7 +39,7 @@ If your content has been published to a workspace on Premium capacity, [deployme
 
 Key activities during a deployment to the test workspace typically include:
 
-- **Connection strings and parameters:** Adjust semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) connection strings if the data source differs between development and test. [Parameterization](../connect-data/service-parameters.md) can be used to effectively manage connection strings.
+- **Connection strings and parameters:** Adjust semantic model connection strings if the data source differs between development and test. [Parameterization](../connect-data/service-parameters.md) can be used to effectively manage connection strings.
 - **Workspace content:** Publish semantic models and reports to the test workspace, and create dashboards.
 - **App.** Publish an [app](../consumer/end-user-apps.md) using the content from the test workspace, if it will form part of the UAT process. Usually, app permissions are restricted to a small number of people involved with UAT.
 - **Data refresh:** [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any Import semantic models for the period when UAT is actively occurring.

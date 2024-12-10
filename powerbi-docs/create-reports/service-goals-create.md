@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Create scorecards
 ms.topic: how-to
-ms.date: 10/10/2022
+ms.date: 11/18/2024
 ms.custom: sample-sales&returnssamplev201912
 ---
 # Create scorecards and manual metrics in Power BI
@@ -41,11 +41,11 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-left-nav.png" alt-text="Screenshot of Select Metrics in the left nav.":::
 
-1. In the Metrics hub, select **New scorecard**.
+1. In the Metrics hub, select **New metric set**.
 
     A new scorecard opens, which you can start populating with metrics.
 
-1. Select the edit pencil next to **Untitled Scorecard** and give your new scorecard a name. 
+1. Select the edit pencil next to **Untitled Scorecard** and give your new scorecard a name and destination workspace.
 
     :::image type="content" source="media/service-goals-create/metrics-edit-scorecard-name.png" alt-text="Screenshot of the edit icon that shows on hover and enables scorecard renaming.":::
 
@@ -63,7 +63,7 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
 ## Step 2: Create a manual metric
 
-1. In the scorecard, select **New Metric**. 
+1. In the scorecard, select **Add metric**. 
 2. Decide on a **Metric name** and an **Owner**. 
 
     Owners can be individuals or distribution groups within your organization’s Microsoft Entra ID.  

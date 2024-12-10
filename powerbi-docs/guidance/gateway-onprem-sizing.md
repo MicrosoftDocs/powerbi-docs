@@ -23,7 +23,7 @@ The on-premises data gateway supports two workloads. It's important you first un
 
 ### Cached data workload
 
-The _Cached data_ workload retrieves and transforms source data for loading into Power BI semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)). It does so in three steps:
+The _Cached data_ workload retrieves and transforms source data for loading into Power BI semantic models. It does so in three steps:
 
 1. **Connection**: The gateway connects to source data.
 1. **Data retrieval and transformation**: Data is retrieved, and when necessary, transformed. Whenever possible, the Power Query mashup engine pushes transformation steps to the data source—it's known as _[query folding](power-query-folding.md)_. When it's not possible, transformations must be done by the gateway. In this case, the gateway will consume more CPU and memory resources.

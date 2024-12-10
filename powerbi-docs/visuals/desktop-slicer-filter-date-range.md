@@ -7,7 +7,7 @@ ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/20/2024
+ms.date: 11/04/2024
 ms.custom: video-removed, sample-Sales-and-Marketing
 LocalizationGroup: Create reports
 ---
@@ -28,7 +28,7 @@ You can use the relative date slicer just like any other slicer. Create a **Slic
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png" alt-text="Screenshot of the Visualizations pane with the slicer visual icon and the Field well called out.":::
 
-Select the slicer, and in the **Format** pane, under **Visual** > **Slicer settings** > **Options**, change the **Style** to **Relative Date**.
+Select the slicer, and in the **Format** pane, under **Visualizations** > **Slicer settings** > **Options**, change the **Style** to **Relative Date**.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/set-relative-date-range-slicer-filter.png" alt-text="Screenshot of the slicer visual with the Format pane and the Relative Date selected.":::
 

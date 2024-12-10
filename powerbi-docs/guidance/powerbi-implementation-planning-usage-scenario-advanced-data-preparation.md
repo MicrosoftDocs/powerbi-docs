@@ -26,7 +26,7 @@ Investing time and effort in centralized data preparation helps to:
 
 The *advanced data preparation* usage scenario expands on the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario. Advanced data preparation is about increasing dataflow reuse by multiple users across various teams and for various use cases.
 
-Separate workspaces, organized by dataflow purpose, are helpful when dataflow output is provided to multiple semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) creators, especially when they are on different teams in the organization. Separate workspaces are also helpful for managing security roles when the people who create and manage dataflows are different from the people consume them.
+Separate workspaces, organized by dataflow purpose, are helpful when dataflow output is provided to multiple semantic model creators, especially when they are on different teams in the organization. Separate workspaces are also helpful for managing security roles when the people who create and manage dataflows are different from the people consume them.
 
 > [!NOTE]
 > The advanced data preparation scenario is the second of the data preparation scenarios. This scenario builds upon what can be done with centralized dataflows as described in the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario.

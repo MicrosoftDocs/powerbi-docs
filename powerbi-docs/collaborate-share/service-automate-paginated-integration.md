@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/16/2022
+ms.date: 11/08/2024
 LocalizationGroup: Get started
 ---
 # Export Power BI paginated reports with Power Automate
@@ -21,6 +21,7 @@ Power Automate is a no-code way to interact with the Export To File API in the u
 To follow along, make sure you have:
 
 - At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4/P1 – A6/P3 SKUs. Read more about [reserved capacities in Power BI Premium](../enterprise/service-premium-what-is.md).
+- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4–A6 or P1/F2 and above SKU. Read more about reserved capacities in [Power BI Premium and Microsoft Fabric concepts - Microsoft Fabric | Microsoft Learn](../enterprise/service-premium-what-is.md).
 - Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
 
 >[!NOTE]

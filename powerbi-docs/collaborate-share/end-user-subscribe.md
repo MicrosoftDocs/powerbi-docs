@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/07/2024
+ms.date: 11/08/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -233,6 +233,7 @@ From here, you see a list of all your subscriptions across all workspaces. Power
 
 ### Workspace administrators
 Users who are assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions created for Power BI reports, dashboards, or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. Workspace admins can also edit and take over subscriptions owned by others.
+If you have subscribed to reports through Power BI Organizational App, you have to install the organizational app to see the subscriptions. 
 
 > [!NOTE]
 > Subscriptions created for reports and dashboards in an app or those hosted in your **My workspace** can only be managed by the user who created the subscriptions. 
@@ -349,6 +350,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 **General**
   
+- The **Save** or **Save and Close** button will be disabled if there are errors. You must fix all errors to save the subscription.
 - Internal guests are users who have an account in your Microsoft Entra directory but only guest-level access in your organization. External B2B guests are users with an external Microsoft Entra account, social identity, or other external identity provider sign-in. Internal guest users can't create email subscriptions in Power BI. 
 - If you can't use the subscription feature, contact your Fabric administrator or IT help desk. Your organization may disable this feature or the maximum subscriber limit may be.
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
@@ -362,14 +364,15 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 **Power BI reports**  
 
-- Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you have to re-create your subscription.    
+- Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you have to re-create your subscription.
+- If you access a report using a bookmark, the subscription will also be executed against the bookmark (filters will be the same as that of the bookmark) and **not** against the filters applied when the subscription is created. You can get around this by creating a bookmark with the required filters and create a subscription. 
 
 **Apps** 
 
 
 - For [Power BI apps](../consumer/end-user-apps.md) you install, you can only create subscriptions for others if you're the owner of the app.
 
-- Subscriptions created within apps can be viewed and managed from the associated workspace by users with the admin role in that workspace.  
+- Subscriptions created within apps can be viewed and managed from the associated workspace by users with the admin role in that workspace. The workspace admin will have to install the app to view the subscriptions.
 
 **Unsupported features**    
 

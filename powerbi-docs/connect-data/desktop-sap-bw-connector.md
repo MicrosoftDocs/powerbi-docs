@@ -1,5 +1,5 @@
 ---
-title: Use the SAP Business Warehouse (BW) Connector in Power BI Desktop
+title: SAP Business Warehouse (BW) Connector in Power BI Desktop
 description: See how to install and use the SAP BW Connector in Power BI Desktop, how to update version 1 SAP BW reports, and SAP BW Connector troubleshooting.
 author: davidiseminger
 ms.author: davidi
@@ -7,12 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/26/2024
+ms.date: 12/03/2024
 LocalizationGroup: Connect to data
+#customer intent: As a Power BI user, I want to understand how to connect to SAP BW using the desktop connector so that I can integrate and analyze data from SAP BW in Power BI.
 ---
 # Use the SAP Business Warehouse connector in Power BI Desktop
 
 You can use Power BI Desktop to access SAP Business Warehouse (SAP BW) data. The SAP BW Connector Implementation 2.0 has significant improvements in performance and capabilities from version 1.0.
+
+This article provides instructions on how to use the SAP BW Connector in Power BI Desktop, including installation, connection setup, and troubleshooting steps, as well as information on updating existing reports to use the latest connector implementation.
 
 For information about how SAP customers can benefit from connecting Power BI to their SAP BW systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
@@ -60,7 +63,7 @@ To connect to SAP BW data by using the SAP BW Connector, follow these steps:
    
 1. Select **OK** to establish the connection.
 
-1. Provide any necessary authentication data and select **Connect**. For more information about authentication, see [Authentication with a data source](/power-query/connector-authentication).
+1. Provide any necessary authentication data and select **Connect**. For more information about authentication, see [Authentication in desktop apps](/power-query/connector-authentication).
 
 1. If you didn't specify a custom MDX statement, the **Navigator** screen shows a list of all cubes available on the server. You can drill down and select items from the available cubes, including dimensions and measures. Power BI shows queries and cubes that the [Open Analysis Interfaces](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm) expose.
 
@@ -78,7 +81,7 @@ To connect to SAP BW data by using the SAP BW Connector, follow these steps:
 
 1. After you select all the objects you want, choose one of the following options:
 
-   - **Load** to load the entire set of rows for the output table into the Power BI Desktop data model. The **Report** view opens. You can begin visualizing the data, or make further modifications by using the **Data** or **Model** views.
+   - **Load** to load the entire set of rows for the output table into the Power BI Desktop data model. The **Report** view opens. You can begin visualizing the data, or make further modifications by using the **Table** or **Model** views.
    - **Transform Data** to open **Power Query Editor** with the data. You can specify more data transformation and filtering steps before you bring the entire set of rows into the Power BI Desktop data model.
 
 Along with data from SAP BW cubes, you can also import data from a wide range of other data sources in Power BI Desktop, and combine them into a single report. This ability presents many interesting scenarios for reporting and analytics on top of SAP BW data.
@@ -97,7 +100,7 @@ You can set the following options under **Advanced options** on the SAP BW conne
   - **BasXmlGzip**
   - **DataStream**
 
-  The default value is **BasXmlGzip**. This mode can improve performance for low latency or high volume queries.
+  The default value is **BasXmlGzip**. This mode can improve performance for low-latency or high-volume queries.
 
 - **Batch size** specifies the maximum number of rows to retrieve at a time when executing an MDX statement. A small number means more calls to the server while retrieving a large semantic model. A large value might improve performance, but could cause memory issues on the SAP BW server. The default value is **50000**.
 
@@ -126,7 +129,7 @@ You can change existing reports to use Implementation 2.0 only in Import mode.
 
 1. In the **Advanced Editor**, change the `SapBusinessWarehouse.Cubes` calls as follows:
 
-1. Determine whether the query already contains an option record, such as the following examples:
+1. Determine whether the query already contains an option record, using the following examples as a reference.
 
    ![Screenshot that shows a plaintext query with an option record.](media/desktop-sap-bw-connector/sap_bw_9.png)
 

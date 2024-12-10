@@ -7,19 +7,19 @@ ms.reviewer:
 ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 06/21/2023
+ms.topic: how-to
+ms.date: 11/05/2024
 LocalizationGroup: Samples
+#customer intent: As a Power BI customer I want to learn about built-in samples and apps in Power BI.
 ---
 # Get samples for Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 Are you new to Power BI and want to try it out, but you don't have any data? Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
-
 Power BI offers different kinds of samples for different purposes. There are built-in samples and apps in the Power BI service, *.pbix* files, Excel datasets, and SQL databases. Here's a collection of different samples:
 
-- The [Sales & Returns sample](#sales--returns-sample-pbix-file) Power BI report (*.pbix* file). You can view it in the Data Stories Gallery, open and explore it in Power BI Desktop, or upload it to the Power BI service.
+- The [Sales & Returns sample](#sales--returns-sample-pbix-file) Power BI report (*.pbix* file). You can view it in the Data Stories Gallery, open, and explore it in Power BI Desktop, or upload it to the Power BI service.
 - The [Artificial Intelligence sample](sample-artificial-intelligence.md) Power BI report. In the report, explore the Power BI artificial intelligence features such as key influencers, root-cause analysis in a decomposition tree, and anomaly detection. Select **Learn** in the Power BI service navigation pane to download a copy from the **Learning Center**.
 - A [sample template app](sample-sales-marketing-template-app.md). Download it from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and semantic models. You can modify them, then distribute them to your colleagues.
 - [Eight original built-in samples](#eight-original-samples) in the Power BI service, with dashboards, reports, and semantic models. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (*.pbix*) and Excel workbooks (*.xlsx*).
@@ -172,7 +172,7 @@ Let's start with the *built-in samples*. The built-in samples are available in t
 
 1. On the **Learning center** page, under **Sample reports**, scroll until you see a sample you want to open.
   
-   :::image type="content" source="media/sample-datasets/power-bi-connect.png" alt-text="Screenshot shows a highlighted sample.":::
+   :::image type="content" source="media/sample-datasets/power-bi-connect.png" alt-text="This screenshot shows a highlighted sample.":::
 
 1. Select the sample. It opens in Reading mode.
 
@@ -204,7 +204,6 @@ Several of the original built-in samples now have updated versions and these sam
    - [Regional Sales Sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Regional%20Sales%20Sample.pbix)
    - [Revenue Opportunities sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Revenue%20Opportunities.pbix)
    - [Store Sales sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Store%20Sales.pbix)
-
 
    Original samples:
 
@@ -262,7 +261,7 @@ Want to understand how the data in these Excel workbooks gets converted to Power
 
 1. In the upper-left corner of the workspace, select **Upload**, then select one of the sources.
 
-   :::image type="content" source="media/sample-datasets/power-bi-upload.png" alt-text="Screenshot of Power BI Upload.":::
+   :::image type="content" source="media/sample-datasets/power-bi-upload.png" alt-text="This screenshot shows the Power BI Upload.":::
 
 1. Select the file. Depending on where the file is, select **Upload** or **Open**.
 

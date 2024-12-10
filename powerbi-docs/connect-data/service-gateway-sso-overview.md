@@ -33,7 +33,7 @@ Power BI supports the following data sources:
 
 
 * Amazon Redshift (Microsoft Entra ID)
-* Azure Databricks
+* Azure Databricks (Microsoft Entra ID)
 * Azure Data Explorer (Microsoft Entra ID)
 * Azure SQL (Microsoft Entra ID)
 * Azure Synapse Analytics (Microsoft Entra ID)

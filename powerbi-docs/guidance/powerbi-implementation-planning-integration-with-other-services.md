@@ -272,11 +272,11 @@ Use cases for using semantic link integration with semantic models include:
 
 Even if you don't know Python, you can use [Copilot](/fabric/get-started/copilot-notebooks-chat-pane) and [Chat-magics](/fabric/get-started/copilot-notebooks-chat-magics) to gain assistance writing functional Python code to obtain a useful result.
 
-#### Data Activator integration with Power BI reports
+#### Fabric Activator integration with Power BI reports
 
-Content creators or consumers who build or use Power BI reports can use [Data Activator](/fabric/data-activator/data-activator-get-data-power-bi) to automate actions and notifications based on data changes. Similar to [data alerts from dashboard tiles](../create-reports/service-set-data-alerts.md), a user can set alerts on a Power BI visual and define triggers for those alerts. The user can also extend this functionality to use [Custom actions to trigger a Power Automate flow](/fabric/data-activator/data-activator-trigger-power-automate-flows) that can initiate other downstream changes.
+Content creators or consumers who build or use Power BI reports can use [Activator](/fabric/real-time-intelligence/data-activator/activator-get-data-power-bi) to automate actions and notifications based on data changes. Similar to [data alerts from dashboard tiles](../create-reports/service-set-data-alerts.md), a user can set alerts on a Power BI visual and define triggers for those alerts. The user can also extend this functionality to use [Custom actions to trigger a Power Automate flow](/fabric/real-time-intelligence/data-activator/activator-trigger-power-automate-flows) that can initiate other downstream changes.
 
-Use cases for Data Activator integration with Power BI include:
+Use cases for Activator integration with Power BI include:
 
 - Automated anomaly detection, by setting an alert to trigger when a value exceeds a threshold.
 - Automated regression testing of business-critical reports, by setting an alert to trigger when a value (like previous year sales, or a budget variance) exceeds a threshold.
@@ -374,7 +374,7 @@ You can also use Power BI to trigger a Power Automate cloud flow in three ways:
 
 - Use the Power Automate visual in a Power BI report.
 - Use data alerts from a Power BI dashboard tile.
-- [Create flows to notify changed goals](../create-reports/service-goals-power-automate.md) in Power BI.
+- [Create flows to notify changed goals](../create-reports/service-metrics-power-automate.md) in Power BI.
 
 With this approach, you aren't automating Power BI actions as much as you're responding to events that happen in Power BI. These events can either be triggered manually (like the Power Automate visual) or automatically (like data alerts). You can also use data from Power BI downstream in the flows, which can help you automate more specific and relevant actions.
 

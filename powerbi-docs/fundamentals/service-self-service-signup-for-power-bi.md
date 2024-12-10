@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: quickstart
-ms.date: 07/31/2024
+ms.date: 11/14/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 # customer intent: As an individual, I want to use self-service to sign up for a Power BI license. 
@@ -112,6 +112,7 @@ For more limitations and considerations, see [Troubleshoot signing up for an ind
 
 ## Related content
 
+- [How to close, end, or cancel in Fabric and Power BI](/fabric/enterprise/fabric-close-end-cancel).
 - [Power BI features by license type](../consumer/end-user-features.md).
 - [Tips for finding help](../support/service-tips-for-finding-help.md).
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

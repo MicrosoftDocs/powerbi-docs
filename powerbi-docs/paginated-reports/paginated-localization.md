@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/12/2023
+ms.date: 10/29/2024
 ---
 
 # View localized paginated reports in the Power BI service
@@ -45,7 +45,6 @@ When publishing/uploading a report from Power BI Report Builder
 
 - You can overwrite the browser language by setting the **Report.Language** property to the desired language. For example, if **Report.Language = de-DE**, the report displays de-DE as long as the translations exist in the Power BI semantic model.
 - When the **Report.Language** property is set to an expression, the browser or Power BI language settings are *not* overridden. For example, the **Report.Language** property is set to a report parameter (Example: **"=Parameters!SomeLanguageParameter"**).
-- Power BI language settings don't affect the rendering from the server, for example, dates and number formatting.
 
 ## Next steps
 

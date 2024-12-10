@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/25/2024
+ms.date: 10/29/2024
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service
@@ -105,7 +105,47 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 
 * **Shareable cloud connections also share your credentials** - when you allow others to user your shareable cloud connections, it's important to understand that you're letting others connect their own semantic models, paginated reports, and other artifacts to the corresponding data sources by using the connection details and credentials you provided. Make sure you only share connections (and their credentials) that you're authorized to share.
 
+* **Every user is limited to maximum 1000 data source connections in every cloud tenant**: If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit of 1000 connections. To resolve any related issues, you can manually remove existing data sources from the admin center or, alternatively, use the following PowerShell script to find and bulk-delete any data sources that exceed that limit.
+
+  ```powershell
+  ## required module "mcirosoftpowerbimgmt" Install-Module -Name DataGateway and sign in the same user who exceeded the 1000 limit
+  Import-Module -name microsoftpowerbimgmt
+  
+  ## get the gateway information per the sign in person. Choose Environment: Public, USGov, China, USGovHigh, USGovMil
+  $environment = "Public"
+  Connect-PowerBIServiceAccount -Environment $environment
+  
+  switch ($environment) {
+      "Public" { $baseURL = "https://api.powerbi.com/v2.0/myorg/me/"; Break }
+      "USGov" { $baseURL = "https://api.powerbigov.us/v2.0/myorg/me/"; Break }
+      "China" { $baseURL = "https://api.powerbi.cn/v2.0/myorg/me/"; Break }
+      "USGovHigh" { $baseURL = "https://api.high.powerbigov.us/v2.0/myorg/me/"; Break }
+      "USGovMil" { $baseURL = "https://api.mil.powerbigov.us/v2.0/myorg/me/"; Break }
+  }   
+  
+  $getDatasourcesURL = $baseURL + "gatewayClusterDatasources?$expand=users"
+  
+  $datasources = Invoke-PowerBIRestMethod -Url $getDatasourcesURL -Method GET | ConvertFrom-Json
+  
+  foreach($dataource in $datasources.value)
+  {
+      if($datasource.gatewayType -eq "TenantCloud")
+      {
+          "cloud datasource found with id = {0}, name = {1}" -f $dataource.id, $datasource.datasourceName
+          $gatewayId = $datasource.clusterId
+          $datasourceId = $dataource.id
+  
+          ## conditional logic to determine if name matches set
+          $deleteDatasourceURL = $baseURL + "gatewayClusters/$gatewayId/datasources/$datasourceId"
+          Invoke-PowerBIRestMethod -Url $deleteDatasourceURL -Method DELETE
+      }    
+  }
+  ```
+  If you're an ISV or any other Power BI Embedded app owner with many customers, use service principal profiles for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
+
 * You can't mix an Excel on-premises data source with an existing Analysis Services DirectQuery data source; you can only include an Excel on-premises data source to your report if it's in a separate query. In such situations, you can map the Excel data source to a gateway, and leave the Analysis Services DirectQuery cloud data source as-is.
+
+* Power BI Dataflow Gen1 and Fabric Dataflow Gen2 don't support sharable cloud connections. Other versions, like Power Apps dataflows, do support sharable cloud connections.
 
 ## Related content
 
