@@ -21,8 +21,6 @@ Goals in Power BI let customers curate their goals and track them against key bu
 
 :::image type="content" source="media/service-goals-introduction/power-bi-goals-hub.png" alt-text="Screenshot of goals page with goals, scorecards, and samples.":::
 
-##
-
 ## License requirements
 
 Goals are a Pro feature. Users can access various aspects of the experience depending on their license.
@@ -111,7 +109,7 @@ Changing the tracking cycle only changes the trend that you see below your value
 
 **Why don’t I see the Power BI workspace I’m looking for when I create a scorecard?**
 
-In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
+In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
 Scorecards do have goal-level permissions roles. While workspace permissions give view or build access to the workspace, goal-level permissions restrict access. Certain people can only see certain goals and perform check-ins within a scorecard. Read more about [goal-level permissions in scorecards](service-goals-set-permissions.md).
 
