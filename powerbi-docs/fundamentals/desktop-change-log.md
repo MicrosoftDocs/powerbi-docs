@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/04/2024
+ms.date: 12/10/2024
 no-loc: [Copilot]
 ---
 
@@ -18,6 +18,15 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
 
+## November 2024 QFE 3
+
+*Version: 2.138.1452.0, Released: December 9, 2024*
+
+Bug fixes/improvements:
+
+* Fixed the frowns observed by customers when using the older version of WebView2 Runtime
+
+
 ## November 2024 QFE 2
 
 *Version 2.138.1203.0, Released: November 27, 2024*
@@ -25,7 +34,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 Bug fixes/improvements:
 
 * Fixed a regression issue where users in certain regions were seeing an error because they can access and use the Copilot pane, even though it shouldn't have been available to them
-* Fixed an issue where incorrect column names were being returned from *AdomdDataReader* results after changing column format or aggregation, causing broken data views and visual updates.
+* Fixed an issue where incorrect column names were being returned from *AdomdDataReader* results after changing column format or aggregation, causing broken data views and visual updates.=
 
 
 ## November 2024 QFE 1
