@@ -1,3 +1,15 @@
+---
+title: Formatting settings group
+description: This article describes how to implement Formatting settings group in custom visuals using the formatting model utils
+author: kullJul
+ms.author: monaberdugo
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
+ms.date: 12/12/2024
+---
+
 # Formatting settings group
 
 A *formatting settings group* is the secondary-level properties grouping container. Some formatting settings cards can have groups inside. Groups consist of slices and can be expanded/collapsed.

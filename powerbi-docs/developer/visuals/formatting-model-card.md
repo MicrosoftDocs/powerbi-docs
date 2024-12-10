@@ -1,3 +1,15 @@
+---
+title: Formatting settings card
+description: This article describes how to implement Formatting settings card in custom visuals using the formatting model utils
+author: kullJul
+ms.author: monaberdugo
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
+ms.date: 12/12/2024
+---
+
 # Formatting settings card
 
 A *formatting settings card* specifies a formatting card in the formatting or analytics pane. A formatting settings card can contain multiple formatting slices, containers, groups, and properties.

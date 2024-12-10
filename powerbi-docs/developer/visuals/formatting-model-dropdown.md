@@ -1,3 +1,15 @@
+---
+title: Dropdown formatting slice
+description: This article describes how to implement Dropdown slice in custom visuals using the formatting model utils
+author: kullJul
+ms.author: monaberdugo
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
+ms.date: 12/12/2024
+---
+
 # Dropdown formatting slices
 
 *Dropdown* slice is a simple formatting slice which is used to represent *enumeration* object type from `capabilities.json` file.
