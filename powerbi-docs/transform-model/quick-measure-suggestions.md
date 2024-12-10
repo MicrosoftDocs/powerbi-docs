@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
-ms.date: 11/27/2024
+ms.date: 12/09/2024
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to know more about DAX measures using natural language.
 ---
@@ -50,7 +50,7 @@ To enable the feature, navigate to the **Options** menu of Power BI Desktop and 
 - Top N values for a category
 - Information functions
 
-## Enable measure suggestions
+### How to enable measure suggestions
 To enable the feature, you need to first navigate to the **Options** menu of Power BI Desktop and turn on the preview switch for **Quick measure suggestions**:
 
 :::image type="content" source="media/quick-measure-suggestions/enable-preview.png" alt-text="Screenshot of how to enable preview from the options menu of Power BI Desktop.":::
@@ -65,7 +65,7 @@ Here you can describe the measure you want to create and hit **Generate** (or en
 
 You should always validate the DAX suggestions to make sure they meet your needs. If you’re satisfied with a suggested measure, you can click the **Add** button to automatically add the measure to your model.  
 
-## Natural language examples
+## Natural language examples for measures
 To help demonstrate the feature here are some natural language examples for each of the supported measure scenarios.
 
 ### Aggregated columns
@@ -241,7 +241,7 @@ Examples:
 - Return the current domain name and username
 - Return the current user’s domain login
 
-## Limitations and considerations
+### Limitations and considerations
 
 - Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you still need to validate the DAX suggestions because they can be wrong or not match your intent.
 - The feature isn't supported for LiveConnect data models.
@@ -257,7 +257,7 @@ Here you can describe the measure you want to create and hit **Generate** (or en
 
 You should always validate the DAX suggestions to make sure they meet your needs. If you’re satisfied with a suggested measure, you can click the **Add** button to automatically add the measure to your model.  
 
-## Natural language examples
+## Other natural language examples
 To help demonstrate the feature here are some natural language examples for each of the supported measure scenarios.
 
 ### Aggregated columns
@@ -418,7 +418,8 @@ Examples:
 -	Return the current domain name and username
 -	Return the current user’s domain login
 
-## Limitations and considerations
+## Limitations and considerations for DAX
+
 - Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you still need to validate the DAX suggestions because they can be wrong or not match your intent.
 - The feature isn't supported for LiveConnect data models.
 -	The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature is disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
