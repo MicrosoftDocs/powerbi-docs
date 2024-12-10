@@ -26,6 +26,31 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs//create-reports/service-metrics-get-started-hierarchies.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-get-started-hierarchies",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs//create-reports/service-metrics-hierarchies-scenarios.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-hierarchies-scenarios",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs//create-reports/service-metrics-linked-metrics.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-linked-goals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs//create-reports/service-metrics-status-rules.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-status-rules",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs//create-reports/service-metrics-view-hierarchies.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-view-hierarchies",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false

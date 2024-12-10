@@ -109,5 +109,5 @@ Metric data that can be edited on child scorecards:
 
 ## Related content
 
-- [Scenarios: When to use hierarchies in Power BI scorecards](service-metrics-hierarchies-scenarios.md)
+- [Scenarios: When to use hierarchies in Power BI scorecards](service-goals-hierarchies-scenarios.md)
 - [View hierarchies in Power BI Scorecards](service-goals-view-hierarchies.md)

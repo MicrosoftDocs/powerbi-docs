@@ -29,7 +29,7 @@ Cascading scorecards are great tools for standardized goals across many differen
 
 This scorecard becomes not only an artifact for metric tracking, but an integral tool for decision making at a high level of an organization to improve company culture and overall organizational health.
 
-:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-scenario-1-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 1 above." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scenario-1-1.png":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-scenario-1-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 1 above." lightbox="media/service-goals-get-started-hierarchies/hierarchies-scenario-1-1.png":::
 
 ## Scenario 2: Retail metrics across locations and product areas
 
@@ -39,7 +39,7 @@ This view is helpful because the owners can be mapped as part of the hierarchy a
 
 Check-ins can be performed at any intersection of the hierarchies, ensuring that all integral areas of the business are tracked and updated accordingly. In this case, every branch location can use the same scorecard to increase goal performance, driving a data culture at all levels of the company.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scenario-2-1.png" alt-text="A screenshot of a view of a hierarchy scorecard applying to the described scenario 2 above." lightbox="media/service-goals-get-started-hierarchies/hierarchies-scenario-2-1.png":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-scenario-2-1.png" alt-text="A screenshot of a view of a hierarchy scorecard applying to the described scenario 2 above." lightbox="media/service-goals-get-started-hierarchies/hierarchies-scenario-2-1.png":::
 
 This view shows both hierarchies selected.
 
