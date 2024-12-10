@@ -1,5 +1,5 @@
 ---
-title: Create email subscriptions for your metrics in Power BI (preview)
+title: Create email subscriptions for your scorecards in Power BI (preview)
 description: Set up subscriptions to receive email notifications and stay up to date on the scorecards that matter most to you and your team.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,10 +8,11 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/07/2024
+ms.date: 12/10/2024
+#customer intent: As a Power BI user I want to learn about and how to create email subscriptions for my scorecards and in the Power BI service.
 ---
 
-# Create email subscriptions for your metrics in Power BI (preview)
+# Create email subscriptions for your scorecards in Power BI (preview)
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -21,11 +22,11 @@ Set up subscriptions to receive email notifications and stay up to date on the s
 
 1. To set up a subscription, open the scorecard you want to subscribe to, and select **Subscribe to scorecard** in the ribbon.
 
-    :::image type="content" source="media/service-metrics-subscriptions/scorecard-subscribe.png" alt-text="Screenshot showing Subscribe to scorecard.":::
+    :::image type="content" source="media/service-goals-subscriptions/scorecard-subscribe.png" alt-text="Screenshot showing Subscribe to scorecard.":::
 
-1. Select **Add new subscription** in the pane that opens on the right.
+1. Select **Add new subscription** in the pane that opens to the right of the screen.
 
-    :::image type="content" source="media/service-metrics-subscriptions/subscribe-emails-scorecard-pane.png" alt-text="Screenshot showing Add new subscription.":::
+    :::image type="content" source="media/service-goals-subscriptions/subscribe-emails-scorecard-pane.png" alt-text="Screenshot showing Add new subscription.":::
 
 1. Enter the details about the subscription, such as the name for the subscription, subject, and email message details.
 
@@ -43,7 +44,7 @@ Set up subscriptions to receive email notifications and stay up to date on the s
 
 After you save it, you can edit the subscription, turn it on or off, or delete the subscription.
 
-Recipients receive an email from Power BI with a table containing the scorecard data such as metric name, status, values and due date. The table will show up to 50 metrics. 
+Recipients receive an email from Power BI with a table containing the scorecard data such as metric name, status, values, and due date. The table shows up to 50 metrics.
 
 ## Manage subscriptions
 
@@ -53,17 +54,17 @@ You can see all the subscriptions for a scorecard.
 
     Or in the Power BI service, select **Settings** > **Settings**.
 
-    :::image type="content" source="media/service-metrics-subscriptions/power-bi-service-settings.png" alt-text="Screenshot showing Settings.":::
+    :::image type="content" source="media/service-goals-subscriptions/power-bi-service-settings.png" alt-text="Screenshot showing Settings.":::
 
 1. In **Settings**, select **Subscriptions**.
 
-    :::image type="content" source="media/service-metrics-subscriptions/manage-scorecard-subscriptions.png" alt-text="Screenshot showing Subscriptions":::
+    :::image type="content" source="media/service-goals-subscriptions/manage-scorecard-subscriptions.png" alt-text="Screenshot showing Subscriptions":::
 
 ## Considerations and limitations
 
 - You can add up to 24 subscriptions per scorecard, each with unique recipients, times, and frequencies.
 - You can subscribe to scorecards if you have a Pro license or PPU license, or if the scorecard is in a workspace backed by Premium capacity.
-- You can subscribe other team members if, in addition to the above, you have a Contributor, Member, or Admin role in that workspace. 
+- You can subscribe other team members if, in addition to the previous requirements, you have a Contributor, Member, or Admin role in that workspace.
 - If the scorecard is hosted in a Premium capacity:
 
   - You can subscribe group aliases, whether they're in your domain or not.
@@ -75,8 +76,8 @@ You can see all the subscriptions for a scorecard.
   
 ## Related content
 
-- [Get started with metrics in Power BI](service-goals-introduction.md)
-- [Create scorecards and manual metrics in Power BI](service-goals-create.md)
-- [Create connected metrics in Power BI](service-goals-create-connected.md)
+- [Get started with goals in Power BI](service-goals-introduction.md)
+- [Create scorecards and manual goals in Power BI](service-goals-create.md)
+- [Create connected goals in Power BI](service-goals-create-connected.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

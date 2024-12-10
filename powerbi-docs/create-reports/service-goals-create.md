@@ -81,7 +81,7 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
 ## Step 3 (Optional): Create submetrics 
 
-You can also define one or more submetrics for your metric. Like their parent metrics, submetrics can be either connected or set manually. See [Create submetrics](service-metrics-submetrics.md) for details.
+You can also define one or more submetrics for your metric. Like their parent metrics, submetrics can be either connected or set manually. See [Create submetrics](service-goals-subgoals.md) for details.
 
 ## Step 4 (Optional): Update the metric tracking cycle 
 

@@ -8,8 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/05/2024
-#customer intent: As a Power BI user I want to learn about subgoals in scorecards in Power BI.
+ms.date: 12/10/2024
+#customer intent: As a Power BI user I want to learn about subgoals in scorecards and how to create them in the Power BI service.
 ---
 
 # Create subgoals in the Power BI service
@@ -36,7 +36,7 @@ You can define one or more subgoals for a goal. Like their parent goals, subgoal
 
 1. Repeat the first step as needed to create more subgoals.
 
-    Make sure you've selected the goal so you can create subgoal.
+    Make sure you selected the goal so you can create subgoal.
 
 1. See these articles for details on creating manual or connected goals:
 
@@ -45,7 +45,7 @@ You can define one or more subgoals for a goal. Like their parent goals, subgoal
 
 ## Create subgoals that roll up to the goal
 
-You can also create *rollup* subgoals, whose values automatically aggregate up to a parent goal. These aggregations recalculate anytime the subgoal values change, and capture the history. Rollups are a great way to keep a parent goal up to date without having it backed by a report connection. Rollups work when subgoals are manual or connected, so you can always roll up whatever the current value is, regardless of where it's coming from.
+You can also create *rollup* subgoals, whose values automatically aggregate up to a parent goal. These aggregations recalculate anytime the subgoal values change, and capture the history. Rollups are a great way to keep a parent goal up to date without being backed by a report connection. Rollups work when subgoals are manual or connected, so you can always roll up whatever the current value is, regardless of where it's coming from.
 
 ### Get started creating rollups
 
@@ -53,7 +53,7 @@ First, make sure you're in edit mode.
 
 1. Select the **pencil icon** to enter inline editing of a goal.  
 
-    :::image type="content" source="media/service-metrics-submetrics/roll-up-edit-metric.png" alt-text="Screenshot showing a scorecard in edit mode.":::
+    :::image type="content" source="media/service-goals-subgoals/roll-up-edit-metric.png" alt-text="Screenshot showing a scorecard in edit mode.":::
 
 1. Next to the value and target, you see an indication of what type of goal it is:
 
@@ -61,7 +61,7 @@ First, make sure you're in edit mode.
     - **Use subgoal**
     - **Connected to data**
 
-    :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options.png" alt-text="A screenshot showing the types of goals.":::
+    :::image type="content" source="media/service-goals-subgoals/roll-up-open-options.png" alt-text="A screenshot showing the types of goals.":::
 
 1. When you choose rollup subgoals, you can choose the aggregation type:
 
@@ -74,23 +74,23 @@ First, make sure you're in edit mode.
 
 ### Preserve historical values
 
-You may want to preserve historical values if you're switching goal type from connected to rollup type.
+You might want to preserve historical values if you're switching goal type from connected to rollup type.
 
 1. In **Edit** mode for the scorecard, select **More options (...)** > **See details** next to the goal.
 
-    :::image type="content" source="media/service-metrics-submetrics/metrics-more-options-see-details.png" alt-text="Screenshot showing selecting More options, then See details.":::
+    :::image type="content" source="media/service-goals-subgoals/metrics-more-options-see-details.png" alt-text="Screenshot showing selecting More options, then See details.":::
 
 2. On the **Connections** tab, ensure that you turn off the toggle labeled **Clear goal values when connecting to a new report**.
 
-    :::image type="content" source="media/service-metrics-submetrics/roll-up-settings.png" alt-text="Screenshot showing scorecard data connection settings toggle.":::
+    :::image type="content" source="media/service-goals-subgoals/roll-up-settings.png" alt-text="Screenshot showing scorecard data connection settings toggle.":::
 
 ### Rollups considerations
 
 - Rollups take place from the day they're set up moving forward. They don't remove, recalculate, or override historical data with retroactive rollup values, in almost all scenarios.
-- One scenario where connected historical data is deleted is if the person creating the rollup is *not* the goal connection owner. To preserve the history, ensure the goal connection owner is the same person as the rollup creator.
+- One scenario where connected historical data is deleted is if the person creating the rollup isn't* the goal connection owner. To preserve the history, ensure the goal connection owner is the same person as the rollup creator.
 - If a scorecard author changes a goal from a rollup to a connected goal and they bring in the history via report connection, the report history overrides historical rollup values.
 - New rollup types calculate with the new aggregation moving forward, but don't replace the history.
-- Rollups always show the same aggregation value of all subgoals, regardless of goal level permissions.  This means if person A only has view access to 3 out of 5 subgoals, they still see the same parent goal value as someone who has access to all subgoals.  
+- Rollups always show the same aggregation value of all subgoals, regardless of goal level permissions. So, if person A only has view access to 3 out of 5 subgoals, they still see the same parent goal value as someone who has access to all subgoals.  
 
 ## Related content
 

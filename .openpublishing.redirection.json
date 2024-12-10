@@ -26,6 +26,21 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/create-reports/service-metrics-follow.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-follow",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-metrics-submetrics.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-subgoals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-metrics-subscriptions.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-subscriptions",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false

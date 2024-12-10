@@ -16,7 +16,7 @@ ms.date: 02/16/2023
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics in Power BI let your customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events. These features are covered in this article. You can also [follow your metrics](service-metrics-follow.md), to be notified when they change.
+Metrics in Power BI let your customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events. These features are covered in this article. You can also [follow your goals](service-goals-follow.md), to be notified when they change.
 
 ## View metric details 
 

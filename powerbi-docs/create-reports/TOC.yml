@@ -547,7 +547,7 @@
       - name: Create scorecards and manual metrics
         href: service-goals-create.md
       - name: Create submetrics
-        href: service-metrics-submetrics.md
+        href: service-goals-subgoals.md
       - name: Create linked metrics
         href: service-metrics-linked-metrics.md
       - name: Create automated status rules
@@ -557,9 +557,9 @@
       - name: Stay on top of your metrics
         href: service-goals-check-in.md        
       - name: Create email subscriptions for metrics
-        href: service-metrics-subscriptions.md        
-      - name: Follow your metrics
-        href: service-metrics-follow.md        
+        href: service-goals-subscriptions.md        
+      - name: follow your goals
+        href: service-goals-follow.md        
       - name: Set metric-level permissions
         href: service-goals-set-permissions.md
       - name: Arrange metrics and columns in scorecards
