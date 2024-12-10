@@ -12,7 +12,7 @@ LocalizationGroup: Connect to data
 ---
 # Connect to SAP HANA data sources by using DirectQuery in Power BI
 
-You can connect to SAP HANA data sources directly using DirectQuery. This is typically required for large datasets that exceed available resources to support import models. There are two equally valid options when connecting to SAP HANA in DirectQuery mode:
+You can connect to SAP HANA data sources directly using DirectQuery, which is often required for large datasets that exceed available resources to support import models. There are two approaches for connecting to SAP HANA in DirectQuery mode, each with different capabilities:
 
 * **Treat SAP HANA as a multi-dimensional source (default):**  In this case, the behavior is similar to when Power BI connects to other multi-dimensional sources like SAP Business Warehouse, or Analysis Services. When you connect to SAP HANA as a multi-dimensional source, a single analytic or calculation view is selected and all the measures, hierarchies and attributes of that view are available in the field list. You cannot add calculated columns or other data customizations in the semantic model. As visuals are created, the aggregate data is directly retrieved from SAP HANA. Treat SAP HANA as a multi-dimensional source is the default for new DirectQuery reports over SAP HANA.
 
@@ -101,7 +101,7 @@ All of these considerations and behaviors necessitate the following important co
 
 * In **Get Data** or Power Query Editor, only the required columns should be included to retrieve the necessary data, reflecting the fact that the result is a query that must be a reasonable query that can be sent to SAP HANA. For example, if dozens of columns were selected, with the thought that they might be needed on subsequent visuals, then even for DirectQuery a simple visual means the aggregate query used in the subselect contains those dozens of columns, which generally perform poorly and can encounter timeouts.
   
-In the following example, selecting five columns (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) in the **Get Data** dialog, along with the measure *OrderQuantity*, means that later creating a simple visual containing the **Min OrderQuantity** results in the following SQL query to SAP HANA. The shaded is the subselect, containing the query from **Get Data** / Power Query Editor. If this subselect gives a high cardinality result, then the resulting SAP HANA performance is likely to be poor or encounter timeouts.  
+In the following example, selecting five columns (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) in the **Get Data** dialog, along with the measure *OrderQuantity*, means that later creating a simple visual containing the **Min OrderQuantity** results in the following SQL query to SAP HANA. The shaded is the subselect, containing the query from **Get Data** / Power Query Editor. If this subselect gives a high cardinality result, then the resulting SAP HANA performance is likely to be poor or encounter timeouts. The performance impact is not due to Power BI requesting all fields in the subselect; most of those fields will be projected away by the outer query. Rather, the impact is due to measures in the subselect forcing it to be materialized in the HANA server. 
 
 ![Screenshot of a query example, showing the SQL query to SAP HANA.](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
