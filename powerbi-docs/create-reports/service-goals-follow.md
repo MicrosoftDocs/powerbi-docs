@@ -19,7 +19,7 @@ ms.date: 12/10/2024
 
 Use the _Follow_ functionality to quickly access goals you’re interested in and stay up to date on the activity on these goals. You can follow goals as you’re browsing through different scorecards and later access all your followed goals in one place. So, you can get a quick overview of the goals you care about, without having to navigate to different scorecards often.
 
-To follow, hover over the goal in the scorecard to select the **Follow goal** icon.
+To follow, hover over the goal in the scorecard to select the **Follow metric** icon.
 
 :::image type="content" source="media/service-goals-follow/follow-metric.png" alt-text="Screenshot of following a goal.":::
 
