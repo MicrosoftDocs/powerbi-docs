@@ -374,7 +374,7 @@ You can also use Power BI to trigger a Power Automate cloud flow in three ways:
 
 - Use the Power Automate visual in a Power BI report.
 - Use data alerts from a Power BI dashboard tile.
-- [Create flows to notify changed goals](../create-reports/service-goals-power-automate.md) in Power BI.
+- [Create flows to notify changed goals](../create-reports/service-metrics-power-automate.md) in Power BI.
 
 With this approach, you aren't automating Power BI actions as much as you're responding to events that happen in Power BI. These events can either be triggered manually (like the Power Automate visual) or automatically (like data alerts). You can also use data from Power BI downstream in the flows, which can help you automate more specific and relevant actions.
 
