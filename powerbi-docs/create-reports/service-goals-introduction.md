@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with goals
 ms.topic: how-to
-ms.date: 12/10/2023
+ms.date: 12/10/2024
 ms.custom: intro-get-started
 #customer intent: As a Power BI user I want to learn what goals are and how to use Goals in my Power BI scorecards.
 ---
