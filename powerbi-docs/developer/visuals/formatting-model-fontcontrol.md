@@ -1,3 +1,15 @@
+---
+title: FontControl formatting slice
+description: This article describes how to implement FontControl slice in custom visuals using the formatting model utils
+author: kullJul
+ms.author: ''
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
+ms.date: 12/12/2024
+---
+
 # FontControl formatting slice
 
 *FontControl* is a composite formatting slice that contains font related properties all together. It is used to represent *integer*, *fontControl* and *bool* object types from `capabilities.json` file.
