@@ -25,7 +25,7 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 
 You can also connect metrics to an existing report visual in Power BI. See [Create connected metrics](service-goals-create-connected.md) for details. 
 
-:::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Screenshot of Northwind scorecard with metrics and submetrics.":::
+:::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Screenshot of Northwind scorecard with metrics and submetrics." lightbox="media/service-goals-create/northwind-scorecard.png":::
 
 ## Prerequisites
 
