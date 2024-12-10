@@ -1,3 +1,15 @@
+---
+title: Formatting settings container
+description: This article describes how to implement Formatting settings container in custom visuals using the formatting model utils
+author: kullJul
+ms.author: v-ikulagina
+ms.reviewer: monaberdugo
+ms.service: powerbi
+ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
+ms.date: 12/12/2024
+---
+
 # Formatting settings container
 
 A *formatting settings container* is the secondary-level properties grouping container. It groups slices into *container items* and allows to switch between these items using dropdown element.
