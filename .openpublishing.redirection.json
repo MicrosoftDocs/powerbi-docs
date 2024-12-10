@@ -2470,6 +2470,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerapps-integration-about.md",
+            "redirect_url": "/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerapps-integration-considerations.md",
+            "redirect_url": "/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerapps-integration-enable.md",
+            "redirect_url": "/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerapps-integration-using.md",
+            "redirect_url": "/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-organizational-content-pack-create-and-publish.md",
             "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-create-and-publish",
             "redirect_document_id": false
