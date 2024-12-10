@@ -68,7 +68,7 @@ By default, scale-out is enabled for your tenant, but it's not enabled for seman
     | App, library or service  | Version |
     |--------------------------|---------|
     | Microsoft Analysis Services OLE DB Provider for Microsoft SQL Server (MSOLAP) | 16.0.20.201 (March 2022) |
-    | Analysze in Excel for Power BI Semantic models (MSOLAP) | 16.0.122.27 |
+    | Analyze in Excel for Power BI Semantic models (MSOLAP) | 16.0.122.27 |
     | Microsoft.AnalysisServices.AdomdClient (ADOMD.NET) | 19.36.0 (March 2022) |
     | Power BI Desktop         | June 2022 |
     | SQL Server Management Studio (SSMS) | 19.0 |
@@ -147,7 +147,7 @@ Power BI semantic model scale-out is enabled by default for a tenant. Power BI t
 
 * Disabling [Large semantic model storage format](service-premium-large-models.md) disables scale-out and loses all sync information.
   
-* When multiple read-only replicas are active, Analyze in Excel for Semantic Models feature using MSOLAP versions earlier than 16.0.122.27 can result in frequest connectivity issues with error message "session ID cannot be found". This issue can be resolved by using direct Power BI Workspace connections (powerbi://) or by upgrading to latest MSOLAP provider.
+* When multiple read-only replicas are active, Analyze in Excel for Semantic Models feature using MSOLAP versions earlier than 16.0.122.27 can result in frequent connectivity issues with error message "session ID cannot be found". This issue can be resolved by using direct Power BI Workspace connections (powerbi://) or by upgrading to latest MSOLAP provider.
 
 ## Related content
 
