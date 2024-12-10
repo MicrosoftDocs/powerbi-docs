@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 09/26/2023
+ms.date: 12/10/2024
 ms.custom: kr2b-contr-experiment
 ---
 
