@@ -175,7 +175,7 @@ Hierarchies are now available in the mobile apps, where you can drill into the h
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-hierarchies.png" alt-text="Screenshot showing Power BI metrics hierarchies in the Power BI mobile app." border="false":::
 
-[Learn more about viewing hierarchies in the Power BI service](../../create-reports/service-metrics-view-hierarchies.md)
+[Learn more about viewing hierarchies in the Power BI service](../../create-reports/service-goals-view-hierarchies.md)
 
 ## March 2023
 
@@ -219,7 +219,7 @@ Open the app and tap the header to display the navigation tree. If the app has a
 
 ### Support for linked metrics
 
-The Power BI mobile apps now support linked metrics. Linked metrics are metrics that are connected to multiple scorecards. All check-ins and updates to linked metrics are reflected everywhere the metric appears. Linked metrics make it easier to avoid creating duplicate metrics tracking the same thing. [Learn more about linked metrics](../../create-reports/service-metrics-linked-metrics.md)
+The Power BI mobile apps now support linked metrics. Linked metrics are metrics that are connected to multiple scorecards. All check-ins and updates to linked metrics are reflected everywhere the metric appears. Linked metrics make it easier to avoid creating duplicate metrics tracking the same thing. [Learn more about linked metrics](../../create-reports/service-goals-linked-goals.md)
 
 ### Track your metrics on the Windows app
 
