@@ -153,7 +153,7 @@ The following table shows the formatting property types in *capabilities.json* f
 |------------------|-------------------------|----------------------|
 | Boolean          | Bool                    | [ToggleSwitch](formatting-model-toggleswitch.md)         |
 | Number           | <li>numeric</li> <li> integer </li>       | <li> [NumUpDown](formatting-model-numupdown.md) </li> <li>[Slider](formatting-model-slider.md)</li>     |
-| Enumeration list | enumeration:[]          | <li> [ItemDropdown](formatting-model-dropdown.md#tab/itemDropdown)</li> <li> [ItemFlagsSelection](formatting-model-flagselection.md#tab/ItemFlagsSelection)</li><li> [AutoDropdown](formatting-model-dropdown.md#tab/AutoFlagsSelection)</li><li> [AutoFlagsSelection](formatting-model-flagselection.md#tab/AutoFlagsSelection)</li> <sup>*</sup> See note below       |
+| Enumeration list | enumeration:[]          | <li> [ItemDropdown](formatting-model-dropdown.md#ItemDropdown-implementation)</li> <li> [ItemFlagsSelection](formatting-model-flagselection.md#ItemFlagsSelection-implementation)</li><li> [AutoDropdown](formatting-model-dropdown.md#AutoDropdown-implementation)</li><li> [AutoFlagsSelection](formatting-model-flagselection.md#AutoFlagsSelection-implementation)</li> <sup>*</sup> See note below       |
 | Color            | Fill                    | [ColorPicker](formatting-model-colorpicker.md)          |
 | Gradient         | FillRule                | GradientBar: property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
 | Text             | Text                    | <li>[TextInput](formatting-model-textinput.md)</li> <li>[TextArea](formatting-model-textarea.md)</li>  |
