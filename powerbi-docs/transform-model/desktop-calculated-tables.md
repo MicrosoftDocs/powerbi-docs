@@ -36,7 +36,7 @@ For example, imagine you're a personnel manager who has a table of **Northwest E
  :::image type="content" source="media/desktop-calculated-tables/calctables_swempl.png" alt-text="Screenshot of the Southwest employees table.":::
 
 1. In Report View, Data View, or Model View of Power BI Desktop, in the **Calculations** group select **New table**. It's a bit easier to do in **Table tools** in the Data View, because then you can immediately see your new calculated table.
- :::image type="content" source="media/desktop-calculated-tables/calctables_formulabarempty.png" alt-text="Screenshot of the Power BI Desktop menu ribbon with Table tools, New table and Data view highlighted.":::
+ :::image type="content" source="media/desktop-calculated-tables/calctables_formulabarempty.png" alt-text="Screenshot of the Power BI Desktop menu ribbon with Table tools, New table and Table view highlighted.":::
 2. Enter the following formula in the formula bar:
 
 ```dax
