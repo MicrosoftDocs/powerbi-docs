@@ -52,7 +52,7 @@ General steps to add the new format pane support to a custom visual:
 
 ## Example of formatting model implementation
 
-* Formatting model using [**formattingmodel util** example](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils).
+* Formatting model using [**formattingmodel util** example](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils). (**Recommended**)
 * Formatting model using only [**APIs** example](format-pane-example.md).
 
 ## Map formatting properties
@@ -153,7 +153,7 @@ The following table shows the formatting property types in *capabilities.json* f
 |------------------|-------------------------|----------------------|
 | Boolean          | Bool                    | [ToggleSwitch](formatting-model-toggleswitch.md)         |
 | Number           | <li>numeric</li> <li> integer </li>       | <li> [NumUpDown](formatting-model-numupdown.md) </li> <li>[Slider](formatting-model-slider.md)</li>     |
-| Enumeration list | enumeration:[]          | <li> [ItemDropdown](formatting-model-dropdown.md#itemdropdown-implementation)</li> <li> [ItemFlagsSelection](formatting-model-flagselection.md#itemflagsselection-implementation)</li><li> [AutoDropdown](formatting-model-dropdown.md#autodropdown-implementation)</li><li> [AutoFlagsSelection](formatting-model-flagselection.md#autoflagsselection-implementation)</li> <sup>*</sup> See note below       |
+| Enumeration list | enumeration:[]          | <li> [ItemDropdown](formatting-model-dropdown.md#itemdropdown-implementation)</li> <li> [ItemFlagsSelection](formatting-model-flagselection.md#itemflagsselection)</li><li> [AutoDropdown](formatting-model-dropdown.md#autodropdown-implementation)</li><li> [AutoFlagsSelection](formatting-model-flagselection.md#autoflagsselection)</li> <sup>*</sup> See note below       |
 | Color            | Fill                    | [ColorPicker](formatting-model-colorpicker.md)          |
 | Gradient         | FillRule                | GradientBar: property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
 | Text             | Text                    | <li>[TextInput](formatting-model-textinput.md)</li> <li>[TextArea](formatting-model-textarea.md)</li>  |

@@ -13,15 +13,16 @@ ms.date: 12/12/2024
 # FlagsSelection formatting slices
 
 *FlagsSelection* slice is a simple formatting slice which is used to represent *enumeration* object type from `capabilities.json` file.
-There are two FlagSelection slices - *ItemFlagsSelection* and *AutoFlagsSelection*. 
-Their difference is that for *AutoFlagsSelection* slice you need to declare its enumeration items list under the appropriate object in `capabilities.json` file, and for *ItemFlagsSelection* in the formatting settings class.
+There are two FlagSelection slices - **ItemFlagsSelection** and **AutoFlagsSelection**.
+
+Their difference is that for AutoFlagsSelection slice you need to declare its enumeration items list under the appropriate object in `capabilities.json` file, and for ItemFlagsSelection in the formatting settings class.
 
 ## Example: FlagsSelection implementation
 
 In this example, we show how to build a FlagsSelection slices using formatting model utils.
 The following tabs show examples of the *ItemFlagsSelection* and *AutoFlagsSelection* slices.
 
-### [ItemFlagsSelections implementation](#tab/ItemFlagsSelection)
+### [ItemFlagsSelections](#tab/ItemFlagsSelection)
 
 ![Screenshot of an ItemFlagsSelection.](media/format-pane/item-flagsselection.png)
 
@@ -29,7 +30,7 @@ The following tabs show examples of the *ItemFlagsSelection* and *AutoFlagsSelec
 
 Insert the following JSON fragment into the `capabilities.json` file.
 
-```typescript
+```json
 {
   // ... same level as dataRoles and dataViewMappings
   "objects": {
@@ -81,7 +82,7 @@ export class VisualSettings extends formattingSettings.Model {
 }
 ```
 
-### [AutoFlagsSelection implementation](#tab/AutoFlagsSelection)
+### [AutoFlagsSelection](#tab/AutoFlagsSelection)
 
 ![Screenshot of an AutoFlagsSelection.](media/format-pane/auto-flagsselection.png)
 
