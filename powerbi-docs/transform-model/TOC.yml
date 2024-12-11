@@ -117,7 +117,7 @@
       href: desktop-create-and-manage-relationships.md
     - name: "Use the Analytics pane"
       href: desktop-analytics-pane.md
-    - name: "Work with Data view"
+    - name: "Work with Table view"
       href: ../connect-data/desktop-data-view.md
     - name: "Learn DAX basics in Power BI Desktop"
       href: desktop-quickstart-learn-dax-basics.md
