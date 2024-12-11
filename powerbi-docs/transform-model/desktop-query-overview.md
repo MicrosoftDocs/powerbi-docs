@@ -55,7 +55,7 @@ Here's how Power Query Editor appears after a data connection is established:
 
    :::image type="content" source="media/desktop-query-overview/query-overview-with-data-connection.png" alt-text="Screenshot of Power BI Desktop showing the Query Settings pane in Power Query Editor.":::
 
-Each of these four areas are explained later: the ribbon, the Queries pane, the Data view, and the Query Settings pane.
+Each of these four areas are explained later: the ribbon, the Queries pane, the Table view, and the Query Settings pane.
 
 ## The query ribbon
 

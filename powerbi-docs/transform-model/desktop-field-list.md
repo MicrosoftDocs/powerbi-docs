@@ -13,7 +13,7 @@ LocalizationGroup: Transform and shape data
 
 # Use the Field list in Power BI Desktop
 
-The lists in the **Field** pane, called the **Data** pane in current releases of Power BI Desktop, are being unified across Model view, Data view and Report view in Power BI Desktop. Unifying these views creates consistency for functionality and the user interface (UI) across views, and addresses customer feedback.
+The lists in the **Field** pane, called the **Data** pane in current releases of Power BI Desktop, are being unified across Model view, Table view and Report view in Power BI Desktop. Unifying these views creates consistency for functionality and the user interface (UI) across views, and addresses customer feedback.
 
 The following changes across the views are:
 
