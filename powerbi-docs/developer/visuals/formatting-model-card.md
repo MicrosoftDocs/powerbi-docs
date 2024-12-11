@@ -195,6 +195,8 @@ Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#bu
 Here's the resulting pane:
 ![Screenshot of an CompositeCad.](media/format-pane/composite-card.png)
 
+---
+
 ## Related content
 
 * [Format pane](format-pane-general.md)

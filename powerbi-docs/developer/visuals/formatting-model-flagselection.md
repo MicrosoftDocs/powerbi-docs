@@ -22,7 +22,7 @@ Their difference is that for AutoFlagsSelection slice you need to declare its en
 In this example, we show how to build a FlagsSelection slices using formatting model utils.
 The following tabs show examples of the *ItemFlagsSelection* and *AutoFlagsSelection* slices.
 
-### [ItemFlagsSelections](#tab/ItemFlagsSelection)
+### [ItemFlagsSelections](#tab/itemflagsselection)
 
 ![Screenshot of an ItemFlagsSelection.](media/format-pane/item-flagsselection.png)
 
@@ -82,7 +82,7 @@ export class VisualSettings extends formattingSettings.Model {
 }
 ```
 
-### [AutoFlagsSelection](#tab/AutoFlagsSelection)
+### [AutoFlagsSelection](#tab/autoflagsselection)
 
 ![Screenshot of an AutoFlagsSelection.](media/format-pane/auto-flagsselection.png)
 
@@ -149,6 +149,8 @@ export class VisualSettings extends formattingSettings.Model {
     public cards: formattingSettings.SimpleCard[] = [this.labels];
 }
 ```
+
+---
 
 ## Related content
 

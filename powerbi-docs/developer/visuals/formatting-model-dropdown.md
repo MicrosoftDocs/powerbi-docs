@@ -21,7 +21,7 @@ Their difference is that for *AutoDropdown* slice you need to declare its enumer
 In this example, we show how to build a Dropdown slices using formatting model utils.
 The following tabs show examples of the *ItemDropdown* and *AutoDropdown* slices.
 
-### [ItemDropdown implementation](#tab/itemDropdown)
+### [ItemDropdown](#tab/itemdropdown)
 
 ![Screenshot of an ItemDropdown.](media/format-pane/item-dropdown.png)
 
@@ -81,7 +81,7 @@ export class VisualSettings extends formattingSettings.Model {
 }
 ```
 
-### [AutoDropdown implementation](#tab/autoDropdown)
+### [AutoDropdown](#tab/autodropdown)
 
 ![Screenshot of an AutoDropdown.](media/format-pane/auto-dropdown.png)
 
@@ -140,6 +140,8 @@ export class VisualSettings extends formattingSettings.Model {
     public cards: formattingSettings.SimpleCard[] = [this.labels];
 }
 ```
+
+---
 
 ## Related content
 
