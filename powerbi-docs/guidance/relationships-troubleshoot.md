@@ -24,7 +24,7 @@ When a report visual is set up to use fields from two (or more) tables, and it d
 In this case, here's a general troubleshooting checklist to follow. You can progressively work through the checklist until you identify the issue(s).
 
 1. Switch the visual to a table or matrix, or open the _See Data_ pane—it's easier to troubleshoot issues when you can see the query result.
-1. If there's an empty query result, switch to Data view—verify that tables have been loaded with rows of data.
+1. If there's an empty query result, switch to Table view—verify that tables have been loaded with rows of data.
 1. Switch to Model view—it's easy to see the relationships and quickly determine their properties.
 1. Verify that relationships exist between the tables.
 1. Verify that cardinality properties are correctly set—they could be incorrect if a "many"-side column presently contains unique values, and it has been incorrectly set as a "one" side.
@@ -32,7 +32,7 @@ In this case, here's a general troubleshooting checklist to follow. You can prog
 1. Verify that the filter directions support propagation (interpret arrow heads).
 1. Verify that the correct columns are related—either select the relationship, or hover the cursor over it to reveal the related columns.
 1. Verify that the related column data types are the same, or at least compatible—it's possible to relate a text column to a whole number column, but filters won't find any matches to propagate filters.
-1. Switch to Data view, and verify that matching values can be found in related columns.
+1. Switch to Table view, and verify that matching values can be found in related columns.
 
 ## Troubleshooting guide
 

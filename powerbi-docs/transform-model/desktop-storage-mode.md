@@ -133,13 +133,13 @@ The queries displayed in the previous section show that Dual tables sometimes hi
 
 The **Dual** storage mode is a performance optimization. It should be used only in ways that don't compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in the [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
 
-## Data view
+## Table view
 
-If at least one table in the semantic model has its storage mode set to either **Import** or **Dual**, the **Data** view tab is displayable.
+If at least one table in the semantic model has its storage mode set to either **Import** or **Dual**, the **Table** view tab is displayable.
 
-:::image type="content" source="media/desktop-storage-mode/storage-mode-03.png" alt-text="Screenshot highlighting the Data view icon.":::
+:::image type="content" source="media/desktop-storage-mode/storage-mode-03.png" alt-text="Screenshot highlighting the Table view icon.":::
 
-When you select Dual and Import tables in **Data** view, they show cached data. DirectQuery tables don't show data, and a message is displayed that states that DirectQuery tables can't be shown.
+When you select Dual and Import tables in **Table** view, they show cached data. DirectQuery tables don't show data, and a message is displayed that states that DirectQuery tables can't be shown.
 
 ## Considerations and limitations
 

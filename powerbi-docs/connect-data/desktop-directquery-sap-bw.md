@@ -32,7 +32,7 @@ The other primary modeling restrictions when connecting to SAP BW using DirectQu
 * **No support for calculated columns:** The ability to create calculated columns is disabled. This fact also means that grouping and clustering, which create calculated columns, aren't available.
 * **Additional limitations for measures:** There are other limitations imposed on the DAX expressions that can be used in measures to reflect the level of support offered by SAP BW.
 * **No support for defining relationships:** The relationships are inherent in the external SAP source. Other relationships can't be defined in the model.
-* **No Data View:** The data view normally displays the detail level data in the tables. Given the nature of OLAP sources like SAP BW, this view isn't available over SAP BW.
+* **No Table View:** The Table view normally displays the detail level data in the tables. Given the nature of OLAP sources like SAP BW, this view isn't available over SAP BW.
 * **Column and measure details are fixed:** The list of columns and measures seen in the field list are fixed by the underlying source, and can't be modified. For example, it's not possible to delete a column or change its datatype. It can, however, be renamed.
 * **Additional limitations in DAX:** There are more limitations on the DAX that can be used in measure definitions to reflect limitations in the source. For example, it's not possible to use an aggregate function over a table.
 
