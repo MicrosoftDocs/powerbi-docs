@@ -23,7 +23,7 @@ When you embed a Power BI report in your PowerPoint presentation, you want to kn
 * **Sync**: Brings in the latest version of the report as it appears in the Power BI service, complete with any changes in the report definition, such as new filters, visuals, etc.
 * **Restore**: Resets the report to the state it was in when it was initially embedded into the presentation.
 
-:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/reset-options.png" alt-text="Screenshot showing the Sync and Restore optoins under the Reset data option menu." border="false":::
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/reset-options.png" alt-text="Screenshot showing the Sync and Restore options under the Reset data option menu." border="false":::
 
 ## May 2024
 
