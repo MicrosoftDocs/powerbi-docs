@@ -7131,7 +7131,7 @@ Ring in the new year with another collection of improvements and enhancements to
 ### Data Connectivity:
 
 -   DirectQuery: you can now create measures when using DirectQuery mode
--   You can now refresh data for individual tables from the Field List (in **Report** view and **Data** view), rather than (and in addition to) just being able to **refresh all** from the ribbon
+-   You can now refresh data for individual tables from the Field List (in **Report** view and **Table** view), rather than (and in addition to) just being able to **refresh all** from the ribbon
 -   General Availability (GA) for SQL Server Analysis Services Multidimensional models Exploration mode (no longer a preview feature)
 -   Enhancements to hierarchy support
 -   General Availability (GA) for the SAP HANA connector (no longer a preview feature)

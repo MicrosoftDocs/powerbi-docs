@@ -110,7 +110,7 @@ The field parameter is a table with three columns named **Product**, **Fields**,
    }
    ```
 
-   After you update the DAX expression with a language identifier for each language, a new column appears in the **Data** view of the **Products** table named **Value4**.
+   After you update the DAX expression with a language identifier for each language, a new column appears in the **Table** view of the **Products** table named **Value4**.
 
    :::image type="content" source="./media/data-translation-implement-field/report-view-data-column.png" alt-text="Screenshot shows a table in the Table view with a new column called Value4." lightbox="./media/data-translation-implement-field/report-view-data-column.png":::
 
