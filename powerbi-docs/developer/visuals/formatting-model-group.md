@@ -132,6 +132,7 @@ export class VisualSettingsModel  extends formattingSettings.Model {
 Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
 
 Here's the resulting pane:
+
 ![Screenshot of a Group.](media/format-pane/group.png)
 
 ## Related content

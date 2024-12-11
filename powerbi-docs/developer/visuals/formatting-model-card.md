@@ -103,6 +103,7 @@ export class VisualSettingsModel  extends formattingSettings.Model {
 Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
 
 Here's the resulting pane:
+
 ![Screenshot of an SimpleCad.](media/format-pane/simple-card.png)
 
 ### [Composite formatting card implementation](#tab/compositeCard)
@@ -193,6 +194,7 @@ export class VisualSettingsModel  extends formattingSettings.Model {
 Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
 
 Here's the resulting pane:
+
 ![Screenshot of an CompositeCad.](media/format-pane/composite-card.png)
 
 ---
