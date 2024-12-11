@@ -190,7 +190,7 @@ After filters have been applied and a subset of data has been loaded into the mo
 
 #### Table
 
-The **Select table** listbox defaults to the table you selected in Data view. Enable incremental refresh for the table with the slider. If the Power Query expression for the table doesn't include a filter based on the `RangeStart` and `RangeEnd` parameters, the toggle isn't available.
+The **Select table** listbox defaults to the table you selected in Table view. Enable incremental refresh for the table with the slider. If the Power Query expression for the table doesn't include a filter based on the `RangeStart` and `RangeEnd` parameters, the toggle isn't available.
 
 #### Required settings
 
