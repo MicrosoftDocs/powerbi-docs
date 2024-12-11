@@ -14,6 +14,14 @@ ms.date: 05/22/2024
 
 # What's new in the Power BI add-in for PowerPoint
 
+## December 2024
+
+### New reset behavior
+
+WHen integrating a report into your presentation, it's important that it remain stable and unaltered. The add-in refreshes data from the Power BI service without modifying the report itself (for example, changes in the structure or definition of the report). However, since Power BI reports are dynamic, sometimes you might want to PowerPoint to get the latest changes done in the report in the Power BI service. To do this, you used to have to remove and re-embed the report. Now, with the improved Reset command, you can choose either to reset the add-in to it's original state as initially added to the presentation, or you can completely update it with the current view as it is in the Power BI service.
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/reset-options.png" alt-text="Screenshot showing the Sync and Restore optoins under the Reset data option menu.":::
+
 ## May 2024
 
 ### Image mode improvements
