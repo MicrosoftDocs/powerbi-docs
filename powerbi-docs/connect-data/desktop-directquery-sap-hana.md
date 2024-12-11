@@ -57,7 +57,7 @@ In addition to the aforementioned limitations, be aware of the following modelin
 * **No support for calculated columns:** The ability to create calculated columns is disabled. This fact also means that Grouping and Clustering, which rely on calculated columns, aren't available.
 * **Additional limitations for measures:** There are other limitations imposed on the DAX expressions that can be used in measures, to reflect the level of support offered by SAP HANA. For example, it's not possible to use an aggregate function over a table.
 * **No support for defining relationships:** Only a single view can be queried within a report, and as such, there's no support for defining relationships.
-* **No Data View:** The **Data View** normally displays the detail level data in the tables. Given the nature of multi-dimensional sources, this view isn't available when using SAP HANA as a multi-dimensional source.
+* **No Table View:** The **Table View** normally displays the detail level data in the tables. Given the nature of multi-dimensional sources, this view isn't available when using SAP HANA as a multi-dimensional source.
 * **Column and measure details are fixed:** The columns and measures in the field list are determined by the underlying source and can't be modified. For example, it's not possible to delete a column, nor change its datatype. It can, however, be renamed.
 
 ### Additional visualization restrictions

@@ -23,7 +23,7 @@ Just like other Power BI Desktop tables, calculated tables can have relationship
 
 ## Create a calculated table
 
-You create calculated tables by using the **New table** feature in Report View, Data View, or Model View of Power BI Desktop.
+You create calculated tables by using the **New table** feature in Report View, Table View, or Model View of Power BI Desktop.
 
 For example, imagine you're a personnel manager who has a table of **Northwest Employees** and another table of **Southwest Employees**. You want to combine the two tables into a single table called **Western Region Employees**.
 
@@ -35,7 +35,7 @@ For example, imagine you're a personnel manager who has a table of **Northwest E
 
  :::image type="content" source="media/desktop-calculated-tables/calctables_swempl.png" alt-text="Screenshot of the Southwest employees table.":::
 
-1. In Report View, Data View, or Model View of Power BI Desktop, in the **Calculations** group select **New table**. It's a bit easier to do in **Table tools** in the Data View, because then you can immediately see your new calculated table.
+1. In Report View, Table View, or Model View of Power BI Desktop, in the **Calculations** group select **New table**. It's a bit easier to do in **Table tools** in the Table View, because then you can immediately see your new calculated table.
  :::image type="content" source="media/desktop-calculated-tables/calctables_formulabarempty.png" alt-text="Screenshot of the Power BI Desktop menu ribbon with Table tools, New table and Table view highlighted.":::
 2. Enter the following formula in the formula bar:
 

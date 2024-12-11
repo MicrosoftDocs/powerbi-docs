@@ -64,7 +64,7 @@ Once connected, select the tables you want to load into your datamart. You can a
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-13.png" alt-text="Screenshot of loading data for a datamart.":::
 
-For each table you select, a corresponding view is created in the datamart that appears in the **Object explorer** in **Data View**.
+For each table you select, a corresponding view is created in the datamart that appears in the **Object explorer** in **Table View**.
 
 
 ## Model data

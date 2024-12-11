@@ -7413,7 +7413,7 @@ The following features have been added to this update:
 
 **Data Modeling improvements:**
 
--   Resizing of columns in Data View
+-   Resizing of columns in Table View
 
 -   Moving Measures from one table to another
 
@@ -7434,7 +7434,7 @@ The following features have been added in this update:
 
 -   **Direct Report Exploration** over Analysis Services Tabular Models.
 
--   **Data Modeling:** New Data View & Relationships views.
+-   **Data Modeling:** New Table View & Relationships views.
 
 -   Publish reports to PowerBI.com, directly from Power BI Desktop.
 
