@@ -18,7 +18,10 @@ ms.date: 12/11/2024
 
 ### New reset behavior
 
-Typically, the Power BI add-in for PowerPoint refreshes data from the Power BI service without modifying the view of the report itself. This way, you can be sure to get the view of the report you expect when you open your presentation. However, since reports in the Power BI service are dynamic and often changing, sometimes you might want to pull latest changes into your presentation from the Power BI service. To do this, you used to have to remove and then re-embed the report. Now, with the enhanced **Reset** command, you can easily completely update it with the current view as it is in the Power BI service.you can choose either to reset the add-in to it's original state as initially added to the presentation, or you can completely update it with the current view as it is in the Power BI service.
+When you embed a Power BI report in your PowerPoint presentation, you want to know that it will remain stable and unaltered. For this reason, the Power BI add-in refreshes data from the Power BI service without modifying the view of the report itself. However, since reports in the Power BI service are dynamic and subject to change (such as new visuals, additional filters, etc.), you might sometimes want to pull the latest changes into your presentation. To do this, you used to have to remove the report from the presentation and then re-embed it. Now, the enhanced **Reset** command makes this easy. The command has two options:
+
+* **Sync**: Bring in the latest version of the report as it appears in the Power BI service, complete with any changes in report definition, such as new slicers, visuals, etc.
+* **Restore**: Reset the report to the state it was in when it was initially embedded into the presentation.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/reset-options.png" alt-text="Screenshot showing the Sync and Restore optoins under the Reset data option menu." border="false":::
 
