@@ -1016,7 +1016,7 @@ In categorical data mapping, you can add the algorithm to the "categories" and/o
 }
 ```
 
-In table data view mapping, apply the data reduction algorithm to the `rows` section of the Table View mapping table.
+In table data view mapping, apply the data reduction algorithm to the `rows` section of the Data View mapping table.
 
 ```json
 "dataViewMappings": [
@@ -1037,7 +1037,7 @@ In table data view mapping, apply the data reduction algorithm to the `rows` sec
 ]
 ```
 
-You can apply the data reduction algorithm to the `rows` and `columns` sections of the Table View mapping matrix.
+You can apply the data reduction algorithm to the `rows` and `columns` sections of the Data View mapping matrix.
 
 ## Related content
 
