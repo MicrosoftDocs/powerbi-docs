@@ -76,7 +76,7 @@ https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
 * **[Custom sorting](./sort-options.md#custom-sorting)** - improved custom sorting for tables
 * **[Subtotals](./total-subtotal-api.md)** - new *Subtotals Type* indicates if totals should be retrieved before or after the rest of the data
 * **[Identity filter](./identity-filter-api.md)** - filter categorical data
-* **[New format pane](./format-pane.md)** - design a custom visual that supports the new format pane design
+* **[New format pane](./format-pane-general.md)** - design a custom visual that supports the new format pane design
 * Supports Desktop October 2022
 
 ## API v4.7.0
