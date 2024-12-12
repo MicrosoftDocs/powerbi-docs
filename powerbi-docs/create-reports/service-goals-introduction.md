@@ -93,7 +93,7 @@ To connect your current value or target to data, you need build permissions for 
 
 **I shared a scorecard, but my users can’t do check-ins and add notes. Why not?**
 
-Currently, users need to have edit permissions for the scorecard to add check-ins. Updated scorecard and goal-level permissions are in the works. They allow check-in permissions without edit permissions for the scorecard.  
+Currently, users need to have edit permissions for the scorecard to add check-ins.
 
 **Why can’t I update the value as part of my check-in?**
 
@@ -115,9 +115,9 @@ Scorecards do have goal-level permissions roles. While workspace permissions giv
 
 ## Issues and limitations 
   
-- Goals don't yet support bring your own key (BYOK).
-- Goals don't yet support row-level security (RLS).
-- For now, the maximum number of subgoal levels is four.
+- Goals don't support bring your own key (BYOK).
+- Goals don't support row-level security (RLS).
+- The maximum number of subgoal levels is four.
 - Goals don't support publish-to-web.
 - Business-to-business sharing (sharing across tenants) isn't supported.
 - Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md).
