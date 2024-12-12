@@ -19,7 +19,7 @@ You can open a Teams chat about Power BI dashboards, reports, visuals, and seman
 
 ## Requirements
 
-To use the **Chat in Teams** functionality in Power BI, make sure your Power BI administrator hasn't disabled the **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Chat in Teams** button. For more information, see the [Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#enable-microsoft-teams-integration-in-the-power-bi-service) article.
+To use the **Chat in Teams** functionality in Power BI, make sure the **Share to Teams** tenant setting in the Power BI admin portal is enabled. This setting allows organizations to hide the **Chat in Teams** button. For more information, see the [Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#enable-microsoft-teams-integration-in-the-power-bi-service) article.
 
 See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including other requirements.
 
@@ -57,15 +57,15 @@ Follow these steps to share links to reports, dashboards, visuals, and semantic 
 
 ## Known issues and limitations
 
-- Users without a Power BI license or permission to access the report see a "Content is not available" message.
-- The **Chat in Teams** button might not work if your browser uses strict privacy settings. Use the **Having trouble? Try opening in a new window** option if the dialog doesn't open correctly.
-- **Chat in Teams** doesn't include a link preview.
-- Link previews and **Chat in Teams** don't give users permissions to view the item. Permissions must be managed separately.
-- The **Chat in Teams** button isn't available in visual context menus when a report author sets **More options** to **Off** for the visual.
-- For other issues, see the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article.
+* Users without a Power BI license or permission to access the report see a "Content isn't available" message.
+* The **Chat in Teams** button might not work if your browser uses strict privacy settings. Use the **Having trouble? Try opening in a new window** option if the dialog doesn't open correctly.
+* **Chat in Teams** doesn't include a link preview.
+* Link previews and **Chat in Teams** don't give users permissions to view the item. Permissions must be managed separately.
+* The **Chat in Teams** button isn't available in visual context menus when a report author sets **More options** to **Off** for the visual.
+* For other issues, see the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article.
 
 ## Related content
 
-- [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
+* [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
 
 Questions? [Try asking the Power BI Community](https://community.powerbi.com/).
