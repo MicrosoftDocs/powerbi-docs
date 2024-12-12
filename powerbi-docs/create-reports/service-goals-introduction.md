@@ -85,7 +85,7 @@ There are a few reasons why your goal might not be getting updated:
 
 - It’s a manual goal: Manual goals aren't updated automatically as they're not connected to a data source with regular refreshes. To create a history for a manual goal, do regular check-ins.
 - You don't have scheduled refresh for the semantic model: Goal values are only updated as often as the semantic model is refreshed. If you don’t have a scheduled refresh on your semantic model, you don't see any updates in the goal value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
-- goals don’t get updated if they're created from a push dataset. 
+- Goals don’t get updated if they're created from a push dataset. 
 
 **I'm trying to create a goal but I can’t connect to a report. Why do I see a yellow warning icon?**
 
