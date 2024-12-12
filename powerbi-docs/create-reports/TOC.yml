@@ -558,7 +558,7 @@
         href: service-goals-check-in.md        
       - name: Create email subscriptions for metrics
         href: service-goals-subscriptions.md        
-      - name: follow your goals
+      - name: Follow your goals
         href: service-goals-follow.md        
       - name: Set metric-level permissions
         href: service-goals-set-permissions.md
