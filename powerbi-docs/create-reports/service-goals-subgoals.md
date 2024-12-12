@@ -87,7 +87,7 @@ You might want to preserve historical values if you're switching goal type from 
 ### Rollups considerations
 
 - Rollups take place from the day they're set up moving forward. They don't remove, recalculate, or override historical data with retroactive rollup values, in almost all scenarios.
-- One scenario where connected historical data is deleted is if the person creating the rollup isn't* the goal connection owner. To preserve the history, ensure the goal connection owner is the same person as the rollup creator.
+- One scenario where connected historical data is deleted is if the person creating the rollup *isn't* the goal connection owner. To preserve the history, ensure the goal connection owner is the same person as the rollup creator.
 - If a scorecard author changes a goal from a rollup to a connected goal and they bring in the history via report connection, the report history overrides historical rollup values.
 - New rollup types calculate with the new aggregation moving forward, but don't replace the history.
 - Rollups always show the same aggregation value of all subgoals, regardless of goal level permissions. So, if person A only has view access to 3 out of 5 subgoals, they still see the same parent goal value as someone who has access to all subgoals.  
