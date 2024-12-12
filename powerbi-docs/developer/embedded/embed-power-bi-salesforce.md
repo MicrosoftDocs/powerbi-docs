@@ -20,7 +20,7 @@ This article links to two samples that show how to develop by using Power BI emb
 
 You must be familiar with both Power BI and Salesforce. It's helpful to have experience developing with Power BI embedded analytics and be familiar with the Salesforce environment, preferably with the Salesforce Developer Experience (SFDX).
 
-## Embed Power BI content in Salesforce
+## How to embed Power BI content in Salesforce
 
 ### [Embed for your customers solution](#tab/embed-for-your-customerslution)
 
@@ -66,6 +66,10 @@ To embed Power BI content that uses the embed for your organization solution, fo
 
 ---
 
+## Pass parameters to Power BI reports
+
+To pass parameters to Power BI reports, use the [Power BI JavaScript APIs](/javascript/api/overview/powerbi/). Use the [Control report filters API](/javascript/api/overview/powerbi/control-report-filters) to filter the Salesforce data and pass the results to the Power BI report.
+
 ## Related content
 
 * [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
@@ -73,3 +77,5 @@ To embed Power BI content that uses the embed for your organization solution, fo
 * [Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)
 
 * [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/)
+
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/)
