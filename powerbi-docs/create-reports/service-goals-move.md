@@ -65,7 +65,7 @@ Many organizations have template scorecards that different departments or busine
 
     :::image type="content" source="media/service-goals-move/power-bi-goals-move-scorecard.png" alt-text="Screenshot of move scorecard dialog.":::
 
-    When you copy a scorecard, you can include or exclude check-in history. So, you can reuse the same scorecard for a newer time period (for example, for fiscal year scorecards) so you don't have to do it all over again.
+    When you copy a scorecard, you can include or exclude check-in history. So you can reuse the same scorecard for a newer time period (for example, for fiscal year scorecards) so you don't have to do it all over again.
 
     :::image type="content" source="media/service-goals-move/power-bi-goals-copy-scorecard.png" alt-text="Screenshot of copy the scorecard dialog.":::
 
