@@ -253,7 +253,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - Power BI admins can disable the export of data.
 
-- If a dynamic format string is applied to a measure, the exported data doesn't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure and visual level formatting isn't preserved in the export.
+- Dynamic Formatting is not supported with this feature as the exported data doesn't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure isn't preserved in Excel.
 
 - Whether [model level formatting](../create-reports/desktop-custom-format-strings.md#add-a-model-level-format-string) or [visual level formatting](../create-reports/desktop-custom-format-strings.md#add-a-visual-level-format-string) is preserved in an export depends on the type of export:
 
@@ -268,5 +268,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 - When using [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers), export data from a visual doesn't work in the following cases:
     - The semantic model of the embedded report is a composite model with direct query connection to another semantic model, and the embedding is done using a Service Principal.
     - The semantic model of the embedded report has at least one data source with Single-Sign-On enabled, and the embed token contains a [datasourceIdentity](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) [embed token](/rest/api/power-bi/embed-token/generate-token).
+
+- Long running queries through a Gateway may timeout with the error "Executing the query for export data operation resulted in an error".
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

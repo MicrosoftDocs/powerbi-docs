@@ -120,6 +120,8 @@
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page
           href: copilot-create-narrative.md
+        - name: Create a Copilot summary from the Teams link
+          href: copilot-pane-summarize-content-teams.md
         - name: Summarize a report in the Copilot pane
           href: copilot-pane-summarize-content.md
         - name: Write prompts for Copilot narratives
@@ -536,48 +538,48 @@
         href: view-explore-metrics.md
       - name: "Use and monitor metrics"
         href: use-monitor-metrics.md
+      - name: Metrics and Power Automate
+        href: service-metrics-power-automate.md
     - name: Scorecards
       items: 
-      - name: Get started with metrics
+      - name: Get started with goals
         href: service-goals-introduction.md
-      - name: Create connected metrics
+      - name: Create connected goals
         href: service-goals-create-connected.md
-      - name: Create scorecards and manual metrics
+      - name: Create scorecards and manual goals
         href: service-goals-create.md
-      - name: Create submetrics
+      - name: Create subgoals
         href: service-metrics-submetrics.md
-      - name: Create linked metrics
-        href: service-metrics-linked-metrics.md
+      - name: Create linked goals
+        href: service-goals-linked-goals.md
       - name: Create automated status rules
-        href: service-metrics-status-rules.md
+        href: service-goals-status-rules.md
       - name: Create custom statuses
         href: service-goals-custom-status.md 
-      - name: Stay on top of your metrics
+      - name: Stay on top of your goals
         href: service-goals-check-in.md        
-      - name: Create email subscriptions for metrics
+      - name: Create email subscriptions for goals
         href: service-metrics-subscriptions.md        
-      - name: Follow your metrics
+      - name: Follow your goals
         href: service-metrics-follow.md        
-      - name: Set metric-level permissions
+      - name: Set goal-level permissions
         href: service-goals-set-permissions.md
-      - name: Arrange metrics and columns in scorecards
+      - name: Arrange goals and columns in scorecards
         href: service-goals-move.md
-      - name: Create linked metrics
-        href: service-metrics-linked-metrics.md
+      - name: Create linked goals
+        href: service-goals-linked-goals.md
       - name: Create automated status rules
-        href: service-metrics-status-rules.md
-      - name: Metrics and Power Automate
-        href: service-goals-power-automate.md
+        href: service-goals-status-rules.md
       - name: Create and add scorecards to reports
         href: ../visuals/power-bi-visualization-scorecard-visual.md 
       - name: Hierarchies in scorecards
         items: 
         - name: Get started with hierarchies
-          href: service-metrics-get-started-hierarchies.md 
+          href: service-goals-get-started-hierarchies.md 
         - name: Scenarios for using hierarchies
-          href: service-metrics-hierarchies-scenarios.md 
+          href: service-goals-hierarchies-scenarios.md 
         - name: View hierarchies in scorecards
-          href: service-metrics-view-hierarchies.md 
+          href: service-goals-view-hierarchies.md 
   - name: Dashboards
     items: 
     - name: Intro to dashboards
@@ -848,8 +850,10 @@
           href: ../paginated-reports/report-design/add-remove-margins-from-chart-report-builder.md
         - name: Add empty points to a chart
           href: ../paginated-reports/report-design/visualizations/add-empty-points-chart-report-builder.md
-        - name: Add a moving average to a chart
+        - name: About adding a moving average to a chart
           href: ../paginated-reports/report-design/visualizations/add-moving-average-chart-report-builder.md
+        - name: Add a calculated moving average to a series on a chart
+          href: ../paginated-reports/report-design/visualizations/add-calculated-moving-average-chart-report-builder.md
         - name: Add or delete an indicator in a report
           href: ../paginated-reports/report-design/visualizations/add-delete-indicator-report-builder.md
         - name: Show ToolTips on a series

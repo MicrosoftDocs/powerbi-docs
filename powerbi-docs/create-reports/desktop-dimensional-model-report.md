@@ -244,9 +244,9 @@ Now your final data model is ready.
 
 Writing *measures* in the DAX formula language is super powerful for data modeling. There's lots to [learn about DAX in the Power BI documentation](/dax/). For now, let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date. This measure uses the [USERELATIONSHIP function](/dax/userelationship-function-dax) to activate the relationship between Sales and Date on DueDate for the context of the measure. It then uses [CALCULATE](/dax/calculate-function-dax) to sum the Sales Amount in that context.
 
-1. Select Data View on the left. 
+1. Select Table view on the left. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/desktop-open-data-view.png" alt-text="Screenshot of Select Data view on the left.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/desktop-open-data-view.png" alt-text="Screenshot of Select Table view on the left.":::
 
 1. Select the Sales table in the Fields list.
 

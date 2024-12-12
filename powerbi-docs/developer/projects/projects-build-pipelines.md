@@ -43,12 +43,12 @@ The following diagram illustrates the end-to-end scenario with two development w
 
 >[!NOTE]
 >
->In this example, the pipeline uses two open-source community tools that enable a developer to apply (customizable) best practice rules to the metadata of semantic models and reports within a Power BI Project folder:
+> In this example, the pipeline uses two open-source community tools that enable a developer to apply (customizable) best practice rules to the metadata of semantic models and reports within a Power BI Project folder:
 >
->* [Tabular Editor](https://github.com/TabularEditor/TabularEditor) and [Best Practice Rules](https://github.com/microsoft/Analysis-Services/tree/master/BestPracticeRules)
->* [PBI Inspector](https://github.com/NatVanG/PBI-Inspector)
+> * [Tabular Editor](https://github.com/TabularEditor/TabularEditor) and [Best Practice Rules](https://github.com/microsoft/Analysis-Services/tree/master/BestPracticeRules)
+> * [PBI Inspector](https://github.com/NatVanG/PBI-Inspector)
 >
->An approach similar to the example in this article would apply to other community tools. This article doesn't delve into the specifics of the community tools mentioned previously nor rule creation and editing. For in-depth information on these topics, refer to the links provided. The focus of this article is on the *process* of establishing a quality gate between source control and Fabric Workspace. It's important to note that the referred community tools are developed by third-party contributors, and Microsoft does not offer support or documentation for them.
+> An approach similar to the example in this article would apply to other community tools. This article doesn't delve into the specifics of the community tools, nor rule creation and editing. For in-depth information on these topics, refer to the links provided. The focus of this article is on the *process* of establishing a quality gate between source control and a Fabric Workspace. It's important to note that the referred community tools are developed by third-party contributors, and Microsoft doesn't offer support or documentation for them.
 
 ## Step 1 - Connect Fabric workspace to Azure DevOps
 
@@ -56,7 +56,7 @@ The following diagram illustrates the end-to-end scenario with two development w
 
 :::image type="content" source="./media/projects-build-pipelines/connect.png" alt-text="Screenshot showing the Git connection to DevOps.":::
 
-When Fabric Git integration finishes exporting your workspace items, your Azure DevOps branch will contain a folder for each item in your workspace:
+When Fabric Git integration finishes exporting your workspace items, your Azure DevOps branch contains a folder for each item in your workspace:
 
 :::image type="content" source="./media/projects-build-pipelines/connected-branch.png" alt-text="Screenshot showing the Azure DevOps branch with folders for different workspace items.":::
 
@@ -68,7 +68,7 @@ To create a new pipeline:
 
    :::image type="content" source="./media/projects-build-pipelines/create-pipeline.png" alt-text="Screenshot showing how to create a pipeline.":::
 
-1. Select **Azure Repos Git** and select the first repository (the same repository that's connected to the Fabric workspace):
+1. Select **Azure Repos Git** and select the first repository (the repository connected to the Fabric workspace):
 
    :::image type="content" source="./media/projects-build-pipelines/code.png" alt-text="Screenshot showing Azure repo Git selected as the code source for the pipeline.":::
 
@@ -171,4 +171,8 @@ If there's a high-severity error in one of the rules, you can't finalize the pul
 
 :::image type="content" source="./media/projects-build-pipelines/complete-pull-request.png" alt-text="Screenshot completed pull request.":::
 
-Learn more about PBIP and Fabric Git Integration in [blog post](https://powerbi.microsoft.com/blog/deep-dive-into-power-bi-desktop-developer-mode-preview/).
+## Related content
+
+* For information about synchronizing your workspace with the Git branch, including updating your workspace and committing changes to Git, see [Get started with Git integration](/fabric/cicd/git-integration/git-get-started).
+
+* For tips about different options for building CI/CD processes in Fabric based on common customer scenarios, see [Choose the best Fabric CI/CD workflow option for you](/fabric/cicd/manage-deployment).

@@ -26,6 +26,36 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs//create-reports/service-metrics-get-started-hierarchies.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-get-started-hierarchies",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs//create-reports/service-metrics-hierarchies-scenarios.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-hierarchies-scenarios",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs//create-reports/service-metrics-linked-metrics.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-linked-goals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs//create-reports/service-metrics-status-rules.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-status-rules",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs//create-reports/service-metrics-view-hierarchies.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-view-hierarchies",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs//create-reports/service-goals-power-automate.md",
+            "redirect_url": "/power-bi/create-reports/service-metrics-power-automate",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false
@@ -2467,6 +2497,26 @@
         {
             "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-copy-refresh-access.md",
             "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerapps-integration-about.md",
+            "redirect_url": "/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerapps-integration-considerations.md",
+            "redirect_url": "/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerapps-integration-enable.md",
+            "redirect_url": "/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerapps-integration-using.md",
+            "redirect_url": "/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page",
             "redirect_document_id": false
         },
         {

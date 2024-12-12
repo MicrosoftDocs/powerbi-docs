@@ -27,6 +27,8 @@ This article provides an overview of the Copilot capabilities for Power BI.
 >
 > Copilot isn't yet supported for sovereign clouds due to GPU availability.
 
+See the article [Create reports in the Power BI service with Copilot](copilot-create-report-service.md) for more details.  
+
 ## Before you start using Copilot
 
 For optimized results using Copilot for Power BI, you may need to do some clean-up work on your semantic model. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model so that Copilot can get insights from it.
@@ -35,6 +37,14 @@ For answers to common questions related to data security and privacy to help you
 
 - [Overview of Copilot for Fabric (preview)](/fabric/get-started/copilot-fabric-overview) 
 - [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
+
+## Copilot increases clarity and context awareness
+
+To help you initially build more valuable reports, Copilot can now engage with you to gather more details before creating a page. This ensures that Copilot has a comprehensive understanding of your needs to create a more relevant page for you. Copilot can also offer recommendations on fields and measures to use in a report.  
+
+### View the page outline for increased transparency  
+
+After you create a page with Copilot, you see an outline in the Copilot chat pane. Review the outline to ensure that the page meets your needs. The outline also adds transparency so you can see which data fields Copilot is using to build out the report.
 
 ## Access Copilot in the Power BI service
 

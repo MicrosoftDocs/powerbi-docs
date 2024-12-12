@@ -116,7 +116,7 @@ Create a relationship between the **Calendar** table and the fact tables, such a
 
 After you create the required relationships with the **Calendar** table, create a new field parameter for each of the two calendar translations tables. Creating a field parameter for a calendar translation table is just like creating the field parameters for product names and category names shown earlier.
 
-:::image type="content" source="./media/data-translation-calendar-table/translate-month-name.png" alt-text="Screenshot shows Data view of the Translated Month Names table." lightbox="./media/data-translation-calendar-table/translate-month-name.png":::
+:::image type="content" source="./media/data-translation-calendar-table/translate-month-name.png" alt-text="Screenshot shows Table view of the Translated Month Names table." lightbox="./media/data-translation-calendar-table/translate-month-name.png":::
 
 Add a relationship between these new field parameter tables and the **Languages** table to ensure the language filtering strategy works as expected.
 

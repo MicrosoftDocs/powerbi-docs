@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/03/2024
+ms.date: 12/10/2024
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -364,7 +364,7 @@ The following **limitations** apply when working with DirectQuery for Power BI s
     * Data imported from Excel or CSV files on the Service
     * Usage metrics
     * Semantic models stored in “My workspace”
-* Using Power BI Embedded with semantic models that include a DirectQuery connection to an Analysis Services model isn't currently supported.
+* When using Power BI Embedded with semantic models that include a DirectQuery connection to an Analysis Services model, you must include the source semantic model IDs and AAS data source identity when using [Generate Token](/rest/api/power-bi/embed-token/generate-token).
 * Publishing a report to web using the publish to web feature isn't supported.
 * Calculation groups on remote sources aren't supported, with undefined query results.
 - Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication are supported in the Power BI service with an assigned [shareable cloud connection](../connect-data/service-create-share-cloud-data-sources.md) and / or [granular access control](../connect-data/service-create-share-cloud-data-sources.md#granular-access-control).
