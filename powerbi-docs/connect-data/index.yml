@@ -27,7 +27,7 @@ landingContent:
         links:
           - text: Data sources
             url: desktop-data-sources.md
-          - text: Data view in Power BI Desktop
+          - text: Table view in Power BI Desktop
             url: desktop-data-view.md
           - text: New name for Power BI datasets
             url: service-datasets-rename.md

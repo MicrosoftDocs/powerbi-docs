@@ -253,7 +253,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - Power BI admins can disable the export of data.
 
-- If a dynamic format string is applied to a measure, the exported data doesn't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure and visual level formatting isn't preserved in the export.
+- Dynamic Formatting is not supported with this feature as the exported data doesn't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure isn't preserved in Excel.
 
 - Whether [model level formatting](../create-reports/desktop-custom-format-strings.md#add-a-model-level-format-string) or [visual level formatting](../create-reports/desktop-custom-format-strings.md#add-a-visual-level-format-string) is preserved in an export depends on the type of export:
 

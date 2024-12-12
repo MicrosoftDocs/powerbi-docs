@@ -8,21 +8,21 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/23/2024
+ms.date: 11/30/2024
 ms.custom: sample-salesandreturns
-#customer intent: As a Power BI user I want ot learn how to customize the statuses in Power BI.
+#customer intent: As a Power BI user I want ot learn how to customize the statuses of my scorecard goals in Power BI.
 ---
 # Customize statuses on your Power BI scorecard
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Statuses are an integral part of metric tracking. In some scenarios the statuses that come with a scorecard aren't right for your organization’s needs. You may want to customize the statuses to reflect your organization’s terminology.
+Statuses are an integral part of goal tracking. In some scenarios the statuses that come with a scorecard aren't right for your organization’s needs. You may want to customize the statuses to reflect your organization’s terminology.
 
-:::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-1.png" alt-text="Screenshot of A view of metrics showing customized statuses in the status column.":::
+:::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-1.png" alt-text="Screenshot of A view of goals showing customized statuses in the status column.":::
 
-## Start customizing
+## Customize your scorecard's status
 
-When you open a scorecard in edit mode, there are two entry points to start customizing your statuses.  
+When you open a scorecard in edit mode, there are two entry points to start customizing your statuses: 
 
 * Select the **Settings** gear icon, or
 * Select the **Statuses** section of the **Edit scorecard settings** pane.
@@ -36,7 +36,7 @@ You can also get to this area by editing a metric inline.
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-3.png" alt-text="Screenshot of A view of the entry point when editing a metric in-line, at the bottom of the status dropdown.":::
 
-## Modify statuses
+## Change your scorecard's statuses
 
 Once you’re in the **Manage statuses** section, you can take a few different actions. You can create new statuses, rename existing statuses, and change the color associated with the status.  
 
@@ -48,7 +48,7 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-4.png" alt-text="Screenshot of a status being reordered in the edit status pane.":::
 
-    By reordering the statuses, you're specifying the order of priority.  Priority order comes in handy back on the scorecard. You have the option to sort the metrics in order of status priority.
+    By reordering the statuses, you're specifying the order of priority.  Priority order comes in handy back on the scorecard. You have the option to sort the goals in order of status priority.
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-5.png" alt-text="Screenshot of A view of how you can sort the status column by ascending or descending priority.":::
 
@@ -62,13 +62,13 @@ If a metric uses a status that is deleted, we preserve the metric’s deleted st
 
 :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-deleted.png" alt-text="Screenshot of A view of the edit status pane open.":::
 
-You can customize the statuses to the terminology you use every day in your organization. You ensure that everyone in your team easily understands and make it easier than ever for metrics to work seamlessly for your organization.
+You can customize the statuses to the terminology you use every day in your organization. You ensure that everyone in your team easily understands and make it easier than ever for goals to work seamlessly for your organization.
 
 ## Related content
 
-* [Get started with metrics in Power BI](service-goals-introduction.md)
-* [Create scorecards and manual metrics in Power BI](service-goals-create.md)
-* [Create connected metrics in Power BI](service-goals-create-connected.md)
-* [Stay on top of your metrics in Power BI](service-goals-check-in.md)
+* [Get started with goals in Power BI](service-goals-introduction.md)
+* [Create scorecards and manual goals in Power BI](service-goals-create.md)
+* [Create connected goals in Power BI](service-goals-create-connected.md)
+* [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
