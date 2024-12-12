@@ -25,7 +25,7 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 
 You can also connect metrics to an existing report visual in Power BI. See [Create connected metrics](service-goals-create-connected.md) for details. 
 
-:::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Screenshot of Northwind scorecard with metrics and submetrics.":::
+:::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Screenshot of Northwind scorecard with metrics and submetrics." lightbox="media/service-goals-create/northwind-scorecard.png":::
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
 ## Step 3 (Optional): Create submetrics 
 
-You can also define one or more submetrics for your metric. Like their parent metrics, submetrics can be either connected or set manually. See [Create submetrics](service-metrics-submetrics.md) for details.
+You can also define one or more submetrics for your metric. Like their parent metrics, submetrics can be either connected or set manually. See [Create submetrics](service-goals-subgoals.md) for details.
 
 ## Step 4 (Optional): Update the metric tracking cycle 
 
