@@ -16,7 +16,7 @@ A *formatting settings group* is the secondary-level properties grouping contain
 
 ## Formatting settings group implementation
 
-In this example, we show how to build a custom visual formatting model with one [composite card](formatting-model-card.md#composite-formatting-card-implementation) and two *groups* using [formattingmodel util](utils-formatting-model.md).
+In this example, we show how to build a custom visual formatting model with one [composite card](formatting-model-card.md?tabs=compositeCard#example-formatting-settings-card-implementation) and two *groups* using [formattingmodel util](utils-formatting-model.md).
 The card has two groups:
 
 * **LabelsSettingsGroup** with two simple properties
