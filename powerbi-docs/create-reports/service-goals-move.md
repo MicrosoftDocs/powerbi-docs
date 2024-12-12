@@ -17,9 +17,9 @@ ms.date: 12/10/2024
 
 In some scenarios, you can hide a column, or put the columns in a different order. You can also reorder the goals in a scorecard, make one goal a subgoal of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make the following changes to optimize the scorecard for your audience:
 
-- move goals and scorecards
-- decide which columns that your scorecard users see
-- decide the order columns are in
+- Move goals and scorecards
+- Decide which columns that your scorecard users see
+- Decide the order columns are in
 
 :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
 
