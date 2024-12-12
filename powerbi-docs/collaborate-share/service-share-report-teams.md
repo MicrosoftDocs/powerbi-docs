@@ -35,7 +35,7 @@ Follow these steps to share links to reports, dashboards, visuals, and semantic 
 
    * **Chat in Teams** in the context menu for a single visual:
 
-       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png" alt-text="Screenshot that shows the Chat in Teams button in a visual contextual menu.":::
+       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png" alt-text="Screenshot shows the Chat in Teams button in a visual contextual menu.":::
 
    * **Chat in Teams**  in the action bar of an app.
 
