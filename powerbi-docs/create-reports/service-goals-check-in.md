@@ -84,7 +84,6 @@ The scorecard filtered to _Premium_.
 
 1. Select **Save**. 
 
-
 ## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
