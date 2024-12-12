@@ -32,6 +32,11 @@
     - name: "Copilot DAX query features"
       href: dax-query-copilot-features.md
     - name: "Use Copilot to write and explain DAX queries"
+    - name: "Quick measure suggestions"
+      href: quick-measure-suggestions.md
+    - name: "Copilot DAX query features"
+      href: dax-query-copilot-features.md
+    - name: "Use Copilot to write and explain DAX queries"
       href: dax-query-copilot-create.md
     - name: Use Copilot to create measure descriptions
       href: desktop-measure-copilot-descriptions.md
@@ -101,6 +106,8 @@
       href: dataflows/dataflows-streaming.md
     - name: "Developing dataflows solutions"
       href: dataflows/dataflows-develop-solutions.md      
+    - name: "Connect to data created by Power Platform dataflows in Power BI Desktop"
+      href: desktop-connect-dataflows.md      
   - name: Log analytics
     items: 
     - name: "Using Azure Log Analytics in Power BI"

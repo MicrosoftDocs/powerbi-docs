@@ -28,7 +28,7 @@ For connected goals, these status rules are refreshed every time the data in you
 
 1. In **Edit** mode for the scorecard, select **More options (...)** > **See details** next to the metric.
 
-    :::image type="content" source="media/service-metrics-submetrics/metrics-more-options-see-details.png" alt-text="Screenshot showing selecting More options, then See details.":::
+    :::image type="content" source="media/service-goals-subgoals/metrics-more-options-see-details.png" alt-text="Screenshot showing selecting More options, then See details.":::
 
 1. On the **Status rules** tab, select **New rule**.
 
