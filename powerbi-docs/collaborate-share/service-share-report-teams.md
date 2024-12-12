@@ -37,13 +37,17 @@ Follow these steps to share links to reports, dashboards, visuals, and semantic 
 
        :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png" alt-text="Screenshot that shows the Chat in Teams button in a visual contextual menu.":::
 
+   * **Chat in Teams**  in the action bar of an app.
+
+       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button-apps.png" alt-text="Screenshot that shows the Chat in Teams button in a visual contextual menu.":::
+
 1. In the **Share to Microsoft Teams** dialog, select the person, group, or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
 
-    :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-dialog.png" alt-text="Screenshot that shows the Share to Microsoft Teams dialog.":::
+    :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button-pressed.png" alt-text="Screenshot that shows the Share to Microsoft Teams dialog.":::
 
 1. Select **Share** to send the link. The link is added to existing conversations or starts a new chat.
 
-    :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-deep-link.png" alt-text="Screenshot that shows the Microsoft Teams conversation with a link to a Power BI item.":::
+    :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-dialog.png" alt-text="Screenshot that shows the action bar button for apps.":::
 
 1. Select the link to open the item in the Power BI service.
 
