@@ -101,6 +101,8 @@
       href: dataflows/dataflows-streaming.md
     - name: "Developing dataflows solutions"
       href: dataflows/dataflows-develop-solutions.md      
+    - name: "Connect to data created by Power Platform dataflows in Power BI Desktop"
+      href: desktop-connect-dataflows.md      
   - name: Log analytics
     items: 
     - name: "Using Azure Log Analytics in Power BI"
