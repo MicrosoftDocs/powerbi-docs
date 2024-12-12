@@ -65,7 +65,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 1. In the Table view, right-click a table in the **Data pane** and select **Incremental refresh**.
 
-    :::image type="content" source="media/incremental-refresh-configure/incremental-refresh-context-menu.png" alt-text="Data view showing Table context menu with Incremental refresh selected.":::
+    :::image type="content" source="media/incremental-refresh-configure/incremental-refresh-context-menu.png" alt-text="Table view showing Table context menu with Incremental refresh selected.":::
 
 1. In **Incremental refresh and real-time data** > **Select table**, verify or select the table. The default value of the **Select table** listbox is the table you selected in the Table view.
 

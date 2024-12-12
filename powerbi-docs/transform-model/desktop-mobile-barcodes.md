@@ -18,11 +18,11 @@ In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) i
 
 Assuming you have a report that includes barcodes:
 
-1. In Power BI Desktop, switch to Data view.
+1. In Power BI Desktop, switch to Table view.
 2. Select the column that contains the barcode data. See the list of [supported barcode formats](#supported-barcode-formats) in the following section.
 3. On the **Column tools** tab, select **Data category** > **Barcode**.
 
-    :::image type="content" source="media/desktop-mobile-barcodes/power-bi-desktop-barcode.png" alt-text="Screenshot of Power BI Desktop showing the Column tools tab in Data view. The Data category dropdown is selected, and Barcode is highlighted.":::
+    :::image type="content" source="media/desktop-mobile-barcodes/power-bi-desktop-barcode.png" alt-text="Screenshot of Power BI Desktop showing the Column tools tab in Table view. The Data category dropdown is selected, and Barcode is highlighted.":::
 
     >[!WARNING]
     >Do not categorize more than one column across all data tables in a report as **Barcode**. The mobile apps support barcode filtering only for reports that have only one barcode column across all report data tables. If a report has more than one barcode column, no filtering takes place.

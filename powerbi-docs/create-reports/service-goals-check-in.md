@@ -9,7 +9,8 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Stay on top of your goals
 ms.topic: how-to
-ms.date: 11/30/2024
+ms.date: 12/11/2024
+
 #customer intent: As a Power BI user I want to learn how to show the follow and keep track of my goals on Power BI scorecards.
 ---
 
@@ -17,7 +18,7 @@ ms.date: 11/30/2024
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics in Power BI let your customers curate their goals and track them against key business objectives, in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, make notes on important events. These features are covered in this article. You can also [follow your goals](service-metrics-follow.md), to be notified when they change.
+Metrics in Power BI let your customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events. These features are covered in this article. You can also [follow your goals](service-goals-follow.md), to be notified when they change.
 
 ## View metric details
 
@@ -84,7 +85,6 @@ The scorecard filtered to _Premium_.
     :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-connected.png" alt-text="Screenshot of Check-in for a connected metric.":::
 
 1. Select **Save**. 
-
 
 ## Related content
 
