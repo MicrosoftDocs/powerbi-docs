@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Stay on top of your metrics
 ms.topic: how-to
-ms.date: 02/16/2023
+ms.date: 12/11/2024
 ---
 
 # Stay on top of your metrics
