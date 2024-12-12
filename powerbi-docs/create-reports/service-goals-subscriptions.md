@@ -58,7 +58,7 @@ You can see all the subscriptions for a scorecard.
 
 1. In **Settings**, select **Subscriptions**.
 
-    :::image type="content" source="media/service-goals-subscriptions/manage-scorecard-subscriptions.png" alt-text="Screenshot showing Subscriptions":::
+    :::image type="content" source="media/service-goals-subscriptions/manage-scorecard-subscriptions.png" alt-text="Screenshot showing Subscriptions.":::
 
 ## Considerations and limitations
 
