@@ -30,6 +30,11 @@
     - name: "Copilot DAX query features"
       href: dax-query-copilot-features.md
     - name: "Use Copilot to write and explain DAX queries"
+    - name: "Quick measure suggestions"
+      href: quick-measure-suggestions.md
+    - name: "Copilot DAX query features"
+      href: dax-query-copilot-features.md
+    - name: "Use Copilot to write and explain DAX queries"
       href: dax-query-copilot-create.md
     - name: Use Copilot to create measure descriptions
       href: desktop-measure-copilot-descriptions.md
