@@ -12,7 +12,6 @@ ms.topic: how-to
 ms.date: 12/10/2024
 #customer intent: As a Power BI user I want to learn how to follow my goals in my scorecards in the Power BI Service.
 ---
-
 # Follow your goals
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
