@@ -77,7 +77,7 @@ Workspace roles are separate from goal level permissions roles. Workspace permis
 
 ## More information
 
-The support for automatic roles based on goal-level permissions (full row-level security (RLS) support) is coming, but isn't yet available.
+The support for automatic roles based on goal-level permissions (full row-level security (RLS) support) isn't yet available.
 
 ## Related content
 
