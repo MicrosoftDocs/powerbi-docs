@@ -26,6 +26,8 @@ If you have an unsupported agreement, you can use Exports to save the cost data 
 
 The Microsoft Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next sign-in. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) at the billing account or billing profile levels for Microsoft Customer Agreements. 
 
+>[!NOTE]
+> The Cost Management connector for Power BI supports up to an estimated maximum of 5 $million of raw cost details. To evaluate alternatives based on you needs, review the [Choose a Power BI data source](/cloud-computing/finops/toolkit/power-bi/help-me-choose) article.
 
 ## Connect using Microsoft Cost Management
 
