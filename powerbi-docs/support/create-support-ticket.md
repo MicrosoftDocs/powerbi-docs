@@ -93,10 +93,7 @@ The steps you take to create a support ticket vary, depending on your role.
    
 1. If the guidance doesn't resolve your issue, scroll down, select **Next**, and then select your support plan. You can select either using the "Microsoft Fabric Subscription" or your Unified or Premier support plan. 
 
-
-
-
-![Screenshot of selecting a support plan.](media/create-support-ticket/selecting-support-plan.png)
+   ![Screenshot of selecting a support plan.](media/create-support-ticket/selecting-support-plan.png)
 
 1. If you have a **Unified or Premier** support plan that doesn't appear under **Support plan**, select **Add new contract** and fill in the fields. If you don't know your access or contract ID or are interested in purchasing a [Unified support contract](/power-bi/support/service-support-options), contact your service admin or Customer Success Account Manager (CSAM).
 
