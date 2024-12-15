@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 12/15/2024
 
 LocalizationGroup: Premium
 ---
@@ -31,7 +31,7 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - [Power BI metrics](../create-reports/service-goals-introduction.md) don't currently support BYOK
 
 
-BYOK applies only to semantic models. Push semantic models, Excel files, and CSV files that users can upload to the service aren't encrypted using your own key. To identify which items are stored in your workspaces, use the following PowerShell command:
+BYOK applies only to semantic models. Push semantic models, Excel files, and CSV files that users can upload to the service aren't encrypted using your own key. PowerBI users can use [Customer Key](/purview/customer-key-set-up) for Excel workbooks stored in SharePoint and OneDrive. To identify which items are stored in your workspaces, use the following PowerShell command:
 
 `PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All`
 
