@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 11/15/2023
+ms.date: 12/16/2024
 ---
 
 # Embed a report web part in SharePoint Online
@@ -172,6 +172,8 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
 * The classic SharePoint Server isn't supported with this web part.
 
 * [URL filters](service-url-filters.md) aren't supported with the SharePoint Online web part.
+
+* You can't view or access Power BI Apps embedded in a SharedPoint site page using a Power BI web part. To access the embedded Power BI report, access the app first in Power BI service before accessing it in the SharePoint site page.
 
 ## Related content
 
