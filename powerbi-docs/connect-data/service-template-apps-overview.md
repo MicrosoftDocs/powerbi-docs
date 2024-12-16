@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 07/22/2024
+ms.date: 12/16/2024
 ---
 
 # What are Power BI template apps?
@@ -119,6 +119,7 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Sovereign clouds | Template apps aren't available in sovereign clouds. |
 | Composite models | Composite models shouldn't be used in the app builder workspace. App installers can use composite models after installing the app. |
 | Large semantic model storage format | Large semantic model storage format isn't supported for template apps. |
+| Mobile layout | Partial support. Mobile layout position of elements is supported. Mobile layout changes to other properties, such as color, are not supported. |
 
 ## Support
 
