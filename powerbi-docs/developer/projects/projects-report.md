@@ -110,10 +110,10 @@ Example using `byConnection`:
   "datasetReference": {
     "byPath": null,
     "byConnection": {
-      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/WorkpaceName;Initial Catalog=SemanticModelName;Integrated Security=ClaimsToken",
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName];Initial Catalog=[SemanticModelName];Integrated Security=ClaimsToken",
       "pbiServiceModelId": null,
       "pbiModelVirtualServerName": "sobe_wowvirtualserver",
-      "pbiModelDatabaseName": "e244efd3-e253-4390-be28-6be45d9da47e",
+      "pbiModelDatabaseName": "[Semantic Model Id]",
       "connectionType": "pbiServiceXmlaStyleLive",
       "name": "EntityDataSource"
     }
