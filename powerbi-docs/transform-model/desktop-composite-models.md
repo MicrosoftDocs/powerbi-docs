@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 12/10/2024
+ms.date: 12/16/2024
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -468,12 +468,9 @@ If you don't specify a deduplication rule, or the deduplication rules you specif
 
 ## XMLA modifications and composite models
 
-When changing a semantic model using XMLA, you must update the *ChangedProperties* and *PBI_RemovedChildren* collection for the changed object to include any modified or removed properties. If you don't perform that update, Power BI modeling tools might overwrite any changes the next time the schema is synchronized with its associated Lakehouse.
+When changing a semantic model using XMLA, you must update the *ChangedProperties* and *PBI_RemovedChildren* collection for the changed object to include any modified or removed properties. If you don't perform that update, Power BI modeling tools might overwrite any changes the next time the schema is synchronized with the data source.
 
-The supported models for changing a semantic model using XMLA are the following:
-
-* Table/Column rename (*ChangeProperty* = name)
-* Remove table (add table to *PBI_RemovedChildren* annotation in the query expression)
+Learn more about semantic model object lineage tags in the [lineage tags for Power BI semantic models](/analysis-services/tom/lineage-tags-for-power-bi-semantic-models) article.
 
 
 
