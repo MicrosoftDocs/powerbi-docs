@@ -153,7 +153,11 @@ In the Power BI service, a dashboard is a single page, often called a canvas tha
 
 See *connectors*.
 
-### data model, Excel data model
+**data intersections**
+
+Data intersections are the common points where different sets of data overlap.  For example, if you have a list of customers who bought laptops and another list of customers who bought tablets, the intersection would be the customers who bought both laptops and tablets.
+
+**data model, Excel data model**
 
 In Power BI content, a data model refers to a map of data structures in a table format. The data model shows the relationships that are being used to build databases. Report designers, administrators, and developers create and work with data models to create Power BI content.
 

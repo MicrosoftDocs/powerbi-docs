@@ -3425,6 +3425,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/create-reports/sample-sales-marketing-template-app.md",
+            "redirect_url": "/power-bi/create-reports/sample-sales-and-marketing",
+            "redirect_document_id": false
+        },        
+        {
             "source_path": "powerbi-docs/service-gateway-custom-connectors.md",
             "redirect_url": "/power-bi/connect-data/service-gateway-custom-connectors",
             "redirect_document_id": true
