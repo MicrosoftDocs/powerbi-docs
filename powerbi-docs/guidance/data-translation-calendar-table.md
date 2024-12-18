@@ -97,7 +97,7 @@ The two queries named **Translated Month Names Table** and **Translated Day Name
 
 ## Configure sort values
 
-When you run these two queries for the first time, they create two tables in the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) with the names **Translated Month Names Table** and **Translated Day Names Table**. There's a translation column for each language. You need to configure the sort column for each of the translation columns:
+When you run these two queries for the first time, they create two tables in the semantic model with the names **Translated Month Names Table** and **Translated Day Names Table**. There's a translation column for each language. You need to configure the sort column for each of the translation columns:
 
 - Configure the translation columns in **Translated Month Names Table** to use the sort column  **MonthNumber**
 - Configure the translations columns in **Translated Day Names Table** to use the sort column **DayNumber**
@@ -116,7 +116,7 @@ Create a relationship between the **Calendar** table and the fact tables, such a
 
 After you create the required relationships with the **Calendar** table, create a new field parameter for each of the two calendar translations tables. Creating a field parameter for a calendar translation table is just like creating the field parameters for product names and category names shown earlier.
 
-:::image type="content" source="./media/data-translation-calendar-table/translate-month-name.png" alt-text="Screenshot shows Data view of the Translated Month Names table." lightbox="./media/data-translation-calendar-table/translate-month-name.png":::
+:::image type="content" source="./media/data-translation-calendar-table/translate-month-name.png" alt-text="Screenshot shows Table view of the Translated Month Names table." lightbox="./media/data-translation-calendar-table/translate-month-name.png":::
 
 Add a relationship between these new field parameter tables and the **Languages** table to ensure the language filtering strategy works as expected.
 

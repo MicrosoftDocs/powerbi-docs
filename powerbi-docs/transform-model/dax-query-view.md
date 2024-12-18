@@ -200,7 +200,9 @@ The **Data** pane context menu includes **Quick queries**. Use quick queries to 
 
 ##### Anywhere
 
-Define all measures in the model creates a query with all the measure formulas shown in a query. Easily search all your measure formulas.
+- **Define all measures in the model** creates a query with all the measure formulas shown in a query. Easily search all your measure formulas.
+
+- **Define new measure** creates a query with a define measure block. Use this to create your own measure in DAX query view then add to your model when you are ready.
 
 ##### Tables
 

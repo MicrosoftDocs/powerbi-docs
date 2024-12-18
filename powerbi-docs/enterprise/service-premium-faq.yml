@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: faq
-  ms.date: 09/26/2024
+  ms.date: 11/13/2024
   LocalizationGroup: Premium
   
 title: Power BI Premium FAQ
@@ -96,18 +96,18 @@ sections:
       - question: |
           How can I continue to access Power BI Report Server without P SKUs?   
         answer: |
-          You can Power BI Report Server through SQL Server Enterprise Edition with Software Assurance. For more information, see the [SQL Server pricing page](https://www.microsoft.com/sql-server/sql-server-2019-pricing).
+          Power BI Report Server is available through two different licenses: Fabric [reserved license](/azure/cost-management-billing/reservations/fabric-capacity) and SQL Server Enterprise Edition with Software Assurance.
 
       - question: |
           What are the key differences between F SKUs and P SKUs?  
         answer: |
           This table lists the key differences between F SKUs and P SKUs.
 
-          | Capability                 | P1 of higher                 | F64 or higher |
+          | Capability                 | P1 or higher                 | F64 or higher |
           |----------------------------|------------------------------|---------------|
           | Commitment                 | Monthly or yearly            | Monthly, yearly and pay as you go |
           | Pricing                    | Global                       | Regional      |
-          | Power BI Report Server     | Included                     | Included with a [reserved license](/azure/cost-management-billing/reservations/fabric-capacity)  |
+          | Power BI Report Server     | Included                     | Included with a [reserved license](/azure/cost-management-billing/reservations/fabric-capacity) |
           | Power BI Embedded          | Included when buying EM SKUs | Included      |
           | Azure features<sup>*</sup> | Not included                 | Included      |
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 12/06/2024
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 ---
@@ -98,6 +98,8 @@ Some things to keep in mind with these buttons:
 - You can have as many of these buttons on your report page as you like. If you have most of your slicers in one section, with one or two slicers in another section, you can have a button in both sections. When you press either button it applies to all the slicers on the report page.
 
 - Hiding the last Apply all slicers button releases its control over the slicers. They revert to instantly applying selections as you make selections.
+
+- In case the report contains any custom visuals filter and Clear and Apply buttons, to ensure default behavior of the native and custom visuals, when **Clear All Slicers** button is pressed you are requested to press **Apply All Slicers** button for changes to apply.
 
 ### Considerations about the slicers
 

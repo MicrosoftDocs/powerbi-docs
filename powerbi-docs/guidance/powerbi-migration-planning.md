@@ -45,9 +45,9 @@ One of the first decisions is to choose the Power BI product. It's a decision be
 
 - Is a new workspace needed for this new solution?
 - Will separate workspaces be needed to accommodate development, test, and production?
-- Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)). When necessary, they can be managed separately from those users who publish reports.
+- Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing semantic models. When necessary, they can be managed separately from those users who publish reports.
 - What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-roles-new-workspaces.md). If an app will be used by content consumers, [audience permissions for the app](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
-- Can existing groups be used for securing the new content? Both groups in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) and Microsoft 365 are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
+- Can existing groups be used for securing the new content? Both groups in Microsoft Entra ID and Microsoft 365 are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
 - Are there any security considerations related to external guest users? You might need to work with your Microsoft Entra administrator and your Power BI administrator to set up [guest user access](../enterprise/service-admin-azure-ad-b2b.md).
 
 > [!TIP]

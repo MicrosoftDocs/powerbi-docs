@@ -1,16 +1,21 @@
 ---
 title: Real-time streaming in Power BI
-description: Get real-time data streaming to update visuals and dashboards in Power BI.
+description: Learn how to set up and use real-time data streaming in Power BI to keep your visuals and dashboards updated with live data.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 12/16/2024
 LocalizationGroup: Data from files
+#customer intent: As a Power BI user, I want to understand how to set up and use real-time streaming in Power BI so that I can visualize and analyze live data for timely insights and decision-making.
+#customer intent: 
 ---
 # Real-time streaming in Power BI
+
+> [!IMPORTANT]
+> Creation of streaming models remains enabled until October 31st, 2027. After that date, creation of new real-time semantic models **will no longer be supported**, including push semantic models, streaming semantic models, PubNub streaming semantic models, and streaming data tiles. **Your existing streaming semantic models will be unaffected.** For more information about the retirement of real-time streaming in Power BI, see the [blog post announcement](https://powerbi.microsoft.com/blog/announcing-the-retirement-of-real-time-streaming-in-power-bi/). Microsoft recommends users explore [Real-Time Intelligence in Microsoft Fabric](/fabric/real-time-intelligence/overview).
 
 Power BI with real-time streaming helps you stream data and update dashboards in real time. Any visual or dashboard created in Power BI can display and update real-time data and visuals. The devices and sources of streaming data can be factory sensors, social media sources, service usage metrics, or many other time-sensitive data collectors or transmitters.
 
@@ -34,14 +39,14 @@ This section explains how these semantic models differ from one another. Later s
 
 With a *push semantic model*, data is pushed into the Power BI service. When the semantic model is created, the Power BI service automatically creates a new database in the service to store the data.
 
-Because there's an underlying database that stores the data as it arrives, you can create reports with the data. These reports and their visuals are just like any other report visuals. You can use all of Power BI's report building features, such as Power BI visuals, data alerts, and pinned dashboard tiles.
+Because there's an underlying database that stores the data as it arrives, you can create reports with the data. These reports and their visuals are just like any other report visuals. You can use all of Power BI's report-building features, such as Power BI visuals, data alerts, and pinned dashboard tiles.
 
 Once you create a report using the push semantic model, you can pin any of the report visuals to a dashboard. On that dashboard, visuals update in real time whenever the data is updated. Within the Power BI service, the dashboard triggers a tile refresh every time new data is received.
 
 There are two considerations to note about pinned tiles from a push semantic model:
 
-- Pinning an entire report by using the **Pin live** option won't result in the data automatically being updated.
-- Once you pin a visual to a dashboard, you can use **Q&A** to ask questions about the push semantic model in natural language. After you make a **Q&A** query, you can pin the resulting visual back to the dashboard, and that visual will also update in real time.
+* Pinning an entire report by using the **Pin live** option won't result in the data automatically being updated.
+* Once you pin a visual to a dashboard, you can use **Q&A** to ask questions about the push semantic model in natural language. After you make a **Q&A** query, you can pin the resulting visual back to the dashboard, and that visual will also update in real time.
 
 ### Streaming semantic model
 
@@ -57,7 +62,7 @@ In practice, it's best to use streaming semantic models and their accompanying s
 
 With a *PubNub streaming semantic model*, the Power BI web client uses the [PubNub SDK](https://www.pubnub.com/docs/sdks) to read an existing PubNub data stream. The Power BI service stores no data. Because the web client makes this call directly, if you allow only approved outbound traffic from your network, you must list traffic to PubNub as allowed. For instructions, see the [support article about approving outbound traffic for PubNub](https://support.pubnub.com/hc/en-us/articles/360051496672).
 
-As with the streaming semantic model, with the PubNub streaming semantic model there's no underlying Power BI database. You can't build report visuals against the data that flows in, and can't use report functionality like filtering or Power BI visuals. You can visualize a PubNub streaming semantic model only by adding a tile to the dashboard and configuring a PubNub data stream as the source.
+As with the streaming semantic model, the PubNub streaming semantic model has no underlying Power BI database. You can't build report visuals against the data that flows in, and can't use report functionality like filtering or Power BI visuals. You can visualize a PubNub streaming semantic model only by adding a tile to the dashboard and configuring a PubNub data stream as the source.
 
 Tiles based on a PubNub streaming semantic model are optimized for quickly displaying real-time data. Since Power BI is directly connected to the PubNub data stream, there's little latency between pushing the data into the Power BI service and updating the visual.
 
@@ -67,11 +72,11 @@ The following table describes the three types of semantic models for real-time s
 
 |Capability|Push|Streaming|PubNub|
 |----------|----|---------|------|
-|Dashboard tiles update in real time as data is pushed in|**Yes.**<br>For visuals built via reports and then pinned to dashboard.|**Yes.**<br>For custom streaming tiles added directly to the dashboard.|**Yes.**<br>For custom streaming tiles added directly to the dashboard.|
+|Dashboard tiles update in real time as data is pushed in|**Yes.**<br>For visuals built via reports and then pinned to the dashboard.|**Yes.**<br>For custom streaming tiles added directly to the dashboard.|**Yes.**<br>For custom streaming tiles added directly to the dashboard.|
 |Dashboard tiles update with smooth animations|**No.**|**Yes.**|**Yes.**|
 |Data stored permanently in Power BI for historic analysis|**Yes.**|**No.**<br>Data is temporarily stored for one hour to render visuals.|**No.**|
 |Build Power BI reports on top of the data|**Yes.**|**No.**|**No.**|
-|Max rate of data ingestion|**1 requests**<br>**16 MB/request**|**5 requests**<br>**15 KB/request**|**N/A**<br>Data isn't being pushed into Power BI.|
+|Max rate of data ingestion|**1 request**<br>**16 MB/request**|**5 requests**<br>**15 KB/request**|**N/A**<br>Data isn't being pushed into Power BI.|
 |Limits on data throughput|**1M rows/hour**|None.|**N/A**<br>Data isn't being pushed into Power BI.|
 
 ## Push data to semantic models
@@ -123,8 +128,8 @@ Azure Stream Analytics uses the Power BI REST APIs to create its output data str
 
 To get started with real-time streaming, you choose one of the following ways to consume streaming data in Power BI:
 
-- *Tiles* with visuals from streaming data
-- *Semantic models* created from streaming data that persist in Power BI
+* *Tiles* with visuals from streaming data
+* *Semantic models* created from streaming data that persist in Power BI
 
 For either option, you need to set up streaming data in Power BI. To get your real-time streaming semantic model working in Power BI:
 
@@ -142,13 +147,13 @@ For either option, you need to set up streaming data in Power BI. To get your re
 
    ![Screenshot of the New streaming semantic model choices, showing API, Azure Stream, and PubNub options.](media/service-real-time-streaming/real-time-streaming-4a.png)
 
-## Create a streaming semantic model 
+## Create a streaming semantic model
 
 There are three ways to create a real-time streaming data feed that Power BI can consume and visualize:
 
-- Power BI REST API using a real-time streaming endpoint
-- Azure Stream
-- PubNub
+* Power BI REST API using a real-time streaming endpoint
+* Azure Stream
+* PubNub
 
 This section describes the Power BI REST API and PubNub options, and explains how to create a streaming tile or semantic model from the streaming data source. You can then use the semantic model to build reports. For more information about the Azure Stream option, see [Power BI output from Azure Stream Analytics](/azure/stream-analytics/power-bi-output).
 
@@ -172,7 +177,7 @@ The integration of PubNub streaming with Power BI helps you create and use your 
 ![Screenshot of the New streaming semantic model dialog, showing the PubNub entries for connection.](media/service-real-time-streaming/real-time-streaming-7.png)
 
 > [!IMPORTANT]
-> You can secure PubNub channels by using a PubNub Access Manager (PAM) authentication key. This key is shared with all users who have access to the dashboard. For more information about PubNub access control, see [Manage Access](https://www.pubnub.com/docs/web-javascript/pam-security).
+> You can secure PubNub channels by using a PubNub Access Manager (PAM) authentication key. This key is shared with all users who have access to the dashboard. For more information about PubNub access control, see [Access Manager](https://www.pubnub.com/docs/web-javascript/pam-security).
 
 PubNub data streams are often high volume, and aren't always suitable for storage and historical analysis in their original form. To use Power BI for historical analysis of PubNub data, you must aggregate the raw PubNub stream and send it to Power BI, for example by using [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics).
 
@@ -180,12 +185,12 @@ PubNub data streams are often high volume, and aren't always suitable for storag
 
 Here's an example of how real-time streaming in Power BI works. This sample uses a publicly available stream from PubNub. Follow along with the example to see the value of real-time streaming for yourself.
 
-1. In the Power BI service, select or create a new dashboard. At the top of the screen, select **Edit** > **Add a tile**. 
+1. In the Power BI service, select or create a new dashboard. At the top of the screen, select **Edit** > **Add a tile**.
 
 1. On the **Add a tile** screen, select **Custom Streaming Data**, and then select **Next**.
-   
+
    ![Screenshot of the dashboard, showing the Add tile with the Custom streaming data selection.](media/service-real-time-streaming/real-time-streaming-1.png)
-   
+
 1. On the **Add a custom streaming data tile** page, select **Add streaming semantic model**.
 
    ![Screenshot of the dashboard, showing the Add streaming semantic model link in the Add a custom streaming data tile.](media/service-real-time-streaming/real-time-streaming-2.png)
@@ -193,16 +198,16 @@ Here's an example of how real-time streaming in Power BI works. This sample uses
 1. On the **New streaming semantic model** page, select **PubNub**, and then select **Next**.
 
 1. On the next screen, enter a **Semantic model name**, enter the following values into the next two fields, and then select **Next**.
-   
-   - **Sub-key:** *sub-c-99084bc5-1844-4e1c-82ca-a01b18166ca8*
-   - **Channel name:** *pubnub-sensor-network*
-   
+
+   * **Sub-key:** *sub-c-99084bc5-1844-4e1c-82ca-a01b18166ca8*
+   * **Channel name:** *pubnub-sensor-network*
+
    ![Screenshot of the New streaming semantic model dialog, showing how to create a Semantic model name and entries in the Sub-key and Channel name fields.](media/service-real-time-streaming/real-time-streaming-8.png)
-   
+
 1. On the next screen, keep the automatically populated values, and select **Create**.
-   
+
    ![Screenshot of the New streaming semantic model dialog, showing defaults for the Semantic model name and Values from stream fields.](media/service-real-time-streaming/real-time-streaming-9.png)
-   
+
 1. Back in your Power BI workspace, create a new dashboard, and at the top of the screen, select **Edit** > **Add a tile**.
 
 1. Select **Custom Streaming Data**, and select **Next**.
@@ -210,7 +215,7 @@ Here's an example of how real-time streaming in Power BI works. This sample uses
 1. On the **Add a custom streaming data tile** page, select your new streaming semantic model, and then select **Next**.
 
    Play around with the sample semantic model. By adding value fields to line charts and adding other tiles, you can get a real-time dashboard that looks like the following screenshot:
-   
+
    ![Screenshot of the Environmental sensors dashboard, showing the results in real-time.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Go on to create your own semantic models and stream live data to Power BI.
@@ -258,7 +263,12 @@ You can use automatic page refresh at a report page level to set a refresh inter
 
 For more information about automatic page refresh, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
 
+
+## Considerations and limitations
+
+* Downloading of datasets or reports is not supported for Streaming or Pubnub. Push models can only be downloaded as a live connect, but users must explicitly connect to the model in liveconnect mode, upload the report to service, and then download it in live connect mode only.
+
 ## Related content
 
-- [Overview of the Power BI REST API with real-time data](/rest/api/power-bi)
-- [Load data in a Power BI streaming semantic model and build a dataflows monitoring report with Power BI](/power-query/dataflows/load-dataflow-metadata-into-power-bi-dataset)
+* [Overview of the Power BI REST API with real-time data](/rest/api/power-bi)
+* [Load data in a Power BI streaming semantic model and build a dataflows monitoring report with Power BI](/power-query/dataflows/load-dataflow-metadata-into-power-bi-dataset)

@@ -8,7 +8,7 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/11/2024
+ms.date: 11/13/2024
 LocalizationGroup: Common tasks
 ---
 
@@ -69,7 +69,7 @@ Full screen mode is available for dashboards and report pages.
 
 - To open a dashboard in full screen mode, select the full screen icon :::image type="icon" source="media/end-user-focus/power-bi-full-screen-icon.png"::: from the top menu bar. 
 
-- To open a report page in full screen mode, select **View** > **Full screen**.
+- To open a report page in full screen mode, select the View icon and choose **Full screen**.
 
     :::image type="content" source="media/end-user-focus/power-bi-view.png" alt-text="Screenshot showing Full screen selected in the View menu.":::
 

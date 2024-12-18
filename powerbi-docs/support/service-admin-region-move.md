@@ -43,7 +43,7 @@ The migration process moves all tenant data to the new region. The GUID assigned
 - After migration, Excel workbooks that use the Analyze in Excel feature might fail to refresh. You might need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Start in Power BI with Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
 - Push datasets might not be migrated. If they can't be migrated, you need to delete the datasets.
 - You have to reconfigure data gateways after migration. To learn more about this step, read [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
-- Dataset and workspace storage modes shouldn't be changed one day before the migration. Changing the storage mode before the migration can leave the datasets unusable after the migration. For more information, read [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md) and [Manage data storage in Power BI workspaces](../admin/service-admin-manage-your-data-storage-in-power-bi.md).
+- Cross region workspace migration does not support semantic models in large model storage mode. To migrate a semantic model in large-model storage mode, please use backup restore. For more information, read [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md) and [Manage data storage in Power BI workspaces](../admin/service-admin-manage-your-data-storage-in-power-bi.md).
 - Some usage data collected before migration is unavailable after migration. Usage data in the following sources will be lost:
   - [Power BI Activity Log](../admin/service-admin-auditing.md)
   - View count in [Lineage view](../collaborate-share/service-data-lineage.md)
@@ -70,11 +70,8 @@ To find out the best way to contact support, read [Power BI support options](ser
 
 1. Go to [Power Platform Admin Center Help + support](https://admin.powerplatform.microsoft.com/support) and sign in using admin credentials.
 1. Select **New support request**, then select the following options to request a region move.
-   - Product: Power BI
-   - Tell us what you need help with: Move to a different region
-   - Problem type: Administration
-   - Problem Subtype: Tenant Management
-   - Are you contacting us to move your tenant to another region: Yes
+   - Product: Power BI or Fabric Admin & Management
+   - Tell us what you need help with: **Move to a different region**
    
    Select **See solutions** to move to the next screen.
 

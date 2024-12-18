@@ -20,7 +20,7 @@ Measures are used in some of the most common data analyses. Simple summarization
 
 ## Understanding measures
 
-In Power BI Desktop, measures are created and displayed in *Report View*, *Data View*, or *Model View*. Measures you create yourself appear in the **Fields** list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
+In Power BI Desktop, measures are created and displayed in *Report View*, *Table View*, or *Model View*. Measures you create yourself appear in the **Fields** list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
 
 :::image type="content" source="media/desktop-measures/measuresinpbid_measinfieldlist.png" alt-text="Screenshot of Measure fields in the Fields pane.":::
 

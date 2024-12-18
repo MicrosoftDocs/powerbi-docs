@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 9/09/2024
+ms.date: 10/25/2024
 LocalizationGroup: Data refresh
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
 ---
@@ -62,7 +62,8 @@ Power BI doesn't import data over connections that operate in DirectQuery mode. 
 
 Because Power BI doesn't import the data, you don't need to run a data refresh. However, Power BI still performs tile refreshes and possibly report refreshes, as the next section on refresh types explains. A tile is a report visual pinned to a dashboard, and dashboard tile refreshes happen about every hour so that the tiles show recent results. You can change the schedule in the semantic model settings, as in the screenshot below, or force a dashboard update manually by using the **Refresh now** option.
 
-![Refresh schedule](media/refresh-data/refresh-schedule.png)
+:::image type="content" source="media/refresh-data/refresh-schedule-01.png" alt-text="Screenshot of refresh schedule options.":::
+
 
 > [!NOTE]
 > * Semantic models in Import mode and composite semantic models that combine Import mode and DirectQuery mode don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. Semantic models that are updated based on the XMLA endpoint will only clear the cached tile data (invalidate cache). The tile caches aren't refreshed until each user accesses the dashboard. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Semantic models** tab. For composite semantic models, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
@@ -292,6 +293,9 @@ To determine whether your dynamic data source can be refreshed, open the **Data 
 ![Dynamic data source indicator](media/refresh-data/dynamic-data-source.png)
 
 If that warning is present in the **Data source settings** dialog that appears, then a dynamic data source that can't be refreshed in the Power BI service is present.
+
+> [!IMPORTANT]
+> Switching data sources using dynamic M query parameters also isn't supported in the Power BI service.
 
 ## Configure scheduled refresh
 

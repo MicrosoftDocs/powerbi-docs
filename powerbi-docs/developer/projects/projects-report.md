@@ -115,12 +115,20 @@ Example using `byConnection`:
       "pbiModelVirtualServerName": "sobe_wowvirtualserver",
       "pbiModelDatabaseName": "e244efd3-e253-4390-be28-6be45d9da47e",
       "connectionType": "pbiServiceXmlaStyleLive",
-      "name": null
+      "name": "EntityDataSource"
     }
   }
 }
 ```
-When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model.
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. However, only the definition.pbir file is not ignored when importing the definition through Fabric Git.
+
+```md
+  ├── definition\
+  ├── StaticResources\
+  ├── .platform
+  ├── definition-liveConnect.pbir
+  └── definition.pbir
+```
 
 This file also specifies the supported report definition formats through the 'version' property.
 
@@ -254,6 +262,8 @@ The report definition is stored inside the `definition\` folder with the followi
 |reportExtensions.json             |No       |Report extensions, such as report level measures.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/reportExtension)
 |report.json                       |Yes      |Report metadata, such as report level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/report)
 
+> [!IMPORTANT]
+> Some report metadata files, such as visual.json or bookmarks.json, may be saved with data values from your semantic model. For instance, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will be persisted as part of the metadata. This also applies to other configurations like slicer selections, matrix custom columns width, and formatting for specific series.
 
 #### PBIR naming convention
 
@@ -344,13 +354,11 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 
 PBIR is currently in **preview**. Keep the following in mind:
 
-- Service limitations
-  - Can't be included in Power BI Apps.
-  - Can't be downloaded as PBIX.    
+- Service limitations/bugs
+  - Mobile views are not displayed in Power BI Apps.
+  - Hidden pages are exposed in Power BI Apps navigation.
   - Can't be deployed with deployment pipelines.  
-  - Can't be saved as a copy.
-  - Can't be published from Power BI Desktop.
-  - Can't be uploaded to workspace as PBIX.  
+  - Can't be saved as a copy.    
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration

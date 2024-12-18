@@ -79,21 +79,21 @@ When you make this change, the column header is translated along with product na
 
 :::image type="content" source="./media/data-translation-implement-field/translate-header.png" alt-text="Screenshot shows a slicer set to a translated product name and that column displayed in a table." lightbox="./media/data-translation-implement-field/translate-header.png":::
 
-## Edit column names in the Data view
+## Edit column names in the Table view
 
-Up to this point, you've looked at the field parameter in Report view. Now open the Data view. There you can see two more fields in the field parameter that are hidden in Report view.
+Up to this point, you've looked at the field parameter in Report view. Now open the Table view. There you can see two more fields in the field parameter that are hidden in Report view.
 
-:::image type="content" source="./media/data-translation-implement-field/field-report-view.png" alt-text="Screenshot shows the Data view of a field parameter with the DAX code displayed." lightbox="./media/data-translation-implement-field/field-report-view.png":::
+:::image type="content" source="./media/data-translation-implement-field/field-report-view.png" alt-text="Screenshot shows the Table view of a field parameter with the DAX code displayed." lightbox="./media/data-translation-implement-field/field-report-view.png":::
 
 The names of the columns in a field parameter are generated based on the name you give to the top-level field parameter. You should rename the columns to simplify the data model and to improve readability.
 
 1. To rename a column label, double-click the field. Rename **Translated Product Names** to *Product*.
 
-   :::image type="content" source="./media/data-translation-implement-field/report-view-product.png" alt-text="Screenshot shows a table in the Data view with the column name changed to Product." lightbox="./media/data-translation-implement-field/report-view-product.png":::
+   :::image type="content" source="./media/data-translation-implement-field/report-view-product.png" alt-text="Screenshot shows a table in the Table view with the column name changed to Product." lightbox="./media/data-translation-implement-field/report-view-product.png":::
 
 1. Rename the two hidden fields with shorter names, such as *Fields* and *Sort Order*.
 
-   :::image type="content" source="./media/data-translation-implement-field/report-view-rename-hidden-field.png" alt-text="Screenshot shows a table in the Data view with the column names changed to Fields and Sort Order.":::
+   :::image type="content" source="./media/data-translation-implement-field/report-view-rename-hidden-field.png" alt-text="Screenshot shows a table in the Table view with the column names changed to Fields and Sort Order.":::
 
 ## Add a language ID column
 
@@ -110,17 +110,17 @@ The field parameter is a table with three columns named **Product**, **Fields**,
    }
    ```
 
-   After you update the DAX expression with a language identifier for each language, a new column appears in the **Data** view of the **Products** table named **Value4**.
+   After you update the DAX expression with a language identifier for each language, a new column appears in the **Table** view of the **Products** table named **Value4**.
 
-   :::image type="content" source="./media/data-translation-implement-field/report-view-data-column.png" alt-text="Screenshot shows a table in the Data view with a new column called Value4." lightbox="./media/data-translation-implement-field/report-view-data-column.png":::
+   :::image type="content" source="./media/data-translation-implement-field/report-view-data-column.png" alt-text="Screenshot shows a table in the Table view with a new column called Value4." lightbox="./media/data-translation-implement-field/report-view-data-column.png":::
 
 1. Double-click the name **Value4** and rename it to *LanguageId*.
 
-   :::image type="content" source="./media/data-translation-implement-field/report-view-rename-value.png" alt-text="Screenshot shows a table in the Data view with a new column renamed to LaguageId." lightbox="./media/data-translation-implement-field/report-view-rename-value.png":::
+   :::image type="content" source="./media/data-translation-implement-field/report-view-rename-value.png" alt-text="Screenshot shows a table in the Table view with a new column renamed to LaguageId." lightbox="./media/data-translation-implement-field/report-view-rename-value.png":::
 
 1. Select **LanguageId** to highlight it. From the control ribbon, select **Sort by column** > **Sort Order**.
 
-   :::image type="content" source="./media/data-translation-implement-field/report-view-sort-column.png" alt-text="Screenshot shows a table in the Data view with the Language ID column selected and SortOrder selected as its sort order." lightbox="./media/data-translation-implement-field/report-view-sort-column.png":::
+   :::image type="content" source="./media/data-translation-implement-field/report-view-sort-column.png" alt-text="Screenshot shows a table in the Table view with the Language ID column selected and SortOrder selected as its sort order." lightbox="./media/data-translation-implement-field/report-view-sort-column.png":::
 
    You don't need to configure the sort column for the two pre-existing fields. Power BI Desktop configured them when you set up the field parameter.
 

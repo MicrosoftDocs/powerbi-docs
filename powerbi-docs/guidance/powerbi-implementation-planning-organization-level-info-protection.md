@@ -85,7 +85,7 @@ Your team should also include the following system administrators:
 
 - Microsoft Purview administrator
 - Microsoft 365 administrator
-- Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) administrator
+- Microsoft Entra ID administrator
 - Defender for Cloud Apps administrator
 - Power BI administrator
 

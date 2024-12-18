@@ -147,7 +147,7 @@ To auto-create a report:
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample semantic model entry in your workspace.":::
 
-1. Select **Create a report**, then **Auto-create**.
+1. Select **Explore this data**, then **Auto create a report**.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png" alt-text="Screenshot showing the Auto-create report menu item." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png":::
 
@@ -179,11 +179,11 @@ When you download a sample *.pbix* file, you've downloaded not just a report but
 
 To view the underlying data and model:
 
-1. Switch to [Data view](../connect-data/desktop-data-view.md) by selecting the Data view icon :::image type="icon" source="media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png":::.
+1. Switch to [Table view](../connect-data/desktop-data-view.md) by selecting the Table view icon :::image type="icon" source="media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png":::.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png" alt-text="Screenshot showing Data view in Power BI Desktop." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png" alt-text="Screenshot showing Table view in Power BI Desktop." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png":::
 
-   In Data view, you can inspect, explore, and understand data in your Power BI Desktop model. It's different from how you view tables, columns, and data in the Query Editor. The data in Data view is already loaded into the model.
+   In Table view, you can inspect, explore, and understand data in your Power BI Desktop model. It's different from how you view tables, columns, and data in the Query Editor. The data in Table view is already loaded into the model.
 
    When you're modeling your data, sometimes you want to see what's actually in the rows and columns of a table, without creating a visual on the report canvas. This fact is especially true when you're creating measures and calculated columns, or you need to identify a data type or data category.
 

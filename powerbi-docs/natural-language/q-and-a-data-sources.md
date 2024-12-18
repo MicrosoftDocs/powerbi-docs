@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 09/26/2023
+ms.date: 12/10/2024
 ms.custom: kr2b-contr-experiment
 ---
 
@@ -16,10 +16,10 @@ The Q&A feature in Power BI lets you quickly get answers about your data by usin
 
 ## Supported data sources
 
-The following Power BI configurations support Q&A:
+Power BI Q&A supports the following configurations of data sources in the Power BI Desktop:
 
 - Import mode.
-- Live connect mode with on-premises SQL Server Analysis Services, Azure Analysis Services, or Power BI datasets.
+- Live connect mode with on-premises SQL Server Analysis Services, Azure Analysis Services, or Power BI datasets. However, DirectLake and Lakehouse Power BI datasets are not supported.
 - DirectQuery with Azure Synapse Analytics, Azure SQL, or SQL Server 2019. Other sources might work in direct query mode, but aren't officially supported.
 
 Using a Q&A visual in a report enables natural language Q&A by default. If you're using DirectQuery or live connect, a prompt appears.

@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/01/2024
+ms.date: 12/11/2024
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -145,7 +145,9 @@ Controls that help you work with your data in PowerPoint are described below.
 * **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
 * **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
 * **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh doesn't trigger getting data from the data sources.
-* **Reset**: Restores the state of the report page or visual to the state it was in when it was first added to the PowerPoint presentation.
+* **Reset**: Provides two options:
+   * **Sync**: Choose this option if you want to make sure you've got the latest version of the report or visual from the Power BI service, including any definition changes, such as new or deleted visuals, filters, or slicers.
+   * **Restore**: Choose this option if you want to clear any configurations you done to the report or visuals in the presentation, such as applying filters or slicers. It returns the add-in to the state it was in when it was initially added to the presentation.
 
 ### Style options
 

@@ -95,8 +95,8 @@ If the visual has filters applied, then the data you export is also filtered. If
 
 Select the **File format** for your export. You have three options. The first two support sensitivity labels. The third option, exporting to .csv, doesn't support sensitivity labels. 
 
-- Excel .xlsx file with live connections (up to 500,000 rows max)
-- Excel .xlsx file (up to 150,000 row max)
+- Excel .xlsx file with live connections (up to 500,000 rows max). When you choose this option, the exported file inherits the sensitivity label (if any) of the semantic model the report is based on. 
+- Excel .xlsx file (up to 150,000 row max). When you choose this option, the exported file inherits the sensitivity label (if any) of the report.
 - .csv file (up to 30,000 row max)
 
 For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
@@ -146,7 +146,7 @@ What you see when you select **Underlying data** can vary. Understanding these d
 
 
 > [!IMPORTANT]
-> Export underlying data doesn't include datetime / variations columns or include numeric columns if there is an aggregation.
+> Export underlying data doesn't include datetime / variations columns or include numeric columns if there is an aggregation. Additionally, [visual calculation](../transform-model/desktop-visual-calculations-overview.md) results are not included.
 
 ---
 
@@ -191,6 +191,8 @@ If you find that you can't use this feature, reach out to the report owner and y
 - When you're exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwidth.
 
 - The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
+
+- The export to a *.csv* file will not contain any subtotal or total rows.
 
 - The maximum number of rows that the applications can export to an *.xlsx* file is 150,000. The actual number may be lower than 150,000 depending on query limits and visual types.
 
@@ -251,10 +253,22 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - Power BI admins can disable the export of data.
 
-- If a dynamic format string is applied to a measure, the exported data doesn't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure isn't preserved in Excel.
+- Dynamic Formatting is not supported with this feature as the exported data doesn't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure isn't preserved in Excel.
+
+- Whether [model level formatting](../create-reports/desktop-custom-format-strings.md#add-a-model-level-format-string) or [visual level formatting](../create-reports/desktop-custom-format-strings.md#add-a-visual-level-format-string) is preserved in an export depends on the type of export:
+
+|Export type|[Model level format](../create-reports/desktop-custom-format-strings.md#add-a-model-level-format-string) preserved|[Visual level format](../create-reports/desktop-custom-format-strings.md#add-a-visual-level-format-string) preserved|
+|---|---|---|
+|[Export to Excel](?tabs=powerbi-service)|Yes|No|
+|[Connected Tables](../collaborate-share/service-analyze-in-excel.md#excel-add-in)|No|No|
+|[Export to CSV](?tabs=powerbi-desktop)|Yes|Yes|  
+
+- [Visual calculation](../transform-model/desktop-visual-calculations-overview.md) results are included in all exports, except when exporting underlying data. Fields that are hidden on the visual are never included, except when exporting underlying data. 
 
 - When using [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers), export data from a visual doesn't work in the following cases:
     - The semantic model of the embedded report is a composite model with direct query connection to another semantic model, and the embedding is done using a Service Principal.
     - The semantic model of the embedded report has at least one data source with Single-Sign-On enabled, and the embed token contains a [datasourceIdentity](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) [embed token](/rest/api/power-bi/embed-token/generate-token).
+
+- Long running queries through a Gateway may timeout with the error "Executing the query for export data operation resulted in an error".
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

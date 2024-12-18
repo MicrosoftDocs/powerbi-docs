@@ -281,7 +281,6 @@ There are still many functional gaps between the model view in Power BI desktop 
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
 * External tools integration
-* When modifying your data model within the Service, creating a relationship between DirectQuery tables from the same Power BI semantic model or Azure Analysis Services instance will not be properly prevented. Like Desktop, this scenario is not supported, but no error will be generated when you try to perform this action.
 * When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that semantic model.
 
 ### Semantic models edited with external tools

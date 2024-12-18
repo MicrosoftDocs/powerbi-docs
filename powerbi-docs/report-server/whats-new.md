@@ -19,6 +19,44 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 Reminder: [How you can find your report server product key](find-product-key.md)
 
+## September 2024
+
+Read the Power BI blog post, [Power BI Report Server September 2024 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2024-feature-summary/) for details.
+
+### Reporting
+
+- Data limit
+- Visuals, shapes and line enhancements 
+
+### Modeling
+Download large semantic models
+New INFO functions
+DAX query view is available in live connect 
+Add or update multiple measures in DAX query view
+
+### Visualizations
+
+- New visuals in AppSource
+- Attribute Control Chart by Nova Silva
+- PowerGantt Chart by Nova Silva
+- Advanced Geospatial Analytics Made Simple with Icon Map Pro for Power BI
+- Linear Gauge by Powerviz
+- Word Cloud by Powerviz
+- Filter by Powerviz
+- Download Button by JTA
+- Pie of Pie by JTA
+- Drill Down Timeline PRO by ZoomCharts
+- Drill Down Map PRO by ZoomCharts
+- Drill Down Pie PRO by ZoomCharts
+- Hierarchical Bar Chart
+- Deneb: Declarative Visualization in Power BI
+- Image
+- Skyline
+- StackedTrends Visual
+
+### Developers
+- New update for field parameter feature for custom visuals
+
 ## May 2024
 
 Read the Power BI blog post, [Power BI Report Server May 2024 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2024-feature-summary/) for details.
@@ -110,7 +148,7 @@ For comprehensive information, see this [blog post about new features for column
 
 #### Extended customization for data labels 
 
-Data labels have more options, too. Discover new enhanced capabilities for data labels that give you extended customization choices to seamlessly match your reporting needs. They bring integration of additional metrics, dramatically improving your data analysis experience. Here are this month’s highlights.
+Data labels have more options, too. Discover new enhanced capabilities for data labels that give you extended customization choices to seamlessly match your reporting needs. They bring integration of additional goals, dramatically improving your data analysis experience. Here are this month’s highlights.
 
 :::image type="content" source="media/whats-new/extended-custom-data-labels.png" alt-text="Screenshot showing extended customization for data labels.":::
 

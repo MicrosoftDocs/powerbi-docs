@@ -7,7 +7,7 @@ manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 07/29/2024
+ms.date: 12/15/2024
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -228,6 +228,14 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 ### General
 
+* Power BI doesn't support sensitivity labels of the following types:
+
+   * [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions)
+   * [User-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), where users are allowed to assign permissions when they manually apply a sensitivity label to content.
+   * [HYOK (hold your own key)](/azure/information-protection/configure-adrms-restrictions)
+
+The *Do Not Forward* and *user-defined* types refer to labels defined in the [Micosoft Purview portal](https://purview.microsoft.com/informationprotection/purviewmipoverview).
+
 * Don't use parent labels. A parent label is a label that has sublabels. You can't apply parent labels, but a label that is already applied may become a parent label if it acquires sublabels. If you come across an item that has a parent label, apply the appropriate sublabel. To change a parent label, you must have [sufficient usage rights on the label](./service-security-sensitivity-label-change-enforcement.md).
 
     If an item has a parent label, note the following behavior:
@@ -239,8 +247,6 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 * Data sensitivity labels aren't supported for template apps. Sensitivity labels set by the template app creator are removed when the app is extracted and installed, and sensitivity labels added to artifacts in an installed template app by the app consumer are lost (reset to nothing) when the app is updated.
 
 * In the Power BI service, if a semantic model has a label that has been deleted from the label admin center, you will not be able to export or download the data. In Analyze in Excel, a warning will be issued and the data will be exported to an .odc file with no sensitivity label.
-
-* Power BI doesn't support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Purview compliance portal](https://compliance.microsoft.com/).
 
 * Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an *unprotected* sensitivity label will succeed, but the sensitivity label won't be inherited. See [Sensitivity label inheritance from data sources](/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources) for detail.
 
@@ -260,6 +266,8 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
     * If the semantic model owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
 
 ### Power BI Desktop
+
+* Directly publishing a protected .pbix file from Power BI Desktop to the Power BI service is not supported for guest users, even if they have higher-level permissions. To update or publish reports from a protected .pbix file, guest users need to start from the Power BI service, using **Get Data**, for example.
 
 * Power BI Desktop for Power BI Report Server doesn't support information protection. If you try to open a protected .pbix file, the file won't open and you'll receive an error message. Sensitivity-labeled .pbix files that aren't encrypted can be opened as normal.
 

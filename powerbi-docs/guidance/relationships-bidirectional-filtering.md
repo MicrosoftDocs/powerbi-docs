@@ -34,7 +34,7 @@ Bi-directional relationships play an important role when creating the following 
 
 ## Slicer items "with data"
 
-Bi-directional relationships can deliver slicers that limit items to where data exists. (If you're familiar with Excel PivotTables and slicers, it's the default behavior when sourcing data from a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)), or an Analysis Services model.) To help explain what it means, first consider the following model diagram.
+Bi-directional relationships can deliver slicers that limit items to where data exists. (If you're familiar with Excel PivotTables and slicers, it's the default behavior when sourcing data from a Power BI semantic model, or an Analysis Services model.) To help explain what it means, first consider the following model diagram.
 
 ![Diagram showing a model containing three tables. The design is described in the following paragraph.](media/relationships-bidirectional-filtering/sales-model-diagram.png)
 

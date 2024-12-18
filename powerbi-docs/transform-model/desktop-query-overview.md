@@ -21,7 +21,7 @@ With Power BI Desktop you can connect to the world of data, create compelling an
 Power BI Desktop has three views:
 
 * **Report** view – You can use queries that you create to build compelling visualizations, arranged as you want them to appear, and with multiple pages, that you can share with others.
-* **Data** view – See the data in your report in data model format, where you can add measures, create new columns, and manage relationships.
+* **Table** view – See the data in your report in data model format, where you can add measures, create new columns, and manage relationships.
 * **Model** view – Get a graphical representation of the relationships that are established in your data model, and manage or modify them as needed.
 
 Access these views by selecting one of the three icons along the left side of Power BI Desktop. In the following image, **Report** view is selected, indicated by the yellow band beside the icon.  
@@ -55,7 +55,7 @@ Here's how Power Query Editor appears after a data connection is established:
 
    :::image type="content" source="media/desktop-query-overview/query-overview-with-data-connection.png" alt-text="Screenshot of Power BI Desktop showing the Query Settings pane in Power Query Editor.":::
 
-Each of these four areas are explained later: the ribbon, the Queries pane, the Data view, and the Query Settings pane.
+Each of these four areas are explained later: the ribbon, the Queries pane, the Table view, and the Query Settings pane.
 
 ## The query ribbon
 

@@ -66,7 +66,7 @@ From **Report view** do any of the following:
 * Select the **Modeling** ribbon > **Manage relationships**, then select the relationship and select **Edit**.
 * Select a table in the **Fields** list then select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
 
-From the Data view, select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then choose **Edit**.
+From the Table view, select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then choose **Edit**.
 
 From the **Model** view do any of the following:
 

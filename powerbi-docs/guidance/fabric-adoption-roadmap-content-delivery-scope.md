@@ -136,7 +136,7 @@ Here are the characteristics of enterprise content delivery.
 - A centralized team of experts manages the content end-to-end and publishes it for others to consume.
 - Formal delivery of data solutions like reports, lakehouses, and Power BI apps is a high priority to ensure consumers have the best experience.
 - The content is highly sensitive, subject to regulatory requirements, or is considered extremely critical.
-- Published enterprise-level semantic models ([previously known as datasets](/power-bi/connect-data/service-datasets-rename)) and dataflows might be used as a source for self-service creators, thus creating a chain of dependencies to the source data.
+- Published enterprise-level semantic models and dataflows might be used as a source for self-service creators, thus creating a chain of dependencies to the source data.
 - Stability and a consistent experience for consumers are highly important. Application lifecycle management, such as [deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview) and [DevOps techniques](https://powerbi.microsoft.com/blog/automate-deployments-with-deployment-pipelines-api-preview/), is commonly used. Change management processes to review and approve changes before they're deployed are commonly used for enterprise content, for example, by a change review board or similar group.
 - Processes exist to gather requirements, prioritize efforts, and plan for new projects or enhancements to existing content.
 - Integration with other enterprise-level data architecture and management services could exist, possibly with other Azure services and Power Platform products.

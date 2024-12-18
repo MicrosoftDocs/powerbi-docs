@@ -44,7 +44,7 @@ For more use cases for information protection, see [Information protection and D
 > [!TIP]
 > It helps to remember that Microsoft Purview Information Protection is the product. Sensitivity labels are a specific feature of that product.
 
-A sensitivity label is a brief description in clear text. Conceptually, you can think of a sensitivity label like a tag. Only one label can be assigned to each item (like a Power BI semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md)—in the Power BI service) or each file (like a Power BI Desktop file).
+A sensitivity label is a brief description in clear text. Conceptually, you can think of a sensitivity label like a tag. Only one label can be assigned to each item (like a Power BI semantic model in the Power BI service) or each file (like a Power BI Desktop file).
 
 A label has the following purposes.
 
@@ -358,7 +358,7 @@ Authorized users and groups are set in the Microsoft Purview compliance portal w
 > [!div class="checklist"]
 > - **Determine which labels apply to all users:** Discuss and decide which sensitivity labels should be available for use by all users.
 > - **Determine which sub-labels apply to a subset of users:** Discuss and decide whether there are any sub-labels that will be available for use only by a specific set of users or groups.
-> - **Identify whether any new groups are needed:** Determine whether any new Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) groups will need to be created to support the authorized users and groups.
+> - **Identify whether any new groups are needed:** Determine whether any new Microsoft Entra ID groups will need to be created to support the authorized users and groups.
 > - **Create a planning document:** If the mapping of authorized users to sensitivity labels is complicated, create a mapping of users and groups for each label policy.
 
 ### Default label for Power BI content

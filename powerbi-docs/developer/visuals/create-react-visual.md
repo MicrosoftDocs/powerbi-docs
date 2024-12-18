@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 10/12/2022
+ms.date: 10/12/2024
 #customer intent: As a Power BI visual developer, I want to learn how to create a Power BI visual using React so I can display a value in a circle.
 ---
 
