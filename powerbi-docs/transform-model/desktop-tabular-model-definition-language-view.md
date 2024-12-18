@@ -20,13 +20,13 @@ Tabular Model Definition Language view (hereafter, **TMDL view**) lets you scrip
 TMDL view offers the following advantages:
 
 * **Enhanced development efficiency** with a rich code editor that includes search-and-replace, keyboard shortcuts, multi-line edits and more. 
-* **Increase reusability** by easily scripting, sharing and reusing TMDL scripts among semantic model developers. For example, use a centralized SharePoint site to easily share reusable semantic model objects such as calendar tables, or time intelligence calculation groups. 
-* **Gain more control and transparency**, showing all semantic model objects and properties, and allowing changes to items not available in the Power BIDesktop user interface, such as *[IsAvailableInMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx)* or *[DetailRowsDefinition](/dotnet/api/microsoft.analysisservices.tabular.measure.detailrowsdefinition)*.  
+* **Increase reusability** by easily scripting, sharing, and reusing TMDL scripts among semantic model developers. For example, use a centralized SharePoint site to easily share reusable semantic model objects such as calendar tables, or time intelligence calculation groups. 
+* **Gain more control and transparency**, showing all semantic model objects and properties, and allowing changes to items not available in the Power BI Desktop user interface, such as *[IsAvailableInMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx)* or *[DetailRowsDefinition](/dotnet/api/microsoft.analysisservices.tabular.measure.detailrowsdefinition)*.  
 
 
 ## Enable preview feature
 
-**TMDL view** is available beginning with the January 2025 version of Power BI Desktop, and is currently in preview. To use TMDL view you must enable the preview feature. In Power BI Desktop select **File > Options and settings > Options > Preview features** and select the box next to **TMDL View**. 
+**TMDL view** is available beginning with the January 2025 version of Power BI Desktop, and is currently in preview. To use TMDL view, you must enable the preview feature. In Power BI Desktop select **File > Options and settings > Options > Preview features** and select the box next to **TMDL View**. 
 
 ## Script to TMDL
 
@@ -38,7 +38,7 @@ When TMDL view opens the code editor is initially empty. You can script any sema
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-02.png" alt-text="Screenshot of dragging a semantic model object onto the T-M-D-L view canvas.":::
 
-When using TMDL view and dragging the object from the Data pane, Power BI scripts the entire object metadata into the current tab as TMDL, or opens a new tab if the current tab is not empty, as a *createOrReplace* TMDL script of the selected objects, as shown in the following image:
+When using TMDL view and dragging the object from the Data pane, Power BI scripts the entire object metadata into the current tab as TMDL, or opens a new tab if the current tab isn't empty, as a *createOrReplace* TMDL script of the selected objects, as shown in the following image:
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-03.png" alt-text="Screenshot of the T-M-D-L metadata being created automatically.":::
 
@@ -51,7 +51,7 @@ Alternatively, you can right-click an object in the Data view and select **Scrip
 
 ## Code editor
 
-Once you've scripted a semantic model object or pasted TMDL script into the code editor, you can use the comprehensive code experience features offered by the TMDL view code editor. The code experience features enable you to either explore the model metadata, or make modifications that can subsequently be applied to the semantic model.
+Once you've scripted a semantic model object or pasted TMDL script into the code editor, you can use the comprehensive code experience features offered by the TMDL view code editor. The code experience features enable you to either explore the model metadata, or make modifications that can later be applied to the semantic model.
 
 ### Semantic highlighting
 
@@ -87,9 +87,9 @@ When successful, a notification is displayed and your modeling change are applie
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-10.png" alt-text="Screenshot of success banner in the code editor indicating changes were successfully applied.":::
 
-In the event of a failure, an error notification is displayed to show that your modeling changes were not applied to the semantic model. You can view more information about the error by selecting the *Show details* link in the notification, which then expands the **Output pane** and displays error details.
+In the event of a failure, an error notification is displayed to show that your modeling changes weren't applied to the semantic model. You can view more information about the error by selecting the *Show details* link in the notification, which then expands the **Output pane** and displays error details.
 
-:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-11.png" alt-text="Screenshot of failure banner in the code editor indicating changes were not successful.":::
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-11.png" alt-text="Screenshot of failure banner in the code editor indicating changes weren't successful.":::
 
 > [!NOTE]
 > Execution of TMDL scripts with TMDL view only modifies the semantic model metadata, and does not refresh data. If your changes require a data refresh, such as changing a PowerQuery expression or calculated column expression, you must manually refresh the table or model for any such changes to take effect.
@@ -107,22 +107,22 @@ The contents of the **TMDL view** tabs are saved in the report file when you sav
 > [!TIP]
 > You can open and edit TMDL scripts in Visual Studio Code, and they will properly reload after restarting Power BI Desktop.
 
-The *Problems* and *Output* panes display errors and messages specific to the script tab that's currently selected and displayed. Switching to a different TMDL scrip tab will refresh both of those panes with information specific to the selected and currently shown tab.
+The *Problems* and *Output* panes display errors and messages specific to the script tab that's currently selected and displayed. Switching to a different TMDL scrip tab refreshes both of those panes with information specific to the selected and currently shown tab.
 
 You can select the *Clear* button to empty the *Output* pane messages. 
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-14.png" alt-text="Screenshot of the clear button used to empty output pane messages.":::
 
-Messages are kept only for each Power BI Desktop session, so restarting Power BI Desktop will clear all output messages for all script tabs.
+Messages are kept only for each Power BI Desktop session, so restarting Power BI Desktop clears all output messages for all script tabs.
 
 ## Considerations and limitations
 
 TMDL view is currently in preview, so keep the following limitations in mind:
 
 * Not all modeling changes are supported. During preview, each *Apply* change undergoes the same validations that occur when opening a Power BI project (PBIP). Refer to the [Model Authoring article](../developer/projects/projects-overview.md) (File change column) for a list of supported changes. Executing unsupported changes may result in unexpected behaviors.
-* The *Command palette* displays some commands that are not currently supported.
-* Setting up the *initial* Git integration *from* the workspace will not include TMDL View scripts saved in published semantic model. Learn more in the [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo) article.
-* You cannot script model explorer groups such as Measures, Columns, so on.
+* The *Command palette* displays some commands that aren't currently supported.
+* Setting up the *initial* Git integration *from* the workspace won't include TMDL View scripts saved in published semantic model. Learn more in the [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo) article.
+* You can't script model explorer groups such as Measures, Columns, so on.
 
 
 ## Related content
