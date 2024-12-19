@@ -6360,6 +6360,11 @@
             "source_path": "powerbi-docs/guidance/whitepaper-azure-b2b-power-bi.md",
             "redirect_url": "/power-bi/enterprise/service-admin-azure-ad-b2b",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/visuals/format-pane.md",
+            "redirect_url": "/power-bi/developer/visuals/format-pane-general",
+            "redirect_document_id": false
         }   
   ]
 }
