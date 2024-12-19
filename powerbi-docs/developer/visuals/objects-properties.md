@@ -170,7 +170,7 @@ To customize the properties in the formatting pane, use one of the following met
 > The `getFormattingModel` API method is supported from API versions 5.1+. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 To use objects effectively in API version 5.1+, you need to implement the `getFormattingModel` method.  
-This method builds and returns a formatting model that includes full [properties pane](./format-pane.md) hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
+This method builds and returns a formatting model that includes full [properties pane](./format-pane-general.md) hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
 
 ### Capabilities objects reflected in formatting model
 
