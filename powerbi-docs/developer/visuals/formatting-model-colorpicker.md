@@ -14,7 +14,7 @@ ms.date: 12/12/2024
 
 *ColorPicker* is a simple formatting slice which is used to represent *fill* object type from `capabilities.json` file.
 
-![Screenshot of the ColorPicker slice](media/format-pane/color-picker.png)
+![Screenshot of the ColorPicker slice.](media/format-pane/color-picker.png)
 
 ## Example: ColorPicker implementation
 

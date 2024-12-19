@@ -43,8 +43,8 @@ General steps to add the new format pane support to a custom visual:
 
 3. Build the custom visual [**FormattingModel**](#formatting-model) by doing **one** of the following:
 
-* Use [formattingmodel util](./utils-formatting-model.md). (**Recommended**)
-* Without this util, use only APIs.
+   * Use [formattingmodel util](./utils-formatting-model.md). (**Recommended**)
+   * Without this util, use only APIs.
 
   Define the properties of your custom visual formatting model and build it using code (not JSON).
 
@@ -129,7 +129,7 @@ In the new formatting model, property components are grouped together in logical
   :::image type="content" source="./media/format-pane/formatting-groups.png" alt-text="Screenshot of formatting cards divided into formatting groups.":::
 
 * [**Formatting container**](formatting-model-container.md)  
-  The secondary-level properties grouping container. The formatting container groups formatting slices into separate container items and alows to switch between them using a drop-down list.
+  The secondary-level properties grouping container. The formatting container groups formatting slices into separate container items and allows to switch between them using a drop-down list.
 
   :::image type="content" source="./media/format-pane/container.png" alt-text="Screenshot of formatting container.":::
 
@@ -223,7 +223,7 @@ For now we have two composite slice types:
   | Top         | Numeric                   | NumUpDown        |
   | Bottom      | Numeric                   | NumUpDown        |
 
-## GitHub Resources
+## GitHub resources
 
 * All formatting model interfaces can be found in [GitHub - microsoft/powerbi-visuals-api: Power BI custom visuals API](https://github.com/microsoft/powerbi-visuals-api) in “formatting-model-api.d.ts”
 

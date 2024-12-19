@@ -15,7 +15,7 @@ ms.date: 12/12/2024
 *Dropdown* slice is a simple formatting slice which is used to represent *enumeration* object type from `capabilities.json` file.
 There are two dropdown slices - **ItemDropdown* and *AutoDropdown**.
 
-Their difference is that for AutoDropdown slice you need to declare its enumeration items list under the appropriante object in `capabilities.json` file, and for ItemDropdown slice in the formatting settings class.
+Their difference is that for AutoDropdown slice you need to declare its enumeration items list under the appropriate object in `capabilities.json` file, and for ItemDropdown slice in the formatting settings class.
 
 ## Example: Dropdown implementation
 

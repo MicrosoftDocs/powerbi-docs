@@ -14,7 +14,7 @@ ms.date: 12/12/2024
 
 *TextInput* is a simple formatting slice which is used to represent *text* object type from `capabilities.json` file.
 
-![Screenshot of the TextInput slice](media/format-pane/text-input.png)
+![Screenshot of the TextInput slice.](media/format-pane/text-input.png)
 
 ## Example: TextInput implementation
 

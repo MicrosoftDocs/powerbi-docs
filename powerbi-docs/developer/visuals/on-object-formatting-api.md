@@ -24,7 +24,7 @@ To add these functionalities to your visual, each visual needs to provide a subs
 
 ## Create an on-object experience
 
-Use the subselection service when the user selects a subselectable element to send Power BI the subselection. Provide the subselection styles and shortcuts using the [subselction API](./subselection-api.md). The [subselection helper](./utils-on-object.md) can be used to simplify the process.
+Use the subselection service when the user selects a subselectable element to send Power BI the subselection. Provide the subselection styles and shortcuts using the [subselection API](./subselection-api.md). The [subselection helper](./utils-on-object.md) can be used to simplify the process.
 
 ## Format mode
 

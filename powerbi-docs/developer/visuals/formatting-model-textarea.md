@@ -14,7 +14,7 @@ ms.date: 12/12/2024
 
 *TextArea* is a simple formatting slice which is used to represent *text* object type from `capabilities.json` file.
 
-![Screenshot of the TextArea slice](media/format-pane/text-area.png)
+![Screenshot of the TextArea slice.](media/format-pane/text-area.png)
 
 ## Example: TextArea implementation
 

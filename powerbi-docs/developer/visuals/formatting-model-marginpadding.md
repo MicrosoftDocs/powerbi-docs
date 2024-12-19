@@ -14,7 +14,7 @@ ms.date: 12/12/2024
 
 *MarginPadding* is a composite formatting slice that contains left, right, top and bottom padding properties all together. It's used to represent *numeric* or *integer* object types from `capabilities.json` file.
 
-![Screenshot of the MarginPadding slice](media/format-pane/margin-padding.png)
+![Screenshot of the MarginPadding slice.](media/format-pane/margin-padding.png)
 
 ## Example: MarginPadding implementation
 

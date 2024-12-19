@@ -14,7 +14,7 @@ ms.date: 12/12/2024
 
 *ToggleSwitch* is a simple formatting slice which is used to represent *bool* object type from `capabilities.json` file.
 
-![Screenshot of the ToggleSwitch slice](media/format-pane/toggle-switch.png)
+![Screenshot of the ToggleSwitch slice.](media/format-pane/toggle-switch.png)
 
 ## Example: ToggleSwitch implementation
 
@@ -71,7 +71,7 @@ export class VisualSettings extends formattingSettings.Model {
 
 ToggleSwitch slice can also be used as a top-level card toggle.
 
-![Screenshot of the top-level ToggleSwitch slice](media/format-pane/toggle-switch-top-level.png)
+![Screenshot of the top-level ToggleSwitch slice.](media/format-pane/toggle-switch-top-level.png)
 
 To make ToggleSwitch top-level, remove slice from the **slices** array and add the following line to the card settings class:
 

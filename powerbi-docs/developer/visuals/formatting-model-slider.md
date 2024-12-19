@@ -14,7 +14,7 @@ ms.date: 12/12/2024
 
 *Slider* is a simple formatting slice which is used to represent *numeric* and *integer* object types from `capabilities.json` file.
 
-![Screenshot of the ToggleSwitch slice](media/format-pane/slider.png)
+![Screenshot of the ToggleSwitch slice.](media/format-pane/slider.png)
 
 ## Example: Slider implementation
 

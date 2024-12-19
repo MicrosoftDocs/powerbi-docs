@@ -14,7 +14,7 @@ ms.date: 12/12/2024
 
 *FontPicker* is a simple formatting slice which is used to represent *fontFamily* object type from `capabilities.json` file.
 
-![Screenshot of the FontPicker slice](media/format-pane/font-picker.png)
+![Screenshot of the FontPicker slice.](media/format-pane/font-picker.png)
 
 ## Example: FontPicker implementation
 

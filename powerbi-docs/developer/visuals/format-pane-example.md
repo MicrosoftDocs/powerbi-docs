@@ -13,12 +13,13 @@ ms.date: 12/12/2023
 
 # Add the new format pane to a custom visual using API
 
-## Example: Formatting a data card
-
 > [!IMPORTANT]
 > To add the new Format pane to a custom visual, we recommend using [**formattingmodel utils**](./utils-formatting-model.md).
 
 Although we recommend using [formattingmodel utils](./utils-formatting-model.md) with the new format pane, this example demonstrates how to build a custom visual formatting model with one card using only the API.
+
+## Example: Formatting a data card
+
 The card has two groups:
 
 * **Font control group** with one composite property

@@ -14,7 +14,7 @@ ms.date: 12/12/2024
 
 *NumUpDown* is a simple formatting slice which is used to represent *numeric* and *integer* object types from `capabilities.json` file.
 
-![Screenshot of the NumUpDown slice](media/format-pane/num-up-down.png)
+![Screenshot of the NumUpDown slice.](media/format-pane/num-up-down.png)
 
 ## Example: NumUpDown implementation
 
@@ -100,7 +100,9 @@ class LabelsCardSetting extends formattingSettings.SimpleCard {
 }
 ```
 
-![Screenshot of the NumUpDown validation](media/format-pane/num-up-down-max-warning.png)
+A warning message is displayed if the passed value is out of the acceptable range.
+
+![Screenshot of the NumUpDown validation.](media/format-pane/num-up-down-warnings.png)
 
 ## Related content
 

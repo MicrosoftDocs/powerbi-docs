@@ -14,7 +14,7 @@ ms.date: 12/12/2024
 
 *FontControl* is a composite formatting slice that contains font related properties all together. It's used to represent *integer*, *fontControl*, and *bool* object types from `capabilities.json` file.
 
-![Screenshot of the FontControl slice](media/format-pane/font-control.png)
+![Screenshot of the FontControl slice.](media/format-pane/font-control.png)
 
 ## Example: FontControl implementation
 

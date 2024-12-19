@@ -104,7 +104,7 @@ Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#bu
 
 Here's the resulting pane:
 
-![Screenshot of an SimpleCad.](media/format-pane/simple-card.png)
+![Screenshot of an SimpleCard.](media/format-pane/simple-card.png)
 
 ### [Composite formatting card implementation](#tab/compositeCard)
 
@@ -195,7 +195,7 @@ Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#bu
 
 Here's the resulting pane:
 
-![Screenshot of an CompositeCad.](media/format-pane/composite-card.png)
+![Screenshot of an CompositeCard.](media/format-pane/composite-card.png)
 
 ---
 
