@@ -17,6 +17,8 @@ LocalizationGroup: Create reports
 
 Whether you create a button in Power BI Desktop or the Power BI service, you can customize it in many different ways to suit your requirements. For example, you can turn **Button Text** on or off, and you can change the button shape, icon, fill, title, or the action that happens when users select the button in a report, among other properties.
 
+This article highlights some of the ways in which you can customize a button in Power BI reports, like changing the shape, adding a custom image, and applying effects. To learn how to add and set up a button with an action, see [Create and configure buttons in Power BI reports](desktop-buttons.md).
+
 > [!NOTE]
 > Customizing a button requires Edit permission to the report. Sharing a report requires a Power BI Pro or PPU license or for the report to be saved in Premium capacity. For more information, see [Which license do I have](../fundamentals/service-features-license-type.md) and [What is Premium](../enterprise/service-premium-what-is.md).
 
