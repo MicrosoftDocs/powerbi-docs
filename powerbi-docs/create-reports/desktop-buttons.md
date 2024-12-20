@@ -29,13 +29,13 @@ This article explains how to add buttons to reports in Power BI Desktop and in t
 
 ### [Power BI Desktop](#tab/powerbi-desktop)
 
-In Power BI Desktop, on the **Insert** ribbon, select **Buttons** to reveal a drop-down menu, where you can select the button you want from a collection of options.
+In Power BI Desktop, on the **Insert** ribbon, select **Buttons** to reveal a dropdown menu, where you can select the button you want from a collection of options.
 
 :::image type="content" source="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown.png" alt-text="Screenshot showing Add a button control in Power BI Desktop.":::
 
 ### [Power BI service](#tab/powerbi-service)
 
-In the Power BI service, open the report in Editing view. Select **Buttons** in the top menu bar to reveal a drop-down menu, where you can select the button you want from a collection of options.
+In the Power BI service, open the report in Editing view. Select **Buttons** in the top menu bar to reveal a dropdown menu, where you can select the button you want from a collection of options.
 
 :::image type="content" source="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown-service.png" alt-text="Screenshot showing Add a button control in the Power BI service.":::
 
