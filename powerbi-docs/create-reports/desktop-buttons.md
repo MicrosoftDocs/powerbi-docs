@@ -12,7 +12,7 @@ ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user, I want to create and configure buttons in my reports so that I can enhance user interaction and provide an app-like experience.
 ---
-# Create buttons in Power BI reports
+# Create and configure buttons in Power BI reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -83,8 +83,8 @@ Here are the options for button actions:
 - **Back** returns the user to the previous page of the report. This action is useful for drillthrough pages.
 - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md).
 - **Drillthrough** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drill-through-buttons.md).
-- **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page navigation](button-navigators.md) for details. 
-- **Bookmark navigation** navigates the user to a different state in the report, either on the same or a different page, by using bookmarks. See [Create bookmark navigation](button-navigators.md#bookmark-navigator) for details.
+- **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page and bookmark navigators](button-navigators.md) for details. 
+- **Bookmark navigation** navigates the user to a different state in the report, either on the same or a different page, by using bookmarks. See [Create page and bookmark navigators](button-navigators.md#bookmark-navigator) for details.
 - **Q&A** opens a **Q&A Explorer** window. When your report readers select a Q&A button, the Q&A Explorer opens, and they can ask natural-language questions about your data.
 - **Apply all slicers** and **Clear all slicers** buttons apply all the slicers or clear all the slicers on a page. See [Create Apply all slicers and Clear all slicers buttons in reports](buttons-apply-all-clear-all-slicers.md) for details.
 - **Web URL** opens a web page in a browser.
@@ -106,14 +106,14 @@ To select a button action:
 
 ## Create page navigation
 
-With the **Type** of an **Action** set to **Page navigation**, you can create a button that links to another page in your report, without creating a bookmark.
+With the **Type** of **Action** set to **Page navigation**, you can create a button that links to another page in your report, without creating a bookmark.
 
 > [!TIP]
 > If you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 To set up a single-page navigation button:
 
-1. Create a button with **Page navigation** as the **Type** of its **Action**, and then select a page for the **Destination**.
+1. Create a button with **Page navigation** as the **Type** of **Action**, then select a page for the **Destination**.
 
 :::image type="content" source="media/desktop-buttons/power-bi-page-navigation.png" alt-text="Screenshot showing Page navigation action.":::
 
