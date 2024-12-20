@@ -100,7 +100,7 @@ To select a button action:
 
 1. Expand **Action**, and then select the **Type** of button action.
 
-:::image type="content" source="media/desktop-buttons/power-bi-button-action.png" alt-text="Screenshot showing Action selections for a button in Power BI.":::
+   :::image type="content" source="media/desktop-buttons/power-bi-button-action.png" alt-text="Screenshot showing Action selections for a button in Power BI.":::
 
 1. Test the buttons you create for your report by selecting <kbd>Ctrl</kbd> and the button.
 
