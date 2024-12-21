@@ -30,7 +30,7 @@ A rectangle is the default shape for buttons, but you can change the shape:
 
 1. Navigate to the **Shape** tab of the **Format button** pane, and customize the button to any of the available shapes (parallelogram, rounded rectangle, arrow, etc.):
 
-:::image type="content" source="media/desktop-buttons/power-bi-customize-shape-parallelogram.png" alt-text="Screenshot showing button shape options.":::
+   :::image type="content" source="media/desktop-buttons/power-bi-customize-shape-parallelogram.png" alt-text="Screenshot showing button shape options.":::
 
 ## Change the size and position
 
