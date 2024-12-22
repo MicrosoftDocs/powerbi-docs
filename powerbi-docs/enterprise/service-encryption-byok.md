@@ -25,7 +25,9 @@ BYOK makes it easier to meet compliance requirements that specify key arrangemen
 To use BYOK, you must upload data to the Power BI service from a Power BI Desktop (PBIX) file. You can't use BYOK in the following scenarios:
 
 - Analysis Services Live Connection
-- Excel workbooks, unless data is first imported into Power BI Desktop. For Excel workbooks stored in SharePoint and OneDrive, use [Customer Key](/purview/customer-key-set-up#onboard-to-customer-key-for-sharepoint-and-onedrive).
+- Excel workbooks, unless data is first imported into Power BI Desktop.
+    >[!NOTE]
+    >For Excel workbooks stored in SharePoint and OneDrive, you can use [Customer Key](/purview/customer-key-set-up#onboard-to-customer-key-for-sharepoint-and-onedrive).
 - [Push semantic models](/rest/api/power-bi/pushdatasets)
 - [Streaming semantic models](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-semantic-model-in-power-bi)
 - [Power BI metrics](../create-reports/service-goals-introduction.md) don't currently support BYOK
