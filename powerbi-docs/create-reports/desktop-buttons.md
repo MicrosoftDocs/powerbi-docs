@@ -20,7 +20,7 @@ With *buttons* in Power BI, you can create reports that behave similarly to apps
 
 This article explains how to add buttons to reports in Power BI Desktop and in the Power BI service. It also covers button states and actions, and shows you how to configure them in Power BI.
 
-:::image type="content" source="media/desktop-buttons/power-bi-qna-button.png" alt-text="Screenshot showing a Q&A button in Power BI.":::
+![Screenshot showing a Q&A button in Power BI.](media/desktop-buttons/power-bi-qna-button.png)
 
 > [!NOTE]
 > Creating a button requires Edit permission to the report. Sharing a report requires a Power BI Pro or PPU license or for the report to be saved in Premium capacity. For more information, see [Which license do I have](../fundamentals/service-features-license-type.md) and [What is Premium](../enterprise/service-premium-what-is.md).
@@ -70,9 +70,9 @@ To select how a button should appear for each state:
 
 1. Select **State** under **Apply settings to** at the top of the card, and then select the settings you want to use for that state.
 
-   In the following image, you see the **Style** card and **Icon** expanded. The **State** is **On hover**, and the **Icon type** is **Right arrow**.
+In the following image, you see the **Style** card and **Icon** expanded. The **State** is **On hover**, and the **Icon type** is **Right arrow**.
 
-:::image type="content" source="media/desktop-buttons/power-bi-button-format.png" alt-text="Screenshot showing the On hover state of a button in a Power BI report.":::
+![Screenshot showing the On hover state of a button in a Power BI report.](media/desktop-buttons/power-bi-button-format.png)
 
 ## Select the action for a button
 
@@ -100,7 +100,7 @@ To select a button action:
 
 1. Expand **Action**, and then select the **Type** of button action.
 
-   :::image type="content" source="media/desktop-buttons/power-bi-button-action.png" alt-text="Screenshot showing Action selections for a button in Power BI.":::
+    ![Screenshot showing Action selections for a button in Power BI.](media/desktop-buttons/power-bi-button-action.png)
 
 1. Test the buttons you create for your report by selecting <kbd>Ctrl</kbd> and the button.
 
@@ -115,14 +115,14 @@ To set up a single-page navigation button:
 
 1. Create a button with **Page navigation** as the **Type** of **Action**, then select a page for the **Destination**.
 
-:::image type="content" source="media/desktop-buttons/power-bi-page-navigation.png" alt-text="Screenshot showing Page navigation action.":::
+    ![Screenshot showing Page navigation action.](media/desktop-buttons/power-bi-page-navigation.png)
 
-1. Optionally, you can conditionally format the **Tooltip** under **Action** as you can do with other button types.
+2. Optionally, you can conditionally format the **Tooltip** under **Action** as you can do with other button types.
 
     > [!NOTE]
     > If the text content of the tooltip matches the button text content, the tooltips are hidden to enhance the readability for accessibility tools.
 
-1. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
+3. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 ## Shapes and images for navigation
 
