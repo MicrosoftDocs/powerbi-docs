@@ -591,8 +591,18 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/mobile-share-tile-windows-10-phone-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md",
             "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
             "redirect_document_id": false
         },
         {
@@ -689,6 +699,11 @@
             "source_path": "powerbi-docs/mobile-app-ssrs-kpis-mobile-on-premises-reports.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-app-windows-10-ssrs-kpis-mobile-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md",
@@ -816,9 +831,14 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
             "redirect_url": "/power-bi/consumer/mobile/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-reports-in-the-mobile-apps.md",
@@ -844,6 +864,11 @@
             "source_path": "powerbi-docs/mobile-whats-new-in-the-mobile-apps.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-whats-new-in-the-mobile-apps",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-windows-10-app-presentation-mode.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-app-presentation-mode",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-app-presentation-mode.md",
