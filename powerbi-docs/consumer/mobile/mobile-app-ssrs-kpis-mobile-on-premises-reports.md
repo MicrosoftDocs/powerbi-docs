@@ -35,9 +35,11 @@ Then in the Power BI mobile apps, connect to up to five report servers to view t
 
 Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services KPIs.
 
-1. Tap your profile picture in the upper-left corner and then tap **Settings** on the accounts panel that slides out.
+1. Tap your profile picture in the upper-left corner.
 
-2. On the settings page that opens, tap **Reporting Services samples**, then browse to interact with the sample KPIs.
+2. On the **Sign In page that appears**, tap **I'll sign in later**.
+
+3. The **Explore** page opens. Tap the folders under **Report server** to view the sample KPIs.
 
    :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png" alt-text="Screenshot of Reporting Services samples.":::
 
