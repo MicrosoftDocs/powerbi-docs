@@ -184,12 +184,6 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     https\://app.powerbi.com/groups/me/reports/**dddddddd-3333-4444-5555-eeeeeeeeeeee**/**ReportSection11**
 
-* **Open in full-screen mode (for Windows devices only)**
-
-    For Windows devices, you can also add the **openFullScreen** parameter to open specific report in full-screen mode. The following example opens a report page in full screen mode:
-
-    mspbi://app/OpenReport?ReportObjectId=dddddddd-3333-4444-5555-eeeeeeeeeeee&**openFullScreen=true**
-
 * **Add context** (optional)
 
     You can also add context to the string. Then, if you need to contact us, we can use that context to filter our data to find what is relevant to your app. To add context, add the parameter **context=&lt;app-name&gt;** to the link:

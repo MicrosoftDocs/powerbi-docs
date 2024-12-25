@@ -12,9 +12,9 @@ ms.date: 06/01/2021
 # Make and view favorites in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](./media/mobile-apps-favorites/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-favorites/ipad-logo-50-px.png) | ![Android phone](./media/mobile-apps-favorites/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-apps-favorites/android-tablet-logo-50-px.png) | ![Windows devices](./media/mobile-apps-favorites/win-10-logo-50-px.png) |
-|:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Android tablets |Windows devices |
+| ![iPhone](./media/mobile-apps-favorites/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-favorites/ipad-logo-50-px.png) | ![Android phone](./media/mobile-apps-favorites/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-apps-favorites/android-tablet-logo-50-px.png) |
+|:--- |:--- |:--- |:--- |
+| iPhones |iPads |Android phones |Android tablets |
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
@@ -43,7 +43,7 @@ You can mark KPIs and reports as favorites on a Power BI Report Server or Report
    
     The app will now be listed on your Favorites page, along with your other favorite dashboards, reports, and apps.
    
-## Make a dashboard or report a favorite in the iOS and Windows mobile apps
+## Make a dashboard or report a favorite in the iOS mobile app
 You can make a Power BI dashboard or report a favorite from the list of dashboards or reports, or from the dashboard or report itself.
 
 * In the list of dashboards or reports in the mobile app, tap the empty star next to the name ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). The star turns black ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).

@@ -591,14 +591,14 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/mobile-share-tile-windows-10-phone-app.md",
-            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
-            "redirect_document_id": true
+            "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md",
-            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-phone-app-get-started.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/integrate-dashboard.md",
@@ -691,9 +691,9 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/mobile-app-windows-10-ssrs-kpis-mobile-reports.md",
-            "redirect_url": "/power-bi/consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-apple-watch.md",
@@ -816,8 +816,8 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
-            "redirect_url": "/power-bi/consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app",
+            "source_path": "powerbi-docs/consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
             "redirect_document_id": true
         },
         {
@@ -846,9 +846,19 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/mobile-windows-10-app-presentation-mode.md",
-            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-app-presentation-mode",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-app-presentation-mode.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-app-single-sign-on-sso.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-phone-app-webview2-installation.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/tutorial-mobile-apps-ios-qna.md",
