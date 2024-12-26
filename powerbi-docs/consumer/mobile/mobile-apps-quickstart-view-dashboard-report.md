@@ -44,40 +44,43 @@ Once you've completed the prerequisites and downloaded the Retail Analysis Sampl
    
     Power BI dashboards look a little different on your mobile device than they do on the Power BI service. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-6. Scroll down and tap the "This Year's Sales, Last Year's Sales" filled line chart.
+    >[!NOTE]
+    > Visuals in tiles on the dashboard are interactive only in focus mode. See steps 3 and 4.
+
+1. Scroll down and tap the "This Year's Sales, Last Year's Sales" filled line chart.
 
     ![Tap a tile to go to focus mode](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-tile-fave.png)
 
     It opens in focus mode.
 
-7. In focus mode, tap **Apr** in the chart. The values for April appear at the top of the chart.
+1. In focus mode, tap **Apr** in the chart. The values for April appear at the top of the chart.
 
     ![Tile in focus mode](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tile-focus.png)
 
-8. Tap the Report icon ![Report icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report-icon.png) at the bottom of the screen (on Android devices this may be at the top of the screen). The report related to this tile opens in landscape mode.
+1. Tap the Report icon ![Report icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report-icon.png) at the bottom of the screen (on Android devices this may be at the top of the screen). The report related to this tile opens in landscape mode.
 
     ![Report in landscape mode](././media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
 
-9. Tap the yellow "040 - Juniors" bubble in the bubble chart. Note how it highlights related values in the other charts. 
+1. Tap the yellow "040 - Juniors" bubble in the bubble chart. Note how it highlights related values in the other charts. 
 
     ![Highlight values in a report](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-cross-highlight.png)
 
-10. Swipe up to see a toolbar across the bottom, and tap **More options (...)**.
+1. Swipe up to see a toolbar across the bottom, and tap **More options (...)**.
 
     ![Screenshot shows the location of the More options control in the lower right corner.](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
 
 
-11. Scroll down the list and select **Annotate**.
+1. Scroll down the list and select **Annotate**.
 
     ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil2.png)
 
-12. On the annotate toolbar, tap the smiley-face icon and then tap the report page where you'd like to add some smiley faces.
+1. On the annotate toolbar, tap the smiley-face icon and then tap the report page where you'd like to add some smiley faces.
  
     ![Annotate the page](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-annotate.png)
 
-13. Now tap **Share** in the upper-right corner.
+1. Now tap **Share** in the upper-right corner.
 
-14. Choose the way you'd like to share the report.  
+1. Choose the way you'd like to share the report.  
 
     ![New email message with snapshot and link](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-send-snapshot.png)
 
