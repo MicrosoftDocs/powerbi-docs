@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: engagement-fy23
-ms.date: 06/03/2024
+ms.date: 12/26/2024
 ---
 
 # Generate an embed token
@@ -98,6 +98,8 @@ For these APIs:
 * For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Microsoft Entra token used to call the `GenerateToken` API. Therefore, if you use the same Microsoft Entra token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
 
 * If the semantic model and item to be embedded are in two different workspaces, the *service principal* or *master user* must be at least a member of both workspaces.
+
+* Embedding items using Data Lake Storage (DLS) requires V2 of the [Generate token](/rest/api/power-bi/embed-token/generate-token) API.
 
 * You can't create an embed token for [**My workspace**](../../consumer/end-user-workspaces.md#types-of-workspaces).
 

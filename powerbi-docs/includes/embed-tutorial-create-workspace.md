@@ -5,11 +5,11 @@ services: powerbi
 author: mberdugo
 ms.author: monaberdugo
 ms.topic: include
-ms.date: 2/09/2024
+ms.date: 12/26/2024
 ms.custom: include file
 ---
 
-Microsoft Fabric keeps your reports, dashboards, and tiles in a workspace. To embed these items, you need to create them and upload them into a workspace.
+Microsoft Fabric keeps your reports, dashboards, and tiles in a workspace. To embed these items, you need to create them and upload them into a workspace. You can also embed items using [Direct Lake](/fabric/get-started/direct-lake-overview) mode, which allows you to connect directly to your data lake without having to import its data (preview).
 
 >[!TIP]
 >If you already have a workspace, you can skip this step.
