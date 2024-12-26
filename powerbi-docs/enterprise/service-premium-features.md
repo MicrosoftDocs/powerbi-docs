@@ -41,6 +41,6 @@ This article lists the main Power BI Premium features. Most of the features appl
 |[Virtual network data gateway](/data-integration/vnet/overview) (preview) | Connect from Microsoft Cloud to Azure using a virtual network (VNet) |
 |[XMLA read/write](service-premium-connect-tools.md) |Enable XMLA endpoint |
 
-## Next steps
+## Related content
 
 * [What is Power BI Premium?](service-premium-what-is.md)

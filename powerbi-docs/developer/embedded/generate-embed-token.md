@@ -99,7 +99,7 @@ For these APIs:
 
 * If the semantic model and item to be embedded are in two different workspaces, the *service principal* or *master user* must be at least a member of both workspaces.
 
-* Embedding items using Data Lake Storage (DLS) requires V2 of the [Generate token](/rest/api/power-bi/embed-token/generate-token) API.
+* Embedding items using Data Lake Storage (DLS) requires V2 of the [Generate token API](/rest/api/power-bi/embed-token/generate-token).
 
 * You can't create an embed token for [**My workspace**](../../consumer/end-user-workspaces.md#types-of-workspaces).
 
