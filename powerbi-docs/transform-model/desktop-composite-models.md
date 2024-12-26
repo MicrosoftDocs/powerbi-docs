@@ -364,7 +364,7 @@ The following **limitations** apply when working with DirectQuery for Power BI s
     * Data imported from Excel or CSV files on the Service
     * Usage metrics
     * Semantic models stored in “My workspace”
-* When using Power BI Embedded with semantic models that include a DirectQuery connection to an Analysis Services model, you must include the source semantic model IDs and AAS data source identity when using [Generate Token](/rest/api/power-bi/embed-token/generate-token).
+* Using Power BI Embedded with semantic models that include a DirectQuery connection to an external Analysis Services model (Azure Analysis Services/SQL Server Analysis Services) isn't currently supported.
 * Publishing a report to web using the publish to web feature isn't supported.
 * Calculation groups on remote sources aren't supported, with undefined query results.
 - Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication are supported in the Power BI service with an assigned [shareable cloud connection](../connect-data/service-create-share-cloud-data-sources.md) and / or [granular access control](../connect-data/service-create-share-cloud-data-sources.md#granular-access-control).
