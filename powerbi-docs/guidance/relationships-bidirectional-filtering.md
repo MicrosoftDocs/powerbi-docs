@@ -22,7 +22,7 @@ Generally, we recommend that you minimize the use of bi-directional relationship
 However, there are three scenarios when bi-directional filtering can solve specific requirements:
 
 - [Special model relationships](#special-model-relationships)
-- [Slicer items "with data"](#slicer-items-with-data)
+- [Slicer options "with data"](#slicer-options-with-data)
 - [Dimension-to-dimension analysis](#dimension-to-dimension-analysis)
 
 ## Special model relationships
@@ -86,7 +86,7 @@ Total Quantity = SUM(Sales[Quantity])
 
 To show the product slicer options "with data", it simply needs to be filtered by the `Total Quantity` measure by using the "is not blank" condition.
 
-:::image type="content" source="media/relationships-bidirectional-filtering/filter-product-slicer-measure-is-not-blank.svg" alt-text="Diagram showing that the Filters pane for the Product slicer now filters by "Total Quantity is not blank." border="false":::
+:::image type="content" source="media/relationships-bidirectional-filtering/filter-product-slicer-measure-is-not-blank.svg" alt-text="Diagram showing that the Filters pane for the Product slicer now filters by Total Quantity is not blank." border="false":::
 
 ## Dimension-to-dimension analysis
 
