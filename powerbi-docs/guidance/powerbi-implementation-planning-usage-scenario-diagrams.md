@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 12/09/2023
+ms.date: 12/30/2024
 ---
 
 # Power BI usage scenario diagrams

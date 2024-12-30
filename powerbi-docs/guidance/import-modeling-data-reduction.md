@@ -1,14 +1,14 @@
 ---
 title: "Data reduction techniques for Import modeling"
 description: "Understand different techniques to help reduce the data loaded into Import data models."
-author: peter-myers
-ms.author: v-pemyers
+author: denglishbi
+ms.author: daengli
 ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/25/2024
+ms.date: 12/30/2024
 ---
 
 # Data reduction techniques for Import modeling
@@ -41,7 +41,7 @@ We recommend that you design models with exactly the right number of columns bas
 
 You should load model tables with as few rows as possible. You can achieve that by loading filtered rowsets into model tables for two different reasons: to filter by time or by entity. Removing rows is sometimes referred to as _horizontal filtering_.
 
-- **Filtering by time** involves limiting the amount of _data history_ loaded into fact tables (and limiting the date rows loaded into the model date tables). We recommend that you don't load all available history by default, unless it's a known reporting requirement. You can implement time-based Power Query filters with parameters, and even set them to use relative time periods (relative to the refresh date—for example, the past five years). Also, bear in mind that a retrospective change to time filters won't break reports; it will just result in less (or more) data history available in reports.
+- **Filtering by time** involves limiting the amount of _data history_ loaded into [fact tables](star-schema.md#fact-tables) (and limiting the date rows loaded into the model date tables). We recommend that you don't load all available history by default, unless it's a known reporting requirement. You can implement time-based Power Query filters with parameters, and even set them to use relative time periods (relative to the refresh date—for example, the past five years). Also, bear in mind that a retrospective change to time filters won't break reports; it will just result in less (or more) data history available in reports.
 - **Filtering by entity** involves loading a subset of source data into the model. For example, instead of loading sales facts for all sales regions, only load facts for a single region. This design approach results in many smaller models, and it can also eliminate the need to define [row-level security (RLS)](rls-guidance.md)—but it requires granting specific semantic model permissions in the Power BI service, and creating duplicate reports that connect to each semantic model. You can use Power Query parameters and Power BI Template files to simplify management and publication. For more information, see [Create and use report templates in Power BI Desktop](../create-reports/desktop-templates.md).
 
 ## Group by and summarize

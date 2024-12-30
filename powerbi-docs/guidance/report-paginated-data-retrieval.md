@@ -1,6 +1,6 @@
 ---
-title: Data retrieval guidance for paginated reports
-description: Guidance for creating data sources and datasets for Power BI paginated reports.
+title: "Data retrieval guidance for paginated reports"
+description: "Guidance for creating data sources and datasets for Power BI paginated reports."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 12/15/2022
+ms.date: 12/30/2024
 ---
 
 # Data retrieval guidance for paginated reports
@@ -24,7 +24,7 @@ If you can choose the data source type (possibly the case in a new project), we 
 > [!NOTE]
 > While it's currently not possible to connect to on-premises databases using SSO, you can still enforce row-level permissions. It's done by passing the **UserID** built-in field to a dataset query parameter. The data source will need to store User Principal Name (UPN) values in a way that it can correctly filter query results.
 >
-> For example, consider that each salesperson is stored as a row in the **Salesperson** a table.  The table has columns for UPN, and also the salesperson's sales region. At query time, the table is filtered by the UPN of the report user, and it's also related to sales facts using an inner join. This way, the query effectively filters sales fact rows to those of the report user's sales region.
+> For example, consider that each salesperson is stored as a row in the **Salesperson** a table.  The table has columns for UPN, and also the salesperson's sales region. At query time, the table is filtered by the UPN of the report user, and it's also related to sales facts using an `INNER JOIN`. This way, the query effectively filters sales fact rows to those of the report user's sales region.
 
 ### Relational data sources
 
@@ -148,5 +148,5 @@ When a report is run, all datasets are evaluated—even if they're not bound to 
 For more information related to this article, check out the following resources:
 
 - [Supported data sources for Power BI paginated reports](../paginated-reports/paginated-reports-data-sources.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

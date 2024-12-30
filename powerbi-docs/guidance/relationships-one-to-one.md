@@ -19,8 +19,8 @@ This article targets you as a data modeler who works with Power BI Desktop. It p
 
 There are two scenarios that involve one-to-one relationships:
 
-- **[Degenerate dimensions](#degenerate-dimensions)**: You can derive a [degenerate dimension](star-schema.md#degenerate-dimensions) from a fact table.
-- **[Row data spans across tables](#row-data-spans-across-tables)**: A single business entity or subject is loaded as two (or more) model tables, possibly because their data is sourced from different data stores. This scenario can be common for dimension tables. For example, master product details are stored in an operational sales system, and supplementary product details are stored in a different source.
+- **[Degenerate dimensions](#degenerate-dimensions)**: You can derive a [degenerate dimension](star-schema.md#degenerate-dimensions) from a [fact table](star-schema.md#fact-tables).
+- **[Row data spans across tables](#row-data-spans-across-tables)**: A single business entity or subject is loaded as two (or more) model tables, possibly because their data is sourced from different data stores. This scenario can be common for [dimension tables](star-schema.md#dimension-tables). For example, master product details are stored in an operational sales system, and supplementary product details are stored in a different source.
 
     It's unusual, however, that you'd relate two fact tables with a one-to-one relationship. That's because both fact tables would need to have the same dimensionality and granularity. Also, each fact table would need unique columns to allow the model relationship to be created.
 
