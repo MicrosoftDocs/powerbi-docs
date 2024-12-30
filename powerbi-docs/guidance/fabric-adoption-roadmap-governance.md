@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap: Governance
@@ -22,9 +22,9 @@ The term _data governance_ is a misnomer. The primary focus for governance isn't
 
 When focused on self-service data and business intelligence (BI), the primary goals of governance are to achieve the proper balance of:
 
-- **User empowerment:** Empower the internal user community to be productive and efficient, within requisite guardrails.
-- **Regulatory compliance:** Comply with the organization's industry, governmental, and contractual regulations.
-- **Internal requirements:** Adhere to the organization's internal requirements.
+- **User empowerment**: Empower the internal user community to be productive and efficient, within requisite guardrails.
+- **Regulatory compliance**: Comply with the organization's industry, governmental, and contractual regulations.
+- **Internal requirements**: Adhere to the organization's internal requirements.
 
 The optimal balance between control and empowerment will differ between organizations. It's also likely to differ among different business units within an organization. You'll be most successful with a platform like Fabric when you put as much emphasis on user empowerment as on clarifying its practical usage within established guardrails.
 
@@ -71,11 +71,11 @@ There are three primary timing methods organizations take when introducing Fabri
 
 The methods in the above diagram include:
 
-| **Method** | **Strategy followed** |
+| Method | Strategy followed |
 | :-: | --- |
-| ![Method 1.](../media/legend-number/legend-number-01-fabric.svg) | **Roll out Fabric first, then introduce governance:** Fabric is made widely available to users in the organization as a new self-service data and BI tool. Then, at some time in the future, a governance effort begins. This method prioritizes agility. |
-| ![Method 2.](../media/legend-number/legend-number-02-fabric.svg) | **Full governance planning first, then roll out Fabric:** Extensive governance planning occurs prior to permitting users to begin using Fabric. This method prioritizes control and stability. |
-| ![Method 3.](../media/legend-number/legend-number-03-fabric.svg) | **Iterative governance planning with rollouts of Fabric in stages:** Just enough governance planning occurs initially. Then Fabric is iteratively rolled out in stages to individual teams while iterative governance enhancements occur. This method equally prioritizes agility and governance. |
+| ![Method 1.](../media/legend-number/legend-number-01-fabric.svg) | **Roll out Fabric first, then introduce governance**: Fabric is made widely available to users in the organization as a new self-service data and BI tool. Then, at some time in the future, a governance effort begins. This method prioritizes agility. |
+| ![Method 2.](../media/legend-number/legend-number-02-fabric.svg) | **Full governance planning first, then roll out Fabric**: Extensive governance planning occurs prior to permitting users to begin using Fabric. This method prioritizes control and stability. |
+| ![Method 3.](../media/legend-number/legend-number-03-fabric.svg) | **Iterative governance planning with rollouts of Fabric in stages**: Just enough governance planning occurs initially. Then Fabric is iteratively rolled out in stages to individual teams while iterative governance enhancements occur. This method equally prioritizes agility and governance. |
 
 Choose method 1 when Fabric is already used for self-service scenarios, and you're ready to start working in a more efficient manner.
 
@@ -89,13 +89,13 @@ Each method is described in the following sections.
 
 Method 1 prioritizes agility and speed. It allows users to quickly get started creating solutions. This method occurs when Fabric has been made widely available to users in the organization as a new self-service data and BI tool. Quick wins and some successes are achieved. At some point in the future, a governance effort begins, usually to bring order to an unacceptable level of chaos since the self-service user population didn't receive sufficient guidance.
 
-**Pros:**
+**Pros**:
 
 - Fastest to get started
 - Highly capable users can get things done quickly
 - Quick wins are achieved
 
-**Cons:**
+**Cons**:
 
 - Higher effort to establish governance once Fabric is used prevalently throughout the organization
 - Resistance from self-service users who are asked to change what they've been doing
@@ -108,12 +108,12 @@ See other possible cons in the [Governance challenges](#governance-challenges) s
 
 Method 2 prioritizes control and stability. It lies at the opposite end of the spectrum from method 1. Method 2 involves doing extensive governance planning before rolling out Fabric. This situation is most likely to occur when the implementation of Fabric is led by IT. It's also likely to occur when the organization operates in a highly regulated industry, or when an existing data governance board imposes significant prerequisites and up-front requirements.
 
-**Pros:**
+**Pros**:
 
 - More fully prepared to meet regulatory requirements
 - More fully prepared to support the user community
 
-**Cons:**
+**Cons**:
 
 - Favors enterprise content development more than self-service
 - Slower to allow the user population to begin to get value and improve decision-making
@@ -123,13 +123,13 @@ Method 2 prioritizes control and stability. It lies at the opposite end of the s
 
 Method 3 seeks a balance between agility and governance. It's an ideal scenario that does _just enough_ governance planning upfront. Frequent and continual governance improvements iteratively occur over time alongside Fabric development projects that deliver value.
 
-**Pros:**
+**Pros**:
 
 - Puts equal priority on governance and user productivity
 - Emphasizes a _learning as you go_ mentality
 - Encourages iterative releases to groups of users in stages
 
-**Cons:**
+**Cons**:
 
 - Requires a high level of communication to be successful with agile governance practices
 - Requires additional discipline to keep documentation and training current
@@ -200,7 +200,7 @@ Some potential governance planning activities and outputs that you might find va
 
 ### Strategy
 
-**Key activities:**
+**Key activities**:
 
 - Conduct a series of workshops to gather information and assess the current state of data culture, adoption, and data and BI practices. For guidance about how to gather information and define the current state of BI adoption, including governance, see [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md).
 - Use the current state assessment and information gathered to define the desired future state, including governance objectives. For guidance about how to use this current state definition to decide on your desired future state, see [BI tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md).
@@ -212,7 +212,7 @@ Some potential governance planning activities and outputs that you might find va
 - Assess internal factors such as organizational readiness, maturity levels, and key challenges.
 - Assess external factors such as risk, exposure, regulatory, and legal requirements—including regional differences.
 
-**Key output:**
+**Key output**:
 
 - Business case with cost/benefit analysis
 - Approved governance objectives, focus, and priorities that are in alignment with high-level business objectives
@@ -225,7 +225,7 @@ Some potential governance planning activities and outputs that you might find va
 
 ### People
 
-**Key activities:**
+**Key activities**:
 
 - Establish a governance board and identify key stakeholders.
 - Determine focus, scope, and a set of responsibilities for the governance board.
@@ -234,7 +234,7 @@ Some potential governance planning activities and outputs that you might find va
 - Define roles and responsibilities.
 - Confirm who has decision-making, approval, and veto authority.
 
-**Key output:**
+**Key output**:
 
 - Charter for the governance board
 - Charter and priorities for the COE
@@ -246,7 +246,7 @@ Some potential governance planning activities and outputs that you might find va
 
 ### Policies and processes
 
-**Key activities:**
+**Key activities**:
 
 - Analyze immediate pain points, issues, risks, and areas to improve the user experience.
 - Prioritize data policies to be addressed by order of importance.
@@ -254,7 +254,7 @@ Some potential governance planning activities and outputs that you might find va
 - Determine how new data policies will be socialized.
 - Decide to what extent data policies might differ or be customized for different groups.
 
-**Key output:**
+**Key output**:
 
 - Process for how data policies and documentation will be defined, approved, communicated, and maintained
 - Plan for requesting valid exceptions and departures from documented policies
@@ -263,7 +263,7 @@ Some potential governance planning activities and outputs that you might find va
 
 The implementation of the governance program should be planned and managed as a series of projects.
 
-**Key activities:**
+**Key activities**:
 
 - Establish a timeline with priorities and milestones.
 - Identify related initiatives and dependencies.
@@ -272,7 +272,7 @@ The implementation of the governance program should be planned and managed as a 
 - Obtain budget approval and funding.
 - Establish a tangible way to track progress.
 
-**Key output:**
+**Key output**:
 
 - Project plan with iterations, dependencies, and sequencing
 - Cadence for retrospectives with a focus on continual improvements
@@ -304,23 +304,23 @@ The following list includes items that you might choose to prioritize when intro
 
 - Recommendations and requirements for [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md)
 - Recommendations and requirements for [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md)
-- Recommendations and requirements for content [distribution and sharing](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) with colleagues, as well as for [external users](/power-bi/enterprise/service-admin-azure-ad-b2b), such as customers, partners, or vendors
+- Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](../enterprise/service-admin-azure-ad-b2b.md), such as customers, partners, or vendors
 - How users are permitted to work with regulated data and highly sensitive data
 - Allowed use of unverified data sources that are unknown to IT
 - When manually maintained data sources, such as Excel or flat files, are permitted
 - Who is permitted to [create a workspace](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-creation-permissions)
-- How to manage [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces) effectively
+- How to manage [workspaces](../collaborate-share/service-create-the-new-workspaces.md) effectively
 - How [personal workspaces](powerbi-implementation-planning-workspaces-workspace-level-planning.md#appropriate-use-of-personal-workspaces) are effectively used
 - Which workspaces are assigned to [Fabric capacity](/fabric/enterprise/licenses#capacity)
 - Who is allowed to be a [Fabric administrator](/fabric/admin/microsoft-fabric-admin)
-- [Security](/power-bi/enterprise/service-admin-power-bi-security), privacy, and data protection requirements, and allowed actions for content assigned to each [sensitivity label](/power-bi/enterprise/service-security-apply-data-sensitivity-labels)
-- Allowed or encouraged use of [personal gateways](/power-bi/connect-data/service-gateway-personal-mode)
+- [Security](../enterprise/service-admin-power-bi-security.md), privacy, and data protection requirements, and allowed actions for content assigned to each [sensitivity label](../enterprise/service-security-apply-data-sensitivity-labels.md)
+- Allowed or encouraged use of [personal gateways](../connect-data/service-gateway-personal-mode.md)
 - Allowed or encouraged use of [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses
-- Requirements for who can [certify](/power-bi/collaborate-share/service-endorse-content) content, as well as requirements that must be met
+- Requirements for who can [certify](../collaborate-share/service-endorse-content.md) content, as well as requirements that must be met
 - Application lifecycle management for managing content through its entire lifecycle, including [development, test, and production stages](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)
 - Additional requirements applicable to critical content, such as data quality verifications and documentation
 - Requirements to use standardized master data and common data definitions to improve consistency across data assets
-- Recommendations and requirements for use of [external tools](/power-bi/transform-model/desktop-external-tools) by advanced content creators
+- Recommendations and requirements for use of [external tools](../transform-model/desktop-external-tools.md) by advanced content creators
 
 If you don't make governance decisions and communicate them well, users will use their own judgment for how things should work—and that often results in inconsistent approaches to common tasks.
 
@@ -351,7 +351,7 @@ A data policy should include:
 
 Here are three common data policy examples you might choose to prioritize.
 
-| **Policy** | **Description** |
+| Policy | Description |
 | --- | --- |
 | Data ownership policy | Specifies when an owner is required for a data asset, and what the data owner's responsibilities include, such as: supporting colleagues who view the content, maintaining appropriate confidentiality and security, and ensuring compliance. |
 | Data certification (endorsement) policy | Specifies the process that is followed to certify content. Requirements might include activities such as: data accuracy validation, data source and lineage review, technical review of the data model, security review, and documentation review. |
@@ -364,24 +364,24 @@ Here are three common data policy examples you might choose to prioritize.
 
 Governance decisions will rarely be one-size-fits-all across the entire organization. When practical, it's wise to start with standardized policies, and then implement exceptions as needed. Having a clearly defined strategy for how policies will be handled for centralized and decentralized teams will make it much easier to determine how to handle exceptions.
 
-**Pros of organization-wide policies:**
+**Pros of organization-wide policies**:
 
 - Much easier to manage and maintain
 - Greater consistency
 - Encompasses more use cases
 - Fewer policies overall
 
-**Cons of organization-wide policies:**
+**Cons of organization-wide policies**:
 
 - Inflexible
 - Less autonomy and empowerment
 
-**Pros of departmental-scope policies:**
+**Pros of departmental-scope policies**:
 
 - Expectations are clearer when tailored to a specific group
 - Customizable and flexible
 
-**Cons of departmental-scope policies:**
+**Cons of departmental-scope policies**:
 
 - More work to manage
 - More policies that are siloed
@@ -406,12 +406,12 @@ Governance accountability is about checks and balances.
 
 Starting at the bottom, the levels in the above diagram include:
 
-| **Level** | **Description** |
+| Level | Description |
 | :-: | --- |
-| ![Level 1.](../media/legend-number/legend-number-01-fabric.svg) | **Operational - Business units:** Level 1 is the foundation of a well-governed system, which includes users within the business units performing their work. Self-service data and BI creators have a lot of responsibilities related to authoring, publishing, sharing, security, and data quality. Self-service data and BI consumers also have responsibilities for the proper use of data. |
-| ![Level 2.](../media/legend-number/legend-number-02-fabric.svg) | **Tactical - Supporting teams:** Level 2 includes several groups that support the efforts of the users in the business units. Supporting teams include the COE, enterprise data and BI, the data governance office, as well as other ancillary teams. Ancillary teams can include IT, security, HR, and legal. A change control board is included here as well. |
-| ![Level 3.](../media/legend-number/legend-number-03-fabric.svg) | **Tactical - Audit and compliance:** Level 3 includes internal audit, risk management, and compliance teams. These teams provide guidance to levels 1 and 2. They also provide enforcement when necessary. |
-| ![Level 4.](../media/legend-number/legend-number-04-fabric.svg) | **Strategic - Executive sponsor and steering committee:** The top level includes the executive-level oversight of strategy and priorities. This level handles any escalated issues that couldn't be solved at lower levels. Therefore, it's important to have a leadership team with sufficient authority to be able to make decisions when necessary. |
+| ![Level 1.](../media/legend-number/legend-number-01-fabric.svg) | **Operational - Business units**: Level 1 is the foundation of a well-governed system, which includes users within the business units performing their work. Self-service data and BI creators have a lot of responsibilities related to authoring, publishing, sharing, security, and data quality. Self-service data and BI consumers also have responsibilities for the proper use of data. |
+| ![Level 2.](../media/legend-number/legend-number-02-fabric.svg) | **Tactical - Supporting teams**: Level 2 includes several groups that support the efforts of the users in the business units. Supporting teams include the COE, enterprise data and BI, the data governance office, as well as other ancillary teams. Ancillary teams can include IT, security, HR, and legal. A change control board is included here as well. |
+| ![Level 3.](../media/legend-number/legend-number-03-fabric.svg) | **Tactical - Audit and compliance**: Level 3 includes internal audit, risk management, and compliance teams. These teams provide guidance to levels 1 and 2. They also provide enforcement when necessary. |
+| ![Level 4.](../media/legend-number/legend-number-04-fabric.svg) | **Strategic - Executive sponsor and steering committee**: The top level includes the executive-level oversight of strategy and priorities. This level handles any escalated issues that couldn't be solved at lower levels. Therefore, it's important to have a leadership team with sufficient authority to be able to make decisions when necessary. |
 
 > [!IMPORTANT]
 > Everyone has a responsibility to adhere to policies for ensuring that organizational data is secure, protected, and well-managed as an organizational asset. Sometimes this is cited as _everyone is a data steward_. To make this a reality, start with the users in the business units (level 1 described above) as the foundation.
@@ -422,7 +422,7 @@ Once you have a sense for your governance strategy, roles and responsibilities s
 
 Governance team structure, roles (including terminology), and responsibilities vary widely among organizations. Very generalized roles are described in the table below. In some cases, the same person could serve multiple roles. For instance, the Chief Data Officer (CDO) could also be the executive sponsor.
 
-| **Role** | **Description** |
+| Role | Description |
 | --- | --- |
 | Chief Data Officer or Chief Analytics Officer | Defines the strategy for use of data as an enterprise asset. Oversees enterprise-wide governance guidelines and policies. |
 | Data governance board | Steering committee with members from each business unit who, as domain owners, are empowered to make enterprise governance decisions. They make decisions on behalf of the business unit _and_ in the best interest of the organization. Provides approvals, decisions, priorities, and direction to the enterprise data governance team and working committees. |
@@ -450,18 +450,18 @@ Governance team structure, roles (including terminology), and responsibilities v
 **Checklist** - Considerations and key actions you can take to establish or strengthen your governance initiatives.
 
 > [!div class="checklist"]
-> - **Align goals and guiding principles:** Confirm that the high-level goals and guiding principles of the data culture goals are clearly documented and communicated. Ensure that alignment exists for any new governance guidelines or policies.
-> - **Understand what's currently happening:** Ensure that you have a deep understanding of how Fabric is currently used for self-service and enterprise data and BI scenarios. Document opportunities for improvement. Also, document strengths and good practices that would be helpful to scale out more broadly.
-> - **Prioritize new governance guidelines and policies:** For prioritizing which new guidelines or policies to create, select an important pain point, high priority need, or known risk for a data domain. It should have significant benefit and can be achieved with a feasible level of effort. When you implement your first governance guidelines, choose something users are likely to support because the change is low impact, or because they are sufficiently motivated to make a change.
-> - **Create a schedule to review policies:** Determine the cadence for how often data policies are reevaluated. Reassess and adjust when needs change.
-> - **Decide how to handle exceptions:** Determine how conflicts, issues, and requests for exceptions to documented policies will be handled.
-> - **Understand existing data assets:** Confirm that you understand what critical data assets exist. Create an inventory of ownership and lineage, if necessary. Keep in mind that you can't govern what you don't know about.
-> - **Verify executive sponsorship:** Confirm that you have support and sufficient attention from your [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md), as well as from business unit leaders.
-> - **Prepare an action plan:** Include the following key items:
->   - **Initial priorities:** Select one data domain or business unit at a time.
->   - **Timeline:** Work in iterations long enough to accomplish meaningful progress, yet short enough to periodically adjust.
->   - **Quick wins:** Focus on tangible, tactical, and incremental progress.
->   - **Success metrics:** Create measurable metrics to evaluate progress.
+> - **Align goals and guiding principles**: Confirm that the high-level goals and guiding principles of the data culture goals are clearly documented and communicated. Ensure that alignment exists for any new governance guidelines or policies.
+> - **Understand what's currently happening**: Ensure that you have a deep understanding of how Fabric is currently used for self-service and enterprise data and BI scenarios. Document opportunities for improvement. Also, document strengths and good practices that would be helpful to scale out more broadly.
+> - **Prioritize new governance guidelines and policies**: For prioritizing which new guidelines or policies to create, select an important pain point, high priority need, or known risk for a data domain. It should have significant benefit and can be achieved with a feasible level of effort. When you implement your first governance guidelines, choose something users are likely to support because the change is low impact, or because they are sufficiently motivated to make a change.
+> - **Create a schedule to review policies**: Determine the cadence for how often data policies are reevaluated. Reassess and adjust when needs change.
+> - **Decide how to handle exceptions**: Determine how conflicts, issues, and requests for exceptions to documented policies will be handled.
+> - **Understand existing data assets**: Confirm that you understand what critical data assets exist. Create an inventory of ownership and lineage, if necessary. Keep in mind that you can't govern what you don't know about.
+> - **Verify executive sponsorship**: Confirm that you have support and sufficient attention from your [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md), as well as from business unit leaders.
+> - **Prepare an action plan**: Include the following key items:
+>   - **Initial priorities**: Select one data domain or business unit at a time.
+>   - **Timeline**: Work in iterations long enough to accomplish meaningful progress, yet short enough to periodically adjust.
+>   - **Quick wins**: Focus on tangible, tactical, and incremental progress.
+>   - **Success metrics**: Create measurable metrics to evaluate progress.
 
 ## Questions to ask
 
@@ -496,7 +496,7 @@ Use questions like those found below to assess governance.
 
 The following maturity levels will help you assess the current state of your governance initiatives.
 
-| **Level** | **State of governance** |
+| Level | State of governance |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;Due to a lack of governance planning, the good data management and informal governance practices that are occurring are overly reliant on judgment and experience level of individuals. <br/><br/>&bull;&nbsp;There's a significant reliance on undocumented tribal knowledge. |
 | 200: Repeatable | &bull;&nbsp;Some areas of the organization have made a purposeful effort to standardize, improve, and document their data management and governance practices. <br/><br/>&bull;&nbsp;An initial governance approach exists. Incremental progress is being made. |

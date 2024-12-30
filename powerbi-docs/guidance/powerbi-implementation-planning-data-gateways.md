@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 02/13/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Data gateways
@@ -17,13 +17,13 @@ ms.date: 02/13/2024
 
 This article helps you to plan and implement on-premises data gateways and virtual network (VNet) data gateways for Microsoft Fabric. It's primarily targeted at:
 
-- **Fabric administrators:** The administrators who are responsible for overseeing Fabric in the organization. Fabric administrators might need to collaborate with Power Platform administrators, database administrators, information security teams, networking teams, and other relevant teams.
-- **Gateway administrators:** The individuals who are responsible for implementing, managing, and monitoring gateways and their data source connections.
-- **Gateway contributors:** The decentralized teams and individuals who are responsible for adding and managing gateway data source connections.
-- **Center of Excellence (COE), IT, and BI teams:** The teams that are responsible for supporting users that need to access, connect to, and refresh data.
-- **Content owners and creators:** The teams and individuals who use gateways to connect to their data sources and refresh Fabric data items.
+- **Fabric administrators**: The administrators who are responsible for overseeing Fabric in the organization. Fabric administrators might need to collaborate with Power Platform administrators, database administrators, information security teams, networking teams, and other relevant teams.
+- **Gateway administrators**: The individuals who are responsible for implementing, managing, and monitoring gateways and their data source connections.
+- **Gateway contributors**: The decentralized teams and individuals who are responsible for adding and managing gateway data source connections.
+- **Center of Excellence (COE), IT, and BI teams**: The teams that are responsible for supporting users that need to access, connect to, and refresh data.
+- **Content owners and creators**: The teams and individuals who use gateways to connect to their data sources and refresh Fabric data items.
 
-To access source data for Power BI semantic models, dataflows, and other Fabric data items, you might need a _data gateway_. A [data gateway](/power-bi/connect-data/service-gateway-onprem) securely transfers data between private networks or on-premises data sources and cloud services, including Fabric.
+To access source data for Power BI semantic models, dataflows, and other Fabric data items, you might need a _data gateway_. A [data gateway](../connect-data/service-gateway-onprem.md) securely transfers data between private networks or on-premises data sources and cloud services, including Fabric.
 
 > [!NOTE]
 > This article provides an overview of gateways. It focuses on key considerations and actions for planning and implementing gateways to support your Fabric content.
@@ -41,8 +41,8 @@ Gateways are often integral to successful Power BI and Fabric implementations. A
 
 You typically plan gateway implementation during two distinct stages.
 
-- **[Tenant setup](powerbi-implementation-planning-tenant-setup.md):** When you prepare to implement, or [migrate](powerbi-migration-overview.md) to, Fabric, you should assess whether any data sources need a gateway. Gateway planning activities are also relevant for tenant-level planning of [security](powerbi-implementation-planning-security-tenant-level-planning.md), [workspaces](powerbi-implementation-planning-workspaces-tenant-level-planning.md), and [auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#data-gateway-module).
-- **[BI solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md):** When planning a new BI solution, you should evaluate whether the solution requires a gateway while you gather [technical requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-technical-requirements) for the new solution. You might also need a gateway when adding a new data source to an existing solution.
+- **[Tenant setup](powerbi-implementation-planning-tenant-setup.md)**: When you prepare to implement, or [migrate](powerbi-migration-overview.md) to, Fabric, you should assess whether any data sources need a gateway. Gateway planning activities are also relevant for tenant-level planning of [security](powerbi-implementation-planning-security-tenant-level-planning.md), [workspaces](powerbi-implementation-planning-workspaces-tenant-level-planning.md), and [auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#data-gateway-module).
+- **[BI solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md)**: When planning a new BI solution, you should evaluate whether the solution requires a gateway while you gather [technical requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-technical-requirements) for the new solution. You might also need a gateway when adding a new data source to an existing solution.
 
 Planning a gateway implementation begins by making key decisions, starting with whether you need a gateway or not.
 
@@ -62,8 +62,8 @@ In these situations, you need a gateway to:
 
 - **Refresh data in the Fabric portal.** This scenario applies when a content creator sets up data refresh in the Power BI service for a data source that requires a gateway.
 - **Create content in the Fabric portal.** This scenario applies when a content author creates or modifies data items (like a semantic model or dataflow) in the Power BI service that require a gateway.
-- **Support DirectQuery connections.** This scenario applies when a content creator publishes a semantic model that includes DirectQuery (or Dual) storage mode tables, and the data source for those tables requires a gateway. This usage scenario also covers the ability to enforce per-user data permissions that are defined in the data source. For example, a SQL Server database [can enforce row-level security (RLS)](/sql/relational-databases/security/row-level-security?view=sql-server-ver16&preserve-view=true), and Power BI can manage [single sign-on (SSO) connectivity](/power-bi/connect-data/service-gateway-sso-overview). For more information, see [Enforce data security based on consumer identity](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity).
-- **Live connect to SQL Server Analysis Services.** This scenario applies when a content creator publishes a report that uses a [live connection](/power-bi/connect-data/service-live-connect-dq-datasets#live-connection) to a SQL Server Analysis Services (SSAS) database.
+- **Support DirectQuery connections.** This scenario applies when a content creator publishes a semantic model that includes DirectQuery (or Dual) storage mode tables, and the data source for those tables requires a gateway. This usage scenario also covers the ability to enforce per-user data permissions that are defined in the data source. For example, a SQL Server database [can enforce row-level security (RLS)](/sql/relational-databases/security/row-level-security?view=sql-server-ver16&preserve-view=true), and Power BI can manage [single sign-on (SSO) connectivity](../connect-data/service-gateway-sso-overview.md). For more information, see [Enforce data security based on consumer identity](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity).
+- **Live connect to SQL Server Analysis Services.** This scenario applies when a content creator publishes a report that uses a [live connection](../connect-data/service-live-connect-dq-datasets.md#live-connection) to a SQL Server Analysis Services (SSAS) database.
 
 The following sections describe when you need a gateway.
 
@@ -93,12 +93,12 @@ This scenario is relevant when the data source:
 
 #### Host connector software
 
-Sometimes you might need a gateway to host supporting items that are required to connect to your data source. This software might include [custom data connectors](/power-bi/connect-data/service-gateway-custom-connectors), drivers, or libraries that you install on the gateway machine. The Power BI service doesn't have access to this software, so it's unable to refresh data sources that use it without relying on the gateway—even when you're connecting to a cloud data source.
+Sometimes you might need a gateway to host supporting items that are required to connect to your data source. This software might include [custom data connectors](../connect-data/service-gateway-custom-connectors.md), drivers, or libraries that you install on the gateway machine. The Power BI service doesn't have access to this software, so it's unable to refresh data sources that use it without relying on the gateway—even when you're connecting to a cloud data source.
 
 This scenario is relevant when you connect to a data source with connectors such as a:
 
 - **Driver.** An official connector could require installation of prerequisite drivers. For example, when connecting to an [Oracle](/power-query/connectors/oracle-database#prerequisites) database, you might need the Oracle Data Access Client software.
-- **Custom connector.** Some data sources might require custom or third-party connectors. For example, you might need a [custom connector](/power-bi/connect-data/desktop-connector-extensibility) to connect to a legacy or proprietary system.
+- **Custom connector.** Some data sources might require custom or third-party connectors. For example, you might need a [custom connector](../connect-data/desktop-connector-extensibility.md) to connect to a legacy or proprietary system.
 - **Client library.** Some data sources might require a supporting library to allow client tools to connect to it. For example, when connecting to an Analysis Services database, a [client library](/analysis-services/client-libraries) must be installed.
 - **ODBC or OLE DB connector.** An official connector might require an ODBC driver or OLE DB provider. For example, when connecting to [SAP HANA](/power-query/connectors/sap-hana/overview#prerequisites), you'll need an ODBC driver.
 
@@ -112,8 +112,8 @@ You need a gateway to use certain Power Query connectors or functions, such as t
 > [!TIP]
 > Consider the following alternatives when connecting to web page data sources.
 >
-> - **Web.Contents function:** If you're connecting to web content that doesn't need to be accessed through a browser, consider using the [Web.Contents](/powerquery-m/web-contents) function. This function doesn't require a gateway because it doesn't use a browser control.
-> - **Notebooks:** If you have Fabric capacity, consider using [Fabric notebooks](/fabric/data-engineering/how-to-use-notebook) to transform data. Notebooks don't require a gateway for webpage data and they can perform better when retrieving webpage information, compared to Power Query.
+> - **Web.Contents function**: If you're connecting to web content that doesn't need to be accessed through a browser, consider using the [Web.Contents](/powerquery-m/web-contents) function. This function doesn't require a gateway because it doesn't use a browser control.
+> - **Notebooks**: If you have Fabric capacity, consider using [Fabric notebooks](/fabric/data-engineering/how-to-use-notebook) to transform data. Notebooks don't require a gateway for webpage data and they can perform better when retrieving webpage information, compared to Power Query.
 
 This scenario is relevant when you connect to a data source by using connectors and drivers such as:
 
@@ -133,7 +133,7 @@ The gateway type you choose will depend on your requirements and the data source
 
 #### On-premises data gateway (standard mode)
 
-An [on-premises data gateway (standard mode)](/power-bi/connect-data/service-gateway-onprem-indepth) allows multiple users to connect to data sources that through a single shared gateway. Typically, you centrally install and manage standard mode gateways on an always-on VM. With a standard mode gateway, you can connect to data from multiple services, such as Fabric, Power BI, and other Power Platform services.
+An [on-premises data gateway (standard mode)](../connect-data/service-gateway-onprem-indepth.md) allows multiple users to connect to data sources that through a single shared gateway. Typically, you centrally install and manage standard mode gateways on an always-on VM. With a standard mode gateway, you can connect to data from multiple services, such as Fabric, Power BI, and other Power Platform services.
 
 The following diagram depicts a high-level overview of a standard mode gateway.
 
@@ -157,14 +157,14 @@ A standard mode gateway is required in the following specific situations.
 
 - Different Microsoft cloud services (like Power Apps and Fabric) and Fabric data items (like dataflows) need to query on-premises data sources (or cloud data sources that require a gateway).
 - Paginated reports need to query on-premises data sources (or cloud data sources that require a gateway).
-- Semantic models use [DirectQuery](/power-bi/connect-data/desktop-directquery-about#directquery-connections) storage mode that needs to connect to on-premises data sources (or cloud data sources that require a gateway).
-- SSAS [live connections](/power-bi/connect-data/desktop-directquery-about#live-connections).
+- Semantic models use [DirectQuery](../connect-data/desktop-directquery-about.md#directquery-connections) storage mode that needs to connect to on-premises data sources (or cloud data sources that require a gateway).
+- SSAS [live connections](../connect-data/desktop-directquery-about.md#live-connections).
 - Data sources depend on custom data connectors, drivers, or libraries.
 - When you anticipate the need to [relocate or migrate the gateway](/data-integration/gateway/service-gateway-migrate).
 
 #### Personal gateway
 
-An [on-premises gateway (personal mode)](/power-bi/connect-data/service-gateway-personal-mode), commonly known as a _personal gateway_, allows a user to connect to on-premises data sources that reside on the same machine. A user typically installs and manages a personal gateway from their own machine. With a personal gateway, users can't connect to data from other Power Platform services. They also can't share the gateway or connections with other users.
+An [on-premises gateway (personal mode)](../connect-data/service-gateway-personal-mode.md), commonly known as a _personal gateway_, allows a user to connect to on-premises data sources that reside on the same machine. A user typically installs and manages a personal gateway from their own machine. With a personal gateway, users can't connect to data from other Power Platform services. They also can't share the gateway or connections with other users.
 
 A personal gateway is intended for limited, personal use by a single individual. Typically, content creators install and use these gateways to conduct [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md). These gateways are limited to personal BI because they can't be shared. Additionally, a personal gateway requires that the user has machine rights and policy approval to download and install the [personal gateway software](https://www.microsoft.com/download/details.aspx?id=55768).
 
@@ -196,14 +196,14 @@ The diagram depicts the following concepts.
 To reiterate, a personal gateway is intended for limited, personal use by a single individual. However, there are two specific scenarios that require you to use a personal gateway.
 
 - Self-service content creators need to refresh published content that's connected to local data sources on their machine or other on-premises data sources.
-- Semantic models use [Python](/power-bi/connect-data/desktop-python-in-query-editor) or [R code](/power-bi/connect-data/desktop-r-in-query-editor) in Power Query.
+- Semantic models use [Python](../connect-data/desktop-python-in-query-editor.md) or [R code](../connect-data/desktop-r-in-query-editor.md) in Power Query.
 
 > [!TIP]
 > Whenever possible, avoid using a personal gateway. Instead, consider the following alternatives.
 >
-> - **SharePoint:** If you need to connect to local files, consider uploading those files to SharePoint or OneDrive for Work or School instead. You can connect to these files by using the [SharePoint folder](/power-query/connectors/sharepoint-folder) connector, which doesn't require a gateway.
-> - **OneLake:** If you need to connect to local files and you have Fabric capacity, you can also use [OneLake file explorer](/fabric/onelake/onelake-file-explorer) to upload and synchronize files with a [lakehouse](/fabric/data-engineering/lakehouse-overview). Connecting to a Fabric lakehouse doesn't require a gateway.
-> - **Notebooks:** If you need to transform data with Python or R and you have Fabric capacity, consider using [Fabric notebooks](/fabric/data-engineering/how-to-use-notebook) to transform the data and write it to tables stored in OneLake. Notebooks don't require a gateway to run Python or R code. You also benefit from the enhanced performance and additional features available in notebooks.
+> - **SharePoint**: If you need to connect to local files, consider uploading those files to SharePoint or OneDrive for Work or School instead. You can connect to these files by using the [SharePoint folder](/power-query/connectors/sharepoint-folder) connector, which doesn't require a gateway.
+> - **OneLake**: If you need to connect to local files and you have Fabric capacity, you can also use [OneLake file explorer](/fabric/onelake/onelake-file-explorer) to upload and synchronize files with a [lakehouse](/fabric/data-engineering/lakehouse-overview). Connecting to a Fabric lakehouse doesn't require a gateway.
+> - **Notebooks**: If you need to transform data with Python or R and you have Fabric capacity, consider using [Fabric notebooks](/fabric/data-engineering/how-to-use-notebook) to transform the data and write it to tables stored in OneLake. Notebooks don't require a gateway to run Python or R code. You also benefit from the enhanced performance and additional features available in notebooks.
 
 #### VNet gateway
 
@@ -250,9 +250,9 @@ It's important that gateways have high availability to avoid disruption caused b
 
 Here are the benefits of using a gateway cluster.
 
-- **Avoid a single point of failure:** [Failover](/data-integration/gateway/service-gateway-high-availability-clusters#high-availability-clusters-for-an-on-premises-data-gateway) avoids a single point of failure when the primary gateway machine becomes unavailable. If it becomes unavailable, queries are sent to another node in the cluster. Using a cluster of multiple machines reduces risk. It also increases uptime, which helps you meet your high availability and disaster recovery requirements.
-- **Better performance:** [Load balancing](/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster) improves performance when there's high concurrent usage. Load balancing distributes the workload by sending queries to other nodes in the cluster. That's helpful when the primary gateway is busy or when a single operation (like a long data refresh) consumes many resources.
-- **Avoid downtime:** When installing gateway software updates, you can perform the installation on one node of the cluster at a time. That way, it avoids taking the entire cluster offline.
+- **Avoid a single point of failure**: [Failover](/data-integration/gateway/service-gateway-high-availability-clusters#high-availability-clusters-for-an-on-premises-data-gateway) avoids a single point of failure when the primary gateway machine becomes unavailable. If it becomes unavailable, queries are sent to another node in the cluster. Using a cluster of multiple machines reduces risk. It also increases uptime, which helps you meet your high availability and disaster recovery requirements.
+- **Better performance**: [Load balancing](/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster) improves performance when there's high concurrent usage. Load balancing distributes the workload by sending queries to other nodes in the cluster. That's helpful when the primary gateway is busy or when a single operation (like a long data refresh) consumes many resources.
+- **Avoid downtime**: When installing gateway software updates, you can perform the installation on one node of the cluster at a time. That way, it avoids taking the entire cluster offline.
 
 > [!IMPORTANT]
 > We strongly recommend that you use gateway clusters for business-critical workloads.
@@ -274,7 +274,7 @@ Separating gateway clusters into different environments can:
 
 #### Regions
 
-To ensure good performance of data refreshes, it's important that you consider the [location](/power-bi/connect-data/service-gateway-deployment-guidance#location) of your data sources, gateways, and where your users are located. To reduce latency, you should install gateways as close to your data sources as possible. For this reason, you might need to install multiple gateway clusters to support different regions or tenants.
+To ensure good performance of data refreshes, it's important that you consider the [location](../connect-data/service-gateway-deployment-guidance.md#location) of your data sources, gateways, and where your users are located. To reduce latency, you should install gateways as close to your data sources as possible. For this reason, you might need to install multiple gateway clusters to support different regions or tenants.
 
 > [!CAUTION]
 > Ensure that your gateway installation complies with any data residency requirements for your organization.
@@ -286,12 +286,12 @@ To ensure good performance of data refreshes, it's important that you consider t
 
 **Checklist** - When planning a gateway implementation, key decisions and actions include:
 
-- **Create an inventory of data sources:** An inventory of your data sources allows you to verify and document which data sources need a gateway.
-- **Determine which situations require a gateway:** Consider how content creators and consumers work. Ensure that you're familiar with when a gateway is required. Create documentation and training for the user community.
-- **Decide on the type of gateway that you need:** Ensure that you validate any assumptions and assess possible limitations so that you're certain the selected gateway type meets your requirements.
-- **Avoid personal gateways:** Consider using a gateway in standard mode instead. Determine whether there are any personal gateway data sources that can be redirected to use a standard mode gateway (so that it's not limited for use by a single individual).
-- **Decide on whether you need a gateway cluster:** Use gateway clusters for business-critical solutions. Gateway clusters provide high-availability and load balancing. They also help to avoid a single point of failure and improve performance during periods of high concurrent usage.
-- **Decide on how many gateways you need:** Consider separate gateway clusters for different environments to avoid disruption. Consider other factors, like usage or regions.
+- **Create an inventory of data sources**: An inventory of your data sources allows you to verify and document which data sources need a gateway.
+- **Determine which situations require a gateway**: Consider how content creators and consumers work. Ensure that you're familiar with when a gateway is required. Create documentation and training for the user community.
+- **Decide on the type of gateway that you need**: Ensure that you validate any assumptions and assess possible limitations so that you're certain the selected gateway type meets your requirements.
+- **Avoid personal gateways**: Consider using a gateway in standard mode instead. Determine whether there are any personal gateway data sources that can be redirected to use a standard mode gateway (so that it's not limited for use by a single individual).
+- **Decide on whether you need a gateway cluster**: Use gateway clusters for business-critical solutions. Gateway clusters provide high-availability and load balancing. They also help to avoid a single point of failure and improve performance during periods of high concurrent usage.
+- **Decide on how many gateways you need**: Consider separate gateway clusters for different environments to avoid disruption. Consider other factors, like usage or regions.
 
 ## Install gateways
 
@@ -308,13 +308,13 @@ Before installing the gateway, identify who will install and own the gateway.
 
 Typically, the gateway owner is a technical person who installs, owns, and manages the gateway. Gateway owners are responsible for various activities.
 
-- **Planning:** Make key decisions as described earlier and define the technical specifications for a gateway machine, including initial system resources. The gateway owner should also ensure that a support plan is in place.
-- **Installation:** Select an appropriate machine to install the gateway software and perform first-time installation and setup.
-- **Management:** Change gateway settings or preferences for optimization (such as [configuring streaming instead of spooling data](/data-integration/gateway/service-gateway-performance#optimize-performance-by-streaming-data)) or monitoring purposes (such as [configuring performance logging](/data-integration/gateway/service-gateway-performance#configure-performance-logging)). The gateway owner also makes decisions about when to [scale up](/data-integration/gateway/plan-scale-maintain#scaling-up-a-gateway-cluster) (add more resources to the gateway machines) or [scale out](/data-integration/gateway/plan-scale-maintain#scaling-out-a-gateway-cluster) (install more gateways in the cluster).
-- **Testing:** Validate the gateway usage during first-time setup, ensuring that sufficient resources are available for the gateway machines. The gateway owner should also test monthly updates before installing them.
-- **Updating:** Update and install the gateway software and supporting items (like [connector software](#host-connector-software)) on a timely basis.
-- **Monitoring:** [Monitor gateway](/data-integration/gateway/service-gateway-performance#gateway-performance-monitoring-public-preview) uptime and health, including the collection of the [gateway log files](/data-integration/gateway/service-gateway-log-files) that allow monitoring for issues and anomalous activity.
-- **Migration:** Store [recovery keys](/data-integration/gateway/service-gateway-recovery-key) in a safe place that's accessible to a wider team. The gateway owner should also be the person to use these keys to [migrate, restore, or relocate the gateway](/data-integration/gateway/service-gateway-migrate), if necessary.
+- **Planning**: Make key decisions as described earlier and define the technical specifications for a gateway machine, including initial system resources. The gateway owner should also ensure that a support plan is in place.
+- **Installation**: Select an appropriate machine to install the gateway software and perform first-time installation and setup.
+- **Management**: Change gateway settings or preferences for optimization (such as [configuring streaming instead of spooling data](/data-integration/gateway/service-gateway-performance#optimize-performance-by-streaming-data)) or monitoring purposes (such as [configuring performance logging](/data-integration/gateway/service-gateway-performance#configure-performance-logging)). The gateway owner also makes decisions about when to [scale up](/data-integration/gateway/plan-scale-maintain#scaling-up-a-gateway-cluster) (add more resources to the gateway machines) or [scale out](/data-integration/gateway/plan-scale-maintain#scaling-out-a-gateway-cluster) (install more gateways in the cluster).
+- **Testing**: Validate the gateway usage during first-time setup, ensuring that sufficient resources are available for the gateway machines. The gateway owner should also test monthly updates before installing them.
+- **Updating**: Update and install the gateway software and supporting items (like [connector software](#host-connector-software)) on a timely basis.
+- **Monitoring**: [Monitor gateway](/data-integration/gateway/service-gateway-performance#gateway-performance-monitoring-public-preview) uptime and health, including the collection of the [gateway log files](/data-integration/gateway/service-gateway-log-files) that allow monitoring for issues and anomalous activity.
+- **Migration**: Store [recovery keys](/data-integration/gateway/service-gateway-recovery-key) in a safe place that's accessible to a wider team. The gateway owner should also be the person to use these keys to [migrate, restore, or relocate the gateway](/data-integration/gateway/service-gateway-migrate), if necessary.
 
 > [!IMPORTANT]
 > Ensure that the gateway owner is aware of, and agrees with, these responsibilities. If the gateway owner isn't prepared to manage the gateway, it can quickly become a dependency that blocks content owners and creators. Additionally, identify whether the gateway owner understands how to install and manage a gateway and, if not, how you'll train them to do this.
@@ -333,8 +333,8 @@ To reduce management overhead and mitigate governance risk, it's important to li
 
 For standard mode gateways, you [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) either from the Fabric portal or the Power Platform admin center. You also manage [who can create VNet data gateways](/data-integration/vnet/manage-data-gateways#manage-access-to-creating-vnet-data-gateways-gateway-installer-setting) by using the gateway installer setting.
 
-- **Fabric connections and gateways page:** You can [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) from within the [connections and gateways](https://app.powerbi.com/groups/me/gateways) page of the Fabric portal.
-- **Power Platform admin center:** You can also [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/ext/DataGateways). Settings you change here affect gateways you use from Fabric.
+- **Fabric connections and gateways page**: You can [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) from within the [connections and gateways](https://app.powerbi.com/groups/me/gateways) page of the Fabric portal.
+- **Power Platform admin center**: You can also [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/ext/DataGateways). Settings you change here affect gateways you use from Fabric.
 
 You can also manage gateway installers programmatically by using the [PowerShell cmdlets for on-premises gateway management](/powershell/gateway/overview?view=datagateway-ps&preserve-view=true). For personal gateways and standard mode gateways, you can use these cmdlets to [set the gateway tenant policy](/powershell/module/datagateway/set-datagatewaytenantpolicy?view=datagateway-ps&preserve-view=true). Setting the gateway tenant policy by using PowerShell is the only way to manage who can install personal gateways in your tenant.
 
@@ -357,9 +357,9 @@ Typically, you install a gateway on an always-on VM (also called the _gateway ma
 
 Here are the key factors for determining where you'll install a gateway.
 
-- **[Location](/power-bi/connect-data/service-gateway-deployment-guidance#location):** Typically, the gateway machine should be located close to the data source to minimize latency. Usually, a standard gateway needs to be installed in your default data region. However, if your Premium capacity location is different from the [default data region](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage) for your tenant, investigate using an [Azure Relay](/data-integration/gateway/service-gateway-azure-relay) as an option to satisfy data residency requirements.
-- **[Supporting items](/power-bi/connect-data/service-gateway-custom-connectors):** Determine what connectors, drivers, or libraries you need to install on the gateway machine.
-- **[Domain](/data-integration/gateway/service-gateway-install#related-considerations):** Determine what the relationship of the gateway machine is with the target domain. The VM must be a domain-joined machine with a trust relationship with the target domain. It can't be a domain controller.
+- **[Location](../connect-data/service-gateway-deployment-guidance.md#location)**: Typically, the gateway machine should be located close to the data source to minimize latency. Usually, a standard gateway needs to be installed in your default data region. However, if your Premium capacity location is different from the [default data region](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage) for your tenant, investigate using an [Azure Relay](/data-integration/gateway/service-gateway-azure-relay) as an option to satisfy data residency requirements.
+- **[Supporting items](../connect-data/service-gateway-custom-connectors.md)**: Determine what connectors, drivers, or libraries you need to install on the gateway machine.
+- **[Domain](/data-integration/gateway/service-gateway-install#related-considerations)**: Determine what the relationship of the gateway machine is with the target domain. The VM must be a domain-joined machine with a trust relationship with the target domain. It can't be a domain controller.
 
 > [!TIP]
 > To avoid resource contention, don't install unrelated software on a gateway machine. The gateway machine should be fully dedicated to hosting the on-premises data gateway.
@@ -370,8 +370,8 @@ The gateway machine should have sufficient resources to handle the expected quer
 
 Here are the key factors for determining gateway machine resources.
 
-- **[Usage](/power-bi/connect-data/service-gateway-deployment-guidance#number-of-users):** Determine how many and which type of items will use the gateway, and what query concurrence (from many users) will be. Higher usage requires gateway machines with more resources.
-- **[Connection type](/power-bi/connect-data/service-gateway-deployment-guidance#connection-type):** Determine whether Power BI semantic models import data, use DirectQuery, or a live connection. For import semantic models, it's important to check the number of data refreshes to estimate gateway resource needs (such as RAM). For DirectQuery or live connections, you should assess the number of report consumers to estimate resource needs (such as CPU).
+- **[Usage](../connect-data/service-gateway-deployment-guidance.md#number-of-users)**: Determine how many and which type of items will use the gateway, and what query concurrence (from many users) will be. Higher usage requires gateway machines with more resources.
+- **[Connection type](../connect-data/service-gateway-deployment-guidance.md#connection-type)**: Determine whether Power BI semantic models import data, use DirectQuery, or a live connection. For import semantic models, it's important to check the number of data refreshes to estimate gateway resource needs (such as RAM). For DirectQuery or live connections, you should assess the number of report consumers to estimate resource needs (such as CPU).
 
 > [!TIP]
 > Validate the gateway machine resources by performing load testing. You can conduct this type of test by monitoring gateway machine health when performing dataset refreshes, and by simulating high concurrent usage of DirectQuery or live connection reports.
@@ -405,15 +405,15 @@ After making key decisions and preparation, the gateway owner installs the gatew
 
 When installing and setting up gateways, consider the following factors.
 
-- **Installation location:** When you want to install the gateway to a location other than the default installation path, you can change the installation location.
-- **Recovery key:** When you want to migrate, restore, or takeover an existing gateway, you need to use the gateway's recovery key. Ensure that you keep the recovery key in a safe and secure place that's accessible to other gateway administrators.
-- **Data center region:** When you want the region to be different from the registered service's tenant, you can [change the data center region](/data-integration/gateway/service-gateway-data-region).
-- **Azure Relay:** When you want to use your own relay instead of the default, you can [provide your own relay details](/data-integration/gateway/service-gateway-azure-relay).
-- **Proxy settings:** When your work environment requires the gateway to go through a proxy server to connect to the Fabric portal, you must [set up proxy settings](/data-integration/gateway/service-gateway-proxy-setup-guide).
-- **Gateway service account:** When you want to use an explicit domain account, you can [change the gateway service account](/data-integration/gateway/service-gateway-service-account#change-the-service-account) from the default, which is _PBIEgwService_.
-- **Communication settings:** When a firewall blocks outbound connections, your security and networking teams can [set up the firewall to allow outbound connections](/data-integration/gateway/service-gateway-communication) from the gateway to its associated Azure region.
-- **Tenant registration:** When you want to [restrict which tenants are allowed](/data-integration/gateway/service-gateway-tenant-registration) to register the on-premises data gateway application to prevent data exfiltration.
-- **Integration tenant settings:** When you want to ensure that your gateway operates with single sign-on (SSO) (for instance, with [Microsoft Entra ID-based authentication](/fabric/admin/service-admin-portal-integration#microsoft-entra-single-sign-on-sso-for-gateway)) the way you intend.
+- **Installation location**: When you want to install the gateway to a location other than the default installation path, you can change the installation location.
+- **Recovery key**: When you want to migrate, restore, or takeover an existing gateway, you need to use the gateway's recovery key. Ensure that you keep the recovery key in a safe and secure place that's accessible to other gateway administrators.
+- **Data center region**: When you want the region to be different from the registered service's tenant, you can [change the data center region](/data-integration/gateway/service-gateway-data-region).
+- **Azure Relay**: When you want to use your own relay instead of the default, you can [provide your own relay details](/data-integration/gateway/service-gateway-azure-relay).
+- **Proxy settings**: When your work environment requires the gateway to go through a proxy server to connect to the Fabric portal, you must [set up proxy settings](/data-integration/gateway/service-gateway-proxy-setup-guide).
+- **Gateway service account**: When you want to use an explicit domain account, you can [change the gateway service account](/data-integration/gateway/service-gateway-service-account#change-the-service-account) from the default, which is _PBIEgwService_.
+- **Communication settings**: When a firewall blocks outbound connections, your security and networking teams can [set up the firewall to allow outbound connections](/data-integration/gateway/service-gateway-communication) from the gateway to its associated Azure region.
+- **Tenant registration**: When you want to [restrict which tenants are allowed](/data-integration/gateway/service-gateway-tenant-registration) to register the on-premises data gateway application to prevent data exfiltration.
+- **Integration tenant settings**: When you want to ensure that your gateway operates with single sign-on (SSO) (for instance, with [Microsoft Entra ID-based authentication](/fabric/admin/service-admin-portal-integration#microsoft-entra-single-sign-on-sso-for-gateway)) the way you intend.
 
 > [!IMPORTANT]
 > We recommend that you restrict tenant registration to only tenants within the organization. This step helps to improve gateway security because the default setting has no restriction on tenant registration.
@@ -422,14 +422,14 @@ When installing and setting up gateways, consider the following factors.
 
 **Checklist** - When preparing for and installing a gateway, key decisions and actions include:
 
-- **Identify the gateway owner and installers:** Ensure the gateway owner is aware of their responsibilities. Restrict gateway installation to the appropriate people.
-- **Conduct training:** If needed, train gateway owners and installers to effectively install, manage, and support the gateway. Conduct cross-training for a backup when necessary.
-- **Create naming conventions:** Create gateway naming conventions that correspond to purpose, environment, cluster node, and the use cases it supports or the operations it performs.
-- **Consider resource needs:** Determine what the workload and usage will be to determine initial resources (such as memory and CPU).
-- **Set the integration tenant settings:** Review and set the [integration tenant settings](/fabric/admin/service-admin-portal-integration) to ensure your gateway operates with single sign-on (SSO) the way you intend.
-- **Provision the gateway machine:** Set up an always-on VM with sufficient resources to support gateway operations.
-- **Install the gateway:** Perform first-time setup of the gateway on the gateway machine.
-- **Install supporting items:** Install custom data connectors or dependent software to support your scenario.
+- **Identify the gateway owner and installers**: Ensure the gateway owner is aware of their responsibilities. Restrict gateway installation to the appropriate people.
+- **Conduct training**: If needed, train gateway owners and installers to effectively install, manage, and support the gateway. Conduct cross-training for a backup when necessary.
+- **Create naming conventions**: Create gateway naming conventions that correspond to purpose, environment, cluster node, and the use cases it supports or the operations it performs.
+- **Consider resource needs**: Determine what the workload and usage will be to determine initial resources (such as memory and CPU).
+- **Set the integration tenant settings**: Review and set the [integration tenant settings](/fabric/admin/service-admin-portal-integration) to ensure your gateway operates with single sign-on (SSO) the way you intend.
+- **Provision the gateway machine**: Set up an always-on VM with sufficient resources to support gateway operations.
+- **Install the gateway**: Perform first-time setup of the gateway on the gateway machine.
+- **Install supporting items**: Install custom data connectors or dependent software to support your scenario.
 
 ## Manage gateways
 
@@ -437,17 +437,17 @@ After installing the gateways, you should then add data source connections. When
 
 ### Add data source connections
 
-You must [add the initial data source connections](/power-bi/connect-data/service-gateway-data-sources) before you can use the gateway. You can add connections manually from the Power BI service or the Power Platform admin center, or programmatically with the [Power BI REST APIs](/rest/api/power-bi/gateways/create-datasource).
+You must [add the initial data source connections](../connect-data/service-gateway-data-sources.md) before you can use the gateway. You can add connections manually from the Power BI service or the Power Platform admin center, or programmatically with the [Power BI REST APIs](/rest/api/power-bi/gateways/create-datasource).
 
 When adding connections, consider the following points.
 
-- **Stored credentials:** Consider which credentials will be used to connect to the data source. When you add a connection, you must provide credentials for that data source (unless it supports anonymous authentication). It's an important decision, because all queries to the data source run by using these credentials, unless you're using [Microsoft Entra single sign-on (SSO) for the data gateway](/fabric/admin/service-admin-portal-integration#microsoft-entra-single-sign-on-sso-for-gateway).
-- **Naming conventions:** Like gateways, connections should also use logical and consistent naming conventions. Ensure that connection names correspond to the data source name. For example: _FinanceDB-Prod_ is a logical name that indicates the data source.
-- **Single sign-on:** In the Fabric administrator settings, you should enable the [Microsoft Entra single sign-on (SSO) for gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) option when you want to use single-sign on (SSO) with DirectQuery (either by using [Active Directory SSO](/power-bi/connect-data/service-gateway-active-directory-sso) or [Microsoft Entra SSO](/power-bi/connect-data/service-gateway-azure-active-directory-sso)). You should use SSO when you want to [enforce data security in the data source system based on the report user identity](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity).
-- **Privacy levels:** For import data source connections, you must set the [privacy level](powerbi-implementation-planning-security-content-creator-planning.md#privacy-levels). Ensure that you select the appropriate privacy level to appropriately isolate the data source, if necessary. It's important to understand that the privacy levels set in Power BI Desktop aren't honored by gateways.
+- **Stored credentials**: Consider which credentials will be used to connect to the data source. When you add a connection, you must provide credentials for that data source (unless it supports anonymous authentication). It's an important decision, because all queries to the data source run by using these credentials, unless you're using [Microsoft Entra single sign-on (SSO) for the data gateway](/fabric/admin/service-admin-portal-integration#microsoft-entra-single-sign-on-sso-for-gateway).
+- **Naming conventions**: Like gateways, connections should also use logical and consistent naming conventions. Ensure that connection names correspond to the data source name. For example: _FinanceDB-Prod_ is a logical name that indicates the data source.
+- **Single sign-on**: In the Fabric administrator settings, you should enable the [Microsoft Entra single sign-on (SSO) for gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) option when you want to use single-sign on (SSO) with DirectQuery (either by using [Active Directory SSO](../connect-data/service-gateway-active-directory-sso.md) or [Microsoft Entra SSO](../connect-data/service-gateway-azure-active-directory-sso.md)). You should use SSO when you want to [enforce data security in the data source system based on the report user identity](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity).
+- **Privacy levels**: For import data source connections, you must set the [privacy level](powerbi-implementation-planning-security-content-creator-planning.md#privacy-levels). Ensure that you select the appropriate privacy level to appropriately isolate the data source, if necessary. It's important to understand that the privacy levels set in Power BI Desktop aren't honored by gateways.
 
 > [!NOTE]
-> The data source name can be modified afterwards, but the server and database names can't be changed after they've been setup. To avoid errors, ensure that the data source information [matches what will be used in Power BI Desktop](/power-bi/connect-data/service-gateway-onprem-tshoot#error-report-could-not-access-the-data-source-because-you-do-not-have-access-to-our-data-source-via-an-on-premises-data-gateway).
+> The data source name can be modified afterwards, but the server and database names can't be changed after they've been setup. To avoid errors, ensure that the data source information [matches what will be used in Power BI Desktop](../connect-data/service-gateway-onprem-tshoot.md#error-report-could-not-access-the-data-source-because-you-do-not-have-access-to-our-data-source-via-an-on-premises-data-gateway).
 
 > [!TIP]
 > To improve efficiency and accuracy, consider automating the creation of data source connections by using the [Power BI REST APIs](/rest/api/power-bi/gateways/create-datasource). In this case, we recommend including review and approval processes rather than automatically processing each request that creates or updates a connection.
@@ -460,23 +460,23 @@ Content creators will need access to a gateway connection to successfully connec
 
 #### Gateway roles
 
-Gateway roles let you control who can manage the gateway and its data source connections. These roles work similarly to [workspace roles](/power-bi/collaborate-share/service-roles-new-workspaces), allowing different permissions depending on the role. Using roles helps you to manage gateway access more effectively.
+Gateway roles let you control who can manage the gateway and its data source connections. These roles work similarly to [workspace roles](../collaborate-share/service-roles-new-workspaces.md), allowing different permissions depending on the role. Using roles helps you to manage gateway access more effectively.
 
 > [!TIP]
-> We recommend using [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to manage role membership instead of individual accounts. That way, it's easier to manage users, particularly across multiple gateways. You can use the same security groups to manage other access control, like [row-level security](/fabric/security/service-admin-row-level-security#working-with-members) role membership and [app audience](/power-bi/collaborate-share/service-create-distribute-apps#create-and-manage-multiple-audiences) membership.
+> We recommend using [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to manage role membership instead of individual accounts. That way, it's easier to manage users, particularly across multiple gateways. You can use the same security groups to manage other access control, like [row-level security](/fabric/security/service-admin-row-level-security#working-with-members) role membership and [app audience](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) membership.
 
 > [!IMPORTANT]
 > A user who just needs to use the gateway to connect to a data source doesn't need to belong to a gateway role. In this case, they'll only have the _User_ connection role.
 
 There are three gateway roles for managing an on-premises standard gateway.
 
-- **Admin:** Members of this role can manage and update the gateway. A gateway administrator is typically the gateway owner, but there can also be multiple administrators for a gateway. Gateway administrators should be Fabric administrators, or members of the COE or central BI team. The responsibilities of an administrator are the same as a [gateway owner](#gateway-owners).
-- **Connection creator with sharing:** Members of this role can create gateway connections, test the gateway status, and share the gateway with others. This role can't remove users from the gateway. Consider adding someone to this role when they're responsible for a subset of analytical solutions, like in a decentralized team for a business unit. The responsibilities of someone with this role include:
+- **Admin**: Members of this role can manage and update the gateway. A gateway administrator is typically the gateway owner, but there can also be multiple administrators for a gateway. Gateway administrators should be Fabric administrators, or members of the COE or central BI team. The responsibilities of an administrator are the same as a [gateway owner](#gateway-owners).
+- **Connection creator with sharing**: Members of this role can create gateway connections, test the gateway status, and share the gateway with others. This role can't remove users from the gateway. Consider adding someone to this role when they're responsible for a subset of analytical solutions, like in a decentralized team for a business unit. The responsibilities of someone with this role include:
   - Setting up and testing new connections.
   - Managing connections that they own, such as setting credentials.
   - Sharing the gateway with other users who need it.
   - Regularly reviewing who has access to a gateway, validating whether they still need it, and removing them when they don't need it.
-- **Connection creator:** Members of this role can create connections on the gateway and test their status. The connection creator should be a content owner who can appropriately set up the right connections to use the gateway. The responsibilities of a _Connection creator_ role are the same as the _Connection creator with sharing_ role, with the exception that they can't share access to the gateway.
+- **Connection creator**: Members of this role can create connections on the gateway and test their status. The connection creator should be a content owner who can appropriately set up the right connections to use the gateway. The responsibilities of a _Connection creator_ role are the same as the _Connection creator with sharing_ role, with the exception that they can't share access to the gateway.
 
 > [!NOTE]
 > VNet gateways only support the _Admin_ gateway role.
@@ -487,14 +487,14 @@ Data source connection roles let you control who can use, manage, and share conn
 
 There are three data source connection roles.
 
-- **Owner:** Members of this role can manage the connection or delete it when it's no longer required. Owners can manage the connection roles, including adding other connection owners. An owner is typically also a connection creator. Consider making someone a connection owner when they're the steward or administrator of that data source, or they have significant knowledge about the data source and its contents. The responsibilities of an owner include:
+- **Owner**: Members of this role can manage the connection or delete it when it's no longer required. Owners can manage the connection roles, including adding other connection owners. An owner is typically also a connection creator. Consider making someone a connection owner when they're the steward or administrator of that data source, or they have significant knowledge about the data source and its contents. The responsibilities of an owner include:
   - Managing connections, such as updating credentials, if necessary.
   - Deleting the connection when it's no longer needed.
   - [Managing connection roles](/data-integration/gateway/manage-security-roles#how-to-manage-the-gateway-and-connection-data-source-roles) from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/ext/DataGateways).
-- **User with sharing:** Members of this role can use and share the data source by adding other users. Consider adding someone to this role when they play an important role in the user community. [Champions](fabric-adoption-roadmap-community-of-practice.md#champions-network) can be good candidates for this role. The responsibilities of someone with this role include:
+- **User with sharing**: Members of this role can use and share the data source by adding other users. Consider adding someone to this role when they play an important role in the user community. [Champions](fabric-adoption-roadmap-community-of-practice.md#champions-network) can be good candidates for this role. The responsibilities of someone with this role include:
   - Sharing the connection with other users who need it.
   - Regularly reviewing who has access to a connection, validating whether they still need it, and removing them when they don't need it.
-- **User:** Members of this role can use the data source in Power BI reports and Power BI dataflows. Users are only responsible for querying the data from their workloads and client tools.
+- **User**: Members of this role can use the data source in Power BI reports and Power BI dataflows. Users are only responsible for querying the data from their workloads and client tools.
 
 > [!TIP]
 > To prevent governance risk from oversharing, you should limit who can share gateways and connections to specific individuals who can accomplish this task effectively and responsibly.
@@ -543,13 +543,13 @@ You can test gateways by first applying the update to gateways that support deve
 
 Consider the following points when validating gateway updates.
 
-- **Define repeatable test conditions:** You should define a list of repeatable test conditions to help you ensure that you test all the relevant gateway operations and data sources. For example, you could identify which reports and semantic models are deemed critical and require validation. You might also have some compliance requirements to be met that qualify as repeatable test conditions.
-- **Use a set of test reports:** Keep a set of reports to use for functional testing each time the gateway is updated. These reports help you quickly validate your repeatable test conditions. These test reports often only show totals and counts. Your goal is to ensure that you test access, rendering, and refresh for:
+- **Define repeatable test conditions**: You should define a list of repeatable test conditions to help you ensure that you test all the relevant gateway operations and data sources. For example, you could identify which reports and semantic models are deemed critical and require validation. You might also have some compliance requirements to be met that qualify as repeatable test conditions.
+- **Use a set of test reports**: Keep a set of reports to use for functional testing each time the gateway is updated. These reports help you quickly validate your repeatable test conditions. These test reports often only show totals and counts. Your goal is to ensure that you test access, rendering, and refresh for:
   - Each commonly used data source.
   - Each key type of data item, like the most critical semantic models.
   - Different storage modes, like import and DirectQuery.
-- **Identify business-critical reports:** Have access to (or copies of) business-critical reports that you can test for the new update. These reports can help you ensure that the data can refresh and DirectQuery reports work as expected.
-- **Automate testing processes:** Use the Power BI REST APIs to test the [data refresh for import data items](/rest/api/power-bi/datasets/refresh-dataset) and to [evaluate DAX queries](/rest/api/power-bi/datasets/execute-queries). Ensure that you can catch and log refresh failures or query errors.
+- **Identify business-critical reports**: Have access to (or copies of) business-critical reports that you can test for the new update. These reports can help you ensure that the data can refresh and DirectQuery reports work as expected.
+- **Automate testing processes**: Use the Power BI REST APIs to test the [data refresh for import data items](/rest/api/power-bi/datasets/refresh-dataset) and to [evaluate DAX queries](/rest/api/power-bi/datasets/execute-queries). Ensure that you can catch and log refresh failures or query errors.
 
 > [!IMPORTANT]
 > We strongly recommend that you test gateway updates on the development and test cluster before applying them to production. Testing updates is important, as there's no rollback process. As an alternative, before starting the update you can create a [VM image](/azure/virtual-machines/capture-image-portal), which is a complete copy of the file system structure and the data on the machine.
@@ -573,18 +573,18 @@ For data source connections that require stored credentials, you might need to r
 
 **Checklist** - When managing data gateways, key decisions and actions include:
 
-- **Create data source connections:** Set up the data source connections for common organizational data sources. Ensure that connections follow clear, consistent naming conventions.
-- **Document gateways and data sources:** Create concise documentation about gateways and connections. Ensure this documentation is easily accessible from your centralized portal for gateway owners and administrators.
-- **Handle connection requests:** Create a process to gather and manage connection requests. Determine whether an approval process is required for connection requests. Consider automating the process by using the Power BI REST APIs.
-- **Provision gateway roles:** Use the [principle of least privilege](/entra/identity-platform/secure-least-privileged-access) to assign individuals to gateway roles. Consider adding data source stewards to the _Connection creator_ or _Connection creator with sharing_ role so that they can contribute to connection management.
-- **Provision connection roles:** Assign content creators (and consumers when applicable) to connection roles so they can use the gateway. Limit users with sharing to those users who will responsibly share the connection and help to regularly review and manage access.
-- **Create concise user documentation:** Document the key items important for content creators to find and use the gateway and its connections. Place the documentation somewhere central and easily accessible to the user community, like a centralized portal or SharePoint support site.
-- **Carefully document and store recovery keys:** Store recovery keys in a safe, secure location accessible to more than one team member. Ensure that they can be easily found should you need to recover the gateway.
-- **Create a process for installing updates:** Determine how often you'll install gateway software updates and the process to be followed. Aim to update gateways within one to three months of the update release.
-- **Install gateway updates first on development and test:** Ensure that development and test gateways are updated prior to production and used for initial testing.
-- **Test gateway updates before they're applied to production gateways:** Set up a process to test monthly gateway updates by using repeatable test conditions and items.
-- **Install gateway updates promptly and regularly on production:** Ensure that production gateways are kept up to date.
-- **Update connection credentials:** As needed, update stored credentials use by connections.
+- **Create data source connections**: Set up the data source connections for common organizational data sources. Ensure that connections follow clear, consistent naming conventions.
+- **Document gateways and data sources**: Create concise documentation about gateways and connections. Ensure this documentation is easily accessible from your centralized portal for gateway owners and administrators.
+- **Handle connection requests**: Create a process to gather and manage connection requests. Determine whether an approval process is required for connection requests. Consider automating the process by using the Power BI REST APIs.
+- **Provision gateway roles**: Use the [principle of least privilege](/entra/identity-platform/secure-least-privileged-access) to assign individuals to gateway roles. Consider adding data source stewards to the _Connection creator_ or _Connection creator with sharing_ role so that they can contribute to connection management.
+- **Provision connection roles**: Assign content creators (and consumers when applicable) to connection roles so they can use the gateway. Limit users with sharing to those users who will responsibly share the connection and help to regularly review and manage access.
+- **Create concise user documentation**: Document the key items important for content creators to find and use the gateway and its connections. Place the documentation somewhere central and easily accessible to the user community, like a centralized portal or SharePoint support site.
+- **Carefully document and store recovery keys**: Store recovery keys in a safe, secure location accessible to more than one team member. Ensure that they can be easily found should you need to recover the gateway.
+- **Create a process for installing updates**: Determine how often you'll install gateway software updates and the process to be followed. Aim to update gateways within one to three months of the update release.
+- **Install gateway updates first on development and test**: Ensure that development and test gateways are updated prior to production and used for initial testing.
+- **Test gateway updates before they're applied to production gateways**: Set up a process to test monthly gateway updates by using repeatable test conditions and items.
+- **Install gateway updates promptly and regularly on production**: Ensure that production gateways are kept up to date.
+- **Update connection credentials**: As needed, update stored credentials use by connections.
 
 ## Monitor, audit, and optimize gateways
 
@@ -633,10 +633,10 @@ You should regularly review how many gateways are installed on your tenant, and 
 
 When monitoring gateway prevalence, focus attention on the following metrics.
 
-- **Rising number of gateways or installers:** Ensure that you investigate unexpected new gateways or installers.
-- **Redundancy in connections across gateways:** Try to consolidate connections to avoid extra maintenance effort of the gateways.
-- **Unexpected installers or gateways:** Ensure that any new installers or gateways have undergone an approval process before they're installed.
-- **Unexpected gateway machines, connections, or configuration:** Ensure that you identify any anomalous gateway properties such as gateways installed on user machines, or connections to local files. Also identify settings that create risk, like ignoring privacy level.
+- **Rising number of gateways or installers**: Ensure that you investigate unexpected new gateways or installers.
+- **Redundancy in connections across gateways**: Try to consolidate connections to avoid extra maintenance effort of the gateways.
+- **Unexpected installers or gateways**: Ensure that any new installers or gateways have undergone an approval process before they're installed.
+- **Unexpected gateway machines, connections, or configuration**: Ensure that you identify any anomalous gateway properties such as gateways installed on user machines, or connections to local files. Also identify settings that create risk, like ignoring privacy level.
 
 ### Collect and analyze gateway logs
 
@@ -662,9 +662,9 @@ When issues arise with a gateway, you'll need to investigate and identify the pr
 
 Here are some common gateway optimizations.
 
-- **Change from spooling to streaming:** By default, gateways will [spool](/data-integration/gateway/service-gateway-configure-disk-space#gateway-spooling-data) data to the gateway machine when evaluating a query. It results in the temporary storage of data before it's transferred to the cloud. Spooling can be slower than the alternative of streaming, where data is transferred directly. You can change this setting in the [gateway configuration files](/power-bi/connect-data/service-gateway-deployment-guidance#optimizing-performance).
-- **Antivirus scanning:** [Excluding certain folders](/data-integration/gateway/service-gateway-performance#folders-that-might-have-to-be-excluded-from-antivirus-scanning-in-the-on-premises-data-gateway-server) from antivirus scanning on the gateway machine can improve performance when using file-level antivirus software.
-- **Planning to scale up or scale out:** Consider when you'll [scale up a gateway cluster](/data-integration/gateway/plan-scale-maintain#scaling-up-a-gateway-cluster) by adding more resources to the gateway machine, or [scale out the cluster](/data-integration/gateway/plan-scale-maintain#scaling-out-a-gateway-cluster) by adding another gateway to another machine.
+- **Change from spooling to streaming**: By default, gateways will [spool](/data-integration/gateway/service-gateway-configure-disk-space#gateway-spooling-data) data to the gateway machine when evaluating a query. It results in the temporary storage of data before it's transferred to the cloud. Spooling can be slower than the alternative of streaming, where data is transferred directly. You can change this setting in the [gateway configuration files](../connect-data/service-gateway-deployment-guidance.md#optimizing-performance).
+- **Antivirus scanning**: [Excluding certain folders](/data-integration/gateway/service-gateway-performance#folders-that-might-have-to-be-excluded-from-antivirus-scanning-in-the-on-premises-data-gateway-server) from antivirus scanning on the gateway machine can improve performance when using file-level antivirus software.
+- **Planning to scale up or scale out**: Consider when you'll [scale up a gateway cluster](/data-integration/gateway/plan-scale-maintain#scaling-up-a-gateway-cluster) by adding more resources to the gateway machine, or [scale out the cluster](/data-integration/gateway/plan-scale-maintain#scaling-out-a-gateway-cluster) by adding another gateway to another machine.
 
 > [!IMPORTANT]
 > VNet gateways have a [single hardware configuration](/data-integration/vnet/data-gateway-architecture#hardware), which can't be scaled or changed.
@@ -680,10 +680,10 @@ Here are some common gateway optimizations.
 
 **Checklist** – When monitoring gateways, key decisions and actions include:
 
-- **Monitor gateway machines:** Ensure gateways are installed on machines that are monitored by enterprise monitoring solutions. Otherwise, ensure that you can detect when these machines aren't performing well.
-- **Measure gateway prevalence:** Monitor the evolution of how many gateways are installed in your tenant over time.
-- **Gather and analyze gateway logs:** Create a solution to automatically collect and combine the log files from the different gateway machines. Analyze these files to extract meaningful information. Consider setting up two types of analytical monitoring solutions: one for alerts and action, and another for exploratory root cause analysis when issues arise.
-- **Verify roles and responsibilities:** Ensure that roles and responsibilities are defined for monitoring, optimizing, and troubleshooting.
+- **Monitor gateway machines**: Ensure gateways are installed on machines that are monitored by enterprise monitoring solutions. Otherwise, ensure that you can detect when these machines aren't performing well.
+- **Measure gateway prevalence**: Monitor the evolution of how many gateways are installed in your tenant over time.
+- **Gather and analyze gateway logs**: Create a solution to automatically collect and combine the log files from the different gateway machines. Analyze these files to extract meaningful information. Consider setting up two types of analytical monitoring solutions: one for alerts and action, and another for exploratory root cause analysis when issues arise.
+- **Verify roles and responsibilities**: Ensure that roles and responsibilities are defined for monitoring, optimizing, and troubleshooting.
 
 ## Related content
 

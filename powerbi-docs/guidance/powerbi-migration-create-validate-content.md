@@ -1,6 +1,6 @@
 ---
-title: Create content to migrate to Power BI
-description: Guidance on creating and validating content when migrating to Power BI.
+title: "Create content to migrate to Power BI"
+description: "Guidance on creating and validating content when migrating to Power BI."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 08/20/2020
+ms.date: 12/30/2024
 ---
 
 # Create content to migrate to Power BI
 
 This article describes **Stage 4**, which is concerned with creating and validating content when migrating to Power BI.
 
-:::image type="content" source="media/powerbi-migration-create-validate-content/migrate-to-power-bi-stage-4.svg" alt-text="Diagram shows the stages of a Power BI migration. Stage 4 is emphasized for this article." border="false":::
+:::image type="content" source="media/powerbi-migration-create-validate-content/migrate-to-power-bi-stage-4.svg" alt-text="Diagram showing the stages of a Power BI migration. Stage 4 is emphasized for this article." border="false":::
 
 > [!NOTE]
 > For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
@@ -75,9 +75,9 @@ The essential activities related to development of a Power BI report or dashboar
 There are four main aspects to validation of a Power BI solution:
 
 1. Data accuracy
-2. Security
-3. Functionality
-4. Performance
+1. Security
+1. Functionality
+1. Performance
 
 ### Validate data accuracy
 
@@ -126,9 +126,9 @@ There are two main types of documentation that are useful for a Power BI solutio
 
 Documentation can be stored wherever it's most easily accessed by the target audience. Common options include:
 
-- **Within a SharePoint site:** A SharePoint site might exist for your Center of Excellence or an internal Power BI community site.
-- **Within an app:** URLs can be set up when publishing a Power BI app to direct the consumer to more information.
-- **Within individual Power BI Desktop files:** Model elements, like tables and columns, can define a description. These descriptions appear as tooltips in the **Fields** pane when authoring reports.
+- **Within a SharePoint site**: A SharePoint site might exist for your Center of Excellence or an internal Power BI community site.
+- **Within an app**: URLs can be set up when publishing a Power BI app to direct the consumer to more information.
+- **Within individual Power BI Desktop files**: Model elements, like tables and columns, can define a description. These descriptions appear as tooltips in the **Data** pane when authoring reports.
 
 > [!TIP]
 > If you create a site to serve as a hub for Power BI-related documentation, consider [customizing the Get Help menu](/fabric/admin/service-admin-portal-help-support#publish-get-help-information) with its URL location.
@@ -161,7 +161,7 @@ Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
-Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Experienced Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).

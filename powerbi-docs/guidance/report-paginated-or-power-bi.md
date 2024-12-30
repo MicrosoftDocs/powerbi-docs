@@ -1,6 +1,6 @@
 ---
-title: When to use paginated reports in Power BI
-description: Guidance for when to use Power BI paginated reports.
+title: "When to use paginated reports in Power BI"
+description: "Guidance for when to use Power BI paginated reports."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/17/2022
+ms.date: 12/30/2024
 ---
 
 # When to use paginated reports in Power BI
@@ -65,5 +65,5 @@ For more information related to this article, check out the following resources:
 
 - [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Migrate SQL Server Reporting Services reports to Power BI](migrate-ssrs-reports-to-power-bi.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

@@ -20,6 +20,9 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 
 Then in the Power BI mobile apps, you open tiles in focus mode and interact with them. You can open tiles with all kinds of visuals, including tiles based on Bing and R.
 
+> [!NOTE]
+> Report tiles don't have a focus mode and aren't interactive when viewed in the Power BI mobile apps.
+
 ## Tiles in the iOS apps
 
 1. Open a [dashboard in the mobile app for iOS](mobile-apps-view-dashboard.md).

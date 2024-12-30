@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap: Change management
@@ -80,7 +80,7 @@ Here are some examples of solution-level changes.
   - Styling, colors, and other formatting choices for visuals.
   - The type of visualization.
   - How data is grouped or summarized (such as changing from different measures of central tendency, like average, median, or geometric mean).
-- Changes in how content consumers interact with data (like connecting to a [shared semantic model](/power-bi/connect-data/desktop-report-lifecycle-datasets) instead of exporting information for [personal usage scenarios](powerbi-implementation-planning-usage-scenario-personal-bi.md)).
+- Changes in how content consumers interact with data (like connecting to a [shared semantic model](../connect-data/desktop-report-lifecycle-datasets.md) instead of exporting information for [personal usage scenarios](powerbi-implementation-planning-usage-scenario-personal-bi.md)).
 
 How you prepare change management plans and activities will depend on the types of change. To successfully and sustainably manage change, we recommend that you implement incremental changes.
 
@@ -90,11 +90,11 @@ Change management can be a significant undertaking. Taking an incremental approa
 
 The following steps outline how you can incrementally address change.
 
-1. **Define what's changing:** Describe the change by outlining the before and after states. Clarify the specific parts of the process or situation that you'll change, remove, or introduce. Justify why this change is necessary, and when it should occur.
-1. **Describe the impact of the change:** For each of these changes, estimate the business impact. Identify which processes, teams, or individuals the change affects, and how disruptive it will be for them. Also consider any downstream effects the change has on other dependent solutions or processes. Downstream effects might result in other changes. Additionally, consider how long the situation remained the same before it was changed. Changes to longer-standing processes tend to have a higher impact, as preferences and dependencies arise over time.
-1. **Identify priorities:** Focus on the changes with the highest potential impact. For each change, outline a more detailed description of the changes and how it will affect people.
-1. **Plan how to incrementally implement the change:** Identify whether any high-impact changes can be broken into stages or parts. For each part, describe how it might be incrementally implemented in phases to limit its impact. Determine whether there are any constraints or dependencies (such as when changes can be made, or by whom).
-1. **Create an action plan for each phase:** Plan the actions you will take to implement and support each phase of the change. Also, plan for how you can mitigate disruption in high-impact phases. Be sure to include a rollback plan in your action plan, whenever possible.
+1. **Define what's changing**: Describe the change by outlining the before and after states. Clarify the specific parts of the process or situation that you'll change, remove, or introduce. Justify why this change is necessary, and when it should occur.
+1. **Describe the impact of the change**: For each of these changes, estimate the business impact. Identify which processes, teams, or individuals the change affects, and how disruptive it will be for them. Also consider any downstream effects the change has on other dependent solutions or processes. Downstream effects might result in other changes. Additionally, consider how long the situation remained the same before it was changed. Changes to longer-standing processes tend to have a higher impact, as preferences and dependencies arise over time.
+1. **Identify priorities**: Focus on the changes with the highest potential impact. For each change, outline a more detailed description of the changes and how it will affect people.
+1. **Plan how to incrementally implement the change**: Identify whether any high-impact changes can be broken into stages or parts. For each part, describe how it might be incrementally implemented in phases to limit its impact. Determine whether there are any constraints or dependencies (such as when changes can be made, or by whom).
+1. **Create an action plan for each phase**: Plan the actions you will take to implement and support each phase of the change. Also, plan for how you can mitigate disruption in high-impact phases. Be sure to include a rollback plan in your action plan, whenever possible.
 
 > [!TIP]
 > Iteratively plan how you'll implement each phase of these incremental changes as part of your quarterly [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md).
@@ -105,11 +105,11 @@ When you plan to mitigate the impact of changes on Power BI adoption, consider t
 
 Ensure that you clearly and concisely describe planned changes for the user community. Important communication should  originate from the executive sponsor, or another leader with relevant authority. Be sure to communicate the following details.
 
-- **What's changing:** What the situation is now and what it will be after the change.
-- **Why it's changing:** The benefit and value of the change for the audience.
-- **When it's changing:** An estimation of when the change will take effect.
-- **Further context:** Where people can go for more information.
-- **Contact information:** Who people should contact provide feedback, ask questions, or raise concerns.
+- **What's changing**: What the situation is now and what it will be after the change.
+- **Why it's changing**: The benefit and value of the change for the audience.
+- **When it's changing**: An estimation of when the change will take effect.
+- **Further context**: Where people can go for more information.
+- **Contact information**: Who people should contact provide feedback, ask questions, or raise concerns.
 
 Consider maintaining a history of communications in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal). That way, it's easy to find communications, timings, and details of changes after they've occurred.
 
@@ -146,10 +146,10 @@ To effectively manage change, you can also take a bottom-up approach by engaging
 
 It's important to address resistance to change, as it can have substantial negative impacts on adoption and productivity. When you address resistance to change, consider the following actions and activities.
 
-- **Involve your executive sponsor:** The authority, credibility, and influence of the executive sponsor is essential to support change management and resolve disputes.
-- **Identify blocking issues:** When change disrupts the way people work, this change can prevent people from effectively completing tasks in their regular activities. For such blocking issues, identify potential workarounds when you take into account the changes.
-- **Focus on data and facts instead of opinions:** Resistance to change is sometimes due to opinions and preferences, because people are familiar with the situation prior to the change. Understand why people have these opinions and preferences. Perhaps it's due to convenience, because people don't want to invest time and effort in learning new tools or processes.
-- **Focus on business questions and processes instead of requirements:** Changes often introduce new processes to address problems and complete tasks. New processes can lead to a resistance to change because people focus on what they miss instead of fully understanding what's new and why.
+- **Involve your executive sponsor**: The authority, credibility, and influence of the executive sponsor is essential to support change management and resolve disputes.
+- **Identify blocking issues**: When change disrupts the way people work, this change can prevent people from effectively completing tasks in their regular activities. For such blocking issues, identify potential workarounds when you take into account the changes.
+- **Focus on data and facts instead of opinions**: Resistance to change is sometimes due to opinions and preferences, because people are familiar with the situation prior to the change. Understand why people have these opinions and preferences. Perhaps it's due to convenience, because people don't want to invest time and effort in learning new tools or processes.
+- **Focus on business questions and processes instead of requirements**: Changes often introduce new processes to address problems and complete tasks. New processes can lead to a resistance to change because people focus on what they miss instead of fully understanding what's new and why.
 
 Additionally, you can have a significant impact on change resistance by engaging _promoters_ and _detractors_.
 
@@ -197,7 +197,7 @@ An assessment of change management evaluates how effectively the organization ca
 
 The following maturity levels will help you assess your current state of change management, as it relates to data and BI initiatives.
 
-| **Level** | **State of change management** |
+| Level | State of change management |
 | --- | --- |
 | **100: Initial** | &bull;&nbsp;Change is usually reactive, and it's also poorly communicated. <br/><br/>&bull;&nbsp;The purpose or benefits of change aren't well understood, and resistance to change causes conflict and disruption. <br/><br/>&bull;&nbsp;No clear teams or roles are responsible for managing change for data initiatives. |
 | **200: Repeatable** | &bull;&nbsp;Executive leadership and decision makers recognize the need for change management in data and BI projects and initiatives. <br/><br/>&bull;&nbsp;Some efforts are taken to plan or communicate change, but they're inconsistent and often reactive. Resistance to change is still common. Change often disrupts existing processes and tools. |
