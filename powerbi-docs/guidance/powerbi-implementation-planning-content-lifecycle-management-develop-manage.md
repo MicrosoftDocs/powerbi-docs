@@ -79,7 +79,7 @@ Certain content—such as dataflows, dashboards, and scorecards—can only be cr
 - **How to retrieve content backups**: You can create content like reports or semantic models by using web authoring, but these items [cannot be downloaded to local .pbix files](../create-reports/service-export-to-pbix.md#limitations). For instance, you can choose to back up this content by retrieving and storing its metadata.
 
 > [!TIP]
-> When developing dataflows and scorecards, we recommend that you retrieve the item definitions to manage changes and store a backup. You can automate dataflow and scorecard retrieval by using the [Fabric REST APIs](/rest/api/fabric/articles/using-fabric-apis). Specifically, you can use the [Get Dataflow](/rest/api/power-bi/dataflows/get-dataflow) and [Get Scorecards](/rest/api/power-bi/scorecards_%28preview%29/get) endpoints, respectively.
+> When developing dataflows and scorecards, we recommend that you retrieve the item definitions to manage changes and store a backup. You can automate dataflow and scorecard retrieval by using the [Fabric REST APIs](/rest/api/fabric/articles/using-fabric-apis). Specifically, you can use the [Get Dataflow](/rest/api/power-bi/dataflows/get-dataflow) and [Get Scorecards](/rest/api/power-bi/scorecards%28preview%29/get) endpoints, respectively.
 
 > [!CAUTION]
 > Some content—like dashboards—doesn't have the option to retrieve a definition. For this content, you can't easily track changes or retrieve a backup.

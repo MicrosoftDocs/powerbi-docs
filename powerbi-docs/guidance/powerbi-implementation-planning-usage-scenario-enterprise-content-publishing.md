@@ -263,7 +263,7 @@ PPU is a cost-effective way to manage enterprise content publishing for developm
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), and view a report that queries a live connection or [DirectQuery](/connect-data/desktop-directquery-about.md) semantic model (not depicted in the scenario diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), and view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) semantic model (not depicted in the scenario diagram).
 
 When working with multiple environments, it's common to set up development, test, and production connections to different source systems. In this case, use [data source rules and parameter rules](/fabric/cicd/deployment-pipelines/create-rules) to manage values that differ between environments. You can use Azure Pipelines to manage gateways by using the [gateway operations](/rest/api/power-bi/gateways) of the Power BI REST APIs.
 

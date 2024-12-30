@@ -42,7 +42,7 @@ The semantic model is the foundation of all reporting in Power BI. Consumers of 
 - **Formats**: You can specify how a column or measure is displayed in a visual, by default. Values in visuals can be customized further in the visual. Format options include if it has a thousands comma, how many decimal places, how a date is shown, etc. You can also apply [custom](../create-reports/desktop-custom-format-strings.md) or [dynamic](../create-reports/desktop-dynamic-format-strings.md) formats.
 - **Data category**: You can specify a column [data category](../transform-model/desktop-data-categorization.md), such as if it's a Country or Web URL.
 
-These are common features of Power BI semantic model that can be leveraged to help your report authors and model consumers. There are many others, such as [calculation groups](../transform-model/calculation-groups.md), [field parameters](../create-reports/power-bi-field-parameters.md), [what if parameters](../transform-model/desktop-what-if.md), and [grouping and binning columns](/create-reports/desktop-grouping-and-binning.md), which should be evaluated to see if they apply your specific reporting needs.
+These are common features of Power BI semantic model that can be leveraged to help your report authors and model consumers. There are many others, such as [calculation groups](../transform-model/calculation-groups.md), [field parameters](../create-reports/power-bi-field-parameters.md), [what if parameters](../transform-model/desktop-what-if.md), and [grouping and binning columns](../create-reports/desktop-grouping-and-binning.md), which should be evaluated to see if they apply your specific reporting needs.
 
 ## Optimizing visualizations
 
