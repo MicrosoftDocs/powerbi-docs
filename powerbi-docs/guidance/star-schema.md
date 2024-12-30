@@ -1,14 +1,14 @@
 ---
 title: "Understand star schema and the importance for Power BI"
 description: "Understand star schema design and its relevance to developing Power BI semantic models optimized for performance and usability."
-author: peter-myers
-ms.author: v-pemyers
+author: denglishbi
+ms.author: daengli
 ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 12/27/2024
+ms.date: 12/30/2024
 ---
 
 # Understand star schema and the importance for Power BI
@@ -236,7 +236,7 @@ For example, consider that salespeople can be assigned to one _or more_ sales re
 
 :::image type="content" source="media/star-schema/factless-fact-table.svg" alt-text="Diagram showing a factless fact table bridging Salesperson and Region dimensions. The factless fact table comprises two columns." border="false":::
 
-This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Many-to-many relationship guidance (Relate two dimension-type tables)](relationships-many-to-many.md#relate-many-to-many-dimensions).
+This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Many-to-many relationship guidance (Relate two dimension tables)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
 ## Related content
 

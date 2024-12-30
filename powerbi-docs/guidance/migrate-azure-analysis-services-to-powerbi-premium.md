@@ -1,6 +1,6 @@
 ---
-title: Migrate from Azure Analysis Services to Power BI Premium or Power BI Embedded
-description: Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium or Power BI Embedded.
+title: "Migrate from Azure Analysis Services to Power BI Premium or Power BI Embedded"
+description: "Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium or Power BI Embedded."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, intro-migration
-ms.date: 05/22/2023
+ms.date: 12/30/2024
 ---
 
 # Migrate from Azure Analysis Services to Power BI Premium
@@ -117,10 +117,10 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows open-platform connectivity for data model consumption and visualization tools, including third-party tools | Yes | Yes |
 | [Multi-Geo feature](../admin/service-admin-premium-multi-geo.md), which helps multinational customers address regional, industry-specific, or organizational data residency requirements | Yes | Yes |
 | **Discoverability** |||
-| [Data hub](../connect-data/service-data-hub.md) integration, which helps users discover, explore, and use Power BI semantic models | No | Yes |
+| [OneLake catalog](/fabric/governance/onelake-catalog) integration, which helps users discover, explore, and use Power BI semantic models | No | Yes |
 | [Data lineage view](../collaborate-share/service-data-lineage.md) and [semantic model impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI item dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
-| [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app), which provides monitoring capabilities for Power BI capacities | No | Yes |
+| [Fabric Capacity Metrics app](/fabric/enterprise/metrics-app), which provides monitoring capabilities for Power BI capacities | No | Yes |
 | [Audit log](/fabric/admin/track-user-activities), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
 | [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes  |
 | [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-types#metric-alerts), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
@@ -170,7 +170,7 @@ For more information, see:
 
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
-- [Purchase A SKUs for testing and other scenarios](/power-bi/enterprise)
+- [Purchase A SKUs for testing and other scenarios](../enterprise)
 
 ## Scalability benefits
 
@@ -300,7 +300,7 @@ For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios](migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md)
 - [Migrate Azure Analysis Services to Power BI](../enterprise/aas-pbi-migration-overview.md)
-- Questions? [Try asking the Power BI community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
-Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).

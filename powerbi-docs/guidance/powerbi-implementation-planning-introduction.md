@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: peter-myers
+author: denglishbi
 ms.author: daengli
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, video-RWUWA9
-ms.date: 10/12/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning
@@ -58,7 +58,7 @@ To set yourself up for success, we recommend that you work through the following
 1. Read the complete [Fabric adoption roadmap](fabric-adoption-roadmap.md), familiarizing yourself with each roadmap subject area. Assess your current state of Fabric adoption, and gain clarity on the data culture objectives for your organization.
 1. Explore Power BI implementation planning articles that are relevant to you. Start with the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md), which convey how you can use Power BI in diverse ways. Be sure to understand which usage scenarios apply to your organization, and by whom. Also, consider how these usage scenarios might influence the implementation strategies you decide on.
 1. Read the articles for each of the subject areas that are listed above. You might choose to initially do a broad review of the contents from top to bottom. Or you might choose to start with subject areas that are your highest priority. Carefully review the key decisions and actions that are included for each topic (at the end of each section). We recommend that you use them as a starting point for creating and customizing your plan.
-1. When necessary, refer to [Power BI documentation](/power-bi/) and [Fabric documentation](/fabric/) for details on specific topics.
+1. When necessary, refer to [Power BI documentation](../) and [Fabric documentation](/fabric/) for details on specific topics.
 
 ## Target audience
 
@@ -90,4 +90,4 @@ Other helpful resources include:
 - [Fabric adoption roadmap](fabric-adoption-roadmap.md)
 - [Power BI migration overview](powerbi-migration-overview.md)
 
-Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Experienced Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).
