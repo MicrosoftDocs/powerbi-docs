@@ -44,27 +44,27 @@ The examples below assume that you are running in a command prompt where the app
 
 - Upload all reports from 'My reports' folder from a native mode installation of SQL Server Reporting Services or Power BI Report Server to 'My Workspace' in powerbi.com.
 
-    ```
-    RdlMigration https://ssrsservername/reportserver "/My Reports" "My Workspace"
-    ```
+```
+RdlMigration https://ssrsservername/reportserver "/My Reports" "My Workspace"
+```
 
 - Upload all reports from '/Sales' folder from a native mode installation of SQL Server Reporting Services or Power BI Report Server to 'Sales' workspace in powerbi.com.
 
-    ```
-    RdlMigration https://ssrsservername/reportserver "/Sales" "Sales"
-    ```
+```
+RdlMigration https://ssrsservername/reportserver "/Sales" "Sales"
+```
 
 - Upload all reports from '/Shared Documents/Reports' folder from a SharePoint integrated mode installation of SQL Server Reporting Services to 'Reports' workspace in powerbi.com.
 
-    ```
-    RdlMigration "https://sharepointservername/_vti_bin/reportserver" "https://sharepointservername/Shared Documents/Reports" "Reports"
-    ```
+```
+RdlMigration "https://sharepointservername/_vti_bin/reportserver" "https://sharepointservername/Shared Documents/Reports" "Reports"
+```
 
 - Upload a single report called MonthlySales from '/Shared Documents/SalesReports' folder from a SharePoint integrated mode installation of SQL Server Reporting Services to 'Reports' workspace in powerbi.com.
 
-    ```
-    RdlMigration "https://sharepointservername/_vti_bin/reportserver" "https://sharepointservername/Shared Documents/SalesReports/MonthlySales.rdl" "Reports"
-    ```
+```
+RdlMigration "https://sharepointservername/_vti_bin/reportserver" "https://sharepointservername/Shared Documents/SalesReports/MonthlySales.rdl" "Reports"
+```
 
 ## Input details
 
@@ -82,6 +82,6 @@ This refers to the relative path to your file or folder on the report server. If
 
 This is the name of the workspace you want to upload your files to. Surround the name with quotation marks if there’s  a space in the name. For example:
 
-    ```
-    "Paginated Workspace"
-    ```
+```
+"Paginated Workspace"
+```

@@ -558,7 +558,7 @@ Power BI report creators can use several types of visuals in their Power BI repo
 
 - **Core visuals**: The default, out-of-the-box visuals, which are built into Power BI Desktop and the Power BI service.
 - **Non-certified custom visuals from AppSource**: Custom visuals that are developed by third-party software vendors or members of the worldwide Power BI community.
-- **Certified custom visuals from AppSource**: Custom visuals that are developed by third-party software vendors or members of the worldwide Power BI community, and that have passed a [certification process](../developer/visuals/power-bi-custom-visuals-faq.md#what-tests-are-done-during-the-certification-process-) defined by Microsoft.
+- **Certified custom visuals from AppSource**: Custom visuals that are developed by third-party software vendors or members of the worldwide Power BI community, and that have passed a [certification process](../developer/visuals/power-bi-custom-visuals-faq.yml#what-tests-are-done-during-the-certification-process-) defined by Microsoft.
 
 An organization might choose to limit the use of custom visuals (when the report is published to the Power BI service) by registering which specific visuals (and versions) are allowed. Allowed visuals are known as _[organizational visuals](../developer/visuals/power-bi-custom-visuals.md#organizational-store)_.
 

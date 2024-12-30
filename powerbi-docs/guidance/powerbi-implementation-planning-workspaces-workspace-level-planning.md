@@ -115,7 +115,7 @@ A personal workspace is limited in its options to share content with others. You
 **Checklist** - When considering your expectations for how personal workspaces should be used, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Understand current use of personal workspaces**: Have conversations with your users and review the [activity activity data](../enterprise/service-admin-auditing.md#user-activity-data) to ensure you understand what users are doing with their personal workspaces.
+> - **Understand current use of personal workspaces**: Have conversations with your users and review the [activity activity data](../enterprise/service-admin-auditing.md#track-user-activities-in-power-bi) to ensure you understand what users are doing with their personal workspaces.
 > - **Decide how personal workspaces should be used**: Decide how personal workspaces should (and should not) be used in your organization. Focus on balancing risk and ease of use with needs for content collaboration and viewing.
 > - **Relocate personal workspace content when appropriate**: For critical content, move content from personal workspaces to standard workspaces when appropriate.
 > - **Create and publish documentation about personal workspaces**: Create useful documentation or FAQs for your users about how to effectively use personal workspaces. Make the information available in your centralized portal and training materials.
@@ -194,7 +194,7 @@ The advantages of option 2 include:
 The disadvantages of option 2 include:
 
 - The result is often a broad-scoped workspace that contains many items. A broadly defined workspace scope can make it challenging for users to locate specific items.
-- Because there's a one-to-one relationship between a workspace and a Power BI app, a broadly defined workspace can result in apps for users that contain lots of content. This issue can be mitigated by excluding certain workspace items from the app, and with good design of the app [navigation experience](../collaborate-share/service-create-distribute-apps.md#design-the-navigation-experience).
+- Because there's a one-to-one relationship between a workspace and a Power BI app, a broadly defined workspace can result in apps for users that contain lots of content. This issue can be mitigated by excluding certain workspace items from the app, and with good design of the app [navigation experience](../collaborate-share/service-create-distribute-apps.md#set-up-the-app).
 - When users from other departments need to view specific workspace items, managing permissions can become more complex. There's a risk that people will assume that everything in the departmental workspace is for their eyes only. There's also a risk that the sharing of individual items will become overused in order to accomplish granular viewing permissions.
 - If some content creators need permission to edit some items (but not all items), it's not possible to set those permissions in a single workspace. That's because workspace roles, which determine edit or view permissions, are defined at the workspace level.
 - When you have a large number of workspace items, it often means you'll need to use strict naming conventions for items so that users are able to find what they need.

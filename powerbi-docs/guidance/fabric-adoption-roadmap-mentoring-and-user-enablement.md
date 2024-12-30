@@ -298,7 +298,7 @@ Power BI template files can improve efficiency and help people learn during the 
 
 A [Power BI project](../developer/projects/projects-overview.md) is a .pbip file. Like a template file (previously described), a project file doesn't contain any data. It's a file format that advanced content creators can use for [advanced data model](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) and report management scenarios. For example, you can use project files to save time in development by sharing common model patterns, like date tables, DAX measure expressions, or calculation groups.
 
-You can use Power BI project files with [Power BI Desktop developer mode](../developer/projects/) for:
+You can use Power BI project files with [Power BI Desktop developer mode](../developer/projects/projects-overview.md) for:
 
 - Advanced editing and authoring (for example, in a code editor such as Visual Studio Code).
 - Purposeful separation of semantic model and report items (unlike the .pbix or .pbit files).

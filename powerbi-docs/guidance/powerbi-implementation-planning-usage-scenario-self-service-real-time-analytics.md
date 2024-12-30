@@ -71,7 +71,7 @@ The automatic page refresh feature doesn't work for reports connected to [import
 - Includes [DirectQuery storage mode](../connect-data/service-dataset-modes-understand.md#directquery-mode) tables.
 - Uses incremental refresh to get the latest data in real-time with DirectQuery. This capability is described later in this topic.
 - Is a [live connection](../connect-data/service-datasets-understand.md#external-hosted-models) to a tabular model in Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS).
-- Is a [push dataset](../connect-data/service-real-time-streaming.md#pushing-data-to-datasets). For more information, see [Pushing data to datasets](../connect-data/service-real-time-streaming.md#pushing-data-to-datasets).
+- Is a [push dataset](../connect-data/service-real-time-streaming.md#push-data-to-semantic-models).
 
 A DirectQuery model is an alternative to an import model. Models developed in DirectQuery mode don't import data. Instead, they consist only of metadata defining the model structure. When the model is queried, native queries are used to retrieve data from the underlying data source.
 
@@ -79,7 +79,7 @@ From a self-service perspective, the business analyst can add DirectQuery storag
 
 A business analyst can also enhance an import model by setting up incremental refresh. By enabling the _Get the latest data in real-time with DirectQuery_ option (only supported by Premium workspaces), Power BI Desktop adds a DirectQuery partition to ensure the latest data is retrieved. For more information, see [Incremental refresh and real-time data for semantic models](../connect-data/incremental-refresh-overview.md).
 
-The business analyst can also create a [live connection](../connect-data/desktop-report-lifecycle-datasets.md#connect-to-a-power-bi-service-semantic-model-using-a-live-connection) to an existing tabular model that includes DirectQuery storage mode tables.
+The business analyst can also create a [live connection](../connect-data/desktop-report-lifecycle-datasets.md#connect-to-semantic-models-in-the-power-bi-service-from-power-bi-desktop) to an existing tabular model that includes DirectQuery storage mode tables.
 
 ### Involve data source owners
 

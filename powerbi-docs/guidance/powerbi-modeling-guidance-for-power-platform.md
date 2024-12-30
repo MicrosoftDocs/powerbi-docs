@@ -80,7 +80,7 @@ Import data models must complete a data refresh to allow reporting on recent dat
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
-You can also consider using [incremental refresh](../connect-data/incremental-refresh-overview.md) to achieve faster refreshes and [near real-time](../connect-data/incremental-refresh-overview.md?branch=pr-en-us-8271#configuring-incremental-refresh-and-real-time-data) performance (only available with [Premium](../enterprise/service-premium-what-is.md) or Fabric).
+You can also consider using [incremental refresh](../connect-data/incremental-refresh-overview.md) to achieve faster refreshes and [near real-time](../connect-data/incremental-refresh-overview.md#configure-incremental-refresh-and-real-time-data) performance (only available with [Premium](../enterprise/service-premium-what-is.md) or Fabric).
 
 ### Role-based security
 

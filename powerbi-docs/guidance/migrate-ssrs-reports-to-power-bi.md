@@ -85,7 +85,7 @@ After verifying that your organization meets the pre-requisites, you're ready to
 
 The goal of the _Discover_ phase is to identify your existing report server instances. This process involves scanning the network to identify all report server instances in your organization.
 
-You can use the [Microsoft Assessment and Planning Toolkit](https://www.microsoft.com/download/details.aspx?id=7826). The "MAP Toolkit" discovers and reports on your report server instances, versions, and installed features. It's a powerful inventory, assessment, and reporting tool that can simplify your migration planning process.
+Start your migration by discovering and assessing on-premises resources using the free [Azure Migrate](https://go.microsoft.com/fwlink/?linkid=2227895) tool. It can discover and report on your report server instances, versions, and installed features. It's a powerful inventory, assessment, and reporting tool that can help with your migration planning process.
 
 Organizations might have hundreds of SQL Server Reporting Services (SSRS) reports. Some of those reports might become obsolete due to lack of use. The article [Find and retire unused reports](retire-unused-reports-ssrs.md) can help you discover unused reports and how to create a cadence for cleanup.
 

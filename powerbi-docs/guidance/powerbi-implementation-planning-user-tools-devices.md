@@ -62,7 +62,7 @@ The most common ways that a consumer can access Power BI content include:
 | Power BI service | Content consumers view content by using a web browser (such as Microsoft Edge). |
 | Teams | Content consumers who view content that's been published to the Power BI service by using the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md). This option is convenient when users spend a lot of time in Teams. For more information, see [Guide to enabling your organization to use Power BI in Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/). |
 | Power BI Mobile Application | Content consumers who interact with content that's been published to the Power BI service (or Power BI Report Server) using iOS, Android, or Windows 10 applications. |
-| OneDrive/SharePoint viewer | Content consumers who view [Power BI Desktop (.pbix) files that are stored in OneDrive or SharePoint](/collaborate-share/service-sharepoint-viewer) by using a web browser. This option is a useful alternative to sharing the original Power BI Desktop files. The OneDrive/SharePoint viewer is most suitable for informal teams who want to provide a friendly, web-based, report consumer experience without explicitly publishing .pbix files to the Power BI service. |
+| OneDrive/SharePoint viewer | Content consumers who view [Power BI Desktop (.pbix) files that are stored in OneDrive or SharePoint](/collaborate-share/service-sharepoint-viewer.md) by using a web browser. This option is a useful alternative to sharing the original Power BI Desktop files. The OneDrive/SharePoint viewer is most suitable for informal teams who want to provide a friendly, web-based, report consumer experience without explicitly publishing .pbix files to the Power BI service. |
 | Custom application | Content consumers who view content from the Power BI service that's been embedded in a custom application [for your organization](powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md) or [for your customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md). |
 
 > [!NOTE]
@@ -233,10 +233,10 @@ Here are some important points to consider when deciding on using Power BI Repor
 - A paginated report is concerned with both data retrieval and layout. You're required to develop a query (known as a _dataset_) to retrieve data from an external data source, which might involve writing a native query statement (in DAX, T-SQL, or other language). The dataset belongs to one report, so it can't be published and used by other paginated reports.
 - Report consumers become accustomed to the built-in interactivity of Power BI reports. However, report interactivity isn't a strength of paginated reports. Attempting to achieve similar interactivity in paginated reports can be challenging or impossible.
 - If you need to access data by using a database stored procedure (such as an Azure SQL Database stored procedure), that's possible with paginated reports.
-- There are some [feature differences](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) and unsupported capabilities depending on whether the paginated report is published to the Power BI service or Power BI Report Server. We recommend that you conduct a proof of concept to determine what's possible for your target environment.
+- There are some [feature differences](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) and unsupported capabilities depending on whether the paginated report is published to the Power BI service or Power BI Report Server. We recommend that you conduct a proof of concept to determine what's possible for your target environment.
 
 > [!TIP]
-> For more information, see [Paginated reports in Power BI FAQ](../paginated-reports/paginated-reports-faq.md) and [Design tips for reports in Power BI Report Builder](../paginated-reports/report-builder-design-tips.md).
+> For more information, see [Paginated reports in Power BI FAQ](../paginated-reports/paginated-reports-faq.yml) and [Design tips for reports in Power BI Report Builder](../paginated-reports/report-builder-design-tips.md).
 
 #### Third-party tools
 
@@ -276,7 +276,7 @@ IT often uses the term _client tools_ to refer to software that's installed on c
 
 Because Microsoft usually updates Power BI Desktop every month, it's important to have a seamless process for managing installations and updates.
 
-Here are several ways that organizations can manage [installations and updates of Power BI Desktop](../fundamentals/desktop-get-the-desktop#minimum-requirements.md).
+Here are several ways that organizations can manage [installations and updates of Power BI Desktop](../fundamentals/desktop-get-the-desktop.md#minimum-requirements).
 
 | Type of installation | Supports automatic updates | Description |
 | --- | --- | --- |
@@ -332,7 +332,7 @@ Content creators that have client tools installed, such as Power BI Desktop, sho
 There are two main ways to handle versioning of development files.
 
 - **Teams, OneDrive for Business, SharePoint**: Self-service content creators often [save files](../create-reports/desktop-sharepoint-save-share.md) in Teams, OneDrive for work or school, or SharePoint. Users find these tools are familiar and simple to use. Shared libraries can be organized, secured for appropriate coworkers, and versioning is built in.
-- **Source control plug-ins**: Advanced content creators might need to integrate with a source control tool. For example, this typically involves installing [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for source control, then using a source control management tool like [Visual Studio Code](/training/modules/work-source-control-git/) to commit content changes to a remote repository, such as [Azure DevOps Repos](/azure/devops/repos/get-started/what-is-repos). For Power BI Desktop, [developer mode](../developer/projects/) can be used. In this mode, content is saved as a Power BI project (.pbip) file, which is compatible for use with your preferred source control system. When working with Fabric, [Git integration](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools) is supported for working with a client tool.
+- **Source control plug-ins**: Advanced content creators might need to integrate with a source control tool. For example, this typically involves installing [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for source control, then using a source control management tool like [Visual Studio Code](/training/modules/work-source-control-git/) to commit content changes to a remote repository, such as [Azure DevOps Repos](/azure/devops/repos/get-started/what-is-repos). For Power BI Desktop, [developer mode](../developer/projects/projects-overview.md) can be used. In this mode, content is saved as a Power BI project (.pbip) file, which is compatible for use with your preferred source control system. When working with Fabric, [Git integration](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools) is supported for working with a client tool.
 
 For more information, see [Strategy for file locations](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-file-locations).
 
@@ -346,7 +346,7 @@ To use a custom visual in Power BI Desktop, it must first be installed on the ma
   - **Advantages**:
     - It's simple for users to search for, and locate, visuals in AppSource.
     - All reports and dashboards are automatically updated to use the latest version of custom visuals that have been sourced from AppSource.
-    - Supports the use of [certified visuals](../developer/visuals/power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
+    - Supports the use of [certified visuals](../developer/visuals/power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
     - Microsoft performs [basic validations](/legal/marketplace/certification-policies#1180-power-bi-visuals) of visuals published to AppSource. The extent of the review depends on whether the visual is [certified](../developer/visuals/power-bi-custom-visuals-certified.md) or not.
   - **Potential disadvantages**:
     - When each content creator downloads what they need from AppSource, it can lead to incompatibilities when users have different versions installed.

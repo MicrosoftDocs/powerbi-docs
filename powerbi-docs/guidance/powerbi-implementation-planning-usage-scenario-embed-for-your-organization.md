@@ -100,7 +100,7 @@ The application can set up and automate operations, and it can respond to user-i
 > [!TIP]
 > The _Power BI Embedded Analytics Playground_ is a website that helps you learn, explore, and experiment with Power BI embedded analytics. It includes a developer sandbox for hands-on experiences that use the client APIs with sample Power BI content or your own content. Code snippets and showcases are available for you to explore, too.
 >
-> For more information, see [What is the Power BI embedded analytics playground?](../developer/embedded/power-bi-playground/)
+> For more information, see [What is the Power BI embedded analytics playground?](https://go.microsoft.com/fwlink/?linkid=848279)
 
 ### Gateway setup
 

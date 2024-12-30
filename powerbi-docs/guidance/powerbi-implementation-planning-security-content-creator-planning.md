@@ -178,7 +178,7 @@ A user can request access to content in two ways.
 
 By default, a request for access to a semantic model or a datamart goes to the [owner](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission). The owner is the user who last scheduled data refresh or input credentials. Relying on one user to process access requests might be acceptable for team semantic models. However, that might not be practical or reliable.
 
-Instead of relying on one owner, you can define [custom instructions](../connect-data/service-datasets-build-permissions.md#changing-the-access-request-behavior) that are presented to users when they request access to a semantic model or datamart. Custom instructions are helpful when:
+Instead of relying on one owner, you can define [custom instructions](../connect-data/service-datasets-build-permissions.md#change-the-access-request-behavior) that are presented to users when they request access to a semantic model or datamart. Custom instructions are helpful when:
 
 - The semantic model is set as [discoverable](#discover-content-for-creators).
 - Approval of the access request will be done by someone other than the data owner.
@@ -519,7 +519,7 @@ Power BI semantic models can connect to other semantic models in a process known
 The _Allow DirectQuery connections to Power BI semantic models_ tenant setting allows Power BI administrators to set up which groups of content creators can create chained semantic models. If you don't want to restrict semantic model creators from chaining semantic models, you can leave this setting enabled for the entire organization and rely on workspace access and semantic model permissions. In some cases, you might consider restricting this capability to approved content creators.
 
 > [!NOTE]
-> As a semantic model creator, you can restrict chaining to your semantic model. It's done by enabling the _Discourage DirectQuery connection to this semantic model_ option in Power BI Desktop. For more information, see [Manage DirectQuery connections to a published semantic model](../connect-data/desktop-discourage-directquery-connections-to-dataset.md#discourage-directquery-connections-to-a-semantic-model-using-power-bi-desktop).
+> As a semantic model creator, you can restrict chaining to your semantic model. It's done by enabling the _Discourage DirectQuery connection to this semantic model_ option in Power BI Desktop. For more information, see [Manage DirectQuery connections to a published semantic model](../connect-data/desktop-discourage-directquery-connections-to-dataset.md#use-power-bi-desktop-to-discourage-directquery-connections-to-a-semantic-model).
 
 #### Semantic model API queries
 

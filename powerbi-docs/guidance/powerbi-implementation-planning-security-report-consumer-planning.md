@@ -120,7 +120,7 @@ While it's true that changes to reports and dashboards aren't visible to users o
 
 #### App audience
 
-Each workspace in the Power BI service can have only one Power BI app. However, within the app you can create one or more _[audiences](../collaborate-share/service-create-distribute-apps.md#publish-your-app)_. Consider the following scenario.
+Each workspace in the Power BI service can have only one Power BI app. However, within the app you can create one or more _[audiences](../collaborate-share/service-create-distribute-apps.md#publish-the-app)_. Consider the following scenario.
 
 - You have five sales reports that are distributed to many users throughout your global sales organization.
 - One audience is defined in the app for the sales representatives. This audience can view three of the five reports.
@@ -327,7 +327,7 @@ A _Request access_ workflow exists for:
 
 There are two ways to learn about pending access requests that have been submitted for an app.
 
-- **Email**: The contact(s) for the app receive an email notification. By default, this contact is the [app publisher](../collaborate-share/service-create-distribute-apps.md#publish-your-app). To provide better support for critical apps, we recommend that you set the contact to a group that's able to respond quickly to access requests.
+- **Email**: The contact(s) for the app receive an email notification. By default, this contact is the [app publisher](../collaborate-share/service-create-distribute-apps.md#publish-the-app). To provide better support for critical apps, we recommend that you set the contact to a group that's able to respond quickly to access requests.
 - **Manage permissions menu**: Workspace administrators and members can view, approve, or decline access requests. The _Manage permissions_ page is available on the Apps page, and can be opened for each app. This capability is also available to workspace contributors when the _Allow contributors to update the app for this workspace_ setting is enabled.
 
 Pending access requests for an app show the message provided by the user. Each pending request can be approved or declined. When choosing to approve a request, an app audience must be selected.
