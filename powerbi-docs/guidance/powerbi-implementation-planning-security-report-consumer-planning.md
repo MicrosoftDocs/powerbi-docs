@@ -83,7 +83,7 @@ A [Power BI app](../consumer/end-user-apps.md) delivers a collection of reports,
 
 - The app's navigation pane provides a simple and intuitive user experience. It's a nicer experience than accessing content directly in a workspace.
 - Content can be logically organized into sections (which are like folders) in the app's navigation pane.
-- Consumers only have access to specific items that have been explicitly included in the app for their [audience](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences).
+- Consumers only have access to specific items that have been explicitly included in the app for their [audience](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences).
 - Links to additional information, documentation, or other content can be added to the navigation pane for their audience.
 - There's a built-in _Request access_ workflow.
 

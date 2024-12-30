@@ -110,7 +110,7 @@ Once the content has been deployed, the best practices review isn't necessarily 
 
 - The target [workspace](/fabric/get-started/workspaces) is suitable for the content.
 - [Workspace security roles](../collaborate-share/service-roles-new-workspaces.md) are appropriate for the content.
-- Other permissions (such as [app audience permissions](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences), [Build](../connect-data/service-datasets-build-permissions.md) permission, or use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly and appropriately configured.
+- Other permissions (such as [app audience permissions](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences), [Build](../connect-data/service-datasets-build-permissions.md) permission, or use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly and appropriately configured.
 - [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](fabric-adoption-roadmap-content-ownership-and-management.md).
 - [Sensitivity labels](../enterprise/service-security-apply-data-sensitivity-labels.md) are correctly assigned.
 - Fabric item [endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is appropriate.

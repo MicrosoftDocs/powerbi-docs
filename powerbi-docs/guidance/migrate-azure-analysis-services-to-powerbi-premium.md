@@ -170,7 +170,7 @@ For more information, see:
 
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
-- [Purchase A SKUs for testing and other scenarios](../enterprise)
+- [Purchase A SKUs for testing and other scenarios](../enterprise/)
 
 ## Scalability benefits
 

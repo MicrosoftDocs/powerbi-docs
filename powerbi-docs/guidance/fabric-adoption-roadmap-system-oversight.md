@@ -109,7 +109,7 @@ A few data architecture considerations that affect adoption include:
 - Where will users consume the content? Generally, the three main ways to deliver content are: the Fabric portal, Power BI Report Server, and embedded in custom applications. Additionally, [Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/) is a convenient alternative for users who spend a lot of time in Teams.
 - Who is responsible for managing and maintaining the data architecture? Is it a centralized team, or a decentralized team? How is the [COE](fabric-adoption-roadmap-center-of-excellence.md) represented in this team? Are certain skillsets required?
 - What [data sources](../connect-data/desktop-data-sources.md) are the most important? What types of data will we be acquiring?
-- What [semantic model connectivity mode](/connect-data/service-dataset-modes-understand.md) and [storage mode](../transform-model/desktop-storage-mode.md) choices (for example, Direct Lake, import, live connection, DirectQuery, or composite model frameworks) are the best fit for the use cases?
+- What [semantic model connectivity mode](../connect-data/service-dataset-modes-understand.md) and [storage mode](../transform-model/desktop-storage-mode.md) choices (for example, Direct Lake, import, live connection, DirectQuery, or composite model frameworks) are the best fit for the use cases?
 - To what extent is data reusability encouraged using [lakehouses](/fabric/data-engineering/lakehouse-overview), [warehouses](/fabric/data-warehouse/data-warehousing), and [shared semantic models](../connect-data/desktop-report-lifecycle-datasets.md)?
 - To what extent is the reusability of data preparation logic and advanced data preparation encouraged by using [data pipelines](/fabric/data-factory/data-factory-overview#data-pipelines), [notebooks](/fabric/data-engineering/how-to-use-notebook), and [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)?
 
@@ -126,10 +126,10 @@ It's important for administrators to become fully aware of Fabric's technical ca
 
 The use of capacity can play a significant role in your strategy for creating, managing, publishing, and distributing content. A few of the top reasons to invest in capacity include:
 
-- [Unlimited Power BI content distribution](../enterprise/service-premium-what-is.md#unlimited-content-sharing) to large numbers of read-only users. Content consumption by users with a free Power BI license is available in Premium capacity only, not PPU. Content consumption by free users is also available with an F64 Fabric capacity license or higher.
+- Unlimited Power BI content distribution to large numbers of read-only users. Content consumption by users with a free Power BI license is available in Premium capacity only, not PPU. Content consumption by free users is also available with an F64 Fabric capacity license or higher.
 - Access to [Fabric experiences](/fabric/enterprise/licenses#workspace) for producing end-to-end analytics.
 - [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to manage the publication of content to development, test, and production workspaces. They're highly recommended for critical content to improve release stability.
-- [XMLA endpoint](/enterprise/service-premium-connect-tools.md), which is an industry standard protocol for managing and publishing a semantic model, or querying the semantic model from any XMLA-compliant tool.
+- [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which is an industry standard protocol for managing and publishing a semantic model, or querying the semantic model from any XMLA-compliant tool.
 - Increased model size limits, including [large semantic model](../enterprise/service-premium-large-models.md) support.
 - More frequent [data refreshes](../connect-data/refresh-data.md#power-bi-refresh-types).
 - [Storage of data](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage) in a specific geographic area that's different from the home region.
@@ -148,7 +148,7 @@ Suggestions for managing Fabric capacity:
 - Define who is responsible for managing the capacity. Confirm the roles and responsibilities so that it's clear what action will be taken, why, when, and by whom.
 - Create a specific set of criteria for content that will be published to capacity. It's especially relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity isn't well-managed. Consider requiring a [best practices review](fabric-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) (such as reasonable semantic model size and efficient calculations) before publishing new content to a production capacity.
 - Regularly use the [Fabric capacity metrics app](/fabric/enterprise/metrics-app) to understand resource utilization and patterns for the capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
-- Set the [tenant setting](../support/service-interruption-notifications.md#enable-notifications) so Fabric notifies you if the [capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or if an outage or incident occurs.
+- Set the [tenant setting](../support/service-interruption-notifications.md#enable-notifications-for-service-outages-or-incidents) so Fabric notifies you if the [capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or if an outage or incident occurs.
 
 #### Autoscale
 
@@ -166,7 +166,7 @@ It's possible to set up multiple capacities to facilitate decentralized manageme
 
 Here's an example that describes one way you could manage your capacity.
 
-- [Purchase](../enterprise) a P3 capacity node in Microsoft 365. It includes 32 virtual cores (v-cores).
+- Purchase a P3 capacity node in Microsoft 365. It includes 32 virtual cores (v-cores).
 - Use 16 v-cores to create the first capacity. It will be used by the Sales team.
 - Use 8 v-cores to create the second capacity. It will be used by the Operations team.
 - Use the remaining 8 v-cores to create the third capacity. It will support general use.
@@ -180,7 +180,7 @@ The previous example has several advantages.
 
 However, the previous example has disadvantages, too.
 
-- The [limits per capacity](../enterprise/service-premium-what-is.md#capacity-nodes) are lower. The maximum memory size allowed for semantic models isn't the entire P3 capacity node size that was purchased. Rather, it's the assigned capacity size where the semantic model is hosted.
+- The [limits per capacity](../enterprise/service-premium-what-is.md#capacities-and-skus) are lower. The maximum memory size allowed for semantic models isn't the entire P3 capacity node size that was purchased. Rather, it's the assigned capacity size where the semantic model is hosted.
 - It's more likely one of the smaller capacities will need to be scaled up at some point in time.
 - There are more capacities to manage in the tenant.
 
@@ -290,8 +290,8 @@ Consider disabling trials only when:
 Managing and optimizing the cost of cloud services, like Fabric, is an important activity. Here are several activities you can consider.
 
 - Analyze who is using—and, more to the point, not using—their allocated Fabric licenses and make necessary adjustments. Fabric usage is analyzed using the [activity log](../enterprise/service-admin-auditing.md).
-- Analyze the cost effectiveness of [capacity](../enterprise/service-premium-what-is.md) or [Premium Per User](../enterprise/service-premium-per-user-faq.md#using-premium-per-user--ppu-). In addition to the [additional features](../enterprise/service-premium-per-user-faq.md#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether capacity licensing is more cost-effective when there are a large number of consumers.
-- Carefully [monitor and manage Fabric capacity](/fabric/enterprise/metrics-app). Understanding usage patterns over time will allow you to predict when to purchase [more capacity](../enterprise/service-premium-what-is.md#capacity-nodes). For example, you might choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
+- Analyze the cost effectiveness of [capacity](../enterprise/service-premium-what-is.md) or [Premium Per User](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-). In addition to the [additional features](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether capacity licensing is more cost-effective when there are a large number of consumers.
+- Carefully [monitor and manage Fabric capacity](/fabric/enterprise/metrics-app). Understanding usage patterns over time will allow you to predict when to purchase [more capacity](../enterprise/service-premium-what-is.md#capacities-and-skus). For example, you might choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
 - If there are occasional spikes in the level of usage, use of [autoscale](../enterprise/service-premium-auto-scale.md) with Fabric is recommended to ensure the user experience isn't interrupted. Autoscale will scale up capacity resources for 24 hours, then scale them back down to normal levels (if sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure. Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
 - For Azure data sources, co-locate them in the same region as your Fabric tenant whenever possible. It will avoid incurring [Azure egress charges](https://azure.microsoft.com/pricing/details/bandwidth/). Data egress charges are minimal, but at scale can add up to be considerable unplanned costs.
 
@@ -337,7 +337,7 @@ For organizations with requirements to store data within a geographic region, Fa
 
 Microsoft handles encryption of _data at rest_ in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../enterprise/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys—also known as _bring-your-own-key_ or _BYOK_—is a precaution to ensure that, in the event of a human error by a service operator, customer data can't be exposed.
 
-Be aware that [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.md#using-premium-per-user--ppu-) only supports BYOK when it's enabled for the entire Fabric tenant.
+Be aware that [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) only supports BYOK when it's enabled for the entire Fabric tenant.
 
 ## Auditing and monitoring
 

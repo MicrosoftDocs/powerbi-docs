@@ -424,7 +424,7 @@ A [Microsoft Purview Information Protection](https://www.microsoft.com/security/
 
 You might already have these capabilities because they're included in license suites, such as [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). Alternatively, [Microsoft 365 E5 Compliance](https://www.microsoft.com/security/business/compliance/e5-compliance) capabilities can be purchased as a standalone license.
 
-A [Power BI Pro or Premium Per User (PPU)](../fundamentals/service-features-license-type.md#licenses-and-license-types) license is also required for users who will apply and manage sensitivity labels in the Power BI service or Power BI Desktop.
+A [Power BI Pro or Premium Per User (PPU)](../fundamentals/service-features-license-type.md) license is also required for users who will apply and manage sensitivity labels in the Power BI service or Power BI Desktop.
 
 > [!TIP]
 > If you need clarifications about licensing requirements, talk to your Microsoft account team. Be aware that the Microsoft 365 E5 Compliance license includes additional capabilities that are out of scope for this article.
