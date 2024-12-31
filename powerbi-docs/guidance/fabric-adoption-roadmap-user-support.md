@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap: User support
@@ -30,13 +30,13 @@ The following diagram shows some common types of user support that organizations
 
 The six types of user support shown in the above diagram include:
 
-| **Type** | **Description** |
+| Type | Description |
 | :-: | --- |
 | ![Type 1.](../media/legend-number/legend-number-01-fabric.svg) | **Intra-team support (internal)** is very informal. Support occurs when team members learn from each other during the natural course of their job. |
 | ![Type 2.](../media/legend-number/legend-number-02-fabric.svg) | **Internal community support (internal)** can be organized informally, formally, or both. It occurs when colleagues interact with each other via internal community channels. |
 | ![Type 3.](../media/legend-number/legend-number-03-fabric.svg) | **Help desk support (internal)** handles formal support issues and requests. |
 | ![Type 4.](../media/legend-number/legend-number-04-fabric.svg) | **Extended support (internal)** involves handling complex issues escalated by the help desk. |
-| ![Type 5.](../media/legend-number/legend-number-05-fabric.svg) | **Microsoft support (external)** includes support for licensed users and Fabric administrators. It also includes [comprehensive documentation](/power-bi/index). |
+| ![Type 5.](../media/legend-number/legend-number-05-fabric.svg) | **Microsoft support (external)** includes support for licensed users and Fabric administrators. It also includes [comprehensive documentation](/power-bi/). |
 | ![Type 6.](../media/legend-number/legend-number-06-fabric.svg) | **Community support (external)** includes the worldwide community of experts, [Microsoft Most Valued Professionals (MVPs)](https://mvp.microsoft.com/), and enthusiasts who participate in forums and publish content. |
 
 In some organizations, intra-team and internal community support are most relevant for self-service data and business intelligence (BI)—content is owned and managed by creators and owners in decentralized business units. Conversely, the help desk and extended support are reserved for technical issues and enterprise data and BI (content is owned and managed by a centralized BI team or [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md)). In some organizations, all four types of support could be relevant for any type of content.
@@ -60,7 +60,7 @@ Assistance from your fellow community members often takes the form of messages i
 > [!TIP]
 > The goal of an internal Fabric community is to be self-sustaining, which can lead to reduced formal support demands and costs. It can also facilitate managed self-service content creation occurring on a broader scale versus a purely centralized approach. However, there will always be a need to monitor, manage, and nurture the internal community. Here are two specific tips:
 >
-> - Be sure to cultivate multiple experts in the more difficult topics like [T-SQL](/training/paths/get-started-querying-with-transact-sql/), [Python](/training/paths/beginner-python/), [Data Analysis eXpressions (DAX)](/power-bi/transform-model/desktop-quickstart-learn-dax-basics) and the [Power Query M formula language](/powerquery-m/quick-tour-of-the-power-query-m-formula-language). When a community member becomes a recognized expert, they could become overburdened with too many requests for help.
+> - Be sure to cultivate multiple experts in the more difficult topics like [T-SQL](/training/paths/get-started-querying-with-transact-sql/), [Python](/training/paths/beginner-python/), [Data Analysis eXpressions (DAX)](../transform-model/desktop-quickstart-learn-dax-basics.md) and the [Power Query M formula language](/powerquery-m/quick-tour-of-the-power-query-m-formula-language). When a community member becomes a recognized expert, they could become overburdened with too many requests for help.
 > - A greater number of community members might readily answer certain types of questions (for example, report visualizations), whereas a smaller number of members will answer others (for example, complex T-SQL or DAX). It's important for the COE to allow the community a chance to respond yet also be willing to promptly handle unanswered questions. If users repeatedly ask questions and don't receive an answer, it will significantly hinder growth of the community. In this case, a user is likely to leave and never return if they don't receive any responses to their questions.
 
 An internal community discussion channel is commonly set up as a Teams channel or a Yammer group. The technology chosen should reflect where users already work, so that the activities occur within their natural workflow.
@@ -100,7 +100,7 @@ Some organizations ask the help desk to handle only very simple break-fix issues
 Over time, troubleshooting and problem resolution skills become more effective as help desk personnel expand their knowledgebase and experience with supporting Fabric. The best help desk personnel are those who have a good grasp of what users need to accomplish.
 
 > [!TIP]
-> Purely technical issues, for example [data refresh](/power-bi/connect-data/refresh-data) failure or the need to [add a new user to a gateway data source](/power-platform/admin/onpremises-data-gateway-source-management#manage-users), usually involve straightforward responses associated with a service-level agreement (SLA). For instance, there could be an SLA to respond to blocking issues within one hour and resolve them within eight hours. It's generally more difficult to define SLAs for troubleshooting issues, like data discrepancies.
+> Purely technical issues, for example [data refresh](../connect-data/refresh-data.md) failure or the need to [add a new user to a gateway data source](/power-platform/admin/onpremises-data-gateway-source-management#manage-users), usually involve straightforward responses associated with a service-level agreement (SLA). For instance, there could be an SLA to respond to blocking issues within one hour and resolve them within eight hours. It's generally more difficult to define SLAs for troubleshooting issues, like data discrepancies.
 
 ## Extended support
 
@@ -110,7 +110,7 @@ Managing requests as purely an escalation path from the help desk gets difficult
 
 ## Microsoft support
 
-In addition to the internal user support approaches discussed in this article, there are valuable [external support options](/power-bi/support/service-support-options) directly available to users and Fabric administrators that shouldn't be overlooked.
+In addition to the internal user support approaches discussed in this article, there are valuable [external support options](../support/service-support-options.md) directly available to users and Fabric administrators that shouldn't be overlooked.
 
 ### Microsoft documentation
 
@@ -127,7 +127,7 @@ Licensed users are eligible to [log a support ticket with Microsoft](https://pow
 
 ### Administrator support
 
-There are several support options available for [Fabric administrators](/power-bi/support/service-support-options#get-started-with-support-for-admins).
+There are several support options available for [Fabric administrators](../support/service-support-options.md#get-started-with-support-for-administrators).
 
 For customers who have a [Microsoft Unified Support](https://www.microsoft.com/unifiedsupport/) contract, consider granting help desk and COE members access to the [Microsoft Services Hub](https://serviceshub.microsoft.com/home). One advantage of the Microsoft Services Hub is that your help desk and COE members can be set up to [submit and view support requests](/services-hub/getting-started/roles-permissions#support-contact-permissions).
 
@@ -159,40 +159,40 @@ The Fabric global community is vibrant. Every day, there are a great number of F
 
 **Checklist** - Considerations and key actions you can take for user support follow.
 
-**Improve your intra-team support:**
+**Improve your intra-team support**:
 
 > [!div class="checklist"]
-> - **Provide recognition and encouragement:** Provide incentives to your champions as described in the [Community of practice](fabric-adoption-roadmap-community-of-practice.md#champions-network) article.
-> - **Reward efforts:** Recognize and praise meaningful grassroots efforts when you see them happening.
-> - **Create formal roles:** If informal intra-team efforts aren't adequate, consider formalizing the roles you want to enact in this area. Include the expected contributions and responsibilities in the HR job description, when appropriate.
+> - **Provide recognition and encouragement**: Provide incentives to your champions as described in the [Community of practice](fabric-adoption-roadmap-community-of-practice.md#champions-network) article.
+> - **Reward efforts**: Recognize and praise meaningful grassroots efforts when you see them happening.
+> - **Create formal roles**: If informal intra-team efforts aren't adequate, consider formalizing the roles you want to enact in this area. Include the expected contributions and responsibilities in the HR job description, when appropriate.
 
-**Improve your internal community support:**
-
-> [!div class="checklist"]
-> - **Continually encourage questions:** Encourage users to ask questions in the designated community discussion channel. As the habit builds over time, it will become normalized to use that as the first option. Over time, it will evolve to become more self-supporting.
-> - **Actively monitor the discussion area:** Ensure that the appropriate COE members actively monitor this discussion channel. They can step in if a question remains unanswered, improve upon answers, or make corrections when appropriate. They can also post links to additional information to raise awareness of existing resources. Although the goal of the community is to become self-supporting, it still requires dedicated resources to monitor and nurture it.
-> - **Communicate options available:** Make sure your user population knows the internal community support area exists. It could include the prominent display of links. You can include a link in regular communications to your user community. You can also [customize the help menu links](/fabric/admin/service-admin-portal-help-support#publish-get-help-information) in the Fabric portal to direct users to your internal resources.
-> - **Set up automation:** Ensure that all licensed users automatically have access to the community discussion channel. It's possible to automate license setup by using [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign).
-
-**Improve your internal help desk support:**
+**Improve your internal community support**:
 
 > [!div class="checklist"]
-> - **Determine help desk responsibilities:** Decide what the initial scope of Fabric support topics that the help desk will handle.
-> - **Assess the readiness level:** Determine whether your help desk is prepared to handle Fabric support. Identify whether there are readiness gaps to be addressed.
-> - **Arrange for additional training:** Conduct knowledge transfer sessions or training sessions to prepare the help desk staff.
-> - **Update the help desk knowledgebase:** Include known questions and answers in a searchable knowledgebase. Ensure someone is responsible for regular updates to the knowledgebase to reflect new and enhanced features over time.
-> - **Set up a ticket tracking system:** Ensure a good system is in place to track requests submitted to the help desk.
-> - **Decide whether anyone will be on-call for any issues related to Fabric:** If appropriate, ensure the expectations for 24/7 support are clear.
-> - **Determine what SLAs will exist:** When a specific service level agreement (SLA) exists, ensure that expectations for response and resolution are clearly documented and communicated.
-> - **Be prepared to act quickly:** Be prepared to address specific common issues extremely quickly. Slow support response will result in users finding workarounds.
+> - **Continually encourage questions**: Encourage users to ask questions in the designated community discussion channel. As the habit builds over time, it will become normalized to use that as the first option. Over time, it will evolve to become more self-supporting.
+> - **Actively monitor the discussion area**: Ensure that the appropriate COE members actively monitor this discussion channel. They can step in if a question remains unanswered, improve upon answers, or make corrections when appropriate. They can also post links to additional information to raise awareness of existing resources. Although the goal of the community is to become self-supporting, it still requires dedicated resources to monitor and nurture it.
+> - **Communicate options available**: Make sure your user population knows the internal community support area exists. It could include the prominent display of links. You can include a link in regular communications to your user community. You can also [customize the help menu links](/fabric/admin/service-admin-portal-help-support#publish-get-help-information) in the Fabric portal to direct users to your internal resources.
+> - **Set up automation**: Ensure that all licensed users automatically have access to the community discussion channel. It's possible to automate license setup by using [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign).
 
-**Improve your internal COE extended support:**
+**Improve your internal help desk support**:
 
 > [!div class="checklist"]
-> - **Determine how escalated support will work:** Decide what the escalation path will be for requests the help desk cannot directly handle. Ensure that the COE (or equivalent personnel) is prepared to step in when needed. Clearly define where help desk responsibilities end, and where COE extended support responsibilities begin.
-> - **Encourage collaboration between COE and system administrators:** Ensure that COE members and Fabric administrators have a direct escalation path to reach global administrators for Microsoft 365 and Azure. It's critical to have a communication channel when a widespread issue arises that's beyond the scope of Fabric.
-> - **Create a feedback loop from the COE back to the help desk:** When the COE learns of new information, the IT knowledgebase should be updated. The goal is for the primary help desk personnel to continually become better equipped at handling more issues in the future.
-> - **Create a feedback loop from the help desk to the COE:** When support personnel observe redundancies or inefficiencies, they can communicate that information to the COE, who might choose to improve the knowledgebase or get involved (particularly if it relates to governance or security).
+> - **Determine help desk responsibilities**: Decide what the initial scope of Fabric support topics that the help desk will handle.
+> - **Assess the readiness level**: Determine whether your help desk is prepared to handle Fabric support. Identify whether there are readiness gaps to be addressed.
+> - **Arrange for additional training**: Conduct knowledge transfer sessions or training sessions to prepare the help desk staff.
+> - **Update the help desk knowledgebase**: Include known questions and answers in a searchable knowledgebase. Ensure someone is responsible for regular updates to the knowledgebase to reflect new and enhanced features over time.
+> - **Set up a ticket tracking system**: Ensure a good system is in place to track requests submitted to the help desk.
+> - **Decide whether anyone will be on-call for any issues related to Fabric**: If appropriate, ensure the expectations for 24/7 support are clear.
+> - **Determine what SLAs will exist**: When a specific service level agreement (SLA) exists, ensure that expectations for response and resolution are clearly documented and communicated.
+> - **Be prepared to act quickly**: Be prepared to address specific common issues extremely quickly. Slow support response will result in users finding workarounds.
+
+**Improve your internal COE extended support**:
+
+> [!div class="checklist"]
+> - **Determine how escalated support will work**: Decide what the escalation path will be for requests the help desk cannot directly handle. Ensure that the COE (or equivalent personnel) is prepared to step in when needed. Clearly define where help desk responsibilities end, and where COE extended support responsibilities begin.
+> - **Encourage collaboration between COE and system administrators**: Ensure that COE members and Fabric administrators have a direct escalation path to reach global administrators for Microsoft 365 and Azure. It's critical to have a communication channel when a widespread issue arises that's beyond the scope of Fabric.
+> - **Create a feedback loop from the COE back to the help desk**: When the COE learns of new information, the IT knowledgebase should be updated. The goal is for the primary help desk personnel to continually become better equipped at handling more issues in the future.
+> - **Create a feedback loop from the help desk to the COE**: When support personnel observe redundancies or inefficiencies, they can communicate that information to the COE, who might choose to improve the knowledgebase or get involved (particularly if it relates to governance or security).
 
 ## Questions to ask
 
@@ -220,7 +220,7 @@ Use questions like those found below to assess user support.
 
 The following maturity levels will help you assess the current state of your Power BI user support.
 
-| **Level** | **State of user support** |
+| Level | State of user support |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;Individual business units find effective ways of supporting each other. However, the tactics and practices are siloed and not consistently applied. <br/><br/>&bull;&nbsp;An internal discussion channel is available. However, it's not monitored closely. Therefore, the user experience is inconsistent. |
 | 200: Repeatable | &bull;&nbsp;The COE actively encourages intra-team support and growth of the champions network. <br/><br/>&bull;&nbsp;The internal discussion channel gains traction. It's become known as the default place for questions and discussions. <br/><br/>&bull;&nbsp;The help desk handles a small number of the most common technical support issues. |

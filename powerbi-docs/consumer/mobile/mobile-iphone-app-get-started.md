@@ -36,7 +36,7 @@ If you haven't already signed up, go to [powerbi.com](https://powerbi.microsoft.
 ## Get started with the Power BI app
 1. In your iOS device, open the Power BI app.
 2. To sign in to Power BI, tap the **Power BI** tab and fill in your sign-in details.  
-   To sign in to your Reporting Services mobile reports and KPIs, tap the **Report server** tab and fill in your sign-in details.
+   To sign in to your Reporting Services KPIs, tap the **Report server** tab and fill in your sign-in details.
    
    ![Sign in to the Power BI mobile app](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    

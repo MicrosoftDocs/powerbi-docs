@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 04/24/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Deploy content
@@ -17,9 +17,9 @@ ms.date: 04/24/2024
 
 This article helps you to deploy content as part of managing the content lifecycle. It's primarily targeted at:
 
-- **Fabric administrators:** The administrators who are responsible for overseeing Fabric in the organization. Fabric administrators might need to collaborate with other administrators, like those who oversee Microsoft 365 or Azure DevOps.
-- **Center of Excellence (COE) and BI teams:** The teams that are responsible for overseeing Power BI in the organization. These teams include decision makers who decide how to manage the lifecycle of Power BI content. These teams can also include release managers, who handle the lifecycle of content releases, and engineers who create and manage the components needed to effectively use and support lifecycle management.
-- **Content creators and content owners:** Users who create content that they want to publish to the Fabric portal to share with others. These individuals are responsible for managing the lifecycle of the Power BI content that they create.
+- **Fabric administrators**: The administrators who are responsible for overseeing Fabric in the organization. Fabric administrators might need to collaborate with other administrators, like those who oversee Microsoft 365 or Azure DevOps.
+- **Center of Excellence (COE) and BI teams**: The teams that are responsible for overseeing Power BI in the organization. These teams include decision makers who decide how to manage the lifecycle of Power BI content. These teams can also include release managers, who handle the lifecycle of content releases, and engineers who create and manage the components needed to effectively use and support lifecycle management.
+- **Content creators and content owners**: Users who create content that they want to publish to the Fabric portal to share with others. These individuals are responsible for managing the lifecycle of the Power BI content that they create.
 
 Lifecycle management consists of the processes and practices that you use to handle content from its creation to its eventual retirement. In the [third stage of lifecycle management](powerbi-implementation-planning-content-lifecycle-management-validate.md), you validate content changes, which involves validation performed by both content creators and users. In the fourth stage, you deploy content for consumers to use it.
 
@@ -34,10 +34,10 @@ The following image depicts the lifecycle of Power BI content, highlighting stag
 >
 > This article focuses on key considerations and decisions for deploying content throughout its lifecycle. For more guidance about how to deploy content, see:
 >
-> - **[Migrate to Power BI: Deploy content](powerbi-migration-deploy-support-monitor.md):** This article describes key considerations and decisions for deployment when you migrate to Power BI from other technologies.
-> - **[BI solution planning: Deploy, support, and monitor](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#step-5-deploy-support-and-monitor):** This article describes how to plan for deployment when you first create your Power BI or Fabric solution.
-> - **[Power BI Implementation Planning: Self-service content publishing usage scenario](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md):** This article describes how self-service users can deploy content by using OneDrive for Work and School and Fabric deployment pipelines.
-> - **[Power BI Implementation Planning: Enterprise content publishing usage scenario](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md):** This article describes how central teams can deploy and manage content by using Azure DevOps.
+> - **[Migrate to Power BI: Deploy content](powerbi-migration-deploy-support-monitor.md)**: This article describes key considerations and decisions for deployment when you migrate to Power BI from other technologies.
+> - **[BI solution planning: Deploy, support, and monitor](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#step-5-deploy-support-and-monitor)**: This article describes how to plan for deployment when you first create your Power BI or Fabric solution.
+> - **[Power BI Implementation Planning: Self-service content publishing usage scenario](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md)**: This article describes how self-service users can deploy content by using OneDrive for Work and School and Fabric deployment pipelines.
+> - **[Power BI Implementation Planning: Enterprise content publishing usage scenario](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md)**: This article describes how central teams can deploy and manage content by using Azure DevOps.
 
 You deploy content at two main points during the content lifecycle:
 
@@ -115,11 +115,11 @@ Consider using this approach when:
 > [!NOTE]
 > [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops&preserve-view=true) is a suite of services that integrate with Power BI and Fabric to help you plan and orchestrate content lifecycle management. When you use Azure DevOps this way, you typically leverage the following services:
 >
-> - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true):** Allows you to create and use a remote Git repository, which is a remote storage location you use to track and manage content changes.
-> - **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true):** Allows you to create and use a set of automated tasks to handle, test, and deploy content from a remote repository to a workspace.
-> - **[Azure Test Plans](/azure/devops/test/overview?view=azure-devops&preserve-view=true):** Allows you to design tests to validate the solution and automate quality control together with Azure Pipelines.
-> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Allows you to use boards to track tasks and plans as work items, and link or refer to work items from other Azure DevOps services.
-> - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true):** Allows you to share information with their team to understand and contribute to content.
+> - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true)**: Allows you to create and use a remote Git repository, which is a remote storage location you use to track and manage content changes.
+> - **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true)**: Allows you to create and use a set of automated tasks to handle, test, and deploy content from a remote repository to a workspace.
+> - **[Azure Test Plans](/azure/devops/test/overview?view=azure-devops&preserve-view=true)**: Allows you to design tests to validate the solution and automate quality control together with Azure Pipelines.
+> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true)**: Allows you to use boards to track tasks and plans as work items, and link or refer to work items from other Azure DevOps services.
+> - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true)**: Allows you to share information with their team to understand and contribute to content.
 
 To summarize, content that's been committed and pushed to the remote repository is automatically published to the workspace via this sync process. A key benefit of this approach is that it allows you to couple your [source control management](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#source-control-by-using-a-remote-git-repository) processes with content publication. For instance, it allows for easier rollback of changes or entire versions of a solution.
 
@@ -163,13 +163,13 @@ Consider using Azure Pipelines to orchestrate content deployment when:
 
 Azure Pipelines and other code-based tools can programmatically deploy content by using one or more of the following APIs or endpoints:
 
-- **[Power BI REST APIs](/rest/api/power-bi/):** There are different Power BI REST API endpoints that you can use to deploy content. The Power BI REST APIs support only Power BI item types.
+- **[Power BI REST APIs](/rest/api/power-bi/)**: There are different Power BI REST API endpoints that you can use to deploy content. The Power BI REST APIs support only Power BI item types.
   - _[Import](/rest/api/fabric/core/items/create-item)_: You can publish supported items by using the Power BI REST APIs to import a valid source file to a workspace (such as a .pbix file).
   - _[Deploy](/rest/api/power-bi/pipelines/selective-deploy)_: You can deploy supported items, promoting them from one workspace to another if they're stages in a deployment pipeline.
-- **[Fabric REST APIs](/rest/api/fabric/articles/using-fabric-apis):** There are different Fabric REST API endpoints that you can use to deploy content. The Fabric REST APIs support both Power BI and Fabric item types.
+- **[Fabric REST APIs](/rest/api/fabric/articles/using-fabric-apis)**: There are different Fabric REST API endpoints that you can use to deploy content. The Fabric REST APIs support both Power BI and Fabric item types.
   - _[Create](/rest/api/fabric/core/items/create-item)_: You can create supported items by using the Fabric REST APIs together with a valid [item definition](/rest/api/fabric/articles/item-management/definitions/item-definition-overview).
   - _[Update From Git](/rest/api/fabric/core/git/update-from-git)_: You can update a workspace with content from a remote repository connected by using Git integration.
-- **[XMLA read/write endpoints](../enterprise/service-premium-connect-tools.md):** You can _[create](/analysis-services/tmsl/create-command-tmsl?view=asallproducts-allversions&preserve-view=true)_ or [_alter_ semantic models](/analysis-services/tmsl/alter-command-tmsl?view=asallproducts-allversions&preserve-view=true) by using XMLA endpoints together with a valid model.bim file. XMLA endpoints let you deploy changes to specific model objects instead of the entire model. Azure Pipelines can make use of third-party tools (like the Tabular Editor command line interface) to deploy semantic models by using the XMLA endpoints.
+- **[XMLA read/write endpoints](../enterprise/service-premium-connect-tools.md)**: You can _[create](/analysis-services/tmsl/create-command-tmsl?view=asallproducts-allversions&preserve-view=true)_ or [_alter_ semantic models](/analysis-services/tmsl/alter-command-tmsl?view=asallproducts-allversions&preserve-view=true) by using XMLA endpoints together with a valid model.bim file. XMLA endpoints let you deploy changes to specific model objects instead of the entire model. Azure Pipelines can make use of third-party tools (like the Tabular Editor command line interface) to deploy semantic models by using the XMLA endpoints.
 
 > [!TIP]
 > When you use the Fabric or Power BI REST APIs, you must first create an app registration in Azure ([described here for Power BI Embedded](../developer/embedded/register-app.md?tabs=customers&preserve-view=true#step-2---register-your-application)). This requires a Microsoft Entra ID tenant and an organizational user, and can be a complex process to set up the appropriate permissions. However, you can execute the Fabric REST APIs in notebooks without creating an app registration. This streamlines the setup and use of APIs in your solutions, so that you don't have to manage credentials or configure any setup prior to using the APIs.
@@ -203,8 +203,8 @@ Examples of automated testing include scanning the data model for best practice 
 
 Release pipelines publish or deploy content. A publishing solution typically includes several release pipelines, depending on the target environment.
 
-- **Development release pipeline:** This first pipeline is triggered automatically. It publishes content to a development workspace after the build and validation pipelines succeed.
-- **Test and production release pipelines:** These pipelines aren't triggered automatically. Instead, they're triggered on demand or when approved. Test and production release pipelines deploy content to a test or production workspace, respectively, after _release approval_. [Release approvals](/azure/devops/pipelines/release/approvals/approvals?view=azure-devops&preserve-view=true) ensure that content isn't automatically deployed to a test or production stage before it's ready. These approvals are provided by release managers, who are responsible for planning and coordinating content release to test and production environments.
+- **Development release pipeline**: This first pipeline is triggered automatically. It publishes content to a development workspace after the build and validation pipelines succeed.
+- **Test and production release pipelines**: These pipelines aren't triggered automatically. Instead, they're triggered on demand or when approved. Test and production release pipelines deploy content to a test or production workspace, respectively, after _release approval_. [Release approvals](/azure/devops/pipelines/release/approvals/approvals?view=azure-devops&preserve-view=true) ensure that content isn't automatically deployed to a test or production stage before it's ready. These approvals are provided by release managers, who are responsible for planning and coordinating content release to test and production environments.
 
 ## Decide how you'll promote content between workspaces
 
@@ -349,13 +349,13 @@ Once you've planned how you'll deploy content, you should next consider how you'
 **Checklist** - When planning how to deploy content, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Identify the deployment options available to you:** Depending on your licensing and content, you'll have different options available to publish content or promote it between workspaces. Identify whether you can use deployment pipelines, Azure DevOps, Git integration, the Fabric REST APIs, and XMLA read/write endpoints.
-> - **Decide how you'll publish content:** Choose an approach to publish content that best suits your workflow and needs. Ensure that this approach aligns with your other strategies, like how you track and manage changes.
-> - **Decide how you'll promote content between workspaces:** Choose an approach to deploy content from development to test workspaces and from test to production workspaces. Ensure that this approach aligns with your other strategies, like how you'll publish content.
-> - **Plan your release strategy:** Determine whether a specific individual will be responsible for the final review of content before approving a release or deployment. Ensure that this individual is aware of this task and what they should do to safeguard the deployment process without blocking progress.
-> - **Plan post-deployment activities:** Ensure that you've decided on a process to perform activities such as updating a Power BI app or refreshing data items after a metadata deployment. Consider automating this process by using the Fabric REST APIs.
-> - **Perform first-time set up of deployment tools and processes:** Ensure that you set up the appropriate access, and that permissions align to how you set up access to your content.
-> - **Deploy content to production:** When you've planned and set up your deployment, deploy content to production.
+> - **Identify the deployment options available to you**: Depending on your licensing and content, you'll have different options available to publish content or promote it between workspaces. Identify whether you can use deployment pipelines, Azure DevOps, Git integration, the Fabric REST APIs, and XMLA read/write endpoints.
+> - **Decide how you'll publish content**: Choose an approach to publish content that best suits your workflow and needs. Ensure that this approach aligns with your other strategies, like how you track and manage changes.
+> - **Decide how you'll promote content between workspaces**: Choose an approach to deploy content from development to test workspaces and from test to production workspaces. Ensure that this approach aligns with your other strategies, like how you'll publish content.
+> - **Plan your release strategy**: Determine whether a specific individual will be responsible for the final review of content before approving a release or deployment. Ensure that this individual is aware of this task and what they should do to safeguard the deployment process without blocking progress.
+> - **Plan post-deployment activities**: Ensure that you've decided on a process to perform activities such as updating a Power BI app or refreshing data items after a metadata deployment. Consider automating this process by using the Fabric REST APIs.
+> - **Perform first-time set up of deployment tools and processes**: Ensure that you set up the appropriate access, and that permissions align to how you set up access to your content.
+> - **Deploy content to production**: When you've planned and set up your deployment, deploy content to production.
 
 ## Related content
 

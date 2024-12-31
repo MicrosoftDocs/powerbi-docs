@@ -1,6 +1,6 @@
 ---
-title: Using the RDL Migration tool
-description: Guidance to help you migrate SQL Server Reporting Services reports (RDL) from your local server(s) to a Power BI workspace in your tenant.
+title: "Using the RDL Migration tool"
+description: "Guidance to help you migrate SQL Server Reporting Services reports (RDL) from your local server(s) to a Power BI workspace in your tenant."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,10 +8,11 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, intro-migration
-ms.date: 06/04/2024
+ms.date: 12/30/2024
 ---
 
 # Using the RDL Migration tool
+
 This tool is designed to help customers migrate SQL Server Reporting Services reports (RDL) from your local server(s) to a Power BI workspace in your tenant.  As part of the migration process, the tool also:
 
 - Converts any shared datasources and/or shared datasets in these report files to be embedded in the report and saves the files locally to disk.
@@ -22,7 +23,7 @@ This tool is designed to help customers migrate SQL Server Reporting Services re
 
 - Provides a summary of the successful and unsuccessful assets migrated.
 
->[!NOTE]
+> [!NOTE]
 > This process doesn't remove any of the assets from the source.
 
 ## Installation
@@ -41,37 +42,37 @@ This command saves all the converted files to local disk and displays the status
 
 The examples below assume that you are running in a command prompt where the application RdlMigration.exe was copied to. You can get the application by cloning and building this repository, or by downloading the latest build from the 'Releases' tab. See details below on how to find your reportserver endpoint.
 
-- Upload  all reports from 'My reports' folder from a native mode installation of SQL Server Reporting Services or Power BI Report Server to 'My Workspace' in powerbi.com.
-    
- ```
- RdlMigration https://ssrsservername/reportserver "/My Reports" "My Workspace"
- ```
-    
-- Upload  all reports from '/Sales' folder from a native mode installation of SQL Server Reporting Services or Power BI Report Server to 'Sales' workspace in powerbi.com.
-    
- ```
- RdlMigration https://ssrsservername/reportserver "/Sales" "Sales"
- ```
+- Upload all reports from 'My reports' folder from a native mode installation of SQL Server Reporting Services or Power BI Report Server to 'My Workspace' in powerbi.com.
+
+```
+RdlMigration https://ssrsservername/reportserver "/My Reports" "My Workspace"
+```
+
+- Upload all reports from '/Sales' folder from a native mode installation of SQL Server Reporting Services or Power BI Report Server to 'Sales' workspace in powerbi.com.
+
+```
+RdlMigration https://ssrsservername/reportserver "/Sales" "Sales"
+```
 
 - Upload all reports from '/Shared Documents/Reports' folder from a SharePoint integrated mode installation of SQL Server Reporting Services to 'Reports' workspace in powerbi.com.
-    
+
 ```
 RdlMigration "https://sharepointservername/_vti_bin/reportserver" "https://sharepointservername/Shared Documents/Reports" "Reports"
 ```
 
 - Upload a single report called MonthlySales from '/Shared Documents/SalesReports' folder from a SharePoint integrated mode installation of SQL Server Reporting Services to 'Reports' workspace in powerbi.com.
-    
+
 ```
 RdlMigration "https://sharepointservername/_vti_bin/reportserver" "https://sharepointservername/Shared Documents/SalesReports/MonthlySales.rdl" "Reports"
 ```
----
+
 ## Input details
 
 ### Base URL endpoint
 
 This is set in the Reporting Services Configuration Manager under Web Service URL-> Report Server Web Service URL.
 
-![Screenshot of Reporting Services configuration tool showing web service url.](media/using-rdl-migration-tool/configuration-tool-web-service-url.png)
+:::image type="content" source="media/using-rdl-migration-tool/configuration-tool-web-service-url.png" alt-text="Screenshot of Reporting Services configuration tool showing web service URL." border="false":::
 
 ### File path
 
@@ -80,6 +81,7 @@ This refers to the relative path to your file or folder on the report server. If
 ### Workspace name
 
 This is the name of the workspace you want to upload your files to. Surround the name with quotation marks if there’s  a space in the name. For example:
+
 ```
 "Paginated Workspace"
 ```
