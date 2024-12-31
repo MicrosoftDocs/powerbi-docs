@@ -1491,7 +1491,7 @@ The following updates are new to the Power BI service this month:
 * Complex conditions in DLP for Power BI  [[video]](https://youtu.be/zLgq2L2kk9g?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425746)
 * DLP policies in sovereign clouds  [[video]](https://youtu.be/zLgq2L2kk9g?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425747)
 * Edit your data model in the Power BI service (opt-in)  [[video]](https://youtu.be/zLgq2L2kk9g?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425748)  [[article]](../transform-model/service-edit-data-models.md)
-* Renaming of the Power BI Free user license  [[video]](https://youtu.be/zLgq2L2kk9g?t=142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425768)
+* Renaming of the Fabric free user license  [[video]](https://youtu.be/zLgq2L2kk9g?t=142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425768)
 
 
 ---

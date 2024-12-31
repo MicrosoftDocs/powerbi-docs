@@ -98,7 +98,7 @@ For enterprise BI, it's a best practice to limit workspace access to those who a
 
 ### Distribute content to Fabric free license users
 
-Users with a Power BI free license (or Power BI Pro or PPU license) can view content when granted app access or are added to a workspace role—provided the workspace is assigned to Premium capacity. This ability to distribute content to users with a free license is not available for any of the other workspace license modes, including **Pro**, **Premium per user**, or **Embedded**.
+Users with a Fabric free license (or Power BI Pro or PPU license) can view content when granted app access or are added to a workspace role—provided the workspace is assigned to Premium capacity. This ability to distribute content to users with a free license is not available for any of the other workspace license modes, including **Pro**, **Premium per user**, or **Embedded**.
 
 ### Power BI Premium capacity license
 
