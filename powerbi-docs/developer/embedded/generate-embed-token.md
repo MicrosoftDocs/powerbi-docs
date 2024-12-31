@@ -6,9 +6,10 @@ ms.author: monaberdugo
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: engagement-fy23
 ms.date: 12/26/2024
+# Customer intent: As a developer, I want to generate an embed token so that I can embed Power BI content in my application.
 ---
 
 # Generate an embed token
@@ -44,7 +45,7 @@ In the generate token APIs, the *GenerateTokenRequest* section describes the tok
 
 With [Row Level Security (RLS)](embedded-row-level-security.md), the identity you use can be different from the identity of the service principal or master user you're using to generating the token. By using different identities, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
 
-If you're using RLS, you can sometimes leave out the user's identity (the *EffectiveIdentity* parameter). When you don't use the *EffectiveIdentity* parameter, the token has access to the entire database. This method can be used to grant access to users such as admins and managers, who have permission to view the entire semantic model. However, you can't use this method in every scenario. The table below lists the different RLS types, and shows which authentication method can be used without specifying a user's identity.
+If you're using RLS, you can sometimes leave out the user's identity (the *EffectiveIdentity* parameter). When you don't use the *EffectiveIdentity* parameter, the token has access to the entire database. This method can be used to grant access to users such as admins and managers, who have permission to view the entire semantic model. However, you can't use this method in every scenario. The following table lists the different RLS types, and shows which authentication method can be used without specifying a user's identity.
 
 The table also shows the considerations and limitation applicable to each RLS type.
 
@@ -65,17 +66,18 @@ The table also shows the considerations and limitation applicable to each RLS ty
 
 ### DirectQuery for Power BI semantic models
 
-To embed Power BI report that has a semantic model with a Direct Query connection to another Power BI semantic model, do the following:
+To embed a Power BI report that has a semantic model with a Direct Query connection to another Power BI semantic model:
 
 * In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](../../enterprise/service-premium-connect-tools.md#to-enable-read-write-for-a-premium-capacity). You only need to do this once per capacity.
 * Generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token)
+
   * Specify all dataset IDs in the request.
   * Set the [`XmlaPermissions`](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) to *Read Only* for each semantic model in the request.
   * For each Single Sign-on (SSO) enabled data source, provide the identity blob for the data source in the [`DatasourceIdentity`](/rest/api/power-bi/embed-token/generate-token#datasourceidentity).
 
 ## Renew tokens before they expire
 
-Tokens come with a time limit. This means that after embedding a Power BI item, you have a limited amount of time to interact with it. To give your users a continuous experience, [renew (or refresh) the token before it expires](/javascript/api/overview/powerbi/refresh-token).
+Tokens come with a time limit. Therefore, after embedding a Power BI item, you have a limited amount of time to interact with it. To give your users a continuous experience, [renew (or refresh) the token before it expires](/javascript/api/overview/powerbi/refresh-token).
 
 ## Dashboards and tiles
 
@@ -95,7 +97,7 @@ For these APIs:
 
 ## Considerations and limitations
 
-* For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Microsoft Entra token used to call the `GenerateToken` API. Therefore, if you use the same Microsoft Entra token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
+* For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Microsoft Entra token used to call the `GenerateToken` API. Therefore, if you use the same Microsoft Entra token to generate several embed tokens, the lifetime of the generated embed tokens get shorter with each call.
 
 * If the semantic model and item to be embedded are in two different workspaces, the *service principal* or *master user* must be at least a member of both workspaces.
 
