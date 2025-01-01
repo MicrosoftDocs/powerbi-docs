@@ -33,13 +33,13 @@ The API offers the following customization for each data-view type (currently, o
 * `levelSubtotalEnabled`: (boolean) Indicates if the subtotals are requested for the row or column. Unlike all the other properties, this property is applied to individual rows or columns.
 * `rowSubtotalsType`: ("Top" or "Bottom") Indicates if the row with the *total* data should be retrieved before (`top`) or after (`bottom`) the rest of the data. If this property is set to `bottom`, the total can only be displayed after all the data has been fetched. The default is `bottom`.
 
-Each of the previously listed switches is assigned a value based on the related properties in the property pane and the defaults.
+Each of these switches is assigned a value based on the related properties in the property pane and the defaults.
 
 ## How to use the subtotal API
 
 The visual's *capabilities.json* file has to:
 
-* specify the property that each of the above switches maps to.
+* specify the property that each [switch](#the-subtotals-api) maps to.
 * provide the default value to be used if the property is undefined.
 
 The switches use a format like the following example:
