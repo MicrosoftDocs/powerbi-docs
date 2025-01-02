@@ -5,13 +5,13 @@ services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 03/07/2021
+ms.date: 01/02/2025
 ms.custom: include file
 ---
 
 Your next step is to create a report and upload it to your workspace. You can [create your own report](../fundamentals/desktop-getting-started.md#build-reports) using Power BI Desktop, and then [publish](../fundamentals/desktop-getting-started.md#share-your-work) it to your workspace. Or, you can upload a sample report to your workspace.
 
-If you want to embed a report using Direct Lake mode, make sure your semantic model is [Direct Lake enabled](/fabric/get-started/directlake-overview) with a [fixed identity](/fabric/get-started/direct-lake-fixed-identity).
+If you want to embed a report using Direct Lake mode, make sure your semantic model is [Direct Lake enabled](/fabric/get-started/direct-lake-power-bi-desktop) with a [fixed identity](/fabric/get-started/direct-lake-fixed-identity).
 
 >[!Tip]
 >If you already have a workspace with a report, you can skip this step.
