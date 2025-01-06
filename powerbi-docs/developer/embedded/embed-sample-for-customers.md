@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 01/02/2025
+ms.date: 01/06/2025
 #customer intent: As a developer, I want to learn how to embed Power BI content into my application, so that I can provide my users with interactive reports, dashboards, and tiles.
 ---
 
@@ -528,8 +528,8 @@ Try out the [Power BI embedded analytics playground](./power-bi-playground.md) t
 The following limitations apply for Direct Lake mode:
 
 * Requires a [V2 embed token](./generate-embed-token.md).
-* Automation is only supported with [service principal](./embed-service-principal.md) authentication.
-* Service Principal only works with [Fixed Identity](/fabric/get-started/direct-lake-fixed-identity) connection (No-SSO).
+* If you're using a service principal, you need a [Fixed Identity](/fabric/get-started/direct-lake-fixed-identity) connection (No-SSO).
+* Currently, automation is only supported when [service principal](./embed-service-principal.md) is set as authentication method on a [Fixed Identity](/fabric/get-started/direct-lake-fixed-identity) connection.
 
 ## Related content
 

@@ -160,8 +160,7 @@ sections:
         answer: |
           When a user is granted permissions to a workspace, app, or item, it might not be immediately available through API calls.
           The result can either be a missing item in a 'GET' API response, or an error when trying to use the item.
-          The user can resolve this issue by calling [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.
-          
+          The user can resolve this issue by calling [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.      
           
       - question: |
           How can I find my PBI tenant region?
@@ -289,6 +288,14 @@ sections:
           ```
           > [!NOTE]
           > *Master user* is not supported.
+
+      - question: |
+          How can I embed a report that uses a Direct Lake semantic model?
+        answer: |
+          To use Power BI Embedded with Direct Lake mode:
+          1.	Create a [Direct Lake enabled semantic model](fabric/get-started/direct-lake-overview). 
+          1. Specify a fixed identity for a Direct   2. Specify a [fixed identity](/fabric/get-started/directlake-fixed-identity) for a Direct Lake enabled semantic model.
+          1. [Embed a Power BI report](/power-bi/developer/embedded/embed-sample-for-customers) over the Direct Lake semantic model for your customers.
 
       - question: |
           Can you sign into the Power BI service with service principal?
