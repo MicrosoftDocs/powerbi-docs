@@ -23,7 +23,7 @@ Power BI designers create official packaged content, then distribute the content
 
 An app combines related content, like dashboards, spreadsheets, semantic models, and reports, all in one place. An app has one or more of each content type bundled together. There are many ways a designer can share an app. You can learn more about how apps are shared in the [Get a new app](#get-a-new-app) section below.
 
-There's a unique type of app called a [template app](../connect-data/service-template-apps-install-distribute.md). A Power BI Pro or Premium Per User license is required to install, customize, and distribute a template app. Power BI partners use the content from template apps to build and package analytical data into a new app. They then deploy that app to other Power BI tenants through an available platform, like AppSource or their own web service.  
+There's a unique type of app called a [template app](../connect-data/service-template-apps-install-distribute.md). A Power BI Pro or Premium Per User license is required to install, customize, and distribute a template app. Power BI partners use the content from template apps to build and package analytical data into a new app. They then deploy that app to other Power BI tenants through an available platform, like AppSource or their own web service.
 
 ## App designers and app users
 
