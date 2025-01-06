@@ -175,7 +175,12 @@ Registering your application with Microsoft Entra ID allows you to:
 
 ## Step 4 - Create and publish a Power BI report
 
+If you want to embed a report using Direct Lake mode, make sure your semantic model is [Direct Lake enabled](/fabric/get-started/direct-lake-power-bi-desktop) with a [fixed identity](/fabric/get-started/direct-lake-fixed-identity).
+
 [!INCLUDE[Create a Power BI report](../../includes/embed-tutorial-create-report.md)]
+
+> [!NOTE]
+> If your report uses a Direct Lake semantic model, make sure review these [limitations](#considerations-and-limitations).
 
 ## Step 5 - Get the embedding parameter values
 
