@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with apps
 ms.topic: how-to
-ms.date: 01/17/2024
+ms.date: 01/06/2025
 ms.custom:
 LocalizationGroup: Share your work
 ---
@@ -46,7 +46,7 @@ There are several ways to get a new app. You can search, find, and install apps 
 
 1. To find apps in the apps marketplace, select **Apps** on your navigation pane.
 
-    :::image type="content" source="./media/end-user-apps/power-bi-apps-select.png" alt-text="A screenshot that shows the navigation pane with Apps outlined.":::
+    :::image type="content" source="./media/end-user-apps/power-bi-app-select.png" alt-text="A screenshot that shows the navigation pane with Apps outlined.":::
 
 1. On the Apps page, select **Get apps**.
 
@@ -58,7 +58,7 @@ There are several ways to get a new app. You can search, find, and install apps 
 
 1. After you install an app, it's available in your **Apps** content list. Select **Apps** in the navigation pane to display your apps. The last updated date and the owner are on the bottom of each app card.
 
-    ![A screenshot showing the apps page in the navigation pane.](./media/end-user-apps/power-bi-apps.png)
+    ![A screenshot showing the apps page in the navigation pane.](./media/end-user-apps/power-bi-app.png)
 
 For detailed step-by-step instructions for getting and exploring an app, see [Install and use apps with dashboards and reports in Power BI](end-user-app-view.md).
 
