@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/03/2024
+ms.date: 12/16/2024
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user, I want to understand how to set up and use real-time streaming in Power BI so that I can visualize and analyze live data for timely insights and decision-making.
 #customer intent: 
@@ -262,6 +262,11 @@ Take these steps to troubleshoot the issue:
 You can use automatic page refresh at a report page level to set a refresh interval for visuals that's only active when the page is being consumed. Automatic page refresh is available only for DirectQuery data sources. The minimum refresh interval depends on the type of workspace where the report is published and capacity admin settings for Premium workspaces.
 
 For more information about automatic page refresh, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
+
+
+## Considerations and limitations
+
+* Downloading of datasets or reports is not supported for Streaming or Pubnub. Push models can only be downloaded as a live connect, but users must explicitly connect to the model in liveconnect mode, upload the report to service, and then download it in live connect mode only.
 
 ## Related content
 

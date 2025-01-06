@@ -17,16 +17,16 @@ ms.custom: engagement-fy23
 In this tutorial, you develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The circle card visual supports customization of fill color and outline thickness.
 
 In this tutorial, you learn how to:
-> [!div class="checklist"]
->
-> * Create a development project for your visual.
-> * Develop your visual with [D3](https://d3js.org/) visual elements.
-> * Configure your visual to process data.
-> * Configure your visual to adapt to size changes.
-> * Configure adaptive color and border settings for your visual.
 
->[!NOTE]
->For the full source code of this visual, see [circle card Power BI visual](https://github.com/microsoft/powerbi-visuals-circlecard).
+- [x] Create a development project for your visual.
+- [x] Develop your visual with [D3](https://d3js.org/) visual elements.
+- [x] Configure your visual to process data.
+- [x] Configure your visual to adapt to size changes.
+- [x] Configure adaptive color and border settings for your visual.
+
+For the full source code of this visual, see [circle card Power BI visual](https://github.com/microsoft/powerbi-visuals-circlecard).
+
+If you don't have a Power BI account, you can sign up for a free trial on the Power BI website.
 
 ## Prerequisites
 
@@ -91,7 +91,7 @@ Set up the **visual.ts** file.
 1. In VS Code, in the **Explorer pane**, expand the **src** folder, and select the file **visual.ts**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of accessing the visual.ts file in V S code.](media/develop-circle-card/visual-file.png)
+    >![Screenshot of accessing the visual.ts file in VS code.](media/develop-circle-card/visual-file.png)
 
 2. Remove all the code under the MIT License comment.
 
@@ -471,19 +471,19 @@ So far, the visual renders, but doesn't display any data. In this section, you m
 
 2. In the *update* method:
 
-    * Add the following statement as the first statement. The statement assigns *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
+    - Add the following statement as the first statement. The statement assigns *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
 
         ```typescript
         let dataView: DataView = options.dataViews[0];
         ```
 
-    * Replace **.text("Value")** with this line of code:
+    - Replace **.text("Value")** with this line of code:
 
         ```typescript
         .text(<string>dataView.single.value)
         ```
 
-    * Replace **.text("Label")** with this line of code:
+    - Replace **.text("Label")** with this line of code:
 
         ```typescript
         .text(dataView.metadata.columns[0].displayName)
@@ -501,6 +501,6 @@ You created a working Power BI visual. You can [add formatting options](custom-v
 
 ## Related content
 
-* [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
-* [Power BI visuals project structure](visual-project-structure.md)
-* [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
+- [Add formatting options to the circle card visual](./custom-visual-develop-tutorial-format-options.md)
+- [Power BI visuals project structure](./visual-project-structure.md)
+- [Learn how to debug a Power BI visual you created](./visuals-how-to-debug.md)

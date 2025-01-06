@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/30/2024
+ms.date: 12/18/2024
 ms.custom: sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -196,7 +196,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - The maximum number of rows that the applications can export to an *.xlsx* file is 150,000. The actual number may be lower than 150,000 depending on query limits and visual types.
 
-    For export from matrix visuals using *Data with current layout*, the export limit is 150,000 *data intersections*. For a table visual, each row has one *data intersection*. For a matrix visual, each row can have **1 or more** *data intersections*, so the exported rows count can be less than 150,000. (For example, if a matrix visual has three *data intersections* per row, the maximum row count is 150,000 / 3 = 50,000 rows.) The message "_Exported data exceeded the allowed volume. Some data may have been omitted._" is added at the footer of the Excel file when the limit is hit. To avoid this scenario, consider limiting the dimensions or filtering the data.
+    For export from matrix visuals using *Data with current layout*, the export limit is 150,000 *data intersections*. Data intersections are the common points where different sets of data overlap.  For example, if you have a list of customers who bought laptops and another list of customers who bought tablets, the intersection would be the customers who bought both laptops and tablets. For a table visual, each row has one *data intersection*. For a matrix visual, each row can have **1 or more** *data intersections*, so the exported rows count can be less than 150,000. (For example, if a matrix visual has three *data intersections* per row, the maximum row count is 150,000 / 3 = 50,000 rows.) The message "_Exported data exceeded the allowed volume. Some data may have been omitted._" is added at the footer of the Excel file when the limit is hit. To avoid this scenario, consider limiting the dimensions or filtering the data.
 
 - Export using *Underlying data* doesn't work if:
 

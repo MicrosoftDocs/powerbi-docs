@@ -1,6 +1,6 @@
 ---
-title: Image use guidance for paginated reports
-description: Guidance for using images in Power BI paginated reports.
+title: "Image use guidance for paginated reports"
+description: "Guidance for using images in Power BI paginated reports."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/4/2022
+ms.date: 12/30/2024
 ---
 
 # Image use guidance for paginated reports
@@ -50,5 +50,5 @@ Consider the following suggestions to deliver professional report layouts, ease 
 For more information related to this article, check out the following resources:
 
 - [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

@@ -115,7 +115,7 @@ public update(options: VisualUpdateOptions): void
 
 ## getFormattingModel *(optional)*
 
-This method is called once each time we open the properties pane or the user edits any of the properties in the pane. It returns [`FormattingModel`](./format-pane.md) with all information on the properties pane design, hierarchy, properties, and latest formatting values.
+This method is called once each time we open the properties pane or the user edits any of the properties in the pane. It returns [`FormattingModel`](./format-pane-general.md) with all information on the properties pane design, hierarchy, properties, and latest formatting values.
 
 ```typescript
 getFormattingModel(): visuals.FormattingModel;

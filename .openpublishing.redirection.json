@@ -593,12 +593,22 @@
         {
             "source_path": "powerbi-docs/mobile-share-tile-windows-10-phone-app.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-phone-app-get-started.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/integrate-dashboard.md",
@@ -693,7 +703,12 @@
         {
             "source_path": "powerbi-docs/mobile-app-windows-10-ssrs-kpis-mobile-reports.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-apple-watch.md",
@@ -818,7 +833,12 @@
         {
             "source_path": "powerbi-docs/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-reports-in-the-mobile-apps.md",
@@ -848,7 +868,22 @@
         {
             "source_path": "powerbi-docs/mobile-windows-10-app-presentation-mode.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-app-presentation-mode",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-app-presentation-mode.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-app-single-sign-on-sso.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-phone-app-webview2-installation.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/tutorial-mobile-apps-ios-qna.md",
@@ -3424,6 +3459,11 @@
             "redirect_url": "/power-bi/create-reports/service-from-excel-to-stunning-report",
             "redirect_document_id": true
         },
+        {
+            "source_path": "powerbi-docs/create-reports/sample-sales-marketing-template-app.md",
+            "redirect_url": "/power-bi/create-reports/sample-sales-and-marketing",
+            "redirect_document_id": false
+        },        
         {
             "source_path": "powerbi-docs/service-gateway-custom-connectors.md",
             "redirect_url": "/power-bi/connect-data/service-gateway-custom-connectors",
@@ -6354,6 +6394,11 @@
         {
             "source_path": "powerbi-docs/guidance/whitepaper-azure-b2b-power-bi.md",
             "redirect_url": "/power-bi/enterprise/service-admin-azure-ad-b2b",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/visuals/format-pane.md",
+            "redirect_url": "/power-bi/developer/visuals/format-pane-general",
             "redirect_document_id": false
         }   
   ]
