@@ -175,8 +175,6 @@ Registering your application with Microsoft Entra ID allows you to:
 
 ## Step 4 - Create and publish a Power BI report
 
-If you want to embed a report using Direct Lake mode, make sure your semantic model is [Direct Lake enabled](/fabric/get-started/direct-lake-power-bi-desktop) with a [fixed identity](/fabric/get-started/direct-lake-fixed-identity).
-
 [!INCLUDE[Create a Power BI report](../../includes/embed-tutorial-create-report.md)]
 
 > [!NOTE]
@@ -529,7 +527,7 @@ The following limitations apply for Direct Lake mode:
 
 * Requires a [V2 embed token](./generate-embed-token.md).
 * If you're using a service principal, you need a [Fixed Identity](/fabric/get-started/direct-lake-fixed-identity) connection (No-SSO).
-* Currently, automation is only supported when [service principal](./embed-service-principal.md) is set as authentication method on a [Fixed Identity](/fabric/get-started/direct-lake-fixed-identity) connection.
+* Currently, setting a [service principal](./embed-service-principal.md) as the authentication method on a [Fixed Identity](/fabric/get-started/direct-lake-fixed-identity) connection is the only option supported through automation. Other methods are supported manually through the portal.
 
 ## Related content
 
