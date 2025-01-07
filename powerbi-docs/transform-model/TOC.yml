@@ -21,6 +21,8 @@
     items:
     - name: "Edit data models in the Power BI service (preview)"
       href: service-edit-data-models.md  
+    - name: "Use semantic model version history (preview)"
+      href: service-semantic-model-version-history.md  
     - name: "Using calculations options in Power BI Desktop"
       href: desktop-calculations-options.md  
     - name: "Work with Modeling view"
