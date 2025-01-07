@@ -87,8 +87,8 @@ For workspace level configuration, you can add an Azure admin as a Power BI work
 
 *Answer:*  Azure Log Analytics bills storage, ingestion, and analytical queries independently. Cost also depends on the geographic region. It varies depending on how much activity is generated, how long you choose to store the data, and how often you query it. An average Premium capacity generates about 35 GB of logs monthly, but the storage size of logs can be higher for heavily utilized capacities. For for information, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/).
 
-### I've configured Log analytics successfully, however I cannot see "PowerBIDatasetsWorkspace" Table in my log analytics workspace, why is that?
-*Answer:*  This is Expected. The table will be generated once data is streamed to the log analytics workspace, for example, after a semantic model refresh.
+### I've configured Log analytics successfully, however I cannot see the "PowerBIDatasetsWorkspace" table in my log analytics workspace, why is that?
+*Answer:*  This is expected behavior. The table will be generated once data is streamed to the log analytics workspace, for example, after a semantic model refresh.
 
 ## Related content
 
