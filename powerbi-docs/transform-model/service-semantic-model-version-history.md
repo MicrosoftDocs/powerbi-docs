@@ -52,7 +52,7 @@ Within the version history pane, you can see **up to five versions per semantic 
 
 ## Save a version to version history
 
-Versions of a semantic model begin being captured after it's opened in Editing mode on the web, or when opening a [Direct Lake model for live editing in Power BI Desktop](/fabric/get-started/direct-lake-power-bi-desktop.md#live-edit-a-semantic-model-in-direct-lake-mode).
+Versions of a semantic model begin being captured after it's opened in Editing mode on the web, or when opening a [Direct Lake model for live editing in Power BI Desktop](/fabric/get-started/direct-lake-power-bi-desktop#live-edit-a-semantic-model-in-direct-lake-mode).
 
 Each semantic model that supports version history can have up to five versions saved. A version is saved to version history whenever one of the following actions occurs:
 
@@ -86,7 +86,7 @@ The version history pane also shows an entry for the current version of the mode
 
 ## Capacity utilization and reporting
 
-You can monitor the effect restoring to a previous version with version history has on your Power BI Premium capacities using the [Premium metrics app](/fabric/enterprise/metrics-app). Capacity effect can be monitored using the following [operation](/fabric/enterprise/fabric-operations.md#background-operations).
+You can monitor the effect restoring to a previous version with version history has on your Power BI Premium capacities using the [Premium metrics app](/fabric/enterprise/metrics-app). Capacity effect can be monitored using the following [operation](/fabric/enterprise/fabric-operations#background-operations).
 
 |Operation  |Description  |Workload |Type  |
 |---------|---------|---------|---------|
@@ -113,8 +113,8 @@ Semantic model version history is currently in preview. Keep the following in mi
 * Semantic model version history is subjected to the same limitations as [editing data models in the Power BI service](service-edit-data-models.md). 
 * Version history won't be captured for semantic models that haven't yet upgraded to [enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md). Additionally, if a model with the old metadata format is published over a model in the enhanced metadata format, all previously captured semantic model versions for that model will be deleted.
 * Moving a model between capacities will delete its version history.
-* The data in your semantic model may become outdated after restoring to a previous version. To ensure you have the most recent data, complete a refresh after performing a restore. Refresh behavior may vary across storage modes. For example, Direct Lake models with [automatic updates](/fabric/get-started/direct-lake-overview.md#automatic-updates) configured will automatically update with the most recent data after a restore, without requiring you to manually initiate a refresh.
-* The semantic model must have [large semantic model storage format enabled](../enterprise/service-premium-large-models.md). Semantic models are automatically converted to large semantic model storage format the first time they're opened in Editing mode in the web or when opening a [Direct Lake model for live editing in Desktop](/fabric/get-started/direct-lake-power-bi-desktop.md#live-edit-a-semantic-model-in-direct-lake-mode). If a semantic model with versions captured in version history has the large semantic model storage format disabled in the model settings, all version history for this model will be deleted. A warning in the semantic model settings will notify you of this impact before you make the change:
+* The data in your semantic model may become outdated after restoring to a previous version. To ensure you have the most recent data, complete a refresh after performing a restore. Refresh behavior may vary across storage modes. For example, Direct Lake models with [automatic updates](/fabric/get-started/direct-lake-overview#automatic-updates) configured will automatically update with the most recent data after a restore, without requiring you to manually initiate a refresh.
+* The semantic model must have [large semantic model storage format enabled](../enterprise/service-premium-large-models.md). Semantic models are automatically converted to large semantic model storage format the first time they're opened in Editing mode in the web or when opening a [Direct Lake model for live editing in Desktop](/fabric/get-started/direct-lake-power-bi-desktop#live-edit-a-semantic-model-in-direct-lake-mode). If a semantic model with versions captured in version history has the large semantic model storage format disabled in the model settings, all version history for this model will be deleted. A warning in the semantic model settings will notify you of this impact before you make the change:
   :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-12.png" alt-text="Screenshot showing a warning about deleting version history.":::  
 
 
