@@ -227,7 +227,7 @@ To see all of your subscriptions, start by selecting **My workspace** to make it
 
 From here, you see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the content you're subscribing to, the name of the owner, the name of the associated workspace, and the content type. If you selected **Include my changes**, the **State** column includes the date when changes were included. Search for subscriptions by keyword or filter by any of these fields. Select the **Edit** icon to make changes to a subscription’s settings.
 
-:::image type="content" source="media/end-user-subscribe/power-bi-all-subscription.png" alt-text="Screenshot showing all subscriptions for a user.":::
+:::image type="content" source="media/end-user-subscribe/power-bi-all-subscriptions.png" alt-text="Screenshot showing all subscriptions for a user.":::
 
 # [Administrator](#tab/admin)
 
