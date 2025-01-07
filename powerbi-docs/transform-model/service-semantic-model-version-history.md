@@ -22,19 +22,24 @@ Power BI automatically configures semantic model version history for Premium sem
 You can view previous versions of a semantic model using an Office-like version history pane. Opening the version history pane can be done from multiple locations and various ways, each of which has the same result:
 
 * From the workspace content list, select **More options (...)** for the semantic model and then select **Version history**.
+
   :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-01.png" alt-text="Screenshot showing how to select version history from a semantic model menu.":::
 
 * From the OneLake catalog content list, select **More options (...)** for the semantic model and then select **Version history**.
+
   :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-02.png" alt-text="Screenshot showing how to select version history from the OneLake catalog content list.":::  
 
 * From the semantic model details page, select **File** and then select **Version history**.
+
   :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-03.png" alt-text="Screenshot showing how to select version history from the File menu.":::  
 
 * When editing a semantic model on the web, select **File** and then select **Version history**.
-  :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-04.png" alt-text="Screenshot showing how to select version history from when editing a semantic model on the web.":::  
+
+  :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-04.png" alt-text="Screenshot showing how to select version history when editing a semantic model on the web.":::  
 
 * When editing a semantic model on the web, select the title bar for the semantic model and then select **Version history**. 
-  :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-05.png" alt-text="Screenshot showing how to select version history from when editing a semantic model on the web from the title bar.":::  
+
+  :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-05.png" alt-text="Screenshot showing how to select version history when editing a semantic model on the web from the title bar.":::  
 
 
 
