@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View your Favorites
 ms.topic: how-to
-ms.date: 11/11/2024
+ms.date: 01/06/2025
 LocalizationGroup: Common tasks
 # customer intent: As a Power BI custome using the Power BI service, I want to know how to create and remove favorite content. 
 ---
@@ -20,7 +20,7 @@ LocalizationGroup: Common tasks
 
 When you make content a *favorite*, you can access it quickly from the **Favorites** content list. Favorites are typically content that you visit most often and are identified with a filled star.
 
-   :::image type="content" source="./media/end-user-favorite/power-bi-nav-favorite-new.png" alt-text="Screenshot of the main Power BI page with Favorites highlighted.":::
+   :::image type="content" source="./media/end-user-favorite/power-bi-nav-favorite.png" alt-text="Screenshot of the main Power BI page with Favorites highlighted.":::
 
 ## Add a dashboard or report as a favorite
 
@@ -32,7 +32,7 @@ When you make content a *favorite*, you can access it quickly from the **Favorit
 
    You can also favorite a dashboard or report from anywhere you see the star icon, such as Home, Recent, Apps, and Shared with me.
 
-   :::image type="content" source="./media/end-user-favorite/power-bi-recent-favorite-new.png" alt-text="Screenshot of the Favorites tab on the Power BI main page.":::
+   :::image type="content" source="./media/end-user-favorite/power-bi-recent-favorite.png" alt-text="Screenshot of the Favorites tab on the Power BI main page.":::
    
 
 ## Work with favorites
@@ -49,13 +49,13 @@ You have several options for viewing your favorites.
 
    :::image type="content" source="media/end-user-favorite/power-bi-simplified-mode-new.png" alt-text="From the upper right corner of Home, select the Simplified display mode.":::
 
-   :::image type="content" source="media/end-user-favorite/power-bi-favorite-tab-new.png" alt-text="On the Home page, select the tab for Favorites.":::
+   :::image type="content" source="media/end-user-favorite/power-bi-favorite-tab.png" alt-text="On the Home page, select the tab for Favorites.":::
 
 ## Unfavorite content
 
 If you no longer use a report, dashboard, or app as often as you used to, you can unfavorite it. When you unfavorite content, it's removed from your Favorites list but not from Power BI. Just select the black star to turn it back to a white star.
 
-   :::image type="content" source="./media/end-user-favorite/power-bi-unfavorite-new.png" alt-text="Screenshot of the Favorites tab with an item being unfavorited.":::
+   :::image type="content" source="./media/end-user-favorite/power-bi-unfavorite.png" alt-text="Screenshot of the Favorites tab with an item being unfavorited.":::
 
 ## Considerations and limitations
 
