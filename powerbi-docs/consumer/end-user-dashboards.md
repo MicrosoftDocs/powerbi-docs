@@ -18,7 +18,7 @@ ms.custom: intro-overview
 
 A Power BI *dashboard* is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story.
 
-:::image type="content" source="media/end-user-dashboards/power-bi-dashboards.png" alt-text="Screenshot showing the Sales and Marketing Sample dashboard."lightbox="media/end-user-dashboards/power-bi-dashboard.png#lightbox":::
+:::image type="content" source="media/end-user-dashboards/power-bi-dashboards.png" alt-text="Screenshot showing the Sales and Marketing Sample dashboard."lightbox="media/end-user-dashboards/power-bi-dashboards.png#lightbox":::
 
 The visualizations on the dashboard are called *tiles*. Report designers *pin* tiles to the dashboard. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, start with [Power BI basic concepts](end-user-basic-concepts.md) to get a good foundation. Hovering over an element on a dashboard displays a tooltip.
 
