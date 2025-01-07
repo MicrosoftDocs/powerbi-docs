@@ -37,7 +37,7 @@ Focus mode and full screen mode are two different ways to see more detail in you
 
 In the following example, we started with a report (1), opened one of the visuals in focus mode (2) and then opened that same visual in full screen mode (3). 
 
-:::image type="content" source="media/end-user-focus/power-bi-report.png" alt-text="Individual screenshots of a report view, focus mode, and full screen mode." Lightbox="media/end-user-focus/power-bi-report.png":::
+:::image type="content" source="media/end-user-focus/power-bi-report-tier.png" alt-text="Individual screenshots of a report view, focus mode, and full screen mode." Lightbox="media/end-user-focus/power-bi-report-tier.png":::
 
 ## When to use full screen mode
 
