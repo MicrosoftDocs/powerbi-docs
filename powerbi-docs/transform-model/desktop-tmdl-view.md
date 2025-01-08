@@ -133,17 +133,21 @@ Messages are kept only for each Power BI Desktop session, so restarting Power BI
 
 ***
 
-**Scenario:** I need to create a perspective in my semantic model to use the personalized visuals feature. However, I can't create or edit it using the graphical interface of Power BI Desktop.
+**Scenario:** I need to create a perspective in my semantic model to use the [personalized visuals feature](../create-reports/power-bi-personalize-visuals.md). However, I can't create or edit it using the graphical interface of Power BI Desktop.
 
 **Solution:** Open the TMDL view, create a new empty tab (or use the script from an existing perspective), then create or edit the perspective using TMDL. This method also applies to other semantic model metadata that lack a graphical interface, such as translations, detail row expressions and others.
 
-    createOrReplace
+
+```TMDL
+createOrReplace
       perspective SalesView
         perspectiveTable Sales
             perspectiveMeasure 'Sales Amount'
             perspectiveMeasure 'Sales Qty'
             perspectiveColumn Quantity
             perspectiveColumn 'Amount'
+```
+
 
 </br>
 
