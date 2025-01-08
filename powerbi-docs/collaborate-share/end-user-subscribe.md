@@ -67,7 +67,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     > To receive a subscription email only on certain days, select Hourly or Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
     - If you choose Hourly, Daily, Weekly, or Monthly, choose a **Scheduled Time** for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose Hourly, select the **Scheduled Time** you want the subscription to start, and it runs every hour after the **Scheduled Time**.
-    - If you choose a **Monthly** cadance for report subscriptions, you can either specify specific day(s) of the month or select the **Last day of month** option. If you choose **Last day of month**, the report will be delivered on that day.
+    - If you choose a **Monthly** cadence for report subscriptions, you can either specify specific day(s) of the month or select the **Last day of month** option. If you choose **Last day of month**, the report will be delivered on that day.
       
 :::image type="content" source="./media/end-user-subscribe/power-bi-schedule-last-day-of-month.png" alt-text="Screenshot showing the last day of month option.":::  
 
