@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: product-power-bi, See content that others have shared with me
 ms.topic: how-to
-ms.date: 02/21/2023
+ms.date: 01/06/2025
 LocalizationGroup: Dashboards
 ---
 
@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 Your colleagues have created apps, reports, dashboards, scorecards, workspaces, and semantic models. When it comes time to share them with you or to ask for your collaboration, there are several ways that they can do this. In this article, we explain how to view and open content that others have shared with you.
 
-:::image type="content" source="media/end-user-shared-with-me/power-bi-browse.png" alt-text="Screenshot showing the Shared with me item in the Browse menu.":::
+:::image type="content" source="media/end-user-shared-with-me/power-bi-browses.png" alt-text="Screenshot showing the Shared with me item in the Browse menu.":::
 
 ## Interact with shared content
 
@@ -35,13 +35,13 @@ To view content that others have shared with you, there are two options.
 
 Content that was directly shared with you appears in your **Shared with me** tab. A link to shared content is sent to you in an email link or the *creator* or *owner* automatically installs it for you. To display the list, from the nav pane, select **Browse > Shared with me**. Scroll through **Shared with me** to see reports, dashboards, and scorecards.
 
-:::image type="content" source="./media/end-user-shared-with-me/power-bi-shared-list-new.png" alt-text="Screenshot of the nav pane, browse menu, and Shared with me window.":::
+:::image type="content" source="./media/end-user-shared-with-me/power-bi-shared-list.png" alt-text="Screenshot of the nav pane, browse menu, and Shared with me window.":::
 
 From this list, you can [favorite](../consumer/end-user-favorite.md) and open content.
 
 If your **Shared with me** content list gets long, you've several options for finding what you need. Sort by one of the columns (1), use the keyword filter field (2), or use the Filters pane (3). To open the Filters pane, select **Filters** from the upper right corner.
 
-:::image type="content" source="./media/end-user-shared-with-me/power-bi-shared-list-filter.png" alt-text="Screenshot of the options type, filter by keyword, and filter highlighted on the Shared with me window.":::
+:::image type="content" source="./media/end-user-shared-with-me/power-bi-shared-list-filters.png" alt-text="Screenshot of the options type, filter by keyword, and filter highlighted on the Shared with me window.":::
 
 ## Open shared content from an email link
 
@@ -59,7 +59,7 @@ Apps that were directly shared with you and apps that you've downloaded appear i
 
 Scroll through **Apps** to see reports, dashboards and scorecards. To display the list, from the nav pane, select the **Apps** icon.
 
-:::image type="content" source="media/end-user-shared-with-me/power-bi-apps.png" alt-text="Screenshot of the Apps icon highlighted in the nav panel and apps listed in the main pane.":::
+:::image type="content" source="media/end-user-shared-with-me/power-bi-app.png" alt-text="Screenshot of the Apps icon highlighted in the nav panel and apps listed in the main pane.":::
 
 For more information, see [Apps in Power BI](../consumer/end-user-apps.md).
 
