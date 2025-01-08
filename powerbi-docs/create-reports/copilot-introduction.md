@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 12/06/2024
+ms.date: 01/08/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -177,8 +177,8 @@ We're continuously working to improve the quality of the report pages, including
 
 - AI may generate content that has mistakes. Make sure it's accurate and appropriate before using it.
 - English-only support: Copilot officially supports English as the input and output language. Users who want to use Copilot in other languages can experience degraded quality and accuracy of results.
-- The Copilot Chat Pane is not currently supported for Embed. Only Copilot narrative visual is supported today.
-- Copilot does not support Paginated reports. 
+- The Copilot Chat Pane isn't currently supported for Embed. Only Copilot narrative visual is supported today.
+- Copilot doesn't support paginated reports. 
 - The Copilot button in Desktop report view is always visible in the ribbon; however, Copilot doesn't work unless Copilot for Microsoft Fabric is [enabled in tenant settings](/fabric/get-started/copilot-fabric-overview#enable-copilot) and you have member or contributor access to at least one workspace assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher).
 - Unlike the Data pane or Visualization pane, you can't resize the Copilot pane at this time.
 - If you have limited GPU capacity, Copilot may be throttled.
