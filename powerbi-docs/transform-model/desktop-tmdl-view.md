@@ -138,7 +138,7 @@ Messages are kept only for each Power BI Desktop session, so restarting Power BI
 **Solution:** Open the TMDL view, create a new empty tab (or use the script from an existing perspective), then create or edit the perspective using TMDL. This method also applies to other semantic model metadata that lack a graphical interface, such as translations, detail row expressions and others.
 
 
-```TMDL
+```tmdl
 createOrReplace
       perspective SalesView
         perspectiveTable Sales
