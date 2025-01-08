@@ -76,7 +76,7 @@ Sometimes you want to sort your data by using a field that isn't included in the
 
 - Ask the report designer to create new columns in the semantic model to address sorting issues. The designer's contact information is listed in the report title's menu.
 
-    :::image type="content" source="media/end-user-change-sort/power-bi-heading.png" alt-text="Menu from the title showing contact information.":::
+    :::image type="content" source="media/end-user-change-sort/power-bi-heading.png" alt-text="Screenshot showing menu from the title showing contact information.":::
 
 ## Related content
 
