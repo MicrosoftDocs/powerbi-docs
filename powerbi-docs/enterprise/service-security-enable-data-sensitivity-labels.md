@@ -1,5 +1,5 @@
 ---
-title: Enable sensitivity labels in Fabric
+title: Enable sensitivity labels in Fabric and Power BI
 description: Learn how Fabric administrators can enable sensitivity labels in Fabric.
 author: paulinbar
 ms.author: painbar
@@ -8,7 +8,7 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 11/16/2023
 ---
-# Enable sensitivity labels in Fabric
+# Enable sensitivity labels in Fabric and Power BI
 
 In order for [sensitivity labels from Microsoft Purview Information Protection](/microsoft-365/compliance/sensitivity-labels) to be used in Fabric and Power BI (including Power BI Desktop), they must be enabled on the tenant. This article shows Fabric admins how to do this. For an overview about sensitivity labels in Fabric, see [Sensitivity labels in Fabric](service-security-sensitivity-label-overview.md). For information about applying sensitivity labels in Fabric, see [Apply sensitivity labels to Fabric items](/fabric/get-started/apply-sensitivity-labels)
 
