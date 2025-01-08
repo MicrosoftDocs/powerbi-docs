@@ -1221,6 +1221,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-content-teams.md",
+            "redirect_url": "/power-bi/collaborate-share/service-teams-link-preview",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-focus-mode.md",
             "redirect_url": "/power-bi/consumer/end-user-focus",
             "redirect_document_id": true
