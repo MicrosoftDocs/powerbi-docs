@@ -11,9 +11,9 @@ ms.date: 01/12/2025
 LocalizationGroup: Transform and shape data
 ---
 
-# Work with Tabular Model Definition Language (TMDL) view in Power BI Desktop (preview)
+# Work with TMDL view in Power BI Desktop (preview)
 
-Tabular Model Definition Language view (hereafter, **TMDL view**) lets you script, modify, and apply changes to semantic model objects with a modern code editor using [Tabular Model Definition Language (TMDL)](../developer/projects/projects-dataset.md) in Power BI Desktop, improving development efficiency and providing complete visibility and control over semantic model metadata. 
+**TMDL view** lets you script, modify, and apply changes to semantic model objects with a modern code editor using [Tabular Model Definition Language (TMDL)](../developer/projects/projects-dataset.md) in Power BI Desktop, improving development efficiency and providing complete visibility and control over semantic model metadata. 
 
 **TMDL view** offers an alternative experience to semantic modeling using code, instead of a graphical user interface such as [Model view](desktop-relationship-view.md). 
 
@@ -26,7 +26,7 @@ TMDL view offers the following advantages:
 
 ## Enable preview feature
 
-**TMDL view** is available beginning with the January 2025 version of Power BI Desktop, and is currently in preview. To use TMDL view, you must enable the preview feature. In Power BI Desktop select **File > Options and settings > Options > Preview features** and select the box next to **TMDL View**. 
+To use **TMDL view**, you must enable the preview feature. In Power BI Desktop select **File > Options and settings > Options > Preview features** and select the box next to **TMDL View**. 
 
 ## Script to TMDL
 
@@ -115,6 +115,60 @@ You can select the *Clear* button to empty the *Output* pane messages.
 
 Messages are kept only for each Power BI Desktop session, so restarting Power BI Desktop clears all output messages for all script tabs.
 
+## Common use cases for TMDL view
+
+**Scenario:** I need to reuse a semantic model table with its complete definition, including columns, Power Query expression, and sort by configuration, and others in another semantic model.
+
+**Solution:** Open the semantic model with the table, script it using the TMDL view. Copy the script to the other Power BI Desktop window, open the TMDL view tab, and apply the script.
+
+</br>
+
+***
+
+**Scenario:** I've named all my tables with the prefixes "dim_" or "fact_". I'd like to remove these prefixes without manually updating each of the over 100 tables.
+
+**Solution:** Open the TMDL view, script the semantic model, search for the prefix (regular expressions are supported) and replace it with an empty text.
+
+</br>
+
+***
+
+**Scenario:** I need to create a perspective in my semantic model to use the personalized visuals feature. However, I can't create or edit it using the graphical interface of Power BI Desktop.
+
+**Solution:** Open the TMDL view, create a new empty tab (or use the script from an existing perspective), then create or edit the perspective using TMDL. This method also applies to other semantic model metadata that lack a graphical interface, such as translations, detail row expressions and others.
+
+    createOrReplace
+      perspective SalesView
+        perspectiveTable Sales
+            perspectiveMeasure 'Sales Amount'
+            perspectiveMeasure 'Sales Qty'
+            perspectiveColumn Quantity
+            perspectiveColumn 'Amount'
+
+</br>
+
+***
+
+**Scenario:** I need to modify the Power Query expression of my table without triggering a refresh.
+
+**Solution:** Script the table, modify the Power Query expression, and apply the changes. TMDL view does not require refreshing your data.
+
+
+</br>
+
+***
+
+**Scenario:** I need switch the storage mode of my table from DirectQuery to Import, and vice-versa
+
+**Solution:** Script the table, update the partition mode, and apply changes.
+
+
+</br>
+
+***
+
+
+
 ## Considerations and limitations
 
 TMDL view is currently in preview, so keep the following limitations in mind:
@@ -129,8 +183,10 @@ TMDL view is currently in preview, so keep the following limitations in mind:
 
 The following articles describe more about data models, and also describe DirectQuery in detail.
 
-* [Automatic aggregations](../enterprise/aggregations-auto.md)
-* [Use composite models in Power BI Desktop](desktop-composite-models.md)
-* [Manage storage mode in Power BI Desktop](desktop-storage-mode.md)
-* [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
+* [Get started with TMDL](/analysis-services/tmdl/tmdl-how-to)
+* [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview)
+* [Power BI Desktop projects (preview)](../developer/projects/projects-overview.md)
+* [Power BI Desktop project semantic model folder](../developer/projects/projects-dataset.md)
+
+
 
