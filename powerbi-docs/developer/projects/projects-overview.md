@@ -125,7 +125,7 @@ Schema details for the following files aren't documented. During **preview**, ch
 When working with Power BI project files, you can deploy your content to a Fabric workspace using the following publishing mechanisms:
 
 - Use [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration).
-- Use [Fabric APIs](/fabric/articles/get-started/deploy-project).
+- Use [Fabric APIs](/rest/api/fabric/articles/get-started/deploy-project).
 - Use [Power BI Desktop publish](/power-bi/create-reports/desktop-upload-desktop-files) option.
 
 > [!NOTE]
