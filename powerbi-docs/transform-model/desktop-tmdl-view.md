@@ -185,7 +185,7 @@ TMDL view is currently in preview, so keep the following limitations in mind:
 
 ## Related content
 
-The following articles describe more about data models, and also describe DirectQuery in detail.
+The following articles describe more about TMDL and its uses.
 
 * [Get started with TMDL](/analysis-services/tmdl/tmdl-how-to)
 * [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview)
