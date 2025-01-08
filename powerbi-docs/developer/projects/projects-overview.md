@@ -22,9 +22,9 @@ Power BI Desktop introduces a new way to author, collaborate, and save your proj
 
 Saving your work as a project has the following benefits:
 
-- **Text editor support** - Item definition files are JSON formatted text files containing semantic model and report metadata. These files are publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
+- **Text editor support** - Item definition files are formatted text files containing semantic model and report metadata. These files are publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
 
-- **Programmatic generation and editing item definitions** - You can create scripts using the popular and easy to use [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) , or create your own custom applications to make changes to your item definitions. Applications can be based on public documentation of the item definition schemas and/or client libraries.
+- **Programmatic generation and editing item definitions** - You can programmatically generate and modify item definition text files, enabling batch operations such as updating all report pages visuals or adding a set of measures to each table. For semantic models, you can use the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) client library to deserialize the semantic model metadata, make programmatic modifications, and serialize it back to the files.
 
 - **Source control** - Power BI semantic model and report item definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
 
@@ -119,6 +119,17 @@ Schema details for the following files aren't documented. During **preview**, ch
   - [semanticModelDiagramLayout.json](projects-report.md#semanticmodeldiagramlayoutjson)
 - SemanticModel\
   - [diagramLayout.json](projects-dataset.md#diagramlayoutjson)
+
+## Deploy to Fabric workspace
+
+When working with Power BI project files, you can deploy your content to a Fabric workspace using the following publishing mechanisms:
+
+- Use [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration).
+- Use [Fabric APIs](/fabric/articles/get-started/deploy-project).
+- Use [Power BI Desktop publish](/power-bi/create-reports/desktop-upload-desktop-files) option.
+
+> [!NOTE]
+> Publishing through [Power BI Desktop publish](/power-bi/create-reports/desktop-upload-desktop-files) uses a temporary PBIX file that is published to the service, similar to saving and publishing a PBIX file. Unlike other PBIP deployment options that only deploy metadata, this publishing method deploys both the metadata and the [local data cache](/power-bi/developer/projects/projects-dataset#pbicacheabf) of the semantic model being edited.
 
 ### Model authoring
 
