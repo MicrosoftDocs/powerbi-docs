@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/12/2025
+ms.date: 01/13/2025
 ms.custom: 
 LocalizationGroup: Transform and shape data
 #customer intent: As a Power BI user I want to learn how to use semantic model version history in Power BI.
