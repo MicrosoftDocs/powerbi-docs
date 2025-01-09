@@ -410,11 +410,7 @@ sections:
         answer: |
           To learn how to edit Microsoft Entra registered applications, see [Quickstart: Update an application in Microsoft Entra ID](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
           
-      - question: |
-          How can I edit my Power BI user profile or data?
-        answer: |
-          You can learn how to edit your Power BI data [here](../../fundamentals/service-basic-concepts.md).
-          
+         
           For more information, see [Troubleshooting your embedded application](embedded-troubleshoot.md).
           
           More questions? [Try the Power BI Community](https://community.powerbi.com/)

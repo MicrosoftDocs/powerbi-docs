@@ -76,38 +76,15 @@ In Power BI service, create a workspace for your paginated report.
 
 ### [Embed for your customers](#tab/customers)
 
-Before you import or upload a paginated report to embed, you must assign the workspace containing the report to a capacity. There are two types of capacity you can choose from:
+Before you import or upload a paginated report to embed, you must assign the workspace containing the report to a capacity.
 
-* **Power BI Premium** - To embed a paginated report, you need an *EM* or *P* SKU. For more information about this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-what-is.md).
-* **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
-
-The following table describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
-
-| Capacity Nodes | V-cores | RAM (GB) |
-| --- | --- | --- |
-| EM1/A1 | 1 |  2.5 |
-| EM2/A2 | 2 |  5   |
-| EM3/A3 | 4 | 10   |
-| P1/A4 |  8 |  25 |
-| P2/A5 | 16 |  50 |
-| P3/A6 | 32 | 100 |
+To figure out what kind of capacity you need, see [Microsoft Fabric concepts](/fabric/enterprise/licenses#microsoft-fabric-concepts).
 
 ### [Embed for your organization](#tab/organization)
 
-By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM* or a *P* capacity. You can create a capacity with [Power BI Premium](../../enterprise/service-premium-what-is.md).
+By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM*, *P*, or *F* capacity. You can create a capacity with [Power BI Premium](../../enterprise/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs that create a capacity for paginated reports in [Microsoft Office 365](/microsoft-365):
-
-| Capacity node | V-cores | RAM (GB) | DirectQuery/live connection limits (per sec) |
-| --- | --- | --- | --- |
-| EM1/A1 |   1 |     |  3.75 |
-| EM2/A2 |   2 |     |  7.5 |
-| EM3/A3 |   4 |     | 15  |
-| P1/A4  |   8 |  25 |  30 |
-| P2/A5  |  16 |  50 |  60 |
-| P3/A6  |  32 | 100 | 120 |
-| P4     |  64 | 200 | 240 |
-| P5     | 128 | 400 | 480 |
+Learn more about capacities and SKUs at [Microsoft Fabric concepts](/fabric/enterprise/licenses#microsoft-fabric-concepts).
 
 ---
 

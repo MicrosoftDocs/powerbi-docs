@@ -221,7 +221,7 @@ After acquiring the IError object, you should look at the appropriate common err
 ### Typical errors when embedding for Power BI users
 
 | Message | Detailed Message | Error Code | Possible reason(s) |
-|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
+|---------|------------------|------------|--------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn't exist  |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
@@ -233,8 +233,8 @@ After acquiring the IError object, you should look at the appropriate common err
 
 ### Typical errors when embedding for non-Power BI users (using an Embed Token)
 
-| Message | Detailed Message | Error Code | Reason(s) |
-|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
+| Message | Detailed Message | Error Code | Possible reason(s) |
+|---------|------------------|------------|--------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | LoadReportFailed | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn't exist  |
 | LoadReportFailed | Get report failed | 403 | Report ID doesn't match token |
