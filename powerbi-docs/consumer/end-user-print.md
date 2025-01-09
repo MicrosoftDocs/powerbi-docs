@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/22/2023
+ms.date: 01/08/2025
 LocalizationGroup: Common tasks
 ---
 # Print from the Power BI service
@@ -48,7 +48,7 @@ Experiment with your browser's settings until you get the look you like. Some br
 
 1. In the upper left corner, select **File** > **Print this page**.
 
-   :::image type="content" source="./media/end-user-print/power-bi-dashboard-print-options.png" alt-text="Screenshot of the dropdown File menu expanded, and Print the page selected.":::
+   :::image type="content" source="./media/end-user-print/power-bi-dashboard-print-option.png" alt-text="Screenshot of the dropdown File menu expanded, and Print the page selected.":::
 
 1. If your report has a sensitivity label, decide whether you should print the report or not. 
 
@@ -98,7 +98,7 @@ Reports can be printed one page at a time.
 
 1. Open the report, select **File** > **Print this page** to print the current report page.
 
-    :::image type="content" source="./media/end-user-print/power-bi-print-report.png" alt-text="Screenshot of the file menu open and Print this page selected.":::
+    :::image type="content" source="./media/end-user-print/power-bi-print-reports.png" alt-text="Screenshot of the file menu open and Print this page selected.":::
 
 1. If your report has a sensitivity label, decide whether you should print the report or not. 
 
@@ -117,7 +117,7 @@ Reports can be printed one page at a time.
 
 1. In the upper left corner, select **File** > **Print this page** to print the visual.
 
-    :::image type="content" source="./media/end-user-print/power-bi-visual-print.png" alt-text="Screenshot of the Power BI service File menu open and Print this page selected.":::
+    :::image type="content" source="./media/end-user-print/power-bi-visuals-print.png" alt-text="Screenshot of the Power BI service File menu open and Print this page selected.":::
 
 1. If your report has a sensitivity label, decide whether you should print the report or not. 
 
