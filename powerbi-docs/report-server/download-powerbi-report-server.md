@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/03/2024
+ms.date: 01/08/2025
 keywords:
   - "install pbirs, download pbirs, latest pbirs"
   - "Power BI Report Server"
@@ -43,6 +43,6 @@ PBIRS September 2024 is the latest generally available (GA) version.
   - Windows Server 2019
   - Windows Server 2022
 - .NET Framework 4.8 or later
-- SQL Server Database Engine (2014 SP3 or later), to store the report server database
-- SQL Server Analysis Services (2014 SP3 or later), for your Live Analysis Services data sources
+- SQL Server Database Engine (2014 SP3 or later), to store the report server database.
+- SQL Server Analysis Services (2014 SP3 or later), for your Live Analysis Services data sources.
 
