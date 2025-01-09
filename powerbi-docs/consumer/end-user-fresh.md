@@ -8,7 +8,7 @@ ms.subservice: pbi-explore
 ms.reviewer: mihart
 ms.custom:  
 ms.topic: how-to
-ms.date: 01/08/2025
+ms.date: 01/09/2025
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
@@ -27,7 +27,7 @@ What can you do to ensure you're using the latest content? In most cases, you do
 
 If you have questions about content freshness, contact the designer directly. The examples show you how to identify and contact the owner of your content.
 
-:::image type="content" source="media/end-user-fresh/power-bi-owners-new.png" alt-text="Screenshot showing contact information in the title menu.":::
+:::image type="content" source="media/end-user-fresh/power-bi-owner-lookup.png" alt-text="Screenshot showing contact information in the title menu.":::
 
 ## Different types of timestamps
 
