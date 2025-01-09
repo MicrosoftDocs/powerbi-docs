@@ -29,7 +29,7 @@ In this article, we cover how to copy and paste a visual, a fundamental task tha
 
 Visuals in Power BI reports can be copied from one page in the report to the same page or different page in the same report.
 
-#### [Power BI Desktop](#tab/browser)
+#### [Power BI Desktop](#tab/desktop)
 
 ### Copy and paste in Power BI Desktop
 
@@ -37,7 +37,7 @@ Visuals in Power BI reports can be copied from one page in the report to the sam
 2. Select a visual. With **Home** selected on the menu bar, select **Copy** on the command bar, or use **Ctrl +C** to copy.
 3. To paste the visual elsewhere in your report, use **Paste** from the command bar, or use **Ctrl +V**.
 
-#### [Power BI service](#tab/browser)
+#### [Power BI service](#tab/service)
 
 ### Copy and paste in Power BI service
 
@@ -62,7 +62,7 @@ When you copy a static image of a visual, the copied image displays whatever fil
 
 Keep in mind that visuals can be copied from both Power BI dashboards and from Power BI reports.
 
-#### [Dashboard](#tab/browser)
+#### [Dashboard](#tab/dashboard)
 
 ### Copy from a dashboard tile
 
