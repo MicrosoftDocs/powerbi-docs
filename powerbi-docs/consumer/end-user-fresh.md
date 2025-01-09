@@ -8,7 +8,7 @@ ms.subservice: pbi-explore
 ms.reviewer: mihart
 ms.custom:  
 ms.topic: how-to
-ms.date: 06/11/2024
+ms.date: 01/08/2025
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
@@ -27,7 +27,7 @@ What can you do to ensure you're using the latest content? In most cases, you do
 
 If you have questions about content freshness, contact the designer directly. The examples show you how to identify and contact the owner of your content.
 
-:::image type="content" source="media/end-user-fresh/power-bi-owner-new.png" alt-text="Screenshot showing contact information in the title menu.":::
+:::image type="content" source="media/end-user-fresh/power-bi-owners-new.png" alt-text="Screenshot showing contact information in the title menu.":::
 
 ## Different types of timestamps
 
@@ -39,11 +39,11 @@ It's less helpful to know which type of timestamp goes where, and more helpful t
 
 In a list of content in the Power BI service, there's an owner column and a timestamp column. The type of owner and timestamp depends on the content. The following example shows the Publisher name and Published date on the **Apps** page.
 
-:::image type="content" source="media/end-user-fresh/power-bi-app.png" alt-text="Screenshot showing a list of apps with a published date and publisher." lightbox="media/end-user-fresh/power-bi-app.png":::
+:::image type="content" source="media/end-user-fresh/power-bi-apps.png" alt-text="Screenshot showing a list of apps with a published date and publisher." lightbox="media/end-user-fresh/power-bi-apps.png":::
 
 The next example shows the Owner of the content and the Shared date when you go to the **Browse** page and then the **Shared with me** tab.
 
-:::image type="content" source="media/end-user-fresh/power-bi-shared.png" alt-text="Screenshot showing Shared with me screen. Shared date and owner are outlined." lightbox="media/end-user-fresh/power-bi-shared.png":::
+:::image type="content" source="media/end-user-fresh/power-bi-share.png" alt-text="Screenshot showing Shared with me screen. Shared date and owner are outlined." lightbox="media/end-user-fresh/power-bi-share.png":::
 
 The final example shows a content list in a workspace. The Owner of the content, the Refreshed date, and the date of the Next refresh are listed.
 
