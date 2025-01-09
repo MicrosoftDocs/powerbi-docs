@@ -32,7 +32,7 @@ If your report has a sensitivity label, the label and any encryption settings ca
 1. In the service, select a report to display it on the canvas. You can select a report from your **Home** page, **Apps**, or any other container from the nav pane.
 1. In the Power BI service, select **Export** > **PDF** from the menu bar.
 
-    ![Screenshot showing how to select Export from the menu bar](media/end-user-pdf/power-bi-export-pdf.png)
+    ![Screenshot showing how to select Export from the menu bar.](media/end-user-pdf/power-bi-export-pdf.png)
 
     A pop-up appears where you can select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in its original state, as the *designer* shared it, and doesn't reflect any changes you made to that original state.
     
