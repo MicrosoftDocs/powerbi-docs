@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 
 You can view reports on many devices with varying screen sizes and aspect ratios. Learn how to change the display of a report page, so it fits your needs.
 
-:::image type="content" source="media/end-user-report-view/power-bi-report-canvas.png" alt-text="A screenshot showing a report on the canvas." lightbox="media/end-user-report-view/power-bi-canvas.png#lightbox":::
+:::image type="content" source="media/end-user-report-view/power-bi-report-canvas.png" alt-text="A screenshot showing a report on the canvas." lightbox="media/end-user-report-view/power-bi-report-canvas.png#lightbox":::
 
 ## Explore the View menu
 

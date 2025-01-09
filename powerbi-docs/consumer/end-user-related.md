@@ -8,7 +8,7 @@ ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/01/09/2025
+ms.date: 01/09/2025
 LocalizationGroup: Get started
 ---
 
