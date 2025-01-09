@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/25/2024
+ms.date: 01/09/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -73,6 +73,10 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
     If you don’t have access to any workspaces that are in the correct capacity to use Copilot, you see the following message in the **Copilot (preview)** settings: *Either none of your workspaces have the right capacity to use Copilot, or you don't have the right permission to use them.*
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-settings-error.png" alt-text="Screenshot of the Copilot settings with the error message." lightbox="media/copilot-enable-power-bi/copilot-settings-error.png":::
+
+## Limitations
+
+- The Copilot button on the ribbon might be visible to some customers even if the Copilot chat pane is not yet available for them. 
 
 ## Send feedback
 
