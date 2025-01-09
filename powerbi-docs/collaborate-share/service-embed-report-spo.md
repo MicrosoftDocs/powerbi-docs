@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 12/16/2024
+ms.date: 01/07/2025
 ---
 
 # Embed a report web part in SharePoint Online
@@ -26,6 +26,7 @@ For **Embed report in SharePoint Online** reports to work:
 * To use an embedded report, users must sign in to the Power BI service to activate their Power BI license.
 * To embed a web part in SharePoint Online, you need a Power BI Pro or Premium Per User (PPU) license.
 * Users with a free Fabric license can view a report that's hosted in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
+* SharePoint Embed is now supported in air gap environments.
 
 ## Embed your report
 
@@ -163,7 +164,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
   
   * Azure B2B Guest user accounts aren't supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
 
-* When viewing Power BI reports embedded in SharePoint Online, there is no option for users to switch between Power BI environments.
+* When viewing Power BI reports embedded in SharePoint Online, there's no option for users to switch between Power BI environments.
 
 * Power BI doesn't support the same localized languages that SharePoint Online does. As a result, you might not see proper localization within the embedded report.
 
@@ -173,7 +174,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
 
 * [URL filters](service-url-filters.md) aren't supported with the SharePoint Online web part.
 
-* You can't view or access Power BI Apps embedded in a SharedPoint site page using a Power BI web part. To access the embedded Power BI report, access the app first in Power BI service before accessing it in the SharePoint site page.
+* You can't view or access Power BI Apps embedded in a SharePoint site page using a Power BI web part. To access the embedded Power BI report, access the app first in Power BI service before accessing it in the SharePoint site page.
 
 ## Related content
 
