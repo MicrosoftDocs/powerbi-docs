@@ -64,8 +64,6 @@ landingContent:
             url: embed-service-principal.md                              
       - linkListType: reference
         links:
-          - text: "Embedding setup tool"
-            url: https://app.powerbi.com/embedsetup
           - text: "Developer samples and scripts"
             url: https://github.com/Microsoft/PowerBI-Developer-Samples
 

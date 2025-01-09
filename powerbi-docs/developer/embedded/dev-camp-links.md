@@ -31,7 +31,7 @@ The Power BI Dev Camp tutorials are targeted toward developers who are intereste
 
 ---
 
-* [Tabular-Object-Model-Tutorial](https://github.com/PowerBiDevCamp/Tabular-Object-Model-Tutorial) - A tutorial and sample code programming semantic model that use the Tabular Object Model with Power BI Desktop and the Power BI service via the XMLA endpoint.
+* [Tabular-Object-Model-Tutorial](https://github.com/PowerBiDevCamp/Tabular-Object-Model-Tutorial) - A tutorial and  code programming semantic model that use the Tabular Object Model with Power BI Desktop and the Power BI service via the XMLA endpoint.
 
 * [PowerBI-PowerShell-Tutorial](https://github.com/PowerBiDevCamp/PowerBI-PowerShell-Tutorial) - Student files for the Power BI PowerShell tutorial from Power BI Dev Camp.
 
