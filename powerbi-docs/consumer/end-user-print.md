@@ -85,10 +85,10 @@ Experiment with your browser's settings until you get the look you like. Some br
    :::image type="content" source="./media/end-user-print/power-bi-scale.png" alt-text="Screenshot of Print window with print settings displayed.":::
 
 > [!TIP]
-> If you've followed all these steps and your tile still isn't displaying the way you want it to, try the following.
-> 1. Open the Print window and make the changes to the print settings that you believe will result in the best printout. For example, change the layout, margins, and scale.
+> If you've followed all these steps and your tile still isn't displaying the way you want it to, try these steps.
+> 1. Open the Print window and make changes to the print settings. For example, change the layout, margins, and scale.
 > 1. Select **Cancel** (instead of **Print**).
-> 1. Go through steps 1-5 again. Your tile will adjust to the new Print window settings and be ready to print.
+> 1. Go through steps 1-5 again. Your tile adjusts to the new Print window settings and is ready to print.
 
 #### [Report page](#tab/page)
 
@@ -134,7 +134,7 @@ Q: Why can't I print all the report pages at once?</br>
 A: Report pages can only be printed one page at a time.
 
 Q: Why can't I print to PDF?</br>
-A: You have this option only if you already configured the PDF driver in your browser. If you don't see this option, your administrator might have disabled print to PDF.
+A: You have this option only if you already configured the PDF driver in your browser. If you don't see this option, check to see if your administrator has disabled print to PDF.
 
 Q: Why doesn't my browser match the screenshots when I select **Print**?</br>
 A: The Print screens vary by browser and software version.
