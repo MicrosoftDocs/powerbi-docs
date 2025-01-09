@@ -38,7 +38,7 @@ When TMDL view opens the code editor is initially empty. You can script any sema
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-02.png" alt-text="Screenshot of dragging a semantic model object onto the T-M-D-L view canvas.":::
 
-When using TMDL view and dragging the object from the Data pane, Power BI scripts the entire object metadata into the current tab as TMDL, or opens a new tab if the current tab isn't empty, as a *createOrReplace* TMDL script of the selected objects, as shown in the following image:
+When using TMDL view and dragging the object from the Data pane, Power BI scripts the entire object metadata into the current tab as TMDL, or opens a new tab if the current tab isn't empty, as a [*createOrReplace*](/analysis-services/tmdl/tmdl-scripts#createorreplace-command) TMDL script of the selected objects, as shown in the following image:
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-03.png" alt-text="Screenshot of the T-M-D-L metadata being created automatically.":::
 
@@ -92,7 +92,7 @@ In the event of a failure, an error notification is displayed to show that your 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-11.png" alt-text="Screenshot of failure banner in the code editor indicating changes weren't successful.":::
 
 > [!NOTE]
-> Execution of TMDL scripts with TMDL view only modifies the semantic model metadata, and does not refresh data. If your changes require a data refresh, such as changing a PowerQuery expression or calculated column expression, you must manually refresh the table or model for any such changes to take effect.
+> Execution of TMDL scripts with TMDL view only modifies the semantic model metadata, and does not refresh data. If your changes require a data refresh, such as changing a PowerQuery expression or calculated column expression, you must manually refresh the table or model for any such changes to take effect. Additionally, modifications like renaming partitions or altering calculated table or column expressions could result in the table data being cleared.
 
 ## TMDL script tabs
 
@@ -100,7 +100,7 @@ In TMDL view you can have multiple script tabs at once, any of which can be rena
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-12.png" alt-text="Screenshot of multiple tabs in the T-M-D-L view.":::
 
-The contents of the **TMDL view** tabs are saved in the report file when you save the Power BI Desktop report, so you can continue where you left off the next time you open the Power BI Desktop report file. When saving to a Power BI Project (PBIP), each script tab is saved as a .tmdl file in the *\TMDLScripts* folder, as shown in the following image.
+The contents of the **TMDL view** tabs are saved in the report file when you save the Power BI Desktop report, so you can continue where you left off the next time you open the Power BI Desktop report file. When saving to a [Power BI Project (PBIP)](/power-bi/developer/projects/projects-dataset), each script tab is saved as a .tmdl file in the *\TMDLScripts* folder, as shown in the following image.
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-13.png" alt-text="Screenshot of the file structure for saving tabs in a Power BI Desktop file.":::
 
@@ -115,9 +115,17 @@ You can select the *Clear* button to empty the *Output* pane messages.
 
 Messages are kept only for each Power BI Desktop session, so restarting Power BI Desktop clears all output messages for all script tabs.
 
+## TMDL view and Power BI project
+
+When you save your work as a Power BI project (PBIP), you gain access to your semantic model definition metadata as [TMDL files](/power-bi/developer/projects/projects-dataset#tmdl-format), providing a useful source control and co-development experience, while also allowing you to [make changes](/power-bi/developer/projects/projects-dataset#make-external-changes-to-tmdl-files) to the semantic model outside of Power BI Desktop. However, if you modify the TMDL files within the PBIP, you must restart Power BI Desktop to reload those changes. In contrast, the TMDL view follows a scripting mental model, enabling you to efficiently apply changes directly to the semantic model being edited in Power BI Desktop using TMDL, regardless of whether the file format is PBIX or PBIP.
+
+You can seamlessly integrate both experiences. For instance, you can update the TMDL definition in PBIP for quick changes without launching Power BI Desktop, and utilize the TMDL view when Power BI Desktop is already open to efficiently implement a series of changes to the semantic model using TMDL. Both approaches offer a rich and consistent TMDL coding experience.
+
+
+
 ## Common use cases for TMDL view
 
-**Scenario:** I need to reuse a semantic model table with its complete definition, including columns, Power Query expression, and sort by configuration, and others in another semantic model.
+**Scenario:** I need to reuse or share a semantic model table with its complete definition, including columns, Power Query expression, and sort by configuration, and others in another semantic model.
 
 **Solution:** Open the semantic model with the table, script it using the TMDL view. Copy the script to the other Power BI Desktop window, open the TMDL view tab, and apply the script.
 
@@ -171,7 +179,13 @@ createOrReplace
 
 ***
 
+**Scenario:** I need to back up my semantic model definition before making significant changes and easily roll back to a previous definition, if needed.
 
+**Solution:** Script the semantic model or specific parts you want to back up, make your changes in other views, and if needed, return to the TMDL view to restore the previous metadata by running the saved script.
+
+</br>
+
+***
 
 ## Considerations and limitations
 
