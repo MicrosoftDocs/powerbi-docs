@@ -195,6 +195,7 @@ TMDL view is currently in preview, so keep the following limitations in mind:
 * The *Command palette* displays some commands that aren't currently supported.
 * Setting up the *initial* Git integration *from* the workspace won't include TMDL View scripts saved in published semantic model. Learn more in the [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo) article.
 * You can't script model explorer groups such as Measures, Columns, so on.
+* TMDL view is unavailable when editing [Direct Lake semantic models](/fabric/get-started/direct-lake-power-bi-desktop).
 
 
 ## Related content
