@@ -25,7 +25,7 @@ In this article, we cover how to copy and paste a visual, a fundamental task tha
 - In **Power BI service** open the report in [Editing View](../consumer/end-user-reading-view.md).
 - In **Power BI service** and **Power BI mobile**, you can also copy an image of a visual and paste it into other applications, like Word or PowerPoint.
 
-## Copy and paste visuals within the same report in Power BI
+## Copy and paste visuals within the same report
 
 Visuals in Power BI reports can be copied from one page in the report to the same page or different page in the same report.
 
