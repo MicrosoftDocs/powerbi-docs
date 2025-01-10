@@ -145,12 +145,12 @@ If you own the content or are an administrator of the tenant, you can control wh
   
 ## Considerations and limitations
 
-As a Power BI user, the awareness of any considerations and limitations when copyng and pasting visuals is helpful whether you're a novice or an experienced user. Here is some practical information to consider:
+As a Power BI user, the awareness of any considerations and limitations when copying and pasting visuals is helpful whether you're a novice or an experienced user. Here's some practical information to consider:
 
 Q: Why is the Copy icon disabled on a visual?
 A: The content owner or administrator of the tenant can turn off the copy feature for a visual which would disable the Copy icon.
 
-:::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy' icon greyed-out or disabled.":::
+:::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy' icon grayed-out or disabled.":::
 
 Q: Which visuals aren't fully supported for copying and pasting?
 A: We support native Power BI visuals and certified custom visuals. There's limited support for certain visuals including:
