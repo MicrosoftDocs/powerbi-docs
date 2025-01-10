@@ -76,7 +76,7 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 
 ## Limitations
 
-- The Copilot button on the ribbon might be visible to some customers even if the Copilot chat pane is not yet available for them. 
+- The Copilot button on the ribbon might be visible to some customers even if the Copilot chat pane is not yet available for them. This situation is temporary.
 
 ## Send feedback
 
