@@ -122,7 +122,7 @@ You can remove the copy icon from that visual in the Power BI service if you don
 1. Select **General** > **Header icons** > **Icons** and expand the card.
 1. Scroll down to the bottom of the card and toggle off **Copy icon**.
 
-   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-headers.png" alt-text="Image of Power BI service highighting location of 'Copy icon' selected.":::
+   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-headers.png" alt-text="Image of Power BI service highlighting location of 'Copy icon' selected.":::
 
 1. If you can't find the **Visual header** setting, turn on the modern visual header option under **Report settings**.
 
