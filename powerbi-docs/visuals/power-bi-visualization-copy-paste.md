@@ -31,7 +31,7 @@ Visuals in Power BI reports can be copied from one page in the report to the sam
 
 #### [Power BI Desktop](#tab/desktop)
 
-### Copy and paste in Power BI Desktop
+#### Copy and paste in Power BI Desktop
 
 1. Open a report that has at least one visualization.  
 2. Select a visual. With **Home** selected on the menu bar, select **Copy** on the command bar, or use **Ctrl +C** to copy.
@@ -39,18 +39,19 @@ Visuals in Power BI reports can be copied from one page in the report to the sam
 
 #### [Power BI service](#tab/service)
 
-### Copy and paste in Power BI service
+#### Copy and paste in Power BI service
 
 1. Open a report that has at least one visualization. Select **Edit** from the command bar.
 2. Select a visual. Right-click on the visual and select **Copy > Copy visual**, or you can use **Ctrl +C** to copy.
 3. Use **Ctrl +V** to paste the visual elsewhere in your report.
+
 ---
 
 ## Copy a visual as a static image to your clipboard
 
 These steps explain how to copy a static image of a visual in Power BI. Once copied, you can paste it into Microsoft OneNote, Word, Outlook, or any other application that supports pasting images.
 
-### In Power BI service, copy and paste a static image of a visual
+#### In Power BI service, copy and paste a static image of a visual
 
 When you copy a static image of a visual, the copied image displays whatever filters are applied to it along with its metadata including the following information:
 
@@ -64,7 +65,7 @@ Keep in mind that visuals can be copied from both Power BI dashboards and from P
 
 #### [Dashboard](#tab/dashboard)
 
-### Copy from a dashboard tile
+#### Copy from a dashboard tile
 
 1. Open the Power BI service and navigate to the dashboard you want to copy from.
 
@@ -86,7 +87,7 @@ Keep in mind that visuals can be copied from both Power BI dashboards and from P
 
 #### [Report](#tab/report)
 
-### Copy from a report visual
+#### Copy from a report visual
 
 1. Open the Power BI service and navigate to the report you want to copy from.
 
