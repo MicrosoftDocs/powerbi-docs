@@ -81,7 +81,7 @@ Keep in mind that visuals can be copied from both Power BI dashboards and from P
 
    :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-preview.png" alt-text="Screenshot of a dialog with the Copy to clipboard option.":::
 
-1. With your visual copied to the clipboard, you can paste it into another application using **Paste** from the command bar, or right-click > Paste, or use **Ctrl + V**. In this screenshot, we pasted the visual into Microsoft OneNote. 
+1. With your visual copied to the clipboard, you can paste it into another application using **Paste** from the command bar, or right-click > Paste, or use **Ctrl + V**. In this screenshot, we pasted the visual into Microsoft OneNote.
 
    :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-paste-onenote.png" alt-text="Screenshot of the visual pasted into Microsoft OneNote.":::
 
@@ -95,7 +95,7 @@ Keep in mind that visuals can be copied from both Power BI dashboards and from P
 
    :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-report.png" alt-text="Screenshot showing 'Copy visual as image' icon.":::
 
-1. If your visual has a sensitivity label applied, you receive a warning before the copy is made. If the data shouldn't be shared with others, select **Cancel**. If you select **Copy**, the sensitivity label is added to the metadata under the pasted visual. 
+1. If your visual has a sensitivity label applied, you receive a warning before the copy is made. If the data shouldn't be shared with others, select **Cancel**. If you select **Copy**, the sensitivity label is added to the metadata under the pasted visual.
 
     :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-sensitivity-2.png" alt-text="Screenshot showing a warning message for visuals with sensitivity labels.":::
 
@@ -140,14 +140,16 @@ If you own the content or are an administrator of the tenant, you can control wh
 
    :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-enable.png" alt-text="Screenshot showing Enable Copy and paste visuals.":::
 
-1. Disable **Copy and paste visuals**, for your selected Security groups. 
+1. Disable **Copy and paste visuals**, for your selected Security groups.
   
-## Considerations and troubleshooting
+## Considerations and limitations
 
-:::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy not available' screen.":::
+As a Power BI user, the awareness of any considerations and limitations when copyng and pasting visuals is helpful whether you're a novice or an experienced user. Here is some practical information to consider:
 
 Q: Why is the Copy icon disabled on a visual?
-A: The content owner and admin can turn off this feature.
+A: The content owner or administrator of the tenant can turn off the copy feature for a visual which would disable the Copy icon.
+
+:::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy not available' screen.":::
 
 Q: Which visuals aren't fully supported for copying and pasting?
 A: We support native Power BI visuals and certified custom visuals. There's limited support for certain visuals including:
@@ -167,7 +169,9 @@ A: We support native Power BI visuals and certified custom visuals. There's limi
 
 Q: Can I paste into any application?
 A: No, only applications with support for pasting HTML.
-A: Formatted content from the clipboard might not render everything that was copied from the visual. 
+
+Q: Why does the copied visual look different from the original?
+A: Formatted content from the clipboard might not render everything that was copied from the visual.
 
 Visualizations on *dashboards* can't be copied and pasted into Power BI reports or other dashboards.
 
