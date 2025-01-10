@@ -147,13 +147,13 @@ If you own the content or are an administrator of the tenant, you can control wh
 
 As a Power BI user, the awareness of any considerations and limitations when copying and pasting visuals is helpful whether you're a novice or an experienced user. Here's some practical information to consider:
 
-Q: Why is the Copy icon disabled on a visual?
-A: The content owner or administrator of the tenant can turn off the copy feature for a visual which would disable the Copy icon.
+**Q:** Why is the Copy icon inactive or grayed-out on a visual?<br>
+**A:** The content owner or administrator of the tenant can turn off the copy feature for a visual which would make the Copy icon unavailable.
 
 :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy' icon grayed-out or disabled.":::
 
-Q: Which visuals aren't fully supported for copying and pasting?
-A: We support native Power BI visuals and certified custom visuals. There's limited support for certain visuals including:
+**Q:** Which visuals aren't fully supported for copying and pasting?<br>
+**A:** We support native Power BI visuals and certified custom visuals. There's limited support for certain visuals including:
 
 - ESRI (Environmental Systems Research Institute) and other map visuals.
 - Python visuals.
@@ -168,13 +168,14 @@ A: We support native Power BI visuals and certified custom visuals. There's limi
 - Visuals with data filters can't be redirected.
 - Visuals with personal bookmarks and other *sticky* states.
 
-Q: Can I paste into any application?
-A: No, only applications with support for pasting HTML.
+**Q:** Can I paste into any application?<br>
+**A:** You can only paste into applications that support pasting images such as Word, PowerPoint, Outlook, or any application with support for pasting HTML.
 
-Q: Why does the copied visual look different from the original?
-A: Formatted content from the clipboard might not render everything that was copied from the visual.
+**Q:** Why does the copied visual look different from the original?<br>
+**A:** Formatted content, when copied to the clipboard, and pasted into another application might not render everything that was copied from the visual.
 
-Visualizations on *dashboards* can't be copied and pasted into Power BI reports or other dashboards.
+**Q:** Can I copy a visual from a Power BI dashboard, and paste it into a Power BI report or another dashboard?<br>
+**A:** Visualizations on *dashboards* can't be copied and pasted into Power BI reports or other dashboards.
 
 ## Related content
 
