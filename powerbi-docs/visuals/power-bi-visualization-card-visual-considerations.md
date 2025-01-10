@@ -47,6 +47,10 @@ During the preview phase, certain Accessibility features such as keyboard naviga
 
 The (new) Card visual currently lacks the functionality to set alerts for specific cards. Due to the (new) Card visual’s ability to contain multiple callout tiles within a single container, implementing alerts presented a development challenge. The development team is actively seeking a solution to integrate this feature effectively. No workaround is currently available for setting alerts on the (new) Card visual. The only alternative is to use the existing card visual, which supports alert functionality.
 
+#### Sort 
+
+The (new) Card visual currently does not support sorting data in ascending or descending order directly. However, there is a workaround: you can create a calculated column that ranks the data used in the Small Multiples field. By adding this ranking column as a secondary field in the Small Multiples field, the "More options" (...) menu now will display a "Sort by" option. This method allows you to implement sorting functionality while using the (new) Card visual.
+
 ## Related content
 
 * [Create a (new) Card visual](power-bi-visualization-new-card.md)
