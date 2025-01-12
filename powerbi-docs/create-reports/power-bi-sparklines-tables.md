@@ -32,7 +32,7 @@ Watch this video showing how to add sparklines, and then try it yourself.
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRCPQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=543c6732-a00a-4a58-9b7d-fe5e2917044d]
 
 ## Add a sparkline
 

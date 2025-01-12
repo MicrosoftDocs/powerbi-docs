@@ -24,7 +24,7 @@ Watch this video showing how to create visuals from data stored within Dataverse
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRVzC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=809c68a2-ea3c-41ee-97b5-7ad442cd1fea]
 
 
 ## Visualize a view
