@@ -7,7 +7,8 @@ ms.reviewer: sabre
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/08/2023
+ms.date: 01/12/2025
+#customer intent: As an ISV, I want to embed a Power BI report that uses data stored in Azure Analysis Services (AAS) in an embed for your customers scenario, so that I can provide my customers with a report that uses data from an AAS database.
 ---
 
 # Embed a report with an Azure Analysis Services (AAS) database
