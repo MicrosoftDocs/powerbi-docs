@@ -98,7 +98,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 | Metric | Dashboard | Report | Description |
 | --- | --- | --- | --- |
-| Platforms slicer |yes |yes |Was the dashboard or report accessed via the Power BI service (powerbi.com) or a mobile device? Mobile includes all our iOS, Android, and Windows apps. |
+| Platforms slicer |yes |yes |Was the dashboard or report accessed via the Power BI service (powerbi.com) or a mobile device? Mobile includes all our iOS and Android apps. |
 | Report page slicer |no |yes |If the report has more than 1 page, slice the report by the page(s) that was viewed. "Blank" means a report page was recently added (within 24 hours the actual name of the new page appears in the slicer list) or report pages have been deleted. "Blank" captures these types of situations. |
 | Views per day |yes |yes |Total number of views per day - a view is defined as a user loading a report page or dashboard. |
 | Unique viewers per day |yes |yes |Number of *different* users who viewed the dashboard or report (based on the Microsoft Entra user account). |
@@ -151,7 +151,7 @@ To see the metrics for all the dashboards or for all the reports in the workspac
 
 ## Power BI admin controls for usage metrics
 
-Usage metrics reports are a feature that the global administrator or Power BI administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are **On** by default for all users in the organization.
+Usage metrics reports are a feature that the Power BI administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are **On** by default for all users in the organization.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings. 

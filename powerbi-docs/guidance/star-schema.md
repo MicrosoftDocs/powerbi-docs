@@ -1,14 +1,14 @@
 ---
 title: "Understand star schema and the importance for Power BI"
 description: "Understand star schema design and its relevance to developing Power BI semantic models optimized for performance and usability."
-author: peter-myers
-ms.author: v-pemyers
+author: denglishbi
+ms.author: daengli
 ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 10/29/2024
+ms.date: 12/30/2024
 ---
 
 # Understand star schema and the importance for Power BI
@@ -27,8 +27,13 @@ This article targets Power BI Desktop data modelers. It describes star schema de
 
 _Star schema_ is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either _dimension_ or _fact_.
 
-- **Dimension tables** describe business entities—the _things_ you model. Entities can include products, people, places, and concepts including time itself. The most consistent table you'll find in a star schema is a date dimension table. A dimension table contains a key column (or columns) that acts as a unique identifier, and other columns. Other columns support filtering and grouping your data.
-- **Fact tables** store observations or events, and can be sales orders, stock balances, exchange rates, temperatures, and more. A fact table contains dimension key columns that relate to dimension tables, and numeric measure columns. The dimension key columns determine the _dimensionality_ of a fact table, while the dimension key values determine the _granularity_ of a fact table. For example, consider a fact table designed to store sale targets that has two dimension key columns `Date` and `ProductKey`. It's easy to understand that the table has two dimensions. The granularity, however, can't be determined without considering the dimension key values. In this example, consider that the values stored in the `Date` column are the first day of each month. In this case, the granularity is at month-product level.
+### Dimension tables
+
+_Dimension tables_ describe business entities—the _things_ you model. Entities can include products, people, places, and concepts including time itself. The most consistent table you'll find in a star schema is a date dimension table. A dimension table contains a key column (or columns) that acts as a unique identifier, and other columns. Other columns support filtering and grouping your data.
+
+### Fact tables
+
+_Fact tables_ store observations or events, and can be sales orders, stock balances, exchange rates, temperatures, and more. A fact table contains dimension key columns that relate to dimension tables, and numeric measure columns. The dimension key columns determine the _dimensionality_ of a fact table, while the dimension key values determine the _granularity_ of a fact table. For example, consider a fact table designed to store sale targets that has two dimension key columns `Date` and `ProductKey`. It's easy to understand that the table has two dimensions. The granularity, however, can't be determined without considering the dimension key values. In this example, consider that the values stored in the `Date` column are the first day of each month. In this case, the granularity is at month-product level.
 
 Generally, dimension tables contain a relatively small number of rows. Fact tables, on the other hand, can contain a large number of rows and continue to grow over time.
 
@@ -169,7 +174,7 @@ It's a good design practice to include a hierarchy that allows visuals to drill 
 
 A _role-playing dimension_ is a dimension that can filter related facts differently. For example, at Adventure Works the date dimension table has three relationships to the reseller sales facts. The same dimension table can be used to filter the facts by order date, ship date, or delivery date.
 
-:::image type="content" source="media/star-schema/role-playing-dimensions.svg" alt-text="Diagram showing a conceptual example of a single role-playing dimension and relationships. The Date table has two relationships to the fact table for order date and ship date." border="false":::
+:::image type="content" source="media/star-schema/role-playing-dimensions.svg" alt-text="Diagram showing a conceptual example of a single role-playing dimension and relationships. The Date table has two relationships to the fact table." border="false":::
 
 In a data warehouse, the accepted design approach is to define a single date dimension table. At query time, the "role" of the date dimension is established by which fact column you use to join the tables. For example, when you analyze sales by order date, the table join relates to the reseller sales order date column.
 
@@ -205,7 +210,7 @@ The design objective of a junk dimension is to consolidate many _small_ dimensio
 
 A junk dimension table is typically the Cartesian product of all dimension attribute members, with a [surrogate key](#surrogate-keys) column to uniquely identify each row. You can build the dimension in a data warehouse, or by using Power Query to create a query that performs [full outer query joins](/powerquery-m/table-join), then adds a surrogate key (index column).
 
-:::image type="content" source="media/star-schema/junk-dimension.svg" alt-text="Diagram showing an example of a junk dimension table. Order Status has three states while Delivery Status has two states. The junk dimension table stores all six combinations of the two statuses." border="false":::
+:::image type="content" source="media/star-schema/junk-dimension.svg" alt-text="Diagram showing an example of a junk dimension table. Order Status has three states while Delivery Status has two states." border="false":::
 
 You load this query to the model as a dimension table. You also need to merge this query with the fact query so the index column is loaded to the model to support the creation of a "one-to-many" model relationship.
 
@@ -229,9 +234,9 @@ A more compelling use of a factless fact table is to store relationships between
 
 For example, consider that salespeople can be assigned to one _or more_ sales regions. The bridging table would be designed as a factless fact table consisting of two columns: salesperson key and region key. Duplicate values can be stored in both columns.
 
-:::image type="content" source="media/star-schema/factless-fact-table.svg" alt-text="Diagram showing a factless fact table bridging Salesperson and Region dimensions. The factless fact table comprises two columns, which are the dimension keys." border="false":::
+:::image type="content" source="media/star-schema/factless-fact-table.svg" alt-text="Diagram showing a factless fact table bridging Salesperson and Region dimensions. The factless fact table comprises two columns." border="false":::
 
-This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Many-to-many relationship guidance (Relate two dimension-type tables)](relationships-many-to-many.md#relate-many-to-many-dimensions).
+This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Many-to-many relationship guidance (Relate two dimension tables)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
 ## Related content
 

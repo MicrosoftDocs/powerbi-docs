@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/03/2024
+ms.date: 12/16/2024
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -364,7 +364,7 @@ The following **limitations** apply when working with DirectQuery for Power BI s
     * Data imported from Excel or CSV files on the Service
     * Usage metrics
     * Semantic models stored in “My workspace”
-* Using Power BI Embedded with semantic models that include a DirectQuery connection to an Analysis Services model isn't currently supported.
+* Using Power BI Embedded with semantic models that include a DirectQuery connection to an external Analysis Services model (Azure Analysis Services/SQL Server Analysis Services) isn't currently supported.
 * Publishing a report to web using the publish to web feature isn't supported.
 * Calculation groups on remote sources aren't supported, with undefined query results.
 - Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication are supported in the Power BI service with an assigned [shareable cloud connection](../connect-data/service-create-share-cloud-data-sources.md) and / or [granular access control](../connect-data/service-create-share-cloud-data-sources.md#granular-access-control).
@@ -468,12 +468,9 @@ If you don't specify a deduplication rule, or the deduplication rules you specif
 
 ## XMLA modifications and composite models
 
-When changing a semantic model using XMLA, you must update the *ChangedProperties* and *PBI_RemovedChildren* collection for the changed object to include any modified or removed properties. If you don't perform that update, Power BI modeling tools might overwrite any changes the next time the schema is synchronized with its associated Lakehouse.
+When changing a semantic model using XMLA, you must update the *ChangedProperties* and *PBI_RemovedChildren* collection for the changed object to include any modified or removed properties. If you don't perform that update, Power BI modeling tools might overwrite any changes the next time the schema is synchronized with the data source.
 
-The supported models for changing a semantic model using XMLA are the following:
-
-* Table/Column rename (*ChangeProperty* = name)
-* Remove table (add table to *PBI_RemovedChildren* annotation in the query expression)
+Learn more about semantic model object lineage tags in the [lineage tags for Power BI semantic models](/analysis-services/tom/lineage-tags-for-power-bi-semantic-models) article.
 
 
 

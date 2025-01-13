@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap: Executive sponsorship
@@ -62,11 +62,11 @@ With a bottom-up approach, the sponsor might be able to make some progress, but 
 **Checklist** - Here's a list of considerations and key actions you can take to establish or strengthen executive support for analytics.
 
 > [!div class="checklist"]
-> - **Identify an executive sponsor with broad authority:** Find someone in a sufficient position of influence and authority (across organizational boundaries) who understands the value and impact of BI. It is important that the individual has a vested interest in the success of analytics in the organization.
-> - **Involve your executive sponsor:** Consistently involve your executive sponsor in all strategic-level governance decisions involving data management, BI, and analytics. Also involve your sponsor in all governance data culture initiatives to ensure alignment and consensus on goals and priorities.
-> - **Establish responsibilities and expectation:** Formalize the arrangement with documented responsibilities for the executive sponsor role. Ensure that there's no uncertainty about expectations and time commitments.
-> - **Identify a backup for the sponsor:** Consider naming a backup executive sponsor. The backup can attend meetings in the sponsor's absence and make time-sensitive decisions when necessary.
-> - **Identify business advocates:** Find influential advocates in each business unit. Determine how their cooperation and involvement can help you to accomplish your objectives. Consider involving advocates from various levels in the organization chart.
+> - **Identify an executive sponsor with broad authority**: Find someone in a sufficient position of influence and authority (across organizational boundaries) who understands the value and impact of BI. It is important that the individual has a vested interest in the success of analytics in the organization.
+> - **Involve your executive sponsor**: Consistently involve your executive sponsor in all strategic-level governance decisions involving data management, BI, and analytics. Also involve your sponsor in all governance data culture initiatives to ensure alignment and consensus on goals and priorities.
+> - **Establish responsibilities and expectation**: Formalize the arrangement with documented responsibilities for the executive sponsor role. Ensure that there's no uncertainty about expectations and time commitments.
+> - **Identify a backup for the sponsor**: Consider naming a backup executive sponsor. The backup can attend meetings in the sponsor's absence and make time-sensitive decisions when necessary.
+> - **Identify business advocates**: Find influential advocates in each business unit. Determine how their cooperation and involvement can help you to accomplish your objectives. Consider involving advocates from various levels in the organization chart.
 
 ## Questions to ask
 
@@ -91,7 +91,7 @@ Use questions like those found below to assess data literacy.
 
 The following maturity levels will help you assess your current state of executive support.
 
-| **Level** | **State of executive support** |
+| Level | State of executive support |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;There might be awareness from at least one executive about the strategic importance of how analytics can advance the organization's data culture goals. However, neither a sponsor nor an executive-level decision-maker is identified. |
 | 200: Repeatable | &bull;&nbsp;Informal executive support exists for analytics through informal channels and relationships. |

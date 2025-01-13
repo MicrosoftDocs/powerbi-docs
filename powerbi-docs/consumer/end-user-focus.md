@@ -44,9 +44,7 @@ In the following example, we started with a report (1), opened one of the visual
 
 :::image type="content" source="media/end-user-focus/power-bi-dashboard-focus.png" alt-text="Screenshot of a dashboard in full screen mode and default mode." lightbox="media/end-user-focus/power-bi-dashboard-focus.png":::
 
-Display your Power BI service content (dashboards, report pages, and visuals) without the distraction of menus and nav panes. You get an unadulterated, full view of your content at a glance, all the time. This view is sometimes referred to as TV mode.   
-
-If you're using the Power BI windows app, [Screenshot of full screen in Power BI Windows app.](./mobile/mobile-windows-10-app-presentation-mode.md) 
+Display your Power BI service content (dashboards, report pages, and visuals) without the distraction of menus and nav panes. You get an unadulterated, full view of your content at a glance, all the time. This view is sometimes referred to as TV mode.
 
 Use full screen mode to:
 

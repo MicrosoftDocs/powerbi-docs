@@ -115,8 +115,6 @@ You're sharing a snapshot of the tile, report, or visual. Your recipients see it
 
 Read more about [annotating and sharing tiles, reports, and visuals](../consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) from the iOS and Android mobile apps.
 
-You can also [share a snapshot of a tile](../consumer/mobile/mobile-windows-10-phone-app-get-started.md) from the Power BI app for Windows 10 devices, but not annotate it.
-
 ## Distribute insights in an app
 
 Say you want to distribute your dashboard to a broad audience in your organization. You and your coworkers have created a *workspace*, then created and refined dashboards, reports, and semantic models in the workspace. Now you select the dashboards and reports and publish them as an *app*, either to a group or to your whole organization.

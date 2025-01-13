@@ -1,6 +1,6 @@
 ---
-title: Learn from customer Power BI migrations
-description: Learn from customers when migrating to Power BI.
+title: "Learn from customer Power BI migrations"
+description: "Learn from customers when migrating to Power BI."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 02/13/2024
+ms.date: 12/30/2024
 ---
 
 # Learn from customer Power BI migrations
@@ -143,9 +143,9 @@ Early on, the company had many personal gateways. Using an on-premises data gate
 
 As the adoption of Power BI grew within the organization, the company found that a [multi-tier support approach](fabric-adoption-roadmap-user-support.md) worked well:
 
-- **Layer 1: Intra-team:** People learn from, and teach, each other on a day-to-day basis.
-- **Layer 2: Power BI community:** People ask questions of the internal Teams community to learn from each other and communicate important information.
-- **Layer 3: Central BI team and COE:** People submit email requests for assistance. *Office hour* sessions are held twice per week to collectively discuss problems and share ideas.
+- **Layer 1: Intra-team**: People learn from, and teach, each other on a day-to-day basis.
+- **Layer 2: Power BI community**: People ask questions of the internal Teams community to learn from each other and communicate important information.
+- **Layer 3: Central BI team and COE**: People submit email requests for assistance. *Office hour* sessions are held twice per week to collectively discuss problems and share ideas.
 
 > [!IMPORTANT]
 > Although the first two layers are less formal, they're equally important as the third layer of support. Experienced users tend to rely mostly on people they know, whereas newer users (or those who are the single data analyst for a business unit or shared service) tend to rely more on formal support.
@@ -168,7 +168,7 @@ Other helpful resources include:
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - [Dashboard in a Day](https://powerbi.microsoft.com/diad/)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
-Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Experienced Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).

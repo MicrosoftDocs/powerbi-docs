@@ -19,12 +19,12 @@ To add these functionalities to your visual, each visual needs to provide a subs
 
 > [!NOTE]
 >
-> * Visuals that support on-object formatting need to implement the [getFormattingModel API](./format-pane.md#formatting-model) which is available from API version 5.1.
+> * Visuals that support on-object formatting need to implement the [getFormattingModel API](./format-pane-general.md#formatting-model) which is available from API version 5.1.
 > * If you are using powerbi-visuals-utils-formattingmodel, use version 6.0.0 at least.
 
 ## Create an on-object experience
 
-Use the subselection service when the user selects a subselectable element to send Power BI the subselection. Provide the subselection styles and shortcuts using the [subselction API](./subselection-api.md). The [subselection helper](./utils-on-object.md) can be used to simplify the process.
+Use the subselection service when the user selects a subselectable element to send Power BI the subselection. Provide the subselection styles and shortcuts using the [subselection API](./subselection-api.md). The [subselection helper](./utils-on-object.md) can be used to simplify the process.
 
 ## Format mode
 
@@ -209,7 +209,7 @@ Define the objects and declare that the visual is supporting OnObject Formatting
 
 ### Build the formatting cards
 
-Build their formatting cards using the [formattingModel utils](./format-pane.md#formatting-model).
+Build their formatting cards using the [formattingModel utils](./format-pane-general.md#formatting-model).
 
 #### Color selector card settings
 

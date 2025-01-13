@@ -6,17 +6,16 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/12/2024
+ms.date: 11/18/2024
 LocalizationGroup: Create reports
+#customer intent: As a Power Bi user I want to learn how to use report themes to create a custom color palette.
 ---
 # Use report themes in Power BI Desktop
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 With Power BI Desktop *report themes*, you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme as their defaults. A few exceptions are described later in this article.
-
 You can select report themes by going to the **View** ribbon. In the **Themes** section, select the dropdown arrow, and then select the theme you want. Available themes are similar to themes seen in other Microsoft products, such as Microsoft PowerPoint.
-
 ![Screenshot of the Themes dropdown menu.](media/desktop-report-themes/report-themes-dropdown-menu.png)
 
 The two types of report themes:
@@ -29,9 +28,9 @@ The two types of report themes:
 
 To apply a report theme to a Power BI Desktop report, you can select from the following options:
 
-* Select from the [available built-in report themes](#built-in-report-themes) that are built into Power BI Desktop.
-* [Customize a theme](#customize-and-save-a-theme-in-power-bi-desktop) by using the **Customize theme** dialog.
-* [Import a custom theme JSON file](#import-custom-report-theme-files).
+- Select from the [available built-in report themes](#built-in-report-themes) that are built into Power BI Desktop.
+- [Customize a theme](#customize-and-save-a-theme-in-power-bi-desktop) by using the **Customize theme** dialog.
+- [Import a custom theme JSON file](#import-custom-report-theme-files).
 
 > [!NOTE]
 > You can only apply themes in Power BI Desktop. You can't apply themes to existing reports within the Power BI service.
@@ -63,7 +62,7 @@ Follow these steps to select from the available built-in report themes. See the 
 ### Built-in report themes
 
 The following table shows the available built-in report themes.
-    
+
 | Built-in report theme | Default color sequence |
 |------ |---------- |
 | Default | ![Diagram of the color sequence for the Default theme.](media/desktop-report-themes/report-themes-color-scheme-default.png)|
@@ -130,9 +129,9 @@ Customizing the current theme in this way is fast and simple. However, you can a
 
 ### Update the base theme
 
-Power BI makes changes to themes, including new defaults for formatting settings, as a part of a new base theme. So as not to disturb existing reports, these changes don’t propagate to custom themes. If you've customized a built-in theme, you may not see fixes to issues or updates to your reports without updating your base themes. 
+Power BI makes changes to themes, including new defaults for formatting settings, as a part of a new base theme. So as not to disturb existing reports, these changes don’t propagate to custom themes. If you've customized a built-in theme, you may not see fixes to issues or updates to your reports without updating your base themes.
 
-To see if you're using an outdated theme, on the **View** ribbon, select the **Themes** dropdown button and select **Customize current theme**. If your theme is out of date, you’ll see a banner at the top of your theme, encouraging you to update to the latest base theme. 
+To see if you're using an outdated theme, on the **View** ribbon, select the **Themes** dropdown button and select **Customize current theme**. If your theme is out of date, you’ll see a banner at the top of your theme, encouraging you to update to the latest base theme.
 
 Select **Update theme** to see the changes, then select **Apply**.
 
@@ -256,7 +255,7 @@ To export the currently applied theme from Power BI Desktop:
 
 2. Near the bottom of the dropdown menu, select **Save current theme**.
 
-4. From the **Save As** dialog box, go to a directory in which to save the JSON file, and then select **Save**.
+3. From the **Save As** dialog box, go to a directory in which to save the JSON file, and then select **Save**.
 
 ## Report theme JSON file format
 
@@ -276,7 +275,7 @@ When you create a JSON file, you can specify that all charts use a font size of 
 
 When you import your theme file, Power BI validates it to make sure it can successfully read its full contents. If Power BI finds fields it doesn’t understand, it shows you a message letting you know that the theme file is invalid, and inviting you to reimport with a corrected theme file. Power BI also publishes the schema it uses to check your theme file in a public location, updating it automatically whenever we change it in Power BI, so that you can ensure your theme files are always current.
 
-Power BI validates custom themes based on a _JSON schema_.  This [JSON schema is available for download](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) for use with an IDE that supports JSON validation, which can help identify available formatting options and highlight invalid theme formatting. More information is available in the [Report Theme JSON Schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema).
+Power BI validates custom themes based on a *JSON schema*.  This [JSON schema is available for download](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) for use with an IDE that supports JSON validation, which can help identify available formatting options and highlight invalid theme formatting. More information is available in the [Report Theme JSON Schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema).
 
 > [!NOTE]
 > Modifying a custom JSON report theme in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) is safe.  The dialog doesn't modify theme settings that it can't control and updates the changes made to the report theme that's in place.
@@ -333,13 +332,72 @@ The following table shows the six color classes you can format.  The **Color cla
 
 | Color class preferred name | Also called  | What it formats |
 |---|---|---|
-| **firstLevelElements** | **foreground** | Label background color (when outside data points) <br> Trend line color <br>  Textbox default color <br> Table and matrix values and totals font colors <br> Data bars axis color <br> Card data labels <br> Gauge callout value color <br> KPI goal color <br>  KPI text color <br> Slicer item color (when in focus mode)  <br> Slicer dropdown item font color <br> Slicer numeric input font color <br> Slicer header font color <br> Scatter chart ratio line color <br> Line chart forecast line color <br> Map leader line color <br> Filter pane and card text color <br> Modern visual tooltips text and icon color (Preview)|
-| **secondLevelElements** |**foregroundNeutralSecondary**| Light [secondary text classes](#set-formatted-text-defaults) <br> Label colors  <br> Legend label color <br> Axis label color <br> Table and matrix header font color <br> Gauge target and target leader line color <br>  KPI trend axis color <br> Slicer slider color <br> Slicer item font color <br> Slicer outline color <br> Line chart hover color <br> Multi-row card title color <br> Ribbon chart stroke color <br> Shape map border color <br> Button text font color <br> Button icon line color <br> Button outline color |
-| **thirdLevelElements** |**backgroundLight** | Axis gridline color <br> Table and matrix grid color <br> Slicer header background color (when in focus mode)  <br> Multi-row card outline color  <br> Shape fill color <br> Gauge arc background color <br> Applied filter card background color <br> Disabled button fill color (when the background is `FFFFFF`)  <br> Disabled button outline color (when the background is `FFFFFF`) <br> |
-| **fourthLevelElements** | **foregroundNeutralTertiary** | Legend dimmed color <br> Card category label color <br> Multi-row card category labels color <br> Mulit-row card bar color <br> Funnel chart conversion rate stroke color <br> Disabled button text font color <br> Disabled button icon line color <br> |
-| **background** | | Label background color (when inside data points) <br> Slicer dropdown items background color  <br> Donut chart stroke color <br> Treemap stroke color <br> Combo chart background color <br> Button fill color <br> Filter pane and available  filter card background color <br> Modern visual tooltips background color (Preview)|
-| **secondaryBackground** | **backgroundNeutral** | Table and matrix grid outline color <br> Shape map default color <br> Ribbon chart ribbon fill color (when match series option is turned off) <br> Disabled button fill color (when the background color isn't `FFFFFF`). <br> Disabled button outline color (when the background color isn't `FFFFFF`). <br> Modern visual tooltips separator line and hover color (Preview)|
-| **tableAccent** | | Table and matrix grid outline color (when present). |
+| **firstLevelElements** | **foreground** | Label background color (when outside data points) |
+| | | Trend line color |
+| | | Textbox default color |
+| | | Table and matrix values and totals font colors |
+| | | Data bars axis color |
+| | | Card data labels |
+| | | Gauge callout value color |
+| | | KPI goal color |
+| | | KPI text color |
+| | | Slicer item color (when in focus mode) |
+| | | Slicer dropdown item font color |
+| | | Slicer numeric input font color |
+| | | Slicer header font color |
+| | | Scatter chart ratio line color |
+| | | Line chart forecast line color |
+| | | Map leader line color |
+| | | Filter pane and card text color |
+| | | Modern visual tooltips text and icon color (Preview)|
+| **secondLevelElements** |**foregroundNeutralSecondary**| Light [secondary text classes](#set-formatted-text-defaults) |
+| | | Label colors |
+| | | Legend label color |
+| | | Axis label color |
+| | | Table and matrix header font color |
+| | | Gauge target and target leader line color |
+| | | KPI trend axis color |
+| | | Slicer slider color |
+| | | Slicer item font color |
+| | | Slicer outline color |
+| | | Line chart hover color |
+| | | Multi-row card title color |
+| | | Ribbon chart stroke color |
+| | | Shape map border color |
+| | | Button text font color |
+| | | Button icon line color |
+| | | Button outline color |
+| **thirdLevelElements** | **backgroundLight** | Axis gridline color |
+| | | Table and matrix grid color |
+| | | Slicer header background color (when in focus mode) |
+| | | Multi-row card outline color |
+| | | Shape fill color |
+| | | Gauge arc background color |
+| | | Applied filter card background color |
+| | | Disabled button fill color (when the background is `FFFFFF`) |
+| | | Disabled button outline color (when the background is `FFFFFF`) |
+| **fourthLevelElements** | **foregroundNeutralTertiary** | Legend dimmed color |
+| | | Card category label color |
+| | | Multi-row card category labels color |
+| | | Mulit-row card bar color |
+| | | Funnel chart conversion rate stroke color |
+| | | Disabled button text font color |
+| | | Disabled button icon line color |
+| **background** | | Label background color (when inside data points) |
+| | | Slicer dropdown items background color |
+| | | Donut chart stroke color |
+| | | Treemap stroke color |
+| | | Combo chart background color |
+| | | Button fill color |
+| | | Filter pane and available  filter card background color |
+| | | Modern visual tooltips background color (Preview)|
+| **secondaryBackground** | **backgroundNeutral** | Table and matrix grid outline color |
+| | | Shape map default color |
+| | | Ribbon chart ribbon fill color (when match series option is turned off) |
+| | | Disabled button fill color (when the background color isn't `FFFFFF`) |
+| | | Disabled button outline color (when the background color isn't `FFFFFF`) |
+| | | Modern visual tooltips separator line and hover color (Preview)|
+| **tableAccent** | | Table and matrix grid outline color (when present) |
 
 Here's a sample theme that sets the color classes:
 
@@ -376,18 +434,18 @@ The following table shows:
 
 |Primary class  |Secondary classes  |JSON class name  | Default settings  |Associated visual objects  |
 |---------|---------|---------|---------|---------|
-| Callout | N/A | callout | DIN <br> #252423 <br> 45 pt |Card data labels <br> KPI indicators|
-|Header|N/A|header|Segoe UI Semibold <br> #252423 <br> 12 pt |Key influencers headers |
-| Title || title |DIN <br> #252423 <br> 12 pt |Category axis title <br> Value axis title <br> Multi-row card title * <br> Slicer header|
+| Callout | N/A | callout | DIN #252423 45 pt |Card data labels KPI indicators|
+|Header|N/A|header|Segoe UI Semibold #252423 12 pt |Key influencers headers |
+| Title || title |DIN #252423 12 pt |Category axis title Value axis title  Multi-row card title *Slicer header|
 |-| Large title | largeTitle |14 pt |Visual title |
-|Label ||label |Segoe UI<br>#252423<br>10 pt |Table and matrix column headers <br> Matrix row headers<br>Table and matrix grid<br>Table and matrix values |
-|-|Semibold |semiboldLabel| Segoe UI Semibold | Key influencers profile text
+|Label ||label |Segoe UI# 252423 10 pt |Table and matrix column headers Matrix row headers Table and matrix grid Table and matrix values |
+|-|Semibold |semiboldLabel| Segoe UI Semibold | Key influencers profile text|
 |-|Large |largeLabel |12 pt | Multi-row card data labels |
-|-|Small |smallLabel |9 pt |Reference line labels * <br>Slicer date range labels<br> Slicer numeric input text style<br>Slicer search box<br>Key influencers influencer text|
-|-|Light |lightLabel |#605E5C |Legend text<br>Button text<br>Category Axis labels<br>Funnel chart data labels<br>Funnel chart conversion rate labels<br>Gauge target<br>Scatter chart category label<br>Slicer items|
-|-|Bold |boldLabel |Segoe UI Bold |Matrix subtotals<br>Matrix grand totals<br>Table totals |
-|-|Large and Light |largeLightLabel |#605E5C<br>12 pt |Card category labels<br>Gauge labels<br>Multi-row card category labels |
-|-|Small and Light |smallLightLabel |#605E5C<br>9 pt |Data labels<br>Value axis labels|
+|-|Small |smallLabel |9 pt |Reference line labels *Slicer date range labels Slicer numeric input text style Slicer search box Key influencers influencer text|
+|-|Light |lightLabel |#605E5C |Legend text Button text Category Axis labels Funnel chart data labels Funnel chart conversion rate labels Gauge target Scatter chart category label Slicer items|
+|-|Bold |boldLabel |Segoe UI Bold |Matrix subtotals Matrix grand totals Table totals |
+|-|Large and Light |largeLightLabel |#605E5C 12 pt |Card category labels Gauge labels Multi-row card category labels |
+|-|Small and Light |smallLightLabel |#605E5C 9 pt |Data labels Value axis labels|
 
 *\* Starred items are based on the first data color of the report theme.*
 
@@ -511,7 +569,7 @@ For example, using Visual Studio Code's [support for JSON schema](https://code.v
 }
 ```
 
-With this defined, you can use autocomplete in Visual Studio Code to understand the structure and available formatting options available. Trigger autocomplete explicitly by using the key combination <kbd>Ctrl</kbd> + <kbd>Space</kbd>. The description pop-up will show the formatting item's display name and description as they show in the Formatting pane, if available:
+With this defined, you can use autocomplete in Visual Studio Code to understand the structure and available formatting options available. Trigger autocomplete explicitly by using the key combination *Ctrl* + *Space*. The description pop-up will show the formatting item's display name and description as they show in the Formatting pane, if available:
 
 ![Screenshot of using the report theme schema to identify available formatting options.  The autocomplete menu within Visual Studio Code shows available formatting options.](media/desktop-report-themes/report-themes-schema.png)
 
@@ -519,8 +577,8 @@ With this defined, you can use autocomplete in Visual Studio Code to understand 
 
 Here are some helpful tips here about setting values.
 
-- Booleans are either true or false. 
-- Strings must be in double quotes, as in "this is a string." 
+- Booleans are either true or false.
+- Strings must be in double quotes, as in "this is a string."
 - Numbers are just the value itself not in quotes.
 - When you use `dateTime`, the date must be an ISO date in single quotes, with "datetime" at the beginning. See the following example:
 
@@ -556,29 +614,36 @@ This report theme JSON file has the following lines:
 
 You can copy this JSON and use it as a basis to create your own custom report theme file to import. If you want to adjust only the basic colors of your report, change the name and hex codes in the file.
 
-## Considerations and limitations
+### Considerations and limitations
 
-- If you use one of the original themes, the Classic theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
+If you use one of the original themes, the Classic theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
 
-    Built-in themes that are affected by this limitation include the following themes:
+Built-in themes that are affected by this limitation include the following themes:
 
-    - Classic
-    - City park
-    - Classroom
-    - Color blind safe
-    - Electric
-    - High contrast
-    - Sunset
-    - Twilight
+- Classic
+- City park
+- Classroom
+- Color blind safe
+- Electric
+- High contrast
+- Sunset
+- Twilight
 
-    If you use one of the affected themes and you don't need to modify the text settings, you can safely use the other tabs of the dialog box with no issues. However, if you want to use the text classes with one of the affected themes, you have the following options:
+If you use one of the affected themes and you don't need to modify the text settings, you can safely use the other tabs of the dialog box with no issues. However, if you want to use the text classes with one of the affected themes, you have the following options:
 
-    - The quickest and easiest way to enable the text classes is to select the Default theme options.
-    - If you want to keep your current custom theme to enable the text tab:
+- The quickest and easiest way to enable the text classes is to select the Default theme options.
+- If you want to keep your current custom theme to enable the text tab:
     1. Export your current theme.
     1. Select the default theme.
     1. Import the custom theme you exported in the first step.
 
-    The text in your report will look different, but you'll be able to access the text tab in the theme dialog box.
+The text in your report will look different, but you'll be able to access the text tab in the theme dialog box.
 
-- Elements that are considered part of the interface cannot be changed using a report theme. This includes the Filter, Format and Data panes and the [visual matrix in visual calculations](../transform-model/desktop-visual-calculations-overview.md).
+Elements that are considered part of the interface cannot be changed using a report theme. This includes the Filter, Format and Data panes and the [visual matrix in visual calculations](../transform-model/desktop-visual-calculations-overview.md).
+
+## Related content
+
+- Get comfortable with dashboards by taking a tour of one of the [sample dashboards](sample-tutorial-connect-to-the-samples.md).
+- Learn about [dashboard tiles](service-dashboard-tiles.md).
+- Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create an alert on a tile](service-set-data-alerts.md).
+- Learn how to use [Power BI Q&A](power-bi-tutorial-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.

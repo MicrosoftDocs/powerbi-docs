@@ -18,7 +18,7 @@ Knowing how your content is being used helps you demonstrate your impact and pri
 
 If you create reports in workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports for shared workspaces replace the usage metrics reports documented in [Monitor report usage metrics](service-usage-metrics.md).
 
-![Screenshot of the new Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
+:::image type="content" source="media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png" alt-text="Screenshot of the new Usage Metrics report." lightbox="media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png":::
 
 > [!NOTE]
 > You can only run usage metrics reports in the Power BI service. However, if you save a usage metrics report or pin it to a dashboard, you can open and interact with that report on mobile devices.
@@ -172,7 +172,7 @@ If semantic model owners in your workspace leave, are no longer a part of your o
 
 ## Disable usage metrics reports
 
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they're On by default for all users in the organization. See [Audit and usage metrics](/fabric/admin/service-admin-portal-audit-usage) in the Admin portal article for details on these settings.
+Usage metrics reports are a feature that the Power BI administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they're On by default for all users in the organization. See [Audit and usage metrics](/fabric/admin/service-admin-portal-audit-usage) in the Admin portal article for details on these settings.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings.

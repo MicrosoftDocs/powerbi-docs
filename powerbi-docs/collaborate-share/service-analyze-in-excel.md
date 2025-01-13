@@ -157,6 +157,7 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 - Mac users can only use Excel for the web to explore Excel workbooks containing Power BI semantic models.
 - The column name and order in a Power BI visual may not be preserved when data is exported to Excel from that visual.
 - If the 'User Datasets Across Workspaces' tenant admin switch is off, users will need to use **Write** permissions to use the semantic model. Learn more about [using semantic models across workspaces](/power-bi/connect-data/service-datasets-admin-across-workspaces).
+- If you are facing issues with exporting a summarized data card with live connection, please uncheck the "Show items with no data" option and try exporting again.
 
 ## Related content
 

@@ -12,9 +12,9 @@ ms.date: 12/31/2023
 # Explore reports in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android phone](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android tablet](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows devices](./media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
-|:---: |:---: |:---: |:---: |:---: |
-| iPhones |iPads |Android phones |Android tablets |Windows devices |
+| ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android phone](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android tablet](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) |
+|:---: |:---: |:---: |:---: |
+| iPhones |iPads |Android phones |Android tablets |
 
 >[!NOTE]
 > The Power BI Windows app was retired on December 31st, 2023, and is no longer supported. It's been removed from the Microsoft apps store, and no further product updates for it will be released. Please use [the Power BI service](https://app.powerbi.com/) to view your Power BI content on Windows devices.
@@ -131,7 +131,7 @@ For example:
 
 **Bookmarks** is present only if [bookmarks](mobile-reports-in-the-mobile-apps.md#bookmarks) have been set in the report. Both personal bookmarks that you can define in Power BI service and bookmarks defined by the report creator are shown. If one of the bookmarks has been defined as the default bookmark, the report will open to that view when it loads.
 
-**Annotate and share** might be turned off if there's an [Intune protection policy](/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+**Annotate and share** might be turned off if there's an [Intune protection policy](/mem/intune/apps/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
 
 **Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
 
@@ -185,9 +185,6 @@ If you're not sure you’re viewing the most up-to-date data, you can pull new d
 
 * On iOS devices and Android tablets, pull down slightly from top to bottom on the report page.
 * On Android phones, you can use either the pull-down action or a refresh button, depending on how you've set it up in the [interaction settings](mobile-app-interaction-settings.md).
-* On Windows devices, use the refresh button in the upper right of the display.
-
-    Report pages that have [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh as configured (Windows app only).
 
 >[!NOTE]
 >The above refresh methods do not refresh the underlying semantic model. Rather, they update the report you're viewing on the mobile app with any new data that might exist in Power BI.

@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 09/23/2024
+ms.date: 12/10/2024
 ms.custom: video-removed, video-removed
 LocalizationGroup: Gateways
-#customer intent: As a Power BI user I want to learn how to manage SQL Server Analysis services for the on-premisis gateway.
+#customer intent: As a Power BI user I want to learn how to manage SQL Server Analysis services for the on-premises gateway.
 ---
 # Manage SQL Server Analysis Services data sources
 
@@ -25,6 +25,10 @@ To learn more about how to set up a live connection to SSAS, watch this [Power B
 
 > [!NOTE]
 > The gateway supports only Windows authentication for Analysis Services.
+
+> [!NOTE]
+> Analysis Services data sources are not supported with a proxy configuration since it uses a TCP/IP connection. Proxy is only detected when using the [HTTP MSMDPUMP.dll endpoint](/analysis-services/instances/configure-http-access-to-analysis-services-on-iis-8-0).
+
 
 ## Add a data source
 
