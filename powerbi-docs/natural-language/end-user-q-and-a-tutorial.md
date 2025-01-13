@@ -7,7 +7,7 @@ ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: tutorial
-ms.date: 07/28/2023
+ms.date: 01/12/2025
 LocalizationGroup: Ask questions of your data
 ---
 
@@ -100,15 +100,15 @@ Let's try it out.
 
 1. Choose one of these questions as a starting point or begin typing your own question and select from the dropdown suggestions.
 
-   ![Screenshot of an example Q&A entry with suggestions.](media/end-user-q-and-a-tutorial/power-bi-qna-select-a-question-how-many-stores.png)
+   ![Screenshot of an example Q&A entry with suggestions.](media/end-user-q-and-a-tutorial/power-bi-qna-select-a-question-stores.png)
 
 1. As you type a question, Power BI helps you with autocomplete, visual cues, restatement, and feedback. Power BI also picks the best visualization to display your answer. 
 
-   ![Screenshot of an example Q&A entry, showing a map visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-how-many-stores-by-state.png)
+   ![Screenshot of an example Q&A entry, showing a map visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-how-many-stores-state.png)
 
 1. The visualization changes dynamically as you modify the question.
 
-   ![Screenshot of an example Q&A entry, showing a bar graph visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-stores-by-state-bar-chart.png)
+   ![Screenshot of an example Q&A entry, showing a bar graph visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-stores-by-state-bar.png)
 
 1. Don't like the default visualization that Power BI Q&A chose? Edit the natural language question to include the visualization type that you'd prefer.
 
@@ -117,7 +117,7 @@ Let's try it out.
 
 1. When you're happy with the result, pin the visualization to a dashboard by selecting the pin icon in the top right corner. If the dashboard was shared with you, or is part of an app, you might not be able to pin.
 
-   ![Screenshot of an example Q&A entry, highlighting the Pin visual.](media/end-user-q-and-a-tutorial/power-bi-qna-pin-visual.png)
+   ![Screenshot of an example Q&A entry, highlighting the Pin visual.](media/end-user-q-and-a-tutorial/power-bi-qna-pin.png)
 
 
 
