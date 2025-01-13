@@ -62,7 +62,7 @@ There are several ways to get a new app. You can search, find, and install apps 
 
 For detailed step-by-step instructions for getting and exploring an app, see [Install and use apps with dashboards and reports in Power BI](end-user-app-view.md).
 
-There are a few other ways to get apps. 
+There are a few other ways to get apps.
 
 * The app designer installs the app automatically in your Power BI account. The next time you open the Power BI service, the new app is in your **Apps** content list.
 * The app designer emails you a direct link to an app. Selecting the link opens the app in the Power BI service.

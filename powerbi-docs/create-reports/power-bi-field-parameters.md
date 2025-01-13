@@ -21,7 +21,7 @@ Field parameters allow users to dynamically change the measures or dimensions be
 
 In the following video, Sujata demonstrates how you create field parameters and how your report users interact with them.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y8Jv]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=90081c76-4ff1-446f-b16d-10c644990732]
 
 In the following example, the report reader can dynamically update the bar chart and table by selecting a field in the horizontal slicers above the visuals. Currently, the bar chart and table are measuring COGS and analyzing by Product, based on the reader’s selection in the slicers.
 
