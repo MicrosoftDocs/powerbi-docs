@@ -20,7 +20,7 @@ Anomaly detection helps you enhance your line charts by automatically detecting 
  > [!NOTE]  
  > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M2hp]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=e409ac87-a002-4362-8fd5-35c685914c67]
 
 ## Get started
 
