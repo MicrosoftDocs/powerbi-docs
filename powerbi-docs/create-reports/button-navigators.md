@@ -29,7 +29,7 @@ Watch this video showing how to add page and bookmark navigators, and then try i
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRCPO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d91b6399-1318-4c56-b0aa-9d3a81272d6a]
 
 ## Page navigator
 

@@ -28,7 +28,7 @@ The Power BI service offers other ways to collaborate and distribute reports and
 
 Sujata demonstrates how to share in the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWO30a]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c5eec6f5-080c-479c-8e88-816bca36f431]
 
 ## Prerequisites
 
