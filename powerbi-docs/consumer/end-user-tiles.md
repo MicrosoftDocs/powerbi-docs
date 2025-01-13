@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 A tile is a snapshot of your data, pinned to a dashboard by a *designer*. *Designers* can create tiles from a report, semantic model, dashboard, the Power BI Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more. This screenshot shows many different tiles pinned to a dashboard.
 
-:::image type="content" source="./media/end-user-tiles/power-bi-dashboard-new.png" alt-text="Screenshot of a Power BI dashboard with several tiles.":::
+:::image type="content" source="./media/end-user-tiles/power-bi-dashboards.png" alt-text="Screenshot of a Power BI dashboard with several tiles.":::
 
 Besides tiles pinned from reports, *designers* can add standalone tiles directly on the dashboard using **Add tile**. Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
