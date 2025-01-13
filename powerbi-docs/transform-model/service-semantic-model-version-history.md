@@ -62,12 +62,15 @@ Versions of a semantic model begin being captured after it's opened in Editing m
 Each semantic model that supports version history can have up to five versions saved. A version is saved to version history whenever one of the following actions occurs:
 
 * When you manually save a version to version history. From editing a semantic model on the web, select **File** and then select **Save to version history**.
+
   :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-07.png" alt-text="Screenshot showing how to manually save version history from the File menu.":::  
 
   When manually saving a version, you can optionally provide a text description to help identify this version later in the version history pane.
+
   :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-08.png" alt-text="Screenshot showing how to manually add a description to a version.":::  
 
   The description appears with its corresponding version within the version history pane.
+
   :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-09.png" alt-text="Screenshot showing the description provided with a version.":::  
 
 * When you publish a .pbix file from Power BI Desktop, or upload a .pbix file on the web, a version of the semantic model before the publish/upload is captured. Automatically capturing the version ensures that if you unintentionally overwrote the changes you made in the web upon publish/upload, you can restore the model to its state, or version, before that unintentional publish/upload occurred.
@@ -87,6 +90,18 @@ The version history pane also shows an entry for the current version of the mode
 
 :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-11.png" alt-text="Screenshot showing the context menu of a current semantic model version from the version history pane.":::  
 
+
+## View audit logs and activity events 
+
+Power BI administrators can use the **Microsoft 365 Admin Center** to audit operations pertaining to editing data models in the web. The following tables shows which audit operations are supported for editing data models in the web:
+
+
+|Friendly name  |Operation name  |Notes  |
+|---------|---------|---------|
+|Restored a model to a previous version |RestorePreviousVersionForPowerBIModel |A user restores a Power BI semantic model to a previous version saved in version history. |
+|Saved a new version in version history for a model in Power BI |SaveNewVersionForPowerBIModel |A new version is saved for the version history of a Power BI semantic model. |
+
+For more information about accessing audit logs, see the [Access your audit logs](/fabric/admin/service-admin-portal-audit-usage) article.
 
 
 ## Capacity utilization and reporting
