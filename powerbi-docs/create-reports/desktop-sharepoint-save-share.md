@@ -52,15 +52,15 @@ If your Power BI admin turned off the capability for your organization, you rece
 
 New updates to the file picker in Power BI desktop make it easier to save to and open files from OneDrive and SharePoint. Now, you can smoothly navigate between folders in various OneDrive and SharePoint folders, and have easy access to reports in OneDrive and SharePoint. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png" alt-text="Example of selecting a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png" alt-text="Screenshot of selecting a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png":::
 
 You can also easily pin and unpin recent files and folders in the file picker while opening files in OneDrive and SharePoint. Simply select or deselect the pin icon next to the file to pin or unpin the file. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png" alt-text="Example of pinning a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png" alt-text="Screenshot of pinning a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png":::
 
 These updates are off by default, and will be enabled on by default in early 2025. To enable the new file picker experience, select **File > Options and Settings > Options > Preview Features > Save to OneDrive and SharePoint**, and then select **Show the new file saving and open experience** checkbox. You will need to restart Power BI Desktop after you make the selection. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-file-picker.png" alt-text="Preview checkbox for new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-file-picker.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-file-picker.png" alt-text="Screenshot of preview checkbox for new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-file-picker.png":::
 
 ## Open Power BI files stored in OneDrive and SharePoint
 
