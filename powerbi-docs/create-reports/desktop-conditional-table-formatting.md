@@ -75,7 +75,7 @@ An example table with rules-based background color formatting based on **Percent
 
 ### Color by rules for percentages
 
-If the field the formatting is based on contains percentages, write the numbers in the rules as decimals, which are the actual values; for example, ".25" instead of "25". Also, select **Number** instead of **Percent** for the number format. For example, "If value is greater than or equal to 0 Number and is less than .25 Number" returns values less than 25%. 
+If the field the formatting is based on contains percentages, write the numbers in the rules as decimals, which are the actual values; for example, ".25" instead of "25". Also, select **Number** instead of **Percent** for the number format. For example, "If value is greater than or equal to 0 Number and is less than .25 Number" returns values less than 25%.
 
 ![Conditional formatting dialog for background color by rules for percentages: format style dropdown option is set to rules.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-rules.png)
 
@@ -101,7 +101,7 @@ The following table has a color name associated with each state:
 
 ![State table with color names as a column](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
 
-To format the **Color** column based on its field values, select **Conditional formatting** for the **Color** field, and then select **Background color** or **Font color**. 
+To format the **Color** column based on its field values, select **Conditional formatting** for the **Color** field, and then select **Background color** or **Font color**.
 
 In the **Background color** or **Font color** dialog box, select **Field value** from the **Format style** drop-down field.
 
@@ -135,7 +135,7 @@ You can create many more variations, just by using your imagination and some cal
 
 ## Add data bars
 
-To show data bars based on cell values, select **Conditional formatting** for the **Affordability** field, and then select **Data bars** from the drop-down menu. 
+To show data bars based on cell values, select **Conditional formatting** for the **Affordability** field, and then select **Data bars** from the drop-down menu.
 
 In the **Data bars** dialog, the **Show bar only** option is unchecked by default, so the table cells show both the bars and the actual values. To show the data bars only, select the **Show bar only** check box.
 
@@ -149,7 +149,7 @@ With data bars applied to the **Affordability** column, the example table looks 
 
 ## Add icons
 
-To show icons based on cell values, select **Conditional formatting** for the field, and then select **Icons** from the drop-down menu. 
+To show icons based on cell values, select **Conditional formatting** for the field, and then select **Icons** from the drop-down menu.
 
 In the **Icons** dialog, under **Format style**, select either **Rules** or **Field value**.
 
@@ -204,7 +204,7 @@ In the resulting table, the formatting is based on the value in the **StatusColo
 ![In the table, the Status field color is based on values in the StatusColor field.](media/desktop-conditional-table-formatting/power-bi-conditional-based-on-field-table.png)
 
 ## Considerations and limitations
- 
+
 There are a few considerations to keep in mind when working with conditional table formatting:
 
 - Any table that doesn't have a grouping is displayed as a single row that doesn't support conditional formatting.
