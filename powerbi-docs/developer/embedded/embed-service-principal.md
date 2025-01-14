@@ -265,8 +265,7 @@ Add-PowerBIWorkspaceUser -Id $($pbiWorkspace.Id) -AccessRight Member -PrincipalT
 The following script adds a security group as a workspace member. Before you run the script:
 
 * Replace `<security-group-object-ID>` with the object ID that you recorded earlier for your new security group.
-*
- Replace `<workspace-name>` with the name of the workspace that you'd like to give the security group access to.
+* Replace `<workspace-name>` with the name of the workspace that you'd like to give the security group access to.
 
 ```powershell
 # Sign in to Power BI.
