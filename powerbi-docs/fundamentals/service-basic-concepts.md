@@ -9,7 +9,7 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/06/2024
+ms.date: 01/13/2025
 LocalizationGroup: Get started
 ---
 
@@ -24,7 +24,7 @@ If you're a *designer* or *creator*, one typical workflow is to start in Power B
 
 ## Power BI concepts
 
-The major building blocks of Power BI are: *reports*, *workbooks*, *semantic models*, *dataflows*, *dashboards*, and *apps*. These building blocks are often referred to collectively as *content*. Content is organized in *workspaces*, and reside in *capacities*. 
+The major building blocks of Power BI are: *reports*, *workbooks*, *semantic models*, *dataflows*, *dashboards*, and *apps*. These building blocks are often referred to collectively as *content*. Content is organized in *workspaces*, and resides in *capacities*. 
 
 :::image type="content" source="media/service-basic-concepts/power-bi-cloud.png" alt-text="Screenshot of a word cloud using Power BI words.":::
 
@@ -60,7 +60,7 @@ Workspaces are created in capacities. Essentially, workspaces are containers for
 
 When you open a workspace, the included content is listed under the **Name** tab. In this example, the **Q1 Modern Insights** workspace has three reports, one dashboard, and one scorecard. To open the report page, dashboard, or scorecard, select it.
 
-:::image type="content" source="media/service-basic-concepts/power-bi-content.png" alt-text="Screenshot of a workspace.":::
+:::image type="content" source="media/service-basic-concepts/power-bi-contents.png" alt-text="Screenshot of a workspace.":::
 
 There are two types of workspaces: *My workspace* and *workspaces*.
 
@@ -109,7 +109,7 @@ Semantic models added by one workspace member are available to the other workspa
 
 In the following example, we selected **My workspace** and then filtered for **Semantic models.** 
 
-:::image type="content" source="media/service-basic-concepts/power-bi-datasets.png" alt-text="Screenshot of Power BI showing a sample workspace with Semantic models selected.":::
+:::image type="content" source="media/service-basic-concepts/power-bi-my-workspace.png" alt-text="Screenshot of Power BI showing a sample workspace with Semantic models selected.":::
 
 **ONE** semantic model...
 
@@ -151,7 +151,7 @@ Why do people create dashboards? Here are just some of the reasons:
 
 When you open a workspace, the associated dashboards are listed along with other included content.
 
-:::image type="content" source="media/service-basic-concepts/power-bi-dashboard-and-content.png" alt-text="Screenshot of a workspace that includes dashboards.":::
+:::image type="content" source="media/service-basic-concepts/power-bi-dashboard-content.png" alt-text="Screenshot of a workspace that includes dashboards.":::
 
 To open a dashboard, select it. If you own the dashboard, you also have edit access to the dashboard and underlying semantic models and reports. If the dashboard was shared with you, the actions you can take depend on the permissions assigned by the owner.
 
@@ -176,7 +176,7 @@ An *app* is a collection of dashboards and reports built to deliver key metrics 
 
 Apps are an easy way for designers to share many types of content at one time. App designers create dashboards and reports and then bundle them together into an app. The designers share or publish the app to a location where colleagues can access it. It's easier to find and install content in the Power BI service or on a mobile device when it's organized together as an app. After users install an app, they don't have to remember the names of several dashboards or reports because they're all together in one app. 
 
-When you open an app, you see a dashboard or a report. If the app opens a dashboard that might be all you need. But if you want to access the underlying report for a particular dashboard tile, select the tile to open the report. Keep in mind though that not all tiles are pinned from reports. Selecting a tile usually opens a report, but may also open a URL, a video, or a [natural language Q&A query](../natural-language/q-and-a-intro.md). You can open any of the underlying report pages by selecting them from the list on the left.  
+When you open an app, you see a dashboard or a report. If the app opens a dashboard that might be all you need. But if you want to access the underlying report for a particular dashboard tile, select the tile to open the report. Keep in mind though that not all tiles are pinned from reports. Selecting a tile usually opens a report, but might also open a URL, a video, or a [natural language Q&A query](../natural-language/q-and-a-intro.md). You can open any of the underlying report pages by selecting them from the list on the left.  
 
 :::image type="content" source="media/service-basic-concepts/power-bi-app-dashboard.png" alt-text="Screenshot of an app that is displaying a dashboard.":::
 
@@ -224,9 +224,9 @@ We covered licenses and subscriptions, capacities, workspaces, apps, and buildin
 
 The first image displays Power BI **Home** in the Power BI service. The second image displays a dashboard in the Power BI service. Some UI elements are the same whether you're on **Home** or interacting with content such as a dashboard.
 
-:::image type="content" source="media/service-basic-concepts/power-bi-labeled-home.png" lightbox="media/service-basic-concepts/power-bi-labeled-home.png" alt-text="Screenshot showing the Home screen in the Power BI service. ":::
+:::image type="content" source="media/service-basic-concepts/power-bi-home-labeled.png" lightbox="media/service-basic-concepts/power-bi-home-labeled.png" alt-text="Screenshot showing the Home screen in the Power BI service. ":::
 
-:::image type="content" source="media/service-basic-concepts/power-bi-labeled-dashboard.png" lightbox="media/service-basic-concepts/power-bi-labeled-dashboard.png" alt-text="Screenshot of the Power BI service in a browser showing numbered features in the list that follows.":::
+:::image type="content" source="media/service-basic-concepts/power-bi-dashboard-labeled.png" lightbox="media/service-basic-concepts/power-bi-dashboard-labeled.png" alt-text="Screenshot of the Power BI service in a browser showing numbered features in the list that follows.":::
 
 ### 1. **Navigation pane**
 
@@ -234,14 +234,19 @@ Use the nav pane to locate and move between your workspaces and the Power BI bui
 
 Zoom out to see all of the nav pane options. Or select the ellipses (...) to display a flyout menu. 
 
-  :::image type="content" source="media/service-basic-concepts/power-bi-nav-pane.png" alt-text="Screenshot of Power BI service navigation pane.":::
+  :::image type="content" source="media/service-basic-concepts/power-bi-nav.png" alt-text="Screenshot of Power BI service navigation pane.":::
 
 - Add data or data sources by selecting **Create**.
+- Use **Copilot** to find content or answer questions about your content.
 - Open or manage favorite content, recent content, or content shared with you by selecting **Browse**.
-- Explore the semantic models in your org to find the data that suits your needs by selecting **OneLake data hub**.
+- Explore the semantic models in your org to find the data that suits your needs by selecting **OneLake**.
 - View, open, or delete an app by selecting **Apps**.
 - Track key business metrics by selecting **Metrics**.
+- View and track the status of activities across your workspaces with **Monitor**.
 - Access Power BI training and samples by selecting **Learn**.
+- Discover, ingest, transform, and manage your real-time data by selecting **Real-Time**.
+- Use a pipeline to manage your workspace content by selecting **Deployment pipeline**.
+- Discover, manage, and use your functions from across your org by selecting **Functions hub**.
 - Display and open your collaborative workspaces by selecting **Workspaces**.
 - Display and open your personal workspace by selecting **My workspaces**.
 
