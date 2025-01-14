@@ -358,7 +358,8 @@ PBIR is currently in **preview**. Keep the following in mind:
   - Mobile views are not displayed in Power BI Apps.
   - Hidden pages are exposed in Power BI Apps navigation.
   - Can't be deployed with deployment pipelines.  
-  - Can't be saved as a copy.    
+  - Can't be saved as a copy.
+  - Can't use Power BI Report APIs: [Clone Report](/rest/api/power-bi/reports/clone-report-in-group), [Update Report Content](/rest/api/power-bi/reports/update-report-content-in-group)
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
