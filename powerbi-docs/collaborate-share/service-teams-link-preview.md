@@ -1,20 +1,18 @@
 ---
 title: Get a Power BI link preview in Microsoft Teams
 description: When you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box, the link preview shows information about the link.
-author: ajburnle
-ms.author: ajburnle
-ms.reviewer: ''
-featuredvideoid: ''
+author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/18/2023
+ms.date: 01/14/2025
 ---
 
 # Get a Power BI link preview in Microsoft Teams
 
-When you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box, the link preview shows information about the link. Link previews are provided for the following items in Power BI:
+When you paste a link to your Power BI content into the Microsoft Teams message box, a link preview shows information about the link. Link previews are provided for the following Power BI items:
 
 - Reports
 - Dashboards
@@ -24,23 +22,27 @@ See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft
 
 ## Get a link preview
 
-Follow these steps to get a link preview for content in the Power BI service.
+Follow these steps to get a link preview for your Power BI content.
 
-1. Copy a link to a report, a dashboard, or an app in the Power BI service. For example, copy the link from the browser address bar.
+1. In the Power BI service, open the item you want to share and copy the link to it. You can copy the link from the browser address bar or via the **Share** option.
 
 1. Paste the link in the Microsoft Teams message box. Sign in to the link preview service if prompted.
 
-1. The basic link preview appears after successful sign-in.
+1. The link preview appears after successful sign-in.
 
-    ![Screenshot of Basic link preview.](media/service-teams-link-preview/service-teams-link-preview-basic.png)
+   :::image type="content" source="./media/service-teams-link-preview/service-teams-link-preview-basic.png" alt-text="Screenshot showing a link preview card for a Power BI item in the Teams message box.":::
 
-1. Use the **Expand** or **Collapse** icon to toggle between the rich preview card and the collapsed preview card. The rich link preview card shows the link and relevant action buttons, while the collapsed preview card shows only the link to the information.
+   The link preview card shows:
 
-    ![Screenshot of Expanded link preview.](media/service-teams-link-preview/service-teams-link-preview-expanded.png)
+   * The name of the item, and an icon that denotes it's type.
+   * The location of the item.
+   * Open button: Opens the report.
+   * Subscribe button:
+   * Open Copilot summary in Power BI button: Opens the item in the Power BI teams app
 
 1. Send the message.
 
-## Known issues and limitations
+## Considerations and limitations
 
 - Link previews don't work in meeting chat or private channels.
 - See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
