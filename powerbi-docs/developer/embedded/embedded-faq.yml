@@ -61,7 +61,7 @@ sections:
       - question: |
           How can I autoscale an Embedded Premium capacity?
         answer: |
-          Embedded Premium capacities don't provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Premium capacities, see [Autoscaling in Embedded(./azure-pbie-scale-capacity.md#autoscale-your-capacity). 
+          Embedded Premium capacities don't provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Premium capacities, see [Autoscaling in Embedded](./azure-pbie-scale-capacity.md#autoscale-your-capacity). 
 
       - question: |
           How is an Embedded Premium resource utilization evaluated?

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 01/24/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: BI strategic planning
@@ -17,9 +17,9 @@ ms.date: 01/24/2024
 
 This article helps you to define your business intelligence (BI) focus areas and objectives through strategic planning. It's primarily targeted at:
 
-- **BI and analytics directors or managers:** Decision makers who are responsible for overseeing the BI program and BI strategic planning.
-- **Center of Excellence (COE), IT, and BI teams:** The teams that are responsible for tactical planning, and for measuring and monitoring progress toward the BI goals.
-- **Subject matter experts (SMEs) and content owners and creators:** The teams and individuals that champion analytics in a team or department and conduct BI solution planning. These teams and individuals are responsible for representing the strategy and data needs of their business area when you define the BI strategy.
+- **BI and analytics directors or managers**: Decision makers who are responsible for overseeing the BI program and BI strategic planning.
+- **Center of Excellence (COE), IT, and BI teams**: The teams that are responsible for tactical planning, and for measuring and monitoring progress toward the BI goals.
+- **Subject matter experts (SMEs) and content owners and creators**: The teams and individuals that champion analytics in a team or department and conduct BI solution planning. These teams and individuals are responsible for representing the strategy and data needs of their business area when you define the BI strategy.
 
 A BI strategy is a plan to implement, use, and manage data and analytics. As described in the [BI strategy overview](powerbi-implementation-planning-bi-strategy-overview.md) article, your BI strategy is a subset of your data strategy. It supports your business strategy by enabling business users to make decisions and take actions by using data and BI solutions more effectively.
 
@@ -33,7 +33,7 @@ The following high-level diagram depicts how to conduct BI strategic planning.
 
 You take the following steps to define your strategic BI focus areas and objectives.
 
-| **Step** | **Description** |
+| Step | Description |
 | :-: | --- |
 | **1** | Establish a working team to lead the BI strategy initiative. |
 | **2** | Establish business alignment by conducting research and workshops to gather information about the business objectives and data needs, and also existing BI solutions and initiatives. |
@@ -56,7 +56,7 @@ The following diagram depicts the following roles that appoint the working team 
 
 The diagram depicts the following roles.
 
-| **Item** | **Description** |
+| Item | Description |
 | :-: | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md) typically provides top-down objectives and support of the working team, including funding. The executive sponsor might also appoint the working team members together with the [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md). |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | A COE or central BI team confers with the executive sponsor to identify and appoint working team members. The COE might also provide guidance to the working team to support their activities. |
@@ -81,14 +81,14 @@ A key role of the [executive sponsor](fabric-adoption-roadmap-executive-sponsors
 
 In addition to the many [activities listed in the adoption roadmap](fabric-adoption-roadmap-executive-sponsorship.md), an executive sponsor plays a key role in BI strategic planning by:
 
-- **Supporting the working team and COE:** The executive sponsor takes a leading role in defining the BI strategy by providing top-down guidance and reinforcement.
-- **Allocating resources:** They confirm funding, staffing, roles, and responsibilities for the working team.
-- **Advocating for the initiative:** They advance the strategic initiative by:
+- **Supporting the working team and COE**: The executive sponsor takes a leading role in defining the BI strategy by providing top-down guidance and reinforcement.
+- **Allocating resources**: They confirm funding, staffing, roles, and responsibilities for the working team.
+- **Advocating for the initiative**: They advance the strategic initiative by:
   - Legitimizing working team activities, particularly when the working team faces resistance to change.
   - Promoting the BI strategy initiative with announcements or public endorsement.
   - Motivating action and change to progress the BI strategy initiative.
   - Representing the working team and sharing the BI strategic plan among C-level executives to obtain executive feedback.
-- **Making strategic decisions:** They make decisions about what should be the focus areas, objectives, and key results.
+- **Making strategic decisions**: They make decisions about what should be the focus areas, objectives, and key results.
 
 > [!TIP]
 > Before assembling the working team, you should first identify and engage an [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md). Work through [this checklist](fabric-adoption-roadmap-executive-sponsorship.md#considerations-and-key-actions) to ensure that you take the necessary actions to ensure a sufficiently engaged executive sponsor.
@@ -97,8 +97,8 @@ In addition to the many [activities listed in the adoption roadmap](fabric-adopt
 
 Because the working team contains members from different business areas, the composition of the working team will depend on the scope of your BI initiative. Typically, a BI strategy encompasses many areas of an organization. However, you should refine this scope to define the specific areas it should address. You might limit the scope of your BI strategy initiative for two reasons.
 
-- **Practical reasons:** A successful BI strategy starts small and simple, achieving incremental growth as you experience success. When you first define the BI strategy, focus on key areas so that you achieve quick wins to demonstrate value, while achieving sustainable, incremental progress.
-- **Strategic reasons:** You can have distinct initiatives for different business areas. For example, different parts of the organization might require independent BI strategies because their business strategies are sufficiently different. These independent strategies should align with an overall BI strategy, whenever possible.
+- **Practical reasons**: A successful BI strategy starts small and simple, achieving incremental growth as you experience success. When you first define the BI strategy, focus on key areas so that you achieve quick wins to demonstrate value, while achieving sustainable, incremental progress.
+- **Strategic reasons**: You can have distinct initiatives for different business areas. For example, different parts of the organization might require independent BI strategies because their business strategies are sufficiently different. These independent strategies should align with an overall BI strategy, whenever possible.
 
 As part of the scoping exercise, you should also plan how you'll set expectations with stakeholders that the BI strategy will be defined iteratively.
 
@@ -108,15 +108,15 @@ Once you've identified and engaged an executive sponsor and clarified the scope 
 
 The responsibilities of the working team include:
 
-- **Planning and preparation:** The working team should plan and prepare the various aspects of the BI strategy initiative, such as:
+- **Planning and preparation**: The working team should plan and prepare the various aspects of the BI strategy initiative, such as:
   - Defining the timelines, deliverables, and milestones for the initiative.
   - Identifying stakeholders who can accurately describe the business objectives and goals of their respective departments.
   - Communication with stakeholders, the executive sponsor, and each other.
-- **Information gathering:** The working team should gather sufficient information to accurately assess the current state of the BI implementation. Examples of information gathering activities include:
+- **Information gathering**: The working team should gather sufficient information to accurately assess the current state of the BI implementation. Examples of information gathering activities include:
   - Conducting independent research about the business context and existing BI solutions or initiatives.
   - Running interactive workshops with stakeholders to elicit input about business objectives and data needs.
   - Documenting summarized findings and sharing conclusions.
-- **Feedback and follow-up:** The working team summarizes the findings from the information gathered and proposes BI objectives, focus areas, and next steps. It gathers feedback and follows up by:
+- **Feedback and follow-up**: The working team summarizes the findings from the information gathered and proposes BI objectives, focus areas, and next steps. It gathers feedback and follows up by:
   - Assessing the current state of BI adoption and implementation.
   - Creating a prioritized list of business data needs.
   - Presenting their conclusions and proposed next steps to stakeholders and executive leadership.
@@ -165,9 +165,9 @@ A working team can include members from specific functional areas, especially wh
 
 Here are some examples of when you might include members from functional areas in the working team.
 
-- **Functional teams:** Include relevant representatives from functional teams in the working team. For example, if your organization uses one or more large enterprise resource planning systems (ERPs), then you should include an expert of these ERPs in the working team. This individual would be responsible for clarifying how the systems are used in the context of feedback provided during information gathering.
-- **IT teams:** Include relevant IT experts in the working team. For example, your organization could have specific networking requirements, or a complex scenario involving multiple [tenants](powerbi-implementation-planning-tenant-setup.md). The IT experts would be responsible for describing specific requirements, which is particularly important in [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md). They can also help identify risks or pain points during information gathering.
-- **Security teams:** Include members from security teams in the working team. For example, your organization could have specific compliance, security, or privacy requirements. These individuals would be responsible for describing security-related requirements when defining the future state. They can also help identify compliance risks and security threats during information gathering.
+- **Functional teams**: Include relevant representatives from functional teams in the working team. For example, if your organization uses one or more large enterprise resource planning systems (ERPs), then you should include an expert of these ERPs in the working team. This individual would be responsible for clarifying how the systems are used in the context of feedback provided during information gathering.
+- **IT teams**: Include relevant IT experts in the working team. For example, your organization could have specific networking requirements, or a complex scenario involving multiple [tenants](powerbi-implementation-planning-tenant-setup.md). The IT experts would be responsible for describing specific requirements, which is particularly important in [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md). They can also help identify risks or pain points during information gathering.
+- **Security teams**: Include members from security teams in the working team. For example, your organization could have specific compliance, security, or privacy requirements. These individuals would be responsible for describing security-related requirements when defining the future state. They can also help identify compliance risks and security threats during information gathering.
 
 ### Create a communication hub
 
@@ -179,7 +179,7 @@ The following diagram depicts how to use a communication hub to centralize BI st
 
 The diagram conveys the following concepts or processes.
 
-| **Item** | **Description** |
+| Item | Description |
 | :-: | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | A communication hub is a central location in Microsoft Teams or a similar platform. Its purpose is to centralize communication, documentation, and planning. |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The working team creates and manages different channels for each business area. The separation by business area should correspond to the top-level structure of the initiative. Each channel contains a repository of summarized findings, timelines, and discussions about the BI strategy. |
@@ -196,11 +196,11 @@ The working team should maintain and follow a concise, organized, and transparen
 
 Here are some recommendations to get the most value from the communication hub.
 
-- **Have well-defined working team responsibilities:** Ensure that the working team has well-defined responsibilities for the communication hub, such as curating and moderating it. Having active and involved moderation ensures that the communication hub remains current, informative, and useful for the working team and key stakeholders.
-- **Organize discussions and files:** Ensure that it's easy to find files or previous discussions in the communication hub by creating and maintaining a logical structure. An organized communication hub encourages its effective use.
-- **Be concise in documents and posts:** Avoid overwhelming people with large volumes of information. Key stakeholders have limited time, so encourage people to publish posts and documents to the communication hub that are concise and easy to understand.
-- **Be consistent in communication:** Ensure that the communication hub is used instead of alternative channels, like email. You should also strive to ensure that documents and updates are consistent in tone, format, and length.
-- **Be transparent and foster a collaborative environment:** An effective communication hub has an active, collaborative social environment. It requires transparency from the working team who should be sharing regular updates and findings throughout the initiative.
+- **Have well-defined working team responsibilities**: Ensure that the working team has well-defined responsibilities for the communication hub, such as curating and moderating it. Having active and involved moderation ensures that the communication hub remains current, informative, and useful for the working team and key stakeholders.
+- **Organize discussions and files**: Ensure that it's easy to find files or previous discussions in the communication hub by creating and maintaining a logical structure. An organized communication hub encourages its effective use.
+- **Be concise in documents and posts**: Avoid overwhelming people with large volumes of information. Key stakeholders have limited time, so encourage people to publish posts and documents to the communication hub that are concise and easy to understand.
+- **Be consistent in communication**: Ensure that the communication hub is used instead of alternative channels, like email. You should also strive to ensure that documents and updates are consistent in tone, format, and length.
+- **Be transparent and foster a collaborative environment**: An effective communication hub has an active, collaborative social environment. It requires transparency from the working team who should be sharing regular updates and findings throughout the initiative.
 
 > [!IMPORTANT]
 > Success of strategic planning relies on effective communication. Promoting concise and consistent communication benefits not only strategic planning, but also the broader adoption and implementation of BI initiatives across your organization.
@@ -210,19 +210,19 @@ Here are some recommendations to get the most value from the communication hub.
 **Checklist** - When establishing a working team, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Involve an executive sponsor:** If there isn't an executive sponsor, identify and engage one before assembling the working team.
-> - **Decide on the scope of the BI initiative:** Together with the executive sponsor, determine which business areas the BI strategy will cover.
-> - **Communicate the initiative:** Have the executive sponsor raise awareness throughout the organization of the initiative to define the BI strategy.
-> - **Assemble the working team:** Appoint members who can provide sufficient coverage of the relevant business areas, technical areas, and compliance areas.
-> - **Set expectations of the working team members:** Clarify the time and effort requirements, and ensure that team members understand what's expected of them (and that they have the time and resources to fulfil their role).
-> - **Clarify working team roles and responsibilities:** Ensure that everyone in the working team knows what they should do to drive successful strategic planning.
+> - **Involve an executive sponsor**: If there isn't an executive sponsor, identify and engage one before assembling the working team.
+> - **Decide on the scope of the BI initiative**: Together with the executive sponsor, determine which business areas the BI strategy will cover.
+> - **Communicate the initiative**: Have the executive sponsor raise awareness throughout the organization of the initiative to define the BI strategy.
+> - **Assemble the working team**: Appoint members who can provide sufficient coverage of the relevant business areas, technical areas, and compliance areas.
+> - **Set expectations of the working team members**: Clarify the time and effort requirements, and ensure that team members understand what's expected of them (and that they have the time and resources to fulfil their role).
+> - **Clarify working team roles and responsibilities**: Ensure that everyone in the working team knows what they should do to drive successful strategic planning.
 
 ## Step 2: Plan workshops and conduct research
 
 After you assemble the working team (step 1), the newly assembled working team can start the following activities to establish business alignment.
 
-- **Conduct independent research:** The working team performs research into the business context and existing BI solutions or initiatives.
-- **Plan workshops:** The working team prepares strategic planning workshops to collect input from key stakeholders about their business objectives and data needs.
+- **Conduct independent research**: The working team performs research into the business context and existing BI solutions or initiatives.
+- **Plan workshops**: The working team prepares strategic planning workshops to collect input from key stakeholders about their business objectives and data needs.
 
 These activities are prerequisites for the workshops and complete assessments (step 3).
 
@@ -255,7 +255,7 @@ The following diagram depicts topics typically addressed with independent resear
 
 The diagram depicts the following concepts and processes.
 
-| **Item** | **Description** |
+| Item | Description |
 | :-: | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The working team researches the business context to document and understand the business strategy. This research is led by business SMEs for their respective departments or business units. |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The working team researches the business context by first identifying the business objectives. |
@@ -299,7 +299,7 @@ The following diagram depicts the process to identify and inform the right key s
 
 The diagram depicts the following steps.
 
-| **Item** | **Description** |
+| Item | Description |
 | :-: | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | List the functional areas (departments and business units) in scope for the BI strategy initiative. |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | For each functional area, identify two to three candidate key stakeholder representatives. |
@@ -325,12 +325,12 @@ When you initially request key stakeholder participation, ensure that you:
 **Checklist** - When planning workshops and conducting research, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Agree on communication values:** Encourage all working team members to engage with concise, clear, and consistent communication throughout the initiative.
-> - **Set up the communication hub:** Create a central, structured hub for all communication, documentation, and planning. Document how the hub can be used effectively.
-> - **Research the business context:** With assistance from business SMEs, describe the business objectives for each of the business areas that are in scope.
-> - **Research existing BI initiatives and solutions:** Conduct tenant-level auditing and targeted investigation of strategically important solutions to describe the current state of BI adoption and implementation.
-> - **Select the right key stakeholders:** Engage representatives from each business area who have sufficient knowledge and credibility.
-> - **Invite key stakeholders to the communication hub:** When ready, onboard the key stakeholders to the communication hub and send meeting invitations for the workshops.
+> - **Agree on communication values**: Encourage all working team members to engage with concise, clear, and consistent communication throughout the initiative.
+> - **Set up the communication hub**: Create a central, structured hub for all communication, documentation, and planning. Document how the hub can be used effectively.
+> - **Research the business context**: With assistance from business SMEs, describe the business objectives for each of the business areas that are in scope.
+> - **Research existing BI initiatives and solutions**: Conduct tenant-level auditing and targeted investigation of strategically important solutions to describe the current state of BI adoption and implementation.
+> - **Select the right key stakeholders**: Engage representatives from each business area who have sufficient knowledge and credibility.
+> - **Invite key stakeholders to the communication hub**: When ready, onboard the key stakeholders to the communication hub and send meeting invitations for the workshops.
 
 ## Step 3: Run workshops and complete assessments
 
@@ -371,11 +371,11 @@ The goal of the workshops is to collect sufficient input from stakeholders to ac
 
 Here are some practical considerations to help you plan and organize effective workshops.
 
-- **Keep workshop attendance focused:** Don't saturate meetings with too many attendees. Involving too many people can result in prolonged discussions, or discussions where only the most assertive personalities provide input.
-- **Keep the discussion focused:** Take any debates, excessively specific questions, or remarks offline to discuss later in short one-on-one meetings. Similarly, identify and address any resistance directly, and involve the executive sponsor whenever necessary. Keeping the discussion focused ensures that workshops concentrate on the overall discussion of strategic planning, and they don't get distracted by small details.
-- **Be flexible with preparation:** Depending on time and preference, you can use prepared material to conduct more effective discussion. However, understand that discussions could go in unexpected directions. If a session departs from your prepared material but still produces helpful input, don't force the discussion back to a fixed agenda. When stakeholders are focused on a different point, it means that it's important. Be flexible by addressing these points to capture the most valuable input.
-- **Document stakeholder input:** During the workshops, you should document stakeholders' inputs about their business objectives and the BI strategy.
-- **Document business data needs:** One outcome of workshop information gathering is a high-level list of the unmet business data needs. You should first organize the list from the highest to lowest priority. Determine these focus areas based on stakeholder input, and the impact the list items have on business effectiveness.
+- **Keep workshop attendance focused**: Don't saturate meetings with too many attendees. Involving too many people can result in prolonged discussions, or discussions where only the most assertive personalities provide input.
+- **Keep the discussion focused**: Take any debates, excessively specific questions, or remarks offline to discuss later in short one-on-one meetings. Similarly, identify and address any resistance directly, and involve the executive sponsor whenever necessary. Keeping the discussion focused ensures that workshops concentrate on the overall discussion of strategic planning, and they don't get distracted by small details.
+- **Be flexible with preparation**: Depending on time and preference, you can use prepared material to conduct more effective discussion. However, understand that discussions could go in unexpected directions. If a session departs from your prepared material but still produces helpful input, don't force the discussion back to a fixed agenda. When stakeholders are focused on a different point, it means that it's important. Be flexible by addressing these points to capture the most valuable input.
+- **Document stakeholder input**: During the workshops, you should document stakeholders' inputs about their business objectives and the BI strategy.
+- **Document business data needs**: One outcome of workshop information gathering is a high-level list of the unmet business data needs. You should first organize the list from the highest to lowest priority. Determine these focus areas based on stakeholder input, and the impact the list items have on business effectiveness.
 
 > [!NOTE]
 > The list of prioritized data needs is a key outcome of strategic planning that later facilitates [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md) and [solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md).
@@ -401,21 +401,21 @@ Making a concise and accurate assessment of the current state is essential. Asse
 
 An effective maturity assessment consists of the following content.
 
-- **Maturity level:** Evaluate the overall [maturity level](fabric-adoption-roadmap-maturity-levels.md) on a five-point scale from 100 (initial) to 500 (efficient). The score represents a high-level, subjective assessment by the working team of the effectiveness in different areas.
-- **Business cases:** Justify and illustrate the maturity level scores in the assessment. Concrete examples include actions, tools, and processes taken by business users to achieve their business objectives with data. The working team uses business cases together with summarized findings to support their assessment. A business case typically consists of:
+- **Maturity level**: Evaluate the overall [maturity level](fabric-adoption-roadmap-maturity-levels.md) on a five-point scale from 100 (initial) to 500 (efficient). The score represents a high-level, subjective assessment by the working team of the effectiveness in different areas.
+- **Business cases**: Justify and illustrate the maturity level scores in the assessment. Concrete examples include actions, tools, and processes taken by business users to achieve their business objectives with data. The working team uses business cases together with summarized findings to support their assessment. A business case typically consists of:
   - A clear explanation of the desired outcome, and business data needs the current process aims to address.
   - An as-is description of how the general process is currently done.
   - Challenges, risks, or inefficiencies in the current process.
-- **Supplemental information:** Support the conclusions, or documents significant details that are relevant to the BI and business strategy. The working team documents supplemental information to support later decision-making and tactical planning.
+- **Supplemental information**: Support the conclusions, or documents significant details that are relevant to the BI and business strategy. The working team documents supplemental information to support later decision-making and tactical planning.
 
 #### Complete the data culture assessment
 
 The data culture assessment evaluates the current state of BI adoption. In order to complete this assessment, the working team performs the following tasks.
 
-1. **Review summarized findings:** The working team reviews the inputs collected from conducting independent research and running workshops.
-1. **Evaluate the maturity levels:** The working team proceeds through each of the data culture areas described in this section. Using the [Fabric adoption roadmap](fabric-adoption-roadmap.md), they evaluate the effectiveness of each area by assigning a maturity score.
-1. **Justify the subjective evaluation with goal evidence:** The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
-1. **Identify weaknesses and opportunities:** The working team highlights or documents specific findings that could reflect a particular strength or challenge in the organization's data culture. It can be the lowest-scoring or highest-scoring areas, or any areas that they feel have a high impact on the organization's data culture. These key areas will be used to identify the BI focus areas and objectives.
+1. **Review summarized findings**: The working team reviews the inputs collected from conducting independent research and running workshops.
+1. **Evaluate the maturity levels**: The working team proceeds through each of the data culture areas described in this section. Using the [Fabric adoption roadmap](fabric-adoption-roadmap.md), they evaluate the effectiveness of each area by assigning a maturity score.
+1. **Justify the subjective evaluation with goal evidence**: The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
+1. **Identify weaknesses and opportunities**: The working team highlights or documents specific findings that could reflect a particular strength or challenge in the organization's data culture. It can be the lowest-scoring or highest-scoring areas, or any areas that they feel have a high impact on the organization's data culture. These key areas will be used to identify the BI focus areas and objectives.
 
 > [!TIP]
 > Use the [Fabric adoption roadmap](fabric-adoption-roadmap.md) to guide you when completing the data culture assessment. Also, consider other factors specific to your organizational culture and the ways your users work. If you're looking for more information, consult other reputable sources like the [Data Management Body of Knowledge (DMBOK)](https://www.dama.org/cpages/body-of-knowledge).
@@ -426,22 +426,22 @@ The following diagram depicts how the working team assesses the organizational d
 
 The diagram depicts the following data culture areas.
 
-| **Item** | **Description** |
+| Item | Description |
 | :-: | --- |
-| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | **[Business alignment](fabric-adoption-roadmap-business-alignment.md):** How well the data culture and data strategy enable business users to achieve business objectives. |
-| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | **[Executive sponsorship](fabric-adoption-roadmap-executive-sponsorship.md):** How effectively a person of sufficient credibility, authority, and influence supports BI solutions and initiatives to drive successful adoption. |
-| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | **[Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md):** How effectively a central BI team enables the user community, and whether this team has filled all the COE roles. |
-| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | **[Data literacy](fabric-adoption-roadmap-data-culture.md#data-literacy):** How effectively users are able to read, interpret, and use data to form opinions and make decisions. |
-| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | **[Data discovery](fabric-adoption-roadmap-data-culture.md#data-discovery):** How discoverable the right data is, at the right time, for the people who need it. |
-| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | **[Data democratization](fabric-adoption-roadmap-data-culture.md#data-democratization):** Whether data is put in the hands of users who are responsible for solving business problems. |
-| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | **[Content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md):** Whether there's a clear vision for centralized and decentralized ways that content creators manage data (such as data models), and how they're supported by the COE. |
-| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | **[Content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md):** Whether there's a clear vision of who uses, or consumes, analytical content (such as reports), and how they're supported by the COE. |
-| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | **[Mentoring and user enablement](fabric-adoption-roadmap-mentoring-and-user-enablement.md):** Whether end users have the resources and training to effectively use data and improve their data literacy. |
-| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | **[Community of practice](fabric-adoption-roadmap-community-of-practice.md):** How effectively people with a common interest can interact with and help each other on a voluntary basis. |
-| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | **[User support](fabric-adoption-roadmap-user-support.md):** How effectively users can get help when data, tool, or process issues arise. |
-| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | **[Governance](fabric-adoption-roadmap-governance.md):** The effectiveness of processes for monitoring user behavior to empower users, maintain regulatory requirements, and fulfill internal requirements. |
-| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | **[System oversight](fabric-adoption-roadmap-system-oversight.md):** The effectiveness of everyday administrative activity concerned with enacting governance guidelines, empowering users, and facilitating adoption. |
-| ![Item 14.](../media/legend-number/legend-number-14-fabric.svg) | **[Change management](fabric-adoption-roadmap-change-management.md):** How effectively change is handled, including procedures that safeguard against disruption and productivity loss due to changes in solutions or processes. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | **[Business alignment](fabric-adoption-roadmap-business-alignment.md)**: How well the data culture and data strategy enable business users to achieve business objectives. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | **[Executive sponsorship](fabric-adoption-roadmap-executive-sponsorship.md)**: How effectively a person of sufficient credibility, authority, and influence supports BI solutions and initiatives to drive successful adoption. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | **[Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md)**: How effectively a central BI team enables the user community, and whether this team has filled all the COE roles. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | **[Data literacy](fabric-adoption-roadmap-data-culture.md#data-literacy)**: How effectively users are able to read, interpret, and use data to form opinions and make decisions. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | **[Data discovery](fabric-adoption-roadmap-data-culture.md#data-discovery)**: How discoverable the right data is, at the right time, for the people who need it. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | **[Data democratization](fabric-adoption-roadmap-data-culture.md#data-democratization)**: Whether data is put in the hands of users who are responsible for solving business problems. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | **[Content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md)**: Whether there's a clear vision for centralized and decentralized ways that content creators manage data (such as data models), and how they're supported by the COE. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | **[Content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md)**: Whether there's a clear vision of who uses, or consumes, analytical content (such as reports), and how they're supported by the COE. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | **[Mentoring and user enablement](fabric-adoption-roadmap-mentoring-and-user-enablement.md)**: Whether end users have the resources and training to effectively use data and improve their data literacy. |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | **[Community of practice](fabric-adoption-roadmap-community-of-practice.md)**: How effectively people with a common interest can interact with and help each other on a voluntary basis. |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | **[User support](fabric-adoption-roadmap-user-support.md)**: How effectively users can get help when data, tool, or process issues arise. |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | **[Governance](fabric-adoption-roadmap-governance.md)**: The effectiveness of processes for monitoring user behavior to empower users, maintain regulatory requirements, and fulfill internal requirements. |
+| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | **[System oversight](fabric-adoption-roadmap-system-oversight.md)**: The effectiveness of everyday administrative activity concerned with enacting governance guidelines, empowering users, and facilitating adoption. |
+| ![Item 14.](../media/legend-number/legend-number-14-fabric.svg) | **[Change management](fabric-adoption-roadmap-change-management.md)**: How effectively change is handled, including procedures that safeguard against disruption and productivity loss due to changes in solutions or processes. |
 
 To evaluate these data culture areas, see the [Fabric adoption roadmap](fabric-adoption-roadmap.md). Specifically, refer to the maturity level sections and _Questions to ask_ sections, which guide you to perform assessments.
 
@@ -449,12 +449,12 @@ To evaluate these data culture areas, see the [Fabric adoption roadmap](fabric-a
 
 The technical assessment evaluates technical areas that strategically enable the success of BI implementation. The purpose of this assessment isn't to audit individual technical solutions or assess the entirety of technical areas related to BI. Instead, the working team describes the maturity level and general effectiveness for strategically critical areas, like those described in this section. To complete this assessment, the working team performs the following tasks.
 
-1. **Identify technical areas:** The working team identifies specific technical areas that are relevant and strategically important to the success of BI to include in their assessment. Some examples of technical areas are described in this section and shown in the following diagram.
-1. **Define maturity levels:** The working team defines the maturity levels to score the high-level effectiveness for each technical area in the assessment. These maturity levels should follow a consistent scale, such as those found in the template provided in the [maturity levels of the Fabric adoption roadmap](fabric-adoption-roadmap-maturity-levels.md).
-1. **Review summarized findings:** The working team reviews the collected inputs by conducting independent research and running workshops.
-1. **Evaluate the maturity levels:** The working team evaluates the effectiveness of each area by assigning a maturity score.
-1. **Justify the subjective evaluation with goal evidence:** The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
-1. **Identify weaknesses and opportunities:** The working team highlights or documents specific findings that could reflect a particular strength or challenge in the organization's BI implementation. It can be the lowest-scoring technical areas, or any areas that they feel have a high impact on the organization's strategic success with implementing BI tools and processes. These key areas will be used to identify the BI focus areas and objectives.
+1. **Identify technical areas**: The working team identifies specific technical areas that are relevant and strategically important to the success of BI to include in their assessment. Some examples of technical areas are described in this section and shown in the following diagram.
+1. **Define maturity levels**: The working team defines the maturity levels to score the high-level effectiveness for each technical area in the assessment. These maturity levels should follow a consistent scale, such as those found in the template provided in the [maturity levels of the Fabric adoption roadmap](fabric-adoption-roadmap-maturity-levels.md).
+1. **Review summarized findings**: The working team reviews the collected inputs by conducting independent research and running workshops.
+1. **Evaluate the maturity levels**: The working team evaluates the effectiveness of each area by assigning a maturity score.
+1. **Justify the subjective evaluation with goal evidence**: The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
+1. **Identify weaknesses and opportunities**: The working team highlights or documents specific findings that could reflect a particular strength or challenge in the organization's BI implementation. It can be the lowest-scoring technical areas, or any areas that they feel have a high impact on the organization's strategic success with implementing BI tools and processes. These key areas will be used to identify the BI focus areas and objectives.
 
 The following diagram depicts technical areas that you might assess when defining your BI strategy.
 
@@ -465,21 +465,21 @@ The following diagram depicts technical areas that you might assess when definin
 
 The diagram depicts the following technical areas.
 
-| **Item** | **Description** |
+| Item | Description |
 | :-: | --- |
-| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | **[Data integration](/fabric/data-factory/data-factory-overview):** How effectively tools or systems connect to, ingest, and transform data from various sources to create harmonized views for analytical purposes. Evaluating data integration means equally assessing enterprise data pipelines and self-service data integration solutions, like dataflows in Power BI and Fabric. |
-| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | **[Data engineering](/fabric/data-engineering/data-engineering-overview):** How effective the current architectures are at supporting analytical use cases and adapting to changes in business data needs. |
-| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | **[Data science](/fabric/data-science/data-science-overview):** Whether the organization can use exploratory and sophisticated techniques to discover new insights and benefit from predictive or prescriptive analytics. |
-| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | **[Data warehousing](/fabric/data-warehouse/data-warehousing):** The effectiveness of relational databases in modeling business logic to support downstream analytical use cases. Data warehousing is often considered together with data engineering. |
-| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | **[Real-time analytics](/fabric/real-time-analytics/overview):** Whether the organization can correctly identify, capture, and use low latency data to provide an up-to-date picture of systems and processes. |
-| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | **[Data visualization](/power-bi/fundamentals/power-bi-overview):** Whether visualizations can be used effectively to reduce the time-to-action of reporting experiences for business users. Effective visualizations follow best practices, directing attention to important, actionable elements, enabling users to investigate deeper or take the correct actions. |
-| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | **[Actions and automation](/fabric/data-activator/data-activator-introduction):** How consistently and effectively tasks are automated and data alerts are used to enable manual intervention at critical moments in a system or process. You should also evaluate how actionable BI solutions are, meaning how effectively and directly they enable report users to take the right actions at the right time. |
-| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | **[Lifecycle management](/fabric/cicd/cicd-overview):** How effectively content creators can collaborate to manage and track changes in BI solutions for consistent, regular releases or updates. |
-| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | **[Data security](powerbi-implementation-planning-security-overview.md):** Whether data assets comply with regulatory and organizational policies to ensure that unauthorized people can't view, access, or share data. Data security is typically evaluated together with information protection and data loss prevention. |
-| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | **[Information protection](powerbi-implementation-planning-info-protection.md):** How well the organization mitigates risk by identifying and classifying sensitive information by using tools like sensitivity labels. Information protection is typically evaluated together with data security and data loss prevention. |
-| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | **[Data loss prevention (DLP)](powerbi-implementation-planning-data-loss-prevention.md):** Whether the organization can proactively prevent data from leaving the organization. For example, by using DLP policies based on a sensitivity label or sensitive information type. DLP is typically evaluated together with data security and information protection. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | **[Data integration](/fabric/data-factory/data-factory-overview)**: How effectively tools or systems connect to, ingest, and transform data from various sources to create harmonized views for analytical purposes. Evaluating data integration means equally assessing enterprise data pipelines and self-service data integration solutions, like dataflows in Power BI and Fabric. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | **[Data engineering](/fabric/data-engineering/data-engineering-overview)**: How effective the current architectures are at supporting analytical use cases and adapting to changes in business data needs. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | **[Data science](/fabric/data-science/data-science-overview)**: Whether the organization can use exploratory and sophisticated techniques to discover new insights and benefit from predictive or prescriptive analytics. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | **[Data warehousing](/fabric/data-warehouse/data-warehousing)**: The effectiveness of relational databases in modeling business logic to support downstream analytical use cases. Data warehousing is often considered together with data engineering. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | **[Real-time analytics](/fabric/real-time-analytics/overview)**: Whether the organization can correctly identify, capture, and use low latency data to provide an up-to-date picture of systems and processes. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | **[Data visualization](../fundamentals/power-bi-overview.md)**: Whether visualizations can be used effectively to reduce the time-to-action of reporting experiences for business users. Effective visualizations follow best practices, directing attention to important, actionable elements, enabling users to investigate deeper or take the correct actions. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | **[Actions and automation](/fabric/real-time-intelligence/data-activator/activator-introduction)**: How consistently and effectively tasks are automated and data alerts are used to enable manual intervention at critical moments in a system or process. You should also evaluate how actionable BI solutions are, meaning how effectively and directly they enable report users to take the right actions at the right time. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | **[Lifecycle management](/fabric/cicd/cicd-overview)**: How effectively content creators can collaborate to manage and track changes in BI solutions for consistent, regular releases or updates. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | **[Data security](powerbi-implementation-planning-security-overview.md)**: Whether data assets comply with regulatory and organizational policies to ensure that unauthorized people can't view, access, or share data. Data security is typically evaluated together with information protection and data loss prevention. |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | **[Information protection](powerbi-implementation-planning-info-protection.md)**: How well the organization mitigates risk by identifying and classifying sensitive information by using tools like sensitivity labels. Information protection is typically evaluated together with data security and data loss prevention. |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | **[Data loss prevention (DLP)](powerbi-implementation-planning-data-loss-prevention.md)**: Whether the organization can proactively prevent data from leaving the organization. For example, by using DLP policies based on a sensitivity label or sensitive information type. DLP is typically evaluated together with data security and information protection. |
 | ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | **Master data management** :Whether quantitative fields and business attributes are effectively managed, centrally documented, and uniformly maintained across the organization. |
-| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | **Data quality:** Whether BI solutions and data are trustworthy, complete, and accurate according to the business user community. |
+| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | **Data quality**: Whether BI solutions and data are trustworthy, complete, and accurate according to the business user community. |
 | ![Item 14.](../media/legend-number/legend-number-14-fabric.svg) | **Artificial intelligence (AI)**: Whether the organization makes effective use of generative AI tools and models to enhance productivity in BI processes. Additionally, whether AI is used to deliver valuable insights in analytics workloads. |
 
 > [!NOTE]
@@ -495,12 +495,12 @@ The diagram depicts the following technical areas.
 **Checklist** - When running workshops and completing assessments, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Decide and communicate the workshop format:** Outline the number of sessions, their length, participants, and other relevant details for participating stakeholders.
-> - **Nominate a moderator from the working team:** Decide who from the working team will moderate the workshops. Their objective is to guide discussions and elicit information.
-> - **Collect input:** Organize the workshops so that you collect sufficient input about the business strategy and the current state of BI implementation and adoption.
-> - **Summarize findings:** Document the inputs that justify the assessments. Include specific business cases that illustrate strategically important processes and solutions.
-> - **Complete the maturity assessments:** Complete the relevant assessments for the current state of BI adoption and implementation.
-> - **Document business cases and supporting information:** goally document the evidence used to justify the maturity levels you assign in each assessment.
+> - **Decide and communicate the workshop format**: Outline the number of sessions, their length, participants, and other relevant details for participating stakeholders.
+> - **Nominate a moderator from the working team**: Decide who from the working team will moderate the workshops. Their objective is to guide discussions and elicit information.
+> - **Collect input**: Organize the workshops so that you collect sufficient input about the business strategy and the current state of BI implementation and adoption.
+> - **Summarize findings**: Document the inputs that justify the assessments. Include specific business cases that illustrate strategically important processes and solutions.
+> - **Complete the maturity assessments**: Complete the relevant assessments for the current state of BI adoption and implementation.
+> - **Document business cases and supporting information**: goally document the evidence used to justify the maturity levels you assign in each assessment.
 
 ## Step 4: Decide on the BI focus areas and objectives
 
@@ -568,10 +568,10 @@ Once you've identified your BI focus areas and objectives, you have concluded st
 **Checklist** – When deciding BI focus areas and objectives, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Curate a list of business data needs and opportunities:** Create a consolidated, prioritized list of the business data needs, pain points, and opportunities. This output is used in tactical planning.
-> - **Decide on the strategic BI objectives:** Work with your executive sponsor and other decision makers to identify high-level BI objectives for the next 12-18 months.
-> - **Align with stakeholders:** Obtain consensus agreement that the assessments and other deliverables are accurate.
-> - **Align with executives:** Obtain approvals on the outcomes of strategic planning and the next steps.
+> - **Curate a list of business data needs and opportunities**: Create a consolidated, prioritized list of the business data needs, pain points, and opportunities. This output is used in tactical planning.
+> - **Decide on the strategic BI objectives**: Work with your executive sponsor and other decision makers to identify high-level BI objectives for the next 12-18 months.
+> - **Align with stakeholders**: Obtain consensus agreement that the assessments and other deliverables are accurate.
+> - **Align with executives**: Obtain approvals on the outcomes of strategic planning and the next steps.
 
 ## Related content
 

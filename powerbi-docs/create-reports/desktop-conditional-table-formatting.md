@@ -1,13 +1,14 @@
 ---
 title: Apply conditional table formatting in Power BI
-description: Apply customized formatting to tables and matrixes in Power BI.
+description: Learn how to apply customized conditional formatting to tables and matrixes in Power BI, including color gradients, data bars, KPI icons, and web links.
 author: davidiseminger
 ms.author: davidi
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: how-to
-ms.date: 10/24/2023
+ms.topic: concept-article
+ms.date: 11/18/2024
 LocalizationGroup: Create reports
+#customer intent: As a Power BI user I want to learn how to apply customized formatting to tables and matrixes in Power BI.
 ---
 # Apply conditional formatting in tables and matrixes
 
@@ -19,12 +20,12 @@ To apply conditional formatting, select a **Table** or **Matrix** visualization 
 
 ![Conditional formatting menu](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-> [!NOTE]
-> Conditional formatting overrides any custom background or font color you apply to the conditionally formatted cell.
-
 To remove conditional formatting from a visualization, select **Remove conditional formatting** from the field's drop-down menu, and then select the type of formatting to remove.
 
-![Remove option in conditional formatting menu](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
+![Screenshot of the remove option in conditional formatting menu.](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
+
+> [!NOTE]
+> Conditional formatting overrides any custom background or font color you apply to the conditionally formatted cell.
 
 The following sections describe each conditional formatting option. You can combine more than one option in a single table column.
 
@@ -208,7 +209,7 @@ There are a few considerations to keep in mind when working with conditional tab
 
 - Any table that doesn't have a grouping is displayed as a single row that doesn't support conditional formatting.
 - You can't apply gradient formatting with automatic maximum/minimum values, or rule-based formatting with percentage rules, if your data contains *NaN* values. NaN means "Not a number," most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](/dax/divide-function-dax) to avoid these errors.
-- Conditional formatting needs an aggregation or measure to be applied to the value. That's why you see 'First' or 'Last' in the **Color by value** example. If you're building your report against an Analysis Service multidimensional cube, you won't be able to use an attribute for conditional formatting unless the cube owner has built a measure that provides the value.
+- Conditional formatting needs an aggregation or measure to be applied to the value. That's why you see 'First' or 'Last' in the **Color by value** example. If you're building your report against an Analysis Service multidimensional cube, you won't be able to use an attribute for conditional formatting unless the cube owner builds a measure that provides the value.
 - When printing a report including data bars and background color, you must enable *Background graphics* in the print settings of the browser for the data bars and background colors to print properly.
 
 ## Related content

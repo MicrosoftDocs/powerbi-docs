@@ -29,7 +29,7 @@ For the **Analytics** pane, the object is defined as follows:
 
 ### [API 5.1+](#tab/API-5-1)
 
-Under the object's definition, add only the object name, property name and type as explained [here](./format-pane.md).
+Under the object's definition, add only the object name, property name and type as explained [here](./format-pane-general.md).
 Example:
 
 ```json

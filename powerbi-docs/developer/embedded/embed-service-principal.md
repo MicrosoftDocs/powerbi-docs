@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 06/03/2024
+ms.date: 11/14/2024
 ---
 
 # Embed Power BI content with service principal and an application secret
@@ -57,14 +57,11 @@ To use service principal and an application ID for embedded analytics, you take 
 
 ## Step 1 - Create a Microsoft Entra app
 
-Create a Microsoft Entra app by using one of these methods:
-
-* [Create the app in the Azure portal](embed-service-principal.md#create-an-azure-ad-app-in-the-azure-portal).
-* [Create the app by using PowerShell](embed-service-principal.md#create-an-azure-ad-app-by-using-powershell).
+You can create a Microsoft Entra app from the Azure portal or by using Powershell:
 
 <a name='create-an-azure-ad-app-in-the-azure-portal'></a>
 
-### Create a Microsoft Entra app in the Azure portal
+### [Create an app in the Azure portal](#tab/azure-portal)
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#allservices).
 
@@ -105,20 +102,20 @@ Create a Microsoft Entra app by using one of these methods:
    >[!NOTE]
    >After you leave this window, the client secret value is hidden, and you can't view or copy it again.
 
-<a name='create-an-azure-ad-app-by-using-powershell'></a>
+### [Create an app using PowerShell](#tab/powershell)
 
-### Create a Microsoft Entra app by using PowerShell
+<a name='create-an-azure-ad-app-by-using-powershell'></a>
 
 The following sample [PowerShell](/powershell/azure/create-azure-service-principal-azureps) script creates a new Microsoft Entra app and a service principal. Before you run this script:
 
-- Install the [latest version of PowerShell](/powershell/scripting/install/installing-powershell-on-windows).
-- Install the [Microsoft Graph PowerShell SDK](/graph/sdks/sdk-installation#install-the-microsoft-graph-powershell-sdk).
+* Install the [latest version of PowerShell](/powershell/scripting/install/installing-powershell-on-windows).
+* Install the [Microsoft Graph PowerShell SDK](/graph/sdks/sdk-installation#install-the-microsoft-graph-powershell-sdk).
 
 After the script runs, make a note of the following information in the script output:
 
-- The client ID of the new app
-- The object ID of the new service principal
-- The value of the service principal secret
+* The client ID of the new app
+* The object ID of the new service principal
+* The value of the service principal secret
 
 ```powershell
 # Sign in as a user who's allowed to create an app.
@@ -148,6 +145,8 @@ $credential = Add-MgServicePrincipalPassword -ServicePrincipalId $($sp.Id)
 Write-Host "Credential of new service principal: " $($credential.SecretText)
 ```
 
+---
+
 <a name='step-2---create-an-azure-ad-security-group'></a>
 
 ## Step 2 - Create a Microsoft Entra security group
@@ -170,8 +169,8 @@ To create an Azure security group manually, follow the instructions in [Create a
 
 The following sample script creates a new security group. It also adds the service principal that you created earlier to the new security group.
 
-- Before you run the script, replace `<app-client-ID>` with the client ID that you recorded earlier for your new app.
-- After you run the script, make a note of the object ID of the new security group, which you can find in the script output.
+* Before you run the script, replace `<app-client-ID>` with the client ID that you recorded earlier for your new app.
+* After you run the script, make a note of the object ID of the new security group, which you can find in the script output.
 
 ```powershell
 # Sign in as an admin.
@@ -212,13 +211,13 @@ In the [**Power BI Admin portal**](../../admin/service-admin-portal.md), go to *
 
 ## Step 4 - Add the service principal to your workspace
 
-Your Microsoft Entra app can access your Power BI reports, dashboards, and semantic models only when it has access to your Power BI workspace. You provide that access by adding the app's service principal or its security group to your workspace as a member or admin.
+Your Microsoft Entra app can access your Power BI reports, dashboards, and semantic models only when it has access to your Power BI workspace as a **member** or **admin**. You provide that access by adding the app's service principal or its security group to your workspace.
 
 There are three ways to add a service principal or its security group to your workspace:
 
-- [Manually](#add-a-service-principal-or-security-group-manually)
-- [Use PowerShell](#add-a-service-principal-or-security-group-by-using-powershell)
-- Use the [Groups - add group user API](/rest/api/power-bi/groups/addgroupuser)
+* [Manually](#add-a-service-principal-or-security-group-manually)
+* [Use PowerShell](#add-a-service-principal-or-security-group-by-using-powershell)
+* Use the [Groups - add group user API](/rest/api/power-bi/groups/addgroupuser)
 
 ### Add a service principal or security group manually
 
@@ -265,8 +264,8 @@ Add-PowerBIWorkspaceUser -Id $($pbiWorkspace.Id) -AccessRight Member -PrincipalT
 
 The following script adds a security group as a workspace member. Before you run the script:
 
-- Replace `<security-group-object-ID>` with the object ID that you recorded earlier for your new security group.
-- Replace `<workspace-name>` with the name of the workspace that you'd like to give the security group access to.
+* Replace `<security-group-object-ID>` with the object ID that you recorded earlier for your new security group.
+* Replace `<workspace-name>` with the name of the workspace that you'd like to give the security group access to.
 
 ```powershell
 # Sign in to Power BI.

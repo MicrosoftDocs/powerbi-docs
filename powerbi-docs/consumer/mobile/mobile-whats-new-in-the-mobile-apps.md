@@ -16,7 +16,7 @@ Power BI Mobile app versions are released on a monthly cadence. The latest ver
 
 For related "What's New" information, see:
 
-* [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
+* [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
 ## November 2024
@@ -175,7 +175,7 @@ Hierarchies are now available in the mobile apps, where you can drill into the h
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-hierarchies.png" alt-text="Screenshot showing Power BI metrics hierarchies in the Power BI mobile app." border="false":::
 
-[Learn more about viewing hierarchies in the Power BI service](../../create-reports/service-metrics-view-hierarchies.md)
+[Learn more about viewing hierarchies in the Power BI service](../../create-reports/service-goals-view-hierarchies.md)
 
 ## March 2023
 
@@ -219,7 +219,7 @@ Open the app and tap the header to display the navigation tree. If the app has a
 
 ### Support for linked metrics
 
-The Power BI mobile apps now support linked metrics. Linked metrics are metrics that are connected to multiple scorecards. All check-ins and updates to linked metrics are reflected everywhere the metric appears. Linked metrics make it easier to avoid creating duplicate metrics tracking the same thing. [Learn more about linked metrics](../../create-reports/service-metrics-linked-metrics.md)
+The Power BI mobile apps now support linked metrics. Linked metrics are metrics that are connected to multiple scorecards. All check-ins and updates to linked metrics are reflected everywhere the metric appears. Linked metrics make it easier to avoid creating duplicate metrics tracking the same thing. [Learn more about linked metrics](../../create-reports/service-goals-linked-goals.md)
 
 ### Track your metrics on the Windows app
 
@@ -1136,12 +1136,12 @@ Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.mi
 **Power BI mobile app for Android tablets** Yes, the preview is here.
 
 * Experience [Power BI on your Android tablet](mobile-android-app-get-started.md)
-* Explore [Reporting Services mobile reports and KPIs on your Android tablet](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
+* Explore [Reporting Services KPIs on your Android tablet](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### Android devices
 **Preview: Intune Mobile Application Management** Power BI support for Microsoft Intune Mobile Application Manager (MAM) is now in preview for Power BI Pro users on Android devices. 
 
-**Favorites** Tag your favorite dashboards on your Android device, and see all your [favorite Power BI dashboards and Reporting Services mobile reports and KPIs](mobile-android-app-get-started.md#view-your-favorite-dashboards-and-reports) collected in one convenient location. 
+**Favorites** Tag your favorite dashboards on your Android device, and see all your [favorite Power BI dashboards and Reporting Services KPIs](mobile-android-app-get-started.md#view-your-favorite-dashboards-and-reports) collected in one convenient location. 
 
 #### iOS devices
 **Links** URLs in tiles and visualizations are now clickable, and open in a browser.

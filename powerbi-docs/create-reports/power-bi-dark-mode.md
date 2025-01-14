@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/08/2024
+ms.date: 11/29/2024
 LocalizationGroup: Create reports
 ---
 #  Dark mode in Power BI Desktop
@@ -22,12 +22,12 @@ When you create reports in Power BI Desktop, you can choose different modes, dep
 ## Select a mode
 
 1. Go to **File** > **Options and settings** > **Options** > **Global** > **Report settings**.
-1. In the **Personalization** section, select the theme you want:
+1. In the **Customize appearance (preview)** section, select the theme you want:
 
-    - **Default mode**: The standard white theme of the desktop application.
-    - **Dark mode**: A dark theme that transforms the desktop application into a darker interface.
-    - **Light mode**: A white theme with a more stylish look than the default theme.
-    - **User system mode**: Adapts the theme based on your Windows system settings.
+    - **Legacy**: The standard white theme of the desktop application.
+    - **Dark**: A dark theme that transforms the desktop application into a darker interface.
+    - **Light**: A white theme with a more stylish look than the default theme.
+    - **System default**: Adapts the theme based on your Windows system settings.
 1. Select **OK** to save your settings.
 
 There's a mode for every window in Power BI Desktop. For example, for dark mode:

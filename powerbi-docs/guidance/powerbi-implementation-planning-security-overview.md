@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 12/12/2022
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Security
@@ -17,9 +17,9 @@ ms.date: 12/12/2022
 
 This article introduces a series of articles about Power BI security. The series of articles is targeted at:
 
-- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They also support self-service users throughout the organization.
-- **Content creators:** Self-service BI creators who set up permissions for the content they create and publish.
+- **Power BI administrators**: The administrators who are responsible for overseeing Power BI in the organization.
+- **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing Power BI. They also support self-service users throughout the organization.
+- **Content creators**: Self-service BI creators who set up permissions for the content they create and publish.
 
 The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
 
@@ -35,12 +35,12 @@ It's important to plan to address challenges related to security, which include:
 
 The focus for this series of articles is on security and privacy. It's organized into the following articles:
 
-- **[Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md):** Strategic decisions and actions you should consider that affect securing the content in your Power BI tenant. The focus is on strategic decisions that will impact consumers and content creators. It also includes strategies for file locations, external users, and using groups.
-- **[Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md):** Tactical decisions and actions you should consider when planning how to deliver secure content to read-only consumers. The focus is primarily on report viewers and app viewers. It also describes techniques for how to enforce data security and the *Request access* workflow for consumers.
-- **[Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md):** Tactical decisions and actions you should consider when planning for enterprise and self-service creators, who create, manage, secure, and publish content. It also describes the data discovery experience and the *Request access* workflow for content creators.
+- **[Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md)**: Strategic decisions and actions you should consider that affect securing the content in your Power BI tenant. The focus is on strategic decisions that will impact consumers and content creators. It also includes strategies for file locations, external users, and using groups.
+- **[Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md)**: Tactical decisions and actions you should consider when planning how to deliver secure content to read-only consumers. The focus is primarily on report viewers and app viewers. It also describes techniques for how to enforce data security and the *Request access* workflow for consumers.
+- **[Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md)**: Tactical decisions and actions you should consider when planning for enterprise and self-service creators, who create, manage, secure, and publish content. It also describes the data discovery experience and the *Request access* workflow for content creators.
 
 > [!NOTE]
-> There are additional security planning topics not covered by these articles. We recommend that you also see [Premium capacity permissions](/power-bi/enterprise/service-admin-premium-manage#manage-user-permissions) and [Manage security roles of an on-premises data gateway](/data-integration/gateway/manage-security-roles).
+> There are additional security planning topics not covered by these articles. We recommend that you also see [Premium capacity permissions](/fabric/admin/capacity-settings?tabs=power-bi-premium#manage-user-permissions) and [Manage security roles of an on-premises data gateway](/data-integration/gateway/manage-security-roles).
 
 ## Related content
 

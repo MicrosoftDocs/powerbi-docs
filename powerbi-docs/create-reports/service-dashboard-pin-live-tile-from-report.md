@@ -56,6 +56,9 @@ Open the dashboard to see the pinned live tile:
 
     :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png" alt-text="Screenshot showing dashboards with a live tile." lightbox="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png":::
 
+    > [!NOTE]
+    > Report tiles aren't interactive when viewed in the Power BI mobile apps.
+
 ## Related content
 
 - [Dashboards for business users of the Power BI service](../consumer/end-user-dashboards.md)

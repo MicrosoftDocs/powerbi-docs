@@ -12,7 +12,9 @@ ms.author: maggies
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-In Power BI paginated reports, the device information settings for the CSV rendering extension allow delimiters and qualifiers to be changed and line break handling to be specified. The extension of the file can also be submitted, as well as the encoding and inclusion of header rows in the output. Because delimiters are likely to be special characters, you should encode them in a CDATA section, if the settings are written as XML.
+In Power BI paginated reports, the device information settings for the CSV rendering extension allow delimiters and qualifiers to be changed and line break handling to be specified. The extension of the file can also be submitted, as well as the encoding and inclusion of header rows in the output. Because delimiters are likely to be special characters, you should encode them in a CDATA section, if the settings are written as XML. 
+
+For usage examples and more info refer to [Specify device information settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url) documentation.
 
 ## CSV settings
 
@@ -32,4 +34,4 @@ The following table lists the device information settings for rendering in Text 
 
 ## Related content
 
-- [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
+- [Specify device information settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)

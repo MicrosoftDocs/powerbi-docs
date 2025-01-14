@@ -192,7 +192,7 @@ displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
 description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 ```
 
-For **localize formatting model** see [format pane localization](format-pane.md#localization).  
+For **localize formatting model** see [format pane localization](format-pane-example.md#localization).  
 For **localize formatting model utils** see [formatting model utils - localization](utils-formatting-model.md#localization).
 
 ## Supported languages

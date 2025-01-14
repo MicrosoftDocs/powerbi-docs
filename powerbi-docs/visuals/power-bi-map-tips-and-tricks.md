@@ -43,7 +43,7 @@ This section is for users who have access to the semantic model that is being us
 
 ### 1. Categorize geographic fields in Power BI Desktop
 
-In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. In Data view, select the desired column. From the ribbon, select the **Column tools** tab and then set the **Data Category** to **Address**, **City**, **Continent**, **Country**, **County**, **Postal Code**, **State**, or **Province**. 
+In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. In Table view, select the desired column. From the ribbon, select the **Column tools** tab and then set the **Data Category** to **Address**, **City**, **Continent**, **Country**, **County**, **Postal Code**, **State**, or **Province**. 
 
   :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-data-category.png" alt-text="Screenshot of data category.":::
 

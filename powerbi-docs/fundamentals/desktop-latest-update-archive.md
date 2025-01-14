@@ -904,7 +904,7 @@ The following updates are new to Power BI Desktop this month:
 * More styling options for column and bar charts  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674238)  [[video]](https://youtu.be/PycL2_T0DxM?t=311) 
 * Extended customization for data labels  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674239)  [[video]](https://youtu.be/PycL2_T0DxM?t=526) 
 * Azure Maps clustering aggregation support for bubble layer  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674240)
-* Alerting on your Power BI reports with Data Activator  [[video]](https://youtu.be/PycL2_T0DxM?t=168)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674241)  [[article]](/fabric/data-activator/data-activator-introduction)
+* Alerting on your Power BI reports with Fabric Activator  [[video]](https://youtu.be/PycL2_T0DxM?t=168)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674241)  [[article]](/fabric/real-time-intelligence/data-activator/activator-introduction)
 
 ### Data connectivity
 * OneLake data hub in Power BI Desktop  [[video]](https://youtu.be/PycL2_T0DxM?t=469)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674246)  [[article]](https://aka.ms/dax-queries)
@@ -5722,7 +5722,7 @@ The following updates were new to **Power BI Desktop** in June:
 * Two new Power BI visuals  [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
 
 ### Modeling
-* Filtering and sorting in data view  [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s)  [[article]](../connect-data/desktop-data-view.md#filtering-in-data-view)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
+* Filtering and sorting in data view  [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s)  [[article]](../connect-data/desktop-data-view.md#filtering-in-table-view)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
 * Improved locale filtering   [[video]](https://youtu.be/4VpGtWSrssE?t=15m35s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#locale) 
 
 ### Data connectivity
@@ -7131,7 +7131,7 @@ Ring in the new year with another collection of improvements and enhancements to
 ### Data Connectivity:
 
 -   DirectQuery: you can now create measures when using DirectQuery mode
--   You can now refresh data for individual tables from the Field List (in **Report** view and **Data** view), rather than (and in addition to) just being able to **refresh all** from the ribbon
+-   You can now refresh data for individual tables from the Field List (in **Report** view and **Table** view), rather than (and in addition to) just being able to **refresh all** from the ribbon
 -   General Availability (GA) for SQL Server Analysis Services Multidimensional models Exploration mode (no longer a preview feature)
 -   Enhancements to hierarchy support
 -   General Availability (GA) for the SAP HANA connector (no longer a preview feature)
@@ -7413,7 +7413,7 @@ The following features have been added to this update:
 
 **Data Modeling improvements:**
 
--   Resizing of columns in Data View
+-   Resizing of columns in Table View
 
 -   Moving Measures from one table to another
 
@@ -7434,7 +7434,7 @@ The following features have been added in this update:
 
 -   **Direct Report Exploration** over Analysis Services Tabular Models.
 
--   **Data Modeling:** New Data View & Relationships views.
+-   **Data Modeling:** New Table View & Relationships views.
 
 -   Publish reports to PowerBI.com, directly from Power BI Desktop.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
-ms.date: 08/28/2024
+ms.date: 12/03/2024
 LocalizationGroup: Get started
 #customer intent: As a Power BI user, I want to learn about data sources I can connect to so that I can effectively explore, analyze, and visualize my data in Power BI.
 ---
@@ -20,17 +20,13 @@ This article focuses on data source types that you can connect to from the Power
 
 ## Discover content
 
-You can use the OneLake data hub to discover existing data and reports.  
+You can use the OneLake catalog to discover existing data and reports.  
 
-On your Power BI site, select **OneLake data hub** in the navigation pane:
+On your Power BI site, select **OneLake** in the navigation pane:
 
 :::image type="content" source="media/service-get-data/onelake-data-hub-open.png" alt-text="Screenshot that shows the OneLake data hub in the navigation pane.":::
 
-The tiles at the top of the page show recommended data items. For example, data can be recommended because it's promoted by someone in your organization or because it was accessed recently.
-
-:::image type="content" source="media/service-get-data/recommended-data.png" alt-text="Screenshot that shows the Recommended data tiles.":::
-
-Below those tiles is a list of data that you have access to. You can filter to show all data, your own data, or data endorsed by someone in your organization:
+A list of data that you have access to appears when the OneLake catalog opens. You can filter to show all items, your own items, or items endorsed by someone in your organization:
 
 :::image type="content" source="media/service-get-data/all-data.png" alt-text="Screenshot that shows the list of existing data.":::
 
@@ -48,15 +44,15 @@ To create content, you can import or create files or databases.
 
 To import files:
 
-1. Go to the workspace to which you want to import the files. Select **New** and then **Semantic model**:
+1. Go to the workspace to which you want to import the files. Select **New item**, then, on the selection pane that opens, choose **Semantic model**:
 
-   :::image type="content" source="media/service-get-data/new-menu.png" alt-text="Screenshot that shows the New menu in My Workspace.":::
+   :::image type="content" source="media/service-get-data/new-menu.png" alt-text="Screenshot that shows the New item menu and semantic model tile on the selection pane in My Workspace.":::
 
 1. Select **Excel** or **CSV**. You can also paste or manually enter data.
 
    :::image type="content" source="media/service-get-data/add-data.png" alt-text="Screenshot that shows the choices under Add data to start building a report.":::
 
-When you import Excel or CSV files or manually create a workbook, Power BI imports any supported data in tables and any data model into a new Power BI semantic model.
+When you import Excel or CSV files, or manually create a workbook, Power BI imports any supported data in tables and any data model into a new Power BI semantic model.
 
 You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive or SharePoint, Power BI creates a connection to the file. When you upload a local file, Power BI adds a copy of the file to the workspace.
 
@@ -68,7 +64,7 @@ Following are some types of files that you can add:
 
 - **Excel** workbooks, or *.xlsx* and *.xlsm* files, can include different data types. For example, workbooks can include data that you enter into worksheets yourself, or data that you query and load from external data sources by using Power Query. Power Query is available via **Get & Transform Data** on the **Data** tab of Excel, or via **Get External Data** in Power Pivot. You can import data from tables in worksheets or import data from a data model. For more information, see [Get data from files for Power BI](service-get-data-from-files.md).
 
-- **Power BI Desktop**, or *.pbix* report files, query and load data from external data sources to create reports. In Power BI Desktop, you can extend your data model by using measures and relationships, and publish the *.pbix* files to the Power BI service. Power BI Desktop is intended for advanced users who have a thorough understanding of their data sources, data querying and transformation, and data modeling. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+- **Power BI Desktop**, or *.pbix* report files, query and load data from external data sources to create reports. In Power BI Desktop, you can extend your data model by using measures and relationships, and publish the *.pbix* files to the Power BI service. Power BI Desktop is intended for advanced users who have a thorough understanding of their data sources, data querying and transformation, and data modeling. For more information, see [Connect to data sources in Power BI Desktop](desktop-connect-to-data.md).
 
 - **Comma-separated value**, or *.csv* files, are simple text files with rows of data that contain values separated by commas. For example, a *.csv* file that contains name and address data might have many rows, each with values for first name, last name, street address, city, and state. You can't import data into a *.csv* file, but many applications, like Excel, can save simple table data as *.csv* files.
 

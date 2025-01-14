@@ -110,13 +110,13 @@ The next step is to integrate the two tables into the data model with a **Calend
 
 :::image type="content" source="./media/data-translation-calendar-table/dax-expression-table.png" alt-text="Screenshot shows the table with its DAX code." lightbox="./media/data-translation-calendar-table/dax-expression-table.png":::
 
-Create a relationship between the **Calendar** table and the fact tables, such as **Sales**, using the **Date** column to create a one-to-many relationship. The relationships created between the **Calendar** table and the two translations tables are based on the **MonthNumber** column and the **DayNumber** column.
+Create a relationship between the **Calendar** table and the [fact tables](star-schema.md#fact-tables), such as **Sales**, using the **Date** column to create a one-to-many relationship. The relationships created between the **Calendar** table and the two translations tables are based on the **MonthNumber** column and the **DayNumber** column.
 
 :::image type="content" source="./media/data-translation-calendar-table/calendar-month-associate.png" alt-text="Screenshot shows the Model view with the Translated Month Names table in a relationship with the Calendar table." lightbox="./media/data-translation-calendar-table/calendar-month-associate.png":::
 
 After you create the required relationships with the **Calendar** table, create a new field parameter for each of the two calendar translations tables. Creating a field parameter for a calendar translation table is just like creating the field parameters for product names and category names shown earlier.
 
-:::image type="content" source="./media/data-translation-calendar-table/translate-month-name.png" alt-text="Screenshot shows Data view of the Translated Month Names table." lightbox="./media/data-translation-calendar-table/translate-month-name.png":::
+:::image type="content" source="./media/data-translation-calendar-table/translate-month-name.png" alt-text="Screenshot shows Table view of the Translated Month Names table." lightbox="./media/data-translation-calendar-table/translate-month-name.png":::
 
 Add a relationship between these new field parameter tables and the **Languages** table to ensure the language filtering strategy works as expected.
 

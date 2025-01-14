@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 01/24/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: BI tactical planning
@@ -17,9 +17,9 @@ ms.date: 01/24/2024
 
 This article helps you to identify your business intelligence (BI) key results and form actionable, time-bound plans to achieve incremental progress toward your strategic BI objectives. It's primarily targeted at:
 
-- **BI and analytics directors or managers:** Decision makers who are responsible for overseeing the BI program and BI strategic planning.
-- **Center of Excellence (COE), IT, and BI teams:** The teams that are responsible for tactical planning, and for measuring and monitoring progress toward achieving BI key results.
-- **Subject matter experts (SMEs) and content owners and creators:** The teams and individuals that champion analytics in a department and conduct BI solution planning.
+- **BI and analytics directors or managers**: Decision makers who are responsible for overseeing the BI program and BI strategic planning.
+- **Center of Excellence (COE), IT, and BI teams**: The teams that are responsible for tactical planning, and for measuring and monitoring progress toward achieving BI key results.
+- **Subject matter experts (SMEs) and content owners and creators**: The teams and individuals that champion analytics in a department and conduct BI solution planning.
 
 A BI strategy is a plan to implement, use, and manage data and analytics. You define your BI strategy by starting with [strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). In strategic planning, you assemble a working team to identify your BI focus areas and objectives. To make progress toward these objectives, the working team next conducts _tactical planning_. Tactical planning involves defining _key results_. Key results describe how you'll make progress toward one of your objectives. Key results are specific, actionable, and achievable within a defined period of time.
 
@@ -35,7 +35,7 @@ The following high-level diagram depicts how to conduct BI tactical planning.
 
 You take the following steps to conduct BI tactical planning.
 
-| **Step** | **Description** |
+| Step | Description |
 | :-: | --- |
 | **1** | Identify and describe specific, actionable priorities that relate to your [BI focus areas and objectives](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). |
 | **2** | Define what success will look like, and what your key results are for the planning period. These key results are quantifiable goals that help you measure progress toward one of your objectives. |
@@ -131,12 +131,12 @@ Here are some examples of quick-win or high-impact areas you might prioritize wh
 **Checklist** - When defining organizational readiness and priorities, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Review BI focus areas and objectives:** Ensure that your strategic objectives are current, and that they're understood by everyone who participates in tactical planning.
-> - **Review the current state assessments:** The weaknesses and opportunities that the working team identified in the current state assessments directly inform the key results that you'll define.
-> - **Identify time-sensitive activities:** Identify any potential activities or areas that have a defined time period or urgency. Clarify the deadline and its importance for the business.
-> - **Identify quick wins:** Identify activities that require low effort or time investment to achieve a high impact. Justify why these activities are quick wins.
-> - **Identify high-impact activities:** Identify areas that have a significant impact on your BI strategy. Define why these areas have a high impact.
-> - **Assess organizational readiness:** Survey for potential risks or threats that you should address to successfully achieve your strategic objectives.
+> - **Review BI focus areas and objectives**: Ensure that your strategic objectives are current, and that they're understood by everyone who participates in tactical planning.
+> - **Review the current state assessments**: The weaknesses and opportunities that the working team identified in the current state assessments directly inform the key results that you'll define.
+> - **Identify time-sensitive activities**: Identify any potential activities or areas that have a defined time period or urgency. Clarify the deadline and its importance for the business.
+> - **Identify quick wins**: Identify activities that require low effort or time investment to achieve a high impact. Justify why these activities are quick wins.
+> - **Identify high-impact activities**: Identify areas that have a significant impact on your BI strategy. Define why these areas have a high impact.
+> - **Assess organizational readiness**: Survey for potential risks or threats that you should address to successfully achieve your strategic objectives.
 
 ## Step 2: Define key results
 
@@ -152,11 +152,11 @@ Ensure that your key results:
 - Result in measurable and achievable outcomes within the tactical planning period.
 - Relate to both your business strategy and BI strategy.
 - Follow consistent criteria, like the [SMART system](https://wikipedia.org/wiki/SMART_criteria), and that they're:
-  - **Specific:** Target an explicit area of improvement.
-  - **Measurable:** Are quantifiable so that you can monitor progress.
-  - **Assignable:** Specify who's responsible for the key result.
-  - **Realistic:** State whether you will achieve the key result, given the current level of organizational readiness and available resources. Set challenging yet achievable goals.
-  - **Time-related:** Specify when you will achieve the results.
+  - **Specific**: Target an explicit area of improvement.
+  - **Measurable**: Are quantifiable so that you can monitor progress.
+  - **Assignable**: Specify who's responsible for the key result.
+  - **Realistic**: State whether you will achieve the key result, given the current level of organizational readiness and available resources. Set challenging yet achievable goals.
+  - **Time-related**: Specify when you will achieve the results.
 
 A fundamental aspect of your key results is that they help you to define and measure success for your BI strategy.
 
@@ -164,14 +164,14 @@ A fundamental aspect of your key results is that they help you to define and mea
 
 It's important that you define what success will look like for your strategic objectives. There are several reasons why you should define and measure success.
 
-- **Demonstrate progress:** A key element of clear success criteria is the ability to acknowledge progress and achievements. Good measures of success demonstrate a clear return on investment (ROI) in BI initiatives. While ROI can be challenging to measure, doing so drives motivation and allows leadership to acknowledge the realized business value of the BI strategy.
-- **Continuous improvement:** Clear success criteria help you to (re-)evaluate your strategy. This evaluation should motivate your iterative tactical planning, together with user feedback and changes to the business or technology.
-- **Corrective action:** A good definition of success is backed by measurable outcomes. Monitoring these measurable outcomes during operations can inform specific decisions and actions to adjust tactical planning, or intervene if you're heading off track.
+- **Demonstrate progress**: A key element of clear success criteria is the ability to acknowledge progress and achievements. Good measures of success demonstrate a clear return on investment (ROI) in BI initiatives. While ROI can be challenging to measure, doing so drives motivation and allows leadership to acknowledge the realized business value of the BI strategy.
+- **Continuous improvement**: Clear success criteria help you to (re-)evaluate your strategy. This evaluation should motivate your iterative tactical planning, together with user feedback and changes to the business or technology.
+- **Corrective action**: A good definition of success is backed by measurable outcomes. Monitoring these measurable outcomes during operations can inform specific decisions and actions to adjust tactical planning, or intervene if you're heading off track.
 
 There are two ways to track measurable achievement. In this article, we discuss key results, which are part of the OKR framework (objectives and key results), but organizations also use KPIs (key performance indicators), or a combination of OKRs together with KPIs. Both approaches are equally valid. What's most important is that you find an approach to measure progress toward your strategic objectives that works for you.
 
-- **Key results:** Evaluate measurable success criteria that track progress toward strategic objectives.
-- **KPIs:** Evaluate the success of a particular activity against a target. While KPIs typically measure performance against goals, key results measure outcomes. You can use KPIs together with OKRs.
+- **Key results**: Evaluate measurable success criteria that track progress toward strategic objectives.
+- **KPIs**: Evaluate the success of a particular activity against a target. While KPIs typically measure performance against goals, key results measure outcomes. You can use KPIs together with OKRs.
 
 > [!NOTE]
 > Your measures of success should be closely aligned with business objectives. Ensure that your success criteria aren't specific to technical tasks.
@@ -185,13 +185,13 @@ When you use measure progress toward your strategic objectives, you should regul
 
 Here are some general considerations to help you successfully measure and monitor key results and KPIs.
 
-- **Report your indicators:** Create reporting solutions for your indicators that let you effectively monitor them. For instance, you can use [Microsoft Viva Goals OKRs](/viva/goals/intro-to-ms-viva-goals) or [scorecards and metrics in Power BI](../create-reports/service-goals-introduction.md) to measure and track progress.
-- **Automate data collection:** If possible, ensure that data for indicators aren't collected manually. Find efficient ways to streamline and automate the collection of the data so that it's current, accurate, and reliable.
-- **Track change:** Visualize the current indicator value, but also the trend over time. Progress is best demonstrated as a gradual improvement. If the indicator exhibits high volatility or variance, consider using a moving average to better illustrate the trend.
-- **Assign an owner:** Ensure that a team or individual is responsible for measuring the indicator and keeping its data current.
-- **Define an acceptable range:** Establish targets or an acceptable range of values to assign status (like _on track_ or _off track_) to the indicator. When values fall outside the target or range, it should prompt someone to investigate or take corrective action.
-- **Set up data-driven alerts:** Set up automated alerts that notify key teams or individuals, for example, [by using Power Automate](/power-bi/collaborate-share/service-flow-integration). That way, timely action can be taken when the indicator is off track.
-- **Define actions and interventions:** Clearly describe how you'll use this information to take action, either to address issues or to justify moving to the next step in your BI strategy.
+- **Report your indicators**: Create reporting solutions for your indicators that let you effectively monitor them. For instance, you can use [Microsoft Viva Goals OKRs](/viva/goals/intro-to-ms-viva-goals) or [scorecards and metrics in Power BI](../create-reports/service-goals-introduction.md) to measure and track progress.
+- **Automate data collection**: If possible, ensure that data for indicators aren't collected manually. Find efficient ways to streamline and automate the collection of the data so that it's current, accurate, and reliable.
+- **Track change**: Visualize the current indicator value, but also the trend over time. Progress is best demonstrated as a gradual improvement. If the indicator exhibits high volatility or variance, consider using a moving average to better illustrate the trend.
+- **Assign an owner**: Ensure that a team or individual is responsible for measuring the indicator and keeping its data current.
+- **Define an acceptable range**: Establish targets or an acceptable range of values to assign status (like _on track_ or _off track_) to the indicator. When values fall outside the target or range, it should prompt someone to investigate or take corrective action.
+- **Set up data-driven alerts**: Set up automated alerts that notify key teams or individuals, for example, [by using Power Automate](../collaborate-share/service-flow-integration.md). That way, timely action can be taken when the indicator is off track.
+- **Define actions and interventions**: Clearly describe how you'll use this information to take action, either to address issues or to justify moving to the next step in your BI strategy.
 
 > [!IMPORTANT]
 > Ensure that your chosen indicators genuinely reflect your desired outcomes. Regularly evaluate these indicators to survey for avoid incentivizing counterproductive behaviors. Consider Goodhart's Law, which states: _When a measure becomes a target, it ceases to be a good measure_.
@@ -253,10 +253,10 @@ Here are some examples of implementation key results that you could define for a
 **Checklist** - When identifying your BI key results, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Define how you'll measure success:** Decide if you'll use key results, KPIs, or a combination of both.
-> - **Identify adoption key results:** Identify key results that will help you realize your data culture vision and achieve the BI objectives for organizational adoption.
-> - **Identify governance key results:** Identify key results that will help you balance user enablement and risk mitigation.
-> - **Identify implementation key results:** Identify key results to either support defined adoption and governance key results or specific business data needs. Classify implementation key results as either initiatives or solutions.
+> - **Define how you'll measure success**: Decide if you'll use key results, KPIs, or a combination of both.
+> - **Identify adoption key results**: Identify key results that will help you realize your data culture vision and achieve the BI objectives for organizational adoption.
+> - **Identify governance key results**: Identify key results that will help you balance user enablement and risk mitigation.
+> - **Identify implementation key results**: Identify key results to either support defined adoption and governance key results or specific business data needs. Classify implementation key results as either initiatives or solutions.
 
 ## Step 3: Define solutions and initiatives
 
@@ -266,28 +266,27 @@ Once you've defined your key results and you're sure that you can achieve them, 
 
 The solutions and initiatives you'll implement have two purposes. They:
 
-- **Support adoption and governance key results:** Describe the solutions you build and initiatives you enact to achieve your adoption and governance key results. These solutions help you work toward improving [organizational adoption](fabric-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [user adoption](fabric-adoption-roadmap-maturity-levels.md#user-adoption-stages).
-- **Support business data needs:** Describe specific solutions you'll build to address the business data needs and priorities (such as those that are time-sensitive, quick wins, or high-impact). With these solutions, you should aim to achieve or improve [solution adoption](fabric-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
+- **Support adoption and governance key results**: Describe the solutions you build and initiatives you enact to achieve your adoption and governance key results. These solutions help you work toward improving [organizational adoption](fabric-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [user adoption](fabric-adoption-roadmap-maturity-levels.md#user-adoption-stages).
+- **Support business data needs**: Describe specific solutions you'll build to address the business data needs and priorities (such as those that are time-sensitive, quick wins, or high-impact). With these solutions, you should aim to achieve or improve [solution adoption](fabric-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
 
 You can implement either solutions or initiatives.
 
-- **Solutions:** Systems or tools built to directly address specific business problems or data needs for users. Examples of solutions include:
+- **Solutions**: Systems or tools built to directly address specific business problems or data needs for users. Examples of solutions include:
   - An actionable [monitoring solution](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) that allows governance teams to follow up on governance and adoption key results.
   - A unified data lakehouse that delivers business-ready data for consumption by content creators planning other downstream analytical solutions.
   - A Power BI app that addresses specific business data needs for content consumers.
-- **Initiatives:** Processes, training resources, and policies that support your key results. Initiatives are typically non-technical instruments that support users or processes. Examples of initiatives include:
+- **Initiatives**: Processes, training resources, and policies that support your key results. Initiatives are typically non-technical instruments that support users or processes. Examples of initiatives include:
   - Processes for self-service content creators so that they can request access to tools, data, or training.
   - Governance [data policies](fabric-adoption-roadmap-governance.md#data-policies) that describe how certain data should be accessed and used.
   - A curated, moderated [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for the user [community of practice](fabric-adoption-roadmap-community-of-practice.md).
 
-
 Here are some examples of BI objectives together with related key results and solutions or initiatives to achieve them for a specific planning period.
 
-| **Example objective** | **Example key results** | **Example initiatives or solutions** |
+| Example objective | Sample key results | Example initiatives or solutions |
 | --- | --- | --- |
-| Improve executive adoption and support of BI to promote a healthier data culture. | &bull;&nbsp;Identify and engage one or more candidates for an executive sponsor. <br/><br/>&bull;&nbsp;Conduct three executive-led town hall or Q&A meetings about BI accomplishments and planned activities. <br/><br/>&bull;&nbsp;Hold three targeted mentoring sessions with the executive sponsor to improve their knowledge and understanding about relevant BI topics, and allowing them to lead by example. | &bull;&nbsp;**Create a communication plan:** Create a communication plan with the Center of Excellence (COE), which will involve distributing a regular newsletter from the executive sponsor to share updates, announcements, and highlights from BI solutions and initiatives. <br/><br/>&bull;&nbsp;**Conduct an executive feedback survey:** Measure executive endorsement and sentiment with a brief survey of executives, including (but not limited to) the executive sponsor. The survey asks for quantitative feedback about the effectiveness, usability, and relevance of BI solutions. |
-| Achieve a better balance of user enablement and risk mitigation in BI governance. | &bull;&nbsp;Reduce the ratio of Power BI semantic models to reports by a certain percentage. This key result measures whether semantic models are reused for ad hoc analysis and reporting, or whether data is duplicated across models—a ratio close to one indicates that users might be creating a new semantic model for each report, which is a governance risk. <br/><br/>&bull;&nbsp;Reduce the ratio of exports to views by a certain percentage. This key result measures how often users export data to files instead of using existing reports for their analysis—a ratio close to one indicates that users are regularly exporting data, which is a governance risk. | &bull;&nbsp;**Perform a tenant-wide audit:** An initial tenant-wide audit to gain visibility on general usage trends and anomalies. <br/><br/>&bull;&nbsp;**Create a tenant-wide monitoring solution:** Track critical solutions and risk-creating behaviors.  <br/><br/>&bull;&nbsp;**Conduct targeted training of the top exporters:** Identify and engage the people in the user community who export data the most frequently, and offer them several hours of training or mentorship in how to use Power BI reports or analyze in Excel pivot tables. |
-| Improve data-driven decision making in sales teams so that users are more effective at using Power BI to make sales decisions and take actions.| &bull;&nbsp;Have a certain number of users complete a data literacy training with a passing score. <br/><br/>&bull;&nbsp;Dedicate an average of four hours of the COE per week to mentorship activities of the user community with open office hours.  | &bull;&nbsp;**Run a data literacy training program:** Improve the data competences of the sales community. <br/><br/>&bull;&nbsp;**Hold weekly office hours:** Allow users to ask questions about central reports, or request guidance for their decentralized self-service BI solutions. <br/><br/>&bull;&nbsp;**Create a certified, centralized semantic model:** Deliver daily sales data, which sales teams can connect to in order to answer their questions and perform personal or team BI. |
+| Improve executive adoption and support of BI to promote a healthier data culture. | &bull;&nbsp;Identify and engage one or more candidates for an executive sponsor. <br/><br/>&bull;&nbsp;Conduct three executive-led town hall or Q&A meetings about BI accomplishments and planned activities. <br/><br/>&bull;&nbsp;Hold three targeted mentoring sessions with the executive sponsor to improve their knowledge and understanding about relevant BI topics, and allowing them to lead by example. | &bull;&nbsp;**Create a communication plan**: Create a communication plan with the Center of Excellence (COE), which will involve distributing a regular newsletter from the executive sponsor to share updates, announcements, and highlights from BI solutions and initiatives. <br/><br/>&bull;&nbsp;**Conduct an executive feedback survey**: Measure executive endorsement and sentiment with a brief survey of executives, including (but not limited to) the executive sponsor. The survey asks for quantitative feedback about the effectiveness, usability, and relevance of BI solutions. |
+| Achieve a better balance of user enablement and risk mitigation in BI governance. | &bull;&nbsp;Reduce the ratio of Power BI semantic models to reports by a certain percentage. This key result measures whether semantic models are reused for ad hoc analysis and reporting, or whether data is duplicated across models—a ratio close to one indicates that users might be creating a new semantic model for each report, which is a governance risk. <br/><br/>&bull;&nbsp;Reduce the ratio of exports to views by a certain percentage. This key result measures how often users export data to files instead of using existing reports for their analysis—a ratio close to one indicates that users are regularly exporting data, which is a governance risk. | &bull;&nbsp;**Perform a tenant-wide audit**: An initial tenant-wide audit to gain visibility on general usage trends and anomalies. <br/><br/>&bull;&nbsp;**Create a tenant-wide monitoring solution**: Track critical solutions and risk-creating behaviors.  <br/><br/>&bull;&nbsp;**Conduct targeted training of the top exporters**: Identify and engage the people in the user community who export data the most frequently, and offer them several hours of training or mentorship in how to use Power BI reports or analyze in Excel pivot tables. |
+| Improve data-driven decision making in sales teams so that users are more effective at using Power BI to make sales decisions and take actions. | &bull;&nbsp;Have a certain number of users complete a data literacy training with a passing score. <br/><br/>&bull;&nbsp;Dedicate an average of four hours of the COE per week to mentorship activities of the user community with open office hours.  | &bull;&nbsp;**Run a data literacy training program**: Improve the data competences of the sales community. <br/><br/>&bull;&nbsp;**Hold weekly office hours**: Allow users to ask questions about central reports, or request guidance for their decentralized self-service BI solutions. <br/><br/>&bull;&nbsp;**Create a certified, centralized semantic model**: Deliver daily sales data, which sales teams can connect to in order to answer their questions and perform personal or team BI. |
 
 ### Create a backlog of initiatives and solutions
 
@@ -316,10 +315,10 @@ Once you've defined key results, solutions, and initiatives, you should get appr
 **Checklist** - When considering your desired future state, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Create a list of initiatives and solutions to implement:** These initiatives and solutions should support one or more of your key results.
-> - **Prioritize the solution backlog:** Rank the list of initiatives and solutions from highest to lowest priority, so that you know what must be done first.
-> - **Define initial planning for each implementation:** Define the initial estimated scope, timelines, and responsible teams or individuals for implementing these intiatives or solutions.
-> - **Validate tactical planning:** Share the outcomes of tactical planning with executives and key stakeholders. Use feedback to revise tactical planning, where necessary.
+> - **Create a list of initiatives and solutions to implement**: These initiatives and solutions should support one or more of your key results.
+> - **Prioritize the solution backlog**: Rank the list of initiatives and solutions from highest to lowest priority, so that you know what must be done first.
+> - **Define initial planning for each implementation**: Define the initial estimated scope, timelines, and responsible teams or individuals for implementing these intiatives or solutions.
+> - **Validate tactical planning**: Share the outcomes of tactical planning with executives and key stakeholders. Use feedback to revise tactical planning, where necessary.
 
 ## Step 4: Periodically revise the plan
 
@@ -337,10 +336,10 @@ We recommend that you conduct tactical planning at regular intervals with evalua
 
 The diagram depicts how you can iteratively revise the BI strategy to achieve incremental progress.
 
-| **Item** | **Description** |
+| Item | Description |
 | :-: | --- |
-| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | **BI strategic planning:** Define and reassess your BI focus areas and objectives every 12-18 months. In between strategic planning sessions, strive for incremental progress toward your strategic objectives by achieving your key results defined in tactical planning. Additionally, in between strategic planning, you should collect feedback to inform future strategic decision-making. |
-| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | **BI tactical planning:** Identify and reevaluate your key results quarterly, or every 1-3 months. In between, you implement these tactical plans by building BI solutions and launching BI initiatives. Additionally, in between tactical planning, you should collect feedback and monitor your KPIs or OKRs to inform future tactical decision-making. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | **BI strategic planning**: Define and reassess your BI focus areas and objectives every 12-18 months. In between strategic planning sessions, strive for incremental progress toward your strategic objectives by achieving your key results defined in tactical planning. Additionally, in between strategic planning, you should collect feedback to inform future strategic decision-making. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | **BI tactical planning**: Identify and reevaluate your key results quarterly, or every 1-3 months. In between, you implement these tactical plans by building BI solutions and launching BI initiatives. Additionally, in between tactical planning, you should collect feedback and monitor your KPIs or OKRs to inform future tactical decision-making. |
 
 Future key results and focus areas defined in your strategic and tactical planning are informed by using regular feedback and evaluation mechanisms, such as those described in the following sections.
 
@@ -348,9 +347,9 @@ Future key results and focus areas defined in your strategic and tactical planni
 
 Business key results regularly change, resulting in new business data needs and changing requirements. For this reason, your tactical planning must be flexible and remain well aligned with the business strategy. To enable this alignment, you can:
 
-- **Schedule business alignment meetings:** When conducting tactical planning, schedule strategic meetings with key business and data decision makers to assess what was done in the previous period. You should schedule these meetings to align with other key strategic business meetings. Discussions during these meetings provide an opportunity to revise strategic and tactical planning, and also to demonstrate and reflect upon progress.
-- **Review feedback and requests:** Feedback and requests from the user community is valuable input to reevaluate your BI strategy. Consider setting up a [communication hub](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#create-a-communication-hub), possibly with channels like _office hours_, or feedback forms to collect feedback.
-- **Couple tactical planning with project planning:** Tactical planning can be integrated with your project planning processes. For example, you might integrate tactical planning with your _agile planning_ processes. Agile planning is a project management approach that focuses on delivering value through iterative work cycles. Coupling tactical and agile planning helps to create a consistent, iterative structure around the operationalization of your BI strategy.
+- **Schedule business alignment meetings**: When conducting tactical planning, schedule strategic meetings with key business and data decision makers to assess what was done in the previous period. You should schedule these meetings to align with other key strategic business meetings. Discussions during these meetings provide an opportunity to revise strategic and tactical planning, and also to demonstrate and reflect upon progress.
+- **Review feedback and requests**: Feedback and requests from the user community is valuable input to reevaluate your BI strategy. Consider setting up a [communication hub](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#create-a-communication-hub), possibly with channels like _office hours_, or feedback forms to collect feedback.
+- **Couple tactical planning with project planning**: Tactical planning can be integrated with your project planning processes. For example, you might integrate tactical planning with your _agile planning_ processes. Agile planning is a project management approach that focuses on delivering value through iterative work cycles. Coupling tactical and agile planning helps to create a consistent, iterative structure around the operationalization of your BI strategy.
 
 > [!TIP]
 > Creating structured processes to handle changing business key results can help to avoid reactive or spontaneous planning, especially to meet new, urgent business requests.
@@ -367,10 +366,10 @@ Here are some examples of technological changes that can affect your tactical pl
 
 To mitigate impact and capitalize on opportunities of change, you should regularly examine the technological context of your business. Consider the following points about responding to technological change.
 
-- **Follow updates:** Keep current with new developments and features in [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Read the monthly community blog posts and keep pace with announcements at conference events.
-- **Document key changes:** Ensure that any impactful changes are included in your tactical planning, and include relevant references. Call attention to any changes that have a direct or urgent impact on business data needs or BI key results.
-- **Decide how to handle features in preview:** Clarify how you'll use new preview features that aren't yet generally available. Identify any preview features or tools that have a strategic impact in your organization or help you achieve strategic key results. Consider how you'll benefit from these preview features while identifying and mitigating any potential risks or limitations.
-- **Decide how to handle new third-party and community tools:** Clarify your policy about third-party and community tools. If these tools are allowed, describe a process to identify new tools that have a strategic impact in your organization or help you achieve strategic key results. Consider how you'll benefit from these tools while identifying and mitigating any potential risks or limitations.
+- **Follow updates**: Keep current with new developments and features in [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Read the monthly community blog posts and keep pace with announcements at conference events.
+- **Document key changes**: Ensure that any impactful changes are included in your tactical planning, and include relevant references. Call attention to any changes that have a direct or urgent impact on business data needs or BI key results.
+- **Decide how to handle features in preview**: Clarify how you'll use new preview features that aren't yet generally available. Identify any preview features or tools that have a strategic impact in your organization or help you achieve strategic key results. Consider how you'll benefit from these preview features while identifying and mitigating any potential risks or limitations.
+- **Decide how to handle new third-party and community tools**: Clarify your policy about third-party and community tools. If these tools are allowed, describe a process to identify new tools that have a strategic impact in your organization or help you achieve strategic key results. Consider how you'll benefit from these tools while identifying and mitigating any potential risks or limitations.
 
 ### Proceed with solution planning
 
@@ -381,11 +380,11 @@ A key outcome of tactical planning is a prioritized backlog of key solutions and
 **Checklist** - When planning to revise your strategic and tactical planning, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Schedule periodic planning workshops:** At the end of each planning period, schedule workshops to assess progress and review the milestones attained.
-> - **Schedule regular workshops to re-align with business strategy:** Use workshops to align the BI strategy with the business strategy by having a cross-functional discussion between the working team and key stakeholders.
-> - **Create mechanisms for assessment and feedback:** Ensure that feedback relevant to the BI strategy is documented. Create forms, or encourage key stakeholders to use the communication hub to provide feedback and submit new requests.
-> - **Assign a team to own feedback:** Ensure that there's a team that has clear ownership of user feedback and requests. This team should respond to users to acknowledge their requests or request more detail.
-> - **Create a schedule to review requests:** Review feedback regularly, like every week. Identify priority requests before they become urgent and disrupt existing planning. Clearly and transparently communicate any rejected requests to users. Propose alternatives and workarounds so that users can continue their work without disruption.
+> - **Schedule periodic planning workshops**: At the end of each planning period, schedule workshops to assess progress and review the milestones attained.
+> - **Schedule regular workshops to re-align with business strategy**: Use workshops to align the BI strategy with the business strategy by having a cross-functional discussion between the working team and key stakeholders.
+> - **Create mechanisms for assessment and feedback**: Ensure that feedback relevant to the BI strategy is documented. Create forms, or encourage key stakeholders to use the communication hub to provide feedback and submit new requests.
+> - **Assign a team to own feedback**: Ensure that there's a team that has clear ownership of user feedback and requests. This team should respond to users to acknowledge their requests or request more detail.
+> - **Create a schedule to review requests**: Review feedback regularly, like every week. Identify priority requests before they become urgent and disrupt existing planning. Clearly and transparently communicate any rejected requests to users. Propose alternatives and workarounds so that users can continue their work without disruption.
 
 ## Related content
 

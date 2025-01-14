@@ -124,7 +124,7 @@ In the following video, watch Rien add total labels to a stacked chart, and then
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HrRQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=107a4025-499e-4be5-9c89-f57715c07332]
 
 1. Open the **District Monthly Sales** report page and select the **Last Year Sales and This Year Sales by FiscalMonth** area chart.
 
@@ -155,7 +155,7 @@ In this video, watch Rien change layer order behavior, and then follow the steps
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=09ec9caf-e576-476f-8214-3275803f424f]
 
 1. Add a new report page by selecting the yellow plus sign.
 

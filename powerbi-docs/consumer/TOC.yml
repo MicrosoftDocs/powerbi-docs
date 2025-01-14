@@ -78,16 +78,6 @@
       href: end-user-drill.md
     - name: "How to use an ArcGIS map in Power BI"
       href: end-user-arcgis.md
-  - name: Metrics hub
-    items: 
-    - name: "Get started with metrics"
-      href: get-started-metrics.md
-    - name: "Create and manage metric sets"
-      href: create-metric-sets.md
-    - name: "View and explore metrics"
-      href: view-explore-metrics.md
-    - name: "Use and monitor metrics"
-      href: use-monitor-metrics.md
   - name: Paginated reports in Power BI
     items: 
     - name: "Paginated reports"

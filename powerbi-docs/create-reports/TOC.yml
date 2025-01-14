@@ -60,8 +60,6 @@
       href: sample-competitive-marketing-analysis.md
     - name: Sales and Marketing sample
       href: sample-sales-and-marketing.md
-    - name: Sales & Marketing sample template app
-      href: sample-sales-marketing-template-app.md
     - name: Supplier Quality Analysis sample
       href: sample-supplier-quality.md
     - name: Download the Financial Sample workbook
@@ -116,8 +114,6 @@
           href: copilot-create-desktop-report.md
         - name: Create report subscriptions with Copilot summaries 
           href: copilot-summaries-in-subscriptions.md
-        - name: Ask Copilot questions about data in the model
-          href: copilot-pane-summarize-report-data.md
         - name: Write prompts for Copilot report pages
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page
@@ -527,43 +523,59 @@
     - name: Use Q&A with live connections
       href: service-q-and-a-direct-query.md
   - name: Metrics
-    items: 
-    - name: Get started with metrics
-      href: service-goals-introduction.md
-    - name: Create scorecards and manual metrics
-      href: service-goals-create.md
-    - name: Create connected metrics
-      href: service-goals-create-connected.md
-    - name: Create submetrics
-      href: service-metrics-submetrics.md
-    - name: Create linked metrics
-      href: service-metrics-linked-metrics.md
-    - name: Create custom statuses
-      href: service-goals-custom-status.md
-    - name: Create automated status rules
-      href: service-metrics-status-rules.md
-    - name: Stay on top of your metrics
-      href: service-goals-check-in.md        
-    - name: Create email subscriptions for metrics
-      href: service-metrics-subscriptions.md        
-    - name: Follow your metrics
-      href: service-metrics-follow.md        
-    - name: Set metric-level permissions
-      href: service-goals-set-permissions.md
-    - name: Arrange metrics and columns in scorecards
-      href: service-goals-move.md
-    - name: Metrics and Power Automate
-      href: service-goals-power-automate.md
-    - name: Create and add scorecards to reports
-      href: ../visuals/power-bi-visualization-scorecard-visual.md 
-    - name: Hierarchies in scorecards
+    items:
+    - name: Metrics hub
       items: 
-      - name: Get started with hierarchies
-        href: service-metrics-get-started-hierarchies.md 
-      - name: Scenarios for using hierarchies
-        href: service-metrics-hierarchies-scenarios.md 
-      - name: View hierarchies in scorecards
-        href: service-metrics-view-hierarchies.md 
+      - name: "Get started with metrics"
+        href: get-started-metrics.md
+      - name: "Create and manage metric sets"
+        href: create-metric-sets.md
+      - name: "View and explore metrics"
+        href: view-explore-metrics.md
+      - name: "Use and monitor metrics"
+        href: use-monitor-metrics.md
+      - name: Metrics and Power Automate
+        href: service-metrics-power-automate.md
+    - name: Scorecards
+      items: 
+      - name: Get started with goals
+        href: service-goals-introduction.md
+      - name: Create connected goals
+        href: service-goals-create-connected.md
+      - name: Create scorecards and manual goals
+        href: service-goals-create.md
+      - name: Create submetrics
+        href: service-goals-subgoals.md
+      - name: Create linked metrics
+        href: service-metrics-linked-metrics.md
+      - name: Create automated status rules
+        href: service-goals-status-rules.md
+      - name: Create custom statuses
+        href: service-goals-custom-status.md 
+      - name: Stay on top of your goals
+        href: service-goals-check-in.md        
+      - name: Create email subscriptions for metrics
+        href: service-goals-subscriptions.md        
+      - name: Follow your goals
+        href: service-goals-follow.md        
+      - name: Set goal-level permissions
+        href: service-goals-set-permissions.md
+      - name: Arrange goals and columns in scorecards
+        href: service-goals-move.md
+      - name: Create linked goals
+        href: service-goals-linked-goals.md
+      - name: Create automated status rules
+        href: service-goals-status-rules.md
+      - name: Create and add scorecards to reports
+        href: ../visuals/power-bi-visualization-scorecard-visual.md 
+      - name: Hierarchies in scorecards
+        items: 
+        - name: Get started with hierarchies
+          href: service-goals-get-started-hierarchies.md 
+        - name: Scenarios for using hierarchies
+          href: service-goals-hierarchies-scenarios.md 
+        - name: View hierarchies in scorecards
+          href: service-goals-view-hierarchies.md 
   - name: Dashboards
     items: 
     - name: Intro to dashboards
@@ -834,8 +846,10 @@
           href: ../paginated-reports/report-design/add-remove-margins-from-chart-report-builder.md
         - name: Add empty points to a chart
           href: ../paginated-reports/report-design/visualizations/add-empty-points-chart-report-builder.md
-        - name: Add a moving average to a chart
+        - name: About adding a moving average to a chart
           href: ../paginated-reports/report-design/visualizations/add-moving-average-chart-report-builder.md
+        - name: Add a calculated moving average to a series on a chart
+          href: ../paginated-reports/report-design/visualizations/add-calculated-moving-average-chart-report-builder.md
         - name: Add or delete an indicator in a report
           href: ../paginated-reports/report-design/visualizations/add-delete-indicator-report-builder.md
         - name: Show ToolTips on a series

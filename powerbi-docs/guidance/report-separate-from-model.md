@@ -1,6 +1,6 @@
 ---
-title: Separate reports from models in Power BI Desktop
-description: Guidance for separating reports from models in Power BI Desktop.
+title: "Separate reports from models in Power BI Desktop"
+description: "Guidance for separating reports from models in Power BI Desktop."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 04/11/2020
+ms.date: 12/30/2024
 ---
 
 # Separate reports from models in Power BI Desktop
@@ -66,5 +66,5 @@ For more information related to this article, check out the following resources:
 - [Connect to semantic model in the Power BI service from Power BI Desktop](../connect-data/desktop-report-lifecycle-datasets.md)
 - [View related content in the Power BI service](../consumer/end-user-related.md)
 - [Data lineage](../collaborate-share/service-data-lineage.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

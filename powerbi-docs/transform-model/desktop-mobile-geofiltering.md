@@ -23,7 +23,7 @@ For example, say you're a sales manager that travels to meet customers, and you 
 
 ## Identify geographic data in your report
 
-1. In Power BI Desktop, switch to the Data view :::image type="icon" source="media/desktop-mobile-geofiltering/pbi_desktop_data_icon.png"::: .
+1. In Power BI Desktop, switch to the Table view :::image type="icon" source="media/desktop-mobile-geofiltering/pbi_desktop_data_icon.png"::: .
 
 2. Select a column with geographic data, for example, a City column.
 

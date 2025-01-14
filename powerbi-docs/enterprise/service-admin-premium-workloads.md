@@ -93,7 +93,7 @@ Use the settings in the table below to control workload behavior. Settings with 
 | **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to semantic models with client applications and tools](service-premium-connect-tools.md). |
 | **[Max Intermediate Row Set Count](#max-intermediate-row-set-count)** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. The upper limit might need to be further constrained based on what the datasource supports. |
 | **[Max Offline Semantic model Size (GB)](#max-offline-semantic-model-size)** | The maximum size of the offline semantic model in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
-| **[Max Result Row Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is 2147483647, and the allowable range is between 100000 and 2147483647. |
+| **[Max Result Row Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is 2147483647, and the allowable range is between 10000 and 2147483647. |
 | **[Query Memory Limit (%)](#query-memory-limit)** | The maximum percentage of available memory in the workload that can be used for executing an MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
 | **[Query Timeout (seconds)](#query-timeout)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't time out. |
 | **[Automatic page refresh](#automatic-page-refresh)** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on fixed intervals. |
@@ -265,14 +265,10 @@ The paginated reports workload is enabled automatically, and is always enabled.
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Power BI Premium](service-premium-what-is.md)
+* [Power BI Premium](service-premium-what-is.md)
 
->[!div class="nextstepaction"]
->[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
+* [Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
 
->[!div class="nextstepaction"]
->[What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+* [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
->[!div class="nextstepaction"]
->[Automatic page refresh in Power BI Desktop (preview)](../create-reports/desktop-automatic-page-refresh.md)
+* [Automatic page refresh in Power BI Desktop (preview)](../create-reports/desktop-automatic-page-refresh.md)

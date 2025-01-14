@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/14/2024
+ms.date: 11/21/2024
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -43,10 +43,6 @@ Power BI Premium is a tenant-level Microsoft 365 subscription, available in two 
 |**Commitment** |Monthly or yearly                 |Yearly   |
 |**Billing**    |Monthly                           |Monthly  |
 |**Additional information**    |Includes a license to install [Power BI Report Server](../report-server/get-started.md) on-premises |EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.         |
-
-## Purchasing
-
-Power BI Premium subscriptions are purchased by administrators in the Microsoft 365 admin center. Specifically, only global administrators or billing administrators can purchase SKUs. When purchased, the tenant receives a corresponding number of v-cores to assign to capacities, known as *v-core pooling*. For example, purchasing a P3 SKU provides the tenant with 32 v-cores. To learn more, see [How to purchase Power BI Premium](/power-bi/enterprise).
 
 ## Workspaces
 
@@ -86,7 +82,7 @@ Semantic model operations such as queries are subject to individual memory limit
 
 * **Loading the semantic model** - The first action is loading the semantic model into the memory.
 
-* **Refreshing the semantic model** - The second action is refreshing the semantic model after it's loaded into the memory. The refresh operation will cause the memory used by the semantic model to double. The required memory doubles because the original copy of data is still available for active queries, while another copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce.
+* **Refreshing the semantic model** - The second action is refreshing the semantic model after it's loaded into the memory. The refresh operation will cause the memory used by the semantic model to more than double, because in addition to the memory used by the refresh operation, the original copy of data remains available for active queries while another copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint is reduced.
 
 * **Interacting with the report** - The third action is caused by the user's interaction with the report. During the semantic model refresh, report interactions will execute DAX queries. Each DAX query consumes a certain amount of temporary memory required to produce the results. Each query may consume a different amount of memory. The memory used to query the semantic model is added to the memory needed to load the semantic model, and refresh it.
 
@@ -165,11 +161,8 @@ The following known limitations currently apply to Power BI Premium.
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Power BI Premium Per User](service-premium-per-user-faq.yml)
+* [Power BI Premium Per User](service-premium-per-user-faq.yml)
 
-> [!div class="nextstepaction"]
-> [Managing Premium capacities](service-premium-capacity-manage.md)
+* [Managing Premium capacities](service-premium-capacity-manage.md)
 
-> [!div class="nextstepaction"]
-> [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)
+* [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)

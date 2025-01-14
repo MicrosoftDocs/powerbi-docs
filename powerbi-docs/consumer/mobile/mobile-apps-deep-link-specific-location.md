@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/01/2024
+ms.date: 12/02/2024
 ---
 # Create a link to a specific location in the Power BI mobile apps
 
@@ -57,14 +57,14 @@ The query parameters are:
 |Parameter  | Value  | Description |
 |---------|---------|---------|
 |**action** (mandatory)    | OpenApp<br>OpenReport<br>OpenDashboard<br>OpenTile | |
-|**appId**| 36 character guid | Must be specified if you want to open a report or dashboard that is part of an app.<br>Example: **appId=baf4b16d-b5bd-4360-8a3a-51d11242c09b** |
-|**groupObjectId**| 36 character guid | Specifies the workspace when you want to open a report or dashboard that isn't part of My Workspace.<br>Example: **groupObjectId=9a3841c6-74b3-46f1-85fd-bdd78f27b30e** |
-| **dashboardObjectId** | 36 character guid | Dashboard object ID (if action is OpenDashboard or OpenTile)<br>Example: **dashboardObjectId=033bb049-5b68-4392-b3ef-ae9a43738a4a** |
-| **reportObjectId** | 36 character guid | Report object ID (if action is OpenReport)<br>Example: **reportObjectId=6114cec7-78e1-4926-88ff-0bc5338452cf** |
-| **tileObjectId** | 36 character guid | Tile object ID (if action is OpenTile)<br>Example: **tileObjectId=a845dcb8-a289-43a8-94ea-67a8c0a068f9** |
+|**appId**| 36 character guid | Must be specified if you want to open a report or dashboard that is part of an app.<br>Example: **appId=00001111-aaaa-2222-bbbb-3333cccc4444** |
+|**groupObjectId**| 36 character guid | Specifies the workspace when you want to open a report or dashboard that isn't part of My Workspace.<br>Example: **groupObjectId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb** |
+| **dashboardObjectId** | 36 character guid | Dashboard object ID (if action is OpenDashboard or OpenTile)<br>Example: **dashboardObjectId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb** |
+| **reportObjectId** | 36 character guid | Report object ID (if action is OpenReport)<br>Example: **reportObjectId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb** |
+| **tileObjectId** | 36 character guid | Tile object ID (if action is OpenTile)<br>Example: **tileObjectId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb** |
 | **reportPage** | string | Page name if you want to open a specific report page. (if action is OpenReport)<br>Example: **reportPage=ReportSection6**  |
-| **bookmarkGuid** | 36 character guid | Bookmark ID, if you want to open a specific bookmarked view. (if action is OpenReport)<br>Example: **bookmarkGuid=18e8872f-6db8-4cf8-8298-3b2ab254cc7f**<br>**Note**: Values of the format *BookmarkXXXXXXXXXXXXXXXXXXX* aren't supported. |
-| **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization)<br>Example: **ctid=5367c770-09d0-4110-bf6a-d760cb5ef681** |
+| **bookmarkGuid** | 36 character guid | Bookmark ID, if you want to open a specific bookmarked view. (if action is OpenReport)<br>Example: **bookmarkGuid=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb**<br>**Note**: Values of the format *BookmarkXXXXXXXXXXXXXXXXXXX* aren't supported. |
+| **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization)<br>Example: **aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb** |
 | **fullScreen** | Boolean | When true, opens the item in full screen mode. Supported for reports, scorecards, dashboards, and apps (if the app landing item is one of the supported items).<br>Example: **fullScreen=1** |
 
 >[!NOTE]
@@ -92,7 +92,7 @@ In the following examples, placeholders for the parameter values are highlighted
 
 For **apps, and for reports and dashboards that are part of an app**, the easiest way to get the link is to go to the app workspace and choose **Update app**. This opens the "publish app" experience. Open the permissions tab and expand the links section to see the links to the app and all its contents. You can use these links from outside Power BI to access the app and its contents directly.
 
-![Screenshot of Power BI publish app links highlighted.](./media/mobile-apps-links/mobile-link-copy-app-links.png)
+:::image type="content" source="./media/mobile-apps-deep-link-specific-location/mobile-link-copy-app-links.png" alt-text="Screenshot of app permissions tab showing how to find deep links to the app, report, and dashboard included in the app.":::
 
 #### Links to items that aren't in an app
 
@@ -132,11 +132,11 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To get the 36-character dashboard object ID, navigate to the specific dashboard in the Power BI service and extract it from the URL. For example, the dashboard object ID is highlighted in the following URL from the Power BI service:
 
-    https\://app.powerbi.com/groups/me/dashboards/**&lt;61b7e871-cb98-48ed-bddc-6572c921e270&gt;**
+    https\://app.powerbi.com/groups/me/dashboards/**&lt;aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb&gt;**
 
     If the dashboard isn't in My Workspace, you need to add the group object ID as well, either before or after the dashboard ID. The deep link shown has the group object ID parameter added after the dashboard object ID:
 
-    mspbi://app/OpenDashboard?DashboardObjectId=**e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=**8cc900cc-7339-467f-8900-fec82d748248**</code>
+    mspbi://app/OpenDashboard?DashboardObjectId=**aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb**&GroupObjectId=**cccccccc-2222-3333-4444-dddddddddddd**</code>
 
     Note the ampersand (&) between the two parameters.
 
@@ -148,11 +148,11 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To find the 36-character dashboard and tile object IDs, navigate to the specific dashboard in the Power BI service and open the tile in focus mode. In the example, the dashboard and tile IDs are highlighted.
 
-    https\://app.powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
+    https\://app.powerbi.com/groups/me/dashboards/**aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb**/tiles/**cccccccc-2222-3333-4444-dddddddddddd**/infocus
 
     To open to this tile directly then, the link would be:
 
-    mspbi://app/OpenTile?DashboardObjectId=3784f99f-b460-4d5e-b86c-b6d8f7ec54b7&TileObjectId=565f9740-5131-4648-87f2-f79c4cf9c5f5
+    mspbi://app/OpenTile?DashboardObjectId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb&TileObjectId=cccccccc-2222-3333-4444-dddddddddddd
 
     Note the ampersand (&) between the two parameters.
 
@@ -166,11 +166,11 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To find the 36-character report object ID, navigate to the specific report in the Power BI service. The following URL from the Power BI service illustrates the report ID you would need to extract.
 
-    https\://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+    https\://app.powerbi.com/groups/me/reports/**dddddddd-3333-4444-5555-eeeeeeeeeeee**
 
     If the report isn't in My Workspace, you need to add **&GroupObjectId=<36-character-group-id>** as well, either before or after the report ID. For example, in this case the deep link would be:
 
-    mspbi://app/OpenReport?ReportObjectId=**e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=**8cc900cc-7339-467f-8900-fec82d748248**
+    mspbi://app/OpenReport?ReportObjectId=**dddddddd-3333-4444-5555-eeeeeeeeeeee**&GroupObjectId=**ffffffff-5555-6666-7777-aaaaaaaaaaaa**
 
     Note the ampersand (&) between the two parameters.
 
@@ -182,13 +182,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     The report page is called **ReportSection**, followed by a number. Again, to find the values you need, open the report in the Power BI service, navigate to the specific report page, and extract the values you need from the URL. For example, the highlighted sections of this URL represent the values you would need to open to a specific report page:
 
-    https\://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**
-
-* **Open in full-screen mode (for Windows devices only)**
-
-    For Windows devices, you can also add the **openFullScreen** parameter to open specific report in full-screen mode. The following example opens a report page in full screen mode:
-
-    mspbi://app/OpenReport?ReportObjectId=500217de-50f0-4af1-b345-b81027224033&**openFullScreen=true**
+    https\://app.powerbi.com/groups/me/reports/**dddddddd-3333-4444-5555-eeeeeeeeeeee**/**ReportSection11**
 
 * **Add context** (optional)
 
@@ -196,7 +190,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     For example, the following example shows a link that includes a context parameter:
 
-    mspbi://app/OpenReport?ReportObjectId=**e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=**8cc900cc-7339-467f-8900-fec82d748248**&**context=SlackDeepLink**
+    mspbi://app/OpenReport?ReportObjectId=**dddddddd-3333-4444-5555-eeeeeeeeeeee**&GroupObjectId=**eeeeeeee-4444-5555-6666-ffffffffffff**&**context=SlackDeepLink**
 
 ## Use links inside Power BI
 

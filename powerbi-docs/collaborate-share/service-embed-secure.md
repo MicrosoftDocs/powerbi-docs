@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 07/16/2024
+ms.date: 01/07/2025
 LocalizationGroup: Share your work
 ---
 
@@ -52,7 +52,7 @@ In the Power BI service, you can share embedded reports with users who require a
 
 ## Licensing
 
-To view the embedded report, you need  either a Power BI Pro or Premium Per User (PPU) license. Or, the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md#capacities-and-skus).
+To view the embedded report, you need  either a Power BI Pro or Premium Per User (PPU) license. Or, the content needs to be in a workspace that's in a [Power BI Premium (EM or P SKU)](../enterprise/service-premium-what-is.md#capacities-and-skus) or a [Fabric (F SKU)](/fabric/enterprise/licenses#capacity) capacity.
 
 ## Customize your embed experience by using URL settings
 

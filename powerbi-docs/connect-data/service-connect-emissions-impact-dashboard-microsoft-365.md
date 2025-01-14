@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/19/2023
+ms.date: 12/03/2024
 LocalizationGroup: Connect to services
 no-loc: [Copilot]
 ---
@@ -242,7 +242,7 @@ Efficiencies associated with Microsoft cloud services include far more than impr
 
 **What is the assumed energy mix for the on-premises infrastructure?**
 
-By default, the Emissions Impact Dashboard for Microsoft 365 estimates on-premises emissions based on the mix of renewables and non-renewables on the grid. It's assumed that the on-premises datacenter would be located on the same grid as Microsoft's datacenters. However, for customers who purchase renewable electricity *in addition* to what's on the grid (for example, through Power Purchase Agreements), users can select the percentage of renewable electricity, and the Emissions Impact Dashboard for Microsoft 365 will adjust on-premises emissions accordingly. 
+By default, the Emissions Impact Dashboard for Microsoft 365 estimates on-premises emissions based on the mix of renewables and nonrenewables on the grid. It's assumed that the on-premises datacenter would be located on the same grid as Microsoft's datacenters. However, for customers who purchase renewable electricity *in addition* to what's on the grid (for example, through Power Purchase Agreements), users can select the percentage of renewable electricity, and the Emissions Impact Dashboard for Microsoft 365 will adjust on-premises emissions accordingly. 
 
 **When should I choose Low, Medium, or High for the efficiency of the on-premises infrastructure?**
 

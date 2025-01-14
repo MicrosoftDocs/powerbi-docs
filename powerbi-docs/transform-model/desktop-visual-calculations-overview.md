@@ -135,12 +135,16 @@ Many functions have an optional **:::no-loc text="Axis":::** parameter, which ca
 
 ## :::no-loc text="Reset":::
 
-Many functions have an optional **:::no-loc text="Reset":::** parameter that is available in visual calculations only. :::no-loc text="Reset"::: influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. The :::no-loc text="Reset"::: parameter is set to None by default, which means the visual calculation is never restarted. Reset expects there to be multiple levels on the axis. If there's only one level on the axis, you can use [PARTITIONBY](/dax/partitionby-function-dax). The following list describes the only valid values for the :::no-loc text="Reset"::: parameter:
+Many functions have an optional **:::no-loc text="Reset":::** parameter that is available in visual calculations only. :::no-loc text="Reset"::: influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. The :::no-loc text="Reset"::: parameter is set to None by default, which means the visual calculation is never restarted. Reset expects there to be multiple levels on the axis. If there's only one level on the axis, you can use [PARTITIONBY](/dax/partitionby-function-dax). The following list describes the valid values for the :::no-loc text="Reset"::: parameter:
 
 * **:::no-loc text="NONE":::** is the default value and doesn't reset the calculation.
 * **:::no-loc text="HIGHESTPARENT":::** resets the calculation when the value of the highest parent on the axis changes.
 * **:::no-loc text="LOWESTPARENT":::** resets the calculations when the value of the lowest parent on the axis changes.
-* A numerical value, referring to the fields on the axis, with the highest field being one.
+* A **numerical value**, referring to the fields on the axis. The behavior depends on the value provided:
+    - If zero or omitted, the calculation does not reset. Equivalent to **:::no-loc text="NONE":::**.
+    - If positive, identifies the column starting from the highest, independent of grain. 1 is equivalent to **:::no-loc text="HIGHESTPARENT":::**.
+    - If negative, the integer identifies the column starting from the lowest, relative to the current grain. -1 is equivalent to **:::no-loc text="LOWESTPARENT":::**.
+* A **field reference** as long as the field is on the visual.
 
 To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter.
 For example, the following visual calculations are equivalent and return the sum of *Sales Amount* that starts from 0 for every year:
@@ -152,6 +156,11 @@ RUNNINGSUM([Sales Amount], HIGHESTPARENT)
 ```dax
 RUNNINGSUM([Sales Amount], 1)
 ```
+
+```dax
+RUNNINGSUM([Sales Amount], [Year])
+```
+
 
 In contrast, the following visual calculations both return the sum of *Sales Amount* that starts from 0 for every Quarter:
 
@@ -257,6 +266,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 
 The following articles may be useful when learning and using visual calculations:
 
+* [Create visual calculations in Power BI Desktop (Training module)](/training/modules/power-bi-visual-calculations/)
 * [Using calculations options in Power BI Desktop](desktop-calculations-options.md)
 * [Create measures for data analysis in Power BI Desktop](desktop-measures.md)
 * [WINDOW DAX function](/dax/window-function-dax)

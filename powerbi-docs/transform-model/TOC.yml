@@ -27,6 +27,13 @@
       href: desktop-modeling-view.md  
     - name: "Work with DAX query view"
       href: dax-query-view.md
+    - name: "Quick measure suggestions"
+      href: quick-measure-suggestions.md
+    - name: "Copilot DAX query features"
+      href: dax-query-copilot-features.md
+    - name: "Use Copilot to write and explain DAX queries"
+    - name: "Quick measure suggestions"
+      href: quick-measure-suggestions.md
     - name: "Copilot DAX query features"
       href: dax-query-copilot-features.md
     - name: "Use Copilot to write and explain DAX queries"
@@ -99,6 +106,8 @@
       href: dataflows/dataflows-streaming.md
     - name: "Developing dataflows solutions"
       href: dataflows/dataflows-develop-solutions.md      
+    - name: "Connect to data created by Power Platform dataflows in Power BI Desktop"
+      href: desktop-connect-dataflows.md      
   - name: Log analytics
     items: 
     - name: "Using Azure Log Analytics in Power BI"
@@ -115,7 +124,7 @@
       href: desktop-create-and-manage-relationships.md
     - name: "Use the Analytics pane"
       href: desktop-analytics-pane.md
-    - name: "Work with Data view"
+    - name: "Work with Table view"
       href: ../connect-data/desktop-data-view.md
     - name: "Learn DAX basics in Power BI Desktop"
       href: desktop-quickstart-learn-dax-basics.md
