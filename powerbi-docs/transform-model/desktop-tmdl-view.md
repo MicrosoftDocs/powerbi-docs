@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/12/2025
+ms.date: 01/14/2025
 LocalizationGroup: Transform and shape data
 ---
 
@@ -92,7 +92,7 @@ In the event of a failure, an error notification is displayed to show that your 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-11.png" alt-text="Screenshot of failure banner in the code editor indicating changes weren't successful.":::
 
 > [!NOTE]
-> Execution of TMDL scripts with TMDL view only modifies the semantic model metadata, and does not refresh data. If your changes require a data refresh, such as changing a PowerQuery expression or calculated column expression, you must manually refresh the table or model for any such changes to take effect. Additionally, modifications like renaming partitions or altering calculated table or column expressions could result in the table data being cleared.
+> TMDL view modifies only the semantic model metadata, without refreshing data or affecting the report. If your changes require a data refresh, such as altering a PowerQuery expression or calculated column expression, you must manually refresh the table or model for the changes to take effect. Additionally, renaming a field in TMDL view may break visuals within the report that use that field.
 
 ## TMDL script tabs
 
