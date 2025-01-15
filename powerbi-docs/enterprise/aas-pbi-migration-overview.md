@@ -173,7 +173,7 @@ After a migration has successfully completed, you can then enable server redirec
 
 To enable redirection, on the **Azure Analysis Services to Power BI Premium** page, under **All migrations**, for the migration pair you want to redirect, in the **Server redirection enabled** column, set the slider to **Enable**.
 
-:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-enable-redirection.png" alt-text="Enable redirection.":::
+:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-enable-redirection2.png" alt-text="Enable redirection.":::
 
 Redirection can take some time. You can leave the page and continue to use Power BI while redirection is in process. To check the status of server redirection, select **More options**, and then select **Redirection status**.
 
