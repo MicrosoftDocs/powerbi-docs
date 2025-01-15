@@ -77,7 +77,7 @@ The second column represents a free user working with content in a workspace tha
 
 ### Feature list
 
-|Features   | Scenario 1: Fabric Free user who has no access to content hosted in Premium capacity.    | Scenario 2: Fabric Free user with **Viewer** permissions to content stored in Premium capacity.  |
+|Features   | Scenario 1: Free user who has no access to content hosted in Premium capacity.    | Scenario 2: Free user with **Viewer** permissions to content stored in Premium capacity.  |
 |---|---|---|
 |**Apps** 
 |Installs automatically | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)*|

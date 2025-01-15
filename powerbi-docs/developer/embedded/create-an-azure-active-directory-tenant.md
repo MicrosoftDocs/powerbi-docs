@@ -65,7 +65,7 @@ Create a master user to use as your master embedding account. You can think of t
 5. Sign up for Power BI with the user account that you created in step 4. Go to [powerbi.com](https://powerbi.microsoft.com/getting-started-with-power-bi/) and select **Try Power BI for free**.
 
     > [!div class="mx-imgBorder"]
-    >![Screenshot showing the Fabric free trial offer.](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
+    >![Screenshot showing the Power BI free offer.](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
     When you sign up, you're prompted to try Power BI Pro free for 60 days. You can opt into that to become a Pro user, which gives you the option to [start developing an embedded solution](embed-sample-for-customers.md).
 
