@@ -147,7 +147,7 @@ Before beginning a migration, first ensure [prerequisites](#prerequisites) are m
 
 1. In **Migration Details**, verify your Azure Analysis Services server and Power BI Premium workspace settings. Any prerequisites not met are shown. Model databases on the server that can be migrated are shown in **Semantic models**.
 
-    :::image type="content" source="media/aas-pbi-migration-overview/migration-details.png" alt-text="Screenshot of migration details.":::
+    :::image type="content" source="media/aas-pbi-migration-overview/migration-details2.png" alt-text="Screenshot of migration details.":::
 
 1. For each model database you want to migrate, under **Include in Migration**, toggle the slider button to **Yes**.
 
