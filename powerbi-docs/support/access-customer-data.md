@@ -10,7 +10,7 @@ ms.date: 08/31/2023
 
 # Consent to access customer data
 
-Microsoft never accesses your customer data without your consent. Microsoft respects your privacy and puts you in control of the level of consent you grant as part of receiving support. If you've requested support and Microsoft believes that access to customer data may help us investigate, troubleshoot, and resolve your support issue, we will contact you. You also have the option on your support request to give your consent at the time you request support. Doing this will help eliminate delays in the issue resolution time and/or help expedite the issue resolution. Your consent is temporary, and you can revoke it at any time. This consent does not grant [lockbox](/power-platform/admin/about-lockbox) request approval and/or revoke it.
+Microsoft never accesses your customer data without your consent. Microsoft respects your privacy and puts you in control of the level of consent you grant as part of receiving support. If you requested support and Microsoft believes that access to customer data may help us investigate, troubleshoot, and resolve your support issue, we might contact you. You also have the option on your support request to give your consent at the time you request support. Contacting you helps eliminate delays in the issue resolution time and/or help expedite the issue resolution. Your consent is temporary, and you can revoke it at any time. This consent doesn't grant [lockbox](/power-platform/admin/about-lockbox) request approval and/or revoke it.
 
 ## Consent information
 
