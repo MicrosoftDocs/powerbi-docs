@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 09/17/2024
+ms.date: 01/14/2025
 LocalizationGroup: Dashboards
 ---
 
@@ -64,9 +64,9 @@ When you first launch the usage metrics report, Power BI automatically creates a
 
 You may need to resume scheduled refresh if one of the following occurs:
 
-- The credentials expire
-- You removed the user who first launched the usage metrics report from the workspace where the semantic model resides
-- The user who first launched the usage metrics report leaves or is no longer a part of the organization
+- The credentials expire.
+- You removed the user who first launched the usage metrics report from the workspace where the semantic model resides.
+- The user who first launched the usage metrics report leaves or is no longer a part of the organization.
 
 > [!NOTE]
 > While still in preview, the usage metrics semantic model may have minor changes which affect custom reports.  
