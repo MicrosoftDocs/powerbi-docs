@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/30/2024
+ms.date: 01/15/2025
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -59,6 +59,8 @@ Power BI premium offers two SKUs, *P* and *EM*.
 To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../enterprise/service-admin-premium-workloads.md) article.
 
 To plan and test your capacity, see [Capacity planning](embedded-capacity-planning.md).
+
+To see what capacity you currently have, go to **Workspace settings -> License info**.
 
 ### Which SKU should I use?
 
