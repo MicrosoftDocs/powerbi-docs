@@ -784,6 +784,6 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
 - [Administrator overview](admin-handbook-overview.md)  
 - [Install Power BI Report Server](install-report-server.md)  
 - [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-- [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+- [Download SQL Server Data Tools (SSDT)](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
