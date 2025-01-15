@@ -100,7 +100,7 @@ Let's try it out.
 
 1. Choose one of these questions as a starting point or begin typing your own question and select from the dropdown suggestions.
 
-   ![Screenshot of an example Q&A entry with suggestions.](media/end-user-q-and-a-tutorial/power-bi-qna-select-a-question-stores.png)
+   ![Screenshot of an example Q&A entry with suggestions.](media/end-user-q-and-a-tutorial/power-bi-qna-select-question-stores.png)
 
 1. As you type a question, Power BI helps you with autocomplete, visual cues, restatement, and feedback. Power BI also picks the best visualization to display your answer. 
 
@@ -108,7 +108,7 @@ Let's try it out.
 
 1. The visualization changes dynamically as you modify the question.
 
-   ![Screenshot of an example Q&A entry, showing a bar graph visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-stores-by-state-bar.png)
+   ![Screenshot of an example Q&A entry, showing a bar graph visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-stores-state-bar-chart.png)
 
 1. Don't like the default visualization that Power BI Q&A chose? Edit the natural language question to include the visualization type that you'd prefer.
 
