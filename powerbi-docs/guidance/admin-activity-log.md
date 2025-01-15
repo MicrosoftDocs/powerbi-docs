@@ -13,7 +13,7 @@ ms.date: 12/30/2024
 
 # Access the Power BI activity log
 
-This article targets Fabric administrators who need to access and analyze data sourced from the [Power BI activity log](../enterprise/service-admin-auditing.md). It focuses on the programmatic retrieval of Power BI activities by using the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet from the Power BI Management module. Up to 30 days of history is available. This cmdlet uses the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) Power BI REST API operation, which is an admin API. PowerShell cmdlets add a layer of abstraction on top of the underlying APIs. Therefore, the PowerShell cmdlet simplifies access to the Power BI activity log.
+This article targets Fabric administrators who need to access and analyze data sourced from the [Power BI activity log](../enterprise/service-admin-auditing.md). It focuses on the programmatic retrieval of Power BI activities by using the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet from the Power BI Management module. Up to four weeks of history is available. This cmdlet uses the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) Power BI REST API operation, which is an admin API. PowerShell cmdlets add a layer of abstraction on top of the underlying APIs. Therefore, the PowerShell cmdlet simplifies access to the Power BI activity log.
 
 There are other manual and programmatic ways to retrieve Power BI activities. For more information, see the [Access user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
 
@@ -93,7 +93,7 @@ Sometimes you need to check all the activities that a specific user performed on
 This script declares two PowerShell variables to make it easier to reuse the script:
 
 - `$UserEmailAddr`: The email address for the user you're interested in.
-- `$ActivityDate`: The date you're interested in. The format is YYYY-MM-DD (ISO 8601 format). You can't request a date earlier than 30 days before the current date.
+- `$ActivityDate`: The date you're interested in. The format is YYYY-MM-DD (ISO 8601 format). You can't request a date earlier than 28 days before the current date.
 
 ```powershell
 #Input values before running the script:
@@ -187,7 +187,7 @@ Sometimes you might want to investigate one specific type of activity for a seri
 The script declares two variables:
 
 - `$ActivityType`: The [operation name](/fabric/admin/operation-list) for the activity that you're investigating.
-- `$NbrOfDaysToCheck`: How many days you're interested in checking. It performs a loop working backward from the current day. The maximum value allowed is 30 days (because the earliest date that you can retrieve is 30 days before the current day).
+- `$NbrOfDaysToCheck`: How many days you're interested in checking. It performs a loop working backward from the current day. The maximum value allowed is 28 days (because the earliest date that you can retrieve is 28 days before the current day).
 
 ```powershell
 #Input values before running the script:
@@ -323,7 +323,7 @@ Sometimes you might want to investigate several related activities. This example
 
 The script declares the following variables:
 
-- `$NbrOfDaysToCheck`: How many days you're interested in checking. It performs a loop that works backward from the current day. The maximum value allowed is 30 days (because the earliest date that you can retrieve is 30 days before the current day).
+- `$NbrOfDaysToCheck`: How many days you're interested in checking. It performs a loop that works backward from the current day. The maximum value allowed is 28 days (because the earliest date that you can retrieve is 28 days before the current day).
 - `$Activity1`: The [operation name](/fabric/admin/operation-list) for the first activity that you're investigating. In this example, it's searching for Power BI app creation activities.
 - `$Activity2`: The second operation name. In this example, it's searching for Power BI app update activities.
 - `$Activity3`: The third operation name. In this example, it's searching for Power BI app installation activities.
@@ -490,7 +490,7 @@ Sometimes you might want to investigate activities related to a specific workspa
 
 The script declares two variables:
 
-- `$ActivityDate`: The date you're interested in. The format is YYYY-MM-DD. You can't request a date earlier than 30 days before the current date.
+- `$ActivityDate`: The date you're interested in. The format is YYYY-MM-DD. You can't request a date earlier than 28 days before the current date.
 - `$WorkspaceName`: The name of the workspace you're interested in.
 
 The script stores the results in the `$Results` variable. It then converts the JSON data to an object so the results can be parsed. It then filters the results to retrieve five specific columns. The _CreationTime_ data is renamed as _ActivityDateTime_. The results are filtered by the workspace name, then output to the screen.
@@ -568,22 +568,22 @@ WorkSpaceName    : Sales Analytics
 
 ## Example 6: Export all activities for previous N days
 
-Sometimes you might want to export all activity data to a file so that you can work with the data outside of PowerShell. This example retrieves all activities for all users for up to 30 days. It exports the data to one JSON file per day.
+Sometimes you might want to export all activity data to a file so that you can work with the data outside of PowerShell. This example retrieves all activities for all users for up to 28 days. It exports the data to one JSON file per day.
 
 > [!IMPORTANT]
-> Activity log data is available for a maximum of 30 days. It's important that you export and retain the data so you can do historical analysis. If you don't currently export and store the activity log data, we strongly recommend that you prioritize doing so.
+> Activity log data is available for a maximum of 28 days. It's important that you export and retain the data so you can do historical analysis. If you don't currently export and store the activity log data, we strongly recommend that you prioritize doing so.
 
 ### Sample request 6
 
 The script retrieves all activities for a series of days. It declares three variables:
 
-- `$NbrDaysDaysToExtract`: How many days you're interested in exporting. It performs a loop, working backward from the previous day. The maximum value allowed is 30 days (because the earliest date that you can retrieve is 30 days before the current day).
+- `$NbrDaysDaysToExtract`: How many days you're interested in exporting. It performs a loop, working backward from the previous day. The maximum value allowed is 28 days (because the earliest date that you can retrieve is 28 days before the current day).
 - `$ExportFileLocation`: The folder path where you want to save the files. The folder must exist before running the script. Don't include a backslash (\\) character at the end of the folder path (because it's automatically added at runtime). We recommend that you use a separate folder to store raw data files.
 - `$ExportFileName`: The prefix for each file name. Because one file per day is saved, the script adds a suffix to indicate the data contained in the file, and the date and time the data was retrieved. For example, if you ran a script at 9am (UTC) on April 25, 2023 to extract activity data for April 23, 2023, the file name would be: PBIActivityEvents-20230423-202304250900. Although the folder structure where it's stored is helpful, each file name should  be fully self-describing.
 
 We recommend that you extract data that's at least one day before the current day. That way, you avoid retrieving partial day events, and you can be confident that each export file contains the full 24 hours of data.
 
-The script gathers up to 30 days of data, through to the previous day. Timestamps for audited events are always in UTC. We recommend that you build all of your auditing processes based on UTC time rather than your local time.
+The script gathers up to 28 days of data, through to the previous day. Timestamps for audited events are always in UTC. We recommend that you build all of your auditing processes based on UTC time rather than your local time.
 
 The script produces one JSON file per day. The suffix of the file name includes the timestamp (in UTC format) of the extracted data. If you extract the same day of data more than once, the suffix in the file name helps you identify the newer file.
 
