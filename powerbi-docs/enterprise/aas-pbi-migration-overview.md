@@ -191,7 +191,7 @@ If you have reports in the Power BI service that connected to and queried your d
 
 To rebind reports, on the **Azure Analysis Services to Power BI Premium** page, under **All migrations** > **Azure Analysis Services server**, select your server migration. Then, on the **Migration details** page, for your newly migrated model, select **Rebind reports**.
 
-:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-details-rebind.png" alt-text="Migration server connection":::
+:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-details-rebind2.png" alt-text="Migration server connection":::
 
 The rebind operation can take a few minutes to complete. To check the status of your rebind, select **Rebind status**.
 
