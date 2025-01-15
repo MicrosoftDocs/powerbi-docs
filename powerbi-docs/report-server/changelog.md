@@ -16,6 +16,28 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+## January 2025
+
+### Power BI Report Server
+- *Version: 1.22.9137.4867 (build 15.0.1117.95), Released: January 13, 2025*
+  - Features
+    - Custom Visual API shipped with release - version v5.10.0
+    - Updated underlying version of angular.
+    - Add new advanced server property EnableRefererValidation and set default value to false.
+    - Added support for PBIX data limit feature.
+  - Bug fixes
+    - Fixed issue with RSExecRole not getting correct permissions when restoring a catalog.
+    - Fixed issue with logging errors for snapshots getting cleaned up.
+    - Fixed issue where we logged error about perf counters which were removed previously.
+    - Fixed issue with performance of data driven email subscriptions.
+    - Fixed issue related to changing service account password in the RSConfig tool.
+    - Fixed issue related to viewing PBIX reports when the underlying model had been unloaded.
+    - Fixed issue related to accessibility and screen readers.
+      
+### Power BI Desktop (optimized for Power BI Report Server)
+- *Version: 2.138.2255.0 (January 2025), Released: January 13, 2025*
+     - Support for January 2025 Power BI Report Server.
+
 ## September 2024
 
 ### Power BI Report Server
