@@ -60,7 +60,7 @@ To understand which workloads are supported for each tier, refer to the [Configu
 
 To plan and test your capacity, see [Capacity planning](embedded-capacity-planning.md).
 
-To see what capacity you currently have, go to **Workspace settings -> License info**.
+To see what capacity you currently have, go to **Workspace settings -> License info**. If you're an admin, you can see all the capacities in your tenant in the [capacity settings](/fabric/admin/capacity-settings).
 
 ### Which SKU should I use?
 
