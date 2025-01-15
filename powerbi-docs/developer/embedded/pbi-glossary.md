@@ -326,7 +326,7 @@ A measure is a quantitative (numeric) field that can be used to do calculations.
 
 ### Mobile app
 
-Apps that allow you to run Power BI on iOS, Android, and Windows devices.
+Apps that allow you to run Power BI on iOS and Android devices.
 
 ### Modeling
 

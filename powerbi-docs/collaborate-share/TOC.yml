@@ -167,15 +167,5 @@
       href: service-dataset-external-org-share-view.md
     - name: Information for Power BI admin
       href: service-dataset-external-org-share-admin.md
-  - name: Power BI in Power Apps solutions
-    items: 
-    - name: About the Power BI/PowerApps solutions integration
-      href: service-power-bi-powerapps-integration-about.md
-    - name: Enable the Power BI/PowerApps solutions integration
-      href: service-power-bi-powerapps-integration-enable.md
-    - name: Using Power BI in Power Apps solutions
-      href: service-power-bi-powerapps-integration-using.md
-    - name: Considerations working with the Power Apps/Power BI integration
-      href: service-power-bi-powerapps-integration-considerations.md
   - name: "Use third-party apps"
     href: service-power-bi-get-started-third-party-apps.md

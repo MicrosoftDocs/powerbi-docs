@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning: Integration with Other Services"
 description: "This article helps you to plan how and when to integrate Power BI and Microsoft Fabric with other services."
-author: peter-myers
+author: denglishbi
 ms.author: daengli
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 10/12/2024
+ms.date: 12/30/2024
 ms.collection: ce-skilling-ai-copilot
 ---
 
@@ -374,7 +374,7 @@ You can also use Power BI to trigger a Power Automate cloud flow in three ways:
 
 - Use the Power Automate visual in a Power BI report.
 - Use data alerts from a Power BI dashboard tile.
-- [Create flows to notify changed goals](../create-reports/service-goals-power-automate.md) in Power BI.
+- [Create flows to notify changed goals](../create-reports/service-metrics-power-automate.md) in Power BI.
 
 With this approach, you aren't automating Power BI actions as much as you're responding to events that happen in Power BI. These events can either be triggered manually (like the Power Automate visual) or automatically (like data alerts). You can also use data from Power BI downstream in the flows, which can help you automate more specific and relevant actions.
 

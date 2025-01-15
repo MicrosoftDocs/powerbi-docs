@@ -29,7 +29,7 @@ OneLake integration for semantic models is supported on Power BI Premium P and M
 
 Before enabling OneLake integration, you must have:
 
-- One or more import semantic models in a workspace on a Power BI Premium or Fabric capacity.
+- One or more [import semantic models](/fabric/get-started/direct-lake-overview#comparison-to-other-storage-modes) in a workspace on a Power BI Premium or Fabric capacity. Import semantic model is a type of data model where data is fully imported into Power BI's in-memory storage, allowing fast and efficient querying.
 - [Large semantic model storage format](service-premium-large-models.md) enabled for the model.
 
 ## Permissions

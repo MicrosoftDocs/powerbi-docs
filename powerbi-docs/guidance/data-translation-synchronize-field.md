@@ -23,7 +23,7 @@ A field parameter can support translations for a column in a multiple-language r
 
 1. Select **Create**.
 
-1. Open the Data view. Select the table to view the Data Analysis Expressions (DAX) code. Update the code to match the following code.
+1. Open the Table view. Select the table to view the Data Analysis Expressions (DAX) code. Update the code to match the following code.
 
    ```dax
    Translated Category Names = {

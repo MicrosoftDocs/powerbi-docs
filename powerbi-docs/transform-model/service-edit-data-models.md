@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 09/24/2024
+ms.date: 01/12/2025
 ms.custom: FY25Q1-Linter
 LocalizationGroup: Transform and shape data
 #customer intent: As a Power BI user I want to learn how to edit data models in Power BI.
@@ -26,6 +26,8 @@ Editing data models in the Power BI service is automatically enabled for semanti
 2. Select **Advanced > Data model settings > Users can edit data models in the Power BI service (preview)**
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-02.png" alt-text="Screenshot of enable preview feature" lightbox="media/service-edit-data-models/service-edit-data-models-02.png":::
 3. Select **Save** to see the new experience for semantic models in your workspace.
+
+This preview feature is enabled by default for Premium workspaces. For Pro workspaces, it isn't enabled by default and must be selected by a workspace contributor.
 
 > [!NOTE]
 > Enabling the *edit data models in the Power BI service* preview doesn't apply to editing a semantic model through an API or an XMLA endpoint.
@@ -49,6 +51,12 @@ You can open the data model for your semantic model in the following ways:
 * From **edit mode** for a report connected to the semantic model, select **Open data model** to open the corresponding data model in another tab.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-06.png" alt-text="Screenshot of opening the data model in edit mode." lightbox="media/service-edit-data-models/service-edit-data-models-06.png":::
+
+## Viewing mode
+
+When you open your semantic models on the web they default to **Viewing mode**, allowing you to safely view the model without the risk of accidental edits. While you can adjust your diagram layouts in Viewing mode, such changes won't be saved for future sessions. To make permanent modifications, switch to **Editing mode**.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-06b.png" alt-text="Screenshot of switching from viewing mode to editing mode.":::
 
 ## Model data
 
@@ -281,7 +289,6 @@ There are still many functional gaps between the model view in Power BI desktop 
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
 * External tools integration
-* When modifying your data model within the Service, creating a relationship between DirectQuery tables from the same Power BI semantic model or Azure Analysis Services instance will not be properly prevented. Like Desktop, this scenario is not supported, but no error will be generated when you try to perform this action.
 * When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that semantic model.
 
 ### Semantic models edited with external tools

@@ -64,7 +64,7 @@ Once connected, select the tables you want to load into your datamart. You can a
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-13.png" alt-text="Screenshot of loading data for a datamart.":::
 
-For each table you select, a corresponding view is created in the datamart that appears in the **Object explorer** in **Data View**.
+For each table you select, a corresponding view is created in the datamart that appears in the **Object explorer** in **Table View**.
 
 
 ## Model data
@@ -119,7 +119,7 @@ Select the **Confirm** button when your relationship is complete to save the rel
 
 ### Hide elements from downstream reporting
 
-You can hide elements of your datamart from downstream reporting by selecting **Data view** and right-clicking on the column or table you want to hide. Then select **Hide in report view** from the menu that appears to hide the item from downstream reporting.
+You can hide elements of your datamart from downstream reporting by selecting **Table view** and right-clicking on the column or table you want to hide. Then select **Hide in report view** from the menu that appears to hide the item from downstream reporting.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-17.png" alt-text="Screenshot of hiding an element from downstream reporting.":::
 

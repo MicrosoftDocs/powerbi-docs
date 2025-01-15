@@ -265,14 +265,10 @@ The paginated reports workload is enabled automatically, and is always enabled.
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Power BI Premium](service-premium-what-is.md)
+* [Power BI Premium](service-premium-what-is.md)
 
->[!div class="nextstepaction"]
->[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
+* [Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
 
->[!div class="nextstepaction"]
->[What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+* [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
->[!div class="nextstepaction"]
->[Automatic page refresh in Power BI Desktop (preview)](../create-reports/desktop-automatic-page-refresh.md)
+* [Automatic page refresh in Power BI Desktop (preview)](../create-reports/desktop-automatic-page-refresh.md)

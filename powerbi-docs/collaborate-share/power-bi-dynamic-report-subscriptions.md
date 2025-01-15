@@ -125,6 +125,7 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 - Receiving the subscription email doesn't guarantee access to the report. Report access is set separately.
 - This feature supports single value filters and doesn't support filters with multiple value options.
 - If the names of columns or tables are changed in the semantic model while the subscription is processing, dynamic filters might not be applied properly.
+- Resolutions below 400px are not supported for Dynamic per recipient subscriptions.
 
 
 ## Related content
