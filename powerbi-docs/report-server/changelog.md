@@ -46,7 +46,7 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
 - *Version: 1.21.9032.4573 (build 15.0.1116.121), Released: September 26, 2024*
   - Features
     - Custom Visual API shipped with release - version v5.10.0
-    - Changed default SupportedHyperlinkSchemes advanced server property value to disallow javascript
+    - Changed default SupportedHyperlinkSchemes advanced server property value to disallow JavaScript
     - Changed default TrustedFileFormat advanced server property value to disallow pdf content viewing
   - Bug fixes
     - Fixed issue with RsPortal log getting filled with 401 errors
@@ -80,7 +80,7 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
 - *Version: 1.20.8910.25479 (build 15.0.1115.165), Released: May 28, 2024*
   - Features
     - Removed AngularJS remnants
-    - A recent security change requires a privilaged user to apply the "PBI_SQL_TRUSTED_SERVERS" environment variable on their Power BI Report Server machine for certain data types. Read more details in the article, [SQL Server certificate isn't trusted on the client](/power-query/connectors/sql-server#sql-server-certificate-isnt-trusted-on-the-client-power-bi-desktop-or-on-premises-data-gateway).
+    - A recent security change requires a privileged user to apply the "PBI_SQL_TRUSTED_SERVERS" environment variable on their Power BI Report Server machine for certain data types. Read more details in the article, [SQL Server certificate isn't trusted on the client](/power-query/connectors/sql-server#sql-server-certificate-isnt-trusted-on-the-client-power-bi-desktop-or-on-premises-data-gateway).
     - Custom Visual API shipped with release - version v5.8.0
     - Various bug fixes
 
@@ -257,7 +257,7 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
             -  Report Parts support deprecated
         - [Discontinued features](/sql/reporting-services/discontinued-functionality-to-sql-server-reporting-services-in-sql-server)
             -  Mobile Reports functionality discontinued
-            -  Pin to PowerBI functionality discontinued
+            -  Pin to Power BI functionality discontinued
             
 - **Power BI Desktop (optimized for Power BI Report Server)**
 
@@ -528,7 +528,7 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
     - *Version: 1.6.7236.4246 (Build 15.0.1102.646), Released: October 25, 2019*
         - Security updates
         - Bug fixes
-            - Fix for .net framework 4.7 not installed.
+            - Fix for .NET framework 4.7 not installed.
 	        - Fix for paginated reports for Teradata with multivalue parameters with error 110083.
 	        - Fix for URLRoot value not working if there are multiple web service URL bindings and one of them is https://+80/reportserver.
 		  - Fix for paginated reports multivalue parameter values showing up outside the report area.
