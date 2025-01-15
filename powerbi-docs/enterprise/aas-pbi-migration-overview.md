@@ -177,7 +177,7 @@ To enable redirection, on the **Azure Analysis Services to Power BI Premium** pa
 
 Redirection can take some time. You can leave the page and continue to use Power BI while redirection is in process. To check the status of server redirection, select **More options**, and then select **Redirection status**.
 
-:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-redirection-status.png" alt-text="Check redirection status from More options menu.":::
+:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-redirection-status2.png" alt-text="Check redirection status from More options menu.":::
 
 The **Server Redirection** flyout shows the status of redirection.
 
