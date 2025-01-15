@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 07/17/2024
 LocalizationGroup: Create reports
 ---
-# Use the Analyze feature to explain fluctuations in report visuals (Preview)
+# Use the Analyze feature to explain fluctuations in report visuals
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
@@ -27,8 +27,7 @@ You can ask the Power BI service to explain increases, decreases, or unusual dis
 
 The Analyze feature is contextual, and is based on the immediately previous data point&mdash;such as the previous bar or column.
 
-> [!NOTE]
-> This feature is in preview, and is subject to change. The insight feature is enabled and on by default (you don't need to check a Preview box to enable it).
+
 
 ## Which factors and categories are chosen
 

@@ -25,7 +25,7 @@ Sujata demonstrates how the modern visual tooltips work in this video.
 
 [!INCLUDE [video-note-earlier-versions](../includes/video-note-earlier-versions.md)]
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDRUW]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9f19b72a-c54e-4e20-be26-17c8ce9483c7]
 
 ## Turn on the new tooltips
 

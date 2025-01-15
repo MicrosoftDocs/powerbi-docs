@@ -9,6 +9,8 @@
       href: get-started.md
     - name: "Compare Power BI Report Server and the service"
       href: compare-report-server-service.md
+    - name: Download Power BI Report Server
+      href: download-powerbi-report-server.md
   - name: Concepts
     expanded: true
     items: 
