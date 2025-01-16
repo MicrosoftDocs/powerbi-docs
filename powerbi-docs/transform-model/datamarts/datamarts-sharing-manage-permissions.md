@@ -92,7 +92,7 @@ If you're an Admin or Member, go to your workspace and select **More options** w
 
 For users who were provided workspace roles, it shows the corresponding user, workspace role, and permissions. Admin and Members have **Read**, **Write**, and **Reshare** access to datamarts in this workspace. Contributors have **Read** and **Write** permissions. Viewers have **Read** permissions and can query all objects within the datamart. For users with whom a datamart was shared, item permissions such as **Read** and **Reshare** are provided by default.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-09.png" alt-text="Screenshot of the datamart Manage Permissions page." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-09.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-09_2.png" alt-text="Screenshot of the datamart Manage Permissions page." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-09_2.png":::
 
 You can choose to add or remove permissions using the **Manage permissions** experience. **Remove reshare** removes the *Reshare* permissions. **Remove access** removes all item permissions and stops sharing the datamart with the specified user.
 
