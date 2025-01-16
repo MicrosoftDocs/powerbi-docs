@@ -329,7 +329,6 @@ In addition to the above differences between previous and improved usage metrics
 - If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
 - If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) and **Block Public Internet Access** in Power BI, the refresh for the semantic model will fail and the usage metrics report won't show any data.
 - In order to create and refresh the usage metrics report, the user is required to authenticate to enable the backend API calls to extract the tenant telemetry. For privacy reasons, guest users aren't allowed this authentication. This authentication is only allowed for members of the tenant.
-- Page views that are made from mobile devices aren't shown in the usage metrics report.
 - Duplicate reports with different Report ObjectIds in the usage metrics report can show up for the following scenarios:
     - Reports have been deleted and re-created with the same name
        - If a report has been deleted and then re-created with the same name, it continues to show up in the filters for the usage metrics report.
