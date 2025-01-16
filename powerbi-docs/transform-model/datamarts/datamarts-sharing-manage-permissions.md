@@ -96,7 +96,7 @@ For users who were provided workspace roles, it shows the corresponding user, wo
 
 You can choose to add or remove permissions using the **Manage permissions** experience. **Remove reshare** removes the *Reshare* permissions. **Remove access** removes all item permissions and stops sharing the datamart with the specified user.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10.png" alt-text="Screenshot of the Remove reshare permission selected from the datamart Manage Permissions page." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10_2.png" alt-text="Screenshot of the Remove reshare permission selected from the datamart Manage Permissions page." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10_2.png":::
 
 ## Related content
 
