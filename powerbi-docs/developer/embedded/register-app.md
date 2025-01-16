@@ -3,7 +3,7 @@ title: Register a Power BI Embedded app
 description: Set up Power BI Embedded to register a Microsoft Entra app, create a workspace, import content, grant permissions.
 author: mberdugo
 ms.author: monaberdugo
-ms.date: 01/07/2025
+ms.date: 01/16/2025
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -73,13 +73,6 @@ For more information about how to register applications in Microsoft Entra ID, s
 1. (Optional) In the **Redirect URI** box, add a redirect URL.
 
 1. Select **Register**. After your app is registered, you're directed to your app's overview page, where you can obtain the **Application ID**.
-
-## Download sample app (optional)
-
-If you created a Power BI workspace and uploaded content to it by using this tool, you can now select **Download sample application**.
-
->[!NOTE]
->If you skipped the optional stages, you can still download a sample Power BI app. However, the code in the downloaded app lacks the properties that get filled in during registration. For example, if you don't create a workspace, the sample app doesn't include the workspace ID.
 
 Make sure you copy all the information in the **Summary** box. Your Power BI embedding environment is ready to use.
 
