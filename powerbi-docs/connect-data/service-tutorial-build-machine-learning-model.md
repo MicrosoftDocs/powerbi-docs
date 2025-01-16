@@ -45,15 +45,15 @@ You can download the semantic model from the UC Irvine website or by downloading
 
 To create the entities in your dataflow, sign into the Power BI service and navigate to a workspace.
 
-1. If you don't have a workspace, create one by selecting **Workspaces** in the Power BI left navigation pane and selecting **New workspace**. In the **Create a workspace** panel, enter a workspace name and select **Save**.
+1. If you don't have a workspace, create one by selecting **Workspaces** in the Power BI navigation pane and selecting **Create a workspace**. In the **Create a workspace** panel, enter a workspace name and select **Save**.
 
    [ ![Screenshot of how to create a workspace.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png#lightbox)
 
-1. Select **New item** at the top of the new workspace, and then select **Dataflow Gen2**.
+1. Select **New item** at the top of the new workspace, then, under **Get data**, select **Dataflow Gen2**.
 
    [ ![Screenshot of how to create a dataflow.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-03.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-03.png#lightbox)
 
-1. In the dialog that opens, enter a name for the dataflow, and then select **Create**.
+1. In the dialog that opens, enter a name for the dataflow, then select **Create**.
 
 1. In the **Power Query** editor, select **Import from a Text/CSV file**.
 

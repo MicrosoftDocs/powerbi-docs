@@ -320,7 +320,7 @@ There are all sorts of interesting visuals you can create from your report in th
 
 To share a report or dashboard, select **Share** > **Report** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
 
-Complete the **Share report** or **Share dashboard** screen to send an email or get a link to share your report or dashboard with others.
+Complete the **Send link** screen to send an email or to get a link to share your report or dashboard with others.
 
 ![Screenshot of Power B I Desktop showing the Share Report screen.](media/desktop-getting-started/gsg_share6.png)
 

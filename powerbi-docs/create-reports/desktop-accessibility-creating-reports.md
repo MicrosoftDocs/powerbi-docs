@@ -72,8 +72,6 @@ Power BI has high contrast support for reports. If you're using a high contrast 
 
 The Power BI service also attempts to detect the high contrast settings selected for Windows, but the effectiveness and accuracy of that detection depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View** > **High contrast colors** while in Edit mode and then select the theme you would like to apply to the report.
 
-![Screenshot of the Power BI service in edit mode, highlighting View and High-contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
-
 ### Focus mode
 
 If a report consumer is looking at a visual in a dashboard, they can expand the visual to fill up more of their screen by selecting the **Focus mode** icon in the context menu of the visual.
@@ -165,7 +163,7 @@ While we suggest report authors to turn on data labels and markers, turning them
 
 ![Screenshot of two example visuals, one with labels and markers on, the other with only markers on.](media/desktop-accessibility/accessibility-creating-reports-16.png)
 
-If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://pluginsaddonsextensions.com/google-chrome/the-squint-test-chrome-extension_86008). If your eyes are drawn more to the data labels than the data points, turn off your data labels.
+If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://chromewebstore.google.com/detail/blurry-eye-test/panidpjdcjkdhjamnogampinhbkjdkpo?hl=en). If your eyes are drawn more to the data labels than the data points, turn off your data labels.
 
 ### Themes, contrast and colorblind-friendly colors
 

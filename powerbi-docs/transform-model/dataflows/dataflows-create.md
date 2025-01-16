@@ -19,7 +19,7 @@ To create a dataflow, launch the Power BI service in a browser then select a **w
 
 There are multiple ways to create or build on top of a new dataflow:
 
-* [Create a dataflow by using new source](#create-a-dataflow-by-using-new-source)
+* [Create a dataflow by using a new source](#create-a-dataflow-by-using-new-source)
 * [Create a dataflow by using linked tables](#create-a-dataflow-by-using-linked-tables)
 * [Create a dataflow by using a CDM folder](#create-a-dataflow-by-using-a-cdm-folder)
 * [Create a dataflow by using import/export](#create-a-dataflow-by-using-importexport)
@@ -29,18 +29,22 @@ The following sections explore each of these ways to create a dataflow in detail
 > [!NOTE]
 > Dataflows can be created by users in a Premium workspace, users with a Pro license, and users with a Premium Per User (PPU) license.
 
-## Create a dataflow by using new source
+## Create a dataflow by using a new source
 
 Using the New source option lets you define a new table and connect to a new data source.
 
-1. Select the **Get data...* link on the screen, or select a source using **New source** in the ribbon.
+1. Select the **Get data...** link on the screen, or select a source using **New source** in the ribbon.
 
-:::image type="content" source="media/dataflows-create/create-connectors.png" alt-text="Screenshot showing options for data sources." lightbox="media/dataflows-create/create-connectors.png":::
+   :::image type="content" source="media/dataflows-create/create-connectors.png" alt-text="Screenshot showing options for data sources." lightbox="media/dataflows-create/create-connectors.png":::
 
 2. When you select a data source, you're prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
-:::image type="content" source="media/dataflows-create/azure-sql-connector.png" alt-text="Screenshot of the form displayed after you choose Azure SQL as a connector.":::
+
+   :::image type="content" source="media/dataflows-create/azure-sql-connector.png" alt-text="Screenshot of the form displayed after you choose Azure SQL as a connector.":::
+
 3. Once connected, you can select which data to use for your table. When you choose data and a source, Power BI reconnects to the data source. The reconnection keeps the data in your dataflow refreshed at the frequency that you select later in the setup process.
-:::image type="content" source="media/dataflows-create/choose-table.png" alt-text="Screenshot of a table selection on the Choose Data screen.":::
+
+   :::image type="content" source="media/dataflows-create/choose-table.png" alt-text="Screenshot of a table selection on the Choose Data screen.":::
+
 4. After you select the data for use in the table, you can use dataflow editor to shape or transform that data into the format necessary for use in your dataflow.
 
 ## Create a dataflow by using linked tables
