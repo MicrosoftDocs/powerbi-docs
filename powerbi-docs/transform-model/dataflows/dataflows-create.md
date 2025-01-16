@@ -19,7 +19,7 @@ To create a dataflow, launch the Power BI service in a browser then select a **w
 
 There are multiple ways to create or build on top of a new dataflow:
 
-* [Create a dataflow by using a new source](#create-a-dataflow-by-using-new-source)
+* [Create a dataflow by using a new source](#create-a-dataflow-by-using-a-new-source)
 * [Create a dataflow by using linked tables](#create-a-dataflow-by-using-linked-tables)
 * [Create a dataflow by using a CDM folder](#create-a-dataflow-by-using-a-cdm-folder)
 * [Create a dataflow by using import/export](#create-a-dataflow-by-using-importexport)
@@ -31,7 +31,7 @@ The following sections explore each of these ways to create a dataflow in detail
 
 ## Create a dataflow by using a new source
 
-Using the New source option lets you define a new table and connect to a new data source.
+Using the **New source** option lets you define a new table and connect to a new data source.
 
 1. Select the **Get data...** link on the screen, or select a source using **New source** in the ribbon.
 
