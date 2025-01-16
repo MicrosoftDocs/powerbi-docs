@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 09/17/2024
+ms.date: 01/14/2025
 LocalizationGroup: Dashboards
 ---
 
@@ -64,9 +64,9 @@ When you first launch the usage metrics report, Power BI automatically creates a
 
 You may need to resume scheduled refresh if one of the following occurs:
 
-- The credentials expire
-- You removed the user who first launched the usage metrics report from the workspace where the semantic model resides
-- The user who first launched the usage metrics report leaves or is no longer a part of the organization
+- The credentials expire.
+- You removed the user who first launched the usage metrics report from the workspace where the semantic model resides.
+- The user who first launched the usage metrics report leaves or is no longer a part of the organization.
 
 > [!NOTE]
 > While still in preview, the usage metrics semantic model may have minor changes which affect custom reports.  
@@ -397,7 +397,7 @@ The typical report opening time corresponds to the 50th percentile of the time i
 The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. You can change the time period by using the Date slicer on the Report performance page, such as to calculate week-over-week or biweekly trends.
 
 #### **There are four reports in the previous version of the usage metrics report, but the improved version only displays three.**
-The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
+The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. You can update it to cover only the past 30 days, if you want. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
 
 ## Troubleshoot refresh issues
 
