@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/08/2025
+ms.date: 01/16/2025
 LocalizationGroup: Connect to data
 ---
 
@@ -209,6 +209,10 @@ This table describes with more detail where this feature is available and the li
 
 > [!WARNING]
 > We have a known issue when connected from Power BI Desktop to Analysis Services or Power BI semantic models and the refresh interval is 30 minutes or more. Visuals in a report page might show an error after 30 minutes.
+
+
+> [!IMPORTANT]
+> Adding a push dataset (streaming dataset with history **ON**) as a source to an existing semantic model with APR will cause the minimum limit to increase to 30 minutes.
 
 ## Impact of model refresh on open reports when using Import mode
 
