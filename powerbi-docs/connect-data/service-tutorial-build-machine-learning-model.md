@@ -45,21 +45,19 @@ You can download the semantic model from the UC Irvine website or by downloading
 
 To create the entities in your dataflow, sign into the Power BI service and navigate to a workspace.
 
-1. If you don't have a workspace, create one by selecting **Workspaces** in the Power BI left navigation pane and selecting **Create a workspace**. In the **Create a workspace** panel, enter a workspace name and select **Save**.
+1. If you don't have a workspace, create one by selecting **Workspaces** in the Power BI left navigation pane and selecting **New workspace**. In the **Create a workspace** panel, enter a workspace name and select **Save**.
 
    [ ![Screenshot of how to create a workspace.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png#lightbox)
 
-1. Select **New** at the top of the new workspace, and then select **Dataflow**.
+1. Select **New item** at the top of the new workspace, and then select **Dataflow Gen2**.
 
    [ ![Screenshot of how to create a dataflow.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-03.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-03.png#lightbox)
 
-1. Select **Add new tables** to launch a **Power Query** editor in the browser.
+1. In the dialog that opens, enter a name for the dataflow, and then select **Create**.
 
-   [ ![Screenshot of selecting Add new tables.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-04.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-04.png#lightbox)
+1. In the **Power Query** editor, select **Import from a Text/CSV file**.
 
-1. On the **Choose data source** screen, select **Text/CSV** as the data source.
-
-   [ ![Screenshot of selecting Text/CSV in Choose data source.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png#lightbox)
+   [ ![Screenshot of the import from a text/CSV file option.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png#lightbox)
 
 1. On the **Connect to a data source** page, paste the following link to the _online_shoppers_intention.csv_ file into the **File path or URL** box, and then select **Next**.
 
@@ -77,9 +75,7 @@ To create the entities in your dataflow, sign into the Power BI service and navi
 
    [ ![Screenshot of changing the query name and Revenue column data type.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-08.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-08.png#lightbox)
 
-1. Select **Save & close**, and in the dialog box, provide a name for the dataflow and then select **Save**.
-
-   [ ![Screenshot of saving the dataflow.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-09.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-09.png#lightbox)
+1. Select **Save & close**.
 
 ## Create and train a machine learning model
 

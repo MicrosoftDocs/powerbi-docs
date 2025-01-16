@@ -70,7 +70,7 @@ Power BI has high contrast support for reports. If you're using a high contrast 
 
 ![Screenshot shows a report in high contrast windows settings.](media/desktop-accessibility/accessibility-05b.png)
 
-The Power BI service also attempts to detect the high contrast settings selected for Windows, but the effectiveness and accuracy of that detection depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-left corner you can select **View** > **High contrast colors** while in Edit mode and then select the theme you would like to apply to the report.
+The Power BI service also attempts to detect the high contrast settings selected for Windows, but the effectiveness and accuracy of that detection depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View** > **High contrast colors** while in Edit mode and then select the theme you would like to apply to the report.
 
 ![Screenshot of the Power BI service in edit mode, highlighting View and High-contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
 
