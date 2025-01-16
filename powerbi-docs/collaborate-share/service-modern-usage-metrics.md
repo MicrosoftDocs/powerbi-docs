@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 09/17/2024
+ms.date: 01/14/2025
 LocalizationGroup: Dashboards
 ---
 
@@ -397,7 +397,7 @@ The typical report opening time corresponds to the 50th percentile of the time i
 The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. You can change the time period by using the Date slicer on the Report performance page, such as to calculate week-over-week or biweekly trends.
 
 #### **There are four reports in the previous version of the usage metrics report, but the improved version only displays three.**
-The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
+The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. You can update it to cover only the past 30 days, if you want. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
 
 ## Troubleshoot refresh issues
 
