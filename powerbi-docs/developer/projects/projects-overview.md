@@ -142,7 +142,7 @@ Not every model object supports write operations. Applying changes outside of th
 
 Objects that support write operations:
 
-| Object                        | Connect to AS instance     | File change|
+| Object                        | Connect to AS instance     | File change / TMDL view|
 |-------------------------------|----------------------------|----------- |
 | Tables                        | No                         | Yes        |
 | Columns                       | Yes <sup>[1](#rc)</sup>, <sup>[2](#dt)</sup>| Yes        |
