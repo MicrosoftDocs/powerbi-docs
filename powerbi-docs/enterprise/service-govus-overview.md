@@ -41,7 +41,7 @@ Microsoft 365 provides different environments for government agencies to meet va
 >
 ### Buy a Power BI Pro subscription for government customers
 
-After you've deployed Microsoft 365, you can add a Power BI Pro subscription. To buy the Power BI Pro government service, follow the guidance in [Enroll your US government organization](service-govus-signup.md). Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
+After you deploy Microsoft 365, you can add a Power BI Pro subscription. To buy the Power BI Pro government service, follow the guidance in [Enroll your US government organization](service-govus-signup.md). Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
 
 > [!IMPORTANT]
 > Power BI US Government isn't available as a *Free* license. If you've purchased Power BI Premium, you don't have to assign licenses to users to allow them to consume content published to a Premium capacity. For all other access, including access to the admin portal and the ability to publish content to the Premium capacity, each user must be assigned a *Pro* or *Premium Per User (PPU)* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues.
@@ -86,7 +86,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | Content Delivery Network (CDN) | **GCC**: gov.content.powerapps.us<br>**GCC High**: high.content.powerapps.us<br>**DoD**: mil.content.powerapps.us |
 | Microsoft 365 integration | **GCC**: [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges)<br>**GCC High**: [US Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)<br>**DoD**: [US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | Portal |**GCC**: *.powerbigov.us<br>**GCC High**: *.high.powerbigov.us<br>**DoD**: *.mil.powerbigov.us |
-| Manage gateways, connections and data policies (preview) |**GCC**: gatewayadminportal-gov.azure.us<br>**GCC High**: gatewayadminportal-high.azure.us<br>**DoD**: gatewayadminportal-mil.azure.us |
+| Manage gateways, connections, and data policies (preview) |**GCC**: gatewayadminportal-gov.azure.us<br>**GCC High**: gatewayadminportal-high.azure.us<br>**DoD**: gatewayadminportal-mil.azure.us |
 | Service telemetry | **All**: dc.services.visualstudio.us |
 | Informational messages (optional) | **All**: arc.msn.com |
 | | |
