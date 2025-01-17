@@ -88,7 +88,7 @@ The Manage permissions page shows the list of users who have been given access b
 
 If you're an Admin or Member, go to your workspace and select **More options** which shows the context menu and select **Manage permissions**.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-08.png" alt-text="Screenshot of selecting Manage Permissions from the workspace context menu." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-08.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-08_2.png" alt-text="Screenshot of selecting Manage Permissions from the workspace context menu." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-08_2.png":::
 
 For users who were provided workspace roles, it shows the corresponding user, workspace role, and permissions. Admin and Members have **Read**, **Write**, and **Reshare** access to datamarts in this workspace. Contributors have **Read** and **Write** permissions. Viewers have **Read** permissions and can query all objects within the datamart. For users with whom a datamart was shared, item permissions such as **Read** and **Reshare** are provided by default.
 
