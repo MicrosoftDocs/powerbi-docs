@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Discover data items
 ms.topic: conceptual
-ms.date: 06/12/2024
+ms.date: 01/06/2025
 LocalizationGroup: Get started
 ---
 
@@ -26,7 +26,7 @@ The data discovery experience starts on the data hub. To get to the data hub:
 
 The image shows the OneLake data hub in the Power BI service.
 
-:::image type="content" source="media/end-user-data-hub/power-bi-data-hub.png" alt-text="Screenshot of the Power BI service data hub page.":::
+:::image type="content" source="media/end-user-data-hub/power-bi-data-hubs.png" alt-text="Screenshot of the Power BI service data hub page.":::
 
 The data hub shows a selection of recommended data items and a list of all the data items in the organization that you have permissions to access. If [semantic model discoverability](../collaborate-share/service-discovery.md) is enabled for your account, you also see a list of semantic models.
 
