@@ -8,12 +8,12 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 1/16/2025
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using R packages in the Power BI service
 
-You can use the powerful [R programming language](https://www.r-project.org/) to create visuals in the Power BI service. Many R packages are supported in the Power BI service and more are being supported all the time. Some packages aren't supported.
+You can use the powerful [R programming language](https://www.r-project.org/) to create visuals in the Power BI service. The Power BI service supports almost thousand packages.  
 
 The following sections provide an alphabetical table of which R packages are supported in Power BI, and which aren't. For more information about R in Power BI, see the [R visuals](../visuals/service-r-visuals.md) article.
 
@@ -24,8 +24,6 @@ Supported R packages for the Power BI service are found in [the following sectio
 ## Requirements and limitations of R packages
 
 There are a handful of requirements and limitations for R packages:
-
-* Current R runtime: Microsoft R 3.4.4
 * The Power BI service usually supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
 * The Power BI service supports packages published in the Comprehensive R Archive Network (CRAN). The service doesn't support private or custom R packages. Users are encouraged to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
 * The Power BI Desktop has two variations for R packages:
@@ -35,7 +33,19 @@ There are a handful of requirements and limitations for R packages:
 * For security and privacy reasons, R packages that provide client-server queries over the web, such as *RgoogleMaps*, in the service, aren't supported. Networking is blocked for such attempts. See the following section for a list of supported and unsupported R packages.
 * The approval process for including a new R package has a tree of dependencies. Some dependencies required to be installed in the service can't be supported.
 
-## R packages that are supported in Power BI
+### For reports in Premium/Fabric backed workspaces
+* Current R runtime: R 4.3.3
+
+### For non-Premium/Fabric backed workspaces/ Sov. Clouds/China 
+* Current R runtime: Microsoft R 3.4.4
+
+
+## R packages that are supported in Power BI (Premium/Fabric backed workspaces)
+<Add once Xin shares>
+
+
+
+## R packages that are supported in Power BI (non-Premium/Fabric backed workspaces/ Sov. Clouds/China)
 
 The following table shows which packages are supported in the Power BI service.
 
