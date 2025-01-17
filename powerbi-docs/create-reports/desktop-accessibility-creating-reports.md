@@ -129,7 +129,7 @@ In the **Selection pane**, selecting **Tab order** displays the current tab orde
 
 ### Titles and labels
 
-Visual and report page titles are important accessibility features that serves as a point of reference for the report consumer. Avoid using acronyms or jargon in your report titles; if you share the report with a new user or someone who is external to your organization, they might not know what your terms or acronyms mean. The following image shows a visual with an acronym in the title (on the left), and a clearer title for the visual on the right.
+Visual and report page titles are important accessibility features that serve as a point of reference for the report consumer. Avoid using acronyms or jargon in your report titles; if you share the report with a new user or someone who is external to your organization, they might not know what your terms or acronyms mean. The following image shows a visual with an acronym in the title (on the left), and a clearer title for the visual on the right.
 
 ![Screenshot of two sample titles, the vague CY Totals, and the clearer Current Year Sales Amount USD Totals.](media/desktop-accessibility/accessibility-creating-reports-10.png)
 
