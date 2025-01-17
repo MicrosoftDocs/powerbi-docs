@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/15/2024
+ms.date: 01/17/2025
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -135,6 +135,11 @@ The following table lists features of Power BI that aren't yet available in a pa
 | | |
 
 If a release is planned for an environment, we include the quarter of estimated availability.
+
+> [!NOTE]
+> US Government customers who operate in an air-gapped cloud should consult feature parity documentation in that environment to discover feature availability.
+>
+>
 
 |Feature |GCC |GCC High |DoD|
 |------|------|------|------|
