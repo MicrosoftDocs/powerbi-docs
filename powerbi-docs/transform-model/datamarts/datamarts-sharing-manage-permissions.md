@@ -77,7 +77,7 @@ Users can build reports with the datamart or use Analyze in Excel, and can also 
 
 The following image highlights the **Create a report** entry point in a datamart information window.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05.png" alt-text="Screenshot of Create a report for a datamart." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05_2.png" alt-text="Screenshot of Create a report for a datamart." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05_2.png":::
 
 > [!NOTE]
 > Sharing a datamart allows the recipient to access the datamart for downstream consumption and not to collaborate on the datamart creation. To enable other creators to collaborate on the datamart, you must provide Member, Admin or Contributor access to the workspace where the datamart is created.  
