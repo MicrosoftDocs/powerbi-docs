@@ -40,7 +40,7 @@ You can also start using datamarts from any dataflow you currently have as well.
 
 To create a datamart, navigate to your existing Power BI Premium or Premium Per User (PPU) workspace. Datamarts require a Power BI Premium subscription. In your Premium workspace, select **+ New** and then select **Datamart (Preview) to create a datamart.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-01.png" alt-text="Screenshot of create new datamart.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-01_2.png" alt-text="Screenshot of create new datamart.":::
 
 It usually takes approximately 10 seconds to provision a new datamart. Once initialized, you can load data into your datamart. For more information about getting data into a datamart, see the [get and transform data](#get-and-transform-data) section in this article.
 
@@ -55,7 +55,7 @@ To load data into your datamart, open your datamart (or create a new datamart) a
 
 If you choose to get data from another source, a data source selection window appears where you can select from a multitude of data sources. 
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-12.png" alt-text="Screenshot of different data sources for a datamart.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-12_2.png" alt-text="Screenshot of different data sources for a datamart.":::
 
 
 You can also drag and drop files from your computer to load data into your datamart, such as Excel files. Some data sources may require parameters or connection strings to properly connect.
@@ -71,7 +71,7 @@ For each table you select, a corresponding view is created in the datamart that 
 
 To model your data, navigate to **Model view** by selecting on the **Model View** icon at the bottom of the window, as shown in the following image.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-14.png" alt-text="Screenshot of the model view icon.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-14_2.png" alt-text="Screenshot of the model view icon.":::
 
 ### Adding or removing objects to the default semantic model
 
