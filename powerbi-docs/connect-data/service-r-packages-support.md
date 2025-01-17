@@ -41,7 +41,7 @@ There are a handful of requirements and limitations for R packages:
 
 
 ## R packages that are supported in Power BI (Premium/Fabric backed workspaces)
-<Add once Xin shares>
+To do - Add once Xin shares file
 
 
 
