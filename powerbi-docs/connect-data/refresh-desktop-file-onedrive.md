@@ -23,8 +23,6 @@ You can do a one-time, manual refresh right in Power BI Desktop by selecting **R
 
 When you import your Power BI Desktop file from OneDrive or SharePoint Online, you load data and model information into a semantic model in Power BI. After that, you refresh the semantic model in the Power BI service because that's what your reports are based on. Because the data sources are external, you can manually refresh the semantic model by using **Refresh now** or you can set up a refresh schedule by using **Schedule refresh**. 
 
-![Screenshot of the semantic model in Power B I Desktop, showing the Schedule refresh selection.](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
-
 When you refresh the semantic model, Power BI doesn't connect to the file on OneDrive or SharePoint Online to query for updated data. It uses information in the semantic model to connect directly to the data sources and query for updated data. Then, it loads that data into the semantic model. This refreshed data in the semantic model isn't synchronized back to the file on OneDrive or SharePoint Online.
 
 ## Automatic versus manual updates of model information
