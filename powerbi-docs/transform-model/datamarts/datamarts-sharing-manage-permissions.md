@@ -31,7 +31,7 @@ There are a few ways to share a datamart, described in the following sections.
 
 While in the workspace, select the **Share** option from the datamart’s context menu, as shown in the following image.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-01.png" alt-text="Screenshot of sharing a datamart from a workspace." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-01.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-01_2.png" alt-text="Screenshot of sharing a datamart from a workspace." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-01_2.png":::
 
 ### Share from the data hub
 
