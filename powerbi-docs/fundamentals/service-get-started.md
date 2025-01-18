@@ -224,7 +224,7 @@ Let's try out the Q&A experience for a dashboard.
 
    :::image type="content" source="media/service-get-started/dashboard-qna-country-profit-bar.png" alt-text="Screenshot that shows the Q&A bar chart visualization for the Financial Sample country and region data." border="false":::
 
-1. Pin the bar chart to your financial sample dashboard.
+   The data looks more interesting as a map, so we don't fin this bar chart.
 
 1. At the top, select **Exit Q&A** to return to your dashboard.
 
