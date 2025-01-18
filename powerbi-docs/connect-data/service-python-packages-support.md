@@ -17,10 +17,6 @@ You can use the powerful [Python programming language](https://www.python.org/) 
 
 The following sections provide an alphabetical table of which Python packages are supported in Power BI.
 
-## Request support for a new Python package
-
-Supported Python packages for Power BI are found in the [following section](#python-packages-that-are-supported-in-power-bi). If you would like to request support of a Python package not found in that list, submit your request to [Power BI Ideas](https://ideas.powerbi.com).
-
 ## Requirements and limitations of Python packages
 
 There are a handful of requirements and limitations for Python packages:
@@ -113,7 +109,7 @@ The following table shows which packages **are supported** in Power BI for repor
 The following table shows which packages **are supported** in Power BI reports in **non-Premium/Fabric backed workspaces**.
 
 |        Package        |   Version   |                                   Link                                   |
-|:----------------------|:------------|:-------------------------------------------------------------------------|
+|-----------------------|-------------|--------------------------------------------------------------------------|
 | `cycler` | 0.11.0 | [https://pypi.org/project/cycler](https://pypi.org/project/cycler) |
 | `joblib` | 1.1.0 | [https://pypi.org/project/joblib](https://pypi.org/project/joblib) |
 | `kiwisolver` | 1.4.4 | [https://pypi.org/project/kiwisolver](https://pypi.org/project/kiwisolver) |
