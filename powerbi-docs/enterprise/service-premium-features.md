@@ -6,11 +6,7 @@ ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: overview
-<<<<<<< HEAD
-ms.date: 12/26/2024
-=======
-ms.date: 01/12/2025
->>>>>>> 7388255b8a74476cc2bced7a0880233d332bf2fd
+ms.date: 01/19/2025
 LocalizationGroup: Premium
 ---
 
