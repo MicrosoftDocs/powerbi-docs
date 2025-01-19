@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/14/2024
+ms.date: 01/11/2025
 LocalizationGroup: Get started
 ---
 
@@ -55,7 +55,7 @@ The Power BI service runs in a browser. There are several ways to get started.
 
 On your first visit, Power BI opens your **Home** landing page. If **Home** doesn't open, select it from the navigation pane.
 
-:::image type="content" source="media/end-user-sign-in/power-bi-home-first.png" alt-text="A screenshot of the navigation pane with Home outlined.":::
+:::image type="content" source="media/end-user-sign-in/power-bi-homes.png" alt-text="A screenshot of the navigation pane with Home outlined.":::
 
 On Home, you see all the content that you have permission to use. There might not be much content at first, but that changes as you continue to use Power BI with your colleagues. If your colleagues have already shared content with you, you find it under **Recent** on **Home**.
 

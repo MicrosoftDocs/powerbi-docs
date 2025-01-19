@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/28/2024
+ms.date: 12/12/2024
 LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
@@ -60,6 +60,10 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 11. Optionally, indicate specific pages to export in the **Pages pageName -1** field. The page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL as shown in the example. 
  
     `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/xxxxxxxxxx`
+
+    Something like this:
+
+    `https://app.powerbi.com/groups/338cd931-b957-4ba6-a5fa-b0113dab53aa/reports/85ac7583-3bb2-4c2c-a1fa-5a4a875ba88c/ReportSection?ctid=72f988bf-86f1-41af-91ab-2d7cd011db47&experience=power-bi`
 
 12. Optionally, indicate a specific bookmark to display in the **Bookmark Name** field. You can find the bookmark name in the report URL after bookmarkGuid=, as shown in the example. Only *report* bookmarks are supported, not *personal* bookmarks. You can specify other parameters for the Power BI report. Find detailed descriptions of these parameters in the [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports).
 

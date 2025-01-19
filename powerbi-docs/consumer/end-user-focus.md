@@ -8,7 +8,7 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/13/2024
+ms.date: 01/07/2025
 LocalizationGroup: Common tasks
 ---
 
@@ -37,12 +37,11 @@ Focus mode and full screen mode are two different ways to see more detail in you
 
 In the following example, we started with a report (1), opened one of the visuals in focus mode (2) and then opened that same visual in full screen mode (3). 
 
-:::image type="content" source="media/end-user-focus/power-bi-reports.png" alt-text="Individual screenshots of a report view, focus mode, and full screen mode." Lightbox="media/end-user-focus/power-bi-reports.png":::
->>>>>>> 0c503460d027dc8fd874b257f9554b0d6c46955a
+:::image type="content" source="media/end-user-focus/power-bi-report-tier.png" alt-text="Individual screenshots of a report view, focus mode, and full screen mode." Lightbox="media/end-user-focus/power-bi-report-tier.png":::
 
 ## When to use full screen mode
 
-:::image type="content" source="media/end-user-focus/power-bi-dashboard-focus.png" alt-text="Screenshot of a dashboard in full screen mode and default mode." lightbox="media/end-user-focus/power-bi-dashboard-focus.png":::
+:::image type="content" source="media/end-user-focus/power-bi-dashboard-focus-mode.png" alt-text="Screenshot of a dashboard in full screen mode and default mode." lightbox="media/end-user-focus/power-bi-dashboard-focus-mode.png":::
 
 Display your Power BI service content (dashboards, report pages, and visuals) without the distraction of menus and nav panes. You get an unadulterated, full view of your content at a glance, all the time. This view is sometimes referred to as TV mode.
 
@@ -57,7 +56,7 @@ Use full screen mode to:
 
 ***Focus*** mode lets you expand (pop out) a visual or tile to see more detail. Maybe you have a dashboard or report that is a little crowded and you want to zoom in on only one visual. This function is a perfect use of focus mode.  
 
-:::image type="content" source="media/end-user-focus/power-bi-compare.png" alt-text="Screenshot of a dashboard tile in default mode and then focus mode." lightbox="media/end-user-focus/power-bi-compare.png":::
+:::image type="content" source="media/end-user-focus/power-bi-compares.png" alt-text="Screenshot of a dashboard tile in default mode and then focus mode." lightbox="media/end-user-focus/power-bi-compares.png":::
 
 While in focus mode, you can interact with any filters that were applied when this visual was created.  
 

@@ -26,7 +26,7 @@ If you use Power BI Desktop, you can also [create a report on a SharePoint List 
 
 In this video, watch Amanda demo creating a report from a SharePoint list in the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWOzjW]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=98c242ea-d9e5-4a6e-8111-a114de4f1b0f]
 
 ## Visualize in Power BI 
 

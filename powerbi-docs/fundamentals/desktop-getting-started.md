@@ -294,7 +294,7 @@ You can add text boxes, images, and buttons to your report pages from the **Inse
 When you finish creating your pages and visualizations, select **File** > **Save** and save your report. For more information about reports, see [Report View in Power BI Desktop](../create-reports/desktop-report-view.md).
 
 ## Share your work
-Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the report *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service. 
+Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the report *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service.
 
 To publish to the **Power BI** service from Power BI Desktop, from the **Home** tab of the ribbon, select **Publish**.
 
@@ -306,23 +306,9 @@ When the publish process is complete, you see the following dialog:
 
 ![Screenshot of Power B I Desktop showing the Publish Success message.](media/desktop-getting-started/gsg_syw_3.png)
 
-When you select the link to open the report in Power BI, your report opens in your Power BI site under **My workspace** > **Reports**. 
+When you select the link to open the report in Power BI, your report opens in your Power BI site under **My workspace** > **Reports**.
 
-Another way to share your work is to load it from within the **Power BI** service. Go to *https:\//app.powerbi.com* to open Power BI in a browser. On your Power BI **Home** page, select **Get data** at lower left to start the process of loading your Power BI Desktop report.
-
-![Screenshot of Power B I Desktop showing the Get Data option.](media/desktop-getting-started/pbi_gsg_getdata1.png)
-
-On the next page, select **Get** from the **Files** section.
-
-![Screenshot of Power B I Desktop showing the Get Data screen.](media/desktop-getting-started/pbi_gsg_getdata2.png)
-
-On the next page, select **Local File**. Browse to and select your Power BI Desktop *.pbix* file, and select **Open**. 
-
-After the file imports, you can see it listed under **My workspace** > **Reports** in the left pane of the Power BI service.
-
-![Screenshot of Power B I Desktop showing a file imported into Power B I.](media/desktop-getting-started/pbi_gsg_getdata4.png)
-
-When you select the file, the first page of the report appears. You can select different pages from the tabs at the left of the report. 
+The first page of the report appears. You can select different pages from the tabs at the left of the report.
 
 You can make changes to a report in the **Power BI** service by selecting **More options** > **Edit** from the top of the report canvas.
 
@@ -330,14 +316,11 @@ You can make changes to a report in the **Power BI** service by selecting **More
 
 To save your changes, select **File** > **Save a copy**.
 
-![Screenshot of Power B I Desktop showing the Save option.](media/desktop-getting-started/gsg-share-file-save-copy.png)
-
-
 There are all sorts of interesting visuals you can create from your report in the **Power BI** service, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service, see [Tips for designing a great dashboard](../create-reports/service-dashboards-design-tips.md). For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](../collaborate-share/service-share-dashboards.md).
 
 To share a report or dashboard, select **Share** > **Report** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
 
-Complete the **Share report** or **Share dashboard** screen to send an email or get a link to share your report or dashboard with others. 
+Complete the **Send link** screen to send an email or to get a link to share your report or dashboard with others.
 
 ![Screenshot of Power B I Desktop showing the Share Report screen.](media/desktop-getting-started/gsg_share6.png)
 
