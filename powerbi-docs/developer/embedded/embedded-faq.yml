@@ -189,7 +189,7 @@ sections:
           Yes, there are PowerShell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
           
           * [Rest APIs](/rest/api/power-bi-embedded/) 
-          * [PowerShell cmdlets](/powershell/module/azurerm.powerbiembedded/)
+          * [PowerShell cmdlets](/powershell/module/microsoftpowerbimgmt.capacities)
           
       - question: |
           What is the PBI Embedded capacity role in a PBI Embedded solution?
