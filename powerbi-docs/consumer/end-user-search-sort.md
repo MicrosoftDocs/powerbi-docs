@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/22/2023
+ms.date: 01/11/2025
 LocalizationGroup: Get started
 ---
 
@@ -28,7 +28,7 @@ In the **Search** field, type all or part of the name of a dashboard, report, wo
 
 In some Power BI areas, such as workspaces, you find two different **Search** fields. The **Search** field in the menu bar searches all of your content while the **Search** field on the workspace canvas searches only that workspace.
 
-:::image type="content" source="./media/end-user-search-sort/power-bi-workspace-search.png" alt-text="Screenshot of a workspace with two different search fields.":::
+:::image type="content" source="./media/end-user-search-sort/power-bi-workspaces-search.png" alt-text="Screenshot of a workspace with two different search fields.":::
 
 > [!NOTE]
 > Search is disabled for [B2B guest users](../collaborate-share/service-roles-new-workspaces.md). If a guest user enters a search term, no results are shown. 
@@ -37,7 +37,7 @@ In some Power BI areas, such as workspaces, you find two different **Search** fi
 
 If you have only a few pieces of content, sorting isn't necessary. But when you have long lists of dashboards and reports, sorting helps you find what you need. For example, this **Shared with me** content list has many items.
 
-:::image type="content" source="./media/end-user-search-sort/power-bi-shared-with-me-search.png" alt-text="Screenshot of a Shared with me content list with multiple items.":::
+:::image type="content" source="./media/end-user-search-sort/power-bi-shared-search.png" alt-text="Screenshot of a Shared with me content list with multiple items.":::
 
 Right now, this content list is sorted alphabetical by name, from Z to A. To change the sort criteria, select the arrow to the right of **Name**.
 
@@ -45,7 +45,7 @@ Right now, this content list is sorted alphabetical by name, from Z to A. To cha
 
 Sorting is also available in workspaces. In this example, the content is sorted by the **Refreshed** date. To set sorting criteria for workspaces, select a column header, and then select again to change the sorting direction.
 
-:::image type="content" source="./media/end-user-search-sort/power-bi-refreshed-new.png" alt-text="Screenshot of a content list sorted by the Refreshed date column.":::
+:::image type="content" source="./media/end-user-search-sort/power-bi-refreshed.png" alt-text="Screenshot of a content list sorted by the Refreshed date column.":::
 
 Not all columns can be sorted. Hover over the column headings to discover which can be sorted.
 

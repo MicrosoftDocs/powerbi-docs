@@ -109,13 +109,13 @@ With a few selections from these gridlines, alignment, and distribution tools, y
 
 # [Power BI service](#tab/powerbi-service)
 
-:::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-2.png" alt-text="Screenshot of the report canvas, showing how to use gridlines and snap-to-grid in Power BI service reports.":::
+:::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-2.png" alt-text="Screenshot of the report canvas, showing how to use gridlines and snap-to-grid in Power BI service reports." lightbox="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-2.png":::
 
 ## Enable gridlines, snap-to-grid, and smart guides
 
 To enable gridlines and snap-to-grid, select the **View** menu, then turn on **Show gridlines** and **Snap to grid**. You can select one or both options; they operate independently. In addition, you can turn on **Show smart guides**, which provide relative guidelines when moving a visual or group of visuals.
 
-:::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-enable-grid-options-2.png" alt-text="Screenshot of the report canvas, showing how to enable gridlines and snap to grid in Power BI Desktop reports.":::
+:::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-enable-grid-options-2.png" alt-text="Screenshot of the report canvas, showing how to enable gridlines and snap to grid in Power BI Desktop reports." lightbox="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-enable-grid-options-2.png":::
 
 ## Use gridlines
 
@@ -170,6 +170,6 @@ You can manage the front-to-back order of visuals in a report, often referred to
 
 You can set the z-order of your visuals using the **Selection pane**. On the **View** menu, turn on the **Selection pane**.
 
-:::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-selection-pane-2.png" alt-text="Screenshot of the Power BI service canvas, showing the Selection pane, which sets the front-to-back order of visuals.":::
+:::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-selection-pane-2.png" alt-text="Screenshot of the Power BI service canvas, showing the Selection pane, which sets the front-to-back order of visuals." lightbox="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-selection-pane-2.png":::
 
 To reorder the layers, either drag a name to the desired position, or use the up and down arrows.

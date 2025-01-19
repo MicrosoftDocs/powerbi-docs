@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 12/26/2024
+ms.date: 01/15/2025
 #customer intent: As a developer, I want to create a Microsoft Entra tenant so that I can create a custom app that calls Power BI REST APIs.
 ---
 

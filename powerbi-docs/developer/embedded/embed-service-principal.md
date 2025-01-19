@@ -169,8 +169,8 @@ To create an Azure security group manually, follow the instructions in [Create a
 
 The following sample script creates a new security group. It also adds the service principal that you created earlier to the new security group.
 
-- Before you run the script, replace `<app-client-ID>` with the client ID that you recorded earlier for your new app.
-- After you run the script, make a note of the object ID of the new security group, which you can find in the script output.
+* Before you run the script, replace `<app-client-ID>` with the client ID that you recorded earlier for your new app.
+* After you run the script, make a note of the object ID of the new security group, which you can find in the script output.
 
 ```powershell
 # Sign in as an admin.
@@ -264,8 +264,8 @@ Add-PowerBIWorkspaceUser -Id $($pbiWorkspace.Id) -AccessRight Member -PrincipalT
 
 The following script adds a security group as a workspace member. Before you run the script:
 
-- Replace `<security-group-object-ID>` with the object ID that you recorded earlier for your new security group.
-- Replace `<workspace-name>` with the name of the workspace that you'd like to give the security group access to.
+* Replace `<security-group-object-ID>` with the object ID that you recorded earlier for your new security group.
+* Replace `<workspace-name>` with the name of the workspace that you'd like to give the security group access to.
 
 ```powershell
 # Sign in to Power BI.

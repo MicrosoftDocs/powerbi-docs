@@ -55,7 +55,7 @@ If requested by Microsoft support, send the ZIP file containing the diagnostic d
 
 The following video shows the diagnostics collection process:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDX8S]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0250abc0-9ae7-4308-9b8e-63c0a2eab43b]
 
 ## Collecting mashup traces
 

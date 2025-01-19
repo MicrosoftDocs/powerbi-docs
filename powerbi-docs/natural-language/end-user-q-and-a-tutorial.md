@@ -7,7 +7,7 @@ ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: tutorial
-ms.date: 07/28/2023
+ms.date: 01/12/2025
 LocalizationGroup: Ask questions of your data
 ---
 
@@ -74,7 +74,7 @@ Don't see the Q&A box? See [Considerations and limitations](../consumer/end-user
 
 ## Use Q&A on a dashboard in the Power BI service
 
-The Q&A field is where you type your question using natural language. It's located in the upper-left corner of your dashboard. Q&A recognizes the words you type and figures out where, and in which semantic model, to find the answer. [Q&A also helps you form your question with autocompletion, restatement, and other textual and visual aids](q-and-a-intro.md). 
+The Q&A field is where you type your question using natural language. The Q&A field is in the upper-left corner of your dashboard. Q&A recognizes the words you type and figures out where, and in which semantic model, to find the answer. [Q&A also helps you form your question with autocompletion, restatement, and other textual and visual aids](q-and-a-intro.md). 
 
 Let's try it out. 
 
@@ -85,7 +85,7 @@ Let's try it out.
 
     ![Screenshot shows a Power BI dashboard with an option to Ask a question about your data.](media/end-user-q-and-a-tutorial/powerbi-qna.png)
 
-    Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying semantic models and might even see complete questions listed if the semantic model owner has created [featured questions](../create-reports/service-q-and-a-create-featured-questions.md).
+    Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying semantic models. And, you might even see complete questions listed if the semantic model owner created [featured questions](../create-reports/service-q-and-a-create-featured-questions.md).
 
     :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-show-all.png" alt-text="Screenshot shows Q&A with Show all suggestions selected.":::
 
@@ -100,15 +100,15 @@ Let's try it out.
 
 1. Choose one of these questions as a starting point or begin typing your own question and select from the dropdown suggestions.
 
-   ![Screenshot of an example Q&A entry with suggestions.](media/end-user-q-and-a-tutorial/power-bi-qna-select-a-question-how-many-stores.png)
+   ![Screenshot of an example Q&A entry with suggestions.](media/end-user-q-and-a-tutorial/power-bi-qna-select-question-stores.png)
 
 1. As you type a question, Power BI helps you with autocomplete, visual cues, restatement, and feedback. Power BI also picks the best visualization to display your answer. 
 
-   ![Screenshot of an example Q&A entry, showing a map visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-how-many-stores-by-state.png)
+   ![Screenshot of an example Q&A entry, showing a map visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-how-many-stores-state.png)
 
 1. The visualization changes dynamically as you modify the question.
 
-   ![Screenshot of an example Q&A entry, showing a bar graph visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-stores-by-state-bar-chart.png)
+   ![Screenshot of an example Q&A entry, showing a bar graph visualization.](media/end-user-q-and-a-tutorial/power-bi-qna-stores-state-bar-chart.png)
 
 1. Don't like the default visualization that Power BI Q&A chose? Edit the natural language question to include the visualization type that you'd prefer.
 
@@ -117,13 +117,13 @@ Let's try it out.
 
 1. When you're happy with the result, pin the visualization to a dashboard by selecting the pin icon in the top right corner. If the dashboard was shared with you, or is part of an app, you might not be able to pin.
 
-   ![Screenshot of an example Q&A entry, highlighting the Pin visual.](media/end-user-q-and-a-tutorial/power-bi-qna-pin-visual.png)
+   ![Screenshot of an example Q&A entry, highlighting the Pin visual.](media/end-user-q-and-a-tutorial/power-bi-qna-pin.png)
 
 
 
 ## Considerations and limitations
 
-- If you've connected to a semantic model using a live connection or gateway, Q&A needs to be [enabled for that semantic model](../create-reports/service-q-and-a-direct-query.md).
+- If you connected to a semantic model using a live connection or gateway, Q&A needs to be [enabled for that semantic model](../create-reports/service-q-and-a-direct-query.md).
 
 - At the current time, Power BI Q&A only supports answering natural language queries asked in English. There's a preview available for Spanish that your Power BI administrator can enable.
 
