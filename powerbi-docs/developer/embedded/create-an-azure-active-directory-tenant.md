@@ -1,5 +1,5 @@
 ---
-title: Create a Microsoft Entra tenant for with Power BI embedded 
+title: Create a Microsoft Entra tenant for Power BI embedded 
 description: Learn how to create a new Microsoft Entra tenant for a custom embedded analytics application that calls Power BI REST APIs.
 author: mberdugo
 ms.author: monaberdugo
@@ -19,7 +19,7 @@ This article shows you how to create a Microsoft Entra tenant to use when creati
 
 A Microsoft Entra tenant is a reserved Microsoft Entra service instance that an organization receives and owns once it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Microsoft 365. Each tenant represents an organization, and is distinct and separate from other Microsoft Entra tenants. Once you have a Microsoft Entra tenant, you can define an application and assign it permissions so it can call [Power BI REST APIs](/rest/api/power-bi/).
 
-Your organization may already have a Microsoft Entra tenant that you can use for your app. If idoesn't, here's how you can create a new tenant specifically for your app.
+Your organization may already have a Microsoft Entra tenant that you can use for your app. If it doesn't, here's how you can create a new tenant specifically for your app.
 
 <a name='create-an-azure-active-directory-tenant'></a>
 
