@@ -82,7 +82,7 @@ When you select **Insert Table**, the **Create Table** dialog opens, where you c
 
 - Excel and Power BI visuals use different query languages and data load behaviors, so data load performance can be different between Excel and Power BI.
 
-- The Power BI Datasets in Excel Add-In is currently unavailable in Excel for the web in all Sovereign clouds.
+- The Power BI Datasets Excel add-in is currently unavailable in Excel for the web in all Sovereign clouds.
 
 ## Related content
 
