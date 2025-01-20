@@ -41,11 +41,11 @@ You can view the lineage of the datamart by selecting **Lineage > Open lineage**
 
 The following image shows the lineage of a datamart.
 
-:::image type="content" source="media/datamarts-discovery/datamarts-discovery-02.png" alt-text="Screenshot of datamart lineage view." lightbox="media/datamarts-discovery/datamarts-discovery-02.png":::
+:::image type="content" source="media/datamarts-discovery/_datamarts-discovery-02_2.png" alt-text="Screenshot of datamart lineage view." lightbox="media/datamarts-discovery/datamarts-discovery-02_2.png":::
 
 To view any dependent items of the selected datamart, select the **Impact analysis** menu, which is displayed along the right side of the screen.
 
-:::image type="content" source="media/datamarts-discovery/datamarts-discovery-03.png" alt-text="Screenshot of datamart impact analysis pane." lightbox="media/datamarts-discovery/datamarts-discovery-03.png":::
+:::image type="content" source="media/datamarts-discovery/datamarts-discovery-03_2.png" alt-text="Screenshot of datamart impact analysis pane." lightbox="media/datamarts-discovery/datamarts-discovery-03_2.png":::
 
 ### Data hub in Power BI Desktop
 
