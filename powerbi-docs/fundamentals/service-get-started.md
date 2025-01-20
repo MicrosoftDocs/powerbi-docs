@@ -109,7 +109,7 @@ You can get AI assistance from Copilot to create a Power BI report.
   Create a Gross Sales report.
   ```
 
-    Copilot creates a report page and names it *Gross Sales Report*. 
+   Copilot creates a report page and names it *Gross Sales Report*. 
 
     Microsoft Copilot is powered by AI, so surprises and mistakes are possible. For more information see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
 
