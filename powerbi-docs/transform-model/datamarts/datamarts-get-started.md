@@ -176,7 +176,7 @@ There are two ways to rename a datamart:
 
 First, from within the **Datamart editor**, select the datamart name from the top of the editor and edit the datamart name in the window that appears, as shown in the following image. Select on the ribbon outside of the rename window to save the new name.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-07.png" alt-text="Screenshot of renaming a datamart.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-07_2.png" alt-text="Screenshot of renaming a datamart.":::
 
 Alternatively, you can change the datamart name from the workspace list view. Select the more menu (...) next to the datamart name in the workspace view. 
 
