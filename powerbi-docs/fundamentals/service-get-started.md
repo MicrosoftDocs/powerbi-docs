@@ -108,17 +108,18 @@ There are many ways to build a report. In this article, we start by using Micros
 
 ### Use Copilot to create a report in Power BI
 
-You can get AI assistance from Copilot to create a Power BI report.
+  You can get AI assistance from Copilot  Generate a Power BI report based on gross sales in Power BI.
+    
+    ```copilot-prompt
+    Example prompt that might contain placeholders that the user replaces with their information.
+    For example, generate a connection string that connects to a SQL server database with <address> that uses managed identity for authentication.
+    ```
 
-Generate a Power BI report based on gross sales in Power BI.
+  Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
- ```copilot-prompt
- Create a Gross Sales report.
- ```
 
    Copilot creates a report page and names it *Gross Sales Report*. 
 
-    Microsoft Copilot is powered by AI, so surprises and mistakes are possible. For more information see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
 
 ### Pin a report visual to a dashboard
 
