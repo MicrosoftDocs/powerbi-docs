@@ -125,7 +125,7 @@ You can hide elements of your datamart from downstream reporting by selecting **
 
 You can also hide the entire table and individual columns by using the **Model view** canvas options, as shown in the following image.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-18.png" alt-text="Screenshot of hiding an entire table from downstream reporting.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-18_2.png" alt-text="Screenshot of hiding an entire table from downstream reporting.":::
 
 
 ### Access auto-generated semantic models
