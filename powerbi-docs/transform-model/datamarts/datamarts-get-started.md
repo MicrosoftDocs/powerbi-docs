@@ -130,11 +130,11 @@ You can also hide the entire table and individual columns by using the **Model v
 
 ### Access auto-generated semantic models
 
-To access auto-generated semantic models, go to the Premium workspace and find the semantic model that matches the name of the datamart. 
+To access auto-generated semantic models, go to the Premium workspace and find the semantic model that matches the name of the datamart.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-19.png" alt-text="Screenshot of finding a semantic model.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-19_2.png" alt-text="Screenshot of finding a semantic model.":::
 
-To load the semantic model, click the name of the semantic model. 
+To load the semantic model, click the name of the semantic model.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of loading a semantic model." lightbox="media/datamarts-get-started/datamarts-get-started-20.png":::
 
