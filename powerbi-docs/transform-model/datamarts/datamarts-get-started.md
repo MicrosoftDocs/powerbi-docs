@@ -152,7 +152,7 @@ You can refresh a datamart in two ways:
 
 To set up incremental refresh for a datamart, select the table for which you want to set up incremental refresh for in the datamart editor. In the **Table tools** ribbon, select the **Incremental refresh** icon, and a right pane appears enabling you to configure incremental refresh for the selected table.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-06.png" alt-text="Screenshot of configure incremental refresh for a table in a datamart.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-06_2.png" alt-text="Screenshot of configure incremental refresh for a table in a datamart.":::
 
 ## Datamarts and deployment pipelines
 Datamarts are supported in deployment pipelines. Using deployment pipelines, you can deploy updates to your datamart across a designated pipeline. You can also use rules to connect to relevant data in each stage of the pipeline. To learn how to use deployment pipelines, see [Get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines).
