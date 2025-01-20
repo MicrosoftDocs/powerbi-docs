@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 01/13/2025
+ms.date: 01/18/2025
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -99,13 +99,19 @@ After you connect data to build a report, you're ready to start exploring. When 
 
 We can start by asking Copilot to review our data and suggest some visuals. 
    
-### Create report visuals with Copilot
+### Use Microsoft Copilot to create a report in Power BI
 
-Open Copilot and ask it to create a report for you. 
+You can get AI assistance from Copilot to create a Power BI report.
 
-1. In the prompt field, type "Create a Gross Sales report." Copilot creates a report page and names it *Gross Sales Report*. 
+Generate a Power BI report based on gross sales in Power BI.
 
-    :::image type="content" source="media/service-get-started/power-bi-copilot.png" alt-text="Screenshot showing the report canvas and the Copilot pane.":::
+  ```copilot-prompt
+  Create a Gross Sales report.
+  ```
+
+Copilot creates a report page and names it *Gross Sales Report*. 
+
+Microsoft Copilot is powered by AI, so surprises and mistakes are possible. For more information see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
 
 1. Create a new dashboard using one of the visuals from the report. Select the *Gross Sales Trend Over Time* visual. Hover over the visual and select **Pin visual** > **New dashboard** > **Keep current theme**. Give the new dashboard a name and select **Pin**. 
 
@@ -118,7 +124,7 @@ Open Copilot and ask it to create a report for you.
 
 1. Add a new report page by selecting the plus icon (+) at the bottom of the report.
 
-1. Ask Copilot to suggest content. Type or select **Suggest content for a new report page** and then choose **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
+1. Ask Copilot to suggest content. Select **Suggest content for a new report page** and then choose **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
 
 1. Select another visual to pin to your dashboard. Select **Profit by Product** and pin it to the same dashboard. 
 
