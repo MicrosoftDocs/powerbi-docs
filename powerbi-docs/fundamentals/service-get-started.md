@@ -105,9 +105,9 @@ You can get AI assistance from Copilot to create a Power BI report.
 
 1. Generate a Power BI report based on gross sales in Power BI.
 
-  ```copilot-prompt
-  Create a Gross Sales report.
-  ```
+```copilot-prompt
+Create a Gross Sales report.
+```
 
    Copilot creates a report page and names it *Gross Sales Report*. 
 
