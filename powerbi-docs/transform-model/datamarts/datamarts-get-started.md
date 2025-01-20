@@ -148,7 +148,7 @@ You can refresh a datamart in two ways:
 
 2. From the datamart settings page, select **Scheduled refresh**
 
-    :::image type="content" source="media/datamarts-get-started/datamarts-get-started-05.png" alt-text="Screenshot of scheduled refresh for a datamart in the settings page.":::
+    :::image type="content" source="media/datamarts-get-started/datamarts-get-started-05_2.png" alt-text="Screenshot of scheduled refresh for a datamart in the settings page.":::
 
 To set up incremental refresh for a datamart, select the table for which you want to set up incremental refresh for in the datamart editor. In the **Table tools** ribbon, select the **Incremental refresh** icon, and a right pane appears enabling you to configure incremental refresh for the selected table.
 
