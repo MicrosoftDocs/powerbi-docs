@@ -8,6 +8,8 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 01/18/2025
+ms.collection: ce-skilling-ai-copilot
+ms.custom: copilot-scenario-highlight
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -99,28 +101,37 @@ After you connect data to build a report, you're ready to start exploring. When 
 
 We can start by asking Copilot to review our data and suggest some visuals. 
    
-### Use Microsoft Copilot to create a report in Power BI
+## Build a report
+
+There are many ways to build a report. In this article, we start by using Microsoft Copilot to create some report pages. Next, we add additional visuals to a report page from scratch. 
+
+
+### Use Copilot to create a report in Power BI
 
 You can get AI assistance from Copilot to create a Power BI report.
 
-1. Generate a Power BI report based on gross sales in Power BI.
+Generate a Power BI report based on gross sales in Power BI.
 
-```copilot-prompt
-Create a Gross Sales report.
-```
+ ```copilot-prompt
+ Create a Gross Sales report.
+ ```
 
    Copilot creates a report page and names it *Gross Sales Report*. 
 
     Microsoft Copilot is powered by AI, so surprises and mistakes are possible. For more information see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
 
-1. Create a new dashboard using one of the visuals from the report. Select the *Gross Sales Trend Over Time* visual. Hover over the visual and select **Pin visual** > **New dashboard** > **Keep current theme**. Give the new dashboard a name and select **Pin**. 
+### Pin a report visual to a dashboard
 
-    After you pin a visualization, it appears on the dashboard as a *tile*. The data in the visualization stays up-to-date so you can track the latest value at a glance.
+Create a new dashboard using one of the visuals from the report. Select the *Gross Sales Trend Over Time* visual. Hover over the visual and select **Pin visual** > **New dashboard** > **Keep current theme**. Give the new dashboard a name and select **Pin**. 
+
+After you pin a visualization, it appears on the dashboard as a *tile*. The data in the visualization stays up-to-date so you can track the latest value at a glance.
 
     > [!NOTE]
     > When the report is new, you're prompted to save the report before you can pin the visualization to a dashboard. Power BI saves the report to the selected location. The default is **My workspace**. Power BI shows the report in Reading view.
 
-1. To continue editing the report, select **Edit** from the top menu bar. 
+To continue editing the report, select **Edit** from the top menu bar.
+
+### Use Copilot to suggest insights
 
 1. Add a new report page by selecting the plus icon (+) at the bottom of the report.
 
