@@ -118,7 +118,7 @@ There are many ways to build a report. In this article, we start by using Micros
   Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 
-   Copilot creates a report page and names it *Gross Sales Report*. 
+Copilot creates a report page and names it *Gross Sales Report*. 
 
 
 ### Pin a report visual to a dashboard
@@ -127,8 +127,8 @@ Create a new dashboard using one of the visuals from the report. Select the *Gro
 
 After you pin a visualization, it appears on the dashboard as a *tile*. The data in the visualization stays up-to-date so you can track the latest value at a glance.
 
-    > [!NOTE]
-    > When the report is new, you're prompted to save the report before you can pin the visualization to a dashboard. Power BI saves the report to the selected location. The default is **My workspace**. Power BI shows the report in Reading view.
+> [!NOTE]
+> When the report is new, you're prompted to save the report before you can pin the visualization to a dashboard. Power BI saves the report to the selected location. The default is **My workspace**. Power BI shows the report in Reading view.
 
 To continue editing the report, select **Edit** from the top menu bar.
 
