@@ -103,15 +103,15 @@ We can start by asking Copilot to review our data and suggest some visuals.
 
 You can get AI assistance from Copilot to create a Power BI report.
 
-Generate a Power BI report based on gross sales in Power BI.
+1. Generate a Power BI report based on gross sales in Power BI.
 
   ```copilot-prompt
   Create a Gross Sales report.
   ```
 
-Copilot creates a report page and names it *Gross Sales Report*. 
+    Copilot creates a report page and names it *Gross Sales Report*. 
 
-Microsoft Copilot is powered by AI, so surprises and mistakes are possible. For more information see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
+    Microsoft Copilot is powered by AI, so surprises and mistakes are possible. For more information see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
 
 1. Create a new dashboard using one of the visuals from the report. Select the *Gross Sales Trend Over Time* visual. Hover over the visual and select **Pin visual** > **New dashboard** > **Keep current theme**. Give the new dashboard a name and select **Pin**. 
 
