@@ -103,7 +103,7 @@ During the session, users may create multiple tabs in the model view to further 
 
 To create a [measure](../desktop-measures.md) (a measure is a collection of standardized metrics) select the table in the **Table Explorer** and select the **New Measure** button in the ribbon, as shown in the following image.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-15.png" alt-text="Screenshot of creating a measure.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-15_2.png" alt-text="Screenshot of creating a measure.":::
 
 Enter the measure into the formula bar and specify the table and the column to which it applies. The formula bar lets you enter your measure. Similar to Power BI Desktop, the DAX editing experience in datamarts presents a rich editor complete with auto-complete for formulas (intellisense). The DAX editor enables you to easily develop measures right in datamart, making it a more effective single source for business logic, semantics, and business critical calculations.
 
@@ -121,7 +121,7 @@ Select the **Confirm** button when your relationship is complete to save the rel
 
 You can hide elements of your datamart from downstream reporting by selecting **Table view** and right-clicking on the column or table you want to hide. Then select **Hide in report view** from the menu that appears to hide the item from downstream reporting.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-17.png" alt-text="Screenshot of hiding an element from downstream reporting.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-17_2.png" alt-text="Screenshot of hiding an element from downstream reporting.":::
 
 You can also hide the entire table and individual columns by using the **Model view** canvas options, as shown in the following image.
 
