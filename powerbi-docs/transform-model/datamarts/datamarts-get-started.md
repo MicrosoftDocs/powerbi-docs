@@ -136,19 +136,17 @@ To access auto-generated semantic models, go to the Premium workspace and find t
 
 To load the semantic model, click the name of the semantic model.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of loading a semantic model." lightbox="media/datamarts-get-started/datamarts-get-started-20.png":::
-
-
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20_2.png" alt-text="Screenshot of loading a semantic model." lightbox="media/datamarts-get-started/datamarts-get-started-20_2.png":::
 
 ## Manage datamart refresh
 
-You can refresh a datamart in two ways: 
+You can refresh a datamart in two ways:
 
-1.	From the datamart context menu, select **Refresh now** or select **Scheduled refresh**.
+1. From the datamart context menu, select **Refresh now** or select **Scheduled refresh**.
 
     :::image type="content" source="media/datamarts-get-started/datamarts-get-started-04.png" alt-text="Screenshot of datamart context menu for refresh.":::
 
-2.	From the datamart settings page, select **Scheduled refresh**
+2. From the datamart settings page, select **Scheduled refresh**
 
     :::image type="content" source="media/datamarts-get-started/datamarts-get-started-05.png" alt-text="Screenshot of scheduled refresh for a datamart in the settings page.":::
 
