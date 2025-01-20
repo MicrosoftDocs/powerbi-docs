@@ -53,12 +53,7 @@ Each semantic model card shows the following information:
 - Timestamp for the last time the semantic model was refreshed. 
 - Names of the tables in the semantic model 
 - Redirect web link to Power BI report(s) using the semantic model in the Power BI service.  
-- Redirect web link to the details page of the semantic model in the Power BI service (`https://app.powerbi.com`) 
-
-Near the search bar in the pane, there's also a redirect web link to the Power BI Data hub (`https://app.powerbi.com/datahub`). There, you can view all Power BI semantic models and other data artifacts you have access to. When you select the web link, the Power BI service opens in a new tab in your web browser.
-
-:::image type="content" source="media/service-connect-excel-power-bi-datasets/power-bi-data-hub.png" alt-text="SCreenshot of the Power BI Data hub." lightbox="media/service-connect-excel-power-bi-datasets/power-bi-data-hub.png"::::
-
+ 
 ## Connect to your Power BI data in Excel 
 
 To start exploring your Power BI data in Excel, select one of the pre-loaded semantic models in the pane or find additional semantic models by typing your search parameters in the search bar and pressing Enter on your keyboard.
