@@ -159,13 +159,13 @@ Datamarts are supported in deployment pipelines. Using deployment pipelines, you
 
 ## Access or load an existing datamart
 
-To access an existing datamart, navigate to your Power BI Premium workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image. 
+To access an existing datamart, navigate to your Power BI Premium workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-02_2.png" alt-text="Screenshot of finding an existing datamart from all items.":::
 
 You can also select the **Datamarts (Preview)** tab in your Premium workspace, and see a list of available datamarts.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-03.png" alt-text="Screenshot of select datamart from list of datamarts.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-03_2.png" alt-text="Screenshot of select datamart from list of datamarts.":::
 
 Select the datamart name to load the datamart.
 
