@@ -7,7 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 01/13/2025
+ms.date: 01/18/2025
+ms.collection: ce-skilling-ai-copilot
+ms.custom: copilot-scenario-highlight
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -99,26 +101,40 @@ After you connect data to build a report, you're ready to start exploring. When 
 
 We can start by asking Copilot to review our data and suggest some visuals. 
    
-### Create report visuals with Copilot
+## Build a report
 
-Open Copilot and ask it to create a report for you. 
+There are many ways to build a report. In this article, we start by using Microsoft Copilot to create some report pages. Next, we add additional visuals to a report page from scratch. 
 
-1. In the prompt field, type "Create a Gross Sales report." Copilot creates a report page and names it *Gross Sales Report*. 
 
-    :::image type="content" source="media/service-get-started/power-bi-copilot.png" alt-text="Screenshot showing the report canvas and the Copilot pane.":::
+### Use Copilot to create a report in Power BI
 
-1. Create a new dashboard using one of the visuals from the report. Select the *Gross Sales Trend Over Time* visual. Hover over the visual and select **Pin visual** > **New dashboard** > **Keep current theme**. Give the new dashboard a name and select **Pin**. 
+You can get AI assistance from Copilot. Generate a Power BI report based on gross sales in Power BI.
+    
+```copilot-prompt
+Create a Gross Sales report.
+ ```
 
-    After you pin a visualization, it appears on the dashboard as a *tile*. The data in the visualization stays up-to-date so you can track the latest value at a glance.
+Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-    > [!NOTE]
-    > When the report is new, you're prompted to save the report before you can pin the visualization to a dashboard. Power BI saves the report to the selected location. The default is **My workspace**. Power BI shows the report in Reading view.
 
-1. To continue editing the report, select **Edit** from the top menu bar. 
+Copilot creates a report page and names it *Gross Sales Report*. 
+
+### Pin a report visual to a dashboard
+
+Create a new dashboard using one of the visuals from the report. Select the *Gross Sales Trend Over Time* visual. Hover over the visual and select **Pin visual** > **New dashboard** > **Keep current theme**. Give the new dashboard a name and select **Pin**. 
+
+After you pin a visualization, it appears on the dashboard as a *tile*. The data in the visualization stays up-to-date so you can track the latest value at a glance.
+
+> [!NOTE]
+> When the report is new, you're prompted to save the report before you can pin the visualization to a dashboard. Power BI saves the report to the selected location. The default is **My workspace**. Power BI shows the report in Reading view.
+
+To continue editing the report, select **Edit** from the top menu bar.
+
+### Use Copilot to suggest insights
 
 1. Add a new report page by selecting the plus icon (+) at the bottom of the report.
 
-1. Ask Copilot to suggest content. Type or select **Suggest content for a new report page** and then choose **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
+1. Ask Copilot to suggest content. Select **Suggest content for a new report page** and then choose **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
 
 1. Select another visual to pin to your dashboard. Select **Profit by Product** and pin it to the same dashboard. 
 
