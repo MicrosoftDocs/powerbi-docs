@@ -19,27 +19,13 @@ The card shows:
 
 | Item         | Description |
 |:-------------|:-------------|
-| Item name ||
-| Location ||
-| C||
-|||
-|||
+| Item name | The name of the linked-to item |
+| Location | The location indicates whether the link links to the report directly, or indirectly as part of the URL of an org app. For example:<br>- *Workspace > AdventureWorks* indicates that the link points directly to the AdventureWorks report.<br>- *Apps > AdventureWorkStores* indicates that the report is being pointed to as part of the URL for an app called AdventureWorksApp.	|
+| Open Copilot summary in Power BI | Opens the item in the Power BI app in Teams, with the summary displayed in the Copilot pane. The Open Copilot summary button only appears if Copilot requirements are met. |
+| Open | Opens the item in the Power BI app in Teams. |
+| Subscribe | Navigates the user to the Subscriptions pane in the Power BI Teams app, where they can create a subscription for the item. |
+| Open to access | If the user doesn't have access to the item, the card will have an Open to access button the user can use to request access. |
 
-* Item name
-
-* Item location: The location indicates whether the link links to the report directly, or indirectly as part of the URL of an org app. For example:
-   
-   * Workspace > \<report_name\> indicates that the link points directly to the report.
-   
-   * Apps > \<app_name\> indicates that the report is being pointed to as part of a URL for an app.	
-
-* Open button: Opens the item in the Power BI app in Teams.
-
-* Copilot button: Opens the item in the Power BI app in Teams, with the summary displayed in the Copilot pane. The Open Copilot summary button only appears if Copilot requirements are met. 
-
-* Subscribe: Navigates the user to the Subscriptions pane in the Power BI Teams app, where they can create a subscription for the item.
-
-* Open to access: If the user doesn’t have access to the item, the card will have an Open to access button the user can use to request access.
 
 
 
@@ -59,16 +45,7 @@ See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft
 
 ## Get a link preview
 
-Follow these steps to get a link preview for your Power BI content.
-
-1. In the Power BI service, open the item you want to share and copy the link to it. You can copy the link from the browser address bar or via the **Share** option.
-
-1. Paste the link in the Microsoft Teams message box. Sign in to the link preview service if prompted.
-
-1. The link preview appears after successful sign-in.
-
-   :::image type="content" source="./media/service-teams-link-preview/service-teams-link-preview-basic.png" alt-text="Screenshot showing a link preview card for a Power BI item in the Teams message box.":::
-
+Give steps, with note about waiting for the card to appear.
 
 ## Considerations and limitations
 
