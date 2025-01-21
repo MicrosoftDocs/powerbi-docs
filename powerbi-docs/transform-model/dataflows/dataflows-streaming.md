@@ -63,7 +63,7 @@ To create a streaming dataflow:
 1. Open the Power BI service in a browser, and then select a Premium-enabled workspace. (Streaming dataflows, like regular dataflows, aren't available in **My Workspace**.)
 1. Select the **New** dropdown menu, and then choose **Streaming dataflow**.
 
-   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-02.png" alt-text="Screenshot that shows the New menu options with streaming dataflow highlighted.":::
+   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-02_2.png" alt-text="Screenshot that shows the New menu options with streaming dataflow highlighted.":::
 
 1. On the side pane that opens, you must name your streaming dataflow. Enter a name in the **Name** box (1), and then select **Create** (2).
 
