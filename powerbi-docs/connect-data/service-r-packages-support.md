@@ -36,7 +36,7 @@ The following sections provide an alphabetical table of which R packages are sup
 
 
 ## R packages that are supported in Power BI (Premium/Fabric backed workspaces)
-To do - Add once Xin shares file
+
 
 
 
@@ -1037,6 +1037,14 @@ The following table shows which packages are not supported in the Power BI servi
 | RgoogleMaps |10/05/2016 |Networking is blocked |
 | mailR |10/03/2016 |Networking is blocked |
 | RevoScaleR |8/30/2016 |Ships only with Microsoft R Server |
+
+
+## Considerations and limitations
+
+- R visuals are not supported with Service Principal profiles
+- The R visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of <30Mb
+ 
+
 
 ## Related content
 
