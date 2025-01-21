@@ -36,7 +36,7 @@ Alternatively you can use the **Design view** icon found along the bottom of the
 
 To create a query, drag and drop tables from the Object explorer on the left on to the canvas.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-03.png" alt-text="Screenshot of dragging a table onto the canvas of the datamart editor." lightbox="media/datamarts-analyze/datamarts-analyze-03.png":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-03_2.png" alt-text="Screenshot of dragging a table onto the canvas of the datamart editor." lightbox="media/datamarts-analyze/datamarts-analyze-03_2.png":::
 
 Once you drag one or more tables onto the canvas, you can use the visual experience to design your queries. The datamart editor uses the similar Power Query diagram view experience to enable you to easily query and analyze your data. Learn more about [Power Query diagram view](/power-query/diagram-view).
 
