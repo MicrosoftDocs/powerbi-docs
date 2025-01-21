@@ -135,8 +135,8 @@ The following table shows which packages **are supported** in Power BI reports i
 
 ## Considerations and limitations
 
-- R visuals are not supported with Service Principal profiles
-- The R visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb
+- Py visuals are not supported with Service Principal profiles
+- Py visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb.
 
 
 ## Related content
