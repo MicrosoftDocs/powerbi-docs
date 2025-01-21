@@ -473,7 +473,7 @@ The following sections provide an alphabetical table of which R packages are sup
 |HistData|0.9-1|[https://cran.r-project.org/src/contrib/HistData_0.9-1.tar.gz] (https://cran.r-project.org/src/contrib/HistData_0.9-1.tar.gz)
 |Hmisc|5.1-3|[https://cran.r-project.org/web/packages/Hmisc/index.html] (https://cran.r-project.org/src/contrib/Hmisc_5.2-2.tar.gz)
 |hms|1.1.3|[https://cran.r-project.org/src/contrib/hms_1.1.3.tar.gz] (https://cran.r-project.org/src/contrib/hms_1.1.3.tar.gz)
-|hoardr|0.5.4|[https://cran.r-project.org/src/contrib/hoardr_0.5.4.tar.gz] (https://cran.r-project.org/src/contrib/hoardr_0.5.4.tar.gz)
+|hoardr|0.5.4|
 |hrbrthemes|0.8.7|[https://cran.r-project.org/src/contrib/hrbrthemes_0.8.7.tar.gz] (https://cran.r-project.org/src/contrib/hrbrthemes_0.8.7.tar.gz)
 |HSAUR|1.3-10|[https://cran.r-project.org/src/contrib/HSAUR_1.3-10.tar.gz] (https://cran.r-project.org/src/contrib/HSAUR_1.3-10.tar.gz)
 |htmlTable|2.4.3|[https://cran.r-project.org/src/contrib/htmlTable_2.4.3.tar.gz] (https://cran.r-project.org/src/contrib/htmlTable_2.4.3.tar.gz)
@@ -859,7 +859,7 @@ The following sections provide an alphabetical table of which R packages are sup
 |rjags|4-16|[https://cran.r-project.org/src/contrib/rjags_4-16.tar.gz] (https://cran.r-project.org/src/contrib/rjags_4-16.tar.gz)
 |rjson|0.2.21|[https://cran.r-project.org/web/packages/rjson/index.html] (https://cran.r-project.org/web/packages/rjson/index.html)
 |RJSONIO|1.3-1.9|[https://cran.r-project.org/src/contrib/RJSONIO_1.3-1.9.tar.gz] (https://cran.r-project.org/src/contrib/RJSONIO_1.3-1.9.tar.gz)
-|rlang|1.1.4|[https://cran.r-project.org/src/contrib/rlang_1.1.4.tar.gz] (https://cran.r-project.org/src/contrib/rlang_1.1.4.tar.gz)
+|rlang|1.1.4|
 |rlecuyer|0.3-8|[https://cran.r-project.org/src/contrib/rlecuyer_0.3-8.tar.gz] (https://cran.r-project.org/src/contrib/rlecuyer_0.3-8.tar.gz)
 |rlist|0.4.6.2|[https://cran.r-project.org/src/contrib/rlist_0.4.6.2.tar.gz] (https://cran.r-project.org/src/contrib/rlist_0.4.6.2.tar.gz)
 |rmapshaper|0.5.0|[https://cran.r-project.org/src/contrib/rmapshaper_0.5.0.tar.gz] (https://cran.r-project.org/src/contrib/rmapshaper_0.5.0.tar.gz)
