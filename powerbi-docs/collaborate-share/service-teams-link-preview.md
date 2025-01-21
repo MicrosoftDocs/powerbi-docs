@@ -13,9 +13,17 @@ ms.date: 01/21/2025
 
 When a link to a Power BI report, app, dashboard, scorecard, or workspace is created in Power BI and then pasted into a Teams chat or channel, a preview card for the link is generated in the chat/channel window. The preview card shows information about the linked-to item, and, in certain circumstances, includes a Copilot summary button that can be used to get a sense of what the report is about, and whether it's worth opening for further exploration.
 
-:::image type="content" source="./media/service-teams-link-preview/teams-preview-card.png" alt-text="Screenshot showing a link preview card for a report in a Teams chat window.":::
+:::image type="content" source="./media/service-teams-link-preview/teams-link-preview.png" alt-text="Screenshot showing a link preview card for a report in a Teams chat window.":::
 
 The card shows:
+
+| Item         | Description |
+|:-------------|:-------------|
+| Item name ||
+| Location ||
+| C||
+|||
+|||
 
 * Item name
 
