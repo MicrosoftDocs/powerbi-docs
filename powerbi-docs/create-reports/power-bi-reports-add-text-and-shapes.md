@@ -16,7 +16,9 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-You can add text boxes, shapes, and *smart narrative visuals* to reports in Power BI Desktop or the Power BI service. The [smart narrative visual](#add-a-smart-narrative) uses artificial intelligence to provide a text summary of your visuals and reports. In either Power BI Desktop or the Power BI service, you must have editing permissions for the report. If a report is shared with you in the Power BI service, you don't have editing permissions.
+You can add text boxes, shapes, and *smart narrative visuals* to reports in Power BI Desktop or the Power BI service. The [smart narrative visual](#add-a-smart-narrative) uses artificial intelligence to provide a text summary of your visuals and reports.
+
+In either Power BI Desktop or the Power BI service, you must have editing permissions for the report. If a report is shared with you in the Power BI service, you don't have editing permissions.
 
 ## Add a text box to a report
 
@@ -28,7 +30,7 @@ This procedure uses the [Retail Analysis sample](sample-retail-analysis.md) avai
 
    ![Screenshot of Power BI Desktop, highlighting the insert text box option.](media/power-bi-reports-add-text-and-shapes/desktop-select-text-box.png)
 
-   The Text box option is also available in the **Insert** tab.
+   The **Text box** option is also available in the **Insert** tab.
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -72,7 +74,7 @@ You can add shapes to Power BI reports with various formatting options and styli
 
 ---
 
-2. From the dropdown, select a shape to add it to your report canvas. Then, in the **Format** pane, you can customize the shape to suit your needs. For this example, the arrow is rotated 45 degrees and formatted to include text and a shadow.
+2. From the dropdown menu, select a shape to add it to your report canvas. Then, in the **Format** pane, you can customize the shape to suit your needs. For this example, the arrow is rotated 45 degrees and formatted to include text and a shadow.
 
    :::image type="content" source="media/power-bi-reports-add-text-and-shapes/power-bi-arrow.png" alt-text="Screenshot of an arrow shape that is formatted by adding text, shadow, and rotation.":::
 
