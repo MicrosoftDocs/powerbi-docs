@@ -433,7 +433,7 @@ When you're editing a dataflow, you need to account for other considerations. Si
 
 This experience is better shown with an example. The following screenshot shows the message you get when you add a column to one table, change the name for a second table, and leave a third table the same as it was before.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-33.png" alt-text="Screenshot that shows an informational message that lists the changes made to output tables and their impact." lightbox="media/dataflows-streaming/dataflows-streaming-33.png":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-33_2.png" alt-text="Screenshot that shows an informational message that lists the changes made to output tables and their impact." lightbox="media/dataflows-streaming/dataflows-streaming-33_2.png":::
 
 In this example, the data already saved in both tables that had schema and name changes is deleted if you save the changes. For the table that stayed the same, you get the option to delete any old data and start from scratch, or save it for later analysis together with new data that comes in.
 
