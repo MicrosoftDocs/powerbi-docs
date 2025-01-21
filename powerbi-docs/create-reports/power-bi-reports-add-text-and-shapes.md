@@ -30,7 +30,7 @@ This procedure uses the [Retail Analysis sample](sample-retail-analysis.md) avai
 
    ![Screenshot of Power BI Desktop, highlighting the insert text box option.](media/power-bi-reports-add-text-and-shapes/desktop-select-text-box.png)
 
-   The **Text box** option is also available in the **Insert** tab.
+   The **Text box** option is also available on the **Insert** tab.
 
 # [Power BI service](#tab/powerbi-service)
 
