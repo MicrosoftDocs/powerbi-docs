@@ -132,6 +132,13 @@ The following table shows which packages **are supported** in Power BI reports i
 | `typing-extensions` | 4.3.0 | [https://pypi.org/project/typing-extensions](https://pypi.org/project/typing-extensions) |
 | `xgboost` | 1.6.1 | [https://pypi.org/project/xgboost](https://pypi.org/project/xgboost) |
 
+
+## Considerations and limitations
+
+- R visuals are not supported with Service Principal profiles
+- The R visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb
+
+
 ## Related content
 
 For more information about Python in Power BI, take a look at the following articles:
