@@ -89,9 +89,6 @@ The link will include the full context of the data you were looking at, includin
 If you use Power BI in a web browser, it’s easy to send a link to a colleague.
 
 1. Open a report in the Power BI service in the browser, and copy the link.
-
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-copy-link-new.png" alt-text="Screenshot of a browser window with the link highlighted." lightbox="media/business-user-teams-share-data/teams-power-bi-copy-link-new.png":::
-
 1. Start a conversation and paste the link.
    Teams automatically creates a rich card.
 1. Select **Send**.
