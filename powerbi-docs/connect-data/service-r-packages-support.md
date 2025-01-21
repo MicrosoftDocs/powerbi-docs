@@ -36,6 +36,7 @@ The following sections provide an alphabetical table of which R packages are sup
 
 
 ## R packages that are supported in Power BI (Premium/Fabric backed workspaces)
+
 |        Package        |   Version   |                                   Link                                   |
 |-----------------------|-------------|--------------------------------------------------------------------------|
 |abc|2.2.1|[https://cran.r-project.org/web/packages/abc/index.html] (https://cran.r-project.org/web/packages/abc/index.html)
@@ -470,7 +471,7 @@ The following sections provide an alphabetical table of which R packages are sup
 |highcharter|0.9.4|[https://cran.r-project.org/src/contrib/highcharter_0.9.4.tar.gz] (https://cran.r-project.org/src/contrib/highcharter_0.9.4.tar.gz)
 |highr|0.11|[https://cran.r-project.org/src/contrib/highr_0.11.tar.gz] (https://cran.r-project.org/src/contrib/highr_0.11.tar.gz)
 |HistData|0.9-1|[https://cran.r-project.org/src/contrib/HistData_0.9-1.tar.gz] (https://cran.r-project.org/src/contrib/HistData_0.9-1.tar.gz)
-|Hmisc|5.1-3|[https://cran.r-project.org/web/packages/Hmisc/index.html] (https://cran.r-project.org/web/packages/Hmisc/index.html)
+|Hmisc|5.1-3|[https://cran.r-project.org/web/packages/Hmisc/index.html] (https://cran.r-project.org/src/contrib/Hmisc_5.2-2.tar.gz)
 |hms|1.1.3|[https://cran.r-project.org/src/contrib/hms_1.1.3.tar.gz] (https://cran.r-project.org/src/contrib/hms_1.1.3.tar.gz)
 |hoardr|0.5.4|[https://cran.r-project.org/src/contrib/hoardr_0.5.4.tar.gz] (https://cran.r-project.org/src/contrib/hoardr_0.5.4.tar.gz)
 |hrbrthemes|0.8.7|[https://cran.r-project.org/src/contrib/hrbrthemes_0.8.7.tar.gz] (https://cran.r-project.org/src/contrib/hrbrthemes_0.8.7.tar.gz)
