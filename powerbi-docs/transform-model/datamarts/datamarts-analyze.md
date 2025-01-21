@@ -44,7 +44,7 @@ As you work on your Visual query, the queries are automatically saved every few 
 
 The following image shows a sample query created using the no-code Visual Query editor to retrieve the *Top customers by Orders*.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-04.png" alt-text="Screenshot of sample query results in the datamart editor." lightbox="media/datamarts-analyze/datamarts-analyze-04.png":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-04_2.png" alt-text="Screenshot of sample query results in the datamart editor." lightbox="media/datamarts-analyze/datamarts-analyze-04_2.png":::
 
 There are a few things to keep in mind about the Visual Query editor:
 
@@ -100,7 +100,7 @@ For developers and analysts with SQL experience, using SQL Server Management Stu
 
 To connect to a datamart’s SQL endpoint with client tooling, navigate to the semantic model settings page by selecting the **Datamarts (Preview)** tab in Power BI. From there, expand the **Server settings** section and copy the connection string, as shown in the following image.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-07_2.png" alt-text="Screenshot of the server settings connection string." lightbox="media/datamarts-analyze/datamarts-analyze-07_2.png":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-07_2.png" alt-text="Screenshot of the server settings connection string." lightbox="media/datamarts-analyze/datamarts-analyze-07.png":::
 
 ### Get started with SSMS
 
