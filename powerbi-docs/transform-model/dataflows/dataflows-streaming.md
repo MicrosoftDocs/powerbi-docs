@@ -73,7 +73,7 @@ To create a streaming dataflow:
 
 The following screenshot shows a finished dataflow. It highlights all the sections available to you for authoring in the streaming dataflow UI.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-04.png" alt-text="Screenshot of an example dataflow window with the ribbon, diagram view, side pane, and tabs highlighted." lightbox="media/dataflows-streaming/dataflows-streaming-04.png":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-04_2.png" alt-text="Screenshot of an example dataflow window with the ribbon, diagram view, side pane, and tabs highlighted." lightbox="media/dataflows-streaming/dataflows-streaming-04_2.png":::
 
 1. **Ribbon**: On the ribbon, sections follow the order of a "classic" analytics process: inputs (also known as data sources), transformations (streaming ETL operations), outputs, and a button to save your progress.
 2. **Diagram view**: This view is a graphical representation of your dataflow, from inputs to operations to outputs.
@@ -425,7 +425,7 @@ To edit your streaming dataflow, you have to stop it. *A stopped dataflow result
 
 The only experience available while a streaming dataflow runs is the **Runtime errors** tab, where you can monitor the behavior of your dataflow for any dropped messages and similar situations.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-32.png" alt-text="Screenshot that shows the disabled data preview when a streaming dataflow is running.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-32_2.png" alt-text="Screenshot that shows the disabled data preview when a streaming dataflow is running.":::
 
 ### Consider data storage when editing your dataflow
 
