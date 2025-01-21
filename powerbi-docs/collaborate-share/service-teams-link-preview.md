@@ -1,22 +1,51 @@
 ---
-title: Get a Power BI link preview in Microsoft Teams
-description: When you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box, the link preview shows information about the link.
+title: Power BI link preview cards in Microsoft Teams
+description: When you paste a link to your reports, dashboards, and apps into Microsoft Teams message boxes, the link preview shows card shows information about the link.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-LocalizationGroup: Share your work
-ms.date: 01/14/2025
+ms.date: 01/21/2025
 ---
 
 # Get a Power BI link preview in Microsoft Teams
 
-When you paste a link to your Power BI content into the Microsoft Teams message box, a link preview shows information about the link. Link previews are provided for the following Power BI items:
+When a link to a Power BI report, app, dashboard, scorecard, or workspace is created in Power BI and then pasted into a Teams chat or channel, a preview card for the link is generated in the chat/channel window. The preview card shows information about the linked-to item, and, in certain circumstances, includes a Copilot summary button that can be used to get a sense of what the report is about, and whether it's worth opening for further exploration.
 
-- Reports
-- Dashboards
-- Apps
+:::image type="content" source="./media/service-teams-link-preview/teams-preview-card.png" alt-text="Screenshot showing a link preview card for a report in a Teams chat window.":::
+
+The card shows:
+
+* Item name
+
+* Item location: The location indicates whether the link links to the report directly, or indirectly as part of the URL of an org app. For example:
+   
+   * Workspace > \<report_name\> indicates that the link points directly to the report.
+   
+   * Apps > \<app_name\> indicates that the report is being pointed to as part of a URL for an app.	
+
+* Open button: Opens the item in the Power BI app in Teams.
+
+* Copilot button: Opens the item in the Power BI app in Teams, with the summary displayed in the Copilot pane. The Open Copilot summary button only appears if Copilot requirements are met. 
+
+* Subscribe: Navigates the user to the Subscriptions pane in the Power BI Teams app, where they can create a subscription for the item.
+
+* Open to access: If the user doesn’t have access to the item, the card will have an Open to access button the user can use to request access.
+
+
+
+## Supported items
+
+
+## Copilot requirements
+
+In order for the Open in Copilot button to appear on the preview card the following requirements must be met:
+
+* The user must have the appropriate licenses.
+
+* The linked to item must be eligble for the Copilot button according to Power BI requirements.
+
 
 See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including requirements you need to meet.
 
@@ -32,15 +61,6 @@ Follow these steps to get a link preview for your Power BI content.
 
    :::image type="content" source="./media/service-teams-link-preview/service-teams-link-preview-basic.png" alt-text="Screenshot showing a link preview card for a Power BI item in the Teams message box.":::
 
-   The link preview card shows:
-
-   * The name of the item, and an icon that denotes it's type.
-   * The location of the item.
-   * Open button: Opens the report.
-   * Subscribe button:
-   * Open Copilot summary in Power BI button: Opens the item in the Power BI teams app
-
-1. Send the message.
 
 ## Considerations and limitations
 
