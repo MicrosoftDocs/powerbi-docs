@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/25/2024
+ms.date: 01/09/2025
 #This article teaches business users how to find and open a report if it has been shared directly or shared via an app, so that the consumer can view and interact with the report.
 ---
 # Open a report in the Power BI service
@@ -28,7 +28,7 @@ Power BI designers share reports with you by sending an email link or by adding 
 
 1. On the navigation pane, select **Browse**, and on the **Browse** page, select **Shared**.
 
-    :::image type="content" source="./media/end-user-report-open/power-bi-browse-shared.png" alt-text="Screenshot showing the Browse page and Shared with me is outlined.":::
+    :::image type="content" source="./media/end-user-report-open/power-bi-shared.png" alt-text="Screenshot showing the Browse page and Shared with me is outlined.":::
 
 1. The report icon :::image type="icon" source="./media/end-user-report-open/power-bi-report.png"::: is displayed next to the report name. Select a report to open it.
 
@@ -86,11 +86,11 @@ Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a t
 
 1. To open an underlying report, select a tile from a dashboard. From the **Sales and Marketing** dashboard, we select the *Total Units YTD Variance %* column chart tile.
 
-    :::image type="content" source="./media/end-user-report-open/power-bi-dashboards.png" alt-text="Screenshot showing a dashboard and a tile is selected.":::
+    :::image type="content" source="./media/end-user-report-open/power-bi-dashboard.png" alt-text="Screenshot showing a dashboard and a tile is selected.":::
 
 2. The associated report opens to the *YTD Category Trend Analysis* page. This is the source page for the column chart tile.
 
-    :::image type="content" source="./media/end-user-report-open/power-bi-report-tab.png" alt-text="Screenshot showing the YTD Category Trend Analysis page.":::
+    :::image type="content" source="./media/end-user-report-open/power-bi-select-tab.png" alt-text="Screenshot showing the YTD Category Trend Analysis page.":::
 
 > [!NOTE]
 > Not all tiles lead to a report.

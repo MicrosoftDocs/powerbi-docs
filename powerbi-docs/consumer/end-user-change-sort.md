@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.custom: video-removed
-ms.date: 11/11/2024
+ms.date: 01/06/2025
 #customer intent: As a PBI business user, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
@@ -76,7 +76,7 @@ Sometimes you want to sort your data by using a field that isn't included in the
 
 - Ask the report designer to create new columns in the semantic model to address sorting issues. The designer's contact information is listed in the report title's menu.
 
-    :::image type="content" source="media/end-user-change-sort/power-bi-headings.png" alt-text="Menu from the title showing contact information.":::
+    :::image type="content" source="media/end-user-change-sort/power-bi-heading.png" alt-text="Screenshot showing menu from the title showing contact information.":::
 
 ## Related content
 

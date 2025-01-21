@@ -70,9 +70,7 @@ Power BI has high contrast support for reports. If you're using a high contrast 
 
 ![Screenshot shows a report in high contrast windows settings.](media/desktop-accessibility/accessibility-05b.png)
 
-The Power BI service also attempts to detect the high contrast settings selected for Windows, but the effectiveness and accuracy of that detection depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-left corner you can select **View** > **High contrast colors** while in Edit mode and then select the theme you would like to apply to the report.
-
-![Screenshot of the Power BI service in edit mode, highlighting View and High-contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
+The Power BI service also attempts to detect the high contrast settings selected for Windows, but the effectiveness and accuracy of that detection depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View** > **High contrast colors** while in Edit mode and then select the theme you would like to apply to the report.
 
 ### Focus mode
 
@@ -131,7 +129,7 @@ In the **Selection pane**, selecting **Tab order** displays the current tab orde
 
 ### Titles and labels
 
-Visual and report page titles are important accessibility features that serves as a point of reference for the report consumer. Avoid using acronyms or jargon in your report titles; if you share the report with a new user or someone who is external to your organization, they might not know what your terms or acronyms mean. The following image shows a visual with an acronym in the title (on the left), and a clearer title for the visual on the right.
+Visual and report page titles are important accessibility features that serve as a point of reference for the report consumer. Avoid using acronyms or jargon in your report titles; if you share the report with a new user or someone who is external to your organization, they might not know what your terms or acronyms mean. The following image shows a visual with an acronym in the title (on the left), and a clearer title for the visual on the right.
 
 ![Screenshot of two sample titles, the vague CY Totals, and the clearer Current Year Sales Amount USD Totals.](media/desktop-accessibility/accessibility-creating-reports-10.png)
 
@@ -165,7 +163,7 @@ While we suggest report authors to turn on data labels and markers, turning them
 
 ![Screenshot of two example visuals, one with labels and markers on, the other with only markers on.](media/desktop-accessibility/accessibility-creating-reports-16.png)
 
-If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://pluginsaddonsextensions.com/google-chrome/the-squint-test-chrome-extension_86008). If your eyes are drawn more to the data labels than the data points, turn off your data labels.
+If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://chromewebstore.google.com/detail/blurry-eye-test/panidpjdcjkdhjamnogampinhbkjdkpo?hl=en). If your eyes are drawn more to the data labels than the data points, turn off your data labels.
 
 ### Themes, contrast and colorblind-friendly colors
 

@@ -110,16 +110,19 @@ Example using `byConnection`:
   "datasetReference": {
     "byPath": null,
     "byConnection": {
-      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/WorkpaceName;Initial Catalog=SemanticModelName;Integrated Security=ClaimsToken",
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/[Workspace Name];Initial Catalog=[Semantic Model Name];Integrated Security=ClaimsToken",
       "pbiServiceModelId": null,
       "pbiModelVirtualServerName": "sobe_wowvirtualserver",
-      "pbiModelDatabaseName": "e244efd3-e253-4390-be28-6be45d9da47e",
+      "pbiModelDatabaseName": "[Semantic Model Id]",
       "connectionType": "pbiServiceXmlaStyleLive",
       "name": "EntityDataSource"
     }
   }
 }
 ```
+> [!IMPORTANT]
+> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items) you must use `byConnection` references.
+
 When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. However, only the definition.pbir file is not ignored when importing the definition through Fabric Git.
 
 ```md
@@ -129,7 +132,6 @@ When the semantic model and report share the same workspace, [Fabric Git Integra
   ├── definition-liveConnect.pbir
   └── definition.pbir
 ```
-
 This file also specifies the supported report definition formats through the 'version' property.
 
 | Version  | Supported formats    |

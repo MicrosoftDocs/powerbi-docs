@@ -55,7 +55,7 @@ Microsoft publishes *get started* buttons for new Power BI users. Some of these 
 
     Because you're a new user, Power BI opens your **Home** screen. **Home** contains resources to help you get started.
 
-    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-home.png" alt-text="Screenshot of your Power BI Home screen.":::
+    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-homes.png" alt-text="Screenshot of your Power BI Home screen.":::
 
 1. You might even receive a pop-up with suggestions to get started. Here's one example.
 
