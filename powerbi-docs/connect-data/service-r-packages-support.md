@@ -33,8 +33,8 @@ The following sections provide an alphabetical table of which R packages are sup
 
 ## R packages that are supported in Power BI (Premium/Fabric backed workspaces)
 
-|        Package        |   Version   
-|-----------------------|-------------
+|        Package        |   Version   |
+|-----------------------|-------------|
 |abc|2.2.1|
 |abc.data|1.1|
 |abind|1.4-5|
@@ -1161,19 +1161,19 @@ The following sections provide an alphabetical table of which R packages are sup
 |zip|2.3.1|
 |zipfR|0.6-70|
 |zoo|1.8-12|
- |base|4.3.3|Built-in|Package 
- |compiler|4.3.3|Built-in|Package 
- |datasets|4.3.3|Built-in|Package 
- |graphics|4.3.3|Built-in|Package 
- |grDevices|4.3.3|Built-in|Package 
- |MatrixGenerics|1.14.0|[Download] (https://bioconductor.org/packages/MatrixGenerics) 
- |methods|4.3.3|Built-in|Package 
- |parallel|4.3.3|Built-in|Package 
- |sparseMatrixStats|1.14.0|[Download] (https://github.com/const-ae/sparseMatrixStats) 
- |stats|4.3.3|Built-in|Package 
- |stats4|4.3.3|Built-in|Package 
- |tools|4.3.3|Built-in|Package 
- |utils|4.3.3|Built-in|Package
+|base|4.3.3|Built-in|Package |
+|compiler|4.3.3|Built-in|Package | 
+|datasets|4.3.3|Built-in|Package |
+|graphics|4.3.3|Built-in|Package |
+|grDevices|4.3.3|Built-in|Package |
+|MatrixGenerics|1.14.0|[Download] (https://bioconductor.org/packages/MatrixGenerics) |
+|methods|4.3.3|Built-in|Package |
+|parallel|4.3.3|Built-in|Package | 
+|sparseMatrixStats|1.14.0|[Download] (https://github.com/const-ae/sparseMatrixStats) |
+|stats|4.3.3|Built-in|Package |
+|stats4|4.3.3|Built-in|Package |
+|tools|4.3.3|Built-in|Package |
+|utils|4.3.3|Built-in|Package|
 
 ## R packages that are supported in Power BI
 
