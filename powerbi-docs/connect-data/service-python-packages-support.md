@@ -30,10 +30,7 @@ There are a handful of requirements and limitations for Python packages:
 ### For reports in Premium/Fabric backed workspaces
 * Python runtime: Python 3.11
 
-### For non-Premium/Fabric backed workspaces/ Sov. Clouds/China
-* Python runtime: Python 3.7.7
-
-## Python packages that are supported in the Power BI service
+## Python packages that are supported in the Power BI service (Premium/ Fabric backed workspaces)
 
 The following table shows which packages **are supported** in Power BI for reports in **Premium/Fabric backed workspaces**.
 |        Package        |   Version   |                                   Link                                   |
@@ -104,7 +101,8 @@ The following table shows which packages **are supported** in Power BI for repor
 | zipp |3.20.1| [https://pypi.org/project/zipp/3.20.1/] (https://pypi.org/project/zipp/3.20.1/) |
 
 
-
+### For non-Premium/Fabric backed workspaces/ Sov. Clouds/China
+* Python runtime: Python 3.7.7
 
 The following table shows which packages **are supported** in Power BI reports in **non-Premium/Fabric backed workspaces**.
 
