@@ -5,7 +5,7 @@ author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 01/22/2025
 ---
 
