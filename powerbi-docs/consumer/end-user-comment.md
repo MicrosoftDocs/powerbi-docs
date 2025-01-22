@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/31/2023
+ms.date: 01/06/2025
 LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report
@@ -42,7 +42,7 @@ The process for adding comments to a dashboard or report is similar. In this exa
 
     Here we see that the dashboard creator has already added a general comment. Anyone with access to this dashboard can see this comment.
 
-    :::image type="content" source="media/end-user-comment/power-bi-first-comments.png" alt-text="Screenshot showing a dashboard with the Comments section outlined.":::
+    :::image type="content" source="media/end-user-comment/power-bi-first-comment.png" alt-text="Screenshot showing a dashboard with the Comments section outlined.":::
 
 2. To respond, select **Reply**, type your response, and then select **Post**.  
 

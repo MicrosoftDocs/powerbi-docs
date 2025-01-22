@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/10/2024
+ms.date: 01/21/2025
 no-loc: [Copilot]
 ---
 
@@ -17,6 +17,14 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+
+## January 2025 QFE 1
+
+*Version 2.139.1678.0, Released: January 14, 2025*
+
+Bug fixes/improvements:
+
+* Fixed issue of connecting to Fabric SQL database using SQL connector.
 
 ## November 2024 QFE 3
 

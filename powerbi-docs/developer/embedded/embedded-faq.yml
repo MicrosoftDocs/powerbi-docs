@@ -160,8 +160,7 @@ sections:
         answer: |
           When a user is granted permissions to a workspace, app, or item, it might not be immediately available through API calls.
           The result can either be a missing item in a 'GET' API response, or an error when trying to use the item.
-          The user can resolve this issue by calling [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.
-          
+          The user can resolve this issue by calling [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.      
           
       - question: |
           How can I find my PBI tenant region?
@@ -190,7 +189,7 @@ sections:
           Yes, there are PowerShell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
           
           * [Rest APIs](/rest/api/power-bi-embedded/) 
-          * [PowerShell cmdlets](/powershell/module/azurerm.powerbiembedded/)
+          * [PowerShell cmdlets](/powershell/module/microsoftpowerbimgmt.capacities)
           
       - question: |
           What is the PBI Embedded capacity role in a PBI Embedded solution?
@@ -291,6 +290,14 @@ sections:
           > *Master user* is not supported.
 
       - question: |
+          How can I embed a report that uses a Direct Lake semantic model?
+        answer: |
+          To use Power BI Embedded with Direct Lake mode:
+          1.	Create a [Direct Lake enabled semantic model](/fabric/get-started/direct-lake-overview). 
+          1. Specify a fixed identity for a Direct   2. Specify a [fixed identity](/fabric/get-started/directlake-fixed-identity) for a Direct Lake enabled semantic model.
+          1. [Embed a Power BI report](/power-bi/developer/embedded/embed-sample-for-customers) over the Direct Lake semantic model for your customers.
+
+      - question: |
           Can you sign into the Power BI service with service principal?
         answer: |
           No - you can't sign into Power BI using service principal.
@@ -346,7 +353,7 @@ sections:
       - question: |
           Can I get a trial experience for Power BI Embedded in Azure?
         answer: |
-          Since Power BI Embedded is a part of Azure, it's possible to use the service with the [$200 credit received when signing up for Azure](https://azure.microsoft.com/free/).
+          Since Power BI Embedded is a part of Azure, you can use the service with the [$200 credit received when signing up for Azure](https://azure.microsoft.com/free/).
           
       - question: |
           Is Power BI Embedded available for national/regional clouds (US Government, Germany, China)?
@@ -357,40 +364,6 @@ sections:
           Is Power BI Embedded available for non-profits and educational?
         answer: |
           There's no special Azure pricing for non-profit and educational entities.
-
-  - name: Power BI Workspace Collection
-    questions:
-      - question: |
-          What is Power BI Workspace Collection?
-        answer: |
-          **Power BI Workspace Collection** (**Power BI Embedded** Version 1) is a solution based on the **Power BI Workspace Collection** Azure resource. This solution allows you to create **Power BI Embedded** applications for your customers using Power BI content under the **Power BI Workspace Collection** solution, dedicated APIs, and workspace collection keys to authenticate the application to Power BI.
-          
-      - question: |
-          Is Power BI Workspace Collection on a deprecation path?
-        answer: |
-          Yes, but customers that are already using the **Power BI Workspace Collection** solution can continue to use it until deprecation. Customers can also create new workspace collections and any **Power BI Embedded** applications that still use the **Power BI Workspace Collection** solution.
-          
-          However, this also means that new features aren't added to any **Power BI Workspace Collection** solutions. We encourage customers to plan their migration to the new **Power BI Embedded** solution.
-          
-      - question: |
-          When is Power BI Workspace Collection support discontinued?
-        answer: |
-          Customers that are already using the **Power BI Workspace Collections** solution can continue to use it until the end of their support agreement.
-
-      - question: |
-          In what regions can I create a PBI Workspace Collection?
-        answer: |
-          The available regions are Australia Southeast, Brazil South, Canada Central, East US 2, Japan East, North Central US, North Europe, South Central US, Southeast Asia, UK South, West Europe, West India, and West US.
-
-      - question: |
-          Why should I migrate from PBI Workspace Collection to Power BI Embedded?
-        answer: |
-          There are some **Power BI Embedded** solution features and capabilities  that you can't do with **Power BI Workspace Collection**.
-          
-          Some of the features are:
-          * All the PBI data sources are supported. Only  two **Power BI Workspace Collection** data sources are supported. 
-          * Features such as Q&A, refresh, bookmarks, embedding dashboards & tiles, and custom menus are only supported in the **Power BI Embedded** solution.
-          * Capacity billing model.
           
   - name: Embedding setup tool
     questions:
