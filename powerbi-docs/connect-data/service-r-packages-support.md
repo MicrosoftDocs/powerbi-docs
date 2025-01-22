@@ -1023,7 +1023,7 @@ The following sections provide an alphabetical table of which R packages are sup
 |sys|3.4.2|[https://cran.r-project.org/web/packages/sys/index.html] (https://cran.r-project.org/web/packages/sys/index.html)
 |sysfonts|0.8.9|[https://cran.r-project.org/src/contrib/sysfonts_0.8.9.tar.gz] (https://cran.r-project.org/src/contrib/sysfonts_0.8.9.tar.gz)
 |systemfit|1.1-30|[https://cran.r-project.org/src/contrib/systemfit_1.1-30.tar.gz] (https://cran.r-project.org/src/contrib/systemfit_1.1-30.tar.gz)
-|systemfonts|1.1.0|[https://cran.r-project.org/src/contrib/systemfonts_1.1.0.tar.gz] (https://cran.r-project.org/src/contrib/systemfonts_1.1.0.tar.gz)
+|systemfonts|1.1.0|
 |syuzhet|1.0.7|[https://cran.r-project.org/src/contrib/syuzhet_1.0.7.tar.gz] (https://cran.r-project.org/src/contrib/syuzhet_1.0.7.tar.gz)
 |tau|0.0-25|[https://cran.r-project.org/web/packages/tau/index.html] (https://cran.r-project.org/web/packages/tau/index.html)
 |tcltk|4.3.3|[https://cran.r-project.org/web/packages/tcltk/index.html] (https://cran.r-project.org/web/packages/tcltk/index.html)
@@ -1045,7 +1045,7 @@ The following sections provide an alphabetical table of which R packages are sup
 |tfplot|2021.6-1|[https://cran.r-project.org/src/contrib/tfplot_2021.6-1.tar.gz] (https://cran.r-project.org/src/contrib/tfplot_2021.6-1.tar.gz)
 |tframe|2015.12-1.1|[https://cran.r-project.org/src/contrib/tframe_2015.12-1.1.tar.gz] (https://cran.r-project.org/src/contrib/tframe_2015.12-1.1.tar.gz)
 |tgp|2.4-23|[https://cran.r-project.org/src/contrib/tgp_2.4-23.tar.gz] (https://cran.r-project.org/src/contrib/tgp_2.4-23.tar.gz)
-|TH.data|1.1-2|[https://cran.r-project.org/src/contrib/TH.data_1.1-2.tar.gz] (https://cran.r-project.org/src/contrib/TH.data_1.1-2.tar.gz)
+|TH.data|1.1-2|
 |thief|0.3|[https://cran.r-project.org/src/contrib/thief_0.3.tar.gz] (https://cran.r-project.org/src/contrib/thief_0.3.tar.gz)
 |threejs|0.3.3|[https://cran.r-project.org/src/contrib/threejs_0.3.3.tar.gz] (https://cran.r-project.org/src/contrib/threejs_0.3.3.tar.gz)
 |tibble|3.2.1|[https://cran.r-project.org/src/contrib/tibble_3.2.1.tar.gz] (https://cran.r-project.org/src/contrib/tibble_3.2.1.tar.gz)
