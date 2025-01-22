@@ -50,8 +50,8 @@ The folloiwng packages are supported:
 |AlgDesign|1.2.1|
 |alluvial|0.1-2|
 |andrews|1.1.2|
-||anomalize|0.3.0|
-||anytime|0.3.9|
+|anomalize|0.3.0|
+|anytime|0.3.9|
 |aod|1.3.3|
 |apcluster|1.4.13|
 |ape|5.8|
