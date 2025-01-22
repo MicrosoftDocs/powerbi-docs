@@ -6,10 +6,14 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/21/2025
+ms.date: 01/22/2025
 ---
 
 # Link preview cards in Microsoft Teams chats and channels
+
+This article describes link preview cards that are generated in Teams chats and channels for links to [supported Power BI item types](#item-types-with-link-preview-card-support). It is intended for chat participants who are interested to know what the cards show and how they can enhance collaboration.
+
+## About link preview cards
 
 When you paste a link to a Power BI report, app, dashboard, scorecard, or workspace into a Teams chat or channel, a preview card showing some details about the linked-to item is generated in the chat/channel window. The purpose the preview card is to help chat participants decide whether to open the link or not.
 
