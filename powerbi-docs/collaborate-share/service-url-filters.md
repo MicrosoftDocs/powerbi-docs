@@ -153,7 +153,7 @@ Special characters, spaces, and leading numbers in table and column names requir
 |**Column**@**Number**     |   @ is 00x40     |  Column\_x0040\_Number       |
 |**[Column]**     |  [ is 0x005B ] is 0x005D       |  \_x005B\_Column_x005D_       |
 |**Column+Plus**     | + is 0x2B        |  Column\_x002B\_Plus       |
-|**2TableName**|2 is x0032|\_x0032\_TableName\_|
+|**2TableName**|2 is x0032|\_x0032\_TableName|
 
 Table\_x0020\_Name/Column\_x002B\_Plus eq 3
 ![Screenshot of table visual rendering special characters for Unicode.](media/service-url-filters/power-bi-special-characters1.png)
