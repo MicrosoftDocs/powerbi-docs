@@ -28,11 +28,11 @@ Typically, the preview card provides the following:
 * The name of the linked-to item.
 * The location of the item.
 * An *Open* button that opens the item in the Power BI app in Teams.
-* A *Subscribe* button that navigates the user to the Subscriptions pane in the Power BI Teams app.
+* A *Subscribe* button that navigates the user to the Subscriptions pane in the Power BI app in Teams.
 
-The preview card is sensitive to the permissions and licenses that the chat participant has. Thus if a chat participant doesn't have permissions to view the linked-to item, an *Open to request access* button appears on the card instead of the *Open button*.
+The preview card is sensitive to the permissions and licenses that the chat participant has. Thus if a chat participant doesn't have permissions to view the item, an *Open to request access* button appears on the card instead of the *Open button*.
 
-. [!NOTE]
+> [!NOTE]
 > In chats and channels with more than 60 participants, the card is not sensitive to each participant's permissions. Rather, all participants see the card as it appears to the user who pasted the link into the chat. This can lead to unexpected card behavior. See the [considerations and limitations](#considerations-and-limitations) for more detail.
 
 ## Link preview cards for reports that have Copilot summaries
