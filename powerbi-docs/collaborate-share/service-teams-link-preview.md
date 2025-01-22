@@ -28,27 +28,27 @@ The following image shows a typical link preview card.
 
 :::image type="content" source="./media/service-teams-link-preview/teams-link-preview.png" alt-text="Screenshot showing a link preview card for a report in a Teams chat window." border="false":::
 
-If the linked to item is a report that is eligible for Copilot, the card will also have an *Open Copilot summary in Power BI* button that opens the report in the Power BI app in Teams, with the summary displayed in the Copilot pane. See [Link preview cards for reports that have Copilot summaries](#copilot-requirements) for more detail.
+If the linked to item is a report that is eligible for Copilot, the card will also have an *Open Copilot summary in Power BI* button that opens the report in the Power BI app in Teams, with the summary displayed in the Copilot pane. See [Link preview cards for reports that have Copilot summaries](#link-preview-cards-for-reports-that-have-copilot-summaries) for more detail.
 
 The preview card is sensitive to the permissions and licenses the chat participant has. Thus:
 
 * If the chat participant doesn't have permissions to view the linked-to item, an *Open to request access* button appears instead of the *Open button*.
 * If the chat participant doesn't the appropriate licensing for Copilot, the *Open Copilot summary in Power BI* button won't be available.
 
-In chats and channels with more than 60 participants, the card will appear for all participants as it does for the user who pasted the link into the chat. See the [considerations and limitations](#considerations-and-limitations) for more detail.
+In chats and channels with more than 60 participants, the card appears for all participants as it does for the user who pasted the link into the chat. See the [considerations and limitations](#considerations-and-limitations) for more detail.
 
 ## Link preview cards for reports that have Copilot summaries
 
-If the linked-item is a report that is [eligible for Copilot](), the card can have a *Open Copilot summary in Power BI* button that opens the report in the Power BI app in Teams, with the summary displayed in the Copilot pane. The purpose of this button is to save the user time in deciding whether to explore the report further. The button is only available for users who have the [appropriate licensing]().
+If the linked-item is a report that is [eligible for Copilot](), the card can have an Open Copilot summary in Power BI* button that opens the report in the Power BI app in Teams, with the summary displayed in the Copilot pane. The purpose of this button is to save the user time in deciding whether to explore the report further. The button is only available for users who have the [appropriate licensing]().
 
-The following image show the link preview card with the *Open Copilot summary in Power BI* button.
+The following image shows the link preview card with the *Open Copilot summary in Power BI* button.
 
 :::image type="content" source="./media/service-teams-link-preview/teams-link-preview-copilot-summary-button.png" alt-text="Screenshot showing a link preview card for a report that has a Copilot summary." border="false":::
 
 In order for the Open in Copilot button to appear on the preview card the following requirements must be met:
 
 * The user must have the appropriate licenses.
-* The linked to item must be eligble for the Copilot button according to Power BI requirements.
+* The linked to item must be eligible for the Copilot button according to Power BI requirements.
 
 ## Item types with link preview card support
 
@@ -57,7 +57,7 @@ Give list of items that link preview cards can be generated for.
 ## Considerations and limitations
 
 * Link previews don't work in meeting chats or private channels.
-* In chats or channels with more than 60 participants, permissions and licensing of card viewers is not checked. All participants see the card as it was generated for the person who pasted the link in the chat. This can lead to the following unexpected behaviors:
+* In chats or channels with more than 60 participants, permissions and licensing of card viewers isn't checked. All participants see the card as it was generated for the person who pasted the link in the chat. This can lead to the following unexpected behaviors:
     * Chat participants who don't have permissions to view the item may still see the *Open* button, even though they won't be able to open the item when they select the button.
     * Chat participants who don't have the appropriate license for Copilot might see the *Open Copilot summary in Power BI* button, but won't be able to open the report with the Copilot summary when they select the link.
     * See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
