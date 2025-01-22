@@ -31,10 +31,6 @@ The following sections provide an alphabetical table of which R packages are sup
 ### For reports in Premium/Fabric backed workspaces
 * Current R runtime: R 4.3.3
 
-### For non-Premium/Fabric backed workspaces/ Sov. Clouds/China 
-* Current R runtime: Microsoft R 3.4.4
-
-
 ## R packages that are supported in Power BI (Premium/Fabric backed workspaces)
 
 |        Package        |   Version   |                                   Link                                   |
@@ -1180,7 +1176,8 @@ The following sections provide an alphabetical table of which R packages are sup
 |utils|4.3.3|Built-in|Package
 
 
-
+### For non-Premium/Fabric backed workspaces/ Sov. Clouds/China 
+* Current R runtime: Microsoft R 3.4.4
 
 ## R packages that are supported in Power BI (non-Premium/Fabric backed workspaces/ Sov. Clouds/China)
 
