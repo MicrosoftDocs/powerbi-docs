@@ -18,7 +18,7 @@ LocalizationGroup: Visualizations
 
 You can add text boxes, shapes, and *smart narrative visuals* to reports in Power BI Desktop or the Power BI service. The [smart narrative visual](#add-a-smart-narrative) uses artificial intelligence to provide a text summary of your visuals and reports.
 
-In either Power BI Desktop or the Power BI service, you must have editing permissions for the report. If a report is shared with you in the Power BI service, you don't have editing permissions.
+To add texts and shapes to a report, you must have permission to edit the report.
 
 ## Add a text box to a report
 
