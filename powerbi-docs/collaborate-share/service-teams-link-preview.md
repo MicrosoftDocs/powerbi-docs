@@ -15,7 +15,7 @@ This article describes link preview cards that are generated in Teams chats and 
 
 ## About link preview cards
 
-When you paste a link to a Power BI report, app, dashboard, scorecard, or workspace into a Teams chat or channel, a preview card showing some details about the linked-to item is generated in the chat/channel window. The purpose the preview card is to help chat participants decide whether to open the link or not.
+When you paste a link to a Power BI report, app, dashboard, scorecard, or workspace into a Teams chat or channel, a preview card showing some details about the linked-to item is generated in the chat/channel window. The purpose of the preview card is to enhance collaboration by helping chat participants decide whether to open the link or not.
 
 > [!IMPORTANT]
 > When you paste a link into the chat, it might take a second or two for the link preview card to appear. **Wait for the card to appear before sending the message!** If you press send before the card appears, it will never be generated.
@@ -37,7 +37,7 @@ If the linked to item is a report that is eligible for Copilot, the card will al
 The preview card is sensitive to the permissions and licenses the chat participant has. Thus:
 
 * If the chat participant doesn't have permissions to view the linked-to item, an *Open to request access* button appears instead of the *Open button*.
-* If the chat participant doesn't the appropriate licensing for Copilot, the *Open Copilot summary in Power BI* button won't be available.
+* If the chat participant doesn't have the appropriate licensing for Copilot, the *Open Copilot summary in Power BI* button won't be available.
 
 In chats and channels with more than 60 participants, the card appears for all participants as it does for the user who pasted the link into the chat. See the [considerations and limitations](#considerations-and-limitations) for more detail.
 
