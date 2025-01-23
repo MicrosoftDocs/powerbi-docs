@@ -103,7 +103,7 @@ The following table shows which packages **are supported** in Power BI for repor
 | zipp               | 3.20.1    | 
 
 
-### For non-Premium/Fabric backed workspaces/ Sov. Clouds/China
+### For non-Premium/Fabric backed workspaces/Sov. Clouds
 * Python runtime: Python 3.7.7
 
 The following table shows which packages **are supported** in Power BI reports in **non-Premium/Fabric backed workspaces**.
