@@ -33,7 +33,7 @@ The following sections provide an alphabetical table of which R packages are sup
 
 ## R packages that are supported in Power BI (Premium/Fabric backed workspaces)
 
-The following packages are supported.[Download] (https://cran.r-project.org/web/package): 
+The following packages are supported.[Download] (https://cran.r-project.org/): 
 
 | Package               | Version     |
 |-----------------------|-------------|
