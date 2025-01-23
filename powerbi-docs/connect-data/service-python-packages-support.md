@@ -34,8 +34,9 @@ There are a handful of requirements and limitations for Python packages:
 
 The following table shows which packages **are supported** in Power BI for reports in **Premium/Fabric backed workspaces**.
 [Download packages here] (https://pypi.org/) 
-|           Package            | Version   |  
-|------------------------------|-----------|
+
+| Package            | Version   |  
+|--------------------|-----------|
 | asttokens          | 2.4.1     | 
 | certifi            | 2024.8.30 |
 | comm               | 0.2.2     |
