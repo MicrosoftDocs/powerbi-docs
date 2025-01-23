@@ -33,7 +33,7 @@ Here are some articles explaining other ways to use drillthrough.
 
     For example, suppose you want to provide drillthrough for manufacturers. You might create a drillthrough target page with visuals that show total sales, total units shipped, sales by category, and so on. That way, when you drill through to that page, the visuals are specific to the manufacturer you selected.
 
-2. On that drillthrough target page, select the **Build visual** pane, and, under **Drill through**:
+2. On the **Visualizations** pane for that drillthrough target page, select **Build visual**. Then, under **Drill through**:
 
     - Set **Keep all filters** to **On**.
     - In **Add drill-through fields here**, add the field that you want by dragging it from the Data pane.
@@ -67,7 +67,7 @@ When report readers choose to drill through, the target page is filtered to show
 
 You can set up drillthrough to pass all applied filters to the drillthrough target page. For example, you can select only a certain category of products and the visuals filtered to that category, and then select drillthrough on a source. You might be interested in what the drillthrough target page would look like with all those filters applied.
 
-To keep all applied filters, go to the destination page. In the **Drill through** section of the **Build visual** pane, set **Keep all filters** to **On**.
+To keep all applied filters, go to the destination page. In the **Visualizations** pane, select **Build visual**. Then, in the **Drill through** section, set **Keep all filters** to **On**.
 
 When you then drill through on a visual on a source page, the temporary filters that you applied to the source visual are also applied to the drillthrough target page. On the **Filters** pane of the published report, those transient filters are shown in italics.
 
