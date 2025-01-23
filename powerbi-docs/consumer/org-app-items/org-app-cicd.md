@@ -45,7 +45,7 @@ The definition file contains:
   - isHidden
   - DisplayName 
 
-The following is an example of the `definition.json` file for an org app item:
+The following JSON code is an example of the `definition.json` file for an org app item:
 
 ```json
 {
@@ -86,6 +86,6 @@ The following is an example of the `definition.json` file for an org app item:
 
 ## Related content
 
-- [Introduction to the CI/CD process as part of the ALM cycle in Microsoft Fabric](/fabric/cicd/cicd-overview)
+- [Introduction to the CI/CD process as part of application lifecycle management (ALM) in Microsoft Fabric](/fabric/cicd/cicd-overview)
 - [Introduction to Git integration](/fabric/cicd/git-integration/intro-to-git-integration)
 - [Introduction to deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)
