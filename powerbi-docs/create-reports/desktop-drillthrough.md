@@ -39,7 +39,7 @@ Here are some articles explaining other ways to use drillthrough.
     - In **Add drill-through fields here**, add the field that you want by dragging it from the Data pane.
     - In the expanded section for the added field, under **Allow drillthrough when:**, select **Used as category**.
 
-    ![Screenshot of drillthrough option in the Build visual pane.](media/desktop-drillthrough/drillthrough-add-fields-here.png)
+    ![Screenshot of drillthrough option in the Visualization pane's Build visual tab.](media/desktop-drillthrough/drillthrough-add-fields-here.png)
 
 When you add a field to the **Drill through** well, Power BI automatically creates a *back* button visual. That visual becomes a button in published reports. Users who view your report in the Power BI service use this button on the target page to get back to the original source report page from which they came.
 
@@ -57,7 +57,7 @@ To use your own image for a back button, follow these steps:
 
     ![Screenshot of Load image and set Type to Back.](media/desktop-drillthrough/drillthrough-create-back-button.png)
 
-Now users can right-click a data point on the other source pages in your report, and get a context menu that supports drillthrough to that target page.
+Now users can right-click a data point on the other source pages in your report and get a context menu that supports drillthrough to that target page.
 
 ![Screenshot of Drillthrough menu.](media/desktop-drillthrough/drillthrough-04.png)
 
@@ -77,7 +77,7 @@ Although you could do this with tooltips pages, that would be an odd experience 
 
 ## Add a measure to drillthrough
 
-Besides passing all filters to the drillthrough target page, you can also add a measure or a summarized numeric column to the drillthrough area. On the drillthrough target page, drag the drillthrough field to the **Drill through** well on the **Build visual** panel to apply it.
+Besides passing all filters to the drillthrough target page, you can also add a measure or a summarized numeric column to the drillthrough area. On the drillthrough target page, drag the drillthrough field to the **Drill through** well in the **Visualizations** pane's **Build visual** tab to apply it.
 
 When you add a measure or summarized numeric column, you can drill through to the page when the field is used in the *Values* area of a visual.
 
