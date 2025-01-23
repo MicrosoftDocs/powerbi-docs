@@ -24,7 +24,7 @@ The following sections provide an alphabetical table of which R packages are sup
 * The Power BI service supports packages published in the Comprehensive R Archive Network (CRAN). The service doesn't support private or custom R packages. Users are encouraged to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
 * The Power BI Desktop has two variations for R packages:
   * For R visuals, you can install any package, including custom R packages
-  * For Custom R visuals, only public CRAN packages are supported for auto-installation of the packages
+  * For Custom R visuals, only public CRAN packages are supported for autoinstallation of the packages
 * For security and privacy reasons, R packages that provide client-server queries over the web, such as *RgoogleMaps*, in the service, aren't supported. Networking is blocked for such attempts. See the following section for a list of supported and unsupported R packages.
 * The approval process for including a new R package has a tree of dependencies. Some dependencies required to be installed in the service can't be supported.
 
@@ -33,7 +33,7 @@ The following sections provide an alphabetical table of which R packages are sup
 
 ## R packages that are supported in Power BI (Premium/Fabric backed workspaces)
 
-The folloiwng packages are supported: 
+The following packages are supported: 
 
 | Package               | Version     |
 |-----------------------|-------------|
@@ -1163,19 +1163,19 @@ The folloiwng packages are supported:
 | zip                   | 2.3.1       |
 | zipfR                 | 0.6-70      |
 | zoo                   | 1.8-12      |
-| base                  | 4.3.3       |
-| compiler              | 4.3.3       |
-| datasets              | 4.3.3       |
-| graphics              | 4.3.3       |
-| grDevices             | 4.3.3       |
+| base (Built-in)       | 4.3.3       |
+| compiler (Built-in)   | 4.3.3       |
+| datasets (Built-in)   | 4.3.3       |
+| graphics (Built-in)   | 4.3.3       |
+| grDevices (Built-in)  | 4.3.3       |
 | MatrixGenerics        | 1.14.0      |
-| methods               | 4.3.3       |
-| parallel              | 4.3.3       |
+| methods (Built-in)    | 4.3.3       |
+| parallel (Built-in)   | 4.3.3       |
 | sparseMatrixStats     | 1.14.0      |
-| stats                 | 4.3.3       |
-| stats4                | 4.3.3       |
-| tools                 | 4.3.3       |
-| utils                 | 4.3.3       |
+| stats (Built-in)      | 4.3.3       |
+| stats4 (Built-in)     | 4.3.3       |
+| tools (Built-in)      | 4.3.3       |
+| utils (Built-in)      | 4.3.3       |
 
 ## R packages that are supported in Power BI
 
@@ -2171,7 +2171,7 @@ The following table shows which packages are supported in the Power BI service.
 
 ## R scripts that aren't supported in Power BI
 
-The following table shows which packages are not supported in the Power BI service.
+The following table shows which packages aren't supported in the Power BI service.
 
 | Package | Request Date | Reason |
 | --- | --- | --- |
@@ -2182,8 +2182,8 @@ The following table shows which packages are not supported in the Power BI servi
 
 ## Considerations and limitations
 
-- R visuals are not supported with Service Principal profiles
-- The R visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of <30Mb
+- R visuals aren't supported with Service Principal profiles
+- The R visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb.
  
 
 
