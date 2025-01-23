@@ -1177,7 +1177,7 @@ The following packages are supported:
 | tools (Built-in)      | 4.3.3       |
 | utils (Built-in)      | 4.3.3       |
 
-## R packages that are supported in Power BI
+## R packages that are supported in Power BI (non-Premium and non-Fabric backed workspaces)
 
 The following table shows which packages are supported in the Power BI service.
 
@@ -2182,8 +2182,9 @@ The following table shows which packages aren't supported in the Power BI servic
 
 ## Considerations and limitations
 
-- R visuals aren't supported with Service Principal profiles
+- R visuals aren't supported with Service Principal Profiles for App Owns Data.
 - The R visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb.
+- R visuals with HTML and XML packages fail to render due to Out Of Memory (OOM). Migrate the visual with the [PbiViz tool] (https://learn.microsoft.com/en-us/power-bi/developer/visuals/develop-power-bi-visuals#power-bi-visual-packages). The visual must render. 
  
 
 
