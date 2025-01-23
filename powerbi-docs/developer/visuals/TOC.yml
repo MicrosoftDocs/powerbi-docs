@@ -23,7 +23,7 @@
       href: create-r-based-power-bi-desktop.md
     - name: "Build a funnel plot from R script to R visual"
       href: funnel-plot-from-r.md
-  - name: Import Power BI custom visuals
+  - name: About Power BI custom visuals
     items: 
     - name: "Import a Power BI visual"
       href: import-visual.md
@@ -31,6 +31,8 @@
       href: power-bi-custom-visuals-faq.yml
     - name: "Examples of Power BI visuals"
       href: samples.md
+    - name: "Get custom visual metadata"
+      href: scanner-api.md
   - name: Develop your own custom visual
     items:
     - name: "Set up your environment for developing a Power BI visual"

@@ -21,6 +21,10 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
 ## January 2025
 
 ### Power BI Report Server
+- *Version: 1.22.9153.7886 (build 15.0.1117.98), Released: January 22, 2025*
+  - Bug fixes
+    - Fixed issue with new property 'EnableCustomURLInKPI' not getting configured correctly.
+
 - *Version: 1.22.9137.4867 (build 15.0.1117.95), Released: January 13, 2025*
   - Features
     - Custom Visual API shipped with release - version v5.10.0

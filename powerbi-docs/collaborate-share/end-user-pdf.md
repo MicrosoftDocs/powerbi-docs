@@ -8,7 +8,7 @@ ms.reviewer: mibruhjell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/05/2025
+ms.date: 01/17/2025
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -115,6 +115,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 * The Power BI service uses your Power BI language setting as the language for the PDF export. To see or set your language preference, select the cog icon ![Screenshot of the cog icon.](media/end-user-pdf/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 
 * Reports with unusual custom page sizes may experience issues in export scenarios. For best results, consider switching to a standard page size for your report.
+* Hidden pages will not be included in report exports and subscriptions. You can export hidden pages by going to the report in the Power BI service and exporting to the format of choice.
 * Reports using themes with custom fonts will have the custom font replaced with a default font.
 * While we look to provide a consistent experience, we can't guarantee the exported PDF from the Power BI service will always match the exported PDF from a local Power BI Desktop file.
 * We can't guarantee precise fidelity for Power BI reports. The resolution of exported report pages is 1,280 pixels x 720 pixels. 

@@ -6,11 +6,13 @@ ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview  
-ms.date: 11/11/2024
+ms.date: 01/11/2025
 # customer intent: As a Power BI user, I want an understanding of Microsoft Fabric and how it relates to the Power BI service so that I know how to use these two services separately or together.
 ---
 
 # What is Microsoft Fabric for Power BI service users?
+
+[!INCLUDE [new user recruitment](../includes/fabric-new-user-research.md)]
 
 If you're a Power BI user, you probably have questions about the introduction of [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview).
 
