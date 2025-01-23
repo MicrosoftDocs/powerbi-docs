@@ -35,1147 +35,1147 @@ The following sections provide an alphabetical table of which R packages are sup
 
 The folloiwng packages are supported: 
 
-|        Package        |   Version   |
+| Package               | Version     |
 |-----------------------|-------------|
-|abc|2.2.1|
-|abc.data|1.1|
-|abind|1.4-5|
-|acepack|1.4.2|
-|actuar|3.3-4|
-|ade4|1.7-22|
-|adegenet|2.1.10|
-|AdMit|2.1.9|
-|AER|1.2-13|
-|agricolae|1.3-7|
-|AlgDesign|1.2.1|
-|alluvial|0.1-2|
-|andrews|1.1.2|
-|anomalize|0.3.0|
-|anytime|0.3.9|
-|aod|1.3.3|
-|apcluster|1.4.13|
-|ape|5.8|
-|aplpack|1.3.5|
-|approximator|1.2-8|
-|arm|1.14-4|
-|arsenal|3.6.3|
-|arules|1.7-8|
-|arulesViz|1.5.3|
-|ash|1.0-15|
-|askpass|1.2.0|
-|assertthat|0.2.1|
-|audio|0.1-11|
-|autocogs|0.1.4|
-|automap|1.1-12|
-|aweek|1.0.3|
-|BACCO|2.1-0|
-|backports|1.5.0|
-|BaM|1.0.3|
-|BAS|1.7.1|
-|base64|2.0.1|
-|base64enc|0.1-3|
-|BayesDA|2012.04-1|
-|BayesFactor|0.9.12-4.7|
-|bayesGARCH|2.1.10|
-|bayesm|3.1-6|
-|bayesmix|0.7-6|
-|bayesplot|1.11.1|
-|bayesQR|2.4|
-|bayesSurv|3.7|
-|bayestestR|0.14.0|
-|BayesTree|0.3-1.5|
-|BayesX|0.3-3|
-|BCBCSF|1.0-1|
-|BDgraph|2.73|
-|beanplot|1.3.1|
-|beepr|2|
-|beeswarm|0.4.0|
-|benford.analysis|0.1.5|
-|BenfordTests|1.2.0|
-|bfp|0.0-48|
-|BH|1.84.0-0|
-|bibtex|0.5.1|
-|biglm|0.9-3|
-|bindr|0.1.1|
-|bindrcpp|0.2.3|
-|binom|1.1-1.1|
-|BiocManager|1.30.25|
-|bit|4.0.5|
-|bit64|4.0.5|
-|bitops|1.0-8|
-|bizdays|1.0.16|
-|blandr|0.6.0|
-|blme|1.0-5|
-|blob|1.2.4|
-|BLR|1.6|
-|BMA|3.18.17|
-|bmp|0.3|
-|BMS|0.3.5|
-|bnlearn|4.8.3|
-|boa|1.1.8-2|
-|BoolNet|2.1.9|
-|Boom|0.9.15|
-|BoomSpikeSlab|1.2.6|
-|boot|1.3-31|
-|bootstrap|2019.6|
-|Boruta|8.0.0|
-|bqtl|1.0-36|
-|BradleyTerry2|1.1-2|
-|brew|1.0-10|
-|brglm|0.7.2|
-|brio|1.1.5|
-|broom|1.0.6|
-|broom.helpers|1.17.0|
-|broom.mixed|0.2.9.5|
-|bslib|0.8.0|
-|bspec|1.6|
-|bspmma|0.1-2|
-|bsts|0.9.10|
-|bupaR|0.5.4|
-|C50|0.1.8|
-|ca|0.71.1|
-|cachem|1.1.0|
-|Cairo|1.6-2|
-|cairoDevice|2.28.2.2|
-|calibrate|1.7.7|
-|calibrator|1.2-8|
-|callr|3.7.6|
-|car|3.1-2|
-|carData|3.0-5|
-|cards|0.2.2|
-|caret|6.0-94|
-|catnet|1.16.1|
-|caTools|1.18.3|
-|cclust|0.6-26|
-|cellranger|1.1.0|
-|ChainLadder|0.2.19|
-|changepoint|2.2.4|
-|checkmate|2.3.2|
-|checkpoint|1.0.2|
-|chk|0.9.2|
-|choroplethrMaps|1.0.1|
-|chron|2.3-61|
-|circlize|0.4.16|
-|Ckmeans.1d.dp|4.3.5|
-|class|7.3-22|
-|classInt|0.4-10|
-|cli|3.6.3|
-|ClickClust|1.1.6|
-|clickstream|1.3.3|
-|clipr|0.8.0|
-|clock|0.7.1|
-|clue|0.3-65|
-|cluster|2.1.6|
-|clv|0.3-2.4|
-|cmprsk|2.2-12|
-|coda|0.19-4.1|
-|codetools|0.2-20|
-|coefplot|1.2.8|
-|coin|1.4-3|
-|collapsibleTree|0.1.8|
-|colorRamps|2.3.4|
-|colorspace|2.1-1|
-|colourpicker|1.3.0|
-|colourvalues|0.3.9|
-|combinat|0.0-8|
-|commonmark|1.9.1|
-|compositions|2.0-8|
-|CompQuadForm|1.4.3|
-|confintr|1.0.2|
-|conflicted|1.2.0|
-|conquer|1.3.3|
-|contfrac|1.1-12|
-|CORElearn|1.57.3|
-|corpcor|1.6.10|
-|corrgram|1.14|
-|corrplot|0.94|
-|covr|3.6.4|
-|cowplot|1.1.3|
-|cplm|0.7-12|
-|cpp11|0.5.0|
-|crayon|1.5.2|
-|credentials|2.0.1|
-|crosstalk|1.2.1|
-|crul|1.5.0|
-|ctv|0.9-5|
-|cubature|2.0.4.6|
-|Cubist|0.4.4|
-|curl|5.2.1|
-|cvar|0.5|
-|CVST|0.2-3|
-|cvTools|0.3.3|
-|d3heatmap|0.6.1.2|
-|d3Network|0.5.2.1|
-|d3r|1.1.0|
-|data.table|1.15.4|
-|data.tree|1.1.0|
-|datasauRus|0.1.8|
-|datawizard|0.12.3|
-|date|1.2-42|
-|DBI|1.2.3|
-|dbplyr|2.5.0|
-|dbscan|1.2-0|
-|dclone|2.3-2|
-|dcurver|0.9.2|
-|ddalpha|1.3.15|
-|deal|1.2-42|
-|debugme|1.2.0|
-|decido|0.3.0|
-|deepnet|0.2.1|
-|deldir|2.0-4|
-|dendextend|1.17.1|
-|DEoptimR|1.1-3|
-|Deriv|4.1.3|
-|desc|1.4.3|
-|descr|1.1.8|
-|deSolve|1.4|
-|devtools|2.4.5|
-|diagram|1.6.5|
-|DiagrammeR|1.0.11|
-|DiagrammeRsvg|0.1|
-|dials|1.3.0|
-|DiceDesign|1.1|
-|dichromat|2.0-0.1|
-|diffobj|0.3.5|
-|digest|0.6.33|
-|dimRed|0.2.6|
-|diptest|0.77-1|
-|distcrete|1.0.3|
-|distributional|0.4.0|
-|DistributionUtils|0.6-1|
-|distrom|1.0.1|
-|dlm|1.1-6|
-|DMwR|0.4.1|
-|doBy|4.6.22|
-|doFuture|1.0.1|
-|doParallel|1.0.17|
-|doSNOW|1.0.20|
-|dotCall64|1.1-1|
-|downlit|0.4.4|
-|downloader|0.4|
-|dplyr|1.1.4|
-|DRR|0.0.4|
-|dse|2020.2-1|
-|DT|0.33|
-|dtplyr|1.3.1|
-|dtt|0.1-2|
-|dtw|1.23-1|
-|dygraphs|1.1.1.6|
-|dynlm|0.3-6|
-|e1071|1.7-14|
-|earth|5.3.3|
-|EbayesThresh|1.4-12|
-|ebdbNet|1.2.8|
-|ecm|7.2.0|
-|edeaR|0.9.4|
-|effects|4.2-2|
-|effectsize|0.8.9|
-|egg|0.4.5|
-|ellipse|0.5.0|
-|ellipsis|0.3.2|
-|elliptic|1.4-0|
-|emmeans|1.10.4|
-|emulator|1.2-24|
-|energy|1.7-12|
-|english|1.2-6|
-|ensembleBMA|5.1.8|
-|entropy|1.3.1|
-|epitools|0.5-10.1|
-|epitrix|0.4.0|
-|estimability|1.5|
-|eulerr|7.0.2|
-|evaluate|0.22|
-|evd|2.3-7|
-|evdbayes|1.1-3|
-|eventdataR|0.3.1|
-|exactRankTests|0.8-35|
-|expint|0.1-8|
-|expm|1.0-0|
-|extraDistr|1.10.0|
-|extrafont|0.19|
-|extrafontdb|1|
-|extremevalues|2.3.4|
-|ez|4.4-0|
-|factoextra|1.0.7|
-|FactoMineR|2.11|
-|fansi|1.0.5|
-|faoutlier|0.7.6|
-|farver|2.1.2|
-|fastICA|1.2-5.1|
-|fastmap|1.2.0|
-|fastmatch|1.1-4|
-|fBasics|4041.97|
-|fda|6.1.8|
-|fdrtool|1.2.18|
-|fds|1.8|
-|fGarch|4033.92|
-|fields|16.2|
-|filehash|2.4-6|
-|filelock|1.0.3|
-|FinCal|0.6.3|
-|fitdistrplus|1.2-1|
-|flashClust|1.01-2|
-|flexclust|1.4-2|
-|flexmix|2.3-19|
-|float|0.3-2|
-|FME|1.3.6.3|
-|fmsb|0.7.6|
-|FNN|1.1.4|
-|fontawesome|0.5.2|
-|fontBitstreamVera|0.1.1|
-|fontLiberation|0.1.0|
-|fontquiver|0.2.1|
-|forcats|1.0.0|
-|foreach|1.5.2|
-|forecast|8.23.0|
-|forecastHybrid|5.0.19|
-|foreign|0.8-87|
-|formatR|1.14|
-|formattable|0.2.1|
-|Formula|1.2-5|
-|fpc|2.2-12|
-|fracdiff|1.5-3|
-|fs|1.6.4|
-|fTrading|3042.79|
-|fUnitRoots|4040.81|
-|furrr|0.3.1|
-|futile.logger|1.4.3|
-|futile.options|1.0.1|
-|future|1.34.0|
-|future.apply|1.11.2|
-|gam|1.22-4|
-|gamlr|1.13-8|
-|gamlss|5.4-22|
-|gamlss.data|6.0-6|
-|gamlss.dist|6.1-1|
-|gargle|1.5.2|
-|gbm|2.2.2|
-|gbRd|0.4.12|
-|gbutils|0.5|
-|gclus|1.3.2|
-|gdalUtils|2.0.3.2|
-|gdata|3.0.0|
-|gdtools|0.4.0|
-|gee|4.13-27|
-|genalg|0.2.1|
-|generics|0.1.3|
-|genetics|1.3.8.1.3|
-|GenSA|1.1.14|
-|geojson|0.3.5|
-|geojsonio|0.11.3|
-|geojsonlint|0.4.0|
-|geojsonsf|2.0.3|
-|geometries|0.2.4|
-|geometry|0.4.7|
-|geoR|1.9-4|
-|geosphere|1.5-18|
-|gert|2.1.1|
-|gfonts|0.2.0|
-|GGally|2.2.1|
-|ggalt|0.4.0|
-|gganimate|1.0.9|
-|ggcorrplot|0.1.4.1|
-|ggdendro|0.2.0|
-|ggeffects|1.7.1|
-|ggExtra|0.10.1|
-|ggfittext|0.10.2|
-|ggforce|0.4.2|
-|ggformula|0.12.0|
-|ggfortify|0.4.17|
-|ggfun|0.1.6|
-|gghighlight|0.4.1|
-|ggimage|0.3.3|
-|ggiraph|0.8.10|
-|ggjoy|0.4.1|
-|ggm|2.3|
-|ggmap|4.0.0|
-|ggmcmc|1.5.1.1|
-|ggplot2|3.5.1|
-|ggplot2movies|0.0.1|
-|ggplotify|0.1.2|
-|ggpmisc|0.6.0|
-|ggpp|0.5.8-1|
-|ggpubr|0.6.0|
-|ggQC|0.0.31|
-|ggRandomForests|2.2.1|
-|ggraph|2.2.1|
-|ggrepel|0.9.5|
-|ggridges|0.5.6|
-|ggsci|3.2.0|
-|ggsignif|0.6.4|
-|ggsoccer|0.1.7|
-|ggstance|0.3.7|
-|ggstats|0.6.0|
-|ggtern|3.5.0|
-|ggtext|0.1.2|
-|ggthemes|5.1.0|
-|gh|1.4.1|
-|gistr|0.9.0|
-|git2r|0.33.0|
-|gitcreds|0.1.2|
-|glasso|1.11|
-|glmmTMB|1.1.9|
-|glmnet|4.1-8|
-|GlobalOptions|0.1.2|
-|globals|0.16.3|
-|glue|1.6.2|
-|gmodels|2.19.1|
-|gmp|0.7-5|
-|gnm|1.1-5|
-|goftest|1.2-3|
-|googledrive|2.1.1|
-|googlePolylines|0.8.4|
-|googlesheets4|1.1.1|
-|googleVis|0.7.3|
-|gower|1.0.1|
-|GPArotation|2024.3-1|
-|GPfit|1.0-8|
-|gplots|3.1.3.1|
-|graphlayouts|1.1.1|
-|greybox|2.0.2|
-|grid|4.3.3|
-|gridBase|0.4-7|
-|gridExtra|2.3|
-|gridGraphics|0.5-1|
-|gridSVG|1.7-5|
-|gridtext|0.1.5|
-|grImport|0.9-7|
-|grImport2|0.3-3|
-|grpreg|3.5.0|
-|gsl|2.1-8|
-|gss|2.2-7|
-|gstat|2.1-2|
-|gsubfn|0.7|
-|gtable|0.3.5|
-|gtools|3.9.5|
-|gtrendsR|1.5.1|
-|gWidgets|0.0-54.2|
-|gWidgets2|1.0-9|
-|gWidgets2tcltk|1.0-8|
-|gWidgetsRGtk2|0.0-86.1|
-|gWidgetstcltk|0.0-55.1|
-|haplo.stats|1.9.5.1|
-|hardhat|1.4.0|
-|hash|2.2.6.3|
-|haven|2.5.4|
-|hbsae|1.2|
-|HDInterval|0.2.4|
-|hdrcde|3.4|
-|heatmaply|1.5.0|
-|here|1.0.1|
-|hexbin|1.28.4|
-|hflights|0.1|
-|HH|3.1-52|
-|highcharter|0.9.4|
-|highr|0.11|
-|HistData|0.9-1|
-|Hmisc|5.1-3|
-|hms|1.1.3|
-|hoardr|0.5.4|
-|hrbrthemes|0.8.7|
-|HSAUR|1.3-10|
-|htmlTable|2.4.3|
-|htmltools|0.5.8.1|
-|htmlwidgets|1.6.4|
-|hts|6.0.3|
-|httpcode|0.3.0|
-|httpuv|1.6.15|
-|httr|1.4.7|
-|httr2|1.0.3|
-|huge|1.3.5|
-|hunspell|3.0.4|
-|hydroTSM|0.7-0|
-|hypergeo|1.2-13|
-|IBrokers|0.10-2|
-|ids|1.0.1|
-|ifultools|2.0-26|
-|igraph|2.0.3|
-|imager|1.0.2|
-|imputeTS|3.3|
-|incidence|1.7.5|
-|infer|1.0.7|
-|influenceR|0.1.5|
-|ini|0.3.1|
-|inline|0.3.19|
-|insight|0.20.4|
-|interp|1.1-6|
-|intervals|0.15.5|
-|inum|1.0-5|
-|investr|1.4.2|
-|ipred|0.9-15|
-|IRdisplay|1.1|
-|IRkernel|1.3.2|
-|irlba|2.3.5.1|
-|irr|0.84.1|
-|isoband|0.2.7|
-|ISOcodes|2024.02.12|
-|iterators|1.0.14|
-|janeaustenr|1.0.0|
-|janitor|2.2.0|
-|jmvcore|2.4.7|
-|jomo|2.7-6|
-|jpeg|0.1-10|
-|jqr|1.3.4|
-|jquerylib|0.1.4|
-|jsonify|1.2.2|
-|jsonlite|1.8.7|
-|jsonvalidate|1.3.2|
-|jtools|2.3.0|
-|kableExtra|1.4.0|
-|Kendall|2.2.1|
-|kernlab|0.9-33|
-|KernSmooth|2.23-24|
-|kinship2|1.9.6.1|
-|kknn|1.3.1|
-|klaR|1.7-3|
-|km.ci|0.5-6|
-|KMsurv|0.1-5|
-|knitr|1.48|
-|ks|1.14.2|
-|labeling|0.4.3|
-|labelled|2.13.0|
-|laeken|0.5.3|
-|Lahman|11.0-0|
-|lambda.r|1.2.4|
-|lars|1.3|
-|later|1.3.2|
-|latex2exp|0.9.6|
-|lattice|0.22-6|
-|latticeExtra|0.6-30|
-|lava|1.8.0|
-|lavaan|0.6-18|
-|lazyeval|0.2.2|
-|lda|1.5.2|
-|leafem|0.2.3|
-|leaflet|2.2.2|
-|leaflet.esri|1.0.0|
-|leaflet.extras|2.0.1|
-|leaflet.providers|2.0.0|
-|leafpop|0.1.0|
-|leafsync|0.1.0|
-|leaps|3.2|
-|LearnBayes|2.15.1|
-|lexicon|1.2.1|
-|lgr|0.4.4|
-|lhs|1.2.0|
-|libcoin|1.0-10|
-|LiblineaR|2.10-23|
-|LICORS|0.2.0|
-|lifecycle|1.0.3|
-|likert|1.3.5|
-|limSolve|1.5.7.1|
-|linelist|1.1.4|
-|linprog|0.9-4|
-|listenv|0.9.1|
-|lm.beta|1.7-2|
-|lme4|1.1-35.5|
-|lmm|1.4|
-|lmodel2|1.7-3|
-|lmtest|0.9-40|
-|lobstr|1.1.2|
-|locfit|1.5-9.9|
-|locpol|0.8.0|
-|LogicReg|1.6.6|
-|loo|2.8.0|
-|lpSolve|5.6.20|
-|lsa|0.73.3|
-|lsmeans|2.30-0|
-|lubridate|1.9.3|
-|lwgeom|0.2-14|
-|magic|1.6-1|
-|magick|2.8.4|
-|magrittr|2.0.3|
-|manipulateWidget|0.11.1|
-|MAPA|2.0.7|
-|mapdata|2.3.1|
-|mapdeck|0.3.5|
-|mapproj|1.2.11|
-|maps|3.4.2|
-|maptools|1.1-8|
-|maptree|1.4-8|
-|mapview|2.11.2|
-|marima|2.2|
-|markdown|1.13|
-|MASS|7.3-60.0.1|
-|Matching|4.10-14|
-|MatchIt|4.5.5|
-|matchmaker|0.1.1|
-|mathjaxr|1.6-0|
-|Matrix|1.6-5|
-|matrixcalc|1.0-6|
-|MatrixExtra|0.1.15|
-|MatrixModels|0.5-3|
-|matrixStats|1.4.0|
-|maxLik|1.5-2.1|
-|maxstat|0.7-25|
-|mboost|2.9-11|
-|mclust|6.1.1|
-|mcmc|0.9-8|
-|MCMCglmm|2.36|
-|MCMCpack|1.7-1|
-|mda|0.5-4|
-|memoise|2.0.1|
-|merTools|0.6.2|
-|meta|7.0-0|
-|metadat|1.2-0|
-|metafor|4.6-0|
-|mgcv|1.9-1|
-|mgsub|1.7.3|
-|mi|1.1|
-|mice|3.16.0|
-|microbenchmark|1.5.0|
-|mime|0.12|
-|miniCRAN|0.3.0|
-|miniUI|0.1.1.1|
-|minpack.lm|1.2-4|
-|minqa|1.2.8|
-|mirt|1.41|
-|misc3d|0.9-1|
-|miscTools|0.6-28|
-|mitml|0.4-5|
-|mitools|2.4|
-|mixtools|2.0.0|
-|mlapi|0.1.1|
-|mlbench|2.1-5|
-|mlogitBMA|0.1-7|
-|mnormt|2.1.1|
-|MNP|3.1-5|
-|modeldata|1.4.0|
-|modelenv|0.1.1|
-|ModelMetrics|1.2.2.2|
-|modelr|0.1.11|
-|modeltools|0.2-23|
-|mombf|3.5.4|
-|moments|0.14.1|
-|monomvn|1.9-20|
-|monreg|0.1.4.1|
-|mosaic|1.9.1|
-|mosaicCore|0.9.4.0|
-|mosaicData|0.20.4|
-|msir|1.3.3|
-|msm|1.7.1|
-|multcomp|1.4-26|
-|multcompView|0.1-10|
-|multicool|1.0.1|
-|munsell|0.5.1|
-|mvoutlier|2.1.1|
-|mvtnorm|1.3-1|
-|NADA|1.6-1.1|
-|nanoparquet|0.3.1|
-|NbClust|3.0.1|
-|ncvreg|3.14.3|
-|network|1.18.2|
-|networkD3|0.4|
-|neuralnet|1.44.2|
-|ngram|3.2.3|
-|nlme|3.1-165|
-|nloptr|2.1.1|
-|NLP|0.3-0|
-|nls.multstart|1.3.0|
-|NMF|0.21.0|
-|nnet|7.3-19|
-|nnls|1.5|
-|nortest|1.0-4|
-|numbers|0.8-5|
-|numDeriv|2016.8-1.1|
-|numform|0.7.0|
-|OceanView|1.0.7|
-|openair|2.18-2|
-|openssl|2.2.1|
-|ordinal|2023.12-4.1|
-|osmar|1.1-7|
-|outbreaks|1.9.0|
-|outliers|0.15|
-|packcircles|0.3.6|
-|padr|0.6.2|
-|pan|1.9|
-|pander|0.6.5|
-|parallelly|1.38.0|
-|parameters|0.22.2|
-|parsnip|1.2.1|
-|partitions|1.10-7|
-|party|1.3-17|
-|partykit|1.2-22|
-|patchwork|1.2.0|
-|pbapply|1.7-2|
-|pbdZMQ|0.3-10|
-|pbivnorm|0.6.0|
-|pbkrtest|0.5.3|
-|PCAmixdata|3.1|
-|pcaPP|2.0-5|
-|pdc|1.0.3|
-|pegas|1.3|
-|performance|0.12.3|
-|PerformanceAnalytics|2.0.4|
-|permute|0.9-7|
-|perry|0.3.1|
-|petrinetR|0.3.0|
-|pheatmap|1.0.12|
-|pillar|1.9.0|
-|pixmap|0.4-13|
-|pkgbuild|1.4.4|
-|pkgcache|2.2.2|
-|pkgconfig|2.0.3|
-|pkgdepends|0.7.2|
-|pkgdown|2.1.0|
-|pkgload|1.4.0|
-|pkgmaker|0.32.10|
-|platetools|0.1.7|
-|plogr|0.2.0|
-|plot3D|1.4.1|
-|plot3Drgl|1.0.4|
-|plotly|4.10.4|
-|plotmo|3.6.4|
-|plotrix|3.8-4|
-|pls|2.8-4|
-|plyr|1.8.9|
-|png|0.1-8|
-|polspline|1.1.25|
-|polyclip|1.10-7|
-|polylabelr|0.2.0|
-|polynom|1.4-1|
-|posterior|1.6.0|
-|ppcor|1.1|
-|prabclus|2.3-3|
-|pracma|2.4.4|
-|praise|1.0.0|
-|precrec|0.14.4|
-|prediction|0.3.18|
-|PresenceAbsence|1.1.11|
-|prettyunits|1.2.0|
-|pROC|1.18.5|
-|processmapR|0.5.5|
-|processmonitR|0.1.0|
-|processx|3.8.4|
-|prodlim|2024.06.25|
-|profileModel|0.6.1|
-|profvis|0.3.8|
-|progress|1.2.3|
-|progressr|0.14.0|
-|proj4|1.0-14|
-|promises|1.3.0|
-|prophet|1|
-|proto|1.0.0|
-|protolite|2.3.0|
-|proxy|0.4-27|
-|pryr|0.1.6|
-|ps|1.7.7|
-|pscl|1.5.9|
-|psych|2.4.3|
-|purrr|1.0.2|
-|pwr|1.3-0|
-|qap|0.1-2|
-|qcc|2.7|
-|qdapDictionaries|1.0.7|
-|qdapRegex|0.7.8|
-|qdapTools|1.3.7|
-|qgraph|1.9.8|
-|qicharts|0.5.8|
-|qicharts2|0.7.5|
-|quadprog|1.5-8|
-|quanteda|3.3.1|
-|quantmod|0.4.26|
-|quantreg|5.98|
-|questionr|0.7.8|
-|QuickJSR|1.3.1|
-|qvcalc|1.0.3|
-|R.cache|0.16.0|
-|R.matlab|3.7.0|
-|R.methodsS3|1.8.2|
-|R.oo|1.26.0|
-|R.utils|2.12.3|
-|r2d3|0.2.6|
-|R2HTML|2.3.4|
-|R2jags|0.8-5|
-|R2OpenBUGS|3.2-3.2.1|
-|R2WinBUGS|2.1-22.1|
-|R6|2.5.1|
-|ragg|1.3.2|
-|rainbow|3.8|
-|ramps|0.6.18|
-|RandomFields|3.3.14|
-|RandomFieldsUtils|1.2.5|
-|randomForest|4.7-1.1|
-|randomForestSRC|3.3.1|
-|ranger|0.16.0|
-|RApiDatetime|0.0.9|
-|rapidjsonr|1.2.0|
-|rappdirs|0.3.3|
-|raster|3.6-26|
-|rattle|5.5.1|
-|rayimage|0.10.0|
-|rayshader|0.24.10|
-|rayvertex|0.11.4|
-|rbenchmark|1.0.0|
-|rbibutils|2.2.16|
-|Rblpapi|0.3.14|
-|rbokeh|0.5.2|
-|rcmdcheck|1.4.0|
-|RColorBrewer|1.1-3|
-|Rcpp|1.0.13|
-|RcppArmadillo|14.0.0-1|
-|RcppDE|0.1.7|
-|RcppEigen|0.3.4.0.2|
-|RcppExamples|0.1.9|
-|RcppParallel|5.1.9|
-|RcppProgress|0.4.2|
-|RcppRoll|0.3.1|
-|RcppThread|2.1.7|
-|RcppTOML|0.2.2|
-|RCurl|1.98-1.16|
-|Rdpack|2.6.1|
-|readbitmap|0.1.5|
-|readr|2.1.5|
-|readxl|1.4.3|
-|recipes|1.1.0|
-|Redmonder|0.2.0|
-|registry|0.5-1|
-|relaimpo|2.2-7|
-|relimp|1.0-5|
-|rematch|2.0.0|
-|rematch2|2.1.2|
-|remotes|2.5.0|
-|Renext|3.1-4|
-|repr|1.1.6|
-|reprex|2.1.1|
-|reshape|0.8.9|
-|reshape2|1.4.4|
-|reticulate|1.39.0|
-|rex|1.2.1|
-|rFerns|5.0.0|
-|rfm|0.3.0|
-|rgdal|1.6-7|
-|rgeos|0.6-4|
-|rgexf|0.16.3|
-|rgl|1.3.1|
-|RgoogleMaps|1.5.1|
-|RGraphics|3.0-2|
-|RGtk2|2.20.36.3|
-|RhpcBLASctl|0.23-42|
-|RInside|0.2.18|
-|rio|1.2.2|
-|rjags|16-Apr|
-|rjson|0.2.21|
-|RJSONIO|1.3-1.9|
-|rlang|1.1.4|
-|rlecuyer|0.3-8|
-|rlist|0.4.6.2|
-|rmapshaper|0.5.0|
-|rmarkdown|2.28|
-|Rmisc|1.5.1|
-|Rmpfr|0.9-5|
-|rms|6.8-1|
-|RMySQL|0.10.28|
-|rngtools|1.5.2|
-|robCompositions|2.4.1|
-|robfilter|4.1.5|
-|robustbase|0.99-4|
-|robustHD|0.8.1|
-|ROCR|1.0-11|
-|RODBC|1.3-23|
-|Rook|1.2|
-|rootSolve|1.8.2.4|
-|roxygen2|7.3.2|
-|rpart|4.1.23|
-|rpart.plot|3.1.2|
-|rpivotTable|0.3.0|
-|rprojroot|2.0.4|
-|RPushbullet|0.3.4|
-|rrcov|1.7-6|
-|rsample|1.2.1|
-|rsdmx|0.6-3|
-|RSGHB|1.2.2|
-|RSNNS|0.4-17|
-|Rsolnp|1.16|
-|rsparse|0.5.2|
-|RSpectra|0.16-2|
-|RSQLite|2.3.7|
-|rstan|2.32.6|
-|rstantools|2.4.0|
-|rstatix|0.7.2|
-|rstudioapi|0.16.0|
-|rsvg|2.6.0|
-|RTextTools|1.4.3|
-|Rttf2pt1|1.3.12|
-|RUnit|0.4.33|
-|runjags|2.2.2-4|
-|Runuran|0.38|
-|rvcheck|0.2.1|
-|rversions|2.1.2|
-|rvest|1.0.4|
-|rworldmap|1.3-8|
-|rworldxtra|1.01|
-|s2|1.1.7|
-|SampleSizeMeans|1.2.3|
-|SampleSizeProportions|1.1.3|
-|sandwich|3.1-0|
-|sas7bdat|0.8|
-|sass|0.4.9|
-|satellite|1.0.5|
-|sbgcop|0.98|
-|scales|1.3.0|
-|scatterplot3d|0.3-44|
-|sciplot|1.2-0|
-|segmented|2.1-2|
-|selectr|0.4-2|
-|sem|3.1-16|
-|sentimentr|2.9.0|
-|seqinr|4.2-36|
-|seriation|1.5.6|
-|servr|0.31|
-|sessioninfo|1.2.2|
-|setRNG|2024.2-1|
-|sets|1.0-25|
-|sf|1.0-16|
-|sfd|0.1.0|
-|sfheaders|0.4.4|
-|sfsmisc|1.1-19|
-|sftime|0.2-0|
-|sgeostat|1.0-27|
-|shades|1.4.0|
-|shape|1.4.6.1|
-|shapefiles|0.7.2|
-|shiny|1.9.1|
-|shinyBS|0.61.1|
-|shinycssloaders|1.1.0|
-|shinyjs|2.1.0|
-|shinyTime|1.0.3|
-|showtext|0.9-7|
-|showtextdb|3|
-|SimDesign|2.17.1|
-|SIS|0.8-8|
-|SixSigma|0.11.1|
-|sjlabelled|1.2.0|
-|sjmisc|2.8.10|
-|sjPlot|2.8.16|
-|sjstats|0.19.0|
-|skmeans|0.2-17|
-|slam|0.1-53|
-|slider|0.3.1|
-|sm|2.2-6.0|
-|smooth|4.0.2|
-|smoothSurv|2.6|
-|sna|2.7-2|
-|snakecase|0.11.1|
-|snow|0.4-4|
-|SnowballC|0.7.1|
-|snowFT|1.6-1|
-|sodium|1.3.1|
-|sourcetools|0.1.7-1|
-|sp|2.1-4|
-|spacefillr|0.3.3|
-|spacetime|1.3-2|
-|spacyr|1.3.0|
-|spam|2.10-0|
-|SparseM|1.84-2|
-|sparsepp|1.22|
-|spatial|7.3-17|
-|spatstat|3.0-7|
-|spatstat.data|3.1-2|
-|spatstat.explore|3.2-6|
-|spatstat.geom|3.2-9|
-|spatstat.linnet|3.1-4|
-|spatstat.model|3.2-10|
-|spatstat.random|3.2-3|
-|spatstat.sparse|3.1-0|
-|spatstat.univar|3.0-1|
-|spatstat.utils|3.1-0|
-|spBayes|0.4-7|
-|spData|2.3.3|
-|spdep|1.3-5|
-|spikeslab|1.1.6|
-|splancs|2.01-45|
-|splines|4.3.3|
-|spls|2.2-3|
-|splus2R|1.3-5|
-|spTimer|3.3.2|
-|sqldf|0.4-11|
-|SQUAREM|2021.1|
-|sROC|0.1-2|
-|stabledist|0.7-2|
-|stabs|0.6-4|
-|StanHeaders|2.32.10|
-|stars|0.6-6|
-|statmod|1.5.0|
-|statnet.common|4.9.0|
-|stepPlr|0.93|
-|stinepack|1.5|
-|stochvol|3.2.4|
-|stopwords|2.3|
-|stringdist|0.9.12|
-|stringi|1.8.4|
-|stringr|1.5.1|
-|strucchange|1.5-4|
-|styler|1.10.3|
-|sugrrants|0.2.9|
-|sunburstR|2.1.8|
-|SuppDists|1.1-9.8|
-|survey|4.4-2|
-|survival|3.7-0|
-|survminer|0.4.9|
-|survMisc|0.5.6|
-|svglite|2.1.3|
-|svmpath|0.97|
-|svUnit|1.0.6|
-|sweep|0.2.5|
-|sys|3.4.2|
-|sysfonts|0.8.9|
-|systemfit|1.1-30|
-|systemfonts|1.1.0|
-|syuzhet|1.0.7|
-|tau|0.0-25|
-|tcltk|4.3.3|
-|tcltk2|1.2-11|
-|TeachingDemos|2.13|
-|tensor|1.5|
-|tensorA|0.36.2.1|
-|terra|1.7-78|
-|terrainmeshr|0.1.0|
-|testthat|3.2.1.1|
-|texreg|1.39.4|
-|text2vec|0.6.4|
-|textcat|1.0-8|
-|textclean|0.9.3|
-|textir|2.0-5|
-|textmineR|3.0.5|
-|textshape|1.7.5|
-|textshaping|0.4.0|
-|tfplot|2021.6-1|
-|tframe|2015.12-1.1|
-|tgp|2.4-23|
-|TH.data|1.1-2|
-|thief|0.3|
-|threejs|0.3.3|
-|tibble|3.2.1|
-|tibbletime|0.1.8|
-|tidycensus|1.6.5|
-|tidygraph|1.3.0|
-|tidymodels|1.2.0|
-|tidyquant|1.0.9|
-|tidyr|1.3.1|
-|tidyselect|1.2.1|
-|tidytext|0.4.2|
-|tidyverse|2.0.0|
-|tiff|0.1-12|
-|tigris|2.1|
-|timechange|0.3.0|
-|timeDate|4032.109|
-|timelineS|0.1.1|
-|timeSeries|4032.109|
-|timetk|2.9.0|
-|timevis|2.1.0|
-|tinytex|0.52|
-|tm|0.7-14|
-|tmap|3.3-4|
-|tmaptools|3.1-1|
-|TMB|1.9.14|
-|tmvnsim|1.0-2|
-|tokenizers|0.3.0|
-|topicmodels|0.2-16|
-|TraMineR|2.2-10|
-|transformr|0.1.5|
-|tree|1.0-43|
-|treemap|2.4-4|
-|treemapify|2.5.6|
-|trelliscopejs|0.2.6|
-|triebeard|0.4.1|
-|trimcluster|0.1-5|
-|truncnorm|1.0-9|
-|TSA|1.3.1|
-|tseries|0.10-57|
-|tsfeatures|1.1.1|
-|tsibble|1.1.5|
-|tsintermittent|1.1|
-|tsoutliers|0.6-10|
-|TSP|1.2-4|
-|TSstudio|0.1.7|
-|TTR|0.24.4|
-|tune|1.2.1|
-|tweedie|2.3.5|
-|tweenr|2.0.3|
-|twitteR|1.1.9|
-|tzdb|0.4.0|
-|ucminf|1.2.2|
-|udpipe|0.8.11|
-|udunits2|0.13.2.1|
-|units|0.8-5|
-|UpSetR|1.4.0|
-|urca|1.3-4|
-|urlchecker|1.0.1|
-|urltools|1.7.3|
-|useful|1.2.6.1|
-|usethis|3.0.0|
-|UsingR|2.0-7|
-|usmap|0.7.1|
-|usmapdata|0.3.0|
-|utf8|1.2.4|
-|uuid|1.1-1|
-|V8|5.0.0|
-|vars|1.6-1|
-|vcd|1.4-12|
-|vctrs|0.6.4|
-|vdiffr|1.0.7|
-|vegan|2.6-8|
-|VennDiagram|1.7.3|
-|VGAM|1.1-11|
-|VIM|6.2.2|
-|vioplot|0.5.0|
-|viridis|0.6.5|
-|viridisLite|0.4.2|
-|visNetwork|2.1.2|
-|vistime|1.2.4|
-|vroom|1.6.5|
-|waldo|0.5.3|
-|warp|0.2.1|
-|waterfalls|1.0.0|
-|wavethresh|4.7.3|
-|webshot|0.5.5|
-|webutils|1.2.1|
-|WeibullR|1.2.1|
-|weights|1.0.4|
-|whisker|0.4.1|
-|widgetframe|0.3.1|
-|withr|3.0.1|
-|wk|0.9.2|
-|wmtsa|2.0-3|
-|wordcloud|2.6|
-|wordcloud2|0.2.1|
-|workflows|1.1.4|
-|workflowsets|1.1.0|
-|writexl|1.5.0|
-|xesreadR|0.2.3|
-|xfun|0.47|
-|xgboost|2.1.1.1|
-|XML|3.99-0.17|
-|xml2|1.3.6|
-|xopen|1.0.1|
-|xplorerr|0.1.2|
-|xtable|1.8-4|
-|xts|0.14.0|
-|yaml|2.3.10|
-|yardstick|1.3.1|
-|yarrr|0.1.5|
-|YieldCurve|5.1|
-|yulab.utils|0.1.7|
-|zCompositions|1.5.0-4|
-|zeallot|0.1.0|
-|zic|0.9.1|
-|zip|2.3.1|
-|zipfR|0.6-70|
-|zoo|1.8-12|
-|base|4.3.3|Built-in|Package |
-|compiler|4.3.3|Built-in|Package | 
-|datasets|4.3.3|Built-in|Package |
-|graphics|4.3.3|Built-in|Package |
-|grDevices|4.3.3|Built-in|Package |
-|MatrixGenerics|1.14.0|[Download] (https://bioconductor.org/packages/MatrixGenerics) |
-|methods|4.3.3|Built-in|Package |
-|parallel|4.3.3|Built-in|Package | 
-|sparseMatrixStats|1.14.0|[Download] (https://github.com/const-ae/sparseMatrixStats) |
-|stats|4.3.3|Built-in|Package |
-|stats4|4.3.3|Built-in|Package |
-|tools|4.3.3|Built-in|Package |
-|utils|4.3.3|Built-in|Package|
+| abc                   | 2.2.1       |
+| abc.data              | 1.1         |
+| abind                 | 1.4-5       |
+| acepack               | 1.4.2       |
+| actuar                | 3.3-4       |
+| ade4                  | 1.7-22      |
+| adegenet              | 2.1.10      |
+| AdMit                 | 2.1.9       |
+| AER                   | 1.2-13      |
+| agricolae             | 1.3-7       |
+| AlgDesign             | 1.2.1       |
+| alluvial              | 0.1-2       |
+| andrews               | 1.1.2       |
+| anomalize             | 0.3.0       |
+| anytime               | 0.3.9       |
+| aod                   | 1.3.3       |
+| apcluster             | 1.4.13      |
+| ape                   | 5.8         |
+| aplpack               | 1.3.5       |
+| approximator          | 1.2-8       |
+| arm                   | 1.14-4      |
+| arsenal               | 3.6.3       |
+| arules                | 1.7-8       |
+| arulesViz             | 1.5.3       |
+| ash                   | 1.0-15      |
+| askpass               | 1.2.0       |
+| assertthat            | 0.2.1       |
+| audio                 | 0.1-11      |
+| autocogs              | 0.1.4       |
+| automap               | 1.1-12      |
+| aweek                 | 1.0.3       |
+| BACCO                 | 2.1-0       |
+| backports             | 1.5.0       |
+| BaM                   | 1.0.3       |
+| BAS                   | 1.7.1       |
+| base64                | 2.0.1       |
+| base64enc             | 0.1-3       |
+| BayesDA               | 2012.04-1   |
+| BayesFactor           | 0.9.12-4.7  |
+| bayesGARCH            | 2.1.10      |
+| bayesm                | 3.1-6       |
+| bayesmix              | 0.7-6       |
+| bayesplot             | 1.11.1      |
+| bayesQR               | 2.4         |
+| bayesSurv             | 3.7         |
+| bayestestR            | 0.14.0      |
+| BayesTree             | 0.3-1.5     |
+| BayesX                | 0.3-3       |
+| BCBCSF                | 1.0-1       |
+| BDgraph               | 2.73        |
+| beanplot              | 1.3.1       |
+| beepr                 | 2           |
+| beeswarm              | 0.4.0       |
+| benford.analysis      | 0.1.5       |
+| BenfordTests          | 1.2.0       |
+| bfp                   | 0.0-48      |
+| BH                    | 1.84.0-0    |
+| bibtex                | 0.5.1       |
+| biglm                 | 0.9-3       |
+| bindr                 | 0.1.1       |
+| bindrcpp              | 0.2.3       |
+| binom                 | 1.1-1.1     |
+| BiocManager           | 1.30.25     |
+| bit                   | 4.0.5       |
+| bit64                 | 4.0.5       |
+| bitops                | 1.0-8       |
+| bizdays               | 1.0.16      |
+| blandr                | 0.6.0       |
+| blme                  | 1.0-5       |
+| blob                  | 1.2.4       |
+| BLR                   | 1.6         |
+| BMA                   | 3.18.17     |
+| bmp                   | 0.3         |
+| BMS                   | 0.3.5       |
+| bnlearn               | 4.8.3       |
+| boa                   | 1.1.8-2     |
+| BoolNet               | 2.1.9       |
+| Boom                  | 0.9.15      |
+| BoomSpikeSlab         | 1.2.6       |
+| boot                  | 1.3-31      |
+| bootstrap             | 2019.6      |
+| Boruta                | 8.0.0       |
+| bqtl                  | 1.0-36      |
+| BradleyTerry2         | 1.1-2       |
+| brew                  | 1.0-10      |
+| brglm                 | 0.7.2       |
+| brio                  | 1.1.5       |
+| broom                 | 1.0.6       |
+| broom.helpers         | 1.17.0      |
+| broom.mixed           | 0.2.9.5     |
+| bslib                 | 0.8.0       |
+| bspec                 | 1.6         |
+| bspmma                | 0.1-2       |
+| bsts                  | 0.9.10      |
+| bupaR                 | 0.5.4       |
+| C50                   | 0.1.8       |
+| ca                    | 0.71.1      |
+| cachem                | 1.1.0       |
+| Cairo                 | 1.6-2       |
+| cairoDevice           | 2.28.2.2    |
+| calibrate             | 1.7.7       |
+| calibrator            | 1.2-8       |
+| callr                 | 3.7.6       |
+| car                   | 3.1-2       |
+| carData               | 3.0-5       |
+| cards                 | 0.2.2       |
+| caret                 | 6.0-94      |
+| catnet                | 1.16.1      |
+| caTools               | 1.18.3      |
+| cclust                | 0.6-26      |
+| cellranger            | 1.1.0       |
+| ChainLadder           | 0.2.19      |
+| changepoint           | 2.2.4       |
+| checkmate             | 2.3.2       |
+| checkpoint            | 1.0.2       |
+| chk                   | 0.9.2       |
+| choroplethrMaps       | 1.0.1       |
+| chron                 | 2.3-61      |
+| circlize              | 0.4.16      |
+| Ckmeans.1d.dp         | 4.3.5       |
+| class                 | 7.3-22      |
+| classInt              | 0.4-10      |
+| cli                   | 3.6.3       |
+| ClickClust            | 1.1.6       |
+| clickstream           | 1.3.3       |
+| clipr                 | 0.8.0       |
+| clock                 | 0.7.1       |
+| clue                  | 0.3-65      |
+| cluster               | 2.1.6       |
+| clv                   | 0.3-2.4     |
+| cmprsk                | 2.2-12      |
+| coda                  | 0.19-4.1    |
+| codetools             | 0.2-20      |
+| coefplot              | 1.2.8       |
+| coin                  | 1.4-3       |
+| collapsibleTree       | 0.1.8       |
+| colorRamps            | 2.3.4       |
+| colorspace            | 2.1-1       |
+| colourpicker          | 1.3.0       |
+| colourvalues          | 0.3.9       |
+| combinat              | 0.0-8       |
+| commonmark            | 1.9.1       |
+| compositions          | 2.0-8       |
+| CompQuadForm          | 1.4.3       |
+| confintr              | 1.0.2       |
+| conflicted            | 1.2.0       |
+| conquer               | 1.3.3       |
+| contfrac              | 1.1-12      |
+| CORElearn             | 1.57.3      |
+| corpcor               | 1.6.10      |
+| corrgram              | 1.14        |
+| corrplot              | 0.94        |
+| covr                  | 3.6.4       |
+| cowplot               | 1.1.3       |
+| cplm                  | 0.7-12      |
+| cpp11                 | 0.5.0       |
+| crayon                | 1.5.2       |
+| credentials           | 2.0.1       |
+| crosstalk             | 1.2.1       |
+| crul                  | 1.5.0       |
+| ctv                   | 0.9-5       |
+| cubature              | 2.0.4.6     |
+| Cubist                | 0.4.4       |
+| curl                  | 5.2.1       |
+| cvar                  | 0.5         |
+| CVST                  | 0.2-3       |
+| cvTools               | 0.3.3       |
+| d3heatmap             | 0.6.1.2     |
+| d3Network             | 0.5.2.1     |
+| d3r                   | 1.1.0       |
+| data.table            | 1.15.4      |
+| data.tree             | 1.1.0       |
+| datasauRus            | 0.1.8       |
+| datawizard            | 0.12.3      |
+| date                  | 1.2-42      |
+| DBI                   | 1.2.3       |
+| dbplyr                | 2.5.0       |
+| dbscan                | 1.2-0       |
+| dclone                | 2.3-2       |
+| dcurver               | 0.9.2       |
+| ddalpha               | 1.3.15      |
+| deal                  | 1.2-42      |
+| debugme               | 1.2.0       |
+| decido                | 0.3.0       |
+| deepnet               | 0.2.1       |
+| deldir                | 2.0-4       |
+| dendextend            | 1.17.1      |
+| DEoptimR              | 1.1-3       |
+| Deriv                 | 4.1.3       |
+| desc                  | 1.4.3       |
+| descr                 | 1.1.8       |
+| deSolve               | 1.4         |
+| devtools              | 2.4.5       |
+| diagram               | 1.6.5       |
+| DiagrammeR            | 1.0.11      |
+| DiagrammeRsvg         | 0.1         |
+| dials                 | 1.3.0       |
+| DiceDesign            | 1.1         |
+| dichromat             | 2.0-0.1     |
+| diffobj               | 0.3.5       |
+| digest                | 0.6.33      |
+| dimRed                | 0.2.6       |
+| diptest               | 0.77-1      |
+| distcrete             | 1.0.3       |
+| distributional        | 0.4.0       |
+| DistributionUtils     | 0.6-1       |
+| distrom               | 1.0.1       |
+| dlm                   | 1.1-6       |
+| DMwR                  | 0.4.1       |
+| doBy                  | 4.6.22      |
+| doFuture              | 1.0.1       |
+| doParallel            | 1.0.17      |
+| doSNOW                | 1.0.20      |
+| dotCall64             | 1.1-1       |
+| downlit               | 0.4.4       |
+| downloader            | 0.4         |
+| dplyr                 | 1.1.4       |
+| DRR                   | 0.0.4       |
+| dse                   | 2020.2-1    |
+| DT                    | 0.33        |
+| dtplyr                | 1.3.1       |
+| dtt                   | 0.1-2       |
+| dtw                   | 1.23-1      |
+| dygraphs              | 1.1.1.6     |
+| dynlm                 | 0.3-6       |
+| e1071                 | 1.7-14      |
+| earth                 | 5.3.3       |
+| EbayesThresh          | 1.4-12      |
+| ebdbNet               | 1.2.8       |
+| ecm                   | 7.2.0       |
+| edeaR                 | 0.9.4       |
+| effects               | 4.2-2       |
+| effectsize            | 0.8.9       |
+| egg                   | 0.4.5       |
+| ellipse               | 0.5.0       |
+| ellipsis              | 0.3.2       |
+| elliptic              | 1.4-0       |
+| emmeans               | 1.10.4      |
+| emulator              | 1.2-24      |
+| energy                | 1.7-12      |
+| english               | 1.2-6       |
+| ensembleBMA           | 5.1.8       |
+| entropy               | 1.3.1       |
+| epitools              | 0.5-10.1    |
+| epitrix               | 0.4.0       |
+| estimability          | 1.5         |
+| eulerr                | 7.0.2       |
+| evaluate              | 0.22        |
+| evd                   | 2.3-7       |
+| evdbayes              | 1.1-3       |
+| eventdataR            | 0.3.1       |
+| exactRankTests        | 0.8-35      |
+| expint                | 0.1-8       |
+| expm                  | 1.0-0       |
+| extraDistr            | 1.10.0      |
+| extrafont             | 0.19        |
+| extrafontdb           | 1           |
+| extremevalues         | 2.3.4       |
+| ez                    | 4.4-0       |
+| factoextra            | 1.0.7       |
+| FactoMineR            | 2.11        |
+| fansi                 | 1.0.5       |
+| faoutlier             | 0.7.6       |
+| farver                | 2.1.2       |
+| fastICA               | 1.2-5.1     |
+| fastmap               | 1.2.0       |
+| fastmatch             | 1.1-4       |
+| fBasics               | 4041.97     |
+| fda                   | 6.1.8       |
+| fdrtool               | 1.2.18      |
+| fds                   | 1.8         |
+| fGarch                | 4033.92     |
+| fields                | 16.2        |
+| filehash              | 2.4-6       |
+| filelock              | 1.0.3       |
+| FinCal                | 0.6.3       |
+| fitdistrplus          | 1.2-1       |
+| flashClust            | 1.01-2      |
+| flexclust             | 1.4-2       |
+| flexmix               | 2.3-19      |
+| float                 | 0.3-2       |
+| FME                   | 1.3.6.3     |
+| fmsb                  | 0.7.6       |
+| FNN                   | 1.1.4       |
+| fontawesome           | 0.5.2       |
+| fontBitstreamVera     | 0.1.1       |
+| fontLiberation        | 0.1.0       |
+| fontquiver            | 0.2.1       |
+| forcats               | 1.0.0       |
+| foreach               | 1.5.2       |
+| forecast              | 8.23.0      |
+| forecastHybrid        | 5.0.19      |
+| foreign               | 0.8-87      |
+| formatR               | 1.14        |
+| formattable           | 0.2.1       |
+| Formula               | 1.2-5       |
+| fpc                   | 2.2-12      |
+| fracdiff              | 1.5-3       |
+| fs                    | 1.6.4       |
+| fTrading              | 3042.79     |
+| fUnitRoots            | 4040.81     |
+| furrr                 | 0.3.1       |
+| futile.logger         | 1.4.3       |
+| futile.options        | 1.0.1       |
+| future                | 1.34.0      |
+| future.apply          | 1.11.2      |
+| gam                   | 1.22-4      |
+| gamlr                 | 1.13-8      |
+| gamlss                | 5.4-22      |
+| gamlss.data           | 6.0-6       |
+| gamlss.dist           | 6.1-1       |
+| gargle                | 1.5.2       |
+| gbm                   | 2.2.2       |
+| gbRd                  | 0.4.12      |
+| gbutils               | 0.5         |
+| gclus                 | 1.3.2       |
+| gdalUtils             | 2.0.3.2     |
+| gdata                 | 3.0.0       |
+| gdtools               | 0.4.0       |
+| gee                   | 4.13-27     |
+| genalg                | 0.2.1       |
+| generics              | 0.1.3       |
+| genetics              | 1.3.8.1.3   |
+| GenSA                 | 1.1.14      |
+| geojson               | 0.3.5       |
+| geojsonio             | 0.11.3      |
+| geojsonlint           | 0.4.0       |
+| geojsonsf             | 2.0.3       |
+| geometries            | 0.2.4       |
+| geometry              | 0.4.7       |
+| geoR                  | 1.9-4       |
+| geosphere             | 1.5-18      |
+| gert                  | 2.1.1       |
+| gfonts                | 0.2.0       |
+| GGally                | 2.2.1       |
+| ggalt                 | 0.4.0       |
+| gganimate             | 1.0.9       |
+| ggcorrplot            | 0.1.4.1     |
+| ggdendro              | 0.2.0       |
+| ggeffects             | 1.7.1       |
+| ggExtra               | 0.10.1      |
+| ggfittext             | 0.10.2      |
+| ggforce               | 0.4.2       |
+| ggformula             | 0.12.0      |
+| ggfortify             | 0.4.17      |
+| ggfun                 | 0.1.6       |
+| gghighlight           | 0.4.1       |
+| ggimage               | 0.3.3       |
+| ggiraph               | 0.8.10      |
+| ggjoy                 | 0.4.1       |
+| ggm                   | 2.3         |
+| ggmap                 | 4.0.0       |
+| ggmcmc                | 1.5.1.1     |
+| ggplot2               | 3.5.1       |
+| ggplot2movies         | 0.0.1       |
+| ggplotify             | 0.1.2       |
+| ggpmisc               | 0.6.0       |
+| ggpp                  | 0.5.8-1     |
+| ggpubr                | 0.6.0       |
+| ggQC                  | 0.0.31      |
+| ggRandomForests       | 2.2.1       |
+| ggraph                | 2.2.1       |
+| ggrepel               | 0.9.5       |
+| ggridges              | 0.5.6       |
+| ggsci                 | 3.2.0       |
+| ggsignif              | 0.6.4       |
+| ggsoccer              | 0.1.7       |
+| ggstance              | 0.3.7       |
+| ggstats               | 0.6.0       |
+| ggtern                | 3.5.0       |
+| ggtext                | 0.1.2       |
+| ggthemes              | 5.1.0       |
+| gh                    | 1.4.1       |
+| gistr                 | 0.9.0       |
+| git2r                 | 0.33.0      |
+| gitcreds              | 0.1.2       |
+| glasso                | 1.11        |
+| glmmTMB               | 1.1.9       |
+| glmnet                | 4.1-8       |
+| GlobalOptions         | 0.1.2       |
+| globals               | 0.16.3      |
+| glue                  | 1.6.2       |
+| gmodels               | 2.19.1      |
+| gmp                   | 0.7-5       |
+| gnm                   | 1.1-5       |
+| goftest               | 1.2-3       |
+| googledrive           | 2.1.1       |
+| googlePolylines       | 0.8.4       |
+| googlesheets4         | 1.1.1       |
+| googleVis             | 0.7.3       |
+| gower                 | 1.0.1       |
+| GPArotation           | 2024.3-1    |
+| GPfit                 | 1.0-8       |
+| gplots                | 3.1.3.1     |
+| graphlayouts          | 1.1.1       |
+| greybox               | 2.0.2       |
+| grid                  | 4.3.3       |
+| gridBase              | 0.4-7       |
+| gridExtra             | 2.3         |
+| gridGraphics          | 0.5-1       |
+| gridSVG               | 1.7-5       |
+| gridtext              | 0.1.5       |
+| grImport              | 0.9-7       |
+| grImport2             | 0.3-3       |
+| grpreg                | 3.5.0       |
+| gsl                   | 2.1-8       |
+| gss                   | 2.2-7       |
+| gstat                 | 2.1-2       |
+| gsubfn                | 0.7         |
+| gtable                | 0.3.5       |
+| gtools                | 3.9.5       |
+| gtrendsR              | 1.5.1       |
+| gWidgets              | 0.0-54.2    |
+| gWidgets2             | 1.0-9       |
+| gWidgets2tcltk        | 1.0-8       |
+| gWidgetsRGtk2         | 0.0-86.1    |
+| gWidgetstcltk         | 0.0-55.1    |
+| haplo.stats           | 1.9.5.1     |
+| hardhat               | 1.4.0       |
+| hash                  | 2.2.6.3     |
+| haven                 | 2.5.4       |
+| hbsae                 | 1.2         |
+| HDInterval            | 0.2.4       |
+| hdrcde                | 3.4         |
+| heatmaply             | 1.5.0       |
+| here                  | 1.0.1       |
+| hexbin                | 1.28.4      |
+| hflights              | 0.1         |
+| HH                    | 3.1-52      |
+| highcharter           | 0.9.4       |
+| highr                 | 0.11        |
+| HistData              | 0.9-1       |
+| Hmisc                 | 5.1-3       |
+| hms                   | 1.1.3       |
+| hoardr                | 0.5.4       |
+| hrbrthemes            | 0.8.7       |
+| HSAUR                 | 1.3-10      |
+| htmlTable             | 2.4.3       |
+| htmltools             | 0.5.8.1     |
+| htmlwidgets           | 1.6.4       |
+| hts                   | 6.0.3       |
+| httpcode              | 0.3.0       |
+| httpuv                | 1.6.15      |
+| httr                  | 1.4.7       |
+| httr2                 | 1.0.3       |
+| huge                  | 1.3.5       |
+| hunspell              | 3.0.4       |
+| hydroTSM              | 0.7-0       |
+| hypergeo              | 1.2-13      |
+| IBrokers              | 0.10-2      |
+| ids                   | 1.0.1       |
+| ifultools             | 2.0-26      |
+| igraph                | 2.0.3       |
+| imager                | 1.0.2       |
+| imputeTS              | 3.3         |
+| incidence             | 1.7.5       |
+| infer                 | 1.0.7       |
+| influenceR            | 0.1.5       |
+| ini                   | 0.3.1       |
+| inline                | 0.3.19      |
+| insight               | 0.20.4      |
+| interp                | 1.1-6       |
+| intervals             | 0.15.5      |
+| inum                  | 1.0-5       |
+| investr               | 1.4.2       |
+| ipred                 | 0.9-15      |
+| IRdisplay             | 1.1         |
+| IRkernel              | 1.3.2       |
+| irlba                 | 2.3.5.1     |
+| irr                   | 0.84.1      |
+| isoband               | 0.2.7       |
+| ISOcodes              | 2024.02.12  |
+| iterators             | 1.0.14      |
+| janeaustenr           | 1.0.0       |
+| janitor               | 2.2.0       |
+| jmvcore               | 2.4.7       |
+| jomo                  | 2.7-6       |
+| jpeg                  | 0.1-10      |
+| jqr                   | 1.3.4       |
+| jquerylib             | 0.1.4       |
+| jsonify               | 1.2.2       |
+| jsonlite              | 1.8.7       |
+| jsonvalidate          | 1.3.2       |
+| jtools                | 2.3.0       |
+| kableExtra            | 1.4.0       |
+| Kendall               | 2.2.1       |
+| kernlab               | 0.9-33      |
+| KernSmooth            | 2.23-24     |
+| kinship2              | 1.9.6.1     |
+| kknn                  | 1.3.1       |
+| klaR                  | 1.7-3       |
+| km.ci                 | 0.5-6       |
+| KMsurv                | 0.1-5       |
+| knitr                 | 1.48        |
+| ks                    | 1.14.2      |
+| labeling              | 0.4.3       |
+| labelled              | 2.13.0      |
+| laeken                | 0.5.3       |
+| Lahman                | 11.0-0      |
+| lambda.r              | 1.2.4       |
+| lars                  | 1.3         |
+| later                 | 1.3.2       |
+| latex2exp             | 0.9.6       |
+| lattice               | 0.22-6      |
+| latticeExtra          | 0.6-30      |
+| lava                  | 1.8.0       |
+| lavaan                | 0.6-18      |
+| lazyeval              | 0.2.2       |
+| lda                   | 1.5.2       |
+| leafem                | 0.2.3       |
+| leaflet               | 2.2.2       |
+| leaflet.esri          | 1.0.0       |
+| leaflet.extras        | 2.0.1       |
+| leaflet.providers     | 2.0.0       |
+| leafpop               | 0.1.0       |
+| leafsync              | 0.1.0       |
+| leaps                 | 3.2         |
+| LearnBayes            | 2.15.1      |
+| lexicon               | 1.2.1       |
+| lgr                   | 0.4.4       |
+| lhs                   | 1.2.0       |
+| libcoin               | 1.0-10      |
+| LiblineaR             | 2.10-23     |
+| LICORS                | 0.2.0       |
+| lifecycle             | 1.0.3       |
+| likert                | 1.3.5       |
+| limSolve              | 1.5.7.1     |
+| linelist              | 1.1.4       |
+| linprog               | 0.9-4       |
+| listenv               | 0.9.1       |
+| lm.beta               | 1.7-2       |
+| lme4                  | 1.1-35.5    |
+| lmm                   | 1.4         |
+| lmodel2               | 1.7-3       |
+| lmtest                | 0.9-40      |
+| lobstr                | 1.1.2       |
+| locfit                | 1.5-9.9     |
+| locpol                | 0.8.0       |
+| LogicReg              | 1.6.6       |
+| loo                   | 2.8.0       |
+| lpSolve               | 5.6.20      |
+| lsa                   | 0.73.3      |
+| lsmeans               | 2.30-0      |
+| lubridate             | 1.9.3       |
+| lwgeom                | 0.2-14      |
+| magic                 | 1.6-1       |
+| magick                | 2.8.4       |
+| magrittr              | 2.0.3       |
+| manipulateWidget      | 0.11.1      |
+| MAPA                  | 2.0.7       |
+| mapdata               | 2.3.1       |
+| mapdeck               | 0.3.5       |
+| mapproj               | 1.2.11      |
+| maps                  | 3.4.2       |
+| maptools              | 1.1-8       |
+| maptree               | 1.4-8       |
+| mapview               | 2.11.2      |
+| marima                | 2.2         |
+| markdown              | 1.13        |
+| MASS                  | 7.3-60.0.1  |
+| Matching              | 4.10-14     |
+| MatchIt               | 4.5.5       |
+| matchmaker            | 0.1.1       |
+| mathjaxr              | 1.6-0       |
+| Matrix                | 1.6-5       |
+| matrixcalc            | 1.0-6       |
+| MatrixExtra           | 0.1.15      |
+| MatrixModels          | 0.5-3       |
+| matrixStats           | 1.4.0       |
+| maxLik                | 1.5-2.1     |
+| maxstat               | 0.7-25      |
+| mboost                | 2.9-11      |
+| mclust                | 6.1.1       |
+| mcmc                  | 0.9-8       |
+| MCMCglmm              | 2.36        |
+| MCMCpack              | 1.7-1       |
+| mda                   | 0.5-4       |
+| memoise               | 2.0.1       |
+| merTools              | 0.6.2       |
+| meta                  | 7.0-0       |
+| metadat               | 1.2-0       |
+| metafor               | 4.6-0       |
+| mgcv                  | 1.9-1       |
+| mgsub                 | 1.7.3       |
+| mi                    | 1.1         |
+| mice                  | 3.16.0      |
+| microbenchmark        | 1.5.0       |
+| mime                  | 0.12        |
+| miniCRAN              | 0.3.0       |
+| miniUI                | 0.1.1.1     |
+| minpack.lm            | 1.2-4       |
+| minqa                 | 1.2.8       |
+| mirt                  | 1.41        |
+| misc3d                | 0.9-1       |
+| miscTools             | 0.6-28      |
+| mitml                 | 0.4-5       |
+| mitools               | 2.4         |
+| mixtools              | 2.0.0       |
+| mlapi                 | 0.1.1       |
+| mlbench               | 2.1-5       |
+| mlogitBMA             | 0.1-7       |
+| mnormt                | 2.1.1       |
+| MNP                   | 3.1-5       |
+| modeldata             | 1.4.0       |
+| modelenv              | 0.1.1       |
+| ModelMetrics          | 1.2.2.2     |
+| modelr                | 0.1.11      |
+| modeltools            | 0.2-23      |
+| mombf                 | 3.5.4       |
+| moments               | 0.14.1      |
+| monomvn               | 1.9-20      |
+| monreg                | 0.1.4.1     |
+| mosaic                | 1.9.1       |
+| mosaicCore            | 0.9.4.0     |
+| mosaicData            | 0.20.4      |
+| msir                  | 1.3.3       |
+| msm                   | 1.7.1       |
+| multcomp              | 1.4-26      |
+| multcompView          | 0.1-10      |
+| multicool             | 1.0.1       |
+| munsell               | 0.5.1       |
+| mvoutlier             | 2.1.1       |
+| mvtnorm               | 1.3-1       |
+| NADA                  | 1.6-1.1     |
+| nanoparquet           | 0.3.1       |
+| NbClust               | 3.0.1       |
+| ncvreg                | 3.14.3      |
+| network               | 1.18.2      |
+| networkD3             | 0.4         |
+| neuralnet             | 1.44.2      |
+| ngram                 | 3.2.3       |
+| nlme                  | 3.1-165     |
+| nloptr                | 2.1.1       |
+| NLP                   | 0.3-0       |
+| nls.multstart         | 1.3.0       |
+| NMF                   | 0.21.0      |
+| nnet                  | 7.3-19      |
+| nnls                  | 1.5         |
+| nortest               | 1.0-4       |
+| numbers               | 0.8-5       |
+| numDeriv              | 2016.8-1.1  |
+| numform               | 0.7.0       |
+| OceanView             | 1.0.7       |
+| openair               | 2.18-2      |
+| openssl               | 2.2.1       |
+| ordinal               | 2023.12-4.1 |
+| osmar                 | 1.1-7       |
+| outbreaks             | 1.9.0       |
+| outliers              | 0.15        |
+| packcircles           | 0.3.6       |
+| padr                  | 0.6.2       |
+| pan                   | 1.9         |
+| pander                | 0.6.5       |
+| parallelly            | 1.38.0      |
+| parameters            | 0.22.2      |
+| parsnip               | 1.2.1       |
+| partitions            | 1.10-7      |
+| party                 | 1.3-17      |
+| partykit              | 1.2-22      |
+| patchwork             | 1.2.0       |
+| pbapply               | 1.7-2       |
+| pbdZMQ                | 0.3-10      |
+| pbivnorm              | 0.6.0       |
+| pbkrtest              | 0.5.3       |
+| PCAmixdata            | 3.1         |
+| pcaPP                 | 2.0-5       |
+| pdc                   | 1.0.3       |
+| pegas                 | 1.3         |
+| performance           | 0.12.3      |
+| PerformanceAnalytics  | 2.0.4       |
+| permute               | 0.9-7       |
+| perry                 | 0.3.1       |
+| petrinetR             | 0.3.0       |
+| pheatmap              | 1.0.12      |
+| pillar                | 1.9.0       |
+| pixmap                | 0.4-13      |
+| pkgbuild              | 1.4.4       |
+| pkgcache              | 2.2.2       |
+| pkgconfig             | 2.0.3       |
+| pkgdepends            | 0.7.2       |
+| pkgdown               | 2.1.0       |
+| pkgload               | 1.4.0       |
+| pkgmaker              | 0.32.10     |
+| platetools            | 0.1.7       |
+| plogr                 | 0.2.0       |
+| plot3D                | 1.4.1       |
+| plot3Drgl             | 1.0.4       |
+| plotly                | 4.10.4      |
+| plotmo                | 3.6.4       |
+| plotrix               | 3.8-4       |
+| pls                   | 2.8-4       |
+| plyr                  | 1.8.9       |
+| png                   | 0.1-8       |
+| polspline             | 1.1.25      |
+| polyclip              | 1.10-7      |
+| polylabelr            | 0.2.0       |
+| polynom               | 1.4-1       |
+| posterior             | 1.6.0       |
+| ppcor                 | 1.1         |
+| prabclus              | 2.3-3       |
+| pracma                | 2.4.4       |
+| praise                | 1.0.0       |
+| precrec               | 0.14.4      |
+| prediction            | 0.3.18      |
+| PresenceAbsence       | 1.1.11      |
+| prettyunits           | 1.2.0       |
+| pROC                  | 1.18.5      |
+| processmapR           | 0.5.5       |
+| processmonitR         | 0.1.0       |
+| processx              | 3.8.4       |
+| prodlim               | 2024.06.25  |
+| profileModel          | 0.6.1       |
+| profvis               | 0.3.8       |
+| progress              | 1.2.3       |
+| progressr             | 0.14.0      |
+| proj4                 | 1.0-14      |
+| promises              | 1.3.0       |
+| prophet               | 1           |
+| proto                 | 1.0.0       |
+| protolite             | 2.3.0       |
+| proxy                 | 0.4-27      |
+| pryr                  | 0.1.6       |
+| ps                    | 1.7.7       |
+| pscl                  | 1.5.9       |
+| psych                 | 2.4.3       |
+| purrr                 | 1.0.2       |
+| pwr                   | 1.3-0       |
+| qap                   | 0.1-2       |
+| qcc                   | 2.7         |
+| qdapDictionaries      | 1.0.7       |
+| qdapRegex             | 0.7.8       |
+| qdapTools             | 1.3.7       |
+| qgraph                | 1.9.8       |
+| qicharts              | 0.5.8       |
+| qicharts2             | 0.7.5       |
+| quadprog              | 1.5-8       |
+| quanteda              | 3.3.1       |
+| quantmod              | 0.4.26      |
+| quantreg              | 5.98        |
+| questionr             | 0.7.8       |
+| QuickJSR              | 1.3.1       |
+| qvcalc                | 1.0.3       |
+| R.cache               | 0.16.0      |
+| R.matlab              | 3.7.0       |
+| R.methodsS3           | 1.8.2       |
+| R.oo                  | 1.26.0      |
+| R.utils               | 2.12.3      |
+| r2d3                  | 0.2.6       |
+| R2HTML                | 2.3.4       |
+| R2jags                | 0.8-5       |
+| R2OpenBUGS            | 3.2-3.2.1   |
+| R2WinBUGS             | 2.1-22.1    |
+| R6                    | 2.5.1       |
+| ragg                  | 1.3.2       |
+| rainbow               | 3.8         |
+| ramps                 | 0.6.18      |
+| RandomFields          | 3.3.14      |
+| RandomFieldsUtils     | 1.2.5       |
+| randomForest          | 4.7-1.1     |
+| randomForestSRC       | 3.3.1       |
+| ranger                | 0.16.0      |
+| RApiDatetime          | 0.0.9       |
+| rapidjsonr            | 1.2.0       |
+| rappdirs              | 0.3.3       |
+| raster                | 3.6-26      |
+| rattle                | 5.5.1       |
+| rayimage              | 0.10.0      |
+| rayshader             | 0.24.10     |
+| rayvertex             | 0.11.4      |
+| rbenchmark            | 1.0.0       |
+| rbibutils             | 2.2.16      |
+| Rblpapi               | 0.3.14      |
+| rbokeh                | 0.5.2       |
+| rcmdcheck             | 1.4.0       |
+| RColorBrewer          | 1.1-3       |
+| Rcpp                  | 1.0.13      |
+| RcppArmadillo         | 14.0.0-1    |
+| RcppDE                | 0.1.7       |
+| RcppEigen             | 0.3.4.0.2   |
+| RcppExamples          | 0.1.9       |
+| RcppParallel          | 5.1.9       |
+| RcppProgress          | 0.4.2       |
+| RcppRoll              | 0.3.1       |
+| RcppThread            | 2.1.7       |
+| RcppTOML              | 0.2.2       |
+| RCurl                 | 1.98-1.16   |
+| Rdpack                | 2.6.1       |
+| readbitmap            | 0.1.5       |
+| readr                 | 2.1.5       |
+| readxl                | 1.4.3       |
+| recipes               | 1.1.0       |
+| Redmonder             | 0.2.0       |
+| registry              | 0.5-1       |
+| relaimpo              | 2.2-7       |
+| relimp                | 1.0-5       |
+| rematch               | 2.0.0       |
+| rematch2              | 2.1.2       |
+| remotes               | 2.5.0       |
+| Renext                | 3.1-4       |
+| repr                  | 1.1.6       |
+| reprex                | 2.1.1       |
+| reshape               | 0.8.9       |
+| reshape2              | 1.4.4       |
+| reticulate            | 1.39.0      |
+| rex                   | 1.2.1       |
+| rFerns                | 5.0.0       |
+| rfm                   | 0.3.0       |
+| rgdal                 | 1.6-7       |
+| rgeos                 | 0.6-4       |
+| rgexf                 | 0.16.3      |
+| rgl                   | 1.3.1       |
+| RgoogleMaps           | 1.5.1       |
+| RGraphics             | 3.0-2       |
+| RGtk2                 | 2.20.36.3   |
+| RhpcBLASctl           | 0.23-42     |
+| RInside               | 0.2.18      |
+| rio                   | 1.2.2       |
+| rjags                 | 16-Apr      |
+| rjson                 | 0.2.21      |
+| RJSONIO               | 1.3-1.9     |
+| rlang                 | 1.1.4       |
+| rlecuyer              | 0.3-8       |
+| rlist                 | 0.4.6.2     |
+| rmapshaper            | 0.5.0       |
+| rmarkdown             | 2.28        |
+| Rmisc                 | 1.5.1       |
+| Rmpfr                 | 0.9-5       |
+| rms                   | 6.8-1       |
+| RMySQL                | 0.10.28     |
+| rngtools              | 1.5.2       |
+| robCompositions       | 2.4.1       |
+| robfilter             | 4.1.5       |
+| robustbase            | 0.99-4      |
+| robustHD              | 0.8.1       |
+| ROCR                  | 1.0-11      |
+| RODBC                 | 1.3-23      |
+| Rook                  | 1.2         |
+| rootSolve             | 1.8.2.4     |
+| roxygen2              | 7.3.2       |
+| rpart                 | 4.1.23      |
+| rpart.plot            | 3.1.2       |
+| rpivotTable           | 0.3.0       |
+| rprojroot             | 2.0.4       |
+| RPushbullet           | 0.3.4       |
+| rrcov                 | 1.7-6       |
+| rsample               | 1.2.1       |
+| rsdmx                 | 0.6-3       |
+| RSGHB                 | 1.2.2       |
+| RSNNS                 | 0.4-17      |
+| Rsolnp                | 1.16        |
+| rsparse               | 0.5.2       |
+| RSpectra              | 0.16-2      |
+| RSQLite               | 2.3.7       |
+| rstan                 | 2.32.6      |
+| rstantools            | 2.4.0       |
+| rstatix               | 0.7.2       |
+| rstudioapi            | 0.16.0      |
+| rsvg                  | 2.6.0       |
+| RTextTools            | 1.4.3       |
+| Rttf2pt1              | 1.3.12      |
+| RUnit                 | 0.4.33      |
+| runjags               | 2.2.2-4     |
+| Runuran               | 0.38        |
+| rvcheck               | 0.2.1       |
+| rversions             | 2.1.2       |
+| rvest                 | 1.0.4       |
+| rworldmap             | 1.3-8       |
+| rworldxtra            | 1.01        |
+| s2                    | 1.1.7       |
+| SampleSizeMeans       | 1.2.3       |
+| SampleSizeProportions | 1.1.3       |
+| sandwich              | 3.1-0       |
+| sas7bdat              | 0.8         |
+| sass                  | 0.4.9       |
+| satellite             | 1.0.5       |
+| sbgcop                | 0.98        |
+| scales                | 1.3.0       |
+| scatterplot3d         | 0.3-44      |
+| sciplot               | 1.2-0       |
+| segmented             | 2.1-2       |
+| selectr               | 0.4-2       |
+| sem                   | 3.1-16      |
+| sentimentr            | 2.9.0       |
+| seqinr                | 4.2-36      |
+| seriation             | 1.5.6       |
+| servr                 | 0.31        |
+| sessioninfo           | 1.2.2       |
+| setRNG                | 2024.2-1    |
+| sets                  | 1.0-25      |
+| sf                    | 1.0-16      |
+| sfd                   | 0.1.0       |
+| sfheaders             | 0.4.4       |
+| sfsmisc               | 1.1-19      |
+| sftime                | 0.2-0       |
+| sgeostat              | 1.0-27      |
+| shades                | 1.4.0       |
+| shape                 | 1.4.6.1     |
+| shapefiles            | 0.7.2       |
+| shiny                 | 1.9.1       |
+| shinyBS               | 0.61.1      |
+| shinycssloaders       | 1.1.0       |
+| shinyjs               | 2.1.0       |
+| shinyTime             | 1.0.3       |
+| showtext              | 0.9-7       |
+| showtextdb            | 3           |
+| SimDesign             | 2.17.1      |
+| SIS                   | 0.8-8       |
+| SixSigma              | 0.11.1      |
+| sjlabelled            | 1.2.0       |
+| sjmisc                | 2.8.10      |
+| sjPlot                | 2.8.16      |
+| sjstats               | 0.19.0      |
+| skmeans               | 0.2-17      |
+| slam                  | 0.1-53      |
+| slider                | 0.3.1       |
+| sm                    | 2.2-6.0     |
+| smooth                | 4.0.2       |
+| smoothSurv            | 2.6         |
+| sna                   | 2.7-2       |
+| snakecase             | 0.11.1      |
+| snow                  | 0.4-4       |
+| SnowballC             | 0.7.1       |
+| snowFT                | 1.6-1       |
+| sodium                | 1.3.1       |
+| sourcetools           | 0.1.7-1     |
+| sp                    | 2.1-4       |
+| spacefillr            | 0.3.3       |
+| spacetime             | 1.3-2       |
+| spacyr                | 1.3.0       |
+| spam                  | 2.10-0      |
+| SparseM               | 1.84-2      |
+| sparsepp              | 1.22        |
+| spatial               | 7.3-17      |
+| spatstat              | 3.0-7       |
+| spatstat.data         | 3.1-2       |
+| spatstat.explore      | 3.2-6       |
+| spatstat.geom         | 3.2-9       |
+| spatstat.linnet       | 3.1-4       |
+| spatstat.model        | 3.2-10      |
+| spatstat.random       | 3.2-3       |
+| spatstat.sparse       | 3.1-0       |
+| spatstat.univar       | 3.0-1       |
+| spatstat.utils        | 3.1-0       |
+| spBayes               | 0.4-7       |
+| spData                | 2.3.3       |
+| spdep                 | 1.3-5       |
+| spikeslab             | 1.1.6       |
+| splancs               | 2.01-45     |
+| splines               | 4.3.3       |
+| spls                  | 2.2-3       |
+| splus2R               | 1.3-5       |
+| spTimer               | 3.3.2       |
+| sqldf                 | 0.4-11      |
+| SQUAREM               | 2021.1      |
+| sROC                  | 0.1-2       |
+| stabledist            | 0.7-2       |
+| stabs                 | 0.6-4       |
+| StanHeaders           | 2.32.10     |
+| stars                 | 0.6-6       |
+| statmod               | 1.5.0       |
+| statnet.common        | 4.9.0       |
+| stepPlr               | 0.93        |
+| stinepack             | 1.5         |
+| stochvol              | 3.2.4       |
+| stopwords             | 2.3         |
+| stringdist            | 0.9.12      |
+| stringi               | 1.8.4       |
+| stringr               | 1.5.1       |
+| strucchange           | 1.5-4       |
+| styler                | 1.10.3      |
+| sugrrants             | 0.2.9       |
+| sunburstR             | 2.1.8       |
+| SuppDists             | 1.1-9.8     |
+| survey                | 4.4-2       |
+| survival              | 3.7-0       |
+| survminer             | 0.4.9       |
+| survMisc              | 0.5.6       |
+| svglite               | 2.1.3       |
+| svmpath               | 0.97        |
+| svUnit                | 1.0.6       |
+| sweep                 | 0.2.5       |
+| sys                   | 3.4.2       |
+| sysfonts              | 0.8.9       |
+| systemfit             | 1.1-30      |
+| systemfonts           | 1.1.0       |
+| syuzhet               | 1.0.7       |
+| tau                   | 0.0-25      |
+| tcltk                 | 4.3.3       |
+| tcltk2                | 1.2-11      |
+| TeachingDemos         | 2.13        |
+| tensor                | 1.5         |
+| tensorA               | 0.36.2.1    |
+| terra                 | 1.7-78      |
+| terrainmeshr          | 0.1.0       |
+| testthat              | 3.2.1.1     |
+| texreg                | 1.39.4      |
+| text2vec              | 0.6.4       |
+| textcat               | 1.0-8       |
+| textclean             | 0.9.3       |
+| textir                | 2.0-5       |
+| textmineR             | 3.0.5       |
+| textshape             | 1.7.5       |
+| textshaping           | 0.4.0       |
+| tfplot                | 2021.6-1    |
+| tframe                | 2015.12-1.1 |
+| tgp                   | 2.4-23      |
+| TH.data               | 1.1-2       |
+| thief                 | 0.3         |
+| threejs               | 0.3.3       |
+| tibble                | 3.2.1       |
+| tibbletime            | 0.1.8       |
+| tidycensus            | 1.6.5       |
+| tidygraph             | 1.3.0       |
+| tidymodels            | 1.2.0       |
+| tidyquant             | 1.0.9       |
+| tidyr                 | 1.3.1       |
+| tidyselect            | 1.2.1       |
+| tidytext              | 0.4.2       |
+| tidyverse             | 2.0.0       |
+| tiff                  | 0.1-12      |
+| tigris                | 2.1         |
+| timechange            | 0.3.0       |
+| timeDate              | 4032.109    |
+| timelineS             | 0.1.1       |
+| timeSeries            | 4032.109    |
+| timetk                | 2.9.0       |
+| timevis               | 2.1.0       |
+| tinytex               | 0.52        |
+| tm                    | 0.7-14      |
+| tmap                  | 3.3-4       |
+| tmaptools             | 3.1-1       |
+| TMB                   | 1.9.14      |
+| tmvnsim               | 1.0-2       |
+| tokenizers            | 0.3.0       |
+| topicmodels           | 0.2-16      |
+| TraMineR              | 2.2-10      |
+| transformr            | 0.1.5       |
+| tree                  | 1.0-43      |
+| treemap               | 2.4-4       |
+| treemapify            | 2.5.6       |
+| trelliscopejs         | 0.2.6       |
+| triebeard             | 0.4.1       |
+| trimcluster           | 0.1-5       |
+| truncnorm             | 1.0-9       |
+| TSA                   | 1.3.1       |
+| tseries               | 0.10-57     |
+| tsfeatures            | 1.1.1       |
+| tsibble               | 1.1.5       |
+| tsintermittent        | 1.1         |
+| tsoutliers            | 0.6-10      |
+| TSP                   | 1.2-4       |
+| TSstudio              | 0.1.7       |
+| TTR                   | 0.24.4      |
+| tune                  | 1.2.1       |
+| tweedie               | 2.3.5       |
+| tweenr                | 2.0.3       |
+| twitteR               | 1.1.9       |
+| tzdb                  | 0.4.0       |
+| ucminf                | 1.2.2       |
+| udpipe                | 0.8.11      |
+| udunits2              | 0.13.2.1    |
+| units                 | 0.8-5       |
+| UpSetR                | 1.4.0       |
+| urca                  | 1.3-4       |
+| urlchecker            | 1.0.1       |
+| urltools              | 1.7.3       |
+| useful                | 1.2.6.1     |
+| usethis               | 3.0.0       |
+| UsingR                | 2.0-7       |
+| usmap                 | 0.7.1       |
+| usmapdata             | 0.3.0       |
+| utf8                  | 1.2.4       |
+| uuid                  | 1.1-1       |
+| V8                    | 5.0.0       |
+| vars                  | 1.6-1       |
+| vcd                   | 1.4-12      |
+| vctrs                 | 0.6.4       |
+| vdiffr                | 1.0.7       |
+| vegan                 | 2.6-8       |
+| VennDiagram           | 1.7.3       |
+| VGAM                  | 1.1-11      |
+| VIM                   | 6.2.2       |
+| vioplot               | 0.5.0       |
+| viridis               | 0.6.5       |
+| viridisLite           | 0.4.2       |
+| visNetwork            | 2.1.2       |
+| vistime               | 1.2.4       |
+| vroom                 | 1.6.5       |
+| waldo                 | 0.5.3       |
+| warp                  | 0.2.1       |
+| waterfalls            | 1.0.0       |
+| wavethresh            | 4.7.3       |
+| webshot               | 0.5.5       |
+| webutils              | 1.2.1       |
+| WeibullR              | 1.2.1       |
+| weights               | 1.0.4       |
+| whisker               | 0.4.1       |
+| widgetframe           | 0.3.1       |
+| withr                 | 3.0.1       |
+| wk                    | 0.9.2       |
+| wmtsa                 | 2.0-3       |
+| wordcloud             | 2.6         |
+| wordcloud2            | 0.2.1       |
+| workflows             | 1.1.4       |
+| workflowsets          | 1.1.0       |
+| writexl               | 1.5.0       |
+| xesreadR              | 0.2.3       |
+| xfun                  | 0.47        |
+| xgboost               | 2.1.1.1     |
+| XML                   | 3.99-0.17   |
+| xml2                  | 1.3.6       |
+| xopen                 | 1.0.1       |
+| xplorerr              | 0.1.2       |
+| xtable                | 1.8-4       |
+| xts                   | 0.14.0      |
+| yaml                  | 2.3.10      |
+| yardstick             | 1.3.1       |
+| yarrr                 | 0.1.5       |
+| YieldCurve            | 5.1         |
+| yulab.utils           | 0.1.7       |
+| zCompositions         | 1.5.0-4     |
+| zeallot               | 0.1.0       |
+| zic                   | 0.9.1       |
+| zip                   | 2.3.1       |
+| zipfR                 | 0.6-70      |
+| zoo                   | 1.8-12      |
+| base                  | 4.3.3       |
+| compiler              | 4.3.3       |
+| datasets              | 4.3.3       |
+| graphics              | 4.3.3       |
+| grDevices             | 4.3.3       |
+| MatrixGenerics        | 1.14.0      |
+| methods               | 4.3.3       |
+| parallel              | 4.3.3       |
+| sparseMatrixStats     | 1.14.0      |
+| stats                 | 4.3.3       |
+| stats4                | 4.3.3       |
+| tools                 | 4.3.3       |
+| utils                 | 4.3.3       |
 
 ## R packages that are supported in Power BI
 
