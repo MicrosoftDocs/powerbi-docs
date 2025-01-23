@@ -33,72 +33,73 @@ There are a handful of requirements and limitations for Python packages:
 ## Python packages that are supported in the Power BI service (Premium/ Fabric backed workspaces)
 
 The following table shows which packages **are supported** in Power BI for reports in **Premium/Fabric backed workspaces**.
-|        Package        |   Version   |                                   Link                                   |
-|--------------------------|-------------|--------------------------------------------------------------------------------------------------------|
-| asttokens | 2.4.1| [https://pypi.org/project/asttokens/2.4.1/](https://pypi.org/project/asttokens/2.4.1/) |
-| certifi | 2024.8.30|[https://pypi.org/project/certifi/2024.8.30/](https://pypi.org/project/certifi/2024.8.30/) |
-| comm | 0.2.2|[https://pypi.org/project/comm/0.2.2/] (https://pypi.org/project/comm/0.2.2/) |
-| contourpy | 1.3.0|[https://pypi.org/project/contourpy/1.3.0/] (https://pypi.org/project/contourpy/1.3.0/) |
-| cycler | 0.12.1|[https://pypi.org/project/cycler/0.12.1/] (https://pypi.org/project/cycler/0.12.1/) |
-| debugpy | 1.8.5| [https://pypi.org/project/debugpy/1.8.5/] (https://pypi.org/project/debugpy/1.8.5/) |
-| decorator | 5.1.1|[https://pypi.org/project/decorator/5.1.1/] (https://pypi.org/project/decorator/5.1.1/) |
-| exceptiongroup | 1.2.2|[https://pypi.org/project/exceptiongroup/1.2.2/] (https://pypi.org/project/exceptiongroup/1.2.2/) |
-| executing | 2.1.0| [https://pypi.org/project/executing/2.1.0/] (https://pypi.org/project/executing/2.1.0/) |
-| fonttools | 4.53.1| [https://pypi.org/project/fonttools/4.53.1/] (https://pypi.org/project/fonttools/4.53.1/) |
-| importlib_metadata | 8.4.0| [https://pypi.org/project/importlib_metadata/8.4.0/] (https://pypi.org/project/importlib_metadata/8.4.0/) |
-| ipykernel | 6.29.4| [https://pypi.org/project/ipykernel/6.29.4/] (https://pypi.org/project/ipykernel/6.29.4/) |
-| ipython | 8.27.0| [https://pypi.org/project/ipython/8.27.0/] (https://pypi.org/project/ipython/8.27.0/) |
-| jedi | 0.19.1| [https://pypi.org/project/jedi/0.19.1/] (https://pypi.org/project/jedi/0.19.1/) |
-| joblib | 1.4.2| [https://pypi.org/project/joblib/1.4.2/] (https://pypi.org/project/joblib/1.4.2/) |
-| jupyter_client | 8.6.2| [https://pypi.org/project/jupyter_client/8.6.2/] (https://pypi.org/project/jupyter_client/8.6.2/) |
-| jupyter_core | 5.7.2| [https://pypi.org/project/jupyter_core/5.7.2/] (https://pypi.org/project/jupyter_core/5.7.2/) |
-| kiwisolver | 1.4.5| [https://pypi.org/project/kiwisolver/1.4.5/] (https://pypi.org/project/kiwisolver/1.4.5/) |
-| matplotlib | 3.8.4| [https://pypi.org/project/matplotlib/3.8.4/] ( https://pypi.org/project/matplotlib/3.8.4/) |
-| matplotlib inline | 0.1.7| [https://pypi.org/project/matplotlib|inline/0.1.7/] (https://pypi.org/project/matplotlib|inline/0.1.7/) |
-| munkres | 1.1.4| [https://pypi.org/project/munkres/1.1.4/] (https://pypi.org/project/munkres/1.1.4/) |
-| nest_asyncio | 1.6.0| [https://pypi.org/project/nest_asyncio/1.6.0/] (https://pypi.org/project/nest_asyncio/1.6.0/) |
-| numpy | 2.0.0| [https://pypi.org/project/numpy/2.0.0/] (https://pypi.org/project/numpy/2.0.0/) |
-| packaging | 24.1| [https://pypi.org/project/packaging/24.1/] (https://pypi.org/project/packaging/24.1/) |
-| pandas | 2.2.2| [https://pypi.org/project/pandas/2.2.2/] (https://pypi.org/project/pandas/2.2.2/) |
-| parso | 0.8.4| [https://pypi.org/project/parso/0.8.4/] (https://pypi.org/project/parso/0.8.4/) |
-| patsy | 0.5.6| [https://pypi.org/project/patsy/0.5.6/] (https://pypi.org/project/patsy/0.5.6/) |
-| pexpect | 4.9.0| [https://pypi.org/project/pexpect/4.9.0/] (https://pypi.org/project/pexpect/4.9.0/) |
-| pickleshare | 0.7.5| [https://pypi.org/project/pickleshare/0.7.5/] (https://pypi.org/project/pickleshare/0.7.5/) |
-| pillow | 10.4.0| [https://pypi.org/project/pillow/10.4.0/] (https://pypi.org/project/pillow/10.4.0/) |
-| pip | 24| [https://pypi.org/project/pip/24/] (https://pypi.org/project/pip/24/) |
-| platformdirs | 4.2.2| [https://pypi.org/project/platformdirs/4.2.2/] (https://pypi.org/project/platformdirs/4.2.2/) |
-| ply | 3.11| [https://pypi.org/project/ply/3.11/] (https://pypi.org/project/ply/3.11/) |
-| prompt_toolkit | 3.0.47| [https://pypi.org/project/prompt_toolkit/3.0.47/] (https://pypi.org/project/prompt_toolkit/3.0.47/) |
-| psutil | 6.0.0| [https://pypi.org/project/psutil/6.0.0/] (https://pypi.org/project/psutil/6.0.0/) |
-| ptyprocess | 0.7.0|[https://pypi.org/project/ptyprocess/0.7.0/] (https://pypi.org/project/ptyprocess/0.7.0/) |
-| pure_eval | 0.2.3| [https://pypi.org/project/pure_eval/0.2.3/] (https://pypi.org/project/pure_eval/0.2.3/) |
-| Pygments | 2.18.0| [https://pypi.org/project/Pygments/2.18.0/] (https://pypi.org/project/Pygments/2.18.0/) |
-| pyparsing | 3.1.2| [https://pypi.org/project/pyparsing/3.1.2/] (https://pypi.org/project/pyparsing/3.1.2/) |
-| PyQt5 | 5.15.9| [https://pypi.org/project/PyQt5/5.15.9/] (https://pypi.org/project/PyQt5/5.15.9/) |
-| PyQt5 sip | 12.12.2| [https://pypi.org/project/PyQt5|sip/12.12.2/] (https://pypi.org/project/PyQt5|sip/12.12.2/) |
-| python dateutil | 2.9.0| [https://pypi.org/project/python|dateutil/2.9.0/] (https://pypi.org/project/python|dateutil/2.9.0/) |
-| pytz | 2024.1| [https://pypi.org/project/pytz/2024.1/] (https://pypi.org/project/pytz/2024.1/) |
-| pyzmq | 26.2.0| [https://pypi.org/project/pyzmq/26.2.0/] (https://pypi.org/project/pyzmq/26.2.0/) |
-| scikit learn | 1.5.0| [https://pypi.org/project/scikit|learn/1.5.0/] (https://pypi.org/project/scikit|learn/1.5.0/) |
-| scipy | 1.13.1| [https://pypi.org/project/scipy/1.13.1/] (https://pypi.org/project/scipy/1.13.1/) |
-| seaborn | 0.13.2| [https://pypi.org/project/seaborn/0.13.2/] (https://pypi.org/project/seaborn/0.13.2/) |
-| setuptools | 70.0.0| [https://pypi.org/project/setuptools/70.0.0/] (https://pypi.org/project/setuptools/70.0.0/) |
-| sip | 6.7.12| [https://pypi.org/project/sip/6.7.12/] (https://pypi.org/project/sip/6.7.12/) |
-| six | 1.16.0| [https://pypi.org/project/six/1.16.0/] (https://pypi.org/project/six/1.16.0/) |
-| stack data | 0.6.2| [https://pypi.org/project/stack|data/0.6.2/] (https://pypi.org/project/stack|data/0.6.2/) |
-| statsmodels | 0.14.2| [https://pypi.org/project/statsmodels/0.14.2/] (https://pypi.org/project/statsmodels/0.14.2/) |
-| threadpoolctl | 3.5.0| [https://pypi.org/project/threadpoolctl/3.5.0/] (https://pypi.org/project/threadpoolctl/3.5.0/) |
-| toml | 0.10.2| [https://pypi.org/project/toml/0.10.2/] (https://pypi.org/project/toml/0.10.2/) |
-| tomli | 2.0.1| [https://pypi.org/project/tomli/2.0.1/] (https://pypi.org/project/tomli/2.0.1/) |
-| tornado | 6.4.1| [https://pypi.org/project/tornado/6.4.1/] (https://pypi.org/project/tornado/6.4.1/) |
-| traitlets | 5.14.3| [https://pypi.org/project/traitlets/5.14.3/] (https://pypi.org/project/traitlets/5.14.3/) |
-| typing_extensions | 4.12.2| [https://pypi.org/project/typing_extensions/4.12.2/] (https://pypi.org/project/typing_extensions/4.12.2/) |
-| tzdata | 2024.1| [https://pypi.org/project/tzdata/2024.1/] (https://pypi.org/project/tzdata/2024.1/) |
-| unicodedata2 | 15.1.0| [https://pypi.org/project/unicodedata2/15.1.0/] (https://pypi.org/project/unicodedata2/15.1.0/) |
-| wcwidth | 0.2.13| [https://pypi.org/project/wcwidth/0.2.13/] (https://pypi.org/project/wcwidth/0.2.13/) |
-| wheel | 0.44.0| [https://pypi.org/project/wheel/0.44.0/] (https://pypi.org/project/wheel/0.44.0/) |
-| xgboost | 2.0.3| [https://pypi.org/project/xgboost/2.0.3/] (https://pypi.org/project/xgboost/2.0.3/) |
-| zipp | 3.20.1| [https://pypi.org/project/zipp/3.20.1/] (https://pypi.org/project/zipp/3.20.1/) |
+[Download packages here] (https://pypi.org/) 
+|        Package        |   Version   |            
+|--------------------------|-------------|
+| asttokens | 2.4.1| 
+| certifi | 2024.8.30|
+| comm | 0.2.2|
+| contourpy | 1.3.0|
+| cycler | 0.12.1|
+| debugpy | 1.8.5| 
+| decorator | 5.1.1|
+| exceptiongroup | 1.2.2|
+| executing | 2.1.0| 
+| fonttools | 4.53.1|
+| importlib_metadata | 8.4.0|
+| ipykernel | 6.29.4| 
+| ipython | 8.27.0| 
+| jedi | 0.19.1| 
+| joblib | 1.4.2|
+| jupyter_client | 8.6.2| 
+| jupyter_core | 5.7.2| 
+| kiwisolver | 1.4.5| 
+| matplotlib | 3.8.4| 
+| matplotlib inline | 0.1.7| 
+| munkres | 1.1.4| 
+| nest_asyncio | 1.6.0| 
+| numpy | 2.0.0| 
+| packaging | 24.1| 
+| pandas | 2.2.2| 
+| parso | 0.8.4| 
+| patsy | 0.5.6|
+| pexpect | 4.9.0| 
+| pickleshare | 0.7.5|
+| pillow | 10.4.0| 
+| pip | 24| 
+| platformdirs | 4.2.2| 
+| ply | 3.11||
+| prompt_toolkit | 3.0.47| 
+| psutil | 6.0.0|
+| ptyprocess | 0.7.0|
+| pure_eval | 0.2.3| 
+| Pygments | 2.18.0| 
+| pyparsing | 3.1.2| 
+| PyQt5 | 5.15.9| 
+| PyQt5 sip | 12.12.2| 
+| python dateutil | 2.9.0| 
+| pytz | 2024.1| 
+| pyzmq | 26.2.0|
+| scikit learn | 1.5.0|
+| scipy | 1.13.1| 
+| seaborn | 0.13.2| 
+| setuptools | 70.0.0| 
+| sip | 6.7.12| 
+| six | 1.16.0| 
+| stack data | 0.6.2| 
+| statsmodels | 0.14.2|
+| threadpoolctl | 3.5.0|
+| toml | 0.10.2| 
+| tomli | 2.0.1| 
+| tornado | 6.4.1|
+| traitlets | 5.14.3| 
+| typing_extensions | 4.12.2|
+| tzdata | 2024.1| 
+| unicodedata2 | 15.1.0|
+| wcwidth | 0.2.13| 
+| wheel | 0.44.0| 
+| xgboost | 2.0.3|
+| zipp | 3.20.1| 
 
 
 ### For non-Premium/Fabric backed workspaces/ Sov. Clouds/China
