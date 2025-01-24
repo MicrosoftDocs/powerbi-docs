@@ -42,16 +42,7 @@ If your organization has purchased F64 SKU and above reserved instances, you can
 Select **Power BI Report Server key** to display a dialog contain your product key. You can copy it and use it with the installation.
 
 ## Purchased Software Assurance agreement
-If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/). Look under the latest service pack, for the latest version of SQL Server. If you don't see it there, look under the RTM release of the latest SQL Server version.
-
-> [!NOTE]
-> You need to look under the download section. Not the keys section.
-
-:::image type="content" source="./media/find-product-key/vlsc-download.png" alt-text="Screenshot of SQL Server Enterprise showing Downloads and Keys tab with Power B I Report integration information." lightbox="./media/find-product-key/vlsc-download.png":::
-
-### Volume licensing in the Microsoft 365 Admin Center
-
-If your volume licensing has moved to the Microsoft 365 Admin Center, you can find your product key by choosing a SQL Server version and then looking under the **View Downloads** section. 
+If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Microsoft Admin Center](https://admin.microsoft.com/#/subscriptions). You can find your product key by choosing a SQL Server version and then looking under the **View Downloads** section. 
 
 Check in **Billing** > **Your Products** > **Volume Licensing** > **View Downloads and Keys** > **Find SQL Server** > **View Downloads** > **View additional instructions**:
 
