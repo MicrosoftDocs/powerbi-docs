@@ -1,8 +1,8 @@
 ---
 title: How to find your report server product key
 description: Learn how you can find your Power BI Report Server product key to install your server in a production environment.
-author: maggiesMSFT
-ms.author: maggies
+author: petebro-MSFT
+ms.author: petebro
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -42,6 +42,8 @@ If your organization has purchased F64 SKU and above reserved instances, you can
 Select **Power BI Report Server key** to display a dialog contain your product key. You can copy it and use it with the installation.
 
 ## Purchased Software Assurance agreement
+
+### Microsoft Admin Center
 If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Microsoft Admin Center](https://admin.microsoft.com/#/subscriptions). You can find your product key by choosing a SQL Server version and then looking under the **View Downloads** section. 
 
 Check in **Billing** > **Your Products** > **Volume Licensing** > **View Downloads and Keys** > **Find SQL Server** > **View Downloads** > **View additional instructions**:
@@ -57,6 +59,17 @@ Check in **Billing** > **Your Products** > **Volume Licensing** > **View Downloa
 1. Find the Power BI Report Server Software Assurance information displayed with your license key.
 
     :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of View additional instructions.":::
+
+### Visual Studio Subscriptions
+If you have SQL Server Enterprise subscription the product key can be found under [Visual Studio Subscriptions](https://my.visualstudio.com/downloads). You can find your product key by choosing a SQL Server version and then clicking the **info** link.
+
+1. Select the info shortcut next to the version of the software that you have.
+
+    :::image type="content" source="media/find-product-key/visual-studio-downloads-list.png" alt-text="Screenshot of the info next to the version of the software that you have.":::
+
+1. Find the Power BI Report Server Software Assurance information displayed with your license key.
+
+    :::image type="content" source="media/find-product-key/visual-studio-downloads-info.png" alt-text="Screenshot of the info section after it is clicked.":::
 
 ## Related content
 
