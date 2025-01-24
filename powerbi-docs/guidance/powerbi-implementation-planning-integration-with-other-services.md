@@ -476,7 +476,7 @@ To refresh a published semantic model that uses Python or R integrated in Power 
 
 You can integrate Python or R with Power BI reports in order to create custom visuals with Python libraries, like Seaborn or R packages like ggplot2. These visuals are fully customizable and support interactive features in Power BI like rendering a filtered result, cross-filtering, custom tooltips, drilldown, and drillthrough.
 
-Ensure that all your Python or R visuals use [Python libraries](../connect-data/service-python-packages-support.md#python-packages-that-are-supported-in-power-bi) and [R packages](../connect-data/service-r-packages-support.md#r-packages-that-are-supported-in-power-bi-(-premium-/-fabric-backed-workspaces-) that are supported in Fabric. If you use an unsupported library or package, the visual won't render in the Power BI service, even when the visual renders in your report in Power BI Desktop.
+Ensure that all your Python or R visuals use [Python libraries](../connect-data/service-python-packages-support.md#for-reports-in-premiumfabric-backed-workspaces) and [R packages](../connect-data/service-r-packages-support.md#r-packages-that-are-supported-in-power-bi-premiumfabric-backed-workspaces) that are supported in Fabric. If you use an unsupported library or package, the visual won't render in the Power BI service, even when the visual renders in your report in Power BI Desktop.
 
 While you can transform data and make calculations as part of a Python or R custom visual, it isn't recommended. Placing this logic in the Python or R visual can result in slower render durations, and greater difficulty to maintain the visual and achieve harmonization across visuals and reports in calculation logic.
 
