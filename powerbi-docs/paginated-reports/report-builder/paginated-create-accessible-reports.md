@@ -73,7 +73,7 @@ One of the key requirements of the PDF/UA is to create documents that are tagged
 *Screen-reader preview of the Structure Tree of an Accessible PDF paginated report*
 
 
-The PDF Accessibility Checker ([PAC Tool](https://pdfua.foundation/)) is a digital tool for validating that a PDF document is in full compliance with PDF/UA. After exporting your Accessible PDF report document, use this tool to make sure your PDF document is compliant with PDF/UA, and make appropriate adjustments if the tool detects errors. 
+The [PDF Accessibility Checker](https://pac.pdf-accessibility.org/) is a digital tool for validating that a PDF document is in full compliance with PDF/UA. After exporting your Accessible PDF report document, use this tool to make sure your PDF document is compliant with PDF/UA, and make appropriate adjustments if the tool detects errors. 
 
 > [!NOTE]
 > The Accessible PDF isn't in full conformance to ISO 14289-1(PDF/UA). For detailed documentation, see [PDF Rendering Extension conformance to ISO 14289-1: paginated reports](../../report-server/rendering-extension-support.md).
