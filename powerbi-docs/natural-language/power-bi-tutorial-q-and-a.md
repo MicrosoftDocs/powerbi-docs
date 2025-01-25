@@ -1,7 +1,7 @@
 ---
 title: Explore and create visuals in your reports using Power BI Q&A
 description: Create new visualizations in reports using Power BI Q&A.
-author: maggiesMSFT
+author: kfollis
 ms.author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai

@@ -5,8 +5,8 @@ ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: monaraya
 ---
 # Format axis labels as dates or currencies in a paginated report (Power BI Report Builder)

@@ -3,7 +3,7 @@ title: Use Copilot preview features in Power BI
 description: Fabric Copilot in Power BI has preview features that can be enabled with the flip of a switch.
 author: lafaberMSFT
 ms.author: lafaber
-ms.reviewer: maggies
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

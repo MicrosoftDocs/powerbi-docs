@@ -1,8 +1,8 @@
 ---
 title: Customize buttons in Power BI reports 
 description: Learn how you can customize buttons in Power BI reports in many different ways to suit your requirements.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

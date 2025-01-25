@@ -5,8 +5,8 @@ ms.date: 01/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ---
 # Allow a text box to grow or shrink in a paginated report (Power BI Report Builder)

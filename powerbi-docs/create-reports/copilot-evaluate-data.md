@@ -1,8 +1,8 @@
 ---
 title: Update your data model to work well with Copilot for Power BI
 description: Before you start using Copilot with your semantic model, evaluate your data to see if there are ways you can improve its performance.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

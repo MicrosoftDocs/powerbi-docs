@@ -1,8 +1,8 @@
 ---
 title: "Pagination in Power BI paginated reports"
 description: Learn about paginated reports in the Power BI service. Learn about the rules that are used to control pagination to design a report that is optimized for the renderer you plan to use.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

@@ -1,8 +1,8 @@
 ---
 title: Get started with goals in Power BI
 description: Get started with an introduction to goals in Power BI
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

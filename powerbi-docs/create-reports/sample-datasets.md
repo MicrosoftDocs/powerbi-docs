@@ -1,8 +1,8 @@
 ---
 title: Get samples for Power BI
 description: Built-in samples and apps in the Power BI service, .pbix files, Excel datasets, and SQL databases, all to help you explore Power BI functionality.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: 
 ms.custom:
 ms.service: powerbi

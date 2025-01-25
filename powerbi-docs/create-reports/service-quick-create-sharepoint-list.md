@@ -1,8 +1,8 @@
 ---
 title: Create a report quickly from a SharePoint list or library in the Power BI service
 description: There's a new way to create reports quickly from data in SharePoint lists and libraries. Power BI automatically generates the visuals for you.    
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

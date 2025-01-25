@@ -1,8 +1,8 @@
 ---
 title: "Get started creating paginated reports in the Power BI service"
 description: In this article, you learn all the ways your can start creating a paginated report in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: report-builder
