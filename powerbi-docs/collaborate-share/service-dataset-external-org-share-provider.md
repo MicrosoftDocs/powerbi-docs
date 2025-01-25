@@ -1,8 +1,8 @@
 ---
 title: Use Power BI in-place semantic model sharing (preview) to share semantic models with external users - data provider
 description: As a data provider, enable and share Power BI semantic models with external guest users.
-author: ajburnle
-ms.author: ajburnle
+author: kfollis
+ms.author: kfollis
 manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
