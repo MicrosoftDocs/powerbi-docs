@@ -1,8 +1,8 @@
 ---
 title: Types of filters in Power BI reports
 description: Learn about types of filters for reports in Power BI, including the page filter, the visualization filter, and the report filter.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

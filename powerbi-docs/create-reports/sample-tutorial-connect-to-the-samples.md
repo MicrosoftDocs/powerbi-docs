@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Explore a Power BI sample"
 description: Learn to install and explore the Retail Analysis sample in the Power BI service and in Power BI Desktop.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: 
 ms.custom: ''
 ms.service: powerbi

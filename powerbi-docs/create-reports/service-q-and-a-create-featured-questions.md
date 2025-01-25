@@ -1,8 +1,8 @@
 ---
 title: Create Q&A featured questions for Power BI dashboards
 description: Learn how to create and add featured questions for the Power BI Q&A by using the Retail Analysis sample.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai

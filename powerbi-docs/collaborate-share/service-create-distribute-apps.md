@@ -1,8 +1,8 @@
 ---
 title: Publish an app in Power BI
 description: Learn how to publish apps, which are collections of dashboards and reports with built-in navigation.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI

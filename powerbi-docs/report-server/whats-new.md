@@ -1,8 +1,8 @@
 ---
 title: What's new in Power BI Report Server
 description: Learn about what's new in the latest version Power BI Report Server. This article covers the major feature areas and is updated as new versions are released.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

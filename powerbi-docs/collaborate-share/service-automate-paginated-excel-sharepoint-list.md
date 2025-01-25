@@ -1,8 +1,8 @@
 ---
 title: Export a paginated report for each row in an Excel Online table or SharePoint list
 description: In this article, you use Power Automate to automate exporting a paginated report for each row in an Excel Online table or SharePoint Online list.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

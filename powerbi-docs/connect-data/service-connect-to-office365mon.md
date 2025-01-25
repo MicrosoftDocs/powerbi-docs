@@ -3,7 +3,7 @@ title: Connect to Office365Mon with Power BI
 description: Learn how to analyze Office 365 outages and health performance data by using the Power BI and the Office365Mon template app.
 author: paulinbar
 ms.author: painbar
-ms.reviewer: maggiesMSFT
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
