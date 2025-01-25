@@ -25,11 +25,11 @@ Data providers can use in-place semantic model sharing (preview) to share semant
 
 1. Select the semantic model you intend to share with external guest user.
 
-1. To access semantic model settings, go to **File** and click **Settings**. 
+1. To access semantic model settings, go to **File** and select **Settings**. 
 
-1. Scroll to the bottom of the page and click on the dropdown for **External sharing**. 
+1. Scroll to the bottom of the page and select on the dropdown for **External sharing**. 
 
-1. Turn on the external sharing switch and click **Apply**. This will allow external users (who have at least “build” access to this semantic model) to discover, connect to, and work with this semantic model within their own Power BI tenant”.
+1. Turn on the external sharing switch and select **Apply**. This allows external users (who have at least *build* access to this semantic model) to discover, connect to, and work with this semantic model within their own Power BI tenant.
 
      ![Screenshot of the semantic model settings with the external sharing settings set to apply.](media/service-dataset-external-org-share-provider/external-sharing-dataset.png)
 
@@ -48,9 +48,9 @@ Data providers can use in-place semantic model sharing (preview) to share semant
 1. External users need to have at least “Build” access to the semantic model to access semantic models in their own tenant. So, select the **Allow recipients to build content with the data associated with this semantic model** checkbox. 
 
     > [!NOTE] 
-    > The **Allow recipients to modify this semantic model** option is not supported for B2B external sharing. So, guests won't be able to modify the source semantic model. This means that even if this option is checked, external guests can't change the semantic model. 
+    > The **Allow recipients to modify this semantic model** option isn't supported for B2B external sharing. So, guests won't be able to modify the source semantic model. This means that even if this option is checked, external guests can't change the semantic model. 
 
-1. Click **Grant access**. 
+1. Select **Grant access**. 
 
     ![Screenshot of the semantic model how to grant access to a semantic model.](media/service-dataset-external-org-share-provider/share-dataset.png)
 
