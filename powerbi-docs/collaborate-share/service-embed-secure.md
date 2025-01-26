@@ -1,8 +1,8 @@
 ---
 title: Embed a report in a secure portal or website
 description: The Power BI embed feature provides a way to easily and securely embed reports in internal web portals.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

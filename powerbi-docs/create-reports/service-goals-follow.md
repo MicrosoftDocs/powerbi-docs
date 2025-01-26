@@ -1,8 +1,8 @@
 ---
 title: Follow your goals in Power BI
 description: Use the Follow functionality to quickly access goals you’re interested in and stay up to date on the activity on these goals.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

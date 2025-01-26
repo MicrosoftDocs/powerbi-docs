@@ -5,8 +5,8 @@ ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: monaraya
 ---
 # Change the text of a legend item in a paginated report (Power BI Report Builder)

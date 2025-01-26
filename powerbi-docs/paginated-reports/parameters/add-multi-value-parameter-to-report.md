@@ -5,8 +5,8 @@ ms.date: 06/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ---
 # Add a multi-value parameter to a Power BI paginated report
 
