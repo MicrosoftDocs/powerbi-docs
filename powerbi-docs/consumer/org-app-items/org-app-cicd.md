@@ -33,14 +33,14 @@ When you commit the org app item to the Git repo, a folder is created for each i
 
 The definition file is divided into two sections:
 
-- Static settings: describe the app's external appearance , such as the theme, logo, and experience settings.
+- Static settings: describe the app's external appearance, such as the theme, logo, and experience settings.
 - Elements: describe the app's internal structure.
   - Section elements: Container elements that have their own collection of Org apps
   - Item elements: Power BI items. During Git export or import, ItemLogicalId and FolderObjectId properties are remapped..
 
 The following diagram shows the structure of the org app.
 
-:::image type="content" source="./media/org-app-cicd/org-app-structure.png" alt-text="Diagram showing the structure of an Org app item. The static settings are shown above the org app and the item elements are below.":::
+:::image type="content" source="./media/org-app-cicd/org-app-structure.png" alt-text="Diagram showing the structure of an Org app item. The static settings are shown above the org app and the item elements follow it.":::
 
 The definition file contains:
 
