@@ -7,7 +7,7 @@ ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/16/2025
+ms.date: 01/26/2025
 #customer intent: As a Power BI user, I want to learn how to set up continuous integration and delivery (CI/CD) for org apps in Microsoft Fabric so that I can automate the deployment process.
 ---
 
@@ -31,22 +31,49 @@ When you commit the org app item to the Git repo, a folder is created for each i
 - `definition.json` file which is the definition of the org app item. 
 <!--- Learn more about [Mirrored database item definition](/rest/api/fabric/articles/item-management/definitions/mirrored-database-definition) --->
 
+The definition file is divided into two sections:
+
+- Static settings: describe the app's external appearance , such as the theme, logo, and experience settings.
+- Elements: describe the app's internal structure.
+  - Section elements: Container elements that have their own collection of Org apps
+  - Item elements: Power BI items. During Git export or import, ItemLogicalId and FolderObjectId properties are remapped..
+
+The following diagram shows the structure of the org app.
+
+:::image type="content" source=".media/org-app-cicd/org-app-structure.png" alt-text="Diagram showing the structure of an Org app item. The static settings are showm above the org app and the item elements are below.":::
+
 The definition file contains:
 
 - Settings
+  - Logo
   - Theme
     - Background
     - Foreground
     - BackgroundHover
     - BackgroundSelected
     - BackgroundPressed
+  - ExperienceSettings
+    - NavigationPane
+      - IsHidden
+      - IsCollapsed
+      - IndependentPageNavigation
+  - ItemTypeSettings
+  - Report
+    - HidePagePane
 - Elements
-  - ElementType
+  - ElementType (can be: *overview*, *section*, *item*, or *link*)
   - ElementId
-  - ItemType
-  - ItemLogicalId
-  - isHidden
-  - DisplayName 
+  - ItemType (only for ElementType: *item*)
+  - ItemLogicalId (only for ElementType: *item*)
+  - isHidden (not when for ElementType: *overview*)
+  - DisplayName
+  - Header (only for ElementType: *overview*)
+    - Title
+    - Body
+    - ShowTheme
+  - Elements (only for ElementType: *section*)
+  - Url (only for ElementType: *link*)
+  - LinkType (only for ElementType: *link*. Values are *embedded* or *newtab*)
 
 The following JSON code is an example of the `definition.json` file for an org app item:
 
@@ -84,6 +111,10 @@ The following JSON code is an example of the `definition.json` file for an org a
 ```
 
 ## Org apps in deployment pipelines
+
+You can use Fabric deployment pipeline to deploy your org app across different environments, such as development, test, and production. And you can use deployment rules to customize the org app.
+
+To learn how to use deployment pipelines, see [Introduction to deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines).
 
 ## Considerations and limitations
 
