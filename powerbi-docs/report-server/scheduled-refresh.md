@@ -1,8 +1,8 @@
 ---
 title: Power BI report scheduled refresh in Power BI Report Server
 description: Scheduled refresh for Power BI reports allows the data for a report with an embedded model to stay up to date.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server

@@ -1,8 +1,8 @@
 ---
 title: Limitations of Power BI Q&A
 description: Learn about the current limitations of Power BI Q&A, including the supported data sources, review question limitations, and teach Q&A limitations.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual

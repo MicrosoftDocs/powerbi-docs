@@ -1,8 +1,8 @@
 ---
 title: "Expression examples in Power BI Report Builder"
 description: Learn how to use expressions in Power BI Report Builder paginated reports to control content and report appearance.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.date: 01/05/2023
 ms.service: powerbi
 ms.subservice: report-builder

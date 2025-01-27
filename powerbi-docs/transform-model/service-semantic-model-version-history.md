@@ -93,7 +93,7 @@ The version history pane also shows an entry for the current version of the mode
 
 ## View audit logs and activity events 
 
-Power BI administrators can use the **Microsoft 365 Admin Center** to audit operations pertaining to editing data models in the web. The following tables shows which audit operations are supported for editing data models in the web:
+Power BI administrators can use the **Microsoft 365 Admin Center** to audit operations pertaining to restoring and saving versions in the semantic model version history. The following tables shows which audit operations are supported for semantic model version history:
 
 
 |Friendly name  |Operation name  |Notes  |

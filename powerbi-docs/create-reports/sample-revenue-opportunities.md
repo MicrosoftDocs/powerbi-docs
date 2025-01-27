@@ -1,8 +1,8 @@
 ---
 title: 'Revenue Opportunities sample for Power BI: Take a tour'
 description: Learn how to get the Revenue Opportunities sample for Power BI. Take a tour of the features used in this sample.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

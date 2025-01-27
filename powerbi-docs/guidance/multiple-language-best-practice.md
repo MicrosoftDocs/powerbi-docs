@@ -1,8 +1,8 @@
 ---
 title: Use best practices to localize Power BI reports
 description: Learn about best practices for your multiple-language report projects, such as allowing for text size, and packaging reports.
-author: maggiesMSFT   
-ms.author: maggies
+author: kfollis   
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

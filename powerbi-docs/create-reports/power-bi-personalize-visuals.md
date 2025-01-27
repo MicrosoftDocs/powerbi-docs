@@ -1,8 +1,8 @@
 ---
 title: Let users personalize visuals in a report
 description: Learn how to let report readers create their own view of a report without editing it, all in report reading view. 
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

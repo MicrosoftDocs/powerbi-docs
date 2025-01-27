@@ -1,8 +1,8 @@
 ---
 title: Get notifications in Microsoft Teams about Power BI activity
 description: When important activities happen in Power BI, Microsoft Teams can show notifications about them in its activity feed.
-author: ajburnle
-ms.author: ajburnle
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
