@@ -1,8 +1,8 @@
 ---
 title: Add a hyperlink to a text box in a report
 description: Learn how to add a hyperlink to a text box in Power BI Desktop and the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

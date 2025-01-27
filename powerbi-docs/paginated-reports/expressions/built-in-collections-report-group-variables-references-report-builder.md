@@ -6,8 +6,8 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 4be5b463-3ce2-483d-a3c6-dae752cb543e
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rodolfoc
 ---
 # Built-in collections - report and group variables references in a paginated report (Power BI Report Builder)

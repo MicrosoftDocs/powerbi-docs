@@ -1,8 +1,8 @@
 ---
 title: Format filters in Power BI reports
 description: Learn how to use Power BI to control your report filter format, design, and functionality to look like the rest of the report.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -1,8 +1,8 @@
 ---
 title: Set contact information for reports and dashboards  in the Power BI service
 description: Learn how to set contact information in a shared workspace for reports and dashboards in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

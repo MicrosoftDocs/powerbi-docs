@@ -1,8 +1,8 @@
 ---
 title: "URL parameters in paginated reports in Power BI"
 description: Learn how to send commands to paginated reports in Power BI by adding a parameter to a URL, which you can include in an email or Web page.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual

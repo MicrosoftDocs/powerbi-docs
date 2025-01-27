@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/16/2024
+ms.date: 01/27/2025
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user, I want to understand how to set up and use real-time streaming in Power BI so that I can visualize and analyze live data for timely insights and decision-making.
 #customer intent: 
@@ -15,7 +15,7 @@ LocalizationGroup: Data from files
 # Real-time streaming in Power BI
 
 > [!IMPORTANT]
-> Creation of streaming models remains enabled until October 31st, 2027. After that date, creation of new real-time semantic models **will no longer be supported**, including push semantic models, streaming semantic models, PubNub streaming semantic models, and streaming data tiles. **Your existing streaming semantic models will be unaffected.** For more information about the retirement of real-time streaming in Power BI, see the [blog post announcement](https://powerbi.microsoft.com/blog/announcing-the-retirement-of-real-time-streaming-in-power-bi/). Microsoft recommends users explore [Real-Time Intelligence in Microsoft Fabric](/fabric/real-time-intelligence/overview).
+> Creation of streaming models remains enabled until October 31, 2027. After that date, creation of new real-time semantic models **will no longer be supported**, including push semantic models, streaming semantic models, PubNub streaming semantic models, and streaming data tiles. **Your existing streaming semantic models will be unaffected.** For more information about the retirement of real-time streaming in Power BI, see the [blog post announcement](https://powerbi.microsoft.com/blog/announcing-the-retirement-of-real-time-streaming-in-power-bi/). Microsoft recommends users explore [Real-Time Intelligence in Microsoft Fabric](/fabric/real-time-intelligence/overview).
 
 Power BI with real-time streaming helps you stream data and update dashboards in real time. Any visual or dashboard created in Power BI can display and update real-time data and visuals. The devices and sources of streaming data can be factory sensors, social media sources, service usage metrics, or many other time-sensitive data collectors or transmitters.
 
@@ -266,7 +266,10 @@ For more information about automatic page refresh, see [Automatic page refresh i
 
 ## Considerations and limitations
 
-* Downloading of datasets or reports is not supported for Streaming or Pubnub. Push models can only be downloaded as a live connect, but users must explicitly connect to the model in liveconnect mode, upload the report to service, and then download it in live connect mode only.
+The following limitations apply to using real time streaming:
+
+* When using [PostDataset](/rest/api/power-bi/push-datasets/datasets-post-dataset) or [PostDatasetInGroup](/rest/api/power-bi/push-datasets/datasets-post-dataset-in-group) REST APIs, the *datasources* section isn't applicable for Push datasets.
+* Downloading of datasets or reports isn't supported for Streaming or Pubnub. Push models can only be downloaded as a live connect, but users must explicitly connect to the model in liveconnect mode, upload the report to service, and then download it in live connect mode only.
 
 ## Related content
 

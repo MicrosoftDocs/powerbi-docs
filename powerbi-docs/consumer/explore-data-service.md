@@ -1,9 +1,9 @@
 ---
 title: "Explore your data in the Power BI service (preview)"
 description: In this article, you learn how to explore your data in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
-ms.reviewer: maggies
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

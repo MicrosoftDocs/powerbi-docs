@@ -1,8 +1,8 @@
 ---
 title: Use Copilot to write and explain DAX queries
 description: Learn how to use Copilot to write and explain DAX queries in DAX query view in Power BI Desktop.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

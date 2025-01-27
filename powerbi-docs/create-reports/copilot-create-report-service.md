@@ -1,8 +1,8 @@
 ---
 title: Create reports in the Power BI service with Copilot
 description: Using Copilot, you can quickly create a Power BI report.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

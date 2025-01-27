@@ -1,8 +1,8 @@
 ---
 title: Use and monitor metrics
 description: Learn different methods to use metric sets in Power BI and how to ensure collaborators use accurate and trusted KPIs within your organization.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
