@@ -75,7 +75,7 @@ To validate the roles created, take the following steps:
     :::image type="content" source="media/datamarts-access-control/datamarts-access-control-06.png" alt-text="Screenshot of the manage view as role window.":::
 
 3. The data view shows the access that the selected role has.
-    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-07_2.png" alt-text="Screenshot of the view as results." lightbox="media/datamarts-access-control/datamarts-access-control-07_2.png":::
+    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-07-b.png" alt-text="Screenshot of the view as results." lightbox="media/datamarts-access-control/datamarts-access-control-07-b.png":::
 
 To revert to your access, select the **View as** button on the ribbon again, and select **None**.
 

@@ -39,11 +39,11 @@ Cognitive services are supported for Premium capacity nodes EM2, A2, P1, or F64 
 
 Cognitive Services transforms are part of the [Self-Service Data Prep for dataflows](https://powerbi.microsoft.com/blog/introducing-power-bi-data-prep-wtih-dataflows/). To enrich your data with Cognitive Services, start by editing a dataflow.
 
-:::image type="content" source="media/service-cognitive-services/cognitive-services-02_2.png" alt-text="Screenshot of the entities list inside of a dataflow.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-02-b.png" alt-text="Screenshot of the entities list inside of a dataflow.":::
 
 Select the **AI Insights** button in the top ribbon of the Power Query Editor.
 
-:::image type="content" source="media/service-cognitive-services/cognitive-services-03_2.png" alt-text="Screenshot of Power Query with an opened an entity.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-03-b.png" alt-text="Screenshot of Power Query with an opened an entity.":::
 
 In the pop-up window, select the function you want to use and the data you want to transform. This example scores the sentiment of a column that contains review text.
 
@@ -55,13 +55,13 @@ In the pop-up window, select the function you want to use and the data you want 
 
 After you invoke the function, the result is added as a new column to the table. The transformation is also added as an applied step in the query.
 
-:::image type="content" source="media/service-cognitive-services/cognitive-services-06_2.png" alt-text="Screenshot showing a new column created in Power Query.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-06-b.png" alt-text="Screenshot showing a new column created in Power Query.":::
 
 If the function returns multiple output columns, invoking the function adds a new column with a row of the multiple output columns.
 
 Use the expand option to add one or both values as columns to your data.
 
-:::image type="content" source="media/service-cognitive-services/cognitive-services-07_2.png" alt-text="Screenshot of the expand column option selected at the top of a column in Power Query.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-07-b.png" alt-text="Screenshot of the expand column option selected at the top of a column in Power Query.":::
 
 ### Available functions
 

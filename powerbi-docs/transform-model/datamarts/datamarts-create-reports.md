@@ -45,7 +45,7 @@ To find the datamart, you begin with the data hub. The image below shows the dat
 2. Select the **More** menu (...) to display the options menu
 3. Select **Details** to view details summary.
 
-:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-01_2.png" alt-text="Screenshot of how to find datamarts in the power B I service." lightbox="media/datamarts-create-reports/datamarts-create-reports-01_2.png":::
+:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-01-b.png" alt-text="Screenshot of how to find datamarts in the power B I service." lightbox="media/datamarts-create-reports/datamarts-create-reports-01-b.png":::
 
 ## Create reports using Power BI Desktop
 

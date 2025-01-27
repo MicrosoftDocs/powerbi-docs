@@ -36,7 +36,7 @@ Alternatively you can use the **Design view** icon found along the bottom of the
 
 To create a query, drag and drop tables from the Object explorer on the left on to the canvas.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-03_2.png" alt-text="Screenshot of dragging a table onto the canvas of the datamart editor." lightbox="media/datamarts-analyze/datamarts-analyze-03_2.png":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-03-b.png" alt-text="Screenshot of dragging a table onto the canvas of the datamart editor." lightbox="media/datamarts-analyze/datamarts-analyze-03-b.png":::
 
 Once you drag one or more tables onto the canvas, you can use the visual experience to design your queries. The datamart editor uses the similar Power Query diagram view experience to enable you to easily query and analyze your data. Learn more about [Power Query diagram view](/power-query/diagram-view).
 
@@ -44,7 +44,7 @@ As you work on your Visual query, the queries are automatically saved every few 
 
 The following image shows a sample query created using the no-code Visual Query editor to retrieve the *Top customers by Orders*.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-04_2.png" alt-text="Screenshot of sample query results in the datamart editor." lightbox="media/datamarts-analyze/datamarts-analyze-04_2.png":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-04-b.png" alt-text="Screenshot of sample query results in the datamart editor." lightbox="media/datamarts-analyze/datamarts-analyze-04-b.png":::
 
 There are a few things to keep in mind about the Visual Query editor:
 
@@ -100,7 +100,7 @@ For developers and analysts with SQL experience, using SQL Server Management Stu
 
 To connect to a datamart’s SQL endpoint with client tooling, navigate to the semantic model settings page by selecting the **Datamarts (Preview)** tab in Power BI. From there, expand the **Server settings** section and copy the connection string, as shown in the following image.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-07_2.png" alt-text="Screenshot of the server settings connection string." lightbox="media/datamarts-analyze/datamarts-analyze-07.png":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-07-b.png" alt-text="Screenshot of the server settings connection string." lightbox="media/datamarts-analyze/datamarts-analyze-07.png":::
 
 ### Get started with SSMS
 

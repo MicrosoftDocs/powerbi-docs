@@ -63,7 +63,7 @@ To create a streaming dataflow:
 1. Open the Power BI service in a browser, and then select a Premium-enabled workspace. (Streaming dataflows, like regular dataflows, aren't available in **My Workspace**.)
 1. Select the **New** dropdown menu, and then choose **Streaming dataflow**.
 
-   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-02_2.png" alt-text="Screenshot that shows the New menu options with streaming dataflow highlighted.":::
+   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-02-b.png" alt-text="Screenshot that shows the New menu options with streaming dataflow highlighted.":::
 
 1. On the side pane that opens, you must name your streaming dataflow. Enter a name in the **Name** box (1), and then select **Create** (2).
 
@@ -73,7 +73,7 @@ To create a streaming dataflow:
 
 The following screenshot shows a finished dataflow. It highlights all the sections available to you for authoring in the streaming dataflow UI.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-04_2.png" alt-text="Screenshot of an example dataflow window with the ribbon, diagram view, side pane, and tabs highlighted." lightbox="media/dataflows-streaming/dataflows-streaming-04_2.png":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-04-b.png" alt-text="Screenshot of an example dataflow window with the ribbon, diagram view, side pane, and tabs highlighted." lightbox="media/dataflows-streaming/dataflows-streaming-04-b.png":::
 
 1. **Ribbon**: On the ribbon, sections follow the order of a "classic" analytics process: inputs (also known as data sources), transformations (streaming ETL operations), outputs, and a button to save your progress.
 2. **Diagram view**: This view is a graphical representation of your dataflow, from inputs to operations to outputs.
@@ -425,7 +425,7 @@ To edit your streaming dataflow, you have to stop it. *A stopped dataflow result
 
 The only experience available while a streaming dataflow runs is the **Runtime errors** tab, where you can monitor the behavior of your dataflow for any dropped messages and similar situations.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-32_2.png" alt-text="Screenshot that shows the disabled data preview when a streaming dataflow is running.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-32-b.png" alt-text="Screenshot that shows the disabled data preview when a streaming dataflow is running.":::
 
 ### Consider data storage when editing your dataflow
 
@@ -433,7 +433,7 @@ When you're editing a dataflow, you need to account for other considerations. Si
 
 This experience is better shown with an example. The following screenshot shows the message you get when you add a column to one table, change the name for a second table, and leave a third table the same as it was before.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-33_2.png" alt-text="Screenshot that shows an informational message that lists the changes made to output tables and their impact." lightbox="media/dataflows-streaming/dataflows-streaming-33_2.png":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-33-b.png" alt-text="Screenshot that shows an informational message that lists the changes made to output tables and their impact." lightbox="media/dataflows-streaming/dataflows-streaming-33-b.png":::
 
 In this example, the data already saved in both tables that had schema and name changes is deleted if you save the changes. For the table that stayed the same, you get the option to delete any old data and start from scratch, or save it for later analysis together with new data that comes in.
 

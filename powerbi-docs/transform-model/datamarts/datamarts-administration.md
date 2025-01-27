@@ -26,7 +26,7 @@ Power BI administrators can enable or disable datamart creation for the entire o
 
 In the Power BI admin portal, you can review a list of datamarts along with all other Power BI items in any workspace, as shown in the following image.
 
-:::image type="content" source="media/datamarts-administration/datamarts-administration-02_2.png" alt-text="Screenshot of the admin portal to track datamarts.":::
+:::image type="content" source="media/datamarts-administration/datamarts-administration-02-b.png" alt-text="Screenshot of the admin portal to track datamarts.":::
 
 Existing Power BI admin APIs for getting workspace information work for datamarts as well, such as *GetGroupsAsAdmin* and the workspace scanner API. Such APIs enable you, as the Power BI service administrator, to retrieve datamarts metadata along with other Power BI item information, so you can monitor workspace usage and generate relevant reports.
 
