@@ -31,11 +31,11 @@ The [Time intelligence functions in Power BI](/dax/time-intelligence-functions-d
 
 To set a **date table**, select the table you want to use as a date table in the **Fields** pane, then right-click the table and choose **Mark as date table > Mark as date table** in the menu that appears, as shown in the following image.
 
-:::image type="content" source="media/desktop-date-tables/date-tables_02.png" alt-text="Screenshot of Power BI Desktop showing Mark as date table filter options in the Fields pane.":::
+:::image type="content" source="media/desktop-date-tables/date-tables-02.png" alt-text="Screenshot of Power BI Desktop showing Mark as date table filter options in the Fields pane.":::
 
 You can also select the table and then choose **Mark as date table** from the **Table tools** ribbon, shown here.
 
-:::image type="content" source="media/desktop-date-tables/date-tables_02b.png" alt-text="Screenshot of Power BI Desktop showing the Mark as date table button and options filter.":::
+:::image type="content" source="media/desktop-date-tables/date-tables-02b.png" alt-text="Screenshot of Power BI Desktop showing the Mark as date table button and options filter.":::
 
 When you specify your own **date table**, Power BI Desktop performs the following validations of that column and its data, to ensure that the data:
 

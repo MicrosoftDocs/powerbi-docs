@@ -67,7 +67,7 @@ The Power BI service is built on Azure, Microsoft's [cloud computing platform](h
 
 The WFE cluster provides the user's browser with the initial HTML page contents on site load, and pointers to CDN content used to render the site in the browser.
 
-![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
+![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper-02.png)
 
 A WFE cluster consists of an ASP.NET website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 

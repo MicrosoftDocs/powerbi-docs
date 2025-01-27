@@ -105,7 +105,7 @@ To format the **Color** column based on its field values, select **Conditional f
 
 In the **Background color** or **Font color** dialog box, select **Field value** from the **Format style** drop-down field.
 
-![Dialog of Format style for background color of color column: Format style drop down is set to Field value](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
+![Dialog of Format style for background color of color column: Format style drop down is set to Field value](media/desktop-conditional-table-formatting/conditional-table-formatting-02.png)
 
 An example table with color field value-based **Background color** formatting on the **Color** field looks like this:
 

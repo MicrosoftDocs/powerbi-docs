@@ -30,7 +30,7 @@ In this article, you learn how to embed a Power BI Report Server report by using
 
 2. Unzip the file, and open the sample .pbix file in Power BI Desktop for Power BI Report Server.
 
-    ![PBI RS Desktop tool](media/quickstart-embed/quickstart_embed_02.png)
+    ![PBI RS Desktop tool](media/quickstart-embed/quickstart_embed-02.png)
 
 3. Save the report to the **Power BI Report Server**. 
 

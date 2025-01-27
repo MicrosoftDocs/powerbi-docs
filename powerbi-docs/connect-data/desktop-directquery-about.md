@@ -313,7 +313,7 @@ When you define the model, follow this guidance:
 
 - **Don't use the relative date filtering in Power Query Editor.** It's possible to define relative date filtering in Power Query Editor. For example, you can filter to the rows where the date is in the last 14 days.
   
-  ![Screenshot that shows filtering rows for the last 14 days.](media/desktop-directquery-about/directquery-about_02.png)
+  ![Screenshot that shows filtering rows for the last 14 days.](media/desktop-directquery-about/directquery-about-02.png)
   
   However, this filter translates into a filter based on a fixed date, such as the time the query was authored, as you can see in the native query.
   

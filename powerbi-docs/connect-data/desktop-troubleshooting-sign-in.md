@@ -60,7 +60,7 @@ To collect a trace in **Power BI Desktop**, follow these steps:
 
 1. Enable tracing in **Power BI Desktop** by going to **File** > **Options and settings** > **Options** and then select **Diagnostics** from the options in the left pane. In the pane that appears, check the box next to **Enable tracing**, as shown in the following image. You may be required to restart **Power BI Desktop**.
 
-   ![Screenshot shows the option to enable tracing in Power BI Desktop.](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in_02.png)
+   ![Screenshot shows the option to enable tracing in Power BI Desktop.](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-02.png)
 
 2. Then follow the steps that reproduce the error. When that occurs, **Power BI Desktop** adds events to the tracing log, which is kept on the local computer.
 

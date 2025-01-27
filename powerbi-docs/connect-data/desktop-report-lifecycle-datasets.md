@@ -31,7 +31,7 @@ Because report creators often use the same or nearly the same semantic models, k
 
 A business analyst on your team who is skilled at creating good data models, also called semantic models, can create a semantic model and report and then share that report in the Power BI service.
 
-![Screenshot shows the Publish button in Power BI Desktop.](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
+![Screenshot shows the Publish button in Power BI Desktop.](media/desktop-report-lifecycle-datasets/report-lifecycle-02a.png)
 
 If everyone on the team created their own versions of the semantic model and shared their reports with the team, there would be many reports from different semantic models in your team's Power BI workspace. It would be hard to tell which report was the most recent, whether the semantic models were the same, or what the differences were.
 
@@ -57,7 +57,7 @@ The first step in using a Power BI service live connection to manage the report 
 
 1. To publish the report, from Power BI Desktop, select **Publish** from the **Home** tab.
 
-   ![Screenshot that shows publishing a report.](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
+   ![Screenshot that shows publishing a report.](media/desktop-report-lifecycle-datasets/report-lifecycle-02a.png)
 
    If you're not signed in to the Power BI service account, Power BI prompts you to sign in.
 

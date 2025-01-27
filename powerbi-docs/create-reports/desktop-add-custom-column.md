@@ -28,13 +28,13 @@ To create a custom column, follow these steps:
 
 2. From the **Home** tab on the ribbon, select **Transform data**, and then select **Transform data** from the menu.
 
-   ![Screenshot of the Power BI Desktop with Transform data highlighted.](media/desktop-add-custom-column/add-column-from-example_02.png)
+   ![Screenshot of the Power BI Desktop with Transform data highlighted.](media/desktop-add-custom-column/add-column-from-example-02.png)
 
    The **Power Query Editor** window appears.
 
 3. From the **Add Column** tab on the ribbon, select **Custom Column**.
 
-   ![Screenshot of the Power Query Editor with Custom Column highlighted.](media/desktop-add-custom-column/add-custom-column_02.png)
+   ![Screenshot of the Power Query Editor with Custom Column highlighted.](media/desktop-add-custom-column/add-custom-column-02.png)
 
    The **Custom Column** window appears.
 

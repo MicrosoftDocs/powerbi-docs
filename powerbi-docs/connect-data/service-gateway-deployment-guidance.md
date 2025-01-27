@@ -53,7 +53,7 @@ For the machine installation requirements, see the on-premises data gateway [ins
 
 The location of the gateway installation can have significant effect on your query performance. Try to make sure that your gateway, data source locations, and the Power BI tenant are as close as possible to each other to minimize network latency. To determine your Power BI tenant location, in the Power BI service select the question mark (**?**) icon in the upper-right corner. Then select **About Power BI**.
 
-![Screenshot shows the question mark where you can determine your Power BI tenant location.](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
+![Screenshot shows the question mark where you can determine your Power BI tenant location.](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance-02.png)
 
 If you intend to use the Power BI service gateway with Azure Analysis Services, be sure that the data regions in both match.
 

@@ -28,7 +28,7 @@ In Power BI reports, you can highlight a data point in a given visual by clickin
 
 With multi-select, you can select more than one data point in your report and highlight the results across the visuals on the page. This is equivalent to an **and** statement or functionality, such as "highlight results for Idaho **and** Virginia". To multi-select data points in visuals, use **Ctrl + Click** to select multiple data points. The following image shows **multiple data points** selected (multi-select).
 
-![Screenshot shows multiple data points selected](media/desktop-multi-select/multi-select_02.png)
+![Screenshot shows multiple data points selected](media/desktop-multi-select/multi-select-02.png)
 
 This capability opens all sorts of opportunities when creating, sharing, and interacting with reports.
 
