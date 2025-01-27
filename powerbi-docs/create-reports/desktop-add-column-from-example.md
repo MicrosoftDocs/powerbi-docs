@@ -30,7 +30,7 @@ Adding a column from an example is easy and straightforward. The next sections s
 
 To get sample data from Wikipedia, select **Get Data** > **Web** from the **Home** tab of the Power BI Desktop ribbon.
 
-![Screenshot of Power BI Desktop, highlighting the Web selection under the Get Data dropdown menu.](media/desktop-add-column-from-example/add-column-from-example-02.png)
+![Screenshot of Power BI Desktop, highlighting the Web selection under the Get Data dropdown menu.](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
 1. Paste the following URL into the dialog that appears and select **OK**:
 

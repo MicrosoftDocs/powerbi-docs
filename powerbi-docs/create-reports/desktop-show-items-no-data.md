@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 
 Power BI lets you visualize data from various sources. When you create a visual, Power BI only shows relevant data to properly manage how data is presented and displayed. Power BI determines which data is relevant based on the configuration of the visual and the underlying data model. This article describes how Power BI behaves when determining relevant data. We've also included examples that show how determinations are made.
 
-![Screenshot of the Visualizations menu, highlighting the Show items with no data within the X-axis dropdown menu.](media/desktop-show-items-no-data/show-items-no-data-02.png)
+![Screenshot of the Visualizations menu, highlighting the Show items with no data within the X-axis dropdown menu.](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
 ## Determining relevant data
 
@@ -76,7 +76,7 @@ To enable the **Show items with no data** feature, follow these steps:
 1. Select a visual.
 1. In the **Values** fields well, right-click the field and select **Show items with no data** from the menu that appears, as shown in the following image:
 
-![Screenshot of the Fields menu, highlighting the Show items with no data feature.](media/desktop-show-items-no-data/show-items-no-data-02.png)
+![Screenshot of the Fields menu, highlighting the Show items with no data feature.](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
 The **Show items with no data** feature doesn't have any effect in the following circumstances:
 

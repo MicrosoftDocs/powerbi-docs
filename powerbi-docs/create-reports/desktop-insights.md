@@ -34,7 +34,7 @@ The insights feature is contextual, and is based on the immediately previous dat
 
 To use insights to explain increases or decreases seen on charts, just right-click on any data point in a bar or line chart, and select **Analyze > Explain the increase** (or *Explain the decrease*, since all insights are based on the change from the previous data point).
 
-:::image type="content" source="media/desktop-insights/insights-02.png" alt-text="Screenshot of a visual, highlighting Analyze and Explain the increase in the right-click menu.":::
+:::image type="content" source="media/desktop-insights/insights_02.png" alt-text="Screenshot of a visual, highlighting Analyze and Explain the increase in the right-click menu.":::
 
 **Power BI** then runs its machine learning algorithms over the data, and populates a window with a visual and a description that describes which categories most influenced the increase or decrease. By default, insights are provided as a *waterfall* visual, as shown in the following image.
 

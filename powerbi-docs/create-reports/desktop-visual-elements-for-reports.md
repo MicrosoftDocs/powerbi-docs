@@ -30,7 +30,7 @@ The following sections describe how to use these enhancements and how to apply t
 
 You can format the gray area outside your report page using **wallpaper**. The following image has a red box that clarifies where the wallpaper area applies.
 
-![Screenshot of Power BI Desktop, highlighting the wallpaper area.](media/desktop-visual-elements-for-reports/visual-elements-for-reports-02.png)
+![Screenshot of Power BI Desktop, highlighting the wallpaper area.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_02.png)
 
 You can either set wallpaper on a per-report-page basis or have the same wallpaper for every page in your report. To set your wallpaper, select the **Formatting** icon when no visual is selected in your report and the **Wallpaper** card appears in the pane.
 

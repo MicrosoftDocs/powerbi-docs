@@ -22,7 +22,7 @@ Consider the following visual, which shows *TotalSales* by *CountryName*. Most s
 
 You can tell **Power BI** to find where a distribution is different and get fast, automated, and insightful analysis about your data. Right-click on a data point and select **Analyze** > **Find where this distribution is different**, and an insight is delivered to you in an easy-to-use window.
 
-:::image type="content" source="media/desktop-insights-find-where-different/find-where-different-02.png" alt-text="Screenshot of an insight, showing a different distribution.":::
+:::image type="content" source="media/desktop-insights-find-where-different/find-where-different_02.png" alt-text="Screenshot of an insight, showing a different distribution.":::
 
 In this example, the automated analysis shows that the proportion of sales for *Touring Bikes* in the United States and Canada are lower than the proportion coming from the other countries/regions.
 

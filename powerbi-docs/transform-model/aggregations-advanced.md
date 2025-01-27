@@ -87,7 +87,7 @@ Dimensional models typically use *aggregations based on relationships*. Power BI
 
 In the following example, the model gets data from a single data source. Tables are using DirectQuery storage mode. The **Sales** fact table contains billions of rows. Setting the storage mode of **Sales** to Import for caching would consume considerable memory and resources overhead.
 
-![Detail tables in a model](media/aggregations-advanced/aggregations-02.png)
+![Detail tables in a model](media/aggregations-advanced/aggregations_02.png)
 
 Instead, create the **Sales Agg** aggregation table. In the **Sales Agg** table, the number of rows equals the sum of **SalesAmount** grouped by **CustomerKey**, **DateKey**, and **ProductSubcategoryKey**. The **Sales Agg** table is at a higher granularity than **Sales**, so instead of billions, it might contain millions of rows, which are easier to manage.
 
@@ -141,7 +141,7 @@ For *cross-source* aggregation hits that don't depend on relationships, see [Agg
 
 The following query hits the aggregation, because columns in the **Date** table are at the granularity that can hit the aggregation. The **SalesAmount** column uses the **Sum** aggregation.
 
-![Successful relationship-based aggregation query](media/aggregations-advanced/aggregations-code-02.png)
+![Successful relationship-based aggregation query](media/aggregations-advanced/aggregations-code_02.png)
 
 The following query doesn't hit the aggregation. Despite requesting the sum of **SalesAmount**, the query is performing a GroupBy operation on a column in the **Product** table, which isn't at the granularity that can hit the aggregation. If you observe the relationships in the model, a product subcategory can have multiple **Product** rows. The query wouldn't be able to determine which product to aggregate to. In this case, the query reverts to DirectQuery and submits a SQL query to the data source.
 
@@ -187,7 +187,7 @@ In aggregations based on GroupBy columns, the **GroupBy** entries aren't optiona
 
 The following table shows the aggregations for the **Driver Activity Agg** table.
 
-![Driver Activity Agg aggregations table](media/aggregations-advanced/aggregations-table-02.png)
+![Driver Activity Agg aggregations table](media/aggregations-advanced/aggregations-table_02.png)
 
 You can set the storage mode of the aggregated **Driver Activity Agg** table to Import.
 

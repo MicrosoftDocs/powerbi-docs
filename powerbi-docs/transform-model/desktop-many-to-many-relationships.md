@@ -31,7 +31,7 @@ When you define a relationship between two tables in Power BI, you must define t
 
 For example, take a look at the simple model in this image:
 
-:::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships-02.png" alt-text="Screenshot of ProductSales and Product table in Relationship view.":::
+:::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_02.png" alt-text="Screenshot of ProductSales and Product table in Relationship view.":::
 
 Now, imagine that the **Product** table displays just two rows, as shown:
 

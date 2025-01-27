@@ -52,7 +52,7 @@ To connect to data:
 
    The **Get Data** window appears, showing the many categories to which Power BI Desktop can connect.
 
-   :::image type="content" source="media/desktop-what-is-desktop/what-is-desktop-02.png" alt-text="Screenshot of Power BI Desktop showing the Get Data dialog box.":::
+   :::image type="content" source="media/desktop-what-is-desktop/what-is-desktop_02.png" alt-text="Screenshot of Power BI Desktop showing the Get Data dialog box.":::
 
 1. When you select a data type, you're prompted for information, such as the URL and credentials, necessary for Power BI Desktop to connect to the data source on your behalf.
 
