@@ -1,8 +1,8 @@
 ---
 title: White papers for Power BI
 description: White papers allow you to explore Power BI topics at a deeper level.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource

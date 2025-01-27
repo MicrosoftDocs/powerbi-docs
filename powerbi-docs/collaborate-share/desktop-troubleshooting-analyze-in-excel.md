@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot the connection from Excel to Power BI data 
 description: Learn about troubleshooting problems that can occur when connecting Microsoft Excel to Power BI data.
-author: ajburnle
-ms.author: ajburnle
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

@@ -1,8 +1,8 @@
 ---
 title: Design refreshable reports in Excel with Power BI data
 description: Learn how you can start analyzing your data and building reports in the workbook using familiar spreadsheet functionality.
-author: ajburnle
-ms.author: ajburnle
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

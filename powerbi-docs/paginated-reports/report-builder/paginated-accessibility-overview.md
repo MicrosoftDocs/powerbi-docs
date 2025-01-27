@@ -5,8 +5,8 @@ ms.date: 05/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: cookiemccray
 ---
 # Accessibility in Power BI paginated reports (Power BI Report Builder)

@@ -5,8 +5,8 @@ ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Chart effects: 3D, bevel, and others in Power BI paginated reports (Power BI Report Builder)

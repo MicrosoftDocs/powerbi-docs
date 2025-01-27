@@ -1,8 +1,8 @@
 ---
 title: Request or grant access to dashboards or reports
 description: Learn how to request access if someone sends you a link to a dashboard or a report, but doesn't share it with you. Learn how to grant access if someone requests it.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

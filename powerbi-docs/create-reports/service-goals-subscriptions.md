@@ -1,8 +1,8 @@
 ---
 title: Create email subscriptions for your scorecards in Power BI (preview)
 description: Set up subscriptions to receive email notifications and stay up to date on the scorecards that matter most to you and your team.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: 'anphil'
 featuredvideoid: ''
 ms.service: powerbi
