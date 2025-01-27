@@ -5,8 +5,8 @@ ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Format Power BI paginated report items (Power BI Report Builder)

@@ -1,8 +1,8 @@
 ---
 title: "Drillthrough, drilldown, subreports, and nested data regions in a Power BI paginated report"
 description: Organize data in a Power BI paginated report to show the relationship of the general to the detailed and then display the data in a subreport or a separate drillthrough report.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.date: 04/10/2023
 ms.service: powerbi
 ms.subservice: report-builder

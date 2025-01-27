@@ -1,8 +1,8 @@
 ---
 title: 'Pin an entire report page to a Power BI dashboard'
 description: Learn how to pin an entire live report page to a Power BI dashboard from a report and then interact with the tiles on that dashboard.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: Use on-object interaction with visuals in your report (preview)
 description: Learn how to use on-object interaction in a report in Power BI Desktop.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: 'rolevass'
 ms.custom:
 ms.service: powerbi

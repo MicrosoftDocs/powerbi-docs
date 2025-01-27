@@ -5,8 +5,8 @@ ms.date: 09/25/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ---
 # Create data connection strings (Power BI Report Builder)

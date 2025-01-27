@@ -1,8 +1,8 @@
 ---
 title: Overview of Copilot for Power BI 
 description: Read all about how Copilot works in Power BI.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

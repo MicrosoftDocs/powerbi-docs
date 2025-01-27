@@ -1,8 +1,8 @@
 ---
 title: Import translation sheets in Translations Builder
 description: Learn how to import translations sheets in Translations Builder. Human translators use these .csv files to provide translations to localize Power BI reports.
-author: maggiesMSFT   
-ms.author: maggies
+author: kfollis   
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to

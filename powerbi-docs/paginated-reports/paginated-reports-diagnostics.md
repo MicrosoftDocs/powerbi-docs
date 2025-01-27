@@ -1,8 +1,8 @@
 ---
 title: "View diagnostics  for Power BI paginated reports"
 description: Learn how to view, read, and use the diagnostics feature of a paginated report rendered in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

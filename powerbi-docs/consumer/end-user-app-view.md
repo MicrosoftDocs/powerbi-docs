@@ -1,8 +1,8 @@
 ---
 title: Install and use apps with dashboards and reports in Power BI
 description: Learn how to get apps from the Power BI apps marketplace and direct links, open apps from the navigation pane, and update apps in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore

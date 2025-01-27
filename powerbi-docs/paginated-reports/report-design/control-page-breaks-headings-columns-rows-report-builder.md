@@ -1,8 +1,8 @@
 ---
 title: "Control page breaks, headings, columns, and rows in Power BI paginated reports"
 description: Optimize viewing and printing of your tables, lists, or images in paginated reports with choices for page lengths, columns, headings, and rows in Power BI Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.date: 04/20/2023
 ms.service: powerbi
 ms.subservice: powerbi

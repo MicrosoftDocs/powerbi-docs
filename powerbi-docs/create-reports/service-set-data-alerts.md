@@ -1,8 +1,8 @@
 ---
 title: Set data alerts in the Power BI service
 description: Learn how to set alerts to notify you when data in your dashboards changes beyond the limits you set in Microsoft Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.custom: video-JbL2-HJ8clE
 ms.service: powerbi

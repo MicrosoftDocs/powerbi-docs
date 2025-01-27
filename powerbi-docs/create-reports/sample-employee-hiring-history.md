@@ -1,8 +1,8 @@
 ---
 title: 'Employee Hiring and History sample: Take a tour'
 description: Learn how to use Power BI with business-oriented data, reports, and dashboards, with this employee hiring and history sample.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

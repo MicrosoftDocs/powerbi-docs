@@ -1,8 +1,8 @@
 ---
 title: "Troubleshoot subreports in Power BI paginated reports"
 description: Learn about solutions for common issues when using subreports, which are report items inside a Power BI paginated report.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

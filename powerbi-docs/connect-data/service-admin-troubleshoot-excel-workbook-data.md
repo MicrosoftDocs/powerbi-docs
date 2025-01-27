@@ -1,8 +1,8 @@
 ---
 title: "Error: We couldn't find any data in your Excel workbook"
 description: "Learn how to address the following error in the Power BI service: We couldn't find any data in your Excel workbook."
-author: ajburnle
-ms.author: ajburnle
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
