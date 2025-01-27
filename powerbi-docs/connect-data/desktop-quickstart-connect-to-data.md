@@ -40,7 +40,7 @@ With Power BI Desktop, you can connect to many different types of data. These so
 
 To connect to data, from the **Home** ribbon select **Get data**.
 
-![Screenshot shows the Home ribbon with Get data highlighted.](media/desktop-quickstart-connect-to-data/qs-connect-data-02.png)
+![Screenshot shows the Home ribbon with Get data highlighted.](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
 The **Get Data** window appears. You can choose from the many different data sources to which Power BI Desktop can connect. In this quickstart, use the Excel workbook that you downloaded in [Prerequisites](#prerequisites).
 

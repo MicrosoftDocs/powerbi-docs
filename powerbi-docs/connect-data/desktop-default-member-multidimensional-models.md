@@ -76,7 +76,7 @@ Since slicers and filter cards are often used to interact with other visuals, th
 
 For this table, we use the same example data from earlier in this article:
 
-![Screenshot of a table that shows the expected results based on groups and filter card selections.](media/desktop-default-member-multidimensional-models/default-members-02.png)
+![Screenshot of a table that shows the expected results based on groups and filter card selections.](media/desktop-default-member-multidimensional-models/default-members_02.png)
 
 The following rules apply to the way Power BI behaves in these circumstances.
 
