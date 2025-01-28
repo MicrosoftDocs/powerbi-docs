@@ -28,7 +28,7 @@ Copilot in the Power BI Mobile apps makes it possible to get AI-generated report
    :::image type="content" source="./media/mobile-apps-copilot/open-copilot.png" alt-text="Screenshot showing the Copilot icon in a report header." border="false":::
 
    > [!NOTE]
-   > You can use Copilot for any report that meets [Copilot for Power BI requirements](../../create-reports/copilot-introduction.md). If you don't see the Copilot icon in the report header, it probably means that the report does not meet these requirements.
+   > You can use Copilot for any report that meets [Copilot for Power BI requirements](../../create-reports/copilot-introduction.md). If you don't see the Copilot icon in the report header, it probably means that the report doesn't meet these requirements.
    >
    > Copilot works on the current state of the report, so be sure to apply any filters or slicers before you tap the Copilot button.
 
