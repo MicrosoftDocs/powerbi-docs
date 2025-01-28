@@ -195,7 +195,7 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
 
 ## Considerations and Limitations
 
-* Information protection: See [Sensitivity labels in Fabric and Power BI: Considerations and limitations](./service-security-sensitivity-label-overview#considerations-and-limitations).
+* Information protection: See [Sensitivity labels in Fabric and Power BI: Considerations and limitations](./service-security-sensitivity-label-overview.md#considerations-and-limitations).
 
 * Some experiences aren't available to guest users even when they have higher-level permissions. To update or publish reports, guest users need to use the Power BI service, including Get Data, to upload Power BI Desktop files. The following experiences aren't supported:
   * Direct publishing from Power BI desktop to the Power BI service
