@@ -21,9 +21,9 @@ For related "What's New" information, see:
 
 ## February 2025
 
-### Copilot in the Power BI mobile apps is now available on tablets as well as phones! (preview)
+### Copilot in the Power BI mobile apps is now available on iPads and Android tablets! (preview)
 
-Copilot in the Power BI Mobile apps helps you quickly analyze data, gain insights, and make informed decisions on the go. With this release, you can now enjoy the benefits of Copilot on your tablet devices as well as on your phones, [where Copilot was introduced several months ago](#november-2024).
+Copilot in the Power BI Mobile apps helps you quickly analyze data, gain insights, and make informed decisions on the go. With this release, you can now enjoy the benefits of Copilot on your iPad or Android tablet, in addition to on your phone, [where Copilot in the Power BI mobile apps was introduced several months ago](#november-2024).
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/copilot-whats-new-tablet-support.png" alt-text="Screenshot showing Copilot in the Power BI mobile apps on a tablet device." border="false":::
 
