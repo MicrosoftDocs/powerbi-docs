@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual #Don't change
-ms.date: 11/12/2024
+ms.date: 01/28/2025
 
 #customer intent: As a user of Power BI in the Power BI mobile app, I want to understand how I can use Copilot in Power BI Mobile to help me understand my reports quickly.
 
@@ -14,11 +14,11 @@ ms.date: 11/12/2024
 
 # Copilot in the Power BI Mobile Apps (preview)
 
-| :::image type="content" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" alt-text="Apple logo" border="false"::: | :::image type="content" source="./media/mobile-apps-logo-images/android-logo-40-px.png" alt-text="Android logo" border="false"::: |
-|:---------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|
-| iPhones                                                                                                                     | Android phones                                                                                                                    |
+| :::image type="content" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" alt-text="Apple logo" border="false"::: | :::image type="content" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" alt-text="Apple logo" border="false"::: | :::image type="content" source="./media/mobile-apps-logo-images/android-logo-40-px.png" alt-text="Android logo" border="false"::: | :::image type="content" source="./media/mobile-apps-logo-images/android-logo-40-px.png" alt-text="Android logo" border="false"::: |
+|:---------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|
+| iPhones                                                                                                                     | iPads                                                                                                                       | Android phones                                                                                                              | Android tablets                                                                                                                    |
 
-Copilot in the Power BI Mobile apps makes it possible to get AI-generated report summaries and insights to help you make data-driven decisions on the go, anytime, anywhere. You no longer have to spend time analyzing the data yourself. You just tap the Copilot icon in the report header, choose the prompt that best suits your needs, and Copilot provides what you asked for. You can then explore the data further, refine your query, or share Copilot's response with others. This article shows you how to accomplish these tasks and provides information about Copilot in Power BI Mobile.
+Copilot in the Power BI Mobile apps makes it possible to get AI-generated report summaries and insights to help you make data-driven decisions on the go, anytime, anywhere. You no longer have to spend time analyzing the data yourself. You just tap the Copilot icon in the report header, choose the prompt that best suits your needs, and Copilot provides what you asked for. You can then explore the data further, refine your query, or share Copilot's response with others. This article shows you how to accomplish these tasks and provides information about Copilot in Power BI Mobile. The images shown illustrate the feature as it appears on phones. The experience on tablets is similar.
 
 ## Use Copilot to generate summaries and insights
 
