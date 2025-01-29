@@ -15,7 +15,7 @@ This article describes link preview cards that are generated in Teams chats and 
 
 ## About link preview cards
 
-When you paste a link to a Power BI report, app, dashboard, scorecard, or workspace into a Teams chat or channel, a preview card showing some details about the linked-to item is generated in the chat/channel window. The purpose of the preview card is to enhance collaboration by helping chat participants decide whether to open the link or not.
+When you paste a link to a Power BI report, app, dashboard, or workspace into a Teams chat or channel, a preview card showing some details about the linked-to item is generated in the chat/channel window. The purpose of the preview card is to enhance collaboration by helping chat participants decide whether to open the link or not. If they decide to open the link, the item opens directly in their Power BI app in Teams - there's no need to switch applications. This saves time and helps them stay focused on the task at hand.
 
 :::image type="content" source="./media/service-teams-link-preview/teams-link-preview.png" alt-text="Screenshot showing a link preview card for a report in a Teams chat window." border="false":::
 
@@ -50,12 +50,10 @@ Link preview cards are generated for the following Power BI items.
 * Reports
 * Org apps 
 * Dashboards
-* Scorecards
 * Workspaces
 
 ## Considerations and limitations
 
-* Link previews don't work in meeting chats or private channels.
 * In chats or channels with more than 60 participants, permissions and licensing of card viewers isn't checked. All participants see the card as it was generated for the person who pasted the link in the chat. This can lead to the following unexpected behaviors:
     * Chat participants who don't have permissions to view the item may still see the *Open* button, even though they won't be able to open the item when they select the button.
     * Chat participants who don't have the appropriate license for Copilot might see the *Open Copilot summary in Power BI* button, but won't be able to open the report with the Copilot summary when they select the link.
