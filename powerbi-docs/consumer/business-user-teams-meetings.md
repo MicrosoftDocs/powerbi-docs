@@ -60,7 +60,7 @@ Here's how to add a Power BI report or scorecard to a meeting.
 
 1. In the confirmation dialog, select **Save**.
 
-    :::image type="content" source="media/business-user-teams-meetings/power-bi-create-tab.png" alt-text="Screenshot of the dialog to save and add the new Power B I tab.":::
+    :::image type="content" source="media/business-user-teams-meetings/power-bi-teams-create-tab.png" alt-text="Screenshot of the dialog to save and add the new Power B I tab.":::
 
 1. On the new Power BI tab that you created, select **Browse workspaces** to navigate to the report or scorecard that you want to add, or enter the link in the **Paste a Power BI link** field.
 
@@ -133,7 +133,7 @@ Your message appears as part of the meeting chat. Attendees can open it to see t
 1. Search for content, or select from your list of recent items.
 1. Pick a Power BI item.
 1. Select **Send**.
-1. Select the **Open** button in the sent message.
+1. In the sent message, select the **Open** button for the report or scorecard.
 
 ## After the meeting
 
