@@ -1,8 +1,8 @@
 ---
 title: Embed a Power BI report with a Copilot narrative visual 
 description: Embed Power BI reports with a Copilot narrative visual in secure portals or websites, detailing supported scenarios, benefits, and setup instructions.
-author: maggiesmsft
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

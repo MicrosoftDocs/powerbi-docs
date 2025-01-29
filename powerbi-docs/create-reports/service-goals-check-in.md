@@ -1,8 +1,8 @@
 ---
 title: Stay on top of your goals in Power BI
 description: In addition to seeing all your goals in one view, with scorecards you can dig deeper into the data, update your goals, and make notes on important events.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

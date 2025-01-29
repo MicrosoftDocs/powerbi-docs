@@ -1,8 +1,8 @@
 ---
 title: Copilot DAX query features
 description: Learn about Copilot features for writing and explaining DAX queries in DAX query view in Power BI Desktop.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

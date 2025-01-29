@@ -1,8 +1,8 @@
 ---
 title: "Constants in expressions in paginated reports"
 description: Learn about the literal text or predefined text of constants in expressions for your paginated reports in Power BI Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.date: 06/21/2023
 ms.service: powerbi

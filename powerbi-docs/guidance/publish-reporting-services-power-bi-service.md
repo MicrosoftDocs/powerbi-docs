@@ -4,8 +4,8 @@ description: "This article provides step-by-step instructions for migrating .rdl
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: cookiemccray
 ms.date: 04/11/2023
 ms.custom:

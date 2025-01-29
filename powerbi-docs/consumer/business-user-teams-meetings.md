@@ -1,8 +1,8 @@
 ---
 title: Use data to make meetings productive in Microsoft Teams
 description: Learn how to make meetings productive in Microsoft Teams using Power BI to add reports and share data.
-author: ajburnle
-ms.author: ajburnle
+author: kfollis
+ms.author: kfollis
 ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore

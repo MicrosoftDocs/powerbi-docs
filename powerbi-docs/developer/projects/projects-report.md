@@ -357,8 +357,6 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 PBIR is currently in **preview**. Keep the following in mind:
 
 - Service limitations/bugs
-  - Mobile views are not displayed in Power BI Apps.
-  - Hidden pages are exposed in Power BI Apps navigation.
   - Can't be deployed with deployment pipelines.  
   - Can't be saved as a copy.
   - Can't use Power BI Report APIs: [Clone Report](/rest/api/power-bi/reports/clone-report-in-group), [Update Report Content](/rest/api/power-bi/reports/update-report-content-in-group)

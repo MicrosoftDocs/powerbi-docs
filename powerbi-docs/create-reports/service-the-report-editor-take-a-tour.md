@@ -1,8 +1,8 @@
 ---
 title: Tour the Power BI report editor
 description: Learn how to use the report editor and design the reports your end users see in Power BI Desktop and the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.custom: video-removed
 ms.service: powerbi

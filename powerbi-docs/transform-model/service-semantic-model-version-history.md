@@ -93,7 +93,7 @@ The version history pane also shows an entry for the current version of the mode
 
 ## View audit logs and activity events 
 
-Power BI administrators can use the **Microsoft 365 Admin Center** to audit operations pertaining to editing data models in the web. The following tables shows which audit operations are supported for editing data models in the web:
+Power BI administrators can use the **Microsoft 365 Admin Center** to audit operations pertaining to restoring and saving versions in the semantic model version history. The following tables shows which audit operations are supported for semantic model version history:
 
 
 |Friendly name  |Operation name  |Notes  |
@@ -112,7 +112,7 @@ You can monitor the effect restoring to a previous version with version history 
 |---------|---------|---------|---------|
 |Web Modeling write     |A data model write operation in the semantic model web modeling user experience         |Semantic models|Interactive         |
 
-
+There is no additional charge for the storage used to capture versions in the semantic model version history for your models.
 
 ## Requirements and permissions
 
@@ -133,6 +133,7 @@ Semantic model version history is currently in preview. Keep the following in mi
 * Semantic model version history is subjected to the same limitations as [editing data models in the Power BI service](service-edit-data-models.md). 
 * Version history won't be captured for semantic models that haven't yet upgraded to [enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md). Additionally, if a model with the old metadata format is published over a model in the enhanced metadata format, all previously captured semantic model versions for that model will be deleted.
 * Moving a model between capacities will delete its version history.
+* You can't access versions in semantic model version history outside of the version history pane on the web. For full source control with greater flexibility and support for more versions, use [git integration](/fabric/cicd/git-integration/git-get-started), which can be used in combination with version history for the same semantic model. 
 * The data in your semantic model may become outdated after restoring to a previous version. To ensure you have the most recent data, complete a refresh after performing a restore. Refresh behavior may vary across storage modes. For example, Direct Lake models with [automatic updates](/fabric/get-started/direct-lake-overview#automatic-updates) configured will automatically update with the most recent data after a restore, without requiring you to manually initiate a refresh.
 * The semantic model must have [large semantic model storage format enabled](../enterprise/service-premium-large-models.md). Semantic models are automatically converted to large semantic model storage format the first time they're opened in Editing mode in the web or when opening a [Direct Lake model for live editing in Desktop](/fabric/get-started/direct-lake-power-bi-desktop#live-edit-a-semantic-model-in-direct-lake-mode). If a semantic model with versions captured in version history has the large semantic model storage format disabled in the model settings, all version history for this model will be deleted. A warning in the semantic model settings will notify you of this impact before you make the change:
   :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-12.png" alt-text="Screenshot showing a warning about deleting version history.":::  
