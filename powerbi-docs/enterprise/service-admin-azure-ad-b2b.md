@@ -26,7 +26,7 @@ This article provides a basic introduction to Microsoft Entra B2B in Power BI. F
 Make sure you enable the [Invite external users to your organization](/fabric/admin/service-admin-portal-export-sharing) feature in the Power BI admin portal before inviting guest users. Even when this option is enabled, the user must be granted the Guest Inviter role in Microsoft Entra ID to invite guest users.  
 
 > [!NOTE]
-> The [Invite external users to your organization](/fabric/admin/service-admin-portal-export-sharing) setting controls whether Power BI allows inviting external users to your organization. After an external user accepts the invite, they become a Microsoft Entra B2B guest user in your organization. They appear in people pickers throughout the Power BI experience. If the setting is disabled, existing guest users in your organization continue to have access to any items they already had access to and continue to be listed in people picker experiences. Additionally, if guests are added through the [planned invite](#planned-invites) approach they will also appear in people pickers. To prevent guest users from accessing Power BI, use a Microsoft Entra Conditional Access policy.
+> The [Invite external users to your organization](/fabric/admin/service-admin-portal-export-sharing) setting controls whether Power BI allows inviting external users to your organization. After an external user accepts the invite, they become a Microsoft Entra B2B guest user in your organization. They appear in people pickers throughout the Power BI experience. If the setting is disabled, existing guest users in your organization continue to have access to any items they already had access to and continue to be listed in people picker experiences. Additionally, if guests are added through the [planned invite](#planned-invites) approach they'll also appear in people pickers. To prevent guest users from accessing Power BI, use a Microsoft Entra Conditional Access policy.
 
 ## Who can you invite?
 
@@ -34,7 +34,7 @@ Most email addresses are supported for guest user invitations, including persona
 
 > [!NOTE]
 > In Microsoft Entra ID, external users can be set to UserType Member. In Power BI, support for UserType Member is currently in preview. Note the following:
-> * Microsoft Purview Information Protection is not supported for external members. Admins in the provider tenant are advised not to enable information protection for external members.
+> * Microsoft Purview Information Protection isn't supported for external members. Admins in the provider tenant are advised not to enable information protection for external members.
 >
 > In some situations, external members may see errors during their first sign-in attempt on the provider tenant. To unblock these external members, grant them permission to a Power BI item, such as a workspace, semantic model, or report, and then have them sign in again.
 
@@ -128,7 +128,7 @@ The following table lists the licensing requirements for B2B access to Power BI.
 > Pro Trial users can't invite guest users in Power BI. 
 
 ### Steps to address licensing requirements
-As noted above, the guest user must have the proper licensing in place to view the content that you shared. There are a few ways to make sure the user has a proper license: 
+As noted previously, the guest user must have the proper licensing in place to view the content that you shared. There are a few ways to make sure the user has a proper license: 
 * Use Power BI Premium capacity.
 * Assign a Power BI Pro or a Premium Per User (PPU) license.
 * Use a guest's Power BI Pro or PPU license.
@@ -174,7 +174,7 @@ There are some limitations to the B2B experience that you should be aware of:
 
 * On the Home page, the “From external orgs” tab won't list content shared from other clouds.
 
-* Cross-cloud sharing does not work when sharing with a security group. For instance, if a user using Power BI in a national cloud invites a security group from the public cloud or vice versa, access is not granted. This is because the service can't resolve the members of these groups across clouds.
+* Cross-cloud sharing doesn't work when sharing with a security group. For instance, if a user using Power BI in a national cloud invites a security group from the public cloud or vice versa, access isn't granted. This is because the service can't resolve the members of these groups across clouds.
 
 ## Admin Info for B2B Collaboration 
 
@@ -195,10 +195,7 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
 
 ## Considerations and Limitations
 
-* Information protection in Power BI doesn't support B2B and multi-tenant scenarios. This means that although external users may be able to see sensitivity labels in Power BI:
-    * They can't set labels
-    * [Mandatory](/fabric/governance/service-security-sensitivity-label-mandatory-label-policy) and [default label](/fabric/governance/service-security-sensitivity-label-default-label-policy) polices won't be enforced for them
-    * While they can view a report that has a label with protection settings, if they export data from that report to a file, they may not be able to open the file, as it has the Microsoft Entra permissions of the original organization that it got due to the label on the report.
+* Information protection: See [Sensitivity labels in Fabric and Power BI: Considerations and limitations](./service-security-sensitivity-label-overview.md#considerations-and-limitations).
 
 * Some experiences aren't available to guest users even when they have higher-level permissions. To update or publish reports, guest users need to use the Power BI service, including Get Data, to upload Power BI Desktop files. The following experiences aren't supported:
   * Direct publishing from Power BI desktop to the Power BI service
@@ -210,7 +207,7 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
   * Guest users can't be @mentioned in commenting
   * Guest users who use this capability should have a work or school account
 
-* Guest users using social identities will experience more limitations because of sign-in restrictions.
+* Guest users using social identities experience more limitations because of sign-in restrictions.
   * They can use consumption experiences in the Power BI service through a web browser
   * They can't use the Power BI Mobile apps
   * They won't be able to sign in where a work or school account is required

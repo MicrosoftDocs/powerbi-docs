@@ -1,8 +1,8 @@
 ---
 title: Enhance Q&A with Copilot for Power BI
 description: Learn how to leverage Copilot to improve the Q&A visual's ability to understand user questions by adding synonyms.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual

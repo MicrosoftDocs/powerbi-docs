@@ -1,8 +1,8 @@
 ---
 title: Monitor usage metrics in workspaces (preview)
 description: How to view, save, and use usage metrics for Power BI dashboards and reports in workspaces. 
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

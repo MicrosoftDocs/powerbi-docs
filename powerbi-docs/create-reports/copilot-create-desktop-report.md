@@ -1,8 +1,8 @@
 ---
 title: Create reports in Power BI Desktop with Copilot
 description: Using Copilot in Power BI Desktop, you can quickly create a Power BI report.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -5,8 +5,8 @@ ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Add data to tablix data region in a paginated report (Power BI Report Builder)

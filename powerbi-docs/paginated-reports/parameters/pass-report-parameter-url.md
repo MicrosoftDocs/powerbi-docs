@@ -5,8 +5,8 @@ ms.date: 01/25/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ---
 # Pass a report parameter within a URL for a Power BI paginated report
 

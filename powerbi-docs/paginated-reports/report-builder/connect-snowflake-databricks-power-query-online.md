@@ -5,8 +5,8 @@ ms.date: 05/22/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: nirusrin
 ---
 # Connect paginated reports to data sources using Power Query in Power BI Report Builder

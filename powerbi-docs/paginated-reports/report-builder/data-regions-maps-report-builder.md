@@ -7,8 +7,8 @@ ms.subservice: report-builder
 ms.topic: conceptual
 helpviewer_keywords: 
   - "data regions"
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: monaraya
 ---
 # Data regions and maps in a paginated report (Power BI Report Builder)

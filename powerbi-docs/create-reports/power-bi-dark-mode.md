@@ -1,8 +1,8 @@
 ---
 title: Dark mode in Power BI Desktop
 description: Learn how you can create reports in Power BI reports in different modes.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

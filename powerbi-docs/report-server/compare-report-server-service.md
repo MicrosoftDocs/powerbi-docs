@@ -1,8 +1,8 @@
 ---
 title: Compare Power BI Report Server and the Power BI service
 description: This article compares the features of Power BI Report Server and the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 keywords: 
 ms.topic: overview
 ms.service: powerbi
