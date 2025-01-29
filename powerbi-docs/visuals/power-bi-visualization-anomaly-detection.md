@@ -43,7 +43,7 @@ This experience  is highly customizable. You can format the anomaly's shape, siz
 
 ## Explanations
 
-Besides detecting anomalies, you can also automatically explain the anomalies in the data. When you select the anomaly, Power BI runs an analysis across fields in your data model to figure out possible explanations. It gives you a natural language explanation of the anomaly, and factors associated with that anomaly, sorted by its explanatory strength. In the following image, you can see that on August 30, Revenue was $5187, which is above the expected range of $2447 to $3423. You can open the cards in this pane to see more details of the explanation.
+Besides detecting anomalies, you can also automatically explain the anomalies in the data. When you select the anomaly, Power BI runs an analysis across fields in your data model to figure out possible explanations. It gives you a natural language explanation of the anomaly, and factors associated with that anomaly, sorted by its explanatory strength. In the following image, you can see that on August 30, Revenue was \\$5187, which is above the expected range of \\$2447 to \\$3423. You can open the cards in this pane to see more details of the explanation.
 
 :::image type="content" source="media/power-bi-visualization-anomaly-detection/view-explanations.gif" alt-text="Screenshot showing how to to view explanations.":::
 

@@ -75,7 +75,9 @@ Here's how to add a Power BI report or scorecard to a meeting.
 It's a good idea to review your data in Power BI before a meeting.
 
 1. Open the meeting from the calendar.
+
 1. Open the Power BI tab that has the report or scorecard.
+
 1. Review the report or scorecard.
 
 Consider setting a reminder for your meeting so attendees can also pre-read the data before the meeting. It helps everyone be aware of the latest data and improves the discussion during the meeting.
@@ -112,7 +114,7 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 
     :::image type="content" source="media/business-user-teams-meetings/power-bi-teams-chat-teams.png" alt-text="Screenshot of a Power B I report in a Teams meeting with the Share button highlighted.":::
 
-1. In the **Send link** dialog, enter a name or email address to activate the Send button and icons.
+1. In the **Send link** dialog, enter a name or email address to activate the Send button and icons for sharing.
 
     :::image type="content" source="media/business-user-teams-meetings/power-bi-teams-grant-access.png" alt-text="Screenshot of the Send link dialog with the Teams icon highlighted.":::
 
