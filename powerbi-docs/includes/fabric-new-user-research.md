@@ -4,10 +4,10 @@ description: Include file for the note about recruitment.
 author: mihart
 ms.author: liul
 ms.topic: include
-ms.date: 01/14/2025
+ms.date: 01/30/2025
 no-loc: [Copilot]
 ms.collection: 
 ---
 
 > [!NOTE]
-> Are you a new developer working with Fabric? Are you interested in sharing your getting started experience and helping us make improvements? We’d like to talk with you! [Sign up here if interested](https://aka.ms/FabricGettingStartedFeedbackDoc).
+> Are you a new developer working with Fabric? Are you interested in sharing your getting started experience and helping us make improvements? We’d like to talk with you! [Sign up here if interested](https://aka.ms/FabricGettingStartedFeedbackDoc?wt.mc_id=onboardingresearch_includes_content_cnl_learncomm).
