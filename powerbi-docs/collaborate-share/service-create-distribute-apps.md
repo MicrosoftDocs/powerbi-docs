@@ -369,6 +369,7 @@ This action uninstalls the app for everyone you've published it to, and they no 
 To maintain app reliability and performance here are some app, audience group, and access limits to consider:
 - You can create one app per workspace.
 - App publish and update operations have a timeout of 1 minute. If your app is running into timeout error during update, consider reducing the number of artifacts included in the app.
+- - **Note:** In some case the Power BI Support team may need to block update for large apps. Before blocking large app updates the Power BI Support team will reach out to customers and provide advanced notice with an opportunity to optimize the app before blocking updates. To optimize an app, please try: reducing the number of items in the app (consider moving some items to another workspace and in a separate app), convert your reports to a different format (pbip - https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview), consider use of org apps (https://learn.microsoft.com/en-us/power-bi/consumer/org-app-items/org-app-items). If update is blocked for your large app, you will see a message asking that you contact Power BI Support for help with optimizing your app and then unblocking update.
 - You can create up to 25 audience groups per app.
 - A total of 10,000 users and user groups combined can have access to an app.
 - Each user group is counted as one entry against the 10,000 total.
