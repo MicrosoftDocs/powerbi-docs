@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with org apps
 ms.topic: how-to
-ms.date: 10/14/2024
+ms.date: 01/30/2025
 ms.custom:
 LocalizationGroup: Share your work
 ---
