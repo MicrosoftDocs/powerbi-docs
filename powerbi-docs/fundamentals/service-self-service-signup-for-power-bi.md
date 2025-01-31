@@ -1,8 +1,8 @@
 ---
 title: Sign up or purchase the Power BI service as an individual
 description: Learn how to sign up for or purchase the Power BI service and begin using it for your individual data analysis and visualization needs.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

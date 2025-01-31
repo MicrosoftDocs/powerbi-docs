@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Get started creating in the Power BI service"
 description: Learn how to get started with the Power BI online service (app.powerbi.com) by following the steps in this tutorial.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

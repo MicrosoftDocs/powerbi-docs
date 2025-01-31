@@ -1,8 +1,8 @@
 ---
 title: Export reports to PDF
 description: Learn how to export a Power BI report to PDF.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.custom:  
 ms.reviewer: mibruhjell
 ms.service: powerbi

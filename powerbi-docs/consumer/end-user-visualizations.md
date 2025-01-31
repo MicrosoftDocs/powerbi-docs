@@ -1,9 +1,9 @@
 ---
 title: Working with visualizations (visuals) as a business user
 description: Learn about Power BI terms and concepts and the most common interactions with the visuals on dashboards, in reports, or in Q&A.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

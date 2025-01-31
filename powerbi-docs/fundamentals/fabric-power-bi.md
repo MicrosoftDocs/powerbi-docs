@@ -1,8 +1,8 @@
 ---
 title: "What is Power BI? What is Fabric?"
 description: "This overview describes two Microsoft products and how they work together. The two products are Microsoft Fabric and Microsoft Power BI."
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview  
