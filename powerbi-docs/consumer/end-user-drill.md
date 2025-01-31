@@ -1,9 +1,9 @@
 ---
 title: Drill mode in the Power BI service
 description: Learn how to drill down, drill up, and expand by using the drill feature in a visual in the Microsoft Power BI service.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

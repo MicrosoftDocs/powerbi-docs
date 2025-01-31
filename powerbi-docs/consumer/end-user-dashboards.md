@@ -1,9 +1,9 @@
 ---
 title: Dashboards for business users of the Power BI service
 description: A dashboard is a single page canvas that contains the most important elements of data. Learn the advantages of dashboards and how they differ from reports.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with dashboards

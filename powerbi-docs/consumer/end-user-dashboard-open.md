@@ -1,9 +1,9 @@
 ---
 title: View a Power BI dashboard
 description: Learn how to open and view a Power BI dashboard to highlight specific information from the underlying reports and semantic models.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
