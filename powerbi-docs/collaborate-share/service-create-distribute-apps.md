@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 # Publish an app in Power BI
 
-In Power BI, you can create official packaged content then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. The finished app can be published to large groups of people in your organization. The [app user view](#app-user-view) section of this article outlines the app user's experience in the Power BI service and in the Power BI mobile apps.
+In Power BI, you can create official packaged content and distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. The finished app can be published to large groups of people in your organization. The [app user view](#app-user-view) section of this article outlines the app user's experience in the Power BI service and in the Power BI mobile apps.
 
 :::image type="content" source="media/service-create-distribute-apps/power-bi-apps.png" alt-text="Screenshot of Power BI Apps." lightbox="media/service-create-distribute-apps/power-bi-apps.png":::
 
