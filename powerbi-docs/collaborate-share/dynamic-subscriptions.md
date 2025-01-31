@@ -1,8 +1,8 @@
 ---
 title: Create a dynamic subscription for a paginated report 
 description: Learn how to create per-recipient subscriptions for paginated reports based on parameters that you select.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: mibruhje
 featuredvideoid: 
 ms.service: powerbi

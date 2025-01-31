@@ -1,9 +1,9 @@
 ---
 title: Personalize visuals in a report
 description: Learn how to create, share, and bookmark your own view of a Power BI report visual, without actually altering it.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

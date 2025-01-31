@@ -3,7 +3,7 @@ title: Key Performance Indicator (KPI) visuals
 description: Create Key Performance Indicator (KPI) visuals in Power BI. 
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'mihart'
+ms.reviewer: 'kfollis'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals

@@ -1,8 +1,8 @@
 ---
 title: Ten tips for getting help with your Power BI questions
 description: Ten tips for help with Power BI and see the answers the experts follow when asking Power BI questions.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting

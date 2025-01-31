@@ -1,7 +1,7 @@
 ---
 title: Include file for recruiting new developer users of Fabric
 description: Include file for the note about recruitment.
-author: mihart
+author: kfollis
 ms.author: liul
 ms.topic: include
 ms.date: 01/30/2025
