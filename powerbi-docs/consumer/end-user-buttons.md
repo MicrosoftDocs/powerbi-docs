@@ -1,9 +1,9 @@
 ---
 title: Learn how buttons work in the Power BI service
 description: Learn how to recognize buttons to launch actions including in-report navigation, drill through, and cross-report drill through.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

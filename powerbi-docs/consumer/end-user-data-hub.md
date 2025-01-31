@@ -1,8 +1,8 @@
 ---
 title: Semantic model discovery for business users using the OneLake data hub
 description: Learn how you can find, explore, and use the semantic models and datamarts and their related reports in your organization.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Discover data items
