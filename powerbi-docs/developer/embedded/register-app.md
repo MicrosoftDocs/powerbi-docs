@@ -3,7 +3,7 @@ title: Register a Power BI Embedded app
 description: Set up Power BI Embedded to register a Microsoft Entra app, create a workspace, import content, grant permissions.
 author: mberdugo
 ms.author: monaberdugo
-ms.date: 01/16/2025
+ms.date: 02/02/2025
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -15,9 +15,7 @@ ms.custom: intro-overview
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
-If you want to start using Power BI Embedded to share your reports with others, use the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup) to get started. This article shows you how.
-
-To use Power BI embedded analytics, you need to register a Microsoft Entra application in Azure. The Microsoft Entra app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
+This article shows you how to start using Power BI Embedded to share your reports with others. To use Power BI embedded analytics, you need to register a Microsoft Entra application in Azure. The Microsoft Entra app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
 
 ## Prerequisite
 
