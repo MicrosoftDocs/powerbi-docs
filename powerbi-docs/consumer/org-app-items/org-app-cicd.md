@@ -36,7 +36,7 @@ The definition file is divided into two sections:
 - Static settings: describe the app's external appearance, such as the theme, logo, and experience settings.
 - Elements: describe the app's internal structure.
   - Section elements: Container elements that have their own collection of Org apps
-  - Item elements: Power BI items. During Git export or import, ItemLogicalId and FolderObjectId properties are remapped..
+  - Item elements: Power BI items.
 
 The following diagram shows the structure of the org app.
 
@@ -115,8 +115,6 @@ The following JSON code is an example of the `definition.json` file for an org a
 You can use Fabric deployment pipeline to deploy your org app across different environments, such as development, test, and production. And you can use deployment rules to customize the org app.
 
 To learn how to use deployment pipelines, see [Introduction to deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines).
-
-## Considerations and limitations
 
 ## Related content
 
