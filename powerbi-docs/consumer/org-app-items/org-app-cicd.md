@@ -118,6 +118,5 @@ To learn how to use deployment pipelines, see [Introduction to deployment pipeli
 
 ## Related content
 
+- [Get started with Org Apps](./org-app-items.md)
 - [Introduction to the CI/CD process as part of application lifecycle management (ALM) in Microsoft Fabric](/fabric/cicd/cicd-overview)
-- [Introduction to Git integration](/fabric/cicd/git-integration/intro-to-git-integration)
-- [Introduction to deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)
