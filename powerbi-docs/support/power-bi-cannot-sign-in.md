@@ -1,8 +1,8 @@
 ---
 title: Resolve sign-in issues or reset your password for Power BI
 description: Help to unblock users who are unable to sign in to Power BI and need to reset a password or contact support.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

@@ -1,8 +1,8 @@
 ---
 title: Create a dynamic subscription for a Power BI report 
 description: Learn how to create per-recipient report subscriptions based on filters that you select.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: mibruhje
 featuredvideoid: 
 ms.service: powerbi

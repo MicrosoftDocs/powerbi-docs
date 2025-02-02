@@ -3,7 +3,7 @@ title: Feature availability for Free users in Power BI service
 description: Detailed explanation and comprehensive chart showing features available to consumers and Free users in the Power BI service.
 author: haydnr
 ms.author: haydnr
-ms.reviewer:  mihart
+ms.reviewer:  kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: concept-article
