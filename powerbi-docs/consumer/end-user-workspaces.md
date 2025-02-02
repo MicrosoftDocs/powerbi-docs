@@ -1,8 +1,8 @@
 ---
 title: How content is organized in workspaces
 description: Learn about the types of Power BI workspaces and which permissions and licensing you need to access them.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore

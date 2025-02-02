@@ -2,9 +2,9 @@
 metadata:
   title: Frequently asked end-user questions in Power BI
   description: Browse a list of frequently asked questions and answers about the Power BI service and the Power BI mobile apps.
-  author: mihart
-  ms.author: mihart
-  ms.reviewer: mihart
+  author: kfollis
+  ms.author: kfollis
+  ms.reviewer: kfollis
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: faq
