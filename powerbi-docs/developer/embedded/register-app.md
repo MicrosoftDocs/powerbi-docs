@@ -33,7 +33,7 @@ Before you can register your app, decide which of the following solutions best s
 
 ### Embed for your customers
 
-Use the [embed-for-your-customers](embed-sample-for-customers.md) solution, also known as *app owns data*, if you create an app that's designed for your customers. Users don't need to sign in to Power BI or have a Power BI license to use your app. Your app authenticates against Power BI by using either a **master user** account (a Power BI Pro license used for signing in to Power BI) or a [service principal](embed-service-principal.md).
+Use the [embed-for-your-customers](embed-sample-for-customers.md) solution, also known as *app owns data*, if you create an app designed for your customers. Users don't need to sign in to Power BI or have a Power BI license to use your app. Your app authenticates against Power BI by using either a **master user** account (a Power BI Pro license used for signing in to Power BI) or a [service principal](embed-service-principal.md).
 
 The embed-for-your-customers solution is usually used by independent software vendors (ISVs) and developers who create applications for a third party.
 
@@ -47,7 +47,7 @@ For more about the two solutions, see [What are the Power BI embedded analytics 
 
 ## Register your app
 
-Use the following procedure in this section to register a Microsoft Entra app. But take these steps only if you're creating one of the following solutions:
+To register a Microsoft Entra app, use the following procedure in this section. Take these steps only if you're creating one of the following solutions:
 
 * An embed-for-your-organization application
 * An embed-for-your-customers application with a *service principal*
