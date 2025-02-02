@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 02/04/2024
+ms.date: 02/02/2025
 #customer intent: As a developer, I want to learn how to incorporate Q&A into my application using Power BI embedded analytics so I can write more interactive applications.
 ---
 
@@ -96,6 +96,6 @@ Create an embed token from a semantic model to start a Q&A part. For more inform
 
 ## Related content
 
-[Try out Q&A embedding with the JavaScript embed ](https://microsoft.github.io/PowerBI-JavaScript/demo/)
+[Try out the Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
