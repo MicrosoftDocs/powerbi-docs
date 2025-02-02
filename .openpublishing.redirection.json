@@ -6415,6 +6415,11 @@
             "source_path": "powerbi-docs/create-reports/filters-copilot.md",
             "redirect_url": "/power-bi/create-reports/service-the-report-editor-take-a-tour",
             "redirect_document_id": false
-        }   
+        },
+        {
+            "source_path": "powerbi-docs/developer/visuals/scanner-api.md",
+            "redirect_url": "/power-bi/developer",
+            "redirect_document_id": false
+        }  
   ]
 }
