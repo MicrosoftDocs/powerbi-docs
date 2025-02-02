@@ -1,8 +1,8 @@
 ---
 title: Set featured tables in Power BI Desktop to appear in Excel
 description: Learn how to create featured tables in Power BI Desktop so they show up in the Excel Organization Data Types Gallery. 
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

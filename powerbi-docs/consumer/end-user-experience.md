@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: tutorial
-ms.date: 08/25/2024
+ms.date: 01/06/2025
 ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: Get started
 #Customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently.
@@ -40,11 +40,11 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
 
 1. Open a Power BI sample. From the navigation pane, select the **Learn** icon :::image type="content" source="media/end-user-experience/power-bi-learn-icon.png" alt-text="Screenshot of the Learn icon."::: and in the **Learning center**, scroll down to **Sample reports**. Select the right arrow until you get to **Sales and Marketing Sample**. Select the sample to open it.  
 
-   :::image type="content" source="media/end-user-experience/power-bi-sample-list.png" alt-text="Screenshot shows the sample reports on the Learn page.":::
+   :::image type="content" source="media/end-user-experience/power-bi-samples-list.png" alt-text="Screenshot shows the sample reports on the Learn page.":::
 
 1. The Power BI service installs the sample in **My workspace**, your private sandbox for learning and experimenting. Only you can see your workspace. Select **My workspace** to see details about this sample.
 
-    :::image type="content" source="./media/end-user-experience/power-bi-my-workspace-files.png" alt-text="Screenshot shows the Power BI screen with a red border around My workspace.":::
+    :::image type="content" source="./media/end-user-experience/power-bi-my-workspace-file.png" alt-text="Screenshot shows the Power BI screen with a red border around My workspace.":::
 
     The sample includes one report, one dashboard, and one semantic model. Most content shared with business users doesn't include direct access to the underlying semantic models, but the samples, which are designed for all users, include semantic models.
 
@@ -73,7 +73,7 @@ A dashboard is a single page that shows visualizations of the most important ele
 
 1. The dashboard opens in the Power BI service. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md).
 
-    ![Dashboards open](./media/end-user-experience/power-bi-dash-open.png)
+    ![Dashboards open](./media/end-user-experience/power-bi-dash-opens.png)
 
 2. The actions you can take on a dashboard are displayed in the top menu bar. Select **More options (...)** to see the complete list.   
 
@@ -101,7 +101,7 @@ The nav pane becomes more useful as colleagues share content with you. In this s
 
 The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. **Home** is a great starting point for viewing and navigating to your content. **Home** bring together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards on your Home canvas, but that changes as you start to use Power BI with your colleagues.
 
-![Screenshot of a full Home.](./media/end-user-experience/power-bi-full-home.png)
+![Screenshot of a full Home.](./media/end-user-experience/power-bi-all-home.png)
 
 To learn more, see [Power BI Home.](end-user-home.md)
 
@@ -111,7 +111,7 @@ To learn more, see [Power BI Home.](end-user-home.md)
 
 See your full list of favorites, recent, and shared content by selecting **Browse** on the nav pane. Here you find content lists that provide details about reports, apps, and dashboards.
 
-:::image type="content" source="./media/end-user-experience/power-bi-browse.png" alt-text="Screenshot of the Browse page on the navigation pane.":::
+:::image type="content" source="./media/end-user-experience/power-bi-browses.png" alt-text="Screenshot of the Browse page on the navigation pane.":::
 
 *Recent* content is the last reports, dashboards, apps, and other Power BI content that you've visited. For more information about tagging content as a *favorite*, see [Favorites](end-user-favorite.md) and for more information about how content is shared by colleagues, see [Shared with me](../collaborate-share/end-user-shared-with-me.md).
 
@@ -147,7 +147,7 @@ There are also many ways to sort content. Hover over column headers and look for
 
 Or, look for the search **Filters** near the upper right corner of your content lists. Find content quickly by filtering categories, like type of content or owner.  
 
-:::image type="content" source="./media/end-user-experience/power-bi-filter.png" alt-text="Screenshot showing a search filter for content lists.":::
+:::image type="content" source="./media/end-user-experience/power-bi-filters.png" alt-text="Screenshot showing a search filter for content lists.":::
 
 For more information, see [Navigation for Power BI business users: global search](end-user-search-sort.md).
 
@@ -155,7 +155,7 @@ For more information, see [Navigation for Power BI business users: global search
 
 Let's end this tutorial with a helpful tip. If you have questions about a dashboard, report, app, or other content--you can look up the owner or contact email. With the content open, select the title menu to display the owner's contact link. The owner or contact may be a person or a group.
 
-:::image type="content" source="./media/end-user-experience/power-bi-owner.png" alt-text="Screenshot showing the title menu where contact information is.":::
+:::image type="content" source="./media/end-user-experience/power-bi-owners.png" alt-text="Screenshot showing the title menu where contact information is.":::
 
 ## Clean up resources
 You can now delete the sample report, dashboard, and semantic model from your **My workspace** if you wish.   
@@ -164,7 +164,7 @@ You can now delete the sample report, dashboard, and semantic model from your **
 
 3. Hover over the report and select **More options (...)** > **Delete**. Repeat to remove the dashboard and semantic model.
 
-   :::image type="content" source="./media/end-user-experience/power-bi-delete.png" alt-text="Screenshot showing the more options dropdown on the My workspace page.":::
+   :::image type="content" source="./media/end-user-experience/power-bi-deletes.png" alt-text="Screenshot showing the more options dropdown on the My workspace page.":::
 
 ## Related content
 

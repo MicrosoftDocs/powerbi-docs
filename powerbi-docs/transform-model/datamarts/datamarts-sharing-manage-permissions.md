@@ -31,7 +31,7 @@ There are a few ways to share a datamart, described in the following sections.
 
 While in the workspace, select the **Share** option from the datamart’s context menu, as shown in the following image.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-01.png" alt-text="Screenshot of sharing a datamart from a workspace." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-01.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-01-b.png" alt-text="Screenshot of sharing a datamart from a workspace." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-01-b.png":::
 
 ### Share from the data hub
 
@@ -39,7 +39,7 @@ To share a datamart from the data hub, select **Share** from the datamart’s co
 
 The following image shows selecting the context menu from within the data hub, and selecting **Share**.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-02.png" alt-text="Screenshot of sharing a datamart from the data hub." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-02.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-02-b.png" alt-text="Screenshot of sharing a datamart from the data hub." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-02-b.png":::
 
 ### Share from datamart information page
 
@@ -77,7 +77,7 @@ Users can build reports with the datamart or use Analyze in Excel, and can also 
 
 The following image highlights the **Create a report** entry point in a datamart information window.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05.png" alt-text="Screenshot of Create a report for a datamart." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05-b.png" alt-text="Screenshot of Create a report for a datamart." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05-b.png":::
 
 > [!NOTE]
 > Sharing a datamart allows the recipient to access the datamart for downstream consumption and not to collaborate on the datamart creation. To enable other creators to collaborate on the datamart, you must provide Member, Admin or Contributor access to the workspace where the datamart is created.  
@@ -88,15 +88,15 @@ The Manage permissions page shows the list of users who have been given access b
 
 If you're an Admin or Member, go to your workspace and select **More options** which shows the context menu and select **Manage permissions**.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-08.png" alt-text="Screenshot of selecting Manage Permissions from the workspace context menu." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-08.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-08-b.png" alt-text="Screenshot of selecting Manage Permissions from the workspace context menu." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-08-b.png":::
 
 For users who were provided workspace roles, it shows the corresponding user, workspace role, and permissions. Admin and Members have **Read**, **Write**, and **Reshare** access to datamarts in this workspace. Contributors have **Read** and **Write** permissions. Viewers have **Read** permissions and can query all objects within the datamart. For users with whom a datamart was shared, item permissions such as **Read** and **Reshare** are provided by default.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-09.png" alt-text="Screenshot of the datamart Manage Permissions page." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-09.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-09-b.png" alt-text="Screenshot of the datamart Manage Permissions page." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-09-b.png":::
 
 You can choose to add or remove permissions using the **Manage permissions** experience. **Remove reshare** removes the *Reshare* permissions. **Remove access** removes all item permissions and stops sharing the datamart with the specified user.
 
-:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10.png" alt-text="Screenshot of the Remove reshare permission selected from the datamart Manage Permissions page." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10.png":::
+:::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10-b.png" alt-text="Screenshot of the Remove reshare permission selected from the datamart Manage Permissions page." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10-b.png":::
 
 ## Related content
 

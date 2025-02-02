@@ -1,8 +1,8 @@
 ---
 title: Power BI Report Builder change log
 description: In this article, you learn about new features and functionality in Power BI paginated reports for the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

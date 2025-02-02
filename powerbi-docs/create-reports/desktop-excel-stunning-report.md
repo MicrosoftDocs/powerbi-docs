@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: From Excel workbook to stunning report in Power BI Desktop"
 description: This tutorial shows how you can quickly create a stunning report from an Excel workbook.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

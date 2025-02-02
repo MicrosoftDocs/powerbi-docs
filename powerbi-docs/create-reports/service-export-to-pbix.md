@@ -1,8 +1,8 @@
 ---
 title: Download a report from the Power BI service to Power BI Desktop
 description: Download a report from the Power BI service to a Power BI Desktop file
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

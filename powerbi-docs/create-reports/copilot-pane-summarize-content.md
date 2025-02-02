@@ -1,8 +1,8 @@
 ---
 title: Summarize a report page in the Copilot pane  
 description: Even if you don't have permission to edit a Power BI report, Copilot can still create a summary for you in the Copilot pane.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

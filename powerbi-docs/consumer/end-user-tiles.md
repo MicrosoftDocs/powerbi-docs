@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Dashboard tiles in Power BI
 ms.topic: how-to
-ms.date: 06/06/2023
+ms.date: 01/06/2025
 LocalizationGroup: Dashboards
 ---
 
@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 A tile is a snapshot of your data, pinned to a dashboard by a *designer*. *Designers* can create tiles from a report, semantic model, dashboard, the Power BI Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more. This screenshot shows many different tiles pinned to a dashboard.
 
-:::image type="content" source="./media/end-user-tiles/power-bi-dashboard-new.png" alt-text="Screenshot of a Power BI dashboard with several tiles.":::
+:::image type="content" source="./media/end-user-tiles/power-bi-dashboards.png" alt-text="Screenshot of a Power BI dashboard with several tiles.":::
 
 Besides tiles pinned from reports, *designers* can add standalone tiles directly on the dashboard using **Add tile**. Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
@@ -58,6 +58,7 @@ When you select a tile, what happens next depends on how the tile was created an
   - The report that was used to create the visualization wasn't saved, or has been deleted.
   - The tile was created from a workbook in Excel Online, and you don't have at least Read permissions for that workbook.
   - If the tile is created from SSRS, and you don't have permission to access the SSRS report. Or, if you don't have access to the network where the SSRS server is located.
+- If you are the creator of the dashboard, you can rearrange the tiles. As a viewer of a dashboard, you can't rearrange the tiles. To have tiles rearranged, contact the dashboard creator. 
 - For tiles created directly on the dashboard using **Add tile**, if a custom hyperlink has been set, selecting the title, subtitle, or tile opens that URL. Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
 - If the original visualization used to create the tile changes, the tile doesn't change. For example, if the *designer* pinned a line chart from a report and then changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
 - If a workspace is moved to Premium capacity, the existing dashboard refresh cache doesn't move with the workspace. The new cache is created the first time a user visits the dashboard in the new Premium capacity. After that, every data refresh will refresh the cache and update the data.

@@ -1,14 +1,14 @@
 ---
 title: Monitor usage metrics in workspaces (preview)
 description: How to view, save, and use usage metrics for Power BI dashboards and reports in workspaces. 
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 09/17/2024
+ms.date: 01/14/2025
 LocalizationGroup: Dashboards
 ---
 
@@ -64,9 +64,9 @@ When you first launch the usage metrics report, Power BI automatically creates a
 
 You may need to resume scheduled refresh if one of the following occurs:
 
-- The credentials expire
-- You removed the user who first launched the usage metrics report from the workspace where the semantic model resides
-- The user who first launched the usage metrics report leaves or is no longer a part of the organization
+- The credentials expire.
+- You removed the user who first launched the usage metrics report from the workspace where the semantic model resides.
+- The user who first launched the usage metrics report leaves or is no longer a part of the organization.
 
 > [!NOTE]
 > While still in preview, the usage metrics semantic model may have minor changes which affect custom reports.  
@@ -329,7 +329,6 @@ In addition to the above differences between previous and improved usage metrics
 - If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
 - If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) and **Block Public Internet Access** in Power BI, the refresh for the semantic model will fail and the usage metrics report won't show any data.
 - In order to create and refresh the usage metrics report, the user is required to authenticate to enable the backend API calls to extract the tenant telemetry. For privacy reasons, guest users aren't allowed this authentication. This authentication is only allowed for members of the tenant.
-- Page views that are made from mobile devices aren't shown in the usage metrics report.
 - Duplicate reports with different Report ObjectIds in the usage metrics report can show up for the following scenarios:
     - Reports have been deleted and re-created with the same name
        - If a report has been deleted and then re-created with the same name, it continues to show up in the filters for the usage metrics report.
@@ -397,7 +396,7 @@ The typical report opening time corresponds to the 50th percentile of the time i
 The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. You can change the time period by using the Date slicer on the Report performance page, such as to calculate week-over-week or biweekly trends.
 
 #### **There are four reports in the previous version of the usage metrics report, but the improved version only displays three.**
-The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
+The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. You can update it to cover only the past 30 days, if you want. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
 
 ## Troubleshoot refresh issues
 

@@ -5,8 +5,8 @@ ms.date: 07/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: joshger
 ---
 # Set time-out values for paginated report dataset processing (Power BI Report Builder)

@@ -1,8 +1,8 @@
 ---
 title: "Updates to the experience in the Power BI service"
 description: Learn about changes coming to the Power BI online service (app.powerbi.com).
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: 'kdholakia'
 ms.service: powerbi
 ms.search.form: product-power-bi
@@ -94,7 +94,7 @@ The **Pick a published semantic model** option opens the **OneLake data hub** so
 
 :::image type="content" source="../create-reports/media/service-experience-changes/experience-choose-published-data.png" alt-text="Screenshot that shows available semantic models in the OneLake data hub in the Power BI service." border="false":::
 
-The [Get started creating in the Power BI service](service-get-started.md#step-1-add-data-to-create-a-report) tutorial describes another way to load data into the Power BI service.
+The [Get started creating in the Power BI service](service-get-started.md#add-data-to-create-a-report) tutorial describes another way to load data into the Power BI service.
 
 ## Related content
 

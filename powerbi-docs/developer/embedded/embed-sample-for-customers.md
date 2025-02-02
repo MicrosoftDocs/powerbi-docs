@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/21/2024
+ms.date: 01/06/2025
 #customer intent: As a developer, I want to learn how to embed Power BI content into my application, so that I can provide my users with interactive reports, dashboards, and tiles.
 ---
 
@@ -176,6 +176,9 @@ Registering your application with Microsoft Entra ID allows you to:
 ## Step 4 - Create and publish a Power BI report
 
 [!INCLUDE[Create a Power BI report](../../includes/embed-tutorial-create-report.md)]
+
+> [!NOTE]
+> If your report uses a Direct Lake semantic model, make sure review these [limitations](#considerations-and-limitations).
 
 ## Step 5 - Get the embedding parameter values
 
@@ -517,6 +520,14 @@ Try out the [Power BI embedded analytics playground](./power-bi-playground.md) t
 
 > [!IMPORTANT]
 > If you used free embed trial tokens for development, you must buy a capacity for production. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
+
+## Considerations and limitations
+
+The following limitations apply for Direct Lake mode:
+
+* Requires a [V2 embed token](./generate-embed-token.md).
+* If you're using a service principal, you need a [Fixed Identity](/fabric/get-started/direct-lake-fixed-identity) connection (No-SSO).
+* Currently, setting a [service principal](./embed-service-principal.md) as the authentication method on a [Fixed Identity](/fabric/get-started/direct-lake-fixed-identity) connection is the only option supported through automation. Other methods are supported manually through the portal.
 
 ## Related content
 

@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 01/08/2025
+ms.date: 02/02/2025
 #customer intent: As a developer, I want to learn how to integrate or embed a Power BI paginated report into an embedded analytics application.
 ---
 
