@@ -168,7 +168,7 @@ For more information on embedding tokens, see [Embedded analytics access tokens]
 ---
 
 * Paginated reports don't support client-side events (like `loaded` or `rendered`).
-* Paginated reports don't support client-side setAccessToken API (you can not update acccess token without reloading the report).
+* Paginated reports don't support client-side setAccessToken API (you cannot update access token without reloading the report).
 * Embedding paginated reports with a real-time dataset (push dataset) is not supported.
 
 ## Related content
