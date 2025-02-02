@@ -204,7 +204,7 @@ When you *embed for your organization*, to allow Microsoft Entra guest users acc
 
 To find your tenant ID, you can use the instructions in [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
-For more information, see [Making your application multi-tenant](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant).
+For more information, see [Making your application multitenant](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant).
 
 ## Data sources
 
