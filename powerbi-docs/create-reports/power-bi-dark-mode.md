@@ -61,7 +61,7 @@ Try the different modes and see which you prefer.
 
 ## Considerations and limitations
 
-Collapsing of the **Power Query** editor ribbon is not currently available in Dark mode or new Light mode.
+Collapsing of the **Power Query** editor ribbon is not currently available in Dark mode or Light mode.
 
 
 ## Related content
