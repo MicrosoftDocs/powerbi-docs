@@ -18,7 +18,7 @@
     items: 
     - name: "Create a Microsoft Entra tenant"
       href: create-an-azure-active-directory-tenant.md
-    - name: "Power BI app registration tool"
+    - name: "Register a Power BI app"
       href: register-app.md
     - name: "Configure credentials"
       href: configure-credentials.md    
@@ -150,8 +150,6 @@
       href: dev-camp-links.md    
     - name: "Developer center"
       href: https://powerbi.microsoft.com/en-us/developers/
-    - name: "Embedding setup tool"
-      href: https://aka.ms/embedsetup
     - name: "Embedded analytics playground"
       href: https://go.microsoft.com/fwlink/?linkid=848279
     - name: "Power BI embedded analytics Client APIs"
