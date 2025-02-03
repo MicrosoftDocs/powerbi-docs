@@ -21,7 +21,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 
 ## January 2025 QFE 3
 
-*Version 2.139.2054.0 , Released: January 29, 2025*
+*Version 2.139.2054.0, Released: January 29, 2025*
 
 Bug fixes/improvements:
 
@@ -30,7 +30,7 @@ Bug fixes/improvements:
 
 ## January 2025 QFE 2 
 
-*Version 2.139.1733.0 , Released: January 24, 2025*
+*Version 2.139.1733.0, Released: January 24, 2025*
 
 Bug fixes/improvements:
 
@@ -73,7 +73,7 @@ Bug fixes/improvements:
 * Diagnostic telemetry to capture logs related to the broken data view and visuals issue, when a user changes the column format or aggregation
 * Disabled *Inline Sparkline Measure* since it broke previously created reports that used calculation groups with sparklines
 * Fixed an issue preventing users from connecting to SAP HANA due to a *Non-null assertion failure: queryName* error
-* Removed telemetry service suspend for Power BI Desktop applications, and introduced configuration for page visibility service
+* Removed telemetry service suspends for Power BI Desktop applications, and introduced configuration for page visibility service
 * Fixed the endless retry of the V2 client-side copilot orchestrator and added a limit to the number of retries
 * Fixed an issue where Q&A tooling was broken due to improper error handling
 
@@ -163,7 +163,7 @@ Bug fixes/improvements:
 
 ## April 2024 QFE 3
 
-*Version : 2.128.1380.0, Released: May 02 , 2024*
+*Version: 2.128.1380.0, Released: May 02, 2024*
 
 Bug fixes/improvements:
 
@@ -175,7 +175,7 @@ Bug fixes/improvements:
 
 ## April 2024 QFE 2
  
-*Version 2.128.1177.0: , Released: April 24 , 2024*
+*Version 2.128.1177.0: , Released: April 24, 2024*
 
 Bug fixes/improvements:
 
@@ -213,8 +213,8 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 
-* Fix for DataGrid copy to clipboard :  Fixed issue of "Copy Table" not working in datagrid view of Power BI Desktop
-* Bug fixes for the DAX inline Copilot:  Fixed issue where invalid DAX query banner shows up unexpectedly in some cases. Prevents cancel button from being stuck when pressed too early. Prevents stale user input from showing when signing in again
+* Fix for DataGrid copy to clipboard:  Fixed issue of "Copy Table" not working in datagrid view of Power BI Desktop
+* Bug fixes for the DAX inline Copilot:  Fixed issue where invalid DAX query banner shows up unexpectedly in some cases. Prevents **Cancel** button from being stuck when pressed too early. Prevents stale user input from showing when signing in again
 
 
 ## February 2024 QFE 1
@@ -322,7 +322,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 
-* Fix to large models. Now customers would be able to see relationships lines in Model View. Template files with multiple queries now load faster.
+* Fix too large models. Now customers would be able to see relationships lines in Model View. Template files with multiple queries now load faster.
 
 
 ## July 2023 QFE 1
@@ -496,7 +496,7 @@ Bug fixes/improvements:
 - Data view regression fix: now list of filters in context menu will be displayed even when menu icons aren't in focus. 
 - EvaluateAndLog  DAX function fix: now the function works as expected and won't return an error. 
 - SAP HANA regression fixes: now power query won't show "the index is outside the bounds of the records" error message and there won't be missing values for columns when using Cube.AttributeMemberID on the query.  
-- Roll back change for cashing: cashing will be done the same way as in previous releases
+- Roll back change for cashing: cashing is done the same way as in previous releases
 - Formula bar fixes for cases when **Shift+Enter** is used. 
 - “Apply/discard changes” regression fix.
 
@@ -518,8 +518,8 @@ Bug fixes/improvements:
 *Version: 2.107.841.0, Released: July 21, 2022*
 
 Bug fixes/improvements:
-- Fix for SAP BW: now customers will be able to retrieve a full semantic model when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc.) even if the data exceeds the page size.
-- Fix for SAP HANA: now when creating new connections or refreshing data, a display name will be shown instead of a technical column name in the fields well.
+- Fix for SAP BW: now customers are able to retrieve a full semantic model when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc.) even if the data exceeds the page size.
+- Fix for SAP HANA: now when creating new connections or refreshing data, a display name is shown instead of a technical column name in the fields well.
 
 
 ## June 2022 QFE 1
