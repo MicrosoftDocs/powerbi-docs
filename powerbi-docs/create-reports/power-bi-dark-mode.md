@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/29/2024
+ms.date: 01/03/2025
 LocalizationGroup: Create reports
 ---
 #  Dark mode in Power BI Desktop
@@ -41,6 +41,10 @@ There's a mode for every window in Power BI Desktop. For example, for dark mode:
 
 :::image type="content" source="media/power-bi-dark-mode/dark-mode-report-view.png" alt-text="Screenshot of Dark mode for report view." lightbox="media/power-bi-dark-mode/dark-mode-report-view.png":::
 
+> [!NOTE]
+> Dark mode is not applied to the Report view Canvas, including the Filter Pane and Wallpaper.
+
+
 ## Model view
 
 :::image type="content" source="media/power-bi-dark-mode/dark-mode-model-view.png" alt-text="Screenshot of Dark mode for model view." lightbox="media/power-bi-dark-mode/dark-mode-model-view.png":::
@@ -54,6 +58,11 @@ There's a mode for every window in Power BI Desktop. For example, for dark mode:
 :::image type="content" source="media/power-bi-dark-mode/dark-mode-dax-query-view.png" alt-text="Screenshot of Dark mode for DAX query view." lightbox="media/power-bi-dark-mode/dark-mode-dax-query-view.png":::
 
 Try the different modes and see which you prefer.
+
+## Considerations and limitations
+
+Collapsing of the **Power Query** editor ribbon is not currently available in Dark mode or Light mode.
+
 
 ## Related content
 

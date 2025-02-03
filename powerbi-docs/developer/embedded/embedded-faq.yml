@@ -365,36 +365,25 @@ sections:
         answer: |
           There's no special Azure pricing for non-profit and educational entities.
           
-  - name: Embedding setup tool
+  - name: Set up environment
     questions:
       - question: |
           What is the Embedding setup tool?
         answer: |
-          The [Embedding setup tool](https://app.powerbi.com/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
+          The Embedding setup tool was a tool that allowed you to quickly register and download a sample application to begin embedding with Power BI. This tool has been retired. To register an app see [Register an app](register-app.md).
           
       - question: |
           Which solution should I choose?
         answer: |
-          * [Embedding for your customers](embedded-analytics-power-bi.md#embed-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your customers* solution.
-          * [Embedding for your organization](embedded-analytics-power-bi.md#embed-for-your-organization) allows you to extend the Power BI service. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your organization* solution.
-          
-      - question: |
-          I've downloaded the sample app, which solution do I choose?
-        answer: |
-          If you're working with the **Embed for your customers** experience, save and unzip the `PowerBI-Developer-Samples.zip` file. Then open the `PowerBI-Developer-Samples-master\App Owns Data` folder and run the `PowerBIEmbedded_AppOwnsData.sln` file.
-          
-          If you're working with the **Embed for your organization** experience, save and unzip the `PowerBI-Developer-Samples.zip` file. Then open the `PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app` folder and run the `pbi-saas-embed-report.sln` file.
+          * [Embedding for your customers](embedded-analytics-power-bi.md#embed-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. When you [register your app](./register-app.md), run the *Embed for your customers* solution.
+          * [Embedding for your organization](embedded-analytics-power-bi.md#embed-for-your-organization) allows you to extend the Power BI service. When you [register your app](./register-app.md), run the *Embed for your organization* solution.
           
       - question: |
           How can I edit my registered application?
         answer: |
           To learn how to edit Microsoft Entra registered applications, see [Quickstart: Update an application in Microsoft Entra ID](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
           
-      - question: |
-          How can I edit my Power BI user profile or data?
-        answer: |
-          You can learn how to edit your Power BI data [here](../../fundamentals/service-basic-concepts.md).
-          
+         
           For more information, see [Troubleshooting your embedded application](embedded-troubleshoot.md).
           
           More questions? [Try the Power BI Community](https://community.powerbi.com/)
