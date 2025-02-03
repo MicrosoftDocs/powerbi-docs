@@ -7,7 +7,7 @@ ms.reviewer: kfollis, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/21/2025
+ms.date: 02/02/2025
 no-loc: [Copilot]
 ---
 
@@ -18,13 +18,33 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
 
+
+## January 2025 QFE 3
+
+*Version 2.139.2054.0 , Released: January 29, 2025*
+
+Bug fixes/improvements:
+
+* Fixed issue in v2 connector that create duplicate records, and some missing records, causing rows in the dataset to be repeated instead of new rows being returned
+
+
+## January 2025 QFE 2 
+
+*Version 2.139.1733.0 , Released: January 24, 2025*
+
+Bug fixes/improvements:
+
+* Fixed issue of users receiving an error due to pending changes at the conclusion of a model change
+* Fixed SQL Server connector to operate properly with Fabric SQL
+
+
 ## January 2025 QFE 1
 
 *Version 2.139.1678.0, Released: January 14, 2025*
 
 Bug fixes/improvements:
 
-* Fixed issue of connecting to Fabric SQL database using SQL connector.
+* Fixed issue when connecting to Fabric SQL database using SQL connector
 
 ## November 2024 QFE 3
 
@@ -42,7 +62,7 @@ Bug fixes/improvements:
 Bug fixes/improvements:
 
 * Fixed a regression issue where users in certain regions were seeing an error because they can access and use the Copilot pane, even though it shouldn't have been available to them
-* Fixed an issue where incorrect column names were being returned from *AdomdDataReader* results after changing column format or aggregation, causing broken data views and visual updates.=
+* Fixed an issue where incorrect column names were being returned from *AdomdDataReader* results after changing column format or aggregation, causing broken data views and visual updates
 
 
 ## November 2024 QFE 1
