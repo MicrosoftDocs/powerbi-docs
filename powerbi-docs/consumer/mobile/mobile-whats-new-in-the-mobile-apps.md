@@ -1067,7 +1067,7 @@ If you scan a QR code for a dashboard that you don't have access to, now you can
 #### All devices
 **Scrolling made easier** 
 
-Now you can scroll in bar and column charts in a report by touching the chart itself, rather than touching the scroll bar on the side.
+Now you can scroll in bar and column charts in a report by touching the chart itself, rather than touching the scrollbar on the side.
 
 #### iOS devices
 **Ask questions of your data with a preview of Q&A** 
