@@ -3,7 +3,7 @@ title: Create smart narrative summaries
 description: 'Create smart narrative visualizations in Power BI to provide a quick text summary of visuals and reports.'
 author: aphilip94
 ms.author: anphil
-ms.reviewer: mihart
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
