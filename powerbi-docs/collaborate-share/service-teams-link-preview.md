@@ -15,9 +15,11 @@ This article describes link preview cards that are generated in Teams chats and 
 
 ## About link preview cards
 
-When you paste a link to a Power BI report, app, dashboard, or workspace into a Teams chat or channel, a preview card showing some details about the linked-to item is generated in the chat/channel window. The purpose of the preview card is to enhance collaboration by helping chat participants decide whether to open the link or not. If they decide to open the link, the item opens directly in their Power BI app in Teams - there's no need to switch applications. This saves time and helps them stay focused on the task at hand.
+When you paste a link to a Power BI report, app, dashboard, or workspace into a Teams chat or channel, a preview card showing some details about the linked-to item is generated in the chat/channel window. The purpose of the preview card is to enhance collaboration by helping chat participants decide whether to open the link or not.
 
 :::image type="content" source="./media/service-teams-link-preview/teams-link-preview.png" alt-text="Screenshot showing a link preview card for a report in a Teams chat window." border="false":::
+
+If a chat participant decides to open the link, the item opens directly in their Power BI app in Teams - there's no need to switch applications. This saves time and helps them stay focused on the task at hand.
 
 > [!IMPORTANT]
 > When you paste a link into the chat, it might take a second or two for the link preview card to appear. **Wait for the card to appear before sending the message!** If you press send before the card appears, it will never be generated.
