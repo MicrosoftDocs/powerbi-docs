@@ -1,11 +1,11 @@
 ---
 title: How to be sure that content is up to date
 description: Learn how Power BI ensures you're working with the latest version of the data, report, dashboard, and app.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.reviewer: mihart
+ms.reviewer: kfollis
 ms.custom:  
 ms.topic: how-to
 ms.date: 01/09/2025

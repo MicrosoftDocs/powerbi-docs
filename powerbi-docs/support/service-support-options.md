@@ -1,9 +1,9 @@
 ---
 title: Power BI and Fabric support overview
 description: This article describes how users of Power BI and Fabric can access support
-author: mihart
+author: kfollis
 ms.author: kfollis
-ms.reviewer: mihart
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting

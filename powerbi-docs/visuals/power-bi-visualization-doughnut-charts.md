@@ -3,7 +3,7 @@ title: Doughnut charts in Power BI
 description: Learn how to create and share doughnut charts in Power BI to show relationships of parts to a whole.
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'mihart'
+ms.reviewer: 'kfollis'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

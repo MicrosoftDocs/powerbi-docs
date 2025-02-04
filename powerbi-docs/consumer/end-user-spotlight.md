@@ -1,9 +1,9 @@
 ---
 title: Use spotlight to highlight
 description: Learn how to use spotlight mode in the Power BI service highlights important data and insights on a report.  
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.custom: sample-sales-and-marketing

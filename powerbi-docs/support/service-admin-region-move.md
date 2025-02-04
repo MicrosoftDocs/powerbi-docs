@@ -1,7 +1,7 @@
 ---
 title: Move Power BI between regions
 description: If the default region for your organization's Power BI data isn't optimal, you might want to move to another region. You can't move regions by yourself. This article describes how to work with support to move between regions. 
-author: mihart
+author: kfollis
 ms.author: hfeng
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting

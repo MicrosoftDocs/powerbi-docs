@@ -31,8 +31,6 @@
       href: power-bi-custom-visuals-faq.yml
     - name: "Examples of Power BI visuals"
       href: samples.md
-    - name: "Get custom visual metadata"
-      href: scanner-api.md
   - name: Develop your own custom visual
     items:
     - name: "Set up your environment for developing a Power BI visual"

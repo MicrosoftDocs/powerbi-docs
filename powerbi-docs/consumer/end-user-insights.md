@@ -1,9 +1,9 @@
 ---
 title: Run and view insights on dashboard tiles
 description: Learn how to run, view, interact, and troubleshoot data insights on a dashboard tile with Power BI.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual

@@ -1,8 +1,8 @@
 ---
 title: Types of licenses for Power BI business users
 description: Learn about the Power BI Pro, Premium, and free licenses, figure out which license type you have, and learn about Premium capacity workspaces.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer:  
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
