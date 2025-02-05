@@ -105,13 +105,13 @@ The Copilot pane also allows you to ask specific questions about your report con
 - For the Copilot button to be available in a report, the report needs to be in:
     - An eligible workspace: the workspace needs to have a paid dedicated capacity. The workspace needs to be a paid Premium or F64 or higher.
     - A tenant where the admin setting is enabled.
-- If you have a visual with extensive data points, Copilot may answer on truncated data. We are working on techniques to improve this.
-- The accuracy of the public preview may be limited.
+- Copilot will only consider visuals with less than 30K rows of data.
+- Copilot summaries may not work accurately on table/matrix visuals with more than 500 rows.
 - The Copilot summary pane doesn't return new visuals as data answers.  For this capability, turn on the preview switch to use Data Q&A capabilities. 
 
 ## Send feedback
 
-We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
+We always welcome your feedback about our products. Your feedback helps us improve the product.
 
 ## Next steps
 
