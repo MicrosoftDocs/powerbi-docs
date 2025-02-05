@@ -53,7 +53,7 @@ After you choose a prompt, select **Enter** and watch Copilot generate your summ
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
-Copilot uses Azure Open AI to look at the visuals on the report, and create a natural language summary using the data in those visuals.  It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that are not currently applied.  You can summarize or answer questions across the entire report or for just the current page by indicating the scope in the prompt.
+Copilot uses Azure Open AI to look at the visuals on the report, and create a natural language summary using the data in those visuals.  It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that are not currently applied.  By default, Copilot will summarize visuals across the entire report. You can adjust the scope of the summary by specifying the prompt.
 
 ## Reference footnotes
 
@@ -63,7 +63,7 @@ In a summary response from the Copilot pane, reference footnotes are provided wi
 
 ## Custom prompts
 
-The summary skill benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted summary or a summary specifically about sales, or about another nuanced slice of your data. 
+The benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted list or a summary specifically about sales, or about another nuanced slice of your data. 
  
 :::image type="content" source="media/copilot-pane-summarize-content/bulleted-insights.png" alt-text="Screenshot showing type custom prompts to request a specific summary." lightbox="media/copilot-pane-summarize-content/bulleted-insights.png":::
 
