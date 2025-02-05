@@ -108,7 +108,7 @@ Follow these steps to make sure your dataset configurations are set correctly:
 
 ## Additional resources
 
-- [How-to video](https://go.microsoft.com/fwlink/?linkid=2151608)
+- [How-to video](https://learn-video.azurefd.net/vod/player?id=5f68866b-2e9b-4b84-bcc1-c862676cd456)
 - [The carbon benefits of cloud computing: A study on the Microsoft Cloud in partnership with WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 
 ## Finding your company's billing account ID
