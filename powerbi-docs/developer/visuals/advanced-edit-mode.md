@@ -39,7 +39,7 @@ When you select **Edit**, the visual gets an update() call with EditMode set to 
 - `SupportedNoAction`: The host doesn’t require further action.
 - `SupportedInFocus`: The host pops out the visual in Focus mode.
 
-You can read more about how to configure the *capabilities.json* file in [Capabilities and propeties of Power BI visuals](capabilities.md). 
+You can read more about how to configure the *capabilities.json* file in [Capabilities and properties of Power BI visuals](capabilities.md). 
 
 ## Exit advanced edit mode
 
