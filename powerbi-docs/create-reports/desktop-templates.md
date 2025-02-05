@@ -28,6 +28,9 @@ Power BI report templates contain the following information from the report from
 
 The report's data is *not* included in templates.
 
+> [!IMPORTANT]
+> Some report metadata may carry over to the template with data values from your semantic model. For instance, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will be persisted as part of the metadata. This also applies to other configurations like slicer selections, matrix custom columns width, and formatting for specific series.
+
 While Power BI Desktop reports use the .PBIX extension, report templates use the file extension .PBIT.
 
 To create a report template, select **File > Export > Power BI template** from the menu, which brings up the following window, which prompts you to provide a description for the template. In this example, our description for the template is *Monthly sales report template*.
