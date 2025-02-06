@@ -41,7 +41,7 @@ ms.reviewer: rpatkar
 5. To confirm the text box is correctly nested inside the list, select the text box.  
   
     > [!NOTE]  
-    > If you select in the text box and are in edit mode, press ESC to select the text box. The four-headed arrow icon is visible on the box's border when the text box is selected.
+    > If you select inside the text box and are in edit mode, press ESC to select the text box. The four-headed arrow icon is visible on the box's border when the text box is selected.
   
 6. In the Properties pane, verify that the **Parent** property is the rectangle that was automatically added to the list data region.  
   
@@ -53,7 +53,7 @@ ms.reviewer: rpatkar
 1. On the design surface, select any empty space within the text box to select the text box.  
   
     > [!NOTE]  
-    > If you select in the text box and are in edit mode, press ESC to select the text box. The four-headed arrow icon is visible on the box's border when the text box is selected.
+    > If you select within the text box and are in edit mode, press ESC to select the text box. The four-headed arrow icon is visible on the box's border when the text box is selected.
   
 2. Select the text box handle and drag the text box to the new location.
 
@@ -62,11 +62,11 @@ ms.reviewer: rpatkar
 ## Delete a text box  
   
 1. On the design surface, right-click any empty space within the text box to select it, and then select **Delete**. Alternatively, select any empty space within the text box, and then press DELETE.
+
+    :::image type="content" source="../media/report-builder-delete-text-box.png" alt-text="Screenshot of a text box selected in Report Builder and the delete command highlighted in a local menu..":::
   
     > [!NOTE]  
-    > If you select in the text box and are in edit mode, press ESC to select the text box. The four-headed arrow icon is visible on the box's border when the text box is selected.
-
-:::image type="content" source="../media/report-builder-delete-text-box.png" alt-text="Screenshot of a text box selected in Report Builder and the delete command highlighted in a local menu..":::
+    > If you select inside the text box and are in edit mode, press ESC to select the text box. The four-headed arrow icon is visible on the box's border when the text box is selected.
 
 ## Related content
 
