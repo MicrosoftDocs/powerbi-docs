@@ -66,7 +66,7 @@ ms.reviewer: rpatkar
     > [!NOTE]  
     > If you select in the text box and are in edit mode, press ESC to select the text box. The four-headed arrow icon is visible on the box's border when the text box is selected.
 
-:::image type="content" source="media/report-builder-delete-text-box.png" alt-text="Screenshot of a text box selected in Report Builder and the delete command highlighted in a local menu..":::
+:::image type="content" source="../media/report-builder-delete-text-box.png" alt-text="Screenshot of a text box selected in Report Builder and the delete command highlighted in a local menu..":::
 
 ## Related content
 
