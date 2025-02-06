@@ -61,9 +61,9 @@ ms.reviewer: rpatkar
   
 ## Delete a text box  
   
-1. On the design surface, right-click any empty space within the text box to select it and open a local menu with the **Delete** command.
+- On the design surface, right-click any empty space within the text box to select it and open a local menu with the **Delete** command.
 
-    :::image type="content" source="../media/report-builder-delete-text-box.png" alt-text="Screenshot of a text box selected in Report Builder and the delete command highlighted in a local menu..":::
+    :::image type="content" source="../media/report-builder-delete-text-box.png" alt-text="Screenshot of a text box selected in Report Builder and the delete command highlighted in a local menu.":::
   
     Alternatively, select any empty space within the text box, and then press DELETE.
 
