@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/22/2025
+ms.date: 02/10/2025
 ---
 
 # Link preview cards in Microsoft Teams chats and channels
@@ -26,7 +26,6 @@ If a chat participant decides to open the link, the item opens directly in their
 
 Typically, the preview card provides the following:
 
-* The name of the tenant.
 * The name of the linked-to item.
 * The location of the item.
 * An *Open* button that opens the item in the Power BI app in Teams.
