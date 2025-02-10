@@ -63,6 +63,4 @@ Link preview cards are generated for the following Power BI items.
 ## Related content
 
 * [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
-- [Summarize a report in the Copilot pane](/power-bi/create-reports/copilot-pane-summarize-content)
-
-More questions? [Ask the Power BI Community](https://community.powerbi.com/).
+* [Summarize a report in the Copilot pane](/power-bi/create-reports/copilot-pane-summarize-content)
