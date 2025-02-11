@@ -95,6 +95,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
     - [Power Automate visuals](../create-reports/power-bi-automate-visual.md) 
     - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - Visio visuals
+    - [The Copilot narrative visual](../create-reports/copilot-narrative-visual-embed-power-bi.md)
 * Visual [displayed as a Data point table or displayed with "Show data point as a table,"](../consumer/end-user-show-data.md) can't be exported to PDF.
 
 ### Reports that can't be exported
