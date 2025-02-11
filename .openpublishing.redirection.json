@@ -2381,7 +2381,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-purchase.md",
-            "redirect_url": "/power-bi/enterprise/service-admin-premium-purchase",
+            "redirect_url": "/power-bi/enterprise",
             "redirect_document_id": true
         },
         {
@@ -5047,7 +5047,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-premium-purchase.md",
-            "redirect_url": "/power-bi/enterprise/service-admin-premium-purchase",
+            "redirect_url": "/power-bi/enterprise",
             "redirect_document_id": false
         },
         {
@@ -5057,7 +5057,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-premium-testing.md",
-            "redirect_url": "/power-bi/enterprise/service-admin-premium-testing",
+            "redirect_url": "/power-bi/enterprise",
             "redirect_document_id": false
         },   
         {

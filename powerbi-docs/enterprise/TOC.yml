@@ -29,11 +29,9 @@
   - name: Licensing
     expanded: false
     items:
-    - name: Get Power BI for your organization
-      href: service-admin-licensing-organization.md 
     - name: Purchase Power BI Pro
       href: service-admin-purchasing-power-bi-pro.md         
-    - name: Licensing for your organization
+    - name: Organizational licenses
       href: service-admin-licensing-organization.md
     - name: View and manage user licenses
       href: service-admin-manage-licenses.md
@@ -66,11 +64,7 @@
       - name: Premium architecture
         href: /fabric/security/security-fundamentals           
       - name: Power BI Premium Per User
-        href: service-premium-per-user-faq.yml
-      - name: Purchase Power BI Premium
-        href: service-admin-premium-purchase.md   
-      - name: Purchase Power BI Premium for testing
-        href: service-admin-premium-testing.md                                                  
+        href: service-premium-per-user-faq.yml                                                   
       - name: Performance smoothing
         href: /fabric/enterprise/throttling                    
       - name: Backup and restore Power BI Premium semantic models
