@@ -2181,7 +2181,7 @@ The following table shows which packages aren't supported in the Power BI servic
 
 - R visuals aren't supported with Service Principal Profiles for App Owns Data.
 - The R visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb.
-- R visuals with HTML and XML packages fail to render due to Out Of Memory (OOM). Migrate the visual with the [PbiViz tool] (../developer/visuals/develop-power-bi-visuals#power-bi-visual-packages). The visual must render. 
+- R visuals with HTML and XML packages fail to render due to Out Of Memory (OOM). Migrate the visual with the [PbiViz tool](../developer/visuals/develop-power-bi-visuals#power-bi-visual-packages). The visual must render. 
  
 
 
