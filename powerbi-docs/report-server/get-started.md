@@ -23,7 +23,7 @@ Power BI Report Server is similar to both SQL Server Reporting Services and the 
 ## Licensing Power BI Report Server
 Power BI Report Server is available through two different licenses: [Fabric F64+ reserved instances](/fabric/enterprise/licenses) and SQL Server Enterprise Edition with Software Assurance. See [Microsoft Volume Licensing](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=1&ShowArchived=True) for details. 
 
-If you publish Power BI reports to Power BI Report Server, you also need a Power BI Pro license. You don't need a Power BI Pro license to view and interact with Power BI reports on Power BI Report Server.
+If you publish paginated reports and Power BI reports to Power BI Report Server, you also need a Power BI Pro license. You don't need a Power BI Pro license to view and interact with paginated and Power BI reports on Power BI Report Server.
 
 > [!NOTE]
 > For Power BI Premium, Power BI Report Server is only included with P SKUs. It is not included with EM SKUs. Power BI Report Server is also **not** included with any F SKUs below F64 reserved instance.
