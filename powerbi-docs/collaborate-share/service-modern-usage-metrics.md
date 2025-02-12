@@ -1,8 +1,8 @@
 ---
 title: Monitor usage metrics in workspaces (preview)
 description: How to view, save, and use usage metrics for Power BI dashboards and reports in workspaces. 
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -317,6 +317,8 @@ It's important to understand that differences can occur when comparing the impro
 In addition to the above differences between previous and improved usage metrics reports, note the following limitations for the preview release:
 
 - Dashboard usage metrics still rely on the previous version of the usage metrics reports and aren't yet available in modern usage metrics.
+- There are fields in the _Report page views_ and _Report load times_ tables that are always blank.
+- Pages for App reports can't be seen in the Report pages table.
 - Performance data and Report Page View metrics rely on the client/device sending data to Power BI. Depending on network latency, ad blockers, firewalls, and network rules set by your organization, this data may never reach Power BI. Therefore, the performance and Report Page View data may not include all views or all users.
 - Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
 - Report performance metrics aren't available for Paginated Reports. The Pages tab on the Report usage page as well as the charts on the Report performance page don't show data for these types of reports.
@@ -329,7 +331,6 @@ In addition to the above differences between previous and improved usage metrics
 - If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
 - If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) and **Block Public Internet Access** in Power BI, the refresh for the semantic model will fail and the usage metrics report won't show any data.
 - In order to create and refresh the usage metrics report, the user is required to authenticate to enable the backend API calls to extract the tenant telemetry. For privacy reasons, guest users aren't allowed this authentication. This authentication is only allowed for members of the tenant.
-- Page views that are made from mobile devices aren't shown in the usage metrics report.
 - Duplicate reports with different Report ObjectIds in the usage metrics report can show up for the following scenarios:
     - Reports have been deleted and re-created with the same name
        - If a report has been deleted and then re-created with the same name, it continues to show up in the filters for the usage metrics report.

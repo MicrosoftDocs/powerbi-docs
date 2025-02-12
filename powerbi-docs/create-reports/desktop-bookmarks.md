@@ -1,8 +1,8 @@
 ---
 title: Create report bookmarks in Power BI
 description: Bookmarks in Power BI let you save views and settings in your reports, and build story-like presentations.
-author: mihart
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

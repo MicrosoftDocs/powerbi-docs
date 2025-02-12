@@ -1,8 +1,8 @@
 ---
 title: Using slicers in the Power BI service
 description: A Power BI slicer is an alternate way of filtering that narrows the portion of the semantic model shown in the other visualizations in a report.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: v-thepet
 ms.service: powerbi
 ms.subservice: pbi-explore

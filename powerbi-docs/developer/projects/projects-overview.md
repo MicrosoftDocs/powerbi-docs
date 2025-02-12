@@ -142,7 +142,7 @@ Not every model object supports write operations. Applying changes outside of th
 
 Objects that support write operations:
 
-| Object                        | Connect to AS instance     | File change|
+| Object                        | Connect to AS instance     | File change / TMDL view|
 |-------------------------------|----------------------------|----------- |
 | Tables                        | No                         | Yes        |
 | Columns                       | Yes <sup>[1](#rc)</sup>, <sup>[2](#dt)</sup>| Yes        |
@@ -204,7 +204,6 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - Report Linguistic Schema isn't supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
 - Power BI Projects is currently not supported in Microsoft Power BI Desktop version optimized for Power BI Report Server.
-- [Live connect reports](/power-bi/connect-data/service-live-connect-dq-datasets#live-connection) saved as PBIP require the [XMLA Endpoint](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) to be enabled.
 
 ## Frequently asked questions
 

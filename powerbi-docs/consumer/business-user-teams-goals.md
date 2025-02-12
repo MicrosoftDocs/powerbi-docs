@@ -1,9 +1,9 @@
 ---
 title: Use Power BI metrics to improve results in Microsoft Teams
 description: Use metrics in Power BI to help you curate metrics that matter, assign them to the right people, and track over time.
-author: ajburnle
-ms.author: ajburnle
-ms.reviewer: mihart, lukaszp
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview

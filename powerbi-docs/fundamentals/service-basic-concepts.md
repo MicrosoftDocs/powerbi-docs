@@ -1,8 +1,8 @@
 ---
 title: Basic concepts for designers in the Power BI service
 description: Learn about Power BI service concepts such as capacities, workspaces, dashboards, reports, workbooks, semantic models, and dataflows.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 manager: kfollis
 ms.reviewer: ''
 ms.custom: video-removed

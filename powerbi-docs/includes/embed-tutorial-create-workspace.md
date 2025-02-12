@@ -5,7 +5,7 @@ services: powerbi
 author: mberdugo
 ms.author: monaberdugo
 ms.topic: include
-ms.date: 2/09/2024
+ms.date: 12/26/2024
 ms.custom: include file
 ---
 
@@ -17,9 +17,6 @@ Microsoft Fabric keeps your reports, dashboards, and tiles in a workspace. To em
 To create a workspace, do the following:
 
 1. Sign in to Fabric.
-
-2. Select **Workspaces**.
-
-3. Select **+ New workspace**.
-
-4. Name your workspace and select **Save**.
+1. Select **Workspaces**.
+1. Select **+ New workspace**.
+1. Name your workspace and select **Save**.

@@ -1,8 +1,8 @@
 ---
 title: Power BI video series
 description: Find video demos for how to work with Power BI, view the latest videos, and find training and product updates.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

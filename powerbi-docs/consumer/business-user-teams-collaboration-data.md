@@ -1,9 +1,9 @@
 ---
 title: Analyze your Teams collaboration data
 description: Learn how to analyze your Teams collaboration data and find ways to improve and become more responsive, agile, and productive. 
-author: ajburnle
-ms.author: ajburnle
-ms.reviewer: mihart, lukaszp
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview

@@ -1,8 +1,8 @@
 ---
 title: Q&A for Power BI business users
 description: Learn how you can use the Power BI Q&A feature and natural language capabilities with your report visuals.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai

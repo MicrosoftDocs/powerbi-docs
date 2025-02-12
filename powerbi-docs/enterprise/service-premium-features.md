@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: overview
-ms.date: 01/12/2025
+ms.date: 01/19/2025
 LocalizationGroup: Premium
 ---
 
@@ -26,6 +26,7 @@ This article lists the main Power BI Premium features. Most of the features appl
 |[Dataflows](../transform-model/dataflows/dataflows-premium-features.md) |<ul><li>[Perform in-storage computations](../transform-model/dataflows/dataflows-premium-features.md#computed-entities)</li><li>[Optimize the use of dataflows](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine)</li><li>[Use incremental refresh with dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh)</li><li>[Reference other dataflows](../transform-model/dataflows/dataflows-premium-features.md#linked-entities)</li></ul> |
 |[Datamarts](../transform-model/datamarts/datamarts-overview.md) |Self-service solution enabling users to store and explore data that's loaded in a fully managed database|
 |[Deployment pipelines](../create-reports/deployment-pipelines-overview.md) |Manage the lifecycle of your Power BI content |
+|[Direct Lake](/fabric/get-started/direct-lake-overview) (preview) |Connect directly to your data lake without having to import its data |
 |[DirectQuery with dataflows](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi) |Connect directly to your dataflow without having to import its data |
 |[Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables) |Incremental refresh augmented with real-time data |
 |[Insights](../create-reports/insights.md) (preview) |Explore and find insights such as anomalies and trends in your reports |
@@ -40,6 +41,6 @@ This article lists the main Power BI Premium features. Most of the features appl
 |[Virtual network data gateway](/data-integration/vnet/overview) (preview) | Connect from Microsoft Cloud to Azure using a virtual network (VNet) |
 |[XMLA read/write](service-premium-connect-tools.md) |Enable XMLA endpoint |
 
-## Next steps
+## Related content
 
 * [What is Power BI Premium?](service-premium-what-is.md)

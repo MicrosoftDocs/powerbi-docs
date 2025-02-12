@@ -3,7 +3,7 @@ title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 author: jtarquino
 ms.author: jaimeta
-ms.reviewer: maggies
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
@@ -21,11 +21,16 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
 ## January 2025
 
 ### Power BI Report Server
+- *Version: 1.22.9153.7886 (build 15.0.1117.98), Released: January 22, 2025*
+  - Bug fixes
+    - Fixed issue with new property 'EnableCustomURLInKPI' not getting configured correctly during upgrade. In the previous build (15.0.1117.95), Publisher and Content Manager roles would not have the new property set to a value and would get a permission error when accessing the /reports endpoint.
+
 - *Version: 1.22.9137.4867 (build 15.0.1117.95), Released: January 13, 2025*
   - Features
     - Custom Visual API shipped with release - version v5.10.0
     - Updated underlying version of angular.
     - Add new advanced server property EnableRefererValidation and set default value to false.
+    - Add new advanced server property 'EnableCustomURLInKPI' with default value 'true' to control if KPIs can link to custom URLs.
     - Added support for PBIX data limit feature.
   - Bug fixes
     - Fixed issue with RSExecRole not getting correct permissions when restoring a catalog.

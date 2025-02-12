@@ -95,7 +95,7 @@
       href: ../consumer/business-user-teams-collaboration-data.md?context=/power-bi/collaborate-share/context/context
     - name: "Chat in Teams directly"
       href: service-share-report-teams.md
-    - name: "Get a link preview in Teams"
+    - name: "Understand link preview cards in Teams chats"
       href: service-teams-link-preview.md
     - name: "View all your Power BI tabs in Teams"
       href: service-teams-pivot.md

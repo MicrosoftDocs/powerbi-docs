@@ -40,7 +40,7 @@ You can also start using datamarts from any dataflow you currently have as well.
 
 To create a datamart, navigate to your existing Power BI Premium or Premium Per User (PPU) workspace. Datamarts require a Power BI Premium subscription. In your Premium workspace, select **+ New** and then select **Datamart (Preview) to create a datamart.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-01.png" alt-text="Screenshot of create new datamart.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-01-b.png" alt-text="Screenshot of create new datamart.":::
 
 It usually takes approximately 10 seconds to provision a new datamart. Once initialized, you can load data into your datamart. For more information about getting data into a datamart, see the [get and transform data](#get-and-transform-data) section in this article.
 
@@ -55,7 +55,7 @@ To load data into your datamart, open your datamart (or create a new datamart) a
 
 If you choose to get data from another source, a data source selection window appears where you can select from a multitude of data sources. 
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-12.png" alt-text="Screenshot of different data sources for a datamart.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-12-b.png" alt-text="Screenshot of different data sources for a datamart.":::
 
 
 You can also drag and drop files from your computer to load data into your datamart, such as Excel files. Some data sources may require parameters or connection strings to properly connect.
@@ -71,7 +71,7 @@ For each table you select, a corresponding view is created in the datamart that 
 
 To model your data, navigate to **Model view** by selecting on the **Model View** icon at the bottom of the window, as shown in the following image.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-14.png" alt-text="Screenshot of the model view icon.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-14-b.png" alt-text="Screenshot of the model view icon.":::
 
 ### Adding or removing objects to the default semantic model
 
@@ -103,7 +103,7 @@ During the session, users may create multiple tabs in the model view to further 
 
 To create a [measure](../desktop-measures.md) (a measure is a collection of standardized metrics) select the table in the **Table Explorer** and select the **New Measure** button in the ribbon, as shown in the following image.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-15.png" alt-text="Screenshot of creating a measure.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-15-b.png" alt-text="Screenshot of creating a measure.":::
 
 Enter the measure into the formula bar and specify the table and the column to which it applies. The formula bar lets you enter your measure. Similar to Power BI Desktop, the DAX editing experience in datamarts presents a rich editor complete with auto-complete for formulas (intellisense). The DAX editor enables you to easily develop measures right in datamart, making it a more effective single source for business logic, semantics, and business critical calculations.
 
@@ -121,53 +121,51 @@ Select the **Confirm** button when your relationship is complete to save the rel
 
 You can hide elements of your datamart from downstream reporting by selecting **Table view** and right-clicking on the column or table you want to hide. Then select **Hide in report view** from the menu that appears to hide the item from downstream reporting.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-17.png" alt-text="Screenshot of hiding an element from downstream reporting.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-17-b.png" alt-text="Screenshot of hiding an element from downstream reporting.":::
 
 You can also hide the entire table and individual columns by using the **Model view** canvas options, as shown in the following image.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-18.png" alt-text="Screenshot of hiding an entire table from downstream reporting.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-18-b.png" alt-text="Screenshot of hiding an entire table from downstream reporting.":::
 
 
 ### Access auto-generated semantic models
 
-To access auto-generated semantic models, go to the Premium workspace and find the semantic model that matches the name of the datamart. 
+To access auto-generated semantic models, go to the Premium workspace and find the semantic model that matches the name of the datamart.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-19.png" alt-text="Screenshot of finding a semantic model.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-19-b.png" alt-text="Screenshot of finding a semantic model.":::
 
-To load the semantic model, click the name of the semantic model. 
+To load the semantic model, click the name of the semantic model.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of loading a semantic model." lightbox="media/datamarts-get-started/datamarts-get-started-20.png":::
-
-
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20-b.png" alt-text="Screenshot of loading a semantic model." lightbox="media/datamarts-get-started/datamarts-get-started-20-b.png":::
 
 ## Manage datamart refresh
 
-You can refresh a datamart in two ways: 
+You can refresh a datamart in two ways:
 
-1.	From the datamart context menu, select **Refresh now** or select **Scheduled refresh**.
+1. From the datamart context menu, select **Refresh now** or select **Scheduled refresh**.
 
     :::image type="content" source="media/datamarts-get-started/datamarts-get-started-04.png" alt-text="Screenshot of datamart context menu for refresh.":::
 
-2.	From the datamart settings page, select **Scheduled refresh**
+2. From the datamart settings page, select **Scheduled refresh**
 
-    :::image type="content" source="media/datamarts-get-started/datamarts-get-started-05.png" alt-text="Screenshot of scheduled refresh for a datamart in the settings page.":::
+    :::image type="content" source="media/datamarts-get-started/datamarts-get-started-05-b.png" alt-text="Screenshot of scheduled refresh for a datamart in the settings page.":::
 
 To set up incremental refresh for a datamart, select the table for which you want to set up incremental refresh for in the datamart editor. In the **Table tools** ribbon, select the **Incremental refresh** icon, and a right pane appears enabling you to configure incremental refresh for the selected table.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-06.png" alt-text="Screenshot of configure incremental refresh for a table in a datamart.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-06-b.png" alt-text="Screenshot of configure incremental refresh for a table in a datamart.":::
 
 ## Datamarts and deployment pipelines
 Datamarts are supported in deployment pipelines. Using deployment pipelines, you can deploy updates to your datamart across a designated pipeline. You can also use rules to connect to relevant data in each stage of the pipeline. To learn how to use deployment pipelines, see [Get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines).
 
 ## Access or load an existing datamart
 
-To access an existing datamart, navigate to your Power BI Premium workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image. 
+To access an existing datamart, navigate to your Power BI Premium workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-02.png" alt-text="Screenshot of finding an existing datamart from all items.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-02-b.png" alt-text="Screenshot of finding an existing datamart from all items.":::
 
 You can also select the **Datamarts (Preview)** tab in your Premium workspace, and see a list of available datamarts.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-03.png" alt-text="Screenshot of select datamart from list of datamarts.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-03-b.png" alt-text="Screenshot of select datamart from list of datamarts.":::
 
 Select the datamart name to load the datamart.
 
@@ -178,7 +176,7 @@ There are two ways to rename a datamart:
 
 First, from within the **Datamart editor**, select the datamart name from the top of the editor and edit the datamart name in the window that appears, as shown in the following image. Select on the ribbon outside of the rename window to save the new name.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-07.png" alt-text="Screenshot of renaming a datamart.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-07-b.png" alt-text="Screenshot of renaming a datamart.":::
 
 Alternatively, you can change the datamart name from the workspace list view. Select the more menu (...) next to the datamart name in the workspace view. 
 

@@ -1,9 +1,9 @@
 ---
 title: Set alerts on Power BI reports (public preview)
 description: Set alerts on Power BI reports with Activator.
-author: maggiesMSFT
-ms.author: maggies
-ms.reviewer: mihart, lukaszp
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview

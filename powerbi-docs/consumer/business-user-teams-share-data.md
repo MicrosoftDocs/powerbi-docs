@@ -1,9 +1,9 @@
 ---
 title: Lead data-driven discussions in Microsoft Teams
 description: Learn how to easily share data with your team with the Power BI app in Teams channels, chats, and meetings.
-author: ajburnle
-ms.author: ajburnle
-ms.reviewer: mihart, lukaszp
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
@@ -89,9 +89,6 @@ The link will include the full context of the data you were looking at, includin
 If you use Power BI in a web browser, it’s easy to send a link to a colleague.
 
 1. Open a report in the Power BI service in the browser, and copy the link.
-
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-copy-link-new.png" alt-text="Screenshot of a browser window with the link highlighted." lightbox="media/business-user-teams-share-data/teams-power-bi-copy-link-new.png":::
-
 1. Start a conversation and paste the link.
    Teams automatically creates a rich card.
 1. Select **Send**.
