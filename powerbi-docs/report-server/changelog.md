@@ -61,6 +61,10 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
     - Fixed issue with ribbon charts in Power BI Reports
 
 ### Power BI Desktop (optimized for Power BI Report Server)
+
+- *Version: 2.136.3279.0 (September 2024), Released: January 7, 2025*
+     - Fix for WebView2 issue.
+
 - *Version: 2.136.1202.0 (September 2024), Released: September 26, 2024*
      - Support for September 2024 Power BI Report Server.
 
@@ -90,6 +94,9 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
     - Various bug fixes
 
 ### Power BI Desktop (optimized for Power BI Report Server)
+
+- *Version: 2.129.6228.0 (May 2024), Released: January 7, 2025*
+     - Fix for WebView2 issue.
 
 - *Version: 2.129.2203.0 (May 2024), Released: July 12, 2024*
    - Bug fixes
