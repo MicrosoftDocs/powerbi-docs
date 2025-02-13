@@ -69,11 +69,13 @@ For development testing, you can use free embed trial tokens with a Pro license.
 > [!IMPORTANT]
 > Free trial tokens are limited to development testing only. Once going to production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
-There are two types of Power BI embedded analytics offerings. Each offer includes a different type of SKU that you use to buy a Power BI [capacity](./embedded-capacity.md):
+There are two types of Power BI embedded analytics offerings as well as an offering from Microsoft Fabric. Each offer includes a different type of SKU that you use to buy a Power BI [capacity](./embedded-capacity.md):
 
 * [Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an Azure offer that includes A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
 
 * [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) is a Microsoft Office offer that includes P or EM SKUs.
+
+* [Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/) is an Azure offer that includes F SKUs.
 
 For more information about the differences between the Embedded and Premium SKUs, see [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md).
 
