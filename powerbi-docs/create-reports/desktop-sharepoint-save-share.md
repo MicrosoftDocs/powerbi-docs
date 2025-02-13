@@ -237,3 +237,7 @@ If you have signed-in to Power BI on multiple different accounts, you can see fi
 ### Unable to create a new folder inside SharePoint
 
 For some specific SharePoint document libraries, users may not have permissions to create folders. As a result, when the user selects the "New Folder" button, the new folder is not added. To resolve this error, please work with an admin to ensure you have sufficient permissions or choose a different OneDrive/SharePoint location. 
+
+### Unable to find desired SharePoint library in updated file picker
+
+When viewing your list of SharePoint libararies in the file picker, there may be libraries you need that are missing. There is currently no support for directly adding a SharePoint site via URL in the new file picker. To resolve this error, you can add frequently visited SharePoint sites to your list by directly following the site on SharePoint. The site should then show up in the file picker after restarting Power BI. 
