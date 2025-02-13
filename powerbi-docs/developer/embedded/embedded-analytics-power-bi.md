@@ -75,7 +75,7 @@ There are two types of Power BI embedded analytics offerings as well as an offer
 
 * [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) is a Microsoft Office offer that includes P or EM SKUs.
 
-* [Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/) is an Azure offer that includes F SKUs.
+* [Microsoft Fabric](https://www.microsoft.com/microsoft-fabric/) is an Azure offer that includes F SKUs.
 
 For more information about the differences between the Embedded and Premium SKUs, see [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md).
 
