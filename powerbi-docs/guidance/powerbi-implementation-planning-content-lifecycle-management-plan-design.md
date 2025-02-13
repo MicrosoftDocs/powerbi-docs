@@ -101,7 +101,7 @@ When you've sufficiently identified and described the content you'll create, you
 As a solution increases in scope and complexity, it might become necessary for multiple content creators and owners to work in collaboration. When creating complex solutions, we recommend that you use effective tools that help structure, manage, and support collaboration. There are many ways to collaborate when producing Power BI content, such as by using Microsoft Teams, Azure DevOps, or GitHub.
 
 > [!TIP]
-> Even when content creators work independently, they can still benefit from planning and structuring their work by using tools such as Microsoft Teams, Azure DevOps, or GitHub. This is especially important when you plan how to deploy content, such as by using [OneDrive Refresh](../connect-data/refresh-desktop-file-onedrive) from a Microsoft Teams documents library or [Git integration](/fabric/cicd/git-integration/intro-to-git-integration?tabs=azure-devops) from an Azure DevOps or GitHub repo.
+> Even when content creators work independently, they can still benefit from planning and structuring their work by using tools such as Microsoft Teams, Azure DevOps, or GitHub. This is especially important when you plan how to deploy content, such as by using [OneDrive Refresh](../connect-data/refresh-desktop-file-onedrive.md) from a Microsoft Teams documents library or [Git integration](/fabric/cicd/git-integration/intro-to-git-integration?tabs=azure-devops) from an Azure DevOps or GitHub repo.
 
 ### Microsoft Teams
 
@@ -169,9 +169,9 @@ We recommend that you define a structured process for how content creators shoul
 
 Content creators and owners can also communicate and collaborate by using [GitHub](https://github.com/) (cloud versions only) and [GitHub Enterprise](https://github.com/enterprise). Similar to Azure DevOps, GitHub provides a platform with services that you can use to help orchestrate and manage aspects of your Power BI or Fabric environment. 
 
-The main difference between Azure DevOps and GitHub is that while Azure DevOps provides a suite of tools for managing the software development lifecycle, GitHub focuses mainly on hosting Git repositories, source control, and collaboration on code. You mainly use GitHub when you plan to [deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md) by using [Git integration](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=azure-devops%2CGitHub%2Ccommit-to-git). Additionally, you can use GitHub to sync content from a [public, open-source repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility) to a workspace.
+The main difference between Azure DevOps and GitHub is that while Azure DevOps provides a suite of tools for managing the software development lifecycle, GitHub focuses mainly on hosting Git repositories, source control, and collaboration on code. You mainly use GitHub when you plan to [deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md) by using [Git integration](/fabric/cicd/git-integration/git-get-started?tabs=azure-devops%2CGitHub%2Ccommit-to-git). Additionally, you can use GitHub to sync content from a [public, open-source repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility) to a workspace.
 
-To use Git integration with GitHub, you have to enable the admin tenant setting [_Users can sync workspace items with GitHub repositories_](https://learn.microsoft.com/en-us/fabric/admin/git-integration-admin-settings#users-can-sync-workspace-items-with-github-repositories).
+To use Git integration with GitHub, you have to enable the admin tenant setting [_Users can sync workspace items with GitHub repositories_](/fabric/admin/git-integration-admin-settings#users-can-sync-workspace-items-with-github-repositories).
 
 > [!NOTE]
 > You can also use Microsoft Teams together with Azure DevOps or GitHub because there are different ways to integrate these services. For instance, you can view and manage [Azure Boards](/azure/devops/boards/integrations/boards-teams?view=azure-devops&preserve-view=true) and monitor events in [Azure Pipelines](/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops&preserve-view=true) from within Microsoft Teams.
@@ -271,7 +271,7 @@ Consider storing the following file types in a remote repository.
 > [!TIP]
 > When you use a remote repository, we strongly recommend that you store Power BI reports and semantic models as [Power BI Desktop projects (.pbip) files](../developer/projects/projects-overview.md) instead of .pbix files. That's because saved changes can't be identified in a .pbix file.
 >
-> Also, consider using the [Power BI enhanced report format (PBIR)](../developer/embedded/projects-enhanced-report-format) for reports. The PBIR format ensures that report metadata is easier to read, which makes tracking and managing changes in source control easier. Furthermore, reports that use this format can be more easily managed by programmatic tools such as [semantic-link-labs](https://github.com/microsoft/semantic-link-labs/?tab=readme-ov-file), a Python library from Microsoft that you can use in Fabric notebooks.
+> Also, consider using the [Power BI enhanced report format (PBIR)](../developer/embedded/projects-enhanced-report-format.md) for reports. The PBIR format ensures that report metadata is easier to read, which makes tracking and managing changes in source control easier. Furthermore, reports that use this format can be more easily managed by programmatic tools such as [semantic-link-labs](https://github.com/microsoft/semantic-link-labs/?tab=readme-ov-file), a Python library from Microsoft that you can use in Fabric notebooks.
 
 ### No files: Content created in the Fabric portal
 
