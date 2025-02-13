@@ -40,7 +40,7 @@ When you select **OK**, you're prompted for a file location to store the .PBIT t
 And that's it, your Power BI report template is created in the file location you specified, with the .PBIT extension.
 
 > [!NOTE]
-> Power BI report template files are generally much smaller than a Power BI Desktop report because templates do not contain any data, just the report definitions themselves. Report metadata may be saved with data values from your semantic model. For example, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will be persisted as part of the metadata. This also applies to other configurations such as slicer selections, matrix custom columns width, and formatting for specific series.
+> Power BI report template files are much smaller than a Power BI Desktop report because templates don't contain any data, just the report definitions themselves. Report metadata may be saved with data values from your semantic model. For example, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will be persisted as part of the metadata. This also applies to other configurations such as slicer selections, matrix custom columns width, and formatting for specific series.
 
 ## Using report templates
 
