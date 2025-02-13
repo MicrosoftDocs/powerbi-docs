@@ -178,7 +178,7 @@ btn_click(){
 As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
 
 > [!NOTE]
-> Although the data in the different updates of the data views are mostly exclusive, there is some overlap between consecutive data views.
+> Although the data in the different updates of the data views are mostly exclusive, there's some overlap between consecutive data views.
 >
 > For table and categorical data mapping, the first `N` data view rows can be expected to contain data copied from the previous data view.
 >

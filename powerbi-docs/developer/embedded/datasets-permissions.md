@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 11/09/2023
+ms.date: 11/09/2024
 ---
 
 # Semantic model REST API permissions
@@ -28,7 +28,7 @@ Power BI has two sets of permissions:
 
 Workspace permissions, also known as folder permissions or [roles](../../collaborate-share/service-roles-new-workspaces.md), are the highest level of permissions in Power BI. These permissions override permissions that are given to a specific item in the workspace folder.
 
-The table below lists the four types of folder roles. It shows each role's level, and the code string returned by the Power BI REST APIs. Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
+The following table lists the four types of folder roles. It shows each role's level, and the code string returned by the Power BI REST APIs. Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
 |Folder Role |Level |Derived permissions for semantic models created in the workspace |
 |------------|------|--------------------------|
@@ -38,7 +38,7 @@ The table below lists the four types of folder roles. It shows each role's level
 |Viewer      |1     |`Read`                    |
 
 >[!NOTE]
->The *write* permission is applied to Power BI semantic models created by *admin*, *member* and *contributor* users in a workspace they own. The write permission can be granted or deleted using workspace permissions only. It cannot directly be granted to, or deleted from, a Power BI item.
+>The *write* permission is applied to Power BI semantic models created by *admin*, *member*, and *contributor* users in a workspace they own. The write permission can be granted or deleted using workspace permissions only. It can't directly be granted to, or deleted from, a Power BI item.
 
 #### Get and add workspace permissions with APIs
 
@@ -56,14 +56,14 @@ Power BI items, such as reports, semantic models, and dashboards have their own 
 
 ## Semantic model permissions and REST APIs
 
-Semantic model permissions are part of the [item permissions](#item-permissions). The table below lists the Power BI semantic model permissions and their representation in the [Power BI REST APIs](/rest/api/power-bi/).
+Semantic model permissions are part of the [item permissions](#item-permissions). The following table lists the Power BI semantic model permissions and their representation in the [Power BI REST APIs](/rest/api/power-bi/).
 
 >[!TIP]
 >Although the API permissions are identical to the Power BI service permissions, [`build`](#build-permissions-and-rest-apis) permissions are referred to as *explore* permissions in the APIs.
 
 |Permission             |Read     |Explore  |Reshare  |
 |-----------------------|---------|---------|---------|
-|Description            |Allows the user to read the content of the semantic model|Equivalent to [build permissions](#build-permissions-and-rest-apis) |Allows the user to share the content of the semantic model with other users who will get read, reshare, or explore permissions for it |
+|Description            |Allows the user to read the content of the semantic model|Equivalent to [build permissions](#build-permissions-and-rest-apis) |Allows the user to share the content of the semantic model with other users who get read, reshare, or explore permissions for it |
 |**ReadReshareExplore** | :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::     |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::       |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::        |
 |**ReadReshare**        |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::        |:::image type="icon" source="../../includes/media/no-icon.svg" border="false":::      |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::        |
 |**ReadExplore**        |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::        |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::       |:::image type="icon" source="../../includes/media/no-icon.svg" border="false":::       |
@@ -74,7 +74,7 @@ Semantic model permissions are part of the [item permissions](#item-permissions)
 
 ### Build permissions and REST APIs
 
-In the [Power BI REST APIs](/rest/api/power-bi/), the `build` permission is returned as *explore*. For example, a string with the *read*, *reshare* and *build* permissions, will look like this: `ReadReshareExplore`.
+In the [Power BI REST APIs](/rest/api/power-bi/), the `build` permission is returned as *explore*. For example, a string with the *read*, *reshare* and *build* permissions, looks like this: `ReadReshareExplore`.
 
 When you give a user `build` permission, they can build new content on your semantic model. Examples of content they can build are reports, dashboards, pinned tiles from Q&A, paginated reports, and Insights Discovery.
 
@@ -88,7 +88,7 @@ Users also need `build` permissions to work with data outside Power BI:
 
 ### Row-level security
 
-For a semantic model that uses row-level security (RLS), any permissions *higher* than `build` will enable the user to view all the data in the semantic model. `Build`, and permissions lower than `build`, will only give the semantic model user access to the data they're allowed to see as configured in your RLS settings.
+For a semantic model that uses row-level security (RLS), any permissions *higher* than `build` enables the user to view all the data in the semantic model. `Build`, and permissions lower than `build`, only give the semantic model user access to the data they're allowed to see as configured in your RLS settings.
 
 ### Get and update semantic model permissions with APIs
 
@@ -107,9 +107,7 @@ For a semantic model that uses row-level security (RLS), any permissions *higher
   * [Datasets - Get Dataset Users](/rest/api/power-bi/datasets/get-dataset-users)
   * [Datasets - Get Dataset Users In Group](/rest/api/power-bi/datasets/get-dataset-users-in-group)
 
-## Considerations and limitations
-
-Each of the above APIs comes with certain limitations regarding who can use them and how. To see the limitations of each API, select the link for that API.
+Each of these APIs comes with certain limitations regarding who can use them and how. To see the limitations of each API, select the link for that API.
 
 ## Related content
 

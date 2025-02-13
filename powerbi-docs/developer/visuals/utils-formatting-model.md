@@ -8,7 +8,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 10/23/2023
+ms.date: 10/23/2024
 ms.custom: engagement-fy23
 ---
 
@@ -347,7 +347,7 @@ new formattingSettings.ColorPicker({
 
 ## Reset settings to default
 
-Formatting model utils will enable you to [reset settings to default](./format-pane-example.md#reset-settings-to-default) by automatically adding all the formatting properties descriptors to the formatting card list of features to revet to default descriptors `revertToDefaultDescriptors`.
+Formatting model utils enable you to [reset settings to default](./format-pane-example.md#reset-settings-to-default) by automatically adding all the formatting properties descriptors to the formatting card list of features to revet to default descriptors `revertToDefaultDescriptors`.
 
 You can enable resetting formatting settings from:
 
