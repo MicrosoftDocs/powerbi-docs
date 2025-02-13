@@ -108,6 +108,7 @@ Dataflows that exist in Premium have the following considerations and limitation
 * A linked table can't be joined with a regular table that gets its data from an on-premises data source.
 
 * When a query (query *A*, for example) is used in the calculation of another query (query *B*) in dataflows, query *B* becomes a calculated table. Calculated tables can't refer to on-premises sources.
+* Linked tables that reference entities in different tenants aren't supported. 
 
 
 **Compute Engine:**
