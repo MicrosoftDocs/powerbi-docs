@@ -1,8 +1,8 @@
 ---
 title: Create a relative time slicer or filter in Power BI
 description: Learn how to use a slicer or filter to constrain relative time ranges in Power BI.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

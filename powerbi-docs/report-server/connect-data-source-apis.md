@@ -1,8 +1,8 @@
 ---
 title: Change data source connection strings with PowerShell
 description: Change data source connection strings using APIs in PowerShell - Power BI Report Server.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

@@ -1,8 +1,8 @@
 ---
 title: Access shared semantic models in Power BI as a guest user from an external organization (preview)
-description: How to access and build reports with semantic models shared externally in your own tenant if you are a data consumer.
-author: ajburnle
-ms.author: ajburnle
+description: How to access and build reports with semantic models shared externally in your own tenant if you're a data consumer.
+author: kfollis
+ms.author: kfollis
 manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -17,7 +17,7 @@ LocalizationGroup: Administration
 External data consumers can view and access semantic models in their own tenants that have been shared with them by a data provider via in-place semantic model sharing (preview). A data consumer is a user who doesn't own the semantic model, but needs to access it. This article provides guidance on how to access and build reports in your own tenant based on external semantic models in other tenants that have been shared with you.
 
 ## Enable the shared semantic models preview feature
-Before you can access the semantic models shared in-place, you'll need to enable the feature in the *Preview features* option of your Power BI desktop:  
+Before you can access the semantic models shared in-place, you need to enable the feature in the *Preview features* option of your Power BI desktop:  
 
 1. In your tenant, go to **Options & settings**.
 
@@ -28,7 +28,7 @@ Before you can access the semantic models shared in-place, you'll need to enable
 1. Select the checkbox next to the **Connect to external semantic models shared with me** option. 
 
 ## Access shared semantic models
-Once enabled on provider side, consumers will be able to see the semantic models in the OneLake data hub in Power BI Desktop, on a tab called *External data*. Use the following instructions to access and build reports with a semantic model that a data provider shared to your tenant:
+Once enabled on provider side, consumers can see the semantic models in the OneLake catalog in Power BI Desktop, on a tab called *External data*. Use the following instructions to access and build reports with a semantic model that a data provider shared to your tenant:
 
 > [!IMPORTANT]
 > If external sharing is ever disabled by the provider, reports built on top of the external semantic model will lose functionality within a few minutes and display an error message.
@@ -37,7 +37,7 @@ Once enabled on provider side, consumers will be able to see the semantic models
  
 1. Select **External data** to see a list of external semantic models that have been shared with you.
 
-1. Select the semantic model you wish to access or build a report with. Once you select the semantic model it becomes a [*composite model*](../transform-model/desktop-composite-models.md). 
+1. Select the semantic model you wish to access or build a report with. Once you select the semantic model, it becomes a [*composite model*](../transform-model/desktop-composite-models.md). 
 
 1. Once you've accessed the semantic model, you can perform one of the following actions: 
 

@@ -5,8 +5,8 @@ ms.date: 06/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Display page numbers or other paginated report properties (Power BI Report Builder)

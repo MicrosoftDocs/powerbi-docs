@@ -1,8 +1,8 @@
 ---
 title: Work with third-party apps in Power BI
 description: Learn how to integrate a third-party app with Power BI and then revoke permissions to an application at any time.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Sign up or purchase the Power BI service as an individual
 description: Learn how to sign up for or purchase the Power BI service and begin using it for your individual data analysis and visualization needs.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
@@ -55,7 +55,7 @@ Microsoft publishes *get started* buttons for new Power BI users. Some of these 
 
     Because you're a new user, Power BI opens your **Home** screen. **Home** contains resources to help you get started.
 
-    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-home.png" alt-text="Screenshot of your Power BI Home screen.":::
+    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-homes.png" alt-text="Screenshot of your Power BI Home screen.":::
 
 1. You might even receive a pop-up with suggestions to get started. Here's one example.
 

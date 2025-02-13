@@ -1,8 +1,8 @@
 ---
 title: "Enter data directly into a paginated report in Report Builder"
 description: Learn how you can enter data directly into a paginated report as an embedded dataset in Report Builder. 
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

@@ -1,15 +1,16 @@
 ---
-title: Feature availability for users with Free licenses in the Power BI service
-description: Explanation and chart showing features available to consumers and Free users.
+title: Feature availability for Free users in Power BI service
+description: Detailed explanation and comprehensive chart showing features available to consumers and Free users in the Power BI service.
 author: haydnr
 ms.author: haydnr
-ms.reviewer:  mihart
+ms.reviewer:  kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: conceptual
-ms.date: 11/18/2022
+ms.topic: concept-article
+ms.date: 12/30/2024
 ms.custom: licensing support
 LocalizationGroup: consumers
+#customer intent: As a Fabric user I want to understand feature availability for the Power BI service.
 ---
 
 # Interact with the Power BI service as a *Free user*
@@ -17,7 +18,6 @@ LocalizationGroup: consumers
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 As a Power BI service user with a free license, you explore content (such as reports, apps, scorecards, dashboards, and more) in order to make business decisions. That content is created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. In order to share it with users with free licenses, designers need to publish that content to a group workspace backed by a Premium capacity. Premium capacity provides the benefit of unlimited content sharing. Sometimes, designers share content by sending you links to content such as a Power BI app [Apps in the Power BI service](end-user-apps.md), and sometimes the [content automatically installs](end-user-apps.md) and appears in Power BI under **Apps** or **Browse** > **Shared with me**.
-
 There are many different ways designers can share content. But this article is for Power BI users with a free license, and therefore only describes how "free users" receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ![Power BI navigation pane](media/end-user-features/power-bi-shared.png)
@@ -69,37 +69,37 @@ The second column represents a free user working with content in a workspace tha
 
 ### Legend
 
-![green dot](media/end-user-license/power-bi-green-dot.png)  feature is available in the current scenario    
-![orange x](media/end-user-features/orange-x.png)  feature is not available in the current scenario    
- **![green mw](media/end-user-features/green-mwo.png)** feature availability is limited to **My workspace**. Content in **My workspace** is for the owner's personal use and cannot be viewed by anyone else in Power BI.    
- \*  access to this feature can be turned on or off by a Pro user or an admin.    
+![green dot](media/end-user-license/power-bi-green-dot.png)  feature is available in the current scenario
+![orange x](media/end-user-features/orange-x.png)  feature is not available in the current scenario
+ **![green mw](media/end-user-features/green-mwo.png)** feature availability is limited to **My workspace**. Content in **My workspace** is for the owner's personal use and cannot be viewed by anyone else in Power BI.
+ \*  access to this feature can be turned on or off by a Pro user or an admin.
  <br><br>
 
 ### Feature list
 
-|Features   | Scenario 1: Power BI Free user who has no access to content hosted in Premium capacity.    | Scenario 2: Power BI Free user with **Viewer** permissions to content stored in Premium capacity.  |
+|Features   | Scenario 1: Free user who has no access to content hosted in Premium capacity.    | Scenario 2: Free user with **Viewer** permissions to content stored in Premium capacity.  |
 |---|---|---|
 |**Apps** 
-|Installs automatically | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)*| 
-|Open | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
+|Installs automatically | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)*|
+|Open | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |Favorite | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
  |Edit, update, republish |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |Create new app |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
- |AppSource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
+ |AppSource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Organization store: download and open|![orange x](media/end-user-features/orange-x.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |
 | Reshare an app | ![orange x](media/end-user-features/orange-x.png)  | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
  |**Workspaces in Premium capacity**
 | Create, edit, or delete workspace or content  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
-|Add endorsements | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
-|Open and view  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
+|Add endorsements | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
+|Open and view  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  |
 | Read data stored in workspace dataflows |![orange x](media/end-user-features/orange-x.png) |![green dot](media/end-user-license/power-bi-green-dot.png)|
 |**Dashboards**
-|Receive, view, and interact with dashboards from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
-| Add alerts to tiles  |  ![green myw](media/end-user-features/green-mwo.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
-| View and respond to comments from others: add your own comments  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)*  | 
-| Save a copy | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) | 
+|Receive, view, and interact with dashboards from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  |
+| Add alerts to tiles  |  ![green myw](media/end-user-features/green-mwo.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  |
+| View and respond to comments from others: add your own comments  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)*  |
+| Save a copy | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
 |Copy visual as an image? |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)|
-|Create, edit, update, delete | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) | 
+|Create, edit, update, delete | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
 |Export tile to .csv |![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Favorite |![green myw](media/end-user-features/green-mwo.png)| ![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Full screen and focus modes |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |

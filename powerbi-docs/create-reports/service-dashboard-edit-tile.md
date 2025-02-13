@@ -1,8 +1,8 @@
 ---
 title: Create or edit a dashboard tile
 description: Learn how to create, edit, resize, move, rename, pin, delete, and add hyperlinks to a dashboard tile.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.custom: video-removed
 ms.service: powerbi

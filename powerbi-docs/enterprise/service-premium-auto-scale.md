@@ -16,8 +16,6 @@ LocalizationGroup: Premium
 
 Power BI Premium offers scale and performance for Power BI content in your organization. Power BI Premium offers improvements such as enhanced performance, greater scale, improved metrics. In addition, Premium enables customers to automatically add compute capacity to avoid slowdowns under heavy use, using **Autoscale**.
 
-:::image type="content" source="media/service-premium-auto-scale/service-premium-auto-scale-on.png" alt-text="Screenshot of the Power BI Admin portal screen showing P1 capacity settings.":::
-
 Autoscale uses an Azure subscription to automatically use more v-cores (virtual CPU cores) when the computing load on your Power BI Premium subscription would otherwise be slowed by its capacity. This article describes the steps necessary to get Autoscale working for your Power BI Premium subscription and the conditions under which Autoscale is enabled. Autoscale only works with Power BI Premium.
 
 To enable Autoscale, the following steps need to be completed:
@@ -68,8 +66,6 @@ The following steps show you how to enable and associate Autoscale with the reso
 
 1. Open the **Power BI Admin portal** and select **Capacity settings** from the left pane. Information about your Power BI Premium capacity appears.
 
-    :::image type="content" source="media/service-premium-auto-scale/service-premium-auto-scale-off-p2.png" alt-text="Screenshot of the Power BI Admin portal showing capacity settings. Autoscale off and the manage Autoscale button are highlighted.":::
-
 1. Select **Manage Autoscale**  to enable and configure **Autoscale**. The **Autoscale settings** pane appears. Select  **Enable Autoscale**.
 
     :::image type="content" source="media/service-premium-auto-scale/service-premium-auto-scale-settings-p2.png" alt-text="Screenshot of selecting the Autoscale settings page. The enable Autoscale check box is highlighted.":::
@@ -78,13 +74,7 @@ The following steps show you how to enable and associate Autoscale with the reso
 
     :::image type="content" source="media/service-premium-auto-scale/service-premium-auto-scale-settings-p2-02.png" alt-text="Screenshot of the Autoscale settings page showing subscription, resource group and Autoscale max settings..":::
 
-1. Power BI applies your changes, then closes the pane and returns the view to **Capacity settings** with the settings you applied. The following image shows the maximum v-cores configured for Autoscale.
-
-    :::image type="content" source="media/service-premium-auto-scale/service-premium-auto-scale-on-p2.png" alt-text="Screenshot of the capacity settings screen after Autoscale is set to on and configured.":::
-
-The following short video shows how quickly you can configure Autoscale for Power BI Premium:
-
-:::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Animation that shows how to configure Autoscale for Premium Generation 2.":::
+1. Power BI applies your changes, then closes the pane and returns the view to **Capacity settings** with the settings you applied.
 
 ## When is Autoscale triggered?
 
@@ -104,14 +94,10 @@ To disable Autoscale, follow these steps:
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [What is Power BI Premium?](service-premium-what-is.md)
+* [What is Power BI Premium?](service-premium-what-is.md)
 
-> [!div class="nextstepaction"]
-> [Power BI Premium FAQ](service-premium-faq.yml)
+* [Power BI Premium FAQ](service-premium-faq.yml)
 
-> [!div class="nextstepaction"]
-> [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
+* [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 
-> [!div class="nextstepaction"]
-> [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
+* [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)

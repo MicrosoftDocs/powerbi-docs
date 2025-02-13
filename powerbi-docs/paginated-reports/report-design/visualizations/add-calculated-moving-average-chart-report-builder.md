@@ -5,8 +5,8 @@ ms.date: 11/07/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Add a calculated moving average to a series on a chart (Power BI Report Builder)

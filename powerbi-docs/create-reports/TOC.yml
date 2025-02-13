@@ -354,8 +354,6 @@
       href: ../visuals/power-bi-line-chart.md
     - name: Paginated report visuals
       href: ../visuals/paginated-report-visual.md
-    - name: Metrics visuals
-      href: ../visuals/power-bi-visualization-scorecard-visual.md
     - name: Maps
       items: 
       - name: Shape map visuals (preview)
@@ -567,7 +565,7 @@
       - name: Create automated status rules
         href: service-goals-status-rules.md
       - name: Create and add scorecards to reports
-        href: ../visuals/power-bi-visualization-scorecard-visual.md 
+        href: service-goals-create.md 
       - name: Hierarchies in scorecards
         items: 
         - name: Get started with hierarchies

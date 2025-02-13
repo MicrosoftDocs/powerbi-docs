@@ -1,14 +1,14 @@
 ---
 title: Print from the Power BI service
 description: Learn how to adjust print settings and print a dashboard, tile, or report page from the Power BI service.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/22/2023
+ms.date: 01/08/2025
 LocalizationGroup: Common tasks
 ---
 # Print from the Power BI service
@@ -48,7 +48,7 @@ Experiment with your browser's settings until you get the look you like. Some br
 
 1. In the upper left corner, select **File** > **Print this page**.
 
-   :::image type="content" source="./media/end-user-print/power-bi-dashboard-print-options.png" alt-text="Screenshot of the dropdown File menu expanded, and Print the page selected.":::
+   :::image type="content" source="./media/end-user-print/power-bi-dashboard-print-option.png" alt-text="Screenshot of the dropdown File menu expanded, and Print the page selected.":::
 
 1. If your report has a sensitivity label, decide whether you should print the report or not. 
 
@@ -85,10 +85,10 @@ Experiment with your browser's settings until you get the look you like. Some br
    :::image type="content" source="./media/end-user-print/power-bi-scale.png" alt-text="Screenshot of Print window with print settings displayed.":::
 
 > [!TIP]
-> If you've followed all these steps and your tile still isn't displaying the way you want it to, try the following.
-> 1. Open the Print window and make the changes to the print settings that you believe will result in the best printout. For example, change the layout, margins, and scale.
+> If you've followed all these steps and your tile still isn't displaying the way you want it to, try these steps.
+> 1. Open the Print window and make changes to the print settings. For example, change the layout, margins, and scale.
 > 1. Select **Cancel** (instead of **Print**).
-> 1. Go through steps 1-5 again. Your tile will adjust to the new Print window settings and be ready to print.
+> 1. Go through steps 1-5 again. Your tile adjusts to the new Print window settings and is ready to print.
 
 #### [Report page](#tab/page)
 
@@ -98,7 +98,7 @@ Reports can be printed one page at a time.
 
 1. Open the report, select **File** > **Print this page** to print the current report page.
 
-    :::image type="content" source="./media/end-user-print/power-bi-print-report.png" alt-text="Screenshot of the file menu open and Print this page selected.":::
+    :::image type="content" source="./media/end-user-print/power-bi-print-reports.png" alt-text="Screenshot of the file menu open and Print this page selected.":::
 
 1. If your report has a sensitivity label, decide whether you should print the report or not. 
 
@@ -117,7 +117,7 @@ Reports can be printed one page at a time.
 
 1. In the upper left corner, select **File** > **Print this page** to print the visual.
 
-    :::image type="content" source="./media/end-user-print/power-bi-visual-print.png" alt-text="Screenshot of the Power BI service File menu open and Print this page selected.":::
+    :::image type="content" source="./media/end-user-print/power-bi-visuals-print.png" alt-text="Screenshot of the Power BI service File menu open and Print this page selected.":::
 
 1. If your report has a sensitivity label, decide whether you should print the report or not. 
 
@@ -134,7 +134,7 @@ Q: Why can't I print all the report pages at once?</br>
 A: Report pages can only be printed one page at a time.
 
 Q: Why can't I print to PDF?</br>
-A: You have this option only if you already configured the PDF driver in your browser. If you don't see this option, your administrator might have disabled print to PDF.
+A: You have this option only if you already configured the PDF driver in your browser. If you don't see this option, check to see if your administrator has disabled print to PDF.
 
 Q: Why doesn't my browser match the screenshots when I select **Print**?</br>
 A: The Print screens vary by browser and software version.

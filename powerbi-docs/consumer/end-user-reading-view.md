@@ -1,11 +1,11 @@
 ---
 title: Power BI consumer and end user and business user capabilities in Power BI service
 description: In this quickstart, **business users** learn about Power BI, apps, reports, and dashboards.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 services: powerbi
 documentationcenter: ''
-ms.reviewer: mihart
+ms.reviewer: kfollis
 editor: ''
 tags: ''
 ms.service: powerbi
@@ -13,7 +13,7 @@ ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/12/2024
+ms.date: 01/09/2025
 ms.custom: mode-portal, intro-quickstart
 ---
 # Quickstart: learn about the Power BI capabilities for *business users*
@@ -62,7 +62,7 @@ An *app* is a Power BI content type that combines related dashboards, reports, w
 
 One way to view your apps is to select **Apps** from the nav pane and choose an app to open.
 
-![Screenshot of Apps screen showing eight different apps.](./media/end-user-reading-view/power-bi-app.png)
+![Screenshot of Apps screen showing eight different apps.](./media/end-user-reading-view/power-bi-apps.png)
 
 To learn more about viewing apps, see [Power BI apps.](end-user-apps.md)
 
@@ -156,7 +156,7 @@ Hover over a visual and select the **Focus mode** icon ![select Focus mode from 
 
 ![Screenshot with arrow pointing to the icon for Focus mode.](media/end-user-reading-view/power-bi-fullscreen.png)
 
-![Screenshot showing the focus mode visual filling the entire canvas.](media/end-user-reading-view/power-bi-fullscreen-after.png)
+![Screenshot showing the focus mode visual filling the entire canvas.](media/end-user-reading-view/power-bi-fullscreen-last.png)
 
 To display that same visualization without the distraction of menu bars, filter pane, and other chrome--select **Full screen** from the View dropdown.   
 
@@ -182,7 +182,7 @@ A Power BI visualization is constructed using data from underlying semantic mode
 
 With a visual active, select **More options** (...) and choose **Show as a table**.
    
-   ![Screenshot showing an area chart at top and a table with the data below.](../create-reports/media/end-user-show-data/power-bi-show-data-table.png)
+   ![Screenshot showing an area chart at top and a table with the data below.](media/end-user-reading-view/power-bi-show-data-table.png)
 
 
 ### Export data to Excel

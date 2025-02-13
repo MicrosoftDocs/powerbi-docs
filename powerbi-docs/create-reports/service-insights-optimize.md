@@ -1,8 +1,8 @@
 ---
 title: Optimize your data for Power BI Quick Insights
 description: Learn how to optimize your data for Power BI Quick Insights and what to do if Power BI doesn't find insights in your data.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai

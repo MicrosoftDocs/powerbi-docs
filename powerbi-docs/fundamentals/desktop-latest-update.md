@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 01/14/2025
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -16,9 +16,9 @@ ms.collection: ce-skilling-ai-copilot
 # What's new in Power BI?
 
 
-## November 2024 Update (2.138.782.0)
+## January 2025 Update (2.139.1576.0)
 
-In November we are thankful for the basket of new features and capabilities that we can harvest, cook into new insights, and share.
+In January we are celebrating a new year, a quarter century of data and insights, and sharing fresh new features and capabilities that we resolve to use and make our business intelligence insights beautiful and useful.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -45,31 +45,42 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 
-
 ### Copilot and AI
-* Copilot summaries in subscriptions (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1899056780)  [[video]](https://youtu.be/4MmIZEwVGbc?t=105)  [[article]](/power-bi/create-reports/copilot-summaries-in-subscriptions)
+* Unlock suggested questions from standard prompts in Copilot [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc1114382971)  [[video]](https://youtu.be/4MmIZEwVGbc?t=105)  [[article]](../natural-language/q-and-a-tooling-intro.md)
 
 
 ### Reporting
-* Path Layer for the Azure Map visual [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc11532613)  [[video]](https://youtu.be/4MmIZEwVGbc?t=465)  [[article]](/azure/azure-maps/power-bi-visual-add-path-layer)
-* Visual calculations update (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1846585157)  [[video]](https://youtu.be/4MmIZEwVGbc?t=382)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
-* *Set Alert* with Activator and Real-Time Intelligence (general availability) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1880210733)  [[video]](https://youtu.be/4MmIZEwVGbc?t=417)  [[article]](https://aka.ms/realtimeblog)
-* Small multiples for the new card visual (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc777943875)  
-* New visual - text slicer (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc268922914)
+* Explore this data: new entry point from a visual  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc919367718)  [[video]](https://youtu.be/Q2QGthxblNU)  [[article]](https://powerbi.microsoft.com/blog/introducing-explore-public-preview/)
+* Storytelling in PowerPoint - new reset behavior (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc1697724845)  [[video]](https://youtu.be/Q2QGthxblNU)  
+* Storytelling in PowerPoint - supporting page up and down (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc1043513013)  [[video]](https://youtu.be/Q2QGthxblNU)  
+* Save to OneDrive and SharePoint: updated file picker (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc1013689541)  [[video]](https://youtu.be/Q2QGthxblNU)  [[article]](../create-reports/desktop-sharepoint-save-share.md#background-upload-for-existing-power-bi-files-in-onedrive-and-sharepoint-preview)
+* Enhancement to Text slicer (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc1250002290)  
+* Enhancements to Treemap visual  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc1870778155)
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 
 
+
+
 ### Modeling
-* Define new measure in DAX query view quick queries [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1012707413)  [[video]](https://youtu.be/4MmIZEwVGbc?t=879)  [[article]](../transform-model/dax-query-view.md#quick-queries)
-* Performance improvements for models with calculation groups and format strings in Excel [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc590458605)  [[video]](https://youtu.be/4MmIZEwVGbc?t=933)  
-* DLP policies restrict access action for semantic models (public preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1145376750)  
-* Semantic modeling in Visual Studio Code with the new TMDL extension (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc351002445)  [[video]](https://youtu.be/4MmIZEwVGbc?t=1217)  [[article]](/analysis-services/tmdl/tmdl-overview)
+* Semantic model version history (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc1454987379)  [[video]](https://youtu.be/TtyMWWsw4K4)  [[article]](../transform-model/service-semantic-model-version-history.md)
+* Edit your data model in the Power BI service - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc1552559251)  [[video]](https://youtu.be/TtyMWWsw4K4)  [[article]](https://go.microsoft.com/fwlink/?linkid=2232209)
+* Live edit of semantic models in Direct Lake mode with Power BI Desktop - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc909037510)  [[article]](/fabric/get-started/direct-lake-power-bi-desktop)
+* TMDL scripting experience (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc2113520977)  [[video]](https://youtu.be/TtyMWWsw4K4)  [[article]](https://aka.ms/tmdlview)
+
+
+### Data connectivity
+* New Snowflake connector implementation (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc335309674)  [[video]](https://youtu.be/4MmIZEwVGbc?t=1217)   [[video]](https://youtu.be/QIodsaslXmo)  [[article]](/power-query/connectors/snowflake)
+
 
 ### Visuals
-* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc391990696)  
+* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc196180250)  
+
+
+### Other
+* Now in Power BI Desktop - OneLake catalog  [[blog]](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/#post-28821-_Toc1446369183)  
 
 
 
@@ -78,25 +89,24 @@ The following updates are new to Power BI Desktop this month:
 The following updates are new to the Power BI service this month:
 
 ### Other
-* Support for Power BI language settings when a paginated report is viewed in the Power BI service  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1896883637)  [[video]](https://youtu.be/4MmIZEwVGbc?t=1519)  [[article]](../paginated-reports/paginated-localization.md)
+* There are no updates to the Power BI service this month.
 
 
 ---
 
 
 
-For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/).
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-january-2025-feature-summary/).
 
 
 ### Power BI monthly update video
-The following video describes many of these updates. You can also watch this video from the blog post.
+The following video playlist describes many of these updates. You can also watch the included videos from the blog post.
 
+[[Video Playlist]](https://www.youtube.com/playlist?list=PL1N57mwBHtN0tNujT3DVGCCqeLBw39QS7)
 
-
-> [!VIDEO https://www.youtube.com/embed/4MmIZEwVGbc]
 
 > [!NOTE]
-> The video might use earlier versions of Power BI Desktop or the Power BI service.
+> The videos might use earlier versions of Power BI Desktop or the Power BI service.
 
 
 

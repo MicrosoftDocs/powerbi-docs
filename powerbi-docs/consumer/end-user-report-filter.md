@@ -1,15 +1,15 @@
 ---
 title: Tour the report Filters pane
 description: Learn how to use the Filer Pane in the Power BI service and discover new insights and different ways to filter your data.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.custom:  
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Use filters in a report
 ms.topic: how-to
-ms.date: 02/16/2023
+ms.date: 01/09/2025
 LocalizationGroup: Reports
 ---
 
@@ -21,7 +21,7 @@ This article explains how to use the report **Filters** pane in the Power BI ser
 
 There are many different ways to filter data in Power BI. For example, you can filter data by selecting data points on a report visual to filter other visuals on the page&mdash;this is called **cross-filtering** and **cross-highlighting**. For more information, see [How visuals cross-filter each other in a Power BI report](end-user-interactions.md).
 
- :::image type="content" source="media/end-user-report-filter/power-bi-reports.png" alt-text="Screenshot of a report open in the Power BI service with the Filters pane selected.":::
+ :::image type="content" source="media/end-user-report-filter/power-bi-report.png" alt-text="Screenshot of a report open in the Power BI service with the Filters pane selected.":::
 
 ## Work with the report Filters pane
 

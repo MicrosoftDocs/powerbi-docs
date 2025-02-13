@@ -1,9 +1,9 @@
 ---
-author: mihart
+author: kfollis
 ms.service: powerbi
 ms.topic: include
 ms.date: 08/15/2019
-ms.author: mihart
+ms.author: kfollis
 ---
 
 >[!NOTE]

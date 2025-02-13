@@ -1,13 +1,13 @@
 ---
 title: Show the data that was used to create the report visual
 description: Learn how Power BI business users can "see" the data used to create a report visual by showing it as a table.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/23/2023
+ms.date: 01/01/2025
 LocalizationGroup: Visualizations
 ---
 # Show the data used to create a Power BI visual
@@ -89,11 +89,11 @@ When you select **Show as a table** or **Show data point as a table**, Power BI 
 
 3. By default, the data appears below the visual.
    
-   :::image type="content" source="./media/end-user-show-data/power-bi-show-data-table.png" alt-text="Screenshot showing the visual with a table below it.":::
+   :::image type="content" source="./media/end-user-show-data/power-bi-show-data-tables.png" alt-text="Screenshot showing the visual with a table below it.":::
 
 4. To change the orientation, select the vertical layout icon :::image type="icon" source="media/end-user-show-data/power-bi-vertical-icon-new.png"::: from the upper-right corner of the canvas.
    
-   :::image type="content" source="./media/end-user-show-data/power-bi-show-horizontal.png" alt-text="Screenshot showing the visual with a table next to it.":::
+   :::image type="content" source="./media/end-user-show-data/power-bi-show-horizontals.png" alt-text="Screenshot showing the visual with a table next to it.":::
 
 5. To export the data to a .csv file, select the ellipses and choose **Export data**. 
 

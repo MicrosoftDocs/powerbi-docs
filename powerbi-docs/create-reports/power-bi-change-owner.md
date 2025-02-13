@@ -1,8 +1,8 @@
 ---
 title: Change the owner of a report
 description: Learn how to change report owners.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

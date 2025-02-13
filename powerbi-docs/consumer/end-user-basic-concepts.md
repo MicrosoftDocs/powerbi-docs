@@ -1,9 +1,9 @@
 ---
 title: The Power BI service - basic concepts for beginners
 description: The Power BI service apps, workspaces, dashboards, reports, semantic models, and workbooks.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -69,7 +69,7 @@ Everyone using the Power BI service also has a **My workspace**. **My workspace*
 
 To see your workspaces in Power BI select **Workspaces** from your navigation pane.
 
-:::image type="content" source="media/end-user-basic-concepts/power-bi-workspaces.png" alt-text="Screenshot of Power BI with Workspaces selected.":::
+:::image type="content" source="media/end-user-basic-concepts/power-bi-workspace.png" alt-text="Screenshot of Power BI with Workspaces selected.":::
 
 [Learn more about workspaces.](end-user-workspaces.md)
 _______________________________________________________
@@ -198,7 +198,7 @@ In Power BI on your mobile device, you can only install apps from a direct link,
 
 Once you install the app, just select it from your Apps list and choose which dashboard or report to open and explore first.
 
-![Screenshot of Apps selected in the left pane of Power BI.](media/end-user-basic-concepts/power-bi-apps-card.png)
+![Screenshot of Apps selected in the left pane of Power BI.](media/end-user-basic-concepts/power-bi-apps-cards.png)
 
 Now that you have an understanding of the building blocks that make up the Power BI service for *business users*, continue learning using these links. Or, [start using the Power BI service](end-user-experience.md) with some sample data. 
 

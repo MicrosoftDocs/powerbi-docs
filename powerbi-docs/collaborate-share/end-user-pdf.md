@@ -1,14 +1,14 @@
 ---
 title: Export reports to PDF
 description: Learn how to export a Power BI report to PDF.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.custom:  
 ms.reviewer: mibruhjell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/05/2024
+ms.date: 01/17/2025
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -32,7 +32,7 @@ If your report has a sensitivity label, the label and any encryption settings ca
 1. In the service, select a report to display it on the canvas. You can select a report from your **Home** page, **Apps**, or any other container from the nav pane.
 1. In the Power BI service, select **Export** > **PDF** from the menu bar.
 
-    ![Select Export from the menu bar](media/end-user-pdf/power-bi-export-pdfs.png)
+    ![Screenshot showing how to select Export from the menu bar.](media/end-user-pdf/power-bi-export-pdf.png)
 
     A pop-up appears where you can select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in its original state, as the *designer* shared it, and doesn't reflect any changes you made to that original state.
     
@@ -42,16 +42,16 @@ If your report has a sensitivity label, the label and any encryption settings ca
     
     A progress bar displays in the upper-right corner. Exporting might take a few minutes. You can continue to work in the Power BI service while the report is being exported.
 
-    ![Export progress message](media/end-user-pdf/power-bi-export-progress.png)
+    ![Image of the Export progress message.](media/end-user-pdf/power-bi-export-progress.png)
 
     After the Power BI service finishes the export process, the notification banner changes to let you know. In Microsoft Edge, you are prompted to save or open the PDF. 
 
-    :::image type="content" source="media/end-user-pdf/power-bi-exports.png" alt-text="Select to open or save the PDF.":::
+    :::image type="content" source="media/end-user-pdf/power-bi-exports.png" alt-text="Screenshot of selecting the option to open or save the PDF.":::
 
 
     In Google Chrome, the file options display in the lower left corner of the browser. 
 
-    :::image type="content" source="media/end-user-pdf/power-bi-export-done.png" alt-text="Lower left corner of Chrome browser showing PDF options":::
+    :::image type="content" source="media/end-user-pdf/power-bi-export-end.png" alt-text="Screenshot showing the PDF options in the left corner of s Chrome browser.":::
 
     If you make no selection, by default, the PDF is saved in your **Downloads** folder. 
 
@@ -95,6 +95,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
     - [Power Automate visuals](../create-reports/power-bi-automate-visual.md) 
     - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - Visio visuals
+    - [The Copilot narrative visual](../create-reports/copilot-narrative-visual-embed-power-bi.md)
 * Visual [displayed as a Data point table or displayed with "Show data point as a table,"](../consumer/end-user-show-data.md) can't be exported to PDF.
 
 ### Reports that can't be exported
@@ -115,6 +116,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 * The Power BI service uses your Power BI language setting as the language for the PDF export. To see or set your language preference, select the cog icon ![Screenshot of the cog icon.](media/end-user-pdf/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 
 * Reports with unusual custom page sizes may experience issues in export scenarios. For best results, consider switching to a standard page size for your report.
+* Hidden pages will not be included in report exports and subscriptions. You can export hidden pages by going to the report in the Power BI service and exporting to the format of choice.
 * Reports using themes with custom fonts will have the custom font replaced with a default font.
 * While we look to provide a consistent experience, we can't guarantee the exported PDF from the Power BI service will always match the exported PDF from a local Power BI Desktop file.
 * We can't guarantee precise fidelity for Power BI reports. The resolution of exported report pages is 1,280 pixels x 720 pixels. 

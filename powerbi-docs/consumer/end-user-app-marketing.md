@@ -1,9 +1,9 @@
 ---
 title: Install and use the Sales and Marketing app in the Power BI service
 description: Learn how to install the Sales and Marketing app from Power BI AppSource so that you can use sample data to explore the Power BI service.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

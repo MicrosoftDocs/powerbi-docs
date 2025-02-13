@@ -1,8 +1,8 @@
 ---
 title: Evaluation configuration settings for Desktop
 description: How to configure evaluation configuration settings for Desktop in the registry
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

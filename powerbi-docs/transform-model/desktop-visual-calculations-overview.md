@@ -248,10 +248,10 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't filter on visual calculations.
 * A visual calculation can't refer to itself on the same or different detail level.
 * [Personalization](../consumer/end-user-personalize-visuals.md) of visual calculations or hidden fields isn't available.
+* You can't pin a visual that uses visual calculations or hidden fields to [a dashboard](../create-reports/service-dashboards.md).
 * You can't use the [Publish to web](../collaborate-share/service-publish-to-web.md) functionality with reports that use visual calculations or hidden fields.
 * When exporting data from visuals, visual calculation results are not included in the [underlying data](../visuals/power-bi-visualization-export-data.md) export. Hidden fields are never included in the export, except when exporting the [underlying data](../visuals/power-bi-visualization-export-data.md).
 * You can't use the *see records* drill-through functionality with visuals that use visual calculations or hidden fields.
-* You can't apply [conditional formatting](../create-reports/desktop-conditional-table-formatting.md) on visual calculations.
 * You can't set [data categories](desktop-data-categorization.md) on visual calculations.
 * You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
 * You can't change the sort order for visual calculations.

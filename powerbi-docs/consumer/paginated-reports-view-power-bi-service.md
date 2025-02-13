@@ -1,8 +1,8 @@
 ---
 title: "View a paginated report in the Power BI service"
 description: Learn how you can view a paginated report in the Power BI service that has parameters and then export it to  a different format.  
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: pbi-explore
