@@ -98,10 +98,10 @@ When you've sufficiently identified and described the content you'll create, you
 
 ## Decide how content creators should collaborate
 
-As a solution increases in scope and complexity, it might become necessary for multiple content creators and owners to work in collaboration. When creating complex solutions, we recommend that you use effective tools that help structure, manage, and support collaboration. There are many ways to collaborate when producing Power BI content, such as by using Microsoft Teams or Azure DevOps.
+As a solution increases in scope and complexity, it might become necessary for multiple content creators and owners to work in collaboration. When creating complex solutions, we recommend that you use effective tools that help structure, manage, and support collaboration. There are many ways to collaborate when producing Power BI content, such as by using Microsoft Teams, Azure DevOps, or GitHub.
 
 > [!TIP]
-> Even when content creators work independently, they can still benefit from planning and structuring their work by using tools such as Microsoft Teams and Azure DevOps.
+> Even when content creators work independently, they can still benefit from planning and structuring their work by using tools such as Microsoft Teams, Azure DevOps, or GitHub. This is especially important when you plan how to deploy content, such as by using [OneDrive Refresh](../connect-data/refresh-desktop-file-onedrive) from a Microsoft Teams documents library or [Git integration](/fabric/cicd/git-integration/intro-to-git-integration?tabs=azure-devops) from an Azure DevOps or GitHub repo.
 
 ### Microsoft Teams
 
@@ -165,10 +165,18 @@ We recommend that you define a structured process for how content creators shoul
 - How and when changes are deployed to development, test, and production workspaces.
 - How and when deployed changes or versions of the solution can be rolled back.
 
+### GitHub
+
+Content creators and owners can also communicate and collaborate by using [GitHub](https://github.com/) (cloud versions only) and [GitHub Enterprise](https://github.com/enterprise). Similar to Azure DevOps, GitHub provides a platform with services that you can use to help orchestrate and manage aspects of your Power BI or Fabric environment. 
+
+The main difference between Azure DevOps and GitHub is that while Azure DevOps provides a suite of tools for managing the software development lifecycle, GitHub focuses mainly on hosting Git repositories, source control, and collaboration on code. You mainly use GitHub when you plan to [deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md) by using [Git integration](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=azure-devops%2CGitHub%2Ccommit-to-git). Additionally, you can use GitHub to sync content from a [public, open-source repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility) to a workspace.
+
+To use Git integration with GitHub, you have to enable the admin tenant setting [_Users can sync workspace items with GitHub repositories_](https://learn.microsoft.com/en-us/fabric/admin/git-integration-admin-settings#users-can-sync-workspace-items-with-github-repositories).
+
 > [!NOTE]
-> You can also use Microsoft Teams together with Azure DevOps because there are different ways to integrate these services. For instance, you can view and manage [Azure Boards](/azure/devops/boards/integrations/boards-teams?view=azure-devops&preserve-view=true) and monitor events in [Azure Pipelines](/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops&preserve-view=true) from within Microsoft Teams.
+> You can also use Microsoft Teams together with Azure DevOps or GitHub because there are different ways to integrate these services. For instance, you can view and manage [Azure Boards](/azure/devops/boards/integrations/boards-teams?view=azure-devops&preserve-view=true) and monitor events in [Azure Pipelines](/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops&preserve-view=true) from within Microsoft Teams.
 >
-> What's most important is that you use tools and services that facilitate collaboration for you, and that best fit your team's needs and the way they work.
+> You can also collaborate and plan content by using other tools that aren't mentioned, here. What's most important is that you use tools and services that facilitate collaboration for you, and that best fit your team's needs and the way they work.
 
 When you've decided if and how content creators should collaborate, you should next decide where you'll store your files. Many of these files will be stored where you choose to collaborate.
 
@@ -185,15 +193,16 @@ The types of files you'll need to store often include:
   - Power BI Desktop (.pbix) files
   - Power BI Project (.pbip) files
   - Power BI paginated report (.rdl) files
-  - Model metadata (.bim or TMDL) files
+  - Model metadata (.bim or .tmdl) files
   - Dataflow metadata (.json) files
 - **Data source files**: Files that are consumed by data items like semantic models or dataflows. Content is directly dependent on data source files, so it's important to carefully consider where they're stored because removing them will result in data refresh failure. Additionally, these files might contain sensitive information. So, store data source files in a secure, reliable, and trustworthy environment that has limited access by other individuals. Examples of data source files might include:
   - Structured data sources, like Excel workbooks, Parquet, or CSV files.
   - Semi-structured data sources, like JSON or XML files.
   - Unstructured data sources, like images that you import into reports.
 - **Supporting files**: Files that support content creation or management, but aren't required for it to function. Supporting files should be stored in a location that supports version control, and where other tools and content creators can access them. Examples of supporting files might include:
-  - Best Practice Analyzer Rules (.json) files.
   - Power BI theme (.json) files.
+  - Image (.png, .jpg, or .gif) files in Power BI reports.
+  - Best Practice Analyzer Rules (.json) files.
   - Source code files for content and queries.
   - Custom visualization (.pbiviz) files.
 - **Templates and documentation**: Files that aid in the creation of self-service content or describe existing content. Templates and documentation should be easily accessible by the people who need to use them. Examples of templates and documentation might include:
@@ -204,7 +213,7 @@ The types of files you'll need to store often include:
   - User requests and solution issues.
 
 > [!CAUTION]
-> Some content files like .pbix and .pbip files can contain sensitive data imported from data sources. Additionally, metadata files like TMDL or .pbit files can also contain sensitive information. Ensure that you take the necessary precautions to store these files in secure locations and that you practice effective [data loss prevention](powerbi-implementation-planning-data-loss-prevention.md).
+> Some content files like .pbix and .pbip files can contain sensitive data imported from data sources. Additionally, metadata files can also contain sensitive information, or in some cases, data points. An example of this is report metadata and .pbit templates, which can contain column values in certain circumstances. Ensure that you take the necessary precautions to store these files in secure locations and that you practice effective [data loss prevention](powerbi-implementation-planning-data-loss-prevention.md).
 
 You have different options to store files. Ensure that you select the appropriate location, depending on the type of file, its content, and how it will be used.
 
@@ -251,7 +260,7 @@ If you have a [Fabric capacity](/fabric/enterprise/licenses#capacity), OneLake c
 
 ### Remote repository
 
-Content creators can commit and save work from their local machine to a _remote repository_—such as an [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true) Git repository—at regular intervals during development. A remote repository contains the latest version of the solution, and it's accessible by the entire development team. Typically, a remote repository facilitates more advanced lifecycle management approaches than using Teams, SharePoint, or OneDrive. That's because by using a remote repository, content creators can benefit from more sophisticated options to collaborate on files, or track and manage file changes. For instance, content creators can work on their own branch of the remote repository to make changes, and request to merge those changes into the main branch when ready.
+Content creators can commit and save work from their local machine to a _remote repository_—such as an [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true) or [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories) Git repository—at regular intervals during development. A remote repository contains the latest version of content or supporting files, and it's accessible by the entire development team. Typically, a remote repository facilitates more advanced lifecycle management approaches than using Teams, SharePoint, or OneDrive. That's because by using a remote repository, content creators can benefit from more sophisticated options to collaborate on files, or track and manage file changes. For instance, content creators can work on their own branch of the remote repository to make changes, and request to merge those changes into the main branch when ready.
 
 Consider storing the following file types in a remote repository.
 
@@ -260,7 +269,9 @@ Consider storing the following file types in a remote repository.
 - **Content files**: Store content in a remote repository when it's critical to the business, or you intend to collaborate with other developers on the same content. A remote repository is ideal for tracking content changes and facilitating collaboration.
 
 > [!TIP]
-> When you use a remote repository, consider storing Power BI reports and semantic models as [Power BI Desktop projects (.pbip) files](../developer/projects/projects-overview.md) instead of .pbix files. That's because saved changes can't be identified in a .pbix file.
+> When you use a remote repository, we strongly recommend that you store Power BI reports and semantic models as [Power BI Desktop projects (.pbip) files](../developer/projects/projects-overview.md) instead of .pbix files. That's because saved changes can't be identified in a .pbix file.
+>
+> Also, consider using the [Power BI enhanced report format (PBIR)](../developer/embedded/projects-enhanced-report-format) for reports. The PBIR format ensures that report metadata is easier to read, which makes tracking and managing changes in source control easier. Furthermore, reports that use this format can be more easily managed by programmatic tools such as [semantic-link-labs](https://github.com/microsoft/semantic-link-labs/?tab=readme-ov-file), a Python library from Microsoft that you can use in Fabric notebooks.
 
 ### No files: Content created in the Fabric portal
 
@@ -279,11 +290,12 @@ Content creators can author content directly in the Fabric portal. In this scena
 > - **Conduct solution planning**: Gather [business requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-business-requirements) and [technical requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-technical-requirements) to sufficiently understand the problem your content will address, and to design how this content will address the problem.
 > - **Identify who will create the content**: Depending on the workflow, skills, and needs of the individual content creator, different approaches to lifecycle management might be needed.
 > - **Identify whether multiple content creators need to collaborate**: Ensure that collaborating content creators are using file types that support version control, like .pbip files.
-> - **Decide how content creators will collaborate**: Decide how sophisticated the collaboration will be. Additionally, decide how you'll facilitate this collaboration, such as by using Microsoft Teams or Azure DevOps.
+> - **Decide how content creators will collaborate**: Decide how sophisticated the collaboration will be. Additionally, decide how you'll facilitate this collaboration, such as by using Microsoft Teams, Azure DevOps, or GitHub.
+> - **Decide the format of content**: Decide whether Power BI semantic models and reports will consist of .pbix or .pbip files (or other formats like .bim or .tmdl for models), and whether reports will use the PBIR format or not.
 > - **Set up collaboration tools**: Ensure that you perform the necessary first-time setup for the solution or project. Make key decisions about how you'll manage collaboration by using these tools.
 > - **Store data source files in SharePoint or OneLake**: Store small, simple data source files in SharePoint. Otherwise, use OneLake or ADLSGen2 (if they're available) instead.
-> - **Store content and supporting files in SharePoint or a remote repository**: For simpler, smaller projects, use SharePoint for most files if it's organized and you practice good access management. For larger environments or when parallel collaboration is required, consider using a remote repository, which will provide detailed visibility of content changes.
-> - **Store templates and documentation in SharePoint**: Ensure that templates and documentation are easy for others to find, use, and understand.
+> - **Store content and supporting files in SharePoint, Microsoft Teams, or a Git repository**: For simpler, smaller projects, use SharePoint for most files if it's organized and you practice good access management. For larger environments or when parallel collaboration is required, consider using a Git repository in GitHub or Azure DevOps, which will provide detailed visibility of content changes.
+> - **Store templates and documentation in Microsoft Teams or SharePoint**: These templates and documentation are intended for the user community. Ensure that templates and documentation are easy for others to find, use, and understand.
 > - **Plan for development and deployment**: To conclude this first stage, perform specific planning to [address key areas](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#plan-to-address-key-areas) and [conduct initial setup](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#conduct-initial-setup). For instance, establish tools and test data source connections.
 
 ## Related content
