@@ -5,8 +5,8 @@ ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Align the data in a paginated report chart in a table or matrix (Power BI Report Builder)

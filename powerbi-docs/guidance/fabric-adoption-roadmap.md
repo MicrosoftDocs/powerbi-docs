@@ -1,13 +1,13 @@
 ---
 title: "Microsoft Fabric adoption roadmap"
 description: "The overview of the Microsoft Fabric adoption roadmap series of articles."
-author: peter-myers
-ms.author: v-pemyers
+author: denglishbi
+ms.author: daengli
 ms.reviewer: daengli
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/10/2024
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap
@@ -25,20 +25,20 @@ The diagram depicts the following areas of the Microsoft Fabric adoption roadmap
 
 The areas in the above diagram include:
 
-| **Area** | **Description** |
+| Area | Description |
 | :-: | --- |
-| ![Area 1.](../media/legend-number/legend-number-01-fabric.svg) | **Data culture:** Data culture refers to a set of behaviors and norms in the organization that encourages a data-driven culture. Building a data culture is closely related to adopting Fabric, and it's often a key aspect of an organization's digital transformation. |
-| ![Area 2.](../media/legend-number/legend-number-02-fabric.svg) | **Executive sponsor:** An executive sponsor is someone with credibility, influence, and authority throughout the organization. They advocate for building a data culture and adopting Fabric. |
-| ![Area 3.](../media/legend-number/legend-number-03-fabric.svg) | **Business Alignment:** How well the data culture and data strategy enable business users to achieve business objectives. An effective BI data strategy aligns with the business strategy. |
-| ![Area 4.](../media/legend-number/legend-number-04-fabric.svg) | **Content ownership and management:** There are three primary strategies for how business intelligence (BI) and analytics content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the Center of Excellence (COE) operating model. |
-| ![Area 5.](../media/legend-number/legend-number-05-fabric.svg) | **Content delivery scope:** There are four primary strategies for content and data delivery: personal, team, departmental, and enterprise. These strategies have a significant influence on adoption, governance, and the COE operating model. |
-| ![Area 6.](../media/legend-number/legend-number-06-fabric.svg) | **Center of Excellence:** A Fabric COE is an internal team of technical and business experts. These experts actively assist others who are working with data within the organization. The COE forms the nucleus of the broader community to advance adoption goals that are aligned with the data culture vision. |
-| ![Area 7.](../media/legend-number/legend-number-07-fabric.svg) | **Governance:** Data governance is a set of policies and procedures that define the ways in which an organization wants data to be used. When adopting Fabric, the goal of governance is to empower the internal user community to the greatest extent possible, while adhering to industry, governmental, and contractual requirements and regulations. |
-| ![Area 8.](../media/legend-number/legend-number-08-fabric.svg) | **Mentoring and user enablement:** A critical objective for adoption efforts is to enable users to accomplish as much as they can within the guardrails established by governance guidelines and policies. The act of mentoring users is one of the most important responsibilities of the COE. It has a direct influence on adoption efforts. |
-| ![Area 9.](../media/legend-number/legend-number-09-fabric.svg) | **Community of practice:** A community of practice comprises a group of people with a common interest, who interact with and help each other on a voluntary basis. An active community is an indicator of a healthy data culture. It can significantly advance adoption efforts. |
-| ![Area 10.](../media/legend-number/legend-number-10-fabric.svg) | **User support:** User support includes both informally organized and formally organized methods of resolving issues and answering questions. Both formal and informal support methods are critical for adoption. |
-| ![Area 11.](../media/legend-number/legend-number-11-fabric.svg) | **System oversight:** System oversight includes the day-to-day administration responsibilities to support the internal processes, tools, and people. |
-| ![Area 12.](../media/legend-number/legend-number-12-fabric.svg) | **Change management:** Change management involves procedures to address the impact of change for people in an organization. These procedures safeguard against disruption and productivity loss due to changes in solutions or processes. An effective data strategy describes who is responsible for managing this change and the practices and resources needed to realize it. |
+| ![Area 1.](../media/legend-number/legend-number-01-fabric.svg) | **Data culture**: Data culture refers to a set of behaviors and norms in the organization that encourages a data-driven culture. Building a data culture is closely related to adopting Fabric, and it's often a key aspect of an organization's digital transformation. |
+| ![Area 2.](../media/legend-number/legend-number-02-fabric.svg) | **Executive sponsor**: An executive sponsor is someone with credibility, influence, and authority throughout the organization. They advocate for building a data culture and adopting Fabric. |
+| ![Area 3.](../media/legend-number/legend-number-03-fabric.svg) | **Business Alignment**: How well the data culture and data strategy enable business users to achieve business objectives. An effective BI data strategy aligns with the business strategy. |
+| ![Area 4.](../media/legend-number/legend-number-04-fabric.svg) | **Content ownership and management**: There are three primary strategies for how business intelligence (BI) and analytics content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the Center of Excellence (COE) operating model. |
+| ![Area 5.](../media/legend-number/legend-number-05-fabric.svg) | **Content delivery scope**: There are four primary strategies for content and data delivery: personal, team, departmental, and enterprise. These strategies have a significant influence on adoption, governance, and the COE operating model. |
+| ![Area 6.](../media/legend-number/legend-number-06-fabric.svg) | **Center of Excellence**: A Fabric COE is an internal team of technical and business experts. These experts actively assist others who are working with data within the organization. The COE forms the nucleus of the broader community to advance adoption goals that are aligned with the data culture vision. |
+| ![Area 7.](../media/legend-number/legend-number-07-fabric.svg) | **Governance**: Data governance is a set of policies and procedures that define the ways in which an organization wants data to be used. When adopting Fabric, the goal of governance is to empower the internal user community to the greatest extent possible, while adhering to industry, governmental, and contractual requirements and regulations. |
+| ![Area 8.](../media/legend-number/legend-number-08-fabric.svg) | **Mentoring and user enablement**: A critical objective for adoption efforts is to enable users to accomplish as much as they can within the guardrails established by governance guidelines and policies. The act of mentoring users is one of the most important responsibilities of the COE. It has a direct influence on adoption efforts. |
+| ![Area 9.](../media/legend-number/legend-number-09-fabric.svg) | **Community of practice**: A community of practice comprises a group of people with a common interest, who interact with and help each other on a voluntary basis. An active community is an indicator of a healthy data culture. It can significantly advance adoption efforts. |
+| ![Area 10.](../media/legend-number/legend-number-10-fabric.svg) | **User support**: User support includes both informally organized and formally organized methods of resolving issues and answering questions. Both formal and informal support methods are critical for adoption. |
+| ![Area 11.](../media/legend-number/legend-number-11-fabric.svg) | **System oversight**: System oversight includes the day-to-day administration responsibilities to support the internal processes, tools, and people. |
+| ![Area 12.](../media/legend-number/legend-number-12-fabric.svg) | **Change management**: Change management involves procedures to address the impact of change for people in an organization. These procedures safeguard against disruption and productivity loss due to changes in solutions or processes. An effective data strategy describes who is responsible for managing this change and the practices and resources needed to realize it. |
 
 The relationships in the above diagram can be summarized as follows.
 
@@ -115,7 +115,7 @@ This series of articles will also be helpful for:
 
 The primary focus of this series of articles is on the Microsoft Fabric platform.
 
-To fully benefit from the information provided in these articles, you should have an understanding of [Power BI foundational concepts](/power-bi/fundamentals/power-bi-overview) and [Fabric foundational concepts](/fabric/get-started/microsoft-fabric-overview).
+To fully benefit from the information provided in these articles, you should have an understanding of [Power BI foundational concepts](../fundamentals/power-bi-overview.md) and [Fabric foundational concepts](/fabric/get-started/microsoft-fabric-overview).
 
 ## Related content
 
@@ -124,8 +124,8 @@ In the [next article in this series](fabric-adoption-roadmap-maturity-levels.md)
 Other helpful resources include:
 
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
-- Questions? Try asking the [Microsoft Fabric community](https://community.fabric.microsoft.com/).
-- Suggestions? [Contribute ideas to improve Microsoft Fabric](https://ideas.fabric.microsoft.com/).
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
 Experienced partners are available to help your organization succeed with adoption initiatives. To engage with a partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
 

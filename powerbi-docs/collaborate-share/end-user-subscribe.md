@@ -1,14 +1,14 @@
 ---
 title: Email subscriptions for reports and dashboards in the Power BI service
 description: Learn how to subscribe yourself and others to an emailed snapshot of a Power BI report or dashboard.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: mibruhje
 featuredvideoid: 
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/08/2024
+ms.date: 01/06/2025
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -67,7 +67,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     > To receive a subscription email only on certain days, select Hourly or Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
     - If you choose Hourly, Daily, Weekly, or Monthly, choose a **Scheduled Time** for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose Hourly, select the **Scheduled Time** you want the subscription to start, and it runs every hour after the **Scheduled Time**.
-    - If you choose a **Monthly** cadance for report subscriptions, you can either specify specific day(s) of the month or select the **Last day of month** option. If you choose **Last day of month**, the report will be delivered on that day.
+    - If you choose a **Monthly** cadence for report subscriptions, you can either specify specific day(s) of the month or select the **Last day of month** option. If you choose **Last day of month**, the report will be delivered on that day.
       
 :::image type="content" source="./media/end-user-subscribe/power-bi-schedule-last-day-of-month.png" alt-text="Screenshot showing the last day of month option.":::  
 
@@ -225,7 +225,7 @@ To see all of your subscriptions, start by selecting **My workspace** to make it
 
 :::image type="content" source="media/end-user-subscribe/power-bi-settings.png" alt-text="Screenshot showing Notifications selected.":::
 
-From here, you see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the content you're subscribing to, the name of the owner, the name of the associated workspace, and the content type. If you selected **Include my changes**, the **State** column includes the date when changes were included. Search for subscriptions by keyword or filter by any of these fields. Select the **Edit** icon to make changes to a subscription’s settings. 
+From here, you see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the content you're subscribing to, the name of the owner, the name of the associated workspace, and the content type. If you selected **Include my changes**, the **State** column includes the date when changes were included. Search for subscriptions by keyword or filter by any of these fields. Select the **Edit** icon to make changes to a subscription’s settings.
 
 :::image type="content" source="media/end-user-subscribe/power-bi-all-subscriptions.png" alt-text="Screenshot showing all subscriptions for a user.":::
 

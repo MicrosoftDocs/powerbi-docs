@@ -1,14 +1,14 @@
 ---
 title: Apps in Power BI
 description: Learn how to install a new app. Power BI apps bundle related dashboards and reports together for business users to view and explore.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: miguem
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with apps
 ms.topic: how-to
-ms.date: 01/17/2024
+ms.date: 01/06/2025
 ms.custom:
 LocalizationGroup: Share your work
 ---
@@ -23,7 +23,7 @@ Power BI designers create official packaged content, then distribute the content
 
 An app combines related content, like dashboards, spreadsheets, semantic models, and reports, all in one place. An app has one or more of each content type bundled together. There are many ways a designer can share an app. You can learn more about how apps are shared in the [Get a new app](#get-a-new-app) section below.
 
-There's a unique type of app called a [template app](../connect-data/service-template-apps-install-distribute.md). A Power BI Pro or Premium Per User license is required to install, customize, and distribute a template app. Power BI partners use the content from template apps to build and package analytical data into a new app. They then deploy that app to other Power BI tenants through an available platform, like AppSource or their own web service.  
+There's a unique type of app called a [template app](../connect-data/service-template-apps-install-distribute.md). A Power BI Pro or Premium Per User license is required to install, customize, and distribute a template app. Power BI partners use the content from template apps to build and package analytical data into a new app. They then deploy that app to other Power BI tenants through an available platform, like AppSource or their own web service.
 
 ## App designers and app users
 
@@ -46,7 +46,7 @@ There are several ways to get a new app. You can search, find, and install apps 
 
 1. To find apps in the apps marketplace, select **Apps** on your navigation pane.
 
-    :::image type="content" source="./media/end-user-apps/power-bi-apps-select.png" alt-text="A screenshot that shows the navigation pane with Apps outlined.":::
+    :::image type="content" source="./media/end-user-apps/power-bi-app-select.png" alt-text="A screenshot that shows the navigation pane with Apps outlined.":::
 
 1. On the Apps page, select **Get apps**.
 
@@ -58,11 +58,11 @@ There are several ways to get a new app. You can search, find, and install apps 
 
 1. After you install an app, it's available in your **Apps** content list. Select **Apps** in the navigation pane to display your apps. The last updated date and the owner are on the bottom of each app card.
 
-    ![A screenshot showing the apps page in the navigation pane.](./media/end-user-apps/power-bi-apps.png)
+    ![A screenshot showing the apps page in the navigation pane.](./media/end-user-apps/power-bi-app.png)
 
 For detailed step-by-step instructions for getting and exploring an app, see [Install and use apps with dashboards and reports in Power BI](end-user-app-view.md).
 
-There are a few other ways to get apps. 
+There are a few other ways to get apps.
 
 * The app designer installs the app automatically in your Power BI account. The next time you open the Power BI service, the new app is in your **Apps** content list.
 * The app designer emails you a direct link to an app. Selecting the link opens the app in the Power BI service.

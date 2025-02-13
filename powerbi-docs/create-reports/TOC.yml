@@ -60,8 +60,6 @@
       href: sample-competitive-marketing-analysis.md
     - name: Sales and Marketing sample
       href: sample-sales-and-marketing.md
-    - name: Sales & Marketing sample template app
-      href: sample-sales-marketing-template-app.md
     - name: Supplier Quality Analysis sample
       href: sample-supplier-quality.md
     - name: Download the Financial Sample workbook
@@ -120,8 +118,6 @@
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page
           href: copilot-create-narrative.md
-        - name: Create a Copilot summary from the Teams link
-          href: copilot-pane-summarize-content-teams.md
         - name: Summarize a report in the Copilot pane
           href: copilot-pane-summarize-content.md
         - name: Write prompts for Copilot narratives
@@ -358,8 +354,6 @@
       href: ../visuals/power-bi-line-chart.md
     - name: Paginated report visuals
       href: ../visuals/paginated-report-visual.md
-    - name: Metrics visuals
-      href: ../visuals/power-bi-visualization-scorecard-visual.md
     - name: Maps
       items: 
       - name: Shape map visuals (preview)
@@ -571,7 +565,7 @@
       - name: Create automated status rules
         href: service-goals-status-rules.md
       - name: Create and add scorecards to reports
-        href: ../visuals/power-bi-visualization-scorecard-visual.md 
+        href: service-goals-create.md 
       - name: Hierarchies in scorecards
         items: 
         - name: Get started with hierarchies

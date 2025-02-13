@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 04/24/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Plan and design content
@@ -17,8 +17,8 @@ ms.date: 04/24/2024
 
 This article helps you to plan and design content as part of managing the content lifecycle. It's primarily targeted at:
 
-- **Center of Excellence (COE) and BI teams:** The teams that are responsible for overseeing Power BI in the organization. These teams include decision makers who decide how to manage the lifecycle of Power BI content.
-- **Content creators and content owners:** Users who create content that they want to publish to the Fabric portal to share with others. These individuals are responsible for managing the lifecycle of the Power BI content that they create.
+- **Center of Excellence (COE) and BI teams**: The teams that are responsible for overseeing Power BI in the organization. These teams include decision makers who decide how to manage the lifecycle of Power BI content.
+- **Content creators and content owners**: Users who create content that they want to publish to the Fabric portal to share with others. These individuals are responsible for managing the lifecycle of the Power BI content that they create.
 
 Lifecycle management consists of the processes and practices that you use to handle content from its creation to its eventual retirement. As described in the [first article in this series](powerbi-implementation-planning-content-lifecycle-management-overview.md), managing the Power BI content lifecycle is important to ensure reliable and consistent delivery of content to business users.
 
@@ -116,11 +116,11 @@ By using Microsoft Teams, content creators structure their communication, planni
 
 To collaborate and communicate in Microsoft Teams, you use supporting services throughout the lifecycle of your Power BI content.
 
-- **[Planner](https://techcommunity.microsoft.com/t5/planner-blog/the-new-microsoft-planner-a-unified-experience-bringing-together/ba-p/3977998):** Content owners can use Planner to create plans, which they use to track tasks and scope content work. Tasks can describe issues, bugs, or features in the solution, and the corresponding stakeholders.
-- **[SharePoint](/sharepoint/teams-connected-sites):** Content creators can store and manage files in a Microsoft Teams document library or connected site for each channel. Content files stored in SharePoint can use version control to help track and manage content changes. For more information about tracking and managing changes by using SharePoint, see [Stage 2: Develop content and manage changes](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#version-control-by-using-sharepoint-or-onedrive-for-work-and-school).
-- **[Approvals](/microsoftteams/approval-admin#overview-of-approvals):** Content creators and owners can set up and use workflows to approve content changes or releases after review.
-- **[Fabric and Power BI](../collaborate-share/service-collaborate-microsoft-teams.md):** Content creators and owners can access the Fabric portal from within Microsoft Teams. From there, they can manage or discuss content, and add helpful reports to tabs in Teams channels.
-- **Other integrations:** Content creators can make use of other Microsoft or third-party services that integrate with Microsoft Teams to best fit their preferred workflow and needs.
+- **[Planner](https://techcommunity.microsoft.com/t5/planner-blog/the-new-microsoft-planner-a-unified-experience-bringing-together/ba-p/3977998)**: Content owners can use Planner to create plans, which they use to track tasks and scope content work. Tasks can describe issues, bugs, or features in the solution, and the corresponding stakeholders.
+- **[SharePoint](/sharepoint/teams-connected-sites)**: Content creators can store and manage files in a Microsoft Teams document library or connected site for each channel. Content files stored in SharePoint can use version control to help track and manage content changes. For more information about tracking and managing changes by using SharePoint, see [Stage 2: Develop content and manage changes](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#version-control-by-using-sharepoint-or-onedrive-for-work-and-school).
+- **[Approvals](/microsoftteams/approval-admin#overview-of-approvals)**: Content creators and owners can set up and use workflows to approve content changes or releases after review.
+- **[Fabric and Power BI](../collaborate-share/service-collaborate-microsoft-teams.md)**: Content creators and owners can access the Fabric portal from within Microsoft Teams. From there, they can manage or discuss content, and add helpful reports to tabs in Teams channels.
+- **Other integrations**: Content creators can make use of other Microsoft or third-party services that integrate with Microsoft Teams to best fit their preferred workflow and needs.
 
 We recommend that you define a structured process for how content creators should use Microsoft Teams to collaborate. Ensure that you determine:
 
@@ -141,11 +141,11 @@ Content creators and owners can also communicate and collaborate in a central, o
 > [!NOTE]
 > [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops&preserve-view=true) is a suite of services that integrate with Power BI and Fabric to help you plan and orchestrate content lifecycle management. When you use Azure DevOps this way, you typically leverage the following services:
 >
-> - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true):** Allows you to create and use a remote Git repository, which is a remote storage location you use to track and manage content changes.
-> - **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true):** Allows you to create and use a set of automated tasks to handle, test, and deploy content from a remote repository to a workspace.
-> - **[Azure Test Plans](/azure/devops/test/overview?view=azure-devops&preserve-view=true):** Allows you to design tests to validate the solution and automate quality control together with Azure Pipelines.
-> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Allows you to use boards to track tasks and plans as work items, and link or refer to work items from other Azure DevOps services.
-> - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true):** Allows you to share information with their team to understand and contribute to content.
+> - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true)**: Allows you to create and use a remote Git repository, which is a remote storage location you use to track and manage content changes.
+> - **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true)**: Allows you to create and use a set of automated tasks to handle, test, and deploy content from a remote repository to a workspace.
+> - **[Azure Test Plans](/azure/devops/test/overview?view=azure-devops&preserve-view=true)**: Allows you to design tests to validate the solution and automate quality control together with Azure Pipelines.
+> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true)**: Allows you to use boards to track tasks and plans as work items, and link or refer to work items from other Azure DevOps services.
+> - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true)**: Allows you to share information with their team to understand and contribute to content.
 
 By using Azure DevOps, content creators use projects to structure their communication, planning, and work. Additionally, content creators can orchestrate content lifecycle management from within Azure DevOps by performing _source control_, validation, and deployment. Source control is the process of managing more granular changes to content code and metadata.
 
@@ -181,22 +181,22 @@ When creating content, you typically produce different types of files. It's impo
 
 The types of files you'll need to store often include:
 
-- **Content files:** Files that contain the content data or metadata. Content files with data like .pbix and Power BI Project (.pbip) files contain sensitive information. Store content files in a secure location accessible only by those who need access to them. Also, you should store content files in a location that supports version control, such as a document library in Microsoft Teams or a Git repository in Azure DevOps. Examples of content files include:
+- **Content files**: Files that contain the content data or metadata. Content files with data like .pbix and Power BI Project (.pbip) files contain sensitive information. Store content files in a secure location accessible only by those who need access to them. Also, you should store content files in a location that supports version control, such as a document library in Microsoft Teams or a Git repository in Azure DevOps. Examples of content files include:
   - Power BI Desktop (.pbix) files
   - Power BI Project (.pbip) files
   - Power BI paginated report (.rdl) files
   - Model metadata (.bim or TMDL) files
   - Dataflow metadata (.json) files
-- **Data source files:** Files that are consumed by data items like semantic models or dataflows. Content is directly dependent on data source files, so it's important to carefully consider where they're stored because removing them will result in data refresh failure. Additionally, these files might contain sensitive information. So, store data source files in a secure, reliable, and trustworthy environment that has limited access by other individuals. Examples of data source files might include:
+- **Data source files**: Files that are consumed by data items like semantic models or dataflows. Content is directly dependent on data source files, so it's important to carefully consider where they're stored because removing them will result in data refresh failure. Additionally, these files might contain sensitive information. So, store data source files in a secure, reliable, and trustworthy environment that has limited access by other individuals. Examples of data source files might include:
   - Structured data sources, like Excel workbooks, Parquet, or CSV files.
   - Semi-structured data sources, like JSON or XML files.
   - Unstructured data sources, like images that you import into reports.
-- **Supporting files:** Files that support content creation or management, but aren't required for it to function. Supporting files should be stored in a location that supports version control, and where other tools and content creators can access them. Examples of supporting files might include:
+- **Supporting files**: Files that support content creation or management, but aren't required for it to function. Supporting files should be stored in a location that supports version control, and where other tools and content creators can access them. Examples of supporting files might include:
   - Best Practice Analyzer Rules (.json) files.
   - Power BI theme (.json) files.
   - Source code files for content and queries.
   - Custom visualization (.pbiviz) files.
-- **Templates and documentation:** Files that aid in the creation of self-service content or describe existing content. Templates and documentation should be easily accessible by the people who need to use them. Examples of templates and documentation might include:
+- **Templates and documentation**: Files that aid in the creation of self-service content or describe existing content. Templates and documentation should be easily accessible by the people who need to use them. Examples of templates and documentation might include:
   - Power BI template (.pbit) files.
   - Visualization templates and example reports.
   - Solution designs and documentation.
@@ -214,19 +214,19 @@ A common solution for storing files is by using [SharePoint](/sharepoint/introdu
 
 When you store files in SharePoint, consider the following points.
 
-- **Organization:** Ensure that you maintain a consistent and logical structure so it's straightforward to find specific files. Use good naming conventions, organize files in folders, and archive files that are no longer relevant for ongoing projects.
-- **OneDrive refresh:** You can [link](../connect-data/refresh-desktop-file-onedrive.md) a published semantic model or report to a .pbix file that's stored in a SharePoint or OneDrive for Business (also known as OneDrive for work or school) site. With this approach, you no longer have to publish the semantic model to bring changes into effect. Instead, your changes are visible after an automatic [OneDrive refresh](../connect-data/refresh-desktop-file-onedrive.md#automatic-versus-manual-updates-of-model-information)_,_ which occurs hourly. While convenient, be aware that this approach comes with some [caveats and challenges](../connect-data/refresh-desktop-file-onedrive.md#when-things-go-wrong). When things go, it can't be easily reversed.
-- **Preview reports:** In SharePoint, it's possible to [view Power BI reports](../collaborate-share/service-sharepoint-viewer.md) without having to install Power BI Desktop or download the .pbix file locally. When you open reports in this way, they're displayed in the [browser](../collaborate-share/service-sharepoint-viewer.md#open-a-power-bi-file-stored-in-a-onedrive-or-sharepoint-library). This capability can be a convenient alternative to viewing reports from the Fabric portal. It's [enabled by default](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview) in the [Fabric tenant settings](/fabric/admin/tenant-settings-index).
+- **Organization**: Ensure that you maintain a consistent and logical structure so it's straightforward to find specific files. Use good naming conventions, organize files in folders, and archive files that are no longer relevant for ongoing projects.
+- **OneDrive refresh**: You can [link](../connect-data/refresh-desktop-file-onedrive.md) a published semantic model or report to a .pbix file that's stored in a SharePoint or OneDrive for Business (also known as OneDrive for work or school) site. With this approach, you no longer have to publish the semantic model to bring changes into effect. Instead, your changes are visible after an automatic [OneDrive refresh](../connect-data/refresh-desktop-file-onedrive.md#automatic-versus-manual-updates-of-model-information)_,_ which occurs hourly. While convenient, be aware that this approach comes with some [caveats and challenges](../connect-data/refresh-desktop-file-onedrive.md#when-things-go-wrong). When things go, it can't be easily reversed.
+- **Preview reports**: In SharePoint, it's possible to [view Power BI reports](../collaborate-share/service-sharepoint-viewer.md) without having to install Power BI Desktop or download the .pbix file locally. When you open reports in this way, they're displayed in the [browser](../collaborate-share/service-sharepoint-viewer.md#open-a-power-bi-file-stored-in-a-onedrive-or-sharepoint-library). This capability can be a convenient alternative to viewing reports from the Fabric portal. It's [enabled by default](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview) in the [Fabric tenant settings](/fabric/admin/tenant-settings-index).
 
 > [!TIP]
 > When you collaborate by using Microsoft Teams, consider storing files in the channel document library. This approach helps centralize files and facilitates collaboration.
 
 Consider storing the following file types in SharePoint.
 
-- **Templates and documentation:** Store templates and documentation in SharePoint when you don't have an existing storage solution. SharePoint is ideal for these files because you can grant access to others and manage files without complex setup or processes.
-- **Supporting files:** Store supporting files in SharePoint when you don't have an existing storage solution. However, some supporting files (like Power BI theme .json files for reports) might be better stored in a version control system that allows viewing and managing saved changes.
-- **Content files:** Store content in SharePoint when it isn't critical to the business, or when you don't have access to a remote repository like [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true).
-- **Data sources:** Store data sources in SharePoint only when they're small in size and complexity. Exercise discipline when using SharePoint to store data source files. Consider other possible alternatives, like [OneLake](/fabric/onelake/onelake-overview).
+- **Templates and documentation**: Store templates and documentation in SharePoint when you don't have an existing storage solution. SharePoint is ideal for these files because you can grant access to others and manage files without complex setup or processes.
+- **Supporting files**: Store supporting files in SharePoint when you don't have an existing storage solution. However, some supporting files (like Power BI theme .json files for reports) might be better stored in a version control system that allows viewing and managing saved changes.
+- **Content files**: Store content in SharePoint when it isn't critical to the business, or when you don't have access to a remote repository like [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true).
+- **Data sources**: Store data sources in SharePoint only when they're small in size and complexity. Exercise discipline when using SharePoint to store data source files. Consider other possible alternatives, like [OneLake](/fabric/onelake/onelake-overview).
 
 > [!CAUTION]
 > Don't use SharePoint as an alternative to a proper data architecture. While storing data source files in SharePoint can be convenient in some limited scenarios, this approach doesn't scale when you have larger, more complex data sources, or when you need lower data latency.
@@ -255,9 +255,9 @@ Content creators can commit and save work from their local machine to a _remote 
 
 Consider storing the following file types in a remote repository.
 
-- **Templates and documentation:** Store templates and documentation in a remote repository when you manage the project with related services like [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops).
-- **Supporting files:** Store supporting files in a remote repository when one is available to easily track and manage changes.
-- **Content files:** Store content in a remote repository when it's critical to the business, or you intend to collaborate with other developers on the same content. A remote repository is ideal for tracking content changes and facilitating collaboration.
+- **Templates and documentation**: Store templates and documentation in a remote repository when you manage the project with related services like [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops).
+- **Supporting files**: Store supporting files in a remote repository when one is available to easily track and manage changes.
+- **Content files**: Store content in a remote repository when it's critical to the business, or you intend to collaborate with other developers on the same content. A remote repository is ideal for tracking content changes and facilitating collaboration.
 
 > [!TIP]
 > When you use a remote repository, consider storing Power BI reports and semantic models as [Power BI Desktop projects (.pbip) files](../developer/projects/projects-overview.md) instead of .pbix files. That's because saved changes can't be identified in a .pbix file.
@@ -276,15 +276,15 @@ Content creators can author content directly in the Fabric portal. In this scena
 **Checklist** - When planning and designing content, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Conduct solution planning:** Gather [business requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-business-requirements) and [technical requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-technical-requirements) to sufficiently understand the problem your content will address, and to design how this content will address the problem.
-> - **Identify who will create the content:** Depending on the workflow, skills, and needs of the individual content creator, different approaches to lifecycle management might be needed.
-> - **Identify whether multiple content creators need to collaborate:** Ensure that collaborating content creators are using file types that support version control, like .pbip files.
-> - **Decide how content creators will collaborate:** Decide how sophisticated the collaboration will be. Additionally, decide how you'll facilitate this collaboration, such as by using Microsoft Teams or Azure DevOps.
-> - **Set up collaboration tools:** Ensure that you perform the necessary first-time setup for the solution or project. Make key decisions about how you'll manage collaboration by using these tools.
-> - **Store data source files in SharePoint or OneLake:** Store small, simple data source files in SharePoint. Otherwise, use OneLake or ADLSGen2 (if they're available) instead.
-> - **Store content and supporting files in SharePoint or a remote repository:** For simpler, smaller projects, use SharePoint for most files if it's organized and you practice good access management. For larger environments or when parallel collaboration is required, consider using a remote repository, which will provide detailed visibility of content changes.
-> - **Store templates and documentation in SharePoint:** Ensure that templates and documentation are easy for others to find, use, and understand.
-> - **Plan for development and deployment:** To conclude this first stage, perform specific planning to [address key areas](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#plan-to-address-key-areas) and [conduct initial setup](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#conduct-initial-setup). For instance, establish tools and test data source connections.
+> - **Conduct solution planning**: Gather [business requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-business-requirements) and [technical requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-technical-requirements) to sufficiently understand the problem your content will address, and to design how this content will address the problem.
+> - **Identify who will create the content**: Depending on the workflow, skills, and needs of the individual content creator, different approaches to lifecycle management might be needed.
+> - **Identify whether multiple content creators need to collaborate**: Ensure that collaborating content creators are using file types that support version control, like .pbip files.
+> - **Decide how content creators will collaborate**: Decide how sophisticated the collaboration will be. Additionally, decide how you'll facilitate this collaboration, such as by using Microsoft Teams or Azure DevOps.
+> - **Set up collaboration tools**: Ensure that you perform the necessary first-time setup for the solution or project. Make key decisions about how you'll manage collaboration by using these tools.
+> - **Store data source files in SharePoint or OneLake**: Store small, simple data source files in SharePoint. Otherwise, use OneLake or ADLSGen2 (if they're available) instead.
+> - **Store content and supporting files in SharePoint or a remote repository**: For simpler, smaller projects, use SharePoint for most files if it's organized and you practice good access management. For larger environments or when parallel collaboration is required, consider using a remote repository, which will provide detailed visibility of content changes.
+> - **Store templates and documentation in SharePoint**: Ensure that templates and documentation are easy for others to find, use, and understand.
+> - **Plan for development and deployment**: To conclude this first stage, perform specific planning to [address key areas](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#plan-to-address-key-areas) and [conduct initial setup](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#conduct-initial-setup). For instance, establish tools and test data source connections.
 
 ## Related content
 

@@ -1,8 +1,8 @@
 ---
 title: "Supported data sources for Power BI paginated reports"
 description: Learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -14,7 +14,7 @@ ms.date: 08/26/2024
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-This article describes supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources. Some data sources are supported natively. You can connect to others by using data gateways.
+This article describes supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources. Some data sources are supported natively. You can connect to others by using data gateways or using [Get Data experience in Power BI Report Builder](./report-builder/connect-snowflake-databricks-power-query-online.md).
 
 ## Prerequisites 
 
@@ -78,7 +78,11 @@ For Azure SQL Database data sources, here are the supported authentication types
 - OAuth2 (stored Microsoft Entra token)
 
 For SSO and OAuth2 to work correctly, the Azure SQL Database server that the data source connects to needs to have [Microsoft Entra authentication support enabled](/azure/sql-database/sql-database-aad-authentication-configure). For the OAuth2 authentication method, Microsoft Entra ID generates a token and stores it for future data source access. To use the [SSO authentication method](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) instead, select the SSO option right below it, **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**.
-  
+
+## Considerations and limitations
+
+- When connecting to Fabric Lakehouse using SQL analytics endpoint, note that you cannot set Query type in Power BI Report Builder's Dataset Properties dialog. As a workaround, select Text option and invoke the stored procedure.
+
 ## Next steps
 - [Connect to an Oracle data source](./report-data/oracle-connection-type.md)
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md).

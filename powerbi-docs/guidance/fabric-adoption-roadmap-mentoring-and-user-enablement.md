@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap: Mentoring and user enablement
@@ -65,8 +65,8 @@ Time involvement from the COE reduces over time until the business unit gains ex
 
 The active involvement shown in the above diagram changes over time, as follows:
 
-- **Business unit:** 50% initially, up to 75%, finally at 98%-100%.
-- **COE:** 50% initially, down to 25%, finally at 0%-2%.
+- **Business unit**: 50% initially, up to 75%, finally at 98%-100%.
+- **COE**: 50% initially, down to 25%, finally at 0%-2%.
 
 Ideally, the period for the gradual reduction in involvement is identified up-front in the project. This way, both the business unit and the COE can sufficiently plan the timeline and staffing.
 
@@ -83,8 +83,8 @@ During a review, an expert from the COE evaluates self-service Fabric content de
 
 Here are some examples of when a best practices review could be beneficial.
 
-- The sales team has a [Power BI app](/power-bi/consumer/end-user-apps) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](/power-bi/collaborate-share/service-endorsement-overview). The standard process to certify content includes a best practices review.
-- The finance team would like to [assign a workspace to a capacity](/power-bi/enterprise/service-admin-premium-manage#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices are followed. This type of review is common when the capacity is shared among multiple business units. (A review might not be required when the capacity is assigned to only one business unit.)
+- The sales team has a [Power BI app](../consumer/end-user-apps.md) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](../collaborate-share/service-endorsement-overview.md). The standard process to certify content includes a best practices review.
+- The finance team would like to [assign a workspace to a capacity](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices are followed. This type of review is common when the capacity is shared among multiple business units. (A review might not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new Fabric solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 
 A best practices review is most often focused on the semantic model design, though the review can encompass all types of data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or semantic model). The review can also encompass reporting items (such as reports, dashboards, or metrics).
@@ -93,28 +93,28 @@ Before content is deployed, a best practices review can be used to verify other 
 
 - Code in notebooks follows organizational standards and best practices.
 - The appropriate data preparation approach (dataflows, pipelines, notebooks, and others) are used where needed.
-- [Data sources](/power-bi/connect-data/desktop-data-sources) used are appropriate and [query folding](power-query-folding.md) is invoked whenever possible where Power Query and dataflows are used.
-- [Data preparation](/power-bi/transform-model/desktop-query-overview) steps are clean, orderly, and [efficient](power-query-folding.md).
-- [Connectivity mode](/power-bi/connect-data/service-dataset-modes-understand) and [storage mode](/power-bi/transform-model/desktop-storage-mode) choices (for example, Direct Lake, import, live connection, DirectQuery, and composite model frameworks) are appropriate.
+- [Data sources](../connect-data/desktop-data-sources.md) used are appropriate and [query folding](power-query-folding.md) is invoked whenever possible where Power Query and dataflows are used.
+- [Data preparation](../transform-model/desktop-query-overview.md) steps are clean, orderly, and [efficient](power-query-folding.md).
+- [Connectivity mode](../connect-data/service-dataset-modes-understand.md) and [storage mode](../transform-model/desktop-storage-mode.md) choices (for example, Direct Lake, import, live connection, DirectQuery, and composite model frameworks) are appropriate.
 - Location for data sources, like flat files, and original Power BI Desktop files are suitable (preferably stored in a backed-up location with versioning and appropriate security, such as [Teams files or a SharePoint shared library](/microsoft-365/community/should-i-store-my-files-in-teams-or-sharepoint-an-understanding-of-behind-the-scenes)).
-- [Semantic models](/power-bi/connect-data/desktop-data-view) are well-designed, clean, and understandable, and use a [star schema](star-schema.md) design.
-- [Relationships](/power-bi/transform-model/desktop-relationships-understand) are configured correctly.
-- [DAX calculations](/power-bi/transform-model/desktop-quickstart-learn-dax-basics) use efficient coding practices (particularly if the data model is large).
+- [Semantic models](../connect-data/desktop-data-view.md) are well-designed, clean, and understandable, and use a [star schema](star-schema.md) design.
+- [Model relationships](../transform-model/desktop-relationships-understand.md) are configured correctly.
+- [DAX calculations](../transform-model/desktop-quickstart-learn-dax-basics.md) use efficient coding practices (particularly if the data model is large).
 - The semantic model size is within a reasonable limit and [data reduction techniques](import-modeling-data-reduction.md) are applied.
 - [Row-level security (RLS)](rls-guidance.md) appropriately enforces data permissions.
 - Data is accurate and has been validated against the authoritative source(s).
 - Approved common definitions and terminology are used.
-- Good [data visualization](https://powerbi.microsoft.com/data-visualization/) practices are followed, including [designing for accessibility](/power-bi/create-reports/desktop-accessibility-creating-reports).
+- Good [data visualization](https://powerbi.microsoft.com/data-visualization/) practices are followed, including [designing for accessibility](../create-reports/desktop-accessibility-creating-reports.md).
 
 Once the content has been deployed, the best practices review isn't necessarily complete yet. Completing the remainder of the review could also include items such as:
 
 - The target [workspace](/fabric/get-started/workspaces) is suitable for the content.
-- [Workspace security roles](/power-bi/collaborate-share/service-roles-new-workspaces) are appropriate for the content.
-- Other permissions (such as [app audience permissions](/power-bi/collaborate-share/service-create-distribute-apps#create-and-manage-audiences), [Build permission](/power-bi/connect-data/service-datasets-build-permissions), or use of the [individual item sharing feature](/power-bi/collaborate-share/service-share-dashboards)) are correctly and appropriately configured.
-- [Contacts](/power-bi/create-reports/service-item-contact) are identified, and correctly correlate to the [owners of the content](fabric-adoption-roadmap-content-ownership-and-management.md).
-- [Sensitivity labels](/power-bi/enterprise/service-security-apply-data-sensitivity-labels) are correctly assigned.
-- Fabric item [endorsement](/power-bi/collaborate-share/service-endorse-content) (certified or promoted) is appropriate.
-- [Data refresh](/power-bi/connect-data/refresh-data) is configured correctly, failure notifications include the proper users, and uses the appropriate [data gateway](/data-integration/gateway/service-gateway-onprem) in standard mode (if applicable).
+- [Workspace security roles](../collaborate-share/service-roles-new-workspaces.md) are appropriate for the content.
+- Other permissions (such as [app audience permissions](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences), [Build](../connect-data/service-datasets-build-permissions.md) permission, or use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly and appropriately configured.
+- [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](fabric-adoption-roadmap-content-ownership-and-management.md).
+- [Sensitivity labels](../enterprise/service-security-apply-data-sensitivity-labels.md) are correctly assigned.
+- Fabric item [endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is appropriate.
+- [Data refresh](../connect-data/refresh-data.md) is configured correctly, failure notifications include the proper users, and uses the appropriate [data gateway](/data-integration/gateway/service-gateway-onprem) in standard mode (if applicable).
 - All appropriate semantic model [best practices rules](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance-and-design-v1-1/) are followed and, preferably, are automated via a community tool called Best Practices Analyzer for maximum efficiency and productivity.
 
 ### Extended support
@@ -162,7 +162,7 @@ Making sure your self-service users (particularly content creators and owners) h
 You'll find the greatest return on investment with creating custom training materials for _organizational-specific_ processes, while relying on content produced by others for everything else. It's also useful to have a short training class that focuses primarily on topics like how to find documentation, getting help, and interacting with the community.
 
 > [!TIP]
-> One of the goals of training is to help users learn new skills while helping them avoid bad habits. It can be a balancing act. For instance, you don't want to overwhelm new users by adding in a lot of complexity and friction to a beginner-level class for report creators. However, it's a great investment to make newer content creators aware of things that could otherwise take them a while to figure out. An ideal example is teaching the ability to use a [live connection](/power-bi/connect-data/desktop-report-lifecycle-datasets) to report from an existing semantic model. By teaching this concept at the earliest logical time, you can save a less experienced creator thinking they always need one semantic model for every report (and encourage the good habit of reusing existing semantic models across reports).
+> One of the goals of training is to help users learn new skills while helping them avoid bad habits. It can be a balancing act. For instance, you don't want to overwhelm new users by adding in a lot of complexity and friction to a beginner-level class for report creators. However, it's a great investment to make newer content creators aware of things that could otherwise take them a while to figure out. An ideal example is teaching the ability to use a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to report from an existing semantic model. By teaching this concept at the earliest logical time, you can save a less experienced creator thinking they always need one semantic model for every report (and encourage the good habit of reusing existing semantic models across reports).
 
 Some larger organizations experience continual employee transfers and turnover. Such frequent change results in an increased need for a repeatable set of training resources.
 
@@ -262,7 +262,7 @@ There are also going to be some [governance](fabric-adoption-roadmap-governance.
 Documentation should be located in your centralized portal, which is a searchable location where, preferably, users already work. Either [Teams or SharePoint](/microsoft-365/community/should-i-store-my-files-in-teams-or-sharepoint-an-understanding-of-behind-the-scenes) work very well. Creating documentation in either wiki pages or in documents can work equally well, provided that the content is organized well and is easy to find. Shorter documents that focus on one topic are usually easier to consume than long, comprehensive documents.
 
 > [!IMPORTANT]
-> One of the most helpful pieces of documentation you can publish for the community is a description of the [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings), and the group memberships required for each tenant setting. Users read about features and functionality online, and sometimes find that it doesn't work for them. When they are able to quickly look up your organization's tenant settings, it can save them from becoming frustrated and attempting workarounds. Effective documentation can reduce the number of help desk tickets that are submitted. It can also reduce the number of people who need to be assigned the Fabric administrator role (who might have this role solely for the purpose of viewing settings).
+> One of the most helpful pieces of documentation you can publish for the community is a description of the [tenant settings](/fabric/admin/tenant-settings-index), and the group memberships required for each tenant setting. Users read about features and functionality online, and sometimes find that it doesn't work for them. When they are able to quickly look up your organization's tenant settings, it can save them from becoming frustrated and attempting workarounds. Effective documentation can reduce the number of help desk tickets that are submitted. It can also reduce the number of people who need to be assigned the Fabric administrator role (who might have this role solely for the purpose of viewing settings).
 
 Over time, you might choose to allow certain types of documentation to be maintained by the community if you have willing volunteers. In this case, you might want to introduce an approval process for changes.
 
@@ -273,7 +273,7 @@ When you see questions repeatedly arise in the Q&A forum (as described in the [U
 
 ## Power BI template files
 
-A [Power BI template](/power-bi/create-reports/desktop-templates) is a .pbit file. It can be provided as a starting point for content creators. It's the same as a .pbix file, which can contain queries, a data model, and a report, but with one exception: the template file doesn't contain any data. Therefore, it's a smaller file that can be shared with content creators and owners, and it doesn't present a risk of inappropriately sharing data.
+A [Power BI template](../create-reports/desktop-templates.md) is a .pbit file. It can be provided as a starting point for content creators. It's the same as a .pbix file, which can contain queries, a data model, and a report, but with one exception: the template file doesn't contain any data. Therefore, it's a smaller file that can be shared with content creators and owners, and it doesn't present a risk of inappropriately sharing data.
 
 Providing Power BI template files for your community is a great way to:
 
@@ -296,9 +296,9 @@ Power BI template files can improve efficiency and help people learn during the 
 
 ## Power BI project files
 
-A [Power BI project](/power-bi/developer/projects/projects-overview) is a .pbip file. Like a template file (previously described), a project file doesn't contain any data. It's a file format that advanced content creators can use for [advanced data model](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) and report management scenarios. For example, you can use project files to save time in development by sharing common model patterns, like date tables, DAX measure expressions, or calculation groups.
+A [Power BI project](../developer/projects/projects-overview.md) is a .pbip file. Like a template file (previously described), a project file doesn't contain any data. It's a file format that advanced content creators can use for [advanced data model](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) and report management scenarios. For example, you can use project files to save time in development by sharing common model patterns, like date tables, DAX measure expressions, or calculation groups.
 
-You can use Power BI project files with [Power BI Desktop developer mode](/power-bi/developer/projects/) for:
+You can use Power BI project files with [Power BI Desktop developer mode](../developer/projects/projects-overview.md) for:
 
 - Advanced editing and authoring (for example, in a code editor such as Visual Studio Code).
 - Purposeful separation of semantic model and report items (unlike the .pbix or .pbit files).
@@ -316,17 +316,17 @@ You can use Power BI project files with [Power BI Desktop developer mode](/power
 **Checklist** - Considerations and key actions you can take to establish, or improve, mentoring and user enablement.
 
 > [!div class="checklist"]
-> - **Consider what mentoring services the COE can support:** Decide what types of mentoring services the COE is capable of offering. Types can include office hours, co-development projects, and best practices reviews.
-> - **Communicate regularly about mentoring services:** Decide how you will communicate and advertise mentoring services, such as office hours, to the user community.
-> - **Establish a regular schedule for office hours:** Ideally, hold office hours at least once per week (depending on demand from users as well as staffing and scheduling constraints).
-> - **Decide what the expectations will be for office hours:** Determine what the scope of allowed topics or types of issues users can bring to office hours. Also, determine how the queue of office hours requests will work, whether any information should be submitted ahead of time, and whether any follow up afterwards can be expected.
-> - **Create a centralized portal:** Ensure that you have a well-supported centralized hub where users can easily find training materials, documentation, and resources. The centralized portal should also provide links to other community resources such as the Q&A forum and how to find help.
-> - **Create documentation and resources:** In the centralized portal, create, compile, and publish useful documentation. Identify and promote the top 3-5 resources that will be most useful to the user community.
-> - **Update documentation and resources regularly:** Ensure that content is reviewed and updated on a regular basis. The objective is to ensure that the information available in the portal is current and reliable.
-> - **Compile a curated list of reputable training resources:** Identify training resources that target the training needs and interests of your user community. Post the list in the centralized portal and create a schedule to review and validate the list.
-> - **Consider whether custom in-house training will be useful:** Identify whether custom training courses, developed in-house, will be useful and worth the time investment. Invest in creating content that's specific to the organization.
-> - **Provide templates and projects:** Determine how you'll use templates including Power BI template files and Power BI project files. Include the resources in your centralized portal, and in training materials.
-> - **Create goals and metrics:** Determine how you'll measure effectiveness of the mentoring program. Create KPIs (key performance indicators) or OKRs (objectives and key results) to validate that the COE's mentoring efforts strengthen the community and its ability to provide self-service BI.
+> - **Consider what mentoring services the COE can support**: Decide what types of mentoring services the COE is capable of offering. Types can include office hours, co-development projects, and best practices reviews.
+> - **Communicate regularly about mentoring services**: Decide how you will communicate and advertise mentoring services, such as office hours, to the user community.
+> - **Establish a regular schedule for office hours**: Ideally, hold office hours at least once per week (depending on demand from users as well as staffing and scheduling constraints).
+> - **Decide what the expectations will be for office hours**: Determine what the scope of allowed topics or types of issues users can bring to office hours. Also, determine how the queue of office hours requests will work, whether any information should be submitted ahead of time, and whether any follow up afterwards can be expected.
+> - **Create a centralized portal**: Ensure that you have a well-supported centralized hub where users can easily find training materials, documentation, and resources. The centralized portal should also provide links to other community resources such as the Q&A forum and how to find help.
+> - **Create documentation and resources**: In the centralized portal, create, compile, and publish useful documentation. Identify and promote the top 3-5 resources that will be most useful to the user community.
+> - **Update documentation and resources regularly**: Ensure that content is reviewed and updated on a regular basis. The objective is to ensure that the information available in the portal is current and reliable.
+> - **Compile a curated list of reputable training resources**: Identify training resources that target the training needs and interests of your user community. Post the list in the centralized portal and create a schedule to review and validate the list.
+> - **Consider whether custom in-house training will be useful**: Identify whether custom training courses, developed in-house, will be useful and worth the time investment. Invest in creating content that's specific to the organization.
+> - **Provide templates and projects**: Determine how you'll use templates including Power BI template files and Power BI project files. Include the resources in your centralized portal, and in training materials.
+> - **Create goals and metrics**: Determine how you'll measure effectiveness of the mentoring program. Create KPIs (key performance indicators) or OKRs (objectives and key results) to validate that the COE's mentoring efforts strengthen the community and its ability to provide self-service BI.
 
 ## Questions to ask
 
@@ -343,7 +343,7 @@ Use questions like those found below to assess mentoring and user enablement.
 - When users exhibit behavior that creates governance risks, are they punished or do they undergo education and mentorship?
 - What training materials are in place to educate people about governance processes and policies?
 - Where's the central documentation maintained? Who maintains it?
-- Do central resources exist, like organizational design guidelines, [themes](/power-bi/create-reports/desktop-report-themes), or [template files](fabric-adoption-roadmap-mentoring-and-user-enablement.md#power-bi-template-files)?
+- Do central resources exist, like organizational design guidelines, [themes](../create-reports/desktop-report-themes.md), or [template files](fabric-adoption-roadmap-mentoring-and-user-enablement.md#power-bi-template-files)?
 
 ## Maturity levels
 
@@ -351,7 +351,7 @@ Use questions like those found below to assess mentoring and user enablement.
 
 The following maturity levels will help you assess the current state of your mentoring and user enablement.
 
-| **Level** | **State of mentoring and user enablement** |
+| Level | State of mentoring and user enablement |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;Some documentation and resources exist. However, they're siloed and inconsistent. <br/><br/>&bull;&nbsp;Few users are aware of, or take advantage of, available resources. |
 | 200: Repeatable | &bull;&nbsp;A centralized portal exists with a library of helpful documentation and resources. <br/><br/>&bull;&nbsp;A curated list of training links and resources are available in the centralized portal. <br/><br/>&bull;&nbsp;Office hours are available so the user community can get assistance from the COE. |

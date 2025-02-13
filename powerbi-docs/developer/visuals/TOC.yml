@@ -23,7 +23,7 @@
       href: create-r-based-power-bi-desktop.md
     - name: "Build a funnel plot from R script to R visual"
       href: funnel-plot-from-r.md
-  - name: Import Power BI custom visuals
+  - name: About Power BI custom visuals
     items: 
     - name: "Import a Power BI visual"
       href: import-visual.md
@@ -73,7 +73,48 @@
     - name: "Analytics pane" 
       href: analytics-pane.md
     - name: "Add format pane"
-      href: format-pane.md
+      expanded: false
+      items:
+        - name: "Format pane"
+          href: format-pane-general.md
+        - name: "Format pane example"
+          href: format-pane-example.md
+        - name: "Formatting components"
+          expanded: false
+          items:
+            - name: "Formatting card"
+              href: formatting-model-card.md
+            - name: "Formatting group"
+              href: formatting-model-group.md
+            - name: "Formatting container"
+              href: formatting-model-container.md
+        - name: "Formatting slices"
+          expanded: false
+          items:
+            - name: "Toggle switch"
+              href: "formatting-model-toggleswitch.md"
+            - name: "Num up down"
+              href: "formatting-model-numupdown.md"
+            - name: "Slider"
+              href: "formatting-model-slider.md"
+            - name: "Color picker"
+              href: "formatting-model-colorpicker.md"
+            - name: "Dropdowns"
+              href: "formatting-model-dropdown.md"
+            - name: "Flag selections"
+              href: "formatting-model-flagselection.md"
+            - name: "Text input"
+              href: "formatting-model-textinput.md"
+            - name: "Text area"
+              href: "formatting-model-textarea.md"
+            - name: "Font picker"
+              href: "formatting-model-fontpicker.md"
+            - name: "Alignment group"
+              href: "formatting-model-alignmentgroup.md"
+            - name: "Font control"
+              href: "formatting-model-fontcontrol.md"
+            - name: "Margin padding"
+              href: "formatting-model-marginpadding.md"
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"

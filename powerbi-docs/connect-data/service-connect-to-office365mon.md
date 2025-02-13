@@ -3,25 +3,37 @@ title: Connect to Office365Mon with Power BI
 description: Learn how to analyze Office 365 outages and health performance data by using the Power BI and the Office365Mon template app.
 author: paulinbar
 ms.author: painbar
-ms.reviewer: maggiesMSFT
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/17/2024
+ms.date: 01/17/2025
 LocalizationGroup: Connect to services
 #customer intent: As an Office 365 admin, I want to connect to Office365Mon with Power BI so that I can analyze outages and health performance data with an out-of-the-box dashboard and reports.
 ---
 
-# Connect to Office365Mon with Power BI
+# Connect to Office365Mon.Com Power BI Report Pack
 
-Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon template app. Power BI retrieves your data, including outages and health probes, and then builds an out-of-the-box dashboard and reports based on that data. This article tells you how to install the [Office365Mon template app](https://msit.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) for Power BI app and connect it to your data.
+Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon.Com Power BI Report Pack template app. Power BI retrieves your data, including outages and health probes, and then builds an out-of-the-box dashboard and reports based on that data. This article tells you how to install the [Office365Mon.Com Power BI Report Pack template app](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3?experience=power-bi) and connect it to your data.
 
 >[!NOTE]
 >You need an Office365Mon admin account to connect to and load the Power BI template app.
 
+## Install the app
+
+1. Select the following link to get to the app: [Office365Mon.Com Power BI Report Pack template app](https://appsource.microsoft.com/product/power-bi/office365mon.office365mon_powerbi_v3?tab=Overview). You can also search for the app in Power BI.
+
+1. On the AppSource page for the app, select **Get it now**.
+
+1. When prompted, select **Install**.
+
+1. When the app finishes installing, it appears on your Power BI Apps page.
+
 ## How to connect
 
-1. Select **Connect your data** at the top of the screen:
+1. Select the app on the apps page to open it.
+
+1. When the app opens, you see sample data. Select **Connect your data** at the top of the screen:
 
    :::image type="content" source="media/service-connect-to-office365mon/connect-your-data.png" alt-text="Screenshot that shows the Connect your data link." lightbox="media/service-connect-to-office365mon/connect-your-data.png":::
 

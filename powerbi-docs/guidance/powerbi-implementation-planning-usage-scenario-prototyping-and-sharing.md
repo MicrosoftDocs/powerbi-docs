@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 02/27/2022
+ms.date: 12/30/2024
 ---
 
 # Power BI usage scenarios: Prototyping and sharing
@@ -37,7 +37,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 The scenario diagram depicts the following user actions, tools, and features:
 
-| **Item** | **Description** |
+| Item | Description |
 | --- | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | Power BI content creators develop BI solutions using Power BI Desktop. |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |

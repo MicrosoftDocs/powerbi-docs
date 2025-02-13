@@ -1,13 +1,13 @@
 ---
 title: Types of Insights supported by Power BI
 description: Learn about Insights in Power BI how they work, what they can do, and why they help interpret your data.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 02/14/2024
+ms.date: 01/09/2025
 LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI
@@ -18,7 +18,7 @@ Ask Power BI to look through your data and find interesting trends and patterns.
 
 To learn how to use dashboard Insights, see [View data insights on dashboard tiles with Power BI](end-user-insights.md).
 
-[ ![Screenshot of a set of Insights with the Insights panel highlighted.](media/end-user-insight-types/power-bi-insight-line.png) ](media/end-user-insight-types/power-bi-insight-line.png)
+:::image type="content" source="media/end-user-insight-types/power-bi-insight-lines.png" alt-text="Screenshot of a set of Insights with the Insights panel highlighted.":::
 
 ## How does Insights work?
 

@@ -1,8 +1,8 @@
 ---
 title: Teach Q&A to understand questions and terms in Power BI Q&A
 description: Learn how to manage terms and define nouns or adjectives to teach Q&A about your data and optimize search results.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Collaborate with Power BI in Microsoft Teams, Outlook, and Office
 description: Learn how organizations can use Microsoft Teams, Outlook, and Office to collaborate on Power BI content. 
-author: ajburnle
-ms.author: ajburnle
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -36,7 +36,7 @@ Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office t
 In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
 - Ensure the Power BI app is enabled in the Teams Admin center apps list.
-- Your users with a Fabric (Free) license can access personal analytics, including using the built-in Teams analytics report, and create reports in their My workspace.
+- Your users with a Fabric (Free) license can access personal analytics and create reports in their My workspace.
 - Your users with a Fabric (Free) license can also access content shared to them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
 - Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
 - Users need to sign in within the Power BI app for Teams or the Power BI service to activate their Power BI license.

@@ -1,8 +1,8 @@
 ---
 title: Let users personalize visuals in a report
 description: Learn how to let report readers create their own view of a report without editing it, all in report reading view. 
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -141,7 +141,7 @@ The feature has a few limitations to be aware of.
 - This feature isn't supported for publish to web.
 - Export to PowerPoint and PDF don't capture personalized visuals.
 - User explorations don't automatically persist. Encourage your report readers to [save their views as personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to capture their changes.
-- This feature is supported in the Power BI mobile apps for iOS and Android tablets, and in the Power BI Windows app. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
+- This feature is supported in the Power BI mobile apps for iOS and Android tablets. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
 ## Related content
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 02/04/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -16,8 +16,18 @@ Power BI Mobile app versions are released on a monthly cadence. The latest ver
 
 For related "What's New" information, see:
 
-* [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
+* [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## February 2025
+
+### Copilot in the Power BI mobile apps is now available on iPads and Android tablets! (preview)
+
+Copilot in the Power BI Mobile apps helps you quickly analyze data, gain insights, and make informed decisions on the go. With this release, you can now enjoy the benefits of Copilot on your iPad or Android tablet, in addition to on your phone, [where Copilot in the Power BI mobile apps was introduced several months ago](#november-2024).
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/copilot-whats-new-tablet-support.png" alt-text="Screenshot showing Copilot in the Power BI mobile apps on a tablet device." border="false":::
+
+Check out our [documentation](./mobile-apps-copilot.md) and get started today!
 
 ## November 2024
 
@@ -462,8 +472,10 @@ If your Android tablet has multi-window support, you can view and interact with 
 ![Screenshot of the mobile app being used in split-sreen mode.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-split-screen.png)
 
 ## January 2021
+
 ### Workspace support with a Power BI free license
-Users with a Power BI free license can now view and access workspaces where they've been added as viewers directly from the workspaces list. This change is applicable for content that's hosted on a Power BI Premium capacity.
+
+Users with a Fabric free license can now view and access workspaces where they've been added as viewers directly from the workspaces list. This change is applicable for content that's hosted on a Power BI Premium capacity.
 
 ## Previous months
 
@@ -1055,7 +1067,7 @@ If you scan a QR code for a dashboard that you don't have access to, now you can
 #### All devices
 **Scrolling made easier** 
 
-Now you can scroll in bar and column charts in a report by touching the chart itself, rather than touching the scroll bar on the side.
+Now you can scroll in bar and column charts in a report by touching the chart itself, rather than touching the scrollbar on the side.
 
 #### iOS devices
 **Ask questions of your data with a preview of Q&A** 
@@ -1136,12 +1148,12 @@ Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.mi
 **Power BI mobile app for Android tablets** Yes, the preview is here.
 
 * Experience [Power BI on your Android tablet](mobile-android-app-get-started.md)
-* Explore [Reporting Services mobile reports and KPIs on your Android tablet](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
+* Explore [Reporting Services KPIs on your Android tablet](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### Android devices
 **Preview: Intune Mobile Application Management** Power BI support for Microsoft Intune Mobile Application Manager (MAM) is now in preview for Power BI Pro users on Android devices. 
 
-**Favorites** Tag your favorite dashboards on your Android device, and see all your [favorite Power BI dashboards and Reporting Services mobile reports and KPIs](mobile-android-app-get-started.md#view-your-favorite-dashboards-and-reports) collected in one convenient location. 
+**Favorites** Tag your favorite dashboards on your Android device, and see all your [favorite Power BI dashboards and Reporting Services KPIs](mobile-android-app-get-started.md#view-your-favorite-dashboards-and-reports) collected in one convenient location. 
 
 #### iOS devices
 **Links** URLs in tiles and visualizations are now clickable, and open in a browser.

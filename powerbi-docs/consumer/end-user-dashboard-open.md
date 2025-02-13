@@ -1,13 +1,13 @@
 ---
 title: View a Power BI dashboard
 description: Learn how to open and view a Power BI dashboard to highlight specific information from the underlying reports and semantic models.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/31/2023
+ms.date: 01/06/2025
 LocalizationGroup: Dashboards
 ms.custom:  
 ---
@@ -27,7 +27,7 @@ A Power BI Pro or Premium license is required for both sharing a dashboard and v
 
 Dashboards can be opened from many locations in the Power BI service. One way to open a dashboard is to select and open a workspace. 
 
-:::image type="content" source="media/end-user-dashboard-open/power-bi-workspace.png" alt-text="Screenshot of the navigation pane with Workspaces highlighted.":::
+:::image type="content" source="media/end-user-dashboard-open/power-bi-workspace-select.png" alt-text="Screenshot of the navigation pane with Workspaces highlighted.":::
 
 If that workspace contains a dashboard, you see the following icon.
 

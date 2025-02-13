@@ -5,8 +5,8 @@ ms.date: 1/5/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ---
 
 # Excel device information settings for Power BI paginated reports

@@ -120,7 +120,10 @@ Example using `byConnection`:
   }
 }
 ```
-When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. However, only the definition.pbir file is not ignored when importing the definition through Fabric Git.
+> [!IMPORTANT]
+> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items) you must use `byConnection` references.
+
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
 
 ```md
   ├── definition\
@@ -129,7 +132,6 @@ When the semantic model and report share the same workspace, [Fabric Git Integra
   ├── definition-liveConnect.pbir
   └── definition.pbir
 ```
-
 This file also specifies the supported report definition formats through the 'version' property.
 
 | Version  | Supported formats    |
@@ -355,10 +357,9 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 PBIR is currently in **preview**. Keep the following in mind:
 
 - Service limitations/bugs
-  - Mobile views are not displayed in Power BI Apps.
-  - Hidden pages are exposed in Power BI Apps navigation.
   - Can't be deployed with deployment pipelines.  
-  - Can't be saved as a copy.    
+  - Can't be saved as a copy.
+  - Can't use Power BI Report APIs: [Clone Report](/rest/api/power-bi/reports/clone-report-in-group), [Update Report Content](/rest/api/power-bi/reports/update-report-content-in-group)
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration

@@ -1,14 +1,14 @@
 ---
 title: Dashboards for business users of the Power BI service
 description: A dashboard is a single page canvas that contains the most important elements of data. Learn the advantages of dashboards and how they differ from reports.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with dashboards
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 01/06/2025
 LocalizationGroup: Dashboards
 ms.custom: intro-overview
 ---
@@ -18,9 +18,9 @@ ms.custom: intro-overview
 
 A Power BI *dashboard* is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story.
 
-:::image type="content" source="media/end-user-dashboards/power-bi-dashboard.png" alt-text="Screenshot showing the Sales and Marketing Sample dashboard."lightbox="media/end-user-dashboards/power-bi-dashboard.png#lightbox":::
+:::image type="content" source="media/end-user-dashboards/power-bi-full-dashboard.png" alt-text="Screenshot showing the Sales and Marketing Sample dashboard."lightbox="media/end-user-dashboards/power-bi-full-dashboard.png#lightbox":::
 
-The visualizations on the dashboard are called *tiles*. Report designers *pin* tiles to the dashboard. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, start with [Power BI basic concepts](end-user-basic-concepts.md) to get a good foundation. Hovering over an element on a dashboard displays a tooltip. 
+The visualizations on the dashboard are called *tiles*. Report designers *pin* tiles to the dashboard. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, start with [Power BI basic concepts](end-user-basic-concepts.md) to get a good foundation. Hovering over an element on a dashboard displays a tooltip.
 
 > [!NOTE]
 >

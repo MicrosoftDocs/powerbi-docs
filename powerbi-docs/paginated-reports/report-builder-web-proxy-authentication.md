@@ -1,8 +1,8 @@
 ---
 title: Use default system credentials for web proxy
 description: Learn how system or network administrators can allow the use of default system credentials for web proxy authentication in Power BI Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.date: 02/08/2023
 ms.service: powerbi
 ms.subservice: report-builder

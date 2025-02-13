@@ -48,6 +48,20 @@ If your Power BI admin turned off the capability for your organization, you rece
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png" alt-text="Screenshot of notification when sharing is disabled." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png":::
 
+### Updated file picker for saving and uploading Power BI files to OneDrive and SharePoint (Preview)
+
+New updates to the file picker in Power BI desktop make it easier to save to and open files from OneDrive and SharePoint. Now, you can smoothly navigate between folders in various OneDrive and SharePoint folders, and have easy access to reports in OneDrive and SharePoint. 
+
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png" alt-text="Screenshot of selecting a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png":::
+
+You can also easily pin and unpin recent files and folders in the file picker while opening files in OneDrive and SharePoint. Simply select or deselect the pin icon next to the file to pin or unpin the file. 
+
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png" alt-text="Screenshot of pinning a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png":::
+
+These updates are off by default, and will be enabled on by default in early 2025. To enable the new file picker experience, select **File > Options and Settings > Options > Preview Features > Save to OneDrive and SharePoint**, and then select **Show the new file saving and open experience** checkbox. You will need to restart Power BI Desktop after you make the selection. 
+
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-file-picker.png" alt-text="Screenshot of preview checkbox for new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-file-picker.png":::
+
 ## Open Power BI files stored in OneDrive and SharePoint
 
 To open a Power BI file stored in OneDrive and SharePoint select **Open** from the file menu. Then select **OneDrive**.
@@ -214,6 +228,12 @@ If the account you're sign-in to in Power BI Desktop and your local OneDrive or 
 
 When you drag a Power BI file to a OneDrive or SharePoint location in the file system, the file is uploaded to the new location in OneDrive or SharePoint. If you try to open the file before the file completes syncing to OneDrive or SharePoint, the file acts as a local file. Therefore, when you try to share a link to the file, you're prompted to save the file to OneDrive or SharePoint even though the file is syncing there. When you're prompted to save a file that is already saved, wait until the file finishes syncing and try again. Once the file finishes syncing to the new OneDrive or SharePoint location, you're able to share a link to the file without being prompted to save again.  
 
+## Troubleshooting and Known Issues
+
 ### Unable to open document
 
-If you have signed-in to Power BI on multiple different accounts, you can see files in the file menu that each account interacted with.  If you try to open one of the files that belongs to another account and receive an error, sign-in to the account that has access to the file and try again.
+If you have signed-in to Power BI on multiple different accounts, you can see files in the file menu that each account interacted with.  If you try to open one of the files that belongs to another account and receive an error, sign-in to the account that has access to the file and try again. 
+
+### Unable to create a new folder inside SharePoint
+
+For some specific SharePoint document libraries, users may not have permissions to create folders. As a result, when the user selects the "New Folder" button, the new folder is not added. To resolve this error, please work with an admin to ensure you have sufficient permissions or choose a different OneDrive/SharePoint location. 

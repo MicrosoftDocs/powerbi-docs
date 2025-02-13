@@ -1,8 +1,8 @@
 ---
 title: Create a Power BI dashboard from a report
 description: Learn how to create a quick and easy dashboard that pins visualizations from an existing report.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

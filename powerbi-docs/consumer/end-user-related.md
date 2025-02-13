@@ -1,14 +1,14 @@
 ---
 title: See related content from dashboards, reports, and semantic models
 description: Learn how to find and work on related content in Power BI service dashboards, reports, and semantic models.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: kfollis
+ms.author: kfollis
+ms.reviewer: kfollis
 ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/20/2023
+ms.date: 01/09/2025
 LocalizationGroup: Get started
 ---
 
@@ -20,19 +20,12 @@ The **Related content** pane shows you how your Power BI service content -- dash
 
 In the Power BI service, reports are built on semantic models, report visuals are pinned to dashboards, and dashboard visuals link back to reports. But how do you know which dashboards are hosting visuals from your Marketing report? And how do you locate those dashboards? Is your Procurement dashboard using visuals from more than one semantic model? If so, what are they named and how can you open and edit them? Is your HR semantic model being used in any reports or dashboards at all? Or, can it be moved without causing any broken links? Questions like these can be answered on the **Related content** pane. Not only does the pane display the related content, it also allows you to take action on the content and easily navigate between the related content.
 
-:::image type="content" source="./media/end-user-related/power-bi-see-related-pane-new.png" alt-text="Screenshot that shows the Related content pane in the Power BI service.":::
+:::image type="content" source="./media/end-user-related/power-bi-see-related-pane.png" alt-text="Screenshot that shows the Related content pane in the Power BI service.":::
 
 > [!NOTE]
 > The related content feature does not work for streaming semantic models.
 
 ## See related content for a dashboard or report
-
-In the following video, watch Will view related content for a dashboard. Then follow the step-by-step instructions after the video to try it out yourself with the Sales and Marketing Sample.
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s]
 
 With a dashboard or report open, select **More options** (...) in the menu bar, and choose **See related content** from the dropdown.
 

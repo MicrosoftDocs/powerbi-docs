@@ -11,8 +11,8 @@ metadata:
   ms.subservice: powerbi-mobile
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
+  author: kfollis
+  ms.author: kfollis
   ms.date: 02/11/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -41,8 +41,6 @@ landingContent:
             url: mobile-android-app-get-started.md
           - text: iOS get started
             url: mobile-iphone-app-get-started.md
-          - text: Windows get started
-            url: mobile-windows-10-phone-app-get-started.md
       - linkListType: quickstart
         links:
           - text: Explore dashboards & reports 
