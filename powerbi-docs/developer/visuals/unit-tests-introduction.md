@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/1/2023
+ms.date: 12/1/2024
 #customer intent: As a Power BI visual developer, I want to learn how to write unit tests for my visual so that I can ensure the visual works as expected.
 ---
 
@@ -422,7 +422,7 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 
 The `SampleBarChartDataBuilder` class extends `TestDataViewBuilder` and implements the abstract method `getDataView`.
 
-When you put data into data-field buckets, Power BI produces a categorical `dataview` object that's based on your data.
+When you put data into data-field buckets, Power BI produces a categorical `dataview` object based on your data.
 
 :::image type="content" source="media/unit-tests-introduction/fields-buckets.png" alt-text="Screenshot of Power BI, which shows the data fields buckets are empty.":::
 
@@ -621,7 +621,7 @@ npm run test
 > [!NOTE]
 > You must install Google Chrome locally.
 
-In the command-line window, you'll get following output:
+In the command-line window, you get following output:
 
 ```cmd
 > karma start
