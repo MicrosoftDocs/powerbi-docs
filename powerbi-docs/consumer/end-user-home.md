@@ -132,7 +132,7 @@ The following example shows what your workspace looks like if it's empty.
 
 :::image type="content" source="./media/end-user-home/power-bi-empty-workspace.png" alt-text="A screenshot of an empty workspace in the Power BI service.":::
 
-If someone in your organization adds you to a workspace, it appears in your list of workspaces. Over time, you might have more than one workspace. For example, your coworkers can add you to a workspace by giving you a role, such as Member, Contributor, or Viewer. If you [download a template app](end-user-app-marketing.md) from outside your organization, you get an app and a new workspace. You can also create workspaces if you have a paid license. To open a workspace, select it from the nav pane.
+If someone in your organization adds you to a workspace, it appears in your list of workspaces. Over time, you might have more than one workspace. For example, your coworkers can add you to a workspace by giving you a role, such as Member, Contributor, or Viewer. If you download a template app from outside your organization, you get an app and a new workspace. You can also create workspaces if you have a paid license. To open a workspace, select it from the nav pane.
 
 :::image type="content" source="./media/end-user-home/power-bi-workspace-lists.png" alt-text="A screenshot of Workspaces in the navigation pane.":::
 
