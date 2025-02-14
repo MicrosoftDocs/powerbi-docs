@@ -111,7 +111,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
     :::image type="content" source="media/desktop-excel-stunning-report/desktop-new-measure-icon.png" alt-text="Screenshot of New measure icon on the Home ribbon." lightbox="media/desktop-excel-stunning-report/desktop-new-measure-icon.png":::
 
-1. Copy and paste this expression in the designated area to add all the numbers in the Units Sold column.
+1. Copy and paste this expression in the formula bar at the top of the report canvas to add all the numbers in the Units Sold column.
 
     ```dax
     Total Units Sold = SUM(financials[Units Sold])    
@@ -131,7 +131,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png" alt-text="Screenshot of New Table button in the Home ribbon.":::
 
-1. Copy and paste this expression in the designated area to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.
+1. Copy and paste this expression in the formula bar to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.
 
     ```dax
     Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))    
@@ -181,7 +181,7 @@ Now you create a line chart to see which month and year had the highest profit.
 1. From the Data pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit.
 1. Drag the **Date** field to the same visual. Power BI updates the column chart to show monthly profit for the two years.
 
-   If you created a Calendar table in [Extra credit: Create a new table](#create-a-new-table) earlier in this article, expand the **Date** field in the Data pane, then select the checkbox for **Date Hierarchy**. Expand the field, then clear the checkboxes next to the **Quarter** and **Day** fields to display only year and month on the chart. Alternatively, remove the fields from where they're listed in the **X-axis** well on the **Build a visual** tab of the **Visualizations** pane.
+   If you created a Calendar table in [Extra credit: Create a new table](#create-a-new-table) earlier in this article, expand the **Date** field in the Data pane, then select the checkbox for **Date Hierarchy**. Expand the field, then clear the checkboxes next to the **Quarter** and **Day** fields to display only Year and Month on the chart. Alternatively, remove the fields from where they're listed in the **X-axis** well on the **Build visual** tab of the **Visualizations** pane.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-chart-date.png" alt-text="Screenshot of column chart showing profit by month for two different years." lightbox="media/desktop-excel-stunning-report/power-bi-column-chart-date.png":::
 
@@ -215,7 +215,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
     Power BI automatically creates a clustered column chart visualizing the data.
 
-1. Drag the handles on the chart so it's wide enough to fill the space under the two other charts.
+1. Drag the handles on the chart so it's wide enough to fill the space under the two other visuals.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of line chart and map visual positioned under report title and over column chart." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
 
@@ -234,7 +234,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-numeric-range.png" alt-text="Screenshot of Date numeric range slicer.":::
 
-1. You can drag the ends to filter the date range. You can change to a different type of slicer on the Visualization pane's Format visual tab. The options are under **Visual** > **Slicer settings** > **Options** > **Style**.
+1. You can drag the ends to filter the date range. You can also change to a different type of slicer on the Visualization pane's Format visual tab. The options are under **Visual** > **Slicer settings** > **Options** > **Style**.
 
 **Date slicer using the DAX table**
 
@@ -244,7 +244,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Screenshot of changing the Date hierarchy.":::
 
-1. Expand each year and resize the visual, so all months are visible.
+1. Expand each year and resize the visual so that all months are visible.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Screenshot of date hierarchy slicer with both years expanded to show all months.":::
 
@@ -287,8 +287,8 @@ With the appropriate visual selected, make the following changes on the **Visual
 
 **Add a background shape for Visuals 2 and 3**
 
-1. On the **Insert** tab in the ribbon at the top, select **Shapes** > **Rectangle**, and adjust the dimensions to be the width and height of Visuals 2 and 3.
-1. In the **Format shape** pane, on the **Shape** tab, expand the **Style** and **Border** sections, then change the **Transparency** value to **100%**.
+1. On the **Insert** tab in the ribbon at the top, select **Shapes** > **Rectangle**, then adjust the dimensions to be the width and height of Visuals 2 and 3.
+1. In the **Format shape** pane, on the **Shape** tab, expand the **Style** and **Border** sections and change the **Transparency** value to **100%**.
 1. In the **Fill** section, set the **Color** to **White, 10% darker**.
 1. On the **Format** tab in the ribbon, select **Send backward** > **Send to back** to position the rectangle behind the visuals.
 
