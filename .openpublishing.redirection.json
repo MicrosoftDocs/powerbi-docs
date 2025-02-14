@@ -5337,7 +5337,7 @@
         },
         {
             "source_path": "powerbi-docs/connect-data/service-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
+            "redirect_url": "/fabric/governance/onelake-catalog-overview",
             "redirect_document_id": false
         },
         {
@@ -5347,52 +5347,7 @@
         },
         {
             "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
+            "redirect_url": "/fabric/governance/onelake-catalog-overview",
             "redirect_document_id": false
         },
         {
