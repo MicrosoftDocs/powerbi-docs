@@ -1700,7 +1700,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/consumer/end-user-app-marketing.md",
+            "source_path": "power-bi-docs/consumer/end-user-app-marketing.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
