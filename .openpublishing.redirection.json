@@ -5396,9 +5396,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-doc
-        },
-        {
             "source_path": "powerbi-docs/guidance/report-design-tips-axes.md",
             "redirect_url": "/learn/paths/power-bi-effective/",
             "redirect_document_id": false
