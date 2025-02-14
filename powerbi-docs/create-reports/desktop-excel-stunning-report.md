@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Excel to stunning report in Power BI Desktop"
+title: "Tutorial: From Excel to stunning report in Power BI Desktop"
 description: This tutorial shows how you can quickly create a stunning report in Power BI Desktop from an Excel workbook.
 author: kfollis
 ms.author: kfollis
@@ -42,7 +42,7 @@ In this tutorial, you'll learn how to:
 
 ## Get data
 
-You can get the data for this tutorial using one of two methods.
+You can get the data for this tutorial using one of two methods: connect to the sample directly from Power BI Desktop, or download and open it in Power BI Desktop.
 
 ### Get data in Power BI Desktop
 
@@ -73,15 +73,15 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 1. The Power Query Editor opens. Select the **Units Sold** column. On the **Transform** tab, select **Data Type**, then select **Whole Number**. In the **Change Column Type** dialog that opens, choose **Replace current**.
 
-    The top data cleaning step users do most often is changing data types. In this case, the units sold are in decimal form. It doesn’t make sense to have 0.2 or 0.5 of a unit sold, so we change it to a whole number.
+    Changing data types is the data cleaning step that users do most often. In this case, the units sold are in decimal form. It doesn’t make sense to have 0.2 or 0.5 of a unit sold, so we changed it to a whole number.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Screenshot of changing a decimal number to a whole number.":::
 
-1. Select the **Segment** column. We want to make the segments easier to see in the chart later, so let’s format the data in the Segment column. On the **Transform** tab, select **Format**, then select **UPPERCASE**.
+1. We want to make the segments easier to see in the chart later, so let’s format the data in the Segment column. Select the **Segment** column. On the **Transform** tab, select **Format**, then select **UPPERCASE**.
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-query-upper-case.png" alt-text="Screenshot of changing the format from lowercase to uppercase.":::
 
-1. Let's shorten the column name from **Month Name** to just **Month**. Double-click the **Month Name** column, and rename it to just **Month**.  
+1. Let's shorten the column name from **Month Name** to just **Month**. Double-click the **Month Name** column, and rename it to **Month**.  
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-query-month-name.png" alt-text="Screenshot of column name selected for editing.":::
 
@@ -97,7 +97,7 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 1. Back on the **Home** tab, select **Close & Apply**. Our data is almost ready for building a report.
 
-    The sigma symbol in the Data list indicates a field that Power BI has detected is numeric. Power BI also indicates the date field with a calendar symbol.
+    The sigma symbol in the Data list indicates a field that Power BI has detected is numeric. Power BI uses a calendar symbol to denote a date field.
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Data list with numeric fields and date field.":::
 
@@ -181,7 +181,7 @@ Now you create a line chart to see which month and year had the highest profit.
 1. From the Data pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit.
 1. Drag the **Date** field to the same visual. Power BI updates the column chart to show monthly profit for the two years.
 
-   If you created a Calendar table in [Extra credit: Create a new table](#create-a-new-table) earlier in this article, expand the **Date** field in the Data pane, then select the checkbox for **Date Hierarchy**. Clear the checkboxes next to the **Quarter** and **Day** fields, or, alternatively, remove the fields from where they're listed in the **X-axis** well on the **Build a visual** tab of the **Visualizations** pane.
+   If you created a Calendar table in [Extra credit: Create a new table](#create-a-new-table) earlier in this article, expand the **Date** field in the Data pane, then select the checkbox for **Date Hierarchy**. Expand the field, then clear the checkboxes next to the **Quarter** and **Day** fields to display only year and month on the chart. Alternatively, remove the fields from where they're listed in the **X-axis** well on the **Build a visual** tab of the **Visualizations** pane.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-chart-date.png" alt-text="Screenshot of column chart showing profit by month for two different years." lightbox="media/desktop-excel-stunning-report/power-bi-column-chart-date.png":::
 
@@ -215,7 +215,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
     Power BI automatically creates a clustered column chart visualizing the data.
 
-1. Drag the handles on the chart so it's wide enough to fill the space under the two upper charts.
+1. Drag the handles on the chart so it's wide enough to fill the space under the two other charts.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of line chart and map visual positioned under report title and over column chart." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
 
