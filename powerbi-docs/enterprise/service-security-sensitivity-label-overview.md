@@ -7,7 +7,7 @@ manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 12/15/2024
+ms.date: 02/16/2025
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -290,6 +290,8 @@ The *Do Not Forward* and *user-defined* types refer to labels defined in the [Mi
 * Temp files aren't encrypted.
 
 * **Export to PDF in Desktop** supports sensitivity labels as a preview feature that is on by default. To turn off the preview feature, go to **File > Options and settings > Options > Preview features**, and uncheck **Enable setting sensitivity label on exported PDF**. If you turn off the preview feature, when you export a file that has a sensitivity label to PDF, the PDF won't receive the label and no protection will be applied.
+
+* Exporting a report with a protected sensitivity label from the Power BI service to a .pbix file might fail if the .pbix file size starts to exceed 6 GB.
 
 * If you overwrite a labeled semantic model or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
 
