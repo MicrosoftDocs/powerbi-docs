@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/09/2023
+ms.date: 11/09/2024
 # customer intent: As an ISV, I want to learn how to embed Power BI content with token-based, single sign-on (SSO) identities so I can provide secure access to my customers' data.
 ---
 
@@ -74,40 +74,6 @@ To Embed a report with token-based identity, generate an embed token that contai
 See the following examples for generating embed tokens for different scenarios.
 
 #### [Power BI report with SSO](#tab/Power-BI-report-with-SSO)
-
-<!--
-
-```json
-{
-  "datasets": [
-    {
-      "id": "66ba5010-xxxx-xxxx-xxxx-f2bf0125abeb",
-      "xmlaPermissions": "ReadOnly"
-    }
-  ],
-  "reports": [
-    {
-      "allowEdit": false,
-      "id": "9e6da541-xxxx-xxxx-xxxx-7d9442827cce"
-    }
-  ],
-  "datasourceIdentities": [
-    {
-      "identityBlob": "eyJ…",
-      "datasources": [
-        {
-          "datasourceType": "Sql",
-          "connectionDetails": {
-            "server": "YourServerName.database.windows.net",
-            "database": "YourDataBaseName"
-          }
-        }
-      ]
-    }
-  ]
-}
-```
--->
 
 ```json
 {
