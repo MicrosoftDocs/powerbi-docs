@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/22/2023
+ms.date: 11/22/2024
 #customer intent: As a Power BI visual developer, I want to learn how to use the Total and Subtotal API to request aggregated subtotal data from the Power BI host.
 ---
 
@@ -31,7 +31,7 @@ The API offers the following customization for each data-view type (currently, o
 * `columnSubtotals`: (boolean) Indicates if the *subtotal* data should be requested for all fields in the columns field well.
 * `columnSubtotalsPerLevel`: (boolean) Indicates if the *subtotal* data can be toggled for individual fields in the columns field well.
 * `levelSubtotalEnabled`: (boolean) Indicates if the subtotals are requested for the row or column. Unlike all the other properties, this property is applied to individual rows or columns.
-* `rowSubtotalsType`: ("Top" or "Bottom") Indicates if the row with the *total* data should be retrieved before (`top`) or after (`bottom`) the rest of the data. If this property is set to `bottom`, the total can only be displayed after all the data has been fetched. The default is `bottom`.
+* `rowSubtotalsType`: ("Top" or "Bottom") Indicates if the row with the *total* data should be retrieved before (`top`) or after (`bottom`) the rest of the data. If this property is set to `bottom`, the total can only be displayed after all the data is fetched. The default is `bottom`.
 
 Each of these switches is assigned a value based on the related properties in the property pane and the defaults.
 
