@@ -144,6 +144,10 @@ The semantic model settings page only shows the **OneDrive Credentials** and **O
 
 ![OneDrive Credentials and OneDrive refresh](media/refresh-data/onedrive-credentials-refresh.png)
 
+The semantic model settings page also displays a link to the One Drive folder where the underlying PBIX file is hosted in the **OneDrive refresh** section.
+
+![OneDrive Source URI](media/refresh-data/odsp-source-uri.png)
+
 If you disable OneDrive refresh for a semantic model, you can still synchronize your semantic model on demand by selecting **Refresh now** in the semantic model menu. As part of the on-demand refresh, Power BI checks if the source file on OneDrive or SharePoint Online is newer than the semantic model in Power BI and synchronizes the semantic model if it is. The **Refresh history** lists these activities as on-demand refreshes on the **OneDrive** tab.
 
 Keep in mind that OneDrive refresh doesn't pull data from the original data sources. OneDrive refresh simply updates the resources in Power BI with the metadata and data from the .pbix, .xlsx, or .csv file, as the following diagram illustrates. To ensure that the semantic model has the most recent data from the data sources, Power BI also triggers a data refresh as part of an on-demand refresh. You can verify this in the **Refresh history** if you switch to the **Scheduled** tab.
@@ -151,6 +155,10 @@ Keep in mind that OneDrive refresh doesn't pull data from the original data sour
 ![OneDrive refresh diagram](media/refresh-data/onedrive-refresh-diagram.png)
 
 If you keep OneDrive refresh enabled for a OneDrive or SharePoint Online-connected semantic model and you want to perform data refresh on a scheduled basis, make sure you configure the schedule so that Power BI performs the data refresh after the OneDrive refresh. For example, if you created your own service or process to update the source file in OneDrive or SharePoint Online every night at 1:00 AM, you could configure scheduled refresh for 2:30 AM to give Power BI enough time to complete the OneDrive refresh before starting the data refresh.
+
+For live connection reports, there is also a **OneDrive refresh** section within the live connection report settings pane. This section displays a link to the One Drive folder where the underlying PBIX file is hosted in the **OneDrive refresh** section, a toggle to enable or disable refresh as well as a way to view OneDrive refresh history.
+
+![Live Connection Report Settings History](media/refresh-data/live-connection-report-onedrive-refresh-settings.png)
 
 #### Refresh of query caches
 
