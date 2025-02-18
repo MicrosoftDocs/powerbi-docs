@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.custom: fabric-cat, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+ms.custom: fabric-cat, no-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.date: 12/30/2024
 ---
 
