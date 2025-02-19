@@ -6,8 +6,8 @@ ms.author: kfollis
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: conceptual
-ms.date: 12/14/2023
+ms.topic: concept-article
+ms.date: 02/19/2025
 LocalizationGroup: Share your work
 ---
 # Create Excel workbooks with refreshable Power BI data
