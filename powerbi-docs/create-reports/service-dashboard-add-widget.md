@@ -1,6 +1,6 @@
 ---
 title: Add images, videos, and more to your dashboard
-description: Documentation on how to use the Add a tile widget to add an image, video, text box, web code, and streaming data tile to a dashboard.
+description: Documentation on how to use the Add a tile widget to add an image, video, text box, web code, or streaming data tile to a dashboard.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
@@ -17,7 +17,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This article provides step-by-step instructions on how to add various types of tiles, such as images, videos, text boxes, web content, and streaming data, to a Power BI dashboard. This article takes you through the steps of adding different types of content to dashboards, making them more informative, interactive, and visually appealing.
+By adding a tile to your dashboard, you can place an image, text box, video, streaming data, or web code on your dashboard. This article takes you through the steps of adding different types of content to dashboards, making them more informative, interactive, and visually appealing.
 
 > [!NOTE]
 > You must have permission to edit the dashboard, or you won't see the same options described here. Certain content might also be disabled by your administrator.
@@ -118,7 +118,7 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 
 ## Add streaming data
 
-You can add streaming data, such as Twitter feeds or sensor data, to a tile in your dashboard. [This example of real-time streaming in Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/service-real-time-streaming#example-of-real-time-streaming-in-power-bi) using a publicly available stream from PubNub has detailed instructions to get you started. Read the rest of [that article](../connect-data/service-real-time-streaming.md) to learn more about real-time streaming options in Power BI.
+You can add streaming data, such as Twitter feeds or sensor data, to a tile in your dashboard. [This example of real-time streaming in Power BI](../connect-data/service-real-time-streaming.md#example-of-real-time-streaming-in-power-bi) using a publicly available stream from PubNub has detailed instructions to get you started. Read the rest of [that article](../connect-data/service-real-time-streaming.md) to learn more about real-time streaming options in Power BI.
 
 ## Add web content
 
