@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/19/2025
+ms.date: 02/20/2025
 LocalizationGroup: Share your work
 #customer intent: As a Power BI user I want to create Excel workbooks with refreshable Power BI data
 ---

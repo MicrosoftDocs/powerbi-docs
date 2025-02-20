@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
-ms.date: 01/11/2024
+ms.date: 02/20/2025
 LocalizationGroup: Share your work
 #customer intent: As a user, I want to discover and analyze Power BI semantic models in Excel so that I can leverage Excel's capabilities for data analysis.
 ---
