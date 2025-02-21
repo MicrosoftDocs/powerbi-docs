@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 # What's new in Power BI?
 
 
-## February 2025 Update (2.139.1576.0)
+## February 2025 Update (2.140.1078.0)
 
 In February we just love the fact that Power BI continues to woo us with new features, better business intelligence insights, and all the analytics you need to make the most of your cherished data.
 
