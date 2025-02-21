@@ -100,6 +100,79 @@ When creating content by using other tools, some key decisions you should make i
 
 Once you decide how you'll create content, you next need to choose where you'll publish and test content while you develop it.
 
+## Decide the format of your content
+
+Depending on what content you'll create and which tools you'll use, your content might use different file formats. However, even within a tool, you must choose between different formats. For instance, for reports and semantic models that you create with Power BI Desktop, you have to choose between .pbix and .pbip files. This decision has a functional impact on not only how you develop content, but also how you manage that content during its lifecycle, and how efficiently you can complete certain development tasks.
+
+### Power BI Desktop (.pbix) file format
+
+The default and most common format for Power BI reports and models is the .pbix file format. This binary format is easy to manage and use for most people. However, it is not possible to open or use the file contents to track changes or improve developer productivity.
+
+Use the .pbix file format when:
+- You plan to publish content by using OneDrive refresh.
+- Content creators want to use and share a single binary file rather than a folder of multiple files (like with the .pbip format).
+
+### Power BI Projects (.pbip) file format
+
+Instead of a .pbix file, you can also save content using the .pbip format. This format splits the file into a _folder structure_. In the folder structure of a .pbip, there are multiple metadata files which you can open and read that provide the definitions and configurations for models and reports. 
+
+The .pbip file format can also use the TMDL or PBIR formats for semantic model and report definitions, respectively, which have their own advantages and considerations to keep in mind.
+
+Use the .pbip file format when:
+- You plan to use source control to track and manage changes.
+- Multiple content creators will collaborate together on a models or reports.
+- You want to benefit from productivity enhancements and save time making models or reports.
+- You plan to automate parts of the development, testing, or deployment process.
+- You want to structure your model and report files in different ways (like multiple reports in the .Report folder, and multiple models in the .SemanticModel folder).
+
+### Tabular Model Definition Language (.tmdl) file format
+
+When you save a model as a .pbip you can choose to save it as a single .bim file, or in a folder structure of multiple .tmdl files. TMDL is a new YAML-like language for semantic model definitions that makes it easier to read and manage changes of a model.
+
+Some advantages of the new TMDL format are as follows:
+- You can better use source control and Git integration, because model metadata is more concise, structured, and easier to read.
+- You can more easily merge changes without creating conflicts.
+- You can improve your efficiency for certain reporting tasks, such as re-using or copying model objects between models (like a date table).
+
+Use the TMDL format when:
+- You plan to use source control to track and manage changes.
+- You want to enhance developer productivity by making metadata changes.
+
+> [!NOTE]
+> TMDL format is different from the [TMDL view in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-tmdl-view). The TMDL view is a scripting interface for you to make programmatic changes to the model, even when there is no user interface to do so. The TMDL view uses a similar YAML-like syntax as TMDL format files, but these files are just metadata, and not for scripting. You don't need to use the TMDL format to benefit from the TMDL view.
+
+### Power BI enhanced report (PBIR) format.
+
+When you save content as either a .pbip file, you can choose to use the default report format or the [new PBIR format](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-report#pbir-format). This new format presents several advantages that can enhance developer productivity and collaboration, particularly when you use the PBIR format with .pbip files. 
+
+Some advantages of using the PBIR format are as follows:
+- You can better use source control and Git integration, because report metadata is more concise, structured, and easier to read.
+- You can improve your efficiency for certain reporting tasks, such as:
+  - Re-using or copying visuals between pages by copying the visual.json.
+  - Re-using or copying pages between reports.
+  - Finding and replacing custom colours, fields, and other visual configuration all at once.
+  - Fixing "broken" visuals with fields that were renamed or moved between tables.
+- You can add metadata annotations to report metadata to facilitate certain automations or tasks that support continuous integration / continuous deployment (CI/CD).
+- You can leverage tools like semantic-link-labs that only work with the new PBIR format.
+
+Use the PBIR format when:
+- You plan to use source control to track and manage changes.
+- You want to enhance report creator productivity by making metadata changes.
+
+[//]: # (Todo: Add a diagram that shows an example of how you would copy a page or visual.)
+
+> [!CAUTION]
+> Ensure that you first check the [limitations and considerations](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-report#pbir-considerations-and-limitations) before using the PBIR format. These limitations and considerations change over time, so check back regularly if there are certain items that prevent you from fulfilling a specific requirement for your Power BI content.
+
+### Power BI template (.pbit) file format
+
+You can also save a Power BI report or semantic model as a .pbit file. However, .pbit files are intended for re-use of a specific report layout or model structure. You should not use the .pbit format to save and manage Power BI content during its development.
+
+### Other formats
+
+When you develop other content in Power BI (such as dashboards, dataflows, or paginated reports), you might not have content files if you develop the item in Fabric. Alternatively, you could only have the item's definition saved to source control. For more information, see [Decide where to store files](powerbi-implementation-planning-content-lifecycle-management-plan-design.md#Decide-where-to-store-files) in the previous article of this series.
+
+
 ## Decide how you'll set up and use workspaces
 
 When developing content, you should use multiple workspaces (or stages) to separate production content used by the organization from content being developed or validated. There are several advantages to using separate workspaces for your content:
