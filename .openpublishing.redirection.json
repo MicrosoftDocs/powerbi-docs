@@ -1700,6 +1700,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-app-marketing.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-admin-power-bi-archived-workspace.md",
             "redirect_url": "/power-bi/",
             "redirect_document_id": false
@@ -5337,12 +5342,17 @@
         },
         {
             "source_path": "powerbi-docs/connect-data/service-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
+            "redirect_url": "/fabric/governance/onelake-catalog-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-data-hub.md",
+            "redirect_url": "/fabric/governance/onelake-catalog-overview",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
+            "redirect_url": "/fabric/governance/onelake-catalog-overview",
             "redirect_document_id": false
         },
         {

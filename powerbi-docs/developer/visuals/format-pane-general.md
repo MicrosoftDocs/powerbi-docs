@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/12/2023
+ms.date: 01/12/2025
 #customer intent: As a custom Power BI visual developer, I want to learn how to customize the new Format pane in Power BI custom visuals using the new formatting model so that I can create visuals that are easier for report creators to use.
 ---
 

@@ -23,13 +23,14 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
 ### Power BI Report Server
 - *Version: 1.22.9153.7886 (build 15.0.1117.98), Released: January 22, 2025*
   - Bug fixes
-    - Fixed issue with new property 'EnableCustomURLInKPI' not getting configured correctly.
+    - Fixed issue with new property 'EnableCustomURLInKPI' not getting configured correctly during upgrade. In the previous build (15.0.1117.95), Publisher and Content Manager roles would not have the new property set to a value and would get a permission error when accessing the /reports endpoint.
 
 - *Version: 1.22.9137.4867 (build 15.0.1117.95), Released: January 13, 2025*
   - Features
     - Custom Visual API shipped with release - version v5.10.0
     - Updated underlying version of angular.
     - Add new advanced server property EnableRefererValidation and set default value to false.
+    - Add new advanced server property 'EnableCustomURLInKPI' with default value 'true' to control if KPIs can link to custom URLs.
     - Added support for PBIX data limit feature.
   - Bug fixes
     - Fixed issue with RSExecRole not getting correct permissions when restoring a catalog.
@@ -60,6 +61,10 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
     - Fixed issue with ribbon charts in Power BI Reports
 
 ### Power BI Desktop (optimized for Power BI Report Server)
+
+- *Version: 2.136.3279.0 (September 2024), Released: January 7, 2025*
+     - Fix for WebView2 issue.
+
 - *Version: 2.136.1202.0 (September 2024), Released: September 26, 2024*
      - Support for September 2024 Power BI Report Server.
 
@@ -89,6 +94,9 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
     - Various bug fixes
 
 ### Power BI Desktop (optimized for Power BI Report Server)
+
+- *Version: 2.129.6228.0 (May 2024), Released: January 7, 2025*
+     - Fix for WebView2 issue.
 
 - *Version: 2.129.2203.0 (May 2024), Released: July 12, 2024*
    - Bug fixes

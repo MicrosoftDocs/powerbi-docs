@@ -32,6 +32,9 @@ Migrating from an SSRS (Native mode) instance to Power BI Report Server consists
 
 ![Migrate from SSRS native mode to Power BI Report Server](media/migrate-report-server/migrate-from-ssrs-native.png "Migrate from SSRS native mode to Power BI Report Server")
 
+> [!IMPORTANT]
+> Migrations from SQL Server 2022 Reporting Services currently aren't supported. These migrations will require migration to Power BI Report Server (May 2025) or later. 
+
 > [!NOTE]
 > SQL Server 2008 Reporting Services and later are supported for migration.
 

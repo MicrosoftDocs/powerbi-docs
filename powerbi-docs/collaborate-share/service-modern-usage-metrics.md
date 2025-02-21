@@ -317,6 +317,8 @@ It's important to understand that differences can occur when comparing the impro
 In addition to the above differences between previous and improved usage metrics reports, note the following limitations for the preview release:
 
 - Dashboard usage metrics still rely on the previous version of the usage metrics reports and aren't yet available in modern usage metrics.
+- There are fields in the _Report page views_ and _Report load times_ tables that are always blank.
+- Pages for App reports can't be seen in the Report pages table.
 - Performance data and Report Page View metrics rely on the client/device sending data to Power BI. Depending on network latency, ad blockers, firewalls, and network rules set by your organization, this data may never reach Power BI. Therefore, the performance and Report Page View data may not include all views or all users.
 - Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
 - Report performance metrics aren't available for Paginated Reports. The Pages tab on the Report usage page as well as the charts on the Report performance page don't show data for these types of reports.

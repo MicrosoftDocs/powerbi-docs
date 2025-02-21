@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/15/2025
+ms.date: 02/04/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,16 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## February 2025
+
+### Copilot in the Power BI mobile apps is now available on iPads and Android tablets! (preview)
+
+Copilot in the Power BI Mobile apps helps you quickly analyze data, gain insights, and make informed decisions on the go. With this release, you can now enjoy the benefits of Copilot on your iPad or Android tablet, in addition to on your phone, [where Copilot in the Power BI mobile apps was introduced several months ago](#november-2024).
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/copilot-whats-new-tablet-support.png" alt-text="Screenshot showing Copilot in the Power BI mobile apps on a tablet device." border="false":::
+
+Check out our [documentation](./mobile-apps-copilot.md) and get started today!
 
 ## November 2024
 
@@ -1057,7 +1067,7 @@ If you scan a QR code for a dashboard that you don't have access to, now you can
 #### All devices
 **Scrolling made easier** 
 
-Now you can scroll in bar and column charts in a report by touching the chart itself, rather than touching the scroll bar on the side.
+Now you can scroll in bar and column charts in a report by touching the chart itself, rather than touching the scrollbar on the side.
 
 #### iOS devices
 **Ask questions of your data with a preview of Q&A** 

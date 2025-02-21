@@ -7,10 +7,11 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
-ms.date: 12/21/2023
+ms.date: 12/21/2024
+# customer intent: As a Power BI developer, I want to learn how to troubleshoot common issues that might occur when setting up my developer environment for creating custom Power BI visuals so that I can develop my visuals effectively.
 ---
 
-# Troubleshoot your Power BI developer environment setup
+# Troubleshoot your Power BI developer environment setup for custom visuals
 
 This article explains how to diagnose and fix the following common problems that can occur when setting up your developer environment for creating custom Power BI visuals.
 

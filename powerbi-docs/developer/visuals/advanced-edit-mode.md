@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 1/27/2024
+ms.date: 02/05/2025
 ---
 
 # Advanced edit mode in Power BI visuals
@@ -39,9 +39,11 @@ When you select **Edit**, the visual gets an update() call with EditMode set to 
 - `SupportedNoAction`: The host doesn’t require further action.
 - `SupportedInFocus`: The host pops out the visual in Focus mode.
 
+You can read more about how to configure the *capabilities.json* file in [Capabilities and properties of Power BI visuals](capabilities.md). 
+
 ## Exit advanced edit mode
 
-The **Back to report** button appears if the `advancedEditModeSupport` property is set in the *capabilities.json* file to `SupportedInFocus`.
+The **Back to report** button appears if the `advancedEditModeSupport` property is set in the *capabilities.json* file to `SupportedInFocus`. 
 
 ## Related content
 
