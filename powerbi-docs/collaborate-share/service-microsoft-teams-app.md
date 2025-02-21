@@ -9,22 +9,21 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/23/2023
+ms.date: 02/21/2025
+#customer intent: As a Power BI user I want to learn how to add the Power BI app to Microsoft Teams.
 ---
 
 # Add the Power BI app to Microsoft Teams
 
 This article describes how you can install, pin, and interact with Power BI directly inside Microsoft Teams. The Power BI personal app brings the entire basic Power BI service experience to Microsoft Teams.
-
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-teams.png" alt-text="Screenshot of the Power BI app home page in Microsoft Teams showing the In Teams tab selected.":::
-
 With the Power BI app in Microsoft Teams, you can [collaborate with Power BI in Teams](service-collaborate-microsoft-teams.md). The app is your personal experience of Power BI. It's as if the Power BI service lives inside Microsoft Teams. After you install it, you can do almost everything in Microsoft Teams that you can do in the Power BI service.
 
 - Create, view, and edit dashboards, reports, and apps.
 - Create and participate in workspaces.
 - Share content, either through email or through Microsoft Teams.
 
-Also, there's a feature in the Power BI app in Teams that you don't see when you view the Power BI service (app.powerbi.com) in a web browser. On the Power BI home page in Teams, you can [see all the Power BI tabs you've viewed](service-teams-pivot.md) in Teams.
+Also, there's a feature in the Power BI app in Teams that you don't see when you view the Power BI service (app.powerbi.com) in a web browser. On the Power BI home page in Teams, you can [see all the Power BI tabs you viewed](service-teams-pivot.md) in Teams.
 
 There are a few features that you can access only in the Power BI service in a browser. For details, see the [Known issues and limitations](#known-issues-and-limitations) section of this article.
 
@@ -33,13 +32,13 @@ There are a few features that you can access only in the Power BI service in a b
 
 ## Requirements
 
-Ensure the following elements are in place to install the Power BI app in Microsoft Teams:
+Install the Power BI app in Microsoft Teams to ensure the following elements are in place:
 
 - Power BI app is enabled in the Teams Admin center apps list.
 - Your users with a Fabric (Free) license can access personal analytics. They can use the built-in Teams analytics report and create reports in their My workspace.
 - Your users with Fabric (Free) licenses can also access content that's shared with them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
 - Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
-- Users have signed in within the Power BI app for Teams or the Power BI service and activated their Power BI license.
+- Users signed in within the Power BI app for Teams or the Power BI service and activated their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
 
 ## Install the Power BI app
@@ -54,13 +53,13 @@ That's it! The Power BI app is installed in Microsoft Teams.
 
 The first time you open the Power BI app in Teams, you need to sign in to Power BI.
 
-* If multifactor authentication (MFA) for Power BI is configured for your account, you'll see a message requesting additional permissions.
+- If multifactor authentication (MFA) for Power BI is configured for your account, you'll see a message requesting additional permissions.
 
     :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-mfa-sign-in.png" alt-text="Screenshot showing pop-up screen for multifactor authentication in the Power BI app for Teams.":::
 
     Select **Continue**, and then provide the next factor of authentication (as configured by your organization).
 
-* If MFA for Power BI isn't configured for your account, you'll be prompted to go through the regular Power BI sign in process.
+- If MFA for Power BI isn't configured for your account, you'll be prompted to go through the regular Power BI sign in process.
 
 ## Pin the Power BI app to the Teams navigation pane
 
@@ -82,7 +81,7 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of the Learning center in the Power BI app in Microsoft Teams. The Learn tab is selected in Teams and the Power BI navigation pane.":::
 
-The Power BI app in Microsoft Teams helps you multi-task by remembering where you navigated to for one hour. When you leave the app and return within one hour, the app *automatically takes you back* to where you were working by navigating to: 
+The Power BI app in Microsoft Teams helps you multi-task by remembering where you navigated to for one hour. When you leave the app and return within one hour, the app *automatically takes you back* to where you were working by navigating to:
 
 - Items you visited, such as the report page you were on and the filters you applied.
 - Places you visited, such as Home, Create, Data hub, Workspaces, and so on.
