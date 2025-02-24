@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/21/2025
+ms.date: 02/24/2025
 LocalizationGroup: Data refresh
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
 ---
@@ -442,7 +442,7 @@ response = client.get(f"/v1.0/myorg/groups/{workspaceId}/datasets/{semanticModel
 
 refreshHistory = pd.json_normalize(response.json()['value'])
 
-refreshHistory["refreshLink"] = refreshHistory.apply(lambda x:f"https://msit.powerbi.com/groups/{workspaceId}/datasets/{semanticModelId}/refreshdetails/{x['requestId']}", axis=1)
+refreshHistory["refreshLink"] = refreshHistory.apply(lambda x:f"https://app.powerbi.com/groups/{workspaceId}/datasets/{semanticModelId}/refreshdetails/{x['requestId']}", axis=1)
 
 displayHTML(refreshHistory[["requestId", "refreshLink"]].to_html(render_links=True, escape=False))
 ```
