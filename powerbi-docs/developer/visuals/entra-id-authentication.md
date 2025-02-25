@@ -53,7 +53,7 @@ For each cloud the visual is intended to support, follow these steps:
 
     :::image type="content" source="./media/entra-id-authentication/add-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the option to add an application ID URI.":::
 
-1. In the **Edit Application ID URI** field, enter your Verified Custom Domain, ensuring that it begins with **"https://"** and doesn't contain **"onmicrosoft.com"**, and select **Save**.
+1. In the **Edit Application ID URI** field, enter your [Verified Custom Domain](/entra/identity/users/domains-manage), ensuring that it begins with **"https://"** and doesn't contain **"onmicrosoft.com"**, and select **Save**.
 
    To add a custom domain:
 
