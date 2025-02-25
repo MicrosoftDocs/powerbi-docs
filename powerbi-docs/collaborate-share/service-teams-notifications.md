@@ -71,8 +71,6 @@ The following notifications are supported for metrics.
 
 When a user assigns you as the owner of a goal, you get a notification from then in Teams.
 
-:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-assign.png" alt-text="Screenshot showing Get Power BI metrics assignment notifications in Microsoft Teams activity feed.":::
-
 When you select the notification, the scorecard opens within the activity feed experience and displays the **Details** pane for the metric.
 
 You can customize how to receive these notifications through the **Mentions** setting.
@@ -81,8 +79,6 @@ You can customize how to receive these notifications through the **Mentions** se
 
 When someone @mentions you in a note on a new or existing check-in, Teams sends you a notification from them.
 
-:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-mention.png" alt-text="Screenshot showing Get Power BI metrics mention notifications in Microsoft Teams activity feed.":::
-
 When you select the notification, the scorecard opens within the activity feed experience and displays the **Details** pane for the metric.
 
 You can customize how to receive these notifications through the **Mentions** setting.
@@ -90,8 +86,6 @@ You can customize how to receive these notifications through the **Mentions** se
 #### Metrics status updates
 
 When the status of the metric gets updated by an automated status rule, you receive a notification in Teams if you're the owner of the metric. For connected metrics, you get a notification from the user who configured the data connection. For manual metrics, you get a notification from the user who edited the value.
-
-:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-status-update.png" alt-text="Screenshot showing Get Power BI metrics status update notifications in Microsoft Teams activity feed.":::
 
 When you select the notification, the scorecard opens within the activity feed experience and displays the **Details** pane for the metric.
 
