@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Connect to data
 ---
 # Using enhanced semantic model metadata
@@ -23,7 +23,7 @@ The enhanced semantic model metadata feature is strategic and foundational. Futu
 
 ## Upgrade
 
-Your reports are automatically upgraded to the enhanced metadata format when you open them in the latest version of Power BI Desktop. If the report was saved with unapplied query changes, or there was an error during the auto-upgrade, there's a warning on the report canvas that you still need to upgrade. Selecting **Upgrade report** applies any pending changes and upgrades the data model to the new format.
+Your reports are automatically upgraded to the enhanced metadata format when you open them in the latest version of Power BI Desktop. If the report was saved with unapplied query changes, or there was an error during the auto-upgrade, there's a warning on the report canvas that you still need to upgrade. Selecting **Upgrade report** applies any pending changes and upgrades the semantic model to the new format.
 
 ## Exclude table from report refresh
 
@@ -31,7 +31,7 @@ Once a data model has been upgraded to the enhanced metadata format, some metada
 
 ## Considerations and limitations
 
-Before enhanced metadata support, for SQL Server, Oracle, Teradata, and legacy HANA connections, Power BI Desktop added a native query to the data model. This query is used by the Power BI service data models. With enhanced metadata support, the Power BI service data model regenerates the native query at runtime. It doesn't use the query that Power BI Desktop created. In most cases, this retrieval resolves itself correctly, but some transformations don't work without reading underlying data. You might see some errors in reports that previously worked. For example, an error might say:
+Before enhanced metadata support, for SQL Server, Oracle, Teradata, and legacy HANA connections, Power BI Desktop added a native query to the semantic model. This query is used by the Power BI service semantic models. With enhanced metadata support, the Power BI service semantic model regenerates the native query at runtime. It doesn't use the query that Power BI Desktop created. In most cases, this retrieval resolves itself correctly, but some transformations don't work without reading underlying data. You might see some errors in reports that previously worked. For example, an error might say:
 
 - Unable to convert an M query in table 'Dimension City' into a native source query. Try again later or contact support. If you contact support, provide these details.
 

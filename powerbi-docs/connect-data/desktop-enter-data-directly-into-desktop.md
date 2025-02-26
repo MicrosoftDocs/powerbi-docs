@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/05/2023
+ms.date: 02/26/2025
 LocalizationGroup: Connect to data
 ---
 # Enter data directly into Power BI Desktop
@@ -35,7 +35,7 @@ You're now ready to use the data in Power BI Desktop. You can create visuals, re
 
 > [!NOTE]
 > To update, add, or delete data within items created by **Enter Data**, changes must be made in Power BI Desktop, and published.
-> Data updates cannot be made directly from the Power BI service.
+> Data updates can't be made directly from the Power BI service.
 
 ## Related content
 
