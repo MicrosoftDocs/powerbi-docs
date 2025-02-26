@@ -40,7 +40,7 @@ For each cloud the visual is intended to support, follow these steps:
 
 1. On the **Register an application** page, do the following:
    1. Enter your desired application name in the **Name** section.
-   1. Select *Accounts in any organizational directory (Any Azure AD directory - Multitenant)* in the **Supported account types** section.
+   1. Select *Accounts in any organizational directory (Any Microsoft Entra ID tenant - Multitenant)* in the **Supported account types** section.
    1. Select **Register**.
 
    :::image type="content" source="./media/entra-id-authentication/register-app.png" alt-text="Screenshot of the Register an app page of the Microsoft Entra ID registration app.":::
