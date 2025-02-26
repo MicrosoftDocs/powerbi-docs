@@ -9,7 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/25/2025
 LocalizationGroup: Data from databases
-#customer intent: 
+#customer intent: As a Power BI user I want to learn how to allow users to edit SAP variables.
 ---
 
 # Edit SAP variables in Power BI
