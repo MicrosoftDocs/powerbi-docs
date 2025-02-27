@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 02/26/2025
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP Business Warehouse by using DirectQuery in Power BI
@@ -52,11 +52,11 @@ The following table lists all SAP BW features that aren't fully supported, or be
 | --- | --- |
 | **Local calculations** | Local calculations defined in a BEx Query change the numbers as displayed through tools like BEx Analyzer. However, they aren't reflected in the numbers returned from SAP, through the public MDX interface. |
 | | **As such, the numbers seen in a Power BI visual don't necessarily match those for a corresponding visual in an SAP tool.** |
-| | For example, when connecting to a query cube from a BEx query that sets the aggregation to be *Cumulated*, or running sum, Power BI would get back the base numbers, ignoring that setting. An analyst could certainly then apply a running sum calculation locally in Power BI, but would need to exercise caution in how the numbers are interpreted if this action isn't done. |
+| | For example, when connecting to a query cube from a BEx query that sets the aggregation to be *Cumulated*, or running sum, Power BI would get back the base numbers, ignoring that setting. An analyst could then apply a running sum calculation locally in Power BI, but would need to exercise caution in how the numbers are interpreted if this action isn't done. |
 | **Aggregations** | In some cases, particularly when dealing with multiple currencies, the aggregate numbers returned by the SAP public interface don't match the results shown by SAP tools. |
 | | **As such, the numbers seen in a Power BI visual don't necessarily match those for a corresponding visual in an SAP tool.** |
 | | For example, totals over different currencies would show as "*" in BEx Analyzer, but the total would get returned by the SAP public interface, without any information that such an aggregate number is meaningless. Thus the number aggregating, say, $, EUR, and AUD, would get displayed by Power BI. |
-| **Currency formatting** | Any currency formatting, for example, *$2,300* or *4000 AUD*, isn't reflected in Power BI. |
+| **Currency formatting** | Any currency formatting, for example, *$2,300* or *4,000 AUD*, isn't reflected in Power BI. |
 | **Units of measure** | Units of measure, for example, *230 KG*, aren't reflected in Power BI. |
 | **Key versus text** (short, medium, long) | For an SAP BW characteristic like `CostCenter`, the field list shows a single column *Cost Center*.  Using that column displays the default text. By showing hidden fields, it's also possible to see the unique name column that returns the unique name assigned by SAP BW, and is the basis of uniqueness. |
 | | The key and other text fields aren't available. |

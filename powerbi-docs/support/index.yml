@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: kfollis
   ms.author: kfollis
-  ms.date: 01/17/2024
+  ms.date: 02/26/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -27,11 +27,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Support overview
-            url: /power-platform/admin/support-overview
+            url: service-support-options.md
           - text: How to contact Support #can we eliminate the PBI version?
             url: service-support-options.md
           - text: Create a Support ticket
-            url: /power-platform/admin/get-help-support
+            url: create-support-ticket.md
 
 # Card (optional)
   - title: Support-related admin settings

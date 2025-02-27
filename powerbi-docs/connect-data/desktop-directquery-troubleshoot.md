@@ -7,12 +7,12 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 02/21/2023
+ms.date: 02/26/2025
 ---
 
 # Troubleshoot DirectQuery models in Power BI Desktop
 
-This article helps you diagnose performance issues with Power BI DirectQuery data models you develop in Power BI Desktop or the Power BI service. The article also describes how to get detailed information to help you optimize reports.
+This article helps you diagnose performance issues with Power BI DirectQuery semantic models you develop in Power BI Desktop or the Power BI service. The article also describes how to get detailed information to help you optimize reports.
 
 You should start any diagnosis of performance issues in Power BI Desktop, rather than in the Power BI service or Power BI Report Server. Performance issues often depend on the performance level of the underlying data source. You can more easily identify and diagnose these issues in the isolated Power BI Desktop environment, without involving components like an on-premises gateway.
 
@@ -95,7 +95,7 @@ Keep individual sessions reasonably small, perhaps 10 seconds of actions, not hu
 
 ## Query and subquery format
 
-The general format of Power BI Desktop queries is to use subqueries for each model table the queries reference. The Power Query Editor query defines the subselect queries. For example, assume you have the following [TPC-DS](https://www.tpc.org/tpcds/default5.asp) tables in a SQL Server relational database:
+The general format of Power BI Desktop queries is to use subqueries for each semantic model table the queries reference. The Power Query Editor query defines the subselect queries. For example, assume you have the following [TPC-DS](https://www.tpc.org/tpcds/default5.asp) tables in a SQL Server relational database:
 
 ![Screenshot of a Power BI Desktop model view diagram that shows the related Item, Web_Sales, Customer and Date-dim TPC-DS tables.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-model-view-diagram.png)
 

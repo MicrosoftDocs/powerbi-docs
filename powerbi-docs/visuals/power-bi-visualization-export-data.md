@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/18/2024
+ms.date: 02/21/2025
 ms.custom: sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -259,7 +259,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 |Export type|[Model level format](../create-reports/desktop-custom-format-strings.md#add-a-model-level-format-string) preserved|[Visual level format](../create-reports/desktop-custom-format-strings.md#add-a-visual-level-format-string) preserved|
 |---|---|---|
-|[Export to Excel](?tabs=powerbi-service)|Yes|No|
+|[Export to Excel](?tabs=powerbi-service)|Yes|Yes|
 |[Connected Tables](../collaborate-share/service-analyze-in-excel.md#excel-add-in)|No|No|
 |[Export to CSV](?tabs=powerbi-desktop)|Yes|Yes|  
 
