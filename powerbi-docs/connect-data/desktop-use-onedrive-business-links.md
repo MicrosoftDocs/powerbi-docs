@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Connect to data
 ---
 # Use OneDrive for work or school links in Power BI Desktop
@@ -31,7 +31,7 @@ Getting an online link from OneDrive for work or school requires a few specific 
 
 ## Use the link in Power BI Desktop
 
-In Power BI Desktop, you can use the link that you just copied to the clipboard. Take the following steps:
+In Power BI Desktop, you can use the link that you copied to the clipboard. Take the following steps:
 
 1. In Power BI Desktop, select **Get data** > **Web**.
 
