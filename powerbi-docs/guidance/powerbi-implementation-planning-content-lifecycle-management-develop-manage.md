@@ -122,7 +122,7 @@ Instead of a .pbix file, you can also save content using the [Power BI Projects 
 
 The following image shows how .pbix files and .pbip files differ:
 
-:::image type="content" source=".media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/pbip-overview.svg" alt-text="Image depicting an overview of how a PBIP contents are human-readable and usable." lightbox=".media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/pbip-overview.svg":::
+:::image type="content" source="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/pbip-overview.svg" alt-text="Image depicting an overview of how a PBIP contents are human-readable and usable." lightbox="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/pbip-overview.svg":::
 
 In summary, users or automated processes can view and modify the contents of a .pbip file without opening it in Power BI Desktop. In contrast, a .pbix file is a binary file, and there aren't supported methods to view or modify its contents. There are various scenarios where you want to be able to view or change these metadata contents, such as:
 
@@ -143,7 +143,8 @@ Use the .pbip file format when:
 - You plan to automate parts of the development, testing, or deployment process.
 - You want to structure your model and report files in different ways (like multiple reports in the .Report folder, and multiple models in the .SemanticModel folder).
 
-> [!TIP] When you develop content, you should be self-aware of scenarios where you feel like you are wasting time, such as with repetitious tasks. In these scenarios, you can often save time by leveraging these new formats together with other tools, such as Visual Studio Code, notebooks in Fabric, and more.
+> [!TIP]
+> When you develop content, you should be self-aware of scenarios where you feel like you are wasting time, such as with repetitious tasks. In these scenarios, you can often save time by leveraging these new formats together with other tools, such as Visual Studio Code, notebooks in Fabric, and more.
 
 ### Tabular Model Definition Language (.tmdl) file format
 
@@ -151,7 +152,7 @@ When you save a model as a .pbip you can choose to save it as a single .bim file
 
 The following is an example of what the TMDL format looks like: 
 
-:::image type="content" source="./media/projects-dataset/semantic-model-compare.png" alt-text="Screenshot explaining the TMDL language." lightbox="./media/projects-dataset/semantic-model-compare.png":::
+:::image type="content" source="../developer/projects/media/projects-dataset/semantic-model-compare.png" alt-text="Screenshot explaining the TMDL language." lightbox="../developer/projects/media/projects-dataset/semantic-model-compare.png":::
 
 Some advantages of the new TMDL format are as follows:
 - You can better use source control and Git integration, because model metadata is more concise, structured, and easier to read.
@@ -160,7 +161,7 @@ Some advantages of the new TMDL format are as follows:
 
 The following is an example of what source control with the TMDL format looks like:
 
-:::image type="content" source="./media/projects-dataset/semantic-model-diffs.png" alt-text="Screenshot of semantic model TMDL diffs." lightbox="./media/projects-dataset/semantic-model-diffs.png":::
+:::image type="content" source="../developer/projects/media/projects-dataset/semantic-model-diffs.png" alt-text="Screenshot of semantic model TMDL diffs." lightbox="../developer/projects/media/projects-dataset/semantic-model-diffs.png":::
 
 Use the TMDL format when:
 - You plan to use source control to track and manage changes.
@@ -168,17 +169,17 @@ Use the TMDL format when:
 - You develop your semantic model using other tools, such as Visual Studio Code or Tabular Editor.
 
 > [!NOTE]
-> TMDL format is different from the [TMDL view in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-tmdl-view):
+> TMDL format is different from the [TMDL view in Power BI Desktop](../transform-model/desktop-tmdl-view.md):
 > - **TMDL** is a language and metadata format for semantic models.
 > - **The TMDL view** is a scripting interface in Power BI Desktop for you to make programmatic changes to the model. It uses a similar YAML-like syntax for TMDL scripts as TMDL format files. You don't need to use the TMDL format to benefit from the TMDL view.
 
 ### Power BI enhanced report (PBIR) format.
 
-When you save content as a .pbip file, you can choose to use the default report format or the [new PBIR format](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-report#pbir-format). This new format presents several advantages that can enhance developer productivity and collaboration, particularly when you use the PBIR format with .pbip files.
+When you save content as a .pbip file, you can choose to use the default report format or the [new PBIR format](../developer/projects/projects-report.md#pbir-format). This new format presents several advantages that can enhance developer productivity and collaboration, particularly when you use the PBIR format with .pbip files.
 
 The following is an example of what the PBIR format looks like:
 
-:::image type="content" source="./media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
+:::image type="content" source="../developer/projects/media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
 
 Some advantages of using the PBIR format are as follows:
 - You can better use source control and Git integration, because report metadata is more concise, structured, and easier to read.
@@ -198,7 +199,7 @@ Use the PBIR format when:
 [//]: # (Todo: Add a diagram that shows an example of how you would copy a page or visual.)
 
 > [!CAUTION]
-> Ensure that you first check the [limitations and considerations](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-report#pbir-considerations-and-limitations) before using the PBIR format. These limitations and considerations change over time, so check back regularly if there are certain items that prevent you from fulfilling a specific requirement for your Power BI content.
+> Ensure that you first check the [limitations and considerations](../developer/projects/projects-report.md#pbir-considerations-and-limitations) before using the PBIR format. These limitations and considerations change over time, so check back regularly if there are certain items that prevent you from fulfilling a specific requirement for your Power BI content.
 >
 > Additionally, all report metadata irrespective of its format has the potential to include data points. For more information, see [PBIR Folder and Files](../developer/projects/projects-report.md#pbir-folder-and-files).
 
@@ -208,7 +209,7 @@ You can also save a Power BI report or semantic model as a .pbit file. However, 
 
 ### Other formats
 
-When you develop other content in Power BI (such as dashboards, dataflows, or paginated reports), you might not have content files if you develop the item in Fabric. Alternatively, you could only have the item's definition saved to source control. For more information, see [Decide where to store files](powerbi-implementation-planning-content-lifecycle-management-plan-design.md#Decide-where-to-store-files) in the previous article of this series.
+When you develop other content in Power BI (such as dashboards, dataflows, or paginated reports), you might not have content files if you develop the item in Fabric. Alternatively, you could only have the item's definition saved to source control. For more information, see [Decide where to store files](powerbi-implementation-planning-content-lifecycle-management-plan-design.md#decide-where-to-store-files) in the previous article of this series.
 
 
 ## Decide how you'll set up and use workspaces
