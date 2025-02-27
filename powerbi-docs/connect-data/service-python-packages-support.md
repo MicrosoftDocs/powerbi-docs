@@ -135,6 +135,8 @@ The following table shows which packages **are supported** in Power BI reports i
 
 ## Considerations and limitations
 
+- The update to the new runtime is not available in non-Fabric regions and Sov. clouds
+- The rollout is gradual and is expected to be available in all Fabric regions by 15 March 2025.
 - Py visuals aren't supported with Service Principal Profiles for App Owns Data.
 - Py visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb.
 
