@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
-ms.date: 12/03/2024
+ms.date: 02/26/2025
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI user, I want to understand the different data types available in Power BI Desktop so that I can properly format and analyze my data.
 ---
@@ -80,17 +80,20 @@ If a required calculation sums most of the positive numbers before summing most 
 
 ## Date/time types
 
-Power BI Desktop supports five **Date/Time** data types in Power Query Editor. Both **Date/Time/Timezone** and **Duration** convert during load into the Power BI Desktop data model. The model supports **Date/Time**, or you can format the values as **Date** or **Time** independently.
+Power BI Desktop supports five Date/Time data types in the Power Query Editor. Both **Date/Time/Timezone** and **Duration** are converted during load into the data model, as follows:
 
-- **Date/Time**  represents both a date and time value. The underlying **Date/Time** value is stored as a **Decimal number** type, so you can convert between the two types. The time portion stores as a fraction to whole multiples of 1/300 seconds (3.33 ms). The data type supports dates between years 1900 and 9999.
+**Date/Time** represents both a date and time value. The underlying *Date/Time* value is stored as a *Decimal number*, so you can actually convert between the two.  The time portion is stored as a fraction to whole multiples of 1/300 seconds (3.33 ms).  The data type supports dates between years 1900 and 9999.
 
-- **Date** represents just a date with no time portion.  A **Date** converts into the model as a **Date/Time** value with zero for the fractional value.
+**Date** represents just a date with no time portion. A **Date** converts into the model as a **Date/Time** value with zero for the fractional value.
 
-- **Time** represents just a time with no date portion. A **Time** converts into the model as a **Date/Time** value with no digits to the left of the decimal point.
+**Time** represents just a time with no date portion. A **Time** converts into the model as a **Date/Time** value with no digits to the left of the decimal point.
 
-- **Date/Time/Timezone** represents a UTC date/time with a timezone offset, and converts into **Date/Time** when loaded into the model. The Power BI model doesn't adjust the timezone based on a user's location or locale. A value of 09:00 loaded into the model in the USA displays as 09:00 wherever the report is opened or viewed.
+**Date/Time/Timezone** represents a UTC date/time with a timezone offset, and converts into **Date/Time** when loaded into the model. The Power BI model doesn't adjust the timezone based on a user's location or locale. A value of 09:00 loaded into the model in the USA displays as 09:00 wherever the report is opened or viewed.
 
-- **Duration** represents a length of time, and converts into a **Decimal number** type when loaded into the model. As **Decimal number** type, you can add or subtract the values from **Date/Time** values with correct results, and easily use the values in visualizations that show magnitude.
+**Duration** represents a length of time, and converts into a **Decimal number** when loaded into the model. Therefore, you can add or subtract the values from **Date/Time** values with correct results, and easily use it in visualizations that show magnitude.
+
+> [!NOTE]
+> You can further format a converted **Date/Time** value in the model as **Date** or **Time** using the data types UI in Report, Table and Model view. Keep in mind that formatting doesn't change how data is stored in the model and any calculations or relationships are still evaluated with the **Date/Time** information stored, independent of formatting.
 
 ## Text type
 

@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/25/2024
+ms.date: 02/24/2025
 LocalizationGroup: Data refresh
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
 ---
@@ -67,7 +67,7 @@ Because Power BI doesn't import the data, you don't need to run a data refresh. 
 
 > [!NOTE]
 > * Semantic models in Import mode and composite semantic models that combine Import mode and DirectQuery mode don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. Semantic models that are updated based on the XMLA endpoint will only clear the cached tile data (invalidate cache). The tile caches aren't refreshed until each user accesses the dashboard. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Semantic models** tab. For composite semantic models, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
-> * Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
+> * Power BI doesn't support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
 
 #### Push semantic models
 
@@ -384,6 +384,74 @@ Significant use of dashboard tiles or premium caching can increase refresh durat
 The data and query cache phases are independent of each other, but run in sequence. The data refresh runs first, and when that succeeds, the query cache refresh runs. If the data refresh fails, the query refresh is not initiated. It's possible that the data refresh can run successfully, but the query cache refresh fails.
 
 Refreshes made using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) won't show attempt details in the **Refresh history** window.
+
+
+## Visualize semantic model refresh details
+
+In the **Fabric Monitoring Hub** you can centrally monitor Microsoft Fabric activities. The hub displays refresh activities for all semantic models including the status of its most recent refresh. When selecting an activity name, you can access a dedicated **Semantic Model Refresh Detail** page that provides comprehensive information about the selected refresh activity.
+
+The following image shows the **Fabric Monitoring Hub**, filtered for semantic models:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-01.png" alt-text="Screenshot of Monitoring Hub for refresh activity." lightbox="media/refresh-data/visualize-semantic-model-refresh-01.png":::
+
+You can select a refresh activity to display its refresh detail page, with comprehensive information about the refresh activity:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-02.png" alt-text="Screenshot of refresh details for refresh activity." lightbox="media/refresh-data/visualize-semantic-model-refresh-02.png":::
+
+The refresh activity page shows comprehensive details for a selected refresh activity, including capacity, gateway, start and end times, error details, and [multiple refresh attempts](#semantic-model-refresh-history).
+
+### Access refresh details
+
+You can access semantic model refresh details from multiple locations: the **Monitoring hub historical runs**, [semantic model refresh settings](#checking-refresh-status-and-history) and [semantic model detail page](service-dataset-details-page.md).  
+
+The following image highlights where to click on the semantic model refresh settings window, to access refresh details:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-03.png" alt-text="Screenshot of where to find refresh details from semantic model refresh settings window." lightbox="media/refresh-data/visualize-semantic-model-refresh-03.png":::
+
+In the following image, you can see where to click on the semantic model details page to access refresh details:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-04.png" alt-text="Screenshot of where to find refresh details from semantic model details page." lightbox="media/refresh-data/visualize-semantic-model-refresh-04.png":::
+
+
+### View refresh metrics
+
+For each refresh attempt, you can view the execution metrics by selecting the **Show** link in the **Execution details** column. Execution metrics can assist with troubleshooting or optimizing the semantic model refresh. Previously, this execution metrics data was accessible through **Log Analytics** or **Fabric Workspace Monitoring**.
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-05.png" alt-text="Screenshot of refresh attempt execution details.":::
+
+### Link from external applications
+
+You can link semantic model refresh details from external applications by constructing a URL with the workspace, semantic model, and refresh ID. The following line shows the structure of such URLs:
+
+`https://app.powerbi.com/groups/{workspaceId}/datasets/{semanticModelId}/refreshdetails/{refreshId}`
+
+For example, the following Fabric Notebook uses semantic link *sempy* and Power BI API Get Refresh History to create a refresh detail URL for each run of a semantic model:
+
+
+```dax
+import sempy
+import sempy.fabric as fabric
+import pandas as pd 
+
+workspaceId = "[Your Workspace Id]"
+semanticModelId = "[Your semantic model Id]"
+
+client = fabric.FabricRestClient()
+
+response = client.get(f"/v1.0/myorg/groups/{workspaceId}/datasets/{semanticModelId}/refreshes")
+
+refreshHistory = pd.json_normalize(response.json()['value'])
+
+refreshHistory["refreshLink"] = refreshHistory.apply(lambda x:f"https://app.powerbi.com/groups/{workspaceId}/datasets/{semanticModelId}/refreshdetails/{x['requestId']}", axis=1)
+
+displayHTML(refreshHistory[["requestId", "refreshLink"]].to_html(render_links=True, escape=False))
+```
+
+The previous code generates a table with refresh IDs and their corresponding detail page URLs, as shown in the following image:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-06.png" alt-text="Screenshot of code generated table with refresh identifiers and page URLs.":::
+
+
 
 ## Refresh cancellation
 
