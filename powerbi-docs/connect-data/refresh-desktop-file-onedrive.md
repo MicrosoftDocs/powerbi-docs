@@ -8,14 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data refresh
 ---
 # Refresh a Power BI Desktop File (pbix file) stored on OneDrive or SharePoint Online
 Importing files from OneDrive or SharePoint Online into the Power BI service is a great way to make sure your work in Power BI Desktop stays in sync with the Power BI service.
 
 ## Advantages of storing a Power BI Desktop file on OneDrive or SharePoint Online
-When you store a Power BI Desktop file on OneDrive or SharePoint Online, any data you’ve loaded into your file’s model is imported into the semantic model. Any reports you’ve created from the file are loaded into **Reports** in the Power BI service. Let's say you make changes to your file on OneDrive or SharePoint Online. These changes can include adding new measures, changing column names, or editing visualizations. Once you save the file, Power BI service syncs with those changes too, usually within about an hour.
+When you store a Power BI Desktop file on OneDrive or SharePoint Online, any data you load into your file’s model is imported into the semantic model. Any reports you’ve created from the file are loaded into **Reports** in the Power BI service. Let's say you make changes to your file on OneDrive or SharePoint Online. These changes can include adding new measures, changing column names, or editing visualizations. Once you save the file, Power BI service syncs with those changes too, usually within about an hour.
 
 You can do a one-time, manual refresh right in Power BI Desktop by selecting **Refresh** on the **Home** ribbon. When you select **Refresh**, you refresh the file’s model with updated data from the original data source. This kind of refresh happens entirely from within the Power BI Desktop application itself. It's different from a manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
 
@@ -43,9 +43,9 @@ With restricted updates, only semantic model owners can update the model informa
 
 If you want semantic model owners and semantic model users with write permission to have the ability to update the model information, select **Automatic updates**. Semantic models in the Power BI service are automatically updated with changes made to the versions of the semantic models stored in OneDrive and SharePoint.  
 
-Existing semantic models will be set to **Default updates**. Once the setting is changed to either **Restrict updates** or **Automatic updates**, **Default updates** will no longer be an option for the semantic model.  
+Existing semantic models are set to **Default updates**. Once the setting is changed to either **Restrict updates** or **Automatic updates**, **Default updates** will no longer be an option for the semantic model.  
 
-New semantic models will be assigned **Restricted updates** upon creation. The setting can be changed to **Automatic updates** if desired, with no option to apply the **Default updates** setting.
+New semantic models are assigned **Restricted updates** upon creation. The setting can be changed to **Automatic updates** if desired, with no option to apply the **Default updates** setting.
 
 The difference between **Automatic updates** and **Default updates** is that the **Default updates** setting is applied to existing semantic models, while the **Automatic updates** setting needs to be applied after a new semantic model is created, since new semantic models default to **Restricted updates**.
 
@@ -69,7 +69,7 @@ With restricted updates enforced at the tenant level, semantic model owners can 
 Power BI supports **Refresh** and **Schedule refresh** for semantic models created from Power BI Desktop files imported from a local drive where you use **Get data** or **Power Query Editor** to connect to and load data from the following data sources.
 
 > [!NOTE]
-> Onedrive refresh for live connection semantic models is supported. However, changing the live connection semantic model, from one semantic model to another in an already published report, is not supported in the OneDrive refresh scenario.
+> OneDrive refresh for live connection semantic models is supported. However, changing the live connection semantic model, from one semantic model to another in an already published report, isn't supported in the OneDrive refresh scenario.
 
 ### Power BI Gateway - Personal
 * All online data sources shown in Power BI Desktop’s **Get data** and **Power Query Editor**.
@@ -106,7 +106,7 @@ Semantic models stored on OneDrive or SharePoint are set to **restrict updates**
 
 If the semantic model owner is unable to change the setting of the semantic model to **automatic updates**, the tenant admin has likely enforced restricted updates across all semantic models in the organization. To enable the semantic model owner to change the setting, they must contact their Fabric admin and request that the admin enable the **Semantic model owners can choose to automatically update from files imported from OneDrive or SharePoint** setting.
 
-If the semantic model owner has set up scheduled refresh on semantic models, then the model will still refresh on schedule. However, the other contents of the report, such as visuals, will not refresh unless manual updates are made. 
+If the semantic model owner has set up scheduled refresh on semantic models, then the model will still refresh on schedule. However, the other contents of the report, such as visuals, won't refresh unless manual updates are made. 
 
 
 * Import of sensitivity-labeled *.pbix* files (both protected and unprotected) stored on OneDrive or SharePoint Online, as well as on-demand and automatic semantic model refresh from such files, is supported, except for the following scenarios:

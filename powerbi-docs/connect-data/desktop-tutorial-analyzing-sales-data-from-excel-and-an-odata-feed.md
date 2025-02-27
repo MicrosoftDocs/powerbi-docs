@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze sales data from Excel and an OData feed
@@ -203,7 +203,7 @@ The shared `ProductID` field creates a relationship between this tutorial's `Ord
 
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png" alt-text="Screenshot that shows the Edit relationship dialog box."::: 
 
-1. Power BI Desktop has auto-detected the relationship correctly, so you can select **Cancel** and then **Close**.
+1. Power BI Desktop has autodetected the relationship correctly, so you can select **Cancel** and then **Close**.
 
 In Power BI Desktop, on the left side, select **Model** to view and manage query relationships. Double-click the arrow on the line connecting the two queries to open the **Edit relationship** dialog and view or change the relationship.
 
