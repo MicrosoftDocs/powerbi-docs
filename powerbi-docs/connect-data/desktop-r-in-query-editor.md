@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/20/2023
+ms.date: 02/26/2025
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
@@ -51,7 +51,7 @@ To demonstrate using R in Power Query Editor, this example uses a stock market s
 
    ![Screenshot shows the contents of the selected .csv file.](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
 
-1. Select **Load** to load the data from the file. After Power BI Desktop has loaded the data, the new table appears in the **Fields** pane.
+1. Select **Load** to load the data from the file. After Power BI Desktop loads the data, the new table appears in the **Fields** pane.
 
    ![Screenshot shows data in the Fields pane.](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
 
@@ -111,7 +111,7 @@ You can save all completed visuals in one Power BI Desktop .pbix file and use th
 > [!NOTE]
 > You can [download a .pbix file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix) with all these steps completed.
 
-After you've uploaded the .pbix file to the Power BI service, you need to take other steps to enable service data refresh and updated visuals:  
+After you upload the .pbix file to the Power BI service, you need to take other steps to enable service data refresh and updated visuals:  
 
 * **Enable scheduled refresh for the semantic model**: To enable scheduled refresh for the workbook containing your semantic model with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about on-premises data gateways.
 
