@@ -385,6 +385,8 @@ The data and query cache phases are independent of each other, but run in sequen
 
 Refreshes made using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) won't show attempt details in the **Refresh history** window.
 
+> [!NOTE]
+> You can enhance monitoring with workspace monitoring. For more information, see [What is workspace monitoring?](/fabric/fundamentals/workspace-monitoring-overview)
 
 ## Visualize semantic model refresh details
 
