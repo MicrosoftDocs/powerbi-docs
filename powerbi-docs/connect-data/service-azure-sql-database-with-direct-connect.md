@@ -8,7 +8,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.reviewer: ''
 ms.custom: ""
-ms.date: 12/20/2022
+ms.date: 02/26/2025
 LocalizationGroup: Data from databases
 ---
 
@@ -19,7 +19,7 @@ Learn how you can connect directly to Azure SQL Database and create reports that
 With DirectQuery, queries are sent back to your Azure SQL Database as you explore the data in the report view. This experience is suggested for users who are familiar with the databases and entities they connect to.
 
 > [!IMPORTANT]
-> This description assumes that Azure SQL database is not behind a VNET or has private link endpoint enabled.
+> This description assumes that Azure SQL database isn't behind a VNET or has private link endpoint enabled.
 
 **Notes:**
 
