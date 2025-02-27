@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/17/2022
+ms.date: 02/26/2025
 LocalizationGroup: Connect to data
 ---
 # Import Excel workbooks into Power BI Desktop

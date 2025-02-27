@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/28/2022
+ms.date: 02/26/2025
 LocalizationGroup: Create reports
 ---
 # Add a column from examples in Power BI Desktop
