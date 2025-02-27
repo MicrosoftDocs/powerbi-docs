@@ -18,7 +18,7 @@ This article describes and provides remedies for several circumstances where Pow
 
 You can't open encrypted PBIX files by using a Power BI Desktop version that doesn't support information protection. If you need to continue using Power BI Desktop, update to a version that supports information protection.
 
-**Solution:** [Select this link to directly download the latest Power BI Desktop installation executable](https://www.microsoft.com/download/confirmation.aspx?id=58494). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file. 
+**Solution:** [Select this link to directly download the latest Power BI Desktop installation executable](https://www.microsoft.com/download/details.aspx?id=58494). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file. 
 
 ## On-premises data gateway issues
 
