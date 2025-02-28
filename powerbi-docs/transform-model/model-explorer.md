@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Transform and shape data
 ---
 
@@ -18,7 +18,7 @@ With **Model explorer** in the **Model view** in **Power BI**, you can view and 
 
 ## Find Model explorer
 
-In **Power BI** when you have a local model open, navigate to **Model view**. In the **Data** pane of **Model** view you'll see options to select **Tables** or **Model** at the top of the pane, select **Model** to see **Model explorer**.
+In **Power BI** when you have a local model open, navigate to **Model view**. In the **Data** pane of **Model** view you see options to select **Tables** or **Model** at the top of the pane, select **Model** to see **Model explorer**.
 
 :::image type="content" source="media/model-explorer/model-explorer-01.png" alt-text="Screenshot of the Model explorer in Power BI." lightbox="media/model-explorer/model-explorer-01.png":::
 
@@ -40,7 +40,7 @@ The semantic model is all the metadata about your data, and it impacts how your 
 
 ##### Discourage implicit measures
 
-An implicit measure occurs when, in the **Report view**, you use a data column from the **Data pane** directly in the visual. The visual allows you to aggregate it as a SUM, AVERAGE, MIN, MAX, or some other basic aggregation, which becomes an implicit measure. Enabling the **discourage implicit measure** property on a semantic model discourages the creation of such implicit measures by no longer showing the summation symbol next to the data columns in the **Data pane**, and blocks adding the data columns to the visuals directly on aggregation axis or as values, and in visual conditional formatting. Existing implicit measures already created in visuals will continue to work. 
+An implicit measure occurs when, in the **Report view**, you use a data column from the **Data pane** directly in the visual. The visual allows you to aggregate it as a SUM, AVERAGE, MIN, MAX, or some other basic aggregation, which becomes an implicit measure. Enabling the **discourage implicit measure** property on a semantic model discourages the creation of such implicit measures by no longer showing the summation symbol next to the data columns in the **Data pane**, and blocks adding the data columns to the visuals directly on aggregation axis or as values, and in visual conditional formatting. Existing implicit measures already created in visuals continue to work. 
 
 :::image type="content" source="media/calculation-groups/calculation-groups-03.png" alt-text="Screenshot of Report view and creation of implicit measures in visuals.":::
 
