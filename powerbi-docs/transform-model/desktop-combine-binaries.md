@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/26/2023
+ms.date: 02/28/2025
 LocalizationGroup: Transform and shape data
 ---
 # Combine files (binaries) in Power BI Desktop
