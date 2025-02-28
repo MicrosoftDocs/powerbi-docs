@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 102/28/2025
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # Edit parameter settings in the Power BI service
