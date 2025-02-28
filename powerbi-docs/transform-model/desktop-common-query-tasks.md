@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Transform and shape data
 ---
 # Perform common query tasks in Power BI Desktop
 
-In the Power Query Editor window of Power BI Desktop, there are a handful of commonly used tasks. This article demonstrates those common tasks and provides links for additional information.
+In the **Power Query Editor** window of **Power BI Desktop**, there are a handful of commonly used tasks. This article demonstrates those common tasks and provides links for additional information.
 
 The common query tasks demonstrated here are:
 

@@ -8,7 +8,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 02/28/2025
 ---
 
 # Semantic model modes in the Power BI service
