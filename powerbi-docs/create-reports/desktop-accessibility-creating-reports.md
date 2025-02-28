@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # Design Power BI reports for accessibility
@@ -62,7 +62,7 @@ To access the most frequently used keyboard shortcuts, you can press **Shift + ?
 
 ### Screen reader compatibility
 
-In general, every object in Power BI that has keyboard navigation is also compatible for screen readers. When a report consumer navigates to a visual, the screen reader will read out the title, visual type, and any alt text if that has been set.
+In general, every object in Power BI that has keyboard navigation is also compatible for screen readers. When a report consumer navigates to a visual, the screen reader reads out the title, visual type, and any alt text if that has been set.
 
 ### High contrast color view
 
@@ -149,11 +149,11 @@ Positioning your data labels above or below your series can help, especially if 
 
 It's a best practice to avoid using color (including features conditional formatting) as the only way of conveying information. Instead, you can use markers to convey different series.
 
-For Line, Area, and Combo visuals, as well as for Scatter and Bubble visuals, you can turn markers on and use a different Marker shape for each line.
+For Line, Area, and Combo visuals, as well as for Scatter and Bubble visuals, you can turn on markers and use a different Marker shape for each line.
 
 ![Screenshot of an example visual with markers.](media/desktop-accessibility/accessibility-creating-reports-14.png)
 
-To turn markers on, select the Format section in the Visualizations pane, expand the **Shapes** section, then scroll down to find the **Show Markers** toggle and turn it to **On**, as shown in the following image.
+To turn on markers, select the Format section in the Visualizations pane, expand the **Shapes** section, then scroll down to find the **Show Markers** toggle and turn it to **On**, as shown in the following image.
 
 ![Screenshot of the Visualizations pane with Markers turned on.](media/desktop-accessibility/accessibility-creating-reports-15.png)
 

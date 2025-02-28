@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/22/2023
+ms.date: 02/28/2025
 ms.custom: sample-sales-and-marketing, sample-sales-and-returns
 LocalizationGroup: Create reports
 ---
@@ -22,7 +22,7 @@ With *grouping* in **Power BI Desktop**, you can group visuals together in your 
 
 ## Create groups
 
-To create a group of visuals in Power BI Desktop, select the first visual from the canvas, then holding the CTRL button, click one or more additional visuals that you want in the group. In the **Format** menu, select **Group**, and from the submenu select **Group**.
+To create a group of visuals in Power BI Desktop, select the first visual from the canvas, then holding the CTRL button, select one or more additional visuals that you want in the group. In the **Format** menu, select **Group**, and from the submenu select **Group**.
 
 ![Screenshot showing select two or more items to group.](media/desktop-grouping-visuals/grouping-visuals-02.png)
 
@@ -38,7 +38,7 @@ Renaming a group is easy: just double-click the group name in the **Selection** 
 
 ![Screenshot showing Rename group.](media/desktop-grouping-visuals/rename-group.png)
 
-To ungroup, just select the group, right-click and select **ungroup** from the menu that appears.
+To ungroup, just select the group, right-click, and select **ungroup** from the menu that appears.
 
 ## Hide and show visuals or groups
 
