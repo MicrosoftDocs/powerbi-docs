@@ -122,7 +122,7 @@ Instead of a .pbix file, you can also save content using the [Power BI Projects 
 
 The following image shows how .pbix files and .pbip files differ:
 
-:::image type="content" source="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/pbip-overview.svg" alt-text="Image depicting an overview of how a PBIP contents are human-readable and usable." lightbox="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/pbip-overview.svg":::
+:::image type="content" source="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/power-bi-projects-overview.svg" alt-text="Image depicting an overview of how a PBIP contents are human-readable and usable." lightbox="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/power-bi-projects-overview.svg":::
 
 In summary, users or automated processes can view and modify the contents of a .pbip file without opening it in Power BI Desktop. In contrast, a .pbix file is a binary file, and there aren't supported methods to view or modify its contents. There are various scenarios where you want to be able to view or change these metadata contents, such as:
 
