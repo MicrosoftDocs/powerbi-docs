@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # Apply insights in Power BI to discover where distributions vary

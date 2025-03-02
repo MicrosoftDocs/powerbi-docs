@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 12/12/2023
+ms.date: 12/12/2024
 #customer intent: As a Power BI visual developer, I want to understand how data view mapping works in Power BI visuals so that I can create different types of visuals.
 ---
 
@@ -72,15 +72,18 @@ You can also set multiple conditions for a data role. In that case, the data is 
 
 ```json
 "conditions": [
-    { "category": { "min": 1, "max": 1 }, "measure": { "min": 2, "max": 2 } },
-    { "category": { "min": 2, "max": 2 }, "measure": { "min": 1, "max": 1 } }
+    { "category": { "min": 1, "max": 1 }, "measure": { "min": 0, "max": 2 } },
+    { "category": { "min": 2, "max": 2 }, "measure": { "min": 0, "max": 1 } }
 ]
 ```
 
 In the previous example, one of the following two conditions is required:
 
-* Exactly one category field and exactly two measures
-* Exactly two categories and exactly one measure
+* Exactly one category field and no more than two measures
+* Exactly two categories and no more than one measure field
+
+> [!NOTE]
+> Only one data role can have a minimun value of ≥ 1 per condition.
 
 ## Single data mapping
 

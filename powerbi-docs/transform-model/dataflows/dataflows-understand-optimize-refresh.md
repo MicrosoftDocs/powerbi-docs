@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
 # Understand and optimize dataflows refresh
@@ -22,7 +22,7 @@ There are two types of refreshes applicable to dataflows:
 
 * **Full**, which performs a complete flush and reload of your data.
 
-* **Incremental (Premium only)**, which processes a subset of your data based on time-based rules, expressed as a filter, that you configure. The filter on the date column dynamically partitions the data into ranges in the Power BI service. After you configure the incremental refresh, the dataflow automatically alters your query to include filtering by date. You can edit the automatically generated query by using the **Advanced Editor** in Power Query to fine-tune or customize your refresh. If you bring your own Azure Data Lake Storage, you can see time slices of your data based on the refresh policy you've set.
+* **Incremental (Premium only)**, which processes a subset of your data based on time-based rules, expressed as a filter, that you configure. The filter on the date column dynamically partitions the data into ranges in the Power BI service. After you configure the incremental refresh, the dataflow automatically alters your query to include filtering by date. You can edit the automatically generated query by using the **Advanced Editor** in Power Query to fine-tune or customize your refresh. If you bring your own Azure Data Lake Storage, you can see time slices of your data based on the refresh policy you set.
 
     > [!NOTE]
     > To learn more about incremental refresh and how it works, see [Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh).
@@ -80,7 +80,7 @@ You might want to chain items together that don't fit the managed orchestration 
 
 ### Monitoring
 
-Using the enhanced refresh statistics described earlier in this article, you can get detailed per-dataflow refresh information. But if you would like to see dataflows with tenant-wide or workspace-wide overview of refreshes, perhaps to build a monitoring dashboard, you can use [the APIs](/rest/api/power-bi/dataflows) or [PowerAutomate templates](/power-query/dataflows/dataflow-power-automate-connector-templates). Similarly, for use cases such as [sending simple or complex notifications](/power-query/dataflows/send-notification-when-dataflow-refresh-completes), you can use the PowerAutomate connector or build your own custom application by using the APIs.
+Using the enhanced refresh statistics described earlier in this article, you can get detailed per-dataflow refresh information. But if you would like to see dataflows with tenant-wide or workspace-wide overview of refreshes, perhaps to build a monitoring dashboard, you can use [the APIs](/rest/api/power-bi/dataflows) or [Power Automate templates](/power-query/dataflows/dataflow-power-automate-connector-templates). Similarly, for use cases such as [sending simple or complex notifications](/power-query/dataflows/send-notification-when-dataflow-refresh-completes), you can use the Power Automate connector or build your own custom application by using the APIs.
 
 ### Timeout errors
 
@@ -155,7 +155,7 @@ While Power Query has design-time visibility into query folding, the compute eng
 The following sections provide guidance about using the compute engine, and its statistics.
 
 > [!WARNING]
-> During design time the folding indicator in the editor might show that the query does not fold when consuming data from another dataflow. Check the source dataflow if enhanced compute is enabled to ensure folding on the source dataflow is enabled.
+> During design time the folding indicator in the editor might show that the query doesn't fold when consuming data from another dataflow. Check the source dataflow if enhanced compute is enabled to ensure folding on the source dataflow is enabled.
 
 #### Guidance on compute engine Statuses
 

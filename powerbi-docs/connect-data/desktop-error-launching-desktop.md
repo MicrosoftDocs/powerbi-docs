@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 11/10/2023
+ms.date: 02/27/2025
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot Power BI Desktop startup
@@ -18,7 +18,7 @@ This article describes and provides remedies for several circumstances where Pow
 
 You can't open encrypted PBIX files by using a Power BI Desktop version that doesn't support information protection. If you need to continue using Power BI Desktop, update to a version that supports information protection.
 
-**Solution:** [Select this link to directly download the latest Power BI Desktop installation executable](https://www.microsoft.com/download/confirmation.aspx?id=58494). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file. 
+**Solution:** [Select this link to directly download the latest Power BI Desktop installation executable](https://www.microsoft.com/download/details.aspx?id=58494). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file. 
 
 ## On-premises data gateway issues
 
@@ -47,7 +47,7 @@ If you attempt to connect to a SQL Server database using a different account tha
 **An error happened while reading data from the provider:<br>
 'Could not load file or assembly 'System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=xxxxxxxxxxxxx' or one of its dependencies. Either a required impersonation level was not provided, or the provided impersonation level is invalid. (Exception from HRESULT: 0x80070542)'**
 
-**Cause:** This is due to the way your local system and accounts are configured by your IT department. If the alternate Windows account you're trying to use is not allowed access to the system, then it is blocked from registering the needed DLLs for Power BI Desktop to establish the connection. 
+**Cause:** This is due to the way your local system and accounts are configured by your IT department. If the alternate Windows account you're trying to use isn't allowed access to the system, then it's blocked from registering the needed DLLs for Power BI Desktop to establish the connection. 
 
 **Solution:** You can often resolve the issue if you open Power BI Desktop as an administrator before you make the SQL Server connection, or if you ask your system administrators to provide the alternate windows account the correct permissions for your computer. Opening Power BI Desktop as an administrator and establishing the connection registers the required DLLs, after that, you no longer have to open Power BI Desktop as an administrator for this connection. However, if you choose to connect to SQL server with yet another different alternate Windows credentials, you have to open Power BI Desktop as an administrator every time you connect.
 

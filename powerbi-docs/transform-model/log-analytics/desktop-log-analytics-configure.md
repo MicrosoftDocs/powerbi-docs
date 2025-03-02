@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 12/07/2023
+ms.date: 02/26/2025
 LocalizationGroup: Transform and shape data
 ---
 # Configure Azure Log Analytics for Power BI
@@ -28,7 +28,7 @@ The following sections take you through the steps in to do both.
 Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
 
 * Contributor access to Azure subscription.
-* Register the 'microsoft.insights' resource provider in the Azure subscription where you'll collect Power BI log data.
+* Register the 'microsoft.insights' resource provider in the Azure subscription where you collect Power BI log data.
 * The user who sets up Log Analytics integration in Power BI must be in the Log Analytics Contributor role for the Log Analytics Workspace. See FAQ for workarounds if the Owner role can't be given.
 
 ### Enable the 'microsoft.insights' resource provider
@@ -80,7 +80,7 @@ You can disconnect from Azure Log Analytics to stop sending logs to Azure. To di
 :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-18.png" alt-text="Screenshot of the disconnect warning on the settings pane.":::
 
 > [!NOTE]
-> When you disconnect a Power BI workspace from Azure Log Analytics, logs are not deleted. Your data remains and follows the storage and retention policies you set there.
+> When you disconnect a Power BI workspace from Azure Log Analytics, logs aren't deleted. Your data remains and follows the storage and retention policies you set there.
 
 ## Usage scenarios
 
@@ -99,10 +99,10 @@ The following table provides a collection of common errors, the events or config
 
 | **Trigger Condition** | **Type** | **Message** |
 | --- | --- | --- |
-| You don't have permission to write to the Log Analytics Workspace | Error - cannot proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. Contact the person in your organization who manages Azure subscriptions to fix this problem. |
-| You don't have permission to write to the Log Analytics workspace account | Error - cannot proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. |
-| You don't have access to any Azure subscriptions | Error - cannot proceed | You don't have access to any Azure subscriptions. Ask the person who manages Azure subscriptions in your organization to grant you contributor access or higher. |
-| You don't have access to any Azure Log Analytics workspaces within that subscription | Error - cannot proceed | You don't have access to an Azure Log Analytics workspace. Ask the person who manages Azure subscriptions in your organization to add you to the Log Analytics owner or contributor role. |
+| You don't have permission to write to the Log Analytics Workspace | Error - can't proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. Contact the person in your organization who manages Azure subscriptions to fix this problem. |
+| You don't have permission to write to the Log Analytics workspace account | Error - can't proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. |
+| You don't have access to any Azure subscriptions | Error - can't proceed | You don't have access to any Azure subscriptions. Ask the person who manages Azure subscriptions in your organization to grant you contributor access or higher. |
+| You don't have access to any Azure Log Analytics workspaces within that subscription | Error - can't proceed | You don't have access to an Azure Log Analytics workspace. Ask the person who manages Azure subscriptions in your organization to add you to the Log Analytics owner or contributor role. |
 | Workspace-level Log Analytics disabled when trying to connect | Information | Ask your tenant admin to grant workspace admins permission to connect Log Analytics workspaces. |
 | Workspace-level Log Analytics disabled when trying to disconnect | Information | Your tenant admin revoked permission for workspace admins to connect their own Azure Log Analytics workspaces. If you disconnect, you can't connect to another one. |
 
@@ -155,7 +155,7 @@ The following table describes the **schema**.
 | **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query. |
 | **CustomerTenantId** | | Customer's Power BI tenant identifier. |
 | **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
-| **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled semantic models the ReplicaId is always 'AAA'  |
+| **ReplicaId** |  | Replica identifier that lets you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled semantic models the ReplicaId is always 'AAA'  |
 
 ### ExecutionMetrics event
 
@@ -261,7 +261,7 @@ The statistics are presented as a JSON text in the **EventText** property, see t
 ```
 ---
 
-The following table describes all the possible properties. Not every property is emitted in each event, as the contents will depend on the request and the semantic model.
+The following table describes all the possible properties. Not every property is emitted in each event, as the contents depend on the request and the semantic model.
 
 | Property | Description |
 | --- | --- |
@@ -291,7 +291,7 @@ The following table describes all the possible properties. Not every property is
 | errorCount   | Total number of errors for the current request. |
 | qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
 | intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Dashboard tile/Query cache refresh (3) |
-| commandType    | Type of Analysis Services command requested by the client (e.g. Batch, Statement, Backup,...) |
+| commandType    | Type of Analysis Services command requested by the client (for example, Batch, Statement, Backup,...) |
 | discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](/analysis-services/trace-events/discover-events-data-columns#discover-begin-classdata-columns) for list of discover types. |
 | queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
 | capacityThrottlingMs     | Total time the request got delayed due to capacity throttling. Learn more about throttling [here](/fabric/enterprise/throttling). |
