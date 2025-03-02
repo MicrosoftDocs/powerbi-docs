@@ -125,6 +125,7 @@
     - name: Get started with org apps (preview)
       href: ./org-app-items/org-app-items.md
       displayName: apps, org apps, preview, distribution, sharing
+    - name: Org apps and CI/CD
   - name: Ask questions of your data
     items:
     - name: "Q&A in Power BI"
