@@ -14,29 +14,28 @@ ms.date:     03/03/2025
 
 # Manage a support ticket in Fabric
 
-# Manage a support ticket in Fabric
-
 After you [create a Power BI or a Fabric support ticket](/power-bi/support/create-support-ticket), you can manage it in [Fabric](https://app.powerbi.com/admin-portal/supportCenter).
 
 ### View support tickets
 
-View the details and status of support tickets by going to Help+Support in the Fabric Admin Portal. You will be able to review all the support tickets you either created or listed as secondary owner on.
+View the details and status of support tickets by going to Help+Support in the Fabric Admin Portal. You are able to review all the support tickets you either created or listed as secondary owner on.
 
 ![Help and support tab in the admin portal.](media/manage-support-ticket/help+support+admin-portal.png)
 
-You can search, filter, and sort support tickets. By default, you will only see tickets created by you. Change the filter options to review support tickets that you are secondary owner on. You can also filter cases by the owner of the pending response, Microsoft or you. 
+You can search, filter, and sort support tickets. By default, you see only tickets created by you. Change the filter options to review support tickets that you're secondary owner on. You can also filter cases by the owner of the pending response, Microsoft ,or you. 
 
 To view a support ticket's details, including its severity, contacts, and the last messages associated with the ticket, select it from the list. 
 
-Admins will be able to review all the support cases in their organization. 
+Admins are able to review all the support cases in their organization. 
 
 > [!NOTE]
-> Closed support requests can generally be viewed for a period of 13 months. After that time, they may be removed, making them unavailable to view.
+> Closed support requests can generally be viewed for 13 months. After that time, they may be removed, making them unavailable to view.
+
 ### Send a message
 
-1. To send a message select the support ticket and click on "Details".
+1. Select the support ticket and click on "Details".
 
-1. In the support ticket details view, select "Communication history".
+1. Select "Communication history" in the support ticket details view.
 
 1. Enter your message and select "Send message". 
 
@@ -60,7 +59,7 @@ Review [Consent to access customer data](/power-bi/support/access-customer-data)
 
 1. Update the contact information details.
 
-1. You can add or remove secondary owners on the support ticket.
+1. Add or remove secondary owners on the support ticket.
 
 1. Select "Save"
 
@@ -68,6 +67,6 @@ Only the case owner and the admin can update the support ticket owner's contact 
 
 ### Close a support case
 
-To close a support case, select the support case and click and "Details". Scroll down either in "Details" or "Communication History" tabs and select the "Close support case". When prompted to confirm, select **Close**. You'll receive a confirmation email when your ticket is closed. 
+To close a support case, select the support case and click and "Details". Scroll down either in "Details" or "Communication History" tabs and select the "Close support case". When prompted to confirm, select **Close**. You receive a confirmation email when your ticket is closed. 
 
 Only the case owner and the admin can close the support ticket.
