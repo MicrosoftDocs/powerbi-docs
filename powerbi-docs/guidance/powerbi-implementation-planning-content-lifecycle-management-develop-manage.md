@@ -60,7 +60,7 @@ Depending on how you author content, you'll make different decisions about how t
 
 > [!TIP]
 > When developing semantic models and reports by using Power BI Desktop, we recommend that you use .pbip files instead of .pbix files. When developing semantic models by using XMLA tools, we recommend that you use the Tabular Model Definition Language (TMDL) format, instead of .bim files. For more information, see [Decide the format of your content](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#decide-the-format-of-your-content)
- later in this article
+ later in this article.
 
 ### Power BI Desktop
 
@@ -122,7 +122,7 @@ Instead of a .pbix file, you can also save content using the [Power BI Projects 
 
 The following image shows how .pbix files and .pbip files differ:
 
-:::image type="content" source="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/power-bi-projects-overview.svg" alt-text="Image depicting an overview of how a PBIP contents are human-readable and usable." lightbox="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/power-bi-projects-overview.svg":::
+:::image type="content" source="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/power-bi-projects-overview.svg" alt-text="Screenshot of an overview of how a PBIP contents are human-readable and usable." lightbox="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/power-bi-projects-overview.svg":::
 
 In summary, users or automated processes can view and modify the contents of a .pbip file without opening it in Power BI Desktop. In contrast, a .pbix file is a binary file, and there aren't supported methods to view or modify its contents. There are various scenarios where you want to be able to view or change these metadata contents, such as:
 
