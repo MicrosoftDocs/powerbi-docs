@@ -125,7 +125,7 @@ There are many ways to manage your alerts:
 * Because alerts are only sent if your data changes, you don't receive duplicate alerts for an unchanged value.
 * Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
 * You can create up to 250 alerts across all your models.
-* Alerts don't currently have support for co-ownership. If you need to transfer ownership between users, you will need to create a new alert. If you're integrating your alerts with Power Automate, you'll also need to recreate the flow.
+* Alerts don't have support for co-ownership. If you need to transfer ownership between users, you need to create a new alert. If you're integrating your alerts with Power Automate, you also need to recreate the flow.
 
 ## Related content
 
