@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # High-density sampling in Power BI scatter charts
@@ -49,11 +49,11 @@ In addition, data points that can't be plotted, such as nulls or text values, ar
 
 There are circumstances under which **High-density sampling** can't be applied to a scatter chart and the original algorithm is used. Those circumstances are:
 
-* If you right-click a value under **Values** and set it to **Show items with no data** from the menu, the scatter chart will revert to the original algorithm.
+* If you right-click a value under **Values** and set it to **Show items with no data** from the menu, the scatter chart reverts to the original algorithm.
 
   :::image type="content" source="media/desktop-high-density-scatter-charts/high-density-scatter-charts-02.png" alt-text="Screenshot of the Visualization menu, showing the Values pane with Show items with no data selection.":::
 
-* Any values in the **Play Axis** field will result in the scatter chart reverting to the original algorithm.
+* Any values in the **Play Axis** field results in the scatter chart reverting to the original algorithm.
 * If both X and Y axes are missing on a scatter chart, the chart reverts to the original algorithm.
 * Using a **Ratio line** in the **Analytics** pane results in the chart reverting to the original algorithm.
 

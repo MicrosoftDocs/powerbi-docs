@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/26/2023
+ms.date: 02/28/2025
 LocalizationGroup: Model your data
 ---
 # Create calculated columns in Power BI Desktop
@@ -16,13 +16,13 @@ With calculated columns, you can add new data to a table already in your model. 
 
 Unlike custom columns that are created as part of a query by using **Add Custom Column** in Power Query Editor, calculated columns that are created in **Report** view, **Table** view, or **Model** view are based on data you've already loaded into the model. For example, you might choose to concatenate values from two different columns in two different but related tables, do addition, or extract substrings.
 
-Calculated columns you create appear in the **Fields** list just like any other field, but they'll have a special icon showing its values are the result of a formula. You can name your columns whatever you want, and add them to a report visualization just like other fields.
+Calculated columns you create appear in the **Fields** list just like any other field, but they have a special icon showing its values are the result of a formula. You can name your columns whatever you want, and add them to a report visualization just like other fields.
 
 :::image type="content" source="/power-bi/transform-model/media/desktop-calculated-columns/calccolinpbid_fields.png" alt-text="Screenshot of Power BI Desktop showing calculated columns in the Fields view.":::
 
 Calculated columns calculate results by using DAX, a formula language meant to work with relational data like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs. It provides immense flexibility in creating formulas to calculate results for just about any data analysis need. To learn more about DAX, see [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
-DAX formulas are similar to Excel formulas. In fact, DAX has many of the same functions as Excel. DAX functions, however, are meant to work over data interactively sliced or filtered in a report, like in Power BI Desktop. In Excel, you can have a different formula for each row in a table. In Power BI, when you create a DAX formula for a new column, it will calculate a result for every row in the table. Column values are recalculated as necessary, like when the underlying data is refreshed and values have changed.
+DAX formulas are similar to Excel formulas. In fact, DAX has many of the same functions as Excel. DAX functions, however, are meant to work over data interactively sliced or filtered in a report, like in Power BI Desktop. In Excel, you can have a different formula for each row in a table. In Power BI, when you create a DAX formula for a new column, it calculates a result for every row in the table. Column values are recalculated as necessary, like when the underlying data is refreshed and values have changed.
 
 ## Let's look at an example
 

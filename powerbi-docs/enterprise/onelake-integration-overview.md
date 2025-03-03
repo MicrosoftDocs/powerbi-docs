@@ -12,9 +12,6 @@ LocalizationGroup: Enterprise
 ---
 # OneLake integration for semantic models
 
-> [!IMPORTANT]
-> OneLake integration for semantic models is currently in **preview**.
-
 With Microsoft OneLake integration for semantic models, data imported into model tables can also be automatically written to [*Delta tables*](/azure/databricks/introduction/delta-comparison) in OneLake. The Delta format is the unified table format across all compute engines in Microsoft Fabric. OneLake integration exports the data with all key performance features enabled to provide more seamless data access with higher performance.
 
 Data scientists, database analysts, app developers, data engineers, and other data consumers can then access the same data that drives your business intelligence and financial reports in Power BI. T-SQL, Python, Scala, PySpark, Spark SQL, R, and no-code/low-code solutions can all be used to query data from  Delta tables.

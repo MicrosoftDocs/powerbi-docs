@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # Edit parameter settings in the Power BI service
@@ -28,7 +28,7 @@ As a report creator, you define parameters in Power BI Desktop. When you [publis
 
     ![Screenshot shows the Settings window with Semantic models tab selected.](media/service-parameters/power-bi-select-dataset-2.png)
 
-1. Expand **Parameters**.  If the selected semantic model has no parameters, you see a message with a link to **Learn more** about query parameters. If the semantic model does have parameters, expand the **Parameters** heading to reveal those parameters.
+1. Expand **Parameters**. If the selected semantic model has no parameters, you see a message with a link to **Learn more** about query parameters. If the semantic model does have parameters, expand the **Parameters** heading to reveal those parameters.
 
     ![Screenshot shows the Settings window with Parameters expanded.](media/service-parameters/power-bi-settings.png)
 

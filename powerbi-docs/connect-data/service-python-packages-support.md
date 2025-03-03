@@ -21,8 +21,8 @@ The following sections provide an alphabetical table of which Python packages ar
 
 There are a handful of requirements and limitations for Python packages:
 
-* Power BI, for the most part, supports Python packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
-* Power BI supports packages published in PyPI. The service doesn't support private or custom Python packages. Users are encouraged to make their private packages available on PyPI prior to requesting the package be available in Power BI.
+* Power BI usually supports Python packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
+* Power BI supports packages published in PyPI. The service doesn't support private or custom Python packages. Users are encouraged to make their private packages available on PyPI before requesting the package be available in Power BI.
 * For Python visuals in Power BI Desktop, you can install any package, including custom Python packages.
 * For security and privacy reasons, Python packages that provide client-server queries over the web in the service, aren't supported. Networking is blocked for such attempts.
 * The approval process for including a new Python package has a tree of dependencies. Some dependencies required to be installed in the service can't be supported.
@@ -33,7 +33,7 @@ There are a handful of requirements and limitations for Python packages:
 ## Python packages that are supported in the Power BI service (Premium/ Fabric backed workspaces)
 
 The following table shows which packages **are supported** in Power BI for reports in **Premium/Fabric backed workspaces**.
-[Download packages here] (https://pypi.org/) 
+[Download packages here](https://pypi.org/) 
 
 | Package            | Version   |  
 |--------------------|-----------|
@@ -135,8 +135,10 @@ The following table shows which packages **are supported** in Power BI reports i
 
 ## Considerations and limitations
 
+- The update to the new runtime isn't available in non-Fabric regions and Sov. clouds
+- The rollout is gradual and is expected to be available in all Fabric regions by 15 March 2025.
 - Py visuals aren't supported with Service Principal Profiles for App Owns Data.
-- Py visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb.
+- Py visuals rendered from the Power BI service (for Premium/ F SKUs) can support payloads of < 30Mb.
 
 
 ## Related content

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 06/01/2023
+ms.date: 02/28/2025
 #customer intent: "As a Power BI end user, I want to use Cognitive Services, so I can use create dataflows in Power BI."
 LocalizationGroup: Connect to services
 ---
@@ -145,14 +145,14 @@ Next, sign in with your **organizational account**.
 Select the Tag Images function, enter _[Binary]_ in the column field, and enter _en_ in the culture info field.
 
 > [!NOTE]
-> You currently cannot pick a column using a dropdown. This issue will be resolved as soon as possible during the private preview.
+> You currently can't pick a column using a dropdown.
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_20.png" alt-text="Screenshot shows Invoke function with the TagImages function selected." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_20.png":::
 
 In the function editor, remove the quotation marks around the column name.
 
 > [!NOTE]
-> Removing the quotation marks is a temporary workaround. This issue will be resolved as soon as possible during preview.
+> Removing the quotation marks is a temporary workaround. 
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_21.png" alt-text="Screenshot shows the function editor with Image called out without quotation marks.":::
 
