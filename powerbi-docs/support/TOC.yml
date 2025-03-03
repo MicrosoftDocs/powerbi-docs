@@ -6,6 +6,9 @@
     items:
     - name: Support overview
       href: service-support-options.md
+    - name: Manage a Support ticket
+      href: manage-support-ticket.md
+      displayName: "Manage support ticket "
     - name: Create a Support ticket
       href: create-support-ticket.md
       displayName: Power BI, Fabric, Support, ticket creation, support ticket
