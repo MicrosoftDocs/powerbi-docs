@@ -18,11 +18,11 @@ After you [create a Power BI or a Fabric support ticket](/power-bi/support/creat
 
 ### View support tickets
 
-View the details and status of support tickets by going to Help+Support in the Fabric Admin Portal. You are able to review all the support tickets you either created or listed as secondary owner on.
+View the details and status of support tickets by going to Help+Support in the Fabric Admin Portal. You're able to review all the support tickets you either created or listed as secondary owner on.
 
 ![Help and support tab in the admin portal.](media/manage-support-ticket/help+support+admin-portal.png)
 
-You can search, filter, and sort support tickets. By default, you see only tickets created by you. Change the filter options to review support tickets that you're secondary owner on. You can also filter cases by the owner of the pending response, Microsoft ,or you. 
+You can search, filter, and sort support tickets. By default, you see only tickets created by you. Change the filter options to review support tickets that you're secondary owner on. You can also filter cases by the owner of the pending response, Microsoft, or you. 
 
 To view a support ticket's details, including its severity, contacts, and the last messages associated with the ticket, select it from the list. 
 
@@ -33,11 +33,11 @@ Admins are able to review all the support cases in their organization.
 
 ### Send a message
 
-1. Select the support ticket and click on "Details".
+1. Select the support ticket and click on "Details"
 
-1. Select "Communication history" in the support ticket details view.
+1. Select "Communication history" in the support ticket details view
 
-1. Enter your message and select "Send message". 
+1. Enter your message and select "Send message"
 
 ### Allow collection of advanced diagnostic information
 
@@ -57,9 +57,9 @@ Review [Consent to access customer data](/power-bi/support/access-customer-data)
 
 1. Select the support ticket and click on "Edit"
 
-1. Update the contact information details.
+1. Update the contact information details
 
-1. Add or remove secondary owners on the support ticket.
+1. Add or remove secondary owners on the support ticket
 
 1. Select "Save"
 
@@ -67,6 +67,6 @@ Only the case owner and the admin can update the support ticket owner's contact 
 
 ### Close a support case
 
-To close a support case, select the support case and click and "Details". Scroll down either in "Details" or "Communication History" tabs and select the "Close support case". When prompted to confirm, select **Close**. You receive a confirmation email when your ticket is closed. 
+To close a support case, select the support case and click "Details". Scroll down either in "Details" or "Communication History" tabs and select the "Close support case". When prompted to confirm, select **Close**. You receive a confirmation email when your ticket is closed. 
 
 Only the case owner and the admin can close the support ticket.
