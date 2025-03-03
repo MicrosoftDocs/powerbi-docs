@@ -240,11 +240,6 @@ Select the following links to download this earlier version:
 
 
 
-
-
-
-
-
 ## October 2024 Update (2.137.751.0)
 
 October brought a spooky-good collection of updates and features, weaving a web of opportunity to create insights and intelligence from data both new and old.
@@ -339,8 +334,6 @@ Select the following links to download this earlier version:
 
 * [October 2024 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-10.exe)
 * [October 2024 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-10_x64.exe)
-
-
 
 
 
@@ -448,19 +441,6 @@ Select the following links to download this earlier version:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## August 2024 Update (2.132.908.0)
 
 Our August updates got us back into school mode with a collection of new features, a great video that showed how many of the compelling updates can sharpen your business intelligence pencils, and set you up for great grades in creating insights and actionable business intelligence.
@@ -540,8 +520,6 @@ The following video describes many of these updates. You can also watch this vid
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
 
 
-
-
 You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
 
 * Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
@@ -553,15 +531,6 @@ Select the following links to download this earlier version:
 
 * [August 2024 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-08.exe)
 * [August 2024 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-08_x64.exe)
-
-
-
-
-
-
-
-
-
 
 
 
@@ -643,27 +612,6 @@ The following video describes many of these updates. You can also watch this vid
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
-
-
-
-
-
-You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
-
-* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
-* It might not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
-* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
-* We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [July 2024 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-07.exe)
-* [July 2024 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-07_x64.exe)
-
-
-
-
-
 
 
 ## June 2024 Update (2.130.754.0)
