@@ -20,7 +20,7 @@ After you [create a Power BI or a Fabric support ticket](/power-bi/support/creat
 
 View the details and status of support tickets by going to Help+Support in the Fabric Admin Portal. You're able to review all the support tickets you either created or listed as secondary owner on.
 
-![Help and support tab in the admin portal.](media/manage-support-ticket/help+support+admin-portal.png)
+![Screenshot of the left navigation in the Admin Portal with Help+Support highlighted.](media/manage-support-ticket/help+support+admin-portal.png)
 
 You can search, filter, and sort support tickets. By default, you see only tickets created by you. Change the filter options to review support tickets that you're secondary owner on. You can also filter cases by the owner of the pending response, Microsoft, or you. 
 
@@ -51,13 +51,13 @@ To change your **Advanced diagnostic information** selection after the request i
 
 Review [Consent to access customer data](/power-bi/support/access-customer-data) page for more information.
 
-![A user can change their consent to access their diagnostic data.](media/manage-support-ticket/consent-to-access-data.png)
+![Screenshot of the consent change option in ticket's details.](media/manage-support-ticket/consent-to-access-data.png)
 
 ### Updating support case contact information
 
 1. Select the support ticket and click on "Edit"
 
-1. Update the contact information details
+1. Updating the contact information details
 
 1. Add or remove secondary owners on the support ticket
 
