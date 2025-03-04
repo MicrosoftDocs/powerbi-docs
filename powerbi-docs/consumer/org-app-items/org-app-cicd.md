@@ -40,7 +40,7 @@ The definition file is divided into two sections:
 
 The following diagram shows the structure of the org app.
 
-:::image type="content" source="./media/org-app-cicd/org-app-structure.png" alt-text="Diagram showing the structure of an Org app item. The static settings are shown above the org app and the item elements follow it." lightbox="./media/org-app-cicd/org-app-structure.png" border="false":::
+:::image type="content" source="./media/org-app-cicd/org-app-structure.png" alt-text="Diagram showing the structure of an Org app item. The static settings are shown above the org app and the item elements follow it." border="false" lightbox="./media/org-app-cicd/org-app-structure.png":::
 
 The definition file contains:
 
