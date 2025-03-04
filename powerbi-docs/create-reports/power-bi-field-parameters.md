@@ -83,7 +83,7 @@ Parameter = {
 
 ## Limitations
 
-- AI visuals and Q&A aren't supported with the feature.
+- AI visuals, Q&A, and Copilot aren't supported with the feature.
 - There's no way for your report users to select the "none" or no fields option. Selecting no fields in the slicer or filter card is the same as selecting all fields.
 - You can't create parameters in live connection data sources without a local model. However, if you use DirectQuery for Power BI semantic models and Analysis Services, you can add a local model to create field parameters. For more information about using DirectQuery for live connections, see [Composite models on Power BI semantic models and Analysis Services](../transform-model/desktop-composite-models.md#composite-models-on-power-bi-semantic-models-and-analysis-services).
 - You can't use implicit measures, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. For more information, see [implicit vs. explicit measures](../guidance/star-schema.md#measures).
