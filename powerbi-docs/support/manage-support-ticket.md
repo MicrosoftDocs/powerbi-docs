@@ -20,7 +20,7 @@ After you [create a Power BI or a Fabric support ticket](/power-bi/support/creat
 
 View the details and status of support tickets by going to Help+Support in the Fabric Admin Portal. You're able to review all the support tickets you either created or listed as secondary owner on.
 
-![Screenshot of the left navigation in the Admin Portal with Help+Support highlighted.](media/manage-support-ticket/help+support+admin-portal.png)
+![Screenshot of the left navigation in the Admin Portal with Help+Support highlighted.](media/manage-support-ticket/help-support-admin-portal.png)
 
 You can search, filter, and sort support tickets. By default, you see only tickets created by you. Change the filter options to review support tickets that you're secondary owner on. You can also filter cases by the owner of the pending response, Microsoft, or you. 
 
