@@ -33,6 +33,7 @@ Your Power BI visual has to be approved by Partner Center. Before requesting cer
 
 Before submitting your Power BI visual for certification, verify that:
 
+* The visual isn't an R-visual
 * The visual complies with the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
 * The visual passes all the [required tests](submission-testing.md)
 * The compiled package exactly matches the submitted package
@@ -158,12 +159,12 @@ The process of deploying to AppSource can take time. Your Power BI visual will b
 
 ### When will users be able to download my visual?
 
-* If you submitted a new Power BI visual, users will be able to download it a few hours after you receive an email from AppSource.
+* If you submitted a new Power BI visual, it will be available for download from the AppSource link within a few hours. However, it takes an extra 10–14 days to reach production and become available in Power BI Desktop/Service.
 
-* If you submitted an update to an existing Power BI visual, users will be able to download it within two weeks of your submission.
+* If you submitted an update to an existing Power BI visual, the new version will also appear on AppSource but will take up to two weeks to be deployed to the production environment.
 
     >[!NOTE]
-    > The *version* field in AppSource will be updated with the day your Power BI was approved by AppSource, approximately a week after you submitted your visual. Users will be able to download the updated visual but the updated capabilities will not take effect. Your visual's new capabilities will affect the user's reports after about a two weeks.
+    > The *version* field in AppSource will be updated with the day your Power BI was approved by AppSource, approximately a week after you submitted your visual. Users will be able to download the updated visual but the updated capabilities won't take effect. Your visual's new capabilities will affect the user's reports after about a two weeks.
 
 ### When will my Power BI visual display a certification badge?
 
