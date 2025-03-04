@@ -19,7 +19,7 @@ You downloaded [Power BI Report Server](get-started.md), and you have a [Fabric 
 
 - Purchased [Power BI Premium](#purchased-power-bi-premium)
 
-- Purchased [F64+ Reserved Instance](#purchased-f64-reserved-instance)
+- Purchased [F64+ Reserved Instance](#purchased-f64-reserved-instance) (more details on [Fabric Capacity Reservation](/azure/cost-management-billing/reservations/fabric-capacity))
 
 - Purchased [SQL Server Enterprise with Software Assurance agreement or SQL Server Enterprise Subscription](#purchased-software-assurance-agreement)
 
