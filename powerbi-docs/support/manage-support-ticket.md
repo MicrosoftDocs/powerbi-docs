@@ -53,7 +53,7 @@ Review [Consent to access customer data](/power-bi/support/access-customer-data)
 
 ![Screenshot of the consent change option in ticket's details.](media/manage-support-ticket/consent-to-access-data.png)
 
-### Updating support case contact information
+### Update support case contact information
 
 1. Select the support ticket and click on "Edit"
 
