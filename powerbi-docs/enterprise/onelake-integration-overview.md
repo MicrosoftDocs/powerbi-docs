@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/03/2024
+ms.date: 03/03/2025
 LocalizationGroup: Enterprise
 ---
 # OneLake integration for semantic models
