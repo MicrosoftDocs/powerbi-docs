@@ -195,7 +195,7 @@ With the PBIR Preview feature enabled, when you save a project, your report is s
 
 Learn more about the [PBIR folder structure](#pbir-folder-and-files).
 
-### Convert existing PBIP to PBIR
+### Convert existing report to PBIR
 
 If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR as follows:
 
@@ -212,19 +212,6 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
 The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* folder containing the PBIR representation of the report.
 
 If you select to **Keep current** format, Desktop don't prompt again to upgrade.
-
-### Publish a PBIR report to service
-
-While in the **preview** phase, the only way to publish a report with the PBIR format is through [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration). This involves connecting the workspace to a Git repository and pushing the PBIR report to it, which can then be synchronized with the service workspace at a later stage.
-
-If you wish to convert an existing report to PBIR in the service, follow these steps:
-
-1. Connect your workspace to Git.
-1. Clone the Git repository to your local file system.
-1. Open the report in Power BI Desktop by opening the `definition.pbir` file.
-1. Save the report and choose to upgrade to PBIR.
-1. Commit and sync the changes to Git.
-1. Update the workspace with the latest changes from Git.
 
 ### PBIR folder and files
 

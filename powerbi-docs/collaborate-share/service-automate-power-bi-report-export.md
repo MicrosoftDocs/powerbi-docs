@@ -17,6 +17,7 @@ With [Power Automate](/power-automate/getting-started), you can automate exporti
 :::image type="content" source="media/service-automate-power-bi-report-export/automate-power-bi-report-overview.png" alt-text="Screenshot of the Power BI Automate window showing create options.":::
 
 Power Automate is a no-code way to interact with the Export To File API in the user interface. See [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports) to start interacting with the API directly.
+Before you use Power Automate to export Power BI Reports, see [Export reports from Power BI to PDF](end-user-pdf.md) for PDF and [Export your Power BI report to PowerPoint](end-user-powerpoint.md#export-your-power-bi-report-to-powerpoint).
 
 ## Prerequisites  
 
