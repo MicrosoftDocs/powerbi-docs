@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/27/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # Apply insights in Power BI to explain fluctuations in visuals
@@ -56,7 +56,7 @@ The details returned by insights are intended to highlight what was different be
 
 For example, if *Sales* increased by 55% overall from *Qtr 3* to *Qtr 4*, and that's equally true for every *Category* of product (sales of Computer increased by 55%, and of Audio, and so on), and also true for every country or region, and for every type of customer, then there's little that can be identified in the data to help explain the change. However, that situation is generally not the case. We might typically find differences in what occurred, such that among the categories, *Computers* and *Home Appliances* grew by a much larger 63% percentage, while *TV and Audio* grew by only 23%, and therefore *Computers* and *Home Appliances* contributed a larger amount of the total for *Qtr 4* than they had for *Qtr 3*. Given this example, a reasonable explanation of the increase would be: *particularly strong sales for Computers and TV and Audio*.
 
-The algorithm isn't simply returning the values that account for the biggest amount of the change. For example, if the vast majority (98%) of sales came from the USA, then it would commonly be the case that the vast majority of the increase was also in the USA. Yet unless the USA or other countries/regions had a significant change to their relative contribution to the total, the country or region wouldn't be considered interesting in this context.
+The algorithm isn't simply returning the values that account for the biggest amount of the change. For example, if most (98%) sales came from the USA, then it would commonly be the case that most of the increase was also in the USA. Yet unless the USA or other countries/regions had a significant change to their relative contribution to the total, the country or region wouldn't be considered interesting in this context.
 
 Simplistically, the algorithm can be thought of as taking all the other columns in the model and calculating the breakdown by that column for the *before* and *after* time periods. This determines how much change occurred in that breakdown and then returns those columns with the biggest change. For example, *Category* was selected in the previous example. The contribution made by *TV and Video* fell 7% from 33% to 26%, while the contribution from *Home Appliances* grew from nothing to over 6%.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/02/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # Use inline hierarchy labels in Power BI
@@ -22,7 +22,7 @@ With inline hierarchy labels, you can see hierarchy labels as you expand visuals
 
 ### Use the built-in Expand feature (without sorting by hierarchy labels)
 
-Before we see inline hierarchy labels in action, let's review the default **Expand to next level** feature behavior. Doing so will help us understand and appreciate how useful inline hierarchy labels can be.
+Before we see inline hierarchy labels in action, let's review the default **Expand to next level** feature behavior. Doing so helps us understand and appreciate how useful inline hierarchy labels can be.
 
 The following image shows a bar chart visual for annual sales. When you right-click on a bar, you can choose **Expand to next level**.
 

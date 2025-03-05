@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Data from files
 ---
 # Get data from Power BI Desktop files

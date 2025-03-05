@@ -13,7 +13,7 @@ ms.date: 12/10/2024
 ms.custom: intro-get-started
 #customer intent: As a Power BI user I want to learn what goals are and how to use Goals in my Power BI scorecards.
 ---
-# Get started with goals (preview) in Power BI
+# Get started with goals in Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 

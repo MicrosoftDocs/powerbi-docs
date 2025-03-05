@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/06/2023
+ms.date: 02/28/2025
 LocalizationGroup: Connect to data
 ---
 # Use the ribbon in Power BI Desktop

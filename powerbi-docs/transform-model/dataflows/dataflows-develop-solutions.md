@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: concept-article
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn how to use data flows in Power BI.
 ---
@@ -163,7 +163,7 @@ Imagine you have business requirements to automate imports, exports, or refreshe
 
 | **Type** | **Mechanism** |
 | --- | --- |
-| Use the [PowerAutomate templates](/power-query/dataflows/dataflow-power-automate-connector-templates). | No-code |
+| Use the [Power Automate templates](/power-query/dataflows/dataflow-power-automate-connector-templates). | No-code |
 | Use [automation scripts in PowerShell](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows). | Automation scripts |
 | Build your own business logic by using [the APIs](/rest/api/power-bi/dataflows). | Rest API |
 

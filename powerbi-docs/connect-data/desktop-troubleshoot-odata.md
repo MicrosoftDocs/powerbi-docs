@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/24/2023
+ms.date: 02/26/2025
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting sign-in with OData feed

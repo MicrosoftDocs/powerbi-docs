@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/06/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # Keyboard shortcuts in Power BI Desktop
@@ -166,7 +166,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Close widget, suggestions, other dialogs, or closes DAX formula bar | **Esc** |
 | Show suggestions | **Ctrl + Space** |
 | Expand or Collapse DAX formula bar | **Ctrl + J** |
-| Focus on the DAX fomula bar itself to tab to next UI element | **Ctrl + M** |
+| Focus on the DAX formula bar itself to tab to next UI element | **Ctrl + M** |
 
 ## Enter data
 | To do this action           | Press                |

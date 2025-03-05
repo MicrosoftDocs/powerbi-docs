@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data refresh
 ---
 # Refresh semantic models created from local Power BI Desktop files

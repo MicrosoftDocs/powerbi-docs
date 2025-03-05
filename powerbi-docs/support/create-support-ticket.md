@@ -66,11 +66,15 @@ The steps you take to create a support ticket vary, depending on your role.
    > Administrators can also navigate to the [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/) with their admin credentials to create a support ticket.
    
    
+   
+   > [!TIP]
+   > National clouds users should follow this link to create a support case based on the environment they're working in - [National Cloud Support](https://www.microsoft.com/en-us/power-platform/products/power-bi/clouds#Support)
+   
 1. In the "Other resources" card, select **Get Microsoft help.** 
 
-   :::image type="content" source="media/create-support-ticket/Help_pane_other_resources.png" alt-text="Screenshot of Other Resources card with link to Get Microsoft Help.":::
-   
-   > [!NOTE]
+      :::image type="content" source="media/create-support-ticket/Help_pane_other_resources.png" alt-text="Screenshot of Other Resources card with link to Get Microsoft Help.":::
+
+      > [!NOTE]
    > If the admin sets a link to an internal Help Desk, [as described here](/fabric/admin/service-admin-portal-help-support), a link to **Help Desk** will be shown. However, admins will always be redirected to the **Help + Support** section in the **Admin Portal.**
    
    
@@ -94,7 +98,7 @@ The steps you take to create a support ticket vary, depending on your role.
 1. If the guidance doesn't resolve your issue, scroll down, select **Next**, and then select your support plan. You can select either using the "Microsoft Fabric Subscription" or your Unified or Premier support plan. 
 
    ![Screenshot of selecting a support plan.](media/create-support-ticket/selecting-support-plan.png)
-
+   
 1. If you have a **Unified or Premier** support plan that doesn't appear under **Support plan**, select **Add new contract** and fill in the fields. If you don't know your access or contract ID or are interested in purchasing a [Unified support contract](/power-bi/support/service-support-options), contact your service admin or Customer Success Account Manager (CSAM).
 
    :::image type="content" source="media/create-support-ticket/new-support-contract.png" alt-text="Screenshot of the Support tab, showing where to select Add new contract.":::
@@ -106,8 +110,8 @@ The steps you take to create a support ticket vary, depending on your role.
    
 1. If the guidance doesn't resolve your issue, scroll down, select **Next**, and then fill in the fields on the Support tab.
 
-   :::image type="content" source="media/create-support-ticket/support-tab.png" alt-text="Screenshot of the Support tab, showing the required fields.":::
-   
+      :::image type="content" source="media/create-support-ticket/support-tab.png" alt-text="Screenshot of the Support tab, showing the required fields.":::
+
 ### Live Chat
 
 Users who open support cases through PPAC might see the option to start a live chat session with a Microsoft Support representative. The option to start a live chat session appears on the **Contact** page.
