@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/22/2024
+ms.date: 03/03/2025
 
 LocalizationGroup: Premium
 ---
@@ -52,7 +52,7 @@ Configure your key vault in the following way:
 2. [Create an RSA key](#create-an-rsa-key) with a 4096-bit length, or use an existing key of this type, with wrap and unwrap permissions.
 
     > [!IMPORTANT]
-    > Power BI BYOK supports only RSA keys with a 4096-bit length.
+    > Power BI BYOK supports RSA and RSA-HSM keys with a 4096-bit length.
 
 3. Recommended: Check that the key vault has the [*soft delete* option enabled](#soft-delete-option).
 
