@@ -15,11 +15,16 @@ ms.date: 12/04/2024
 
 Learn how you can find your Power BI Report Server product key to install your server in a production environment.
 
-You downloaded [Power BI Report Server](get-started.md), and you have a SQL Server Enterprise Software Assurance agreement. Or you purchased [Power BI Premium](../enterprise/service-premium-what-is.md). You want to install the server in a production environment, but you need a product key in order to do that. Where is the product key? The product key is in one of these places, depending on what you purchased:
+You downloaded [Power BI Report Server](get-started.md), and you have a [Fabric F64+ reserved instance](/fabric/enterprise/licenses), SQL Server Enterprise Edition with Software Assurance, or SQL Server Enterprise Subscriptions. You want to install the server in a production environment, but you need a product key in order to do that. Where is the product key? The product key is in one of these places, depending on what you purchased:
 
 - Purchased [Power BI Premium](#purchased-power-bi-premium)
-- Purchased [F64+ Reserved Instance](#purchased-f64-reserved-instance)
-- Purchased [Software Assurance agreement](#purchased-software-assurance-agreement)
+
+- Purchased [F64+ Reserved Instance](#purchased-f64-reserved-instance) (more details on [Fabric Capacity Reservation](/azure/cost-management-billing/reservations/fabric-capacity))
+
+- Purchased [SQL Server Enterprise with Software Assurance agreement or SQL Server Enterprise Subscription](#purchased-software-assurance-agreement)
+
+> [!NOTE]
+> If you purchased your SQL Server Enterprise license through a partner, reach out to the partner to get access to the Power BI Report Server key.
 
 > [!NOTE]
 > You can't use a developer product key in a production environment.
@@ -78,6 +83,7 @@ If you have SQL Server Enterprise subscription the product key can be found unde
 * [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
 * [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 * [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+
 * [How to get to the admin portal](/fabric/admin/admin-center#how-to-get-to-the-admin-portal)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
