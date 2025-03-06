@@ -76,7 +76,8 @@ To create a paginated report from the Power BI service, you can start in a numbe
 ## Considerations and limitations
 
 - You can create a paginated report in any workspace.
-- You can't create a paginated report from Power BI semantic models based on a live connection.
+- You can't create a paginated report from Power BI semantic models based on a live connection to SSAS or AAS. In this case you should connect your report directly to the underlying SSAS / AAS database.
+
 - The online editor does *not* replicate all existing Power BI Report Builder functionality.  
 
 ## Related content
