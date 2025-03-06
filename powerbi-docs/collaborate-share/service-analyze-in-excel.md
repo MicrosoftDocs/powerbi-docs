@@ -27,7 +27,7 @@ The following are prerequisites you need before proceeding.
 - You must have a Power BI license: Fabric Free, Pro, or Premium Per User (PPU). Fabric Free license users can only work with datasets in My workspace or a Power BI Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
-## To evaluate in Excel choose Power BI data
+## Evaluate in Excel choose Power BI data
 
 Power BI provides you with options to ensure that you can extract the right granularity of data depending on how you want to analyze that data in Excel, either with Excel PivotTables or Excel tables. In the Power BI service, use the following two features to create an Excel workbook:
 
@@ -78,7 +78,7 @@ While viewing a Power BI visual, you can further explore the visual data in Exce
 
 1. Choose a visual in a Power BI report, select **More options** (**…**).
 
-    :::image type="content" source="media/service-analyze-in-excel/more-options-power-bi-visual.png" alt-text="Screenshot of the choose a visual in a Power BI report." lightbox="media/service-analyze-in-excel/more-options-power-bi-visual.png":::
+    :::image type="content" source="media/service-analyze-in-excel/more-options-power-bi-visual.png" alt-text="Screenshot of the choose a visual in a Power BI report screen." lightbox="media/service-analyze-in-excel/more-options-power-bi-visual.png":::
 
 1. On the **Options** menu, select **Export data**. You have different options to select what type of data you want to export to Excel.
 
@@ -109,17 +109,16 @@ In addition, you can use the OneLake Data Hub's Table Preview to export an Excel
 
 :::image type="content" source="media/service-analyze-in-excel/export-live-connection-datahub.png" alt-text="Screenshot showing the Export with live connection (.xlsx) option for the Table preview in OneLake Data hub." lightbox="media/service-analyze-in-excel/export-live-connection-datahub.png":::
 
-## Excel Add-In
+## Excel add-in
 
 You can use the Power BI Excel add-in to insert connected PivotTables and connected query tables starting from Excel. This helps you quickly find and insert refreshable Power BI data into your new or existing workbooks without leaving Excel.
 
 > [!NOTE]
 > To use the Power BI Excel Add-in, ensure that in Excel Trust Center the following settings aren't checked:
-
 > - Disable all Application Add-ins (may impair functionality)
 > - Don't allow any web add-ins to start.
-
 > [!NOTE]
+
 > The connected tables feature is now available in the Microsoft 365 Current Channel. Connected tables are available to all Monthly Enterprise Channel and Semi-Annual Enterprise Channel customers in their next regularly scheduled [Microsoft 365 update](/deployoffice/manage-software-download-settings-office-365). The connected tables feature is  available for everyone in Excel for the Web. The add-in is visible in Excel for users with a Power BI Pro license.
 
 You can open the Excel Add-in from the Excel ribbon.
@@ -168,6 +167,6 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 
 ## Related content
 
-- Now that you the Excel workbook with refreshable Power BI data, it's time to [design a report in Excel with that Power BI data](service-analyze-power-bi-datasets-excel.md)
+- Now that you created the Excel workbook with refreshable Power BI data, it's time to [design a report in Excel with that Power BI data](service-analyze-power-bi-datasets-excel.md)
 - [Connect Excel to Power BI semantic models](service-connect-power-bi-datasets-excel.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
