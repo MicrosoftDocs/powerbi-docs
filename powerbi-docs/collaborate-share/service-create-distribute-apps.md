@@ -365,9 +365,8 @@ This action uninstalls the app for everyone you've published it to, and they no 
 ## Considerations and limitations
 To maintain app reliability and performance here are some app, audience group, and access limits to consider:
 - You can create one app per workspace.
-- App publish and update limitations for large apps
-- - App publish and update operations have a timeout of 1 minute. If your app is running into timeout error during update, consider reducing the number of items included in the app.
-- - In some cases, an app is too large to update. In these cases a "Cant update the app" message will be displayed and the app needs to be optimized before updating. To optimize a large app, try: reducing the number of items in the app, converting reports in the app to a different format like [Power BI enhanced report format](../developer/projects/projects-overview.md), or recreating the app as an [org app](../consumer/org-app-items/org-app-items.md). After optimizing the app, try to update the app again. If the "Cant update the app" message persists, continue to optimize the app till update is successful.
+- App publish and update operations have a timeout of 1 minute. If your app is running into timeout error during update, consider reducing the number of items included in the app.
+- In some cases, an app is too large to update. In these cases a "Cant update the app" message will be displayed and the app needs to be optimized before updating. To optimize a large app, try: reducing the number of items in the app, converting reports in the app to a different format like [Power BI enhanced report format](../developer/projects/projects-overview.md), or recreating the app as an [org app](../consumer/org-app-items/org-app-items.md). After optimizing the app, try to update the app again. If the "Cant update the app" message persists, continue to optimize the app till update is successful.
 - You can create up to 25 audience groups per app.
 - A total of 10,000 users and user groups combined can have access to an app.
 - Each user group is counted as one entry against the 10,000 total.
