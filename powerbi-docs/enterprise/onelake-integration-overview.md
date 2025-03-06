@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/03/2025
+ms.date: 03/05/2025
 LocalizationGroup: Enterprise
 ---
 # OneLake integration for semantic models
@@ -41,11 +41,9 @@ In your semantic model settings, expand **OneLake integration**, click the slide
 
 ## Admin portal
 
-Global and tenant admins can control OneLake integration by using the following settings in the Power BI admin portal: 
+Global and tenant admins can control OneLake integration by using the following setting in the Power BI admin portal: 
 
 * **Users can create Fabric items** - enables production-ready Fabric features, including OneLake integration. This setting can be managed at both the organizational level and the capacity level. If disabled, users can't turn on OneLake integration for their semantic models, and any semantic models currently configured for OneLake integration stop exporting import tables to OneLake. OneLake integration is enabled by default for the entire organization. 
-
-* **Users can store semantic model tables in OneLake** - enables all or selected users in the organization to configure OneLake integration for their semantic models. If disabled for a specific user, that user can no longer turn on OneLake integration but any semantic models they've already configured for OneLake integration continue to export import tables to OneLake. That user can disable OneLake integration for semantic models already configured for OneLake integration, but cannot re-enable OneLake integration. The setting requires the **Semantic models can export data to OneLake** tenant setting to be enabled. By default, all users in the organization can configure OneLake integration for their semantic models. 
 
 
 ### Refresh model

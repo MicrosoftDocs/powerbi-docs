@@ -264,7 +264,7 @@ There are a few limitations for this release of editing data models in the Power
 The following scenarios don't support opening the data model for a semantic model in the service:
 
 * Semantic models that have incremental refresh.
-* Semantic models that have been deployed by a deployment pipeline.
+* Semantic models deployed through deployment pipelines can only be edited on the web in the development workspace. Editing in test and production workspaces is not supported.
 * Semantic models that haven't yet been upgraded to enhanced metadata format. You can upgrade to enhanced metadata format by opening the corresponding pbix in Desktop and republishing.
 * Semantic models that have automatic aggregations configured.
 * Semantic models that have a live connection.
