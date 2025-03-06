@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data refresh
 ---
 # Refresh a semantic model created from a .CSV file on OneDrive or SharePoint
@@ -16,7 +16,7 @@ LocalizationGroup: Data refresh
 When you connect to a comma separated value (*.csv*) file on OneDrive or SharePoint, a semantic model is created in Power BI. Data from the *.csv* file is imported into the semantic model in Power BI. Power BI then automatically connects to the file and refreshes any changes with the semantic model in Power BI. If you edit the *.csv* file in OneDrive, or SharePoint, after you save, those changes will appear in Power BI, usually within about an hour. Any visualizations in Power BI based on the semantic model are automatically updated.
 
 > [!NOTE]
-> By default, using the **Get Data** experience for specific file type connectors in Power BI Desktop uses a local reference to the file stored on OneDrive, which will not automatically update unless you have a gateway configured. To have your CSV automatically update without having to configure a gateway, rather than using the **Text/CSV** connector, use the **Web** connector and reference the online version of your CSV. 
+> By default, using the **Get Data** experience for specific file type connectors in Power BI Desktop uses a local reference to the file stored on OneDrive, which won't automatically update unless you have a gateway configured. To have your CSV automatically update without having to configure a gateway, rather than using the **Text/CSV** connector, use the **Web** connector and reference the online version of your CSV. 
 
 ## Advantages
 
@@ -38,7 +38,7 @@ When you sign into your Microsoft account, be sure to select **Keep me signed in
 
 ![Screenshot of the Microsoft sign-in dialog with keep me signed in highlighted.](media/refresh-csv-file-onedrive/refresh_signin_keepmesignedin.png)
 
-When you make changes to your *.csv* file on OneDrive, and they don't synchronize with the semantic model in Power BI. It might be because your Microsoft account credentials changed, you’ll need to connect to the file and import it again from your personal OneDrive.
+When you make changes to your *.csv* file on OneDrive, and they don't synchronize with the semantic model in Power BI. It might be because your Microsoft account credentials changed, you need to connect to the file and import it again from your personal OneDrive.
 
 ## When things go wrong
 

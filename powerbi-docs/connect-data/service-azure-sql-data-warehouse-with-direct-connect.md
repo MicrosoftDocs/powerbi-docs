@@ -8,7 +8,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 11/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Data from databases
 ---
 
@@ -21,7 +21,7 @@ When you use the Azure Synapse Analytics connector:
 * Specify the fully qualified server name when you connect (see details later in this article).
 * Ensure firewall rules for the server are configured to "Allow access to Azure services".
 * Every action such as selecting a column or adding a filter will directly query the data warehouse.
-* Tiles are set to refresh approximately every 15 minutes and you don't need to schedule a refresh.  You can adjust refresh in the Advanced settings when you connect.
+* Tiles are set to refresh approximately every 15 minutes and you don't need to schedule a refresh. You can adjust refresh in the Advanced settings when you connect.
 * Q&A isn't available for DirectQuery semantic models.
 * Schema changes aren't picked up automatically.
 
@@ -45,7 +45,7 @@ Your fully qualified server name and database name can be found in the Azure por
 :::image type="content" source="media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png" alt-text="Screenshot of the Azure portal with SQK demo data highlighted.":::
 
 > [!NOTE]
-> If your Power BI tenant is in the same region as the Azure Synapse Analytics there will be no egress charges. To find where your Power BI tenant is located, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
+> If your Power BI tenant is in the same region as the Azure Synapse Analytics, there will be no egress charges. To find where your Power BI tenant is located, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
 
 [!INCLUDE [direct-query-sso](../includes/direct-query-sso.md)]
 

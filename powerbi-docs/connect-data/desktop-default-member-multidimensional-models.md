@@ -1,5 +1,5 @@
 ---
-title: Default member in multidimensional models in Power BI
+title: Default member in multidimensional semantic models in Power BI
 description: Learn about how Power BI processes data from a multidimensional model based on where the default member is found.
 author: davidiseminger
 ms.author: davidi
@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/18/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
-# Work with multidimensional models in Power BI
+# Work with multidimensional semantic models in Power BI
 
-You can connect to multidimensional models in Power BI, and create reports that visualize all sorts of data within the model. With multidimensional models, Power BI applies rules to how it processes data, based on which column is defined as the *default member*.
+You can connect to multidimensional semantic models in Power BI, and create reports that visualize all sorts of data within the model. With multidimensional semantic models, Power BI applies rules to how it processes data, based on which column is defined as the *default member*.
 
-With multidimensional models, Power BI handles data from the model based on where the column that contains the **Default Member** is used. The **DefaultMember** property value for an attribute hierarchy is set in CSDL (Conceptual Schema Definition Language) for a particular column in a multidimensional model. For more information about the default member, see [Attribute properties - Define a default member](/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member). When a data analysis expression (DAX) query is executed, the default member specified in the model is applied automatically.
+With multidimensional semantic models, Power BI handles data from the model based on where the column that contains the **Default Member** is used. The **DefaultMember** property value for an attribute hierarchy is set in CSDL (Conceptual Schema Definition Language) for a particular column in a multidimensional model. For more information about the default member, see [Attribute properties - Define a default member](/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member). When a data analysis expression (DAX) query is executed, the default member specified in the model is applied automatically.
 
-This article describes how Power BI behaves under various circumstances when working with multidimensional models, based on where the default member is found.
+This article describes how Power BI behaves under various circumstances when working with multidimensional semantic models, based on where the default member is found.
 
 ## Work with filter cards
 
@@ -95,7 +95,7 @@ Power BI doesn't clear a default member for a specified column, if:
 
 ## Related content
 
-This article described the behavior of Power BI when working with default members in multidimensional models. You might also be interested in the following articles:
+This article described the behavior of Power BI when working with default members in multidimensional semantic models. You might also be interested in the following articles:
 
 * [Show items with no data in Power BI](../create-reports/desktop-show-items-no-data.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)

@@ -45,17 +45,6 @@ PBIR is currently in preview. You can only create or convert existing Power BI p
 
 During preview, Fabric Git Integration and Fabric REST APIs continue to use PBIR-legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features start exporting the report definition using PBIR format. At general availability (GA), PBIR will become the default report format.
 
-## Limitations 
-
-Initially, the PBIR format has some service restrictions, such as these:
-
-- You can't use subscriptions.
-- Mobile views are not displayed in Power BI Apps.
-- Can't be deployed with deployment pipelines.  
-- Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
-  - Saving in Power BI Desktop
-  - Synchronization in Fabric Git Integration
-
 Refer to [PBIR documentation](/power-bi/developer/projects/projects-report#pbir-format) for more details.
 
 ## Next steps

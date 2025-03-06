@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
 
 # Get started with datamarts
 
-This article describes how to get started using datamarts, including various sample data that can jump-start your experience. You'll learn about sample semantic models you can use with datamarts, how to create datamarts from scratch, how to rename or delete a datamart, and other helpful information to get you acquainted and proficient with datamarts.
+This article describes how to get started using datamarts, including various sample data that can jump-start your experience. You learn about sample semantic models you can use with datamarts, how to create datamarts from scratch, how to rename or delete a datamart, and other helpful information to get you acquainted and proficient with datamarts.
 
 ## Sample data
 
@@ -77,7 +77,7 @@ To model your data, navigate to **Model view** by selecting on the **Model View*
 
 In Power BI, a semantic model is always required before any reports can be built, so the default semantic model enables quick reporting capabilities on top of the datamart.  Within the datamart, a user can add datamart objects -  tables to their default semantic model. They can also add additional semantic modeling properties, such as hierarchies and descriptions.  These are then used to create the Power BI semantic model’s tables. Users can also remove objects from the default semantic model. 
 
-To add objects – tables or views to the default semantic model, a user has 2 options:
+To add objects – tables or views to the default semantic model, a user has two options:
 
 - Automatically add objects to the semantic model, which happens by default with no user intervention needed
 - Manually add objects to the semantic model
@@ -134,7 +134,7 @@ To access auto-generated semantic models, go to the Premium workspace and find t
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-19-b.png" alt-text="Screenshot of finding a semantic model.":::
 
-To load the semantic model, click the name of the semantic model.
+To load the semantic model, select the name of the semantic model.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-20-b.png" alt-text="Screenshot of loading a semantic model." lightbox="media/datamarts-get-started/datamarts-get-started-20-b.png":::
 
@@ -211,7 +211,7 @@ The following table describes the datamart context menu options:
 | --- | --- |
 | Analyze in Excel | Uses the existing Analyze in Excel capability on auto-generated semantic model. Learn more about [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) |
 | Create report | Build a Power BI report in DirectQuery mode. Learn more about [get started creating in the Power BI service](/power-bi/fundamentals/service-get-started#step-1-get-data) |
-| Delete | Delete semantic model from workspace. A confirmation dialog notifies you of the impact of delete action. If **Delete** action is confirmed, then the datamart and related downstream items will be deleted<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-03.png" alt-text="Screenshot of the datamart delete datamart menu."::: |
+| Delete | Delete semantic model from workspace. A confirmation dialog notifies you of the impact of delete action. If **Delete** action is confirmed, then the datamart and related downstream items are deleted<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-03.png" alt-text="Screenshot of the datamart delete datamart menu."::: |
 | Manage permissions | Enables users to add other recipients with specified permissions, similar to allowing the sharing of an underlying semantic model or allowing to build content with the data associated with the underlying semantic model.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-04.png" alt-text="Screenshot of the datamart grant people access menu."::: |
 | Refresh history | Provides the history of refresh activity with the duration of activity and status.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-05.png" alt-text="Screenshot of the datamart refresh history window."::: |
 | Rename | Updates the datamart and auto-generated semantic model with the new name.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-06.png" alt-text="Screenshot of the datamart rename window."::: |
@@ -249,7 +249,7 @@ The following table shows settings for auto-generated semantic models. When thes
 * Only the datamart owner can add or change data sources corresponding to a datamart. If the current datamart owner is unavailable, another workspace owner can use the *Takeover* feature to gain access.
 * When using datamarts with [named connections](/power-query/connection-authentication-pqo), the following limitations apply:
    * You can only create one cloud connection of a particular path and type, for example, you could only create one SQL plus server/database cloud connection. You can create multiple gateway connections.
-   * You cannot name or rename cloud data sources; you can name or rename gateway connections.
+   * You can't name or rename cloud data sources; you can name or rename gateway connections.
 
 ## Related content
 This article provided sample data and instructions on how to create and interact with datamarts. 

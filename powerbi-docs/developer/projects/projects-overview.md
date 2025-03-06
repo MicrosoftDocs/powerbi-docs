@@ -199,7 +199,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - Sensitivity labels aren't supported with Power BI projects.
 - Diagram view is ignored when editing models in the Service.
 - When saving as a Power BI Project, the maximum length of the project files path is 260 characters.
-- In Power BI Desktop, you can't save as a PBIP directly to OneDrive and SharePoint.
+- In Power BI Desktop, you can't save as a PBIP directly to OneDrive and SharePoint. You can use *Save As* to save files to a locally synced OneDrive folder; however, this may cause file locking issues, potentially leading to failed save operations in Power BI Desktop.
 - When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
 - Report Linguistic Schema isn't supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).

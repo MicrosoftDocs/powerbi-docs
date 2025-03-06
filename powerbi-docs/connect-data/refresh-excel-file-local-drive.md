@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/23/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from an Excel workbook on a local drive
@@ -15,7 +15,7 @@ LocalizationGroup: Data refresh
 ## What's supported?
 
 > [!IMPORTANT]
-> The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
+> The following capabilities are deprecated and will no longer be available starting September 29, 2023:
 > - Upload of local workbooks to Power BI workspaces will no longer be allowed.
 > - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
 >

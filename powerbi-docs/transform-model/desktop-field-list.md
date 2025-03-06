@@ -1,19 +1,19 @@
 ---
 title: Use the Field list in Power BI Desktop
-description: Learn how the user interface (UI) for the Field list, and the icons in the list, have changed in Power BI Desktop.
+description: Learn how the user interface (UI) for the Field list, and the icons in the list, changed in Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Transform and shape data
 ---
 
 # Use the Field list in Power BI Desktop
 
-The lists in the **Field** pane, called the **Data** pane in current releases of Power BI Desktop, are being unified across Model view, Table view and Report view in Power BI Desktop. Unifying these views creates consistency for functionality and the user interface (UI) across views, and addresses customer feedback.
+The lists in the **Field** pane, called the **Data** pane in current releases of Power BI Desktop, are being unified across Model view, Table view, and Report view in Power BI Desktop. Unifying these views creates consistency for functionality and the user interface (UI) across views, and addresses customer feedback.
 
 The following changes across the views are:
 
