@@ -24,7 +24,7 @@ You downloaded [Power BI Report Server](get-started.md), and you have a [Fabric 
 - Purchased [SQL Server Enterprise with Software Assurance agreement or SQL Server Enterprise Subscription](#purchased-software-assurance-agreement)
 
 > [!NOTE]
-> If you purchased your SQL Server Enterprise license through a partner, reach out to the partner to get access to the PBIRS key.
+> If you purchased your SQL Server Enterprise license through a partner, reach out to the partner to get access to the Power BI Report Server key.
 
 > [!NOTE]
 > You can't use a developer product key in a production environment.
