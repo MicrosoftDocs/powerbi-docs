@@ -6430,6 +6430,11 @@
             "source_path": "powerbi-docs/developer/visuals/scanner-api.md",
             "redirect_url": "/power-bi/developer",
             "redirect_document_id": false
-        }  
+        },
+        {
+            "source_path": "powerbi-docs/support/service-troubleshoot-signup.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        }            
   ]
 }
