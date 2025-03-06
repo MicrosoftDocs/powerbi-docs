@@ -1,15 +1,16 @@
 ---
 title: Get data from Excel workbook files
-description: Learn how to import or upload data from Excel workbook files into Power BI.
+description: Learn how to import or upload data from Excel workbook files into Power BI, including supported workbooks, data types, and troubleshooting tips.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/03/2024
+ms.date: 03/05/2025
 ms.custom: video-removed
 LocalizationGroup: Data from files
+#customer intent: As a Power BI user I want to learn how to import or upload data to Power BI from Excel.
 ---
 
 # Get data from Excel workbook files
@@ -22,6 +23,7 @@ Power BI supports importing or connecting to workbooks created in Excel 2007 and
 
 > [!IMPORTANT]
 > The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
+
 > - Upload of local workbooks to Power BI workspaces will no longer be allowed.
 > - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
 >
