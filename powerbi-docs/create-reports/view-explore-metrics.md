@@ -7,17 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: concept-article
-ms.date: 03/05/2025
+ms.date: 03/10/2025
 LocalizationGroup: Consumers
-#customer intent: As a business user, I want learn about the metrics sections in Power BI so that I can understand the insights the metrics are giving me.
+#customer intent: As a Power BI user, I want learn about the metrics sections in Power BI so that I can understand the insights the metrics are giving me.
 ---
 
 # View and explore metrics
 
 Metric sets are collections of metrics and key performance indicators you create and use for greater accuracy, consistency, and reliability in reports and analysis.
-This article guides you through the preview area you see when you open a metric set in Fabric or the Power BI service. It also shows you how to use the Explore feature for in-depth analysis of metric set data. If you already have a metric set created in a workspace, the information provided here will familiarize your with the view and the actions you can take within it.
+This article guides you through the preview area you see when you open a metric set in Fabric or the Power BI service. It also shows you how to use the Explore feature for in-depth analysis of metric set data. If you already have a metric set created in a workspace, the information provided here will familiarize you with the view and the actions you can take within it.
 
-If you're new to metric sets, and want to know how to get started with this feature, see [Get started with Metrics](./get-started-metrics.md). [Create and manage metric sets](./create-metric-sets.md) shows you how to build a metric set of your own.
+If you're new to metric sets and want to learn how to get started with this feature, see [Get started with metric sets](./get-started-metrics.md).
+
+[Create and manage metric sets](./create-metric-sets.md) shows you how to build a metric set of your own.
+
+:::image type="content" source="./media/get-started-metrics/metric-overview.png" alt-text="Screenshot showing metric selected in open metric set.":::
 
 ## Metric set details
 
@@ -29,16 +33,16 @@ When you open a metric set, information about the selected metric is displayed i
 
 - **Semantic model**: Name of the semantic model that the metric is based on.
 - **Data updated**: Date when the semantic model  data for the metric was last updated.
-- **Uses**: Total number of reports that use the metric. See [Usage section](view-explore-metrics.md#usage-section) further on for more information.
+- **Uses**: Total number of reports that use the metric. For more information, see [Usage section](view-explore-metrics.md#usage-section).
 - **Owner**: The point of contact for the metric set.
 
 :::image type="content" source="./media/view-explore-metrics/metric-details.png" alt-text="Screenshot showing the metric details pane.":::
 
-The metric value itself is located above the other details. The metric value includes the time period or aggregation specified in the measure logic, or it shows a grand total value, as in the **Total** box shown in the image above.
+The metric value itself is located above the other details. The metric value includes the time period or aggregation specified in the measure logic, or it shows a grand total value, as in the **Total** box shown in the preceding image.
 
 ## Usage section
 
-The **Usage** section of a metric page is linked to the **Uses** section in the metric details area. It lists the specific downstream applications of a metric. For example, if a metric (or its underlying measure) is used in 10 reports, all 10 reports appear in this table.
+The **Usage** section of a metric page is linked to the **Uses** section in the [metric details area](view-explore-metrics.md#metric-details). It lists the specific downstream applications of a metric. For example, if a metric (or its underlying measure) is used in 10 reports, all 10 reports appear in this table.
 
 :::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section.":::
 
@@ -55,9 +59,22 @@ This section is important for several reasons:
 
 A metric's data is visualized in the **Visuals** area, so you can begin analysis with the provided visuals and Copilot summary without performing any extra action.
 
-You can also select the **Dimensions** tab in the same pane as the metric details to view and add dimensions. Select the checkboxes next to the fields you want to add. The selected data is applied and automatically visualized in the **Visuals** area.
+You can also use the *Dimensions* tab or the *Explore* feature to manipulate the data.
 
-Users can favorite metric sets they use often, so that they can always come back and get the most up-to-date number.
+### Add dimensions
+
+Dimensions associated with a metric are a crucial part of the metric itself. They specify the data that's most relevant to the metric. Use of the most relevant data helps both end users and creators understand how the metric should be analyzed and what groupings are available.
+
+To select and use dimensions for a metric, go to the **Dimensions** tab, located next to the Details area. Select the checkboxes next to the fields you want to add.
+
+:::image type="content" source="./media/view-explore-metrics/metrics-select-dimensions.png" alt-text="Screenshot showing anniversary month, education, primary interest, and month fields selected as dimensions.":::
+
+> [!NOTE]
+> The Dimensions tab shows the entire semantic model. When the metric is viewed in *Viewing mode*, only the selected dimensions are displayed to viewers, providing a streamlined overview of the relevant data.
+
+After you select dimensions, visuals and Copilot summaries (if requirements are met for Copilot eligibility) appear in the **Visuals** area. These visuals are based on the metric and the associated dimensions. They aim to provide the first step in analysis of the metric, calling out interesting trends breakdowns in the available data.
+
+### Explore data
 
 If there are views or specific groupings you want to see from the Dimensions list that aren't yet visualized in the preview area, you can use the **Explore** feature. Select the **Explore** action button in the view, then manipulate the data to get the correct view you need.
 

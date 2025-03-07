@@ -1,30 +1,28 @@
 ---
 title: Get started with Metrics
-description: Learn how you can use the Power BI Metrics feature and how to manage key metrics across your organization.
+description: Learn how you can use the Power BI Metrics feature to standardize and manage key metrics across your organization.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: concept-article
-ms.date: 03/05/2025
+ms.date: 03/10/2025
 LocalizationGroup: Get started
-#customer intent: As a business user, I want to learn about the metrics feature so that I can use it in my organization.
+#customer intent: As a Power BI user, learn how to use and manage metric sets so that I can ensure accuracy, consistency, and reliability in my organization's reports and analysis.
 ---
 
-# Get started with Metrics
+# Get started with metric sets
 
-Metric sets help organizations define, discover, and reuse trusted metrics. Bundle selected metrics from your data into a metric set that you can endorse and share with others. When you create a metric set, you establish the metrics within it as reliable sources that people in your organization should use for greater accuracy, consistency, and reliability in reports and analysis.
+Metric sets help organizations define, discover, and reuse trusted metrics. When you create a metric set, you establish the metrics within it as reliable sources that people in your organization should use for greater accuracy, consistency, and reliability in reports and analysis. Bundle selected metrics from your data into a metric set that you can endorse and share with others.
 
 Currently, metrics are defined in semantic layers as measures in models. Over time, these models become large and complex, making them difficult to manage and use, which leads to the creation of many specific models. When organizations have many specific models, it causes data silos and duplicate metrics, resulting in more metric redefinitions. The fragmentation in models makes it hard for users to trust existing metrics and creates logistical challenges. Metric sets address this issue by giving users tools to manage and reuse key metrics across the organization.
 
 This article tells you how to get started with metric sets. You'll learn who should use metric sets, where to find them in the Power BI service, and what considerations you need to factor into their use.
 
-:::image type="content" source="./media/get-started-metrics/metric-overview.png" alt-text="Screenshot showing the overview page of selected metric.":::
-
 ## Who are metric sets for?
 
-Metric sets are for report authors and data scientists who want to create and use reliable metrics from trusted sources. Designed for reuse and wide distribution, metric sets ensure creators consistently use the most accurate and trusted KPIs within their organization. Reports built on these metrics benefit from higher data quality, as they use standardized and validated KPIs.
+Metric sets are for report authors and data scientists who want to create and use reliable metrics from trusted sources. Designed for reuse and wide distribution, metric sets ensure creators consistently use the most accurate and trusted key performance indicators (KPIs) within their organization. Reports built on these metrics benefit from higher data quality, as they use standardized and validated KPIs.
 
 Data scientists can now incorporate these reliable metrics directly into their complex models without needing to reverse engineer data. Through SemPy integration, they can easily access and reuse the metrics defined in the Power BI semantic model.
 
@@ -42,11 +40,11 @@ Metric sets have the following licensing requirements:
 |Use Copilot summaries for metrics|Power BI Premium Per User workspace or Fabric F64 or greater capacity|
 
 > [!NOTE]
-> If you don’t meet the minimum requirements for any of these, contact your Fabric administrator before you begin.
+> If you don’t meet these minimum requirements, contact your Fabric administrator before you begin.
 
 Read and Build permissions also factor into the ability to view and edit metric sets:
 
-- Users need Read mermission for the semantic model to access and view a metric set.
+- Users need Read permission for the semantic model to access and view a metric set.
 - Sharing the metric set artifact only shares the container. To see individual metrics and their associated data/dimensions, viewers need (minimum) Read permission to the associated semantic model.
 - To create a metric, users need Build permission for the underlying semantic model.
 - Users need Build permission to customize views and visuals using the "Explore" feature.
