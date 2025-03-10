@@ -21,30 +21,30 @@ If you're new to metric sets and want to learn how to get started with this feat
 
 [Create and manage metric sets](./create-metric-sets.md) shows you how to build a metric set of your own.
 
-:::image type="content" source="./media/get-started-metrics/metric-overview.png" alt-text="Screenshot showing metric selected in open metric set.":::
+:::image type="content" source="./media/get-started-metrics/metric-overview.png" alt-text="Screenshot showing metric selected in open metric set."  lightbox="./media/get-started-metrics/metrics-overview.png":::
 
 ## Metric set details
 
-The expandable pane on the left side of the view has a Description field where information about the metric set can be added. It also lists all the metrics contained in the metric set. When you select a metric from the list, the details are shown in the preview area.
+The **Metric set details** pane on the left side of the view lists all the metrics contained in the metric set. When you select a metric from the list, the details are shown in the preview area. You can also add a descriptive text to provide information about the metric set.
 
 ## Metric details
 
-When you open a metric set, information about the selected metric is displayed in the view. The metric value is shown below the fields for the metric name and description. A **Details** area provides the following information about the selected metric:
+When you open a metric set, information about the selected metric is displayed in the view. The metric value is shown below the fields for the metric name and description. The **Details** area provides the following information about the selected metric:
 
 - **Semantic model**: Name of the semantic model that the metric is based on.
 - **Data updated**: Date when the semantic model  data for the metric was last updated.
-- **Uses**: Total number of reports that use the metric. For more information, see [Usage section](view-explore-metrics.md#usage-section).
+- **Uses**: Total number of reports that use the metric. You can find more information in [Usage section](view-explore-metrics.md#usage-section).
 - **Owner**: The point of contact for the metric set.
 
 :::image type="content" source="./media/view-explore-metrics/metric-details.png" alt-text="Screenshot showing the metric details pane.":::
 
-The metric value itself is located above the other details. The metric value includes the time period or aggregation specified in the measure logic, or it shows a grand total value, as in the **Total** box shown in the preceding image.
+The metric value itself is located above the other details. It includes the time period or aggregation specified in the measure logic, or it shows a grand total value, as in the **Total** box shown in the preceding image.
 
 ## Usage section
 
 The **Usage** section of a metric page is linked to the **Uses** section in the [metric details area](view-explore-metrics.md#metric-details). It lists the specific downstream applications of a metric. For example, if a metric (or its underlying measure) is used in 10 reports, all 10 reports appear in this table.
 
-:::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section.":::
+:::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section." lightbox="./media/get-started-metrics/metrics-usage-section.png":::
 
 This section is important for several reasons:
 
@@ -78,7 +78,7 @@ After you select dimensions, visuals and Copilot summaries (if requirements are 
 
 If there are views or specific groupings you want to see from the Dimensions list that aren't yet visualized in the preview area, you can use the **Explore** feature. Select the **Explore** action button in the view, then manipulate the data to get the correct view you need.
 
-:::image type="content" source="./media/view-explore-metrics/metrics-explore-dialog.png" alt-text="Screenshot showing the explore area for the selected metrics.":::
+:::image type="content" source="./media/view-explore-metrics/metrics-explore-dialog.png" alt-text="Screenshot showing the explore area for the selected metrics." lightbox="./media/view-explore-metrics/metrics-explore-dialog.png":::
 
 When you view the Explore area, the data pane only displays the metric and its associated dimensions. This setup provides a controlled exploration experience, to make sure that users can only slice the metric by dimensions that are relevant and appropriate. The setup also prevents the use of unrelated or unsuitable dimensions.
 
@@ -86,6 +86,6 @@ You can save your analysis as an exploration or as a report. See [Use and monito
 
 ## Related content
 
-- [Get started with metrics](create-metric-sets.md)
+- [Get started with metric sets](create-metric-sets.md)
 - [Create and manage metric sets](create-metric-sets.md)
 - [Use and monitor metrics](use-monitor-metrics.md)

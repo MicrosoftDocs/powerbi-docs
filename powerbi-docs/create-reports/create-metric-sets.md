@@ -15,15 +15,15 @@ LocalizationGroup: Consumers
 # Create and manage metric sets
 
 Metric sets are collections of metrics and key performance indicators you create and use for greater accuracy, consistency, and reliability in reports and analysis.
-This article tells you how to create a metric set in the Power BI service. It also covers metric set settings and the steps to share it with others.
+This article tells you how to create a metric set in the Power BI service. It also covers prerequisites, settings, and how to share a metric set with others.
 
-If you're new to metric sets and want to learn how to get started with this feature, see [Get started with Metrics](./get-started-metrics.md).
+If you're new to metric sets and are looking for an introduction to this feature, see [Get started with metric sets](./get-started-metrics.md).
 
 ## Prerequisites
 
 To create and manage metric sets, you must:
 
-- Create the metric set in a Fabric or Power BI Premium Per User (PPU) workspace.
+- Create the metric set in a Fabric or Power BI Premium Per User workspace.
 - Turn on Fabric for your organization.
 - Have at least a Contributor role in the workspace.
 - Have Build permission for the semantic model.
@@ -85,7 +85,7 @@ As the metric is created, any measure description saved in the semantic model au
 
 Sharing is the easiest way to give people access to your metric set in Power BI service. You can share with people inside your organization.
 
-When you share a metric set, the people you share it with can view and interact with it. They can also see all semantic model data and edit it if they have an [Admin, Member, or Contributor role in the workspace](../collaborate-share/service-roles-new-workspaces.md).
+When you share a metric set, the people you share it with can view and interact with it. They can also see and edit all semantic model data if they have an [Admin, Member, or Contributor role in the workspace](../collaborate-share/service-roles-new-workspaces.md).
 
 Users that don’t have access to the semantic model receive access to the metric set and can see metadata like metric name and owner. However, these users can't see the metric value, visuals, or other information coming from the semantic model.
 
@@ -94,7 +94,7 @@ Users that have access to the metric set and semantic model see data according t
 The coworkers you share with can also share with their coworkers, if you allow them to.
 
 > [!NOTE]
-> When you share metric sets, your recipients need Fabric or Power BI PPU licenses.
+> When you share metric sets, your recipients need Fabric or Power BI Premium Per User licenses.
 
 To share a metric set:
 
@@ -102,7 +102,7 @@ To share a metric set:
 
 1. In the **Create and send link** window, enter or search for an email address for the individual or group you want to share the metric set with.
 
-1. Select **Specific people can view** to show the **Select permissions** window.
+1. Select **Specific people can view** to show the **Select permissions** window, as shown in the following images.
 
    :::image type="content" source="./media/create-metric-sets/metrics-share-metric-set.png" alt-text="Screenshot showing the create and send link window beside the select permissions window.":::
 
@@ -117,6 +117,6 @@ To share a metric set:
 
 ## Related content
 
-- [Get started with metrics](create-metric-sets.md)
+- [Get started with metric sets](create-metric-sets.md)
 - [View and explore metrics](view-explore-metrics.md)
 - [Use and monitor metrics](use-monitor-metrics.md)

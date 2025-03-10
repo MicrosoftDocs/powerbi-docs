@@ -14,10 +14,9 @@ LocalizationGroup: Consumers
 
 # Use and monitor metrics
 
-Metric sets let you create and use reliable KPIs from trusted sources. See [Get started with metric sets](./get-started-metrics.md) for an overview of metric sets.
-Also how to make sure accurate and trusted KPIs are used within your organization for higher data quality and simplified integration into complex models.
+Metric sets are collections of metrics and key performance indicators you create and use for greater accuracy, consistency, and reliability in reports and analysis. This guide walks you throughs methods to effectively use and monitor metrics in Power BI, including integrating metrics into reports, notebooks, and APIs, as well as understanding their lineage and usage.
 
-This article shows you how to use metrics in reports and notebooks. If you haven't created a metric set yet, see [Create and manage metric sets](create-metric-sets.md) for details.
+If you haven't created a metric set yet, see [Create and manage metric sets](create-metric-sets.md) for details.
 
 ## Use metrics in a report
 
@@ -74,7 +73,7 @@ Metric sets show up in both workspace lineage views and data lineage views:
 
 - Workspace lineage view: Focuses on the relationships between items within a specific Power BI workspace, helping users understand how different components are interconnected.
 
-     :::image type="content" source="./media/use-monitor-metrics/metrics-workspace-lineage.png" alt-text="Screenshot showing the workspace lineage view.":::
+     :::image type="content" source="./media/use-monitor-metrics/metrics-workspace-lineage.png" alt-text="Screenshot showing the workspace lineage view." lightbox="./media/use-monitor-metrics/metrics-workspace-lineage.png":::
 
 - Data lineage view: Provides an end-to-end view of how data is sourced, transformed, and used in reports and dashboards, covering the entire data lifecycle.
 
@@ -82,7 +81,7 @@ There are a couple other ways for creators to understand the lineage and usage o
 
 - **Usage section**: Users can also utilize the [Usage section](view-explore-metrics.md#usage-section) for a metric set. This section displays a metric's specific downstream applications. For example, if a metric (or its underlying measure) is used in 10 reports, all 10 reports appear in this table.
 
-  :::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section.":::
+  :::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section." lightbox="./media/use-monitor-metrics/metrics-usage-section.png":::
 
 - **Details page for semantic model**: Metric set artifacts show up in the **See what already exists** table for a semantic model if a metric uses a measure located in that model.
 
