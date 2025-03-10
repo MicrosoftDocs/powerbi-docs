@@ -47,7 +47,7 @@ Global and tenant admins can control OneLake integration by using the following 
 
     :::image type="content" source="media/onelake-integration-overview/enable-onelake-integration-fabric-items.png" alt-text="Screenshot of admin portal setting enabling users to create Fabric items.":::
 
-* **Semantic models can export data to OneLake** - enables semantic models configured for OneLake integration to send import tables to OneLake. Applies to the entire organization. The following images shows this setting enabled:
+* **Semantic models can export data to OneLake** - enables semantic models configured for OneLake integration to send import tables to OneLake. Applies to the entire organization. The following image shows this setting enabled:
 
     :::image type="content" source="media/onelake-integration-overview/enable-onelake-integration-semantic-models.png" alt-text="Screenshot of admin portal setting enabling semantic models to be exported to onelake.":::
 
@@ -78,7 +78,7 @@ For example, you can use SQL Server Management Studio (SSMS) to run the followin
 
 ## Explore export files
 
-After exporting, you can use [OneLake file explorer](https://go.microsoft.com/fwlink/?linkid=2235671), which integrates OneLake with your Windows File Explorer, to locate Delta table export files..
+After exporting, you can use [OneLake file explorer](https://go.microsoft.com/fwlink/?linkid=2235671), which integrates OneLake with your Windows File Explorer, to locate Delta table export files.
 
 1. In OneLake file explorer, right click on the workspace folder, and then select **Sync from OneLake**.
 
@@ -102,13 +102,13 @@ By creating [shortcuts](/fabric/onelake/onelake-shortcuts) for your semantic mod
 
 - Currency data types with values larger than 18 decimal points can have some precision loss when exported to Delta files.
 
-- Semantic models in [BYOK](service-encryption-byok.md) enabled workspaces are not supported.
+- Semantic models in [BYOK](service-encryption-byok.md) enabled workspaces aren't supported.
 
-- [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo) capacities are not yet supported.
+- [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo) capacities aren't yet supported.
 
 - Measures, DirectQuery tables, hybrid tables, calculation group tables, and system managed aggregation tables can't be exported to Delta format tables.
 
-- Old versions of the delta tables are deleted after 3 days. Other execution engines which use an older but now deleted version of the data must move forward to an available version.
+- Old versions of the delta tables are deleted after three days. Other execution engines which use an older but now deleted version of the data must move forward to an available version.
 
 ## Related content
 
