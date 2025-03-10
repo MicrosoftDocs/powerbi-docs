@@ -95,21 +95,15 @@ By creating [shortcuts](/fabric/onelake/onelake-shortcuts) for your semantic mod
 
 ## Considerations and limitations
 
-- During preview, currency data types with values larger than 18 decimal points can have some precision loss when exported to Delta files.
+- Currency data types with values larger than 18 decimal points can have some precision loss when exported to Delta files.
 
-- During preview, semantic models in [BYOK](service-encryption-byok.md) enabled workspaces are not supported.
+- Semantic models in [BYOK](service-encryption-byok.md) enabled workspaces are not supported.
 
-- During preview, shortcut tables built on top of the exported model in Lakehouse can't be queried by using the SQL endpoint.
-
-- During preview, [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo) capacities are not yet supported.
-
-- During preview, the operation of exporting the model to OneLake is not billed, but [compute and storage usage of the exported model on OneLake](/fabric/onelake/onelake-consumption) is billed.
- 
-- For users with *contributor* permissions for exported model tables but only *viewer* permissions for the workspace, a model folder appears in Lakehouse explorer, but an error is returned when selected.
+- [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo) capacities are not yet supported.
 
 - Measures, DirectQuery tables, hybrid tables, calculation group tables, and system managed aggregation tables can't be exported to Delta format tables.
 
-- Only a single version of the delta tables are exported and stored on OneLake. Old versions of the delta tables are deleted after a successful export. Other execution engines which use the older but now deleted version of the data can have transient failures.
+- Old versions of the delta tables are deleted after 3 days. Other execution engines which use an older but now deleted version of the data must move forward to an available version.
 
 ## Related content
 

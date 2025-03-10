@@ -9,7 +9,8 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/15/2025
+ms.date: 02/21/2025
+#customer intent: As a Power BI user I want to learn how generate reports and analyze Microsoft Teams activity.
 ---
 
 # Analyze your Teams usage in the Power BI app for Teams
@@ -20,7 +21,6 @@ ms.date: 01/15/2025
 > For more information about the retirement of the Teams activity analytics report feature and how this might affect you, see [Power BI in Teams – Announcing the retirement of the Teams activity analytics report](https://powerbi.microsoft.com/blog/power-bi-in-teams-teams-activity-analytics-report-deprecation/).
 
 This article describes how to automatically generate a Power BI report to analyze your Microsoft Teams activity, by using the Power BI app in Teams.
-
 
 Only you can see this report about your Teams activity, unless you choose to share it. Microsoft Teams also offers a [summary report for Teams admins](/microsoftteams/teams-analytics-and-reports/teams-usage-report). It gives admins an overview of the usage activity in Teams, including the number of active users and channels, guests, and messages in each team.
 

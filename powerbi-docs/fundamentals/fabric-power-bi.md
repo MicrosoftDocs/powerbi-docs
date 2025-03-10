@@ -12,8 +12,6 @@ ms.date: 01/11/2025
 
 # What is Microsoft Fabric for Power BI service users?
 
-[!INCLUDE [new user recruitment](../includes/fabric-new-user-research.md)]
-
 If you're a Power BI user, you probably have questions about the introduction of [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview).
 
 - Are these two different tools? 
