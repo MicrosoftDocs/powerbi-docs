@@ -7,7 +7,7 @@ ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 09/23/2024
+ms.date: 03/10/2025
 #customer intent: The customer is looking to set up subscriptions to deliver large Power BI and paginated reports to OneDrive SharePoint.
 ---
 
@@ -25,7 +25,7 @@ Subscribe to your Power BI and paginated reports to deliver them to OneDrive Sha
 
 The requirements apply to users in the organization. To create a subscription, you need:
 
-- Permissions to access the report.
+- Contributor and above permissions to the workspace.
 - Access to a workspace backed by a [Premium capacity](../enterprise/service-premium-what-is.md) or equivalent [Fabric capacity](/fabric/enterprise/licenses#microsoft-fabric-license-types). 
 
 Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#users-can-set-up-email-subscriptions). 

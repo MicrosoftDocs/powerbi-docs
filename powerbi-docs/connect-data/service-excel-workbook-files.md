@@ -38,6 +38,7 @@ Power BI supports importing or connecting to workbooks created in Excel 2007 and
 >
 > If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](#migrating-your-excel-workbooks).  
 
+
 ### Workbooks with ranges or tables of data
 
 If your workbook contains simple worksheets with ranges of data, be sure to format those ranges as tables to get the most out of your data in Power BI. When you create reports in Power BI, the named tables and columns in the **Tables** pane make it much easier to visualize your data.
