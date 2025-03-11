@@ -21,7 +21,7 @@ If you're new to metric sets and want to learn how to get started with this feat
 
 [Create and manage metric sets](./create-metric-sets.md) shows you how to build a metric set of your own.
 
-:::image type="content" source="./media/get-started-metrics/metric-overview.png" alt-text="Screenshot showing metric selected in open metric set."  lightbox="./media/get-started-metrics/metrics-overview.png":::
+:::image type="content" source="./media/get-started-metrics/metric-overview.png" alt-text="Screenshot showing metric selected in open metric set."  lightbox="./media/get-started-metrics/metric-overview.png":::
 
 ## Metric set details
 
@@ -44,7 +44,7 @@ The metric value itself is located above the other details. It includes the time
 
 The **Usage** section of a metric page is linked to the **Uses** section in the [metric details area](view-explore-metrics.md#metric-details). It lists the specific downstream applications of a metric. For example, if a metric (or its underlying measure) is used in 10 reports, all 10 reports appear in this table.
 
-:::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section." lightbox="./media/get-started-metrics/metrics-usage-section.png":::
+:::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section." lightbox="./media/view-explore-metrics/metrics-usage-section.png":::
 
 This section is important for several reasons:
 

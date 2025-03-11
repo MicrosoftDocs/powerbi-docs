@@ -81,11 +81,11 @@ There are a couple other ways for creators to understand the lineage and usage o
 
 - **Usage section**: Users can also utilize the [Usage section](view-explore-metrics.md#usage-section) for a metric set. This section displays a metric's specific downstream applications. For example, if a metric (or its underlying measure) is used in 10 reports, all 10 reports appear in this table.
 
-  :::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section." lightbox="./media/use-monitor-metrics/metrics-usage-section.png":::
+  :::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section." lightbox="./media/view-explore-metrics/metrics-usage-section.png":::
 
 - **Details page for semantic model**: Metric set artifacts show up in the **See what already exists** table for a semantic model if a metric uses a measure located in that model.
 
-  :::image type="content" source="./media/use-monitor-metrics/metrics-semantic-model-view.png" alt-text="Screenshot showing the semantic model view with the see what exists table displayed.":::
+  :::image type="content" source="./media/use-monitor-metrics/metrics-semantic-model-view.png" alt-text="Screenshot showing the semantic model view with the see what exists table displayed." lightbox="./media/use-monitor-metrics/metrics-semantic-model-view.png":::
 
 ## Related content
 

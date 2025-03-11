@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 
 # Get started with metric sets
 
-**APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for ***business users*** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium Per User or Fabric license
+**APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for business users :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium Per User or Fabric license
 
 Metric sets help organizations define, discover, and reuse trusted metrics. When you create a metric set, you establish the metrics within it as reliable sources that people in your organization should use for greater accuracy, consistency, and reliability in their reports and analysis. Bundle selected metrics from your data into a metric set that you can endorse and share with others.
 
@@ -34,7 +34,6 @@ Data scientists can now incorporate these reliable metrics directly into their c
 > To use metric sets, an organization must have Fabric enabled in the [tenant settings](/fabric/admin/service-admin-portal-goals-settings).
 
 Metric sets have the following licensing requirements:
-
 |Permission|Requirements|
 |----|----|
 |Author and share metric sets and metrics|Power BI Premium Per User workspace or Fabric workspace|
