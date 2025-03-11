@@ -14,7 +14,7 @@ LocalizationGroup: Consumers
 
 # Use and monitor metrics
 
-Metric sets are collections of metrics and key performance indicators you create and use for greater accuracy, consistency, and reliability in reports and analysis. This guide walks you throughs methods to effectively use and monitor metrics in Power BI, including integrating metrics into reports, notebooks, and APIs, as well as understanding their lineage and usage.
+Metric sets are collections of metrics and key performance indicators you create and use for greater accuracy, consistency, and reliability in reports and analysis. This guide walks you through methods to effectively use and monitor metrics in Power BI, including integrating metrics into reports, notebooks, and APIs, as well as understanding their lineage and usage.
 
 If you haven't created a metric set yet, see [Create and manage metric sets](create-metric-sets.md) for details.
 
@@ -83,7 +83,7 @@ There are a couple other ways for creators to understand the lineage and usage o
 
   :::image type="content" source="./media/view-explore-metrics/metrics-usage-section.png" alt-text="Screenshot showing the metric usage section." lightbox="./media/view-explore-metrics/metrics-usage-section.png":::
 
-- **Details page for semantic model**: Metric set artifacts show up in the **See what already exists** table for a semantic model if a metric uses a measure located in that model.
+- **Semantic model details page**: Metric set artifacts show up in the **See what already exists** table for a semantic model if a metric uses a measure located in that model.
 
   :::image type="content" source="./media/use-monitor-metrics/metrics-semantic-model-view.png" alt-text="Screenshot showing the semantic model view with the see what exists table displayed." lightbox="./media/use-monitor-metrics/metrics-semantic-model-view.png":::
 

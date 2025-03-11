@@ -32,9 +32,9 @@ To create and manage metric sets, you must:
 
 1. Sign in to the [**Power BI service**](https://app.powerbi.com) in your browser.
 
-1. Select **Metrics** in the left navigation pane to open the **Metrics** hub.
+1. Select **Metrics** in the left navigation pane to open the Metrics hub.
 
-1. In the **Metrics** hub, select the **New metric set** action button.
+1. In the Metrics hub, select **New metric set**.
 
    :::image type="content" source="./media/create-metric-sets/metrics-create-metric-set.png" alt-text="Screenshot showing the new metric set window with a name and destination workspace chosen.":::
 

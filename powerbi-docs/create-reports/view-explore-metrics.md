@@ -15,7 +15,7 @@ LocalizationGroup: Consumers
 # View and explore metrics
 
 Metric sets are collections of metrics and key performance indicators you create and use for greater accuracy, consistency, and reliability in reports and analysis.
-This article guides you through the preview area you see when you open a metric set in Fabric or the Power BI service. It also shows you how to use the Explore feature for in-depth analysis of metric set data. If you already have a metric set created in a workspace, the information provided here will familiarize you with the view and the actions you can take within it.
+This article guides you through the display area you see when you open a metric set in Fabric or the Power BI service. It also shows you how to use the Explore feature for in-depth analysis of metric set data. If you already have a metric set created in a workspace, the information provided here will familiarize you with the view and the actions you can take within it.
 
 If you're new to metric sets and want to learn how to get started with this feature, see [Get started with metric sets](./get-started-metrics.md). [Create and manage metric sets](./create-metric-sets.md) shows you how to build a metric set of your own.
 
