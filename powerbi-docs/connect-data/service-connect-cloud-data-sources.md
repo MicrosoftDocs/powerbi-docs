@@ -75,7 +75,7 @@ To create a **Workspace identity**, follow these steps:
 Keep the following considerations in mind when creating or using a **Workspace identity**:
 
 * **Workspace identity** is supported with Fabric data sources.
-* **Workspace identity** is also supported for Power BI semantic models. Set the *Authentication method* in the Analysis Services data connection to **Workspace identity**. For **Workspace identity** authentication to work properly your organization must enable the tenant setting **Service principals can use Fabric APIs** because Analysis Services data connections must resolve the connection name to a workspace and to the target semantic model by using Fabric REST APIs. If the setting is not enabled for your tenant, a banner message in the **Authentication** portion of the **Settings** states the following (or similar) message: *Workspace identity is currently only supported for Data pipelines and OneLake shortcuts.*
+* **Workspace identity** is also supported for Power BI semantic models. Set the *Authentication method* in the Analysis Services data connection to **Workspace identity**. For **Workspace identity** authentication to work properly your organization must enable the tenant setting **Service principals can use Fabric APIs** because Analysis Services data connections must resolve the connection name to a workspace and to the target semantic model by using Fabric REST APIs.
 * The connection type being used must support the **Workspace identity** authentication type, which includes SQL Server and ADLS connectors. For the connection type being used, if there's a **Workspace identity** option under the *Authentication* setting, then that connector is supported.
 
 
