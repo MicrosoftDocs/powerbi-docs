@@ -42,7 +42,7 @@ To create and manage metric sets, you must:
 
 1. Select **Create** to create the metric and close the window. The new metric set opens, which you can start filling with metrics.
 
-   :::image type="content" source="./media/create-metric-sets/metrics-blank-metric-set.png" alt-text="Screenshot showing an empty metric set after creation.":::
+   :::image type="content" source="./media/create-metric-sets/metrics-blank-metric-set.png" alt-text="Screenshot showing an empty metric set after creation." lightbox="./media/create-metric-sets/metrics-blank-metric-set.png":::
 
 ## Settings
 
@@ -50,7 +50,7 @@ You can configure settings for a metric set in the **Settings panel**. To open t
 
 1. Locate the metric set in the Metrics hub or in the workspace list view, as shown in the following image.
 
-   :::image type="content" source="./media/create-metric-sets/metrics-hub-overview.png" alt-text="Screenshot showing metric sets listed in the Metrics hub.":::
+   :::image type="content" source="./media/create-metric-sets/metrics-hub-overview.png" alt-text="Screenshot showing metric sets listed in the Metrics hub." lightbox="./media/create-metric-sets/metrics-hub-overview.png":::
 
 1. Hover over the metric set in the list and select the ellipsis (...) that appears.
 
@@ -79,7 +79,7 @@ To add a metric to a metric set:
 
 As the metric is created, any measure description saved in the semantic model automatically shows in the description area.
 
-:::image type="content" source="./media/get-started-metrics/metric-overview.png" alt-text="Screenshot showing metric selected in open metric set.":::
+:::image type="content" source="./media/get-started-metrics/metric-overview.png" alt-text="Screenshot showing metric selected in open metric set." lightbox="./media/get-started-metrics/metric-overview.png":::
 
 ## Share the metric set
 

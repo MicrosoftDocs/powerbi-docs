@@ -34,6 +34,7 @@ Data scientists can now incorporate these reliable metrics directly into their c
 > To use metric sets, an organization must have Fabric enabled in the [tenant settings](/fabric/admin/service-admin-portal-goals-settings).
 
 Metric sets have the following licensing requirements:
+
 |Permission|Requirements|
 |----|----|
 |Author and share metric sets and metrics|Power BI Premium Per User workspace or Fabric workspace|
