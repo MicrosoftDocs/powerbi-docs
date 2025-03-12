@@ -6,8 +6,8 @@ ms.author: kfollis
 ms.reviewer: kfollis, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: overview
-ms.date: 01/28/2025
+ms.topic: how-to
+ms.date: 02/25/2025
 LocalizationGroup: Get started
 #customer intent: As a business user, I want to understand how to use Power BI in Teams meetings so that I can effectively collaborate and make data-driven decisions during meetings.
 ---
@@ -17,9 +17,7 @@ LocalizationGroup: Get started
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 In meetings, keeping everyone on track towards shared objectives is important. This article shows you how to use data, trends, and metrics to show the impact of the work you and your team are doing.
-
 It’s easy to use Power BI in meetings to help keep crucial data top of mind. It helps everyone know which data is the most important and builds skills that help your team make agile decisions based on your progress toward objectives. By staying focused on driving towards measurable outcomes, your team gains a sense of the positive impact of their work.
-
 :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-meeting-tab.png" alt-text="Screenshot of Power BI reports in a Teams meeting pane.":::
 
 Here's how you can use data before, during, and after your meetings.
@@ -36,7 +34,7 @@ Here are some questions you can add to your meeting agenda to start discussion a
 - What actions can we take in the next week or month that are most likely to improve our metrics?
 - What metrics can we start tracking to get a better sense of progress toward our desired outcomes?
 
-Review your data weekly, or at least monthly, to get in the habit of asking questions and discussing the best actions to take in the next week or two. It helps the team learn to leverage data as they plan their work.
+Review your data weekly, or at least monthly, to get in the habit of asking questions and discussing the best actions to take in the next week or two. It helps the team learn to use data as they plan their work.
 
 ## Before the meeting
 
@@ -80,7 +78,7 @@ It's a good idea to review your data in Power BI before a meeting.
 
 1. Review the report or scorecard.
 
-Consider setting a reminder for your meeting so attendees can also pre-read the data before the meeting. It helps everyone be aware of the latest data and improves the discussion during the meeting.
+Consider setting a reminder for your meeting so attendees can also read the data before the meeting. It helps everyone be aware of the latest data and improves the discussion during the meeting.
 
 ## During the meeting
 
@@ -90,9 +88,6 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 1. Open the calendar in Teams.
 1. Open the meeting in the calendar.
 1. Anyone in the meeting can select the Power BI tab to view the report you added to the meeting.
-
-    :::image type="content" source="media/business-user-teams-meetings/teams-meeting-power-bi-tab.png" alt-text="Screenshot of an open meeting invite, and Power BI report tab highlighted.":::
-
 1. Use the meeting window to present your screen.
 
 ### Capture visuals that are important for everyone to see

@@ -1,5 +1,5 @@
 ---
-title: Get notifications in Microsoft Teams about Power BI activity
+title: Get Power BI notifications in Microsoft Teams
 description: When important activities happen in Power BI, Microsoft Teams can show notifications about them in its activity feed.
 author: kfollis
 ms.author: kfollis
@@ -7,9 +7,10 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: how-to
+ms.topic: concept-article
 LocalizationGroup: Share your work
-ms.date: 06/19/2023
+ms.date: 02/25/2025
+#customer intent: As a Power BI user I want to show notifications in the Power BI activity feed.
 ---
 
 # Get notifications in Microsoft Teams about Power BI activity
@@ -18,7 +19,7 @@ This article describes how to receive notifications about activity from Power BI
 
 :::image type="content" source="media/service-teams-notifications/teams-notifications-share-report.png" alt-text="Screenshot showing Get Power BI notifications in Microsoft Teams activity feed.":::
 
-To receive notifications in Teams, install the [Power BI app for Teams](service-microsoft-teams-app.md). After you've installed it, you start getting notifications when important things happen, such as:
+To receive notifications in Teams, install the [Power BI app for Teams](service-microsoft-teams-app.md). After you install the Power BI app for Teams, you start getting notifications when important things happen, such as:
 
 - Someone shares a report to you and sends a message about it through Power BI
 - Someone requests access to a report you own or manage
@@ -70,8 +71,6 @@ The following notifications are supported for metrics.
 
 When a user assigns you as the owner of a goal, you get a notification from then in Teams.
 
-:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-assign.png" alt-text="Screenshot showing Get Power BI metrics assignment notifications in Microsoft Teams activity feed.":::
-
 When you select the notification, the scorecard opens within the activity feed experience and displays the **Details** pane for the metric.
 
 You can customize how to receive these notifications through the **Mentions** setting.
@@ -80,8 +79,6 @@ You can customize how to receive these notifications through the **Mentions** se
 
 When someone @mentions you in a note on a new or existing check-in, Teams sends you a notification from them.
 
-:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-mention.png" alt-text="Screenshot showing Get Power BI metrics mention notifications in Microsoft Teams activity feed.":::
-
 When you select the notification, the scorecard opens within the activity feed experience and displays the **Details** pane for the metric.
 
 You can customize how to receive these notifications through the **Mentions** setting.
@@ -89,8 +86,6 @@ You can customize how to receive these notifications through the **Mentions** se
 #### Metrics status updates
 
 When the status of the metric gets updated by an automated status rule, you receive a notification in Teams if you're the owner of the metric. For connected metrics, you get a notification from the user who configured the data connection. For manual metrics, you get a notification from the user who edited the value.
-
-:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-status-update.png" alt-text="Screenshot showing Get Power BI metrics status update notifications in Microsoft Teams activity feed.":::
 
 When you select the notification, the scorecard opens within the activity feed experience and displays the **Details** pane for the metric.
 
@@ -111,11 +106,13 @@ The currently supported notifications are in the **Actions and updates** and **M
 
 ## Admin control over notifications
 
-We recommend that Power BI admins allow notifications in Teams. However, the [**Microsoft Teams integration in the Power BI service**](/fabric/admin/service-admin-portal-export-sharing#enable-microsoft-teams-integration-in-the-power-bi-service) tenant setting controls whether the Power BI service sends these notifications. When disabled, users no longer receive notifications in Microsoft Teams. 
+We recommend that Power BI admins allow notifications in Teams. However, the [**Microsoft Teams integration in the Power BI service**](/fabric/admin/service-admin-portal-export-sharing#enable-microsoft-teams-integration-in-the-power-bi-service) tenant setting controls whether the Power BI service sends these notifications. When disabled, users no longer receive notifications in Microsoft Teams.
 
 To help users receive notifications in Teams, you can work with your Teams admins to install Power BI broadly in the organization through an app setup policy.
 
 ## Known issues and limitations
+
+Review the following known issues and limitations:
 
 - See [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) to learn about the latest issues.
 - The recipient needs to have access to the scorecards to get the metrics notifications.
