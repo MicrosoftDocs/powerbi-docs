@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/05/2025
+ms.date: 03/12/2025
 ms.custom: video-removed
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn how to import or upload data to Power BI from Excel.
@@ -23,7 +23,6 @@ Power BI supports importing or connecting to workbooks created in Excel 2007 and
 
 > [!IMPORTANT]
 > The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
-
 > - Upload of local workbooks to Power BI workspaces will no longer be allowed.
 > - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
 >
