@@ -146,7 +146,7 @@ The semantic model settings page only shows the **OneDrive Credentials** and **O
 
 The semantic model settings page also displays a link to the One Drive folder where the underlying PBIX file is hosted in the **OneDrive refresh** section.
 
-![OneDrive Source URI](media/refresh-data/odsp-source-uri.png)
+![OneDrive Source URI](media/refresh-data/one-drive-share-point-source-uri.png)
 
 If you disable OneDrive refresh for a semantic model, you can still synchronize your semantic model on demand by selecting **Refresh now** in the semantic model menu. As part of the on-demand refresh, Power BI checks if the source file on OneDrive or SharePoint Online is newer than the semantic model in Power BI and synchronizes the semantic model if it is. The **Refresh history** lists these activities as on-demand refreshes on the **OneDrive** tab.
 
