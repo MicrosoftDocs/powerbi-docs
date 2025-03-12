@@ -135,7 +135,7 @@ Selecting on a measure in an EVALUATE statement in a query without a DEFINE stat
 
 Using **DEFINE MEASURE** is helpful when creating measures by first allowing you to create them as DAX query scoped measures. You can edit multiple measures in one window and then run the query to see the results of all or just some of them with specific group by columns. You don't need to create a table visual in Report view and switch back and forth between measure formulas. CodeLens takes this one step further by providing prompts when the measure already exists in the model. These offer quick links to add the measure or overwrite the measure in the model.
 
-CodeLens is the clickable text that shows above a DEFINE MEASURE block. For DAX query scoped measures that aren't already present in the model, the **Update model: Add new measure** CodeLens appears, which adds the model measure when clicked. For DAX query scoped measures that are already present in the model, and when the DAX scoped measure DAX formula is different, the **Update model: Overwrite measure** CodeLens appears, which will change the model measure to this DAX formula when clicked.
+CodeLens is the clickable text that shows above a DEFINE MEASURE block. For DAX query scoped measures that aren't already present in the model, the **Update model: Add new measure** CodeLens appears, which adds the model measure when clicked. For DAX query scoped measures that are already present in the model, and when the DAX scoped measure DAX formula is different, the **Update model: Overwrite measure** CodeLens appears, which changes the model measure to this DAX formula when clicked.
 
 Alternatively, you can add or overwrite multiple measures at once by clicking the **Update model with changes** button in the **Command** bar.
 
@@ -147,7 +147,7 @@ The lightbulb quick actions and CodeLens can be used together in a complete work
 
 1. In the context menu of a measure, choose Quick queries, then Evaluate to have the query created for you in a new Query tab.
 1. Select the measure in the query to Define or Define with references, adding the DEFINE statement.
-1. Make expression updates to the measure, then run the DAX query to show the change.
+1. Make DAX formula updates to the measure, then run the DAX query to see the results.
 1. When the change appears as expected, then use the CodeLens Update model: Overwrite measure to save it back to the model.
 
 Here's a more visual way to understand the workflow:
@@ -180,7 +180,7 @@ DAX query view can have multiple query tabs, which can be renamed or removed. Th
 
 Each tab includes a status indicator:
 
-- No indicator shows before a query has been run.
+- No indicator shows before running the query.
 - A green checkmark indicates a successful query run.
 - A red cross indicates an error occurred.
 - A filled square in a circle indicates the query was canceled.
