@@ -233,6 +233,8 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
     Slicer is the icon with a funnel next to a tab, but without the small lightning bolt. Power BI automatically creates a numeric range slicer.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-slicer.png" alt-text="Screenshot of Slicer.":::
+
+    When you choose Slicer for the visual, you see the following image: 
     
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-numeric-range.png" alt-text="Screenshot of Date numeric range slicer.":::
 
