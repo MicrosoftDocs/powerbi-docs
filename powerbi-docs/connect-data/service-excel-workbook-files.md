@@ -1,15 +1,16 @@
 ---
 title: Get data from Excel workbook files
-description: Learn how to import or upload data from Excel workbook files into Power BI.
+description: Learn how to import or upload data from Excel workbook files into Power BI, including supported workbooks, data types, and troubleshooting tips.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/03/2024
+ms.date: 03/12/2025
 ms.custom: video-removed
 LocalizationGroup: Data from files
+#customer intent: As a Power BI user I want to learn how to import or upload data to Power BI from Excel.
 ---
 
 # Get data from Excel workbook files
@@ -20,24 +21,22 @@ Microsoft Excel is one of the most widely used business applications and one of 
 
 Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Some features that this article describes are available only in later versions of Excel. Workbooks must be in the .xlsx or .xlsm file type and be smaller than 1 GB.
 
-The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
+> [!IMPORTANT]
+> The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
+> - Upload of local workbooks to Power BI workspaces will no longer be allowed.
+> - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
+>
+> The following capabilities are deprecated and will no longer be available starting October 31, 2023:
+> - Scheduled refresh and refresh now for existing Excel files that were previously configured for scheduled refresh will no longer be allowed.
+> - Local workbooks uploaded to Power BI workspaces will no longer open in Power BI.
+>
+> After October 31, 2023:
+> - You can download existing local workbooks from your Power BI workspace.
+> - You can publish your Excel data model as a Power BI semantic model and schedule refresh.
+> - You can import Excel workbooks from OneDrive and SharePoint Document libraries to view them in Power BI.
+>
+> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](#migrating-your-excel-workbooks).  
 
-Upload of local workbooks to Power BI workspaces will no longer be allowed.
-
-- Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
-
- The following capabilities are deprecated and will no longer be available starting October 31, 2023:
-
-- Scheduled refresh and refresh now for existing Excel files that were previously configured for scheduled refresh will no longer be allowed.
-- Local workbooks uploaded to Power BI workspaces will no longer open in Power BI.
-
-After October 31, 2023:
-
-- You can download existing local workbooks from your Power BI workspace.
-- You can publish your Excel data model as a Power BI semantic model and schedule refresh.
-- You can import Excel workbooks from OneDrive and SharePoint Document libraries to view them in Power BI.
-
-If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](#migrating-your-excel-workbooks).  
 
 ### Workbooks with ranges or tables of data
 

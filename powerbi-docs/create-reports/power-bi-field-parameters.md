@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.custom: video-RE4Y8Jv
 ms.topic: how-to
-ms.date: 11/25/2024
+ms.date: 03/15/2025
 LocalizationGroup: Reports
 #customer intent: As a Power BI customer I want to learn hot to let report readers dynamically change visuals in a report.
 ---
@@ -89,6 +89,7 @@ Parameter = {
 - You can't use implicit measures, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. For more information, see [implicit vs. explicit measures](../guidance/star-schema.md#measures).
 - You can't use field parameters as the linked fields of a drill-through or tooltip page. The workaround is to use the individual fields referenced within the field parameter instead. For example, if your field parameter includes **Customer** and **Product** fields, you can link these two fields to your drill-through or tooltip page so that visuals with the field parameter can launch your drill-through or tooltip page.
 - When a Field Parameter is used to swap fields in a Visual, the Visual drop some related information like Sort direction and Drill/Expand state.
+- When using field parameters with Copilot, Copilot will respond based on the current state of the visuals in the report.
 
 ## Related content
 
