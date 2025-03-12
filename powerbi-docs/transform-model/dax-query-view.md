@@ -46,7 +46,7 @@ In the Power BI service or Fabric portal semantic model details page, select **W
 
 Let's take a closer look at DAX query view in Power BI Desktop.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-layout.png" alt-text="Diagram that shows the DAX query view layout." lightbox="media/dax-query-view/dax-query-view-layout.png" lightbox="media/dax-query-view/dax-query-view-layout.png":::
+:::image type="content" source="media/dax-query-view/dax-query-view-layout.png" alt-text="Diagram that shows the DAX query view layout." lightbox="media/dax-query-view/dax-query-view-layout.png":::
 
 DAX query view has these elements:
 
