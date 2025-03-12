@@ -32,21 +32,21 @@ To learn more about how queries are used, see [DAX queries](/dax/dax-queries) in
 
 In Power BI Desktop, select the **DAX Query View** icon on the left side.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-icon.png" alt-text="Screenshot of the DAX query view icon in Power BI Desktop.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-icon.png" alt-text="Screenshot of the DAX query view icon in Power BI Desktop." lightbox="media/dax-query-view/dax-query-view-icon.png":::
 
 In the Power BI service or Fabric portal workspace, choose **Write DAX queries** from the context menu. 
 
-:::image type="content" source="media/dax-query-view/write-dax-queries-in-web-from-context-menu.png" alt-text="Screenshot of the Write DAX queries entry point in the context menu of a semantic model.":::
+:::image type="content" source="media/dax-query-view/write-dax-queries-in-web-from-context-menu.png" alt-text="Screenshot of the Write DAX queries entry point in the context menu of a semantic model." lightbox="media/dax-query-view/write-dax-queries-in-web-from-context-menu.png":::
 
 In the Power BI service or Fabric portal semantic model details page, select **Write DAX queries** from the top of the page.
 
-:::image type="content" source="media/dax-query-view/write-dax-queries-in-web-from-details-page.png" alt-text="Screenshot of the Write DAX queries entry point in the details page of semantic model.":::
+:::image type="content" source="media/dax-query-view/write-dax-queries-in-web-from-details-page.png" alt-text="Screenshot of the Write DAX queries entry point in the details page of semantic model." lightbox="media/dax-query-view/write-dax-queries-in-web-from-details-page.png":::
 
 ## DAX query view layout
 
 Let's take a closer look at DAX query view in Power BI Desktop.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-layout.png" alt-text="Diagram that shows the DAX query view layout." lightbox="media/dax-query-view/dax-query-view-layout.png":::
+:::image type="content" source="media/dax-query-view/dax-query-view-layout.png" alt-text="Diagram that shows the DAX query view layout." lightbox="media/dax-query-view/dax-query-view-layout.png" lightbox="media/dax-query-view/dax-query-view-layout.png":::
 
 DAX query view has these elements:
 
@@ -54,7 +54,7 @@ DAX query view has these elements:
 
 The DAX query view ribbon has common actions used when writing DAX queries.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-ribbon.png" alt-text="Screenshot of the DAX query view ribbon.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-ribbon.png" alt-text="Screenshot of the DAX query view ribbon." lightbox="media/dax-query-view/dax-query-view-ribbon.png":::
 
 Let's take a closer look at elements in the ribbon:
 
@@ -62,7 +62,7 @@ Let's take a closer look at elements in the ribbon:
 
 Select the **Format query** ribbon button or use SHIFT+ALT+F to format the current query. The query is indented with tabs. DAX functions are changed to UPPERCASE, and extra lines are added. Formatting your DAX query is considered a best practice and improves the DAX query readability. The formatting also indents in such a way that you can collapse and expand sections of the query.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-format-query.png" alt-text="Screenshot of the Format query button.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-format-query.png" alt-text="Screenshot of the Format query button." lightbox="media/dax-query-view/dax-query-view-format-query.png" :::
 
 #### Comment and Uncomment
 
@@ -72,7 +72,7 @@ Select the **Uncomment** ribbon button to remove **//** at the beginning of any 
 
 You can also use CTRL+/ to toggle between comment and uncomment.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-comment.png" alt-text="Screenshot of the Comment and Uncomment buttons in the DAX query view ribbon.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-comment.png" alt-text="Screenshot of the Comment and Uncomment buttons in the DAX query view ribbon." lightbox="media/dax-query-view/dax-query-view-comment.png":::
 
 #### Find and Replace
 
@@ -88,7 +88,7 @@ Select the **Replace** button in the ribbon or use CTRL+H to search for and repl
 
 Select the **Command palette** ribbon button or use CTRL+ALT+P to open the command palette box. You can search for more DAX query editor actions and see their associated keyboard shortcuts.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-command-palette.png" alt-text="Screenshot of the DAX query view command palette.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-command-palette.png" alt-text="Screenshot of the DAX query view command palette." lightbox="media/dax-query-view/dax-query-view-command-palette.png":::
 
 ### Command bar
 
@@ -97,11 +97,11 @@ The DAX query view command bar includes the most important actions when using DA
 #### Run and Cancel
 The **Run** button executes the DAX query or the selected lines of a query. The status of a query after it runs appears in the lower status bar.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-command-bar.png" alt-text="Screenshot of the DAX query view command bar.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-command-bar.png" alt-text="Screenshot of the DAX query view command bar." lightbox="media/dax-query-view/dax-query-view-command-bar.png" :::
 
 When a query is running, the button becomes a **Cancel** button, which can be used to stop a running query.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-cancel.png" alt-text="Screenshot of the DAX query view cancel.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-cancel.png" alt-text="Screenshot of the DAX query view cancel." lightbox="media/dax-query-view/dax-query-view-cancel.png":::
 
 #### Update model with changes
 
@@ -117,7 +117,7 @@ DAX query editor has the following elements:
 
 Type in your query and get help with suggestions and Intellisense while editing.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-intellisense.png" alt-text="Screenshot of the DAX query editor intellisense.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-intellisense.png" alt-text="Screenshot of the DAX query editor intellisense." lightbox="media/dax-query-view/dax-query-view-intellisense.png":::
 
 Use ENTER or TAB to add the highlighted intellisense, or SHIFT+ENTER or ALT+ENTER to move to another line without adding the intellisense option. Selecting ESC closes any of the overlays.
 
@@ -125,7 +125,7 @@ Use ENTER or TAB to add the highlighted intellisense, or SHIFT+ENTER or ALT+ENTE
 
 When a measure is included in the DAX query, you can hover on it to see the formula, name, and description.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-measure.png" alt-text="Screenshot of the hover to see measure formula feature.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-measure.png" alt-text="Screenshot of the hover to see measure formula feature." lightbox="media/dax-query-view/dax-query-view-measure.png":::
 
 #### Select to see measure lightbulb quick actions
 
@@ -139,7 +139,7 @@ CodeLens is the clickable text that shows above a DEFINE MEASURE block. For DAX 
 
 Alternatively, you can add or overwrite multiple measures at once by clicking the **Update model with changes** button in the **Command** bar.
 
-:::image type="content" source="media/dax-query-view/update-model-with-changes-button.png" alt-text="Screenshot of the Update model with changes button available in DAX query view.":::
+:::image type="content" source="media/dax-query-view/update-model-with-changes-button.png" alt-text="Screenshot of the Update model with changes button available in DAX query view." lightbox="media/dax-query-view/update-model-with-changes-button.png":::
 
 #### Measure update workflow
 
@@ -176,7 +176,7 @@ And "**Query (4, 23)**" indicates the error is on line 4 and at character 23.
 
 DAX query view can have multiple query tabs, which can be renamed or removed. They also show the current state of the query.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-query-tabs.png" alt-text="Screenshot of the Query tabs.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-query-tabs.png" alt-text="Screenshot of the Query tabs." lightbox="media/dax-query-view/dax-query-view-query-tabs.png":::
 
 Each tab includes a status indicator:
 
@@ -288,7 +288,7 @@ Should be GZIP/Base64 encoded to look like this to be added to the URL query par
 
 All together in a URL like this: **https://app.powerbi.com/groups/<workspace ID or GUID>/modeling/<semantic model ID or GUID>/daxQueryView?query=H4sIAGzZ0WcC%2F%2BNyDXP0CXUMceXirObi5FTySM3JyVcozy%2FKSVFU4uKs5VIAAgCqqmGfJQAAAA%3D%3D**. The URL should have the workspace ID and semantic model ID GUIDs corresponding the semantic model the query should use.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-in-web-link-sharing.png" alt-text="Screenshot of the DAX query view in web with link sharing URL.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-in-web-link-sharing.png" alt-text="Screenshot of the DAX query view in web with link sharing URL." lightbox="media/dax-query-view/dax-query-view-in-web-link-sharing.png":::
 
 Semantic link labs has a function to help you generate these link in a Fabric notebook at [https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples#generate-a-url-for-dax-query-view](https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples#generate-a-url-for-dax-query-view). 
 
