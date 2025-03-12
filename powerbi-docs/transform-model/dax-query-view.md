@@ -286,7 +286,13 @@ EVALUATE
 ```
 Should be GZIP/Base64 encoded to look like this to be added to the URL query parameter: **H4sIAGzZ0WcC%2F%2BNyDXP0CXUMceXirObi5FTySM3JyVcozy%2FKSVFU4uKs5VIAAgCqqmGfJQAAAA%3D%3D**
 
-All together in a URL like this: **https://app.powerbi.com/groups/<workspace ID or GUID>/modeling/<semantic model ID or GUID>/daxQueryView?query=H4sIAGzZ0WcC%2F%2BNyDXP0CXUMceXirObi5FTySM3JyVcozy%2FKSVFU4uKs5VIAAgCqqmGfJQAAAA%3D%3D**. The URL should have the workspace ID and semantic model ID GUIDs corresponding the semantic model the query should use.
+All together in a URL like this: 
+
+```dax
+https://app.powerbi.com/groups/<workspace ID or GUID>/modeling/<semantic model ID or GUID>/daxQueryView?query=H4sIAGzZ0WcC%2F%2BNyDXP0CXUMceXirObi5FTySM3JyVcozy%2FKSVFU4uKs5VIAAgCqqmGfJQAAAA%3D%3D
+```
+
+The URL should have the workspace ID and semantic model ID GUIDs corresponding the semantic model the query should use.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-in-web-link-sharing.png" alt-text="Screenshot of the DAX query view in web with link sharing URL." lightbox="media/dax-query-view/dax-query-view-in-web-link-sharing.png":::
 
