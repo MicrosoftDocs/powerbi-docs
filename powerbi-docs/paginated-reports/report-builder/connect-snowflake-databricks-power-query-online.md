@@ -1,7 +1,7 @@
 ---
 title: "Connect paginated reports to data sources using Power Query"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 05/22/2024
+ms.date: 03/15/2025
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -15,7 +15,7 @@ ms.reviewer: nirusrin
 
 In Power BI Report Builder, you can create paginated reports that are optimized for printing and sharing. You can connect to various data sources, such as SQL Server, Azure SQL Database, Dataverse, and more. But what if you want to connect to data sources that aren't natively supported by Power BI Report Builder, such as Snowflake, Databricks, AWS Redshift, and others? 
 
-That's where Power Query Online comes in. Power Query Online is a data transformation and mashup engine that lets you access and transform data from hundreds of sources. You can use Power Query Online to connect to these data sources from Power BI Report Builder, and create datasets that you can use in your paginated reports. This is a new feature that is currently in preview, and we are excited to share it with you.  
+That's where Power Query Online comes in. Power Query Online is a data transformation and mashup engine that lets you access and transform data from hundreds of sources. You can use Power Query Online to connect to these data sources from Power BI Report Builder, and create datasets that you can use in your paginated reports. This is a new feature that is currently in preview, and we're excited to share it with you.  
 
 ## Prerequisites 
 
@@ -106,24 +106,6 @@ If you want to define a parameter, follow these steps.
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-dataset-properties-parameter.png" alt-text="Screenshot showing parameters in dataset properties in Power BI Report Builder.":::
     
 You can now build your report and use the parameters to render the report.
-
-## How to share the report
-
-Now that you have built your paginated report and publish it to the Power BI service, you need to be able to share it. You need to also share the [shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md).
-
-Follow these steps:
-
-1. To locate the name of the shareable cloud connection:
-
-    a. Right-click the dataset and select **Edit Mashup**.
-
-    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
-
-    b. Get the shareable cloud connection information.
-   
-    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc.png" alt-text="Screenshot showing shareable cloud connection location.":::
-
-1. When you locate the name, add users who should have access by following steps to [share a shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md).  
 
 
 ## Next steps 
