@@ -36,7 +36,7 @@ In Power BI Desktop, select the **DAX Query View** icon on the left side.
 
 In the Power BI service or Fabric portal workspace, choose **Write DAX queries** from the context menu. 
 
-:::image type="content" source="media/dax-query-view/dax-query-view-in-web-link-sharing.png" alt-text="Screenshot of the Write DAX queries entry point in the context menu of a semantic model.":::
+:::image type="content" source="media/dax-query-view/write-dax-queries-in-web-from-context-menu.png" alt-text="Screenshot of the Write DAX queries entry point in the context menu of a semantic model.":::
 
 In the Power BI service or Fabric portal semantic model details page, select **Write DAX queries** from the top of the page.
 
