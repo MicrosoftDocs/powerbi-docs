@@ -13,11 +13,11 @@ LocalizationGroup: Create reports
 
 # Work with DAX query view
 
-With DAX query view in Power BI, you can view and work with Data Analysis Expressions (DAX) queries in semantic models. 
+With DAX query view in Power BI, you can view and work with Data Analysis Expressions (DAX) queries on semantic models. 
 
 ## DAX queries
 
-In Power BI, DAX *formulas* are used to define different types of calculations for your data, but can also be used to define role security. DAX *queries*, on the other hand, can be used to return data from the model.
+In Power BI, DAX *formulas* are used to define different types of calculations for your data, and can also be used to define role security. DAX *queries*, on the other hand, can be used to return data from the model.
 
 DAX queries are similar to SQL queries in that they can show you data you already have. DAX queries don't create items in the model or visuals in the report.
 
@@ -36,7 +36,11 @@ In Power BI Desktop, select the **DAX Query View** icon on the left side.
 
 In the Power BI service or Fabric portal workspace, choose **Write DAX queries** from the context menu. 
 
+:::image type="content" source="media/dax-query-view/dax-query-view-in-web-link-sharing.png" alt-text="Screenshot of the Write DAX queries entry point in the context menu of a semantic model.":::
+
 In the Power BI service or Fabric portal semantic model details page, select **Write DAX queries** from the top of the page.
+
+:::image type="content" source="media/dax-query-view/write-dax-queries-in-web-from-details-page.png" alt-text="Screenshot of the Write DAX queries entry point in the details page of semantic model.":::
 
 ## DAX query view layout
 
@@ -134,6 +138,8 @@ Using **DEFINE MEASURE** is helpful when creating measures by first allowing you
 CodeLens is the clickable text that shows above a DEFINE MEASURE block. For DAX query scoped measures that are not already present in the model, the **Update model: Add new measure** CodeLens appears, which will add the model measure when clicked. For DAX query scoped measures that are already present in the model, and when the DAX scoped measure DAX formula is different, the **Update model: Overwrite measure** CodeLens appears, which will change the model measure to this DAX formula when clicked.
 
 Alternatively, you can add or overwrite multiple measures at once by clicking the **Update model with changes** button in the **Command** bar.
+
+:::image type="content" source="media/dax-query-view/update-model-with-changes-button.png" alt-text="Screenshot of the Update model with changes button available in DAX query view.":::
 
 #### Measure update workflow
 
@@ -268,6 +274,24 @@ When live connected to a published Power BI semantic model, you can create repor
 - **DAX queries are discarded on close.** DAX queries in Power BI Desktop are saved to the model and a semantic model may have DAX queries already saved in the model. DAX query view in the web currently will not display any previously saved DAX queries that may exist in the semantic model, and queries created in the web are not kept after you close the browser.
 - **Write DAX queries requires write permission on the semantic model.** Workspace viewers have to use Power BI Desktop with live connection to the semantic model to write DAX queries.
 
+### Link sharing of a query
+A DAX query can be added as a parameter in the URL linking to DAX query view in web using ?query= after the URL. The query text must be encoded in the URL. First, the query text is compressed by using GZIP format. Second, the compressed query text is Base64 encoded to be used in the URL. This ensures DAX queries can be added to the URL without taking up too much of the URL and in a format compatible with being added to a URL.
+The query:
+
+```dax
+EVALUATE
+    {
+        "Hello world!"
+    }
+```
+Should be GZIP/Base64 encoded to look like this to be added to the URL query parameter: **H4sIAGzZ0WcC%2F%2BNyDXP0CXUMceXirObi5FTySM3JyVcozy%2FKSVFU4uKs5VIAAgCqqmGfJQAAAA%3D%3D**
+
+All together in a URL like this: **https://app.powerbi.com/groups/<workspace id or GUID>/modeling/<semantic model id or GUID>/daxQueryView?query=H4sIAGzZ0WcC%2F%2BNyDXP0CXUMceXirObi5FTySM3JyVcozy%2FKSVFU4uKs5VIAAgCqqmGfJQAAAA%3D%3D**. The URL should have the workspace id and semantic model id GUIDs corresponding the semantic model the query should use.
+
+:::image type="content" source="media/dax-query-view/dax-query-view-in-web-link-sharing.png" alt-text="Screenshot of the DAX query view in web with link sharing URL.":::
+
+Semantic link labs has a function to help you generate these link in a Fabric notebook at [https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples#generate-a-url-for-dax-query-view](https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples#generate-a-url-for-dax-query-view). 
+
 ## Considerations and limitations
 
 Considerations to keep in mind:
@@ -275,7 +299,7 @@ Considerations to keep in mind:
 - 500+ lines in DAX query editor has noticeable lag when typing.
 - Lightbulb quick actions for measures only displays when no DEFINE statement is in the query tab.
 - Command palette shows some commands that do not yet work.
-- Result grid doesn't yet show columns and measures with specified format, such as Currency, Whole number with thousands, etc.
+- Result grid won't show columns and measures with specified format, such as Currency, Whole number with thousands, etc.
 - *Download this file* from Power BI service will not include the DAX queries saved in published semantic model.
 - Setting up the *initial* Git integration *from* the workspace will not include DAX queries saved in published semantic model. Learn more at [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
 
