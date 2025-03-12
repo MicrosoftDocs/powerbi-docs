@@ -144,7 +144,7 @@ The semantic model settings page only shows the **OneDrive Credentials** and **O
 
 ![OneDrive Credentials and OneDrive refresh](media/refresh-data/onedrive-credentials-refresh.png)
 
-The semantic model settings page also displays a link to the One Drive folder where the underlying PBIX file is hosted in the **OneDrive refresh** section.
+The semantic model settings page also displays a link to the OneDrive or SharePoint folder where the underlying PBIX file is hosted in the **OneDrive refresh** section.
 
 ![OneDrive Source URI](media/refresh-data/one-drive-share-point-source-uri.png)
 
@@ -156,7 +156,7 @@ Keep in mind that OneDrive refresh doesn't pull data from the original data sour
 
 If you keep OneDrive refresh enabled for a OneDrive or SharePoint Online-connected semantic model and you want to perform data refresh on a scheduled basis, make sure you configure the schedule so that Power BI performs the data refresh after the OneDrive refresh. For example, if you created your own service or process to update the source file in OneDrive or SharePoint Online every night at 1:00 AM, you could configure scheduled refresh for 2:30 AM to give Power BI enough time to complete the OneDrive refresh before starting the data refresh.
 
-For live connection reports, there is also a **OneDrive refresh** section within the live connection report settings pane. This section displays a link to the One Drive folder where the underlying PBIX file is hosted in the **OneDrive refresh** section, a toggle to enable or disable refresh as well as a way to view OneDrive refresh history.
+For live connection reports, there is also a **OneDrive refresh** section within the live connection report settings pane. This section displays a link to the OneDrive or SharePoint folder where the underlying PBIX file is hosted in the **OneDrive refresh** section, a toggle to enable or disable refresh as well as a way to view OneDrive refresh history.
 
 ![Live Connection Report Settings History](media/refresh-data/live-connection-report-onedrive-refresh-settings.png)
 
