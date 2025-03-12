@@ -154,7 +154,7 @@ If you keep OneDrive refresh enabled for a OneDrive or SharePoint Online-connect
 
 For live connection reports, there is also a **OneDrive refresh** section within the live connection report settings pane. This section displays a link to the OneDrive or SharePoint folder where the underlying PBIX file is hosted in the **OneDrive refresh** section, a toggle to enable or disable refresh as well as a way to view OneDrive refresh history.
 
-![Live Connection Report Settings History](media/refresh-data/live-connection-report-onedrive-refresh-settings.png)
+![Screenshot of Live Connection Report Settings showing OneDrive refresh section](media/refresh-data/live-connection-report-onedrive-refresh-settings.png)
 
 #### Refresh of query caches
 
