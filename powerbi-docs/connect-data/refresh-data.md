@@ -140,13 +140,9 @@ To review past synchronization cycles, check the OneDrive tab in the refresh his
 
 As the above screenshot shows, Power BI identified this OneDrive refresh as a **Scheduled** refresh, but it isn't possible to configure the refresh interval. You can only deactivate OneDrive refresh in the semantic model's settings. Deactivating refresh is useful if you don't want your semantic models and reports in Power BI to pick up any changes from the source files automatically.
 
-The semantic model settings page only shows the **OneDrive Credentials** and **OneDrive refresh** sections if the semantic model is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Semantic models that aren't connected to source files in OneDrive or SharePoint Online don't show these sections.
+The semantic model settings page only shows the **OneDrive refresh** section if the semantic model is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Semantic models that aren't connected to source files in OneDrive or SharePoint will not show this section. This section displays a link to the OneDrive or SharePoint folder where the underlying PBIX file is hosted and a toggle to enable or disable refresh.
 
-![OneDrive Credentials and OneDrive refresh](media/refresh-data/onedrive-credentials-refresh.png)
-
-The semantic model settings page also displays a link to the OneDrive or SharePoint folder where the underlying PBIX file is hosted in the **OneDrive refresh** section.
-
-![OneDrive Source URI](media/refresh-data/one-drive-share-point-source-uri.png)
+![Screenshot of Semantic Model settings showing the OneDrive Refresh section open.](media/refresh-data/onedrive-refresh-section-semantic-model-settings.png)
 
 If you disable OneDrive refresh for a semantic model, you can still synchronize your semantic model on demand by selecting **Refresh now** in the semantic model menu. As part of the on-demand refresh, Power BI checks if the source file on OneDrive or SharePoint Online is newer than the semantic model in Power BI and synchronizes the semantic model if it is. The **Refresh history** lists these activities as on-demand refreshes on the **OneDrive** tab.
 
