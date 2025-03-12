@@ -164,6 +164,7 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 - The column name and order in a Power BI visual may not be preserved when data is exported to Excel from that visual.
 - If the 'User Datasets Across Workspaces' tenant admin switch is off, users need to use **Write** permissions to use the semantic model. Learn more about [using semantic models across workspaces](/power-bi/connect-data/service-datasets-admin-across-workspaces).
 - If you're facing issues with exporting a summarized data card with live connection, please uncheck the "Show items with no data" option and try exporting again.
+- If a measure is included in a visual in the form of a format string (e.g. custom number of decimal places), this will not be visible on the visual but will be included in the Query Table (Connected Table) in Excel as part of the Export Data with Live Connection.
 
 ## Related content
 
