@@ -60,13 +60,13 @@ Let's take a closer look at elements in the ribbon:
 
 #### Format query
 
-Select the **Format query** ribbon button or use SHIFT+ALT+F to format the current query. The query is indented with tabs. DAX functions are changed to UPPERCASE, and additional lines are added. Formatting your DAX query is considered a best practice and improves the DAX query readability. The formatting also indents in such a way that you can collapse and expand sections of the query.
+Select the **Format query** ribbon button or use SHIFT+ALT+F to format the current query. The query is indented with tabs. DAX functions are changed to UPPERCASE, and extra lines are added. Formatting your DAX query is considered a best practice and improves the DAX query readability. The formatting also indents in such a way that you can collapse and expand sections of the query.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-format-query.png" alt-text="Screenshot of the Format query button.":::
 
 #### Comment and Uncomment
 
-Select the **Comment** ribbon button to add a double backslash (**//**) to the beginning of the line where the cursor is or all the selected lines. This comments out the lines and when the DAX query is run, those lines are ignored.
+Select the **Comment** ribbon button to add a double backslash (**//**) to the beginning of the line where the cursor is or all the selected lines. This action comments out the lines and when the DAX query is run, those lines are ignored.
 
 Select the **Uncomment** ribbon button to remove **//** at the beginning of any line where the cursor is, or all the selected lines. It doesn't work on lines where multiple line comment notation is added.
 
@@ -86,7 +86,7 @@ Select the **Replace** button in the ribbon or use CTRL+H to search for and repl
 
 #### Command palette
 
-Select the **Command palette** ribbon button or use CTRL+ALT+P to open the command palette box. You can search for additional DAX query editor actions and see their associated keyboard shortcuts.
+Select the **Command palette** ribbon button or use CTRL+ALT+P to open the command palette box. You can search for more DAX query editor actions and see their associated keyboard shortcuts.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-command-palette.png" alt-text="Screenshot of the DAX query view command palette.":::
 
@@ -105,7 +105,7 @@ When a query is running, the button becomes a **Cancel** button, which can be us
 
 #### Update model with changes
 
-The **Update model with changes** button will add or overwrite model measures with the DAX formulas from the DAX query scoped measures. DAX query scoped measures are those in the **DEFINE MEASURE** block. Alternatively, you can choose to add or overwrite model measures individually using the CodeLens text that appears above each one.
+The **Update model with changes** button adds or overwrites model measures with the DAX formulas from the DAX query scoped measures. DAX query scoped measures are DAX formulas in the **DEFINE MEASURE** block. Alternatively, you can choose to add or overwrite model measures individually using the CodeLens text that appears above each one.
 
 ### DAX query editor
 
@@ -133,9 +133,9 @@ Selecting on a measure in an EVALUATE statement in a query without a DEFINE stat
 
 #### Update model measures using CodeLens  
 
-Using **DEFINE MEASURE** is helpful when creating measures by first allowing you to create them as DAX query scoped measures. You can edit multiple measures in one window and then run the query to see the results of all or just some of them with specific group by columns. You don't need to create a table visual in Report view and switch back and forth between measure formulas. CodeLens takes this one step further by providing prompts when the measure already exists in the model, or if it doesn't, it can add it.
+Using **DEFINE MEASURE** is helpful when creating measures by first allowing you to create them as DAX query scoped measures. You can edit multiple measures in one window and then run the query to see the results of all or just some of them with specific group by columns. You don't need to create a table visual in Report view and switch back and forth between measure formulas. CodeLens takes this one step further by providing prompts when the measure already exists in the model. These offer quick links to add the measure or overwrite the measure in the model.
 
-CodeLens is the clickable text that shows above a DEFINE MEASURE block. For DAX query scoped measures that are not already present in the model, the **Update model: Add new measure** CodeLens appears, which will add the model measure when clicked. For DAX query scoped measures that are already present in the model, and when the DAX scoped measure DAX formula is different, the **Update model: Overwrite measure** CodeLens appears, which will change the model measure to this DAX formula when clicked.
+CodeLens is the clickable text that shows above a DEFINE MEASURE block. For DAX query scoped measures that are not already present in the model, the **Update model: Add new measure** CodeLens appears, which adds the model measure when clicked. For DAX query scoped measures that are already present in the model, and when the DAX scoped measure DAX formula is different, the **Update model: Overwrite measure** CodeLens appears, which will change the model measure to this DAX formula when clicked.
 
 Alternatively, you can add or overwrite multiple measures at once by clicking the **Update model with changes** button in the **Command** bar.
 
@@ -160,7 +160,7 @@ When a query is run, the results are shown in the **Results** grid.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-results-grid.png" alt-text="Screenshot of the results grid." lightbox="media/dax-query-view/dax-query-view-results-grid.png":::
 
-If there's more than one EVALUATE statement in the query editor, then multiple results can be returned. You can use the **Result** dropdown to switch between them. The **Copy** button copies the entire grid as a tab delimited table with headers. The grid can be resized using the upper right hand corner arrows or manually with the cursor on the border between the result grid and the query editor.
+If there's more than one EVALUATE statement in the query editor, then multiple results can be returned. You can use the **Result** dropdown to switch between them. The **Copy** button copies the entire grid as a tab delimited table with headers. Resize the grid by dragging the upper right hand corner arrows or the border between the result grid and the query editor.
 
 If the query results in an error, the results grid shows it.
 
@@ -271,7 +271,7 @@ When live connected to a published Power BI semantic model, you can create repor
 **Write DAX queries** from published semantic models use DAX query view in the web. DAX query view in the web is the same experience in Power BI Desktop, with a couple of exceptions.
 
 - **User can edit data models in the Power BI service (preview)** Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models).
-- **DAX queries are discarded on close.** DAX queries in Power BI Desktop are saved to the model and a semantic model may have DAX queries already saved in the model. DAX query view in the web currently will not display any previously saved DAX queries that may exist in the semantic model, and queries created in the web are not kept after you close the browser.
+- **DAX queries are discarded on close.** DAX queries in Power BI Desktop save to the model and a semantic model may have DAX queries already saved in the model. DAX query view in the web currently will not display any previously saved DAX queries that may exist in the semantic model, and queries created in the web are not kept after you close the browser.
 - **Write DAX queries requires write permission on the semantic model.** Workspace viewers have to use Power BI Desktop with live connection to the semantic model to write DAX queries.
 
 ### Link sharing of a query
