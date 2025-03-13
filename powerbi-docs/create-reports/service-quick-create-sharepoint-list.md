@@ -81,6 +81,7 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 - Within SharePoint libraries, this option will only show on the root of the document library.
 - The reports and semantic models created through this SharePoint experience are stored in special, system-generated workspaces hosted in shared capacity. Users aren't meant to access these workspaces outside of the SharePoint experience.
 - If a user enables a terms of use acceptance flow in SharePoint, they will not be able to create a report from a SharePoint list due to issues with user authentication.
+- The use of data gateways in currently unsupported for this feature. 
 
 ## Troubleshooting
 
