@@ -136,8 +136,8 @@ There are several different ways in which users can engage with semantic models 
 
 These various scenarios create a number of considerations that you must keep in mind for your semantic models, such as:
 - Which permissions you'll grant to users, and how you'll manage these permissions. We recommend that users complete a training before getting [build permissions](../connect-data/service-datasets-build-permissions.md).
-- Whether you'll add [perspectives](/analysis-services/tabular-models/perspectives-ssas-tabular?view=asallproducts-allversions) to your model, or not. You can only add perspectives by using the [TMDL view in Power BI Desktop](../transform-model/desktop-tmdl-view.md), or by using other, third-party tools. We recommend that you add perspectives when users will use personalize visuals or composite models.
-- Which fields you should hide in your model, and whether you need to enable the _[IsPrivate](/dotnet/api/microsoft.analysisservices.tabular.table.isprivate?view=analysisservices-dotnet)_ TOM property of tables to avoid that they or their child objects appear as suggestions. Note that the _Private_ TOM property can only be set by using external tools on a model metadata file (like .bim or .tmdl) or a remote model that is published in the Power BI service.
+- Whether you'll add [perspectives](/analysis-services/tabular-models/perspectives-ssas-tabular?view=asallproducts-allversions&preserve-view=true) to your model, or not. You can only add perspectives by using the [TMDL view in Power BI Desktop](../transform-model/desktop-tmdl-view.md), or by using other, third-party tools. We recommend that you add perspectives when users will use personalize visuals or composite models.
+- Which fields you should hide in your model, and whether you need to enable the _[IsPrivate](/dotnet/api/microsoft.analysisservices.tabular.table.isprivate?view=analysisservices-dotnet&preserve-view=true)_ TOM property of tables to avoid that they or their child objects appear as suggestions. Note that the _Private_ TOM property can only be set by using external tools on a model metadata file (like .bim or .tmdl) or a remote model that is published in the Power BI service.
 - How you'll document your model, and what that documentation should entail. We recommend that you make documentation tailored to specific use-cases and that you include relevant and useful information, and not exports of model metadata like DAX measure expressions, which are generally not useful for end-users.
 - How you'll advise users to choose one approach over another.
 
@@ -150,8 +150,8 @@ If users have build permissions to a model, then they can also [connect to a sem
 
 When users will use analyze in Excel to query your semantic model, you might need to consider things like the following: 
 - Certain features like [field parameters](../create-reports/power-bi-field-parameters.md) or [measure dynamic format strings](../create-reports/desktop-dynamic-format-strings.md) only work in Power BI, and not in Excel. To achieve a similar result, you need to use other approaches.
-- Analyze in Excel requires that the column property _[IsAvailableinMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx.md?view=analysisservices-dotnet)_ is enabled. If users won't use Excel, then disabling this property might result in smaller and more performant models.
-- Users can't view [hidden columns or measures](/analysis-services/tabular-models/hide-or-freeze-columns-ssas-tabular.md?view=asallproducts-allversions) in the semantic model, like they can from Power BI Desktop (by right-clicking the data pane, and selecting "view hidden").
+- Analyze in Excel requires that the column property _[IsAvailableinMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx.md?view=analysisservices-dotnet&preserve-view=true)_ is enabled. If users won't use Excel, then disabling this property might result in smaller and more performant models.
+- Users can't view [hidden columns or measures](/analysis-services/tabular-models/hide-or-freeze-columns-ssas-tabular.md?view=asallproducts-allversions&preserve-view=true) in the semantic model, like they can from Power BI Desktop (by right-clicking the data pane, and selecting "view hidden").
 - Users can't create their own measures or [visual calculations](../transform-model/desktop-visual-calculations-overview.md) in Excel, like they can when using a live connection from Power BI Desktop. However, they can reference the pivot table fields in other Excel cells and worksheets for custom calculations.
 - Users of analyze in Excel often require additional training about how to use it. This is particularly true if they expect an export-like experience or they express an intent to save offline copies of the data. Consider training users about things such as:
   - How to refresh the data.
@@ -179,7 +179,7 @@ You also need to spend additional effort training users:
 
 > [! TIP]
 > See the following articles for additional, detailed tips and considerations about optimizing models to work well with Copilot:
-> - [Optimization for report authors and model consumers](../guidance/power-bi-optimization#optimizing-for-report-authors-and-model-consumers.md)
+> - [Optimization for report authors and model consumers](../guidance/power-bi-optimization.md#optimizing-for-report-authors-and-model-consumers)
 > - [Update your data model to work well with Copilot for Power BI](../create-reports/copilot-evaluate-data.md)
 > - [Write DAX queries with Copilot](/dax/dax-copilot.md)
 
