@@ -14,10 +14,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-With *dynamic format strings for measures*, you can determine how measures appear in visuals by conditionally applying a format string with a separate DAX expression.
-
-> [!NOTE]
-> Dynamic format strings for measures is currently in Preview. When in Preview, functionality and documentation are likely to change.
+With *dynamic format strings for measures*, you can determine how measures appear in visuals by conditionally applying a format string with a separate DAX formula.
 
 Dynamic format strings overcome an inherent disadvantage of using the FORMAT function. That is, with FORMAT even numeric data types are returned as a string, which may not work with visuals that require numeric values, like charts.
 When using dynamic format strings, the measure keeps its data type and isn't forced to change to a string data type. This applies different format strings to the measure depending on the context.
@@ -314,15 +311,13 @@ Selecting different **Country** names in the slicer shows the Converted Sales Am
 
 ## Known issues and considerations
 
-During Preview, the following issues and limitations are being addressed:
-
 - Visuals have formatting options that may impact how the format string is displayed. If the formatting is showing unexpectedly in a visual, go to the visual Format options, search for **Display units** and change it from **Auto** to **None**.
 
     :::image type="content" source="media/desktop-dynamic-format-strings/display-units.png" alt-text="Screenshot of Display units from auto to none.":::
 
 - The measure itself can be referenced directly in its dynamic format string by using its name, like [Measure A], or indirectly by using `SELECTEDMEASURE()`.
 - Dynamic format strings for measures are only for model measures. *Report measures* that can be added to a live connect report can't have dynamic format strings for measures.
-- With DirectQuery for Analysis Services, when you click **Make changes to this model** on a live connect report, it shifts the connection to the DirectQuery over Analysis Services. In general, you can make changes to the format strings of the remote model measures. During **Preview**:
+- With DirectQuery for Analysis Services, when you click **Make changes to this model** on a live connect report, it shifts the connection to the DirectQuery over Analysis Services. In general, you can make changes to the format strings of the remote model measures. With dynamic format strings for measures:
     - Remote model measures with dynamic format strings defined are blocked from making format string changes to a static format string or to a different dynamic format string DAX expression.
     - Remote model measures can't be changed from a static format string to a dynamic format string DAX expression defined in the local model.
     - Local model measures are blocked from using dynamic format strings for measures.
