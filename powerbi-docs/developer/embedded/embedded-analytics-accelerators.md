@@ -47,29 +47,33 @@ The following diagram illustrates the main modules of an accelerator and how the
 
 Different accelerators provide different frontend and backend capabilities including the following options:
 
-### Frontend capabilities
+### Capabilities available with all accelerators
 
-* Navigation menu for categories and items of Power BI​
+The following capabilities are available with all accelerators:
 
-* Action bar above the Power BI iFrame to control the UX and invoke functionality  ​
+* Seamless data isolation per application tenant and data and item permission per user
 
-  * End user bookmark management & visual personalization​
+* Navigation menu for categories and items of Power BI
 
-  * Export report to file printouts (PDF, PPTX, PNG, and more for Paginated reports)​
+* Action bar outside of Power BI iFrame to control the UX and invoke functionality (including to toggle between view and edit modes)
 
-  * UX pane control and report edit/view toggle​
+* Personal end user bookmark management & visual personalization
 
-  * Report subscriptions and scheduling of printouts​
+* Export report to file printouts (PDF, PPTX, PNG, and more for Paginated reports)
 
-* Seamless multitenancy and user permissions support​
+### Accelerator specific capabilities
 
-  * Show each tenant user only their own data even when using the same report across the tenant
+In addition, the following capabilities are avalaible with certain solutions:
 
-  * Show the user only the items and data they have access to
+* Self-service report subscription to schedule and deliver report printouts
 
-  * Allow switching to edit mode based on user permissions (access level on report) ​
+* Multi-language support for web frontend (outside of the iFrame)
 
-* Multi-language support for web frontend
+* Tenant white-labeling 
+
+* Edit option for semantic model
+
+* Unrestricted data download 
 
 To see which partner's solution contains which options, see the [comparison tables](#comparison-of-accelerators-from-our-partners).
 
@@ -141,11 +145,11 @@ The following tables compare features of the different accelerators from our par
 
 ### Added capabilities
 
-| Partner                                  | Personal​<br>bookmarks | Report​<br>Printout | Control​<br> UX options | Navigation​<br>Menu | Multi-tenancy​ | Tenant specific​<br>authN &​<br>white-labeling​ | Power BI item​<br>publishing | Report subs.​<br>scheduling & ​<br>distribution​ | Tenant billing​<br>& payment​<br>processing​ | Multi-language​<br>portal support​ |
-|----------------------------------------------|:-------------------------------:|:-----------------------------:|:--------------------------------:|:-----------------:|:----------------:|:----------------------------:|:--------------------:|:-----------------------------:|:--------------------------:|:-------------------------:|
-| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/)​ | ✔                                         | ✔                                     | ✔                                          | ✔                 | ✔                | ✔                                        | ​                             | ✔​                                         | ✔​                                     | ✔                               |
-| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)​            | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 |✔​                 | ​                                          |✔​                            | ✔​                                         | ​                                       | ​                                   |
-| **iLink Digital​** <br> [EmbeDash](https://embedash.com/)                                   | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 | ✔                 | ​                                         | ✔                           | ​                                           | ​                                        | ​                                  |
+| Partner                                  | Tenant specific​<br>authentication​ | Tenant specific​<br>white labeling | Power BI item​<br>publishing | Report subs.​<br>scheduling & ​<br>distribution​ | Tenant billing​<br>& payment​<br>processing​ | Multi-language​<br>portal support​ | Edit semantic model | Unrestricted​<br>data download |
+|----------------------------------------------|:----------------------------:|:----------------------------:|:--------------------:|:-----------------------------:|:--------------------------:|:-------------------------:|:-------------------:|:--------------------------:|
+| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/)​ | ✔   | ✔   | ​       | ✔​    | ✔​    | ✔    |   |   |
+| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)​        | ​     | ​     | ✔​     | ✔​   | ​      | ​      |   |   |
+| **iLink Digital​** <br> [EmbeDash](https://embedash.com/)                   | ​     | ​     | ✔     | ​     | ​      | ​     |   |   |
 
 ## Related content
 
