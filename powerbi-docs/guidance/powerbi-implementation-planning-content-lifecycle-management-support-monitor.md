@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 12/30/2024
+ms.date: 03/13/2024
 ---
 
 # Power BI implementation planning: Support and monitor content
@@ -81,6 +81,7 @@ Consider the following points when supporting consumers who only need to view co
   - Resolving data discrepancies.
 - **How to use the solution**: What sort of assistance is available to help consumers use and fully understand the solution? An overview page within the report or a short video tutorial can be helpful for users (for example, it could show how to [drillthrough](../create-reports/desktop-drillthrough.md) to another report). Providing that type of help can lead to increased adoption of the solution, greater return on investment, and fewer support cases.
 - **How to accept feedback**: When the consumer has a new request or enhancement, how should they submit their request? A feedback loop (such as a form) allows you to accept ideas for improving the solution. Feedback loops are often considered alongside support planning because it's a closely related concept.
+- **How to use data**: How can users leverage tools and features like personalize visuals, Copilot, or explorations to explore data from read-only experiences? When should they request build permissions if they need to make their own content, and how should they make this request? What training is available to support people in these features, or to transition from read-only consumers to individuals who might build and share their own content?
 
 > [!NOTE]
 > Expect that once a solution is deployed to production, you'll receive different types and volumes of feedback compared to that which you received during validation. Anticipate that there will be higher volumes of requests and feedback during this _hypercare_ period (the period immediately after a major change). Plan accordingly for this higher volume, and try to see it as an opportunity to build trust with the user community.
@@ -103,6 +104,8 @@ Consider the following points when supporting both [data creators](powerbi-imple
 - **How to update data connectivity**: If an author needs access to a gateway or a connection, what's the procedure they should follow to request updates (if they don't have [permissions](/data-integration/gateway/manage-security-roles))? Common situations include:
   - [Adding a new data source connection](../connect-data/service-gateway-data-sources.md)
   - [Adding a new user for a data source connection](/data-integration/gateway/manage-security-roles#connection-roles)
+- **How to use AI and improve productivity**: What should an author do to ensure that they remain effective and efficient? How should they best use Copilot and other assistive AI tools to augment their work without creating risk or wasting time?
+  - [Updating a data model to work well with Copilot](../create-reports/copilot-evaluate-data.md)
 
 > [!TIP]
 > Be prepared to address the most urgent support issues quickly to allow users to continue being productive. When they're blocked, a user might find a workaround (which might not be ideal) to keep moving, especially when there's a slow response from their support channel.
