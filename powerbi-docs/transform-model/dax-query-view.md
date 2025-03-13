@@ -36,11 +36,11 @@ In Power BI Desktop, select the **DAX Query View** icon on the left side.
 
 In the Power BI service or Fabric portal workspace, choose **Write DAX queries** from the context menu. 
 
-:::image type="content" source="media/dax-query-view/write-dax-queries-in-web-from-context-menu.png" alt-text="Screenshot of the Write DAX queries entry point in the context menu of a semantic model." lightbox="media/dax-query-view/write-dax-queries-in-web-from-context-menu.png":::
+:::image type="content" source="media/dax-query-view/write-dax-queries-web-from-context-menu.png" alt-text="Screenshot of the Write DAX queries entry point in the context menu of a semantic model." lightbox="media/dax-query-view/write-dax-queries-web-from-context-menu.png":::
 
 In the Power BI service or Fabric portal semantic model details page, select **Write DAX queries** from the top of the page.
 
-:::image type="content" source="media/dax-query-view/write-dax-queries-in-web-from-details-page.png" alt-text="Screenshot of the Write DAX queries entry point in the details page of semantic model." lightbox="media/dax-query-view/write-dax-queries-in-web-from-details-page.png":::
+:::image type="content" source="media/dax-query-view/write-dax-queries-web-from-details-page.png" alt-text="Screenshot of the Write DAX queries entry point in the details page of semantic model." lightbox="media/dax-query-view/write-dax-queries-web-from-details-page.png":::
 
 ## DAX query view layout
 
@@ -294,7 +294,7 @@ https://app.powerbi.com/groups/<workspace ID or GUID>/modeling/<semantic model I
 
 The URL should have the workspace ID and semantic model ID GUIDs corresponding the semantic model the query should use.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-in-web-link-sharing.png" alt-text="Screenshot of the DAX query view in web with link sharing URL." lightbox="media/dax-query-view/dax-query-view-in-web-link-sharing.png":::
+:::image type="content" source="media/dax-query-view/dax-query-view-web-link-sharing.png" alt-text="Screenshot of the DAX query view in web with link sharing URL." lightbox="media/dax-query-view/dax-query-view-web-link-sharing.png":::
 
 Semantic link labs has a function to help you generate these link in a Fabric notebook at [https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples#generate-a-url-for-dax-query-view](https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples#generate-a-url-for-dax-query-view). 
 
