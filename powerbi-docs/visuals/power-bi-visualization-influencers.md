@@ -273,7 +273,7 @@ The key influencers visual has some limitations:
 - Publish to web isn't supported
 - .NET Framework 4.6 or higher is required
 - SharePoint Online embedding isn't supported
-- Analyze a metric that is categorical is not supported if 'Discourage Implicit Measures' is set 'true' for the data model (e.g. when calculation groups are defined in the datamodel)
+- Analyze a metric that is categorical is not supported if *Discourage Implicit Measures* is set to **true** for the data model (for example, when calculation groups are defined in the data model)
 
 :::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png" alt-text="Screenshot of drop-down choices for numeric question":::
 
