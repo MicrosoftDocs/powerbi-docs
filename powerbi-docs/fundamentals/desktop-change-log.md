@@ -7,7 +7,7 @@ ms.reviewer: kfollis, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/11/2025
+ms.date: 03/13/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,15 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## February 2025 QFE 4 
+
+*Version 2.140.1476.0, Released: March 11, 2025*
+
+Bug fixes/improvements:
+
+* Addressed issues with the copy cell functionality in data grid, ensuring proper asynchronous handling and accurate cell value retrieval.
 
 
 ## February 2025 QFE 3
