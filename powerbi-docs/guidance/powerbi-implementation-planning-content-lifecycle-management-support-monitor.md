@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 03/13/2024
+ms.date: 03/13/2025
 ---
 
 # Power BI implementation planning: Support and monitor content
