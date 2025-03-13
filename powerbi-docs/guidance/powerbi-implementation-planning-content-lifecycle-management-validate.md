@@ -168,6 +168,15 @@ There are different ways that you can conduct a peer review.
 
 Once you complete a peer review cycle, you should document and incorporate any recommended changes. If necessary, you should resubmit the changes for approval before moving on to user testing. Typically, multiple iterations of peer review are only needed when there are many changes or a few complex changes to test.
 
+### Manually test Copilot and AI skills outputs
+
+You can use Copilot or AI skills to allow users to ask questions about your data model by using natural language. However, using these tools leverage generative AI, and might return low-quality or inaccurate outputs. It is always important to evaluate these outputs before you use them. 
+
+To test Copilot and AI skills outputs, you can:
+- Ask simple questions testing known benchmarks, such as the total sales in a previous month, or the total number of customers or products.
+- Compare outputs to results obtained from reports or _ad hoc_ analyses.
+- Compare outputs before and after [making changes to a semantic model](../create-reports/copilot-evaluate-data.md).
+
 ### Automate testing
 
 Content creators can automate testing so that tests are performed automatically prior to deployment. Automated tests typically involve preprepared test conditions that are run and orchestrated programmatically in response to certain actions, like saving content or submitting a pull request (PR). The results of automated tests are automatically stored for later reference and documentation.
