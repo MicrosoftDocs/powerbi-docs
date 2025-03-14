@@ -24,6 +24,9 @@ This problem happens in one of the following scenarios:
 
 To resolve this situation, follow the steps in this article.
 
+> [!NOTE]
+> Custom visuals only work with Power BI Report Server versions released after May 2021. Rendering issues encountered with custom visuals in prior versions can be resolved by upgrading the report server to the latest build. Find more details on how to upgrade a Power BI Report Server [here](/power-bi/report-server/upgrade).
+> 
 ## Why this problem happens
 
 When you import the local copy of the visual, Power BI Desktop for Power BI Report Server tries to connect to the internet and load the updated visual. Specifically, Power BI Desktop for Power BI Report Server needs to connect to `https://pbivisuals.powerbi.com:443` to get the latest copy of the visual. But it fails with the following error:
