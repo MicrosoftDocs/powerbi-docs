@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 03/14/2024
+ms.date: 03/13/2025
 ms.custom: intro-overview
 ---
 
@@ -28,9 +28,23 @@ For more advanced solutions that give your users more flexibility and control, u
 
 ## What are the Power BI embedded analytics solutions?
 
-Power BI embedded analytics gives you additional benefits over secure embed. It offers a rich, fully integrated experience with full API support, automatic authentication, and the reports can be hosted in apps as well as web pages. Embedded analytics allows you to automate the monitoring, management, and deployment of analytics, while getting full control of Power BI features and intelligent analytics.
+With Power BI embedded analytics you can integrate analytical and business intelligence (BI) capabilities *directly within applications* . This allows end users to explore, analyze, and visualize data on their own and enables faster and more intuitive decision-making without having to switch to separate BI tools outside of the applications.​
 
-Power BI Embedded has basically the [same features as Power BI Premium](../../enterprise/service-premium-features.md).
+Key Features of Self-Service Embedded Analytics:​
+
+* **User self-sufficiency** - can generate reports and analyze data without fully relying on IT/dev/data analysts​
+
+  * User-Friendly Interface - designed for nontechnical users, interactive dashboards, and intuitive reporting tools​
+
+  * Customization & Personalization - users can modify or create custom reports based on their needs​
+
+* Integration within applications - such as CRM, ERP, or custom applications and accommodating scenarios such as:​
+
+  * Near Real-Time Data Access - for up-to-date insights from the application’s data and multiple other sources of data​
+
+  * Enabling actionable insights – user can drive action within the application based on data selected from the reports​
+
+* Advanced Analytics Features - including AI-driven insights, predictive analytics, and automated data discovery.
 
 Power BI embedded analytics offers two solutions:
 
@@ -67,9 +81,9 @@ A capacity is a set of resources reserved for exclusive use. It enables you to p
 For development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, you must use a capacity.
 
 > [!IMPORTANT]
-> Free trial tokens are limited to development testing only. Once going to production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
+> Free trial tokens are limited to development testing only. For production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner continues to appear at the top of the embedded report.
 
-There are two types of Power BI embedded analytics offerings as well as an offering from Microsoft Fabric. Each offer includes a different type of SKU that you use to buy a Power BI [capacity](./embedded-capacity.md):
+There are two types of Power BI embedded analytics offerings and an offering from Microsoft Fabric. Each offer includes a different type of SKU that you use to buy a Power BI [capacity](./embedded-capacity.md):
 
 * [Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an Azure offer that includes A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
 
