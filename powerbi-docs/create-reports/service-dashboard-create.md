@@ -1,6 +1,6 @@
 ---
 title: Create a Power BI dashboard from a report
-description: Learn how to create a quick and easy dashboard that pins visualizations from an existing report.
+description: Learn how to create a quick and easy dashboard that pins visualizations from an existing report in Power BI, and understand their relationship.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
@@ -9,7 +9,8 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-removed
-ms.date: 07/07/2023
+ms.date: 03/17/2025
+#customer intent: As a Power BI user I want to learn how to create dashboards with visulizations.
 ---
 # Create a Power BI dashboard from a report
 
@@ -18,10 +19,11 @@ ms.date: 07/07/2023
 You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a semantic model, or by duplicating an existing dashboard. In this article, you create a quick and easy dashboard that pins visualizations from an existing report.
 
 After you complete this article, you'll understand:
+
 - The relationship between dashboards and reports.
 - How to pin tiles.
 - How to navigate between a dashboard and a report.
- 
+
 [![Screenshot shows a Power BI dashboard with several visualizations.](media/service-dashboard-create/power-bi-completed-dashboard-small.png)](media/service-dashboard-create/power-bi-completed-dashboard-small.png#lightbox)
 
 > [!NOTE]
@@ -36,7 +38,7 @@ You can use the following steps and the Procurement Analysis sample to try pinni
 1. Open a report and select **More options (...)** > **Edit** to open the report in Editing view.
 
     ![Screenshot of the report, highlighting more options and edit.](media/service-dashboard-create/power-bi-reading-view.png)
-    
+
     > [!TIP]  
     > You don't have to open the report in Edit mode, but you do have to have edit permissions for the report.
 
@@ -69,26 +71,30 @@ You can use the following steps and the Procurement Analysis sample to try pinni
    ![Screenshot of the Pin to dashboard window, highlighting Existing dashboard.](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
 ## Pin an entire report page
+
 Another option is to pin an entire report page to a dashboard, which is an easy way to pin more than one visualization at a time. When you pin an entire page, the tiles are *live*. That is, you can interact with them there on the dashboard. Changes you make to any of the visualizations in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
 
 For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md).
 
 ## Considerations and limitations
+
 Some report formatting options or themes aren't applied to visuals when you pin them to a dashboard.
+
 - Border, shadow, and background settings are ignored in the pinned tile.
 - For card visuals, the text used for the value is shown in dashboards using the 'DIN' font family, with black text. You can change the text color for all the tiles on a dashboard by [creating a custom dashboard theme](service-dashboard-themes.md).
 - Conditional formatting isn't applied.
 - Button visuals that trigger bookmarks or clear or apply filters when you select them have no action in a dashboard tile. These actions only make sense within the context of a report.
-- Visuals will adjust their size to fit the size of the tile. This can result in differences in layout as if the visual had been resized on the report.
+- Visuals will adjust their size to fit the size of the tile. This can result in differences in layout as if the visual is resized on the report.
 - Because some visualizations use background images, pinning might not work if the background image is too large. Try reducing the image size or using image compression.
 
 ## Related content
-Congratulations on creating your first dashboard. Now that you have a dashboard, there's much more you can do with it. Start exploring on your own, or see one of the following articles:
 
-* [Resize and move tiles](service-dashboard-edit-tile.md)
-* [All about dashboard tiles](service-dashboard-tiles.md)
-* [Share your dashboard by creating an app](../collaborate-share/service-create-distribute-apps.md)
-* [Power BI - Basic Concepts](../fundamentals/service-basic-concepts.md)
-* [Tips for designing a great dashboard](service-dashboards-design-tips.md)
+Congratulations on creating your first dashboard. Now that you have a dashboard, there's more you can do with it. Start exploring on your own, or see one of the following articles:
+
+- [Resize and move tiles](service-dashboard-edit-tile.md)
+- [All about dashboard tiles](service-dashboard-tiles.md)
+- [Share your dashboard by creating an app](../collaborate-share/service-create-distribute-apps.md)
+- [Power BI - Basic Concepts](../fundamentals/service-basic-concepts.md)
+ [Tips for designing a great dashboard](service-dashboards-design-tips.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
