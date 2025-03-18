@@ -116,7 +116,7 @@ For one-to-many relationships, the cross filter direction is always from the "on
 
 When the cross filter direction is set to **Both**, another property becomes available. It can apply bi-directional filtering when Power BI enforces row-level security (RLS) rules. For more information about RLS, see [Row-level security (RLS) with Power BI Desktop](/fabric/security/service-admin-row-level-security).
 
-You can modify the relationship cross filter direction, including the disabling of filter propagation, by using a model calculation. It's achieved by using the [CROSSFILTER](/dax/crossfilter-function) DAX function.
+You can modify the relationship cross filter direction, including the disabling of filter propagation, by using a model calculation. It's achieved by using the [CROSSFILTER](/dax/crossfilter-function-dax) DAX function.
 
 Bear in mind that bi-directional relationships can impact negatively on performance. Further, attempting to configure a bi-directional relationship could result in ambiguous filter propagation paths. In this case, Power BI Desktop may fail to commit the relationship change and will alert you with an error message. Sometimes, however, Power BI Desktop may allow you to define ambiguous relationship paths between tables. Resolving relationship path ambiguity is described [later in this article](#resolve-relationship-path-ambiguity).
 
