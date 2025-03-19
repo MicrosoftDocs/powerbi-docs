@@ -10,12 +10,12 @@ ms.date: 03/19/2025
 ---
 # Work with semantic models in the Power BI apps for mobile devices
 
-As the owner of a semantic model, or a user who has access to the semantic model, the Power BI app for mobile devices provides the following capabilites:
+As the owner of a semantic model, or a user who has access to the semantic model, the Power BI app for mobile devices provides the following capabilities:
 
 * You can view the semantic model's info and refresh status.
 * You can refresh the semantic model.
 * You get notified in the app whenever semantic model refresh fails, so that you can address the issue in a timely manner.
-* You can view a list of the sematic model's related content. The items on the list are hyperlinked so that you can open them right from the list. Currently, only related reports are shown.
+* You can view a list of the semantic model's related content. The items on the list are hyperlinked so that you can open them right from the list. Currently, only related reports are shown.
 
 Semantic model support in the mobile apps focuses on viewing semantic model info and refresh status, on triggering semantic model refresh to address simple scheduled refresh errors, and on getting links to related content. Use the Power BI service to perform more advanced semantic model management tasks and to handle more complicated semantic model refresh errors.
 
