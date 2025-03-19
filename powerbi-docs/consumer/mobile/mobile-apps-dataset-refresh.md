@@ -51,6 +51,8 @@ To find and access a semantic model's related content:
 
     :::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-linked-content.png" alt-text="Screenshot of semantic model info page in the Power BI mobile app." border="false":::
 
+    The name of the workspace the report is located in is shown directly under the report name.
+
 1. Tap the related item you're interested in to open it.
 
 > [!NOTE]
