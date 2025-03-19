@@ -27,7 +27,7 @@ Understanding which reports were created from a semantic model in Power BI is cr
 
 To see a semantic model's related reports, open the model in the app and tap **Linked content** on the info pane. You'll see the related reports you have access to, including those located in different workspaces. The name of the workspace a report is located in is shown directly below the name of the report.
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-linked-content.png" alt-text="Screenshot showing the Linked content tab of the semantic model info pane in the Power BI mobile app.":::
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-linked-content.png" alt-text="Screenshot showing the Linked content tab of the semantic model info pane in the Power BI mobile app." border="false":::
 
 [Check out our documentation!](./mobile-apps-dataset-refresh.md)
 

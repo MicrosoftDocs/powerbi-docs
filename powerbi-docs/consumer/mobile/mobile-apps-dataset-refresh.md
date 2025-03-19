@@ -47,16 +47,14 @@ To find and access a semantic model's related content:
 
 1. Tap the semantic model whose related content you want to see.
 
-1. The semantic model's info page opens. Tap **Linked content** to display a list of content that is built on the semantic model.
+1. The semantic model's info page opens. Tap **Linked content** to display the list of content that is built on the semantic model. The list shows only the related content you have access to. The name of the workspace each item is located in is shown directly below the item's name.
 
     :::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-linked-content.png" alt-text="Screenshot of semantic model info page in the Power BI mobile app." border="false":::
 
-    The name of the workspace the report is located in is shown directly under the report name.
+    > [!NOTE]
+    > Currently, only related reports are listed.
 
 1. Tap the related item you're interested in to open it.
-
-> [!NOTE]
-> Currently, only related reports are listed.
 
 ## Related content
 
