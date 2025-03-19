@@ -116,7 +116,7 @@ For one-to-many relationships, the cross filter direction is always from the "on
 
 When the cross filter direction is set to **Both**, another property becomes available. It can apply bi-directional filtering when Power BI enforces row-level security (RLS) rules. For more information about RLS, see [Row-level security (RLS) with Power BI Desktop](/fabric/security/service-admin-row-level-security).
 
-You can modify the relationship cross filter direction, including the disabling of filter propagation, by using a model calculation. It's achieved by using the [CROSSFILTER](/dax/crossfilter-function) DAX function.
+You can modify the relationship cross filter direction, including the disabling of filter propagation, by using a model calculation. It's achieved by using the [CROSSFILTER](/dax/crossfilter-function-dax) DAX function.
 
 Bear in mind that bi-directional relationships can impact negatively on performance. Further, attempting to configure a bi-directional relationship could result in ambiguous filter propagation paths. In this case, Power BI Desktop may fail to commit the relationship change and will alert you with an error message. Sometimes, however, Power BI Desktop may allow you to define ambiguous relationship paths between tables. Resolving relationship path ambiguity is described [later in this article](#resolve-relationship-path-ambiguity).
 
@@ -165,9 +165,9 @@ There are several DAX functions that are relevant to model relationships. Each f
 - [RELATED](/dax/related-function-dax): Retrieves the value from "one" side of a relationship. It's useful when involving calculations from different tables that are evaluated in [row context](/dax/dax-overview#row-context).
 - [RELATEDTABLE](/dax/relatedtable-function-dax): Retrieve a table of rows from "many" side of a relationship.
 - [USERELATIONSHIP](/dax/userelationship-function-dax): Allows a calculation to use an inactive relationship. (Technically, this function modifies the weight of a specific inactive model relationship helping to influence its use.) It's useful when your model includes a role-playing dimension table, and you choose to create inactive relationships from this table. You can also use this function to [resolve ambiguity in filter paths](#resolve-relationship-path-ambiguity).
-- [CROSSFILTER](/dax/crossfilter-function): Modifies the relationship cross filter direction (to one or both), or it disables filter propagation (none). It's useful when you need to change or ignore model relationships during the evaluation of a specific calculation.
+- [CROSSFILTER](/dax/crossfilter-function-dax): Modifies the relationship cross filter direction (to one or both), or it disables filter propagation (none). It's useful when you need to change or ignore model relationships during the evaluation of a specific calculation.
 - [COMBINEVALUES](/dax/combinevalues-function-dax): Joins two or more text strings into one text string. The purpose of this function is to support multi-column relationships in DirectQuery models when tables belong to the same source group.
-- [TREATAS](/dax/treatas-function): Applies the result of a table expression as filters to columns from an unrelated table. It's helpful in advanced scenarios when you want to create a virtual relationship during the evaluation of a specific calculation.
+- [TREATAS](/dax/treatas-function-dax): Applies the result of a table expression as filters to columns from an unrelated table. It's helpful in advanced scenarios when you want to create a virtual relationship during the evaluation of a specific calculation.
 - [Parent and Child functions](/dax/parent-and-child-functions-dax): A family of related functions that you can use to generate calculated columns to naturalize a parent-child hierarchy. You can then use these columns to create a fixed-level hierarchy.
 
 ## Relationship evaluation
