@@ -241,6 +241,11 @@ Separating _data workspaces_ from _reporting workspaces_ is a common practice fo
 - A _data workspace_ is dedicated to storing and securing data items such as a lakehouse, warehouse, data pipeline, dataflow, or semantic model.
 - A _reporting workspace_ is focused more on the downstream analytical activities. It's dedicated to storing and securing items such as reports, dashboards, and metrics. Reporting workspaces primarily (but not necessarily exclusively) include Power BI content.
 
+In Fabric, you might extend this separation to have distinct workspaces for other item types. Some examples might include:
+- _Data source workspaces_ for data warehouses, lakehouses, and SQL databases that store data.
+- _Data transformation workspaces_ for data pipelines, notebooks, and dataflows that transform data.
+- _Distribution workspaces_ for scorecards, metric sets, and orgapps that distribute data to end-users.
+
 > [!TIP]
 > Each [Fabric experience](/fabric/get-started/fabric-terminology) allows you to create various types of items. These items don't always fit neatly into the concept of what's considered data versus reporting (or analytical) content. One example is a [Fabric notebook](/fabric/data-engineering/author-execute-notebook) that can be used in many different ways, such as: loading and transforming data in a lakehouse, submitting Spark SQL queries, or analyzing and visualizing data with PySpark. When the workspace will contain mixed workloads, we recommend that you focus primarily on the workspace [purpose](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-purpose) and [ownership](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-ownership) of the content as described elsewhere in this article.
 
@@ -261,6 +266,49 @@ The disadvantages for separating data workspaces from reporting workspaces inclu
 - Sometimes it's challenging to clearly delineate the item types that should be contained within a workspace. Over time, a workspace can end up containing more types of content than was originally intended.
 - Use of separate workspaces results in a larger number of workspaces that you need to manage and audit. As you plan for purpose, scope, and other considerations (such as the separation of development, test, and production content) the approach to workspace design can become more complicated.
 - Extra change management processes could be required to track and prioritize requested changes to centralized data items, particularly when report creators have requirements beyond what can be handled by [composite models](../transform-model/desktop-composite-models.md) and report-level measures.
+
+### Workspace development stage
+
+It is a common practice to use separate workspaces for different stages of content development. Typically, this involves the following stages:
+- _Development workspaces_ for untested changes.
+- _Test workspaces_ for dedicated internal and user testing.
+- _Production workspaces_ for releasing content for consumers.
+
+Optionally, you might also have additional workspaces, such as the following:
+- _Private workspaces_ for creators to work in isolation. This is a common practice when collaborating on content by using Git integration, because each content creator works on their own separate copy (branch) of the content, to avoid disrupting each other's work. Then, creators can open a pull request to have their changes merged into another branch that syncs to the development workspace, which creators can view, but not modify or publish content to.
+- _Pre-production workspaces_ for creators to perform specific tests before releasing content. These tests might include performance testing or testing supporting resources like data gateways and apps.
+- _Sandbox workspaces_ for creators to freely experiment and conduct _ad hoc_ explorations. Sandbox workspaces are typically emptied at a regular cadence (often automatically, such as by using APIs or notebooks). Content that creators want to retain from a sandbox workspace can be copied to a personal or private workspace for additional development.
+
+> [!TIP]
+> We recommend that you organize workspaces by a minimum of two development stages. This ensures separation between development or testing by creators, and consumption by business users. If you use a single workspace stage, then you often will struggle to avoid disrupting existing content consumed from that workspace, or changes from other creators.
+>
+> Also, you can organize workspaces using multiple approaches. For instance, you can have separate data and reporting workspaces with multiple development stages.
+
+The advantages for separating workspaces by development stage include:
+
+- Support for more sophisticated and structured development processes, including:
+  - Use of Deployment Pipelines to copy content between stages.
+  - Use of Git integration and branching strategies for deployment and release.
+  - Use of notebooks to orchestrate or automate certain tasks during the content lifecycle.
+- Prevention of disrupting content in production stages used by consumers.
+- Better access control for content.
+
+The disadvantages for separating workspaces by development stage include:
+
+- More workspaces, which can create additional overhead to manage and govern them.
+- Consideration of new deployment and post-deployment activities.
+- Use of additional tools or features to deploy (or promote) content through the development stages.
+- More sophisticated workspace access policies are required to prevent creators from publishing to and using the wrong stage.
+
+### Intra-workspace organization
+
+In addition to organizing your workspace structure, you also have to organize content _within_ a single workspace. This 
+
+To better organize content in a workspace, consider the following guidelines:
+- Use clear naming conventions to easily identify different content. Consider using numerical prefixes (like _01 - Daily Sales_ to order content alphabetically, if needed).
+- Use _task flows_ to group content by its purpose in your workflow into tasks. This will help you to quickly identify and select similar content (by selecting the task in the task flow). This is particularly important if you decide to include many item types with different purposes in the same workspace.
+- Use workspace folders to organize similar content into groups. Workspace folders can be used instead of or in addition to tasks in task flows.
+- Use endorsement and sensitivity labels to label content appropriately based on their endorsement and sensitivity status.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 

@@ -104,6 +104,8 @@ In Power BI, there are many different ways in which users can consume content, i
 
 Semantic models are debatably the most important item types in Power BI and Fabric, since users can consume them by using many different downstream approaches and items. If you will only distribute reports, then you will make very different design decisions as when users will connect various items to the model to do their own analyses or accomplish their own goals.
 
+:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-plan-design/re-use-semantic-models.svg" alt-text="Diagram shows a semantic model and the items that can connect to it in Power BI, Fabric, and other tools." border="false":::
+
 You can re-use a shared semantic model by using the following downstream item types:
 
 - Power BI 
