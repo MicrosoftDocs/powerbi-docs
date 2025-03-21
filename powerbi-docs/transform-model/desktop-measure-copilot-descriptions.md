@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 
 Add descriptions to your semantic model measures with Fabric Copilot for Power BI. People building reports from your semantic model can see the name and description of your measures, making the description property essential documentation. Fabric Copilot can streamline your semantic model documentation by creating measure descriptions for you.
 
-:::image type="content" source="media/copilot-introduction/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/copilot-introduction/copilot-measure-description-model-view.png":::
+:::image type="content" source="media/desktop-measure-copilot-descriptions/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/desktop-measure-copilot-descriptions/copilot-measure-description-model-view.png":::
 
 ## Turn on the preview feature
 
@@ -24,7 +24,7 @@ To try this preview feature in Power BI Desktop, you need to turn it on.
 
 - In **Options** > **Preview features**, select **Measure descriptions with Copilot**.
 
-This preview feature is available when [editing a semantic model in the Power BI service](service-edit-data-models).
+This preview feature is available when [editing a semantic model in the Power BI service](service-edit-data-models.md).
 
 Learn more about how to access to Fabric Copilot for Power BI on your tenant in the [Copilot requirements](../create-reports/copilot-introduction.md#copilot-requirements) section of the Copilot introduction article.
 
