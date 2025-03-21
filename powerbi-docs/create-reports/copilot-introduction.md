@@ -157,7 +157,7 @@ Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a
 
 ### Add descriptions for semantic model measures
 
-Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation.[Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
+Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation. [Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
 
 :::image type="content" source="media/copilot-introduction/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/copilot-introduction/copilot-measure-description-model-view.png":::
 
