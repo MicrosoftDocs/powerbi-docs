@@ -97,7 +97,9 @@ By creating [shortcuts](/fabric/onelake/onelake-shortcuts) for your semantic mod
 
 ## Considerations and limitations
 
-- Workspace Admins, Members, and Contributors, as well as Users with direct Write permission on a semantic model are granted Read permission on the exported artifact folder in OneLake. Users with Read permission on the semantic model do not get access to the artifact folder in OneLake.
+- Workspace Admins, Members, and Contributors, as well as Users with direct Write permission on a semantic model are granted Read permission on the exported artifact folder in OneLake.
+  
+- Users with Read permission on a semantic model get Read permission to the artifact folder in OneLake only if there are no RLS/OLS roles defined for the semantic model.
   
 - Currency data types with values larger than 18 decimal points can have some precision loss when exported to Delta files.
 
