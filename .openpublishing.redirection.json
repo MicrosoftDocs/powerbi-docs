@@ -8,7 +8,7 @@
 	{
             "source_path": "powerbi-docs/transform-model/dax-query-copilot-create.md",
             "redirect_url": "/dax/dax-copilot",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/visuals/power-bi-visualization-column-charts-format-settings.md",
