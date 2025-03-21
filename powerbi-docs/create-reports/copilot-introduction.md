@@ -157,13 +157,15 @@ Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a
 
 ### Add descriptions for semantic model measures
 
-Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation.
+Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation.[Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
 
-[Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
+:::image type="content" source="media/copilot-introduction/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/copilot-introduction/copilot-measure-description-model-view.png":::
 
 ### Write DAX queries
 
 Copilot can write a DAX query. For example, you can type in a prompt to describe what DAX query you would like it to generate, and select Send or press Enter. To run what is returned, select Keep it to add it to query tab. Then select Run or press F5 to see the results of the DAX query. Read more in the article [Write DAX queries](/dax/dax-copilot).
+
+:::image type="content" source="media/copilot-introduction/copilot-dax-query.png" alt-text="Screenshot showing Copilot suggested DAX query." lightbox="media/copilot-introduction/copilot-dax-query.png":::
 
 ## Copilot preview features
 
