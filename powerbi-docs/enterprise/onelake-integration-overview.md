@@ -24,10 +24,7 @@ Before implementing a OneLake integration solution in your organization, be sure
 
 OneLake integration for semantic models is supported on Power BI Premium P and Microsoft Fabric F SKUs only. It's not supported on Power BI Pro, Premium Per User, or Power BI Embedded A/EM SKUs.
 
-Before enabling OneLake integration, you must have:
-
-- One or more [import semantic models](/fabric/get-started/direct-lake-overview#comparison-to-other-storage-modes) in a workspace on a Power BI Premium or Fabric capacity. Import semantic model is a type of data model where data is fully imported into Power BI's in-memory storage, allowing fast and efficient querying.
-- [Large semantic model storage format](service-premium-large-models.md) enabled for the model.
+Before enabling OneLake integration, you must have one or more [import semantic models](/fabric/get-started/direct-lake-overview#comparison-to-other-storage-modes) in a workspace on a Power BI Premium or Fabric capacity. Import semantic model is a type of data model where data is fully imported into Power BI's in-memory storage, allowing fast and efficient querying.
 
 ## Permissions
 
@@ -100,6 +97,10 @@ By creating [shortcuts](/fabric/onelake/onelake-shortcuts) for your semantic mod
 
 ## Considerations and limitations
 
+- Workspace Admins, Members, and Contributors, as well as Users with direct Write permission on a semantic model are granted Read permission on the exported artifact folder in OneLake.
+  
+- Users with Read permission on a semantic model get Read permission to the artifact folder in OneLake only if there are no RLS/OLS roles defined for the semantic model.
+  
 - Currency data types with values larger than 18 decimal points can have some precision loss when exported to Delta files.
 
 - Semantic models in [BYOK](service-encryption-byok.md) enabled workspaces aren't supported.
