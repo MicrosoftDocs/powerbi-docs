@@ -14,11 +14,21 @@ ms.date: 03/20/2025
 
 # Create data point annotations
 
-Data point annotations help users to make their presentations even more effective by enable them to add descriptive text directly to visuals, offering contextual explanations or highlights that improve communication and understanding of the data being presented. Annotations enable users to communicate insights clearly.
+Data point annotations are descriptive text you can add directly to Power BI visuals you've embedded in your presentation via the Power BI add-in. Data point annotations enable you to provide contextual explanations or highlights to help you communicate insights clearly and to enhance audience understanding.
+
+Data point annotations provide context to enhance your storytelling experience with textual call outs and drive attention to important areas. Annotations help communicate one’s ideas effectively by drawing attention to the marked areas with different colored icons and arrows.
 
 ## Where do annotations show up?
 
-These annotations aren’t presented when you view the same visual in the Power BI service or in any other place; the annotations are at your aid only in the context of the presentation they were created at. It also means that you can have multiple sets of annotations for the same visual when it appears in different instances of the add-in in the same or different presentations. Each set of annotations provides content that is truly in the context of the slide and presentation you are building.
+Annotations 
+
+Data point annotations you add to a visual are saved in the context of the specific add-in instance the visual is located. Each time the slide with the visual is loaded, the annotations are loaded as well.
+
+Since annotations are only saved in the context of the add-in where they were addedand slide where it is added, it is presented only in that context. This means that:
+
+* The annotation isn't presented when you view the same visual in the Power BI service or in any other place.
+
+You can have different sets of annotations for the same visual when it appears in other instances of the add-in in the same or different presentations. Each set of annotations provides content that is truly in the context of the slide and presentation you are building.
 
 * Each time you (or others) view this visualization in this slide, the annotations will be loaded as well.
 * Annotations are displayed whenever the data point is visible. If the visual is filtered in such a way that results in the disappearance of the data point, the annotation likewise disappears.
