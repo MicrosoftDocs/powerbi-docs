@@ -50,7 +50,7 @@ Different accelerators provide different frontend and backend capabilities inclu
 
 ### Frontend capabilities
 
-The following capabilities are available with all accelerators:
+The following capabilities are available with *all* accelerators:
 
 * Seamless data isolation per application tenant and data and item permission per user
 
@@ -62,7 +62,7 @@ The following capabilities are available with all accelerators:
 
 * Export report to file printouts (PDF, PPTX, PNG, and more for Paginated reports)
 
-In addition, the following capabilities are available with certain solutions:
+In addition, the following capabilities are available with *certain* solutions:
 
 * Self-service report subscription to schedule and deliver report printouts
 
@@ -72,7 +72,7 @@ In addition, the following capabilities are available with certain solutions:
 
 * Edit option for semantic model
 
-* Unrestricted data download 
+* Unrestricted data download
 
 To see which partner's solution contains which options, see the [comparison tables](#comparison-of-accelerators-from-our-partners).
 
