@@ -1,8 +1,8 @@
 ---
 title: Access shared semantic models in Power BI as a guest user from an external organization (preview)
 description: How to access and build reports with semantic models shared externally in your own tenant if you're a data consumer.
-author: kfollis
-ms.author: kfollis
+author: KesemSharabi
+ms.author: kesharab
 manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
