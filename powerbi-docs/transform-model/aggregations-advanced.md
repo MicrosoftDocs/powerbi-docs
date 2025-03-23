@@ -1,7 +1,6 @@
 ---
 title: "User-defined aggregations"
 description: Describes using manually configured aggregations to speed up data analysis over large semantic models.
-author: kfollis
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi

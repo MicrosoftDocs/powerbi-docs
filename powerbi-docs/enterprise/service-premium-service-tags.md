@@ -1,7 +1,6 @@
 ---
 title: Use service tags with Power BI
 description: Learn how to use service tags with Power BI to allow a SQL Managed Instance to accept connections from the Power BI service.
-author: RossCouldrey
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
