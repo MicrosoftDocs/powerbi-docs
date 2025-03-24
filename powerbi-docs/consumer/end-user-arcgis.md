@@ -9,8 +9,6 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 02/08/2023
-ms.author: kfollis
-
 ---
 # Interact with an ArcGIS map in Power BI
 
