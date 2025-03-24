@@ -1,8 +1,8 @@
 ---
 title: Comparing Power BI Desktop and the Power BI service
 description: Learn and compare the differences between Power BI Desktop download application and the cloud-based Power BI service.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: video-IkJda4O7oGs
 ms.search.form: product-power-bi

@@ -1,8 +1,8 @@
 ---
 title: Supported browsers for Power BI and Fabric.
 description: See a list of browsers that support Power BI and Fabric.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

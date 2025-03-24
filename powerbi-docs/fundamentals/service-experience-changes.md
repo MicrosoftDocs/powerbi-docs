@@ -1,8 +1,8 @@
 ---
 title: "Updates to the experience in the Power BI service"
 description: Learn about changes coming to the Power BI online service (app.powerbi.com).
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: 'kdholakia'
 ms.service: powerbi
 ms.search.form: product-power-bi
