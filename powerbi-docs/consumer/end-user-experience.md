@@ -1,8 +1,8 @@
 ---
 title: Getting around in the Power BI service
 description: Overview of the Power BI navigation experience
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 featuredvideoid: removed
 ms.service: powerbi

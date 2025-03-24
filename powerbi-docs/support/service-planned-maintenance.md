@@ -1,8 +1,8 @@
 ---
 title: Power BI planned maintenance
 description: Information for admins about how planned maintenance for Power BI affects their organization and next steps they may need to take.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting

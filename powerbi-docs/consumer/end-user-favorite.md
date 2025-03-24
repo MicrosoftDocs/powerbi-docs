@@ -1,8 +1,8 @@
 ---
 title: Favorites in Power BI service (dashboards, reports, apps)
 description: Learn how to set frequently opened dashboards, reports, and apps as favorites in the Power BI service.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 featuredvideoid: removed
 ms.service: powerbi
