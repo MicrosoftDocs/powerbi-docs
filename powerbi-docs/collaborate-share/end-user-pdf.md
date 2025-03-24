@@ -8,7 +8,7 @@ ms.reviewer: mibruhjell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/17/2025
+ms.date: 03/24/2025
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -89,9 +89,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 * These Power BI visuals aren't supported. When you subscribe to a report containing these visuals, they display an error symbol. 
     - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that are [certified](../developer/visuals/power-bi-custom-visuals-certified.md)
     - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
-    - [R visuals](../visuals/service-r-visuals.md)
     - [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
-    - [Python visuals](../connect-data/desktop-python-visuals.md)
     - [Power Automate visuals](../create-reports/power-bi-automate-visual.md) 
     - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - Visio visuals
@@ -103,6 +101,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 * Reports larger than 500 MB. 
 * Reports that are owned by a user outside your Power BI tenant domain, such as a report owned by someone outside your organization and shared with you, can't be published to PDF.
 * You can share a dashboard with someone outside of your organization--someone who isn't in your Power BI tenant. However, that user can't export the shared dashboard's associated reports to PDF. For example, if you're aaron@contoso.com, you can share with cassie@northwinds.com. But cassie@northwinds.com can't export the associated reports to PDF.
+* R and Py visuals will not render when exported using REST APIs.
 
 ### General
 
