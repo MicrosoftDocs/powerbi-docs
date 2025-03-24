@@ -1,8 +1,8 @@
 ---
 title: Power BI consumer and end user and business user capabilities in Power BI service
 description: In this quickstart, **business users** learn about Power BI, apps, reports, and dashboards.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 services: powerbi
 documentationcenter: ''
 ms.reviewer: kfollis

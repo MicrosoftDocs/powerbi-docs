@@ -1,8 +1,8 @@
 ---
 title: "Troubleshoot getting a license for the Power BI service"
 description: "This article troubleshoots issues you might encounter when you try to get a license for the Power BI service or upgrade licenses."
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.topic: troubleshooting
 ms.date: 06/26/2024

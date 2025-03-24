@@ -1,8 +1,8 @@
 ---
 title: Semantic model connectivity and management with the XMLA endpoint in Power BI
 description: Describes Power BI Premium and Premium Per User semantic model connectivity from client applications and tools by using the XMLA endpoint.
-author: kfollis
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium

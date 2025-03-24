@@ -1,8 +1,8 @@
 ---
 title: Change how a chart is sorted in a report
 description: Sort report visuals alphabetically, numerically, or by multiple columns in Power BI service, and learn how to save your changes.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
