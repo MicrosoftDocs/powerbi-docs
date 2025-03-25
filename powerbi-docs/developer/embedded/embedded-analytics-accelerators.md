@@ -132,7 +132,7 @@ The following tables compare features of the different accelerators from our par
 |-------------------------------------------------|:-----------------:|:--------------:|:---------------------:|:----------------:|
 | **The Reporting Hub**​ <br> [Reporting Hub](https://thereportinghub.com/) | ✔​                | ✔​                | ✔​                      | ​                   |
 | **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedFAST)                                              |   | ​ | ​                         | ✔​                |
-| **Carlo Solutions**​ <br>[Entelexos](https://www.entelexos.com/)                                            | ✔​                | ​                  | ​                         | ​                   |
+| **Carlo Solutions**​ <br>[Entelexos](https://www.entelexos.com/)                                            | ​                | ​                  | ​                         | ​                   |
 | **iLink Digital​** <br>[EmbeDash](https://embedash.com/)                                            | ✔​                | ​                  | ​                         | ​                   |
 
 ### Acquisition and billing options
@@ -141,7 +141,7 @@ The following tables compare features of the different accelerators from our par
 |:---------------------------------------------|:---------------------------------------------------:|:--------------------------------------------------:|:--------------:|:----------------------:|:------------------------------------:|
 | **The Reporting Hub**​ <br> [Reporting Hub](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_prod_003?tab=Overview) | ✔​                                                 | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_prod_003?tab=Overview)​        | ✔​             | ​                       | ​              |
 | **MAQ Software**​ <br>[EmbedFAST](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi?tab=Overview)            |                                    | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi)                                  | ​               | ✔​                    | ✔​                                   |
-| **Carlo Solutions**​ <br>[Entelexos](https://azuremarketplace.microsoft.com/marketplace/apps/carlosolutions.entelexos?tab=Overview) | ​                                                   | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/carlosolutions.entelexos?tab=Overview)                               | ✔​              | ​                      | ​                                   |
+| **Carlo Solutions**​ <br>[Entelexos](https://azuremarketplace.microsoft.com/marketplace/apps/carlosolutions.entelexos?tab=Overview) | ​                                                   | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/carlosolutions.entelexos?tab=Overview)                               | ​              | ​                      | ​                                   |
 | **iLink​** <br>[EmbeDash](https://azuremarketplace.microsoft.com/marketplace/apps/ilinksystems.embedash?tab=Overview)                        |  ​                                                   | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/ilinksystems.embedash?tab=Overview)                               | ✔​              | ​                      | ✔​                                   |
 
 ### Added capabilities
@@ -150,7 +150,7 @@ The following tables compare features of the different accelerators from our par
 |----------------------------------------------|:----------------------------:|:----------------------------:|:--------------------:|:-----------------------------:|:--------------------------:|:-------------------------:|:-------------------:|:--------------------------:|
 | **The Reporting Hub**​ <br> [Reporting Hub](https://thereportinghub.com/)​ | ✔   | ✔   | ​       | ✔​    | ✔​    | ✔    |   |   |
 | **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedFAST)​        | ​     | ​     | ✔​     | ✔​   | ​      | ​      |   |   |
-| **Carlo Solutions**​ <br> [Entelexos](https://www.entelexos.com/)​ | ​     | ​     | ✔​     | ​     | ​      | ​     |   |   |
+| **Carlo Solutions**​ <br> [Entelexos](https://www.entelexos.com/)​ | ​     | ​     | ​     | ​     | ​      | ​     |   |   |
 | **iLink Digital​** <br> [EmbeDash](https://embedash.com/)                   | ​     | ​     | ✔     | ​     | ​      | ​     |   |   |
 
 ## Related content
