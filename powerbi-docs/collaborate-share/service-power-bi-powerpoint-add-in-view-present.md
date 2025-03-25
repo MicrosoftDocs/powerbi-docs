@@ -184,13 +184,19 @@ Expands or collapses the toolbar across the bottom of the report or visual. This
 
 To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
 
-|Keyboard shortcut   | Action                        |
-|--------------------|-------------------------------|
-|**Ctrl + Enter**    |Focus in                       |
-|**Ctrl + [**        |Focus out                      |
-|**Ctrl + ]**        |Move forward over open panels  |
-|**Ctrl + Shift + ]**|Move backward over open panels |
-|**Ctrl**            |Hide Power BI tooltips         |
+|Keyboard shortcut       | Action                        |
+|------------------------|-------------------------------|
+|**General**             |                               |
+|**Ctrl + Enter**        |Focus in                       |
+|**Ctrl + [**            |Focus out                      |
+|**Ctrl + ]**            |Move forward over open panels  |
+|**Ctrl + Shift + ]**    |Move backward over open panels |
+|**Ctrl**                |Hide Power BI tooltips         |
+|                        |                               |
+|**Live/Snapshot views** |                               |
+|**Ctrl + Shift + 7**    |Switch to Live view            |
+|**Ctrl + Shift + 8**    |Switch to protected view       |
+|**Ctrl + Shift + 9**    |Switch to public view          |
 
 ## Related content
 
