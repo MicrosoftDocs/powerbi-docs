@@ -205,6 +205,9 @@ To finish setting up your application, go to the **Users and groups** section an
 
     ![Screenshot shows the P B I R S Authentication pane with the settings as described.](media/microsoft-entra-application-proxy/azure-report-server-authentication-2.png)
 
+   > [!WARNING]
+   > Microsoft recommends you do *not* use the implicit grant flow. In most scenarios, more secure alternatives are available and recommended. Certain configurations of this flow requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows aren't viable. For more information, see the [security concerns with implicit grant flow](/entra/identity-platform/v2-oauth2-implicit-grant-flow#security-concerns-with-implicit-grant-flow).
+
 1. Once the single sign-on is set up and the URL `https://pbirsazureapp-umacontoso2410.msappproxy.net` is working, we have to make sure that the account that we log in with is synced with the account to which the permissions are provided in Power BI Report Server.
 
 1. We first have to configure the custom domain that we are planning to use in the login, then make sure it is verified
