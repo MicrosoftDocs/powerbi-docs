@@ -18,6 +18,17 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
+## May 2025
+
+Version 15.7.1814.616, releasd March 25, 2025
+
+- Reduced timeout for Power Query Online
+- Fixed issue rendering sub reports when opening from the Power BI Service
+- Increased limit on query parameters size in Query Designer
+- Catch and log error errors opening reports
+- Updated supported connection types
+- Added additional telemetry events 
+	
 ## September 2024
 
 Version 15.7.1812.222, released September 16, 2024
