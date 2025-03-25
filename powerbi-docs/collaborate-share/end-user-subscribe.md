@@ -1,8 +1,8 @@
 ---
 title: Email subscriptions for reports and dashboards in the Power BI service
 description: Learn how to subscribe yourself and others to an emailed snapshot of a Power BI report or dashboard.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: mibruhje
 featuredvideoid: 
 ms.service: powerbi
@@ -124,7 +124,7 @@ When creating a subscription, you can add other email addresses in the same doma
 
 |Group type      |Supported in email subscriptions  |
 |---------|---------|
-|[Microsoft 365 groups](/microsoft-365/admin/create-groups/office-365-groups)     |      Yes   |
+|[Microsoft 365 groups](/microsoft-365/admin/create-groups/office-365-groups)     |      No   |
 |[Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)    |    Yes     |
 |[Dynamic distribution groups](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)     |      Yes   |
 |[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group)     |    No     |

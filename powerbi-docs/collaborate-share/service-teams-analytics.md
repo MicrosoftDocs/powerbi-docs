@@ -9,22 +9,25 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/15/2025
+
+ms.date: 02/25/2025
+#customer intent: As a Power BI user I want to learn how to generate a report to analyze Teams activity.
+
 ---
 
 # Analyze your Teams usage in the Power BI app for Teams
 
-> [!NOTE]
-> On January 31st, 2025, the **Teams activity analytics** report feature will be discontinued. Starting February 1st, 2025, users will no longer be able to generate new reports with this feature, and existing reports will cease to update. Users are advised to use the built-in analytics views available in Teams. For more details, see [View analytics for your teams in Microsoft Teams](https://support.microsoft.com/office/view-analytics-for-your-teams-in-microsoft-teams-5b8ad4b1-af34-4217-aff4-cd11a820b56b).
->
-> For more information about the retirement of the Teams activity analytics report feature and how this might affect you, see [Power BI in Teams – Announcing the retirement of the Teams activity analytics report](https://powerbi.microsoft.com/blog/power-bi-in-teams-teams-activity-analytics-report-deprecation/).
-
 This article describes how to automatically generate a Power BI report to analyze your Microsoft Teams activity, by using the Power BI app in Teams.
-
-
 Only you can see this report about your Teams activity, unless you choose to share it. Microsoft Teams also offers a [summary report for Teams admins](/microsoftteams/teams-analytics-and-reports/teams-usage-report). It gives admins an overview of the usage activity in Teams, including the number of active users and channels, guests, and messages in each team.
 
-## Requirements
+> [!NOTE]
+> On January 31st, 2025, the **Teams activity analytics** report feature will be discontinued. Starting February 1st, 2025, users will no longer be able to generate new reports with this feature, and existing reports will cease to update. Users are advised to use the built-in analytics views available in Teams. For more details, see [View analytics for your teams in Microsoft Teams](https://support.microsoft.com/office/view-analytics-for-your-teams-in-microsoft-teams-5b8ad4b1-af34-4217-aff4-cd11a820b56b).
+> For more information about the retirement of the Teams activity analytics report feature and how this might affect you, see [Power BI in Teams – Announcing the retirement of the Teams activity analytics report](https://powerbi.microsoft.com/blog/power-bi-in-teams-teams-activity-analytics-report-deprecation/).
+
+
+## Prerequisites
+
+This article describes how to automatically generate a Power BI report to analyze your Microsoft Teams activity, by using the Power BI app in Teams.
 
 To view your Teams activity analytics in Microsoft Teams, ensure these elements:
 
@@ -34,7 +37,10 @@ To view your Teams activity analytics in Microsoft Teams, ensure these elements:
 
 ## Create the Teams analytics report
 
-Open the Power BI app in Teams. Select **Create**, then choose **Analyze your Teams data**.
+Use the following procedure to create the teams analytics report:
+
+1. Open the Power BI app in Teams.
+1. Select **Create**, then choose **Analyze your Teams data**.
 
 Power BI automatically creates your report, displays it in your Power BI Teams app, and saves it to your **My workspace**. The report is yours. As with any of your reports, you can view it in Teams or in the Power BI service. You can edit it, save a copy of it, or download the *.pbix* file to edit it in Power BI Desktop.
 
@@ -58,7 +64,7 @@ On the **Team activity details** page, you choose one of the teams that you're a
 
 ## View your Teams activity report
 
-After you've created your Teams activity analytics report the first time, you can go back to it. On the Home tab in the Power BI app in Teams or in the Power BI service, you see it listed in **Recents**.
+After you create your Teams activity analytics report the first time, you can go back to it. On the Home tab in the Power BI app in Teams or in the Power BI service, you see it listed in **Recents**.
 
 ## Refresh your data
 

@@ -1,8 +1,8 @@
 ---
 title: Tour the report Filters pane
 description: Learn how to use the Filer Pane in the Power BI service and discover new insights and different ways to filter your data.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 ms.custom:  
 ms.service: powerbi

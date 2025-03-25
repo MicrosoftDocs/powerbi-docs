@@ -1,8 +1,8 @@
 ---
 title: Types of Insights supported by Power BI
 description: Learn about Insights in Power BI how they work, what they can do, and why they help interpret your data.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-ai

@@ -1,8 +1,8 @@
 ---
 title: What is a Power BI business user?
 description: Overview of the Power BI service for business users or end users. Learn who a business user is and how to safely work with data.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore

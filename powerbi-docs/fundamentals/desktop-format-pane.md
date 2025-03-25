@@ -1,8 +1,8 @@
 ---
 title: The updated Format and Visualizations panes in Power BI
 description: Get to know the redesigned Format pane in Power BI.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

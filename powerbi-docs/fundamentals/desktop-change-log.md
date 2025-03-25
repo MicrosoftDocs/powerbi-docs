@@ -7,7 +7,7 @@ ms.reviewer: kfollis, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/02/2025
+ms.date: 03/13/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,55 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## February 2025 QFE 4 
+
+*Version 2.140.1476.0, Released: March 11, 2025*
+
+Bug fixes/improvements:
+
+* Addressed issues with the copy cell functionality in data grid, ensuring proper asynchronous handling and accurate cell value retrieval.
+
+
+## February 2025 QFE 3
+
+*Version 2.140.1454.0, Released: March 8, 2025*
+
+Bug fixes/improvements:
+
+* Resolved the issue of broken custom visual dialogs.
+
+* Resolved an issue where users weren't able to save a PBIP file when TMDL view preview feature is enabled. 
+
+* Fixed the confirmation dialog handling for the download API in Power BI Desktop, addressing a regression issue. 
+
+
+
+## February 2025 QFE 2 
+
+*Version 2.140.1351.0, Released: March 4, 2025*
+
+Bug fixes/improvements:
+
+* Added better error classification to reduce unwanted error popups.
+
+* Fixed an issue where existing report pages were disappearing when adding a local model to a report in Power BI Desktop.
+
+* Fixed a UI regression issue where the *Manage Relationships* dialog in the report view had a different size compared to the Table or Model View.
+
+
+
+## February 2025 QFE 1 
+
+*Version 2.140.1205.0, Released: February 26, 2025*
+
+Bug fixes/improvements:
+
+* Fixed AS thrown exception *PFE_M_ENGINE_INTERNAL* by adding validation to check whether *CertifiedExtensions* folder exists at path AppData...\PowerBIDesktop\CertifiedExtensions.
+
+* Fixed error while opening PBIX files when tables named *Measures* with leading or trailing spaces.
+
 
 
 

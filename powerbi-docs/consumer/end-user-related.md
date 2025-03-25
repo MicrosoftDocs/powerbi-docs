@@ -1,8 +1,8 @@
 ---
 title: See related content from dashboards, reports, and semantic models
 description: Learn how to find and work on related content in Power BI service dashboards, reports, and semantic models.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: Glossary for Power BI business users
 description: Learn Power BI terminology with this glossary, which provides definitions to help you understand and navigate through the library of articles.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 services: power-bi
 ms.reviewer: kfollis
 ms.service: powerbi

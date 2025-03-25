@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
-ms.date: 01/30/2025
+ms.date: 03/12/2025
 
 LocalizationGroup: Share your work
 ---
@@ -366,7 +366,7 @@ This action uninstalls the app for everyone you've published it to, and they no 
 To maintain app reliability and performance here are some app, audience group, and access limits to consider:
 - You can create one app per workspace.
 - App publish and update operations have a timeout of 1 minute. If your app is running into timeout error during update, consider reducing the number of items included in the app.
-- In some cases, the Power BI Support team may need to block updates for large apps. Before blocking app updates, the Power BI Support team sends a message to  admins using Microsoft 365 communictions, with an ask to optimize large apps. To optimize a large app, try: reducing the number of items in the app, converting reports in the app to a different format like [Power BI enhanced report format](../developer/projects/projects-overview.md), or recreating the app as an [org app](../consumer/org-app-items/org-app-items.md). If update is blocked for a large app, a message is shown asking customers to contact Power BI Support for help with optimizing the app and then unblocking update.
+- In some cases an app can be too large to update. In these cases a *Can't update the app* message is displayed and the app must be optimized before updating. To optimize a large app try one or more of the following: reduce the number of items in the app; convert reports in the app to a different format like [Power BI enhanced report format](../developer/projects/projects-overview.md); recreate the app as an [org app](../consumer/org-app-items/org-app-items.md). After optimizing the app, try to update it again. If the *Can't update the app* message persists, continue to optimize the app until update is successful.
 - You can create up to 25 audience groups per app.
 - A total of 10,000 users and user groups combined can have access to an app.
 - Each user group is counted as one entry against the 10,000 total.
@@ -376,6 +376,7 @@ To maintain app reliability and performance here are some app, audience group, a
 - Consider how many workspace users or user groups have access to the app and how many users and user groups you have added to audience groups when creating additional audience groups. It is possible to hit the maximum number of 10,000 users or user groups per app before hitting the limit of 25 audience groups per app. For example, if you create 10 audience groups and have 1,000 users per audience group (accounting for workspace users too) you would hit the 10,000 app user or user groups limit and any additional audience groups with additional users or user groups will block the app from publishing or updating.
 - If you include a report that uses chained semantic models in an app, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), when you add a user to an audience group, make sure to give permissions to all the semantic models in the chain. We recommend using Microsoft Entra Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). The same consideration should be made for semantic models in a different workspace other than the app, make sure to give permissions to semantic models in a different workspace.
 - If you include a paginated report that uses a semantic model, in an app, when you add a user to an audience group, make sure to give permission to the semantic model.
+- Guest users require the [Directory Readers](/entra/identity/role-based-access-control/permissions-reference#directory-readers) role in order to update.
 
 
 Additional things to keep in mind about publishing apps:
