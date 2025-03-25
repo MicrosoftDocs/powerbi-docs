@@ -13,11 +13,12 @@ ms.custom: template-how-to; subject-moving-resources
 # Move between regions
 
 > [!IMPORTANT]
-> At this time, we only offer the tenant migration service to customers with a P (Premium) SKU and F64 and above SKU. 
-The location selected during sign-up determines your default data region. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact Microsoft support to manage the migration for you.
+> At this time, we don't offer cross-region tenant migration for either Power BI or Fabric capacities. Please consider using [Multi-Geo capacities](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium). 
+
+The location selected during sign-up determines your default data region. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI or Fabric resources stored in Azure isn’t supported. If you need to change your default data location, i.e. home region, from the current region to another region, you have to contact Microsoft support to manage the migration for you.
 
 > [!CAUTION]
-> This article describes how to request a move between regions and keep Power BI or data. Be sure you're aware of what can’t be moved and steps you have to do before and after the region move. Moving between regions is considered a tenant migration. You can request a different process to move your tenant to another region if data loss and reconfiguration is acceptable. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
+> This article describes how to request a tenant re-map to a different region. Be sure you're aware of the steps you have to do before and after the re-mapping. The tenant re-map process leads to data loss and requires reconfiguration of your tenant as described below. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
 
 ## Prerequisites
 
