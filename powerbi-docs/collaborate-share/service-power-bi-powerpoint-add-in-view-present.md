@@ -186,6 +186,7 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 
 |Keyboard shortcut       | Action                        |
 |------------------------|-------------------------------|
+|                        |                               |
 |**General**             |                               |
 |**Ctrl + Enter**        |Focus in                       |
 |**Ctrl + [**            |Focus out                      |
@@ -193,10 +194,10 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 |**Ctrl + Shift + ]**    |Move backward over open panels |
 |**Ctrl**                |Hide Power BI tooltips         |
 |                        |                               |
-|**Live/Snapshot views** |                               |
-|**Ctrl + Shift + 7**    |Switch to Live view            |
-|**Ctrl + Shift + 8**    |Switch to protected view       |
-|**Ctrl + Shift + 9**    |Switch to public view          |
+|**Live/Snapshot** |                               |
+|**Ctrl + Shift + 7**    |Switch to Live data            |
+|**Ctrl + Shift + 8**    |Switch to Snapshot             |
+|**Ctrl + Shift + 9**    |Switch to Public snapshot      |
 
 ## Related content
 
