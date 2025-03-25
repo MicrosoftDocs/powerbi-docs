@@ -1,8 +1,8 @@
 ---
 title: Apps in Power BI
 description: Learn how to install a new app. Power BI apps bundle related dashboards and reports together for business users to view and explore.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: miguem
 ms.service: powerbi
 ms.subservice: pbi-explore

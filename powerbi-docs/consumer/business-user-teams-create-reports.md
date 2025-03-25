@@ -1,8 +1,8 @@
 ---
 title: Create reports from data in Microsoft Teams
 description: Learn to create, explore, and enhance Power BI reports from a semantic model in your organization in Microsoft Teams. 
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
