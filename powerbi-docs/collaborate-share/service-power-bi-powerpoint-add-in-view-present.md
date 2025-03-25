@@ -8,8 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-LocalizationGroup: Share your work
-ms.date: 12/11/2024
+ms.date: 03/25/2025
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -111,7 +110,11 @@ The menu allows you to set the view to live data or to a snapshot. Two snapshot 
 
 To restore the interactive view, select **Live data**. The live report page or visual will reload in the state it was last in, but with the latest data from Power BI.
 
+
+
 > [!NOTE]
+> You can also switch between the Live data, Snapshot, and Public snapshot views using [keyboard shortcuts](#keyboard-shortcuts).
+>
 > The view menu with the snapshot options requires Office version 2312 (Build 17126) or later. If you're Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
 >
 > You can only switch between **Live Data** and **Snapshot** in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the the choice you made in the desktop application. So whatnever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
@@ -184,20 +187,19 @@ Expands or collapses the toolbar across the bottom of the report or visual. This
 
 To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
 
-|Keyboard shortcut       | Action                        |
-|------------------------|-------------------------------|
-|                        |                               |
-|**General**             |                               |
-|**Ctrl + Enter**        |Focus in                       |
-|**Ctrl + [**            |Focus out                      |
-|**Ctrl + ]**            |Move forward over open panels  |
-|**Ctrl + Shift + ]**    |Move backward over open panels |
-|**Ctrl**                |Hide Power BI tooltips         |
-|                        |                               |
-|**Live/Snapshot** |                               |
-|**Ctrl + Shift + 7**    |Switch to Live data            |
-|**Ctrl + Shift + 8**    |Switch to Snapshot             |
-|**Ctrl + Shift + 9**    |Switch to Public snapshot      |
+|Keyboard shortcut       | Action                                                                  |
+|------------------------|-------------------------------------------------------------------------|
+|**General**             |                                                                         |
+|**Ctrl + Enter**        |Focus in                                                                 |
+|**Ctrl + [**            |Focus out                                                                |
+|**Ctrl + ]**            |Move forward over open panels                                            |
+|**Ctrl + Shift + ]**    |Move backward over open panels                                           |
+|**Ctrl**                |Hide Power BI tooltips                                                   |
+|                        |                                                                         |
+|**Live/Snapshot**       |                                                                         |
+|**Ctrl + Shift + 7**    |Switch to [Live data](#freeze-a-snapshot-of-the-current-view)            |
+|**Ctrl + Shift + 8**    |Switch to [Snapshot](#freeze-a-snapshot-of-the-current-view)             |
+|**Ctrl + Shift + 9**    |Switch to [Public snapshot](#freeze-a-snapshot-of-the-current-view)      |
 
 ## Related content
 
