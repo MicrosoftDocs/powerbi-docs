@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/25/2025
+ms.date: 03/27/2025
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -102,7 +102,7 @@ Every time you open your presentation, the report page or visual reloads into th
 
 ![Screenshot of add-in show as saved image option in add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png)
 
-The menu allows you to set the view to live data or to a snapshot. Two snapshot options provide you some control over who will be able to see the Power BI content in the snapshot:
+The menu allows you to set the view to live data or to a snapshot (you can also switch views with [keyboard shortcuts](#keyboard-shortcuts)). Two snapshot options provide you some control over who will be able to see the Power BI content in the snapshot:
 
 * **Snapshot**: When you choose Snapshot, only users who have permission to view the report in Power BI will be able see the static image of the Power BI content. Users who don't have permission will be able to request access. This option helps keep you from inadvertently showing Power BI content to unauthorized users.
 
@@ -110,12 +110,8 @@ The menu allows you to set the view to live data or to a snapshot. Two snapshot 
 
 To restore the interactive view, select **Live data**. The live report page or visual will reload in the state it was last in, but with the latest data from Power BI.
 
-
-
 > [!NOTE]
-> You can also switch between the Live data, Snapshot, and Public snapshot views using [keyboard shortcuts](#keyboard-shortcuts).
->
-> The view menu with the snapshot options requires Office version 2312 (Build 17126) or later. If you're Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
+> The view menu with the snapshot options requires Office version 2312 (Build 17126) or later. If your Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
 >
 > You can only switch between **Live Data** and **Snapshot** in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the the choice you made in the desktop application. So whatnever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
 
