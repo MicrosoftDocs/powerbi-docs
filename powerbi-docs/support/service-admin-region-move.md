@@ -28,48 +28,60 @@ The location selected during sign-up determines your default data region. Howeve
 
 ## Prepare
 
-The migration process moves all tenant data to the new region. The GUID assigned to datasets, reports, dashboards, and other content don't change. However, there are some limitations you should be aware of and some preparation steps you need to take.
+The remapping process deletes all the tenant’s data and configuration. You will need to backup the data and information in your tenant and restore it post the re-mapping.
 
 ### Awareness
 
-- **The end-to-end migration process might take up to six months**. We prioritize service reliability and deployment schedules can change, so we might need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
-- During the migration process, it's possible to encounter unforeseen issues that might result in multiple failures. Allow for multiple attempts to ensure a successful migration.
+- We prioritize service reliability and deployment schedules can change, so we might need to reschedule during the re-mapping at any time.
 
-- Migration requires about six hours of down time. During migration, users can't access Power BI and an error message similar to the one shown in the following screenshot is displayed. The actual down time depends on the volume of data to be migrated.
+- Remapping requires ~3 hours down time. During the remapping, users cannot access Power BI and will see the "owl error message". This applies to Premium capacities as well.  
 
-  :::image type="content" source="media\service-admin-region-move\user-error-message.png" alt-text="Screen capture showing example error message shown to users during migration.":::
+- The remap process will cause all data and metadata in the tenant to be deleted. 
 
-- Capacities and Premium workspaces can't be migrated.
-- Power BI Premium Per User (PPU) capacity are deleted before migration starts. After the migration, PPU capacity is recreated at first PPU user sign-in. For more information about PPU licenses, see [Power BI Premium Per User](../enterprise/service-premium-per-user-faq.yml).
-- After migration, Excel workbooks that use the Analyze in Excel feature might fail to refresh. You might need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Start in Power BI with Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
-- Push datasets might not be migrated. If they can't be migrated, you need to delete the datasets.
-- You have to reconfigure data gateways after migration. To learn more about this step, read [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
-- Cross region workspace migration does not support semantic models in large model storage mode. To migrate a semantic model in large-model storage mode, please use backup restore. For more information, read [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md) and [Manage data storage in Power BI workspaces](../admin/service-admin-manage-your-data-storage-in-power-bi.md).
-- Some usage data collected before migration is unavailable after migration. Usage data in the following sources will be lost:
-  - [Power BI Activity Log](../admin/service-admin-auditing.md)
-  - View count in [Lineage view](../collaborate-share/service-data-lineage.md)
-  - [Data protection metrics report](/fabric/governance/use-microsoft-purview-hub)
-  - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
-- If Fabric Metadata is linked to the Purview Data Map, it continues to be stored in the home region of the tenant. You can choose to delete the assets manually by navigating to Microsoft Purview and following the steps described here: [Asset management in the Microsoft Purview Data Catalog.](/purview/catalog-asset-details#delete-asset/)
+- It's the customer's responsibility to backup and restore their data as the support team cannot help with that. However, if you encountered any te
 
 ### Preparation steps
 
    Our support team works with you to verify that the following steps are done to prepare for the migration:
 
-- We can't migrate capacities and Premium workspaces, so you have to delete all capacities before migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
+- All Microsoft Fabric or Power BI Premium capacities must be removed by the customer as they are not retained during the remap. The capacity admin will need to re-provision capacities as needed.
 
-   - To avoid conflicts during migration, delete any gateways that are already in the target region.
+- Private links must be deleted prior to the Tenant Remap execution.
 
-- To keep user activity logs, follow the steps in [Track user activities in Power BI](../admin/service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
+- Some usage data collected before remapping is unavailable after remapping. Usage data in the following sources will be lost:
+  - [Power BI Activity Log](/power-bi/admin/service-admin-auditing) - Users should download the activity logs before the remapping. Alternatively, users may use the [Office 365 audit log](/power-bi/admin/service-admin-auditing) data to obtain equivalent activity details.
+  - View count in [Lineage view](/power-bi/collaborate-share/service-data-lineage)
+  - [Data protection metrics report](/power-bi/admin/service-security-data-protection-metrics-report)
+  - [Usage metrics (Preview)](/power-bi/collaborate-share/service-modern-usage-metrics)
+  
+- If [Azure Log Analytics (Preview)](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) is being used, the workspaces need to be detached from Azure Log Analytics before the remapping, and re-attach after the remapping.
 
-- **All Fabric items have to be deleted individually** before deleting the capacity or workspace. Deleting the capacity or workspaces does not delete the Fabric items immediately. 
-- All Fabric trial capacities have to be deleted before the migration. To delete Fabric trial capacities, **the users who own** the trial capacity need to cancel the trial from the Me profile at least one and a half days before the migration.
+### Backing up the tenant
+
+- The customer should back up their tenant
+- Run the scanner API to grab as much data as possible about 
+- Lineage
+- Permissions
+- Scheduled refresh
+- Subscriptions
+- Gateways
+- Gateway data source permissions
+- SCCs
+- Power BI reports (limitations applied - Download a report from the Power BI service to Power BI Desktop) 
+- Semantic models - How to Backup and restore Power BI Premium semantic models
+- Dataflows - exporting json and importing: Power Query template (preview) 
+- Inventory all the gateways to data which may have been set up for Power BI, PowerApps, Flow, and Logic Apps as these will all need to be renewed after the tenant has been re-mapped.
+- Take screenshots of all dashboards and record as much information regarding each in order to help with the rebuilding process in the new tenant.
+- Take notes/screenshots of items that cannot be exported.
+- Fabric artifacts - Back up the definitions to Git and copy any data that needs to be retained to an external location like ADLS
+
 
 ## Request a region move
 
-To find out the best way to contact support, read [Power BI support options](service-support-options.md). Most admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/support) to submit a service request. Use the following steps to get started:
+To find out the best way to contact support, read [how to create a support csae for Power BI and Fabric](/power-bi/support/create-support-ticket). Use the following steps to get started:
 
-1. Go to [Power Platform Admin Center Help + support](https://admin.powerplatform.microsoft.com/support) and sign in using admin credentials.
+1. In the [Admin Portal](https://app.powerbi.com/admin-portal/supportCenter?experience=power-bi), navigate to **Help + Support** and click on **New support request.**
+
 1. Select **New support request**, then select the following options to request a region move.
    - Product: Power BI or Fabric Admin & Management
    - Tell us what you need help with: **Move to a different region**
@@ -97,77 +109,107 @@ Be sure to provide contact details for someone who can act as the point of conta
 
 Support reviews the submitted information, including your tenant object ID, current data region, and target data region. After details are confirmed, we coordinate the proposed migration time frame with you.
 
-## During the region move
-
-- Don't do any manual or scheduled refreshes until after migration is complete.
-- Support copies your data to the new region. Power BI isn't available to users during the move.
-
 ## After the region move
 
-When migration is complete, you can access Power BI in about 20-30 minutes. Support contacts you to make sure everything is working.
+When the remap is complete, you can access Power BI in about 20-30 minutes. Support contacts you to make sure everything is working.
 
 Do the following steps to recreate the configuration of the original region:
 
-1. Recreate capacities and move workspaces back to Premium. Read more about this step in [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md).
-1. Recreate push datasets if they were deleted. For more information, see [Real-time streaming in Power BI](../connect-data/service-real-time-streaming.md) to learn how to push data into a dataset.
-1. Reconfigure your data gateways. Follow the steps in [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
-1. Update the connection string or redownload the ODC connection for datasets that didn't refresh. Excel workbooks that use the Analyze in Excel feature might fail to refresh. Follow the steps in [Start in Power BI with Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
-1. Regenerate embedded links that didn't reconnect. Links to Power BI that are embedded in content might fail to connect when migration is complete. For example, an embedded link in SharePoint might result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI, and then update the locations where they're used. To fix this issue, follow the procedure in [Embed a report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md).
+- Check/update tenant settings
 
-To verify that the default region for data storage was moved, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
+  - Set ADLS account for dataset backup/restore
+  
+- Create SPN profiles
 
+- Create capacities. Read more about this step in [Configure and manage capacities in Power BI Premium](/power-bi/enterprise/service-admin-premium-manage).
+
+  - Update settings
+  
+  - Assign admin/contributors
+  
+- Create gateways
+
+  - Create data sources – credentials would need to be set manually
+  
+  - Follow the steps in [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
+  
+- Create Shared Cloud Connections (SCC)
+
+  - Set permissions
+  
+- Create workspaces
+
+  - Update Power BI settings
+  
+  - Set dataflow storage if appropriate
+  
+  - Re-connect log analytics if needed
+  
+  - Re-connect git
+  
+  - Re-attach ADLS storage for dataset backups (preferably set at the tenant level)
+  
+  - Update permissions
+  
+- Create/import Dataflows
+
+  - Set refresh schedules
+  
+- Upload pbix files
+
+  - Set refresh schedules
+  
+  - Set permissions
+  
+- Create datasets
+
+  - Restore from ADLS (only v3 models can be restored, restored models are in Large Storage mode)
+  
+  - Set refresh schedules
+  
+  - Set permissions
+  
+- Create interactive reports
+
+  - Rebind reports on new semantic model GIUDs
+  
+  - Set permissions
+  
 ## Frequently asked questions
 
-### Can I migrate back to the original region? If yes, what's the process so that I don't lose data?
+1. __May I pick specific hours and dates on which I want the remapping to occur?__ 
 
-No, you can't revert to using the old region.
+   Yes. We ask you to pick a time and date.
+   
+1. __Will this affect my O365 subscription?__ 
 
-### Is my data deleted immediately from the old region? If not, how long is it kept and do I have access to it?
+   No, this will only affect the Power BI subscriptions
+   
+1. __Will this apply to all my Power BI subscriptions, or may I keep some in their original location?__ 
 
-Data is retained in the old region for 30 days and is then deleted. Customers don't have access to data in the old region after migration.
+   No, this will apply to all Power BI subscriptions associated with the tenant.
+   
+1. __Will I lose all my Apps, datasets, data models, reports, and dashboards?__ 
 
-### What happens to my Microsoft 365 groups, SharePoint sites, etc.? Are they also migrated?
+   Unfortunately, yes.
+   
+1. __Will I lose all the personal and enterprise gateways I have created to connect to my various data sources?__ 
 
-We only migrate Power BI-specific resources. Your Microsoft 365 groups and SharePoint sites aren't touched.
+   Unfortunately, yes. All gateways associated with Power BI, PowerApps, Flow, and Logic Apps will need to be renewed after the re-mapping has been completed.
+   
+1. __May I start a new Power BI subscription in the new data center location and then migrate my existing data over when a data remapping solution is implemented?__ 
 
-### Can I request that some of my data be migrated to a different region?
+   Yes & No. Yes, you may start a new subscription, but it will have to have a different company name otherwise it will simply be mapped to your existing data center. As for the migration of data from one tenant into another existing tenant for a different customer, that solution is not currently on our roadmap, but we will investigate and determine feasibility.
+   
+1. __Can I migrate or merge my Power BI tenant into a different tenant (for example, because of a company merger)?__
 
-No, migration of data to different regions isn't a supported scenario.
+   No, migration from one tenant to another isn't possible.
+   
+1. __My allowlist contains Power BI IP ranges that are used to access some data sources. Do I need to update the IP ranges to match the new location?__
 
-<a name='does-migration-change-any-of-my-data-or-settings-for-azure-active-directory'></a>
+   Yes. Because it’s a new location, the IP ranges are also changing, and the ranges need to be updated. [Download the Azure IP Ranges JSON file](https://www.microsoft.com/download/details.aspx?id=56519) to identify the needed IP ranges.
+   
+1. __Is there a cost to have my tenant moved to a different region?__
 
-### Does migration change any of my data or settings for Microsoft Entra ID?
-
-No, migration doesn't affect anything outside of Power BI.
-
-### Can I use Power BI REST APIs for read-only operations during migration?
-
-No, using Power BI during tenant migration activity isn't recommended.
-
-### Why do I need to provide three proposed migration dates?
-
-We need to ensure that migration happens outside of the production deployment window. This time frame is subject to change on a weekly basis. We can only confirm the actual migration date five days before the migration.
-
-### Can I request migration during weekdays (if my company allows) or on any public holiday recognized by my organization?
-
-Yes, you can request migration during weekdays or public holidays.
-
-### How do I verify my data is now stored in the requested region?
-
-Follow the steps in [Find where data is stored](../admin/service-admin-where-is-my-tenant-located.md). You should see the new region next to **Your data is stored in**.
-
-### Can I migrate or merge my Power BI tenant into a different tenant (for example, because of a company merger)?
-
-No, migration from one tenant to another isn't possible.
-
-### After migration, is it normal to still see some refreshes happening from the old tenant location?
-
-Refresh in the old region should stop after migration.
-
-### My allowlist contains Power BI IP ranges that are used to access some data sources. Do I need to update the IP ranges to match the new location?
-
-Yes. Because it’s a new location, the IP ranges are also changing, and the ranges need to be updated.  [Download the Azure IP Ranges JSON file](https://www.microsoft.com/download/details.aspx?id=56519) to identify the needed IP ranges.
-
-### Is there a cost to have my tenant moved to a different region?
-
-No, there's no cost charged for region migration. Customers that have any paid licenses can migrate. A global administrator must request the operation.
+   No, there's no cost charged for region remapping. Customers that have any paid license can migrate. A global administrator must request the operation.
+   
