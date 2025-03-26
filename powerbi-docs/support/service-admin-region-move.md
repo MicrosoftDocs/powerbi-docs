@@ -13,40 +13,41 @@ ms.custom: template-how-to; subject-moving-resources
 # Move between regions
 
 > [!IMPORTANT]
-> At this time, we don't offer cross-region tenant migration for either Power BI or Fabric capacities. Please consider using [Multi-Geo capacities](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium). 
+> At this time, we don't offer cross-region tenant migration for either Power BI or Fabric capacities. Consider using [Multi-Geo capacities](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium). 
 
-The location selected during sign-up determines your default data region. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI or Fabric resources stored in Azure isn’t supported. If you need to change your default data location, i.e. home region, from the current region to another region, you have to contact Microsoft support to manage the migration for you.
+The location selected during sign-up determines your default data region. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI or Fabric resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact Microsoft support to manage the migration for you.
 
 > [!CAUTION]
-> This article describes how to request a tenant re-map to a different region. Be sure you're aware of the steps you have to do before and after the re-mapping. The tenant re-map process leads to data loss and requires reconfiguration of your tenant as described below. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
+> This article describes how to request a tenant remap to a different region. Be sure you're aware of the steps you have to do before and after the remapping. The tenant remap process leads to data loss and requires reconfiguration of your tenant. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
 
 ## Prerequisites
 
-- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administration roles](../admin/service-admin-role.md). We can't help identify your global administrator for you. Look for global administrator role holders in Microsoft 365 or Microsoft Entra ID or ask your help desk.
+- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administration roles](../admin/service-admin-role.md). We can't help identifying your global administrator for you. Look for global administrator role holders in Microsoft 365 or Microsoft Entra ID or ask your help desk.
+
 - We must receive written approval confirming your awareness and agreement of the effect of the tenant migration on your organization.
 - You must provide a point of contact for after business hours during the migration.
 
 ## Prepare
 
-The remapping process deletes all the tenant’s data and configuration. You will need to backup the data and information in your tenant and restore it post the re-mapping.
+The remapping process deletes all the tenant’s data and configuration. You need to back up the data and information in your tenant and restore it post the remapping.
 
 ### Awareness
 
-- We prioritize service reliability and deployment schedules can change, so we might need to reschedule during the re-mapping at any time.
+- We prioritize service reliability and deployment schedules can change, so we might need to reschedule during the remapping at any time.
 
-- Remapping requires ~3 hours down time. During the remapping, users cannot access Power BI and will see the "owl error message". This applies to Premium capacities as well.  
+- Remapping requires ~3 hours down time. During the remapping, users can't access Power BI and will see the "owl error message". This applies to Premium capacities as well.  
 
-- The remap process will cause all data and metadata in the tenant to be deleted. 
+- The remap process causes all data and metadata in the tenant to be deleted. 
 
-- It's the customer's responsibility to backup and restore their data as the support team cannot help with that. However, if you encountered any te
+- It's the customer's responsibility to back up and restore their data as the support team can't help with those actions. However, if you encountered any technical issue during the back up and restore, the support team can help with troubleshooting. 
 
 ### Preparation steps
 
    Our support team works with you to verify that the following steps are done to prepare for the migration:
 
-- All Microsoft Fabric or Power BI Premium capacities must be removed by the customer as they are not retained during the remap. The capacity admin will need to re-provision capacities as needed.
+- All Microsoft Fabric or Power BI Premium capacities must be removed by the customer as they aren't retained during the remap. The capacity admin needs to re-provision capacities as needed.
 
-- Private links must be deleted prior to the Tenant Remap execution.
+- Private links must be deleted before the Tenant Remap execution.
 
 - Some usage data collected before remapping is unavailable after remapping. Usage data in the following sources will be lost:
   - [Power BI Activity Log](/power-bi/admin/service-admin-auditing) - Users should download the activity logs before the remapping. Alternatively, users may use the [Office 365 audit log](/power-bi/admin/service-admin-auditing) data to obtain equivalent activity details.
@@ -68,11 +69,14 @@ The remapping process deletes all the tenant’s data and configuration. You wil
 - Gateway data source permissions
 - SCCs
 - Power BI reports (limitations applied - Download a report from the Power BI service to Power BI Desktop) 
-- Semantic models - How to Backup and restore Power BI Premium semantic models
+- Semantic models - How to Back up and restore Power BI Premium semantic models
+
 - Dataflows - exporting json and importing: Power Query template (preview) 
-- Inventory all the gateways to data which may have been set up for Power BI, PowerApps, Flow, and Logic Apps as these will all need to be renewed after the tenant has been re-mapped.
+- Inventory all the gateways to data that have been set up for Power BI, PowerApps, Flow, and Logic Apps.  Those gateways will need to be renewed after the tenant has been remapped.
+
 - Take screenshots of all dashboards and record as much information regarding each in order to help with the rebuilding process in the new tenant.
-- Take notes/screenshots of items that cannot be exported.
+- Take notes/screenshots of items that can't be exported.
+
 - Fabric artifacts - Back up the definitions to Git and copy any data that needs to be retained to an external location like ADLS
 
 
@@ -117,9 +121,9 @@ Do the following steps to recreate the configuration of the original region:
 
 - Check/update tenant settings
 
-  - Set ADLS account for dataset backup/restore
-  
-- Create SPN profiles
+  - Set ADLS account for dataset back up/restore
+    
+- Create Service Principals Names (SPN) profiles
 
 - Create capacities. Read more about this step in [Configure and manage capacities in Power BI Premium](/power-bi/enterprise/service-admin-premium-manage).
 
@@ -143,10 +147,10 @@ Do the following steps to recreate the configuration of the original region:
   
   - Set dataflow storage if appropriate
   
-  - Re-connect log analytics if needed
-  
-  - Re-connect git
-  
+  - Reconnect log analytics if needed
+    
+  - Reconnect git
+    
   - Re-attach ADLS storage for dataset backups (preferably set at the tenant level)
   
   - Update permissions
@@ -183,11 +187,11 @@ Do the following steps to recreate the configuration of the original region:
    
 1. __Will this affect my O365 subscription?__ 
 
-   No, this will only affect the Power BI subscriptions
+   No, the remap only affects the Power BI subscriptions
    
-1. __Will this apply to all my Power BI subscriptions, or may I keep some in their original location?__ 
+1. __Will the remap apply to all my Power BI subscriptions, or may I keep some in their original location?__ 
 
-   No, this will apply to all Power BI subscriptions associated with the tenant.
+   No, the remap applies to all Power BI subscriptions associated with the tenant.
    
 1. __Will I lose all my Apps, datasets, data models, reports, and dashboards?__ 
 
@@ -195,11 +199,11 @@ Do the following steps to recreate the configuration of the original region:
    
 1. __Will I lose all the personal and enterprise gateways I have created to connect to my various data sources?__ 
 
-   Unfortunately, yes. All gateways associated with Power BI, PowerApps, Flow, and Logic Apps will need to be renewed after the re-mapping has been completed.
+   Unfortunately, yes. All gateways associated with Power BI, PowerApps, Flow, and Logic Apps will need to be renewed after the remapping has been completed.
    
 1. __May I start a new Power BI subscription in the new data center location and then migrate my existing data over when a data remapping solution is implemented?__ 
 
-   Yes & No. Yes, you may start a new subscription, but it will have to have a different company name otherwise it will simply be mapped to your existing data center. As for the migration of data from one tenant into another existing tenant for a different customer, that solution is not currently on our roadmap, but we will investigate and determine feasibility.
+   Yes & No. Yes, you may start a new subscription, but it will have a different company name otherwise it will be mapped to your existing data center. Cross tenant data migration, the migration of data from one tenant into another existing tenant, isn't currently on our roadmap.
    
 1. __Can I migrate or merge my Power BI tenant into a different tenant (for example, because of a company merger)?__
 
