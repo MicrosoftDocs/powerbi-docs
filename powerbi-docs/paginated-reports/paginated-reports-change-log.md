@@ -18,7 +18,7 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
-## May 2025
+## March 2025
 
 Version 15.7.1814.616, releasd March 25, 2025
 
