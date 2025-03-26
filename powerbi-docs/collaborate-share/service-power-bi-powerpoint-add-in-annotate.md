@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/20/2025
+ms.date: 03/27/2025
 ---
 
 # Create data point annotations
@@ -43,13 +43,18 @@ Although it is not possible to add new annotations in presentation mode, users c
 
 ## Create an annotation
 
-To utilize annotations, you first need to embed a single visual within the add-in in a slide. Then, simply select a data point on the visual, right-click, and choose “Annotate.” You can then begin typing your text.
+To create an annotation, you first need to
+1. Embed a single visual within the add-in in a slide, or choose a visual that you’ve already embedded in the presentation.
 
-:::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-select-annotation.png" alt-text="Screenshot showing the annotation option on the data point context menu.":::
- 
-You can reference the data point’s measure value and category values in the annotation text itself, ensuring the content you are adding is connected to the actual data point. Use the “/” key to get a menu with the options that can be included in the annotation text.
+1. Select the data point on the visual that you want to annotation, open the context menu, and choose **Annotate**.
+
+    :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-select-annotation.png" alt-text="Screenshot showing the annotation option on the data point context menu.":::
+
+1. Type your text. Type "/" to insert a reference to the data point's measure and category values. Choose the relevant option from the menu that appears. References ensure the content you're adding is connected to the actual data point and will update when the data updates.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-format-annotation.png" alt-text="Screenshot showing the formatting toolbar for annotations.":::
+
+[ADD INFO ABOUT FORMATTING]
 
 ## Mananage annotation visibility
 
@@ -70,7 +75,7 @@ A new action for annotations is now available in the footer (Data actions->Annot
 * Stacked area chart
 * 100% Stacked area chart
 * Line and stacked column chart
-* Line and clusterd column chart
+* Line and clustered column chart
 
 ## Keyboard shortcuts
 
