@@ -72,7 +72,7 @@ The remapping process deletes all the tenant’s data and configuration. You nee
 - Semantic models - How to Back up and restore Power BI Premium semantic models
 
 - Dataflows - exporting json and importing: Power Query template (preview) 
-- Inventory all the gateways to data that were set up for Power BI, PowerApps, Flow, and Logic Apps.  Those gateways will need to be renewed after the tenant remaping.
+- Inventory all the gateways to data that were set up for Power BI, PowerApps, Flow, and Logic Apps.  Those gateways will need to be renewed after the tenant remapping.
 
 - To help with the rebuilding process in the new tenant, take screenshots of all dashboards and record as much information regarding each.
 
