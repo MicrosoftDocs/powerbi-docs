@@ -35,19 +35,19 @@ The remapping process deletes all the tenant’s data and configuration. You nee
 
 - We prioritize service reliability and deployment schedules can change, so we might need to reschedule during the remapping at any time.
 
-- Remapping requires ~3 hours down time. During the remapping, users can't access Power BI and will see the "owl error message". This applies to Premium capacities as well.  
+- Remapping requires ~3 hours down time. During the remapping, users can't access Power BI and see the "owl error message".  
 
 - The remap process causes all data and metadata in the tenant to be deleted. 
 
-- It's the customer's responsibility to back up and restore their data as the support team can't help with those actions. However, if you encountered any technical issue during the back up and restore, the support team can help with troubleshooting. 
+- It's the customer's responsibility to back up and restore their data as the support team can't help with those actions. However, if you encountered any technical issue during the back-up and restore, the support team can help with troubleshooting. 
 
 ### Preparation steps
 
    Our support team works with you to verify that the following steps are done to prepare for the migration:
 
-- All Microsoft Fabric or Power BI Premium capacities must be removed by the customer as they aren't retained during the remap. The capacity admin needs to re-provision capacities as needed.
+- You'll have to remove all the Microsoft Fabric or Power BI Premium capacities as they aren't retained during the remap. The capacity admin needs to re-provision capacities as needed.
 
-- Private links must be deleted before the Tenant Remap execution.
+- You'll have to delete Private links before the Tenant Remap execution.
 
 - Some usage data collected before remapping is unavailable after remapping. Usage data in the following sources will be lost:
   - [Power BI Activity Log](/power-bi/admin/service-admin-auditing) - Users should download the activity logs before the remapping. Alternatively, users may use the [Office 365 audit log](/power-bi/admin/service-admin-auditing) data to obtain equivalent activity details.
@@ -72,9 +72,10 @@ The remapping process deletes all the tenant’s data and configuration. You nee
 - Semantic models - How to Back up and restore Power BI Premium semantic models
 
 - Dataflows - exporting json and importing: Power Query template (preview) 
-- Inventory all the gateways to data that have been set up for Power BI, PowerApps, Flow, and Logic Apps.  Those gateways will need to be renewed after the tenant has been remapped.
+- Inventory all the gateways to data that were set up for Power BI, PowerApps, Flow, and Logic Apps.  Those gateways will need to be renewed after the tenant remaping.
 
-- Take screenshots of all dashboards and record as much information regarding each in order to help with the rebuilding process in the new tenant.
+- To help with the rebuilding process in the new tenant, take screenshots of all dashboards and record as much information regarding each.
+
 - Take notes/screenshots of items that can't be exported.
 
 - Fabric artifacts - Back up the definitions to Git and copy any data that needs to be retained to an external location like ADLS
@@ -82,7 +83,7 @@ The remapping process deletes all the tenant’s data and configuration. You nee
 
 ## Request a region move
 
-To find out the best way to contact support, read [how to create a support csae for Power BI and Fabric](/power-bi/support/create-support-ticket). Use the following steps to get started:
+To find out the best way to contact support, read [how to create a support case for Power BI and Fabric](/power-bi/support/create-support-ticket). Use the following steps to get started:
 
 1. In the [Admin Portal](https://app.powerbi.com/admin-portal/supportCenter?experience=power-bi), navigate to **Help + Support** and click on **New support request.**
 
@@ -115,7 +116,7 @@ Support reviews the submitted information, including your tenant object ID, curr
 
 ## After the region move
 
-When the remap is complete, you can access Power BI in about 20-30 minutes. Support contacts you to make sure everything is working.
+When the remap is complete, the support team will contact you to make sure everything is working.
 
 Do the following steps to recreate the configuration of the original region:
 
@@ -175,8 +176,8 @@ Do the following steps to recreate the configuration of the original region:
   
 - Create interactive reports
 
-  - Rebind reports on new semantic model GIUDs
-  
+  - Rebind reports on new semantic model GUIDs
+    
   - Set permissions
   
 ## Frequently asked questions
@@ -199,11 +200,11 @@ Do the following steps to recreate the configuration of the original region:
    
 1. __Will I lose all the personal and enterprise gateways I have created to connect to my various data sources?__ 
 
-   Unfortunately, yes. All gateways associated with Power BI, PowerApps, Flow, and Logic Apps will need to be renewed after the remapping has been completed.
+   Unfortunately, yes. All gateways associated with Power BI, PowerApps, Flow, and Logic Apps will need to be renewed after the remapping.
    
 1. __May I start a new Power BI subscription in the new data center location and then migrate my existing data over when a data remapping solution is implemented?__ 
 
-   Yes & No. Yes, you may start a new subscription, but it will have a different company name otherwise it will be mapped to your existing data center. Cross tenant data migration, the migration of data from one tenant into another existing tenant, isn't currently on our roadmap.
+   Yes & No. Yes, you may start a new subscription, but it must have a different company name to avoid mapping to the existing data center. Cross tenant data migration, the migration of data from one tenant into another existing tenant, isn't currently on our roadmap.
    
 1. __Can I migrate or merge my Power BI tenant into a different tenant (for example, because of a company merger)?__
 
