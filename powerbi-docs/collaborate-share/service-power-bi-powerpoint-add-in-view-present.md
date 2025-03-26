@@ -80,7 +80,7 @@ Data insights help you explore and find insights such as anomalies and trends as
 > [!NOTE]
 > Not all visuals can generate insights. See [Smart narrative considerations and limitations](../visuals/power-bi-visualization-smart-narrative.md#considerations-and-limitations) for details.
 >
-> Once you've copied an insight to the slide or clipboard, the text is static and won't change when the data changes. To update the insight, you need to re-generate it.
+> Once you've copied an insight to the slide or clipboard, the text is static and won't change when the data changes. To update the insight, you need to regenerate it.
 
 The following animation shows how you can generate data insights, edit them in the **Data insights** dialog, and then paste them directly into the slide or copy them into the notes.
 
@@ -102,7 +102,7 @@ Every time you open your presentation, the report page or visual reloads into th
 
 ![Screenshot of add-in show as saved image option in add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png)
 
-The menu allows you to set the view to live data or to a snapshot (you can also switch views with [keyboard shortcuts](#keyboard-shortcuts)). Two snapshot options provide you some control over who will be able to see the Power BI content in the snapshot:
+The menu allows you to set the view to live data or to a snapshot (you can also switch views with [keyboard shortcuts](#keyboard-shortcuts)). Two snapshot options provide you with some control over who will be able to see the Power BI content in the snapshot:
 
 * **Snapshot**: When you choose Snapshot, only users who have permission to view the report in Power BI will be able see the static image of the Power BI content. Users who don't have permission will be able to request access. This option helps keep you from inadvertently showing Power BI content to unauthorized users.
 
@@ -113,7 +113,7 @@ To restore the interactive view, select **Live data**. The live report page or v
 > [!NOTE]
 > The view menu with the snapshot options requires Office version 2312 (Build 17126) or later. If your Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
 >
-> You can only switch between **Live Data** and **Snapshot** in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the the choice you made in the desktop application. So whatnever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
+> You can only switch between **Live Data** and **Snapshot** in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the choice you made in the desktop application. So whatever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
 
 ## Share your presentation
 
