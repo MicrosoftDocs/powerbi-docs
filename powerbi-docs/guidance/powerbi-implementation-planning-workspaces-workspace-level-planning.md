@@ -185,6 +185,10 @@ Creating a workspace per department or team (or business unit) is a common appro
 
 Examples: _Finance Department_ or _Sales Team Analytics_
 
+The following diagram depicts a generalized example of how you might separate workspaces by department, team, or subject area. Option one and option two look the same; which items are included in each workspace would depend on the nature of the data that department, team, or subject area focuses on, and how they intend on using it.
+
+:::image type="content" source="media/powerbi-implementation-planning-workspace-planning/workspace-planning-area.svg" alt-text="Diagram shows separate workspaces for departments, teams, or subject areas." border="false":::
+
 The advantages of option 2 include:
 
 - Getting started with planning is simple. All content needed by the people that work in that department will reside in one workspace.
@@ -246,6 +250,10 @@ In Fabric, you might extend this separation to have distinct workspaces for othe
 - _Data transformation workspaces_ for data pipelines, notebooks, and dataflows that transform data.
 - _Distribution workspaces_ for scorecards, metric sets, and orgapps that distribute data to end-users.
 
+The following diagram depicts an example of how you might separate workspaces by item type.
+
+:::image type="content" source="media/powerbi-implementation-planning-workspace-planning/workspace-planning-item-type.svg" alt-text="Diagram shows separate workspaces for transformations, data sources, semantic models, and distribution." border="false":::
+
 > [!TIP]
 > Each [Fabric experience](/fabric/get-started/fabric-terminology) allows you to create various types of items. These items don't always fit neatly into the concept of what's considered data versus reporting (or analytical) content. One example is a [Fabric notebook](/fabric/data-engineering/author-execute-notebook) that can be used in many different ways, such as: loading and transforming data in a lakehouse, submitting Spark SQL queries, or analyzing and visualizing data with PySpark. When the workspace will contain mixed workloads, we recommend that you focus primarily on the workspace [purpose](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-purpose) and [ownership](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-ownership) of the content as described elsewhere in this article.
 
@@ -273,6 +281,14 @@ It is a common practice to use separate workspaces for different stages of conte
 - _Development workspaces_ for untested changes.
 - _Test workspaces_ for dedicated internal and user testing.
 - _Production workspaces_ for releasing content for consumers.
+
+In Fabric, you can add workspaces for each stage to a deployment pipeline. A deployment pipeline helps with content lifecycle management, by letting pipeline administrators compare and deploy changes between stages. Typically, you first publish content to the earliest stage (like _development_) and then deploy it to the next stage(s) (like deploying content from _development_ to _test_ workspaces, and then from _test_ to _production_ workspaces). An example of this setup is depicted as follows: 
+
+:::image type="content" source="media/powerbi-implementation-planning-workspace-planning/workspace-planning-stages-deployment-pipeline.svg" alt-text="Diagram shows three workspace stages contained in a deployment pipeline: development, test, and production." border="false":::
+
+You can also combine separating workspaces by both development stage and item type. If you use deployment pipelines, you can leverage _auto-binding_ to ensure that stages are linked. This ensures that—for instance—reports in the _report development workspace_ point to the correct semantic model in the _model development workspace_. You can see an example of this as follows:
+
+:::image type="content" source="media/powerbi-implementation-planning-workspace-planning/workspace-planning-stages-deployment-pipeline-autobinding.svg" alt-text="Diagram shows development, test, and production workspaces for reports and models in two separate deployment pipelines, which are linked via auto-binding." border="false":::
 
 Optionally, you might also have additional workspaces, such as the following:
 - _Private workspaces_ for creators to work in isolation. This is a common practice when collaborating on content by using Git integration, because each content creator works on their own separate copy (branch) of the content, to avoid disrupting each other's work. Then, creators can open a pull request to have their changes merged into another branch that syncs to the development workspace, which creators can view, but not modify or publish content to.
