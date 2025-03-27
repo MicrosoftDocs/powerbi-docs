@@ -52,7 +52,7 @@ To toggle between showing and hiding a visual's annotations, open the **Data opt
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-manage-visibility.gif" alt-text="Animated image showing how to show/hide annotations, and how to know that an annotation has a hidden annotation.":::
 
-You can also toggle between showing and hiding annotations using [keyboard shortcuts](#keyboard-shortcuts). The shortcuts are particularly useful in presentation mode, as they allow you to hide and display annotations without having to interrupt your presentation by opening a menu or expanding the footer. 
+You can also toggle between showing and hiding annotations using [keyboard shortcuts](#keyboard-shortcuts). The shortcuts are particularly useful in presentation mode, as they allow you to hide or display annotations without having to interrupt your presentation by opening a menu or expanding the footer. 
 
 ## Supported chart visuals
 
