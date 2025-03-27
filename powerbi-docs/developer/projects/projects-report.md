@@ -101,6 +101,8 @@ Using a `byConnection` reference, the following properties must be specified:
 |pbiModelDatabaseName     |   The remote semantic model ID.      |
 |connectionType     |   Type of connection. For service remote semantic model, this value should be `pbiServiceXmlaStyleLive`.      |
 |pbiModelVirtualServerName    |  An internal property that should have the value, `sobe_wowvirtualserver`.       |
+|pbiServiceModelId    |  An internal property that should have the value, `null`.       |
+|name    |  An internal property that should have the value, `EntityDataSource`.       |
 
 Example using `byConnection`:
 
