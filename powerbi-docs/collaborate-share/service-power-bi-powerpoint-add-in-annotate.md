@@ -23,14 +23,11 @@ Annotations you add to a visual are saved in the context of the specific add-in 
 
 * Whenever you or others view the slide that contains the visual in this add-in instance, the annotations are loaded as well.
 
-    > [!NOTE]
-    > Annotations are displayed whenever the data point is visible. If the data point disappears as the result of filtering, the annotation also disappears. Likewise, if the data updates and the data point no longer appears in the visual, the annotation won't appear either.
-
 * The annotations won't show up when you view the same visual in the Power BI service or any other place, including other add-in instances.
 
-An annotations is displayed whenever the data point it's attached to is visible. If the data point disappears as the result of filtering, the annotation also disappears. Likewise, if the data updates and the data point no longer appears in the visual, the annotation won't appear either.
+The fact that annotations are saved and stored with the add-in instance that the visual is embedded in means that you can have different sets of annotations for the same visual when it appears in other add-in instances. This makes it possible to tailor your annotations to the context they appear in.
 
-The fact that annotations are tied to the add-in instance that a visual is embedded in means that you can have multiple sets of annotations for the same visual - a different set for each add-in instance the visual is embedded in. This makes it possible to tailor your annotations to the context they appear in.
+Annotations are displayed whenever the data points they're attached to are visible. If an data point disappears as the result of filtering, any annotations it has also disappear. Likewise, if the data updates and a data point no longer appears in the visual, any annotations the data point had won't appear either.
 
 ## Create an annotation
 
