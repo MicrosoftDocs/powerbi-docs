@@ -1,8 +1,8 @@
 ---
 title: Use Copilot to create measure descriptions (preview)
 description: Learn how you can add descriptions to your semantic model measures with Fabric Copilot for Power BI.
-author: kfollis
-ms.author: kfollis
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -16,11 +16,15 @@ ms.collection: ce-skilling-ai-copilot
 
 Add descriptions to your semantic model measures with Fabric Copilot for Power BI. People building reports from your semantic model can see the name and description of your measures, making the description property essential documentation. Fabric Copilot can streamline your semantic model documentation by creating measure descriptions for you.
 
+:::image type="content" source="media/desktop-measure-copilot-descriptions/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/desktop-measure-copilot-descriptions/copilot-measure-description-model-view.png":::
+
 ## Turn on the preview feature
 
-To try this preview feature, you need to turn it on. 
+To try this preview feature in Power BI Desktop, you need to turn it on. 
 
 - In **Options** > **Preview features**, select **Measure descriptions with Copilot**.
+
+This preview feature is available when [editing a semantic model in the Power BI service](service-edit-data-models.md).
 
 Learn more about how to access to Fabric Copilot for Power BI on your tenant in the [Copilot requirements](../create-reports/copilot-introduction.md#copilot-requirements) section of the Copilot introduction article.
 
@@ -28,7 +32,7 @@ Learn more about how to access to Fabric Copilot for Power BI on your tenant in 
 
 1. Select an existing model measure in the Data pane of Model view to see the measure properties.  
 
-1. Select the **Create with Copilot** (preview) button under the **Description** textbox.  
+1. Select the **Create with Copilot (preview)** button under the **Description** textbox.  
 
 1. Review the measure description from Copilot, then select **Keep it**.  
 

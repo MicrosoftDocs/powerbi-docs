@@ -6,8 +6,8 @@ ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
-ms.date: 02/04/2025
+ms.topic: overview
+ms.date: 03/19/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,18 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## March 2025
+
+### View reports linked to a semantic model directly from your Power BI mobile app!
+
+Understanding which reports were created from a semantic model in Power BI is crucial to judging the consistency and reliability of data being used across different reports, particularly in collaborative environments where multiple stakeholders rely on accurate data to make informed decisions. When you know that reports are linked to a common semantic model, you can trust that metrics and calculations are standardized.
+
+To see a semantic model's related reports, open the model in the app and tap **Linked content** on the info pane. You'll see the related reports you have access to, including those located in different workspaces. The name of the workspace each report is located in is shown directly below the report's name.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-linked-content.png" alt-text="Screenshot showing the Linked content tab of the semantic model info pane in the Power BI mobile app." border="false":::
+
+[Check out our documentation!](./mobile-apps-dataset-refresh.md)
 
 ## February 2025
 

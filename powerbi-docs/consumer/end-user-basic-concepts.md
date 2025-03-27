@@ -1,8 +1,8 @@
 ---
 title: The Power BI service - basic concepts for beginners
 description: The Power BI service apps, workspaces, dashboards, reports, semantic models, and workbooks.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 ms.custom: video-removed
 ms.service: powerbi

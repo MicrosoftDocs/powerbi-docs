@@ -1,8 +1,8 @@
 ---
 title: Lead data-driven discussions in Microsoft Teams
 description: Learn how to easily share data with your team with the Power BI app in Teams channels, chats, and meetings.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
