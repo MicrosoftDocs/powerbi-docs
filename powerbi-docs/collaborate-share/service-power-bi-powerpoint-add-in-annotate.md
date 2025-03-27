@@ -21,6 +21,8 @@ In your annotations, you can reference the data point's measure and category val
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png":::
 
+## When and where do annotations show up?
+
 Annotations you add to a visual are saved in the context of the specific add-in instance where you embedded your visual, and are available only there. This means:
 
 * Whenever you or others view the slide that contains the visual in this add-in instance, the annotations are loaded as well.
