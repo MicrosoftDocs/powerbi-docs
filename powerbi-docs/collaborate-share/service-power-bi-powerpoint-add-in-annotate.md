@@ -13,7 +13,7 @@ ms.date: 03/27/2025
 
 # Create data point annotations
 
-Data point annotation is a PowerPoint Power BI add-in feature that enables you to attach text callouts to data points in visuals that you've added to your PowerPoint presentation via the add-in. These annotations make it possible for you to highlight and add commentary to specific points you want people to pay attention to. In your annotations, you can include references to the data point's measure and category values, ensuring that the content you're adding is connected to the actual data point and stays up-to-date when the data updates.
+Data point annotation is a PowerPoint Power BI add-in feature that enables you to attach text callouts to data points in [supported chart visuals](#supported-chart-visuals) that you've added to your PowerPoint presentation. These annotations make it possible for you to call attention to and comment on specific points you want to emphasize in your storytelling. In your annotations, you can reference the data point's measure and category values, ensuring that your annotation is connected to the actual data point and stays current when the data updates.
 
 This article explains how to add data point annotations to your visuals, how to manage annotation visibility, and provides other information about the feature.
 
@@ -44,43 +44,30 @@ To create an annotation, you first need to embed a single visual into the add-in
 1. Select outside the text box to complete the annotation. After you've completed the annotation, you can select and drag the box around to reposition it.
 
 > [!NOTE]
-> You can only format the text of the annotation. Other properties, such as box size and color, are determined by the add-in and the report's theme, and are not under the user's control.
+> You can only format the text of the annotation. Other properties, such as box size and color, are determined by the add-in and the report's theme, and aren't under the user's control.
 
 ## Manage annotation visibility
 
-You can choose to show or hide the annotations in a visual, depending on your needs. You can manage annotation visibility from either edit mode or presentation mode. 
+You can choose to show or hide the annotations in a visual, depending on your needs. It doesn't matter whether you're in edit mode or presentation mode - you can manage annotation visibility from either mode.
 
-To toggle between showing and hiding a visuals annotations, open the **Data options** menu and choose **Annotations**. When annotations exist but are hidden, a green dot appears on the Data options icon to indicate that hidden annotations exist that you can display, if desired.
+To toggle between showing and hiding a visual's annotations, open the **Data options** menu and choose **Annotations**. When there are hidden annotations, a green dot appears on the Data options icon to remind you that hidden annotations exist and can be displayed, if desired.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-manage-visibility.gif" alt-text="Animated image showing how to show/hide annotations, and how to know that an annotation has a hidden annotation.":::
 
-You can also toggle between showing and hidding annotations using [keyboard shortcuts](#keyboard-shortcuts).
+You can also toggle between showing and hiding annotations using [keyboard shortcuts](#keyboard-shortcuts).
 
-## Supported chart types
+## Supported chart visuals
 
 * All cartesian charts except Waterfall, Funnel, and Scatter charts.
 * Donut and Pie charts.
-
-* Stacked bar chart
-* Stacked column chart
-* Clustered bar chart
-* Clustered column chart
-* 100% Stacked bar chart
-* 100% Stacked column chart
-* Line chart
-* Area chart
-* Stacked area chart
-* 100% Stacked area chart
-* Line and stacked column chart
-* Line and clustered column chart
 
 ## Keyboard shortcuts
 
 |Keyboard shortcut       | Action                                                                  |
 |------------------------|-------------------------------------------------------------------------|
-|**Ctrl + Alt + I**      |Hide/show annotations in                                                 |
-|**Alt + H**             |Move focus to annotation toolbar                                         |
-|**Alt + Shift + I**     |Move focus to annotations group panels                                   |
+|**Ctrl + Alt + I**      |Hide/show annotations.                                                   |
+|**Alt + H**             |Move focus to annotation toolbar.                                        |
+|**Alt + Shift + I**     |Move focus to annotations group panels.                                  |
 
 ## Considerations and limitations
 
