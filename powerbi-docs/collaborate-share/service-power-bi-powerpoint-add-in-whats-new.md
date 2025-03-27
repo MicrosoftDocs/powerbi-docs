@@ -25,7 +25,7 @@ You can now add data point annotations to your visuals to make your storytelling
 > [!NOTE]
 > Data point annotation is only available on visuals that you've embedded as a single visual view, not as part of a page view.
 
-For more information, see [our documentation](./service-power-bi-powerpoint-add-in-annotate.md)!  
+For more information, check out [our documentation](./service-power-bi-powerpoint-add-in-annotate.md)!  
 
 ## December 2024
 
