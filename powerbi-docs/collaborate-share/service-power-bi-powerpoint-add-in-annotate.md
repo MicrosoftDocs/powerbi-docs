@@ -15,7 +15,7 @@ ms.date: 03/27/2025
 
 Data point annotation is a PowerPoint Power BI add-in feature that enables you to attach text callouts to data points in [supported chart visuals](#supported-chart-visuals) that you've added to your PowerPoint presentation. These annotations make it possible for you to call attention to and comment on specific points you want to emphasize in your storytelling. In your annotations, you can reference the data point's measure and category values, ensuring that your annotation is connected to the actual data point and stays current when the data updates.
 
-:::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint.":::
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png":::
 
 Annotations you add to a visual are saved in the context of the specific add-in instance where you embedded your visual, and are available only there. This means:
 
@@ -33,7 +33,7 @@ To create an annotation, you first need to embed a single visual into the add-in
 
 1. In edit mode, select the data point on the visual, open the context menu, and choose **Annotate**.
 
-    :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-select-annotation.png" alt-text="Screenshot showing the annotation option on the data point context menu.":::
+    :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-select-annotation.png" alt-text="Screenshot showing the annotation option on the data point context menu." lightbox="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-select-annotation.png":::
 
 1. Type your text into the text box. To insert a reference to the data point's measure or category value, type "/" and then choose the desired option from the menu that appears. Format the text as desired using the formatting toolbar.
 
