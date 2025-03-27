@@ -8,61 +8,61 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-LocalizationGroup: Share your work
 ms.date: 03/27/2025
 ---
 
 # Create data point annotations
 
-New enhancement that allows users to make their presentations even more engaging by adding data point annotations to the visuals incorporated into their slides.
+Data point annotation is a PowerPoint Power BI add-in feature that enables you to attach text callouts to data points in visuals that you've added to your PowerPoint presentation via the add-in. These annotations make it possible for you to highlight and add commentary to specific points you want people to pay attention to. In your annotations, you can include references to the data point's measure and category values, ensuring that the content you're adding is connected to the actual data point and stays up-to-date when the data updates.
+
+This article explains how to add data point annotations to your visuals, how to manage annotation visibility, and provides other information about the feature.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint.":::
- 
-Annotations enable users to add descriptive text directly to visualizations, offering contextual explanations or highlights that improve communication and understanding of the data being presented. This feature transforms data storytelling by allowing users to communicate insights with greater efficacy and enhance the engagement and informativeness of presentations.
 
-You can reference the data point’s measure value and category values in the annotation text itself, ensuring the content you are adding is connected to the actual data point.
+Annotations you add to a visual are saved in the context of the specific add-in instance where you embedded your visual, and are available only there. This means:
 
-It also means that you can have multiple sets of annotations for the same visualization; each set provides content that is truly in the context of the presentation you are building.
-
-### When and where do the annotations show up?
-
-Annotations you add to a visual are saved in the context of the specific add-in instance where you embedded your visual, and will be available only there. This means:
-
-* Whenever you or others view the slide that contains the visual in this add-in instance, the annotations will be loaded as well.
+* Whenever you or others view the slide that contains the visual in this add-in instance, the annotations are loaded as well.
 
     > [!NOTE]
-    > Annotations are displayed whenever the data point is visible. If the data point disappears as the result of filtering, the annotation also disappears. Likewise, if the data updates and the data point no longer appears in the visual, the annotation will not appear either.
+    > Annotations are displayed whenever the data point is visible. If the data point disappears as the result of filtering, the annotation also disappears. Likewise, if the data updates and the data point no longer appears in the visual, the annotation won't appear either.
 
 * The annotations won't show up when you view the same visual in the Power BI service or any other place, including other add-in instances.
 
-The fact that annotations are tied to the add-in instance that a visual is embedded in means that you can have multiple sets of annotations for the same visual - as different set for each add-in instance the visual is embedded in. This makes it possible to tailor your annotations to the context they appear in.
+An annotations is displayed whenever the data point it's attached to is visible. If the data point disappears as the result of filtering, the annotation also disappears. Likewise, if the data updates and the data point no longer appears in the visual, the annotation won't appear either.
 
-### Annotations in presentation mode 
-
-Although it is not possible to add new annotations in presentation mode, users can manage the visibility of annotations during presentations. Keyboard shortcuts make it possible to toggle annotations on and off with without having to interrupt with pulling up menus or expanding the footer.
+The fact that annotations are tied to the add-in instance that a visual is embedded in means that you can have multiple sets of annotations for the same visual - a different set for each add-in instance the visual is embedded in. This makes it possible to tailor your annotations to the context they appear in.
 
 ## Create an annotation
 
-To create an annotation, you first need to
-1. Embed a single visual within the add-in in a slide, or choose a visual that you’ve already embedded in the presentation.
+To create an annotation, you first need to embed a single visual into the add-in in a slide, or choose a visual that you’ve already embedded in the presentation. When you have such a visual:
 
-1. Select the data point on the visual that you want to annotation, open the context menu, and choose **Annotate**.
+1. In edit mode, select the data point on the visual, open the context menu, and choose **Annotate**.
 
     :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-select-annotation.png" alt-text="Screenshot showing the annotation option on the data point context menu.":::
 
-1. Type your text. Type "/" to insert a reference to the data point's measure and category values. Choose the relevant option from the menu that appears. References ensure the content you're adding is connected to the actual data point and will update when the data updates.
+1. Type your text into the text box. To insert a reference to the data point's measure or category value, type "/" and then choose the desired option from the menu that appears. Format the text as desired using the formatting toolbar.
 
-:::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-format-annotation.png" alt-text="Screenshot showing the formatting toolbar for annotations.":::
+    :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-format-annotation.png" alt-text="Screenshot showing the formatting toolbar for annotations.":::
 
-[ADD INFO ABOUT FORMATTING]
+1. Select outside the text box to complete the annotation. After you've completed the annotation, you can select and drag the box around to reposition it.
 
-## Mananage annotation visibility
+> [!NOTE]
+> You can only format the text of the annotation. Other properties, such as box size and color, are determined by the add-in and the report's theme, and are not under the user's control.
 
-A new action for annotations is now available in the footer (Data actions->Annotations) that allows users to hide or show annotations entirely. If annotations exist in the visual, but are currently hidden, you will see a badge notification indicating you that there are hidden annotations that you can reveal.
+## Manage annotation visibility
+
+You can choose to show or hide the annotations in a visual, depending on your needs. You can manage annotation visibility from either edit mode or presentation mode. 
+
+To toggle between showing and hiding a visuals annotations, open the **Data options** menu and choose **Annotations**. When annotations exist but are hidden, a green dot appears on the Data options icon to indicate that hidden annotations exist that you can display, if desired.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-manage-visibility.gif" alt-text="Animated image showing how to show/hide annotations, and how to know that an annotation has a hidden annotation.":::
 
+You can also toggle between showing and hidding annotations using [keyboard shortcuts](#keyboard-shortcuts).
+
 ## Supported chart types
+
+* All cartesian charts except Waterfall, Funnel, and Scatter charts.
+* Donut and Pie charts.
 
 * Stacked bar chart
 * Stacked column chart
@@ -82,13 +82,13 @@ A new action for annotations is now available in the footer (Data actions->Annot
 |Keyboard shortcut       | Action                                                                  |
 |------------------------|-------------------------------------------------------------------------|
 |**Ctrl + Alt + I**      |Hide/show annotations in                                                 |
-|**Alt + H**             |Move focus to annotation toolbar out                                     |
-|**Alt + Shift I**       |Move focus to annotations group panels                                   |
+|**Alt + H**             |Move focus to annotation toolbar                                         |
+|**Alt + Shift + I**     |Move focus to annotations group panels                                   |
 
 ## Considerations and limitations
 
-* Annotations are not supported in custom visuals.
-* Annotations are supported in all Power BI native Cartesians visuals, and in Pie and Donut charts.
+* Annotations aren't supported in custom visuals.
+* Annotations are supported in all Power BI native Cartesian visuals, and in Pie and Donut charts.
 * Annotations are available only when embedding a single visual, and not whole report page.  
 
 ## Related content
