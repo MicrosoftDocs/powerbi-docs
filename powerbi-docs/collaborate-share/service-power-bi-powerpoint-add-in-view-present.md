@@ -96,6 +96,10 @@ To generate data insights:
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-dialog.png" alt-text="Screenshot of insights dialog.":::
 
+## Add data point annotations to visuals
+
+TBD
+
 ## Freeze a snapshot of the current view
 
 Every time you open your presentation, the report page or visual reloads into the add-in, bringing fresh data from the Power BI service. There might be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [View](#add-in-side-pane) menu in the toolbar. Choosing one of the snapshot options turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you'll see the static view you saved.
@@ -143,6 +147,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 * **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
 * **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
+* **Annotations**: Show or hide any data point annotations that exist on the visual. When annotations are hidden, a green dot appears on the Data options icon to indicate that hidden annotations are present.
 * **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh doesn't trigger getting data from the data sources.
 * **Reset**: Provides two options:
    * **Sync**: Choose this option if you want to make sure you've got the latest version of the report or visual from the Power BI service, including any definition changes, such as new or deleted visuals, filters, or slicers.
@@ -191,6 +196,11 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 |**Ctrl + ]**            |Move forward over open panels                                            |
 |**Ctrl + Shift + ]**    |Move backward over open panels                                           |
 |**Ctrl**                |Hide Power BI tooltips                                                   |
+|                        |                                                                         |
+|**Annotations**         |                                                                         |
+|**Ctrl + Alt + I**      |Hide/show annotations.                                                   |
+|**Alt + H**             |Move focus to annotation toolbar.                                        |
+|**Alt + Shift + I**     |Move focus to annotations group panels.                                  |
 |                        |                                                                         |
 |**Live data/Snapshot**  |                                                                         |
 |**Ctrl + Shift + 7**    |Switch to [Live data](#freeze-a-snapshot-of-the-current-view)            |
