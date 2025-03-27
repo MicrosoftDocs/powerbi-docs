@@ -1,8 +1,8 @@
 ---
 title: Search and find your content using global search
 description: Learn how to use the search and filter tools in Power BI service to quickly find the content you want.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: 
 ms.custom: 
 ms.service: powerbi

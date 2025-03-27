@@ -1,8 +1,8 @@
 ---
 title: View a report
 description: This topic shows Power BI business users and end users a variety of ways to open and view a Power BI report.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
