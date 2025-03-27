@@ -9,10 +9,23 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 12/11/2024
+ms.date: 03/27/2025
 ---
 
 # What's new in the Power BI add-in for PowerPoint
+
+## March 2025
+
+### Data point annotations (preview)
+
+Data point annotations is a feature you can use to make your storytelling in PowerPoint even more engaging and effective. It enables you to attach text callouts to data points in Power BI visuals that you've embedded in your presentation using the add-in. These annotations make it possible for you to highlight and comment on the specific points you want to emphasize. The annotations can contain references to the data point's measure and category values, meaning that the data shown in your annotations will automatically stay up-to-date whenever the actual data changes.
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-whats-new/storytelling-annotation-appearance.png":::
+
+> [!NOTE]
+> Data point annotation is only available on visuals that you've embedded as a single visual view, not as part of a page view.
+
+[Check out our documentation](./service-power-bi-powerpoint-add-in-annotate.md)!  
 
 ## December 2024
 
@@ -141,6 +154,7 @@ Power BI's data insights help you find and explore insights such as anomalies an
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
 * [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

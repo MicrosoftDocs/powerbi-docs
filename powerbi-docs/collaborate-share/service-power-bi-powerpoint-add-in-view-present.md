@@ -201,6 +201,7 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
 * [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -74,6 +74,7 @@ For a summary of the ways the add-in differs when deployed in a national/regiona
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [The Power BI add-in for PowerPoint in national/regional clouds](./service-power-bi-powerpoint-add-in-national-clouds.md)
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
 * [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
