@@ -27,7 +27,7 @@ Annotations you add to a visual are saved in the context of the specific add-in 
 
 The fact that annotations are saved and stored with the add-in instance that the visual is embedded in means that you can have different sets of annotations for the same visual when it appears in other add-in instances. This makes it possible to tailor your annotations to the context they appear in.
 
-Annotations are displayed whenever the data points they're attached to are visible. If an data point disappears as the result of filtering, any annotations it has also disappear. Likewise, if the data updates and a data point no longer appears in the visual, any annotations the data point had won't appear either.
+Annotations are displayed whenever the data points they're attached to are visible. If a data point disappears as the result of filtering, any annotations it has also disappear. Likewise, if the data updates and a data point no longer appears in the visual, any annotations the data point had won't appear either.
 
 ## Create an annotation
 
