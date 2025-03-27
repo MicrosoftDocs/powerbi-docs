@@ -13,11 +13,9 @@ ms.date: 03/27/2025
 
 # Create data point annotations
 
-Data point annotation is a PowerPoint Power BI add-in feature that enables you to attach text callouts to data points in [supported chart visuals](#supported-chart-visuals) that you've added to your PowerPoint presentation. These annotations make it possible for you to call attention to and comment on specific points you want to emphasize in your storytelling.
+Data point annotation is a PowerPoint Power BI add-in feature that enables you to attach text callouts to data points in [supported chart visuals](#supported-chart-visuals) that you've added to your PowerPoint presentation as single visual views (not as parts of a page view). These annotations make it possible for you to call attention to and comment on specific points you want to emphasize in your storytelling.
 
-Data point annotations can be added to a visual only when it's embedded in the add-in as a single visual view, not as part of a page view.
-
-In your annotations, you can reference the data point's measure and category values. These references point to live data, ensuring that your annotation is connected to the actual data point and stays up-to-date when the data changes.
+In your annotations, you can reference the data point's measure and category values. These references point to the actual data point, ensuring that the data shown in your annotation will update automatically when the actual data changes.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png":::
 
