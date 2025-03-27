@@ -13,7 +13,11 @@ ms.date: 03/27/2025
 
 # Create data point annotations
 
-Data point annotation is a PowerPoint Power BI add-in feature that enables you to attach text callouts to data points in [supported chart visuals](#supported-chart-visuals) that you've added to your PowerPoint presentation. These annotations make it possible for you to call attention to and comment on specific points you want to emphasize in your storytelling. In your annotations, you can reference the data point's measure and category values, ensuring that your annotation is connected to the actual data point and stays current when the data updates.
+Data point annotation is a PowerPoint Power BI add-in feature that enables you to attach text callouts to data points in [supported chart visuals](#supported-chart-visuals) that you've added to your PowerPoint presentation. These annotations make it possible for you to call attention to and comment on specific points you want to emphasize in your storytelling.
+
+Data point annotations can be added to a visual only when it is embedded in the add-in as a single visual view, not as part of a page view.
+
+In your annotations, you can reference the data point's measure and category values. These references point to live data, ensuring that your annotation is connected to the actual data point and stays up-to-date when the data changes.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-appearance.png":::
 
@@ -29,7 +33,9 @@ Annotations are displayed whenever the data points they're attached to are visib
 
 ## Create an annotation
 
-To create an annotation, you first need to embed a single visual into the add-in in a slide, or choose a visual that you’ve already embedded in the presentation. When you have such a visual:
+To create an annotation, you first need to embed a single visual view into the add-in in a slide, or choose a single visual view that you’ve already embedded in the presentation. Annotations are not available on visuals that are part of an embedded page view.
+
+When you have your desired single visual view:
 
 1. In edit mode, select the data point on the visual, open the context menu, and choose **Annotate**.
 
@@ -56,7 +62,7 @@ You can also toggle between showing and hiding annotations using [keyboard short
 
 ## Supported chart visuals
 
-* All cartesian charts except Waterfall, Funnel, and Scatter charts.
+* All native Power BI Cartesian charts except Waterfall, Funnel, and Scatter charts.
 * Donut and Pie charts.
 
 ## Keyboard shortcuts
@@ -70,8 +76,9 @@ You can also toggle between showing and hiding annotations using [keyboard short
 ## Considerations and limitations
 
 * Annotations aren't supported in custom visuals.
-* Annotations are supported in all Power BI native Cartesian visuals, and in Pie and Donut charts.
-* Annotations are available only when embedding a single visual, and not whole report page.  
+* Annotations are supported in Pie and Donut charts, and in all native Power BI Cartesian charts except Waterfall, Funnel, and Scatter charts.
+* Annotations are available only when embedding a single visual view, and not a page view.
+* Users can't control the size and style of the annotation box. These properties are automatically determined by the report theme. Users can only control text formatting.
 
 ## Related content
 
