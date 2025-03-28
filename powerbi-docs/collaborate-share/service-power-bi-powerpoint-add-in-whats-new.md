@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/27/2025
+ms.date: 03/31/2025
 ---
 
 # What's new in the Power BI add-in for PowerPoint
@@ -18,12 +18,15 @@ ms.date: 03/27/2025
 
 ### Data point annotations (preview)
 
-You can now add data point annotations to your visuals to make your storytelling in PowerPoint even more engaging and effective. Data point annotations are text callouts that you attach to data points in Power BI visuals that you've embedded in your presentation using the add-in. These annotations make it possible for you to highlight and comment on the specific points you want to emphasize. The annotations can contain references to the data point's actual measure and category values, meaning that the data shown in your annotations will automatically stay up-to-date whenever the actual data changes.
+You can now add data point annotations to your visuals to make your storytelling in PowerPoint even more engaging and effective. Data point annotations are text callouts that you attach to data points in a Power BI visual that you've embedded in your presentation with the add-in. They enable you to highlight and comment on the specific points you want to emphasize.
+
+Data point annotations are saved and stored with the specific add-in instance where you embedded your visual, meaning that you can tailor your annotations to suit the specific context they appear in! If you embed the same visual in another slide and context, you can give it a whole different set of annotations.
+
+Annotations can contain references to the data point's actual measure and category values, meaning that the data shown in your annotations will automatically stay up-to-date whenever the actual data changes.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-whats-new/storytelling-annotation-appearance.png":::
 
-> [!NOTE]
-> Data point annotation is only available on visuals that you've embedded as a single visual view, not as part of a page view.
+Data point annotation is only available on visuals that you've embedded as a single visual view, not as part of a report page view.
 
 For more information, check out [our documentation](./service-power-bi-powerpoint-add-in-annotate.md)!  
 
