@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/27/2025
+ms.date: 03/31/2025
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -98,7 +98,9 @@ To generate data insights:
 
 ## Add data point annotations to visuals
 
-TBD
+Data point annotations enable you to add contextualized annotations to visuals that you've embedded in your presentation as single visuals (not as part of a whole report page). The annotations are saved and stored with the specific add-in instance where you embedded the visual, meaning that you can create an entirely different set of annotations for the same visual if you embed it in a different slide. To see for more information and to see how to create an data point annotation, see [Create data point annotations](./service-power-bi-powerpoint-add-in-annotate.md).
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-view-present/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-view-present/storytelling-annotation-appearance.png":::
 
 ## Freeze a snapshot of the current view
 
