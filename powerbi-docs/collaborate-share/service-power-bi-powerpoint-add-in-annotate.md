@@ -31,6 +31,8 @@ The fact that annotations are saved and stored with the add-in instance that the
 
 Annotations are displayed whenever the data points they're attached to are visible. If a data point disappears as the result of filtering, any annotations it has also disappear. Likewise, if the data updates and a data point no longer appears in the visual, any annotations the data point had won't appear either.
 
+Annotations are included in snapshots, if they are visible at the time the snapshot is taken.
+
 ## Create an annotation
 
 To create an annotation, you first need to embed a single visual view into the add-in in a slide, or choose a single visual view that you’ve already embedded in the presentation. Annotations aren't available on visuals that are part of an embedded page view.
@@ -58,7 +60,7 @@ To toggle between showing and hiding a visual's annotations, open the **Data opt
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-annotate/storytelling-annotation-manage-visibility.gif" alt-text="Animated image showing how to show/hide annotations, and how to know that an annotation has a hidden annotation.":::
 
-You can also toggle between showing and hiding annotations using [keyboard shortcuts](#keyboard-shortcuts). The shortcuts are particularly useful in presentation mode, as they allow you to hide or display annotations without having to interrupt your presentation by opening a menu or expanding the footer. 
+You can also toggle between showing and hiding annotations using [keyboard shortcuts](#keyboard-shortcuts). The shortcuts are particularly useful in presentation mode, as they allow you to hide or display annotations without having to interrupt your presentation by opening a menu or expanding the footer.
 
 ## Supported chart visuals
 
