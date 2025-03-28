@@ -149,7 +149,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 * **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
 * **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
-* **Annotations**: Show or hide any data point annotations that exist on the visual. When annotations are hidden, a green dot appears on the Data options icon to indicate that hidden annotations are present.
+* **Annotations**: Show or hide any data point annotations that exist on the visual. When annotations are hidden, a green dot appears on the Data options icon to indicate that hidden annotations are present. The Annotations option is only available for visuals that have been embedded as single visuals, not as part of a whole report page.
 * **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh doesn't trigger getting data from the data sources.
 * **Reset**: Provides two options:
    * **Sync**: Choose this option if you want to make sure you've got the latest version of the report or visual from the Power BI service, including any definition changes, such as new or deleted visuals, filters, or slicers.
