@@ -142,6 +142,7 @@ Use the following procedure to create a shareable link to a report in your prese
 ## Related content
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
+* [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
 * [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)

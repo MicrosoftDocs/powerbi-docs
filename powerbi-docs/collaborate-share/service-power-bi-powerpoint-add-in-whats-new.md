@@ -9,10 +9,26 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 12/11/2024
+ms.date: 03/31/2025
 ---
 
 # What's new in the Power BI add-in for PowerPoint
+
+## March 2025
+
+### Data point annotations (preview)
+
+You can now add data point annotations to your visuals to make your storytelling in PowerPoint even more engaging and effective. Data point annotations are text callouts that you attach to data points in a Power BI visual that you've embedded in your presentation with the add-in. They enable you to highlight and comment on the specific points you want to emphasize.
+
+Data point annotations are saved and stored with the specific add-in instance where you embedded your visual, meaning that you can tailor your annotations to suit the specific context they appear in! If you embed the same visual in another slide and context, you can give it a whole different set of annotations.
+
+Annotations can contain references to the data point's actual measure and category values, meaning that the data shown in your annotations will automatically stay up-to-date whenever the actual data changes.
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-whats-new/storytelling-annotation-appearance.png":::
+
+Data point annotation is only available on visuals that you've embedded as a single visual view, not as part of a report page view.
+
+For more information, check out [our documentation](./service-power-bi-powerpoint-add-in-annotate.md)!  
 
 ## December 2024
 
@@ -141,6 +157,7 @@ Power BI's data insights help you find and explore insights such as anomalies an
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
 * [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
