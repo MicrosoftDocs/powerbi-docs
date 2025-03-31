@@ -31,6 +31,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/create-reports/power-bi-change-owner.md",
+            "redirect_url": "/power-bi/create-reports/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-report-data.md",
             "redirect_url": "/power-bi/create-reports/copilot-pane-summarize-content",
             "redirect_document_id": true
