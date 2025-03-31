@@ -7,7 +7,7 @@ ms.reviewer: kfollis, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/13/2025
+ms.date: 03/31/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,16 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+
+## February 2025 QFE 5
+
+*Version 2.140.1577.0, Released: March 14, 2025*
+
+Bug fixes/improvements:
+
+* Addressed issues with host promise rejections in various views and dialogs, ensuring proper error handling and feedback.
 
 
 ## February 2025 QFE 4 

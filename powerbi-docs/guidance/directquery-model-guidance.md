@@ -50,7 +50,7 @@ A DirectQuery model can be optimized in many ways, as described in the following
     :::image type="content" source="media/directquery-model-guidance/directquery-model-guidance-native-query-window.png" alt-text="Screenshot showing Power BI Desktop and the Native Query window. A query statement joins two source tables." border="false":::
 
 - **Examine the use of calculated columns and data type changes**: DirectQuery models support adding calculations and Power Query steps to convert data types. However, better performance is often achieved by materializing transformation results in the relational database source, when possible.
-- **Do not use Power Query relative date filtering**: It's possible to define relative date filtering in a Power Query query. For example, to retrieve to the sales orders that were created in the last year (relative to today's date). This type of filter translates to an inefficient native query, as follows:
+- **Do not use Power Query relative date filtering**: It's possible to define relative date filtering in a Power Query query. For example, to retrieve the sales orders that were created in the last year (relative to today's date). This type of filter translates to an inefficient native query, as follows:
 
     ```SQL
     …
