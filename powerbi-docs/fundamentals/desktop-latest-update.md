@@ -51,20 +51,20 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Copilot and AI
-* Get a Copilot summary directly from your Teams message with a single click [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819884)  [[video]](https://youtu.be/2uQ2MTy9a1k)  
-* Copilot in Power BI to write DAX queries in DAX query view updates [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819885)  [[video]](https://youtu.be/2uQ2MTy9a1k)  
-* Improved language understanding for data questions [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819886)  [[video]](https://youtu.be/2uQ2MTy9a1k)  [[article]](../create-reports/copilot-ask-data-question.md)
-* Ad hoc calculation support for data questions [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819887)  [[video]](https://youtu.be/2uQ2MTy9a1k)  
+* Get a Copilot summary directly from your Teams message with a single click [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819884)  [[video]](https://youtu.be/dgxeFAUSfE8&t=96s)  
+* Copilot in Power BI to write DAX queries in DAX query view updates [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819885)  [[video]](https://youtu.be/dgxeFAUSfE8&t=96s)  
+* Improved language understanding for data questions [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819886)  [[video]](https://youtu.be/dgxeFAUSfE8&t=96s)  [[article]](../create-reports/copilot-ask-data-question.md)
+* Ad hoc calculation support for data questions [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819887)  [[video]](https://youtu.be/dgxeFAUSfE8&t=96s)  
 
 
 ### Reporting
-* Better storytelling with Data annotations in Power BI for PowerPoint (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819889)  [[video]](https://youtu.be/E7s_nVHgNVk)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-annotate.md)
-* Copy report object name  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819890)  [[video]](https://youtu.be/E7s_nVHgNVk)  
-* Referenced column highlights for visual calculations (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819891)  [[video]](https://youtu.be/E7s_nVHgNVk)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
-* Enhancements to Reference Lines  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819892)  [[video]](https://youtu.be/E7s_nVHgNVk) 
-* Category enhancements for new card (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819893)  [[video]](https://youtu.be/E7s_nVHgNVk)  
-* Introducing style presets to visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819894)  [[video]](https://youtu.be/E7s_nVHgNVk)  [[article]](../create-reports/desktop-report-themes.md)
-* Insights category for business users in the OneLake catalog  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819895)  [[video]](https://youtu.be/E7s_nVHgNVk)  [[article]](/fabric/governance/onelake-catalog-overview)
+* Better storytelling with Data annotations in Power BI for PowerPoint (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819889)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-annotate.md)
+* Copy report object name  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819890)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  
+* Referenced column highlights for visual calculations (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819891)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
+* Enhancements to Reference Lines  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819892)  [[video]](https://youtu.be/dgxeFAUSfE8) 
+* Category enhancements for new card (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819893)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  
+* Introducing style presets to visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819894)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](../create-reports/desktop-report-themes.md)
+* Insights category for business users in the OneLake catalog  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819895)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](/fabric/governance/onelake-catalog-overview)
 
 
 > [!NOTE]
@@ -72,20 +72,16 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Modeling
-* Create semantic models in Direct Lake storage mode from one or more Fabric artifacts in Power BI Desktop  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819897)  [[article]](/fabric/get-started/direct-lake-power-bi-desktop)
-* TMDL view support for Direct Lake semantic models (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819898)  [[article]](../transform-model/desktop-tmdl-view.md)
-* Updates to semantic model version history (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819899)  [[article]](../transform-model/service-semantic-model-version-history.md)
-* Edit your data model in the Power BI service - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819900)  [[article]](../transform-model/service-edit-data-models.md)
-* Live edit of semantic models in Direct Lake mode with Power BI Desktop - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819901)  [[article]](/fabric/fundamentals/direct-lake-power-bi-desktop)
-
-
-* Use notebooks with your semantic model (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819902)  [[article]](/fabric/get-started/direct-lake-power-bi-desktop)
-
-
+* Create semantic models in Direct Lake storage mode from one or more Fabric artifacts in Power BI Desktop  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819897)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](/fabric/get-started/direct-lake-power-bi-desktop)
+* TMDL view support for Direct Lake semantic models (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819898)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](../transform-model/desktop-tmdl-view.md)
+* Updates to semantic model version history (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819899)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](../transform-model/service-semantic-model-version-history.md)
+* Edit your data model in the Power BI service - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819900)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](../transform-model/service-edit-data-models.md)
+* Live edit of semantic models in Direct Lake mode with Power BI Desktop - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819901&t=335s)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](/fabric/fundamentals/direct-lake-power-bi-desktop)
+* Use notebooks with your semantic model (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819902)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](../transform-model/service-notebooks.md)
 * Access the Azure Analysis Services migration tool from your workspace  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819903) 
 * Table view improvements  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819904) 
 * Distribution, discovery, and consumption  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819905) 
-* CI/CD for org apps (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819906)  [[article]](/fabric/cicd/git-integration/intro-to-git-integration)
+* CI/CD for org apps (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819906)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](/fabric/cicd/git-integration/intro-to-git-integration)
 * Introducing new customization options for org apps - combined navigation (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819907)  [[article]](../consumer/org-app-items/org-app-items.md#customizing-your-org-app)
 
 
