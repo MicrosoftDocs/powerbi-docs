@@ -1,5 +1,15 @@
 {
     "redirections": [
+	{
+            "source_path": "powerbi-docs/transform-model/dax-query-copilot-features.md",
+            "redirect_url": "/dax/dax-copilot",
+            "redirect_document_id": false
+        },
+	{
+            "source_path": "powerbi-docs/transform-model/dax-query-copilot-create.md",
+            "redirect_url": "/dax/dax-copilot",
+            "redirect_document_id": false
+        },
         {
             "source_path": "powerbi-docs/visuals/power-bi-visualization-column-charts-format-settings.md",
             "redirect_url": "/power-bi/visuals/power-bi-visualization-column-chart-format-settings",

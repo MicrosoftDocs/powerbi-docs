@@ -14,7 +14,6 @@ ms.date: 06/04/2024
 
 # Push semantic model limitations
 
-[Push semantic models](/rest/api/power-bi/push-datasets) are **very limited** in their functionality. They're designed *only* for a near real-time streaming scenario to be consumed by a streaming tile in a dashboard, and not by a Power BI report.  
 This article lists limitations of the Power BI REST APIs [Push semantic models](/rest/api/power-bi/push-datasets).
 
 ## Limitations

@@ -1,9 +1,9 @@
 ---
 title: Use the Analyze feature to explain fluctuations in visuals
 description: Learn how to use the Analyze feature in the Power BI service to explain fluctuations in report visuals.
-author: kfollis
 ms.custom: Sales and marketing sample
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore

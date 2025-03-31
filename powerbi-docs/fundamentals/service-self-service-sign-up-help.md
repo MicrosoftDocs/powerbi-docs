@@ -1,8 +1,8 @@
 ---
 title: Self-service sign-up and purchase help
 description: Learn what to do if you can't use the self-service options to sign-up or purchase Power BI or Fabric.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 services: powerbi
 ms.topic: conceptual
 ms.service: powerbi

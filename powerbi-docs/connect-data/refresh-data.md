@@ -140,9 +140,9 @@ To review past synchronization cycles, check the OneDrive tab in the refresh his
 
 As the above screenshot shows, Power BI identified this OneDrive refresh as a **Scheduled** refresh, but it isn't possible to configure the refresh interval. You can only deactivate OneDrive refresh in the semantic model's settings. Deactivating refresh is useful if you don't want your semantic models and reports in Power BI to pick up any changes from the source files automatically.
 
-The semantic model settings page only shows the **OneDrive Credentials** and **OneDrive refresh** sections if the semantic model is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Semantic models that aren't connected to source files in OneDrive or SharePoint Online don't show these sections.
+The semantic model settings page only shows the **OneDrive refresh** section if the semantic model is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Semantic models that aren't connected to source files in OneDrive or SharePoint Online will not show this section. This section displays a link to the OneDrive or SharePoint Online folder where the underlying PBIX file is hosted and a toggle to enable or disable refresh.
 
-![OneDrive Credentials and OneDrive refresh](media/refresh-data/onedrive-credentials-refresh.png)
+![Screenshot of Semantic Model settings showing the OneDrive Refresh section open.](media/refresh-data/onedrive-refresh-section-semantic-model-settings.png)
 
 If you disable OneDrive refresh for a semantic model, you can still synchronize your semantic model on demand by selecting **Refresh now** in the semantic model menu. As part of the on-demand refresh, Power BI checks if the source file on OneDrive or SharePoint Online is newer than the semantic model in Power BI and synchronizes the semantic model if it is. The **Refresh history** lists these activities as on-demand refreshes on the **OneDrive** tab.
 
@@ -151,6 +151,10 @@ Keep in mind that OneDrive refresh doesn't pull data from the original data sour
 ![OneDrive refresh diagram](media/refresh-data/onedrive-refresh-diagram.png)
 
 If you keep OneDrive refresh enabled for a OneDrive or SharePoint Online-connected semantic model and you want to perform data refresh on a scheduled basis, make sure you configure the schedule so that Power BI performs the data refresh after the OneDrive refresh. For example, if you created your own service or process to update the source file in OneDrive or SharePoint Online every night at 1:00 AM, you could configure scheduled refresh for 2:30 AM to give Power BI enough time to complete the OneDrive refresh before starting the data refresh.
+
+For live connection reports, there is also a **OneDrive refresh** section within the live connection report settings pane. This section displays a link to the OneDrive or SharePoint Online folder where the underlying PBIX file is hosted, a toggle to enable or disable refresh, and a button to view refresh history.
+
+![Screenshot of Live Connection Report Settings showing OneDrive refresh section.](media/refresh-data/live-connection-report-onedrive-refresh-settings.png)
 
 #### Refresh of query caches
 
