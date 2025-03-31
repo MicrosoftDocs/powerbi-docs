@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 02/25/2025
+ms.date: 03/31/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -46,7 +46,7 @@ This capability allows Copilot to generate queries and return visuals based on d
 
 ## Supported question types
 
-Copilot is best at answering questions using existing measures and columns in your semantic model. Questions may include asking for existing measures filtered to a different region or span of time than they are on the report, a metric split into categories, or how a measure changes with time.
+Copilot can answer questions using existing measures and columns in your semantic model, and questions that require Copilot to generate DAX queries to answer questions (described in the following section describing ad hoc calculations). Questions may include asking for existing measures filtered to a different region or span of time than they are on the report, a metric split into categories, or how a measure changes with time.
 
 While the exact questions that Copilot can answer depends on the specifics of your model, here are some examples:
 
@@ -58,6 +58,21 @@ While the exact questions that Copilot can answer depends on the specifics of yo
 Copilot also responds to follow up requests based on what you have already asked in your current session.
 
 :::image type="content" source="media/copilot-ask-data-questions/data-question-follow-up-02.png" alt-text="Screenshot showing a follow-up question in the Copilot pane." lightbox="media/copilot-ask-data-questions/data-question-follow-up-02.png":::
+
+## Ad hoc calculations for data questions
+
+Copilot can also generate DAX queries to answer questions that require ad hoc calculations, such as creating new measures that aren't contained in the model. Examples of questions that Copilot can answer by creating a DAX query include the following:
+
+* What was the year-over-year growth for sales?
+* How many employees were hired before 2020?
+* Calculate the ratio of cosmetic product orders to all products.
+* Which customers didn't buy any products?
+
+You can also verify the DAX query directly from the expanded view or launch DAX query view for further inspection. 
+
+:::image type="content" source="media/copilot-ask-data-questions/data-question-answers-01.png" alt-text="Screenshot of copilot answering a question by creating a DAX query.":::
+
+Ad hoc calculations currently require using **Edit Mode** of reports using Copilot.
 
 ## Unsupported question types
 
