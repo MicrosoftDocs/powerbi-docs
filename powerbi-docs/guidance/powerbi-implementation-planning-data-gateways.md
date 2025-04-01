@@ -478,9 +478,6 @@ There are three gateway roles for managing an on-premises standard gateway.
   - Regularly reviewing who has access to a gateway, validating whether they still need it, and removing them when they don't need it.
 - **Connection creator**: Members of this role can create connections on the gateway and test their status. The connection creator should be a content owner who can appropriately set up the right connections to use the gateway. The responsibilities of a _Connection creator_ role are the same as the _Connection creator with sharing_ role, with the exception that they can't share access to the gateway.
 
-> [!NOTE]
-> VNet gateways only support the _Admin_ gateway role.
-
 #### Data source connection roles
 
 Data source connection roles let you control who can use, manage, and share connections. A user with a connection role doesn't need to belong to a gateway role.
