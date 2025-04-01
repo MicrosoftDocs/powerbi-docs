@@ -146,12 +146,12 @@ The following tables compare features of the different accelerators from our par
 
 ### Added capabilities
 
-| Partner                                  | Report scheduling​ & distribution | Power BI item upload​ & publishing | Tenant specific white labeling | Multi-language portal support​ | Edit semantic model​ | Unrestricted data download​ | Customized data exploration | Tenant specific authorization | TEnnant billing and payment processing |
-|----------------------------------------------|:----------------------------:|:----------------------------:|:--------------------:|:-----------------------------:|:--------------------------:|:-------------------------:|:-------------------:|:--------------------------:|:-------------------------------:|
-| **The Reporting Hub**​ <br> [Reporting Hub](https://thereportinghub.com/)​ | ✔  |    | ​ ✔ | ✔​  | ​   |    |   | ✔  | ✔  |
-| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedFAST)​      | ✔  | ✔​ |   ​  |  ​  |​ ✔  | ✔​  |   |   |   |
-| **Carlo Solutions**​ <br> [Entelexos](https://www.entelexos.com/)​         | ​   | ​   | ​ ✔ | ​   | ​    | ✔  | ✔ |   |   |
-| **iLink Digital​** <br> [EmbeDash](https://embedash.com/)                 | ​   | ✔​   |     | ​   | ​    | ​   |   |   |   |
+| Partner                                  | Report scheduling​ & distribution | Tenant specific white labeling | Multi-language portal support​ | Edit semantic model​ | Unrestricted data download​ | Paginated table builder | Tenant specific authorization | TEnnant billing and payment processing |
+|----------------------------------------------|:----------------------------:|:------------------------------:|:-----------------------------:|:-------------------:|:--------------------------:|:-----------------------:|:-----------------------------:|:--------------------------------------:|
+| **The Reporting Hub**​ <br> [Reporting Hub](https://thereportinghub.com/)​ | ✔  |​ ✔ | ✔​  | ​   |    |   | ✔  | ✔  |
+| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedFAST)​      | ✔  | ✔ |  ​  |​ ✔  | ✔​  |   |   |   |
+| **Carlo Solutions**​ <br> [Entelexos](https://www.entelexos.com/)​         | ​   |​ ✔ | ​   | ​    | ✔  | ✔ |   |   |
+| **iLink Digital​** <br> [EmbeDash](https://embedash.com/)                 | ​   ||     | ​   | ​    | ​   |   |   |   |
 
 ## Related content
 
