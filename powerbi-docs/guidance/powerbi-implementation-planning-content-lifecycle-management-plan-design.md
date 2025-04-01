@@ -152,8 +152,8 @@ If users have build permissions to a model, then they can also [connect to a sem
 
 When users will use analyze in Excel to query your semantic model, you might need to consider things like the following: 
 - Certain features like [field parameters](../create-reports/power-bi-field-parameters.md) or [measure dynamic format strings](../create-reports/desktop-dynamic-format-strings.md) only work in Power BI, and not in Excel. To achieve a similar result, you need to use other approaches.
-- Analyze in Excel requires that the column property _[IsAvailableinMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx.md?view=analysisservices-dotnet&preserve-view=true)_ is enabled. If users won't use Excel, then disabling this property might result in smaller and more performant models.
-- Users can't view [hidden columns or measures](/analysis-services/tabular-models/hide-or-freeze-columns-ssas-tabular.md?view=asallproducts-allversions&preserve-view=true) in the semantic model, like they can from Power BI Desktop (by right-clicking the data pane, and selecting "view hidden").
+- Analyze in Excel requires that the column property _[IsAvailableinMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx?view=analysisservices-dotnet&preserve-view=true)_ is enabled. If users won't use Excel, then disabling this property might result in smaller and more performant models.
+- Users can't view [hidden columns or measures](/analysis-services/tabular-models/hide-or-freeze-columns-ssas-tabular?view=asallproducts-allversions&preserve-view=true) in the semantic model, like they can from Power BI Desktop (by right-clicking the data pane, and selecting "view hidden").
 - Users can't create their own measures or [visual calculations](../transform-model/desktop-visual-calculations-overview.md) in Excel, like they can when using a live connection from Power BI Desktop. However, they can reference the pivot table fields in other Excel cells and worksheets for custom calculations.
 - Users of analyze in Excel often require additional training about how to use it. This is particularly true if they expect an export-like experience or they express an intent to save offline copies of the data. Consider training users about things such as:
   - How to refresh the data.
@@ -164,7 +164,7 @@ When users will use analyze in Excel to query your semantic model, you might nee
 
 #### Copilot and AI skills
 
-If users have read permissions to a model, then can use natural language to explore and ask questions about their data by using [Copilot](../create-reports/copilot-ask-data-question.md). Alternatively, they can also ask data questions about their data in an [AI skill](/fabric/data-science/concept-ai-skill.md), but unlike Copilot, you must first create and share this item with them.
+If users have read permissions to a model, then can use natural language to explore and ask questions about their data by using [Copilot](../create-reports/copilot-ask-data-question.md). Alternatively, they can also ask data questions about their data in an [AI skill](/fabric/data-science/concept-ai-skill), but unlike Copilot, you must first create and share this item with them.
 
 When users want to interact with your semantic model by using natural language, there are considerable consequences for the design and implementation of your model:
 - **Linguistic schema:** You'll have to add synonyms and relationships to your model so that the appropriate English words and terms are associated with the correct model objects.
@@ -183,7 +183,7 @@ You also need to spend additional effort training users:
 > See the following articles for additional, detailed tips and considerations about optimizing models to work well with Copilot:
 > - [Optimization for report authors and model consumers](../guidance/power-bi-optimization.md#optimizing-for-report-authors-and-model-consumers)
 > - [Update your data model to work well with Copilot for Power BI](../create-reports/copilot-evaluate-data.md)
-> - [Write DAX queries with Copilot](/dax/dax-copilot.md)
+> - [Write DAX queries with Copilot](/dax/dax-copilot)
 
 Copilot and other generative AI technology have important limitations and considerations that you should also understand in the planning and design stage of your content:
 - It is non-deterministic, which means that the same input on the same context might produce a different output.
@@ -192,7 +192,7 @@ Copilot and other generative AI technology have important limitations and consid
 
 > [! CAUTION]
 > You should mitigate the risks of these limitations and considerations. Copilot, AI skills, LLMs, and generative AI are nascent technology, so you should not use them for autonomous, high-risk, or business-critical processes and decision-making.
-> For more information, see also [Security guidance for Large Language Models](/ai/playbook/technology-guidance/generative-ai/mlops-in-openai/security/security-recommend.md).
+> For more information, see also [Security guidance for Large Language Models](/ai/playbook/technology-guidance/generative-ai/mlops-in-openai/security/security-recommend).
 
 #### Paginated reports
 
