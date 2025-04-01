@@ -75,7 +75,7 @@ For more information, see [Pin an entire report page](service-dashboard-pin-live
 
 ## Considerations and limitations
 Some report formatting options or themes aren't applied to visuals when you pin them to a dashboard.
-- Border, shadow, and background settings are ignored in the pinned tile.
+- Border, shadow, and background settings as well as all title and subtitle formatting (aside from the text itself) are ignored in the pinned tile.
 - For card visuals, the text used for the value is shown in dashboards using the 'DIN' font family, with black text. You can change the text color for all the tiles on a dashboard by [creating a custom dashboard theme](service-dashboard-themes.md).
 - Conditional formatting isn't applied.
 - Button visuals that trigger bookmarks or clear or apply filters when you select them have no action in a dashboard tile. These actions only make sense within the context of a report.
