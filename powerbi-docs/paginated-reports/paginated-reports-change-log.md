@@ -20,7 +20,7 @@ Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com
 
 ## March 2025
 
-Version 15.7.1814.616, releasd March 25, 2025
+Version 15.7.1814.616, released March 25, 2025
 
 - Reduced timeout for Power Query Online
 - Fixed issue rendering sub reports when opening from the Power BI Service
