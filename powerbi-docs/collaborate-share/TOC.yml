@@ -111,6 +111,8 @@
       href: service-power-bi-powerpoint-add-in-install.md
     - name: "View and present live data in PowerPoint"
       href: service-power-bi-powerpoint-add-in-view-present.md
+    - name: "Annotate your embedded Power BI visuals"
+      href: service-power-bi-powerpoint-add-in-annotate.md
     - name: "Information for the Power BI admin"
       href: service-power-bi-powerpoint-add-in-admin.md
     - name: "Deploying the add-in in national clouds"

@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/27/2025
+ms.date: 03/31/2025
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -96,6 +96,12 @@ To generate data insights:
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-dialog.png" alt-text="Screenshot of insights dialog.":::
 
+## Add data point annotations to visuals
+
+Data point annotations enable you to add contextualized annotations to visuals that you've embedded in your presentation as single visuals (not as part of a whole report page). The annotations are saved and stored with the specific add-in instance where you embedded the visual, meaning that you can create an entirely different set of annotations for the same visual if you embed it in a different slide. To see for more information and to see how to create an data point annotation, see [Create data point annotations](./service-power-bi-powerpoint-add-in-annotate.md).
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-view-present/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-view-present/storytelling-annotation-appearance.png":::
+
 ## Freeze a snapshot of the current view
 
 Every time you open your presentation, the report page or visual reloads into the add-in, bringing fresh data from the Power BI service. There might be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [View](#add-in-side-pane) menu in the toolbar. Choosing one of the snapshot options turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you'll see the static view you saved.
@@ -143,6 +149,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 * **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
 * **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
+* **Annotations**: Show or hide any [data point annotations](#add-data-point-annotations-to-visuals) that exist on the visual. When annotations are hidden, a green dot appears on the Data options icon to indicate that hidden annotations are present. The Annotations option is only available for visuals that have been embedded as single visuals, not as part of a whole report page.
 * **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh doesn't trigger getting data from the data sources.
 * **Reset**: Provides two options:
    * **Sync**: Choose this option if you want to make sure you've got the latest version of the report or visual from the Power BI service, including any definition changes, such as new or deleted visuals, filters, or slicers.
@@ -192,6 +199,11 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 |**Ctrl + Shift + ]**    |Move backward over open panels                                           |
 |**Ctrl**                |Hide Power BI tooltips                                                   |
 |                        |                                                                         |
+|**Annotations**         |                                                                         |
+|**Ctrl + Alt + I**      |Hide/show annotations                                                   |
+|**Alt + H**             |Move focus to annotation toolbar                                        |
+|**Alt + Shift + I**     |Move focus to annotations group panels                                  |
+|                        |                                                                         |
 |**Live data/Snapshot**  |                                                                         |
 |**Ctrl + Shift + 7**    |Switch to [Live data](#freeze-a-snapshot-of-the-current-view)            |
 |**Ctrl + Shift + 8**    |Switch to [Snapshot](#freeze-a-snapshot-of-the-current-view)             |
@@ -201,6 +213,7 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
 * [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
