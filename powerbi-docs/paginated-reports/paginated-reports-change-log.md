@@ -27,7 +27,7 @@ Version 15.7.1814.616, releasd March 25, 2025
 - Increased limit on query parameters size in Query Designer
 - Catch and log error errors opening reports
 - Updated supported connection types
-- Added additional telemetry events 
+- Added additional telemetry events
 	
 ## September 2024
 
