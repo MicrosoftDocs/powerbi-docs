@@ -146,7 +146,7 @@ The following tables compare features of the different accelerators from our par
 
 ### Added capabilities
 
-| Partner                                  | Report scheduling​ & distribution | Tenant specific white labeling | Multi-language portal support​ | Edit semantic model​ | Unrestricted data download​ | Paginated table builder | Tenant specific authorization | TEnnant billing and payment processing |
+| Partner                                  | Report scheduling​ & distribution | Tenant specific white labeling | Multi-language portal support​ | Edit semantic model​ | Unrestricted data download​ | Paginated table builder | Tenant specific authorization | Tennant billing and payment processing |
 |----------------------------------------------|:----------------------------:|:------------------------------:|:-----------------------------:|:-------------------:|:--------------------------:|:-----------------------:|:-----------------------------:|:--------------------------------------:|
 | **The Reporting Hub**​ <br> [Reporting Hub](https://thereportinghub.com/)​ | ✔  |​ ✔ | ✔​  | ​   |    |   | ✔  | ✔  |
 | **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedFAST)​      | ✔  | ✔ |  ​  |​ ✔  | ✔​  |   |   |   |
