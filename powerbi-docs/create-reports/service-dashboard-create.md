@@ -33,18 +33,15 @@ After you complete this article, you'll understand:
 
 ## Pin tiles to a dashboard
 
-You can use the following steps and the Procurement Analysis sample to try pinning visualizations to a new dashboard for yourself.
+You can use the following steps and the [Procurement Analysis sample](sample-procurement.md) to try pinning visualizations to a new dashboard for yourself.
 
-1. Open a report and select **More options (...)** > **Edit** to open the report in Editing view.
+1. Open the Procurement Analysis sample report and then select **Edit** to open the report in Editing view.
 
-    ![Screenshot of the report, highlighting more options and edit.](media/service-dashboard-create/power-bi-reading-view.png)
+    ![Screenshot of the report, highlighting more options and edit.](media/service-dashboard-create/power-bi-reading-view-new.png)
 
-    > [!TIP]  
-    > You don't have to open the report in Edit mode, but you do have to have edit permissions for the report.
+1. Hover over a visualization to and then to add a visualization to a dashboard, select the pin icon :::image type="icon" source="media/service-dashboard-create/power-bi-pin-icon.png":::.
 
-1. Hover over a visualization to reveal the options that are available. To add a visualization to a dashboard, select the pin icon :::image type="icon" source="media/service-dashboard-create/power-bi-pin-icon.png":::.
-
-    ![Screenshot of a visualization, highlighting the pin icon.](media/service-dashboard-create/power-bi-hover.png)
+    ![Screenshot of a visualization, highlighting the pin icon.](media/service-dashboard-create/power-bi-hover-new.png)
 1. Select whether to pin to an existing dashboard or new dashboard.
 
    - **Existing dashboard**: Select the name of the dashboard from the dropdown. Dashboards that have been shared with you won't appear in the dropdown.
