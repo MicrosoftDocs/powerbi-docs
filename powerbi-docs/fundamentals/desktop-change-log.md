@@ -7,7 +7,7 @@ ms.reviewer: kfollis, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 04/03/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,16 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## March 2025 QFE 1
+
+*Version 2.141.1253.0, Released: March 30, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue of a gray/empty *Load to report* dialog in the Power BI client for Windows.
+
 
 
 
