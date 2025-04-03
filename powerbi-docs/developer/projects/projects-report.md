@@ -139,7 +139,7 @@ This file also specifies the supported report definition formats through the 've
 | Version  | Supported formats    |
 |----------|----------------------------|
 | 1.0      | Report definition must be stored as PBIR-Legacy in the report.json file. |
-| 4.0 or above | Report definition can be stored as PBIR-Legacy (report.json file) or [PBIR](#pbir-format) (\definition folder). |
+| 4.0 or higher | Report definition can be stored as PBIR-Legacy (report.json file) or [PBIR](#pbir-format) (\definition folder). |
 
 For more information, see the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
 
@@ -171,7 +171,7 @@ Saving your Power BI Project files (PBIP) using the Power BI Enhanced Report For
 
 :::image type="content" source="./media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
 
-Each page, visual, bookmark, etc., is organized into a separate, individual file within a folder structure. This format is ideal for co-development conflict resolution.
+Each page, visual, bookmark, etc., is organized into a separate, individual file within a folder structure. This format is ideal for codevelopment conflict resolution.
 
 :::image type="content" source="./media/projects-report/pbir-folder.png" alt-text="Screenshot of friendly PBIR folder.":::
 
@@ -254,7 +254,7 @@ The report definition is stored inside the `definition\` folder with the followi
 |report.json                       |Yes      |Report metadata, such as report level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/report)
 
 > [!IMPORTANT]
-> Some report metadata files, such as visual.json or bookmarks.json, may be saved with data values from your semantic model. For instance, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will be persisted as part of the metadata. This also applies to other configurations like slicer selections, matrix custom columns width, and formatting for specific series.
+> Some report metadata files, such as visual.json or bookmarks.json, can be saved with data values from your semantic model. For instance, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will be persisted as part of the metadata. This also applies to other configurations like slicer selections, matrix custom columns width, and formatting for specific series.
 
 #### PBIR naming convention
 
@@ -276,13 +276,13 @@ Each object in the report is saved in a separate folder, but the name of the fol
 
 1. Go to **File > Options and settings > Report settings > Report objects** and enable the *Copy object names when right clicking on report objects* setting. This only needs to be done once.
 
-:::image type="content" source="./media/projects-report/report-objects-check-box.png" alt-text="Screenshot of the report objects report settings.":::
+   :::image type="content" source="./media/projects-report/report-objects-check-box.png" alt-text="Screenshot of the report objects report settings.":::
 
 1. Right click on any report object and select *Copy object name*.
 
-:::image type="content" source="./media/projects-report/copy-object-name.png" alt-text="Screenshot of a desktop report with copy object name selected.":::
+   :::image type="content" source="./media/projects-report/copy-object-name.png" alt-text="Screenshot of a desktop report with copy object name selected.":::
 
-1. With the object name copied to your clipboard, you can easily enter it into the search bar of Windows Explorer or Visual Studio Code to locate or identify the object name within the PBIR folder.
+With the object name copied to your clipboard, you can easily enter it into the search bar of Windows Explorer or Visual Studio Code to locate or identify the object name within the PBIR folder.
 
 :::image type="content" source="./media/projects-report/search-object-name.png" alt-text="Screenshot of search bar with name of object.":::
 
@@ -290,11 +290,11 @@ Each object in the report is saved in a separate folder, but the name of the fol
 
 1. Enable the *Copy object names when right clicking on report objects* setting. This only needs to be done once. You don't need to enable it for each report.
 
-:::image type="content" source="./media/projects-report/report-settings-service.png" alt-text="Screenshot of the report settings with the switch enabled.":::
+    :::image type="content" source="./media/projects-report/report-settings-service.png" alt-text="Screenshot of the report settings with the switch enabled.":::
 
 1. When editing a report, right click on any report object and select *Copy object name*.
 
-:::image type="content" source="./media/projects-report/copy-object-name-service.png" alt-text="Screenshot of a service report with copy object name selected.":::
+    :::image type="content" source="./media/projects-report/copy-object-name-service.png" alt-text="Screenshot of a service report with copy object name selected.":::
 
 You can use the copied object for identifying file names in PBIR file format, or for performance troubleshooting through Workspace Monitoring or Log Analytics to link the DAX query to a visual in the report.
 
