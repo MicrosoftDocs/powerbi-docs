@@ -266,6 +266,40 @@ Renaming the 'name' property within each JSON file is supported but might break 
 
 After renaming any PBIR files or folders, you must restart Power BI Desktop. Upon restart, Power BI Desktop will preserve the original file or folder names when saving.
 
+#### Copy report object name
+
+Each object in the report is saved in a separate folder, but the name of the folder isn't always obvious. To make this easier, you can copy the name of any report object name (including pages, visuals, bookmarks, and filters) directly from Power BI to your clipboard.
+
+:::image type="content" source="./media/projects-report/computer-ai-generated-report.png" alt-text="Screenshot of a report with an arrow pointing from one of the visuals to the name of its corresponding file.":::
+
+##### [From the desktop](#tab/desktop)
+
+1. Go to **File > Options and settings > Report settings > Report objects** and enable the *Copy object names when right clicking on report objects* setting. This only needs to be done once.
+
+:::image type="content" source="./media/projects-report/report-objects-check-box.png" alt-text="Screenshot of the report objects report settings.":::
+
+1. Right click on any report object and select *Copy object name*.
+
+:::image type="content" source="./media/projects-report/copy-object-name.png" alt-text="Screenshot of a desktop report with copy object name selected.":::
+
+1. With the object name copied to your clipboard, you can easily enter it into the search bar of Windows Explorer or Visual Studio Code to locate or identify the object name within the PBIR folder.
+
+:::image type="content" source="./media/projects-report/search-object-name.png" alt-text="Screenshot of search bar with name of object.":::
+
+##### [From the service](#tab/service)
+
+1. Enable the *Copy object names when right clicking on report objects* setting. This only needs to be done once. You don't need to enable it for each report.
+
+:::image type="content" source="./media/projects-report/report-settings-service.png" alt-text="Screenshot of the report settings with the switch enabled.":::
+
+1. When editing a report, right click on any report object and select *Copy object name*.
+
+:::image type="content" source="./media/projects-report/copy-object-name-service.png" alt-text=""Screenshot of a service report with copy object name selected..":::
+
+You can use the copied object for identifying file names in PBIR file format, or for performance troubleshooting through Workspace Monitoring or Log Analytics to link the DAX query to a visual in the report.
+
+---
+
 ### PBIR Json Schemas
 
 Each PBIR JSON file includes a [JSON schema](https://json-schema.org/) declaration at the top of the document. This schema URL is publicly accessible and can be used to learn more about the available properties and objects for each file. Additionally, it provides built-in IntelliSense and validation when editing with code editors like [Visual Studio Code](https://code.visualstudio.com/).
