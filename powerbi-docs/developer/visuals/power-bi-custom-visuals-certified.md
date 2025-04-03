@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/18/2024
+ms.date: 02/18/2025
 #customer intent: As a Power BI visual developer, I want to learn how to get my custom visual certified so that it can be used by others in Power BI.
 ---
 
