@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 1/09/2024
+ms.date: 3/09/2025
 #customer intent: As a developer, I want to learn how to use external libraries in Power BI visuals so I can enhance my visualizations with additional functionality.
 ---
 
