@@ -294,7 +294,7 @@ Each object in the report is saved in a separate folder, but the name of the fol
 
 1. When editing a report, right click on any report object and select *Copy object name*.
 
-:::image type="content" source="./media/projects-report/copy-object-name-service.png" alt-text=""Screenshot of a service report with copy object name selected..":::
+:::image type="content" source="./media/projects-report/copy-object-name-service.png" alt-text="Screenshot of a service report with copy object name selected.":::
 
 You can use the copied object for identifying file names in PBIR file format, or for performance troubleshooting through Workspace Monitoring or Log Analytics to link the DAX query to a visual in the report.
 
