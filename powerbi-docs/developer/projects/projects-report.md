@@ -123,7 +123,7 @@ Example using `byConnection`:
 }
 ```
 > [!IMPORTANT]
-> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items) you must use `byConnection` references.
+> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you must use `byConnection` references.
 
 When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
 
@@ -164,7 +164,7 @@ To learn more, see [Git integration automatically generated system files](/fabri
 ## PBIR format
 
 > [!IMPORTANT]
-> Please consider all the PBIR [limitations](#pbir-considerations-and-limitations) during the preview phase.
+> Consider all the PBIR [limitations](#pbir-considerations-and-limitations) during the preview phase.
 
 Saving your Power BI Project files (PBIP) using the Power BI Enhanced Report Format (PBIR) greatly improves change tracking and merge conflict resolution by using properly formatted JSON files.
 
@@ -312,7 +312,7 @@ All the JSON schemas are published [here](https://github.com/microsoft/json-sche
 
 ### PBIR annotations
 
-You can include annotations as name-value pairs within the report definition for each `visual`, `page` and `report`. While Power BI Desktop will ignore these annotations, they can be valuable for external applications like scripts. 
+You can include annotations as name-value pairs within the report definition for each `visual`, `page` and `report`. While Power BI Desktop ignores these annotations, they can be valuable for external applications like scripts. 
 
 For instance, you could specify the defaultPage for the report at the `report.json` file, which can then be utilized by a deployment script.
 
@@ -376,7 +376,7 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 
 ### PBIR considerations and limitations
 
-PBIR is currently in **preview**. Keep the following in mind:
+PBIR is currently in **preview**. Keep the following limitations in mind:
 
 - Service limitations/bugs
   - Can't be deployed with deployment pipelines.  
@@ -395,8 +395,8 @@ PBIR size limitations enforced by the service:
 - 5 mb max for each bookmark file.
 - 1 mb max for each file.
 - 1,000 max resource package files per report.
-- 300 mb max size for all resource package files.
-- 20 mb max size of all report files.
+- 300-mb max size for all resource package files.
+- 20-mb max size of all report files.
 
 During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features start exporting the report definition using PBIR format.
 
