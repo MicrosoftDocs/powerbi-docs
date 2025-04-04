@@ -70,7 +70,7 @@ Contains data model diagrams describing the structure of the semantic model asso
 
 #### definition.pbir
 
-Contains the overall definition of a report and core settings. This file also holds the reference to the semantic model used by the report. Power BI Desktop can open a pbir file directly, just the same as if the report were opened from a pbip file. Opening a pbir also opens the semantic model alongside if there's a relative reference using `byPath`.
+Contains the overall definition of a report and core settings. This file also holds the reference to the semantic model used by the report. Power BI Desktop can open a pbir file directly, just the same as if the report were opened from a PBIP file. Opening a PBIR also opens the semantic model alongside if there's a relative reference using `byPath`.
 
 Example definition.pbir:
 
@@ -193,7 +193,7 @@ Go to **File > Options and settings > Options > Preview features** and check the
 
 With the PBIR Preview feature enabled, when you save a project, your report is saved within a folder named *\definition* inside of [report folder](./projects-report.md):  
 
-:::image type="content" source="./media/projects-report/pbip-pbir-definitionfolder.png" alt-text="Screenshot of the definition folder inside a report pbip folder.":::
+:::image type="content" source="./media/projects-report/pbip-pbir-definitionfolder.png" alt-text="Screenshot of the definition folder inside a report PBIP folder.":::
 
 Learn more about the [PBIR folder structure](#pbir-folder-and-files).
 
@@ -213,7 +213,7 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
 
 The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* folder containing the PBIR representation of the report.
 
-If you select to **Keep current** format, Desktop don't prompt again to upgrade.
+If you select to **Keep current** format, Desktop won't prompt again to upgrade.
 
 ### PBIR folder and files
 
@@ -254,7 +254,7 @@ The report definition is stored inside the `definition\` folder with the followi
 |report.json                       |Yes      |Report metadata, such as report level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/report)
 
 > [!IMPORTANT]
-> Some report metadata files, such as visual.json or bookmarks.json, can be saved with data values from your semantic model. For instance, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will be persisted as part of the metadata. This also applies to other configurations like slicer selections, matrix custom columns width, and formatting for specific series.
+> Some report metadata files, such as visual.json or bookmarks.json, can be saved with data values from your semantic model. For instance, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will persist as part of the metadata. This also applies to other configurations like slicer selections, matrix custom columns width, and formatting for specific series.
 
 #### PBIR naming convention
 
@@ -373,7 +373,6 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 **Scenario:** *I copied a page folder from another report and encountered an error stating, "Values for the 'pageBinding.name' property must be unique."*
 
 **Solution:** The pageBinding object is necessary to support drillthrough and page tooltips. Since they might be referenced by other pages, the name must be unique within the report. On the newly copied page, assign a unique value to resolve the error. After June 2024, this situation is no longer an issue because the pageBinding name is a GUID by default.
-
 
 ### PBIR considerations and limitations
 
