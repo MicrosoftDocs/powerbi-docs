@@ -70,7 +70,7 @@ Contains data model diagrams describing the structure of the semantic model asso
 
 #### definition.pbir
 
-Contains the overall definition of a report and core settings. This file also holds the reference to the semantic model used by the report. Power BI Desktop can open a pbir file directly, just the same as if the report were opened from a PBIP file. Opening a PBIR also opens the semantic model alongside if there's a relative reference using `byPath`.
+Contains the overall definition of a report and core settings. This file also holds the reference to the semantic model used by the report. Power BI Desktop can open a PBIR file directly, just the same as if the report were opened from a PBIP file. Opening a PBIR file also opens the semantic model alongside if there's a relative reference using `byPath`.
 
 Example definition.pbir:
 
