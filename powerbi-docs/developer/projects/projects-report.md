@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/13/2024
+ms.date: 04/04/2025
 ---
 
 # Power BI Desktop project report folder
@@ -161,7 +161,6 @@ Fabric platform file that holds properties vital for establishing and maintainin
 
 To learn more, see [Git integration automatically generated system files](/fabric/cicd/git-integration/source-code-format#automatically-generated-system-files).
 
-
 ## PBIR format
 
 > [!IMPORTANT]
@@ -178,6 +177,7 @@ Each page, visual, bookmark, etc., is organized into a separate, individual file
 Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format that supports modifications from non-Power BI applications. Each file has a public JSON schema, which not only documents the file but also lets code editors like Visual Studio Code perform syntax validation while editing.
 
 Some of the possible scenarios now available with PBIR include:
+
 - Copy pages/visuals/bookmarks between reports.
 - Ensure consistency of a set of visuals across all pages, by copying & pasting the visual files.
 - Easy find and replace across multiple reports files.
@@ -268,7 +268,7 @@ After renaming any PBIR files or folders, you must restart Power BI Desktop. Upo
 
 #### Copy report object name
 
-Each object in the report is saved in a separate folder, but the name of the folder isn't always obvious. To make this easier, you can copy the name of any report object name (including pages, visuals, bookmarks, and filters) directly from Power BI to your clipboard.
+Each object in the report is saved in a separate folder or file, but the name of the folder isn't always obvious. To make this easier, you can copy the name of any report object name (including pages, visuals, bookmarks, and filters) directly from Power BI to your clipboard.
 
 :::image type="content" source="./media/projects-report/computer-ai-generated-report.png" alt-text="Screenshot of a report with an arrow pointing from one of the visuals to the name of its corresponding file.":::
 
