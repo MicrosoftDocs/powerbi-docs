@@ -108,6 +108,22 @@ If you want to define a parameter, follow these steps.
 You can now build your report and use the parameters to render the report.
 
 
+## How to change data source credentials after uploading to Power BI service
+
+Now that you have built your paginated report and publish it to the Power BI service, if you need to change the data source credentials then follow these steps:
+
+1. To locate the name of the shareable cloud connection:
+
+    a. Right-click the dataset and select **Edit Mashup**.
+
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
+
+    b. Get the shareable cloud connection information.
+   
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc-edit.png" alt-text="Screenshot showing shareable cloud connection location.":::
+
+1. When you locate the name, go to [Manage Connections and Gateways] (../../connect-data/service-create-share-cloud-data-sources.md), locate the connection and using context menu Settings option, update the data source credentials.
+
 ## Next steps 
 
 After you have a dataset that you created using Power Query, you can use it to create a paginated report in Power BI Report Builder, as you would with any other RDL dataset. You can use the report design tools, such as the Properties window and the Grouping pane, to design the layout, the data regions, the expressions, and the groups of your report.
@@ -121,6 +137,7 @@ When you're done with the report design, you can save the report to your local m
 - Gateway data sources aren't supported even though you connect in Mashup Editor.  
 - Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source. See the [How to bind parameters](#how-to-bind-parameters) section in this article.
 - If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render.
+- When uploading report that someone else authored or in cases where Service Principal is used to upload report, the Shareable Cloud Connection owner needs to share the cloud connection to the uploading identity.
 
 ## Related content  
 
