@@ -137,7 +137,8 @@ When you're done with the report design, you can save the report to your local m
 - Gateway data sources aren't supported even though you connect in Mashup Editor.  
 - Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source. See the [How to bind parameters](#how-to-bind-parameters) section in this article.
 - If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render.
-- When uploading report that someone else authored or in cases where Service Principal is used to upload report, the Shareable Cloud Connection owner needs to share the cloud connection to the uploading identity.
+- When uploading paginated report that someone else authored, the Shareable Cloud Connection owner needs to share the cloud connection to the uploading identity.
+- When uploading such paginated report using Service Principal, the author of report needs to [Take Over using API] (../../../rest/api/power-bi/reports/take-over-in-group.md) and provide their user identity. Else report will fail to render on Power BI service.
 
 ## Related content  
 
