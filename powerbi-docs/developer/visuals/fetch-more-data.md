@@ -59,7 +59,7 @@ In Power BI, you can `fetchMoreData` in one of two ways:
 
 ### Segments aggregation mode (default)
 
-With the segments aggregation mode, the data view that is provided to the visual contains the accumulated data from all previous `fetchMoreData requests`. Therefore, the data view size grows with each update according to the window size. For example, if a total of 100,000 rows are expected, and the window size is set to 10,000, the first update data view should include 10,000 rows, the second update data view should include 20,000 rows, and so on.
+With the segments aggregation mode, the data view that is provided to the visual contains the accumulated data from all previous `fetchMoreData requests`. Therefore, the data view size grows with each update according to the window size. For example, if a total of 100,000 rows are expected, and the window size is set to 10,000, then the first update data view should include 10,000 rows, the second update data view should include 20,000 rows, and so on.
 
 Select the segments aggregation mode by calling `fetchMoreData` with `aggregateSegments = true`.
 
@@ -182,7 +182,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 >
 > For table and categorical data mapping, the first `N` data view rows can be expected to contain data copied from the previous data view.
 >
-> `N` can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
+> `N` is determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
 The visual keeps the data view passed to it so it can access the data without extra communications with Power BI.  
 
