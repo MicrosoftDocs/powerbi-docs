@@ -1,7 +1,7 @@
 ---
 title: "Connect paginated reports to data sources using Power Query"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 03/15/2025
+ms.date: 04/07/2025
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -15,7 +15,7 @@ ms.reviewer: nirusrin
 
 In Power BI Report Builder, you can create paginated reports that are optimized for printing and sharing. You can connect to various data sources, such as SQL Server, Azure SQL Database, Dataverse, and more. But what if you want to connect to data sources that aren't natively supported by Power BI Report Builder, such as Snowflake, Databricks, AWS Redshift, and others? 
 
-That's where Power Query Online comes in. Power Query Online is a data transformation and mashup engine that lets you access and transform data from hundreds of sources. You can use Power Query Online to connect to these data sources from Power BI Report Builder, and create datasets that you can use in your paginated reports. This is a new feature that is currently in preview, and we're excited to share it with you.  
+That's where Power Query Online comes in. Power Query Online is a data transformation and mashup engine that lets you access and transform data from hundreds of sources. You can use Power Query Online to connect to these data sources from Power BI Report Builder, and create datasets that you can use in your paginated reports.
 
 ## Prerequisites 
 
