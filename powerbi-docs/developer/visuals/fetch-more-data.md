@@ -243,7 +243,7 @@ The data reduction information appears under *visual* in the format pane.
 
 * The window size is limited to a range of 2-30,000.
 * The data view total row count is limited to 1,048,576 rows.
-* The data view memory size is limited to 100 MB In segments aggregation mode.
+* The data view memory size is limited to 100 MB in segments aggregation mode.
 * The *dataReductionCustomization* row count is limited to a range of 15-30,000
 * The *dataReductionCustomization* columns count is limited to a range of 1-2,000
 
