@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/18/2024
+ms.date: 04/08/2025
 #customer intent: As a Power BI visual developer, I want to learn how to fetch more data from Power BI so that I can display large semantic models in my visual.
 ---
 
@@ -59,7 +59,7 @@ In Power BI, you can `fetchMoreData` in one of two ways:
 
 ### Segments aggregation mode (default)
 
-With the segments aggregation mode, the data view that is provided to the visual contains the accumulated data from all previous `fetchMoreData requests`. Therefore, the data view size grows with each update according to the window size. For example, if a total of 100,000 rows are expected, and the window size is set to 10,000, the first update data view should include 10,000 rows, the second update data view should include 20,000 rows, and so on.
+With the segments aggregation mode, the data view that is provided to the visual contains the accumulated data from all previous `fetchMoreData requests`. Therefore, the data view size grows with each update according to the window size. For example, if a total of 100,000 rows are expected, and the window size is set to 10,000, then the first update data view should include 10,000 rows, the second update data view should include 20,000 rows, and so on.
 
 Select the segments aggregation mode by calling `fetchMoreData` with `aggregateSegments = true`.
 
@@ -182,7 +182,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 >
 > For table and categorical data mapping, the first `N` data view rows can be expected to contain data copied from the previous data view.
 >
-> `N` can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
+> `N` is determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
 The visual keeps the data view passed to it so it can access the data without extra communications with Power BI.  
 
@@ -190,55 +190,49 @@ The visual keeps the data view passed to it so it can access the data without ex
 
 Since the developer can't always know in advance what type of data the visual will display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
 
-To allow the report author to set the count, first define a [property pane object](./capabilities.md#objects-define-property-pane-options) called `dataReductionCustomization` in your *capabilities.json* file:
+To allow the report author to set the count, first define a [formatting object property](./format-pane-example.md) called `dataReductionCustomization` in your *capabilities.json* file:
 
 ```json
-    "objects": {
+ "objects": {
         "dataReductionCustomization": {
-            "displayName": "Data Reduction",
             "properties": {
                 "rowCount": {
                     "type": {
                         "numeric": true
-                    },
-                    "displayName": "Row Reduction",
-                    "description": "Show Reduction for all row groups",
-                    "suppressFormatPainterCopy": true
+                    }
                 },
                 "columnCount": {
                     "type": {
                         "numeric": true
-                    },
-                    "displayName": "Column Reduction",
-                    "description": "Show Reduction for all column groups",
-                    "suppressFormatPainterCopy": true
+                    }
                 }
             }
         }
     },
 ```
 
-Then, after the `dataViewMappings`, define the default values for `dataReductionCustomization`.
+Then, insert the following code fragment into the formatting settings file:
 
 ```json
-   "dataReductionCustomization": {
-        "matrix": {
-            "rowCount": {
-                "propertyIdentifier": {
-                    "objectName": "dataReductionCustomization",
-                    "propertyName": "rowCount"
-                },
-                "defaultValue": "100"
-            },
-            "columnCount": {
-                "propertyIdentifier": {
-                    "objectName": "dataReductionCustomization",
-                    "propertyName": "columnCount"
-                },
-                "defaultValue": "10"
-            }
-        }
-    }
+class DataReductionCardSettings extends FormattingSettingsCard {
+    rowCount = new formattingSettings.NumUpDown({
+        name: "rowCount",
+        displayName: "Row reduction",
+        description: "Show Reduction for all row groups",
+        value: 100,
+    });
+ 
+    columnCount = new formattingSettings.NumUpDown({
+        name: "columnCount",
+        displayName: "Column reduction",
+        description: "Show Reduction for all column groups",
+        value: 10,
+    }); 
+ 
+    name = "dataReductionCustomization";
+    displayName = "Data Reduction";
+    slices = [this.rowCount, this.columnCount];
+}
 ```
 
 The data reduction information appears under *visual* in the format pane.
@@ -248,12 +242,12 @@ The data reduction information appears under *visual* in the format pane.
 ## Considerations and limitations
 
 * The window size is limited to a range of 2-30,000.
-
 * The data view total row count is limited to 1,048,576 rows.
-
-* The data view memory size is limited to 100 MB In segments aggregation mode.
+* The data view memory size is limited to 100 MB in segments aggregation mode.
+* The *dataReductionCustomization* row count is limited to a range of 15-30,000
+* The *dataReductionCustomization* columns count is limited to a range of 1-2,000
 
 ## Related content
 
-* [Data view mappings](dataview-mappings.md)
+* [Data view mappings](dataview-mappings.md#data-reduction-algorithm)
 * [DataViewUtils](utils-dataview.md)
