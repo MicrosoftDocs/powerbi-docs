@@ -43,32 +43,36 @@ To parameterize a DAX query for a PBI dataset of a Power BI paginated report, yo
   
 ## Define a query parameter in DAX in Query mode  
   
-1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The DAX query designer opens in Design mode.  
-  
-2.  On the toolbar, click **Design** to toggle to Query mode.  
-  
-3.  On the DAX query designer toolbar, click **Query Parameters** (![Icon for the Query Parameters dialog box.](media/icon-query-parameter.gif "Icon for the Query Parameters dialog box.")). The Query Parameters dialog box opens.  
-  
-4.  In the **Parameter** column, click **\<Enter Parameter>**, and then type the name of a parameter.  
-  
-5.  In the **Dimension** column, choose a value from the drop-down list.  
-  
-6.  In the **Hierarchy** column, choose a value from the drop-down list.  
-  
-7.  In the **Multiple values** column, select the check box to create a multivalue parameter.  
-  
-8.  In the **Default** column, from the drop-down list, select a single value or multiple values depending on your choice in step 5.  
-  
-9.  Select **OK**.
-  
-10. On the query designer toolbar, click **Run**.  
-  
-11. Select **OK**.
-  
-     In the Report Data pane, expand the Parameters node to display the report parameter that was automatically created for the filter.  
-  
-     To view the dataset that provides available values for the report parameter, right-click any blank area in the Report Data pane, and then click **Show Hidden Datasets**. The Report Data pane displays all datasets in the report.  
-  
+1. In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The DAX query designer opens in Design mode.  
+
+1. On the toolbar, click **Design** to toggle to Query mode.  
+
+1. On the DAX query designer toolbar, click **Query Parameters** (![Icon for the Query Parameters dialog box.](media/icon-query-parameter.gif "Icon for the Query Parameters dialog box.")). The Query Parameters dialog box opens.  
+
+1. In the **Parameter** column, click **<Enter Parameter>**, and then type the name of a parameter.  
+
+1. In the **Dimension** column, choose a value from the drop-down list.  
+
+1. In the **Hierarchy** column, choose a value from the drop-down list.  
+
+1. In the **Multiple values** column, select the check box to create a multivalue parameter.  
+
+1. In the **Default** column, from the drop-down list, select a single value or multiple values depending on your choice in step 5.  
+
+1. Select **OK**.
+
+1. On the query designer toolbar, click **Run**.  
+
+1. Select **OK**.
+
+    In the Report Data pane, expand the Parameters node to display the report parameter that was automatically created for the filter.  
+   
+    To view the dataset that provides available values for the report parameter, right-click any blank area in the Report Data pane, and then click **Show Hidden Datasets**. The Report Data pane displays all datasets in the report.  
+   
+## Limitations
+
+1. Using hierarchy for multi-value parameters is currently not supported
+
 ## Related content
 
 - [Analysis Services MDX Query Designer User Interface](/sql/reporting-services/report-data/analysis-services-mdx-query-designer-user-interface)  
