@@ -71,7 +71,7 @@ To parameterize a DAX query for a PBI dataset of a Power BI paginated report, yo
    
 ## Limitations
 
-1. Using hierarchy for multi-value parameters is currently not supported
+1. Using semantic model hierarchies for multi-value parameters is currently not supported
 
 ## Related content
 
