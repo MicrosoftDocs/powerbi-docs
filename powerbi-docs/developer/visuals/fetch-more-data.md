@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/01/2022
+ms.date: 4/01/2025
 ---
 
 # Fetch more data from Power BI
@@ -189,28 +189,21 @@ The visual keeps the data view passed to it so it can access the data without ex
 
 Since the developer can't always know in advance what type of data the visual will be used to display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
 
-To allow the report author to set the count, first define a [property pane object](./capabilities.md#objects-define-property-pane-options) called `dataReductionCustomization` in your *capabilities.json* file:
+To allow the report author to set the count, first define a [formatting object property](./) called `dataReductionCustomization` in your *capabilities.json* file:
 
 ```json
-    "objects": {
+ "objects": {
         "dataReductionCustomization": {
-            "displayName": "Data Reduction",
             "properties": {
                 "rowCount": {
                     "type": {
                         "numeric": true
-                    },
-                    "displayName": "Row Reduction",
-                    "description": "Show Reduction for all row groups",
-                    "suppressFormatPainterCopy": true
+                    }
                 },
                 "columnCount": {
                     "type": {
                         "numeric": true
-                    },
-                    "displayName": "Column Reduction",
-                    "description": "Show Reduction for all column groups",
-                    "suppressFormatPainterCopy": true
+                    }
                 }
             }
         }
