@@ -30,13 +30,13 @@ If your report includes non-supported expressions, consider removing or updating
 
 To check if a report was run in the optimized environment  , click on the Diagnostics button in the paginated report and check the “Execution environment” section. If the report is running in the optimized environment, then “Optimized” will show “Yes.” If the report is running in the standard, non-optimized environment, the Execution environment section will show a list of non-supported report expressions. More details on the performance metrics displayed on the Diagnostics card can be found [here](https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-diagnostics).
 
-:::image type="content" source="media/reports-paginated-performance-scalability/Diagnostics card.png" alt-text="Screenshot of the diagnostics card for paginated reports" border="false":::
+:::image type="content" source="media/reports-paginated-performance-scalability/Diagnostics-card.png" alt-text="Screenshot of the diagnostics card for paginated reports" border="false":::
 
 ### Large data volumes
 
 Both the standard and optimized execution environments for paginated reports have specific data volume limits that, when exceeded, will significantly slow down report processing. When this happens during the export report scenario, the user will see the warning shown in the image below. . 
 
-:::image type="content" source="media/reports-paginated-performance-scalability/High data volume export.png" alt-text="Screenshot of the warning for high data volumne export" border="false":::
+:::image type="content" source="media/reports-paginated-performance-scalability/High-data-volume-export.png" alt-text="Screenshot of the warning for high data volumne export" border="false":::
 
 This typically occurs in two scenarios:
 1.	Data dumps of tables with no groupings and many columns/rows: these data dumps require significant resources when exporting the paginated report to Excel. Alternatively, consider exporting the report to CSV format, which is less intensive.
