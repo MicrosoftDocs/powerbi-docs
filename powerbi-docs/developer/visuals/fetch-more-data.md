@@ -190,7 +190,7 @@ The visual keeps the data view passed to it so it can access the data without ex
 
 Since the developer can't always know in advance what type of data the visual will display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
 
-To allow the report author to set the count, first define a [property pane object](./format-pane-example.md) called `dataReductionCustomization` in your *capabilities.json* file:
+To allow the report author to set the count, first define a [formatting object property](./format-pane-example.md) called `dataReductionCustomization` in your *capabilities.json* file:
 
 ```json
  "objects": {
