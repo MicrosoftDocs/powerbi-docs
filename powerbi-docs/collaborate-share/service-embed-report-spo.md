@@ -1,22 +1,22 @@
 ---
 title: Embed a report web part in SharePoint Online
 description: With Power BI's report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 10/26/2022
+ms.date: 01/07/2025
 ---
 
 # Embed a report web part in SharePoint Online
 
 The Power BI report web part for SharePoint Online allows you to embed interactive Power BI reports in SharePoint Online pages.
 
-When you use the **Embed in SharePoint Online** option, the embedded reports respect all item permissions and data security through [row-level security (RLS)](../enterprise/service-admin-rls.md), so you can easily create secure internal portals.
+When you use the **Embed in SharePoint Online** option, the embedded reports respect all item permissions and data security through [row-level security (RLS)](/fabric/security/service-admin-row-level-security), so you can easily create secure internal portals.
 
 ## Requirements
 
@@ -24,11 +24,12 @@ For **Embed report in SharePoint Online** reports to work:
 
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To use an embedded report, users must sign in to the Power BI service to activate their Power BI license.
-* A Power BI Pro or Premium Per User (PPU) license is required to embed a web part in SharePoint Online. Users with a free Power BI license can't embed reports, but they can view if the report is hosted in [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-gen2-what-is.md). In that case, you only need a free Power BI license to view reports that are embedded in SharePoint Online. 
-    > [!Note]
-    > There's no free license for organizations in Power BI National clouds. In this environment, a Power BI Pro or Premium Per User (PPU) license is required to access to the embedded report in SharePoint.
+* To embed a web part in SharePoint Online, you need a Power BI Pro or Premium Per User (PPU) license.
+* Users with a free Fabric license can view a report that's hosted in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
+* SharePoint Embed is now supported in air gap environments.
 
 ## Embed your report
+
 To embed your report into SharePoint Online, you need to get the report URL and use it with SharePoint Online's Power BI web part.
 
 ### Get a report URL
@@ -76,7 +77,7 @@ Embedding a report in SharePoint Online doesn't automatically give users permiss
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service, and grant access to those that aren't listed.
 
-There are two ways to provide report access in Power BI. 
+There are two ways to provide report access in Power BI.
 
 ### In a Microsoft 365 Group
 
@@ -84,19 +85,24 @@ If you're using a Microsoft 365 Group to build your SharePoint Online team site,
 
 ### Share directly with users
 
-Embed a report within an app, and share it directly with users:  
+Embed a report within an app, and share it directly with users.
 
-1. The author, who must be a Pro user, creates a report in a workspace. To share with *Power BI free users*, the author needs to set the workspace as a *Premium workspace*.
+> [!NOTE]
+>
+> * You need a Power BI Pro or Premium Per User (PPU) license to create a report in a workspace.
+> * To share with *Microsoft free users*, the workspace needs to be in a *Premium capacity*.
 
-2. The author publishes the app and installs it. The author must install the app so it has access to the report URL that's used for embedding in SharePoint Online.
+1. Create a report in a workspace.
 
-3. All end users need to install the app too. You can also use the **Install app automatically** feature. You can enable this feature in the [Power BI admin portal](../admin/service-admin-portal.md), so the app is pre-installed for end users.
+2. Publish the app and install it. You must install the app so it has access to the report URL that's used for embedding in SharePoint Online.
+
+3. All end users need to install the app, too. You can also use the **Install app automatically** feature. In the Power BI admin portal, admins can enable [pushing apps](/fabric/admin/service-admin-portal-app#push-apps-to-end-users), so the app is pre-installed for end users.
 
    ![Screenshot of the Power BI admin portal with Install app automatically selected.](media/service-embed-report-spo/install-app-automatically.png)
 
-4. The author opens the app and goes to the report.
+4. Open the app and go to the report.
 
-5. The author copies the embedded report URL from the report the app installed. Don't use the original report URL from the workspace.
+5. Copy the embedded report URL from the report the app installed. Don't use the original report URL from the workspace.
 
 6. Create a new team site in SharePoint Online.
 
@@ -109,12 +115,12 @@ Embed a report within an app, and share it directly with users:
 
 Now the end user can go to the team site in SharePoint Online and view the reports on the page.
 
-## Multi-factor authentication
+## Multifactor authentication
 
-If your Power BI environment requires you to sign in using multi-factor authentication, you might be asked to sign in with a security device to verify your identity. This can occur if you didn't sign in to SharePoint Online using multi-factor authentication. Your Power BI environment requires a security device to validate an account.
+If your Power BI environment requires you to sign in using multifactor authentication, you might be asked to sign in with a security device to verify your identity. This can occur if you didn't sign in to SharePoint Online using multifactor authentication. Your Power BI environment requires a security device to validate an account.
 
 > [!NOTE]
-> Power BI doesn't support multi-factor authentication with Azure Active Directory 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
+> Power BI doesn't support multifactor authentication with Microsoft Entra ID 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
 
 ## Web part settings
 
@@ -144,7 +150,7 @@ Contact the SharePoint Online page owner to help resolve the issue.
 
 ## Licensing
 
-Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per User (PPU) license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](../enterprise/service-admin-premium-purchase.md)**.
+Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per User (PPU) license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md#capacities-and-skus)**.
 
 ## Known issues and limitations
 
@@ -152,28 +158,30 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
   
   If you receive this error, try one of the following steps to troubleshoot:
   
-  1. Sign out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
+  * Sign out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
 
-  2. If your user account requires multi-factor authentication (MFA), sign in to SharePoint with your MFA device (phone app, smart card, etc.).
+  * If your user account requires multifactor authentication (MFA), sign in to SharePoint with your MFA device (phone app, smart card, etc.).
   
-  3. Azure B2B Guest users accounts aren't supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
+  * Azure B2B Guest user accounts aren't supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
+
+* When viewing Power BI reports embedded in SharePoint Online, there's no option for users to switch between Power BI environments.
 
 * Power BI doesn't support the same localized languages that SharePoint Online does. As a result, you might not see proper localization within the embedded report.
 
-* You might encounter issues if you use Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../fundamentals/power-bi-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
-
-* The Power BI web part isn't available for [national clouds](https://powerbi.microsoft.com/clouds/).
+* You might encounter issues if you use Internet Explorer 10. Here's a link  [supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
 
 * The classic SharePoint Server isn't supported with this web part.
 
 * [URL filters](service-url-filters.md) aren't supported with the SharePoint Online web part.
 
-## Next steps
+* You can't view or access Power BI Apps embedded in a SharePoint site page using a Power BI web part. To access the embedded Power BI report, access the app first in Power BI service before accessing it in the SharePoint site page.
+
+## Related content
 
 * [Allow users to create modern pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 * [Publish an app in Power BI](service-create-distribute-apps.md)  
 * [Share Power BI reports and dashboards with coworkers and others](service-share-dashboards.md)  
-* [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
+* [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 * [Embed a report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

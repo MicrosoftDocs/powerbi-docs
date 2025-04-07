@@ -2,11 +2,11 @@
  title: video note
  description: video note
  services: powerbi
- author: maggiesMSFT
+ author: kfollis
  ms.service: powerbi
  ms.topic: include
  ms.date: 09/23/2021
- ms.author: maggies
+ ms.author: kfollis
  ms.custom: include file
 ---
 

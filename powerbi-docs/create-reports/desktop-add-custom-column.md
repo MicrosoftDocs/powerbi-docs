@@ -1,21 +1,21 @@
 ---
 title: Add a custom column in Power BI Desktop
-description: Quickly create a new custom column in Power BI Desktop
+description: Learn how to quickly create and customize a new column in Power BI Desktop using Power Query Editor, including step-by-step instructions and examples.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/28/2022
+ms.date: 02/07/2025
 LocalizationGroup: Create reports
+#customer intent: As a Power BI customer I want to learn how to create and customize new columns using Power Query Editor.
 ---
 # Add a custom column in Power BI Desktop
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 In Power BI Desktop, you can add a new custom column of data to your model by using Power Query Editor. With Power Query Editor, you can create and rename your custom column to create [PowerQuery M formula queries](/powerquery-m/quick-tour-of-the-power-query-m-formula-language) to define your custom column. PowerQuery M formula queries have a [comprehensive function reference content set](/powerquery-m/power-query-m-function-reference).
-
 When you create a custom column in Power Query Editor, Power BI Desktop adds it as an **Applied Step** in the **Query Settings** of the query. You can change, move, or modify the column at any time.
 
 ![Screenshot of the Add Custom Column dialog box.](media/desktop-add-custom-column/add-custom-column_01.png)
@@ -32,7 +32,7 @@ To create a custom column, follow these steps:
 
    The **Power Query Editor** window appears.
 
-2. From the **Add Column** tab on the ribbon, select **Custom Column**.
+3. From the **Add Column** tab on the ribbon, select **Custom Column**.
 
    ![Screenshot of the Power Query Editor with Custom Column highlighted.](media/desktop-add-custom-column/add-custom-column_02.png)
 
@@ -41,6 +41,7 @@ To create a custom column, follow these steps:
 ## The Custom Column window
 
 The **Custom Column** window has the following features:
+
 - An **Available columns** list on the right.
 
 - The initial name of your custom column, in the **New column name** box. You can rename this column.
@@ -51,6 +52,8 @@ The **Custom Column** window has the following features:
 
 ## Create formulas for your custom column
 
+You can create formulas for custom columns, as described in the following steps. For more information on M functions available for formulas, see [Power Query M function reference](/powerquery-m/power-query-m-function-reference).
+
 1. Select columns from the **Available columns** list on the right, and then select **Insert** below the list to add them to the custom column formula. You can also add a column by double-clicking it in the list.
 
 2. As you enter the formula and build your column, note the indicator in the bottom of the **Custom Column** window.
@@ -59,7 +62,7 @@ The **Custom Column** window has the following features:
 
    ![Screenshot of the Custom Column dialog box, highlighting no syntax errors have been detected and a checkmark.](media/desktop-add-custom-column/add-custom-column_04.png)
 
-   If there's a syntax error, there is a green checkmark, along with a link to where the error occurred in your formula.
+   If there's a syntax error, there is a warning, along with a link to where the error occurred in your formula.
 
    ![Screenshot of the Custom Column dialog box, highlighting the warning icon and error message.](media/desktop-add-custom-column/add-custom-column_05.png)
 
@@ -84,7 +87,7 @@ After you've created your query, you can also use the **Advanced Editor** to mod
    ![Screenshot of the Advanced Editor window.](media/desktop-add-custom-column/add-custom-column_07.png)
 2. Make any changes and then select **Done**.
 
-## Next steps
+## Related content
 
 - You can create a custom column in other ways, such as creating a column based on examples you provide to Power Query Editor. For more information, see [Add a column from an example in Power BI Desktop](desktop-add-column-from-example.md).
 

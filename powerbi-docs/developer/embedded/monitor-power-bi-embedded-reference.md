@@ -1,84 +1,72 @@
 ---
-title: Monitoring Power BI Embedded data reference
-description: Important reference material needed when you monitor Power BI Embedded.
+title: Monitoring data reference for Power BI Embedded
+description: Learn about using Power BI Embedded to monitor critical applications and business processes that rely on Azure resources.
+ms.date: 07/30/2024
+ms.custom: horz-monitor, engagement-fy23
+ms.topic: reference
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: how-to
-ms.custom: subject-monitoring, engagement-fy23
-ms.date: 11/02/2022
+#customer intent: As a developer, I want to learn how to monitor my Power BI Embedded application so that I can ensure it's running smoothly.
 ---
+# Power BI Embedded monitoring data reference
 
-# Monitoring Power BI Embedded data reference
+[!INCLUDE [horz-monitor-ref-intro](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-intro.md)]
 
-See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on collecting and analyzing monitoring data for Power BI Embedded.
+See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on the data you can collect for Power BI Embedded and how to use it.
 
->[!TIP]
->Use the [Premium Gen2 Monitoring App](../../enterprise/service-premium-gen2-metrics-app.md) to monitor your capacity.
+> [!TIP]
+> Use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to monitor your capacity.
 
-## Metrics
+[!INCLUDE [horz-monitor-ref-metrics-intro](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-intro.md)]
 
-This section lists all the automatically collected platform metrics collected for Power BI Embedded.  
+### <a name="capacities"></a>Supported metrics for Microsoft.PowerBIDedicated/capacities
 
-|Metric Type | Resource Provider / Type Namespace<br/> and link to individual metrics |
-|-------|-----|
-| Capacities | [Microsoft.PowerBIDedicated/capacities](/azure/azure-monitor/platform/metrics-supported#microsoftpowerbidedicatedcapacities) |
+The following table lists the metrics available for the Microsoft.PowerBIDedicated/capacities resource type.
 
-### Capacities
+[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
 
-Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure-monitor/platform/metrics-supported#microsoftpowerbidedicatedcapacities)
+[!INCLUDE [Microsoft.PowerBIDedicated/capacities](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-powerbidedicated-capacities-metrics-include.md)]
 
-| Name | Metric | Unit | Description |
-|:---|:-------|:-----|:------------|
-|CPU |cpu_metric |Percent |CPU utilization. |
-|CPU Per Workload |cpu_workload_metric |Percent |CPU utilization per workload. |
-|Overload |overload_metric |0/1 |Resource overload, 1 if resource is overloaded, otherwise 0. |
+This table provides additional information about the preceding table.
 
-## Metric dimensions
+| Name | Metric | Description |
+|:-----|:-------|:------------|
+| CPU | cpu_metric | CPU utilization. |
+| CPU Per Workload | cpu_workload_metric | CPU utilization per workload. |
+| Overload | overload_metric | Resource overload, 1 if resource is overloaded, otherwise 0. |
 
-Power BI Embedded does not have any metrics that contain dimensions.
+[!INCLUDE [horz-monitor-ref-metrics-dimensions-intro](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-dimensions-intro.md)]
 
-For information about metric dimensions, see [Multi-dimensional metrics](/azure/azure-monitor/platform/data-platform-metrics#multi-dimensional-metrics).
+[!INCLUDE [horz-monitor-ref-no-metrics-dimensions](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-no-metrics-dimensions.md)]
 
-## Resource logs
+[!INCLUDE [horz-monitor-ref-resource-logs](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-resource-logs.md)]
 
-This section lists the types of resource logs you can collect for Power BI Embedded.
+### Supported resource logs for Microsoft.PowerBIDedicated/capacities
 
-For reference, see a list of [all resource logs category types supported in Azure Monitor](/azure/azure-monitor/platform/resource-logs-schema).
+[!INCLUDE [Microsoft.PowerBIDedicated/capacities](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/reference/logs/microsoft-powerbidedicated-capacities-logs-include.md)]
 
-This section lists all the resource log category types collected for Power BI Embedded.  
+[!INCLUDE [horz-monitor-ref-logs-tables](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-logs-tables.md)]
 
-|Resource Log Type | Resource Provider / Type Namespace<br/> and link to individual metrics |
-|-------|-----|
-| Capacities | [Microsoft.PowerBIDedicated/capacities](/azure/azure-monitor/platform/resource-logs-categories#microsoftpowerbidedicatedcapacities) |
+### Power BI Embedded Microsoft.PowerBIDedicated/capacities
 
-## Azure Monitor Logs tables
+| Table | Description |
+|:------|:------------|
+| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity#columns) | Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that occurred in Azure. |
+| [AzureMetrics](/azure/azure-monitor/reference/tables/azuremetrics#columns) | Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. |
+| [AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics#columns) | Metric data emitted by Azure services that measure their health and performance. |
 
-This section refers to all of the Azure Monitor Logs Kusto tables relevant to Power BI Embedded and available for query by Log Analytics.
+[!INCLUDE [horz-monitor-ref-activity-log](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-activity-log.md)]
 
-|Resource Type | Notes |
-|-------|-----|
-| [Power BI Embedded](/azure/azure-monitor/reference/tables/tables-resourcetype#power-bi-embedded) |See a list of tables below |
+- [Analytics resource provider operations](/azure/role-based-access-control/resource-provider-operations#Analytics)
 
-### Power BI Embedded
-
-| Table |  Description |
-|:---------|:-------------|
-| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity) | Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure.    |
-| [AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)   | Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. |
-| [AzureMetrics](/azure/azure-monitor/reference/tables/azuremetrics)   | Metric data emitted by Azure services that measure their health and performance. |
-
-For a reference of all Azure Monitor Logs / Log Analytics tables, see the [Azure Monitor Log Table Reference](/azure/azure-monitor/reference/tables/tables-resourcetype).
-
-## Activity log
-
-You can select **Engine** and/or the **AllMetrics** categories.
+You can select **Engine** and the **AllMetrics** categories or either.
 
 ### Engine
 
-The engine category instructs the resource to log the events listed below. For each event, there are properties.
+The engine category instructs the resource to log the events listed in the following table. For each event, there are properties.
 
 |     Event Name     |     Event Description     |
 |----------------------------|----------------------------------------------------------------------------------|
@@ -93,7 +81,7 @@ The engine category instructs the resource to log the events listed below. For e
 
 #### Event example
 
-The table below shows an event example.
+The following table shows an event example.
 
 | Property Name | Vertipaq Query End Example | Property Description |
 |---|---|---|
@@ -111,12 +99,12 @@ The table below shows an event example.
 | ProgressTotal | 0 | Progress total. |
 | IntegerData | 0 | Integer data. |
 | Severity | 0 | Severity level of an exception. |
-| Success | 1 | 1 = success. 0 = failure (for example, a 1 means success of a permissions check and a 0 means a failure of that check). |
+| Success | 1 | 1 = success. 0 = failure. For example, a `1` means success of a permissions check and a `0` means a failure of that check. |
 | Error | 0 | Error number of a given event. |
 | ConnectionID | 3 | Unique connection ID. |
-| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID of the dataset in which the statement of the user is running. |
+| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID of the semantic model in which the statement of the user is running. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
-| SPID | 180 | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
+| SPID | 180 | Server process ID. This process ID uniquely identifies a user session. This ID directly corresponds to the session GUID used by XML/A. |
 | ClientProcessID | null | The process ID of the client application. |
 | ApplicationName | null | Name of the client application that created the connection to the server. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | The name of the Power BI Embedded capacity resource. |
@@ -125,7 +113,7 @@ The table below shows an event example.
 
 Checking the **AllMetrics** option logs the data of all the metrics that you can use with a Power BI Embedded resource.
 
-The following table lists the operations related to Power BI Embedded that may be created in the Activity log.
+The following table lists the operations related to Power BI Embedded that might appear in the Activity log.
 
 ## Schemas
 
@@ -133,14 +121,13 @@ Power BI Embedded uses the **Power BI Dedicated** schema.
 
 ## Example script for scaling a capacity
 
-To scale a capacity resource, you can use the [ScaleUp-Automation-RunBook.ps1](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) PowerShell runbook script.
+To scale a capacity resource, you can use the [ScaleUp-Automation-RunBook.ps1](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) PowerShell RunBook script.
 
-The script uses Power BI and ARM REST APIs, and can be called in Azure Automation, and triggered by Azure alert.
+The script uses Power BI and Azure Resource Manager REST APIs that are called in Azure Automation and triggered by Azure alert.
 
 You can either copy the script, or download it as part of the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) repository, by selecting the green *code* button, and downloading the ZIP.
 
-## Next steps
+## Related content
 
-* [Monitor Azure Power BI Embedded](monitor-power-bi-embedded.md)
-* [Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
-* [Set-AzureRmDiagnosticSetting](/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)
+- See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for a description of monitoring Power BI Embedded.
+- See [Monitor Azure resources with Azure Monitor](/azure/azure-monitor/essentials/monitor-azure-resource) for details on monitoring Azure resources.

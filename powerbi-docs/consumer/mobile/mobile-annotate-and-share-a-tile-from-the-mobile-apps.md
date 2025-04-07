@@ -22,9 +22,7 @@ You can annotate and share a snapshot of a tile, report, or visual from the Powe
 
 *A report with annotations*
 
-The mail with the snapshot of the tile, report, or visual also includes a link to the actual object on the Power BI service ([https://powerbi.com](https://powerbi.com)). Your recipients can click the link and go straight to that tile, report, or visual, if you and they have Power BI Pro licenses, or the content is in a [Premium capacity](../../enterprise/service-premium-gen2-what-is.md), and you've already shared the item with them. 
-
-You can [share a tile from the Power BI mobile app for Windows 10 devices](mobile-windows-10-phone-app-get-started.md), too, but not annotate it.
+The mail with the snapshot of the tile, report, or visual also includes a link to the actual object on the Power BI service ([https://powerbi.com](https://powerbi.com)). Your recipients can click the link and go straight to that tile, report, or visual, if you and they have Power BI Pro licenses, or the content is in a [Premium capacity](../../enterprise/service-premium-what-is.md), and you've already shared the item with them.
 
 ## Open a tile for annotating
 1. Tap the tile to open it in focus mode.
@@ -65,6 +63,7 @@ You can [share a tile from the Power BI mobile app for Windows 10 devices](mobil
    The mail has an image, and a link to the specific tile, report, or visual. 
 4. Tap **Send**.
 
-## Next steps
+## Related content
+
 * [Share a dashboard from the Power BI mobile apps](mobile-share-dashboard-from-the-mobile-apps.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

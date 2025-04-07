@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 02/17/2025
 ms.custom: intro-get-started
 ---
 # Get started with the Power BI mobile app on iOS devices
@@ -27,7 +27,7 @@ Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile
 ## Download the app
 [Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone or iPad.
 
-You can run the Power BI mobile app for iOS on any device running iOS 14.0 or later.
+You can run the Power BI mobile app for iOS on any device running iOS/iPadOS 17 or later.
 
 ## Sign up for the Power BI service
 If you haven't already signed up, go to [powerbi.com](https://powerbi.microsoft.com/get-started/), and select **Try Power BI for free**.
@@ -36,7 +36,7 @@ If you haven't already signed up, go to [powerbi.com](https://powerbi.microsoft.
 ## Get started with the Power BI app
 1. In your iOS device, open the Power BI app.
 2. To sign in to Power BI, tap the **Power BI** tab and fill in your sign-in details.  
-   To sign in to your Reporting Services mobile reports and KPIs, tap the **Report server** tab and fill in your sign-in details.
+   To sign in to your Reporting Services KPIs, tap the **Report server** tab and fill in your sign-in details.
    
    ![Sign in to the Power BI mobile app](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    
@@ -76,7 +76,7 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 
 Read more about [configuring Power BI mobile apps with Microsoft Intune](../../enterprise/service-admin-mobile-intune.md). 
 
-## Next steps
+## Related content
 
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

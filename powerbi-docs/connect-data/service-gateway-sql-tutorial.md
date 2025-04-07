@@ -1,207 +1,226 @@
 ---
 title: "Tutorial: Connect to on-premises data in SQL Server"
-description: Learn how to use SQL Server as a gateway data source, including how to refresh data.
+description: Learn how to use SQL Server as an on-premises gateway data source, including how to import and refresh data.
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 06/09/2021
+ms.date: 08/28/2024
 LocalizationGroup: Gateways
+#customer intent: As a Power BI user, I want to learn how to connect to on-premises data in SQL Server so that I can import and refresh data from a relational database in my local network.
 ---
 
 # Refresh data from an on-premises SQL Server database
 
-In this tutorial, you explore how to refresh a Power BI dataset from a relational database that exists on premises in your local network. Specifically, this tutorial uses a sample SQL Server database, which Power BI must access through an on-premises data gateway.
+In this tutorial, you explore how to refresh a Power BI semantic model from a relational database that exists on premises in your local network. Specifically, this tutorial uses a sample SQL Server database, which Power BI must access through an on-premises data gateway.
 
 In this tutorial, you complete the following steps:
 
 > [!div class="checklist"]
 >
-> * Create and publish a Power BI Desktop (.pbix) file that imports data from an on-premises SQL Server database.
-> * Configure data source and dataset settings in Power BI for SQL Server connectivity through a data gateway.
-> * Configure a refresh schedule to ensure your Power BI dataset has recent data.
-> * Perform an on-demand refresh of your dataset.
+> * Create and publish a Power BI Desktop *.pbix* file that imports data from an on-premises SQL Server database.
+> * Configure data source and semantic model settings in Power BI for SQL Server connectivity through a data gateway.
+> * Configure a refresh schedule to ensure your Power BI semantic model has recent data.
+> * Do an on-demand refresh of your semantic model.
 > * Review the refresh history to analyze the outcomes of past refresh cycles.
-> * Clean up resources by deleting the items created in this tutorial.
+> * Clean up resources by deleting the items you created in this tutorial.
 
 ## Prerequisites
 
-* If you don't already have one, sign up for a [free Power BI trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
-* [Install Power BI Desktop](https://powerbi.microsoft.com/desktop/) on a local computer.
-* [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [sample database from a backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). For more information about AdventureWorks, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
-* [Install an on-premises data gateway](service-gateway-onprem.md) on the same local computer as SQL Server (in production, it would typically be a different computer).
+* If you don't already have one, sign up for a [free Power BI trial](https://powerbi.microsoft.com/getting-started-with-power-bi) before you begin.
+* [Install Power BI Desktop](https://powerbi.microsoft.com/desktop) on a local computer.
+* [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [AdventureWorksDW2017 sample database from a backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). For more information about the AdventureWorks sample databases, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
+* [Install SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
+* [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install) on the same local computer as SQL Server. In production, the gateway would usually be on a different computer.
 
 > [!NOTE]
-> If you're not a gateway administrator and don't want to install a gateway yourself, contact a gateway administrator in your organization. They can create the required data source definition to connect your dataset to your SQL Server database.
-> If you're planning to use a stored procedure, you should use Import Data connectivity mode.
+> If you're not a gateway administrator, or don't want to install a gateway yourself, ask a gateway administrator in your organization to create the required data source definition to connect your semantic model to your SQL Server database.
 
 ## Create and publish a Power BI Desktop file
 
-Use the following procedure to create a basic Power BI report using the AdventureWorksDW sample database. Publish the report to the Power BI service, so that you get a dataset in Power BI, which you can then configure and refresh in subsequent steps.
+Use the following procedure to create a basic Power BI report that uses the AdventureWorksDW2017 sample database. Publish the report to the Power BI service to get a Power BI semantic model, which you configure and refresh in later steps.
 
-1. In Power BI Desktop, on the **Home** tab, select **Get data** \> **SQL Server**.
+1. In Power BI Desktop, on the **Home** tab, select **Get data** > **SQL Server**.
 
-2. In the **SQL Server database** dialog box, enter the **Server** and **Database (optional)** names, make sure the **Data Connectivity mode** is **Import**, and then select **OK**.
+1. In the **SQL Server database** dialog box, enter the **Server** and **Database (optional)** names, and make sure the **Data Connectivity mode** is set to **Import**.
 
-    ![SQL Server database](./media/service-gateway-sql-tutorial/sql-server-database.png)
+   > [!NOTE]
+   > If you plan to use a stored procedure, you must use **Import** as the **Data connectivity** mode.
 
-    We're not using **Advanced options** in this tutorial, but note that you can specify a SQL statement and set other options like using [SQL Server Failover](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
+   ![Screenshot of the SQL Server database dialog box.](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
-    ![SQL Server advanced options](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
+   Optionally, under **Advanced options**, you could specify a SQL statement and set other options like using [SQL Server Failover](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
 
-3. Verify your **credentials**, then select **Connect**.
+   ![Screenshot of SQL Server advanced options](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
 
-    > [!NOTE]
-    > If you're unable to authenticate, make sure you select the correct authentication method and use an account with database access. In test environments, you might use Database authentication with an explicit username and password. In production environments, you typically use Windows authentication. Refer to [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md) and contact your database administrator for additional assistance.
+1. Select **OK**.
 
-4. If an **Encryption Support** dialog box appears, select **OK**.
+1. On the next screen, verify your credentials, and then select **Connect**.
 
-5. In the **Navigator** dialog box, select the **DimProduct** table, then select **Load**.
+   > [!NOTE]
+   > If authentication fails, make sure you selected the correct authentication method and used an account with database access. In test environments, you might use **Database** authentication with an explicit username and password. In production environments, you typically use **Windows** authentication. For more assistance, see [Troubleshoot refresh scenarios](refresh-troubleshooting-refresh-scenarios.md), or contact your database administrator.
 
-    ![Data source navigator](./media/service-gateway-sql-tutorial/data-source-navigator.png)
+1. If an **Encryption Support** dialog box appears, select **OK**.
 
-6. In the Power BI Desktop **Report** view, in the **Visualizations** pane, select the **Stacked column chart**.
+1. In the **Navigator** dialog box, select the **DimProduct** table, and then select **Load**.
 
-    ![Stacked column chart](./media/service-gateway-sql-tutorial/stacked-column-chart.png)
+   ![Screenshot of the Navigator dialog box.](./media/service-gateway-sql-tutorial/data-source-navigator.png)
 
-7. With the column chart selected in the report canvas, in the **Fields** pane select the **EnglishProductName** and **ListPrice** fields.
+1. In the Power BI Desktop **Report** view, in the **Visualizations** pane, select the **Stacked column chart**.
 
-    ![Fields pane](./media/service-gateway-sql-tutorial/fields-pane.png)
+   ![Screenshot of the Visualizations pane with the Stacked column chart highlighted.](./media/service-gateway-sql-tutorial/stacked-column-chart.png)
 
-8. Drag the **EndDate** onto **Filters on this page**, and under **Basic filtering** select only the checkbox for **(Blank)**.
+1. With the new column chart selected in the report canvas, in the **Data** pane, select the **EnglishProductName** and **ListPrice** fields.
 
-    ![Report level filters](./media/service-gateway-sql-tutorial/report-level-filters.png)
+   ![Screenshot of the Data pane with the EnglishProductName and ListPrice fields highlighted.](./media/service-gateway-sql-tutorial/data-pane.png)
 
-    The chart should now look like the following.
+1. Drag **EndDate** from the **Data** pane onto **Filters on this page** in the **Filters** pane, and under **Basic filtering**, select the checkbox for **(Blank)**.
 
-    ![Finished column chart](./media/service-gateway-sql-tutorial/finished-column-chart.png)
+   ![Screenshot that shows Basic filtering for Filters on this page.](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
-    Notice that the five **Road-250** products are listed with the highest list price. This will change when you update the data and refresh the report later in this tutorial.
+   The visualization should now look similar to the following chart:
 
-9. Save the report with the name "AdventureWorksProducts.pbix".
+   ![Screenshot that shows the finished column chart.](./media/service-gateway-sql-tutorial/finished-column-chart.png)
 
-10. On the **Home** tab select **Publish** \> **My Workspace** \> **Select**. Sign in to the Power BI service if you're asked to do so.
+   Notice that the **Road-250 Red** product has the same list price as the other **Road-250** products. This price changes when you later update the data and refresh the report.
 
-11. On the **Success** screen, select **Open 'AdventureWorksProducts.pbix' in Power BI**.
+1. Save the report with the name *AdventureWorksProducts.pbix*.
 
-    [Publish to Power BI](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
+1. On the **Home** tab, select **Publish**.
 
-## Connect a dataset to a SQL Server database
+1. On the **Publish to Power BI** screen, choose **My Workspace**, and then select **Select**. Sign in to the Power BI service if necessary.
 
-In Power BI Desktop, you connected directly to your on-premises SQL Server database, but the Power BI service requires a data gateway to act as a bridge between the cloud and your on-premises network. Follow these steps to add your on-premises SQL Server database as a data source to a gateway and then connect your dataset to this data source.
+1. When the **Success** message appears, select **Open 'AdventureWorksProducts.pbix' in Power BI**.
 
-1. Sign in to Power BI. In the upper-right corner, select the settings gear icon and then select **Settings**.
+   ![Screenshot of the Publish to Power BI screen.](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
 
-    ![Power BI settings](./media/service-gateway-sql-tutorial/power-bi-settings.png)
+## Connect the semantic model to the SQL Server database
 
-2. On the **Datasets** tab, select the dataset **AdventureWorksProducts**, so you can connect to your on-premises SQL Server database through a data gateway.
+In Power BI Desktop, you connected directly to your on-premises SQL Server database. In the Power BI service, you need a data gateway to act as a bridge between the cloud and your on-premises network. Follow these steps to add your on-premises SQL Server database as a data source to a gateway and connect your semantic model to this data source.
 
-3. Expand **Gateway connection** and verify that at least one gateway is listed. If you don't have a gateway, see the [Prerequisites](#prerequisites) section earlier in this tutorial for a link to the product documentation for installing and configuring a gateway.
+1. In the Power BI service, go to your workspace and locate the **AdventureWorksProducts** semantic model in the workspace content list.
 
-    ![Gateway connection](./media/service-gateway-sql-tutorial/gateway-connection.png)
+1. Select the **More options** three horizontal dots icon next to the name of the semantic model, then choose **Settings**.
 
-4. Under **Actions**, expand the toggle button to view the data sources and select the **Add to gateway** link.
+1. Expand **Gateway and cloud connections** and verify that at least one gateway is listed. If you don't see a gateway, make sure you followed the instructions to [install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
-    ![Add data source to gateway](./media/service-gateway-sql-tutorial/add-data-source-gateway.png)
+   ![Screenshot that shows the Gateway connection in Settings.](./media/service-gateway-sql-tutorial/gateway-connection.png)
 
-    > [!NOTE]
-    > If you're not a gateway administrator and don't want to install a gateway yourself, contact a gateway administrator in your organization. They can create the required data source definition to connect your dataset to your SQL Server database.
+1. Select the arrow toggle under **Actions** to expand the data sources, and then select the **Add to gateway** link next to your data source.
 
-5. On the **Gateways** management page, on the **Data Source Settings** tab, enter and verify the following information, and select **Add**.
+   ![Screenshot that shows the expanded data sources with the arrow toggle highlighted.](./media/service-gateway-sql-tutorial/add-data-source-gateway.png)
 
-    | Option | Value |
-    | --- | --- |
-    | Data Source Name | AdventureWorksProducts |
-    | Data Source Type | SQL Server |
-    | Server | The name of your SQL Server instance, such as SQLServer01 (must be identical to what you specified in Power BI Desktop). |
-    | Database | The name of your SQL Server database, such as AdventureWorksDW (must be identical to what you specified in Power BI Desktop). |
-    | Authentication Method | Windows or Basic (typically Windows). |
-    | Username | The user account you use to connect to SQL Server. |
-    | Password | The password for the account you use to connect to SQL Server. |
+1. On the **New connection** screen with **On-premises** selected, complete or verify the following fields. Most fields are already filled in.
 
-    ![Data source settings](./media/service-gateway-sql-tutorial/data-source-settings.png)
+   * **Gateway cluster name**: Verify or enter the gateway cluster name.
+   * **Connection name**: Enter a name for the new connection, such as **AdventureWorksProducts**.
+   * **Connection type**: Select **SQL Server** if not already selected.
+   * **Server**: Verify or enter your SQL Server instance name. Must be identical to what you specified in Power BI Desktop.
+   * **Database**: Verify or enter your SQL Server database name, such as **AdventureWorksDW2017**. Must be identical to what you specified in Power BI Desktop.
 
-6. On the **Datasets** tab, expand the **Gateway connection** section again. Select the data gateway you configured, which shows a **Status** of running on the machine where you installed it, and select **Apply**.
+   Under **Authentication**:
 
-    ![Update gateway connection](./media/service-gateway-sql-tutorial/update-gateway-connection.png)
+   * **Authentication method**: Select **Windows**, **Basic**, or **OAuth2**, usually **Windows**.
+   * **Username** and **Password**: Enter the credentials you use to connect to SQL Server.
+
+   ![Screenshot that shows the New connection settings.](./media/service-gateway-sql-tutorial/data-source-settings.png)
+
+1. Select **Create**.
+
+1. Back on the **Settings** screen, expand the **Gateway connection** section, and verify that the data gateway you configured now shows a **Status** of running on the machine where you installed it. Select **Apply**.
+
+   ![Screenshot that shows applying the gateway connection.](./media/service-gateway-sql-tutorial/update-gateway-connection.png)
 
 ## Configure a refresh schedule
 
-Now you've connected your dataset in Power BI to your SQL Server database on-premises through a data gateway, follow these steps to configure a refresh schedule. Refreshing your dataset on a scheduled basis helps to ensure that your reports and dashboards have the most recent data.
+Once you have connected your Power BI semantic model to your SQL Server on-premises database through a data gateway, follow these steps to configure a refresh schedule. Refreshing your semantic model on a scheduled basis helps ensure that your reports and dashboards have the most recent data.
 
-1. In the nav pane, open **My Workspace** \> **Datasets**. Select the ellipsis (**. . .**) for the **AdventureWorksProducts** dataset, then select **Schedule refresh**.
+1. In the left navigation pane, select **My Workspace**.
 
-    > [!NOTE]
-    > Make sure you select the ellipsis for the **AdventureWorksProducts** dataset and not the ellipsis for the report with the same name. The context menu of the **AdventureWorksProducts** report does not include a **Schedule refresh** option.
+1. Select the **AdventureWorksProducts** semantic model from the workspace content list.
 
-2. In the **Scheduled refresh** section, under **Keep your data up to date**, set refresh to **On**.
+   > [!TIP]
+   > Make sure you point to the **AdventureWorksProducts** semantic model, not the report with the same name, which doesn't have a **Schedule refresh** option.
 
-3. Select an appropriate **Refresh frequency**, ( **Daily** for this example), and then under **Time**, select **Add another time** to specify the desired refresh time (6:30 AM and PM for this example).
+1. On the semantic model settings page, select **Refresh**, then **Schedule refresh** from the ribbon.
 
-    ![Configure scheduled refresh](./media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
+1. In the **Refresh** section, under **Configure a refresh schedule**, set the slider to **On**.
 
-    > [!NOTE]
-    > You can configure up to 8 daily time slots if your dataset is on shared capacity, or 48 time slots on Power BI Premium.
+1. Under **Refresh frequency**, select **Daily** for this example, and then under **Time**, select **Add another time**.
 
-4. Leave the checkbox **Send refresh failure notification emails to me** enabled and select **Apply**.
+   For this example, specify **6:00 AM**, then select **Add another time** and specify **6:00 PM**.
 
-## Perform an on-demand refresh
+   ![Screenshot that shows configuring scheduled refresh.](./media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
 
-Now that you've configured a refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes. If you want to refresh the data sooner, such as to test your gateway and data source configuration, perform an on-demand refresh by using the **Refresh Now** option in the dataset menu in the nav pane. On-demand refreshes don't affect the next scheduled refresh time, but they count against the daily refresh limit, mentioned in the previous section.
+   > [!NOTE]
+   > You can configure up to eight daily time slots if your semantic model is on shared capacity, or 48 time slots on Power BI Premium.
 
-For illustration purposes, simulate a change to the sample data by updating the DimProduct table in the AdventureWorksDW database using SQL Server Management Studio (SSMS).
+1. Leave the checkbox under **Send refresh failure notifications to** set to **Semantic model owner**, and select **Apply**.
+
+With a configured refresh schedule, Power BI refreshes your semantic model at the next scheduled time, within a margin of 15 minutes.
+
+## Refresh on demand
+
+To refresh the data anytime, such as to test your gateway and data source configuration, you can do an on-demand refresh by using the **Refresh now** option in the ribbon at the top of the semantic model settings page. You can also find this option in the workspace content list next to the name of the semantic model. On-demand refreshes don't affect the next scheduled refresh time.
+
+To illustrate an on-demand refresh, first change the sample data by using SSMS to update the `DimProduct` table in the AdventureWorksDW2017 database, as follows:
 
 ```sql
 
-UPDATE [AdventureWorksDW].[dbo].[DimProduct]
+UPDATE [AdventureWorksDW2017].[dbo].[DimProduct]
 SET ListPrice = 5000
 WHERE EnglishProductName ='Road-250 Red, 58'
 
 ```
 
-Now follow these steps so the updated data can flow through the gateway connection to the dataset and into the reports in Power BI.
+Follow these steps to make the updated data flow through the gateway connection to the semantic model and into the Power BI reports:
 
-1. In the Power BI Service, in the nav pane, select and expand **My Workspace**.
+1. Navigate to **My Workspace** in the left navigation pane and locate the **AdventureWorksProducts** semantic model.
 
-2. Under **Datasets**, for the **AdventureWorksProducts** dataset, select the ellipsis (**. . .**) then select **Refresh now**.
+2. Select the **Refresh now** icon next to the name of the semantic model. A **Preparing for refresh** message appears in the upper right corner.
 
-    ![Refresh now](./media/service-gateway-sql-tutorial/refresh-now.png)
+   ![Screenshot that shows selecting Refresh now.](./media/service-gateway-sql-tutorial/refresh-now.png)
 
-    Note in the upper right corner, that Power BI is preparing to perform the requested refresh.
+   A **Preparing for refresh** message appears at upper right.
 
-3. Select **My Workspace \> Reports \> AdventureWorksProducts**. See how the updated data flowed through, and the product with the highest list price is now **Road-250 Red, 58**.
+3. Now select the **AdventureWorksProducts** report to open it. See how the updated data flowed through into the report, and the product with the highest list price is now **Road-250 Red, 58**.
 
-    ![Updated column chart](./media/service-gateway-sql-tutorial/updated-column-chart.png)
+   ![Screenshot that shows the updated column chart.](./media/service-gateway-sql-tutorial/updated-column-chart.png)
 
 ## Review the refresh history
 
-It is a good idea to check the outcomes of past refresh cycles periodically in the refresh history. Database credentials might have expired, or the selected gateway might have been offline when a scheduled refresh was due. Follow these steps to examine the refresh history and check for issues.
+It's a good idea to periodically use the refresh history to check the outcomes of past refresh cycles. Database credentials might have expired, or the selected gateway might have been offline when a scheduled refresh was due. Follow these steps to examine the refresh history and check for issues.
 
-1. In the upper-right corner of the Power BI user interface, select the settings gear icon and then select **Settings**.
+1. In **My Workspace**, select the **AdventureWorksProducts** semantic model.
 
-2. Switch to **Datasets** and select the dataset, such as **AdventureWorksProducts**, you want to examine.
+2. On the semantic model settings page, select **Refresh**, then **Refresh history** from the ribbon at the top of the page.
 
-3. Select the **Refresh history** link to open the **Refresh history** dialog.
+3. On the **Scheduled** tab of the **Refresh history** dialog box, notice the past scheduled and on-demand refreshes with their **Start** and **End** times. A **Status** of **Completed** indicates that Power BI did the refreshes successfully. For failed refreshes, you can see the error message and examine error details.
 
-    ![Refresh history link](./media/service-gateway-sql-tutorial/refresh-history-link.png)
+   ![Screenshot that shows the Refresh history screen.](./media/service-gateway-sql-tutorial/refresh-history-details.png)
 
-4. On the **Scheduled** tab, notice the past scheduled and on-demand refreshes with their **Start** and **End** times, and a **Status** of **Completed**, which indicates that Power BI performed the refreshes successfully. For failed refreshes, you can see the error message and examine error details.
-
-    ![Refresh history details](./media/service-gateway-sql-tutorial/refresh-history-details.png)
-
-    > [!NOTE]
-    > The OneDrive tab is only relevant for datasets connected to Power BI Desktop files, Excel workbooks, or CSV files on OneDrive or SharePoint Online, as explained in more detail in [Data refresh in Power BI](refresh-data.md).
+   > [!NOTE]
+   > The OneDrive tab is relevant only for semantic models that are connected to Power BI Desktop files, Excel workbooks, or CSV files on OneDrive or SharePoint Online. For more information, see [Data refresh in Power BI](refresh-data.md).
 
 ## Clean up resources
 
-If you don't want to use the sample data anymore, drop the database in SQL Server Management Studio (SSMS). If you don't want to use the SQL Server data source, remove the data source from your data gateway. Also consider uninstalling the data gateway if you only installed it for the purposes of completing this tutorial. You should also delete the AdventureWorksProducts dataset and AdventureWorksProducts report that Power BI created when you uploaded the AdventureWorksProducts.pbix file.
+Follow these instructions to clean up the resources you created for this tutorial:
 
-## Next steps
+* If you don't want to use the sample data anymore, use SSMS to drop the database.
+* If you don't want to use the SQL Server data source, [remove the data source](service-gateway-data-sources.md#remove-a-data-source) from your data gateway. Also consider uninstalling the data gateway, if you installed it only for this tutorial.
+* Also delete the AdventureWorksProducts semantic model and report that Power BI created when you published the *AdventureWorksProducts.pbix* file.
 
-In this tutorial, you've explored how to import data from an on-premises SQL Server database into a Power BI dataset and how to refresh this dataset on a scheduled and on-demand basis to keep the reports and dashboards that use this dataset updated in Power BI. Now you can learn more about managing data gateways and data sources in Power BI. It might also be a good idea to review the conceptual article Data Refresh in Power BI.
+## Related content
+
+This tutorial explored how to:
+
+* Import data from an on-premises SQL Server database into a Power BI semantic model.
+* To update reports and dashboards that use the semantic model, refresh the Power BI semantic model on a scheduled and on-demand basis.
+
+Check out the following resources to learn more about Power BI data refresh and managing data gateways and data sources:
 
 * [Manage an on-premises data gateway](/data-integration/gateway/service-gateway-manage)
-* [Manage your data source - Import/Scheduled Refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
+* [Manage your data source - import and scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Data refresh in Power BI](refresh-data.md)

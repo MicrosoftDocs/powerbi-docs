@@ -8,12 +8,12 @@ editor: davidi
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 09/22/2022
+ms.date: 01/16/2024
 LocalizationGroup: Connect to data
 ---
 # Implement row-level security in an on-premises Analysis Services tabular model
 
-Using a sample dataset to work through the steps below, this tutorial shows you how to implement [**row-level security**](../enterprise/service-admin-rls.md) in an on-premises *Analysis Services Tabular Model* and use it in a Power BI report.
+Using a sample semantic model to work through the steps below, this tutorial shows you how to implement [**row-level security**](/fabric/security/service-admin-row-level-security) in an on-premises *Analysis Services Tabular Model* and use it in a Power BI report.
 
 * Create a new security table in the [AdventureworksDW2012 database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * Build the tabular model with necessary fact and dimension tables
@@ -28,7 +28,7 @@ This tutorial requires the [AdventureworksDW2012 database](https://github.com/Mi
 
 ## Task 1: Create the user security table and define data relationship
 
-You can find many articles describing how to define row-level dynamic security with the *SQL Server Analysis Services (SSAS) tabular* model. For our sample, we use [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
+You can find many articles describing how to define row-level dynamic security with the *SQL Server Analysis Services (SSAS) tabular* model. 
 
 The steps here require using the AdventureworksDW2012 relational database.
 
@@ -95,7 +95,7 @@ Once your relational data warehouse is in place, you need to define the tabular 
 
     This formula specifies that all columns resolve to `false`; meaning `DimUserSecurity` table columns can't be queried.
 
-Now you need to process and deploy the model. For more information, see [Deploy](/analysis-services/tutorial-tabular-1200/lesson-13-deploy).
+Now you need to process and deploy the model. For more information, see [Deploy](/analysis-services/tutorial-tabular-1400/as-lesson-13-deploy).
 
 ## Task 3: Add Data Sources within your On-premises data gateway
 

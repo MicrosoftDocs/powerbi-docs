@@ -1,13 +1,13 @@
 ---
 title: "Tutorial: From dimensional model to stunning report in Power BI Desktop"
 description: In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 20 minutes.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 07/14/2022
+ms.date: 05/29/2024
 ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx"
 LocalizationGroup: Reports
 ---
@@ -244,9 +244,9 @@ Now your final data model is ready.
 
 Writing *measures* in the DAX formula language is super powerful for data modeling. There's lots to [learn about DAX in the Power BI documentation](/dax/). For now, let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date. This measure uses the [USERELATIONSHIP function](/dax/userelationship-function-dax) to activate the relationship between Sales and Date on DueDate for the context of the measure. It then uses [CALCULATE](/dax/calculate-function-dax) to sum the Sales Amount in that context.
 
-1. Select Data View on the left. 
+1. Select Table view on the left. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/desktop-open-data-view.png" alt-text="Screenshot of Select Data view on the left.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/desktop-open-data-view.png" alt-text="Screenshot of Select Table view on the left.":::
 
 1. Select the Sales table in the Fields list.
 
@@ -345,7 +345,7 @@ Next we create a column chart to investigate which products are sold by what typ
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-increase-width.png" alt-text="Screenshot of Widen the matrix to fill the report.":::
 
-1. In the Formatting pane for the matrix, search for *conditional*. In the **Cell elements** section, turn on **Data bars**. Select the **fx** option, and set a lighter color for the positive bar. Select **OK**. 
+1. In the Format pane for the matrix, search for *conditional*. In the **Cell elements** section, turn on **Data bars**. Select the **fx** option, and set a lighter color for the positive bar. Select **OK**. 
 
 1. Increase the width of the Sales Amount column so it fills the whole area by dragging the matrix.
 
@@ -470,7 +470,7 @@ To share your report with your manager and colleagues, publish it to the Power B
 
 1. Select **Share** at the top of the report to share your report with others.
 
-## Next steps 
+## Related content 
 
 - Download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
 - Learn more about [DAX and data modeling in Power BI Desktop](/training/modules/dax-power-bi-models/)

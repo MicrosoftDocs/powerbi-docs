@@ -1,19 +1,21 @@
 ---
 title: "Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios"
-description: Scenario-based guidance to help you determine the right type and number of Power BI Premium licenses when migrating from Azure Analysis Services.
-author: peter-myers
-ms.author: v-petermyers
+description: "Scenario-based guidance to help you determine the right type and number of Power BI Premium licenses when migrating from Azure Analysis Services."
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/08/2022
-ms.custom: intro-migration
+ms.custom: fabric-cat, intro-migration
+ms.date: 12/30/2024
 ---
 
 # Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios
 
 This article compares six hypothetical scenarios when migrating from Azure Analysis Services (AAS) to Power BI Premium. These scenarios can help you to determine the right type and number of licenses for your business requirements and circumstances.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 > [!NOTE]
 > An attempt has been made to ensure these scenarios are representative of real customer migrations, however individual customer scenarios will of course differ. Also, this article doesn't include pricing details. You can find current pricing here:
@@ -40,7 +42,7 @@ In the first migration scenario, the customer uses Power BI Premium for the fron
 
 Here are their current AAS licenses:
 
-| **Environment** | **Largest model** | **AAS SKU** |
+| Environment | Largest model | AAS SKU |
 |:-|:-:|:-:|
 | Production | 60 GB | S4 |
 | Production | 30 GB | S2 |
@@ -50,7 +52,7 @@ Here are their current AAS licenses:
 
 Here are their current Power BI licenses:
 
-| **Environment** | **Power BI license** | **Users** |
+| Environment | Power BI license | Users |
 |:-|:-|-:|
 | Production | Premium P2 | 5,000 |
 | Test/development | Premium P1 | 20 |
@@ -63,7 +65,7 @@ Once migrated to Power BI Premium:
 
 Here are the proposed Power BI licenses:
 
-| **Environment** | **Power BI license** | **Users** | **Largest model** |
+| Environment | Power BI license | Users | Largest model |
 |:-|:-|-:|:-:|
 | Production | Premium P3 | 5,000 | 60 GB |
 | Production/test/development | PPU | 20 | 5 GB |
@@ -74,7 +76,7 @@ In this migration scenario, the customer uses Power BI Premium for the frontend 
 
 Here are their current AAS licenses:
 
-| **Region** | **Environment** | **Largest model** | **AAS SKU** |
+| Region | Environment | Largest model | AAS SKU |
 |:-|:-|:-:|:-:|
 | West Europe | Production | 60 GB | S4 |
 | Brazil South | Production | 30 GB | S2 |
@@ -84,7 +86,7 @@ Here are their current AAS licenses:
 
 Here are their current Power BI licenses:
 
-| **Region** | **Environment** | **Power BI license** | **Users** |
+| Region | Environment | Power BI license | Users |
 |:-|:-|:-|-:|
 | West Europe | Production | Premium P1 | 2,000 |
 | Brazil South | Production | Premium P1 | 2,000 |
@@ -99,7 +101,7 @@ Once migrated to Power BI Premium:
 
 Here are the proposed Power BI licenses:
 
-| **Region** | **Environment** | **Power BI license** | **Users** | **Largest model** |
+| Region | Environment | Power BI license | Users | Largest model |
 |:-|:-|:-|-:|:-:|
 | West Europe | Production | Premium P3 | 2,000 | 60 GB |
 | Brazil South | Production | Premium P2 | 2,000 | 30 GB |
@@ -112,7 +114,7 @@ In this migration scenario, the customer has Power BI Pro licenses for all users
 
 Here are their current AAS licenses:
 
-| **Environment** | **Largest model** | **AAS SKU** |
+| Environment | Largest model | AAS SKU |
 |:-|:-:|:-:|
 | Production | 35 GB | S2 |
 | Production | 30 GB | S2 |
@@ -121,7 +123,7 @@ Here are their current AAS licenses:
 
 Here are their current Power BI licenses:
 
-| **Environment** | **Power BI license** | **Users** |
+| Environment | Power BI license | Users |
 |:-|:-|-:|
 | Production | Pro (as part of E5) | 4,000 |
 | Production/test/development | Pro (as part of E5) | 15 |
@@ -133,7 +135,7 @@ Once migrated to Power BI Premium:
 
 Here are the proposed Power BI licenses:
 
-| **Environment** | **Power BI license** | **Users** | **Largest model** |
+| Environment | Power BI license | Users | Largest model |
 |:-|:-|-:|:-:|
 | Production | Premium P2 | 4,000 | 35 GB |
 | Production/test/development | PPU | 15 | 5 GB |
@@ -144,7 +146,7 @@ In this migration scenario, the customer has Power BI Pro licenses for all users
 
 Here are their current AAS licenses:
 
-| **Environment** | **Largest model** | **AAS SKU** |
+| Environment | Largest model | AAS SKU |
 |:-|:-:|:-:|
 | Production | 35 GB | S2 |
 | Production | 10 GB | S1 |
@@ -153,7 +155,7 @@ Here are their current AAS licenses:
 
 Here are their current Power BI licenses:
 
-| **Environment** | **Power BI license** | **Users** |
+| Environment | Power BI license | Users |
 |:-|:-|-:|
 | Production | Pro | 350 |
 | Production/test/development | Pro | 5 |
@@ -165,7 +167,7 @@ Once migrated to Power BI Premium:
 
 Here are the proposed Power BI licenses:
 
-| **Environment** | **Power BI license** | **Users** | **Largest model** |
+| Environment | Power BI license | Users | Largest model |
 |:-|:-|-:|:-:|
 | Production | PPU | 350 | 35 GB |
 | Production/test/development | PPU | 5 | 5 GB |
@@ -176,7 +178,7 @@ In this migration scenario, the customer uses Power BI Premium for the frontend 
 
 Here are their current AAS licenses:
 
-| **Environment** | **Largest model** | **AAS SKU** |
+| Environment | Largest model | AAS SKU |
 |:-|:-:|:-:|
 | Production | 220 GB | S9 |
 | Production | 150 GB | S8 |
@@ -186,7 +188,7 @@ Here are their current AAS licenses:
 
 Here are their current Power BI licenses:
 
-| **Environment** | **Power BI license** | **Users** |
+| Environment | Power BI license | Users |
 |:-|:-|-:|
 | Production | Premium P3 | 7,500 |
 | Production | Premium P2 | 4,500 |
@@ -200,7 +202,7 @@ Once migrated to Power BI Premium:
 
 Here are the proposed Power BI licenses:
 
-| **Environment** | **Power BI license** | **Users** | **Largest model** |
+| Environment | Power BI license | Users | Largest model |
 |:-|:-|-:|:-:|
 | Production | Premium P5 | 12,000 | 220 GB |
 | Production/test/development | PPU | 25 | 5 GB |
@@ -214,7 +216,7 @@ In this migration scenario, an ISV company has 400 customers. Each customer has 
 
 Here are their estimated AAS licenses:
 
-| **Environment** | **Largest model** | **AAS SKU** |
+| Environment | Largest model | AAS SKU |
 |:-|:-:|:-:|
 | Production | 8 GB | S4 |
 | Test | 8 GB | B1 |
@@ -222,7 +224,7 @@ Here are their estimated AAS licenses:
 
 Here are their current Power BI licenses:
 
-| **Users** | **Power BI license** | **Users** |
+| Users | Power BI license | Users |
 |:-|:-:|:-:|
 | Customers | Pro | 800 |
 | Analysts | Pro | 50 |
@@ -236,7 +238,7 @@ Once migrated to Power BI Premium:
 
 Here are their proposed Power BI licenses:
 
-| **Environment** | **Power BI license** | **Users** | **Largest model** |
+| Environment | Power BI license | Users | Largest model |
 |:-|:-|-:|:-:|
 | Production | Premium P1 / Power BI Embedded A4 | Not applicable | 25 GB |
 | Test/development | Premium EM3 / Power BI Embedded A3 | Not applicable | 10 GB |
@@ -249,18 +251,18 @@ Customers can realize many benefits when they migrate from AAS to Power BI Premi
 
 - Customers can consolidate to a single platform that reduces cost duplication of paying for both AAS and Power BI Premium.
 - By using Premium for their entire BI stack, customers can unlock increased performance and features. They only need Pro licenses for developers and admins, but not for end users.
-- Customers can use Power BI Premium Gen2 scalability to reduce their capacity requirements, since memory is limited per dataset and isn't compared to total over the server as it is in AAS. For more information, see [Memory allocation](../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
-- For development and test environments, customers can take advantage of PPU licensing instead of having Premium capacities. PPU licenses provide users access to Premium features like [the XMLA endpoint](../enterprise/service-premium-connect-tools.md), [deployment pipelines](../create-reports/deployment-pipelines-overview.md), and [Premium dataflow features](../transform-model/dataflows/dataflows-premium-features.md?tabs=gen2). Furthermore, they can work with models that above 1 GB in size.
+- Customers can use Power BI Premium scalability to reduce their capacity requirements, since memory is limited per semantic model and isn't compared to total over the server as it is in AAS. For more information, see [Memory allocation](../enterprise/service-premium-what-is.md#semantic-model-sku-limitation).
+- For development and test environments, customers can take advantage of PPU licensing instead of having Premium capacities. PPU licenses provide users access to Premium features like [the XMLA endpoint](../enterprise/service-premium-connect-tools.md), [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), and [Premium dataflow features](../transform-model/dataflows/dataflows-premium-features.md). Furthermore, they can work with models that above 1 GB in size.
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium](migrate-azure-analysis-services-to-powerbi-premium.md)
-- [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
+- [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
-- Questions? [Try asking the Power BI community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
-Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).

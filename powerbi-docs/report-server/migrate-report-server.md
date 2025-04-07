@@ -1,8 +1,8 @@
 ---
 title: Migrate a report server installation
 description: Learn how to migrate your existing SQL Server Reporting Services instance to an instance of Power BI Report Server.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -31,6 +31,9 @@ Migration is defined as moving application data files to a new Power BI Report S
 Migrating from an SSRS (Native mode) instance to Power BI Report Server consists of a few steps.
 
 ![Migrate from SSRS native mode to Power BI Report Server](media/migrate-report-server/migrate-from-ssrs-native.png "Migrate from SSRS native mode to Power BI Report Server")
+
+> [!IMPORTANT]
+> Migrations from SQL Server 2022 Reporting Services currently aren't supported. These migrations will require migration to Power BI Report Server (May 2025) or later. 
 
 > [!NOTE]
 > SQL Server 2008 Reporting Services and later are supported for migration.
@@ -93,10 +96,10 @@ Migrating from one Power BI Report Server is the same process as migrating from 
 * Configure the report server using Report Server Configuration Manager and connect to the cloned database.
 * Perform any cleanup needed for the old Power BI Report Server installation.
 
-## Next steps
+## Related content
 
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Script with the rs.exe Utility and the Web Service](/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
+* [Administrator overview](admin-handbook-overview.md)  
+* [Install Power BI Report Server](install-report-server.md)  
+* [Script with the rs.exe Utility and the Web Service](/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

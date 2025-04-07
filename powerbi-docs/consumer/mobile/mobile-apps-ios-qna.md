@@ -88,14 +88,15 @@ See the Speech Recognition section of [What's New in iOS](https://go.microsoft.c
     Your feedback is anonymous, and helps us improve our answers to questions.
 
 ## Enhance your Q&A virtual analyst results
-You can improve the results you and your customers get when they use the Q&A virtual analyst on a dataset, either by asking more targeted questions or by enhancing the dataset.
+You can improve the results you and your customers get when they use the Q&A virtual analyst on a semantic model, either by asking more targeted questions or by enhancing the semantic model.
 
 ### How to ask questions
 * Follow these [tips for asking questions in Q&A](../end-user-q-and-a-tips.md) in the Power BI service or the Q&A virtual analyst in your iOS mobile app.
 
-### How to enhance the dataset
-* Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](../../create-reports/service-prepare-data-for-q-and-a.md).
+### How to enhance the semantic model
+* Enhance the semantic model in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](../../create-reports/service-prepare-data-for-q-and-a.md).
 
-## Next steps
+## Related content
+
 * [Q&A in the Power BI service](../end-user-q-and-a.md)
 * Questions? Check the [Mobile apps section of the Power BI Community](https://go.microsoft.com/fwlink/?linkid=839277)

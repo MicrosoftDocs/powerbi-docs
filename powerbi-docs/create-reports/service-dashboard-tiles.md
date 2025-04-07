@@ -1,8 +1,8 @@
 ---
 title: Intro to dashboard tiles for Power BI designers
 description: This article describes dashboard tiles in Power BI, which includes tiles that are created from a report, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -36,7 +36,7 @@ There are many different ways to add (pin) a tile to a dashboard. You can pin ti
 * [Power BI Q&A](service-dashboard-pin-tile-from-q-and-a.md)
 * [A report](service-dashboard-create.md)
 * [Another dashboard](service-pin-tile-to-another-dashboard.md)
-* [Excel workbook on OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
+* [Excel workbook on OneDrive for work or school](service-dashboard-pin-tile-from-excel.md)
 * [Quick Insights](service-insights.md)
 * [An on-premises paginated report in Power BI Report Server or SQL Server Reporting Services](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
@@ -89,7 +89,8 @@ When you select a tile, what happens next depends on how you created the tile. O
 * If the original visualization that's used to create the tile changes, the tile doesn't change. For example, if you pin a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
 * Some changes you make to a visual in a report aren't reflected in the tile you pin to a dashboard. For example, background color, width/height, and tooltips. Even if you turn tooltips off completely for a visual in a Power BI report, when you pin that visual to a dashboard in the Power BI service, the basic tooltip will still be displayed.
 
-## Next steps
+## Related content
+
 - [Create a card (large number tile) for your dashboard](../visuals/power-bi-visualization-card.md)
 - [Introduction to dashboards for Power BI designers](service-dashboards.md)  
 - [Data refresh in Power BI](../connect-data/refresh-data.md)

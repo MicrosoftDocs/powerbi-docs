@@ -1,13 +1,14 @@
 ---
 title: Fetch more data from Power BI
-description: This article discusses how to enable a segmented fetch of large datasets for Power BI visuals by using the fetchMoreData API.
+description: This article discusses how to enable a segmented fetch of large semantic models for Power BI visuals by using the fetchMoreData API.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 4/01/2025
+ms.date: 11/18/2024
+#customer intent: As a Power BI visual developer, I want to learn how to fetch more data from Power BI so that I can display large semantic models in my visual.
 ---
 
 # Fetch more data from Power BI
@@ -23,9 +24,9 @@ You can configure the number of rows to fetch at a time in advance, or you can u
 >
 > To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
-## Enable a segmented fetch of large datasets
+## Enable a segmented fetch of large semantic models
 
-Define a window size for `dataReductionAlgorithm` in the visual's *capabilities.json* file for the required `dataViewMapping`. The `count` determines the window size, which limits the number of new data rows you can append to the `dataview` in each update.
+Define a window size for `dataReductionAlgorithm` in the visual's *capabilities.json* file for the required `dataViewMapping`. The `count` determines the window size, which limits the number of new data rows that you can append to the `dataview` in each update.
 
 For example, add the following code in the *capabilities.json* file to append 100 rows of data at a time:
 
@@ -129,7 +130,7 @@ You can determine whether data exists by checking for the existence of `dataView
     }
 ```
 
-You also can check if the update is the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment, and `VisualDataChangeOperationKind.Segment` refers to subsequent segments
+You also can check if the update is the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment, and `VisualDataChangeOperationKind.Segment` refers to subsequent segments.
 
 ```typescript
 // CV update implementation
@@ -187,9 +188,9 @@ The visual keeps the data view passed to it so it can access the data without ex
 
 ## Customized data reduction
 
-Since the developer can't always know in advance what type of data the visual will be used to display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
+Since the developer can't always know in advance what type of data the visual will display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
 
-To allow the report author to set the count, first define a [formatting object property](./) called `dataReductionCustomization` in your *capabilities.json* file:
+To allow the report author to set the count, first define a [property pane object](./format-pane-example.md) called `dataReductionCustomization` in your *capabilities.json* file:
 
 ```json
  "objects": {
@@ -210,42 +211,43 @@ To allow the report author to set the count, first define a [formatting object p
     },
 ```
 
-Then, after the `dataViewMappings`, define the default values for `dataReductionCustomization`.
+Then, insert the following code fragment into the formatting settings file:
 
 ```json
-   "dataReductionCustomization": {
-        "matrix": {
-            "rowCount": {
-                "propertyIdentifier": {
-                    "objectName": "dataReductionCustomization",
-                    "propertyName": "rowCount"
-                },
-                "defaultValue": "100"
-            },
-            "columnCount": {
-                "propertyIdentifier": {
-                    "objectName": "dataReductionCustomization",
-                    "propertyName": "columnCount"
-                },
-                "defaultValue": "10"
-            }
-        }
-    }
+class DataReductionCardSettings extends FormattingSettingsCard {
+    rowCount = new formattingSettings.NumUpDown({
+        name: "rowCount",
+        displayName: "Row reduction",
+        description: "Show Reduction for all row groups",
+        value: 100,
+    });
+ 
+    columnCount = new formattingSettings.NumUpDown({
+        name: "columnCount",
+        displayName: "Column reduction",
+        description: "Show Reduction for all column groups",
+        value: 10,
+    }); 
+ 
+    name = "dataReductionCustomization";
+    displayName = "Data Reduction";
+    slices = [this.rowCount, this.columnCount];
+}
 ```
 
-The data reduction information will appear under *visual* in the format pane.
+The data reduction information appears under *visual* in the format pane.
 
 :::image type="content" source="./media/fetch-more-data/custom-data-reduction.png" alt-text="Screenshot of the format pan with option to set data reduction count.":::
 
 ## Considerations and limitations
 
 * The window size is limited to a range of 2-30,000.
-
 * The data view total row count is limited to 1,048,576 rows.
+* The data view memory size is limited to 100 MB In segments aggregation mode.
+* The *dataReductionCustomization* row count must be between 15-30,000
+* The *dataReductionCustomization* columns count must be between 1-2,000
 
-* In segments aggregation mode, the data view memory size is limited to 100 MB.
+## Related content
 
-## Next steps
-
-* [Data view mappings](dataview-mappings.md)
+* [Data view mappings](dataview-mappings.md#data-reduction-algorithm)
 * [DataViewUtils](utils-dataview.md)

@@ -3,11 +3,13 @@ title: Create SSL certificates for Power BI visuals
 description: Learn how to generate SSL certificates by using Power BI Visual Tools in Windows, Mac, or Linux, or manually.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
+ms.custom: linux-related-content
 ms.topic: how-to
-ms.date: 05/08/2020
+ms.date: 12/08/2023
+# customer intent: As a Power BI visual developer, I want to learn how to generate and install SSL certificates for Power BI visuals so that I can secure my visualizations.
 ---
 
 # Create an SSL certificate
@@ -25,8 +27,6 @@ pbiviz --install-cert
 ```
 
 For Windows 7, the `pbiviz` tool requires the OpenSSL utility to be available from the command line. To install OpenSSL, go to [OpenSSL](https://www.openssl.org) or [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries).
-
-For more information and instructions for installing a certificate, see [Create and install a certificate for Windows](./environment-setup.md#create-and-install-a-certificate).
 
 ## Create a certificate on macOS X
 
@@ -52,8 +52,6 @@ After you install the OpenSSL utility, run the following command to generate a n
 ```cmd
 pbiviz --install-cert
 ```
-
-For more information and instructions, see the OSX tab in [Create and install a certificate](./environment-setup.md#create-and-install-a-certificate).
 
 ## Create a certificate on Linux
 
@@ -193,7 +191,8 @@ If your PFX certificate file requires a passphrase:
     }
     ```
 
-## Next steps
+## Related content
+
 - [Develop a Power circle card BI visual](develop-circle-card.md)
 - [Power BI visuals samples](samples.md)
 - [Publish a Power BI visual to AppSource](office-store.md)

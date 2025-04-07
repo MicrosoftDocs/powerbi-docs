@@ -58,7 +58,8 @@ When the data refresh has completed, you will be in the workspace associated wit
 
 See [Customize and share the app](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
 
-## Next steps
+## Related content
+
 * Help us improve Power BI by [submitting an idea](https://ideas.powerbi.com)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 * [What are Power BI template apps?](../connect-data/service-template-apps-overview.md)

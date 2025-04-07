@@ -1,8 +1,8 @@
 ---
 title: Upgrade Power BI Report Server
 description: Learn how to upgrade Power BI Report Server.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -79,7 +79,7 @@ Power BI Report Server receives security fixes via Microsoft Update. To enable g
 
 After you upgrade the report server, make sure that any Power BI report authors upgrade to the version of Power BI Desktop for Power BI Report Server that matches the server.
 
-## Next steps
+## Related content
 
 * [Administrator overview](admin-handbook-overview.md)  
 * [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  

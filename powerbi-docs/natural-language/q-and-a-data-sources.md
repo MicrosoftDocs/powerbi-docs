@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 11/28/2022
+ms.date: 12/10/2024
 ms.custom: kr2b-contr-experiment
 ---
 
@@ -16,10 +16,10 @@ The Q&A feature in Power BI lets you quickly get answers about your data by usin
 
 ## Supported data sources
 
-The following Power BI configurations support Q&A:
+Power BI Q&A supports the following configurations of data sources in the Power BI Desktop:
 
 - Import mode.
-- Live connect mode with on-premises SQL Server Analysis Services, Azure Analysis Services, or Power BI datasets.
+- Live connect mode with on-premises SQL Server Analysis Services, Azure Analysis Services, or Power BI datasets. However, DirectLake and Lakehouse Power BI datasets are not supported.
 - DirectQuery with Azure Synapse Analytics, Azure SQL, or SQL Server 2019. Other sources might work in direct query mode, but aren't officially supported.
 
 Using a Q&A visual in a report enables natural language Q&A by default. If you're using DirectQuery or live connect, a prompt appears.
@@ -29,7 +29,7 @@ In Power BI Desktop, to explicitly turn natural language capabilities on or off 
 1. Go to **File** > **Options and settings** > **Options**.
 1. Under **Current File** > **Data Load**, select or deselect **Turn on Q&A to ask natural language questions about your data**.
 
-:::image type="content" source="media/qna-desktop-options.png" alt-text="Screenshot showing the Power BI Desktop Q&A options.":::
+:::image type="content" source="media/q-and-a-data-sources/qna-desktop-options.png" alt-text="Screenshot showing the Power BI Desktop Q&A options.":::
 
 For more information, see [Limitations of Power BI Q&A](q-and-a-limitations.md).
 
@@ -52,7 +52,7 @@ If your model changes or the index becomes outdated, the index must update. Beca
 
 In the Power BI service, the index recreates on publish, republish, and refresh. Q&A index creation isn't always automatic, and can happen on demand to optimize the dataset refreshes. For DirectQuery, Q&A data indexes at most once per day, to reduce the impact on the DirectQuery source.
 
-## Next steps
+## Related content
 
 For more information on integrating natural language in your reports, see:
 

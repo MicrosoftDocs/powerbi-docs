@@ -1,14 +1,14 @@
 ---
 title: Sign in and out of the Power BI service
 description: Learn how to sign in and out of the Power BI service on the web and safely interact with your content.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: conceptual
-ms.date: 12/02/2022
+ms.topic: how-to
+ms.date: 01/11/2025
 LocalizationGroup: Get started
 ---
 
@@ -16,21 +16,28 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
+This article is for Power BI business users who are signing in to the Power BI service for the first time. A *business user* is someone who uses the data and visualizations in reports that are created by their colleagues. A business user relies on this data to make data-driven business intelligence decisions. 
+
 ## Power BI accounts
 
-Before you can sign in to Power BI, you need an account. There are two ways to get a Power BI account. Your organization can purchase Power BI licenses for its employees or individuals can sign up for [free trials or personal licenses](../fundamentals/service-self-service-signup-for-power-bi.md). This article covers the first scenario.
+Before you can sign in to the Power BI service, you need an [account and a license](end-user-license.md). There are several ways to get an account and license. This article describes a common scenario where employees at a corporation use their work email to sign in to their Power BI account. And, the employees use licenses that were purchased and allocated for them by their corporation. 
 
 ## Sign in for the first time
 
-After you have an account set up, you can sign in and get started in the Power BI service.
+Use your work email to log in to the Power BI service for the first time. Follow the steps here for general guidance. The exact screens may vary from what you see here, depending on your version of Microsoft software, browser version, and how your admin set up your license and environment.
+
+> [!IMPORTANT]
+> Use a work or school account to sign in to the Power BI service. Commercial accounts like @hotmail and @gmail aren't supported. 
 
 ### Step 1: Open the Power BI service
 
-The Power BI service runs in a browser.
+The Power BI service runs in a browser. There are several ways to get started. 
 
-- If you've received an email from a colleague, with a link to a dashboard or report, select the link to **Open this report** or **Open this dashboard**.
+- If you receive an email from a colleague, with a link to a dashboard or report, select the link to **Open this report** or **Open this dashboard**.
 
     :::image type="content" source="media/end-user-sign-in/power-bi-share.png" alt-text="A screenshot that shows an email that contains a link to a report.":::
+
+- Sometimes, your administrator assigns you a Power BI license and sends you an email with this information. Look in your inbox for a welcome email and follow the instructions to sign in for the first time. Use this same email account for your sign-in.
 
 - Otherwise, open your favorite browser and type **app.powerbi.com**.
 
@@ -38,45 +45,35 @@ The Power BI service runs in a browser.
 
 ### Step 2: Type your email address
 
-1. The first time you sign in, Microsoft asks if you already have a Microsoft 365 account. Select **SIGN IN**.
+1. The first time you sign in, Microsoft checks to see if you already have a Microsoft account. Enter your work or school email address.
 
-    :::image type="content" source="media/end-user-sign-in/power-bi-already.png" alt-text="A screenshot that shows the Microsoft 365 sign-in message.":::
+1. Enter your Microsoft account password. It's the same email and password that you use for other Microsoft products, like Outlook and Office. Depending on how your account is set up, you might be prompted to enter a code sent to your email or mobile device.
 
-2. Enter your Microsoft 365 account password. It's the same email and password that you use for other Microsoft products, like Outlook and Office. Depending on how your account is set up, you might be prompted to enter a code that's sent to your email or mobile device.
+    :::image type="content" source="media/end-user-sign-in/power-bi-passes.png" alt-text="A screenshot that shows an Enter password dialog box.":::
 
-    :::image type="content" source="media/end-user-sign-in/power-bi-pass.png" alt-text="A screenshot that shows an Enter password dialog box.":::
-
-    Sometimes, your global administrator assigns you a license and sends you an email with this information. Look in your inbox for a welcome email and follow the instructions to sign in for the first time. Use this email account for your sign-in.
-
-### Step 3: Review the terms and conditions
-
-Review the terms and conditions. If you agree, select the checkbox and then select **Start**.
-
-:::image type="content" source="media/end-user-sign-in/power-bi-term.png" alt-text="A screenshot showing the terms and conditions dialog.":::
-
-### Step 4: Review your Home landing page
+### Step 3: Review your Home landing page
 
 On your first visit, Power BI opens your **Home** landing page. If **Home** doesn't open, select it from the navigation pane.
 
-:::image type="content" source="media/end-user-sign-in/power-bi-home-first.png" alt-text="A screenshot of the navigation pane with Home outlined.":::
+:::image type="content" source="media/end-user-sign-in/power-bi-homes.png" alt-text="A screenshot of the navigation pane with Home outlined.":::
 
-On Home, you can see all the content that you have permission to use. There might not be much content at first, but that changes as you continue to use Power BI with your colleagues. You can find the report that your colleague emailed to you under **Recent** on the **Home** page.
+On Home, you see all the content that you have permission to use. There might not be much content at first, but that changes as you continue to use Power BI with your colleagues. If your colleagues have already shared content with you, you find it under **Recent** on **Home**.
 
-:::image type="content" source="media/end-user-sign-in/power-bi-recent.png" alt-text="A screenshot showing a report in the Recent section on the Home page.":::
+:::image type="content" source="media/end-user-sign-in/power-bi-home-recent.png" alt-text="A screenshot showing a report in the Recent section on the Home page.":::
 
-Reports shared with you're also stored under **Shared with me** on the **Browse** page.
+Reports shared with you are also stored under **Shared with me** on the **Browse** page.
 
 ## Safely interact with content
 
-As a business user, others share content with you and you interact with that content to view data and make business decisions. As you filter, slice, subscribe, export, and resize, your changes don't impact the underlying dataset or the original shared content. Power BI is a safe space where you can explore and experiment.
+As a business user, others share content with you and you interact with that content to view data and make business decisions. As you filter, slice, subscribe, export, and resize, your changes don't impact the underlying semantic model or the original shared content. Power BI is a safe space where you can explore and experiment.
 
-That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, select the **Reset** button.
+That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. And you can always reset your changes back to the default view by selecting **Reset**.
 
 :::image type="content" source="media/end-user-sign-in/power-bi-reset.png" alt-text="A screenshot showing the reset button on the action bar.":::
 
 ## Sign out of the Power BI service
 
-When you close or sign out of the Power BI service, your changes are saved so you can pick up where you left off.
+When you close or sign out of the Power BI service, your changes are saved. You can pick up where you left off.
 
 To close Power BI, close the browser tab where you're working.
 
@@ -86,12 +83,17 @@ If you share a computer, we recommend signing out each time you close Power BI. 
 
 :::image type="content" source="media/end-user-sign-in/power-bi-signout.png" alt-text="A screenshot showing the profile menu and sign out is outlined.":::
 
-## Troubleshooting
+## Considerations and limitations
 
-- If you've signed up for Power BI as an individual, sign in with the email address that you used to sign up.
+- If you don't have a work or school account, [you can still sign up for Power BI with a Microsoft 365 trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
+
+- If you [signed up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md), sign in with the email address that you used to sign up.
 
 - Some people use more than one Power BI account. If you do, you're prompted to select an account from a list when signing in.
 
-## Next steps
+- If sign up is disabled, [use this article to get help.](../fundamentals/service-self-service-sign-up-help.md)
 
-[View a Power BI app](end-user-app-view.md)
+
+## Related content
+
+- [Power BI Basic concepts](end-user-basic-concepts.md)

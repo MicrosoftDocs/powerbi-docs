@@ -1,8 +1,8 @@
 ---
 title: Always Encrypted in Power BI Report Server
 description: This article spells out Always Encrypted support in Power BI Report Server when using the data source types Microsoft SQL Server and Microsoft Azure SQL Database.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: cfinlan
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -82,8 +82,8 @@ Currently the only supported aggregations against deterministic Always Encrypted
 
 You need to to enable Always Encrypted in the connection string for a SQL Server data source. Read more about enabling [Always Encrypted in application queries](/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
 
-## Next steps
+## Related content
 
-[Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) in SQL Server and Azure SQL Database
+- [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) in SQL Server and Azure SQL Database
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

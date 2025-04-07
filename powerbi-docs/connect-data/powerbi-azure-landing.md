@@ -93,7 +93,6 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Analyze your Azure costs and usage</h3> 
                                           <p></p>
-                                                <a href="desktop-connect-azure-cost-management.md">Connect to Azure Cost Management</a><br/> 
                                                 <a href="desktop-connect-azure-consumption-insights.md">Connect to Azure Consumption Insights</a>
                                     </div> 
                               </div> 
@@ -132,7 +131,6 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                           <h3>Enrich Power BI with Azure Machine Learning</h3> 
                                           <p></p>
                                                 <a href="/power-bi/transform-model/dataflows/dataflows-machine-learning-integration">Azure Machine Learning and Power BI</a><br/> 
-                                                <a href="service-aml-integrate.md">Tutorial: Consume an Azure Machine Learning model</a><br/> 
                                     </div> 
                               </div> 
                         </div> 

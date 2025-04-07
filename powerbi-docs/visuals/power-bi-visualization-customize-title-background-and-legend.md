@@ -1,9 +1,9 @@
 ---
-title: Get started formatting Power BI visualizations
-description: 'Customize visualization titles, backgrounds, labels, and legends'
-author: mihart
-ms.author: mihart
-ms.reviewer: 'mihart'
+title: Customize visualization titles, backgrounds, and more in Power BI
+description: 'In this tutorial, you learn a few different ways to customize your visualization titles, backgrounds, labels, and legends'
+author: miguelmyersMS
+ms.author: miguelmyers
+ms.reviewer: 'kfollis'
 featuredvideoid: removed
 ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started, sample-retailanalysissample
 ms.service: powerbi
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations, that the best way to learn about them is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, label, layer, and add a theme.
+In this tutorial, you learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations, that the best way to learn about them is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, label, layer, and add a theme.
 
 You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize) of visualizations for details.
 
@@ -124,7 +124,7 @@ In the following video, watch Rien add total labels to a stacked chart, and then
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HrRQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=107a4025-499e-4be5-9c89-f57715c07332]
 
 1. Open the **District Monthly Sales** report page and select the **Last Year Sales and This Year Sales by FiscalMonth** area chart.
 
@@ -155,7 +155,7 @@ In this video, watch Rien change layer order behavior, and then follow the steps
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=09ec9caf-e576-476f-8214-3275803f424f]
 
 1. Add a new report page by selecting the yellow plus sign.
 
@@ -192,7 +192,7 @@ In this video, watch Rien change layer order behavior, and then follow the steps
 
 1. Save the report changes and switch to **Reading view**.
 
-Now that the visual and the shape are grouped, you can select the shape and it remains in the background. If you leave the Selection pane open, you can see which layer has focus. Notice, that by selecting the canvas in between selecting layers, it activates the Group layer and maintains the layer order. For more information on this behavior, see [Selecting visuals within a group](../create-reports/desktop-grouping-visuals.md#selecting-visuals-within-a-group).
+Now that the visual and the shape are grouped, you can select the shape and it remains in the background. If you leave the Selection pane open, you can see which layer has focus. Notice, that by selecting the canvas in between selecting layers, it activates the Group layer and maintains the layer order. For more information on this behavior, see [Selecting visuals within a group](../create-reports/desktop-grouping-visuals.md#select-visuals-within-a-group).
 
 ## Customize colors using a theme
 
@@ -234,7 +234,7 @@ Here is a list of the customization options that are available for each visualiz
 | Treemap | Yes | Yes | Yes |n/a |
 | Waterfall | Yes | Yes | Yes |n/a |
 
-## Next steps
+## Related content
 
 - [Customize X-Axis and Y-Axis properties](power-bi-visualization-customize-x-axis-and-y-axis.md)
 

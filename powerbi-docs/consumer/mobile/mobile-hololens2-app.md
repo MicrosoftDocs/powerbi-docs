@@ -7,9 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/10/2022
+ms.date: 04/18/2023
 ---
 # Power BI for HoloLens 2 (preview)
+
+> [!NOTE]
+> The Power BI for HoloLens 2 app (preview) will be discontinued on **April 24, 2023**. From that date onwards, the app will no longer be available for download from the store, and no further updates or bug fixes for the app will be released.  
+
 The Power BI app for HoloLens 2 blends your Power BI reports and dashboards with your physical environment to create a 3D, immersive, hands-free experience where you can move through the physical world and get your relevant data when and where you need it.
 
 ![Image from HoloLens 2 showing floating Power B I reports.](media/mobile-hololens2-app/power-bi-hololens2-floating-reports.png)
@@ -70,6 +74,6 @@ The Power BI app for HoloLens 2 does not currently support the following items:
 * Zebra visuals
 * Access through a proxy
 
-## Next steps
+## Related content
 
 * [Getting around HoloLens 2](/hololens/hololens2-basic-usage)

@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Transform, shape, and model data in Power BI - documentation
-summary: Power BI documentation provides expert information about transforming, shaping, and modeling data in Power BI.
+title: Transform, shape, and model data in Power BI
+summary: Learn  how to transform, shape, and model data in Power BI with conceptual, tutorial, and how-to guides.
 
 metadata:
   title: Transform, shape, and model data in Power BI - documentation
@@ -11,9 +11,9 @@ metadata:
   ms.subservice: pbi-transform-model
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 03/03/2020
+  author: kfollis
+  ms.author: kfollis
+  ms.date: 10/22/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -67,10 +67,14 @@ landingContent:
             url: desktop-tutorial-create-calculated-columns.md
       - linkListType: concept
         links:
+          - text: "Visual calculations"
+            url: desktop-visual-calculations-overview.md
           - text: "Calculated tables"
             url: desktop-calculated-tables.md
       - linkListType: how-to-guide
         links:
+          - text: "Calculations options"
+            url: desktop-calculations-options.md
           - text: "Use quick measures"
             url: desktop-quick-measures.md
 

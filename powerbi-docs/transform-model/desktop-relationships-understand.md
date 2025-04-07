@@ -1,13 +1,14 @@
 ---
 title: Model relationships in Power BI Desktop
 description: Introduce theory about model relationships in Power BI Desktop
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 09/25/2022
+ms.custom: fabric-cat
+ms.date: 03/07/2024
 ---
 
 # Model relationships in Power BI Desktop
@@ -54,6 +55,9 @@ A model relationship relates one column in a table to one column in a different 
 > [!NOTE]
 > It's not possible to relate a column to a different column *in the same table*. This concept is sometimes confused with the ability to define a relational database foreign key constraint that's table self-referencing. You can use this relational database concept to store parent-child relationships (for example, each employee record is related to a "reports to" employee). However, you can't use model relationships to generate a model hierarchy based on this type of relationship. To create a parent-child hierarchy, see [Parent and Child functions](/dax/parent-and-child-functions-dax).
 
+### Data types of columns
+The data type for both the "from" and "to' column of the relationship should be the same. Working with relationships defined on **DateTime** columns might not behave as expected. The engine that stores Power BI data, only uses _DateTime_ data types; _Date_,  _Time_ and _Date/Time/Timezone_ data types are Power BI formatting constructs implemented on top. Any model-dependent objects will still appear as _DateTime_ in the engine (such as relationships, groups, and so on). As such, if a user selects **Date** from the **Modeling** tab for such columns, they still don't register as being the same date, because the time portion of the data is still being considered by the engine. [Read more about how Date/time types are handled](../connect-data/desktop-data-types.md#datetime-types). To correct the behavior, the column data types should be updated in the **Power Query Editor** to remove the _Time_ portion from the imported data, so when the engine is handling the data, the values will appear the same.
+
 ### Cardinality
 
 Each model relationship is defined by a cardinality type. There are four cardinality type options, representing the data characteristics of the "from" and "to" related columns. The "one" side means the column contains unique values; the "many" side means the column can contain duplicate values.
@@ -89,7 +93,7 @@ A **many-to-many** relationship means both columns can contain duplicate values.
 For guidance on using this cardinality type, see [Many-to-many relationship guidance](../guidance/relationships-many-to-many.md).
 
 > [!NOTE]
-> The Many-to-many cardinality type isn't currently supported for models developed for Power BI Report Server.
+> The Many-to-many cardinality type is supported for models developed for Power BI Report Server January 2024 and later.
 
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's cardinality type by looking at the indicators (1 or \*) on either side of the relationship line. To determine which columns are related, you'll need to select, or hover the cursor over, the relationship line to highlight the columns.
@@ -110,9 +114,9 @@ Each model relationship is defined with a cross filter direction. Your setting d
 
 For one-to-many relationships, the cross filter direction is always from the "one" side, and optionally from the "many" side (bi-directional). For one-to-one relationships, the cross filter direction is always from both tables. Lastly, for many-to-many relationships, cross filter direction can be from either one of the tables, or from both tables. Notice that when the cardinality type includes a "one" side, that filters will always propagate from that side.
 
-When the cross filter direction is set to **Both**, another property becomes available. It can apply bi-directional filtering when Power BI enforces row-level security (RLS) rules. For more information about RLS, see [Row-level security (RLS) with Power BI Desktop](../create-reports/desktop-rls.md).
+When the cross filter direction is set to **Both**, another property becomes available. It can apply bi-directional filtering when Power BI enforces row-level security (RLS) rules. For more information about RLS, see [Row-level security (RLS) with Power BI Desktop](/fabric/security/service-admin-row-level-security).
 
-You can modify the relationship cross filter direction, including the disabling of filter propagation, by using a model calculation. It's achieved by using the [CROSSFILTER](/dax/crossfilter-function) DAX function.
+You can modify the relationship cross filter direction, including the disabling of filter propagation, by using a model calculation. It's achieved by using the [CROSSFILTER](/dax/crossfilter-function-dax) DAX function.
 
 Bear in mind that bi-directional relationships can impact negatively on performance. Further, attempting to configure a bi-directional relationship could result in ambiguous filter propagation paths. In this case, Power BI Desktop may fail to commit the relationship change and will alert you with an error message. Sometimes, however, Power BI Desktop may allow you to define ambiguous relationship paths between tables. Resolving relationship path ambiguity is described [later in this article](#resolve-relationship-path-ambiguity).
 
@@ -125,7 +129,7 @@ We recommend using bi-directional filtering only as needed. For more information
 
 ### Make this relationship active
 
-There can only be one active filter propagation path between two model tables. However, it's possible to introduce additional relationship paths, though you must set these relationships as *inactive*. Inactive relationships can only be made active during the evaluation of a model calculation. It' i's achieved by using the [USERELATIONSHIP](/dax/userelationship-function-dax) DAX function.
+There can only be one active filter propagation path between two model tables. However, it's possible to introduce additional relationship paths, though you must set these relationships as *inactive*. Inactive relationships can only be made active during the evaluation of a model calculation. It's achieved by using the [USERELATIONSHIP](/dax/userelationship-function-dax) DAX function.
 
 Generally, we recommend defining active relationships whenever possible. They widen the scope and potential of how report authors can use your model. Using only active relationships means that role-playing dimension tables should be duplicated in your model.
 
@@ -161,9 +165,9 @@ There are several DAX functions that are relevant to model relationships. Each f
 - [RELATED](/dax/related-function-dax): Retrieves the value from "one" side of a relationship. It's useful when involving calculations from different tables that are evaluated in [row context](/dax/dax-overview#row-context).
 - [RELATEDTABLE](/dax/relatedtable-function-dax): Retrieve a table of rows from "many" side of a relationship.
 - [USERELATIONSHIP](/dax/userelationship-function-dax): Allows a calculation to use an inactive relationship. (Technically, this function modifies the weight of a specific inactive model relationship helping to influence its use.) It's useful when your model includes a role-playing dimension table, and you choose to create inactive relationships from this table. You can also use this function to [resolve ambiguity in filter paths](#resolve-relationship-path-ambiguity).
-- [CROSSFILTER](/dax/crossfilter-function): Modifies the relationship cross filter direction (to one or both), or it disables filter propagation (none). It's useful when you need to change or ignore model relationships during the evaluation of a specific calculation.
+- [CROSSFILTER](/dax/crossfilter-function-dax): Modifies the relationship cross filter direction (to one or both), or it disables filter propagation (none). It's useful when you need to change or ignore model relationships during the evaluation of a specific calculation.
 - [COMBINEVALUES](/dax/combinevalues-function-dax): Joins two or more text strings into one text string. The purpose of this function is to support multi-column relationships in DirectQuery models when tables belong to the same source group.
-- [TREATAS](/dax/treatas-function): Applies the result of a table expression as filters to columns from an unrelated table. It's helpful in advanced scenarios when you want to create a virtual relationship during the evaluation of a specific calculation.
+- [TREATAS](/dax/treatas-function-dax): Applies the result of a table expression as filters to columns from an unrelated table. It's helpful in advanced scenarios when you want to create a virtual relationship during the evaluation of a specific calculation.
 - [Parent and Child functions](/dax/parent-and-child-functions-dax): A family of related functions that you can use to generate calculated columns to naturalize a parent-child hierarchy. You can then use these columns to create a fixed-level hierarchy.
 
 ## Relationship evaluation
@@ -282,7 +286,7 @@ The following list orders filter propagation performance, from fastest to slowes
 3. Many-to-many cardinality relationships
 4. Cross source group relationships
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

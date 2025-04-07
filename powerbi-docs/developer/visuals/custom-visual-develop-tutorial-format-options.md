@@ -7,7 +7,8 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/19/2022
+ms.date: 10/10/2024
+#customer intent: As a Power BI visual developer, I want to learn how to add formatting options to my custom visual so I can customize the visual appearance.
 ---
 
 # Tutorial: Add formatting options to the Circle Card visual
@@ -74,7 +75,7 @@ This tutorial explains how to add common formatting properties to a visual. We'l
 
 Now let's add new group called *color* for configuring the circle color and thickness of the circle's outline.
 
-1. In **PowerShell**, enter *Ctrl+C* to stop the custom visual.
+1. In **PowerShell**, enter <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the custom visual.
 
 2. In **Visual Studio Code**, in the `capabilities.json` file, insert the following JSON fragment into the object labeled **objects**.
 
@@ -110,7 +111,7 @@ Now let's add new group called *color* for configuring the circle color and thic
     ```typescript
     import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
-    import FormattingSettingsCard = formattingSettings.Card;
+    import FormattingSettingsCard = formattingSettings.SimpleCard;
     import FormattingSettingsSlice = formattingSettings.Slice;
     import FormattingSettingsModel = formattingSettings.Model;
 
@@ -118,17 +119,20 @@ Now let's add new group called *color* for configuring the circle color and thic
         public circleColor = new formattingSettings.ColorPicker({
             name: "circleColor",
             displayName: "Color",
-            value: { value: "#ffffff" }
+            value: { value: "#ffffff" },
+            visible: true
         });
 
         public circleThickness = new formattingSettings.NumUpDown({
             name: "circleThickness",
             displayName: "Thickness",
-            value: 2
+            value: 2,
+            visible: true
         });
 
         public name: string = "circle";
         public displayName: string = "Circle";
+        public visible: boolean = true;
         public slices: FormattingSettingsSlice[] = [this.circleColor, this.circleThickness]
     }
 
@@ -181,7 +185,7 @@ Now let's add new group called *color* for configuring the circle color and thic
 11. In the **update** method, after the declaration of the **radius** variable, add the following code.
 
     ```typescript
-    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettingsModel, options.dataViews);
+    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews[0]);
     this.visualSettings.circle.circleThickness.value = Math.max(0, this.visualSettings.circle.circleThickness.value);
     this.visualSettings.circle.circleThickness.value = Math.min(10, this.visualSettings.circle.circleThickness.value);
     ```
@@ -230,10 +234,11 @@ For tips about debugging your custom visual, see the [debugging guide](visuals-h
 
 Now that the visual is completed and ready to be used, it's time to package it. A packaged visual can be imported to Power BI reports or service to be used and enjoyed by others.
 
-When your visual is ready, follow the directions in [Package a Power BI visual](./package-visual.md) and then, if you want, share it with others so they can [import](./import-visual.md) and enjoy it. 
+When your visual is ready, follow the directions in [Package a Power BI visual](./package-visual.md) and then, if you want, share it with others so they can [import](./import-visual.md) and enjoy it.
 
-## Next steps
+## Related content
 
+* [Learn more about the new Format Pane](format-pane-general.md)
 * [Create a Power BI bar chart visual](create-bar-chart.md)
 * [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
 * [Power BI visuals project structure](visual-project-structure.md)

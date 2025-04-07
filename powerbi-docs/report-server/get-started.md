@@ -1,10 +1,10 @@
 ---
 title: What is Power BI Report Server?
 description: Get an overview of Power BI Report Server to understand how it fits in with SQL Server Reporting Services (SSRS) and the rest of Power BI.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 keywords: 
-ms.date: 09/15/2022
+ms.date: 06/24/2024
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -13,20 +13,20 @@ ms.custom: mvc, intro-overview
 ---
 # What is Power BI Report Server?
 
-Power BI Report Server is an on-premises report server with a web portal in which you display and manage reports and KPIs. Along with it come the tools to create Power BI reports, paginated reports, mobile reports, and KPIs. Your users can access those reports in different ways: viewing them in a web browser or mobile device, or as an email in their in-box.
+Power BI Report Server is an on-premises report server with a web portal where you display and manage reports and KPIs. Along with it come the tools to create Power BI reports, paginated reports, mobile reports, and KPIs. Your users can access those reports in different ways: viewing them in a web browser or mobile device, or as an email in their in-box.
 
 ![Screenshot shows the Power B I Report Server web portal.](media/get-started/power-bi-report-server-overview.png)
 
 ## Comparing Power BI Report Server 
-Power BI Report Server is similar to both SQL Server Reporting Services and the Power BI online service, but in different ways. Like the Power BI service, Power BI Report Server hosts Power BI reports (.pbix), Excel files, and paginated reports (.rdl). Like Reporting Services, Power BI Report Server is on premises. Power BI Report Server features are a superset of Reporting Services: everything you can do in Reporting Services, you can do with Power BI Report Server, along with support for Power BI reports. See [Comparing Power BI Report Server and the Power BI service](compare-report-server-service.md) for details.
+Power BI Report Server is similar to both SQL Server Reporting Services and the Power BI service, but in different ways. Like the Power BI service, Power BI Report Server hosts Power BI reports (.pbix), Excel files, and paginated reports (.rdl). Like Reporting Services, Power BI Report Server is on premises. Power BI Report Server features are a superset of Reporting Services: everything you can do in Reporting Services, you can do with Power BI Report Server, along with support for Power BI reports. See [Comparing Power BI Report Server and the Power BI service](compare-report-server-service.md) for details. With an F64 reserved instance, you can create a hybrid deployment mixing cloud and on-premises.
 
 ## Licensing Power BI Report Server
-Power BI Report Server is available through two different licenses: [Power BI Premium](../enterprise/service-premium-gen2-what-is.md) and SQL Server Enterprise Edition with Software Assurance. See [Microsoft Volume Licensing](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=1&ShowArchived=True) for details. With a Power BI Premium license, you can create a hybrid deployment mixing cloud and on-premises.
+Power BI Report Server operates on a core-based licensing model and is currently available through three different licenses: [Fabric F64+ reserved instances](/fabric/enterprise/licenses), SQL Server Enterprise Edition with Software Assurance, or SQL Server Enterprise Subscriptions. See [Microsoft Volume Licensing](https://www.microsoft.com/licensing/docs) for SQL Server licensing details. Similar to SQL Server licensing, customers may run the Power BI Report Server software in a Physical or Virtual OSE with up to the number of cores included under their Fabric F64+ capacity. The number of Power BI v-cores available for each Fabric license can be found [here](/fabric/enterprise/licenses).
 
-If you publish Power BI reports to Power BI Report Server, you also need a Power BI Pro license. You don't need a Power BI Pro license to view and interact with Power BI reports on Power BI Report Server.
+If you purchase [Fabric F64+ reserved instances](/fabric/enterprise/licenses), a Power BI Pro license is required to publish both paginated and Power BI reports in PBIRS. However, for SQL Server Enterprise Edition with Software Assurance or SQL Server Enterprise subscription, a Power BI Pro license is only required for publishing Power BI reports in PBIRS.  You don't need a Power BI Pro license to view and interact with paginated and Power BI reports on Power BI Report Server.
 
 > [!NOTE]
-> For Power BI Premium, Power BI Report Server is only included with P SKUs. It is not included with EM SKUs.
+> For Power BI Premium, Power BI Report Server is only included with P SKUs. It is not included with EM SKUs. Power BI Report Server is also **not** included with any F SKUs below F64 reserved instance.
 
 ## Web portal
 The entry point for Power BI Report Server is a secure web portal you can view in any modern browser. Here, you access all your reports and KPIs. The content on the web portal is organized in a traditional folder hierarchy. In your folders, content is grouped by type: Power BI reports, mobile reports, paginated reports, KPIs, and Excel workbooks. Shared datasets and shared data sources are in their own folders, to use as building blocks for your reports. You tag favorites to view them in a single folder. And you create KPIs right in the web portal. 
@@ -47,7 +47,7 @@ A Power BI report is a multi-perspective view into a data model, with visualizat
 Read about [installing Microsoft Power BI Desktop](install-powerbi-desktop.md).
 
 ## Paginated reports
-Paginated reports (.rdl) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. They're great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files. 
+Paginated reports (.rdl) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. They're great for generating fixed-layout, print-ready documents optimized for printing, such as PDF and Word files. 
 
 ![Paginated reports in Power BI Report Server](media/get-started/paginated-reports.png)
 
@@ -65,8 +65,9 @@ Take advantage of Power BI Report Server programming features to extend and cust
 
 More [Report Server developer documentation](/sql/reporting-services/reporting-services-developer-documentation).
 
-## Next steps
-[Install Power BI Report Server](install-report-server.md)  
-[Download Microsoft Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+## Related content
+
+* [Install Power BI Report Server](install-report-server.md)  
+* [Download Microsoft Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

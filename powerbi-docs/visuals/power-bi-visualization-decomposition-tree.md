@@ -1,8 +1,8 @@
 ---
 title: Decomposition tree
 description: 'Tutorial: Create a decomposition tree visualization in Power BI'
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-ai
@@ -25,7 +25,7 @@ This tutorial uses two examples:
 - A supply chain scenario that analyzes the percentage of products a company has on backorder (out of stock).  
 - A sales scenario that breaks down video game sales by numerous factors like game genre and publisher.
 
-For Power BI Desktop, you can download the [supply chain scenario dataset](
+For Power BI Desktop, you can download the [supply chain scenario semantic model](
 https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix). If you'd like to use the Power BI service, download Supply Chain Sample.pbix, and then upload it to a workspace in the Power BI service.
 
 > [!NOTE]
@@ -169,9 +169,9 @@ Other limitations:
 
 - Support inside Q&A
 
-## Next steps
+## Related content
 
-[Power BI doughnut chart](power-bi-visualization-doughnut-charts.md)
+- [Power BI doughnut chart](power-bi-visualization-doughnut-charts.md)
 
-[Power BI visualizations](power-bi-report-visualizations.md)
+- [Power BI visualizations](power-bi-report-visualizations.md)
 

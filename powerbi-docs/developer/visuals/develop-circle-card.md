@@ -1,31 +1,32 @@
 ---
-title: Learn how to develop your own Power BI visual using the circle card visual as an example
-description: This tutorial explains how you can develop a Power BI visual.
+title: Develop a Power BI circle card visual as an example
+description: This tutorial explains how you can develop a Power BI visual. It uses the circle card visual as an example to demonstrate the process of creating a visual.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 11/07/2022
+ms.date: 02/10/2025
 ms.custom: engagement-fy23
+#customer intent: As a Power BI visual developer, I want to learn how to develop a Power BI visual so that I can create custom visuals for my reports.
 ---
 
 # Tutorial: Develop a Power BI circle card visual
 
-In this tutorial, you'll develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The circle card visual supports customization of fill color and outline thickness.
+In this tutorial, you develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The circle card visual supports customization of fill color and outline thickness.
 
 In this tutorial, you learn how to:
-> [!div class="checklist"]
->
-> * Create a development project for your visual.
-> * Develop your visual with D3 visual elements.
-> * Configure your visual to process data.
-> * Configure your visual to adapt to size changes.
-> * Configure adaptive color and border settings for your visual.
 
->[!NOTE]
->For the full source code of this visual, see [circle card Power BI visual](https://github.com/microsoft/powerbi-visuals-circlecard).
+- [x] Create a development project for your visual.
+- [x] Develop your visual with [D3](https://d3js.org/) visual elements.
+- [x] Configure your visual to process data.
+- [x] Configure your visual to adapt to size changes.
+- [x] Configure adaptive color and border settings for your visual.
+
+For the full source code of this visual, see [circle card Power BI visual](https://github.com/microsoft/powerbi-visuals-circlecard).
+
+If you don't have a Power BI account, you can sign up for a free trial on the Power BI website.
 
 ## Prerequisites
 
@@ -33,7 +34,7 @@ In this tutorial, you learn how to:
 
 ## Create a development project
 
-In this section, you'll create a project for the circle card visual.
+In this section, you create a project for the circle card visual.
 
 >[!NOTE]
 >In this tutorial, [Visual Studio Code](https://code.visualstudio.com/) (VS Code) is used for developing the Power BI visual.
@@ -46,9 +47,9 @@ In this section, you'll create a project for the circle card visual.
     pbiviz new CircleCard
     ```
 
-3. Open the *CircleCard* folder in the VS Code explorer. (**File** > **Open Folder**).
+3. Open the *CircleCard* folder in the **VS Code** explorer. (**File** > **Open Folder**).
 
-   :::image type="content" source="./media/develop-circle-card/circle-card-explorer.png" alt-text="Screenshot of VS code window opened to the circle card folder.":::
+   :::image type="content" source="./media/develop-circle-card/circle-card-explorer.png" alt-text="Screenshot of VS Code window opened to the circle card folder.":::
 
    For a detailed explanation of the function of each of these files, see [Power BI visual project structure](./visual-project-structure.md).
 
@@ -70,37 +71,34 @@ In this section, you'll create a project for the circle card visual.
     Your visual is now running while being hosted on your computer.
 
     >[!IMPORTANT]
-    >Don't close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C* and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
+    >Don't close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter <kbd>Ctrl</kbd>+<kbd>C</kbd> and if prompted to terminate the batch job, enter <kbd>Y</kbd> and then <kbd>Enter</kbd>.
 
-## View the visual in Power BI service
+## View the visual in the Power BI service
 
 [!INCLUDE[View the Power BI visual in Power BI service](../../includes/visual-tutorial-view.md)]
 
 ## Add visual elements and text
 
-In this section you'll learn how to turn your visual into a circle, and make it display text.
+In this section you learn how to turn your visual into a circle, and make it display text.
 
 ## Modify the visuals file
 
 Set up the **visual.ts** file.
 
 >[!TIP]
->To improve readability, it's recommended that you format the document every time you copy code snippets into your project. Right-click anywhere in VS code, and select *Format Document* (Alt+Shift+F).
+>To improve readability, it's recommended that you format the document every time you copy code snippets into your project. Right-click anywhere in VS code, and select *Format Document* (or enter <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>).
 
 1. In VS Code, in the **Explorer pane**, expand the **src** folder, and select the file **visual.ts**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of accessing the visual.ts file in V S code.](media/develop-circle-card/visual-file.png)
+    >![Screenshot of accessing the visual.ts file in VS code.](media/develop-circle-card/visual-file.png)
 
 2. Remove all the code under the MIT License comment.
 
     > [!IMPORTANT]
     > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the Massachusetts Institute of Technology (MIT) License. As part of the agreement, you must leave the comments at the top of the file.
 
-3. Import the libraries and modules needed, and define the type selection for the d3 library:
-
-    >[!NOTE]
-    >If you didn't [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) as part of your setup, install it now.
+3. Import the libraries and modules needed, and define the type selection for the [d3 library](https://d3js.org):
 
    ```typescript
    "use strict";
@@ -116,6 +114,9 @@ Set up the **visual.ts** file.
    type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
    ```
 
+    >[!NOTE]
+    >If the D3 JavaScript library wasn't installed as part of your setup, install it now. From PowerShell, run `npm i d3@latest --save`
+
    Notice that among the items you imported are:
     * *IVisualHost* -  A collection of properties and services used to interact with the visual host (Power BI).
     * *D3 library* - JavaScript library for creating data driven documents.
@@ -128,7 +129,7 @@ Set up the **visual.ts** file.
     }
     ```
 
-   For information about what goes into the visual class, see [Visual API](./visual-api.md). In the next three steps, we'll define this class.
+   For information about what goes into the visual class, see [Visual API](./visual-api.md). In the next three steps, we define this class.
 
 5. Add class-level *private* methods at the beginning of the *visual* class:
 
@@ -201,7 +202,7 @@ Set up the **visual.ts** file.
 
 ### (Optional) Review the code in the visuals file
 
-Verify that the final code in the *visuals.ts* file looks like this:
+Verify that the final code in the *visual.ts* file looks like this:
 
 ```typescript
 /*
@@ -317,7 +318,7 @@ The circle card visual is a simple visual that doesn't create any objects in the
 
 Stop the visual from running and restart it.
 
-1. In the **PowerShell** window where you started the visual, enter Ctrl+C. If prompted to terminate the batch job, enter Y, and press *Enter*.
+1. In the **PowerShell** window where you started the visual, enter <kbd>Ctrl</kbd>+<kbd>C</kbd>. If prompted to terminate the batch job, enter <kbd>Y</kbd> and then <kbd>Enter</kbd>.
 
 2. In **PowerShell**, start the visual again.
 
@@ -357,7 +358,7 @@ Use this setting to ensure that the visual is automatically reloaded each time y
 
 ## Get the visual to process data
 
-In this section, you'll define data roles and data view mappings. You'll also modify the visual to display the name of the value it's displaying.
+In this section, you define data roles and data view mappings. You also modify the visual to display the name of the value it's displaying.
 
 ### Configure the capabilities file
 
@@ -365,7 +366,7 @@ Modify the **capabilities.json** file to define the data role, objects, and data
 
 * **Define the data role**
 
-    Define the *dataRoles* array with a single data role of the type *measure*. This data role is called *measure*, and is displayed as *Measure*. It allows passing either a measure field, or a field that's summed up.
+    Define the *dataRoles* array with a single data role of the type *measure*. This data role is called *measure*, and is displayed as *Measure*. It allows passing either a measure field, or a summed up field.
 
     1. Open the **capabilities.json** file in VS Code.
 
@@ -431,75 +432,8 @@ Confirm that your *capabilities.json* file looks like this:
 }
 ```
 
-### (Optional) Review the capabilities file code changes
+## Related content
 
-Verify that the circle card visual displays the *measure* field, and review the changes you made using the *Show Dataview* option.
-
-1. In Power BI service, open the *Power BI US Sales Analysis* report. If you're using a different report to develop the circle card visual, navigate to that report.
-
-2. Notice that the circle card visual can now be configured with a field titled *Measure*. You can drag and drop elements from the **Fields** pane into the *Measure* field.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the circle card measure filed, in the Power BI service visualization pane.](media/develop-circle-card/measure.png)
-
-    > [!Note]
-    > The visual project does not yet include data binding logic.
-
-3. In the floating toolbar, select **Show Dataview**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the show dataview button, located in the circle card floating toolbar.](media/develop-circle-card/show-dataview.png)
-
-4. Select the three dots to expand the display, and select **single** to view the value.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the value figure as it's displayed in the circle card show dataview option.](media/develop-circle-card/value.png)
-
-5. Expand **metadata**, then the **columns** array, and review the **format** and **displayName** values.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the format and display name values as displayed in the circle card show dataview option.](media/develop-circle-card/colunms.png)
-
-6. To toggle back to the visual, in the toolbar floating above the visual, select **Show Dataview**.
-
-## Configure the visual to consume data
-
-So far, the visual renders, but doesn't display any data. In this section, you'll make changes to the **visual.ts** file, so that the circle card visual will be able to consume data.
-
-1. Open the **visual.ts** file in VS Code.
-
-2. In the *update* method:
-
-    * Add the following statement as the first statement. The statement assigns *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
-
-        ```typescript
-        let dataView: DataView = options.dataViews[0];
-        ```
-
-    * Replace **.text("Value")** with this line of code:
-
-        ```typescript
-        .text(<string>dataView.single.value)
-        ```
-
-    * Replace **.text("Label")** with this line of code:
-
-        ```typescript
-        .text(dataView.metadata.columns[0].displayName)
-        ```
-
-3. Save the **visual.ts** file.
-
-4. Review the visual in Power BI service.
-
-The visual now displays the name and value of the selected data field.
-
-:::image type="content" source="./media/develop-circle-card/circle-card-final-visual.png" alt-text="Screenshot of a circle card visual displaying the quantity value.":::
-
-You have now created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
-
-## Next steps
-
-* [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
-* [Power BI visuals project structure](visual-project-structure.md)
-* [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
+- [Add formatting options to the circle card visual](./custom-visual-develop-tutorial-format-options.md)
+- [Power BI visuals project structure](./visual-project-structure.md)
+- [Learn how to debug a Power BI visual you created](./visuals-how-to-debug.md)

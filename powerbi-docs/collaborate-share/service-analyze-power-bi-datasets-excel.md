@@ -1,51 +1,82 @@
 ---
-title: Build refreshable Excel reports with Power BI data
-description: Learn how to build refreshable reports in Excel with Power BI datasets so you can analyze the data like you would with a dataset that is local to Excel.
-author: maggiesMSFT
-ms.author: maggies
+title: Design refreshable reports in Excel with Power BI data
+description: Learn how you can start analyzing your data and building reports in the workbook using familiar spreadsheet functionality.
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: conceptual
-ms.date: 12/01/2022
+ms.topic: concept-article
+ms.date: 02/20/2025
 LocalizationGroup: Share your work
+#customer intent: As a Power BI user I want to learn how to design refreshable reports in Excel with Power BI data
 ---
-# Build refreshable Excel reports with Power BI data
+# Design refreshable reports in Excel with Power BI data
 
-You've connected to a Power BI dataset in Excel either by [using the Analyze in Excel option in Power BI](service-analyze-in-excel.md) or by [using the Get Data option in Excel](service-connect-excel-power-bi-datasets.md). Now that you're connected, Excel gives you an empty *PivotTable* and *Fields* list from the Power BI dataset, and you're ready to analyze your data.
+Now that you [created an Excel workbook with refreshable Power BI data](service-analyze-in-excel.md), you can start analyzing your data and designing reports in the workbook using familiar spreadsheet functionality.
 
-:::image type="content" source="media/service-analyze-in-excel/analyze-in-excel-connected.png" alt-text="Screenshot that shows Excel with a connected dataset.":::
+You connected to the Power BI semantic model in one of two ways:
 
-The Excel file uses an MSOLAP connection string to connect to your dataset in Power BI. When you analyze or work with the data, Excel queries that dataset in Power BI and returns the results to Excel. If that dataset connects to a live data source using DirectQuery, Power BI queries the data source and returns the result to Excel.
+- If you connected using [Analyze in Excel](service-analyze-in-excel.md#analyze-in-excel) or the Power BI semantic model experience in Excel, your Excel workbook contains an empty PivotTable and Fields list from the Power BI semantic model.
+- If you connected via [export with live connection](service-analyze-in-excel.md#export-to-excel-with-live-connection), your Excel workbook contains an Excel table.  
 
-With that connection to the data in Power BI now established, you can create PivotTables and charts. Then, you can analyze that dataset just as you would with a local dataset in Excel.
+## Prerequisites
 
-:::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png" alt-text="Screenshot that shows a blank PivotTable for analysis in Excel.":::
+The following prerequisites are required before you proceed:
+
+- Your organization’s tenant administrator must enable the **Users can work with Power BI semantic models in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-semantic-models-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
+- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
+- You must have **Build** permission to the Power BI semantic model or have at least a **Contributor** role in the Power BI workspace containing your semantic model.
+- You must have a Power BI license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with datasets in My workspace or a Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
+- You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
+
+## Analyze your Power BI data with PivotTables
+
+With Analyze in Excel or the Power BI semantic model experience in Excel, you connected to a Power BI semantic model that you want to explore in Excel. The Excel workbook contains a Power BI connection string that links your Excel workbook to the Power BI semantic model.
+
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/contoso-report-analyze-pivottable.png" alt-text="Screenshot showing a report in the Power BI service." lightbox="media/service-analyze-power-bi-datasets-excel/contoso-report-analyze-pivottable.png":::
+
+To create your own PivotTabtole report or perform validation analysis on your data start adding fields from the PivotTable Fields into the Excel grid.
+
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-pivottable.png" alt-text="Screenshot showing PivotTable and PivotChart." lightbox="media/service-analyze-power-bi-datasets-excel/analyze-pivottable.png":::
+
+## Analyze your Power BI data with Excel tables
+
+With the export with live connection, you can create an Excel workbook containing an Excel table connected to Power BI. This Excel workbook also contains a Power BI connection string that links your Excel workbook to the Power BI data.
+
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/connected-excel-table.png" alt-text="Screenshot showing a connected table in Excel." lightbox="media/service-analyze-power-bi-datasets-excel/connected-excel-table.png":::
+
+You can customize the table by adding unique formatting to the Excel table. That formatting is preserved when you refresh the data in Excel.  
+
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/formatted-excel-table.png" alt-text="Screenshot showing formatted table in Excel." lightbox="media/service-analyze-power-bi-datasets-excel/formatted-excel-table.png":::
 
 ## Refresh the data
 
-You can refresh the Power BI dataset connection to update your reports in Excel in one of two ways.
+Whether you have an Excel PivotTable or table connected to a Power BI semantic model, you can update data in your Excel workbook by either refreshing a specific object (PivotTable, Pivot Chart, or table), or by refreshing all objects connected to a specific Power BI semantic model.
 
-- The first way is to right-click anywhere in the PivotTable and select **Refresh**.
+### Refresh a single object
 
-    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-refresh.png" alt-text="Screenshot that shows how to right-click anywhere in the PivotTable and select Refresh.":::
+To refresh a specific object in Excel, right-click the object and select **Refresh** in the menu.
 
-- The second way is to select **Data** in the Excel ribbon and then choose **Refresh**.
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/refresh-single-object.png" alt-text="Screenshot showing refreshing a single object in Excel." lightbox="media/service-analyze-power-bi-datasets-excel/refresh-single-object.png":::
 
-    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png" alt-text="Screenshot that shows where to select Data in the Excel ribbon and choose Refresh." lightbox="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png":::
+### Refresh all objects
 
-    > [!IMPORTANT]
-    > The **Refresh** option updates the Power BI connection string for the report you see on the sheet. The **Refresh All** option updates all the connection strings in the Excel workbook, including non-Power BI data sources.
+To refresh all objects connected to a Power BI semantic model, use either of these options:
 
-## Considerations and limitations
+- Select the **Data** tab in Excel, select **Refresh All** > **Refresh**.
 
-- Excel PivotTables don't support drag-and-drop aggregation of numeric fields. Your dataset in Power BI must have pre-defined measures. For more information, see [Measures in Power BI Desktop](../transform-model/desktop-measures.md).
-- You may see an error message if the data is larger than 2 GB. In that case, reduce the amount of data. For example, you can reduce the amount of data by applying filters.
+    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png" alt-text="Screenshot showing refreshing all from the Data tab." lightbox="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png":::
 
-See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) for other requirements when connecting to Power BI data in Excel.
+    > [!NOTE]
+    > If you have other connections in your Excel workbook, Refresh All updates all the data in your workbook, including Power BI data.
 
-## Next steps
+- In the Excel Desktop ribbon, select **Data** > **Queries & Connections**. In the **Queries & Connections** pane,  select **Refresh**.
 
-- [Access Power BI featured tables in Excel](service-excel-featured-tables.md)
-- Read how you can [use Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
+    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-pane.png" alt-text="Screenshot showing the Queries and Connections pane." lightbox="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-pane.png":::
+
+## Related content
+
+- [Create Excel workbooks with refreshable Power BI data](service-analyze-in-excel.md)
+- [Connect Excel to Power BI semantic models](service-connect-power-bi-datasets-excel.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)

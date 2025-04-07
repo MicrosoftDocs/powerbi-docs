@@ -59,7 +59,8 @@ Once you’ve created a Siri shortcut to some Power BI content, you can add it t
 ## Delete Siri shortcut 
 To delete a shortcut, go to the item, and from the actions menu (...), tap the **Siri shortcut** action. The **Siri shortcut** page will open. Choose **Delete Shortcut**.
 
-## Next steps
+## Related content
+
 Learn more about the Power BI mobile app by doing the following: 
 
 * Downloading the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)

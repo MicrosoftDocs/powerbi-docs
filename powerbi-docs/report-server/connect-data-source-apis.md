@@ -1,8 +1,8 @@
 ---
 title: Change data source connection strings with PowerShell
 description: Change data source connection strings using APIs in PowerShell - Power BI Report Server.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -112,8 +112,8 @@ We enable the ability to update connections for Power BI reports for DirectQuery
 
     :::image type="content" source="media/connect-data-source-apis/report-server-manage-executionlogparameter-dialog.png" alt-text="Set credentials for the updated server and database.":::
 
-## Next steps
+## Related content
 
-[Paginated report data sources in Power BI Report Server](connect-data-sources.md) 
+- [Paginated report data sources in Power BI Report Server](connect-data-sources.md) 
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

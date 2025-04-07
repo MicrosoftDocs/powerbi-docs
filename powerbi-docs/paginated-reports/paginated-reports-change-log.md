@@ -1,22 +1,118 @@
 ---
 title: Power BI Report Builder change log
 description: In this article, you learn about new features and functionality in Power BI paginated reports for the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 9/17/2024
 ---
 
 # Power BI Report Builder change log
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## March 2025
+
+Version 15.7.1814.616, releasd March 25, 2025
+
+- Reduced timeout for Power Query Online
+- Fixed issue rendering sub reports when opening from the Power BI Service
+- Increased limit on query parameters size in Query Designer
+- Catch and log error errors opening reports
+- Updated supported connection types
+- Added additional telemetry events 
+	
+## September 2024
+
+Version 15.7.1812.222, released September 16, 2024
+
+- Power Query Online general availability.
+- Fixed issue editing data sources for PBI semantic models in a folder.
+- Fixed issue with sign in dialog in some cases.
+- Fixed issue preventing Report Builder being able to use window's "Run As A Different User."
+- Enhanced migration of SQL Azure based RDL reports in RdlMigration tool.
+- Added some additional telemetry.
+
+## July 2024
+
+Version 15.7.1811.11, released July 8, 2024
+
+- Fixed issue where Report Builder would fail to load properly in some cases.
+
+## June 2024
+
+Version 15.7.1810.53, released June 27, 2024
+
+- Fixed issue related to reports visible in My workspace.
+
+## May 2024
+
+Version 15.7.1809.28, released May 20, 2024
+
+- Fixes for Power Query Online interactions 
+- Various bug fixes
+
+### Features
+- Added support for subfolders in workspaces on Power BI service.
+- Added RDL Migration Tool to help migrate reports. This can be found in the RdlMigration folder of your installation directory. More information can be found in the article [Plan to migrate .rdl reports to Power BI](https://aka.ms/MigrateToPowerBI).
+
+## March 2024
+
+Version 15.7.1807.730, released March 24, 2024
+
+- Fixed issue with JPEG files not respecting the EXIF rotation property.
+- Updated to use the last MSAL authentication library functionality.
+- Various accessibility fixes across all areas of the product.
+- Bug fix for Power BI Report Builder freezing during certain operations.
+- Various bug fixes. 
+
+### Features
+- Power Query Online connectivity to hundreds of new data sources is now in preview.
+- Added support for TLS 1.3.
+
+## July 2023
+
+Version 15.7.1806.11, released July 17, 2023
+
+- Fixed issue displaying localized strings.
+
+Version 15.7.1805.14, released July 5, 2023
+
+- Fixed one additional error when opening reports from Power BI service under certain conditions.
+
+## June 2023
+
+Version 15.7.1804.21, released June 26, 2023
+
+- Fixed error when opening reports from Power BI service under certain conditions.
+
+## May 2023
+
+Version 15.7.1803.54, released May 30, 2023
+
+### Features
+
+- Introduced new accessibility property that enables accessible headers to tables and Heading levels to text boxes.
+- Bug fixes
+
+
+## April 2023
+
+Version 15.7.1802.126, released April 4, 2023
+
+### Features
+
+- Fix issue which caused crash when adding chart visuals.
+- Fix issue with Finnish localization.
+- Fix issue with DAX query designer used against PBI datasets.
+- Accessibility fixes.
 
 ## November 2022
 
@@ -26,6 +122,7 @@ Version 15.7.1801.18, released November 22, 2022
 
 - Added tool version metadata to generated RDL file.
 	
+
 Version 15.7.1800.11, released November 2, 2022
 
 ### Bug fixes
@@ -34,7 +131,7 @@ Version 15.7.1800.11, released November 2, 2022
 - Fixed accessibility issues.
 
 ## August 2022
-	
+
 Version 15.7.1799.16, released August 18, 2022
 
 ### Features
@@ -43,16 +140,15 @@ Version 15.7.1799.16, released August 18, 2022
 - Updated versions of some utilized open-source software projects.
 
 ### Bug fixes 
-	
+
 - Fixed several accessibility issues across the application.
 - Fixed issue where parameters could get duplicated.
 
 ## July 2022
-	
+
 Version 15.7.1798.91, released July 18, 2022
-	
 ### Bug fixes 
-	
+
 - Fixed several localization issues with strings only displaying in English.
 - Fixed issue related to 407 proxy authentication.
 - Fixed issue related to parameter formulas when validating query.
@@ -148,6 +244,7 @@ Version 15.6.01487.0002, released January 26, 2021
 - Error when connecting to the workspace through XMLA endpoint when workspace name contains plus sign (+).  
 
 ### Other 
+
 See the January 2021 Power BI Report Builder blog post for the complete list of new and updated features.
 
 ## September 2020 
@@ -170,8 +267,11 @@ Version 15.6.01340.0002, released September 3, 2020
 
 See the September 2020 Power BI Report Builder blog post for the complete list of new and updated features.
 
-## Next steps 
+## Related content 
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
 - [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md)
+
+
+

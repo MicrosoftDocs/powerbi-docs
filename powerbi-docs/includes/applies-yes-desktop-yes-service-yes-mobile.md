@@ -2,12 +2,12 @@
  title: include file
  description: include file
  services: powerbi
- author: maggiesMSFT
+ author: kfollis
  ms.service: powerbi
  ms.topic: include
- ms.date: 11/18/2021
- ms.author: maggies
+ ms.date: 01/12/2023
+ ms.author: kfollis
  ms.custom: include file
 ---
 
-**APPLIES TO:** ✔️&nbsp;Power&nbsp;BI&nbsp;Desktop ✔️&nbsp;Power&nbsp;BI&nbsp;service ✔️&nbsp;Power&nbsp;BI&nbsp;mobile&nbsp;apps
+**APPLIES TO:** :::image type="icon" source="media/yes-icon.svg" border="false":::Power&nbsp;BI&nbsp;Desktop :::image type="icon" source="media/yes-icon.svg" border="false":::Power&nbsp;BI&nbsp;service :::image type="icon" source="media/yes-icon.svg" border="false":::Power&nbsp;BI&nbsp;mobile&nbsp;apps

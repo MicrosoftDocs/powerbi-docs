@@ -7,16 +7,19 @@ ms.reviewer: sabre
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/21/2022
+ms.date: 01/12/2025
+#customer intent: As an ISV, I want to embed a Power BI report that uses data stored in Azure Analysis Services (AAS) in an embed for your customers scenario, so that I can provide my customers with a report that uses data from an AAS database.
 ---
 
 # Embed a report with an Azure Analysis Services (AAS) database
+
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
 This article explains how to embed a Power BI report that uses data stored in [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview), in an [embed for your customers](embedded-analytics-power-bi.md#embed-for-your-customers) scenario. This article is aimed at independent software developers (ISVs), who want to embed a report with AAS data whether or not the database implements [row-level security (RLS)](embedded-row-level-security.md).
 
 ## Prerequisites
 
-You'll need a report with a live connection to AAS database, with or without RLS.
+You need a report with a live connection to AAS database, with or without RLS.
 
 ## Dynamic security - RLS
 
@@ -50,10 +53,10 @@ Use the [**service principal object ID**](embedded-troubleshoot.md#whats-the-dif
 
 ## Analysis Service migration
 
-You can [migrate from AAS to Power BI Premium](../../guidance/migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md) even if you have an embedded AAS report. Your embedded report won't break during the migration, as long as the principal that's calling the [Embed Token - Generate Token](/rest/api/power-bi/embed-token/generate-token) API, is a member or admin of the workspace.
+You can [migrate from AAS to Power BI Premium](../../guidance/migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md) even if you have an embedded AAS report. Your embedded report doesn't break during the migration, as long as the principal that's calling the [Embed Token - Generate Token](/rest/api/power-bi/embed-token/generate-token) API, is a member or admin of the workspace.
 
 >[!NOTE]
-> If the service principal is not an admin, and you don't want to make it an admin of the workspace when you migrate, migrate that model into a separate workspace where you can give it admin permissions.
+> If the service principal isn't an admin, and you don't want to make it an admin of the workspace when you migrate, migrate that model into a separate workspace where you can give it admin permissions.
 
 ## Generate an embed token
 
@@ -66,7 +69,7 @@ The information needed to generate an embed token depends on how you're connecte
 To generate an embed token, provide the following information:
 
 * **Username** (Optional if no RLS. Required for RLS) - The username must be the same as API caller (in this case, the Master user's [UPN](./pbi-glossary.md#user-principal-name-upn)). If the database doesn't use RLS, and no username is provided, the master user's credentials are used.
-* **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
+* **Role** (required for RLS) - The report only displays data if the effective identity is a member of the role.
 
 Example:  
 
@@ -74,7 +77,7 @@ Define the user identity and roles for one of the following three scenarios:
 
 * If RLS isn't implemented:
 
-There is no need to define any effective identity.
+You don't need to define any effective identity.
 
 * If using static RLS:
 
@@ -96,6 +99,9 @@ There is no need to define any effective identity.
          datasets: new List<string>{ datasetId.ToString()}
       )
   ```
+
+    >[!NOTE]
+    >`customData` in the embed token can't be larger than 1,024 characters.
 
 Use the effective identity to generate an embed token:
 
@@ -145,6 +151,9 @@ Define the user identity and roles for one of the following scenarios:
       );
   ```
 
+    >[!NOTE]
+    >`customData` in the embed token cannot be larger than 1,024 characters.
+
 Use the effective identity to generate an embed token:
 
 ```csharp
@@ -167,13 +176,10 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
 ---
 
-Use the embed token to embed the report into your app or website. Your report will filter data according to the applied RLS in the report.
+Use the embed token to embed the report into your app or website. Your report filters data according to the applied RLS in the report.
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[Row-level security with Power BI Embedded](embedded-row-level-security.md)
->[!div class="nextstepaction"]
->[Embed a report with cloud-based RLS](cloud-rls.md)
->[!div class="nextstepaction"]
->[paginated-reports-row-level-security](paginated-reports-row-level-security.md)
+* [Row-level security with Power BI Embedded](embedded-row-level-security.md)
+* [Embed a report with cloud-based RLS](cloud-rls.md)
+* [paginated-reports-row-level-security](paginated-reports-row-level-security.md)

@@ -1,8 +1,8 @@
 ---
 title: Create a report quickly from a SharePoint list or library in the Power BI service
 description: There's a new way to create reports quickly from data in SharePoint lists and libraries. Power BI automatically generates the visuals for you.    
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -26,7 +26,7 @@ If you use Power BI Desktop, you can also [create a report on a SharePoint List 
 
 In this video, watch Amanda demo creating a report from a SharePoint list in the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWOzjW]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=98c242ea-d9e5-4a6e-8111-a114de4f1b0f]
 
 ## Visualize in Power BI 
 
@@ -79,13 +79,15 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 - Very large lists may be slow or may time out altogether. 
 - This feature isn't supported for guest users in a tenant.
 - Within SharePoint libraries, this option will only show on the root of the document library.
-- The reports and datasets created through this SharePoint experience are stored in special, system-generated workspaces hosted in shared capacity. Users aren't meant to access these workspaces outside of the SharePoint experience.
+- The reports and semantic models created through this SharePoint experience are stored in special, system-generated workspaces hosted in shared capacity. Users aren't meant to access these workspaces outside of the SharePoint experience.
+- If a user enables a terms of use acceptance flow in SharePoint, they will not be able to create a report from a SharePoint list due to issues with user authentication.
+- The use of data gateways in currently unsupported for this feature. 
 
 ## Troubleshooting
 
-If you don't see **Power BI** on the **Integrate** menu in a SharePoint or Microsoft list or library, your Power BI admin may have disabled it for specific groups or your entire organization. See the [Integration with SharePoint and Microsoft Lists](../admin/service-admin-portal-integration.md#integration-with-sharepoint-and-microsoft-lists) section of the "Power BI admin portal" article for details.
+If you don't see **Power BI** on the **Integrate** menu in a SharePoint or Microsoft list or library, your Power BI admin may have disabled it for specific groups or your entire organization. See the [Integration with SharePoint and Microsoft Lists](/fabric/admin/service-admin-portal-integration#integration-with-sharepoint-and-microsoft-lists) section of the "Power BI admin portal" article for details.
 
-## Next steps
+## Related content
 
 As we continue expanding our experience to quickly explore your data, we’d love to hear your thoughts and feedback! Let us know what you’d like to see added to this experience or where’d you like to see us integrate next.
 

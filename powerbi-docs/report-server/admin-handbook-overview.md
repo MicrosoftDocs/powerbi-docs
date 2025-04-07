@@ -1,8 +1,8 @@
 ---
 title: Admin overview, Power BI Report Server
 description: This article is the administration overview of Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -37,11 +37,12 @@ The majority of your configuration will occur within the Report Server Configura
 ## Security
 Security and protection are important to every organization. You can learn about authentication, authorization, roles, and permissions over in the [security](/sql/reporting-services/security/reporting-services-security-and-protection) documentation.
 
-## Next steps
-[Install Power BI Report Server](install-report-server.md)  
-[Find your report server product key](find-product-key.md)  
-[Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+## Related content
+
+- [Install Power BI Report Server](install-report-server.md)  
+- [Find your report server product key](find-product-key.md)  
+- [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
+- [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+- [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

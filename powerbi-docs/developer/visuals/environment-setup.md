@@ -1,29 +1,37 @@
 ---
 title: Setting up an environment for developing a Power BI visual
-description: This article explains how to set up your environment so that you can develop a Power BI visual.
+description: This article explains how to set up your environment so you have all the tools necessary for developing a Power BI visual.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/16/2022
+ms.date: 11/20/2024
+ms.custom: engagement-fy23
+#customer intent: As a Power BI visual developer, I want to learn how to set up my environment so that I can develop a Power BI visual.
 ---
 
 # Set up your environment for developing a Power BI visual
 
-In this article, you'll learn how to set up your environment for developing a Power BI visual.
+This article teaches you how to set up your environment for developing a Power BI visual.
 
-Before you start development, you'll need to install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate. When your local environment is set up, you'll need to configure Power BI service for developing a Power BI visual.
+Before you start development, you need to install **node.js** and the **pbiviz** package. Then, when your local environment is set up, you need to configure Power BI service for developing a Power BI visual.
 
-In this article, you'll learn how to:
+In this article, you learn how to:
 > [!div class="checklist"]
 >
 > * [Install *node.js*](#install-nodejs).
 > * [Install *pbiviz*](#install-pbiviz).
-> * [Create and install a certificate](#create-and-install-a-certificate).
-> * [Set up Power BI service for developing a visual](#set-up-power-bi-service-for-developing-a-visual).
-> * [Install additional libraries](#install-development-libraries) (required for developing a visual).
+> * [Enable Power BI developer mode](#enable-developer-mode).
+
+## Prerequisites
+
+Before you start developing your Power BI visual, verify that you have everything listed in this section.
+
+* A **Power BI Pro** or **Premium Per User (PPU)** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
+* An integrated development environment (IDE) for developing JavaScript and TypeScript applications. [Visual Studio Code (VS Code)](https://www.visualstudio.com/) is ideal for developing visuals.
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://support.apple.com/guide/terminal/welcome/mac) (for Mac).
 
 ## Install node.js
 
@@ -31,7 +39,7 @@ In this article, you'll learn how to:
 
 To install *node.js*:
 
-1. In a web browser, navigate to [node.js](https://nodejs.org).
+1. Navigate to [node.js](https://nodejs.org), from your web browser.
 
 2. Download the latest recommended MSI installer.
 
@@ -47,194 +55,48 @@ The *pbiviz* package is a zipped Power BI visual project, with all the needed sc
 
 To install the latest version of *pbiviz*, open Windows PowerShell and enter the following command.
 
-```powershell
-npm i -g powerbi-visuals-tools@latest
-```
+  ```powershell
+  npm i -g powerbi-visuals-tools@latest
+  ```
 
 >[!NOTE]
 >You might get some warnings when you run this command. They should not prevent *pbiviz* from installing.
-
-## Create and install a certificate
-
-For a client (your computer) and a server (Power BI service) to interact securely, a [Secure Sockets Layer (SSL) Certificate](create-ssl-certificate.md) is required. Without a certificate to ensure secure interactions, they will be blocked by the browser.
-
-### [Windows](#tab/windows)
-
-This process describes running a PowerShell command that launches the **Certificate Import Wizard**. Follow the steps below to configure the certificate in the wizard.
-
->[!IMPORTANT]
->Do not close the PowerShell window during this procedure.
-
-1. Open Windows PowerShell and enter the following command.
-
-    ```powershell
-    pbiviz --install-cert
-    ```
-
-    This command starts the Certificate Import Wizard.
-
-    >[!NOTE]
-    >
-    >* If you don't have permission to run pbiviz, start **PowerShell** as an administrator and run the command `Set-ExecutionPolicy RemoteSigned`, then try again.
-    >* If the Certificate Import Wizard doesn't open automatically, navigate to the certificate location in **File Explorer**, right-click on it, and select *Install*.
-
-2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and select **Next**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's first window, with the store location option set to current user.](media/environment-setup/certificate-wizard-store-location.png)
-
-3. In the **File to Import** window, select **Next**.
-
-4. In the **Certificate Store** window, select the **Place all certificates in the following store** option, and select **Browse**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's certificate store window, with the place all certificates in the following store selected.](media/environment-setup/certificate-wizard-certificate-store.png)
-
-5. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select **OK**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the select certificate store window, with the Trusted Root Certification Authorities folder selected.](media/environment-setup/trusted-root.png)
-
-6. Select *Next* in the **Certificate Store** window.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's certificate store window, with the Trusted Root Certification Authorities folder selected, and the next button highlighted.](media/environment-setup/certificate-wizard-store-next.png)
-
-7. In the **Completing the Certificate Import Wizard** window, verify your settings and select **Finish**.
-
-    >[!NOTE]
-    >If you receive a security warning, select **Yes**.
-
-### [OSX](#tab/sdk2osx)
-
-1. Open *Keychain Access*.
-
-2. If the lock in the upper left is locked, select it to unlock it. Search for *localhost* and double-click the certificate.
-
-    ![Install SSL cert 1 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx.png)
-
-3. Select **Always Trust** and close the window.
-
-    ![Install SSL cert 2 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx2.png)
-
-4. Enter your username and password, and select **Update Settings**.
-
-    ![Install SSL cert 3 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx3.png)
-
-5. Close any browsers that you have open.
-
-> [!NOTE]
-> If the certificate is not recognized, restart your computer.
-
----
 
 ## (Optional) Verify that your environment is set up
 
 Confirm that the Power BI visuals tools package is installed. In PowerShell, run the command `pbiviz` and review the output, including the list of supported commands.
 
 >[!div class="mx-imgBorder"]
->![Screenshot of the output of executing the command p b i v i z in PowerShell.](media/environment-setup/pbiviz-verify.png)
+>![Screenshot of the output of executing the command p b i viz in PowerShell.](media/environment-setup/pbiviz-verify.png)
 
-## Set up Power BI service for developing a visual
+## Enable developer mode
 
-To develop a Power BI visual, you'll need to enable custom visual debugging in Power BI service. Follow the instructions in this section to enable this option.
+To develop or upload your own Power BI visual in the Desktop or on the web, developer mode must be enabled.
 
-1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/).
+### [How to enable developer mode in Power BI Desktop](#tab/desktop)
 
-2. Navigate to **Settings** > **Settings** > **Settings**.
+To develop a Power BI visual in the Desktop, enable the *Develop a visual* setting. This setting only stays enabled for the current session. You must enable this setting in each session where you import a visual from a file.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/environment-setup/powerbi-settings.png)
+1. From the Power BI desktop, navigate to **File** > **Options and settings**  > **Options**
+   :::image type="content" source="./media/environment-setup/desktop-options.png" alt-text="Screenshot of Options menu in the Power BI desktop.":::
+1. Select **Report settings** in the **Current file** section, and enable the *Develop a visual* check box.
+   :::image type="content" source="./media/environment-setup/desktop-developer-mode.png" alt-text="Screenshot of Developer mode enabled in Power BI desktop.":::
+1. Select **OK**
 
-3. From the **General** tab, select **Developer**. In the **Developer** setting, select the **Enable  developer mode** check box, and then select **Apply**.
+### [How to enable developer mode in the web service](#tab/service)
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the enable developer mode, in the Power BI settings, general tab.](media/environment-setup/developer-settings.png)
+To develop a Power BI visual in the Power BI service, enable custom visual *developer mode*. This setting stays enabled until you disable it.
 
-## Install development libraries
+1. Go to [Power BI developer settings](https://app.powerbi.com/user/user-settings/developer-settings?experience=power-bi).
 
-To develop your own Power BI visual, you'll need to install additional libraries. This section describes how to install these libraries and verify that the installation is successful.
+1. Enable the **Power BI Developer mode** switch.
 
-To install the libraries listed in this article, open PowerShell and enter the installation command for each component.
+   :::image type="content" source="media/environment-setup/developer-settings.png" alt-text="Screenshot of the enable developer mode, in the Power BI settings, Developer settings tab.":::
 
->[!NOTE]
->Once these libraries are installed on your computer, you'll be able to use them for any Power BI visuals project. This is a one time installation procedure, per machine.
+---
 
-### D3 JavaScript library
+## Related content
 
-[D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It relies on widely implemented Scalable Vector Graphics (SVG), HTML5, and CSS standards.
-
-```powershell
-npm i d3@^5.0.0 --save
-```
-
-### TypeScript definitions
-
-Install TypeScript definitions so that you can develop your Power BI visual in [TypeScript](https://www.typescriptlang.org/), a superset of JavaScript.
-
-```powershell
-npm i @types/d3@^5.0.0 --save
-```
-
-### core-js
-
-[core-js](https://www.npmjs.com/package/core-js) is a modular standard library for JavaScript that includes polyfills for ECMAScript.
-
-```powershell
-npm i core-js@3.2.1 --save
-```
-
-### powerbi-visual-api
-
-Install the Power BI Visuals API definitions.
-
-```powershell
-npm i powerbi-visuals-api --save-dev
-```
-
-### (Optional) Verify that the D3 library is installed
-
-[Visual Studio Code](https://code.visualstudio.com/) (VS Code) is an ideal Integrated Development Environment (IDE) for developing TypeScript applications. In this section, we'll use VS Code to verify that the D3 library you need to develop your Power BI visual, is correctly installed.
-
->[!NOTE]
->The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#create-a-development-project) instructions.
-
-1. Open VS Code.
-
-    >[!TIP]
-    >You can open **VS Code** from PowerShell by executing the following command from within the project folder:
-    >
-    >```powershell
-    >code .
-    >```
-
-2. In VS Code, open the **File** menu and select **Open Folder**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the VS  studio open folder option, in the file menu.](media/environment-setup/open-folder.png)
-
-3. In the **Open Folder** window, select the folder that contains your Power BI visual project, and select **Select Folder**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of selecting the Power B I visuals project folder in the VS studio open folder window.](media/environment-setup/project-folder.png)
-
-4. In the **Explorer** pane, expand the **node_modules** folder and verify that the **d3** library is installed.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the 3d folder in a Power B I visuals project, as it appears in VS Code.](media/environment-setup/verify-d3.png)
-
-5. In the **Explorer** pane, expand **node_modules > @types  > d3** and verify that the file **index.t.ds** is installed.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the index.t.ds file in a Power B I visuals project, as it appears in VS Code.](media/environment-setup/verify-index.png)
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
-
-> [!div class="nextstepaction"]
-> [Create a Power BI circle card visual](develop-circle-card.md)
-
-> [!div class="nextstepaction"]
-> [Create an R-powered Power BI visual](create-r-based-power-bi-desktop.md)
+* [Learn about the Power BI visual project structure](./visual-project-structure.md)
+* [Create a Power BI circle card visual](develop-circle-card.md)
+* [Create an R-powered Power BI visual](create-r-based-power-bi-desktop.md)

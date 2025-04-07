@@ -1,14 +1,15 @@
 ---
 title: Create scorecards and manual metrics
 description: Create scorecards and manual metrics in Power BI.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: 'cnews'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Create scorecards
 ms.topic: how-to
-ms.date: 10/10/2022
+ms.date: 11/18/2024
 ms.custom: sample-sales&returnssamplev201912
 ---
 # Create scorecards and manual metrics in Power BI
@@ -24,14 +25,14 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 
 You can also connect metrics to an existing report visual in Power BI. See [Create connected metrics](service-goals-create-connected.md) for details. 
 
-:::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Screenshot of Northwind scorecard with metrics and submetrics.":::
+:::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Screenshot of Northwind scorecard with metrics and submetrics." lightbox="media/service-goals-create/northwind-scorecard.png":::
 
 ## Prerequisites
 
 You need a Power BI Pro license to author and share metrics in standard workspaces. You also need:
 
 - Admin, Member, or Contributor role in a workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
-- [Build permission](../connect-data/service-datasets-build-permissions.md) for a dataset.
+- [Build permission](../connect-data/service-datasets-build-permissions.md) for a semantic model.
 
 ## Step 1: Create a scorecard 
 
@@ -40,11 +41,11 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-left-nav.png" alt-text="Screenshot of Select Metrics in the left nav.":::
 
-1. In the Metrics hub, select **New scorecard**.
+1. In the Metrics hub, select **New metric set**.
 
     A new scorecard opens, which you can start populating with metrics.
 
-1. Select the edit pencil next to **Untitled Scorecard** and give your new scorecard a name. 
+1. Select the edit pencil next to **Untitled Scorecard** and give your new scorecard a name and destination workspace.
 
     :::image type="content" source="media/service-goals-create/metrics-edit-scorecard-name.png" alt-text="Screenshot of the edit icon that shows on hover and enables scorecard renaming.":::
 
@@ -56,16 +57,16 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     :::image type="content" source="media/service-goals-create/metrics-move-scorecard-confirm.png" alt-text="Screenshot of confirmation to move a scorecard to another workspace, and a dropdown to select the correct workspace.":::
 
-    Power BI saves these items in the workspace: the scorecard itself, and a *dataset* associated with your scorecard that houses all the metrics data. 
+    Power BI saves these items in the workspace: the scorecard itself, and a *semantic model* associated with your scorecard that houses all the metrics data. 
 
-    :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="Screenshot of The new scorecard and dataset that Power BI created.":::
+    :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="Screenshot of The new scorecard and semantic model that Power BI created.":::
 
 ## Step 2: Create a manual metric
 
-1. In the scorecard, select **New Metric**. 
+1. In the scorecard, select **Add metric**. 
 2. Decide on a **Metric name** and an **Owner**. 
 
-    Owners can be individuals or distribution groups within your organization’s Azure Active Directory.  
+    Owners can be individuals or distribution groups within your organization’s Microsoft Entra ID.  
 
 1. Set **Current** and **Target** values for your metrics. In this article, you enter the number manually. You can also connect it to an existing report visual in Power BI. See [Create connected metrics](service-goals-create-connected.md) for details. 
 1. Set the format for your values, and choose a **Status**, **Start date**, and **End date**. 
@@ -80,7 +81,7 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
 ## Step 3 (Optional): Create submetrics 
 
-You can also define one or more submetrics for your metric. Like their parent metrics, submetrics can be either connected or set manually. See [Create submetrics](service-metrics-submetrics.md) for details.
+You can also define one or more submetrics for your metric. Like their parent metrics, submetrics can be either connected or set manually. See [Create submetrics](service-goals-subgoals.md) for details.
 
 ## Step 4 (Optional): Update the metric tracking cycle 
 
@@ -106,9 +107,9 @@ When you share a scorecard, the people you share it with can view and interact w
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-share-link.png" alt-text="Screenshot of Share a link to a scorecard.":::
 
-    When you share scorecards, whether inside or outside your organization, your recipients need Power BI Pro licenses, unless the content is in a [Power BI Premium](../enterprise/service-premium-gen2-what-is.md) capacity.
+    When you share scorecards, whether inside or outside your organization, your recipients need Power BI Pro licenses, unless the content is in a [Power BI Premium](../enterprise/service-premium-what-is.md) capacity.
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)

@@ -1,8 +1,8 @@
 ---
 title: "Sample Power BI paginated reports"
 description: In this article, you learn about how to download and use sample Power BI paginated reports.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
@@ -13,16 +13,14 @@ ms.date: 10/27/2022
 # Sample Power BI paginated reports
 
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
 This article provides information and links to several sample Power BI paginated reports to download and explore. They demonstrate typical ways you can use paginated reports.
 
 ## Prerequisites
 
-- You can share these reports online, just as they are, with no editing. To do so, you need a Power BI Pro license, or a [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license. You can sign up for a [free trial of a Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license).
-- You can save these reports to My Workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
-- To edit these reports, you need to [install Power BI Report Builder](https://aka.ms/pbireportbuilder) from the Microsoft Download Center.
-- OK, you're ready to download these sample paginated reports from GitHub! You don't need a GitHub account. 
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+- Now you're ready to download these sample paginated reports from GitHub. You don't need a GitHub account. 
 
 ## Download the reports
 
@@ -47,7 +45,7 @@ To download the reports successfully, you need to download the repo as a zip fil
 :::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of sample Power BI paginated report invoice.":::
 
 
-This paginated report is a self-contained invoice. The scenario for this report is that you want a pixel-perfect printable invoice. It needs to show the total sales with details listing item descriptions, quantities, discounts, and cost.
+This paginated report is a self-contained invoice. The scenario for this report is that you want a print-ready invoice. It needs to show the total sales with details listing item descriptions, quantities, discounts, and cost.
 
 This sample highlights unique characteristics for creating real-world invoices, such as:  
 
@@ -92,7 +90,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Screenshot of sample Power BI paginated report letter.":::
 
-This self-contained paginated report sample is designed for creating real world mailing letters. The scenario for this report is that you want a pixel-perfect printable letter with dynamic content.
+This self-contained paginated report sample is designed for creating real world mailing letters. The scenario for this report is that you want a print-ready letter with dynamic content.
 
 This sample has unique characteristics, such as: 
 
@@ -108,7 +106,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Screenshot of sample Power BI paginated report transcript.":::
 
-The scenario for this report is that you want a pixel-perfect printable transcript. It needs to contain dynamic content listing program description details and dates for each student.
+The scenario for this report is that you want a print-ready transcript. It needs to contain dynamic content listing program description details and dates for each student.
 
 This self-contained paginated report sample has unique characteristics such as: 
 
@@ -122,7 +120,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-sales-performance.png" alt-text="Screenshot of sample Power BI paginated report for Sales Performance.":::
 
-Country Sales Performance is a self-contained paginated report sample. The scenario for this report is that you want a pixel-perfect printable invoice to see total sales and details. It showcases these features:
+Country Sales Performance is a self-contained paginated report sample. The scenario for this report is that you want a print-ready invoice to see total sales and details. It showcases these features:
 
 - The use of a parameter to expand details in the table.
 - Headers and footers.
@@ -137,7 +135,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-regional-sales.png" alt-text="Screenshot of sample Power BI paginated report for Regional Sales.":::
 
-Regional Sales is a self-contained paginated report sample. The scenario for this report is that you want a pixel-perfect printable report to see total sales vs. quota. It showcases these features:
+Regional Sales is a self-contained paginated report sample. The scenario for this report is that you want a print-ready report to see total sales vs. quota. It showcases these features:
 
 - The use of a parameter to show selected details in the table.
 - Headers and footers.
@@ -151,7 +149,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-organization-expenditures.png" alt-text="Screenshot of sample Power BI paginated report for Organization Expenditures.":::
 
-Organization Expenditures is a self-contained paginated report sample. The scenario for this report is that you want a pixel-perfect printable expense report to see breakdown of expenses in your organization. It showcases these features:
+Organization Expenditures is a self-contained paginated report sample. The scenario for this report is that you want a print-ready expense report to see breakdown of expenses in your organization. It showcases these features:
 
 - Headers and footers.
 - Report items such as text boxes, lines, and rectangles using expression placeholders.

@@ -55,5 +55,6 @@ Some organizations have security policies and compliance requirements that enfor
 
 To support this, the Power BI mobile app allows admins to control the mobile app secure access setting by pushing the app configuration settings from Microsoft Intune and other mobile device management (MDM) solutions. Admins can use the app protection policy to turn on this setting for all users or for a group of users. See [Use MDM to remotely configure the Power BI mobile app](mobile-app-configuration.md#data-protection-settings-ios-and-android) for detail.
 
-## Next steps
+## Related content
+
 * [Use MDM to remotely configure Power BI mobile app](mobile-app-configuration.md)
