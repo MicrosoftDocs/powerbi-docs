@@ -112,7 +112,7 @@ The following features and capabilities are available in the backend and admin m
 
   * Manage capacities operation pause resume and scale up/scale down​
 
-* Publishing & management of tenant’s PBI content​
+* Publishing & management of tenant’s Power BI content​
 
 * Tenant use monetization and streamlined licensing billing & payment processing
 
