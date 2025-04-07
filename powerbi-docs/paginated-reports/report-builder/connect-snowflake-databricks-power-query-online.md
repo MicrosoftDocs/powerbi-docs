@@ -122,7 +122,7 @@ Now that you have built your paginated report and publish it to the Power BI ser
    
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc-edit.png" alt-text="Screenshot showing shareable cloud connection location.":::
 
-1. When you locate the name, go to [Manage Connections and Gateways] (../../connect-data/service-create-share-cloud-data-sources.md), locate the connection and using context menu Settings option, update the data source credentials.
+1. When you locate the name, go to [Manage Connections and Gateways](../../connect-data/service-create-share-cloud-data-sources.md), locate the connection and using context menu Settings option, update the data source credentials.
 
 ## Next steps 
 
@@ -138,7 +138,7 @@ When you're done with the report design, you can save the report to your local m
 - Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source. See the [How to bind parameters](#how-to-bind-parameters) section in this article.
 - If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render.
 - When uploading paginated report that someone else authored, the Shareable Cloud Connection owner needs to share the cloud connection to the uploading identity.
-- When uploading such paginated report using Service Principal, the author of report needs to [Take Over using API] (../../../rest/api/power-bi/reports/take-over-in-group.md) and provide their user identity. Else report will fail to render on Power BI service.
+- When uploading such paginated report using Service Principal, the author of report needs to [Take Over using API](../../../rest/api/power-bi/reports/take-over-in-group.md) and provide their user identity. Else report will fail to render on Power BI service.
 
 ## Related content  
 
