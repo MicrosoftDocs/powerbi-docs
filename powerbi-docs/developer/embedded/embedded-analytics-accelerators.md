@@ -128,21 +128,21 @@ The following tables compare features of the different accelerators from our par
 
 ### Deployment and integration options
 
-| Partner <br> **(accelerator)**                                      | Stand alone    | URL redirect   | Embedded in App’s iFrame | Backend + SDK only |
-|---------------------------------------------------------------------|:--------------:|:--------------:|:------------------------:|:------------------:|
-| **The Reporting Hub**​ <br> [Reporting Hub](https://thereportinghub.com/) | ✔​         | ✔​             | ✔​                        | ​                   |
-| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedFAST)      |           |               ​ | ​                         | ✔​                  |
-| **Carlo Solutions**​ <br>[Entelexos](https://www.entelexos.com/)          | ✔​         | ✔​             | ​                         | ​                   |
-| **iLink Digital​** <br>[EmbeDash](https://embedash.com/)                  | ✔​         | ​              | ​ ✔                       | ​   ✔               |
+| Partner <br> **(accelerator)**                                      | Stand alone  | URL redirect  | Embedded in App’s iFrame | Backend + SDK only |
+|---------------------------------------------------------------------|:------------:|:-------------:|:------------------------:|:------------------:|
+| **The Reporting Hub**​ <br> [Reporting Hub](https://thereportinghub.com/) | ✔​       | ✔​            | ✔​                        | ​                   |
+| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedFAST)      |         |              ​ | ​                         | ✔​                  |
+| **Carlo Solutions**​ <br>[Entelexos](https://www.entelexos.com/)          | ✔​       | ✔​            | ​                         | ​                   |
+| **iLink Digital​** <br>[EmbeDash](https://embedash.com/)                  | ✔​       | ​             | ​ ✔                       | ​   ✔               |
 
 ### Acquisition and billing options
 
 | Partner <br> **(accelerator)**               |  Monthly subscriptions: <br> **Direct billing**     |  Monthly subscriptions: <br> **Azure Marketplace** | Free trial | One time purchase ​ | As part of consulting engagement​ |
 |:---------------------------------------------|:---------------------------------------------------:|:--------------------------------------------------:|:--------------:|:----------------------:|:------------------------------------:|
-| **The Reporting Hub**​ <br> [Reporting Hub](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_prod_003?tab=Overview) | ✔​                                                 | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_prod_003?tab=Overview)​        | ✔​             | ​                       | ​              |
-| **MAQ Software**​ <br>[EmbedFAST](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi?tab=Overview)            |                                    | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi)                                  | ​               | ✔​                    | ✔​                                   |
-| **Carlo Solutions**​ <br>[Entelexos](https://azuremarketplace.microsoft.com/marketplace/apps/carloconsultingllc1611096483318.entelexos  ) | ​  ✔                                                | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/carloconsultingllc1611096483318.entelexos  )        | ​  ✔            | ​   ✔                   | ​  ✔          |
-| **iLink​** <br>[EmbeDash](https://azuremarketplace.microsoft.com/marketplace/apps/ilinksystems.embedash?tab=Overview)                        |  ✔           | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/ilinksystems.embedash?tab=Overview)                               | ​              | ​ ✔                     | ✔​                   |
+| **The Reporting Hub**​ <br> [Reporting Hub](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_prod_003?tab=Overview) | ✔​      | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_prod_003?tab=Overview)​    | ✔​   | ​     | ​     |
+| **MAQ Software**​ <br>[EmbedFAST](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi?tab=Overview)                                   |        | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi)                                         | ​     | ✔​   | ✔​    |
+| **Carlo Solutions**​ <br>[Entelexos](https://azuremarketplace.microsoft.com/marketplace/apps/carloconsultingllc1611096483318.entelexos  )                              | ​  ✔    | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/carloconsultingllc1611096483318.entelexos)                            | ✔   | ​ ✔  |  ✔   |
+| **iLink​** <br>[EmbeDash](https://azuremarketplace.microsoft.com/marketplace/apps/ilinksystems.embedash?tab=Overview)                                                  |  ✔     | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/ilinksystems.embedash?tab=Overview)                                  | ​     | ​ ✔   | ✔​   |
 
 ### Added capabilities
 
