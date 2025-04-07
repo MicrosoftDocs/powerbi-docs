@@ -1,6 +1,6 @@
 ---
-title: "Avoid blank pages when printing paginated reports"
-description: "Guidance for designing paginated reports to avoid blank pages when printed."
+title: "Performance and scalability considerations for paginated reports in Power BI service"
+description: "Guidance for improving perfo and scalability of paginated reports in the service"
 author: nidenyse
 ms.author: nidenyse
 ms.reviewer: 
@@ -13,9 +13,9 @@ ms.date: 04/01/2025
 
 # Performance and scalability considerations for paginated reports in Power BI service
 
-This article summarizes scalability and performance differences between paginated reports in the Power BI service  versus SQL Server/Power BI Reporting Services. The article is intended for users migrating paginated reports from on-premises to the Power BI service. Additionally, it also provides insights on how to optimize the performance of paginated reports in the service.
+This article summarizes scalability and performance differences between paginated reports in the Power BI service  versus SQL Server Reporting Services/Power BI Report Server. The article is intended for users migrating paginated reports from on-premises to the Power BI service. Additionally, it also provides insights on how to optimize the performance of paginated reports in the service.
 
-## Scalability   considerations
+## Scalability considerations
 
 When comparing the scalability of paginated reports in the Power BI service versus on-premises, there are two main considerations: whether the execution environment  is optimized to handle the expressions you are using and the volume of data. These are some of the factors that are crucial in improving the scalability of your paginated reports in the service. 
 
@@ -52,13 +52,12 @@ Even for medium to low-sized data volumes, there are more factors that can impac
 2.	Rendering the report whenever a user clicks on the "View report" button.  
 3.	Retrieving data from various data sources
 
-
 ### Best practices to improve report parameters processing
 
 Report parameters can be backed by datasets with available and default values, which is often the case for multiple parameters. Parameters can also depend on other parameters such as cascading parameters. As a result, parameter queries are executed sequentially. When a report has cascading parameters, each parameterized query runs each time subsequent values are selected.
 
 
-Given that parameter values are usually static and don't change frequently, SQL Server Reporting Services (‘SSRS’) uses this advantage to offer robust support for dataset caches (as explained [here](https://learn.microsoft.com/en-us/sql/reporting-services/report-server/cache-shared-datasets-ssrs?view=sql-server-ver16)), which improves report parameter processing in SSRS. However, Paginated Reports in the service don't support dataset caches. Therefore, users should follow these best practices to improve execution time for parameter queries for paginated reports in the service:
+Given that parameter values are usually static and don't change frequently, SQL Server Reporting Services (‘SSRS’) uses this advantage to offer robust support for dataset caches (as explained [here](https://learn.microsoft.com/en-us/sql/reporting-services/report-server/cache-shared-datasets-ssrs?view=sql-server-ver16) ), which improves report parameter processing in SSRS. However, paginated reports in the service don't support dataset caches. Therefore, users should follow these best practices to improve execution time for parameter queries for paginated reports in the service:
 
 1.	Avoid using parameter queries that run against on-premises data sources accessed via a Power BI Gateway. Instead, use a Power BI semantic model as a cache.
 2.	Reduce the amount of data fetched by parameter queries to ensure efficiency. Fetching 20-30,000 values can be time-consuming and may not be user-friendly in the UI.
