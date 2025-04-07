@@ -85,7 +85,7 @@
       href: report-paginated-or-power-bi.md
     - name: "Data retrieval guidance"
       href: report-paginated-data-retrieval.md
-    - name: "Performance and Scalability Considerations for paginated reports in the service"
+    - name: "Performance and scalability considerations for paginated reports in the service"
       href: report-paginated-performace-scalability-considerations.md
     - name: "Image use guidance"
       href: report-paginated-image.md
