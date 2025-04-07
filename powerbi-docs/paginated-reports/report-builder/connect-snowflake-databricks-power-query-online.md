@@ -122,7 +122,7 @@ Now that you have built your paginated report and publish it to the Power BI ser
    
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc-edit.png" alt-text="Screenshot showing shareable cloud connection location.":::
 
-1. When you locate the name, go to [Manage Connections and Gateways](../../connect-data/service-create-share-cloud-data-sources.md), locate the connection and using context menu Settings option, update the data source credentials.
+1. When you locate the name, go to [Manage Connections and Gateways](../../connect-data/service-create-share-cloud-data-sources.md), locate the connection and using context menu **Settings** option, update the data source credentials.
 
 ## Next steps 
 
