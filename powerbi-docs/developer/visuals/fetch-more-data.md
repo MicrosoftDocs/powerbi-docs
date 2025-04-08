@@ -190,50 +190,73 @@ The visual keeps the data view passed to it so it can access the data without ex
 
 Since the developer can't always know in advance what type of data the visual will display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
 
-To allow the report author to set the count, first define a [formatting object property](./format-pane-example.md) called `dataReductionCustomization` in your *capabilities.json* file:
+To allow the report author to set the count:
 
-```json
- "objects": {
-        "dataReductionCustomization": {
-            "properties": {
-                "rowCount": {
-                    "type": {
-                        "numeric": true
-                    }
-                },
-                "columnCount": {
-                    "type": {
-                        "numeric": true
+1. Define a [formatting object property](./format-pane-example.md) called `dataReductionCustomization` in your *capabilities.json* file:
+
+    ```json
+     "objects": {
+            "dataReductionCustomization": {
+                "properties": {
+                    "rowCount": {
+                        "type": {
+                            "numeric": true
+                        }
+                    },
+                    "columnCount": {
+                        "type": {
+                            "numeric": true
+                        }
                     }
                 }
             }
+        },
+    ```
+
+1. Insert the following code fragment into the formatting settings file:
+
+    ```typescript
+    class DataReductionCardSettings extends FormattingSettingsCard {
+        rowCount = new formattingSettings.NumUpDown({
+            name: "rowCount",
+            displayName: "Row reduction",
+            description: "Show Reduction for all row groups",
+            value: 100,
+        });
+ 
+        columnCount = new formattingSettings.NumUpDown({
+            name: "columnCount",
+            displayName: "Column reduction",
+            description: "Show Reduction for all column groups",
+            value: 10,
+       }); 
+ 
+        name = "dataReductionCustomization";
+        displayName = "Data Reduction";
+        slices = [this.rowCount, this.columnCount];
+    }
+    ```
+
+1. After the `dataViewMappings`, define `dataReductionCustomization` as:
+
+    ```json
+       "dataReductionCustomization": {
+            "matrix": {
+                "rowCount": {
+                    "propertyIdentifier": {
+                        "objectName": "dataReductionCustomization",
+                        "propertyName": "rowCount"
+                    },
+                },
+                "columnCount": {
+                    "propertyIdentifier": {
+                        "objectName": "dataReductionCustomization",
+                        "propertyName": "columnCount"
+                    },
+                }
+            }
         }
-    },
-```
-
-Then, insert the following code fragment into the formatting settings file:
-
-```json
-class DataReductionCardSettings extends FormattingSettingsCard {
-    rowCount = new formattingSettings.NumUpDown({
-        name: "rowCount",
-        displayName: "Row reduction",
-        description: "Show Reduction for all row groups",
-        value: 100,
-    });
- 
-    columnCount = new formattingSettings.NumUpDown({
-        name: "columnCount",
-        displayName: "Column reduction",
-        description: "Show Reduction for all column groups",
-        value: 10,
-    }); 
- 
-    name = "dataReductionCustomization";
-    displayName = "Data Reduction";
-    slices = [this.rowCount, this.columnCount];
-}
-```
+    ```
 
 The data reduction information appears under *visual* in the format pane.
 
