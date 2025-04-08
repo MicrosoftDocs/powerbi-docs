@@ -213,7 +213,7 @@ To allow the report author to set the count, first define a [formatting object p
 
 Then, insert the following code fragment into the formatting settings file:
 
-```json
+```typescript
 class DataReductionCardSettings extends FormattingSettingsCard {
     rowCount = new formattingSettings.NumUpDown({
         name: "rowCount",
@@ -233,6 +233,25 @@ class DataReductionCardSettings extends FormattingSettingsCard {
     displayName = "Data Reduction";
     slices = [this.rowCount, this.columnCount];
 }
+```
+
+```json
+   "dataReductionCustomization": {
+        "matrix": {
+            "rowCount": {
+                "propertyIdentifier": {
+                    "objectName": "dataReductionCustomization",
+                    "propertyName": "rowCount"
+                },
+            },
+            "columnCount": {
+                "propertyIdentifier": {
+                    "objectName": "dataReductionCustomization",
+                    "propertyName": "columnCount"
+                },
+            }
+        }
+    }
 ```
 
 The data reduction information appears under *visual* in the format pane.
