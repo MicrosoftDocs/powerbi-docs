@@ -1,8 +1,9 @@
 ---
-title: "Performance and scalability considerations for paginated reports in Power BI service"
-description: "Guidance for improving perfo and scalability of paginated reports in the service"
+title: "Performance and scalability considerations for paginated reports in Power BI service"
+
+description: "Guidance for improving perfo and scalability of paginated reports in the service"
+
 author: nidenyse
-ms.author: nidenyse
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -13,9 +14,11 @@ ms.date: 04/01/2025
 
 # Performance and scalability considerations for paginated reports in Power BI service
 
-This article summarizes scalability and performance differences between paginated reports in the Power BI service  versus SQL Server Reporting Services/Power BI Report Server. The article is intended for users migrating paginated reports from on-premises to the Power BI service. Additionally, it also provides insights on how to optimize the performance of paginated reports in the service.
+This article summarizes scalability and performance differences between paginated reports in the Power BI service  versus SQL Server Reporting Services/Power BI Report Server. The article is intended for users migrating paginated reports from on-premises to the Power BI service. Additionally, it also provides insights on how to optimize the performance of paginated reports in the service.
 
-## Scalability considerations
+
+## Scalability considerations
+
 
 When comparing the scalability of paginated reports in the Power BI service versus on-premises, there are two main considerations: whether the execution environment  is optimized to handle the expressions you are using and the volume of data. These are some of the factors that are crucial in improving the scalability of your paginated reports in the service. 
 
@@ -23,12 +26,12 @@ When comparing the scalability of paginated reports in the Power BI service vers
 
 A paginated report can run in two different execution environments: the **standard environment** and the **optimized environment**. The primary difference between these environments is that optimized environment can handle higher data volumes compared to the standard execution environment. The expressions used in the report determine the execution environment, and users are unable to modify it through any settings or configurations. The only way to ensure a report runs in an optimized environment is to remove any nonsupported expressions because the optimized environment only supports a specific subset of report expressions.
 
-If your report includes nonsupported expressions, consider removing or updating those expressions to ensure the report runs in an optimized environment. One approach is to move calculations into the dataset query. Additionally, another advantage of using calculated fields in the semantic model data sources is that other reports can also use them. Power Query is another option for performing advanced calculations and data processing operations outside of the paginated report. More information can be found [here](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-builder/connect-snowflake-databricks-power-query-online).
+If your report includes nonsupported expressions, consider removing or updating those expressions to ensure the report runs in an optimized environment. One approach is to move calculations into the dataset query. Additionally, another advantage of using calculated fields in the semantic model data sources is that other reports can also use them. Power Query is another option for performing advanced calculations and data processing operations outside of the paginated report. More information can be found [here](https://learn.microsoft.com/power-bi/paginated-reports/report-builder/connect-snowflake-databricks-power-query-online).
 
 > [!Note]
-> One example of unsupported expression is the usage of calculated fields in the RDL, such as this: `If(Weekday(Fields!SalesDate.Value) > 5, "Relax", "Work")`. Weekday is a function that is not yet optimized. Rather than using a report expression this could be calculated as a part of a SQL query. For SQL Server/ Azure SQL that could be done using the Transact SQL functions [`DATEPART`](https://learn.microsoft.com/en-us/sql/t-sql/functions/datepart-transact-sql?view=azuresqldb-current) and [`IF..ELSE`](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/if-else-transact-sql?view=azuresqldb-current).
+> One example of unsupported expression is the usage of calculated fields in the RDL, such as this: `If(Weekday(Fields!SalesDate.Value) > 5, "Relax", "Work")`. Weekday is a function that is not yet optimized. Rather than using a report expression this could be calculated as a part of a SQL query. For SQL Server/ Azure SQL that could be done using the Transact SQL functions [`DATEPART`](https://learn.microsoft.com/sql/t-sql/functions/datepart-transact-sql?view=azuresqldb-current) and [`IF..ELSE`](https://learn.microsoft.com/sql/t-sql/language-elements/if-else-transact-sql?view=azuresqldb-current).
 
-To check if a report was run in the optimized environment, click on the Diagnostics button in the paginated report and check the 'Execution environment' section. If the report is running in the optimized environment, then 'Optimized' shows 'Yes.' If the report is running in the standard, nonoptimized environment, the Execution environment section shows a list of nonsupported report expressions. More details on the performance metrics displayed on the Diagnostics card can be found [here](https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-diagnostics).
+To check if a report was run in the optimized environment, click on the Diagnostics button in the paginated report and check the 'Execution environment' section. If the report is running in the optimized environment, then 'Optimized' shows 'Yes.' If the report is running in the standard, nonoptimized environment, the Execution environment section shows a list of nonsupported report expressions. More details on the performance metrics displayed on the Diagnostics card can be found [here](https://learn.microsoft.com/power-bi/paginated-reports/paginated-reports-diagnostics).
 
 :::image type="content" source="media/reports-paginated-performance-scalability/Diagnostics-card.png" alt-text="Screenshot of the diagnostics card for paginated reports" border="false":::
 
@@ -57,11 +60,12 @@ Even for medium to low-sized data volumes, there are more factors that can impac
 Report parameters can be backed by datasets with available and default values, which is often the case for multiple parameters. Parameters can also depend on other parameters such as cascading parameters. As a result, parameter queries are executed sequentially. When a report has cascading parameters, each parameterized query runs each time subsequent values are selected.
 
 
-Given that parameter values are usually static and don't change frequently, SQL Server Reporting Services (‘SSRS’) uses this advantage to offer robust support for dataset caches (as explained [here](https://learn.microsoft.com/en-us/sql/reporting-services/report-server/cache-shared-datasets-ssrs?view=sql-server-ver16) ), which improves report parameter processing in SSRS. However, paginated reports in the service don't support dataset caches. Therefore, users should follow these best practices to improve execution time for parameter queries for paginated reports in the service:
+Given that parameter values are usually static and don't change frequently, SQL Server Reporting Services (‘SSRS’) uses this advantage to offer robust support for dataset caches (as explained [here](https://learn.microsoft.com/sql/reporting-services/report-server/cache-shared-datasets-ssrs?view=sql-server-ver16) ), which improves report parameter processing in SSRS. However, paginated reports in the service don't support dataset caches. Therefore, users should follow these best practices to improve execution time for parameter queries for paginated reports in the service:
+
 
 1.	Avoid using parameter queries that run against on-premises data sources accessed via a Power BI Gateway. Instead, use a Power BI semantic model as a cache.
 2.	Reduce the amount of data fetched by parameter queries to ensure efficiency. Fetching 20-30,000 values can be time-consuming and may not be user-friendly in the UI.
-3.	Use the [EnterData data extension](https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-enter-data) for a static set of parameter values in order to embed them in the RDL. Besides providing parameter values, these datasets can also be utilized in your report without running a query.
+3.	Use the [EnterData data extension](https://learn.microsoft.com/power-bi/paginated-reports/paginated-reports-enter-data) for a static set of parameter values in order to embed them in the RDL. Besides providing parameter values, these datasets can also be utilized in your report without running a query.
 
 
 ### Best practices to improve paginated report rendering
@@ -72,15 +76,15 @@ Additionally, avoid using dataset or table/matrix filters, as paginated reports 
 
 ### Best practices for efficient data retrieval
 
-Multi-geo environments, where the report and the data source like a semantic model are in different regions, slow down data retrieval. More guidance for efficient data retrieval for paginated reports can be found [here](https://learn.microsoft.com/en-us/power-bi/guidance/report-paginated-data-retrieval).
+Multi-geo environments, where the report and the data source like a semantic model are in different regions, slow down data retrieval. More guidance for efficient data retrieval for paginated reports can be found [here](https://learn.microsoft.com/power-bi/guidance/report-paginated-data-retrieval).
 
 ## Related content
 
 For more information related to this article, check out the following resources:
 
 - [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
-- [Power BI paginated reports diagnostics](https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-diagnostics)
-- [Paginated reports data retrieval guidance](https://learn.microsoft.com/en-us/power-bi/guidance/report-paginated-data-retrieval)
+- [Power BI paginated reports diagnostics](../paginated-reports/paginated-reports-diagnostics)
+- [Paginated reports data retrieval guidance](../guidance/report-paginated-data-retrieval)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
