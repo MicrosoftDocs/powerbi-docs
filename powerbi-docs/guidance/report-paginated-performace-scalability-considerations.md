@@ -84,7 +84,7 @@ Multi-geo environments, where the report and the data source like a semantic mod
 For more information related to this article, check out the following resources:
 
 - [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)
-- [Power BI paginated reports diagnostics](../paginated-report/paginated-reports-diagnostics.md)
+- [Power BI paginated reports diagnostics](../paginated-reports/paginated-reports-diagnostics.md)
 - [Paginated reports data retrieval guidance](report-paginated-data-retrieval.md)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
