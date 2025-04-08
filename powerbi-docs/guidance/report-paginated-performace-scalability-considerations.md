@@ -65,7 +65,7 @@ Given that parameter values are usually static and don't change frequently, SQL 
 
 
 1.	Avoid using parameter queries that run against on-premises data sources accessed via a Power BI Gateway. Instead, use a Power BI semantic model as a cache.
-2.	Reduce the amount of data fetched by parameter queries to ensure efficiency. Fetching 20-30,000 values can be time-consuming and may not be user-friendly in the UI.
+2.	Reduce the amount of data fetched by parameter queries to ensure efficiency. Fetching more than 1,000 values can be time-consuming and may not be user-friendly in the UI.
 3.	Use the [EnterData data extension](../paginated-reports/paginated-reports-enter-data.md) for a static set of parameter values in order to embed them in the RDL. Besides providing parameter values, these datasets can also be utilized in your report without running a query.
 
 
