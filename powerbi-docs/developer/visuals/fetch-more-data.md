@@ -237,7 +237,7 @@ To allow the report author to set the count:
     }
     ```
 
-1. After the `dataViewMappings`, define the default values for `dataReductionCustomization`.
+1. After the `dataViewMappings`, define `dataReductionCustomization` as:
 
     ```json
        "dataReductionCustomization": {
