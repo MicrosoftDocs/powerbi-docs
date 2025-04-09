@@ -46,6 +46,8 @@ The following table describes the data that's captured in the diagnostics dialog
 | Start Time in UTC    | Start time in UTC indicates the duration of a report process. It can be used in conjunction with the rendering ID (OperationName) start and end time in the [Microsoft Fabric Capacity Metrics app.](/fabric/enterprise/metrics-app). |
 | Render Format        | JSONRPL, PDF, XLSX  |
 | Content Size         | Size of rendered reports in kilobytes (kb). |
+|Execution environment| The environment in which the report run. |
+|Non-optimized expressions| A list of unoptimized report expressions |
 
 ## Considerations and limitations
 
