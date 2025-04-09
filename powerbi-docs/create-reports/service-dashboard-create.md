@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-removed
-ms.date: 03/17/2025
+ms.date: 04/09/2025
 #customer intent: As a Power BI user I want to learn how to create dashboards with visulizations.
 ---
 # Create a Power BI dashboard from a report
@@ -51,11 +51,6 @@ You can use the following steps and the [Procurement Analysis sample](sample-pro
 
     ![Screenshot of the Pin to dashboard window.](media/service-dashboard-create/power-bi-pin-tile.png)
 
-1. In some cases, the item you're pinning might have a *theme* already applied. For example, visuals pinned from an Excel workbook. If so, select the theme to apply to the tile:
-
-    - **Use destination theme**: The theme of the dashboard.
-    - **Keep current theme**: The theme of the report.
-
 1. When you select **Pin**, Power BI creates the new dashboard in the current workspace. After the **Pinned to dashboard** message appears, select **Go to dashboard**. If you're prompted to save the report, select **Save**.
 
     ![Screenshot of a success message, highlighting Go to dashboard.](media/service-dashboard-create/power-bi-pin-success.png)
@@ -63,7 +58,12 @@ You can use the following steps and the [Procurement Analysis sample](sample-pro
     Power BI opens the new dashboard, which has one tile: the visualization you just pinned.
 
    ![Screenshot of a dashboard with one tile.](media/service-dashboard-create/power-bi-pinned.png)
-1. Select the tile to return to the report. Pin a few more tiles to the new dashboard. When the **Pin to dashboard** window appears, select **Existing dashboard**.  
+
+1. Select the tile to return to the report.
+
+     ![Screenshot of the Select the title element.](media/service-dashboard-create/select_the_title.png)
+
+1. Pin a few more tiles to the new dashboard. When the **Pin to dashboard** window appears, select **Existing dashboard**.  
 
    ![Screenshot of the Pin to dashboard window, highlighting Existing dashboard.](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
