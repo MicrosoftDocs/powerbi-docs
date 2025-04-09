@@ -7,7 +7,7 @@ ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/09/2024
+ms.date: 04/09/2025
 ---
 
 # Embedded analytics solution accelerators from Microsoft partners
@@ -133,7 +133,7 @@ The following tables compare features of the different accelerators from our par
 | **The Reporting Hub**​ <br> [Reporting Hub](https://thereportinghub.com/) | ✔​       | ✔​            | ✔​                        | ​                   |
 | **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedFAST)      |         |              ​ | ​                         | ✔​                  |
 | **Carlo Solutions**​ <br>[Entelexos](https://www.entelexos.com/)          | ✔​       | ✔​            | ​                         | ​                   |
-| **iLink Digital​** <br>[EmbeDash](https://embedash.com/)                  | ✔​       | ​             | ​ ✔                       | ​   ✔               |
+| **iLink Digital​** <br>[EmbeDash](https://embedash.com/)                  | ✔​       | ​             | ​ ✔                       | ​                   |
 
 ### Acquisition and billing options
 
@@ -146,12 +146,12 @@ The following tables compare features of the different accelerators from our par
 
 ### Added capabilities
 
-| Partner                               | Report scheduling​ & distribution | Tenant specific white labeling | Multi-language portal support​ | Edit semantic model​ | Unrestricted data download​ | Paginated table builder | Tenant specific authorization | Tenant billing and payment processing |
+| Partner                               | Report scheduling​ & distribution | Tenant specific white labeling | Multi-language portal support​ | Edit semantic model​ | Unrestricted data download​ | Paginated table builder | Tenant specific authentication | Tenant billing and payment processing |
 |---------------------------------------|:--------------------------------:|:------------------------------:|:-----------------------------:|:-------------------:|:--------------------------:|:-----------------------:|:-----------------------------:|:-------------------------------------:|
 | **The Reporting Hub**​ <br> [Reporting Hub](https://thereportinghub.com/)​ | ✔  |​ ✔ | ✔​  | ​   |    |   | ✔ | ✔ |
 | **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedFAST)​      | ✔  | ✔ |  ​  |​ ✔  | ✔​  |   |   |   |
 | **Carlo Solutions**​ <br> [Entelexos](https://www.entelexos.com/)​         | ​   |​ ✔ | ​   | ​    | ✔  | ✔ |   |   |
-| **iLink Digital​** <br> [EmbeDash](https://embedash.com/)                 | ​✔  | ✔ | ✔ | ​    | ✔​  | ✔ | ✔ |   |
+| **iLink Digital​** <br> [EmbeDash](https://embedash.com/)                 | ​✔  | ✔ |   | ​    |   ​  |   | ✔ |   |
 
 ## Related content
 
