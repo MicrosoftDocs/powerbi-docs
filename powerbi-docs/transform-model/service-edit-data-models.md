@@ -15,7 +15,7 @@ LocalizationGroup: Transform and shape data
 
 # Edit data models in the Power BI service (preview)
 
-Power BI allows users to modify existing data models in the Power BI service using actions such as editing relationships, creating DAX measures and managing RLS. In this experience, users can work and collaborate simultaneously on the same data model.
+Power BI lets users to modify existing data models in the Power BI service using actions such as editing relationships, creating DAX measures and managing RLS. In this experience, users can work and collaborate simultaneously on the same data model. 
 
 ## Enable the preview feature
 
