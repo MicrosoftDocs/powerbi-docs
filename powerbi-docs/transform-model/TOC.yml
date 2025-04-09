@@ -36,7 +36,7 @@
     - name: "Quick measure suggestions"
       href: quick-measure-suggestions.md
     - name: "Use Copilot to write and explain DAX queries"
-      href: ../../dax/dax-copilot.md
+      href: https://learn.microsoft.com/en-us/dax/dax-copilot
     - name: "Use Copilot to create measure descriptions"
       href: desktop-measure-copilot-descriptions.md
     - name: "Work with Model explorer"
