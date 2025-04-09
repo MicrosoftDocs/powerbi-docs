@@ -49,7 +49,7 @@ You can use the following steps and the [Procurement Analysis sample](sample-pro
 
 1. In this case, we select the option for **New dashboard** and enter a name.
 
-    ![Screenshot of the Pin to dashboard window.](media/service-dashboard-create/power-bi-pin-tile.png)
+    ![Screenshot of the Pin to dashboard window.](media/service-dashboard-create/power-bi-pinned.png)
 
 1. When you select **Pin**, Power BI creates the new dashboard in the current workspace. After the **Pinned to dashboard** message appears, select **Go to dashboard**. If you're prompted to save the report, select **Save**.
 
