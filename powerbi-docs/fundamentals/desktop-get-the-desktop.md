@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 02/21/2025
+ms.date: 04/09/2025
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -65,7 +65,7 @@ To download the Power BI Desktop executable from the Download Center, select **D
   :::image type="content" source="media/desktop-get-the-desktop/download-desktop-exe.png" alt-text="Screenshot of Download Center showing the 64-bit Power BI Desktop download selected.":::
 
 > [!IMPORTANT]
-> The 32-bit version of Power BI Desktop will no longer be supported after June 30, 2025. Upgrade to the 64-bit version of Power BI Desktop to continue receiving updates and support.
+> The 32-bit version of Power BI Desktop will no longer be supported after July 31, 2025. Upgrade to the 64-bit version of Power BI Desktop to continue receiving updates and support.
 
 
 ## Install Power BI Desktop after download
@@ -87,9 +87,7 @@ When you launch Power BI Desktop, a welcome screen appears.
 
 :::image type="content" source="media/desktop-get-the-desktop/desktop-splash-screen.png" alt-text="Screenshot of Power BI Desktop installation showing the welcome screen.":::
 
-When you launch Power BI Desktop for the first time, if the installation isn't an upgrade, you're prompted to fill out a form or sign in to the Power BI service before you can continue.
-
-After that, you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
+Now you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
 
 ## Minimum requirements
 
