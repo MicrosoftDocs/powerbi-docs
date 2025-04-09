@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 04/09/2025
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -383,9 +383,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 * The following Power BI visuals aren't supported. When you subscribe to a report containing these visuals, they display an error symbol. 
     - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that are [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
     - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
-    - [R visuals](../visuals/service-r-visuals.md)
     - [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
-    - [Python visuals](../connect-data/desktop-python-visuals.md)
     - [Power Automate visuals](../create-reports/power-bi-automate-visual.md) 
     - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - [Visio visuals](https://appsource.microsoft.com//product/office/WA104381132?corrid=090b6a91-07e7-aa81-d025-7cb56f4f6293&src=office&exp=ubp8)
