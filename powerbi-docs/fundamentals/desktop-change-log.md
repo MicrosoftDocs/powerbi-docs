@@ -7,7 +7,7 @@ ms.reviewer: kfollis, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/03/2025
+ms.date: 04/09/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,17 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+
+
+## March 2025 QFE 2
+
+*Version 2.141.1451.0, Released: April 4, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where **Edit in Desktop** does not work for Microsoft Store installations of Power BI Desktop.
 
 
 ## March 2025 QFE 1
