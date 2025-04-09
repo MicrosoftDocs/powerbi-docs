@@ -65,8 +65,7 @@ Use the search bar to search for specific metrics or metric sets. You can also u
 - In Power BI Desktop, connecting to a metric loads the entire source semantic model of the underlying measure.
 - There's currently no way for viewers to request access to a specific metric.
 - Similar dimensions across semantic models for metrics aren't inherently recognized as shared dimensions in report creation.
-- Metric-specific APIs aren't public.
-- There's no GIT integration yet.
+
 
 ## Related content
 
