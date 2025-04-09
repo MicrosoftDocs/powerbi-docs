@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 02/21/2025
+ms.date: 04/09/2025
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop

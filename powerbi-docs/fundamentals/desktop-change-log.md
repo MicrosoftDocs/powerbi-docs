@@ -26,7 +26,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 
 Bug fixes/improvements:
 
-* Addressed the issue where **Edit in Desktop** does not work for Microsoft Store installations of Power BI Desktop.
+* Addressed the issue where **Edit in Desktop** doesn't work for Microsoft Store installations of Power BI Desktop.
 
 
 ## March 2025 QFE 1
