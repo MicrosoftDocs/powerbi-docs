@@ -16,7 +16,7 @@ ms.date: 06/19/2023
 
 In this article, you learn how to view, read, and use the diagnostics feature of a paginated report rendered in the Power BI service. Diagnostics data provides report viewers with the ability to read displayed data on performance metrics and rendering. 
 
-:::image type="content" source="media/paginated-reports-diagnostics/paginated-diagnostics-report.png" alt-text="Screenshot of the dialog box for diagnostics."::: 
+:::image type="content" source="media/paginated-reports-diagnostics/diagnostics-card.png" alt-text="Screenshot of the dialog box for diagnostics."::: 
 
 Any user with at least a Contributor role in a workspace can use this feature. Read more about [workspace roles](../collaborate-share/service-roles-new-workspaces.md).
 

@@ -319,6 +319,12 @@ In general, the process for subscribing to paginated reports is the same as [sub
 
 Paginated reports allow you to specify the view of the report people receive in the subscription by setting the parameters in the subscription pane.  
 
+> [!NOTE]
+>
+> When using query bound parameters subscription owners should make sure that parameter values are valid, else the subscription will fail and the subscription owner will get an email stating "rsParametersNotSpecified" error.
+>
+> Tip: Users may choose to use "Get values from a query" when they define Available values in Report parameters in Power BI Report Builder instead of specifying values.
+
 - Subscriptions can be sent with either the currently selected or default parameters for your report. You may set different parameter values for each subscription you create for your report. 
 
 ### Update parameters for an existing paginated report subscription
