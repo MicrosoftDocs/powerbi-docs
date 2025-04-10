@@ -10,13 +10,13 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-removed
 ms.date: 04/09/2025
-#customer intent: As a Power BI user I want to learn how to create dashboards with visulizations.
+#customer intent: As a Power BI user I want to learn how to create dashboards with visualizations.
 ---
 # Create a Power BI dashboard from a report
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a semantic model, or by duplicating an existing dashboard. In this article, you create a quick and easy dashboard that pins visualizations from an existing report.
+You read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a semantic model, or by duplicating an existing dashboard. In this article, you create a quick and easy dashboard that pins visualizations from an existing report.
 
 After you complete this article, you'll understand:
 
@@ -44,18 +44,18 @@ You can use the following steps and the [Procurement Analysis sample](sample-pro
     ![Screenshot of a visualization, highlighting the pin icon.](media/service-dashboard-create/power-bi-hover-new.png)
 1. Select whether to pin to an existing dashboard or new dashboard.
 
-   - **Existing dashboard**: Select the name of the dashboard from the dropdown. Dashboards that have been shared with you won't appear in the dropdown.
+   - **Existing dashboard**: Select the name of the dashboard from the dropdown. Dashboards that are shared with you don't appear in the dropdown.
    - **New dashboard**: Enter the name of the new dashboard.
 
-1. In this case, we select the option for **New dashboard** and enter a name.
+1. In this case, we select the option for **New dashboard** and enter a name. For this example the default "Total Invoice by Country/Region" name is used.
 
-    ![Screenshot of the Pin to dashboard window.](media/service-dashboard-create/power-bi-pinned.png)
+    ![Screenshot of the Pin to dashboard window.](media/service-dashboard-create/power-bi-pin-title.png)
 
 1. When you select **Pin**, Power BI creates the new dashboard in the current workspace. After the **Pinned to dashboard** message appears, select **Go to dashboard**. If you're prompted to save the report, select **Save**.
 
     ![Screenshot of a success message, highlighting Go to dashboard.](media/service-dashboard-create/power-bi-pin-success.png)
 
-    Power BI opens the new dashboard, which has one tile: the visualization you just pinned.
+    Power BI opens the new dashboard, which has one tile: the visualization you pinned.
 
    ![Screenshot of a dashboard with one tile.](media/service-dashboard-create/power-bi-pinned.png)
 
@@ -81,7 +81,7 @@ Some report formatting options or themes aren't applied to visuals when you pin 
 - For card visuals, the text used for the value is shown in dashboards using the 'DIN' font family, with black text. You can change the text color for all the tiles on a dashboard by [creating a custom dashboard theme](service-dashboard-themes.md).
 - Conditional formatting isn't applied.
 - Button visuals that trigger bookmarks or clear or apply filters when you select them have no action in a dashboard tile. These actions only make sense within the context of a report.
-- Visuals will adjust their size to fit the size of the tile. This can result in differences in layout as if the visual is resized on the report.
+- Visuals adjust their size to fit the size of the tile. This can result in differences in layout as if the visual is resized on the report.
 - Because some visualizations use background images, pinning might not work if the background image is too large. Try reducing the image size or using image compression.
 
 ## Related content
