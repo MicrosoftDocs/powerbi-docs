@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 04/09/2025
+ms.date: 04/10/2025
 LocalizationGroup: Dashboards
 ---
 
@@ -40,11 +40,11 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 ## View a usage metrics report
 
 1. Start in the workspace that contains the dashboard or report.
-1. In the workspace content list, locate the report and hover over it to reveal the icons next to the report name. Select the ellipses **(...)** to open the **More options** menu, then select **View usage metrics report**.
+1. In the workspace content list, locate the report and hover over it to reveal the icons next to the report name. Select the ellipsis **(...)** to open the **More options** menu, then select **View usage metrics report**.
 
     ![Screenshot of steps to view Usage Metrics.](media/service-modern-usage-metrics/power-bi-modern-view-usage-metrics.png)
 
-    You can also open the report, then, on the command bar, select **More options (...)** > **Open usage metrics**.
+    Or, from the command bar in the open report, select **More options (...) > Open usage metrics**.
 
     :::image type="content" source="media/service-modern-usage-metrics/service-more-options-open-usage-metrics.png" alt-text="Screenshot of selecting More options, Open usage metrics.":::
 
@@ -54,21 +54,19 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 
 1. To see the results, select **View usage metrics**.
 
-1. Power BI prompts you to ask if you want to **Try the new usage report**. Select **Got it**.
+1. Power BI prompts you to ask if you want to **Try the new usage report**. Select **Got it** to close the notification.
 
     :::image type="content" source="media/service-usage-metrics/try-new-usage-report.png" alt-text="Screenshot showing Try the new usage report.":::
 
-1. To display the improved usage metrics report, in the upper right corner, toggle the switch to **New usage report on**.
+1. To display the improved usage metrics report, toggle the switch to **New usage report on**.
 
     :::image type="content" source="media/service-usage-metrics/toggle-new-usage-report-on.png" alt-text="Screenshot showing toggling the new usage report on.":::
 
-1. If you turn on the new usage report, see the article [Monitor usage metrics in the workspaces (preview)](service-modern-usage-metrics.md) to continue.
-
-    If you stay with the current usage report, continue reading this article.
+1. If you turn on the new usage report, see the article [Monitor usage metrics in the workspaces (preview)](service-modern-usage-metrics.md) to continue. If you stay with the current usage report, keep reading this article.
 
     Usage metrics are a powerful ally as you work to deploy and maintain Power BI dashboards and reports. Wondering which pages of your report are most useful, and which ones you should phase out? Slice by **Report page** to find out. Wondering if you should build a mobile layout for your dashboard? Slice by **Platforms** to discover how many users are accessing your content via the mobile apps vs. via web browser.
 
-1. Optionally, hover over a visualization and select the pin icon to add the visualization to a dashboard. Or, from the top menu bar, select **More options (...)** > **Pin to a dashboard** to add the entire page to a dashboard. From the dashboard, you can monitor the usage metrics more easily or share them with others.
+1. Optionally, hover over a visualization and select the pin icon to add the visualization to a dashboard. Or, from the top menu bar, select **More options (...) > Pin to a dashboard** to add the entire page to a dashboard. From the dashboard, you can monitor the usage metrics more easily or share them with others.
 
     > [!NOTE]
     > If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
@@ -77,13 +75,13 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 
 ![Screenshot showing Dashboard usage metrics report.](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
-### Report Usage Metrics
+### Report Usage Metrics report
 
 ![Screenshot showing Report usage metrics report.](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
 ## About the usage metrics report
 
-When you select **View usage metrics report**, Power BI generates a prebuilt report with usage metrics for that content for the last 90 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your users received access, whether they accessed via the web or mobile app, and so on. As your dashboards and reports evolve, so too will the usage metrics report, which updates every day with new data.  
+When you select **View usage metrics report**, Power BI generates a prebuilt report with usage metrics for that content during the last 90 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your users received access, whether they accessed via the web or mobile app, and so on. As your dashboards and reports evolve, so too will the usage metrics report, which updates with new data daily.  
 
 Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**, or other content lists. They can't be added to an app. If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
 
@@ -117,8 +115,7 @@ You can save a copy of the report to convert the usage metrics report to a regul
 
 When you create a copy of the read-only, prebuilt usage report, Power BI creates an editable copy of the report. At first glance, it looks the same. However, you can now open the report in Editing view, add new visualizations, filters, and pages, modify or delete existing visualizations, and so on. Power BI saves the new report in the current workspace.
 
-1. From the prebuilt usage metrics report, select **File > Save As**. Power BI creates an editable Power BI report, saved in the current workspace.
-    ![Screenshot showing Save as.](media/service-usage-metrics/power-bi-save-as.png)
+1. From the prebuilt usage metrics report, select **File > Save a copy**. Power BI creates an editable Power BI report, saved in the current workspace.
 
 2. Open the report in Editing view and [interact with it as you would with any other Power BI report](../create-reports/service-interact-with-a-report-in-editing-view.md). For example, add new pages and build visualizations, add filters, format the fonts and colors, and so on.
 
@@ -133,13 +130,13 @@ You can use Power BI Desktop to build custom usage metrics reports based on the 
 
 ## See *all* workspace usage metrics
 
-To see the metrics for all the dashboards or for all the reports in the workspace, you have to remove a filter. By default, the report is filtered to display metrics for only the dashboard or report that you used to create it.
+To see the metrics for all the dashboards or for all the reports in the workspace, you need to remove a filter from the report. By default, the report is filtered to display metrics for only the dashboard or report that you used to create it.
 
 1. In the usage metrics report, select **Edit** to open the new editable report in Editing view.
 
     ![Screenshot showing Edit button highlighed in open report.](media/service-usage-metrics/power-bi-editing-view.png)
 
-2. In the Filters pane, locate the **Filters on all pages** bucket and remove the filter by selecting the eraser next to **ReportGuid**.
+2. In the Filters pane, locate the **Filters on all pages** bucket and remove the filter by selecting the eraser icon for **ReportGuid**.
 
     ![Screenshot showing Remove the filter.](media/service-usage-metrics/power-bi-usage-report-clear-filter.png)
 
@@ -216,6 +213,6 @@ The usage metrics report only includes reports (or dashboards) that have been ac
 
 ## Related content
 
-- [Administering Power BI in the admin portal](../admin/service-admin-portal.md)
+- [What is the admin portal?](../admin/service-admin-portal.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
