@@ -103,7 +103,7 @@ The Copilot pane also allows you to ask specific questions about your report con
 ## Limitations and considerations
 
 - For the Copilot button to be available in a report, the report needs to be in:
-    - An eligible workspace: the workspace needs to have a paid dedicated capacity. The workspace needs to be a paid Premium or F64 or higher.
+    - An eligible workspace: the workspace needs to have a paid dedicated Fabric capacity.
     - A tenant where the admin setting is enabled.
 - Copilot will only consider visuals with less than 30K rows of data.
 - Copilot summaries may not work accurately on table/matrix visuals with more than 500 rows.
