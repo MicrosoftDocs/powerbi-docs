@@ -177,7 +177,7 @@ It's important to understand that differences can occur when comparing usage met
 
 The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST APIs](/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate. Also note that the Admin APIs give you the "current state" of the Power BI deployment and only consider what exists at the time of the request. The usage metrics report has 90 days of data, and the "total count" represents unique reports viewed over the past 90 days. If you delete a report after it's viewed, it won't be counted by the Admin APIs, but will be counted in the historical data feeding the usage report.
 
-### Report usage metrics aren't supported with Private Links
+### Report usage metrics aren't supported with private links
 
 If your organization is using [private links](/fabric/security/security-private-links-overview), report usage metrics won't contain any data. There's currently a limitation when transferring client information over private links.
 
