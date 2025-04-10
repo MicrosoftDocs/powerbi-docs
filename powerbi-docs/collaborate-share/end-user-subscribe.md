@@ -321,7 +321,7 @@ Paginated reports allow you to specify the view of the report people receive in 
 
 > [!NOTE]
 >
-> When using query bound parameters subscription owners should make sure that parameter values are valid, else the subscription will fail.
+> When using query bound parameters subscription owners should make sure that parameter values are valid, else the subscription will fail and the subscription owner will get an email stating "rsParametersNotSpecified" error.
 >
 > Tip: Users may choose to use "Get values from a query" when they define Available values in Report parameters in Power BI Report Builder instead of specifying values.
 
