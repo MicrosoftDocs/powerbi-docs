@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 04/09/2025
+ms.date: 04/11/2025
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -92,9 +92,6 @@ Now you can begin creating data models or reports, and share them with others on
 ## Minimum requirements
 
 The following list provides the minimum requirements to run Power BI Desktop:
-
-> [!IMPORTANT]
-> Power BI Desktop is no longer supported on Windows 8.1.
 
 * Windows 10 or Windows Server 2016 or later.
 * .NET 4.7.2 or later.
