@@ -140,7 +140,7 @@ Semantic model version history is currently in preview. Keep the following in mi
 The semantic model must have [large semantic model storage format enabled](../enterprise/service-premium-large-models.md). Semantic models are automatically converted to large semantic model storage format the first time they're opened in Editing mode in the web or when opening a [Direct Lake model for live editing in Desktop](/fabric/get-started/direct-lake-power-bi-desktop#live-edit-a-semantic-model-in-direct-lake-mode). If a semantic model with versions captured in version history has the large semantic model storage format disabled in the model settings, all version history for this model will be deleted. A warning in the semantic model settings will notify you of this impact before you make the change:
   :::image type="content" source="media/service-semantic-model-version-history/service-semantic-model-version-history-12.png" alt-text="Screenshot showing a warning about deleting version history.":::
 
-A semantic model may fail to convert to the large semantic model storage format if it exceeds [memory limitations](go.microsoft.com/fwlink/?linkid=2312707). To resolve these memory limitations, you can either host the model on a Premium capacity SKU that supports the necessary memory size for the model, or reduce the size of the model.
+A semantic model may fail to convert to the large semantic model storage format if it exceeds [memory limitations](../enterprise/service-premium-large-models.md). To resolve these memory limitations, you can either host the model on a Premium capacity SKU that supports the necessary memory size for the model, or reduce the size of the model.
 
 ## Related content
 
