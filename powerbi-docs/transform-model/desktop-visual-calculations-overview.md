@@ -155,7 +155,7 @@ The positive integer value identifies the target column starting from the top (t
 
 For example, consider a visual calculation with these hierarchy levels: Year, Quarter, Month and Day. The table below shows how the calculation will be partitioned at each level depending on the value of :::no-loc text="Reset"::::
 
-||:::no-loc text="Reset"::: = 1 or Year|:::no-loc text="Reset"::: = 2 or Quarter|:::no-loc text="Reset"::: = 3 or Month|:::no-loc text="Reset"::: = 4 or Day|
+|Level / value |:::no-loc text="Reset"::: = 1 or Year|:::no-loc text="Reset"::: = 2 or Quarter|:::no-loc text="Reset"::: = 3 or Month|:::no-loc text="Reset"::: = 4 or Day|
 |--|--|--|--|--|
 |Day level|Year|Quarter and Year|Month, Quarter and Year|Day, Month, Quarter and Year|
 |Month level|Year|Quarter and Year|Month, Quarter and Year|Month, Quarter and Year|
@@ -168,7 +168,7 @@ Given a negative integer value –X, at each level the calculation is partitione
 Valid values for this mode are between -1 and -N+1 (where N is the number of columns in the hierarchy), and any lower values are trimmed up.
 Again, consider the visual calculation described earlier. The table below shows how the calculation will be partitioned at each level depending on the value of Reset:
 
-||:::no-loc text="Reset"::: = -1|:::no-loc text="Reset"::: = -2|:::no-loc text="Reset"::: = -3|
+|Level / value |:::no-loc text="Reset"::: = -1|:::no-loc text="Reset"::: = -2|:::no-loc text="Reset"::: = -3|
 |--|--|--|--|
 |Day level|Month, Quarter and Year|Quarter and Year|Year|
 |Month level|Quarter and Year|Year|None|
