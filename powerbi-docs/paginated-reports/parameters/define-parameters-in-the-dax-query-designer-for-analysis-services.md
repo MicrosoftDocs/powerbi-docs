@@ -1,15 +1,13 @@
 ---
 title: "Define parameters in DAX for Analysis Services data source of a Power BI paginated report | Microsoft Docs"
 description: In this article, you learn how to define query parameters in the DAX query designer for Analysis Services.
-ms.date: 01/23/2023
+ms.date: 04/11/2025
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
-ms.reviewer: saurkumar
+author: nidenyse
+ms.author: dniwenshuti
+ms.reviewer:
 ---
 # Define parameters in DAX for Analysis Services data source of a Power BI paginated report
 
