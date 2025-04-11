@@ -291,6 +291,8 @@ There are still many functional gaps between the model view in Power BI desktop 
 * External tools integration
 * When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that semantic model.
 
+Editing on the web isn't available in collaborative workspaces if converting the model to [large semantic model storage format fails](https://go.microsoft.com/fwlink/?linkid=2309615). In this case you can still use Viewing mode to view but not edit the model.
+
 ### Semantic models edited with external tools
 
 Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected behavior when editing your semantic model in the web if the write operation is not supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring).
