@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 1/16/2025
+ms.date: 4/10/2025
 LocalizationGroup: Connect to data
 ---
 
@@ -31,7 +31,7 @@ The following sections provide an alphabetical table of which R packages are sup
 ### For reports in Premium/Fabric backed workspaces
 * Current R runtime: R 4.3.3
 
-## R packages that are supported in Power BI (Premium/Fabric backed workspaces)
+## R packages that are supported in Power BI (Premium/Fabric backed workspaces and Pro/PPU)
 
 The following packages are supported.[Download] (https://cran.r-project.org/): 
 
@@ -1177,7 +1177,7 @@ The following packages are supported.[Download] (https://cran.r-project.org/):
 | tools (Built-in)      | 4.3.3       |
 | utils (Built-in)      | 4.3.3       |
 
-## R packages that are supported in Power BI (non-Premium and non-Fabric backed workspaces) and Sov. Clouds
+## R packages that are supported in Power BI (non-Fabric backed workspaces and Sov. Clouds)
 
 The following table shows which packages are supported in the Power BI service.
 
@@ -2184,7 +2184,7 @@ The following table shows which packages aren't supported in the Power BI servic
 - R visuals aren't supported with Service Principal Profiles for App Owns Data.
 - The R visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb.
 - R visuals with HTML and XML packages fail to render due to Out Of Memory (OOM). Migrate the visual with the [PbiViz tool](../developer/visuals/develop-power-bi-visuals.md#power-bi-visual-packages).The visual must render. 
- 
+- Publish to web isn't supported. 
 
 
 ## Related content
