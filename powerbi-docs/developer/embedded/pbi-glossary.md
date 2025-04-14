@@ -647,4 +647,4 @@ The axis along the side, the vertical axis.
 
 ## Related content
 
-- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Basics of the Power BI service](../../fundamentals/service-basic-concepts.md)

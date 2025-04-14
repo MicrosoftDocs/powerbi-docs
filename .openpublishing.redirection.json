@@ -4517,7 +4517,7 @@
         {
             "source_path": "powerbi-docs/service-basic-concepts.md",
             "redirect_url": "/power-bi/fundamentals/service-basic-concepts",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-features-license-type.md",
