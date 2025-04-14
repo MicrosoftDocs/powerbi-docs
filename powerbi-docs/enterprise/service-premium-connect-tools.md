@@ -189,6 +189,8 @@ Users with Build semantic model permissions are equivalent to Analysis Services 
 
 Operations that require Analysis Services server admin permissions (rather than database admin) in general are not supported.
 
+To learn more, see [Semantic model permissions](/power-bi/connect-data/service-datasets-permissions) and [Roles in workspaces](/power-bi/collaborate-share/service-roles-new-workspaces)
+
 ### Impersonation
 
 User impersonation by using the [EffectiveUserName connection string property](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth)  is supported when connecting to Premium workspace semantic models. The account specified in EffectiveUserName must be in the tenant's Microsoft Entra ID and must have both **Read** and **Build** permissions for the semantic model being connected to. If the account doesn't have both Read and Build permissions, Power BI can't impersonate the user account. The connection will fail, and an error is returned.
