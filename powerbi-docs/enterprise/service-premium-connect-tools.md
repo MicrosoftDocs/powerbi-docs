@@ -230,7 +230,7 @@ To learn more, see [Automate Premium workspace and semantic model tasks with ser
 
 ### Semantic Model discovery
 
-When the tenant-level setting **Block republish and disable package refresh** is enabled, only the semantic model creators can discover their datasets using XMLA endpoint. If a user is not the creator of a semantic model, then they are equivalent to an Analysis Services database reader, even when they are an **Admin**, **Member** or **Contributor** on the workspace.
+When the tenant-level setting **Block republish and disable package refresh** is enabled, a user can discover only those semantic models using the XMLA Endpoint for which they are the owner. If a user is not the owner of a semantic model, then they are equivalent to an Analysis Services database reader, even when they are an **Admin**, **Member** or **Contributor** on the workspace.
 
 ## Deploy model projects from Visual Studio (SSDT)
 
