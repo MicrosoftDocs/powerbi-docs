@@ -22,7 +22,7 @@ A tile is a snapshot of your data, pinned to a dashboard by a *designer*. *Desig
 
 Besides tiles pinned from reports, *designers* can add standalone tiles directly on the dashboard using **Add tile**. Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
-Need help with understanding the building blocks that make up Power BI? See [Basic concepts for the Power BI service business user](end-user-basic-concepts.md).
+Need help with understanding the building blocks that make up Power BI? See [Basics of the Power BI service](../fundamentals/service-basic-concepts.md).
 
 ## Interacting with tiles on a dashboard
 
@@ -67,4 +67,4 @@ When you select a tile, what happens next depends on how the tile was created an
 ## Related content
 
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
-- [Basic concepts for the Power BI service business user](end-user-basic-concepts.md)
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)

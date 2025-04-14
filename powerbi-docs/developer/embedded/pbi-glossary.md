@@ -13,7 +13,7 @@ ms.date: 01/09/2024
 
 # Glossary for Power BI developers
 
-Power BI may introduce terminology that is unfamiliar or confusing. This glossary is a great place to look up terminology, you might even want to keep it bookmarked. Other great resources for learning about the building blocks that make up Power BI are [Power BI service basic Concepts](../../consumer/end-user-basic-concepts.md) and [Basic concepts for designers](../../fundamentals/service-basic-concepts.md). These articles give a high-level overview of the Power BI *pieces* and how they're connected.
+Power BI may introduce terminology that is unfamiliar or confusing. This glossary is a great place to look up terminology, you might even want to keep it bookmarked. Another great resource for learning about the building blocks that make up Power BI is the [Basics of the Power BI service](../../fundamentals/service-basic-concepts.md) article, which gives a high-level overview of the Power BI *pieces* and how they're connected.
 
 This glossary is a community effort.  Don't see a word here? Ask us to add it (you can use the documentation feedback button at the bottom of this article).
 
@@ -152,7 +152,7 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 
 ### Dashboard
 
-In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](../../consumer/end-user-basic-concepts.md#dashboards).
+In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [dashboards for the Power BI service](../../consumer/end-user-dashboards.md).
 
 ### Data connector
 
@@ -647,5 +647,4 @@ The axis along the side, the vertical axis.
 
 ## Related content
 
-* [Basic concepts for Power BI service consumer](../../consumer/end-user-basic-concepts.md)
-* [Basic concepts for designers](../../fundamentals/service-basic-concepts.md)
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)

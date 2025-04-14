@@ -63,5 +63,5 @@ When you set an app as a favorite, it automatically favorites all the reports an
 
 ## Related content
 
-- [Basic concepts for the Power BI service business user](end-user-basic-concepts.md)
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 - More questions? Ask the [Power BI Community](https://community.powerbi.com/).
