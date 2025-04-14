@@ -159,8 +159,6 @@ Keep in mind the following restrictions when using large semantic models:
 
 * **Push semantic models**: Push semantic models don't support the large semantic model storage format.
 
-* **Pro isn't supported** - Large semantic models aren't supported in Pro workspaces. If a workspace is migrated from Premium to Pro, any semantic models with the *large semantic model storage format* setting, will fail to load.
-
 * You can't use REST APIs to change the settings of a workspace to allow new semantic models to use the large semantic model storage format by default.
 
 ## Region availability
