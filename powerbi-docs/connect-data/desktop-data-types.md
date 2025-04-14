@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
 ms.date: 02/26/2025
+ms.custom: fabric-cat
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI user, I want to understand the different data types available in Power BI Desktop so that I can properly format and analyze my data.
 ---
@@ -127,7 +128,7 @@ In the preceding example, the Power BI engine loads the first row of data, creat
 
 For the fourth row, the engine compares the value against the names in the dictionary and finds the name. Since the engine is case insensitive, "TAINA HASU" and "Taina Hasu" are the same. The engine doesn't add a new name to the dictionary, but refers to the existing name. The same process happens for the remaining rows.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Because the engine that stores and queries data in Power BI is case insensitive, take special care when you work in DirectQuery mode with a case-sensitive source. Power BI assumes that the source has eliminated duplicate rows. Because Power BI is case insensitive, it treats two values that differ only by case as duplicate, whereas the source might not treat them as such. In such cases, the final result is undefined.
 >
 > To avoid this situation, if you use DirectQuery mode with a case-sensitive data source, normalize casing in the source query or in Power Query Editor.
