@@ -31,7 +31,7 @@ This article lists which features in the Power BI service are available to users
 
 ## Quick review of terminology
 
-Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).
+Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Basics of the Power BI service](../fundamentals/service-basic-concepts.md).
 
 ### Workspaces and roles
 
