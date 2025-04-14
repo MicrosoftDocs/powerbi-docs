@@ -126,7 +126,7 @@ There are a few considerations and limitations for **tooltips** to keep in mind.
 * Dashboards don't support page tooltips.
 * Python and R visuals aren't currently shown in report tooltips.
 * Clusters aren't currently supported as fields that can be shown in report tooltips.
-* Whenyou choose a field to show report tooltips, visuals that contain that field only show the specified tooltip when field summarization matches that field.
+* When you choose a field to show report tooltips, visuals that contain that field only show the specified tooltip when field summarization matches that field.
 * When you use a field versus a category, visuals that contain that field only show the specified tooltip when field summarization matches that field.
 * You can turn off tooltips completely for a visual in Power BI reports. However, when you pin that visual to a dashboard in the Power BI service, the basic tooltip is still displayed.
 
