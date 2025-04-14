@@ -8,7 +8,7 @@
     - name: "What is a Power BI business user?"
       href: end-user-consumer.md
     - name: "Basic concepts and terminology for Power BI business users"
-      href: end-user-basic-concepts.md
+      href: ../fundamentals/service-basic-concepts.md
     - name: "Take a tour of the Power BI service"
       href: end-user-reading-view.md     
   - name: Get started
