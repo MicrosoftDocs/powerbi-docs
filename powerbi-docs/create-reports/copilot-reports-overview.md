@@ -230,5 +230,5 @@ You can also create [report subscriptions that have natural language summaries g
 - [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
 - [Create reports in Power BI Desktop with Copilot](copilot-create-desktop-report.md)
 - [Overview of Copilot for Power BI](copilot-introduction.md)
-- [Copilot and Power BI integration](copilot-integration.md)
+- [Copilot in Power BI integration](copilot-integration.md)
 - [Use Copilot with semantic models](copilot-semantic-models.md)
