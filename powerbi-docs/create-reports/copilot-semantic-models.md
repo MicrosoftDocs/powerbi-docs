@@ -65,9 +65,7 @@ The *Ask data questions* experience differs from the standard Copilot in Fabric 
 
 - **Input:** Users provide a written prompt asking a question or requesting specific information from the semantic model.
 
-- **Preprocessing and grounding data:** Copilot retrieves grounding data from the model schema. It performs schema reduction to try to restrict the context to what is most important. As context, Copilot takes the following information to try to improve the usefulness and specificity of the Copilot output.
-
-  The following information is included:
+- **Preprocessing and grounding data:** Copilot retrieves grounding data from the model schema. It performs schema reduction to try to restrict the context to what is most important. As context, Copilot takes the following information to try to improve the usefulness and specificity of the Copilot output:
   - Any report metadata on the current report page. If there's relevant report metadata, then Copilot in Power BI answers data questions from the report instead of the model.
   - The conversation with Copilot in the current session. This includes any previous questions and outputs, which includes data points from data questions that Copilot previously answered.
   - The semantic model schema, which includes tables, rows, columns, measures, and other objects (like relationships, calculation groups, and so forth).
@@ -204,8 +202,6 @@ Copilot in the DAX query view has the following specifics to keep in mind:
 - **Input:** Users provide a written prompt in an input box specific to a single DAX query window. They can request a query, request changes to an existing query that Copilot already generated or explain a DAX concept. In the input box, users can also select buttons to generate queries. The Retry button will re-generate the query while neglecting the current context, so that you can try to get a different approach.
 
 - **Preprocessing and grounding data:** Copilot retrieves grounding data from the model schema and anything in the query window. Copilot takes the following information as context to try to improve the usefulness and specificity of the Copilot output:
-
-  The following information is included:
   - Any text that's in the current DAX query window, including DAX code you've written, comments, or previous DAX queries that you generated.
   - The conversation history with Copilot from the currently active session. This includes any previous questions and outputs, but not data points.
   - The semantic model schema, which includes tables, rows, columns, measures, and other objects (like relationships, calculation groups, and so forth). This includes all objects irrespective of whether they're hidden or not (except when you have a live connection to a shared semantic model).
@@ -368,6 +364,6 @@ In the Power BI mobile app, you can also ask data questions for any report by us
 
 ## Related content
 
-- [Copilot in Power BI integration](copilot-integration.md)
+- [Update your data model to work well with Copilot for Power BI](copilot-evaluate-data.md)
 - [Overview of Copilot for Power BI](copilot-introduction.md)
-- [Use Copilot with Power BI reports](copilot-reports-overview.md)
+- [Copilot in Power BI integration](copilot-integration.md)

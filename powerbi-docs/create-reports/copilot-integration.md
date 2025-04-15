@@ -113,7 +113,7 @@ For more information, see [Privacy, security, and responsible AI use of Copilot 
 There are different Copilot experiences in Power BI which you can use with either semantic models or reports. The following articles in this series describe these experiences in detail and how you can best use them.
 
 - [Use Copilot with semantic models](copilot-semantic-models.md)
-- [Use Copilot with reports](copilot-reports-overview.md)
+- [Use Copilot with Power BI reports](copilot-reports-overview.md)
 
 > [!NOTE]
 > See [Where to find the Copilot experiences in Fabric](/fabric/fundamentals/copilot-fabric-overview#copilot-experiences) for a full overview of each experience by item and workload.
@@ -121,3 +121,4 @@ There are different Copilot experiences in Power BI which you can use with eithe
 ## Related content
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)
+- [Enable Copilot in Fabric](/fabric/fundamentals/copilot-enable-fabric)

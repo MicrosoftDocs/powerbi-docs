@@ -111,9 +111,7 @@ The *report page creation* experience differs from the standard Copilot in Fabri
 
 - **Input:** Users provide a written prompt requesting a new report page, describing verbosely how the page should appear and what chart types and fields it should include.
 
-- **Preprocessing and grounding data:** Copilot retrieves grounding data from the report and model schema. It performs schema reduction to try to restrict the context to what is most important. Copilot takes the following information as context to try to improve the usefulness and specificity of the Copilot output.
-
-  The following information is included:
+- **Preprocessing and grounding data:** Copilot retrieves grounding data from the report and model schema. It performs schema reduction to try to restrict the context to what is most important. Copilot takes the following information as context to try to improve the usefulness and specificity of the Copilot output:
   - Any report metadata on the current report page. If there's relevant report metadata, then Copilot in Power BI will answer data questions, rather than create a new report page.
   - The conversation with Copilot in the current session. This includes any previous questions and outputs, which includes data points from data questions that Copilot previously answered. If you don't want this context included, you can clear the session by closing the Copilot chat pane, then reopening it before asking Copilot to create a new page.
   - The semantic model schema, which includes tables, rows, columns, measures. This also includes key model objects and properties and other objects (like relationships and calculation groups, as well as descriptions, data types, and formatting that help Copilot use your data and return values in the familiar ways.
