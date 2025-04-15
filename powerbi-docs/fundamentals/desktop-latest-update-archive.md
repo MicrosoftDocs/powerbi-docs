@@ -67,7 +67,7 @@ The following updates are new to Power BI Desktop this month:
 ### Copilot and AI
 * Copilot in the Power BI mobile apps: now available on iPads and Android tablets (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2025-feature-summary/#post-29024-_Toc905470624)  [[video]](https://youtu.be/2uQ2MTy9a1k)  [[article]](../create-reports/copilot-introduction.md#copilot-requirements)
 * Updated section - How Copilot arrived at this [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2025-feature-summary/#post-29024-_Toc573380942)  [[video]](https://youtu.be/2uQ2MTy9a1k)  [[article]](../create-reports/copilot-create-desktop-report.md)
-* Explore from Copilot visual answers [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2025-feature-summary/#post-29024-_Toc2033222197)  [[video]](https://youtu.be/2uQ2MTy9a1k)  [[article]](../consumer/explore-data-service.md#to-save-an-exploration)
+* Explore from Copilot visual answers [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2025-feature-summary/#post-29024-_Toc2033222197)  [[video]](https://youtu.be/2uQ2MTy9a1k)  [[article]](../consumer/explore-data-service.md)
 
 
 ### Reporting
