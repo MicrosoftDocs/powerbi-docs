@@ -75,26 +75,15 @@ You can start your experience with Explore (preview) from various entry points:
 
 Regardless of your starting point in Step 1, when you launch the Explore (preview) experience, you land in the new focused view. Your data appears in the data pane, and you can edit, drag and drop, or select fields to start building a matrix or visual.
 
-If you start from a visual, you see that visual on this page. Get a matrix of the underlying data by expanding the **Matrix** section.
+### Matrix and visual fields
+
+*If you start from a visual*, you see that visual on this page. Get a matrix of the underlying data by expanding the **Matrix** section.
 
 :::image type="content" source="media/explore-data-service/build-matrix-or-visual.png" alt-text="Screenshot showing exploring data by building a matrix or visual." lightbox="media/explore-data-service/build-matrix-or-visual.png":::
 
-If you didn't start from a visual, you see a blank canvas with matrix and visual fields. You can drag and drop fields from the data pane to the matrix or visual, or select other fields to add.
+*If you didn't start from a visual*, you see a blank canvas with matrix and visual fields. You can drag and drop fields from the data pane to the matrix or visual, or select other fields to add.
 
 :::image type="content" source="media/explore-data-service/begin-Exploration.png" alt-text="Screenshot showing the Explore window opened." lightbox="media/explore-data-service/begin-Exploration.png":::  
-
-> [!NOTE]
-> Some users might see the data pane on the left as we experiment with placement to optimize the experience.
-
-Switch between a horizontal or vertical orientation by using the **Split view horizontally** and **Split view vertically** buttons along the top.  
-
-:::image type="content" source="media/explore-data-service/change-layout-view.png" alt-text="Screenshot showing switching the layout to side by side." lightbox="media/explore-data-service/change-layout-view.png":::
-
-You can also change the type of visual, like stacked bar chart, pie chart, or funnel, by using the options in the visual type gallery. If you don't choose a visual type, Explore (preview) autoselects the type that best suits your selected data. To turn off this autoselection, deselect the **lightening bolt** icon.
-
-Use the **Rearrange data** section of the data pane to make adjustments. Drag and drop fields from the **Choose data** section to the **Rows**, **Columns**, and **Values** wells, or use the **+ Add data** button. You only see the field wells for the outlined selection (that is, the matrix or the visual). Select the other side to see its field wells.
-
-:::image type="content" source="media/explore-data-service/rearrange-data-visual-black-outline.png" alt-text="Screenshot showing modifying the section with the black border." lightbox="media/explore-data-service/rearrange-data-visual-black-outline.png":::
 
 The matrix and visual are linked. So as you add fields, sort, and drill into to one, the other one is updated automatically, as long as the visual can accurately reflect the sort or drill state.
 
@@ -104,6 +93,27 @@ For example, you might have a visual with a date hierarchy and you want to drill
 
 > [!NOTE]
 > Some interactions between the matrix and visual aren't currently supported. For example, if you drill down on a visual, the matrix might not update to reflect the drill state. The matrix and visual are linked, but if you notice that your visual doesn't reflect the drill state you applied to your matrix, it means that the interaction isn't currently supported.
+
+#### Visual types
+
+You can also change the type of visual, like stacked bar chart, pie chart, or funnel, by using the options in the visual type gallery. If you don't choose a visual type, Explore (preview) autoselects the type that best suits your selected data. To turn off this autoselection, deselect the **lightning bolt** icon.
+
+### Data pane
+
+Use the **Choose data** section to create or adjust your Exploration.
+
+Use the **Rearrange data** section of the data pane to make adjustments. Drag and drop fields from the **Choose data** section to the **Rows**, **Columns**, and **Values** wells, or use the **+ Add data** button. You only see the field wells for the outlined selection (that is, the matrix or the visual). Select the other side to see its field wells.
+
+:::image type="content" source="media/explore-data-service/rearrange-data-visual-black-outline.png" alt-text="Screenshot showing modifying the section with the black border." lightbox="media/explore-data-service/rearrange-data-visual-black-outline.png":::
+
+> [!NOTE]
+> Some users might see the data pane on the left as we experiment with placement to optimize the experience.
+
+### Layout options
+
+Switch between a horizontal or vertical orientation by using the **Split view horizontally** and **Split view vertically** buttons along the top.  
+
+:::image type="content" source="media/explore-data-service/change-layout-view.png" alt-text="Screenshot showing switching the layout to side by side." lightbox="media/explore-data-service/change-layout-view.png":::
 
 ## Step 3. Apply filters to your Exploration
 
