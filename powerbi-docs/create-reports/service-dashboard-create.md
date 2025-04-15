@@ -61,7 +61,7 @@ You can use the following steps and the [Procurement Analysis sample](sample-pro
 
 1. Select the tile to return to the report.
 
-     ![Screenshot of the Select the title element.](media/service-dashboard-create/select_the_title.png)
+     ![Screenshot of the Select the title element.](media/service-dashboard-create/select-the-title.png)
 
 1. Pin a few more tiles to the new dashboard. When the **Pin to dashboard** window appears, select **Existing dashboard**.  
 
