@@ -102,7 +102,7 @@ In Power BI, there are many different ways in which users can consume content, i
 
 ### Use and re-use of semantic models
 
-Semantic models are debatably the most important item types in Power BI and Fabric, since users can consume them by using many different downstream approaches and items. If you will only distribute reports, then you will make very different design decisions as when users will connect various items to the model to do their own analyses or accomplish their own goals.
+Semantic models are arguably the most important item types in Power BI and Fabric, since users can consume them by using many different downstream approaches and items. If you will only distribute reports, then you will make very different design decisions as when users will connect various items to the model to do their own analyses or accomplish their own goals.
 
 :::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-plan-design/re-use-semantic-models.svg" alt-text="Diagram shows a semantic model and the items that can connect to it in Power BI, Fabric, and other tools." border="false":::
 
@@ -125,7 +125,7 @@ You can re-use a shared semantic model by using the following downstream item ty
 
 The following sections give an overview of important considerations when you use semantic models with some of these items.
 
-> [! NOTE]
+> [!NOTE]
 > Many of these options are only available if you enable the relevant tenant settings. Ensure that you familiarize yourself with the tenant settings to know what consumption methods are possible in the workspace where you'll publish your semantic model. If these options are limited to specific security groups, then ensure you identify whether your users belong (or should belong) to these security groups, or not.
 
 #### Reports
@@ -133,7 +133,7 @@ The following sections give an overview of important considerations when you use
 There are several different ways in which users can engage with semantic models via reports:
 - **Viewing reports.** The standard scenario, in which a user views data in a report that you distribute or share with them.
 - **Connecting to the semantic model and creating a new report.** With [build permissions](../connect-data/service-datasets-build-permissions.md), users can create a new report in Power BI Desktop or in the Power BI service. This report has a live connection to the shared semantic model. Users can also convert the live connected report to a new composite semantic model that queries the original by using DirectQuery.
-- **Creating an exploration from an existing report visual.** With build permissions, users can also select a [supported visual](../consumer/explore-data-service.md#supported-visuals) to create an exploration of its data. This creates a new exploration item which allows the user to add fields or change formatting. Users can save and share the resulting exploration if they meet the [required criteria for licensing, workspace membership, and item permissions](../consumer/explore-data-service.md#considerations-and-limitations).
+- **Creating an exploration from an existing report visual.** With build permissions, users can also select a [supported visual](../consumer/explore-data-service.md) to create an exploration of its data. This creates a new exploration item which allows the user to add fields or change formatting. Users can save and share the resulting exploration if they meet the [required criteria for licensing, workspace membership, and item permissions](../consumer/explore-data-service.md#permissions-requirements-and-limitations).
 - **Personalizing report visuals, in which users can change field and formatting.** [Personalize visuals](../create-reports/power-bi-personalize-visuals.md?tabs=powerbi-desktop) works similar to an exploration, but it only requires read permissions, and doesn't create a new item. Personalize visuals also use any perspectives that a user applies to a report page, which limits the available fields that a user can see and use.
 
 These various scenarios create a number of considerations that you must keep in mind for your semantic models, such as:
@@ -143,14 +143,15 @@ These various scenarios create a number of considerations that you must keep in 
 - How you'll document your model, and what that documentation should entail. We recommend that you make documentation tailored to specific use-cases and that you include relevant and useful information, and not exports of model metadata like DAX measure expressions, which are generally not useful for end-users.
 - How you'll advise users to choose one approach over another.
 
-> [! CAUTION]
+> [!CAUTION]
 > Once you grant read or build permissions to a semantic model, then users might be able to query any table or column in your model by using the approaches described in this section. This is true even if you don't expose that table, measure, or column in a report. Ensure that you always protect sensitive data by using data security, or exclude it from your model. That way, you can avoid unintentionally exposing sensitive information to the wrong people.
 
 #### Excel (analyze in Excel pivot tables)
 
 If users have build permissions to a model, then they can also [connect to a semantic model from Excel](../collaborate-share/service-analyze-in-excel.md) and query it by using MDX from an Excel pivot table. This can be useful when users prefer to work in Excel to explore or analyze data, themselves.
 
-When users will use analyze in Excel to query your semantic model, you might need to consider things like the following: 
+When using analyze in Excel to query your semantic model, you need to consider the following: 
+
 - Certain features like [field parameters](../create-reports/power-bi-field-parameters.md) or [measure dynamic format strings](../create-reports/desktop-dynamic-format-strings.md) only work in Power BI, and not in Excel. To achieve a similar result, you need to use other approaches.
 - Analyze in Excel requires that the column property _[IsAvailableinMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx?view=analysisservices-dotnet&preserve-view=true)_ is enabled. If users won't use Excel, then disabling this property might result in smaller and more performant models.
 - Users can't view [hidden columns or measures](/analysis-services/tabular-models/hide-or-freeze-columns-ssas-tabular?view=asallproducts-allversions&preserve-view=true) in the semantic model, like they can from Power BI Desktop (by right-clicking the data pane, and selecting "view hidden").
@@ -179,7 +180,7 @@ You also need to spend additional effort training users:
 - How to validate outputs.
 - How to troubleshoot unexpected outputs. 
 
-> [! TIP]
+> [!TIP]
 > See the following articles for additional, detailed tips and considerations about optimizing models to work well with Copilot:
 > - [Optimization for report authors and model consumers](../guidance/power-bi-optimization.md#optimizing-for-report-authors-and-model-consumers)
 > - [Update your data model to work well with Copilot for Power BI](../create-reports/copilot-evaluate-data.md)
@@ -190,7 +191,7 @@ Copilot and other generative AI technology have important limitations and consid
 - You can get low-quality or inaccurate outputs, such as when the tool hallucinates, or overstates the importance of certain facts. Copilot might also be incorrect or inaccurate by omission, where it leaves out essential information.
 - The tools are limited by their training data, so questions about more novel information are less likely to produce useful outputs.
 
-> [! CAUTION]
+> [!CAUTION]
 > You should mitigate the risks of these limitations and considerations. Copilot, AI skills, LLMs, and generative AI are nascent technology, so you should not use them for autonomous, high-risk, or business-critical processes and decision-making.
 > For more information, see also [Security guidance for Large Language Models](/ai/playbook/technology-guidance/generative-ai/mlops-in-openai/security/security-recommend).
 
@@ -351,7 +352,7 @@ A common solution for storing files is by using [SharePoint](/sharepoint/introdu
 When you store files in SharePoint, consider the following points.
 
 - **Organization**: Ensure that you maintain a consistent and logical structure so it's straightforward to find specific files. Use good naming conventions, organize files in folders, and archive files that are no longer relevant for ongoing projects.
-- **OneDrive refresh**: You can [link](../connect-data/refresh-desktop-file-onedrive.md) a published semantic model or report to a .pbix file that's stored in a SharePoint or OneDrive for Business (also known as OneDrive for work or school) site. With this approach, you no longer have to publish the semantic model to bring changes into effect. Instead, your changes are visible after an automatic [OneDrive refresh](../connect-data/refresh-desktop-file-onedrive.md#automatic-versus-manual-updates-of-model-information)_,_ which occurs hourly. While convenient, be aware that this approach comes with some [caveats and challenges](../connect-data/refresh-desktop-file-onedrive.md#when-things-go-wrong). When things go, it can't be easily reversed.
+- **OneDrive refresh**: You can [link](../connect-data/refresh-desktop-file-onedrive.md) a published semantic model or report to a .pbix file that's stored in a SharePoint or OneDrive for work or school site. With this approach, you no longer have to publish the semantic model to bring changes into effect. Instead, your changes are visible after an automatic [OneDrive refresh](../connect-data/refresh-desktop-file-onedrive.md#automatic-versus-manual-updates-of-model-information)_,_ which occurs hourly. While convenient, be aware that this approach comes with some [caveats and challenges](../connect-data/refresh-desktop-file-onedrive.md#when-things-go-wrong). When things go, it can't be easily reversed.
 - **Preview reports**: In SharePoint, it's possible to [view Power BI reports](../collaborate-share/service-sharepoint-viewer.md) without having to install Power BI Desktop or download the .pbix file locally. When you open reports in this way, they're displayed in the [browser](../collaborate-share/service-sharepoint-viewer.md#open-a-power-bi-file-stored-in-a-onedrive-or-sharepoint-library). This capability can be a convenient alternative to viewing reports from the Fabric portal. It's [enabled by default](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview) in the [Fabric tenant settings](/fabric/admin/tenant-settings-index).
 
 > [!TIP]
