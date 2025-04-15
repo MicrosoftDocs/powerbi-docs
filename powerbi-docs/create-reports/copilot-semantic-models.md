@@ -66,7 +66,8 @@ The *Ask data questions* experience differs from the standard Copilot in Fabric 
 
 - **Input:** Users provide a written prompt asking a question or requesting specific information from the semantic model.
 
-- **Preprocessing and grounding data:** Copilot retrieves grounding data from the model schema. It performs schema reduction to try to restrict the context to what is most important. As context, Copilot takes the following information to try to improve the usefulness and specificity of the Copilot output:
+- **Preprocessing and grounding data:** Copilot retrieves grounding data from the model schema. It performs schema reduction to try to restrict the context to what is most important. As context, Copilot takes the following information to try to improve the usefulness and specificity of the Copilot output.
+
   The following information is included:
   - Any report metadata on the current report page. If there's relevant report metadata, then Copilot in Power BI answers data questions from the report instead of the model.
   - The conversation with Copilot in the current session. This includes any previous questions and outputs, which includes data points from data questions that Copilot previously answered.
@@ -138,7 +139,7 @@ Irrespective of prompt or model quality, you can still obtain inaccurate or low-
 
 The following image shows an example of Copilot producing inaccurate or inappropriate results:
 
-:::image type="content" source="media/copilot-semantic-models/copilot-chat-pane-03.svg" alt-text="Screenshot showing an example of a user asking a data question that Copilot answers incorrectly with the semantic model.":::
+:::image type="content" source="media/copilot-semantic-models/copilot-chat-pane-03.svg" alt-text="Screenshot showing another example of a user asking a data question that Copilot answers incorrectly with the semantic model.":::
 
 In this example, the image shows the prompts: *Question: Which country produced the highest profit in 2024?* and *Question: Which country produced the highest profit in 2023?* The outputs show Copilot first asking for clarification after it says that there's no data for 2024 in the model. However, there *is* data in the model in 2024 when filtering to that year using the date table. Copilot then returns a result filtering the *Birthday* column from the *Customer* table, rather than the marked date table in the model. While the user could produce a more specific prompt or the developer could hide the *Birthday* field, in this case, Copilot should produce the expected result.
 
@@ -156,7 +157,7 @@ The image depicts the following prompt: *YTD profit by month in 2023.* The user 
 
 :::image type="content" source="media/copilot-semantic-models/copilot-dax-query-02.svg" alt-text="Screenshot showing an example of a user asking to explain a DAX query that Copilot answers in the DAX query view.":::
 
-The diagram depicts the following prompt: *Explain this DAX query.* The explanation is shown at the bottom of the Copilot window.
+The image depicts the following prompt: *Explain this DAX query.* The explanation is shown at the bottom of the Copilot window.
 
 #### Use cases
 
@@ -238,7 +239,7 @@ Some tips specific to the DAX query experience are as follows:
 
 - **Ask Copilot to add comments to your code:** Comments are a useful way to organize and document your DAX queries, and to help you understand the code that Copilot generates. You can also ask Copilot to explain the DAX concept.
 
-- **Check quality, peer-reviewed sources:** If you still don't understand the generated code with comments and explanations from Copilot, you should research the functions and patterns online from reputable sources either in the [Microsoft documentation](/dax/) or from the Power BI community.
+- **Check quality, peer-reviewed sources:** If you still don't understand the generated code with comments and explanations from Copilot, you should research the functions and patterns online from reputable sources either in the [Microsoft documentation](/dax/) or from the [Power BI community](https://community.powerbi.com/).
 
 - **Beware of variable usage by Copilot:** Copilot can struggle to use variables appropriately in DAX queries and defined measures. For instance, Copilot might try to filter or group a variable that's already been declared, which isn't possible and produces an unexpected result.
 
@@ -322,7 +323,7 @@ Given this grounding data, you can ensure that suggested synonyms are useful by:
 
 ## Consume a semantic model by using Copilot
 
-You can use Copilot to pose data questions to your semantic models during consumption. This experience is available whenever you use a report, including in [Power BI Desktop](#power-bi-desktop), a [published report](#published-report) in a workspace, app, or OrgApp item, or in the [Power BI mobile app](power-bi-mobile-app).
+You can use Copilot to pose data questions to your semantic models during consumption. This experience is available whenever you use a report, including in [Power BI Desktop](#power-bi-desktop), a [published report](#published-report) in a workspace, app, or OrgApp item, or in the [Power BI mobile app](#power-bi-mobile-app).
 
 Consumers might ask data questions of a semantic model in the following scenarios:
 
@@ -331,7 +332,7 @@ Consumers might ask data questions of a semantic model in the following scenario
 - They want to ask a data question using natural language, rather than using tools or code.
 
 > [!NOTE]
-> See [Ask data questions](#ask-data-questions) earlier in this article about developing a semantic model with help from Copilot. The diagrams and guidance there also apply when using the ask data questions experience to consume a semantic model.
+> See [Ask data questions](#ask-data-questions) earlier in this article about developing a semantic model with help from Copilot. The images and guidance there also apply when using the ask data questions experience to consume a semantic model.
 
 For more information about how you can use Copilot in reports, which consume a semantic model, see the article [Use Copilot with Power BI reports](copilot-reports-overview.md).
 

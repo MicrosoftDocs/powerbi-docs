@@ -62,9 +62,8 @@ The following table gives an overview of the supported visual types for Copilot 
 | Area chart | **✓** | **✓** |
 | Stacked area chart | **✗** | **✗** |
 | 100% stacked area chart | **✗** | **✗** |
-| Line and stacked column chart (Combo chart) | **✓** | **✓** |
+| Line and stacked column chart | **✓** | **✓** |
 | Line and clustered column chart | **✓** | **✓** |
-| Rider to validate table review | **✓** | **✓** |
 | Ribbon chart | **✗** | **✗** |
 | Waterfall | **✓** | **✓** |
 | Funnel chart | **✗** | **✗** |
@@ -113,13 +112,15 @@ The *report page creation* experience differs from the standard Copilot in Fabri
 
 - **Input:** Users provide a written prompt requesting a new report page, describing verbosely how the page should appear and what chart types and fields it should include.
 
-- **Preprocessing and grounding data:** Copilot retrieves grounding data from the report and model schema. It performs schema reduction to try to restrict the context to what is most important. Copilot takes the following information as context to try to improve the usefulness and specificity of the Copilot output:
+- **Preprocessing and grounding data:** Copilot retrieves grounding data from the report and model schema. It performs schema reduction to try to restrict the context to what is most important. Copilot takes the following information as context to try to improve the usefulness and specificity of the Copilot output.
+
   The following information is included:
   - Any report metadata on the current report page. If there's relevant report metadata, then Copilot in Power BI will answer data questions, rather than create a new report page.
   - The conversation with Copilot in the current session. This includes any previous questions and outputs, which includes data points from data questions that Copilot previously answered. If you don't want this context included, you can clear the session by closing the Copilot chat pane, then reopening it before asking Copilot to create a new page.
   - The semantic model schema, which includes tables, rows, columns, measures. This also includes key model objects and properties and other objects (like relationships and calculation groups, as well as descriptions, data types, and formatting that help Copilot use your data and return values in the familiar ways.
   - The full model *linguistic schema*, including synonyms and sample questions.
   - Certain semantic model properties, including descriptions, data types, format strings, and data category.
+  
   The following information is excluded:
   - Any report page that's hidden.
   - Any visual that's hidden.
@@ -174,11 +175,11 @@ Consumers might ask data questions of a semantic model in the following scenario
 > [!NOTE]
 > Copilot will first search the report for the answer to the user's question. If the answer isn't on any report page, then Copilot asks a data question of the semantic model.
 >
-> Furthermore, the experience differs for reports viewed in a workspace and reports viewed in an app. In an app, Copilot might search pages of all reports that a user can access, depending on the [app audience](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) that they belong to.
+> Furthermore, the experience differs for reports viewed in a workspace and reports viewed in an app. In an app, Copilot might search pages of all reports that a user can access, depending on the [app audience](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) they belong to.
 
 The following image shows an example of a report consumer asking a data question about a report by using Copilot in the Power BI service.
 
-:::image type="content" source="media/copilot-reports-overview/copilot-chat-pane-report.svg" alt-text="Screenshot showing example of user asking data question that Copilot answers using the report.":::
+:::image type="content" source="media/copilot-reports-overview/copilot-chat-pane-report.svg" alt-text="Screenshot showing example of user asking a data question that Copilot answers using the report.":::
 
 The image shows the following prompt: *What was the profit margin for Australia in 2022?* Copilot then returns an output with the answer, referencing the current report page and which visual on that page contains the answer.
 
