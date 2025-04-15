@@ -5,7 +5,6 @@ author: denglishbi
 ms.author: daengli
 ms.reviewer: sngun
 ms.service: powerbi
-ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 04/15/2025
 ---
@@ -370,5 +369,5 @@ In the Power BI mobile app, you can also ask data questions for any report by us
 ## Related content
 
 - [Copilot in Power BI integration](copilot-integration.md)
-- [Overview of Copilot in Power BI](copilot-introduction.md)
+- [Overview of Copilot for Power BI](copilot-introduction.md)
 - [Use Copilot with Power BI reports](copilot-reports-overview.md)

@@ -5,7 +5,6 @@ author: denglishbi
 ms.author: daengli
 ms.reviewer: sngun
 ms.service: powerbi
-ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 04/15/2025
 ---
@@ -86,7 +85,7 @@ There are also several other noteworthy scenarios to consider:
 
 - **P SKUs:** You can also use Copilot in Power BI if you have a P SKU.
 
-- **Cross-workspace consumption:** Some Copilot experiences will still work when you consume items located in workspaces that use a license mode that doesn't support Copilot, like Pro, Premium Per User, or an unsupported SKU. For example, you can use Copilot in Power BI Desktop while consuming a semantic model published to workspaces that don't support Copilot. Similarly, you can also connect to these semantic models from certain Fabric items, like notebooks using the Semantic Link feature.
+- **Cross-workspace consumption:** Some Copilot experiences will still work when you consume items located in workspaces that use a license mode that doesn't support Copilot, like Pro, PPU, or an unsupported SKU. For example, you can use Copilot in Power BI Desktop while consuming a semantic model published to workspaces that don't support Copilot. Similarly, you can also connect to these semantic models from certain Fabric items, like notebooks using the Semantic Link feature.
 
 - **Cross-capacity consumption:** Fabric administrators can [delegate Copilot consumption to a Fabric Copilot capacity (FCC)](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/11/19/accelerate-app-innovation-with-an-ai-powered-data-platform/#:~:text=Fabric%20billing%20and%20consumption%20updates). This can be a useful way to prevent Copilot usage from impacting your main Fabric capacity that other Fabric workloads and items need to support business-critical processes or decision making.
 
@@ -121,4 +120,4 @@ There are different Copilot experiences in Power BI which you can use with eithe
 
 ## Related content
 
-- [Overview of Copilot in Power BI](copilot-introduction.md)
+- [Overview of Copilot for Power BI](copilot-introduction.md)
