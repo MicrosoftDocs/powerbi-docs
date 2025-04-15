@@ -5,6 +5,7 @@ author: denglishbi
 ms.author: daengli
 ms.reviewer: sngun
 ms.service: powerbi
+ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 04/15/2025
 ---
@@ -14,14 +15,14 @@ This article helps you to use the Copilot experiences in Power BI for reports.
 
 Copilot in Microsoft Fabric is a generative AI assistant that aims to enhance the data analytics experience in the Fabric platform, including the Power BI workload. You can use Copilot in Power BI to support both the development and the consumption of reports in certain scenarios.
 
-In order to get the most value from Copilot with reports, you should first ensure you've done the work to ensure Copilot can work with the report's [semantic model](fabric/data-warehouse/semantic-models). This page assumes you've done that. If you don't adequately prepare your model, then Copilot can produce low-quality and inaccurate outputs that might be incorrect or even misleading.
+In order to get the most value from Copilot with reports, you should first ensure you've done the work to ensure Copilot can work with the report's [semantic model](/fabric/data-warehouse/semantic-models). This page assumes you've done that. If you don't adequately prepare your model, then Copilot can produce low-quality and inaccurate outputs that might be incorrect or even misleading.
 
 The following sections guide you through how you can use Copilot in Power BI to either develop or consume a report with the available Copilot experiences.
 
 > [!NOTE]
 > For more details, see the [Copilot in Power BI documentation](copilot-introduction.md).
 >
-> Copilot and its capabilities are evolving over time. The Copilot experiences in the following sections will change, and new experiences might become available with semantic models. As such, you should keep up to date with the monthly Power BI releases and any relevant Copilot announcements.
+> Copilot and its capabilities are evolving over time. The Copilot experiences in the following sections will change, and new experiences might become available with semantic models. As such, you should stay current with the monthly Power BI releases and any relevant Copilot announcements.
 
 > [!IMPORTANT]
 > You can't enable or disable Copilot in specific workloads, or for specific Copilot experiences. If Copilot in Fabric is enabled in your capacity for a user or security group, then all workloads and Copilot experiences are accessible for those users.
@@ -51,56 +52,56 @@ The following table gives an overview of the supported visual types for Copilot 
 
 | **Visual type** | **Show visual in Copilot pane** | **Create visual on page** |
 |---|---|---|
-| **Stacked bar chart** | **✓** | **✓** |
-| **Stacked column chart** | **✓** | **✓** |
-| **Clustered bar chart** | **✓** | **✓** |
-| **Clustered column chart** | **✓** | **✓** |
-| **100% stacked bar chart** | **✗** | **✗** |
-| **100% stacked column chart** | **✗** | **✗** |
-| **Line chart** | **✓** | **✓** |
-| **Area chart** | **✓** | **✓** |
-| **Stacked area chart** | **✗** | **✗** |
-| **100% stacked area chart** | **✗** | **✗** |
-| **Line and stacked column chart (Combo chart)** | **✓** | **✓** |
-| **Line and clustered column chart** | **✓** | **✓** |
-| **Rider to validate table review** | **✓** | **✓** |
-| **Ribbon chart** | **✗** | **✗** |
-| **Waterfall** | **✓** | **✓** |
-| **Funnel chart** | **✗** | **✗** |
-| **Scatterplot** | **✓** | **✓** |
-| **Pie chart** | **✓** | **✓** |
-| **Doughnut chart** | **✓** | **✓** |
-| **Tree map** | **✓** | **✓** |
-| **Map** | **✓** | **✓** |
-| **Filled map** | **✓** | **✓** |
-| **Azure map** | **✗** | **✗** |
-| **Gauge** | **✗** | **✗** |
-| **Card** | **✓** | **✓** |
-| **Multi-row card** | **✓** | **✓** |
-| **KPI card** | **✗** | **✗** |
-| **Slicer** | **✗** | **✓** |
-| **Table** | **✓** | **✓** |
-| **Matrix** | **✓** | **✓** |
-| **R script visual** | **✗** | **✗** |
-| **Python script visual** | **✗** | **✗** |
-| **Key influencers** | **✗** | **✗** |
-| **Decomposition tree** | **✗** | **✗** |
-| **Q&A** | **✗*** | **✗*** |
-| **Narrative** | **✗**** | **✗**** |
-| **Paginated report** | **✗** | **✗** |
-| **Card (new)** | **✗** | **✓** |
-| **Slicer (new)** | **✗** | **✗** |
-| **List slicer (new)** | **✗** | **✗** |
-| **ArcGIS for Power BI** | **✗** | **✗** |
-| **Power Apps for Power BI** | **✗** | **✗** |
-| **Power Automate for Power BI** | **✗** | **✗** |
+| Stacked bar chart | **✓** | **✓** |
+| Stacked column chart | **✓** | **✓** |
+| Clustered bar chart | **✓** | **✓** |
+| Clustered column chart | **✓** | **✓** |
+| 100% stacked bar chart | **✗** | **✗** |
+| 100% stacked column chart | **✗** | **✗** |
+| Line chart | **✓** | **✓** |
+| Area chart | **✓** | **✓** |
+| Stacked area chart | **✗** | **✗** |
+| 100% stacked area chart | **✗** | **✗** |
+| Line and stacked column chart (Combo chart) | **✓** | **✓** |
+| Line and clustered column chart | **✓** | **✓** |
+| Rider to validate table review | **✓** | **✓** |
+| Ribbon chart | **✗** | **✗** |
+| Waterfall | **✓** | **✓** |
+| Funnel chart | **✗** | **✗** |
+| Scatterplot | **✓** | **✓** |
+| Pie chart | **✓** | **✓** |
+| Doughnut chart | **✓** | **✓** |
+| Tree map | **✓** | **✓** |
+| Map | **✓** | **✓** |
+| Filled map | **✓** | **✓** |
+| Azure map | **✗** | **✗** |
+| Gauge | **✗** | **✗** |
+| Card | **✓** | **✓** |
+| Multi-row card | **✓** | **✓** |
+| KPI card | **✗** | **✗** |
+| Slicer | **✗** | **✓** |
+| Table | **✓** | **✓** |
+| Matrix | **✓** | **✓** |
+| R script visual | **✗** | **✗** |
+| Python script visual | **✗** | **✗** |
+| Key influencers | **✗** | **✗** |
+| Decomposition tree | **✗** | **✗** |
+| Q&A | **✗*** | **✗*** |
+| Narrative | **✗**** | **✗**** |
+| Paginated report | **✗** | **✗** |
+| Card (new) | **✗** | **✓** |
+| Slicer (new) | **✗** | **✗** |
+| List slicer (new) | **✗** | **✗** |
+| ArcGIS for Power BI | **✗** | **✗** |
+| Power Apps for Power BI | **✗** | **✗** |
+| Power Automate for Power BI | **✗** | **✗** |
 
-* Q&A is a separate experience that can be enhanced by Copilot. For more information, see [Enhance Q&A with Copilot in Power BI](../natural-language/q-and-a-copilot-enhancements.md).
+\* Q&A is a separate experience that can be enhanced by Copilot. For more information, see [Enhance Q&A with Copilot for Power BI](../natural-language/q-and-a-copilot-enhancements.md).
 
-** The smart narrative visual can also be enhanced by Copilot. For more information, see [Create a narrative with Copilot in Power BI](/power-bi/create-reports/copilot-create-narrative?tabs=powerbi-service).
+** The smart narrative visual can also be enhanced by Copilot. For more information, see [Create a narrative visual with Copilot for Power BI](copilot-create-narrative.md?tabs=powerbi-service).
 
 > [!NOTE]
-> Over time, Copilot in Power BI will support more visuals. Copilot in Power BI doesn't support custom visuals, however.
+> Over time, Copilot in Power BI will support more visuals. Copilot in Power BI doesn't support custom visuals.
 
 ### Benefits
 
@@ -112,20 +113,18 @@ The *report page creation* experience differs from the standard Copilot in Fabri
 
 - **Input:** Users provide a written prompt requesting a new report page, describing verbosely how the page should appear and what chart types and fields it should include.
 
-- **Preprocessing and grounding data:** Copilot retrieves grounding data from the report and model schema. It performs schema reduction to try to restrict the context to what is most important. As context, Copilot takes the following information as context to try to improve the usefulness and specificity of the Copilot output:
-
-    - The following information is included:
-    - Any report metadata on the current report page. If there's relevant report metadata, then Copilot in Power BI will answer data questions, rather than create a new report page.
-    - The conversation with Copilot in the current session. This includes any previous questions and outputs, which includes data points from data questions that Copilot previously answered. If you don't want this context included, you can clear the session by closing the Copilot chat pane, then reopening it before asking Copilot to create a new page.
-    - The semantic model schema, which includes tables, rows, columns, measures. This also includes key model objects and properties and other objects (like relationships and calculation groups, as well as descriptions, data types, and formatting that help Copilot use your data and return values in the familiar ways.
-    - The full model *linguistic schema*, including synonyms and sample questions.
-    - Certain semantic model properties, including descriptions, data types, format strings, and data category.
-  
-    - The following information is excluded:
-    - Any report page that is hidden.
-    - Any visual that is hidden.
-    - Any field (measure or column) in the model that is hidden.
-    - Any table in the model that is marked as *private.*
+- **Preprocessing and grounding data:** Copilot retrieves grounding data from the report and model schema. It performs schema reduction to try to restrict the context to what is most important. Copilot takes the following information as context to try to improve the usefulness and specificity of the Copilot output:
+  The following information is included:
+  - Any report metadata on the current report page. If there's relevant report metadata, then Copilot in Power BI will answer data questions, rather than create a new report page.
+  - The conversation with Copilot in the current session. This includes any previous questions and outputs, which includes data points from data questions that Copilot previously answered. If you don't want this context included, you can clear the session by closing the Copilot chat pane, then reopening it before asking Copilot to create a new page.
+  - The semantic model schema, which includes tables, rows, columns, measures. This also includes key model objects and properties and other objects (like relationships and calculation groups, as well as descriptions, data types, and formatting that help Copilot use your data and return values in the familiar ways.
+  - The full model *linguistic schema*, including synonyms and sample questions.
+  - Certain semantic model properties, including descriptions, data types, format strings, and data category.
+  The following information is excluded:
+  - Any report page that's hidden.
+  - Any visual that's hidden.
+  - Any field (measure or column) in the model that's hidden.
+  - Any table in the model that is marked as *private.*
 
 - **Postprocessing:** Copilot performs extensive postprocessing to construct the report page and visuals, including potentially applying a *Copilot theme*.
 
@@ -156,11 +155,11 @@ You can manually modify Copilot-created visuals on a page of a report. However, 
 
 ### Tips to improve Copilot outputs
 
-To improve the reports generated by Copilot, you should [apply suggested practices to improve user input prompts](/fabric/fundamentals/how-copilot-works#improve-written-prompts-for-copilot) and ensure that your semantic model is updated to work well with Copilot. For more information, see [Tips to improve ask data questions](copilot-semantic-models.md#tips-to-improve-copilot-outputs) and [update your data model to work well with Copilot](copilot-evaluate-data.md).
+To improve the reports generated by Copilot, you should apply [suggested practices to improve user input prompts](/fabric/fundamentals/how-copilot-works#improve-written-prompts-for-copilot) and ensure that your semantic model is updated to work well with Copilot. For more information, see [Tips to improve ask data questions](copilot-semantic-models.md#tips-to-improve-copilot-outputs) and [update your data model to work well with Copilot for Power BI](copilot-evaluate-data.md).
 
 ## Consume a report by using Copilot
 
-You can use Copilot to ask questions about and summarize reports. This experience is available whenever you use a report, including in [Power BI Desktop](copilot-semantic-models.md#power-bi-desktop), a [published report](copilot-semantic-models.md#published-report) in a workspace, a workspace app, or in the [Power BI mobile app](copilot-semantic-models.md#power-bi-mobile-app).
+You can use Copilot to ask questions about and summarize reports. This experience is available whenever you use a report, including in [Power BI Desktop](copilot-semantic-models.md#power-bi-desktop), a [published report](copilot-semantic-models.md#published-report) in a workspace, app, or OrgApp item, or in the [Power BI mobile app](copilot-semantic-models.md#power-bi-mobile-app).
 
 ### Ask data questions
 
@@ -177,13 +176,13 @@ Consumers might ask data questions of a semantic model in the following scenario
 >
 > Furthermore, the experience differs for reports viewed in a workspace and reports viewed in an app. In an app, Copilot might search pages of all reports that a user can access, depending on the [app audience](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) that they belong to.
 
-The following image depicts an example of a report consumer asking a data question of a report by using Copilot in the Power BI service.
+The following image shows an example of a report consumer asking a data question about a report by using Copilot in the Power BI service.
 
 :::image type="content" source="media/copilot-reports-overview/copilot-chat-pane-report.svg" alt-text="Screenshot showing example of user asking data question that Copilot answers using the report.":::
 
 The image shows the following prompt: *What was the profit margin for Australia in 2022?* Copilot then returns an output with the answer, referencing the current report page and which visual on that page contains the answer.
 
-In the Power BI mobile app, you can also ask data questions for any report by using the Copilot pane in the app.
+In the Power BI mobile app, you can also ask data questions for any report by using the Copilot chat pane in the app.
 
 ### Summarize a report page
 
@@ -204,7 +203,7 @@ To improve the usefulness of summaries, the best thing that you can do is to ens
 
 #### Smart narrative visual
 
-The smart narrative visual can [create dynamic summaries of report pages](copilot-create-narrative?tabs=powerbi-service.md). A report author must first set up the smart narrative visual. Then, the summary will update depending on the data displayed on the page.
+The smart narrative visual can [create dynamic summaries of report pages](copilot-create-narrative.md?tabs=powerbi-service). A report author must first set up the smart narrative visual. Then, the summary will update depending on the data displayed on the page.
 
 The smart narrative can also respond to [custom prompts](copilot-prompts-narratives.md), which is similar to summaries generated in the Copilot pane in response to natural language prompts, described in the next section.
 
@@ -214,18 +213,15 @@ The following image shows an example of a smart narrative summary of visuals on 
 
 The smart narrative visual on the right part of the page describes the contents of the report that are already shown with visuals.
 
-> [!NOTE]
-> Rider to ensure that someone reviews this document and gives feedback/critique.
-
 #### Copilot pane
 
-You can also request [summaries of report pages in the Copilot pane](copilot-pane-summarize-content.md). These summaries describe the visuals on the page, and reference visuals where necessary. Summaries in the Copilot pane are useful when users are new to reports and need help, or when they need to find something on a report page.
+You can also request [summaries of report pages in the Copilot chat pane](copilot-pane-summarize-content.md). These summaries describe the visuals on the page, and reference visuals where necessary. Summaries in the Copilot pane are useful when users are new to reports and need help, or when they need to find something on a report page.
 
-The following image shows an example of visuals on a report page summarized by Copilot, using the Copilot pane.
+The following image shows an example of visuals on a report page summarized by Copilot, using the Copilot chat pane.
 
 :::image type="content" source="media/copilot-reports-overview/copilot-chat-pane-summary.svg" alt-text="Screenshot showing example of a user asking for a summary of the report, which Copilot provides in the Copilot chat pane.":::
 
-The diagram depicts the following prompt: *Give me an executive summary (asked by clicking the option).* Copilot then provides a summary, including key figures and references to specific visuals that contain these figures.
+The image shows the following prompt: *Give me an executive summary (asked by clicking the option).* Copilot then provides a summary, including key figures and references to specific visuals that contain these figures.
 
 #### Subscriptions
 
@@ -233,6 +229,8 @@ You can also create [report subscriptions that have natural language summaries g
 
 ## Related content
 
+- [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
+- [Create reports in Power BI Desktop with Copilot](copilot-create-desktop-report.md)
+- [Overview of Copilot in Power BI](copilot-introduction.md)
 - [Copilot and Power BI integration](copilot-integration.md)
 - [Use Copilot with semantic models](copilot-semantic-models.md)
-- [Overview of Copilot in Power BI](copilot-introduction.md)

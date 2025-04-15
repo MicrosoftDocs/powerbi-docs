@@ -1,14 +1,16 @@
 ---
-title: Overview of Copilot in Power BI integration
+title: Copilot in Power BI integration
 description: Discover how Copilot in Power BI enhances data analytics by assisting with report creation and enabling data exploration.
 author: denglishbi
 ms.author: daengli
 ms.reviewer: sngun
+ms.service: powerbi
+ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 04/15/2025
 ---
 
-# Overview of Copilot in Power BI integration
+# Copilot in Power BI integration
 
 Copilot in Microsoft Fabric is a generative AI assistant that aims to enhance the data analytics experience in the Fabric platform. There are different Copilots in each of the Fabric workloads, including Power BI. Various Power BI personas including enterprise developers, self-service users, and business users can all use the various Copilot in Power BI experiences.
 
@@ -36,16 +38,16 @@ Copilot in Power BI works similarly to the general process of [Copilot in Fabric
 
 The following diagram depicts the different areas that differ between the Copilot experiences with Copilot in Power BI compared to Copilot in other workloads.
 
-:::image type="content" source="media/copilot-integration/copilot-experiences-diagram.svg" alt-text="Diagram depicting how Copilot experiences differ in the overall Copilot process.":::
+:::image type="content" source="media/copilot-integration/copilot-experiences-diagram.png" alt-text="Diagram depicting how Copilot experiences differ in the overall Copilot process.":::
 
 In summary, there are several areas that differ in the Copilot architecture depending on which Copilot experience that you use.
 
 - **Input:** Different experiences require a user to provide input in different ways.
   - The *ask data questions* experiences for models or reports require the user to write a prompt in the Copilot chat pane.
-  - The *generate measure descriptions* experience requires a user to push a button in the properties pane in the Model view of Power BI Desktop.
+  - The *generate measure descriptions* experience requires a user to push a button in the Properties pane in the Model view of Power BI Desktop.
 
 - **Preprocessing and grounding data:** Depending on the experience, Copilot retrieves different grounding data. Examples of preprocessing differences between the Copilot experiences in Power BI include:
-  - The *ask data questions to a semantic model* experience might use the semantic model schema or linguistic model to generate an appropriate query. A semantic model developer can control what part of the schema Copilot can see and use by hiding fields. They can also increase the usefulness of their Copilot outputs by optimizing their model to work better with Copilot, such as adding descriptions.
+  - The *ask data questions of a semantic model* experience might use the semantic model schema or linguistic model to generate an appropriate query. A semantic model developer can control what part of the schema Copilot can see and use by hiding fields. They can also increase the usefulness of their Copilot outputs by optimizing their model to work better with Copilot, such as adding descriptions.
   - The *report page summarization* experience might use report metadata or even specific data points from your report visuals to make the summary. A report developer can control what part of the report Copilot can see and use by hiding pages and visuals.
 
 - **Postprocessing:** Depending on the experience, Copilot handles the large language model (LLM) response in different ways. Examples of postprocessing differences between the Copilot experiences in Power BI include:
@@ -83,24 +85,29 @@ To use Copilot in Power BI, you have to first enable it. The steps to enable Cop
 There are also several other noteworthy scenarios to consider:
 
 - **P SKUs:** You can also use Copilot in Power BI if you have a P SKU.
-- **Cross-workspace consumption:** Some Copilot experiences will still work when you consume items located in workspaces that use a license mode that doesn't support Copilot, like Pro, Premium-Per User, or an unsupported SKU. For example, you can use Copilot in Power BI Desktop while consuming a semantic model published to workspaces that don't support Copilot. Similarly, you can also connect to these semantic models from certain Fabric items, like notebooks using Semantic Link.
-- **Cross-capacity consumption:** Fabric administrators can delegate Copilot consumption to a [Fabric Copilot capacity (FCC)](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/11/19/accelerate-app-innovation-with-an-ai-powered-data-platform/#:~:text=Fabric%20billing%20and%20consumption%20updates). This can be a useful way to prevent Copilot usage from impacting your main Fabric capacity that other Fabric workloads and items need to support business-critical processes or decision making.
+
+- **Cross-workspace consumption:** Some Copilot experiences will still work when you consume items located in workspaces that use a license mode that doesn't support Copilot, like Pro, Premium Per User, or an unsupported SKU. For example, you can use Copilot in Power BI Desktop while consuming a semantic model published to workspaces that don't support Copilot. Similarly, you can also connect to these semantic models from certain Fabric items, like notebooks using the Semantic Link feature.
+
+- **Cross-capacity consumption:** Fabric administrators can [delegate Copilot consumption to a Fabric Copilot capacity (FCC)](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/11/19/accelerate-app-innovation-with-an-ai-powered-data-platform/#:~:text=Fabric%20billing%20and%20consumption%20updates). This can be a useful way to prevent Copilot usage from impacting your main Fabric capacity that other Fabric workloads and items need to support business-critical processes or decision making.
 
 ## Responsible use of Copilot in Power BI
 
 The following considerations are important to keep in mind when you use Copilot in Power BI:
 
 - **Governance:** Ensure that you set up security groups and allow access to Copilot in Power BI only once users have completed training or demonstrated their understanding of the technology, its limitations, and its use cases. If you're enabling Copilot for the first time, use this approach to incrementally roll out Copilot in Power BI in phases when you're ready.
+
 - **Preparation of semantic models:** Significant effort must go into preparing your semantic model to work well with Copilot. These preparations include ensuring proper naming conventions, field descriptions, following good modeling practices, setting up linguistic modeling, and other steps. Neglecting these preparations can lead to Copilot producing more unhelpful and inaccurate results.
+
 - **Preparation of business users:** If business users should use Copilot in Power BI, you should explain to them when to use Copilot and when to simply look at and use their reports. Encouraging business users to use Copilot instead of interacting with reports can lead to increased capacity usage and inefficiency, as they might spend more time writing prompts and reading outputs than reading and interpreting visuals. Instead, they can use Copilot to help them find and interpret information in busy reports, particularly when they can't find what they need.
+
 - **Evaluation of outputs:** Copilot outputs can contain inaccurate and low-quality content. Outputs are also nondeterministic; meaning that it's possible that a user receives a different output from a Copilot experience, despite using the same prompt and grounding data. It's important to set expectations with users so that they know what kinds of outputs to expect from Copilot, and how they can evaluate or validate these outputs, for themselves.
 
-For more information, see [Privacy, security, and responsible use of Copilot in Fabric](/fabric/fundamentals/copilot-privacy-security) and [Copilot in Power BI](/fabric/fundamentals/copilot-power-bi-privacy-security).
+For more information, see [Privacy, security, and responsible AI use of Copilot in Fabric](/fabric/fundamentals/copilot-privacy-security) and [Copilot in Power BI](/fabric/fundamentals/copilot-power-bi-privacy-security).
 
 > [!WARNING]
 > Content filtering and responsible AI features automatically reject LLM calls that contain certain words and phrases that are potentially harmful or problematic. However, your model might contain valid uses of these words and phrases for certain analyses or scenarios. If your model schema or metadata contains any of these phrases, then you can't use Copilot in Power BI, as all of your prompts will result in errors.
 >
-> Separately, consider enabling Copilot in Fabric for specific security groups and workspaces only after you take the appropriate steps to prepare to use it responsibly. Enabling Copilot before you make these preparations can lead to unnecessary governance risks and challenges with adoption.**
+> Separately, consider enabling Copilot in Fabric for specific security groups and workspaces only after you take the appropriate steps to prepare to use it responsibly. Enabling Copilot before you make these preparations can lead to unnecessary governance risks and challenges with adoption.
 
 ## Copilot experiences in Power BI
 
@@ -115,5 +122,3 @@ There are different Copilot experiences in Power BI which you can use with eithe
 ## Related content
 
 - [Overview of Copilot in Power BI](copilot-introduction.md)
-- [Use Copilot with semantic models](copilot-semantic-models.md)
-- [Use Copilot with reports](copilot-reports-overview.md)

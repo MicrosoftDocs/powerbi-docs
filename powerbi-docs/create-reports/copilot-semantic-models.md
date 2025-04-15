@@ -4,6 +4,8 @@ description: Discover how to use Copilot in Power BI to enhance data analytics, 
 author: denglishbi
 ms.author: daengli
 ms.reviewer: sngun
+ms.service: powerbi
+ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 04/15/2025
 ---
@@ -65,18 +67,17 @@ The *Ask data questions* experience differs from the standard Copilot in Fabric 
 - **Input:** Users provide a written prompt asking a question or requesting specific information from the semantic model.
 
 - **Preprocessing and grounding data:** Copilot retrieves grounding data from the model schema. It performs schema reduction to try to restrict the context to what is most important. As context, Copilot takes the following information to try to improve the usefulness and specificity of the Copilot output:
+  The following information is included:
+  - Any report metadata on the current report page. If there's relevant report metadata, then Copilot in Power BI answers data questions from the report instead of the model.
+  - The conversation with Copilot in the current session. This includes any previous questions and outputs, which includes data points from data questions that Copilot previously answered.
+  - The semantic model schema, which includes tables, rows, columns, measures, and other objects (like relationships, calculation groups, and so forth).
+  - The full model linguistic schema.
+  - Certain semantic model properties, including descriptions, data types, format strings, and data category.
 
-  - The following information is included:
-    - Any report metadata on the current report page. If there's relevant report metadata, then Copilot in Power BI answers data questions from the report instead of the model.
-    - The conversation with Copilot in the current session. This includes any previous questions and outputs, which includes data points from data questions that Copilot previously answered.
-    - The semantic model schema, which includes tables, rows, columns, measures, and other objects (like relationships, calculation groups, and so forth).
-    - The full model linguistic schema.
-    - Certain semantic model properties, including descriptions, data types, format strings, and data category.
-
-  - The following information is excluded:
-    - Any report page that is hidden.
-    - Any field (measure or column) in the model that is hidden.
-    - Any table in the model that is marked as *private*.
+  The following information is excluded:
+  - Any report page that's hidden.
+  - Any field (measure or column) in the model that's hidden.
+  - Any table in the model that's marked as *private*.
 
 - **Output:** The output that Copilot provides contains several parts:
   - **Visual:** Copilot answers the data question by rendering a Power BI visual, such as a card, a line chart, or a table. Copilot chooses the visual and its formatting, which the user can't control or request in their prompt. The visual might time out if the underlying model, DAX, or data isn't optimized or is too complex.
@@ -97,9 +98,9 @@ A user can only really produce incorrect results by writing a poor prompt. Examp
 
 - **Vague or incomplete prompts:** If you inaccurately or incompletely describe the desired output or you use ambiguous language in your prompt, then Copilot is less likely to produce a useful result. When writing prompts, you should try to be as specific and descriptive as possible in stating your desired result.
 
-- **Incorrect prompts:** If you make spelling mistakes when you refer to a measure, column, or table name, then Copilot might not refer to the correct field. When writing prompts, you should ensure that the fields you mention in your prompt refer correctly to the fields in the semantic model schema. This includes avoiding abbreviations, acronyms, or excessive punctuation. Note that you can also use synonyms to refer to fields, but there's no way to validate which synonyms are available for a given field (like how you can see descriptions when hovering on a measure or column in the *Data pane*).
+- **Incorrect prompts:** If you make spelling mistakes when you refer to a measure, column, or table name, then Copilot might not refer to the correct field. When writing prompts, you should ensure that the fields you mention in your prompt refer correctly to the fields in the semantic model schema. This includes avoiding abbreviations, acronyms, or excessive punctuation. Note that you can also use synonyms to refer to fields, but there's no way to validate which synonyms are available for a given field (like how you can see descriptions when hovering on a measure or column in the Data pane).
 
-- **Excessive or inappropriate grounding data:** If you submit a prompt via the Copilot chat pane, then Copilot takes the chat history from that session as grounding data during preprocessing. Depending on what that chat history entails, you might get different or unexpected results. When writing prompts, you should take into consideration that any previous prompts and outputs will be used as grounding data. To avoid this, you can select the Copilot button to close and reopen the Copilot chat pane, clearing the Chat history before you submit a new prompt.
+- **Excessive or inappropriate grounding data:** If you submit a prompt via the Copilot chat pane, then Copilot takes the chat history from that session as grounding data during preprocessing. Depending on what that chat history entails, you might get different or unexpected results. When writing prompts, you should take into consideration that any previous prompts and outputs will be used as grounding data. To avoid this, you can select the Copilot button to close and reopen the Copilot chat pane, clearing the chat history before you submit a new prompt.
 
 The following image shows an example of an incorrect output from Copilot due to a poor user prompt:
 
@@ -139,7 +140,7 @@ The following image shows an example of Copilot producing inaccurate or inapprop
 
 :::image type="content" source="media/copilot-semantic-models/copilot-chat-pane-03.svg" alt-text="Screenshot showing an example of a user asking a data question that Copilot answers incorrectly with the semantic model.":::
 
-In this example, the image shows the prompts: *Question: Which country produced the highest profit in 2024?* and *Question: Which country produced the highest profit in 2023?* In this example, the outputs show Copilot first asking for clarification after it says that there's no data for 2024 in the model. However, there *is* data in the model in 2024 when filtering to that year using the date table. Copilot then returns a result filtering the *Birthday* column from the *Customer* table, rather than the marked date table in the model. While the user could produce a more specific prompt or the developer could hide the *Birthday* field, in this case, Copilot should produce the expected result.
+In this example, the image shows the prompts: *Question: Which country produced the highest profit in 2024?* and *Question: Which country produced the highest profit in 2023?* The outputs show Copilot first asking for clarification after it says that there's no data for 2024 in the model. However, there *is* data in the model in 2024 when filtering to that year using the date table. Copilot then returns a result filtering the *Birthday* column from the *Customer* table, rather than the marked date table in the model. While the user could produce a more specific prompt or the developer could hide the *Birthday* field, in this case, Copilot should produce the expected result.
 
 To mitigate this, it's important to train users to critically appraise any outputs that they obtain from Copilot in Fabric and Power BI, and what to do to troubleshoot unexpected results or to try a new prompt by closing and reopening the Copilot chat pane or window.
 
@@ -149,7 +150,7 @@ While developing a semantic model, you can use Copilot to generate DAX queries i
 
 The following image shows an example of a user asking Copilot to generate a DAX query.
 
-:::image type="content" source="media/copilot-semantic-models/copilot-dax-query-01" alt-text="Screenshot showing an example of a user asking for a DAX query that Copilot answers in the DAX query view.":::
+:::image type="content" source="media/copilot-semantic-models/copilot-dax-query-01.svg" alt-text="Screenshot showing an example of a user asking for a DAX query that Copilot answers in the DAX query view.":::
 
 The image depicts the following prompt: *YTD profit by month in 2023.* The user could then ask Copilot to explain the query, as depicted in the following image.
 
@@ -204,19 +205,19 @@ Copilot in the DAX query view has the following specifics to keep in mind:
 
 - **Preprocessing and grounding data:** Copilot retrieves grounding data from the model schema and anything in the query window. Copilot takes the following information as context to try to improve the usefulness and specificity of the Copilot output:
 
-  - The following information is included:
-    - Any text that's in the current DAX query window, including DAX code you've written, comments, or previous DAX queries that you generated.
-    - The conversation history with Copilot from the currently active session. This includes any previous questions and outputs, but not data points.
-    - The semantic model schema, which includes tables, rows, columns, measures, and other objects (like relationships, calculation groups, and so forth). This includes all objects irrespective of whether they're hidden or not (except when you have a live connection to a shared semantic model).
-    - Synonyms from the model linguistic schema.
-    - Certain semantic model properties, including DAX expressions, descriptions (truncated after the first 200 characters), data types, format strings (and format string expressions), and data category.
-    - Some statistical aggregations like minimum and maximum values of columns from your model that might be used in a query. These are data points sent to Copilot as context.
-    - Copilot might also send the query result back to Azure OpenAI to be able to explain the generated query or its results.
+  The following information is included:
+  - Any text that's in the current DAX query window, including DAX code you've written, comments, or previous DAX queries that you generated.
+  - The conversation history with Copilot from the currently active session. This includes any previous questions and outputs, but not data points.
+  - The semantic model schema, which includes tables, rows, columns, measures, and other objects (like relationships, calculation groups, and so forth). This includes all objects irrespective of whether they're hidden or not (except when you have a live connection to a shared semantic model).
+  - Synonyms from the model linguistic schema.
+  - Certain semantic model properties, including DAX expressions, descriptions (truncated after the first 200 characters), data types, format strings (and format string expressions), and data category.
+  - Some statistical aggregations like minimum and maximum values of columns from your model that might be used in a query. These are data points sent to Copilot as context.
+  - Copilot might also send the query result back to Azure OpenAI to be able to explain the generated query or its results.
 
-  - The following information is excluded:
-    - The conversation history with Copilot in the current session when you select the Retry button.
-    - Any table in the model that's marked as *private.*
-    - Comments in DAX expressions.
+  The following information is excluded:
+  - The conversation history with Copilot in the current session when you select the Retry button.
+  - Any table in the model that's marked as *private.*
+  - Comments in DAX expressions.
 
 - **Output:** The output that Copilot provides contains either DAX code and DAX comments in the DAX query window, or explanations of the DAX in the Copilot input box. A user typically must then choose to run and keep the query themselves.
 
@@ -321,7 +322,7 @@ Given this grounding data, you can ensure that suggested synonyms are useful by:
 
 ## Consume a semantic model by using Copilot
 
-You can use Copilot to pose data questions to your semantic models during consumption. This experience is available whenever you use a report, including in [Power BI Desktop](todo:link-to-heading), a [published report](todo:link-to-heading) in a workspace, app, or OrgApp item, or in the [Power BI mobile app](todo:link-to-heading).
+You can use Copilot to pose data questions to your semantic models during consumption. This experience is available whenever you use a report, including in [Power BI Desktop](#power-bi-desktop), a [published report](#published-report) in a workspace, app, or OrgApp item, or in the [Power BI mobile app](power-bi-mobile-app).
 
 Consumers might ask data questions of a semantic model in the following scenarios:
 
@@ -332,16 +333,16 @@ Consumers might ask data questions of a semantic model in the following scenario
 > [!NOTE]
 > See [Ask data questions](#ask-data-questions) earlier in this article about developing a semantic model with help from Copilot. The diagrams and guidance there also apply when using the ask data questions experience to consume a semantic model.
 
-For more information about how you can use Copilot in reports, which consume a semantic model, see the article [Use Copilot with Power BI reports](copilot-reports-overview.md) .
+For more information about how you can use Copilot in reports, which consume a semantic model, see the article [Use Copilot with Power BI reports](copilot-reports-overview.md).
 
 ### Prepare a semantic model for Copilot consumption
 
-You should only use Copilot to consume semantic models once you've taken the necessary steps to [update your data model to work well with Copilot](copilot-evaluate-data.md).
+You should only use Copilot to consume semantic models once you've taken the necessary steps to [update your data model to work well with Copilot for Power BI](copilot-evaluate-data.md).
 
 > [!TIP]
 > Consider using [tags to label semantic models](/fabric/governance/tags-apply) as ready for Copilot consumption. This can be a convenient way to allow data consumers to identify models that they can use with Copilot and expect better results. Alternatively, you can also consider the readiness of a semantic model for use with Copilot as a criteria for its [endorsement](/fabric/governance/endorsement-overview) to promoted or even [certified](/fabric/admin/endorsement-certification-enable) status.
 >
-> If your models aren't ready for use with Copilot in Power BI, but users still want the flexibility to interrogate the data themselves, consider using [personalize visuals](power-bi-personalize-visuals?tabs=powerbi-desktop). Alternatively, you can show users how to use explorations of the data or to connect to the semantic model from Power BI Desktop or Excel to create their own reports.
+> If your models aren't ready for use with Copilot in Power BI, but users still want the flexibility to interrogate the data themselves, consider using [personalize visuals](power-bi-personalize-visuals.md?tabs=powerbi-desktop). Alternatively, you can show users how to use [explorations of the data](../consumer/explore-data-service.md) or to [connect to the semantic model](../connect-data/desktop-report-lifecycle-datasets.md) from Power BI Desktop or Excel to create their own reports.
 
 ### Power BI Desktop
 
@@ -367,6 +368,6 @@ In the Power BI mobile app, you can also ask data questions for any report by us
 
 ## Related content
 
-- [Copilot Integration](copilot-integration.md)
-- [Overview of Copilot in Power BI](copilot-integration.md)
-- [Use Copilot with reports](copilot-reports-overview.md)
+- [Copilot in Power BI integration](copilot-integration.md)
+- [Overview of Copilot in Power BI](copilot-introduction.md)
+- [Use Copilot with Power BI reports](copilot-reports-overview.md)
