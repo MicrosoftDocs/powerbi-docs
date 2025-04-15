@@ -49,7 +49,7 @@ To parameterize a DAX query for a PBI dataset of a Power BI paginated report, yo
 
 1. On the DAX query designer toolbar, click **Query Parameters** (![Icon for the Query Parameters dialog box.](media/icon-query-parameter.gif "Icon for the Query Parameters dialog box.")). The Query Parameters dialog box opens.  
 
-1. In the **Parameter** column, click **<Enter Parameter>**, and then type the name of a parameter.  
+1. In the **Parameter** column, click **Enter Parameter**, and then type the name of a parameter.  
 
 1. In the **Dimension** column, choose a value from the drop-down list.  
 
