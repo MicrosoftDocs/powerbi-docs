@@ -51,18 +51,19 @@ You can start your experience with Explore from various entry points:
 
 - **Artifact**:
 
-   1. Select **...** for more options.
-   1. Then select **Explore this data**.
-
   - **From a list**:
-  
+     1. Select **...** for more options.
+     1. Then select **Explore this data**.
+
    :::image type="content" source="media/explore-data-service/from-artifact-in-list.png" alt-text="Screenshot showing exploring data from an artifact in a list." lightbox="media/explore-data-service/from-artifact-in-list.png":::
 
   - **From a report**:
+     1. Select **Explore this data**.
 
     :::image type="content" source="media/explore-data-service/explore-data-report-menu-bar.png" alt-text="Screenshot showing Explore this data option on the menu bar.":::
 
   - **From a datamart**:
+     1. Select **Explore this data**.
 
     :::image type="content" source="media/explore-data-service/sql-query-explore-data.png" alt-text="Screenshot showing Explore this data for a SQL query.":::
 
