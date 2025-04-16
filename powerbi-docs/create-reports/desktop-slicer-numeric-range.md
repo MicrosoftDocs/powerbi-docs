@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 04/16/2025
 LocalizationGroup: Create reports
 ---
 # Create a numeric or date range slicer in Power BI
