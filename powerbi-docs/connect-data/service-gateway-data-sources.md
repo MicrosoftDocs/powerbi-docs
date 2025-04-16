@@ -107,7 +107,7 @@ After you add a data source to a gateway, you give users and security groups acc
 You can also give users and security groups administrative access to the gateway.
 
 > [!NOTE]
-> Users with access to the data source can associate datasets to the data source, and connect, based on either the stored credentials or SSO you selected while creating a data source.
+> Users with access to the data source can associate datasets to the data source, and connect, based on either the stored credentials or SSO you selected while creating a data source. Before you share a data source connection, always ensure the user or group account you’re sharing are trusted and has only the privileges it needs (ideally a service account with narrowly scoped rights). 
 
 ### Add users to a data source
 
