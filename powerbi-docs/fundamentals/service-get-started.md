@@ -115,7 +115,7 @@ Create a Gross Sales report.
  ```
 
 Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
-
+## https://aka.ms/copilot-general-use-faqs goes to Github Copilot FAQ. Maybe this Copilot FAQ should be https://learn.microsoft.com/en-us/microsoft-copilot-studio/faqs-copilot instead?
 
 Copilot creates a report page and names it *Gross Sales Report*. 
 
