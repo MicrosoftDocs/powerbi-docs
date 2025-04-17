@@ -96,4 +96,4 @@ If you share a computer, we recommend signing out each time you close Power BI. 
 
 ## Related content
 
-- [Power BI Basic concepts](end-user-basic-concepts.md)
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)

@@ -82,4 +82,3 @@ Sometimes you want to sort your data by using a field that isn't included in the
 
 - More about [Interactions with visuals in reports, dashboards, and apps](end-user-visualizations.md).
 
-- [Basic concepts for the Power BI service business user](end-user-basic-concepts.md).

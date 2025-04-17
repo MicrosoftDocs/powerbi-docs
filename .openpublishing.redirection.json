@@ -4517,7 +4517,7 @@
         {
             "source_path": "powerbi-docs/service-basic-concepts.md",
             "redirect_url": "/power-bi/fundamentals/service-basic-concepts",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-features-license-type.md",
@@ -6450,6 +6450,11 @@
             "source_path": "powerbi-docs/support/service-troubleshoot-signup.md",
             "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
-        }            
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-basic-concepts.md",
+            "redirect_url": "/power-bi/fundamentals/service-basic-concepts",
+            "redirect_document_id": true
+        }               
   ]
 }

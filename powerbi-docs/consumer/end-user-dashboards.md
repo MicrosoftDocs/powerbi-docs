@@ -20,7 +20,7 @@ A Power BI *dashboard* is a single page, often called a canvas, that uses visual
 
 :::image type="content" source="media/end-user-dashboards/power-bi-full-dashboard.png" alt-text="Screenshot showing the Sales and Marketing Sample dashboard."lightbox="media/end-user-dashboards/power-bi-full-dashboard.png#lightbox":::
 
-The visualizations on the dashboard are called *tiles*. Report designers *pin* tiles to the dashboard. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, start with [Power BI basic concepts](end-user-basic-concepts.md) to get a good foundation. Hovering over an element on a dashboard displays a tooltip.
+The visualizations on the dashboard are called *tiles*. Report designers *pin* tiles to the dashboard. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, start with [Basics of the Power BI service](../fundamentals/service-basic-concepts.md) to get a good foundation. Hovering over an element on a dashboard displays a tooltip.
 
 > [!NOTE]
 >
