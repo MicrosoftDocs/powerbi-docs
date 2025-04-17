@@ -275,28 +275,7 @@ When live connected to a published Power BI semantic model, you can create repor
 - **Write DAX queries requires write permission on the semantic model.** Workspace viewers have to use Power BI Desktop with live connection to the semantic model to write DAX queries.
 
 ### Link sharing of a query
-A DAX query can be added as a parameter in the URL linking to DAX query view in web using ?query= after the URL. The query text must be encoded in the URL. First, the query text is compressed by using GZIP format. Second, the compressed query text is Base64 encoded to be used in the URL. This ensures DAX queries can be added to the URL without taking up too much of the URL and in a format compatible with being added to a URL.
-The query:
-
-```dax
-EVALUATE
-    {
-        "Hello world!"
-    }
-```
-Should be GZIP/Base64 encoded to look like this to be added to the URL query parameter: **H4sIAGzZ0WcC%2F%2BNyDXP0CXUMceXirObi5FTySM3JyVcozy%2FKSVFU4uKs5VIAAgCqqmGfJQAAAA%3D%3D**
-
-All together in a URL like this: 
-
-```dax
-https://app.powerbi.com/groups/<workspace ID or GUID>/modeling/<semantic model ID or GUID>/daxQueryView?query=H4sIAGzZ0WcC%2F%2BNyDXP0CXUMceXirObi5FTySM3JyVcozy%2FKSVFU4uKs5VIAAgCqqmGfJQAAAA%3D%3D
-```
-
-The URL should have the workspace ID and semantic model ID GUIDs corresponding the semantic model the query should use.
-
-:::image type="content" source="media/dax-query-view/dax-query-view-web-link-sharing.png" alt-text="Screenshot of the DAX query view in web with link sharing URL." lightbox="media/dax-query-view/dax-query-view-web-link-sharing.png":::
-
-Semantic link labs has a function to help you generate these link in a Fabric notebook at [https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples#generate-a-url-for-dax-query-view](https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples#generate-a-url-for-dax-query-view). 
+A DAX query added as a parameter using ?query= after the URL linking to DAX query view in the web is no longer supported. 
 
 ## Considerations and limitations
 
@@ -306,7 +285,6 @@ Considerations to keep in mind:
 - Lightbulb quick actions for measures only displays when no DEFINE statement is in the query tab.
 - Command palette shows some commands that don't yet work.
 - Result grid won't show columns and measures with specified format, such as Currency, Whole number with thousands, etc.
-- *Download this file* from Power BI service won't include the DAX queries saved in published semantic model.
 - Setting up the *initial* Git integration *from* the workspace won't include DAX queries saved in published semantic model. Learn more at [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
 
 And there are some limitations to keep in mind:
