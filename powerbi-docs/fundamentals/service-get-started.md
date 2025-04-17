@@ -114,10 +114,7 @@ You can get AI assistance from Copilot. Generate a Power BI report based on gros
 Create a Gross Sales report.
  ```
 
-Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
-
-
-Copilot creates a report page and names it *Gross Sales Report*. 
+Copilot creates a report page and names it *Gross Sales Report*. Copilot is powered by AI, so it's important to verify the accuracy of results. For more information, see [Copilot for Microsoft Fabric and Power BI: FAQ](https://aka.ms/copilot-general-use-faqs).
 
 ### Pin a report visual to a dashboard
 
