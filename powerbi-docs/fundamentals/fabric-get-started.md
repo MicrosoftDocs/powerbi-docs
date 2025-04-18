@@ -41,6 +41,8 @@ We start by creating a lakehouse to store our data, Dataflows Gen2 to prepare an
 
     :::image type="content" source="media/fabric-get-started/show-all-item.png" alt-text="Screenshot of More options in the new item menu.":::
 
+   ## There isn't "More Options" in the current version of Fabric. It goes directly to All Items.
+
 1. In the **New** item creation screen, select **Lakehouse** under the Data engineering category.
 
     :::image type="content" source="media/fabric-get-started/new-lakehouse.png" alt-text="Screenshot of Data engineering items.":::
