@@ -141,9 +141,9 @@
           - name: 1 - Copilot in Fabric overview
             href: /fabric/fundamentals/copilot-fabric-overview?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
           - name: 2 - How Copilot works in Microsoft Fabric
-            href: /fabric/fundamentals/copilot-fabric-overview?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+            href: /fabric/fundamentals/how-copilot-works?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
           - name: 3 - Copilot glossary and terms
-            href: /fabric/fundamentals/copilot-fabric-overview?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+            href: /fabric/fundamentals/copilot-fabric-glossary?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
           - name: 4 - Copilot in Power BI integration
             href: copilot-integration.md
           - name: 5 - Use Copilot with semantic models
