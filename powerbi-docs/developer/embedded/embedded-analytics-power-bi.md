@@ -74,6 +74,7 @@ The following table provides a comparison between the two Power BI embedded anal
 
 > [!TIP]
 > Get started with the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup).
+> ## https://app.powerbi.com/embedsetup isn't available anymore.
 
 ## What are Power BI capacities?
 
