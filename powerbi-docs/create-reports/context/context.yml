@@ -4,4 +4,5 @@
 brand: power-bi
 breadcrumb_path: ../breadcrumb/toc.yml
 toc_rel: ../toc.yml
-uhfHeaderId: MSDocsHeader-MSPowerBI
+#toc_rel: ../toc.yml
+#uhfHeaderId: MSDocsHeader-MSPowerBI
