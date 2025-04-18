@@ -32,7 +32,7 @@ The Microsoft Cost Management connector uses OAuth 2.0 for authentication with A
 
 ## Connect using Microsoft Cost Management
 
-To use the **Azure Cost Management connector** in Power BI Desktop, take the following steps:
+To use the **Microsoft Cost Management connector** in Power BI Desktop, take the following steps:
 
 1. In the **Home** ribbon, select **Get Data**.
 2. Select **Azure** from the list of data categories.
@@ -79,7 +79,7 @@ In the Azure Cost Management dialog in Power BI Desktop:
 
 To connect to a **billing profile**, you must retrieve your **Billing profile ID** and **Billing account ID** from the Azure portal:
 
-1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management**.
+1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
 2. Select your Billing profile.
 3. Select the **Settings** blade, then select **Properties**.
 4. Under **Billing profile**, copy the **ID**.
@@ -192,7 +192,6 @@ You might receive a *400 bad request* from the **RI usage details** when you try
        riusagedetails = Table.Combine({riusagedetails1, riusagedetails2})
    in
        riusagedetails
-   
    ```
 
 4. Once you've updated the code with the appropriate update from the previous step, select **Done**, then select **Close & Apply**.
