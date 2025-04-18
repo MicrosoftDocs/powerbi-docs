@@ -246,7 +246,7 @@
         href: power-bi-create-mobile-optimized-report-best-practices.md
   - name: Copilot for Power BI
     items: 
-      - name: Copilot for Fabric and Power BI
+      - name: Get started with Copilot
         items: 
         - name: Intro to Copilot for Power BI
           href: copilot-introduction.md
