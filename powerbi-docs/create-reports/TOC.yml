@@ -151,11 +151,11 @@
           - name: 6 - Use Copilot with Power BI reports
             href: copilot-reports-overview.md
           - name: Enable Copilot in Fabric
-            href: /fabric/get-started/copilot-enable-fabric?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+            href: /fabric/fundamentals/copilot-enable-fabric?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
           - name: Privacy, security, and responsible use for Copilot in Fabric
-            href: /fabric/get-started/copilot-power-bi-privacy-security?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+            href: /fabric/fundamentals/copilot-power-bi-privacy-security?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
           - name: Copilot in Fabric and Power BI FAQ
-            href: /fabric/get-started/copilot-faq-fabric?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+            href: /fabric/fundamentals/copilot-faq-fabric?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Copilot for Power BI Mobile
           href: ../consumer/mobile/mobile-apps-copilot.md
     - name: Enable automatic page refresh
