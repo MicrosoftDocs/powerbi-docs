@@ -51,29 +51,29 @@ This section describes the steps necessary to connect to an MCA account.
 
 To connect to a billing account, you need to retrieve your **Billing account ID** from the Azure portal:
 
-6. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
-7. Select your Billing profile.
-8. Select the **Settings** blade, then select **Properties**.
-9. Under **Billing profile**, copy the **ID**.
+1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
+2. Select your Billing profile.
+3. Select the **Settings** blade, then select **Properties**.
+4. Under **Billing profile**, copy the **ID**.
 
    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="Screenshot of Cost management billing profile.":::
 
 In the Azure Cost Management dialog in Power BI Desktop:
 
-1. Under **Choose Scope**, select **Manually Input Scope**.
-2. Input the connection string as shown in the following example, replacing *{billingAccountId}* with the data copied in the previous step.
+5. Under **Choose Scope**, select **Manually Input Scope**.
+6. Input the connection string as shown in the following example, replacing *{billingAccountId}* with the data copied in the previous step.
 
     ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}```
 
     Alternatively, for **Choose Scope**, select **Enrollment Number** and input the billing account ID string as copied in the previous step.
 
-3. Enter the number of months and select **OK**.
+7. Enter the number of months and select **OK**.
 
     :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-05.png" alt-text="Screenshot of Azure Cost Management dialog with number of months input.":::
 
     Alternatively, if you want to download less than a month's worth of data you can set *Number of months* to zero, then specify a date range using *Start Date* and *End Date* values that equate to less than 31 days.
 
-4. When prompted, sign in with your Azure user account and password. You must have access to the billing account scope to successfully access the billing data.
+8. When prompted, sign in with your Azure user account and password. You must have access to the billing account scope to successfully access the billing data.
 
 ### Connect to a billing profile
 
@@ -89,20 +89,22 @@ To connect to a **billing profile**, you must retrieve your **Billing profile ID
 
 In the Azure Cost Management dialog in Power BI Desktop:
 
-1. Under **Choose Scope**, select **Manually Input Scope**.
-2. Enter the connection string as shown in the following example, replacing *{billingAccountId}* and *{billingProfileId}* with the data copied in the previous step.
+6. Under **Choose Scope**, select **Manually Input Scope**.
+7. Enter the connection string as shown in the following example, replacing *{billingAccountId}* and *{billingProfileId}* with the data copied in the previous step.
 
    ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}```
 
-3. Enter the number of months and select **OK**.
-4. When prompted, sign in with your Azure user account and password. You must have access to the billing profile to successfully access the billing profile data.
+8. Enter the number of months and select **OK**.
+9. When prompted, sign in with your Azure user account and password. You must have access to the billing profile to successfully access the billing profile data.
 
 ## Connect to an Enterprise Agreement account
 
 To connect with an EA account, you can get your enrollment ID from the Azure portal:
 
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
+
 2. Select your billing account.
+
 3. From the **Overview** blade, copy the **Billing account ID**.
 
 In the Azure Cost Management dialog in Power BI Desktop:
