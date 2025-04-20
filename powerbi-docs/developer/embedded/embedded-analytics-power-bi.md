@@ -72,9 +72,6 @@ The following table provides a comparison between the two Power BI embedded anal
 |App users don't need a license         |Each app user needs a Power BI license         |
 |Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate         |
 
-> [!TIP]
-> Get started with the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup).
-
 ## What are Power BI capacities?
 
 A capacity is a set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and semantic models to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.  
