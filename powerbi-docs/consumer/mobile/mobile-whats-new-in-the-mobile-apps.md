@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 03/19/2025
+ms.date: 04/20/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,14 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## April 2025
+
+### Mobile layout auto-create is now generally available
+
+The auto-create mobile layout feature is now GA! This feature enables you to easily create a mobile-optimized layout for any new or existing report page, with just the push of a button! Check out our [documentation](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/auto-create-mobile-layout-option.png" alt-text="Screenshot showing the auto-create mobile layout option." lightbox="./media/mobile-whats-new-in-the-mobile-apps/auto-create-mobile-layout-option.png":::
 
 ## March 2025
 
