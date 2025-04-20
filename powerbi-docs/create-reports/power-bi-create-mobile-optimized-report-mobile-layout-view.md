@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/25/2024
+ms.date: 04/20/2025
 LocalizationGroup: Create reports
 ---
 # Mobile layout view
@@ -72,8 +72,6 @@ The feature works best with simple reports. For simple reports, the autogenerate
 * Too much overlaying is a challenge for the engine. It will do its best, but the result might not be optimal.
 
 * If there are too many images, not all of them might fit on the mobile layout canvas, in which case you'll still see unplaced visuals on the Page visuals pane after choosing the auto create option. Keep in mind that the engine places both visible and hidden images on the canvas, so if there are many hidden images (such as can be the case if images are used for layout purposes), it might look like there's room on the canvas when in fact there isn't.
-
-The auto-create mobile layout feature is in preview. It's enabled in the Power BI service. In Power BI Desktop the feature is controlled by the **Auto-create mobile layout** preview feature switch that can be accessed by navigating to **File** > **Options and settings** > **Options** > **Preview features**. The feature switch is enabled by default.
 
 ## Considerations and limitations
 
