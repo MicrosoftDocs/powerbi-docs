@@ -106,7 +106,7 @@ To change your Microsoft Entra app permissions programmatically, you'll need to 
     > [!NOTE]
     >
     > * If you're using a **master user**, to avoid being prompted for consent by Microsoft Entra ID, you need to grant permissions to the master account.
-    > * The `resourceId` *a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Microsoft Entra ID. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
+    > * The `resourceId` is tenant dependent and not universal. Its value is the *objectId* of the *Power BI Service* application in Microsoft Entra ID. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
 
 4. Grant app permissions to Microsoft Entra ID, by assigning a value to `consentType`.
 
