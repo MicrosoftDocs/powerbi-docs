@@ -21,7 +21,7 @@ For related "What's New" information, see:
 
 ## April 2025
 
-### Mobile layout auto-create is now Generally Available!
+### Mobile layout auto-create is now generally available
 
 The auto-create mobile layout feature is now GA! This feature enables you to easily create a mobile-optimized layout for any new or existing report page, with just the push of a button! Check out our [documentation](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation)!
 
