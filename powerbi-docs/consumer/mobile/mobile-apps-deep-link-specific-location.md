@@ -64,7 +64,7 @@ The query parameters are:
 | **tileObjectId** | 36 character guid | Tile object ID (if action is OpenTile)<br>Example: **tileObjectId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb** |
 | **reportPage** | string | Page name if you want to open a specific report page. (if action is OpenReport)<br>Example: **reportPage=ReportSection6**  |
 | **bookmarkGuid** | 36 character guid | Bookmark ID, if you want to open a specific bookmarked view. (if action is OpenReport)<br>Example: **bookmarkGuid=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb**<br>**Note**: Values of the format *BookmarkXXXXXXXXXXXXXXXXXXX* aren't supported. |
-| **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization)<br>Example: **aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb** |
+| **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization)<br>Example: **00aa00aa-bb11-cc22-dd33-44ee44ee44ee** |
 | **fullScreen** | Boolean | When true, opens the item in full screen mode. Supported for reports, scorecards, dashboards, and apps (if the app landing item is one of the supported items).<br>Example: **fullScreen=1** |
 
 >[!NOTE]

@@ -78,9 +78,9 @@ sections:
           Power BI uses Azure Storage GEO replication to perform the failover. Such replications usually have a return point of 15 minutes, however, Power BI can't guarantee a timeframe. For more information, see [Azure storage redundancy](/azure/storage/common/storage-redundancy).
           
       - question: |
-          What happens to workspaces and reports if my Premium capacity becomes unavailable? 
+          What happens to workspaces, semantic models, and reports if my Premium capacity becomes unavailable? 
         answer: |
-          If a Premium capacity becomes unavailable, workspaces and reports remain accessible and visible to all.
+          If a Premium capacity becomes unavailable, workspaces, semantic models, and reports remain accessible and visible to all. Users can continue to query their semantic models. For import mode, the data is as current as the most recent refresh operation. In DirectQuery mode and in Direct Lake mode, the semantic model requires the data sources to be available. 
 
       - question: |
           When does my Power BI instance return to the original region?
