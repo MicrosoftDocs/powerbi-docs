@@ -71,7 +71,7 @@ A numeric range slicer snaps to whole numbers if the data type of the underlying
 
 ## Display formatting with the date range slicer
 
-When you use a slicer to display or set a range of dates, the dates display in the *Short Date* format. The user's browser or operating system locale determines the date format. As such, it will be the display format no matter what the data type settings are for the underlying data or model.
+When you use a slicer to display or set a range of dates, the dates display in the *Short Date* format. The user's browser or operating system locale determines the date format. As such, it is the display format no matter what the data type settings are for the underlying data or model.
 
 You could, for example, have a long date format for the underlying data type. In this case, a date format such as *dddd, MMMM d, yyyy* would format a date in other visuals or circumstances as *Wednesday, March 14, 2001*. But in the date range slicer, that date displays in the slicer as *03/14/2001*.
 
