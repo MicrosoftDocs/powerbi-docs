@@ -210,6 +210,12 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
 
     > [!IMPORTANT]
     > Once you upgrade to PBIR, you can't revert back to PBIR-Legacy. If you think you might want to revert back to PBIR-Legacy, save a copy of your PBIP files first.
+    
+    > [!IMPORTANT]
+    > Power BI Desktop automatically creates a backup of the report before upgrading to PBIR, and this backup is retained for 30 days.
+    > Backup locations:  
+    > - Microsoft Store version: `%USERPROFILE%\Microsoft\Power BI Desktop Store App\TempSaves\Backups`  
+    > - Executable installer version: `%USERPROFILE%\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Backups`
 
 The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* folder containing the PBIR representation of the report.
 
