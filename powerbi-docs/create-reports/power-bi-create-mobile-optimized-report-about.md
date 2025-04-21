@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/20/2025
+ms.date: 04/21/2025
 LocalizationGroup: Create reports
 ---
 # About mobile-optimized Power BI reports
