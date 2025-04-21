@@ -76,11 +76,7 @@ Ad hoc calculations currently require using **Edit Mode** of reports using Copil
 
 ## Unsupported question types
 
-Copilot can't currently answer questions that require on-the-fly calculations. It also can't generate new insights like anomaly detection, forecasting, or finding key influencers. The specific questions it can handle depend on your model and report visuals. However, here are some examples of unsupported questions:
-
-- **"Show me the difference in performance between sales in Europe and in America over time"**
-
-     This question requires calculating sales for each region and finding the difference which isn't a current measure in the model.
+Copilot can't currently answer questions that require generating new insights like anomaly detection, forecasting, or finding key influencers. The specific questions it can handle depend on your model and report visuals. However, here are some examples of unsupported questions:
 
 - **"Why do our sales go down every July?”**
 
