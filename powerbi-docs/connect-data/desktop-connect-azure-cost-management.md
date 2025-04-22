@@ -85,8 +85,6 @@ To connect to a **billing profile**, you must retrieve your **Billing profile ID
 4. Under **Billing profile**, copy the **ID**.
 5. Under **Billing account**, copy the **ID**.
 
-   :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-04.png" alt-text="Screenshot of Azure Cost Management billing account information":::
-
 In the Azure Cost Management dialog in Power BI Desktop:
 
 6. Under **Choose Scope**, select **Manually Input Scope**.
