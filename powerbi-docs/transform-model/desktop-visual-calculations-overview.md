@@ -135,19 +135,55 @@ Many functions have an optional **:::no-loc text="Axis":::** parameter, which ca
 
 ## :::no-loc text="Reset":::
 
-Many functions have an optional **:::no-loc text="Reset":::** parameter that is available in visual calculations only. :::no-loc text="Reset"::: influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. The :::no-loc text="Reset"::: parameter is set to None by default, which means the visual calculation is never restarted. Reset expects there to be multiple levels on the axis. If there's only one level on the axis, you can use [PARTITIONBY](/dax/partitionby-function-dax). The following list describes the valid values for the :::no-loc text="Reset"::: parameter:
+Many functions have an optional **:::no-loc text="Reset":::** parameter that is available in visual calculations only. :::no-loc text="Reset"::: influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. It does this by partitioning the target column. As calculations are performed within a partition, how the column is divided in partitions decides if a calculation resets.
+The :::no-loc text="Reset"::: parameter is set to **:::no-loc text="NONE":::** by default, which means the visual calculation is never restarted.
+The :::no-loc text="Reset"::: parameter accepts different types of values:
+* integers
+* column references
+* Special [synonyms](#synonyms): :::no-loc text="HIGHESTPARENT":::, :::no-loc text="LOWESTPARENT":::, :::no-loc text="NONE":::
 
-* **:::no-loc text="NONE":::** is the default value and doesn't reset the calculation.
-* **:::no-loc text="HIGHESTPARENT":::** resets the calculation when the value of the highest parent on the axis changes.
-* **:::no-loc text="LOWESTPARENT":::** resets the calculations when the value of the lowest parent on the axis changes.
-* A **numerical value**, referring to the fields on the axis. The behavior depends on the value provided:
-    - If zero or omitted, the calculation does not reset. Equivalent to **:::no-loc text="NONE":::**.
-    - If positive, identifies the column starting from the highest, independent of grain. 1 is equivalent to **:::no-loc text="HIGHESTPARENT":::**.
-    - If negative, the integer identifies the column starting from the lowest, relative to the current grain. -1 is equivalent to **:::no-loc text="LOWESTPARENT":::**.
-* A **field reference** as long as the field is on the visual.
+In every case it specifies a single level in the visual calculation hierarchy (let’s call it the target level). However, how this level is interpreted in the calculation can vary.
+The :::no-loc text="Reset"::: behavior operates in two different modes: [absolute](#absolute-mode) and [relative](#relative-mode).
 
-To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter.
-For example, the following visual calculations are equivalent and return the sum of *Sales Amount* that starts from 0 for every year:
+When using integer values for the parameter or their equivalents :::no-loc text="NONE":::, :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, you can choose between these two modes via the integer’s signal: positive values perform a reset in absolute mode, and negative values perform a reset in relative mode (and zero does no reset at all, the default behavior).
+
+If you specify a column reference you are also operating in absolute mode. These values determine how the target column is partitioned and therefore if it resets. These two modes are described in detail below:
+
+### Absolute mode
+This mode indicates that the calculation should be partitioned by the target column and all those above it, and this applies at every level in the calculation. At levels above the target (where the target column isn’t present, and possibly others), the calculation is partitioned by the remaining columns available.
+The positive integer value identifies the target column starting from the top (the top column is 1, the next is 2, etc). It goes up to N (the number of columns in the hierarchy), and any higher values are trimmed down. Alternatively, one can also specify the column directly.
+
+For example, consider a visual calculation with these hierarchy levels: Year, Quarter, Month and Day. The table below shows how the calculation will be partitioned at each level depending on the value of :::no-loc text="Reset"::::
+
+|Level / value |:::no-loc text="Reset"::: = 1 or Year|:::no-loc text="Reset"::: = 2 or Quarter|:::no-loc text="Reset"::: = 3 or Month|:::no-loc text="Reset"::: = 4 or Day|
+|--|--|--|--|--|
+|Day level|Year|Quarter and Year|Month, Quarter and Year|Day, Month, Quarter and Year|
+|Month level|Year|Quarter and Year|Month, Quarter and Year|Month, Quarter and Year|
+|Quarter level|Year|Quarter and Year|Quarter and Year|Quarter and Year|
+|Year level|Year|Year|Year|Year|
+|Grand total level|None|None|None|None|
+
+### Relative mode
+Given a negative integer value –X, at each level the calculation is partitioned by all columns X levels or more above it in the hierarchy (or not partitioned at all if no such level exists).
+Valid values for this mode are between -1 and -N+1 (where N is the number of columns in the hierarchy), and any lower values are trimmed up.
+Again, consider the visual calculation described earlier. The table below shows how the calculation will be partitioned at each level depending on the value of Reset:
+
+|Level / value |:::no-loc text="Reset"::: = -1|:::no-loc text="Reset"::: = -2|:::no-loc text="Reset"::: = -3|
+|--|--|--|--|
+|Day level|Month, Quarter and Year|Quarter and Year|Year|
+|Month level|Quarter and Year|Year|None|
+|Quarter level|Year|None|None|
+|Year level|None|None|None|
+|Grand total level|None|None|None|
+
+### Synonyms
+:::no-loc text="Reset"::: also provides the following synonyms:
+* **:::no-loc text="NONE":::** is the default value. It does not reset the calculation and is equivalent to 0.
+* **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is equivelant to 1.
+* **:::no-loc text="LOWESTPARENT":::** performs a relative reset by the immediate parent and is equivalent to -1.
+
+### Examples of using :::no-loc text="Reset":::
+For example, consider the visual calculation described earlier. The visual calculations are equivalent and return the sum of *Sales Amount* that restarts for every year, regardless of the level the calculation is evaluated on (see [absolute mode](#absolute-mode)):
 
 ```dax
 RUNNINGSUM([Sales Amount], HIGHESTPARENT)
@@ -161,18 +197,17 @@ RUNNINGSUM([Sales Amount], 1)
 RUNNINGSUM([Sales Amount], [Year])
 ```
 
-
-In contrast, the following visual calculations both return the sum of *Sales Amount* that starts from 0 for every Quarter:
+In contrast, the following visual calculations both return the sum of *Sales Amount* that starts from 0 for every immediate parent, which of course depends on which level the calculation is evaluated on (see [relative mode](#relative-mode)).
 
 ```dax
 RUNNINGSUM([Sales Amount], LOWESTPARENT)
 ```
 
 ```dax
-RUNNINGSUM([Sales Amount], 2)
+RUNNINGSUM([Sales Amount], -1)
 ```
 
-Finally, this visual calculation does **not** reset, and continues adding the *Sales Amount* value for each month to the previous values, without restarting.
+Finally, this visual calculation does **not** reset, and continues adding the *Sales Amount* value for each day to the previous values, without restarting.
 
 ```dax
 RUNNINGSUM([Sales Amount])
