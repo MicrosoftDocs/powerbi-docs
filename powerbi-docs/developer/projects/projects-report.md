@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/04/2025
+ms.date: 04/22/2025
 ---
 
 # Power BI Desktop project report folder
@@ -209,11 +209,9 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
     :::image type="content" source="./media/projects-report/pbir-upgrade.png" alt-text="Screenshot of prompt to upgrade to PBIR.":::
 
     > [!IMPORTANT]
-    > Once you upgrade to PBIR, you can't revert back to PBIR-Legacy. If you think you might want to revert back to PBIR-Legacy, save a copy of your PBIP files first.
-    
-    > [!IMPORTANT]
-    > Power BI Desktop automatically creates a backup of the report before upgrading to PBIR, and this backup is retained for 30 days.
-    > Backup locations:  
+    > Once you upgrade to PBIR, you can't revert back to PBIR-Legacy from the UI. To revert back to PBIR-Legacy, save a copy of your PBIP files.
+    >
+    > Power BI Desktop automatically creates a backup of the report before upgrading to PBIR. This backup is retained for 30 days in one of the following locations: 
     > - Microsoft Store version: `%USERPROFILE%\Microsoft\Power BI Desktop Store App\TempSaves\Backups`  
     > - Executable installer version: `%USERPROFILE%\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Backups`
 
