@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/07/2025
+ms.date: 04/22/2025
 LocalizationGroup: Share your work
 ---
 
@@ -26,7 +26,8 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 2. On the **File** menu, select **Embed report** >  **Website or portal**.
 
-3. In the **Secure embed code** dialog that appears, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iframe in a blog or website, select the value under **HTML you can paste into a website**.
+3. In the **Secure embed code** dialog that appears, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iframe in a blog or website, select the value under **HTML you can paste into a website**. Changing the width or height from what is specified in the iframe code may result in certain features not working as expected.
+
 
     :::image type="content" source="../collaborate-share/media/service-embed-secure/securely-embed-report-in-website-or-portal.png" alt-text="Screenshot of Embed option dialogue box":::
 
