@@ -53,7 +53,7 @@ To connect to a billing account, you need to retrieve your **Billing account ID*
 
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
 2. Select your Billing profile.
-3. In the menu, select **Settings** >> **Properties**.
+3. In the menu, select **Settings** > **Properties**.
 4. Under **Billing account details**, copy the **Billing account ID**.
 
    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="Screenshot of billing account ID highlighted in Cost management billing profile properties.":::
