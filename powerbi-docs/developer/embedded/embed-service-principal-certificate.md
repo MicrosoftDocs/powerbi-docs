@@ -17,7 +17,7 @@ Certificate-based authentication enables you to be authenticated by Microsoft En
 
 Using this method of authentication allows managing certificates from a central place using the certificate authority (CA) for rotation or revocation.
 
-You can learn more about certificates in Microsoft Entra ID in the [Client credential flows](https://learn.microsoft.com/en-us/entra/msal/dotnet/acquiring-tokens/web-apps-apis/client-credential-flows) page.
+You can learn more about certificates in Microsoft Entra ID in the [Client credential flows](https://learn.microsoft.com/entra/msal/dotnet/acquiring-tokens/web-apps-apis/client-credential-flows) page.
 
 ## Method
 
