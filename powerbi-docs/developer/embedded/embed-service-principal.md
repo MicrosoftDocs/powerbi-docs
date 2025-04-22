@@ -13,7 +13,7 @@ ms.date: 11/14/2024
 
 # Embed Power BI content with service principal and an application secret
 
-Service principal is an authentication method that can be used to let an [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) application access Power BI service content and APIs.
+Service principal is an authentication method that can be used to let a [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) application access Power BI service content and APIs.
 
 When you create a Microsoft Entra app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Microsoft Entra ID to authenticate your app. After it's authenticated, the app can access Microsoft Entra tenant resources.
 
@@ -34,7 +34,7 @@ This article describes service principal authentication using an *application ID
 
 To use service principal and an application ID for embedded analytics, you take the following steps. Subsequent sections describe these steps in detail.
 
-1. Create an [Microsoft Entra app](/azure/active-directory/manage-apps/what-is-application-management).
+1. Create a [Microsoft Entra app](/azure/active-directory/manage-apps/what-is-application-management).
 
     1. Create a secret for your Microsoft Entra app.
     1. Get the app's *application ID* and *application secret*.
