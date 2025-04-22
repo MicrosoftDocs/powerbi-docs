@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 04/22/2025
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -16,9 +16,9 @@ ms.collection: ce-skilling-ai-copilot
 # What's new in Power BI?
 
 
-## March 2025 Update (2.141.1228.0)
+## April 2025 Update (2.142.928.0)
 
-In March we feel downright lucky to have all sorts of updates to Power BI, enabling is to celebrate a greenfield of opportunity for our business insights.
+In April we're showered with all sorts of updates to Power BI, enabling our customers to create a lush garden of visuals, insights, and business intelligence to data from around the world.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -45,26 +45,19 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 
+
 ### General
-* Power BI Desktop start-up performance improvements  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819881)  [[article]](desktop-get-the-desktop.md)
-* Upgrade Power BI Desktop  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819882) 
+* Backward compatibility is impacted by Q&A setup updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631028) [[video]](https://www.youtube.com/watch?v=5oe5N7tJm-g&list=PL1N57mwBHtN3rbPkoKqj-L8vTBPzD-98m&index=4&t=68s)
 
 
 ### Copilot and AI
-* Get a Copilot summary directly from your Teams message with a single click [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819884)  [[video]](https://youtu.be/dgxeFAUSfE8&t=96s)  
-* Copilot in Power BI to write DAX queries in DAX query view updates [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819885)  [[video]](https://youtu.be/dgxeFAUSfE8&t=96s)  
-* Improved language understanding for data questions [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819886)  [[video]](https://youtu.be/dgxeFAUSfE8&t=96s)  [[article]](../create-reports/copilot-ask-data-question.md)
-* Ad hoc calculation support for data questions [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819887)  [[video]](https://youtu.be/dgxeFAUSfE8&t=96s)  
+* Ad hoc calculation support for data questions now available in read mode [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631030) [[article]](../create-reports/copilot-ask-data-question.md#ad-hoc-calculations-for-data-questions)  [[video]](https://www.youtube.com/watch?v=5oe5N7tJm-g&list=PL1N57mwBHtN3rbPkoKqj-L8vTBPzD-98m&index=4&t=129s)
 
 
 ### Reporting
-* Better storytelling with Data annotations in Power BI for PowerPoint (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819889)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-annotate.md)
-* Copy report object name  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819890)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  
-* Referenced column highlights for visual calculations (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819891)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
-* Enhancements to Reference Lines  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819892)  [[video]](https://youtu.be/dgxeFAUSfE8) 
-* Category enhancements for new card (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819893)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  
-* Introducing style presets to visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819894)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](../create-reports/desktop-report-themes.md)
-* Insights category for business users in the OneLake catalog  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819895)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](/fabric/governance/onelake-catalog-overview)
+* File picker enabled by default in Power BI Desktop  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631032)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  
+* Mobile layout auto-create now generally available  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631033)  [[article]](../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation)  [[video]](https://www.youtube.com/watch?v=YFRNbXwdqRM&list=PL1N57mwBHtN3rbPkoKqj-L8vTBPzD-98m&index=1)
+
 
 
 > [!NOTE]
@@ -72,25 +65,19 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Modeling
-* Create semantic models in Direct Lake storage mode from one or more Fabric artifacts in Power BI Desktop  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819897)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](/fabric/get-started/direct-lake-power-bi-desktop)
-* TMDL view support for Direct Lake semantic models (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819898)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](../transform-model/desktop-tmdl-view.md)
-* Updates to semantic model version history (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819899)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](../transform-model/service-semantic-model-version-history.md)
-* Edit your data model in the Power BI service - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819900)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](../transform-model/service-edit-data-models.md)
-* Live edit of semantic models in Direct Lake mode with Power BI Desktop - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819901&t=335s)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](/fabric/fundamentals/direct-lake-power-bi-desktop)
-* Use notebooks with your semantic model (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819902)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](../transform-model/service-notebooks.md)
-* Access the Azure Analysis Services migration tool from your workspace  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819903) 
-* Table view improvements  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819904) 
-* Distribution, discovery, and consumption  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819905) 
-* CI/CD for org apps (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819906)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](/fabric/cicd/git-integration/intro-to-git-integration)
-* Introducing new customization options for org apps - combined navigation (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819907)  [[article]](../consumer/org-app-items/org-app-items.md#customizing-your-org-app)
+* Live edit of semantic models in Direct Lake mode with Power BI Desktop - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631035)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](/fabric/fundamentals/direct-lake-power-bi-desktop)
+* Semantic model changes with TMDL view (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631036)  [[video]](https://www.youtube.com/watch?v=dJo59-z-ejQ&list=PL1N57mwBHtN3rbPkoKqj-L8vTBPzD-98m&index=2)
+* Azure Maps auto-zoom now includes reference layers  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631037)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](../transform-model/service-semantic-model-version-history.md)
 
 
 ### Data connectivity
-* Improvements in the Snowflake connector (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819909)  
+* Connect to the Vertica database with the user-installed ODBC driver - updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631040)  [[video]](https://www.youtube.com/watch?v=5oe5N7tJm-g&list=PL1N57mwBHtN3rbPkoKqj-L8vTBPzD-98m&index=4&t=323s)
+* Use the built-in driver to connect to Oracle (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631041)  [[video]](https://www.youtube.com/watch?v=5oe5N7tJm-g&list=PL1N57mwBHtN3rbPkoKqj-L8vTBPzD-98m&index=4&t=323s)
  [[article]](/power-query/connectors/snowflake)
+* Snowflake connector update  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631042)  [[article]](/power-query/connectors/snowflake)
 
 ### Visuals
-* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819912)  
+* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/#post-29602-_Toc195631043)  
 
 
 
@@ -107,13 +94,13 @@ The following updates are new to the Power BI service this month:
 
 
 
-For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/).
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video playlist describes many of these updates. You can also watch the included videos from the blog post.
 
-[[Video Playlist]](https://www.youtube.com/playlist?list=PL1N57mwBHtN3U_hIfqZ2RmKF5IRYWBEg4)
+[[Video Playlist]](https://www.youtube.com/playlist?list=PL1N57mwBHtN3rbPkoKqj-L8vTBPzD-98m)
 
 
 > [!NOTE]
