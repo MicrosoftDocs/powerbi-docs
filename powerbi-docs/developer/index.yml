@@ -151,9 +151,9 @@ additionalContent:
           summary: Power BI libraries (NuGet).
           url: https://www.nuget.org/profiles/powerbi
         # Card
-        - title: Embedding setup tool
+        - title: Start using Power BI Embedded
           summary: Set up your Power BI embedding environment.
-          url: https://app.powerbi.com/embedsetup
+          url: ./embedded/register-app.md
         # Card
         - title: Power BI embedded analytics Client APIs
           summary: Explore the Power BI embedded analytics Client APIs.
