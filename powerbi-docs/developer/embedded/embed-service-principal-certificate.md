@@ -8,7 +8,8 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 04/10/2024
+ms.date: 04/10/2025
+#customer intent: As a developer, I want to learn how to authenticate for Power BI embedded analytics using a Microsoft Entra application service principal and a certificate so that I can embed Power BI content in my application.
 ---
 
 # Embed Power BI content with service principal and a certificate
