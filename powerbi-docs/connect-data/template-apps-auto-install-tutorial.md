@@ -75,8 +75,6 @@ Make sure to register the application as a **server-side web application**. You 
 
 Save the *application ID* (ClientID) and *application secret* (ClientSecret) for later steps.
 
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData) to quickly get started creating an app registration. If you're using the [Power BI App Registration Tool](https://app.powerbi.com/embedsetup), select the **Embed for your customers** option.
-
 Add the service principal to the template app workspace as an Admin so that you'll be able to test your automation work flow.
 
 ## Template app preparation

@@ -8,6 +8,7 @@ ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/13/2025
 ms.custom: intro-overview
+#customer intent: As a developer, I want to learn about Power BI embedded analytics so that I can embed Power BI content in my applications.
 ---
 
 # What is Power BI embedded analytics?
@@ -95,4 +96,3 @@ For more information about the differences between the Embedded and Premium SKUs
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Tutorial: Embed Power BI content using a sample embed for your customers application](embed-sample-for-customers.md)
 * [Tutorial: Embed Power BI content using a sample embed for your organization application](embed-sample-for-your-organization.md)
-* [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup)
