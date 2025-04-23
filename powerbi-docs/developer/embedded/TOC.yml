@@ -97,7 +97,7 @@
   - name: Security
     items:
     - name: Power BI security security"
-      href: ../../enterprise/service-admin-security.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
+      href: ../../enterprise/service-admin-power-bi-security.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
     - name: "Embedding security features"
       href: embedded-row-level-security.md
     - name: "Embed with RLS"
