@@ -45,7 +45,7 @@ highlightedContent:
     # Card
     - title: Browse Power BI PowerShell code samples
       itemType: how-to-guide
-      url: /samples/azure-samples/powerbi-powershell/microsoft-power-bi-powershell-samples/
+      url: https://github.com/microsoft/PowerBI-Developer-Samples
 
 # conceptualContent section (optional)
 conceptualContent:
