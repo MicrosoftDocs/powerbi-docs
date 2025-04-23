@@ -35,9 +35,9 @@ highlightedContent:
       itemType: overview
       url: visuals/develop-power-bi-visuals.md   
     # Card
-    - title: Power BI embedded analytics Client APIs
-      itemType: whats-new
-      url: /javascript/api/overview/powerbi/
+    - title: Power BI security
+      itemType: overview
+      url: ../enterprise/service-admin-power-bi-security.md
     # Card
     - title: Explore features and APIs in the embedded analytics playground
       itemType: whats-new
