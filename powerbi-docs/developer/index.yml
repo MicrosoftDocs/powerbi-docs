@@ -136,7 +136,7 @@ additionalContent:
           url: /rest/api/power-bi-embedded/
         # Card
         - title: Power Platform documentation
-          summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
+          summary: Learn how Power BI, Power Apps, Power Automate, and Microsoft Copilot Studios work together to enhance each other.
           url: /power-platform/
         # Card
         - title: Power BI developer center
