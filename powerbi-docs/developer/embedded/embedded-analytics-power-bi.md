@@ -96,4 +96,3 @@ For more information about the differences between the Embedded and Premium SKUs
 * [Tutorial: Embed Power BI content using a sample embed for your customers application](embed-sample-for-customers.md)
 * [Tutorial: Embed Power BI content using a sample embed for your organization application](embed-sample-for-your-organization.md)
 * [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup)
-## This link is also outdated https://app.powerbi.com/embedsetup
