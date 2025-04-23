@@ -144,7 +144,7 @@ Finally, if you add additional calculation groups to the model and you want to s
 
 You can learn more about calculation groups precedence in the [Calculation groups in Analysis Services tabular models](/analysis-services/tabular-models/calculation-groups) article. 
 
-## Selection Expressions for calculation groups
+## Selection expressions for calculation groups
 You can set selection expressions for calculation groups to get fine-grained control over what the calculation group returns if users make multiple, invalid or no selections on the calculation group. See [selection expressions](/analysis-services/tabular-models/calculation-groups/#selection-expressions).
 
 ## Related content
