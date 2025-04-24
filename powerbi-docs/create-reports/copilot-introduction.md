@@ -48,8 +48,6 @@ After you create a page with Copilot, you see an outline in the Copilot chat pan
 
 ## Access Copilot in the Power BI service
 
-To access Copilot in the Power BI service, you need to have a Contributor role on the Fabric capacity or Premium capacity.
-
 - To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
 - To create the narrative visual and generate Copilot reports, you need edit access to the workspace.
  
