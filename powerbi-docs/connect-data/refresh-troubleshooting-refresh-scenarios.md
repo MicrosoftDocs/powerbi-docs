@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 04/17/2025
+ms.date: 04/22/2025
 LocalizationGroup: Data refresh
 ---
 
@@ -108,7 +108,7 @@ A Premium capacity might throttle data refresh operations when too many semantic
 
 * Refresh during nonpeak times. Performing refresh operations during non-business hours or other non-peak times helps ensure that the overall usage in the capacity remains relatively low. Use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly placed.
 * Enable [semantic model scale-out](../enterprise/service-premium-scale-out-configure.md). Semantic model scale-out can help by adding a read-only replica for refresh isolation. The read/write replica performs the semantic model during refresh while interactive queries are executed on the read-only replica.
-* Reduce model complexity. Simplifying the model, especially if it involves heavy calculated tables and columns, can help to lower the refresh burden and avoid memory bottlenecks during refresh. If possible, move calculations to the data source or ETL processes.
+* Reduce model complexity. Simplifying the model, especially if it involves computationally expensive calculated tables and columns, can help to lower the refresh burden and avoid memory bottlenecks during refresh. If possible, move calculated tables and columns to the data source or ETL processes.
 * Use [incremental refresh](../connect-data/incremental-refresh-overview.md) for large semantic models. By automatically partitioning large tables, incremental refresh can help to reduce the amount of data that needs to be refreshed. By refreshing only the most recent import partitions, you can significantly reduce the refresh duration, thus making room for more refreshes in a given timespan.
 * Add Automatic retry for custom refreshes. If you're using XMLA or the Power BI REST API to refresh a semantic model, make sure to add retry logic as explained in [datasets - refresh dataset](refresh-data.md). Retries with backoff pattern can help to ensure that your semantic models are refreshed successfully. Alternatively, consider using the built-in scheduling facility in Power BI because the Power BI performs retries when scheduled and on-demand refreshes are throttled.
 
