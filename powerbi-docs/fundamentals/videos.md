@@ -37,6 +37,7 @@ Our video channel includes curated playlists to make it easy to find the content
 
 - [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_video-docs-link)
 - [Watch Power BI demos](https://powerbi.microsoft.com/demo/)
+- ##This link seems to be more Power BI courses and offering free trials, instead of demos.
 - Discover [videos from Azure about Power BI Embedded and Synapse Analytics](https://azure.microsoft.com/search/?q=Power+Bi)
  
 More questions? [Try asking the Power BI Community.](https://community.powerbi.com/)
