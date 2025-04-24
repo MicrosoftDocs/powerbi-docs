@@ -39,7 +39,7 @@ If you have edit permissions to a report, you can turn on the visual interaction
    ![Screenshot of the Power BI Desktop Format menu, highlighting Edit interactions.](media/service-reports-visual-interactions/power-bi-interaction.png)
 
    # [Power BI service](#tab/powerbi-service)
-   In the Power BI service, open the report in Editing view. In the report menu bar, select **Visual interactions** and turn on the **Edit interactioons** toggle.
+   In the Power BI service, open the report in Editing view. In the report menu bar, select **Visual interactions** and turn on the **Edit interactions** toggle.
 
    ![Screenshot of Power BI service, highlighting the Visual interactions dropdown.](media/service-reports-visual-interactions/power-bi-service.png)
 
@@ -53,7 +53,7 @@ If you have edit permissions to a report, you can turn on the visual interaction
 
 Get familiar with how your visualizations interact by selecting each visualization on your report page, one at a time. Select a data point or a bar or a shape and watch the impact on the other visualizations. If the behavior you see isn't what you'd prefer, you can change the interactions. These changes are saved with the report, so you and your report consumers will have the same visual interaction experience.
 
-Start by selecting a visualization to make it active.  Notice that all the other visualizations on the page now display interaction icons. The bolded icon is the one that is being applied. Next, determine what impact you'd like the **selected visualization** to have on the others. You can repeat this for all other visualizations on the report page.
+Start by selecting a visualization to make it active. Notice that all the other visualizations on the page now display interaction icons. The bolded icon is the one that is being applied. Next, determine what impact you'd like the **selected visualization** to have on the others. You can repeat these actions for the other visualizations on the report page.
 
 You can choose from the following options for a selected visualization:
 
