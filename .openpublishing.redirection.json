@@ -6341,11 +6341,11 @@
             "redirect_url": "/power-bi/enterprise/service-admin-azure-ad-b2b",
             "redirect_document_id": false
         },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-power-bi-salesforce.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-organization-app",
+            "redirect_document_id": true
+        }  
     },
-    {
-        "source_path": "powerbi-docs/developer/embedded/embed-power-bi-salesforce?tabs=embed-for-your-customerslution.md",
-        "redirect_url": "/power-bi/developer/embedded/embed-organization-app",
-        "redirect_document_id": true
-    }  
   ]
 }
