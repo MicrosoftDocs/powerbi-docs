@@ -47,9 +47,7 @@
     - name: "Embed a report in an app for your organization"
       href: embed-organization-app.md 
     - name: "Embed a paginated report"
-      href: embed-paginated-reports.md  
-    - name: "Embed in Salesforce"
-      href: embed-power-bi-salesforce.md        
+      href: embed-paginated-reports.md     
     - name: "Embedding Q&A"
       href: qanda.md
     - name: Secure embed
