@@ -9,12 +9,13 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/24/2025
 LocalizationGroup: Reports
+#customer intent: As a Power BI report editor, I want to customize how visuals interact in a report so that I can control the data filtering and highlighting behavior for better insights and presentation.
 ---
 # Change how visuals interact in a Power BI report
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-If you have edit permissions for a report, you can use **Visual interactions** to change how visualizations on a report page impact each other.
+If you have edit permissions for a report, you can use **visual interactions** to change how visualizations on a report page impact each other.
 
 ## Introduction to visual interactions
 By default, visualizations on a report page cross-filter and cross-highlight the other visualizations on the page.
@@ -67,7 +68,7 @@ You can choose from the following options for a selected visualization:
 For both Power BI Desktop and Power BI service, [certain Power BI visualizations can be drilled](../consumer/end-user-drill.md). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. However, that behavior can be changed.
 
 > [!TIP]
-> Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with a drill-down feature on the **New hires** tab.
+> Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with a drill-down feature on the **New Hires** tab.
 >
 
 # [Power BI Desktop](#tab/powerbi-desktop)
