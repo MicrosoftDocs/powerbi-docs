@@ -1,8 +1,8 @@
 ---
 title: "Dataset Fields collection references in a paginated report"
 description: Create a dataset for display of individual or summarized values in the Report Data pane of Power BI Report Builder in a paginated report. 
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.date: 06/21/2023
 ms.service: powerbi

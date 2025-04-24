@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 05/26/2022
+ms.date: 12/30/2024
 ---
 
 # Power BI usage scenarios: Customizable managed self-service BI
@@ -35,15 +35,15 @@ The following diagram depicts a high-level overview of the most common user acti
 
 The scenario diagram depicts the following user actions, tools, and features:
 
-| **Item** | **Description** |
+| Item | Description |
 | --- | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | Semantic model creator A develops a model using Power BI Desktop. For a semantic model that's intended for reuse, it's common (but not required) for the creator to belong to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | Power BI Desktop connects to data from one or more data sources. |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Data model development is done in Power BI Desktop. Additional effort is made to create a well-designed and user-friendly model so it can be used as a data source by many self-service report creators. Model creators can use DAX queries to develop and explore the model during development. |
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | When ready, model creator A publishes their Power BI Desktop file (.pbix) or Power BI project file (.pbip) *that contains only a model* to the Power BI service. |
 | ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | The semantic model is published to a workspace dedicated to storing and securing shared semantic models. Since the semantic model is intended for reuse, it's [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted, as appropriate). The semantic model is also marked as [discoverable](../collaborate-share/service-discovery.md) to further encourage its reuse. The [lineage view](../collaborate-share/service-data-lineage.md) in the Power BI service can be used to track dependencies that exist between Power BI items. |
-| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | [Data discovery in the OneLake data hub](../connect-data/service-data-hub.md) is enabled because the semantic model is marked as discoverable. Discoverability allows the existence of a semantic model to be visible in the OneLake data hub by other Power BI content creators who are looking for data. |
-| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Content creators use the OneLake data hub in the Power BI service to search for discoverable data items, like semantic models. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | [Data discovery in the OneLake catalog](/fabric/governance/onelake-catalog) is enabled because the semantic model is marked as discoverable. Discoverability allows the existence of a semantic model to be visible in the OneLake catalog by other Power BI content creators who are looking for data. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Content creators use the OneLake catalog in the Fabric portal to search for discoverable data items, like semantic models. |
 | ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | If content creators have permission, they can request [Build permission](../connect-data/service-datasets-build-permissions.md) on data items. This starts a workflow to request Build permission from an authorized approver. Once they have permission, content creators can reuse the data items to build new solutions. |
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | In Power BI Desktop, model creator B creates a live connection to the original shared semantic model that's located in the Power BI service. Since the intention is to extend and customize the original semantic model, the [live connection](../connect-data/desktop-report-lifecycle-datasets.md) is [converted to a DirectQuery model](../connect-data/desktop-directquery-datasets-azure-analysis-services.md#using-directquery-for-live-connections). This action results in a local model in the Power BI Desktop file. |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Power BI Desktop connects to data from additional data sources. The goal is to augment the shared semantic model so that additional analytical requirements are met by the new specialized composite semantic model. |
@@ -84,14 +84,14 @@ Because shared semantic models are intended for reuse, it's helpful to [endorse]
 
 ### Semantic model discovery
 
-The [OneLake data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use semantic models across the organization. In addition to semantic model endorsement, [enabling semantic model discovery](../collaborate-share/service-discovery.md#how-to-mark-a-semantic-model-as-discoverable) is critical for promoting its reuse. A discoverable semantic model is visible in the data hub for report creators who are searching for data.
+The [OneLake catalog](/fabric/governance/onelake-catalog) helps report creators find, explore, and use semantic models across the organization. In addition to semantic model endorsement, [enabling semantic model discovery](../collaborate-share/service-discovery.md#how-to-mark-a-semantic-model-as-discoverable) is critical for promoting its reuse. A discoverable semantic model is visible in the OneLake catalog for report creators who are searching for data.
 
 > [!NOTE]
 > If a semantic model isn't configured to be discoverable, only Power BI users with Build permission can find it.
 
 ### Request semantic model access
 
-A report creator might find a semantic model in the [data hub](../connect-data/service-data-hub.md) that they want to use. If they don't have Build permission for the semantic model, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the semantic model, an email will be submitted to the semantic model owner or custom instructions will be presented to the person who is requesting access.
+A report creator might find a semantic model in the [OneLake catalog](/fabric/governance/onelake-catalog) that they want to use. If they don't have Build permission for the semantic model, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the semantic model, an email will be submitted to the semantic model owner or custom instructions will be presented to the person who is requesting access.
 
 ### Publish to separate workspaces
 

@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 11/05/2023
+ms.date: 02/02/2025
 ---
 
 # Power BI Dev Camp
@@ -31,7 +31,7 @@ The Power BI Dev Camp tutorials are targeted toward developers who are intereste
 
 ---
 
-* [Tabular-Object-Model-Tutorial](https://github.com/PowerBiDevCamp/Tabular-Object-Model-Tutorial) - A tutorial and sample code programming semantic model that use the Tabular Object Model with Power BI Desktop and the Power BI service via the XMLA endpoint.
+* [Tabular-Object-Model-Tutorial](https://github.com/PowerBiDevCamp/Tabular-Object-Model-Tutorial) - A tutorial and  code programming semantic model that use the Tabular Object Model with Power BI Desktop and the Power BI service via the XMLA endpoint.
 
 * [PowerBI-PowerShell-Tutorial](https://github.com/PowerBiDevCamp/PowerBI-PowerShell-Tutorial) - Student files for the Power BI PowerShell tutorial from Power BI Dev Camp.
 
@@ -58,10 +58,6 @@ The Power BI Dev Camp examples provide additional resources for developers who a
 ---
 
 * [Tenant management application for Power BI](https://github.com/PowerBiDevCamp/TenantManagement) - A .NET 5 sample application that demonstrates how to manage service principals within a large-scale Power BI embedding environment with thousands of customer tenants.
-
-## Videos
-
-To view Power BI Dev Camp videos, go to the [video page](https://www.powerbidevcamp.net/videos/).
 
 ## Presentations
 

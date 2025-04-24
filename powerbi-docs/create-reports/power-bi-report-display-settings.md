@@ -1,8 +1,8 @@
 ---
 title: Page display settings in a Power BI report
 description: Page display settings and page view settings for a report
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

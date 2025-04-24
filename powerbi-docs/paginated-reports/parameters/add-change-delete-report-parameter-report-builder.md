@@ -7,8 +7,8 @@ ms.subservice: report-builder
 
 
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Add or modify Power BI paginated report parameters (Power BI Report Builder)

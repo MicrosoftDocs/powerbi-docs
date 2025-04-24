@@ -1,8 +1,8 @@
 ---
 title: PDF Rendering Extension conformance to ISO 14289-1 - paginated reports
 description: This document describes paginated report PDF Rendering Extension conformance to ISO 14289-1 (PDF/UA) specifications for paginated reports in the Power BI service, Power BI Report Server, and SQL Server Reporting Services.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

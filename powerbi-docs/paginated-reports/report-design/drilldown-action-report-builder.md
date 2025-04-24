@@ -1,8 +1,8 @@
 ---
 title: "Drilldown action in a Power BI paginated report"
 description: Enable users with drilldown action in a paginated report to hide and display items interactively in Power BI Report Builder by providing plus and minus icons on a text box.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.date: 04/10/2023
 ms.service: powerbi
 ms.subservice: report-builder

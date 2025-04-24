@@ -1,8 +1,8 @@
 ---
 title: Intro to dashboards for Power BI designers
 description: Learn how a dashboard, a key feature of Power BI service, tells a story through visualizations on a single page.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

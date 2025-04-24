@@ -5,8 +5,8 @@ ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Specify the size of an indicator in Power BI paginated reports using an expression (Power BI Report Builder)

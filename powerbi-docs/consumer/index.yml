@@ -9,8 +9,8 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: landing-page # Required
-  author: mihart
-  ms.author: mihart
+  author: julcsc
+  ms.author: juliacawthra
   ms.date: 01/25/2023
 
 landingContent:
@@ -26,7 +26,7 @@ landingContent:
           - text: Take a tour of the Power BI service
             url: end-user-reading-view.md
           - text: Review concepts and content
-            url: end-user-basic-concepts.md
+            url: ../fundamentals/service-basic-concepts.md
 
   # Card (optional)
   - title: Get started

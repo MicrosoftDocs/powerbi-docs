@@ -1,8 +1,8 @@
 ---
 title: Host Excel workbooks using Office Online Server (OOS) - Power BI Report Server
 description: In addition to viewing Power BI reports in the web portal, Power BI Report Server can host Excel workbooks by using Office Online Server (OOS).
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

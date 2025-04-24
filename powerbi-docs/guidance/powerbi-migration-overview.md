@@ -1,6 +1,6 @@
 ---
-title: Power BI migration overview
-description: Learn how to plan and conduct a migration from another third-party BI tool to Power BI.
+title: "Power BI migration overview"
+description: "Learn how to plan and conduct a migration from another third-party BI tool to Power BI."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 09/27/2022
+ms.date: 12/30/2024
 ---
 
 # Power BI migration overview
@@ -37,10 +37,10 @@ The following diagram shows four high-level phases for deploying Power BI in you
 
 |Phase|Description|
 |--------|-----------|
-|![Phase 1.](../media/legend-number/legend-number-01-fabric.svg)|**Set up and evaluate Power BI.** The first phase involves establishing the initial Power BI architecture. Preliminary deployment and governance planning are handled at this point, as well as Power BI evaluations including return on investment and/or cost benefit analysis.|
-|![Phase 2.](../media/legend-number/legend-number-02-fabric.svg)|**Create new solutions quickly in Power BI.** In the second phase, self-service BI authors can begin using and evaluating Power BI for their needs, and value can be obtained from Power BI quickly. Activities in Phase 2 place importance on agility and rapid business value, which is critical to gaining acceptance for the selection of a new BI tool such as Power BI. For this reason, the diagram depicts activities in Phase 2 happening side by side with the migration activities in Phase 3.|
-|![Phase 3.](../media/legend-number/legend-number-03-fabric.svg)|**Migrate BI assets from legacy platform to Power BI.** The third phase addresses the migration to Power BI. It's the focus of this series of Power BI migration articles. Five specific migration stages are discussed in the next section.|
-|![Phase 4.](../media/legend-number/legend-number-04-fabric.svg)|**Adopt, govern, and monitor Power BI.** The final phase comprises ongoing activities such as nurturing a data culture, communication, and training. These activities greatly impact on an effective Power BI implementation. It's important to have governance and security policies and processes that are appropriate for your organization, as well as auditing and monitoring to allow you to scale, grow, and continually improve.|
+| ![Phase 1.](../media/legend-number/legend-number-01-fabric.svg) | **Set up and evaluate Power BI.** The first phase involves establishing the initial Power BI architecture. Preliminary deployment and governance planning are handled at this point, as well as Power BI evaluations including return on investment and/or cost benefit analysis. |
+| ![Phase 2.](../media/legend-number/legend-number-02-fabric.svg) | **Create new solutions quickly in Power BI.** In the second phase, self-service BI authors can begin using and evaluating Power BI for their needs, and value can be obtained from Power BI quickly. Activities in Phase 2 place importance on agility and rapid business value, which is critical to gaining acceptance for the selection of a new BI tool such as Power BI. For this reason, the diagram depicts activities in Phase 2 happening side by side with the migration activities in Phase 3. |
+| ![Phase 3.](../media/legend-number/legend-number-03-fabric.svg) | **Migrate BI assets from legacy platform to Power BI.** The third phase addresses the migration to Power BI. It's the focus of this series of Power BI migration articles. Five specific migration stages are discussed in the next section. |
+| ![Phase 4.](../media/legend-number/legend-number-04-fabric.svg) | **Adopt, govern, and monitor Power BI.** The final phase comprises ongoing activities such as nurturing a data culture, communication, and training. These activities greatly impact on an effective Power BI implementation. It's important to have governance and security policies and processes that are appropriate for your organization, as well as auditing and monitoring to allow you to scale, grow, and continually improve. |
 
 > [!IMPORTANT]
 > A formal migration to Power BI almost always occurs in parallel with the development of a new Power BI solution. *Power BI solution* is generic term that encompasses the use of both data and reports. A single Power BI Desktop (pbix) file could contain a data model or report, or both. [Separating the data model from reports](../guidance/report-separate-from-model.md) is encouraged for data reusability purposes, but isn't required.
@@ -101,13 +101,13 @@ Enabling a productive and healthy [data culture](fabric-adoption-roadmap-data-cu
 
 Every migration is slightly different. It can depend on the organizational structure, data strategies, [data management maturity](fabric-adoption-roadmap-maturity-levels.md), and organizational objectives. However, there are some practices we consistently see with our customers who achieve Power BI migration success.
 
-- **Executive sponsorship:** Identify an executive sponsor early in the process. This person should be someone who actively supports BI in the organization and is personally invested in achieving a positive outcome for the migration. Ideally, the executive sponsor has ultimate authority and accountability for outcomes related to Power BI. For more information, see [this article](fabric-adoption-roadmap-executive-sponsorship.md).
-- **Training, support, and communication:** Recognize that it's more than just a technology initiative. Any BI or analytics project is also a people initiative, so consider investing early in [user training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training) and [support](fabric-adoption-roadmap-user-support.md). Also, create a communication plan that transparently explains to all stakeholders what is occurring, why, and sets realistic expectations. Be sure to include a feedback loop in your [communication plan](fabric-adoption-roadmap-community-of-practice.md#communication-plan) to capture input from stakeholders.
-- **Quick wins:** Initially, prioritize high value items that have tangible business value and are pressing. Rather than strictly attempting to always migrate reports precisely as they appear in the legacy BI platform, focus on the business question the report is trying to answer—including action to be taken—when addressing the redesigned report.
-- **Modernization and improvements:** Be willing to rethink how things have always been done. A migration can provide an opportunity to deliver improvements. For example, it could eliminate manual data preparation or relocate business rules that were confined to a single report. Consider refactoring, modernizing, and consolidating existing solutions when the effort can be justified. It can include consolidating multiple reports into one, or eliminating legacy items that haven't been used for some time.
-- **Continual learning:** Be prepared to use a phased approach while continually learning and adapting. Work in short, iterative cycles to bring value quickly. Make a frequent practice of completing small POCs to minimize risk of unknowns, validate assumptions, and learn about new features. As Power BI is a cloud service that updates monthly, it's important to keep abreast of developments and adjust course when appropriate.
-- **Resistance to change:** Understand there might be varying levels of resistance to change; some users will resist learning a new tool. Also, some professionals who have dedicated significant time and effort to gain expertise with a different BI tool might feel threatened by being displaced. Be prepared, because it can result in internal political struggles, particularly in highly decentralized organizations.
-- **Constraints:** Be realistic with migration plans, including funding, time estimates, as well as roles and responsibilities for everyone involved.
+- **Executive sponsorship**: Identify an executive sponsor early in the process. This person should be someone who actively supports BI in the organization and is personally invested in achieving a positive outcome for the migration. Ideally, the executive sponsor has ultimate authority and accountability for outcomes related to Power BI. For more information, see [this article](fabric-adoption-roadmap-executive-sponsorship.md).
+- **Training, support, and communication**: Recognize that it's more than just a technology initiative. Any BI or analytics project is also a people initiative, so consider investing early in [user training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training) and [support](fabric-adoption-roadmap-user-support.md). Also, create a communication plan that transparently explains to all stakeholders what is occurring, why, and sets realistic expectations. Be sure to include a feedback loop in your [communication plan](fabric-adoption-roadmap-community-of-practice.md#communication-plan) to capture input from stakeholders.
+- **Quick wins**: Initially, prioritize high value items that have tangible business value and are pressing. Rather than strictly attempting to always migrate reports precisely as they appear in the legacy BI platform, focus on the business question the report is trying to answer—including action to be taken—when addressing the redesigned report.
+- **Modernization and improvements**: Be willing to rethink how things have always been done. A migration can provide an opportunity to deliver improvements. For example, it could eliminate manual data preparation or relocate business rules that were confined to a single report. Consider refactoring, modernizing, and consolidating existing solutions when the effort can be justified. It can include consolidating multiple reports into one, or eliminating legacy items that haven't been used for some time.
+- **Continual learning**: Be prepared to use a phased approach while continually learning and adapting. Work in short, iterative cycles to bring value quickly. Make a frequent practice of completing small POCs to minimize risk of unknowns, validate assumptions, and learn about new features. As Power BI is a cloud service that updates monthly, it's important to keep abreast of developments and adjust course when appropriate.
+- **Resistance to change**: Understand there might be varying levels of resistance to change; some users will resist learning a new tool. Also, some professionals who have dedicated significant time and effort to gain expertise with a different BI tool might feel threatened by being displaced. Be prepared, because it can result in internal political struggles, particularly in highly decentralized organizations.
+- **Constraints**: Be realistic with migration plans, including funding, time estimates, as well as roles and responsibilities for everyone involved.
 
 ## Acknowledgments
 
@@ -123,7 +123,7 @@ Other helpful resources include:
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
 - [Migrate SSRS reports to Power BI](migrate-ssrs-reports-to-power-bi.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
-Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Experienced Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).

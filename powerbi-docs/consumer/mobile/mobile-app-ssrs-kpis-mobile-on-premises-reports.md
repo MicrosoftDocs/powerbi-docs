@@ -28,23 +28,24 @@ Applies to:
 
 * You and other report creators in your organization [create Power BI reports with Power BI Desktop, then publish them to the Power BI Report Server](../../report-server/quickstart-create-powerbi-report.md) web portal.
 * You create [KPIs right in the web portal](/sql/reporting-services/working-with-kpis-in-reporting-services), organize them in folders, and mark your favorites so you can find them easily.
-* You [create Reporting Services mobile reports](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](/sql/reporting-services/web-portal-ssrs-native-mode).  
 
 Then in the Power BI mobile apps, connect to up to five report servers to view the Power BI reports and KPIs, organized in folders or collected as favorites.
 
 ## Explore samples in the mobile apps without a server connection
 
-Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports and KPIs.
+Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services KPIs.
 
-1. Tap your profile picture in the upper-left corner and then tap **Settings** on the accounts panel that slides out.
+1. Tap your profile picture in the upper-left corner.
 
-2. On the settings page that opens, tap **Reporting Services samples**, then browse to interact with the sample KPIs and mobile reports.
+2. On the **Sign In page that appears**, tap **I'll sign in later**.
+
+3. The **Explore** page opens. Tap the folders under **Report server** to view the sample KPIs.
 
    :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png" alt-text="Screenshot of Reporting Services samples.":::
 
 ## Connect to an on-premises report server
 
-You can view on-premises Power BI reports, Reporting Services mobile reports, and KPIs in the Power BI mobile apps.
+You can view on-premises Power BI reports and Reporting Services KPIs in the Power BI mobile apps.
 
 >[!NOTE]
 > To connect to Report Server from your mobile app, you must have access to Report Server’s home folder. Contact the Report Server administrator if you don’t have such access.
@@ -101,7 +102,7 @@ Now you can view and interact with KPIs and Power BI reports stored on the repor
 
 ## View Power BI reports and KPIs in the Power BI app
 
-Power BI reports, Reporting Services mobile reports, and KPIs are displayed in the same folders they're in on the Reporting Services web portal.
+Power BI reports and KPIs are displayed in the same folders they're in on the Reporting Services web portal.
 
 * Tap a Power BI report :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-report-icon.png":::. It opens in landscape mode, and you can interact with it in the Power BI app.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/28/2022
+ms.date: 02/26/2025
 LocalizationGroup: Create reports
 ---
 # Use Performance Analyzer to examine report element performance in Power BI Desktop
@@ -22,7 +22,7 @@ Performance Analyzer inspects and displays the duration necessary for updating o
 
 ## Display the Performance Analyzer pane
 
-In **Power BI Desktop** select the **View** ribbon, and then select **Performance Analyzer** to display the Performance Analyzer pane.
+In **Power BI Desktop** select the **Optimize** ribbon, and then select **Performance Analyzer** to display the Performance Analyzer pane.
 
 :::image type="content" source="media/desktop-performance-analyzer/performance-analyzer-02-inline.png" alt-text="Screenshot of the View ribbon, highlighting Performance Analyzer." lightbox="media/desktop-performance-analyzer/performance-analyzer-02-expanded.png":::
 

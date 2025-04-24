@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Transform and shape data
 ---
 # Perform common query tasks in Power BI Desktop
 
-In the Power Query Editor window of Power BI Desktop, there are a handful of commonly used tasks. This article demonstrates those common tasks and provides links for additional information.
+In the **Power Query Editor** window of **Power BI Desktop**, there are a handful of commonly used tasks. This article demonstrates those common tasks and provides links for additional information.
 
 The common query tasks demonstrated here are:
 
@@ -59,7 +59,7 @@ For a step-by-step demonstration of connecting to data in Power BI Desktop, see 
 
 You can easily shape and combine data with Power Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see [Shape and combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
-This section and the following sections use the example[Excel workbook](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx) mentioned previously, which you can download and save locally. Load the data in Power Query Editor by using the **Transform data** button in the **Home** tab. After you load the data, select Table 1 from the available queries in the **Queries** pane, as shown here:
+This section and the following sections use the example [Excel workbook](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx) mentioned previously, which you can download and save locally. Load the data in Power Query Editor by using the **Transform data** button in the **Home** tab. After you load the data, select Table 1 from the available queries in the **Queries** pane, as shown here:
 
 :::image type="content" source="media/desktop-common-query-tasks/common-query-tasks-query-pane-loaded.png" alt-text="Screenshot of the Power Query Editor with Table 1 highlighted in the queries pane." lightbox="media/desktop-common-query-tasks/common-query-tasks-query-pane-loaded.png" :::
 

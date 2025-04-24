@@ -1,8 +1,8 @@
 ---
 title: Capture diagnostic information for support
 description: Instructions for manually collecting diagnostic information from the Power BI service. Send this info to support to help them troubleshoot.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting

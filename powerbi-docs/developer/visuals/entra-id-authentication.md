@@ -40,7 +40,7 @@ For each cloud the visual is intended to support, follow these steps:
 
 1. On the **Register an application** page, do the following:
    1. Enter your desired application name in the **Name** section.
-   1. Select *Accounts in any organizational directory (Any Azure AD directory - Multitenant)* in the **Supported account types** section.
+   1. Select *Accounts in any organizational directory (Any Microsoft Entra ID tenant - Multitenant)* in the **Supported account types** section.
    1. Select **Register**.
 
    :::image type="content" source="./media/entra-id-authentication/register-app.png" alt-text="Screenshot of the Register an app page of the Microsoft Entra ID registration app.":::
@@ -53,7 +53,7 @@ For each cloud the visual is intended to support, follow these steps:
 
     :::image type="content" source="./media/entra-id-authentication/add-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the option to add an application ID URI.":::
 
-1. In the **Edit Application ID URI** field, enter your Verified Custom Domain, ensuring that it begins with **"https://"** and doesn't contain **"onmicrosoft.com"**, and select **Save**.
+1. In the **Edit Application ID URI** field, enter your [Verified Custom Domain](/entra/identity/users/domains-manage), ensuring that it begins with **"https://"** and doesn't contain **"onmicrosoft.com"**, and select **Save**.
 
    To add a custom domain:
 

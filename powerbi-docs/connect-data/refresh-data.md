@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/25/2024
+ms.date: 02/24/2025
 LocalizationGroup: Data refresh
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
 ---
@@ -67,7 +67,7 @@ Because Power BI doesn't import the data, you don't need to run a data refresh. 
 
 > [!NOTE]
 > * Semantic models in Import mode and composite semantic models that combine Import mode and DirectQuery mode don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. Semantic models that are updated based on the XMLA endpoint will only clear the cached tile data (invalidate cache). The tile caches aren't refreshed until each user accesses the dashboard. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Semantic models** tab. For composite semantic models, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
-> * Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
+> * Power BI doesn't support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
 
 #### Push semantic models
 
@@ -140,9 +140,9 @@ To review past synchronization cycles, check the OneDrive tab in the refresh his
 
 As the above screenshot shows, Power BI identified this OneDrive refresh as a **Scheduled** refresh, but it isn't possible to configure the refresh interval. You can only deactivate OneDrive refresh in the semantic model's settings. Deactivating refresh is useful if you don't want your semantic models and reports in Power BI to pick up any changes from the source files automatically.
 
-The semantic model settings page only shows the **OneDrive Credentials** and **OneDrive refresh** sections if the semantic model is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Semantic models that aren't connected to source files in OneDrive or SharePoint Online don't show these sections.
+The semantic model settings page only shows the **OneDrive refresh** section if the semantic model is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Semantic models that aren't connected to source files in OneDrive or SharePoint Online will not show this section. This section displays a link to the OneDrive or SharePoint Online folder where the underlying PBIX file is hosted and a toggle to enable or disable refresh.
 
-![OneDrive Credentials and OneDrive refresh](media/refresh-data/onedrive-credentials-refresh.png)
+![Screenshot of Semantic Model settings showing the OneDrive Refresh section open.](media/refresh-data/onedrive-refresh-section-semantic-model-settings.png)
 
 If you disable OneDrive refresh for a semantic model, you can still synchronize your semantic model on demand by selecting **Refresh now** in the semantic model menu. As part of the on-demand refresh, Power BI checks if the source file on OneDrive or SharePoint Online is newer than the semantic model in Power BI and synchronizes the semantic model if it is. The **Refresh history** lists these activities as on-demand refreshes on the **OneDrive** tab.
 
@@ -151,6 +151,10 @@ Keep in mind that OneDrive refresh doesn't pull data from the original data sour
 ![OneDrive refresh diagram](media/refresh-data/onedrive-refresh-diagram.png)
 
 If you keep OneDrive refresh enabled for a OneDrive or SharePoint Online-connected semantic model and you want to perform data refresh on a scheduled basis, make sure you configure the schedule so that Power BI performs the data refresh after the OneDrive refresh. For example, if you created your own service or process to update the source file in OneDrive or SharePoint Online every night at 1:00 AM, you could configure scheduled refresh for 2:30 AM to give Power BI enough time to complete the OneDrive refresh before starting the data refresh.
+
+For live connection reports, there is also a **OneDrive refresh** section within the live connection report settings pane. This section displays a link to the OneDrive or SharePoint Online folder where the underlying PBIX file is hosted, a toggle to enable or disable refresh, and a button to view refresh history.
+
+![Screenshot of Live Connection Report Settings showing OneDrive refresh section.](media/refresh-data/live-connection-report-onedrive-refresh-settings.png)
 
 #### Refresh of query caches
 
@@ -384,6 +388,76 @@ Significant use of dashboard tiles or premium caching can increase refresh durat
 The data and query cache phases are independent of each other, but run in sequence. The data refresh runs first, and when that succeeds, the query cache refresh runs. If the data refresh fails, the query refresh is not initiated. It's possible that the data refresh can run successfully, but the query cache refresh fails.
 
 Refreshes made using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) won't show attempt details in the **Refresh history** window.
+
+> [!NOTE]
+> You can enhance monitoring with workspace monitoring. For more information, see [What is workspace monitoring?](/fabric/fundamentals/workspace-monitoring-overview)
+
+## Visualize semantic model refresh details
+
+In the **Fabric Monitoring Hub** you can centrally monitor Microsoft Fabric activities. The hub displays refresh activities for all semantic models including the status of its most recent refresh. When selecting an activity name, you can access a dedicated **Semantic Model Refresh Detail** page that provides comprehensive information about the selected refresh activity.
+
+The following image shows the **Fabric Monitoring Hub**, filtered for semantic models:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-01.png" alt-text="Screenshot of Monitoring Hub for refresh activity." lightbox="media/refresh-data/visualize-semantic-model-refresh-01.png":::
+
+You can select a refresh activity to display its refresh detail page, with comprehensive information about the refresh activity:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-02.png" alt-text="Screenshot of refresh details for refresh activity." lightbox="media/refresh-data/visualize-semantic-model-refresh-02.png":::
+
+The refresh activity page shows comprehensive details for a selected refresh activity, including capacity, gateway, start and end times, error details, and [multiple refresh attempts](#semantic-model-refresh-history).
+
+### Access refresh details
+
+You can access semantic model refresh details from multiple locations: the **Monitoring hub historical runs**, [semantic model refresh settings](#checking-refresh-status-and-history) and [semantic model detail page](service-dataset-details-page.md).  
+
+The following image highlights where to click on the semantic model refresh settings window, to access refresh details:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-03.png" alt-text="Screenshot of where to find refresh details from semantic model refresh settings window." lightbox="media/refresh-data/visualize-semantic-model-refresh-03.png":::
+
+In the following image, you can see where to click on the semantic model details page to access refresh details:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-04.png" alt-text="Screenshot of where to find refresh details from semantic model details page." lightbox="media/refresh-data/visualize-semantic-model-refresh-04.png":::
+
+
+### View refresh metrics
+
+For each refresh attempt, you can view the execution metrics by selecting the **Show** link in the **Execution details** column. Execution metrics can assist with troubleshooting or optimizing the semantic model refresh. Previously, this execution metrics data was accessible through **Log Analytics** or **Fabric Workspace Monitoring**.
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-05.png" alt-text="Screenshot of refresh attempt execution details.":::
+
+### Link from external applications
+
+You can link semantic model refresh details from external applications by constructing a URL with the workspace, semantic model, and refresh ID. The following line shows the structure of such URLs:
+
+`https://app.powerbi.com/groups/{workspaceId}/datasets/{semanticModelId}/refreshdetails/{refreshId}`
+
+For example, the following Fabric Notebook uses semantic link *sempy* and Power BI API Get Refresh History to create a refresh detail URL for each run of a semantic model:
+
+
+```dax
+import sempy
+import sempy.fabric as fabric
+import pandas as pd 
+
+workspaceId = "[Your Workspace Id]"
+semanticModelId = "[Your semantic model Id]"
+
+client = fabric.FabricRestClient()
+
+response = client.get(f"/v1.0/myorg/groups/{workspaceId}/datasets/{semanticModelId}/refreshes")
+
+refreshHistory = pd.json_normalize(response.json()['value'])
+
+refreshHistory["refreshLink"] = refreshHistory.apply(lambda x:f"https://app.powerbi.com/groups/{workspaceId}/datasets/{semanticModelId}/refreshdetails/{x['requestId']}", axis=1)
+
+displayHTML(refreshHistory[["requestId", "refreshLink"]].to_html(render_links=True, escape=False))
+```
+
+The previous code generates a table with refresh IDs and their corresponding detail page URLs, as shown in the following image:
+
+:::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-06.png" alt-text="Screenshot of code generated table with refresh identifiers and page URLs.":::
+
+
 
 ## Refresh cancellation
 

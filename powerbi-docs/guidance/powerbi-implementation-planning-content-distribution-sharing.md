@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 06/27/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Content distribution and sharing
@@ -518,7 +518,7 @@ The diagram depicts the following concepts and processes:
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Fabric capacity is required to create and share Fabric items. |
 | ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Content is deployed to a workspace. |
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | Creators can distribute content with other internal users or external guest users who are content creators by assigning them to the _Admin_, _Member_, or _Contributor_ [workspace roles](../collaborate-share/service-roles-new-workspaces.md). We recommend that you use the [principle of least privilege](/entra/identity-platform/secure-least-privileged-access) when you share content by workspace role. |
-| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Creators can also share content with other internal users or external guest users who are content creators by sharing individual items via links. When creators have access to data items via direct access or workspace roles, they can discover this content by using the [OneLake data hub](/fabric/get-started/onelake-data-hub). |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Creators can also share content with other internal users or external guest users who are content creators by sharing individual items via links. When creators have access to data items via direct access or workspace roles, they can discover this content by using the [OneLake catalog](/fabric/governance/onelake-catalog). |
 | ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | In a workspace on Fabric capacity, creators can make and use [lakehouses](/fabric/data-engineering/lakehouse-overview), which comprise tables and files in folders. |
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Creators can share data in a lakehouse folder to other internal users or external guest users who are creators by using [OneLake data access roles](/fabric/onelake/security/get-started-data-access-roles), which is also known as role-based access control (RBAC). |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | In a workspace on Fabric capacity, creators can make and use [KQL databases](/fabric/real-time-intelligence/create-database), which comprise tables and files in folders. |
@@ -546,18 +546,18 @@ This approach is beneficial when:
 - Creators need access to only a few data items.
 - You want more control over what content creators can find and use.
 
-#### Option 2: Creators find items and request access from the OneLake data hub
+#### Option 2: Creators find items and request access from the OneLake catalog
 
-You should encourage users to use the [OneLake data hub](/fabric/get-started/onelake-data-hub) to discover content that they can use as a data source. There, and when necessary, content creators can request access to these data items. When they're granted Build permission, they can then create new content based on these items.
+You should encourage users to use the [OneLake catalog](/fabric/governance/onelake-catalog) to discover content that they can use as a data source. There, and when necessary, content creators can request access to these data items. When they're granted Build permission, they can then create new content based on these items.
 
 This approach is beneficial when:
 
 - You use endorsements to promote and certify quality content.
-- You mark content as discoverable so that users can find it from the OneLake data hub.
+- You mark content as discoverable so that users can find it from the OneLake catalog.
 - You've created a process to sustainably manage access requests.
 - Users have undergone training on how to find and use data items in Fabric.
 
-To see a data item in the OneLake data hub, creators must either have access to that item or it must be marked as [discoverable](../collaborate-share/service-discovery.md). For example, you can give creators Read permission to semantic models or mark those semantic models as discoverable, which allows users to find them and request Build permission to use them.
+To see a data item in the OneLake catalog, creators must either have access to that item or it must be marked as [discoverable](../collaborate-share/service-discovery.md). For example, you can give creators Read permission to semantic models or mark those semantic models as discoverable, which allows users to find them and request Build permission to use them.
 
 ### Step 2: Decide on creator permissions
 
@@ -588,7 +588,7 @@ You can grant creators Read permission to certain Fabric data items, like lakeho
 
 Grant creators Read permission when:
 
-- Creators should discover semantic models in the OneLake data hub to view their metadata and then request Build permission from the content owner.
+- Creators should discover semantic models in the OneLake catalog to view their metadata and then request Build permission from the content owner.
 - Creators should use Fabric data items like lakehouses or data warehouses to make their own content.
 
 ### Step 3: Identify whether creators are outside the organization
@@ -623,7 +623,7 @@ Consider distributing content to external guest users when:
 > [!IMPORTANT]
 > Ensure that you test whether Microsoft Entra B2B is the best approach before you decide to use it. We recommend that you conduct a small trial with several creators before you commit to this content distribution strategy. During this trial, ensure that the creators perform all their necessary activities to discover any possible caveats or limitations that might prevent them from doing what they need to do.
 
-External content consumers can use the OneLake data hub to [view and access semantic models in their own tenant that have been shared with them](../collaborate-share/service-dataset-external-org-share-view.md). This concept is known as _in-place semantic model sharing_. It requires that Fabric administrators enable the [Guest users can work with shared semantic models in their own tenants](../collaborate-share/service-dataset-external-org-share-admin.md#guest-users-can-work-with-shared-semantic-models-in-their-own-tenants) tenant setting.
+External content consumers can use the OneLake catalog to [view and access semantic models in their own tenant that have been shared with them](../collaborate-share/service-dataset-external-org-share-view.md). This concept is known as _in-place semantic model sharing_. It requires that Fabric administrators enable the [Guest users can work with shared semantic models in their own tenants](../collaborate-share/service-dataset-external-org-share-admin.md#guest-users-can-work-with-shared-semantic-models-in-their-own-tenants) tenant setting.
 
 External content consumers can connect to these semantic models to create [composite semantic models](../collaborate-share/service-dataset-external-org-share-view.md#access-shared-semantic-models) and [reports](../collaborate-share/service-dataset-external-org-share-view.md#publish-reports-made-from-shared-semantic-models) that they can publish to workspaces in their own tenant.
 
@@ -670,17 +670,17 @@ Ensure that you provide content creators access to a workspace to publish their 
 
 #### Option 3: Item access
 
-You can give creators access to individual content items in a workspace by sharing via direct access. With this approach, you share a link to the item (similar to when you [share individual items with consumers](#option-1-view-individual-content-items-in-fabric)), or creators request access after they discover the content in the OneLake data hub.
+You can give creators access to individual content items in a workspace by sharing via direct access. With this approach, you share a link to the item (similar to when you [share individual items with consumers](#option-1-view-individual-content-items-in-fabric)), or creators request access after they discover the content in the OneLake catalog.
 
 This approach is beneficial when:
 
 - Creators will only use one or a subset of items in a workspace.
 - You want to share items with creators without providing workspace access.
 - Creators should publish the content they create to their own, separate workspace.
-- Creators should discover data items from the OneLake data hub.
+- Creators should discover data items from the OneLake catalog.
 
 > [!NOTE]
-> Sharing access to a data item like a lakehouse or semantic model will also give that user access to the underlying data in that item. It's not the same as granting data access to objects like tables or files by using OneLake data access roles (or RBAC).
+> Sharing access to a data item like a lakehouse or semantic model will also give that user access to the underlying data in that item. It's not the same as granting data access to objects like tables or files by using the OneLake data access roles (or RBAC).
 
 You can't share some individual content items, such as dataflows. For these items, you must provide workspace access for creators to view and use them.
 
@@ -705,7 +705,7 @@ Creators must have ReadAll or Write permission to the lakehouse (either via work
 **Checklist** - When sharing content with other creators, key decisions and considerations include:
 
 > [!div class="checklist"]
-> - **Identify how content creators get access to content**: Decide whether you'll proactively grant access to content creators, or whether they're expected to find and request access to content themselves from the OneLake data hub.
+> - **Identify how content creators get access to content**: Decide whether you'll proactively grant access to content creators, or whether they're expected to find and request access to content themselves from the OneLake catalog.
 > - **Create a workspace for creators to publish content**: Ensure that creators have an available workspace to publish semantic models and reports, or to create other content in the Fabric portal.
 > - **Allocate licenses to creators**: Work with an appropriate administrator to ensure that creators have the appropriate per-user licenses to create and share content.
 > - **Decide what permissions creators should have**: Decide whether creators need Read, Build, or Write permission to existing content.

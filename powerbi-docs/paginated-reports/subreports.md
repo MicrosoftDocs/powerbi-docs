@@ -1,8 +1,8 @@
 ---
 title: "Subreports in Power BI paginated reports"
 description: Learn about supported data sources for paginated reports in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

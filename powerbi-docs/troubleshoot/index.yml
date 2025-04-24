@@ -11,8 +11,8 @@ metadata:
   ms.subservice: pbi-fundamentals
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: mihart
-  ms.author: mihart
+  author: julcsc
+  ms.author: juliacawthra
   ms.date: 02/13/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -39,8 +39,6 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Troubleshoot signing up and purchasing an individual license
-            url:  ../support/service-troubleshoot-signup.md
           - text: Troubleshoot refresh scenarios
             url: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
           - text: Troubleshoot subscribing to reports and dashboards

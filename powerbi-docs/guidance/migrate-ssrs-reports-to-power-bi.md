@@ -1,21 +1,21 @@
 ---
-title: Plan to migrate .rdl reports to Power BI
-description: Guidance to help you migrate your .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to Power BI.
-author: peter-myers
-ms.author: v-pemyers
+title: "Plan to migrate .rdl reports to Power BI"
+description: "Guidance to help you migrate your .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to Power BI."
+author: denglishbi
+ms.author: daengli
 ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, intro-migration
-ms.date: 10/29/2024
+ms.date: 12/30/2024
 ---
 
 # Plan to migrate .rdl reports to Power BI
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
 
-This article targets Power BI Report Server and SQL Server Reporting Services (SSRS) report authors and Power BI administrators. It provides you with guidance to help you migrate your [Report Definition Language (.rdl)](/sql/reporting-services/reports/report-definition-language-ssrs) reports to Power BI.
+This article targets Power BI Report Server and SQL Server Reporting Services (SSRS) report authors and Fabric administrators. It provides you with guidance to help you migrate your [Report Definition Language (.rdl)](/sql/reporting-services/reports/report-definition-language-ssrs) reports to Power BI.
 
 > [!NOTE]
 > In Power BI, .rdl reports are called _paginated reports_.
@@ -85,7 +85,7 @@ After verifying that your organization meets the pre-requisites, you're ready to
 
 The goal of the _Discover_ phase is to identify your existing report server instances. This process involves scanning the network to identify all report server instances in your organization.
 
-You can use the [Microsoft Assessment and Planning Toolkit](https://www.microsoft.com/download/details.aspx?id=7826). The "MAP Toolkit" discovers and reports on your report server instances, versions, and installed features. It's a powerful inventory, assessment, and reporting tool that can simplify your migration planning process.
+Start your migration by discovering and assessing on-premises resources using the free [Azure Migrate](https://go.microsoft.com/fwlink/?linkid=2227895) tool. It can discover and report on your report server instances, versions, and installed features. It's a powerful inventory, assessment, and reporting tool that can help with your migration planning process.
 
 Organizations might have hundreds of SQL Server Reporting Services (SSRS) reports. Some of those reports might become obsolete due to lack of use. The article [Find and retire unused reports](retire-unused-reports-ssrs.md) can help you discover unused reports and how to create a cadence for cleanup.
 

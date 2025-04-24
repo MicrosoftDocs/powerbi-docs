@@ -1,13 +1,13 @@
 ---
 title: Working with visualizations (visuals) as a business user
 description: Learn about Power BI terms and concepts and the most common interactions with the visuals on dashboards, in reports, or in Q&A.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/20/2024
+ms.date: 01/11/2025
 LocalizationGroup: Visualizations
 ---
 
@@ -19,10 +19,10 @@ At its most basic, a visualization (or visual) is a chart built by Power BI desi
 
 You can find visuals on dashboards and in reports, and you can create them instantly using Power BI Q&A. When a designer creates a visual in a report, they can pin it to a dashboard. For more information, see [Dashboard tiles in Power BI](end-user-tiles.md). The following example shows a dashboard with eight tiles.
 
-:::image type="content" source="media/end-user-visualizations/power-bi-dashboard.png" alt-text="Screenshot of a Power BI service window showing a dashboard in the main pane." lightbox="media/end-user-visualizations/power-bi-dashboard.png":::
+:::image type="content" source="media/end-user-visualizations/power-bi-dashboards.png" alt-text="Screenshot of a Power BI service window showing a dashboard in the main pane." lightbox="media/end-user-visualizations/power-bi-dashboards.png":::
 
 > [!TIP]
-> We recommend reading the overview topic [Basic concepts for the Power BI service business user](end-user-basic-concepts.md) before reading this more detailed content.
+> We recommend reading the overview topic [Basics of the Power BI service](../fundamentals/service-basic-concepts.md) before reading this more detailed content.
 
 ## What can I do with visuals
 
@@ -62,6 +62,6 @@ The administrator or the designer can disable your ability to see or use these f
 
 ## Related content
 
-- [Basic concepts for the Power BI service business users](end-user-basic-concepts.md)
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 - [Open a report in the Power BI service](end-user-report-open.md)
 - [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)

@@ -3,7 +3,7 @@ title: Key influencers visualizations tutorial
 description: 'Tutorial: Create a key influencers visualization in Power BI'
 author: aphilip94
 ms.author: anphil
-ms.reviewer: mihart
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: video-removed, sample-customer-feedback
@@ -273,6 +273,7 @@ The key influencers visual has some limitations:
 - Publish to web isn't supported
 - .NET Framework 4.6 or higher is required
 - SharePoint Online embedding isn't supported
+- Analyze a metric that is categorical is not supported if *Discourage Implicit Measures* is set to **true** for the data model (for example, when calculation groups are defined in the data model)
 
 :::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png" alt-text="Screenshot of drop-down choices for numeric question":::
 
@@ -375,7 +376,7 @@ The logistic regression also considers how many data points are present. For exa
 
 Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a linear regression to calculate the key influencers. A linear regression is a statistical model that looks at how the outcome of the field you're analyzing changes based on your explanatory factors.
 
-For example, if we're analyzing house prices, a linear regression looks at the effect that having an excellent kitchen hAs on the house price. Do houses with excellent kitchens generally have lower or higher house prices compared to houses without excellent kitchens?
+For example, if we're analyzing house prices, a linear regression looks at the effect that having an excellent kitchen has on the house price. Do houses with excellent kitchens generally have lower or higher house prices compared to houses without excellent kitchens?
 
 The linear regression also considers the number of data points. For example, if houses with tennis courts have higher prices but we have few houses with a tennis court, this factor isn't considered influential. This determination is made because there aren't enough data points available to infer a pattern. A statistical test, known as a Wald test, is used to determine whether a factor is considered an influencer. The visual uses a p-value of 0.05 to determine the threshold. 
 

@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 07/09/2024
+ms.date: 03/31/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -20,7 +20,7 @@ ms.collection: ce-skilling-ai-copilot
 
 Copilot can answer questions with visuals created from your semantic model's data. Tell Copilot what you're looking for, and if the answer isn't already visualized on your report, Copilot will query your model and return the answer to your question in the form of a visual.
 
-:::image type="content" source="media/copilot-ask-data-questions/data-question-skill.png" alt-text="Screenshot showing Copilot answer a question about data using a visual." lightbox="media/copilot-ask-data-questions/data-question-skill.png":::
+:::image type="content" source="media/copilot-ask-data-questions/data-question-skill-02.png" alt-text="Screenshot showing Copilot answer a question about data using a visual." lightbox="media/copilot-ask-data-questions/data-question-skill-02.png":::
 
 ## Before you start
 
@@ -30,7 +30,7 @@ Before you can use this feature, make sure you satisfy the [requirements for the
 
 Asking Copilot for data from your model is a preview feature.
 
-Since this is a preview feature, you'll need to enable it via the preview toggle in the Copilot pane. Find the preview toggle in the top right corner of the Copilot pane. Switch the toggle on to access all of the Copilot capabilities currently in public preview.
+Since this is a preview feature, you need to enable it using the preview toggle in the Copilot pane. Find the preview toggle in the top right corner of the Copilot pane. Switch the toggle on to access all of the Copilot capabilities currently in public preview.
 
 :::image type="content" source="media/copilot-ask-data-questions/data-question-preview-toggle.png" alt-text="Screenshot displaying the preview toggle in the Copilot pane." lightbox="media/copilot-ask-data-questions/data-question-preview-toggle.png":::
 
@@ -46,7 +46,7 @@ This capability allows Copilot to generate queries and return visuals based on d
 
 ## Supported question types
 
-Copilot is best at answering questions using existing measures and columns in your semantic model. Questions may include asking for existing measures filtered to a different region or span of time than they are on the report, a metric split into categories, or how a measure changes with time.
+Copilot can answer questions using existing measures and columns in your semantic model, and questions that require Copilot to generate DAX queries to answer questions (described in the following section describing ad hoc calculations). Questions may include asking for existing measures filtered to a different region or span of time than they are on the report, a metric split into categories, or how a measure changes with time.
 
 While the exact questions that Copilot can answer depends on the specifics of your model, here are some examples:
 
@@ -57,7 +57,22 @@ While the exact questions that Copilot can answer depends on the specifics of yo
 
 Copilot also responds to follow up requests based on what you have already asked in your current session.
 
-:::image type="content" source="media/copilot-ask-data-questions/data-question-follow-up.png" alt-text="Screenshot showing a follow-up question in the Copilot pane." lightbox="media/copilot-ask-data-questions/data-question-follow-up.png":::
+:::image type="content" source="media/copilot-ask-data-questions/data-question-follow-up-02.png" alt-text="Screenshot showing a follow-up question in the Copilot pane." lightbox="media/copilot-ask-data-questions/data-question-follow-up-02.png":::
+
+## Ad hoc calculations for data questions
+
+Copilot can also generate DAX queries to answer questions that require ad hoc calculations, such as creating new measures that aren't contained in the model. Examples of questions that Copilot can answer by creating a DAX query include the following:
+
+* What was the year-over-year growth for sales?
+* How many employees were hired before 2020?
+* Calculate the ratio of cosmetic product orders to all products.
+* Which customers didn't buy any products?
+
+You can also verify the DAX query directly from the expanded view or launch DAX query view for further inspection. 
+
+:::image type="content" source="media/copilot-ask-data-questions/data-question-answers-01.png" alt-text="Screenshot of copilot answering a question by creating a DAX query.":::
+
+Ad hoc calculations currently require using **Edit Mode** of reports using Copilot.
 
 ## Unsupported question types
 
@@ -79,13 +94,17 @@ Copilot can't currently answer questions that require on-the-fly calculations. I
 
 Copilot provides an answer for you in the form of a visual. In text, it describes the visual it produced, including the fields it used to build or filter the visual.
 
-You can expand the "show reasoning" dropdown to learn more about how Copilot understood your question, and to ensure that the phrases you used were matched against the right data in your model. 
+You can expand the “How Copilot arrived at this” dropdown to learn more about how Copilot understood your question, and to ensure the correct fields, measures, or filters were chosen from your model.
 
-:::image type="content" source="media/copilot-ask-data-questions/data-question-show-reasoning.png" alt-text="Screenshot showing the show reasoning section of a visual answer." lightbox="media/copilot-ask-data-questions/data-question-show-reasoning.png":::
+:::image type="content" source="media/copilot-ask-data-questions/data-question-show-reasoning-02.png" alt-text="Screenshot showing the show reasoning section of a visual answer." lightbox="media/copilot-ask-data-questions/data-question-show-reasoning-02.png":::
 
-You can also expand the visual to see it in more detail, and as a report author, you can even add these visuals directly to your report page – just select the "add to page" button underneath the visual.
+You can see more detail about the **Data used** by selecting the link beside each *data used* element, as shown in the following image. 
 
-:::image type="content" source="media/copilot-ask-data-questions/data-question-expand.png" alt-text="Screenshot showing the expand and add to page buttons of a visual answer." lightbox="media/copilot-ask-data-questions/data-question-expand.png":::
+:::image type="content" source="media/copilot-ask-data-questions/data-question-show-reasoning-details.png" alt-text="Screenshot showing the data details for a visual answer." lightbox="media/copilot-ask-data-questions/data-question-show-reasoning-details.png":::
+
+You can also expand the visual to see it in more detail, and as a report author, you can even add these visuals directly to your report page – just select the "add to page" button below the visual.
+
+:::image type="content" source="media/copilot-ask-data-questions/data-question-expand-02.png" alt-text="Screenshot showing the expand and add to page buttons of a visual answer." lightbox="media/copilot-ask-data-questions/data-question-expand-02.png":::
 
 ## Improve answer quality with linguistic modeling
 

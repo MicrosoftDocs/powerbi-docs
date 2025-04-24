@@ -1,8 +1,8 @@
 ---
 title: Interact with a report in Editing view
 description: Learn how to create, edit, and interact with a report in report Editing view in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

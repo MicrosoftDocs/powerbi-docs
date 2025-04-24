@@ -95,7 +95,7 @@
       href: ../consumer/business-user-teams-collaboration-data.md?context=/power-bi/collaborate-share/context/context
     - name: "Chat in Teams directly"
       href: service-share-report-teams.md
-    - name: "Get a link preview in Teams"
+    - name: "Understand link preview cards in Teams chats"
       href: service-teams-link-preview.md
     - name: "View all your Power BI tabs in Teams"
       href: service-teams-pivot.md
@@ -111,6 +111,8 @@
       href: service-power-bi-powerpoint-add-in-install.md
     - name: "View and present live data in PowerPoint"
       href: service-power-bi-powerpoint-add-in-view-present.md
+    - name: "Annotate your embedded Power BI visuals"
+      href: service-power-bi-powerpoint-add-in-annotate.md
     - name: "Information for the Power BI admin"
       href: service-power-bi-powerpoint-add-in-admin.md
     - name: "Deploying the add-in in national clouds"

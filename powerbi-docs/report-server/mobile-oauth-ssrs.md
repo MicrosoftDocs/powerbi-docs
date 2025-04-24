@@ -198,7 +198,7 @@ To configure constrained delegation, you want to do the following steps.
 While you can publish applications within the Report Access Management Console, we'll want to create the application via PowerShell. Here's the command to add the application.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl https://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "AA11BB22CC33DD44EE55FF66AA77BB88CC99DD00" -BackendServerUrl https://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parameter | Comments |
@@ -216,15 +216,15 @@ After you add the WAP Application, you need to set the BackendServerAuthenticati
 Get-WebApplicationProxyApplication "Contoso Reports" | fl
 ```
 
-![Add Application Group](media/mobile-oauth-ssrs/wap-application-id.png)
+:::image type="content" source="./media/mobile-oauth-ssrs/wap-application-id.png" alt-text="Screenshot showing the ID you need from the WAP Application.":::
 
 Run the following command to set the BackendServerAuthenticationMode using the ID of the WAP Application.
 
 ```powershell
-Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -BackendServerAuthenticationMode IntegratedWindowsAuthentication
+Set-WebApplicationProxyApplication -id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee -BackendServerAuthenticationMode IntegratedWindowsAuthentication
 ```
 
-![Add Application Group wizard](media/mobile-oauth-ssrs/wap-application-backendauth.png)
+:::image type="content" source="./media/mobile-oauth-ssrs/wap-application-backendauth.png" alt-text="Screenshot showing how to set the backend server authentication mode using the ID of the WAP application.":::
 
 ## Connecting with the Power BI Mobile App
 

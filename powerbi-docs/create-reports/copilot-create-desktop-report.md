@@ -1,8 +1,8 @@
 ---
 title: Create reports in Power BI Desktop with Copilot
 description: Using Copilot in Power BI Desktop, you can quickly create a Power BI report.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -20,7 +20,7 @@ ms.collection: ce-skilling-ai-copilot
 
 When you use the Copilot chat pane in Power BI Desktop, Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot chat pane capabilities for Power BI Desktop. You can also use [Copilot to create reports in the Power BI service](copilot-create-report-service.md).
 
-To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
+To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
 :::image type="content" source="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png" alt-text="Screenshot showing Copilot creating a page about sales performance." lightbox="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png":::
 
@@ -29,7 +29,7 @@ To use Copilot in Power BI Desktop, you need admin, member, or contributor acces
 Read about all the ways Copilot can help you in the [overview of Copilot for Power BI](copilot-introduction.md) for more guidance before you start.
 
 - You need to be signed in to the Power BI service to start using Copilot in Power BI Desktop in report view. 
-- You need to select a compatible workspace that you have write access to. It needs to be a workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity (F64 or higher) or a Power BI Premium capacity (P1 or higher). 
+- You need to select a compatible workspace that you have write access to. It needs to be a workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity or a Power BI Premium capacity (P1 or higher). 
 
     Learn more about [Copilot for Power BI capacity requirements](copilot-introduction.md#access-copilot-in-power-bi-desktop).
 

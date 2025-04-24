@@ -1,9 +1,9 @@
 ---
 title: What is a Power BI business user?
 description: Overview of the Power BI service for business users or end users. Learn who a business user is and how to safely work with data.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
@@ -67,4 +67,4 @@ That doesn't mean that you can't save your changes. You can, but those changes o
 
 [Power BI service training for business users.](/training/paths/consume-data-with-power-bi/)  
 
-[Terminology and concepts for Power BI business users.](end-user-basic-concepts.md)
+[Basics of the Power BI service](../fundamentals/service-basic-concepts.md)

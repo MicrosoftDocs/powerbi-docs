@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 08/19/2024
+ms.date: 04/11/2025
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -64,18 +64,22 @@ To download the Power BI Desktop executable from the Download Center, select **D
 
   :::image type="content" source="media/desktop-get-the-desktop/download-desktop-exe.png" alt-text="Screenshot of Download Center showing the 64-bit Power BI Desktop download selected.":::
 
+> [!IMPORTANT]
+> The 32-bit version of Power BI Desktop will no longer be supported after July 31, 2025. Upgrade to the 64-bit version of Power BI Desktop to continue receiving updates and support.
+
+
 ## Install Power BI Desktop after download
 
 You're prompted to run the installation file after you finish downloading it.
 
-Power BI Desktop ships as a single *.exe* installation package that contains all supported languages, with separate *.exe* files for the 32-bit and 64-bit versions. The *.msi* packages are no longer available. You need the executable for installation. This approach makes distribution, updates, and installation easier and more convenient, especially for administrators. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#use-command-line-options-during-installation).
+Power BI Desktop ships as a single *.exe* installation package that contains all supported languages, with separate *.exe* files for the 32-bit and 64-bit versions. The 32-bit version will no longer be supported after June 30, 2025. You need the executable for installation. This approach makes distribution, updates, and installation easier and more convenient, especially for administrators. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#use-command-line-options-during-installation).
 
 After you launch the installation package, Power BI Desktop installs as an application and runs on your desktop.
 
 :::image type="content" source="media/desktop-get-the-desktop/desktop-install-01.png" alt-text="Screenshot of Power BI Desktop installation showing the setup wizard.":::
 
 > [!NOTE]
-> Installing the deprecated *msi* version and the Microsoft Store version of Power BI Desktop on the same computer. Sometimes referred to as a *side-by-side* installation isn't supported. Manually uninstall Power BI Desktop before you download it from the Microsoft Store.
+> Installing the deprecated *msi* version and the Microsoft Store version of Power BI Desktop on the same computer, sometimes referred to as a *side-by-side* installation, isn't supported. Manually uninstall Power BI Desktop before you download it from the Microsoft Store.
 
 ## Use Power BI Desktop
 
@@ -83,16 +87,11 @@ When you launch Power BI Desktop, a welcome screen appears.
 
 :::image type="content" source="media/desktop-get-the-desktop/desktop-splash-screen.png" alt-text="Screenshot of Power BI Desktop installation showing the welcome screen.":::
 
-When you launch Power BI Desktop for the first time, if the installation isn't an upgrade, you're prompted to fill out a form or sign in to the Power BI service before you can continue.
-
-After that, you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
+Now you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
 
 ## Minimum requirements
 
 The following list provides the minimum requirements to run Power BI Desktop:
-
-> [!IMPORTANT]
-> Power BI Desktop is no longer supported on Windows 8.1.
 
 * Windows 10 or Windows Server 2016 or later.
 * .NET 4.7.2 or later.

@@ -1,8 +1,8 @@
 ---
 title: Share a filtered Power BI report
 description: Learn how to filter a Power BI report and share it with coworkers in your organization.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

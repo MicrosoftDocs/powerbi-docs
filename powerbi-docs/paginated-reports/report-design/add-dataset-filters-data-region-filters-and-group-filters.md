@@ -1,8 +1,8 @@
 ---
 title: "Add filters to datasets, data regions, and groups in a Power BI paginated report | Microsoft Docs"
 description: Find out how filters can help you control which data is displayed and processed in your paginated reports in Power BI Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder

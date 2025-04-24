@@ -7,8 +7,8 @@ ms.subservice: report-builder
 
 
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ---
 # Report parameter concepts in paginated reports (Power BI Report Builder)
 

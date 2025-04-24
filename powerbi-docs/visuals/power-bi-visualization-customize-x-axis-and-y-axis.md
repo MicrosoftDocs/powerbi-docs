@@ -3,7 +3,7 @@ title: Customize X-axis and Y-axis properties
 description: 'Customize X-axis and Y-axis properties'
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'mihart'
+ms.reviewer: 'kfollis'
 ms.custom: 
    - video-removed
    - sample-retail-analysis-sample-PBIX

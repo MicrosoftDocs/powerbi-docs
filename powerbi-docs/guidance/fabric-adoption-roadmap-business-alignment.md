@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap: Business alignment
@@ -58,9 +58,9 @@ Effective and consistent communication is critical to aligning processes. Consid
 
 Your business strategy should be well aligned with your data and BI strategy. To incrementally achieve this alignment, we recommend that you commit to following structured, iterative planning processes.
 
-- **[Strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md):** Define data, analytics, and BI goals and priorities based on the business strategy and current state of adoption and implementation. Typically, strategic planning occurs every 12-18 months to iteratively define high-level desired outcomes. You should synchronize strategic planning with key business planning processes.
-- **[Tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md):** Define objectives, action plans, and a backlog of solutions that help you to achieve your data and BI goals. Typically, tactical planning occurs quarterly to iteratively re-evaluate and align the data strategy and activities to the business strategy. This alignment is informed by business feedback and changes to business objectives or technology. You should synchronize tactical planning with key project planning processes.
-- **[Solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md):** Design, develop, test, and deploy solutions that support content creators and consumers in achieving their business objectives. Both centralized content creators and self-service content creators conduct solution planning to ensure that the solutions they create are well aligned with business objectives. You should synchronize solution planning with key adoption and governance planning processes.
+- **[Strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md)**: Define data, analytics, and BI goals and priorities based on the business strategy and current state of adoption and implementation. Typically, strategic planning occurs every 12-18 months to iteratively define high-level desired outcomes. You should synchronize strategic planning with key business planning processes.
+- **[Tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md)**: Define objectives, action plans, and a backlog of solutions that help you to achieve your data and BI goals. Typically, tactical planning occurs quarterly to iteratively re-evaluate and align the data strategy and activities to the business strategy. This alignment is informed by business feedback and changes to business objectives or technology. You should synchronize tactical planning with key project planning processes.
+- **[Solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md)**: Design, develop, test, and deploy solutions that support content creators and consumers in achieving their business objectives. Both centralized content creators and self-service content creators conduct solution planning to ensure that the solutions they create are well aligned with business objectives. You should synchronize solution planning with key adoption and governance planning processes.
 
 > [!IMPORTANT]
 > Effective business alignment is a key prerequisite for a successful [data strategy](powerbi-implementation-planning-bi-strategy-overview.md).
@@ -96,10 +96,10 @@ To achieve executive alignment, consider the following key considerations and ac
 
 Business alignment is a continual process. To maintain business alignment, consider the following factors.
 
-- **Assign a responsible team:** A working team reviews feedback and organizes re-alignment sessions. This team is responsible for the alignment of planning and priorities between the business and data strategy.
-- **Create and support a feedback process:** Your user community requires the means to provide feedback. Examples of feedback can include requests to change existing solutions, or to create new solutions and initiatives. This feedback is essential for bottom-up business user alignment, and it drives iterative and continuous improvement cycles.
-- **Measure the success of business alignment:** Consider using surveys, sentiment analysis, and usage metrics to assess the success of business alignment. When combined with other concise feedback mechanisms, this can provide valuable input to help define future actions and activities to improve business alignment and Fabric adoption.
-- **Schedule regular re-alignment sessions:** Ensure that data strategic planning and tactical planning occur alongside relevant business strategy planning (when business leadership review business goals and objectives).
+- **Assign a responsible team**: A working team reviews feedback and organizes re-alignment sessions. This team is responsible for the alignment of planning and priorities between the business and data strategy.
+- **Create and support a feedback process**: Your user community requires the means to provide feedback. Examples of feedback can include requests to change existing solutions, or to create new solutions and initiatives. This feedback is essential for bottom-up business user alignment, and it drives iterative and continuous improvement cycles.
+- **Measure the success of business alignment**: Consider using surveys, sentiment analysis, and usage metrics to assess the success of business alignment. When combined with other concise feedback mechanisms, this can provide valuable input to help define future actions and activities to improve business alignment and Fabric adoption.
+- **Schedule regular re-alignment sessions**: Ensure that data strategic planning and tactical planning occur alongside relevant business strategy planning (when business leadership review business goals and objectives).
 
 > [!NOTE]
 > Because business objectives continually evolve, you should understand that solutions and initiatives will change over time. Don't assume that requirements for data and BI projects are rigid and can't be altered. If you struggle with changing requirements, it might be an indication that your requirements-gathering process is ineffective or inflexible, or that your development workflows don't sufficiently incorporate regular feedback.
@@ -132,7 +132,7 @@ A business alignment assessment evaluates integration between the business strat
 
 The following maturity levels will help you assess your current state of business alignment.
 
-| **Level** | **State of data and business alignment** |
+| Level | ate of data and business alignment** |
 | --- | --- |
 | **100: Initial** | &bull;&nbsp;Business and data strategies lack formal alignment, which leads to reactive implementation and misalignment between data teams and business users. <br/><br/>&bull;&nbsp;Misalignment in priorities and planning hinders productive discussions and effectiveness. <br/><br/>&bull;&nbsp;Executive leadership doesn't recognize data as a strategic asset. |
 | **200: Repeatable** | &bull;&nbsp;There are efforts to align data and BI initiatives with specific data needs without a consistent approach or understanding of their success. <br/><br/>&bull;&nbsp;Alignment discussions focus on immediate or urgent needs and focus on features, solutions, tools or data, rather than strategic alignment. <br/><br/>&bull;&nbsp;People have a limited understanding of the strategic importance of data in achieving business objectives. |

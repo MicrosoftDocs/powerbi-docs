@@ -204,7 +204,7 @@ When you *embed for your organization*, to allow Microsoft Entra guest users acc
 
 To find your tenant ID, you can use the instructions in [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
-For more information, see [Making your application multi-tenant](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant).
+For more information, see [Making your application multitenant](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant).
 
 ## Data sources
 
@@ -221,7 +221,7 @@ After acquiring the IError object, you should look at the appropriate common err
 ### Typical errors when embedding for Power BI users
 
 | Message | Detailed Message | Error Code | Possible reason(s) |
-|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
+|---------|------------------|------------|--------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn't exist  |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
@@ -233,8 +233,8 @@ After acquiring the IError object, you should look at the appropriate common err
 
 ### Typical errors when embedding for non-Power BI users (using an Embed Token)
 
-| Message | Detailed Message | Error Code | Reason(s) |
-|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
+| Message | Detailed Message | Error Code | Possible reason(s) |
+|---------|------------------|------------|--------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | LoadReportFailed | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn't exist  |
 | LoadReportFailed | Get report failed | 403 | Report ID doesn't match token |
@@ -283,79 +283,6 @@ For security purposes, access tokens (a Microsoft Entra token or an embed token)
 ## Performance
 
 To get the best performing embedded content, we recommend that you follow the [Power BI embedded analytics best practices](embedded-performance-best-practices.md).
-
-## Embed setup tool
-
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
-
-### Prerequisites
-
-Verify that you have all the proper prerequisites before using the Embedding setup tool. You need a **Power BI Pro** account and a **Microsoft Azure** subscription.
-
-* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-* You need to have your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md) setup.
-* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
-
-### Common Issues
-
-Some common issues you might encounter while testing with the Embed setup tool are:
-
-#### Using the Embed for your customers sample application
-
-If you're working with the **Embed for your customers** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
-
-* When selecting **Grant permissions** (the Grant permissions step), you get the following error:
-
- ```output
- AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
- ```
-
- The solution is to close the popup, wait a few seconds and try again. You might need to repeat this action a few times. A time interval causes the issue from completing the application registration process to when it's available to external APIs.
-
-* The following error message appears when running the sample app:
-
- ```output
- Password is empty. Please fill password of Power BI username in web.config.
- ```
-
- This error occurs because the only value that isn't being injected into the sample application is your user password. Open the *Web.config* file in the solution and fill the `pbiPassword` field with your user's password.
-
-* If you get the error:
-
-```output
-AADSTS50079: The user is required to use multi-factor authentication.
-```
-
- You need to use a Microsoft Entra account that doesn't have MFA enabled.
-
-#### Using the Embed for your organization sample application
-
-If you're working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
-
-* When you run the **Embed for your organization** sample app, you get the following error:
-
- ```output
- AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
- ```
-
- This error is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, use `https://localhost:13526/` as the redirect URL.
-
- If you want to edit the registered application, [update the Microsoft Entra registered application](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), so the application can provide access to the web APIs.
-
- If you want to edit your Power BI user profile or data, learn how to edit your [Power BI data](../../fundamentals/service-basic-concepts.md).
-
-* If you get the error:
-
-```output
-AADSTS50079: The user is required to use multi-factor authentication.
-```
-
- You need to use a Microsoft Entra account that doesn't have MFA enabled.
-
-For more information, please see [Power BI Embedded FAQ](embedded-faq.yml).
-
-For further assistance, [contact support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error messages you encounter.
 
 ## Related content
 

@@ -1,8 +1,8 @@
 ---
 title: Work with aggregates (sum, average, and so on) in Power BI
 description: Learn how to change the aggregation in a chart (sum, average, maximum, and so on) in Power BI.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

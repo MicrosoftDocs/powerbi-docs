@@ -1,8 +1,8 @@
 ---
 title: Implement data translations for a calendar table
 description: Learn how to add translation support in multiple-language reports for text-based columns in calendar tables in Power BI.
-author: maggiesMSFT   
-ms.author: maggies
+author: kfollis   
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
@@ -110,7 +110,7 @@ The next step is to integrate the two tables into the data model with a **Calend
 
 :::image type="content" source="./media/data-translation-calendar-table/dax-expression-table.png" alt-text="Screenshot shows the table with its DAX code." lightbox="./media/data-translation-calendar-table/dax-expression-table.png":::
 
-Create a relationship between the **Calendar** table and the fact tables, such as **Sales**, using the **Date** column to create a one-to-many relationship. The relationships created between the **Calendar** table and the two translations tables are based on the **MonthNumber** column and the **DayNumber** column.
+Create a relationship between the **Calendar** table and the [fact tables](star-schema.md#fact-tables), such as **Sales**, using the **Date** column to create a one-to-many relationship. The relationships created between the **Calendar** table and the two translations tables are based on the **MonthNumber** column and the **DayNumber** column.
 
 :::image type="content" source="./media/data-translation-calendar-table/calendar-month-associate.png" alt-text="Screenshot shows the Model view with the Translated Month Names table in a relationship with the Calendar table." lightbox="./media/data-translation-calendar-table/calendar-month-associate.png":::
 

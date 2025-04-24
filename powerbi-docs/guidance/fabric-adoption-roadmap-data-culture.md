@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap: Data culture
@@ -88,7 +88,7 @@ Data discovery contributes to adoption efforts and the implementation of governa
 - Helping people understand who owns and manages data assets.
 - Establishing connections between consumers, creators, and owners.
 
-The [OneLake data hub](/fabric/get-started/onelake-data-hub) and the [use of endorsements](/power-bi/collaborate-share/service-endorse-content) are key ways to promote data discovery in your organization.
+The [OneLake catalog](/fabric/governance/onelake-catalog) and the [use of endorsements](../collaborate-share/service-endorse-content.md) are key ways to promote data discovery in your organization.
 
 Furthermore, data catalog solutions are extremely valuable tools for data discovery. They can record metadata tags and descriptions to provide deeper context and meaning. For example, [Microsoft Purview](/azure/purview/overview) can scan and catalog items from a Fabric tenant (as well as many other sources).
 
@@ -98,16 +98,16 @@ Furthermore, data catalog solutions are extremely valuable tools for data discov
 
 Use questions like those found below to assess data discovery.
 
-- Is there a data hub where business users can search for data?
+- Is there a data catalog where business users can search for data?
 - Is there a metadata catalog that describes definitions and data locations?
-- Are high-quality data sources endorsed by [certifying](/power-bi/collaborate-share/service-endorse-content#certify-content) or [promoting](/power-bi/collaborate-share/service-endorse-content#promote-content) them?
+- Are high-quality data sources endorsed by [certifying](../collaborate-share/service-endorse-content.md#certify-content) or [promoting](../collaborate-share/service-endorse-content.md#promote-content) them?
 - To what extent do redundant data sources exist because people can't find the data they need? What roles are expected to create data items? What roles are expected to create reports or perform ad hoc analysis?
 - Can end users find and use existing reports, or do they insist on data exports to create their own?
 - Do end users know which reports to use to address specific business questions or find specific data?
 - Are people using the appropriate data sources and tools, or resisting them in favor of legacy ones?
-- Do analysts understand how to enrich existing certified semantic models with new data—for example, by using a [Power BI composite model](/power-bi/transform-model/desktop-composite-models)?
+- Do analysts understand how to enrich existing certified semantic models with new data—for example, by using a [Power BI composite model](../transform-model/desktop-composite-models.md)?
 - How consistent are data items in their quality, completeness, and naming conventions?
-- Can data item owners follow [data lineage](/power-bi/collaborate-share/service-data-lineage) to perform impact analysis of data items?
+- Can data item owners follow [data lineage](../collaborate-share/service-data-lineage.md) to perform impact analysis of data items?
 
 ### Maturity levels of data discovery
 
@@ -115,11 +115,11 @@ Use questions like those found below to assess data discovery.
 
 The following maturity levels can help you assess your current state of data discovery.
 
-| **Level** | **State of Fabric data discovery** |
+| Level | State of Fabric data discovery |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;Data is fragmented and disorganized, with no clear structures or processes to find it. <br/><br/>&bull;&nbsp;Users struggle to find and use data they need for their tasks. |
 | 200: Repeatable | &bull;&nbsp;Scattered or organic efforts to organize and document data are underway, but only in certain teams or departments. <br/><br/>&bull;&nbsp;Content is occasionally endorsed, but these endorsements aren't defined and the process isn't managed. Data remains siloed and fragmented, and it's difficult to access. |
-| 300: Defined | &bull;&nbsp;A central repository, like the OneLake data hub, is used to make data easier to find for people who need it.  <br/><br/>&bull;&nbsp;An explicit process is in place to endorse quality data and content. <br/><br/>&bull;&nbsp;Basic documentation includes catalog data, definitions, and calculations, as well as where to find them. |
+| 300: Defined | &bull;&nbsp;A central repository, like the [OneLake catalog](/fabric/governance/onelake-catalog), is used to make data easier to find for people who need it. <br/><br/>&bull;&nbsp;An explicit process is in place to endorse quality data and content. <br/><br/>&bull;&nbsp;Basic documentation includes catalog data, definitions, and calculations, as well as where to find them. |
 | 400: Capable | &bull;&nbsp;Structured, consistent processes guide users how to endorse, document, and find data from a central hub. Data silos are the exception instead of the rule. <br/><br/>&bull;&nbsp;Quality data assets are consistently endorsed and easily identified. <br/><br/>&bull;&nbsp;Comprehensive data dictionaries are maintained and improve data discovery. |
 | 500: Efficient | &bull;&nbsp;Data and metadata is systematically organized and documented with a full view of the data lineage. <br/><br/>&bull;&nbsp;Quality assets are endorsed and easily identified. <br/><br/>&bull;&nbsp;Cataloging tools, like Microsoft Purview, are used to make data discoverable for both use and governance. |
 
@@ -162,7 +162,7 @@ Use questions like those found below to assess data democratization.
 
 The following maturity levels can help you assess your current state of data democratization.
 
-| **Level** | **State of data democratization** |
+| Level | State of data democratization |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;Data and analytics are limited to a small number of roles, who gatekeep access to others. <br/><br/>&bull;&nbsp;Business users must request access to data or tools to complete tasks. They struggle with delays or bottlenecks. <br/><br/>&bull;&nbsp;Self-service initiatives are taking place with some success in various areas of the organization. These activities are occurring in a somewhat chaotic manner, with few formal processes and no strategic plan. There's a lack of oversight and visibility into these self-service activities. The success or failure of each solution isn't well understood. <br/><br/>&bull;&nbsp;The enterprise data team can't keep up with the needs of the business. A significant backlog of requests exists for this team. |
 | 200: Repeatable | &bull;&nbsp;There are limited efforts underway to expand access to data and tools. <br/><br/>&bull;&nbsp;Multiple teams have had measurable success with self-service solutions. People in the organization are starting to pay attention. <br/><br/>&bull;&nbsp;Investments are being made to identify the ideal balance of enterprise and self-service solutions. |
@@ -211,7 +211,7 @@ Use questions like those found below to assess data literacy.
 
 The following maturity levels can help you assess your current state of data literacy.
 
-| **Level** | **State of data literacy** |
+| Level | State of data literacy |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;Decisions are frequently made based on intuition and subjective experience. When confronted with data that challenges existing opinions, data is often dismissed. <br/><br/>&bull;&nbsp;Individuals have low confidence to use and understand data in decision-making processes or discussions. <br/><br/>&bull;&nbsp;Report consumers have a strong preference for static tables. These consumers dismiss interactive visualizations or sophisticated analytical methods as "fancy" or unnecessary. |
 | 200: Repeatable | &bull;&nbsp;Some teams and individuals inconsistently incorporate data into their decision making. There are clear cases where misinterpretation of data has led to flawed decisions or wrong conclusions. <br/><br/>&bull;&nbsp;There's some resistance when data challenges pre-existing beliefs. <br/><br/>&bull;&nbsp;Some people are skeptical of interactive visualizations and sophisticated analytical methods, though their use is increasing. |
@@ -226,13 +226,13 @@ The following maturity levels can help you assess your current state of data lit
 **Checklist** - Here are some considerations and key actions that you can take to strengthen your data culture.
 
 > [!div class="checklist"]
-> - **Align your data culture goals and strategy:**  Give serious consideration to the type of data culture that you want to cultivate. Ideally, it's more from a position of user empowerment than a position of command and control.
-> - **Understand your current state:** Talk to stakeholders in different business units to understand which analytics practices are currently working well and which practices aren't working well for data-driven decision-making. Conduct a series of workshops to understand the current state and to formulate the desired future state.
-> - **Speak with stakeholders:** Talk to stakeholders in IT, BI, and the [COE](fabric-adoption-roadmap-center-of-excellence.md) to understand which [governance](fabric-adoption-roadmap-governance.md) constraints need consideration. These conversations can present an opportunity to educate teams on topics like security and infrastructure. You can also use the opportunity to educate stakeholders on the features and capabilities included in Fabric.
-> - **Verify executive sponsorship:** Verify the level of [executive sponsorship](fabric-adoption-roadmap-executive-sponsorship.md) and support that you have in place to advance data culture goals.
-> - **Make purposeful decisions about your data strategy:** Decide what the ideal balance of business-led self-service, managed self-service, and enterprise data, analytics and BI use cases should be for the key business units in the organization (covered in the [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) article). Also consider how the data strategy relates to the extent of published content for personal, team, departmental, and enterprise analytics and BI (described in the [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) article). Define your high-level goals and priorities for this strategic planning. Determine how these decisions affect your tactical planning.
-> - **Create a tactical plan:** Begin creating a tactical plan for immediate, short-term, and long-term action items. Identify business groups and problems that represent "quick wins" and can make a visible difference.
-> - **Create goals and metrics:** Determine how you'll measure effectiveness for your data culture initiatives. Create key performance indicators (KPIs) or objectives and key results (OKRs) to validate the results of your efforts.
+> - **Align your data culture goals and strategy**:  Give serious consideration to the type of data culture that you want to cultivate. Ideally, it's more from a position of user empowerment than a position of command and control.
+> - **Understand your current state**: Talk to stakeholders in different business units to understand which analytics practices are currently working well and which practices aren't working well for data-driven decision-making. Conduct a series of workshops to understand the current state and to formulate the desired future state.
+> - **Speak with stakeholders**: Talk to stakeholders in IT, BI, and the [COE](fabric-adoption-roadmap-center-of-excellence.md) to understand which [governance](fabric-adoption-roadmap-governance.md) constraints need consideration. These conversations can present an opportunity to educate teams on topics like security and infrastructure. You can also use the opportunity to educate stakeholders on the features and capabilities included in Fabric.
+> - **Verify executive sponsorship**: Verify the level of [executive sponsorship](fabric-adoption-roadmap-executive-sponsorship.md) and support that you have in place to advance data culture goals.
+> - **Make purposeful decisions about your data strategy**: Decide what the ideal balance of business-led self-service, managed self-service, and enterprise data, analytics and BI use cases should be for the key business units in the organization (covered in the [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) article). Also consider how the data strategy relates to the extent of published content for personal, team, departmental, and enterprise analytics and BI (described in the [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) article). Define your high-level goals and priorities for this strategic planning. Determine how these decisions affect your tactical planning.
+> - **Create a tactical plan**: Begin creating a tactical plan for immediate, short-term, and long-term action items. Identify business groups and problems that represent "quick wins" and can make a visible difference.
+> - **Create goals and metrics**: Determine how you'll measure effectiveness for your data culture initiatives. Create key performance indicators (KPIs) or objectives and key results (OKRs) to validate the results of your efforts.
 
 ## Questions to ask about data culture
 
@@ -254,7 +254,7 @@ Use questions like those found below to assess data culture.
 
 The following maturity levels will help you assess the current state of your data culture.
 
-| **Level** | **State of data culture** |
+| Level | State of data culture |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;Enterprise data teams can't keep up with the needs of the business. A significant backlog of requests exists. <br/><br/>&bull;&nbsp;Self-service data and BI initiatives are taking place with some success in various areas of the organization. These activities occur in a somewhat chaotic manner, with few formal processes and no strategic plan. <br/><br/>&bull;&nbsp;There's a lack of oversight and visibility into self-service BI activities. The successes or failures of data and BI solutions aren't well understood. |
 | 200: Repeatable | &bull;&nbsp;Multiple teams have had measurable successes with self-service solutions. People in the organization are starting to pay attention. <br/><br/>&bull;&nbsp;Investments are being made to identify the ideal balance of enterprise and self-service data, analytics, and BI. |

@@ -1,8 +1,8 @@
 ---
 title: Sign up or purchase the Power BI service as an individual
 description: Learn how to sign up for or purchase the Power BI service and begin using it for your individual data analysis and visualization needs.
-author: mihart
-ms.author: mihart
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
@@ -55,7 +55,7 @@ Microsoft publishes *get started* buttons for new Power BI users. Some of these 
 
     Because you're a new user, Power BI opens your **Home** screen. **Home** contains resources to help you get started.
 
-    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-home.png" alt-text="Screenshot of your Power BI Home screen.":::
+    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-homes.png" alt-text="Screenshot of your Power BI Home screen.":::
 
 1. You might even receive a pop-up with suggestions to get started. Here's one example.
 
@@ -107,8 +107,6 @@ In most cases, you can get a license for the Power BI service and for Fabric by 
 - Your organization doesn't support self-service sign-up or self-service purchase. Contact your Billing admin to see if these self-service options can be turned on.
 - Your organization doesn't support self-service upgrades. Pay for the new license yourself. After you sign in, you select how many licenses you want to buy and provide credit card payment. When the purchase is finished, you can start using your paid licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
 - Your organization has its own process for self-service sign-ups and purchases. Follow those steps instead to request a license.
-
-For more limitations and considerations, see [Troubleshoot signing up for an individual license](../support/service-troubleshoot-signup.md).
 
 ## Related content
 

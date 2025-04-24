@@ -1,8 +1,8 @@
 ---
 title: "Filter equation examples in a paginated report"
 description: Find out how to create a paginated report filter. Consider these examples of often-used filters to create your own.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.date: 06/16/2023
 ms.service: powerbi

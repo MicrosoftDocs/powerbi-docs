@@ -1,8 +1,8 @@
 ---
 title: 'Corporate Spend sample for Power BI: Take a tour'
 description: Find out how to get the Corporate Spend sample for Power BI. Take a tour of the features used in this sample, including the decomposition tree visualization.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

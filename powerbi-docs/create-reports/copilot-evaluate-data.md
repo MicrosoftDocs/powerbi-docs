@@ -1,8 +1,8 @@
 ---
 title: Update your data model to work well with Copilot for Power BI
 description: Before you start using Copilot with your semantic model, evaluate your data to see if there are ways you can improve its performance.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -48,7 +48,7 @@ The following table lists additional criteria to help you create accurate [DAX q
 |Element  | Consideration  | Description  | Example  |
 |---------|---------|---------|-----|
 |Measures, tables, and columns  | Descriptions  | Include what it is and how you intend each element to be used in the description property. Note: Only first 200 characters are used.  | [YOY Sales] description could be "Year-over-year (YOY) difference in Orders. Use with the 'Date'[Year] column to show by years other than the latest year. Partial years will compare to same period of prior year." |
-|Calculation groups | Descriptions | Calculation items aren't included in the model metadata. Use the description of the calculation group column to list and explain the use of the calculation items. Note: Only first 200 characters are used. | For example, the [Time intelligence sample](/analysis-services/tabular-models/calculation-groups?view=asallproducts-allversions#time-intelligence-example) calculation group column could have this description: "Use with measures & date table for Current: current value, MTD: month to date, QTD: quarter to date, YTD: year to date, PY: prior year, PY MTD, PY QTD, YOY: year over year change, YOY%: YOY as a %" and on a table with measures could expand on the usage a description such as "Measures are used to aggregate data. These measures can be shown as year-over-year by using this syntax CALCULATE([Measure Name], 'Time intelligence'[Time calculation] = "YOY")" |
+|Calculation groups | Descriptions | Calculation items aren't included in the model metadata. Use the description of the calculation group column to list and explain the use of the calculation items. Note: Only first 200 characters are used. | For example, the [Time intelligence sample](/analysis-services/tabular-models/calculation-groups#time-intelligence-example) calculation group column could have this description: "Use with measures & date table for Current: current value, MTD: month to date, QTD: quarter to date, YTD: year to date, PY: prior year, PY MTD, PY QTD, YOY: year over year change, YOY%: YOY as a %" and on a table with measures could expand on the usage a description such as "Measures are used to aggregate data. These measures can be shown as year-over-year by using this syntax CALCULATE([Measure Name], 'Time intelligence'[Time calculation] = "YOY")" |
 
 ## Related content
 

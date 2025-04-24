@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 04/24/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Content lifecycle management
@@ -17,9 +17,9 @@ ms.date: 04/24/2024
 
 This article introduces the content lifecycle management series of articles, which helps you to plan how to manage the lifecycle of your Power BI content. The series of articles is primarily targeted at:
 
-- **Fabric administrators:** The administrators who are responsible for overseeing Fabric in the organization. Fabric administrators might need to collaborate with other administrators, like those who oversee Microsoft 365 or Azure DevOps.
-- **Center of Excellence (COE) and BI teams:** The teams that are responsible for overseeing Power BI in the organization. These teams include decision makers who decide how to manage the lifecycle of Power BI content. These teams might also include roles like release managers who handle the lifecycle of content releases, or engineers who create and manage the components needed to effectively use and support lifecycle management.
-- **Content creators and content owners:** Users who create Power BI content that they want to publish to the Fabric portal to share with others. These individuals are responsible for managing the lifecycle of the content that they create.
+- **Fabric administrators**: The administrators who are responsible for overseeing Fabric in the organization. Fabric administrators might need to collaborate with other administrators, like those who oversee Microsoft 365 or Azure DevOps.
+- **Center of Excellence (COE) and BI teams**: The teams that are responsible for overseeing Power BI in the organization. These teams include decision makers who decide how to manage the lifecycle of Power BI content. These teams might also include roles like release managers who handle the lifecycle of content releases, or engineers who create and manage the components needed to effectively use and support lifecycle management.
+- **Content creators and content owners**: Users who create Power BI content that they want to publish to the Fabric portal to share with others. These individuals are responsible for managing the lifecycle of the content that they create.
 
 To ensure that you deliver reliable and useful Power BI content to consumers, it's important to follow effective content _lifecycle management_ practices. Lifecycle management refers to how you handle content from creation to publication (or _deployment_), including retiring content when users no longer need it. Planning your lifecycle management strategy for Power BI content is an essential step to scale and grow for successful [enterprise](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md) and [self-service analytics](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md).
 
@@ -39,12 +39,12 @@ The following diagram depicts a typical Power BI content lifecycle.
 
 The six stages shown in the diagram include:
 
-1. **[Plan and design content](powerbi-implementation-planning-content-lifecycle-management-plan-design.md):** You typically collect requirements, design the solution, and make key lifecycle management decisions to start Power BI content creation.
-2. **[Develop content and manage changes](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md):** You begin to create content and use _version control_ (or _source control_) to track and manage content changes during development.
-3. **[Validate content](powerbi-implementation-planning-content-lifecycle-management-validate.md):** You routinely test content to ensure quality results and to prevent changes in existing content from causing new issues.
-4. **[Deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md):** When ready, you deploy content to a workspace, or promote it between different environments (like promoting content from a test to a production workspace).
-5. **[Support and monitor content](powerbi-implementation-planning-content-lifecycle-management-support-monitor.md):** After it's published, you support content by addressing issues or requests from users. Supporting and monitoring content often leads to planning and creating more content. You also monitor the deployed content to ensure it's reliable.
-6. **[Retire and archive content](powerbi-implementation-planning-content-lifecycle-management-retire-archive.md):** When consumers no longer need or use content, you should retire it. When you retire content, you typically remove and archive it for later reference, if needed.
+1. **[Plan and design content](powerbi-implementation-planning-content-lifecycle-management-plan-design.md)**: You typically collect requirements, design the solution, and make key lifecycle management decisions to start Power BI content creation.
+2. **[Develop content and manage changes](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md)**: You begin to create content and use _version control_ (or _source control_) to track and manage content changes during development.
+3. **[Validate content](powerbi-implementation-planning-content-lifecycle-management-validate.md)**: You routinely test content to ensure quality results and to prevent changes in existing content from causing new issues.
+4. **[Deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md)**: When ready, you deploy content to a workspace, or promote it between different environments (like promoting content from a test to a production workspace).
+5. **[Support and monitor content](powerbi-implementation-planning-content-lifecycle-management-support-monitor.md)**: After it's published, you support content by addressing issues or requests from users. Supporting and monitoring content often leads to planning and creating more content. You also monitor the deployed content to ensure it's reliable.
+6. **[Retire and archive content](powerbi-implementation-planning-content-lifecycle-management-retire-archive.md)**: When consumers no longer need or use content, you should retire it. When you retire content, you typically remove and archive it for later reference, if needed.
 
 Each of these stages is described in detail in the articles in this series on content lifecycle management. The guidance in these articles helps you to determine your approach to manage your Power BI content.
 
@@ -63,7 +63,7 @@ For each stage of the content lifecycle, the following diagram depicts some exam
 
 The diagram depicts the following components for each stage in the content lifecycle. The components are examples. The first example is how you might achieve a simple lifecycle management approach; the second example is how you might achieve an advanced lifecycle management approach.
 
-| **Item** | **Description** |
+| Item | Description |
 | --- | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | You can plan and design content by using Microsoft Teams to collaborate in teams, or by using Azure DevOps to collaborate in projects. |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | You can develop content and manage changes by using OneDrive for Business (also known as OneDrive for work or school) to conduct file version control, or by using Azure Repos in Azure DevOps for metadata source control. |
@@ -74,12 +74,12 @@ The diagram depicts the following components for each stage in the content lifec
 
 Choosing how you approach content lifecycle management depends on your needs and other factors. Here are some key factors to consider as you go through the content in this series.
 
-- **Who will create the content:** Content creators have varying needs, skills, and workflows. Each of these factors can influence the success of different lifecycle management approaches. What works for a larger central team that manages enterprise environments might not be effective for a small, decentralized team that delivers content to a small audience.
-- **Whether there's collaborative content creation:** When content creators work together on the same content, there's a higher likelihood of inconsistency and disruption. For example, one creator could overwrite the changes of another. Effective lifecycle management is essential in collaboration to avoid wasted time and enhance productivity.
-- **What the type and scope of content is:** Different content may require different approaches. Business-critical content with a high number of consumers should have a more robust lifecycle management approach. Conversely, a small prototype may only require a minimal approach, like removing and archiving it once it's served its purpose.
-- **What licensing is in place:** Different lifecycle management options are available depending on the Fabric or Power BI licenses you have. For instance, [Premium features](../enterprise/service-premium-features.md) like deployment pipelines are available only for [Fabric or Premium capacities](/fabric/enterprise/licenses) or users with [Premium Per User (PPU) licenses](../enterprise/service-premium-per-user-faq.yml). However, [Fabric Git integration](/fabric/cicd/git-integration/intro-to-git-integration) is only available with Fabric capacity.
-- **How content creators deliver content:** Content creators who use different [content delivery scopes](fabric-adoption-roadmap-content-delivery-scope.md) might need different approaches to manage that content. A team that distributes content to an internal audience by using [Power BI apps](../consumer/end-user-apps.md) will likely require a different approach than a team that distributes [embedded content for external customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md).
-- **How mature the Power BI or Fabric implementation is:** When your implementation reaches a certain scale, more decisions and actions depend on Power BI content. To avoid disruption, content lifecycle management becomes more important as you scale and grow.
+- **Who will create the content**: Content creators have varying needs, skills, and workflows. Each of these factors can influence the success of different lifecycle management approaches. What works for a larger central team that manages enterprise environments might not be effective for a small, decentralized team that delivers content to a small audience.
+- **Whether there's collaborative content creation**: When content creators work together on the same content, there's a higher likelihood of inconsistency and disruption. For example, one creator could overwrite the changes of another. Effective lifecycle management is essential in collaboration to avoid wasted time and enhance productivity.
+- **What the type and scope of content is**: Different content may require different approaches. Business-critical content with a high number of consumers should have a more robust lifecycle management approach. Conversely, a small prototype may only require a minimal approach, like removing and archiving it once it's served its purpose.
+- **What licensing is in place**: Different lifecycle management options are available depending on the Fabric or Power BI licenses you have. For instance, [Premium features](../enterprise/service-premium-features.md) like deployment pipelines are available only for [Fabric or Premium capacities](/fabric/enterprise/licenses) or users with [Premium Per User (PPU) licenses](../enterprise/service-premium-per-user-faq.yml). However, [Fabric Git integration](/fabric/cicd/git-integration/intro-to-git-integration) is only available with Fabric capacity.
+- **How content creators deliver content**: Content creators who use different [content delivery scopes](fabric-adoption-roadmap-content-delivery-scope.md) might need different approaches to manage that content. A team that distributes content to an internal audience by using [Power BI apps](../consumer/end-user-apps.md) will likely require a different approach than a team that distributes [embedded content for external customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md).
+- **How mature the Power BI or Fabric implementation is**: When your implementation reaches a certain scale, more decisions and actions depend on Power BI content. To avoid disruption, content lifecycle management becomes more important as you scale and grow.
 
 > [!IMPORTANT]
 > There are many other valid approaches to manage the lifecycle of your Power BI content. Select and plan an approach that best fits your [content ownership](powerbi-adoption-roadmap-content-ownership-and-management.md) and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) strategies, and which helps you meet your needs and achieve your [BI objectives](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md).

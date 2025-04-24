@@ -419,6 +419,9 @@ There can be a large multiplier effect. A dashboard with 10 tiles, shared with 1
 
 A timeout of four minutes applies to individual queries in the Power BI service. Queries that take longer than four minutes fail. This limit is intended to prevent issues caused by overly long execution times. You should use DirectQuery only for sources that can provide interactive query performance.
 
+When the timeout limit is reached, visuals fail to load with the following error:
+```The query has exceeded the available resources. Try filtering to decrease the amount of data requested. The XML for Analysis request timed out before it was completed. Timeout value: 225 sec```.
+
 ## Performance diagnostics
 
 This section describes how to diagnose performance issues, or how to get more detailed information to optimize your reports.

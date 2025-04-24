@@ -1,8 +1,8 @@
 ---
 title: Intro to Q&A tooling to train Power BI Q&A (preview)
 description: Learn how to use tooling to add and share synonyms, define and manage terms, and suggest questions in Power BI Q&A.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual

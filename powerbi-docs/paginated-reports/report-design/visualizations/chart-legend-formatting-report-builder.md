@@ -5,8 +5,8 @@ ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: monaraya
 ---
 # Format the legend on a paginated report chart (Power BI Report Builder)

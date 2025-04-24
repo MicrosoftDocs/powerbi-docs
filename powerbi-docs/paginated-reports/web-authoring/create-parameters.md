@@ -1,9 +1,9 @@
 ---
 title: "Create parameters for paginated reports in the Power BI service"
 description: In this article, you learn how to create parameters for a paginated report using the interactive editor in the Power BI service.
-author: maggiesMSFT
+author: kfollis
 ms.author: nisrinivasan
-ms.reviewer: maggies
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

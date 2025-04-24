@@ -1,8 +1,8 @@
 ---
 title: Visualize your data quickly from Power Apps and Dynamics 365 apps
 description: There's a new way to visualize your model-driven Power Apps and Dynamics 365 data stored within Dataverse. With just a single click, Power BI will automatically generate a set of visuals for you to explore and find insights within your data.  
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -24,7 +24,7 @@ Watch this video showing how to create visuals from data stored within Dataverse
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRVzC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=809c68a2-ea3c-41ee-97b5-7ad442cd1fea]
 
 
 ## Visualize a view

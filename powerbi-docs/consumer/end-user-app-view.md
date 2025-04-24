@@ -1,8 +1,8 @@
 ---
 title: Install and use apps with dashboards and reports in Power BI
 description: Learn how to get apps from the Power BI apps marketplace and direct links, open apps from the navigation pane, and update apps in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -66,7 +66,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
    ![Screenshot of the Get it Now button to install an app.](./media/end-user-app-view/power-bi-get-now.png)
 
  * If you're installing an organizational app, it will immediately be added to your list of apps.
- * If you're installing a template app, you'll be taken to the template app offering in AppSource. See [an example](end-user-app-marketing.md) of how to download and install a sample template app from the Power BI apps marketplace. The app is installed, along with a workspace of the same name.
+ * If you're installing a template app, you'll be taken to the template app offering in AppSource.
 
    > [!NOTE]
    > If you're using a free user license, you can download apps but you can't view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity or Fabric F64 or greater capacity. For more information, see [Licenses for business users](end-user-license.md).

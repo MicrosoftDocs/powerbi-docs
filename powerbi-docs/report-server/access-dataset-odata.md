@@ -1,8 +1,8 @@
 ---
 title: Accessing shared datasets as OData feeds in Power BI Report Server
 description: Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

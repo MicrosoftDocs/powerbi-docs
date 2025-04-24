@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/18/2024
+ms.date: 02/07/2025
 LocalizationGroup: Create reports
 #customer intent: As a Power BI customer I want to learn how to create and customize new columns using Power Query Editor.
 ---
@@ -51,6 +51,8 @@ The **Custom Column** window has the following features:
    ![Screenshot of the Custom Column dialog box, which includes available columns to choose from.](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## Create formulas for your custom column
+
+You can create formulas for custom columns, as described in the following steps. For more information on M functions available for formulas, see [Power Query M function reference](/powerquery-m/power-query-m-function-reference).
 
 1. Select columns from the **Available columns** list on the right, and then select **Insert** below the list to add them to the custom column formula. You can also add a column by double-clicking it in the list.
 

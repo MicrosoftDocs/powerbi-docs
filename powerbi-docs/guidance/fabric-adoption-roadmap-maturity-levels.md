@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap maturity levels
@@ -20,7 +20,7 @@ There are three inter-related perspectives to consider when adopting an analytic
 
 The three types of adoption depicted in the above diagram include:
 
-| **Type** | **Description** |
+| Type | Description |
 | :-: | --- |
 | ![Type 1.](../media/legend-number/legend-number-01-fabric.svg) | **Organizational adoption** refers to the effectiveness of your analytics governance processes. It also refers to data management practices that support and enable analytics and business intelligence (BI) efforts. |
 | ![Type 2.](../media/legend-number/legend-number-02-fabric.svg) | **User adoption** is the extent to which consumers and creators continually increase their knowledge. It's concerned with whether they're actively using analytics tools, and whether they're using them in the most effective way. |
@@ -203,16 +203,16 @@ Common characteristics of phase 2 solution adoption include:
 - The solution is functional and meets the basic set of user requirements. There are likely plans to iterate on improvements and enhancements.
 - The solution is deployed to the Fabric portal.
 - All necessary supporting components are in place (for example, a gateway to support scheduled data refresh).
-- Target users are aware of the solution and show interest in using it. Potentially, it could be a limited preview release, and might not yet be ready to promote to a production [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces).
+- Target users are aware of the solution and show interest in using it. Potentially, it could be a limited preview release, and might not yet be ready to promote to a production [workspace](../collaborate-share/service-create-the-new-workspaces.md).
 
 ### Solution phase 3 – Valuable
 
 Common characteristics of phase 3 solution adoption include:
 
 - Target users find the solution to be valuable and experience tangible benefits.
-- The solution is promoted to a production [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces) that's managed, secured, and audited.
+- The solution is promoted to a production [workspace](../collaborate-share/service-create-the-new-workspaces.md) that's managed, secured, and audited.
 - Validations and testing occur to ensure data quality, accurate presentation, accessibility, and acceptable performance.
-- Content is [endorsed](/power-bi/collaborate-share/service-endorse-content), when appropriate.
+- Content is [endorsed](../collaborate-share/service-endorse-content.md), when appropriate.
 - Usage metrics for the solution are actively monitored.
 - User feedback loops are in place to facilitate suggestions and improvements that can contribute to future releases.
 - Solution documentation is generated to support the needs of information consumers (such as data sources used or how metrics are calculated). The documentation helps future content creators (for example, for documenting any future maintenance or planned enhancements).
@@ -229,7 +229,7 @@ Common characteristics of phase 4 solution adoption include:
 - Expectations for the success of the solution are clear and are measured.
 - Expectations for support of the solution are clear, especially if there are service level agreements.
 - The solution aligns with organizational [governance](fabric-adoption-roadmap-governance.md) guidelines and practices.
-- Most content is [certified](/power-bi/collaborate-share/service-endorse-content) due to its critical nature.
+- Most content is [certified](../collaborate-share/service-endorse-content.md) due to its critical nature.
 - Formal user acceptance testing for new changes might occur, particularly for IT-managed content.
 
 ## Related content

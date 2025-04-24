@@ -1,8 +1,8 @@
 ---
 title: 'Pin an entire report page to a Power BI dashboard'
 description: Learn how to pin an entire live report page to a Power BI dashboard from a report and then interact with the tiles on that dashboard.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -55,6 +55,9 @@ Open the dashboard to see the pinned live tile:
 1. Interact with the live tile. In the following screenshot, you can see how selecting a bar on the column chart cross-filters and cross-highlights the other visualizations on the tile.
 
     :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png" alt-text="Screenshot showing dashboards with a live tile." lightbox="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png":::
+
+    > [!NOTE]
+    > Report tiles aren't interactive when viewed in the Power BI mobile apps.
 
 ## Related content
 

@@ -5,19 +5,19 @@ ms.date: 05/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: cookiemccray
 ---
 # Accessibility in Power BI paginated reports (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-You can create paginated reports for people of all abilities. Creating a paginated report with accessibility in mind makes it usable by as many individuals as possible, including individuals with visual or physical impairments. Users can consume these reports with the use of screen readers or keyboard navigation.
+You can create paginated reports for people of all abilities. Creating a paginated report with accessibility in mind makes it usable by as many individuals as possible, including individuals with visual or physical impairments. Users can consume these reports with the use of screen readers or keyboard navigation. 
 
 :::image type="content" source="media/paginated-accessibility-overview/high-contrast-paginated-report.png" alt-text="Screenshot of viewing a paginated report in high-contrast mode.":::
 
-Power BI Report Builder has many accessibility features to enable report creators create an accessible user experience. These features are in line with Microsoft’s commitment to making its products and services easier for everyone to use. Using these features in creating reports not only gives everyone equal access to your report but also improves everyone’s experience. The report becomes accessible to the users on the web or as an accessible PDF when exported using the **Accessible PDF** export option.
+Power BI Report Builder has many accessibility features to enable report creators create an accessible user experience. These features are in line with Microsoft’s commitment to making its products and services easier for everyone to use. Using these features in creating reports not only gives everyone equal access to your report but also improves everyone’s experience. The report becomes accessible to the users on the web or as an accessible PDF when exported using the **Accessible PDF** export option. These accessibility features are also available for paginated reports in the service.
 
 ## Accessibility articles
 

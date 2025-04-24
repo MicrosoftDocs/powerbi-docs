@@ -1,8 +1,8 @@
 ---
 title: "Publish a paginated report to the Power BI service"
 description: Learn how to publish a paginated report to the Power BI service by uploading it from your local computer.  
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -88,6 +88,10 @@ As with any other Power BI report, if the paginated report data source is on pre
     ![Screenshot showing Manage connections option.](media/paginated-reports-save-to-power-bi-service/power-bi-manage-gateway.png)
 
 1. For more details, see the Power BI service article [What is an on-premises data gateway](../connect-data/service-gateway-onprem.md).
+
+## Considerations and limitations
+
+- Maximum file size of a paginated report file with extension .rdl is 12 MB. If your RDL file is larger, it is typically due to using large embedded images in which case consider using external images or reducing size of the embedded images.
 
 ## Next steps
 

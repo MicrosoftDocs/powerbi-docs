@@ -7,8 +7,8 @@ ms.subservice: report-builder
 
 
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Format pointers on a gauge in Power BI paginated report (Power BI Report Builder)

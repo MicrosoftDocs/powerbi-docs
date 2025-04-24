@@ -1,8 +1,8 @@
 ---
 title: "Custom code in expressions in a paginated report in Power BI Report Builder"
 description: Find out how to add references to custom code embedded in a paginated report.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.date: 09/21/2023
 ms.service: powerbi

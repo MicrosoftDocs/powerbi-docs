@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 06/01/2023
+ms.date: 02/28/2025
 #customer intent: "As a Power BI end user, I want to use Cognitive Services, so I can use create dataflows in Power BI."
 LocalizationGroup: Connect to services
 ---
@@ -39,13 +39,15 @@ Follow the steps in this section to complete the text analytics portion of the t
 
 ### Step 1: Apply sentiment scoring in the Power BI service
 
-To get started, navigate to a Power BI workspace with Premium capacity and create a new dataflow using the **Create** button in the upper right of the screen.
+To get started, navigate to a Power BI workspace with Premium capacity and create a new dataflow using the **New item** button.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_01.png" alt-text="Screenshot shows the Power BI workspace with Create, then Dashboard, selected.":::
+:::image type="content" source="media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-03.png" alt-text="Screenshot of how to create a dataflow." lightbox="media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-03.png":::
 
-The dataflow dialog shows you the options for creating a new dataflow, select **Add new entities.** Next, choose **Text/CSV** from the menu of data sources.
+In the dialog that opens, enter a name for the dataflow, and then select **Create**.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_02.png" alt-text="Screenshot shows Choose a data source, which includes Text/CSV." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_02.png":::
+In the **Power Query** editor, select **Import from a Text/CSV file**.
+
+:::image type="content" source="media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png" alt-text="Screenshot of the import from a text/CSV file option." lightbox="media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png":::
 
 Paste this URL into the URL field: `https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv` and select **Next.**
 
@@ -143,14 +145,14 @@ Next, sign in with your **organizational account**.
 Select the Tag Images function, enter _[Binary]_ in the column field, and enter _en_ in the culture info field.
 
 > [!NOTE]
-> You currently cannot pick a column using a dropdown. This issue will be resolved as soon as possible during the private preview.
+> You currently can't pick a column using a dropdown.
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_20.png" alt-text="Screenshot shows Invoke function with the TagImages function selected." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_20.png":::
 
 In the function editor, remove the quotation marks around the column name.
 
 > [!NOTE]
-> Removing the quotation marks is a temporary workaround. This issue will be resolved as soon as possible during preview.
+> Removing the quotation marks is a temporary workaround. 
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_21.png" alt-text="Screenshot shows the function editor with Image called out without quotation marks.":::
 

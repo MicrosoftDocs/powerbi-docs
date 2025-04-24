@@ -1,5 +1,15 @@
 {
     "redirections": [
+	{
+            "source_path": "powerbi-docs/transform-model/dax-query-copilot-features.md",
+            "redirect_url": "/dax/dax-copilot",
+            "redirect_document_id": false
+        },
+	{
+            "source_path": "powerbi-docs/transform-model/dax-query-copilot-create.md",
+            "redirect_url": "/dax/dax-copilot",
+            "redirect_document_id": false
+        },
         {
             "source_path": "powerbi-docs/visuals/power-bi-visualization-column-charts-format-settings.md",
             "redirect_url": "/power-bi/visuals/power-bi-visualization-column-chart-format-settings",
@@ -21,37 +31,57 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/create-reports/power-bi-change-owner.md",
+            "redirect_url": "/power-bi/create-reports/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-report-data.md",
             "redirect_url": "/power-bi/create-reports/copilot-pane-summarize-content",
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs//create-reports/service-metrics-get-started-hierarchies.md",
+            "source_path": "powerbi-docs/create-reports/service-metrics-follow.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-follow",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-metrics-submetrics.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-subgoals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-metrics-subscriptions.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-subscriptions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-metrics-get-started-hierarchies.md",
             "redirect_url": "/power-bi/create-reports/service-goals-get-started-hierarchies",
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs//create-reports/service-metrics-hierarchies-scenarios.md",
+            "source_path": "powerbi-docs/create-reports/service-metrics-hierarchies-scenarios.md",
             "redirect_url": "/power-bi/create-reports/service-goals-hierarchies-scenarios",
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs//create-reports/service-metrics-linked-metrics.md",
+            "source_path": "powerbi-docs/create-reports/service-metrics-linked-metrics.md",
             "redirect_url": "/power-bi/create-reports/service-goals-linked-goals",
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs//create-reports/service-metrics-status-rules.md",
+            "source_path": "powerbi-docs/create-reports/service-metrics-status-rules.md",
             "redirect_url": "/power-bi/create-reports/service-goals-status-rules",
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs//create-reports/service-metrics-view-hierarchies.md",
+            "source_path": "powerbi-docs/create-reports/service-metrics-view-hierarchies.md",
             "redirect_url": "/power-bi/create-reports/service-goals-view-hierarchies",
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs//create-reports/service-goals-power-automate.md",
+            "source_path": "powerbi-docs/create-reports/service-goals-power-automate.md",
             "redirect_url": "/power-bi/create-reports/service-metrics-power-automate",
             "redirect_document_id": true
         },
@@ -578,12 +608,22 @@
         {
             "source_path": "powerbi-docs/mobile-share-tile-windows-10-phone-app.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-phone-app-get-started.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/integrate-dashboard.md",
@@ -678,7 +718,12 @@
         {
             "source_path": "powerbi-docs/mobile-app-windows-10-ssrs-kpis-mobile-reports.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-apple-watch.md",
@@ -803,7 +848,12 @@
         {
             "source_path": "powerbi-docs/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-reports-in-the-mobile-apps.md",
@@ -833,7 +883,22 @@
         {
             "source_path": "powerbi-docs/mobile-windows-10-app-presentation-mode.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-app-presentation-mode",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-app-presentation-mode.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-app-single-sign-on-sso.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-windows-10-phone-app-webview2-installation.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/tutorial-mobile-apps-ios-qna.md",
@@ -1168,6 +1233,11 @@
         {
             "source_path": "powerbi-docs/consumer/end-user-browsers.md",
             "redirect_url": "/power-bi/fundamentals/power-bi-browsers",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-content-teams.md",
+            "redirect_url": "/power-bi/collaborate-share/service-teams-link-preview",
             "redirect_document_id": false
         },
         {
@@ -1641,6 +1711,11 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-audit-logs.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-app-marketing.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
@@ -2326,7 +2401,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-purchase.md",
-            "redirect_url": "/power-bi/enterprise/service-admin-premium-purchase",
+            "redirect_url": "/power-bi/enterprise/",
             "redirect_document_id": true
         },
         {
@@ -3165,6 +3240,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-scorecard-visual.md",
+            "redirect_url": "/power-bi/create-reports/service-goals-create",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/enterprise/service-admin-metadata-scanning.md",
             "redirect_url": "/fabric/governance/metadata-scanning-overview",
             "redirect_document_id": false
@@ -3409,6 +3489,11 @@
             "redirect_url": "/power-bi/create-reports/service-from-excel-to-stunning-report",
             "redirect_document_id": true
         },
+        {
+            "source_path": "powerbi-docs/create-reports/sample-sales-marketing-template-app.md",
+            "redirect_url": "/power-bi/create-reports/sample-sales-and-marketing",
+            "redirect_document_id": false
+        },        
         {
             "source_path": "powerbi-docs/service-gateway-custom-connectors.md",
             "redirect_url": "/power-bi/connect-data/service-gateway-custom-connectors",
@@ -4432,7 +4517,7 @@
         {
             "source_path": "powerbi-docs/service-basic-concepts.md",
             "redirect_url": "/power-bi/fundamentals/service-basic-concepts",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-features-license-type.md",
@@ -4982,7 +5067,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-premium-purchase.md",
-            "redirect_url": "/power-bi/enterprise/service-admin-premium-purchase",
+            "redirect_url": "/power-bi/enterprise",
             "redirect_document_id": false
         },
         {
@@ -4992,7 +5077,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-premium-testing.md",
-            "redirect_url": "/power-bi/enterprise/service-admin-premium-testing",
+            "redirect_url": "/power-bi/enterprise",
             "redirect_document_id": false
         },   
         {
@@ -5272,12 +5357,17 @@
         },
         {
             "source_path": "powerbi-docs/connect-data/service-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
+            "redirect_url": "/fabric/governance/onelake-catalog-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-data-hub.md",
+            "redirect_url": "/fabric/governance/onelake-catalog-overview",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
-            "redirect_url": "/fabric/get-started/onelake-data-hub",
+            "redirect_url": "/fabric/governance/onelake-catalog-overview",
             "redirect_document_id": false
         },
         {
@@ -6342,10 +6432,35 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/developer/visuals/format-pane.md",
+            "redirect_url": "/power-bi/developer/visuals/format-pane-general",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/filters-copilot.md",
+            "redirect_url": "/power-bi/create-reports/service-the-report-editor-take-a-tour",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/visuals/scanner-api.md",
+            "redirect_url": "/power-bi/developer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/support/service-troubleshoot-signup.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-basic-concepts.md",
+            "redirect_url": "/power-bi/fundamentals/service-basic-concepts",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/developer/embedded/embed-power-bi-salesforce.md",
             "redirect_url": "/power-bi/developer/embedded/embed-organization-app",
             "redirect_document_id": true
         }  
-    }
+    }            
   ]
 }

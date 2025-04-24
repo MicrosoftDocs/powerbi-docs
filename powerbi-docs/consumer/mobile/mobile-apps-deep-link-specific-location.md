@@ -64,7 +64,7 @@ The query parameters are:
 | **tileObjectId** | 36 character guid | Tile object ID (if action is OpenTile)<br>Example: **tileObjectId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb** |
 | **reportPage** | string | Page name if you want to open a specific report page. (if action is OpenReport)<br>Example: **reportPage=ReportSection6**  |
 | **bookmarkGuid** | 36 character guid | Bookmark ID, if you want to open a specific bookmarked view. (if action is OpenReport)<br>Example: **bookmarkGuid=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb**<br>**Note**: Values of the format *BookmarkXXXXXXXXXXXXXXXXXXX* aren't supported. |
-| **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization)<br>Example: **aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb** |
+| **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization)<br>Example: **00aa00aa-bb11-cc22-dd33-44ee44ee44ee** |
 | **fullScreen** | Boolean | When true, opens the item in full screen mode. Supported for reports, scorecards, dashboards, and apps (if the app landing item is one of the supported items).<br>Example: **fullScreen=1** |
 
 >[!NOTE]
@@ -183,12 +183,6 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
     The report page is called **ReportSection**, followed by a number. Again, to find the values you need, open the report in the Power BI service, navigate to the specific report page, and extract the values you need from the URL. For example, the highlighted sections of this URL represent the values you would need to open to a specific report page:
 
     https\://app.powerbi.com/groups/me/reports/**dddddddd-3333-4444-5555-eeeeeeeeeeee**/**ReportSection11**
-
-* **Open in full-screen mode (for Windows devices only)**
-
-    For Windows devices, you can also add the **openFullScreen** parameter to open specific report in full-screen mode. The following example opens a report page in full screen mode:
-
-    mspbi://app/OpenReport?ReportObjectId=dddddddd-3333-4444-5555-eeeeeeeeeeee&**openFullScreen=true**
 
 * **Add context** (optional)
 

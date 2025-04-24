@@ -1,6 +1,6 @@
 ---
-title: Optimization guide for Power BI
-description: This article provides guidance that enables developers and administrators to produce and maintain optimized Power BI solutions. You can optimize your solution at different architectural layers.
+title: "Optimization guide for Power BI"
+description: "This article provides guidance that enables developers and administrators to produce and maintain optimized Power BI solutions. You can optimize your solution at different architectural layers."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/10/2023
+ms.date: 12/30/2024
 ---
 
 # Optimization guide for Power BI
@@ -32,17 +32,17 @@ For specific semantic model table storage mode guidance, see:
 
 ### Optimizing for report authors and model consumers
 
-The semantic model is the foundation of all reporting in Power BI. Consumers of the semantic model can create Power BI reports in Power BI Desktop by connecting to a published semantic model or connecting to data and creating a local semantic model. The semantic model can also be used to create Power BI reports in the browser, create [Power BI explorations](/power-bi/consumer/explore-data-service), create [paginated reports](/power-bi/consumer/end-user-paginated-report), create [DAX queries](/power-bi/transform-model/dax-query-view), and create reports in Excel with [Analyze in Excel](/power-bi/collaborate-share/service-connect-power-bi-datasets-excel), [connecting to Power BI in Excel](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets), or [exporting data from a report visual](/power-bi/visuals/power-bi-visualization-export-data?tabs=powerbi-desktop), as well as many other reporting tools. A semantic model author can help semantic model consumers understand and utilize the semantic model with how they build the model.
+The semantic model is the foundation of all reporting in Power BI. Consumers of the semantic model can create Power BI reports in Power BI Desktop by connecting to a published semantic model or connecting to data and creating a local semantic model. The semantic model can also be used to create Power BI reports in the browser, create [Power BI explorations](../consumer/explore-data-service.md), create [paginated reports](../consumer/end-user-paginated-report.md), create [DAX queries](../transform-model/dax-query-view.md), and create reports in Excel with [Analyze in Excel](../collaborate-share/service-connect-power-bi-datasets-excel.md), [connecting to Power BI in Excel](../collaborate-share/service-connect-excel-power-bi-datasets.md), or [exporting data from a report visual](../visuals/power-bi-visualization-export-data.md), as well as many other reporting tools. A semantic model author can help semantic model consumers understand and utilize the semantic model with how they build the model.
 
-- **Names**: Tables, columns, and measures in the semantic model with descriptive names. For example, 'Store Sales' as a table name is more intuitive than 'Table1'. 
+- **Names**: Tables, columns, and measures in the semantic model with descriptive names. For example, 'Store Sales' as a table name is more intuitive than 'Table1'.
 - **Descriptions**: Tables, columns, and measures in the model can have descriptions added to them to provide more detail than can fit in the name. Explain not only what they include but how they should be used.
 - **Hide**: You can hide tables, columns, and measures in the model to show only what you expect them to use in a report. For example, relationship columns may be an ID that is not necessary for reporting and can be hidden as it's not expected to be used in a report, or data columns that have a measure to aggregate the column could be hidden to encourage use of the measure instead. Hidden objects can always be unhidden later by the model consumer, so they will still be available, but hiding can provide focus.
 - **Hierarchies**: You can create hierarchies to convey the hierarchy across multiple columns. For example, a Calendar hierarchy may contain Year, Month, Day columns, and a Product hierarchy may contain Category, Sub-Category, Product columns. Right-click a column to create a hierarchy.
-- **Measures**: You can use [measures](/power-bi/transform-model/desktop-measures) to aggregate data columns in the semantic model to provide consistency across reports. Measures can range from the SUM of a column, to a health index combining multiple aggregations in a specific way or comparing aggregations across time periods, such as daily average this month compared to the daily average of the same month last year. Measures can also be surfaced in Power BI search and other features, such as [Metrics and Scorecards](/power-bi/create-reports/service-goals-introduction).
-- **Formats**: You can specify how a column or measure is displayed in a visual, by default. Values in visuals can be customized further in the visual. Format options include if it has a thousands comma, how many decimal places, how a date is shown, etc. You can also apply [custom](/power-bi/create-reports/desktop-custom-format-strings) or [dynamic](/power-bi/create-reports/desktop-dynamic-format-strings) formats.
-- **Data category**: You can specify a column [data category](/power-bi/transform-model/desktop-data-categorization), such as if it's a Country or Web URL.
+- **Measures**: You can use [measures](../transform-model/desktop-measures.md) to aggregate data columns in the semantic model to provide consistency across reports. Measures can range from the SUM of a column, to a health index combining multiple aggregations in a specific way or comparing aggregations across time periods, such as daily average this month compared to the daily average of the same month last year. Measures can also be surfaced in Power BI search and other features, such as [Metrics and Scorecards](../create-reports/service-goals-introduction.md).
+- **Formats**: You can specify how a column or measure is displayed in a visual, by default. Values in visuals can be customized further in the visual. Format options include if it has a thousands comma, how many decimal places, how a date is shown, etc. You can also apply [custom](../create-reports/desktop-custom-format-strings.md) or [dynamic](../create-reports/desktop-dynamic-format-strings.md) formats.
+- **Data category**: You can specify a column [data category](../transform-model/desktop-data-categorization.md), such as if it's a Country or Web URL.
 
-These are common features of Power BI semantic model that can be leveraged to help your report authors and model consumers. There are many others, such as [calculation groups](/power-bi/transform-model/calculation-groups), [field parameters](/power-bi/create-reports/power-bi-field-parameters), [what if parameters](/power-bi/transform-model/desktop-what-if), and [grouping and binning columns](/power-bi/create-reports/desktop-grouping-and-binning), which should be evaluated to see if they apply your specific reporting needs.
+These are common features of Power BI semantic model that can be leveraged to help your report authors and model consumers. There are many others, such as [calculation groups](../transform-model/calculation-groups.md), [field parameters](../create-reports/power-bi-field-parameters.md), [what if parameters](../transform-model/desktop-what-if.md), and [grouping and binning columns](../create-reports/desktop-grouping-and-binning.md), which should be evaluated to see if they apply your specific reporting needs.
 
 ## Optimizing visualizations
 
@@ -125,5 +125,5 @@ For more information about this article, check out the following resources:
 - [Power BI guidance](index.yml)
 - [Monitoring report performance](monitor-report-performance.md)
 - [Fabric adoption roadmap](fabric-adoption-roadmap.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

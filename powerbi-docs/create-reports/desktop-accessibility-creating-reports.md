@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # Design Power BI reports for accessibility
@@ -62,7 +62,7 @@ To access the most frequently used keyboard shortcuts, you can press **Shift + ?
 
 ### Screen reader compatibility
 
-In general, every object in Power BI that has keyboard navigation is also compatible for screen readers. When a report consumer navigates to a visual, the screen reader will read out the title, visual type, and any alt text if that has been set.
+In general, every object in Power BI that has keyboard navigation is also compatible for screen readers. When a report consumer navigates to a visual, the screen reader reads out the title, visual type, and any alt text if that has been set.
 
 ### High contrast color view
 
@@ -70,9 +70,7 @@ Power BI has high contrast support for reports. If you're using a high contrast 
 
 ![Screenshot shows a report in high contrast windows settings.](media/desktop-accessibility/accessibility-05b.png)
 
-The Power BI service also attempts to detect the high contrast settings selected for Windows, but the effectiveness and accuracy of that detection depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-left corner you can select **View** > **High contrast colors** while in Edit mode and then select the theme you would like to apply to the report.
-
-![Screenshot of the Power BI service in edit mode, highlighting View and High-contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
+The Power BI service also attempts to detect the high contrast settings selected for Windows, but the effectiveness and accuracy of that detection depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View** > **High contrast colors** while in Edit mode and then select the theme you would like to apply to the report.
 
 ### Focus mode
 
@@ -131,7 +129,7 @@ In the **Selection pane**, selecting **Tab order** displays the current tab orde
 
 ### Titles and labels
 
-Visual and report page titles are important accessibility features that serves as a point of reference for the report consumer. Avoid using acronyms or jargon in your report titles; if you share the report with a new user or someone who is external to your organization, they might not know what your terms or acronyms mean. The following image shows a visual with an acronym in the title (on the left), and a clearer title for the visual on the right.
+Visual and report page titles are important accessibility features that serve as a point of reference for the report consumer. Avoid using acronyms or jargon in your report titles; if you share the report with a new user or someone who is external to your organization, they might not know what your terms or acronyms mean. The following image shows a visual with an acronym in the title (on the left), and a clearer title for the visual on the right.
 
 ![Screenshot of two sample titles, the vague CY Totals, and the clearer Current Year Sales Amount USD Totals.](media/desktop-accessibility/accessibility-creating-reports-10.png)
 
@@ -151,11 +149,11 @@ Positioning your data labels above or below your series can help, especially if 
 
 It's a best practice to avoid using color (including features conditional formatting) as the only way of conveying information. Instead, you can use markers to convey different series.
 
-For Line, Area, and Combo visuals, as well as for Scatter and Bubble visuals, you can turn markers on and use a different Marker shape for each line.
+For Line, Area, and Combo visuals, as well as for Scatter and Bubble visuals, you can turn on markers and use a different Marker shape for each line.
 
 ![Screenshot of an example visual with markers.](media/desktop-accessibility/accessibility-creating-reports-14.png)
 
-To turn markers on, select the Format section in the Visualizations pane, expand the **Shapes** section, then scroll down to find the **Show Markers** toggle and turn it to **On**, as shown in the following image.
+To turn on markers, select the Format section in the Visualizations pane, expand the **Shapes** section, then scroll down to find the **Show Markers** toggle and turn it to **On**, as shown in the following image.
 
 ![Screenshot of the Visualizations pane with Markers turned on.](media/desktop-accessibility/accessibility-creating-reports-15.png)
 
@@ -165,7 +163,7 @@ While we suggest report authors to turn on data labels and markers, turning them
 
 ![Screenshot of two example visuals, one with labels and markers on, the other with only markers on.](media/desktop-accessibility/accessibility-creating-reports-16.png)
 
-If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://pluginsaddonsextensions.com/google-chrome/the-squint-test-chrome-extension_86008). If your eyes are drawn more to the data labels than the data points, turn off your data labels.
+If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://chromewebstore.google.com/detail/blurry-eye-test/panidpjdcjkdhjamnogampinhbkjdkpo?hl=en). If your eyes are drawn more to the data labels than the data points, turn off your data labels.
 
 ### Themes, contrast and colorblind-friendly colors
 

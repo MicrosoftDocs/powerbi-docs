@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Connect to data
 ---
 # Expression-based titles in Power BI Desktop

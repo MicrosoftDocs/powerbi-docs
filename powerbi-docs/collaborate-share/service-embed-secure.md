@@ -1,13 +1,13 @@
 ---
 title: Embed a report in a secure portal or website
 description: The Power BI embed feature provides a way to easily and securely embed reports in internal web portals.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 07/16/2024
+ms.date: 04/22/2025
 LocalizationGroup: Share your work
 ---
 
@@ -26,7 +26,8 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 2. On the **File** menu, select **Embed report** >  **Website or portal**.
 
-3. In the **Secure embed code** dialog that appears, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iframe in a blog or website, select the value under **HTML you can paste into a website**.
+3. In the **Secure embed code** dialog that appears, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iframe in a blog or website, select the value under **HTML you can paste into a website**. Changing the width or height from what is specified in the iframe code may result in certain features not working as expected.
+
 
     :::image type="content" source="../collaborate-share/media/service-embed-secure/securely-embed-report-in-website-or-portal.png" alt-text="Screenshot of Embed option dialogue box":::
 
@@ -52,7 +53,7 @@ In the Power BI service, you can share embedded reports with users who require a
 
 ## Licensing
 
-To view the embedded report, you need  either a Power BI Pro or Premium Per User (PPU) license. Or, the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md#capacities-and-skus).
+To view the embedded report, you need  either a Power BI Pro or Premium Per User (PPU) license. Or, the content needs to be in a workspace that's in a [Power BI Premium (EM or P SKU)](../enterprise/service-premium-what-is.md#capacities-and-skus) or a [Fabric (F SKU)](/fabric/enterprise/licenses#capacity) capacity.
 
 ## Customize your embed experience by using URL settings
 

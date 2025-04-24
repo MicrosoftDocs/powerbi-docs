@@ -1,8 +1,8 @@
 ---
 title: Sign up or purchase Power BI as an individual
 description: Learn how to sign up for or trial Microsoft Power BI using it for your individual data analysis and visualization needs.
-author: mihart
-ms.author: mihart
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
@@ -106,10 +106,6 @@ You can also purchase Pro or PPU licenses from the [Microsoft Power BI pricing s
 ## Close your account, cancel your subscription, end your trial
 
 You can always cancel your free subscription, cancel a purchase, or end your trial. Each of these actions has a different set of procedures and considerations. For more information, see [Close your account, cancel your subscription, end your trial](/fabric/enterprise/fabric-close-end-cancel).
-
-## Considerations and limitations
-
-There are many considerations and limitations associated with licenses. To help you identify and figure out issues you might encounter, we've put together a Troubleshooting guide. Use the [troubleshooting guide](../support/service-troubleshoot-signup.md) to help you get a license or upgrade a license.
 
 ## Related content
 

@@ -1,21 +1,21 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: peter-myers
+author: denglishbi
 ms.author: daengli
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, video-RWUWA9
-ms.date: 10/12/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning
 
 In this video, watch Matthew introduce you to the Power BI implementation planning series of articles.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWUWA9]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=959505f6-668e-4b27-b09f-ebab8d9e6a44]
 
 Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The Power BI implementation planning series provides you with key considerations, actions, decision-making criteria, and tactical recommendations. The articles in this series cover key subject areas when implementing Power BI, and they describe patterns for common usage scenarios.
 
@@ -90,4 +90,4 @@ Other helpful resources include:
 - [Fabric adoption roadmap](fabric-adoption-roadmap.md)
 - [Power BI migration overview](powerbi-migration-overview.md)
 
-Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Experienced Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).

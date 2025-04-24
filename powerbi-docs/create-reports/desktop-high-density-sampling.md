@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/01/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # High-density line sampling in Power BI
 
-The sampling algorithm in Power BI improves visuals that sample high-density data. For example, you might create a line chart from your retail stores' sales results, each store having more than 10,000 sales receipts each year. A line chart of such sales information would sample data from the data for each store and create a multi-series line chart that thereby represents the underlying data. Make sure to select a meaningful representation of that data to illustrate how sales vary over time. This practice is common in visualizing high-density data. The details of high-density data sampling are described in this article.
+The sampling algorithm in Power BI improves visuals that sample high-density data. For example, you might create a line chart from your retail stores' sales results, each store having more than 10,000 sales receipts each year. A line chart of such sales information would sample data from the data for each store and create a multi-series line chart that then represents the underlying data. Make sure to select a meaningful representation of that data to illustrate how sales vary over time. This practice is common in visualizing high-density data. The details of high-density data sampling are described in this article.
 
 :::image type="content" source="media/desktop-high-density-sampling/high-density-sampling-03.png" alt-text="Screenshot of line charts, showing the high-density sampling data.":::
 
@@ -39,14 +39,14 @@ For any visualization, the following limitations apply:
 
 * **3,500** is the maximum number of data points *displayed* on most visuals, regardless of the number of underlying data points or series, see *exceptions* in the following list. For example, if you have 10 series with 350 data points each, the visual has reached its maximum overall data points limit. If you have one series, it might have up to 3,500 data points if the algorithm deems that the best sampling for the underlying data.
 
-* There's a maximum of **60 series** for any visual. If you've more than 60 series, break up the data and create multiple visuals with 60 or fewer series each. It's good practice to use a **slicer** to show only segments of the data but only for certain series. For example, if you're displaying all subcategories in the legend, you could use a slicer to filter by the overall category on the same report page.
+* There's a maximum of **60 series** for any visual. If you have more than 60 series, break up the data and create multiple visuals with 60 or fewer series each. It's good practice to use a **slicer** to show only segments of the data but only for certain series. For example, if you're displaying all subcategories in the legend, you could use a slicer to filter by the overall category on the same report page.
 
 The maximum number of data limits is higher for the following visual types, which are *exceptions* to the 3,500 data point limit:
 
 * **150,000** data points maximum for R visuals.
 * **30,000** data points for Azure Map visuals.
 * **10,000** data points for some scatter chart configurations (scatter charts default to 3500).
-* **3,500** for all other visuals using high-density sampling. Some other visuals may visualize more data, but they will not use sampling. 
+* **3,500** for all other visuals using high-density sampling. Some other visuals may visualize more data, but they won't use sampling. 
 
 These parameters ensure that visuals in Power BI Desktop render quickly, are responsive to interaction with users, and don't result in undue computational overhead on the computer rendering the visual.
 
@@ -70,9 +70,9 @@ Let's say you're creating a visual based on stock price and you're comparing two
 
 Now let's say that the first stock jumps up in price at 12:02, then quickly comes back down 10 seconds later. That's an important data point. When binning occurs for that stock, the high at 12:02 is a representative data point for that bin.
 
-However, for the second stock, 12:02 wasn't a high nor a low in the bin that included that time. Maybe the high and low for the bin that includes 12:02 occurred three minutes later. In that situation, when the line chart is created and you hover over 12:02, you'll see a value in the tooltip for the first stock. This is because it jumped at 12:02 and that value was selected as that bin's high data point. However, you won't see any value in the tooltip at 12:02 for the second stock. That's because the second stock didn't have a high or a low for the bin that included 12:02. Therefore, there's no data to show for the second stock at 12:02, and thus, no tooltip data is displayed.
+However, for the second stock, 12:02 wasn't a high nor a low in the bin that included that time. Maybe the high and low for the bin that includes 12:02 occurred three minutes later. In that situation, when the line chart is created and you hover over 12:02, you see a value in the tooltip for the first stock. This is because it jumped at 12:02 and that value was selected as that bin's high data point. However, you won't see any value in the tooltip at 12:02 for the second stock. That's because the second stock didn't have a high or a low for the bin that included 12:02. Therefore, there's no data to show for the second stock at 12:02, and thus, no tooltip data is displayed.
 
-This situation will happen frequently with tooltips. The high and low values for a specific bin probably won't match perfectly with the evenly scaled x-axis value points, and the tooltip doesn't display the value.
+This situation happens frequently with tooltips. The high and low values for a specific bin probably won't match perfectly with the evenly scaled x-axis value points, and the tooltip doesn't display the value.
 
 ## How to turn on high-density line sampling
 

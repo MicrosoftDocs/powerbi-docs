@@ -15,12 +15,11 @@ LocalizationGroup: Data from files
 # Creating a dataflow
 
 A **dataflow** is a collection of tables that are created and managed in workspaces in the Power BI service. A **table** is a set of columns that are used to store data, much like a table within a database. You can add and edit tables in your dataflow, and manage data refresh schedules, directly from the workspace in which your dataflow was created.
-To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows aren't available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow.
-:::image type="content" source="media/dataflows-create/create-options.png" alt-text="Screenshot of options for creating a dataflow.":::
+To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows aren't available in *my-workspace* in the Power BI service) from the nav pane. You can also create a new workspace in which to create your new dataflow.
 
 There are multiple ways to create or build on top of a new dataflow:
 
-* [Create a dataflow by using define new tables](#create-a-dataflow-by-using-define-new-tables)
+* [Create a dataflow by using a new source](#create-a-dataflow-by-using-a-new-source)
 * [Create a dataflow by using linked tables](#create-a-dataflow-by-using-linked-tables)
 * [Create a dataflow by using a CDM folder](#create-a-dataflow-by-using-a-cdm-folder)
 * [Create a dataflow by using import/export](#create-a-dataflow-by-using-importexport)
@@ -30,16 +29,23 @@ The following sections explore each of these ways to create a dataflow in detail
 > [!NOTE]
 > Dataflows can be created by users in a Premium workspace, users with a Pro license, and users with a Premium Per User (PPU) license.
 
-## Create a dataflow by using define new tables
+## Create a dataflow by using a new source
 
-Using the Define new tables option lets you define a new table and connect to a new data source.
-:::image type="content" source="media/dataflows-create/create-connectors.png" alt-text="Screenshot showing options for data sources." lightbox="media/dataflows-create/create-connectors.png":::
+Using the **New source** option lets you define a new table and connect to a new data source.
 
-1. When you select a data source, you're prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
-:::image type="content" source="media/dataflows-create/azure-sql-connector.png" alt-text="Screenshot of the form displayed after you choose Azure SQL as a connector.":::
-2. Once connected, you can select which data to use for your table. When you choose data and a source, Power BI reconnects to the data source. The reconnection keeps the data in your dataflow refreshed at the frequency that you select later in the setup process.
-:::image type="content" source="media/dataflows-create/choose-table.png" alt-text="Screenshot of a table selection on the Choose Data screen.":::
-3. After you select the data for use in the table, you can use dataflow editor to shape or transform that data into the format necessary for use in your dataflow.
+1. Select the **Get data...** link on the screen, or select a source using **New source** in the ribbon.
+
+   :::image type="content" source="media/dataflows-create/create-connectors.png" alt-text="Screenshot showing options for data sources." lightbox="media/dataflows-create/create-connectors.png":::
+
+2. When you select a data source, you're prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
+
+   :::image type="content" source="media/dataflows-create/azure-sql-connector.png" alt-text="Screenshot of the form displayed after you choose Azure SQL as a connector.":::
+
+3. Once connected, you can select which data to use for your table. When you choose data and a source, Power BI reconnects to the data source. The reconnection keeps the data in your dataflow refreshed at the frequency that you select later in the setup process.
+
+   :::image type="content" source="media/dataflows-create/choose-table.png" alt-text="Screenshot of a table selection on the Choose Data screen.":::
+
+4. After you select the data for use in the table, you can use dataflow editor to shape or transform that data into the format necessary for use in your dataflow.
 
 ## Create a dataflow by using linked tables
 

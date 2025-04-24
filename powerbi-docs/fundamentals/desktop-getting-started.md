@@ -7,7 +7,7 @@ ms.custom: intro-get-started
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 10/24/2023
+ms.date: 02/28/2025
 LocalizationGroup: Get started
 ---
 # Get started with Power BI Desktop
@@ -83,11 +83,11 @@ In the **From Web** dialog box, paste an address about sunny locations into the 
 ![Screenshot of Power B I Desktop showing the From Web dialog box.](media/desktop-getting-started/getting-started-8.png)
 
 > [!NOTE]
-> The URL used in this example is fictitious, you can find your own data in various tables and sites on the web.
+> The URL used in this example is fictitious. You can find your own data in various tables and sites on the web.
 
 If prompted, on the **Access Web Content** screen, select **Connect** to use anonymous access. 
 
-The query functionality of Power BI Desktop goes to work and contacts the web resource. The **Navigator** window returns what it found on the web page, in this case an HTML table called **Ranking of best and worst states for retirement**, and five other suggested tables. You're interested in the HTML table, so select it to see a preview.
+The query functionality of Power BI Desktop goes to work and contacts the web resource. The **Navigator** window returns what it found on the web page, in this case, an HTML table called **Ranking of best and worst states for retirement**, and five other suggested tables. You're interested in the HTML table, so select it to see a preview.
 
 At this point you can select **Load** to load the table, or **Transform data** to make changes in the table before you load it.
 
@@ -111,7 +111,7 @@ Notice that the **Applied Steps** in **Query Settings** already contain a few st
 
 ![Screenshot of Power B I Desktop showing the Power Query Editor with Query Settings pane showing the three Applied Steps.](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
 
-If you need to change a data type, select the column or columns to change. Hold down the **Shift** key to select several adjacent columns, or **Ctrl** to select non-adjacent columns. Either right-click a column header, select **Change Type**, and choose a new data type from the menu, or drop down the list next to **Data Type** in the **Transform** group of the **Home** tab, and select a new data type.
+If you need to change a data type, select the column or columns to change. Hold down the **Shift** key to select several adjacent columns, or **Ctrl** to select nonadjacent columns. Either right-click a column header, select **Change Type**, and choose a new data type from the menu, or drop down the list next to **Data Type** in the **Transform** group of the **Home** tab, and select a new data type.
 
 ![Screenshot of Power B I Desktop showing the change data type option.](media/desktop-getting-started/designer_gsg_changedatatype.png)
 
@@ -124,13 +124,13 @@ For example, for sunglasses sales you're most interested in the weather ranking,
 
 ![Screenshot of Power B I Desktop showing Sorted Rows appearing in Applied Steps.](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the **Home** tab, select **Reduce Rows** > **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**.
+You're not interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the **Home** tab, select **Reduce Rows** > **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**.
 
 ![Screenshot of Power B I Desktop showing the Remove Bottom Rows dialog box.](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
 The bottom 10 worst weather rows are removed from the table, and the step **Removed Bottom Rows** appears in **Applied Steps**.
 
-You decide the table has too much extra information for your needs, and to remove the **Affordability**, **Crime**, **Culture**, and **Wellness** columns. Select the header of each column that you want to remove. Hold down the **Shift** key to select several adjacent columns, or **Ctrl** to select non-adjacent columns. 
+You decide the table has too much extra information for your needs, and to remove the **Affordability**, **Crime**, **Culture**, and **Wellness** columns. Select the header of each column that you want to remove. Hold down the **Shift** key to select several adjacent columns, or **Ctrl** to select nonadjacent columns. 
 
 Then, from the **Manage Columns** group of the **Home** tab, select **Remove Columns**. You can also right-click one of the selected column headers and select **Remove Columns** from the menu. The selected columns are removed, and the step **Removed Columns** appears in **Applied Steps**.
 
@@ -138,7 +138,7 @@ Then, from the **Manage Columns** group of the **Home** tab, select **Remove Col
 
 On second thought, **Affordability** might be relevant to sunglasses sales after all. You'd like to get that column back. You can easily undo the last step in the **Applied Steps** pane by selecting the **X** delete icon next to the step. Now redo the step, selecting only the columns you want to delete. For more flexibility, you could delete each column as a separate step. 
 
-You can right-click any step in the **Applied Steps** pane and choose to delete it, rename it, move it up or down in the sequence, or add or delete steps after it. For intermediate steps, Power BI Desktop will warn you if the change could affect later steps and break your query.  
+You can right-click any step in the **Applied Steps** pane and choose to delete it, rename it, move it up or down in the sequence, or add or delete steps after it. For intermediate steps, Power BI Desktop warns you if the change could affect later steps and break your query.  
 
 ![Screenshot of Power B I Desktop showing the Applied Steps modification options.](media/desktop-getting-started/designer_gsg_install.png)
 
@@ -294,7 +294,7 @@ You can add text boxes, images, and buttons to your report pages from the **Inse
 When you finish creating your pages and visualizations, select **File** > **Save** and save your report. For more information about reports, see [Report View in Power BI Desktop](../create-reports/desktop-report-view.md).
 
 ## Share your work
-Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the report *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service. 
+Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the report *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service.
 
 To publish to the **Power BI** service from Power BI Desktop, from the **Home** tab of the ribbon, select **Publish**.
 
@@ -306,23 +306,9 @@ When the publish process is complete, you see the following dialog:
 
 ![Screenshot of Power B I Desktop showing the Publish Success message.](media/desktop-getting-started/gsg_syw_3.png)
 
-When you select the link to open the report in Power BI, your report opens in your Power BI site under **My workspace** > **Reports**. 
+When you select the link to open the report in Power BI, your report opens in your Power BI site under **My workspace** > **Reports**.
 
-Another way to share your work is to load it from within the **Power BI** service. Go to *https:\//app.powerbi.com* to open Power BI in a browser. On your Power BI **Home** page, select **Get data** at lower left to start the process of loading your Power BI Desktop report.
-
-![Screenshot of Power B I Desktop showing the Get Data option.](media/desktop-getting-started/pbi_gsg_getdata1.png)
-
-On the next page, select **Get** from the **Files** section.
-
-![Screenshot of Power B I Desktop showing the Get Data screen.](media/desktop-getting-started/pbi_gsg_getdata2.png)
-
-On the next page, select **Local File**. Browse to and select your Power BI Desktop *.pbix* file, and select **Open**. 
-
-After the file imports, you can see it listed under **My workspace** > **Reports** in the left pane of the Power BI service.
-
-![Screenshot of Power B I Desktop showing a file imported into Power B I.](media/desktop-getting-started/pbi_gsg_getdata4.png)
-
-When you select the file, the first page of the report appears. You can select different pages from the tabs at the left of the report. 
+The first page of the report appears. You can select different pages from the tabs at the left of the report.
 
 You can make changes to a report in the **Power BI** service by selecting **More options** > **Edit** from the top of the report canvas.
 
@@ -330,14 +316,11 @@ You can make changes to a report in the **Power BI** service by selecting **More
 
 To save your changes, select **File** > **Save a copy**.
 
-![Screenshot of Power B I Desktop showing the Save option.](media/desktop-getting-started/gsg-share-file-save-copy.png)
-
-
 There are all sorts of interesting visuals you can create from your report in the **Power BI** service, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service, see [Tips for designing a great dashboard](../create-reports/service-dashboards-design-tips.md). For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](../collaborate-share/service-share-dashboards.md).
 
 To share a report or dashboard, select **Share** > **Report** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
 
-Complete the **Share report** or **Share dashboard** screen to send an email or get a link to share your report or dashboard with others. 
+Complete the **Send link** screen to send an email or to get a link to share your report or dashboard with others.
 
 ![Screenshot of Power B I Desktop showing the Share Report screen.](media/desktop-getting-started/gsg_share6.png)
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: quickstart
-ms.date: 12/30/2022
+ms.date: 02/26/2025
 ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: quickstart
 #Customer intent: As a data analyst or report creator, I want to connect to data in Power BI Desktop, so I can use Power BI Desktop to build data models and create reports.
@@ -56,11 +56,11 @@ Power BI Desktop then loads the workbook and reads its contents, and shows you t
 
 :::image type="content" source="media/desktop-quickstart-connect-to-data/qs-connect-data_05.png" alt-text="Screenshot shows the Navigator window with both display options selected." lightbox="media/desktop-quickstart-connect-to-data/qs-connect-data_05.png":::
 
-Once you've made your selections, select **Load** to import the data into Power BI Desktop.
+Once you make your selections, select **Load** to import the data into Power BI Desktop.
 
 ## View data in the Fields pane
 
-Once you've loaded the tables, the **Fields** pane shows you the data. You can expand each table by selecting the arrow beside its name. In the following image, the *financials* table is expanded, showing each of its fields.
+Once you load the tables, the **Fields** pane shows you the data. You can expand each table by selecting the arrow beside its name. In the following image, the *financials* table is expanded, showing each of its fields.
 
 :::image type="content" source="media/desktop-quickstart-connect-to-data/qs-connect-data_06.png" alt-text="Screenshot shows Power BI Desktop with data loaded and the Financials field expanded." lightbox="media/desktop-quickstart-connect-to-data/qs-connect-data_06.png":::
 

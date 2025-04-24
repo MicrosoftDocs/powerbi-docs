@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
 # Work with Report view in Power BI Desktop
@@ -20,7 +20,7 @@ With Power BI Desktop, you can work with your queries and model your data to mak
 
 ## Let's take a look
 
-When you first load data in Power BI Desktop, you'll see the Report view with a blank canvas, with links to help you add data to your report.
+When you first load data in Power BI Desktop, you see the Report view with a blank canvas, with links to help you add data to your report.
 
 ![Screenshot showing Power BI Desktop in Report view with a blank canvas.](media/desktop-report-view/report-view-blank-canvas.png)
 
@@ -52,7 +52,7 @@ To delete a page, select the **x** on the page's tab at the bottom of the Report
 ![Screenshot highlighting the x on the page's tab.](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
 
 > [!NOTE]
-> Reports and visualizations can't be pinned to a dashboard from Power BI Desktop. To do that, you'll need to publish to your Power BI site. For more information, see [Publish semantic models and reports from Power BI Desktop](desktop-upload-desktop-files.md).
+> Reports and visualizations can't be pinned to a dashboard from Power BI Desktop. To do that, you need to publish to your Power BI site. For more information, see [Publish semantic models and reports from Power BI Desktop](desktop-upload-desktop-files.md).
 
 ## Copy and paste between reports
 

@@ -12,13 +12,16 @@ ms.date: 04/06/2021
 # Explore tiles in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](./media/mobile-tiles-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-tiles-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android phone](./media/mobile-tiles-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-tiles-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows devices](./media/mobile-tiles-in-the-mobile-apps/win-10-logo-50-px.png) |
-|:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Android tablets |Windows devices |
+| ![iPhone](./media/mobile-tiles-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-tiles-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android phone](./media/mobile-tiles-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-tiles-in-the-mobile-apps/android-tablet-logo-50-px.png) |
+|:--- |:--- |:--- |:--- |
+| iPhones |iPads |Android phones |Android tablets |
 
 Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. **You [add tiles to a dashboard in the Power BI service](../end-user-tiles.md).** 
 
 Then in the Power BI mobile apps, you open tiles in focus mode and interact with them. You can open tiles with all kinds of visuals, including tiles based on Bing and R.
+
+> [!NOTE]
+> Report tiles don't have a focus mode and aren't interactive when viewed in the Power BI mobile apps.
 
 ## Tiles in the iOS apps
 
@@ -77,49 +80,6 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     After you open the link in the Power BI app, you can copy the link and open it in a browser window instead.
 4. Tap the arrow in the upper-left corner to close the tile and return to the dashboard.
-
-## Tiles in the Windows mobile app
-
->[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
-
-1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md) for Windows.
-2. Tap the vertical ellipsis on the tile. From here, you can: 
-   
-    ![Screenshot of a tile, showing a vertical ellipsis to Open link.](media/mobile-tiles-in-the-mobile-apps/pbi_win10tileellpslink.png)
-   
-    [Share a snapshot of the tile](mobile-windows-10-phone-app-get-started.md).
-   
-    Tap **Open Report** ![Open Report icon](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) to [view the underlying report](mobile-reports-in-the-mobile-apps.md).
-   
-    [Open the link](../../create-reports/service-dashboard-edit-tile.md#hyperlink), if it has a link. Links can go to Power BI dashboards or to an external URL.
-3. Tap **Expand Tile** ![Expand Tile icon](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png). It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
-   
-   Spin a pie chart to show the values of the slice at the top of the pie.  
-   
-   ![Screenshot of a pie chart, showing the values for Opportunity Count.](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-pie-focus-mode.png)
-   
-   Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
-   
-   ![Screenshot of a bar chart, showing the values for the Decor bar.](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
-   
-   *In this bar chart, the values for the **Decor** bar are shown at the top of the chart.*
-   
-   Tap the **Switch to presentation mode** icon ![Image of switch to presentation icon.](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) to open the tile in presentation mode, without the navigation and menu bars.
-   
-   > [!NOTE]
-   > You can also [view dashboards and reports in presentation mode](mobile-windows-10-app-presentation-mode.md) in the Power BI mobile app for Windows.
-   > 
-   > 
-   
-   In a map, tap the **Center Map** icon ![Center Map icon](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) to center the map to your current location.
-   
-   ![Screenshot of a map, showing the center map of your current location of Kentucky.](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
-   
-   Tap the Share Snapshot icon ![Share Snapshot icon](./media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) to [share a tile](mobile-windows-10-phone-app-get-started.md) with others.   
-   
-   Tap the Open Report icon ![Open Report icon](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) to [view the report](mobile-reports-in-the-mobile-apps.md) that the tile is based on. 
-4. Tap the back arrow or the back button to close the tile and return to the dashboard.
 
 ## Related content
 

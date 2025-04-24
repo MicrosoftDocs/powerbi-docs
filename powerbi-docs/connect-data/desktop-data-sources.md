@@ -99,7 +99,6 @@ The **Database** category provides the following data connections:
 * Dremio Software
 * Dremio Cloud
 * Exasol
-* MongoDB Atlas SQL
 * ClickHouse (beta)
 * InterSystems Health Insight
 * KX kdb Insights Enterprise (beta)

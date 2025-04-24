@@ -1,19 +1,16 @@
 ---
 title: Learn about Microsoft OneLake Delta table integration in Power BI and Microsoft Fabric
 description: Describes using Microsoft OneLake integration to automatically write import data into Delta tables.
-author: kfollis
-ms.author: kfollis
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/03/2024
+ms.date: 03/10/2025
 LocalizationGroup: Enterprise
 ---
 # OneLake integration for semantic models
-
-> [!IMPORTANT]
-> OneLake integration for semantic models is currently in **preview**.
 
 With Microsoft OneLake integration for semantic models, data imported into model tables can also be automatically written to [*Delta tables*](/azure/databricks/introduction/delta-comparison) in OneLake. The Delta format is the unified table format across all compute engines in Microsoft Fabric. OneLake integration exports the data with all key performance features enabled to provide more seamless data access with higher performance.
 
@@ -27,10 +24,7 @@ Before implementing a OneLake integration solution in your organization, be sure
 
 OneLake integration for semantic models is supported on Power BI Premium P and Microsoft Fabric F SKUs only. It's not supported on Power BI Pro, Premium Per User, or Power BI Embedded A/EM SKUs.
 
-Before enabling OneLake integration, you must have:
-
-- One or more [import semantic models](/fabric/get-started/direct-lake-overview#comparison-to-other-storage-modes) in a workspace on a Power BI Premium or Fabric capacity. Import semantic model is a type of data model where data is fully imported into Power BI's in-memory storage, allowing fast and efficient querying.
-- [Large semantic model storage format](service-premium-large-models.md) enabled for the model.
+Before enabling OneLake integration, you must have one or more [import semantic models](/fabric/get-started/direct-lake-overview#comparison-to-other-storage-modes) in a workspace on a Power BI Premium or Fabric capacity. Import semantic model is a type of data model where data is fully imported into Power BI's in-memory storage, allowing fast and efficient querying.
 
 ## Permissions
 
@@ -44,14 +38,15 @@ In your semantic model settings, expand **OneLake integration**, click the slide
 
 ## Admin portal
 
-Global and tenant admins can control OneLake integration by using the following settings in the Power BI admin portal: 
+Global and tenant admins can control OneLake integration by using the following setting in the Power BI admin portal: 
 
-:::image type="content" source="media/onelake-integration-overview/tenant-settings.png" alt-text="Screenshot of tenant settings for admin portal.":::
+* **Users can create Fabric items** - enables production-ready Fabric features, including OneLake integration. This setting can be managed at both the organizational level and the capacity level. If disabled, users can't turn on OneLake integration for their semantic models, and any semantic models currently configured for OneLake integration stop exporting import tables to OneLake. OneLake integration is enabled by default for the entire organization. The following image shows this setting enabled:
 
-* **Semantic models can export data to OneLake** - enables OneLake integration at the organizational level. If disabled, users can't turn on OneLake integration for their semantic models, and any semantic models currently configured for OneLake integration stop exporting import tables to OneLake. OneLake integration is enabled by default for the entire organization. 
+    :::image type="content" source="media/onelake-integration-overview/enable-onelake-integration-fabric-items.png" alt-text="Screenshot of admin portal setting enabling users to create Fabric items.":::
 
-* **Users can store semantic model tables in OneLake** - enables all or selected users in the organization to configure OneLake integration for their semantic models. If disabled for a specific user, that user can no longer turn on OneLake integration but any semantic models they've already configured for OneLake integration continue to export import tables to OneLake. That user can disable OneLake integration for semantic models already configured for OneLake integration, but cannot re-enable OneLake integration. The setting requires the **Semantic models can export data to OneLake** tenant setting to be enabled. By default, all users in the organization can configure OneLake integration for their semantic models. 
+* **Semantic models can export data to OneLake** - enables semantic models configured for OneLake integration to send import tables to OneLake. Applies to the entire organization. The following image shows this setting enabled:
 
+    :::image type="content" source="media/onelake-integration-overview/enable-onelake-integration-semantic-models.png" alt-text="Screenshot of admin portal setting enabling semantic models to be exported to onelake.":::
 
 ### Refresh model
 
@@ -80,7 +75,7 @@ For example, you can use SQL Server Management Studio (SSMS) to run the followin
 
 ## Explore export files
 
-After exporting, you can use [OneLake file explorer](https://go.microsoft.com/fwlink/?linkid=2235671), which integrates OneLake with your Windows File Explorer, to locate Delta table export files..
+After exporting, you can use [OneLake file explorer](https://go.microsoft.com/fwlink/?linkid=2235671), which integrates OneLake with your Windows File Explorer, to locate Delta table export files.
 
 1. In OneLake file explorer, right click on the workspace folder, and then select **Sync from OneLake**.
 
@@ -102,21 +97,19 @@ By creating [shortcuts](/fabric/onelake/onelake-shortcuts) for your semantic mod
 
 ## Considerations and limitations
 
-- During preview, currency data types with values larger than 18 decimal points can have some precision loss when exported to Delta files.
+- Workspace Admins, Members, and Contributors, as well as Users with direct Write permission on a semantic model are granted Read permission on the exported artifact folder in OneLake.
+  
+- Users with Read permission on a semantic model get Read permission to the artifact folder in OneLake only if there are no RLS/OLS roles defined for the semantic model.
+  
+- Currency data types with values larger than 18 decimal points can have some precision loss when exported to Delta files.
 
-- During preview, semantic models in [BYOK](service-encryption-byok.md) enabled workspaces are not supported.
+- Semantic models in [BYOK](service-encryption-byok.md) enabled workspaces aren't supported.
 
-- During preview, shortcut tables built on top of the exported model in Lakehouse can't be queried by using the SQL endpoint.
-
-- During preview, [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo) capacities are not yet supported.
-
-- During preview, the operation of exporting the model to OneLake is not billed, but [compute and storage usage of the exported model on OneLake](/fabric/onelake/onelake-consumption) is billed.
- 
-- For users with *contributor* permissions for exported model tables but only *viewer* permissions for the workspace, a model folder appears in Lakehouse explorer, but an error is returned when selected.
+- [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo) capacities aren't yet supported.
 
 - Measures, DirectQuery tables, hybrid tables, calculation group tables, and system managed aggregation tables can't be exported to Delta format tables.
 
-- Only a single version of the delta tables are exported and stored on OneLake. Old versions of the delta tables are deleted after a successful export. Other execution engines which use the older but now deleted version of the data can have transient failures.
+- Old versions of the delta tables are deleted after three days. Other execution engines which use an older but now deleted version of the data must move forward to an available version.
 
 ## Related content
 

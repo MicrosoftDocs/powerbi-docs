@@ -1,6 +1,6 @@
 ---
-title: Conduct proof of concept to migrate to Power BI
-description: Guidance on conducting a proof of concept when migrating to Power BI.
+title: "Conduct proof of concept to migrate to Power BI"
+description: "Guidance on conducting a proof of concept when migrating to Power BI."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 02/27/2022
+ms.date: 12/30/2024
 ---
 
 # Conduct proof of concept to migrate to Power BI
@@ -71,8 +71,8 @@ If you're migrating from a legacy BI platform where reports reference relational
 
 In the BI industry, a dashboard is a collection of visuals that displays key metrics on a single page. However, in Power BI, a dashboard represents a specific visualization feature that can only be created in the Power BI service. When migrating a dashboard from a legacy BI platform, you have two choices:
 
-1. The legacy dashboard can be recreated as a Power BI *report*. Most reports are created with Power BI Desktop. Paginated reports and Excel reports are alternative options, too.
-2. The legacy dashboard can be recreated as a Power BI *dashboard*. [Dashboards](../fundamentals/service-basic-concepts.md#dashboards) are a visualization feature of the Power BI service. Dashboard visuals are often created by pinning visuals from one or more reports, Q&A, or Quick Insights.
+- The legacy dashboard can be recreated as a Power BI *report*. Most reports are created with Power BI Desktop. Paginated reports and Excel reports are alternative options, too.
+- The legacy dashboard can be recreated as a Power BI *dashboard*. [Dashboards](../consumer/end-user-dashboards.md) are a visualization feature of the Power BI service. Dashboard visuals are often created by pinning visuals from one or more reports, Q&A, or Quick Insights.
 
 > [!TIP]
 > Because dashboards are a Power BI content type, refrain from using the word *dashboard* in the report or dashboard name.
@@ -91,7 +91,7 @@ Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
-Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Experienced Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).

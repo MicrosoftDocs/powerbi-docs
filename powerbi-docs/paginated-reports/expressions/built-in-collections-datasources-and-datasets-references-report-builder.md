@@ -1,8 +1,8 @@
 ---
 title: "DataSources and DataSets collection references in a paginated report"
 description: Learn about the collections of datasources and datasets. Find out how to make them available after the paginated report is published to a report server in Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.date: 06/21/2023
 ms.service: powerbi

@@ -1,9 +1,9 @@
 ---
 title: Drill mode in the Power BI service
 description: Learn how to drill down, drill up, and expand by using the drill feature in a visual in the Microsoft Power BI service.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
@@ -153,6 +153,6 @@ Use **Show as a table** to get a look behind the scenes. Each time you drill or 
 
 [Set and use date tables](../transform-model/desktop-date-tables.md)
 
-[Power BI - Basic Concepts](end-user-basic-concepts.md)
+[Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Visit the Power BI Community](https://community.powerbi.com/)

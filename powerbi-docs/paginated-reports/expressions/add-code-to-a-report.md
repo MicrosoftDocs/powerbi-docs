@@ -1,8 +1,8 @@
 ---
 title: "Add code to a paginated report"
 description: Find out how to call your own custom code for any expression you have in your paginated report in Power BI Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.date: 09/21/2023
 ms.service: powerbi

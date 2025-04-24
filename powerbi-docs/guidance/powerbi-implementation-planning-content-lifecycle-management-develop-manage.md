@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 04/24/2024
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Develop content and manage changes
@@ -17,8 +17,8 @@ ms.date: 04/24/2024
 
 This article helps you to develop content and manage changes as part of managing the content lifecycle. It's primarily targeted at:
 
-- **Center of Excellence (COE) and BI teams:** The teams that are responsible for overseeing Power BI in the organization. These teams include decision makers who decide how to manage the lifecycle of Power BI content. These teams can also include roles like release managers, who handle the lifecycle of content releases, or engineers who create and manage the components needed to effectively use and support lifecycle management.
-- **Content creators and content owners:** Users who create content, which they want to publish to the Fabric portal to share with others. These individuals are responsible for managing the lifecycle of the Power BI content that they create.
+- **Center of Excellence (COE) and BI teams**: The teams that are responsible for overseeing Power BI in the organization. These teams include decision makers who decide how to manage the lifecycle of Power BI content. These teams can also include roles like release managers, who handle the lifecycle of content releases, or engineers who create and manage the components needed to effectively use and support lifecycle management.
+- **Content creators and content owners**: Users who create content, which they want to publish to the Fabric portal to share with others. These individuals are responsible for managing the lifecycle of the Power BI content that they create.
 
 Lifecycle management is the processes and practices you use to handle content from its creation to its eventual retirement. In the [first stage of lifecycle management](powerbi-implementation-planning-content-lifecycle-management-plan-design.md), you plan and design content, which involves [solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md) and making key decisions that affect your approach to lifecycle management. In the second stage, you develop content and manage changes.
 
@@ -34,10 +34,10 @@ The following image depicts the lifecycle of Power BI content, highlighting stag
 > [!TIP]
 > This article focuses on key decisions and considerations to help you develop content and manage changes throughout its lifecycle. For more guidance about how to develop content and manage changes, see:
 >
-> - **[What is lifecycle management in Microsoft Fabric?](/fabric/cicd/cicd-overview):** This article provides a technical introduction and [tutorial](/fabric/cicd/cicd-tutorial) to Fabric Git integration and deployment pipelines.
-> - **[Lifecycle management best practices](/fabric/cicd/best-practices-cicd#content-preparation):** This article contains practical tips and guidance for using the lifecycle management features of Fabric and Power BI to develop content and manage changes.
-> - **[Power BI Desktop OneDrive and SharePoint integration](../create-reports/desktop-sharepoint-save-share.md):** This article contains an overview of the options to use and store files saved to OneDrive for Work and School or SharePoint when you perform version control with .pbix files.
-> - **[Get started with Git in Azure Repos](/azure/devops/repos/git/gitquickstart?view=azure-devops&tabs=visual-studio-2022&preserve-view=true):** This series of articles contain practical tips, tutorials, and guidance for performing source control by using a Git repository in Azure Repos.
+> - **[What is lifecycle management in Microsoft Fabric?](/fabric/cicd/cicd-overview)**: This article provides a technical introduction and [tutorial](/fabric/cicd/cicd-tutorial) to Fabric Git integration and deployment pipelines.
+> - **[Lifecycle management best practices](/fabric/cicd/best-practices-cicd#content-preparation)**: This article contains practical tips and guidance for using the lifecycle management features of Fabric and Power BI to develop content and manage changes.
+> - **[Power BI Desktop OneDrive and SharePoint integration](../create-reports/desktop-sharepoint-save-share.md)**: This article contains an overview of the options to use and store files saved to OneDrive for Work and School or SharePoint when you perform version control with .pbix files.
+> - **[Get started with Git in Azure Repos](/azure/devops/repos/git/gitquickstart?view=azure-devops&tabs=visual-studio-2022&preserve-view=true)**: This series of articles contain practical tips, tutorials, and guidance for performing source control by using a Git repository in Azure Repos.
 
 Content creators and owners should manage content changes by using _version control_. Version control is the practice of managing changes to files or code in a central repository. This practice facilitates more effective collaboration and content management.
 
@@ -59,27 +59,26 @@ The first step to set up version control is to decide how you'll develop content
 Depending on how you author content, you'll make different decisions about how to manage it. For instance, for Power BI reports and semantic models, a Power BI Desktop (.pbix) file has fewer options for version control compared to the [Power BI Desktop project (.pbip)](../developer/projects/projects-overview.md) format. That's because a .pbix file is a binary format, whereas the .pbip format contains text-based human-readable content and metadata. Having human-readable content and metadata allows for easier tracking of model and report changes by using _source control_. Source control is when you view and manage changes _within_ content to its code and metadata.
 
 > [!TIP]
-> When developing semantic models and reports by using Power BI Desktop, we recommend that you use .pbip files instead of .pbix files. When developing semantic models by using XMLA tools, we recommend that you use the Tabular Model Definition Language (TMDL) format, instead of .bim files.
->
-> The .pbip and TMDL formats support easier tracking and merging of object-level changes. This means that you can view and manage changes to individual objects, like DAX measures or tables.
+> When developing semantic models and reports by using Power BI Desktop, we recommend that you use .pbip files instead of .pbix files. When developing semantic models by using XMLA tools, we recommend that you use the Tabular Model Definition Language (TMDL) format, instead of .bim files. For more information, see [Decide the format of your content](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#decide-the-format-of-your-content)
+ later in this article.
 
 ### Power BI Desktop
 
-You can use Power BI Desktop to create semantic models or reports, which you can save as either .pbix or .pbip files. There are additional custom content files that you also may use when you use Power BI Desktop.When using Power BI Desktop to create content, some key decisions you should make include:
+You can use Power BI Desktop to create semantic models or reports, which you can save as either .pbix or .pbip files. There are additional custom content files that you also may use when you use Power BI Desktop. When using Power BI Desktop to create content, some key decisions you should make include:
 
-- **Which file format to use:** You can save content either as .pbix or .pbip files. For instance, Git integration requires that you use .pbip files, self-service creators might find .pbix files simpler to manage and maintain in Teams, SharePoint, or OneDrive.
-- **How to manage custom content:** You can add themes, custom visuals, or images to Power BI Desktop files, which may require distinct considerations for lifecycle management. For instance, when content creators make their own custom visuals, they should save and manage the visual definition in a separate file.
-- **How to manage preview features:** You can opt-in to preview features or settings in Power BI Desktop, which alters content and how you'll use it. For instance, you might take additional steps to validate content that uses preview features.
+- **Which file format to use**: You can save content either as .pbix or .pbip files. For more information, see [Decide the format of your content](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#decide-the-format-of-your-content) later in this article.
+- **How to manage custom content**: You can add themes, custom visuals, or images to Power BI Desktop files, which may require distinct considerations for lifecycle management. For instance, when content creators make their own custom visuals, they should save and manage the visual definition in a separate file.
+- **How to manage preview features**: You can opt-in to preview features or settings in Power BI Desktop, which alters content and how you'll use it. For instance, you might take additional steps to validate content that uses preview features.
 
 ### Web authoring
 
 Certain content—such as dataflows, dashboards, and scorecards—can only be created in the Fabric portal. You can also create or modify some content—such as semantic models, reports, and paginated reports—in both the Fabric portal or by using local tools. When creating content by using web authoring, some key decisions you should make include:
 
-- **How to manage changes:** You can make changes to many item types by using web authoring, but these changes might be saved instantly, overwriting previous versions. For instance, if you are collaborating with others, you might want to avoid web authoring on shared items, working instead on your own copy.
-- **How to retrieve content backups:** You can create content like reports or semantic models by using web authoring, but these items [cannot be downloaded to local .pbix files](../create-reports/service-export-to-pbix.md#limitations). For instance, you can choose to back up this content by retrieving and storing its metadata.
+- **How to manage changes**: You can make changes to many item types by using web authoring, but these changes might be saved instantly, overwriting previous versions. For instance, if you are collaborating with others, you might want to avoid web authoring on shared items, working instead on your own copy.
+- **How to retrieve content backups**: You can create content like reports or semantic models by using web authoring, but these items [cannot be downloaded to local .pbix files](../create-reports/service-export-to-pbix.md#limitations). For instance, you can choose to back up this content by retrieving and storing its metadata.
 
 > [!TIP]
-> When developing dataflows and scorecards, we recommend that you retrieve the item definitions to manage changes and store a backup. You can automate dataflow and scorecard retrieval by using the [Fabric REST APIs](/rest/api/fabric/articles/using-fabric-apis). Specifically, you can use the [Get Dataflow](/rest/api/power-bi/dataflows/get-dataflow) and [Get Scorecards](/rest/api/power-bi/scorecards_%28preview%29/get) endpoints, respectively.
+> When developing dataflows and scorecards, we recommend that you retrieve the item definitions to manage changes and store a backup. You can automate dataflow and scorecard retrieval by using the [Fabric REST APIs](/rest/api/fabric/articles/using-fabric-apis). Specifically, you can use the [Get Dataflow](/rest/api/power-bi/dataflows/get-dataflow) and [Get Scorecards](/rest/api/power-bi/scorecards%28preview%29/get) endpoints, respectively.
 
 > [!CAUTION]
 > Some content—like dashboards—doesn't have the option to retrieve a definition. For this content, you can't easily track changes or retrieve a backup.
@@ -88,17 +87,130 @@ Certain content—such as dataflows, dashboards, and scorecards—can only be cr
 
 You can use other tools to create or manage certain types of content. These tools may provide added benefits, better suit your workflow, or be required to manage specific features or content types. You can use both other Microsoft tools or third-party tools to create and manage content. Other tools you can use to create or manage content are as follows.
 
-- **Visual Studio or Visual Studio Code:** An integrated development environment for developers to create and manage semantic models or Fabric notebooks. With both [Visual Studio](/visualstudio/windows/?view=vs-2022&preserve-view=true) and [Visual Studio Code](https://code.visualstudio.com/docs), developers can also perform source control management (SCM) by committing and pushing local changes to a remote repository.
-- **Tabular Editor:** A third-party tool to develop and manage semantic models.
-- **Excel:** A client tool for pivot tables and live connected tables that work with a semantic model.
-- **Power BI Report Builder:** A desktop application for creating paginated report (.rdl) files.
+- **Visual Studio or Visual Studio Code**: An integrated development environment for developers to create and manage semantic models or Fabric notebooks. With both [Visual Studio](/visualstudio/windows/?view=vs-2022&preserve-view=true) and [Visual Studio Code](https://code.visualstudio.com/docs), developers can also perform source control management (SCM) by committing and pushing local changes to a remote repository.
+- **Tabular Editor**: A third-party tool to develop and manage semantic models.
+- **Excel**: A client tool for pivot tables and live connected tables that work with a semantic model.
+- **Power BI Report Builder**: A desktop application for creating paginated report (.rdl) files.
 
 When creating content by using other tools, some key decisions you should make include:
 
-- **How to manage licenses:** Other tools may require additional licenses that you should manage.
-- **How to publish content:** Other tools may require additional steps to publish content, such as by using XMLA endpoints or the Power BI REST APIs.
+- **How to manage licenses**: Other tools may require additional licenses that you should manage.
+- **How to publish content**: Other tools may require additional steps to publish content, such as by using XMLA endpoints or the Power BI REST APIs.
 
-Once you decide how you'll create content, you next need to choose where you'll publish and test content while you develop it.
+Once you decide how you'll create content, you next need to choose which format you'll use to save and manage it.
+
+## Decide the format of your content
+
+Depending on what content you'll create and which tools you'll use, your content might use different file formats. However, even within a tool, you must choose between different formats. For instance, for reports and semantic models that you create with Power BI Desktop, you have to choose between .pbix and .pbip files. This decision has a functional impact on not only how you develop content, but also how you manage that content during its lifecycle, and how efficiently you can complete certain development tasks. For instance, you must use .pbip files if you want to develop content in Power BI Desktop but publish that content by using Git integration.
+
+The file format for your content can change during its lifecycle. For instance, you might start creating .pbix files for reports and models, initially. However, when new content creators want to collaborate with you, or when you want to enhance your productivity, you might switch to a different format, like .pbip files.
+
+The following sections give an overview of common formats you must choose from in Power BI.
+
+### Power BI Desktop (.pbix) file format
+
+The default and most common format for Power BI reports and models is the .pbix file format. This binary format is easy to manage and use for most people. However, it is not possible to open or use the file contents to track changes or improve developer productivity.
+
+Use the .pbix file format when:
+- You plan to publish content by using OneDrive refresh.
+- Content creators want to use and share a single file rather than a folder of multiple files (like with the .pbip format).
+- Content creators prefer the .pbix format, because they find it simpler.
+
+### Power BI Projects (.pbip) file format
+
+Instead of a .pbix file, you can also save content using the [Power BI Projects (.pbip)](../developer/projects/projects-overview.md) format. This format splits the file into a _folder structure_. In the folder structure of a .pbip, there are multiple metadata files which you can open and read that provide the definitions and configurations for models and reports. Because you can open and read the file contents, you can make changes to them either manually or programmatically, which can produce significant productivity enhancements. Certain features in Fabric such as Git integration also require that you use the .pbip format instead of the .pbix format if you will develop content in Power BI Desktop.
+
+The following image shows how .pbix files and .pbip files differ:
+
+:::image type="content" source="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/power-bi-projects-overview.svg" alt-text="Screenshot of an overview of how a PBIP contents are human-readable and usable." lightbox="./media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/power-bi-projects-overview.svg":::
+
+In summary, users or automated processes can view and modify the contents of a .pbip file without opening it in Power BI Desktop. In contrast, a .pbix file is a binary file, and there aren't supported methods to view or modify its contents. There are various scenarios where you want to be able to view or change these metadata contents, such as:
+
+- You want to conduct source control by tracking and managing changes, with visibility on what has changed.
+- You want to make changes in bulk, or search for something in the file.
+- You want to re-use elements of the file, like a visual, table, or measure.
+- You want to view properties or settings that aren't visible in the user interface of Power BI Desktop.
+- You want to automate certain processes, such as scanning metadata for best practice violations before publishing content.
+
+The .pbip file format can also use the [TMDL](../developer/projects/projects-dataset.md#tmdl-format) or [PBIR](../developer/projects/projects-report.md#pbir-format) formats for semantic model and report definitions, respectively, which have their own advantages and considerations to keep in mind.
+
+Use the .pbip file format when:
+- You plan to use Git integration and not OneDrive refresh to publish or deploy content.
+- You plan to use source control to track and manage changes.
+- You plan to use Power BI Desktop in combination with other tools to develop models or reports.
+- Multiple content creators will collaborate together on a models or reports.
+- You want to benefit from productivity enhancements and save time making models or reports.
+- You plan to automate parts of the development, testing, or deployment process.
+- You want to structure your model and report files in different ways (like multiple reports in the .Report folder, and multiple models in the .SemanticModel folder).
+
+> [!TIP]
+> When you develop content, you should be self-aware of scenarios where you feel like you are wasting time, such as with repetitious tasks. In these scenarios, you can often save time by leveraging these new formats together with other tools, such as Visual Studio Code, notebooks in Fabric, and more.
+
+### Tabular Model Definition Language (.tmdl) file format
+
+When you save a model as a .pbip you can choose to save it as a single .bim file which uses the Tabular Model Scripting Language (TMSL), or in a folder structure of multiple .tmdl files, which use the new Tabular Model Definition Language. TMDL uses a YAML-like syntax for semantic model definitions that makes it easier to read and manage changes of a model. 
+
+The following is an example of what the TMDL format looks like: 
+
+:::image type="content" source="../developer/projects/media/projects-dataset/semantic-model-compare.png" alt-text="Screenshot explaining the TMDL language." lightbox="../developer/projects/media/projects-dataset/semantic-model-compare.png":::
+
+Some advantages of the new TMDL format are as follows:
+- You can better use source control and Git integration, because model metadata is more concise, structured, and easier to read.
+- You can more easily merge changes without creating conflicts.
+- You can improve your efficiency for certain reporting tasks, such as re-using or copying model objects between models (like a date table).
+
+The following is an example of what source control with the TMDL format looks like:
+
+:::image type="content" source="../developer/projects/media/projects-dataset/semantic-model-diffs.png" alt-text="Screenshot of semantic model TMDL diffs." lightbox="../developer/projects/media/projects-dataset/semantic-model-diffs.png":::
+
+Use the TMDL format when:
+- You plan to use source control to track and manage changes.
+- You want to enhance developer productivity by making metadata changes.
+- You develop your semantic model using other tools, such as Visual Studio Code or Tabular Editor.
+
+> [!NOTE]
+> TMDL format is different from the [TMDL view in Power BI Desktop](../transform-model/desktop-tmdl-view.md):
+> - **TMDL** is a language and metadata format for semantic models.
+> - **The TMDL view** is a scripting interface in Power BI Desktop for you to make programmatic changes to the model. It uses a similar YAML-like syntax for TMDL scripts as TMDL format files. You don't need to use the TMDL format to benefit from the TMDL view.
+
+### Power BI enhanced report (PBIR) format.
+
+When you save content as a .pbip file, you can choose to use the default report format or the [new PBIR format](../developer/projects/projects-report.md#pbir-format). This new format presents several advantages that can enhance developer productivity and collaboration, particularly when you use the PBIR format with .pbip files.
+
+The following is an example of what the PBIR format looks like:
+
+:::image type="content" source="../developer/projects/media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
+
+Some advantages of using the PBIR format are as follows:
+- You can better use source control and Git integration, because report metadata is more concise, structured, and easier to read.
+- You can improve your efficiency for certain reporting tasks, such as:
+  - Re-using or copying visuals between pages by copying the visual.json.
+  - Re-using or copying pages between reports.
+  - Finding and replacing custom colours, fields, and other visual configuration all at once.
+  - Fixing "broken" visuals with fields that were renamed or moved between tables.
+- You can add metadata annotations to report metadata to facilitate certain automations or tasks that support continuous integration / continuous deployment (CI/CD).
+- You can leverage tools like [semantic-link-labs](https://github.com/microsoft/semantic-link-labs) that have more utility with the new PBIR format.
+
+Use the PBIR format when:
+- You plan to use source control to track and manage changes.
+- You want to enhance report creator productivity by making metadata changes.
+- You want to make programmatic or automatic changes to the report.
+
+[//]: # (Todo: Add a diagram that shows an example of how you would copy a page or visual.)
+
+> [!CAUTION]
+> Ensure that you first check the [limitations and considerations](../developer/projects/projects-report.md#pbir-considerations-and-limitations) before using the PBIR format. These limitations and considerations change over time, so check back regularly if there are certain items that prevent you from fulfilling a specific requirement for your Power BI content.
+>
+> Additionally, all report metadata irrespective of its format has the potential to include data points. For more information, see [PBIR Folder and Files](../developer/projects/projects-report.md#pbir-folder-and-files).
+
+### Power BI template (.pbit) file format
+
+You can also save a Power BI report or semantic model as a .pbit file. However, .pbit files are intended for re-use of a specific report layout or model structure. You should not use the .pbit format to save and manage Power BI content during its development. Instead, you should use .pbit files when you want to create reusable templates to share with other people in your organization.
+
+### Other formats
+
+When you develop other content in Power BI (such as dashboards, dataflows, or paginated reports), you might not have content files if you develop the item in Fabric. Alternatively, you could only have the item's definition saved to source control. For more information, see [Decide where to store files](powerbi-implementation-planning-content-lifecycle-management-plan-design.md#decide-where-to-store-files) in the previous article of this series.
+
 
 ## Decide how you'll set up and use workspaces
 
@@ -182,11 +294,11 @@ When delivering business-critical content, each developer can also use their own
 > [!NOTE]
 > [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops&preserve-view=true) is a suite of services that integrate with Power BI and Fabric to help you plan and orchestrate content lifecycle management. When you use Azure DevOps this way, you typically leverage the following services:
 >
-> - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true):** Allows you to create and use a remote Git repository, which is a remote storage location you use to track and manage content changes.
-> - **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true):** Allows you to create and use a set of automated tasks to handle, test, and deploy content from a remote repository to a workspace.
-> - **[Azure Test Plans](/azure/devops/test/overview?view=azure-devops&preserve-view=true):** Allows you to design tests to validate the solution and automate quality control together with Azure Pipelines.
-> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Allows you to use boards to track tasks and plans as work items, and link or refer to work items from other Azure DevOps services.
-> - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true):** Allows you to share information with their team to understand and contribute to content.
+> - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true)**: Allows you to create and use a remote Git repository, which is a remote storage location you use to track and manage content changes.
+> - **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true)**: Allows you to create and use a set of automated tasks to handle, test, and deploy content from a remote repository to a workspace.
+> - **[Azure Test Plans](/azure/devops/test/overview?view=azure-devops&preserve-view=true)**: Allows you to design tests to validate the solution and automate quality control together with Azure Pipelines.
+> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true)**: Allows you to use boards to track tasks and plans as work items, and link or refer to work items from other Azure DevOps services.
+> - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true)**: Allows you to share information with their team to understand and contribute to content.
 
 The following diagram depicts a high-level example of how you might use separate environments by using a private workspace with Git integration.
 
@@ -214,22 +326,22 @@ The diagram depicts the following processes and components to separate workspace
 
 When you use separate environments, you should also consider how this will impact various supporting resources that you use in these environments. For these supporting resources, consider whether you also need to separate them into the same number of stages, or else how you'll coordinate their use across these environments.
 
-- **Gateways:** Consider using [separate on-premises data gateway clusters](powerbi-implementation-planning-data-gateways.md#determine-the-number-of-gateways) and VNet gateways for production workloads. This is beneficial to prevent disruption, but also to ensure uptime when you need to update these gateways.
-- **Apps:** Consider having separate apps for test and production workspaces. It's not possible to deploy or copy apps between stages. Apps in the test workspace are intended to help you test content and the app experience before you deploy changes to the production workspace. Apps in the production workspace are intended to deliver content to end-users in a structured and experience.
-- **Azure DevOps:** If you intend to use Azure DevOps to collaborate and orchestrate source control and deployment, consider how you'll use branches and Azure Pipelines to deploy content between these environments. For more information about using Azure Pipelines to deploy content, see [Stage 4: Deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md).
+- **Gateways**: Consider using [separate on-premises data gateway clusters](powerbi-implementation-planning-data-gateways.md#determine-the-number-of-gateways) and VNet gateways for production workloads. This is beneficial to prevent disruption, but also to ensure uptime when you need to update these gateways.
+- **Apps**: Consider having separate apps for test and production workspaces. It's not possible to deploy or copy apps between stages. Apps in the test workspace are intended to help you test content and the app experience before you deploy changes to the production workspace. Apps in the production workspace are intended to deliver content to end-users in a structured and experience.
+- **Azure DevOps**: If you intend to use Azure DevOps to collaborate and orchestrate source control and deployment, consider how you'll use branches and Azure Pipelines to deploy content between these environments. For more information about using Azure Pipelines to deploy content, see [Stage 4: Deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md).
 
 Once you've decided how you'll set up and use workspaces, the next step is to decide how you'll perform version control to track and manage content changes.
 
 ## Decide how you'll use version control
 
-In Power BI, you can perform version control either by using SharePoint/OneDrive, or by using a remote Git repository, such as [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true), which is a component of [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops). In both approaches, you add local content files to a remote storage location to help track and manage changes. We recommend that you use SharePoint or OneDrive only for smaller and simpler projects, as it lacks the features and robustness to support larger or more complicated scenarios.
+In Power BI, you can perform version control either by using SharePoint/OneDrive, or by using a remote Git repository, such as [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true), which is a component of [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops). Instead of Azure DevOps, you can also use [GitHub](https://github.com/). In both approaches, you add local content files to a remote storage location to help track and manage changes. We recommend that you use SharePoint or OneDrive only for smaller and simpler projects, as it lacks the features and robustness to support larger or more complicated scenarios.
 
 Here are some general considerations to help you set up and use version control.
 
-- **Alerts:** You should set up alerts for when others add, remove, or modify critical files.
-- **Scope:** Clearly define the scope of the remote storage location. Ideally, the scope of the remote storage location is identical to the scope of the downstream workspaces and apps that you use to deliver content to consumers.
-- **Access:** You should set up access to the remote storage location by using a similar permissions model as you have set up for your [deployment pipeline permissions](powerbi-implementation-planning-security-content-creator-planning.md#deployment-pipeline-access) and [workspace roles](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles). Content creators need access to the remote storage location.
-- **Documentation:** Add text files to the remote storage location to describe the remote storage location and its purpose, ownership, access, and defined processes.
+- **Alerts**: You should set up alerts for when others add, remove, or modify critical files.
+- **Scope**: Clearly define the scope of the remote storage location. Ideally, the scope of the remote storage location is identical to the scope of the downstream workspaces and apps that you use to deliver content to consumers.
+- **Access**: You should set up access to the remote storage location by using a similar permissions model as you have set up for your [deployment pipeline permissions](powerbi-implementation-planning-security-content-creator-planning.md#deployment-pipeline-access) and [workspace roles](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles). Content creators need access to the remote storage location.
+- **Documentation**: Add text files to the remote storage location to describe the remote storage location and its purpose, ownership, access, and defined processes.
 
 The following sections describe each approach and key considerations to decide which one you should use.
 
@@ -297,12 +409,12 @@ For more sophisticated version control, you can store files in a remote reposito
 
 ### Source control by using a remote Git repository
 
-A remote Git repository facilitates source control of files, which allows content creators more options to track and manage changes. In brief, content creators can develop content either locally or in the Power BI service, then commit and push those changes to a remote Git repository like Azure Repos
+A remote Git repository facilitates source control of files, which allows content creators more options to track and manage changes. In brief, content creators can develop content either locally or in the Power BI service, then commit and push those changes to a remote Git repository like Azure Repos or GitHub.
 
 > [!NOTE]
 > You can also perform source control of your content without using Git integration. In this scenario, you still track and manage content changes in a remote Git repository, but you deploy content using either the REST APIs or XMLA read/write endpoints. For more information about these methods of deploying content, see [Stage 4: Deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md).
 
-The following diagram depicts a high-level overview of how you perform source control by
+The following diagram depicts a high-level overview of how you perform source control by developing content locally, then committing changes to a remote repository, which can sync with a Fabric workspace by using Git integration.
 
 :::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/source-control-azure-devops.svg" alt-text="Diagram that shows approach 2: Source control by using Azure DevOps." border="false":::
 
@@ -328,13 +440,13 @@ Consider using source control to track and manage changes in the following scena
 
 Here are some pre-requisites and considerations to help you effectively use source control with Azure DevOps.
 
-- **Git:** To commit and push changes to a remote repository, content creators need to [download](https://git-scm.com/downloads) and install _Git_. Git is a distributed version control system that tracks changes in your files. To learn Git basics, see [What is Git?](/devops/develop/git/what-is-git).
-- **Tools:** To use Git, content creators need to either use a [command line interface (CLI)](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or a graphical user interface (GUI) client for SCM, like [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/).
-- **Licenses and permissions:** To create and use an Azure Repos Git repository, content creators must have the following:
+- **Git**: To commit and push changes to a remote repository, content creators need to [download](https://git-scm.com/downloads) and install _Git_. Git is a distributed version control system that tracks changes in your files. To learn Git basics, see [What is Git?](/devops/develop/git/what-is-git).
+- **Tools**: To use Git, content creators need to either use a [command line interface (CLI)](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or a graphical user interface (GUI) client for SCM, like [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/).
+- **Licenses and permissions**: To create and use an Azure Repos Git repository, content creators must have the following:
   - [Access level](/azure/devops/organizations/billing/buy-basic-access-add-users?view=azure-devops&preserve-view=true) set to Basic (as opposed to Stakeholder).
   - Belong to an [organization](/azure/devops/user-guide/manage-organization-collection?view=azure-devops&preserve-view=true#add-users-to-your-organization) and a [project](/azure/devops/organizations/security/add-users-team-project?view=azure-devops&tabs=preview-page&preserve-view=true).
   - Appropriate [repository permissions](/azure/devops/repos/git/set-git-repository-permissions?view=azure-devops&preserve-view=true).
-- **Fabric Git integration:** To sync content in a remote repository with a Microsoft Fabric workspace, content creators use [Fabric Git integration](/fabric/cicd/git-integration/intro-to-git-integration). This is important to track and manage changes to content that's created in the Fabric portal, like dataflows.
+- **Fabric Git integration**: To sync content in a remote repository with a Microsoft Fabric workspace, content creators use [Fabric Git integration](/fabric/cicd/git-integration/intro-to-git-integration). This is important to track and manage changes to content that's created in the Fabric portal, like dataflows.
 
 > [!TIP]
 > To facilitate source control with local development, we recommend using a client application like [Visual Studio Code](https://code.visualstudio.com/). You use Power BI Desktop to develop content, then you can use Visual Studio Code to perform source control management of that content, by staging, committing, and pushing changes to your remote repository.
@@ -344,9 +456,9 @@ Here are some pre-requisites and considerations to help you effectively use sour
 >
 > Additionally, [sensitivity labels aren't supported with Fabric Git integration](/fabric/cicd/git-integration/git-integration-process#sync-and-commit-limitations), and [exporting items with sensitivity labels might be disabled](/fabric/admin/git-integration-admin-settings#users-can-export-workspace-items-with-applied-sensitivity-labels-to-git-repositories-preview). If your content has sensitivity labels, you should plan how you can achieve version control while still honoring your data loss prevention policies.
 
-A key benefit of using source control with Azure Repos is improved collaboration between content creators and more customization and oversight regarding content changes and deployment.
+A key benefit of using source control with Azure Repos or GitHub is improved collaboration between content creators and more customization and oversight regarding content changes and deployment.
 
-The following diagram depicts a high-level overview of how Azure DevOps enables collaboration with source control.
+The following diagram depicts a high-level overview of how Azure DevOps enables collaboration with source control. You can also use GitHub Enterprise instead of AzureDevOps, which would involve different services that perform a similar function.
 
 :::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/azure-devops-collaboration-flow.svg" alt-text="Diagram that shows how to collaborate by using Azure DevOps." border="false":::
 
@@ -427,14 +539,14 @@ When you use pull requests to merge changes to Power BI content, consider the fo
 **Checklist** - When planning where you'll store files, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Choose your development tools:** Ensure your approach to develop content aligns with how you'll collaborate with other content creators and use version control.
-> - **Choose between .pbip and .pbix formats for models and reports:** Typically, the .pbip format is more beneficial for source control, but self-service users can find .pbix files easier to use.
-> - **Separate semantic model and report development:** Version control is most effective when you manage changes for different item types, separately. [Separating model and report development](report-separate-from-model.md) is considered a good practice.
-> - **Decide how many workspaces that you need:** Using separate environments is critical for the success of content lifecycle management. Ensure that you've clarified how many workspaces you need and conduct appropriate [workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md).
-> - **Decide how you'll implement version control:** Decide between a simpler approach by using SharePoint or OneDrive for Business, or by using Azure DevOps to facilitate source control.
-> - **Set up your remote repository:** Create a structured space in the OneDrive folder or Git Repo where you'll store content to track and manage changes.
-> - **If you're using source control, set up .gitignore and .gitattributes files:** Ensure that you set up your repository so that you're only tracking meaningful changes.
-> - **If you're using source control, define branching and merge strategies:** Ensure that you define clear processes for how you'll set up and use source control to best support development. Avoid overcomplicating your process. Instead, try to complement the current way of working in your development teams.
+> - **Choose your development tools**: Ensure your approach to develop content aligns with how you'll collaborate with other content creators and use version control.
+> - **Choose between .pbip and .pbix formats for models and reports**: Typically, the .pbip format is more beneficial for source control, but self-service users can find .pbix files easier to use.
+> - **Separate semantic model and report development**: Version control is most effective when you manage changes for different item types, separately. [Separating model and report development](report-separate-from-model.md) is considered a good practice.
+> - **Decide how many workspaces that you need**: Using separate environments is critical for the success of content lifecycle management. Ensure that you've clarified how many workspaces you need and conduct appropriate [workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md).
+> - **Decide how you'll implement version control**: Decide between a simpler approach by using SharePoint or OneDrive for Business, or by using Azure DevOps to facilitate source control.
+> - **Set up your remote repository**: Create a structured space in the OneDrive folder or Git Repo where you'll store content to track and manage changes.
+> - **If you're using source control, set up .gitignore and .gitattributes files**: Ensure that you set up your repository so that you're only tracking meaningful changes.
+> - **If you're using source control, define branching and merge strategies**: Ensure that you define clear processes for how you'll set up and use source control to best support development. Avoid overcomplicating your process. Instead, try to complement the current way of working in your development teams.
 
 ## Related content
 

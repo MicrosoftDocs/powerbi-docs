@@ -6,8 +6,8 @@ ms.service: powerbi
 ms.subservice: report-builder
 
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Export a Power BI paginated report to Microsoft Excel (Power BI Report Builder)

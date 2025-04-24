@@ -6,8 +6,8 @@ ms.service: powerbi
 ms.subservice: report-builder
 
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ---
 # Customize the parameters pane in a paginated report (Power BI Report Builder)
 

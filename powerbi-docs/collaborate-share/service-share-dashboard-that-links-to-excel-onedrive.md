@@ -1,8 +1,8 @@
 ---
 title: Share dashboard linked to an Excel file in OneDrive - Power BI
 description: Learn how to share dashboards connected to an Excel workbook on OneDrive for work or school, with tiles pinned from that workbook.
-author: ajburnle
-ms.author: ajburnle
+author: kfollis
+ms.author: kfollis
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

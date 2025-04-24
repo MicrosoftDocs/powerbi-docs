@@ -1,10 +1,10 @@
 ---
 title: Glossary for Power BI business users
 description: Learn Power BI terminology with this glossary, which provides definitions to help you understand and navigate through the library of articles.
-author: mihart
-ms.author: mihart
+author: julcsc
+ms.author: juliacawthra
 services: power-bi
-ms.reviewer: mihart
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 11/13/2024
 
 # Glossary for business users of the Power BI service
 
-The Power BI service can introduce terminology that is unfamiliar or confusing. The glossary is a great place to look up terminology&mdash;you might want to bookmark it. Another great resource for learning about the building blocks that make up Power BI service is [Basic concepts for the Power BI service business user](end-user-basic-concepts.md). The article gives a high level overview of the Power BI *pieces* and how they're connected.
+The Power BI service can introduce terminology that is unfamiliar or confusing. The glossary is a great place to look up terminology&mdash;you might want to bookmark it. Another great resource for learning about the building blocks that make up Power BI service is [Basics of the Power BI service](../fundamentals/service-basic-concepts.md). The article gives a high level overview of the Power BI *pieces* and how they're connected.
 
 This glossary is a community effort. If you don't see a word here, ask us to add it (you can use the documentation feedback button at the bottom of this article).
 
@@ -147,13 +147,17 @@ Visuals that the community and Microsoft create. They can be downloaded from the
 
 ### dashboard
 
-In the Power BI service, a dashboard is a single page, often called a canvas that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can be created and viewed only in the Power BI service, not in Power BI Desktop. For more information, see [Basic concepts for the Power BI service business user](end-user-basic-concepts.md).
+In the Power BI service, a dashboard is a single page, often called a canvas that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can be created and viewed only in the Power BI service, not in Power BI Desktop. For more information, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md).
 
 ### data connector
 
 See *connectors*.
 
-### data model, Excel data model
+**data intersections**
+
+Data intersections are the common points where different sets of data overlap.  For example, if you have a list of customers who bought laptops and another list of customers who bought tablets, the intersection would be the customers who bought both laptops and tablets.
+
+**data model, Excel data model**
 
 In Power BI content, a data model refers to a map of data structures in a table format. The data model shows the relationships that are being used to build databases. Report designers, administrators, and developers create and work with data models to create Power BI content.
 
@@ -558,7 +562,7 @@ A time series is a way of displaying time as successive data points. Those data 
 
 ## V
 
-**value, values
+### value, values
 
 Numerical data to be visualized.
 
@@ -600,4 +604,4 @@ The axis along the side, the vertical axis, of a line graph.
 
 ## Related content
 
-- [Basic concepts for Power BI service consumer](end-user-basic-concepts.md)
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)

@@ -1,5 +1,5 @@
 ---
-title: Automatically install Power BI apps when embedding content for your organization
+title: Automatically install Power BI apps for your organization
 description: Learn how to set up automatic app installation for Power BI apps when embedding content from apps for your organization.
 author: mberdugo
 ms.author: monaberdugo
@@ -7,7 +7,8 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom:
-ms.date: 06/03/2024
+ms.date: 01/07/2025
+# customer intent: As a developer, I want to learn how to set up automatic app installation for Power BI apps when embedding content from apps for my organization.
 ---
 
 # Automatically install Power BI apps when embedding content for your organization
@@ -22,11 +23,14 @@ If you have access to an app that isn't installed, and try to embed app content,
 
 ## Embedding for Power BI users (User owns data)
 
-To allow the automatic installation of apps for your users, add the *Create APIs* permission to your application when you're [registering your application](register-app.md#step-2---register-your-application). If you've already registered your app, add the Create APIs permission by [changing your application's permissions](/power-bi/developer/embedded/change-permissions).
+To allow the automatic installation of apps for your users:
 
-:::image type="content" source="media/embed-auto-install-app/register-app-create-content.png" alt-text="Screenshot of the Power BI embedding setup tool, which shows the selected Create APIs option.":::
+1. Add the *Create APIs* permission to your application when you're [registering your application](register-app.md). If you've already registered your app, add the Create APIs permission by [changing your application's permissions](/power-bi/developer/embedded/change-permissions).
 
-Provide the app ID in the embed URL. To provide the app ID, the app creator must install the app and then use one of the supported [Power BI REST API](/rest/api/power-bi/) calls, such as [Get Reports](/rest/api/power-bi/reports/getreports) or [Get Dashboards](/rest/api/power-bi/dashboards/getdashboards). The app creator must take the embed URL from the REST API response. The app ID appears in the URL if the content is from an app. Use the embed URL to embed content.
+    :::image type="content" source="media/embed-auto-install-app/register-app-create-content.png" alt-text="Screenshot of the Power BI embedding setup tool, which shows the selected Create APIs option.":::
+
+1. Provide the app ID in the embed URL. To provide the app ID, the app creator must install the app and then use one of the supported [Power BI REST API](/rest/api/power-bi/) calls, such as [Get Reports](/rest/api/power-bi/reports/getreports) or [Get Dashboards](/rest/api/power-bi/dashboards/getdashboards). The app creator must take the embed URL from the REST API response. The app ID appears in the URL if the content is from an app.
+1. Use the embed URL to embed content.
 
 ## Secure embedding
 
@@ -37,3 +41,8 @@ To use automatic application installation, the app creator must install the app.
 * You can only embed reports and dashboards in this scenario.
 
 * This feature is currently not supported for app-owns data or SharePoint embedding scenarios.
+
+## Related content
+
+* [Register a Power BI Embedded app](register-app.md)
+* [Embed content for your organization](embed-sample-for-your-organization.md)

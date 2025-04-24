@@ -1,205 +1,226 @@
 ---
-title: "Explore your data in the Power BI service (preview)"
+title: "Use Explore (preview) in the Power BI service"
 description: In this article, you learn how to explore your data in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
-ms.reviewer: maggies
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: vipinhei
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/04/2024
+ms.date: 04/15/2025
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
 
-# Explore your data in the Power BI service (preview)
+# Use Explore (preview) in the Power BI service
 
-In Power BI, sometimes you just want to do some ad hoc exploration of your data. Maybe you're an analyst who just got access to a new semantic model or data source, and you want to spend time learning about it before you build a report off it. Or maybe you're a business user who needs to answer a specific question about the data to include in a PowerPoint presentation, but the report you’re using doesn’t answer your exact question. Creating a new report from scratch in these cases is a big hurdle, when you just need a quick answer or screenshot for a slide deck.
+> [!NOTE]
+> The Explore feature in the Power BI service is currently in preview.
+
+Explore in the Power BI service is a new experience that allows you to explore your data in a focused way. It's designed to be easy to use, so you can quickly get the answers you need without having to be a Power BI expert. You can use Explore on an existing visual to dig into the underlying data, or you can start with a blank canvas and pull in the data you want to explore.
 
 :::image type="content" source="media/explore-data-service/explore-matrix-plus-visual.png" alt-text="Screenshot showing exploring a matrix and a visual." lightbox="media/explore-data-service/explore-matrix-plus-visual.png":::
 
-Introducing the public preview of the new Explore feature, where you have a lightweight and focused experience to explore your data. Similar to exporting your data and building a PivotTable in Excel, now directly within Power BI you can quickly launch Explore to begin creating a pair of a matrix and a visual to get the answers you need without all the extra complexity of reports.  
+A few scenarios when you could benefit from Explore include:
 
-## Get started 
+- You want to see the underlying data behind a visual in a report or a Copilot-generated visual.
+- You want to explore a new semantic model (dataset) to learn about it.
+- You want to create a new visual or matrix from scratch, but you don't want to create a report.
+- You want to explore a subset of data from a datamart query result.
+- You want to explore a semantic model that you don't have permission to edit, but you want to create a new visual or matrix from it.
 
-1. [Create your exploration](#1-create-your-exploration) to find data you’d like to explore.
+Follow the steps in this article to learn how to use Explore to build a matrix or visual, customize your Exploration, and then save it to a workspace or as a report to share with others.
 
-1. [Have Copilot write an overview of the data](#2-create-an-overview-of-the-data-with-copilot)
-
-1. [Begin exploring by building your matrix or PivotTable](#3-begin-exploring-by-building-your-matrix-or-visual) by adding fields from the data pane.
-
-    > [!NOTE]
-    > A matrix is like a [PivotTable in Excel](https://support.microsoft.com/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576).
-
-1. [Add filters if you need them](#4-add-filters-if-you-need-them). 
-
-1. [Save and share your exploration](#5-save-and-share-your-exploration). 
-
-## 1. Create your exploration
-
-## From an artifact in a list
-
-:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting the More options menu from a workspace list.":::
-
-For a given dataset, report, or datamart, begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view. 
-
-### From the New button in a workspace
-
-Select the **New** button at the top of a workspace, then select **Exploration**.
-
-:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting Explore this data.":::
-
-There are a few ways to create your exploration:
-
-You can select the **New** button at the top of a workspace, then select **Exploration**, as shown in the following screenshot.
-
-:::image type="content" source="media/explore-data-service/more-options-explore-data-b.png" alt-text="Screenshot showing selecting Explore.":::
-
-Or for a given dataset, report, or datamart, you can begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view, as shown in the following screenshot: 
-
-:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting New report item.":::
-
-You also see this option in the Data hub details page as part of the **Discover business insights** action card: 
-
-:::image type="content" source="media/explore-data-service/discover-business-insights.png" alt-text="Screenshot showing Explore this data to discover business insights.":::
-
-### In a report
-
-Or you may want to explore the underlying data behind a report. You can begin exploration from the report **More options (…)** menu in a workspace list, or the **Explore this data** option on the report menu bar.
-
-:::image type="content" source="media/explore-data-service/explore-data-report-menu-bar.png" alt-text="Screenshot showing Explore this data option on the menu bar.":::
-
-### In a datamart
-
-What if while working with a datamart, you’d like to visualize and explore the subset of the data produced from an ad-hoc query you just ran. You have the option to use the new **Explore** feature to dig into your query results as well. 
-
-:::image type="content" source="media/explore-data-service/sql-query-explore-data.png" alt-text="Screenshot showing Explore this data for a SQL query.":::
-
-## 2. Create an overview of the data with Copilot
-
-1. Select **Data overview** > **Create with Copilot**.
-
-    :::image type="content" source="media/explore-data-service/create-data-overview-copilot.png" alt-text="Screenshot showing select Create with Copilot.":::
-
-    Copilot creates a paragraph describing the data.
-
-    :::image type="content" source="media/explore-data-service/copilot-paragraph-overview.png" alt-text="Screenshot showing the paragraph Copilot created.":::
-
-## 3. Begin exploring by building your matrix or visual 
-
-Regardless of where you start from, when you launch the explore experience you land in the new focused view. Your data appears in the data pane, and you can edit, drag and drop, or select fields to start building a matrix or visual. 
+## Step 1. Navigate to the Explore experience
 
 > [!NOTE]
-> Some users may see the data pane on the left as we experiment with placement to optimize the experience.  
+> You can explore data from any supported Fabric artifact where you have **View** permission on the data, unless restricted by your tenant admin. If restricted, you can only use artifacts where you have **Build** permission. *Exception: ***Build*** permission is always required for Lake Houses.*
 
-:::image type="content" source="media/explore-data-service/begin-exploration.png" alt-text="Screenshot showing the Explore window opened." lightbox="media/explore-data-service/begin-exploration.png":::
+You can start your experience with Explore from various entry points:
 
-From a dataset, the Explore experience starts with a matrix. That's often a first step, to explore by building out a matrix or PivotTable, to better understand what’s available or get down to the right subset of data before visualizing. On the other hand, if you're coming from a datamart, you’re coming from a grid view of the data already, so you start off with a visual instead.  
+- **Visual in a report**:
+   1. Select **...** for more options.
+   1. Select **Explore this data**.
 
-You can expand the visual representation of the matrix on the lower part of the dialog. This visual maps to the same data as what you show in the matrix. As you modify the fields you're  exploring, it automatically updates and selects the best visual for that set of fields.  
+   :::image type="content" source="media/explore-data-service/from-visual-in-report.png" alt-text="Screenshot showing exploring data from a visual in a report." lightbox="media/explore-data-service/from-visual-in-report.png":::
 
-:::image type="content" source="media/explore-data-service/explore-matrix-plus-visual.png" alt-text="Screenshot showing exploring a matrix and a visual with the same data." lightbox="media/explore-data-service/explore-matrix-plus-visual.png" :::
+- **Visual generated by Copilot**:
+   1. Select the **Explore this visual button**.
 
-If you prefer, you can swap the layout to show the visual and matrix side by side instead of one on top of the other by using the layout buttons in the top right to adjust the orientation.  
+   :::image type="content" source="media/explore-data-service/from-visual-by-copilot.png" alt-text="Screenshot showing exploring data from a visual generated by Copilot." lightbox="media/explore-data-service/from-visual-by-copilot.png":::
 
-:::image type="content" source="media/explore-data-service/change-layout-view.png" alt-text="Screenshot showing switching the layout to side by side." lightbox="media/explore-data-service/change-layout-view.png":::
+- **Artifact**:
 
-To adjust which fields are located on the rows and columns, use the field wells in the **Rearrange data** section of the data pane. You only see the field wells of one visual, either the chart or the matrix. To see the other field wells, select the visual you want to edit. You know which one you’re editing by the black outline. 
+  - **From a list**:
+     1. Select **...** for more options.
+     1. Then select **Explore this data**.
 
-:::image type="content" source="media/explore-data-service/rearrange-data-visual-black-outline.png" alt-text="Screenshot showing modifying the section with the black border." lightbox="media/explore-data-service/rearrange-data-visual-black-outline.png":::
+   :::image type="content" source="media/explore-data-service/from-artifact-in-list.png" alt-text="Screenshot showing exploring data from an artifact in a list." lightbox="media/explore-data-service/from-artifact-in-list.png":::
 
-Just as when you were editing the matrix and the visual updated automatically, as you edit the visual, your matrix updates to reflect the same data. This update applies not only to the fields used, but also interactions like sorting and drilling. Assuming the visual can accurately reflect the sort or drill state, it updates appropriately.  
+  - **From a report**:
+     1. Select **Explore this data**.
 
-For example, these visuals have a date hierarchy and you want to drill down to quarters. 
+    :::image type="content" source="media/explore-data-service/explore-data-report-menu-bar.png" alt-text="Screenshot showing Explore this data option on the menu bar.":::
+
+  - **From a datamart**:
+     1. Select **Explore this data**.
+
+    :::image type="content" source="media/explore-data-service/sql-query-explore-data.png" alt-text="Screenshot showing Explore this data for a SQL query.":::
+
+- **Workspace**:
+   1. Select the **New** button at the top of a workspace.
+   1. Then select **Exploration**.
+
+   :::image type="content" source="media/explore-data-service/more-options-explore-data-b.png" alt-text="Screenshot showing the New button expanding to show the Exploration option.":::
+
+- **Data hub**:
+   1. From the **Discover business insights** action card on the **Details** page, select the **Explore this data** button.
+
+   :::image type="content" source="media/explore-data-service/discover-business-insights.png" alt-text="Screenshot showing Explore this data to discover business insights.":::
+
+## Step 2. Build your matrix or visual with Explore (preview)
+
+Regardless of your starting point in Step 1, when you launch the Explore experience, you land in the new focused view. Your data appears in the data pane, and you can edit, drag and drop, or select fields to start building a matrix or visual.
+
+### Matrix and visual fields
+
+*If you start from a visual*, you see that visual on this page. Get a matrix of the underlying data by expanding the **Matrix** section.
+
+:::image type="content" source="media/explore-data-service/build-matrix-or-visual.png" alt-text="Screenshot showing exploring data by building a matrix or visual." lightbox="media/explore-data-service/build-matrix-or-visual.png":::
+
+*If you didn't start from a visual*, you see a blank canvas with matrix and visual fields. You can drag and drop fields from the data pane to the matrix or visual, or select other fields to add.
+
+:::image type="content" source="media/explore-data-service/begin-Exploration.png" alt-text="Screenshot showing the Explore window opened." lightbox="media/explore-data-service/begin-Exploration.png":::  
+
+The matrix and visual are linked. So as you add fields, sort, and drill into to one, the other one is updated automatically, as long as the visual can accurately reflect the sort or drill state.
+
+For example, you might have a visual with a date hierarchy and you want to drill down to quarters. When you drill down on the visual, the matrix updates accordingly.
 
 :::image type="content" source="media/explore-data-service/drill-down-next-level.png" alt-text="Screenshot showing drilling down to the next level in the chart." lightbox="media/explore-data-service/drill-down-next-level.png":::
 
-When you do so on the visual, the matrix also updates accordingly.
+> [!NOTE]
+> Some interactions between the matrix and visual aren't currently supported. For example, if you drill down on a visual, the matrix might not update to reflect the drill state. The matrix and visual are linked, but if you notice that your visual doesn't reflect the drill state you applied to your matrix, it means that the interaction isn't currently supported.
 
+#### Visual types
+
+You can also change the type of visual, like stacked bar chart, pie chart, or funnel, by using the options in the visual type gallery. If you don't choose a visual type, Explore autoselects the type that best suits your selected data. To turn off this autoselection, deselect the **lightning bolt** icon.
+
+:::image type="content" source="media/explore-data-service/visual-types.png" alt-text="Screenshot showing the menu of choices to change visual types." lightbox="media/explore-data-service/visual-types.png":::
+
+### Data pane
+
+Use the **Choose data** section to add or remove data from your Exploration.
+
+Use the **Rearrange data** section of the data pane to make adjustments. Drag and drop fields from the **Choose data** section to the **Rows**, **Columns**, and **Values** wells, or use the **+ Add data** button. You only see the field wells for the outlined selection (that is, the matrix or the visual). Select the other side to see its field wells.
+
+:::image type="content" source="media/explore-data-service/rearrange-data-visual-black-outline.png" alt-text="Screenshot showing modifying the section with the black border." lightbox="media/explore-data-service/rearrange-data-visual-black-outline.png":::
 
 > [!NOTE]
-> Certain matrix configurations can't currently be visualized in other chart types. Depending on the situation, a visual may not be rendered or the sort and drill state may not apply. For example, if you expand one specific row in the matrix, that won't apply in the visual, because that interaction within other visual types isn't currently supported.  
+> Some users might see the data pane on the left as we experiment with placement to optimize the experience.
 
-## 4. Add filters if you need them
+### Layout options
 
-As you build out your exploration, you can also take advantage of a new filtering experience. Select the **Add filter** button on the top left to quickly add filters on the fields already in your visual or pick from any fields in your dataset in the **All data** section.  
+Switch between a horizontal or vertical orientation by using the **Split view horizontally** and **Split view vertically** buttons along the top.  
+
+:::image type="content" source="media/explore-data-service/change-layout-view.png" alt-text="Screenshot showing switching the layout to side by side." lightbox="media/explore-data-service/change-layout-view.png":::
+
+## Step 3. Apply filters to your Exploration
+
+As you build out your Exploration, you can also filter your data. Select the **Add filter** button on the top left to quickly add filters on the fields already in your visual or pick from any fields in your semantic model in the **All data** section.  
 
 :::image type="content" source="media/explore-data-service/add-new-filter-trip-purpose-1.png" alt-text="Screenshot showing adding a new filter for trip purpose." lightbox="media/explore-data-service/add-new-filter-trip-purpose-1.png":::
 
-In this exploration experience, the filters are added as pills at the top of view, so you can easily see what the current filter state is and quickly modify it on the fly.  
+In this Exploration experience, the filters are added as pills at the top of view, so you can clearly see what the current filter state is and modify it.  
 
 :::image type="content" source="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png" alt-text="Screenshot showing applying the trip purpose filter." lightbox="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png":::
 
-## 5. Save and share your exploration 
+## Step 4. Save your Exploration
 
-### Save your exploration
+Save your Exploration to a workspace or as a report.
 
-To save and share your exploration, select the **Save** button in the upper-left corner. In the dialog, you can name the exploration, pick a workspace to save it to, and add a sensitivity label, if applicable.  This saves your current canvas layout (horizontal or vertical) of the exploration as well.
+- **Save to a workspace**:
+   1. Select the **Save** button in the upper-left corner. A dialog box appears.
+   1. Name the Exploration, pick a workspace to save it to, and add a sensitivity label, if applicable. This also saves your current canvas layout (horizontal or vertical) of the Exploration.
 
-> [!NOTE]
-> You can only save explorations to workspaces in a Premium capacity at this time. 
+   > [!NOTE]
+   > You can only save Explorations to workspaces in a Premium capacity at this time.
 
-:::image type="content" source="media/explore-data-service/save-exploration.png" alt-text="Screenshot showing naming the exploration and adding it to a workspace." lightbox="media/explore-data-service/save-exploration.png":::
+   :::image type="content" source="media/explore-data-service/save-Exploration.png" alt-text="Screenshot showing naming the Exploration and adding it to a workspace." lightbox="media/explore-data-service/save-Exploration.png":::
 
-### Share your exploration
+- **Save as a report**:
+   1. Select **Save**.
+   1. Select **Save as report**. This saves your Exploration as a one-page report matching the layout on the screen.
 
-Now you’re ready to share your exploration with others. Select the **Share** button in the upper-right corner. Continue to add your recipients' email addresses and share. You should be immediately prompted to share the underlying dataset so the recipients can view the contents of your exploration. If you're not prompted, ensure that you [share the dataset](../connect-data/service-datasets-share.md) with read permissions.
+   > [!NOTE]
+   > You need **Build** permission on the underlying semantic model to save as a report.
 
-If you'd like to change your audience, select **People in your organization can view**.
+## Step 5. Share your Exploration with others
+
+If you want to share your Exploration with others, follow these steps:
+
+1. Select the **Share** button in the upper-right corner.
+1. Select the people who can view your Exploration, such as **People in your organization can view**, **People with existing access**, or **Specific people**.
+1. Choose more permissions such as **share** or **edit**.
+1. Add your recipients' email addresses and an optional message.
+1. Select **Send**. You can send via email or Teams, or select **Copy link** to share it on your own.
+
+> [!IMPORTANT]
+> You should be immediately prompted to share the underlying semantic model so the recipients can view the contents of your Exploration. If you're not prompted, you can manually [share the semantic model](../connect-data/service-datasets-share.md) with read permissions. For reports, sharing the underlying semantic model is done automatically.
 
 :::image type="content" source="media/explore-data-service/create-send-link.png" alt-text="Screenshot showing selecting People in your organization can view.":::
 
-Choose your audience and their permissions, and select **Apply**. Provide email addresses and a message, then select **Send**.
+## Permissions, requirements, and limitations
 
-Or select **Copy link** and send it by another means.
+To fully benefit from Explore in the Power BI service, be aware of the following permissions, requirements, and limitations.
 
+### Permissions and requirements
 
+Explore requires the following permissions and considerations:
 
-> [!NOTE]
-> Usually for reports, sharing the underlying dataset is done behind the scenes.
+- **Accessing Explore (preview)**:
+  - By default, people with **View** permissions on the data can access Explore (preview).
+  - Admins can limit the experience to people with **Build** permissions if they choose by disabling the **Users with view permission can launch Explore** setting in the admin portal.
+  - Exception: For Lake Houses, **Build** permissions are always required.
 
-You may want to save your exploration as a report instead. You can do so by choosing **Save**, then **Save as report**. This saves your exploration as a single page report matching the layout when saved. For example, if you're viewing both the matrix and the visual, you get one page with a matrix on the top half and the visual on the bottom half of the page.  
+    :::image type="content" source="media/explore-data-service/disable-launch-explore.png" alt-text="Screenshot showing how admins can limit to people with build permissions in the admin portal." lightbox="media/explore-data-service/disable-launch-explore.png":::
 
-You can share this new report as with other reports by using the **Share** button.
+  - Semantic model owners can also limit exploration of their models to people with **Build** permissions on an artifact-by-artifact basis. They can do this by disabling the **Allow users with view permissions** setting in the **Explore** section of semantic model settings.
 
-## Considerations and limitations
+    :::image type="content" source="media/explore-data-service/disable-users-view-permissions.png" alt-text="Screenshot showing how admins can limit to people with build permissions in the Explorations section." lightbox="media/explore-data-service/disable-users-view-permissions.png":::
 
-### To create
+- **Saving an Exploration to a workspace**:
+  - The destination workspace must be in a Premium capacity.
+  - Changing a sensitivity label on a semantic model doesn't currently propagate down to the Exploration that you create for it.
+  - If you save to **My workspace**, you might need to refresh your page to see the newly saved Exploration artifact.
+- **Saving an Exploration as a report**:
+  - You need **Build** permissions on the underlying semantic model.
+- **Sharing an Exploration**:
+  - You need a Power BI Pro or Premium Per User (PPU) license.
+  - You need to grant **View** permissions to the underlying semantic model so your recipients can view the Exploration.
+    - If you skip this step, your recipients have to request permissions to view the Exploration.
+  - Explorations aren't currently shown in lineage view as related to the semantic model.
 
-- Exploration authors need build permissions on the dataset to create an exploration and open the Explore dialog.
-- When you save, the destination workspace must be in a Premium capacity. 
-- Changing a sensitivity label on a dataset doesn't currently propagate down to the exploration that you create for it.
-- There's currently a known issue when you attempt to save an exploration from the Datamart SQL editor entry point.
-- Explore isn't currently supported for streaming datasets. 
-- If you save to **My workspace**, you may need to refresh your page to see the newly saved exploration artifact.
+### Limitations
 
-### To share
+Explore has some limitations. Here are some important things to keep in mind.
 
-- Exploration users need a Power BI Pro or PPU license to share.
-- When you share your exploration, you also need to grant build permissions to the underlying dataset so your recipients can view the exploration. If you skip this second step, your recipients can't see the exploration, and have to request permissions.
-- Explorations aren't currently shown in lineage view as related to the dataset.
-
-### To open a saved exploration
-
-- Currently, you can't open an exploration on a mobile device in the Power BI mobile app.
-
-### Entry points
-
-Explore isn't currently available from datasets and reports on the Power BI service Home or Create pages.
-
-### Supported visuals 
-
-All native visuals are supported with the exception of these visuals: 
-
-- Matrix
-- Slicers
-- Q&A
-- Smart narratives
-- Metrics
-- Paginated reports
-- Power Apps
-- Power Automate
+- It's not supported in the Power BI mobile app
+- There's no entry point from artifacts in the list view of semantic models and reports on the Power BI service Home
+- Custom visuals aren't supported
+- The following native visuals aren't supported:
+  - Matrix
+  - Slicers
+  - Q&A
+  - Smart narratives
+  - Metrics
+  - Paginated reports
+  - Power Apps
+  - Power Automate
+- It doesn't currently support streaming datasets
+- There's a known issue when you attempt to save an Exploration from the Datamart SQL editor entry point
 
 ## Related content
 
 - [Personalize visuals in a report](end-user-personalize-visuals.md)
+- [Organizational licenses and subscriptions for Fabric and Power BI](../enterprise/service-admin-licensing-organization.md)
+- [Power BI Premium Per User FAQ](../enterprise/service-premium-per-user-faq.yml)

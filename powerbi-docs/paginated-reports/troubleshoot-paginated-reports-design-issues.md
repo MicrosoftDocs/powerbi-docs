@@ -1,8 +1,8 @@
 ---
 title: "Troubleshoot report design issues with paginated reports"
 description: In this article, diagnose and fix report design issues that may occur when you create the report layout in Power BI Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder

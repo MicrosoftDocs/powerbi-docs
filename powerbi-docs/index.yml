@@ -13,8 +13,9 @@ metadata:
   ms.subservice: powerbi-service
   ms.topic: hub-page # Required
   ms.collection: collection
-  author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
-  ms.author: maggies #Required; microsoft alias of author; optional team alias.
+  author: kfollis #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kfollis #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/25/2025
   no-loc: [Copilot]
 
 # highlightedContent section (optional)

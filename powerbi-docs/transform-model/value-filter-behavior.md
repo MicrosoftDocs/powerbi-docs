@@ -67,6 +67,7 @@ Three options are available:
 - **Coalesced** - This forces the value filter behavior to be enabled for the semantic model and results in combining the filters on the same table into one. The number of products for all years in our example continues to return to 5.
 
 The following table shows the effect of this setting to our example:
+
 | Value filter behavior setting | Filters applied in the example | Result of example measure |
 | --- | --- | --- |
 |Automatic|Year = 2024,<br/>Color = Blue|5|

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 05/12/2022
+ms.date: 12/30/2024
 ---
 
 # Power BI usage scenarios: Self-service data preparation
@@ -35,7 +35,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 The scenario diagram depicts the following user actions, tools, and features:
 
-| **Item** | **Description** |
+| Item | Description |
 | --- | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The dataflow creator develops a collection of tables within a Power BI [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). For a dataflow that's intended for reuse, it's common (but not required) for the creator to belong to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The dataflow connects to data from one or more data sources. |

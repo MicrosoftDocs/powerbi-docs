@@ -1,8 +1,8 @@
 ---
 title: Create a dynamic subscription for a Power BI report 
 description: Learn how to create per-recipient report subscriptions based on filters that you select.
-author: mihart
-ms.author: mihart
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: mibruhje
 featuredvideoid: 
 ms.service: powerbi
@@ -126,6 +126,7 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 - This feature supports single value filters and doesn't support filters with multiple value options.
 - If the names of columns or tables are changed in the semantic model while the subscription is processing, dynamic filters might not be applied properly.
 - Resolutions below 400px are not supported for Dynamic per recipient subscriptions.
+- SSAS Live Connection is not supported
 
 
 ## Related content

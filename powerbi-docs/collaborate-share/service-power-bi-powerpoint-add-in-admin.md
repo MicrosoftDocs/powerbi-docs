@@ -14,7 +14,11 @@ ms.date: 02/25/2024
 
 # Power BI add-in for PowerPoint - Admin info
 
-The Power BI add-in for PowerPoint enables users to add live, interactive data from Power BI to PowerPoint presentations. Currently, users can add individual report pages and individual visuals. When a report page is added, the add-in doesn't bring in the left hand navigation pane, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
+The Power BI add-in for PowerPoint enables users to add live, interactive data from Power BI to PowerPoint presentations. This article targets Fabric administrators and presents information they need to know to manage the add-in in their tenant.
+
+* If you're looking for information about how to add live Power BI data to a PowerPoint presentation using the add-in, see [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md).
+
+* If you're looking for information about working with embedded Power BI data in your presentation, see [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md).
 
 ## Requirements
 
@@ -70,6 +74,7 @@ For a summary of the ways the add-in differs when deployed in a national/regiona
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [The Power BI add-in for PowerPoint in national/regional clouds](./service-power-bi-powerpoint-add-in-national-clouds.md)
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
 * [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

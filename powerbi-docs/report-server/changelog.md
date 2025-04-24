@@ -3,11 +3,11 @@ title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 author: jtarquino
 ms.author: jaimeta
-ms.reviewer: maggies
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2024
+ms.date: 01/15/2025
 ---
 
 # Change log for Power BI Report Server
@@ -16,13 +16,42 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+See [Download Power BI Report Server](download-powerbi-report-server.md) for more information about downloading and installing Power BI Report Server.
+
+## January 2025
+
+### Power BI Report Server
+- *Version: 1.22.9153.7886 (build 15.0.1117.98), Released: January 22, 2025*
+  - Bug fixes
+    - Fixed issue with new property 'EnableCustomURLInKPI' not getting configured correctly during upgrade. In the previous build (15.0.1117.95), Publisher and Content Manager roles would not have the new property set to a value and would get a permission error when accessing the /reports endpoint.
+
+- *Version: 1.22.9137.4867 (build 15.0.1117.95), Released: January 13, 2025*
+  - Features
+    - Custom Visual API shipped with release - version v5.10.0
+    - Updated underlying version of angular.
+    - Add new advanced server property EnableRefererValidation and set default value to false.
+    - Add new advanced server property 'EnableCustomURLInKPI' with default value 'true' to control if KPIs can link to custom URLs.
+    - Added support for PBIX data limit feature.
+  - Bug fixes
+    - Fixed issue with RSExecRole not getting correct permissions when restoring a catalog.
+    - Fixed issue with logging errors for snapshots getting cleaned up.
+    - Fixed issue where we logged error about perf counters which were removed previously.
+    - Fixed issue with performance of data driven email subscriptions.
+    - Fixed issue related to changing service account password in the RSConfig tool.
+    - Fixed issue related to viewing PBIX reports when the underlying model had been unloaded.
+    - Fixed issue related to accessibility and screen readers.
+      
+### Power BI Desktop (optimized for Power BI Report Server)
+- *Version: 2.138.2255.0 (January 2025), Released: January 13, 2025*
+     - Support for January 2025 Power BI Report Server.
+
 ## September 2024
 
 ### Power BI Report Server
 - *Version: 1.21.9032.4573 (build 15.0.1116.121), Released: September 26, 2024*
   - Features
     - Custom Visual API shipped with release - version v5.10.0
-    - Changed default SupportedHyperlinkSchemes advanced server property value to disallow javascript
+    - Changed default SupportedHyperlinkSchemes advanced server property value to disallow JavaScript
     - Changed default TrustedFileFormat advanced server property value to disallow pdf content viewing
   - Bug fixes
     - Fixed issue with RsPortal log getting filled with 401 errors
@@ -32,6 +61,10 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     - Fixed issue with ribbon charts in Power BI Reports
 
 ### Power BI Desktop (optimized for Power BI Report Server)
+
+- *Version: 2.136.3279.0 (September 2024), Released: January 7, 2025*
+     - Fix for WebView2 issue.
+
 - *Version: 2.136.1202.0 (September 2024), Released: September 26, 2024*
      - Support for September 2024 Power BI Report Server.
 
@@ -56,11 +89,14 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 - *Version: 1.20.8910.25479 (build 15.0.1115.165), Released: May 28, 2024*
   - Features
     - Removed AngularJS remnants
-    - A recent security change requires a privilaged user to apply the "PBI_SQL_TRUSTED_SERVERS" environment variable on their Power BI Report Server machine for certain data types. Read more details in the article, [SQL Server certificate isn't trusted on the client](/power-query/connectors/sql-server#sql-server-certificate-isnt-trusted-on-the-client-power-bi-desktop-or-on-premises-data-gateway).
+    - A recent security change requires a privileged user to apply the "PBI_SQL_TRUSTED_SERVERS" environment variable on their Power BI Report Server machine for certain data types. Read more details in the article, [SQL Server certificate isn't trusted on the client](/power-query/connectors/sql-server#sql-server-certificate-isnt-trusted-on-the-client-power-bi-desktop-or-on-premises-data-gateway).
     - Custom Visual API shipped with release - version v5.8.0
     - Various bug fixes
 
 ### Power BI Desktop (optimized for Power BI Report Server)
+
+- *Version: 2.129.6228.0 (May 2024), Released: January 7, 2025*
+     - Fix for WebView2 issue.
 
 - *Version: 2.129.2203.0 (May 2024), Released: July 12, 2024*
    - Bug fixes
@@ -233,7 +269,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             -  Report Parts support deprecated
         - [Discontinued features](/sql/reporting-services/discontinued-functionality-to-sql-server-reporting-services-in-sql-server)
             -  Mobile Reports functionality discontinued
-            -  Pin to PowerBI functionality discontinued
+            -  Pin to Power BI functionality discontinued
             
 - **Power BI Desktop (optimized for Power BI Report Server)**
 
@@ -504,7 +540,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     - *Version: 1.6.7236.4246 (Build 15.0.1102.646), Released: October 25, 2019*
         - Security updates
         - Bug fixes
-            - Fix for .net framework 4.7 not installed.
+            - Fix for .NET framework 4.7 not installed.
 	        - Fix for paginated reports for Teradata with multivalue parameters with error 110083.
 	        - Fix for URLRoot value not working if there are multiple web service URL bindings and one of them is https://+80/reportserver.
 		  - Fix for paginated reports multivalue parameter values showing up outside the report area.

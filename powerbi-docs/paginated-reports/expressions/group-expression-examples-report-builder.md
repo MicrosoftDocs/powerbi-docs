@@ -1,8 +1,8 @@
 ---
 title: "Group expression examples in paginated reports"
 description: Find out how to group paginated report data by a single field or create more complex expressions that identify the data on which to group in Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.date: 06/16/2023
 ms.service: powerbi

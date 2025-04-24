@@ -5,8 +5,8 @@ ms.date: 02/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Troubleshoot reports: Map reports in a paginated report (Power BI Report Builder)

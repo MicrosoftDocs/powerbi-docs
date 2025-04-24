@@ -1,9 +1,9 @@
 ---
 title: Export entire reports to PowerPoint
 description: Learn how to export a Power BI report to PowerPoint.
-author: ajburnle
-ms.author: ajburnle
-ms.reviewer: mihart
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
@@ -92,17 +92,16 @@ There are a few considerations and limitations to keep in mind when you work wit
 * It's possible that your administrator disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](/fabric/admin/service-admin-portal-export-sharing#export-reports-as-powerpoint-presentations-or-pdf-documents).
 
 ### Visuals that aren't supported
-The following aren't supported for **Export to PowerPoint**. Either the **PowerPoint** export option is greyed out or isn't listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report exports but the visual renders as a gray box with an error message.
+The following aren't supported for **Export to PowerPoint**. Either the **PowerPoint** export option is greyed out or isn't listed at all on the **Export** dropdown. 
 
 - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that are [certified](../developer/visuals/power-bi-custom-visuals-certified.md)
 - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
-- [R visuals](../visuals/service-r-visuals.md)
 - [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
-- [Python visuals](../connect-data/desktop-python-visuals.md)
 - [Power Automate visuals](../create-reports/power-bi-automate-visual.md)
 - [The Paginated report visual](../visuals/paginated-report-visual.md)
 - Visio visuals
 * Visuals [displayed as a Data point table or displayed with "Show data point as a table"](../consumer/end-user-show-data.md) can't export to PowerPoint
+* R and Py visuals will not render when exported using REST APIs.
 
 
 ### Reports that can't be exported

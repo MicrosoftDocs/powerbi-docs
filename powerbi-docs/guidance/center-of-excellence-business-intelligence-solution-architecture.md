@@ -1,6 +1,6 @@
 ---
-title: BI solution architecture in the Center of Excellence
-description: Learn what to consider when designing and developing a robust BI platform.
+title: "BI solution architecture in the Center of Excellence"
+description: "Learn what to consider when designing and developing a robust BI platform."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,8 +8,9 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 03/11/2022
+ms.date: 12/30/2024
 ---
+
 # BI solution architecture in the Center of Excellence
 
 This article targets IT professionals and IT managers. You'll learn about BI solution architecture in the COE and the different technologies employed. Technologies include Azure, Power BI, and Excel. Together, they can be leveraged to deliver a scalable and data-driven cloud BI platform.
@@ -23,7 +24,7 @@ Designing a robust BI platform is somewhat like building a bridge; a bridge that
 - BI semantic models
 - Reports
 
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-business-intelligence-platform.png" alt-text="Diagram showing the BI platform architecture diagram, from data sources to data ingestion, big data, store, data warehouse, BI semantic modeling, reporting, and machine learning.":::
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-business-intelligence-platform.png" alt-text="Diagram showing the BI platform architecture diagram, from data sources to machine learning." border="false":::
 
 The platform must support specific demands. Specifically, it must scale and perform to meet the expectations of business services and data consumers. At the same time, it must be secure from the ground up. And, it must be sufficiently resilient to adapt to change—because it's a certainty that in time new data and subject areas must be brought online.
 
@@ -69,7 +70,7 @@ For heavily queried models, [Azure Load Balancer](/azure/load-balancer/load-bala
 
 ### Machine Learning models
 
-[**Machine Learning (ML) models**](/windows/ai/windows-ml/what-is-a-machine-learning-model) are built and maintained by data scientists. They're mostly developed from raw sources in the data lake.
+**[Machine Learning (ML) models](/windows/ai/windows-ml/what-is-a-machine-learning-model)** are built and maintained by data scientists. They're mostly developed from raw sources in the data lake.
 
 Trained ML models can reveal patterns within your data. In many circumstances, those patterns can be used to make predictions that can be used to enrich data. For example, purchasing behavior can be used to predict customer churn or segment customers. Prediction results can be added to enterprise models to allow analysis by customer segment.
 
@@ -83,7 +84,7 @@ Many business services, including line-of-business (LOB) applications, can rely 
 
 At Microsoft, our data warehouse is hosted on [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction) (ADLS Gen2) and Azure Synapse Analytics.
 
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse.png" alt-text="An image shows Azure Synapse Analytics connecting to Azure Data Lake Storage Gen2.":::
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse.png" alt-text="Diagram showing Azure Synapse Analytics connecting to Azure Data Lake Storage Gen2.":::
 
 - **ADLS Gen2** makes Azure Storage the foundation for building enterprise data lakes on Azure. It's designed to service multiple petabytes of information while sustaining hundreds of gigabits of throughput. And, it offers low-cost storage capacity and transactions. What's more, it supports Hadoop compatible access, which allows you to manage and access data just as you would with a Hadoop Distributed File System (HDFS). In fact, [Azure HDInsight](/azure/hdinsight/), [Azure Databricks](/azure/azure-databricks/what-is-azure-databricks), and Azure Synapse Analytics can all access data stored in ADLS Gen2. So, in a BI platform, it's a good choice to store raw source data, semi-processed or staged data, and production-ready data. We use it to store all our business data.
 - **Azure Synapse Analytics** is an analytics service that brings together enterprise data warehousing and Big Data analytics. It gives you the freedom to query data on your terms, using either serverless on-demand or provisioned resources—at scale. Synapse SQL, a component of Azure Synapse Analytics, supports complete T-SQL-based analytics, so it's ideal to host enterprise models comprising your dimension and fact tables. Tables can be efficiently loaded from ADLS Gen2 using simple [Polybase T-SQL](/sql/relational-databases/polybase/polybase-guide) queries. You then have the power of [MPP](/azure/synapse-analytics/sql-data-warehouse/massively-parallel-processing-mpp-architecture#synapse-sql-mpp-architecture-components) to run high-performance analytics.
@@ -110,7 +111,7 @@ At Microsoft, we use [Azure Data Factory](/azure/data-factory/introduction) (ADF
 
 Meanwhile, [Azure Databricks](/azure/azure-databricks/what-is-azure-databricks)—an Apache Spark-based analytics platforms optimized for the Azure cloud services platform—performs transformations specifically for data science. It also builds and executes ML models using Python notebooks. Scores from these ML models are loaded into the data warehouse to integrate predictions with enterprise applications and reports. Because Azure Databricks accesses the data lake files directly, it eliminates or minimizes the need to copy or acquire data.
 
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-ingestion.png" alt-text="An image shows Azure Data Factory sourcing data and orchestrating data pipelines with Azure Databricks over Azure Data Lake Storage Gen2.":::
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-ingestion.png" alt-text="Diagram showing Azure Data Factory sourcing data and orchestrating data pipelines with Azure Databricks over Azure Data Lake Storage Gen2." border="false":::
 
 ### Ingestion framework
 
@@ -122,7 +123,7 @@ The ingestion framework was designed to simplify the process of handling upstrea
 
 ### Orchestration framework
 
-We developed an **orchestration framework** to operationalize and orchestrate our data pipelines. It uses a data-driven design that depends on a set of configuration tables. These tables store metadata describing pipeline dependencies and how to map source data to target data structures. The investment in developing this adaptive framework has since paid for itself; there's no longer a requirement to hard-code each data movement.
+We developed an _orchestration framework_ to operationalize and orchestrate our data pipelines. The orchestration framework uses a data-driven design that depends on a set of configuration tables. These tables store metadata describing pipeline dependencies and how to map source data to target data structures. The investment in developing this adaptive framework has since paid for itself; there's no longer a requirement to hard-code each data movement.
 
 ## Data storage
 
@@ -150,7 +151,7 @@ Typically, data consumption patterns differ based on role:
 - **BI developers** and operational report authors connect directly to enterprise models. They use Power BI Desktop to create live connection analytic reports. They can also author operational-type BI reports as Power BI paginated reports, writing native SQL queries to access data from the Azure Synapse Analytics enterprise models by using T-SQL, or Power BI semantic models by using DAX or MDX.
 - **Data scientists** connect directly to data in the data lake. They use Azure Databricks and Python notebooks to develop ML models, which are often experimental and require specialty skills for production use.
 
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse-consumption.png" alt-text="An image shows consumption of Azure Synapse Analytics with Power BI, Excel, and Azure Machine Learning.":::
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse-consumption.png" alt-text="Diagram showing consumption of Azure Synapse Analytics with Power BI, Excel, and Azure Machine Learning." border="false":::
 
 ## Related content
 
@@ -158,11 +159,11 @@ For more information about this article, check out the following resources:
 
 - [Fabric adoption roadmap: Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md)
 - [Enterprise BI in Azure with Azure Synapse Analytics](/azure/architecture/reference-architectures/data/enterprise-bi-synapse)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
 ### Professional services
 
-Certified Power BI partners are available to help your organization succeed when setting up a COE. They can provide you with cost-effective training or an audit of your data. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Certified Power BI partners are available to help your organization succeed when setting up a COE. They can provide you with cost-effective training or an audit of your data. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).
 
 You can also engage with experienced consulting partners. They can help you [assess](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluate](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL), or [implement](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

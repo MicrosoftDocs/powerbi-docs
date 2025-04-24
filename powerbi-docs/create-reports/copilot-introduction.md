@@ -1,13 +1,13 @@
 ---
 title: Overview of Copilot for Power BI 
 description: Read all about how Copilot works in Power BI.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/31/2024
+ms.date: 02/04/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Copilot for Microsoft Fabric is generally available in Power BI. Copilot helps you use the transformational power of generative AI to get the most from your data. You can also [create your own Copilots](#create-your-own-copilots) to help your coworkers with their tasks.
+Copilot for Microsoft Fabric is generally available in Power BI. Copilot helps you use the transformational power of generative AI to get the most from your data. 
 
 Copilot is turned on by default in Fabric. Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 
@@ -40,7 +40,7 @@ For answers to common questions related to data security and privacy to help you
 
 ## Copilot increases clarity and context awareness
 
-To help you initially build more valuable reports, Copilot can now engage with you to gather more details before creating a page. This ensures that Copilot has a comprehensive understanding of your needs to create a more relevant page for you. Copilot can also offer recommendations on fields and measures to use in a report.  
+To help you build more valuable reports, Copilot can now engage with you to gather more details before creating a page. This ensures that Copilot has a comprehensive understanding of your needs to create a more relevant page for you. Copilot can also offer recommendations on fields and measures to use in a report.  
 
 ### View the page outline for increased transparency  
 
@@ -48,7 +48,7 @@ After you create a page with Copilot, you see an outline in the Copilot chat pan
 
 ## Access Copilot in the Power BI service
 
-To access Copilot in the Power BI service, you need to have a Contributor role on the Fabric capacity (F64 or higher) or Premium capacity.
+To access Copilot in the Power BI service, you need to have a Contributor role on the Fabric capacity or Premium capacity.
 
 - To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
 - To create the narrative visual and generate Copilot reports, you need edit access to the workspace.
@@ -57,19 +57,15 @@ Read more about using [Copilot in the Power BI service](copilot-create-report-se
 
 ## Access Copilot in Power BI Desktop
 
-- You need to have write access to a workspace that is on F64 or Power BI Premium in the Power BI service, where you plan to publish the report. Read more about using [Copilot in Power BI Desktop](copilot-power-bi-desktop.md).
-
-## Create your own Copilots
-
-You can create your own Copilots for your organization. See the documentation for [Azure AI Search](/shows/azure/azure-search) to get started.
+- You need to have write access to a workspace that is on a paid Fabric Capacity or Power BI Premium in the Power BI service, where you plan to publish the report. Read more about using [Copilot in Power BI Desktop](copilot-power-bi-desktop.md).
 
 ## Copilot requirements
 
 - Your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
-- Your F64 or P1 capacity needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
+- Your Fabric capacity needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
 - Your administrator needs to enable the tenant switch before you start using Copilot. See the article [Copilot tenant settings](/fabric/admin/service-admin-portal-copilot) for details.
 - If your tenant or capacity is outside the US or France, Copilot is disabled by default unless your Fabric tenant admin enables the [Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance](/fabric/admin/service-admin-portal-copilot) tenant setting in the Fabric Admin portal.
-- Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
+- Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs are supported.
 
 ## Feature overview: Copilot capabilities
 
@@ -143,7 +139,7 @@ In Power BI Desktop and the Power BI service, you can use Copilot for Power BI t
 
 Copilot can also use the measures and columns in your semantic model to help you explore your data in new ways. As you ask questions about your reports and datasets, Copilot checks if the answer can be found in the report visuals. If existing visuals don't answer the question, Copilot then builds a visual for you.
 
-Here are the sorts of requests that Copilot can help you with:
+Here are the type of requests that Copilot can help you with:
 
 - Can I see this measure filtered to a different region or span of time?
 - What are the top categories by a certain metric?
@@ -161,13 +157,15 @@ Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a
 
 ### Add descriptions for semantic model measures
 
-Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation.
+Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation. [Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
 
-[Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
+:::image type="content" source="media/copilot-introduction/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/copilot-introduction/copilot-measure-description-model-view.png":::
 
 ### Write DAX queries
 
 Copilot can write a DAX query. For example, you can type in a prompt to describe what DAX query you would like it to generate, and select Send or press Enter. To run what is returned, select Keep it to add it to query tab. Then select Run or press F5 to see the results of the DAX query. Read more in the article [Write DAX queries](/dax/dax-copilot).
+
+:::image type="content" source="media/copilot-introduction/copilot-dax-query.png" alt-text="Screenshot showing Copilot suggested DAX query." lightbox="media/copilot-introduction/copilot-dax-query.png":::
 
 ## Copilot preview features
 
@@ -186,7 +184,10 @@ See [Use Copilot preview features in Power BI](copilot-preview-toggle.md) for mo
 We're continuously working to improve the quality of the report pages, including visuals and summaries generated by Copilot. Here are the current limitations.
 
 - AI may generate content that has mistakes. Make sure it's accurate and appropriate before using it.
-- The Copilot button in Desktop report view is always visible in the ribbon; however, Copilot doesn't work unless Copilot for Microsoft Fabric is [enabled in tenant settings](/fabric/get-started/copilot-fabric-overview#enable-copilot) and you have member or contributor access to at least one workspace assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher).
+- English-only support: Copilot officially supports English as the input and output language. Users who want to use Copilot in other languages might experience degraded quality and accuracy of results.
+- The Copilot Chat Pane isn't currently supported for Embed. Only Copilot narrative visual is supported today.
+- Copilot doesn't support paginated reports. 
+- The Copilot button in Desktop report view is always visible in the ribbon; however, Copilot doesn't work unless Copilot for Microsoft Fabric is [enabled in tenant settings](/fabric/get-started/copilot-fabric-overview#enable-copilot) and you have member or contributor access to at least one workspace assigned to a paid Fabric capacity or Power BI Premium capacity (P1 or higher).
 - Unlike the Data pane or Visualization pane, you can't resize the Copilot pane at this time.
 - If you have limited GPU capacity, Copilot may be throttled.
 - Copilot can't modify the visuals after it has generated them.

@@ -1,8 +1,8 @@
 ---
 title: "Create an embedded dataset for a Power BI paginated report"
 description: Learn how to create an embedded dataset, based on an embedded data source, for a paginated report in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

@@ -1,14 +1,14 @@
 ---
-title: Design guidance for date tables in Power BI Desktop
-description: Techniques and guidance for creating date tables in Power BI Desktop.
-author: peter-myers
-ms.author: v-pemyers
+title: "Design guidance for date tables in Power BI Desktop"
+description: "Techniques and guidance for creating date tables in Power BI Desktop."
+author: denglishbi
+ms.author: daengli
 ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/10/2024
+ms.date: 12/30/2024
 ---
 
 # Design guidance for date tables in Power BI Desktop
@@ -30,7 +30,7 @@ What's more, in order to work with Data Analysis Expressions (DAX) [time intelli
 You can use any of several techniques to add a date table to your model:
 
 - [Use Auto date/time](#use-auto-datetime)
-- [Connect with Power Query](#connect-with-power-query) (to an existing date dimension table)
+- [Connect with Power Query](#connect-with-power-query) (to an existing date [dimension table](star-schema.md#dimension-tables))
 - [Generate with Power Query](#generate-with-power-query)
 - [Generate with DAX](#generate-with-dax)
 - [Clone with DAX](#clone-with-dax)

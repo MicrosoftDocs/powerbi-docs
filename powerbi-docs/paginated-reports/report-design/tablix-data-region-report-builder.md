@@ -5,8 +5,8 @@ ms.date: 09/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: saurkumar
 ---
 # Tablix data region in a Power BI paginated report (Power BI Report Builder)

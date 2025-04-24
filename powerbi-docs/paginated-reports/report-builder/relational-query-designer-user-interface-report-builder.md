@@ -6,8 +6,8 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.reviewer: rpatkar
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ---
 # Relational query designer user interface (Power BI Report Builder)
 

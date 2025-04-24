@@ -1,6 +1,6 @@
 ---
-title: Prepare to migrate to Power BI
-description: Guidance on pre-migration steps when migrating to Power BI.
+title: "Prepare to migrate to Power BI"
+description: "Guidance on pre-migration steps when migrating to Power BI."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 02/27/2022
+ms.date: 12/30/2024
 ---
 
 # Prepare to migrate to Power BI
@@ -70,7 +70,7 @@ Note that [Stage 2](powerbi-migration-planning.md) references solution-level dep
 
 Some critical items to address early in a Power BI implementation include:
 
-- [Power BI tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) decisions, which should be documented.
+- [Fabric tenant setting](/fabric/admin/tenant-settings-index) decisions, which should be documented.
 - [Workspace management](../collaborate-share/service-new-workspaces.md) decisions, which should be documented.
 - Considerations and preferences related to data and [content distribution methods](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md), such as apps, workspaces, sharing, subscriptions, and embedding of content.
 - Preferences related to [semantic model modes](../connect-data/service-dataset-modes-understand.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [composite model](composite-model-guidance.md).
@@ -93,10 +93,10 @@ Your [BI solution architecture](powerbi-implementation-planning-usage-scenario-o
 - Power BI tenant setup and integration with Microsoft Entra ID.
 - Define [Power BI administrators](../admin/service-admin-role.md).
 - Procure and assign initial [user licenses](../enterprise/service-admin-licensing-organization.md).
-- Configure and review [Power BI tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings).
+- Configure and review [Fabric tenant settings](/fabric/admin/tenant-settings-index).
 - Setup [workspace roles](../collaborate-share/service-roles-new-workspaces.md) and assign access to Microsoft Entra security groups and users.
 - Configure an initial [data gateway](../connect-data/service-gateway-deployment-guidance.md) cluster—with a plan to update regularly.
-- Procure initial [Premium capacity license](/power-bi/enterprise) (if applicable).
+- Procure initial [Premium capacity subscription](../consumer/end-user-license.md#power-bi-premium-capacity-subscription) (if applicable).
 - Configure [Premium capacity workloads](../enterprise/service-admin-premium-workloads.md)—with a plan to manage on an ongoing basis.
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
@@ -121,9 +121,9 @@ The first task is to understand what success looks like for migrating an individ
 
 Preparing an inventory of existing reports in the legacy BI platform is a critical step towards understanding what already exists. The outcome of this step is an input to assessing the migration effort level. Activities related to preparing an inventory can include:
 
-1. **Inventory of reports:** Compile a list of reports and dashboards that are migration candidates.
-2. **Inventory of data sources:** Compile a list of all data sources accessed by existing reports. It should include both enterprise data sources as well as departmental and personal data sources. This process could unearth data sources not previously known to the IT department, often referred to as *shadow IT*.
-3. **Audit log:** Obtain data from the legacy BI platform audit log to understand usage patterns and assist with prioritization. Important information to obtain from the audit log includes:
+1. **Inventory of reports**: Compile a list of reports and dashboards that are migration candidates.
+2. **Inventory of data sources**: Compile a list of all data sources accessed by existing reports. It should include both enterprise data sources as well as departmental and personal data sources. This process could unearth data sources not previously known to the IT department, often referred to as *shadow IT*.
+3. **Audit log**: Obtain data from the legacy BI platform audit log to understand usage patterns and assist with prioritization. Important information to obtain from the audit log includes:
     - Average number of times each report was executed per week/month/quarter.
     - Average number of consumers per report per week/month/quarter.
     - The consumers for each report, particularly reports used by executives.
@@ -146,7 +146,7 @@ Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
-Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Experienced Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).

@@ -2,8 +2,8 @@
 title: Self-service sign-up help
 description: Learn what to do when you receive a message that indicates that the Power BI self-service sign-up feature is disabled. 
 services: powerbi
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.topic: include
 ms.date: 12/20/2022
 ms.custom: include file

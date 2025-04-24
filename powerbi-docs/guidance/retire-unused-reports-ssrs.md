@@ -1,14 +1,13 @@
 ---
 title: "Find and retire unused .rdl reports"
-description: You don't want to migrate unused .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to the Power BI service. As you plan for a migration to the cloud, we suggest doing some housekeeping to get rid of unused .rdl reports.
-ms.date: 12/15/2022
+description: "You don't want to migrate unused .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to the Power BI service. As you plan for a migration to the cloud, we suggest doing some housekeeping to get rid of unused .rdl reports."
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: cookiemccray
-
+ms.date: 12/30/2024
 ---
 
 # Find and retire unused .rdl reports
@@ -26,14 +25,13 @@ First, we suggest that you create a [server audit and database audit specificati
 Once you've filled your audit log with tables and stored procedures used for reports, you can export those objects to an Excel file and share them with stakeholders. Let them know you're preparing to deprecate unused objects.  
 
 > [!NOTE]
-> Some important reports may run only rarely, so be sure to ask for feedback on database objects that are infrequently used. By deprecating an object, you can alter the object name by placing a *zdel* in front of it, so the object drops to the bottom of the Object Explorer. This way, if you decide later that you need the *zdel* object, you can alter the name back to the original. Once you know you're ready to remove them from your database, you can create a cadence to delete unused objects. 
+> Some important reports may run only rarely, so be sure to ask for feedback on database objects that are infrequently used. By deprecating an object, you can alter the object name by placing a _zdel_ in front of it, so the object drops to the bottom of the Object Explorer. This way, if you decide later that you need the _zdel_ object, you can alter the name back to the original. Once you know you're ready to remove them from your database, you can create a cadence to delete unused objects.
 
 ## Create a Reports Usage metrics list
 
 Second, you'll want to create an .rdl Reports Usage metrics list by querying Report Server DB. Use the T-SQL below to derive the usage counts. If your report server is configured to store one year of report execution history, you can use a specific date to filter the usage metrics.
 
 ```tsql
-
 ; with UnusedReportsCte 
 AS 
 ( 
@@ -50,13 +48,13 @@ GROUP BY Cat.Name,Path)
 SELECT * FROM UnusedReportsCte 
 ORDER BY Cnt ASC,path 
 ```
- 
+
 > [!NOTE]
 > Subreports and linked reports don't appear in the execution log if the parent report is executed.
 
-From here you can decide whether to delete the unused reports right away or replace the report with a message. You can let your users know the report is no longer being used, so they can contact an administrator for support. Then you can develop a cadence to delete them over time.
+From here you can decide whether to delete the unused reports right away or replace the report with a message. You can let your users know the report is no longer being used, so they can contact an administrator for support. Then you can develop a plan to delete them over time.
 
 ## Related content
 
-- [Publish .rdl files to Power BI from Reporting Services](/power-bi/guidance/publish-reporting-services-power-bi-service)
-- [Migrate SQL Server Reporting Services reports to Power BI](/power-bi/guidance/migrate-ssrs-reports-to-power-bi)
+- [Publish .rdl files to Power BI from Reporting Services](publish-reporting-services-power-bi-service.md)
+- [Migrate SQL Server Reporting Services reports to Power BI](migrate-ssrs-reports-to-power-bi.md)

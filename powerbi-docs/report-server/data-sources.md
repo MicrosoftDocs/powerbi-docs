@@ -1,8 +1,8 @@
 ---
 title: Power BI report data sources in Power BI Report Server
 description: Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -58,7 +58,7 @@ The data sources below are specific to Power BI reports used within Power BI Rep
 | ODBC |Yes |Yes |No |
 | OLE DB |Yes |Yes |No |
 | Oracle Database |Yes |Yes |Yes |
-| PostgreSQL Database |Yes |Yes |No |
+| PostgreSQL Database |Yes |Yes |Yes |
 | Power BI dataset in the Power BI service |No |No |No |
 | Power BI dataset in Power BI Report Server |No |No |No |
 | Projectplace for Power BI |Yes |No |No |

@@ -1,6 +1,6 @@
 ---
-title: Use cascading parameters in paginated reports
-description: Guidance for designing paginated reports using cascading parameters.
+title: "Use cascading parameters in paginated reports"
+description: "Guidance for designing paginated reports using cascading parameters."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 01/14/2020
+ms.date: 12/30/2024
 ---
 
 # Use cascading parameters in paginated reports
@@ -29,7 +29,7 @@ There are two design scenarios for using cascading parameters. They can be effec
 
 The examples presented in this article are based on an Azure SQL Database. The database records sales operations, and contains various tables storing resellers, products, and sales orders.
 
-A table named **Reseller** stores one record for each reseller, and it contains many thousands of records. The **Reseller** table has these columns:
+A table named `Reseller` stores one record for each reseller, and it contains many thousands of records. The `Reseller` table has these columns:
 
 - ResellerCode (integer)
 - ResellerName
@@ -38,7 +38,7 @@ A table named **Reseller** stores one record for each reseller, and it contains 
 - City
 - PostalCode
 
-There's a table named **Sales**, too. It stores sales order records, and has a foreign key relationship to the **Reseller** table, on the **ResellerCode** column.
+There's a table named `Sales`, too. It stores sales order records, and has a foreign key relationship to the `Reseller` table, on the `ResellerCode` column.
 
 ### Example requirement
 
@@ -56,7 +56,7 @@ Let's take a look at three examples to help you limit large sets of available it
 
 In this example, the report user interacts with five report parameters. They must select country-region, state-province, city, and then postal code. A final parameter then lists resellers that reside in that geographic location.
 
-![Screenshot of Power BI paginated report parameters showing filter by related columns.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
+:::image type="content" source="media/paginated-report-cascading-parameter/filter-by-related-columns-example.png" alt-text="Screenshot of Power BI paginated report parameters showing filter by related columns." border="false":::
 
 Here's how you can develop the cascading parameters:
 
@@ -120,7 +120,7 @@ Here's how you can develop the cascading parameters:
 7. For each dataset except the first, map the query parameters to the corresponding report parameters.
 
 > [!NOTE]
-> All query parameters (prefixed with the @ symbol) shown in these examples could be embedded within SELECT statements, or passed to stored procedures.
+> All query parameters (prefixed with the @ symbol) shown in these examples could be embedded within `SELECT` statements, or passed to stored procedures.
 >
 > Generally, stored procedures are a better design approach. It's because their query plans are cached for quicker execution, and they allow you develop more sophisticated logic, when needed. However, they aren't currently supported for gateway relational data sources, which means SQL Server, Oracle, and Teradata.
 >
@@ -130,7 +130,7 @@ Here's how you can develop the cascading parameters:
 
 In this example, the report user interacts with a report parameter to select the first letter of the reseller. A second parameter then lists resellers when the name commences with the selected letter.
 
-![Screenshot of Power BI paginated report parameters showing filter by a grouping column.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
+:::image type="content" source="media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png" alt-text="Screenshot of Power BI paginated report parameters showing filter by a grouping column." border="false":::
 
 Here's how you can develop the cascading parameters:
 
@@ -162,7 +162,7 @@ Here's how you can develop the cascading parameters:
 
 4. Map the query parameter of the **Reseller** dataset to the corresponding report parameter.
 
-It's more efficient to add the grouping column to the **Reseller** table. When persisted and indexed, it delivers the best result. For more information, see [Specify Computed Columns in a Table](/sql/relational-databases/tables/specify-computed-columns-in-a-table).
+It's more efficient to add the grouping column to the `Reseller` table. When persisted and indexed, it delivers the best result. For more information, see [Specify Computed Columns in a Table](/sql/relational-databases/tables/specify-computed-columns-in-a-table).
 
 ```sql
 ALTER TABLE [Reseller]
@@ -192,7 +192,7 @@ GO
 
 In this example, the report user interacts with a report parameter to enter a search pattern. A second parameter then lists resellers when the name contains the pattern.
 
-![Screenshot of Power BI paginated report parameters showing filter by search pattern.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
+:::image type="content" source="media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png" alt-text="Screenshot of Power BI paginated report parameters showing filter by search pattern." border="false":::
 
 Here's how you can develop the cascading parameters:
 
@@ -225,7 +225,7 @@ WHERE
   [ResellerName] LIKE @Search
 ```
 
-Many non-database professionals, however, don't know about the percentage (%) wildcard character. Instead, they're familiar with the asterisk (*) character. By modifying the WHERE clause, you can let them use this character.
+Many non-database professionals, however, don't know about the percentage (%) wildcard character. Instead, they're familiar with the asterisk (*) character. By modifying the `WHERE` clause, you can let them use this character.
 
 ```sql
 WHERE
@@ -238,7 +238,7 @@ In this scenario, you can use fact data to limit available values. Report users 
 
 In this example, the report user interacts with three report parameter. The first two set a date range of sales order dates. The third parameter then lists resellers where orders have been created during that time period.
 
-![Screenshot of Power BI paginated report parameters showing three report parameters: Start Order Date, End Order Date, and Reseller.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
+:::image type="content" source="media/paginated-report-cascading-parameter/filter-relevant-items-example.png" alt-text="Screenshot of Power BI paginated report parameters showing three report parameters: Start Order Date, End Order Date, and Reseller." border="false":::
 
 Here's how you can develop the cascading parameters:
 
@@ -279,5 +279,5 @@ For more information related to this article, check out the following resources:
 
 - [Report parameters in Power BI Report Builder](../paginated-reports/parameters/report-builder-parameters.md)
 - [Add Cascading Parameters to a Report (Report Builder)](../paginated-reports/parameters/add-cascading-parameters-report-builder.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

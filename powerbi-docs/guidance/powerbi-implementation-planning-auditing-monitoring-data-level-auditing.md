@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/24/2023
+ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Data-level auditing
@@ -17,11 +17,11 @@ ms.date: 11/24/2023
 
 This data-level auditing article is targeted at multiple audiences:
 
-- **Data creators and workspace administrators:** Users who need to understand usage, adoption, and performance of the semantic models, dataflows, and datamarts that they create, publish, and share.
-- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators might need to collaborate with IT, security, internal audit, and other relevant teams. Power BI administrators might also need to collaborate with content creators when troubleshooting performance.
-- **Power BI capacity administrators:** The administrators responsible for overseeing Premium capacity in the organization. Power BI capacity administrators might need to collaborate with content creators when troubleshooting performance.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
-- **System administrators:** The team that's responsible for creating and securing [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-workspace-overview) resources, and the database administrators who manage data sources.
+- **Data creators and workspace administrators**: Users who need to understand usage, adoption, and performance of the semantic models, dataflows, and datamarts that they create, publish, and share.
+- **Power BI administrators**: The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators might need to collaborate with IT, security, internal audit, and other relevant teams. Power BI administrators might also need to collaborate with content creators when troubleshooting performance.
+- **Power BI capacity administrators**: The administrators responsible for overseeing Premium capacity in the organization. Power BI capacity administrators might need to collaborate with content creators when troubleshooting performance.
+- **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
+- **System administrators**: The team that's responsible for creating and securing [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-workspace-overview) resources, and the database administrators who manage data sources.
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
@@ -45,8 +45,8 @@ Over time, data creators and owners might experience situations with their seman
 - Consume more memory (sometimes unnecessarily when poor design decisions were made).
 - Use more diverse data sources, and more complex table relationships.
 - Include more row-level security (RLS) rules. For more information, see [Enforce data security based on consumer identity](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity).
-- Have more reports that depend on it. For more information about using [live connections](/power-bi/connect-data/desktop-report-lifecycle-datasets) with a shared semantic model, see the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario.
-- Have more downstream data models that depend on it. For more information about using [DirectQuery for Power BI semantic models and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services) with a shared semantic model, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
+- Have more reports that depend on it. For more information about using [live connections](../connect-data/desktop-report-lifecycle-datasets.md) with a shared semantic model, see the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario.
+- Have more downstream data models that depend on it. For more information about using [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) with a shared semantic model, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
 - Experience slower query execution and slower data refresh times.
 - Contribute to slower rendering of reports and visuals.
 
@@ -59,39 +59,39 @@ You should analyze semantic model trace events to:
 
 - Audit all activities that occurred on a semantic model.
 - Troubleshoot and optimize semantic model performance, memory usage, and query efficiency.
-- Investigate [semantic model refresh](/power-bi/connect-data/refresh-data) details and duration.
+- Investigate [semantic model refresh](../connect-data/refresh-data.md) details and duration.
 - Monitor [Power Query formula language](/powerquery-m/m-spec-introduction) (M queries) sent by Power Query.
-- Monitor [DAX formulas and expressions](/power-bi/transform-model/desktop-quickstart-learn-dax-basics) sent to the semantic model (Analysis Services engine).
-- Verify whether the correct [storage mode](/power-bi/transform-model/desktop-storage-mode) was selected based on the workloads and the need to balance fresh data and optimal performance.
+- Monitor [DAX formulas and expressions](../transform-model/desktop-quickstart-learn-dax-basics.md) sent to the semantic model (Analysis Services engine).
+- Verify whether the correct [storage mode](../transform-model/desktop-storage-mode.md) was selected based on the workloads and the need to balance fresh data and optimal performance.
 - Audit which [row-level security](rls-guidance.md) roles are invoked, for which users, and on which semantic models.
 - Understand the number of concurrent users.
-- Validate a semantic model (for example, to verify data quality and performance before [endorsing](/power-bi/collaborate-share/service-endorsement-overview) a semantic model, or before publishing it to a production workspace).
+- Validate a semantic model (for example, to verify data quality and performance before [endorsing](../collaborate-share/service-endorsement-overview.md) a semantic model, or before publishing it to a production workspace).
 
 The events generated by a Power BI semantic model are derived from existing [diagnostic logs available for Azure Analysis Services](/azure/analysis-services/analysis-services-logging). There are many types of [trace events](/analysis-services/trace-events/analysis-services-trace-events) that you can capture and analyze, which are described in the following sections.
 
 ### Azure Log Analytics
 
-Azure Log Analytics is a component of the [Azure Monitor](/azure/azure-monitor/) service. [Azure Log Analytics integration with Power BI](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) allows you to capture semantic model events from all semantic models in a Power BI workspace. It's supported only for [Premium workspaces](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-license-mode). After you set up integration and the connection is enabled (for a Power BI Premium workspace), semantic model events are automatically captured and continually sent to an Azure Log Analytics workspace. The semantic model logs are stored in [Azure Data Explorer](/azure/data-explorer/data-explorer-overview), which is an append-only database that's optimized for capturing high-volume, near-real time telemetry data.
+Azure Log Analytics is a component of the [Azure Monitor](/azure/azure-monitor/) service. [Azure Log Analytics integration with Power BI](../transform-model/log-analytics/desktop-log-analytics-overview.md) allows you to capture semantic model events from all semantic models in a Power BI workspace. It's supported only for [Premium workspaces](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-license-mode). After you set up integration and the connection is enabled (for a Power BI Premium workspace), semantic model events are automatically captured and continually sent to an Azure Log Analytics workspace. The semantic model logs are stored in [Azure Data Explorer](/azure/data-explorer/data-explorer-overview), which is an append-only database that's optimized for capturing high-volume, near-real time telemetry data.
 
 You assign a Power BI Premium workspace to a Log Analytics workspace in Azure. You must create a new Log Analytics resource in your Azure subscription to enable this type of logging.
 
 Logs from one or more Power BI workspaces will be sent to a target Log Analytics workspace. Here are some ways you can choose to organize the data.
 
-- **One target workspace for all audit data:** Store all the data in one Log Analytics workspace. That's helpful when the same administrator or users will access all data.
-- **Target workspaces organized by subject area:** Organize the content by subject area. This technique is particularly helpful when different administrators or users are permitted to access the audit data from Azure Log Analytics. For example, when you need to segregate sales data from operations data.
-- **One target workspace for each Power BI workspace:** Set up a one-to-one relationship between a Power BI workspace and an Azure Log Analytics workspace. That's useful when you have particularly sensitive content, or when the data is subject to specific compliance or regulatory requirements.
+- **One target workspace for all audit data**: Store all the data in one Log Analytics workspace. That's helpful when the same administrator or users will access all data.
+- **Target workspaces organized by subject area**: Organize the content by subject area. This technique is particularly helpful when different administrators or users are permitted to access the audit data from Azure Log Analytics. For example, when you need to segregate sales data from operations data.
+- **One target workspace for each Power BI workspace**: Set up a one-to-one relationship between a Power BI workspace and an Azure Log Analytics workspace. That's useful when you have particularly sensitive content, or when the data is subject to specific compliance or regulatory requirements.
 
 > [!TIP]
-> Thoroughly review the [documentation](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) and [frequently asked questions](/power-bi/transform-model/log-analytics/desktop-log-analytics-faq) on this functionality so that you're clear on what's possible and that you understand the technical requirements. Before making this functionality broadly available to workspace administrators in your organization, consider doing a technical proof of concept (POC) with one Power BI workspace.
+> Thoroughly review the [documentation](../transform-model/log-analytics/desktop-log-analytics-overview.md) and [frequently asked questions](../transform-model/log-analytics/desktop-log-analytics-faq.md) on this functionality so that you're clear on what's possible and that you understand the technical requirements. Before making this functionality broadly available to workspace administrators in your organization, consider doing a technical proof of concept (POC) with one Power BI workspace.
 
 > [!IMPORTANT]
-> Although the names are similar, the data captured by Azure Log Analytics isn't the same as the Power BI activity log. Azure Log Analytics captures detail-level trace events from the Analysis Services engine. Its sole purpose is to help you analyze and troubleshoot semantic model performance. Its scope is at the workspace level. Conversely, the purpose of the activity log is to help you understand how often certain [user activities](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) occur (such as editing a report, refreshing a semantic model, or creating an app). Its scope is the entire Power BI tenant.
+> Although the names are similar, the data captured by Azure Log Analytics isn't the same as the Power BI activity log. Azure Log Analytics captures detail-level trace events from the Analysis Services engine. Its sole purpose is to help you analyze and troubleshoot semantic model performance. Its scope is at the workspace level. Conversely, the purpose of the activity log is to help you understand how often certain [user activities](/fabric/admin/operation-list) occur (such as editing a report, refreshing a semantic model, or creating an app). Its scope is the entire Power BI tenant.
 >
 > For more information about the user activities you can audit for your Power BI tenant, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
 
-The _Azure Log Analytics connection for workspace administrators_ [tenant setting](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure#allow-workspace-level-logging-from-the-admin-portal) controls which groups of users (who also have the necessary [workspace admin role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles)) can connect a Power BI workspace to an existing Azure Log Analytics workspace.
+The _Azure Log Analytics connection for workspace administrators_ [tenant setting](../transform-model/log-analytics/desktop-log-analytics-configure.md#allow-workspace-level-logging-from-the-admin-portal) controls which groups of users (who also have the necessary [workspace admin role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles)) can connect a Power BI workspace to an existing Azure Log Analytics workspace.
 
-Before you can set up integration, you must meet security [prerequisites](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure#prerequisites). Therefore, consider enabling the Power BI tenant setting only for Power BI workspace administrators who also have the required permissions in Azure Log Analytics, or who can obtain those permissions upon request.
+Before you can set up integration, you must meet security [prerequisites](../transform-model/log-analytics/desktop-log-analytics-configure.md#prerequisites). Therefore, consider enabling the Power BI tenant setting only for Power BI workspace administrators who also have the required permissions in Azure Log Analytics, or who can obtain those permissions upon request.
 
 > [!TIP]
 > Collaborate with your Azure administrator early in the planning process, especially when getting approval to create a new Azure resource is a challenge in your organization. You'll also need to plan for the security prerequisites. Decide whether to grant permission to your Power BI workspace administrator in Azure, or whether to grant permission to the Azure administrator in Power BI.
@@ -100,8 +100,8 @@ The semantic model logs captured by Azure Log Analytics include the semantic mod
 
 To optimize cost when using Azure Log Analytics with Power BI:
 
-- [Connect Power BI workspaces to Azure Log Analytics](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure#configure-logging-in-a-premium-workspace) only when you're actively troubleshooting, testing, optimizing, or investigating semantic model activity. When connected, a trace runs on all the semantic models in the workspace.
-- [Disconnect Azure Log Analytics](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure#disconnect-azure-log-analytics) from a Power BI workspace when you no longer need to actively troubleshoot, test, optimize, or investigate semantic model activity. By disconnecting, you're terminating the trace from running on all the semantic models in the workspace.
+- [Connect Power BI workspaces to Azure Log Analytics](../transform-model/log-analytics/desktop-log-analytics-configure.md#configure-logging-in-a-premium-workspace) only when you're actively troubleshooting, testing, optimizing, or investigating semantic model activity. When connected, a trace runs on all the semantic models in the workspace.
+- [Disconnect Azure Log Analytics](../transform-model/log-analytics/desktop-log-analytics-configure.md#disconnect-azure-log-analytics) from a Power BI workspace when you no longer need to actively troubleshoot, test, optimize, or investigate semantic model activity. By disconnecting, you're terminating the trace from running on all the semantic models in the workspace.
 - Make sure you understand the [cost model](/azure/azure-monitor/logs/cost-logs) for how Azure Log Analytics bills for data ingestion, storage, and queries.
 - Don't store the data in Log Analytics for longer than the default 30-day retention period. That's because semantic model analysis typically focuses on immediate troubleshooting activities.
 
@@ -122,20 +122,20 @@ For more information, see [Govern Azure connections](powerbi-implementation-plan
 **Checklist** - When planning to use Azure Log Analytics, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Consider a technical POC:** Plan for a small project to ensure that you fully understand the technical requirements, security requirements, which events to capture, and how to analyze the logs.
-> - **Decide which workspaces should be integrated with Log Analytics:** Determine which Premium workspaces contain semantic models that you're interested to analyze.
-> - **Decide whether Log Analytics should be enabled full-time for any workspaces:** For cost optimization, determine whether there are situations (or specific workspaces) where logging should be enabled permanently. Decide whether workspaces should be disconnected when troubleshooting isn't occurring.
-> - **Decide how long to retain Log Analytics data:** Determine whether there's a need to set a longer retention period than the 30-day default.
-> - **Clarify the process for requesting new Log Analytics workspace:** Collaborate with your Azure administrator to clarify how requests for a new Log Analytics resource should be submitted by Power BI workspace administrators.
-> - **Decide how security will work:** Collaborate with your Azure administrator to decide whether it's more feasible for a Power BI workspace administrator to be granted rights to an Azure Log Analytics workspace, or for a Azure administrator to be granted rights to a Power BI workspace. As you make this security decision, consider your plan to connect and disconnect workspaces regularly (for cost optimization).
-> - **Decide how to organize the target Log Analytics workspaces:** Consider how many Azure Log Analytics workspaces will be appropriate to organize the data from one or more Power BI workspaces. Align this decision with your security decisions for who can access the log data.
-> - **Decide which workspace administrators are allowed to connect:** Determine which groups of workspace administrators can connect a Power BI workspace to a Log Analytics workspace. Set the _Azure Log Analytics connection for workspace administrators_ tenant setting to align with this decision.
-> - **Create the Azure Log Analytics resource:** Collaborate with your Azure administrator to create each Log Analytics workspace. Verify and update the permissions that are assigned in Azure to ensure that the Power BI configuration can occur without any issues. Validate that the data stored in Azure is in the correct geographic region.
-> - **Set the Log Analytics connection for each Power BI workspace:** Collaborate with your Power BI workspace administrators to set up the connection to Log Analytics for each Power BI workspace. Verify that the log data is flowing correctly to the Log Analytics workspace.
-> - **Create queries to analyze the data:** Set up KQL queries to analyze the data in Log Analytics based on your use case and current needs.
-> - **Include guidance for Power BI workspace administrators:** Provide information and prerequisites to your Power BI workspace administrators for how to request a new Log Analytics workspace and how to connect to a Power BI workspace. Also, explain when it's appropriate to disconnect a Power BI workspace.
-> - **Provide guidance and sample queries for analyzing the data:** Create KQL queries for workspace administrators to make it easier for them to get started with analyzing the data that's been captured.
-> - **Monitor costs:** Collaborate with your Azure administrator to monitor Log Analytics costs on an ongoing basis.
+> - **Consider a technical POC**: Plan for a small project to ensure that you fully understand the technical requirements, security requirements, which events to capture, and how to analyze the logs.
+> - **Decide which workspaces should be integrated with Log Analytics**: Determine which Premium workspaces contain semantic models that you're interested to analyze.
+> - **Decide whether Log Analytics should be enabled full-time for any workspaces**: For cost optimization, determine whether there are situations (or specific workspaces) where logging should be enabled permanently. Decide whether workspaces should be disconnected when troubleshooting isn't occurring.
+> - **Decide how long to retain Log Analytics data**: Determine whether there's a need to set a longer retention period than the 30-day default.
+> - **Clarify the process for requesting new Log Analytics workspace**: Collaborate with your Azure administrator to clarify how requests for a new Log Analytics resource should be submitted by Power BI workspace administrators.
+> - **Decide how security will work**: Collaborate with your Azure administrator to decide whether it's more feasible for a Power BI workspace administrator to be granted rights to an Azure Log Analytics workspace, or for a Azure administrator to be granted rights to a Power BI workspace. As you make this security decision, consider your plan to connect and disconnect workspaces regularly (for cost optimization).
+> - **Decide how to organize the target Log Analytics workspaces**: Consider how many Azure Log Analytics workspaces will be appropriate to organize the data from one or more Power BI workspaces. Align this decision with your security decisions for who can access the log data.
+> - **Decide which workspace administrators are allowed to connect**: Determine which groups of workspace administrators can connect a Power BI workspace to a Log Analytics workspace. Set the _Azure Log Analytics connection for workspace administrators_ tenant setting to align with this decision.
+> - **Create the Azure Log Analytics resource**: Collaborate with your Azure administrator to create each Log Analytics workspace. Verify and update the permissions that are assigned in Azure to ensure that the Power BI configuration can occur without any issues. Validate that the data stored in Azure is in the correct geographic region.
+> - **Set the Log Analytics connection for each Power BI workspace**: Collaborate with your Power BI workspace administrators to set up the connection to Log Analytics for each Power BI workspace. Verify that the log data is flowing correctly to the Log Analytics workspace.
+> - **Create queries to analyze the data**: Set up KQL queries to analyze the data in Log Analytics based on your use case and current needs.
+> - **Include guidance for Power BI workspace administrators**: Provide information and prerequisites to your Power BI workspace administrators for how to request a new Log Analytics workspace and how to connect to a Power BI workspace. Also, explain when it's appropriate to disconnect a Power BI workspace.
+> - **Provide guidance and sample queries for analyzing the data**: Create KQL queries for workspace administrators to make it easier for them to get started with analyzing the data that's been captured.
+> - **Monitor costs**: Collaborate with your Azure administrator to monitor Log Analytics costs on an ongoing basis.
 
 ### SQL Server Profiler
 
@@ -143,8 +143,8 @@ You can use [SQL Server Profiler](/analysis-services/instances/use-sql-server-pr
 
 You can use SQL Profiler during different stages of the lifecycle of a semantic model.
 
-- **During data model development:** SQL Profiler can connect to a data model in Power BI Desktop as an [external tool](/power-bi/transform-model/desktop-external-tools). This approach is useful for data modelers who want to validate their data model, or do performance tuning.
-- **After the semantic model is published to the Power BI service:** SQL Profiler can connect to a semantic model in a Premium workspace. SSMS is one of many supported [client tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) that can use the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) for connectivity. This approach is useful when you want to audit, monitor, validate, troubleshoot, or tune a published semantic model in the Power BI service.
+- **During data model development**: SQL Profiler can connect to a data model in Power BI Desktop as an [external tool](../transform-model/desktop-external-tools.md). This approach is useful for data modelers who want to validate their data model, or do performance tuning.
+- **After the semantic model is published to the Power BI service**: SQL Profiler can connect to a semantic model in a Premium workspace. SSMS is one of many supported [client tools](../enterprise/service-premium-connect-tools.md#client-applications-and-tools) that can use the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) for connectivity. This approach is useful when you want to audit, monitor, validate, troubleshoot, or tune a published semantic model in the Power BI service.
 
 It's also possible to use SQL Profiler as an external tool within [DAX Studio](https://daxstudio.org/). You can use DAX Studio to start a profiler trace, parse the data, and format the results. Data modelers who use DAX Studio often prefer this approach versus using SQL Profiler directly.
 
@@ -167,10 +167,10 @@ Like Azure Log Analytics (described earlier in this article), semantic model eve
 > [!IMPORTANT]
 > You can also use SQL Profiler to monitor queries sent from the Power BI service to the underlying data sources (for example, to a SQL Server relational database). However, the capability to trace a relational database is deprecated. Connecting to the Analysis Services engine is [supported](/sql/tools/sql-server-profiler/sql-server-profiler?view=sql-server-ver15&preserve-view=true) and _not_ deprecated. If you're familiar with [Analysis Services extended events](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events) and you prefer to use them, connectivity from SSMS is possible for a data model in Power BI Desktop. However, it's not supported for Power BI Premium. Therefore, this section focuses only on standard SQL Profiler connectivity.
 
-The _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_ tenant setting controls which groups of users (who are also assigned to the Contributor, Member, or Admin [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces), or the [Build](/power-bi/connect-data/service-datasets-build-permissions) permission for the individual semantic model) can use the XMLA endpoint to query and/or maintain semantic models in the Power BI service. For more information about using the XMLA endpoint, see the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
+The _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_ tenant setting controls which groups of users (who are also assigned to the Contributor, Member, or Admin [workspace role](../collaborate-share/service-roles-new-workspaces.md), or the [Build](../connect-data/service-datasets-build-permissions.md) permission for the individual semantic model) can use the XMLA endpoint to query and/or maintain semantic models in the Power BI service. For more information about using the XMLA endpoint, see the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
 
 > [!NOTE]
-> You can also use SQL Profiler to help debug and troubleshoot specific DAX expressions. You can connect SQL Profiler to Power BI Desktop as an [external tool](/power-bi/transform-model/desktop-external-tools). Look for the _DAX Evaluation Log_ event class to view intermediary results of a DAX expression. That event is generated when you use the [EVALUATEANDLOG](/dax/evaluateandlog-function-dax) DAX function in a model calculation.
+> You can also use SQL Profiler to help debug and troubleshoot specific DAX expressions. You can connect SQL Profiler to Power BI Desktop as an [external tool](../transform-model/desktop-external-tools.md). Look for the _DAX Evaluation Log_ event class to view intermediary results of a DAX expression. That event is generated when you use the [EVALUATEANDLOG](/dax/evaluateandlog-function-dax) DAX function in a model calculation.
 >
 > This function is only intended for development and test purposes. You should remove it from your data model calculations before publishing the data model to a production workspace.
 
@@ -179,10 +179,10 @@ The _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_
 **Checklist** - When planning to use SQL Profiler, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Decide who can have SSMS or DAX Studio installed:** Determine whether you'll allow all the Power BI content creators in your organization to install SSMS and/or DAX Studio so they can use SQL Profiler. Decide whether these ancillary tools are installed upon request, or part of a standard set of software that's installed for approved data creators in the organization.
-> - **Add SQL Profiler to the External Tools menu in Power BI Desktop:** If data creators will use SQL Profiler often, ask IT to automatically add it to the External Tools menu in Power BI Desktop for these users.
-> - **Decide who can use the XMLA endpoint:** Determine whether all users are permitted to connect to published semantic models by using the XMLA endpoint, or whether it's limited to approved data creators only. Set the _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_ tenant setting to align with this decision.
-> - **Provide guidance and sample queries for analyzing the data:** Create documentation for your data creators so they understand the recommended way to audit and monitor semantic models. Provide guidance for common use cases to make it easier for them to get started gathering and analyzing trace data.
+> - **Decide who can have SSMS or DAX Studio installed**: Determine whether you'll allow all the Power BI content creators in your organization to install SSMS and/or DAX Studio so they can use SQL Profiler. Decide whether these ancillary tools are installed upon request, or part of a standard set of software that's installed for approved data creators in the organization.
+> - **Add SQL Profiler to the External Tools menu in Power BI Desktop**: If data creators will use SQL Profiler often, ask IT to automatically add it to the External Tools menu in Power BI Desktop for these users.
+> - **Decide who can use the XMLA endpoint**: Determine whether all users are permitted to connect to published semantic models by using the XMLA endpoint, or whether it's limited to approved data creators only. Set the _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_ tenant setting to align with this decision.
+> - **Provide guidance and sample queries for analyzing the data**: Create documentation for your data creators so they understand the recommended way to audit and monitor semantic models. Provide guidance for common use cases to make it easier for them to get started gathering and analyzing trace data.
 
 ## Data model metadata
 
@@ -208,20 +208,20 @@ Specifically, you can:
 
 [SSMS](/sql/ssms/download-sql-server-management-studio-ssms) is a tool commonly used to run [DMV queries](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services?view=asallproducts-allversions&preserve-view=true#tools-and-permissions). You can also use the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd) PowerShell cmdlet to create and execute [XMLA](/analysis-services/xmla/xml-for-analysis-xmla-reference) scripts that query the DMVs.
 
-[Third-party tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) and [external tools](/power-bi/transform-model/desktop-external-tools) are also popular with the Power BI community. These tools use the publicly documented DMVs to simplify access and to work with data returned by the DMVs. One example is [DAX Studio](https://daxstudio.org/), which includes explicit functionality to access the DMVs. DAX Studio also includes a built-in _View Metrics_ feature, which is commonly known as _Vertipaq Analyzer_. Vertipaq Analyzer has a user interface for analyzing the structure and size of tables, columns, relationships, and partitions in a data model. You can also export (or import) the data model metadata to a .vpax file. The exported file only contains metadata about the data model structure and size, without storing any model data.
+[Third-party tools](../enterprise/service-premium-connect-tools.md#client-applications-and-tools) and [external tools](../transform-model/desktop-external-tools.md) are also popular with the Power BI community. These tools use the publicly documented DMVs to simplify access and to work with data returned by the DMVs. One example is [DAX Studio](https://daxstudio.org/), which includes explicit functionality to access the DMVs. DAX Studio also includes a built-in _View Metrics_ feature, which is commonly known as _Vertipaq Analyzer_. Vertipaq Analyzer has a user interface for analyzing the structure and size of tables, columns, relationships, and partitions in a data model. You can also export (or import) the data model metadata to a .vpax file. The exported file only contains metadata about the data model structure and size, without storing any model data.
 
 > [!TIP]
 > Consider sharing a .vpax file with someone when you need assistance with a data model. That way, you won't share the model data with that person.
 
 You can use DMV queries during different stages of the lifecycle of a semantic model.
 
-- **During data model development:** Your tool of choice can connect to a data model in Power BI Desktop as an [external tool](/power-bi/transform-model/desktop-external-tools). This approach is useful for data modelers who want to validate their data model, or do performance tuning.
-- **After the semantic model is published to the Power BI service:** Your tool of choice can connect to a semantic model in a Premium workspace. SSMS is one of many supported [client tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) that use the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) for connectivity. This approach is useful when you want to audit or validate a published semantic model in the Power BI service.
+- **During data model development**: Your tool of choice can connect to a data model in Power BI Desktop as an [external tool](../transform-model/desktop-external-tools.md). This approach is useful for data modelers who want to validate their data model, or do performance tuning.
+- **After the semantic model is published to the Power BI service**: Your tool of choice can connect to a semantic model in a Premium workspace. SSMS is one of many supported [client tools](../enterprise/service-premium-connect-tools.md#client-applications-and-tools) that use the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) for connectivity. This approach is useful when you want to audit or validate a published semantic model in the Power BI service.
 
 > [!TIP]
 > If you decide to write your own DMV queries (for example, in SSMS), be aware that the DMVs don't support all SQL operations. Also, some DMVs aren't supported in Power BI (because they require Analysis Services server administrator permissions that aren't supported by Power BI).
 
-The _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_ tenant setting controls which groups of users (who are also assigned to the Contributor, Member, or Admin [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces), or the [Build](/power-bi/connect-data/service-datasets-build-permissions) permission for the individual semantic model) can use the XMLA endpoint to query and/or maintain semantic models in the Power BI service.
+The _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_ tenant setting controls which groups of users (who are also assigned to the Contributor, Member, or Admin [workspace role](../collaborate-share/service-roles-new-workspaces.md), or the [Build](../connect-data/service-datasets-build-permissions.md) permission for the individual semantic model) can use the XMLA endpoint to query and/or maintain semantic models in the Power BI service.
 
 For more information about using the XMLA endpoint, third-party tools, and external tools, see the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
 
@@ -246,11 +246,11 @@ BPA can expose design issues that can help the [Center of Excellence](fabric-ado
 **Checklist** - When planning to access metadata for data models, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Decide who can have SSMS installed:** Determine whether you'll allow all Power BI content creators in your organization to install SSMS so that they can connect to published semantic models. Decide whether it's installed upon request, or as part of a standard set of software that's installed for approved data creators in the organization.
-> - **Decide who can have third-party tools installed:** Determine whether you'll allow all Power BI content creators in your organization to install third-party tools (such as DAX Studio and Tabular Editor) so that they can monitor local data models and/or published semantic models. Decide whether they're installed upon request, or as part of a standard set of software that's installed for approved data creators in the organization.
-> - **Set up best practice rules:** Decide which Best Practice Analyzer rules can scan the data models in your organization.
-> - **Decide who can use the XMLA endpoint:** Determine whether all users are permitted to connect to semantic models by using the XMLA endpoint, or whether it's limited to approved data creators only. Set the _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_ tenant setting to align with this decision.
-> - **Provide guidance for content creators:** Create documentation for your data creators so that they understand the recommended way(s) to analyze semantic models. Provide guidance for common use cases to make it easier for them to start gathering and analyzing DMV results and/or using Best Practice Analyzer.
+> - **Decide who can have SSMS installed**: Determine whether you'll allow all Power BI content creators in your organization to install SSMS so that they can connect to published semantic models. Decide whether it's installed upon request, or as part of a standard set of software that's installed for approved data creators in the organization.
+> - **Decide who can have third-party tools installed**: Determine whether you'll allow all Power BI content creators in your organization to install third-party tools (such as DAX Studio and Tabular Editor) so that they can monitor local data models and/or published semantic models. Decide whether they're installed upon request, or as part of a standard set of software that's installed for approved data creators in the organization.
+> - **Set up best practice rules**: Decide which Best Practice Analyzer rules can scan the data models in your organization.
+> - **Decide who can use the XMLA endpoint**: Determine whether all users are permitted to connect to semantic models by using the XMLA endpoint, or whether it's limited to approved data creators only. Set the _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_ tenant setting to align with this decision.
+> - **Provide guidance for content creators**: Create documentation for your data creators so that they understand the recommended way(s) to analyze semantic models. Provide guidance for common use cases to make it easier for them to start gathering and analyzing DMV results and/or using Best Practice Analyzer.
 
 ## Data model and query performance
 
@@ -258,7 +258,7 @@ Power BI Desktop includes several [tools](monitor-report-performance.md#use-quer
 
 ### Performance Analyzer
 
-Use [Performance Analyzer](/power-bi/create-reports/desktop-performance-analyzer), which is available in Power BI Desktop, to audit and investigate performance of a data model. Performance Analyzer helps report creators measure the performance of individual report elements. Commonly, however, the root cause of performance issues is related to data model design. For this reason, a semantic model creator can benefit from using Performance Analyzer too. If there are different content creators responsible for creating reports versus semantic models, it's likely that they'll need to collaborate when troubleshooting a performance issue.
+Use [Performance Analyzer](../create-reports/desktop-performance-analyzer.md), which is available in Power BI Desktop, to audit and investigate performance of a data model. Performance Analyzer helps report creators measure the performance of individual report elements. Commonly, however, the root cause of performance issues is related to data model design. For this reason, a semantic model creator can benefit from using Performance Analyzer too. If there are different content creators responsible for creating reports versus semantic models, it's likely that they'll need to collaborate when troubleshooting a performance issue.
 
 > [!TIP]
 > You can use [DAX Studio](https://daxstudio.org/) to import and analyze the log files generated by Performance Analyzer.
@@ -290,27 +290,27 @@ Power Query supports various capabilities to help you understand [query evaluati
 
 ### Premium metrics app
 
-When troubleshooting, it can be helpful to collaborate with your Power BI Premium capacity administrator. The capacity administrator has access to the [Power BI Premium utilization and metrics app](/power-bi/enterprise/service-premium-metrics-app). This app can provide you with a wealth of information about activities that occur in the capacity. That information can help you troubleshoot semantic model issues.
+When troubleshooting, it can be helpful to collaborate with your Power BI Premium capacity administrator. The capacity administrator has access to the [Power BI Premium utilization and metrics app](../enterprise/service-premium-metrics-app.md). This app can provide you with a wealth of information about activities that occur in the capacity. That information can help you troubleshoot semantic model issues.
 
 > [!TIP]
 > Your Premium capacity administrator can grant access to additional users (non-capacity administrators) to allow them to access the Premium metrics app.
 
 The Premium metrics app comprises an internal semantic model and an initial set of reports. It helps you perform near-real-time monitoring of a Power BI Premium capacity (P SKU) or Power BI Embedded (A SKU) capacity. It includes data for the last two to four weeks (depending on the metric).
 
-Use the Premium metrics app to troubleshoot and optimize semantic models. For example, you can identify semantic models that have a large [memory footprint](/power-bi/enterprise/service-premium-metrics-app#artifact-size) or that experience routinely high [CPU usage](/power-bi/enterprise/service-premium-metrics-app#cpu-over-time). It's also a useful tool to find semantic models that are approaching the limit of your capacity size.
+Use the Premium metrics app to troubleshoot and optimize semantic models. For example, you can identify semantic models that have a large [memory footprint](/fabric/enterprise/metrics-app#considerations-and-limitations) or that experience routinely high [CPU usage](/fabric/enterprise/metrics-app#considerations-and-limitations). It's also a useful tool to find semantic models that are approaching the limit of your capacity size.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering approaches to use for monitoring data model and query performance, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Identify semantic model query performance targets:** Ensure that you have a good understanding of what good semantic model performance means. Determine when you'll require specific query performance targets (for example, queries to support reports must render within five seconds). If so, make sure the targets are communicated to the data creators in your organization.
-> - **Identify semantic model refresh performance targets:** Determine when you'll require specific data refresh targets (for example, completion of a data refresh operation within 15 minutes and prior to 5am). If so, make sure the targets are communicated to the data creators in your organization.
-> - **Educate your support team:** Ensure that your internal user support team is familiar with the diagnostic capabilities so they're ready to support Power BI users when they need help.
-> - **Connect your support team and database administrators:** Make sure that your support team knows how to contact the correct administrators for each data source (when troubleshooting query folding, for example).
-> - **Collaborate with your Premium capacity administrator:** Work with your capacity administrator to troubleshoot semantic models that reside in a workspace that's assigned to Premium capacity or Power BI Embedded capacity. When appropriate, request access to the Premium metrics app.
-> - **Provide guidance for content creators:** Create documentation for your data creators so that they understand what actions to take when troubleshooting.
-> - **Include in training materials:** Provide guidance to your data creators about how to create well-performing data models. Help them adopt good design habits early. Focus on teaching data creators how to make good design decisions.
+> - **Identify semantic model query performance targets**: Ensure that you have a good understanding of what good semantic model performance means. Determine when you'll require specific query performance targets (for example, queries to support reports must render within five seconds). If so, make sure the targets are communicated to the data creators in your organization.
+> - **Identify semantic model refresh performance targets**: Determine when you'll require specific data refresh targets (for example, completion of a data refresh operation within 15 minutes and prior to 5am). If so, make sure the targets are communicated to the data creators in your organization.
+> - **Educate your support team**: Ensure that your internal user support team is familiar with the diagnostic capabilities so they're ready to support Power BI users when they need help.
+> - **Connect your support team and database administrators**: Make sure that your support team knows how to contact the correct administrators for each data source (when troubleshooting query folding, for example).
+> - **Collaborate with your Premium capacity administrator**: Work with your capacity administrator to troubleshoot semantic models that reside in a workspace that's assigned to Premium capacity or Power BI Embedded capacity. When appropriate, request access to the Premium metrics app.
+> - **Provide guidance for content creators**: Create documentation for your data creators so that they understand what actions to take when troubleshooting.
+> - **Include in training materials**: Provide guidance to your data creators about how to create well-performing data models. Help them adopt good design habits early. Focus on teaching data creators how to make good design decisions.
 
 ## Data source monitoring
 
@@ -332,12 +332,12 @@ There are many actions that a Power BI content creator might take once they anal
 - Remove high precision and high cardinality columns that are imported into a data model.
 - Reduce the amount of historical data that's imported into a data model.
 - Adjust the Power BI data refresh times to help spread out the demand for the data source.
-- Use [incremental data refresh](/power-bi/connect-data/incremental-refresh-overview) to reduce the load on the data source.
-- Reduce the number of Power BI data refreshes by consolidating multiple semantic models into a [shared semantic model](/power-bi/connect-data/service-datasets-across-workspaces).
-- Adjust [automatic page refresh](/power-bi/create-reports/desktop-automatic-page-refresh) settings to increase the refresh frequency, and therefore reduce the load on the data source.
+- Use [incremental data refresh](../connect-data/incremental-refresh-overview.md) to reduce the load on the data source.
+- Reduce the number of Power BI data refreshes by consolidating multiple semantic models into a [shared semantic model](../connect-data/service-datasets-across-workspaces.md).
+- Adjust [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) settings to increase the refresh frequency, and therefore reduce the load on the data source.
 - Simplify calculations to reduce the complexity of queries sent to the data source.
-- Change the [data storage mode](/power-bi/transform-model/desktop-storage-mode) (for example, to import mode instead of DirectQuery) to reduce the consistent query load on the data source.
-- Use [query reduction techniques](/power-bi/connect-data/desktop-directquery-about#report-design) to reduce the number of queries that are sent to the data source.
+- Change the [data storage mode](../transform-model/desktop-storage-mode.md) (for example, to import mode instead of DirectQuery) to reduce the consistent query load on the data source.
+- Use [query reduction techniques](../connect-data/desktop-directquery-about.md#report-design) to reduce the number of queries that are sent to the data source.
 
 System administrators might take other actions. They could:
 
@@ -348,7 +348,7 @@ System administrators might take other actions. They could:
 
 The tools and techniques that you can use to monitor data sources depend on the technology platform. For example, your database administrator can use [extended events](/sql/relational-databases/extended-events/extended-events) or the [Query Store](/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store) for monitoring Azure SQL Database and SQL Server databases.
 
-Sometimes, Power BI accesses a data source through a [data gateway](/power-bi/connect-data/service-gateway-onprem). Gateways handle connectivity from the Power BI service to certain types of data sources. However, they do more than just connect to data. A gateway includes a mashup engine that performs processing and data transformations on the machine. It also compresses and encrypts the data so that it can be efficiently and securely transmitted to the Power BI service. Therefore, an unmanaged, or non-optimized, gateway can contribute to performance bottlenecks. We recommend that you talk to your gateway administrator for help with monitoring gateways.
+Sometimes, Power BI accesses a data source through a [data gateway](../connect-data/service-gateway-onprem.md). Gateways handle connectivity from the Power BI service to certain types of data sources. However, they do more than just connect to data. A gateway includes a mashup engine that performs processing and data transformations on the machine. It also compresses and encrypts the data so that it can be efficiently and securely transmitted to the Power BI service. Therefore, an unmanaged, or non-optimized, gateway can contribute to performance bottlenecks. We recommend that you talk to your gateway administrator for help with monitoring gateways.
 
 > [!TIP]
 > Your Power BI administrator can compile a full tenant inventory (which includes lineage) and access user activities in the activity log. By correlating the lineage and user activities, administrators can identify the most frequently used data sources and gateways.
@@ -360,15 +360,15 @@ Sometimes, Power BI accesses a data source through a [data gateway](/power-bi/co
 **Checklist** - When planning to monitor a data source, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Determine specific goals:** When monitoring a data source, get clarity about exactly what you need to accomplish and the goals for troubleshooting.
-> - **Collaborate with database administrators:** Work with your database or system administrator(s) to get their help when monitoring a specific data source.
-> - **Collaborate with gateway administrators:** For data sources that connect through a data gateway, collaborate with the gateway administrator when troubleshooting.
-> - **Connect your support team and database administrators:** Make sure that your support team knows how to contact the correct administrators for each data source (for example, when troubleshooting query folding).
-> - **Update training and guidance:** Include key information and tips for data creators about how to work with organizational data sources. Include information about what to do when something goes wrong.
+> - **Determine specific goals**: When monitoring a data source, get clarity about exactly what you need to accomplish and the goals for troubleshooting.
+> - **Collaborate with database administrators**: Work with your database or system administrator(s) to get their help when monitoring a specific data source.
+> - **Collaborate with gateway administrators**: For data sources that connect through a data gateway, collaborate with the gateway administrator when troubleshooting.
+> - **Connect your support team and database administrators**: Make sure that your support team knows how to contact the correct administrators for each data source (for example, when troubleshooting query folding).
+> - **Update training and guidance**: Include key information and tips for data creators about how to work with organizational data sources. Include information about what to do when something goes wrong.
 
 ## Data refresh monitoring
 
-A [data refresh](/power-bi/connect-data/refresh-data) operation involves importing data from underlying data source(s) into a Power BI semantic model, dataflow, or datamart. You can schedule a data refresh operation or run it on-demand.
+A [data refresh](../connect-data/refresh-data.md) operation involves importing data from underlying data source(s) into a Power BI semantic model, dataflow, or datamart. You can schedule a data refresh operation or run it on-demand.
 
 ### Service-level agreement
 
@@ -382,12 +382,12 @@ The [semantic model event logs](#semantic-model-event-logs) from Azure Log Analy
 
 When you have content that's hosted in a Power BI Premium capacity, you have more capabilities to monitor data refresh operations.
 
-- The [Power BI refresh summaries](/power-bi/connect-data/refresh-summaries) page in the admin portal includes a summary of the refresh history. This summary provides information about refresh duration and error messages.
-- The [Power BI Premium utilization and metrics app](/power-bi/enterprise/service-premium-metrics-app#refresh) also includes helpful refresh information. It's useful when you need to investigate refresh activity for a Power BI Premium capacity (P SKU) or Power BI Embedded (A SKU) capacity.
+- The [Power BI refresh summaries](../connect-data/refresh-summaries.md) page in the admin portal includes a summary of the refresh history. This summary provides information about refresh duration and error messages.
+- The [Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) also includes helpful refresh information. It's useful when you need to investigate refresh activity for a Power BI Premium capacity (P SKU), Power BI Embedded (A SKU) capacity, or Fabric capacities.
 
 ### Enhanced semantic model refreshes
 
-Content creators can initiate semantic model refreshes programmatically by using [enhanced refresh](/power-bi/connect-data/asynchronous-refresh#get-refreshes) with the [Refresh Dataset in Group](/rest/api/power-bi/datasets/refresh-dataset-in-group) Power BI REST API. When you use enhanced refresh, you can [monitor](/power-bi/connect-data/asynchronous-refresh#get-refreshes) the historical, current, and pending refresh operations.
+Content creators can initiate semantic model refreshes programmatically by using [enhanced refresh](../connect-data/asynchronous-refresh.md#get-refreshes) with the [Refresh Dataset in Group](/rest/api/power-bi/datasets/refresh-dataset-in-group) Power BI REST API. When you use enhanced refresh, you can [monitor](../connect-data/asynchronous-refresh.md#get-refreshes) the historical, current, and pending refresh operations.
 
 ### Data refresh schedule monitoring
 
@@ -410,30 +410,30 @@ You can retrieve data refresh history by using:
 **Checklist** - When planning for data refresh monitoring, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Determine specific goals:** When monitoring data refreshes, get clarity about exactly what you need to accomplish and what the scope of monitoring should be (for example, production semantic models, certified semantic models, and others).
-> - **Consider setting up an SLA:** Determine whether an SLA would be useful to set expectations for data availability and when data refresh schedules should run.
-> - **Collaborate with database and gateway administrators:** Work with your database or system administrator(s), and gateway administrators, to monitor or troubleshoot data refresh.
-> - **Knowledge transfer for support team:** Make sure that your support team knows how to help content creators when data refresh issues arise.
-> - **Update training and guidance:** Include key information and tips for data creators about how to refresh data from organizational data sources and common data sources. Include best practices and organizational preferences for how to manage data refresh.
-> - **Use a support email address for notifications:** For critical content, set up refresh notifications to use a support email address.
-> - **Set up centralized refresh monitoring:** Use the Power BI REST APIs to compile data refresh history.
+> - **Determine specific goals**: When monitoring data refreshes, get clarity about exactly what you need to accomplish and what the scope of monitoring should be (for example, production semantic models, certified semantic models, and others).
+> - **Consider setting up an SLA**: Determine whether an SLA would be useful to set expectations for data availability and when data refresh schedules should run.
+> - **Collaborate with database and gateway administrators**: Work with your database or system administrator(s), and gateway administrators, to monitor or troubleshoot data refresh.
+> - **Knowledge transfer for support team**: Make sure that your support team knows how to help content creators when data refresh issues arise.
+> - **Update training and guidance**: Include key information and tips for data creators about how to refresh data from organizational data sources and common data sources. Include best practices and organizational preferences for how to manage data refresh.
+> - **Use a support email address for notifications**: For critical content, set up refresh notifications to use a support email address.
+> - **Set up centralized refresh monitoring**: Use the Power BI REST APIs to compile data refresh history.
 
 ## Dataflow monitoring
 
-You create a Power BI [dataflow](/power-bi/transform-model/dataflows/dataflows-introduction-self-service) with Power Query Online. Many of the query performance features, and the Power Query diagnostics, which were [described earlier](#query-diagnostics), are applicable.
+You create a Power BI [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) with Power Query Online. Many of the query performance features, and the Power Query diagnostics, which were [described earlier](#query-diagnostics), are applicable.
 
-Optionally, you can set workspaces to use Azure Data Lake Storage Gen2 for [dataflow storage](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) (known as _bring-your-own-storage_) rather than internal storage. When you use bring-your-own-storage, consider [enabling telemetry](/azure/storage/blobs/data-lake-storage-best-practices#monitor-telemetry) so that you can monitor metrics for the storage account. For more information, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario, and the [advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario.
+Optionally, you can set workspaces to use Azure Data Lake Storage Gen2 for [dataflow storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md) (known as _bring-your-own-storage_) rather than internal storage. When you use bring-your-own-storage, consider [enabling telemetry](/azure/storage/blobs/data-lake-storage-best-practices#monitor-telemetry) so that you can monitor metrics for the storage account. For more information, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario, and the [advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario.
 
 You can use the Power BI REST APIs to monitor dataflow transactions. For example, use the [Get Dataflow Transactions](/rest/api/power-bi/dataflows/get-dataflow-transactions) API to check the status of dataflow refreshes.
 
 You can track user activities for Power BI dataflows with the Power BI activity log. For more information, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
 
 > [!TIP]
-> There are many best practices that you can adopt to optimize your dataflow designs. For more information, see [Dataflows best practices](/power-bi/transform-model/dataflows/dataflows-best-practices).
+> There are many best practices that you can adopt to optimize your dataflow designs. For more information, see [Dataflows best practices](../transform-model/dataflows/dataflows-best-practices.md).
 
 ## Datamart monitoring
 
-A Power BI [datamart](/power-bi/transform-model/datamarts/datamarts-overview) includes several integrated components, including a dataflow, a managed database, and a semantic model. Refer to the previous sections of this article to learn about auditing and monitoring of each component.
+A Power BI [datamart](../transform-model/datamarts/datamarts-overview.md) includes several integrated components, including a dataflow, a managed database, and a semantic model. Refer to the previous sections of this article to learn about auditing and monitoring of each component.
 
 You can track user activities for Power BI datamarts by using the Power BI activity log. For more information, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
 

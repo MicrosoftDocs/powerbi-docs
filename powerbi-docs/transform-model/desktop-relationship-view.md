@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 08/10/2023
+ms.date: 02/28/2025
 LocalizationGroup: Model your data
 ---
 # Work with Model view in Power BI Desktop
@@ -18,7 +18,7 @@ Select the **Model view** icon near the side of the window to see a view of the 
 
 :::image type="content" source="media/desktop-relationship-view/model-view-03.png" alt-text="Screenshot of Model view, the model view icon, and relationship details are highlighted." lightbox="media/desktop-relationship-view/model-view-03.png":::
 
-In the image, the *Connections* table has a *Seat ID* column that’s related to the *Unique Seats* table, which also has a *seatId* column. The two tables have a *Many to One* (\*:1) relationship. An arrow in the middle of the line shows the direction of the filter context flow. Double arrows would mean the cross-filter direction is set to *Both*.
+In the image, the *Connections* table has a *Seat ID* column related to the *Unique Seats* table, which also has a *seatId* column. The two tables have a *Many to One* (\*:1) relationship. An arrow in the middle of the line shows the direction of the filter context flow. Double arrows would mean the cross-filter direction is set to *Both*.
 
 You can double-click a relationship to open it in the **Edit relationship** dialog box. For more information about relationships, see [Create and manage relationships in Power BI Desktop](desktop-create-and-manage-relationships.md).
 

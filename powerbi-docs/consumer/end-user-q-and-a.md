@@ -1,13 +1,13 @@
 ---
 title: Q&A for Power BI business users
 description: Learn how you can use the Power BI Q&A feature and natural language capabilities with your report visuals.
-author: mihart
-ms.author: mihart
+author: kfollis
+ms.author: kfollis
 ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 01/10/2024
+ms.date: 01/10/2025
 ms.custom: Sales and marketing app, Retail analysis
 LocalizationGroup: Ask questions of your data
 ---
@@ -39,7 +39,7 @@ If you want a specific type of visual, tell Q&A which one to use by adding it to
 
 Q&A is available on dashboards in the Power BI service, and at the bottom of the dashboard in Power BI mobile. If the dashboard designer gave you edit permissions, save the visual by [pinning it to your dashboard](../create-reports/service-dashboard-pin-tile-from-q-and-a.md). 
 
-![Screenshot of Ask a question about your data in a red box on the visual dashboard.](media/end-user-q-and-a/power-bi-qna.png)
+![Screenshot of Ask a question about your data in a red box on the visual dashboard.](media/end-user-q-and-a/power-bi-qna-display.png)
 
 To learn more, see [Use Q&A on a dashboard.](../natural-language/end-user-q-and-a-tutorial.md)
 
@@ -75,7 +75,7 @@ Choose **Power BI Settings** > **Dashboards**. Highlight the dashboard that does
 
 **Answer**: Select the option to contact the report or dashboard owner. You can find the report or dashboard owner from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header. There are [many things the owner can do to improve the Q&A results](../natural-language/q-and-a-tooling-intro.md). For example, the owner can rename columns in the semantic model to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the owner knows the semantic model, they can also come up with helpful questions and add them to the Q&A suggested questions.
 
-![Screenshot of Display contact information.](media/end-user-q-and-a/power-bi-contact.png)
+![Screenshot of Display contact information.](media/end-user-q-and-a/power-bi-contacts.png)
 
 ## Privacy
 

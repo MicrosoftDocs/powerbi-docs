@@ -234,10 +234,11 @@ For tips about debugging your custom visual, see the [debugging guide](visuals-h
 
 Now that the visual is completed and ready to be used, it's time to package it. A packaged visual can be imported to Power BI reports or service to be used and enjoyed by others.
 
-When your visual is ready, follow the directions in [Package a Power BI visual](./package-visual.md) and then, if you want, share it with others so they can [import](./import-visual.md) and enjoy it. 
+When your visual is ready, follow the directions in [Package a Power BI visual](./package-visual.md) and then, if you want, share it with others so they can [import](./import-visual.md) and enjoy it.
 
 ## Related content
 
+* [Learn more about the new Format Pane](format-pane-general.md)
 * [Create a Power BI bar chart visual](create-bar-chart.md)
 * [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
 * [Power BI visuals project structure](visual-project-structure.md)

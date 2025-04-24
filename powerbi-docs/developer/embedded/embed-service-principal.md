@@ -13,7 +13,7 @@ ms.date: 11/14/2024
 
 # Embed Power BI content with service principal and an application secret
 
-Service principal is an authentication method that can be used to let an [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) application access Power BI service content and APIs.
+Service principal is an authentication method that can be used to let a [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) application access Power BI service content and APIs.
 
 When you create a Microsoft Entra app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Microsoft Entra ID to authenticate your app. After it's authenticated, the app can access Microsoft Entra tenant resources.
 
@@ -34,7 +34,7 @@ This article describes service principal authentication using an *application ID
 
 To use service principal and an application ID for embedded analytics, you take the following steps. Subsequent sections describe these steps in detail.
 
-1. Create an [Microsoft Entra app](/azure/active-directory/manage-apps/what-is-application-management).
+1. Create a [Microsoft Entra app](/azure/active-directory/manage-apps/what-is-application-management).
 
     1. Create a secret for your Microsoft Entra app.
     1. Get the app's *application ID* and *application secret*.
@@ -169,8 +169,8 @@ To create an Azure security group manually, follow the instructions in [Create a
 
 The following sample script creates a new security group. It also adds the service principal that you created earlier to the new security group.
 
-- Before you run the script, replace `<app-client-ID>` with the client ID that you recorded earlier for your new app.
-- After you run the script, make a note of the object ID of the new security group, which you can find in the script output.
+* Before you run the script, replace `<app-client-ID>` with the client ID that you recorded earlier for your new app.
+* After you run the script, make a note of the object ID of the new security group, which you can find in the script output.
 
 ```powershell
 # Sign in as an admin.
@@ -264,8 +264,8 @@ Add-PowerBIWorkspaceUser -Id $($pbiWorkspace.Id) -AccessRight Member -PrincipalT
 
 The following script adds a security group as a workspace member. Before you run the script:
 
-- Replace `<security-group-object-ID>` with the object ID that you recorded earlier for your new security group.
-- Replace `<workspace-name>` with the name of the workspace that you'd like to give the security group access to.
+* Replace `<security-group-object-ID>` with the object ID that you recorded earlier for your new security group.
+* Replace `<workspace-name>` with the name of the workspace that you'd like to give the security group access to.
 
 ```powershell
 # Sign in to Power BI.

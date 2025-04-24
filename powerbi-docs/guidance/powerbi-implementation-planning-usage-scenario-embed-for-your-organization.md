@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 01/16/2023
+ms.date: 12/30/2024
 ---
 
 # Power BI usage scenarios: Embed for your organization
@@ -31,11 +31,11 @@ The following diagram depicts a high-level overview of the most common user acti
 
 The above diagram depicts the following user actions, tools, and features:
 
-| **Item** | **Description** |
+| Item | Description |
 | --- | --- |
-| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution by using [Power BI Desktop](/power-bi/fundamentals/desktop-what-is-desktop). |
-| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file (.pbix) or Power BI project file (.pbip) to the [Power BI service](/power-bi/fundamentals/power-bi-service-overview). |
-| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Some data sources may require an [On-premises data gateway](/power-bi/connect-data/service-gateway-onprem) or VNet gateway for data refresh, like those that reside within a private organizational network. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution by using [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md). |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file (.pbix) or Power BI project file (.pbip) to the [Power BI service](../fundamentals/power-bi-service-overview.md). |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Some data sources may require an [On-premises data gateway](../connect-data/service-gateway-onprem.md) or VNet gateway for data refresh, like those that reside within a private organizational network. |
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | A Power BI workspace contains Power BI items ready for embedding. For non-personal workspaces, users of the custom application have [permission to view (or create or modify) Power BI content](powerbi-implementation-planning-security-report-consumer-planning.md) because they belong to a workspace role or they have direction permissions. |
 | ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | The custom application prompts the app user to authenticate with Microsoft Entra ID. When authentication succeeds, the custom application caches a Microsoft Entra access token. |
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The custom application uses the Microsoft Entra access token to make Power BI REST API calls on behalf of the app user. Specifically, the application uses the access token to retrieve metadata about workspace items. Metadata includes properties required to embed content in the custom application. |
@@ -50,21 +50,21 @@ The following are some key points to emphasize about programmatically embed Powe
 
 There are several reasons why you might embed Power BI content for your organization.
 
-- **Internal business intelligence portal:** You might want to create an internal business intelligence (BI) portal as a replacement for the Power BI service. That way, you can create a custom application that integrates content from Power BI and other BI tools.
-- **Internal app:** You might want to develop an intranet app that shows data visualizations. For example, an intranet site for a manufacturing department could show real-time visuals that provide up-to-date information about the production line.
-- **Customized logging:** You might want to log custom events to record Power BI content access and use, beyond what the [activity log](/power-bi/enterprise/service-admin-auditing) records.
+- **Internal business intelligence portal**: You might want to create an internal business intelligence (BI) portal as a replacement for the Power BI service. That way, you can create a custom application that integrates content from Power BI and other BI tools.
+- **Internal app**: You might want to develop an intranet app that shows data visualizations. For example, an intranet site for a manufacturing department could show real-time visuals that provide up-to-date information about the production line.
+- **Customized logging**: You might want to log custom events to record Power BI content access and use, beyond what the [activity log](../enterprise/service-admin-auditing.md) records.
 
 > [!TIP]
-> If you're looking to create a BI portal styled for your organization, you might be able to achieve that by simply adding [custom branding to the Power BI service](/power-bi/admin/service-admin-custom-branding).
+> If you're looking to create a BI portal styled for your organization, you might be able to achieve that by simply adding [custom branding to the Power BI service](/fabric/admin/service-admin-custom-branding).
 
 ### No-code embedding
 
 Developing a programmatic solution requires skill, time, and effort. Consider that there are embedding techniques known as _no-code embedding_ that non-developers can use to embed content in a simple internal portal or website.
 
-- Use the [Power BI report web part](/power-bi/collaborate-share/service-embed-report-spo) to embed Power BI reports in SharePoint Online.
-- Use a [secure embed code](/power-bi/collaborate-share/service-embed-secure) (or HTML) that's generated by Power BI to embed Power BI reports in internal web portals.
+- Use the [Power BI report web part](../collaborate-share/service-embed-report-spo.md) to embed Power BI reports in SharePoint Online.
+- Use a [secure embed code](../collaborate-share/service-embed-secure.md) (or HTML) that's generated by Power BI to embed Power BI reports in internal web portals.
 - Embed Power BI reports or dashboards in [Power Pages](/power-apps/maker/portals/add-powerbi).
-- [Embed reports in a Microsoft Teams channel or chat](/power-bi/collaborate-share/service-embed-report-microsoft-teams).
+- [Embed reports in a Microsoft Teams channel or chat](../collaborate-share/service-embed-report-microsoft-teams.md).
 
 These techniques require that report consumers belong to the organization, be authenticated, and have permission to access the reports. Power BI ensures that all permissions and data security are enforced when consumers view the reports. Sometimes, users might be challenged to authenticate by signing in to Power BI.
 
@@ -100,23 +100,21 @@ The application can set up and automate operations, and it can respond to user-i
 > [!TIP]
 > The _Power BI Embedded Analytics Playground_ is a website that helps you learn, explore, and experiment with Power BI embedded analytics. It includes a developer sandbox for hands-on experiences that use the client APIs with sample Power BI content or your own content. Code snippets and showcases are available for you to explore, too.
 >
-> For more information, see [What is the Power BI embedded analytics playground?](/power-bi/developer/embedded/power-bi-playground/)
+> For more information, see [What is the Power BI embedded analytics playground?](https://go.microsoft.com/fwlink/?linkid=848279)
 
 ### Gateway setup
 
-Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), or view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) semantic model.
+Typically, a [data gateway](../connect-data/service-gateway-onprem.md) is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) semantic model.
 
 > [!NOTE]
-> A centralized [data gateway](/power-bi/connect-data/service-gateway-personal-mode#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in _standard mode_ is strongly recommended over gateways in [personal mode](/power-bi/connect-data/service-gateway-personal-mode). In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).
+> A centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in _standard mode_ is strongly recommended over gateways in [personal mode](../connect-data/service-gateway-personal-mode.md). In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).
 
 ### System oversight
 
-The [activity log](/power-bi/enterprise/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. Logged events will describe the consumption method as _Embedding for your organization_. There's presently no way to determine whether content was viewed in a no-code embedding experience in a custom application.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. Logged events will describe the consumption method as _Embedding for your organization_. There's presently no way to determine whether content was viewed in a no-code embedding experience in a custom application.
 
 ## Related content
 
 To learn more about Power BI embedded analytics, work through the [Embed Power BI analytics](/training/paths/power-bi-embedded/) learning path.
-
-You can also work through the [Power BI Developer in a Day course](/power-bi/learning-catalog/developer-online-course/). It includes a self-study kit that guides you through the process of developing an ASP.NET Core MVC app.
 
 For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.

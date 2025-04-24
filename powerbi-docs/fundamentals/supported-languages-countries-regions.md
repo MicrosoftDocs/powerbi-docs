@@ -1,8 +1,8 @@
 ---
 title: Supported languages and countries/regions for Power BI
 description: See the lists of supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation.
-author: mihart
-ms.author: mihart
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

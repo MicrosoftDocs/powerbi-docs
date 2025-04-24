@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/29/2024
+ms.date: 03/11/2025
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service
@@ -74,7 +74,8 @@ To create a **Workspace identity**, follow these steps:
 
 Keep the following considerations in mind when creating or using a **Workspace identity**:
 
-* **Workspace identity** is only supported with Fabric data sources
+* **Workspace identity** is supported with Fabric data sources.
+* **Workspace identity** is also supported for Power BI semantic models. Set the *Authentication method* in the Analysis Services data connection to **Workspace identity**. For **Workspace identity** authentication to work properly your organization must enable the tenant setting **Service principals can use Fabric APIs** because Analysis Services data connections must resolve the connection name to a workspace and to the target semantic model by using Fabric REST APIs.
 * The connection type being used must support the **Workspace identity** authentication type, which includes SQL Server and ADLS connectors. For the connection type being used, if there's a **Workspace identity** option under the *Authentication* setting, then that connector is supported.
 
 
@@ -105,7 +106,7 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 
 * **Shareable cloud connections also share your credentials** - when you allow others to user your shareable cloud connections, it's important to understand that you're letting others connect their own semantic models, paginated reports, and other artifacts to the corresponding data sources by using the connection details and credentials you provided. Make sure you only share connections (and their credentials) that you're authorized to share.
 
-* **Every user is limited to maximum 1000 data source connections in every cloud tenant**: If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit of 1000 connections. To resolve any related issues, you can manually remove existing data sources from the admin center or, alternatively, use the following PowerShell script to find and bulk-delete any data sources that exceed that limit.
+* **Every user is limited to maximum 1000 data source connections in every cloud tenant**: If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit of 1,000 connections. To resolve any related issues, you can manually remove existing data sources from the admin center or, alternatively, use the following PowerShell script to find and bulk-delete any data sources that exceed that limit.
 
   ```powershell
   ## required module "mcirosoftpowerbimgmt" Install-Module -Name DataGateway and sign in the same user who exceeded the 1000 limit

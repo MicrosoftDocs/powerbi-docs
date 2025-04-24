@@ -1,8 +1,8 @@
 ---
 title: How to pin a tile to a dashboard from Q&A
 description: Learn how to pin a tile to a Power BI dashboard from the Q&A question box by using natural language.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -112,10 +112,12 @@ public update(options: VisualUpdateOptions): void
 * `operationKind?: VisualDataChangeOperationKind` - flag indicating type of data change (**Create** | **Append**)
 * `jsonFilters?: IFilter[]` - collection of applied json filters
 * `isInFocus?: boolean` - flag to indicate if the visual is in focus mode or not
+* `pendingChanges?: PendingChanges` - flag to indicate that local filter changes are made but yet applied to the report, usually triggered when **apply all slicers** button exists `pendingChanges[Filter]: boolean`
+
 
 ## getFormattingModel *(optional)*
 
-This method is called once each time we open the properties pane or the user edits any of the properties in the pane. It returns [`FormattingModel`](./format-pane.md) with all information on the properties pane design, hierarchy, properties, and latest formatting values.
+This method is called once each time we open the properties pane or the user edits any of the properties in the pane. It returns [`FormattingModel`](./format-pane-general.md) with all information on the properties pane design, hierarchy, properties, and latest formatting values.
 
 ```typescript
 getFormattingModel(): visuals.FormattingModel;

@@ -1,9 +1,9 @@
 ---
 title: Find content from Power BI service Home
 description: Open reports, dashboards, apps, and workspaces from the Power BI service Home. Learn how to change your layout and feature your important content.
-author: mihart
-ms.author: mihart
-ms.reviewer: maggies
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Find your content
@@ -132,7 +132,7 @@ The following example shows what your workspace looks like if it's empty.
 
 :::image type="content" source="./media/end-user-home/power-bi-empty-workspace.png" alt-text="A screenshot of an empty workspace in the Power BI service.":::
 
-If someone in your organization adds you to a workspace, it appears in your list of workspaces. Over time, you might have more than one workspace. For example, your coworkers can add you to a workspace by giving you a role, such as Member, Contributor, or Viewer. If you [download a template app](end-user-app-marketing.md) from outside your organization, you get an app and a new workspace. You can also create workspaces if you have a paid license. To open a workspace, select it from the nav pane.
+If someone in your organization adds you to a workspace, it appears in your list of workspaces. Over time, you might have more than one workspace. For example, your coworkers can add you to a workspace by giving you a role, such as Member, Contributor, or Viewer. If you download a template app from outside your organization, you get an app and a new workspace. You can also create workspaces if you have a paid license. To open a workspace, select it from the nav pane.
 
 :::image type="content" source="./media/end-user-home/power-bi-workspace-lists.png" alt-text="A screenshot of Workspaces in the navigation pane.":::
 
@@ -150,4 +150,4 @@ To search, use the search field, which is in the upper right corner of the Home 
 
 ## Related content
 
-- Overview of the [Power BI basic concepts](end-user-basic-concepts.md) 
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)

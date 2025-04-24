@@ -1,8 +1,8 @@
 ---
 title: "Expressions in Power BI Report Builder"
 description: Learn how expressions are used throughout Power BI Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.date: 01/18/2023
 ms.service: powerbi
 ms.subservice: report-builder

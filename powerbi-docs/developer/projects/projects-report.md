@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/13/2024
+ms.date: 04/22/2025
 ---
 
 # Power BI Desktop project report folder
@@ -70,7 +70,7 @@ Contains data model diagrams describing the structure of the semantic model asso
 
 #### definition.pbir
 
-Contains the overall definition of a report and core settings. This file also holds the reference to the semantic model used by the report. Power BI Desktop can open a pbir file directly, just the same as if the report were opened from a pbip file. Opening a pbir also opens the semantic model alongside if there's a relative reference using `byPath`.
+Contains the overall definition of a report and core settings. This file also holds the reference to the semantic model used by the report. Power BI Desktop can open a PBIR file directly, just the same as if the report were opened from a PBIP file. Opening a PBIR file also opens the semantic model alongside if there's a relative reference using `byPath`.
 
 Example definition.pbir:
 
@@ -101,6 +101,8 @@ Using a `byConnection` reference, the following properties must be specified:
 |pbiModelDatabaseName     |   The remote semantic model ID.      |
 |connectionType     |   Type of connection. For service remote semantic model, this value should be `pbiServiceXmlaStyleLive`.      |
 |pbiModelVirtualServerName    |  An internal property that should have the value, `sobe_wowvirtualserver`.       |
+|pbiServiceModelId    |  An internal property that should have the value, `null`.       |
+|name    |  An internal property that should have the value, `EntityDataSource`.       |
 
 Example using `byConnection`:
 
@@ -110,17 +112,20 @@ Example using `byConnection`:
   "datasetReference": {
     "byPath": null,
     "byConnection": {
-      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/WorkpaceName;Initial Catalog=SemanticModelName;Integrated Security=ClaimsToken",
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName];Initial Catalog=[SemanticModelName];Integrated Security=ClaimsToken",
       "pbiServiceModelId": null,
       "pbiModelVirtualServerName": "sobe_wowvirtualserver",
-      "pbiModelDatabaseName": "e244efd3-e253-4390-be28-6be45d9da47e",
+      "pbiModelDatabaseName": "[Semantic Model Id]",
       "connectionType": "pbiServiceXmlaStyleLive",
       "name": "EntityDataSource"
     }
   }
 }
 ```
-When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. However, only the definition.pbir file is not ignored when importing the definition through Fabric Git.
+> [!IMPORTANT]
+> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you must use `byConnection` references.
+
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
 
 ```md
   ├── definition\
@@ -129,13 +134,12 @@ When the semantic model and report share the same workspace, [Fabric Git Integra
   ├── definition-liveConnect.pbir
   └── definition.pbir
 ```
-
 This file also specifies the supported report definition formats through the 'version' property.
 
 | Version  | Supported formats    |
 |----------|----------------------------|
 | 1.0      | Report definition must be stored as PBIR-Legacy in the report.json file. |
-| 4.0 or above | Report definition can be stored as PBIR-Legacy (report.json file) or [PBIR](#pbir-format) (\definition folder). |
+| 4.0 or higher | Report definition can be stored as PBIR-Legacy (report.json file) or [PBIR](#pbir-format) (\definition folder). |
 
 For more information, see the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
 
@@ -157,23 +161,23 @@ Fabric platform file that holds properties vital for establishing and maintainin
 
 To learn more, see [Git integration automatically generated system files](/fabric/cicd/git-integration/source-code-format#automatically-generated-system-files).
 
-
 ## PBIR format
 
 > [!IMPORTANT]
-> Please consider all the PBIR [limitations](#pbir-considerations-and-limitations) during the preview phase.
+> Consider all the PBIR [limitations](#pbir-considerations-and-limitations) during the preview phase.
 
 Saving your Power BI Project files (PBIP) using the Power BI Enhanced Report Format (PBIR) greatly improves change tracking and merge conflict resolution by using properly formatted JSON files.
 
 :::image type="content" source="./media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
 
-Each page, visual, bookmark, etc., is organized into a separate, individual file within a folder structure. This format is ideal for co-development conflict resolution.
+Each page, visual, bookmark, etc., is organized into a separate, individual file within a folder structure. This format is ideal for codevelopment conflict resolution.
 
 :::image type="content" source="./media/projects-report/pbir-folder.png" alt-text="Screenshot of friendly PBIR folder.":::
 
 Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format that supports modifications from non-Power BI applications. Each file has a public JSON schema, which not only documents the file but also lets code editors like Visual Studio Code perform syntax validation while editing.
 
 Some of the possible scenarios now available with PBIR include:
+
 - Copy pages/visuals/bookmarks between reports.
 - Ensure consistency of a set of visuals across all pages, by copying & pasting the visual files.
 - Easy find and replace across multiple reports files.
@@ -189,11 +193,11 @@ Go to **File > Options and settings > Options > Preview features** and check the
 
 With the PBIR Preview feature enabled, when you save a project, your report is saved within a folder named *\definition* inside of [report folder](./projects-report.md):  
 
-:::image type="content" source="./media/projects-report/pbip-pbir-definitionfolder.png" alt-text="Screenshot of the definition folder inside a report pbip folder.":::
+:::image type="content" source="./media/projects-report/pbip-pbir-definitionfolder.png" alt-text="Screenshot of the definition folder inside a report PBIP folder.":::
 
 Learn more about the [PBIR folder structure](#pbir-folder-and-files).
 
-### Convert existing PBIP to PBIR
+### Convert existing report to PBIR
 
 If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR as follows:
 
@@ -205,24 +209,15 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
     :::image type="content" source="./media/projects-report/pbir-upgrade.png" alt-text="Screenshot of prompt to upgrade to PBIR.":::
 
     > [!IMPORTANT]
-    > Once you upgrade to PBIR, you can't revert back to PBIR-Legacy. If you think you might want to revert back to PBIR-Legacy, save a copy of your PBIP files first.
+    > Once you upgrade to PBIR, you can't revert back to PBIR-Legacy from the UI. To revert back to PBIR-Legacy, save a copy of your PBIP files.
+    >
+    > Power BI Desktop automatically creates a backup of the report before upgrading to PBIR. This backup is retained for 30 days in one of the following locations: 
+    > - Microsoft Store version: `%USERPROFILE%\Microsoft\Power BI Desktop Store App\TempSaves\Backups`  
+    > - Executable installer version: `%USERPROFILE%\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Backups`
 
 The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* folder containing the PBIR representation of the report.
 
-If you select to **Keep current** format, Desktop don't prompt again to upgrade.
-
-### Publish a PBIR report to service
-
-While in the **preview** phase, the only way to publish a report with the PBIR format is through [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration). This involves connecting the workspace to a Git repository and pushing the PBIR report to it, which can then be synchronized with the service workspace at a later stage.
-
-If you wish to convert an existing report to PBIR in the service, follow these steps:
-
-1. Connect your workspace to Git.
-1. Clone the Git repository to your local file system.
-1. Open the report in Power BI Desktop by opening the `definition.pbir` file.
-1. Save the report and choose to upgrade to PBIR.
-1. Commit and sync the changes to Git.
-1. Update the workspace with the latest changes from Git.
+If you select to **Keep current** format, Desktop won't prompt again to upgrade.
 
 ### PBIR folder and files
 
@@ -263,7 +258,7 @@ The report definition is stored inside the `definition\` folder with the followi
 |report.json                       |Yes      |Report metadata, such as report level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/report)
 
 > [!IMPORTANT]
-> Some report metadata files, such as visual.json or bookmarks.json, may be saved with data values from your semantic model. For instance, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will be persisted as part of the metadata. This also applies to other configurations like slicer selections, matrix custom columns width, and formatting for specific series.
+> Some report metadata files, such as visual.json or bookmarks.json, can be saved with data values from your semantic model. For instance, if you apply a filter to a visual for the field 'Company' = 'Contoso', the value 'Contoso' will persist as part of the metadata. This also applies to other configurations like slicer selections, matrix custom columns width, and formatting for specific series.
 
 #### PBIR naming convention
 
@@ -274,6 +269,40 @@ All names inside the square brackets ([]) in the preceding table follow a defaul
 Renaming the 'name' property within each JSON file is supported but might break external references both inside and outside the report. The object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
 
 After renaming any PBIR files or folders, you must restart Power BI Desktop. Upon restart, Power BI Desktop will preserve the original file or folder names when saving.
+
+#### Copy report object name
+
+Each object in the report is saved in a separate folder or file, but the name of the folder isn't always obvious. To make this easier, you can copy the name of any report object name (including pages, visuals, bookmarks, and filters) directly from Power BI to your clipboard.
+
+:::image type="content" source="./media/projects-report/computer-ai-generated-report.png" alt-text="Screenshot of a report with an arrow pointing from one of the visuals to the name of its corresponding file.":::
+
+##### [From the desktop](#tab/desktop)
+
+1. Go to **File > Options and settings > Report settings > Report objects** and enable the *Copy object names when right clicking on report objects* setting. This only needs to be done once.
+
+   :::image type="content" source="./media/projects-report/report-objects-check-box.png" alt-text="Screenshot of the report objects report settings.":::
+
+1. Right click on any report object and select *Copy object name*.
+
+   :::image type="content" source="./media/projects-report/copy-object-name.png" alt-text="Screenshot of a desktop report with copy object name selected.":::
+
+With the object name copied to your clipboard, you can easily enter it into the search bar of Windows Explorer or Visual Studio Code to locate or identify the object name within the PBIR folder.
+
+:::image type="content" source="./media/projects-report/search-object-name.png" alt-text="Screenshot of search bar with name of object.":::
+
+##### [From the service](#tab/service)
+
+1. Enable the *Copy object names when right clicking on report objects* setting. This only needs to be done once. You don't need to enable it for each report.
+
+    :::image type="content" source="./media/projects-report/report-settings-service.png" alt-text="Screenshot of the report settings with the switch enabled.":::
+
+1. When editing a report, right click on any report object and select *Copy object name*.
+
+    :::image type="content" source="./media/projects-report/copy-object-name-service.png" alt-text="Screenshot of a service report with copy object name selected.":::
+
+You can use the copied object for identifying file names in PBIR file format, or for performance troubleshooting through Workspace Monitoring or Log Analytics to link the DAX query to a visual in the report.
+
+---
 
 ### PBIR Json Schemas
 
@@ -287,7 +316,7 @@ All the JSON schemas are published [here](https://github.com/microsoft/json-sche
 
 ### PBIR annotations
 
-You can include annotations as name-value pairs within the report definition for each `visual`, `page` and `report`. While Power BI Desktop will ignore these annotations, they can be valuable for external applications like scripts. 
+You can include annotations as name-value pairs within the report definition for each `visual`, `page` and `report`. While Power BI Desktop ignores these annotations, they can be valuable for external applications like scripts. 
 
 For instance, you could specify the defaultPage for the report at the `report.json` file, which can then be utilized by a deployment script.
 
@@ -349,16 +378,14 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 
 **Solution:** The pageBinding object is necessary to support drillthrough and page tooltips. Since they might be referenced by other pages, the name must be unique within the report. On the newly copied page, assign a unique value to resolve the error. After June 2024, this situation is no longer an issue because the pageBinding name is a GUID by default.
 
-
 ### PBIR considerations and limitations
 
-PBIR is currently in **preview**. Keep the following in mind:
+PBIR is currently in **preview**. Keep the following limitations in mind:
 
 - Service limitations/bugs
-  - Mobile views are not displayed in Power BI Apps.
-  - Hidden pages are exposed in Power BI Apps navigation.
   - Can't be deployed with deployment pipelines.  
-  - Can't be saved as a copy.    
+  - Can't be saved as a copy.
+  - Can't use Power BI Report APIs: [Clone Report](/rest/api/power-bi/reports/clone-report-in-group), [Update Report Content](/rest/api/power-bi/reports/update-report-content-in-group)
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
@@ -372,8 +399,8 @@ PBIR size limitations enforced by the service:
 - 5 mb max for each bookmark file.
 - 1 mb max for each file.
 - 1,000 max resource package files per report.
-- 300 mb max size for all resource package files.
-- 20 mb max size of all report files.
+- 300-mb max size for all resource package files.
+- 20-mb max size of all report files.
 
 During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features start exporting the report definition using PBIR format.
 

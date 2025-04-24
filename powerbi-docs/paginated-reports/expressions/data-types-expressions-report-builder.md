@@ -1,8 +1,8 @@
 ---
 title: "Data types in expressions in a paginated report"
 description: Explore how data types represent different kinds of data in a paginated report so that the data can be stored and processed in Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: rpatkar
 ms.date: 06/16/2023
 ms.service: powerbi

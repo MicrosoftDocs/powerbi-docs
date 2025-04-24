@@ -9,12 +9,15 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 07/18/2024
+ms.date: 01/19/2025
+#customer intent: As a Power BI Embedded capacity admin, I want to learn how to pause and start my capacity in the Azure portal to prevent billing when the capacity isn't needed.
 ---
 
-# Pause and start your Power BI Embedded capacity in the Azure portal
+# Pause and start your Power BI Embedded A SKU capacity in the Azure portal
 
 This article walks through how to pause and start a Power BI Embedded capacity in Microsoft Azure. This article assumes you have a Power BI Embedded capacity. If you haven't, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md) to get started.
+
+This information only applies to A SKU embedded capacities. EM SKU embedded capacities don't work the same way. For information on pausing F SKU capacities, see [Pause and resume your capacity](/fabric/enterprise/pause-resume).
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/14/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
 # Configure dataflow storage to use Azure Data Lake Gen 2
@@ -30,7 +30,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - The user must have Storage Blob Data Owner role, Storage Blob Data Reader role, and an Owner role at the storage account level (scope should be *this resource* and not inherited). Any applied role changes might take a few minutes to sync, and must sync before the following steps can be completed in the Power BI service.
 
-- The Power BI workspace tenant region should be the same as the storage account region.
+- For Pro workspaces the storage account should be in the same region as the Fabric home region. For premium workspaces the storage account should be in the same region as the premium capacity.
 
 - TLS (Transport Layer Security) version 1.2 (or higher) is required to secure your endpoints. Web browsers and other client applications that use TLS versions earlier than TLS 1.2 won't be able to connect.
 
@@ -39,7 +39,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 - Finally, you can connect to any ADLS Gen 2 [from the Admin portal](/power-bi/admin/service-admin-portal-azure-connections#workspace-level-storage-permissions), but if you connect directly to a workspace, you must first ensure there are no dataflows in the workspace before connecting.
 
 > [!NOTE]
-> Bring your own storage (Azure Data Lake Gen 2) is not available in the Power BI service for U.S. Government GCC customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
+> Bring your own storage (Azure Data Lake Gen 2) isn't available in the Power BI service for U.S. Government GCC customers. For more information about which features are available, and which aren't, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
 
 The following table describes the permissions for ADLS and for Power BI required for ADLS Gen 2 and Power BI:
 
@@ -65,7 +65,7 @@ When you select **Connect to Azure**, Power BI retrieves a list of Azure subscri
 
 :::image type="content" source="media/dataflows-azure-data-lake-storage-integration/subscription-details-enter.png" alt-text="Screenshot of the Settings window after choosing Connecting to Azure.":::
 
-After you choose your selected, select **Save** and you now have successfully connected the workspace to your own ADLS Gen2 account. Power BI automatically configures the storage account with the required permissions, and sets up the Power BI filesystem where the data will be written. At this point, every dataflow’s data inside this workspace will write directly to this filesystem, which can be used with other Azure services. You now have a single source for all of your organizational or departmental data.
+After you choose your selected, select **Save** and you now have successfully connected the workspace to your own ADLS Gen2 account. Power BI automatically configures the storage account with the required permissions, and sets up the Power BI filesystem where the data will be written. At this point, every dataflow’s data inside this workspace writes directly to this filesystem, which can be used with other Azure services. You now have a single source for all of your organizational or departmental data.
 
 ## Azure connections configuration
 
@@ -102,11 +102,11 @@ In the preceding image:
 We only write to this storage account and don't currently delete data. So even after detach, we don’t delete from the ADLS account, so all of the files mentioned in the preceding list are still stored.
 
 > [!NOTE]
-> Dataflows allow linking or referencing tableds in other dataflows. In such dataflows, the *model.json* file can refer to another *model.json* of another dataflow in the same or other workspace.
+> Dataflows allow linking or referencing tables in other dataflows. In such dataflows, the *model.json* file can refer to another *model.json* of another dataflow in the same or other workspace.
 
 ## Moving files between/within ADLS Gen 2 storage accounts
 
-When you move a dataflow from one ADLS Gen2 storage account to another, you need to make sure that the paths in the *model.json* file are updated to reflect the new location. This is because the *model.json* file contains the path to the dataflow and the path to the data. If you don't update the paths, the dataflow will not be able to find the data and causes permission errors. To update the paths, you can use the following steps:
+When you move a dataflow from one ADLS Gen2 storage account to another, you need to make sure that the paths in the *model.json* file are updated to reflect the new location. This is because the *model.json* file contains the path to the dataflow and the path to the data. If you don't update the paths, the dataflow won't be able to find the data and causes permission errors. To update the paths, you can use the following steps:
 
 - Open the *model.json* file in a text editor.
 - Find the storage account URL and replace it with the new storage account URL.
@@ -119,7 +119,7 @@ If you're connecting ADLS Gen 2 to Power BI, you can do this action at the works
 
 The storage structure adheres to the Common Data Model format. Learn more about the storage structure and CDM by visiting [What is the storage structure for analytical dataflows](/power-query/dataflows/what-is-the-cdm-storage-structure-for-analytical-dataflows) and [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](/common-data-model/data-lake).
 
-After it's properly configured, the data and metadata is in your control. Many applications are aware of the CDM and the data can be extended by using Azure, PowerApps, and PowerAutomate. You can also use third-party ecosystems either by conforming to the format or by reading the raw data.
+After it's properly configured, the data and metadata is in your control. Many applications are aware of the CDM and the data can be extended by using Azure, PowerApps, and Power Automate. You can also use third-party ecosystems either by conforming to the format or by reading the raw data.
 
 ## Detach Azure Data Lake Gen 2 from a workspace or tenant
 

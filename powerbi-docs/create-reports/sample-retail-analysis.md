@@ -1,8 +1,8 @@
 ---
 title: 'Retail Analysis sample for Power BI: Take a tour'
 description: Learn how to use Power BI with business-oriented data, reports, and dashboards, with this retail analysis sample.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

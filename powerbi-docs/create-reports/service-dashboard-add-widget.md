@@ -1,31 +1,37 @@
 ---
 title: Add images, videos, and more to your dashboard
-description: Documentation on how to use the Add tile widget to add an image, video, text box, web code, and streaming data tile to a dashboard.
-author: maggiesMSFT
-ms.author: maggies
+description: Documentation on how to use the Add a tile widget to add an image, video, text box, web code, or streaming data tile to a dashboard.
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.custom: video-removed, video-removed, video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/25/2022
+ms.date: 02/20/2025
 LocalizationGroup: Dashboards
+#customer intent: As a Power BI dashboard designer, I want to add images, videos, and other content to my dashboard so that I can make it more informative, interactive, and visually appealing.
 ---
 
 # Add images, videos, and more to your dashboard
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-By adding a tile to your dashboard, you can place an image, text box, video, streaming data, or web code on your dashboard.
+By adding a tile to your dashboard, you can place an image, text box, video, streaming data, or web code on your dashboard. This article takes you through the steps of adding different types of content to dashboards, making them more informative, interactive, and visually appealing.
+
+> [!NOTE]
+> You must have permission to edit the dashboard, or you won't see the same options described here. Certain content might also be disabled by your administrator.
+>
 
 ## Add an image, video, or other tile
 
 You can add an image, text box, video, streaming data, or web code directly to your dashboard.
 
-1. Select the arrow next to **Edit** on the top menu, and then select **Add a tile**.
+1. Select the arrow next to **Edit** in the top menu, then select **Add a tile**.
 
-    ![Screenshot showing the Add s tile selection.](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
-2. Select which type of tile to add: 
+    ![Screenshot showing the Add a tile selection.](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
+
+2. Select which type of tile to add:
 
     **[Web content](#add-web-content)**
 
@@ -41,9 +47,11 @@ You can add an image, text box, video, streaming data, or web code directly to y
 
 ## Add an image
 
-If you want to add your company logo or some other image to your dashboard, you save the image file online and link to it. Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way. Also, images can't be in .svg format.  
+If you want to add your company logo or some other image to your dashboard, save the image file online and link to it. Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way. Host your image on a web server where they can be accessed via public URLs without authentication.
 
-1. From the **Add tile** window, select **Image** > **Next**.
+Note that images can't be in .svg format.
+
+1. From the **Add a tile** window, select **Image** > **Next**.
 
 2. From the **Add image tile** window, add the image information:
 
@@ -67,7 +75,7 @@ If you want to add your company logo or some other image to your dashboard, you 
 
 To add a dashboard heading, type your heading in the text box and increase the font.
 
-1. From the **Add tile** window, select **Text box** > **Next**.
+1. From the **Add a tile** window, select **Text box** > **Next**.
 
 2. Format the text box:
 
@@ -89,7 +97,7 @@ To add a dashboard heading, type your heading in the text box and increase the f
 
 When you add a YouTube or Vimeo video tile to your dashboard, the video plays right on your dashboard.
 
-1. From the **Add tile** window, select **Video** > **Next**.
+1. From the **Add a tile** window, select **Video** > **Next**.
 2. Add video information in the **Add video tile** window:
 
    a. To display a title and subtitle at the top of the video tile, select **Display title and subtitle** and enter a **Title** and an optional **Subtitle**. In this example, we'll add a **Subtitle**, and then convert it to a hyperlink to the entire YouTube playlist.
@@ -110,62 +118,13 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 
 ## Add streaming data
 
-You can use PubNub to add streaming data, such as Twitter feeds or sensor data, to a tile in your dashboard. Power BI has created an integration to get the data from PubNub.
-
-1. From the **Add tile** window, select **Custom Streaming Data** > **Next**.
-2. Select **Add streaming dataset**.
-3. Create a **New streaming dataset** using the Power BI API or PubNub.
-4. Fill in the fields for **Dataset name**, **Subscription key**, and **Channel name**. If it's a secure connection, it also has an authorization key. You can use the sample values from PubNub to try it out.
-5. Select **Next**.
-    You see the fields that are available in the dataset, with their data types and JSON format.
-6. Select **Connect**.
-    You have created a streaming dataset.
-7. Go back to the dashboard and again select **Add tile** > **Custom Streaming Data** > **Next**.
-8. Select the sensor data dataset you created > **Next**.
-9. Select the visual type you want. Often a line chart works well for this data.
-10. Select the **Axis**, **Legend**, and **Values**.
-11. Decide the amount of time you want to display, either in seconds, minutes, or hours.
-12. Select **Next**.
-13. Give it a **Title** and **Subtitle**, if you want.
-14. Pin it to your dashboard.
-
-1. From the **Add tile** window, select **Custom Streaming Data** > **Next**.
-
-2. Select **Add streaming dataset**.
-
-3. Create a **New streaming dataset** using the Power BI API or PubNub.
-
-4. Fill in the fields for **Dataset name**, **Subscription key**, and **Channel name**. If it's a secure connection, it also has an authorization key. You can use the sample values from PubNub to try it out.
-
-5. Select **Next**.
-
-   You see the fields that are available in the dataset, with their data types and JSON format.
-
-6. Select **Connect**.
-
-   You've created a streaming dataset.
-
-7. Go back to the dashboard and again select **Add tile** > **Custom Streaming Data** > **Next**.
-
-8. Select the sensor data dataset you created > **Next**.
-
-9. Select the visual type you want. Often a line chart works well for this data.
-
-10. Select the **Axis**, **Legend**, and **Values**.
-
-11. Decide the amount of time you want to display, either in seconds, minutes, or hours.
-
-12. Select **Next**.
-
-13. Optionally, give it a **Title** and **Subtitle**.
-
-14. Pin it to your dashboard.
+You can add streaming data, such as Twitter feeds or sensor data, to a tile in your dashboard. [This example of real-time streaming in Power BI](../connect-data/service-real-time-streaming.md#example-of-real-time-streaming-in-power-bi) using a publicly available stream from PubNub has detailed instructions to get you started. Read the rest of [that article](../connect-data/service-real-time-streaming.md) to learn more about real-time streaming options in Power BI.
 
 ## Add web content
 
 You can paste or type in any HTML content, as a tile, to your report or dashboard. Enter the embed code manually or copy/paste from sites such as Twitter, YouTube, embed.ly, and so on.
 
-1. From the **Add tile** window, select **Web content** > **Next**.
+1. From the **Add a tile** window, select **Web content** > **Next**.
 
 2. Add information to the **Add web content tile** window:
 
@@ -224,9 +183,10 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
 
 To make changes to an existing tile:
 
-1. Hover over the top-right corner of the tile and select **More options** (...).
+1. Hover over the top-right corner of the tile to display the ellipsis (...), then select it to show the **More options** menu.
 
     ![select tile ellipses](media/service-dashboard-add-widget/pbi_ellipses.png)
+
 2. Select **Edit details** to display the **Tile details** window and make changes.
 
     ![Edit details](media/service-dashboard-add-widget/pbi-edit.png)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/02/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data from databases
 ---
 # Power BI and Azure egress
@@ -23,7 +23,7 @@ To find out where your Power BI tenant is located, see [Find the default region 
 For Power BI Premium Multi-Geo customers, if your Power BI tenant isn't in the optimal location for some of your Azure-based data sources, you can deploy Power BI Premium Multi-Geo in the desired Azure region and benefit from having your Power BI tenant and Azure data sources in the same Azure region.
 
 > [!NOTE]
-> Power BI Premium Per User (PPU) is not supported for Multi-Geo.
+> Power BI Premium Per User (PPU) isn't supported for Multi-Geo.
 
 ## Related content
 

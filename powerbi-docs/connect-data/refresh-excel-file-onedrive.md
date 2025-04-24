@@ -7,14 +7,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Data refresh
 ---
 
 # Refresh a semantic model created from an Excel workbook on OneDrive or SharePoint Online
 
 > [!IMPORTANT]
-> The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
+> The following capabilities are deprecated and will no longer be available starting September 29, 2023:
 > - Upload of local workbooks to Power BI workspaces will no longer be allowed.
 > - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
 >
@@ -76,9 +76,9 @@ If your Microsoft account credentials change, edits to your file on OneDrive can
 
 When you connect to an Excel workbook in OneDrive for work or school, or SharePoint Online, you have two options on how to get what’s in your workbook into Power BI.
 
-[**Import Excel data into Power BI**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – When you import an Excel workbook from your OneDrive for work or school or SharePoint Online, it works as described previously.
+[**Import Excel data into Power BI**](service-excel-workbook-files.md) – When you import an Excel workbook from your OneDrive for work or school or SharePoint Online, it works as described previously.
 
-[**Connect, manage, and view Excel in Power BI**](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – When using this option, you create a connection from Power BI right to your workbook on OneDrive for work or school or SharePoint Online.
+[**Connect, manage, and view Excel in Power BI**](service-excel-workbook-files.md) – When using this option, you create a connection from Power BI right to your workbook on OneDrive for work or school or SharePoint Online.
 
 When you connect to an Excel workbook this way, a semantic model isn't created in Power BI. But the workbook appears in the Power BI service under Reports with an Excel icon next to the name. Unlike with Excel Online, when you connect to your workbook from Power BI, if your workbook has connections to external data sources that load data into the Excel data model, you can set up a refresh schedule.
 

@@ -1,14 +1,14 @@
 ---
 title: Troubleshoot Power BI Desktop publishing
 description: Troubleshoot Power BI Desktop publishing
-author: maggiesMSFT
+author: davidiseminger
 manager: 
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/10/2023
-ms.author: maggies
+ms.date: 04/11/2025
+ms.author: davidi
 
 LocalizationGroup: Troubleshooting
 ---

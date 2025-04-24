@@ -1,8 +1,8 @@
 ---
 title: Use Power Automate to update metrics automatically
 description: Automate business flows from a scorecard.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: 'cnews'
 featuredvideoid: ''
 ms.service: powerbi

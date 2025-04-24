@@ -1,8 +1,8 @@
 ---
 title: Create a Power Automate visual for Power BI 
 description: You can create a Power Automate visual so your end-users can run an automated flow, all within a Power BI report.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

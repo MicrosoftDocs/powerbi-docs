@@ -1,12 +1,12 @@
 ---
 title: "Connect paginated reports to data sources using Power Query"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 05/22/2024
+ms.date: 04/07/2025
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: nirusrin
 ---
 # Connect paginated reports to data sources using Power Query in Power BI Report Builder
@@ -15,7 +15,7 @@ ms.reviewer: nirusrin
 
 In Power BI Report Builder, you can create paginated reports that are optimized for printing and sharing. You can connect to various data sources, such as SQL Server, Azure SQL Database, Dataverse, and more. But what if you want to connect to data sources that aren't natively supported by Power BI Report Builder, such as Snowflake, Databricks, AWS Redshift, and others? 
 
-That's where Power Query Online comes in. Power Query Online is a data transformation and mashup engine that lets you access and transform data from hundreds of sources. You can use Power Query Online to connect to these data sources from Power BI Report Builder, and create datasets that you can use in your paginated reports. This is a new feature that is currently in preview, and we are excited to share it with you.  
+That's where Power Query Online comes in. Power Query Online is a data transformation and mashup engine that lets you access and transform data from hundreds of sources. You can use Power Query Online to connect to these data sources from Power BI Report Builder, and create datasets that you can use in your paginated reports.
 
 ## Prerequisites 
 
@@ -107,11 +107,10 @@ If you want to define a parameter, follow these steps.
     
 You can now build your report and use the parameters to render the report.
 
-## How to share the report
 
-Now that you have built your paginated report and publish it to the Power BI service, you need to be able to share it. You need to also share the [shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md).
+## How to change data source credentials after uploading to Power BI service
 
-Follow these steps:
+Now that you have built your paginated report and publish it to the Power BI service, if you need to change the data source credentials then follow these steps:
 
 1. To locate the name of the shareable cloud connection:
 
@@ -121,10 +120,9 @@ Follow these steps:
 
     b. Get the shareable cloud connection information.
    
-    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc.png" alt-text="Screenshot showing shareable cloud connection location.":::
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc-edit.png" alt-text="Screenshot showing shareable cloud connection location.":::
 
-1. When you locate the name, add users who should have access by following steps to [share a shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md).  
-
+1. After you locate the name, from the page header in the Power BI service, select the **Settings** icon, and then select **Manage connections and gateways**. Locate the connection and using context menu **Settings** option, update the data source credentials. See [Manage Connections and Gateways](../../connect-data/service-create-share-cloud-data-sources.md) to learn more about shareable cloud connections.
 
 ## Next steps 
 
@@ -139,6 +137,8 @@ When you're done with the report design, you can save the report to your local m
 - Gateway data sources aren't supported even though you connect in Mashup Editor.  
 - Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source. See the [How to bind parameters](#how-to-bind-parameters) section in this article.
 - If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render.
+- When uploading paginated report that someone else authored, the Shareable Cloud Connection owner needs to share the cloud connection to the uploading identity.
+- When uploading such paginated report using Service Principal, the author of report needs to [Take Over using API](/rest/api/power-bi/reports/take-over-in-group) and provide their user identity. Else report will fail to render on Power BI service.
 
 ## Related content  
 

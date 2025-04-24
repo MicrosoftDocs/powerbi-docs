@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 12/30/2024
 ---
 
 # Microsoft Fabric adoption roadmap: Center of Excellence
@@ -81,7 +81,7 @@ When recruiting for the COE, it's important to have a mix of complementary analy
 
 Very generalized roles within a COE are listed below. It's common for multiple people to overlap roles, which is useful from a backup and cross-training perspective. It's also common for the same person to serve multiple roles. For instance, most COE members also serve as a coach or mentor.
 
-| **Role** | **Description** |
+| Role | Description |
 | --- | --- |
 | COE leader | Manages the day-to-day operations of the COE. Interacts with the executive sponsor and other organizational teams, such as the data governance board, as necessary. For an overview of additional roles and responsibilities, see the [Governance](fabric-adoption-roadmap-governance.md#roles-and-responsibilities) article. |
 | Coach | Coaches and educates others on data and BI skills via [office hours](fabric-adoption-roadmap-mentoring-and-user-enablement.md#office-hours) (community engagement), [best practices reviews](fabric-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews), or [co-development projects](fabric-adoption-roadmap-mentoring-and-user-enablement.md#co-development-projects). Oversees and participates in the discussion channel of the internal community. Interacts with, and supports, the [champions network](fabric-adoption-roadmap-community-of-practice.md#champions-network). |
@@ -105,13 +105,13 @@ The selected COE structure can vary among organizations. It's also possible for 
 
 A centralized COE comprises a single shared services team.
 
-**Pros:**
+**Pros**:
 
 - There's a single point of accountability for a single team that manages standards, best practices, and delivery end-to-end.
 - The COE is one group from an organizational chart perspective.
 - It's easy to start with this approach and then evolve to the unified or federated model over time.
 
-**Cons:**
+**Cons**:
 
 - A centralized team might have an authoritarian tendency to favor one-size-fits-all decisions that don't always work well for all business units.
 - There can be a tendency to prefer IT skills over business skills.
@@ -121,13 +121,13 @@ A centralized COE comprises a single shared services team.
 
 A unified COE is a single, centralized, shared services team that has been expanded to include embedded team members. The embedded team members are dedicated to supporting a specific functional area or business unit.
 
-**Pros:**
+**Pros**:
 
 - There's a single point of accountability for a single team that includes cross-functional involvement from the embedded COE team members. The embedded COE team members are assigned to various areas of the business.
 - The COE is one group from an organizational chart perspective.
 - The COE understands the needs of business units more deeply due to dedicated members with domain expertise.
 
-**Cons:**
+**Cons**:
 
 - The embedded COE team members, who are dedicated to a specific business unit, have a different organizational chart responsibility than the people they serve directly within the business unit. The organizational structure could potentially lead to complications, differences in priorities, or necessitate the involvement of the executive sponsor. Preferably, the executive sponsor has a scope of authority that includes the COE and all involved business units to help resolve conflicts.
 
@@ -135,13 +135,13 @@ A unified COE is a single, centralized, shared services team that has been expan
 
 A federated COE comprises a shared services team (the core COE members) plus satellite members from each functional area or major business unit. A federated team works in coordination, even though its members reside in different business units. Typically, satellite members are primarily focused on development activities to support their business unit while the shared services personnel support the entire community.
 
-**Pros:**
+**Pros**:
 
 - There's cross-functional involvement from satellite COE members who represent their specific functional area and have domain expertise.
 - There's a balance of centralized and decentralized representation across the core and satellite COE members.
 - When distributed data ownership situations exist—as could be the case when business units take direct responsibility for data management activities—this model is effective.
 
-**Cons:**
+**Cons**:
 
 - Since core and satellite members span organizational boundaries, the federated COE approach requires strong leadership, excellent communication, robust project management, and ultra-clear expectations.
 - There's a higher risk of encountering competing priorities due to the federated structure.
@@ -154,13 +154,13 @@ A federated COE comprises a shared services team (the core COE members) plus sat
 
 Decentralized COEs are independently managed by business units.
 
-**Pros:**
+**Pros**:
 
 - A specialized data culture exists that's focused on the business unit, making it easier to learn quickly and adapt.
 - Policies and practices are tailored to each business unit.
 - Agility, flexibility, and priorities are focused on the individual business unit.
 
-**Cons:**
+**Cons**:
 
 - There's a risk that decentralized COEs operate in isolation. As a result, they might not share best practices and lessons learned outside of their business unit.
 - Collaboration with a centralized team might be informal and/or inconsistent.
@@ -200,14 +200,14 @@ Some organizations cover the COE operating costs with chargebacks to business un
 **Checklist** - Considerations and key actions you can take to establish or improve your COE.
 
 > [!div class="checklist"]
-> - **Define the scope of responsibilities for the COE:** Ensure that you're clear on what activities the COE can support. Once the scope of responsibilities is known, identify the skills and competencies required to fulfill those responsibilities.
-> - **Identify gaps in the ability to execute:** Analyze whether the COE has the required systems and infrastructure in place to meet its goals and scope of responsibilities.
-> - **Determine the best COE structure:** Identify which COE structure is most appropriate (centralized, unified, federated, or decentralized). Verify that staffing, roles and responsibilities, and appropriate organizational chart relationships (HR reporting) are in place.
-> - **Plan for future growth:** If you're starting out with a centralized or decentralized COE, consider how you will scale the COE over time by using the unified or federated approach. Plan for any actions that you can take now that'll facilitate future growth.
-> - **Identify customers:** Identify the internal community members, and any external customers, to be served by the COE. Decide how the COE will generally engage with those customers, whether it's a push model, pull model, or both models.
-> - **Verify the funding model for the COE:** Decide whether the COE is purely a cost center with an operating budget, whether it will operate partially as a profit center, and/or whether chargebacks to other business units will be required.
-> - **Create a communication plan:** Create you [communications strategy](fabric-adoption-roadmap-governance.md#governance-planning) to educate the internal community of users about the services the COE offers, and how to engage with the COE.
-> - **Create goals and metrics:** Determine how you'll measure effectiveness for the COE. Create KPIs (key performance indicators) or OKRs (objectives and key results) to validate that the COE consistently provides value to the user community.
+> - **Define the scope of responsibilities for the COE**: Ensure that you're clear on what activities the COE can support. Once the scope of responsibilities is known, identify the skills and competencies required to fulfill those responsibilities.
+> - **Identify gaps in the ability to execute**: Analyze whether the COE has the required systems and infrastructure in place to meet its goals and scope of responsibilities.
+> - **Determine the best COE structure**: Identify which COE structure is most appropriate (centralized, unified, federated, or decentralized). Verify that staffing, roles and responsibilities, and appropriate organizational chart relationships (HR reporting) are in place.
+> - **Plan for future growth**: If you're starting out with a centralized or decentralized COE, consider how you will scale the COE over time by using the unified or federated approach. Plan for any actions that you can take now that'll facilitate future growth.
+> - **Identify customers**: Identify the internal community members, and any external customers, to be served by the COE. Decide how the COE will generally engage with those customers, whether it's a push model, pull model, or both models.
+> - **Verify the funding model for the COE**: Decide whether the COE is purely a cost center with an operating budget, whether it will operate partially as a profit center, and/or whether chargebacks to other business units will be required.
+> - **Create a communication plan**: Create you [communications strategy](fabric-adoption-roadmap-governance.md#governance-planning) to educate the internal community of users about the services the COE offers, and how to engage with the COE.
+> - **Create goals and metrics**: Determine how you'll measure effectiveness for the COE. Create KPIs (key performance indicators) or OKRs (objectives and key results) to validate that the COE consistently provides value to the user community.
 
 ## Questions to ask
 
@@ -232,7 +232,7 @@ Use questions like those found below to assess the effectiveness of a COE.
 
 The following maturity levels will help you assess the current state of your COE.
 
-| **Level** | **State of the Center of Excellence** |
+| Level | State of the Center of Excellence |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;One or more COEs exist, or the activities are performed within the data team, BI team, or IT. There's no clarity on the specific goals nor expectations for responsibilities. <br/><br/>&bull;&nbsp;Requests for assistance from the COE are handled in an unplanned manner. |
 | 200: Repeatable | &bull;&nbsp;The COE is in place with a specific charter to mentor, guide, and educate self-service users. The COE seeks to maximize benefits of self-service approaches to data and BI while reducing the risks. <br/><br/>&bull;&nbsp;The goals, scope of responsibilities, staffing, structure, and funding model are established for the COE. |

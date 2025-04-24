@@ -34,7 +34,7 @@ https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
 
 ## API v5.9.0
 
-* [**Hierarchial identity filter API**](./hierarchy-filter-api.md): Allows you to create a visual that uses Matrix DataView Mapping to filter data based on data points that use a hierarchal structure. This is useful for custom visuals that leverage group-on keys semantic models and want to filter hierarchies based on data points.
+* [**Hierarchical identity filter API**](./hierarchy-filter-api.md): Allows you to create a visual that uses Matrix DataView Mapping to filter data based on data points that use a hierarchical structure. This is useful for custom visuals that leverage group-on keys semantic models and want to filter hierarchies based on data points.
 * [`acquireAADTokenService`](./authentication-api.md): Extended with additional properties
 * Supports Desktop March 2024
 
@@ -76,7 +76,7 @@ https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
 * **[Custom sorting](./sort-options.md#custom-sorting)** - improved custom sorting for tables
 * **[Subtotals](./total-subtotal-api.md)** - new *Subtotals Type* indicates if totals should be retrieved before or after the rest of the data
 * **[Identity filter](./identity-filter-api.md)** - filter categorical data
-* **[New format pane](./format-pane.md)** - design a custom visual that supports the new format pane design
+* **[New format pane](./format-pane-general.md)** - design a custom visual that supports the new format pane design
 * Supports Desktop October 2022
 
 ## API v4.7.0
@@ -237,10 +237,10 @@ https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
 ## API v1.1.0
 
 * Supports debug visual in iFrame
-* Adds light weight sandbox with faster initialization of the iFrame
+* Adds lightweight sandbox with faster initialization of the iFrame
 * Fixes [Capabilities.objects does not support "text" type](https://github.com/Microsoft/PowerBI-visuals-tools/issues/12) issue
 * Supports `pbiviz update` to update visual API type definitions and schema
-* Supports `--api-version` flag in `pbiviz new` to create visuals with a specific api version
+* Supports `--api-version` flag in `pbiviz new` to create visuals with a specific API version
 * Supports alpha release of API v1.2.0
 
 ### Visual Host

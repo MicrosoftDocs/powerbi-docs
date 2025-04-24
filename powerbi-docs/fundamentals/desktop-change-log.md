@@ -3,11 +3,11 @@ title: Change log for Power BI Desktop
 description: This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
 author: davidiseminger
 ms.author: davidi
-ms.reviewer: maggies, davidi
+ms.reviewer: kfollis, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/10/2024
+ms.date: 04/21/2025
 no-loc: [Copilot]
 ---
 
@@ -17,6 +17,147 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+
+
+## March 2025 QFE 5
+
+*Version 2.141.1754.0, Released: April 16, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where new Card visual conditional formatting wasn't working without small multiples.
+
+* Addressed the issue where two separate **Working on this** dialogs were displayed, and the second **Working on this** dialog would hang.
+
+
+
+## March 2025 QFE 4
+
+*Version 2.141.1558.0, Released: April 11, 2025*
+
+Bug fixes/improvements:
+
+* Rolled back fix for the issue where two separate **Working on this** dialogs are displayed and the second **Working on this** dialog hangs.
+
+
+## March 2025 QFE 3
+
+*Version 2.141.1580.0, Released: April 10, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where two separate **Working on this** dialogs were displayed, and the second **Working on this** dialog would hang.
+
+* Fixed Snowflake connector issues for March 2025 release.
+
+* Addressed a bug causing *TaskCanceledException* in the Power BI Windows application.
+
+
+## March 2025 QFE 2
+
+*Version 2.141.1451.0, Released: April 4, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where **Edit in Desktop** doesn't work for Microsoft Store installations of Power BI Desktop.
+
+
+## March 2025 QFE 1
+
+*Version 2.141.1253.0, Released: March 30, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue of a gray/empty *Load to report* dialog in the Power BI client for Windows.
+
+
+
+
+## February 2025 QFE 5
+
+*Version 2.140.1577.0, Released: March 14, 2025*
+
+Bug fixes/improvements:
+
+* Addressed issues with host promise rejections in various views and dialogs, ensuring proper error handling and feedback.
+
+
+## February 2025 QFE 4 
+
+*Version 2.140.1476.0, Released: March 11, 2025*
+
+Bug fixes/improvements:
+
+* Addressed issues with the copy cell functionality in data grid, ensuring proper asynchronous handling and accurate cell value retrieval.
+
+
+## February 2025 QFE 3
+
+*Version 2.140.1454.0, Released: March 8, 2025*
+
+Bug fixes/improvements:
+
+* Resolved the issue of broken custom visual dialogs.
+
+* Resolved an issue where users weren't able to save a PBIP file when TMDL view preview feature is enabled. 
+
+* Fixed the confirmation dialog handling for the download API in Power BI Desktop, addressing a regression issue. 
+
+
+
+## February 2025 QFE 2 
+
+*Version 2.140.1351.0, Released: March 4, 2025*
+
+Bug fixes/improvements:
+
+* Added better error classification to reduce unwanted error popups.
+
+* Fixed an issue where existing report pages were disappearing when adding a local model to a report in Power BI Desktop.
+
+* Fixed a UI regression issue where the *Manage Relationships* dialog in the report view had a different size compared to the Table or Model View.
+
+
+
+## February 2025 QFE 1 
+
+*Version 2.140.1205.0, Released: February 26, 2025*
+
+Bug fixes/improvements:
+
+* Fixed AS thrown exception *PFE_M_ENGINE_INTERNAL* by adding validation to check whether *CertifiedExtensions* folder exists at path AppData...\PowerBIDesktop\CertifiedExtensions.
+
+* Fixed error while opening PBIX files when tables named *Measures* with leading or trailing spaces.
+
+
+
+
+## January 2025 QFE 3
+
+*Version 2.139.2054.0, Released: January 29, 2025*
+
+Bug fixes/improvements:
+
+* Fixed issue in v2 connector that create duplicate records, and some missing records, causing rows in the dataset to be repeated instead of new rows being returned
+
+
+## January 2025 QFE 2 
+
+*Version 2.139.1733.0, Released: January 24, 2025*
+
+Bug fixes/improvements:
+
+* Fixed issue of users receiving an error due to pending changes at the conclusion of a model change
+* Fixed SQL Server connector to operate properly with Fabric SQL
+
+
+## January 2025 QFE 1
+
+*Version 2.139.1678.0, Released: January 14, 2025*
+
+Bug fixes/improvements:
+
+* Fixed issue when connecting to Fabric SQL database using SQL connector
 
 ## November 2024 QFE 3
 
@@ -34,7 +175,7 @@ Bug fixes/improvements:
 Bug fixes/improvements:
 
 * Fixed a regression issue where users in certain regions were seeing an error because they can access and use the Copilot pane, even though it shouldn't have been available to them
-* Fixed an issue where incorrect column names were being returned from *AdomdDataReader* results after changing column format or aggregation, causing broken data views and visual updates.=
+* Fixed an issue where incorrect column names were being returned from *AdomdDataReader* results after changing column format or aggregation, causing broken data views and visual updates
 
 
 ## November 2024 QFE 1
@@ -45,7 +186,7 @@ Bug fixes/improvements:
 * Diagnostic telemetry to capture logs related to the broken data view and visuals issue, when a user changes the column format or aggregation
 * Disabled *Inline Sparkline Measure* since it broke previously created reports that used calculation groups with sparklines
 * Fixed an issue preventing users from connecting to SAP HANA due to a *Non-null assertion failure: queryName* error
-* Removed telemetry service suspend for Power BI Desktop applications, and introduced configuration for page visibility service
+* Removed telemetry service suspends for Power BI Desktop applications, and introduced configuration for page visibility service
 * Fixed the endless retry of the V2 client-side copilot orchestrator and added a limit to the number of retries
 * Fixed an issue where Q&A tooling was broken due to improper error handling
 
@@ -135,7 +276,7 @@ Bug fixes/improvements:
 
 ## April 2024 QFE 3
 
-*Version : 2.128.1380.0, Released: May 02 , 2024*
+*Version: 2.128.1380.0, Released: May 02, 2024*
 
 Bug fixes/improvements:
 
@@ -147,7 +288,7 @@ Bug fixes/improvements:
 
 ## April 2024 QFE 2
  
-*Version 2.128.1177.0: , Released: April 24 , 2024*
+*Version 2.128.1177.0: , Released: April 24, 2024*
 
 Bug fixes/improvements:
 
@@ -185,8 +326,8 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 
-* Fix for DataGrid copy to clipboard :  Fixed issue of "Copy Table" not working in datagrid view of Power BI Desktop
-* Bug fixes for the DAX inline Copilot:  Fixed issue where invalid DAX query banner shows up unexpectedly in some cases. Prevents cancel button from being stuck when pressed too early. Prevents stale user input from showing when signing in again
+* Fix for DataGrid copy to clipboard:  Fixed issue of "Copy Table" not working in datagrid view of Power BI Desktop
+* Bug fixes for the DAX inline Copilot:  Fixed issue where invalid DAX query banner shows up unexpectedly in some cases. Prevents **Cancel** button from being stuck when pressed too early. Prevents stale user input from showing when signing in again
 
 
 ## February 2024 QFE 1
@@ -294,7 +435,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 
-* Fix to large models. Now customers would be able to see relationships lines in Model View. Template files with multiple queries now load faster.
+* Fix too large models. Now customers would be able to see relationships lines in Model View. Template files with multiple queries now load faster.
 
 
 ## July 2023 QFE 1
@@ -468,7 +609,7 @@ Bug fixes/improvements:
 - Data view regression fix: now list of filters in context menu will be displayed even when menu icons aren't in focus. 
 - EvaluateAndLog  DAX function fix: now the function works as expected and won't return an error. 
 - SAP HANA regression fixes: now power query won't show "the index is outside the bounds of the records" error message and there won't be missing values for columns when using Cube.AttributeMemberID on the query.  
-- Roll back change for cashing: cashing will be done the same way as in previous releases
+- Roll back change for cashing: cashing is done the same way as in previous releases
 - Formula bar fixes for cases when **Shift+Enter** is used. 
 - “Apply/discard changes” regression fix.
 
@@ -490,8 +631,8 @@ Bug fixes/improvements:
 *Version: 2.107.841.0, Released: July 21, 2022*
 
 Bug fixes/improvements:
-- Fix for SAP BW: now customers will be able to retrieve a full semantic model when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc.) even if the data exceeds the page size.
-- Fix for SAP HANA: now when creating new connections or refreshing data, a display name will be shown instead of a technical column name in the fields well.
+- Fix for SAP BW: now customers are able to retrieve a full semantic model when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc.) even if the data exceeds the page size.
+- Fix for SAP HANA: now when creating new connections or refreshing data, a display name is shown instead of a technical column name in the fields well.
 
 
 ## June 2022 QFE 1

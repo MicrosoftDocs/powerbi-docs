@@ -1,8 +1,8 @@
 ---
 title: Make Excel data work well with Q&A in Power BI
 description: Learn how Power BI Q&A can work on any uploaded Excel file that contains tables, ranges, or a Power Pivot model.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai

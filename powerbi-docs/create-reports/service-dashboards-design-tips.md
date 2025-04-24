@@ -1,8 +1,8 @@
 ---
 title: Tips for designing a great Power BI dashboard
 description: Learn how to design an effective Power BI dashboard to make the most important information stand out.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

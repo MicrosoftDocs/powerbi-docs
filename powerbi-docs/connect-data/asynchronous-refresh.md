@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/03/2024
+ms.date: 01/07/2025
 ---
 
 # Enhanced refresh with the Power BI REST API
@@ -22,6 +22,7 @@ The Power BI Refresh Dataset REST API can carry out model refresh operations asy
 - Applying incremental refresh policies
 - `GET` refresh details
 - Refresh cancellation
+- Timeout configuration
 
 > [!NOTE]
 > - Previously, enhanced refresh was called *asynchronous refresh with REST API*. However, a standard refresh that uses the Refresh Dataset REST API also runs asynchronously by its inherent nature.
@@ -78,6 +79,7 @@ The request body might resemble the following example:
     "commitMode": "transactional",
     "maxParallelism": 2,
     "retryCount": 2,
+    "timeout": "02:00:00",
     "objects": [
         {
             "table": "DimCustomer",
@@ -107,6 +109,7 @@ To do an enhanced refresh operation, you must specify one or more parameters in 
 |`objects`     |    Array      |    Entire model      |    An array of objects to process. Each object includes `table` when processing an entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire model refreshes.      |
 |`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, determines whether to apply the policy. Modes are `true` or `false`. If the policy isn't applied, the full process leaves partition definitions unchanged, and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` of `true` isn't supported, and `applyRefreshPolicy` must be set to `false`.|
 |`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date. If not specified, the current day is determined using time zone configuration under ['Refresh'](/power-bi/connect-data/incremental-refresh-overview#current-date-and-time).      |
+|`timeout`    |    String     |    05:00:00 (5 hours)     |   If a `timeout` is specified, each data refresh attempt on the semantic model adheres to that timeout. A single refresh request can include multiple attempts if `retryCount` is specified, which may cause the total refresh duration to exceed the specified timeout. For instance, setting a `timeout` of 1 hour with a `retryCount` of 2 could result in a total refresh duration of up to 3 hours. Users can adjust the `timeout` to shorten the refresh duration for faster failure detection or extend it beyond the default 5 hours for more complex data refreshes. However, the total refresh duration, including retries, can't exceed 24 hours.     |
 
 ### Response
 
@@ -251,15 +254,15 @@ The solution is to rerun the refresh operation. To learn more about dynamic memo
 
 #### Refresh operation time limits
 
-The maximum amount of time for a single refresh operation is five hours. If the refresh operation doesn't successfully complete within the five-hour limit, and `retryCount` isn't specified or is specified as `0` (the default) in the request body, a timeout error returns.
+A refresh operation may include multiple attempts if `retryCount` is specified. Each attempt has a default timeout of 5 hours, which can be adjusted using the `timeout` parameter. The total refresh duration, including retries, must not exceed 24 hours.
 
-If `retryCount` specifies `1` or another number, a new refresh operation with a five-hour limit starts. If this retry operation fails, the service continues to retry the refresh operation up to the greatest number of retries that `retryCount` specifies, or the enhanced refresh processing time limit of 24 hours from the beginning of the first refresh request.
+If `retryCount` specifies a number, a new refresh operation starts with the timeout limit. The service retries this operation until it either succeeds, reaches the `retryCount` limit, or hits the 24-hour maximum from the first attempt.
 
-When you plan your enhanced model refresh solution with the Refresh Dataset REST API, it's important to consider these time limits and the `retryCount` parameter. A successful refresh completion can exceed five hours if an initial refresh operation fails and `retryCount` specifies `1` or more.
+You can adjust the `timeout` to shorten the refresh duration for faster failure detection or extend it beyond the default 5 hours for more complex data refreshes.
 
-For example, if you request a refresh operation with `"retryCount": 1`, and the initial retry operation fails four hours from the start time, a second refresh operation for that request begins. If that second refresh operation succeeds in three hours, the total time for successful execution of the refresh request is seven hours.
+When planning your semantic model refresh with the Refresh Dataset REST API, consider time limits and the retryCount parameter. A refresh may exceed the timeout if the initial attempt fails and retryCount is set to 1 or more. If you request a refresh with "retryCount": 1, and the first attempt fails after 4 hours, a second attempt begins. If this succeeds in 3 hours, the total time for the refresh is 7 hours.
 
-If refresh operations regularly fail, exceed the five-hour time limit, or exceed your desired successful refresh operation time, consider reducing the amount of data being refreshed from the data source. You can split refresh into multiple requests, for example a request for each table. You can also specify `partialBatch` in the `commitMode` parameter.
+If refresh operations regularly fail, exceed the timeout time limit, or exceed your desired successful refresh operation time, consider reducing the amount of data being refreshed from the data source. You can split refresh into multiple requests, for example a request for each table. You can also specify partialBatch in the commitMode parameter.
 
 ## Code sample
 

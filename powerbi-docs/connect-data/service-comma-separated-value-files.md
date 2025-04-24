@@ -36,9 +36,9 @@ If you have a CSV, it’s time to get it into your Power BI site as a semantic m
 >[!IMPORTANT]
 >The maximum file size you can import into Power BI is 1 GB.
 
-1. In a Power BI workspace, select **My workspace > New > Semantic model**.
+1. In a Power BI workspace, select **New item**, then under **Store data**, select **Semantic model**.
 
-   :::image type="content" source="media/service-comma-separated-value-files/new-upload-menu.png" alt-text="Screenshot of the workspace new menu with new and upload a file highlighted.":::
+   :::image type="content" source="media/service-comma-separated-value-files/new-upload-menu.png" alt-text="Screenshot of the workspace new menu with new and upload a file highlighted." lightbox="media/service-comma-separated-value-files/new-upload-menu.png":::
 
 2. In the window that appears, select **CSV**.
 

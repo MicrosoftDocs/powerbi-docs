@@ -1,6 +1,6 @@
 ---
-title: On-premises data gateway sizing
-description: Guidance for working sizing the On-premises data gateway.
+title: "On-premises data gateway sizing"
+description: "Guidance for working sizing the On-premises data gateway."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 02/13/2024
+ms.date: 12/30/2024
 ---
 
 # On-premises data gateway sizing
 
-This article targets Power BI administrators who need to install and manage the [on-premises data gateway](../connect-data/service-gateway-onprem.md).
+This article targets Fabric administrators who need to install and manage the [on-premises data gateway](../connect-data/service-gateway-onprem.md).
 
 The gateway is required whenever Power BI must access data that isn't accessible directly over the Internet. It can be installed on a server on-premises, or VM-hosted infrastructure as a service (IaaS).
 
@@ -29,7 +29,7 @@ The _Cached data_ workload retrieves and transforms source data for loading into
 1. **Data retrieval and transformation**: Data is retrieved, and when necessary, transformed. Whenever possible, the Power Query mashup engine pushes transformation steps to the data source—it's known as _[query folding](power-query-folding.md)_. When it's not possible, transformations must be done by the gateway. In this case, the gateway will consume more CPU and memory resources.
 1. **Transfer**: Data is transferred to the Power BI service—a reliable and fast Internet connection is important, especially for large data volumes.
 
-![Diagram of Cache Data showing the on-premises data gateway connecting to on-premises sources.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
+:::image type="content" source="media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png" alt-text="Diagram of Cache Data showing the on-premises data gateway connecting to on-premises sources." border="false":::
 
 ### Live Connection and DirectQuery workloads
 
@@ -42,19 +42,19 @@ This workload requires CPU resources for routing queries and query results. Usua
 
 Reliable, fast, and consistent connectivity is important to ensure report users have responsive experiences.
 
-![Diagram of Live Connection and DirectQuery showing the on-premises data gateway connecting to on-premises sources.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
+:::image type="content" source="media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png" alt-text="Diagram of Live Connection and DirectQuery showing the on-premises data gateway connecting to on-premises sources." border="false":::
 
 ## Sizing considerations
 
 Determining the correct sizing for your gateway machine can depend on the following variables:
 
-- **For Cache data workloads:**
+- **For Cache data workloads**:
   - The number of concurrent semantic model refreshes
   - The types of data sources (relational database, analytic database, data feeds, or files)
   - The volume of data to be retrieved from data sources
   - Any transformations required to be done by the Power Query mashup engine
   - The volume of data to be transferred to the Power BI service
-- **For Live Connection and DirectQuery workloads:**
+- **For Live Connection and DirectQuery workloads**:
   - The number of concurrent report users
   - The number of visuals on report pages (each visual sends at least one query)
   - The frequency of Power BI dashboard query cache updates
@@ -130,5 +130,5 @@ For more information related to this article, check out the following resources:
 - [Troubleshoot gateways - Power BI](../connect-data/service-gateway-onprem-tshoot.md)
 - [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 - [The importance of query folding](power-query-folding.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

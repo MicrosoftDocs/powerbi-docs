@@ -1,8 +1,8 @@
 ---
 title: Add the languages table to filter field parameters
 description: Learn how to use Power Query to create a languages table for multiple-language reports in Power BI.
-author: maggiesMSFT   
-ms.author: maggies
+author: kfollis   
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to

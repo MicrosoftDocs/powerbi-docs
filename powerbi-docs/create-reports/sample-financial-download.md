@@ -1,8 +1,8 @@
 ---
 title: Download the Financial Sample Excel workbook for Power BI
 description: Learn how to download the Financial Sample workbook for Power BI directly from this page or from Power BI Desktop.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

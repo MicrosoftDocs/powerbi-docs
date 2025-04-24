@@ -1,14 +1,14 @@
 ---
 title: Compare Power BI Report Server and the Power BI service
 description: This article compares the features of Power BI Report Server and the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 keywords: 
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc, intro-overview
-ms.date: 11/12/2024
+ms.date: 02/03/2025
 #Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -40,7 +40,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) |
 | Paginated reports | Yes | Yes | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) |
-| Personalize visuals | No | No | You can [interact with a report to see different data](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report), but you can't modify the report itself. |
+| Personalize visuals | No | Yes | Consumers can [customize visual type or data fields](../create-reports/power-bi-personalize-visuals.md) without modifying the report itself. |
 | Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | Real-time streaming | No | Yes | [Real-time streaming in Power BI](../connect-data/service-real-time-streaming.md) |
 | Automatic page refresh for DirectQuery models | No | Yes | [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) |
@@ -49,7 +49,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Email subscriptions for paginated reports | Yes | Yes | [Subscribe yourself and others to paginated reports in the Power BI service](/power-bi/collaborate-share/end-user-subscribe)<br><br>[Email delivery in Reporting Services](/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Data alerts | No | Yes | [Data alerts](../create-reports/service-set-data-alerts.md) in the Power BI service
 | Row-level security (RLS) | Yes | Yes | Available in both DirectQuery (data source) & Import mode <br><br>Row-level security in the [Power BI service](/fabric/security/service-admin-row-level-security) <br><br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) |
-| Many-to-many relationships | No | Yes | [Apply many-to-many relationships](../transform-model/desktop-many-to-many-relationships.md) in Power BI Desktop |
+| Many-to-many relationships | Yes | Yes | [Apply many-to-many relationships](../transform-model/desktop-many-to-many-relationships.md) in Power BI Desktop |
 | Cross-report drillthrough | No | Yes | [Use cross-report drillthrough](../create-reports/desktop-cross-report-drill-through.md) |
 | Full-screen mode | Yes | Yes | [Full-screen mode](../consumer/end-user-focus.md) in the Power BI service |
 | R scripts and visuals | No | Yes | [Create R visuals](../create-reports/desktop-r-visuals.md) and run R scripts in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with R scripts or visuals to Power BI Report Server.  |

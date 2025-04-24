@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/10/2023
+ms.date: 02/26/2025
 LocalizationGroup: Transform and shape data
 ---
 
@@ -33,7 +33,7 @@ An *implicit measure* occurs when, in the **Report view**, you use a data column
 A measure or explicit measure occurs when you create a **New measure** and define the DAX expression to aggregate a data column. Explicit measures can also have conditional logic and filters, taking full advantage of what you can do with DAX. Tutorial: You can learn how to [Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md).
 
 > [!NOTE]
-> Calculation items can be created in a way that they ignore an explicit measure by the measure name for scenarios when you have a measure you do not want the calculation item to change.
+> Calculation items can be created in a way that they ignore an explicit measure by the measure name for scenarios when you have a measure you don't want the calculation item to change.
 
 Once you select **Yes**, or if you already have enabled the discourage implicit measures property, a calculation group is added, and you can start defining the DAX expression of the first calculation item in the DAX formula bar.
 

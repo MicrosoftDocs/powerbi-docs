@@ -1,8 +1,8 @@
 ---
 title: "Power BI gateway and Report Builder support for ODBC data sources"
 description: Learn how to configure ODBC data sources in the Power BI gateway and use ODBC data sources in Power BI Report Builder.
-author: maggiesMSFT
-ms.author: maggies
+author: kfollis
+ms.author: kfollis
 ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder

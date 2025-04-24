@@ -1,9 +1,9 @@
 ---
 title: Reports in the Power BI service
 description: Learn about the parts of a Power BI report, advantages of reports, and the difference between dashboards and reports.
-author: mihart
-ms.author: mihart
-ms.reviewer: mihart
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with reports
@@ -28,7 +28,7 @@ C. The **Filters** pane shows all applied filters. To collapse the **Filters** p
 D. The Power BI banner shows the title of the report and the sensitivity label. Select the title to open a menu that shows the report location, date it was last updated, and contact information for the report creator.  
 E. The action bar contains links to numerous actions you can take on this report. Some actions require extra permissions. For example, based on your permissions you may be able to edit, subscribe, and share the report. All users can add a comment, view a bookmark, or generate automatic insights. Select **More options** (...) to see the full list of report actions.
 
-If you're new to Power BI, read [Basic concepts for the Power BI service business users](end-user-basic-concepts.md) to get a good foundation. You can view, share, and annotate reports on mobile devices. For more information, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
+If you're new to Power BI, read [Basics of the Power BI service](../fundamentals/service-basic-concepts.md) to get a good foundation. You can view, share, and annotate reports on mobile devices. For more information, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## Advantages of reports
 
@@ -69,7 +69,8 @@ Depending on your role, you may be a *designer*, someone who creates reports for
 
 Or you might be a *business user*, someone who receives reports from others. You want to learn how to understand and interact with the reports. If you're a report *business user*, these links are for you:
 
-* Start with a [tour of the Power BI service](end-user-basic-concepts.md), so you know where to find reports and report tools.
+* Start with a [tour of the Power BI service](end-user-experience.md), so you know where to find reports and report tools.
+- Learn the [basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 * Learn how to [open a report](end-user-report-open.md) and all the [interactions available to business users](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of a [sample](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Explore [Dashboards in the Power BI service](end-user-dashboards.md).  

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, intro-deployment
-ms.date: 02/27/2022
+ms.date: 12/30/2024
 ---
 
 # Deploy to Power BI
@@ -39,11 +39,11 @@ If your content has been published to a workspace on Premium capacity, [deployme
 
 Key activities during a deployment to the test workspace typically include:
 
-- **Connection strings and parameters:** Adjust semantic model connection strings if the data source differs between development and test. [Parameterization](../connect-data/service-parameters.md) can be used to effectively manage connection strings.
-- **Workspace content:** Publish semantic models and reports to the test workspace, and create dashboards.
+- **Connection strings and parameters**: Adjust semantic model connection strings if the data source differs between development and test. [Parameterization](../connect-data/service-parameters.md) can be used to effectively manage connection strings.
+- **Workspace content**: Publish semantic models and reports to the test workspace, and create dashboards.
 - **App.** Publish an [app](../consumer/end-user-apps.md) using the content from the test workspace, if it will form part of the UAT process. Usually, app permissions are restricted to a small number of people involved with UAT.
-- **Data refresh:** [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any Import semantic models for the period when UAT is actively occurring.
-- **Security:** Update or verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Testing workspace access includes a small number of people who are involved with UAT.
+- **Data refresh**: [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any Import semantic models for the period when UAT is actively occurring.
+- **Security**: Update or verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Testing workspace access includes a small number of people who are involved with UAT.
 
 ### Conduct user acceptance testing
 
@@ -68,36 +68,36 @@ Expand permissions in the production workspace, or the app, gradually until all 
 
 During the deployment process, you might need to work with your Power BI administrators to address other requirements that are needed to support the entire solution, such as:
 
-- **Gateway maintenance:** A [new data source](../connect-data/service-gateway-data-sources.md) registration in the data gateway might be required.
-- **Gateway drivers and connectors:** A new proprietary data source might require installation of a new driver or custom connector on each server in the gateway cluster.
-- **Create a new Premium capacity:** You might be able to use an existing [Premium capacity](../enterprise/service-premium-what-is.md). Or, there might be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
-- **Set up a Power BI dataflow:** Data preparation activities can be set up once in a [Power BI dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) using Power Query Online. It helps avoid replicating data preparation work in many different Power BI Desktop files.
-- **Register a new organizational visual:** [Organizational visual](../developer/visuals/power-bi-custom-visuals-organization.md) registration can be done in the admin portal for custom visuals that didn't originate from AppSource.
-- **Set featured content:** A tenant setting exists that controls who can [feature content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
-- **Set up sensitivity labels:** All [sensitivity labels](../enterprise/service-security-data-protection-overview.md) are integrated with Microsoft Purview Information Protection.
+- **Gateway maintenance**: A [new data source](../connect-data/service-gateway-data-sources.md) registration in the data gateway might be required.
+- **Gateway drivers and connectors**: A new proprietary data source might require installation of a new driver or custom connector on each server in the gateway cluster.
+- **Create a new Premium capacity**: You might be able to use an existing [Premium capacity](../enterprise/service-premium-what-is.md). Or, there might be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
+- **Set up a Power BI dataflow**: Data preparation activities can be set up once in a [Power BI dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) using Power Query Online. It helps avoid replicating data preparation work in many different Power BI Desktop files.
+- **Register a new organizational visual**: [Organizational visual](../developer/visuals/power-bi-custom-visuals-organization.md) registration can be done in the admin portal for custom visuals that didn't originate from AppSource.
+- **Set featured content**: A tenant setting exists that controls who can [feature content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
+- **Set up sensitivity labels**: All [sensitivity labels](../enterprise/service-security-data-protection-overview.md) are integrated with Microsoft Purview Information Protection.
 
 ### Deploy to production workspace
 
 Key activities during a deployment to the production workspace typically include:
 
-- **Change management:** If necessary, obtain approval to deploy, and communicate deployment to the user population using your standard change management practices. There might be an approved change management window during which production deployments are allowed. Usually, it's applicable to IT-managed content and much less frequently applied to self-service content.
-- **Rollback plan:** With a migration, the expectation is that it's the migration of a new solution for the first time. If content does already exist, it's wise to have a plan to revert to the previous version, should it become necessary. Having previous versions of the Power BI Desktop files (using SharePoint or OneDrive versioning) works well for this purpose.
-- **Connection strings and parameters:** Adjust semantic model connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
-- **Data refresh:** [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any imported semantic models.
-- **Workspace content:** Publish semantic models and reports to the production workspace, and create dashboards. [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
-- **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
-- **Security:** Update and verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md) based on your content distribution and collaboration strategy.
-- **Semantic model settings:** Update and verify settings for each semantic model, including:
+- **Change management**: If necessary, obtain approval to deploy, and communicate deployment to the user population using your standard change management practices. There might be an approved change management window during which production deployments are allowed. Usually, it's applicable to IT-managed content and much less frequently applied to self-service content.
+- **Rollback plan**: With a migration, the expectation is that it's the migration of a new solution for the first time. If content does already exist, it's wise to have a plan to revert to the previous version, should it become necessary. Having previous versions of the Power BI Desktop files (using SharePoint or OneDrive versioning) works well for this purpose.
+- **Connection strings and parameters**: Adjust semantic model connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
+- **Data refresh**: [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any imported semantic models.
+- **Workspace content**: Publish semantic models and reports to the production workspace, and create dashboards. [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
+- **App**: If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
+- **Security**: Update and verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md) based on your content distribution and collaboration strategy.
+- **Semantic model settings**: Update and verify settings for each semantic model, including:
   - [Endorsement](../collaborate-share/service-endorse-content.md) (such as certified or promoted)
   - Gateway connection or data source credentials
   - Scheduled refresh
   - [Featured Q&A questions](../create-reports/service-q-and-a-create-featured-questions.md)
-- **Report and dashboard settings:** Update and verify settings for each report and dashboard. The most important settings include:
+- **Report and dashboard settings**: Update and verify settings for each report and dashboard. The most important settings include:
   - Description
   - Contact person or group
   - [Sensitivity label](../enterprise/service-security-apply-data-sensitivity-labels.md)
   - [Featured content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
-- **Subscriptions:** Set up report subscriptions, if necessary.
+- **Subscriptions**: Set up report subscriptions, if necessary.
 
 > [!IMPORTANT]
 > At this point, you have reached a big milestone. Celebrate your accomplishment at completing the migration.
@@ -174,7 +174,7 @@ Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 
-Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Experienced Power BI partners are available to help your organization succeed with the migration process. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).
