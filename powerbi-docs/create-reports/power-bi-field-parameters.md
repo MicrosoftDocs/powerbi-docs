@@ -93,7 +93,7 @@ Parameter = {
 ## Considerations
 
 - When using field parameters with Copilot, Copilot will respond based on the current state of the visuals in the report.
-- In general, the order in which fields from a Field Parameter are shown to a visual is driven by the order items are selected. If using a [hierarchy slicer](power-bi-slicer-hierarchy-multiple-fields.md) the order is determined by how the field are sorted in the hierarchy slicer instead.
+- In general, the order in which fields from a Field Parameter are shown in a visual is driven by the order items are selected. If using a [hierarchy slicer](power-bi-slicer-hierarchy-multiple-fields.md) the order is determined by how the fields are shown in the hierarchy slicer instead.
 
 ## Related content
 
