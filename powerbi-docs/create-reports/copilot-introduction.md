@@ -165,6 +165,11 @@ Copilot can write a DAX query. For example, you can type in a prompt to describe
 
 :::image type="content" source="media/copilot-introduction/copilot-dax-query.png" alt-text="Screenshot showing Copilot suggested DAX query." lightbox="media/copilot-introduction/copilot-dax-query.png":::
 
+### Clear Chat
+Users can clear conversation history in Power BI Copilot by clicking the broom icon at the top of the pane. This allows users to switch topics without carrying over previous context.
+
+:::image type="content" source="media/copilot-introduction/copilot-clear-chat.png" alt-text="Screenshot of Copilot Clear Chat feature.":::
+
 ## Copilot preview features
 
 When using the Copilot pane in the **Power BI service**, you'll see a toggle with the word **Preview** next to it. The preview toggle allows you the opportunity to move into an experience that includes both generally available and public preview capabilities. 
