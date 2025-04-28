@@ -52,15 +52,13 @@ This section describes the steps necessary to connect to an MCA account.
 To connect to a billing account, you need to retrieve your **Billing account ID** from the Azure portal:
 
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
-2. Select your Billing profile.
+2. Select your billing profile.
 3. In the menu, select **Settings** > **Properties**.
 4. Under **Billing account details**, copy the **Billing account ID**.
 
    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="Screenshot of billing account ID highlighted in Cost management billing profile properties.":::
 
-In the Azure Cost Management dialog in Power BI Desktop:
-
-5. Under **Choose Scope**, select **Manually Input Scope**.
+5. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Manually Input Scope**.
 6. Input the connection string as shown in the following example, replacing *{billingAccountId}* with the data copied in the previous step.
 
     ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}```
@@ -80,11 +78,10 @@ In the Azure Cost Management dialog in Power BI Desktop:
 To connect to a **billing profile**, you must retrieve your **Billing profile ID** and **Billing account ID** from the Azure portal:
 
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
-2. Select your Billing profile.
+2. Select your billing profile.
 3. Select the **Settings** blade, then select **Properties**.
 4. Under **Billing profile**, copy the **ID**.
 5. Under **Billing account**, copy the **ID**.
-
 6. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Manually Input Scope**.
 7. Enter the billing profile resource ID string as shown in the following example, replacing *{billingAccountId}* and *{billingProfileId}* with the data copied in the previous step.
 
