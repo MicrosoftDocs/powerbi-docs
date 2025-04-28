@@ -14,7 +14,6 @@ LocalizationGroup: Create reports
 # Create a numeric or date range slicer in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
-
 With the numeric range slicer and the date range slicer, you can create filters for any numeric or date column in your data model. There are three options for filtering your data:
 
 - Between numbers or dates.
@@ -22,7 +21,6 @@ With the numeric range slicer and the date range slicer, you can create filters 
 - Greater than or equal to a number or date.
 
 This simple technique is a powerful, visual way to filter your data.
-
 :::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range.png" alt-text="Screenshot of a visual, highlighting a numeric range slicer.":::
 
 ## Add a numeric range slicer
@@ -33,7 +31,7 @@ Power BI automatically creates a numeric range slicer set to **Between** by defa
 
 :::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between.png" alt-text="Screenshot of the Numeric range slicer menu.":::
 
-## Add a date range slicer
+### Add a date range slicer
 
 Create a **Slicer** visual for your report, and then select a date field for the **Field** value.
 
@@ -46,7 +44,7 @@ Besides the basic date range slicer, there are two other options, explained in t
 - The [relative date range slicer](../visuals/desktop-slicer-filter-date-range.md).
 - The [relative time range slicer](slicer-filter-relative-time.md).
 
-## Format the range slicer
+### Format the range slicer
 
 In the **Format** pane, under **Visual** > **Slicer settings** > **Options**, select one of these options:
 
@@ -66,11 +64,11 @@ When you select **Less than or equal to**, the left (lower value) handle of the 
 
 If you select **Greater than or equal to**, then the right (higher value) slider bar handle disappears. You can then adjust the lower value, but not the upper value.
 
-## Snap to whole numbers with the numeric range slicer
+### Snap to whole numbers with the numeric range slicer
 
 A numeric range slicer snaps to whole numbers if the data type of the underlying field is *Whole Number*. This feature lets your slicer cleanly align to whole numbers. *Decimal Number* fields let you enter or select fractions of a number. The formatting set in the text box matches the formatting set on the field even though you can type in or select more precise numbers.
 
-## Display formatting with the date range slicer
+### Display formatting with the date range slicer
 
 When you use a slicer to display or set a range of dates, the dates display in the *Short Date* format. The user's browser or operating system locale determines the date format. As such, it's the display format no matter what the data type settings are for the underlying data or model.
 
@@ -80,14 +78,14 @@ You could, for example, have a long date format for the underlying data type. In
 
 Displaying the Short Date format in the slicer ensures the length of the string stays consistent and compact within the slicer.
 
-## Considerations and limitations
+### Considerations and limitations
 
 The following considerations and limitations apply to the numeric range slicer:
 
-* The numeric range slicer filters every underlying row in the data, not any aggregated value. For example, let's say that you use a *Sales Amount* field. The slicer then filters each transaction based on the sales amount, not the sum of the sales amount for each data point of a visual.
-* The numeric range slicer doesn't currently work with measures.
-* You can type any number into a numeric slicer even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
-* The date range slicer allows for any date values even if they don't exist in the underlying date column.
+- The numeric range slicer filters every underlying row in the data, not any aggregated value. For example, let's say that you use a *Sales Amount* field. The slicer then filters each transaction based on the sales amount, not the sum of the sales amount for each data point of a visual.
+- The numeric range slicer doesn't currently work with measures.
+- You can type any number into a numeric slicer even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
+- The date range slicer allows for any date values even if they don't exist in the underlying date column.
 
 ## Related content
 
