@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/14/2025
+ms.date: 04/22/2025
 LocalizationGroup: Transform and shape data
 ---
 
@@ -94,6 +94,38 @@ In the event of a failure, an error notification is displayed to show that your 
 > [!NOTE]
 > TMDL view modifies only the semantic model metadata, without refreshing data or affecting the report. If your changes require a data refresh, such as altering a PowerQuery expression or calculated column expression, you must manually refresh the table or model for the changes to take effect. Additionally, renaming a field in TMDL view may break visuals within the report that use that field.
 
+## Preview changes to the semantic model
+
+TMDL view enables you to preview script changes by showing a preview of the semantic model before and after script execution, shown as a TMDL code diff. Previewing script changes is particularly useful when copying scripts from other sources, letting you to assess their impact before running them against your semantic model. 
+
+Selecting the **Preview** button displays a TMDL diff of the semantic model before and after executing the TMDL script in the opened tab.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-15.png" alt-text="Screenshot of the preview button to preview script changes.":::
+
+A side-by-side window appears in the right pane, as shown in the following image.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-16.png" alt-text="Screenshot of preview view pane for pending script changes." lightbox="media/desktop-tabular-model-definition-language-view/tmdl-view-16.png":::
+
+Red and green boxes highlight the changes, with red boxes indicated removed or changed lines, and green indicating new lines. 
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-17.png" alt-text="Screenshot of red and green highlights for pending script changes.":::
+
+> [!NOTE]
+> The comparison isn't directly against the TMDL script currently displayed, but rather a comprehensive semantic model comparison before and after executing the script. So, some properties may be ordered differently than what is shown in the tab, adhering to the default TMDL property/object ordering.
+
+The preview is read-only, but you can keep editing your script. To refresh the preview after changes, select the **Update Preview** button, as shown in the banner in the following image.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-18.png" alt-text="Screenshot of the update preview button.":::
+
+There's a toolbar in the top right corner of the preview screen that enables navigation of all code diffs, enabling you to toggle between *inline* or *side-by-side* diff, viewing or hiding unchanged regions, and closing the preview view.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-19.png" alt-text="Screenshot of the toolbar for script preview.":::
+
+There are a few considerations to keep in mind when previewing changes to the semantic model:
+* TMDL view resets view configurations to default on each preview execution.
+* A preview runs only with a valid TMDL change. Invalid TMDL scripts won't execute a preview and an error is displayed in the Output pane.
+
+
 ## TMDL script tabs
 
 In TMDL view you can have multiple script tabs at once, any of which can be renamed or removed. 
@@ -107,7 +139,7 @@ The contents of the **TMDL view** tabs are saved in the report file when you sav
 > [!TIP]
 > You can open and edit TMDL scripts in Visual Studio Code, and they will properly reload after restarting Power BI Desktop.
 
-The *Problems* and *Output* panes display errors and messages specific to the script tab that's currently selected and displayed. Switching to a different TMDL scrip tab refreshes both of those panes with information specific to the selected and currently shown tab.
+The *Problems* and *Output* panes display errors and messages specific to the script tab that's currently selected and displayed. Switching to a different TMDL script tab refreshes both of those panes with information specific to the selected and currently shown tab.
 
 You can select the *Clear* button to empty the *Output* pane messages. 
 
@@ -163,7 +195,7 @@ createOrReplace
 
 **Scenario:** I need to modify the Power Query expression of my table without triggering a refresh.
 
-**Solution:** Script the table, modify the Power Query expression, and apply the changes. TMDL view does not require refreshing your data.
+**Solution:** Script the table, modify the Power Query expression, and apply the changes. TMDL view doesn't require refreshing your data.
 
 
 </br>
