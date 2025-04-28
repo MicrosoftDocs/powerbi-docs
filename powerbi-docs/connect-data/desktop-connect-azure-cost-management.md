@@ -92,13 +92,18 @@ To connect to a **billing profile**, you must retrieve your **Billing profile ID
 
 ## Connect to an Enterprise Agreement account
 
-1. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Enrollment Number**.
-2. Under **Scope Identifier**, paste the billing account ID copied in the previous step.
-3. Enter the number of months and select **OK**.
+To connect with an EA account, you can get your enrollment ID from the Azure portal:
+
+1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
+2. Select your billing account.
+3. From the **Overview** blade, copy the **Billing account ID**.
+4. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Enrollment Number**.
+5. Under **Scope Identifier**, paste the billing account ID copied in the previous step.
+6. Enter the number of months and select **OK**.
 
    :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-01b.png" alt-text="Screenshot showing the Azure Cost Management properties with a scope of enrollment number.":::
 
-4. When prompted, sign in with your Azure user account and password. You must use an Enterprise Administrator account for Enterprise Agreements.
+7. When prompted, sign in with your Azure user account and password. You must use an Enterprise Administrator account for Enterprise Agreements.
 
 ## Data available through the connector
 
