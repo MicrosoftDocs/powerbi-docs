@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/16/2025
+ms.date: 04/28/2025
 LocalizationGroup: Create reports
+#customer intent: As a Power BI user I want to learn how to use a slicer for constraining to numeric or date ranges in Power BI Desktop.
 ---
 # Create a numeric or date range slicer in Power BI
 
@@ -28,7 +29,7 @@ This simple technique is a powerful, visual way to filter your data.
 
 You can use a numeric range slicer like you would use any other slicer. Create a **Slicer** visual for your report, and then select a numeric value for the **Field** value.
 
-Power BI automatically creates a numeric range slicer. By default, it's set to **Between**.
+Power BI automatically creates a numeric range slicer set to **Between** by default.
 
 :::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between.png" alt-text="Screenshot of the Numeric range slicer menu.":::
 
@@ -36,7 +37,7 @@ Power BI automatically creates a numeric range slicer. By default, it's set to *
 
 Create a **Slicer** visual for your report, and then select a date field for the **Field** value.
 
-Power BI automatically creates a date range slicer. By default, it's set to **Between**.
+Power BI automatically creates a date range slicer set to **Between** by default.
 
 :::image type="content" source="media/desktop-slicer-numeric-range/slicer-date-range-between.png" alt-text="Screenshot of the Date range slicer and the Format pane.":::
 
@@ -71,7 +72,7 @@ A numeric range slicer snaps to whole numbers if the data type of the underlying
 
 ## Display formatting with the date range slicer
 
-When you use a slicer to display or set a range of dates, the dates display in the *Short Date* format. The user's browser or operating system locale determines the date format. As such, it is the display format no matter what the data type settings are for the underlying data or model.
+When you use a slicer to display or set a range of dates, the dates display in the *Short Date* format. The user's browser or operating system locale determines the date format. As such, it's the display format no matter what the data type settings are for the underlying data or model.
 
 You could, for example, have a long date format for the underlying data type. In this case, a date format such as *dddd, MMMM d, yyyy* would format a date in other visuals or circumstances as *Wednesday, March 14, 2001*. But in the date range slicer, that date displays in the slicer as *03/14/2001*.
 
