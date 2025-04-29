@@ -154,6 +154,16 @@
           href: desktop-bookmarks.md
         - name: Create page and bookmark navigators
           href: button-navigators.md
+    - name: Translytical task flows
+      items: 
+        - name: Understand translytical task flows
+          href: translytical-task-flow-overview.md
+        - name: Try an end-to-end scenario  
+          items:
+          - name: Create a translytical task flow
+            href: translytical-task-flow-create.md
+          - name: Build a report with data write-back
+            href: translytical-task-flow-report.md
     - name: Create drillthrough buttons
       href: desktop-drill-through-buttons.md
     - name: Use the drillthrough feature
