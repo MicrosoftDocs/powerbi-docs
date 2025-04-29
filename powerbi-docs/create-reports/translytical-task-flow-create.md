@@ -114,7 +114,7 @@ Update the sample code to write data to the `[SalesLT].[ProductDescription]` tab
 
 User data functions use pyodbc by default for SQL connections, and we recommend that library for this scenario.
 
-You can view the finished code for this section in the following [Complete function code](#appendix-function-code) section.
+You can view the finished code for this section in the following [Complete function code](#complete-function-code) section.
 
 1. In the function editor, add a new import statement to the top of the code file.
 
