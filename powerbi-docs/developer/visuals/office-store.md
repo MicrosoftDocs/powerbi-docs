@@ -42,7 +42,7 @@ When you're ready to submit your Power BI visual, verify that your visual meets 
 | Screenshots |Yes |Provide at least one screenshot, and up to five, in PNG format. The dimensions must be exactly 1366 px (width) by 768 px (height), and the size not larger than 1024 kb.<br>Add text bubbles to explain the value of key features shown in each screenshot. |
 | Support download link |Yes |Provide a support URL for your customers. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual's listing on AppSource. The URL should start with https://. |
 | Privacy document link |Yes |Provide a link to the visual's privacy policy. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual's listing on AppSource. The URL should start with https://. |
-| End-user license agreement (EULA) |Yes |You must provide an EULA file for your Power BI visual. You can use the [standard contract](https://go.microsoft.com/fwlink/?linkid=2041178), [Power BI visuals contract](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf), or your own EULA. |
+| End-user license agreement (EULA) |Yes |You must provide an EULA file for your Power BI visual. You can use the [standard contract](https://go.microsoft.com/fwlink/?linkid=2041178), [Power BI visuals contract](https://powerbi.microsoft.com/visuals-gallery-terms/), or your own EULA. |
 | Video link |No |To increase the interest of users for your custom visual, provide a link to a video about your visual. The URL should start with https://. |
 
 ## Submit or update your custom visual to AppSource
