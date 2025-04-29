@@ -80,15 +80,14 @@ To connect to a **billing profile**, you must retrieve your **Billing profile ID
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
 2. Select your billing profile.
 3. Select the **Settings** blade, then select **Properties**.
-4. Under **Billing profile**, copy the **ID**.
-5. Under **Billing account**, copy the **ID**.
-6. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Manually Input Scope**.
-7. Enter the billing profile resource ID string as shown in the following example, replacing *{billingAccountId}* and *{billingProfileId}* with the data copied in the previous step.
+4. Copy the **Billing profile ID** and **Billing account ID**.
+5. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Manually Input Scope**.
+6. Enter the billing profile resource ID string as shown in the following example, replacing *{billingAccountId}* and *{billingProfileId}* with the data copied in the previous step.
 
    ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}```
 
-8. Enter the number of months and select **OK**.
-9. When prompted, sign in with your Azure user account and password. You must have access to the billing profile to successfully access the billing profile data.
+7. Enter the number of months and select **OK**.
+8. When prompted, sign in with your Azure user account and password. You must have access to the billing profile to successfully access the billing profile data.
 
 ## Connect to an Enterprise Agreement account
 
