@@ -21,7 +21,7 @@ On-object interaction is the new way to build and format a visual, directly on t
 
 ## Turn on preview features
 
-Because the on-object feature is in preview, you need to turn it on. You'll also be turning on the new Visualizations and Format pane functionality changes. See the updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article for details.
+Because the on-object feature is in preview, you need to turn it on.
 
 1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Preview Features** > **On-object interaction**. 
 
@@ -101,7 +101,7 @@ You can begin building a new visual in one of three ways.
 
 - Right-click the canvas > **Add visual** or **Paste**.
 
-You notice the Visualizations pane is no longer available, by design. The updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article has details.
+You notice the Visualizations pane is no longer available, by design. For details, see [Format and Visualizations panes](../visuals/desktop-format-pane.md).
 
 > [!NOTE]
 > Custom visuals are shown in the ribbon visualization gallery, along with the other visuals.
