@@ -35,74 +35,75 @@ The Microsoft Cost Management connector uses OAuth 2.0 for authentication with A
 To use the **Microsoft Cost Management connector** in Power BI Desktop, take the following steps:
 
 1. In the **Home** ribbon, select **Get Data**.
-2. Select **Azure** from the list of data categories.
-3. Select **Azure Cost Management**.
-4. Select **Connect**.
+1. Select **Azure** from the list of data categories.
+1. Select **Azure Cost Management**.
+1. Select **Connect**.
 
    :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-00b.png" alt-text="Screenshot of Get Data dialog with highlighted selections to connect to Azure Cost Management.":::
 
-5. In the dialog that appears, under **Choose Scope**, select **Manually Input Scope** for **Microsoft Customer Agreements**, or select **Enrollment Number** for **Enterprise Agreements**.
+1. In the dialog that appears, under **Choose Scope**, select **Manually Input Scope** for **Microsoft Customer Agreements**, or select **Enrollment Number** for **Enterprise Agreements**.
 
 ## Connect to a Microsoft Customer Agreement account
 
-This section describes the steps necessary to connect to an MCA account.
+This section describes the steps necessary to connect to a Microsoft Customer Agreement account.
 
 ### Connect to a billing account
 
 To connect to a billing account, you need to retrieve your **Billing account ID** from the Azure portal:
 
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
-2. Select your billing profile.
-3. In the menu, select **Settings** > **Properties**.
-4. Under **Billing account details**, copy the **Billing account ID**.
+1. Select your billing scope.
+1. In the menu, select **Settings** > **Properties**.
+1. Under **Billing account details**, copy the **Billing account ID**.
 
    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="Screenshot of billing account ID highlighted in Cost management billing profile properties.":::
 
-5. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Manually Input Scope**.
-6. Input the connection string as shown in the following example, replacing *{billingAccountId}* with the data copied in the previous step.
+1. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Manually Input Scope**.
+1. Input the connection string as shown in the following example, replacing *{billingAccountId}* with the data copied in the previous step.
 
     ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}```
 
     Alternatively, for **Choose Scope**, select **Enrollment Number** and input the billing account ID string as copied in the previous step.
 
-7. Enter the number of months and select **OK**.
+1. Enter the number of months and select **OK**.
 
     :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-05.png" alt-text="Screenshot of Azure Cost Management dialog with number of months input.":::
 
     Alternatively, if you want to download less than a month's worth of data you can set *Number of months* to zero, then specify a date range using *Start Date* and *End Date* values that equate to less than 31 days.
 
-8. When prompted, sign in with your Azure user account and password. You must have access to the billing account scope to successfully access the billing data.
+1. When prompted, sign in with your Azure user account and password. You must have access to the billing account scope to successfully access the billing data.
 
 ### Connect to a billing profile
 
 To connect to a **billing profile**, you must retrieve your **Billing profile ID** and **Billing account ID** from the Azure portal:
 
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
-2. Select your billing profile.
-3. Select the **Settings** blade, then select **Properties**.
-4. Copy the **Billing profile ID** and **Billing account ID**.
-5. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Manually Input Scope**.
-6. Enter the billing profile resource ID string as shown in the following example, replacing *{billingAccountId}* and *{billingProfileId}* with the data copied in the previous step.
+1. Select your billing scope.
+1. In the menu, select **Billing** > **Billlng profiles**. Select your billing profile.
+1. In the menu, select **Settings** > **Properties**.
+1. Copy the **Billing profile ID** and **Billing account ID**.
+1. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Manually Input Scope**.
+1. Enter the billing profile resource ID string as shown in the following example, replacing *{billingAccountId}* and *{billingProfileId}* with the data copied in the previous step.
 
    ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}```
 
-7. Enter the number of months and select **OK**.
-8. When prompted, sign in with your Azure user account and password. You must have access to the billing profile to successfully access the billing profile data.
+1. Enter the number of months and select **OK**.
+1. When prompted, sign in with your Azure user account and password. You must have access to the billing profile to successfully access the billing profile data.
 
 ## Connect to an Enterprise Agreement account
 
-To connect with an EA account, you can get your enrollment ID from the Azure portal:
+To connect with an Enterprise Agreement account, you can get your enrollment ID from the Azure portal:
 
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
-2. Select your billing account.
-3. From the **Overview** blade, copy the **Billing account ID**.
-4. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Enrollment Number**.
-5. Under **Scope Identifier**, paste the billing account ID copied in the previous step.
-6. Enter the number of months and select **OK**.
+1. Select your billing scope.
+1. From the **Overview** blade, copy the **Billing account ID**.
+1. In the Azure Cost Management dialog in Power BI Desktop, under **Choose Scope**, select **Enrollment Number**.
+1. Under **Scope Identifier**, paste the billing account ID copied in the previous step.
+1. Enter the number of months and select **OK**.
 
    :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-01b.png" alt-text="Screenshot showing the Azure Cost Management properties with a scope of enrollment number.":::
 
-7. When prompted, sign in with your Azure user account and password. You must use an Enterprise Administrator account for Enterprise Agreements.
+1. When prompted, sign in with your Azure user account and password. You must use an Enterprise Administrator account for Enterprise Agreements.
 
 ## Data available through the connector
 
@@ -148,8 +149,8 @@ The following considerations and limitations apply to the Microsoft Cost Managem
 You might receive a *400 bad request* from the **RI usage details** when you try to refresh the data if you've chosen a date parameter greater than three months. To mitigate the error, take the following steps:
 
 1. In Power BI Desktop, select **Home > Transform data**.
-2. In Power Query Editor, select the **RI usage details** semantic model and select **Advanced Editor**.
-3. Update the Power Query code as shown in the following paragraphs, which split the calls into three-month chunks. Make sure you note and retain your enrollment number, or billing account/billing profile ID.
+1. In Power Query Editor, select the **RI usage details** semantic model and select **Advanced Editor**.
+1. Update the Power Query code as shown in the following paragraphs, which split the calls into three-month chunks. Make sure you note and retain your enrollment number, or billing account/billing profile ID.
     
    For **Enterprise Agreements**, use the following code update:
    
@@ -183,21 +184,21 @@ You might receive a *400 bad request* from the **RI usage details** when you try
        riusagedetails
    ```
 
-4. Once you've updated the code with the appropriate update from the previous step, select **Done**, then select **Close & Apply**.
+1. Once you've updated the code with the appropriate update from the previous step, select **Done**, then select **Close & Apply**.
 
 You might run into a situation where tags aren't working in the usage details or the tags column can't be transformed to json. This issue stems from the current UCDD API returning the tags column by trimming the start and end brackets, which results in Power BI being unable to transform the column because it returns it as a string. To mitigate this situation, take the following steps.
 
 1. Select **Transform data** to open **Power Query Editor**.
-2. Select the *Usage Details* table.
-3. In the **Query Settings** pane, under **Applied Steps**, you need to insert adding a custom column to the steps, after the **Navigation** step.
-4. From the menu ribbon, select **Add Column** > **Custom Column**.
-5. Name the column *TagsInJson*, or whatever you prefer, then enter the following text in the **Custom column formula** field:
+1. Select the *Usage Details* table.
+1. In the **Query Settings** pane, under **Applied Steps**, you need to insert adding a custom column to the steps, after the **Navigation** step.
+1. From the menu ribbon, select **Add Column** > **Custom Column**.
+1. Name the column *TagsInJson*, or whatever you prefer, then enter the following text in the **Custom column formula** field:
 
    ```dax
    ```= "{"& [Tags] & "}"
 
-6. Completing the previous steps creates a new column of *tags* in the json format.
-7. You can now transfer and expand the column as you need to.
+1. Completing the previous steps creates a new column of *tags* in the json format.
+1. You can now transfer and expand the column as you need to.
 
 **Authentication issues encountered with Microsoft Entra guest accounts.** You might have the appropriate permissions to access the enrollment or billing account, but receive an authentication error similar to one of the following:
 
@@ -209,11 +210,11 @@ These errors could be the result of having a user account in a different Microso
 For guest accounts, use the following settings or options as you're prompted with the **authentication dialog** when connecting with the Cost Management Power BI connector:
 
 1. Select **Sign-in**.
-2. Select **Use another account** (bottom of the dialog).
-3. Select **Sign-in options** (bottom of the dialog box).
-4. Select **Sign into an organization**.
-5. For **Domain name**, provide the Fully Qualified Domain Name (FQDN) of the Microsoft Entra domain into which you've been added as a guest.
-6. Then, for **Pick an account**, select the user account that you’ve previously authenticated.  
+1. Select **Use another account** (bottom of the dialog).
+1. Select **Sign-in options** (bottom of the dialog box).
+1. Select **Sign into an organization**.
+1. For **Domain name**, provide the Fully Qualified Domain Name (FQDN) of the Microsoft Entra domain into which you've been added as a guest.
+1. Then, for **Pick an account**, select the user account that you’ve previously authenticated.  
 
 ## Related content
 
