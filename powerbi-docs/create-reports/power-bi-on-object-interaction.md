@@ -101,7 +101,7 @@ You can begin building a new visual in one of three ways.
 
 - Right-click the canvas > **Add visual** or **Paste**.
 
-You notice the Visualizations pane is no longer available, by design. For details, see [Format and Visualizations panes](../visuals/desktop-format-pane.md).
+You notice the Visualizations pane is no longer available, by design.
 
 > [!NOTE]
 > Custom visuals are shown in the ribbon visualization gallery, along with the other visuals.
