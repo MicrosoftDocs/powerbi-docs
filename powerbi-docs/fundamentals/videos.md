@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/16/2024
+ms.date: 04/25/2025
 ms.custom: video-9rh_qSK-UKQ, video-RxsT9TtOYok, video-abTASA8iOjQ, build-2023, build-2023-dataai
 ---
 # Power BI videos
@@ -27,7 +27,7 @@ Power BI videos are embedded in our documentation, organized into channels and p
 
 ## Subscribe to the Power BI video channel
 
-Our video channel includes curated playlists to make it easy to find the content you need. We’re continually adding to our collection, so [subscribe to the Power BI video channel](https://www.youtube.com/c/MSPowerBI/) to be notified when we add new videos. Explore our playlists to discover videos focused on where you are in the business intelligence journey.
+Our video channel includes curated playlists to make it easy to find the content you need. We’re continually adding to our collection, so [subscribe to the Power BI video channel](https://www.youtube.com/@MicrosoftPowerBI/videos) to be notified when we add new videos. Explore our playlists to discover videos focused on where you are in the business intelligence journey.
 
 ## Microsoft Power BI Community videos and webinars
 
@@ -36,7 +36,6 @@ Our video channel includes curated playlists to make it easy to find the content
 ## Related content
 
 - [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_video-docs-link)
-- [Watch Power BI demos](https://powerbi.microsoft.com/demo/)
-- Discover [videos from Azure about Power BI Embedded and Synapse Analytics](https://azure.microsoft.com/search/?q=Power+Bi)
+- [Power BI monthly updates](https://www.youtube.com/playlist?list=PL1N57mwBHtN3rbPkoKqj-L8vTBPzD-98m)
  
 More questions? [Try asking the Power BI Community.](https://community.powerbi.com/)
