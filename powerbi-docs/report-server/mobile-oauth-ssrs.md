@@ -65,9 +65,9 @@ To enable a report server to use Kerberos authentication, you need to configure 
 
 ```xml
 <AuthenticationTypes>  
-    <RSWindowsNegotiate />  
-    <RSWindowsKerberos />  
-    <RSWindowsNTLM />  
+    <RSWindowsNegotiate/>  
+    <RSWindowsKerberos/>  
+    <RSWindowsNTLM/>  
 </AuthenticationTypes>
 ```
 
