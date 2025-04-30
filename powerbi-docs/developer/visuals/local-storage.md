@@ -7,7 +7,7 @@ ms.reviewer: shafeeq, jennyf
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 01/30/2024
+ms.date: 04/30/2025
 ---
 
 # Local Storage API
@@ -184,7 +184,9 @@ export class Visual implements IVisual {
   * Desktop
   * SaaS Embed
   * Mobile
-  * Report Server
+  <!--- * Report Server --->
+   > [!NOTE]
+   > There is currently no support for Report Server.
 * Local storage isn't supported when Exporting to *PDF* or *pptx*.
 * The API is supported only when a user is signed in.
 * A visual’s data is cleared 29 days after the most recent modification time.
