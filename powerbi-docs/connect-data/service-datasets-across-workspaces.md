@@ -6,8 +6,8 @@ ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: how-to
-ms.date: 12/29/2022
+ms.topic: overview
+ms.date: 05/01/2025
 LocalizationGroup: Share your work
 ---
 # Introduction to semantic models across workspaces
@@ -46,7 +46,7 @@ If you create semantic models, when you create one that others can benefit from,
 The specific features and experiences built on shared semantic model capabilities are licensed according to their existing scenarios. For example:
 
 - In general, discovering and connecting to shared semantic models is available to anyone. It isn't a feature restricted to Premium.
-- Users without a Pro or Premium Per User (PPU) license can only use semantic models across workspaces for report authoring if those semantic models reside in the users' personal **My workspace** or in a Premium-backed workspace. The same licensing restriction applies whether they author reports in Power BI Desktop or in the Power BI service.
+- Users without a Pro or Premium Per User (PPU) license can only use semantic models across workspaces for report authoring if those semantic models reside in the users' personal **My workspace**. The same licensing restriction applies whether they author reports in Power BI Desktop or in the Power BI service.
 - Copying reports between workspaces requires a Pro or Premium Per User license.
 - Copying reports from an app requires a Pro or Premium Per User license.
 - Promoting and certifying semantic models requires a Pro or Premium Per User license.
