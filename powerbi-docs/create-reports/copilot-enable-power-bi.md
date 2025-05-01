@@ -22,9 +22,6 @@ This article is for organizations who would like to enable and start using Copil
 
 For more information on other Fabric workloads, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview). Note, you must have Fabric admin privileges to enable Copilot.
 
-> [!IMPORTANT]
-> When scaling from a smaller capacity to F64 or above, allow up to 24 hours for Copilot for Power BI up to be enabled.
-
 ## Enable Fabric Copilot for Power BI in your tenant
 
 Copilot for Microsoft Fabric is now enabled by default in the Fabric Admin portal. Admins can disable Copilot if your organization is not ready to use it.
@@ -64,7 +61,7 @@ Enabling this setting only applies if Azure OpenAI isn't available in your geogr
 
 ## Use Copilot for Power BI in the service
 
-To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric (F64 and above)](/fabric/enterprise/licenses) capacity.
+To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric (F2 and above)](/fabric/enterprise/licenses) capacity.
 
 > [!NOTE]
 > For a refresher on workspace access and permissions, see [Roles in workspaces in Power BI](/power-bi/collaborate-share/service-roles-new-workspaces).
@@ -83,7 +80,7 @@ Check your license type in the **Workspace settings**.
 
 ## Use Copilot in Power BI Desktop
 
-To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
+To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
 > [!NOTE]
 > The Copilot button always appears in the ribbon in Power BI Desktop. To be able to use Copilot, you must be signed in and have access to a workspace that is in Premium or Fabric capacity.
@@ -112,10 +109,10 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 
 ## Licensing requirements
 
-To use Copilot for Power BI, you must have access to a Premium Power BI capacity (P1 and above) or paid Fabric capacity (F64 and above). Your capacity (either Premium or Fabric) needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability).
+To use Copilot for Power BI, you must have access to a Premium Power BI capacity or paid Fabric capacity. Your capacity (either Premium or Fabric) needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability).
 
 > [!NOTE]
-> Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
+> Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs are supported.
 
 ## Send feedback
 
