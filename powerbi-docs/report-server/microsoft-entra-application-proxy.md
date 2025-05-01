@@ -82,17 +82,26 @@ Open the command prompt as an administrator and perform the following steps.
 Register the following SPNs under the account **Power BI Report Server service account** using the following commands
 
 ```
-setspn -s http/ Netbios name\_of\_Power BI Report Server\_server<space> Power BI Report Server\_ServiceAccount
+setspn -s http/Netbios name\_of\_Power BI Report Server\_server<space> Power BI Report Server\_ServiceAccount
 
-setspn -s http/ FQDN\_of Power BI Report Server\_server<space> Power BI Report Server\_ServiceAccount
+setspn -s http/FQDN\_of Power BI Report Server\_server<space> Power BI Report Server\_ServiceAccount
 ```
-
+**Sample:**
+```
+setspn -s http/pbirs contoso\pbirssvcacc
+setspn -s http/pbirs.contoso.com contoso\pbirssvcacc
+```
 Register the following SPNs under the SQL Server service account using the following commands (for a default instance of SQL Server):
 
 ```
 setspn -s MSSQLSVC/FQDN\_of\_SQL\_Server: 1433 (PortNumber) <SQL service service account>
 
 setspn -s MSSQLSVC/FQDN\_of\_SQL\_Server<SQL service service account>
+```
+**Sample:**
+```
+setspn -s MSSQLSVC/sqlserver.contoso.com:1433 contoso\sqlsvcacc
+setspn -s MSSQLSVC/sqlserver.contoso.com contoso\sqlsvcacc
 ```
 
 ### 3. Configure delegation settings
