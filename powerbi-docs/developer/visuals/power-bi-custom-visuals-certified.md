@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/18/2024
+ms.date: 02/18/2025
 #customer intent: As a Power BI visual developer, I want to learn how to get my custom visual certified so that it can be used by others in Power BI.
 ---
 
@@ -83,6 +83,12 @@ Use the latest version of [powerbi-visuals-tools](https://www.npmjs.com/package/
 
 Compile your Power BI visual with `pbiviz package`. If you're using your own build scripts, provide a `npm run package` custom build command.
 
+>[!TIP]
+> Starting from powerbi-visuals-tools version 6.1.0, you can check your visual for unsafe calls to `fetch`, `XMLHttpRequest`, and `eval` using the following command:
+`pbiviz package --certification-audit`
+If any unsafe code is detected during the audit, you can automatically build a package with the necessary fixes by running:
+`pbiviz package --certification-fix`
+
 ### Source code requirements
 
 Make sure you follow the [Power BI visuals additional certification](/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, you'll get a rejection email from Partner Center with the policy numbers listed in this link.
@@ -99,6 +105,7 @@ Follow the code requirements listed here to make sure that your code is in line 
 #### Not allowed
 
 * Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services. Therefore, [WebAccess privileges](./capabilities.md#allow-web-access) should be empty, or omitted, in the capabilities settings.
+* Using `XMLHttpRequest`, or `fetch`.
 * Using `innerHTML`, or `D3.html(user data or user input)`.
 * JavaScript errors or exceptions in the browser console, for any input data.
 * Arbitrary or dynamic code such as `eval()`, unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.

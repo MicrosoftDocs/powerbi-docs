@@ -22,7 +22,7 @@ You can find visuals on dashboards and in reports, and you can create them insta
 :::image type="content" source="media/end-user-visualizations/power-bi-dashboards.png" alt-text="Screenshot of a Power BI service window showing a dashboard in the main pane." lightbox="media/end-user-visualizations/power-bi-dashboards.png":::
 
 > [!TIP]
-> We recommend reading the overview topic [Basic concepts for the Power BI service business user](end-user-basic-concepts.md) before reading this more detailed content.
+> We recommend reading the overview topic [Basics of the Power BI service](../fundamentals/service-basic-concepts.md) before reading this more detailed content.
 
 ## What can I do with visuals
 
@@ -62,6 +62,6 @@ The administrator or the designer can disable your ability to see or use these f
 
 ## Related content
 
-- [Basic concepts for the Power BI service business users](end-user-basic-concepts.md)
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 - [Open a report in the Power BI service](end-user-report-open.md)
 - [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)

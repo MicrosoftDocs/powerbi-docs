@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 
 Power BI semantic models can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large semantic models beyond the default limit can be enabled with the **Large semantic model storage format** setting. When enabled, semantic model size is limited by the Premium *capacity* size or the maximum size set by the administrator.
 
-Large semantic models can be enabled for all Premium P SKUs, Embedded A SKUs, and with Premium Per User (PPU). The large semantic model size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
+Large semantic models can be enabled for all Fabric F SKUs, Premium P SKUs, Embedded A SKUs, and with Premium Per User (PPU). The large semantic model size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
 
 While required for semantic models to grow beyond 10 GB, enabling the Large semantic model storage format setting has other benefits. If you're planning to use XMLA endpoint-based tools for semantic model write operations, be sure to enable the  setting, even for semantic models that you wouldn't necessarily characterize as a *large* semantic model. When enabled, the large semantic model storage format can improve XMLA write operations performance.
 
@@ -158,8 +158,6 @@ Keep in mind the following restrictions when using large semantic models:
 * **Refreshing large semantic models**: Semantic models that are close to half the size of the capacity size (for example, a 12-GB semantic model on a 25-GB capacity size) may exceed the available memory during refreshes. Using the [enhanced refresh REST API](../connect-data/asynchronous-refresh.md) or the [XMLA endpoint](service-premium-connect-tools.md), you can perform fine grained data refreshes, so that the memory needed by the refresh can be minimized to fit within your capacity's size.
 
 * **Push semantic models**: Push semantic models don't support the large semantic model storage format.
-
-* **Pro isn't supported** - Large semantic models aren't supported in Pro workspaces. If a workspace is migrated from Premium to Pro, any semantic models with the *large semantic model storage format* setting, will fail to load.
 
 * You can't use REST APIs to change the settings of a workspace to allow new semantic models to use the large semantic model storage format by default.
 

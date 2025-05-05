@@ -189,6 +189,8 @@ Users with Build semantic model permissions are equivalent to Analysis Services 
 
 Operations that require Analysis Services server admin permissions (rather than database admin) in general are not supported.
 
+To learn more, see [Semantic model permissions](/power-bi/connect-data/service-datasets-permissions) and [Roles in workspaces](/power-bi/collaborate-share/service-roles-new-workspaces)
+
 ### Impersonation
 
 User impersonation by using the [EffectiveUserName connection string property](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth)  is supported when connecting to Premium workspace semantic models. The account specified in EffectiveUserName must be in the tenant's Microsoft Entra ID and must have both **Read** and **Build** permissions for the semantic model being connected to. If the account doesn't have both Read and Build permissions, Power BI can't impersonate the user account. The connection will fail, and an error is returned.
@@ -227,6 +229,10 @@ Service principals can be used with the XMLA endpoint to automate semantic model
 - Custom client applications
 
 To learn more, see [Automate Premium workspace and semantic model tasks with service principals](service-premium-service-principal.md).
+
+### Semantic Model discovery
+
+When the tenant-level setting **Block republish and disable package refresh** is enabled, a user can discover only those semantic models using the XMLA Endpoint for which they are the owner. If a user is not the owner of a semantic model, then they are equivalent to an Analysis Services database reader, even when they are an **Admin**, **Member** or **Contributor** on the workspace.
 
 ## Deploy model projects from Visual Studio (SSDT)
 
@@ -295,7 +301,7 @@ XMLA write operations on semantic models authored in Power BI Desktop and publis
 > [!CAUTION]
 > At this time, a write operation on a semantic model authored in Power BI Desktop prevents it from being downloaded back as a PBIX file. Be sure to retain your original PBIX file.
 
-### data source declaration
+### Data source declaration
 
 When connecting to data sources and querying data, Power BI Desktop uses Power Query M expressions as inline data source declarations. While supported in Premium workspaces, Power Query M inline data source declaration isn't supported by Azure Analysis Services or SQL Server Analysis Services. Instead, Analysis Services data modeling tools like Visual Studio create metadata using *structured* or *provider* data source declarations. With the XMLA endpoint, Premium also supports structured and provider data sources, but not as part of Power Query M inline data source declarations in Power BI Desktop models. To learn more, see [Understanding providers](/azure/analysis-services/analysis-services-datasource#understanding-providers).
 

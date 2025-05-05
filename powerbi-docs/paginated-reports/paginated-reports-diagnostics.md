@@ -16,7 +16,7 @@ ms.date: 06/19/2023
 
 In this article, you learn how to view, read, and use the diagnostics feature of a paginated report rendered in the Power BI service. Diagnostics data provides report viewers with the ability to read displayed data on performance metrics and rendering. 
 
-:::image type="content" source="media/paginated-reports-diagnostics/paginated-diagnostics-report.png" alt-text="Screenshot of the dialog box for diagnostics."::: 
+:::image type="content" source="media/paginated-reports-diagnostics/diagnostics-card.png" alt-text="Screenshot of the dialog box for diagnostics."::: 
 
 Any user with at least a Contributor role in a workspace can use this feature. Read more about [workspace roles](../collaborate-share/service-roles-new-workspaces.md).
 
@@ -46,6 +46,8 @@ The following table describes the data that's captured in the diagnostics dialog
 | Start Time in UTC    | Start time in UTC indicates the duration of a report process. It can be used in conjunction with the rendering ID (OperationName) start and end time in the [Microsoft Fabric Capacity Metrics app.](/fabric/enterprise/metrics-app). |
 | Render Format        | JSONRPL, PDF, XLSX  |
 | Content Size         | Size of rendered reports in kilobytes (kb). |
+|Execution environment| The environment in which the report run. |
+|Non-optimized expressions| A list of unoptimized report expressions |
 
 ## Considerations and limitations
 

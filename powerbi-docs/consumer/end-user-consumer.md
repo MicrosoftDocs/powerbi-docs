@@ -67,4 +67,4 @@ That doesn't mean that you can't save your changes. You can, but those changes o
 
 [Power BI service training for business users.](/training/paths/consume-data-with-power-bi/)  
 
-[Terminology and concepts for Power BI business users.](end-user-basic-concepts.md)
+[Basics of the Power BI service](../fundamentals/service-basic-concepts.md)

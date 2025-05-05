@@ -7,7 +7,7 @@ ms.reviewer: kfollis, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 04/21/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,60 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+
+## March 2025 QFE 5
+
+*Version 2.141.1754.0, Released: April 16, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where new Card visual conditional formatting wasn't working without small multiples.
+
+* Addressed the issue where two separate **Working on this** dialogs were displayed, and the second **Working on this** dialog would hang.
+
+
+
+## March 2025 QFE 4
+
+*Version 2.141.1558.0, Released: April 11, 2025*
+
+Bug fixes/improvements:
+
+* Rolled back fix for the issue where two separate **Working on this** dialogs are displayed and the second **Working on this** dialog hangs.
+
+
+## March 2025 QFE 3
+
+*Version 2.141.1580.0, Released: April 10, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where two separate **Working on this** dialogs were displayed, and the second **Working on this** dialog would hang.
+
+* Fixed Snowflake connector issues for March 2025 release.
+
+* Addressed a bug causing *TaskCanceledException* in the Power BI Windows application.
+
+
+## March 2025 QFE 2
+
+*Version 2.141.1451.0, Released: April 4, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where **Edit in Desktop** doesn't work for Microsoft Store installations of Power BI Desktop.
+
+
+## March 2025 QFE 1
+
+*Version 2.141.1253.0, Released: March 30, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue of a gray/empty *Load to report* dialog in the Power BI client for Windows.
+
 
 
 

@@ -30,7 +30,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - The user must have Storage Blob Data Owner role, Storage Blob Data Reader role, and an Owner role at the storage account level (scope should be *this resource* and not inherited). Any applied role changes might take a few minutes to sync, and must sync before the following steps can be completed in the Power BI service.
 
-- The Power BI workspace tenant region should be the same as the storage account region.
+- For Pro workspaces the storage account should be in the same region as the Fabric home region. For premium workspaces the storage account should be in the same region as the premium capacity.
 
 - TLS (Transport Layer Security) version 1.2 (or higher) is required to secure your endpoints. Web browsers and other client applications that use TLS versions earlier than TLS 1.2 won't be able to connect.
 

@@ -23,6 +23,9 @@ This article discusses some common issues that might occur when you use the on-p
 
 At the end of configuration, the Power BI service is called again to validate the gateway. The Power BI service doesn't report the gateway as live. Restarting the Windows service might allow the communication to be successful. To get more information, you can collect and review the logs as described in [Collect logs from the on-premises data gateway app](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
+### Bring your own Azure Relay
+Gateways experiencing connectivity issues while using Bring Your Own Relay should ensure that Private Link is not enabled on the Relay, as this configuration is not supported.
+
 ## Data sources
 
 > [!NOTE]
