@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/30/2025
+ms.date: 05/05/2025
 LocalizationGroup: Create reports
 # Customer intent: As a Power Bi user I want to create a Power Automate visual.
 ---
