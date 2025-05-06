@@ -89,7 +89,8 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | Manage gateways, connections, and data policies (preview) |**GCC**: gatewayadminportal-gov.azure.us<br>**GCC High**: gatewayadminportal-high.azure.us<br>**DoD**: gatewayadminportal-mil.azure.us |
 | Service telemetry | **All**: dc.services.visualstudio.us |
 | Informational messages (optional) | **All**: arc.msn.com |
-| | |
+| SharePoint web part integration with Power BI | **All**: api.powerbi.com |
+
 
 <br>
 
