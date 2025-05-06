@@ -284,7 +284,7 @@
           href: /dax/dax-copilot?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Use Copilot to create measure descriptions
           href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
-      - name: Prepare you data for Copilot
+      - name: Prepare your data for Copilot
         items:        
         - name: Prepare your data for AI 
           href: copilot-prepare-data-ai.md
