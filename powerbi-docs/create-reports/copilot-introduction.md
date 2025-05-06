@@ -27,7 +27,7 @@ This article provides an overview of the Copilot capabilities for Power BI.
 >
 > **Sovereign clouds are unsupported.** Copilot isn't yet supported for sovereign clouds due to GPU availability.
 >
-> **If you have questions about privacy or security with Copilot, see [Privacy, security, and responsible use for Copilot in Power BI](/fabric/get-started/copilot-power-bi-privacy-security).
+> **If you have questions about privacy or security with Copilot**, see [Privacy, security, and responsible use for Copilot in Power BI](/fabric/get-started/copilot-power-bi-privacy-security).
 
 ## Data preparation
 
