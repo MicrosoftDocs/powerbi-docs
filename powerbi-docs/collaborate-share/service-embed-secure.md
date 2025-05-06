@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/22/2025
+ms.date: 05/06/2025
 LocalizationGroup: Share your work
 ---
 
@@ -123,6 +123,16 @@ https://app.powerbi.com/reportEmbed?reportId=/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
 ```
 
 You can add as many buttons as you'd like to create a low-code custom experience. 
+
+## Enable Copilot in Secure Embedded Reports
+
+You can activate Copilot for secure Web or Portal Embedded Reports by selecting the "Enable Copilot" checkbox in the embedded reports dialog. Keep in mind that this feature requires an active Copilot tenant switch and either Power BI Premium or paid Fabric capacity in your workspace. Once enabled, users can interact directly with Copilot within the embedded report.
+
+1. Click “Embed Report” in the File menu and select “Website or portal”. 
+:::image type="content" source="./media/service-embed-secure/embed_report-menu.png" alt-text="Screenshot of selection of Embed Report menu and selection of Website or portal menu option.":::
+
+2. Check “Enable Copilot” option.
+:::image type="content" source="./media/service-embed-secure/embed-report-enable-copilot.png" alt-text="Screenshot of Embed dialog with Enable Copilot option checked.":::  
 
 ## Considerations and limitations
 
