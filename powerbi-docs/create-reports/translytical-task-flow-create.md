@@ -174,9 +174,7 @@ You can view the finished code for this section in the following [Complete funct
 The following code block provides the final function code that you edited in the previous section.
 
 ```python
-import datetime
 import fabric.functions as fn
-import logging
 import uuid
 
 udf = fn.UserDataFunctions()

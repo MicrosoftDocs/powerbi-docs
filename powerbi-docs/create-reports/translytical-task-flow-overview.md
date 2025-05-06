@@ -90,3 +90,16 @@ The following steps require tenant admin access:
 1. Select the toggle to switch the feature to **Enabled**.
 
 It may take a few hours for this change to take effect across the tenant.
+
+## Limitations
+
+Currently, the following limitations apply to translytical task flows:
+
+* Only preview slicers (button slicer, list slicer, and text slicer) are available as input controls. The current slicer isn't supported.
+* PBIR (Power BI enhanced report) and PBIP (Power BI Project) formats aren't supported.
+* Power BI embed isn't supported.
+
+The following service limitations may also affect your translytical task flows:
+
+* [Service details and limitations of Fabric user data functions](/fabric/data-engineering/user-data-functions/user-data-functions-service-limits)
+* [Limitations in SQL database in Microsoft Fabric](/fabric/database/sql/limitations)
