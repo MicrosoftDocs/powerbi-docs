@@ -201,7 +201,7 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 |                        |                                                                         |
 |**Annotations**         |                                                                         |
 |**Ctrl + Alt + I**      |Hide/show annotations                                                   |
-|**Alt + H**             |Move focus to annotation toolbar                                        |
+|**Ctrl + Shift + :**    |Move focus to annotation toolbar                                        |
 |**Alt + Shift + I**     |Move focus to annotations group panels                                  |
 |                        |                                                                         |
 |**Live data/Snapshot**  |                                                                         |
