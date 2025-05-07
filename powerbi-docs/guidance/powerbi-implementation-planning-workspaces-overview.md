@@ -1,6 +1,6 @@
 ---
-title: "Power BI implementation planning: Workspaces"
-description: "This article introduces the Power BI workspace planning articles."
+title: "Power BI Implementation Planning: Workspaces"
+description: "Get an introduction to articles about Power BI workspace planning."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -15,7 +15,7 @@ ms.date: 12/30/2024
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This workspaces article introduces the Fabric workspace planning articles, which have an emphasis on the Power BI experience. These articles are targeted at multiple audiences:
+This article introduces the Fabric workspace planning articles, which have an emphasis on the Power BI experience. These articles are written for multiple audiences:
 
 - **Fabric administrators**: The administrators who are responsible for overseeing Power BI in the organization.
 - **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing data and BI throughout the organization.
@@ -28,7 +28,7 @@ Fundamentally, a [workspace](/fabric/get-started/workspaces) is a container in t
 > [!NOTE]
 > The concept of a workspace originated in Power BI. With Fabric, the purpose of a workspace has become broader. The result is that a workspace can now contain items from one or more different [Fabric experiences](/fabric/get-started/fabric-terminology) (also known as workloads). Even though the content scope has become broader than Power BI, most of the workspace planning activities described in these articles can be applied to Fabric workspace planning.
 
-The workspace planning content is organized into the following articles:
+The workspace planning content is organized in the following articles:
 
 - **[Tenant-level workspace planning](powerbi-implementation-planning-workspaces-tenant-level-planning.md)**: Strategic decisions and actions that affect all workspaces in the tenant.
 - **[Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md)**: Tactical decisions and actions to take for each workspace.

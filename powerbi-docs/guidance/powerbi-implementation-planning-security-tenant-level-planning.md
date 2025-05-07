@@ -1,5 +1,5 @@
 ---
-title: "Power BI implementation planning: Tenant-level security planning"
+title: "Power BI Implementation Planning: Tenant-level security planning"
 description: "Learn about tenant-level security planning for Power BI."
 author: denglishbi
 ms.author: daengli
@@ -15,22 +15,22 @@ ms.date: 12/30/2024
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This tenant-level security planning article is primarily targeted at:
+This article about tenant-level security planning is primarily for:
 
 - **Fabric administrators**: The administrators who are responsible for overseeing Power BI in the organization.
 - **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing Power BI. They might need to collaborate with administrators of Power BI, information security teams, and other relevant teams.
 
 This article might also be relevant for self-service Power BI creators who create, publish, and manage content in workspaces.
 
-The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). The Power BI security white paper focuses on key technical subjects such as authentication, data residency, and network isolation. The implementation planning series provides you with considerations and decisions to help you plan for security and privacy.
+The series of articles is intended to expand on the content in the [Power BI security white paper](whitepaper-powerbi-security.md). The Power BI security white paper focuses on key technical subjects like authentication, data residency, and network isolation. The implementation planning series provides you with considerations and decisions to help you plan for security and privacy.
 
-Because Power BI content can be used and secured in different ways, content creators make many tactical decisions. However, there are some strategic planning decisions to make at the tenant level, too. Those strategic planning decisions are the focus for this article.
+Because Power BI content can be used and secured in different ways, content creators make many tactical decisions. However, there are some strategic planning decisions to make at the tenant level, too. We describe those strategic planning decisions in this article.
 
-We recommend that you make the tenant-level security decisions as early as possible because they affect everything else. Also, it's easier to make other security decisions once you have clarity on your overall security goals and objectives.
+Tenant-level security decisions affect everything, so we recommend that you make the tenant-level security decisions as early as possible. Also, it's easier to make other security decisions after you have clarity on your overall security goals and objectives.
 
 ## Power BI administration
 
-The Fabric administrator is a high-privilege role that has significant control over Power BI. We recommend that you carefully consider who is assigned this role because a Fabric administrator can perform many high-level functions, including:
+The Fabric Administrator role is a high-privilege role that has significant control over Power BI. We recommend that you carefully consider who is assigned this role because a Fabric administrator can perform many high-level functions, including:
 
 - **Tenant settings management**: Fabric administrators can manage the [tenant settings](/fabric/admin/tenant-settings-index) in the admin portal. They can enable or disable settings and allow or disallow specific users or groups within settings. It's important to understand that your tenant settings have a significant influence on the user experience.
 - **Workspace role management**: Administrators can [add themselves to the workspace admin role](/fabric/admin/portal-workspaces#workspace-options) in the admin portal. They can potentially update workspace security to access any data or grant rights to other users to access any data in Fabric.
@@ -38,7 +38,7 @@ The Fabric administrator is a high-privilege role that has significant control o
 - **Access to tenant metadata**: Administrators can access tenant-wide metadata, including the Power BI activity logs and activity events retrieved by the [Power BI admin APIs](/rest/api/power-bi/admin).
 
 > [!TIP]
-> As a best practice, you should assign between two and four users to the Fabric administrator role. That way, you can reduce risk while ensuring there's adequate coverage and cross-training.
+> To reduce risk and ensure adequate coverage and cross-training, assign between two and four users to the Fabric administrator role.
 
 An administrator of Power BI is assigned at least one of these [built-in roles](/microsoft-365/admin/add-users/about-admin-roles):
 
@@ -177,9 +177,9 @@ When you need to provide the [CTID for your organization](powerbi-implementation
 
 When external guest access happens frequently in your organization, it's a good idea to use [custom branding](/fabric/admin/service-admin-custom-branding). Custom branding helps users identify which organizational tenant they're accessing. Branding elements can include include a logo, cover image, and theme color.
 
-The following screenshot shows what the Power BI service looks like when accessed by a guest account. It includes a _Guest content_ option, which is available when the CTID is appended to the URL.
+The following screenshot shows what the Power BI service looks like from a guest account. It includes a _Guest content_ option, which is available when the CTID is appended to the URL.
 
-:::image type="content" source="media/powerbi-implementation-planning-security-tenant-level-planning/organizational-branding.png" alt-text="Screenshot of the Power BI service with the Guest content option highlighted." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-security-tenant-level-planning/organizational-branding.png" alt-text="Screenshot of the Power BI service with the Guest content option highlighted.":::
 
 ### External data sharing
 
@@ -206,7 +206,7 @@ It's most common for external users to be managed as guest users in Microsoft En
 The Power BI _Allow email subscriptions to be sent to external users_ tenant setting specifies whether users are permitted to send email subscriptions to external users who aren't yet Microsoft Entra guest users. We recommend that you set this tenant setting to align with how strictly, or flexibly, your organization prefers to manage external user accounts.
 
 > [!TIP]
-> Administrators can verify which external users are being sent subscriptions by using the [Get Report Subscriptions as Admin API](/rest/api/power-bi/admin/reports-get-report-subscriptions-as-admin). The email address for the external user is shown. The principal type is _unresolved_ because the external user isn't set up in Microsoft Entra ID.
+> Administrators can verify which external users are sent subscriptions by using the [Get Report Subscriptions as Admin API](/rest/api/power-bi/admin/reports-get-report-subscriptions-as-admin). The email address for the external user is shown. The principal type is _unresolved_ because the external user isn't set up in Microsoft Entra ID.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
@@ -375,7 +375,7 @@ Here are some example group names that apply the standard naming convention.
 
 ### Decisions per group
 
-When planning for which groups you'll need, several decisions must be made.
+When you plan the groups you need, you must make several key decisions.
 
 When a content creator or owner requests a new group, ideally they use a form to provide the following information.
 
@@ -391,19 +391,19 @@ When a content creator or owner requests a new group, ideally they use a form to
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-**Checklist** - When creating your strategy for how to use groups, key decisions and actions include:
+**Checklist**:  When you create your strategy for how to use groups, consider these key decisions and actions to take:
 
 > [!div class="checklist"]
 >
-> - **Decide on the strategy for the use of groups**: Determine the use cases and purposes you'll need to use groups. Be specific about when security should be applied by using user accounts versus when a group is required or preferred.
-> - **Create a naming convention for Power BI-specific groups**: Ensure that a consistent naming convention is in use for groups that will support Power BI communication, features, administration, or security.
-> - **Decide who is allowed to create groups**: Clarify whether all group creation is required to go through IT. Or whether certain individuals (like satellite members of the COE) can be granted permission to create groups for their business unit.
-> - **Create a process for how to request a new group**: Create a form for users to request the creation of a new group. Ensure that there's a process in place to respond quickly to new requests. Bear in mind that if requests are delayed, users might be tempted to start assigning permissions to individuals accounts.
+> - **Choose a strategy to use for groups**: Determine your use cases and purposes for groups. Be specific about when to apply security by using user accounts versus when a group is required or preferred.
+> - **Create a naming convention for Power BI-specific groups**: For groups you create, ensure that you use a consistent naming convention that support Power BI communication, features, administration, or security.
+> - **Decide who can create groups**: Clarify whether IT must create all groups. Can some individuals, like satellite members of the COE, be granted permissions to create groups for their own business units?
+> - **Create a process for new group requests**: Create a form for a user to request the creation of a new group. Ensure that a process is in place to respond quickly to requests. Consider that if requests to create new groups are delayed, users might be tempted to bypass the process and start assigning permissions to individual accounts.
 > - **Decide when decentralized group management is allowed**: For groups that apply to a specific team, decide when it's acceptable for a group owner (outside of IT) to manage members in the group.
-> - **Decide whether just-in-time group membership will be used**: Determine whether Privileged Identity Management will be useful. If so, determine which groups it can be used for (such as the Power BI administrator group).
-> - **Review which groups currently exist**: Determine which existing groups can be used, and which groups need to be created.
-> - **Review each tenant setting**: For each tenant setting, determine whether it'll be allowed or disallowed for a specific set of users. Determine whether a new group needs to be created to set up the tenant setting.
-> - **Create and publish guidance for users about groups**: Include documentation for content creators that includes requirements, or preferences, for using groups. Ensure that they know what to ask for when they request a new group. Publish this information to your centralized portal and training materials.
+> - **Decide whether to use just-in-time group membership**: Determine whether Privileged Identity Management is useful in your scenario. If it is, determine which groups, such as the Power BI administrator group, you can use it for.
+> - **Review current groups**: Determine which existing groups you can use and which groups you need to create.
+> - **Review each tenant setting**: For each tenant setting, determine whether to allow it or disallow it for a specific set of users. Determine whether you need to create a new group for the tenant setting.
+> - **Create and publish groups guidance for users**: Include documentation for content creators that includes requirements, or preferences, for using groups. Ensure that they know what to ask for when they request a new group. Publish this information to your centralized portal and training materials.
 
 ## Related content
 
