@@ -72,7 +72,7 @@ You can also toggle between showing and hiding annotations using [keyboard short
 |Keyboard shortcut       | Action                                                                  |
 |------------------------|-------------------------------------------------------------------------|
 |**Ctrl + Alt + I**      |Hide/show annotations.                                                   |
-|**Alt + H**             |Move focus to annotation toolbar.                                        |
+|**Ctrl + Shift + :**    |Move focus to annotation toolbar.                                        |
 |**Alt + Shift + I**     |Move focus to annotations group panels.                                  |
 
 ## Considerations and limitations
