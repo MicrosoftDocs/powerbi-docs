@@ -4,7 +4,8 @@ description: This page helps users download and install Power BI Report Builder.
 author: petebro-MSFT
 ms.author: petebro
 ms.reviewer: petebro
-ms.subservice: powerbi-report-builder
+ms.service: powerbi
+ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/08/2025
 keywords:
