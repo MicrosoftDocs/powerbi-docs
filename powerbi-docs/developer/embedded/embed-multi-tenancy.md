@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/04/2025
+ms.date: 04/04/2025
 ---
 
 # Service principal profiles for multitenancy apps in Power BI Embedded
@@ -223,7 +223,7 @@ With Power BI profile-based separation, you might need to manage hundreds or tho
 * Enabling unplanned customizations for specific tenants
 * Setting the frequency of semantic model refreshes
 
-For example, creating a profile and a workspace for a new tenant is a common task, which can be [fully automated](https://www.powerbidevcamp.net/sessions/session11/) with the [Power BI REST API](/rest/api/power-bi/).
+For example, creating a profile and a workspace for a new tenant is a common task, which can be fully automated with the [Power BI REST API](/rest/api/power-bi/).
 
 ### Multi-Geo needs  
 
