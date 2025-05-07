@@ -61,7 +61,7 @@ Business users can use the Copilot pane available on the right side of reports t
 - [Summarize a report or topic](https://go.microsoft.com/fwlink/?linkid=2316804)
 - [Answer Copilot questions about your data](https://go.microsoft.com/fwlink/?linkid=2316905)
 
-Business users can also include summaries when setting up subscriptions to reports.
+Business users can also include [summaries when setting up subscriptions to reports](copilot-summaries-in-subscriptions.md).
 
 :::image type="content" source="media/copilot-introduction/copilot-pane-questions.png" alt-text="Screenshot of the Copilot pane in Power BI, showing a chat interface for asking questions about an open report." lightbox="media/copilot-introduction/copilot-pane-questions.png":::
 

@@ -22,15 +22,15 @@ Copilot in Power BI is available as a full-screen, standalone Copilot experience
 :::image type="content" source="media/copilot-introduction/copilot-standalone-screen.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a chat interface for interacting with data." lightbox="media/copilot-introduction/copilot-standalone-screen.png":::
 
 > [!NOTE]
-> **Admins need to turn on the tenant setting:** To try it out, admins need to [enable Copilot in Power BI](copilot-enable-power-bi.md), and additionally enable the following new tenant setting: Users can access a standalone, cross-item Power BI Copilot experience. To learn more, see [x](https://go.microsoft.com/fwlink/?linkid=2306434).
+> **Admins need to turn on the tenant setting:** To try it out, admins need to [enable Copilot in Power BI](copilot-enable-power-bi.md), and additionally enable the following new tenant setting: Users can access a standalone, cross-item Power BI Copilot experience. To learn more, see [this page](https://go.microsoft.com/fwlink/?linkid=2306434).
 >
-> **Prep your data for good results:** You must prep your data for it to work well with Copilot! Read on to learn what that entails. To learn more, see [x](https://go.microsoft.com/fwlink/?linkid=2316906).
+> **Prep your data for good results:** You must prep your data for it to work well with Copilot! Read on to learn what that entails. To learn more, see [this page](https://go.microsoft.com/fwlink/?linkid=2316906).
 >
-> **Mark your data as prepped:** Semantic model authors have the ability to mark a semantic model as prepped in model settings. This impacts the appearance of ‘Needs AI prep' warnings. To learn more, see [x](https://go.microsoft.com/fwlink/?linkid=2316704).
+> **Mark your data as prepped:** Semantic model authors have the ability to mark a semantic model as prepped in model settings. This impacts the appearance of *Needs AI prep* warnings. To learn more, see [this page](https://go.microsoft.com/fwlink/?linkid=2316704).
 >
-> **Warnings on unprepped data:** Models not marked as prepped result in warnings that the answer quality could be low. At the beginning of the preview, you only see a warning experience on answers. To learn more, see [x](https://go.microsoft.com/fwlink/?linkid=2312734)
+> **Warnings on unprepped data:** Models not marked as prepped result in warnings that the answer quality could be low. At the beginning of the preview, you only see a warning experience on answers. To learn more, see [this page](https://go.microsoft.com/fwlink/?linkid=2312734)
 >
-> **Admins can hide unprepped data (coming soon):** Capacity admins have the ability to hide data that isn't marked as prepped by authors. This admin setting will be available in just a few weeks. To learn more, see [x](https://go.microsoft.com/fwlink/?linkid=2316705)
+> **Admins can hide unprepped data (coming soon):** Capacity admins have the ability to hide data that isn't marked as prepped by authors. This admin setting will be available in just a few weeks. To learn more, see [this page](https://go.microsoft.com/fwlink/?linkid=2316705)
 
 ## Capabilities
 
