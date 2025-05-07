@@ -78,6 +78,8 @@ Report authors can use Copilot for many tasks, such as the following:
 
 Some of these capabilities are available through the Copilot pane, whereas others are accessible through inline Copilot experiences.
 
+:::image type="content" source="media/copilot-introduction/copilot-build-reports.png" alt-text="Screenshot of Copilot building a report in Power BI." lightbox="media/copilot-introduction/copilot-build-reports.png":::
+
 ## Copilot requirements
 
 To ensure a seamless experience with Copilot in Power BI, it's important to meet specific requirements. These requirements vary depending on the type of Copilot experience you're using, such as the standalone Copilot or the Copilot pane within reports. Here's a breakdown of the general and specific requirements for using Copilot effectively.
