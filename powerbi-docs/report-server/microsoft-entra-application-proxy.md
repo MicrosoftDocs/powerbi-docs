@@ -11,7 +11,7 @@ ms.date: 07/18/2024
 ---
 # Configure Power BI Report Server with Microsoft Entra application proxy
 
-This article discusses how to use Microsoft Entra application proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Microsoft Entra ID. Read more about remote access to on-premises applications through [Microsoft Entra application proxy](/entra/identity/app-proxy/application-proxy).
+This article discusses how to use Microsoft Entra application proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Microsoft Entra ID. Read more about remote access to on-premises applications through [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy).
 
 ## Environment details
 
@@ -128,7 +128,7 @@ These steps help configure Power BI Report Server to work with Kerberos authenti
 
 ## Configure Microsoft Entra application proxy connector
 
-Refer to the article for [configuration related to the application proxy connector](/entra/identity/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
+Refer to the article for [configuration related to the application proxy connector](/entra/identity/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-microsoft-entra-id)
 
 We installed the application proxy connector on Power BI Report Server, but you can configure it on a separate server and make sure that delegation is set up properly.
 
