@@ -16,7 +16,7 @@ ms.date: 9/17/2024
 
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
-Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+Ready to get started? [Get Power BI Report Builder](./download-powerbi-report-builder.md).
 
 ## March 2025
 
