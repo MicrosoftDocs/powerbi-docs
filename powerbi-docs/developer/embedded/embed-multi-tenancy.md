@@ -39,7 +39,7 @@ Setting up your Power BI content involves the following steps:
 * Remove permissions from the service principal (optional, but helps with [scalability](#scalability))
 * [Embed a report](#embed-a-report) into the application
 
-All the above steps can be fully automated using [Power BI REST APIs](/rest/api/power-bi/).
+All the above steps can be fully [automated](https://powerbidevcamp.powerappsportals.com/sessions/session11/) using [Power BI REST APIs](/rest/api/power-bi/).
 
 ## Prerequisites
 
