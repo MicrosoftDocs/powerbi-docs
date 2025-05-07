@@ -38,7 +38,7 @@ If the admins disabled Copilot, see the following instructions to turn Copilot o
 
 Within the Fabric Admin portal, the **Copilot and Azure OpenAI Service** settings control whether Copilot is enabled for your organization and who can access it. Enabling Copilot in Fabric means that users can access Copilot across workloads. This means Copilot access isn't limited to a specific workload, like Power BI.
 
-:::image type="content" source="media/copilot-enable-power-bi/copilot-settings-admin-portal.png" alt-text="Screenshot of Copilot settings in the Fabric Admin portal.":::
+:::image type="content" source="media/copilot-enable-power-bi/copilot-settings-admin-portal.png" lightbox="media/copilot-enable-power-bi/copilot-settings-admin-portal.png" alt-text="Screenshot of Copilot settings in the Fabric Admin portal.":::
 
 To enable Copilot in Fabric, follow these steps:
 
