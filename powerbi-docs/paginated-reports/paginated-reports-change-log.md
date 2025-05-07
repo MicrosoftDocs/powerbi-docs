@@ -28,7 +28,13 @@ Version 15.7.1814.616, released March 25, 2025
 - Catch and log error errors opening reports
 - Updated supported connection types
 - Added additional telemetry events
-	
+
+## November 2024
+
+Version 15.7.1813.16, released November 12, 2024
+
+- Fixed Power Query Online log in issue.
+
 ## September 2024
 
 Version 15.7.1812.222, released September 16, 2024
