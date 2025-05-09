@@ -65,6 +65,8 @@ Unlike the Copilot pane within a report, the standalone Copilot experience doesn
 
 You can use [Fabric data agents](/fabric/data-science/concept-data-agent) to get answers without leaving the standalone Copilot experience. Fabric data agents are custom-built experts in specific topics, trained by a developer within your organization. Learn more about [using Fabric data agents in Power BI](https://go.microsoft.com/fwlink/?linkid=2316805).
 
+:::image type="content" source="media/copilot-introduction/copilot-standalone-fabric-data-agent.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing the use of a Fabric data agent to answer a question." lightbox="media/copilot-introduction/copilot-standalone-fabric-data-agent.png":::
+
 ### Choose the right data
 
 When you ask a question about your data, whether you're looking for a summary or have a specific query, the first step is selecting the appropriate data to answer it. In the standalone Copilot experience, you can choose the right data in two ways:

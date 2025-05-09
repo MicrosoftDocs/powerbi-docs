@@ -31,7 +31,7 @@ This article provides an overview of the Copilot capabilities for Power BI.
 
 ## Data preparation
 
-**Data needs to be prepared to work with Copilot.** Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs. Learn how to [prep your data](https://go.microsoft.com/fwlink/?linkid=2316906).
+**Data needs to be prepared to work with Copilot.** Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs. Learn how to [prep your data](copilot-prepare-data-ai.md).
 
 ## Capabilities
 
@@ -43,23 +43,23 @@ For business users, chatting with your data can mean finding content, asking for
 
 #### The standalone Copilot experience (preview): Find data and ask questions about any item
 
-Copilot in Power BI is available as a standalone, full-screen experience that allows people to find and analyze any report, semantic model, and Fabric data agent they have access to. Unlike the Copilot pane, which only answers questions about the report you currently have open, the standalone Copilot finds and answers questions about any data you have access to. [Learn more about the standalone Copilot](https://go.microsoft.com/fwlink/?linkid=2319208).
+Copilot in Power BI is available as a standalone, full-screen experience that allows people to find and analyze any report, semantic model, and Fabric data agent they have access to. Unlike the Copilot pane, which only answers questions about the report you currently have open, the standalone Copilot finds and answers questions about any data you have access to. [Learn more about the standalone Copilot](copilot-chat-with-data-standalone.md).
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-screen.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a chat interface for interacting with data." lightbox="media/copilot-introduction/copilot-standalone-screen.png":::
 
 The standalone Copilot can help with the following tasks:
 
-- [Search for artifacts](https://go.microsoft.com/fwlink/?linkid=2316904)
-- [Summarize a report or topic](https://go.microsoft.com/fwlink/?linkid=2316804)
-- [Answer questions about your data](https://go.microsoft.com/fwlink/?linkid=2316905)
-- [Answer questions using a Fabric data agent](https://go.microsoft.com/fwlink/?linkid=2316805)
+- Search for artifacts
+- Summarize a report or topic
+- Answer questions about your data
+- Answer questions using a Fabric data agent
 
 #### The Copilot pane: Ask questions about an open report
 
 Business users can use the Copilot pane available on the right side of reports to ask a question about report content or summarize key insights in seconds. The report agent can help business users with the following tasks:
 
-- [Summarize a report or topic](https://go.microsoft.com/fwlink/?linkid=2316804)
-- [Answer Copilot questions about your data](https://go.microsoft.com/fwlink/?linkid=2316905)
+- Summarize a report or topic
+- Answer Copilot questions about your data
 
 Business users can also include [summaries when setting up subscriptions to reports](copilot-summaries-in-subscriptions.md).
 
