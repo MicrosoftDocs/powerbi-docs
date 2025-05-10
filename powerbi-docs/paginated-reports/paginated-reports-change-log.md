@@ -25,7 +25,7 @@ Version 15.7.1814.616, released March 25, 2025
 - Reduced timeout for Power Query Online
 - Fixed issue rendering sub reports when opening from the Power BI Service
 - Increased limit on query parameters size in Query Designer
-- Catch and log error errors opening reports
+- Catch and log errors opening reports
 - Updated supported connection types
 - Added additional telemetry events
 
