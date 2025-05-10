@@ -4,11 +4,11 @@ description: Learn how to export a Power BI report to PDF.
 author: julcsc
 ms.author: juliacawthra
 ms.custom:  
-ms.reviewer: mibruhjell
+ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/24/2025
+ms.date: 05/07/2025
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -99,7 +99,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 
 ### Reports that can't be exported
 * Power BI reports with more than 50 report pages currently can't be exported. Paginated reports don't have this limitation. See [Print a paginated report](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report) for details. 
-* Reports larger than 500 MB. 
+* Reports larger than 250 MB. 
 * Reports that are owned by a user outside your Power BI tenant domain, such as a report owned by someone outside your organization and shared with you, can't be published to PDF.
 * You can share a dashboard with someone outside of your organization--someone who isn't in your Power BI tenant. However, that user can't export the shared dashboard's associated reports to PDF. For example, if you're aaron@contoso.com, you can share with cassie@northwinds.com. But cassie@northwinds.com can't export the associated reports to PDF.
 
