@@ -24,6 +24,9 @@ This article answers your questions and helps you understand how these two tools
 
 [Open Microsoft Fabric](https://app.fabric.microsoft.com)
 
+> [!NOTE]
+> The [Fabric Analyst in a Day (FAIAD)](https://aka.ms/LearnFAIAD) workshop is a free, hands-on training designed for analysts working with Power BI and Microsoft Fabric. You can get hands-on experience on how to analyze data, build reports, using Fabric. It covers key concepts like working with lakehouses, creating reports, and analyzing data in the Fabric environment.
+
 ## Power BI as a standalone service
 
 The Microsoft Power BI service started as a standalone Software as a service (SaaS) offering for combining, exploring, and visualizing your data. That same Power BI service is now a component of Microsoft Fabric. You can continue to use Power BI by itself, if that's what you need. And you can use the new capabilities of Fabric with Power BI to do even more with your data.
