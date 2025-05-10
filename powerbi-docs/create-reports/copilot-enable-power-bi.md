@@ -66,7 +66,7 @@ Enabling this setting allows users to access the standalone, cross-item Power BI
 :::image type="content" source="media/copilot-enable-power-bi/enable-copilot-standalone-copilot-setting.png" alt-text="Screenshot of the standalone Power BI Copilot setting in the Fabric Admin portal." lightbox="media/copilot-enable-power-bi/enable-copilot-standalone-copilot-setting.png":::
 
 > [!IMPORTANT]
-> The **Users can use Copilot and other features powered by Azure OpenAI** setting must be enabled at the tenant level to use the standalone Copilot experience. It's not sufficient to enabled it at the capacity level (that is, if it's been delegated).
+> The **Users can use Copilot and other features powered by Azure OpenAI** setting must be enabled at the tenant level to use the standalone Copilot experience. It's not sufficient to enable it at the capacity level (that is, if it's been delegated).
 
 ## Use Copilot for Power BI in the service
 
@@ -108,7 +108,7 @@ When you use Copilot in Power BI Desktop for the first time, you're asked to pic
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-button-ribbon.png" alt-text="Screenshot of the Copilot pane in Power BI desktop.":::
 
-2. Select the **workspace** you'd like to associate this report with for Copilot use. Only workspaces that support Copilot appears.
+2. Select the **workspace** you'd like to associate this report with for Copilot use. Only workspaces that support Copilot appear.
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-workspace-selection.png" alt-text="Screenshot of the workspace picker in Power BI desktop that will appear to enable you to select a Copilot supported workspace.":::
 
