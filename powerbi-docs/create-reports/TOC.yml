@@ -310,10 +310,10 @@
           href: /fabric/fundamentals/copilot-power-bi-privacy-security?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Copilot FAQ
           href: /fabric/fundamentals/copilot-faq-fabric?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
-      - name: Copilot preview toggle
-        href: copilot-preview-toggle.md
-      - name: Create Copilots for your coworkers
-        href: copilot-create-copilots.md
+      - name: Copilot for Power BI Mobile
+        items: 
+        - name: Copilot in Power BI Mobile app
+          href: ../consumer/mobile/mobile-apps-copilot.md
   - name: Visualizations
     items: 
     - name: Visualization types in Power BI
@@ -634,6 +634,8 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Get Power BI Report Builder
+        href: ../paginated-reports/download-powerbi-report-builder.md
       - name: Report Builder change log
         href: ../paginated-reports/paginated-reports-change-log.md
       - name: Get around Report Design View
