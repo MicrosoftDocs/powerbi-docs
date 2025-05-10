@@ -28,7 +28,7 @@ Consumers might use report page summaries in the following scenarios:
 
 Learn more about [Copilot creating a summary response to prompts about your report](copilot-pane-summarize-content.md).
 
-:::image type="content" source="media/copilot-reports-overview/copilot-summary.png" alt-text="Copilot summary page of the dashboard for a Power BI report." lightbox="media/copilot-reports-overview/copilot-summary.png":::
+:::image type="content" source="media/copilot-reports-overview/copilot-summary.png" alt-text="Screenshot of the Copilot summary page of the dashboard for a Power BI report." lightbox="media/copilot-reports-overview/copilot-summary.png":::
 
 ### Ask questions about your data
 
@@ -42,7 +42,7 @@ Here are examples of the type of requests that Copilot can help you with:
 - What are the top categories by a certain metric?
 - Show me how this measure has changed over time.
 
-:::image type="content" source="media/copilot-reports-overview/copilot-data-question.png" alt-text="Copilot answering a data question in the Power BI report." lightbox="media/copilot-reports-overview/copilot-data-question.png":::
+:::image type="content" source="media/copilot-reports-overview/copilot-data-question.png" alt-text="Screenshot of Copilot answering a data question in the Power BI report." lightbox="media/copilot-reports-overview/copilot-data-question.png":::
 
 Consumers might ask data questions of a semantic model in the following scenarios:
 
@@ -58,7 +58,7 @@ You can include a Copilot-generated summary for your Power BI report page or ful
 
 See [Create report subscriptions with Copilot summaries](copilot-summaries-in-subscriptions.md) for details.
 
-:::image type="content" source="media/copilot-reports-overview/copilot-subscriptions.png" alt-text="Copilot-generated summary included in a Power BI report subscription email." lightbox="media/copilot-reports-overview/copilot-subscriptions.png":::
+:::image type="content" source="media/copilot-reports-overview/copilot-subscriptions.png" alt-text="Screenshot of Copilot-generated summary included in a Power BI report subscription email." lightbox="media/copilot-reports-overview/copilot-subscriptions.png":::
 
 ## Capabilities for report authors
 
@@ -69,7 +69,7 @@ Copilot can help you get started on a new report by suggesting topics based on y
 - A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report is about, and how many pages it creates.
 - The visuals for the individual pages.
 
-:::image type="content" source="media/copilot-reports-overview/copilot-suggest-content.png" alt-text="Copilot suggesting content for a Power BI report based on data." lightbox="media/copilot-reports-overview/copilot-suggest-content.png":::
+:::image type="content" source="media/copilot-reports-overview/copilot-suggest-content.png" alt-text="Screenshot of Copilot suggesting content for a Power BI report based on data." lightbox="media/copilot-reports-overview/copilot-suggest-content.png":::
 
 ### Create a report page
 
@@ -91,7 +91,7 @@ Summarize a Power BI semantic model by asking Copilot to "summarize the model" i
 
 You can use Copilot for Power BI to quickly create a narrative about a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. See [Create a narrative with Copilot for Power BI](copilot-create-narrative.md) for details.
 
-:::image type="content" source="media/copilot-reports-overview/copilot-summary-visual.png" alt-text="Copilot-generated summary visual for a Power BI report page." lightbox="media/copilot-reports-overview/copilot-summary-visual.png":::
+:::image type="content" source="media/copilot-reports-overview/copilot-summary-visual.png" alt-text="Screenshot of Copilot-generated summary visual for a Power BI report page." lightbox="media/copilot-reports-overview/copilot-summary-visual.png":::
 
 ### Write DAX queries
 
