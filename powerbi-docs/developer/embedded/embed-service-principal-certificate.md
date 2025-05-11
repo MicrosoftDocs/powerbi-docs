@@ -97,7 +97,7 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 1. In your Microsoft Entra application, select the **Certificates & secrets** tab.
 
-    :::image type="content" source="media/embed-service-principal/certificates-and-secrets.png" alt-text="Screenshot of the Azure portal window, which shows the certificates and secrets pane for an app.":::
+    :::image type="content" source="media/embed-service-principal-certificate/certificates-and-secrets.png" alt-text="Screenshot of the Azure portal window, which shows the certificates and secrets pane for an app.":::
 
 2. Select **Upload certificate** and upload the *.cer* file you created and downloaded in [step 2](#step-2---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
