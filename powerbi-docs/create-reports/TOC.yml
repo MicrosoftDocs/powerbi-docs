@@ -242,48 +242,54 @@
         href: power-bi-create-mobile-optimized-report-order-layers.md
       - name: Best practices for designing mobile layouts
         href: power-bi-create-mobile-optimized-report-best-practices.md
+
+
   - name: Copilot for Power BI
     items: 
       - name: Get started with Copilot
         items: 
-        - name: Intro to Copilot for Power BI
+        - name: Overview of Copilot for Power BI
           href: copilot-introduction.md
         - name: Enable Copilot in Power BI
-          href: copilot-enable-power-bi.md          
-        - name: Update a data model to work with Copilot
-          href: copilot-evaluate-data.md
-      - name: Create and explore reports with Copilot
-        items: 
-        - name: Use Copilot with Power BI reports
+          href: copilot-enable-power-bi.md 
+        - name: Chat with your data
+          href: copilot-chat-with-data-standalone.md
+        - name: Copilot for reports and models
           href: copilot-reports-overview.md
+        - name: Copilot in Power BI Mobile app
+          href: ../consumer/mobile/mobile-apps-copilot.md
+      - name: Copilot features for business users
+        items:
+        - name: Summarize a report
+          href: copilot-pane-summarize-content.md
+        - name: Send Copilot summaries with subscriptions
+          href: copilot-summaries-in-subscriptions.md
+        - name: Search for new content
+          href: copilot-search-new-content.md
+        - name: Ask Copilot for data from your model (preview)
+          href: copilot-ask-data-question.md
+      - name: Copilot features for creators
+        items:        
         - name: Create reports in the Power BI service with Copilot
           href: copilot-create-report-service.md
         - name: Create reports in Power BI Desktop with Copilot
           href: copilot-create-desktop-report.md
-        - name: Copilot summaries and subscriptions
-          href: copilot-summaries-in-subscriptions.md
-        - name: Summarize a report in the Copilot pane
-          href: copilot-pane-summarize-content.md
         - name: Write prompts for Copilot report pages
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page
           href: copilot-create-narrative.md
         - name: Write prompts for Copilot narratives
           href: copilot-prompts-narratives.md
-      - name: Advanced Copilot features
-        items:
         - name: Use Copilot to write and explain DAX queries
           href: /dax/dax-copilot?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Use Copilot to create measure descriptions
           href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+      - name: Prepare your data for Copilot
+        items:        
+        - name: Prepare your data for AI 
+          href: copilot-prepare-data-ai.md
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
-        - name: Ask Copilot for data from your model
-          href: copilot-ask-data-question.md
-        - name: Copilot preview toggle
-          href: copilot-preview-toggle.md
-        - name: Create Copilots for your coworkers
-          href: copilot-create-copilots.md
       - name: Copilot for Fabric and Power BI
         items: 
         - name: 1 - Copilot in Fabric overview
