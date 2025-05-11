@@ -49,17 +49,17 @@ Copilot in Power BI is available as a standalone, full-screen experience that al
 
 The standalone Copilot can help with the following tasks:
 
-- Search for artifacts
-- Summarize a report or topic
-- Answer questions about your data
-- Answer questions using a Fabric data agent
+- [Search for artifacts](copilot-search-new-content.md)
+- [Summarize a report or topic](copilot-pane-summarize-content.md)
+- [Answer questions about your data](copilot-ask-data-question.md)
+- [Answer questions using a Fabric data agent](h/fabric/data-science/concept-data-agent)
 
 #### The Copilot pane: Ask questions about an open report
 
 Business users can use the Copilot pane available on the right side of reports to ask a question about report content or summarize key insights in seconds. The report agent can help business users with the following tasks:
 
-- Summarize a report or topic
-- Answer Copilot questions about your data
+- [Summarize a report or topic](copilot-pane-summarize-content.md)
+- [Answer Copilot questions about your data](copilot-ask-data-question.md)
 
 Business users can also include [summaries when setting up subscriptions to reports](copilot-summaries-in-subscriptions.md).
 
@@ -69,12 +69,12 @@ Business users can also include [summaries when setting up subscriptions to repo
 
 Report authors can use Copilot for many tasks, such as the following:
 
-- Suggest content for a report
-- Create a report page
-- Summarize the underlying semantic model
-- Create a summary visual on the report itself
-- Write DAX queries
-- Add descriptions for your semantic model measures
+- [Suggest content for a report](copilot-create-report-service.md#get-started-using-copilot)
+- Create a [report page](copilot-prompts-report-pages.md)
+- [Summarize the underlying semantic model](copilot-reports-overview.md#summarize-the-underlying-semantic-model)
+- [Create a summary visual on the report itself](copilot-create-narrative.md)
+- Write [DAX queries](/dax/dax-copilot)
+- [Add descriptions for your semantic model measures](/transform-model/desktop-measure-copilot-descriptions.md)
 
 Some of these capabilities are available through the Copilot pane, whereas others are accessible through inline Copilot experiences.
 
@@ -99,7 +99,7 @@ The following requirements pertain to all Copilot experiences in Power BI.
 The following requirements pertain to the full-screen standalone Copilot experience accessed via the left navigation.
 
 - The setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
-- The tenant setting called **Users can access a standalone, cross-item Power BI Copilot experience (preview)** must be enabled.
+- The tenant setting called [**Users can access a standalone, cross-item Power BI Copilot experience (preview)**](copilot-enable-power-bi.md#enable-the-standalone-power-bi-copilot-experience-preview) must be enabled.
 
 :::image type="content" source="media/copilot-introduction/copilot-access-standalone-enabled.png" alt-text="Screenshot of the standalone Copilot admin screen with options enabled." lightbox="media/copilot-introduction/copilot-access-standalone-enabled.png":::
 

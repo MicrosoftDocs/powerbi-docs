@@ -288,6 +288,8 @@
         items:        
         - name: Prepare your data for AI 
           href: copilot-prepare-data-ai.md
+        - name: AI data schema
+          href: copilot-prepare-data-ai-data-schema.md
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
       - name: Copilot for Fabric and Power BI
