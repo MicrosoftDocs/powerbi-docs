@@ -57,7 +57,7 @@ To use service principal and an application ID for embedded analytics, you take 
 
 ## Step 1 - Create a Microsoft Entra app
 
-You can create a Microsoft Entra app from the Azure portal or by using Powershell:
+You can create a Microsoft Entra app from the Azure portal or by using PowerShell:
 
 <a name='create-an-azure-ad-app-in-the-azure-portal'></a>
 
