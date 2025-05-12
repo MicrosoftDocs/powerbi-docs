@@ -386,10 +386,11 @@ PBIR is currently in **preview**. Keep the following limitations in mind:
   - Can't be deployed with deployment pipelines.  
   - Can't be saved as a copy.
   - Can't use Power BI Report APIs: [Clone Report](/rest/api/power-bi/reports/clone-report-in-group), [Update Report Content](/rest/api/power-bi/reports/update-report-content-in-group)
+  - Can't use Power BI [usage metrics report](/power-bi/collaborate-share/service-usage-metrics).
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
-- Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back.
+- Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back. Although a backup is created at the moment of conversion.
 - Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
 
 PBIR size limitations enforced by the service:
@@ -402,7 +403,8 @@ PBIR size limitations enforced by the service:
 - 300-mb max size for all resource package files.
 - 20-mb max size of all report files.
 
-During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features start exporting the report definition using PBIR format.
+[Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) export reports using the format currently applied in the service. If a report is created or imported into Fabric using the PBIR format, it will be exported in PBIR. Likewise, if a report is PBIR-Legacy, it will be exported in the PBIR-Legacy format. 
+
 
 ## Related content
 
