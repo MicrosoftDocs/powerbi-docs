@@ -314,6 +314,18 @@
         items: 
         - name: Copilot in Power BI Mobile app
           href: ../consumer/mobile/mobile-apps-copilot.md
+      - name: Tutorials for Copilot in Power BI
+        items: 
+        - name: Introduction
+          href: tutorial-copilot-power-bi-introduction.md         
+        - name: Get started
+          href: tutorial-copilot-power-bi-get-started.md         
+        - name: Prepare model
+          href: tutorial-copilot-power-bi-prepare-model.md     
+        - name: Discover data
+          href: tutorial-copilot-power-bi-discover-data.md 
+        - name: Explore data
+          href: tutorial-copilot-power-bi-explore-data.md
   - name: Visualizations
     items: 
     - name: Visualization types in Power BI
