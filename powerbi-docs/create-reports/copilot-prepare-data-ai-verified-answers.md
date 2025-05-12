@@ -18,7 +18,7 @@ ms.collection: ce-skilling-ai-copilot
 
 Verified answers are human-approved, visual responses in Copilot that are triggered by predefined phrases. Each verified answer includes one or more trigger phrases, a visual, and optional associated filters.
 
-:::image type="content" source="media/copilot-prep-data/copilot-verified-answer.png" alt-text="Example of a verified answer setup in Power BI, showing trigger phrases and filters." lightbox="media/copilot-prep-data/copilot-verified-answer.png":::
+:::image type="content" source="media/copilot-prep-data/copilot-verified-answer.png" alt-text="Screenshot of a verified answer setup in Power BI, showing trigger phrases and filters." lightbox="media/copilot-prep-data/copilot-verified-answer.png":::
 
 These answers are stored in the semantic model, ensuring consistent and high-quality responses across all reports that use that model.
 
@@ -53,7 +53,7 @@ To set a verified answer, follow these steps:
    - Add custom trigger phrases that reflect how users naturally ask about the data using the **+** or **Add** buttons. *or*
    - Use Copilot-generated suggestions based on the visual and existing trigger phrases by clicking on the phrases under **Copilot suggestions**.
 
-   :::image type="content" source="media/copilot-prep-data/copilot-trigger-phrase.png" alt-text="Example of setting trigger phrases for a verified answer in Power BI." lightbox="media/copilot-prep-data/copilot-trigger-phrase.png":::
+   :::image type="content" source="media/copilot-prep-data/copilot-trigger-phrase.png" alt-text="Screenshot of setting trigger phrases for a verified answer in Power BI." lightbox="media/copilot-prep-data/copilot-trigger-phrase.png":::
 
 1. Add filters for flexible slicing:
    1. Select the **filter** icon.
@@ -70,7 +70,7 @@ To set a verified answer, follow these steps:
 
    Copilot returns the verified answer visual, automatically filtered to match the user's prompt. From there, you can apply any available filters that you’d like.
 
-   :::image type="content" source="media/copilot-prep-data/copilot-verified-answer-selected-filters.png" alt-text="Example of selected filters applied to a verified answer in Power BI." lightbox="media/copilot-prep-data/copilot-verified-answer-selected-filters.png":::
+   :::image type="content" source="media/copilot-prep-data/copilot-verified-answer-selected-filters.png" alt-text="Screenshot of selected filters applied to a verified answer in Power BI." lightbox="media/copilot-prep-data/copilot-verified-answer-selected-filters.png":::
 
      - **Supported filter types**: Report-level, Page-level, Visual-level.
      - **Filter limitations**:
@@ -91,7 +91,7 @@ Copilot now uses the verified answers set on the model when users invoke a trigg
 1. If in Desktop, use the **skill picker** to select **Answer data question**.
 1. Test the various trigger phrases you set up to ensure they work as intended.
 
-   :::image type="content" source="media/copilot-prep-data/copilot-test-verified-answers.png" alt-text="Testing verified answers in Power BI Copilot with trigger phrases." lightbox="media/copilot-prep-data/copilot-test-verified-answers.png":::
+   :::image type="content" source="media/copilot-prep-data/copilot-test-verified-answers.png" alt-text="Screenshot showing how to test verified answers in Power BI Copilot with trigger phrases." lightbox="media/copilot-prep-data/copilot-test-verified-answers.png":::
 
 1. Publish or save your report.
 
@@ -119,7 +119,7 @@ Once testing is complete and you're satisfied with your verified answers, either
 
 Once your report is published, end users automatically benefit from verified answers anywhere that model is used with Copilot. When a user enters a prompt that matches a trigger phrase, Copilot returns the curated, human-approved visual response.
 
-:::image type="content" source="media/copilot-prep-data/copilot-visual-response.png" alt-text="Example of a visual response in Power BI Copilot showing a verified answer." lightbox="media/copilot-prep-data/copilot-visual-response.png":::
+:::image type="content" source="media/copilot-prep-data/copilot-visual-response.png" alt-text="Screenshot of a visual response in Power BI Copilot showing a verified answer." lightbox="media/copilot-prep-data/copilot-visual-response.png":::
 
 > [!NOTE]
 > End users can't view or edit verified answers. Write permission to the model is required for this.

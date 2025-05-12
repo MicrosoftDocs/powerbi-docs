@@ -43,7 +43,7 @@ sections:
               
               Now when the user asks the same question, Copilot has more clarity on where to get the answer from and correctly interprets sales as defined and measures by this team. 
 
-              :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-step-1.png" alt-text="An example showing how refining the AI data schema helps Copilot focus on the correct data for user queries." lightbox="media/copilot-prep-data/copilot-prep-data-faq-step-1.png":::
+              :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-step-1.png" alt-text="Screenshot of an example showing how refining the AI data schema helps Copilot focus on the correct data for user queries." lightbox="media/copilot-prep-data/copilot-prep-data-faq-step-1.png":::
 
           1. **[Create verified answers](copilot-prepare-data-ai-verified-answers.md).**
 
@@ -57,7 +57,7 @@ sections:
               
               Now, when the user asks what are sales by area, the verified answer, approved by the model author, is returned by Copilot.
 
-              :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-step-2.png" alt-text="An example showing how verified answers improve the accuracy of Copilot's responses to user queries." lightbox="media/copilot-prep-data/copilot-prep-data-faq-step-2.png":::
+              :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-step-2.png" alt-text="Screenshot of an example showing how verified answers improve the accuracy of Copilot's responses to user queries." lightbox="media/copilot-prep-data/copilot-prep-data-faq-step-2.png":::
 
           1. **[Add AI instructions](copilot-prepare-data-ai-instructions.md).**
 
@@ -69,7 +69,7 @@ sections:
 
               Now when the user asks the question again about sales during busy season, Copilot understands this defined term and can provide the response. 
 
-              :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-step-3.png" alt-text="An example showing how AI instructions provide additional context to Copilot for interpreting user queries." lightbox="media/copilot-prep-data/copilot-prep-data-faq-step-3.png":::
+              :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-step-3.png" alt-text="Screenshot of an example showing how AI instructions provide additional context to Copilot for interpreting user queries." lightbox="media/copilot-prep-data/copilot-prep-data-faq-step-3.png":::
             
           1. **Add descriptions to tables and columns.**
 

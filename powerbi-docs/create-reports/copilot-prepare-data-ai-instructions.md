@@ -26,16 +26,16 @@ AI Instructions make Copilot more aligned to your business. They improve the qua
 
 1. Select the **Prep data for AI** button located on the Home ribbon in Power BI Desktop.  
 
-   :::image type="content" source="media/copilot-prep-data/copilot-prep-data-ai.png" alt-text="Illustration showing the Prep Data for AI feature in Power BI Desktop." lightbox="media/copilot-prep-data/copilot-prep-data-ai.png":::
+   :::image type="content" source="media/copilot-prep-data/copilot-prep-data-ai.png" alt-text="Screenshot showing the Prep Data for AI feature in Power BI Desktop." lightbox="media/copilot-prep-data/copilot-prep-data-ai.png":::
 
    If the tabs in **Prep Data for AI** are disabled, enable Q&A for your model.  
 
-   :::image type="content" source="media/copilot-prep-data/copilot-turn-on-qa.png" alt-text="Illustration showing how to enable Q&A for the model in Power BI Desktop." lightbox="media/copilot-prep-data/copilot-turn-on-qa.png":::
+   :::image type="content" source="media/copilot-prep-data/copilot-turn-on-qa.png" alt-text="Screenshot showing how to enable Q&A for the model in Power BI Desktop." lightbox="media/copilot-prep-data/copilot-turn-on-qa.png":::
 
 1. In the dialog, navigate to the **Add AI instructions** tab.  
 1. Provide instructions about the semantic model that help Copilot understand your business, terminology, and how to prioritize the data in the model.
 
-   :::image type="content" source="media/copilot-prep-data/copilot-ai-instructions.png" alt-text="Dialog box showing the AI instructions tab in Power BI Desktop." lightbox="media/copilot-prep-data/copilot-ai-instructions.png":::
+   :::image type="content" source="media/copilot-prep-data/copilot-ai-instructions.png" alt-text="Screenshot of a dialog box showing the AI instructions tab in Power BI Desktop." lightbox="media/copilot-prep-data/copilot-ai-instructions.png":::
 
 1. Select **Apply**.  
 
