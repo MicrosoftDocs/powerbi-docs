@@ -95,7 +95,7 @@ Use the following procedure to edit the flow:
 
    :::image type="content" source="media/power-bi-automate-visual/create-flow-from-scratch.png" alt-text="Screenshot shows start creating a flow from scratch.":::
 
-1. Here, you can choose a subsequent action or specify a Control if you want to specify additional logic to determine the subsequent action.
+1. Here, you can choose a subsequent action or specify a Control if you want to specify more logic to determine the subsequent action.
 
    :::image type="content" source="media/power-bi-automate-visual/choose-actions-for-flow.png" alt-text="Screenshot shows choose actions for the flow.":::
 
@@ -127,13 +127,13 @@ Optionally, you can change the button text, font color, font size, or fill color
 
 After you apply a flow to the button, we recommend testing it before you share the flow with others. These Power BI flows can only run in the context of a Power BI report. You can't run these flows in a Power Automate web app or elsewhere.
 
-If your flow is data contextual, make sure you test how the filter selections in the report impact the flow outcome.
+If your flow is data contextual, make sure you test how the filter selections in the report affect the flow outcome.
 
 1. To test the flow in edit mode of the report, select **Back to report**, then press Ctrl while you select the button to run the flow.
 
    :::image type="content" source="media/power-bi-automate-visual/run-flow-button.png" alt-text="Screenshot shows Select the Run flow button.":::
 
-    The button text indicates that the flow has been triggered.
+    The button text indicates that the flow is triggered.
 
 1. To check if the flow ran successfully, select the **More commands (...)** menu > **Details** in the triggered flow:
 
@@ -169,13 +169,13 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 
 ## Considerations and limitations
 
-- Additional manual inputs to the button aren't supported.  
+- Other manual inputs to the button aren't supported.  
 - The visual isn't supported for [embedded analytics](./../developer/embedded/embedded-analytics-power-bi.md).
 - The visual doesn't work in Publish to Web (public) scenarios, because Power Automate doesn't support unauthenticated scenarios.
 - The visual doesn't support export scenarios.
-- The Power Automate visual is limited to process a maximum of 1000 records.
+- The Power Automate visual is limited to process a maximum of 1,000 records.
 - The user running the flow within the Power BI report needs to have permissions to run the flow. Grant these permissions through direct sharing by the user or by sharing to a Microsoft Entra group.
-- Create flows that you'll **use** with the Power BI button trigger **directly within the Power BI report**. **Avoid** going directly to Power Automate to create these flows, as the trigger won't have access to the data fields necessary for creating the flow.
+- Create flows that you'll **use** with the Power BI button trigger **directly within the Power BI report**. **Avoid** going directly to Power Automate to create these flows, as the trigger has no access to the data fields necessary for creating the flow.
 - Power BI data is sent to, and processed in, a geography where the flow is deployed.
 
 ## Related content
