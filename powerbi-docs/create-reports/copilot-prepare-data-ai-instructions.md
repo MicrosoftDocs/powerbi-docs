@@ -1,6 +1,6 @@
 ---
 title: Prepare your data for AI - AI instructions
-description: Prepare your data for AI in Power BI with new features like AI data schema, verified answers, and AI instructions. Learn how to optimize your semantic model for Copilot and enhance AI-driven insights.
+description: Prepare your data for AI in Power BI with AI instructions. Learn how to optimize your semantic model for Copilot and enhance AI-driven insights.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: 
@@ -11,7 +11,7 @@ ms.date: 05/12/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
-#customer intent: As a Power BI user, I want to understand how to prepare my data for AI to optimize Copilot's performance, improve AI-driven insights, and enhance user interactions by leveraging new features like AI data schema, verified answers, and AI instructions.
+#customer intent: As a Power BI user, I want to understand how to prepare my data for AI to optimize Copilot's performance, improve AI-driven insights, and enhance user interactions by leveraging AI instructions.
 ---
 
 # Prepare your data for AI - AI instructions

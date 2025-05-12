@@ -78,6 +78,6 @@ See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-lim
 ## Related content
 
 - [Prep data for AI](copilot-prepare-data-ai.md)
-- [Verified answers](copilot-verified-answers.md)
+- [Verified answers](copilot-prepare-data-ai-verified-answers.md)
 - [AI instructions](copilot-prepare-data-ai-instructions.md)
 - [Prep data for AI FAQ](copilot-prepare-data-ai-faq.yml)
