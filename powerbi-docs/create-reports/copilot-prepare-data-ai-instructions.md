@@ -67,7 +67,7 @@ AI Instructions offer a flexible way to enhance how Copilot interprets and respo
 - **General business context and data interpretation**: Instructions can help Copilot frame responses within the context of your business - tailoring answers based on your industry, strategic goals, terminology, or operational logic. This ensures users get more accurate and relevant insights. Some examples include:
   - Busy season is October to February.  
   - Frame insights with a focus on risk assessment and market trends.  
-  - When a user mentions ABCD, they're referring to the 'total invoice' field.  
+  - When a user mentions *ABCD*, they're referring to the `total invoice` field.  
   - Attrition % is more positive the lower it is.  
 - **Analysis rules**: You can guide Copilot on how to approach certain types of analysis by providing rules and preferences for how data should be sliced or prioritized. Some examples include:
   - Always analyze sales on a quarterly basis.  
@@ -99,13 +99,13 @@ In the following section, you can find an example of a full set of instructions,
 
 See the following example scenario for a set of AI instructions that are prompt-engineered to fit a specific model.
 
-#### Instructions for answering data questions
+##### Instructions for answering data questions
 
 Gross product sales (GPS) should reference the `grossrevenue` field in the **Revenue** table.
 
 Top sellers refers to the top three partners with the highest revenue. Don't show customers unless the user explicitly asks.
 
-#### Customer identification
+##### Customer identification
 
 - `accountid` refers to customers in the **Revenue** table.
 - `earningsid` refers to Customers in the **Partners** table. 
@@ -113,7 +113,7 @@ Top sellers refers to the top three partners with the highest revenue. Don't sho
 - Define "top customers" by first looking at the revenue table, and then only returning the customers with the highest order values.
 - Some partners are also customers. Don't remove these duplicates, rather, indicate whether it's a partner or a customer based on the ID value.
 
-#### Product metrics
+##### Product metrics
 
 - Filter data by `State= Washington` or `State= California` unless the user specifically asks for a different state.  
 - For product specific sales, use the measure `Total_Sales_Product` (example of product: Word, PowerPoint, Excel, SharePoint, Teams), and filter on the **Product** column from the **Sales** table.

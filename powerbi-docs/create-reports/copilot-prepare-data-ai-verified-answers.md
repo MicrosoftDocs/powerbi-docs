@@ -124,7 +124,7 @@ Once your report is published, end users automatically benefit from verified ans
 > [!NOTE]
 > End users can't view or edit verified answers. Write permission to the model is required for this.
 
-## Understand verified answers Output in Copilot
+## Understand verified answers output in Copilot
 
 When users interact with a verified answer, Copilot provides key visual indicators to build trust and clarity in the response:
 
@@ -161,7 +161,7 @@ These guidelines can help ensure your verified answers are reliably triggered wh
 
 | Trigger phrase | Does match | Doesn't match|
 |----------------|--------------|----------------|
-|Snowboard sales by month | - Snowboard sales for November<br>- Snowboard sales over time<br>- What are the snowboard sales for October | - Winter sports rates<br>- Why are people snowboarding?<br>- Ski bib sales by month |
+|Snowboard sales by month | - Snowboard sales for November<br>- Snowboard sales over time<br>- What are the snowboard sales for October? | - Winter sports rates<br>- Why are people snowboarding?<br>- Ski bib sales by month |
 | Visitor spending over time by island | - Visitor expenditures for all islands<br>- Spending over time for Maui<br>- What’s the average visitor spend by island? |- Visitor arrivals over time<br>- Visitor spending per person |
 | Quarterly regional sales for all products | - Regional sales by quarter<br>- Sales across all products over time | - Quarterly sales by lead type<br>- Average weekly sales |
 
