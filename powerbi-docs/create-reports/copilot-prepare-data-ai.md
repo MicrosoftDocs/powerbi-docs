@@ -53,7 +53,7 @@ Now you can set trigger phrases that, when a user asks, return an answer using t
 
 All updates are saved on the semantic model, not the report.
 
-### Power BI Service
+### Power BI service
 
 To set a verified answer in the Power BI service, ensure the following apply:
 
@@ -150,3 +150,10 @@ When you restart Desktop, you no longer see the **Prep data for AI** button.
   - **Import models**: A model refresh is required in the Power BI service to sync the LSDL/Tooling changes after deployment.
   - **Direct query models**: A model refresh is required in the Power BI service to sync the LSDL/Tooling changes after deployment, but are limited to once a day.
   - **Direct lake models**: A model refresh is required in the Power BI service to sync the LSDL/Tooling changes after deployment, but are limited to once a day.
+
+## Related content
+
+- [AI data schema](copilot-prepare-data-ai-data-schema.md)
+- [Verified answers](copilot-prepare-data-ai-verified-answers.md)
+- [AI instructions](copilot-prepare-data-ai-instructions.md)
+- [Prep data for AI FAQ](copilot-prepare-data-ai-faq.yml)

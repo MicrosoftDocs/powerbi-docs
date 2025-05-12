@@ -74,7 +74,7 @@ Report authors can use Copilot for many tasks, such as the following:
 - [Summarize the underlying semantic model](copilot-reports-overview.md#summarize-the-underlying-semantic-model)
 - [Create a summary visual on the report itself](copilot-create-narrative.md)
 - Write [DAX queries](/dax/dax-copilot)
-- [Add descriptions for your semantic model measures](/transform-model/desktop-measure-copilot-descriptions)
+- [Add descriptions for your semantic model measures](../transform-model/desktop-measure-copilot-descriptions.md)
 
 Some of these capabilities are available through the Copilot pane, whereas others are accessible through inline Copilot experiences.
 

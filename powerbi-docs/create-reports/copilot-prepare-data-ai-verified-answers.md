@@ -204,3 +204,10 @@ See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-lim
   - 15 trigger prompts Per verified answer
   - 500 character limit for trigger prompts
   - Visual size (same as report visuals limits)
+
+## Related content
+
+- [Prep data for AI](copilot-prepare-data-ai.md)
+- [AI data schema](copilot-prepare-data-ai-data-schema.md)
+- [AI instructions](copilot-prepare-data-ai-instructions.md)
+- [Prep data for AI FAQ](copilot-prepare-data-ai-faq.yml)

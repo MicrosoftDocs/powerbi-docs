@@ -64,7 +64,7 @@ Once your report is published to the service, end-users can take advantage of th
 
 ## Considerations and limitations
 
-See overall **Prep data for AI** limitations for a comprehensive list.
+See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-limitations) for a comprehensive list.
 
 - Consumers of your semantic model can't see the AI data schema set on the model.
 - Data schema only applies to Copilot capabilities that utilize the schema.
@@ -74,3 +74,10 @@ See overall **Prep data for AI** limitations for a comprehensive list.
 - Hierarchies can be selected as part of the AI data schema, but not individual hierarchy components. Select individual fields as part of the table as required. If a hierarchy is included in the AI data schema, but a column of the hierarchy isn't selected as part of the table, the column is still included as part of the Copilot schema.
 - Relationships are still respected regardless of the AI data schema set. For example, if two fields are related, and one of the fields is included in the AI data schema, Copilot can still return answers that require that relationship.
 - End-users can't disable the AI data schema.
+
+## Related content
+
+- [Prep data for AI](copilot-prepare-data-ai.md)
+- [Verified answers](copilot-verified-answers.md)
+- [AI instructions](copilot-prepare-data-ai-instructions.md)
+- [Prep data for AI FAQ](copilot-prepare-data-ai-faq.yml)
