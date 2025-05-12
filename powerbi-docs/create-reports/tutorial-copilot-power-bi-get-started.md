@@ -22,14 +22,14 @@ Before you begin, you need to complete the following prerequisites and download 
 To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F2 or higher), Power BI Premium capacity (P1 or higher) that has Copilot enabled, or assigned to a Fabric Copilot capacity.
 
 > [!IMPORTANT]
-> This tutorial includes [preview](https://learn.microsoft.com/fabric/fundamentals/preview) features.
+> This tutorial includes [preview](/fabric/fundamentals/preview) features.
 
 > [!NOTE]
 > The Copilot button in Desktop always appears in the ribbon. To be able to use Copilot, you must be signed in and have access to a workspace that is in Premium or Fabric capacity, or assigned to a Fabric Copilot capacity.
 
 When you use Copilot in Power BI Desktop for the first time, you’re asked to pick a Copilot compatible workspace when you select the Copilot button in the ribbon. The workspace you select doesn’t need to be the same as the workspace where you plan to publish your report. If you're assigned access to a Fabric Copilot capacity, you aren't asked to select a workspace.
 
-Learn more using [Copilot in Power BI Desktop the first time](https://learn.microsoft.com/power-bi/create-reports/copilot-power-bi-desktop) or [Fabric Copilot capacity](https://learn.microsoft.com/fabric/enterprise/fabric-copilot-capacity).
+Learn more using [Copilot in Power BI Desktop the first time](copilot-power-bi-desktop.md) or [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity).
 
 ### Settings
 
@@ -56,4 +56,4 @@ To download the sample file from the GitHub repo for Power BI Desktop, you can e
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Prepare semantic model for AI](tutorial-copilot-in-power-bi-prepare-model.md)
+> [Prepare semantic model for AI](tutorial-copilot-power-bi-prepare-model.md)

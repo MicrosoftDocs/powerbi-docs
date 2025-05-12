@@ -26,7 +26,7 @@ In this tutorial, you leverage natural language inputs to get insights. You lear
 > [!NOTE]
 > Copilot outputs are nondeterministic, meaning that it's possible that a user receives a different output from a Copilot experience, despite using the same prompt and grounding data. It's important to set expectations with users so that they know what kinds of outputs to expect from Copilot, and how they can evaluate or validate these outputs, for themselves.
 >
-> Learn more about the [Responsible use of Copilot in Power BI](https://learn.microsoft.com/power-bi/create-reports/copilot-integration#responsible-use-of-copilot-in-power-bi).
+> Learn more about the [Responsible use of Copilot in Power BI](copilot-integration.md#responsible-use-of-copilot-in-power-bi).
 
 ## Copilot
 
@@ -60,22 +60,22 @@ Tell Copilot what you're looking for, and if the answer isn't already visualized
 
 1. Select **Add items for better results** and select the **Reports** option.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/add-report-item.png" alt-text="Screenshot of the Copilot returned visual and how Copilot arrived at this result.":::
+    :::image type="content" source="media/tutorial-copilot-in-power-bi/add-report-item.png" alt-text="Screenshot of the Add items for better results option with Reports selected.":::
 
 1. From the OneLake catalog, you can attach one or multiple items as extra context. Check the box next to the **Revenue Opportunities** report and select **Confirm**.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/add-a-report-to-request.png" alt-text="Screenshot of the Copilot returned visual and how Copilot arrived at this result.":::
+    :::image type="content" source="media/tutorial-copilot-in-power-bi/add-a-report-to-request.png" alt-text="Screenshot of the OneLake catalog with the Revenue Opportunities report selected.":::
 
 1. With the report now attached to your question as added context, ask Copilot the following example question, and select **Send** or **Enter** to confirm.
     - What was the revenue for each state in the last year?
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/copilot-ask-about-report-data.png" alt-text="Screenshot of the Copilot returned visual and how Copilot arrived at this result.":::
+    :::image type="content" source="media/tutorial-copilot-in-power-bi/copilot-ask-about-report-data.png" alt-text="Screenshot of Copilot showing a question about revenue for each state in the last year.":::
 
 1. An insight summary and a visual are returned as an answer to your question. You can expand the **How Copilot arrived at this** option to review the data used and understand any filters applied. In this example, relative date filters are applied based on the "*in the last year*" condition. To view the full report, select the **Revenue Opportunities** option.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/copilot-filter-applied-to-answer.png" alt-text="Screenshot of the Copilot returned visual and how Copilot arrived at this result.":::
+    :::image type="content" source="media/tutorial-copilot-in-power-bi/copilot-filter-applied-to-answer.png" alt-text="Screenshot of Copilot's returned insight summary and visual with filters applied.":::
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Explore data and get insights](tutorial-copilot-in-power-bi-explore-data.md)
+> [Explore data and get insights](tutorial-copilot-power-bi-explore-data.md)

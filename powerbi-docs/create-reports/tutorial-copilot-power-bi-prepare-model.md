@@ -25,12 +25,12 @@ In this tutorial, you prepare and configure your semantic model for AI use by ap
 > * Mark as Prepped for AI
 
 > [!IMPORTANT]
-> This tutorial includes [preview](https://learn.microsoft.com/fabric/fundamentals/preview) features.
+> This tutorial includes [preview](/fabric/fundamentals/preview) features.
 
 > [!NOTE]
 > Copilot outputs are nondeterministic, meaning that it's possible that a user receives a different output from a Copilot experience, despite using the same prompt and grounding data. It's important to set expectations with users so that they know what kinds of outputs to expect from Copilot and how they can evaluate or validate these outputs, for themselves.
 >
-> Learn more about the [Responsible use of Copilot in Power BI](https://learn.microsoft.com/power-bi/create-reports/copilot-integration#responsible-use-of-copilot-in-power-bi).
+> Learn more about the [Responsible use of Copilot in Power BI](copilot-integration.md#responsible-use-of-copilot-in-power-bi).
 
 ## Guidance
 
@@ -44,7 +44,7 @@ When developing a semantic model in Power BI, it's crucial to prepare your model
 
 Continuously test your model with Copilot to ensure consistent and reliable results both as you introduce model changes and as new tools and capabilities become available for preparing your semantic model for AI. If issues persist, review the model with your users, understand common questions they might ask, and simplify the design to achieve better outcomes.
 
-Learn more about [best practices to optimize asking questions and getting answers in Power BI](https://learn.microsoft.com/power-bi/natural-language/q-and-a-best-practices).
+Learn more about [best practices to optimize asking questions and getting answers in Power BI](../natural-language/q-and-a-best-practices.md).
 
 ## Prep data for AI (preview)
 
@@ -66,7 +66,7 @@ To ensure consistent and reliable results, the first step is to simplify the sch
     1. From the **Accounts** table, deselect the unique identifier relationship field by expanding the table explorer and deselecting the box for the **Account ID** field.
     1. From the **Dates** table, deselect the model's sort by column helper fields by expanding the table explorer and deselecting the boxes for the **Day (Sort Order)** and **Month (Sort Order)** fields.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/simplify-the-data-schema-field-selection.png" alt-text="Screenshot of Prep data for AI get started screen and the simplify the data schema card option.":::
+    :::image type="content" source="media/tutorial-copilot-in-power-bi/simplify-the-data-schema-field-selection.png" alt-text="Screenshot of the Simplify the data schema dialog showing field selection options for Accounts and Dates tables.":::
 
 1. Select **Close** to return to the **Report view** page, where you create verified answers for the visuals on the report.
 
@@ -191,4 +191,4 @@ Marking your semantic model as Prepped for AI is a critical step because it sign
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Discover data and ask questions](tutorial-copilot-in-power-bi-discover-data.md)
+> [Discover data and ask questions](tutorial-copilot-power-bi-discover-data.md)

@@ -26,7 +26,7 @@ In this tutorial, you explore your data using an AI assistant. You learn to:
 > [!NOTE]
 > Copilot outputs are nondeterministic; meaning that it's possible that a user receives a different output from a Copilot experience, despite using the same prompt and grounding data. It's important to set expectations with users so that they know what kinds of outputs to expect from Copilot, and how they can evaluate or validate these outputs, for themselves.
 >
-> Learn more about the [Responsible use of Copilot in Power BI](https://learn.microsoft.com/power-bi/create-reports/copilot-integration#responsible-use-of-copilot-in-power-bi).
+> Learn more about the [Responsible use of Copilot in Power BI](copilot-integration.md#responsible-use-of-copilot-in-power-bi).
 
 ## Copilot
 
@@ -38,7 +38,7 @@ From the action bar, select the **Copilot** button on the right-hand side.
 
 1. From the Copilot pane, expand the Understand the data group and select the **What is this report page about?** prompt.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/understand-the-data.png" alt-text="Screenshot of the action bar menu and the Copilot button.":::
+    :::image type="content" source="media/tutorial-copilot-in-power-bi/understand-the-data.png" alt-text="Screenshot of the Copilot pane showing the Understand the data group." lightbox="media/tutorial-copilot-in-power-bi/understand-the-data.png":::
 
 1. A report summary is created, including reference footnotes. When selected, the visuals are spotlighted on the page to help you cross-check the summary output.
 
