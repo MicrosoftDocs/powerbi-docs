@@ -1,17 +1,17 @@
 ---
 title: Prepare your data for AI - AI data schema
-description: 
+description: Learn how to prepare your data for AI in Power BI by using the AI data schema. Optimize Copilot's performance, improve AI-driven insights, and enhance user interactions by defining a focused subset of your model's schema.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 05/11/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
-#customer intent: As a Power BI user, I want to understand how to prepare my data for AI to optimize Copilot's performance, improve AI-driven insights, and enhance user interactions by leveraging new features like AI data schema, verified answers, and AI instructions.
+#customer intent: As a Power BI user, I want to learn how to prepare my data for AI by using features like the AI data schema to optimize Copilot's performance, ensure accurate and verified answers, and enhance AI-driven insights and user interactions.
 ---
 
 # Prepare your data for AI - AI data schema
@@ -23,6 +23,8 @@ Once AI data schema is set for a model, Copilot uses the selected fields when re
 A defined AI data schema lets model authors ensure that Copilot pulls the most relevant and focused data for specific queries. This enhances the quality and relevance of Copilot's responses, making the interactions more efficient and tailored to the user's needs. The AI data schema ensures that Copilot works with the most important fields for specific tasks, improving accuracy and clarity in its output.
 
 ## Set an AI data schema
+
+To set an AI data schema, follow these steps:
 
 1. Select the **Prep data for AI** button located on the Home ribbon in Power BI Desktop.  
 

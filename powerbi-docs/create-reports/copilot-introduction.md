@@ -52,7 +52,7 @@ The standalone Copilot can help with the following tasks:
 - [Search for artifacts](copilot-search-new-content.md)
 - [Summarize a report or topic](copilot-pane-summarize-content.md)
 - [Answer questions about your data](copilot-ask-data-question.md)
-- [Answer questions using a Fabric data agent](h/fabric/data-science/concept-data-agent)
+- [Answer questions using a Fabric data agent](/fabric/data-science/concept-data-agent)
 
 #### The Copilot pane: Ask questions about an open report
 
