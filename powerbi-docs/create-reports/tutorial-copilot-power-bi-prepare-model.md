@@ -109,16 +109,16 @@ AI Instructions enable you to enhance Copilot's capabilities by connecting it to
 1. Choose **Add AI instructions**, copy and paste the following example into the instructions field, and select **Apply**.
 
     ```text
-        Tailor responses to industry norms for a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
-    
-            Specific instances:
-            - Key earners refers to the top three partners by total revenue.
-            - If asked about "Clients", "Customers", or "Organizations" use the Accounts table.
-            - For sales cycle questions, always use the Average Opportunity Days measure.
-            - Opportunity Days is synonymous with Sales Cycle duration, or Time to Close (TTC)
-            - "Leads", "Deals", "Potential Deals" and "Sales Prospects" are all phrases that refer to the opportunities table. 
-            - If asked about early stages of an opportunity, only show the Solution stage. 
-            - If the audience is leadership, prioritize revenue and opportunity count, as well as the number of deals in the finalize stage.
+    Tailor responses to industry norms for a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
+
+    Specific instances:
+    - Key earners refers to the top three partners by total revenue.
+    - If asked about "Clients", "Customers", or "Organizations" use the Accounts table.
+    - For sales cycle questions, always use the Average Opportunity Days measure.
+    - Opportunity Days is synonymous with Sales Cycle duration, or Time to Close (TTC)
+    - "Leads", "Deals", "Potential Deals" and "Sales Prospects" are all phrases that refer to the opportunities table. 
+    - If asked about early stages of an opportunity, only show the Solution stage. 
+    - If the audience is leadership, prioritize revenue and opportunity count, as well as the number of deals in the finalize stage.
     ```
 
     :::image type="content" source="media/tutorial-copilot-power-bi/add-ai-instructions.png" alt-text="Screenshot of adding AI instructions.":::
@@ -132,7 +132,7 @@ AI Instructions enable you to enhance Copilot's capabilities by connecting it to
 Before sharing your data with others in your organization, you should test it thoroughly with Copilot. This involves trying common questions users might ask to ensure Copilot provides accurate and helpful responses, experimenting with different inputs based on the AI instructions to verify that Copilot can handle a range of scenarios effectively, and attempting to access available fields from your simplified data schema to confirm that Copilot can retrieve and utilize the available information.
 
 1. From the Copilot pane, ask this example question and select **Send** or **Enter** to confirm.
-    - What three affiliates had the most leads across the eastern zone?
+    - What 3 affiliates had the most leads across the eastern zone?
 
     :::image type="content" source="media/tutorial-copilot-power-bi/copilot-desktop-pane-question.png" alt-text="Screenshot of the Copilot pane and submitting a question.":::
 
