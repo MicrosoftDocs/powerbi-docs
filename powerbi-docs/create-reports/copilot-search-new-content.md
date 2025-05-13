@@ -3,6 +3,7 @@ title: Find content using Power BI Copilot search
 description: Learn how to find content using Power BI Copilot search.
 author: julcsc
 ms.author: juliacawthra
+ms.reviewer: Maggie.Tsang
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
@@ -16,17 +17,17 @@ ms.collection: ce-skilling-ai-copilot
 
 As colleagues share Power BI content with you, you might find yourself having access to an extensive list of content. It can be difficult to recall specific items that you want to navigate back to in order to get an answer to your data question.
 
-Through the [standalone Copilot experience](copilot-chat-with-data-standalone.md), you can easily find Power BI content and chat with your data. In Power BI's Copilot search, the term content and items refer to reports, semantic models, workspace apps, organizational apps, and data agents. This page explains when Copilot needs to search for content, the metadata Copilot can look at to find your content, the signals used to boost and increase the relevancy of certain items, and what you can do to make items more discoverable for your end users.
+Through the [standalone Copilot experience](copilot-chat-with-data-standalone.md), you can easily find Power BI content and chat with your data. In Power BI's Copilot search, the terms *content* and *items* refer to reports, semantic models, workspace apps, organizational apps, and data agents. This page explains when Copilot needs to search for content, the metadata Copilot can look at to find your content, the signals used to boost and increase the relevancy of certain items, and what you can do to make items more discoverable for your end users.
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-screen.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a chat interface for interacting with data." lightbox="media/copilot-introduction/copilot-standalone-screen.png":::
 
 ## Enable Power BI Copilot search
 
-Copilot search is only available through the standalone Copilot experience. To access this feature, a few tenant settings need to be enabled. To use Power BI's Copilot search, both Fabric Copilot and the standalone Copilot experience must be enabled for your tenant.
+Copilot search is only available through the standalone Copilot experience. To access this feature, a few tenant settings need to be enabled. To use Power BI's Copilot search, both [Fabric Copilot](/fabric/admin/service-admin-portal-copilot) and the [standalone Copilot experience](/fabric/admin/service-admin-portal-copilot) must be enabled for your tenant.
 
-For an improved search experience, enable the global search setting and the setting to [share data across geographic boundaries](copilot-enable-power-bi.md#enable-sharing-data-across-geographic-boundaries). The latter setting allows Copilot to semantically search on similar terms and is only necessary if Azure OpenAI isn't available in your home tenant's region.
+For an improved search experience, enable the [global search](/fabric/admin/service-admin-portal-copilot) setting and the setting to [share data across geographic boundaries](copilot-enable-power-bi.md#enable-sharing-data-across-geographic-boundaries). The latter setting allows Copilot to semantically search on similar terms and is only necessary if Azure OpenAI isn't available in your home tenant's region.
 
-## Search for the item that can answer your question
+## Use search to find an item
 
 In the standalone Copilot, notice the **Find an item** section in the starter prompts. These are examples of the kind of questions you can ask to get Copilot to search for content.
 
@@ -42,6 +43,8 @@ The title includes a hyperlink that opens the item in a new tab. This lets you l
 
 > [!TIP]
 > After getting back search results, continue the conversation by asking Copilot to "Summarize report 1" or ask Copilot, "What is revenue for the month to date using 2?"
+
+## Use search to find the right item to answer a question
 
 Power BI's standalone Copilot searches for content when you ask a question without attaching a report or semantic model. If you start by asking a broad question like "How many tourists visited in January?" you see a list of items that Copilot could use to answer the question.  
 
@@ -63,7 +66,7 @@ To determine the most relevant items, Copilot looks through metadata, such as th
 
 ### Content types Copilot looks at
 
-Copilot can search through content metadata to find the most relevant item. The following are the types of content that Copilot looks at:
+Copilot can search through content metadata to find the most relevant item. The following list includes the **information within an item** that Copilot looks at:
 
 - **For reports**:
   - Page names
@@ -77,15 +80,15 @@ Copilot can search through content metadata to find the most relevant item. The 
   - Column descriptions  
   - Measure names  
   - Measure descriptions  
-  - Verified answer prompts
-  - Verified answer charts
+  - [Verified answer prompts](copilot-prepare-data-ai-verified-answers.md)
+  - [Verified answer charts](copilot-prepare-data-ai-verified-answers.md)
 - **For data agents**:
   - Published descriptions
   - Instructions
   - Example queries
   - Data source schema information
 - **For workspace apps and org apps**:
-  - Reports that are included within the app. Copilot will respect app audiences, if defined, and only search over reports that you have access to within an app.
+  - Reports that are included within the app
 
 ## Use signals to boost content in search results
 
@@ -109,6 +112,7 @@ Here are some best practices to make your items more discoverable in the standal
 ## Considerations and limitations
 
 - Copilot respects user permissions and only searches over attributes you have access to and doesn't provide search results containing items you can't access.
+- Copilot respects app audiences, if defined, and only searches over reports that you have access to within an app.
 - Copilot doesn't find semantic models [marked as discoverable](../collaborate-share/service-discovery.md#how-to-mark-a-semantic-model-as-discoverable) unless you already have direct access to the model.
 - Copilot respects hidden elements such as hidden table and column names, and doesn't search over these fields.
 - Copilot best understands natural language. When you're searching for items through the standalone Copilot, adding more context can help with finding more relevant content. For example, searching for "Find reports about Q4 revenue over time" yields better results than a search for the keyword "Q4."
