@@ -28,7 +28,7 @@ This tutorial doesn't cover all features and functionalities exhaustively but se
 
 Here's a summary of the integrations and scenario this tutorial introduces.
 
-:::image type="content" source="media/tutorial-copilot-in-power-bi/tutorial-overview.png" alt-text="Screenshot of an overview of the tutorial and user journey.":::
+:::image type="content" source="media/tutorial-copilot-power-bi/tutorial-overview.png" alt-text="Screenshot of an overview of the tutorial and user journey.":::
 
 For **developers**, the focus is on ensuring your semantic model is AI-ready by simplifying your schema, creating verified answers, and providing AI instructions. You test the setup and publish your release, enabling AI-prepared content that’s optimized for user interaction.
 

@@ -4,7 +4,7 @@ description: This article provides an overview of preparing semantic models for 
 ms.reviewer: juliacawthra
 ms.author: alpowers
 author: itsnotaboutthecell
-ms.topic: overview
+ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 LocalizationGroup: Create reports
@@ -50,7 +50,7 @@ Learn more about [best practices to optimize asking questions and getting answer
 
 In Power BI Desktop, select the **Prep data for AI** icon located on the Home tab of the ribbon, as shown in the following image.
 
-:::image type="content" source="media/tutorial-copilot-in-power-bi/prep-data-for-ai.png" alt-text="Screenshot of Home tab of the ribbon accessing Prep data for AI experience.":::
+:::image type="content" source="media/tutorial-copilot-power-bi/prep-data-for-ai.png" alt-text="Screenshot of Home tab of the ribbon accessing Prep data for AI experience.":::
 
 ## Simplify the data schema (preview)
 
@@ -60,17 +60,17 @@ To ensure consistent and reliable results, the first step is to simplify the sch
 
 1. In the dialog that opens, choose **Simplify the data schema**, by selecting the card or using the left-hand navigation menu.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/simplify-the-data-schema-card.png" alt-text="Screenshot of Prep data for AI get started screen and the simplify the data schema card option.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/simplify-the-data-schema-card.png" alt-text="Screenshot of Prep data for AI get started screen and the simplify the data schema card option.":::
 
 1. To improve Copilot’s response accuracy, deselect the following fields that aren't relevant for Copilot to analyze, then select **Apply**:
     1. From the **Accounts** table, deselect the unique identifier relationship field by expanding the table explorer and deselecting the box for the **Account ID** field.
     1. From the **Dates** table, deselect the model's sort by column helper fields by expanding the table explorer and deselecting the boxes for the **Day (Sort Order)** and **Month (Sort Order)** fields.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/simplify-the-data-schema-field-selection.png" alt-text="Screenshot of the Simplify the data schema dialog showing field selection options for Accounts and Dates tables.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/simplify-the-data-schema-field-selection.png" alt-text="Screenshot of the Simplify the data schema dialog showing field selection options for Accounts and Dates tables.":::
 
 1. Select **Close** to return to the **Report view** page, where you create verified answers for the visuals on the report.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/close-button.png" alt-text="Screenshot of the Close button in Prep data for AI dialog window.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/close-button.png" alt-text="Screenshot of the Close button in Prep data for AI dialog window.":::
 
 ## Create verified answers (preview)
 
@@ -78,13 +78,13 @@ By creating verified answers, you can add phrases, questions, or keywords that u
 
 1. On the Opportunity Overview page, select the Pipeline by Stage visual in the bottom-left corner, then right-click and select **Set up a verified answer**.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/setup-a-verified-answer-pipeline-by-stage.png" alt-text="Screenshot of the Pipeline by Stage visual and the Set up a verified answer option.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/set-up-verified-answer-pipeline-stage.png" alt-text="Screenshot of the Pipeline by Stage visual and the Set up a verified answer option.":::
 
 1. A set of Copilot suggestions is created based on the information in the visual. You can select these suggestions to add as phrases connected to verified answers, select Refresh to generate a new set of suggestions or add your own.
 
     Because Copilot suggestions can vary for each session, manually configure the connected phrases by selecting the add (**+**) option.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/create-verified-answers-for-sales-stages.png" alt-text="Screenshot of the verified answers Copilot suggestions and connected phrases.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/create-verified-answers-for-sales-stages.png" alt-text="Screenshot of the verified answers Copilot suggestions and connected phrases.":::
 
 1. Add the following two example verified answers and select **Enter** to confirm each entry when done:
     - How many opportunities are in each sales stage?
@@ -92,15 +92,15 @@ By creating verified answers, you can add phrases, questions, or keywords that u
 
     To adjust verified answers, hover above each entry and select the edit (pencil) or delete (trash can) options.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/add-verified-answers.png" alt-text="Screenshot of adding verified answers to connected phrases.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/add-verified-answers.png" alt-text="Screenshot of adding verified answers to connected phrases.":::
 
 1. Select **Apply** and then navigate to the **All verified answers** view.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/apply-verified-answers-for-sales-stages.png" alt-text="Screenshot of applying verified answers and returning to the all verified answers view.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/apply-verified-answers-for-sales-stages.png" alt-text="Screenshot of applying verified answers and returning to the all verified answers view.":::
 
 1. Verified answers list all phrases connected to visuals, along with their phrase counts. You can select each phrase to update or remove it.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/verified-answers-list.png" alt-text="Screenshot of the verified answers list.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/verified-answers-list.png" alt-text="Screenshot of the verified answers list.":::
 
 ## Add AI instructions (preview)
 
@@ -121,11 +121,11 @@ AI Instructions enable you to enhance Copilot's capabilities by connecting it to
             - If the audience is leadership, prioritize revenue and opportunity count, as well as the number of deals in the finalize stage.
     ```
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/add-ai-instructions.png" alt-text="Screenshot of adding AI instructions.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/add-ai-instructions.png" alt-text="Screenshot of adding AI instructions.":::
 
 2. Select **Close** to return to the Report view page.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/close-button.png" alt-text="Screenshot of the Close button in Prep data for AI dialog window.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/close-button.png" alt-text="Screenshot of the Close button in Prep data for AI dialog window.":::
 
 ## Test your data with Copilot (preview)
 
@@ -134,11 +134,11 @@ Before sharing your data with others in your organization, you should test it th
 1. From the Copilot pane, ask this example question and select **Send** or **Enter** to confirm.
     - What three affiliates had the most leads across the eastern zone?
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/copilot-desktop-pane-question.png" alt-text="Screenshot of the Copilot pane and submitting a question.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/copilot-desktop-pane-question.png" alt-text="Screenshot of the Copilot pane and submitting a question.":::
 
 1. A list response is returned using the terms and variances included within the AI instructions. You can provide feedback using the **thumbs up** or **thumbs down** buttons. Select the close (**X**) button to continue.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/copilot-desktop-pane-answer.png" alt-text="Screenshot of the Copilot pane returning a response for a question.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/copilot-desktop-pane-answer.png" alt-text="Screenshot of the Copilot pane returning a response for a question.":::
 
 ## Publish
 
@@ -146,11 +146,11 @@ Publishing your Power BI report to the cloud allows for seamless sharing and col
 
 1. Select the **Publish** button located on the Home tab of the ribbon. Save changes if prompted and search your list of available workspaces to find the workspace into which you want to publish. Select **My workspace**, and then **Select**.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/publish-my-workspace.png" alt-text="Screenshot of the Publish button and destination selection window.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/publish-my-workspace.png" alt-text="Screenshot of the Publish button and destination selection window.":::
 
 1. When publishing is complete, you receive a link to your report. Select the link **Open ‘Revenue Opportunities.pbix’ in Power BI** to open the report.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/open-in-power-bi-service.png" alt-text="Screenshot of the Publishing to Power BI success window.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/open-in-power-bi-service.png" alt-text="Screenshot of the Publishing to Power BI success window.":::
 
 ## Descriptions
 
@@ -158,35 +158,36 @@ The item’s name and description are equally important for data discovery with 
 
 1. From the action bar, select **File** > **Settings**.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/report-settings.png" alt-text="Screenshot of the report settings option.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/report-settings.png" alt-text="Screenshot of the report settings option.":::
 
 1. Update the report **Description** field to the following example text, then select **Save**.
 
     - A comprehensive analysis of sales opportunities and revenue distribution across various dimensions for software products.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/report-description.png" alt-text="Screenshot of the report description field.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/report-description.png" alt-text="Screenshot of the report description field.":::
 
 1. From the action bar, select more options (...) and then the **View semantic model** option.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/view-semantic-model.png" alt-text="Screenshot of a published report and the view semantic model option.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/view-semantic-model.png" alt-text="Screenshot of a published report and the view semantic model option.":::
 
 1. Within the semantic model viewer, select **File > settings**.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/semantic-model-settings.png" alt-text="Screenshot of the semantic model properties and the settings option.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/semantic-model-settings.png" alt-text="Screenshot of the semantic model properties and the settings option.":::
 
-1. Update the **Semantic model description** field to the following example text and then select **Apply**.
+1. Update the **Semantic model description** field to the following example text, then select **Apply**.
 
     - The semantic model offers data for insights into sales opportunities and revenue distribution for software products. It includes information on the number of opportunities at each sales stage, variations by stage, and total revenue by opportunity size and region. Additionally, it tracks accounts, partners, products, sales stages, sales activities, and dates, providing a comprehensive view to optimize sales processes and enhance revenue generation.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/semantic-model-description.png" alt-text="Screenshot of the semantic model description option.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/semantic-model-description.png" alt-text="Screenshot of the semantic model description option.":::
 
 ## AI preparation (preview)
 
 Marking your semantic model as Prepped for AI is a critical step because it signals to Copilot that the model is optimized for AI experiences. For models that aren't prepped, users should inspect the results thoroughly. Clear messaging and indicators are displayed for answers from items that aren't prepped, advising users to contact the content owner to prepare the data for AI to ensure accuracy and relevance.
 
-1. In the settings for the semantic model, expand the **AI preparation** setting, select the checkbox for **Prepped for AI**, and select **Apply**.
+1. In the settings for the semantic model, expand the **AI preparation** setting.
+1. Select the checkbox for **Prepped for AI**, then select **Apply**.
 
-    :::image type="content" source="media/tutorial-copilot-in-power-bi/ai-preparation.png" alt-text="Screenshot of the AI preparation semantic model setting.":::
+    :::image type="content" source="media/tutorial-copilot-power-bi/ai-preparation.png" alt-text="Screenshot of the AI preparation semantic model setting.":::
 
 ## Next step
 

@@ -286,7 +286,7 @@
           href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
       - name: Prepare your data for Copilot
         items:        
-        - name: Prepare your data for AI 
+        - name: Prep your data for AI 
           href: copilot-prepare-data-ai.md
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md

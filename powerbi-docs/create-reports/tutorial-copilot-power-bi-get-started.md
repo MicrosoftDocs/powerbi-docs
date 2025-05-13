@@ -4,7 +4,7 @@ description: Learn how to configure Power BI Desktop settings that are required 
 ms.reviewer: juliacawthra
 ms.author: alpowers
 author: itsnotaboutthecell
-ms.topic: overview
+ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 LocalizationGroup: Create reports
