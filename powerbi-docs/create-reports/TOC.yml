@@ -286,7 +286,7 @@
           href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
       - name: Prepare your data for Copilot
         items:        
-        - name: Prepare your data for AI 
+        - name: Prep your data for AI 
           href: copilot-prepare-data-ai.md
         - name: AI data schema
           href: copilot-prepare-data-ai-data-schema.md
@@ -295,7 +295,7 @@
         - name: AI instructions
           href: copilot-prepare-data-ai-instructions.md
         - name: FAQ - Prep data for AI
-          href: copilot-prepare-data-ai-faq.yml                     
+          href: copilot-prepare-data-ai-faq.yml             
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
       - name: Copilot for Fabric and Power BI
@@ -322,6 +322,18 @@
         items: 
         - name: Copilot in Power BI Mobile app
           href: ../consumer/mobile/mobile-apps-copilot.md
+      - name: Tutorial for Copilot in Power BI
+        items: 
+        - name: Introduction to Copilot in Power BI
+          href: tutorial-copilot-power-bi-introduction.md         
+        - name: Get started with Copilot in Power BI
+          href: tutorial-copilot-power-bi-get-started.md         
+        - name: Prepare semantic model for AI
+          href: tutorial-copilot-power-bi-prepare-model.md     
+        - name: Discover data and ask questions
+          href: tutorial-copilot-power-bi-discover-data.md 
+        - name: Explore data and get insights
+          href: tutorial-copilot-power-bi-explore-data.md
   - name: Visualizations
     items: 
     - name: Visualization types in Power BI
