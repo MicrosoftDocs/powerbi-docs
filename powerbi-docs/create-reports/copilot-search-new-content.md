@@ -22,9 +22,9 @@ Through the [standalone Copilot experience](copilot-chat-with-data-standalone.md
 
 ## Enable Power BI Copilot search
 
-Copilot search is only available through the standalone Copilot experience. To access this feature, a few tenant settings need to be enabled. To use Power BI's Copilot search, both Fabric Copilot and the standalone Copilot experience must be enabled for your tenant.
+Copilot search is only available through the standalone Copilot experience. To access this feature, a few tenant settings need to be enabled. To use Power BI's Copilot search, both [Fabric Copilot](/fabric/admin/service-admin-portal-copilot) and the [standalone Copilot experience](/fabric/admin/service-admin-portal-copilot) must be enabled for your tenant.
 
-For an improved search experience, enable the global search setting and the setting to [share data across geographic boundaries](copilot-enable-power-bi.md#enable-sharing-data-across-geographic-boundaries). The latter setting allows Copilot to semantically search on similar terms and is only necessary if Azure OpenAI isn't available in your home tenant's region.
+For an improved search experience, enable the [global search](/fabric/admin/service-admin-portal-copilot) setting and the setting to [share data across geographic boundaries](copilot-enable-power-bi.md#enable-sharing-data-across-geographic-boundaries). The latter setting allows Copilot to semantically search on similar terms and is only necessary if Azure OpenAI isn't available in your home tenant's region.
 
 ## Use search to find an item
 
