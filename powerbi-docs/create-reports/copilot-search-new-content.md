@@ -3,6 +3,7 @@ title: Find content using Power BI Copilot search
 description: Learn how to find content using Power BI Copilot search.
 author: julcsc
 ms.author: juliacawthra
+ms.reviewer: Maggie.Tsang
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
