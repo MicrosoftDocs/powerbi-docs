@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/15/2025
+ms.date: 04/15/2025
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -119,7 +119,7 @@ The amount of memory available on each node size is described in the *Max memory
 * You need a [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license to publish content to a Power BI app workspace.
 
 * For Embedding for your organization (user owns data) customers:
-   Only **P SKU**s and **F SKU**s equivalent to a **F64 SKU** or higher, allow free Power BI users to consume Power BI apps and shared content in Power BI service. If you have a SKU smaller than F64, then a [Pro license](../../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) is required for each user who will view the embedded content.
+   Only SKUs equivalent to a **F64** or higher, allow free Power BI users to consume Power BI apps and shared content in Power BI service. If you have a SKU smaller than **F64**, then a [Pro license](../../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) is required for each user who will view the embedded content.
 * For Embedding for your customers (app owns data) customers, there are no licensing requirements for the end users.
 
 ## Related content
