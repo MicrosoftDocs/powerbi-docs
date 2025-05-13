@@ -53,7 +53,7 @@ Now you can set trigger phrases that, when a user asks, return an answer using t
 
 All updates are saved on the semantic model, not the report.
 
-### Power BI Service
+### Power BI service
 
 To set a verified answer in the Power BI service, ensure the following apply:
 
@@ -114,10 +114,10 @@ Once you prepare your semantic model for AI and it's ready for consumption, you 
 
 :::image type="content" source="media/copilot-prep-data/copilot-ai-preparation.png" alt-text="Screenshot of the AI preparation settings in Power BI service, showcasing the option to mark a model as prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
 
-When your semantic model is marked as *prepped for Copilot*, it doesn't receive any friction treatment or warning label in the standalone Copilot agent. Also, reports that use that semantic model can be considered as prepped for Copilot.
+When your semantic model is marked as *prepped for AI*, it doesn't receive any friction treatment or warning label in the standalone Copilot agent. Also, reports that use that semantic model can be considered as prepped for AI.
 
 > [!NOTE]
-> Although marking a semantic model as *prepped for Copilot* should remove the friction treatment and warning labels in standalone Copilot immediately, reports built from that model might take up to 24 hours to remove these behaviors. To trigger a report reindexing, you can manually save a small change to a report to speed up the process. There's currently no way to mark a report, dashboard, or app as prepped for Copilot.
+> Although marking a semantic model as *prepped for AI* should remove the friction treatment and warning labels in standalone Copilot immediately, reports built from that model might take up to 24 hours to remove these behaviors. To trigger a report reindexing, you can manually save a small change to a report to speed up the process. There's currently no way to mark a report, dashboard, or app as prepped for AI.
 
 
 ## Turn off the preview features in Desktop
@@ -150,3 +150,10 @@ When you restart Desktop, you no longer see the **Prep data for AI** button.
   - **Import models**: A model refresh is required in the Power BI service to sync the LSDL/Tooling changes after deployment.
   - **Direct query models**: A model refresh is required in the Power BI service to sync the LSDL/Tooling changes after deployment, but are limited to once a day.
   - **Direct lake models**: A model refresh is required in the Power BI service to sync the LSDL/Tooling changes after deployment, but are limited to once a day.
+
+## Related content
+
+- [AI data schema](copilot-prepare-data-ai-data-schema.md)
+- [Verified answers](copilot-prepare-data-ai-verified-answers.md)
+- [AI instructions](copilot-prepare-data-ai-instructions.md)
+- [Prep data for AI FAQ](copilot-prepare-data-ai-faq.yml)

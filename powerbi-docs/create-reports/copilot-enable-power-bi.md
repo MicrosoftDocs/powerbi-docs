@@ -70,7 +70,7 @@ Enabling this setting allows users to access the standalone, cross-item Power BI
 
 ## Use Copilot for Power BI in the service
 
-To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric (F2 and above)](/fabric/enterprise/licenses) capacity. Alternatively, you could use a Fabric Copilot capacity.
+To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric (F2 and above)](/fabric/enterprise/licenses) capacity. Alternatively, you could use a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity).
 
 > [!NOTE]
 > For a refresher on workspace access and permissions, see [Roles in workspaces in Power BI](/power-bi/collaborate-share/service-roles-new-workspaces).
@@ -126,7 +126,7 @@ When you use Copilot in Power BI Desktop for the first time, you're asked to pic
 
 ## Fabric Copilot capacity
 
-As an alternative to using a specific workspace capacity, you can use a Fabric Copilot capacity. Fabric Copilot capacity enables users to charge Copilot usage from Power BI Desktop, Pro, and Premium per-user workspaces to a single capacity. Learn more about setting up a Fabric Copilot capacity.
+As an alternative to using a specific workspace capacity, you can use a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity). Fabric Copilot capacity enables users to charge Copilot usage from Power BI Desktop, Pro, and Premium per-user workspaces to a single capacity. Learn more about setting up a Fabric Copilot capacity.
 
 Once a user is assigned to a Fabric Copilot capacity, no other steps are required to use any of the Copilot experiences.
 

@@ -24,9 +24,9 @@ Copilot in Power BI is available as a full-screen, standalone Copilot experience
 > [!NOTE]
 > **Admins need to turn on the tenant setting:** To try it out, admins need to [enable Copilot in Power BI](copilot-enable-power-bi.md), and additionally enable the following new tenant setting: Users can access a standalone, cross-item Power BI Copilot experience.
 >
-> **Prep your data for good results:** You must prep your data for it to work well with Copilot! Read on to learn what that entails.
+> **Prep your data for good results:** You must prep your data for it to work well with Copilot. Read on to learn what that entails. For more information, see [Prepare your data for AI](copilot-prepare-data-ai.md).
 >
-> **Mark your data as prepped:** Semantic model authors have the ability to mark a semantic model as prepped in model settings. This impacts the appearance of *Needs AI prep* warnings.
+> **Mark your data as prepped:** Semantic model authors have the ability to mark a semantic model as prepped in model settings. This impacts the appearance of *Needs AI prep* warnings. For more information, see [Mark your model as prepped for AI](copilot-prepare-data-ai.md#mark-your-model-as-prepped-for-ai).
 >
 > **Warnings on unprepped data:** Models not marked as prepped result in warnings that the answer quality could be low. At the beginning of the preview, you only see a warning experience on answers.
 
@@ -36,7 +36,7 @@ The standalone Copilot experience in Power BI offers a range of powerful capabil
 
 ### Search
 
-You can ask Copilot to find reports, semantic models, apps, and data agents that you have access to. In response, you get a hyperlinked list of relevant items, with helpful details to make it easy for you to find the right thing.
+You can ask Copilot to find reports, semantic models, apps, and data agents that you have access to. In response, you get a hyperlinked list of relevant items, with helpful details to make it easy for you to find the right thing. Learn more about [searching for items](copilot-search-new-content.md)
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-search-results.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a list of search results for reports, semantic models, and data agents." lightbox="media/copilot-introduction/copilot-standalone-search-results.png":::
 
@@ -47,7 +47,7 @@ Copilot can provide summaries about an entire report or a specific topic within 
 - "Summarize the relationship between weather and visits to Hawaii."
 - "Summarize trends in sales last year."
 
-Summaries in the standalone Copilot experience include both textual insights and relevant visuals within the narrative. Currently, summaries are only available for reports, not for semantic models.
+Summaries in the standalone Copilot experience include both textual insights and relevant visuals within the narrative. Currently, summaries are only available for reports, not for semantic models. Learn more about [summarizing a report or topic](copilot-pane-summarize-content.md).
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-summary-result.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a summary of a report with text and visuals." lightbox="media/copilot-introduction/copilot-standalone-summary-result.png":::
 
@@ -56,6 +56,7 @@ Summaries in the standalone Copilot experience include both textual insights and
 Copilot can answer questions and create visuals using the measures and other data fields in your model. It can also create new data analysis expression (DAX) calculations if needed.
 
 Unlike the Copilot pane within a report, the standalone Copilot experience doesn't reference report content when answering questions. Answers are always generated directly from the underlying model.
+Learn more about [asking questions about your data](copilot-ask-data-question.md).
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-data-question-result.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a question and answer about data." lightbox="media/copilot-introduction/copilot-standalone-data-question-result.png":::
 
@@ -83,7 +84,7 @@ When you ask a question about your data, whether you're looking for a summary or
 
 ### Prep data for AI
 
-You must prepare your data for it to work well with Copilot. Preparing your data for AI creates the foundation for high-quality, grounded, and context-aware AI experiences. When data is unstructured or ambiguous, AI systems can struggle to interpret it correctly - leading to generic, inaccurate, or even misleading outputs.
+You must [prepare your data for it to work well with Copilot](copilot-prepare-data-ai.md). Preparing your data for AI creates the foundation for high-quality, grounded, and context-aware AI experiences. When data is unstructured or ambiguous, AI systems can struggle to interpret it correctly - leading to generic, inaccurate, or even misleading outputs.
 
 If your data isn't prepared for Copilot, you get a warning that the answer might be low quality. You can choose to explore the data or view the answer anyway.
 
@@ -93,7 +94,7 @@ If you select the **View answer** button, the response appears in chat.
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-visual-answer-quality-warning.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a warning about low quality answers for a visual." lightbox="media/copilot-introduction/copilot-standalone-visual-answer-quality-warning.png":::
 
-Once your data is prepped for AI, responses appear in the chat without the warning.
+Once your data is [marked as prepped for AI](copilot-prepare-data-ai.md#mark-your-model-as-prepped-for-ai), responses appear in the chat without the warning.
 
 ## Copilot requirements
 
