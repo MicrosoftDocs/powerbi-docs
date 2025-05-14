@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Conditional formatting in Power BI is a powerful way to make your data more engaging and easier to interpret. By applying customized colors, data bars, icons, or even web links to your tables and matrices, you can highlight trends, outliers, and key insights at a glance. Whether you're looking to emphasize high-performing metrics, visually rank data, or create interactive reports, this guide will show you how to bring your data to life with just a few clicks.
+Conditional formatting in Power BI is a powerful way to make your data more engaging and easier to interpret. By applying customized colors, data bars, icons, or even web links to your tables and matrices, you can highlight trends, outliers, and key insights at a glance. Whether you're looking to emphasize high-performing metrics, visually rank data, or create interactive reports, this guide shows you how to bring your data to life with conditional formatting.
 
 ## Apply conditional formatting in Power BI
 
@@ -49,9 +49,9 @@ The **Background color** and **Font color** options are the same, but affect the
 
 When you use the conditional formatting commands to open the **Background color** or **Font color** dialog, you can choose from the following **Format style** options:
 
-* Color by color scale, or color gradient.
-* Color by rules.
-* Color by field values.
+* [Color by color scale](#color-by-color-scale), or color gradient.
+* [Color by rules](#color-by-rules).
+* [Color by field values](#color-by-color-values).
 
 #### Color by color scale
 
@@ -79,7 +79,7 @@ The example table with color scale font formatting on the **Affordability rank**
 
 #### Color by rules
 
-You can create rules to format the cell background or font color in a table according to specific conditions you define for applying colors, making it easier to visually categorize and interpret data. You might use this feature, for example, to highlight sales performance by coloring cells green for values above a target threshold, yellow for values near the target, and red for values below the target.
+You can create rules to format the cell background or font color in a table according to specific conditions that you define, making it easier to visually categorize and interpret data. You might use this feature, for example, to highlight sales performance by coloring cells green for values above a target threshold, yellow for values near the target, and red for values below the target.
 
 To format the cell background or font color by rules:
 
@@ -95,7 +95,7 @@ An example table with rules-based background color formatting based on **Percent
 
 ![Example table with conditional color by rules applied.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
 
-You can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. For matrices, Values will refer to the lowest visible level of the matrix hierarchy.
+You can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. For matrices, *Values* will refer to the lowest visible level of the matrix hierarchy.
 
 #### Color by rules for percentages
 
@@ -108,13 +108,13 @@ In this example, the following table has a rules-based background color on the *
 ![Example table with color by rules for percentages applied.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-table.png)
 
 > [!NOTE]
-> If you use **Percent** instead of **Number** for fields containing percentages, you may get unexpected results. In the above example, in a range of percent values from 21.73% to 44.36%, 50% of that range is 33%. You should use **Number** instead.
+> If you use **Percent** instead of **Number** for fields containing percentages, you might get unexpected results. In the above example, in a range of percent values from 21.73% to 44.36%, 50% of that range is 33%. You should use **Number** instead.
 
 #### Color by color values
 
 If you have a field or measure with color name or hex value data, you can use conditional formatting to automatically apply those colors to a column's background or font color. You can also use custom logic to apply colors to the font or background.
 
-The field can use any color values listed in the CSS color spec at [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/). These color values can include:
+The field can use any color value listed in the CSS color spec at [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/). These color values can include:
 
 * 3-digit, 6-digit, or 8-digit hex codes, for example #3E4AFF. Make sure you include the # symbol at the start of the code.
 * RGB or RGBA values, like RGBA(234, 234, 234, 0.5).
@@ -204,7 +204,7 @@ For more on formatting URLs in a table, see [Add hyperlinks (URLs) to a table or
 
 ### Color code based on text
 
-Unlike in Excel, you can't color-code text values to display as a particular color, such as "Accepted"=blue, "Declined"=red, "None"=grey. You create measures related to these values and apply formatting based on those instead.
+Unlike in Excel, you can't color code text values to display as a particular color, such as "Accepted"=blue, "Declined"=red, "None"=grey. You create measures related to these values and apply formatting based on those instead.
 
 For example:
 

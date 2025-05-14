@@ -267,7 +267,7 @@ Another formatting option is to add visual cues to the table with conditional **
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-icons.png" alt-text="Diagram that shows how Power BI updates the table column to show icons to the left of the numbers in the selected column." border="false":::
 
-For more information about conditional formatting, see [Apply conditional formatting in tables and matrixes](../create-reports/desktop-conditional-table-formatting.md).
+For more information about conditional formatting, see [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md).
 
 ## Copy table values into other applications
 
@@ -323,4 +323,4 @@ Review the following considerations for working with tables in Power BI.
 
 - Create [tree maps in Power BI](power-bi-visualization-treemaps.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
-- Apply [conditional formatting in tables and matrixes](../create-reports/desktop-conditional-table-formatting.md).
+- Apply [conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md).
