@@ -267,7 +267,7 @@ Another formatting option is to add visual cues to the table with conditional **
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-icons.png" alt-text="Diagram that shows how Power BI updates the table column to show icons to the left of the numbers in the selected column." border="false":::
 
-For more information about conditional formatting, see [Apply conditional formatting in tables and matrixes](../create-reports/desktop-conditional-table-formatting.md). The article includes ideas for how to format [totals and subtotals](../create-reports/desktop-conditional-table-formatting.md#totals-and-subtotals).
+For more information about conditional formatting, see [Apply conditional formatting in tables and matrixes](../create-reports/desktop-conditional-table-formatting.md).
 
 ## Copy table values into other applications
 
@@ -315,7 +315,7 @@ Review the following considerations for working with tables in Power BI.
 
 - When you apply column formatting, you can choose only one alignment method per column: **Auto**, **Left**, **Center**, or **Right**. Usually, a column contains all text or all numbers, and not a mix of values. In cases where a column contains both numbers and text, the **Auto** option aligns left for text and right for numbers. This behavior supports languages where you read left-to-right.
 
-- If text data in table cells or headers contain new line characters, the characters are ignored by default. If you want Power BI to recognize these formatting characters, enable the **Values** > **Values** > **Text wrap** option for the specific element on the **Format** section of the **Visualizations** pane. 
+- If text data in table cells or headers contain new line characters, the characters are ignored by default. If you want Power BI to recognize these formatting characters, enable the **Values** > **Values** > **Text wrap** option for the specific element on the **Format** section of the **Visualizations** pane.
 
 - Power BI calculates the maximum cell size for a table based on the contents of the first 20 columns and the first 50 rows. Content in cells beyond those table dimensions might not be appropriately sized.
 

@@ -6,7 +6,7 @@ ms.author: davidi
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/12/2025
+ms.date: 05/13/2025
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user, I want to apply conditional formatting to tables and matrices so that I can visually highlight and interpret data trends effectively.
 ---
@@ -37,7 +37,7 @@ The following sections describe each conditional formatting option. You can comb
 
 ### Format background or font color
 
-Using conditional formatting for font color or cell background in a table column enhances data readability and helps users quickly identify trends, outliers, or key insights. Formatting with specific colors applies distinct colors to predefined conditions or categories, making it easier to differentiate between discrete data points.
+Using conditional formatting for the font color or cell background in a table column enhances data readability and helps users quickly identify trends, outliers, or key insights. Formatting with specific colors applies distinct colors to predefined conditions or categories, making it easier to differentiate between discrete data points.
 
 To format the cell background or font color:
 
@@ -83,6 +83,7 @@ You can create rules to format the cell background or font color in a table acco
 
 To format the cell background or font color by rules:
 
+1. Select **Conditional formatting** for a field, then select either **Background color** or **Font color** from the menu.
 1. In the **Format style** field of the **Background color** or **Font color** dialog, under **Format style**, select **Rules**. Again, **What field should we base this on?** shows the field to base the formatting on, and **Summarization** shows the aggregation type for the field.
 1. Under **Rules**, enter one or more value ranges, and set a color for each one. Each value range has an *If value* condition, an *and* value condition, and a color. Cell backgrounds or fonts in each value range are colored with the given color. The following example has three rules that have been set for the **Affordability rank** field:
 
@@ -126,7 +127,7 @@ The following table has a color name associated with each state:
 
 To format the **Color** column based on its field values:
 
-1. Select the **Color** field, then use the dropdown arrow or right-click to open the menu and select **Conditional formatting** > **Background color** or **Font color**.
+1. Select **Conditional formatting** for the **Color** field, then select **Background color** or **Font color**.
 1. In the **Background color** or **Font color** dialog, select **Field value** from the **Format style** dropdown field.
 
 An example table with color field value-based **Background color** formatting on the **Color** field looks like this:
@@ -143,11 +144,9 @@ For example, the following formula applies hex color values to a new **Affordabi
 
 To apply the colors in this scenario:
 
-1. Select the **Affordability** field, then use the dropdown arrow or right-click to open the menu and select **Conditional formatting** > **Background color** or **Font color**.
+1. Select **Conditional formatting** for the **Affordability** field, then select **Background color** or **Font color**.
 1. In the **Background color** or **Font color** dialog, select **Field value** from the **Format style** dropdown field.
 1. Under **What field should we base this on?**, choose the **Affordability** column as the field to base the formatting on.
-
-![Dialog of Format style for background color of Affordability column: Format style dropdown is set to Field value.](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
 
 The example table with **Affordability** background color based on calculated **Affordability rank** looks like this:
 
@@ -159,9 +158,9 @@ You can create many more variations, just by using your imagination and some cal
 
 Data bars provide a visual representation of values directly within table or matrix cells, making it easier to compare data at a glance. The length of the bar corresponds to the value in the cell, offering an intuitive way to interpret numerical data.
 
-If we take the same example used in the previous section on color-based calculations, you can use the following steps to show data bars based on cell values:
+If we take the same example used in the previous section on color-based calculations, you use the following steps to show data bars based on cell values:
 
-1. Select the **Affordability** field, then use the dropdown arrow or right-click to open the menu and select **Conditional formatting** > **Data bars**.
+1. Select **Conditional formatting** for a field, then select **Data bars**.
 1. In the **Data bars** dialog, the **Show bar only** option is unchecked by default, so the table cells show both the bars and the actual values. To show the data bars only, without any values, select the **Show bar only** checkbox.
 1. You can specify **Minimum** and **Maximum** values, data bar colors and direction, and axis color.
 
@@ -177,7 +176,7 @@ Icons are another conditional formatting option you can use to help users visual
 
 To show icons based on cell values:
 
-1. Select the field you want to apply the conditional formatting to, then use the dropdown arrow or right-click to open the menu and select **Conditional formatting** > **Icons**.
+1. Select **Conditional formatting** for a field, then select **Icons**.
 1. In the **Icons** dialog, under **Format style**, select either **Rules** or **Field value**.
 1. Make your selections, then select **OK** to close the dialog and apply the conditional formatting.
 
@@ -226,8 +225,8 @@ In the resulting table, the formatting is based on the value in the **StatusColo
 There are a few considerations to keep in mind when working with conditional table formatting:
 
 * Any table that doesn't have a grouping is displayed as a single row that doesn't support conditional formatting.
-* You can't apply gradient formatting with automatic maximum/minimum values, or rule-based formatting with percentage rules, if your data contains *NaN* values. NaN means "Not a number," and is most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](/dax/divide-function-dax) to avoid these errors.
-* Conditional formatting needs an aggregation or measure to be applied to the value. That's why you see 'First' or 'Last' in the [**Color by color values** example](#color-by-color-values). If you're building your report against an Analysis Service multidimensional cube, you won't be able to use an attribute for conditional formatting unless the cube owner builds a measure that provides the value.
+* You can't apply gradient formatting with automatic maximum/minimum values, or rule-based formatting with percentage rules, if your data contains *NaN* values. NaN means "not a number," and is most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](/dax/divide-function-dax) to avoid these errors.
+* Conditional formatting needs an aggregation or measure to be applied to the value. That's why you see 'First' or 'Last' in the [color by color values example](#color-by-color-values). If you're building your report against an Analysis Service multidimensional cube, you won't be able to use an attribute for conditional formatting unless the cube owner builds a measure that provides the value.
 * When printing a report including data bars and background color, you must enable *Background graphics* in the print settings of the browser for the data bars and background colors to print properly.
 
 ## Related content
