@@ -69,13 +69,32 @@ For more information about how to register applications in Microsoft Entra ID, s
 
    * **Name** - Give your application a name.
 
-   * **Supported account type** - Select who can use the application.
+   * **Supported account type** - Select who can use the application. Select *Accounts in this organizational directory only* for single tenant apps, or *Accounts in any organizational directory* for cross-tenant scenarios.
 
 1. (Optional) In the **Redirect URI** box, add a redirect URL.
 
-1. Select **Register**. After your app is registered, you're directed to your app's overview page, where you can obtain the **Application ID**.
+1. Select **Register**. After your app is registered, you're directed to your app's overview page, where you can obtain the **Application ID**. Copy and save the **Application ID** and all information in the **Summary** box for later use. Your Power BI embedding environment is ready to use.
 
-Make sure you copy all the information in the **Summary** box. Your Power BI embedding environment is ready to use.
+   :::image type="content" source="media/register-app/application-id.png" alt-text="Screenshot of the Overview page of the new app. The Application ID is indecipherable and is highlighted.":::
+
+## Create a secret key (optional)
+
+If you want to use a service principal to authenticate your app, you need to create a client secret. A client secret is a password that your application uses to authenticate against the Microsoft Entra ID. You can create a client secret in the Azure portal.
+
+1. Select **Certificates & secrets**.
+
+   :::image type="content" source="media/register-app/certificates-and-secrets.png" alt-text="Screenshot of the Overview page of the new app. On the navigation pane, Certificates & secrets is highlighted.":::
+
+1. Select **New client secret**.
+
+1. In the **Add a client secret** window, enter a description, specify when you want the client secret to expire, and select **Add**.
+
+1. Copy and save the client secret value.
+
+   :::image type="content" source="media/register-app/client-secret-value.png" alt-text="Screenshot of the Certificates & secrets page for the app. Under Client secrets, a new secret is visible. Its indecipherable value is highlighted.":::
+
+   > [!NOTE]
+   > Once you save the client secret, the value of the client secret is displayed. This is only displayed once, so copy this value and store it where your application can retrieve it, usually where your application keeps values like clientId, or authority in the source code. You need to provide the secret value along with the application's client ID to sign in as the application. After you leave this window, the client secret value is hidden, and you can't view or copy it again.
 
 ## Related content
 

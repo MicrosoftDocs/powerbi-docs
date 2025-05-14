@@ -75,7 +75,7 @@ To embed a Power BI report that has a semantic model with a Direct Query connect
   * Set the [`XmlaPermissions`](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) to *Read Only* for each semantic model in the request.
   * For each Single Sign-on (SSO) enabled data source, provide the identity blob for the data source in the [`DatasourceIdentity`](/rest/api/power-bi/embed-token/generate-token#datasourceidentity).
 
-In this scenario, all semantic models must reside on a premium workspace. Trial embed tokens cannot be used to embed a report ot his type.
+In this scenario, all semantic models must reside on a premium workspace. Trial embed tokens cannot be used to embed a report of this type.
 
 ## Renew tokens before they expire
 

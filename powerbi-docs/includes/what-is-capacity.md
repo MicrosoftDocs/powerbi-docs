@@ -9,4 +9,4 @@ ms.date: 07/11/2022
 ms.custom: include file, service-premium-what-is.md, embedded-capacity.md
 ---
 
-Capacity is a dedicated set of resources reserved for exclusive use. It offers dependable, consistent performance for your content.
+Capacity is a distinct pool of resources. The size of the capacity determines the amount of computation power available.
