@@ -72,7 +72,7 @@ Now you can edit the sparkline’s properties.
 ## Considerations and limitations
 
 - Power BI supports up to five sparklines per visual, and displays up to 52 points per sparkline.
-- For performance reasons, the maximum number of columns in a matrix is also limited to 20 when sparklines are on.
+- For performance reasons, the maximum number of columns in a matrix is also limited to 25 when sparklines are on.
 - Sparklines are supported on Azure Analysis Services, but currently not supported on on-premises SQL Server Analysis Services.
 - Visuals with sparklines don't support pinning to a dashboard.
 
