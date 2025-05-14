@@ -7,7 +7,7 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 05/05/2025
+ms.date: 05/14/2025
 LocalizationGroup: Create reports
 #customer intent:
 ---
@@ -112,7 +112,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
    | Parameter | Value |
    | --------- | ----- |
    | **productDescription** | Select the text slicer from your report, **Write a new product description**. |
-   | **productModelId** | Select the **Conditional formatting** (**fx**) button. A new window opens.<br><br>For the **Formal style** parameter, keep the default **Field value** value.<br><br>For the **What field should we base this on?** parameter, select **All data** > **SalesLT.ProductModel** > **ProductModelID**. |
+   | **productModelId** | Select the **Conditional formatting** (**fx**) button. A new window opens.<br><br>For the **Format style** parameter, keep the default **Field value** value.<br><br>For the **What field should we base this on?** parameter, select **All data** > **SalesLT.ProductModel** > **ProductModelID**. |
    | **Summarization** | Select **Maximum**. |
 
 1. Select **OK** to complete the action configuration. The **Action** details should look like the following example:
