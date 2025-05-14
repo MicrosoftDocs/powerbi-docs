@@ -96,6 +96,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
 1. Provide the following values for your button:
 
    | Parameter | Value |
+   | --------- | ----- |
    | **Type** | Select **Data function** |
    | **Workspace** | Select the workspace that contains the user data function you made in the previous article. |
    | **Function Set** | Select the function set that contains your data function. For example, **sqlwriteback**. |
@@ -109,6 +110,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
 1. Once you select your data function, additional parameters appear to represent the parameters that the function takes. Provide the following values:
 
    | Parameter | Value |
+   | --------- | ----- |
    | **productDescription** | Select the text slicer from your report, **Write a new product description**. |
    | **productModelId** | Select the **Conditional formatting** (**fx**) button. A new window opens.<br><br>For the **Formal style** parameter, keep the default **Field value** value.<br><br>For the **What field should we base this on?** parameter, select **All data** > **SalesLT.ProductModel** > **ProductModelID**. |
    | **Summarization** | Select **Maximum**. |
@@ -129,8 +131,15 @@ In this section, build visuals with the data that you loaded into your Power BI 
 
 ## Optional report modifications
 
+As with any Power BI report, there are many ways to customize the appearance and improve the functionality of this report. Consider some of these options:
+
+* Add titles to the two tables. For example, **Select a product** and **Product description**.
+* Set the text slicer to auto-clear after submitting a new product description. To do so, select the button that triggers the user data function. In the **Format button** > **Action** menu, set the **Auto clear** toggle to **On**.
+* Opt-out of auto-refresh for the report after triggering the user data function. In this scenario, it's helpful to refresh the data and see the new product description appear in the table. In other scenarios, you might not need or want to refresh the report. To turn off this setting, select the button that triggers the user data function. In the **Format button** > **Action** menu, set the **Refresh the report after a successful outcome** toggle to **Off**.
 
 ## Publish your report
+
+You built your report in Power BI Desktop. In this section, you publish the report so that your users can interact with it in the web portal.
 
 1. In the **Home** toolbar menu, select **Publish**.
 
@@ -138,7 +147,34 @@ In this section, build visuals with the data that you loaded into your Power BI 
 
 1. Once your report finishes publishing, select the link to **Open <REPORT_NAME>.pbix in Power BI**.
 
+   >[!TIP]
+   >When you open your report in the Power BI web portal, you might see an error that says, **The data source is missing credentials and cannot be accessed**. To resolve this error, use the following steps:
+   >
+   >1. Open the semantic model for your report and navigate to **File** > **Settings**. 
+   >2. Expand the **Data source credentials** setting if it isn't already.
+   >3. Select **Edit credentials**.
+   >4. Choose your **Authentication method** from the dropdown menu. For example, **Basic** takes a username and password, and **OAuth2** enables single sign-on with your current account.
+   >5. Provide the required information, if any, then select **Sign in**.
+
 Now, you have a translytical task flow in a Power BI report that's available in the Power BI service.
 
+## Run your translytical task flow
 
+In this section, you interact with your report in the Power BI web portal to test the translytical task flow that you built.
 
+Only users that are authorized to trigger data functions can use this feature. Any unauthorized users get a **Something went wrong** response.
+
+1. Open your report in Power BI.
+1. Select a product from the product table that lists the name and ID. This selection passes context to the text slicer for which product you want to update. You also see that the product description table filters to show all of the current descriptions for the selected product.
+1. Write a new product description in the input text box.
+1. Select the arrow icon or use the **Tab** key to submit the input. Once a product is selected an a description is provided, you see that the button switches to an enabled state.
+1. Select the button to run the user data function.
+
+If the translytical task flow worked correctly, you receive a message that says **The action on your report was submitted successfully**. The product description table refreshes to show the new description.
+
+If anything goes wrong with the translytical task flow, you receive a message that says **Something went wrong**. Select **View details** to get more information about the reason for the failure. Some common reasons for an unsuccessful function run include:
+
+* **Data validation**: Input values don't meet the data validation rules defined in the user data function.
+* **Timeout error**: A function or process takes longer than the allowed time to complete.
+* **Improper setup**: Errors in configuring the report elements, usually the button, can cause the task flow to fail or product unexpected results.
+* **Unauthorized user**: The user doesn't have permissions to trigger the data function.

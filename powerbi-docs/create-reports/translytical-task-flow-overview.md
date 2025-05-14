@@ -26,7 +26,25 @@ Translytical task flows work by using [user data functions in Fabric](/fabric/da
 >[!NOTE]
 >The translytical task flow feature is currently in public preview.
 
-## Data write-back
+## Architecture
+
+A translytical task flow connects three tasks to enable your automated scenarios:
+
+* **Store data**
+
+  Start with an existing Fabric data source
+
+* **Develop data**
+
+  Write a Fabric user data function that gets called from a Power BI report. This function can do any number of actions, from editing the report's data source to sending a notification to creating a work item in an approvals pipeline.
+
+* **Visualize data**
+
+  Create a Power BI report that displays the source data and any interactive elements to call the data function.
+
+For more information, see [Task flows in Microsoft Fabric](/fabric/fundamentals/task-flow-overview).
+
+## Data write-back functions
 
 Translytical task flows can enable data write-back so that end users can update, add, or delete data in Fabric databases from within Power BI reports. Leveraging Fabric's user data functions, you can programmatically update, add, or delete records of data based on the filter context passed from the report. 
 
@@ -47,7 +65,7 @@ User data functions have native connection management for the following Fabric d
 
 For most write-back scenarios, we recommend using SQL database as your underlying data source. SQL databases perform well with the heavy read/write operations required in reporting scenarios. To use SQL database, a tenant admin needs to [Enable SQL database in Fabric using admin portal tenant settings](/fabric/database/sql/enable).
 
-## Custom automation
+## Custom automation functions
 
 Translytical task flows can also automate many tasks and even take actions in other systems using external APIs.
 

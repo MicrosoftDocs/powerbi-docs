@@ -164,6 +164,8 @@
             href: translytical-task-flow-create.md
           - name: Build a report with data write-back
             href: translytical-task-flow-report.md
+        - name: Create data function buttons
+          href: translytical-task-flow-button.md
     - name: Create drillthrough buttons
       href: desktop-drill-through-buttons.md
     - name: Use the drillthrough feature

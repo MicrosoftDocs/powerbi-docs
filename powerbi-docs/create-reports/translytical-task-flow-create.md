@@ -207,7 +207,7 @@ def write_one_to_sql_db(sqlDB: fn.FabricSqlConnection, productDescription: str, 
     cursor.close() 
     connection.close()  
 
-    return "Product Description was added" 
+    return "Product description was added" 
 ```
 
 ## Grant user permissions (optional)
