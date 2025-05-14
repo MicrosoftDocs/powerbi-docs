@@ -99,7 +99,7 @@ The following example shows an interactive section with three elements:
 
 You can test if the button is linked properly with your slicers by adding input values to each. If the parameters are accepted, the button changes its style. Customize the button style to make its status more appealing. In Power BI Desktop, you can't trigger actions until the report is published.
 
-:::image type="content" source="./media/translytical-task-flow-button/example-slicers.png" alt-text="Screenshot that shows the same report example with two slicers and a data function button. The slicers have sample input and the button is enabled.":::
+:::image type="content" source="./media/translytical-task-flow-button/example-slicers-enabled.png" alt-text="Screenshot that shows the same report example with two slicers and a data function button. The slicers have sample input and the button is enabled.":::
 
 ### Interface with data fields and measures
 
@@ -114,7 +114,7 @@ The following example shows an interactive section with two elements:
 
 You can test if the button is linked properly with your table by clicking on a row. If the parameter is accepted, the button changes its style. Customize the button style to make its status more appealing. In Power BI Desktop, you can't trigger actions until the report is published.
 
-:::image type="content" source="./media/translytical-task-flow-button/example-slicers.png" alt-text="Screenshot that shows the same report example with a table and a data function button. The table has a row selected and the button is enabled.":::
+:::image type="content" source="./media/translytical-task-flow-button/example-table-enabled.png" alt-text="Screenshot that shows the same report example with a table and a data function button. The table has a row selected and the button is enabled.":::
 
 ### Interface with mixed inputs
 
@@ -126,8 +126,8 @@ The following example shows an interactive section with three elements:
 * A *button slicer* to select the order status from one of three options
 * A *button* to submit the input to a user data function 
 
-:::image type="content" source="./media/translytical-task-flow-button/example-table.png" alt-text="Screenshot that shows a report example that contains a table, a button slicer, and a data function button.":::
+:::image type="content" source="./media/translytical-task-flow-button/example-mixed.png" alt-text="Screenshot that shows a report example that contains a table, a button slicer, and a data function button.":::
 
 You can test if the button is linked properly with your table by clicking on a row and a slicer button. If the parameter is accepted, the button changes its style. Customize the button style to make its status more appealing. In Power BI Desktop, you can't trigger actions until the report is published.
 
-:::image type="content" source="./media/translytical-task-flow-button/example-slicers.png" alt-text="Screenshot that shows the same report example with a table, a slicer, and a data function button. The table and slicer have input selected and the button is enabled.":::
+:::image type="content" source="./media/translytical-task-flow-button/example-mixed-enabled.png" alt-text="Screenshot that shows the same report example with a table, a slicer, and a data function button. The table and slicer have input selected and the button is enabled.":::
