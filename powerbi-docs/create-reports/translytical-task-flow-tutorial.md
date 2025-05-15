@@ -40,15 +40,15 @@ A translytical task flow connects three tasks to enable your automated scenarios
 
 * **Store data**
 
-  Start with an existing Fabric data source
+  Start with an existing Fabric data source. In this tutorial, we use a SQL database with sample data.
 
 * **Develop data**
 
-  Write a Fabric user data function that gets called from a Power BI report. This function can do any number of actions, from editing the report's data source to sending a notification to creating a work item in an approvals pipeline.
+  Write a Fabric user data function that gets called from a Power BI report. This function can do any number of actions, from editing the report's data source to sending a notification to creating a work item in an approvals pipeline. In this tutorial, we create a user data function that takes a new product description and writes it to the SQL database.
 
 * **Visualize data**
 
-  Create a Power BI report that displays the source data and interactive elements to call the data function.
+  Create a Power BI report that displays the source data and interactive elements to call the data function. In this tutorial, we use a text slicer to collect the product description from the user and send it to the user data function. Then, the report refreshes to show the updated table.
 
 ## Create a SQL database
 
@@ -76,7 +76,7 @@ Create a user data function in a workspace.
 
 1. Select **New function**.
 
-## Connect to your SQL database
+### Connect to your SQL database
 
 Connect the user data function to the SQL database you created previously. Make sure that you have access permissions to the SQL database before continuing.
 
@@ -89,22 +89,59 @@ Connect the user data function to the SQL database you created previously. Make 
 1. After the connection is created, copy the **Alias** value to use later in the tutorial.
 1. Close the **Connections** page to return to your user data function.
 
-## Add function code
+### Add function code
 
-Add code to the user data function that writes a new row to your database.
+Add code to your user data function so that it writes data to the `[SalesLT].[ProductDescription]` table in the SQL database's AdventureWorksLT sample.
 
-1. Select **Edit** on the functions page.
+User data functions use pyodbc by default for SQL connections, and we recommend that library for this scenario.
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/edit-function.png" alt-text="Screenshot that shows selecting 'edit' on the functions page.":::
+To connect a user data function to a Power BI button, the function must return a string.
 
-1. On the **Edit** toolbar, select **Insert sample** > **SQL Database** > **Write one row of data into a table in SQL database**.
+1. Replace the default code in your user data function with the following sample:
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/write-one-row-of-data.png" alt-text="Screenshot that shows the nested dropdown menus to select the 'write one row of data into a table in SQL database' sample.":::
+   ```python
+   import fabric.functions as fn
+   import uuid
+   
+   udf = fn.UserDataFunctions()
+   
+   @udf.connection(argName="sqlDB",alias="<REPLACE_WITH_CONNECTION_ALIAS>") 
+   @udf.function() 
+   
+   # Take a product description and product model ID as input parameters and write them back to the SQL database
+   # Users will provide these parameters in the PowerBI report
+   def write_one_to_sql_db(sqlDB: fn.FabricSqlConnection, productDescription: str, productModelId:int) -> str: 
+   
+       # Establish a connection to the SQL database  
+       connection = sqlDB.connect() 
+       cursor = connection.cursor() 
+   
+       # Insert data into the product description table  
+       insert_query = "INSERT INTO [SalesLT].[ProductDescription] (Description) OUTPUT INSERTED.ProductDescriptionID VALUES (?)" 
+       cursor.execute(insert_query, productDescription) 
+   
+       # Get the ID from the previous query 
+       results = cursor.fetchall() 
+   
+       # Generate an Id for the Culture column 
+       cultureId = str(uuid.uuid4()) 
+   
+       # Insert data into the relationship table 
+       insert_product_model_relationship_query = "INSERT INTO [SalesLT].[ProductModelProductDescription] (ProductModelID, ProductDescriptionID, Culture) VALUES (?, ?, ?);" 
+       cursor.execute(insert_product_model_relationship_query, (productModelId, results[0][0], cultureId[:6])) 
+   
+       # Commit the transaction 
+       connection.commit() 
+       cursor.close() 
+       connection.close()  
+   
+       return "Product description was added" 
+   ```
 
 1. Find the following line of code in the sample:
 
    ```python
-   @udf.connection(artName="sqlDB",alias="<alias for sql database>")
+   @udf.connection(argName="sqlDB",alias="<REPLACE_WITH_CONNECTION_ALIAS>")
    ```
 
 1. Replace the **alias** placeholder with the value that you copied in the previous section.
@@ -117,11 +154,10 @@ Use the steps in this section if you want to test the sample code so far.
 
 1. Select **Publish**.
 1. Once the function is published, hover over the **write_one_to_sql_db** function on the **Functions explorer** menu, then select the **Run** icon.
-1. On the **Run** page, provide sample data for the three required parameters:
+1. On the **Run** page, provide sample data for the two required parameters:
 
-   * **employeeId**: integer
-   * **employyName**: string
-   * **deptId**: integer
+   * **productDescription**: string
+   * **productModelId**: integer between 1 and 127
 
 1. Select **Run**.
 1. Review the function output as well as the generated logs.
@@ -129,111 +165,7 @@ Use the steps in this section if you want to test the sample code so far.
 
 If you get any errors when running the sample code, check that your account has access permissions to the database.
 
-## Add code for the translytical task flow
-
-Update the sample code to write data to the `[SalesLT].[ProductDescription]` table in the SQL database's AdventureWorksLT sample.
-
-User data functions use pyodbc by default for SQL connections, and we recommend that library for this scenario.
-
-You can view the finished code for this section in the following [Complete function code](#complete-function-code) section.
-
-1. In the function editor, add a new import statement to the top of the code file.
-
-   ```python
-   import uuid 
-   ```
-
-1. Replace the `write_one_to_sql_db` method definition's input parameters to include a product description (string) and product model ID (integer). These parameters map to the values that the users will provide in the PowerBI report that you create in the next tutorial.
-
-   ```python
-   def write_one_to_sql_db(sqlDB: fn.FabricSqlConnection, productDescription: str, productModelId:int) -> str:
-   ```
-
-1. Delete the `data` variable.
-1. Delete the `create_table_query` variable.
-1. Replace the `insert_query` variable with the following SQL statement:
-
-   ```python
-   insert_query = "INSERT INTO [SalesLT].[ProductDescription] (Description) OUTPUT INSERTED.ProductDescriptionID VALUES (?)" 
-   ```
-
-1. Replace the `cursor.execute` method call with the following line:
-
-   ```python
-   cursor.execute(insert_query, productDescription)
-   ```
-
-1. Add the following new lines:
-
-   ```python
-   # Get the ID from the previous query 
-   results = cursor.fetchall() 
-
-   # Generate an Id for the Culture column 
-   cultureId = str(uuid.uuid4()) 
-
-   # Insert data into the relationship table 
-   insert_product_model_relationship_query = "INSERT INTO [SalesLT].[ProductModelProductDescription] (ProductModelID, ProductDescriptionID, Culture) VALUES (?, ?, ?);" 
-   cursor.execute(insert_product_model_relationship_query, (productModelId, results[0][0], cultureId[:6])) 
-   ```
-
-1. Replace the `return` statement:
-
-   ```python
-   return "Product Description was added"
-   ```
-
-   Power BI report buttons require that functions return a string.
-
-1. Publish and run your function to test that the database operation works correctly. Use the following guidelines for the input parameters:
-
-   * **productDescription**: string
-   * **productModelId**: integer between 1 and 127
-
-### Complete function code
-
-The following code block provides the final function code that you edited in the previous section.
-
-Power BI report buttons require that functions return a string.
-
-```python
-import fabric.functions as fn
-import uuid
-
-udf = fn.UserDataFunctions()
-
-@udf.connection(argName="sqlDB",alias="<REPLACE_WITH_CONNECTION_ALIAS>") 
-@udf.function() 
-
-def write_one_to_sql_db(sqlDB: fn.FabricSqlConnection, productDescription: str, productModelId:int) -> str: 
-
-    # Establish a connection to the SQL database  
-    connection = sqlDB.connect() 
-    cursor = connection.cursor() 
-
-    # Insert data into the product description table  
-    insert_query = "INSERT INTO [SalesLT].[ProductDescription] (Description) OUTPUT INSERTED.ProductDescriptionID VALUES (?)" 
-    cursor.execute(insert_query, productDescription) 
-
-    # Get the ID from the previous query 
-    results = cursor.fetchall() 
-
-    # Generate an Id for the Culture column 
-    cultureId = str(uuid.uuid4()) 
-
-    # Insert data into the relationship table 
-    insert_product_model_relationship_query = "INSERT INTO [SalesLT].[ProductModelProductDescription] (ProductModelID, ProductDescriptionID, Culture) VALUES (?, ?, ?);" 
-    cursor.execute(insert_product_model_relationship_query, (productModelId, results[0][0], cultureId[:6])) 
-
-    # Commit the transaction 
-    connection.commit() 
-    cursor.close() 
-    connection.close()  
-
-    return "Product description was added" 
-```
-
-## Grant user permissions (optional)
+### Grant user permissions (optional)
 
 If other users will interact with the Power BI report that calls this function, grant them **Execute functions** permissions.
 
@@ -246,37 +178,20 @@ If other users will interact with the Power BI report that calls this function, 
 1. In the **Enter a name or email address** box, provide the users or groups that you want to have permissions for this function.
 1. Select **Send**.
 
-## Best practices for user data functions
+## Create a Power BI report
 
-When you start to write your own functions for translytical task flow scenarios, follow these best practices to ensure a quality end-user experience.
+In this section, you create a Power BI report that pulls data from the SQL database you created in the previous section.
 
-* Write input validation logic for each parameter. Use the `fn.UserThrownError()` method to send an expected error response to the Power BI report. For example:
+### Connect to the SQL database
 
-  ```python
-  if (discount < 0):
-      raise fn.UserThrownError("Discount cannot be negative.")
-  ```
-
-* Use a try/catch statement for all execute database calls. Return a friendly message to handle cases when the database is offline or unreachable.
-* Ensure that your SQL statements aren't vulnerable to SQL injection attacks.
-* Write a friendly success message that tells the end user that their operation was successful.
-
-## Create a Power BI report and connect the data source
-
-In this section, you create a Power BI report that pulls data from the SQL database you created in the previous article.
-
-<!-- OneLake catalog -> Sql DB (preview) -> -->
+Connect to your SQL database as the data source for your report.
 
 1. In Power BI Desktop, create a new report.
-1. Select **Get data** > **More...**.
+1. Select **OneLake Catalog** > **SQL database**.
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/report-get-data.png" alt-text="Screenshot that shows selecting 'get data' on an empty Power BI report in Power BI Desktop.":::
+   :::image type="content" source="./media/translytical-task-flow-tutorial/report-onelake-catalog.png" alt-text="Screenshot that shows selecting SQL database from the OneLake catalog.":::
 
-1. In the **Get Data** window, select **Microsoft Fabric** > **SQL database**. Then, select **Connect**.
-
-   :::image type="content" source="./media/translytical-task-flow-tutorial/sql-database-connect.png" alt-text="Screenshot that shows selecting Fabric SQL database as the data source.":::
-
-1. Select the database that you created in the previous article. For example, **AdventureWorksLT**. Then, select **Connect**.
+1. In the **OneLake catalog** window, select the database that you created in the previous section. For example, **AdventureWorksLT**. Then, select **Connect**.
 
 1. Follow any prompts to authenticate to the database.
 
@@ -292,7 +207,7 @@ In this section, you create a Power BI report that pulls data from the SQL datab
 
    DirectQuery mode is a live connection that enables the report to refresh the data and reflect any data modifications. For more information, see [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md).
 
-## Build the Power BI report
+### Build the Power BI report
 
 In this section, build visuals with the data that you loaded into your Power BI report.
 
@@ -331,7 +246,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
    | Parameter | Value |
    | --------- | ----- |
    | **Type** | Select **Data function** |
-   | **Workspace** | Select the workspace that contains the user data function you made in the previous article. |
+   | **Workspace** | Select the workspace that contains the user data function you made in the previous section. |
    | **Function Set** | Select the function set that contains your data function. For example, **sqlwriteback**. |
    | **Data function** | Select your data function. For example, **write_one_to_sql_db**. |
 
@@ -354,7 +269,24 @@ In this section, build visuals with the data that you loaded into your Power BI 
 
 1. Select the button and expand the **Style** options in the **Format button** pane. Turn the **Text** radio button to **On** and label your button `Enter`.
 
-<!-- Adjust style for the loading state. Change the text ("submitting"), change the spinner size (icon size -> 20; left padding -> 20px) -->
+1. In the **Style** options, switch the **Apply settings to** option to **Loading**.
+
+   The loading state is a unique state available to data function buttons that you can use to define style options that appear while the data function is running.
+
+   :::image type="content" source="./media/translytical-task-flow-tutorial/button-state.png" alt-text="Screenshot that shows selecting the 'loading' state for a button style.":::
+
+1. Expand the **Text** menu and replace the button text value with `Submitting`.
+
+1. Expand the **Icon** menu.
+
+   By default, a data function button has a **Spinner** icon type for the loading state.
+
+1. Adjust the icon style with the following changes:
+
+   | Parameter | Value |
+   | --------- | ----- |
+   | **Padding** | Change the left padding to `20 px`. |
+   | **Icon size** | Replace the default **Auto** value with `20`. |
 
 1. In the **Visualizations** pane, select the **Table** icon to insert a new table.
 
@@ -366,7 +298,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
 
    :::image type="content" source="./media/translytical-task-flow-tutorial/report-4.png" alt-text="Screenshot that shows the Power BI report with a second table added to it.":::
 
-## Optional report modifications
+### Optional report modifications
 
 As with any Power BI report, there are many ways to customize the appearance and improve the functionality of this report. Consider some of these options:
 
@@ -374,7 +306,11 @@ As with any Power BI report, there are many ways to customize the appearance and
 * Set the text slicer to auto-clear after submitting a new product description. To do so, select the button that triggers the user data function. In the **Format button** > **Action** menu, set the **Auto clear** toggle to **On**.
 * Opt-out of auto-refresh for the report after triggering the user data function. In this scenario, it's helpful to refresh the data and see the new product description appear in the table. In other scenarios, you might not need or want to refresh the report. To turn off this setting, select the button that triggers the user data function. In the **Format button** > **Action** menu, set the **Refresh the report after a successful outcome** toggle to **Off**.
 
-## Publish your report
+## Run your translytical task flow
+
+You can test the functionality of your translytical task flow in Power BI Desktop. But if you want to see the most accurate end-user experience, publish the report to Power BI service and test it in the web.
+
+### Publish your report
 
 You built your report in Power BI Desktop. In this section, you publish the report so that your users can interact with it in the web portal.
 
@@ -395,7 +331,7 @@ You built your report in Power BI Desktop. In this section, you publish the repo
 
 Now, you have a translytical task flow in a Power BI report that's available in the Power BI service.
 
-## Run your translytical task flow
+### Run your translytical task flow
 
 In this section, you interact with your report in the Power BI web portal to test the translytical task flow that you built.
 
@@ -415,4 +351,8 @@ If anything goes wrong with the translytical task flow, you receive a message th
 * **Timeout error**: A function or process takes longer than the allowed time to complete.
 * **Improper setup**: Errors in configuring the report elements, usually the button, can cause the task flow to fail or product unexpected results.
 * **Unauthorized user**: The user doesn't have permissions to trigger the data function.
-  
+
+## Next steps
+
+* To get ideas for translytical task flows that you can incorporate into your workflows, see [Translytical task flow examples](https://gist.github.com/Sujata994/c354ec8d0821e875e45c86f2bd1d5cc8#AddAnnotation).
+* To learn more about options for integrating data function buttons into Power BI reports, see [Create a data function button in Power BI](./translytical-task-flow-button.md).

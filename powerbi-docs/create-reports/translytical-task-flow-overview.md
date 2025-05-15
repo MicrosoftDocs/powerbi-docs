@@ -40,7 +40,7 @@ If you already have a user data function that you want to connect to a Power BI 
 
 The next image shows the second step of this approval flow. An authorized decision maker sees the Teams post with the discount request. They select **Approve** and are taken to a Power BI report that shows them the relevant opportunities and the requested discount. They use a button slicer to select the discount ammount, a text slicer to add a comment, and then select the **Submit discount** button. This button takes the input and passes it back to the source data, updating the **Discount** column for all of the selected opportunities. The Power BI report refreshes, and now the updated discount amount is visible in the table.
 
-:::image type="content" source="./media/translytical-task-flow-overview/example-approve-discount.gif" alt-text="Animated gif that shows a user requesting a discount for opportunities found in a Power BI report, and that request surfacing as a Teams post." lightbox="./media/translytical-task-flow-overview/example-request-discount.gif":::
+:::image type="content" source="./media/translytical-task-flow-overview/example-request-discount.gif" alt-text="Animated gif that shows a user requesting a discount for opportunities found in a Power BI report, and that request surfacing as a Teams post." lightbox="./media/translytical-task-flow-overview/example-request-discount.gif":::
 
 ## Data write-back
 
@@ -48,9 +48,7 @@ Translytical task flows can enable data write-back so that end users can update,
 
 For example, the following Power BI report lets you modify the discount value seen in the table without ever leaving the report. When you enter the new value in the text slicer and select **Submit discount**, a Fabric User data function automatically updates the data source records that match the applied filters. 
 
-<!-- 
-:::image type="content" source="{source}" alt-text="Screenshot that shows a sample Power BI report that includes an interactive interface for modifying a data record.":::
--->
+:::image type="content" source="./media/translytical-task-flow-overview/example-write-back.gif" alt-text="Animated gif that shows a Power BI report that includes an interactive interface for modifying a data record." lightbox="./media/translytical-task-flow-overview/example-write-back.gif":::
 
 User data functions have native connection management for the following Fabric data sources:
 
@@ -61,15 +59,17 @@ User data functions have native connection management for the following Fabric d
 
 For most write-back scenarios, we recommend using SQL database as your underlying data source. SQL databases perform well with the heavy read/write operations required in reporting scenarios. To use SQL database, a tenant admin needs to [Enable SQL database in Fabric using admin portal tenant settings](/fabric/database/sql/enable).
 
+For working samples of user data functions, see [Translytical task flow examples](https://gist.github.com/Sujata994/c354ec8d0821e875e45c86f2bd1d5cc8).
+
 ## Custom automation
 
 Translytical task flows can also automate many tasks and even take actions in other systems using external APIs.
 
 For example, the following Power BI report lets you generate tailored AI suggestions for the influencers seen in the table using Azure OpenAI Responses API. When you select an influencer and then select **Generate AI Suggestion**, a Fabric User data function provides an Azure OpenAI response based on a fully customizable prompt.
 
-<!-- 
-:::image type="content" source="{source}" alt-text="Screenshot that shows a sample Power BI report that includes an interactive interface for making a call to Azure OpenAI API.":::
--->
+:::image type="content" source="./media/translytical-task-flow-overview/example-automation.gif" alt-text="Animated gif that shows a sample Power BI report that includes an interactive interface for making a call to Azure OpenAI API." lightbox="./media/translytical-task-flow-overview/example-automation.gif":::
+
+For working samples of user data functions, see [Translytical task flow examples](https://gist.github.com/Sujata994/c354ec8d0821e875e45c86f2bd1d5cc8).
 
 ## Required preview features
 
