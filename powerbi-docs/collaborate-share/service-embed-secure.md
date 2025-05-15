@@ -130,11 +130,11 @@ You can activate Copilot for secure web or portal embedded reports by selecting 
 
 1. From the **File** menu, select **Embed report**, then select **Website or portal**.
    
-   :::image type="content" source="./media/service-embed-secure/embed_report-menu.png" alt-text="Screenshot of selection of Embed Report menu and selection of Website or portal menu option.":::
+   :::image type="content" source="media/service-embed-secure/embed-report-menu.png" lightbox="media/service-embed-secure/embed-report-menu.png" alt-text="Screenshot of selection of Embed Report menu and selection of Website or portal menu option.":::
 
 1. Select the **Enable Copilot** checkbox.
 
-   :::image type="content" source="./media/service-embed-secure/embed-report-enable-copilot.png" alt-text="Screenshot of Embed dialog with Enable Copilot option checked.":::  
+   :::image type="content" source="media/service-embed-secure/embed-report-enable-copilot.png" lightbox="media/service-embed-secure/embed-report-enable-copilot.png" alt-text="Screenshot of Embed dialog with Enable Copilot option checked.":::  
 
 ## Considerations and limitations
 
