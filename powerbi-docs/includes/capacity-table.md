@@ -23,6 +23,6 @@ ms.custom: include file
 | F1024<sup>2</sup> |               1,024 | P5/A8             |              128 |
 | F2048<sup>2</sup> |               2,048 | N/A               |              N/A |
 
-<sup>1</sup> In the [Embed for your organization](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) (user owns data) scenario, SKUs that are smaller than F64 require a Pro or Premium Per User (PPU) license, or a Power BI individual trial to consume Power BI content.
+<sup>1</sup> In the Microsoft 365 or [Embed for your organization](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) (user owns data) scenario, SKUs that are smaller than F64 require a Pro or Premium Per User (PPU) license, or a Power BI individual trial to consume Power BI content.
 
 <sup>2</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
