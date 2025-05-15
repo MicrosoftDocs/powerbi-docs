@@ -25,7 +25,7 @@ Copilot lets you create insightful summaries about their reports. Copilot takes 
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-## Why summarize a report
+## Why summarize a report?
 
 When working with a Power BI report filled with visuals, users often spend anywhere from 30 minutes to several hours analyzing the data to understand key questions, insights, and high-level trends, especially when preparing summaries for leadership. This might involve digging through multiple pages of visuals, identifying patterns, noting anomalies, and drafting a narrative that explains what’s happening in the data and why it matters. Whether you're summarizing for an executive briefing, preparing talking points for a stakeholder meeting, or trying to get a quick grasp of the data to inform a business decision, the process can be time-consuming. 
 
