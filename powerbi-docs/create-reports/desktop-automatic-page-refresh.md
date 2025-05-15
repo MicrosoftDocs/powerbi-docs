@@ -227,7 +227,6 @@ There are a few things to keep in mind when you use automatic page refresh in Po
 * Import storage mode isn't supported for automatic page refresh, but open reports update automatically if the underlying semantic model is refreshed and the user has Write permissions. Refer to the [previous section](#impact-of-model-refresh-on-open-reports-when-using-import-mode) for situations when the refresh may become unreliable.
 * Composite models that have at least one DirectQuery data source are supported.
 * You can only have one change detection measure per semantic model.
-* There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 
 ### Performance diagnostics
 
