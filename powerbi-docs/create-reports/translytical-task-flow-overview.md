@@ -34,14 +34,6 @@ If you already have a user data function that you want to connect to a Power BI 
 >[!NOTE]
 >The translytical task flow feature is currently in public preview.
 
-## Examples
-
-
-
-The next image shows the second step of this approval flow. An authorized decision maker sees the Teams post with the discount request. They select **Approve** and are taken to a Power BI report that shows them the relevant opportunities and the requested discount. They use a button slicer to select the discount ammount, a text slicer to add a comment, and then select the **Submit discount** button. This button takes the input and passes it back to the source data, updating the **Discount** column for all of the selected opportunities. The Power BI report refreshes, and now the updated discount amount is visible in the table.
-
-:::image type="content" source="./media/translytical-task-flow-overview/example-request-discount.gif" alt-text="Animated gif that shows a user requesting a discount for opportunities found in a Power BI report, and that request surfacing as a Teams post." lightbox="./media/translytical-task-flow-overview/example-request-discount.gif":::
-
 ## Data write-back
 
 Translytical task flows can enable data write-back so that end users can update, add, or delete data in Fabric databases from within Power BI reports. Leveraging Fabric's user data functions, you can programmatically update, add, or delete records of data based on the filter context passed from the report. 
@@ -118,4 +110,4 @@ The following service limitations may also affect your translytical task flows:
 
 ## Next steps
 
-Try creating your own translytical task flow scenario: [Tutorial: Create a translytical task flow (preview)](./translytical-task-flow-create.md).
+Try creating your own translytical task flow scenario: [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md).
