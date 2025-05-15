@@ -14,21 +14,25 @@ ms.date: 04/08/2021
 
 You can add comments to reports, including Power BI reports, within the web portal of a report server. The comments live with the report, and anyone with the right permissions can see the comments for the report. See the [Permissions](#permissions) section below for details.
 
+>[!NOTE] 
+> As of June 2025 the comments feature is considered deprecated has been disabled by default in all versions of Reporting Services later than 2019 as well as Power BI Report Server. To enable the feature again please see the [Server properties advanced page](https://learn.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services).
+> The comments feature and will be removed completely in a future version of Power BI Report Server.
+
 ## Add or view comments
 
 1. Open a paginated or Power BI report on a report server.
-2. In the upper-right corner, select **Comments**.
+1. In the upper-right corner, select **Comments**.
 
     ![Select Comments](media/add-comments/report-server-web-portal-comments-button.png)
-
-    In the Comments pane, you can see any existing comments.
-3. Write your comment, then select **Post Comment**.
+   
+       In the Comments pane, you can see any existing comments.
+1. Write your comment, then select **Post Comment**.
 
     ![Post Comment](media/add-comments/report-server-web-portal-comments-pane.png)
+   
+       Your comment shows in the pane on the web portal, along with any previous comments. They don't appear with the report on in the Power BI mobile apps.
 
-    Your comment shows in the pane on the web portal, along with any previous comments. They don't appear with the report on in the Power BI mobile apps.
-
-   > [!TIP]
+      > [!TIP]
    > Did you know? You can [annotate Power BI reports in the Power BI mobile apps](../consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) and share the annotated reports with others.
 
 ## Permissions
