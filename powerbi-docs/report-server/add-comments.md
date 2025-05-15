@@ -24,14 +24,14 @@ You can add comments to reports, including Power BI reports, within the web port
 1. In the upper-right corner, select **Comments**.
 
 ![Select Comments](media/add-comments/report-server-web-portal-comments-button.png)
-   
+
 In the Comments pane, you can see any existing comments.
 
 
 3. Write your comment, then select **Post Comment**.
 
 ![Post Comment](media/add-comments/report-server-web-portal-comments-pane.png)
-   
+
 Your comment shows in the pane on the web portal, along with any previous comments. They don't appear with the report on in the Power BI mobile apps.
 
 > [!TIP]
