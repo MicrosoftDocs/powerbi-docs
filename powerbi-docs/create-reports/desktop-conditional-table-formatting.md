@@ -35,7 +35,7 @@ To remove conditional formatting from a visualization, select **Remove condition
 
 The following sections describe each conditional formatting option. You can combine more than one option in a single table column.
 
-### Format background or font color
+## Format background or font color
 
 Using conditional formatting for the font color or cell background in a table column enhances data readability and helps users quickly identify trends, outliers, or key insights. Formatting with specific colors applies distinct colors to predefined conditions or categories, making it easier to differentiate between discrete data points.
 
@@ -53,7 +53,7 @@ When you use the conditional formatting commands to open the **Background color*
 * [Color by rules](#color-by-rules).
 * [Color by field values](#color-by-color-values).
 
-#### Color by color scale
+### Color by color scale
 
 Formatting with a color scale provides a gradient that visually represents the range of values, helping users quickly understand the distribution and magnitude of data.
 
@@ -77,7 +77,7 @@ The example table with color scale font formatting on the **Affordability rank**
 
 ![Example table with Gradient color scale applied to font color.](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
 
-#### Color by rules
+### Color by rules
 
 You can create rules to format the cell background or font color in a table according to specific conditions that you define, making it easier to visually categorize and interpret data. You might use this feature, for example, to highlight sales performance by coloring cells green for values above a target threshold, yellow for values near the target, and red for values below the target.
 
@@ -97,7 +97,7 @@ An example table with rules-based background color formatting based on **Percent
 
 You can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. For matrices, *Values* will refer to the lowest visible level of the matrix hierarchy.
 
-#### Color by rules for percentages
+### Color by rules for percentages
 
 If the field that the formatting is based on contains percentages, write the numbers in the rules as decimals, which are the actual values. For example, ".25" instead of "25". Also, select **Number** instead of **Percent** for the number format. For example, "If value is greater than or equal to 0 Number and is less than .25 Number" returns values less than 25%.
 
@@ -110,7 +110,7 @@ In this example, the following table has a rules-based background color on the *
 > [!NOTE]
 > If you use **Percent** instead of **Number** for fields containing percentages, you might get unexpected results. In the above example, in a range of percent values from 21.73% to 44.36%, 50% of that range is 33%. You should use **Number** instead.
 
-#### Color by color values
+### Color by color values
 
 If you have a field or measure with color name or hex value data, you can use conditional formatting to automatically apply those colors to a column's background or font color. You can also use custom logic to apply colors to the font or background.
 
@@ -134,7 +134,7 @@ An example table with color field value-based **Background color** formatting on
 
 ![Example table with background formatting by field value applied.](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
 
-#### Color based on a calculation
+## Color based on a calculation
 
 You can create a calculation that outputs different values based on business logic conditions you select. Creating a formula is usually faster than creating multiple rules in the conditional formatting dialog.
 
@@ -154,7 +154,7 @@ The example table with **Affordability** background color based on calculated **
 
 You can create many more variations, just by using your imagination and some calculations.
 
-### Add data bars
+## Add data bars
 
 Data bars provide a visual representation of values directly within table or matrix cells, making it easier to compare data at a glance. The length of the bar corresponds to the value in the cell, offering an intuitive way to interpret numerical data.
 
@@ -170,7 +170,7 @@ With data bars applied to the **Affordability** column, the example table looks 
 
 ![Example table with data bars applied](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
 
-### Add icons
+## Add icons
 
 Icons are another conditional formatting option you can use to help users visually interpret and assess table data. You can choose from an assortment of styles and base the conditional formatting on rules that you create or base it on a field value.
 
@@ -184,7 +184,7 @@ With icons applied to the **Affordability** column by rules, the example table l
 
 ![Example table with icons applied](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
 
-### Format as web URLs
+## Format as web URLs
 
 If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as active links. For example, the following table has a **Website** column with website URLs for each state:
 
@@ -202,7 +202,7 @@ With **Web URL** formatting applied to the **State** field, each state name is a
 
 For more on formatting URLs in a table, see [Add hyperlinks (URLs) to a table or matrix](power-bi-hyperlinks-in-tables.md).
 
-### Color code based on text
+## Color code based on text
 
 Unlike in Excel, you can't color code text values to display as a particular color, such as "Accepted"=blue, "Declined"=red, "None"=grey. You create measures related to these values and apply formatting based on those instead.
 
