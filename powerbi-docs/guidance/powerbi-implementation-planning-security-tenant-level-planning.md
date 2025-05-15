@@ -67,14 +67,14 @@ When you plan which users should be Fabric administrators, key decisions and act
 
 ## Security and privacy strategies
 
-You will make tenant-level decisions that relate to security and privacy. The tactics you take and the decisions you make are based on these factors:
+You'll make tenant-level decisions that relate to security and privacy. The tactics you take and the decisions you make are based on these factors:
 
 - Your [data culture](fabric-adoption-roadmap-data-culture.md). The goal is to encourage a data culture that understands that security and protection of data is everyone's responsibility.
 - Your [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) strategies. The level of centralized and decentralized content management significantly affects how you implement security.
 - Your [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) strategies. The number of people who view content influences how you need to handle security for the content.
 - Your requirements to comply with global, national/regional, and industry regulations.
 
-The following list includes a few examples of high-level security strategies. You might choose to make decisions that affect the entire organization.
+The following list includes a few examples of high-level security strategies. Some strategies affect the entire organization.
 
 - **Requirements for row-level security**: You can use row-level security (RLS) to restrict data access for specific users. Different users see different data when they access the same report. A Power BI semantic model or a data source (if you use single sign-on) can enforce RLS. For more information, see the _Enforce data security based on consumer identity_ section in [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity).
 - **Data discoverability**: Determine the extent to which data discoverability should be encouraged in Power BI. Discoverability affects who can find semantic models or datamarts in the [OneLake catalog](/fabric/governance/onelake-catalog), and whether content authors are allowed to request access to those items by using the _Request access_ workflow. For more information, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
@@ -85,7 +85,7 @@ The following list includes a few examples of high-level security strategies. Yo
 > [!IMPORTANT]
 > When you consider network isolation, work with your IT infrastructure and networking teams before you change any Fabric tenant settings. Azure Private Link allows enhanced _inbound_ security through private endpoints. An Azure virtual network gateway allows enhanced _outbound_ security to connect to data sources. An Azure virtual network gateway is Microsoft-managed rather than customer-managed, so it eliminates the overhead of installing and monitoring on-premises gateways.
 
-Some of your organization-level decisions will result in firm governance policies, particularly when they relate to compliance. Other organization-level decisions might result in guidance that you can provide to content creators who are responsible for managing and securing their own content. The resulting policies and guidelines should be included in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal), [training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training) materials, and [communication plan](fabric-adoption-roadmap-community-of-practice.md#communication-plan).
+Some of your organization-level decisions result in firm governance policies, especially as they relate to compliance. Other organization-level decisions might result in guidance that you can provide to content creators who are responsible for managing and securing their own content. The resulting policies and guidelines should be included in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal), [training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training) materials, and [communication plan](fabric-adoption-roadmap-community-of-practice.md#communication-plan).
 
 > [!TIP]
 > See the other articles in this series for more suggestions that relate to security planning for [report consumers](powerbi-implementation-planning-security-report-consumer-planning.md) and [content creators](powerbi-implementation-planning-security-content-creator-planning.md).
@@ -142,19 +142,21 @@ When you identify needs for Microsoft Entra integration, key decisions and actio
 Power BI supports [Microsoft Entra Business-to-Business (B2B)](/azure/active-directory/external-identities/what-is-b2b). External users, for instance from a customer or partner company, can be invited as guest users in Microsoft Entra ID for collaboration purposes. External users can work with Power BI and many other Azure and Microsoft 365 services.
 
 > [!IMPORTANT]
-> The [Microsoft Entra B2B white paper](whitepaper-azure-b2b-power-bi.md) is the best resource for learning about strategies for handling external users. This article is limited to describing the most important considerations that are relevant to planning.
+> To learn about strategies for handling external users, we recommend the [Microsoft Entra B2B white paper](whitepaper-azure-b2b-power-bi.md).
+>
+>This article is limited to describing only critical considerations that are relevant to planning.
 
-There are advantages when an external user is from another organization that also has Microsoft Entra ID set up.
+It's ideal if an external user is from another organization that also has Microsoft Entra ID:
 
 - **Home tenant manages the credentials**: The user's home tenant stays in control of their identity and management of credentials. You don't need to synchronize identities.
-- **Home tenant manages the user's status**: When a user leaves that organization and the account is removed or disabled, with immediate effect, the user no longer has access to your Power BI content. It's a significant advantage because you might not know when someone leaves their organization.
-- **Flexibility for user licensing**: There are cost-effective [licensing options](whitepaper-azure-b2b-power-bi.md#licensing). An external user may already have a Power BI Pro or PPU license, in which case you don't need to assign one to them. It's also possible to grant them access to content in a Premium capacity or Fabric F64 or greater capacity workspace by assigning a Fabric (free) license to them.
+- **Home tenant manages the user's status**: When a user leaves that organization and the account is removed or disabled, the user immediately no longer has access to your Power BI content. It's a substantial advantage because you might not know when someone leaves their organization.
+- **Flexibility for user licensing**: You have cost-effective [licensing options](whitepaper-azure-b2b-power-bi.md#licensing). An external user might already have a Power BI Pro or PPU license. In that scenario, you don't need to assign one to them. It's also possible to grant them access to content in a Premium capacity or a Fabric F64 or greater capacity workspace by assigning a Fabric (free) license to them.
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ### Key settings
 
-There are two aspects to enabling and managing how external user access will work:
+You have two options for enabling and managing how external user access works:
 
 - [Microsoft Entra settings](whitepaper-azure-b2b-power-bi.md#additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-microsoft-entra-b2b) that are managed by a Microsoft Entra administrator. These Microsoft Entra settings are a prerequisite.
 - [Fabric tenant settings](/fabric/admin/service-admin-portal-export-sharing) that are managed by a Power BI administrator in the admin portal. These settings will control the user experience in the Power BI service.
