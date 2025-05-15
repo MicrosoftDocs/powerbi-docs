@@ -53,7 +53,7 @@ When you use the conditional formatting commands to open the **Background color*
 * [Color by rules](#color-by-rules).
 * [Color by field values](#color-by-color-values).
 
-### Color by color scale
+## Color by color scale
 
 Formatting with a color scale provides a gradient that visually represents the range of values, helping users quickly understand the distribution and magnitude of data.
 
@@ -77,7 +77,7 @@ The example table with color scale font formatting on the **Affordability rank**
 
 ![Example table with Gradient color scale applied to font color.](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
 
-### Color by rules
+## Color by rules
 
 You can create rules to format the cell background or font color in a table according to specific conditions that you define, making it easier to visually categorize and interpret data. You might use this feature, for example, to highlight sales performance by coloring cells green for values above a target threshold, yellow for values near the target, and red for values below the target.
 
@@ -97,7 +97,7 @@ An example table with rules-based background color formatting based on **Percent
 
 You can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. For matrices, *Values* will refer to the lowest visible level of the matrix hierarchy.
 
-### Color by rules for percentages
+## Color by rules for percentages
 
 If the field that the formatting is based on contains percentages, write the numbers in the rules as decimals, which are the actual values. For example, ".25" instead of "25". Also, select **Number** instead of **Percent** for the number format. For example, "If value is greater than or equal to 0 Number and is less than .25 Number" returns values less than 25%.
 
@@ -110,7 +110,7 @@ In this example, the following table has a rules-based background color on the *
 > [!NOTE]
 > If you use **Percent** instead of **Number** for fields containing percentages, you might get unexpected results. In the above example, in a range of percent values from 21.73% to 44.36%, 50% of that range is 33%. You should use **Number** instead.
 
-### Color by color values
+## Color by color values
 
 If you have a field or measure with color name or hex value data, you can use conditional formatting to automatically apply those colors to a column's background or font color. You can also use custom logic to apply colors to the font or background.
 
