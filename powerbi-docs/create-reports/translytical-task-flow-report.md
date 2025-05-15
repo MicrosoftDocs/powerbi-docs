@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 # Tutorial: Build a Power BI report with a translytical task flow (preview)
 
-In part two of this end-to-end scenario, you create a Power BI report that includes a user data function to write back to a SQL database.
+In part two of this end-to-end tutorial, you create a Power BI report that includes a user data function to write back to a SQL database.
 
 In this tutorial, you learn how to:
 
@@ -22,6 +22,9 @@ In this tutorial, you learn how to:
 > * Enable preview features in Power BI.
 > * Create a Power BI report that integrates with a translytical task flow.
 > * Run and test the report.
+
+>[!NOTE]
+>The translytical task flow feature is currently in public preview.
 
 ## Prerequisites
 
@@ -31,6 +34,8 @@ In this tutorial, you learn how to:
 ## Create a Power BI report and connect the data source
 
 In this section, you create a Power BI report that pulls data from the SQL database you created in the previous article.
+
+<!-- OneLake catalog -> Sql DB (preview) -> -->
 
 1. In Power BI Desktop, create a new report.
 1. Select **Get data** > **More...**.
@@ -89,8 +94,6 @@ In this section, build visuals with the data that you loaded into your Power BI 
 
    :::image type="content" source="./media/translytical-task-flow-report/report-3.png" alt-text="Screenshot that shows the Power BI report with a button added to it.":::
 
-1. Select the button and expand the **Style** options in the **Format button** pane. Turn the **Text** radio button to **On** and label your button `Enter`.
-
 1. Select the button and expand the **Action** options in the **Format button** pane. Turn the **Action** radio button to **On**.
 
 1. Provide the following values for your button:
@@ -118,6 +121,10 @@ In this section, build visuals with the data that you loaded into your Power BI 
 1. Select **OK** to complete the action configuration. The **Action** details should look like the following example:
 
    :::image type="content" source="./media/translytical-task-flow-report/button-action.png" alt-text="Screenshot that shows the final action configuration details.":::
+
+1. Select the button and expand the **Style** options in the **Format button** pane. Turn the **Text** radio button to **On** and label your button `Enter`.
+
+<!-- Adjust style for the loading state. Change the text ("submitting"), change the spinner size (icon size -> 20; left padding -> 20px) -->
 
 1. In the **Visualizations** pane, select the **Table** icon to insert a new table.
 

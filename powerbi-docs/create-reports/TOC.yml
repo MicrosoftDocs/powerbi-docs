@@ -158,12 +158,8 @@
       items: 
         - name: Understand translytical task flows
           href: translytical-task-flow-overview.md
-        - name: Try an end-to-end scenario  
-          items:
-          - name: Create a translytical task flow
-            href: translytical-task-flow-create.md
-          - name: Build a report with data write-back
-            href: translytical-task-flow-report.md
+        - name: Translytical task flow tutorial
+          href: translytical-task-flow-tutorial.md
         - name: Create data function buttons
           href: translytical-task-flow-button.md
     - name: Create drillthrough buttons
