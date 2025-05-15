@@ -15,7 +15,7 @@ ms.date: 05/15/2025
 You can add comments to reports, including Power BI reports, within the web portal of a report server. The comments live with the report, and anyone with the right permissions can see the comments for the report. See the [Permissions](#permissions) section below for details.
 
 >[!NOTE] 
-> As of June 2025 the comments feature is considered deprecated has been disabled by default in all versions of Reporting Services later than 2019 as well as Power BI Report Server. To enable the feature again please see the [Server properties advanced page](../../../../sql/reporting-services/tools/server-properties-advanced-page-reporting-services).
+> As of June 2025 the comments feature is considered deprecated has been disabled by default in all versions of Reporting Services later than 2019 as well as Power BI Report Server. To enable the feature again please see the [Server properties advanced page](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services) to find the controlling property.
 > The comments feature and will be removed completely in a future version of Power BI Report Server.
 
 ## Add or view comments
