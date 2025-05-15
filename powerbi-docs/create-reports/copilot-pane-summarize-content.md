@@ -52,7 +52,7 @@ Or you can select other prompts from the user prompt guide in the lower left-han
 
 After you choose a prompt, select **Enter** and watch Copilot generate your summary.
  
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png" alt-text="Screenshot showing and updated view of the report summary response." lightbox="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png":::
 
 Copilot uses Azure Open AI to look at the visual metadata on the report and create a natural language summary. It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that aren't currently applied. By default, Copilot summarizes visuals across the entire report. You can adjust the scope of the summary by specifying the prompt.
 
