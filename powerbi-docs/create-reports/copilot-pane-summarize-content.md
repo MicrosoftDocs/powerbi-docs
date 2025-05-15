@@ -54,7 +54,7 @@ After you choose a prompt, select **Enter** and watch Copilot generate your summ
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png" alt-text="Screenshot showing and updated view of the report summary response." lightbox="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png":::
 
-Copilot uses Azure Open AI to look at the visual metadata on the report and create a natural language summary. It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that aren't currently applied. By default, Copilot summarizes visuals across the entire report. You can adjust the scope of the summary by specifying the prompt.
+Copilot uses Azure OpenAI to look at the visual metadata on the report and create a natural language summary. It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that aren't currently applied. By default, Copilot summarizes visuals across the entire report. You can adjust the scope of the summary by specifying the prompt.
 
 ## Citations
 
@@ -125,7 +125,7 @@ You can even hover over some of the additional visual citations that aren't rend
 
 In this immersive experience, you can also dive deeper into the visuals provided to continue your analysis - another key difference from the Copilot pane in the report view. Use the **Explore** buttons under the visuals to open them in a format that supports deeper exploration, allowing you to slice, dice, and interact with the data more directly.
 
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png" alt-text="Screenshot showing what happens wehn users explore in the full immersive summary in Copilot." lightbox="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png" alt-text="Screenshot showing what happens when users explore in the full immersive summary in Copilot." lightbox="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png":::
 
 ## Best practices
 
