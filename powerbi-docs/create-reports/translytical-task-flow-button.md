@@ -7,7 +7,7 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/14/2025
+ms.date: 05/16/2025
 LocalizationGroup: Create reports
 #customer intent:
 ---
@@ -78,7 +78,7 @@ Create a data function button and configure it to connect report elements or use
 1. In the **Format button** pane, expand the **Action** menu. Toggle the **Action** switch to **On** if it isn't already.
 1. From the **Type** dropdown menu, select **Data function**.
 
-   Once you select the data function option, the following additional parameters appear: **Workspace**, **Function set**, and **Data function**.
+   Once you select the data function option, the following parameters appear: **Workspace**, **Function set**, and **Data function**.
 
    >[!TIP]
    >If you don't see the **Data function** option, make sure that the **Translytical task flows** preview feature is enabled in Power BI desktop.
@@ -94,7 +94,7 @@ Create a data function button and configure it to connect report elements or use
    >[!TIP]
    >If you don't see the user data function that you want to use, make sure that your data function returns a string.
 
-1. Once you select your data function, additional parameters appear to represent the parameters that the function takes. For each parameter, you can either: 
+1. Once you select your data function, other parameters appear to represent the parameters that the function takes. For each parameter, you can either: 
 
    * Use the dropdown menu to select a slicer from your report.
    * Select the **Conditional formatting** (**fx**) button to select a data field or measure from your report. 

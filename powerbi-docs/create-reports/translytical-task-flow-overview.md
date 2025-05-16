@@ -7,7 +7,7 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: concept-article
-ms.date: 05/14/2025
+ms.date: 05/16/2025
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user, I want to learn how to create reports that allow readers to edit the data source so that end users have interactive access to their data.
 ---
@@ -23,20 +23,22 @@ With translytical task flows, you can automate end-user actions like updating re
 
 Translytical task flows work by using [user data functions in Fabric](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to invoke functions on the underlying Fabric data sources.
 
-The following image shows a Power BI report showing sales opportunities. The user has filtered the table to display only high-risk high-quantity opportunities with limited time windows. Using text slicers, the user requests a 10% discount for these opportunities and justifies the request in a comment field. Once they select the **Request discount** button, the input from the table and the text fields are passed to a user data function. The function posts a message in Teams with the details so that the request can be approved or rejected.
+The following image shows a Power BI report showing sales opportunities. The user filtered the table to display only high-risk high-quantity opportunities with limited time windows. The user requests a 10% discount for these opportunities and justifies the request in a comment field. Once they select the **Request discount** button, the input from the table and the text fields are passed to a user data function. The function posts a message in Teams with the details so that the request can be approved or rejected.
 
 :::image type="content" source="./media/translytical-task-flow-overview/example-request-discount.gif" alt-text="Animated gif that shows a user requesting a discount for opportunities found in a Power BI report, and that request surfacing as a Teams post." lightbox="./media/translytical-task-flow-overview/example-request-discount.gif":::
 
-If you want to follow a step-by-step tutorial to build your first translytical task flow, see [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md).
+Ready to get started?
 
-If you already have a user data function that you want to connect to a Power BI report, see [Create a data function button in Power BI](./translytical-task-flow-button.md).
+* If you want to follow an end-to-end tutorial to build your first translytical task flow, see [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md). This tutorial guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report with a data function button.
+
+* If you already have a user data function that you want to connect to a Power BI report, see [Create a data function button in Power BI](./translytical-task-flow-button.md).
 
 >[!NOTE]
 >The translytical task flow feature is currently in public preview.
 
 ## Data write-back
 
-Translytical task flows can enable data write-back so that end users can update, add, or delete data in Fabric databases from within Power BI reports. Leveraging Fabric's user data functions, you can programmatically update, add, or delete records of data based on the filter context passed from the report. 
+Translytical task flows can enable data write-back so that end users can update, add, or delete data in Fabric databases from within Power BI reports. Using Fabric's user data functions, you can programmatically update, add, or delete records of data based on the filter context passed from the report. 
 
 For example, the following Power BI report lets you modify the discount value seen in the table without ever leaving the report. When you enter the new value in the text slicer and select **Submit discount**, a Fabric User data function automatically updates the data source records that match the applied filters. 
 
@@ -57,7 +59,7 @@ For working samples of user data functions, see [Translytical task flow examples
 
 Translytical task flows can also automate many tasks and even take actions in other systems using external APIs.
 
-For example, the following Power BI report lets you generate tailored AI suggestions for the influencers seen in the table using Azure OpenAI Responses API. When you select an influencer and then select **Generate AI Suggestion**, a Fabric User data function provides an Azure OpenAI response based on a fully customizable prompt.
+For example, the following Power BI report lets you generate tailored AI suggestions for the influencers seen in the table using Azure OpenAI Responses API. When you select an influencer and then select **Generate AI Suggestion**, a Fabric user data function provides an Azure OpenAI response based on a fully customizable prompt.
 
 :::image type="content" source="./media/translytical-task-flow-overview/example-automation.gif" alt-text="Animated gif that shows a sample Power BI report that includes an interactive interface for making a call to Azure OpenAI API." lightbox="./media/translytical-task-flow-overview/example-automation.gif":::
 
@@ -93,21 +95,23 @@ The following steps require tenant admin access:
 1. Find the **User data functions (preview)** item and expand it.
 1. Select the toggle to switch the feature to **Enabled**.
 
-It may take a few hours for this change to take effect across the tenant.
+It might take a few hours for this change to take effect across the tenant.
 
 ## Limitations
 
 Currently, the following limitations apply to translytical task flows:
 
-* Only the new preview slicers (button slicer, list slicer, and text slicer) are automatically recognized as input controls for function parameters. If you need to use old slicers, you need to create a DAX measure to reference those inputs.
+* Only the new preview slicers (button slicer, list slicer, and text slicer) are automatically recognized as input controls for function parameters. If you need to use old slicers, you need to create a data analysis expression (DAX) measure to reference those inputs.
 * PBIR (Power BI enhanced report) and PBIP (Power BI Project) formats aren't supported.
 * Power BI embed isn't supported.
 
-The following service limitations may also affect your translytical task flows:
+The following service limitations can also affect your translytical task flows:
 
 * [Service details and limitations of Fabric user data functions](/fabric/data-engineering/user-data-functions/user-data-functions-service-limits)
 * [Limitations in SQL database in Microsoft Fabric](/fabric/database/sql/limitations)
 
 ## Next steps
 
-Try creating your own translytical task flow scenario: [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md).
+* If you want to follow an end-to-end tutorial to build your first translytical task flow, see [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md). This tutorial guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report with a data function button.
+
+* If you already have a user data function that you want to connect to a Power BI report, see [Create a data function button in Power BI](./translytical-task-flow-button.md).
