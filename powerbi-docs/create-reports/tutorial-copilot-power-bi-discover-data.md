@@ -15,6 +15,9 @@ ms.date: 05/06/2025
 
 # Copilot in Power BI tutorial: Discover data and ask questions
 
+> [!IMPORTANT]
+> The features mentioned in this tutorial are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
+
 In this tutorial, you leverage natural language inputs to get insights. You learn to:
 
 > [!div class="checklist"]

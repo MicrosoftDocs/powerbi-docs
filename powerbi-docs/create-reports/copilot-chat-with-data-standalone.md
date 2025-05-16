@@ -17,6 +17,9 @@ ms.collection: ce-skilling-ai-copilot
 > [!IMPORTANT]
 > This feature is in preview.
 
+> [!IMPORTANT]
+> The features mentioned on this page are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
+
 Copilot in Power BI is available as a full-screen, standalone Copilot experience that finds and answers questions about any report, semantic model, and Fabric data agent they have access to. This experience is different from the Copilot pane, which only answers questions about the report you currently have open.
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-screen.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a chat interface for interacting with data." lightbox="media/copilot-introduction/copilot-standalone-screen.png":::

@@ -11,6 +11,9 @@ metadata:
   ms.date: 05/12/2025
 title: Frequently asked questions about preparing data for AI
 summary: |
+    > [!IMPORTANT]
+    > The features mentioned on this page are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
+
 sections:
   - name: Tooling features
     questions:
