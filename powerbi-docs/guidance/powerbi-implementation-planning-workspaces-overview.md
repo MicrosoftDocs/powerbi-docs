@@ -1,5 +1,5 @@
 ---
-title: "Power BI Implementation Planning: Workspaces"
+title: "Power BI Workspaces Planning"
 description: "Get an introduction to articles about Power BI workspace planning."
 author: denglishbi
 ms.author: daengli
@@ -26,7 +26,7 @@ Proper workspace planning is an integral part of making an implementation succes
 Fundamentally, a [workspace](/fabric/get-started/workspaces) is a container in the Fabric portal for storing and securing content. Primarily, workspaces are designed for content creation and collaboration.
 
 > [!NOTE]
-> The concept of a workspace originated in Power BI. With Fabric, the purpose of a workspace has become broader. The result is that a workspace can now contain items from one or more different [Fabric experiences](/fabric/get-started/fabric-terminology) (also known as workloads). Even though the content scope has become broader than Power BI, most of the workspace planning activities described in these articles can be applied to Fabric workspace planning.
+> The concept of a workspace originated in Power BI. With Fabric, the purpose of a workspace became broader. The result is that a workspace can now contain items from one or more different [Fabric experiences](/fabric/get-started/fabric-terminology) (also known as workloads). Even though the content scope is broader than in Power BI, most of the workspace planning activities described in these articles can be applied to Fabric workspace planning.
 
 The workspace planning content is organized in the following articles:
 
