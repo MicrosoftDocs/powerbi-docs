@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 # Find content with Power BI Copilot search
 
 > [!IMPORTANT]
-> The features mentioned on this page are currently in development for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
+> The features mentioned on this page are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
 
 As colleagues share Power BI content with you, you might find yourself having access to an extensive list of content. It can be difficult to recall specific items that you want to navigate back to in order to get an answer to your data question.
 

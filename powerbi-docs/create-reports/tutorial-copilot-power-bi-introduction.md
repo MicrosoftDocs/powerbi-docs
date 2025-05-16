@@ -16,7 +16,7 @@ ms.date: 05/06/2025
 # Copilot in Power BI tutorial introduction
 
 > [!IMPORTANT]
-> The features mentioned in this tutorial are now available in Power BI Desktop and are currently in development for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
+> The features mentioned in this tutorial are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
 
 This article introduces you to how Copilot in Power BI supports enterprise developers, self-service users, and business users and provides information on integration points and the different experiences designed for creating and consuming content using Copilot.
 

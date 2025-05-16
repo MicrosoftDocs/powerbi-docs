@@ -16,7 +16,7 @@ ms.date: 05/06/2025
 # Copilot in Power BI tutorial: Explore data and get more insights
 
 > [!IMPORTANT]
-> The features mentioned in this tutorial are now available in Power BI Desktop and are currently in development for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
+> The features mentioned in this tutorial are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
 
 In this tutorial, you explore your data using an AI assistant. You learn to:
 
