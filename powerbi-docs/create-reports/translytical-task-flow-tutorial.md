@@ -168,14 +168,14 @@ Use the steps in this section if you want to test the sample code so far.
    * **productModelId**: integer between 1 and 127
 
 1. Select **Run**.
-1. Review the function output as well as the generated logs.
+1. Review the function output and the generated logs.
 1. Close the **Run** page when you're done testing.
 
 If you get any errors when running the sample code, check that your account has access permissions to the database.
 
 ### Grant user permissions (optional)
 
-If other users will interact with the Power BI report that calls this function, grant them **Execute functions** permissions.
+If other users interact with the Power BI report that calls this function, grant them **Execute functions** permissions.
 
 1. On the functions page, select **Share**.
 1. Select the first box of the **Create and send link** pop-up window.
@@ -263,7 +263,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
    >
    >If you do see the **Data function** option but don't see your user data function, make sure that your data function returns a string.
 
-1. Once you select your data function, additional parameters appear to represent the parameters that the function takes. Provide the following values:
+1. Once you select your data function, more parameters appear to represent the parameters that the function takes. Provide the following values:
 
    | Parameter | Value |
    | --------- | ----- |
@@ -311,8 +311,8 @@ In this section, build visuals with the data that you loaded into your Power BI 
 As with any Power BI report, there are many ways to customize the appearance and improve the functionality of this report. Consider some of these options:
 
 * Add titles to the two tables. For example, **Select a product** and **Product description**.
-* Set the text slicer to auto-clear after submitting a new product description. To do so, select the button that triggers the user data function. In the **Format button** > **Action** menu, set the **Auto clear** toggle to **On**.
-* Opt-out of auto-refresh for the report after triggering the user data function. In this scenario, it's helpful to refresh the data and see the new product description appear in the table. In other scenarios, you might not need or want to refresh the report. To turn off this setting, select the button that triggers the user data function. In the **Format button** > **Action** menu, set the **Refresh the report after a successful outcome** toggle to **Off**.
+* Set the text slicer to autoclear after submitting a new product description. To do so, select the button that triggers the user data function. In the **Format button** > **Action** menu, set the **Auto clear** toggle to **On**.
+* Opt-out of autorefresh for the report after triggering the user data function. In this scenario, it's helpful to refresh the data and see the new product description appear in the table. In other scenarios, you might not need or want to refresh the report. To turn off this setting, select the button that triggers the user data function. In the **Format button** > **Action** menu, set the **Refresh the report after a successful outcome** toggle to **Off**.
 
 ## Run your translytical task flow
 
@@ -348,7 +348,7 @@ Only users that are authorized to trigger data functions can use this feature. A
 1. Open your report in Power BI.
 1. Select a product from the product table that lists the name and ID. This selection passes context to the text slicer for which product you want to update. You also see that the product description table filters to show all of the current descriptions for the selected product.
 1. Write a new product description in the input text box.
-1. Select the arrow icon or use the **Tab** key to submit the input. Once a product is selected an a description is provided, you see that the button switches to an enabled state.
+1. Select the arrow icon or use the **Tab** key to submit the input. Once a product is selected and a description is provided, you see that the button switches to an enabled state.
 1. Select the button to run the user data function.
 
 If the translytical task flow worked correctly, you receive a message that says **The action on your report was submitted successfully**. The product description table refreshes to show the new description.
