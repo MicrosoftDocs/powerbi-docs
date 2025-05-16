@@ -71,6 +71,30 @@ Autocomplete is built into the code editor, and offers intelligent suggestions w
 
 You can also trigger the autocomplete feature in any location by pressing *Ctrl+Space*.
 
+### Tooltips
+
+The context tooltip shows on mouse hover, providing information about each TMDL object or property.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-20.png" alt-text="Screenshot of a context tooltip shown on mouse hover in the code editor, displaying information about a TMDL object or property.":::
+
+### Code actions
+
+When the cursor is on a squiggle or selected text, the TMDL view displays a light bulb icon indicating available Code Actions, such as generating lineage tags or correcting property name misspellings.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-21.png" alt-text="Screenshot of the TMDL view in the code editor showing a light bulb icon next to a squiggle, indicating available Code Actions like generating lineage tags or correcting property name misspellings.":::
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-22.png" alt-text="Screenshot of the TMDL view in the code editor showing a light bulb icon next to a squiggle, indicating available Code Actions like generating lineage tags or correcting property name misspellings.":::
+
+### Code formatting
+
+Format your TMDL code by pressing Shift + Alt + F or by clicking the Format option in the ribbon.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-23.png" alt-text="Screenshot of the code editor with TMDL code being formatted using the Format option in the ribbon.":::
+
+You can also format selected text using the "Format Selection" option in the context menu.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-24.png" alt-text="Screenshot of the code editor with TMDL code being formatted the Shift + Alt + F keyboard shortcut.":::
+
 ### Error diagnostics
 
 The code editor's built-in error diagnostics help you identify and fix issues by highlighting TMDL language errors in the code editor, with detailed messages that provide guidance on resolving them. Additionally, an error summary is available in the **Problems pane**, allowing easy navigation to the error location in the code editor, as shown in the following image.
