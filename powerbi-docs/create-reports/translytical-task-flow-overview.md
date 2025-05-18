@@ -23,10 +23,6 @@ With translytical task flows, you can automate end-user actions like updating re
 
 Translytical task flows work by using [user data functions in Fabric](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to invoke functions on the underlying Fabric data sources.
 
-The following image shows a Power BI report showing sales opportunities. The user filtered the table to display only high-risk high-quantity opportunities with limited time windows. The user requests a 10% discount for these opportunities and justifies the request in a comment field. Once they select the **Request discount** button, the input from the table and the text fields are passed to a user data function. The function posts a message in Teams with the details so that the request can be approved or rejected.
-
-:::image type="content" source="./media/translytical-task-flow-overview/example-request-discount.gif" alt-text="Animated gif that shows a user requesting a discount for opportunities found in a Power BI report, and that request surfacing as a Teams post." lightbox="./media/translytical-task-flow-overview/example-request-discount.gif":::
-
 Ready to get started?
 
 * If you want to follow an end-to-end tutorial to build your first translytical task flow, see [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md). This tutorial guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report with a data function button.
@@ -59,9 +55,9 @@ For working samples of user data functions, see [Translytical task flow examples
 
 Translytical task flows can also automate many tasks and even take actions in other systems using external APIs.
 
-For example, the following Power BI report lets you generate tailored AI suggestions for the influencers seen in the table using Azure OpenAI Responses API. When you select an influencer and then select **Generate AI Suggestion**, a Fabric user data function provides an Azure OpenAI response based on a fully customizable prompt.
+For example, the following Power BI report shows sales opportunities. The user filtered the table to display only high-risk high-quantity opportunities with limited time windows. The user requests a 10% discount for these opportunities and justifies the request in a comment field. Once they select the **Request discount** button, the input from the table and the text fields are passed to a user data function. The function posts a message in Teams with the details so that the request can be approved or rejected.
 
-:::image type="content" source="./media/translytical-task-flow-overview/example-automation.gif" alt-text="Animated gif that shows a sample Power BI report that includes an interactive interface for making a call to Azure OpenAI API." lightbox="./media/translytical-task-flow-overview/example-automation.gif":::
+:::image type="content" source="./media/translytical-task-flow-overview/example-request-discount.gif" alt-text="Animated gif that shows a user requesting a discount for opportunities found in a Power BI report, and that request surfacing as a Teams post." lightbox="./media/translytical-task-flow-overview/example-request-discount.gif":::
 
 For working samples of user data functions, see [Translytical task flow examples](https://gist.github.com/Sujata994/c354ec8d0821e875e45c86f2bd1d5cc8).
 

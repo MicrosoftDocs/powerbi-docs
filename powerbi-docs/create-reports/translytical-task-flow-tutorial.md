@@ -228,7 +228,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
 
    A two-column table appears in your report window.
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/report-1.png" alt-text="Screenshot that shows the Power BI report with one table added to it.":::
+   :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-table.png" alt-text="Screenshot that shows the Power BI report with one table added to it.":::
 
 1. In the **Visualizations** menu, select the **Text slicer** icon.
 
@@ -239,13 +239,13 @@ In this section, build visuals with the data that you loaded into your Power BI 
 
    A text slicer visual appears in your report window.
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/report-2.png" alt-text="Screenshot that shows the Power BI report with a text slicer added to it.":::
+   :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-slicer.png" alt-text="Screenshot that shows the Power BI report with a text slicer added to it.":::
 
 1. Select the text slicer and use the **Format visual** > **General** > **Title** options to give the text slicer the following title: `Write a new product description`.
 
 1. On the taskbar, select the **Insert** menu and add a **Blank** button to the report. Drag the button under the text slicer.
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/report-3.png" alt-text="Screenshot that shows the Power BI report with a button added to it.":::
+   :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-button.png" alt-text="Screenshot that shows the Power BI report with a button added to it.":::
 
 1. Select the button and expand the **Action** options in the **Format button** pane. Turn the **Action** radio button to **On**.
 
@@ -304,7 +304,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
    * `SalesLT.ProductDescription` > `Description`
    * `SalesLT.ProductDescription` > `ModifiedDate`
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/report-4.png" alt-text="Screenshot that shows the Power BI report with a second table added to it.":::
+   :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-second-table.png" alt-text="Screenshot that shows the Power BI report with a second table added to it.":::
 
 ### Optional report modifications
 
