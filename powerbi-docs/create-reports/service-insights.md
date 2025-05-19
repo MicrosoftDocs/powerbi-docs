@@ -1,8 +1,8 @@
 ---
 title: Generate data insights on your semantic model automatically
 description: Learn how to get insights about your semantic models and dashboard tiles.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: video-et_MLSL2sA8
 ms.service: powerbi

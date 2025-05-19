@@ -1,8 +1,8 @@
 ---
 title: Protect your scorecards with goal-level permissions
 description: Set up goal-level permissions.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: 'cnews'
 featuredvideoid: ''
 ms.service: powerbi

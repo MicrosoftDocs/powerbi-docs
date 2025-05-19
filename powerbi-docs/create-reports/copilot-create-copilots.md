@@ -1,8 +1,8 @@
 ---
 title: Build your own Copilot solution accelerator for your coworkers
 description: Read about how to create Copilots in Power BI for your coworkers.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -1,8 +1,8 @@
 ---
 title: Create subgoals in the Power BI service
 description: Subgoals make scorecards more readable by collecting related goals together under a single parent goal.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
