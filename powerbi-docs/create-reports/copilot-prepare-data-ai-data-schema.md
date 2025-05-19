@@ -17,7 +17,7 @@ ms.collection: ce-skilling-ai-copilot
 # Prepare your data for AI - AI data schema
 
 > [!IMPORTANT]
-> The features mentioned on this page are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
+> The features mentioned on this page are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
 
 An AI data schema enables semantic model authors to define a focused subset of the model's schema for Copilot to prioritize when generating responses. Authors select the most relevant fields to guide Copilot to provide answers that are more aligned with the user's queries. A streamlined schema reduces ambiguity, helping Copilot deliver clearer and more accurate responses.
 

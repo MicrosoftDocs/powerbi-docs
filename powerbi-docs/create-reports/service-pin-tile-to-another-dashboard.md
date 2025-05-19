@@ -1,8 +1,8 @@
 ---
 title: Pin a tile from one dashboard to another dashboard
 description: Learn how to pin a tile from one dashboard to another dashboard in the Power BI service using the IT Spend Analysis sample.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

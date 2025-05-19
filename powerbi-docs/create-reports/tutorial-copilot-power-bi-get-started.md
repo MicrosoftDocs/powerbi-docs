@@ -16,7 +16,7 @@ ms.date: 05/06/2025
 # Copilot in Power BI tutorial: Get started
 
 > [!IMPORTANT]
-> The features mentioned in this tutorial are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/FabricRoadmap) for timeline details.
+> The features mentioned in this tutorial are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
 
 Before you begin, you need to complete the following prerequisites and download the sample Power BI Desktop file required for this end-to-end tutorial.
 

@@ -1,8 +1,8 @@
 ---
 title: 'Regional Sales sample for Power BI: Take a tour'
 description: The Regional Sales sample a report for a fictitious company to show features of reports in the Power BI service and Power BI Desktop.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual

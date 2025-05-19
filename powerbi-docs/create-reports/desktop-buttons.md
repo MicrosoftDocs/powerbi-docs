@@ -1,8 +1,8 @@
 ---
 title: Create and configure buttons in Power BI reports 
 description: You can add buttons in Power BI reports that make your reports behave like apps, and deepen engagement with users.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

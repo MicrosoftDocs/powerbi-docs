@@ -1,8 +1,8 @@
 ---
 title: 'Opportunity Analysis sample for Power BI: Take a tour'
 description: Learn how to get the Opportunity Analysis sample for Power BI. Take a tour of the features used in this sample.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

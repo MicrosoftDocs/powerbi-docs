@@ -1,8 +1,8 @@
 ---
 title: Create sparklines in a table or matrix in a report (preview)
 description: In Power BI, you can create sparklines in a table or matrix in a Power BI report. Sparklines are currently in preview.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom:
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: Create a Q&A visual in a dashboard
 description: Learn to create a Q&A visual in a dashboard in the Power BI service by using the Retail Analysis sample.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
