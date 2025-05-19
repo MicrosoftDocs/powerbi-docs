@@ -1,8 +1,8 @@
 ---
 title: 'Store Sales sample for Power BI: Take a tour'
 description: Learn how to use Power BI with business-oriented data, reports, and dashboards, with this sample about sales data for different stores.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

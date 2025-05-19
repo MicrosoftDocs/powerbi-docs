@@ -1,8 +1,8 @@
 ---
 title: Arrange columns, goals, and scorecards
 description: Learn how to customize your Power BI scorecards to meet your teams' needs by arranging columns, goals, and scorecards effectively for your team.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

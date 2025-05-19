@@ -1,8 +1,8 @@
 ---
 title: Add hyperlinks (URLs) to a table or matrix
 description: This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a semantic model. Then, in Power BI Desktop or the Power BI service, you can add those hyperlinks to your report tables and matrixes.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
