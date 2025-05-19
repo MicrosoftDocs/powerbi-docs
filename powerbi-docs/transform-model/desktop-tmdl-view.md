@@ -195,7 +195,7 @@ Enter the following patterns in the find and replace fields and select **Replace
 | Find    | `(^\s+column\s+)(.+)`   |
 | Replace | `$1\L$2`                |
 
-:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-27.png" alt-text="A Power BI data model configuration screen showing a "Product" table definition with two columns: "product" (string) and "productkey" (int64), along with their metadata properties.":::
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-27.png" alt-text='A Power BI data model configuration screen showing a Product table definition with two columns: product (string) and productkey (int64), along with their metadata properties.':::
 
 Run your TMDL script to rename all table columns to lowercase instantly:
 
@@ -203,7 +203,7 @@ Run your TMDL script to rename all table columns to lowercase instantly:
 
 Notice that column name will differ from the sourceColumn property. 
 
-:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-29.png" alt-text="Power BI data model configuration showing the "productKey" column definition with int64 datatype, where the sourceColumn is mapped to "ProductKey" in the source data.":::
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-29.png" alt-text="Power BI data model configuration showing the productKey column definition with int64 datatype, where the sourceColumn is mapped to ProductKey in the source data.":::
 
 Synchronization between the semantic model table and Power Query query relies on sourceColumn, keeping names independent. When you open the Power Query editor, it will display the column names that match the sourceColumn, rather than the model's column name. Additionally, renaming a column in the user interface will not automatically add a rename step to the query until sourceColumn and column name are identical.
 
