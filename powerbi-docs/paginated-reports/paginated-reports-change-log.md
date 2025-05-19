@@ -25,7 +25,7 @@ Version 15.7.1814.616, released March 25, 2025
 - Reduced timeout for Power Query Online
 - Fixed issue rendering sub reports when opening from the Power BI Service
 - Increased limit on query parameters size in Query Designer
-- Catch and log error errors opening reports
+- Catch and log errors opening reports
 - Updated supported connection types
 - Added additional telemetry events
 
@@ -278,6 +278,5 @@ See the September 2020 Power BI Report Builder blog post for the complete list o
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
 - [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md)
-
 
 

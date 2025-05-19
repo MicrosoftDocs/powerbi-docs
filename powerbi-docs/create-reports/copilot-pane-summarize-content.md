@@ -1,33 +1,42 @@
 ---
-title: Summarize a report page in the Copilot pane  
-description: Even if you don't have permission to edit a Power BI report, Copilot can still create a summary for you in the Copilot pane.
-author: kfollis
-ms.author: kfollis
+title: Summarize a report with Copilot
+description: Even if you don't have permission to edit a Power BI report, Copilot can still create a summary for you.
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 06/03/2024
+ms.date: 05/15/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
 
-# Summarize a report in the Copilot pane  
+# Summarize a report with Copilot
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Even if you don't have permission to edit a Power BI report, Copilot can create a summary for you in the Copilot pane. You can be just a report reader. If you can edit the report, you can also create a visual in the report that provides a summary. See the article [Write Copilot prompts to create narrative visuals in Power BI](copilot-prompts-narratives.md) for details.
+> [!IMPORTANT]
+> The features mentioned on this page are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
+
+Copilot lets you create insightful summaries about their reports. Copilot takes the visuals that were curated and built by report authors and generates summaries, overviews, insights and answers grounded in the report data. You can access these summaries in the Copilot report pane or in the standalone Copilot agent in Power BI. 
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-immersive-report-summary.png" alt-text="Screenshot of Copilot showing spending patterns as a report summary." lightbox="media/copilot-pane-summarize-content/copilot-immersive-report-summary.png":::
+
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-Given a Power BI report populated with visuals, you might spend anywhere from 30 minutes to a couple hours combing through the report to fully understand your key questions, key insights, and what's going on at a high level, so you can summarize it for your leadership team. That length of time varies depending on how familiar you are with the data and how much involvement the analyst has in answering your questions. Now, with the summary feature in the Copilot pane, you can generate a summary of the data displayed in that report in seconds, instead of the minutes or hours to manually interpret the data and then write a summary, or ask an analyst to interpret and write a summary for you.
+## Why summarize a report?
 
-## Get started with standard prompts
+When working with a Power BI report filled with visuals, users often spend anywhere from 30 minutes to several hours analyzing the data to understand key questions, insights, and high-level trends, especially when preparing summaries for leadership. This might involve digging through multiple pages of visuals, identifying patterns, noting anomalies, and drafting a narrative that explains what’s happening in the data and why it matters. Whether you're summarizing for an executive briefing, preparing talking points for a stakeholder meeting, or trying to get a quick grasp of the data to inform a business decision, the process can be time-consuming. 
 
-To get started, select the **Copilot** button in the ribbon in either Power BI Desktop or the Power BI service. In the service, the button is available in both edit mode and view mode.
+The summary capability in Copilot lets you generate a concise summary of the report’s data in seconds, whether you’re in the report or asking about the report data in the standalone experience. Summaries highlight key trends, insights, and potential issues, helping you quickly answer core business questions and decide on next steps without needing to manually interpret every chart or rely entirely on an analyst for support.
+
+## Get started in reports with standard prompts
+
+Let’s begin with the report experience. Here, you’re inside of a Power BI Report that has access to Copilot. To get started, select the **Copilot** button in the ribbon in either Power BI Desktop or the Power BI service. In the service, the button is available in both edit mode and view mode.
 
 > [!TIP]
 > If you don't see Copilot, your admins might not have enabled it, or you could be in a workspace that doesn't meet the Copilot requirements. 
@@ -36,28 +45,23 @@ To get started, select the **Copilot** button in the ribbon in either Power BI D
 
 The Copilot pane opens. 
 
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-prompts.png" alt-text="Screenshot showing the Copilot pane open." lightbox="media/copilot-pane-summarize-content/copilot-updated-prompts.png":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-report-copilot-pane.png" alt-text="Screenshot showing the Copilot pane open." lightbox="media/copilot-pane-summarize-content/copilot-report-copilot-pane.png":::
  
-You can choose from suggested prompts of summaries from the main Copilot menu such as "Give me an executive summary," "Anticipate likely questions from leadership" or "What insights should I look into?"
+You can choose from suggested prompts of summaries from the main Copilot menu such as "What is this report page about?” or “Prep a summary for my team.”
 
-Or you can select prompts from the user prompt guide in the sparkle menu in the lower left-hand corner of the dialogue input box. Those options are:
+Or you can select other prompts from the user prompt guide in the lower left-hand corner of the dialogue input box.
 
-- What insights should I look into.
-- Answer questions from leadership.
-- Give me an executive summary.
-- Summarize visuals on this page.
-
-:::image type="content" source="media/copilot-pane-summarize-content/empty-state-prompt-guide.png" alt-text="Screenshot showing select prompts from the user prompt guide." lightbox="media/copilot-pane-summarize-content/empty-state-prompt-guide.png":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-prompt-guide.png" alt-text="Screenshot showing select prompts from the user prompt guide." lightbox="media/copilot-pane-summarize-content/copilot-updated-prompt-guide.png":::
 
 After you choose a prompt, select **Enter** and watch Copilot generate your summary.
  
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png" alt-text="Screenshot showing and updated view of the report summary response." lightbox="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png":::
 
-Copilot uses Azure Open AI to look at the visuals on the report, and create a natural language summary using the data in those visuals.  It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that are not currently applied.  By default, Copilot will summarize visuals across the entire report. You can adjust the scope of the summary by specifying the prompt.
+Copilot uses Azure OpenAI to look at the visual metadata on the report and create a natural language summary. It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that aren't currently applied. By default, Copilot summarizes visuals across the entire report. You can adjust the scope of the summary by specifying the prompt.
 
-## Reference footnotes
+## Citations
 
-In a summary response from the Copilot pane, reference footnotes are provided within the summary to indicate which data visuals Copilot referenced to generate the summary. These footnotes help you quickly cross-check the summary output to ensure accuracy, increasing productivity.  If a reference is from a page you aren't currently on, the reference will take you to that page when clicked.
+In a summary response from the Copilot pane, citations are provided within the summary to indicate which visuals Copilot referenced to generate the summary. These citations help you quickly cross-check the summary output to ensure accuracy, increasing productivity. If a reference is from a page you aren't currently on, the reference takes you to that page when clicked.
  
 :::image type="content" source="media/copilot-pane-summarize-content/reference-hover-state.png" alt-text="Screenshot showing that footnotes are provided within the summary to indicate which data visuals Copilot referenced to generate the summary." lightbox="media/copilot-pane-summarize-content/reference-hover-state.png":::
 
@@ -74,7 +78,10 @@ Copilot allows you to generate a custom summary to fit your business needs. Here
 - Outline the insights about bike sales and Washington.
 - Summarize the data in a way that allows me to use it in an email to leadership.
 - Summarize the data specific to Seattle, WA.
- 
+
+> [!TIP] 
+> For nuanced summaries about filtered data, filters and slicers must be applied in the report.
+
 ## Benefits
 
 This customization allows you to focus on nuanced aspects of the data that are relevant to your objectives or questions. Some key advantages include: 
@@ -90,24 +97,87 @@ This customization allows you to focus on nuanced aspects of the data that are r
 
 The Copilot pane also allows you to ask specific questions about your report content and receive a summarized response. This allows you to not only request summaries but ask additional follow-up questions about your report or about a summary you've received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report.
 
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing ask specific questions about your report content and receive a summarized response." lightbox="media/copilot-pane-summarize-content/copilot-pane.png":::
-
 ## Examples of questions you can ask 
 
 - Which team had the highest sales?
 - What was the spend per visitor for Maui in November 2023?
 - What is the value for revenue variance?
 - Which product had the highest profit margin? 
-- What is the difference in revenue by product streams, and are they statistically significant?  
+- What is the difference in revenue by product streams, and are they statistically significant? 
+
+## Get started in the standalone Power BI Copilot experience
+
+Now, let’s take a look at the standalone Copilot experience. For more details, see [Standalone Copilot experience in Power BI (preview)](copilot-chat-with-data-standalone.md). Although the core functionality remains the same, this version includes some enhanced features that are unique to the standalone experience.
+
+:::image type="content" source="media/copilot-introduction/copilot-standalone-screen.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a chat interface for interacting with data." lightbox="media/copilot-introduction/copilot-standalone-screen.png":::
+
+To get started, select the Copilot button in the left navigation menu in Power BI service. You see a landing page that offers helpful prompts to get started exploring data. This is similar to the starter prompts shown in the report pane, but using these lets you search for relevant reports you have access to. This means you don’t need to start the exploration experience in the context of the report, you can just ask Copilot to find it for you.
+
+> [!TIP]
+> If you know the report you want to explore, attach it in the **Add items** section.
+
+In this standalone Copilot experience, you can ask to summarize data, generate insights, or create executive overviews based on your Power BI reports. You can also ask follow-up questions, use custom prompts, continue the conversation, and jump directly into the report for deeper analysis when needed. 
+
+One key difference in this experience is the way visuals are embedded directly into the summary responses. Unlike report summaries, where visuals remain part of the main report view, the standalone experience presents them alongside the text. Visual citations are especially important here; they let you validate the data in the summary, see the original visual it references, and explore further without leaving the Copilot view. The overall layout reads more like a newspaper article, combining narrative and visuals into a single, digestible format.
+
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-immersive-full-summary.png" alt-text="Screenshot showing the full immersive summary in Copilot." lightbox="media/copilot-pane-summarize-content/copilot-immersive-full-summary.png":::
+
+You can even hover over some of the additional visual citations that aren't rendered inline to make sure you have a good understanding of which visual the information in the summary came from. 
+
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-immersive-citation-hover.png" alt-text="Screenshot showing what happens when users hover over citations in the full immersive summary in Copilot." lightbox="media/copilot-pane-summarize-content/copilot-immersive-citation-hover.png":::
+
+In this immersive experience, you can also dive deeper into the visuals provided to continue your analysis - another key difference from the Copilot pane in the report view. Use the **Explore** buttons under the visuals to open them in a format that supports deeper exploration, allowing you to slice, dice, and interact with the data more directly.
+
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png" alt-text="Screenshot showing what happens when users explore in the full immersive summary in Copilot." lightbox="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png":::
+
+## Best practices
+
+To get the most accurate and useful results from Copilot summaries and responses to your report questions, it’s important to optimize your report data. The following are some best practices to make sure Copilot works effectively when delivering report summaries and answers.
+
+### How Copilot summarization works
+
+Copilot summaries are based on the report’s visualized data and follow a two-step process:
+
+1.	Identifying relevant visuals (up to 20) based on the user’s prompt, then
+1.	Summarizing the data from those visuals
+
+The quality of the results depends heavily on the amount of data and the clarity of labels. When Copilot resorts to sampling due to volume, accuracy may decrease. 
+
+### Report composition
+
+- Limit the number of visuals on a report page to improve accuracy. While Copilot can rank visuals from reports with hundreds of visuals, it summarizes from only the top 20 so some insights may be missed.
+- Avoid duplicate visuals that present the same data. Exception: visuals showing data at different granularities for the same insight.
+- Prioritize distinct, simple visuals per insight rather than a single, complex visual showing everything.
+- Leverage default filters that reveal data to answer most commonly asked questions, as summaries don't currently apply filters to answer the specific prompt.
+- Use clear, descriptive titles for pages, visuals, and filters.
+- Ensure the fields have meaningful names, even if they're not displayed on the chart.
+
+### Visual composition
+
+- Visuals with expandable elements (like decomposition trees or matrices) are summarized in their current state. For example, if only one country is expanded in a matrix showing **Country > City**, Copilot only sees cities for that country. Set the default expansion thoughtfully.
+- Avoid overly complex matrices with many row levels or multiple values. Use simpler, supporting visuals to highlight key takeaways from those complex visuals.
+- The simpler the visual, the easier it is to summarize. Use cards to surface key high-level insights.
+
+### Data volume and token usage
+
+- Visuals might not send all data. For example, tables paginate after 100 rows, and only visible rows are summarized. If full summarization is important, reduce the data shown by using filters, trimming columns, or splitting data into multiple visuals (see [limitations](#limitations-and-considerations)).
+- Avoid high-density visuals, like daily line charts spanning years. Instead, aggregate data by week or month (see [limitations](#limitations-and-considerations)).
+- Hidden elements like tooltips are also included in what Copilot sees, which can increase token usage.
+- Limit the number of series in categorical charts (fewer than 10). Use an "Other" bucket for small categories. Too many series can result in wide, hard-to-parse tables.
+- Use display units where possible. For example, show "1.2K" instead of "1,234" unless high precision is necessary.
+- Avoid large text fields. Any text longer than 500 characters are truncated.
 
 ## Limitations and considerations
 
-- For the Copilot button to be available in a report, the report needs to be in:
-    - An eligible workspace: the workspace needs to have a paid dedicated Fabric capacity.
-    - A tenant where the admin setting is enabled.
-- Copilot will only consider visuals with less than 30K rows of data.
-- Copilot summaries may not work accurately on table/matrix visuals with more than 500 rows.
-- The Copilot summary pane doesn't return new visuals as data answers.  For this capability, turn on the preview switch to use Data Q&A capabilities. 
+The following are limitations and considerations across both experiences (also see the [best practices](#best-practices) section).
+
+- Filters and slicers aren't yet supported in summary experiences (you can't filter data with the user prompt).
+- For the Copilot button to be available, the report needs to be in:
+  - An eligible workspace: the workspace needs to have a paid dedicated Fabric capacity.
+  - A tenant where the admin settings are enabled.
+- Copilot summaries only consider visuals with less than 30K rows of data. If more data is included in visuals, Copilot answers using the semantic model itself, not the report visual.
+- Copilot summaries may not work accurately on table/matrix visuals with more than 500 rows. If the visual surpasses 100 rows, Copilot answers using the semantic model itself, not the report visual.
+- Answering specific report questions isn't yet supported in the standalone Copilot experience.
 
 ## Send feedback
 

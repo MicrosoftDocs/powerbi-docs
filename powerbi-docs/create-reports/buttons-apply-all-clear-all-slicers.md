@@ -1,8 +1,8 @@
 ---
 title: Create Apply all and Clear all slicers buttons in reports 
 description: You can add buttons in Power BI reports that apply all the slicers or clear all the slicers on the page.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -72,7 +72,7 @@ The emphasis of Stage 1 is on gathering information and planning for the migrati
 
 ### Stage 2: Plan for deployment
 
-The focus of Stage 2 is on how the requirements defined in Stage 1 are fulfilled for each specific solution. The output of Stage 2 includes as many specifics as possible to guide the process, though it is an iterative, non-linear process. Creation of a proof of concept (in Stage 3) can occur in parallel with this stage. Even while creating the solution (in Stage 4), additional information might come to light that influences deployment planning decisions. This type of deployment planning in Stage 2 focuses on the solution level, while respecting the decisions already made at the organizational level. For more information about the activities in Stage 2, see [Plan deployment to migrate to Power BI](powerbi-migration-planning.md).
+The focus of Stage 2 is on how the requirements defined in Stage 1 are fulfilled for each specific solution. The output of Stage 2 includes as many specifics as possible to guide the process, though it's an iterative, non-linear process. Creation of a proof of concept (in Stage 3) can occur in parallel with this stage. Even while creating the solution (in Stage 4), additional information might come to light that influences deployment planning decisions. This type of deployment planning in Stage 2 focuses on the solution level, while respecting the decisions already made at the organizational level. For more information about the activities in Stage 2, see [Plan deployment to migrate to Power BI](powerbi-migration-planning.md).
 
 ### Stage 3: Conduct proof of concept
 
@@ -111,7 +111,7 @@ Every migration is slightly different. It can depend on the organizational struc
 
 ## Acknowledgments
 
-This series of articles was written by [Melissa Coates](https://www.linkedin.com/in/melissacoatesprofile/), Data Platform MVP . Contributors and reviewers include Marc Reguera, Venkatesh Titte, Patrick Baumgartner, Tamer Farag, Richard Tkachuk, Matthew Roche, Adam Saxton, Chris Webb, Mark Vaillancourt, Daniel Rubiolo, David Iseminger, and Peter Myers.
+This series of articles was written by [Melissa Coates](https://www.linkedin.com/in/melissacoatesprofile/), Data Platform MVP. Contributors and reviewers include Marc Reguera, Venkatesh Titte, Patrick Baumgartner, Tamer Farag, Richard Tkachuk, Matthew Roche, Adam Saxton, Chris Webb, Mark Vaillancourt, Daniel Rubiolo, David Iseminger, and Peter Myers.
 
 ## Related content
 
