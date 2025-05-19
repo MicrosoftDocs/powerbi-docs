@@ -23,9 +23,9 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 Use the following procedure to add the Power Automate visual:
 
-### [Power BI Desktop]
+### Power BI Desktop
 
-1. Select the Power Automate icon from the **Visualizations** pane.
+* Select the Power Automate icon from the **Visualizations** pane.
 
     :::image type="content" source="media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png" alt-text="Screenshot of selecting the Power Automate icon from the Visualizations pane":::
 
@@ -35,7 +35,7 @@ Use the following procedure to add the Power Automate visual:
 
     Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
-### [Power BI service]
+### Power BI service
 
 1. Select the Power Automate icon from the **Visualizations** pane.
 
@@ -61,7 +61,7 @@ To select your preferred environment for creating your flow, use the environment
 
 Use the following procedure to edit the flow:
 
-### [Edit the flow for Power BI Desktop]
+### Edit the flow for Power BI Desktop
 
 1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
 
@@ -71,7 +71,7 @@ Use the following procedure to edit the flow:
 
     :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual.png" alt-text="Screenshot shows select Edit to edit the flow.":::
 
-### [Edit the flow for Power BI service]
+### Edit the flow for Power BI service
 
 1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
 
@@ -80,8 +80,6 @@ Use the following procedure to edit the flow:
 1. Select **More options (...)** > **Edit** to configure the button.
 
     :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual-service.png" alt-text="Screenshot shows Edit selected in the Power Automate visual.":::
-
----
 
 1. In edit mode of the visual, either select an existing flow to apply to the button, or create a new flow to be applied to the button.
 
