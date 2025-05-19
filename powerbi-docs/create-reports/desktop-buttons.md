@@ -1,8 +1,8 @@
 ---
 title: Create and configure buttons in Power BI reports 
 description: You can add buttons in Power BI reports that make your reports behave like apps, and deepen engagement with users.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -55,6 +55,7 @@ Buttons in Power BI have four possible states:
 - **On hover**: How buttons appear when hovered over.
 - **On press**: How buttons appear when selected.
 - **Disabled**: How buttons appear when they can't be selected.
+- **Loading**: How buttons appear when the action is in progress
 
 You can modify many of the cards in the **Format button** pane individually, based on these four states, which provides plenty of flexibility for customizing your buttons.
 
@@ -82,12 +83,13 @@ Here are the options for button actions:
 
 - **Back** returns the user to the previous page of the report. This action is useful for drillthrough pages.
 - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md).
-- **Drillthrough** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drill-through-buttons.md).
+- **Drill through** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drill-through-buttons.md).
 - **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page and bookmark navigators](button-navigators.md) for details. 
 - **Bookmark navigation** navigates the user to a different state in the report, either on the same or a different page, by using bookmarks. See [Create page and bookmark navigators](button-navigators.md#bookmark-navigator) for details.
 - **Q&A** opens a **Q&A Explorer** window. When your report readers select a Q&A button, the Q&A Explorer opens, and they can ask natural-language questions about your data.
-- **Apply all slicers** and **Clear all slicers** buttons apply all the slicers or clear all the slicers on a page. See [Create Apply all slicers and Clear all slicers buttons in reports](buttons-apply-all-clear-all-slicers.md) for details.
 - **Web URL** opens a web page in a browser.
+- **Apply all slicers** and **Clear all slicers** buttons apply all the slicers or clear all the slicers on a page. See [Create Apply all slicers and Clear all slicers buttons in reports](buttons-apply-all-clear-all-slicers.md) for details.
+- **Data function** calls a user data function to take action on the underlying dataset. You can only select this action when the translytical task flow preview feature is enabled. See [Understand translytical task flows (preview)](./translytical-task-flow-overview.md) for details.
 
 Certain buttons have a default action that's selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action.
 
@@ -132,7 +134,13 @@ Page navigation action is also supported for shapes and images, not just buttons
 
 ## Buttons support fill images
 
-Power BI buttons support fill images. With fill images, you can customize the look and feel of your button, combined with the built-in button states: default, on hover, on press, and disabled (for drillthrough).
+Power BI buttons support fill images. With fill images, you can customize the look and feel of your button, combined with the built-in button states: 
+
+* Default
+* On hover
+* On press
+* Disabled (for drillthrough)
+* Loading (for data functions)
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-images.png" alt-text="Screenshot showing Drillthrough button fill images.":::
 

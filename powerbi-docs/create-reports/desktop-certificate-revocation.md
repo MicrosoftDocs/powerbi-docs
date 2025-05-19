@@ -1,8 +1,8 @@
 ---
 title: Certificate revocation check, Power BI Desktop
 description: Learn how to check to see if you're using revoked certificates in Power BI Desktop in the UI and in the registry.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -1,8 +1,8 @@
 ---
 title: Create a numeric or date range slicer in Power BI
 description: Learn how to use a slicer for constraining to numeric or date ranges in Power BI Desktop and the Power BI service.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
