@@ -14,11 +14,11 @@ no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
 
-# What's new in Power BI? May 2025 update
+# What's new in Power BI? May 2025 (2.143.878.0)
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The [May 2025 Power BI update](https://aka.ms/PowerBIMay2025Update) introduces a range of exciting advancements to Power BI, including a standalone Copilot feature allowing users to "Ask anything!" (in preview), enhanced language understanding for data-related questions, and an important announcement regarding the deprecation of the 32-bit Power BI Desktop build. Packed with valuable updates and insights, this month's updates promise plenty of details to explore.
+The [May 2025 Power BI update](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/) introduces a range of exciting advancements to Power BI, including a standalone Copilot feature allowing users to "Ask anything!" (in preview), enhanced language understanding for data-related questions, and an important announcement regarding the deprecation of the 32-bit Power BI Desktop build. Packed with valuable updates and insights, this month's updates promise plenty of details to explore.
 
 Read on for highlights of the latest release. Select the feature links to jump to the blog for more information. Visit the [Microsoft Power BI Updates blog](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/) for an in-depth look at all the exciting additions and updates for the month of May. You can also view the May demos on the [monthly playlist](https://aka.ms/PowerBIMayPlaylist).
 
