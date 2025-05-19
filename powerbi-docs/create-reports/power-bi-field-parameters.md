@@ -89,6 +89,9 @@ Parameter = {
 - You can't use implicit measures, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. For more information, see [implicit vs. explicit measures](../guidance/star-schema.md#measures).
 - You can't use field parameters as the linked fields of a drill-through or tooltip page. The workaround is to use the individual fields referenced within the field parameter instead. For example, if your field parameter includes **Customer** and **Product** fields, you can link these two fields to your drill-through or tooltip page so that visuals with the field parameter can launch your drill-through or tooltip page.
 - When a Field Parameter is used to swap fields in a visual, the visual will reset the drill and expand state.
+
+## Considerations
+
 - When using field parameters with Copilot, Copilot will respond based on the current state of the visuals in the report.
 - In general, the order in which fields from a Field Parameter are shown in a visual is driven by the order items are selected. If using a [hierarchy slicer](power-bi-slicer-hierarchy-multiple-fields.md) the order is determined by how the fields are shown in the hierarchy slicer instead.
 
