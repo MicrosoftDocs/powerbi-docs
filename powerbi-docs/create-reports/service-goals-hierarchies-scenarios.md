@@ -1,8 +1,8 @@
 ---
 title: "Scenarios: When to use hierarchies in Power BI scorecards"
 description: Hierarchies are a popular feature in Power BI. Here are a few useful scenarios to help you get started in your organization.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

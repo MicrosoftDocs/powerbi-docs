@@ -1,8 +1,8 @@
 ---
 title: Get started with Metrics
 description: Learn how you can use the Power BI Metrics feature to standardize and manage key metrics across your organization.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

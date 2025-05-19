@@ -1,8 +1,8 @@
 ---
 title: Use cross-report drillthrough in Power BI Desktop
 description: Learn how to enable drillthrough from one report to another in Power BI Desktop and the Power BI service
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
