@@ -52,7 +52,7 @@ Read on for highlights of the latest release. Select the feature links to jump t
 - [**Customize line segment colors in line charts**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1708328201): Adjust line segment colors in line charts for better visual distinction.
 - [**Additional base map customization options for Azure Maps visual**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc209823635): Expanded customization options for base maps in Azure Maps visuals.
 - [**Upcoming Azure Maps tenant settings and layer ordering updates**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc91668847): Learn about new tenant settings and layer ordering features for Azure Maps.
-- [**Upcoming changes to the Power BI app in Teams navigation menu**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1862359525): See updates to the navigation menu in the Power BI app for Teams to improve usability. Learn more about [Power BI in Teams](../collaborate/service-collaborate-microsoft-teams.md).
+- [**Upcoming changes to the Power BI app in Teams navigation menu**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1862359525): See updates to the navigation menu in the Power BI app for Teams to improve usability. Learn more about [Power BI in Teams](../collaborate-share/service-collaborate-microsoft-teams.md).
 - [**Visual updates for semantic models with discourage implicit measures enabled**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc896108075): Get enhanced visual representation for semantic models when implicit measures are discouraged. Learn more about [model view](../transform-model/desktop-modeling-view.md) and the [model explorer](../transform-model/model-explorer.md).
 
 ## Modeling
@@ -83,12 +83,14 @@ Read on for highlights of the latest release. Select the feature links to jump t
 
 Like learning about Power BI through videos and other engaging content? Check out the following collection of video sources and content.
 
-- [Power BI video monthly playlist](https://aka.ms/PowerBIMayPlaylist)
-- [Power BI channel](https://www.youtube.com/user/mspowerbi): a collection of Power BI videos on YouTube.
-- [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link): a sequential learning tour of Power BI, in bite-size pieces.
+- [This month's Power BI playlist on YouTube](https://aka.ms/PowerBIMayPlaylist): Collection of videos and demos that highlight this month's Power BI updates.
+  - See [all Power BI playlists on YouTube](https://www.youtube.com/@MicrosoftPowerBI/playlists)
+- [Power BI YouTube channel](https://www.youtube.com/user/mspowerbi): The official Microsoft Power BI channel
+- Follow Power BI on X [@MSPowerBI](https://twitter.com/mspowerbi)
+- Visit the [Power BI forums within the Microsoft Fabric Community](https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi)
 
-> [!NOTE]
-> These materials might use earlier versions of Power BI Desktop or the Power BI service.
+  > [!NOTE]
+  > These resources might use earlier versions of Power BI Desktop or the Power BI service.
 
 ## Past updates
 
