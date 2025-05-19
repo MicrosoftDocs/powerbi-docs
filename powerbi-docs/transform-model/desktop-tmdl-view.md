@@ -173,13 +173,13 @@ Messages are kept only for each Power BI Desktop session, so restarting Power BI
 
 ## Compatibility level upgrade prompt
 
-The [compatibility level](https://learn.microsoft.com/analysis-services/tabular-models/compatibility-level-for-tabular-models-in-analysis-services) of a Power BI semantic model determines the features that are accessible. TMDL view allows you to add any Analysis Services object or property, even if it's not available at the current compatibility level. When applying a change that necessitates a compatibility level upgrade, TMDL view provides a prompt indicating which object or objects require the upgrade.
+The [compatibility level](analysis-services/tabular-models/compatibility-level-for-tabular-models-in-analysis-services) of a Power BI semantic model determines the features that are accessible. TMDL view allows you to add any Analysis Services object or property, even if it's not available at the current compatibility level. When applying a change that necessitates a compatibility level upgrade, TMDL view provides a prompt indicating which object or objects require the upgrade.
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-25.png" alt-text="Screenshot of the TMDL view in Power BI with a Compatibility Level Upgrade prompt. The message indicates that the current compatibility level of 1550 is below the required level of 1601 for the FormatStringDefinition property and asks whether to upgrade and re-apply the change.":::
 
 ## Object renaming with TMDL view
 
-To rename an object within the TMDL view, it is necessary to script its parent. For instance, renaming a column requires scripting the table, while renaming a table necessitates scripting the entire semantic model. Learn more about tabular object model hierarchy in the following document: [Tabular object model hierarchy](https://learn.microsoft.com/en-us/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions#tabular-object-model-hierarchy).
+To rename an object within the TMDL view, it is necessary to script its parent. For instance, renaming a column requires scripting the table, while renaming a table necessitates scripting the entire semantic model. Learn more about tabular object model hierarchy in the following document: [Tabular object model hierarchy](analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions#tabular-object-model-hierarchy).
 
 With the TMDL view, bulk renaming can be performed efficiently using simple find and replace patterns. For instance, you can rename all table columns to lowercase by following these steps.
 
@@ -192,7 +192,6 @@ Press CTRL+F to open the find and replace dialog, ensure that the Regular Expres
 Enter the following patterns in the find and replace fields and select **Replace All. **
 
 |         |                         |
-|---------|-------------------------|
 | Find    | `(^\s+column\s+)(.+)`   |
 | Replace | `$1\L$2`                |
 
