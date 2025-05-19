@@ -171,6 +171,45 @@ You can select the *Clear* button to empty the *Output* pane messages.
 
 Messages are kept only for each Power BI Desktop session, so restarting Power BI Desktop clears all output messages for all script tabs.
 
+## Compatibility level upgrade prompt
+
+The [compatibility level](https://learn.microsoft.com/analysis-services/tabular-models/compatibility-level-for-tabular-models-in-analysis-services) of a Power BI semantic model determines the features that are accessible. TMDL view allows you to add any Analysis Services object or property, even if it's not available at the current compatibility level. When applying a change that necessitates a compatibility level upgrade, TMDL view provides a prompt indicating which object or objects require the upgrade.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-25.png" alt-text="Screenshot of the TMDL view in Power BI with a Compatibility Level Upgrade prompt. The message indicates that the current compatibility level of 1550 is below the required level of 1601 for the FormatStringDefinition property and asks whether to upgrade and re-apply the change.":::
+
+## Object renaming with TMDL view
+
+To rename an object within the TMDL view, it is necessary to script its parent. For instance, renaming a column requires scripting the table, while renaming a table necessitates scripting the entire semantic model. Learn more about tabular object model hierarchy in the following document: [Tabular object model hierarchy](https://learn.microsoft.com/en-us/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions#tabular-object-model-hierarchy).
+
+With the TMDL view, bulk renaming can be performed efficiently using simple find and replace patterns. For instance, you can rename all table columns to lowercase by following these steps.
+
+Open the TMDL view, script the table you intend to modify.
+
+Press CTRL+F to open the find and replace dialog, ensure that the Regular Expression option is enabled.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-26.png" alt-text="Screenshot of the TMDL view in Power BI showing the Find and Replace feature in use. The Replace input is active with an option to toggle between Find and Replace modes, highlighted in the toolbar above the code editor.":::
+
+Enter the following patterns in the find and replace fields and select **Replace All. **
+
+|         |                         |
+|---------|-------------------------|
+| Find    | `(^\s+column\s+)(.+)`   |
+| Replace | `$1\L$2`                |
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-27.png" alt-text="A Power BI data model configuration screen showing a "Product" table definition with two columns: "product" (string) and "productkey" (int64), along with their metadata properties.":::
+
+Run your TMDL script to rename all table columns to lowercase instantly:
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-28.png" alt-text="A Power BI Product table showing 14 columns including brand, category, color, manufacturer, product, productkey, subcategory, unit cost, unit price, and weight attributes.":::
+
+Notice that column name will differ from the sourceColumn property. 
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-29.png" alt-text="Power BI data model configuration showing the "productKey" column definition with int64 datatype, where the sourceColumn is mapped to "ProductKey" in the source data.":::
+
+Synchronization between the semantic model table and Power Query query relies on sourceColumn, keeping names independent. When you open the Power Query editor, it will display the column names that match the sourceColumn, rather than the model's column name. Additionally, renaming a column in the user interface will not automatically add a rename step to the query until sourceColumn and column name are identical.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-30.png" alt-text="Power BI Query Editor showing product data with columns for ProductKey, Product Code, Product, and Manufacturer, with 16 queries visible in the navigation pane.":::
+
 ## TMDL view and Power BI project
 
 When you save your work as a Power BI project (PBIP), you gain access to your semantic model definition metadata as [TMDL files](/power-bi/developer/projects/projects-dataset#tmdl-format), providing a useful source control and co-development experience, while also allowing you to [make changes](/power-bi/developer/projects/projects-dataset#make-external-changes-to-tmdl-files) to the semantic model outside of Power BI Desktop. However, if you modify the TMDL files within the PBIP, you must restart Power BI Desktop to reload those changes. In contrast, the TMDL view follows a scripting mental model, enabling you to efficiently apply changes directly to the semantic model being edited in Power BI Desktop using TMDL, regardless of whether the file format is PBIX or PBIP.
