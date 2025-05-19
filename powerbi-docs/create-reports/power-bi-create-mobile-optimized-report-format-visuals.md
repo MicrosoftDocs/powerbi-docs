@@ -36,7 +36,7 @@ You can discard mobile formatting changes to a single category by selecting **Cl
 
 When you discard mobile formatting changes, the setting (or settings) reconnects to the desktop layout resume taking its value from the there.
 
-The visualizations pane in mobile layout view is quite similar to the visualization pane that is part of desktop layout view. See [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane.md) for more information about the visualization pane in desktop layout.
+The visualizations pane in mobile layout view is quite similar to the visualization pane that is part of desktop layout view. 
 
 ### Mobile formatting considerations and limitations
 * Size and positions settings are not inherited from desktop layout - hence you will never see a change indication on size and position settings.

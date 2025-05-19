@@ -1,8 +1,8 @@
 ---
 title: Power BI Report Builder change log
 description: In this article, you learn about new features and functionality in Power BI paginated reports for the Power BI service.
-author: kfollis
-ms.author: kfollis
+author: petebro
+ms.author: petebro
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -16,19 +16,25 @@ ms.date: 9/17/2024
 
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
-Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+Ready to get started? [Get Power BI Report Builder](./download-powerbi-report-builder.md).
 
 ## March 2025
 
-Version 15.7.1814.616, releasd March 25, 2025
+Version 15.7.1814.616, released March 25, 2025
 
 - Reduced timeout for Power Query Online
 - Fixed issue rendering sub reports when opening from the Power BI Service
 - Increased limit on query parameters size in Query Designer
 - Catch and log error errors opening reports
 - Updated supported connection types
-- Added additional telemetry events 
-	
+- Added additional telemetry events
+
+## November 2024
+
+Version 15.7.1813.16, released November 12, 2024
+
+- Fixed Power Query Online log in issue.
+
 ## September 2024
 
 Version 15.7.1812.222, released September 16, 2024

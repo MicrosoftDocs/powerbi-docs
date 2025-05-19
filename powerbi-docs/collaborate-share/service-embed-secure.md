@@ -1,13 +1,13 @@
 ---
 title: Embed a report in a secure portal or website
 description: The Power BI embed feature provides a way to easily and securely embed reports in internal web portals.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/07/2025
+ms.date: 05/06/2025
 LocalizationGroup: Share your work
 ---
 
@@ -26,7 +26,8 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 2. On the **File** menu, select **Embed report** >  **Website or portal**.
 
-3. In the **Secure embed code** dialog that appears, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iframe in a blog or website, select the value under **HTML you can paste into a website**.
+3. In the **Secure embed code** dialog that appears, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iframe in a blog or website, select the value under **HTML you can paste into a website**. Changing the width or height from what is specified in the iframe code may result in certain features not working as expected.
+
 
     :::image type="content" source="../collaborate-share/media/service-embed-secure/securely-embed-report-in-website-or-portal.png" alt-text="Screenshot of Embed option dialogue box":::
 
@@ -122,6 +123,18 @@ https://app.powerbi.com/reportEmbed?reportId=/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
 ```
 
 You can add as many buttons as you'd like to create a low-code custom experience. 
+
+## Enable Copilot in secure embedded reports
+
+You can activate Copilot for secure web or portal embedded reports by selecting the "Enable Copilot" checkbox in the embedded reports dialog. Keep in mind that this feature requires an active Copilot tenant switch and either Power BI Premium or paid Fabric capacity in your workspace. Once enabled, users can interact directly with Copilot within the embedded report.
+
+1. From the **File** menu, select **Embed report**, then select **Website or portal**.
+   
+   :::image type="content" source="media/service-embed-secure/embed-report-menu.png" lightbox="media/service-embed-secure/embed-report-menu.png" alt-text="Screenshot of selection of Embed Report menu and selection of Website or portal menu option.":::
+
+1. Select the **Enable Copilot** checkbox.
+
+   :::image type="content" source="media/service-embed-secure/embed-report-enable-copilot.png" lightbox="media/service-embed-secure/embed-report-enable-copilot.png" alt-text="Screenshot of Embed dialog with Enable Copilot option checked.":::  
 
 ## Considerations and limitations
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 01/31/2024
+ms.date: 05/09/2024
 ms.custom: ""
 LocalizationGroup: Get started
 ---
@@ -30,6 +30,9 @@ Let’s get started.
 * Create a [new workspace](../collaborate-share/service-create-the-new-workspaces.md) and assign a Fabric capacity.
      * An existing workspace can also be used, although we recommend using a nonproduction workspace for simplicity of the tutorial.
 * Download the [Power Query template](https://github.com/microsoft/pbiworkshops/raw/main/_Asset%20Library/Source_Files/ContosoSales.pqt) file that contains sample queries for Contoso data.
+
+> [!NOTE]
+> The [Fabric Analyst in a Day (FAIAD)](https://aka.ms/LearnFAIAD) workshop is a free, hands-on training designed for analysts working with Power BI and Microsoft Fabric. You can get hands-on experience on how to analyze data, build reports, using Fabric. It covers key concepts like working with lakehouses, creating reports, and analyzing data in the Fabric environment.
 
 ## Create a lakehouse to store data
 

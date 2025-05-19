@@ -162,7 +162,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
 
   * If your user account requires multifactor authentication (MFA), sign in to SharePoint with your MFA device (phone app, smart card, etc.).
   
-  * Azure B2B Guest user accounts aren't supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
+* Azure B2B guest user accounts — whether individual or group members — aren't supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
 
 * When viewing Power BI reports embedded in SharePoint Online, there's no option for users to switch between Power BI environments.
 

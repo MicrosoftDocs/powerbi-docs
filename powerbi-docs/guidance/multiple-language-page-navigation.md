@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
-ms.date: 07/21/2023
+ms.date: 05/11/2025
 ---
 # Add support for multiple-language page navigation
 
@@ -69,6 +69,9 @@ The multiple-language demo project contains buttons for navigation. To learn mor
 1. Select **OK** to save your selection.
 
 The report now has no visible tabs when you publish it to the Power BI service. The report opens to the **Sales Summary** page. Readers can move from page to page by using the buttons, which are localized by using the **Translated Localized Labels** table.
+
+> [!NOTE]
+> With this technique, the screen reader treats each button as a separate entity and doesn't group them together as it would with tabs.
 
 ## Related content
 

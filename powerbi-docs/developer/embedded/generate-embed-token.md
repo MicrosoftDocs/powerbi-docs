@@ -3,7 +3,7 @@ title: Generate an embed token in Power BI embedded analytics
 description: Learn about the considerations, limitations, and required permissions for generating an embed token.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer:
+ms.reviewer: Amos Hersch
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
@@ -74,6 +74,8 @@ To embed a Power BI report that has a semantic model with a Direct Query connect
   * Specify all dataset IDs in the request.
   * Set the [`XmlaPermissions`](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) to *Read Only* for each semantic model in the request.
   * For each Single Sign-on (SSO) enabled data source, provide the identity blob for the data source in the [`DatasourceIdentity`](/rest/api/power-bi/embed-token/generate-token#datasourceidentity).
+
+In this scenario, all semantic models must reside on a premium workspace. Trial embed tokens cannot be used to embed a report of this type.
 
 ## Renew tokens before they expire
 

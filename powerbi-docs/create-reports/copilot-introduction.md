@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/04/2025
+ms.date: 04/25/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -47,8 +47,6 @@ To help you build more valuable reports, Copilot can now engage with you to gath
 After you create a page with Copilot, you see an outline in the Copilot chat pane. Review the outline to ensure that the page meets your needs. The outline also adds transparency so you can see which data fields Copilot is using to build out the report.
 
 ## Access Copilot in the Power BI service
-
-To access Copilot in the Power BI service, you need to have a Contributor role on the Fabric capacity or Premium capacity.
 
 - To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
 - To create the narrative visual and generate Copilot reports, you need edit access to the workspace.
@@ -166,6 +164,11 @@ Copilot can add descriptions to your semantic model measures. People who build r
 Copilot can write a DAX query. For example, you can type in a prompt to describe what DAX query you would like it to generate, and select Send or press Enter. To run what is returned, select Keep it to add it to query tab. Then select Run or press F5 to see the results of the DAX query. Read more in the article [Write DAX queries](/dax/dax-copilot).
 
 :::image type="content" source="media/copilot-introduction/copilot-dax-query.png" alt-text="Screenshot showing Copilot suggested DAX query." lightbox="media/copilot-introduction/copilot-dax-query.png":::
+
+### Clear Chat
+Users can clear conversation history in Power BI Copilot by clicking the broom icon at the top of the pane. This allows users to switch topics without carrying over previous context.
+
+:::image type="content" source="media/copilot-introduction/copilot-clear-chat.png" alt-text="Screenshot of Copilot Clear Chat feature.":::
 
 ## Copilot preview features
 

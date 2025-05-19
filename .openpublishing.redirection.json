@@ -6455,6 +6455,16 @@
             "source_path": "powerbi-docs/consumer/end-user-basic-concepts.md",
             "redirect_url": "/power-bi/fundamentals/service-basic-concepts",
             "redirect_document_id": true
-        }               
+        },                
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-power-bi-salesforce.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-organization-app",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/fundamentals/desktop-format-pane.md",
+            "redirect_url": "/power-bi/create-reports/desktop-report-view",
+            "redirect_document_id": false
+        }              
   ]
 }
