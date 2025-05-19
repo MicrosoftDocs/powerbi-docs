@@ -9,7 +9,7 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 02/21/2025
 LocalizationGroup: Model your data
-no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
+no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, LOOKUP, LOOKUPWITHTOTALS, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
 # Using visual calculations (preview)
 
@@ -116,6 +116,8 @@ The following templates are available:
 * **Versus next.** Compares a value to a subsequent value, using the :::no-loc text="NEXT"::: function.
 * **Versus first.** Compares a value to the first value, using the :::no-loc text="FIRST"::: function.
 * **Versus last.** Compares a value to the last value, using the :::no-loc text="LAST"::: function.
+* **Look up a value with context.** Find a value or evaluate an expression on the visual matrix within the current context, using the :::no-loc text="LOOKUP"::: function.
+* **Look up a value with totals.** Find a value or evaluate an expression on the visual matrix with totals, using the :::no-loc text="LOOKUPWITHTOTALS"::: function.
 
 Selecting a template inserts the template in the formula bar. You can use these templates as starting points. You can also add your own expressions without relying on templates.
 
@@ -234,9 +236,6 @@ You can use many of the existing DAX functions in visual calculations. Since vis
 
 Visual calculations also introduce a set of functions specific to visual calculations. Many of these functions are easier to use shortcuts to DAX window functions.
 
-> [!NOTE]
-> Only use the visual calculations specific functions mentioned in the table below. Other visual calculations specific functions are for internal use only at this time and should not be used. Refer to the table below for any updates of the functions available for use as this preview progresses.
-
 | Function | Description | Example | Shortcut to |
 | --- | --- | --- | --- |
 | [COLLAPSE](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | Percent of parent = DIVIDE([Sales Amount], COLLAPSE([Sales Amount], ROWS)) | N/A |
@@ -246,6 +245,8 @@ Visual calculations also introduce a set of functions specific to visual calcula
 | [FIRST](/dax/first-function-dax) | Refers to the first row of an axis. | ProfitVSFirst = [Profit] – FIRST([Profit]) | [INDEX(1)](/dax/index-function-dax) |
 | [ISATLEVEL](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | IsFiscalYearAtLevel = ISATLEVEL([Fiscal Year]) | N/A |
 | [LAST](/dax/last-function-dax) | Refers to the last row of an axis. | ProfitVSLast = [Profit] – LAST([Profit]) | [INDEX(-1)](/dax/index-function-dax) |
+| [LOOKUP](/dax/lookup-function-dax)| Evaluate expression in visual matrix using the current context. | LookupSalesFor2025WithContext = LOOKUP(SUM([Sales]) [Year], "2025")| N/A |
+| [LOOKUPWITHTOTALS](/dax/lookupwithtotals-function-dax)| Evaluate expression in visual matrix with totals. | LookupSalesFor2025WithTotals = LOOKUPWITHTOTALS(SUM([Sales]), [Year], "2025")| N/A|
 | [MOVINGAVERAGE](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | MovingAverageSales = MOVINGAVERAGE([Sales Amount], 2) | [WINDOW](/dax/window-function-dax) |
 | [NEXT](/dax/next-function-dax) | Refers to a next row of an axis. | ProfitVSNext = [Profit] – NEXT([Profit]) | [OFFSET(1)](/dax/offset-function-dax) |
 | [PREVIOUS](/dax/previous-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – PREVIOUS([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
