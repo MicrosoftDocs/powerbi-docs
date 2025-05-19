@@ -41,9 +41,7 @@ Use the following procedure to add the Power Automate visual:
 
     :::image type="content" source="media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png" alt-text="Screenshot of selecting the Power Automate icon from the Visualizations pane.":::
 
-    Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
-
----
+1. Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
 1. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
 
