@@ -16,9 +16,9 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-The Text slicer (preview) visual in Power BI is an interactive element that enables users to filter data directly within reports and dashboards. It offers a dynamic and intuitive way to explore and analyze large datasets by triggering filters through input text values.
+The text slicer (preview) visual in Power BI is an interactive element that enables users to filter data directly within reports and dashboards. It offers a dynamic and intuitive way to explore and analyze large datasets by triggering filters through input text values.
 
-Text slicers provide a flexible and precise filtering experience by allowing users to input free-form text. Unlike traditional slicers that rely on predefined categories (for example, dropdowns or checkboxes), text slicers empower users to define their own filter criteria, making them ideal for scenarios where exact string matching or custom input is required.
+Text slicers provide a flexible and precise filtering experience by allowing users to input free-form text. Unlike traditional slicers that rely on predefined categories (for example, dropdowns or checkboxes), text slicers empower users to define their own filter criteria, making them ideal for scenarios where exact string matching or custom input is required.
 
 > [!IMPORTANT]
 > The text slicer (preview) is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before it is released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
@@ -40,7 +40,7 @@ In the following guide, we're using the [Retail Analysis Sample PBIX file](https
 1. On the left-side navigation pane, select **Open**; otherwise, on the top-left of the window, select **File > Open**.
 1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view, ready for you to begin.
 
-:::image type="content" source="media/text-slicer/text-slicer-sample.png" alt-text="Screenshot of the sample file showing district manager names as selectable tiles." lightbox="media/text-slicer/text-slicer-sample.png":::
+:::image type="content" source="media/button-slicer/button-slicer-sample.png" alt-text="Screenshot of the sample file showing district manager names as selectable tiles." lightbox="media/button-slicer/button-slicer-sample.png":::
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have an individual **Power BI Pro license** or that you save the report in **Premium capacity**.
