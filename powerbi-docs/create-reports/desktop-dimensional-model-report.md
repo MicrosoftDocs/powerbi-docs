@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: From dimensional model to stunning report in Power BI Desktop"
 description: In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 20 minutes.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

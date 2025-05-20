@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Create a decomposition tree with a Power BI sample"
 description: Learn to explore the Retail Analysis sample with a decomposition tree in the Power BI service and Power BI Desktop.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: 
 ms.custom: ''
 ms.service: powerbi

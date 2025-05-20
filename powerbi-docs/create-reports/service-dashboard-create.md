@@ -1,8 +1,8 @@
 ---
 title: Create a Power BI dashboard from a report
 description: Learn how to pin visualizations from existing reports to a dashboard in Power BI to help users understand data relationships.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: Create quick reports in the Power BI service
 description: Learn how to create quick reports in the Power BI service. Paste data straight into Power BI on the web, and Power BI automatically generates visuals for you.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

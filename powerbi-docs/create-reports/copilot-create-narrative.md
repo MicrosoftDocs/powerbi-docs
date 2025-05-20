@@ -1,8 +1,8 @@
 ---
 title: Create a narrative visual with Copilot for Power BI
 description: When you're using Copilot, you can quickly create a narrative of your report.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
