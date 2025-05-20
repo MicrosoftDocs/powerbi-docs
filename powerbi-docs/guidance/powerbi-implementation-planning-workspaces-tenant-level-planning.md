@@ -1,6 +1,6 @@
 ---
-title: "Power BI Tenant-Level Workspace Planning"
-description: "Get an introduction to the Power BI workspace strategic planning decisions you should make at the tenant level."
+title: "Implementation Planning: Tenant-Level Workspaces"
+description: "Review the strategic Power BI planning decisions you make at the tenant level for workspaces in Microsoft Fabric."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -11,18 +11,20 @@ ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
 
-# Power BI implementation: Tenant-level workspace planning
+# Power BI implementation planning: Workspaces at the tenant level
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This article covers tenant-level Fabric workspace planning, with an emphasis on the Power BI experience. It's primarily targeted at:
+This article describes strategic implementation planning that you do at the _tenant level_ for [Microsoft Fabric workspaces](/fabric/fundamentals/workspaces), with an emphasis on the Power BI experience inside Fabric.
 
-- **Fabric administrators**: The administrators who are responsible for overseeing Fabric in the organization.
-- **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing data and BI and supporting self-service users throughout the organization.
+The article primarily is for:
 
-Secondarily, this article might also be of interest to self-service creators who need to create, publish, and manage content in workspaces.
+- **Fabric administrators**: Administrators who are responsible for overseeing the Fabric implementation in the organization.
+- **Center of Excellence (CoE), IT, and business intelligence (BI) teams**: Teams that are responsible for overseeing the use of data and BI in the organization, and for supporting self-service users throughout the organization.
 
-Because workspaces can be used in different ways, most tactical decisions will be made at the workspace level (described in the [next article](powerbi-implementation-planning-workspaces-workspace-level-planning.md)). However, there are some strategic planning decisions to make at the tenant level, too.
+This article might might be helpful for self-service creators who create, publish, and manage content in workspaces.
+
+Because workspaces can be used in different ways, most tactical implementation decisions are made at the [workspace level](powerbi-implementation-planning-workspaces-workspace-level-planning.md). However, there are some strategic planning decisions to make at the tenant level, too.
 
 We recommend that you make tenant-level workspace decisions as early as possible because they affect everything else. Also, it's easier to make individual workspace decisions when you're clear about your overall workspace goals and objectives.
 
@@ -219,6 +221,7 @@ When you consider the workspace governance level, key decisions and actions incl
 > - **Create documentation for workspace governance requirements**: Create useful documentation targeted at content creators that includes what their responsibilities are for managing content in a governed workspace. Make the information available in your centralized portal and training materials.
 > - **Create workspace auditing processes**: For workspaces that are considered governed, create an auditing process to identify areas of noncompliance with the most important requirements. Ensure that someone is responsible for contacting content owners to address compliance issues.
 
-## Related content
+## Next step
 
-In the [next article](powerbi-implementation-planning-workspaces-workspace-level-planning.md) in this series, learn about workspace-level planning.
+> [!div class="nextstepaction"]
+> [Power BI implementation planning: Workspaces at the workspace level](powerbi-implementation-planning-workspaces-workspace-level-planning.md)

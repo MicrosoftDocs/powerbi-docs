@@ -1,6 +1,6 @@
 ---
-title: "Power BI Workspace-Level Workspace Planning"
-description: "Get an introduction to the Power BI workspace tactical planning decisions you should make at the workspace level."
+title: "Implementation Planning: Workspace-Level Workspaces"
+description: "Review the tactical Power BI planning decisions you make at the workspace level for workspaces in Microsoft Fabric."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
@@ -11,15 +11,17 @@ ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
 
-# Power BI implementation: Workspace-level workspace planning
+# Power BI implementation planning: Workspaces at the workspace level
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This article covers Fabric workspace-level planning, with an emphasis on the Power BI experience. It's primarily targeted at:
+This article describes tactical implementation planning that you do at the _workspace level_ for [Microsoft Fabric workspaces](/fabric/fundamentals/workspaces), with an emphasis on the Power BI experience inside Fabric.
 
-- **Fabric administrators**: The administrators who are responsible for overseeing Fabric in the organization.
-- **Center of Excellence, IT, and BI team**: The teams who are also responsible for overseeing data and BI and supporting self-service users throughout the organization.
-- **Content creators and owners**: Self-service creators who need to create, publish, and manage content in workspaces.
+The article primarily is for:
+
+- **Fabric administrators**: Administrators who are responsible for overseeing the Fabric implementation in the organization.
+- **Center of Excellence (CoE), IT, and business intelligence (BI) teams**: Teams that are responsible for overseeing the use of data and BI in the organization, and for supporting self-service users throughout the organization.
+- **Content creators and owners**: Self-service users who create, publish, and manage content in workspaces.
 
 To use workspaces effectively, you make many tactical decisions. Whenever possible, individual workspace-level decisions should align with your [tenant-level decisions](powerbi-implementation-planning-workspaces-tenant-level-planning.md).
 
@@ -581,9 +583,11 @@ Other technical factors might influence your workspace setup:
 When you consider other technical factors, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Pay attention to technical factors**: As you work through the planning process, determine whether a technical consideration or limitation (such as per-workspace storage limits) might influence your decision-making process.
-> - **Reorganize workspace content**: If storage limits could become a problem, create separate workspaces now and republish content to these new workspaces.
+> - **Pay attention to technical factors**: As you work through the planning process, determine whether a technical consideration or limitation (such as per-workspace storage limits) influences your decision-making process.
+> - **Reorganize workspace content**: If storage limits might become a problem, create separate workspaces now, and then republish content to these new workspaces.
 
 ## Related content
 
-For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).
+For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see:
+
+- [Introduction to Power BI implementation planning](powerbi-implementation-planning-introduction.md)
