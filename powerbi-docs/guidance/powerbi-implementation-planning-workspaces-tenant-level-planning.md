@@ -42,16 +42,14 @@ You have two options:
 
 You should set up the [Create workspaces](/fabric/admin/portal-workspace#create-workspaces) tenant setting in the [Fabric admin portal](/fabric/admin/admin-center) according to your decision on who is allowed to create workspaces. For more information, see [Govern workspaces](powerbi-implementation-planning-tenant-administration.md#govern-workspaces).
 
-### Checklist: Workspace creation permissions
-
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider permissions for who can create workspaces, key decisions and actions include:
+_Checklist_ of key decisions and actions when you plan who can create workspaces:
 
 > [!div class="checklist"]
 >
 > - **Determine and validate user needs**: Schedule collaborative discussions with relevant stakeholders and interested parties to learn how users currently work. The goal is to ensure that you have a clear understanding of user needs.
-> - **Decide who is allowed to create workspaces**: Determine whether all users, only a centralized team, or certain centralized and decentralized users will be permitted to create a new workspace. Ensure this decision is purposefully aligned with your data culture goals. Be sure to obtain approval from your executive sponsor.
+> - **Decide who is allowed to create workspaces**: Determine whether all users, only a centralized team, or certain centralized and decentralized users can create a new workspace. Ensure that the decision purposefully aligns with your goals for data culture in the organization. Be sure to obtain approval from your executive sponsor.
 > - **Create a security group for who is permitted to create workspaces**: If a subset of users will be permitted to create workspaces, a security group is needed. Name the group clearly, like _Fabric workspace creators_. Add members who are permitted to create workspaces to this security group.
 > - **Update the tenant setting**: Add the new security group to the _Create workspaces_ tenant setting in the admin portal. In addition to the _Fabric workspace creators_ group, other groups that might also be allowed for this tenant setting are the COE, support, and Fabric administrators.
 
@@ -90,11 +88,9 @@ The following list describes more considerations related to workspace naming.
 > [!NOTE]
 > We recommend that you notify users when a workspace name is scheduled to change. In most scenarios, it's safe to rename a workspace in the Fabric portal. The _GroupID_ value, the unique identifier of a workspace, doesn't change and is part of the workspace URL. However, [XMLA connections](../enterprise/service-premium-connect-tools.md) are affected because they connect by using the workspace name instead of GroupID.
 
-### Checklist: Workspace naming conventions
-
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider workspace naming conventions, key decisions and actions include:
+_Checklist_ of key decisions and actions when you plan workspace naming conventions:
 
 > [!div class="checklist"]
 >
@@ -108,7 +104,7 @@ Clarity on how content is owned and managed is always essential. That clarity is
 
 One way to support workspace ownership and management in Fabric is with _domains_. A domain provides a way to logically group multiple workspaces that have similar characteristics. For example, you might create a domain to group all your sales workspaces together, and another domain for your finance workspaces.
 
-Here are the key advantages of using domains.
+Here are the key advantages of using domains:
 
 - Domains group similar workspaces into a single management boundary.
 - Domains permit certain tenant settings to be managed at the domain level. For more information, see [Override tenant-level settings](/fabric/governance/domains#override-tenant-level-settings).
@@ -132,9 +128,9 @@ Here are some considerations when you plan for Fabric domains in your tenant.
 
 For more information, see [Govern domains](powerbi-implementation-planning-tenant-administration.md#govern-domains).
 
-### Checklist: Workspace domains
-
 :::image type="icon" source="media/common/checklist.svg" border="false":::
+
+_Checklist_ of key decisions and actions when you plan for workspace domains:
 
 When you plan for workspace domains, key decisions and actions include:
 
@@ -151,12 +147,12 @@ When you plan for workspace domains, key decisions and actions include:
 
 If you decide to limit who can create workspaces, the broader user population needs to know what the process is to request a new workspace. In this case, it's important to establish a request process that's easy and convenient for users to find and follow.
 
-It's also critical to respond quickly to a request for a new workspace. A service level agreement (SLA) of 2 to 4 hours is ideal. If the process to request a new workspace is too slow or burdensome, people will use the workspaces they have, so they can keep moving. If they elect to skip creating a new workspace, what they use instead could be suboptimal. They might choose to reuse an existing workspace that isn't well-suited to the new content, or they might share content from their personal workspace.
+It's also critical to respond quickly to a request for a new workspace. A service-level agreement (SLA) of 2 to 4 hours is ideal. If the process to request a new workspace is too slow or burdensome, people will use the workspaces they have, so they can keep moving. If they elect to skip creating a new workspace, what they use instead could be suboptimal. They might choose to reuse an existing workspace that isn't well-suited to the new content, or they might share content from their personal workspace.
 
 > [!TIP]
-> When you create a new process, the goal  is to make it easy for people to comply with the process. Like with all data governance decisions, the point is to make it easy for users to do the right thing.
+> When you create a new process, the goal  is to make it easy for people to comply with the process. Like with all data governance decisions, the point is to make it easy for users to follow documented processes.
 
-The following table lists the information to collect in a request for a new workspace.
+The following table lists the information to collect in a request for a new workspace:
 
 | Information needed | Example | Validation required |
 | --- | --- | --- |
@@ -178,9 +174,7 @@ You can choose from many technology options to create an online form for the wor
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-### Checklist: Workspace creation process
-
-When you consider the process to request a new workspace, key decisions and actions include:
+_Checklist_ of key decisions and actions when you plan the process to request a new workspace:
 
 > [!div class="checklist"]
 >
@@ -226,11 +220,11 @@ The following table lists some of the most common requirements when a workspace 
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider the workspace governance level, key decisions and actions include:
+_Checklist_ of key decisions and actions when you plan workspace governance level:
 
 > [!div class="checklist"]
 >
-> - **Decide on the workspace governance levels**: Determine the levels of governance that you'll need. Try to keep it as simple as possible.
+> - **Decide on the workspace governance levels**: Determine the levels of governance that you'll need. Keep it as simple as possible.
 > - **Decide on the criteria for how to classify a workspace**: Determine what the decision criteria to use to classify workspaces to a specific governance level.
 > - **Decide what the workspace governance requirements are**: For each governance level, determine what the specific requirements.
 > - **Decide how to designate the workspace governance level**: Find the simplest way to identify the governance level for a workspace. You could record it as part of its name, part of its description, or stored elsewhere (for example, a SharePoint list that contains more information about each workspace).

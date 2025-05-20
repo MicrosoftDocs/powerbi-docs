@@ -34,23 +34,23 @@ When you plan for workspaces, it's important to consider not only the type of co
 
 Consider the following two examples of finance-related workspaces. Although they're both dedicated to the same team, each workspace serves a different purpose:
 
-- **Financial month-end workspace**: The _Financial month-end workspace_ contains reconciliation and month-end closing reports. This workspace is considered an informal workspace to support collaborative efforts. A Power BI app isn't necessary for content viewers because the primary use of this workspace is collaboration by a small group of people who work closely together. Most team members have permission to edit content in this workspace.
-- **Financial reporting workspace**: The _Financial reporting workspace_ contains the finalized, presentation-level reports. This workspace contains content that's broadly distributed throughout the organization to many viewers (including executives) by using a Power BI app. The workspace is closely [governed](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-governance-level).
+- **Financial month-end workspace**: The _Financial month-end workspace_ contains reconciliation and month-end closing reports. This workspace is considered an informal workspace to support collaborative efforts. A Power BI app isn't necessary for content viewers because the primary use of this workspace is collaboration by a small group of people who work closely together. Most team members have permissions that let them edit content in this workspace.
+- **Financial reporting workspace**: The _Financial reporting workspace_ contains the finalized, presentation-level reports. This workspace contains content that's broadly distributed throughout the organization to many viewers, including to executives, via a Power BI app. The workspace is closely [governed](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-governance-level).
 
-With these two examples in mind, consider two specific aspects of workspace purpose: _intent for collaboration_, and _intent for viewing_.
+With these two examples in mind, consider two specific aspects of workspace purpose: _intent for collaboration_ and _intent for viewing_.
 
 ### Intent for collaboration
 
-The primary objective of a workspace in the Fabric portal is to facilitate [collaboration](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md#collaborate-in-a-workspace) among multiple people.
+The primary objective of a workspace in the Fabric portal is to facilitate [collaboration](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md#collaborate-in-a-workspace) among multiple contributors.
 
-Collaboration in a workspace can happen in multiple ways:
+Collaboration in a workspace occurs in multiple ways:
 
-- **Team-based development**: Multiple people can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the semantic model, while other users might focus on building reports.
-- **Testing and validations**: Users might need to perform data validations for new content. Subject matter experts from the business unit might need to perform user acceptance testing (UAT), or a data quality team might need to validate the accuracy of the semantic model.
-- **Enhancements**: Stakeholders and consumers of the content might suggest enhancements to the content as circumstances change.
-- **Ownership transfer**: Another person or team might [take over responsibility](fabric-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that someone else created.
+- **Team-based development**: Multiple users can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the semantic model, while other users might focus on building reports.
+- **Testing and validations**: Users might need to perform data validations for new content. Subject matter experts from the business unit might need to perform user acceptance testing (UAT). A data quality team might need to validate the accuracy of the semantic model.
+- **Enhancements**: Content stakeholders and consumers might suggest enhancements to content throughout the life of the organization.
+- **Ownership transfer**: Another person or team might [assume responsibility](fabric-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that someone else created.
 
-One of the key areas of the Fabric adoption roadmap is [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md). The type of collaboration that occurs in a workspace differs based on the approach that is used for content ownership and management:
+One of the key areas of the Fabric adoption roadmap is [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md). The type of collaboration that occurs in a workspace differs based on the approach you choose for content ownership and management:
 
 - **Business-led self-service BI**: Content that the content creators in a business unit or department own or manage. In this scenario, most collaboration in the workspace occurs among users within that business unit.
 - **Managed self-service BI**: Data that a centralized team owns or manages, whereas various content creators from business units take responsibility for reports and dashboards. In this scenario, it's highly likely that multiple workspaces are needed to securely facilitate collaboration by multiple teams of people.
@@ -58,7 +58,7 @@ One of the key areas of the Fabric adoption roadmap is [content ownership and ma
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider your intentions for collaboration in a workspace, key decisions and actions include:
+_Checklist_ of key decisions and actions when you plan for collaboration in a workspace:
 
 > [!div class="checklist"]
 > - **Consider expectations for collaboration**: Determine how workspace collaboration needs to occur and who's involved within a single team or across organizational boundaries.
@@ -90,7 +90,7 @@ Another key area of the Fabric adoption roadmap is [content delivery scope](fabr
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider your expectations for how workspace content is viewed, key decisions and actions include:
+_Checklist_ of key decisions and actions when you consider expectations for how workspace content is viewed:
 
 > [!div class="checklist"]
 > - **Consider expectations for viewing content**: Determine how you expect consumers to view content that's been published to the workspace. Consider whether viewing will happen directly in the workspace directly or by using a different method.
@@ -116,10 +116,10 @@ A personal workspace is limited in its options to share content with others. You
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider your expectations for how personal workspaces are used, key decisions and actions include:
+_Checklist_ of key decisions and actions when you consider expectations for how personal workspaces are used:
 
 > [!div class="checklist"]
-> - **Understand current use of personal workspaces**: Have conversations with your users and review the [activity activity data](../enterprise/service-admin-auditing.md#track-user-activities-in-power-bi) to ensure you understand what users are doing with their personal workspaces.
+> - **Understand the current use of personal workspaces**: Have conversations with your users and review the [activity activity data](../enterprise/service-admin-auditing.md#track-user-activities-in-power-bi) to ensure you understand what users are doing with their personal workspaces.
 > - **Decide how personal workspaces should be used**: Decide how personal workspaces should (and should not) be used in your organization. Focus on balancing risk and ease of use with needs for content collaboration and viewing.
 > - **Relocate personal workspace content when it's appropriate**: For critical content, move content from personal workspaces to standard workspaces when it's appropriate.
 > - **Create and publish documentation about personal workspaces**: Create useful documentation or FAQs for your users about how to effectively use personal workspaces. Make the information available in your centralized portal and training materials.
@@ -145,7 +145,7 @@ When the intent for collaboration involves decentralization and multiple teams b
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider workspace ownership responsibilities, key decisions and actions include:
+_Checklist_ of key decisions and actions when you consider workspace ownership responsibilities:
 
 > [!div class="checklist"]
 > - **Gain a full understanding of how content ownership works**: Ensure that you deeply understand how content ownership and management is happening throughout the organization. Recognize that you likely won't have a one-size-fits-all approach to apply uniformly across the entire organization. Understand decentralized or distributed ownership needs.
@@ -191,7 +191,7 @@ Examples: _Finance Department_ or _Sales Team Analytics_
 
 The following diagram depicts a generalized example of how you might separate workspaces by department, team, or subject area. Option one and option two look the same; which items are included in each workspace would depend on the nature of the data that department, team, or subject area focuses on, and how they intend on using it.
 
-:::image type="content" source="media/powerbi-implementation-planning-workspace-planning/workspace-planning-area.svg" alt-text="Diagram shows separate workspaces for departments, teams, or subject areas." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-workspace-planning/workspace-planning-area.svg" alt-text="Diagram that shows separate workspaces for departments, teams, or subject areas." border="false":::
 
 The advantages of option 2 include:
 
@@ -234,10 +234,10 @@ Disadvantages of option 3 include:
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider the subject area and scope of workspace content, key decisions and actions include:
+_Checklist_ of key decisions and actions when you consider the subject area and scope of workspace content:
 
 > [!div class="checklist"]
-> - **Assess how workspaces are currently set up**: Review how people currently use workspaces. Identify what works well and what doesn't work well. Plan for potential changes and user education opportunities.
+> - **Assess how workspaces currently are set up**: Review how people currently use workspaces. Identify what works well and what doesn't work well. Plan for potential changes and user education opportunities.
 > - **Consider the best workspace scope**: Identify how you want people to use workspaces based on purpose, subject area, scope, and who's responsible for managing the content.
 > - **Identify where highly sensitive content resides**: Determine when you can justify creating a specific workspace for highly sensitive content.
 > - **Create and publish documentation about using workspaces**: Create useful documentation or FAQs for your users about how to organize and use workspaces. Make this information available in training materials and your centralized portal.
@@ -272,7 +272,7 @@ The advantages for separating data workspaces from reporting workspaces include:
 - Coownership scenarios are clarified. When shared semantic models are delivered from a centralized BI or IT team, self-service content creators in business units publish reports. A good practice is to segregate the semantic models in a separate workspace. This approach avoids the ambiguity of coownership scenarios because ownership and responsibility per workspace is more clearly defined.
 - Row-level security (RLS) is enforced. When you encourage creators to work in different workspaces, they don't have unnecessary edit permissions to the original semantic model. The advantage is that [RLS](/fabric/security/service-admin-row-level-security) and [object-level security (OLS)](/analysis-services/tabular-models/object-level-security) are enforced for content creators and content viewers.
 
-The disadvantages for separating data workspaces from reporting workspaces include:
+Disadvantages for separating data workspaces from reporting workspaces include:
 
 - A workspace naming convention is required to differentiate a data workspace from a reporting workspace.
 - Extra user education is required to ensure that content authors and consumers know where to publish and find content.
@@ -340,7 +340,7 @@ To better organize content in a workspace, consider the following guidelines:
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider the item types to store in a workspace, key decisions and actions include:
+_Checklist_ of key decisions and actions when you consider item types that a user can store in a workspace:
 
 > [!div class="checklist"]
 > - **Determine your objectives for data reuse**: Decide how to achieve data reuse as part of a managed self-service BI strategy.
@@ -389,7 +389,7 @@ When multiple workspaces exist for development, test, and production, it results
 - _Fabric data workspace admins – Quarterly Financials **\[Test\]**_
 - _Fabric data workspace admins – Quarterly Financials_
 
-The previous examples are intended to convey that the use of groups that map to workspace roles can quickly become unmanageable.
+The preceding examples are intended to convey that the use of groups that map to workspace roles can quickly become unmanageable.
 
 > [!TIP]
 > In some scenarios, fewer groups are needed, especially in the area of development. For example, you might not need to specify a workspace viewers group in development. That group is needed only for testing and production. Or you might be able to use the same workspace admins group for development, test, and production. For more information about development, test, and production, see [Workspace lifecycle management](#workspace-lifecycle-management).
@@ -399,24 +399,24 @@ The effective use of groups for workspace roles can require considerable plannin
 Lastly, the examples show one workspace - _Quarterly Financials_ - but often it's possible to manage a collection of workspaces with one set of groups. For example, multiple workspaces owned and managed by the finance team might be able to use the same groups.
 
 > [!NOTE]
-> You'll often plan security more broadly, taking into consideration semantic model [Read](../connect-data/service-datasets-manage-access-permissions.md) and [Build](../connect-data/service-datasets-build-permissions.md) permission requirements, and [row-level security (RLS)](/fabric/security/service-admin-row-level-security) requirements. For more information about what to consider for supporting report consumers and content creators, see the [security planning](powerbi-implementation-planning-security-overview.md) articles. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
+> Often, you plan security more broadly, taking into consideration semantic model [Read](../connect-data/service-datasets-manage-access-permissions.md) and [Build](../connect-data/service-datasets-build-permissions.md) permissions and [row-level security (RLS)](/fabric/security/service-admin-row-level-security) requirements. For more information about what to consider to support report consumers and content creators, see the [security implementation planning](powerbi-implementation-planning-security-overview.md) articles. This article focuses only on workspace roles as part of the workspace planning process.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider workspace access, key decisions and actions include:
+_Checklist_ of key decisions and actions when you consider workspace access:
 
 > [!div class="checklist"]
 > - **Refer to roles and responsibilities**: Use the roles and responsibilities information prepared earlier to plan for workspace roles.
 > - **Identify who'll own and manage the content**: Verify that all the items you expect to store in a single workspace align with the people who are responsible for owning and managing the content. If mismatches occur, consider how the workspaces could be better organized.
 > - **Identify who'll view content in the workspace**: Determine whether people will view content directly from the workspace.
-> - **Plan for the workspace roles**: Determine which people are suited to the **Admin**, **Member**, **Contributor**, and **Viewer** roles for each workspace.
+> - **Plan for the workspace roles**: Determine which people are suited to the Admin, Member, Contributor, and Viewer roles for each workspace.
 > - **Decide on group or individual role assignments**: Determine whether you intend to assign individual users or groups to workspace roles. Check whether you can use existing groups for workspace role assignments.
 > - **Determine whether new groups need to be created**: Consider carefully whether you need to create a new group per workspace role. Bear in mind that it can result in creating and maintaining many groups. Determine what the process is when a new workspace is created and how related groups will be created.
 > - **Configure and test the workspace role assignments**: Verify that users have the appropriate security settings they need to be productive while creating, editing, and viewing content.
 
 ## Workspace domain
 
-As described earlier in this article, it's critical to have clarity on workspace ownership. One way to further support workspace ownership in Fabric is with _domains_. A domain is a way to logically group multiple workspaces that have similar characteristics.
+As described earlier in this article, it's critical to have clarity on workspace ownership. One way to further support workspace ownership in Fabric is by using domains. A _domain_ is a logical grouping of multiple workspaces that have similar characteristics.
 
 For more information about planning for domains in your tenant, see [Workspace domains](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-domains).
 
@@ -434,13 +434,15 @@ The [type of license](/fabric/enterprise/licenses#microsoft-fabric-license-types
 
 - **Features**: Different features are supported. PPU includes more features (such as [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)) that aren't available in Pro. Many more Fabric features (such as [lakehouses](/fabric/data-engineering/lakehouse-overview)) become available for workspaces assigned to a Fabric capacity.
 - **Content access**: The license type determines who can access content in the workspace:
+
   - Only users who have a PPU license (in addition to being assigned a workspace role) can access a PPU workspace.
   - If you expect to deliver content to content viewers who have a free license, you need a [license of F64 or higher](/fabric/enterprise/licenses#capacity-and-skus).
+
 - **Data storage location**: When you need to store data in a specific geographic region (outside of your home region), that becomes possible with a workspace assigned to a capacity (and, accordingly, the capacity is created in that region). For more information about data storage location, see [Tenant setup](powerbi-implementation-planning-workspaces-tenant-level-planning.md).
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider the workspace license mode, key decisions and actions include:
+_Checklist_ of key decisions and actions when you consider workspace license mode:
 
 > [!div class="checklist"]
 > - **Consider which features are required for each workspace**: Determine the feature requirements of each workspace. Consider differences in workload and which users you intend to access the workspace.
@@ -468,7 +470,7 @@ When you combine the lifecycle management features, during your planning process
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you plan for workspace lifecycle management, key decisions and actions include:
+_Checklist_ of key decisions and actions when you plan for lifecycle management of your workspaces:
 
 > [!div class="checklist"]
 > - **Determine how users need to use version control**: Analyze how your self-service and advanced content creators work to determine whether file versioning with OneDrive for Business or SharePoint is appropriate. Introduce Git integration for advanced users who need more capabilities. Prepare to support both types of users.
@@ -503,7 +505,7 @@ It's possible to connect a workspace to an Azure Data Lake Storage Gen2 account.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider workspace integration with Data Lake Storage Gen2, key decisions and actions include:
+_Checklist_ of key decisions and actions when you plan for workspace integration with Data Lake Storage Gen2:
 
 > [!div class="checklist"]
 > - **Decide whether the workspace will be used in ways that require Azure Storage**: Consider whether a bring-your-own-data-lake scenario would be useful for the storage of dataflows and/or whether you have requirements to use the semantic model backup and restore functionality.
@@ -514,20 +516,20 @@ When you consider workspace integration with Data Lake Storage Gen2, key decisio
 > - **Set the workspace-level Azure Storage connections**: Specify the Azure Storage account for each individual workspace. You must set the storage account prior to creating any Power BI dataflows in the workspace. If you intend to use semantic model backups, ensure the workspace license mode is set to capacity or PPU.
 > - **Update your workspace management documentation**: Ensure that your workspace management documentation includes information about how to assign Data Lake Storage Gen2 storage accounts correctly. Make the information available in your centralized portal and training materials.
 
-### Workspace integration with Azure Log Analytics
+### Workspace integration with Log Analytics
 
-[Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) is a service within [Azure Monitor](/azure/azure-monitor/#features). You can use Azure Log Analytics to review diagnostic data generated by the Analysis Services engine, which hosts Power BI semantic models. Workspace-level logs are useful for analyzing performance and trends, performing data refresh analysis, analyzing XMLA endpoint operations, and more. Azure Log Analytics is available only for workspaces assigned to capacity or PPU.
+[Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) is a service of [Azure Monitor](/azure/azure-monitor/#features). You can use Azure Log Analytics to review diagnostic data generated by the Analysis Services engine, which hosts Power BI semantic models. Workspace-level logs are useful for analyzing performance and trends, performing data refresh analysis, analyzing XMLA endpoint operations, and more. Log Analytics is available only for workspaces assigned to capacity or PPU.
 
 > [!NOTE]
-> Although the names are similar, the data sent to [Azure Log Analytics](../transform-model/log-analytics/desktop-log-analytics-overview.md) is different from the data captured by the [Power BI activity log](../enterprise/service-admin-auditing.md). The data sent to Azure Log Analytics is concerned with [events](../transform-model/log-analytics/desktop-log-analytics-configure.md#events-and-schema) generated by the Analysis Services engine (for example, _Query begin_ and _Query end_ events). Conversely, the activity log is concerned with tracking [user activities](/fabric/admin/operation-list) (for example, _View report_ or _Edit report_ events).
+> Although the names are similar, the data sent to [Log Analytics](../transform-model/log-analytics/desktop-log-analytics-overview.md) is different from the data captured by the [Power BI activity log](../enterprise/service-admin-auditing.md). The data sent to Log Analytics is concerned with [events](../transform-model/log-analytics/desktop-log-analytics-configure.md#events-and-schema) generated by the Analysis Services engine (for example, _Query begin_ and _Query end_ events). Conversely, the activity log is concerned with tracking [user activities](/fabric/admin/operation-list) (for example, _View report_ or _Edit report_ events).
 
 For more information about semantic model event logs, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
 
-For more information about how to set up Azure Log Analytics for use with Power BI, see [Configuring Azure Log Analytics for Power BI](../transform-model/log-analytics/desktop-log-analytics-configure.md). Be sure to understand the prerequisites you must have in place to make the integration work.
+For more information about how to set up Log Analytics for use with Power BI, see [Configure Log Analytics for Power BI](../transform-model/log-analytics/desktop-log-analytics-configure.md). Be sure to understand prerequisites you must have in place to implement the integration.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider workspace integration with Azure Log Analytics, key decisions and actions include:
+_Checklist_ of key decisions and actions when you plan for workspace integration with Log Analytics:
 
 > [!div class="checklist"]
 > - **Decide whether workspace administrators can connect to Log Analytics**: Determine whether all or some workspace administrators are permitted to use Log Analytics to analyze workspace-level logs. If access is restricted to only certain people, decide which group to use.
@@ -558,29 +560,29 @@ Here are some suggestions for how to set the key settings to improve the experie
   - Whether it's a data workspace (one that's dedicated to storing reusable items, such as a lakehouse, warehouse, data pipeline, dataflow, or semantic model)
   - Whether it's a reporting workspace (one that's dedicated to storing analytical items, such as reports, dashboards, or metrics)
 
-- **Data model settings**: Allows workspace members, administrators, and users with Build permission on the semantic models to edit Power BI data models by using the web interface. This setting is used together with the _Users can edit data models in the Power BI service_ tenant setting. This setting should align with your decisions and processes for how content is created, managed, and deployed. Also, consider your method for [version control](#workspace-lifecycle-management) as described earlier in this article.
+- **Data model settings**: Allows workspace members, administrators, and users with Build permissions on the semantic models to edit Power BI data models by using the web interface. This setting is used with the _Users can edit data models in the Power BI service_ tenant setting. This setting should align with your decisions and processes for how to create, manage, and deploy content. Also, consider your method for [version control](#workspace-lifecycle-management) as described earlier.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider the other workspace properties, key decisions and actions include:
+_Checklist_ of key decisions and actions when you consider other workspace properties:
 
 > [!div class="checklist"]
-> - **Specify the workspace description**: Ensure that a helpful and thorough description is included in the workspace description.
-> - **Use a helpful image for the workspace**: Set a consistent image for the workspace that'll visually help users understand its subject area, who owns and manages content in the workspace, and/or the type of content stored in the workspace.
-> - **Identify contacts for the workspace**: Verify whether the workspace administrators should be the workspace contacts, or whether specific users or groups should be specified.
+> - **Specify the workspace description**: Ensure to include a helpful and thorough description in the workspace description.
+> - **Use a helpful image for the workspace**: Set a consistent image for the workspace that visually helps users understand its subject area, who owns and manages content in the workspace, and the type of content stored in the workspace.
+> - **Identify contacts for the workspace**: Verify whether workspace administrators should be the workspace contacts, or whether to set specific users or groups for contact.
 > - **Specify data model settings**: Consider which workspaces can permit web-based data model editing. Set the _Users can edit data models in the Power BI service_ tenant setting according to your preferences for who can edit and manage content.
 
 ### Other technical factors
 
 Other technical factors might influence your workspace setup:
 
-- Integrating content with other tools and services might have licensing implications. For example, if you embed a [Power Apps visual](/power-apps/maker/canvas-apps/powerapps-custom-visual) in a Power BI report, you need appropriate Power Apps licenses.
+- Integrating content with other tools and services might have licensing implications. For example, if you embed a [Power Apps visual](/power-apps/maker/canvas-apps/powerapps-custom-visual) in a Power BI report, you must have relevant Power Apps licenses.
 - [Per-workspace storage limits](/fabric/admin/portal-workspaces#workspace-limits) apply to the amount of data you can store in a Pro workspace. If using capacity or PPU isn't an option, consider how to work within the storage limits during the workspace planning process.
-- When you install a [template app](../connect-data/service-template-apps-install-distribute.md) from AppSource, it creates a new workspace that has a narrow subject and scope.
+- When you install a [template app](../connect-data/service-template-apps-install-distribute.md) from Microsoft AppSource, the app creates a new workspace that has a narrow subject and scope.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-When you consider other technical factors, key decisions and actions include:
+_Checklist_ of key decisions and actions when you consider other technical factors:
 
 > [!div class="checklist"]
 > - **Pay attention to technical factors**: As you work through the planning process, determine whether a technical consideration or limitation (such as per-workspace storage limits) influences your decision-making process.
