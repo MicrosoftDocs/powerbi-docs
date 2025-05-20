@@ -189,7 +189,7 @@ Press CTRL+F to open the find and replace dialog, ensure that the Regular Expres
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-26.png" alt-text="Screenshot of the TMDL view in Power BI showing the Find and Replace feature in use. The Replace input is active with an option to toggle between Find and Replace modes, highlighted in the toolbar above the code editor.":::
 
-Enter the following patterns in the find and replace fields and select **Replace All. **
+Enter the following patterns in the find and replace fields and select **Replace All.**
 
 | Action   | Pattern/Replacement           |
 |----------|-------------------------------|
