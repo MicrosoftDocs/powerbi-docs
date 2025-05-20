@@ -6,16 +6,16 @@ ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Workspaces
 
-[!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
-
 This overview describes a series of articles that help you plan your implementation of [Microsoft Fabric workspaces](/fabric/fundamentals/workspaces). The articles focus on the Power BI experience inside Fabric.
+
+[!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
 As described in each article, the article audience might include:
 
