@@ -26,7 +26,7 @@ The article primarily is for:
 To use workspaces effectively, you make many tactical decisions. Whenever possible, individual workspace-level decisions should align with your [tenant-level decisions](powerbi-implementation-planning-workspaces-tenant-level-planning.md).
 
 > [!NOTE]
-> The concept of a workspace originated in Power BI. With Fabric, the purpose of a workspace became broader. The result is that a workspace can now contain items from one or more different [Fabric experiences](/fabric/get-started/fabric-terminology) (also called _workloads_). Even though the content scope is broader than in Power BI, you can apply most of the workspace planning activities that are described in these articles to planning your Fabric workspace.
+> The concept of a workspace originated in Power BI. In Fabric, the purpose of a workspace broadens. A Fabric workspace can contain items from more than one [Fabric experience](/fabric/get-started/fabric-terminology) (also called a _workload_). Although the content scope is broader than in Power BI, you can apply most of the workspace planning activities described in these articles to planning your Fabric workspaces.
 
 ## Workspace purpose
 
