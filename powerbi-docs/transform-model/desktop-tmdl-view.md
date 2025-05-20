@@ -81,9 +81,9 @@ The context tooltip shows on mouse hover, providing information about each TMDL 
 
 When the cursor is on a squiggle or selected text, the TMDL view displays a light bulb icon indicating available Code Actions, such as generating lineage tags or correcting property name misspellings.
 
-:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-21.png" alt-text="Screenshot of the TMDL view in the code editor showing a light bulb icon next to a squiggle, indicating available Code Actions like generating lineage tags or correcting property name misspellings.":::
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-21.png" alt-text="Screenshot of the TMDL view in the code editor showing a light bulb icon next to a squiggle, indicating available Code Actions like generating lineage tags.":::
 
-:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-22.png" alt-text="Screenshot of the TMDL view in the code editor showing a light bulb icon next to a squiggle, indicating available Code Actions like generating lineage tags or correcting property name misspellings.":::
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-22.png" alt-text="Screenshot of the TMDL view in the code editor showing a light bulb icon next to a squiggle, indicating available Code Actions like correcting property name misspellings.":::
 
 ### Code formatting
 
@@ -179,7 +179,7 @@ The [compatibility level](/analysis-services/tabular-models/compatibility-level-
 
 ## Object renaming with TMDL view
 
-To rename an object within the TMDL view, it is necessary to script its parent. For instance, renaming a column requires scripting the table, while renaming a table necessitates scripting the entire semantic model. Learn more about tabular object model hierarchy in the following document: [Tabular object model hierarchy](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions#tabular-object-model-hierarchy).
+To rename an object within the TMDL view, it is necessary to script its parent. For instance, renaming a column requires scripting the table, while renaming a table necessitates scripting the entire semantic model. Learn more about tabular object model hierarchy in the following document: [Tabular object model hierarchy](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions#tabular-object-model-hierarchy&preserve-view=true).
 
 With the TMDL view, bulk renaming can be performed efficiently using simple find and replace patterns. For instance, you can rename all table columns to lowercase by following these steps.
 
