@@ -22,7 +22,7 @@ The article primarily is for:
 - **Fabric administrators**: Administrators who are responsible for overseeing the Fabric implementation in the organization.
 - **Center of Excellence (CoE), IT, and business intelligence (BI) teams**: Teams that are responsible for overseeing the use of data and BI in the organization, and for supporting self-service users throughout the organization.
 
-This article might might be helpful for self-service creators who create, publish, and manage content in workspaces.
+This article might be helpful for self-service creators who create, publish, and manage content in workspaces.
 
 Because workspaces can be used in different ways, most tactical implementation decisions are made at the [workspace level](powerbi-implementation-planning-workspaces-workspace-level-planning.md). However, there are some strategic planning decisions to make at the tenant level, too.
 
@@ -33,18 +33,23 @@ We recommend that you make tenant-level workspace decisions as early as possible
 
 ## Workspace creation permissions
 
-The decision on who is allowed to create workspaces in the Power BI service is a [data culture](fabric-adoption-roadmap-data-culture.md) and [governance](fabric-adoption-roadmap-governance.md) decision. Generally, there are two ways to approach this decision:
+The decision of who is allowed to create workspaces in the Power BI service is a [data culture](fabric-adoption-roadmap-data-culture.md) and [governance](fabric-adoption-roadmap-governance.md) decision.
 
-- **All (or most) users are permitted to create new workspaces**: This approach usually aligns with existing decisions for other applications. For example, when users are permitted to create their own SharePoint sites or Teams channels, it makes sense that Fabric adopts the same policy.
-- **Limited to a selective set of users who are permitted to create new workspaces**: This approach usually indicates a governance plan is in place or is planned. Managing this process can be fully centralized (for instance, only IT is permitted to create a workspace). A more flexible and practical approach is when it's a combination of centralized and decentralized individuals. In this case, certain satellite members of the Center of Excellence (CoE), champions, or trusted users are trained to create and manage workspaces on behalf of their business unit.
+You have two options:
+
+- **All (or most) users can create new workspaces**: This approach usually aligns with existing decisions for other applications. For example, when users are permitted to create their own SharePoint sites or Teams channels, it makes sense that Fabric adopts the same policy.
+- **Workspace creation is limited to a select set of users**: This approach usually indicates a governance plan is in place or is planned. Managing this process can be fully centralized (for instance, only IT is permitted to create a workspace). A more flexible and practical approach is when it's a combination of centralized and decentralized individuals. In this case, specific satellite members of the CoE, champions, or trusted users are trained to create and manage workspaces on behalf of their business units.
 
 You should set up the [Create workspaces](/fabric/admin/portal-workspace#create-workspaces) tenant setting in the [Fabric admin portal](/fabric/admin/admin-center) according to your decision on who is allowed to create workspaces. For more information, see [Govern workspaces](powerbi-implementation-planning-tenant-administration.md#govern-workspaces).
+
+### Checklist: Workspace creation permissions
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
 When you consider permissions for who can create workspaces, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Determine and validate user needs**: Schedule collaborative discussions with relevant stakeholders and interested parties to learn how users currently work. The goal is to ensure that you have a clear understanding of user needs.
 > - **Decide who is allowed to create workspaces**: Determine whether all users, only a centralized team, or certain centralized and decentralized users will be permitted to create a new workspace. Ensure this decision is purposefully aligned with your data culture goals. Be sure to obtain approval from your executive sponsor.
 > - **Create a security group for who is permitted to create workspaces**: If a subset of users will be permitted to create workspaces, a security group is needed. Name the group clearly, like _Fabric workspace creators_. Add members who are permitted to create workspaces to this security group.
@@ -77,6 +82,7 @@ The following list describes more considerations related to workspace naming.
 - **Use a standard suffix**: You can add a suffix for additional information, such as when you use different workspaces for development, test, and production. We recommend appending _\[Dev\]_ or _\[Test\]_ suffixes but leaving production as a user-friendly name without a suffix. For example: _FIN-Quarterly Financials \[Dev\]_.
 - **Be consistent with the Power BI app name**: The workspace name and its Power BI app can be different, particularly if it improves usability or understandability for app consumers. We recommend keeping the names similar to avoid confusion.
 - **Omit unnecessary words**: The following words might be redundant, so avoid them in your workspace names:
+
   - The word _workspace_.
   - The words _Fabric_ or _Power BI_. Many Fabric workspaces contain items from various workloads. However, you might create a workspace that's intended to target only a specific workload (such as Power BI, Data Factory, or Synapse Data Engineering). In that case, you might choose a short suffix so that the workspace purpose is made clear.
   - The name of the organization. However, when the primary audience is external users, including the organization's name can be helpful.
@@ -84,11 +90,14 @@ The following list describes more considerations related to workspace naming.
 > [!NOTE]
 > We recommend that you notify users when a workspace name is scheduled to change. In most scenarios, it's safe to rename a workspace in the Fabric portal. The _GroupID_ value, the unique identifier of a workspace, doesn't change and is part of the workspace URL. However, [XMLA connections](../enterprise/service-premium-connect-tools.md) are affected because they connect by using the workspace name instead of GroupID.
 
+### Checklist: Workspace naming conventions
+
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
 When you consider workspace naming conventions, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Determine requirements or preferences for workspace names**: Consider how you want to name your workspaces. Decide whether you want strict naming convention requirements or more flexible requirements guided by suggestions and examples.
 > - **Review existing workspace names**: Update existing workspace names as appropriate so that they're good examples for users to follow. When users see existing workspace being renamed, they'll interpret that as an implied standard to adopt.
 > - **Create documentation for workspace naming conventions**: Provide reference documentation about workspace naming convention requirements and preferences. Be sure to include examples that show the correct use of acronyms, prefixes, and suffixes. Make the information available in your centralized portal and training materials.
@@ -123,11 +132,14 @@ Here are some considerations when you plan for Fabric domains in your tenant.
 
 For more information, see [Govern domains](powerbi-implementation-planning-tenant-administration.md#govern-domains).
 
+### Checklist: Workspace domains
+
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
 When you plan for workspace domains, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Validate how content ownership works**: Ensure that you deeply understand how content ownership and management is happening throughout the organization. Factor that information into your plans to organize workspaces into domains.
 > - **Plan workspace domains**: Have discussions to plan how to best organize workspaces into domains. Confirm all key decisions with the CoE and your executive sponsor.
 > - **Educate Fabric administrators**: Ensure that your tenant administrators are familiar with how to create a domain, and how to assign and manage domain administrators.
@@ -155,7 +167,7 @@ The following table lists the information to collect in a request for a new work
 | License mode assigned to the workspace | A Fabric capacity for the sales team is needed because a large number of the salespeople are viewers only and they have a free license | &bull;&nbsp;What level of [Fabric capacity](/fabric/enterprise/licenses#capacity-and-skus) is required? |
 | Data storage requirements | Data residency in Canada | &bull;&nbsp;Do data residency needs require [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium)? <br/><br/>&bull;&nbsp;What quantity of data do you expect to process and store? |
 | Workspace administrators | FabricContentAdmins-FieldSalesAnalytics | &bull;&nbsp;Is the administrator (preferably) a group? <br/><br/>&bull;&nbsp;Are there at least two administrators? |
-| Person submitting the request | requestor@contoso.com | &bull;&nbsp;Does the person submitting the request work in a role or line of business related to the information provided? |
+| Person submitting the request | <requestor@contoso.com> | &bull;&nbsp;Does the person submitting the request work in a role or line of business related to the information provided? |
 
 This table includes the minimum amount of information that's required to set up a workspace. However, it doesn't include all possible configurations. In most cases, a workspace administrator takes responsibility for completing the setup after the workspace is created. For more information, see [Workspace-level settings](powerbi-implementation-planning-workspaces-workspace-level-planning.md).
 
@@ -166,9 +178,12 @@ You can choose from many technology options to create an online form for the wor
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
+### Checklist: Workspace creation process
+
 When you consider the process to request a new workspace, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Establish a process for requesting a new workspace**: Decide what the specific process is for requesting a new workspace. Consider the information you'll need, how to capture the information, and who processes the request.
 > - **Create a standard form for requesting a new workspace**: Decide what information to include on the form for a new workspace. Consider building a Power Apps app to collect the information from the user. Ensure links to the form are broadly available and easy to find in your centralized portal and other common locations. Include a link to the form in ongoing communications too.
 > - **Decide who will respond to submitted requests and how quickly**: Determine who'll process requests. Consider what the expected response time is for handling a request for a new workspace. Verify that you can handle requests quickly so that self-service users don't experience delays.
@@ -214,6 +229,7 @@ The following table lists some of the most common requirements when a workspace 
 When you consider the workspace governance level, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Decide on the workspace governance levels**: Determine the levels of governance that you'll need. Try to keep it as simple as possible.
 > - **Decide on the criteria for how to classify a workspace**: Determine what the decision criteria to use to classify workspaces to a specific governance level.
 > - **Decide what the workspace governance requirements are**: For each governance level, determine what the specific requirements.
