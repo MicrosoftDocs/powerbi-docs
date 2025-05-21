@@ -47,7 +47,8 @@ For example, the following Power BI report lets you modify the discount value se
 For data write-back scenarios, user data functions have native connection management for the following Fabric data sources:
 
 * Fabric SQL databases
-* Fabric warehouses
+* Fabric warehouses 
+* Fabric lakehouses (for files)
 
 For most write-back scenarios, we recommend using SQL database as your underlying data source. SQL databases perform well with the heavy read/write operations required in reporting scenarios. To use SQL database, a tenant admin needs to [Enable SQL database in Fabric using admin portal tenant settings](/fabric/database/sql/enable).
 
