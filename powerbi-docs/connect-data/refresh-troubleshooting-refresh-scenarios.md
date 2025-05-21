@@ -191,6 +191,10 @@ If this error appears, the following steps can address the issue:
   ```
 These steps remove the introduced blank row and restores the original behavior. If you have multiple calculated tables that uses *SummarizeColumns*, changes for all tables should be submitted together in a single transaction which requires the [Tabular Editor](https://www.sqlbi.com/tools/tabular-editor/) to make the modifications, since Power BI Desktop cannot batch multiple table changes into a single transaction.
 
+## Connection errors when refreshing from Semantic Mmodels
+
+The Analysis Services connector may encounter the error "The connection either timed out or was lost" if the "data reader" remains inactive for several minutes. Note that the underlying data reader in this case is a variation of `Microsoft.AnalysisServices.AdomdClient.AdomdDataReader`. This error can occur, for instance, when a data refresh is copying from a Semantic Model and the Power Query script involves multiple joins. In such scenarios, data might not be retrieved from the outer join for extended periods, leading to the connection being closed with the aforementioned error. To work around this issue, you can use the `Table.Buffer` function to cache the outer join table.
+
 ## Related content
 
 * [Data refresh in Power BI](refresh-data.md)  
