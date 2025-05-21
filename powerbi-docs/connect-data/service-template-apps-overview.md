@@ -120,6 +120,7 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Composite models | Composite models shouldn't be used in the app builder workspace. App installers can use composite models after installing the app. |
 | Large semantic model storage format | Large semantic model storage format isn't supported for template apps. |
 | Mobile layout | Partial support. Mobile layout positioning of elements is supported. Mobile layout changes to other properties, such as color, are not supported. |
+| PBIR enahnced reports | [PowerBI Enahnced Reports format](https://powerbi.microsoft.com/en-us/blog/power-bi-enhanced-report-format-pbir-in-power-bi-desktop-developer-mode-preview/) is not supported. |
 
 ## Support
 
