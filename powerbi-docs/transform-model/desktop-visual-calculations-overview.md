@@ -265,7 +265,6 @@ Visual calculations are currently in preview, and during preview, you should be 
 
 * Not all visual types are supported. Use the visual calculations edit mode to change visual type. Also, custom visuals haven't been tested with visual calculations or hidden fields.
 * The following visual types and visual properties have been tested and found not to work with visual calculations or hidden fields:
-  * Treemap
   * Slicer
   * R visual
   * Python visual
