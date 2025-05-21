@@ -382,16 +382,20 @@
         href: ../visuals/power-bi-visualization-card-visual-new-format-settings.md
       - name: (new) Card visual considerations and limitations
         href: ../visuals/power-bi-visualization-card-visual-considerations.md
-    - name: Slicers
+    - name: Button slicer
       items: 
       - name: Create a button slicer (preview)
         href: ../visuals/power-bi-visualization-button-slicer.md
       - name: Button slicer considerations and limitations
         href: ../visuals/power-bi-visualization-button-slicer-considerations-limitations.md
+    - name: List slicer
+      items: 
       - name: Create a list slicer (preview)
         href: ../visuals/power-bi-visualization-list-slicer.md
       - name: List slicer considerations and limitations
         href: ../visuals/power-bi-visualization-list-slicer-considerations-limitations.md
+    - name: Text slicer
+      items: 
       - name: Create a text slicer (preview)
         href: ../visuals/power-bi-visualization-text-slicer.md
       - name: Text slicer considerations and limitations
