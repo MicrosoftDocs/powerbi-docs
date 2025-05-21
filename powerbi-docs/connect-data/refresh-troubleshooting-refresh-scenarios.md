@@ -193,7 +193,9 @@ These steps remove the introduced blank row and restores the original behavior. 
 
 ## Connection errors when refreshing from Semantic Mmodels
 
-The Analysis Services connector may encounter the error "The connection either timed out or was lost" if the "data reader" remains inactive for several minutes. Note that the underlying data reader in this case is a variation of `Microsoft.AnalysisServices.AdomdClient.AdomdDataReader`. This error can occur, for instance, when a data refresh is copying from a Semantic Model and the Power Query script involves multiple joins. In such scenarios, data might not be retrieved from the outer join for extended periods, leading to the connection being closed with the aforementioned error. To work around this issue, you can use the `Table.Buffer` function to cache the outer join table.
+The Analysis Services connector may encounter the error ```The connection either timed out or was lost```. This error is usually a transient error when the network connection fails, and a retry will succeed. 
+ 
+In some circumstances, this error can be more permanent when the results of the query are being used in a complex M expression, and the results of the query are not fetched quickly enough during execution of the M program. For example, this error can occur when a data refresh is copying from a Semantic Model and the M script involves multiple joins. In such scenarios, data might not be retrieved from the outer join for extended periods, leading to the connection being closed with the above error. To work around this issue, you can use the ```Table.Buffer``` function to cache the outer join table.
 
 ## Related content
 
