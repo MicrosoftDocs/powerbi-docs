@@ -87,7 +87,6 @@ Copilot can search through content metadata to find the most relevant item. The 
   - [Verified answer charts](copilot-prepare-data-ai-verified-answers.md)
 - **For data agents**:
   - Published descriptions
-  - Instructions
   - Example queries
   - Data source schema information
 - **For workspace apps and org apps**:
