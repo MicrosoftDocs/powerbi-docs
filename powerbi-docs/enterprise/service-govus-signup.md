@@ -1,8 +1,8 @@
 ---
 title: Sign up for Power BI for United States government customers
 description: For US government customers, learn how to sign up for Power BI with a new Microsoft 365 Government plan and begin the onboarding process.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin

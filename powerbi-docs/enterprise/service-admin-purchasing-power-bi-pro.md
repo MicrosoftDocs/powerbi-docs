@@ -1,8 +1,8 @@
 ---
 title: Purchase Power BI and assign licenses.
 description: Learn how to purchase Power BI and assign user licenses to users so they can access content and collaborate with others in the Power BI service.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
