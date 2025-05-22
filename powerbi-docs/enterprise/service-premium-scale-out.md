@@ -1,8 +1,8 @@
 ---
 title: Power BI semantic model scale-out
 description: Learn how Power BI semantic model scale-out improves your Power BI performance by reducing semantic model query and refresh times
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

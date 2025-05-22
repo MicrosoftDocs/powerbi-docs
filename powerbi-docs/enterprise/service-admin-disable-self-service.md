@@ -1,8 +1,8 @@
 ---
 title: About self-service sign-ups and purchases 
 description: Overview information for admins about self-service options for Power BI.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

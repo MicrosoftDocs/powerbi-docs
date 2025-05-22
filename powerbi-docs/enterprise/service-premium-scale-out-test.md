@@ -1,8 +1,8 @@
 ---
 title: Power BI semantic model scale-out test
 description: Learn how test the Power BI semantic model scale-out feature after it's enabled
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
