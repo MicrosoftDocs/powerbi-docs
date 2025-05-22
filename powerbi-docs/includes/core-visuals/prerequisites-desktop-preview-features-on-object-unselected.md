@@ -1,7 +1,8 @@
 ---
 title: On-object interaction feature is unselected
 description: Prerequisite - On-object interaction feature is unselected (Preview features)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

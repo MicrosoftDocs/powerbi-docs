@@ -1,7 +1,8 @@
 ---
 title: Line style
 description: Setting - Line style (Border & Divider, Line style)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

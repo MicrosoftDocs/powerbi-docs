@@ -1,7 +1,8 @@
 ---
 title: Marker size
 description: Setting - Marker size (Error bars, Bar, Marker size)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

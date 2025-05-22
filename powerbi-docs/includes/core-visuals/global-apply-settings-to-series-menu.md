@@ -1,7 +1,8 @@
 ---
 title: Categories
 description: Setting - Apply settings to Series (Column)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

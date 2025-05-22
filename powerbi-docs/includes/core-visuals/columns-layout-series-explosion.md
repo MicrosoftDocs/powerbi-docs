@@ -1,7 +1,8 @@
 ---
 title: Series explosion
 description: Setting - Series explosion (Columns, Layout, Series explosion)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

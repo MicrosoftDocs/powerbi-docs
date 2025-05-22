@@ -1,8 +1,8 @@
 ---
 title: Apply Conditional Table Formatting in Power BI
 description: Learn how to apply customized conditional formatting to tables and matrices in Power BI, including color gradients, data bars, KPI icons, and web links.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

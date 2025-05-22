@@ -1,7 +1,8 @@
 ---
 title: Customize lines
 description: Setting - Customize lines (Customize lines toggle)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

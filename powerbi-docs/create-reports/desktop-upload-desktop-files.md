@@ -1,8 +1,8 @@
 ---
 title: Publish from Power BI Desktop
 description: Learn how to publish semantic models and reports from Power BI Desktop to the Power BI service, which publishes the data in the model to your Power BI workspace.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

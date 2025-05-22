@@ -1,7 +1,8 @@
 ---
 title: Alignment
 description: Setting - Alignment (Global - Row headers, Text + Specific column, Values)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

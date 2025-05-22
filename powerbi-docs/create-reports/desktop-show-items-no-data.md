@@ -1,8 +1,8 @@
 ---
 title: Show items with no data in Power BI
 description: Learn how Power BI behaves when determining relevant data, and how it handles and displays items with no data.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -1,7 +1,8 @@
 ---
 title: Background image
 description: Setting - Background image (Global, Background image, Browse)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
