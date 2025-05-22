@@ -1,7 +1,8 @@
 ---
 title: Web URL
 description: Setting - Web URL (Cell elemements, Web URL)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

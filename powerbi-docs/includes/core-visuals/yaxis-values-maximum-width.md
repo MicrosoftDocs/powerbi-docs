@@ -1,7 +1,8 @@
 ---
 title: Maximum width
 description: Setting - Maximum width (Y-axis, Values, Maximum width)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

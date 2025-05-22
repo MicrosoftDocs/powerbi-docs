@@ -1,9 +1,9 @@
 ---
 title: Create a matrix visual in Power BI
 description: This article explains what a matrix visual is, and how to create a matrix visual in Power BI Desktop and Power BI Service.
-author: JaedenArmstrong
+author: JulCsc
 ms.author: miguelmyers
-ms.reviewer: davidiseminger
+ms.reviewer: juliacawthra
 ms.custom: sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals

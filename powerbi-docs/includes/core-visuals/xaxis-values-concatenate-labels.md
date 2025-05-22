@@ -1,7 +1,8 @@
 ---
 title: Concatenate labels
 description: Setting - Concatenate labels (X-axis, Values, Concatenate labels)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

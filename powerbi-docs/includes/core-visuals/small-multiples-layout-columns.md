@@ -1,7 +1,8 @@
 ---
 title: Columns
 description: Setting - Columns (Small multiples, Layout, Columns)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

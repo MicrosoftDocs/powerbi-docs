@@ -1,7 +1,8 @@
 ---
 title: Select label
 description: Setting - Select label (Reference labels, Apply settings to, Select label)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

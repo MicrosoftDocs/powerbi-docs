@@ -1,7 +1,8 @@
 ---
 title: Fix size
 description: Setting - Fix size (Images, Image, Fix size)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

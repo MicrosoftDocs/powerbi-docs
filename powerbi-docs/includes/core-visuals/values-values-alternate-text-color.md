@@ -1,7 +1,8 @@
 ---
 title: Alternate text color
 description: Setting - Alternate text color (Values, Values, Alternate Text color)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

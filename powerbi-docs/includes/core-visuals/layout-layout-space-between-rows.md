@@ -1,7 +1,8 @@
 ---
 title: Space between rows
 description: Setting - Max Space between rows (Layout, Layout, Space between rows)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

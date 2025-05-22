@@ -1,8 +1,8 @@
 ---
 title: How to configure workloads in Power BI Premium
 description: Learn how to configure workloads in a Power BI Premium capacity.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

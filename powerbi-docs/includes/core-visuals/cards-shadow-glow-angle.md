@@ -1,7 +1,8 @@
 ---
 title: Angle
 description: Setting - Angle (Cards, Shadow & Glow, Angle)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

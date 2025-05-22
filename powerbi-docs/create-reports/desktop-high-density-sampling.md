@@ -1,8 +1,8 @@
 ---
 title: High-Density Line Sampling in Power BI
 description: Learn how the high-density line sampling algorithm in Power BI improves visuals that sample high-density data.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

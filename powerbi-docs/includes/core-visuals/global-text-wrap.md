@@ -1,7 +1,8 @@
 ---
 title: Text wrap
 description: Setting - Text wrap (Global use)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

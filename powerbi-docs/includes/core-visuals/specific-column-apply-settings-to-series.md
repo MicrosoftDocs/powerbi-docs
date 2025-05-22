@@ -1,7 +1,8 @@
 ---
 title: Series
 description: Setting - Series (Specific column, Apply settings to, Series)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
