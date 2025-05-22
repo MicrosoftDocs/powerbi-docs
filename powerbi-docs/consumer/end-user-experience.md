@@ -69,7 +69,7 @@ A dashboard is a single page that shows visualizations of the most important ele
     :::image type="content" source="media/end-user-experience/power-bi-related.png" alt-text="Screenshot of the Related content window.":::
 
   > [!NOTE]
-  > If you don't see the dashboard right away, it could be because the sample file is large. Check back in a few minutes. 
+  > If the dashboard doesn't appear in the list right away, it could be because the sample file is large. Check back in a few minutes. 
 
 1. The dashboard opens in the Power BI service. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md).
 
