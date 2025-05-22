@@ -1,8 +1,8 @@
 ---
 title: Expression-based titles in Power BI Desktop
 description: Create dynamic titles in Power BI Desktop that change based on programmatic expressions, using conditional programmatic formatting.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

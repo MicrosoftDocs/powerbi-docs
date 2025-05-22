@@ -1,7 +1,8 @@
 ---
 title: Horizontal alignment
 description: Setting - Horizontal alignment (Callout values, Values, Horizontal alignment)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

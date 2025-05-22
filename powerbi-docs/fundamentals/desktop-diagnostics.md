@@ -1,8 +1,8 @@
 ---
 title: Power BI Desktop diagnostics collection
 description: Learn how to retrieve Power BI Desktop diagnostic information, and then submit it to Microsoft Support.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

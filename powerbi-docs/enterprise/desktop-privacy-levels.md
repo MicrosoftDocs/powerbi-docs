@@ -1,8 +1,8 @@
 ---
 title: Understand Power BI Desktop privacy levels
 description: Power BI Desktop privacy levels
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

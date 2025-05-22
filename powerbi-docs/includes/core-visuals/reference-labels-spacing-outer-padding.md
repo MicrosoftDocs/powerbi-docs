@@ -1,7 +1,8 @@
 ---
 title: Outer padding
 description: Setting - Outer padding (Reference labels, Spacing, Outer padding)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

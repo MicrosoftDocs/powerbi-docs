@@ -1,7 +1,8 @@
 ---
 title: Top right corner
 description: Setting - Top right corner (Global, Shape, Top right corner)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

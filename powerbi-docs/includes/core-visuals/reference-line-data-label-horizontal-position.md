@@ -1,7 +1,8 @@
 ---
 title: Horizontal position
 description: Setting - Horizontal position (Reference line, Data label, Horizontal position)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,8 +1,8 @@
 ---
 title: Group visuals in Power BI Desktop reports
 description: Learn how to group visuals in Power BI Desktop
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

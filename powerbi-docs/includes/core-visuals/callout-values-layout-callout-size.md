@@ -1,7 +1,8 @@
 ---
 title: Callout size
 description: Setting - Callout size (Callout values, Layout, Callout size)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,8 +1,8 @@
 ---
 title: Power BI Security
 description: Learn how Power BI relates to Microsoft Entra ID and other Azure services. 
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

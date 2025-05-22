@@ -1,7 +1,8 @@
 ---
 title: Match ribbon color
 description: Setting - Match ribbon color (Ribbons, Border, Match ribbon color)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,8 @@
 ---
 title: Gridlines
 description: Setting - Gridlines (Small multiples, Border, Gridlines)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,8 +1,8 @@
 ---
 title: Power BI Desktop Send a Smile privacy statement
 description: Understand Microsoft's Send a Smile privacy statement with regard to the Power BI Desktop application.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

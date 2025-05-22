@@ -1,7 +1,8 @@
 ---
 title: Image fit
 description: Setting - Image fit (Global, Image fit)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

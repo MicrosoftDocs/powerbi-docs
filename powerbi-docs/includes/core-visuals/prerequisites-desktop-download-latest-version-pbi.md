@@ -1,7 +1,8 @@
 ---
 title: Download latest version of Power BI Desktop
 description: Prerequisite - Download latest version of Power BI Desktop
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

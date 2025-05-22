@@ -1,7 +1,8 @@
 ---
 title: Row headers
 description: Setting - Row headers (URL icon, Row headers)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

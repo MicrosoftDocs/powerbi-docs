@@ -1,8 +1,8 @@
 ---
 title: Creating accessible reports in Power BI
 description: Learn how to create accessible reports in Power BI Desktop and the Power BI service.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
