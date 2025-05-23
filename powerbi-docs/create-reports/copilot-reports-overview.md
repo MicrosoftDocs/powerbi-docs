@@ -105,18 +105,6 @@ Copilot can add descriptions to your semantic model measures. People who build r
 
 :::image type="content" source="media/copilot-introduction/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/copilot-introduction/copilot-measure-description-model-view.png":::
 
-### Copilot pane preview features
-
-When using the Copilot pane in the **Power BI service**, you see a toggle with the word **Preview** next to it. The preview toggle allows you the opportunity to move into an experience that includes both generally available and public preview capabilities.
-
-To access Copilot features in public preview, select the preview toggle to activate the public preview experience.
-
-:::image type="content" source="media/copilot-preview-toggle/copilot-preview-toggle.png" alt-text="Screenshot of the preview toggle in the on position in the Copilot chat pane.":::
-
-If you don't want users in your organization to have access to the preview toggle, you need to [disable Fabric Copilot](/fabric/admin/service-admin-portal-copilot) in your organization or for specific security groups.
-
-See [Use Copilot preview features in Power BI](copilot-preview-toggle.md) for more information about what features are available in preview.
-
 ### Send feedback
 
 We always welcome your feedback about our products to help us improve Copilot. Give us your feedback directly in the Copilot pane by selecting the feedback button.
