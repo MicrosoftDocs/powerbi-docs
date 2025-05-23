@@ -2,7 +2,7 @@
 title: Tips for creating quality Power BI custom visuals
 description: Learn specific techniques to develop high performance Power BI custom visuals for your organization.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: tebercov , asafmozes
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

@@ -3,7 +3,7 @@ title: View your Power BI visual in Power BI service
 description: Learn how to view your Power BI visual in Power BI service
 services: powerbi
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.topic: include
 ms.date: 11/20/2024
 ms.custom: include file

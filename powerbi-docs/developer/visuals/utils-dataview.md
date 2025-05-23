@@ -2,7 +2,7 @@
 title: Introduction to use Data view utils in Power BI visual
 description: Learn how to install and use SVG utils to simplify parsing of the DataView object for Power BI visuals.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 manager:
 ms.reviewer: tebercov 
 ms.service: powerbi

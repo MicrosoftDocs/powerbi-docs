@@ -2,7 +2,7 @@
 title: CI/CD for org apps in Fabric (Preview)
 description: This article describes how to set up continuous integration and delivery (CI/CD) for org apps in Microsoft Fabric.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-explore

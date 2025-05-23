@@ -2,7 +2,7 @@
 title: Embed a report that uses object-level security
 description: Embed a report that has object-level security (OLS).
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
