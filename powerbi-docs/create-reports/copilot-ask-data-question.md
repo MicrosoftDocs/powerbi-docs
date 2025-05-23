@@ -1,13 +1,13 @@
 ---
 title: Ask Copilot for data from your model
 description: Learn how to use Copilot to visualize data from your semantic model.
-author: msftrien
-ms.author: rien
-ms.reviewer: shlindsay
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: shlindsay, rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 05/23/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
