@@ -60,6 +60,7 @@ The standalone Copilot can help with the following tasks:
 ### Considerations and limitations
 
 The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
+While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use is not officially supported at this time.
 
 #### The Copilot pane: Ask questions about an open report
 
