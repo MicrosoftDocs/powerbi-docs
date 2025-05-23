@@ -102,3 +102,8 @@ Once your data is [marked as prepped for AI](copilot-prepare-data-ai.md#mark-you
 ## Copilot requirements
 
 Read about [requirements to use the standalone Copilot experience](copilot-introduction.md#requirements-for-the-standalone-copilot).
+
+## Considerations and limitations
+
+The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
+

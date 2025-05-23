@@ -153,6 +153,7 @@ When you restart Desktop, you no longer see the **Prep data for AI** button.
   - **Import models**: A model refresh is required in the Power BI service to sync the LSDL/Tooling changes after deployment.
   - **Direct query models**: A model refresh is required in the Power BI service to sync the LSDL/Tooling changes after deployment, but are limited to once a day.
   - **Direct lake models**: A model refresh is required in the Power BI service to sync the LSDL/Tooling changes after deployment, but are limited to once a day.
+- The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
 
 ## Related content
 

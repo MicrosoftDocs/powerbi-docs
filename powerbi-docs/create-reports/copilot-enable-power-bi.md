@@ -140,6 +140,10 @@ To use Copilot for Power BI, you must have access to a Premium Power BI capacity
 > [!NOTE]
 > Copilot in Microsoft Fabric isn't supported on trial stock-keeping units (SKUs). Only paid SKUs are supported.
 
+## Considerations and limitations
+
+The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
+
 ## Send feedback
 
 We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
