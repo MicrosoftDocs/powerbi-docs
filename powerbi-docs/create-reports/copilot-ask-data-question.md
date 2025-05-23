@@ -1,13 +1,13 @@
 ---
 title: Ask Copilot for data from your model
 description: Learn how to use Copilot to visualize data from your semantic model.
-author: msftrien
-ms.author: rien
-ms.reviewer: shlindsay
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: shlindsay, rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 05/23/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -27,8 +27,6 @@ Copilot can answer questions with visuals created from your semantic model's dat
 Before you can use this feature, make sure you satisfy the [requirements for the use of Copilot](../create-reports/copilot-introduction.md#copilot-requirements).
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
-
-Asking Copilot for data from your model is a preview feature.
 
 Q&A needs to be enabled for your model because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default.
 
