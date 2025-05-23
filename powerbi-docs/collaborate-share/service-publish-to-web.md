@@ -7,7 +7,7 @@ ms.reviewer: Ben.Zulauf
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/06/2025
+ms.date: 05/22/2025
 LocalizationGroup: Share your work
 ---
 
@@ -117,20 +117,6 @@ Once you create a Publish to web embed code, you can manage your codes from the 
 4. If you select **Delete**, you're asked for a confirmation.
 
    ![Screenshot of confirming deletion.](media/service-publish-to-web/publish_to_web11.png)
-
-## Transfer embed code ownership
-
-Embed codes are linked directly to the publisher who creates them. This means that if the publisher loses access to the workspace where a report is published, users can no longer view the embedded report. When a publisher leaves a workspace or an organization, Tenant admins can reassign ownership through the Admin portal, thereby restoring user access. 
-
-To change ownership from the Admin portal, follow these steps:
-
-1. On the **Embed codes** page, select **Change ownership**. 
-
-   :::image type="content" source="media/service-publish-to-web/admin-portal-embed-1.png" alt-text="Screenshot of the highlighted Change Ownership button and menu.":::  
-
-1. Choose the new embed code owner from the dropdown menu, then select **OK**.
-
-   :::image type="content" source="media/service-publish-to-web/admin-portal-embed-2.png" alt-text="Screenshot of the Change Ownership dialog.":::
 
 ## Updates to reports, and data refresh
 

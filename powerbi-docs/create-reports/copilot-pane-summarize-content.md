@@ -178,6 +178,7 @@ The following are limitations and considerations across both experiences (also s
 - Copilot summaries only consider visuals with less than 30K rows of data. If more data is included in visuals, Copilot answers using the semantic model itself, not the report visual.
 - Copilot summaries may not work accurately on table/matrix visuals with more than 500 rows. If the visual surpasses 100 rows, Copilot answers using the semantic model itself, not the report visual.
 - Answering specific report questions isn't yet supported in the standalone Copilot experience.
+- The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
 
 ## Send feedback
 

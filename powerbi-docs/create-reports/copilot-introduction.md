@@ -56,6 +56,10 @@ The standalone Copilot can help with the following tasks:
 - [Summarize a report or topic](copilot-pane-summarize-content.md)
 - [Answer questions about your data](copilot-ask-data-question.md)
 - [Answer questions using a Fabric data agent](/fabric/data-science/concept-data-agent)
+ 
+### Considerations and limitations
+
+The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
 
 #### The Copilot pane: Ask questions about an open report
 

@@ -6465,6 +6465,11 @@
             "source_path": "powerbi-docs/fundamentals/desktop-format-pane.md",
             "redirect_url": "/power-bi/create-reports/desktop-report-view",
             "redirect_document_id": false
-        }              
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/copilot-preview-toggle.md",
+            "redirect_url": "/power-bi/create-reports/copilot-enable-power-bi",
+            "redirect_document_id": false
+        }                
   ]
 }

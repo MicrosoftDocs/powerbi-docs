@@ -2,7 +2,7 @@
 title: Power BI visuals interactivity utils
 description: Learn how the interactivity utils can help simplify the implementation of cross-selection and cross-filtering in your Power BI visuals.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi

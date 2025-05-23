@@ -2,7 +2,7 @@
 title: Edit your Microsoft Entra app's permission settings
 description: Learn how to change the API permissions on your Microsoft Entra application.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 keywords: 
 ms.date: 10/21/2024
 ms.topic: overview

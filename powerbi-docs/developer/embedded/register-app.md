@@ -2,7 +2,7 @@
 title: Register a Power BI Embedded app
 description: Set up Power BI Embedded to register a Microsoft Entra app, create a workspace, import content, grant permissions.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.date: 02/02/2025
 ms.topic: how-to
 ms.service: powerbi

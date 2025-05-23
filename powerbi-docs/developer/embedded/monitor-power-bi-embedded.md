@@ -5,7 +5,7 @@ ms.date: 07/30/2024
 ms.custom: horz-monitor
 ms.topic: conceptual
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.service: powerbi
 ms.subservice: powerbi-developer
 # customer intent: As a developer, I want to learn how to monitor my Power BI Embedded application so that I can ensure it's running smoothly.

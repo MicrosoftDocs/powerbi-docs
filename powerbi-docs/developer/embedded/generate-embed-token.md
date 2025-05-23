@@ -2,7 +2,7 @@
 title: Generate an embed token in Power BI embedded analytics
 description: Learn about the considerations, limitations, and required permissions for generating an embed token.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: Amos Hersch
 ms.service: powerbi
 ms.subservice: powerbi-developer
