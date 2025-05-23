@@ -119,3 +119,4 @@ Here are some best practices to make your items more discoverable in the standal
 - Copilot respects hidden elements such as hidden table and column names, and doesn't search over these fields.
 - Copilot best understands natural language. When you're searching for items through the standalone Copilot, adding more context can help with finding more relevant content. For example, searching for "Find reports about Q4 revenue over time" yields better results than a search for the keyword "Q4."
 - If edits are made directly to an item (for example, updating a visual, renaming titles), these changes are reflected in search results within five minutes. If edits are made indirectly to an item (such as renaming the workspace), the changes might take up to 24 hours to reflect in the search results.
+- The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
