@@ -114,8 +114,14 @@ Here are some best practices to make your items more discoverable in the standal
 ## Considerations and limitations
 
 - Copilot respects user permissions and only searches over attributes you have access to and doesn't provide search results containing items you can't access.
-- Copilot respects app audiences, if defined, and only searches over reports that you have access to within an app.
-- Copilot doesn't find semantic models [marked as discoverable](../collaborate-share/service-discovery.md#how-to-mark-a-semantic-model-as-discoverable) unless you already have direct access to the model.
+  - Copilot respects app audiences, if defined, and only searches over reports that you have access to within an app.
+  
+  - Copilot doesn't find semantic models [marked as discoverable](../collaborate-share/service-discovery.md#how-to-mark-a-semantic-model-as-discoverable) unless you already have direct access to the model.
+  
+  - Users with only view access to semantic models will not see models in their search result listings, but can attach models directly to questions. Search lists will expand to include semantic models in a future release.
+  
+  - Users with access to items via [M365 groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide) (sometimes called unified groups) will not be able to find those items with Copilot. Search lists will expand to show items  users have access to via M365 groups in a future release.
+  
 - Copilot respects hidden elements such as hidden table and column names, and doesn't search over these fields.
 - Copilot best understands natural language. When you're searching for items through the standalone Copilot, adding more context can help with finding more relevant content. For example, searching for "Find reports about Q4 revenue over time" yields better results than a search for the keyword "Q4."
 - If edits are made directly to an item (for example, updating a visual, renaming titles), these changes are reflected in search results within five minutes. If edits are made indirectly to an item (such as renaming the workspace), the changes might take up to 24 hours to reflect in the search results.
