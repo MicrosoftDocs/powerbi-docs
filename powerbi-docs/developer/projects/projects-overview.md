@@ -138,14 +138,15 @@ You can make changes to the semantic model definition by using external tools in
 - By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md).
 - By editing JSON metadata in the model.bim file using VS Code or another external tool.
 
+External tools have access to the entire semantic model. While this enables advanced modeling scenarios, it also means that changes made outside of Power BI Desktop can cause unexpected results. In rare cases, this could lead to inconsistencies or unexpected behaviors.
+
 Not every model object supports write operations. Applying changes outside of those supported can cause unexpected results.
 
-Objects that support write operations:
 
 | Object                        | Connect to AS instance     | File change / TMDL view|
 |-------------------------------|----------------------------|----------- |
-| Tables                        | No                         | Yes        |
-| Columns                       | Yes <sup>[1](#rc)</sup>, <sup>[2](#dt)</sup>| Yes        |
+| Tables                        | Yes                        | Yes        |
+| Columns                       | Yes <sup>[1](#dt)</sup>    | Yes        |
 | Calculated tables             | Yes                        | Yes        |
 | Calculated columns            | Yes                        | Yes        |
 | Hierarchies                   | Yes                        | Yes        |
@@ -158,27 +159,21 @@ Objects that support write operations:
 | Row Level Security (RLS)      | Yes                        | Yes        |
 | Object Level Security (OLS)   | Yes                        | Yes        |
 | Annotations                   | Yes                        | Yes        |
-| M expressions                 | No                         | Yes <sup>[3](#mp)</sup>, <sup>[4](#ee)</sup>        |
+| M expressions                 | Yes                        | Yes <sup>[2](#mp)</sup>, <sup>[3](#ee)</sup>        |
 
 Keep in mind:
 
 - Any changes to open files made outside Power BI Desktop requires a restart for those changes to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
 
-- Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating tables with empty partitions or more than one partition results in an error when opening the report.
-
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
 
-- When changing a model that uses Direct Query to connect a Power BI semantic model or Analysis Services model, you must update the ChangedProperties and PBI_RemovedChildren collection for the changed object to include any modified or removed properties. If ChangedProperties and/or PBI_RemovedChildren isn't updated, Power BI Desktop might overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
+- When changing a model that uses Direct Query to connect a Power BI semantic model or Analysis Services model, you must update the ChangedProperties and PBI_RemovedChildren collection for the changed object to include any modified or removed properties. If ChangedProperties and/or PBI_RemovedChildren isn't updated, Power BI Desktop might overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop. To learn more, see [Lineage tags for Power BI semantic models](/analysis-services/tom/lineage-tags-for-power-bi-semantic-models).
 
-- <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns isn't supported when connecting to the AS instance.
+- <a name="dt">1</a> - If the semantic model has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
 
-- <a name="dt">2</a> - If the semantic model has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
+- <a name="mp">2</a> - Partition [SourceType](/dotnet/api/microsoft.analysisservices.tabular.partitionsourcetype) must be Calculated, M, Entity, or CalculationGroup. Partition [Mode](/dotnet/api/microsoft.analysisservices.tabular.modetype) must be Import, DirectQuery, or Dual.
 
-- <a name="mp">3</a> - Partition [SourceType](/dotnet/api/microsoft.analysisservices.tabular.partitionsourcetype) must be Calculated, M, Entity, or CalculationGroup. Partition [Mode](/dotnet/api/microsoft.analysisservices.tabular.modetype) must be Import, DirectQuery, or Dual.
-
-- <a name="ee">4</a> - Any expression edits outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson) are lost when those changes are applied.
-
-- Modifying table query expressions outside of Power BI Desktop results in the removal of the table data upon restarting Power BI Desktop.
+- <a name="ee">3</a> - Any expression edits outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson) are lost when those changes are applied.
 
 ## JSON file schemas
 

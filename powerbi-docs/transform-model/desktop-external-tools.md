@@ -71,8 +71,8 @@ Objects that support write operations:
 
 | Object                        | Connect to AS instance    |
 |-------------------------------|---------------------------|
-| Tables                        | No                        |
-| Columns                       | Yes [1]                   |
+| Tables                        | Yes                       |
+| Columns                       | Yes                       |
 | Calculated tables             | Yes                       |
 | Calculated columns            | Yes                       |
 | Relationships                 | Yes                       |
@@ -84,9 +84,7 @@ Objects that support write operations:
 | Row Level Security (RLS)      | Yes                       |
 | Object Level Security (OLS)   | Yes                       |
 | Annotations                   | Yes                       |
-| M expressions                 | No                        |
-
-[1] When using external tools to connect to the AS instance, changing a column's data type is supported, however, renaming columns isn't supported.
+| M expressions                 | Yes                       |
 
 Power BI Desktop *project files* offer a broader scope of supported write operations. Those objects and operations that don't support write operations by using external tools to connect to Power BI Desktop's Analysis Services instance may be supported by editing Power BI Desktop project files. To learn more, see [Power BI Desktop projects - Model authoring](../developer/projects/projects-overview.md#model-authoring).
 
@@ -94,10 +92,9 @@ Power BI Desktop *project files* offer a broader scope of supported write operat
 
 All Tabular Object Model (TOM) metadata can be accessed for read-only. Write operations are limited because Power BI Desktop must remain in-sync with the external modifications, therefore the following operations aren't supported:
 
-- Any TOM object types not covered in Supported write operations, such as tables and columns.
+- Any TOM object types not covered in Supported write operations.
 - Editing a Power BI Desktop template (PBIT) file.
 - Report-level or data-level translations.
-- Renaming tables and columns isn't yet supported
 - Sending processing commands to a semantic model loaded in Power BI Desktop
 
 ## Registering external tools
