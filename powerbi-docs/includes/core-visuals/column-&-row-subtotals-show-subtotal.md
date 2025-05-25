@@ -1,7 +1,8 @@
 ---
 title: Show subtotal
 description: Setting - Show subtotal (Column & Row Subtotals, Show subtotal)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

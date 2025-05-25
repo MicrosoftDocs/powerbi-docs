@@ -2,7 +2,7 @@
 title: The Hierarchical Identity Filters API
 description: This article discusses how Power BI visuals can filter visuals based on several attributes for better embedded Power BI insights.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

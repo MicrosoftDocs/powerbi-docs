@@ -1,8 +1,8 @@
 ---
 title: What is the Power BI service?
 description: Overview of the Power BI service and how it fits with the other parts of Power BI.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.custom: 

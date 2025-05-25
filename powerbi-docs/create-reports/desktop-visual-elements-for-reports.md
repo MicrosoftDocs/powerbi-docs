@@ -1,8 +1,8 @@
 ---
 title: Use visual elements to enhance Power BI reports
 description: Use visual elements such as wallpaper and visual headers to enhance the appearance of Power BI reports
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

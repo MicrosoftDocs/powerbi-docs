@@ -1,8 +1,8 @@
 ---
 title: Create reports in Power BI Desktop with Copilot
 description: Using Copilot in Power BI Desktop, you can quickly create a Power BI report.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -30,8 +30,6 @@ Read about all the ways Copilot can help you in the [overview of Copilot for Pow
 
 - You need to be signed in to the Power BI service to start using Copilot in Power BI Desktop in report view. 
 - You need to select a compatible workspace that you have write access to. It needs to be a workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity or a Power BI Premium capacity (P1 or higher). 
-
-    Learn more about [Copilot for Power BI capacity requirements](copilot-introduction.md#access-copilot-in-power-bi-desktop).
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 

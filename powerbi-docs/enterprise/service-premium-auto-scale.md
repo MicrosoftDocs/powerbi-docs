@@ -1,8 +1,8 @@
 ---
 title: Using Autoscale with Power BI Premium
 description: Learn how to configure an Azure subscription to use with Autoscale and then enable Autoscale in the Power BI Admin portal.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

@@ -1,8 +1,8 @@
 ---
 title: Get Power BI Desktop
 description: Learn about the different ways you can download and the options available to install Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

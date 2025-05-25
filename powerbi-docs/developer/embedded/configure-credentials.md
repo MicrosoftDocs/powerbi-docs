@@ -2,7 +2,7 @@
 title: Configure credentials programmatically for Power BI embedded analytics
 description: Learn how to configure credentials programmatically and encrypt credentials for Power BI embedded analytics.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

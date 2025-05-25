@@ -1,9 +1,9 @@
 ---
 title: Create a (new) card visual in Power BI
 description: This article provides an understanding of the (new) card visual and a quick three-step guide on how to build a (new) card visual in Power BI Desktop.
-author: JaedenArmstrong
+author: JulCsc
 ms.author: miguelmyers
-ms.reviewer: davidiseminger
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

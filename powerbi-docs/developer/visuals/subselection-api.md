@@ -2,7 +2,7 @@
 title: Subselection API in Power BI Visuals
 description: The article describes how to use Power BI Visuals subselectionAPI to allow users to format visuals easily.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: tebercov , shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

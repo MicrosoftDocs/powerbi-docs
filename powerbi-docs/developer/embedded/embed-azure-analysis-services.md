@@ -2,7 +2,7 @@
 title: Embed a Power BI report with an Azure Analysis Services (AAS) database 
 description: Learn which parameters your embed token needs to embed a Power BI application with an Azure Analysis Services (AAS) database with or without RLS
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: sabre
 ms.service: powerbi
 ms.subservice: powerbi-developer

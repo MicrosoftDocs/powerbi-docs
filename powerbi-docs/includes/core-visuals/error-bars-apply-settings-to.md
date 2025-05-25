@@ -1,7 +1,8 @@
 ---
 title: Apply settings to
 description: Setting - Apply settings to (Error bars, Apply settings to)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

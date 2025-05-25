@@ -9,7 +9,7 @@ ms.date: 11/13/2023
 ms.custom: include file
 ---
 
-| SKU               | Capacity Units (CU) | Power BI SKU      | Power BI v-cores |
+| SKU<sup>1</sup>               | Capacity Units (CU) | Power BI SKU      | Power BI v-cores |
 | ----------------- | ------------------- | ----------------- | ---------------- |
 | F2                |                   2 | N/A               |              N/A |
 | F4                |                   4 | N/A               |              N/A |
@@ -19,8 +19,10 @@ ms.custom: include file
 | F64               |                  64 | P1/A4             |                8 |
 | F128              |                 128 | P2/A5             |               16 |
 | F256              |                 256 | P3/A6             |               32 |
-| F512<sup>1</sup>  |                 512 | P4/A7             |               64 |
-| F1024<sup>1</sup> |               1,024 | P5/A8             |              128 |
-| F2048<sup>1</sup> |               2,048 | N/A               |              N/A |
+| F512<sup>2</sup>  |                 512 | P4/A7             |               64 |
+| F1024<sup>2</sup> |               1,024 | P5/A8             |              128 |
+| F2048<sup>2</sup> |               2,048 | N/A               |              N/A |
 
-<sup>1</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+<sup>1</sup> In the Microsoft 365 or [Embed for your organization](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) (user owns data) scenario, SKUs that are smaller than F64 require a Pro or Premium Per User (PPU) license, or a Power BI individual trial to consume Power BI content.
+
+<sup>2</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.

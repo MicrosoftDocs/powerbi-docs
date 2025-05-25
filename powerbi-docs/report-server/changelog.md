@@ -18,7 +18,35 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 See [Download Power BI Report Server](download-powerbi-report-server.md) for more information about downloading and installing Power BI Report Server.
 
-You must use Microsoft Report Builder to create paginated reports in Power BI Report Server. For information about Microsoft Report Builder, see [Install Microsoft Report Builder - Power BI Report Server](https://learn.microsoft.com/en-us/power-bi/report-server/install-report-builder).
+You must use Microsoft Report Builder to create paginated reports in Power BI Report Server. For information about Microsoft Report Builder, see [Install Microsoft Report Builder - Power BI Report Server](https://learn.microsoft.com/power-bi/report-server/install-report-builder).
+
+=======
+## May 2025
+
+### Power BI Report Server
+- *Version: Version1.23.9273.4705 (build 15.0.1118.125), Released: May 22, 2025*
+  - Features
+    - Add new advanced server property EnableCommentsOnReports and set default value to false to control comments on reports. This will disable comments on upgrade and must be enabled if you wish to have the ability to comment on reports in the future. This feature is now considered deprecated and will be removed in 2026.
+    - Custom Visual API shipped with release - version v5.10.0
+    - Updated underlying version of jQeury to 3.7.1
+    - Support for x-forwarded-for header logging IP address in RSPortal log.
+    - Added support for migrating report server catalog from SSRS 2022 to Power BI Report Server.
+
+
+  - Bug fixes
+    - Fixed issue with models loading in scale out environment.
+    - Fixed issue with comments "--" in DAX queries.
+    - Fixed issue where subscriptions could be saved before all content loaded, thus removing settings
+    - Check to see if data source supports encryption before enabling encryption settings in the UI.
+    - Additional verbose logging to help support cases
+    - Additional screen reader support for the tree view.
+
+### Power BI Desktop (optimized for Power BI Report Server)
+
+Note: This is the last release of Power BI Desktop for RS that will include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+
+- *Version: 2.143.954.0  (May 2025), Released: May 22, 2025*
+     - Support for May 2025 Power BI Report Server.
 
 
 ## January 2025

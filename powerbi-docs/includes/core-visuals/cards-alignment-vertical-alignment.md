@@ -1,7 +1,8 @@
 ---
 title: Vertical alignment
 description: Setting - Vertical alignment (Cards, Alignment)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,8 +1,8 @@
 ---
 title: Create connected goals in Power BI
 description: Learn how to create connected goals.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

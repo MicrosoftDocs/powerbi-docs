@@ -2,7 +2,7 @@
 title: Formatting Models in Power BI Visuals
 description: This article describes how to use SVG utils to create formatting models for the format pane of a custom Power BI visual.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 manager: 
 ms.reviewer: tebercov 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Embed a report on an on-premises SQL Server Analysis Services (SSAS)
 description: Embed a report with an on-premises dataset model, with or without RLS, using a live connection
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-developer

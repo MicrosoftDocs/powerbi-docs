@@ -2,7 +2,7 @@
 title: Best practices for faster performance in Power BI embedded analytics 
 description: This article provides recommendations for Power BI embedded analytics best practices for fast rendering.
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.reviewer: noam, or, may
 ms.service: powerbi
 ms.subservice: powerbi-developer

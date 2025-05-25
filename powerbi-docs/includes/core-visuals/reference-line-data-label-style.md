@@ -1,7 +1,8 @@
 ---
 title: Style
 description: Setting - Style (Reference line, Data label, Style)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,8 @@
 ---
 title: Add line
 description: Setting - Add line (Reference lines, Add line)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

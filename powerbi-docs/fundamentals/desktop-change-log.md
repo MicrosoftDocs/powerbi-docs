@@ -1,13 +1,13 @@
 ---
 title: Change log for Power BI Desktop
 description: This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: kfollis, davidi
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/21/2025
+ms.date: 05/16/2025
 no-loc: [Copilot]
 ---
 
@@ -17,7 +17,19 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## April 2025 QFE 1
 
+*Version 2.142.1277.0, Released: May 5, 2025*
+
+Bug fixes and improvements:         
+
+* Addressed the incorrect classification of user errors in the orchestrator for the Desktop RAC.
+
+* Fixed the warning bar issue related to unsaved layout changes.
+
+* Addressed a bug causing NullReferenceException due to two files being opened at the same time.
+
+* Fixed access to Power Platform Dataflows and Dataverse in government clouds.
 
 ## March 2025 QFE 5
 

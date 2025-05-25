@@ -1,8 +1,8 @@
 ---
 title: Create modern visual tooltips (preview)
 description: Learn how modern visual tooltips in Power BI Desktop let you create rich hover-based tooltips for visuals in your reports.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

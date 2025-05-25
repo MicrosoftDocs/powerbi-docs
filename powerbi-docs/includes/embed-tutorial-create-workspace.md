@@ -3,7 +3,7 @@ title: Embedded analytics tutorial create a workspace
 description: Create a Power BI workspace for the embedded analytics tutorials.
 services: powerbi
 author: mberdugo
-ms.author: monaberdugo
+ms.author: billmath
 ms.topic: include
 ms.date: 12/26/2024
 ms.custom: include file

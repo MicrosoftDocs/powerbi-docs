@@ -1,9 +1,9 @@
 ---
 title: Matrix visual considerations and limitations
 description: This document outlines all the considerations and limitations for matrix visuals in Power BI Desktop and Power BI service.
-author: JaedenArmstrong
+author: JulCsc
 ms.author: miguelmyers
-ms.reviewer: davidiseminger
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

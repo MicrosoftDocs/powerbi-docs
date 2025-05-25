@@ -1,9 +1,9 @@
 ---
 title: Column chart considerations and limitations
 description: This document outlines all the considerations and limitations for column charts in Power BI Desktop and Power BI service.
-author: JaedenArmstrong
+author: JulCsc
 ms.author: miguelmyers
-ms.reviewer: davidiseminger
+ms.reviewer: juliacawthra
 ms.custom: sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals

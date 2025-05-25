@@ -1,7 +1,8 @@
 ---
 title: Alt text
 description: Setting - Alt text (Images, Image, Alt text)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

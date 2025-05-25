@@ -1,7 +1,8 @@
 ---
 title: Marker shape
 description: Setting - Marker shape (Error bars, Bar, Marker shape)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

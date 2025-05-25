@@ -1,8 +1,8 @@
 ---
 title: Keyboard shortcuts in Power BI Desktop
 description: Learn how to navigate Power BI Desktop by using keyboard commands and shortcuts. The tables in this article describe the shortcuts available.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
