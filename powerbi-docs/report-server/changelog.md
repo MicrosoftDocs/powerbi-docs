@@ -25,7 +25,7 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
   - Features
     - Add new advanced server property EnableCommentsOnReports and set default value to false to control comments on reports. This will disable comments on upgrade and must be enabled if you wish to have the ability to comment on reports in the future. This feature is now considered deprecated and will be removed in 2026.
     - Custom Visual API shipped with release - version v5.10.0
-    - Updated underlying version of jQeury to 3.7.1
+    - Updated underlying version of jQuery to 3.7.1
     - Support for x-forwarded-for header logging IP address in RSPortal log.
     - Added support for migrating report server catalog from SSRS 2022 to Power BI Report Server.
 
