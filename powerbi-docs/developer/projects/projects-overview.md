@@ -135,31 +135,10 @@ When working with Power BI project files, you can deploy your content to a Fabri
 
 You can make changes to the semantic model definition by using external tools in two ways:
 
-- By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md).
-- By editing JSON metadata in the model.bim file using VS Code or another external tool.
+- By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md#data-modeling-operations).
+- By editing TMDL metadata in the `/definition` folder using VS Code or another external tool.
 
-External tools have access to the entire semantic model. While this enables advanced modeling scenarios, it also means that changes made outside of Power BI Desktop can cause unexpected results. In rare cases, this could lead to inconsistencies or unexpected behaviors.
-
-Not every model object supports write operations. Applying changes outside of those supported can cause unexpected results.
-
-
-| Object                        | Connect to AS instance     | File change / TMDL view|
-|-------------------------------|----------------------------|----------- |
-| Tables                        | Yes                        | Yes        |
-| Columns                       | Yes <sup>[1](#dt)</sup>    | Yes        |
-| Calculated tables             | Yes                        | Yes        |
-| Calculated columns            | Yes                        | Yes        |
-| Hierarchies                   | Yes                        | Yes        |
-| Relationships                 | Yes                        | Yes        |
-| Measures                      | Yes                        | Yes        |
-| Model KPIs                    | Yes                        | Yes        |
-| Calculation groups            | Yes                        | Yes        |
-| Perspectives                  | Yes                        | Yes        |
-| Translations                  | Yes                        | Yes        |
-| Row Level Security (RLS)      | Yes                        | Yes        |
-| Object Level Security (OLS)   | Yes                        | Yes        |
-| Annotations                   | Yes                        | Yes        |
-| M expressions                 | Yes                        | Yes <sup>[2](#mp)</sup>, <sup>[3](#ee)</sup>        |
+All semantic model metadata is accessible to read. Write operations are fully supported, however, be aware that modifying the metadata outside of Power BI Desktop may result in unexpected behavior or, in rare cases, lead to inconsistencies within the model. Use caution when making changes through external tools.
 
 Keep in mind:
 
@@ -167,13 +146,11 @@ Keep in mind:
 
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
 
-- When changing a model that uses Direct Query to connect a Power BI semantic model or Analysis Services model, you must update the ChangedProperties and PBI_RemovedChildren collection for the changed object to include any modified or removed properties. If ChangedProperties and/or PBI_RemovedChildren isn't updated, Power BI Desktop might overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop. To learn more, see [Lineage tags for Power BI semantic models](/analysis-services/tom/lineage-tags-for-power-bi-semantic-models).
+- If the semantic model has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
 
-- <a name="dt">1</a> - If the semantic model has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
+- Semantic models - such as [composite models](/power-bi/transform-model/desktop-composite-models#composite-models-on-power-bi-semantic-models-and-analysis-services) or [Direct Lake](/fabric/fundamentals/direct-lake-overview) - can include objects and properties sourced from other models or data sources. When customizing these properties or removing synced objects, Power BI requires the `changedProperties` property and the `PBI_RemovedChildren` annotation to be set. These indicators mark the changes as user customizations, ensuring they are preserved during the next schema synchronization with the data source. To learn more, see [Lineage tags for Power BI semantic models](/analysis-services/tom/lineage-tags-for-power-bi-semantic-models).
 
-- <a name="mp">2</a> - Partition [SourceType](/dotnet/api/microsoft.analysisservices.tabular.partitionsourcetype) must be Calculated, M, Entity, or CalculationGroup. Partition [Mode](/dotnet/api/microsoft.analysisservices.tabular.modetype) must be Import, DirectQuery, or Dual.
-
-- <a name="ee">3</a> - Any expression edits outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson) are lost when those changes are applied.
+- Any expression edits outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson) are lost when those changes are applied.
 
 ## JSON file schemas
 
