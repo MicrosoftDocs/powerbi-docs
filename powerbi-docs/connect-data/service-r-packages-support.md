@@ -2179,13 +2179,14 @@ The following table shows which packages aren't supported in the Power BI servic
 
 ## Considerations and limitations
 
-- The update to the new runtime is not available in non-Fabric regions and Sov. clouds.
-- The rollout is gradual and is expected to be available in all Fabric regions by 15 March 2025.
-- R visuals aren't supported with Service Principal Profiles for App Owns Data.
-- The R visuals rendered from the Power BI service (for Premium/ F SKUs) will support payloads of < 30Mb.
-- R visuals with HTML and XML packages fail to render due to Out Of Memory (OOM). Migrate the visual with the [PbiViz tool](../developer/visuals/develop-power-bi-visuals.md#power-bi-visual-packages).The visual must render. 
-- Publish to web isn't supported. 
+- R visuals are not supported in the service for non-Fabric regions and Sovereign clouds. Customers in these regions/clouds will continue to be able to use R visuals in Power BI desktop.
 
+- R visuals aren't supported with Service Principal Profiles for App Owns Data.
+- R visuals rendered from the Power BI service (for Premium/ F SKUs) are subject to a limit of 30Mb. This limit applies to the total payload of compressed input data and the R script itself. Always check R visuals after publishing the report to ensure the report will display as expected. 
+
+- R visuals with HTML and XML packages with fail to render due to Out Of Memory (OOM) limits. Migrate the visual with the [PbiViz tool](../developer/visuals/develop-power-bi-visuals.md#power-bi-visual-packages). The visual must render to be considered successfully migrated. 
+
+- [Publish to web](/power-bi/collaborate-share/service-publish-to-web) isn't supported for R visuals. Reports with R visuals can still be published publicly, but any R visuals will not render (charts will appear empty).
 
 ## Related content
 

@@ -21,7 +21,11 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
 ## May 2025
 
 ### Power BI Report Server
-- *Version: Version1.23.9273.4705 (build 15.0.1118.125), Released: May 22, 2025*
+- *Version: 1.23.9274.14406 (build 15.0.1118.126), Released: May 27, 2025*
+  - Bug fixes
+    - Fixed issue with showing schedule refresh on reports to users that don't have ’Manage individual subscriptions‘ and ’Manage all subscriptions‘ permissions.
+
+- *Version: 1.23.9273.4705 (build 15.0.1118.125), Released: May 22, 2025*
   - Features
     - Add new advanced server property EnableCommentsOnReports and set default value to false to control comments on reports. This will disable comments on upgrade and must be enabled if you wish to have the ability to comment on reports in the future. This feature is now considered deprecated and will be removed in 2026.
     - Custom Visual API shipped with release - version v5.10.0
