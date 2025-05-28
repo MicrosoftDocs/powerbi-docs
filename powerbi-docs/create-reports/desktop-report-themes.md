@@ -14,7 +14,8 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-With Power BI Desktop *report themes*, you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme as their defaults. A few exceptions are described later in this article.
+With Power BI Desktop *report themes*, you can apply design changes to your entire report, such as using corporate colors, changing icon sets, applying default visual formatting, or defining custom visual style presets. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme as their defaults. A few exceptions are described later in this article.
+
 You can select report themes by going to the **View** ribbon. In the **Themes** section, select the dropdown arrow, and then select the theme you want. Available themes are similar to themes seen in other Microsoft products, such as Microsoft PowerPoint.
 ![Screenshot of the Themes dropdown menu.](media/desktop-report-themes/report-themes-dropdown-menu.png)
 
@@ -90,7 +91,6 @@ The following table shows the available built-in report themes.
 | Accessible neutral | :::image type="content" source="media/desktop-report-themes/accessible-theme-neutral.png" alt-text="Diagram of the color sequence for the Accessible neutral theme."::: |
 | Accessible orchid |:::image type="content" source="media/desktop-report-themes/accessible-theme-orchid.png" alt-text="Diagram of the color sequence for the Accessible orchid theme."::: |
 
-
 ## Customize report themes
 
 You can customize and standardize most of the elements listed in the **Format** section of the **Visualizations** pane, either through customizations made directly in Power BI Desktop or through a report theme JSON file. The goal is to give you full control over your report's default look and feel on a granular level.
@@ -129,9 +129,9 @@ Customizing the current theme in this way is fast and simple. However, you can a
 
 ### Update the base theme
 
-Power BI makes changes to themes, including new defaults for formatting settings, as a part of a new base theme. So as not to disturb existing reports, these changes don’t propagate to custom themes. If you've customized a built-in theme, you may not see fixes to issues or updates to your reports without updating your base themes.
+Power BI makes changes to themes, including new defaults for formatting settings, as a part of a new base theme. So as not to disturb existing reports, these changes don’t propagate to custom themes. If you customize a built-in theme, you might not see fixes to issues or updates to your reports without updating your base themes.
 
-To see if you're using an outdated theme, on the **View** ribbon, select the **Themes** dropdown button and select **Customize current theme**. If your theme is out of date, you’ll see a banner at the top of your theme, encouraging you to update to the latest base theme.
+To see if you're using an outdated theme, on the **View** ribbon, select the **Themes** dropdown button and select **Customize current theme**. If your theme is out of date, a banner appears at the top of the **Customize theme** dialog, encouraging you to update to the latest base theme.
 
 Select **Update theme** to see the changes, then select **Apply**.
 
@@ -151,11 +151,11 @@ You can also import a custom report theme file by following these steps:
 
    ![Screenshot of the dialog listing Holiday theme JSON files.](media/desktop-report-themes/report-themes_4.png)
 
-   When the theme file has loaded successfully, Power BI Desktop displays a success message.
+   When the theme file is loaded successfully, Power BI Desktop displays a success message.
 
    ![Screenshot of the Import theme successful dialog.](media/desktop-report-themes/report-themes-05.png)
 
-See the [Example report theme JSON file](#example-report-theme-json-file) section in this article to continue exploring the St Patricks Day.json file.
+See the [Example report theme JSON file](#example-report-theme-json-file) section in this article  continue exploring the St Patricks Day.json file.
 
 ## How report theme colors stick with your reports
 
@@ -179,13 +179,13 @@ Setting a report theme changes the default colors used in visuals throughout the
 
 ### Dynamic series
 
-Power BI tracks the color for a dynamic series and uses the same color for the value in other visuals. In a *dynamic series*, the number of series presented in visuals may change based on measures, values, or other aspects. For example, if you show *Profit by Region* in a report, you might have five sales regions, or you might have nine. The number of regions is dynamic, so it's considered a dynamic series.
+Power BI tracks the color for a dynamic series and uses the same color for the value in other visuals. In a *dynamic series*, the number of series presented in visuals might change based on measures, values, or other aspects. For example, if you show *Profit by Region* in a report, you might have five sales regions, or you might have nine. The number of regions is dynamic, so it's considered a dynamic series.
 
-Individual members of a dynamic series claim a color from the data color palette as they are read in.  For example, if one visual has a *Profit by Region* set of members **and** a second visual also has a *Profit by Region* set of members, **but** the set of members is disjoint, the first visual to have its data request completed reserves the earlier colors.  Since the colors for individual dynamic series members aren't explicitly stored, this behavior may lead to the appearance that colors are changing at random, depending on which visuals are loaded first.  You can always assign specific members to a particular color by using the formatting pane: see more information about how to [change the color of a single data point](../visuals/service-tips-and-tricks-for-color-formatting.md#change-the-color-of-a-single-data-point).
+Individual members of a dynamic series claim a color from the data color palette as they are read in. For example, if one visual has a *Profit by Region* set of members **and** a second visual also has a *Profit by Region* set of members, **but** the set of members is disjoint, the first visual to have its data request completed reserves the earlier colors. Since the colors for individual dynamic series members aren't explicitly stored, this behavior might lead to the appearance that colors are changing at random, depending on which visuals are loaded first. You can always assign specific members to a particular color by using the formatting pane: see more information about how to [change the color of a single data point](../visuals/service-tips-and-tricks-for-color-formatting.md#change-the-color-of-a-single-data-point).
 
 ### Static series
 
-Conversely, for *static series*, the number of series and their order is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might have to change your slicer selections to see all potential series values and set their colors as well. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme does not apply to any of those explicitly defined colors.
+Conversely, for *static series*, the number of series and their order is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might have to change your slicer selections to see all potential series values and set their colors as well. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme doesn't apply to any of those explicitly defined colors.
 
 To undo the explicit color application and allow the theme to apply to those explicitly selected colors, use **Revert to default** in the **Data Colors** section of the visual to which the color has been explicitly set.
 
@@ -193,7 +193,7 @@ To undo the explicit color application and allow the theme to apply to those exp
 
 Suppose you apply a custom color set or individual color to a data point in a visual by using the **Custom color** option in the color picker. When you apply a report theme, it doesn't override that customized data point color.
 
-Or, suppose you want to set the color of a data point by using the **Theme colors** section. When you apply a new report theme, those colors aren't updated. To get your default colors back so that they'll update when you apply a new report theme, select **Reset to default**, or select a color from the **Theme colors** palette in the color picker.
+Or, suppose you want to set the color of a data point by using the **Theme colors** section. When you apply a new report theme, those colors aren't updated. To get your default colors back so that they update when you apply a new report theme, select **Reset to default**, or select a color from the **Theme colors** palette in the color picker.
 
 ![Screenshot of the Visualizations dropdown menu, highlighting Reset to default.](media/desktop-report-themes/report-themes-reset-default.png)
 
@@ -275,17 +275,17 @@ When you create a JSON file, you can specify that all charts use a font size of 
 
 When you import your theme file, Power BI validates it to make sure it can successfully read its full contents. If Power BI finds fields it doesn’t understand, it shows you a message letting you know that the theme file is invalid, and inviting you to reimport with a corrected theme file. Power BI also publishes the schema it uses to check your theme file in a public location, updating it automatically whenever we change it in Power BI, so that you can ensure your theme files are always current.
 
-Power BI validates custom themes based on a *JSON schema*.  This [JSON schema is available for download](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) for use with an IDE that supports JSON validation, which can help identify available formatting options and highlight invalid theme formatting. More information is available in the [Report Theme JSON Schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema).
+Power BI validates custom themes based on a *JSON schema*. This [JSON schema is available for download](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) for use with an IDE that supports JSON validation, which can help identify available formatting options and highlight invalid theme formatting. More information is available in the [Report Theme JSON Schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema).
 
 > [!NOTE]
-> Modifying a custom JSON report theme in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) is safe.  The dialog doesn't modify theme settings that it can't control and updates the changes made to the report theme that's in place.
+> Modifying a custom JSON report theme in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) is safe. The dialog doesn't modify theme settings that it can't control and updates the changes made to the report theme that's in place.
 
 A theme file has four main components:
 
 - [Theme colors](#set-theme-colors)
 - [Structural colors](#set-structural-colors)
 - [Text classes](#set-formatted-text-defaults)
-- [Visual styles](#set-visual-property-defaults-visualstyles)  
+- [Visual styles](#set-visual-property-defaults-visualstyles)
 
 The following sections describe each in detail.
 
@@ -293,7 +293,7 @@ The following sections describe each in detail.
 
 Under `name`, you can add the following basic data color-related properties:
 
-- `dataColors`: These hexadecimal codes determine the color of shapes that represent data in Power BI Desktop visuals. This list can have as many colors as you want. After all colors from this list have been used, if the visual still needs more colors, it rotates the theme color palette slightly with saturation/hue adjustment and cycle over and over to generate unique colors without repetition.
+- `dataColors`: These hexadecimal codes determine the color of shapes that represent data in Power BI Desktop visuals. This list can have as many colors as you want. After all colors from this list are used, if the visual still needs more colors, it rotates the theme color palette slightly with saturation/hue adjustment and cycle over and over to generate unique colors without repetition.
 - `good`, `neutral`, `bad`: These properties set the status colors used by the waterfall chart and the KPI visual.
 - `maximum`, `center`, `minimum`, `null`: These colors set the various gradient colors in the conditional formatting dialog box.
 
@@ -328,9 +328,9 @@ A basic theme that defines these colors might appear as follows:
 
 Next, you can add various color classes, such as `background` and `firstLevelElements`. These color classes set the structural colors for elements in the report, such as axis gridlines, highlight colors, and background colors for visual elements.
 
-The following table shows the six color classes you can format.  The **Color class** names correspond to the names in the "Advanced" subsection of the "Name and Colors" section in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop).
+The following table shows the six color classes you can format. The **Color class** names correspond to the names in the "Advanced" subsection of the "Name and Colors" section in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop).
 
-| Color class preferred name | Also called  | What it formats |
+| Color class preferred name | Also called | What it formats |
 |---|---|---|
 | **firstLevelElements** | **foreground** | Label background color (when outside data points) |
 | | | Trend line color |
@@ -455,7 +455,7 @@ You can use the `bold` Boolean setting to adjust the format. To make the text bo
 - `titleBold`: true
 
 > [!TIP]
-> The *light* variations of text classes take their light color from the [structural colors](#set-structural-colors) defined earlier.  If you are authoring a `dark theme`, set the color's `firstLevelElements` (matching the primary text color), `secondLevelElements` (matching the anticipated light color for text), and `background` (with sufficient contrast to both first- and second-level elements colors).
+> The *light* variations of text classes take their light color from the [structural colors](#set-structural-colors) defined earlier.  If you're authoring a `dark theme`, set the color's `firstLevelElements` (matching the primary text color), `secondLevelElements` (matching the anticipated light color for text), and `background` (with sufficient contrast to both first- and second-level elements colors).
 
 See the following example theme that sets only the primary text classes:
 
@@ -496,7 +496,7 @@ To create an extended-format JSON file, with more detailed and granular control 
 ```json
     "visualStyles": {
         "<visualName>": {
-            "<styleName>": {
+            "<stylePresetName>": {
                 "<cardName>": [{
                     "<propertyName>": <propertyValue>
                 }]
@@ -505,9 +505,9 @@ To create an extended-format JSON file, with more detailed and granular control 
     }
 ```
 
-For the `visualName` and `cardName` sections, use a specific visual and card name. Currently, the `styleName` is always an asterisk (*), but in a future release you'll be able to create different styles for your visuals and give them names (similar to the table and matrix style feature). The `propertyName` is a formatting option, and `propertyValue` is the value for that formatting option.
+For the `visualName` and `cardName` sections, use a specific visual and card name. The `stylePresetName` can either be an asterisk ("*") to target the default visual style, or the `stylePresetName` can be a name to define a named style preset. The `propertyName` is a formatting option, and `propertyValue` is the value for that formatting option.
 
-For `visualName` and `cardName`, use an asterisk in quotes if you want that setting to apply to all visuals or cards that have a property. If you use an asterisk for both the visual and card names, you're effectively applying a setting globally in your report, such as a font size or specific font family for all text across all visuals.
+For `visualName`, `stylePresetName`, and `cardName`, use an asterisk in quotes if you want that setting to apply to all visuals or cards that have a property. If you use an asterisk for both the visual and card names, you're effectively applying a setting globally in your report, such as a font size or specific font family for all text across all visuals.
 
 See the following example that sets a few properties through the visual styles:
 
@@ -549,16 +549,100 @@ See the following example that sets a few properties through the visual styles:
 This example makes the following settings:
 
 - Turns on word wrap everywhere.
-- Sets the gridline style to dotted for all visuals with a category axis.
+- Sets the gridline style to be dotted for all visuals with a category axis.
 - Sets some formatting for the available and applied filter cards (note the format using "$id" to set the different versions of the filter cards).
 - Sets the bubble size for scatter charts to -10.
 
 > [!NOTE]
 > You need only specify the formatting elements you want to adjust. Any formatting elements that aren't included in the JSON file revert to their default values and settings.
 
+### Style presets
+
+**Style presets** are predefined formatting options that can be applied to visual elements in a theme file, and are specific to the visual it is defined on. These presets allow you to change multiple formatting options simultaneously without manually adjusting each one. This feature enhances the customization capabilities of Power BI reports by enabling your ability to apply consistent styles across different visuals quickly.
+
+#### Introduction to style presets
+
+By creating and importing a custom JSON theme file that includes your desired style presets, the new Style presets menu option becomes visible within the **Format Visual** section of the **Visualizations pane**.
+
+Utilizing the **Style** dropdown, you can easily select any of your predefined style presets from the newly imported theme file to automatically apply formatting options to visual elements in your report, such as positioning elements or altering colors.
+
+   :::image type="content" source="media/desktop-report-themes/style-presets-example-00.png" alt-text="Screenshot displaying a Style presets menu on the Visuals tab of the Format visuals section in the Visualizations pane.":::
+
+#### How to define style presets
+
+To define style presets, you need to create a custom theme using a JSON file. The JSON file contains the formatting options for different visual elements, and as explained in this article, you can import this file to apply the custom theme that includes your style presets.
+
+   :::image type="content" source="media/desktop-report-themes/style-presets-json-01.png" alt-text="Screenshot of a JSON file displaying default Style preset, plus three defined Style presets customized according to the user's needs.":::
+
+When crafting a custom theme, you can specify which style preset will be the default after importing, as shown. If no preset is selected or defined, Power BI’s default settings are applied, ensuring there are always fallback formatting options for visual elements.
+
+The example theme depicted in the previous screenshot is displayed in the code block shown here:
+
+```json
+{
+    "$schema": "./reportThemeSchema.json",
+    "name": "Style Preset Demo Test",
+    "visualStyles": {
+        "columnChart": {
+            "*": {
+                "stylePreset": [{
+                    "name": "Demo Preset 1"
+                }]
+            },
+            "Demo Preset 1": {
+                "legend": [{
+                    "position": "BottomCenter"
+                }],
+                "valueAxis": [{
+                    "gridlineColor": { "solid": { "color": "#950" } }
+                }]
+            },
+            "Demo Preset 2": {
+                "legend": [{
+                    "position": "Right"
+                }],
+                "valueAxis": [{
+                    "gridlineColor": { "solid": { "color": "#00f" } },
+                    "labelColor": { "solid": { "color": { "expr": { "ThemeDataColor": { "ColorId": 2, "Percent": 0.6 } } } } }
+                }]
+            },
+            "Demo Preset 3": {
+                "legend": [{
+                    "italic": true,
+                    "position": "Left"
+                }]
+            }
+        }
+    }
+}
+```
+
+#### Applying style presets
+
+Using the above custom theme, let's walk through an example of how we define and then use custom style presets on a visualization. Keep in mind that the style presets are specific to the visual it is defined on.
+
+The following steps outline the process to define and import a custom theme JSON file that includes style presets:
+
+1. Copy the code block shown above to create the JSON file using any text editor, then save the **Style Preset Demo Test.json** file on your computer.
+1. In Power BI Desktop, go to the View ribbon and select the Themes dropdown button.
+1. Select Browse for themes and import the JSON file.
+1. The newly defined style presets are available in the Format Visual section of the Visualizations pane.
+
+After importing the custom theme, we can select 'Demo Preset 1' to set the legend position to the bottom center and change the gridline color of the value axis, as shown here:
+
+   :::image type="content" source="media/desktop-report-themes/style-presets-example-01.png" alt-text="Screenshot of the Style presets menu displaying Demo Preset 1.":::
+
+In this next example, 'Demo Preset 2' moves the legend to the right side and changes the gridline color and the label color of the value axis.
+
+   :::image type="content" source="media/desktop-report-themes/style-presets-example-02.png" alt-text="Screenshot of the Style presets menu displaying Demo Preset 2.":::
+
+An error message appears when the definition of a style preset is not found for the specific visual. This author-only error message indicates the report lost reference to your custom style preset definitions and your custom style preset can't be found.
+
+   :::image type="content" source="media/desktop-report-themes/style-presets-example-error.png" alt-text="Screenshot of the Style presets menu displaying an error message indicating that the custom style preset can't be found.":::
+
 ### Find visual properties to set
 
-[The report theme schema](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) can help you identify what properties are available to style with a report theme.  By using the schema as a local reference in your theme file, you can use the auto-complete functionality of your IDE to identify available formatting options.
+[The report theme schema](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) can help you identify what properties are available to style with a report theme. By using the schema as a local reference in your theme file, you can use the autocomplete functionality of your IDE to identify available formatting options.
 
 For example, using Visual Studio Code's [support for JSON schema](https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings), we can define a theme as follows with "reportThemeSchema.json" downloaded from the [schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) and placed in the same folder:
 
@@ -569,7 +653,7 @@ For example, using Visual Studio Code's [support for JSON schema](https://code.v
 }
 ```
 
-With this defined, you can use autocomplete in Visual Studio Code to understand the structure and available formatting options available. Trigger autocomplete explicitly by using the key combination *Ctrl* + *Space*. The description pop-up will show the formatting item's display name and description as they show in the Formatting pane, if available:
+With this defined, you can use autocomplete in Visual Studio Code to understand the structure and available formatting options available. Trigger autocomplete explicitly by using the key combination *Ctrl* + *Space*. The description pop-up shows the formatting item's display name and description as they show in the Formatting pane, if available:
 
 ![Screenshot of using the report theme schema to identify available formatting options.  The autocomplete menu within Visual Studio Code shows available formatting options.](media/desktop-report-themes/report-themes-schema.png)
 
@@ -594,7 +678,7 @@ You can use an enumeration to format dropdown menus by setting menu options to a
 
 ## Example report theme JSON file
 
-Here is the *St Patricks Day.json* file in its entirety:
+Here's the *St Patricks Day.json* file in its entirety:
 
  ```json
     {
@@ -616,9 +700,9 @@ You can copy this JSON and use it as a basis to create your own custom report th
 
 ### Considerations and limitations
 
-If you use one of the original themes, the Classic theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
+If you use one of the original themes, the Classic theme, or a custom theme that you imported on top of one of these themes, the text section of the theme dialog box isn't available for configuring.
 
-Built-in themes that are affected by this limitation include the following themes:
+Built-in themes affected by this limitation include the following themes:
 
 - Classic
 - City park
@@ -637,9 +721,9 @@ If you use one of the affected themes and you don't need to modify the text sett
     1. Select the default theme.
     1. Import the custom theme you exported in the first step.
 
-The text in your report will look different, but you'll be able to access the text tab in the theme dialog box.
+The text in your report looks different, but you're able to access the text tab in the theme dialog box.
 
-Elements that are considered part of the interface cannot be changed using a report theme. This includes the Filter, Format and Data panes and the [visual matrix in visual calculations](../transform-model/desktop-visual-calculations-overview.md).
+Elements that are considered part of the interface can't be changed using a report theme, including the Filter, Format, and Data panes and the [visual matrix in visual calculations](../transform-model/desktop-visual-calculations-overview.md).
 
 ## Related content
 
