@@ -1,8 +1,8 @@
 ---
 title: "Install Microsoft Report Builder - Power BI Report Server"
 description: This article explains how to download and install Microsoft Report Builder for Power BI Report Server.
-author: kfollis
-ms.author: kfollis
+author: petebro
+ms.author: petebro
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -22,7 +22,7 @@ An administrator typically installs and configures Power BI Report Server, grant
  
 ## System requirements
   
- See the **System requirements** section of the [Report Builder download page](https://go.microsoft.com/fwlink/?LinkID=734968) on the Microsoft Download Center.
+See the **System requirements** section of the [Report Builder download page](https://go.microsoft.com/fwlink/?LinkID=734968) on the Microsoft Download Center.
 
 > [!NOTE]
 > As of May 2025 Report Builder is 64-bit only.
@@ -33,15 +33,15 @@ You can install Report Builder from a Power BI Report Server web portal. You may
 
 1. In the Power BI Report Server web portal, select **New** > **Paginated Report**.
 
-    ![New Paginated Report menu](media/quickstart-create-paginated-report/reportserver-new-paginated-report-menu.png)
+![New Paginated Report menu](media/quickstart-create-paginated-report/reportserver-new-paginated-report-menu.png)
    
-       If you don't have Report Builder installed already, the Microsoft Report Builder Wizard starts.  
+If you don't have Report Builder installed already, the Microsoft Report Builder Wizard starts.  
 
-3.  Accept the terms in the license agreement > **Next**.  
+2.  Accept the terms in the license agreement > **Next**.  
  
-5.  Select **Install** to complete the installation of Report Builder.  
+3.  Select **Install** to complete the installation of Report Builder.  
 
-1. After it's installed, Report Builder opens to the **New Report or Dataset** screen.
+4. After it's installed, Report Builder opens to the **New Report or Dataset** screen.
 
     ![New Report or Dataset screen](media/quickstart-create-paginated-report/reportserver-paginated-new-report-screen.png)
    
