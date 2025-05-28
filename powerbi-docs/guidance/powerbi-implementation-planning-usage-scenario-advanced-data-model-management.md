@@ -79,7 +79,7 @@ Enterprise BI teams commonly use client tools, such as Tabular Editor (depicted 
 There are several ways to use third-party applications:
 
 - **Connect to a remote data model by using the XMLA endpoint**: Some third-party tools can connect directly to a remote data model in the Power BI service (or Analysis Services). Once connected to the XMLA endpoint, all [Tabular Object Model (TOM)](/analysis-services/tom/tom-pbi-datasets) operations are supported. This approach is the primary focus of this usage scenario.
-- **Connect to a local data model in Power BI Desktop**: Some third-party tools can connect to a [local data model](../transform-model/desktop-external-tools.md) that's open in Power BI Desktop (not depicted in the scenario diagram). However, there are some [limitations](../transform-model/desktop-external-tools.md#data-modeling-limitations), and not all external tool functionality is officially supported.
+- **Connect to a local data model in Power BI Desktop**: Some third-party tools can connect to a [local data model](../transform-model/desktop-external-tools.md) that's open in Power BI Desktop (not depicted in the scenario diagram). However, there are some limitations, and not all external tool functionality is officially supported.
 - **Connect to a template file in Power BI Desktop**: Some third-party tools distribute their functionality in a lightweight way by using a Power BI Desktop template file (.pbit) (not depicted in the scenario diagram).
 
 ### Tabular Editor
