@@ -51,7 +51,7 @@ You can add sparklines to both your table and matrix visuals.
     :::image type="content" source="media/power-bi-sparklines-tables/sparklines-4-new-column.png" alt-text="Screenshot of the sparkline is added to your table." lightbox="media/power-bi-sparklines-tables/sparklines-4-new-column.png":::
 
 ## Combining sparklines and calculation groups
-When using calculation groups and sparklines together, you can decide how to apply a calculation group to the sparkline. Two options are available:
+When using [calculation groups](../transform-model/calculation-groups.md) and sparklines together, you can decide how to apply a calculation group to the sparkline. Two options are available:
 - **Individual values**. This is the default value and applies the calculation group to each individual value on the sparkline.
 - **Entire sparkline**. This applies the calculation group to the entire sparkline as a whole, not to the individual values. Calculation groups that perform arithmetic operations are not supported in this mode.
 
@@ -66,17 +66,17 @@ The sparkline is configured as:
 
 When the sparkline is set to apply the calculation group to **Individual values** the Sum of Gross Sales for each Month Number is compared against the threshold of 1 million and if it is above that it, the value is returned, otherwise a blank value is returned. In this scenario, some sparklines might show completely, partially or not at all depending if the individual Gross Sales values met the threshold or not. The image below shows this. A matrix is added to show the individual values so you can confirm the results.
 
-:::image type="content" source="media/power-bi-sparklines-tables/sparklines-calculation-group-individual-values-1.png" alt-text="Two matrices. The top shows Sum of Gross Sales and the Sum of Gross Sales by Month Number sparkline by Product. The bottom shows the same information but without a sparkline. Only parts of the sparklines are shown because of the calculation group." lightbox="media/power-bi-sparklines-tables/sparklines-calculation-group-individual-values-1.png":::
+:::image type="content" source="media/power-bi-sparklines-tables/sparklines-calculation-group-individual-values-1.png" alt-text="Screenshot of two matrices. The top shows Sum of Gross Sales and the Sum of Gross Sales by Month Number sparkline by Product. The bottom shows the same information but without a sparkline. Only parts of the sparklines are shown because of the calculation group." lightbox="media/power-bi-sparklines-tables/sparklines-calculation-group-individual-values-1.png":::
 
 If, conversely, the sparkline is set to **Entire sparkline** then the Sum of Gross sales for all Months is compared against the threshold and if it is above that, the value is returned, otherwise a blank value is returned. In this scenario, sparklines are either going to show or not at all, depending if the total Gross Sales met the threshold. In the example below we have set the threshold to 3 million. Again a matrix was also added to show that indeed the Sum of Gross Sales for most products was above the threshold, but not for all.
 
-:::image type="content" source="media/power-bi-sparklines-tables/sparklines-calculation-group-entire-sparkline-1.png" alt-text="Two matrices. The top shows Sum of Gross Sales and the Sum of Gross Sales by Month Number sparkline by Product. The bottom shows the same information but without a sparkline. Only some of the sparklines are shown because of the calculation group." lightbox="media/power-bi-sparklines-tables/sparklines-calculation-group-entire-sparkline-1.png":::
+:::image type="content" source="media/power-bi-sparklines-tables/sparklines-calculation-group-entire-sparkline-1.png" alt-text="Screenshot of two matrices. The top shows Sum of Gross Sales and the Sum of Gross Sales by Month Number sparkline by Product. The bottom shows the same information but without a sparkline. Only some of the sparklines are shown because of the calculation group." lightbox="media/power-bi-sparklines-tables/sparklines-calculation-group-entire-sparkline-1.png":::
 
 Now, if we change the calculation group item so it performs an arithmetic operation, then sparklines that are configured to apply the calculation group to the entire sparkline (using the **Entire sparkline** option) will return an error:
-:::image type="content" source="media/power-bi-sparklines-tables/sparklines-calculation-group-entire-sparkline-error.png" alt-text="The matrix showing the sparklines has returned and error and needs to be converted to 'Individual values' to show again." lightbox="media/power-bi-sparklines-tables/sparklines-calculation-group-entire-sparkline-error.png":::
+:::image type="content" source="media/power-bi-sparklines-tables/sparklines-calculation-group-entire-sparkline-error.png" alt-text="Screenshot of a matrix showing the sparklines has returned and error and needs to be converted to 'Individual values' to show again." lightbox="media/power-bi-sparklines-tables/sparklines-calculation-group-entire-sparkline-error.png":::
 
 Changing the sparkline's configuration to apply the calculation group to the sparkline's individual values will apply the calculation group to the individual values and make the sparklines show again:
-:::image type="content" source="media/power-bi-sparklines-tables/sparklines-calculation-group-converted-to-individual-values.png" alt-text="A matrix showing percentage of grand total of Sum of Gross Sales and the percentate of grand total of Sum of Gross Sales by Month Number sparkline by Product." lightbox="media/power-bi-sparklines-tables/sparklines-calculation-group-converted-to-individual-values.png":::
+:::image type="content" source="media/power-bi-sparklines-tables/sparklines-calculation-group-converted-to-individual-values.png" alt-text="Screenshot of a matrix showing percentage of grand total of Sum of Gross Sales and the percentate of grand total of Sum of Gross Sales by Month Number sparkline by Product." lightbox="media/power-bi-sparklines-tables/sparklines-calculation-group-converted-to-individual-values.png":::
 
 ## Formatting the sparkline
 
