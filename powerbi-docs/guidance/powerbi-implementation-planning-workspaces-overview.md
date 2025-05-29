@@ -23,7 +23,7 @@ As described in each article, the article audience might include:
 - **Center of Excellence (CoE), IT, and business intelligence (BI) teams**: Teams that are responsible for overseeing the use of data and BI in the organization, and for supporting self-service users throughout the organization.
 - **Content creators and owners**: Self-service users who create, publish, and manage content in workspaces.
 
-Comprehensive workspace planning is an integral part of a successful Fabric workspace implementation. Gaps in workspace planning can reduce user flexibility and lead to ad-hoc user workarounds in organizing and securing content.
+Comprehensive workspace planning is an integral part of a successful Fabric workspace implementation. Gaps in workspace planning can reduce user flexibility and lead to user workarounds in organizing and securing content.
 
 A _workspace_ is a container in the Fabric portal where users store and secure content. Workspaces are primarily designed for content creation and collaboration.
 
