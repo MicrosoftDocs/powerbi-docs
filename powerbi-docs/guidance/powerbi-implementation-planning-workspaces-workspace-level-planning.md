@@ -128,7 +128,7 @@ For more information, see the Fabric adoption roadmap:
 
 - [Fabric centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal)
 - [Fabric training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training)
-- [Fabric documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation).
+- [Fabric documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation)
 
 ## Workspace ownership
 
