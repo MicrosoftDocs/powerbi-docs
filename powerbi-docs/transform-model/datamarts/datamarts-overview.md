@@ -12,6 +12,7 @@ LocalizationGroup: Data from files
 ---
 # Introduction to datamarts
 
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
 
 Business users rely heavily on centrally governed data sources built by information technology teams (IT), but it can take months for an IT department to deliver a change in a given data source. In response, users often resort to building their own data marts with Access databases, local files, SharePoint sites and spreadsheets, resulting in a lack of governance and proper oversight to ensure such data sources are supported and have reasonable performance. 
 
