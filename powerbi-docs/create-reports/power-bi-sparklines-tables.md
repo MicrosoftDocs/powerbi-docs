@@ -43,8 +43,8 @@ You can add sparklines to both your table and matrix visuals.
 
     Read more about [working with auto date/time fields](../transform-model/desktop-auto-date-time.md#work-with-auto-datetime) in Power BI Desktop.
 
-> [!NOTE]
-> When working with sparklines and [calculation groups](../transform-model/calculation-groups.md) together, you can decide how a calculation group is applied to the sparkline. You can choose between **Individual values** (default) and **Whole sparkline**. See [combining sparklines and calculation groups](#combining-sparklines-and-calculation-groups) for more info.
+    > [!NOTE]
+    > When working with sparklines and [calculation groups](../transform-model/calculation-groups.md) together, you can decide how a calculation group is applied to the sparkline. You can choose between **Individual values** (default) and **Whole sparkline**. See [combining sparklines and calculation groups](#combining-sparklines-and-calculation-groups) for more info.
 
 1. Select **Create**. The sparkline is automatically added to your table or matrix as a new column.
 
