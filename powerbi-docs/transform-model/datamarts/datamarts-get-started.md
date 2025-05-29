@@ -15,6 +15,8 @@ LocalizationGroup: Data from files
 
 This article describes how to get started using datamarts, including various sample data that can jump-start your experience. You learn about sample semantic models you can use with datamarts, how to create datamarts from scratch, how to rename or delete a datamart, and other helpful information to get you acquainted and proficient with datamarts.
 
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
+
 ## Sample data
 
 You can use the following various types of sample data to explore datamarts. All of the following resources contain free sample data:

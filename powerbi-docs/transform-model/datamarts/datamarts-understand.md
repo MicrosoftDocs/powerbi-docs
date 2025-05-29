@@ -16,6 +16,8 @@ LocalizationGroup: Data from files
 
 This article describes and explains important concepts about datamarts.
 
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
+
 ## Understand semantic model (default)
 
 Datamarts provide a semantic layer that is automatically generated and synchronized with the contents of the datamart tables, their structure, and underlying data. This layer is provided in an automatically generated semantic model. This automatic generation and synchronization enables you to further describe the domain of data with things like hierarchies, friendly names, and descriptions. You can also set formatting specific to your locale or business requirements. With datamarts, you can create measures and standardized metrics for reporting. Power BI (and other client tools) can create visuals and provide results for such calculations based on the data in context.
