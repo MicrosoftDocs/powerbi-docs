@@ -1191,7 +1191,7 @@ The following table shows which packages aren't supported in the Power BI servic
 
 ## Considerations and limitations
 
-- R visuals are not supported in the service for non-Fabric regions and Sovereign clouds. Customers in these regions/clouds will continue to be able to use R visuals in Power BI desktop.
+- R visuals are not supported in the service for Sovereign cloud customers and tenants in regions without Fabric availability. R visuals are supported in Desktop for all users.
 
 - R visuals aren't supported with Service Principal Profiles for App Owns Data.
 - R visuals rendered from the Power BI service (for Premium/ F SKUs) are subject to a limit of 30Mb. This limit applies to the total payload of compressed input data and the R script itself. Always check R visuals after publishing the report to ensure the report will display as expected. 
