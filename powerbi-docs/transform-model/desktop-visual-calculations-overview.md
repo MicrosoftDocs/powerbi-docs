@@ -133,7 +133,7 @@ Many functions have an optional **:::no-loc text="Axis":::** parameter, which ca
 | :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-13.png" border="false":::  | :::no-loc text="COLUMNS ROWS"::: | Calculates horizontally across columns from left to right, continuing row by row from top to bottom. |
 
 > [!NOTE]
-> You can only use axis values that are available in the visual you're working on. Not all visuals provide all axes, and some visuals provide no axes.
+> If you specify an axis that is not present on the visual, that axis is ignored.
 
 ## :::no-loc text="Reset":::
 
