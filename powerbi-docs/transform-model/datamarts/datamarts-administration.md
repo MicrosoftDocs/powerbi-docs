@@ -16,6 +16,8 @@ LocalizationGroup: Data from files
 
 You can administer the use and settings for datamarts just like you can administer other aspects of Power BI. This article describes and explains how to administer your datamarts, and where to find the settings.
 
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
+
 ## Enabling datamarts in the admin portal
 
 Power BI administrators can enable or disable datamart creation for the entire organization or for specific security groups, using the setting found in the Power BI **admin portal**, as shown in the following image.

@@ -17,6 +17,8 @@ LocalizationGroup: Data from files
 
 This article describes the ways you can share your datamarts and manage its permissions to provide users with specific access.
 
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
+
 ## Sharing datamarts for consumption
 
 Once a datamart has been created, you can share it for downstream consumption by other users in your organization. Sharing a datamart enables the recipient to access the datamart in the following ways:  

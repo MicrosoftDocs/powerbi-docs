@@ -16,6 +16,8 @@ LocalizationGroup: Data from files
 
 You can analyze your datamarts with multiple tools, including the **Datamart editor** and the **SQL Query Editor** among others. This article describes how to analyze your datamarts with those tools, and suggestions on how best to see the information you need.
 
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
+
 ## Analyze inside the Datamart editor
 
 The **Datamart editor** provides an easy visual interface to analyze your datamarts. The following sections provide guidance on how to use the **Datamart editor** to gain insights into your datamarts, and your data.
