@@ -19,6 +19,69 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 Reminder: [How you can find your report server product key](find-product-key.md)
 
+
+## May 2025
+
+Read the Power BI blog post, [Power BI Report Server May 2025 Feature Summary](https://powerbi.microsoft.com/es-es/blog/power-bi-report-server-may-2025-feature-summary/) for details.
+
+### Visualizations
+- Table with custom and grouped headers by JTA – a Data Scientist’s Visualization Tool
+- Financial Reporting Matrix now with comments!
+- Drill Down Graph PRO by ZoomCharts
+- TMap 3.0
+- Lollipop Chart by Powerviz
+- Strip Plot by Nova Silva
+- Drill Down Combo PRO by ZoomCharts
+- Sunburst Chart by Powerviz
+- Attribute Control Chart by Nova Silva
+- Drill Down Donut PRO by ZoomCharts
+- Heatmap by Powerviz
+- Maximize data efficiency with accoMASTERDATA writenback for Power BI
+
+### Reporting
+
+- Copy report object name
+- Enhancements to Reference Lines
+
+### Modeling
+
+- Table View improvements!
+
+## January 2025
+
+Read the Power BI blog post, [Power BI Report Server January 2025 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-january-2025-feature-summary/) for details.
+
+### Modeling
+
+- Dynamic format strings for measures (generally available)
+- Introducing INFO.VIEW Data Analysis Expressions (DAX) functions
+- Announcing performance improvements for models with calculation groups and format strings in Excel
+
+### Visualizations
+
+- New in AppSource
+- Date Picker by Powerviz
+- Cycle Plot by Nova Silva
+- Drill Down Network PRO by ZoomCharts
+- Decomposition Tree – All Expanding
+- EDITable for reference/master data management with approval workflow, audit & governance
+- ADWISE Advanced Column v1.0
+- KPI by Powerviz
+- Zebra BI Tables 7.3
+- Waterfall PRO by ZoomCharts: the most interactive waterfall visual for financial data
+- Lollipop bar chart by Nova Silva
+- Sales velocity chart
+- Donut Chart by JTA
+- New book: Data Visualization with Microsoft Power BI
+
+### Data Connectivity
+
+- Snowflake connector updates
+
+### Mobile
+
+- Power BI Mobile apps will no longer connect to Report Server using OAuth and AD FS 2016
+
 ## September 2024
 
 Read the Power BI blog post, [Power BI Report Server September 2024 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2024-feature-summary/) for details.
