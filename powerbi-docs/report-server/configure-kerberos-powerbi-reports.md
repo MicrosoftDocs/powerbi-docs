@@ -3,7 +3,8 @@ title: Configure Kerberos to Use Power BI Reports
 description: Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.
 author: kfollis
 ms.author: kfollis
-ms.date: 05/12/2022
+ms.reviewer: maghan
+ms.date: 05/12/2025
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
@@ -46,7 +47,7 @@ There are several items that need to be configured in order for Kerberos constra
 > [!NOTE]  
 > In order to configure SPNs and delegation settings, you need to be a domain administrator.
 
-We need to configure, or validate, the following.
+We need to configure, or validate, the following:
 
 1. Authentication type within Report Server config.
 1. SPNs for the report server service account.
@@ -58,7 +59,7 @@ We need to configure, or validate, the following.
 
 We need to configure the authentication type for the report server to allow for Kerberos constrained delegation. This is done within the **rsreportserver.config** file. The default location for this file is `C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer`.
 
-Within the rsreportserver.config file, you want to fine the **Authentication/AuthenticationTypes** section.
+Within the `rsreportserver.config` file, you want to find the **Authentication/AuthenticationTypes** section.
 
 We want to make sure that RSWindowsNegotiate is listed and the first in the list of authentication types. It should look similar to the following.
 
@@ -81,7 +82,7 @@ Next, we need to make sure that the report server has valid SPNs available. This
 
 If your report server is configured for the Virtual Service Account or Network Service account, you shouldn't have to do anything. These are in the context of the machine account. The machine account has HOST SPNs by default. These cover the HTTP service and will be used by the report server.
 
-If you're using a virtual server name, one that isn't same as the machine account, the HOST entries won't cover you and you need to manually add the SPNs for the virtual server host name.
+If you're using a virtual server name, the HOST entries won't cover you and you need to manually add the SPNs for the virtual server host name.
 
 ### Domain user account
 
@@ -89,8 +90,6 @@ If your report server is configured to use a domain user account, you have to ma
 
 > [!NOTE]  
 > You'll need domain admin rights in order to create the SPN.
->  
->
 
 It's recommended to create two SPNs. One with the NetBIOS name and the other with the fully qualified domain name (FQDN). The SPN is in the following format.
 
@@ -228,7 +227,7 @@ We want to configure constrained delegation with protocol transiting. With const
 1. Select **Ok**.
 1. Reboot the Power BI Report Server.
 
-## Running a Power BI Report
+## Running a Power BI report
 
 After all of the above configuration is in place, your report should display properly.
 
