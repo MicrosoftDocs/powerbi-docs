@@ -54,7 +54,7 @@ Work through [Run Python scripts in Power BI Desktop](desktop-python-scripts.md)
 
    ![Screenshot that shows Drag to Add data fields here.](media/desktop-python-visuals/python-visuals-15.png)
    
-         Based on your selections, the Python script editor generates the following binding code.
+   Based on your selections, the Python script editor generates the following binding code.
 
    - The editor creates a *dataset* dataframe with the fields you add.
    - The default aggregation is **Don't summarize**.
@@ -84,7 +84,7 @@ Create a scatter plot to see if there's a correlation between age and weight.
 
 1. In the **Python script editor**, under **Paste or type your script code here**, enter this code:
 
-         ```python
+    ```python
    import matplotlib.pyplot as plt 
    dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
    plt.show() 
