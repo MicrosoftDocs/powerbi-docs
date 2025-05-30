@@ -689,9 +689,9 @@ Here are some questions to consider during the decision-making process.
 - **What data storage is centralized versus decentralized?** Understand the needs of your decentralized teams, and whether individuals or departments currently maintain their own Azure Storage accounts. Determine whether workspace administrators will be permitted to connect their own ADLS Gen2 account, or whether you prefer to use one ADLS Gen2 account for all workspaces (tenant-level storage).
 - **How will OneLake be used versus Azure connections?** With the introduction of [OneLake](/fabric/onelake/onelake-overview), consider whether you might choose to gradually move to using OneLake for data storage (BYOL).
 
-For more information, see [Workspace integration with ADLS Gen2](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-integration-with-adls-gen2).
+For more information, see [Workspace integration with Azure Data Lake Storage Gen2](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-integration-with-data-lake-storage-gen2).
 
-For more information, see [Workspace integration with Azure Log Analytics](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-integration-with-azure-log-analytics).
+For more information, see [Workspace integration with Log Analytics](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-integration-with-log-analytics).
 
 #### Step 3: Update Azure connections
 

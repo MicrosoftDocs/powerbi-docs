@@ -1,43 +1,39 @@
 ---
-title: View and present live Power BI data in PowerPoint
+title: View and Present Live Power BI Data in PowerPoint
 description: Learn how to work with live Power BI data in PowerPoint.
 author: paulinbar
 ms.author: painbar
-ms.reviewer: ''
-featuredvideoid: ''
+ms.date: 03/31/2025
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/31/2025
 ---
 
 # View and present live Power BI data in PowerPoint
 
 As soon as you add a live Power BI report page or visual to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md) you used. The following image shows a report page loaded into the add-in, with the add-in features labeled. The same add-in features are available when you load an individual visual.
 
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png" alt-text="Screenshot of Power BI report page in PowerPoint, with controls labeled." lightbox="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png" border="false":::
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png" alt-text="Screenshot of Power BI report page in PowerPoint, with controls labeled." lightbox="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png":::
 
-|Select for option details|||
-|:---------|:---------|:---------|
-|[View menu](#freeze-a-snapshot-of-the-current-view)|[Info](#data-info)|[Data options](#data-options)|
-|[Style options](#add-styles-to-your-presentation)|[Add-in options](#add-in-options)|[Expand/collapse toolbar](#expandcollapse-toolbar)|
-|[Add-in side menu](#add-in-side-pane)|||
+| Select for option details | More details | Toolbar options |
+| :--- | :--- | :--- |
+| [View menu](#freeze-a-snapshot-of-the-current-view) | [Info](#data-info) | [Data options](#data-options) |
+| [Style options](#add-styles-to-your-presentation) | [Add-in options](#add-in-options) | [Expand/collapse toolbar](#expandcollapse-toolbar) |
+| [Add-in side menu](#add-in-side-pane) | N/A | N/A |
 
 ## Understanding what you see
 
 In the add-in, you see:
 
-* **The report page or visual**. The report page or visual is fully interactive, in both edit and slideshow modes, unless it has been [frozen as a static image](#freeze-a-snapshot-of-the-current-view). The left-hand report page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
-* **A toolbar across the bottom of the report page**. The toolbar contains info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
-* **A Show/Hide arrow at the upper right side** that opens the add-in side pane (desktop application only). The add-in side pane contains more controls for working with the add-in, such as deleting the add-in or forcing a refresh of the report while the add-in is open. See [Add-in side pane](#add-in-side-pane) for more detail.
-
-**Tip**: To get a cleaner view and more space, you can collapse the toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
+- **The report page or visual**. The report page or visual is fully interactive, in both edit and slideshow modes, unless it has been [frozen as a static image](#freeze-a-snapshot-of-the-current-view). The left-hand report page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
+- **A toolbar across the bottom of the report page**. The toolbar contains info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
+- **A Show/Hide arrow at the upper right side** that opens the add-in side pane (desktop application only). The add-in side pane contains more controls for working with the add-in, such as deleting the add-in or forcing a refresh of the report while the add-in is open. See [Add-in side pane](#add-in-side-pane) for more detail.
 
 ## Interact with data
 
 You interact with the data just as you would in the Power BI service. You can apply filters and slicers, select data points, and drill down on data.
 
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif" alt-text="Animated gif that shows interacting with the report.":::
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif" alt-text="Animated gif that shows interacting with the report." lightbox="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif":::
 
 The live report page or visual is interactive in both edit and slide-show modes. Changes you make to the report or visual's state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report or visual's state in slide show mode aren't saved. When you exit the show, the report or visual returns to the state it was in when you left edit mode.
 
@@ -47,11 +43,11 @@ As you work with the report or visual in edit mode, you can always restore the i
 
 To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom of the report page or visual using the [Expand/collapse toolbar](#expandcollapse-toolbar) control.
 
-If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode aren't, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page or visual goes back to the state it was in at the beginning of the slide show.
+If you need to present a slide show multiple times, you most likely want to set it up once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode aren't, you can set up the presentation once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page or visual goes back to the state it was in at the beginning of the slide show.
 
 ## Automatically refresh data during slide shows
 
-PowerPoint allows you to continuously play back a presentation in slide show mode. This feature is especially useful when you want to present information in public displays without any human interaction. For information about setting up a continuously running slideshow, see [Create a self-running presentation](https://support.microsoft.com/office/create-a-self-running-presentation-57fc41ae-f36a-4fb5-94a3-52d5bc466037). 
+PowerPoint allows you to continuously play back a presentation in slide show mode. This feature is especially useful when you want to present information in public displays without any human interaction. For information about setting up a continuously running slideshow, see [Create a self-running presentation](https://support.microsoft.com/office/create-a-self-running-presentation-57fc41ae-f36a-4fb5-94a3-52d5bc466037).
 
 If a presentation that is running continuously has slides that include the Power BI add-in, the data in the add-in might become outdated, since normally the add-in only gets the data from Power BI when the slide is loaded or when the user manually refreshes the data being presented.
 
@@ -61,7 +57,7 @@ To enable automatic refresh, go to the add-in footer, select **Add-in options**,
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/slide-show-settings.png" alt-text="Screenshot showing the Slide show settings option in the Power BI add-in options.":::
 
-> [!NOTE]
+> [!NOTE]  
 > This feature requires that your Office version meet the add-in's [minimum Office version requirement](./service-power-bi-powerpoint-add-in-about.md#requirements).
 > Auto refresh only happens in slide show mode, and not while you're editing the presentation.
 
@@ -71,20 +67,20 @@ You can improve the appearance of your presentation by applying styles to the ad
 
 To put a border around the add-in, open **[Style options](#style-options)** and select **Outline**. To change the line color, width, style, or transparency, expand the Outline option.
 
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-add-border.gif" alt-text="Animation showing adding a border around the Power BI add-in for PowerPoint."::: 
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-add-border.gif" alt-text="Animation showing adding a border around the Power BI add-in for PowerPoint." lightbox="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-add-border.gif":::
 
 ## Enrich your presentation with data insights
 
 Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights, which you can then paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
 
-> [!NOTE]
+> [!NOTE]  
 > Not all visuals can generate insights. See [Smart narrative considerations and limitations](../visuals/power-bi-visualization-smart-narrative.md#considerations-and-limitations) for details.
->
+>  
 > Once you've copied an insight to the slide or clipboard, the text is static and won't change when the data changes. To update the insight, you need to regenerate it.
 
 The following animation shows how you can generate data insights, edit them in the **Data insights** dialog, and then paste them directly into the slide or copy them into the notes.
 
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-pasted-in.gif" alt-text="Screenshot showing presentation with insight next to a visual.":::
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-pasted-in.gif" alt-text="Screenshot showing presentation with insight next to a visual." lightbox="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-pasted-in.gif":::
 
 To generate data insights:
 
@@ -92,42 +88,42 @@ To generate data insights:
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-data-insights-option.png" alt-text="Screenshot showing Data insights pasted into slide and notes.":::
 
-1. The insight appears in the **Data insights** dialog. The text is editable and you can change it as desired. When you're satisfied with the text, you can either paste it directly onto the slide as a PowerPoint textbox, or you can copy it onto the clipboard, from where you paste it wherever you like - into the slide notes, for example. 
+1. The insight appears in the **Data insights** dialog. The text is editable and you can change it as desired. When you're satisfied with the text, you can either paste it directly onto the slide as a PowerPoint textbox, or you can copy it onto the clipboard, from where you paste it wherever you like - into the slide notes, for example.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-dialog.png" alt-text="Screenshot of insights dialog.":::
 
 ## Add data point annotations to visuals
 
-Data point annotations enable you to add contextualized annotations to visuals that you've embedded in your presentation as single visuals (not as part of a whole report page). The annotations are saved and stored with the specific add-in instance where you embedded the visual, meaning that you can create an entirely different set of annotations for the same visual if you embed it in a different slide. To see for more information and to see how to create an data point annotation, see [Create data point annotations](./service-power-bi-powerpoint-add-in-annotate.md).
+Data point annotations enable you to add contextualized annotations to visuals that you've embedded in your presentation as single visuals (not as part of a whole report page). The annotations are saved and stored with the specific add-in instance where you embedded the visual, meaning that you can create an entirely different set of annotations for the same visual if you embed it in a different slide. To see for more information and to see how to create a data point annotation, see [Create data point annotations](./service-power-bi-powerpoint-add-in-annotate.md).
 
-:::image type="content" source="./media/service-power-bi-powerpoint-add-in-view-present/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="./media/service-power-bi-powerpoint-add-in-view-present/storytelling-annotation-appearance.png":::
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/storytelling-annotation-appearance.png" alt-text="Screenshot showing data annotations on a chart in a Power BI visual embedded in the Power BI add-in for PowerPoint." lightbox="media/service-power-bi-powerpoint-add-in-view-present/storytelling-annotation-appearance.png":::
 
 ## Freeze a snapshot of the current view
 
-Every time you open your presentation, the report page or visual reloads into the add-in, bringing fresh data from the Power BI service. There might be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [View](#add-in-side-pane) menu in the toolbar. Choosing one of the snapshot options turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you'll see the static view you saved.
+Every time you open your presentation, the report page or visual reloads into the add-in, bringing fresh data from the Power BI service. There might be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [View](#add-in-side-pane) menu in the toolbar. Choosing one of the snapshot options turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you see the static view you saved.
 
-![Screenshot of add-in show as saved image option in add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png)
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png" alt-text="Screenshot of the add-in saved image option on the side pane.":::
 
-The menu allows you to set the view to live data or to a snapshot (you can also switch views with [keyboard shortcuts](#keyboard-shortcuts)). Two snapshot options provide you with some control over who will be able to see the Power BI content in the snapshot:
+The menu allows you to set the view to live data or to a snapshot (you can also switch views with [keyboard shortcuts](#keyboard-shortcuts)). Two snapshot options provide you with some control over who is able to see the Power BI content in the snapshot:
 
-* **Snapshot**: When you choose Snapshot, only users who have permission to view the report in Power BI will be able see the static image of the Power BI content. Users who don't have permission will be able to request access. This option helps keep you from inadvertently showing Power BI content to unauthorized users.
+- **Snapshot**: When you choose Snapshot, only users who have permissions to view the report in Power BI are able see the static image of the Power BI content. Users who don't have permissions are able to request access. This option helps keep you from inadvertently showing Power BI content to unauthorized users.
 
-* **Public snapshot**: If you choose Public snapshot, anyone who can view the presentation to be able to see the static image of the Power BI content, regardless of their permissions in Power BI.
+- **Public snapshot**: If you choose Public snapshot, anyone who can view the presentation to be able to see the static image of the Power BI content, regardless of their permissions in Power BI.
 
 To restore the interactive view, select **Live data**. The live report page or visual will reload in the state it was last in, but with the latest data from Power BI.
 
-> [!NOTE]
+> [!NOTE]  
 > The view menu with the snapshot options requires Office version 2312 (Build 17126) or later. If your Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
->
-> You can only switch between **Live Data** and **Snapshot** in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the choice you made in the desktop application. So whatever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
+>  
+> You can only switch between **Live Data** and **Snapshot** in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the choice you made in the desktop application. So whatever view you selected in the desktop app will be the view that you see in PowerPoint for the web.
 
 ## Share your presentation
 
-When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account and a Microsoft Fabric free license, as well as access to the data. If the Power BI report or visual isn't located in a Premium capacity or Fabric F64 or greater capacity, they'll need a Power BI Pro license. None of this applies if you've frozen the view as a static image.
+When you share the presentation with others, to be able to view the data in the presentation they need an active Power BI account and a Microsoft Fabric free license, and access to the data. If the Power BI report or visual isn't located in a Premium capacity or Fabric F64 or greater capacity, they need a Power BI Pro license. None of this applies if you've frozen the view as a static image.
 
 To make sure people in your organization can access the report or visual and take advantage of the live data experience, when you add a live report page or visual to a presentation, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md). This ensures that the people in your org who you shared the presentation with will be able to see the live data when they open the presentation.
 
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-share-option.gif" alt-text="Animated gif showing how to use the Share option in Power BI to get a link for sharing.":::
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-share-option.gif" alt-text="Animated gif showing how to use the Share option in Power BI to get a link for sharing." lightbox="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-share-option.gif":::
 
 Users who don't have permission to view the report or visual can request access directly from the presentation, and will be able to view the data once they've received access.
 
@@ -137,83 +133,83 @@ Controls that help you work with your data in PowerPoint are described below.
 
 ### Data info
 
-![Screenshot of Power BI add-in for PowerPoint report info.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-report-info.png)
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-report-info.png" alt-text="Screenshot of Power BI add-in for PowerPoint report info.":::
 
-* **Hyperlinked title**: Report name and page or visual name. Select the title to open Power BI to that report page or visual.
-* **Report sensitivity label**: Shows the sensitivity label applied to the report in Power BI. Note: this isn't the sensitivity label (if any) applied to the PowerPoint file itself.
-* **Last update from source**: Shows the time and date of the last data update from the data sources.
+- **Hyperlinked title**: Report name and page or visual name. Select the title to open Power BI to that report page or visual.
+- **Report sensitivity label**: Shows the sensitivity label applied to the report in Power BI. Note: this isn't the sensitivity label (if any) applied to the PowerPoint file itself.
+- **Last update from source**: Shows the time and date of the last data update from the data sources.
 
 ### Data options
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-data-options.png" alt-text="Screenshot of Power BI add-in for PowerPoint data options menu.":::
 
-* **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
-* **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
-* **Annotations**: Show or hide any [data point annotations](#add-data-point-annotations-to-visuals) that exist on the visual. When annotations are hidden, a green dot appears on the Data options icon to indicate that hidden annotations are present. The Annotations option is only available for visuals that have been embedded as single visuals, not as part of a whole report page.
-* **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh doesn't trigger getting data from the data sources.
-* **Reset**: Provides two options:
+- **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
+- **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
+- **Annotations**: Show or hide any [data point annotations](#add-data-point-annotations-to-visuals) that exist on the visual. When annotations are hidden, a green dot appears on the Data options icon to indicate that hidden annotations are present. The Annotations option is only available for visuals that have been embedded as single visuals, not as part of a whole report page.
+- **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh doesn't trigger getting data from the data sources.
+- **Reset**: Provides two options:
    * **Sync**: Choose this option if you want to make sure you've got the latest version of the report or visual from the Power BI service, including any definition changes, such as new or deleted visuals, filters, or slicers.
-   * **Restore**: Choose this option if you want to clear any configurations you done to the report or visuals in the presentation, such as applying filters or slicers. It returns the add-in to the state it was in when it was initially added to the presentation.
+   * **Restore**: Choose this option if you want to clear any configurations to the report or visuals in the presentation, such as applying filters or slicers. It returns the add-in to the state it was in when it was initially added to the presentation.
 
 ### Style options
 
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-style-options.png" alt-text="Screenshot of Power B I add-in for PowerPoint style options menu.":::
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-style-options.png" alt-text="Screenshot of Power B I add in for PowerPoint style options menu.":::
 
-* **Outline**: Puts a border around the add-in. Select the expand arrow to access border line-style formatting options.
+- **Outline**: Puts a border around the add-in. Select the expanded arrow to access border line-style formatting options.
 
 ### Add-in options
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-options.png" alt-text="Screenshot of Power BI add-in for PowerPoint add-in options menu.":::
 
-* **Clear data**: Removes the report page or visual from the add-in and returns you to the add-in **Insert** screen, where you can start over by pasting in the URL of a different report page or visual.
-* **Slide show settings**: Controls data refresh during slide shows. With this setting, you can turn on/turn off automatic data refresh during a slide show, and set the refresh frequency. For more information, see [Automatically refresh data during slide shows](#automatically-refresh-data-during-slide-shows).
-* **Learn**: Opens help pages.
+- **Clear data**: Removes the report page or visual from the add-in and returns you to the add-in **Insert** screen, where you can start over by pasting in the URL of a different report page or visual.
+- **Slide show settings**: Controls data refresh during slide shows. With this setting, you can turn on/turn off automatic data refresh during a slide show, and set the refresh frequency. For more information, see [Automatically refresh data during slide shows](#automatically-refresh-data-during-slide-shows).
+- **Learn**: Opens help pages.
 
 ### Expand/collapse toolbar
 
-![Screenshot of Power BI add-in for PowerPoint expand/collapse toolbar control.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-expand-collapse-toolbar.png)
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-expand-collapse-toolbar.png" alt-text="Screenshot of Power BI add-in for PowerPoint expand/collapse toolbar control.":::
 
 Expands or collapses the toolbar across the bottom of the report or visual. This feature is useful in Slide Show mode, when you need more space and want a cleaner display.
 
 ### Add-in side pane
 
-![Screenshot of Power BI add-in for PowerPoint add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-sidebar.png)
-* **Delete**: Removes the add-in from the PowerPoint slide.
-* **Reload**: The report page reloads every time PowerPoint is opened, so you need to use this option only if the report has changed while you’ve had PowerPoint open.
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-sidebar.png" alt-text="Screenshot of Power BI add-in for PowerPoint add-in side pane.":::
+- **Delete**: Removes the add-in from the PowerPoint slide.
+- **Reload**: The report page reloads every time PowerPoint is opened, so you need to use this option only if the report has changed while you've had PowerPoint open.
 
     If all you want to do is refresh the data, use the **Refresh** option in the [Data options](#data-options) menu instead.
 
-> [!NOTE]
+> [!NOTE]  
 > The add-in side pane is available only in the PowerPoint desktop application. It isn't supported in PowerPoint for the web.
 
 ## Keyboard Shortcuts
 
 To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
 
-|Keyboard shortcut       | Action                                                                  |
-|------------------------|-------------------------------------------------------------------------|
-|**General**             |                                                                         |
-|**Ctrl + Enter**        |Focus in                                                                 |
-|**Ctrl + [**            |Focus out                                                                |
-|**Ctrl + ]**            |Move forward over open panels                                            |
-|**Ctrl + Shift + ]**    |Move backward over open panels                                           |
-|**Ctrl**                |Hide Power BI tooltips                                                   |
-|                        |                                                                         |
-|**Annotations**         |                                                                         |
-|**Ctrl + Alt + I**      |Hide/show annotations                                                   |
-|**Ctrl + Shift + :**    |Move focus to annotation toolbar                                        |
-|**Alt + Shift + I**     |Move focus to annotations group panels                                  |
-|                        |                                                                         |
-|**Live data/Snapshot**  |                                                                         |
-|**Ctrl + Shift + 7**    |Switch to [Live data](#freeze-a-snapshot-of-the-current-view)            |
-|**Ctrl + Shift + 8**    |Switch to [Snapshot](#freeze-a-snapshot-of-the-current-view)             |
-|**Ctrl + Shift + 9**    |Switch to [Public snapshot](#freeze-a-snapshot-of-the-current-view)      |
+| Keyboard shortcut | Action |
+| --- | --- |
+| **General** | |
+| **Ctrl + Enter** | Focus in |
+| **Ctrl + [** | Focus out |
+| **Ctrl + ]** | Move forward over open panels |
+| **Ctrl + Shift + ]** | Move backward over open panels |
+| **Ctrl** | Hide Power BI tooltips |
+| | |
+| **Annotations** | |
+| **Ctrl + Alt + I** | Hide/show annotations |
+| **Ctrl + Shift + :** | Move focus to annotation toolbar |
+| **Alt + Shift + I** | Move focus to annotations group panels |
+| | |
+| **Live data/Snapshot** | |
+| **Ctrl + Shift + 7** | Switch to [Live data](#freeze-a-snapshot-of-the-current-view) |
+| **Ctrl + Shift + 8** | Switch to [Snapshot](#freeze-a-snapshot-of-the-current-view) |
+| **Ctrl + Shift + 9** | Switch to [Public snapshot](#freeze-a-snapshot-of-the-current-view) |
 
 ## Related content
 
-* [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
-* [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
-* [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
-* [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
-* [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
-* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [Storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
+- [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+- [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
+- [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
+- [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
+- [Try asking the Power BI Community](https://community.powerbi.com/)
