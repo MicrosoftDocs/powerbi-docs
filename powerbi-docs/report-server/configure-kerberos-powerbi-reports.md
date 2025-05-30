@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.custom: video-removed
 ms.date: 05/12/2022
 ---
+
 # Configure Kerberos to use Power BI reports
 
 Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.
@@ -44,10 +45,8 @@ There are several items that need to be configured in order for Kerberos constra
 
 > [!NOTE]
 > In order to configure SPNs and delegation settings, you need to be a domain administrator.
->
->
 
-We will need to configure, or validate, the following.
+We need to configure, or validate, the following.
 
 1. Authentication type within Report Server config.
 2. SPNs for the report server service account.
@@ -103,8 +102,6 @@ Power BI Report Server will use a Service of HTTP. For HTTP SPNs you will not li
 
 > [!NOTE]
 > You can verify the URL by either looking at what you enter into the address bar of the browser, or you can look in the Report Server Configuration Manager on the Web Portal URL tab.
->
->
 
 If your machine name is ContosoRS, your SPNs would be the following.
 
@@ -201,7 +198,7 @@ Setspn -S MSOLAPDisco.3/ContosoAS.contoso.com ContosoAS
 Setspn -S MSOLAPDisco.3/ContosoAS ContosoAS
 ```
 
-For more information, see [An SPN for the SQL Server Browser service is required](https://support.microsoft.com/kb/950599).
+For more information, see [An SPN for the SQL Server Browser service is required](https://support.microsoft.com/topic/kb2591753-fix-an-update-is-available-to-add-spn-information-for-service-accounts-to-the-reporting-services-log-file-aa774f1e-c155-005a-0b1b-8a685335b6c7).
 
 ## Delegation settings on the report server service account
 
