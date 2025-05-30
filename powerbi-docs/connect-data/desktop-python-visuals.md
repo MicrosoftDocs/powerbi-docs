@@ -136,8 +136,6 @@ Create a bar plot for each person's age.
    
 ## Limitations
 
-As of May 16, 2025, Python visuals in the Power BI service are only supported for customers whose home region has [Fabric availability](/fabric/admin/region-availability). This is because of shared infrastructure and is not a licensing requirement. Python visuals are supported in Desktop for all users. 
-
 Python visuals in Power BI Desktop have the following limitations:
 
 - The data the Python visual uses for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used, and a message appears on the image. The input data also has a limit of 250 MB.
@@ -170,10 +168,12 @@ The following table describes Python visuals capabilities based on licensing.
 
 |  |Author Python visuals in Power BI Desktop  | Create Power BI service reports with Python visuals |View Python visuals in reports  |  
 |---------|---------|---------|---------|
-|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Premium/Azure capacity only  |  
+|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Fabric regions only  |  
 |**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported | 
-|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    |  
-|**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    | 
+|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Fabric regions only    |  
+|**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported in Fabric regions only   |
+
+Python visuals in the service are supported in Fabric regions. This means that reports published to workspaces will display the Python chart visual when the workspace has (1) a Fabric license, (2) a Pro or PPU license, or (3) a premium license and the PBI home tenant is in a region with Fabric Spark workload availability. Python visuals are supported in Desktop for all users. 
 
 For more information about Power BI Pro licenses and how they differ from free licenses, see [Purchase and assign Power BI Pro user licenses](../enterprise/service-admin-purchasing-power-bi-pro.md).
 
