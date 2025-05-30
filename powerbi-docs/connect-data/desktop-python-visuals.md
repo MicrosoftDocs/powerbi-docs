@@ -54,7 +54,7 @@ Work through [Run Python scripts in Power BI Desktop](desktop-python-scripts.md)
 
    ![Screenshot that shows Drag to Add data fields here.](media/desktop-python-visuals/python-visuals-15.png)
    
-      Based on your selections, the Python script editor generates the following binding code.
+         Based on your selections, the Python script editor generates the following binding code.
 
    - The editor creates a *dataset* dataframe with the fields you add.
    - The default aggregation is **Don't summarize**.
@@ -84,17 +84,17 @@ Create a scatter plot to see if there's a correlation between age and weight.
 
 1. In the **Python script editor**, under **Paste or type your script code here**, enter this code:
 
-      ```python
+         ```python
    import matplotlib.pyplot as plt 
    dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
    plt.show() 
    ```
 
-      Your Python script editor pane should now look like the following image:
+         Your Python script editor pane should now look like the following image:
 
    ![Screenshot that shows the Python script editor with commands.](media/desktop-python-visuals/python-visuals-11.png)
    
-      The code imports the Matplotlib library, which plots and creates the visual.
+         The code imports the Matplotlib library, which plots and creates the visual.
 
 1. Select the **Run** button to generate the following scatter plot in the Python visual.
 
@@ -166,14 +166,14 @@ Python visuals require a [Power BI Pro](../fundamentals/service-self-service-sig
 
 The following table describes Python visuals capabilities based on licensing.
 
-|  |Author Python visuals in Power BI Desktop  | Create Power BI service reports with Python visuals |View Python visuals in reports  |  
+|  |Author Python visuals in Power BI Desktop  | Create Power BI service reports with Python visuals |View Python visuals in reports  |
 |---------|---------|---------|---------|
-|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Fabric regions only  |  
-|**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported | 
-|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Fabric regions only    |  
-|**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported in Fabric regions only   |
+|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported* for Fabric/Premium workspaces|
+|**Unmanaged tenant** (domain not verified) |  Supported | Not supported |  Not supported |
+|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported* for Fabric/Premium workspaces   |
+|**Managed tenant** with Pro or PPU license     |  Supported      | Supported      | Supported* |
 
-Python visuals in the service are supported in Fabric regions. This means that reports published to workspaces will display the Python chart visual when the workspace has (1) a Fabric license, (2) a Pro or PPU license, or (3) a premium license and the PBI home tenant is in a region with Fabric Spark workload availability. Python visuals are supported in Desktop for all users. 
+* Python visuals in the service are supported in Fabric regions. This means that reports published to workspaces will display the Python chart visual when the workspace has (1) a Fabric license, (2) a Pro or PPU license, or (3) a premium license and the PBI home tenant is in a region with [Fabric Spark workload availability](/fabric/admin/region-availability). Python visuals are supported in Desktop for all users. 
 
 For more information about Power BI Pro licenses and how they differ from free licenses, see [Purchase and assign Power BI Pro user licenses](../enterprise/service-admin-purchasing-power-bi-pro.md).
 
