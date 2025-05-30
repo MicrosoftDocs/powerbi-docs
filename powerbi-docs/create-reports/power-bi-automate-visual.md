@@ -173,6 +173,7 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 - The user running the flow within the Power BI report needs to have permissions to run the flow. Grant these permissions through direct sharing by the user or by sharing to a Microsoft Entra group.
 - Create flows that you'll **use** with the Power BI button trigger **directly within the Power BI report**. **Avoid** going directly to Power Automate to create these flows, as the trigger has no access to the data fields necessary for creating the flow.
 - Power BI data is sent to, and processed in, a geography where the flow is deployed.
+- Data selected in the Power Automate **Data** region is only included in the **Body** input when actively used within the flow. If selected fields aren't referenced in flow actions, they won't be available in the body. This behavior optimizes performance by only transmitting data that's used in flow operations.
 
 ## Related content
 
