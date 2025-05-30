@@ -90,11 +90,11 @@ Create a scatter plot to see if there's a correlation between age and weight.
    plt.show() 
    ```
 
-         Your Python script editor pane should now look like the following image:
+   Your Python script editor pane should now look like the following image:
 
    ![Screenshot that shows the Python script editor with commands.](media/desktop-python-visuals/python-visuals-11.png)
    
-         The code imports the Matplotlib library, which plots and creates the visual.
+   The code imports the Matplotlib library, which plots and creates the visual.
 
 1. Select the **Run** button to generate the following scatter plot in the Python visual.
 
