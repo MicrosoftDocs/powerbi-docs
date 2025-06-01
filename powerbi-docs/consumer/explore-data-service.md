@@ -142,9 +142,6 @@ Save your Exploration to a workspace or as a report.
    1. Select the **Save** button in the upper-left corner. A dialog box appears.
    1. Name the Exploration, pick a workspace to save it to, and add a sensitivity label, if applicable. This also saves your current canvas layout (horizontal or vertical) of the Exploration.
 
-   > [!NOTE]
-   > You can only save Explorations to workspaces in a Premium capacity at this time.
-
    :::image type="content" source="media/explore-data-service/save-Exploration.png" alt-text="Screenshot showing naming the Exploration and adding it to a workspace." lightbox="media/explore-data-service/save-Exploration.png":::
 
 - **Save as a report**:
@@ -189,7 +186,6 @@ Explore requires the following permissions and considerations:
     :::image type="content" source="media/explore-data-service/disable-users-view-permissions.png" alt-text="Screenshot showing how admins can limit to people with build permissions in the Explorations section." lightbox="media/explore-data-service/disable-users-view-permissions.png":::
 
 - **Saving an Exploration to a workspace**:
-  - The destination workspace must be in a Premium capacity.
   - Changing a sensitivity label on a semantic model doesn't currently propagate down to the Exploration that you create for it.
   - If you save to **My workspace**, you might need to refresh your page to see the newly saved Exploration artifact.
 - **Saving an Exploration as a report**:
