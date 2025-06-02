@@ -18,9 +18,6 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-> [!IMPORTANT]
-> The features mentioned on this page are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
-
 This article is for organizations who would like to enable and start using Copilot in Microsoft Fabric, specifically in Power BI. We present how to enable Copilot in your tenant, start using Copilot in the Power BI service, and start using Copilot in Power BI Desktop.
 
 For more information on other Fabric workloads, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview). Note, you must have Fabric admin privileges to enable Copilot.

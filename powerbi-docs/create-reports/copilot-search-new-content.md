@@ -15,9 +15,6 @@ ms.collection: ce-skilling-ai-copilot
 
 # Find content with Power BI Copilot search
 
-> [!IMPORTANT]
-> The features mentioned on this page are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
-
 As colleagues share Power BI content with you, you might find yourself having access to an extensive list of content. It can be difficult to recall specific items that you want to navigate back to in order to get an answer to your data question.
 
 Through the [standalone Copilot experience](copilot-chat-with-data-standalone.md), you can easily find Power BI content and chat with your data. In Power BI's Copilot search, the terms *content* and *items* refer to reports, semantic models, workspace apps, organizational apps, and data agents. This page explains when Copilot needs to search for content, the metadata Copilot can look at to find your content, the signals used to boost and increase the relevancy of certain items, and what you can do to make items more discoverable for your end users.
