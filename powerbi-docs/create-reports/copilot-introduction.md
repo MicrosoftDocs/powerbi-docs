@@ -59,6 +59,7 @@ The standalone Copilot can help with the following tasks:
  
 ### Considerations and limitations
 
+Newly purchased capacity or capacity scale-up operations may take up to 24 hours for Copilot to recognize and become available for use.
 The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
 While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use is not officially supported at this time.
 
@@ -97,6 +98,7 @@ To ensure a seamless experience with Copilot in Power BI, it's important to meet
 The following requirements pertain to all Copilot experiences in Power BI.
 
 - Your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/fundamentals/copilot-enable-fabric).
+- You need to have a F2 capacity or above to be able to use Copilot
 - Your Fabric capacity needs to be in one of the regions listed in [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
 - If your tenant or capacity is outside the United States or France, Copilot is disabled by default unless your Fabric tenant admin enables the tenant setting called [**Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance**](/fabric/admin/service-admin-portal-copilot) in the Fabric admin portal.
 - Copilot in Microsoft Fabric isn't supported on trial stock-keeping units (SKUs). Only paid SKUs are supported.
