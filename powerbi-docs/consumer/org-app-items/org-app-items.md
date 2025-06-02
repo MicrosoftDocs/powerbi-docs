@@ -68,9 +68,9 @@ When you give users access to the org app item, **at a minimum they gain read ac
   - With workspace apps, all items added to an item were automatically versioned when the app was published.
 - Since users have access to the source items, if provided a direct link to an included item, org app users can view the source items outside of the org app.
   - With workspace apps users couldn't view items outside the app, unless they had access to the original source item via another method, like direct access.
-- If a paginated report is built on a semantic model, users given access to an org app are automatically granted access to the model.
+- If a paginated report is built on a semantic model, users given access to an org app automatically get access to the model.
   - With workspace apps, users aren't automatically granted access to semantic models associated with paginated reports, app authors had to manually manage access to models.
-- If a report or paginated report is built on a semantic model in a different workspace, users given access to an org app are automatically granted access to the model in the different workspace.
+- If a report or paginated report is built on a semantic model in a different workspace, users given access to an org app automatically get access to the model in the different workspace.
   - With workspace apps, app authors had to manually manage access to models in a different workspace.
 - If you grant a user share permission on an org app item, that user can share the org app with others.
   - With workspace apps, only specific roles within the workspace could manage access and share the app.
@@ -253,7 +253,7 @@ For the full access management experience, select **Share > Manage access** and 
 
 ![Org app access management add user button.](media/org-app-items/org-app-direct-access-tab-access-management.png)
 
-Remember, users given access to an org app item automatically get access to:
+Remember, users given access to an org app item automatically gets access to:
 - items included in the org app from the same workspace.
 - semantic models that included reports source from in the same workspace *and* different workspaces. 
 
