@@ -7,7 +7,7 @@ ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/16/2025
+ms.date: 06/02/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,22 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## May 2025 QFE 1
+
+*Version 2.143.1204.0, Released: May 28, 2025*
+
+Bug fixes/improvements:
+
+* Addressed regression in the filter pane **Apply** button not appearing.
+* Added a missing **Learn more** link for a new SQL Database feature under **Preview features**.
+* Added **Learn more** and **Share feedback** links for translytical task flows.
+* Addressed the incorrect inclusion of the action button *loading* state for non-DataFunction visual link types.
+* Updated to allow for better fuzzy matching between user inputs and trigger prompts in desktop by using LLM-based match.
+* Addressed dark mode styling issues for relationship checkboxes.
+* Updated swap loading messages in the data question service to improve clarity and accuracy.
+* Addressed outdated theme state IDs by introducing a feature switch to ignore them in button slicer visuals.
+* Implemented feature disablement by preventing entry points for unsupported visuals through refined supportability checks and filter handling logic.
 
 ## April 2025 QFE 1
 

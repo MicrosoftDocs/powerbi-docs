@@ -90,7 +90,7 @@ Check your license type in the **Workspace settings**.
 
     You can see which license mode is applied to your workspace under **Premium**. If license modes are grayed out, this workspace doesn't have access to the appropriate capacity.
 
-When you're using the standalone Copilot experience and don't have access to a Fabric Copilot capacity, you need to select a workspace that has the required capacity for Copilot.
+When you're using the standalone Copilot experience and don't have access to a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity), you need to select a workspace that has the required capacity for Copilot.
 
 :::image type="content" source="media/copilot-enable-power-bi/enable-copilot-select-workspace.png" alt-text="Screenshot showing the option to select a workspace for enabling Copilot in Power BI." lightbox="media/copilot-enable-power-bi/enable-copilot-select-workspace.png":::
 
@@ -100,7 +100,7 @@ Selecting the **Select a workspace** button lists workspaces you have access to 
 
 ## Use Copilot in Power BI Desktop
 
-To use Copilot in Power BI Desktop, if you don't have access to a Fabric Copilot capacity, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
+To use Copilot in Power BI Desktop, if you don't have access to a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity), you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
 > [!NOTE]
 > The Copilot button always appears in the ribbon in Power BI Desktop. To be able to use Copilot, you must be signed in and have access to a workspace that is in Premium or Fabric capacity.
@@ -129,7 +129,7 @@ When you use Copilot in Power BI Desktop for the first time, you're asked to pic
 
 ## Fabric Copilot capacity
 
-As an alternative to using a specific workspace capacity, you can use a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity). Fabric Copilot capacity enables users to charge Copilot usage from Power BI Desktop, Pro, and Premium per-user workspaces to a single capacity. Learn more about setting up a Fabric Copilot capacity.
+As an alternative to using a specific workspace capacity, you can use a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity). Fabric Copilot capacity enables users to charge Copilot usage from Power BI Desktop, Pro, and Premium per-user workspaces to a single capacity. Learn more about setting up a [Fabric Copilot capacity.](/fabric/enterprise/fabric-copilot-capacity)
 
 Once a user is assigned to a Fabric Copilot capacity, no other steps are required to use any of the Copilot experiences.
 
