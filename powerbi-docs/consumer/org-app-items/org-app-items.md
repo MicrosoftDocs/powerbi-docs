@@ -68,15 +68,15 @@ When you give users access to the org app item, **at a minimum they gain read ac
   - With workspace apps, all items added to an item were automatically versioned when the app was published.
 - Since users have access to the source items, if provided a direct link to an included item, org app users can view the source items outside of the org app.
   - With workspace apps users couldn't view items outside the app, unless they had access to the original source item via another method, like direct access.
-- If a paginated report is built on a semantic model, users who are given access to an org app are automatically granted acces to the model.
-  - With workspace apps, users weren't automatically granted access to semantic models associated with paginated reports, app authors had to manually manage access to models.
+- If a paginated report is built on a semantic model, users who are given access to an org app are automatically granted access to the model.
+  - With workspace apps, users aren't automatically granted access to semantic models associated with paginated reports, app authors had to manually manage access to models.
 - If a report or paginated report is built on a semantic model in a different workspace, users who are given access to an org app are automatically granted access to the model in the different workspace.
   - With workspace apps, app authors had to manually manage access to models in a different workspace.
 - If you grant a user share permission on an org app item, that user can share the org app with others.
   - With workspace apps, only specific roles within the workspace could manage access and share the app.
 - Users who have access to an org app don't have to install the org app to view it. The org app item appears in lists like other items do, **Recent on Home**.
   - With workspace apps, a user had to install an app to see it in lists.
-- If a user is removed from an org app, that user’s org-app-based access to included report items and semantic model items associated with that org app is automatically revoked. If a user has another form of access to included items or semantic models, that form of access is unaffected. (Automatic revocation of included real-time dashboard and notebook items is coming soon.)
+- If a user is removed from an org app, that user’s org-app-based access to included report items and semantic model items associated with that org app is automatically revoked. If a user has another form of access to included items or semantic models that form of access is unaffected. (Automatic revocation of included real-time dashboard and notebook items is coming soon.)
   - With workspace apps, if a user was removed from an app their access to semantic models remained. Revoking access to semantic models had to be done manually. App authors had to be sure that they weren't breaking that user's ability to view other reports when removing model access.
   
 ### Workspace apps continue to work alongside org app items (preview)
@@ -282,19 +282,15 @@ Want to grant extra permissions to a user? Find the user you would like to manag
 > [!NOTE]
 > There are select cases where your org app doesn't automatically propagate or revoke access to items the org app is dependent on.
 > **Access propagation**: For example, a report with a paginated report visual, also known as a report definition language (RDL) visual, is dependent on a paginated report item. Org apps don't propagate access to underlying paginated reports at this time. If your org app consumers have a broken view in an org app, consider all the items your consumers need access to, grant necessary access, and have your consumers view the org app again.
-> **Access revocation**: Org apps propagate access to Fabric items, such as real-time dashboard and notebook items included in the app, but do not yet revoke access automatically when a user loses access to an org app or those items are removed from the org app. Manage access removal of these items from each item's permissions management page.
 
-Here are the items org apps propagate access to: 
+Here are the items org apps propagate and revoke access to:
 - The org app item itself 
-  - Included report items 
-    - The underlying semantic model for a report item (for a model in the same workspace or separate workspace)
+  - Included report and paginated report items
+    - The underlying semantic model for a report or paginated report item (for a model in the same workspace or separate workspace)
   - Included notebook or real-time dashboard items
  
-Here are the items org apps revoke access to: 
-- The org app item itself 
-  - Included report items 
-    - The underlying semantic model for a report item (for a model in the same workspace or separate workspace)
-
+Refer to the above list for what included items and underlying items org apps will propagate and revoke access to. There are underlying item scenarios, like the RDL visual scenario mentioned above, where org apps do not propagate or revoke access. Other scenarios included Fabric sources like lakehouses and data warehouses. For those scenarios, manage access on those underlying sources directly.
+ 
 ### Insufficient permissions when managing an org app
 
 Org app items are built to automatically manage access for included items and underlying items. You don't have to independently manage access for items individually. Your org app works as expected for your consumers, without broken views in the org app. 
