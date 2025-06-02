@@ -69,7 +69,7 @@ When you give users access to the org app item, **at a minimum they gain read ac
 - Since users have access to the source items, if provided a direct link to an included item, org app users can view the source items outside of the org app.
   - With workspace apps users couldn't view items outside the app, unless they had access to the original source item via another method, like direct access.
 - If a paginated report is built on a semantic model, users who are given access to an org app are automatically granted acces to the model.
-  - With workspace apps, users weren't automaatically granted access to semantic models associated with paginated reports, app authors had to manually manage access to models.
+  - With workspace apps, users weren't automatically granted access to semantic models associated with paginated reports, app authors had to manually manage access to models.
 - If a report or paginated report is built on a semantic model in a different workspace, users who are given access to an org app are automatically granted access to the model in the different workspace.
   - With workspace apps, app authors had to manually manage access to models in a different workspace.
 - If you grant a user share permission on an org app item, that user can share the org app with others.
