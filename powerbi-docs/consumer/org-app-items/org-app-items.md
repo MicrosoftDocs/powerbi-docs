@@ -56,7 +56,7 @@ With org app items, you can create **multiple org apps per workspace**.
 
 With org app items, you can package up items from the **same workspace** and share them with others in your organization who don't have access to the workspace. 
 
-Once you create an org app item, you can include **Power BI reports, Fabric notebooks, and real-time dashboards** in the org app. **These items are referred to as included items**.
+Once you create an org app item, you can include **Power BI reports, paginated reports, Fabric notebooks, and real-time dashboards** in the org app. **These items are referred to as included items**.
 
 When you give users access to the org app item, **at a minimum they gain read access** to the included items as well. For Power BI reports in an org app, **users gain read access to the semantic models associated with the report**. For new org apps in preview, **even if a semantic model is in a different workspace** users gain access to that model.
 
@@ -68,8 +68,10 @@ When you give users access to the org app item, **at a minimum they gain read ac
   - With workspace apps, all items added to an item were automatically versioned when the app was published.
 - Since users have access to the source items, if provided a direct link to an included item, org app users can view the source items outside of the org app.
   - With workspace apps users couldn't view items outside the app, unless they had access to the original source item via another method, like direct access.
-- If a report is built on a semantic model in a different workspace, users who are given access to an org app are automatically granted access to the model in the different workspace.
-  - With workspace apps, org app authors had to manually manage access to models in a different workspace.
+- If a paginated report is built on a semantic model, users who are given access to an org app are automatically granted acces to the model.
+  - With workspace apps, users weren't automaatically granted access to semantic models associated with paginated reports, app authors had to manually manage access to models.
+- If a report or paginated report is built on a semantic model in a different workspace, users who are given access to an org app are automatically granted access to the model in the different workspace.
+  - With workspace apps, app authors had to manually manage access to models in a different workspace.
 - If you grant a user share permission on an org app item, that user can share the org app with others.
   - With workspace apps, only specific roles within the workspace could manage access and share the app.
 - Users who have access to an org app don't have to install the org app to view it. The org app item appears in lists like other items do, **Recent on Home**.
