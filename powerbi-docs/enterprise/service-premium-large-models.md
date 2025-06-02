@@ -32,7 +32,7 @@ Large semantic models in the service don't affect the Power BI Desktop model upl
 
 Steps here describe enabling large semantic models for a new model published to the service. For existing semantic models, only step 3 is necessary.
 
-1. Create a model in Power BI Desktop. If your semantic model becomes larger and progressively consume more memory, be sure to configure [Incremental refresh](../connect-data/incremental-refresh-overview.md).
+1. Create a model in Power BI Desktop. If your semantic model becomes larger and progressively consumes more memory, be sure to configure [Incremental refresh](../connect-data/incremental-refresh-overview.md).
 
 2. Publish the model as a semantic model to the service.
 
