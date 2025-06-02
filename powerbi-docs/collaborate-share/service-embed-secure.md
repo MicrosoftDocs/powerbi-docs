@@ -166,6 +166,8 @@ You can activate Copilot for secure web or portal embedded reports by selecting 
 
 * The authentication token lifetime is controlled based on your Microsoft Entra settings. When the authentication token expires, the user will need to sign in again to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
 
+* Azure B2B Guest user accounts aren't supported, option 'Embed report > Website or portal' will not be visible
+
 ## Related content
 
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
