@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 ---
 # Get started with org apps (preview) 
 
-Welcome to the preview for org apps as items - Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. And you can manage org apps the way you would any other item type - from creating a new org app, to managing access, to sharing the org app - all the things you find familiar and easy about managing other items, such as reports, are all familiar with org apps as items as well.
+Welcome to the preview for org apps as items - Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. And you can manage org apps the way you would any other item type. From creating a new org app, to managing access, to sharing the org app. All the things you find familiar and easy about managing other items, such as reports, are all familiar with org apps as items.
 
 ![Collage image of managing an org app item.](media/org-app-items/org-app-item-management-collage.png)
 
@@ -63,20 +63,20 @@ When you give users access to the org app item, **at a minimum they gain read ac
 ### Key ways that org app items are different from workspace apps (also known as Power BI apps)
 
 - Multiple org app items can be created per workspace.
-  - With workspace apps, only one app could be created per workspace. If you had the need for different apps within a workspace, you could create audiences that would show or hide content in your app based on permissions. With org app items, you can create a unique app per need.
+  - With workspace apps only one app could be created per workspace. If you had the need for different apps within a workspace, you could create audiences that would show or hide content in your app based on permissions. With org app items, you can create a unique app per need.
 - The included items, like reports, added to an org app aren't versioned copies of the source item. They're the original items in the same workspace as the org app item. Users who have access to the org app have access to the original version of the items added to the org app.
   - With workspace apps, all items added to an item were automatically versioned when the app was published.
 - Since users have access to the source items, if provided a direct link to an included item, org app users can view the source items outside of the org app.
   - With workspace apps users couldn't view items outside the app, unless they had access to the original source item via another method, like direct access.
-- If a paginated report is built on a semantic model, users who are given access to an org app are automatically granted access to the model.
+- If a paginated report is built on a semantic model users given access to an org app are automatically granted access to the model.
   - With workspace apps, users aren't automatically granted access to semantic models associated with paginated reports, app authors had to manually manage access to models.
-- If a report or paginated report is built on a semantic model in a different workspace, users who are given access to an org app are automatically granted access to the model in the different workspace.
+- If a report or paginated report is built on a semantic model in a different workspace users given access to an org app are automatically granted access to the model in the different workspace.
   - With workspace apps, app authors had to manually manage access to models in a different workspace.
-- If you grant a user share permission on an org app item, that user can share the org app with others.
+- If you grant a user share permission on an org app item that user can share the org app with others.
   - With workspace apps, only specific roles within the workspace could manage access and share the app.
 - Users who have access to an org app don't have to install the org app to view it. The org app item appears in lists like other items do, **Recent on Home**.
   - With workspace apps, a user had to install an app to see it in lists.
-- If a user is removed from an org app, that user’s org-app-based access to included report items and semantic model items associated with that org app is automatically revoked. If a user has another form of access to included items or semantic models that form of access is unaffected. (Automatic revocation of included real-time dashboard and notebook items is coming soon.)
+- If a user is removed from an org app that user’s org-app-based access to included report items and semantic model items associated with that org app is automatically revoked. If a user has another form of access to included items or semantic models that form of access is unaffected. (Automatic revocation of included real-time dashboard and notebook items is coming soon.)
   - With workspace apps, if a user was removed from an app their access to semantic models remained. Revoking access to semantic models had to be done manually. App authors had to be sure that they weren't breaking that user's ability to view other reports when removing model access.
   
 ### Workspace apps continue to work alongside org app items (preview)
@@ -253,7 +253,7 @@ For the full access management experience, select **Share > Manage access** and 
 
 ![Org app access management add user button.](media/org-app-items/org-app-direct-access-tab-access-management.png)
 
-Remember, users who are given access to an org app item are automatically granted access to:
+Remember, users given access to an org app item are automatically granted access to:
 - items included in the org app from the same workspace.
 - semantic models that included reports source from in the same workspace *and* different workspaces. 
 
@@ -269,7 +269,7 @@ Screenshot of the "more" menu on an org app item:
 
 ![The more menu from an org app item in a workspace list.](media/org-app-items/org-app-item-contextual-menu-from-workspace.png)
 
-By default, users granted access to an org app are given read permissions for the org app item, included items, and underlying items. 
+By default, users granted access to an org app get read permissions for the org app item, included items, and underlying items. 
 
 Want to grant extra permissions to a user? Find the user you would like to manage and choose what you would like to manage. Manage permissions like share or removing the user's access:
 
@@ -289,7 +289,7 @@ Here are the items org apps propagate and revoke access to:
     - The underlying semantic model for a report or paginated report item (for a model in the same workspace or separate workspace)
   - Included notebook or real-time dashboard items
  
-Refer to the above list for what included items and underlying items org apps will propagate and revoke access to. There are underlying item scenarios, like the RDL visual scenario mentioned above, where org apps do not propagate or revoke access. Other scenarios included Fabric sources like lakehouses and data warehouses. For those scenarios, manage access on those underlying sources directly.
+Refer to the above list for what included items and underlying items org apps will propagate and revoke access to. There are underlying item scenarios, like the RDL visual scenario mentioned above, where org apps don't propagate or revoke access. Other scenarios included Fabric sources like lakehouses and data warehouses. For those scenarios, manage access on those underlying sources directly.
  
 ### Insufficient permissions when managing an org app
 
