@@ -7,17 +7,20 @@ ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/15/2025
+ms.date: 05/14/2025
 ---
 
 # Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build. Always follow the guide on how to [upgrade Power BI Report Server](upgrade.md) when performing any upgrade.
 
-See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
+See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
 See [Download Power BI Report Server](download-powerbi-report-server.md) for more information about downloading and installing Power BI Report Server.
 
+You must use Microsoft Report Builder to create paginated reports in Power BI Report Server. For information about Microsoft Report Builder, see [Install Microsoft Report Builder - Power BI Report Server](https://learn.microsoft.com/power-bi/report-server/install-report-builder).
+
+=======
 ## May 2025
 
 ### Power BI Report Server
@@ -48,6 +51,7 @@ Note: This is the last release of Power BI Desktop for RS that will include a 32
 
 - *Version: 2.143.954.0  (May 2025), Released: May 22, 2025*
      - Support for May 2025 Power BI Report Server.
+
 
 ## January 2025
 
