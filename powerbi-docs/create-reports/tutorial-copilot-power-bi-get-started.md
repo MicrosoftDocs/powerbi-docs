@@ -15,8 +15,8 @@ ms.date: 05/06/2025
 
 # Copilot in Power BI tutorial: Get started
 
-> [!IMPORTANT]
-> The features mentioned in this tutorial are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
+> [!NOTE]
+> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
 
 Before you begin, you need to complete the following prerequisites and download the sample Power BI Desktop file required for this end-to-end tutorial.
 
