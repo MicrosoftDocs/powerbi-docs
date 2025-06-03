@@ -16,8 +16,8 @@ ms.collection: ce-skilling-ai-copilot
 
 # Prepare your data for AI
 
-> [!IMPORTANT]
-> The features mentioned on this page are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
+> [!NOTE]
+> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
 
 Power BI is introducing new capabilities to help you get your data ready for natural language experiences with Copilot. The first step to get the best results from Power BI Copilot is always to have a semantic model that follows best practices. However, models often require more assistance to be fully prepared for the optimal interactions with AI. We've delivered tooling features to help you prepare your data for AI. These features allow you to provide more context about your model, help guide Copilot to the right data in the model, and help increase the quality of Copilot output.
 
