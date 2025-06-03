@@ -9,8 +9,6 @@
       href: service-get-data.md
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
-    - name: "OneLake data hub"
-      href: /fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json
     - name: "Power BI for Azure users"
       href: powerbi-azure-landing.md
   - name: Quickstarts
