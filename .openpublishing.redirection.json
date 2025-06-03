@@ -6470,6 +6470,17 @@
             "source_path": "powerbi-docs/create-reports/copilot-preview-toggle.md",
             "redirect_url": "/power-bi/create-reports/copilot-enable-power-bi",
             "redirect_document_id": false
-        }                
-  ]
+        },                
+        {
+            "source_path": "powerbi-docs/connect-data/service-dataset-details-page.md",
+            "redirect_url": "/fabric/governance/onelake-catalog-item-details",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/connect-data/service-datamart-details-page.md",
+            "redirect_url": "/fabric/governance/onelake-catalog-item-details",
+            "redirect_document_id": false
+        } 
+
+    ]
 }
