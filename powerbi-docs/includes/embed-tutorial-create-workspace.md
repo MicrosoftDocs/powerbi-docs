@@ -19,4 +19,4 @@ To create a workspace, do the following:
 1. Sign in to Fabric.
 1. Select **Workspaces**.
 1. Select **+ New workspace**.
-1. Name your workspace and select **Save**.
+1. Name your workspace and select **Apply**.
