@@ -133,7 +133,7 @@ For a long list of supported R packages (and the short list of unsupported packa
 
   1. Add the following line at the beginning of the R script:
     
-      ```R script
+    ```R script
       powerbi_rEnableShowTextForCJKLanguages =  1
     ```
 
