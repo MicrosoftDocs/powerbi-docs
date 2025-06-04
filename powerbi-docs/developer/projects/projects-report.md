@@ -397,11 +397,9 @@ PBIR size limitations enforced by the service:
 
 - 1,000 max pages per report.
 - 300 max visuals per page.
-- 5 mb max for each bookmark file.
-- 1 mb max for each file.
 - 1,000 max resource package files per report.
 - 300-mb max size for all resource package files.
-- 20-mb max size of all report files.
+- 300-mb max size of all report files.
 
 [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) export reports using the format currently applied in the service. If a report is created or imported into Fabric using the PBIR format, it will be exported in PBIR. Likewise, if a report is PBIR-Legacy, it will be exported in the PBIR-Legacy format. 
 
