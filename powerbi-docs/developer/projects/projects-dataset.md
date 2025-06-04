@@ -40,13 +40,13 @@ Not every project semantic model folder includes all of the files and subfolders
 
 Contains semantic model settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-For more information, see the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/localSettings.md).
+For more information, see the [localSettings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/localSettings).
 
 #### .pbi\editorSettings.json
 
 Contains semantic model editor settings saved as part of the semantic model definition for use across users and environments.
 
-For more information, see the [editorSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/editorSettings.md).
+For more information, see the [editorSettings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/editorSettings).
 
 #### .pbi\cache.abf
 
@@ -68,7 +68,7 @@ If you select **Apply changes**, Power BI Desktop overwrites the queries in mode
 
 The unappliedChanges.json file is automatically incorporated into the semantic model definition and saved in Git by default. This allows you to commit your ongoing work to the development branch, serving as a backup and making it accessible to other team members. However, you can exclude this file from Git's tracking, preventing unfinished query work from affecting other developers.
 
-For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
+For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/unappliedChanges).
 
 #### definition.pbism
 
@@ -81,7 +81,7 @@ This file also specifies the supported semantic model definition formats through
 | 1.0      | Semantic model definition must be stored as TMSL in the model.bim file. |
 | 4.0 or above | Semantic model definition can be stored as TMSL (model.bim file) or TMDL (\definition folder). |
 
-For more information, see the [definition.pbism schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
+For more information, see the [definition.pbism schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/definitionProperties).
 
 
 #### model.bim

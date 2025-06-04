@@ -81,7 +81,7 @@ Default content of .gitignore when saving as PBIP:
 
 The PBIP file contains a pointer to a report folder, opening a PBIP opens the targeted report and model for authoring.
 
-For more information, see the [pbip schema document](https://github.com/microsoft/powerbi-desktop-samples/blob/main/item-schemas/common/pbip.md).
+For more information, see the [pbip schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/pbip/pbipProperties).
 
 ## Open a Power BI Project
 
@@ -191,7 +191,7 @@ With JSON schemas, you can:
 - Improve authoring with syntax highlighting, tooltips, and autocomplete.
 - Use external tools with knowledge of supported properties within project metadata.
 
-Use VS Code to map JSON schemas to the files being authored. JSON schemas for project files are provided in the [Power BI Desktop samples Git repo](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas).
+Use VS Code to map JSON schemas to the files being authored. JSON schemas for project files are provided in the [json-schemas Git repo](https://github.com/microsoft/json-schemas/tree/main/fabric).
 
 ## Considerations and limitations
 

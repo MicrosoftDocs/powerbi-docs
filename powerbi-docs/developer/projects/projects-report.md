@@ -41,7 +41,7 @@ Not every project report folder includes all of the files and subfolders describ
 
 Contains report settings that apply only for the current user and local computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-For more information, see the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/localSettings.md).
+For more information, see the [localSettings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/localSettings).
 
 #### CustomVisuals\\
 
@@ -141,7 +141,7 @@ This file also specifies the supported report definition formats through the 've
 | 1.0      | Report definition must be stored as PBIR-Legacy in the report.json file. |
 | 4.0 or higher | Report definition can be stored as PBIR-Legacy (report.json file) or [PBIR](#pbir-format) (\definition folder). |
 
-For more information, see the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
+For more information, see the [definition.pbir schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definitionProperties).
 
 #### mobileState.json
 
