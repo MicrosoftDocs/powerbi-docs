@@ -110,7 +110,7 @@ The backbone of each cluster are compute resources managed by [Virtual Machine S
 
 There are many surrounding resources that ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Microsoft Entra ID exclusively.
 
-Any request that comes to Power BI Premium infrastructure goes to front-end nodes first; they're the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front-end nodes authenticate the request, handle it, or forward it to the appropriate resources (for example, back-end nodes).
+Any request that comes to Power BI Premium infrastructure goes to front-end nodes first - they're the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front-end nodes authenticate the request, handle it, or forward it to the appropriate resources (for example, back-end nodes).
 
 Back-end nodes provide most of the Power BI Premium capabilities and features.
 
@@ -193,7 +193,7 @@ Some organizations have a global presence and may require Power BI services in m
 
 The query execution layer, query caches, and artifact data assigned to a multi-geo workspace are hosted and remain in the remote capacity Azure geography. However, some artifact metadata, such as report structure, may remain stored at rest in the tenant's home geo. Additionally, some data transit and processing may still happen in the tenant's home geo, even for workspaces that are hosted in a multi-geo Premium capacity.
 
-See [Configure Multi-Geo support for Fabric](/fabric/admin/service-admin-premium-multi-geo) for more information about creating and managing Power BI deployments that span multiple Azure geographies.
+See [Configure Multi-Geo support for Fabric](/fabric/admin/service-admin-premium-multi-geo) for more information about creating and managing deployments that span multiple Azure geographies.
 
 ### Regions and datacenters
 
@@ -256,7 +256,7 @@ Dataflows provide users the ability to configure back-end data processing operat
 
 Each configured data source is bound to a client technology for accessing that data source. The structure of credentials required to access them is formed to match required implementation details of the data source. Transformation logic is applied by Power Query services while the data is in flight. For premium dataflows, Power Query services execute in back-end nodes. Data may be pulled directly from the cloud sources or through a gateway installed on premises. When pulled directly from a cloud source to the service or to the gateway, the transport uses protection methodology specific to the client technology, if applicable. When data is transferred from the gateway to the cloud service, it is encrypted. See the [Data in transit](#data-in-transit) section above.
 
-When customer-specified data sources require credentials for access, the owner/creator of the dataflow will provide them during authoring. They're stored using standard product-wide credential storage. See the [Authentication to data sources](#authentication-to-data-sources) section above. There are various approaches users may configure to optimize data persistence and access. By default, the data is placed in a Power BI-owned and protected storage account. Storage encryption is enabled on the Blob storage containers to protect the data while it is at rest. See the [Data at rest](#data-at-rest) section below. Users may, however, configure their own storage account associated with their own Azure subscription. When doing so, a Power BI service principal is granted access to that storage account so that it may write the data there during refresh. In this case, the storage resource owner is responsible for configuring encryption on the configured Azure Data Lake Storage account. Data is always transmitted to Blob storage using encryption.
+When customer-specified data sources require credentials for access, the owner/creator of the dataflow will provide them during authoring. They're stored using standard product-wide credential storage. See [Authentication to data sources](#authentication-to-data-sources) above. There are various approaches users may configure to optimize data persistence and access. By default, the data is placed in a Power BI-owned and protected storage account. Storage encryption is enabled on the Blob storage containers to protect the data while it is at rest. See [Data at rest](#data-at-rest) below. Users may, however, configure their own storage account associated with their own Azure subscription. When doing so, a Power BI service principal is granted access to that storage account so that it may write the data there during refresh. In this case, the storage resource owner is responsible for configuring encryption on the configured Azure Data Lake Storage account. Data is always transmitted to Blob storage using encryption.
 
 Since performance when accessing storage accounts may be suboptimal for some data, users also have the option to use a Power BI-hosted compute engine to increase performance. In this case, data is redundantly stored in an SQL database that is available for DirectQuery through access by the back-end Power BI system. Data is always encrypted on the file system. If the user provides a key for encrypting the data stored in the SQL database, that key will be used to doubly encrypt it.
 
@@ -274,7 +274,7 @@ Paginated reports support rich and powerful expressions written in Microsoft Vis
 
 Expressions are created by the author of the report with access to the broad range of features of the .NET Framework. The processing and execution of paginated reports is performed inside a sandbox.
 
-Paginated report definitions (.rdl) are stored in Power BI, and to publish and/or render a paginated report a user needs to authenticate and authorize in the same way as described in the [Authentication to the Power BI service](#authentication-to-the-power-bi-service) section above.
+Paginated report definitions (.rdl) are stored in Power BI, and to publish and/or render a paginated report a user needs to authenticate and authorize in the same way as described in [Authentication to the Power BI service](#authentication-to-the-power-bi-service).
 
 The Microsoft Entra token obtained during the authentication is used to communicate directly from the browser to the Power BI Premium cluster.
 
@@ -443,7 +443,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **How does Power BI cache report, dashboard, or model data, and is it secure?**
 
-* When a data source is accessed, the Power BI service follows the process outlined in the previous section, [Authentication to data sources](#authentication-to-data-sources).
+* When a data source is accessed, the Power BI service follows the process outlined in [Authentication to data sources](#authentication-to-data-sources).
 
 **Do clients cache web page data locally?**
 
@@ -455,7 +455,7 @@ The following questions are common security questions and answers for Power BI. 
 
   When data connections are made to an **RLS-capable** data source, such as an Analysis Services data source, only dashboard data is cached in Power BI. Each time a report or semantic model is viewed or accessed in Power BI that uses data from the RLS-capable data source, the Power BI service accesses the data source to get data based on the user's credentials, and if sufficient permissions exist, the data is loaded into the report or data model for that user. If authentication fails, the user will see an error.
 
-  For more information, see the [Authentication to data sources](#authentication-to-data-sources) section earlier in this document.
+  For more information, see [Authentication to data sources](#authentication-to-data-sources).
 
 **Our users connect to the same data sources all the time, some of which require credentials that differ from their domain credentials. How can they avoid having to input these credentials each time they make a data connection?**
 

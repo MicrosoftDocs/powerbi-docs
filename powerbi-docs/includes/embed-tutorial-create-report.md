@@ -14,7 +14,7 @@ Your next step is to create a report and upload it to your workspace. You can [c
 >[!TIP]
 >If you already have a workspace with a report, you can skip this step.
 
-To download a sample report (not Direct Lake enabled) and publish it to your workspace, follow these steps:
+To download a sample report (not Direct Lake-enabled) and publish it to your workspace, follow these steps:
 
 1. Open the GitHub [Power BI Desktop samples](https://github.com/microsoft/PowerBI-Desktop-Samples) folder.
 
