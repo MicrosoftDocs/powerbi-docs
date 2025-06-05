@@ -407,14 +407,6 @@ With Defender for Cloud Apps, organizations can gain the following DLP capabilit
 
 See [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) for additional details.
 
-## Preview security features
-
-This section lists features that are planned to release through March 2021. Because this topic lists features that may not have released yet, **delivery timelines may change and projected functionality may be released later than March 2021, or may not be released at all**. For more information, about previews, please review the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
-
-### Bring Your Own Log Analytics (BYOLA)
-
-Bring Your Own Log Analytics (BYOLA) enables integration between Power BI and Azure Log Analytics. This integration includes Azure Log Analytics' advanced analytic engine, interactive query language, and built-in ML constructs.
-
 ## Power BI security questions and answers
 
 The following questions are common security questions and answers for Power BI. These are organized based on when they were added to this white paper, to facilitate your ability to quickly find new questions and answers when this paper is updated. The newest questions are added to the end of this list.
@@ -538,5 +530,5 @@ For more information on Power BI, see the following resources.
 * [Power BI API reference](/rest/api/power-bi/)
 * [On-premises data gateway](../connect-data/service-gateway-onprem.md)
 * [Power BI national/regional clouds](https://powerbi.microsoft.com/clouds/)
-* [Power BI Premium White Paper](https://aka.ms/pbipremiumwhitepaper)
-* [Overview of single sign-on for on-premises data gateways in Power BI](../connect-data/service-gateway-sso-overview.md)
+* [Microsoft Fabric security fundamentals](hfabric/security/security-fundamentals)
+* [Privacy, security, and responsible use for Copilot in Power BI](/fabric/fundamentals/copilot-power-bi-privacy-security)
