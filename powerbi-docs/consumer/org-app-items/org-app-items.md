@@ -76,7 +76,7 @@ When you give users access to the org app item, **at a minimum they gain read ac
   - With workspace apps, only specific roles within the workspace could manage access and share the app.
 - Users who have access to an org app don't have to install the org app to view it. The org app item appears in lists like other items do, **Recent on Home**.
   - With workspace apps, a user had to install an app to see it in lists.
-- If a user is removed from an org app, that user’s org-app-based access to included report items and semantic model items associated with that org app is automatically revoked. If a user has another form of access to included items or semantic models, that form of access is unaffected.
+- If a user is removed from an org app, that user’s org-app-based access to included items and any related semantic model items associated with that org app is automatically revoked. If a user has another form of access to included items or related semantic model items, that form of access is unaffected.
   - With workspace apps, if a user was removed from an app their access to semantic models remained. Revoking access to semantic models had to be done manually. App authors had to be sure that they weren't breaking that user's ability to view other reports when removing model access.
   
 ### Workspace apps continue to work alongside org app items (preview)
