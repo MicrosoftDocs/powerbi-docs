@@ -1,8 +1,8 @@
 ---
 title: Synchronize multiple field parameters
 description: Learn how to synchronize a selected language can be synchronized across multiple field parameters in a multiple-language report in Power BI. 
-author: kfollis   
-ms.author: kfollis
+author: JulCsc   
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to

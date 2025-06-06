@@ -1,8 +1,8 @@
 ---
 title: Real-time streaming in Power BI
 description: Learn how to set up and use real-time data streaming in Power BI to keep your visuals and dashboards updated with live data.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

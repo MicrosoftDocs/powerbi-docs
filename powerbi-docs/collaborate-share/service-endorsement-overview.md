@@ -1,8 +1,8 @@
 ---
 title: Endorsement - Promoting and certifying Power BI content
 description: Learn how to make quality content easier to find through promotion or certification
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual

@@ -1,8 +1,8 @@
 ---
 title: Understand and optimize dataflows refresh
 description: Learn how to use and optimize dataflow refreshes to get the best performance when you're working with your data in Power BI.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

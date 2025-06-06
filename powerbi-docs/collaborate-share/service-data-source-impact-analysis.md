@@ -1,8 +1,8 @@
 ---
 title: Data source impact analysis
 description: Learn how data source impact analysis helps you understand where your data source is being used throughout your organization.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-eim

@@ -1,8 +1,8 @@
 ---
 title: Share access to a semantic model
 description: As a semantic model owner, you share and grant access to your semantic models so that others can use them. Learn how to grant access to your semantic models.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources

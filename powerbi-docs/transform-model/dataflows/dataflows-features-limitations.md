@@ -1,8 +1,8 @@
 ---
 title: Dataflows Limitations, restrictions and supported connectors and features
 description: Overview of all the capabilities of dataflows
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

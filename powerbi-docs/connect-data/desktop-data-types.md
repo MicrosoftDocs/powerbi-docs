@@ -1,8 +1,8 @@
 ---
 title: Data types in Power BI Desktop
 description: Learn about the different kinds of data types supported by Power BI Desktop and DAX expressions.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

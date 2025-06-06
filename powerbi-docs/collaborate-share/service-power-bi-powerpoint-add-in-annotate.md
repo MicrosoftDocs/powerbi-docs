@@ -1,8 +1,8 @@
 ---
 title: Create data point annotations (preview)
 description: Learn how to add live data-point annotations to Power BI visuals embedded in your PowerPoint presentation.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

@@ -1,7 +1,7 @@
 ---
 title: Fetch more data from Power BI
 description: This article discusses how to enable a segmented fetch of large semantic models for Power BI visuals by using the fetchMoreData API.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi

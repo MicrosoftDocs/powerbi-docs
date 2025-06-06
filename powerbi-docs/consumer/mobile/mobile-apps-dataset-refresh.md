@@ -1,8 +1,8 @@
 ---
 title: Work with semantic models in the Power BI apps for mobile devices
 description: Learn how to refresh a semantic model, view its info, and see links to its related reports in the Power BI app for iOS and Android mobile devices.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to

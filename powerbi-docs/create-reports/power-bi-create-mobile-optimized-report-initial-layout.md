@@ -1,8 +1,8 @@
 ---
 title: Create an initial layout 
 description: Learn how to create an initial mobile-optimized layout using mobile layout view's Page visuals pane.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom:
 ms.service: powerbi

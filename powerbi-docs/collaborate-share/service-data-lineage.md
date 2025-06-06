@@ -1,8 +1,8 @@
 ---
 title: Data lineage
 description: Learn how data lineage view helps you understand the flow of data from the data source to its destination.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-eim

@@ -1,9 +1,9 @@
 ---
-author: kfollis
+author: JulCsc
 ms.service: powerbi
 ms.topic: include
 ms.date: 12/03/2019
-ms.author: kfollis
+ms.author: juliacawthra
 ---
 
 In the Power BI service, users have defined capabilities based on the type of per-user license they have and whether the content they are acting on is in a workspace assigned to a Power BI Premium capacity.

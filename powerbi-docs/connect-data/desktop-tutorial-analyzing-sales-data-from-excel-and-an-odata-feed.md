@@ -1,8 +1,8 @@
 ---
 title: 'Tutorial: Combine data from Excel and an OData feed in Power BI Desktop'
 description: Learn how to combine data from two data sources, specifically an Excel workbook with product information and an OData feed containing orders data.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

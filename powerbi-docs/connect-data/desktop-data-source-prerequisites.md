@@ -1,8 +1,8 @@
 ---
 title: Power BI data source prerequisites
 description: Learn about Power BI data sources, their providers and data source objects, and their supported versions
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

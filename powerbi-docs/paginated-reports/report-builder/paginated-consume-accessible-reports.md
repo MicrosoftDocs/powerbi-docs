@@ -5,8 +5,8 @@ ms.date: 05/19/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: cookiemccray
 ---
 # Use accessibility tools to interact with paginated reports (Power BI Report Builder)

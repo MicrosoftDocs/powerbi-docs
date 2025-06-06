@@ -1,8 +1,8 @@
 ---
 title: Connect to the Hospital Emergency Response Dashboard
 description: How to get and install the COVID-19 Decision Support Dashboard for healthcare emergency template app, and how to connect to data
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

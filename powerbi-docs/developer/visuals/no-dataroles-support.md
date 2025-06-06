@@ -1,7 +1,7 @@
 ---
 title: Create custom Power BI visuals without data binding
 description: Learn how to create custom visuals for Power BI without data roles by using the No data binding feature.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: v-asemenov
 ms.service: powerbi

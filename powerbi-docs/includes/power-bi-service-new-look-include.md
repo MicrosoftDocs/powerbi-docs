@@ -2,12 +2,12 @@
 title: Power BI new look
 description: Power BI new look - include
 services: powerbi
-author: kfollis
+author: JulCsc
 
 ms.service: powerbi
 ms.topic: include
 ms.date: 01/20/2021
-ms.author: kfollis
+ms.author: juliacawthra
 ms.custom: include file
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting tile errors
 description: See explanations and solutions for common errors you might encounter with tile refresh in the Power BI service.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kayu
 ms.custom: ''
 ms.service: powerbi
