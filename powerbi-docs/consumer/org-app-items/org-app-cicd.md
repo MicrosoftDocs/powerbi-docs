@@ -116,6 +116,10 @@ You can use Fabric deployment pipeline to deploy your org app across different e
 
 To learn how to use deployment pipelines, see [Introduction to deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines).
 
+> [!NOTE]
+> Limitation: Org apps (preview) cannot be deployed across stages using service principals.
+
+
 ## Related content
 
 - [Get started with Org Apps](./org-app-items.md)
