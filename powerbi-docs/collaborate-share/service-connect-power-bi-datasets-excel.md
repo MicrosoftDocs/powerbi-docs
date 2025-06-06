@@ -36,7 +36,7 @@ Connect to Power BI semantic models in Excel by starting in the Power BI service
 
 ## Connectivity improvements
 
-Excel with Build number 16.0.18129.x or higher, using MSOLAP version 160.139.29 or higher, connect to Power BI semantic models through the [XMLA endpoint](/enterprise/service-premium-connect-tools.md), by default. Older Excel versions connect by default through a legacy endpoint for Analyze in Excel (AIXL).
+Excel with Build number 16.0.18129.x or higher, using MSOLAP version 160.139.29 or higher, connect to Power BI semantic models through the [XMLA endpoint](../enterprise/service-premium-connect-tools.md), by default. Older Excel versions connect by default through a legacy endpoint for Analyze in Excel (AIXL).
 
 Note that even the most recent versions of Excel and Power BI Desktop in Live Connect mode might fall back to the legacy AIXL endpoint if Read access to your XMLA endpoint is not enabled. Given the broad adoption of the XMLA endpoint, and its improved performance, functionality and reliability in comparison to the AIXL endpoint, we strongly recommend that you enable at least Read access to your XMLA endpoint and update to the latest Excel version for the following reasons:
 
