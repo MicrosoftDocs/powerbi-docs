@@ -32,7 +32,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * In Power BI dataflows, you can use parameters but you can't edit them unless you edit the entire dataflow. In this regard, parameters in dataflows behave similar to declared constants.
 * Some connectors found in [Troubleshoot refresh scenarios](../../connect-data/refresh-troubleshooting-refresh-scenarios.md#dataflows-or-datamart-failures-in-premium-workspaces) are not supported for dataflows and datamarts in Premium workspaces.
 * When using DirectQuery with a dataflow, searches using the slicer visual is case-sensitive.
-* 
+* The following characters aren't allowed in Dataflow entities:  `\` `/` 
 
 
 ## Dataflow authoring
