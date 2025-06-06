@@ -1,8 +1,8 @@
 ---
 title: Connect to semantic models in Power BI
 description: Use a shared, common semantic model to create multiple Power BI Desktop reports in multiple workspaces, and manage your report lifecycle.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

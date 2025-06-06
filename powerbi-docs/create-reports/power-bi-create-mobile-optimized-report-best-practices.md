@@ -1,8 +1,8 @@
 ---
 title: Best practices for creating mobile-optimized Power BI reports
 description: This article describes best practices to help you get the best results when you create mobile-optimized version of a Power BI report.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: best-practice #Don't change

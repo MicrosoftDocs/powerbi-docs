@@ -5,8 +5,8 @@ ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
 ---
 # Dataset Properties, Options dialog box (Power BI Report Builder)

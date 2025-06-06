@@ -1,8 +1,8 @@
 ---
 title: Configure automatic aggregations 
 description: Learn how to enable and configure automatic aggregations, enable training for a supported DirectQuery semantic model and configure one or more scheduled refreshes.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual

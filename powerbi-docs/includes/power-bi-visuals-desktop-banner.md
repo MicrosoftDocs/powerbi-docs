@@ -1,9 +1,9 @@
 ---
-author: kfollis
+author: JulCsc
 ms.service: powerbi
 ms.topic: include
 ms.date: 08/15/2019
-ms.author: kfollis
+ms.author: juliacawthra
 ---
 
 >[!NOTE]

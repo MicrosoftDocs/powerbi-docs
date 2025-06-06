@@ -1,8 +1,8 @@
 ---
 title: Sharing Power BI datamarts and managing permissions
 description: Learn how to share Power BI datamarts and manage permissions effectively to provide users with specific access and enhance collaboration.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

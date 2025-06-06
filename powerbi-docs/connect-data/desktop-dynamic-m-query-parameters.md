@@ -1,8 +1,8 @@
 ---
 title: Dynamic M query parameters in Power BI Desktop
 description: Create and work with dynamic M query parameters in Power BI Desktop for enhanced data filtering and performance optimization.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

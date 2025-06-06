@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Shape and combine data in Power BI Desktop"
 description: In this tutorial, you learn how to shape and combine data in Power BI Desktop using web data sources.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

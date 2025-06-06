@@ -2,8 +2,8 @@
 title: Embedded analytics tutorial for getting the client ID
 description: Get the client ID for the embedded analytics tutorials.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 12/09/2020
 ms.custom: include file

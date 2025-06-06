@@ -1,8 +1,8 @@
 ---
 title: View your data offline in the Power BI mobile apps
 description: Learn about how you can view your data in Power BI mobile apps when you're not connected to a network.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

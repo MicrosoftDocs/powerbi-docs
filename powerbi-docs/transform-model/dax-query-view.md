@@ -1,8 +1,8 @@
 ---
 title: DAX query view
 description: Learn how to use DAX query view to evaluate your DAX queries.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

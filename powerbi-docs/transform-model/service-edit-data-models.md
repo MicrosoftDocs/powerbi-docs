@@ -1,8 +1,8 @@
 ---
 title: Edit data models in the Power BI service (preview)
 description: Learn how to edit data models in the Power BI service, including editing relationships, creating DAX measures, managing RLS, and more.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

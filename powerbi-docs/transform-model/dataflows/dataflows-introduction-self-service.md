@@ -1,8 +1,8 @@
 ---
 title: Introduction to dataflows and self-service data prep
 description: Learn what Power BI dataflows are and how you can use them to provide insights for your organization.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

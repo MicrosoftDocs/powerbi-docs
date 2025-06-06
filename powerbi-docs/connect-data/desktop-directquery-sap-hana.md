@@ -1,8 +1,8 @@
 ---
 title: DirectQuery for SAP HANA in Power BI
 description: Learn about options for connecting to SAP HANA using DirectQuery in Power BI Desktop, as a multi-dimensional source or a relational source.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

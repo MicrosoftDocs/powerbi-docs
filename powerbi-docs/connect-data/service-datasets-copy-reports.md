@@ -1,8 +1,8 @@
 ---
 title: Copy reports from other apps or workspaces - Power BI
 description: Learn how you can create a copy of a report and save it to your own workspace.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

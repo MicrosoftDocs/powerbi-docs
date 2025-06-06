@@ -2,8 +2,8 @@
 title: Share metadata across regions
 description: Share Power BI metadata with Microsoft 365 across regions.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 02/19/2023
 ms.custom: include file

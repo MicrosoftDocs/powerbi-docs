@@ -1,8 +1,8 @@
 ---
 title: Power BI in-place semantic model sharing with guest users in external organizations (preview)
 description: Learn about Power BI in-place semantic model sharing which allows you to share semantic models with external guest users in their own tenants.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi

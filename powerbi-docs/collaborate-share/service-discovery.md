@@ -1,8 +1,8 @@
 ---
 title: Semantic model discoverability
 description: Learn how to make endorsed semantic models discoverable for users who don't have access to them.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual

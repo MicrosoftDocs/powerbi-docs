@@ -4,8 +4,8 @@ description: "You don't want to migrate unused .rdl reports from Power BI Report
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: cookiemccray
 ms.date: 12/30/2024
 ---

@@ -1,8 +1,8 @@
 ---
 title: Create reports based on semantic models from different workspaces - Power BI
 description: Learn how you can share a semantic model with users across the organization. Then they can build reports based on your semantic model in their own workspaces.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

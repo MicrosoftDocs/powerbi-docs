@@ -127,7 +127,7 @@ Here's a sample JSON response. It includes two activities that the user performe
     "RecordType": 20,
     "CreationTime": "2023-03-15T15:18:30Z",
     "Operation": "ViewReport",
-    "OrganizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+    "OrganizationId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "UserType": 0,
     "UserKey": "100FFF92C7717B",
     "Workload": "PowerBI",
@@ -158,7 +158,7 @@ Here's a sample JSON response. It includes two activities that the user performe
     "RecordType": 20,
     "CreationTime": "2023-03-15T17:22:00Z",
     "Operation": "ExportActivityEvents",
-    "OrganizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+    "OrganizationId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "UserType": 2,
     "UserKey": "100FFF92C7717B",
     "Workload": "PowerBI",
@@ -230,7 +230,7 @@ Here's a sample JSON response. It includes two activities that the user performe
     "RecordType": 20,
     "CreationTime": "2023-03-15T19:52:42Z",
     "Operation": "ShareReport",
-    "OrganizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+    "OrganizationId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "UserType": 0,
     "UserKey": "900GGG12D2242A",
     "Workload": "PowerBI",
@@ -244,7 +244,7 @@ Here's a sample JSON response. It includes two activities that the user performe
       {
         "RecipientEmail": "ellis@contoso.com",
         "RecipientName": "Turner",
-        "ObjectId": "fc9bbc6c-e39b-44cb-9c8a-d37d5665ec57",
+        "ObjectId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
         "ResharePermission": "ReadReshare",
         "UserPrincipalName": "ellis@contoso.com"
       }
@@ -272,7 +272,7 @@ Here's a sample JSON response. It includes two activities that the user performe
     "RecordType": 20,
     "CreationTime": "2023-03-15T11:57:26Z",
     "Operation": "ShareReport",
-    "OrganizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+    "OrganizationId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "UserType": 0,
     "UserKey": "900GGG12D2242A",
     "Workload": "PowerBI",
@@ -285,7 +285,7 @@ Here's a sample JSON response. It includes two activities that the user performe
     "SharingInformation": [
       {
         "RecipientName": "SalesAndMarketingGroup-NorthAmerica",
-        "ObjectId": "ba21f28b-6226-4296-d341-f059257a06a7",
+        "ObjectId": "bbbbbbbb-1111-2222-3333-cccccccccccc",
         "ResharePermission": "Read"
       }
     ],
@@ -413,7 +413,7 @@ Here's a sample JSON response. It includes three activities that the user perfor
     "RecordType": 20,
     "CreationTime": "2023-03-15T18:42:13Z",
     "Operation": "CreateApp",
-    "OrganizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+    "OrganizationId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "UserType": 0,
     "UserKey": "100FFF92C7717B",
     "Workload": "PowerBI",
@@ -432,14 +432,14 @@ Here's a sample JSON response. It includes three activities that the user perfor
     "IsSuccess": true,
     "RequestId": "ab97a4f1-9f5e-4a6f-5d50-92c837635814",
     "ActivityId": "9bb54a9d-b688-4028-958e-4d7d21ca903a",
-    "AppId": "42d60f97-0f69-470c-815f-60198956a7e2"
+    "AppId": "00001111-aaaa-2222-bbbb-3333cccc4444"
   },
   {
     "Id": "a1dc6d26-b006-4727-bac6-69c765b7978f",
     "RecordType": 20,
     "CreationTime": "2023-03-16T18:39:58Z",
     "Operation": "UpdateApp",
-    "OrganizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+    "OrganizationId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "UserType": 0,
     "UserKey": "100GGG12F9921B",
     "Workload": "PowerBI",
@@ -458,14 +458,14 @@ Here's a sample JSON response. It includes three activities that the user perfor
     "IsSuccess": true,
     "RequestId": "e886d122-2c09-4189-e12a-ef998268b864",
     "ActivityId": "9bb54a9d-b688-4028-958e-4d7d21ca903a",
-    "AppId": "c03530c0-db34-4b66-97c7-34dd2bd590af"
+    "AppId": "11112222-bbbb-3333-cccc-4444dddd5555"
   },
   {
     "Id": "aa002302-313d-4786-900e-e68a6064df1a",
     "RecordType": 20,
     "CreationTime": "2023-03-17T18:35:22Z",
     "Operation": "InstallApp",
-    "OrganizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+    "OrganizationId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "UserType": 0,
     "UserKey": "100HHH12F4412A",
     "Workload": "PowerBI",
