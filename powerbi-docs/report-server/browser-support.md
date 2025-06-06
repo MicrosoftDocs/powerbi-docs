@@ -1,8 +1,8 @@
 ---
 title: Browser support for Power BI Report Server
 description: Learn about what browser versions are supported for managing and viewing Power BI Report Server and the Report Viewer Controls.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

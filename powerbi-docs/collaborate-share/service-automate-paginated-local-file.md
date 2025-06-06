@@ -1,8 +1,8 @@
 ---
 title: Save a paginated report to a local folder with Power Automate
 description: In this article, you use a template to set up recurring exports of a paginated report to your file system, in a desired format. 
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

@@ -1,8 +1,8 @@
 ---
 title: Save a paginated report to OneDrive for work or school or SharePoint Online
 description: In this article, you use Power Automate to automate saving a Power BI paginated report to OneDrive for work or school or a SharePoint Online folder.  
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

@@ -1,8 +1,8 @@
 ---
 title: "Localize date parameters in the Power BI service and Power BI Report Builder"
 description: You can localize date parameters in paginated reports in Power BI Report Builder and the Power BI service.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: 'bradsy'
 ms.service: powerbi
 ms.subservice: report-builder

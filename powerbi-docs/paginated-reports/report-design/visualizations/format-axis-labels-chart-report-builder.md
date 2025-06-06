@@ -7,8 +7,8 @@ ms.subservice: report-builder
 
 
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: monaraya
 ---
 # Format axis labels on a paginated report chart (Power BI Report Builder)

@@ -1,8 +1,8 @@
 ---
 title: "Plan translation for multiple-language reports in Power BI"
 description: Learn about the types of translation used for multiple-language reports in Power BI and how Power BI supports metadata translation.
-author: kfollis   
-ms.author: kfollis
+author: JulCsc   
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

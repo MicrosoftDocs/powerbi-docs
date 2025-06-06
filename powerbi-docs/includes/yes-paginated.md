@@ -2,11 +2,11 @@
  title: include file
  description: include file
  services: powerbi
- author: kfollis
+ author: JulCsc
  ms.service: powerbi
  ms.topic: include
  ms.date: 10/17/2020
- ms.author: kfollis
+ ms.author: juliacawthra
  ms.custom: include file
 ---
 

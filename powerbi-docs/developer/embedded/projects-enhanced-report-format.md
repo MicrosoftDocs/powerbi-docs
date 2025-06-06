@@ -1,8 +1,8 @@
 ---
 title: Create a Power BI report in enhanced report format
 description: The Power BI enhanced report format (PBIR) for Power BI Project files (PBIP) provides source-control friendly file formats to enhance development efficiency.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
