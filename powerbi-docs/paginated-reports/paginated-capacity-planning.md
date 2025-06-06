@@ -1,8 +1,8 @@
 ---
 title: Paginated reports capacity planning for Power BI Premium
 description: Plan your Power BI Premium capacity for using it with paginated reports.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

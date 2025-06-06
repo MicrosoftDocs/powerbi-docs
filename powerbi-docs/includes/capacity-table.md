@@ -2,8 +2,8 @@
 title: Power BI capacity table
 description: See specifications for various Power BI Embedded capacity SKUs, including the v-core count, the max memory per semantic model and query, and other information.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 11/13/2023
 ms.custom: include file

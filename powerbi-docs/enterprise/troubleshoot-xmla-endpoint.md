@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot XMLA endpoint connectivity in Power BI
 description: Describes how to troubleshoot connectivity through the XMLA endpoint.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-admin

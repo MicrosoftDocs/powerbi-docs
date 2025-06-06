@@ -2,8 +2,8 @@
 title: What are Power BI stock keeping units (SKUs)
 description: Learn about the Power BI stock keeping units (SKUs)
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 07/11/2022
 ms.custom: include file, service-premium-what-is.md, embedded-capacity.md

@@ -2,8 +2,8 @@
 title: Power BI Premium app fast moderate and slow operations
 description: Power BI Premium app fast moderate and slow operations
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 09/04/2022
 ms.custom: include file

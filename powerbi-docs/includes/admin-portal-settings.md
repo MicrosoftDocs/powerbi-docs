@@ -2,8 +2,8 @@
 title: Power BI admin portal settings
 description: Learn how to get to the Power BI portal admin settings.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 09/25/2024
 ms.custom: include file
