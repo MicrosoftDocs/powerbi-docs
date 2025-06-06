@@ -1,7 +1,7 @@
 ---
 title: High-contrast mode support in Power BI visuals
 description: Learn how to add high-contrast mode support to Power BI visuals, and see implemented image and code examples.
-author: JulCsc
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi

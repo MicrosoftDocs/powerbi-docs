@@ -1,7 +1,7 @@
 ---
 title: The Filter applied API in Power BI custom visuals
 description: This article describes the API parameter that indicates whether or not a filter is applied to a visual.
-author: JulCsc
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi

@@ -1,7 +1,7 @@
 ---
 title: Use row-level security when embedding paginated reports
 description: Learn about the steps needed to embed Power BI paginated reports with RLS within your Power BI embedded analytics application.
-author: JulCsc
+author: billmath
 ms.author: billmath
 ms.reviewer: nishalit
 ms.service: powerbi

@@ -1,7 +1,7 @@
 ---
 title: Publish Power BI visuals
 description: Learn how to publish your custom visual to Partner Center and make it available for others to discover and use in the Microsoft commercial marketplace.
-author: JulCsc
+author: billmath
 ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi

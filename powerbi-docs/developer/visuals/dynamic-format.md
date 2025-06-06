@@ -1,7 +1,7 @@
 ---
 title: Power BI custom visual dynamic format API.
 description: This article describes the API used to allow a Power BI custom visual process value with dynamic format strings.
-author: JulCsc
+author: billmath
 ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi

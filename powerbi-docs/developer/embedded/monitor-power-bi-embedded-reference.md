@@ -4,7 +4,7 @@ description: Learn about using Power BI Embedded to monitor critical application
 ms.date: 07/30/2024
 ms.custom: horz-monitor, engagement-fy23
 ms.topic: reference
-author: JulCsc
+author: billmath
 ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi

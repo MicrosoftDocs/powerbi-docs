@@ -1,7 +1,7 @@
 ---
 title: Power BI REST APIs semantic model permissions
 description: This article lists the Power BI REST APIs semantic model permissions
-author: JulCsc
+author: billmath
 ms.author: billmath
 services: power-bi-embedded
 editor: ''

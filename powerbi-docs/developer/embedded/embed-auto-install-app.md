@@ -1,7 +1,7 @@
 ---
 title: Automatically install Power BI apps for your organization
 description: Learn how to set up automatic app installation for Power BI apps when embedding content from apps for your organization.
-author: JulCsc
+author: billmath
 ms.author: billmath
 ms.topic: how-to
 ms.service: powerbi

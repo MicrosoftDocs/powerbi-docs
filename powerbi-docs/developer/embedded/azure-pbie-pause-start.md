@@ -1,7 +1,7 @@
 ---
 title: Pause and start your Power BI Embedded capacity in the Azure portal
 description: Learn how to pause and start your Power BI Embedded capacity in the Microsoft Azure portal to pause billing when the capacity isn't needed.
-author: JulCsc
+author: billmath
 ms.author: billmath
 services: power-bi-embedded
 editor: ''
