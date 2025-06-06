@@ -46,7 +46,7 @@ You can apply or change the sensitivity label on a report or dashboard by follow
 1. In the **Settings** side pane, go to the **Sensitivity label** section.
 1. Select the appropriate sensitivity label from the list of options. The modified settings are applied automatically.
 
-The following image shows how to set the sensitivity label for a dashboard to *Highly Confidential\Any User  (No Protection)*:
+The following image shows how to set the sensitivity label for a dashboard to *Highly Confidential\Any User (No Protection)*:
 
 :::image type="content" source="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dashboard.png" alt-text="Screenshot that shows how to set the sensitivity label for a dashboard." lightbox="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dashboard.png" border="false":::
 
@@ -86,7 +86,7 @@ Watch the following short video on how to apply sensitivity labels and then try 
 > [!NOTE]
 > This video might show earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2b8ce782-72b1-4c1b-9ce8-d83c2be15d9f]
+[!VIDEO https://learn-video.azurefd.net/vod/player?id=2b8ce782-72b1-4c1b-9ce8-d83c2be15d9f]
 
 ### Set the sensitivity label on a file
 

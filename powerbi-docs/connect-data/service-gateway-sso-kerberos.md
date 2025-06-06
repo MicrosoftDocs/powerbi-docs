@@ -89,7 +89,7 @@ First, determine whether an SPN was already created for the domain account used 
 <a name='option-b-configure-computer-for-azure-ad-connect'></a>
 
 #### Option B: Configure computer for Microsoft Entra Connect
-If Microsoft Entra Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Microsoft Entra lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Microsoft Entra ID. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Microsoft Entra context. They're applied to the gateway's computer object (as identified by the local service SID) in Microsoft Entra ID instead of the domain account. The local service SID for NT SERVICE/PBIEgwService is as follows:
+If Microsoft Entra Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Microsoft Entra lookups at runtime. Instead, you can simply use the local service security identifier (SID) for the gateway service to complete all required configuration in Microsoft Entra ID. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Microsoft Entra context. They're applied to the gateway's computer object (as identified by the local service SID) in Microsoft Entra ID instead of the domain account. The local service SID for NT SERVICE/PBIEgwService is as follows:
 
 `S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079`
 

@@ -25,7 +25,7 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
 
 ## Licensing and requirements
 
-* An Azure Information Protection Premium P1 or Premium P2 license is required to apply or view sensitivity labels from Purview Information Protection. Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. For details, see [Azure Information Protection pricing](http://microsoft.com/security/business/information-protection/microsoft-purview-information-protection#Pricing).
+* An Azure Information Protection Premium P1 or Premium P2 license is required to apply or view sensitivity labels from Purview Information Protection. Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. For details, see [Azure Information Protection pricing](https://microsoft.com/security/business/information-protection/microsoft-purview-information-protection#Pricing).
 
   > [!NOTE]
   > If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Purview Information Protection Unified Labeling platform in order for the them to be used in Fabric. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
@@ -36,7 +36,7 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
 
 * Before enabling sensitivity labels on your tenant, make sure that sensitivity labels have been defined and published for relevant users and groups. For details, see [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels).
 
-* Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configuration for customers in 21Vianet](/azure/information-protection/parity-between-azure-information-protection#configuration-for-customers-in-21vianet).
+* Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principal, as described in steps 1 and 2 under [Configuration for customers in 21Vianet](/azure/information-protection/parity-between-azure-information-protection#configuration-for-customers-in-21vianet).
 
 * Using sensitivity labels in Desktop requires the Desktop December 2020 release or later.
 
@@ -68,7 +68,7 @@ To enable sensitivity labels on your tenant:
 1. When done, press **Apply**.
 
 > [!IMPORTANT]
-> Users who this setting allows to apply and change sensitivity labels must also have *create* and *edit* permissions on any item they wish to apply or change a label on.
+> Users who this setting allows to apply and change sensitivity labels must also have *Create* and *Edit* permissions on any item they wish to apply or change a label on.
 
 ## Troubleshooting
 
