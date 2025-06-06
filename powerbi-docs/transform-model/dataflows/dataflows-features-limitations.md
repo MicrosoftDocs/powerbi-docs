@@ -30,7 +30,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * Vnet support is achieved by using a gateway.
 * When you use *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
 * In Power BI dataflows, you can use parameters but you can't edit them unless you edit the entire dataflow. In this regard, parameters in dataflows behave similar to declared constants.
-* Some connectors found in [Troubleshoot refresh scenarios](../../connect-data/refresh-troubleshooting-refresh-scenarios.md#dataflows-or-datamart-failures-in-premium-workspaces) are not supported for dataflows and datamarts in Premium workspaces.
+* Some connectors found in [Troubleshoot refresh scenarios](../../connect-data/refresh-troubleshooting-refresh-scenarios.md#dataflows-or-datamart-failures-in-premium-workspaces) aren't supported for dataflows and datamarts in Premium workspaces.
 * When using DirectQuery with a dataflow, searches using the slicer visual is case-sensitive.
 * The following characters aren't allowed in Dataflow entities:  `\` `/` 
 
@@ -53,10 +53,10 @@ Because dataflows authoring is done in the  Power Query Online (PQO) environment
 * In the dataflows Gen1 editing experience, users may be unable to remove an on-premises Data Gateway connection from the dataflow using **Options** > **Project** > **Data load** > **select (none)** on the dropdown list Data Gateway. The following steps may resolve the issue:
    1. Start editing the dataflow where you want to remove the on-premises Data Gateway connection.
    2. Select **Options** > **Project Data load** > **Data gateway**, select **None** and then **OK**.
-   3. If a yellow warning with a "_Configure connection_" button appears, select "_Configure connection_", select the cloud connection from the dropdown box and insert credentials if needed for the cloud connection.
+   3. If a yellow warning with a "_Configure connection_" button appears, select **Configure connection**, select the cloud connection from the dropdown box and insert credentials if needed for the cloud connection.
    4. Select **Manage connections** > and then select the **unlink** button of the Gateway connection.
    5. Close the **Manage connections** dialog, if it requires you to "Configure connection" again, do so. Select **Save and close**, and wait for the save operation to complete.
-   6. If the warning "_Configure connection_" does not appear after applying the previous steps, apply the previous steps, save and close the dataflow, then edit it again and check for the "_Configure connection_" warning to appear for you to take action on it.
+   6. If the warning "_Configure connection_" doesn't appear after applying the previous steps, apply the previous steps, save and close the dataflow, then edit it again and check for the "_Configure connection_" warning to appear for you to take action on it.
 
    If the connection to the Gateway is still not removed from the dataflow, you may need to recreate a new dataflow with the same queries, not bound to the Gateway.
 
@@ -99,7 +99,7 @@ Dataflows that exist in Premium have the following considerations and limitation
 * Incremental refresh works with dataflows only when the enhanced compute engine is enabled.
 
 
-**Linked and Computed tables:**
+**Linked and computed tables:**
 
 * Linked tables can go down to a depth of 32 references.
 
@@ -111,7 +111,7 @@ Dataflows that exist in Premium have the following considerations and limitation
 * Linked tables that reference entities in different tenants aren't supported. 
 
 
-**Compute Engine:**
+**Compute engine:**
 
 * While using the Compute engine, there's an approximate 10% to 20% initial increase in time for data ingestion.
 
@@ -121,12 +121,12 @@ Dataflows that exist in Premium have the following considerations and limitation
 * Only certain operations make use of the compute engine, and only when used through a linked table or as a computed table. A full list of operations is available in [this blog post](http://petcu40.blogspot.com/2019/06/m-folding-in-enhanced-engine-of-power.html).
 
 
-**Capacity Management:**
+**Capacity management:**
 
 * By design, the Premium Power BI Capacities have an internal Resource Manager which throttles the workloads in different ways when the capacity is running on low memory.
 
   1. For dataflows, this throttling pressure reduces the number of available M Containers.
-  2. The memory for dataflows can be set to 100%, with an appropriately sized container for your data sizes, and the workload will manage the number of containers appropriately.
+  2. The memory for dataflows can be set to 100%, with an appropriately sized container for your data sizes, and the workload manages the number of containers appropriately.
 
 * The approximate number of containers can be found out by dividing the total memory allocated to the workload by the amount of memory allocated to a container.
 
@@ -138,7 +138,7 @@ Dataflows that exist in Premium have the following considerations and limitation
   1. Failing to ensure those credentials are the same results in a *Key not found* error upon semantic model refresh
 
 > [!NOTE]
-> If the dataflow structure is changed, such as a new or renamed column, the semantic model will not show the change, and the change may also cause a data refresh to fail in the Power BI service for the semantic model, until refreshed in Power BI Desktop and re-published.
+> If the dataflow structure is changed, such as a new or renamed column, the semantic model doesn't show the change, and the change may also cause a data refresh to fail in the Power BI service for the semantic model, until refreshed in Power BI Desktop and re-published.
 
 ## Dataflows and named connections
 
@@ -156,7 +156,7 @@ When using dataflows with [named connections](/power-query/connection-authentica
     * First approach: after migration, the user can detach workspaces and reattach them. If using the tenant level account, you must detach all workspaces then detach at the tenant level, and reattach. This can be undesirable for customers who don't want to delete all of their dataflows, or have many workspaces. 
     * Second approach: if the previous approach isn't feasible, submit a support request to change the subscription ID in the database.
 * ADLS doesn't support most elements in the list in the [Directories and file names](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata) section of the article for workspace naming and dataflow naming, due to the following limitations:
-    * Power BI either returns an unhelpful error, or allows the process to happen but the refresh will fail. 
+    * Power BI either returns an unhelpful error, or allows the process to happen but the refresh fails. 
 * Cross tenant ADLS subscriptions aren't supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Microsoft Entra ID.
 
 ## Dataflow data types
