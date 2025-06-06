@@ -1,7 +1,7 @@
 ---
 title: Learn DAX basics in Power BI Desktop
 description: Learn about how to effectively use DAX basics in Power BI Desktop to solve real business problems for your organization.
-author: juliacawthra
+author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
