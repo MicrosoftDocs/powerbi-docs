@@ -1,8 +1,8 @@
 ---
 title: Endorse your content
 description: Learn how to promote and certify Power BI content.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to

@@ -1,10 +1,10 @@
 ---
 title: Distribute content to external guest users with Microsoft Entra B2B
 description: Power BI enables sharing content with external guest users through Microsoft Entra Business-to-business (Microsoft Entra B2B).
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 manager: kfollis
-ms.reviewer: painbar
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to

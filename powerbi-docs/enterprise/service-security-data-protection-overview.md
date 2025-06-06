@@ -1,8 +1,8 @@
 ﻿---
 title: Data protection in Power BI
 description: Learn about data protection in Power BI
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim

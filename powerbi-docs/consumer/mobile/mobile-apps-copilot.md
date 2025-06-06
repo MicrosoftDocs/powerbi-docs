@@ -1,8 +1,8 @@
 ---
 title: Copilot in Power BI Mobile
 description: "This article describes how to use Copilot in Power BI Mobile."
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual #Don't change

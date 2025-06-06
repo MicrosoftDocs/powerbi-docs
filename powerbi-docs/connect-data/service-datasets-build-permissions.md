@@ -1,8 +1,8 @@
 ---
 title: Build permission for shared semantic models
 description: Learn how you can control access to semantic models by giving Build permission.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
