@@ -253,7 +253,7 @@ For the full access management experience, select **Share > Manage access** and 
 
 ![Org app access management add user button.](media/org-app-items/org-app-direct-access-tab-access-management.png)
 
-Remember, users given access to an org app item automatically get access to:
+Remember, a user given access to an org app item automatically gets access to:
 - items included in the org app from the same workspace.
 - semantic models that included reports source from in the same workspace *and* different workspaces. 
 
