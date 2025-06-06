@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 
 # Large semantic models in Power BI Premium
 
-Power BI semantic models can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large semantic models beyond the default limit can be enabled with the **Large semantic model storage format** setting. When enabled, semantic model size is limited by the Premium *capacity* size or the maximum size set by the administrator.
+Power BI semantic models can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large semantic models beyond the default limit can be enabled with the **Large semantic model storage format** setting. When enabled, semantic model size is limited by the Premium *capacity* size or the [maximum size](service-admin-premium-workloads.md#max-offline-semantic-model-size) set by the administrator.
 
 Large semantic models can be enabled for all Fabric F SKUs, Premium P SKUs, Embedded A SKUs, and with Premium Per User (PPU). The large semantic model size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
 
