@@ -1,7 +1,7 @@
 ---
 title:  Mobile development in Power BI
 description: Learn how to create mobile-friendly Power BI visuals by using essential and recommended functions to add interactive functionality.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi

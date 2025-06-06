@@ -1,7 +1,7 @@
 ---
 title: Examples of Power BI visuals
 description: This article gives examples of Power BI visuals that can be found in GitHub, including slicers, more than 20 types of charts, WebGL, and R visuals and scripts.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: 
 ms.service: powerbi

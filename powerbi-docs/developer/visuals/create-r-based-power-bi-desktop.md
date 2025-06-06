@@ -1,7 +1,7 @@
 ---
 title: Create an R-powered Power BI visual 
 description: This tutorial describes how to create an R-based visual for Power BI by using the R script editor in Power BI Desktop.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi

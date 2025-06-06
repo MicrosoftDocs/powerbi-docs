@@ -1,7 +1,7 @@
 ---
 title:  Introduction to use color utils in Power BI visual
 description: Learn how to install, import, and use color utils to apply themes and palettes on Power BI visual's data points.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi

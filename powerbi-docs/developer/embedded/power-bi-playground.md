@@ -1,7 +1,7 @@
 ---
 title: What is the Power BI embedded analytics playground
 description: Learn about the Power BI Embedded analytics playground that lets you learn, explore, and try out Power BI embedded analytics.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi

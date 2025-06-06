@@ -1,7 +1,7 @@
 ---
 title: Using standard cloud based row-level security with embedded content in Power BI embedded analytics
 description: Learn how to implement row level security within your Power BI cloud application.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 services: power-bi-embedded
 ms.service: powerbi

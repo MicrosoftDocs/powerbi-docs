@@ -1,7 +1,7 @@
 ---
 title: Organization visuals in Power BI
 description: Learn about the considerations and limitations that apply when you develop organizational visuals in Power BI.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi

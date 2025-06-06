@@ -1,7 +1,7 @@
 ---
 title: Power BI visual project structure
 description: Learn about the files and their contents that are created by the Power BI visuals tool when you create a new visual.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi

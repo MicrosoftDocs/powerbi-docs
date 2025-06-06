@@ -1,7 +1,7 @@
 ---
 title: Power BI Desktop project report folder
 description: Learn about the Power BI Desktop project report folder.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: ruiromano
 ms.service: powerbi

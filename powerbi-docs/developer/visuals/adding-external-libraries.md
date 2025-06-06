@@ -1,7 +1,7 @@
 ---
 title:  Adding external libraries to Power BI visuals
 description: Learn how to install, import, and call external libraries in Power BI visuals to enhance your visualizations with additional functionality.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi

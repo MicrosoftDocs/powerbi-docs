@@ -4,7 +4,7 @@ description: Learn how to monitor data from Microsoft Power BI Embedded by using
 ms.date: 07/30/2024
 ms.custom: horz-monitor
 ms.topic: conceptual
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.service: powerbi
 ms.subservice: powerbi-developer

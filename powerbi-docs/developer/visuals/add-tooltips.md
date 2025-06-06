@@ -1,7 +1,7 @@
 ---
 title: Add tooltips to Power BI custom visuals
 description: Learn how to configure simple or modern tooltips in Power BI custom visuals that provide more details to users.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi

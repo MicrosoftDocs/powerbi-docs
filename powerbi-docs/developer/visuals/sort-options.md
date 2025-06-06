@@ -1,7 +1,7 @@
 ---
 title: Sorting options for Power BI visuals
 description: This article discusses sorting behavior options for Power BI visuals. Default, implicit and custom sort.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer:
 ms.service: powerbi

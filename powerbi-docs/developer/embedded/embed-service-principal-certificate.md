@@ -1,7 +1,7 @@
 ---
 title: Embed Power BI content in a Power BI embedded analytics application with service principal and a certificate
 description: Learn how to authenticate for Power BI embedded analytics using a Microsoft Entra application service principal and a certificate.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi

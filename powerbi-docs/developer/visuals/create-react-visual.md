@@ -1,7 +1,7 @@
 ---
 title: Create a React-based visual for Power . 
 description: This tutorial shows how to create a Power BI visual using React. It displays a value in a circle. Adaptive size and settings allow you to customize it. 
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
