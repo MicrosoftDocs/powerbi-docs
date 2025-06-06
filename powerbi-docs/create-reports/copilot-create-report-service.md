@@ -84,7 +84,7 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
 1. If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
-## Enhanced report creation (public preview)
+## Enhanced report creation 
 
 With updates to report creation in the Power BI Service, you can work with Copilot to clarify intent and details of reports created. Report outlines are also provided to help improve transparency on what data fields copilot is using to build a report. These updates aim to make it easier to generate more relevant and transparent Power BI reports with Copilot.
 
