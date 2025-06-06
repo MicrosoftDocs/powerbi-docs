@@ -25,7 +25,7 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
 
 ## Licensing and requirements
 
-* An Azure Information Protection Premium P1 or Premium P2 license is required to apply or view sensitivity labels from Purview Information Protection. Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. For details, see [Azure Information Protection pricing](/security/business/information-protection/microsoft-purview-information-protection#Pricing).
+* An Azure Information Protection Premium P1 or Premium P2 license is required to apply or view sensitivity labels from Purview Information Protection. Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. For details, see [Azure Information Protection pricing](http://microsoft.com/security/business/information-protection/microsoft-purview-information-protection#Pricing).
 
   > [!NOTE]
   > If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Purview Information Protection Unified Labeling platform in order for the them to be used in Fabric. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).

@@ -530,5 +530,5 @@ For more information on Power BI, see the following resources.
 * [Power BI API reference](/rest/api/power-bi/)
 * [On-premises data gateway](../connect-data/service-gateway-onprem.md)
 * [Power BI national/regional clouds](https://powerbi.microsoft.com/clouds/)
-* [Microsoft Fabric security fundamentals](hfabric/security/security-fundamentals)
+* [Microsoft Fabric security fundamentals](/fabric/security/security-fundamentals)
 * [Privacy, security, and responsible use for Copilot in Power BI](/fabric/fundamentals/copilot-power-bi-privacy-security)
