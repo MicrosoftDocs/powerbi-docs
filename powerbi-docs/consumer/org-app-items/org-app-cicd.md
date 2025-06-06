@@ -1,7 +1,7 @@
 ---
 title: CI/CD for org apps in Fabric (Preview)
 description: This article describes how to set up continuous integration and delivery (CI/CD) for org apps in Microsoft Fabric.
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.reviewer: duaskins
 ms.service: powerbi
@@ -115,6 +115,10 @@ The following JSON code is an example of the `definition.json` file for an org a
 You can use Fabric deployment pipeline to deploy your org app across different environments, such as development, test, and production. And you can use deployment rules to customize the org app.
 
 To learn how to use deployment pipelines, see [Introduction to deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines).
+
+> [!NOTE]
+> Limitation: Org apps (preview) cannot be deployed across stages using service principals.
+
 
 ## Related content
 

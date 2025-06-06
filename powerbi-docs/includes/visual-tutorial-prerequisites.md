@@ -2,8 +2,8 @@
 title: Power BI visuals tutorials prerequisites
 description: This include file lists the prerequisites for the Power BI tutorials
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 06/18/2024
 ms.custom: include file

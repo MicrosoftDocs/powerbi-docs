@@ -1,8 +1,8 @@
 ---
 title: Connect to AI Insights in Power BI Desktop
 description: Learn how to apply a collection of pre-trained machine learning models from AI Insights to your data in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai

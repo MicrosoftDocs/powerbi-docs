@@ -1,7 +1,7 @@
 ---
 title: Power BI Desktop project semantic model folder
 description: Learn about the Power BI Desktop project semantic model folder.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ruiromano
 ms.service: powerbi

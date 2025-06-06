@@ -7,8 +7,8 @@ ms.subservice: report-builder
 
 
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: monaraya
 ---
 # Customize the display of a map or map layer in a paginated report (Power BI Report Builder)

@@ -5,8 +5,8 @@ ms.date: 01/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
 ---
 # Set text box orientation in a paginated report (Power BI Report Builder)

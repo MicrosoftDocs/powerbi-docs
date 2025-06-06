@@ -1,8 +1,8 @@
 ---
 title: Install Power BI Desktop for Power BI Report Server
 description: Learn how to install Power BI Desktop for Power BI Report Server
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

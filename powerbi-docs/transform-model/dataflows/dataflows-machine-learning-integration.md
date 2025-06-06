@@ -1,8 +1,8 @@
 ---
 title: Use Machine Learning and Cognitive Services with dataflows
 description: Learn how to use machine learning and automated ml with dataflows to create predictive insights from your data.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai

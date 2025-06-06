@@ -1,8 +1,8 @@
 ---
 title: Connect to Analysis Services data in Power BI Desktop
 description: Learn how to connect to and get data from SQL Server Analysis Services tabular models by using a live connection or by importing items into Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

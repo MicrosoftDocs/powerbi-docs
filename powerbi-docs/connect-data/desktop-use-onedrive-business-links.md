@@ -1,8 +1,8 @@
 ---
 title: Use OneDrive for work or school links in Power BI Desktop
 description:  Learn how to use online links for Excel files stored in OneDrive for work or school to create reports and visuals Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

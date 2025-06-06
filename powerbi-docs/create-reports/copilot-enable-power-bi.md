@@ -139,7 +139,8 @@ To use Copilot for Power BI, you must have access to a Premium Power BI capacity
 
 ## Considerations and limitations
 
-The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
+- The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
+- Copilot isn't currently supported for Private Link or closed network environments.
 
 ## Send feedback
 

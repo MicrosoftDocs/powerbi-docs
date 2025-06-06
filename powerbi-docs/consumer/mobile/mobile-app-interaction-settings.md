@@ -1,8 +1,8 @@
 ---
 title: Configure report interaction settings
 description: Learn how to override the default interaction settings for reports in the Power BI mobile app.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

@@ -1,8 +1,8 @@
 ---
 title: Workspaces in Power BI
 description: Learn about workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

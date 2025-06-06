@@ -1,8 +1,8 @@
 ---
 title: Get data from comma separated value (CSV) files
 description: Learn about CSV files and find out how you can add a CSV semantic model to a workspace in the Power BI service.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

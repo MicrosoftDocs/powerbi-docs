@@ -14,7 +14,7 @@ ms.collection: ce-skilling-ai-copilot
 #customer intent: As a report creator, I want to learn how to use Copilot in Power BI to visualize data from my semantic model.
 ---
 
-# Ask Copilot for data from your model (preview)
+# Ask Copilot for data from your model
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -68,11 +68,7 @@ Ad hoc calculations currently require using **Edit Mode** of reports using Copil
 
 ## Unsupported question types
 
-Copilot can't currently answer questions that require on-the-fly calculations. It also can't generate new insights like anomaly detection, forecasting, or finding key influencers. The specific questions it can handle depend on your model and report visuals. However, here are some examples of unsupported questions:
-
-- **"Show me the difference in performance between sales in Europe and in America over time"**
-
-     This question requires calculating sales for each region and finding the difference which isn't a current measure in the model.
+Copilot can't currently answer questions that require generating new insights like anomaly detection, forecasting, or finding key influencers. The specific questions it can handle depend on your model and report visuals. However, here are some examples of unsupported questions:
 
 - **"Why do our sales go down every July?”**
 

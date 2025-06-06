@@ -1,8 +1,8 @@
 ---
 title: Resolve startup issues with Power BI Desktop
 description: See how to report and resolve issues with opening Power BI Desktop or connecting to data.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

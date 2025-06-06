@@ -1,8 +1,8 @@
 ---
 title: View Power BI content as an external guest user (Microsoft Entra B2B)
 description: Learn how to use the Power BI mobile app to view content shared with you from an external organization.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

@@ -1,8 +1,8 @@
 ---
 title: Reduce the size of an Excel workbook to view it in Power BI
 description: Learn about managing contents within a Microsoft Excel workbook, and how you can reduce the size of the workbook to view it in Power BI.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

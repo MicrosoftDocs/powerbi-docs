@@ -1,8 +1,8 @@
 ---
 title: Connect data to physical locations with NFC tags
 description: Learn how to set up NFC tags to connect real world locations with filtered BI information in the Power BI mobile app.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

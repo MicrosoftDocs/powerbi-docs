@@ -2,8 +2,8 @@
 title: Registration tool note
 description: Azure AD registration tool for Power BI embedded analytics, final note
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 10/28/2020
 ms.custom: include file

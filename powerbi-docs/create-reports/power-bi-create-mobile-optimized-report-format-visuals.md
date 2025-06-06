@@ -1,8 +1,8 @@
 ---
 title: Optimize visual formatting for mobile layout
 description: Learn how to optimize the visual formatting for mobile layout.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom:
 ms.service: powerbi

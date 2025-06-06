@@ -2,12 +2,12 @@
 title: Power BI workspace roles
 description: Power BI workspace roles table
 services: powerbi
-author: kfollis
+author: JulCsc
 
 ms.service: powerbi
 ms.topic: include
 ms.date: 07/01/2021
-ms.author: kfollis
+ms.author: juliacawthra
 ms.custom: include file, fabric
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Use parameters to visualize variables
 description: Learn how to create your own parameters to imagine and visualize variables in your Power BI reports.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: FY25Q1-Linter
 ms.service: powerbi
