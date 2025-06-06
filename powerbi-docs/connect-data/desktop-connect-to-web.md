@@ -1,8 +1,8 @@
 ---
 title: Connect to a webpage from Power BI Desktop
 description: Learn how to easily connect to and use webpage data in your Power BI Desktop visuals and in your data models.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: Create reports using datamarts (preview)
 description: Learn how to create and share reports using datamarts in Power BI, including live connections, composite models, and SQL Endpoints.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

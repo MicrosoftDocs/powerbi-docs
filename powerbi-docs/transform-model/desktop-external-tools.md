@@ -1,8 +1,8 @@
 ---
 title: External tools in Power BI Desktop
 description: Learn how to extend the use of Power BI Desktop with external tools developed by community contributors.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

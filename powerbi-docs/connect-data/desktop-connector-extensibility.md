@@ -1,8 +1,8 @@
 ---
 title: Connector extensibility in Power BI
 description: Learn about connector extensibility capabilities, features, security settings, and certified connectors.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
