@@ -54,7 +54,7 @@ Here are things to keep in mind when you connect to Power BI semantic models in 
 - For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
 - You must have **Build** permission to the Power BI semantic model or have at least a **Contributor** role in the Power BI workspace containing your semantic model.
 - When connecting through the XMLA endpoint to a composite Power BI semantic model that relies on other semantic models downstream, you must have **Build** permission or **Contributor** rights to all the semantic models. The AIXL endpoint, on the other hand, enforces **Build** permissions or **Contributor** rights only on the composite model.
-- You must have a Fabric license to connect Excel to Power BI semantic models. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
+- You must have a Power BI license to connect Excel to Power BI semantic models. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
 ## Related content
