@@ -23,9 +23,9 @@ For related "What's New" information, see:
 
 ### Org apps are now available in Power BI mobile! (preview)
 
-Org apps, introduced earlier this year in the Power BI service, are now available in the Power BI mobile apps! You can get to them via the **Apps** tab or via the workspaces you have access to. Like any other item type in the Power BI mobile apps, Org apps can appear on the home page, be discovered via search, be marked as favorites, and more. Fabric items, which are not currently supported in the mobile apps, will appear in the Org app's content list, but will open in your device's browser, rather than in the mobile app. Power BI items will open in the mobile app as usual. [Check out our documentation](./mobile-apps-org-apps.md)!
+Org apps, introduced earlier this year in the Power BI service, are now available in the Power BI mobile apps! You can get to them via the **Apps** tab or via workspaces you have access to. Like any other item type in the Power BI mobile apps, Org apps can appear on the home page, be discovered via search, be marked as favorites, and more. Org apps can contain both Power BI and Fabric items. Fabric items, not currently supported in the mobile apps, will appear in the Org app's content list, but will open in your device's browser, rather than in the mobile app. Power BI items open in the mobile app as usual. [Check out our documentation](./mobile-apps-org-apps.md)!
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/org-app.png" alt-text="Screenshot showing an org app in the Power BI mobile app." border="falseS":::
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/org-app.png" alt-text="Screenshot showing an org app in the Power BI mobile app." border="false":::
 
 ## April 2025
 
