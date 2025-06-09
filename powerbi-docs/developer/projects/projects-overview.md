@@ -103,7 +103,7 @@ project/
 └── AdventureWorks.pbip
 ```
 
-## Navigate to folders
+## Navigate to files
 
 After saving as a project, you can see when you're working on a project by looking at the title bar:
 
