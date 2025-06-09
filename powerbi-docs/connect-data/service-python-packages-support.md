@@ -107,7 +107,7 @@ The following table shows which packages **are supported** in Power BI for repor
 
 - Py visuals are not supported in the service for Sovereign cloud customers and tenants in regions without Fabric availability. Py visuals are supported in Desktop for all users.
 - Py visuals aren't supported with Service Principal Profiles for App Owns Data.
-- Py visuals rendered from the Power BI service are subject to a limit of 30Mb. This limit applies to the total payload of compressed input data and the Python script itself. Always check Py visuals after publishing the report to ensure the report will display as expected. 
+- Py visuals rendered from the Power BI service are subject to a limit of 30MB. This limit applies to the total payload of compressed input data and the Python script itself. Always check Py visuals after publishing the report to ensure the report will display as expected. 
 
 - Py visuals rendered in the Power BI service are subject to a script execution timeout of 1 minute.
 
