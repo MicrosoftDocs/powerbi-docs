@@ -124,7 +124,32 @@ Switch between a horizontal or vertical orientation by using the **Split view ho
 
 :::image type="content" source="media/explore-data-service/change-layout-view.png" alt-text="Screenshot showing switching the layout to side by side." lightbox="media/explore-data-service/change-layout-view.png":::
 
-## Step 3. Apply filters to your Exploration
+## Step 3. Add calculations to your Exploration
+
+You can add [visual calculations](../transform-model/desktop-visual-calculations-overview.md) to your visuals. Select the **New visual calculation** button on any 
+visual to enter visual calculations edit mode.
+
+:::image type="content" source="media/explore-data-service/add-visual-calculation.png" alt-text="Screenshot showing the New visual calculation button." lightbox="media/explore-data-service/add-visual-calculation.png":::
+
+Here, enter the calculation or use the provided [templates](../transform-model/desktop-visual-calculations-overview.md#using-templates).
+
+:::image type="content" source="media/explore-data-service/add-visual-calculation-1.png" alt-text="Screenshot showing the visual calculations edit mode. The templates menu is opened" lightbox="media/explore-data-service/add-visual-calculation-1.png":::
+
+For example, to calculate a running sum of visits, use the **Running sum** template:
+
+:::image type="content" source="media/explore-data-service/add-visual-calculation-2.png" alt-text="Screenshot showing the visual calculations edit mode. The back button is selected" lightbox="media/explore-data-service/add-visual-calculation-2.png":::
+> [!NOTE]
+> In this view, you can [hide fields](../transform-model/desktop-visual-calculations-overview.md#hiding-fields-from-the-visual) as well using the **Rearrange data** menu.
+
+Once you have added your calculations, select **Back** to go back to your Exploration.
+
+:::image type="content" source="media/explore-data-service/add-visual-calculation-3.png" alt-text="Screenshot showing the visual calculations edit mode. The back button is selected" lightbox="media/explore-data-service/add-visual-calculation-3.png":::
+
+Your calculation is shown on both visuals, unless it can't be displayed on the other visual.
+
+:::image type="content" source="media/explore-data-service/add-visual-calculation-4.png" alt-text="Screenshot showing an Exploration with a visual calculation applied to both visuals" lightbox="media/explore-data-service/add-visual-calculation-4.png":::
+
+## Step 4. Apply filters to your Exploration
 
 As you build out your Exploration, you can also filter your data. Select the **Add filter** button on the top left to quickly add filters on the fields already in your visual or pick from any fields in your semantic model in the **All data** section.  
 
@@ -134,7 +159,7 @@ In this Exploration experience, the filters are added as pills at the top of vie
 
 :::image type="content" source="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png" alt-text="Screenshot showing applying the trip purpose filter." lightbox="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png":::
 
-## Step 4. Save your Exploration
+## Step 5. Save your Exploration
 
 Save your Exploration to a workspace or as a report.
 
@@ -151,7 +176,7 @@ Save your Exploration to a workspace or as a report.
    > [!NOTE]
    > You need **Build** permission on the underlying semantic model to save as a report.
 
-## Step 5. Share your Exploration with others
+## Step 6. Share your Exploration with others
 
 If you want to share your Exploration with others, follow these steps:
 
@@ -220,3 +245,4 @@ Explore has some limitations. Here are some important things to keep in mind.
 - [Personalize visuals in a report](end-user-personalize-visuals.md)
 - [Organizational licenses and subscriptions for Fabric and Power BI](../enterprise/service-admin-licensing-organization.md)
 - [Power BI Premium Per User FAQ](../enterprise/service-premium-per-user-faq.yml)
+- [Visual calculations overview](../transform-model/desktop-visual-calculations-overview.md)
