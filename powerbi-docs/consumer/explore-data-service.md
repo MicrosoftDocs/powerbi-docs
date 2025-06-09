@@ -137,7 +137,7 @@ Here, enter the calculation or use the provided [templates](../transform-model/d
 
 For example, to calculate a running sum of visits, use the **Running sum** template:
 
-:::image type="content" source="media/explore-data-service/add-visual-calculation-runningsum.png" alt-text="Screenshot showing the visual calculations edit mode with a running sum calculation. " lightbox="media/explore-data-service/add-visual-calculation-runningsum.png":::
+:::image type="content" source="media/explore-data-service/add-visual-calculation-running-sum.png" alt-text="Screenshot showing the visual calculations edit mode with a running sum calculation. " lightbox="media/explore-data-service/add-visual-calculation-running-sum.png":::
 > [!NOTE]
 > In this view, you can [hide fields](../transform-model/desktop-visual-calculations-overview.md#hiding-fields-from-the-visual) as well using the **Rearrange data** menu.
 
