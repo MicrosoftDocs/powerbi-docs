@@ -137,13 +137,13 @@ Here, enter the calculation or use the provided [templates](../transform-model/d
 
 For example, to calculate a running sum of visits, use the **Running sum** template:
 
-:::image type="content" source="media/explore-data-service/add-visual-calculation-2.png" alt-text="Screenshot showing the visual calculations edit mode. The back button is selected" lightbox="media/explore-data-service/add-visual-calculation-2.png":::
+:::image type="content" source="media/explore-data-service/add-visual-calculation-2.png" alt-text="Screenshot showing the visual calculations edit mode with a running sum calculation. " lightbox="media/explore-data-service/add-visual-calculation-2.png":::
 > [!NOTE]
 > In this view, you can [hide fields](../transform-model/desktop-visual-calculations-overview.md#hiding-fields-from-the-visual) as well using the **Rearrange data** menu.
 
 Once you have added your calculations, select **Back** to go back to your Exploration.
 
-:::image type="content" source="media/explore-data-service/add-visual-calculation-3.png" alt-text="Screenshot showing the visual calculations edit mode. The back button is selected" lightbox="media/explore-data-service/add-visual-calculation-3.png":::
+:::image type="content" source="media/explore-data-service/add-visual-calculation-3.png" alt-text="Screenshot showing the visual calculations edit mode, the back button is selected" lightbox="media/explore-data-service/add-visual-calculation-3.png":::
 
 Your calculation is shown on both visuals, unless it can't be displayed on the other visual.
 
