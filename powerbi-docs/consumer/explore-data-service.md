@@ -129,25 +129,25 @@ Switch between a horizontal or vertical orientation by using the **Split view ho
 You can add [visual calculations](../transform-model/desktop-visual-calculations-overview.md) to your visuals. Select the **New visual calculation** button on any 
 visual to enter visual calculations edit mode.
 
-:::image type="content" source="media/explore-data-service/add-visual-calculation.png" alt-text="Screenshot showing the New visual calculation button." lightbox="media/explore-data-service/add-visual-calculation.png":::
+:::image type="content" source="media/explore-data-service/new-visual-calculation.png" alt-text="Screenshot showing the New visual calculation button." lightbox="media/explore-data-service/new-visual-calculation.png":::
 
 Here, enter the calculation or use the provided [templates](../transform-model/desktop-visual-calculations-overview.md#using-templates).
 
-:::image type="content" source="media/explore-data-service/add-visual-calculation-1.png" alt-text="Screenshot showing the visual calculations edit mode. The templates menu is opened" lightbox="media/explore-data-service/add-visual-calculation-1.png":::
+:::image type="content" source="media/explore-data-service/add-visual-calculation-templates.png" alt-text="Screenshot showing the visual calculations edit mode. The templates menu is opened." lightbox="media/explore-data-service/add-visual-calculation-templates.png":::
 
 For example, to calculate a running sum of visits, use the **Running sum** template:
 
-:::image type="content" source="media/explore-data-service/add-visual-calculation-2.png" alt-text="Screenshot showing the visual calculations edit mode with a running sum calculation. " lightbox="media/explore-data-service/add-visual-calculation-2.png":::
+:::image type="content" source="media/explore-data-service/add-visual-calculation-runningsum.png" alt-text="Screenshot showing the visual calculations edit mode with a running sum calculation. " lightbox="media/explore-data-service/add-visual-calculation-runningsum.png":::
 > [!NOTE]
 > In this view, you can [hide fields](../transform-model/desktop-visual-calculations-overview.md#hiding-fields-from-the-visual) as well using the **Rearrange data** menu.
 
 Once you have added your calculations, select **Back** to go back to your Exploration.
 
-:::image type="content" source="media/explore-data-service/add-visual-calculation-3.png" alt-text="Screenshot showing the visual calculations edit mode, the back button is selected" lightbox="media/explore-data-service/add-visual-calculation-3.png":::
+:::image type="content" source="media/explore-data-service/add-visual-calculation-back-hide.png" alt-text="Screenshot showing the visual calculations edit mode, the back button is selected." lightbox="media/explore-data-service/add-visual-calculation-back-hide.png":::
 
 Your calculation is shown on both visuals, unless it can't be displayed on the other visual.
 
-:::image type="content" source="media/explore-data-service/add-visual-calculation-4.png" alt-text="Screenshot showing an Exploration with a visual calculation applied to both visuals" lightbox="media/explore-data-service/add-visual-calculation-4.png":::
+:::image type="content" source="media/explore-data-service/add-visual-calculation-final.png" alt-text="Screenshot showing an Exploration with a visual calculation applied to both visuals." lightbox="media/explore-data-service/add-visual-calculation-final.png":::
 
 ## Step 4. Apply filters to your Exploration
 
