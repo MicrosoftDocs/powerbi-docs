@@ -121,6 +121,8 @@ The following templates are available:
 
 Selecting a template inserts the template in the formula bar. You can use these templates as starting points. You can also add your own expressions without relying on templates.
 
+Parameter pickers are available to make it easy to select values for parameters. You can also activate the parameter pickers using the CTRL+SPACE keyboard shortcut.
+
 ## :::no-loc text="Axis":::
 
 Many functions have an optional **:::no-loc text="Axis":::** parameter, which can only be used in visual calculations. :::no-loc text="Axis"::: influences how the visual calculation traverses the visual matrix. The :::no-loc text="Axis"::: parameter is set to the first axis in the visual by default. For many visuals the first axis is :::no-loc text="ROWS":::, which means that the visual calculation is evaluated row-by-row in the visual matrix, from top to bottom. The following table shows the valid values for the :::no-loc text="Axis"::: parameter:
