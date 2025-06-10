@@ -25,8 +25,8 @@ There are also new tenant settings for the Azure Maps visual, which require admi
 
 ## Events and announcements
 
-- [**Power BI is turning 10**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1710604336): Celebrate a decade of Power BI innovation. Over the past 10 years, Power BI has evolved from a concept into a global platform empowering millions to transform data into actionable insights. Mark this milestone by participating in the #PBI10 dataviz contest, attending expert-led sessions to prepare for the PL-300 certification (including access to discounted exam vouchers), and exploring other anniversary activities.
-- [**The Microsoft Fabric Community Conferences**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1709427552): Attend the Microsoft Fabric Community Conference in Vienna and Atlanta. The conference returns for its third year, with events scheduled in both Vienna and Atlanta, Georgia. The Atlanta conference will take place March 16-20, 2026. Register now and use code MSCATL to receive a $200 discount in addition to current Super Early Bird pricing. If you prefer an earlier opportunity, consider attending FabCon Vienna from September 15-18, 2025.
+- [**Power BI is turning 10**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1710604336): Celebrate a decade of Power BI innovation. Over the past 10 years, Power BI has evolved from a concept into a global platform empowering millions to transform data into actionable insights. Mark this milestone with special activities and certification prep sessions.
+- [**Microsoft Fabric Community Conferences**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1709427552): Register for the upcoming *FabCon Vienna* (September 15-18, 2025) and the third annual *FabCon* in Atlanta, Georgia (March 16-20, 2026).
 
 ## General
 
