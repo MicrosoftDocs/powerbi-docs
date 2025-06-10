@@ -84,6 +84,8 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 - In Power BI Desktop, Copilot requires that the **tenant-level Fabric Copilot setting is enabled**. If the tenant setting is off, Copilot features will be unavailable—even if your workspace is properly configured.
 - The Copilot button on the ribbon might be visible to some customers even if the Copilot chat pane is not yet available for them. This situation is temporary.
 
+- The report view Copilot pane is not supported in Power BI Desktop versions earlier than February 2025. Please update to the latest version to access this feature.
+
 ## Send feedback
 
 We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
