@@ -24,7 +24,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 Bug fixes/improvements:
 
 - Addressed regression that resulted in conditional formatting colors being improperly deleted.
-- 
+
 ## May 2025 QFE 1
 
 *Version 2.143.1204.0, Released: May 28, 2025*
