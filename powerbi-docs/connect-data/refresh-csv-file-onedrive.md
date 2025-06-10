@@ -1,8 +1,8 @@
 ---
 title: Refresh a semantic model created from a .csv file on OneDrive
 description: Learn how a comma separated value file created on OneDrive or SharePoint is refreshed after you connect it to Power BI.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kayu
 ms.custom: ''
 ms.service: powerbi

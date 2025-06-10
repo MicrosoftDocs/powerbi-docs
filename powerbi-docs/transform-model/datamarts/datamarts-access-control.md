@@ -1,8 +1,8 @@
 ---
 title: Control access to datamarts (preview)
 description: Learn how to control access to datamarts in Power BI, including setting workspace roles, viewer restrictions, and configuring row-level security.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

@@ -1,8 +1,8 @@
 ---
 title: Connect to GitHub with Power BI
 description: GitHub for Power BI
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

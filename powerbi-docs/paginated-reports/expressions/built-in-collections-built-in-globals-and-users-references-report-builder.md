@@ -1,8 +1,8 @@
 ---
 title: "Built-in Globals and User references in a paginated report"
 description: Find out about the values that can be used in expressions to filter results in a paginated report in Power BI Report Builder.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
 ms.date: 06/21/2023
 ms.service: powerbi

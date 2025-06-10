@@ -1,8 +1,8 @@
 ---
 title: Learn which R packages are supported
 description: You can use the powerful R programming language to create visuals in the Power BI service. Learn about which R packages are supported.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi

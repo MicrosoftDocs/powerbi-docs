@@ -1,8 +1,8 @@
 ---
 title: Query overview in Power BI Desktop
 description: Learn how to work with queries to shape and transform data to meet your needs in this overview of the tools included in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

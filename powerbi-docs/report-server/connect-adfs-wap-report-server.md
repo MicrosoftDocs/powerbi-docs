@@ -1,8 +1,8 @@
 ---
 title: Use Web Application Proxy and Active Directory Federated Services - Power BI Report Server
 description: Learn how to use Web Application Proxy (WAP) and Active Directory Federated Services (AD FS) to connect to Power BI Report Server, and SQL Server Reporting Services (SSRS) 2016 and later.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

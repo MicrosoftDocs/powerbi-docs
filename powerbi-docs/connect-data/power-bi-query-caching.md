@@ -1,8 +1,8 @@
 ---
 title: Query caching in Power BI Premium
 description: Discover your organization can take advantage of query caching to speed up reports associated with a semantic model by using Power BI Premium or Power BI Embedded.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: 'bhmerc'
 ms.service: powerbi
 ms.subservice: pbi-data-sources

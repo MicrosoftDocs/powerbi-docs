@@ -5,8 +5,8 @@ ms.date: 10/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rvpatkar
 ---
 # Improve accessibility in paginated reports with StructureTypeOverwrite (Power BI Report Builder)

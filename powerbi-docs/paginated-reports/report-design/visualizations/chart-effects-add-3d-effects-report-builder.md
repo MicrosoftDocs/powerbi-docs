@@ -5,8 +5,8 @@ ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Chart effects: Add 3D effects to a Power BI paginated report chart (Power BI Report Builder)

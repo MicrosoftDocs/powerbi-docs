@@ -1,8 +1,8 @@
 ---
 title: Monitor usage metrics in workspaces (preview)
 description: How to view, save, and use usage metrics for Power BI dashboards and reports in workspaces. 
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -184,7 +184,7 @@ By default, per-user data is enabled for usage metrics. This means content consu
 > [!NOTE]
 > An embed scenario with excluded user information isn't supported. In such cases, usage metrics semantic model refresh will fail.
 
-If user information is excluded, the usage report refers to users as 'Unnamed User _[unique_id]_', where _[unique_id]_ is a meaningless unique identifier assigned to support distinct user count measures.
+If user information is excluded, the usage report refers to users as 'Unnamed User _[unique_id]_', where _[unique_id]_ is a meaningless unique identifier assigned to support distinct user count measures. The format of a masked user's _[unique_id]_ is subject to change.
 
 1. On the **Tenant settings** tab in the admin portal, under **Audit and usage settings**, expand **Per-user data in metrics for content creators** and select **Disabled**. This will hide user account information for all users.
 

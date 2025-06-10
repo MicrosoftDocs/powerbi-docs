@@ -1,8 +1,8 @@
 ---
 title: Create calculation groups in Power BI
 description: Learn how to create calculation groups in Power BI.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

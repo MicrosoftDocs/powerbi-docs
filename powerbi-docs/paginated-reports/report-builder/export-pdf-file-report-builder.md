@@ -5,8 +5,8 @@ ms.date: 08/26/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Export Power BI paginated report to a PDF File (Power BI Report Builder)

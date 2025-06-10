@@ -1,8 +1,8 @@
 ---
 title: DirectQuery in Power BI
 description: Understand DirectQuery in Power BI, and see recommendations, limitations, and implications of using DirectQuery or other options.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

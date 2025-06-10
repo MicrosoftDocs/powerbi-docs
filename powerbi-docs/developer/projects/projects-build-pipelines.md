@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps build pipeline integration with Power BI Desktop projects
 description: Learn about Azure Pipelines and how to use them with Power BI projects to validate developments.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ruiromano
 ms.service: powerbi

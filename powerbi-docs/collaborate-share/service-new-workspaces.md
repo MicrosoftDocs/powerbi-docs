@@ -1,8 +1,8 @@
 ---
 title: Workspaces in Power BI
 description: Learn about workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
@@ -92,6 +92,7 @@ Limitations to be aware of:
 - Power BI publisher for Excel isn't supported.
 - Certain special characters aren't supported in workspace names when using an XMLA endpoint. As a workaround, use URL encoding of special characters, for example, for a forward slash **/**, use **%2F**.
 - A user or a [service principal](../enterprise/service-premium-service-principal.md) can be a member of up to 1,000 workspaces.
+- The semantic model may exhibit slight differences in behavior regarding the display name of the owner, as it assumes a single-owner model for operations like setting credentials.
 
 ## Related content
 

@@ -1,8 +1,8 @@
 ---
 title: Get data from Excel workbook files
 description: Learn how to import or upload data from Excel workbook files into Power BI, including supported workbooks, data types, and troubleshooting tips.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-data-sources

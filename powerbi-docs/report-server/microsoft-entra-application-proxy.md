@@ -1,8 +1,8 @@
 ---
 title: Configure Power BI Report Server with Microsoft Entra application proxy
 description: Learn how to configure your Power BI Report Server with the Microsoft Entra application proxy.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

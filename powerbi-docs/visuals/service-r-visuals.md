@@ -62,18 +62,20 @@ As another example, the following image shows the error message that appears whe
 
 ## Licensing
 
-R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses and how they differ from free licenses, see [Power BI Pro content - what is it?](../enterprise/service-admin-purchasing-power-bi-pro.md)
-
-Free users of Power BI can only consume tiles shared with them in Premium workspaces. For more information about Premium, see [purchasing Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) for more information.
+R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. Users of free Power BI can consume only reports that are shared with them in Premium workspaces. 
 
 The following table describes R visuals capabilities based on licensing.
 
-|  |Author R visuals in Power BI Desktop  | Create Power BI service reports with R visuals |View R visuals in reports  |  
+|  |Author R visuals in Power BI Desktop  | Create Power BI service reports with R visuals |View R visuals in reports  |
 |---------|---------|---------|---------|
-|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Premium/Azure capacity only  |  
-|**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported | 
-|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    |  
-**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    | 
+|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported* for Fabric/Premium workspaces|
+|**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported |
+|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported* for Fabric/Premium workspaces|
+|**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported*    |
+
+Note: (*) Python visuals in the service are supported in Fabric regions. This means that reports published to workspaces will display the Python chart visual when the workspace has (1) a Fabric license, (2) a Pro or PPU license, or (3) a premium license and the PBI home tenant is in a region with [Fabric Spark workload availability](/fabric/admin/region-availability). Python visuals are supported in Desktop for all users.  
+  
+For more information about Power BI Pro licenses and how they differ from free licenses, see [Purchase and assign Power BI Pro user licenses](/power-bi/enterprise/service-admin-purchasing-power-bi-pro).
 
 ## Overview of R packages
 
@@ -124,13 +126,13 @@ For a long list of supported R packages (and the short list of unsupported packa
      ```powerbi_rEnableShowText =  1```
 
 * Chinese, Japanese, and Korean fonts require all of the following steps to work properly in the Power BI service:
-  
+
   1. Install the R package *showtext* and all of its dependencies. You can install it by running the following script:
 
      ```install.packages("showtext")```
 
   1. Add the following line at the beginning of the R script:
-
+    
     ```R script
       powerbi_rEnableShowTextForCJKLanguages =  1
     ```

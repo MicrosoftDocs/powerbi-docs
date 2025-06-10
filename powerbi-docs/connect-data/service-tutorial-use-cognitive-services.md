@@ -1,8 +1,8 @@
 ---
 title: 'Tutorial: Use Cognitive Services in Power BI'
 description: In this tutorial, learn to import data into a dataflow in the Power BI service, score sentiment and extract key phrases, and connect to Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-ai

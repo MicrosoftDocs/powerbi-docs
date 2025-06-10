@@ -1,8 +1,8 @@
 ---
 title: Semantic models in the Power BI service
 description: Understand Power BI service semantic models, which represent a source of data ready for reporting and visualization.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources

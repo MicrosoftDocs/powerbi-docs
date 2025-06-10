@@ -1,8 +1,8 @@
 ---
 title: 'Fixing "Corporate SSL certificate is untrusted"'
 description: Learn how to resolve the message, "Could not authenticate because your corporate SSL certificate is untrusted."
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

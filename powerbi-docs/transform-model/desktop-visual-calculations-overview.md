@@ -1,8 +1,8 @@
 ---
 title: Using visual calculations in Power BI Desktop
 description: Learn how to create visual calculations using Data Analysis Expressions (DAX) formulas in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -121,6 +121,14 @@ The following templates are available:
 
 Selecting a template inserts the template in the formula bar. You can use these templates as starting points. You can also add your own expressions without relying on templates.
 
+## Parameter pickers
+Parameter pickers make it easy to select values for parameters in visual calculations functions.  For example, here we loaded the **Look up a value with totals** template:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png" alt-text="Screenshot showing the parameter picker." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png":::
+
+You can also activate the parameter pickers using the **CTRL+SPACE** keyboard shortcut.
+
+
 ## :::no-loc text="Axis":::
 
 Many functions have an optional **:::no-loc text="Axis":::** parameter, which can only be used in visual calculations. :::no-loc text="Axis"::: influences how the visual calculation traverses the visual matrix. The :::no-loc text="Axis"::: parameter is set to the first axis in the visual by default. For many visuals the first axis is :::no-loc text="ROWS":::, which means that the visual calculation is evaluated row-by-row in the visual matrix, from top to bottom. The following table shows the valid values for the :::no-loc text="Axis"::: parameter:
@@ -133,7 +141,7 @@ Many functions have an optional **:::no-loc text="Axis":::** parameter, which ca
 | :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-13.png" border="false":::  | :::no-loc text="COLUMNS ROWS"::: | Calculates horizontally across columns from left to right, continuing row by row from top to bottom. |
 
 > [!NOTE]
-> You can only use axis values that are available in the visual you're working on. Not all visuals provide all axes, and some visuals provide no axes.
+> If you specify an axis that is not present on the visual, that axis is ignored.
 
 ## :::no-loc text="Reset":::
 
@@ -181,7 +189,7 @@ Again, consider the visual calculation described earlier. The table below shows 
 ### Synonyms
 :::no-loc text="Reset"::: also provides the following synonyms:
 * **:::no-loc text="NONE":::** is the default value. It does not reset the calculation and is equivalent to 0.
-* **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is equivelant to 1.
+* **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is equivalant to 1.
 * **:::no-loc text="LOWESTPARENT":::** performs a relative reset by the immediate parent and is equivalent to -1.
 
 ### Examples of using :::no-loc text="Reset":::

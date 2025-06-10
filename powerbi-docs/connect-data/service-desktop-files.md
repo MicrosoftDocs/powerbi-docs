@@ -1,8 +1,8 @@
 ---
 title: Get data from Power BI Desktop files
 description: Learn about different places to store Power BI files and how to get data and reports from Power BI Desktop into the Power BI service.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

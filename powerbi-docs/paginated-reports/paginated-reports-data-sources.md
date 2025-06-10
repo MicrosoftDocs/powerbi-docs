@@ -1,8 +1,8 @@
 ---
 title: "Supported data sources for Power BI paginated reports"
 description: Learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

@@ -1,8 +1,8 @@
 ---
 title: "Install Microsoft Report Builder - Power BI Report Server"
 description: This article explains how to download and install Microsoft Report Builder for Power BI Report Server.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

@@ -5,8 +5,8 @@ ms.date: 02/06/2025
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
 ---
 # Add, move, or delete a text box in a paginated report (Power BI Report Builder)

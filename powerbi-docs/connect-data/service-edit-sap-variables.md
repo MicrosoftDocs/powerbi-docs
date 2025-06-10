@@ -1,8 +1,8 @@
 ---
 title: Edit SAP variables in Power BI
 description: Learn how to allow users to edit SAP variables and how to edit variables for SAP Business Warehouse or SAP HANA DirectQuery reports.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

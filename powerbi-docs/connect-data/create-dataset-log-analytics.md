@@ -1,8 +1,8 @@
 ---
 title: Create a semantic model from Log Analytics
 description: Learn how to create a Power BI semantic model directly from Log Analytics.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
