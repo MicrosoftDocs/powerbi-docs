@@ -49,7 +49,7 @@ In short, protecting data is about:
 Protecting data is a complex subject. At a high level, topics relevant to Power BI include:
 
 - **Responsible actions taken by users**: Users who have received guidance and training, and clearly understand what's expected of them, can act ethically. They can enact a culture that values security, privacy, and compliance during the normal course of their work.
-- **Right-sized user security permissions**: In Power BI, securing data and reports is separate and distinct from the information protection and DLP activities described in these articles. [Security](whitepaper-powerbi-security.md) methods in Power BI include techniques such as workspace roles, sharing, app permissions, and row-level security (RLS). Security techniques, such as workspace roles, app permissions, per-item sharing, and RLS, are covered in the [security planning](powerbi-implementation-planning-security-overview.md) articles.
+- **Right-sized user security permissions**: In Power BI, securing data and reports is separate and distinct from the information protection and DLP activities described in these articles. [Security](white-paper-powerbi-security.md) methods in Power BI include techniques such as workspace roles, sharing, app permissions, and row-level security (RLS). Security techniques, such as workspace roles, app permissions, per-item sharing, and RLS, are covered in the [security planning](powerbi-implementation-planning-security-overview.md) articles.
 - **Data lifecycle management**: Processes such as backups and version control are important for protecting data. The setup of [encryption keys](../enterprise/service-encryption-byok.md) and geographic locations for [data storage](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage) also are considerations.
 - **Information protection**: Labeling and classifying content by using sensitivity labels is the first step towards being able to protect it. Information protection is covered in this series of articles.
 - **Data loss prevention policies**: DLP refers to controls and policies that reduce the risk of data leakage. Data loss prevention is covered in this series of articles.
@@ -121,7 +121,7 @@ For more information about the types of controls you can implement to reduce dat
 
 ### Control activity in real time
 
-To augment existing [security settings in Power BI](whitepaper-powerbi-security.md), you can implement real-time controls to reduce the risk of data leakage.
+To augment existing [security settings in Power BI](white-paper-powerbi-security.md), you can implement real-time controls to reduce the risk of data leakage.
 
 For example, you can restrict users from downloading highly sensitive data and reports from the Power BI service. This type of real-time control is helpful when someone is allowed to view content themselves, but they should be prevented from downloading and distributing it to others.
 

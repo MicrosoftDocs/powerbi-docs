@@ -1,5 +1,5 @@
 ---
-title: Power BI embedded analytics capacity planning
+title: Power BI Embedded Analytics Capacity Planning
 description: Determine which capacity to use in Power BI embedded analytics. See how to choose an SKU, assess your capacity load, and automatically resize your capacity.
 author: billmath
 ms.author: billmath
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/12/2024
+ms.date: 06/03/2025
 ms.custom: engagement-fy23
 ---
 
@@ -24,7 +24,7 @@ Some of the things to consider when planning your capacity are:
 * Other usage patterns that are hard to predict.
 
 >[!NOTE]
->This article explains how to plan what capacity you need and how to do a load testing assessment for Power BI embedded analytics A-SKUs.
+>This article explains how to plan what capacity you need and how to do a load testing assessment for Power BI embedded analytics *A* SKUs.
 
 When planning your capacity, take the following steps:
 
@@ -46,7 +46,7 @@ For a detailed tutorial on optimizing performance, see the [Optimize a model for
 
 ## Determine your minimum SKU
 
-The following table summarizes all the limitations that are dependent on the capacity size. To determine the minimum SKU for your capacity, check the *Max memory (GB)* column under the *Semantic model* header. Also, keep in mind the [current limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
+The following table summarizes all the limitations that are dependent on the capacity size. Also, keep in mind the [current limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
 
 [!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
@@ -56,7 +56,7 @@ To test or assess your capacity load:
 
 1. Create a [Premium Power BI Embedded capacity in Azure](azure-pbie-create-capacity.md) for the testing. Use a subscription associated with the same Microsoft Entra tenant as your Power BI tenant and a user account that's signed in to that same tenant.​
 
-2. Assign the workspace (or workspaces) you'll use to test to the Premium capacity you created. You can assign a workspace in one of the following ways:
+2. Assign the workspace (or workspaces) you'll use to test the Premium capacity you created. You can assign a workspace in one of the following ways:
 
    * *Programmatically* with the [Groups AssignToCapacity API](/rest/api/power-bi/capacities/groups-assign-to-capacity). Check the assignment status with the [Groups CapacityAssignmentStatus API](/rest/api/power-bi/capacities/groups-capacity-assignment-status) or via a *PowerShell* script. For sample code, see the `AssignWorkspacesToCapacity` function in the [Zero-Downtime-Capacity-Scale sample on GitHub](https://github.com/Azure-Samples/powerbi-powershell/blob/master/Zero-Downtime-Capacity-Scale.ps1).
    * *Manually* as a workspace admin or via the Admin portal as a capacity admin. For more information, see [Assign a workspace to a capacity by using a master user](./move-to-production.md#assign-a-workspace-to-a-capacity-by-using-a-master-user).
@@ -72,7 +72,7 @@ Consider using a larger SKU for your capacity if the actual CPU incurred on your
 
 ## Set up autoscale
 
-You can use the following autoscaling technique to elastically resize your A-SKU capacity to address its current memory and CPU needs.
+You can use the following autoscaling technique to elastically resize your *A* SKU capacity to address its current memory and CPU needs.
 
 * Use the [Capacities Update API](/rest/api/power-bi-embedded/capacities/update) to scale the capacity SKU up or down.
 To see how to use the API to create your own scripts for scaling up and down, see a [runbook PowerShell script capacity scale-up sample](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1).

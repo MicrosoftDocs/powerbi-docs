@@ -299,7 +299,7 @@ Managing and optimizing the cost of cloud services, like Fabric, is an important
 
 Security, information protection, and data loss prevention (DLP) are joint responsibilities among all content creators, consumers, and administrators. That's no small task because there's sensitive information everywhere: personal data, customer data, or customer-authored data, protected health information, intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations could have a significant impact on the [governance](fabric-adoption-roadmap-governance.md) guidelines and policies that you create related to security.
 
-The [Power BI security whitepaper](whitepaper-powerbi-security.md) is an excellent resource for understanding the breadth of considerations, including aspects that Microsoft manages. This section will introduce several topics that customers are responsible for managing.
+The [Power BI security whitepaper](white-paper-powerbi-security.md) is an excellent resource for understanding the breadth of considerations, including aspects that Microsoft manages. This section will introduce several topics that customers are responsible for managing.
 
 ### User responsibilities
 
@@ -331,7 +331,7 @@ Fabric supports capabilities for information protection and data loss prevention
 
 ### Data residency
 
-For organizations with requirements to store data within a geographic region, Fabric capacity can be [set for a specific region](whitepaper-powerbi-security.md#data-residency) that's different from the home region of the Fabric tenant.
+For organizations with requirements to store data within a geographic region, Fabric capacity can be [set for a specific region](white-paper-powerbi-security.md#data-residency) that's different from the home region of the Fabric tenant.
 
 ### Encryption keys
 
@@ -503,7 +503,7 @@ For more information about system oversight and Fabric administration, see the f
 - [Administer Power BI - Part 2](/training/paths/administer-power-bi-part-2/)
 - [Administrator in a Day Training – Day 1](https://aka.ms/AdmPBI1)
 - [Administrator in a Day Training – Day 2](https://aka.ms/AdmPBI2)
-- [Power BI security whitepaper](whitepaper-powerbi-security.md)
+- [Power BI security whitepaper](white-paper-powerbi-security.md)
 - [External guest users whitepaper](whitepaper-azure-b2b-power-bi.md)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 

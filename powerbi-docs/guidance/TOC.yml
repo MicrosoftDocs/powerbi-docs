@@ -346,6 +346,6 @@
     - name: "White papers overview"
       href: whitepapers.md
     - name: "Power BI security white paper"
-      href: whitepaper-powerbi-security.md  
+      href: white-paper-powerbi-security.md  
     - name: "Power BI Premium deployment"
       href: whitepaper-powerbi-premium-deployment.md
