@@ -15,7 +15,7 @@ ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 ---
 
-# What's new in Power BI? June 2025
+# What's new in Power BI? June 2025 (2.144.679.0)
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
