@@ -19,9 +19,9 @@ ai-usage: ai-assisted
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The [June 2025 Power BI update](https://aka.ms/JunePowerBIBlog) introduces a range of exciting advancements to Power BI, including a standalone Copilot feature allowing users to "Ask anything!" (in preview), enhanced language understanding for data-related questions, and an important announcement regarding the deprecation of the 32-bit Power BI Desktop build. Packed with valuable updates and insights, this month's updates promise plenty of details to explore.
+The [June 2025 Power BI update](https://aka.ms/JunePowerBIBlog) highlights several exciting preview features and an important action-required item for Power BI users. In preview, you can find updates to visual calculations and enhancements to numeric range and field parameters, designed to offer greater flexibility and analytical power within your reports.
 
-Read on for highlights of the latest release. Select the feature links to jump to the blog for more information. Visit the [Microsoft Power BI Updates blog](https://aka.ms/JunePowerBIBlog) for an in-depth look at all the exciting additions and updates for the month of June. You can also view the June demos on the [monthly playlist](https://youtu.be/Mt6Fy3Dvy1A).
+There are also new tenant settings for the Azure Maps visual, which require administrators to take action to ensure seamless integration and continued support. For a quick summary of the June features, read on. For a comprehensive look at these updates and further enhancements, visit the [blog](https://aka.ms/JunePowerBIBlog). You can also view the June demos on the [monthly playlist](https://youtu.be/Mt6Fy3Dvy1A).
 
 ## Events and announcements
 
@@ -77,8 +77,8 @@ Like learning about Power BI through videos and other engaging content? Check ou
 - Follow Power BI on X [@MSPowerBI](https://twitter.com/mspowerbi)
 - Visit the [Power BI forums within the Microsoft Fabric Community](https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi)
 
-  > [!NOTE]
-  > These resources might use earlier versions of Power BI Desktop or the Power BI service.
+> [!NOTE]
+> These resources might use earlier versions of Power BI Desktop or the Power BI service.
 
 ## Past updates
 
