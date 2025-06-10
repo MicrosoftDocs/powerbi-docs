@@ -122,7 +122,7 @@ The following templates are available:
 Selecting a template inserts the template in the formula bar. You can use these templates as starting points. You can also add your own expressions without relying on templates.
 
 ## Parameter pickers
-Parameter pickers make make it easy to select values for parameters.  For example, here we loaded the **Look up a value with totals** template:
+Parameter pickers make it easy to select values for parameters in visual calculations functions.  For example, here we loaded the **Look up a value with totals** template:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png" alt-text="Screenshot showing the parameter picker." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png":::
 
