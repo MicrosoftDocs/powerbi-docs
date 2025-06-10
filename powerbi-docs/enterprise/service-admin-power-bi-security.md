@@ -13,7 +13,7 @@ LocalizationGroup: Administration
 
 # Power BI Security
 
-For detailed information about Power BI security, see the [Power BI Security white paper](/power-bi/guidance/whitepaper-powerbi-security).
+For detailed information about Power BI security, see the [Power BI Security white paper](/power-bi/guidance/white-paper-powerbi-security).
 
 To plan for Power BI security, see the Power BI implementation planning [security series of articles](/power-bi/guidance/powerbi-implementation-planning-security-overview). It expands upon the content in the Power BI Security white paper. While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
 

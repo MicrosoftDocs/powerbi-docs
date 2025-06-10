@@ -61,15 +61,15 @@ The Power BI service follows the Security Development Lifecycle (SDL), strict se
 
 The Power BI service is built on Azure, Microsoft's [cloud computing platform](https://azure.microsoft.com/overview/what-is-azure/). Power BI is currently deployed in many datacenters around the world; there are many active deployments made available to customers in the regions served by those datacenters, and an equal number of passive deployments that serve as backups for each active deployment.
 
-![The WFE and Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
+![The WFE and Back End](media/white-paper-powerbi-security/powerbi-security-white-paper-01.png)
 
 ### Web front-end cluster (WFE)
 
 The web front-end cluster (WFE) cluster provides the user's browser with the initial HTML page contents on site load, and pointers to Azure Content Delivery Network (CDN) content used to render the site in the browser.
 
-![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
+![The WEF Cluster](media/white-paper-powerbi-security/powerbi-security-white-paper-02.png)
 
-A WFE cluster consists of an ASP.NET website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
+A WFE cluster consists of an ASP.NET website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service might communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
 Static resources such as **.js*, **.css*, and image files are mostly stored on an Azure CDN and retrieved directly by the browser. Note that Sovereign Government cluster deployments are an exception to this rule, and for compliance reasons will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content.
 
@@ -90,7 +90,7 @@ Back-end functionality is served by micro-services running on different machines
 * Gateway Service
 * Azure API Management
 
-![The back-end cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_03.png)
+![The back-end cluster](media/white-paper-powerbi-security/powerbi-security-white-paper-03.png)
 
 ### Power BI Premium infrastructure
 
@@ -100,13 +100,13 @@ Power BI Premium capacities are hosted in back-end clusters that are independent
 
 The following diagram illustrates the architecture of the Power BI Premium infrastructure:
 
-![Power BI Premium](media/whitepaper-powerbi-security/powerbi-security-whitepaper_05.png)
+![Power BI Premium](media/white-paper-powerbi-security/powerbi-security-white-paper-05.png)
 
 The connection to the Power BI Premium infrastructure can be done in many ways, depending on the user scenario. Power BI Premium clients can be a user's browser, a regular Power BI back end, direct connections via XMLA clients, ARM APIs, etc.
 
 The Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (the minimum is one). Most Premium resources are encapsulated inside a cluster (for instance, compute), and there are some common regional resources (for example, metadata storage). Premium infrastructure allows two ways of achieving horizontal scalability in a region: increasing resources inside clusters and/or adding more clusters on demand as needed (if cluster resources are approaching their limits).
 
-The backbone of each cluster are compute resources managed by [Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview) and [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). Virtual Machine Scale Sets and Service Fabric allow fast and painless increase of compute nodes as usage grows and orchestrates the deployment, management, and monitoring of Power BI Premium services and applications.
+The backbone of each cluster is compute resources managed by [Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview) and [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). Virtual Machine Scale Sets and Service Fabric allow fast and painless increase of compute nodes as usage grows and orchestrates the deployment, management, and monitoring of Power BI Premium services and applications.
 
 There are many surrounding resources that ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Microsoft Entra ID exclusively.
 
@@ -177,7 +177,7 @@ The user authentication sequence for the Power BI service occurs as described in
 
 1. The client is now able to communicate with the Power BI back-end cluster URL API, using the access token in the Authorization header for the HTTP requests. The Microsoft Entra access token will [have an expiry date set according to Microsoft Entra policies](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#token-lifetime-policies-for-access-saml-and-id-tokens), and to maintain the current session the Power BI Client in the user's browser will make periodic requests to renew the access token before it expires.
 
-![Diagram illustrating the Client Authentication sequence.](media/whitepaper-powerbi-security/powerbi-security-whitepaper_09.png)
+![Diagram illustrating the Client Authentication sequence.](media/white-paper-powerbi-security/powerbi-security-white-paper-09.png)
 
 In the rare cases where client-side authentication fails due to an unexpected error, the code attempts to fall back to using server-side authentication in the WFE. Refer to the [questions and answers section at the end of this document](#power-bi-security-questions-and-answers) for details about the server-side authentication flow.
 
@@ -189,11 +189,11 @@ The assignment of an Azure geography for tenant data storage is done by mapping 
 
 ### Multiple geographies (multi-geo)
 
-Some organizations have a global presence and may require Power BI services in multiple Azure geographies. For example, a business may have their headquarters in the United States but may also do business in other geographical areas, such as Australia. In such cases the business may require that certain Power BI data remain stored at rest in the remote region to comply with local regulations. This feature of the Power BI service is referred to as *multi-geo*.
+Some organizations have a global presence and might require Power BI services in multiple Azure geographies. For example, a business might have their headquarters in the United States but might also do business in other geographical areas, such as Australia. In such cases, the business might require that certain Power BI data remain stored at rest in the remote region to comply with local regulations. This feature of the Power BI service is referred to as *multi-geo*.
 
-The query execution layer, query caches, and artifact data assigned to a multi-geo workspace are hosted and remain in the remote capacity Azure geography. However, some artifact metadata, such as report structure, may remain stored at rest in the tenant's home geo. Additionally, some data transit and processing may still happen in the tenant's home geo, even for workspaces that are hosted in a multi-geo Premium capacity.
+The query execution layer, query caches, and artifact data assigned to a multi-geo workspace are hosted and remain in the remote capacity Azure geography. However, some artifact metadata, such as report structure, might remain stored at rest in the tenant's home geo. Additionally, some data transit and processing might still happen in the tenant's home geo, even for workspaces that are hosted in a multi-geo Premium capacity.
 
-See [Configure Multi-Geo support for Fabric](/fabric/admin/service-admin-premium-multi-geo) for more information about creating and managing deployments that span multiple Azure geographies.
+For more information about creating and managing deployments that span multiple Azure geographies, see [Configure Multi-Geo support for Fabric](/fabric/admin/service-admin-premium-multi-geo).
 
 ### Regions and datacenters
 
@@ -216,7 +216,7 @@ In most scenarios, Azure Storage is utilized to persist the data of Power BI art
 
 All data persisted by Power BI is encrypted by default using Microsoft-managed keys. Customer data stored in Azure SQL databases is fully encrypted using [Azure SQL's transparent data encryption (TDE)](/azure/sql-database/transparent-data-encryption-azure-sql) technology. Customer data stored in Azure Blob Storage is encrypted using [Azure Storage encryption](/azure/storage/common/storage-service-encryption).
 
-Optionally, organizations can utilize Power BI Premium to use their own keys to encrypt data at rest that is imported into a semantic model. This approach is often described as bring your own key (BYOK). Utilizing BYOK helps ensure that even in case of a service operator error, customer data won't be exposed – something that can't easily be achieved using transparent service-side encryption. See [Bring your own encryption keys for Power BI](../enterprise/service-encryption-byok.md) for more information.
+Optionally, organizations can utilize Power BI Premium to use their own keys to encrypt data at rest that is imported into a semantic model. This approach is often described as bring your own key (BYOK). Utilizing BYOK helps ensure that even in case of a service operator error, customer data won't be exposed – something that can't easily be achieved using transparent service-side encryption. For more information, see [Bring your own encryption keys for Power BI](../enterprise/service-encryption-byok.md).
 
 Power BI semantic models allow for various data source connection modes that determine whether the data source data is persisted in the service or not.
 
@@ -228,7 +228,7 @@ Power BI semantic models allow for various data source connection modes that det
 |Composite             |If contains an Import data source |
 |Streaming             |If configured to persist |
 
-Regardless of the semantic model mode utilized, Power BI may temporarily cache any retrieved data to optimize query and report load performance.
+Regardless of the semantic model mode utilized, Power BI might temporarily cache any retrieved data to optimize query and report load performance.
 
 ### Data in processing
 
@@ -252,13 +252,13 @@ If the data source is Azure Analysis Services or on-premises Analysis Services, 
 
 ### Dataflows architecture
 
-Dataflows provide users the ability to configure back-end data processing operations that will extract data from polymorphous data sources, execute transformation logic against the data, and then land it in a target model for use across various reporting presentation technologies. Any user who has either a Member, Contributor, or Admin role in a workspace may create a dataflow. Users in the Viewer role may view data processed by the dataflow but may not make changes to its composition. Once a dataflow has been authored, any member, contributor, or admin of the workspace may schedule refreshes, as well as view and edit the dataflow by taking ownership of it.
+Dataflows provide users the ability to configure back-end data processing operations that will extract data from polymorphous data sources, execute transformation logic against the data, and then land it in a target model for use across various reporting presentation technologies. Any user who has either a Member, Contributor, or Admin role in a workspace mighty create a dataflow. Users in the Viewer role might view data processed by the dataflow but might not make changes to its composition. Once a dataflow has been authored, any member, contributor, or admin of the workspace might schedule refreshes, as well as view and edit the dataflow by taking ownership of it.
 
-Each configured data source is bound to a client technology for accessing that data source. The structure of credentials required to access them is formed to match required implementation details of the data source. Transformation logic is applied by Power Query services while the data is in flight. For premium dataflows, Power Query services execute in back-end nodes. Data may be pulled directly from the cloud sources or through a gateway installed on premises. When pulled directly from a cloud source to the service or to the gateway, the transport uses protection methodology specific to the client technology, if applicable. When data is transferred from the gateway to the cloud service, it is encrypted. See the [Data in transit](#data-in-transit) section above.
+Each configured data source is bound to a client technology for accessing that data source. The structure of credentials required to access them is formed to match required implementation details of the data source. Transformation logic is applied by Power Query services while the data is in flight. For premium dataflows, Power Query services execute in back-end nodes. Data might be pulled directly from the cloud sources or through a gateway installed on premises. When pulled directly from a cloud source to the service or to the gateway, the transport uses protection methodology specific to the client technology, if applicable. When data is transferred from the gateway to the cloud service, it's encrypted. See the [Data in transit](#data-in-transit) section above.
 
-When customer-specified data sources require credentials for access, the owner/creator of the dataflow will provide them during authoring. They're stored using standard product-wide credential storage. See [Authentication to data sources](#authentication-to-data-sources) above. There are various approaches users may configure to optimize data persistence and access. By default, the data is placed in a Power BI-owned and protected storage account. Storage encryption is enabled on the Blob storage containers to protect the data while it is at rest. See [Data at rest](#data-at-rest) below. Users may, however, configure their own storage account associated with their own Azure subscription. When doing so, a Power BI service principal is granted access to that storage account so that it may write the data there during refresh. In this case, the storage resource owner is responsible for configuring encryption on the configured Azure Data Lake Storage account. Data is always transmitted to Blob storage using encryption.
+When customer-specified data sources require credentials for access, the owner/creator of the dataflow will provide them during authoring. They're stored using standard product-wide credential storage. See [Authentication to data sources](#authentication-to-data-sources) above. There are various approaches users might configure to optimize data persistence and access. By default, the data is placed in a Power BI-owned and protected storage account. Storage encryption is enabled on the Blob storage containers to protect the data while it is at rest. See [Data at rest](#data-at-rest) below. Users may, however, configure their own storage account associated with their own Azure subscription. When doing so, a Power BI service principal is granted access to that storage account so that it may write the data there during refresh. In this case, the storage resource owner is responsible for configuring encryption on the configured Azure Data Lake Storage account. Data is always transmitted to Blob storage using encryption.
 
-Since performance when accessing storage accounts may be suboptimal for some data, users also have the option to use a Power BI-hosted compute engine to increase performance. In this case, data is redundantly stored in an SQL database that is available for DirectQuery through access by the back-end Power BI system. Data is always encrypted on the file system. If the user provides a key for encrypting the data stored in the SQL database, that key will be used to doubly encrypt it.
+Since performance when accessing storage accounts might be suboptimal for some data, users also have the option to use a Power BI-hosted compute engine to increase performance. In this case, data is redundantly stored in an SQL database that is available for DirectQuery through access by the back-end Power BI system. Data is always encrypted on the file system. If the user provides a key for encrypting the data stored in the SQL database, that key will be used to doubly encrypt it.
 
 When querying using DirectQuery, the encrypted transport protocol HTTPS is used to access the API. All secondary or indirect use of DirectQuery is controlled by the same access controls previously described. Since dataflows are always bound to a workspace, access to the data is always gated by the user's role in that workspace. A user must have at least read access to be able to query the data via any means.
 
@@ -298,7 +298,7 @@ Power BI embedded analytics and its REST APIs support all Power BI network isola
 
 ### AI features
 
-Power BI currently supports two broad categories of AI features in the product today: AI visuals and AI enrichments. The visual-level AI features include capabilities such as Key Influencers, Decomposition Tree, Smart Narrative, Anomaly Detection, R visual, Python visual, Clustering, Forecasting, Q&A, Quick Insights etc. The AI enrichment capabilities include capabilities such as AutoML, Azure Machine Learning, CognitiveServices, R/Python transforms etc.
+Power BI currently supports two broad categories of AI features in the product today: AI visuals and AI enrichments. The visual-level AI features include capabilities such as Key Influencers, Decomposition Tree, Smart Narrative, Anomaly Detection, R visual, Python visual, Clustering, Forecasting, Q&A, Quick Insights, etc. The AI enrichment capabilities include capabilities such as AutoML, Azure Machine Learning, CognitiveServices, R/Python transforms etc.
 
 Most of the features mentioned above are supported in both Shared and Premium workspaces today. However, AutoML and CognitiveServices are supported only in Premium workspaces, due to IP restrictions. Today, with the AutoML integration in Power BI, a user can build and train a custom machine learning (ML) model (for example, Prediction, Classification, Regression, etc.) and apply it to get predictions while loading data into a dataflow defined in a Premium workspace. Additionally, Power BI users can apply several CognitiveServices APIs, such as TextAnalytics and ImageTagging, to transform data before loading it into a dataflow/semantic model defined in a Premium workspace.
 
@@ -387,8 +387,8 @@ When DLP policies for Power BI are set up:
     * Sensitivity labels.
     * Sensitive info types. Over 260 types are supported. Sensitive info type detection relies on Microsoft Purview content scanning.
 * When you encounter a semantic model identified as sensitive, you can see a customized policy tip that helps you understand what you should do.
-* If you are a semantic model owner, you can override a policy and prevent your semantic model from being identified as "sensitive" if you have a valid reason for doing so.
-* If you are a semantic model owner, you can report an issue with a policy if you conclude that a sensitive info type has been falsely identified.
+* If you're a semantic model owner, you can override a policy and prevent your semantic model from being identified as "sensitive" if you have a valid reason for doing so.
+* If you're a semantic model owner, you can report an issue with a policy if you conclude that a sensitive info type has been falsely identified.
 * Automatic risk mitigations, such as alerts to the security admin, can be invoked.
 
 For more information, see [Data loss prevention policies for Fabric and Power BI](/fabric/governance/data-loss-prevention-overview).
@@ -405,7 +405,7 @@ With Defender for Cloud Apps, organizations can gain the following DLP capabilit
 * Work with the Defender for Cloud Apps built-in anomaly detection. The Defender for Cloud Apps anomaly detection policies provide out-of-the-box user behavioral analytics and machine learning so that you're ready from the outset to run advanced threat detection across your cloud environment. When an anomaly detection policy identifies a suspicious behavior, it triggers a security alert.
 * Power BI admin role in the Defender for Cloud Apps portal. Defender for Cloud Apps provides an app-specific admin role that can be used to grant Power BI admins only the permissions they need to access Power BI-relevant data in the portal, such as alerts, users at risk, activity logs, and other Power BI-related information.
 
-See [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) for additional details.
+For additional details, see [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls).
 
 ## Power BI security questions and answers
 
@@ -481,7 +481,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **For Power BI visuals, does Microsoft perform any security or privacy assessment of the custom visual code prior to publishing items to the Gallery?**
 
-* No. It is the customer's responsibility to review and determine whether custom visual code should be relied upon. All custom visual code is operated in a sandbox environment, so that any errant code in a custom visual doesn't adversely affect the rest of the Power BI service.
+* No. It's the customer's responsibility to review and determine whether custom visual code should be relied upon. All custom visual code is operated in a sandbox environment, so that any errant code in a custom visual doesn't adversely affect the rest of the Power BI service.
 
 **Are there other Power BI visuals that send information outside the customer network?**
 
@@ -520,7 +520,7 @@ The following questions are common security questions and answers for Power BI. 
 
 1.	Now, when the client's browser requires customer data, it will send requests to the back-end cluster address with the Microsoft Entra access token in the Authorization header. The Power BI back-end cluster reads the Microsoft Entra access token and validates the signature to ensure that the identity for the request is valid. The Microsoft Entra access token will [have an expiry date set according to Microsoft Entra policies](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#token-lifetime-policies-for-access-saml-and-id-tokens), and to maintain the current session the Power BI Client in the user's browser will make periodic requests to renew the access token before it expires.
 
-![Diagram showing the WFE Authentication sequence.](media/whitepaper-powerbi-security/powerbi-security-whitepaper_08.png)
+![Diagram showing the WFE Authentication sequence.](media/white-paper-powerbi-security/powerbi-security-white-paper-08.png)
 
 ## Additional resources
 

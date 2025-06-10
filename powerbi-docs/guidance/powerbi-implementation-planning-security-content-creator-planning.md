@@ -21,7 +21,7 @@ This security planning article describes strategies for content creators who are
 - **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 - **Content creators and owners**: Self-service BI creators who need to create, publish, secure, and manage content that others consume.
 
-The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
+The series of articles is intended to expand upon the content in the [Power BI security white paper](white-paper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
 
 In an organization, many users are _content creators_. Content creators produce and publish content that's viewed by others. Content creators are the focus of this article.
 
