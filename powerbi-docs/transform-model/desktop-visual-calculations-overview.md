@@ -189,7 +189,7 @@ Again, consider the visual calculation described earlier. The table below shows 
 ### Synonyms
 :::no-loc text="Reset"::: also provides the following synonyms:
 * **:::no-loc text="NONE":::** is the default value. It does not reset the calculation and is equivalent to 0.
-* **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is equivelant to 1.
+* **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is equivalant to 1.
 * **:::no-loc text="LOWESTPARENT":::** performs a relative reset by the immediate parent and is equivalent to -1.
 
 ### Examples of using :::no-loc text="Reset":::
