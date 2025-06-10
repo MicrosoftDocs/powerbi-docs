@@ -7,7 +7,7 @@ ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/02/2025
+ms.date: 06/10/2025
 no-loc: [Copilot]
 ---
 
@@ -17,6 +17,14 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## May 2025 QFE 2
+
+*Version 2.143.1378.0, Released: June 4, 2025*
+ 
+Bug fixes/improvements:
+
+- Addressed regression that resulted in conditional formatting colors being improperly deleted.
+- 
 ## May 2025 QFE 1
 
 *Version 2.143.1204.0, Released: May 28, 2025*
