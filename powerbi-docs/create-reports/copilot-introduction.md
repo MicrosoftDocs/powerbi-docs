@@ -56,7 +56,8 @@ The standalone Copilot can help with the following tasks:
  
 ### Considerations and limitations
 
-Newly purchased capacity or capacity scale-up operations may take up to 24 hours for Copilot to become available for use.
+Newly purchased capacity or capacity scale-up operations may take up to 24 hours for Copilot to recognize and become available for use.
+
 The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
 While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use is not officially supported at this time.
 
@@ -95,7 +96,7 @@ To ensure a seamless experience with Copilot in Power BI, it's important to meet
 The following requirements pertain to all Copilot experiences in Power BI.
 
 - Your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/fundamentals/copilot-enable-fabric).
-- You need to have a F2 capacity or above to be able to use Copilot. 
+- You need to have an F2 capacity or above to be able to use Copilot.
 - Your Fabric capacity needs to be in one of the regions listed in [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
 - If your tenant or capacity is outside the United States or France, Copilot is disabled by default unless your Fabric tenant admin enables the tenant setting called [**Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance**](/fabric/admin/service-admin-portal-copilot) in the Fabric admin portal.
 - Copilot in Microsoft Fabric isn't supported on trial stock-keeping units (SKUs). Only paid SKUs are supported.
@@ -114,7 +115,7 @@ The following requirements pertain to the full-screen standalone Copilot experie
 
 These requirements pertain to using Copilot within Power BI reports, including the Copilot pane experience.
 
-- **Power BI desktop**:
+- **Power BI Desktop**:
   - You need *write access* to a workspace that is on a paid Fabric capacity or Power BI Premium in the Power BI service, where you plan to publish the report. Read more about using [Copilot in Power BI Desktop](copilot-power-bi-desktop.md).
 - **Power BI service**:
   - The report must be located in a workspace linked to either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or a paid [Fabric](/fabric/enterprise/licenses) capacity. [Learn how to check your license type](copilot-create-report-service.md#use-copilot-in-the-power-bi-service-for-the-first-time).
