@@ -1,8 +1,8 @@
 ---
 title: Power BI Add-in for PowerPoint - Admin Info
 description: See information about the Power BI add-in for PowerPoint that Power BI administrators need to be aware of.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

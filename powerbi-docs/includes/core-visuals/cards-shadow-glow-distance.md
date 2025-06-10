@@ -1,7 +1,8 @@
 ---
 title: Distance
 description: Setting - Distance (Cards, Shadow, Distance)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

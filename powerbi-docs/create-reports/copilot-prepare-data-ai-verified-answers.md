@@ -16,8 +16,8 @@ ms.collection: ce-skilling-ai-copilot
 
 # Prepare your data for AI - Verified answers
 
-> [!IMPORTANT]
-> The features mentioned on this page are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
+> [!NOTE]
+> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
 
 Verified answers are human-approved, visual responses in Copilot that are triggered by predefined phrases. Each verified answer includes one or more trigger phrases, a visual, and optional associated filters.
 

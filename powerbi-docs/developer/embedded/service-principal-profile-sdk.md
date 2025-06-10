@@ -1,8 +1,8 @@
 ---
 title: Use the Power BI SDK with service principal profiles
 description: Learn how to use the Power BI SDK to create and set the Power BI client when using a service principal profile.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: mshmordo
 ms.service: powerbi
 ms.subservice: powerbi-developer

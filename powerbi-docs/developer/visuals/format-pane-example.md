@@ -1,8 +1,8 @@
 ---
 title: Customize the format pane in Power BI custom visuals
 description: This article describes how to customize the new Format pane in Power BI custom visuals using the new formatting model
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

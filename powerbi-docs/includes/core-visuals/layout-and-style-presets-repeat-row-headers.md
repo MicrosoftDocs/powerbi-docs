@@ -1,7 +1,8 @@
 ---
 title: Repeat row headers
 description: Setting - Repeat row headers (Layout and style presets, Repeat row headers)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

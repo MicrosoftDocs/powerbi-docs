@@ -1,8 +1,8 @@
 ---
 title: Semantic model modes in the Power BI service
 description: Understand Power BI service semantic model modes, Import, DirectQuery, and Composite, including the rationale for each mode.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: How to apply sensitivity labels in Power BI
 description: Learn how to apply sensitivity labels on your Power BI reports, dashboards, semantic models, dataflows, and .pbix files.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.custom: video-RE4M5Gj

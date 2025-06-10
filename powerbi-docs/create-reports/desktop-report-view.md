@@ -1,8 +1,8 @@
 ---
 title: Work with Report view in Power BI Desktop
 description: Learn how to work with Report view in Power BI Desktop to create any number of report pages with visualizations.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

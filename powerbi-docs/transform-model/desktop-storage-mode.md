@@ -1,8 +1,8 @@
 ---
 title: Use storage mode in Power BI Desktop
 description: Learn how to use storage mode to control whether or not data is cached in-memory for reports in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

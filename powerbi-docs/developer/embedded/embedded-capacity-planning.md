@@ -1,8 +1,8 @@
 ---
 title: Power BI Embedded Analytics Capacity Planning
 description: Determine which capacity to use in Power BI embedded analytics. See how to choose an SKU, assess your capacity load, and automatically resize your capacity.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

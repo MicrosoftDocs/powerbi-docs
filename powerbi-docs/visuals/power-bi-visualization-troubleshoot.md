@@ -1,9 +1,9 @@
 ---
 title: Troubleshoot visualizations in Power BI
 description: Troubleshoot visualizations in Power BI, including common problems and workarounds to overcome known obstacles or potential problems.
-author: JaedenArmstrong
+author: JulCsc
 ms.author: miguelmyers
-ms.reviewer: davidiseminger
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual

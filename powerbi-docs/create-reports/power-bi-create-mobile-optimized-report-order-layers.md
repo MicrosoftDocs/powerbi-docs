@@ -1,8 +1,8 @@
 ---
 title: Rearrange visual layering
 description: Learn how to use the Selection pane to rearrange the layering order of the visuals on the mobile layout canvas.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom:
 ms.service: powerbi

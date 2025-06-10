@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot sign-in issues in Power BI Desktop
 description: Learn about these solutions to common issues for signing in to Power BI Desktop, which arise from proxy authentication errors and non-HTTPS URL redirect errors. 
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

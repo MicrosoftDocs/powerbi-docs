@@ -1,8 +1,8 @@
 ---
 title: Power BI for HoloLens 2 (preview)
 description: View your dashboards and reports in the Power BI for HoloLens 2 app.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

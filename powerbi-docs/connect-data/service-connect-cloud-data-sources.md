@@ -1,8 +1,8 @@
 ---
 title: Connect to cloud data sources in the Power BI service
 description: Learn how to connect to cloud data sources and share connections in the Power BI service.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

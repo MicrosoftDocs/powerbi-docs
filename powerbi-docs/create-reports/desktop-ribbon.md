@@ -1,8 +1,8 @@
 ---
 title: Use the ribbon in Power BI Desktop
 description: Learn how to easily navigate menus and commands with the new ribbon in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

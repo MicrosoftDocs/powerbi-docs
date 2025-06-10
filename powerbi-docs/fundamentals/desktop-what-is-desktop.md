@@ -1,8 +1,8 @@
 ---
 title: What is Power BI Desktop?
 description: Learn about Power BI Desktop and get started creating reports with charts and graphs that you can share with others in your organization.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

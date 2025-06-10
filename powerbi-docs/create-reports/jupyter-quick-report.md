@@ -1,8 +1,8 @@
 ---
 title: Create a quick report in the Jupyter environment
 description: Create a Power BI report quickly in the Jupyter environment using Power BI's visualization capabilities as part of your notebook experience.
-author: mberdugo
-ms.author: monaberdugo
+author: JulCsc
+ms.author: billmath
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer

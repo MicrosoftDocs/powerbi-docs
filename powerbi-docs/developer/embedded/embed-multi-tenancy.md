@@ -1,8 +1,8 @@
 ---
 title: Use service principal profiles to manage customer data in multitenant apps
 description: Create, import, update, and assign multitenant workspaces in embedded analytics using service principal profiles.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

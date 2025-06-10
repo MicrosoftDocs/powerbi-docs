@@ -1,8 +1,8 @@
 ---
 title: Control access to datamarts (preview)
 description: Learn how to control access to datamarts in Power BI, including setting workspace roles, viewer restrictions, and configuring row-level security.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -16,6 +16,8 @@ ms.custom: FY25Q1-Linter
 # Control access to datamarts
 
 This article describes access control to datamarts, including row level security, rules in Power BI Desktop, and how datamarts might become inaccessible or unavailable.
+
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
 
 ## Workspace roles
 
@@ -31,6 +33,7 @@ Assigning users to the various workspace roles provides the following capabiliti
 ## Viewer restrictions
 
 The Viewer role is a more limited role in comparison with the other workspace roles.  In addition to fewer SQL permissions given to viewers, there are more restricted actions.
+
 
 | Feature | Limitation |
 |---|---|

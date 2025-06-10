@@ -1,8 +1,8 @@
 ---
 title: Collaborate with Power BI in Microsoft Teams, Outlook, and Office
 description: Learn how organizations can use Microsoft Teams, Outlook, and Office to collaborate on Power BI content. 
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

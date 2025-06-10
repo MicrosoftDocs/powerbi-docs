@@ -1,8 +1,8 @@
 ---
 title: Use the Analytics pane in Power BI Desktop
 description: Learn how to create dynamic reference lines for visuals using the Analytics pane in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

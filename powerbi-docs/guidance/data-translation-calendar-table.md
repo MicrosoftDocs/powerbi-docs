@@ -1,8 +1,8 @@
 ---
 title: Implement data translations for a calendar table
 description: Learn how to add translation support in multiple-language reports for text-based columns in calendar tables in Power BI.
-author: kfollis   
-ms.author: kfollis
+author: JulCsc   
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to

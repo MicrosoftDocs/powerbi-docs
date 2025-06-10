@@ -1,8 +1,8 @@
 ---
 title: Register external tools in Power BI Desktop
 description: Learn how to register external tools for Power BI Desktop and configure elements of an external tool to fit your needs.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

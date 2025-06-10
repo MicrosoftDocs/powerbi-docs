@@ -6,8 +6,8 @@ ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Troubleshoot charts in Power BI paginated reports (Power BI Report Builder)

@@ -1,7 +1,8 @@
 ---
 title: Enabled
 description: Setting - Enabled (Error bars, Options, Enabled toggle)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

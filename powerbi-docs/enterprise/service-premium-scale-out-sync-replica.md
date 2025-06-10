@@ -1,8 +1,8 @@
 ---
 title: Synchronize a Power BI semantic model scale-out replicas
 description: Learn how to sync a Power BI semantic model replicas when using the Power BI semantic model scale-out feature
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

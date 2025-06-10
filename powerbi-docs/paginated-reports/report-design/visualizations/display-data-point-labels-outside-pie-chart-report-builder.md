@@ -5,8 +5,8 @@ ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: monaraya
 ---
 # Display data point labels outside a pie chart in a Power BI paginated report (Power BI Report Builder)

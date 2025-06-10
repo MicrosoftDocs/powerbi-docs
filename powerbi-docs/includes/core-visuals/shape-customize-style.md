@@ -1,7 +1,8 @@
 ---
 title: Customize style
 description: Setting - Customize style (Cards, Shape, Customize style)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

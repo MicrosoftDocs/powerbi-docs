@@ -1,8 +1,8 @@
 ---
 title: Get your Power BI visuals certified
 description: This article explains the requirements and process to submit a custom visual for certification in Power BI.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

@@ -1,38 +1,47 @@
 ---
-title: "Power BI implementation planning: Workspaces"
-description: "This article introduces the Power BI workspace planning articles."
+title: "Implementation Planning: Workspaces"
+description: "Learn about a series of articles that describe Power BI implementation planning for workspaces inside Microsoft Fabric."
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
 
 # Power BI implementation planning: Workspaces
 
+This overview describes a series of articles that help you plan your implementation of [Microsoft Fabric workspaces](/fabric/fundamentals/workspaces). The articles focus on the Power BI experience inside Fabric.
+
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This workspaces article introduces the Fabric workspace planning articles, which have an emphasis on the Power BI experience. These articles are targeted at multiple audiences:
+As described in each article, the article audience might include:
 
-- **Fabric administrators**: The administrators who are responsible for overseeing Power BI in the organization.
-- **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing data and BI throughout the organization.
-- **Content creators and owners**: Self-service creators who need to create, publish, and manage content in workspaces.
+- **Fabric administrators**: Administrators who are responsible for overseeing the Fabric implementation in the organization.
+- **Center of Excellence (CoE), IT, and business intelligence (BI) teams**: Teams that are responsible for overseeing the use of data and BI in the organization, and for supporting self-service users throughout the organization.
+- **Content creators and owners**: Self-service users who create, publish, and manage content in workspaces.
 
-Proper workspace planning is an integral part of making an implementation successful. Inadequate workspace planning can lead to less user flexibility and inferior workarounds for organizing and securing content.
+Comprehensive workspace planning is an integral part of a successful Fabric workspace implementation. Gaps in workspace planning can reduce user flexibility and lead to user workarounds in organizing and securing content.
 
-Fundamentally, a [workspace](/fabric/get-started/workspaces) is a container in the Fabric portal for storing and securing content. Primarily, workspaces are designed for content creation and collaboration.
+A _workspace_ is a container in the Fabric portal where users store and secure content. Workspaces are primarily designed for content creation and collaboration.
 
 > [!NOTE]
-> The concept of a workspace originated in Power BI. With Fabric, the purpose of a workspace has become broader. The result is that a workspace can now contain items from one or more different [Fabric experiences](/fabric/get-started/fabric-terminology) (also known as workloads). Even though the content scope has become broader than Power BI, most of the workspace planning activities described in these articles can be applied to Fabric workspace planning.
+> The concept of a workspace originated in Power BI. In Fabric, the purpose of a workspace broadens. A Fabric workspace can contain items from more than one [Fabric experience](/fabric/get-started/fabric-terminology) (also called a _workload_). Although the scope of content in a Fabric workspace is broader than in Power BI, you can apply most of the implementation planning in these articles to planning your Fabric workspaces.
 
-The workspace planning content is organized into the following articles:
+## Articles
 
-- **[Tenant-level workspace planning](powerbi-implementation-planning-workspaces-tenant-level-planning.md)**: Strategic decisions and actions that affect all workspaces in the tenant.
-- **[Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md)**: Tactical decisions and actions to take for each workspace.
+The workspace planning content is organized in the following articles:
 
-## Related content
+- **[Tenant-level workspace planning](powerbi-implementation-planning-workspaces-tenant-level-planning.md)**: This article describes strategic decisions and actions you take that affect all workspaces in the tenant.
 
-In the [next article](powerbi-implementation-planning-workspaces-tenant-level-planning.md) in this series, learn about tenant-level workspace planning.
+   _Strategic decisions_ cover goals and objectives that you have for your organization's implementation.
+- **[Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md)**: This article describes tactical decisions and actions you take for each workspace.
+
+   _Tactical decisions_ include specific implementation plans that support your organization's long-term implementation strategy.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Power BI implementation planning: Workspaces at the tenant level](powerbi-implementation-planning-workspaces-tenant-level-planning.md)

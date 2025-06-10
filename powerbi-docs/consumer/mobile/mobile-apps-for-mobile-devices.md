@@ -1,8 +1,8 @@
 ---
 title: What are the Power BI mobile apps?
 description: Learn how to view your Power BI content on your mobile device to keep up with your data on premises or in the cloud.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview

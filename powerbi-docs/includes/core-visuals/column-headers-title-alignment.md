@@ -1,7 +1,8 @@
 ---
 title: Title alignment
 description: Setting - Title alignment (Column headers, Title alignment)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

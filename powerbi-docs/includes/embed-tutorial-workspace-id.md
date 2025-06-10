@@ -2,8 +2,8 @@
 title: Embedded analytics tutorial for getting the workspace ID
 description: Get the workspace ID for the embedded analytics tutorials.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 12/17/2023
 ms.custom: include file

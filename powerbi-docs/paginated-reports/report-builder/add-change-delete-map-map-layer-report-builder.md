@@ -7,8 +7,8 @@ ms.subservice: report-builder
 
 
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Add, change, or delete a map or map layer in a Power BI paginated report (Power BI Report Builder)

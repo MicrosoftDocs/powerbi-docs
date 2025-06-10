@@ -1,7 +1,8 @@
 ---
 title: Selection
 description: Setting - Selection (Grid, Border, Selection)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

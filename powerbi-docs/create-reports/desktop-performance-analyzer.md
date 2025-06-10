@@ -1,8 +1,8 @@
 ---
 title: Use Performance Analyzer to examine report element performance in Power BI Desktop
 description: Find out how visuals and report elements are performing in terms of resource usage and responsiveness.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

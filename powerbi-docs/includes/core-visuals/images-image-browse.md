@@ -1,7 +1,8 @@
 ---
 title: Browse…
 description: Setting - Browse… (Images, Image, Browse…)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

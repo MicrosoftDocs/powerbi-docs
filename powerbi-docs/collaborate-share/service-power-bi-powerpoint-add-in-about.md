@@ -1,8 +1,8 @@
 ---
 title: About Storytelling with Power BI in PowerPoint
 description: Learn about enhancing data storytelling in PowerPoint with live, interactive Power BI data using the Power BI add-in for PowerPoint.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

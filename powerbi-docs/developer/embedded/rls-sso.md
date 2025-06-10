@@ -1,8 +1,8 @@
 ---
 title: Use row-level security with token based identities
 description: Learn about embedding single Power BI content within your application using token based, single sign-on (SSO) identities.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-developer

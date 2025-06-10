@@ -1,7 +1,8 @@
 ---
 title: Open the Retail Analysis Sample PBIX file (Power BI Service)
 description: Prerequisite - Open the Retail Analysis Sample PBIX file
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

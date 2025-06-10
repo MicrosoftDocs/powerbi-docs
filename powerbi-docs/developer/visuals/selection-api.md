@@ -1,8 +1,8 @@
 ---
 title: Power BI visual data point selections
 description: Learn how to use the selection manager to add data point selections to Power BI visuals and make them interactive.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: What is Power BI?
 description: "Overview of Power BI and how the different parts fit together: Power BI Desktop, the Power BI service, Power BI Mobile, Power BI Report Server, and Power BI Embedded."
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.search.form: product-power-bi

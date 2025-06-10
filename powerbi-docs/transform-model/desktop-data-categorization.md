@@ -1,8 +1,8 @@
 ---
 title: Data categorization in Power BI Desktop
 description: Learn about data categorization and how to specify data categories in Power BI Desktop for visualization.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

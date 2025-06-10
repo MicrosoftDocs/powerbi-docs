@@ -1,7 +1,8 @@
 ---
 title: All padding
 description: Setting - All padding (Small multiples, Layout, All padding)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

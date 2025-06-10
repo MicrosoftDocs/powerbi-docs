@@ -1,8 +1,8 @@
 ---
 title: Testing submissions of Power BI custom visuals
 description: Learn how to perform test cases that your Power BI custom visual must pass before publishing it on AppSource.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

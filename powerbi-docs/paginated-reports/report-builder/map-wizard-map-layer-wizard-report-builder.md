@@ -7,8 +7,8 @@ ms.subservice: report-builder
 
 
 ms.topic: reference
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Map Wizard and Map Layer Wizard (Power BI Report Builder)

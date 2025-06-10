@@ -17,9 +17,6 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-> [!IMPORTANT]
-> The features mentioned on this page are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
-
 Copilot lets you create insightful summaries about their reports. Copilot takes the visuals that were curated and built by report authors and generates summaries, overviews, insights and answers grounded in the report data. You can access these summaries in the Copilot report pane or in the standalone Copilot agent in Power BI. 
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
@@ -178,6 +175,7 @@ The following are limitations and considerations across both experiences (also s
 - Copilot summaries only consider visuals with less than 30K rows of data. If more data is included in visuals, Copilot answers using the semantic model itself, not the report visual.
 - Copilot summaries may not work accurately on table/matrix visuals with more than 500 rows. If the visual surpasses 100 rows, Copilot answers using the semantic model itself, not the report visual.
 - Answering specific report questions isn't yet supported in the standalone Copilot experience.
+- The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
 
 ## Send feedback
 

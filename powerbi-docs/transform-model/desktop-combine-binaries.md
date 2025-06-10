@@ -1,8 +1,8 @@
 ---
 title: Combine files (binaries) in Power BI Desktop
 description: Learn how to combine imported binary file data sources in Power BI Desktop using the Power Query Editor.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

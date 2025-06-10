@@ -5,8 +5,8 @@ ms.date: 03/13/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Set the locale for a Power BI paginated report or text box (Power BI Report Builder)

@@ -1,8 +1,8 @@
 ---
 title: Enable sensitivity labels in Fabric and Power BI
 description: Learn how Fabric administrators can enable sensitivity labels in Fabric.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to

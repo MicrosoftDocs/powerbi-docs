@@ -1,8 +1,8 @@
 ---
 title: Understand paginated report data in Power BI Report Builder
 description: Learn how to design a paginated report in Power BI Report Builder by creating data sources and datasets that represent the underlying report data.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: report-builder

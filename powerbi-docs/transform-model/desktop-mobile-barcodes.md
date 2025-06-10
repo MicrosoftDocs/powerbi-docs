@@ -1,8 +1,8 @@
 ---
 title: Tag barcode fields in Power BI Desktop
 description: Learn how to tag a barcode field in your model in Power BI Desktop, so you can use your mobile app to scan barcodes to get filtered data on your iOS and Android devices.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to

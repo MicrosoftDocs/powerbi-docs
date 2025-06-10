@@ -1,8 +1,8 @@
 ---
 title: Analyzing datamarts (preview)
 description: Learn how to analyze your datamarts using various tools such as the Datamart editor and SQL Query Editor, and get insights into your data effectively.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -15,6 +15,8 @@ LocalizationGroup: Data from files
 # Analyzing datamarts
 
 You can analyze your datamarts with multiple tools, including the **Datamart editor** and the **SQL Query Editor** among others. This article describes how to analyze your datamarts with those tools, and suggestions on how best to see the information you need.
+
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
 
 ## Analyze inside the Datamart editor
 

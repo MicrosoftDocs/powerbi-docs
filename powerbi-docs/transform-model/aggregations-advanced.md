@@ -1,12 +1,12 @@
 ---
 title: "User-defined aggregations"
 description: Describes using manually configured aggregations to speed up data analysis over large semantic models.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 04/26/2024
+ms.date: 05/28/2025
 LocalizationGroup: Transform and shape data
 ---
 
@@ -16,9 +16,9 @@ Aggregations in Power BI can improve query performance over large DirectQuery se
 
 ## Creating aggregation tables
 
-Depending on the data source type, an aggregations table can be created at the data source as a table or view, native query. For greatest performance create an aggregations table as an import table created in Power Query. You then use the Manage aggregations dialog in Power BI Desktop to define aggregations for aggregation columns with summarization, detail table, and detail column properties.
+Depending on the data source type, an aggregations table can be created at the data source as a table or view, native query. For greatest performance, create an aggregations table as an import table created in Power Query. You then use the Manage aggregations dialog in Power BI Desktop to define aggregations for aggregation columns with summarization, detail table, and detail column properties.
 
-Dimensional data sources, like data warehouses and data marts, can use [relationship-based aggregations](#aggregation-based-on-relationships). Hadoop-based big-data sources often [base aggregations on GroupBy columns](#aggregation-based-on-groupby-columns). This article describes typical Power BI data modeling differences for each type of data source.
+Dimensional data sources, like data warehouses and data marts, can use [relationship-based aggregations](#aggregation-based-on-relationships). Hadoop-based large-data sources often [base aggregations on GroupBy columns](#aggregation-based-on-groupby-columns). This article describes typical Power BI data modeling differences for each type of data source.
 
 ### Manage aggregations
 
@@ -107,7 +107,7 @@ The following table shows the aggregations for the **Sales Agg** table.
 ![Aggregations for the Sales Agg table](media/aggregations-advanced/aggregations-table_01.png)
 
 > [!NOTE]
-> The **Sales Agg** table, like any table, has the flexibility of being loaded in a variety of ways. The aggregation can be performed in the source database using ETL/ELT processes, or by the [M expression](/powerquery-m/power-query-m-function-reference) for the table. The aggregated table can use Import storage mode, with or without [Incremental refresh for semantic models](../connect-data/incremental-refresh-overview.md), or it can use DirectQuery and be optimized for fast queries using [columnstore indexes](/sql/relational-databases/indexes/columnstore-indexes-overview). This flexibility enables balanced architectures that can spread query load to avoid bottlenecks.
+> The **Sales Agg** table, like any table, has the flexibility of being loaded in various ways. The aggregation can be performed in the source database using ETL/ELT processes, or by the [M expression](/powerquery-m/power-query-m-function-reference) for the table. The aggregated table can use Import storage mode, with or without [Incremental refresh for semantic models](../connect-data/incremental-refresh-overview.md), or it can use DirectQuery and be optimized for fast queries using [columnstore indexes](/sql/relational-databases/indexes/columnstore-indexes-overview). This flexibility enables balanced architectures that can spread query load to avoid bottlenecks.
 
 Changing the storage mode of the aggregated **Sales Agg** table to **Import** opens a dialog box saying that the related dimension tables can be set to storage mode *Dual*. 
 
@@ -232,7 +232,7 @@ Aggregation precedence allows multiple aggregation tables to be considered by a 
 
 The following example is a [composite model](desktop-composite-models.md) containing multiple sources:
 
-- The **Driver Activity** DirectQuery table contains over a trillion rows of IoT data sourced from a big-data system. It serves drillthrough queries to view individual IoT readings in controlled filter contexts.
+- The **Driver Activity** DirectQuery table contains over a trillion rows of IoT data sourced from a large-data system. It serves drillthrough queries to view individual IoT readings in controlled filter contexts.
 - The **Driver Activity Agg** table is an intermediate aggregation table in DirectQuery mode. It contains over a billion rows in Azure Synapse Analytics (formerly SQL Data Warehouse) and is optimized at the source using columnstore indexes.
 - The **Driver Activity Agg2** Import table is at a high granularity, because the group-by attributes are few and low cardinality. The number of rows could be as low as thousands, so it can easily fit into an in-memory cache. These attributes happen to be used by a high-profile executive dashboard, so queries referring to them should be as fast as possible.
 

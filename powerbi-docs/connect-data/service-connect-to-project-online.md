@@ -1,8 +1,8 @@
 ---
 title: Connect to Project Online with Power BI
 description: Project Online for Power BI
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-template-apps

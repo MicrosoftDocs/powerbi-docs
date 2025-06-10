@@ -1,8 +1,8 @@
 ---
 title: Use custom format strings in Power BI Desktop
 description: Learn how to use custom format strings in Power BI Desktop to customize how fields appear in visuals.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
