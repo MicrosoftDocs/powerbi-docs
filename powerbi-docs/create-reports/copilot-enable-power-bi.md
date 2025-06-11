@@ -70,9 +70,9 @@ Enabling this setting allows users to access the standalone, cross-item Power BI
 
 ## Only show AI-prepped items in the standalone Copilot in Power BI experience (preview) 
 
-Enabling this setting limits the standalone Power BI Copilot experience to searching for content that has been marked as Prepped for AI. See [Copilot search](power-bi/create-reports/copilot-search-new-content). 
+Enabling this setting limits the standalone Power BI Copilot experience to [searching ](/power-bi/create-reports/copilot-search-new-content)for content that has been marked as Prepped for AI.
 
-
+![limit-to-prepped](media/copilot-enable-power-bi/limit-to-prepped.png)
 
 > [!IMPORTANT]
 > The setting is delegated to workspace admins to determine when workspaces have sufficient high-value content to be broadly searched by Copilot.
