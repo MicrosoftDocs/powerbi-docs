@@ -299,7 +299,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
 * You can't change the sort order for visual calculations.
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
-* Live connections to SQL Server Analysis Services aren't supported.
+* Live connections to SQL Server Analysis Services versions released before version 2025 aren't supported.
 * Although you can use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations, they have some limitations.
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
 * You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
