@@ -102,5 +102,5 @@ Read about [requirements to use the standalone Copilot experience](copilot-intro
 
 ## Considerations and limitations
 
-The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
+The standalone Copilot experience isn't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West.
 
