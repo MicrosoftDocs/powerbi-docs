@@ -1,8 +1,8 @@
 ---
 title: Test single sign-on (SSO) configuration
 description: Test your single sign-on (SSO) configuration for Power BI gateways.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways

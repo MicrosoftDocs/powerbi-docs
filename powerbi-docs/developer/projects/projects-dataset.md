@@ -1,7 +1,7 @@
 ---
 title: Power BI Desktop project semantic model folder
 description: Learn about the Power BI Desktop project semantic model folder.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ruiromano
 ms.service: powerbi
@@ -40,19 +40,19 @@ Not every project semantic model folder includes all of the files and subfolders
 
 Contains semantic model settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-For more information, see the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/localSettings.md).
+For more information, see the [localSettings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/localSettings).
 
 #### .pbi\editorSettings.json
 
 Contains semantic model editor settings saved as part of the semantic model definition for use across users and environments.
 
-For more information, see the [editorSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/editorSettings.md).
+For more information, see the [editorSettings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/editorSettings).
 
 #### .pbi\cache.abf
 
 An Analysis Services Backup (ABF) file containing a local cached copy of the model and data when it was last edited. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-Power BI Desktop can open a project without a cache.abf file. In that case, it opens the report connected to a model with its entire definition but without data. If a cache.abf exists, Power BI Desktop loads the data and overwrites the model definition with the content in model.bim.
+Power BI Desktop can open a project without a cache.abf file. In that case, it opens the report connected to a model with its entire definition but without data. If a cache.abf exists, Power BI Desktop loads the data and overwrites the model definition with the semantic model metadata in the project.
 
 #### .pbi\unappliedChanges.json
 
@@ -64,11 +64,11 @@ When you select **Apply later**, the unapplied changes are saved into the unappl
 
 :::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
 
-If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop and there's a previous unappliedChanges.json file, your changes are lost and replaced by the queries in unappliedChanges.json when those changes are applied.
+If you select **Apply changes**, Power BI Desktop overwrites the queries in semantic model metadata with the queries from unappliedChanges.json. If you edited queries outside of Power BI Desktop and there's a previous unappliedChanges.json file, your changes are lost and replaced by the queries in unappliedChanges.json when those changes are applied.
 
 The unappliedChanges.json file is automatically incorporated into the semantic model definition and saved in Git by default. This allows you to commit your ongoing work to the development branch, serving as a backup and making it accessible to other team members. However, you can exclude this file from Git's tracking, preventing unfinished query work from affecting other developers.
 
-For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
+For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/unappliedChanges).
 
 #### definition.pbism
 
@@ -81,7 +81,7 @@ This file also specifies the supported semantic model definition formats through
 | 1.0      | Semantic model definition must be stored as TMSL in the model.bim file. |
 | 4.0 or above | Semantic model definition can be stored as TMSL (model.bim file) or TMDL (\definition folder). |
 
-For more information, see the [definition.pbism schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
+For more information, see the [definition.pbism schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/definitionProperties).
 
 
 #### model.bim

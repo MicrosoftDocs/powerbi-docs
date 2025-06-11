@@ -1,8 +1,8 @@
 ---
 title: Configure mobile app access to Report Server remotely
 description: Learn how to configure the mobile apps remotely for your report server.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

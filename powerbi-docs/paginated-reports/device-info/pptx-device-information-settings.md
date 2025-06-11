@@ -5,8 +5,8 @@ ms.date: 06/28/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ---
 # PPTX device information settings for Power BI paginated reports
 

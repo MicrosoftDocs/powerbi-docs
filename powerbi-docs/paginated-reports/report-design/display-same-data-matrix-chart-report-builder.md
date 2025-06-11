@@ -5,8 +5,8 @@ ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Display the same data on a matrix and a chart in a paginated report (Power BI Report Builder)

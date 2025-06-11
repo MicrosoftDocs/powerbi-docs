@@ -1,8 +1,8 @@
 ---
 title: Use Tabular Model Definition Language (TMDL) view in Power BI Desktop (preview)
 description: Learn how to use TMDL view to see and work with semantic model metadata in a visual format in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -286,11 +286,10 @@ createOrReplace
 
 TMDL view is currently in preview, so keep the following limitations in mind:
 
-* Not all modeling changes are supported. During preview, each *Apply* change undergoes the same validations that occur when opening a Power BI project (PBIP). Refer to the [Model Authoring article](../developer/projects/projects-overview.md) (File change column) for a list of supported changes. Executing unsupported changes may result in unexpected behaviors.
+* You can use the TMDL view to edit any object or property within a semantic model. However, incomplete or incorrect modifications may lead to unexpected behavior. For more guidance on these operations, refer to the [Model Authoring article](../developer/projects/projects-overview.md#model-authoring).
 * The *Command palette* displays some commands that aren't currently supported.
 * Setting up the *initial* Git integration *from* the workspace won't include TMDL View scripts saved in published semantic model. Learn more in the [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo) article.
 * You can't script model explorer groups such as Measures, Columns, so on.
-* TMDL view is unavailable when editing [Direct Lake semantic models](/fabric/get-started/direct-lake-power-bi-desktop).
 
 
 ## Related content

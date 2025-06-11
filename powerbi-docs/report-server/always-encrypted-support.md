@@ -1,8 +1,8 @@
 ---
 title: Always Encrypted in Power BI Report Server
 description: This article spells out Always Encrypted support in Power BI Report Server when using the data source types Microsoft SQL Server and Microsoft Azure SQL Database.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: cfinlan
 ms.service: powerbi
 ms.subservice: powerbi-report-server

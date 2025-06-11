@@ -1,8 +1,8 @@
 ---
 title: Data sources in Power BI Desktop
 description: See the available data sources in Power BI Desktop, how to connect to them, and how to export or use data sources as PBIDS files.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

@@ -18,9 +18,6 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-> [!IMPORTANT]
-> The features mentioned on this page are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
-
 This article is for organizations who would like to enable and start using Copilot in Microsoft Fabric, specifically in Power BI. We present how to enable Copilot in your tenant, start using Copilot in the Power BI service, and start using Copilot in Power BI Desktop.
 
 For more information on other Fabric workloads, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview). Note, you must have Fabric admin privileges to enable Copilot.
@@ -90,7 +87,7 @@ Check your license type in the **Workspace settings**.
 
     You can see which license mode is applied to your workspace under **Premium**. If license modes are grayed out, this workspace doesn't have access to the appropriate capacity.
 
-When you're using the standalone Copilot experience and don't have access to a Fabric Copilot capacity, you need to select a workspace that has the required capacity for Copilot.
+When you're using the standalone Copilot experience and don't have access to a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity), you need to select a workspace that has the required capacity for Copilot.
 
 :::image type="content" source="media/copilot-enable-power-bi/enable-copilot-select-workspace.png" alt-text="Screenshot showing the option to select a workspace for enabling Copilot in Power BI." lightbox="media/copilot-enable-power-bi/enable-copilot-select-workspace.png":::
 
@@ -100,7 +97,7 @@ Selecting the **Select a workspace** button lists workspaces you have access to 
 
 ## Use Copilot in Power BI Desktop
 
-To use Copilot in Power BI Desktop, if you don't have access to a Fabric Copilot capacity, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
+To use Copilot in Power BI Desktop, if you don't have access to a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity), you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
 > [!NOTE]
 > The Copilot button always appears in the ribbon in Power BI Desktop. To be able to use Copilot, you must be signed in and have access to a workspace that is in Premium or Fabric capacity.
@@ -129,7 +126,7 @@ When you use Copilot in Power BI Desktop for the first time, you're asked to pic
 
 ## Fabric Copilot capacity
 
-As an alternative to using a specific workspace capacity, you can use a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity). Fabric Copilot capacity enables users to charge Copilot usage from Power BI Desktop, Pro, and Premium per-user workspaces to a single capacity. Learn more about setting up a Fabric Copilot capacity.
+As an alternative to using a specific workspace capacity, you can use a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity). Fabric Copilot capacity enables users to charge Copilot usage from Power BI Desktop, Pro, and Premium per-user workspaces to a single capacity. Learn more about setting up a [Fabric Copilot capacity.](/fabric/enterprise/fabric-copilot-capacity)
 
 Once a user is assigned to a Fabric Copilot capacity, no other steps are required to use any of the Copilot experiences.
 
@@ -142,7 +139,8 @@ To use Copilot for Power BI, you must have access to a Premium Power BI capacity
 
 ## Considerations and limitations
 
-The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
+- The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
+- Copilot isn't currently supported for Private Link or closed network environments.
 
 ## Send feedback
 

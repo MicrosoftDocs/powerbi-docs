@@ -1,20 +1,20 @@
 ---
-title: Embed content in your Power BI embedded analytics application for your organization
+title: Embed Content in Your Power BI Embedded Analytics Application for Your Organization
 description: Learn how to integrate Power BI into your application to provide insights for your organization by using embedded analytics software and tools.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: ''
-ms.date: 01/30/2024
+ms.date: 06/03/2025
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
 # Tutorial: Embed Power BI content using a sample *embed for your organization* application
 
-Power BI embedded analytics allows you to embed Power BI content, such as reports, dashboards and tiles, into your application.
+Power BI embedded analytics allows you to embed Power BI content, such as reports, dashboards, and tiles, into your application.
 
 In this tutorial, you'll learn how to:
 
@@ -28,7 +28,7 @@ To use your application, your users will need to sign in to Power BI.
 The embed for your organization solution is typically used by enterprises and large organizations, and is intended for internal users.
 
 > [!IMPORTANT]
-> If you are embedding content for a national/regional cloud, the first few steps of this tutorial are different. See [Embed content for national/regional clouds](embed-sample-for-customers-national-clouds.md) for details.
+> If you're embedding content for a national/regional cloud, the first few steps of this tutorial are different. See [Embed content for national/regional clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 
@@ -39,7 +39,7 @@ This tutorial includes instructions for configuring an *embed for your organizat
 * React TypeScript
 
 >[!NOTE]
->The *.NET Core* and the *.NET Framework* samples allow the end user to view any Power BI dashboard, report or tile they have access to in the Power BI service. The *React TypeScript* sample lets you embed only one report that your end user already has access to in the Power BI service.
+>The *.NET Core* and the *.NET Framework* samples allow the end user to view any Power BI dashboard, tile, or report they have access to in the Power BI service. The *React TypeScript* sample lets you embed only one report that your end user already has access to in the Power BI service.
 
 The code samples support the following browsers:
 
@@ -55,21 +55,23 @@ Before you start this tutorial, verify that you have both the following Power BI
 
   * Your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md).
 
-    * One of the following licenses:
+  * One of the following licenses:
 
-      * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md)
+    * Microsoft Fabric
 
-      * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml)
+    * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md)
+
+    * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml)
 
     >[!NOTE]
-    >To [move to production](move-to-production.md) you'll need one of the following configurations:
+    >To [move your embedded app to production](move-to-production.md), you'll need one of the following configurations:
     >* All users with Pro licenses.
     >* All users with PPU licenses.
-    >* A SKU that's equivalent or higher to a [F64 SKU](/fabric/enterprise/licenses#capacity-and-skus). This configuration allows all users to have free licenses.
+    >* A SKU that's equivalent to or higher than an [F64 SKU](/fabric/enterprise/licenses#capacity-and-skus). This configuration allows all users to have free licenses.
 
 * **Code dependencies**
 
-    # [.NET Core](#tab/net-core)
+  # [.NET Core](#tab/net-core)
 
   * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
 
@@ -85,7 +87,7 @@ Before you start this tutorial, verify that you have both the following Power BI
 
   * [Visual Studio](https://visualstudio.microsoft.com/)
 
-   # [React TypeScript](#tab/react)
+  # [React TypeScript](#tab/react)
 
   * A text editor
 
@@ -98,13 +100,9 @@ Before you start this tutorial, verify that you have both the following Power BI
 To create an *embed for your organization* sample app, follow these steps:
 
 1. [Register a Microsoft Entra application](#step-1---register-an-azure-ad-application).
-
 2. [Create a Power BI workspace](#step-2---create-a-power-bi-workspace).
-
 3. [Create and publish a Power BI report](#step-3---create-and-publish-a-power-bi-report).
-
 4. [Get the embedding parameter values](#step-4---get-the-embedding-parameter-values).
-
 5. [Embed your content](#step-5---embed-your-content).
 
 <a name='step-1---register-an-azure-ad-application'></a>
@@ -158,7 +156,7 @@ To embed your content, you'll need to obtain a few parameter values. The paramet
 ### Report ID
 
 >[!TIP]
->**Applies to:** :::image type="icon" source="../../media/no.png":::.NET Core :::image type="icon" source="../../media/no.png":::.NET Framework :::image type="icon" source="../../media/yes.png":::ReactTypeScript
+>**Applies to:** :::image type="icon" source="../../media/no.png":::.NET Core :::image type="icon" source="../../media/no.png":::.NET Framework :::image type="icon" source="../../media/yes.png":::React TypeScript
 
 [!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
@@ -177,7 +175,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     * React-TS
 
     >[!NOTE]
-    >The *embed for your organization* sample applications only support the previously listed frameworks. The *Java*, *Node JS* and *Python* sample applications, only support the *[embed for your customers](embed-sample-for-customers.md)* solution.
+    >The *embed for your organization* sample applications only support the previously listed frameworks. The *Java*, *Node JS*, and *Python* sample applications only support the *[embed for your customers](embed-sample-for-customers.md)* solution.
 
 # [.NET Core](#tab/net-core)
 
@@ -190,7 +188,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 5. In *Platform configurations*, open your *Web* platform and in the **Redirect URIs** section, add `https://localhost:5000/signin-oidc`.
 
     > [!NOTE]
-    >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, choose **Web**.
+    >If you don't have a **Web** platform, select **Add a platform**. Then, in the **Configure platforms** window, choose **Web**.
 
 6. Save your changes.
 
@@ -230,14 +228,14 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
-5. In *Platform configurations*, configure the following options:
+5. In **Platform configurations**, configure the following options:
 
-    1. In your *Web* platform, in the **Redirect URIs** section, add `https://localhost:44300/`.
+    1. In your **Web** platform, in the **Redirect URIs** section, add `https://localhost:44300/`.
 
         > [!NOTE]
-        >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
+        >If you don't have a **Web** platform, select **Add a platform**. Then, in the **Configure platforms** window, select **Web**.
     
-    2. In *Implicit grant and hybrid flows*, enable the **ID tokens** option.
+    2. In **Implicit grant and hybrid flows**, enable the **ID tokens** option.
     
 6. Save your changes.
 
@@ -251,9 +249,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 3. Open **Web.config** and fill in the following parameter values:
 
-    * `clientId` - Use the [client ID](#client-id) GUID
+    * `clientId` - Use the [client ID](#client-id) GUID.
 
-    * `clientSecret` - Use the [client secret](#client-secret)
+    * `clientSecret` - Use the [client secret](#client-secret).
 
 ### Run the sample app
 
@@ -279,7 +277,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     2. In *Implicit grant and hybrid flows*, enable both options:
         * **Access tokens**
         * **ID tokens**
-    
+
 6. Save your changes.
 
 :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot of the Azure portal window, which shows the Microsoft Entra app authentication configurations and the web redirect URI set for localhost 3000.":::
@@ -290,11 +288,11 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 2. Using a text editor, open the **Config.ts** file and fill in the following parameter values:
 
-    * `clientId` - Use the [client ID](#client-id) GUID
+    * `clientId` - Use the [client ID](#client-id) GUID.
 
-    * `workspaceId` - Use the [workspace ID](#client-secret)
+    * `workspaceId` - Use the [workspace ID](#client-secret).
 
-    * `reportId` - Use the [report ID](#report-id)
+    * `reportId` - Use the [report ID](#report-id).
 
 3. Save the file.
 
@@ -321,11 +319,10 @@ After configuring and running the *embed for your customers* sample application,
 
 ## Update user permissions
 
-Users need permission to access the Power BI folder the report is in. When you grant a user permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [RefreshUser Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions) at startup. This API call will refresh the permissions and avoid authorization failures for users with newly granted permissions.
+Users need permission to access the Power BI folder the report is in. When you grant a user permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [Refresh User Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions) at startup. This API call refreshes the permissions and avoids authorization failures for users with newly granted permissions.
 
 ## Related content
 
 * [Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)
 * [Embed paginated reports](embed-paginated-reports.md)
-
-[Ask the Power BI Community](https://community.powerbi.com/)
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

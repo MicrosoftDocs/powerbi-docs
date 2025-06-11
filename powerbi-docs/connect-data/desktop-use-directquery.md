@@ -1,8 +1,8 @@
 ---
 title: Use DirectQuery in Power BI Desktop
 description: See how to create and publish reports that use DirectQuery data sources, and some benefits, limitations, and recommendations.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

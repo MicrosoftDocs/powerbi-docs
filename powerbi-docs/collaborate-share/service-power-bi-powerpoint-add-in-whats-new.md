@@ -1,8 +1,8 @@
 ---
 title: What's new in the Power BI add-in for PowerPoint
 description: Learn about new features recently added to the Power BI add-in for PowerPoint.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -137,7 +137,7 @@ With exciting, recently released features you can now:
 
 ### National cloud support
 
-The Power BI add-in for PowerPoint is now supported in national/regional clouds as an admin-managed add-in. For more information, see [Deploying the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-nationalregional-clouds).
+The Power BI add-in for PowerPoint is now supported in national/regional clouds as an admin-managed add-in. For more information, see [Deploy the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploy-the-add-in-in-nationalregional-clouds).
 
 ## February 2023
 

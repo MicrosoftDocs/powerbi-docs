@@ -1,7 +1,7 @@
 ---
 title: Embed Power BI content in an embedded analytics application with service principal and an application secret
 description: Learn how to authenticate for embedded analytics by using a Microsoft Entra application service principal and an application secret.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi

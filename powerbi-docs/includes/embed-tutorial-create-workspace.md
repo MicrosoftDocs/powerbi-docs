@@ -2,7 +2,7 @@
 title: Embedded analytics tutorial create a workspace
 description: Create a Power BI workspace for the embedded analytics tutorials.
 services: powerbi
-author: mberdugo
+author: JulCsc
 ms.author: billmath
 ms.topic: include
 ms.date: 12/26/2024
@@ -19,4 +19,4 @@ To create a workspace, do the following:
 1. Sign in to Fabric.
 1. Select **Workspaces**.
 1. Select **+ New workspace**.
-1. Name your workspace and select **Save**.
+1. Name your workspace and select **Apply**.

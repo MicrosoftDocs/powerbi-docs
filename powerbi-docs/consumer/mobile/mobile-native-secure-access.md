@@ -1,8 +1,8 @@
 ---
 title: 'Protect Power BI data with device native identification'
 description: Learn how to configure your iOS and Android apps to require additional identification before you can access your Power BI data
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to

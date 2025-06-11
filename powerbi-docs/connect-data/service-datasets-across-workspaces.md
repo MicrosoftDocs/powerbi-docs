@@ -1,20 +1,18 @@
 ---
-title: Introduction to semantic models across workspaces
+title: Introduction to Semantic Models Across Workspaces
 description: Learn about semantic model sharing and discovery for workspaces. Users across the organization can build reports based on your semantic model in their own workspaces.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: overview
-ms.date: 05/01/2025
+ms.date: 06/04/2025
 LocalizationGroup: Share your work
 ---
 # Introduction to semantic models across workspaces
 
 Business intelligence is a collaborative activity. It's important to establish standardized semantic models that can be the *one source of truth*. Then discovering and reusing those standardized semantic models is key. When expert data modelers in your organization create and share optimized semantic models, report creators can start with those semantic models to build accurate reports. Then your organization has consistent data for making decisions, and a healthy data culture.
-
-:::image type="content" source="media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png" alt-text="Screenshot shows semantic models where you can select a shared semantic model." lightbox="media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png":::
 
 In Power BI, semantic model creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md). Semantic model creators can also *certify* or *promote* semantic models so others can discover them. That way, report authors know which semantic models are high quality and official, and they can use those semantic models wherever they author in Power BI. Administrators have a new tenant setting to [govern the use of semantic models across workspaces](service-datasets-admin-across-workspaces.md).
 
@@ -27,7 +25,7 @@ Building reports based on semantic models in different workspaces, and copying r
 
 ## Discover semantic models
 
-When you build a report on top of an existing semantic model, the first step is to connect to the semantic model, either in the Power BI service or Power BI Desktop. Read about [discovering semantic models from different workspaces](service-datasets-discover-across-workspaces.md)
+When you build a report on top of an existing semantic model, the first step is to connect to the semantic model, either in the Power BI service or with Power BI Desktop. Read about [discovering semantic models from different workspaces](service-datasets-discover-across-workspaces.md)
 
 ## Copy a report
 
@@ -53,7 +51,7 @@ The specific features and experiences built on shared semantic model capabilitie
 
 ## Considerations and limitations
 
-- As an app publisher, you have to make sure that your audience has access to semantic models outside of the workspace. Otherwise, users will encounter issues when interacting with your app: reports won't open without semantic model access and dashboard tiles will show as locked. Also, users won't able to open the app if the first item in its navigation is a report without access to the semantic model.
+- As an app publisher, you have to make sure that your audience has access to semantic models outside of the workspace. Otherwise, users will encounter issues when interacting with your app: reports won't open without semantic model access and dashboard tiles will show as locked. Also, users won't be able to open the app if the first item in its navigation is a report without access to the semantic model.
 - By design, *Publish to web* doesn't work for a report based on a shared semantic model.
 - If two people are members of a workspace that is accessing a shared semantic model, it's possible that only one of them can see the related semantic model in the workspace. Only people with at least **Read** access to the semantic model can see the shared semantic model.
 

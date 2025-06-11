@@ -1,8 +1,8 @@
 ---
 title: Add the Power BI app to Microsoft Teams
 description: Learn how to add the Power BI app to Microsoft Teams. The Power BI app brings the entire basic Power BI service experience into Microsoft Teams.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: lukaszp
 featuredvideoid: ''
 ms.service: powerbi

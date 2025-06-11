@@ -1,10 +1,10 @@
 ---
 title: Distribute content to external guest users with Microsoft Entra B2B
 description: Power BI enables sharing content with external guest users through Microsoft Entra Business-to-business (Microsoft Entra B2B).
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 manager: kfollis
-ms.reviewer: painbar
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
@@ -206,16 +206,15 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
   * Guest users can't use Analyze in Excel
   * Guest users can't be @mentioned in commenting
   * Guest users who use this capability should have a work or school account
-
 * Guest users using social identities experience more limitations because of sign-in restrictions.
   * They can use consumption experiences in the Power BI service through a web browser
   * They can't use the Power BI Mobile apps
   * They won't be able to sign in where a work or school account is required
-
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
-
 * If you share directly to a guest user, Power BI sends them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.
 * If you disable the **Guest users can browse and access Fabric content** tenant setting, guest users continue to have any workspace role and item permissions that they were previously granted, or will be granted, in the provider environment. For more information, see the [Guest users can browse and access Fabric content](/fabric/admin/service-admin-portal-export-sharing#guest-users-can-browse-and-access-fabric-content) tenant setting.  
+* External users invited via Identities, such as Microsoft Account or Mail, might see their UPN displayed in Power BI differently from the UPN in Entra ID. This could imply some changes to be done on the row-level security. 
+  * For example: The email `ABC@abc.com` is a guest via Microsoft Identity, and the UPN in Microsoft Entra shows as `ABC#EXT@abc.com`. But in Power BI, it shows as `Live#ABC#EXT@abc.com`.
 
 ## Related content
 

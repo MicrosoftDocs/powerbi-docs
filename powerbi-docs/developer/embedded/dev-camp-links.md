@@ -1,7 +1,7 @@
 ---
 title: Power BI Dev Camp links for developers who want to learn how to embed Power BI
 description: This article provides links to the Power BI Dev Camp, a resource for developers who want to learn how to embed Power BI.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.service: powerbi
 ms.subservice: powerbi-developer

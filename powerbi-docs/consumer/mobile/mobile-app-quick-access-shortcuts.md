@@ -1,8 +1,8 @@
 ---
 title: Use Android app Shortcuts in the Power BI Android app
 description: Learn how to quickly access frequently viewed content directly with Power BI report and dashboard shortcuts.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
