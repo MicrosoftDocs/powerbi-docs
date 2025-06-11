@@ -74,7 +74,7 @@ After you've verified your R installation, you’re ready to begin creating R vi
 
    ![Screenshot of the R script editor, highlighting the script code.](media/desktop-r-visuals/r-visuals-5.png)
    
-      > [!TIP]
+   > [!TIP]
    > In certain cases, you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case, add an index field to your semantic model, which causes all rows to be considered unique and prevents grouping.
    > 
    > 
@@ -102,15 +102,15 @@ After you've verified your R installation, you’re ready to begin creating R vi
 
     The original plotting command is:
 
-       ```
+   ```
     corrplot(M, method = "color",  tl.cex=0.6, tl.srt = 45, tl.col = "black")
-    ```
+   ```
 
        Change the R script so that the plotting command is as follows:
 
-       ```
+   ```
     corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= "upper", order="hclust")
-    ```
+   ```
 
        As a result, the R visual now plots circles, only considers the upper half, and reorders the matrix to cluster correlated attributes.
 
