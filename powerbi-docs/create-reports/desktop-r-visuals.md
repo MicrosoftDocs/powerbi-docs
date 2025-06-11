@@ -26,7 +26,7 @@ After you've installed R, Power BI Desktop enables it automatically. To verify t
 
 2. On the left side of the **Options** page, under **Global**, select **R scripting**.
 
-3. Under **R script options**, verify that your local R installation is specified in **Detected R home directories** and that it properly reflects the local R installation you want Power BI Desktop to use. In the following image, the path to the local installation of R is **C:\Program Files\R Open\R-3.4.4\\**.
+1. Under **R script options**, verify that your local R installation is specified in **Detected R home directories** and that it properly reflects the local R installation you want Power BI Desktop to use. In the following image, the path to the local installation of R is **C:\Program Files\R Open\R-3.4.4\\**.
 
    ![Screenshot of the R script options page, highlighting Detected R home directories.](media/desktop-r-visuals/r-visuals-2.png)
    
@@ -40,86 +40,87 @@ After you've verified your R installation, you’re ready to begin creating R vi
 
    ![Screenshot of the Visualization pane, highlighting the R Visual icon.](media/desktop-r-visuals/r-visuals-3.png)
    
-2. In the **Enable script visuals** window that appears, select **Enable**.
+1. In the **Enable script visuals** window that appears, select **Enable**.
 
    ![Screenshot of the Enable script visuals dialog, highlighting Enable.](media/desktop-r-visuals/r-visuals-10.png)
    
-      When you add an R visual to a report, Power BI Desktop makes the following changes:
+1. When you add an R visual to a report, Power BI Desktop makes the following changes:
 
    - A placeholder R visual image appears on the report canvas.
-     
+      
    - The **R script editor** appears along the bottom of the center pane.
-
+      
    ![Screenshot of the Power BI R script editor.](media/desktop-r-visuals/r-visuals-4.png)
    
-3. In the **Values** section of the **Visualization** pane, drag fields from the **Fields** pane that you want to consume in your R script, just as you would with any other Power BI Desktop visual. Alternatively, you can also select the fields directly in the **Fields** pane.
-    
-    Only fields that you've added to the **Values** section are available to your R script. You can add new fields or remove unneeded fields from the **Values** section while working on your R script in the **R script editor**. Power BI Desktop automatically detects which fields you've added or removed.
+1. In the **Values** section of the **Visualization** pane, drag fields from the **Fields** pane that you want to consume in your R script, just as you would with any other Power BI Desktop visual. Alternatively, you can also select the fields directly in the **Fields** pane.
+
+   Only fields that you've added to the **Values** section are available to your R script. You can add new fields or remove unneeded fields from the **Values** section while working on your R script in the **R script editor**. Power BI Desktop automatically detects which fields you've added or removed.
    
    > [!NOTE]
    > The default aggregation type for R visuals is *do not summarize*.
-   > 
-   > 
    
-4. Now you can use the data you selected to create a plot:
+   
+1. Now you can use the data you selected to create a plot:
 
-- As you select fields, the **R script editor** generates supporting R script binding code for those fields in the gray section along the top of the editor pane.
- - If you remove a field, the **R script editor** automatically removes the supporting code for that field.
+   As you select fields, the **R script editor** generates supporting R script binding code for those fields in the gray section along the top of the editor pane.
 
+   The generated dataframe is named **semantic model**, and you access selected columns by their respective names. For example, access the `gear` field by adding `dataset$gear` to your R script. For fields with spaces or special characters, use single quotes.   
+
+   If you remove a field, the **R script editor** automatically removes the supporting code for that field.
+   
    In the example shown in the following image, three fields are selected: Horse Power, gear, and drat. As a result of those selections, the R script editor generates binding code, which is summarized as follows:
-
-* Create a dataframe called **semantic model**, which is comprised of the different fields selected by the user.
-* The default aggregation is: *do not summarize*.
-* Similar to table visuals, fields are grouped and duplicate rows appear only once.
-
-   ![Screenshot of the R script editor, highlighting the script code.](media/desktop-r-visuals/r-visuals-5.png)
    
-   > [!TIP]
-   > In certain cases, you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case, add an index field to your semantic model, which causes all rows to be considered unique and prevents grouping.
-   > 
-   > 
-   
-      The generated dataframe is named **semantic model**, and you access selected columns by their respective names. For example, access the `gear` field by adding `dataset$gear` to your R script. For fields with spaces or special characters, use single quotes.
+   - Create a dataframe called **semantic model**, which is comprised of the different fields selected by the user.
 
-5. With the dataframe automatically generated by the fields you selected, you’re ready to write an R script, which Power BI Desktop plots to the R default device. After you've completed the script, select the **Run script** icon on the right side of the **R script editor** title bar.
+   - The default aggregation is: *do not summarize*.
 
-    When you select the **Run script** icon, Power BI Desktop identifies the plot and presents it on the canvas. Because the process is executed on your local R installation, make sure the required R packages are installed.
+   - Similar to table visuals, fields are grouped and duplicate rows appear only once.
+
+ ![Screenshot of the R script editor, highlighting the script code.](media/desktop-r-visuals/r-visuals-5.png)
+
+> [!TIP]
+> In certain cases, you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case, add an index field to your semantic model, which causes all rows to be considered unique and prevents grouping.
+
+1. With the dataframe automatically generated by the fields you selected, you’re ready to write an R script, which Power BI Desktop plots to the R default device. After you've completed the script, select the **Run script** icon on the right side of the **R script editor** title bar.
+
+1. When you select the **Run script** icon, Power BI Desktop identifies the plot and presents it on the canvas. Because the process is executed on your local R installation, make sure the required R packages are installed.
 
    Power BI Desktop replots the visual when any of the following events occur:
-
-   * You select the **Run script** icon from the **R script editor** title bar.
-   * A data change occurs because of data refreshing, filtering, or highlighting.
    
-        The following image shows an example of the correlation plot code, which plots the correlations between attributes of different types of cars.
-
-     ![Screenshot of the Correlation plot code example.](media/desktop-r-visuals/r-visuals-6.png)
-     
-6. To get a larger view of the visualizations, deselect the R visual or minimize the **R script editor**. Like other visuals in Power BI Desktop, you can cross filter the correlation plot by selecting a specific value, such as Auto or Manual, in the donut chart visual on the right.
+      * You select the **Run script** icon from the **R script editor** title bar.
+      * A data change occurs because of data refreshing, filtering, or highlighting.
+            
+      * The following image shows an example of the correlation plot code, which plots the correlations between attributes of different types of cars.
+      
+        ![Screenshot of the Correlation plot code example.](media/desktop-r-visuals/r-visuals-6.png)
+        
+1. To get a larger view of the visualizations, deselect the R visual or minimize the **R script editor**. Like other visuals in Power BI Desktop, you can cross filter the correlation plot by selecting a specific value, such as Auto or Manual, in the donut chart visual on the right.
 
     ![Screenshot of the Correlation plot code example in the Larger visualization view.](media/desktop-r-visuals/r-visuals-7.png)
    
-7. Modify the R script to customize the visual, and take advantage of the power of R by adding parameters to the plotting command.
+1. Modify the R script to customize the visual, and take advantage of the power of R by adding parameters to the plotting command.
 
     The original plotting command is:
+    
+```r
+corrplot(M, method = "color",  tl.cex=0.6, tl.srt = 45, tl.col = "black")
+```
 
-   ```
-    corrplot(M, method = "color",  tl.cex=0.6, tl.srt = 45, tl.col = "black")
-   ```
+   Change the R script so that the plotting command is as follows:
+    
+```r
+corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= "upper", order="hclust")
+```
 
-       Change the R script so that the plotting command is as follows:
+   As a result, the R visual now plots circles, only considers the upper half, and reorders the matrix to cluster correlated attributes.
 
-   ```
-    corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= "upper", order="hclust")
-   ```
+![Screenshot of the R visual circle plot example.](media/desktop-r-visuals/r-visuals-8.png)
 
-       As a result, the R visual now plots circles, only considers the upper half, and reorders the matrix to cluster correlated attributes.
+   When you execute an R script that results in an error, an error message displays on the canvas instead of the R visual plot. For details on the error, select **See details** from the R visual error.
 
-    ![Screenshot of the R visual circle plot example.](media/desktop-r-visuals/r-visuals-8.png)
-   
-       When you execute an R script that results in an error, an error message displays on the canvas instead of the R visual plot. For details on the error, select **See details** from the R visual error.
 
-    ![Screenshot of the error message displayed on the canvas.](media/desktop-r-visuals/r-visuals-9.png)
-   
+![Screenshot of the error message displayed on the canvas.](media/desktop-r-visuals/r-visuals-9.png)
+
 ## R scripts security 
 R visuals are created from R scripts, which might contain code with security or privacy risks. When attempting to view or interact with an R visual for the first time, a user is presented with a security warning message. Only enable R visuals if you trust the author and source, or after you review and understand the R script.
 
@@ -153,4 +154,6 @@ R visuals in Power BI Desktop have the following limitations:
 For more information about R in Power BI, see the following articles:
 
 * [Running R Scripts in Power BI Desktop](../connect-data/desktop-r-scripts.md)
+
 * [Use an external R IDE with Power BI](../connect-data/desktop-r-ide.md)
+
