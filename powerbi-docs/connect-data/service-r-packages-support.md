@@ -1196,7 +1196,9 @@ The following table shows which packages aren't supported in the Power BI servic
 - [Publish to web](/power-bi/collaborate-share/service-publish-to-web) isn't supported for R visuals. Reports with R visuals can still be published publicly, but any R visuals will not render (charts will appear empty).
 
 - R visuals aren't supported with Service Principal Profiles for App Owns Data.
-- R visuals rendered from the Power BI service are subject to a limit of 30Mb. This limit applies to the total payload of compressed input data and the R script itself. Always check R visuals after publishing the report to ensure the report will display as expected. 
+- R visuals rendered from the Power BI service are subject to a limit of 30MB. This limit applies to the total payload of compressed input data and the R script itself. Always check R visuals after publishing the report to ensure the report will display as expected. 
+
+- R visuals rendered in the Power BI service are subject to a script execution timeout of 1 minute.
 
 - R visuals with HTML and XML packages with fail to render due to Out Of Memory (OOM) limits. Migrate the visual with the [PbiViz tool](../developer/visuals/develop-power-bi-visuals.md#power-bi-visual-packages). The visual must render to be considered successfully migrated. 
 
