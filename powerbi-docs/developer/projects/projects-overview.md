@@ -22,13 +22,16 @@ Power BI Desktop introduces a new way to author, collaborate, and save your proj
 
 Saving your work as a project has the following benefits:
 
-- **Text editor support** - Item definition files are formatted text files containing semantic model and report metadata. These files are publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
+- **Text editor support** - PBIP files are formatted text files containing semantic model and report metadata. These files are publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
+
+- **Folder structure transparency** - Separate folders for the semantic model and report, enabling powerful yet simple tasks like copying semantic model tables between projects or reusing report pages. A great choice for creating and reusing development templates.
+
+- **Source control ready** - Open text files, designed for seamless integration with Git, enabling version history and team collaboration. To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
+
+- **Continuous Integration and Continuous Delivery (CI/CD) support** - Apply CI/CD practices on top of your existing source control systems using PBIP files, incorporating *quality gates* and automating deployment to production environments. To learn more about CI/CD in Fabric, see [Fabric CI/CD workflows](/fabric/cicd/manage-deployment).
 
 - **Programmatic generation and editing item definitions** - You can programmatically generate and modify item definition text files, enabling batch operations such as updating all report pages visuals or adding a set of measures to each table. For semantic models, you can use the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) client library to deserialize the semantic model metadata, make programmatic modifications, and serialize it back to the files.
 
-- **Source control** - Power BI semantic model and report item definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
-
-- **Continuous Integration and Continuous Delivery (CI/CD)** - You can use systems where developers in your organization submit a proposed change to the CI/CD system. The system then validates the change with a series of *quality gates* before applying the change to the production system. These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more about CI/CD in Fabric, see [Fabric CI/CD workflows](/fabric/cicd/manage-deployment).
 
 ## Enable preview features
 
@@ -38,21 +41,20 @@ Go to **File > Options and settings > Options > Preview features** and check the
 
 ## Save as a project
 
-If you're working on a new project or you opened an existing Power BI Desktop file (pbix), you can save your work as a Power BI *project* file (pbip):
+If you're working on a new project or you opened an existing Power BI Desktop file (pbix), you can save your work as a Power BI project file (pbip):
 
 :::image type="content" source="media/projects-overview/pbip-saveastype.png" alt-text="Screen grab showing save file as Power BI Project":::
 
 When you save as a project, Power BI Desktop saves report and semantic model items as folders, each containing text files that define the item:
 
-:::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screen grab showing Power BI Project files":::
+```md
+Project/
+├── AdventureWorks.Report/
+├── AdventureWorks.SemanticModel/
+├── .gitignore
+└── AdventureWorks.pbip
 
-After saving as a project, you can see when you're working on a project by looking at the title bar:
-
-:::image type="content" source="media/projects-overview/pbip-desktop-title.png" alt-text="Screen grab showing Power BI Desktop title when saving to project.":::
-
-If you select on the title bar, a flyout appears that's specific for Power BI Project. This flyout lets you locate the project files and the display name settings for the report and the semantic model. You can also open the folder in file explorer by clicking on the paths.
-
-:::image type="content" source="media/projects-overview/pbip-desktop-flyout.png" alt-text="Screen grab showing Power BI Desktop title flyout.":::
+```
 
 Let's take a closer look at what you see in your project's root folder:
 
@@ -81,7 +83,7 @@ Default content of .gitignore when saving as PBIP:
 
 The PBIP file contains a pointer to a report folder, opening a PBIP opens the targeted report and model for authoring.
 
-For more information, see the [pbip schema document](https://github.com/microsoft/powerbi-desktop-samples/blob/main/item-schemas/common/pbip.md).
+For more information, see the [pbip schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/pbip/pbipProperties).
 
 ## Open a Power BI Project
 
@@ -90,16 +92,27 @@ You can open Power BI Desktop from the Power BI Project folder either by opening
 You can save multiple reports and semantic models to the same folder. Having a separate pbip file for each report isn't required because you can open each report directly from the **.pbir** within the report folder.
 
 ```md
-├── project
-│   ├── AdventureWorks-Sales.Report
-│   │   └── definition.pbir
-│   ├── AdventureWorks-Stocks.Report
-│   │   └── definition.pbir
-│   ├── AdventureWorks.SemanticModel
-|   |   └── *.*
-│   .gitignore
-└──  AdventureWorks.pbip
+project/
+├── AdventureWorks-Sales.Report/
+│   └── definition.pbir
+├── AdventureWorks-Stocks.Report/
+│   └── definition.pbir
+├── AdventureWorks.SemanticModel/
+│   └── definition.pbism
+├── .gitignore
+└── AdventureWorks.pbip
 ```
+
+## Navigate to files
+
+After saving as a project, you can see when you're working on a project by looking at the title bar:
+
+:::image type="content" source="media/projects-overview/pbip-desktop-title.png" alt-text="Screen grab showing Power BI Desktop title when saving to project.":::
+
+If you select on the title bar, a flyout appears that's specific for Power BI Project. This flyout lets you locate the project files and the display name settings for the report and the semantic model. You can also open the folder in file explorer by clicking on the paths.
+
+:::image type="content" source="media/projects-overview/pbip-desktop-flyout.png" alt-text="Screen grab showing Power BI Desktop title flyout.":::
+
 
 ## Changes outside Power BI Desktop
 
@@ -135,50 +148,22 @@ When working with Power BI project files, you can deploy your content to a Fabri
 
 You can make changes to the semantic model definition by using external tools in two ways:
 
-- By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md).
-- By editing JSON metadata in the model.bim file using VS Code or another external tool.
+- By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md#data-modeling-operations).
+- By editing TMDL metadata in the `/definition` folder using VS Code or another external tool.
 
-Not every model object supports write operations. Applying changes outside of those supported can cause unexpected results.
-
-Objects that support write operations:
-
-| Object                        | Connect to AS instance     | File change / TMDL view|
-|-------------------------------|----------------------------|----------- |
-| Tables                        | No                         | Yes        |
-| Columns                       | Yes <sup>[1](#rc)</sup>, <sup>[2](#dt)</sup>| Yes        |
-| Calculated tables             | Yes                        | Yes        |
-| Calculated columns            | Yes                        | Yes        |
-| Hierarchies                   | Yes                        | Yes        |
-| Relationships                 | Yes                        | Yes        |
-| Measures                      | Yes                        | Yes        |
-| Model KPIs                    | Yes                        | Yes        |
-| Calculation groups            | Yes                        | Yes        |
-| Perspectives                  | Yes                        | Yes        |
-| Translations                  | Yes                        | Yes        |
-| Row Level Security (RLS)      | Yes                        | Yes        |
-| Object Level Security (OLS)   | Yes                        | Yes        |
-| Annotations                   | Yes                        | Yes        |
-| M expressions                 | No                         | Yes <sup>[3](#mp)</sup>, <sup>[4](#ee)</sup>        |
+All semantic model metadata is accessible to read. Write operations are fully supported, however, be aware that modifying the metadata outside of Power BI Desktop may result in unexpected behavior or, in rare cases, lead to inconsistencies within the model. Use caution when making changes through external tools.
 
 Keep in mind:
 
 - Any changes to open files made outside Power BI Desktop requires a restart for those changes to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
 
-- Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating tables with empty partitions or more than one partition results in an error when opening the report.
-
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
 
-- When changing a model that uses Direct Query to connect a Power BI semantic model or Analysis Services model, you must update the ChangedProperties and PBI_RemovedChildren collection for the changed object to include any modified or removed properties. If ChangedProperties and/or PBI_RemovedChildren isn't updated, Power BI Desktop might overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
+- If the semantic model has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
 
-- <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns isn't supported when connecting to the AS instance.
+- Semantic models - such as [composite models](/power-bi/transform-model/desktop-composite-models#composite-models-on-power-bi-semantic-models-and-analysis-services) or [Direct Lake](/fabric/fundamentals/direct-lake-overview) - can include objects and properties sourced from other models or data sources. When customizing these properties or removing synced objects, Power BI requires the `changedProperties` property and the `PBI_RemovedChildren` annotation to be set. These indicators mark the changes as user customizations, ensuring they are preserved during the next schema synchronization with the data source. To learn more, see [Lineage tags for Power BI semantic models](/analysis-services/tom/lineage-tags-for-power-bi-semantic-models).
 
-- <a name="dt">2</a> - If the semantic model has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
-
-- <a name="mp">3</a> - Partition [SourceType](/dotnet/api/microsoft.analysisservices.tabular.partitionsourcetype) must be Calculated, M, Entity, or CalculationGroup. Partition [Mode](/dotnet/api/microsoft.analysisservices.tabular.modetype) must be Import, DirectQuery, or Dual.
-
-- <a name="ee">4</a> - Any expression edits outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson) are lost when those changes are applied.
-
-- Modifying table query expressions outside of Power BI Desktop results in the removal of the table data upon restarting Power BI Desktop.
+- Any expression edits outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson) are lost when those changes are applied.
 
 ## JSON file schemas
 
@@ -191,7 +176,7 @@ With JSON schemas, you can:
 - Improve authoring with syntax highlighting, tooltips, and autocomplete.
 - Use external tools with knowledge of supported properties within project metadata.
 
-Use VS Code to map JSON schemas to the files being authored. JSON schemas for project files are provided in the [Power BI Desktop samples Git repo](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas).
+Use VS Code to map JSON schemas to the files being authored. JSON schemas for project files are provided in the [json-schemas Git repo](https://github.com/microsoft/json-schemas/tree/main/fabric).
 
 ## Considerations and limitations
 

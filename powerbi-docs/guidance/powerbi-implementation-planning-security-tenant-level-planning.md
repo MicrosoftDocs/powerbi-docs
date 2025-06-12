@@ -22,7 +22,7 @@ This tenant-level security planning article is primarily targeted at:
 
 This article might also be relevant for self-service Power BI creators who create, publish, and manage content in workspaces.
 
-The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). The Power BI security white paper focuses on key technical subjects such as authentication, data residency, and network isolation. The implementation planning series provides you with considerations and decisions to help you plan for security and privacy.
+The series of articles is intended to expand upon the content in the [Power BI security white paper](white-paper-powerbi-security.md). The Power BI security white paper focuses on key technical subjects such as authentication, data residency, and network isolation. The implementation planning series provides you with considerations and decisions to help you plan for security and privacy.
 
 Because Power BI content can be used and secured in different ways, content creators make many tactical decisions. However, there are some strategic planning decisions to make at the tenant level, too. Those strategic planning decisions are the focus for this article.
 

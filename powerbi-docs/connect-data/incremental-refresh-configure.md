@@ -23,9 +23,7 @@ Configuring incremental refresh includes creating RangeStart and RangeEnd parame
 In this task, you'll use Power Query Editor to create RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be loaded into the model in Power BI Desktop. The values you enter should include only a small amount of the most recent data from your data source. When published to the service, the incremental refresh policy overrides these time range values. That is, the policy creates windows of incoming data, one after another.
 
 1. In Power BI Desktop, select **Transform data** on the **Home** ribbon to open Power Query Editor.
-
 1. Select the **Manage Parameters** dropdown and then choose **New Parameter**.
-
 1. In the **Name** field, enter *RangeStart* (case-sensitive). In the **Type** field, select **Date/Time** from the dropdown. In the **Current Value** field, enter a start date and time value.
 
     :::image type="content" source="media/incremental-refresh-configure/create-range-start.png" alt-text="Define the Range Start parameter in the Manage Parameters dialog.":::
@@ -44,7 +42,6 @@ Now that you've defined the RangeStart and RangeEnd parameters, you'll filter th
 You'll now apply a filter based on *conditions* in the RangeStart and RangeEnd parameters.
 
 1. In Power Query Editor, select the date column you want to filter on, and then choose the dropdown arrow > **Date Filters** > **Custom Filter**.
-
 1. In **Filter Rows**, to specify the first condition, select **is after** or **is after or equal to**, then choose **Parameter**, and then choose **RangeStart**.
 
     To specify the second condition, if you selected **is after** in the first condition, then choose **is before or equal to**, or if you selected **is after or equal to** in the first condition, then choose **is before** for the second condition, then choose **Parameter**, and then choose **RangeEnd**.
@@ -68,7 +65,6 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
     :::image type="content" source="media/incremental-refresh-configure/incremental-refresh-context-menu.png" alt-text="Table view showing Table context menu with Incremental refresh selected.":::
 
 1. In **Incremental refresh and real-time data** > **Select table**, verify or select the table. The default value of the **Select table** listbox is the table you selected in the Table view.
-
 1. Specify required settings:
 
     In **Set import and refresh ranges** > **Incrementally refresh this table** move the slider to **On**. If the slider is disabled, it means the Power Query expression for the table doesn't include a filter based on the RangeStart and RangeEnd parameters.
@@ -84,6 +80,9 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
     Select **Only refresh complete days** to refresh only whole days. If the refresh operation detects a day isn't complete, rows for that whole day aren't refreshed. This option is automatically enabled when you select **Get the latest data in real time with DirectQuery (Premium only)**.
 
     Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. A date/time column must exist, usually for auditing purposes, at the data source. This column **should not be the same column** used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it hasn't changed since the last refresh, the current period isn't refreshed. For models published to Premium capacities, you can also specify a custom query. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
+
+   > [!NOTE]
+   > Deleted rows aren't detected with change detection. Only *soft delete* is detected, meaning that the row is still available in the data source and is marked as deleted with an updated date in the column used for tracking changes. Power BI only leads rows that aren't marked as deleted.
 
     Depending on your settings, your policy should look something like this:
 
@@ -106,7 +105,6 @@ This task is only required if your table uses integer surrogate keys instead of 
 The data type of the RangeStart and RangeEnd parameters must be of date/time data type regardless of the data type of the date column. However, for many data sources, tables don't have a column of date/time data type but instead have a date column of integer surrogate keys in the form of `yyyymmdd`. You typically can't convert these integer surrogate keys to the Date/Time data type because the result would be a non-folding query expression, but you can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table without losing foldability. The function is then called in a filter step. This conversion step is required if the data source table contains *only* a surrogate key as integer data type.
 
 1. On the **Home** ribbon in Power Query Editor, select the **New Source** dropdown and then choose **Blank Query**.
-
 1. In **Query Settings**, enter a name, for example, DateKey, and then in the formula editor, enter the following formula:
 
     `= (x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
@@ -114,7 +112,6 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
     :::image type="content" source="media/incremental-refresh-configure/datekey-function.png" alt-text="Power BI function editor showing the integer surrogate DateKey function.":::
 
 1. To test the formula, in **Enter Parameter**, enter a date/time value, and then select **Invoke**. If the formula is correct, an integer value for the date is returned. After verifying, delete this new **Invoked Function** query.
-
 1. In **Queries**, select the table, and then edit the query formula to call the function with the RangeStart and RangeEnd parameters.
 
     `= Table.SelectRows(#"Reordered Column OrderDateKey", each [OrderDateKey] > DateKey(RangeStart) and [OrderDateKey] <= DateKey(RangeEnd))`

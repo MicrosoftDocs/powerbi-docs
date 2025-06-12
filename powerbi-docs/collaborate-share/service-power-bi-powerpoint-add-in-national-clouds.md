@@ -19,7 +19,7 @@ Users of the Power BI add-in for PowerPoint in national/regional clouds enjoy th
 
 ## Add-in deployment
 
-In national/regional clouds, the add-in is supported as an admin managed add-in only. If you're an admin of a tenant located in a national/regional cloud, you must download the add-in from Power BI in your national/regional cloud and deploy it using Centralized Deployment. The add-in that is available from the public cloud won't work. Users in national/regional clouds must use the add-in you've deployed. For more information, see [Deploying the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-nationalregional-clouds).
+In national/regional clouds, the add-in is supported as an admin managed add-in only. If you're an admin of a tenant located in a national/regional cloud, you must download the add-in from Power BI in your national/regional cloud and deploy it using Centralized Deployment. The add-in that is available from the public cloud won't work. Users in national/regional clouds must use the add-in you've deployed. For more information, see [Deploy the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploy-the-add-in-in-nationalregional-clouds).
 
 ## Power BI entry points
 
