@@ -36,7 +36,7 @@ Read the Power BI blog post, [Power BI Report Server May 2025 Feature Summary](h
 - Attribute Control Chart by Nova Silva
 - Drill Down Donut PRO by ZoomCharts
 - Heatmap by Powerviz
-- Maximize data efficiency with accoMASTERDATA writenback for Power BI
+- Maximize data efficiency with accoMASTERDATA writeback for Power BI
 
 ### Reporting
 
