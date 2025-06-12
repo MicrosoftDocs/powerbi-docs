@@ -1,7 +1,8 @@
 ---
 title: Hide inner borders
 description: Setting - Hide inner borders (Columns, Border, Hide inner borders)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

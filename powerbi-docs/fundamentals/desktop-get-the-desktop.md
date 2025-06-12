@@ -1,13 +1,13 @@
 ---
 title: Get Power BI Desktop
 description: Learn about the different ways you can download and the options available to install Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 02/21/2025
+ms.date: 04/11/2025
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -65,7 +65,7 @@ To download the Power BI Desktop executable from the Download Center, select **D
   :::image type="content" source="media/desktop-get-the-desktop/download-desktop-exe.png" alt-text="Screenshot of Download Center showing the 64-bit Power BI Desktop download selected.":::
 
 > [!IMPORTANT]
-> The 32-bit version of Power BI Desktop will no longer be supported after June 30, 2025. Upgrade to the 64-bit version of Power BI Desktop to continue receiving updates and support.
+> The 32-bit version of Power BI Desktop will no longer be supported after July 31, 2025. Upgrade to the 64-bit version of Power BI Desktop to continue receiving updates and support.
 
 
 ## Install Power BI Desktop after download
@@ -87,16 +87,11 @@ When you launch Power BI Desktop, a welcome screen appears.
 
 :::image type="content" source="media/desktop-get-the-desktop/desktop-splash-screen.png" alt-text="Screenshot of Power BI Desktop installation showing the welcome screen.":::
 
-When you launch Power BI Desktop for the first time, if the installation isn't an upgrade, you're prompted to fill out a form or sign in to the Power BI service before you can continue.
-
-After that, you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
+Now you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
 
 ## Minimum requirements
 
 The following list provides the minimum requirements to run Power BI Desktop:
-
-> [!IMPORTANT]
-> Power BI Desktop is no longer supported on Windows 8.1.
 
 * Windows 10 or Windows Server 2016 or later.
 * .NET 4.7.2 or later.
@@ -113,6 +108,8 @@ The following list provides the minimum requirements to run Power BI Desktop:
 ## Considerations and limitations
 
 Power BI Desktop doesn't support running with a system account because WebView2 doesn't support system accounts. Running Power BI Desktop using a system account may cause this error: "Microsoft Edge can't read and write to its data directory."
+
+Power BI Desktop doesn't support ARM architecture. Power BI Desktop is only supported on x64 (64-bit) Windows operating systems. 
 
 We want your experience with Power BI Desktop to be great. If you run into any issues with Power BI Desktop, this section contains solutions, or suggestions to address these issues.
 

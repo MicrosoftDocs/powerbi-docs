@@ -1,8 +1,8 @@
 ---
 title: Get licenses for users in your organization. 
 description: Overview of how administrators sign up, purchase, and manage Power BI and Fabric licenses and subscriptions.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

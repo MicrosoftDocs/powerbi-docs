@@ -1,8 +1,8 @@
 ---
 title: View and explore metrics
 description: Learn how to view and explore metric sets in Power BI so that your members of your organization can find and reuse key metrics.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

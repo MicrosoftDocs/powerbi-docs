@@ -1,8 +1,8 @@
 ---
 title: Create reports in the Power BI service with Copilot
 description: Using Copilot, you can quickly create a Power BI report.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -26,15 +26,13 @@ When you use Copilot for Power BI, you can quickly create report pages with just
 
 Read about all the ways Copilot can help you in the [overview of Copilot for Power BI](copilot-introduction.md) for more guidance before you start.
 
-- You need to select a compatible workspace that you have write access to. It needs to be a workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity (F64 or higher) or a Power BI Premium capacity (P1 or higher).
-
-    Learn more about [Copilot for Power BI capacity requirements](copilot-introduction.md#access-copilot-in-the-power-bi-service).
+- You need to select a compatible workspace that you have write access to. It needs to be a workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity or a Power BI Premium capacity (P1 or higher).
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
 ## Use Copilot in the Power BI service for the first time
 
-To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric (F64 and above)](/fabric/enterprise/licenses) capacity.
+To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric](/fabric/enterprise/licenses) capacity.
 
 > [!NOTE]
 > For a refresher on workspace access and permissions, see [Roles in workspaces in Power BI](/power-bi/collaborate-share/service-roles-new-workspaces).
@@ -86,9 +84,9 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
 1. If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
-## Enhanced Report Creation (Public Preview)
+## Enhanced report creation 
 
-When you use the preview toggle in edit mode to switch into the Copilot public preview experience, you have access to the new updates to report creation in the Power BI Service. With these new updates, you can work with Copilot to clarify intent and details of reports created. Report outlines are also provided to help improve transparency on what data fields copilot is using to build a report. These updates aim to make it easier to generate more relevant and transparent Power BI reports with Copilot. Learn more about using Copilot preview features [here.](copilot-preview-toggle.md)
+With updates to report creation in the Power BI Service, you can work with Copilot to clarify intent and details of reports created. Report outlines are also provided to help improve transparency on what data fields copilot is using to build a report. These updates aim to make it easier to generate more relevant and transparent Power BI reports with Copilot.
 
 ## Create a narrative summary
 

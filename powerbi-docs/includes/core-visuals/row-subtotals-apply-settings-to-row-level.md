@@ -1,7 +1,8 @@
 ---
 title: Row level
 description: Setting - Row level (Row Subtotals, Apply settings to, Row level)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

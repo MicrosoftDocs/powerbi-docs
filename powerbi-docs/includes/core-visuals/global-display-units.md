@@ -1,7 +1,8 @@
 ---
 title: Display units
 description: Setting - Display units with custom option (Global use)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

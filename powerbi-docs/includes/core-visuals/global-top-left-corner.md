@@ -1,7 +1,8 @@
 ---
 title: Top left corner
 description: Setting - Top left corner (Global, Shape, Top left corner)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

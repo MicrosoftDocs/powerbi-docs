@@ -1,7 +1,8 @@
 ---
 title: Minimum category width
 description: Setting - Minimum category width (X-axis, Layout, Minimum category width)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

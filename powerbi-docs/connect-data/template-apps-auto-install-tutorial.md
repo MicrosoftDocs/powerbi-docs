@@ -1,8 +1,8 @@
 ---
 title: Automate template app installation with an Azure function
 description: Use a sample application to learn how to automatically install and configure template apps for your customers.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -74,8 +74,6 @@ Create a service principal as described in [Embed Power BI content with service 
 Make sure to register the application as a **server-side web application**. You register a server-side web application to create an application secret.
 
 Save the *application ID* (ClientID) and *application secret* (ClientSecret) for later steps.
-
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData) to quickly get started creating an app registration. If you're using the [Power BI App Registration Tool](https://app.powerbi.com/embedsetup), select the **Embed for your customers** option.
 
 Add the service principal to the template app workspace as an Admin so that you'll be able to test your automation work flow.
 

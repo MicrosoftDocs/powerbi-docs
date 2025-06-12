@@ -1,8 +1,8 @@
 ---
 title: Configure Power BI semantic model scale-out
 description: Learn how configure Power BI semantic model scale-out by using the Power BI REST API
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot scheduled refresh for Azure SQL databases
 description: Learn how to troubleshoot an error with credentials in a scheduled refresh for Azure SQL databases in Power BI.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin

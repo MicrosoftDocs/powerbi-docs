@@ -1,8 +1,8 @@
 ---
 title: Connect to Power BI Report Server and SSRS from Power BI mobile applications
 description: Learn how to configure your environment to support OAuth authentication with the Power BI mobile app to connect to Power BI Report Server and SQL Server Reporting Services 2016 or later.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
@@ -65,9 +65,9 @@ To enable a report server to use Kerberos authentication, you need to configure 
 
 ```xml
 <AuthenticationTypes>  
-    <RSWindowsNegotiate />  
-    <RSWindowsKerberos />  
-    <RSWindowsNTLM />  
+    <RSWindowsNegotiate/>  
+    <RSWindowsKerberos/>  
+    <RSWindowsNTLM/>  
 </AuthenticationTypes>
 ```
 

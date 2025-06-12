@@ -1,20 +1,20 @@
 ---
 title: Ask Copilot for data from your model
 description: Learn how to use Copilot to visualize data from your semantic model.
-author: msftrien
-ms.author: rien
-ms.reviewer: shlindsay
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: shlindsay, rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 05/23/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 #customer intent: As a report creator, I want to learn how to use Copilot in Power BI to visualize data from my semantic model.
 ---
 
-# Ask Copilot for data from your model (preview)
+# Ask Copilot for data from your model
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -28,15 +28,7 @@ Before you can use this feature, make sure you satisfy the [requirements for the
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-Asking Copilot for data from your model is a preview feature.
-
-Since this is a preview feature, you need to enable it using the preview toggle in the Copilot pane. Find the preview toggle in the top right corner of the Copilot pane. Switch the toggle on to access all of the Copilot capabilities currently in public preview.
-
-:::image type="content" source="media/copilot-ask-data-questions/data-question-preview-toggle.png" alt-text="Screenshot displaying the preview toggle in the Copilot pane." lightbox="media/copilot-ask-data-questions/data-question-preview-toggle.png":::
-
-To learn more about enabling preview features in the Copilot pane, see [Use Copilot preview features in Power BI](copilot-preview-toggle.md).
-
-Q&A also needs to be enabled for your model because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default.
+Q&A needs to be enabled for your model because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default.
 
 For some sources, like DirectQuery or Direct Lake models, you might need to enable Q&A manually, either in your semantic model settings in the Service or in your Data Load settings in Power BI Desktop. To learn more about the types of data sources Q&A supports, see [Data sources for natural language Q&A](../natural-language/q-and-a-data-sources.md).
 
@@ -76,11 +68,7 @@ Ad hoc calculations currently require using **Edit Mode** of reports using Copil
 
 ## Unsupported question types
 
-Copilot can't currently answer questions that require on-the-fly calculations. It also can't generate new insights like anomaly detection, forecasting, or finding key influencers. The specific questions it can handle depend on your model and report visuals. However, here are some examples of unsupported questions:
-
-- **"Show me the difference in performance between sales in Europe and in America over time"**
-
-     This question requires calculating sales for each region and finding the difference which isn't a current measure in the model.
+Copilot can't currently answer questions that require generating new insights like anomaly detection, forecasting, or finding key influencers. The specific questions it can handle depend on your model and report visuals. However, here are some examples of unsupported questions:
 
 - **"Why do our sales go down every July?”**
 

@@ -1,8 +1,8 @@
 ---
 title: Consume reports in Power BI with accessibility tools
 description: Learn how to use Power BI's built-in accessibility features to make consuming reports more accessible.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

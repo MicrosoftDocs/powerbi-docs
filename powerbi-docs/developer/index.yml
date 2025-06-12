@@ -13,8 +13,8 @@ metadata:
   ms.subservice: powerbi-developer # Optional; Remove if no subservice is used.
   ms.topic: hub-page # Required
   ms.collection: collection # Optional; Remove if no collection is used.
-  author: mberdugo #Required; your GitHub user alias, with correct capitalization.
-  ms.author: monaberdugo #Required; microsoft alias of author; optional team alias.
+  author: billmath #Required; your GitHub user alias, with correct capitalization.
+  ms.author: billmath #Required; microsoft alias of author; optional team alias.
   ms.date: 10/20/2024
 
 # highlightedContent section (optional)
@@ -35,9 +35,9 @@ highlightedContent:
       itemType: overview
       url: visuals/develop-power-bi-visuals.md   
     # Card
-    - title: Power BI embedded analytics Client APIs
-      itemType: whats-new
-      url: /javascript/api/overview/powerbi/
+    - title: Power BI security
+      itemType: overview
+      url: ../enterprise/service-admin-power-bi-security.md
     # Card
     - title: Explore features and APIs in the embedded analytics playground
       itemType: whats-new
@@ -45,7 +45,7 @@ highlightedContent:
     # Card
     - title: Browse Power BI PowerShell code samples
       itemType: how-to-guide
-      url: /samples/azure-samples/powerbi-powershell/microsoft-power-bi-powershell-samples/
+      url: https://github.com/microsoft/PowerBI-Developer-Samples
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -136,7 +136,7 @@ additionalContent:
           url: /rest/api/power-bi-embedded/
         # Card
         - title: Power Platform documentation
-          summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
+          summary: Learn how Power BI, Power Apps, Power Automate, and Microsoft Copilot Studios work together to enhance each other.
           url: /power-platform/
         # Card
         - title: Power BI developer center
@@ -151,9 +151,9 @@ additionalContent:
           summary: Power BI libraries (NuGet).
           url: https://www.nuget.org/profiles/powerbi
         # Card
-        - title: Embedding setup tool
+        - title: Start using Power BI Embedded
           summary: Set up your Power BI embedding environment.
-          url: https://app.powerbi.com/embedsetup
+          url: ./embedded/register-app.md
         # Card
         - title: Power BI embedded analytics Client APIs
           summary: Explore the Power BI embedded analytics Client APIs.

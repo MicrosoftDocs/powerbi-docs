@@ -41,7 +41,7 @@ In this tutorial, you complete the following tasks:
 
 ## Sign up for the Power BI service
 
-You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, and plan on creating content, [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a free license. Open the Power BI service (app.powerbi.com), and select the **Me** icon. Choose **Premium Per User - Start trial** or **Buy Fabric now**.
+You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, and plan on creating content, [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a free license. Open the Power BI service (app.powerbi.com), and select the **Account manager** icon. Choose **Free trial**.
 
 Although a paid or trial license is recommended, it isn't required for this tutorial. Even if you can't try the steps yourself, the description and screenshots still provide you with an introduction to working with data in the Power BI service.  
 
@@ -114,10 +114,7 @@ You can get AI assistance from Copilot. Generate a Power BI report based on gros
 Create a Gross Sales report.
  ```
 
-Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
-
-
-Copilot creates a report page and names it *Gross Sales Report*. 
+Copilot creates a report page and names it *Gross Sales Report*. Copilot is powered by AI, so it's important to verify the accuracy of results. For more information, see [Copilot for Microsoft Fabric and Power BI: FAQ](/fabric/fundamentals/copilot-faq-fabric).
 
 ### Pin a report visual to a dashboard
 

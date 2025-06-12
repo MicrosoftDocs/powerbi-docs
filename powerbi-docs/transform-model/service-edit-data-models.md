@@ -1,8 +1,8 @@
 ---
 title: Edit data models in the Power BI service (preview)
 description: Learn how to edit data models in the Power BI service, including editing relationships, creating DAX measures, managing RLS, and more.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -15,11 +15,11 @@ LocalizationGroup: Transform and shape data
 
 # Edit data models in the Power BI service (preview)
 
-Power BI allows users to modify existing data models in the Power BI service using actions such as editing relationships, creating DAX measures and managing RLS. In this experience, users can work and collaborate simultaneously on the same data model.
+Power BI lets users to modify existing data models in the Power BI service using actions such as editing relationships, creating DAX measures and managing RLS. In this experience, users can work and collaborate simultaneously on the same data model. 
 
 ## Enable the preview feature
 
-Editing data models in the Power BI service is automatically enabled for semantic models stored in *My Workspace*. To open the data model for semantic models stored in collaborative workspaces, you must turn on the preview feature for that workspace by completing the following steps:
+Editing data models in the Power BI service is automatically supported for semantic models stored in *My Workspace*. To open the data model for semantic models stored in collaborative workspaces, the preview feature for that workspace must be enabled. This can be done by completing the following steps:
 
 1. In the Power BI service, select **Settings** for the workspace where you want to enable the preview feature.
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-01.png" alt-text="Screenshot of settings gear icon" lightbox="media/service-edit-data-models/service-edit-data-models-01.png":::
@@ -27,7 +27,7 @@ Editing data models in the Power BI service is automatically enabled for semanti
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-02.png" alt-text="Screenshot of enable preview feature" lightbox="media/service-edit-data-models/service-edit-data-models-02.png":::
 3. Select **Save** to see the new experience for semantic models in your workspace.
 
-This preview feature is enabled by default for Premium workspaces. For Pro workspaces, it isn't enabled by default and must be selected by a workspace contributor.
+This preview feature is enabled by default.
 
 > [!NOTE]
 > Enabling the *edit data models in the Power BI service* preview doesn't apply to editing a semantic model through an API or an XMLA endpoint.
@@ -290,6 +290,11 @@ There are still many functional gaps between the model view in Power BI desktop 
 * Classifying sensitivity of your report
 * External tools integration
 * When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that semantic model.
+
+Additionally, keep in mind the following: 
+* Editing on the web isn't available in collaborative workspaces if converting the model to [large semantic model storage format fails](https://go.microsoft.com/fwlink/?linkid=2309615). In this case you can still use Viewing mode to view but not edit the model.
+* The *Edit in Desktop* option from the Viewing/Editing mode toggle is available only for Direct Lake models. This launches live editing of the Direct Lake semantic model in Power BI Desktop, and it is supported only on Windows machines. All requirements for [live editing Direct Lake models in Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2314634) apply.
+
 
 ### Semantic models edited with external tools
 

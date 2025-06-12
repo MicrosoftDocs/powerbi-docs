@@ -1,8 +1,8 @@
 ---
 title: "Sample Power BI paginated reports"
 description: In this article, you learn about how to download and use sample Power BI paginated reports.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder

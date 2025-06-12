@@ -1,7 +1,8 @@
 ---
 title: Flip overlap
 description: Setting - Flip overlap (Columns, Layout, Flip overlap)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

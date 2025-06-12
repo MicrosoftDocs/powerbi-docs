@@ -1,8 +1,8 @@
 ---
 title: Embed Power BI content in an embedded analytics application with service principal and an application secret
 description: Learn how to authenticate for embedded analytics by using a Microsoft Entra application service principal and an application secret.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -13,7 +13,7 @@ ms.date: 11/14/2024
 
 # Embed Power BI content with service principal and an application secret
 
-Service principal is an authentication method that can be used to let an [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) application access Power BI service content and APIs.
+Service principal is an authentication method that can be used to let a [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) application access Power BI service content and APIs.
 
 When you create a Microsoft Entra app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Microsoft Entra ID to authenticate your app. After it's authenticated, the app can access Microsoft Entra tenant resources.
 
@@ -34,7 +34,7 @@ This article describes service principal authentication using an *application ID
 
 To use service principal and an application ID for embedded analytics, you take the following steps. Subsequent sections describe these steps in detail.
 
-1. Create an [Microsoft Entra app](/azure/active-directory/manage-apps/what-is-application-management).
+1. Create a [Microsoft Entra app](/azure/active-directory/manage-apps/what-is-application-management).
 
     1. Create a secret for your Microsoft Entra app.
     1. Get the app's *application ID* and *application secret*.
@@ -57,47 +57,13 @@ To use service principal and an application ID for embedded analytics, you take 
 
 ## Step 1 - Create a Microsoft Entra app
 
-You can create a Microsoft Entra app from the Azure portal or by using Powershell:
+You can create a Microsoft Entra app from the Azure portal or by using PowerShell:
 
 <a name='create-an-azure-ad-app-in-the-azure-portal'></a>
 
-### [Create an app in the Azure portal](#tab/azure-portal)
+### [Create an app and secret in the Azure portal](#tab/azure-portal)
 
-1. Sign in to the [Azure portal](https://ms.portal.azure.com/#allservices).
-
-1. Search for and select **App registrations**.
-
-   :::image type="content" source="media/embed-service-principal/azure-app-registration.png" alt-text="Screenshot of the Azure portal, with app registration in the search box. That box and the App registrations icon are highlighted.":::
-
-1. Select **New registration**.
-
-   :::image type="content" source="media/embed-service-principal/new-registration.png" alt-text="Screenshot of the App registrations page in the Azure portal. New registration is highlighted.":::
-
-1. Fill in the required information:
-
-   * **Name** - Enter a name for your application.
-   * **Supported account types** - Select supported account types.
-   * (Optional) **Redirect URI** - Enter a URI if needed.
-
-1. Select **Register**.
-
-1. After you register your app, the **Application ID** is available from the **Overview** tab. Copy and save the **Application ID** for later use.
-
-   :::image type="content" source="media/embed-service-principal/application-id.png" alt-text="Screenshot of the Overview page of the new app. The Application ID is indecipherable and is highlighted.":::
-
-1. Select **Certificates & secrets**.
-
-   :::image type="content" source="media/embed-service-principal/certificates-and-secrets.png" alt-text="Screenshot of the Overview page of the new app. On the navigation pane, Certificates & secrets is highlighted.":::
-
-1. Select **New client secret**.
-
-   :::image type="content" source="media/embed-service-principal/new-client-secret.png" alt-text="Screenshot that shows part of the Certificates & secrets page for the app. Under Client secrets, the New client secret button is highlighted.":::
-
-1. In the **Add a client secret** window, enter a description, specify when you want the client secret to expire, and select **Add**.
-
-1. Copy and save the client secret value.
-
-   :::image type="content" source="media/embed-service-principal/client-secret-value.png" alt-text="Screenshot of the Certificates & secrets page for the app. Under Client secrets, a new secret is visible. Its indecipherable value is highlighted.":::
+To create a Microsoft Entra app and secret from the Azure portal, follow the directions in [Register your app](./register-app.md#register-your-app).
 
    >[!NOTE]
    >After you leave this window, the client secret value is hidden, and you can't view or copy it again.

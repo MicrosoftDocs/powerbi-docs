@@ -2240,6 +2240,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/guidance/whitepaper-powerbi-security.md",
+            "redirect_url": "/power-bi/guidance/white-paper-powerbi-security",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/whitepapers.md",
             "redirect_url": "/power-bi/guidance/whitepapers",
             "redirect_document_id": false
@@ -4517,7 +4522,7 @@
         {
             "source_path": "powerbi-docs/service-basic-concepts.md",
             "redirect_url": "/power-bi/fundamentals/service-basic-concepts",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-features-license-type.md",
@@ -6445,6 +6450,42 @@
             "source_path": "powerbi-docs/developer/visuals/scanner-api.md",
             "redirect_url": "/power-bi/developer",
             "redirect_document_id": false
-        }  
-  ]
+        },
+        {
+            "source_path": "powerbi-docs/support/service-troubleshoot-signup.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-basic-concepts.md",
+            "redirect_url": "/power-bi/fundamentals/service-basic-concepts",
+            "redirect_document_id": true
+        },                
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-power-bi-salesforce.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-organization-app",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/fundamentals/desktop-format-pane.md",
+            "redirect_url": "/power-bi/create-reports/desktop-report-view",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/copilot-preview-toggle.md",
+            "redirect_url": "/power-bi/create-reports/copilot-enable-power-bi",
+            "redirect_document_id": false
+        },                
+        {
+            "source_path": "powerbi-docs/connect-data/service-dataset-details-page.md",
+            "redirect_url": "/fabric/governance/onelake-catalog-item-details",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/connect-data/service-datamart-details-page.md",
+            "redirect_url": "/fabric/governance/onelake-catalog-item-details",
+            "redirect_document_id": false
+        } 
+
+    ]
 }

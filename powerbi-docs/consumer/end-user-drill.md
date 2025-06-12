@@ -153,6 +153,6 @@ Use **Show as a table** to get a look behind the scenes. Each time you drill or 
 
 [Set and use date tables](../transform-model/desktop-date-tables.md)
 
-[Power BI - Basic Concepts](end-user-basic-concepts.md)
+[Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Visit the Power BI Community](https://community.powerbi.com/)

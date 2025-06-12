@@ -1,7 +1,8 @@
 ---
 title: Lower bound
 description: Setting - Lower bound (Error bars, Options, Lower bound)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,14 +1,15 @@
 ---
 title: Embed Power BI content in a Power BI embedded analytics application with service principal and a certificate
 description: Learn how to authenticate for Power BI embedded analytics using a Microsoft Entra application service principal and a certificate.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 04/10/2024
+ms.date: 04/10/2025
+#customer intent: As a developer, I want to learn how to authenticate for Power BI embedded analytics using a Microsoft Entra application service principal and a certificate so that I can embed Power BI content in my application.
 ---
 
 # Embed Power BI content with service principal and a certificate
@@ -17,7 +18,7 @@ Certificate-based authentication enables you to be authenticated by Microsoft En
 
 Using this method of authentication allows managing certificates from a central place using the certificate authority (CA) for rotation or revocation.
 
-You can learn more about certificates in Microsoft Entra ID in the [Client credential flows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows) GitHub page.
+You can learn more about certificates in Microsoft Entra ID in the [Client credential flows](/entra/msal/dotnet/acquiring-tokens/web-apps-apis/client-credential-flows) page.
 
 ## Method
 
@@ -96,7 +97,7 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 1. In your Microsoft Entra application, select the **Certificates & secrets** tab.
 
-    :::image type="content" source="media/embed-service-principal/certificates-and-secrets.png" alt-text="Screenshot of the Azure portal window, which shows the certificates and secrets pane for an app.":::
+    :::image type="content" source="media/embed-service-principal-certificate/certificates-and-secrets.png" alt-text="Screenshot of the Azure portal window, which shows the certificates and secrets pane for an app.":::
 
 2. Select **Upload certificate** and upload the *.cer* file you created and downloaded in [step 2](#step-2---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 

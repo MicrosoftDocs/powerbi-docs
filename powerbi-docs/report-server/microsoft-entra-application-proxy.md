@@ -1,8 +1,8 @@
 ---
 title: Configure Power BI Report Server with Microsoft Entra application proxy
 description: Learn how to configure your Power BI Report Server with the Microsoft Entra application proxy.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -11,7 +11,7 @@ ms.date: 07/18/2024
 ---
 # Configure Power BI Report Server with Microsoft Entra application proxy
 
-This article discusses how to use Microsoft Entra application proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Microsoft Entra ID. Read more about remote access to on-premises applications through [Microsoft Entra application proxy](/entra/identity/app-proxy/application-proxy).
+This article discusses how to use Microsoft Entra application proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Microsoft Entra ID. Read more about remote access to on-premises applications through [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy).
 
 ## Environment details
 
@@ -82,17 +82,26 @@ Open the command prompt as an administrator and perform the following steps.
 Register the following SPNs under the account **Power BI Report Server service account** using the following commands
 
 ```
-setspn -s http/ Netbios name\_of\_Power BI Report Server\_server<space> Power BI Report Server\_ServiceAccount
+setspn -s http/Netbios name\_of\_Power BI Report Server\_server<space> Power BI Report Server\_ServiceAccount
 
-setspn -s http/ FQDN\_of Power BI Report Server\_server<space> Power BI Report Server\_ServiceAccount
+setspn -s http/FQDN\_of Power BI Report Server\_server<space> Power BI Report Server\_ServiceAccount
 ```
-
+**Sample:**
+```
+setspn -s http/pbirs contoso\pbirssvcacc
+setspn -s http/pbirs.contoso.com contoso\pbirssvcacc
+```
 Register the following SPNs under the SQL Server service account using the following commands (for a default instance of SQL Server):
 
 ```
 setspn -s MSSQLSVC/FQDN\_of\_SQL\_Server: 1433 (PortNumber) <SQL service service account>
 
 setspn -s MSSQLSVC/FQDN\_of\_SQL\_Server<SQL service service account>
+```
+**Sample:**
+```
+setspn -s MSSQLSVC/sqlserver.contoso.com:1433 contoso\sqlsvcacc
+setspn -s MSSQLSVC/sqlserver.contoso.com contoso\sqlsvcacc
 ```
 
 ### 3. Configure delegation settings
@@ -119,7 +128,7 @@ These steps help configure Power BI Report Server to work with Kerberos authenti
 
 ## Configure Microsoft Entra application proxy connector
 
-Refer to the article for [configuration related to the application proxy connector](/entra/identity/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
+Refer to the article for [configuration related to the application proxy connector](/entra/identity/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-microsoft-entra-id)
 
 We installed the application proxy connector on Power BI Report Server, but you can configure it on a separate server and make sure that delegation is set up properly.
 

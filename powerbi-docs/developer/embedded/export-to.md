@@ -1,12 +1,12 @@
 ---
 title: Export Power BI embedded analytics reports API
 description: Learn how to export an embedded Power BI report.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/17/2024
+ms.date: 04/27/2025
 ---
 
 # Export Power BI report to file
@@ -366,7 +366,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 ## Considerations and limitations
 
 * An export API operation load is evaluated as a slow-running background operation, as described in [Premium capacity load evaluation](../../enterprise/service-premium-concepts.md).
-* All related semantic models in the report you're exporting must reside on a Premium or Embedded capacity, including semantic models with a Direct Query connection.
+* All related semantic models in the report you're exporting must reside on a Fabric, Premium or Embedded capacity, including semantic models with a Direct Query connection.
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in a single exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.

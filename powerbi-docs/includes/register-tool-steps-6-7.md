@@ -2,8 +2,8 @@
 title: Registration tool steps 6-7
 description: Azure AD registration tool for Power BI embedded analytics, steps 6-7
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 11/04/2020
 ms.custom: include file

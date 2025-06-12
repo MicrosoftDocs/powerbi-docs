@@ -1,8 +1,8 @@
 ---
 title: Create Power BI visuals using R
 description: Learn how you can download, enable, and use the R engine to visualize your data on Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

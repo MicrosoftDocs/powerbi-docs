@@ -26,7 +26,7 @@ landingContent:
           - text: Take a tour of the Power BI service
             url: end-user-reading-view.md
           - text: Review concepts and content
-            url: end-user-basic-concepts.md
+            url: ../fundamentals/service-basic-concepts.md
 
   # Card (optional)
   - title: Get started

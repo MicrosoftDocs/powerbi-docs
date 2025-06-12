@@ -1,7 +1,8 @@
 ---
 title: Space between labels
 description: Setting - Space between labels (Reference labels, Spacing, Space between labels)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

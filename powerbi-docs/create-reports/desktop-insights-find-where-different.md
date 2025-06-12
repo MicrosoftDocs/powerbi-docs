@@ -1,8 +1,8 @@
 ---
 title: Use insights to find where distribution is different
 description: Learn how to easily gain insights to find where a distribution in a chart is different in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi

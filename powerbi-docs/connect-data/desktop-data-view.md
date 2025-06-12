@@ -1,13 +1,13 @@
 ---
 title: Table view in Power BI Desktop
 description: Learn how the Table view helps you inspect, explore, and understand data in your Power BI Desktop model. 
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/11/2024
+ms.date: 04/02/2025
 LocalizationGroup: Model your data
 ---
 # Work with Table view in Power BI Desktop
@@ -43,6 +43,17 @@ You can filter individual values, or use advanced filtering based on the data in
 
 > [!NOTE]
 > When a Power BI model is created in a different culture than your current user interface, the search box doesn't appear in the Table view user interface for anything other than text fields. For example, this behavior would apply for a model created in US English that you view in Spanish.
+
+## Copying elements in Table view
+
+You can copy various elements of a table in *Table view* with a few easy steps. 
+
+First, you can right-click any cell to access various options, including copying the entire table, copying a specific column, or copying the cell value. To access these features you can right-click on any cell, then select **Copy** from the menu that appears. Options to copy the cell value, the column, or the entire table appear, as shown in the following image.
+
+:::image type="content" source="media/desktop-data-view/data-view-copy-elements.png" alt-text="Screenshot of copy table elements menu.":::
+
+You can also use the keyboard shortcut by pressing **Ctrl+C**. Copying elements in Table view lets you extract individual cell values directly, eliminating extra steps and making your workflow more efficient.
+
 
 ## Related content
 

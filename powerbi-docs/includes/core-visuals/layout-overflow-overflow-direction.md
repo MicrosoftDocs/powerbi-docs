@@ -1,7 +1,8 @@
 ---
 title: Overflow direction
 description: Setting - Overflow direction (Layout, Overflow, Overflow direction)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

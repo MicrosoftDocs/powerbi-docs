@@ -1,13 +1,13 @@
 ---
 title: Use Tabular Model Definition Language (TMDL) view in Power BI Desktop (preview)
 description: Learn how to use TMDL view to see and work with semantic model metadata in a visual format in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/14/2025
+ms.date: 04/22/2025
 LocalizationGroup: Transform and shape data
 ---
 
@@ -71,6 +71,30 @@ Autocomplete is built into the code editor, and offers intelligent suggestions w
 
 You can also trigger the autocomplete feature in any location by pressing *Ctrl+Space*.
 
+### Tooltips
+
+The context tooltip shows on mouse hover, providing information about each TMDL object or property.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-20.png" alt-text="Screenshot of a context tooltip shown on mouse hover in the code editor, displaying information about a TMDL object or property.":::
+
+### Code actions
+
+When the cursor is on a squiggle or selected text, the TMDL view displays a light bulb icon indicating available Code Actions, such as generating lineage tags or correcting property name misspellings.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-21.png" alt-text="Screenshot of the TMDL view in the code editor showing a light bulb icon next to a squiggle, indicating available Code Actions like generating lineage tags.":::
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-22.png" alt-text="Screenshot of the TMDL view in the code editor showing a light bulb icon next to a squiggle, indicating available Code Actions like correcting property name misspellings.":::
+
+### Code formatting
+
+Format your TMDL code by pressing Shift + Alt + F or by clicking the Format option in the ribbon.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-23.png" alt-text="Screenshot of the code editor with TMDL code being formatted using the Format option in the ribbon.":::
+
+You can also format selected text using the "Format Selection" option in the context menu.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-24.png" alt-text="Screenshot of the code editor with TMDL code being formatted the Shift + Alt + F keyboard shortcut.":::
+
 ### Error diagnostics
 
 The code editor's built-in error diagnostics help you identify and fix issues by highlighting TMDL language errors in the code editor, with detailed messages that provide guidance on resolving them. Additionally, an error summary is available in the **Problems pane**, allowing easy navigation to the error location in the code editor, as shown in the following image.
@@ -94,6 +118,38 @@ In the event of a failure, an error notification is displayed to show that your 
 > [!NOTE]
 > TMDL view modifies only the semantic model metadata, without refreshing data or affecting the report. If your changes require a data refresh, such as altering a PowerQuery expression or calculated column expression, you must manually refresh the table or model for the changes to take effect. Additionally, renaming a field in TMDL view may break visuals within the report that use that field.
 
+## Preview changes to the semantic model
+
+TMDL view enables you to preview script changes by showing a preview of the semantic model before and after script execution, shown as a TMDL code diff. Previewing script changes is particularly useful when copying scripts from other sources, letting you to assess their impact before running them against your semantic model. 
+
+Selecting the **Preview** button displays a TMDL diff of the semantic model before and after executing the TMDL script in the opened tab.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-15.png" alt-text="Screenshot of the preview button to preview script changes.":::
+
+A side-by-side window appears in the right pane, as shown in the following image.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-16.png" alt-text="Screenshot of preview view pane for pending script changes." lightbox="media/desktop-tabular-model-definition-language-view/tmdl-view-16.png":::
+
+Red and green boxes highlight the changes, with red boxes indicated removed or changed lines, and green indicating new lines. 
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-17.png" alt-text="Screenshot of red and green highlights for pending script changes.":::
+
+> [!NOTE]
+> The comparison isn't directly against the TMDL script currently displayed, but rather a comprehensive semantic model comparison before and after executing the script. So, some properties may be ordered differently than what is shown in the tab, adhering to the default TMDL property/object ordering.
+
+The preview is read-only, but you can keep editing your script. To refresh the preview after changes, select the **Update Preview** button, as shown in the banner in the following image.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-18.png" alt-text="Screenshot of the update preview button.":::
+
+There's a toolbar in the top right corner of the preview screen that enables navigation of all code diffs, enabling you to toggle between *inline* or *side-by-side* diff, viewing or hiding unchanged regions, and closing the preview view.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-19.png" alt-text="Screenshot of the toolbar for script preview.":::
+
+There are a few considerations to keep in mind when previewing changes to the semantic model:
+* TMDL view resets view configurations to default on each preview execution.
+* A preview runs only with a valid TMDL change. Invalid TMDL scripts won't execute a preview and an error is displayed in the Output pane.
+
+
 ## TMDL script tabs
 
 In TMDL view you can have multiple script tabs at once, any of which can be renamed or removed. 
@@ -107,13 +163,52 @@ The contents of the **TMDL view** tabs are saved in the report file when you sav
 > [!TIP]
 > You can open and edit TMDL scripts in Visual Studio Code, and they will properly reload after restarting Power BI Desktop.
 
-The *Problems* and *Output* panes display errors and messages specific to the script tab that's currently selected and displayed. Switching to a different TMDL scrip tab refreshes both of those panes with information specific to the selected and currently shown tab.
+The *Problems* and *Output* panes display errors and messages specific to the script tab that's currently selected and displayed. Switching to a different TMDL script tab refreshes both of those panes with information specific to the selected and currently shown tab.
 
 You can select the *Clear* button to empty the *Output* pane messages. 
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-14.png" alt-text="Screenshot of the clear button used to empty output pane messages.":::
 
 Messages are kept only for each Power BI Desktop session, so restarting Power BI Desktop clears all output messages for all script tabs.
+
+## Compatibility level upgrade prompt
+
+The [compatibility level](/analysis-services/tabular-models/compatibility-level-for-tabular-models-in-analysis-services) of a Power BI semantic model determines the features that are accessible. TMDL view allows you to add any Analysis Services object or property, even if it's not available at the current compatibility level. When applying a change that necessitates a compatibility level upgrade, TMDL view provides a prompt indicating which object or objects require the upgrade.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-25.png" alt-text="Screenshot of the TMDL view in Power BI with a Compatibility Level Upgrade prompt. The message indicates that the current compatibility level of 1550 is below the required level of 1601 for the FormatStringDefinition property and asks whether to upgrade and re-apply the change.":::
+
+## Object renaming with TMDL view
+
+To rename an object within the TMDL view, it is necessary to script its parent. For instance, renaming a column requires scripting the table, while renaming a table necessitates scripting the entire semantic model. Learn more about tabular object model hierarchy in the following document: [Tabular object model hierarchy](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions#tabular-object-model-hierarchy&preserve-view=true).
+
+With the TMDL view, bulk renaming can be performed efficiently using simple find and replace patterns. For instance, you can rename all table columns to lowercase by following these steps.
+
+Open the TMDL view, script the table you intend to modify.
+
+Press CTRL+F to open the find and replace dialog, ensure that the Regular Expression option is enabled.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-26.png" alt-text="Screenshot of the TMDL view in Power BI showing the Find and Replace feature in use. The Replace input is active with an option to toggle between Find and Replace modes, highlighted in the toolbar above the code editor.":::
+
+Enter the following patterns in the find and replace fields and select **Replace All.**
+
+| Action   | Pattern/Replacement           |
+|----------|-------------------------------|
+| Find     | `(^\s+column\s+)(.+)`         |
+| Replace  | `$1\L$2`                      |
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-27.png" alt-text="Screenshot of a Power BI data model configuration screen showing a Product table definition with two columns: product (string) and productkey (int64), along with their metadata properties.":::
+
+Run your TMDL script to rename all table columns to lowercase instantly:
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-28.png" alt-text="Screenshot of a Power BI Product table showing 14 columns including brand, category, color, manufacturer, product, productkey, subcategory, unit cost, unit price, and weight attributes.":::
+
+Notice that column name will differ from the sourceColumn property. 
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-29.png" alt-text="Screenshot of a Power BI data model configuration showing the productKey column definition with int64 datatype, where the sourceColumn is mapped to ProductKey in the source data.":::
+
+Synchronization between the semantic model table and Power Query query relies on sourceColumn, keeping names independent. When you open the Power Query editor, it will display the column names that match the sourceColumn, rather than the model's column name. Additionally, renaming a column in the user interface will not automatically add a rename step to the query until sourceColumn and column name are identical.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-30.png" alt-text="Screenshot of the Power BI Query Editor showing product data with columns for ProductKey, Product Code, Product, and Manufacturer, with 16 queries visible in the navigation pane.":::
 
 ## TMDL view and Power BI project
 
@@ -163,7 +258,7 @@ createOrReplace
 
 **Scenario:** I need to modify the Power Query expression of my table without triggering a refresh.
 
-**Solution:** Script the table, modify the Power Query expression, and apply the changes. TMDL view does not require refreshing your data.
+**Solution:** Script the table, modify the Power Query expression, and apply the changes. TMDL view doesn't require refreshing your data.
 
 
 </br>
@@ -191,11 +286,10 @@ createOrReplace
 
 TMDL view is currently in preview, so keep the following limitations in mind:
 
-* Not all modeling changes are supported. During preview, each *Apply* change undergoes the same validations that occur when opening a Power BI project (PBIP). Refer to the [Model Authoring article](../developer/projects/projects-overview.md) (File change column) for a list of supported changes. Executing unsupported changes may result in unexpected behaviors.
+* You can use the TMDL view to edit any object or property within a semantic model. However, incomplete or incorrect modifications may lead to unexpected behavior. For more guidance on these operations, refer to the [Model Authoring article](../developer/projects/projects-overview.md#model-authoring).
 * The *Command palette* displays some commands that aren't currently supported.
 * Setting up the *initial* Git integration *from* the workspace won't include TMDL View scripts saved in published semantic model. Learn more in the [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo) article.
 * You can't script model explorer groups such as Measures, Columns, so on.
-* TMDL view is unavailable when editing [Direct Lake semantic models](/fabric/get-started/direct-lake-power-bi-desktop).
 
 
 ## Related content

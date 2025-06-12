@@ -1,8 +1,8 @@
 ---
 title: Link preview cards in Microsoft Teams chats and channels
 description: Learn about link preview cards in Microsoft Teams chats and channels.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual

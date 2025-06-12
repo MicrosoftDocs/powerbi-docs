@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/17/2025
+ms.date: 04/10/2025
 LocalizationGroup: Connect to data
 ---
 # Learn which Python packages are supported in Power BI
@@ -30,9 +30,9 @@ There are a handful of requirements and limitations for Python packages:
 ### For reports in Premium/Fabric backed workspaces
 * Python runtime: Python 3.11
 
-## Python packages that are supported in the Power BI service (Premium/ Fabric backed workspaces)
+## Python packages that are supported in the Power BI service 
 
-The following table shows which packages **are supported** in Power BI for reports in **Premium/Fabric backed workspaces**.
+The following table shows which packages **are supported** in Power BI for reports in **Premium/Fabric backed workspaces** and Pro/PPU licenses.
 [Download packages here](https://pypi.org/) 
 
 | Package            | Version   |  
@@ -103,43 +103,15 @@ The following table shows which packages **are supported** in Power BI for repor
 | zipp               | 3.20.1    | 
 
 
-### For non-Premium/Fabric backed workspaces/Sov. Clouds
-* Python runtime: Python 3.7.7
-
-The following table shows which packages **are supported** in Power BI reports in **non-Premium/Fabric backed workspaces**.
-
-|        Package        |   Version   |                                   Link                                   |
-|-----------------------|-------------|--------------------------------------------------------------------------|
-| `cycler` | 0.11.0 | [https://pypi.org/project/cycler](https://pypi.org/project/cycler) |
-| `joblib` | 1.1.0 | [https://pypi.org/project/joblib](https://pypi.org/project/joblib) |
-| `kiwisolver` | 1.4.4 | [https://pypi.org/project/kiwisolver](https://pypi.org/project/kiwisolver) |
-| `matplotlib` | 3.2.2 | [https://pypi.org/project/matplotlib](https://pypi.org/project/matplotlib) |
-| `numpy` | 1.21.6 | [https://pypi.org/project/numpy](https://pypi.org/project/numpy) |
-| `packaging` | 21.3 | [https://pypi.org/project/packaging](https://pypi.org/project/packaging) |
-| `pandas` | 1.3.5 | [https://pypi.org/project/pandas](https://pypi.org/project/pandas) |
-| `patsy` | 0.5.2 | [https://pypi.org/project/patsy](https://pypi.org/project/patsy) |
-| `pip` | 22.1.2 | [https://pypi.org/project/pip](https://pypi.org/project/pip) |
-| `pyparsing` | 3.0.9 | [https://pypi.org/project/pyparsing](https://pypi.org/project/pyparsing) |
-| `python-dateutil` | 2.8.2 | [https://pypi.org/project/python-dateutil](https://pypi.org/project/python-dateutil) |
-| `pytz` | 2022.1 | [https://pypi.org/project/pytz](https://pypi.org/project/pytz) |
-| `scikit-learn` | 1.0.2 | [https://pypi.org/project/scikit-learn](https://pypi.org/project/scikit-learn) |
-| `scipy` | 1.7.3 | [https://pypi.org/project/scipy](https://pypi.org/project/scipy) |
-| `seaborn` | 0.11.2 | [https://pypi.org/project/seaborn](https://pypi.org/project/seaborn) |
-| `setuptools` | 63.2.0 | [https://pypi.org/project/setuptools](https://pypi.org/project/setuptools) |
-| `six` | 1.16.0 | [https://pypi.org/project/six](https://pypi.org/project/six) |
-| `statsmodels` | 0.13.2 | [https://pypi.org/project/statsmodels](https://pypi.org/project/statsmodels) |
-| `threadpoolctl` | 3.1.0 | [https://pypi.org/project/threadpoolctl](https://pypi.org/project/threadpoolctl) |
-| `typing-extensions` | 4.3.0 | [https://pypi.org/project/typing-extensions](https://pypi.org/project/typing-extensions) |
-| `xgboost` | 1.6.1 | [https://pypi.org/project/xgboost](https://pypi.org/project/xgboost) |
-
-
 ## Considerations and limitations
 
-- The update to the new runtime isn't available in non-Fabric regions and Sov. clouds
-- The rollout is gradual and is expected to be available in all Fabric regions by 15 March 2025.
+- Py visuals are not supported in the service for Sovereign cloud customers and tenants in regions without Fabric availability. Py visuals are supported in Desktop for all users.
 - Py visuals aren't supported with Service Principal Profiles for App Owns Data.
-- Py visuals rendered from the Power BI service (for Premium/ F SKUs) can support payloads of < 30Mb.
+- Py visuals rendered from the Power BI service are subject to a limit of 30MB. This limit applies to the total payload of compressed input data and the Python script itself. Always check Py visuals after publishing the report to ensure the report will display as expected. 
 
+- Py visuals rendered in the Power BI service are subject to a script execution timeout of 1 minute.
+
+- Publish to web isn't supported.
 
 ## Related content
 

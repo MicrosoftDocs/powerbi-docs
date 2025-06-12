@@ -15,16 +15,13 @@ LocalizationGroup: Get started
 ---
 # Tutorial - Getting around in Power BI service
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
-
-Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in [Power BI Desktop](https://powerbi.microsoft.com/desktop/), combining data and creating reports, dashboards, and apps for others. They're *designers* and *creators*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This tutorial is for *business users* of the Power BI service. 
+Now that you know the [basics of the Power BI service](../fundamentals/service-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in [Power BI Desktop](https://powerbi.microsoft.com/desktop/), combining data and creating reports, dashboards, and apps for others. They're *designers* and *creators*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This tutorial is for *business users* of the Power BI service. 
 
 ## Prerequisites
 
 - If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
-- Read [Power BI service basic concepts.](end-user-basic-concepts.md)
-
+- Read [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 - Viewing Power BI content (reports, dashboards, apps) created by *designers* requires one of two conditions:
     - A Power BI Pro or Premium Per User (PPU) license.
     - Your organization to have a Power BI Premium subscription, and the content to be shared with you from a Premium capacity. 
@@ -70,6 +67,9 @@ A dashboard is a single page that shows visualizations of the most important ele
 1. The Sales and marketing sample has one dashboard. To open the dashboard, select it. 
 
     :::image type="content" source="media/end-user-experience/power-bi-related.png" alt-text="Screenshot of the Related content window.":::
+
+   > [!NOTE]
+   > If the dashboard doesn't appear in the list right away, it could be because the sample file is large. Check back in a few minutes. 
 
 1. The dashboard opens in the Power BI service. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md).
 

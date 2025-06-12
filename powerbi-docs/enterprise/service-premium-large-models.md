@@ -1,22 +1,22 @@
 ---
 title: Large semantic models in Power BI Premium
 description: The large semantic model storage format allows semantic models in Power BI Premium to grow beyond 10 GB in size.
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/22/2023
+ms.date: 05/27/2025
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
 
 # Large semantic models in Power BI Premium
 
-Power BI semantic models can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large semantic models beyond the default limit can be enabled with the **Large semantic model storage format** setting. When enabled, semantic model size is limited by the Premium *capacity* size or the maximum size set by the administrator.
+Power BI semantic models can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large semantic models beyond the default limit can be enabled with the **Large semantic model storage format** setting. When enabled, semantic model size is limited by the Premium *capacity* size or the [maximum size](service-admin-premium-workloads.md#max-offline-semantic-model-size) set by the administrator.
 
-Large semantic models can be enabled for all Premium P SKUs, Embedded A SKUs, and with Premium Per User (PPU). The large semantic model size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
+Large semantic models can be enabled for all Fabric F SKUs, Premium P SKUs, Embedded A SKUs, and with Premium Per User (PPU). The large semantic model size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
 
 While required for semantic models to grow beyond 10 GB, enabling the Large semantic model storage format setting has other benefits. If you're planning to use XMLA endpoint-based tools for semantic model write operations, be sure to enable the  setting, even for semantic models that you wouldn't necessarily characterize as a *large* semantic model. When enabled, the large semantic model storage format can improve XMLA write operations performance.
 
@@ -26,13 +26,13 @@ Large semantic models in the service don't affect the Power BI Desktop model upl
 > Power BI Premium does support large semantic models. Enable the **Large semantic model storage format** option to use semantic models in Power BI Premium that are larger than the default limit.
 
 > [!NOTE]
-> Large semantic models in Power BI Premium are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](service-govus-overview.md#power-bi-feature-availability).
+> Large semantic models in Power BI Premium aren't available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which aren't, see [Power BI feature availability for U.S. Government customers](service-govus-overview.md#power-bi-feature-availability).
 
 ## Enable large semantic models
 
 Steps here describe enabling large semantic models for a new model published to the service. For existing semantic models, only step 3 is necessary.
 
-1. Create a model in Power BI Desktop. If your semantic model will become larger and progressively consume more memory, be sure to configure [Incremental refresh](../connect-data/incremental-refresh-overview.md).
+1. Create a model in Power BI Desktop. If your semantic model becomes larger and progressively consumes more memory, be sure to configure [Incremental refresh](../connect-data/incremental-refresh-overview.md).
 
 2. Publish the model as a semantic model to the service.
 
@@ -159,8 +159,6 @@ Keep in mind the following restrictions when using large semantic models:
 
 * **Push semantic models**: Push semantic models don't support the large semantic model storage format.
 
-* **Pro isn't supported** - Large semantic models aren't supported in Pro workspaces. If a workspace is migrated from Premium to Pro, any semantic models with the *large semantic model storage format* setting, will fail to load.
-
 * You can't use REST APIs to change the settings of a workspace to allow new semantic models to use the large semantic model storage format by default.
 
 ## Region availability
@@ -170,7 +168,7 @@ Large semantic models in Power BI are only available in Azure regions that suppo
 The following list provides regions where large semantic models in Power BI are available. Regions not in the following list aren't supported for large models.
 
 >[!NOTE]
->Once a large semantic model is created in a workspace, it must stay in that region. You cannot reassign a workspace with a large semantic model to a Premium capacity in another region.
+>Once a large semantic model is created in a workspace, it must stay in that region. You can't reassign a workspace with a large semantic model to a Premium capacity in another region.
 
 | Azure region        | Azure region abbreviation |
 |---------------------|---------------------------|

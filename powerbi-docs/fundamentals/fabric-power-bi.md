@@ -24,6 +24,10 @@ This article answers your questions and helps you understand how these two tools
 
 [Open Microsoft Fabric](https://app.fabric.microsoft.com)
 
+> [!NOTE]
+> * The [Fabric Analyst in a Day (FAIAD)](https://aka.ms/LearnFAIAD) workshop is a free, hands-on training designed for analysts working with Power BI and Microsoft Fabric. You can get hands-on experience on how to analyze data, build reports, using Fabric. It covers key concepts like working with lakehouses, creating reports, and analyzing data in the Fabric environment.
+> * Join our new Microsoft Fabric user panel to share your feedback and help shape Fabric and Power BI. Participate in surveys and 1:1 sessions with the product team. Learn more and sign up [Fabric user panel](/fabric/fundamentals/feedback#fabric-user-panel).
+
 ## Power BI as a standalone service
 
 The Microsoft Power BI service started as a standalone Software as a service (SaaS) offering for combining, exploring, and visualizing your data. That same Power BI service is now a component of Microsoft Fabric. You can continue to use Power BI by itself, if that's what you need. And you can use the new capabilities of Fabric with Power BI to do even more with your data.
@@ -38,7 +42,7 @@ To learn more about Power BI, read [What is Power BI](power-bi-overview.md).
 
 Fabric is an all-in-one data analytics solution that covers everything from data movement to data science, real-time analytics, and business intelligence. Fabric consolidates several Azure data workloads with Power BI so that you and your colleagues can all work with different workloads, and in different roles, in the same environment. With Fabric, you can go from raw fragmented data to meaningful insights across your organization and in other clouds in seconds.  
 
-The data for all of these workloads is consolidated in a multicloud data lake called OneLake. Each Fabric tenant has one OneLake, and all Fabric services work natively with data in OneLake. This one copy of the data can be used across all of Fabric. This centralized storage eliminates duplication, maintains a single data source, simplifies data discovery, and enforces security and data protection. The data is saved in a way that makes is accessible to the different workloads in the necessary format.  
+The data for all of these workloads is consolidated in a multicloud data lake called OneLake. Each Fabric tenant has one OneLake, and all Fabric services work natively with data in OneLake. This one copy of the data can be used across all of Fabric. This centralized storage eliminates duplication, maintains a single data source, simplifies data discovery, and enforces security and data protection. The data is saved in a way that makes it accessible to the different workloads in the necessary format.  
 
  AI capabilities are seamlessly embedded within Fabric, eliminating the need for manual integration. With Fabric, you can easily transition your raw data into actionable insights.
 

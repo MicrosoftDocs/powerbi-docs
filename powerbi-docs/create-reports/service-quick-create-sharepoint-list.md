@@ -1,8 +1,8 @@
 ---
 title: Create a report quickly from a SharePoint list or library in the Power BI service
 description: There's a new way to create reports quickly from data in SharePoint lists and libraries. Power BI automatically generates the visuals for you.    
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -81,7 +81,8 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 - Within SharePoint libraries, this option will only show on the root of the document library.
 - The reports and semantic models created through this SharePoint experience are stored in special, system-generated workspaces hosted in shared capacity. Users aren't meant to access these workspaces outside of the SharePoint experience.
 - If a user enables a terms of use acceptance flow in SharePoint, they will not be able to create a report from a SharePoint list due to issues with user authentication.
-- The use of data gateways in currently unsupported for this feature. 
+- The use of data gateways in currently unsupported for this feature.
+- The "Enable granular access control for all data connections" tenant feature switch does not work with SharePoint lists. For more information, see the [Data exfiltration considerations and best practices for dataflows](/power-query/dataflows/data-exfiltration-best-practices) page. 
 
 ## Troubleshooting
 

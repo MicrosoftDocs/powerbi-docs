@@ -1,8 +1,8 @@
 ---
 title: Manage semantic model access permissions
 description: As a semantic model owner, can review and manage access to your semantic model, to help keep your sensitive data secure.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources

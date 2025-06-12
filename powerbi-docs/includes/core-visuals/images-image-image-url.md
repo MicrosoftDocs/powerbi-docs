@@ -1,7 +1,8 @@
 ---
 title: Image URL
 description: Setting - Image URL (Images, Image, Image URL)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

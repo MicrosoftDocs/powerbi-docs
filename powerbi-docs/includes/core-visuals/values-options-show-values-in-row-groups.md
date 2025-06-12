@@ -1,7 +1,8 @@
 ---
 title: Show values in row groups rather than columns
 description: Setting - Show values in row groups rather than columns (Values, Options, Show values in row groups rather than columns)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting unsupported data source for refresh
 description: Learn how to troubleshoot unsupported data source for refresh message in Power BI Desktop. This issue happens when the data source isn’t supported for refresh.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin

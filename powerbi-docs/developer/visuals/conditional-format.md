@@ -1,8 +1,8 @@
 ---
 title: Conditional formatting of Power BI custom visuals
 description: Learn how to customize your Power BI visual by applying conditional formatting functionality based on data values.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: Jenny, Aleksei
 ms.service: powerbi
 ms.topic: how-to
@@ -197,13 +197,13 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 ## Considerations and limitations
 
-Conditional formatting isn't supported for the following visuals:
+Conditional formatting supported for the following visuals:
 
 * Table based visuals
 
 * Matrix based visuals
 
-We recommend that you don’t use conditional formatting with series. Instead, you should allow customers to format each series individually, making it easy to visually distinguish between series. Most out-of-the-box visuals with series, share this approach.
+We recommend that you don’t use conditional formatting with series. Instead, allow customers to format each series individually, making it easy to visually distinguish between series. Most out-of-the-box visuals with series share this approach.
 
 ## Related content
 

@@ -1,7 +1,8 @@
 ---
 title: Auto-size width
 description: Setting - Auto-size width (Column headers, Auto-size width)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

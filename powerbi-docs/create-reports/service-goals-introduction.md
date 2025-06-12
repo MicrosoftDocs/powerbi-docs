@@ -1,8 +1,8 @@
 ---
 title: Get started with goals in Power BI
 description: Get started with an introduction to goals in Power BI
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -119,6 +119,7 @@ Scorecards do have goal-level permissions roles. While workspace permissions giv
 - Goals don't support row-level security (RLS).
 - The maximum number of subgoal levels is four.
 - Goals don't support publish-to-web.
+- The scorecard visual does not work in Sharepoint embed
 - Business-to-business sharing (sharing across tenants) isn't supported.
 - Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md).
 - Scorecards aren't supported in [embedded analytics](../developer/embedded/embedded-analytics-power-bi.md).

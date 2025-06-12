@@ -1,8 +1,8 @@
 ---
 title: Assume Referential Integrity setting in Power BI Desktop
 description: Learn how to have Power BI Desktop assume referential integrity, which enables queries to use INNER JOIN statements.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

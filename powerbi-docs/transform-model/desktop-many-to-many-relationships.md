@@ -1,8 +1,8 @@
 ---
 title: Many-to-many relationships in Power BI Desktop
 description: Learn how to use relationships with a many-to-many cardinality to more easily create data models that contain two or more data sources in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -37,7 +37,7 @@ Now, imagine that the **Product** table displays just two rows, as shown:
 
 :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_03.png" alt-text="Screenshot of a Product table visual with two rows.":::
 
-Also imagine that the Sales table has just four rows, including a row for a product C. Because of a referential integrity error, the product C row doesn't exist in the **Product** table.
+Also imagine that the Sales table has just four rows, including a row for a product C. Because product C row doesn't exist in the **Product** table, there's a referential integrity error.
 
 :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_04.png" alt-text="Screenshot of a Sales table visual with four rows.":::
 

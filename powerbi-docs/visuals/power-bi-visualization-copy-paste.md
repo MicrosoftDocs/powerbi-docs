@@ -1,9 +1,9 @@
 ---
 title: Copy and paste a visualization in Power BI.
 description: Learn how to copy and paste visualizations within Power BI reports and dashboards, and how to manage permissions for copying visuals.
-author: JaedenArmstrong
+author: JulCsc
 ms.author: miguelmyers
-ms.reviewer: davidiseminger
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

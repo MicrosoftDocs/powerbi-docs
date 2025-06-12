@@ -5,8 +5,8 @@ ms.date: 04/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
 ---
 

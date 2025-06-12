@@ -1,8 +1,8 @@
 ---
 title: Tips and tricks for asking questions with Q&A
 description: Use the following tips and tricks to quickly and accurately ask questions with Q&A in the various Power BI apps.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: Mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
@@ -78,5 +78,5 @@ After Q&A displays your results, keep the conversation going. Use the interactiv
 ## Related content
 
 - Go to [Q&A for Power BI business users](end-user-q-and-a.md)  
-- See [Basic concepts for the Power BI service business user](end-user-basic-concepts.md)  
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)

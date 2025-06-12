@@ -1,8 +1,8 @@
 ---
 title: Administration of datamarts (preview)
 description: Learn how to manage and administer datamarts in Power BI, including enabling datamarts, tracking usage, viewing audit logs, and understanding limitations.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -15,6 +15,8 @@ LocalizationGroup: Data from files
 # Administration of datamarts
 
 You can administer the use and settings for datamarts just like you can administer other aspects of Power BI. This article describes and explains how to administer your datamarts, and where to find the settings.
+
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
 
 ## Enabling datamarts in the admin portal
 

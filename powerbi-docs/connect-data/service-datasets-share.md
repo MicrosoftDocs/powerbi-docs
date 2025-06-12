@@ -1,8 +1,8 @@
 ---
 title: Share access to a semantic model
 description: As a semantic model owner, you share and grant access to your semantic models so that others can use them. Learn how to grant access to your semantic models.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -32,7 +32,7 @@ To share a semantic model
 
     ![Screenshot of the Share semantic model dialog.](media/service-datasets-share/power-bi-dataset-grant-access-dialog.png)
 
-    * **Allow allow recipients to modify this semantic model**: This option allows the recipients to modify the semantic model.
+    * **Allow recipients to modify this semantic model**: This option allows the recipients to modify the semantic model.
     * **Allow recipients to share this semantic model**: This option allows the recipients to grant access to other users via sharing.
     * **Allow recipients to build content with the data associated with this semantic model**: This option grants the recipients [Build permission](service-datasets-build-permissions.md) on the semantic model, which enables them to build new reports and dashboards based on the data associated it.
 

@@ -1,8 +1,8 @@
 ---
 title: 'Download samples to My workspace in the Power BI service'
 description: Learn how to download sample data to My workspace in your Power BI service account for use in Mobile app tutorials.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual

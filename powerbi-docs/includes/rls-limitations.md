@@ -1,9 +1,9 @@
 ---
-author: davidiseminger
+author: JulCsc
 ms.service: powerbi
 ms.topic: include
 ms.date: 11/10/2023
-ms.author: davidi
+ms.author: juliacawthra
 ---
 
 ## Considerations and limitations

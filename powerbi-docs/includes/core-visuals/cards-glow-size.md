@@ -1,7 +1,8 @@
 ---
 title: Size
 description: Setting - Size (Cards, Glow, Size)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

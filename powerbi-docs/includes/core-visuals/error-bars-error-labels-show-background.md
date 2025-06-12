@@ -1,7 +1,8 @@
 ---
 title: Show background
 description: Setting - Show background (Error bars, Error labels, Show background)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

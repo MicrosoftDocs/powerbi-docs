@@ -1,8 +1,8 @@
 ---
 title: Install, share, and update template apps in your organization with Power BI
 description: Learn how you can install and customize Power BI template apps, and then share them as apps within your organization.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps

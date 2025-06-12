@@ -1,8 +1,8 @@
 ---
 title: "Drillthrough reports in a Power BI paginated report"
 description: Discover drillthrough reports, which open when you select a link in a Power BI paginated report to get details about an item in an original summary report in Power BI Report Builder.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.date: 02/08/2024
 ms.service: powerbi
 ms.subservice: report-builder

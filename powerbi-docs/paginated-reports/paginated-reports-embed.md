@@ -1,8 +1,8 @@
 ---
 title: "Embed a paginated report"
 description: Learn how to embed a Power BI paginated report
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

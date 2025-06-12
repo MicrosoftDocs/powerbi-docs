@@ -1,13 +1,13 @@
 ---
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 03/19/2025
+ms.date: 06/08/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,22 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## June 2025
+
+### Org apps are now available in Power BI mobile! (preview)
+
+Org apps, introduced earlier this year in the Power BI service, are now available in the Power BI mobile apps! You can get to them via the **Apps** tab or via workspaces you have access to. Like any other item type in the Power BI mobile apps, Org apps can appear on the home page, be discovered via search, be marked as favorites, and more. The Org app's content list will display both Power BI and Fabric items; however, Fabric items, not currently supported in the mobile apps, will open in your device's browser, rather than in the mobile app. Power BI items will open in the mobile app as usual. [Check out our documentation](./mobile-apps-org-apps.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/org-app.png" alt-text="Screenshot showing an org app in the Power BI mobile app." border="false":::
+
+## April 2025
+
+### Mobile layout auto-create is now generally available
+
+The auto-create mobile layout feature is now GA! This feature enables you to easily create a mobile-optimized layout for any new or existing report page, with just the push of a button! Check out our [documentation](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/auto-create-mobile-layout-option.png" alt-text="Screenshot showing the auto-create mobile layout option." lightbox="./media/mobile-whats-new-in-the-mobile-apps/auto-create-mobile-layout-option.png":::
 
 ## March 2025
 

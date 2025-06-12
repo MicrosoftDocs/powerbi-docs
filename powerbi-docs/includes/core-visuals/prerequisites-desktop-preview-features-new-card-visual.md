@@ -1,7 +1,8 @@
 ---
 title: (new) Card visual preview feature is enabled
 description: Prerequisite - (new) card visual feature is selected (Preview features)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

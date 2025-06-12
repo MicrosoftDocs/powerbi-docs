@@ -1,8 +1,8 @@
 ---
 title: Create data point annotations (preview)
 description: Learn how to add live data-point annotations to Power BI visuals embedded in your PowerPoint presentation.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -72,7 +72,7 @@ You can also toggle between showing and hiding annotations using [keyboard short
 |Keyboard shortcut       | Action                                                                  |
 |------------------------|-------------------------------------------------------------------------|
 |**Ctrl + Alt + I**      |Hide/show annotations.                                                   |
-|**Alt + H**             |Move focus to annotation toolbar.                                        |
+|**Ctrl + Shift + :**    |Move focus to annotation toolbar.                                        |
 |**Alt + Shift + I**     |Move focus to annotations group panels.                                  |
 
 ## Considerations and limitations

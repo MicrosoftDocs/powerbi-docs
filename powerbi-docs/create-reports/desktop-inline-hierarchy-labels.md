@@ -1,8 +1,8 @@
 ---
 title: Use inline hierarchy labels in Power BI
 description: Learn how to use inline hierarchy labels to see hierarchy labels as you expand visuals using the Expand All feature.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

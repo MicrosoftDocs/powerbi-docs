@@ -1,13 +1,13 @@
 ---
 title: Change log for Power BI Desktop
 description: This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: kfollis, davidi
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 06/10/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,96 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## May 2025 QFE 2
+
+*Version 2.143.1378.0, Released: June 4, 2025*
+ 
+Bug fixes/improvements:
+
+- Addressed regression that resulted in conditional formatting colors being improperly deleted.
+
+## May 2025 QFE 1
+
+*Version 2.143.1204.0, Released: May 28, 2025*
+
+Bug fixes/improvements:
+
+* Addressed regression in the filter pane **Apply** button not appearing.
+* Added a missing **Learn more** link for a new SQL Database feature under **Preview features**.
+* Added **Learn more** and **Share feedback** links for translytical task flows.
+* Addressed the incorrect inclusion of the action button *loading* state for non-DataFunction visual link types.
+* Updated to allow for better fuzzy matching between user inputs and trigger prompts in desktop by using LLM-based match.
+* Addressed dark mode styling issues for relationship checkboxes.
+* Updated swap loading messages in the data question service to improve clarity and accuracy.
+* Addressed outdated theme state IDs by introducing a feature switch to ignore them in button slicer visuals.
+* Implemented feature disablement by preventing entry points for unsupported visuals through refined supportability checks and filter handling logic.
+
+## April 2025 QFE 1
+
+*Version 2.142.1277.0, Released: May 5, 2025*
+
+Bug fixes and improvements:         
+
+* Addressed the incorrect classification of user errors in the orchestrator for the Desktop RAC.
+
+* Fixed the warning bar issue related to unsaved layout changes.
+
+* Addressed a bug causing NullReferenceException due to two files being opened at the same time.
+
+* Fixed access to Power Platform Dataflows and Dataverse in government clouds.
+
+## March 2025 QFE 5
+
+*Version 2.141.1754.0, Released: April 16, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where new Card visual conditional formatting wasn't working without small multiples.
+
+* Addressed the issue where two separate **Working on this** dialogs were displayed, and the second **Working on this** dialog would hang.
+
+
+
+## March 2025 QFE 4
+
+*Version 2.141.1558.0, Released: April 11, 2025*
+
+Bug fixes/improvements:
+
+* Rolled back fix for the issue where two separate **Working on this** dialogs are displayed and the second **Working on this** dialog hangs.
+
+
+## March 2025 QFE 3
+
+*Version 2.141.1580.0, Released: April 10, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where two separate **Working on this** dialogs were displayed, and the second **Working on this** dialog would hang.
+
+* Fixed Snowflake connector issues for March 2025 release.
+
+* Addressed a bug causing *TaskCanceledException* in the Power BI Windows application.
+
+
+## March 2025 QFE 2
+
+*Version 2.141.1451.0, Released: April 4, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue where **Edit in Desktop** doesn't work for Microsoft Store installations of Power BI Desktop.
+
+
+## March 2025 QFE 1
+
+*Version 2.141.1253.0, Released: March 30, 2025*
+
+Bug fixes/improvements:
+
+* Addressed the issue of a gray/empty *Load to report* dialog in the Power BI client for Windows.
+
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: "Create a paginated report from a Power BI report or dataset"
 description: Learn how to create a paginated report from a Power BI report or a shared dataset in the Power BI service.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: mibruhje
 ms.service: powerbi
 ms.subservice: report-builder

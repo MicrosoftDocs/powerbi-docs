@@ -1,8 +1,8 @@
 ---
 title: Using calculations options in Power BI Desktop
 description: Learn how to use various calculations in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
