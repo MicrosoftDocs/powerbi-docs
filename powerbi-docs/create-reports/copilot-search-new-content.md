@@ -112,11 +112,11 @@ Here are some best practices to make your items more discoverable in the standal
 Workspace admins control whether Copilot can search all workspace content or just content that has been Prepped for AI. Workspace admins can make this change themselves in Workspace settings under __Delegated settings__ under the heading __Copilot and Azure OpenAI service__. Tenant admins can also make a default selection for the entire tenant, using the tenant setting **Only show AI-prepped items in the standalone Copilot in Power BI experience (preview)**. Changes to these settings will take up to 24 hours to reflect in the search experiences. 
 
 
-![Delegated workspace setting to limit to prepped content.](media/copilot-search-new-content/workspace-settings-limit-to-prepped.png)
+![Delegated workspace setting to limit search to prepped content.](media/copilot-search-new-content/workspace-settings-limit-to-prepped.png)
 
 ### When is an item Prepped for AI?
 - For search purposes, Fabric data agents are always considered Prepped for AI. 
-- Power BI semantic models must have the [Prepped for AI](power-bi/create-reports/copilot-prepare-data-ai#mark-your-model-as-prepped-for-ai) checkbox selected by a creator. 
+- Power BI semantic models must have the [Prepped for AI](/power-bi/create-reports/copilot-prepare-data-ai) checkbox selected by a creator. 
 - Once that setting is selected, then all reports that use that model will also be considered as prepped for AI. 
 - Power BI workspace & org apps are considered as Prepped for AI, but the reports inside those apps are only considered as prepped if the report's semantic model was marked explicitly. This may result in users finding apps using search prompts, but they may not be able to answer data questions from those apps using the standalone Copilot experience. 
 
