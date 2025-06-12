@@ -42,7 +42,7 @@ To learn more about Power BI, read [What is Power BI](power-bi-overview.md).
 
 Fabric is an all-in-one data analytics solution that covers everything from data movement to data science, real-time analytics, and business intelligence. Fabric consolidates several Azure data workloads with Power BI so that you and your colleagues can all work with different workloads, and in different roles, in the same environment. With Fabric, you can go from raw fragmented data to meaningful insights across your organization and in other clouds in seconds.  
 
-The data for all of these workloads is consolidated in a multicloud data lake called OneLake. Each Fabric tenant has one OneLake, and all Fabric services work natively with data in OneLake. This one copy of the data can be used across all of Fabric. This centralized storage eliminates duplication, maintains a single data source, simplifies data discovery, and enforces security and data protection. The data is saved in a way that makes is accessible to the different workloads in the necessary format.  
+The data for all of these workloads is consolidated in a multicloud data lake called OneLake. Each Fabric tenant has one OneLake, and all Fabric services work natively with data in OneLake. This one copy of the data can be used across all of Fabric. This centralized storage eliminates duplication, maintains a single data source, simplifies data discovery, and enforces security and data protection. The data is saved in a way that makes it accessible to the different workloads in the necessary format.  
 
  AI capabilities are seamlessly embedded within Fabric, eliminating the need for manual integration. With Fabric, you can easily transition your raw data into actionable insights.
 
