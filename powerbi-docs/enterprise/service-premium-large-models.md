@@ -170,42 +170,62 @@ The following list provides regions where large semantic models in Power BI are 
 >[!NOTE]
 >Once a large semantic model is created in a workspace, it must stay in that region. You can't reassign a workspace with a large semantic model to a Premium capacity in another region.
 
-| Azure region        | Azure region abbreviation |
-|---------------------|---------------------------|
-| Australia East      | australiaeast             |
-| Australia Southeast | australiasoutheast        |
-| Brazil South        | brazilsouth               |
-| Canada East         | canadaeast                |
-| Canada Central      | canadacentral             |
-| Central India       | centralindia              |
-| Central US          | centralus                 |
-| East Asia           | eastasia                  |
-| East US             | eastus                    |
-| East US 2           | eastus2                   |
-| France Central      | francecentral             |
-| France South        | francesouth               |
-| Germany North       | germanynorth              |
-| Germany West Central| germanywestcentral        |
-| Japan East          | japaneast                 |
-| Japan West          | japanwest                 |
-| Korea Central       | koreacentral              |
-| Korea South         | koreasouth                |
-| North Central US    | northcentralus            |
-| North Europe        | northeurope               |
-| South Africa North  | southafricanorth          |
-| South Africa West   | southafricawest           |
-| South Central US    | southcentralus            |
-| Southeast Asia      | southeastasia             |
-| Switzerland North   | switzerlandnorth          |
-| Switzerland West    | switzerlandwest           |
-| UAE Central         | uaecentral                |
-| UAE North           | uaenorth                  |
-| UK South            | uksouth                   |
-| UK West             | ukwest                    |
-| West Europe         | westeurope                |
-| West India          | westindia                 |
-| West US             | westus                    |
-| West US 2           | westus2                   |
+| Azure region         | Azure region abbreviation |
+|----------------------|---------------------------|
+| Australia East       | australiaeast             |
+| Australia Southeast  | australiasoutheast        |
+| Austria East         | austriaeast               |
+| Brazil South         | brazilsouth               |
+| Brazil South B       | brazilsouthb              |
+| Canada Central       | canadacentral             |
+| Canada East          | canadaeast                |
+| Central India        | centralindia              |
+| Central US           | centralus                 |
+| Chile Central        | chilecentral              |
+| East Asia            | eastasia                  |
+| East US              | eastus                    |
+| East US 2            | eastus2                   |
+| France Central       | francecentral             |
+| France South         | francesouth               |
+| Germany North        | germanynorth              |
+| Germany West Central | germanywestcentral        |
+| Indonesia Central    | indonesiacentral          |
+| Israel Central       | israelcentral             |
+| Italy North          | Italynorth                |
+| Japan East           | japaneast                 |
+| Japan West           | japanwest                 |
+| Korea Central        | koreacentral              |
+| Korea South          | koreasouth                |
+| Malaysia West        | malaysiawest              |
+| Mexico Central       | mexicocentral             |
+| New Zealand North    | newzealandnorth           |
+| North Central US     | northcentralus            |
+| North Europe         | northeurope               |
+| Norway East          | norwayeast                |
+| Norway West          | norwaywest                |
+| Poland Central       | polandcentral             |
+| Qatar Central        | qatarcentral              |
+| Singapore            | singapore                 |
+| South Africa North   | southafricanorth          |
+| South Africa West    | southafricawest           |
+| South Central US     | southcentralus            |
+| Southeast Asia       | southeastasia             |
+| South India          | southindia                |
+| Spain Central        | spaincentral              |
+| Sweden Central       | swedencentral             |
+| Switzerland North    | switzerlandnorth          |
+| Switzerland West     | switzerlandwest           |
+| Taiwan North         | taiwannorth               |
+| Taiwan North West    | taiwannorthwest           |
+| UAE Central          | uaecentral                |
+| UAE North            | uaenorth                  |
+| UK South             | uksouth                   |
+| UK West              | ukwest                    |
+| West Europe          | westeurope                |
+| West India           | westindia                 |
+| West US              | westus                    |
+| West US 2            | westus2                   |
+| West US 3            | westus3                   |
 
 ## Related content
 
