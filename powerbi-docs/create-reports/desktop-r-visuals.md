@@ -46,10 +46,10 @@ After you've verified your R installation, you’re ready to begin creating R vi
    
 1. When you add an R visual to a report, Power BI Desktop makes the following changes:
 
-   - A placeholder R visual image appears on the report canvas.
-      
-   - The **R script editor** appears along the bottom of the center pane.
-      
+- A placeholder R visual image appears on the report canvas.
+   
+- The **R script editor** appears along the bottom of the center pane.
+   
    ![Screenshot of the Power BI R script editor.](media/desktop-r-visuals/r-visuals-4.png)
    
 1. In the **Values** section of the **Visualization** pane, drag fields from the **Fields** pane that you want to consume in your R script, just as you would with any other Power BI Desktop visual. Alternatively, you can also select the fields directly in the **Fields** pane.
@@ -86,14 +86,12 @@ After you've verified your R installation, you’re ready to begin creating R vi
 1. When you select the **Run script** icon, Power BI Desktop identifies the plot and presents it on the canvas. Because the process is executed on your local R installation, make sure the required R packages are installed.
 
    Power BI Desktop replots the visual when any of the following events occur:
-   
+
       * You select the **Run script** icon from the **R script editor** title bar.
       * A data change occurs because of data refreshing, filtering, or highlighting.
-            
       * The following image shows an example of the correlation plot code, which plots the correlations between attributes of different types of cars.
-      
-        ![Screenshot of the Correlation plot code example.](media/desktop-r-visuals/r-visuals-6.png)
-        
+      ![Screenshot of the Correlation plot code example.](media/desktop-r-visuals/r-visuals-6.png)
+     
 1. To get a larger view of the visualizations, deselect the R visual or minimize the **R script editor**. Like other visuals in Power BI Desktop, you can cross filter the correlation plot by selecting a specific value, such as Auto or Manual, in the donut chart visual on the right.
 
     ![Screenshot of the Correlation plot code example in the Larger visualization view.](media/desktop-r-visuals/r-visuals-7.png)
