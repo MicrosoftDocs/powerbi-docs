@@ -107,6 +107,21 @@ Here are some best practices to make your items more discoverable in the standal
 - **Apply an endorsement label**: Endorsement labels are a sign that content is trustworthy. Any creator with *edit access* can add a [**Promoted** label](../collaborate-share/service-endorsement-overview.md).  
 - ***Favorite*** **an item**: Marking an item as a *Favorite* is an explicit signal to Copilot that it's important to you. By marking an item as a *Favorite*, you're more likely to see it in your search results.
 
+## Limit Copilot search to items Prepped for AI
+
+Workspace admins control whether Copilot can search all workspace content or just content that has been Prepped for AI. Workspace admins can make this change themselves in Workspace settings under __Delegated settings__ under the heading __Copilot and Azure OpenAI service__. Tenant admins can also make a default selection for the entire tenant, using the tenant setting **Only show AI-prepped items in the standalone Copilot in Power BI experience (preview)**. Changes to these settings will take up to 24 hours to reflect in the search experiences. 
+
+
+![Delegated workspace setting to limit search to prepped content.](media/copilot-search-new-content/workspace-settings-limit-to-prepped.png)
+
+### When is an item Prepped for AI?
+- For search purposes, Fabric data agents are always considered Prepped for AI. 
+- Power BI semantic models must have the [Prepped for AI](/power-bi/create-reports/copilot-prepare-data-ai) checkbox selected by a creator. 
+- Once that setting is selected, then all reports that use that model will also be considered as prepped for AI. 
+- Power BI workspace & org apps are considered as Prepped for AI, but the reports inside those apps are only considered as prepped if the report's semantic model was marked explicitly. This may result in users finding apps using search prompts, but they may not be able to answer data questions from those apps using the standalone Copilot experience. 
+
+In standalone Copilot, users will always be able to [manually attach items](/power-bi/create-reports/copilot-chat-with-data-standalone) to which they have access and ask questions of those items directly, even if the item is not prepped for Copilot. 
+
 ## Considerations and limitations
 
 - Copilot respects user permissions and only searches over attributes you have access to and doesn't provide search results containing items you can't access.
@@ -117,4 +132,5 @@ Here are some best practices to make your items more discoverable in the standal
 - Copilot respects hidden elements such as hidden table and column names, and doesn't search over these fields.
 - Copilot best understands natural language. When you're searching for items through the standalone Copilot, adding more context can help with finding more relevant content. For example, searching for "Find reports about Q4 revenue over time" yields better results than a search for the keyword "Q4."
 - If edits are made directly to an item (for example, updating a visual, renaming titles), these changes are reflected in search results within five minutes. If edits are made indirectly to an item (such as renaming the workspace), the changes might take up to 24 hours to reflect in the search results.
+- Reports may not reflect the prepped status of the associated semantic model for up to 24 hours.
 - The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
