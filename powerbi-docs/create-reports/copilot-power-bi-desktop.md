@@ -81,7 +81,7 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 ## Limitations
 
 - Copilot is not supported in workspaces backed by [Power BI Premium Per User (PPU)](/power-bi/enterprise/service-premium-per-user-faq).
-- In Power BI Desktop, Copilot requires that the **tenant-level Fabric Copilot setting is enabled**. If the tenant setting is off, Copilot features will be unavailable—even if your workspace is properly configured.
+- In Power BI Desktop, Copilot requires that the delegated Fabric Copilot setting is be enabled for the active Capacity associated with your Desktop session. If the **tenant setting** is off, Copilot features will be unavailable—even if your workspace is properly configured.
 - The Copilot button on the ribbon might be visible to some customers even if the Copilot chat pane is not yet available for them. This situation is temporary.
 
 ## Send feedback
