@@ -16,29 +16,16 @@ LocalizationGroup: Model your data
 
 For more information about this automatic behavior, see [Apply auto date/time in Power BI Desktop](desktop-auto-date-time.md).
 
-While this is a convenient option for simple models, it is not recommended for more complex scenarios and larger models. For those, it is preferable to create a dedicated table for more flexibility. 
-
-For most models, it is recommended to add a date table (or more in some scenarios). Many data analysts prefer to create their own date tables, which is fine.
-
-There are multiple ways of creating such a table, including:
-
-- **Power Query M**. You can use the [List.Dates](/powerquery-m/list-dates) function. [See below for an example](#creating-a-date-table-using-built-in-tools).
-- **DAX**. You can use the [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-funciton-dax) functions to generate a basic calculated date table. You can of course also use a more advanced DAX statement to create a date table. [An example is provided below](#creating-a-date-table-using-built-in-tools).
-- **External tools**.
-- **Loading from a source**, such as a source system, a file or another Power BI semantic model.
-Which option is best for you depends on various factors and is beyond the scope of this tutorial.
-
-# TODO
-# need to explain custom calendars and why mark as date table is no longer required if you use that. Basically, you either use custom calendars _or_ mark as date table, except for specific scenarios (Excel pivot tables and....?).
-# then also need to detail how to create a calendar, explain what categories, key and associated columns and and time-related columns are....
-
-After you have created or loaded the date table in you semantic model, you can specify the table you want your model to use as its **date table** in Power BI Desktop, and then create date-related visuals, tables, quick measures, and so on, by using that table's date data. When you specify your own date table, you control the date hierarchies created in your model, and use them in **quick measures** and other operations that use your model's date table.
+Many data analysts prefer to create their own date tables, which is fine. In **Power BI Desktop**, you can specify the table you want your model to use as its **date table**, and then create date-related visuals, tables, quick measures, and so on, by using that table's date data. When you specify your own date table, you control the date hierarchies created in your model, and use them in **quick measures** and other operations that use your model's date table.
 
 :::image type="content" source="media/desktop-date-tables/date-tables_01.png" alt-text="Screenshot of Power BI Desktop showing the Mark as date table dialog box.":::
 
+> [!NOTE]
+> Setting your date table is not needed to perform [modern, calendar-based time intelligence calculations](desktop-time-intelligence.md#modern-calendar-based-preview) unless you are planning to [connect Excel Pivot Tables to your semantic model](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884).
+
 ## Benefits of setting your own date table
 
-The [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) require some understanding of date calculations in your model. Setting your own date table or using [auto date/time](desktop-auto-date-time.md) enables these functions to work. There are specific situations in which you do need set your own date table:
+If not using the [modern calendar-based time intelligence calculations](desktop-time-intelligence.md#modern-calendar-based-preview), the [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) require some understanding of date calculations in your model. Setting your own date table or using [auto date/time](desktop-auto-date-time.md) enables these functions to work. There are specific situations in which you do need set your own date table:
 
 - The relationships between the date table and other tables in your model are based on columns of a different data type than Datetime. For example, if you load data from a source such as a data warehouse, specific columns that represent dates are often provided. These columns (also called surrogate keys) are often stored as a whole number and formatted as yyyy-mm-dd (for example: *20241231* to represent the 31st of December 2024). If you have relationships between the date table and other tables in your model that use such columns, you'll need to set your own date table in order use the time intelligence capabilities.
 - If you want to use [advanced date filters in Excel PivotTables or PivotCharts](https://support.microsoft.com/office/filter-dates-in-a-pivottable-or-pivotchart-571cc416-ba4d-4005-a01e-3d99306ccefc) based on Power BI data. 
@@ -88,52 +75,11 @@ When you specify your own **date table**, you need to make sure the data type is
 
 3. Specify the data type for your column.
 
-## Creating a date table using built-in tools
-
-The following examples create a date table from 1st of January 2010 to 31st of December 2030 using either Power Query M or DAX. It includes the following columns: Year, Month Number, Month Name, Month Year, Quarter, Year Quarter, Day and Date.
-
-### Power Query M
-
-```powerquery-m
-let
-    StartDate = #date(2010, 1, 1),
-    EndDate = #date(2030, 12, 31),
-    NumberOfDays = Duration.Days(EndDate - StartDate) + 1,
-    DateList = List.Dates(StartDate, NumberOfDays, #duration(1,0,0,0)),
-    DateTable = Table.FromList(DateList, Splitter.SplitByNothing(), {"Date"}),
-    AddYear = Table.AddColumn(DateTable, "Year", each Date.Year([Date]), Int64.Type),
-    AddMonthNumber = Table.AddColumn(AddYear, "Month Number", each Date.Month([Date]), Int64.Type),
-    AddMonthName = Table.AddColumn(AddMonthNumber, "Month Name", each Date.ToText([Date], "MMMM"), type text),
-    AddMonthYear = Table.AddColumn(AddMonthName, "Month Year", each Date.ToText([Date], "MMM yyyy"), type text),
-    AddQuarter = Table.AddColumn(AddMonthYear, "Quarter", each "Q" & Text.From(Date.QuarterOfYear([Date])), type text),
-    AddYearQuarter = Table.AddColumn(AddQuarter, "Year Quarter", each Text.From(Date.Year([Date])) & " Q" & Text.From(Date.QuarterOfYear([Date])), type text),
-    AddDay = Table.AddColumn(AddYearQuarter, "Day", each Date.Day([Date]), Int64.Type)
-in
-    AddDay
-```
-
-### DAX
-
-```dax
-DateTable =
-ADDCOLUMNS (
-    CALENDAR ( DATE ( 2010, 1, 1 ), DATE ( 2030, 12, 31 ) ),
-    "Year", YEAR ( [Date] ),
-    "Month Number", MONTH ( [Date] ),
-    "Month Name", FORMAT ( [Date], "MMMM" ),
-    "Month Year", FORMAT ( [Date], "MMM YYYY" ),
-    "Quarter", "Q" & FORMAT ( [Date], "Q" ),
-    "Year Quarter",
-        FORMAT ( [Date], "YYYY" ) & " Q"
-            & FORMAT ( [Date], "Q" ),
-    "Day", DAY ( [Date] ),
-    "Date", [Date]
-)
-```
 ## Related content
 
 For more information related to this article, see the following resources:
 
+* [Implementing time-based calculations in Power BI](desktop-time-intelligence.md)
 * [Apply auto date/time in Power BI Desktop](desktop-auto-date-time.md)
 * [Design guidance for date tables in Power BI Desktop](../guidance/model-date-tables.md)
 * [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
