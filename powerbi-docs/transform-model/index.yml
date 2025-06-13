@@ -49,6 +49,8 @@ landingContent:
             url: desktop-modeling-view.md
           - text: "Many-to-many relationships"
             url: desktop-many-to-many-relationships.md
+          - text: "Implementing time-based calculations"
+            url: desktop-time-intelligence.md
       - linkListType: how-to-guide
         links:
           - text: "Create and manage relationships"
