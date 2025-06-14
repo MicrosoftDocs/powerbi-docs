@@ -281,7 +281,7 @@ Step 3: Write your visual calculation. Here is a IF statement to return either g
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-03.png" alt-text="Screenshot of DAX code listed out below in the visual calac editor":::
 
 ```dax
-Conditional Hex Code = IF ( [Progress] > .5, "#00FF00", "#FF0000" )
+Conditional Hex Code = IF ( [Progress] > .5, "#5BA300", "#E91C1C" )
 ```
 
 Step 4: Expand the Formatting Pane and Click Properties:
