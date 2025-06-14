@@ -1,13 +1,13 @@
 ---
 title: Change log for Power BI Desktop
 description: This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: kfollis, davidi
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/21/2025
+ms.date: 06/10/2025
 no-loc: [Copilot]
 ---
 
@@ -17,7 +17,43 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## May 2025 QFE 2
 
+*Version 2.143.1378.0, Released: June 4, 2025*
+ 
+Bug fixes/improvements:
+
+- Addressed regression that resulted in conditional formatting colors being improperly deleted.
+
+## May 2025 QFE 1
+
+*Version 2.143.1204.0, Released: May 28, 2025*
+
+Bug fixes/improvements:
+
+* Addressed regression in the filter pane **Apply** button not appearing.
+* Added a missing **Learn more** link for a new SQL Database feature under **Preview features**.
+* Added **Learn more** and **Share feedback** links for translytical task flows.
+* Addressed the incorrect inclusion of the action button *loading* state for non-DataFunction visual link types.
+* Updated to allow for better fuzzy matching between user inputs and trigger prompts in desktop by using LLM-based match.
+* Addressed dark mode styling issues for relationship checkboxes.
+* Updated swap loading messages in the data question service to improve clarity and accuracy.
+* Addressed outdated theme state IDs by introducing a feature switch to ignore them in button slicer visuals.
+* Implemented feature disablement by preventing entry points for unsupported visuals through refined supportability checks and filter handling logic.
+
+## April 2025 QFE 1
+
+*Version 2.142.1277.0, Released: May 5, 2025*
+
+Bug fixes and improvements:         
+
+* Addressed the incorrect classification of user errors in the orchestrator for the Desktop RAC.
+
+* Fixed the warning bar issue related to unsaved layout changes.
+
+* Addressed a bug causing NullReferenceException due to two files being opened at the same time.
+
+* Fixed access to Power Platform Dataflows and Dataverse in government clouds.
 
 ## March 2025 QFE 5
 

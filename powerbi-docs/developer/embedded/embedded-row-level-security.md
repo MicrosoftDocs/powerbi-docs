@@ -1,8 +1,8 @@
 ---
 title: Security in Power BI embedded analytics
 description: Learn what steps to take to embed Power BI content securely within your application using RLS, OLS or other security measures.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-developer

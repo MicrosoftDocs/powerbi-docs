@@ -1,7 +1,8 @@
 ---
 title: Width
 description: Setting - Width (Global, Width, 0 to 50)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -6,8 +6,8 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.reviewer: rpatkar
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ---
 # Teradata connection type for Power BI paginated reports (Power BI Report Builder)
 

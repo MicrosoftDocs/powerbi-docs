@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: From dimensional model to stunning report in Power BI Desktop"
 description: In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 20 minutes.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -427,7 +427,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. 
 1. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
-1. In the **Style** pane, in the **Border** section, change **Transparency** to **100%**. 
+1. In the **Style** pane, in the **Border** section, set the desired **Transparency**. 
 1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9 (blue)**. 
 1. On the **Format** ribbon, select **Send backward** > **Send to back**. 
 

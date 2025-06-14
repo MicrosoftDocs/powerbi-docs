@@ -2,8 +2,8 @@
 title: Configuring Microsoft Entra app in the embedded analytics embed for your organization tutorial
 description: Configure the Azure AP app the embedded analytics embed for your organization tutorial.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 13/09/2020
 ms.custom: include file

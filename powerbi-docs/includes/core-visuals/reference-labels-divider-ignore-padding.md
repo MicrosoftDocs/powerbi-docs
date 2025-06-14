@@ -1,7 +1,8 @@
 ---
 title: Ignore padding
 description: Setting - Ignore padding (Reference labels, Divider, Ignore padding)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

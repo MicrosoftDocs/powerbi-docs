@@ -1,8 +1,8 @@
 ---
 title: 'Project Online: connect to data through Power BI Desktop'
 description: Learn how to connect to Project Online data by using Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi

@@ -1,7 +1,8 @@
 ---
 title: Scale by width
 description: Setting - Scale by width (Global use)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,8 +1,8 @@
 ---
 title: Embed a report web part in SharePoint Online
 description: With Power BI's report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -18,14 +18,15 @@ The Power BI report web part for SharePoint Online allows you to embed interacti
 
 When you use the **Embed in SharePoint Online** option, the embedded reports respect all item permissions and data security through [row-level security (RLS)](/fabric/security/service-admin-row-level-security), so you can easily create secure internal portals.
 
-## Requirements
+## Prerequisites
 
 For **Embed report in SharePoint Online** reports to work:
 
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To use an embedded report, users must sign in to the Power BI service to activate their Power BI license.
 * To embed a web part in SharePoint Online, you need a Power BI Pro or Premium Per User (PPU) license.
-* Users with a free Fabric license can view a report that's hosted in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
+* For [Embedding for your organization (user owns data)](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-organization) customers, a SKUs equivalent to [F64 or higher](/fabric/enterprise/licenses#capacity-and-skus) is needed to allow free Power BI users to consume a report. If you have a SKU smaller than F64, then a Pro license or Premium Per User (PPU) is required for each user who will view the embedded content.
+* For [Embedding for your customers (app owns data)](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) customers, there are no licensing requirements for the end user.
 * SharePoint Embed is now supported in air gap environments.
 
 ## Embed your report

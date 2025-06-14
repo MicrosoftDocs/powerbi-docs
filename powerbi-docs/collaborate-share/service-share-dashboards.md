@@ -1,8 +1,8 @@
 ---
 title: Share Power BI reports and dashboards with coworkers and others
 description: How to share Power BI reports and dashboards with colleagues in and out of your organization, and what you need to know about sharing.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

@@ -1,8 +1,8 @@
 ---
 title: Create reports using datamarts (preview)
 description: Learn how to create and share reports using datamarts in Power BI, including live connections, composite models, and SQL Endpoints.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -15,6 +15,9 @@ LocalizationGroup: Data from files
 # Create reports using datamarts
 
 Datamarts let you create reusable and auto-generated semantic models to create reports in various ways in Power BI. This article describes the various ways you can use datamarts, and their auto-generated semantic models, to create reports.
+
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
+
 For example, you can establish a live connection to a shared semantic model in the Power BI service and create many different reports from the same semantic model. You can create your perfect data model in Power BI Desktop and publish it to the Power BI service. Then you and others can create multiple different reports in separate .pbix files from that common data model and save them to different workspaces.
 Advanced users can build reports from a datamart using a composite model or using the SQL Endpoint.
 

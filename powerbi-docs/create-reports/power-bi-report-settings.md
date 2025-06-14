@@ -1,8 +1,8 @@
 ---
 title: 'Change settings for Power BI reports'
 description: Learn how to change settings for reports and control how report readers interact with your reports in Power BI Desktop and the Power BI service.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

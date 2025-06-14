@@ -1,7 +1,8 @@
 ---
 title: Type
 description: Setting - Type (Error bars, Options, Type)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,8 @@
 ---
 title: Overflow text
 description: Setting - Overflow text (Data labels, Options, Overflow text)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

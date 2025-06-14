@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot nested values returned as text
 description: Learn about how to fix nested values being converted to a string when using improper data source privacy settings.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: 
 ms.service: powerbi

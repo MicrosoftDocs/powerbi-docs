@@ -1,8 +1,8 @@
 ---
 title: Build your own Copilot solution accelerator for your coworkers
 description: Read about how to create Copilots in Power BI for your coworkers.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -40,20 +40,6 @@ You can create your own Copilots for your organization. See the documentation fo
 ## Copilot requirements
 
 See Copilot requirements in the [Overview of Copilot for Power BI](copilot-introduction.md#copilot-requirements) article.
-
-## Copilot preview features
-
-When using the Copilot pane in the **Power BI service**, you'll see a toggle with the word **Preview** next to it. The preview toggle allows you the opportunity to move into an experience that includes both generally available and public preview capabilities. 
-
-To access Copilot features in public preview, select the preview toggle to activate the public preview experience.
-
-:::image type="content" source="media/copilot-preview-toggle/copilot-preview-toggle.png" alt-text="Screenshot of the preview toggle in the on position in the Copilot chat pane.":::
-
-If you don't want users in your organization to have access to the preview toggle, you need to [disable Fabric Copilot](/fabric/admin/service-admin-portal-copilot) in your organization or for specific security groups.
-
-See [Use Copilot preview features in Power BI](copilot-preview-toggle.md) for more information about what features are available in preview.
-
-See Copilot requirements in [Overview of Copilot for Power BI](copilot-introduction.md#copilot-requirements).
 
 ## Send feedback
 

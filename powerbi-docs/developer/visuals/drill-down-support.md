@@ -1,8 +1,8 @@
 ---
 title: Add drill-down support in Power BI 
 description: This article describes how to add drill-down support to Power BI Visuals to make them interactive and reveal more details to users.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 manager: kfollis
 ms.reviewer: tebercov 
 ms.service: powerbi

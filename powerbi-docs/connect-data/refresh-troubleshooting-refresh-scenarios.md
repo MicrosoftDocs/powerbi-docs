@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot refresh scenarios
 description: This article provides ways to troubleshoot issues with refreshing data within the Power BI service, for various data sources and conditions.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -190,6 +190,12 @@ If this error appears, the following steps can address the issue:
   )
   ```
 These steps remove the introduced blank row and restores the original behavior. If you have multiple calculated tables that uses *SummarizeColumns*, changes for all tables should be submitted together in a single transaction which requires the [Tabular Editor](https://www.sqlbi.com/tools/tabular-editor/) to make the modifications, since Power BI Desktop cannot batch multiple table changes into a single transaction.
+
+## Connection errors when refreshing from Semantic Models
+
+The Analysis Services connector may encounter the error ```The connection either timed out or was lost```. This error is usually a transient error when the network connection fails, and a retry will succeed. 
+ 
+In some circumstances, this error can be more permanent when the results of the query are being used in a complex M expression, and the results of the query are not fetched quickly enough during execution of the M program. For example, this error can occur when a data refresh is copying from a Semantic Model and the M script involves multiple joins. In such scenarios, data might not be retrieved from the outer join for extended periods, leading to the connection being closed with the above error. To work around this issue, you can use the ```Table.Buffer``` function to cache the outer join table.
 
 ## Related content
 

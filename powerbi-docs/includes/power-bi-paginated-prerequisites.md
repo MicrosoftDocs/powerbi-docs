@@ -2,11 +2,11 @@
 title: Power BI paginated reports prereqs
 description: Power BI prerequisites for paginated reports
 services: powerbi
-author: kfollis
+author: JulCsc
 ms.service: powerbi
 ms.topic: include
 ms.date: 09/22/2023
-ms.author: kfollis
+ms.author: juliacawthra
 ms.custom: include file
 ---
 

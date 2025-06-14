@@ -1,8 +1,8 @@
 ---
 title: Semantic model description
 description: Understand the importance of semantic model descriptions, their benefits, and how to add them in Power BI. Descriptions appear in tooltips and elsewhere.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual

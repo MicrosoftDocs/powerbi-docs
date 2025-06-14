@@ -1,7 +1,8 @@
 ---
 title: Apply to subtotals
 description: Setting - Apply to subtotals (Specific column, Subtotals)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

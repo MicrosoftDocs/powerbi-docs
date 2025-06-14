@@ -1,8 +1,8 @@
 ---
 title: Change data source connection strings with PowerShell - Power BI Report Server pre-October 2020
 description: Change data source connection strings using APIs in PowerShell - Power BI Report Server pre-October 2020.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

@@ -1,8 +1,8 @@
 ---
 title: Embedded analytics accelerator solutions from Microsoft partners
 description: Learn about different accelerators our partners offer to facilitate embedded analytics for ISVs.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer

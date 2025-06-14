@@ -1,8 +1,8 @@
 ---
 title: The Drilldown API in Power BI visuals
 description: Learn how to create a Power BI custom visual that can drill down into the data so you can explore your data in depth in Power BI embedded analytics.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

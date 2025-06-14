@@ -1,7 +1,8 @@
 ---
 title: Text
 description: Setting - Text (Callout values, Label, Text)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

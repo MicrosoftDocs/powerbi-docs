@@ -1,8 +1,8 @@
 ---
 title: Use semantic model version history (preview)
 description: Learn how to access and recover items from semantic models using semantic model version history.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -93,7 +93,7 @@ The version history pane also shows an entry for the current version of the mode
 
 ## View audit logs and activity events 
 
-Power BI administrators can use the **Microsoft 365 Admin Center** to audit operations pertaining to restoring and saving versions in the semantic model version history. The following tables shows which audit operations are supported for semantic model version history:
+Power BI administrators can use the **Microsoft 365 Admin Center** to audit operations pertaining to restoring and saving versions in the semantic model version history. The following tables show which audit operations are supported for semantic model version history:
 
 
 |Friendly name  |Operation name  |Notes  |
@@ -134,6 +134,7 @@ Semantic model version history is currently in preview. Keep the following in mi
 * Moving a model between capacities will delete its version history.
 * You can't access versions in semantic model version history outside of the version history pane on the web. For full source control with greater flexibility and support for more versions, use [git integration](/fabric/cicd/git-integration/git-get-started), which can be used in combination with version history for the same semantic model. 
 * The data in your semantic model may become outdated after restoring to a previous version. To ensure you have the most recent data, complete a refresh after performing a restore. Refresh behavior may vary across storage modes. For example, Direct Lake models with [automatic updates](/fabric/get-started/direct-lake-overview#automatic-updates) configured will automatically update with the most recent data after a restore, without requiring you to manually initiate a refresh.
+* During a [failover](../enterprise/service-admin-failover.yml), read operations such as viewing semantic model version history remain available. However, operations that modify Power BI content, including saving a new version or restoring a previous version in semantic model version history, are not supported when Power BI is in failover mode.
 
 ### Considerations with large semantic model storage format
 

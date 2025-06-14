@@ -1,8 +1,8 @@
 ---
 title: Delete a dashboard, report, workbook, semantic model, or workspace
 description: Learn how to delete almost anything from the Power BI service.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -1,8 +1,8 @@
 ---
 title: Embed Power BI content in a Power BI embedded analytics application with service principal and a certificate
 description: Learn how to authenticate for Power BI embedded analytics using a Microsoft Entra application service principal and a certificate.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -97,7 +97,7 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 1. In your Microsoft Entra application, select the **Certificates & secrets** tab.
 
-    :::image type="content" source="media/embed-service-principal/certificates-and-secrets.png" alt-text="Screenshot of the Azure portal window, which shows the certificates and secrets pane for an app.":::
+    :::image type="content" source="media/embed-service-principal-certificate/certificates-and-secrets.png" alt-text="Screenshot of the Azure portal window, which shows the certificates and secrets pane for an app.":::
 
 2. Select **Upload certificate** and upload the *.cer* file you created and downloaded in [step 2](#step-2---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 

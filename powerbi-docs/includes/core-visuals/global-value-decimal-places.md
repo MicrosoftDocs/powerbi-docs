@@ -1,7 +1,8 @@
 ---
 title: Value decimal places
 description: Setting - Value decimal places (Global use)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

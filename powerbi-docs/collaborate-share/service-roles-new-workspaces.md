@@ -1,8 +1,8 @@
 ---
 title: Roles in workspaces in Power BI
 description: Learn about the different roles you can assign to workspace users to grant access to read, write, edit, and more.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: mihirwagle
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
@@ -53,6 +53,7 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 | Create subscriptions to reports <sup>6</sup>| :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |
 | Subscribe others to reports <sup>6</sup>| :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
 | Analyze in Excel <sup>9</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
+| Download a PBIX file | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
 | Manage subscriptions created by others. | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |   |   |  |
 | Can receive subscriptions created by others <sup>6</sup>|  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::   | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |
 

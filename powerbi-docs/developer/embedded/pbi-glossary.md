@@ -1,8 +1,8 @@
 ---
 title: Glossary for Power BI developers
 description: Power BI documentation introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI service terminology.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 services: power-bi
 ms.service: powerbi
 ms.subservice: powerbi-developer

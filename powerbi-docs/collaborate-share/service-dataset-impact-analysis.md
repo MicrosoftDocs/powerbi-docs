@@ -1,8 +1,8 @@
 ---
 title: Semantic model impact analysis
 description: Learn how to visualize and analyze the downstream impact of making changes to semantic models and dashboards.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-eim

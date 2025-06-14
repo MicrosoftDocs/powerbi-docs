@@ -5,8 +5,8 @@ ms.date: 06/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ---
 # PDF device information settings for Power BI paginated reports
 

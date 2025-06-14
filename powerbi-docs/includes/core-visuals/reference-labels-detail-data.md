@@ -1,7 +1,8 @@
 ---
 title: Data
 description: Setting - Data (Reference labels, Detail, Data)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

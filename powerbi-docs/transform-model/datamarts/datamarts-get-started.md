@@ -1,8 +1,8 @@
 ---
 title: Get started with datamarts (preview)
 description: Begin using datamarts with sample data and examples
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -14,6 +14,8 @@ LocalizationGroup: Data from files
 # Get started with datamarts
 
 This article describes how to get started using datamarts, including various sample data that can jump-start your experience. You learn about sample semantic models you can use with datamarts, how to create datamarts from scratch, how to rename or delete a datamart, and other helpful information to get you acquainted and proficient with datamarts.
+
+[!INCLUDE [datamarts-deprecation](../../includes/datamarts-deprecation.md)]
 
 ## Sample data
 

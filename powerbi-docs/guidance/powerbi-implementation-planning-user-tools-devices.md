@@ -433,7 +433,7 @@ Here are several ways that you might choose to use MAM and MDM policies.
 - Require biometric data, or an access PIN, to open the mobile app.
 - Specify the default behavior when a user selects or taps in a mobile app.
 
-For more information about securing devices and data, see the [Power BI security whitepaper](whitepaper-powerbi-security.md#power-bi-mobile).
+For more information about securing devices and data, see the [Power BI security whitepaper](white-paper-powerbi-security.md#power-bi-mobile).
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 

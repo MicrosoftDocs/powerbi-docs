@@ -1,8 +1,8 @@
 ---
 title: Real-time streaming in Power BI
 description: Learn how to set up and use real-time data streaming in Power BI to keep your visuals and dashboards updated with live data.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -199,7 +199,7 @@ Here's an example of how real-time streaming in Power BI works. This sample uses
 
 1. On the next screen, enter a **Semantic model name**, enter the following values into the next two fields, and then select **Next**.
 
-   * **Sub-key:** *sub-c-99084bc5-1844-4e1c-82ca-a01b18166ca8*
+   * **Sub-key:** *sub-c-aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb*
    * **Channel name:** *pubnub-sensor-network*
 
    ![Screenshot of the New streaming semantic model dialog, showing how to create a Semantic model name and entries in the Sub-key and Channel name fields.](media/service-real-time-streaming/real-time-streaming-8.png)

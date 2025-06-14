@@ -5,8 +5,8 @@ ms.date: 04/07/2025
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: nirusrin
 ---
 # Connect paginated reports to data sources using Power Query in Power BI Report Builder
@@ -50,6 +50,12 @@ Follow these steps to connect to a data source using Power Query Online:
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-enter-credentials.png" alt-text="Screenshot showing enter your credentials." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-enter-credentials.png":::
 
     You can either use an existing shareable cloud connection or create a new connection.
+
+   To connect to an on-premises data source, you will need to first create a gateway connection by following the steps outlined in this [article](/connect-data/service-gateway-data-sources.md). Once the gateway has been created, you can use the gateway connection details in the Connection Credentials section to connect to the on-premises data source. This [article](/connect-data/service-gateway-data-sources.md) also includes a list of supported on-premises data sources.
+
+> [!NOTE]
+> The recommended threshold for data volume when connecting to an on-premises data source is 500,000 rows with 15 to 20 columns before report processing slows down significantly leading to failures. Refer to this [article](/guidance/report-paginated-performance-scalability-considerations.md) to learn more about paginated reports perfomance and scalability considerations.
+
   
 1. After you select or create a connection, select **Next**. Select the tables that you want to use in your report and select **Transform Data**.  
 
@@ -134,11 +140,11 @@ When you're done with the report design, you can save the report to your local m
 
 - Only one RDL dataset per M query is supported. 
 - The last query in the **Queries** window in the Power Query editor is used to generate the RDL dataset.  
-- Gateway data sources aren't supported even though you connect in Mashup Editor.  
 - Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source. See the [How to bind parameters](#how-to-bind-parameters) section in this article.
 - If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render.
 - When uploading paginated report that someone else authored, the Shareable Cloud Connection owner needs to share the cloud connection to the uploading identity.
 - When uploading such paginated report using Service Principal, the author of report needs to [Take Over using API](/rest/api/power-bi/reports/take-over-in-group) and provide their user identity. Else report will fail to render on Power BI service.
+- PQO does not currently support SSO connectivity
 
 ## Related content  
 

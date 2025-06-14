@@ -1,8 +1,8 @@
 ---
 title: Get Power BI Desktop
 description: Learn about the different ways you can download and the options available to install Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
@@ -108,6 +108,8 @@ The following list provides the minimum requirements to run Power BI Desktop:
 ## Considerations and limitations
 
 Power BI Desktop doesn't support running with a system account because WebView2 doesn't support system accounts. Running Power BI Desktop using a system account may cause this error: "Microsoft Edge can't read and write to its data directory."
+
+Power BI Desktop doesn't support ARM architecture. Power BI Desktop is only supported on x64 (64-bit) Windows operating systems. 
 
 We want your experience with Power BI Desktop to be great. If you run into any issues with Power BI Desktop, this section contains solutions, or suggestions to address these issues.
 

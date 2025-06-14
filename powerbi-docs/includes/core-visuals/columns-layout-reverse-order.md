@@ -1,7 +1,8 @@
 ---
 title: Reverse order
 description: Setting - Reverse order (Columns, Layout, Reverse order)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,8 +1,8 @@
 ---
 title: Check privileges API in Power BI Visuals
 description: The article describes how to use Power BI Visuals API to determine what privileges are enabled and how to check the permissions granted.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

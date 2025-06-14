@@ -1,8 +1,8 @@
 ---
 title: Use Kerberos for single sign-on (SSO) to Teradata
 description: Learn how to configure your Teradata server to successfully enable single sign-on from the Power BI service.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways

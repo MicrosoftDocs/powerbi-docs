@@ -1,15 +1,15 @@
 ---
 title: Using visual calculations in Power BI Desktop
 description: Learn how to create visual calculations using Data Analysis Expressions (DAX) formulas in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 02/21/2025
 LocalizationGroup: Model your data
-no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
+no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, LOOKUP, LOOKUPWITHTOTALS, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
 # Using visual calculations (preview)
 
@@ -116,8 +116,18 @@ The following templates are available:
 * **Versus next.** Compares a value to a subsequent value, using the :::no-loc text="NEXT"::: function.
 * **Versus first.** Compares a value to the first value, using the :::no-loc text="FIRST"::: function.
 * **Versus last.** Compares a value to the last value, using the :::no-loc text="LAST"::: function.
+* **Look up a value with context.** Find a value or evaluate an expression on the visual matrix within the current context, using the :::no-loc text="LOOKUP"::: function.
+* **Look up a value with totals.** Find a value or evaluate an expression on the visual matrix with totals, using the :::no-loc text="LOOKUPWITHTOTALS"::: function.
 
 Selecting a template inserts the template in the formula bar. You can use these templates as starting points. You can also add your own expressions without relying on templates.
+
+## Parameter pickers
+Parameter pickers make it easy to select values for parameters in visual calculations functions.  For example, here we loaded the **Look up a value with totals** template:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png" alt-text="Screenshot showing the parameter picker." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png":::
+
+You can also activate the parameter pickers using the **CTRL+SPACE** keyboard shortcut.
+
 
 ## :::no-loc text="Axis":::
 
@@ -131,7 +141,7 @@ Many functions have an optional **:::no-loc text="Axis":::** parameter, which ca
 | :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-13.png" border="false":::  | :::no-loc text="COLUMNS ROWS"::: | Calculates horizontally across columns from left to right, continuing row by row from top to bottom. |
 
 > [!NOTE]
-> You can only use axis values that are available in the visual you're working on. Not all visuals provide all axes, and some visuals provide no axes.
+> If you specify an axis that is not present on the visual, that axis is ignored.
 
 ## :::no-loc text="Reset":::
 
@@ -179,7 +189,7 @@ Again, consider the visual calculation described earlier. The table below shows 
 ### Synonyms
 :::no-loc text="Reset"::: also provides the following synonyms:
 * **:::no-loc text="NONE":::** is the default value. It does not reset the calculation and is equivalent to 0.
-* **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is equivelant to 1.
+* **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is equivalant to 1.
 * **:::no-loc text="LOWESTPARENT":::** performs a relative reset by the immediate parent and is equivalent to -1.
 
 ### Examples of using :::no-loc text="Reset":::
@@ -234,9 +244,6 @@ You can use many of the existing DAX functions in visual calculations. Since vis
 
 Visual calculations also introduce a set of functions specific to visual calculations. Many of these functions are easier to use shortcuts to DAX window functions.
 
-> [!NOTE]
-> Only use the visual calculations specific functions mentioned in the table below. Other visual calculations specific functions are for internal use only at this time and should not be used. Refer to the table below for any updates of the functions available for use as this preview progresses.
-
 | Function | Description | Example | Shortcut to |
 | --- | --- | --- | --- |
 | [COLLAPSE](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | Percent of parent = DIVIDE([Sales Amount], COLLAPSE([Sales Amount], ROWS)) | N/A |
@@ -246,6 +253,8 @@ Visual calculations also introduce a set of functions specific to visual calcula
 | [FIRST](/dax/first-function-dax) | Refers to the first row of an axis. | ProfitVSFirst = [Profit] – FIRST([Profit]) | [INDEX(1)](/dax/index-function-dax) |
 | [ISATLEVEL](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | IsFiscalYearAtLevel = ISATLEVEL([Fiscal Year]) | N/A |
 | [LAST](/dax/last-function-dax) | Refers to the last row of an axis. | ProfitVSLast = [Profit] – LAST([Profit]) | [INDEX(-1)](/dax/index-function-dax) |
+| [LOOKUP](/dax/lookup-function-dax)| Evaluate expression in visual matrix using the current context. | LookupSalesFor2025WithContext = LOOKUP(SUM([Sales]) [Year], "2025")| N/A |
+| [LOOKUPWITHTOTALS](/dax/lookupwithtotals-function-dax)| Evaluate expression in visual matrix with totals. | LookupSalesFor2025WithTotals = LOOKUPWITHTOTALS(SUM([Sales]), [Year], "2025")| N/A|
 | [MOVINGAVERAGE](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | MovingAverageSales = MOVINGAVERAGE([Sales Amount], 2) | [WINDOW](/dax/window-function-dax) |
 | [NEXT](/dax/next-function-dax) | Refers to a next row of an axis. | ProfitVSNext = [Profit] – NEXT([Profit]) | [OFFSET(1)](/dax/offset-function-dax) |
 | [PREVIOUS](/dax/previous-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – PREVIOUS([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
@@ -305,7 +314,6 @@ Visual calculations are currently in preview, and during preview, you should be 
 
 * Not all visual types are supported. Use the visual calculations edit mode to change visual type. Also, custom visuals haven't been tested with visual calculations or hidden fields.
 * The following visual types and visual properties have been tested and found not to work with visual calculations or hidden fields:
-  * Treemap
   * Slicer
   * R visual
   * Python visual
@@ -332,7 +340,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
 * You can't change the sort order for visual calculations.
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
-* Live connections to SQL Server Analysis Services aren't supported.
+* Live connections to SQL Server Analysis Services versions released before version 2025 aren't supported.
 * Although you can use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations, they have some limitations.
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
 * You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.

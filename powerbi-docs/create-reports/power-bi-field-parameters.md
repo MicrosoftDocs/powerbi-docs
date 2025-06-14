@@ -88,8 +88,12 @@ Parameter = {
 - You can't create parameters in live connection data sources without a local model. However, if you use DirectQuery for Power BI semantic models and Analysis Services, you can add a local model to create field parameters. For more information about using DirectQuery for live connections, see [Composite models on Power BI semantic models and Analysis Services](../transform-model/desktop-composite-models.md#composite-models-on-power-bi-semantic-models-and-analysis-services).
 - You can't use implicit measures, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. For more information, see [implicit vs. explicit measures](../guidance/star-schema.md#measures).
 - You can't use field parameters as the linked fields of a drill-through or tooltip page. The workaround is to use the individual fields referenced within the field parameter instead. For example, if your field parameter includes **Customer** and **Product** fields, you can link these two fields to your drill-through or tooltip page so that visuals with the field parameter can launch your drill-through or tooltip page.
-- When a Field Parameter is used to swap fields in a Visual, the Visual drop some related information like Sort direction and Drill/Expand state.
+- When a Field Parameter is used to swap fields in a visual, the visual will reset the drill and expand state.
+
+## Considerations
+
 - When using field parameters with Copilot, Copilot will respond based on the current state of the visuals in the report.
+- In general, the order in which fields from a Field Parameter are shown in a visual is driven by the order items are selected. If using a [hierarchy slicer](power-bi-slicer-hierarchy-multiple-fields.md) the order is determined by how the fields are shown in the hierarchy slicer instead.
 
 ## Related content
 

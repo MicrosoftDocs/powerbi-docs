@@ -1,8 +1,8 @@
 ---
 title: Create Excel workbooks with refreshable Power BI data
 description: Learn how to build refreshable reports in Excel with Power BI data so you can analyze it like a local semantic model.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

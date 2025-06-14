@@ -5,8 +5,8 @@ ms.date: 1/5/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ---
 # Device information settings for Power BI paginated report rendering extensions
 

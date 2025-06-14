@@ -1,8 +1,8 @@
 ---
 title: Mobile layout view
 description: Learn how you can use mobile layout view to create mobile optimized views of Power BI report pages.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom:
 ms.service: powerbi

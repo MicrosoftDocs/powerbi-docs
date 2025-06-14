@@ -1,8 +1,8 @@
 ---
 title: Filter a report using query string parameters in the URL
 description: Filter a report using URL query string parameters, even filter on more than one field.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: 'kayu'
 featuredvideoid: ''
 ms.service: powerbi

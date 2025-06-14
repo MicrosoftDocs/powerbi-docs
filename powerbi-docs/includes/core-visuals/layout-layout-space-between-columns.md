@@ -1,7 +1,8 @@
 ---
 title: Space between columns
 description: Setting - Max Space between columns (Layout, Layout, Space between columns)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

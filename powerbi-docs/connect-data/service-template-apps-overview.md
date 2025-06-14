@@ -1,8 +1,8 @@
 ---
 title: What are Power BI template apps?
 description: This article is an overview of the Power BI template app program. Learn how to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -120,6 +120,7 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Composite models | Composite models shouldn't be used in the app builder workspace. App installers can use composite models after installing the app. |
 | Large semantic model storage format | Large semantic model storage format isn't supported for template apps. |
 | Mobile layout | Partial support. Mobile layout positioning of elements is supported. Mobile layout changes to other properties, such as color, are not supported. |
+| PBIR enhanced reports | [Power BI enhanced report format (PBIR)](https://powerbi.microsoft.com/blog/power-bi-enhanced-report-format-pbir-in-power-bi-desktop-developer-mode-preview/) is not supported. |
 
 ## Support
 

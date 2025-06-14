@@ -1,8 +1,8 @@
 ---
 title: Create a copy of a Power BI dashboard
 description: Learn how to duplicate a Power BI dashboard to make changes and test its performance against the original.
-author: kfollis
-ms.author: kfollis
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

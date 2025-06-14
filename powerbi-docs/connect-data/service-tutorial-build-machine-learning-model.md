@@ -1,8 +1,8 @@
 ---
 title: 'Tutorial: Build a machine learning model in Power BI'
 description: Follow this tutorial to learn how to build and use a machine learning model in Power BI.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai

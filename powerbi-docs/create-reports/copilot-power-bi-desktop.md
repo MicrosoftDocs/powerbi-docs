@@ -16,7 +16,11 @@ ms.collection: ce-skilling-ai-copilot
 
 # Use Copilot in Power BI Desktop
 
-To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
+To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled. 
+
+> [!IMPORTANT]
+> In addition to capacity-level enablement, Copilot in **Power BI Desktop** also requires that the **tenant-level Fabric Copilot setting is enabled**. If the tenant-level setting is off, the Copilot button will appear in the ribbon but remain disabled.
+> This behavior differs from **Power BI Service**, which checks Copilot availability at the **workspace level**.
 
 > [!NOTE]
 > The Copilot button in Desktop always appears in the ribbon. To be able to use Copilot, you must be signed in and have access to a workspace that is in Premium or Fabric capacity.
@@ -76,6 +80,8 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 
 ## Limitations
 
+- Copilot is not supported in workspaces backed by [Power BI Premium Per User (PPU)](/power-bi/enterprise/service-premium-per-user-faq).
+- In Power BI Desktop, Copilot requires that the delegated Fabric Copilot setting is be enabled for the active Capacity associated with your Desktop session. If the **tenant setting** is off, Copilot features will be unavailable—even if your workspace is properly configured.
 - The Copilot button on the ribbon might be visible to some customers even if the Copilot chat pane is not yet available for them. This situation is temporary.
 
 ## Send feedback

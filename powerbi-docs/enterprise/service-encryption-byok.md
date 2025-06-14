@@ -1,8 +1,8 @@
 ---
 title: Bring your own encryption keys for Power BI
 description: Learn how to use your own encryption keys (BYOK) in Power BI Premium to gain more control and help meet compliance requirements.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

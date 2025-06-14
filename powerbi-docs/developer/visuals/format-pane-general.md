@@ -1,34 +1,34 @@
 ---
 title: About format pane and formatting model in Power BI custom visuals
-description: This article describes what the new Formatting model in Power BI custom visuals is
-author: mberdugo
-ms.author: monaberdugo
+description: This article describes what the Formatting model in Power BI custom visuals is
+author: billmath
+ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 01/12/2025
-#customer intent: As a custom Power BI visual developer, I want to learn how to customize the new Format pane in Power BI custom visuals using the new formatting model so that I can create visuals that are easier for report creators to use.
+#customer intent: As a custom Power BI visual developer, I want to learn how to customize the Format pane in Power BI custom visuals using the formatting model so that I can create visuals that are easier for report creators to use.
 ---
 
 # The format pane in Power BI custom visuals
 
-Starting from API version 5.1, developers can create visuals that use the [new Power format pane](../../fundamentals/desktop-format-pane.md). Developers can define the cards and their categories for any property in their custom visual, making it easier for report creators to use these visuals.
+Using API version 5.1 and later, developers can create visuals with the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Developers can define the cards and their categories for any property in their custom visual, making it easier for report creators to use these visuals.
 
-The new API uses the **FormattingModel** method to customize parts of the format and analytics panes.
+The API uses the **FormattingModel** method to customize parts of the format and analytics panes.
 
 > [!TIP]
 > The `getFormattingModel` method replaces the `enumerateObjectInstances` method in earlier API versions.
 
 The `getFormattingModel` returns a `FormattingModel` that defines how the visual's formatting and analytics pane look.
 
-In addition to all the old formatting pane capabilities, the [new formatting model](#formatting-model) supports new format pane capabilities, new properties, and new hierarchies.
+In addition to all the old formatting pane capabilities, the [formatting model](#formatting-model) supports current format pane capabilities, properties, and hierarchies.
 
-:::image type="content" source="media/format-pane/formatting-model.png" alt-text="Screenshot of the new formatting pane.":::
+:::image type="content" source="media/format-pane/formatting-model.png" alt-text="Screenshot of the formatting pane.":::
 
-## Create a visual that supports the new format pane
+## Create a visual that supports the latest Format pane
 
-General steps to add the new format pane support to a custom visual:
+General steps to add Format pane support to a custom visual:
 
 1. Set the `apiVersion` in your *pbiviz.json* file to `5.1` or later.
 
@@ -57,7 +57,7 @@ General steps to add the new format pane support to a custom visual:
 
 ## Map formatting properties
 
-If you have a custom visual created with an older API and you want to migrate to the new format pane, or if you're creating a new custom visual:
+If you have a custom visual created with an older API and you want to update it with the format pane, or if you're creating a new custom visual:
 
 1. Set the `apiVersion` in your *pbiviz.json* file to `5.1` or later.
 
@@ -113,7 +113,7 @@ The formatting model is where you describe and customize all the properties of y
 
 ### Formatting model components
 
-In the new formatting model, property components are grouped together in logical categories and subcategories. These groups make the model easier to scan. There are the five basic components, from largest to smallest:
+In the formatting model, property components are grouped together in logical categories and subcategories. These groups make the model easier to scan. There are the five basic components, from largest to smallest:
 
 * **Formatting model**
   The largest pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
@@ -227,10 +227,10 @@ For now we have two composite slice types:
 
 * All formatting model interfaces can be found in [GitHub - microsoft/powerbi-visuals-api: Power BI custom visuals API](https://github.com/microsoft/powerbi-visuals-api) in “formatting-model-api.d.ts”
 
-* We recommend using the new formatting model utils at [GitHub - microsoft/powerbi-visuals-utils-formattingmodel: Power BI visuals formatting model helper utils](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
+* We recommend using the latest formatting model utils at [GitHub - microsoft/powerbi-visuals-utils-formattingmodel: Power BI visuals formatting model helper utils](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
 
-* You can find an example of a custom visual *SampleBarChart* that uses API version 5.1.0 and implements `getFormattingModel` using the new formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
+* You can find an example of a custom visual *SampleBarChart* that uses API version 5.1.0 and implements `getFormattingModel` using the latest formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
 
 ## Related content
 
-More questions? [Ask the Power BI Community](https://community.powerbi.com)
+More questions? [Ask the Power BI Community](https://community.powerbi.com).

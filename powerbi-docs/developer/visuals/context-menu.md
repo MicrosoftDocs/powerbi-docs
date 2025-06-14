@@ -1,8 +1,8 @@
 ---
 title: Add context menu to Power BI custom visual
 description: Learn how you can use the sample BarChart visual to add a context menu that displays on a Power BI visual.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

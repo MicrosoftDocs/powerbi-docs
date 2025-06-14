@@ -1,11 +1,10 @@
 ---
 title: Power BI REST APIs push semantic model limitations
 description: This article lists the Power BI REST APIs push semantic model limitations that the user should be aware of before using the APIs.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 services: power-bi-embedded
-editor: ''
-tags: ''
+reviewer: Eklavya Mirani
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
@@ -15,6 +14,9 @@ ms.date: 06/04/2024
 # Push semantic model limitations
 
 This article lists limitations of the Power BI REST APIs [Push semantic models](/rest/api/power-bi/push-datasets).
+
+> [!NOTE]
+> Real-time streaming in Power BI is scheduled for deprecation. For more information and recommended alternatives, see [Announcing the retirement of real-time streaming in Power BI](https://powerbi.microsoft.com/blog/announcing-the-retirement-of-real-time-streaming-in-power-bi/).
 
 ## Limitations
 

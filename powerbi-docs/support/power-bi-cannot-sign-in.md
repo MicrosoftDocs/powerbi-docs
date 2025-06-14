@@ -1,8 +1,8 @@
 ---
-title: Resolve sign-in issues or reset your password for Power BI
-description: Help to unblock users who are unable to sign in to Power BI and need to reset a password or contact support.
-author: KesemSharabi
-ms.author: kesharab
+title: Resolve sign-in issues or reset your password for Power BI and Fabric
+description: Help to unblock users who are unable to sign in to Power BI or Fabric and need to reset a password or contact support.
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,9 +11,9 @@ ms.custom: ''
 ms.date: 11/11/2024
 ---
 
-# Resolve sign-in issues for Power BI
+# Resolve sign-in issues for Power BI and Fabric
 
-This article describes how to resolve sign-in issues for Power BI. If you're a Power BI user having sign-in issues, first work with your organization's internal support team for assistance. If your organization enabled Self-Service Password Reset, you can reset your own password with the [Self-Service Password Reset wizard](https://passwordreset.microsoftonline.com/). If this process fails, a link to contact Support displays.
+This article describes how to resolve sign-in issues for Power BI and Fabric. If you're a Power BI or Fabric user having sign-in issues, first work with your organization's internal support team for assistance. If your organization enabled Self-Service Password Reset, you can reset your own password with the [Self-Service Password Reset wizard](https://passwordreset.microsoftonline.com/). If this process fails, a link to contact Support displays.
 
 If you're an **admin** for your organization, we recommend that you [Enable users to unlock their account or reset passwords using Microsoft Entra self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr). If you forgot your own password, follow the steps in [Forgot sign-in password to Microsoft 365, Azure, or Intune](/microsoft-365/troubleshoot/sign-in/forgot-sign-in-password) to recover your password. To troubleshoot other sign-in issues, review the solutions listed in [You can't sign in to Microsoft 365, Azure, or Intune](/microsoft-365/troubleshoot/sign-in/sign-in-to-office-365-azure-intune).
 

@@ -1,8 +1,8 @@
 ---
 title: Use gridlines and snap-to-grid in Power BI reports
 description: Learn how to use gridlines, snap-to-grid, smart guides, z-order, alignment, and distribution in Power BI reports.
-author: davidiseminger
-ms.author: davidi
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi

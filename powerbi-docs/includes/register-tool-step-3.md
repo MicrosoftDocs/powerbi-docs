@@ -2,8 +2,8 @@
 title: Registration tool step 3
 description: Microsoft Entra registration tool for Power BI embedded analytics, step 3
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
 ms.date: 11/05/2020
 ms.custom: include file

@@ -1,8 +1,8 @@
 ---
 title: Power BI Desktop project report folder
 description: Learn about the Power BI Desktop project report folder.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -41,7 +41,7 @@ Not every project report folder includes all of the files and subfolders describ
 
 Contains report settings that apply only for the current user and local computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-For more information, see the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/localSettings.md).
+For more information, see the [localSettings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/localSettings).
 
 #### CustomVisuals\\
 
@@ -141,7 +141,7 @@ This file also specifies the supported report definition formats through the 've
 | 1.0      | Report definition must be stored as PBIR-Legacy in the report.json file. |
 | 4.0 or higher | Report definition can be stored as PBIR-Legacy (report.json file) or [PBIR](#pbir-format) (\definition folder). |
 
-For more information, see the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
+For more information, see the [definition.pbir schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definitionProperties).
 
 #### mobileState.json
 
@@ -386,23 +386,23 @@ PBIR is currently in **preview**. Keep the following limitations in mind:
   - Can't be deployed with deployment pipelines.  
   - Can't be saved as a copy.
   - Can't use Power BI Report APIs: [Clone Report](/rest/api/power-bi/reports/clone-report-in-group), [Update Report Content](/rest/api/power-bi/reports/update-report-content-in-group)
+  - Can't use Power BI [usage metrics report](/power-bi/collaborate-share/service-usage-metrics).
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
-- Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back.
+- Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back. Although a backup is created at the moment of conversion.
 - Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
 
 PBIR size limitations enforced by the service:
 
 - 1,000 max pages per report.
 - 300 max visuals per page.
-- 5 mb max for each bookmark file.
-- 1 mb max for each file.
 - 1,000 max resource package files per report.
 - 300-mb max size for all resource package files.
-- 20-mb max size of all report files.
+- 300-mb max size of all report files.
 
-During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features start exporting the report definition using PBIR format.
+[Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) export reports using the format currently applied in the service. If a report is created or imported into Fabric using the PBIR format, it will be exported in PBIR. Likewise, if a report is PBIR-Legacy, it will be exported in the PBIR-Legacy format. 
+
 
 ## Related content
 

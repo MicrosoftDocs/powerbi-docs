@@ -1,7 +1,8 @@
 ---
 title: Position
 description: Setting - Position (Cards, Accent bar, Position)
-author: JaedenArmstrong
+ms.reviewer: juliacawthra
+author: JulCsc
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
