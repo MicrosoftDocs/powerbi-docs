@@ -276,12 +276,12 @@ Step 2: Click the “New visual calculation” button under the “Home” Tab:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-02.png" alt-text="Screenshot of the button to create a visual calculation in the Power BI Home Tab":::
 
-Step 3: Write your visual calculation. Here is a if statement to return either green or red based on a measure being more then .5:
+Step 3: Write your visual calculation. Here is a IF statement to return either green or red based on a measure being more then .5:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-03.png" alt-text="Screenshot of DAX code listed out below in the visual calac editor":::
 
 ```dax
-Conditional Hex Code = if([Progress]>.5,"#00FF00","FF0000")
+Conditional Hex Code = IF ( [Progress] > .5, "#00FF00", "#FF0000" )
 ```
 
 Step 4: Expand the Formatting Pane and Click Properties:
@@ -292,7 +292,7 @@ Step 5: Expand the “Data Format” section, select your visual calculation, an
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-05.png" alt-text="Screenshot of the formatting pane showing you should apply a data type to your visual calculation of text":::
 
-Step 6: Before Exiting the visual calculation editor click the eyeball next to the visual calculation in the build section to hide it:
+Step 6: Before Exiting the visual calculation editor click the hide icon next to the visual calculation in the build section to hide it:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-06.png" alt-text="Screenshot of the build pane showing how to click a button to hide the visual calculation you are creating":::
 
