@@ -23,7 +23,7 @@ Power BI Report Server is similar to both SQL Server Reporting Services and the 
 ## Licensing Power BI Report Server
 
 > [!NOTE]
-> Following the announcement that beginning with SQL Server 2025, we are consolidating on-premises reporting services under Power BI Report Server (PBIRS), further information on PBIRS licensing will be provided when SQL Server reaches General Availability (GA). For customers using SQL Server 2022 and earlier versions, the licensing details outlined below remain applicable.
+> Following the announcement that beginning with SQL Server 2025, we're consolidating on-premises reporting services under Power BI Report Server (PBIRS). Further information on PBIRS licensing will be provided when SQL Server reaches general availability (GA). For customers using SQL Server 2022 and earlier versions, the licensing details outlined below remain applicable.
 
 Power BI Report Server operates on a core-based licensing model and is currently available through three different licenses: [Fabric F64+ reserved instances](/fabric/enterprise/licenses), SQL Server Enterprise Edition with Software Assurance, or SQL Server Enterprise Subscriptions. See [Microsoft Volume Licensing](https://www.microsoft.com/licensing/docs) for SQL Server licensing details. Similar to SQL Server licensing, customers may run the Power BI Report Server software in a Physical or Virtual OSE with up to the number of cores included under their Fabric F64+ capacity. The number of Power BI v-cores available for each Fabric license can be found [here](/fabric/enterprise/licenses).
 
