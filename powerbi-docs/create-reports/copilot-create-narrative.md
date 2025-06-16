@@ -87,13 +87,12 @@ We're continuously working to improve the quality of the report pages, including
 
 - Copilot will store the selected prompt with report metadata (e.g., summarize sales data) so that the summary can be generated each time a report is loaded.
 - Authors: To author a copilot narratives visual in the Power BI service, the workspace needs to have a paid dedicated Fabric capacity.
-- You can't edit the visual after Power BI generates it. However, you can change it by using prompts. The summary only takes into account the data that's visualized on the selected page.
+- You can't edit the visual after Power BI generates it. However, you can change it by using prompts. The summary only takes into account the data that's visualized by the selected visuals.
 - The summary only takes into account the data that's visualized on the page.
-- The summary visual is not supported when exporting to Power Point or PDF formats. 
+- The summary visual is not supported when exporting live connections to Power Point.   Static exports are supported.
 - The accuracy of the public preview may be limited.
 - Users need to refresh the summary visual when they update or filter a page, report, or data, to see an updated summary.
 - Filtering and slicing affect the visual, but cross-highlighting (selecting visuals) doesn't impact the summary.
-- Report creation with Copilot is only enabled for Power BI and not for any other sections of Fabric, such as Data Factory.
 - The public preview narrative doesn't yet support all visual types.  For example, it doesn't yet support key influencers.
 
 ## Related content
