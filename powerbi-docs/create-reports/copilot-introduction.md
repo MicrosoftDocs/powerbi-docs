@@ -58,8 +58,7 @@ The standalone Copilot can help with the following tasks:
 
 Newly purchased capacity or capacity scale-up operations may take up to 24 hours for Copilot to recognize and become available for use.
 
-The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
-While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use is not officially supported at this time.
+The standalone Copilot experience isn't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West. While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use is not officially supported at this time.
 
 #### The Copilot pane: Ask questions about an open report
 
