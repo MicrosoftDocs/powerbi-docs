@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Microsoft Fabric for Power BI users"
-description: Get started using Microsoft Fabric with Power BI by creating a dimensional model and creating a report.
+description: Learn how to use Microsoft Fabric with Power BI by creating a dimensional model and building a report.
 author: itsnotaboutthecell
 ms.author: alpowers
 ms.reviewer: ''
@@ -8,275 +8,258 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 06/16/2025
+content_well_notification:
+    - AI-contribution
+ai-usage: ai-assisted
 ms.custom: ""
 LocalizationGroup: Get started
 ---
-# Tutorial: Fabric for Power BI users
 
-In this tutorial, you learn how to use Dataflows Gen2 and Pipelines to ingest data into a Lakehouse and create a dimensional model. You also learn how to generate a beautiful report automatically to display the latest sales figures from start to finish in just 45 minutes.
+# Tutorial: Microsoft Fabric for Power BI users
 
-Let’s get started!
+In this tutorial, you'll learn how to use Microsoft Fabric to prepare, load, and model data for Power BI reporting. You'll use Dataflows Gen2 to ingest and transform data into a Lakehouse, orchestrate data refreshes with Pipelines, and build a dimensional model using Direct Lake mode. Finally, you'll automatically generate a report to visualize the latest sales data.
+
+By the end of this tutorial, you'll be able to:
 
 > [!div class="checklist"]
->
 > * Prepare and load data into a lakehouse
-> * Build a dimensional model in a lakehouse
+> * Orchestrate a data pipeline to refresh data and send an email on failure
+> * Create a semantic model in the Lakehouse
 > * Automatically create a report with quick create
 
 ## Prerequisites
 
-* Before you start, if you haven't enabled Fabric yet, [enable Fabric for your organization](/fabric/admin/fabric-switch)
-* If you aren't signed up yet, [sign up for a free trial](service-self-service-signup-for-power-bi.md).
-* Create a [new workspace](../collaborate-share/service-create-the-new-workspaces.md) and assign a Fabric capacity.
-     * An existing workspace can also be used, although we recommend using a nonproduction workspace for simplicity of the tutorial.
-* Download the [Power Query template](https://github.com/microsoft/pbiworkshops/raw/main/_Asset%20Library/Source_Files/ContosoSales.pqt) file that contains sample queries for Contoso data.
+Before you begin, ensure you have the following:
+
+- [Enable Fabric for your organization](/fabric/admin/fabric-switch) if you haven't already.
+- [Sign up for a free trial](service-self-service-signup-for-power-bi.md) if you don't have access.
+- Create a [new workspace](../collaborate-share/service-create-the-new-workspaces.md) and assign a Fabric capacity. You can use an existing workspace, but a nonproduction workspace is recommended for this tutorial.
+- Download the [Power Query template](https://github.com/microsoft/pbiworkshops/raw/main/_Asset%20Library/Source_Files/ContosoSales.pqt) file containing sample queries for Contoso data.
 
 ## Create a lakehouse to store data
 
-We start by creating a lakehouse to store our data, Dataflows Gen2 to prepare and transform columns, and a pipeline to handle the orchestration of a scheduled refresh and e-mail activity.
+Start by creating a lakehouse to store your data. You'll use Dataflows Gen2 to prepare and transform it, and a pipeline to orchestrate scheduled refreshes and email notifications.
 
----
+1. In your workspace, select **New item** at the top of the page.
 
-1. Navigate to your workspace and select **New item**.
+    :::image type="content" source="media/fabric-get-started/new-item.png" alt-text="Screenshot of selecting New item in the workspace.":::
 
-    :::image type="content" source="media/fabric-get-started/new-item.png" alt-text="Screenshot of the Show all option in the new item menu.":::
+2. On the **New** item creation screen, search for or select **Lakehouse**.
 
-1. In the **New** item creation screen, search for or select the **Lakehouse** item.
+    :::image type="content" source="media/fabric-get-started/new-lakehouse.png" alt-text="Screenshot of the Lakehouse creation screen.":::
 
-    :::image type="content" source="media/fabric-get-started/new-lakehouse.png" alt-text="Screenshot of a new lakehouse creation.":::
+3. Enter **SalesLakehouse** as the name (names can include letters, numbers, and underscores, but not special characters or spaces), then select **Create**.
 
-1. Set the Lakehouse name to **SalesLakehouse**. Then select **Create**.
+    :::image type="content" source="media/fabric-get-started/name-lakehouse.png" alt-text="Screenshot showing the Lakehouse name input field.":::
 
-    :::image type="content" source="media/fabric-get-started/name-lakehouse.png" alt-text="Screenshot of naming a name Lakehouse.":::
-
-1. Once you're in the Lakehouse editor, select **New Dataflow Gen2**.
+4. In the Lakehouse editor, select **New Dataflow Gen2** from the ribbon.
 
     > [!NOTE]
-    > You can also select *Get data* from the ribbon and then **New Dataflow Gen2**.
+    > Alternatively, select *Get data* from the ribbon, then choose **New Dataflow Gen2**.
 
-    :::image type="content" source="media/fabric-get-started/new-dataflow-gen2.png" alt-text="Screenshot of Get data drop down in the Lakehouse editor.":::
+    :::image type="content" source="media/fabric-get-started/new-dataflow-gen2.png" alt-text="Screenshot showing the 'Get data' dropdown with 'New Dataflow Gen2' highlighted.":::
 
-1. Update the name of the dataflow to **OnlineSalesDataflow** and select **Create**.
+5. Name the dataflow **OnlineSalesDataflow** (use only letters, numbers, and underscores), then select **Create**.
 
-## Prepare and load data into your lakehouse
+## Prepare and load data into your lakehouse using Dataflows Gen2
 
-Take the following steps to load data into your lakehouse:
+1. In the **Power Query Online** editor for Dataflows Gen2, select **Import from a Power Query template** and choose the **ContosoSales.pqt** template file you downloaded in the [prerequisites](#prerequisites).
 
-1. Once you're in the **Power Query Online** editor for Dataflows Gen2, select **Import from a Power Query template** and choose the template file downloaded from the [prerequisites](#prerequisites).
+    :::image type="content" source="media/fabric-get-started/import-power-query-template.png" alt-text="Screenshot of importing a Power Query template.":::
 
-    :::image type="content" source="media/fabric-get-started/import-power-query-template.png" alt-text="Screenshot of watermarks in the Dataflows Gen2 editor.":::
+2. Select the **DimDate** query under the **Data load** group. If prompted, select **Configure connection**, set authentication to **Anonymous**, and select **Connect**.
 
-1. Select the **DimDate** query under the **Data load** query group. If necessary, select **Configure connection** and set the authentication type to **Anonymous** before selecting **Connect**.
-
-1. With the **DimDate** query selected, in the data preview window, change the data type of the **DateKey** column to **Date/Time** by selecting the icon in the top left.
+3. With **DimDate** selected, in the data preview, find the **DateKey** column. Select the data type icon in the column header and choose **Date/Time** from the dropdown.
 
     :::image type="content" source="media/fabric-get-started/transform-column-date-time.png" alt-text="Screenshot of changing data types within the Power Query editor.":::
 
-1. Select **Replace current** within the **Change column type** window.
+4. In the **Change column type** window, select **Replace current**.
 
+### Configure data destinations
 
-### Configure a data destination
+1. With **DimDate** selected, review the data destination settings in the bottom right. Hover over the configured Lakehouse to view its properties.
 
-Take the following steps to update a default data destination:
-
-1. While the **DimDate** table is still selected, direct your attention to the data destination settings located in the bottom right-hand corner and hover over the configured Lakehouse to explore its properties.
-
-    Our Lakehouse, which we previously set up in our workspaces, serves as the central entry point and destination for all our tables. Additionally, the update method is defaulted to be **Replace**, ensuring that previous data is automatically removed and new data written during each refresh cycle.
+    The Lakehouse you created is the destination for all tables. The default update method is **Replace**, which overwrites previous data during each refresh.
 
     :::image type="content" source="media/fabric-get-started/default-destination.png" alt-text="Screenshot of the Data destination section and configuration options.":::
 
-1. Next we'll modify the data destination settings for the **FactOnlineSales** table by first selecting the table and then reviewing the data destination settings located in the bottom right-hand corner.
+2. Select the **FactOnlineSales** table and review its data destination settings.
 
-    Since the **FactOnlineSales** table's source is constantly changing, we want to optimize our refreshes by appending data to an existing table. To achieve this, we’ll delete the data destination settings, by clicking on the **X** icon to remove.
+    Because the **FactOnlineSales** source changes frequently, optimize refreshes by appending new data. Remove its current data destination by selecting the **X** icon. Do not remove destinations for other tables.
 
     :::image type="content" source="media/fabric-get-started/modify-data-destination.png" alt-text="Screenshot of the data destination modify section and settings icon.":::
 
-1. With the **FactOnlineSales** query still active, select the **+** symbol to add a data destination and select **Lakehouse**.
+3. With **FactOnlineSales** still selected, select the **+** icon to add a data destination, then choose **Lakehouse**.
 
-    If necessary, set the authentication to **Organizational account** and then select **Next**.
+    If prompted, set authentication to **Organizational account** and select **Next**.
 
-    :::image type="content" source="media/fabric-get-started/add-lakehouse-destination.png" alt-text="Screenshot of the add data destination sources menu.":::
+    :::image type="content" source="media/fabric-get-started/add-lakehouse-destination.png" alt-text="Screenshot of the data destination modify section and settings icon.":::
 
-1. From the navigator, select the workspace used for this tutorial and expand to view all **Lakehouse** items. Select **SalesLakehouse** and confirm that the default **New table** is selected before selecting **Next** to continue.
+4. In the navigator, select your workspace and expand to view all **Lakehouse** items. Select **SalesLakehouse** and ensure **New table** is selected, then select **Next**.
 
     :::image type="content" source="media/fabric-get-started/new-table-fact-online-sales.png" alt-text="Screenshot of the destination target navigator window.":::
 
-1. Deselect the **Use automatic settings** and set the **Update method** to **Append** and then select **Save settings**.
+5. In the data destination settings panel, clear **Use automatic settings**, set **Update method** to **Append**, and select **Save settings**.
 
     > [!NOTE]
-    > This process inserts data, preserving the existing rows within the table on each subsequent refresh.
+    > The **Append** method adds new rows to the table during each refresh, preserving existing data.
 
     :::image type="content" source="media/fabric-get-started/append-method.png" alt-text="Screenshot of the destination settings menu selection.":::
 
-1. From the **Home** tab select **Save & run**.
+6. From the **Home** tab, select **Save & run**.
 
     :::image type="content" source="media/fabric-get-started/save-and-run.png" alt-text="Screenshot of the save and run button within Power Query Online.":::
 
-1. On the left side-rail select the **X** on the **OnlineSalesDataflow** item to exit the **Power Query Online** editor.
-
-    :::image type="content" source="media/fabric-get-started/close-dataflow.png" alt-text="Screenshot of the publish button within Power Query Online.":::
-
-### Orchestrate a data pipeline
-
-Using pipelines, we first orchestrate the refresh of our data flow. If an error occurs, we send a customized Outlook email that includes important details.
-
-1. Navigate to your workspace and select **New item**.
-
-    :::image type="content" source="media/fabric-get-started/new-item.png" alt-text="Screenshot of the Show all option in the new item menu.":::
-
-1. In the **New** item creation screen, search for or select the **Data pipeline** item.
-
-    :::image type="content" source="media/fabric-get-started/new-item-data-pipeline.png" alt-text="Screenshot of a new data pipeline creation.":::
-
-1. Set the pipeline name to **SalesPipeline**. Then select **Create**.
-
-    :::image type="content" source="media/fabric-get-started/new-pipeline-name.png" alt-text="Screenshot of the pipeline name menu option.":::
-
-1. Once you’re in the pipeline editor, select **Pipeline activity**, and then select **Dataflow**.
+7. To exit the **Power Query Online** editor, select the **X** on the **OnlineSalesDataflow** item in the left side-rail.
 
     > [!NOTE]
-    > You can also select *Dataflow* from the ribbon.
+    > Selecting **X** closes the editor but does not delete the dataflow.
 
-    :::image type="content" source="media/fabric-get-started/add-dataflow-activity.png" alt-text="Screenshot of the pipeline watermark canvas and the add activity option.":::
+    :::image type="content" source="media/fabric-get-started/close-dataflow.png" alt-text="Screenshot of the close button within Power Query Online.":::
 
-1. Select the dataflow activity within the pipeline editor and change its **Name** value to **OnlineSalesActivity** within the General section.
+## Orchestrate a data pipeline
 
-    :::image type="content" source="media/fabric-get-started/dataflow-activity-name.png" alt-text="Screenshot of the dataflow name value.":::
+Automate the refresh of your dataflow and handle errors by sending a customized Outlook email with key details.
 
-1. With the dataflow activity still selected, select **Settings** and choose **OnlineSalesDataflow** from the Dataflow list. If necessary to update the list, select the **Refresh** icon.
+1. In your workspace, select **New item**.
 
-    :::image type="content" source="media/fabric-get-started/dataflow-activity-dataflow.png" alt-text="Screenshot of the dataflow selection setting.":::
+    :::image type="content" source="media/fabric-get-started/new-item.png" alt-text="Screenshot of selecting New item in the workspace.":::
 
-1. Select the **Activities** tab and then the **Office365 Outlook** activity.
+2. On the **New** item creation screen, search for or select **Data pipeline**.
 
-    > [!NOTE]
-    > If a **Grant consent** window appears, select **Ok**, sign in with your organizational account and then select **Allow access**.
+    :::image type="content" source="media/fabric-get-started/new-item-data-pipeline.png" alt-text="Screenshot of selecting Data pipeline as a new item.":::
 
-    :::image type="content" source="media/fabric-get-started/office-365-activity.png" alt-text="Screenshot of the Office365 Outlook activity information.":::
+3. Name the pipeline **SalesPipeline** and select **Create**.
 
-1. Select the **Office365 Outlook** activity within the pipeline editor and change its **Name** value to **Mail on failure** within the General section.
+    :::image type="content" source="media/fabric-get-started/new-pipeline-name.png" alt-text="Screenshot of the pipeline name input.":::
 
-    :::image type="content" source="media/fabric-get-started/office-365-activity-name.png" alt-text="Screenshot of the Office365 Outlook activity name.":::
-
-1. With the Office365 Outlook activity still selected, select **Settings**. Update the **To** field to your e-mail address and the **Subject** to **Pipeline failure**. Select the **View in expression builder** for the mail Body.
+4. In the pipeline editor, select **Pipeline activity**, then choose **Dataflow**.
 
     > [!NOTE]
-    > More e-mail configuration options such as From (Send as), Cc, Bcc, Sensitivity label and more are available from *Advanced properties*.
+    > You can also select **Dataflow** from the ribbon.
 
-    :::image type="content" source="media/fabric-get-started/office-365-activity-settings.png" alt-text="Screenshot of the Office365 Outlook settings.":::
+    :::image type="content" source="media/fabric-get-started/add-dataflow-activity.png" alt-text="Screenshot of adding a Dataflow activity to the pipeline.":::
 
-1. In the **Pipeline expression builder**, paste the following expression code block in the text block at the top of the page:
+5. Select the dataflow activity in the pipeline editor. In the **General** section, set the **Name** to **OnlineSalesActivity**.
 
-    ```
+    :::image type="content" source="media/fabric-get-started/dataflow-activity-name.png" alt-text="Screenshot of naming the dataflow activity.":::
+
+6. With the dataflow activity selected, go to **Settings** and choose **OnlineSalesDataflow** from the Dataflow list. If needed, select the **Refresh** icon to update the list.
+
+    :::image type="content" source="media/fabric-get-started/dataflow-activity-dataflow.png" alt-text="Screenshot of selecting the dataflow in activity settings.":::
+
+7. Select the **Activities** tab, then add the **Office365 Outlook** activity.
+
+    > [!NOTE]
+    > If prompted with a **Grant consent** window, select **Ok**, sign in with your organizational account, and allow access.
+
+    :::image type="content" source="media/fabric-get-started/office-365-activity.png" alt-text="Screenshot of adding the Office365 Outlook activity.":::
+
+8. Select the **Office365 Outlook** activity in the pipeline editor. In the **General** section, set the **Name** to **Mail on failure**.
+
+    :::image type="content" source="media/fabric-get-started/office-365-activity-name.png" alt-text="Screenshot of naming the Office365 Outlook activity.":::
+
+9. With the Office365 Outlook activity selected, go to **Settings**. Enter your email address in the **To** field and set the **Subject** to **Pipeline failure**. For the mail **Body**, select **View in expression builder**.
+
+    > [!NOTE]
+    > Additional email options such as From (Send as), Cc, Bcc, and Sensitivity label are available under *Advanced properties*.
+
+    :::image type="content" source="media/fabric-get-started/office-365-activity-settings.png" alt-text="Screenshot of Office365 Outlook activity settings.":::
+
+10. In the **Pipeline expression builder**, paste the following expression into the text block at the top of the page:
+
+    ```text
     @concat(
         'Pipeline: '
-        , 
+        , pipeline().PipelineId
         , '<br>'
         , 'Workspace: '
-        , 
+        , pipeline().WorkspaceId
         , '<br>'
         , 'Time: '
-        , 
+        , utcnow()
     )
     ```
 
-1. Select **System variables** and insert the following variables by selecting the corresponding name from the following table.
+    This expression dynamically inserts the pipeline ID, workspace ID, and the current UTC time into the email body.
 
-    | Value name | Line | System variable |
-    | :- | :- | :- |
-    | Pipeline: | 3 | Pipeline ID |
-    | Workspace: | 6 | Workspace ID |
+11. In the pipeline editor, select **OnlineSalesActivity**. Drag from the **"X" (On fail)** handle and drop it onto the **Mail on failure** activity. This ensures the email is sent if the dataflow activity fails.
 
-    :::image type="content" source="media/fabric-get-started/system-variables.png" alt-text="Screenshot of the pipeline system variables.":::
+    :::image type="content" source="media/fabric-get-started/on-failure.png" alt-text="Screenshot of configuring the on-failure path.":::
 
-1. Select **Functions** and insert the following function by selecting the corresponding name from the following table. Once complete select **OK**.
+12. From the **Home** tab, select **Schedule**. Configure the schedule as follows, then select **Apply**:
 
-    | Value name | Line | System variable |
-    | :- | :- | :- |
-    | Time: | 9 | utcnow |
+    | Name           | Value         |
+    | -------------- | ------------- |
+    | Scheduled run  | On            |
+    | Repeat         | Daily         |
+    | Time           | 12:00:00 AM   |
 
-    :::image type="content" source="media/fabric-get-started/functions.png" alt-text="Screenshot of pipeline functions.":::
+13. From the **Home** tab, select **Run**. If prompted, select **Save and run** to continue.
 
-1. Select **OnlineSalesActivity** and from the available path options, select and hold the **"X" (On fail)** to create an arrow that will be dropped on the **Mail on failure** activity. This activity will now be invoked if the **OnlineSalesActivity** fails.
+    To monitor the pipeline’s status, view the **Output** table, which displays activity progress. The table refreshes automatically, or you can select the refresh icon to update it manually.
 
-     :::image type="content" source="media/fabric-get-started/on-failure.png" alt-text="Screenshot of the on failure path.":::
+    :::image type="content" source="media/fabric-get-started/output.png" alt-text="Screenshot of pipeline activity progress.":::
 
-1. From the **Home** tab, select **Schedule**. Once you have updated the following configurations, select **Apply** to save your changes.
+14. When the status shows **Succeeded**, return to your workspace to continue with the tutorial.
 
-     | Name | Value |
-     | :- | :- |
-     | Scheduled run | On |
-     | Repeat | Daily |
-     | Time | 12:00:00 AM |
-
-1. From the **Home** tab, select **Run**. If a dialog window is displayed select the **Save and run** option to continue.
-
-    To monitor the pipeline’s current status, you can view the **Output** table, which displays the current activity progress. The table will periodically refresh on its own, or you can manually select the refresh icon to update it.
-
-    :::image type="content" source="media/fabric-get-started/output.png" alt-text="Screenshot of the current pipeline activity progress.":::
-
-1. When the status returns **Succeeded**, you can proceed to the next section of the tutorial by returning to your workspace.
-
-     :::image type="content" source="media/fabric-get-started/return-to-workspace.png" alt-text="Screenshot of the side rail with workspace selection.":::
+    :::image type="content" source="media/fabric-get-started/return-to-workspace.png" alt-text="Screenshot of returning to the workspace.":::
 
 ## Create a semantic model in the Lakehouse
 
-The data you loaded is almost ready for reporting. Let’s first use the tables in the lakehouse to create a semantic model, which is a metadata layer that organizes and transforms physical data into logical objects. The semantic model is designed to reflect your business structure and make the data easier to analyze.
+The data you loaded is almost ready for reporting. Next, use the tables in the lakehouse to create a semantic model—a metadata layer that organizes and transforms physical data into logical objects. The semantic model is designed to reflect your business structure and make the data easier to analyze.
 
 1. In the workspace view, select the **SalesLakehouse** item.
 
-    :::image type="content" source="media/fabric-get-started/lakehouse-item-selection.png" alt-text="Screenshot of selecting the lakehouse item in a workspace.":::
+    :::image type="content" source="media/fabric-get-started/lakehouse-item-selection.png" alt-text="Screenshot of the lakehouse item in a workspace.":::
 
-1. Once in the Explorer, from the **Home** tab select **New semantic model**.
+2. Once in the Explorer, from the **Home** tab select **New semantic model**.
 
-1. In the New semantic model window, name your model **SalesModel**. Then, expand both the **dbo** schema and the **Tables** group. Select the following tables, and select **Confirm**.
+3. In the New semantic model window, name your model **SalesModel**. Then, expand both the **dbo** schema and the **Tables** group. Select the following tables, and select **Confirm**:
 
-    | Table name |
-    | :-- |
-    | DimCustomer |
-    | DimDate |
-    | DimEmployee |
-    | DimProduct |
-    | DimStore |
+    | Table name      |
+    | --------------  |
+    | DimCustomer     |
+    | DimDate         |
+    | DimEmployee     |
+    | DimProduct      |
+    | DimStore        |
     | FactOnlineSales |
 
-    :::image type="content" source="media/fabric-get-started/new-semantic-model-tables.png" alt-text="Screenshot of a new semanitc model from lakehouse tables.":::
-
+    :::image type="content" source="media/fabric-get-started/new-semantic-model-tables.png" alt-text="Screenshot of the lakehouse item in a workspace.":::
 
 ### Create relationships
 
-This model is a star schema that you might see from data warehouses: It resembles a star. The center of the star is a Fact table. The surrounding tables are called Dimension tables, which are related to the Fact table with relationships.
+This model uses a star schema, common in data warehouses. The center of the star is a Fact table, surrounded by Dimension tables, which are related to the Fact table.
 
----
+1. Create a relationship by dragging and dropping the **CustomerKey** column from the **FactOnlineSales** table to the **CustomerKey** column on the **DimCustomer** table.
 
-1. Create a relationship by dragging and dropping the column **CustomerKey** from the **FactOnlineSales** table, to the **CustomerKey** on the **DimCustomer** table.
+2. In the **Create Relationship** window, ensure the following settings, then select **Confirm**:
 
-1. Once in the **Create Relationship** window ensure that you have selected the correct tables, columns and settings as showing in the following table. Select **Confirm** to continue.
+    | Make this relationship active | From: Table 1 (column)         | To: Table 2 (column)     | Cardinality      | Cross filter direction |
+    | :--------------------------- | :----------------------------- | :----------------------- | :--------------- | :--------------------- |
+    | ☑                            | FactOnlineSales (CustomerKey)  | DimCustomer (CustomerKey)| Many to one (*:1)| Single                |
 
-    | Make this relationship active | From: Table 1 (column) | To: Table 2 (column) | Cardinality | Cross filter direction | 
-    | :----- |:----- | :------ | :----- | :----- | 
-    | ☑ | FactOnlineSales (CustomerKey) | DimCustomer (CustomerKey) | Many to one (*:1) | Single |
+3. Repeat these steps for each of the following relationships:
 
-1. Perform these same steps for each of the remaining tables and columns listed in the following table to create relationships.
+    | Make this relationship active | From: Table 1 (column)         | To: Table 2 (column)     | Cardinality      | Cross filter direction |
+    | :--------------------------- | :----------------------------- | :----------------------- | :--------------- | :--------------------- |
+    | ☑                            | FactOnlineSales (ProductKey)   | DimProduct (ProductKey)  | Many to one (*:1)| Single                |
+    | ☑                            | FactOnlineSales (StoreKey)     | DimStore (StoreKey)      | Many to one (*:1)| Single                |
+    | ☑                            | FactOnlineSales (DateKey)      | DimDate (DateKey)        | Many to one (*:1)| Single                |
+    | ☑                            | DimStore (StoreKey)            | DimEmployee (StoreKey)   | Many to one (*:1)| Both                  |
 
-    | Make this relationship active | From: Table 1 (column) | To: Table 2 (column) | Cardinality | Cross filter direction | 
-    | :----- |:----- | :------ | :----- | :----- |
-    | ☑ | FactOnlineSales (ProductKey) | DimProduct (ProductKey) | Many to one (*:1) | Single |
-    | ☑ | FactOnlineSales (StoreKey) | DimStore (StoreKey) | Many to one (*:1) | Single |
-    | ☑ | FactOnlineSales (DateKey) | DimDate (DateKey) | Many to one (*:1) | Single |
-    | ☑ | DimStore (StoreKey) | DimEmployee (StoreKey) | Many to one (*:1) | Both |
+    The following image shows a finished view of the semantic model with all relationships included.
 
-     The following image shows a finished view of the semantic model with all the created relationships included.
-
-     :::image type="content" source="media/fabric-get-started/star-schema.png" alt-text="Screenshot of table relationships in the model view pane." lightbox="media/fabric-get-started/star-schema.png":::
+    :::image type="content" source="media/fabric-get-started/star-schema.png" alt-text="Screenshot of table relationships in the model view pane." lightbox="media/fabric-get-started/star-schema.png":::
 
 ### Write a measure in DAX
 
-Let's write a basic measure that calculates the total sales amount.
+Create a basic measure to calculate the total sales amount.
 
 1. Select the **FactOnlineSales** table and on the **Home** tab, select **New measure**.
 
-1. In the formula editor, copy and paste or type the following measure to calculate the total sales amount. Select the **check mark** to commit.
+2. In the formula editor, enter the following DAX measure, then select the **check mark** to commit:
 
     ```dax
     Total Sales Amount = SUM(FactOnlineSales[SalesAmount])
@@ -286,29 +269,25 @@ Let's write a basic measure that calculates the total sales amount.
 
 ## Autocreate a report
 
-Now that you’ve modeled your data, it's time to visualize and explore your data using quick create.
+Now that you’ve modeled your data, you can quickly visualize and explore it using quick create.
 
----
-
-1. Return to your workspace by selecting it from the left side-rail. Then, hover over the **SalesModel** item, select the ellipses **( … )**, and choose **Auto-create report**.
+1. Return to your workspace by selecting it from the left side-rail. Hover over the **SalesModel** item, select the ellipses **( … )**, and choose **Auto-create report**.
 
     :::image type="content" source="media/fabric-get-started/auto-create-report.png" alt-text="Screenshot of the Autocreate report option with a workspace." lightbox="media/fabric-get-started/auto-create-report.png":::
 
-    A report is automatically generated for you and dynamically updates based upon column selections in the **Your data** pane. 
-
-    - The displayed report may differ from the image below.
+    A report is automatically generated and updates dynamically based on column selections in the **Your data** pane.
 
     :::image type="content" source="media/fabric-get-started/auto-create-finished-report.png" alt-text="Screenshot of the finished Auto-create report.":::
 
-1. Select **Save** from the ribbon to save a copy to the current workspace
+2. Select **Save** from the ribbon to save a copy to the current workspace.
 
     > [!NOTE]
-    > To enter the complete visual authoring experience, you can select **Edit** on the ribbon.
+    > To enter the full visual authoring experience, select **Edit** on the ribbon.
 
-You can learn more about [quick create](../create-reports/service-quick-create-report.md).
+Learn more about [quick create](../create-reports/service-quick-create-report.md).
 
 ## Related content
 
-Congratulations on completing the tutorial! If you created a dedicated workspace for this tutorial, you can now choose to delete it. Alternatively, feel free to clean up by removing individual items created during the process.
+Congratulations on completing the tutorial! If you created a dedicated workspace for this tutorial, you can now choose to delete it, or remove individual items created during the process.
 
-We hope this tutorial has demonstrated how Power BI users can easily uncover insights at any scale using Microsoft Fabric.
+This tutorial demonstrates how Power BI users can easily uncover insights at any scale using Microsoft Fabric.
