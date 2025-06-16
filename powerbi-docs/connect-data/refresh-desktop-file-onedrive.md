@@ -123,4 +123,6 @@ Sometimes refreshing data may not go as expected. You'll typically run into data
 
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
+If you download a live connection report, the connection string format is incompatible with publish/republish with OneDrive and SharePoint. You will need to open the pbix file in Power BI Desktop and reconnect to the dataset again before updating the file in OneDrive and SharePoint. 
+
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
