@@ -56,11 +56,11 @@ You don't need a SQL Server Database Engine server available at the time of inst
 
     ![Choose an edition](media/install-report-server/pbireportserver-choose-edition.png)
    
-       Choose either Evaluation or Developer edition.
+   Choose either Evaluation or Developer edition.
 
     ![Edition 2](media/install-report-server/pbireportserver-choose-edition2.png)
    
-       Otherwise, enter the product key that you got from either the Power BI service or the Volume License Service Center. For more information about how to get your product key, see the [Before you install](#before-you-install) section above.
+   Otherwise, enter the product key that you got from either the Power BI service or the Volume License Service Center. For more information about how to get your product key, see the [Before you install](#before-you-install) section above.
 1. Read and agree to the license terms and conditions, then select **Next**.
 
     ![License terms](media/install-report-server/pbireportserver-eula.png)
@@ -71,7 +71,7 @@ You don't need a SQL Server Database Engine server available at the time of inst
 
     ![Specify install path](media/install-report-server/pbireportserver-install-file-path.png)
    
-       The default path is C:\Program Files\Microsoft Power BI Report Server.
+   The default path is C:\Program Files\Microsoft Power BI Report Server.
 
 1. After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.
 
