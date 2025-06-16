@@ -95,7 +95,7 @@ Take the following steps to update a default data destination:
 
     If necessary, set the authentication to **Organizational account** and then select **Next**.
 
-    :::image type="content" source="media/fabric-get-started/add-lakehouse-destination.png" alt-text="Screenshot of the data destination modify section and settings icon.":::
+    :::image type="content" source="media/fabric-get-started/add-lakehouse-destination.png" alt-text="Screenshot of the add data destination sources menu.":::
 
 1. From the navigator, select the workspace used for this tutorial and expand to view all **Lakehouse** items. Select **SalesLakehouse** and confirm that the default **New table** is selected before selecting **Next** to continue.
 
@@ -126,7 +126,7 @@ Using pipelines, we first orchestrate the refresh of our data flow. If an error 
 
 1. In the **New** item creation screen, search for or select the **Data pipeline** item.
 
-    :::image type="content" source="media/fabric-get-started/new-item-data-pipeline.png" alt-text="Screenshot of a new lakehouse creation.":::
+    :::image type="content" source="media/fabric-get-started/new-item-data-pipeline.png" alt-text="Screenshot of a new data pipeline creation.":::
 
 1. Set the pipeline name to **SalesPipeline**. Then select **Create**.
 
@@ -225,7 +225,7 @@ The data you loaded is almost ready for reporting. Let’s first use the tables 
 
 1. In the workspace view, select the **SalesLakehouse** item.
 
-    :::image type="content" source="media/fabric-get-started/lakehouse-item-selection.png" alt-text="Screenshot of the lakehouse item in a workspace.":::
+    :::image type="content" source="media/fabric-get-started/lakehouse-item-selection.png" alt-text="Screenshot of selecting the lakehouse item in a workspace.":::
 
 1. Once in the Explorer, from the **Home** tab select **New semantic model**.
 
@@ -240,7 +240,7 @@ The data you loaded is almost ready for reporting. Let’s first use the tables 
     | DimStore |
     | FactOnlineSales |
 
-    :::image type="content" source="media/fabric-get-started/new-semantic-model-tables.png" alt-text="Screenshot of the lakehouse item in a workspace.":::
+    :::image type="content" source="media/fabric-get-started/new-semantic-model-tables.png" alt-text="Screenshot of a new semanitc model from lakehouse tables.":::
 
 
 ### Create relationships
