@@ -25,7 +25,7 @@ An administrator typically installs and configures Power BI Report Server, grant
 See the **System requirements** section of the [Report Builder download page](https://go.microsoft.com/fwlink/?LinkID=734968) on the Microsoft Download Center.
 
 > [!NOTE]
-> As of May 2025 Report Builder is 64-bit only.
+> As of May 2025 (Version: 15.1.20318.47) Report Builder is 64-bit only.
  
 ## Install Report Builder from a web portal
   
