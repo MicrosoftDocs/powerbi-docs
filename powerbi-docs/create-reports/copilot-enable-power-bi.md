@@ -144,7 +144,7 @@ Once a user is assigned to a Fabric Copilot capacity, no other steps are require
 To use Copilot for Power BI, you must have access to a Premium Power BI capacity or paid Fabric capacity. Your capacity (either Premium or Fabric) needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability).
 
 > [!NOTE]
-> Copilot in Microsoft Fabric isn't supported on trial stock-keeping units (SKUs). Only paid SKUs are supported.
+> Copilot in Microsoft Fabric isn't supported on trial stock-keeping units (SKUs) or trial capacities. Only paid SKUs are supported.
 
 ## Considerations and limitations
 
