@@ -46,7 +46,7 @@ Which option is best for you depends on various factors and is beyond the scope 
 
 Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are two alternative ways of working with [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) to perform time-based calculations:
 
-- [**Classic**](#classic). The easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations. Requires you to [set the date table](/transform-model/desktop-date-tables.md).
+- [**Classic**](#classic). The easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations. Requires you to [set the date table](desktop-date-tables.md).
 
 - [**Calendar based (preview)**](#enhanced-calendar-based-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations. This option doesn't require you to [set the table as a date table](desktop-date-tables.md), except if you're planning to [connect Excel Pivot Tables to your semantic model](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884).
 
@@ -88,7 +88,7 @@ TOTALYTD ( [Sales], 'Fiscal Calendar' )
 ```
 
 > [!NOTE]
-> When working with Calendars you don't need to set your date table, unless in [specific scenarios](/transform-model/desktop-date-tables.md).
+> When working with Calendars you don't need to set your date table, unless in [specific scenarios](desktop-date-tables.md).
 
 ### Enabling the enhanced DAX Time Intelligence preview
 
@@ -119,7 +119,7 @@ The calendar options screen shows the calendars defined on the selected table. H
 - create a new calendar by selecting **New calendar**
 - edit an existing calendar by selecting **Edit**
 - delete an existing calendar by selecting **Delete**
-- [set the table as a date table](/transform-model/desktop-date-tables.md) by selecting **Mark as date table**
+- [set the table as a date table](desktop-date-tables.md) by selecting **Mark as date table**
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-options-for-table.png" alt-text="Screenshot showing the Calendar Options on a table." lightbox="media/desktop-time-intelligence/calendar-options-for-table.png":::
 
