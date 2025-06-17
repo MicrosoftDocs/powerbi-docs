@@ -14,11 +14,11 @@ LocalizationGroup: Premium
 
 # Large semantic models in Power BI Premium
 
-Power BI semantic models can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large semantic models beyond the default limit can be enabled with the **Large semantic model storage format** setting. When enabled, semantic model size is limited by the Premium *capacity* size or the [maximum size](service-admin-premium-workloads.md#max-offline-semantic-model-size) set by the administrator.
+Power BI semantic models can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. The default size limit is 1 GB. With Fabric capacities, semantic models can exceed the default size limit if the **Large semantic model storage format** setting is enabled. When using the large storage format, the size limit is equal to the Fabric *capacity* size or the [maximum size](service-admin-premium-workloads.md#max-offline-semantic-model-size) set by the capacity administrator. For Pro workspaces assigned to the *Reserved Capacity for Pro Workspaces*, the semantic model size limit is 1 GB.
 
-Large semantic models can be enabled for all Fabric F SKUs, Premium P SKUs, Embedded A SKUs, and with Premium Per User (PPU). The large semantic model size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
+The **Large semantic model storage format** setting can be enabled for all Fabric F SKUs, Premium P SKUs, Embedded A SKUs, with Premium Per User (PPU) and Pro workspaces assigned to *Reserved Capacity for Pro Workspaces*.
 
-While required for semantic models to grow beyond 10 GB, enabling the Large semantic model storage format setting has other benefits. If you're planning to use XMLA endpoint-based tools for semantic model write operations, be sure to enable the  setting, even for semantic models that you wouldn't necessarily characterize as a *large* semantic model. When enabled, the large semantic model storage format can improve XMLA write operations performance.
+While required for semantic models to grow beyond 10 GB, enabling the **Large semantic model storage format** has other benefits. If you're planning to use XMLA-based tools for semantic model write operations, be sure to enable this setting, even for semantic models that you wouldn't necessarily characterize as a *large* semantic model because the large storage format can improve XMLA write performance. Semantic models in Pro workspaces do not support XMLA-based write operations.
 
 Large semantic models in the service don't affect the Power BI Desktop model upload size, which is still limited to 10 GB. Instead, semantic models can grow beyond that limit in the service on refresh.
 
