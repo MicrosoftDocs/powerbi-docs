@@ -14,7 +14,14 @@ LocalizationGroup: Model your data
 
 Power BI offers multiple tools to perform time-based calculations which either rely on automatic date tables or date tables you add.
 
-The auto-date/time feature automatically creates hidden date tables for each date field in your data model. While this is a convenient option for simple models, it is not recommended for more complex scenarios and larger models. For those, it is preferable to create a dedicated table for more flexibility. 
+**TODO: wordsmith this + links**
+
+We recommend using calendar-based TI, because Providing a range of flexiblity to meet demanding query performance or non-standard calendars requirements. [read more].
+Less flexible but easier optoins are available as well.
+
+**TODO: infographic autodatetime, vs classic vs enhanced: perf, ease of setup, flexiblity**
+
+The auto-date/time feature automatically creates hidden date tables for each date field in your data model. While this is a convenient option for simple models, it is not recommended for more complex scenarios and larger models. For those, it is preferable to create a dedicated table for more flexibility.
 For more information about this automatic behavior, see [Apply auto date/time in Power BI Desktop](desktop-auto-date-time.md).
 
 While this is a convenient option for simple models, it is not recommended for more complex scenarios and larger models. For those, it is preferable to create a dedicated table for more flexibility.
@@ -30,6 +37,7 @@ There are multiple ways of creating such a table, including:
 Which option is best for you depends on various factors and is beyond the scope of this tutorial.
 
 ## Working with a time-based calculations
+
 Assuming you are not using [auto date/time](desktop-auto-date-time.md), there are two alternative ways of working with [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) to perform time-based calculations:
 
 - [**Classic**](#classic). This is the easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations. This requires you to [set the date table](desktop-date-tables.md).
@@ -62,7 +70,7 @@ Calendars are metadata definitions added to a table to indicate which columns fr
 - Gregorian
 - Shifted Gregorian
 - Retail (445, 454, 544 patterns)
-- 13-month 
+- 13-month
 - Lunar
 
 The possibilities are endless as there is no built-in assumption from Power BI on how your calendar is structured.
@@ -74,7 +82,7 @@ TOTALYTD ( [Sales], 'Fiscal Calendar' )
 ```
 
 > [!NOTE]
-> When working with Calendars you do not need to set your date table, unless in [specific scenarios](desktop-date-tables#set-and-use-date-tables-in-power-bi-desktop.md#).
+> When working with Calendars you do not need to set your date table, unless in [specific scenarios](/transform-model/desktop-date-tables.md).
 
 ### Enabling the enhanced DAX Time Intelligence preview
 
@@ -105,7 +113,7 @@ The calendar options screen shows the calendars defined on the selected table. H
 - create a new calendar by selecting **New calendar**
 - edit an existing calendar by selecting **Edit**
 - delete an existing calendar by selecting **Delete**
-- [set the table as a date table](desktop-date-tables) by selecting **Mark as date table**
+- [set the table as a date table](/transform-model/desktop-date-tables.md) by selecting **Mark as date table**
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-options-for-table.png" alt-text="Screenshot showing the Calendar Options on a table." lightbox="media/desktop-time-intelligence/calendar-options-for-table.png":::
 
@@ -134,7 +142,7 @@ The following table shows the categories that are available and provides the exp
 
 |Category|Description|Cardinality in a Gregorian calendar|Example column values in a Gregorian calendar|
 |--|--|--|--|
-|Year|The year|`Y` = number of years|2024, 2025
+|Year|The year|`Y` = number of years|2024, 2025|
 |Quarter|The quarter including the year|`4*Y`|Q1 2024, Q2 2025|
 |Quarter of Year|The quarter of the year|`4`|Year Quarter 1, YQ1, Q1, Quarter 2|
 |Month|The month including the year|`12*Y ≤ value ≤ 13*Y`|January 2023, 2024 Feb|
@@ -183,6 +191,8 @@ Offline validations can potentially be time consuming as they access table data.
 
 The offline validations checks the following rules and will return an warning if any rules are invalidated in your calendar:
 
+**TODO: relationship replace with ratio??**
+
 - a column associated with a category does not have blank values.
 - higher level and lower level categories have a one-to-many cardinality .relationship. For example, columns associated with the Year category should have a one-to-many cardinality with columns associated with the Month category.
 - columns associated with categories on the same level have a one-to-one cardinality relationship. For example, columns associated with the Month category should have a one-to-one cardinality with columns associated with the Month of Year and Year categories.
@@ -195,6 +205,7 @@ Once a calendar is defined, you can refer to it in [Time intelligence functions]
 ```dax
 Total Quantity MTD ISO-454 = TOTALMTD ( [Total Quantity], 'ISO-454' )
 ```
+
 If the calendar is not defined and error is returned:
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-time-intelligence-non-existing-calendar.png" alt-text="Screenshot showing a measure using the TOTALMTD function with a calendar parameter to a non existing calendar." lightbox="media/desktop-time-intelligence/calendar-time-intelligence-non-existing-calendar.png":::
@@ -255,12 +266,13 @@ ADDCOLUMNS (
     "Date", [Date]
 )
 ```
+
 ## Related content
 
 For more information related to this article, see the following resources:
 
-* [Apply auto date/time in Power BI Desktop](desktop-auto-date-time.md)
-* [Design guidance for date tables in Power BI Desktop](../guidance/model-date-tables.md)
-* [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-* Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- [Apply auto date/time in Power BI Desktop](desktop-auto-date-time.md)
+- [Design guidance for date tables in Power BI Desktop](../guidance/model-date-tables.md)
+- [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
