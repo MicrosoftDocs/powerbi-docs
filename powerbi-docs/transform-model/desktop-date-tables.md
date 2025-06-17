@@ -21,7 +21,7 @@ Many data analysts prefer to create their own date tables, which is fine. In **P
 :::image type="content" source="media/desktop-date-tables/date-tables_01.png" alt-text="Screenshot of Power BI Desktop showing the Mark as date table dialog box.":::
 
 > [!NOTE]
-> Setting your date table is not needed to perform [modern, calendar-based time intelligence calculations](desktop-time-intelligence.md#enhanced-calendar-based-preview) unless you are planning to [connect Excel Pivot Tables to your semantic model](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884) or if you use a surrogate key for your date table (such as an integer value that represents YYYYMMDD).
+> Setting your date table is not needed to perform [enhanced, calendar-based time intelligence calculations](desktop-time-intelligence.md#enhanced-calendar-based-preview) unless you are planning to [connect Excel Pivot Tables to your semantic model](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884) or if you use a surrogate key for your date table (such as an integer value that represents YYYYMMDD).
 
 ## Benefits of setting your own date table
 
