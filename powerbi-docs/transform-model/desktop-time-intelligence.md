@@ -24,7 +24,7 @@ For most models, it is recommended to add a date table (or more in some scenario
 There are multiple ways of creating such a table, including:
 
 - **Power Query M**. You can use the [List.Dates](/powerquery-m/list-dates) function. [See below for an example](#creating-a-date-table-using-built-in-tools).
-- **DAX**. You can use the [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-funciton-dax) functions to generate a basic calculated date table. You can of course also use a more advanced DAX statement to create a date table. [An example is provided below](#creating-a-date-table-using-built-in-tools).
+- **DAX**. You can use the [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-function-dax) functions to generate a basic calculated date table. You can of course also use a more advanced DAX statement to create a date table. [An example is provided below](#creating-a-date-table-using-built-in-tools).
 - **External tools**.
 - **Loading from a source**, such as a source system, a file or another Power BI semantic model.
 Which option is best for you depends on various factors and is beyond the scope of this tutorial.
@@ -34,17 +34,17 @@ Assuming you are not using [auto date/time](desktop-auto-date-time.md), there ar
 
 - [**Classic**](#classic). This is the easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations. This requires you to [set the date table](desktop-date-tables.md).
 
-- [**Calendar based (preview)**](#modern-calendar-based-preview). This is a newer option requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations. This option does not require you to [set the table as a date table](desktop-date-tables.md), except if you are planning to [connect Excel Pivot Tables to your semantic model](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884).
+- [**Calendar based (preview)**](#enhanced-calendar-based-preview). This is a newer option requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations. This option does not require you to [set the table as a date table](desktop-date-tables.md), except if you are planning to [connect Excel Pivot Tables to your semantic model](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884).
 
 ## Classic
 
 This option requires you to have a date table in your model and [set it accordingly](desktop-date-tables.md). After you have done so, you can use the [time intelligence functions](/dax/time-intelligence-functions-dax) and refer to your date table. For example, if you have a date table called **Date** in your model that you set as your date table which contains a Date column then you can use:
 
 ```dax
-SAMEPERIODLASTYEAR('Date'[Date])
+SAMEPERIODLASTYEAR ( 'Date'[Date] )
 ```
 
-While this is an fast and easy approach, there are a number of downsides compared to the more [modern, calendar-based approach](#modern-calendar-based-preview):
+While this is an fast and easy approach, there are a number of downsides compared to the more [enhanced, calendar-based approach](#enhanced-calendar-based-preview):
 
 - it requires you set the date table
 - it only works with models that have at least one dedicated date table
@@ -52,9 +52,166 @@ While this is an fast and easy approach, there are a number of downsides compare
 - it does not provide week-based calculations
 - in specific scenarios, time-based calculations do not perform well.
 
-We recommend you use the [modern, calendar-based](#modern-calendar-based-preview) approach.
+> [!NOTE]
+> We recommend you use the [enhanced, calendar-based](#enhanced-calendar-based-preview) approach.
 
-## Modern (Calendar-based) (preview)
+## Enhanced (Calendar-based) (preview)
+
+Calendars are metadata definitions added to a table to indicate which columns from that table represent what attributes of time. Calendars give you full flexibility to decide how to divide time up in years, quarters, months and weeks. You can, for example, define the calendars that follow these patterns:
+
+- Gregorian
+- Shifted Gregorian
+- Retail (445, 454, 544 patterns)
+- 13-month 
+- Lunar
+
+The possibilities are endless as there is no built-in assumption from Power BI on how your calendar is structured.
+
+You can define one or more calendars on any table in your model. After you have defined the calendar in your model you can refer to it in your time-intelligence functions. For example, here is how to calculate a total year to date of Sales using a defined **Fiscal calendar**:
+
+```dax
+TOTALYTD ( [Sales], 'Fiscal Calendar' )
+```
+
+> [!NOTE]
+> When working with Calendars you do not need to set your date table, unless in [specific scenarios](desktop-date-tables#set-and-use-date-tables-in-power-bi-desktop.md#).
+
+### Enabling the enhanced DAX Time Intelligence preview
+
+To get started, you first need to enable the **Enhanced DAX Time Intelligence** preview feature.
+
+1. In Power BI Desktop, go to File > Options and settings > Options > Preview features.
+
+2. Select the **Enhanced DAX Time Intelligence** preview.
+3. Select **OK**
+4. Restart Power BI Desktop
+
+### Managing calendars
+
+To manage a calendar, right-click the table that contains the calendar or on which you want to define the calendar and choose **Calendar options** or select **Calendar options** in the Table tools ribbon after selecting the table:
+
+:::image type="content" source="media/desktop-time-intelligence/calendar-options-entrypoints.png" alt-text="Screenshot showing the entry points to open the Calendar Options on a table." lightbox="media/desktop-time-intelligence/calendar-options-entrypoints.png":::
+
+Alternatively you can use external tools or the [TMDL view](desktop-tmdl-view.md) to define a calendar. See the [TMDL script](#tmdl-script-for-calendars) below for more information.
+
+Calendars are also shown in the [model explorer](model-explorer.md) under the table on which they are defined:
+
+:::image type="content" source="media/desktop-time-intelligence/calendars-model-explorer.png" alt-text="Screenshot showing the model explorer for a semantic model. The Date table node is expanded and the calendars are highlighted." lightbox="media/desktop-time-intelligence/calendars-model-explorer.png":::
+
+### The calendar options screen
+
+The calendar options screen shows the calendars defined on the selected table. Here you can:
+
+- create a new calendar by selecting **New calendar**
+- edit an existing calendar by selecting **Edit**
+- delete an existing calendar by selecting **Delete**
+- [set the table as a date table](desktop-date-tables) by selecting **Mark as date table**
+
+:::image type="content" source="media/desktop-time-intelligence/calendar-options-for-table.png" alt-text="Screenshot showing the Calendar Options on a table." lightbox="media/desktop-time-intelligence/calendar-options-for-table.png":::
+
+#### Considerations
+
+When creating or editing a calendar, keep in mind that:
+
+- Each calendar must have a unique name within the data model
+- A single table may contain multiple calendars
+- A calendar must at least assign one primary column to a category
+- A calendar can only assign columns from its own table to categories
+- Each category should have a primary column and can have zero or more associated columns assigned
+- Any given column can be mapped to only one category per calendar
+- However, a column may be mapped to different categories across different calendars within the same table
+
+### Assigning column categories
+
+Defining a calendar involves giving it a name and assigning columns to categories. Each category represents a unit of time and specific [column categories](#available-column-categories) are available. You need to at least assign one primary column to a category to save your calendar. Each category should have a [primary column and can have zero or more associated columns](#primary-vs-associated-columns). Whenever any columns associated to a category are in context Power BI will know what unit of time they present. Additionally, for some functions such as [TOTALMTD](/dax/totalmtd-function-dax.md) Power BI will use the primary column mapped to the relevant category in the referenced calendar to perform the requested calculation.
+To assign a column to a category, select the category from the **Add category** menu and then select the primary and optional associated columns.
+
+:::image type="content" source="media/desktop-time-intelligence/calendar-select-category.png" alt-text="Screenshot showing the calendar creation and edit screen." lightbox="media/desktop-time-intelligence/calendar-select-category.png":::
+
+### Available column categories
+
+The following table shows the categories that are available and provides the expected cardinality in a Gregorian calendar. It also gives example values for Gregorian calendars.
+
+|Category|Description|Cardinality in a Gregorian calendar|Example column values in a Gregorian calendar|
+|--|--|--|--|
+|Year|The year|`Y` = number of years|2024, 2025
+|Quarter|The quarter including the year|`4*Y`|Q1 2024, Q2 2025|
+|Quarter of Year|The quarter of the year|`4`|Year Quarter 1, YQ1, Q1, Quarter 2|
+|Month|The month including the year|`12*Y ≤ value ≤ 13*Y`|January 2023, 2024 Feb|
+|Month of Year|The month of the year|`12`|January, Year Month 11, YM11, M11, 11|
+|Month of Quarter|The month of the quarter|`3`|1, QM2|
+|Week|The week including the year|`52 ≤ value ≤ 53`|Week 50 2023, W50-2023, 2023-W50|
+|Week of Year|The week of the year|`52`|Week 50, W50, 50|
+|Week of Quarter|The week of the quarter|`13`|Quarter Week 10, QW10, 10|
+|Week of Month|The week of the month|`5`|Month Week 2, MW2, 2|
+|Day of Year|The day of the year|`365 ≤ value ≤366`|365, D1|
+|Day of Quarter|The day of the quarter|`92`|Quarter Day 10, QD2, 50|
+|Day of Month|The day of the month|`31`|Month Day 30, MD10, 30|
+|Day of Week|The day of the week|`7`|Week Day 5, WD5, 5|
+|Date|The date|`365*Y ≤ value ≤ 366*Y`|12/31/2025|
+
+In addition to the list above, you can associated any number of columns on your table with the **Time-related** category. This is not currently possible in the calendar options, but can instead only be done using external tools or [TMDL](#tmdl-script-for-calendars).
+
+> [!NOTE]
+> Context on any columns that are assigned to this category will be removed when performing calculations. Any context on columns that are part of the table on which the calendar is defined but are not tagged in that calendar will be kept.
+
+**TODO: this needs an example - but need help creating the example**
+
+### Primary vs associated columns
+
+The primary column is required for each category. Whenever that column or any associated columns assigned to the same category on the referenced calendar are in context or the category is required to perform a calculation, Power BI will use the primary column.
+You can have zero or more associated columns assigned to a category.
+
+### Validation
+
+It is important to validate and test your calendar so you are certain it meets your needs. The validations offered in Power BI include both [real-time validations](#real-time-validations) and [offline validations](#offline-validations).
+
+> [!NOTE]
+> You can still save your calendar even if the validations fail, but it is recommended to perform the validations and resolve any issues before saving your calendar.
+
+### Real-time validations
+
+Whenever you add a category that has a **X of Y** name, such as **Day of Year** Power BI validates that the **"Y"** (**Year** in this example) category is also tagged in the same calendar. If that is not the case, a warning will be shown.
+
+:::image type="content" source="media/desktop-time-intelligence/calendar-realtime-validation-error.png" alt-text="Screenshot showing the calendar creation and edit screen with a real-time validation error." lightbox="media/desktop-time-intelligence/calendar-realtime-validation-error.png":::
+
+### Offline validations
+
+Offline validations can potentially be time consuming as they access table data. Therefore, they do not run automatically in contrast with the [real-time validations](#real-time-validations). To run the validations, select **Validate data**:
+
+:::image type="content" source="media/desktop-time-intelligence/calendar-run-offline-validations.png" alt-text="Screenshot showing the calendar creation and edit screen. The Validate data button is highlighted." lightbox="media/desktop-time-intelligence/calendar-run-offline-validations.png":::
+
+The offline validations checks the following rules and will return an warning if any rules are invalidated in your calendar:
+
+- a column associated with a category does not have blank values.
+- higher level and lower level categories have a one-to-many cardinality .relationship. For example, columns associated with the Year category should have a one-to-many cardinality with columns associated with the Month category.
+- columns associated with categories on the same level have a one-to-one cardinality relationship. For example, columns associated with the Month category should have a one-to-one cardinality with columns associated with the Month of Year and Year categories.
+- primary and associated columns assigned to the same category have a one-to-one cardinality relationship. For example, when assigned to the Month category, a primary column Month and an associated column EnglishMonthName should have a one-to-one cardinality.
+
+### Working with calendars
+
+Once a calendar is defined, you can refer to it in [Time intelligence functions](/dax/time-intelligence-functions-dax) using the second parameter. For example, the following measure will calculate a total month to date value of Total Quantity against the **ISO-454** calendar:
+
+```dax
+Total Quantity MTD ISO-454 = TOTALMTD ( [Total Quantity], 'ISO-454' )
+```
+If the calendar is not defined and error is returned:
+
+:::image type="content" source="media/desktop-time-intelligence/calendar-time-intelligence-non-existing-calendar.png" alt-text="Screenshot showing a measure using the TOTALMTD function with a calendar parameter to a non existing calendar." lightbox="media/desktop-time-intelligence/calendar-time-intelligence-non-existing-calendar.png":::
+
+Even if the calendar is defined, however, a measure might still return an error. This happens if the function used expects a category to be present in the calendar and the calendar does not have that category. For example, [TOTALWTD](/dax/totalwtd-function-dax.md) expects specific categories to be present in the calendar. If they are not, an error is returned:
+
+:::image type="content" source="media/desktop-time-intelligence/calendar-time-intelligence-missing-category-calendar.png" alt-text="Screenshot showing a measure using the TOTALWTD function with a valid calendar reference that does not define the required categories." lightbox="media/desktop-time-intelligence/calendar-time-intelligence-missing-category-calendar.png":::
+
+### Time intelligence functions and required categories
+
+Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require certain categories to be included on the calendar that is referenced in the function call:
+
+**TODO: insert table here**
+
+### TMDL script for calendars
+
+**TODO: insert TMDL script here which shows all options of calendars including associated and time-related**
 
 ## Creating a date table using built-in tools
 
