@@ -237,6 +237,90 @@ Similarly, when performing a week-based calculation the calendar should at least
 
 ### TMDL script for calendars
 
+```tmdl
+createOrReplace
+
+	table Date
+		lineageTag: xyz
+
+		column Date
+			dataType: dateTime
+			formatString: Long Date
+			lineageTag: abc
+			summarizeBy: none
+			sourceColumn: Date
+
+        column Year
+			dataType: string
+			lineageTag: 6a50619c-c3ab-43d4-88fb-f5099f189d17
+			summarizeBy: none
+			sourceColumn: Year
+
+			annotation SummarizationSetBy = Automatic
+        
+        column Month
+			dataType: string
+			lineageTag: 148d98d9-511b-4e80-bcb0-453c44a47779
+			summarizeBy: none
+			sourceColumn: Month
+
+			annotation SummarizationSetBy = Automatic
+
+        column MonthName
+			dataType: string
+			lineageTag: 31366904-e84e-4c74-9662-468fa868417a
+			summarizeBy: none
+			sourceColumn: MonthName
+			sortByColumn: SortByMonth
+
+			changedProperty = SortByColumn
+
+			annotation SummarizationSetBy = Automatic
+
+        column DutchMonthName
+			dataType: string
+			lineageTag: 076ad25d-60aa-47b2-bd7a-3115b6729b7c
+			summarizeBy: none
+			sourceColumn: DutchMonthName
+
+			annotation SummarizationSetBy = Automatic
+
+        column 'Holiday Name'
+			dataType: string
+			lineageTag: ab100b31-bbe4-460d-b0c1-a5e46f93c1e5
+			summarizeBy: none
+			sourceColumn: Holiday Name
+
+			annotation SummarizationSetBy = Automatic
+        
+        column IsWorkingDay
+			dataType: string
+			lineageTag: 40fc5f7a-8295-49b8-aef7-a9d6c3af97e1
+			summarizeBy: none
+			sourceColumn: IsWorkingDay
+
+			annotation SummarizationSetBy = Automatic
+		...	
+		
+		calendar 'Demo Calendar'
+			lineageTag: def
+
+			calendarColumnGroup = year
+				primaryColumn: Year
+
+			calendarColumnGroup = month
+				primaryColumn: Month
+				associatedColumn: DutchMonthName
+				associatedColumn: MonthName
+			
+			calendarColumnGroup
+                column: 'Holiday Name'
+                column: isWorkingDay
+
+		annotation PBI_ResultType = Table
+
+		annotation PBI_NavigationStepName = Navigation
+```
 **TODO: insert TMDL script here which shows all options of calendars including associated and time-related**
 
 ## Creating a date table using built-in tools
