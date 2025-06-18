@@ -220,9 +220,20 @@ Even if the calendar is defined, however, a measure might still return an error.
 
 ### Time intelligence functions and required categories
 
-Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require certain categories to be included on the calendar that is referenced in the function call:
+Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require sufficient categories to be included on the calendar that is referenced in the function call so Power BI can identify a uniquely particular unit of time.In other words, Power BI needs to be able to "walk-up" from the level the calculation is performed on all the way to a individual year. For example, when performing a calculation on quarters, for example using [TOTALQTD](/dax/totalqtd-function-dax.md) either assign  **Quarter** category, or assign both **Quarter of Year** and **Year** in the calendar.
+Similarly, when performing a week-based calculation the calendar should at least assign a primary column to one of the following sets of categories:
 
-**TODO: insert table here**
+- Week
+- Week of Year, Year
+- Week of Quarter, Quarter
+- Week of Quarter, Quarter of Year, Year
+- Week of Month, Month
+- Week of Month, Month of Year, Year
+- Week of Month, Month of Quarter, Quarter
+- Week of Month, Month of Quarter, Quarter of Year, Year
+
+> [!NOTE]
+> For some functions their name is indicative for on which level the calculation operates (i.e.,[TOTALYTD](/dax/totalytd-function-dax.md)), while for others it is dependent on the parameters ([DATEADD](/dax/dateadd-function-dax.md)) or the context ([SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax.md))
 
 ### TMDL script for calendars
 
