@@ -178,7 +178,7 @@ As a Power BI user, the awareness of any considerations and limitations when cop
 **A:** Visualizations on *dashboards* can't be copied and pasted into Power BI reports or other dashboards.
 
 **Q:** Will all content from a long table visual be copied when I use the copy-paste feature in Power BI?<br>
-**A:** Not necessarily. When copying visuals such as tables that require scrolling to view all rows or columns, only the visible portion of the visual at the time of copying will be included. Any data that extends beyond the scrollable view may be cut off and not captured in the pasted output. To ensure complete data capture, consider exporting the data instead.
+**A:** Not necessarily. When copying visuals such as tables that require scrolling to view all rows or columns, only the visible portion of the visual at the time of copying is included. Any data that extends beyond the scrollable view might be cut off and not captured in the pasted output. To ensure complete data capture, consider exporting the data instead.
  
 
 ## Related content
