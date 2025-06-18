@@ -30,7 +30,7 @@ Several components are involved when using scheduled refresh for your Power BI r
 * In a scale-out configuration, the data model can be replicated across nodes.
 * Analysis Services processes the data and executes any needed calculations.
 
-Power BI Report Server maintains an event queue for all scheduled operations. It polls the queue at regular intervals to check for new events. By default, the queue is scanned at 10 second intervals. You can change the interval by modifying the **PollingInterval**, **IsNotificationService**, and **IsEventService** configuration settings in the RSReportServer.config file. **IsDataModelRefreshService** can also be used to set whether a report server process scheduled events.
+Power BI Report Server maintains an event queue for all scheduled operations. It polls the queue at regular intervals to check for new events. By default, the queue is scanned at 10-second intervals. You can change the interval by modifying the **PollingInterval**, **IsNotificationService**, and **IsEventService** configuration settings in the RSReportServer.config file. **IsDataModelRefreshService** can also be used to set whether a report server process scheduled events.
 
 ### Analysis Services
 Rendering a Power BI report, as well as performing a scheduled refresh, requires loading the Power BI report's data model in Analysis Services. An Analysis Services process will be running with Power BI Report Server.
@@ -41,23 +41,24 @@ Not all Power BI Reports can have a scheduled refresh plan created on them. The 
 
 * Your report contains one or more Analysis Services data sources, which use a live connection.
 * Your report contains one or more data sources, which use DirectQuery.
-* Your report does not contain any data source. For example, data is manually entered via *Enter Data* or a report contains only static content like images, text, etc.
-* Your report contains dynamic data sources. For example, data from the report is used to dynamicaly build the name of a server, the name of a database, or a URL address to fetch contents. Only data sources that are detected when the report was uploaded can be refreshed.
+* Your report doesn't contain any data source. For example, data is manually entered via *Enter Data* or a report contains only static content like images, text, etc.
+* Your report contains dynamic data sources. For example, data from the report is used to dynamically build the name of a server, the name of a database, or a URL address to fetch contents. Only data sources that are detected when the report was uploaded can be refreshed.
+* Your report contains a web data source that is connected to via an internet proxy.
 
 In addition to the above list, there are specific scenarios with data sources in *import* mode, for which you cannot create refresh plans.
 
 * If a *File* or *Folder* data source is used and the file path is a local path (e.g. C:\Users\user\Documents), then a refresh plan cannot be created. The path must be a path the report server can connect to like a network share. For example, *\\myshare\Documents*.
-* If data source can be connected using only OAuth (e.g. Facebook, Google Analytics, Salesforce, etc.), then cache refresh plan cannot be created. At the moment, RS does not support OAuth authentication for any data source whether it is for paginated, mobile or Power BI reports.
+* If data source can be connected using only OAuth (e.g. Facebook, Google Analytics, Salesforce, etc.), then cache refresh plan cannot be created. At the moment, RS doesn't support OAuth authentication for any data source whether it's for paginated, mobile, or Power BI reports.
 
 ### Memory limits
-Traditional workload for a report server has been similar to a web application. The ability to load reports with imported data or DirectQuery, and the ability to perform scheduled refresh, rely on an Analysis Services instance being hosted alongside of the report server. As a result, this could result is unexpected memory pressure on the server. Plan your server deployment accordingly knowning that Analysis Services may be consuming memory alongside the report server.
+Traditional workload for a report server has been similar to a web application. The ability to load reports with imported data or DirectQuery, and the ability to perform scheduled refresh, rely on an Analysis Services instance being hosted alongside of the report server. As a result, this could result is unexpected memory pressure on the server. Plan your server deployment accordingly knowing that Analysis Services may be consuming memory alongside the report server.
 
 For information on how to monitor an Analysis Services instance, see [Monitor an Analysis Services Instance](/sql/analysis-services/instances/monitor-an-analysis-services-instance).
 
 For information about memory settings within Analysis Services, see [Memory Properties](/sql/analysis-services/server-properties/memory-properties).
 
 ### Data model size limit
-The data model loaded into the internal Analysis Services engine during a scheduled refresh has a maximum size of 2,000 MB (2GB). This maximum size can't be configured. If your data model grows larger than 2GB, you will receive the refresh error, "The length of the result exceeds the length limit (2GB) of the target large type." In that case, we recommend hosting the model in an Analysis Services instance and using a live connection to the model in the report.
+The data model loaded into the internal Analysis Services engine during a scheduled refresh has a maximum size of 2,000 MB (2GB). This maximum size can't be configured. If your data model grows larger than 2GB, you'll receive the refresh error, "The length of the result exceeds the length limit (2GB) of the target large type." In that case, we recommend hosting the model in an Analysis Services instance and using a live connection to the model in the report.
 
 ## Related content
 
