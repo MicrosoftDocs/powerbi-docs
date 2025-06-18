@@ -70,7 +70,7 @@ There are a few things to keep in mind about the Visual Query editor:
 
 ## Analyze outside the editor
 
-Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Microsoft Entra ID or MFA. The sign in process is the same as the sign-in process for Power BI.
+Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Microsoft Entra ID or MFA. The sign-in process is the same as the sign-in process for Power BI.
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-14.png" alt-text="Diagram that shows data sources and datamarts with S Q L and Azure data studio.":::
 
