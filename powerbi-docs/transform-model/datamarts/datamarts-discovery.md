@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: concept-article
-ms.date: 09/24/2024
+ms.date: 06/17/2025
 ms.custom: FY25Q1-Linter
 LocalizationGroup: Data from files
 ---

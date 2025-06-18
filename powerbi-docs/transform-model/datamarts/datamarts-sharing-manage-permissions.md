@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: concept-article
-ms.date: 09/30/2024
+ms.date: 06/17/2025
 ms.custom: FY25Q1-Linter
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn how to share Power BI datamarts and manage permissions.
@@ -21,7 +21,7 @@ This article describes the ways you can share your datamarts and manage its perm
 
 ## Sharing datamarts for consumption
 
-Once a datamart has been created, you can share it for downstream consumption by other users in your organization. Sharing a datamart enables the recipient to access the datamart in the following ways:  
+Once a datamart is created, you can share it for downstream consumption by other users in your organization. Sharing a datamart enables the recipient to access the datamart in the following ways:  
 
 * **SQL connection string:** Connect to the datamart’s underlying SQL connection string and query the datamart from SQL client tools.
 
@@ -67,7 +67,7 @@ The following image shows the **Grant people access** window.
 
 :::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-06.png" alt-text="Screenshot of sharing a datamart from the information panel in the data hub.":::
 
-Once you grant access, recipients receive an email stating they've been granted access to the datamart. The email includes a button titled **Open this datamart** that opens the datamart's information page.
+Once you grant access, recipients receive an email stating access to the datamart is granted. The email includes a button titled **Open this datamart** that opens the datamart's information page.
 
 When recipients open the link or otherwise navigate to the shared datamart, its information page shows the SQL connection string for connecting to the datamart. Users can use client tools other than Power BI, such as SSMS, to query the datamart using T-SQL.
 
@@ -82,11 +82,11 @@ The following image highlights the **Create a report** entry point in a datamart
 :::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05-b.png" alt-text="Screenshot of Create a report for a datamart." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-05-b.png":::
 
 > [!NOTE]
-> Sharing a datamart allows the recipient to access the datamart for downstream consumption and not to collaborate on the datamart creation. To enable other creators to collaborate on the datamart, you must provide Member, Admin or Contributor access to the workspace where the datamart is created.  
+> Sharing a datamart allows the recipient to access the datamart for downstream consumption and not to collaborate on the datamart creation. To enable other creators to collaborate on the datamart, you must provide Member, Admin, or Contributor access to the workspace where the datamart is created.  
 
 ## Manage permissions
 
-The Manage permissions page shows the list of users who have been given access by either assigning to Workspace roles or item permissions (as described earlier in this article).
+The Manage permissions page shows the list of users who have access by either assigning to Workspace roles or item permissions (as described earlier in this article).
 
 If you're an Admin or Member, go to your workspace and select **More options** which shows the context menu and select **Manage permissions**.
 
