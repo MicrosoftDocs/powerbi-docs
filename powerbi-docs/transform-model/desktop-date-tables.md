@@ -20,12 +20,9 @@ Many data analysts prefer to create their own date tables, which is fine. In **P
 
 :::image type="content" source="media/desktop-date-tables/date-tables_01.png" alt-text="Screenshot of Power BI Desktop showing the Mark as date table dialog box.":::
 
-> [!NOTE]
-> Setting your date table isn't needed to perform [enhanced, calendar-based time intelligence calculations](desktop-time-intelligence.md#calendar-based-time-intelligence-preview) unless in [specific scenarios](#benefits-of-setting-your-own-date-table)
-
 ## Benefits of setting your own date table
 
-If not using the [enhanced calendar-based time intelligence calculations](desktop-time-intelligence.md#calendar-based-time-intelligence-preview), the [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) require some understanding of date calculations in your model. Setting your own date table or using [auto date/time](desktop-auto-date-time.md) enables these functions to work. There are specific situations in which you do need set your own date table:
+The [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) require some understanding of date calculations in your model. Setting your own date table or using [auto date/time](desktop-auto-date-time.md) enables these functions to work. There are specific situations in which you do need set your own date table:
 
 - The relationships between the date table and other tables in your model are based on columns of a different data type than Datetime. For example, if you load data from a source such as a data warehouse, specific columns that represent dates are often provided. These columns (also called surrogate keys) are often stored as a whole number and formatted as yyyy-mm-dd (for example: *20241231* to represent the December 31 2024). If you have relationships between the date table and other tables in your model that use such columns, you need to set your own date table in order use the time intelligence capabilities.
 - If you want to use [advanced date filters in Excel PivotTables or PivotCharts](https://support.microsoft.com/office/filter-dates-in-a-pivottable-or-pivotchart-571cc416-ba4d-4005-a01e-3d99306ccefc) based on Power BI data.

@@ -25,6 +25,7 @@ This table compares the three tools provided:
 |[Calendar-based time intelligence](#calendar-based-time-intelligence-preview)|high|medium|high|Recommended to create a date table, highest flexibility, best performance, but increased setup cost|
 
 ## Auto-date/time
+
 The auto-date/time feature automatically creates hidden date tables for each date field in your data model. For more information about this automatic behavior, see [Apply auto date/time in Power BI Desktop](desktop-auto-date-time.md).
 
 > [!NOTE]
@@ -46,9 +47,12 @@ Which option is best for you depends on various factors and is beyond the scope 
 
 Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are two alternative ways of working with [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) to perform time-based calculations:
 
-- [**Classic time intelligence**](#classic-time-intelligence). The easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations. Requires you to [set the date table](desktop-date-tables.md).
+- [**Classic time intelligence**](#classic-time-intelligence). The easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations.
 
-- [**Calendar based time-intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations. This option doesn't require you to [set the table as a date table](desktop-date-tables.md), except if you're planning to [connect Excel Pivot Tables to your semantic model](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884).
+- [**Calendar based time-intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations.
+
+> [!NOTE]
+> You will need to [set your table as a date table](desktop-date-tables.md#benefits-of-setting-your-own-date-table) for specific scenarios.
 
 ## Classic time intelligence
 
@@ -86,9 +90,6 @@ You can define one or more calendars on any table in your model. After you defin
 ```dax
 TOTALYTD ( [Sales], 'Fiscal Calendar' )
 ```
-
-> [!NOTE]
-> When working with Calendars you don't need to set your date table, unless in [specific scenarios](desktop-date-tables.md).
 
 ### Enabling the enhanced DAX Time Intelligence preview
 
