@@ -14,15 +14,15 @@ LocalizationGroup: Model your data
 
 Power BI offers multiple tools to perform time-based calculations, which either rely on automatic date tables or date tables you add.
 
-We recommend using [calendar-based time intelligence (preview)](#enhanced-calendar-based-preview) because it provides the best performance and highest range of flexibility to meet any calendar.
+We recommend using [calendar-based time intelligence (preview)](#calendar-based-time-intelligence-preview) because it provides the best performance and highest range of flexibility to meet any calendar.
 
 This table compares the three tools provided:
 
 |Tool|Set up effort required|Ease of management|Flexiblity|Notes|
 |--|--|--|--|--|
 |[Auto-date/time](desktop-auto-date-time.md)|virtually zero|hard|low|Increases model size due to multiple hidden date tables between created|
-|[Classic time intelligence](#classic)|medium|easy|low|Requires creation of a date table, assumes Gregorian or shifted Gregorian calendar, suffers from performance issues in some specific scenarios|
-|[Calendar-based time intelligence](#enhanced-calendar-based-preview)|high|medium|high|Recommended to create a date table, highest flexibility, best performance, but increase setup cost|
+|[Classic time intelligence](#classic-time-intelligence)|medium|easy|low|Requires creation of a date table, assumes Gregorian or shifted Gregorian calendar, suffers from performance issues in some specific scenarios|
+|[Calendar-based time intelligence](#calendar-based-time-intelligence-preview)|high|medium|high|Recommended to create a date table, highest flexibility, best performance, but increase setup cost|
 
 ## Auto-date/time
 The auto-date/time feature automatically creates hidden date tables for each date field in your data model. For more information about this automatic behavior, see [Apply auto date/time in Power BI Desktop](desktop-auto-date-time.md).
@@ -46,11 +46,11 @@ Which option is best for you depends on various factors and is beyond the scope 
 
 Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are two alternative ways of working with [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) to perform time-based calculations:
 
-- [**Classic**](#classic). The easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations. Requires you to [set the date table](desktop-date-tables.md).
+- [**Classic time intelligence**](#classic-time-intelligence). The easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations. Requires you to [set the date table](desktop-date-tables.md).
 
-- [**Calendar based (preview)**](#enhanced-calendar-based-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations. This option doesn't require you to [set the table as a date table](desktop-date-tables.md), except if you're planning to [connect Excel Pivot Tables to your semantic model](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884).
+- [**Calendar based time-intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations. This option doesn't require you to [set the table as a date table](desktop-date-tables.md), except if you're planning to [connect Excel Pivot Tables to your semantic model](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884).
 
-## Classic
+## Classic time intelligence
 
 This option requires you to have a date table in your model and [set it accordingly](desktop-date-tables.md). Afterwards, you can use the [time intelligence functions](/dax/time-intelligence-functions-dax) and refer to your date table. For example, if you have a date table called **Date** in your model that you set as your date table, which contains a Date column then you can use:
 
@@ -58,7 +58,7 @@ This option requires you to have a date table in your model and [set it accordin
 SAMEPERIODLASTYEAR ( 'Date'[Date] )
 ```
 
-While this is a fast and easy approach, there are many downsides compared to the [calendar-based approach](#enhanced-calendar-based-preview):
+While this is a fast and easy approach, there are many downsides compared to the [calendar-based approach](#calendar-based-time-intelligence-preview):
 
 - it requires you set the date table
 - it only works with models that have at least one dedicated date table
@@ -67,9 +67,9 @@ While this is a fast and easy approach, there are many downsides compared to the
 - in specific scenarios, time-based calculations don't perform well.
 
 > [!NOTE]
-> We recommend you use the [enhanced, calendar-based](#enhanced-calendar-based-preview) approach.
+> We recommend you use the [enhanced, calendar-based](#calendar-based-time-intelligence-preview) approach.
 
-## Enhanced (Calendar-based) (preview)
+## Calendar-based time-intelligence (preview)
 
 Calendars are metadata definitions added to a table to indicate which columns from that table represent what attributes of time. Calendars give you full flexibility to decide how to divide up time in years, quarters, months, and weeks. You can, for example, define the calendars that follow these patterns:
 
