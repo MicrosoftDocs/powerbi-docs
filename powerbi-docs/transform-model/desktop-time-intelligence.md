@@ -323,6 +323,10 @@ createOrReplace
 		annotation PBI_NavigationStepName = Navigation
 ```
 
+### Considerations
+
+- Performing a time intelligence calculations on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security.md) rules can lead to unexpected results.
+
 ## Creating a date table using built-in tools
 
 The following examples create a date table from January 1, 2010 to December 31, 2030 using either Power Query M or DAX. It includes the following columns: Year, Month Number, Month Name, Month Year, Quarter, Year Quarter, Day, and Date.
