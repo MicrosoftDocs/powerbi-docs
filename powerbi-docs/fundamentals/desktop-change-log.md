@@ -157,7 +157,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 
-- Fixed issue in v2 connector that create duplicate records, and some missing records, causing rows in the dataset to be repeated instead of new rows being returned
+- Fixed issue in v2 connector that creates duplicate records, and some missing records, causing rows in the dataset to be repeated instead of new rows being returned
 
 ## January 2025 QFE 2 
 
@@ -636,7 +636,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 
-- Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS AAD resources.
+- Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS Azure AD resources.
 - Assert failure fix for column names longer than 30 characters: now users will be able to connect to tables with columns names longer than 30 characters and refresh them. 
 
 ## May 2022 QFE 1
@@ -670,7 +670,7 @@ Bug fixes/improvements:
 - Date picker defaults fix: now for the existing reports the datepicker icon in date range slicers won't be available and as a result, users' reports won't be changed. 
 - Model refresh fix: now column descriptions for SimpleQueryMappingInput table inputs won't disappear after the model refresh.
 - AS engine fix: now the `language` in the AS config file will always be set to en-us regardless of the Power BI Desktop UI language to prevent issues with the AS engine's start.
-- Keyboard Navigation fix for the selection pane: now it will be accessible by keyboard while navigation define under "Format" tab.
+- Keyboard Navigation fix for the selection pane: now it will be accessible by keyboard while navigation is defined under "Format" tab.
 
 ## February 2022 QFE 1
 
