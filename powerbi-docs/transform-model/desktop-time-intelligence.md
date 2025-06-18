@@ -321,7 +321,6 @@ createOrReplace
 
 		annotation PBI_NavigationStepName = Navigation
 ```
-**TODO: insert TMDL script here which shows all options of calendars including associated and time-related**
 
 ## Creating a date table using built-in tools
 
