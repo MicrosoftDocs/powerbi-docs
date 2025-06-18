@@ -106,13 +106,12 @@ corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= 
 
    As a result, the R visual now plots circles, only considers the upper half, and reorders the matrix to cluster correlated attributes.
 
-```
    ![Screenshot of the R visual circle plot example.](media/desktop-r-visuals/r-visuals-8.png)
-```   When you execute an R script that results in an error, an error message displays on the canvas instead of the R visual plot. For details on the error, select **See details** from the R visual error.
+   When you execute an R script that results in an error, an error message displays on the canvas instead of the R visual plot. For details on the error, select **See details** from the R visual error.
 
-```
+
    ![Screenshot of the error message displayed on the canvas.](media/desktop-r-visuals/r-visuals-9.png)
-```## R scripts security 
+## R scripts security 
 R visuals are created from R scripts, which might contain code with security or privacy risks. When attempting to view or interact with an R visual for the first time, a user is presented with a security warning message. Only enable R visuals if you trust the author and source, or after you review and understand the R script.
 
 
