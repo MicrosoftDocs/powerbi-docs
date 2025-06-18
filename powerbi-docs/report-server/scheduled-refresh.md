@@ -44,6 +44,8 @@ Not all Power BI Reports can have a scheduled refresh plan created on them. The 
 * Your report does not contain any data source. For example, data is manually entered via *Enter Data* or a report contains only static content like images, text, etc.
 * Your report contains dynamic data sources. For example, data from the report is used to dynamicaly build the name of a server, the name of a database, or a URL address to fetch contents. Only data sources that are detected when the report was uploaded can be refreshed.
 
+* Your report contains a web data source that is connected to via a proxy.
+
 In addition to the above list, there are specific scenarios with data sources in *import* mode, for which you cannot create refresh plans.
 
 * If a *File* or *Folder* data source is used and the file path is a local path (e.g. C:\Users\user\Documents), then a refresh plan cannot be created. The path must be a path the report server can connect to like a network share. For example, *\\myshare\Documents*.
