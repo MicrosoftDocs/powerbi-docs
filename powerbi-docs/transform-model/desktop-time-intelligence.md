@@ -165,7 +165,7 @@ The following table shows the categories that are available and provides the exp
 |Day of Week|The day of the week|`7`|Week Day 5, WD5, 5|
 |Date|The date|`365*Y ≤ value ≤ 366*Y`|12/31/2025|
 
-In addition these categories, you can associate any number of columns on your table with the **Time-related** category. This isn't currently possible in the calendar options, but can instead only be done using external tools or [TMDL](#tmdl-script-for-calendars).
+In addition to these categories, you can associate any number of columns on your table with the **Time-related** category. This isn't currently possible in the calendar options, but can instead only be done using external tools or [TMDL](#tmdl-script-for-calendars).
 
 > [!NOTE]
 > Context on any columns that are assigned to this category is removed when performing calculations. Any context on columns that are part of the table on which the calendar is defined but aren't tagged in that calendar is kept.
