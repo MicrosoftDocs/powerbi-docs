@@ -19,7 +19,7 @@ A moving average is an average of the data in your series, calculated over a def
 
 To add a moving average to a chart:
   
-1. Right-click on a field in the **Values** area of the chart and select **Add Calculated Series**, as shown in the following image. The **Calculated Series Properties** dialog opens.
+1. Right-click on a value in the chart and select **Add Calculated Series**, as shown in the following image. The **Calculated Series Properties** dialog opens.
 
    ![Screenshot of the add calculated series command highlighted in the local menu.](./media/paginated-reports-visualizations/menu-add-calculated-series.png "menu-add-calculated-series")
   
