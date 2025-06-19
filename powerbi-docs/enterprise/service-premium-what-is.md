@@ -66,7 +66,7 @@ With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-a
 | F256  | 100 | 100 |  8 - 16 | 120    | 10 |   160 |  6,000 | Unlimited |
 | F512  | 200 | 200 | 10 - 20 | 240    | 20 |   320 | 12,000 | Unlimited |
 | F1024 | 400 | 200 | 12 - 24 | 480    | 40 |   640 | 24,000 | Unlimited |
-| F2048 | 400 | 200 |         | 960    | 40 | 1,280 | 24,000 | Unlimited |
+| F2048 | 400 | 200 | 12 - 24 | 960    | 40 | 1,280 | 24,000 | Unlimited |
 
 <sup>1</sup> The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) doesn't currently expose these metrics.
 
