@@ -85,6 +85,9 @@ Calendars are metadata definitions added to a table to indicate which columns fr
 
 The possibilities are endless as there's no built-in assumption from Power BI on how your calendar is structured.
 
+Additionally, calendar-based time intelligence heavily reduces the number of storage engine queries required and therefore has much better performance. For exapmle, in DirectQuery mode, this can result in less queries being sent to the source and a more responsive user experience compared to the classic time intelligence.
+
+
 You can define one or more calendars on any table in your model. After you defined the calendar in your model, you can refer to it in your time-intelligence functions. For example, here's how to calculate a total year to date of Sales using a defined **Fiscal calendar**:
 
 ```dax
