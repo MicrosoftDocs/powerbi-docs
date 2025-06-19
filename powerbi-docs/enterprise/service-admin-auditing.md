@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/28/2025
+ms.date: 06/19/2025
 ms.custom: licensing support,fabric
 LocalizationGroup: Administration
 ---
@@ -21,7 +21,6 @@ You can track Microsoft Fabric user activities, including Power BI operations, u
 ## Prerequisites
 
 * You have to be a Fabric administrator.
-
 * Install the [Power BI Management cmdlets](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt) locally, or use the Power BI Management cmdlets in Azure Cloud Shell.
 
 ## Activity log
@@ -44,7 +43,7 @@ https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRI
 
 If the results include a continuation token, continue to call the API using that token to get the rest of the data until a continuation token is no longer returned. It's possible for a call to return a continuation token without any event entries. The following example shows how to loop with a continuation token returned in the response:
 
-```
+```text
 while(response.ContinuationToken != null)
 {
    // Store the activity event results in a list for example
@@ -55,6 +54,7 @@ while(response.ContinuationToken != null)
 }
 completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
+
 If the time span between `startDateTime` and `endDateTime` exceeds 1 hour, it takes multiple requests to download the data through `continuationUri` in response.
 
 The following example shows how to download data for 1 hour and 5 minutes:
@@ -117,3 +117,5 @@ $activities[0]
 * [Track user activities in Microsoft Fabric](/fabric/admin/track-user-activities)
 
 * [Operation list](/fabric/admin/operation-list)
+
+* [Access the Power BI activity log](/fabric/guidance/admin-activity-log)
