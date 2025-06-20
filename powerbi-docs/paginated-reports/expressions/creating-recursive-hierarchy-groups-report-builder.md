@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: updatefrequency5
+ms.update-cycle: 1825-days
 ---
 # Create recursive hierarchy groups in a paginated report (Power BI Report Builder)
 
