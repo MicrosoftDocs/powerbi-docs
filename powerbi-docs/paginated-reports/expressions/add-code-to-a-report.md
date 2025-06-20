@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: updatefrequency5
+ms.update-cycle: 1825-days
 ---
 # Add code to a paginated report (Power BI Report Builder)
 
