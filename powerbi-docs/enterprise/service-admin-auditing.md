@@ -118,4 +118,4 @@ $activities[0]
 
 * [Operation list](/fabric/admin/operation-list)
 
-* [Access the Power BI activity log](/fabric/guidance/admin-activity-log)
+* [Access the Power BI activity log](../guidance/admin-activity-log.md)
