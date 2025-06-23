@@ -28,23 +28,14 @@ See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft
 Follow these steps to share links to reports, dashboards, visuals, and semantic models in the Power BI service, and in Microsoft Teams channels and chats.
 
 1. In either the Power BI service or in Microsoft Teams, select one of these options:
-
-   * **Chat in Teams** in the action bar of a dashboard or semantic model:
-
-       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png" alt-text="Screenshot that shows the Chat in Teams button in the action bar.":::
-
-   * **Chat in Teams** in the context menu for a single visual:
-
-       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png" alt-text="Screenshot shows the Chat in Teams button in a visual contextual menu.":::
-
-   * **Chat in Teams**  in the action bar of an app.
-
-       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button-apps.png" alt-text="Screenshot that shows the Chat in Teams button in a visual contextual menu.":::
-
-   * **Share** in the action bar of a report, then select **Teams**:
-
-       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button-report.png" alt-text="Screenshot that shows the Share button in the action bar when viewing reports.":::
-
+   * **Share** button:
+     * From the action bar in a report when in *view* mode
+   * **Chat in Teams** button:
+     * From the action bar of a report when in *edit* mode
+     * From the action bar of a dashboard
+     * From the action bar of a semantic model
+     * From the action bar of an app
+     * From the  context menu for a single visual
 1. In the **Share to Microsoft Teams** dialog, select the person, group, or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
 
     :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button-pressed.png" alt-text="Screenshot that shows the Share to Microsoft Teams dialog.":::
