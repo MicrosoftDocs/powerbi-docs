@@ -163,7 +163,7 @@ No reduction strategy.
 
 ### Scatter chart (high density)
 
-By default, scatter charts display up to 3,500 data points. The limit can be increased up to 10,000 data points under 'Advanced options'.
+By default, scatter charts display up to 3,500 data points. The limit can be increased up to 10,000 data points under **Advanced options**.
 
 For more information, see [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md).
 
