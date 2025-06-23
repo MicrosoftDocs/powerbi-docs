@@ -3,13 +3,13 @@ title: Chat in Microsoft Teams directly from the Power BI service
 description: Learn how to share Power BI dashboards, reports, and semantic models directly to Microsoft Teams from the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: maya.bendov
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 12/10/2024
+ms.date: 6/23/2025
 #customer intent: As a Power BI user I want to learn how to share dashboards, repoorts and semantic models.
 ---
 
@@ -29,7 +29,7 @@ Follow these steps to share links to reports, dashboards, visuals, and semantic 
 
 1. In either the Power BI service or in Microsoft Teams, select one of these options:
 
-   * **Chat in Teams** in the action bar of a dashboard, report, or semantic model:
+   * **Chat in Teams** in the action bar of a dashboard or semantic model:
 
        :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png" alt-text="Screenshot that shows the Chat in Teams button in the action bar.":::
 
@@ -40,6 +40,10 @@ Follow these steps to share links to reports, dashboards, visuals, and semantic 
    * **Chat in Teams**  in the action bar of an app.
 
        :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button-apps.png" alt-text="Screenshot that shows the Chat in Teams button in a visual contextual menu.":::
+
+   * **Share** in the action bar of a report, then select **Teams**:
+
+       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button-report.png" alt-text="Screenshot that shows the Share button in the action bar when viewing reports.":::
 
 1. In the **Share to Microsoft Teams** dialog, select the person, group, or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
 
