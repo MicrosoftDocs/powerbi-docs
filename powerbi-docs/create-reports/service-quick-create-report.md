@@ -74,6 +74,7 @@ To view licensing and model limitations, review the **Considerations and limitat
 - The table name can’t be longer than 80 characters, and column names can’t be longer than 512 characters.  
 - Table and column names can’t contain double quotes ("), periods (.), or leading or trailing white spaces.
 - Gateway connections aren't supported for the Excel and CSV connectors.
+- Only 8 tables are supported. If more than 8 tables are picked, then "Too many tables to load" error is shown.
 
 ### Report limitations  
 
