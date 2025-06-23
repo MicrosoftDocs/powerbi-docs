@@ -324,3 +324,5 @@ Review the following considerations for working with tables in Power BI.
 - Create [tree maps in Power BI](power-bi-visualization-treemaps.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
 - Apply [conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md).
+- Apply [data point limits and strategies by visual type](power-bi-data-points.md).
+
