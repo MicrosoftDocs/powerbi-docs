@@ -31,7 +31,7 @@ Follow these steps to share links to reports, dashboards, visuals, and semantic 
 
 If you're using a a report in *edit* mode, or you're working in a dashboard, semantic model, app, or single visual: 
 
-1. Select the **Chat in Teams** button.
+1. From the action bar (or context menu for visuals), select the **Chat in Teams** button.
 1. In the **Share to Microsoft Teams** dialog, indicate the recipient, and add an optional message.
 2. Select **Share** to send the link. The link is added to existing conversations or starts a new chat.
 
@@ -45,7 +45,7 @@ If you used the contextual menu for a specific visual, the visual is highlighted
 
 If you're using a report in *view* mode: 
 
-1. Select the **Share** button.
+1. From the action bar, select the **Share** button.
 1. In the **Send link** dialog, indicate the link recipient, and add an optional message.
 1. Select the **Teams** icon. You might be asked to sign in to Microsoft Teams.
 
