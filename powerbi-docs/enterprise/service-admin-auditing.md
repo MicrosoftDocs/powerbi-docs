@@ -27,6 +27,8 @@ You can track Microsoft Fabric user activities, including Power BI operations, u
 
 The Power BI activity log contains complete copy of the Power BI activities in a JSON array. You can find a list of all the Power BI activities in the Fabric [operation list](/fabric/admin/operation-list).
 
+Most audit events show up within 30 minutes; however, there can be a lag of up to 60 minutes to retrieve Power BI events. For details on SLAs for Purview audit logs, see [Search the audit log](/purview/audit-search) in the Microsoft Purview documentation.
+
 ### ActivityEvents REST API
 
 You can use an administrative application based on the Power BI REST APIs to export activity events into a blob store or SQL database. You can then build a custom usage report on top of the exported data. In the **ActivityEvents** REST API call, you must specify a start date and end date and optionally a filter to select activities by activity type or user ID. Because the activity log could contain a large amount of data, the **ActivityEvents** API currently only supports downloading up to one day of data per request. In other words, the start date and end date must specify the same day, as in the following example. Make sure you specify the `DateTime` values in Coordinated Universal Time (UTC) format.
