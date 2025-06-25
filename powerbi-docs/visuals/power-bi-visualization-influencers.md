@@ -62,11 +62,11 @@ The key influencers visual is a great choice if you want to:
 
 1d. In the **Connect to data source** window, choose **Link to file** if you're connecting to an Excel file stored in the cloud, or choose **Upload file** to upload an Excel file from your computer. Select the file, verify the credentials shown in the window, then select **Next** to continue.
 
-    :::image type="content" source="media/power-bi-visualization-influencers/power-query-get-data-excel.png" alt-text="Screenshot of window to connect to excel file via upload.":::
+   :::image type="content" source="media/power-bi-visualization-influencers/power-query-get-data-excel.png" alt-text="Screenshot of window to connect to excel file via upload.":::
 
 1e. In the **Choose data** window, select the checkbox for each table in the Excel workbook, then select **Create**.
 
-    :::image type="content" source="media/power-bi-visualization-influencers/power-query-select-tables-excel.png" alt-text="Screenshot of window showing all checkboxes seleced for an excel file.":::
+   :::image type="content" source="media/power-bi-visualization-influencers/power-query-select-tables-excel.png" alt-text="Screenshot of window showing all checkboxes seleced for an excel file.":::
 
 1f. After preparing and loading the selected data, Power BI opens the report editing canvas for you to start working with the data.
 
@@ -245,7 +245,7 @@ Finally, in the case of measures, we're looking at the average year a house was 
 
 :::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png" alt-text="Screenshot of Key influencers for house prices with influencers on the left and the scatte chart on the right.":::
 
-## Interpret the results: Top segments
+## Interpret the results using Top segments
 
 Top segments for numerical targets show groups where the house prices on average are higher than in the overall dataset. For example, below we can see that **Segment 1** is made up of houses where **GarageCars** (number of cars the garage can fit) is greater than 2 and the **RoofStyle** is Hip. Houses with those characteristics have an average price of \\$355K compared to the overall average in the data which is \\$180K.
 
