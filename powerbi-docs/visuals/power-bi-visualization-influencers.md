@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 The key influencers visual helps you understand the factors that drive a metric that interests you. It analyzes your data, ranks the factors that matter, and displays them as key influencers. For example, suppose you want to figure out what influences employee turnover, which is also known as churn. One factor might be employment contract length, and another factor might be commute time.
 
-This article provides a step-by-step tutorial on how to use the Key Influencers visual in Power BI. It explains how to set up the visual, interpret its results, and troubleshoot common issues. If you want to understand what factors drive specific outcomes in your data—such as customer feedback, sales, or other metrics—this guide will help you get actionable insights using Power BI's AI-powered analysis tools.
+This article provides a step-by-step tutorial on how to use the key influencers visual in Power BI. It explains how to set up the visual, interpret its results, and troubleshoot common issues. If you want to understand what factors drive specific outcomes in your data—such as customer feedback, sales, or other metrics—this guide will help you get actionable insights using Power BI's AI-powered analysis tools.
 
 ## When to use key influencers
 
@@ -50,46 +50,46 @@ The key influencers visual is a great choice if you want to:
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along in Power BI Desktop, open the [Customer Feedback PBIX file](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix).
+1. Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along in Power BI Desktop, open the [Customer Feedback PBIX file](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix).
 
 # [Power BI service](#tab/powerbi-service)
 
-Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along in the Power BI service, download the [Customer Feedback Excel file](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx) from the GitHub page that opens.
+1a. Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along in the Power BI service, download the [Customer Feedback Excel file](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx) from the GitHub page that opens.
 
-1. In the workspace view in the Power BI service, select **+ New item**. In the New item pane that opens, choose **Report**.
+1b. In the workspace view in the Power BI service, select **+ New item**. In the **New item** pane that opens, choose **Report**.
 
-1. On the page to build a new report, select the **Excel (Preview)** tile. The Connect to data source window opens.
+1c. On the page to build a new report, select the **Excel (Preview)** tile. The Connect to data source window opens.
 
-1. In the **Connect to data source** window, choose Link to file if you're connecting to an Excel file stored in the cloud or Upload file to upload an Excel file from your computer. Select the file, verify the credentials shown in the window, then select **Next** to continue.
+1d. In the **Connect to data source** window, choose **Link to file** if you're connecting to an Excel file stored in the cloud or **Upload file** to upload an Excel file from your computer. Select the file, verify the credentials shown in the window, then select **Next** to continue.
 
    :::image type="content" source="media/power-bi-visualization-influencers/power-query-get-data-excel.png" alt-text="Screenshot of window to connect to excel file via upload.":::
 
-1. In the **Choose data** window, select the checkbox for each table in the Excel workbook, then select **Create**.
+1e. In the **Choose data** window, select the checkbox for each table in the Excel workbook, then select **Create**.
 
    :::image type="content" source="media/power-bi-visualization-influencers/power-query-select-tables-excel.png" alt-text="Screenshot of window showing all checkboxes seleced for an excel file.":::
 
-1. After preparing and loading the selected data, Power BI opens the report editing canvas for you to start working with the data.
+1f. After preparing and loading the selected data, Power BI opens the report editing canvas for you to start working with the data.
 
 ---
 > [!NOTE]
 > The Customer Feedback data set is based on [Moro et al., 2014] S. Moro, P. Cortez, and P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." *Decision Support Systems*, Elsevier, 62:22-31, June 2014.
 
-1. Under **Build visual** on the **Visualizations** pane, select the **Key influencers** icon.
+2. Under **Build visual** on the **Visualizations** pane, select the **Key influencers** icon.
 
    :::image type="content" source="media/power-bi-visualization-influencers/power-bi-template-new.png" alt-text="Screenshot of the Key influencers icon on the Visualizations pane.":::
 
-1. Move the metric you want to investigate into the **Analyze** field. To see what drives a customer rating of the service to be low, select **Customer Table** > **Rating**.
+3. Move the metric you want to investigate into the **Analyze** field. To see what drives a customer rating of the service to be low, select **Customer Table** > **Rating**.
 
-1. Move fields that you think might influence **Rating** into the **Explain by** field. You can move as many fields as you want. In this case, start with:
+4. Move fields that you think might influence **Rating** into the **Explain by** field. You can move as many fields as you want. In this case, start with:
     - Country-Region
     - Role in Org
     - Subscription Type
     - Company Size
     - Theme
 
-1. Leave the **Expand by** field empty. This field is only used when analyzing a measure or summarized field.
+5. Leave the **Expand by** field empty. This field is only used when analyzing a measure or summarized field.
 
-1. To focus on the negative ratings, select **Low** in the **What influences Rating to be** dropdown box.  
+6. To focus on the negative ratings, select **Low** in the **What influences Rating to be** dropdown box.  
 
    :::image type="content" source="media/power-bi-visualization-influencers/power-bi-key-influencers.png" alt-text="Screenshot of the drop-down box with high and low options.":::
 
@@ -309,7 +309,7 @@ The visualization works by looking at patterns in the data for one group compare
 
 We recommend that you have at least 100 observations for the selected state. In this case, the state is customers who churn. You also need at least 10 observations for the states you use for comparison. In this case, the comparison state is customers who don't churn.
 
-If you're analyzing a numeric field, you might want to switch from **Categorical Analysis** to **Continuous Analysis** in the **Format visual** pane under the **Analysis** card.
+If you're analyzing a numeric field, you might want to switch from **Categorical Analysis** to **Continuous Analysis** in the **Format visual** pane on the **Analysis** card.
 
 ### **I see an error that when 'Analyze' is not summarized, the analysis always runs at the row level of its parent table. Changing this level via 'Expand by' fields is not allowed. Why is that?**
 
