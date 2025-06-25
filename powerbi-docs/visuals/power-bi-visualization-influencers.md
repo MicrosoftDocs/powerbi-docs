@@ -66,7 +66,7 @@ The key influencers visual is a great choice if you want to:
 
 1e. In the **Choose data** window, select the checkbox for each table in the Excel workbook, then select **Create**.
 
-   :::image type="content" source="media/power-bi-visualization-influencers/power-query-select-tables-excel.png" alt-text="Screenshot of window showing all checkboxes seleced for an excel file.":::
+   :::image type="content" source="media/power-bi-visualization-influencers/power-query-select-tables-excel.png" alt-text="Screenshot of window showing all checkboxes selected for an excel file.":::
 
 1f. After preparing and loading the selected data, Power BI opens the report editing canvas for you to start working with the data.
 
@@ -243,7 +243,7 @@ Finally, in the case of measures, we're looking at the average year a house was 
 - The scatter chart in the right pane plots the average house price for each distinct value in the table.
 - The value in the bubble shows by how much the average house price increases (in this case \\$1.35K) when the average year increases by its standard deviation (in this case 30 years).
 
-:::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png" alt-text="Screenshot of Key influencers for house prices with influencers on the left and the scatte chart on the right.":::
+:::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png" alt-text="Screenshot of Key influencers for house prices with influencers on the left and the scatter chart on the right.":::
 
 ## Interpret the results using Top segments
 
@@ -265,7 +265,7 @@ Measures and summarized columns are automatically analyzed at the level of the *
 
 :::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png" alt-text="Screenshot that shows the three columns and the average house price.":::
 
-This analysis is highy summarized, so it might be hard for the regression model to find any patterns in the data it can learn from. We should run the analysis at a more detailed level to get better results. If we wanted to analyze the house price at the house level, we'd need to explicitly add the **ID** field to the analysis. Nevertheless, we don't want the house ID to be considered an influencer. It isn't helpful to learn that as house ID increases, the price of a house increases. The **Expand by** field well option comes in handy here. You can use **Expand by** to add fields you want to use for setting the level of the analysis without looking for new influencers.
+This analysis is highly summarized, so it might be hard for the regression model to find any patterns in the data it can learn from. We should run the analysis at a more detailed level to get better results. If we wanted to analyze the house price at the house level, we'd need to explicitly add the **ID** field to the analysis. Nevertheless, we don't want the house ID to be considered an influencer. It isn't helpful to learn that as house ID increases, the price of a house increases. The **Expand by** field well option comes in handy here. You can use **Expand by** to add fields you want to use for setting the level of the analysis without looking for new influencers.
 
 Take a look at what the visualization looks like once we add **ID** to **Expand by**. Once you define the level at which you want your measure evaluated, interpreting influencers is exactly the same as for [unsummarized numeric columns](#analyze-a-metric-that-is-numeric).
 
