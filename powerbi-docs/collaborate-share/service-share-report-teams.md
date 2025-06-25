@@ -3,13 +3,13 @@ title: Chat in Microsoft Teams directly from the Power BI service
 description: Learn how to share Power BI dashboards, reports, and semantic models directly to Microsoft Teams from the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: maya.bendov
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 12/10/2024
+ms.date: 6/23/2025
 #customer intent: As a Power BI user I want to learn how to share dashboards, repoorts and semantic models.
 ---
 
@@ -27,34 +27,34 @@ See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft
 
 Follow these steps to share links to reports, dashboards, visuals, and semantic models in the Power BI service, and in Microsoft Teams channels and chats.
 
-1. In either the Power BI service or in Microsoft Teams, select one of these options:
+### Share button
 
-   * **Chat in Teams** in the action bar of a dashboard, report, or semantic model:
+If you're using a report in *view* mode: 
 
-       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png" alt-text="Screenshot that shows the Chat in Teams button in the action bar.":::
+1. From the action bar, select the **Share** button.
+1. In the **Send link** dialog, indicate the link recipient, and add an optional message.
+1. Select the **Teams** icon. You might be asked to sign in to Microsoft Teams.
 
-   * **Chat in Teams** in the context menu for a single visual:
+    :::image type="content" source="media/service-share-report-teams/send-link-dialog.png" alt-text="Screenshot that shows the send link dialog.":::
 
-       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png" alt-text="Screenshot shows the Chat in Teams button in a visual contextual menu.":::
+1. In the **Share to Microsoft Teams** dialog, verify the recipient and message, then select **Share** to send the link. The link is added to existing conversations or starts a new chat.
 
-   * **Chat in Teams**  in the action bar of an app.
+    :::image type="content" source="media/service-share-report-teams/share-to-teams-link.png" alt-text="Screenshot that shows the share button and the Teams link.":::
 
-       :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button-apps.png" alt-text="Screenshot that shows the Chat in Teams button in a visual contextual menu.":::
+### Chat in Teams button
 
-1. In the **Share to Microsoft Teams** dialog, select the person, group, or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
+If you're using a a report in *edit* mode, or you're working in a dashboard, semantic model, app, or single visual: 
 
-    :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button-pressed.png" alt-text="Screenshot that shows the Share to Microsoft Teams dialog.":::
-
+1. From the action bar (or context menu for visuals), select the **Chat in Teams** button.
+1. In the **Share to Microsoft Teams** dialog, indicate the recipient, and add an optional message.
 1. Select **Share** to send the link. The link is added to existing conversations or starts a new chat.
 
-    :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-dialog.png" alt-text="Screenshot that shows the action bar button for apps.":::
+    :::image type="content" source="media/service-share-report-teams/share-to-teams-link.png" alt-text="Screenshot that shows the share button and the Teams link.":::
 
 1. Select the link to open the item in the Power BI service.
 
-1. If you used the contextual menu for a specific visual, the visual is highlighted when the report opens.
-
-    :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-spotlight-visual.png" alt-text="Screenshot that highlights a section in an open Power BI report.":::
-
+If you used the contextual menu for a specific visual, the visual is highlighted when the report opens.
+   
 ## Known issues and limitations
 
 * Users without a Power BI license or permission to access the report see a "Content isn't available" message.
