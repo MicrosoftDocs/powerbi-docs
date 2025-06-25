@@ -56,17 +56,17 @@ The key influencers visual is a great choice if you want to:
 
 1a. Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along in the Power BI service, download the [Customer Feedback Excel file](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx) from the GitHub page that opens.
 
-1b. In the workspace view in the Power BI service, select **+ New item**. In the **New item** pane that opens, choose **Report**.
+1b. In the workspace view in the Power BI service, select **+ New item**. In the **New item** pane, choose **Report**.
 
 1c. On the page to build a new report, select the **Excel (Preview)** tile. The Connect to data source window opens.
 
-1d. In the **Connect to data source** window, choose **Link to file** if you're connecting to an Excel file stored in the cloud or **Upload file** to upload an Excel file from your computer. Select the file, verify the credentials shown in the window, then select **Next** to continue.
+1d. In the **Connect to data source** window, choose **Link to file** if you're connecting to an Excel file stored in the cloud, or choose **Upload file** to upload an Excel file from your computer. Select the file, verify the credentials shown in the window, then select **Next** to continue.
 
-   :::image type="content" source="media/power-bi-visualization-influencers/power-query-get-data-excel.png" alt-text="Screenshot of window to connect to excel file via upload.":::
+    :::image type="content" source="media/power-bi-visualization-influencers/power-query-get-data-excel.png" alt-text="Screenshot of window to connect to excel file via upload.":::
 
 1e. In the **Choose data** window, select the checkbox for each table in the Excel workbook, then select **Create**.
 
-   :::image type="content" source="media/power-bi-visualization-influencers/power-query-select-tables-excel.png" alt-text="Screenshot of window showing all checkboxes seleced for an excel file.":::
+    :::image type="content" source="media/power-bi-visualization-influencers/power-query-select-tables-excel.png" alt-text="Screenshot of window showing all checkboxes seleced for an excel file.":::
 
 1f. After preparing and loading the selected data, Power BI opens the report editing canvas for you to start working with the data.
 
@@ -227,7 +227,6 @@ In this scenario, we look at "What influences House Price to increase." A number
 In the example below, we look at our top influencer, which is kitchen quality being Excellent. The results are similar to the ones we saw when we were analyzing categorical metrics with a few important differences:
 
 - The column chart on the right is looking at the averages rather than percentages. It therefore shows us what the average house price of a house with an excellent kitchen is (green bar) compared to the average house price of a house without an excellent kitchen (dotted line).
-
 - The number in the bubble is still the difference between the red dotted line and green bar, but it’s expressed as a number (\\$158.49K) rather than a likelihood (1.93x). So on average, houses with excellent kitchens are almost \\$160K more expensive than houses without excellent kitchens.
 
 :::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-numeric-categorical.png" alt-text="Screenshot of numeric target categorical influencers.":::
@@ -235,7 +234,6 @@ In the example below, we look at our top influencer, which is kitchen quality be
 In the next example, we look at the impact a continuous factor (year house was remodeled) has on house price. The differences compared to how we analyze continuous influencers for categorical metrics are as follows:
 
 - The scatter chart in the right pane plots the average house price for each distinct value of year remodeled.
-
 - The value in the bubble shows by how much the average house price increases (in this case, $2.87K) when the year the house was remodeled increases by its standard deviation (in this case, 20 years).
 
 :::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-numeric-continuous.png" alt-text="Screenshot of numeric target continuous influencers.":::
@@ -243,7 +241,6 @@ In the next example, we look at the impact a continuous factor (year house was r
 Finally, in the case of measures, we're looking at the average year a house was built. The analysis is as follows:
 
 - The scatter chart in the right pane plots the average house price for each distinct value in the table.
-
 - The value in the bubble shows by how much the average house price increases (in this case \\$1.35K) when the average year increases by its standard deviation (in this case 30 years).
 
 :::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png" alt-text="Screenshot of Key influencers for house prices with influencers on the left and the scatte chart on the right.":::
