@@ -1,107 +1,121 @@
 ---
-title: What is Power BI?
-description: "Overview of Power BI and how the different parts fit together: Power BI Desktop, the Power BI service, Power BI Mobile, Power BI Report Server, and Power BI Embedded."
+title: What is Power BI? Overview of Components and Benefits
+description: Learn what Power BI is, how Power BI Desktop and Power BI service work together, and how you can use them to turn data into insights. Discover the benefits and get started today.
 author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.search.form: product-power-bi
 ms.topic: overview
-ms.date: 03/22/2024
+ms.date: 06/25/2025
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
 ms.custom: intro-overview
+ai-usage: ai-assisted
 ---
 
-# What is Power BI?
+# What is Power BI
 
-Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data might be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses. Power BI lets you easily connect to your data sources, visualize and discover what's important, and share that with anyone or everyone you want.
+Power BI is Microsoft's business analytics platform that helps you turn data into actionable insights. Whether you're a business user, report creator, or developer, Power BI offers integrated tools and services to connect, visualize, and share data across your organization.
 
-## The parts of Power BI
+In this article, you'll learn:
 
-Power BI consists of several elements that all work together, starting with these three basics:
+- What Power BI is and how it fits with Microsoft Fabric
+- The key differences between Power BI Desktop and Power BI service
+- How to get started with Power BI step-by-step
+- Which Power BI component to use for your specific needs
 
-- A Windows desktop application called *Power BI Desktop*.
-- An online software as a service (SaaS) service called the *Power BI service*.
-- Power BI Mobile apps for Windows, iOS, and Android devices.
+Power BI is a core component of Microsoft Fabric, providing analytics and visualization capabilities. In Fabric, Power BI shares features like data integration, dataflows, and security with other Fabric experiences. However, some features - such as Power BI reports, dashboards, and the Power BI service - are unique to Power BI.
 
-:::image type="content" source="media/power-bi-overview/power-bi-overview-blocks.png" alt-text="Screenshot of Diagram of Power BI Desktop, Service, and Mobile showing their integration.":::
+## Power BI and Microsoft Fabric
 
-These three elements&mdash;Power BI Desktop, the service, and the mobile apps&mdash;are designed to let you create, share, and consume business insights in the way that serves you and your role most effectively.
+[Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) is an all-in-one analytics platform that includes Power BI as one of its core workloads. If you're a Power BI user, here's what you need to know.
 
-Beyond those three, Power BI also features two other elements:
+**Key points**:
 
-- **Power BI Report Builder**, for creating paginated reports to share in the Power BI service. Read more about [paginated reports](#paginated-reports-in-the-power-bi-service) later in this article.
-- **Power BI Report Server**, an on-premises report server where you can publish your Power BI reports, after creating them in Power BI Desktop. Read more about [Power BI Report Server](#on-premises-reporting-with-power-bi-report-server) later in this article.
+- No migration needed - your Power BI content and workspaces remain unchanged.
+- Use your existing Power BI or Microsoft 365 account to sign in.
+- Fabric adds new capabilities, but Power BI’s interface and experience remain familiar.
 
+The following table summarizes the key features of Power BI and how they compare to Microsoft Fabric:
 
-## How Power BI matches your role
+| Feature                        | Description                                                      | Fabric | Power BI |
+|--------------------------------|------------------------------------------------------------------|:------:|:--------:|
+| OneLake Integration            | Unified data lake for all workloads                              |   ✔️   |    ✔️    |
+| Direct Lake Mode               | Query data in OneLake without import/caching                     |   ✔️   |    ✔️    |
+| Notebooks and Dataflows Gen2   | Advanced data prep, shared across Fabric                         |   ✔️   |    ✔️    |
+| Data Activator                 | Real-time alerting and automation                                |   ✔️   |    ✔️    |
+| Security and Governance        | Shared via Microsoft Purview                                     |   ✔️   |    ✔️    |
+| Copilot                        | AI-powered assistant for insights and report creation            |   ✔️   |    ✔️    |
+| Power BI Desktop               | Windows app for report development                               |        |    ✔️    |
+| Power BI Service               | Cloud platform for publishing, sharing, and collaboration        |        |    ✔️    |
+| Paginated Reports              | Pixel-perfect, printable reports                                 |        |    ✔️    |
+| Power BI Visuals Marketplace   | Custom visuals and integrations                                  |        |    ✔️    |
+| Q&A and Natural Language       | AI-powered data querying                                         |        |    ✔️    |
+| Power BI Goals                 | KPI tracking and scorecards                                      |        |    ✔️    |
 
-How you use Power BI depends on your role in a project or on a team. Other people, in other roles, might use Power BI differently.
+## Power BI: Step-by-step
 
-For example, you might primarily use the Power BI service to view reports and dashboards. Your number-crunching, business-report-creating coworker might make extensive use of Power BI Desktop or Power BI Report Builder to create reports, then publish those reports to the Power BI service, where you view them. Another coworker, in sales, might mainly use the Power BI Mobile app to monitor progress on sales quotas, and to drill into new sales lead details.
+> **Quick start**: [Sign up for Power BI](https://powerbi.microsoft.com/get-started/) | [Download Power BI Desktop](https://powerbi.microsoft.com/desktop/) | [Access Power BI service](https://app.powerbi.com/)
 
-If you're a developer, you might use Power BI APIs to push data into semantic models or to embed dashboards and reports into your own custom applications. Have an idea for a new visual? Build it yourself and share it with others.  
+Follow these steps to get started with Power BI:
 
-You also might use each element of Power BI at different times, depending on what you're trying to achieve or your role for a given project.
+1. **Get started**: Sign up and set up your workspace. Download Power BI Desktop or use the Power BI service in your browser.
+1. **Connect and prepare data**: Connect to sources like Excel, SQL, or cloud services. Clean and shape your data.
+1. **Model and combine data**: Create relationships, add calculations, and combine sources for a complete view.
+1. **Build reports and dashboards**: Use drag-and-drop tools to create interactive visuals.
+1. **Explore and analyze**: Filter, sort, and drill down to find insights. Use built-in analytics.
+1. **Share and collaborate**: Publish to the Power BI service, share with your team, and collaborate in real time.
+1. **Administer and secure**: Manage access, set up security roles, and monitor usage.
 
-How you use Power BI can be based on which feature or service of Power BI is the best tool for your situation. For example, you can use Power BI Desktop to create reports for your own team about customer engagement statistics and you can view inventory and manufacturing progress in a real-time dashboard in the Power BI service. You can create a paginated report of mailable invoices, based on a Power BI semantic model. Each part of Power BI is available to you, which is why it's so flexible and compelling.
+## Power BI Desktop versus the Power BI service
 
-Explore documents that pertain to your role:
+Power BI has two main components: **Power BI Desktop** and the **Power BI service**. Desktop is best for data modeling and report creation, while the service is ideal for sharing and collaboration. Both can connect to data sources and create visualizations. There's also a **Power BI Mobile app** for viewing reports on the go.
 
-- Power BI for [*business users*](../consumer/end-user-consumer.md)
-- Power BI Desktop for [*report creators*](desktop-what-is-desktop.md)
-- Power BI Report Builder for [*enterprise report creators*](../paginated-reports/paginated-reports-report-builder-power-bi.md)
-- Power BI for [*administrators*](/fabric/admin/microsoft-fabric-admin)
-- Power BI for *developers*
-  - [What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)
-  - [Create your own visuals in Power BI](../developer/visuals/develop-power-bi-visuals.md)
-  - [What can developers do with the Power BI API?](/rest/api/power-bi/)
+| Need            | Use this                                      | Why                                   |
+|-----------------|-----------------------------------------------|---------------------------------------|
+| Create reports  | [Power BI Desktop](desktop-getting-started.md) | Full data modeling and design tools   |
+| Share with team | [Power BI service](service-get-started.md)     | Collaboration and sharing features    |
+| View on mobile  | [Power BI Mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md) | Optimized for phones and tablets |
 
+## Core features of Power BI Desktop and the Power BI service
 
-## The flow of work in Power BI
+Power BI Desktop and the Power BI service each have unique features that cater to different aspects of data analysis and reporting.
 
-One common workflow in Power BI begins by connecting to data sources in Power BI Desktop and building a report. You then publish that report from Power BI Desktop to the Power BI service, and share it so business users in the Power BI service and on mobile devices can view and interact with the report.
+**Power BI Desktop**:
 
-This workflow is common, and shows how the three main Power BI elements complement one another.
+- Connect to 100+ data sources (databases, cloud, files, web)
+- Power Query Editor for data transformation
+- Data modeling with DAX, calculated columns, and relationships
+- 30+ built-in and custom visuals
+- Advanced features: performance analyzer, external tools, composite models
+- [Get started with Power BI Desktop](desktop-getting-started.md)
 
+**Power BI Service**:
 
-### Use the deployment pipeline tool
+- Workspaces for team collaboration
+- Apps for distributing dashboards and reports
+- Dataflows for reusable data prep
+- Datasets shared across reports
+- Real-time dashboards and streaming data
+- Schedule refresh, email subscriptions, alerts, Q&A, embedding, export
+- Security: RLS, sensitivity labels, usage metrics, audit logs
+- [Learn more about the Power BI service](power-bi-service-overview.md)
 
-In the Power BI service, you can use the [deployment pipeline tool](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to test your content before you release it to your users. The deployment pipeline tool can help you deploy reports, dashboards, semantic models, and paginated reports. Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
+## Specialized Power BI capabilities
 
+The Power BI ecosystem includes specialized tools and features to enhance reporting and analytics.
 
-## How Microsoft Fabric works with Power BI
-
-[Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) is an offering that combines data + services in a unified environment, making it easier to perform analysis and analytics on various sets of data. **Power BI** is an example of one of the *services* that's integrated with Microsoft Fabric, and your organization's **OneLake** data store is an example of the *data* that can be used, analyzed, or visualized. Large organizations find Microsoft Fabric particularly useful, since it can corral and then bring greater value to large stores of data, then using services (like Power BI) to bring such data to business life.
-
-Administration of Power BI is now handled by Microsoft Fabric, but your favorite tools like the **Power BI service** and **Power BI Desktop** still operate like they always have - as a service that can turn your data, whether in OneLake or in Excel, into powerful business intelligence insights.
-
-
-## Paginated reports in the Power BI service
-
-Another workflow involves paginated reports in the Power BI service. Enterprise report creators design paginated reports to be printed or shared. They can also share these reports in the Power BI service. They're called *paginated* because they're formatted to fit well on a page. They're often used for operational reports, or for printing forms such as invoices or transcripts. They display all the data in a table, even if the table spans multiple pages. Power BI Report Builder is the standalone tool for authoring paginated reports.
-
-:::image type="content" source="media/power-bi-overview/paginated-report-invoice-power-bi-service.png" alt-text="Screenshot of paginated report in the Power BI service.":::
-
-Read more about [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) in the Power BI service.
-
-## On-premises reporting with Power BI Report Server
-
-What if you need to keep your reports on premises, say, behind a firewall?  Read on.
-
-You can create, deploy, and manage Power BI reports in Power BI Desktop, and paginated reports in Report Builder, with the ready-to-use tools and services that Power BI Report Server provides.
-
-![Screenshot of Diagram of Power BI Report Server, service, and mobile showing their integration.](media/power-bi-overview/power-bi-report-server2.png)
-
-Power BI Report Server is a solution that you deploy behind your firewall and then deliver your reports to the right users in different ways, whether that's viewing them in a web browser, on a mobile device, or as an email. And because Power BI Report Server is compatible with Power BI in the cloud, you can move to the cloud when you're ready.
-
-Read more about [Power BI Report Server](../report-server/get-started.md).
+- **Paginated reports**: For structured, printable reports (like invoices). Create with Power BI Report Builder. [Learn more about paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+- **On-premises reporting**: Power BI Report Server lets you keep reports on-premises, with the option to move to the cloud later. [Learn more about Power BI Report Server](../report-server/get-started.md).
 
 ## Related content
 
-- [What is Microsoft Fabric?](/fabric/get-started/microsoft-fabric-overview) 
-- [Comparison of Power BI Desktop and the Power BI service](../fundamentals/service-service-vs-desktop.md)
-- [Tutorial: Learn your way around the Power BI service](../consumer/end-user-experience.md)
 - [Tutorial: Get started with the Power BI service](service-get-started.md)
 - [Quickstart: Connect to data in Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)
+- [What is Power BI Desktop?](desktop-what-is-desktop.md)
+- [Create a report in the Power BI service](../create-reports/service-report-create-new.md)
+- [Basic concepts for report designers](service-basic-concepts.md)
+- [What is Microsoft Fabric?](/fabric/get-started/microsoft-fabric-overview)
+- [Compare Power BI Desktop and Power BI service](../fundamentals/service-service-vs-desktop.md)
+- [Tutorial: Navigate the Power BI service](../consumer/end-user-experience.md)
