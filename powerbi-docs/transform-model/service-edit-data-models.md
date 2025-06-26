@@ -1,8 +1,8 @@
 ---
 title: Edit data models in the Power BI service (preview)
 description: Learn how to edit data models in the Power BI service, including editing relationships, creating DAX measures, managing RLS, and more.
-author: JulCsc
-ms.author: juliacawthra
+author: emlisa
+ms.author: emlisa
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -15,7 +15,7 @@ LocalizationGroup: Transform and shape data
 
 # Edit data models in the Power BI service (preview)
 
-Power BI lets users to modify existing data models in the Power BI service using actions such as editing relationships, creating DAX measures and managing RLS. In this experience, users can work and collaborate simultaneously on the same data model. 
+Power BI lets users modify existing data models in the Power BI service using actions such as editing relationships, creating DAX measures and managing RLS. In this experience, users can work and collaborate simultaneously on the same data model. 
 
 ## Enable the preview feature
 
@@ -64,7 +64,7 @@ When you open your data model you can see all the tables, columns, and relations
 
 ### Create measures
 
-To create a [measure](desktop-measures.md) (a measure is a collection of standardized metrics) select the table in the **Data Pane** and select the **New measure** button from the ribbon, as shown in the following image.
+To create a [measure](desktop-measures.md), (a measure is a collection of standardized metrics) select the table in the **Data Pane** and select the **New measure** button from the ribbon, as shown in the following image.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-07.png" alt-text="Screenshot of creating a new measure" lightbox="media/service-edit-data-models/service-edit-data-models-07.png":::
 
@@ -74,7 +74,7 @@ You can expand the table to find the measure in the table.
 
 ### Create calculated columns
 
-To create a [calculated column](desktop-calculated-columns.md) select the table in the **Data Pane** and select the **New column** button in the ribbon, as shown in the following image.
+To create a [calculated column](desktop-calculated-columns.md), select the table in the **Data Pane** and select the **New column** button in the ribbon, as shown in the following image.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-08.png" alt-text="Screenshot of creating a calculated column." lightbox="media/service-edit-data-models/service-edit-data-models-08.png":::
 
@@ -84,7 +84,7 @@ You can expand the table to find the calculated column in the table.
 
 ### Create calculated tables
 
-To create a [calculated table](desktop-calculated-tables.md) select the table in the **Data Pane** and select the **New table** button in the ribbon, as shown in the following image.
+To create a [calculated table](desktop-calculated-tables.md), select the table in the **Data Pane** and select the **New table** button in the ribbon, as shown in the following image.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-09.png" alt-text="Screenshot of creating a calculated table." lightbox="media/service-edit-data-models/service-edit-data-models-09.png":::
 
@@ -98,15 +98,15 @@ The first method is to drag the column from one table in the relationship diagra
 
 The other method of creating a relationship is by selecting **Manage relationships** in the ribbon as shown in the following image.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-24.png" alt-text="Screenshot of manage relationships dialog ribbon entry point." lightbox="media/service-edit-data-models/service-edit-data-models-24.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-24.png" alt-text="Screenshot of managed relationships dialog ribbon entry point." lightbox="media/service-edit-data-models/service-edit-data-models-24.png":::
 
-This will open the revamped **Manage relationships** dialog. From here, you can select **New relationship** to create a new relationship in your model.
+This opens the revamped **Manage relationships** dialog. From here, you can select **New relationship** to create a new relationship in your model.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-25.png" alt-text="Screenshot of creating a new relationship from manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-25.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-25.png" alt-text="Screenshot of creating a new relationship from managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-25.png":::
 
 From here, configure the relationship properties, and select the **Ok** button when your relationship is complete to save the relationship information.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-26.png" alt-text="Screenshot of editing properties for a new relationship created in the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-26.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-26.png" alt-text="Screenshot of editing properties for a new relationship created in the managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-26.png":::
 
 ### Edit a relationship
 
@@ -124,21 +124,21 @@ In the window that appears, configure the relationship properties, and select th
 
 The third method is by selecting **Manage relationships** in the ribbon. In the **Manage relationships** dialog you can choose a relationship to edit and then select **Edit**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-29.png" alt-text="Screenshot of selecting edit in the ribbon of the manage relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-29.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-29.png" alt-text="Screenshot of selecting edit in the ribbon of the managed relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-29.png":::
 
 Alternatively, you can select **Edit** from the context menu of a given relationship in the dialog.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-30.png" alt-text="Screenshot of selecting edit in the context menu of the manage relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-30.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-30.png" alt-text="Screenshot of selecting edit in the context menu of the managed relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-30.png":::
 
 From here, configure the relationship properties, and select the **Ok** button when editing your relationship is complete to save the relationship information.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-31.png" alt-text="Screenshot of editing properties of an existing relationship from the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-31.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-31.png" alt-text="Screenshot of editing properties of an existing relationship from the managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-31.png":::
 
 ### See a list of all your relationships
 
-Selecting **Manage relationships** in the ribbon opens the revamped **Manage relationships** dialog which provides a comprehensive view of all your relationships, along with their key properties, in one convenient location. From here you can then choose to create new relationships or edit an existing relationship.
+Selecting **Manage relationships** in the ribbon opens the revamped **Manage relationships** dialog, which provides a comprehensive view of all your relationships, along with their key properties, in one convenient location. From here, you can then choose to create new relationships or edit an existing relationship.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-32.png" alt-text="Screenshot of a list of relationships within the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-32.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-32.png" alt-text="Screenshot of a list of relationships within the managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-32.png":::
 
 Additionally, you have the option to filter and focus on specific relationships in your model based on cardinality and cross filter direction.
 
@@ -151,6 +151,26 @@ You can change the properties for a given object using the **Properties** pane. 
 For example, you could change the data type for multiple columns by holding down the **Ctrl** key, selecting columns, then changing the data type setting in the **Properties** pane.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-11.png" alt-text="Screenshot of setting properties" lightbox="media/service-edit-data-models/service-edit-data-models-11.png":::
+
+### Get data
+
+You can add new import tables to your semantic models using the Power Query 'Get Data' experience. Select **Get data** in the ribbon to choose your connector and bring in new data to your semantic model. 
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-36.png" alt-text="Screenshot of Power Query Get Data dialog." lightbox="media/service-edit-data-models/service-edit-data-models-36.png":::
+
+### Transform data and edit queries
+
+You can shape data for your import semantic models with the full Power Query editor by selecting **Transform data** in the ribbon.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-37.png" alt-text="Screenshot of Power Query Transform Data dialog." lightbox="media/service-edit-data-models/service-edit-data-models-37.png":::
+
+### Refresh
+
+You can refresh both the schema and data for your import semantic models by selecting **Refresh** in the ribbon. 
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-38.png" alt-text="Screenshot of refresh dialog." lightbox="media/service-edit-data-models/service-edit-data-models-38.png":::
+
+If you select ‘Cancel’ to cancel the refresh, all data loaded into the model prior to the cancellation remains in the model. If desired, you can use [semantic model version history](../transform-model/service-semantic-model-version-history.md) to recover the model to a point before the refresh was initiated. Additional changes can't be made to the semantic model while a refresh is ongoing.
 
 ### Set your own date table
 
@@ -227,7 +247,9 @@ As you made changes to your data model, your changes are automatically saved. Ch
 
 ## Permissions
 
-A user must have write and build [semantic model permissions](../connect-data/service-datasets-permissions.md) in order to open and edit the corresponding data model in the Power BI service.
+*A user must have write and build [semantic model permissions](../connect-data/service-datasets-permissions.md) in order to open and edit the corresponding data model in the Power BI service.
+*If [granular access control](../connect-data/service-create-share-cloud-data-sources.md#granular-access-control) is enabled on the semantic model, then users who have write but not owner permissions on the semantic model can only switch to **Editing mode** if they have access to all the underlying data sources for the model. Semantic model owners will always be able to toggle to **Editing mode**. 
+*A user must be the semantic model owner in order to access the **Get data** dialog and add additional import tables to a semantic model.
 
 ## Enabling data model editing in the admin portal
 
@@ -259,12 +281,29 @@ You can monitor the effect editing data models in the service has on your Power 
 
 There are a few limitations for this release of editing data models in the Power BI service, which fall into a handful of categories.
 
+### Considerations with the Power Query editor
+
+Keep in mind the following considerations when interacting with the Power Query editor:
+
+* Using the Power Query editor to Transform data or connect to new data sources is only supported for import storage mode. These capabilities aren't support for Direct Lake or DirectQuery tables.
+* Adding import tables to the model from custom connectors, Azure Database for PostgreSQL, IBM Informix database (Beta), Essbase, Microsoft Exchange, Hadoop File (HDFS), OLE DB, R, and Python aren't supported
+* Native queries aren't supported when connecting to a source using Get data
+* If you select **Cancel** or close the Power Query dialog, any changes made to queries will be discarded. In the web, changes made in the Power Query editor must be explicitly saved and applied to the model for them to persist beyond the editor.
+* You can use existing [personal cloud connections](../connect-data/service-connect-cloud-data-sources.md) in the Power Query editor for the semantic model, but you can't create new ones there. When connecting to a data source in the editor, only on-premises or shared cloud connections can be created. To use a personal cloud connection, link it through the semantic model settings page. Configuration and management of these personal cloud connections can be done in the Power BI **Manage Connections and Gateways** page.
+* When opening the Power Query editor for a model published from Desktop, connections may initially appear unlinked in the **Manage Connections** dialog. You'll be able to configure these connections by clickign the "+" sign.
+* A [data gateway](../connect-data/service-gateway-deployment-guidance.md) is needed to certain data sources. These gateways can be managed from the **semantic model settings page**. When publishing from Desktop, gateway connections aren't configured by default for sources that require them. You’ll need to manually set them up under **Gateway connections** in the semantic model settings.
+* Dynamic data sources aren't supported in the Power Query editor.
+* When adding a new import data source using Power Query on the web, the semantic model doesn't automatically inherit the sensitivity label from that data source.
+* When importing data using Power Query in the Power BI service, relationships defined in the underlying data sources aren't automatically imported. These relationships must be manually recreated in the semantic model.
+* Refreshing semantic models from within the web editing experience in Pro workspaces is currently limited to 8 times per day. After reaching this limit, models can still be refreshed through other manual refresh options outside the editing interface.
+
+
 ### Unsupported semantic models
 
 The following scenarios don't support opening the data model for a semantic model in the service:
 
 * Semantic models that have incremental refresh.
-* Semantic models deployed through deployment pipelines can only be edited on the web in the development workspace. Editing in test and production workspaces is not supported.
+* Semantic models deployed through deployment pipelines can only be edited on the web in the development workspace. Editing in test and production workspaces isn't supported.
 * Semantic models that haven't yet been upgraded to enhanced metadata format. You can upgrade to enhanced metadata format by opening the corresponding pbix in Desktop and republishing.
 * Semantic models that have automatic aggregations configured.
 * Semantic models that have a live connection.
@@ -279,26 +318,25 @@ To see which limitation is preventing you from opening your data model, hover ov
 
 There are still many functional gaps between the model view in Power BI desktop and service. Functionality not yet supported in the service includes:
 
+* The refresh button within the web editor for semantic models is disabled for Direct Lake, DirectQuery, and composite models as well as models containing customer connectors or cube data sources. 
 * Setting a table as a feature table
 * Configuring any feature table properties
 * Changing the storage mode of a table
 * Changing to and from the data category ‘barcode’
-* Connecting to new data sources
-* Transforming data using Power Query editor
 * View as dialog
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
-* External tools integration
-* When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that semantic model.
+* When modifying your data model within the Service, changing the name of data fields won't automatically update in existing visuals in downstream artifacts that depend on that semantic model.
+
 
 Additionally, keep in mind the following: 
 * Editing on the web isn't available in collaborative workspaces if converting the model to [large semantic model storage format fails](https://go.microsoft.com/fwlink/?linkid=2309615). In this case you can still use Viewing mode to view but not edit the model.
-* The *Edit in Desktop* option from the Viewing/Editing mode toggle is available only for Direct Lake models. This launches live editing of the Direct Lake semantic model in Power BI Desktop, and it is supported only on Windows machines. All requirements for [live editing Direct Lake models in Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2314634) apply.
+* The *Edit in Desktop* option from the Viewing/Editing mode toggle is available only for Direct Lake models. This launches live editing of the Direct Lake semantic model in Power BI Desktop, and it's supported only on Windows machines. All requirements for [live editing Direct Lake models in Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2314634) apply.
 
 
 ### Semantic models edited with external tools
 
-Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected behavior when editing your semantic model in the web if the write operation is not supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring).
+Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected behavior when editing your semantic model in the web if the write operation isn't supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring).
 
 ### Accessibility
 
