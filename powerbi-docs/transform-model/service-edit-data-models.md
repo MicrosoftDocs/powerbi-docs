@@ -154,7 +154,7 @@ For example, you could change the data type for multiple columns by holding down
 
 ### Get data
 
-You can add new import tables to your semantic models using the Power Query 'Get Data' experience. Simply select **Get data** in the ribbon to choose your connector and bring in new data to your semantic model. 
+You can add new import tables to your semantic models using the Power Query 'Get Data' experience. Select **Get data** in the ribbon to choose your connector and bring in new data to your semantic model. 
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-36.png" alt-text="Screenshot of Power Query Get Data dialog" lightbox="media/service-edit-data-models/service-edit-data-models-36.png":::
 
@@ -170,7 +170,7 @@ You can refresh both the schema and data for your import semantic models by sele
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-38.png" alt-text="Screenshot of refresh dialog" lightbox="media/service-edit-data-models/service-edit-data-models-38.png":::
 
-If you select ‘Cancel’ to cancel the refresh, all data loaded into the model prior to the cancellation will remain in the model. If desired, you can use [semantic model version history](../transform-model/service-semantic-model-version-history.md) to recover the model to a point before the refresh was initiated. Additional changes can not be made to the semantic model while a refresh is ongoing.
+If you select ‘Cancel’ to cancel the refresh, all data loaded into the model prior to the cancellation will remain in the model. If desired, you can use [semantic model version history](../transform-model/service-semantic-model-version-history.md) to recover the model to a point before the refresh was initiated. Additional changes can't be made to the semantic model while a refresh is ongoing.
 
 ### Set your own date table
 
@@ -285,16 +285,16 @@ There are a few limitations for this release of editing data models in the Power
 
 Keep in mind the following considerations when interacting with the Power Query editor:
 
-* Using the Power Query editor to Transform data or connect to new data sources is only supported for import storage mode. These capabilities are not support for Direct Lake or DirectQuery tables.
-* Adding import tables to the model from custom connectors, Azure Database for PostgreSQL, IBM Informix database (Beta), Essbase, Microsoft Exchange, Hadoop File (HDFS), OLE DB, R, and Python are not supported
-* Native queries are not supported when connecting to a source using Get data
+* Using the Power Query editor to Transform data or connect to new data sources is only supported for import storage mode. These capabilities aren't support for Direct Lake or DirectQuery tables.
+* Adding import tables to the model from custom connectors, Azure Database for PostgreSQL, IBM Informix database (Beta), Essbase, Microsoft Exchange, Hadoop File (HDFS), OLE DB, R, and Python aren't supported
+* Native queries aren't supported when connecting to a source using Get data
 * If you select **Cancel** or close the Power Query dialog, any changes made to queries will be discarded. In the web, changes made in the Power Query editor must be explicitly saved and applied to the model for them to persist beyond the editor.
-* You can use existing [personal cloud connections](../connect-data/service-connect-cloud-data-sources.md) in the Power Query editor for the semantic model, but you cannot create new ones there. When connecting to a data source in the editor, only on-premises or shared cloud connections can be created. To use a personal cloud connection, link it through the semantic model settings page. Configuration and management of these personal cloud connections can be done in the Power BI **Manage Connections and Gateways** page.
-* When opening the Power Query editor for a model published from Desktop, connections may initially appear unlinked in the **Manage Connections** dialog. You will be able to configure these connections by clickign the "+" sign.
-* A [data gateway](../connect-data/service-gateway-deployment-guidance.md) is needed to certain data sources. These gateways can be managed from the **semantic model settings page**. When publishing from Desktop, gateway connections are not configured by default for sources that require them. You’ll need to manually set them up under **Gateway connections** in the semantic model settings.
-* Dynamic data sources are not supported in the Power Query editor.
-* When adding a new import data source using Power Query on the web, the semantic model does not automatically inherit the sensitivity label from that data source.
-* When importing data using Power Query in the Power BI service, relationships defined in the underlying data sources are not automatically imported. These relationships must be manually recreated in the semantic model.
+* You can use existing [personal cloud connections](../connect-data/service-connect-cloud-data-sources.md) in the Power Query editor for the semantic model, but you can't create new ones there. When connecting to a data source in the editor, only on-premises or shared cloud connections can be created. To use a personal cloud connection, link it through the semantic model settings page. Configuration and management of these personal cloud connections can be done in the Power BI **Manage Connections and Gateways** page.
+* When opening the Power Query editor for a model published from Desktop, connections may initially appear unlinked in the **Manage Connections** dialog. You'll be able to configure these connections by clickign the "+" sign.
+* A [data gateway](../connect-data/service-gateway-deployment-guidance.md) is needed to certain data sources. These gateways can be managed from the **semantic model settings page**. When publishing from Desktop, gateway connections aren't configured by default for sources that require them. You’ll need to manually set them up under **Gateway connections** in the semantic model settings.
+* Dynamic data sources aren't supported in the Power Query editor.
+* When adding a new import data source using Power Query on the web, the semantic model doesn't automatically inherit the sensitivity label from that data source.
+* When importing data using Power Query in the Power BI service, relationships defined in the underlying data sources aren't automatically imported. These relationships must be manually recreated in the semantic model.
 * Refreshing semantic models from within the web editing experience in Pro workspaces is currently limited to 8 times per day. After reaching this limit, models can still be refreshed through other manual refresh options outside the editing interface.
 
 
@@ -303,7 +303,7 @@ Keep in mind the following considerations when interacting with the Power Query 
 The following scenarios don't support opening the data model for a semantic model in the service:
 
 * Semantic models that have incremental refresh.
-* Semantic models deployed through deployment pipelines can only be edited on the web in the development workspace. Editing in test and production workspaces is not supported.
+* Semantic models deployed through deployment pipelines can only be edited on the web in the development workspace. Editing in test and production workspaces isn't supported.
 * Semantic models that haven't yet been upgraded to enhanced metadata format. You can upgrade to enhanced metadata format by opening the corresponding pbix in Desktop and republishing.
 * Semantic models that have automatic aggregations configured.
 * Semantic models that have a live connection.
@@ -326,17 +326,17 @@ There are still many functional gaps between the model view in Power BI desktop 
 * View as dialog
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
-* When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that semantic model.
+* When modifying your data model within the Service, changing the name of data fields won't automatically update in existing visuals in downstream artifacts that depend on that semantic model.
 
 
 Additionally, keep in mind the following: 
 * Editing on the web isn't available in collaborative workspaces if converting the model to [large semantic model storage format fails](https://go.microsoft.com/fwlink/?linkid=2309615). In this case you can still use Viewing mode to view but not edit the model.
-* The *Edit in Desktop* option from the Viewing/Editing mode toggle is available only for Direct Lake models. This launches live editing of the Direct Lake semantic model in Power BI Desktop, and it is supported only on Windows machines. All requirements for [live editing Direct Lake models in Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2314634) apply.
+* The *Edit in Desktop* option from the Viewing/Editing mode toggle is available only for Direct Lake models. This launches live editing of the Direct Lake semantic model in Power BI Desktop, and it's supported only on Windows machines. All requirements for [live editing Direct Lake models in Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2314634) apply.
 
 
 ### Semantic models edited with external tools
 
-Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected behavior when editing your semantic model in the web if the write operation is not supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring).
+Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected behavior when editing your semantic model in the web if the write operation isn't supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring).
 
 ### Accessibility
 
