@@ -15,7 +15,7 @@ LocalizationGroup: Transform and shape data
 
 # Edit data models in the Power BI service (preview)
 
-Power BI lets users to modify existing data models in the Power BI service using actions such as editing relationships, creating DAX measures and managing RLS. In this experience, users can work and collaborate simultaneously on the same data model. 
+Power BI lets users modify existing data models in the Power BI service using actions such as editing relationships, creating DAX measures and managing RLS. In this experience, users can work and collaborate simultaneously on the same data model. 
 
 ## Enable the preview feature
 
@@ -98,15 +98,15 @@ The first method is to drag the column from one table in the relationship diagra
 
 The other method of creating a relationship is by selecting **Manage relationships** in the ribbon as shown in the following image.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-24.png" alt-text="Screenshot of manage relationships dialog ribbon entry point." lightbox="media/service-edit-data-models/service-edit-data-models-24.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-24.png" alt-text="Screenshot of managed relationships dialog ribbon entry point." lightbox="media/service-edit-data-models/service-edit-data-models-24.png":::
 
 This will open the revamped **Manage relationships** dialog. From here, you can select **New relationship** to create a new relationship in your model.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-25.png" alt-text="Screenshot of creating a new relationship from manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-25.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-25.png" alt-text="Screenshot of creating a new relationship from managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-25.png":::
 
 From here, configure the relationship properties, and select the **Ok** button when your relationship is complete to save the relationship information.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-26.png" alt-text="Screenshot of editing properties for a new relationship created in the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-26.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-26.png" alt-text="Screenshot of editing properties for a new relationship created in the managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-26.png":::
 
 ### Edit a relationship
 
@@ -124,21 +124,21 @@ In the window that appears, configure the relationship properties, and select th
 
 The third method is by selecting **Manage relationships** in the ribbon. In the **Manage relationships** dialog you can choose a relationship to edit and then select **Edit**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-29.png" alt-text="Screenshot of selecting edit in the ribbon of the manage relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-29.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-29.png" alt-text="Screenshot of selecting edit in the ribbon of the managed relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-29.png":::
 
 Alternatively, you can select **Edit** from the context menu of a given relationship in the dialog.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-30.png" alt-text="Screenshot of selecting edit in the context menu of the manage relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-30.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-30.png" alt-text="Screenshot of selecting edit in the context menu of the managed relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-30.png":::
 
 From here, configure the relationship properties, and select the **Ok** button when editing your relationship is complete to save the relationship information.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-31.png" alt-text="Screenshot of editing properties of an existing relationship from the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-31.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-31.png" alt-text="Screenshot of editing properties of an existing relationship from the managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-31.png":::
 
 ### See a list of all your relationships
 
 Selecting **Manage relationships** in the ribbon opens the revamped **Manage relationships** dialog which provides a comprehensive view of all your relationships, along with their key properties, in one convenient location. From here you can then choose to create new relationships or edit an existing relationship.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-32.png" alt-text="Screenshot of a list of relationships within the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-32.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-32.png" alt-text="Screenshot of a list of relationships within the managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-32.png":::
 
 Additionally, you have the option to filter and focus on specific relationships in your model based on cardinality and cross filter direction.
 
@@ -160,7 +160,7 @@ You can add new import tables to your semantic models using the Power Query 'Get
 
 ### Transform data and edit queries
 
-You can shape data for your import semantic models with the full Power Query editor by seleting **Transform data** in the ribbon.
+You can shape data for your import semantic models with the full Power Query editor by selecting **Transform data** in the ribbon.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-37.png" alt-text="Screenshot of Power Query Transform Data dialog" lightbox="media/service-edit-data-models/service-edit-data-models-37.png":::
 
@@ -170,7 +170,7 @@ You can refresh both the schema and data for your import semantic models by sele
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-38.png" alt-text="Screenshot of refresh dialog" lightbox="media/service-edit-data-models/service-edit-data-models-38.png":::
 
-If you select ‘Cancel’ to cancel the refresh, all data loaded into the model prior the cancellation will remain in the model. If desired, you can use [semantic model version history](../transform-model/service-semantic-model-version-history.md) to recover the model to a point before the refresh was initiated. Additional changes can not be made to the semantic model while a refresh is ongoing.
+If you select ‘Cancel’ to cancel the refresh, all data loaded into the model prior to the cancellation will remain in the model. If desired, you can use [semantic model version history](../transform-model/service-semantic-model-version-history.md) to recover the model to a point before the refresh was initiated. Additional changes can not be made to the semantic model while a refresh is ongoing.
 
 ### Set your own date table
 
