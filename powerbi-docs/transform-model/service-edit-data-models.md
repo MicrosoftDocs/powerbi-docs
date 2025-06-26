@@ -156,19 +156,19 @@ For example, you could change the data type for multiple columns by holding down
 
 You can add new import tables to your semantic models using the Power Query 'Get Data' experience. Select **Get data** in the ribbon to choose your connector and bring in new data to your semantic model. 
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-36.png" alt-text="Screenshot of Power Query Get Data dialog" lightbox="media/service-edit-data-models/service-edit-data-models-36.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-36.png" alt-text="Screenshot of Power Query Get Data dialog." lightbox="media/service-edit-data-models/service-edit-data-models-36.png":::
 
 ### Transform data and edit queries
 
 You can shape data for your import semantic models with the full Power Query editor by selecting **Transform data** in the ribbon.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-37.png" alt-text="Screenshot of Power Query Transform Data dialog" lightbox="media/service-edit-data-models/service-edit-data-models-37.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-37.png" alt-text="Screenshot of Power Query Transform Data dialog." lightbox="media/service-edit-data-models/service-edit-data-models-37.png":::
 
 ### Refresh
 
 You can refresh both the schema and data for your import semantic models by selecting **Refresh** in the ribbon. 
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-38.png" alt-text="Screenshot of refresh dialog" lightbox="media/service-edit-data-models/service-edit-data-models-38.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-38.png" alt-text="Screenshot of refresh dialog." lightbox="media/service-edit-data-models/service-edit-data-models-38.png":::
 
 If you select ‘Cancel’ to cancel the refresh, all data loaded into the model prior to the cancellation remains in the model. If desired, you can use [semantic model version history](../transform-model/service-semantic-model-version-history.md) to recover the model to a point before the refresh was initiated. Additional changes can't be made to the semantic model while a refresh is ongoing.
 
