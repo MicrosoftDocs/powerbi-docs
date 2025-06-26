@@ -64,7 +64,7 @@ When you open your data model you can see all the tables, columns, and relations
 
 ### Create measures
 
-To create a [measure](desktop-measures.md) (a measure is a collection of standardized metrics) select the table in the **Data Pane** and select the **New measure** button from the ribbon, as shown in the following image.
+To create a [measure](desktop-measures.md), (a measure is a collection of standardized metrics) select the table in the **Data Pane** and select the **New measure** button from the ribbon, as shown in the following image.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-07.png" alt-text="Screenshot of creating a new measure" lightbox="media/service-edit-data-models/service-edit-data-models-07.png":::
 
@@ -74,7 +74,7 @@ You can expand the table to find the measure in the table.
 
 ### Create calculated columns
 
-To create a [calculated column](desktop-calculated-columns.md) select the table in the **Data Pane** and select the **New column** button in the ribbon, as shown in the following image.
+To create a [calculated column](desktop-calculated-columns.md), select the table in the **Data Pane** and select the **New column** button in the ribbon, as shown in the following image.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-08.png" alt-text="Screenshot of creating a calculated column." lightbox="media/service-edit-data-models/service-edit-data-models-08.png":::
 
@@ -84,7 +84,7 @@ You can expand the table to find the calculated column in the table.
 
 ### Create calculated tables
 
-To create a [calculated table](desktop-calculated-tables.md) select the table in the **Data Pane** and select the **New table** button in the ribbon, as shown in the following image.
+To create a [calculated table](desktop-calculated-tables.md), select the table in the **Data Pane** and select the **New table** button in the ribbon, as shown in the following image.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-09.png" alt-text="Screenshot of creating a calculated table." lightbox="media/service-edit-data-models/service-edit-data-models-09.png":::
 
@@ -100,7 +100,7 @@ The other method of creating a relationship is by selecting **Manage relationshi
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-24.png" alt-text="Screenshot of managed relationships dialog ribbon entry point." lightbox="media/service-edit-data-models/service-edit-data-models-24.png":::
 
-This will open the revamped **Manage relationships** dialog. From here, you can select **New relationship** to create a new relationship in your model.
+This opens the revamped **Manage relationships** dialog. From here, you can select **New relationship** to create a new relationship in your model.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-25.png" alt-text="Screenshot of creating a new relationship from managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-25.png":::
 
@@ -136,7 +136,7 @@ From here, configure the relationship properties, and select the **Ok** button w
 
 ### See a list of all your relationships
 
-Selecting **Manage relationships** in the ribbon opens the revamped **Manage relationships** dialog which provides a comprehensive view of all your relationships, along with their key properties, in one convenient location. From here you can then choose to create new relationships or edit an existing relationship.
+Selecting **Manage relationships** in the ribbon opens the revamped **Manage relationships** dialog, which provides a comprehensive view of all your relationships, along with their key properties, in one convenient location. From here, you can then choose to create new relationships or edit an existing relationship.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-32.png" alt-text="Screenshot of a list of relationships within the managed relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-32.png":::
 
@@ -170,7 +170,7 @@ You can refresh both the schema and data for your import semantic models by sele
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-38.png" alt-text="Screenshot of refresh dialog" lightbox="media/service-edit-data-models/service-edit-data-models-38.png":::
 
-If you select ‘Cancel’ to cancel the refresh, all data loaded into the model prior to the cancellation will remain in the model. If desired, you can use [semantic model version history](../transform-model/service-semantic-model-version-history.md) to recover the model to a point before the refresh was initiated. Additional changes can't be made to the semantic model while a refresh is ongoing.
+If you select ‘Cancel’ to cancel the refresh, all data loaded into the model prior to the cancellation remains in the model. If desired, you can use [semantic model version history](../transform-model/service-semantic-model-version-history.md) to recover the model to a point before the refresh was initiated. Additional changes can't be made to the semantic model while a refresh is ongoing.
 
 ### Set your own date table
 
