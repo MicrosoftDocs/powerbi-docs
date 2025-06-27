@@ -135,7 +135,8 @@ See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-lim
 - Because AI instructions are unstructured guidance to Copilot, they can only be interpreted by the LLM but can't be guaranteed to be followed exactly.  
 - AI instructions affect Copilot capabilities but don't extend to general conversations with Copilot.  
 - AI instructions are saved at the semantic model level. Instructions can't be stored at the report level at this time.  
-- AI instructions aren't expected to be persona-specific or modify non-data-related outputs for the end user.  
+- AI instructions aren't expected to be persona-specific or modify non-data-related outputs for the end user.
+- AI instructions cannot disable other Power BI Copilot features or prevent/prioritize certain features from being called. 
 - Instructions aren't intended to work with visual modifications or theming in your report.  
 - The ability to upload instructions to the dialog in Desktop is currently unavailable.  
 - If you're testing instructions in Desktop, you need to close and reopen your Copilot pane to see new instructions applied.  
