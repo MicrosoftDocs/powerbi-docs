@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/18/2025
+ms.date: 06/23/2025
 #customer intent: As a Power BI visual developer, I want to learn how to get my custom visual certified so that it can be used by others in Power BI.
 ---
 
@@ -85,9 +85,10 @@ Compile your Power BI visual with `pbiviz package`. If you're using your own bui
 
 >[!TIP]
 > Starting from powerbi-visuals-tools version 6.1.0, you can check your visual for unsafe calls to `fetch`, `XMLHttpRequest`, and `eval` using the following command:
-`pbiviz package --certification-audit`
+`pbiviz package --certification-audit`.
 If any unsafe code is detected during the audit, you can automatically build a package with the necessary fixes by running:
-`pbiviz package --certification-fix`
+`pbiviz package --certification-fix`.
+This flag removes all forbidden calls. You need to thoroughly test your visual to ensure it works as expected. Also, don't forget to update npm run package script in package.json to avoid hash mismatch during certification review.
 
 ### Source code requirements
 
