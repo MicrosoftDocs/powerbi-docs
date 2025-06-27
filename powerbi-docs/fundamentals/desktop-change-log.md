@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/18/2025
+ms.date: 06/27/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,17 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## June 2025 QFE 2 
+
+*Version 2.144.1155.0, Released: June 25, 2025*
+
+Bug fixes/improvements:
+
+- Bug fix addressing the missing DonutChart legend when values are empty but the category is provided.
+- Bug fix addressing the query order logic in model synchronization. Refined the logic for handling query order synchronization.
+- Fixed issue Index was outside the bounds of the array when using Implementation 2.0 for connectors.
+- Bug fix addressing incorrect function usage in the visual top *n* feature.
 
 ## June 2025 QFE 1
 
