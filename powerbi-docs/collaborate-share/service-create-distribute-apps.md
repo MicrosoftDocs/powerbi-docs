@@ -377,6 +377,7 @@ To maintain app reliability and performance here are some app, audience group, a
 - If you include a report that uses chained semantic models in an app, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), when you add a user to an audience group, make sure to give permissions to all the semantic models in the chain. We recommend using Microsoft Entra Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). The same consideration should be made for semantic models in a different workspace other than the app, make sure to give permissions to semantic models in a different workspace.
 - If you include a paginated report that uses a semantic model, in an app, when you add a user to an audience group, make sure to give permission to the semantic model.
 - Guest users require the [Directory Readers](/entra/identity/role-based-access-control/permissions-reference#directory-readers) role in order to update.
+- Custom access requests and automated custom messages aren't supported in reports; however, they're supported in [Power BI apps](../collaborate-share/service-create-distribute-apps.md#customize-the-access-request-behavior).
 
 
 Additional things to keep in mind about publishing apps:
