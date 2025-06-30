@@ -41,7 +41,7 @@ Make sure your team has permission to the report or scorecard by sharing it with
 
 ## Chat about data with rich links and cards
 
-When discussing data, it’s important that your colleagues can open the underlying data to see and explore trends. This helps them answer questions and understand the full context of requests you’re making. It’s also an easy way to encourage more use of data in decision making. For information on sharing and chatting about Power BI content in Teams, see [Chat in Microsoft Teams directly from the Power BI service](../collaborate-share/service-share-report-teams.md#chat-about-power-bi-in-microsoft-teams).
+When discussing data, it’s important that your colleagues can open the underlying data to see and explore trends. This helps them answer questions and understand the full context of requests you’re making. It’s also an easy way to encourage more use of data in decision making. For information on sharing and chatting about Power BI content in Teams, see [Chat in Microsoft Teams directly from the Power BI service](../collaborate-share/service-share-report-teams.md#chat-about-power-bi-content-in-microsoft-teams).
 
 ### Send your colleagues links to reports
 
