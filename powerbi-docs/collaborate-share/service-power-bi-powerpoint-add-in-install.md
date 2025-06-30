@@ -42,7 +42,7 @@ Add the report or visual to a new PowerPoint presentation with the following met
 1. Select **Share** the live data is a report.
 1. Or, if the live data is in a visual, select **More options (...)** then **Share**.
 1. When you add a report:
-    1. Specify what users can access the content as described in the [sharing reports documentation](service-share-dashboards.md#share-reports).
+    1. Specify what users can access the content as described in the [sharing reports documentation](service-share-dashboards.md).
     1. Check the **Include my changes** box if you want to add the data in its current state.
     1. Select **Apply**.
 1. Choose **Open in PowerPoint**.

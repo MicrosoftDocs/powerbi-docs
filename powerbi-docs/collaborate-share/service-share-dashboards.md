@@ -113,5 +113,4 @@ See [Microsoft Entra B2B guest users](../enterprise/service-admin-azure-ad-b2b.m
 - [Sharing for users with free licenses](end-user-shared-with-me.md)
 - [Request or grant access to shared dashboards or reports](service-request-access.md)
 - [Share a filtered Power BI report](service-share-reports.md)
-- [Collaborate in Microsoft Teams](../guidance/service-teams-integration.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
