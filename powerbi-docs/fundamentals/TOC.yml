@@ -3,8 +3,6 @@
   items:
     - name: What is Power BI?
       href: power-bi-overview.md
-    - name: The new experience in the Power BI service
-      href: service-experience-changes.md
     - name: Get Power BI Desktop
       href: desktop-get-the-desktop.md
     - name: Basics of Power BI service

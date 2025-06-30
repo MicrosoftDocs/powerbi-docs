@@ -6515,10 +6515,12 @@
             "source_path": "powerbi-docs/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md",
             "redirect_url": "/power-bi/collaborate-share/service-share-dashboards",
             "redirect_document_id": false
-        }   
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/service-experience-changes.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }      
   
-  
-  
-
     ]
 }
