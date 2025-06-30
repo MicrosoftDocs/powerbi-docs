@@ -2,11 +2,6 @@
   href: index.yml
   expanded: true
   items:
-  - name: Overview
-    expanded: true
-    items: 
-      - name: "Ways to share your work"
-        href: service-how-to-collaborate-distribute-dashboards-reports.md
   - name: Share, publish, & endorse your work
     items: 
     - name: "Content endorsement"
