@@ -270,15 +270,15 @@ You can format a visual calculation using data types and formatting options. You
 
 Step 1: Select The visual you would like to use the conditional formatting in:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-01.png" alt-text="Screenshot of a table visual with two columns Value and Progress":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-01.png" alt-text="Screenshot of a table visual with two columns Value and Progress.":::
 
 Step 2: Click the **New visual calculation** button under the **Home** Tab:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-02.png" alt-text="Screenshot of the button to create a visual calculation in the Power BI Home Tab":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-02.png" alt-text="Screenshot of the button to create a visual calculation in the Power BI Home Tab.":::
 
 Step 3: Write your visual calculation. Here is a IF statement to return either green or red based on a measure being more then .5:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-03.png" alt-text="Screenshot of DAX code listed out below in the visual calculation editor":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-03.png" alt-text="Screenshot of DAX code listed out below in the visual calculation editor.":::
 
 ```dax
 Conditional Hex Code = IF ( [Progress] > .5, "#5BA300", "#E91C1C" )
@@ -286,27 +286,27 @@ Conditional Hex Code = IF ( [Progress] > .5, "#5BA300", "#E91C1C" )
 
 Step 4: Expand the Formatting pane and click **Properties**:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-04.png" alt-text="Screenshot of the formatting pane showing that you should click properties":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-04.png" alt-text="Screenshot of the formatting pane showing that you should click properties.":::
 
 Step 5: Expand the **Data Format** section, select your visual calculation, and set both the Data Type and format to **Text**:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-05.png" alt-text="Screenshot of the formatting pane showing you should apply a data type to your visual calculation of text":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-05.png" alt-text="Screenshot of the formatting pane showing you should apply a data type to your visual calculation of text.":::
 
 Step 6: Before exiting the visual calculation editor click the hide icon next to the visual calculation in the build section to hide it:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-06.png" alt-text="Screenshot of the build pane showing how to click a button to hide the visual calculation you are creating":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-06.png" alt-text="Screenshot of the build pane showing how to click a button to hide the visual calculation you are creating.":::
 
 Step 7: Use it in a conditional formatting section: 
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-07.png" alt-text="Screenshot of a conditional formatting window where the visual calculation has been selected":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-07.png" alt-text="Screenshot of a conditional formatting window where the visual calculation has been selected.":::
 
 Step 8: Exit the visual calculation editor by clicking the **Back to report** button:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-08.png" alt-text="Screenshot of the button you push to exit out of the visual calculation editor. Text is: Back to report":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-08.png" alt-text="Screenshot of the button you push to exit out of the visual calculation editor. Text is: Back to report.":::
 
 Step 9: Enjoy your conditional formatted visual!
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-09.png" alt-text="Screenshot of the table from the first screenshot now with conditional formatting applied":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-09.png" alt-text="Screenshot of the table from the first screenshot now with conditional formatting applied.":::
 
 ## Considerations and limitations
 
