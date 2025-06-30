@@ -23,7 +23,7 @@
     - name: "Sign in for the first time"
       href: end-user-sign-in.md
     - name: "Interact with visuals"
-      href: end-user-visuals.md
+      href: end-user-visualizations.md
     - name: "Which Power BI license do I have?"
       href: end-user-license.md
     - name: "Learn how to ask questions using natural language"
