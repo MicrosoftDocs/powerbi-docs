@@ -39,7 +39,7 @@ Here are some articles explaining other ways to use drillthrough.
 
     - Set **Keep all filters** to **On**.
     - In **Drill through from**, add the field that you want by dragging it from the Data pane.
-    - In the expanded section for the added field, under **Allow drillthrough when:**, select **Used as category**.
+    - In the expanded section for the added field, under **Drill through when**, select **Used as category**.
 
 :::image type="content" source="media/desktop-drillthrough/drillthrough-add-fields-here-update.png" alt-text="Screenshot of drillthrough option in the Data pane's Build visual tab. Version 2.145.631.0":::
 
