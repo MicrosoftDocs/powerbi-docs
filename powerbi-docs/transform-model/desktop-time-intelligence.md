@@ -329,6 +329,7 @@ createOrReplace
 ### Considerations
 
 - Performing a time intelligence calculations on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security.md) rules can lead to unexpected results.
+- Performance of this feature isn't representative of the end product.
 
 ## Creating a date table using built-in tools
 
