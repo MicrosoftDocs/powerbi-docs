@@ -50,7 +50,7 @@ Global and tenant admins can control OneLake integration by using the following 
 
 ### Refresh model
 
-In order for model import data to be written to a Delta table in OneLake, at least one manual or scheduled refresh for the model must be run. Either run a manual refresh or wait for a scheduled refresh.
+In order for model import data to be written to a Delta table in OneLake, at least one manual or scheduled refresh for the model must be run. Either run a manual refresh or wait for a scheduled refresh. Check the log entries on the OneLake Integration tab in the refresh history to analyze export durations.
 
 ## Export OneLake Delta tables
 

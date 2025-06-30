@@ -69,5 +69,5 @@ One way that *creators* can share with you is by granting you a [role](service-r
 
 ## Related content
 
-- [Ways to collaborate and share reports and dashboards in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md#share-reports-or-dashboards)
+- [Ways to collaborate and share reports and dashboards in Power BI](service-share-dashboards.md)
 - [Introduction to semantic models across workspaces](../connect-data/service-datasets-across-workspaces.md)
