@@ -52,6 +52,8 @@ Global and tenant admins can control OneLake integration by using the following 
 
 In order for model import data to be written to a Delta table in OneLake, at least one manual or scheduled refresh for the model must be run. Either run a manual refresh or wait for a scheduled refresh. Check the log entries on the OneLake Integration tab in the refresh history to analyze export durations.
 
+:::image type="content" source="media/onelake-integration-overview/onelake-integration-refresh-history.png" alt-text="OneLake Integration tab in the refresh history to analyze export durations":::
+
 ## Export OneLake Delta tables
 
 Delta tables can be exported in many ways. If your semantic model has XMLA read-write mode enabled, you can export programmatically by using the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true) and [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true).
