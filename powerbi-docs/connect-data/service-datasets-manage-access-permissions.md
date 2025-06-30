@@ -79,5 +79,5 @@ The shared report links tab lists [links that have been created to shared report
 * [Semantic model permissions](./service-datasets-permissions.md)
 * [Share access to a semantic model](./service-datasets-share.md)
 * [Use semantic models across workspaces](./service-datasets-across-workspaces.md)
-* [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
+* [Share a report via link](../collaborate-share/service-share-dashboards.md#share-reports)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

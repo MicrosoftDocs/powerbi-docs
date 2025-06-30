@@ -1,84 +1,117 @@
----  
-title: Share Power BI reports and dashboards  
-description: Learn how to easily share Power BI reports and dashboards with colleagues inside and outside your organization.  
-author: JulCsc  
-ms.author: juliacawthra  
-ms.reviewer: sunaraya  
-ms.service: powerbi  
-ms.subservice: pbi-collaborate-share  
-ms.topic: how-to  
-ms.date: 06/24/2025  
+---
+title: Collaborate and share in Power BI
+description: Learn how to share Power BI reports and dashboards with colleagues inside and outside your organization. Discover key sharing features and best practices.
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: sunaraya
+ms.service: powerbi
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
+ms.date: 06/30/2025
 LocalizationGroup: Share your work
-ai-usage: ai-assisted
----  
+---
 
-# Share Power BI reports and dashboards  
+# Collaborate and share Power BI reports and dashboards
 
-Sharing is the simplest way to give colleagues access to your Power BI reports and dashboards. Recipients can view and interact with shared content but can't edit it unless you grant extra permissions.  
+Power BI offers several ways to collaborate and share Power BI reports, dashboards, and data with others—inside or outside your organization. This article explains the main sharing and collaboration options, when to use each, and how to manage permissions.
 
-## Prerequisites  
+## Prerequisites
 
-- You and your recipients need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md), unless the content is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md).  
-- To allow recipients to edit shared reports, assign them an appropriate workspace role. See [Roles in workspaces](service-roles-new-workspaces.md).  
+- You need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md) to share content, unless the content is in a [Premium capacity](../enterprise/service-premium-what-is.md).
+- Recipients also need a Power BI Pro or PPU license, unless the content is in a Premium or Fabric capacity.
+- To let recipients edit a shared report, assign them a workspace role that allows editing. See [Roles in workspaces](service-roles-new-workspaces.md) for details.
 
 > [!NOTE]
-> Only **P SKUs** and **F SKUs** (F64 or larger) allow users with a Microsoft Fabric free license to view shared content. Smaller **F SKUs** require a Pro license. Learn more about [Microsoft Fabric licenses](/fabric/enterprise/licenses).  
+> - Only **P SKU**s and **F SKU**s F64 or larger let users with a Microsoft Fabric free license and the Viewer role use Power BI apps and shared content. Smaller **F SKU**s require a Pro license.
+> - The **F SKU** is part of Fabric. To learn more, see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
-## Share reports
+## Ways to collaborate and share
 
-1. Open your report and select the **Share** icon.
-1. Choose sharing options:  
-   - **People in your organization**: Anyone in your organization with the link can view.  
-   - **Specific people**: Enter names or emails to share directly.  
-   - **People with existing access**: Send a link without granting new permissions.  
+### Share reports and dashboards
 
-   :::image type="content" source="media/service-share-dashboards/power-bi-share-links.png" alt-text="Screenshot of the Share link dialog box." lightbox="media/service-share-dashboards/power-bi-share-links.png":::  
+- Share from My Workspace or other workspaces (with the right role or permissions).
+- [Share from the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).
+- [Share from Power BI Desktop](../create-reports/desktop-sharepoint-save-share.md) with OneDrive and SharePoint integration.
+- [Publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service.
 
-1. Adjust permissions as needed:  
-   - **Reshare** (default): Allows recipients to share further.  
-   - **Build**: Lets recipients create new reports from the data.  
+1. In a list of reports or dashboards, or when viewing one, select **Share**.
+1. In the **Send link** dialog, choose how to share:
+   - **People in your organization**: Anyone in your org with the link can view (not for external/guest users).
+   - **Specific people**: Enter names or emails to share directly (can include Microsoft Entra B2B guests).
+   - **People with existing access**: Send a link to someone who already has access.
+1. Set permissions:
+   - **Reshare**: Allow recipients to share with others.
+   - **Build**: Allow recipients to build their own reports based on the data.
+1. Copy the link or send it directly via email, Outlook, PowerPoint, or Teams.
 
-:::image type="content" source="media/service-share-dashboards/power-bi-share-link-settings.png" alt-text="Screenshot of the Link settings dialog box." lightbox="media/service-share-dashboards/power-bi-share-link-settings.png":::  
+:::image type="content" source="media/service-share-dashboards/power-bi-share-links.png" alt-text="Screenshot of the Share link dialog box in Power BI, showing sharing options for reports.":::
 
-Recipients receive an email with a link to access the report.  
+> [!NOTE]
+> Your organization might restrict shareable links to "People in your organization." See [tenant settings](/fabric/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization).
 
-## Share dashboards  
+### Workspaces
 
-1. Open your dashboard and select the **Share** icon.
-1. Enter names or emails, set permissions, and select **Grant access**.  
+- Use workspaces to collaborate on content with a team.
+- Assign roles (Admin, Member, Contributor, Viewer) to control access and editing.
+- Content in workspaces can be published as apps for broader distribution.
 
-:::image type="content" source="media/service-share-dashboards/power-bi-share-dashboard.png" alt-text="Screenshot of the Share dashboard dialog box." lightbox="media/service-share-dashboards/power-bi-share-dashboard.png":::  
+### Publish apps
 
-## Manage permissions  
+- Package dashboards and reports into an app for easy distribution.
+- Share apps with large groups or your entire organization.
+- Recipients get a consistent, read-only experience unless you grant build permissions.
 
-To manage access:  
+### Microsoft Teams integration
 
-1. Select **More options (...)** > **Manage permissions**.  
-1. Add or remove users, adjust permissions, or manage sharing links.  
+- Share reports and dashboards directly in Teams channels or chats.
+- Collaborate in real time and discuss insights with your team.
 
-:::image type="content" source="media/service-share-dashboards/manage-permissions-pane.png" alt-text="Manage permissions pane" lightbox="media/service-share-dashboards/manage-permissions-pane.png":::  
+### Share outside your organization
 
-## Share outside your organization  
+- Enter the external user's email address (Microsoft Entra B2B guests recommended).
+- Recipients must sign in to Power BI to view shared content.
+- Only direct recipients can access the shared content; forwarding the link does not grant access.
+- If RLS is implemented, external users only see data they're permitted to view.
 
-You can share reports and dashboards with external users. They must sign in to Power BI and have a Pro or PPU license. External users can't reshare content.  
+See [Microsoft Entra B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) for more.
 
-## Sharing limits and best practices  
+### Share with large groups
 
-- You can share with up to 100 users or groups at once. To share with more, use groups or publish an app.  
-- Use security groups (not distribution groups) for external sharing.  
-- Apply [row-level security (RLS)](/fabric/security/service-admin-row-level-security) to restrict data access.  
+- Use security groups to share with large audiences.
+- Or, create an app from a workspace and publish it to many users. See [publishing apps in Power BI](service-create-distribute-apps.md).
 
-## Considerations  
+## Manage permissions
 
-- Sharing a report or dashboard also shares the underlying semantic model unless restricted by RLS.  
-- Recipients can interact with reports and dashboards but can't edit unless explicitly permitted.  
-- Users can manually [refresh data](../connect-data/refresh-data.md).  
-- You can't reshare content distributed via apps.  
+1. Select **More options (...)** in the sharing dialog, then **Manage permissions**.
+1. In the **Manage permissions** pane, you can:
+   - Copy or change existing links
+   - Grant or remove direct access
+   - View pending requests and related content
+   - Use **Advanced** for more options
 
-## Related content  
+:::image type="content" source="media/service-share-dashboards/power-bi-share-manage-settings.png" alt-text="Screenshot of the Manage permissions dialog in Power BI.":::
 
-- [Collaborate and share in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)  
-- [Troubleshoot sharing](service-troubleshoot-sharing.md)  
-- [Request or grant access](service-request-access.md)  
-- [Share filtered reports](service-share-reports.md)  
-- Questions? Visit the [Power BI Community](https://community.powerbi.com/).  
+> [!NOTE]
+> Each report can't have more than 1,000 sharing links. If you reach this limit, remove links for "Specific people" and grant those users direct access.
+
+## Considerations and limitations
+
+- Only reports can be shared via links that grant access; dashboards require direct access.
+- Sharing a report or dashboard also shares the underlying semantic model unless RLS is applied.
+- Recipients can interact with content in Reading view but can't edit unless granted build permissions.
+- Analyze in Excel access can be restricted by admins.
+- You can't share reports distributed to you in an app; ask the app owner to add users and republish.
+- Distribution groups can be used for sharing, but Microsoft 365 Unified groups are not supported for direct sharing.
+- If coworkers already have access, you can send a direct link by copying the URL.
+- Email notifications are only sent to individual users, not groups.
+
+## Related content
+
+- [Roles in workspaces](service-roles-new-workspaces.md)
+- [Share from Power BI Desktop](../create-reports/desktop-sharepoint-save-share.md)
+- [Troubleshoot sharing dashboards and reports](service-troubleshoot-sharing.md)
+- [Sharing for users with free licenses](end-user-shared-with-me.md)
+- [Request or grant access to shared dashboards or reports](service-request-access.md)
+- [Share a filtered Power BI report](service-share-reports.md)
+- [Collaborate in Microsoft Teams](../guidance/service-teams-integration.md)
+- Questions? [Try the Power BI Community](https://community.powerbi.com/)

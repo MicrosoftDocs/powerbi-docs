@@ -139,7 +139,7 @@ sections:
           :::image type="content" source="media/end-user-subscribe/power-bi-permissions.png" alt-text="Screenshot showing two options selected under the heading Also include.":::
           
           ### I removed access for others, but they can still open the report or dashboard
-          Clearing the **Permission to access the report/dashboard in Power BI** option doesn't revoke access for users who are granted access this report in the Power BI service (app.powerbi.com). To remove access, see [Manage permissions to a dashboard](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-dashboard) and see  [Manage permissions to a report](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-report).
+          Clearing the **Permission to access the report/dashboard in Power BI** option doesn't revoke access for users who are granted access this report in the Power BI service (app.powerbi.com). To remove access, see [Manage permissions to a dashboard](../collaborate-share/service-share-dashboards.md#manage-permissions) and see  [Manage permissions to a report](../collaborate-share/service-share-dashboards.md#manage-permissions).
 
       - question: |
           On a mobile device, the email link opens the app instead of the Power BI service website
