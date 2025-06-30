@@ -3,21 +3,29 @@ title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 06/08/2025
+ms.date: 06/30/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
 
-Power BI Mobile app versions are released on a monthly cadence. The latest version contains not only new features, but also bug fixes.
+Power BI Mobile app versions are released on a monthly cadence. The latest version contains not only new features, but also bug fixes.
 
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## July 2025
+
+### Home in the Power BI mobile app has been reorganized
+
+The **Home** screen in the Power BI mobile app was redesigned to help you find your key content faster. Recent and frequent items now appear together in a single, unified strip, making it easier to spot what matters most. We're also introducing a new **Favorites** strip for quick, one-tap access to your most-used items. Combined with refreshed navigation buttons at the bottom of the screen, these updates make getting around the app simpler and more intuitive.
+
+:::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-home.png" border="false" alt-text="Screenshot of the Power BI mobile app home page.":::
 
 ## June 2025
 

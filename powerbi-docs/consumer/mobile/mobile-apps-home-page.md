@@ -1,18 +1,18 @@
 ---
-title: 'A quick look at the Mobile app home page'
+title: 'Tour the Power BI mobile app home page'
 description: Learn about the main features of the Power BI mobile app home page and how to navigate that page quickly.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 01/18/2023
+ms.date: 06/30/2025
 ms.custom: mode-portal, intro-quickstart
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
 
-# A quick tour of the Mobile app home page
+# Tour the Power BI mobile app home page
 
 In this tour, you become acquainted with the home page of the Power BI mobile app and the navigation aids it provides to get to what you need quickly.
 
@@ -60,16 +60,17 @@ Activity items are aggregated, so all data updates coming from the same app or w
 
 The navigation bar resides at the bottom of the page.
 
-:::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-navbar-new.png" border="false" alt-text="Screenshot of the Power BI mobile app navigation bar.":::
+:::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-navbar.jpg" border="false" alt-text="Screenshot of the Power BI mobile app navigation bar.":::
 
 The navigation bar provides quick access to:
 
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-home-icon.png" border="false" ::: **Home** - returns you to the home page.
-- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-favorites-icon.png" border="false" ::: **Favorites** - the reports, dashboards and apps you have marked as [favorites](mobile-apps-favorites.md).
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-apps-icon.png" border="false" ::: **Apps** - the apps you have installed in your account.
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-workspaces-icon.png" border="false" ::: **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
-- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-recents-icon.png" border="false" ::: **Recents** - the items you have recently viewed.
-- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-shared-with-me-icon.png" border="false" ::: **Shared with me** - the items other people have shared with you.
+- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-shared-with-me-icon.png" border="false" ::: **Shared** - the items other people have shared with you.
+- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-recents-icon.png" border="false" ::: **Recent** - the items you have recently viewed.
+- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-favorites-icon.png" border="false" ::: **Favorites** - the reports, dashboards and apps you have marked as [favorites](mobile-apps-favorites.md).
+- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-external-orgs-icon.png" border="false" ::: **From external orgs** - content from external organizations that has been shared with you.
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-explore-icon-new.png" border="false" ::: **Explore** - content from your organization that has been chosen especially for you.
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-notification-icon.png" border="false" ::: **Notifications** - opens the [notifications page](mobile-apps-notification-center.md) where you can view and access your notifications. A dot on the notifications bell indicates that you have new notifications.
 
