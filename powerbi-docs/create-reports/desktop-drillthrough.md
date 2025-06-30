@@ -35,13 +35,13 @@ Here are some articles explaining other ways to use drillthrough.
 
 2. On the **Data** pane for that drillthrough target page, right click on the field that you want.
 3. Select **Add to drill through**
-4. On the **Filters** pane, expand the **Page information** dropdown.
+4. On the **Format** pane, expand the fields under the **Page information** section.
 
     - Set **Keep all filters** to **On**.
-    - In **Add drill-through fields here**, add the field that you want by dragging it from the Data pane.
+    - In **Drill through from**, add the field that you want by dragging it from the Data pane.
     - In the expanded section for the added field, under **Allow drillthrough when:**, select **Used as category**.
-      
-   ![Screenshot of drillthrough option in the Data pane's Build visual tab. Version 2.145.631.0](media/desktop-drillthrough/drillthrough-add-fields-here-update.png)
+
+:::image type="content" source="media/desktop-drillthrough/drillthrough-add-fields-here-update.png" alt-text="Screenshot of drillthrough option in the Data pane's Build visual tab. Version 2.145.631.0":::
 
 
 When you add a field to the **Drill through** well, Power BI automatically creates a *back* button visual. That visual becomes a button in published reports. Users who view your report in the Power BI service use this button on the target page to get back to the original source report page from which they came.
