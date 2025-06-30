@@ -6485,7 +6485,30 @@
             "source_path": "powerbi-docs/connect-data/service-datamart-details-page.md",
             "redirect_url": "/fabric/governance/onelake-catalog-item-details",
             "redirect_document_id": false
-        } 
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/power-bi-service-overview.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/service-service-vs-desktop.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/desktop-what-is-desktop.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/fabric-power-bi.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }  
+  
+  
+  
 
     ]
 }
