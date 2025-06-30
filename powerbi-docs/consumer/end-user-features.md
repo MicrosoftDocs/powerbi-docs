@@ -69,58 +69,60 @@ The second column represents a free user working with content in a workspace tha
 
 ### Legend
 
-![green dot](media/end-user-license/power-bi-green-dot.png)  feature is available in the current scenario
-![orange x](media/end-user-features/orange-x.png)  feature is not available in the current scenario
- **![green mw](media/end-user-features/green-mwo.png)** feature availability is limited to **My workspace**. Content in **My workspace** is for the owner's personal use and cannot be viewed by anyone else in Power BI.
- \*  access to this feature can be turned on or off by a Pro user or an admin.
- <br><br>
+![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) Feature is available in the current scenario
+
+![orange x](media/end-user-features/orange-x.png) Feature is not available in the current scenario
+
+ **![green mw](media/end-user-features/green-mwo.png)** Feature availability is limited to **My workspace**. Content in **My workspace** is for the owner's personal use and cannot be viewed by anyone else in Power BI.
+
+ \*  Access to this feature can be turned on or off by a Pro user or an admin.
 
 ### Feature list
 
 |Features   | Scenario 1: Free user who has no access to content hosted in Premium capacity.    | Scenario 2: Free user with **Viewer** permissions to content stored in Premium capacity.  |
 |---|---|---|
 |**Apps** 
-|Installs automatically | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)*|
-|Open | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
-|Favorite | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
+|Installs automatically | ![orange x](media/end-user-features/orange-x.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*|
+|Open | ![orange x](media/end-user-features/orange-x.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+|Favorite | ![orange x](media/end-user-features/orange-x.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
  |Edit, update, republish |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |Create new app |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |AppSource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
-|Organization store: download and open|![orange x](media/end-user-features/orange-x.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |
-| Reshare an app | ![orange x](media/end-user-features/orange-x.png)  | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
+|Organization store: download and open|![orange x](media/end-user-features/orange-x.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+| Reshare an app | ![orange x](media/end-user-features/orange-x.png)  | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
  |**Workspaces in Premium capacity**
 | Create, edit, or delete workspace or content  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Add endorsements | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
-|Open and view  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  |
-| Read data stored in workspace dataflows |![orange x](media/end-user-features/orange-x.png) |![green dot](media/end-user-license/power-bi-green-dot.png)|
+|Open and view  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+| Read data stored in workspace dataflows |![orange x](media/end-user-features/orange-x.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
 |**Dashboards**
-|Receive, view, and interact with dashboards from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  |
-| Add alerts to tiles  |  ![green myw](media/end-user-features/green-mwo.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  |
-| View and respond to comments from others: add your own comments  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)*  |
+|Receive, view, and interact with dashboards from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+| Add alerts to tiles  |  ![green myw](media/end-user-features/green-mwo.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+| View and respond to comments from others: add your own comments  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*  |
 | Save a copy | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
-|Copy visual as an image? |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)|
+|Copy visual as an image? |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
 |Create, edit, update, delete | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
-|Export tile to .csv |![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)|
-|Favorite |![green myw](media/end-user-features/green-mwo.png)| ![green dot](media/end-user-license/power-bi-green-dot.png)|
-|Full screen and focus modes |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|Global search |![green dot](media/end-user-license/power-bi-green-dot.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
-|Insights on tiles |![green myw](media/end-user-features/green-mwo.png)     | ![green dot](media/end-user-license/power-bi-green-dot.png)*|
-|  Q&A: use on dashboard  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
+|Export tile to .csv |![green myw](media/end-user-features/green-mwo.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
+|Favorite |![green myw](media/end-user-features/green-mwo.png)| ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
+|Full screen and focus modes |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|Global search |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
+|Insights on tiles |![green myw](media/end-user-features/green-mwo.png)     | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*|
+|  Q&A: use on dashboard  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
 |Q&A: add featured and saved questions | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Q&A: review asked questions | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |  
 |Pin tiles from Q&A or reports | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) | 
-|Print |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
-|Refresh | ![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) | 
+|Print |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
+|Refresh | ![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) | 
 |Reshare | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
-|Subscribe yourself |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)*  |
+|Subscribe yourself |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*  |
 |Subscribe others | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
-|View dashboards that have been embedded into PowerApps or SharePoint pages | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
+|View dashboards that have been embedded into PowerApps or SharePoint pages | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  | 
 |**Datasets**
 |  Add, delete, edit  |  ![green myw](media/end-user-features/green-mwo.png)  |  ![orange x](media/end-user-features/orange-x.png) |   
 | Create a report in another workspace based on a dataset in this workspace | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |      
 |  Insights on datasets  | ![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |Schedule refresh |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)|
-|Analyze in Excel |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)*|
+|Analyze in Excel |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*|
 |Create a report |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)|
 |Create a paginated report |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)|
 |Share |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
@@ -128,51 +130,51 @@ The second column represents a free user working with content in a workspace tha
 |Save a copy |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
 |Create from template |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |**Reports**
-|Receive reports from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
-| Analyze report in Excel  |![green myw](media/end-user-features/green-mwo.png)*  |![green dot](media/end-user-license/power-bi-green-dot.png)*  | 
-| View bookmarks created by others, and add your own bookmarks  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
-| View and respond to comments from others: add new comments  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
-|Change display dimensions   | ![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
+|Receive reports from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  | 
+| Analyze report in Excel  |![green myw](media/end-user-features/green-mwo.png)*  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*  | 
+| View bookmarks created by others, and add your own bookmarks  | ![orange x](media/end-user-features/orange-x.png)|![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+| View and respond to comments from others: add new comments  | ![orange x](media/end-user-features/orange-x.png)|![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+|Change display dimensions   | ![green myw](media/end-user-features/green-mwo.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  | 
 | Save a copy |![orange x](media/end-user-features/orange-x.png) |![orange x](media/end-user-features/orange-x.png)  
 |Copy visual as an image* |
-| Cross-highlight and cross-filter report visuals   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
-|  Drill   |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |
-| Drillthrough |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
+| Cross-highlight and cross-filter report visuals   |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+|  Drill   |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+| Drillthrough |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
 |  Embed (publish to web, public) | ![green myw](media/end-user-features/green-mwo.png)* |![orange x](media/end-user-features/orange-x.png) |  
-|  Export summarized data from report visuals*  |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|Export underlying data from report visuals* | ![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  | 
-|  Favorite the report  |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|  Filters: change types  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
-|  Filters: interact   |![green myw](media/end-user-features/green-mwo.png)|![green dot](media/end-user-license/power-bi-green-dot.png) |
-|  Filters: persistent  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
-| Search on the filter pane |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
-| Full screen and focus modes   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|  Insights on reports<sup>1</sup>  | ![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)| 
+|  Export summarized data from report visuals*  |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|Export underlying data from report visuals* | ![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  | 
+|  Favorite the report  |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|  Filters: change types  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
+|  Filters: interact   |![green myw](media/end-user-features/green-mwo.png)|![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|  Filters: persistent  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
+| Search on the filter pane |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
+| Full screen and focus modes   |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|  Insights on reports<sup>1</sup>  | ![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)| 
 | Lineage view  |![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
-|Export to PDF* |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
-|Performance Inspector |![green myw](media/end-user-features/green-mwo.png)|![green dot](media/end-user-license/power-bi-green-dot.png) |
-| Export to PowerPoint*   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
+|Export to PDF* |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+|Performance Inspector |![green myw](media/end-user-features/green-mwo.png)|![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+| Export to PowerPoint*   |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
 |  Promote content to Home  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
-| Print report pages* |![green dot](media/end-user-license/power-bi-green-dot.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|Interact with Q&A visual |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|QR Code |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|  Refresh  |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
+| Print report pages* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|Interact with Q&A visual |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|QR Code |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|  Refresh  |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
 |  Share content with external users  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 | Share: allow others to reshare items | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
-|Show as table (show data)|![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
+|Show as table (show data)|![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
 |  Slicers: add or delete  |![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
-| Interact with slicers |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|  Sort report visuals  |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|  Subscribe yourself to reports* |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
+| Interact with slicers |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|  Sort report visuals  |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|  Subscribe yourself to reports* |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
 |  Subscribe others to reports  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
-|  View related |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|View reports that have been embedded into PowerApps or SharePoint pages | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  |
-|  Visuals: change types in reports  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
+|  View related |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+|View reports that have been embedded into PowerApps or SharePoint pages | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+|  Visuals: change types in reports  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
 |  Change visual interactions  |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png) |
 |  Visuals: add new  |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png) |
 |  Visuals: add new fields  |![green myw](media/end-user-features/green-mwo.png)   |![orange x](media/end-user-features/orange-x.png) |
-|Visuals: change type |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png) |
-| Visuals: hover to reveal details and tooltips  |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png) |
+|Visuals: change type |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+| Visuals: hover to reveal details and tooltips  |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
 
 ## Related content
 
