@@ -27,12 +27,6 @@ landingContent:
         links:
           - text: What is Power BI?
             url: power-bi-overview.md
-          - text: What is Power BI Desktop?
-            url: desktop-what-is-desktop.md
-          - text: What is the Power BI service?
-            url: power-bi-service-overview.md
-          - text: Comparing Power BI Desktop and the service
-            url: service-service-vs-desktop.md
 
   # Card (optional)
   - title: What's new?
@@ -42,15 +36,6 @@ landingContent:
           - text: What's new in Power BI?
             url: desktop-latest-update.md
 
-  # Card (optional)
-  - title: Get started with Learn
-    linkLists:
-      - linkListType: learn
-        links:
-          - text: Create and use analytics reports
-            url: /training/paths/create-use-analytics-reports-power-bi/
-          - text: Get data with Power BI Desktop
-            url: /training/modules/get-data-power-bi/?tutorial-step=1
   # Card (optional)
   - title: Licensing
     linkLists:
