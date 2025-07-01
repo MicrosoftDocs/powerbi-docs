@@ -161,6 +161,8 @@
         href: desktop-measures.md
       - name: "Import and display KPIs"
         href: desktop-import-and-display-kpis.md
+      - name: "Set and use date tables"
+        href: desktop-date-tables.md
       - name: "Apply auto date/time"
         href: desktop-auto-date-time.md   
   - name: External tools
