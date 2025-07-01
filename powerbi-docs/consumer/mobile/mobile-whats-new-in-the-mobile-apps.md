@@ -23,7 +23,7 @@ For related "What's New" information, see:
 
 ### Home in the Power BI mobile app has been reorganized
 
-The **Home** screen in the Power BI mobile app was redesigned to help you find your key content faster. Recent and frequent items now appear together in a single, unified strip, making it easier to spot what matters most. We're also introducing a new **Favorites** strip for quick, one-tap access to your most-used items. Combined with refreshed navigation buttons at the bottom of the screen, these updates make getting around the app simpler and more intuitive.
+The **Home** screen in the Power BI mobile app was redesigned to help you find your key content faster. Recent and frequent items now appear together in a single, unified strip, making it easier to spot what matters most. We're also introducing a new **Favorites** strip for quick, one-tap access to your favorited items. Combined with refreshed navigation buttons at the bottom of the screen, these updates make getting around the app simpler and more intuitive.
 
 :::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-home.png" border="false" alt-text="Screenshot of the Power BI mobile app home page.":::
 
