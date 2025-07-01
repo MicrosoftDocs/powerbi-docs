@@ -7,7 +7,7 @@ ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/14/2025
+ms.date: 07/01/2025
 ---
 
 # Change log for Power BI Report Server
@@ -20,7 +20,7 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
 
 You must use Microsoft Report Builder to create paginated reports in Power BI Report Server. For information about Microsoft Report Builder, see [Install Microsoft Report Builder - Power BI Report Server](https://learn.microsoft.com/power-bi/report-server/install-report-builder).
 
-=======
+
 ## May 2025
 
 ### Power BI Report Server
@@ -51,7 +51,6 @@ Note: This is the last release of Power BI Desktop for RS that will include a 32
 
 - *Version: 2.143.954.0  (May 2025), Released: May 22, 2025*
      - Support for May 2025 Power BI Report Server.
-
 
 ## January 2025
 
