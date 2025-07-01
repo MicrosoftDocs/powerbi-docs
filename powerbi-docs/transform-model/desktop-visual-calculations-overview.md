@@ -24,7 +24,7 @@ Here's an example visual calculation that defines a running sum for **Sales Amou
 Running sum = RUNNINGSUM([Sales Amount])
 ```
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-01.png" alt-text="Screenshot of DAX for visual calculations":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-01.png" alt-text="Screenshot of DAX for visual calculations.":::
 
 A calculation can refer to any data in the visual including columns, measures, or other visual calculations. This ability removes the complexity of the semantic model and simplifies the process of writing DAX. You can use visual calculations to complete common business calculations such as running sums or moving averages.
 
@@ -67,7 +67,7 @@ The visual calculations window opens in **Edit** mode. The **Edit** mode screen 
 * A **formula bar** where you can add visual calculations
 * The **visual matrix** which shows the data in the visual, and displays the results of visual calculations as you add them. Any styling or theming you apply to your visual isn't applied to the visual matrix.
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen" lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png":::
 
 To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by typing:
 
@@ -81,11 +81,11 @@ By default, most visual calculations on a visual are evaluated row-by-row, like 
 
 As you add visual calculations, they're shown in the list of fields on the visual:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-05.png" alt-text="Screenshot of visual calculations being displayed in the list of fields on the visual":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-05.png" alt-text="Screenshot of visual calculations being displayed in the list of fields on the visual.":::
 
 Additionally, the visual calculation is shown on the visual:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-06.png" alt-text="Screenshot of visual calculations being displayed on the visual":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-06.png" alt-text="Screenshot of visual calculations being displayed on the visual.":::
 
 You can use many existing DAX functions in visual calculations. Functions specific to visual calculations are also available. Because visual calculations work within the confines of the visual matrix, functions that rely on model relationships such as [USERELATIONSHIP](/dax/userelationship-function-dax), [RELATED](/dax/related-function-dax) or [RELATEDTABLE](/dax/relatedtable-function-dax) can't be used.
 
@@ -101,7 +101,7 @@ Hiding fields doesn't remove them from the visual or from the visual matrix, so 
 
 Visual calculations include templates to make it easier to write common calculations. You can find templates by selecting the template button and choosing a template to work with:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-08.png" alt-text="Screenshot of using templates for visual calculations":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-08.png" alt-text="Screenshot of using templates for visual calculations.":::
 
 You can also create a templated visual calculation from the ribbon by clicking the bottom part of the **New Visual Calculation** button.
 
@@ -124,7 +124,7 @@ Selecting a template inserts the template in the formula bar. You can use these 
 ## Parameter pickers
 Parameter pickers make it easy to select values for parameters in visual calculations functions. For example, here we loaded the **Look up a value with totals** template:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png" alt-text="Screenshot showing the parameter picker" lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png" alt-text="Screenshot showing the parameter picker." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png":::
 
 You can also activate the parameter pickers using the **CTRL+SPACE** keyboard shortcut.
 
@@ -265,20 +265,20 @@ Visual calculations also introduce a set of functions specific to visual calcula
 
 You can format a visual calculation using data types and formatting options. You can also set a [custom visual level format string](../create-reports/desktop-custom-format-strings.md). Use the **Data format** options in the General section of the formatting pane for your visual to set the format:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage.":::
 ## Example 1: Using visual calculation to return a Hex color code for conditional formatting
 
 Step 1: Select the visual you would like to use the conditional formatting in:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-01.png" alt-text="Screenshot of a table visual with two columns Value and Progress":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-01.png" alt-text="Screenshot of a table visual with two columns Value and Progress.":::
 
 Step 2: Select the **New visual calculation** button under the **Home** Tab:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-02.png" alt-text="Screenshot of the button to create a visual calculation in the Power BI Home Tab":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-02.png" alt-text="Screenshot of the button to create a visual calculation in the Power BI Home Tab.":::
 
 Step 3: Write your visual calculation. Here's an IF statement to return either green or red based on a measure being more than .5:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-03.png" alt-text="Screenshot of DAX code listed out in the visual calculation editor":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-03.png" alt-text="Screenshot of DAX code listed out in the visual calculation editor.":::
 
 ```dax
 Conditional Hex Code = IF ( [Progress] > .5, "#5BA300", "#E91C1C" )
@@ -294,11 +294,11 @@ Step 5: Expand the **Data Format** section, select your visual calculation, and 
 
 Step 6: Before exiting the visual calculation editor select the hide icon next to the visual calculation in the build section to hide it:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-06.png" alt-text="Screenshot of the build pane showing how to select a button to hide the visual calculation you're creating":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-06.png" alt-text="Screenshot of the build pane showing how to select a button to hide the visual calculation you're creating.":::
 
 Step 7: Use it in a conditional formatting section: 
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-07.png" alt-text="Screenshot of a conditional formatting window where the visual calculation is selected":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-07.png" alt-text="Screenshot of a conditional formatting window where the visual calculation is selected.":::
 
 Step 8: Exit the visual calculation editor by clicking the **Back to report** button:
 
@@ -306,7 +306,7 @@ Step 8: Exit the visual calculation editor by clicking the **Back to report** bu
 
 Step 9: Enjoy your conditional formatted visual!
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-09.png" alt-text="Screenshot of the table from the first screenshot now with conditional formatting applied":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-09.png" alt-text="Screenshot of the table from the first screenshot now with conditional formatting applied.":::
 
 ## Considerations and limitations
 
