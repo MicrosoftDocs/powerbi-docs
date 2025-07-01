@@ -113,7 +113,7 @@ Each profile needs to:
 * [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
 
   ```rest
-  POST https://api.powerbi.com/v1.0/myorg/groups/f313e682-c86b-422c-a3e2-b1a05426c4a3/AssignToCapacity HTTP/1.1
+  POST https://api.powerbi.com/v1.0/myorg/groups/aaaabbbb-0000-cccc-1111-dddd2222eeee/AssignToCapacity HTTP/1.1
   Authorization: Bearer eyJ0eXAiOiJK…wNkZUiIsg
   Content-Type: application/json; charset=utf-8
   X-PowerBI-Profile-Id: a4df5235-6f18-4141-9e99-0c3512f41306
@@ -130,7 +130,7 @@ Read more about [Power BI workspaces](/power-bi/consumer/end-user-workspaces).
 Use [Power BI Desktop](../../transform-model/desktop-query-overview.md) to prepare reports that are connected to the customer's data or sample data. Then, you can use the [Import API](/rest/api/power-bi/imports) to import the content into the created workspace.
 
 ```rest
-POST https://api.powerbi.com/v1.0/myorg/groups/f313e682-c86b-422c-a3e2-b1a05426c4a3/imports?datasetDisplayName=ContosoSales HTTP/1.1
+POST https://api.powerbi.com/v1.0/myorg/groups/aaaabbbb-0000-cccc-1111-dddd2222eeee/imports?datasetDisplayName=ContosoSales HTTP/1.1
 Authorization: Bearer eyJ...kZUiIsg
 Content-Type: multipart/form-data; boundary="8b071895-b380-4769-9c62-7e586d717ed7"
 X-PowerBI-Profile-Id: a4df5235-6f18-4141-9e99-0c3512f41306
