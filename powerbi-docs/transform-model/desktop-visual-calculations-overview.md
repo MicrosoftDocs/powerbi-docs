@@ -268,7 +268,7 @@ You can format a visual calculation using data types and formatting options. You
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage":::
 ## Example 1: Using visual calculation to return a Hex color code for conditional formatting
 
-Step 1: Select The visual you would like to use the conditional formatting in:
+Step 1: Select the visual you would like to use the conditional formatting in:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-01.png" alt-text="Screenshot of a table visual with two columns Value and Progress":::
 
