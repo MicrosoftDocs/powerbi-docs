@@ -33,13 +33,11 @@ Here are some articles explaining other ways to use drillthrough.
 
     For example, suppose you want to provide drillthrough for manufacturers. You might create a drillthrough target page with visuals that show total sales, total units shipped, sales by category, and so on. That way, when you drill through to that page, the visuals are specific to the manufacturer you selected.
 
-2. On the **Data** pane for that drillthrough target page, right click on the field that you want.
-3. Select **Add to drill through**
-4. On the **Format** pane, expand the fields under the **Page information** section.
+2. On the **Visualizations** pane for that drillthrough target page, select **Build visual**. Then, under **Drill through**:
 
     - Set **Keep all filters** to **On**.
-    - In **Drill through from**, add the field that you want by dragging it from the Data pane.
-    - In the expanded section for the added field, under **Drill through when**, select **Used as category**.
+    - In **Drill through**, add the field that you want to act as the filter for the drill through by dragging it from the Data pane.
+    - In the expanded section for the added field, under **Drill through**, select **Used as category**.
 
 :::image type="content" source="media/desktop-drillthrough/drillthrough-add-fields-here-update.png" alt-text="Screenshot of drillthrough option in the Data pane's Build visual tab. Version 2.145.631.0":::
 
