@@ -138,7 +138,7 @@ With some tools, such as SQL Server Profiler, you must specify an *Initial Catal
 
 To work around, in addition to the workspace name specify the ObjectIDGuid. You can copy the ObjectIDGuid from the workspace objectID in the URL. Append the objectID to the connection URL. For example:
 
-`powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830`.
+`powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - aaaabbbb-0000-cccc-1111-dddd2222eeee`.
 
 ### Duplicate semantic model name
 
