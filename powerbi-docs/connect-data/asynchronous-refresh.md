@@ -68,7 +68,7 @@ To do a refresh, use the POST verb on the /refreshes collection to add a new ref
 The following code shows a sample request:
 
 ```http
-POST https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes
+POST https://api.powerbi.com/v1.0/myorg/groups/aaaabbbb-0000-cccc-1111-dddd2222eeee/datasets/bbbbcccc-1111-dddd-2222-eeee3333ffff/refreshes
 ```
 
 The request body might resemble the following example:
@@ -117,11 +117,11 @@ To do an enhanced refresh operation, you must specify one or more parameters in 
 202 Accepted
 ```
 
-The response also includes a `Location` response-header field to point the caller to the refresh operation that was created and accepted. The `Location` is the location of the new resource the request created, which includes the `requestId` that some enhanced refresh operations require. For example, in the following response, `requestId` is the last identifier in the response `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
+The response also includes a `Location` response-header field to point the caller to the refresh operation that was created and accepted. The `Location` is the location of the new resource the request created, which includes the `requestId` that some enhanced refresh operations require. For example, in the following response, `requestId` is the last identifier in the response `ccccdddd-2222-eeee-3333-ffff4444aaaa`.
 
 ```json
-x-ms-request-id: 87f31ef7-1e3a-4006-9b0b-191693e79e9e
-Location: https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes/87f31ef7-1e3a-4006-9b0b-191693e79e9e
+x-ms-request-id: ccccdddd-2222-eeee-3333-ffff4444aaaa
+Location: https://api.powerbi.com/v1.0/myorg/groups/aaaabbbb-0000-cccc-1111-dddd2222eeee/datasets/bbbbcccc-1111-dddd-2222-eeee3333ffff/refreshes/ccccdddd-2222-eeee-3333-ffff4444aaaa
 ```
 
 ## GET /refreshes
@@ -133,7 +133,7 @@ The response body might look like the following example:
 ```json
 [
     {
-        "requestId": "1344a272-7893-4afa-a4b3-3fb87222fdac",
+        "requestId": "ddddeeee-3333-ffff-4444-aaaa5555bbbb",
         "refreshType": "ViaEnhancedApi",
         "startTime": "2020-12-07T02:06:57.1838734Z",
         "endTime": "2020-12-07T02:07:00.4929675Z",
@@ -216,7 +216,7 @@ To cancel an in-progress enhanced refresh operation, use the DELETE verb on the 
 For example,
 
 ```http
-DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes/1344a272-7893-4afa-a4b3-3fb87222fdac
+DELETE https://api.powerbi.com/v1.0/myorg/groups/aaaabbbb-0000-cccc-1111-dddd2222eeee/datasets/bbbbcccc-1111-dddd-2222-eeee3333ffff/refreshes/ddddeeee-3333-ffff-4444-aaaa5555bbbb
 ```
 
 ## Considerations and limitations
