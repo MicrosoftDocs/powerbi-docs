@@ -18,7 +18,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 See [Download Power BI Report Server](download-powerbi-report-server.md) for more information about downloading and installing Power BI Report Server.
 
-You must use Microsoft Report Builder to create paginated reports in Power BI Report Server. For information about Microsoft Report Builder, see [Install Microsoft Report Builder - Power BI Report Server](https://learn.microsoft.com/power-bi/report-server/install-report-builder).
+You must use Microsoft Report Builder to create paginated reports in Power BI Report Server. For information about Microsoft Report Builder, see [Install Microsoft Report Builder - Power BI Report Server](install-report-builder.md).
 
 
 ## May 2025
