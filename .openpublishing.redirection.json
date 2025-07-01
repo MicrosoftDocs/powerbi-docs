@@ -6520,7 +6520,17 @@
             "source_path": "powerbi-docs/fundamentals/service-experience-changes.md",
             "redirect_url": "/power-bi/fundamentals/power-bi-overview",
             "redirect_document_id": false
-        }      
+        }, 
+        {
+            "source_path": "powerbi-docs/create-reports/copilot-create-copilots.md",
+            "redirect_url": "/power-bi/create-reports/copilot-create-narrative",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/create-reports/copilot-narrative-visual-embed-power-bi.md",
+            "redirect_url": "/power-bi/create-reports/copilot-create-narrative",
+            "redirect_document_id": false
+        }   
   
     ]
 }

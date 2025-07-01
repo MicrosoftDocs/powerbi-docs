@@ -87,7 +87,7 @@ Additionally, the visual calculation is shown on the visual:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-06.png" alt-text="Screenshot of visual calculations being displayed on the visual.":::
 
-You can use many existing DAX functions in visual calculations. Functions specific to visual calculations are also available. Since visual calculations work within the confines of the visual matrix, functions that rely on model relationships such as [USERELATIONSHIP](/dax/userelationship-function-dax), [RELATED](/dax/related-function-dax) or [RELATEDTABLE](/dax/relatedtable-function-dax) can't be used.
+You can use many existing DAX functions in visual calculations. Functions specific to visual calculations are also available. Because visual calculations work within the confines of the visual matrix, functions that rely on model relationships such as [USERELATIONSHIP](/dax/userelationship-function-dax), [RELATED](/dax/related-function-dax) or [RELATEDTABLE](/dax/relatedtable-function-dax) can't be used.
 
 ## Hiding fields from the visual
 
@@ -122,7 +122,7 @@ The following templates are available:
 Selecting a template inserts the template in the formula bar. You can use these templates as starting points. You can also add your own expressions without relying on templates.
 
 ## Parameter pickers
-Parameter pickers make it easy to select values for parameters in visual calculations functions.  For example, here we loaded the **Look up a value with totals** template:
+Parameter pickers make it easy to select values for parameters in visual calculations functions. For example, here we loaded the **Look up a value with totals** template:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png" alt-text="Screenshot showing the parameter picker." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png":::
 
@@ -141,7 +141,7 @@ Many functions have an optional **:::no-loc text="Axis":::** parameter, which ca
 | :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-13.png" border="false":::  | :::no-loc text="COLUMNS ROWS"::: | Calculates horizontally across columns from left to right, continuing row by row from top to bottom. |
 
 > [!NOTE]
-> If you specify an axis that is not present on the visual, that axis is ignored.
+> If you specify an axis that isn't present on the visual, that axis is ignored.
 
 ## :::no-loc text="Reset":::
 
@@ -157,13 +157,13 @@ The :::no-loc text="Reset"::: behavior operates in two different modes: [absolut
 
 When using integer values for the parameter or their equivalents :::no-loc text="NONE":::, :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, you can choose between these two modes via the integer’s signal: positive values perform a reset in absolute mode, and negative values perform a reset in relative mode (and zero does no reset at all, the default behavior).
 
-If you specify a column reference you are also operating in absolute mode. These values determine how the target column is partitioned and therefore if it resets. These two modes are described in detail below:
+If you specify a column reference, you're also operating in absolute mode. These values determine how the target column is partitioned and therefore if it resets. These two modes are described in the following section:
 
 ### Absolute mode
 This mode indicates that the calculation should be partitioned by the target column and all those above it, and this applies at every level in the calculation. At levels above the target (where the target column isn’t present, and possibly others), the calculation is partitioned by the remaining columns available.
-The positive integer value identifies the target column starting from the top (the top column is 1, the next is 2, etc). It goes up to N (the number of columns in the hierarchy), and any higher values are trimmed down. Alternatively, one can also specify the column directly.
+The positive integer value identifies the target column starting from the top (the top column is 1, the next is 2, etc.). It goes up to N (the number of columns in the hierarchy), and any higher values are trimmed down. Alternatively, one can also specify the column directly.
 
-For example, consider a visual calculation with these hierarchy levels: Year, Quarter, Month and Day. The table below shows how the calculation will be partitioned at each level depending on the value of :::no-loc text="Reset"::::
+For example, consider a visual calculation with these hierarchy levels: Year, Quarter, Month, and Day. The following table shows how the calculation will be partitioned at each level depending on the value of :::no-loc text="Reset"::::
 
 |Level / value |:::no-loc text="Reset"::: = 1 or Year|:::no-loc text="Reset"::: = 2 or Quarter|:::no-loc text="Reset"::: = 3 or Month|:::no-loc text="Reset"::: = 4 or Day|
 |--|--|--|--|--|
@@ -188,8 +188,8 @@ Again, consider the visual calculation described earlier. The table below shows 
 
 ### Synonyms
 :::no-loc text="Reset"::: also provides the following synonyms:
-* **:::no-loc text="NONE":::** is the default value. It does not reset the calculation and is equivalent to 0.
-* **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is equivalant to 1.
+* **:::no-loc text="NONE":::** is the default value. It doesn't reset the calculation and is equivalent to 0.
+* **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is Equivalent to 1.
 * **:::no-loc text="LOWESTPARENT":::** performs a relative reset by the immediate parent and is equivalent to -1.
 
 ### Examples of using :::no-loc text="Reset":::
@@ -207,7 +207,7 @@ RUNNINGSUM([Sales Amount], 1)
 RUNNINGSUM([Sales Amount], [Year])
 ```
 
-In contrast, the following visual calculations both return the sum of *Sales Amount* that starts from 0 for every immediate parent, which of course depends on which level the calculation is evaluated on (see [relative mode](#relative-mode)).
+In contrast, the following visual calculations both return the sum of *Sales Amount* that starts from 0 for every immediate parent, which depends on which level the calculation is evaluated on (see [relative mode](#relative-mode)).
 
 ```dax
 RUNNINGSUM([Sales Amount], LOWESTPARENT)
@@ -266,6 +266,47 @@ Visual calculations also introduce a set of functions specific to visual calcula
 You can format a visual calculation using data types and formatting options. You can also set a [custom visual level format string](../create-reports/desktop-custom-format-strings.md). Use the **Data format** options in the General section of the formatting pane for your visual to set the format:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage.":::
+## Example 1: Using visual calculation to return a Hex color code for conditional formatting
+
+Step 1: Select the visual you would like to use the conditional formatting in:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-01.png" alt-text="Screenshot of a table visual with two columns Value and Progress.":::
+
+Step 2: Select the **New visual calculation** button under the **Home** Tab:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-02.png" alt-text="Screenshot of the button to create a visual calculation in the Power BI Home Tab.":::
+
+Step 3: Write your visual calculation. Here's an IF statement to return either green or red based on a measure being more than .5:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-03.png" alt-text="Screenshot of DAX code listed out in the visual calculation editor.":::
+
+```dax
+Conditional Hex Code = IF ( [Progress] > .5, "#5BA300", "#E91C1C" )
+```
+
+Step 4: Expand the Formatting pane and select **Properties**:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-04.png" alt-text="Screenshot of the formatting pane showing that you should select properties.":::
+
+Step 5: Expand the **Data Format** section, select your visual calculation, and set both the Data Type and format to **Text**:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-05.png" alt-text="Screenshot of the formatting pane showing you should apply a data type to your visual calculation of text.":::
+
+Step 6: Before exiting the visual calculation editor select the hide icon next to the visual calculation in the build section to hide it:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-06.png" alt-text="Screenshot of the build pane showing how to select a button to hide the visual calculation you're creating.":::
+
+Step 7: Use it in a conditional formatting section: 
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-07.png" alt-text="Screenshot of a conditional formatting window where the visual calculation is selected.":::
+
+Step 8: Exit the visual calculation editor by clicking the **Back to report** button:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-08.png" alt-text="Screenshot of the button you push to exit out of the visual calculation editor. Text is: Back to report.":::
+
+Step 9: Enjoy your conditional formatted visual!
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-hex-example-09.png" alt-text="Screenshot of the table from the first screenshot now with conditional formatting applied.":::
 
 ## Considerations and limitations
 
@@ -293,7 +334,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * [Personalization](../consumer/end-user-personalize-visuals.md) of visual calculations or hidden fields isn't available.
 * You can't pin a visual that uses visual calculations or hidden fields to [a dashboard](../create-reports/service-dashboards.md).
 * You can't use the [Publish to web](../collaborate-share/service-publish-to-web.md) functionality with reports that use visual calculations or hidden fields.
-* When exporting data from visuals, visual calculation results are not included in the [underlying data](../visuals/power-bi-visualization-export-data.md) export. Hidden fields are never included in the export, except when exporting the [underlying data](../visuals/power-bi-visualization-export-data.md).
+* When exporting data from visuals, visual calculation results aren't included in the [underlying data](../visuals/power-bi-visualization-export-data.md) export. Hidden fields are never included in the export, except when exporting the [underlying data](../visuals/power-bi-visualization-export-data.md).
 * You can't use the *see records* drill-through functionality with visuals that use visual calculations or hidden fields.
 * You can't set [data categories](desktop-data-categorization.md) on visual calculations.
 * You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
@@ -305,9 +346,9 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
 * You can't set a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) on a visual calculation nor use a visual calculation as a dynamic format string for a field or measure.
 
-## Next steps
+## Related content
 
-The following articles may be useful when learning and using visual calculations:
+For more information on using visual calculations, see the following resources:
 
 * [Create visual calculations in Power BI Desktop (Training module)](/training/modules/power-bi-visual-calculations/)
 * [Using calculations options in Power BI Desktop](desktop-calculations-options.md)
