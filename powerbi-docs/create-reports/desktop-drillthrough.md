@@ -20,7 +20,7 @@ With *drillthrough* in Power BI reports, you can create a destination *target* p
 
 Want to investigate this report yourself? Open this [GitHub repo for Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix). Then select **Download** to download the Sales & Returns Sample .pbix file to your computer. This visual is on the Returns page of the report.
 
-![Screenshot of Using drillthrough.](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
+:::image type="content" source="media/desktop-drillthrough/power-bi-drill-through-right-click.png" alt-text="Screenshot of Using drillthrough.":::
 
 Here are some articles explaining other ways to use drillthrough.
 
@@ -46,7 +46,7 @@ Here are some articles explaining other ways to use drillthrough.
 
 When you add a field to the **Drill through** well, Power BI automatically creates a *back* button visual. That visual becomes a button in published reports. Users who view your report in the Power BI service use this button on the target page to get back to the original source report page from which they came.
 
-![Screenshot of Drillthrough image.](media/desktop-drillthrough/drillthrough-03.png)
+:::image type="content" source="media/desktop-drillthrough/drillthrough-03.png" alt-text="Screenshot of Drillthrough image.":::
 
 ## Use your own image for a back button
 
@@ -58,11 +58,11 @@ To use your own image for a back button, follow these steps:
 
 2. Select your new image on the drillthrough target page. Under the **Format image** pane, set the **Action** slider to **On**, and  then set the **Type** to **Back**. Your image now functions as a back button.
 
-    ![Screenshot of Load image and set Type to Back.](media/desktop-drillthrough/drillthrough-create-back-button.png)
+   :::image type="content" source="media/desktop-drillthrough/drillthrough-create-back-button.png" alt-text="Screenshot of Load image and set Type to Back.":::
 
 Now users can right-click a data point on the other source pages in your report and get a context menu that supports drillthrough to that target page.
 
-![Screenshot of Drillthrough menu.](media/desktop-drillthrough/drillthrough-04.png)
+:::image type="content" source="media/desktop-drillthrough/drillthrough-04.png" alt-text="Screenshot of Drillthrough menu.":::
 
 When report readers choose to drill through, the target page is filtered to show information about the data point they right-clicked on. For example, suppose you right-click a data point about Contoso, a manufacturer, and select **Drill through**. The drillthrough page they go to is filtered to Contoso.
 
@@ -74,7 +74,7 @@ To keep all applied filters, go to the destination page. In the **Visualizations
 
 When you then drill through on a visual on a source page, the temporary filters that you applied to the source visual are also applied to the drillthrough target page. On the **Filters** pane of the published report, those transient filters are shown in italics.
 
-![Screenshot of Transient filters in italics.](media/desktop-drillthrough/drillthrough-temporary-filters-italics.png)
+:::image type="content" source="media/desktop-drillthrough/drillthrough-temporary-filters-italics.png" alt-text="Screenshot of Transient filters in italics.":::
 
 Although you could do this with tooltips pages, that would be an odd experience because the tooltip wouldn't appear to be working properly. For this reason, we don't recommend doing so with tooltips.
 
