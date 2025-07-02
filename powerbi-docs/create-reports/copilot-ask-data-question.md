@@ -64,7 +64,6 @@ You can also verify the DAX query directly from the expanded view or launch DAX 
 
 :::image type="content" source="media/copilot-ask-data-questions/data-question-answers-01.png" alt-text="Screenshot of copilot answering a question by creating a DAX query.":::
 
-Ad hoc calculations currently require using **Edit Mode** of reports using Copilot.
 
 ## Unsupported question types
 
