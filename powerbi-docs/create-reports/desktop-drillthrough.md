@@ -20,7 +20,7 @@ With *drillthrough* in Power BI reports, you can create a destination *target* p
 
 Want to investigate this report yourself? Open this [GitHub repo for Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix). Then select **Download** to download the Sales & Returns Sample .pbix file to your computer. This visual is on the Returns page of the report.
 
-    :::image type="content" source="media/desktop-drillthrough/power-bi-drill-through-right-click.png" alt-text="Screenshot of bar charts for product and store sales with a context meny showing 'Drill through' option highlighted, revealing sub-options 'Return Rate' and 'Market Basket Analysis'. 'Market Basket Analysis is highlighted." lightbox="media/desktop-drillthrough/power-bi-drill-through-right-click.png":::
+:::image type="content" source="media/desktop-drillthrough/power-bi-drill-through-right-click.png" alt-text="Screenshot of bar charts for product and store sales with a context meny showing 'Drill through' option highlighted, revealing sub-options 'Return Rate' and 'Market Basket Analysis'. 'Market Basket Analysis is highlighted." lightbox="media/desktop-drillthrough/power-bi-drill-through-right-click.png":::
 
 Here are some articles explaining other ways to use drillthrough.
 
@@ -39,12 +39,12 @@ Here are some articles explaining other ways to use drillthrough.
     - In **Drill through**, add the field that you want to act as the filter for the drill through by dragging it from the Data pane.
     - In the expanded section for the added field, under **Allow drill through when:**, select **Used as category**.
 
-    :::image type="content" source="media/desktop-drillthrough/drillthrough-add-fields-here-update.png" alt-text="Screenshot of Visualizations pane with 'Build visual' tab selected and highlighted. Drill through section is highlighted, showing Cross-report setting off and keep all filters setting on. The added field is expanded with the 'Allow drill through when:' set to 'Used as category'. Power BI version 2.145.631.0" lightbox="media/desktop-drillthrough/drillthrough-add-fields-here-update.png":::
+:::image type="content" source="media/desktop-drillthrough/drillthrough-add-fields-here-update.png" alt-text="Screenshot of Visualizations pane with 'Build visual' tab selected and highlighted. Drill through section is highlighted, showing Cross-report setting off and keep all filters setting on. The added field is expanded with the 'Allow drill through when:' set to 'Used as category'. Power BI version 2.145.631.0" lightbox="media/desktop-drillthrough/drillthrough-add-fields-here-update.png":::
 
 
 When you add a field to the **Drill through** well, Power BI automatically creates a *back* button visual. That visual becomes a button in published reports. Users who view your report in the Power BI service use this button on the target page to get back to the original source report page from which they came.
 
-    :::image type="content" source="media/desktop-drillthrough/drillthrough-03.png" alt-text="Screenshot of drillthrough back button visual. Back button visual is a grey arrow pointing left with a grey circle around it." lightbox="media/desktop-drillthrough/drillthrough-03.png":::
+:::image type="content" source="media/desktop-drillthrough/drillthrough-03.png" alt-text="Screenshot of drillthrough back button visual. Back button visual is a grey arrow pointing left with a grey circle around it." lightbox="media/desktop-drillthrough/drillthrough-03.png":::
 
 ## Use your own image for a back button
 
@@ -56,11 +56,11 @@ To use your own image for a back button, follow these steps:
 
 2. Select your new image on the drillthrough target page. Under the **Format image** pane, set the **Action** slider to **On**, and  then set the **Type** to **Back**. Your image now functions as a back button.
 
-   :::image type="content" source="media/desktop-drillthrough/drillthrough-create-back-button-update.png" alt-text="Screenshot of a selected image and 'Format image' pane. The 'Format image' subsection 'Action' is highlighted and set to on. 'Type' in this subsection is set to 'Back'. lightbox="media/desktop-drillthrough/drillthrough-create-back-button-update.png":::
+:::image type="content" source="media/desktop-drillthrough/drillthrough-create-back-button-update.png" alt-text="Screenshot of a selected image and 'Format image' pane. The 'Format image' subsection 'Action' is highlighted and set to on. 'Type' in this subsection is set to 'Back'. lightbox="media/desktop-drillthrough/drillthrough-create-back-button-update.png":::
 
 Now users can right-click a data point on the other source pages in your report and get a context menu that supports drillthrough to that target page.
 
-    :::image type="content" source="media/desktop-drillthrough/drillthrough-04-update.png" alt-text="Screenshot of Drillthrough menu. 'Drill through' is selected, displaying options 'Return Rate' and 'Market Basket Analysis'" lightbox="media/desktop-drillthrough/drillthrough-04-update.png":::
+:::image type="content" source="media/desktop-drillthrough/drillthrough-04-update.png" alt-text="Screenshot of Drillthrough menu. 'Drill through' is selected, displaying options 'Return Rate' and 'Market Basket Analysis'" lightbox="media/desktop-drillthrough/drillthrough-04-update.png":::
 
 When report readers choose to drill through, the target page is filtered to show information about the data point they right-clicked on. For example, suppose you right-click a data point about Contoso, a manufacturer, and select **Drill through**. The drillthrough page they go to is filtered to Contoso.
 
@@ -72,7 +72,7 @@ To keep all applied filters, go to the destination page. In the **Visualizations
 
 When you then drill through on a visual on a source page, the temporary filters that you applied to the source visual are also applied to the drillthrough target page. On the **Filters** pane of the published report, those transient filters are shown in italics.
 
-    :::image type="content" source="media/desktop-drillthrough/drillthrough-temporary-filters-italics.png" alt-text="Screenshot of 'Filters' pane. Under the 'Filters on this page' subsection tranisent filters 'Product' and 'Status' are in italics." lightbox="media/desktop-drillthrough/drillthrough-temporary-filters-italics.png":::
+:::image type="content" source="media/desktop-drillthrough/drillthrough-temporary-filters-italics.png" alt-text="Screenshot of 'Filters' pane. Under the 'Filters on this page' subsection tranisent filters 'Product' and 'Status' are in italics." lightbox="media/desktop-drillthrough/drillthrough-temporary-filters-italics.png":::
 
 Although you could do this with tooltips pages, that would be an odd experience because the tooltip wouldn't appear to be working properly. For this reason, we don't recommend doing so with tooltips.
 
