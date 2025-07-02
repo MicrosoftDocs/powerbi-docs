@@ -1,9 +1,9 @@
 ---
-title: 'A quick tour of the Mobile app home page'
-description: Learn about the main features of the Power BI mobile app home page and how to navigate that page quickly.
+title: 'Tour the Power BI mobile app home page'
+description: Discover the main features of the Power BI mobile app home page and learn how to navigate quickly. Start exploring now.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
@@ -12,9 +12,9 @@ ms.custom: mode-portal, intro-quickstart
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
 
-# A quick tour of the Mobile app home page
+# Tour the Power BI mobile app home page
 
-In this tour, you become acquainted with the home page of the Power BI mobile app and the navigation aids it provides to get to what you need quickly.
+This article introduces the Power BI mobile app home page, highlighting its main features and navigation aids to help you find content quickly.
 
 Applies to:
 
@@ -44,11 +44,11 @@ The header helps you quickly access key navigation and account features in the P
 
 ## Quick access tab
 
-The quick access tab helps you quickly find and open your most important Power BI content. It shows you your Frequent, Recent, and Recommended reports, dashboards, apps, and scorecards, grouped into collapsible sections. To see a longer list of your recent or recommended items, tap **See all** to the right of the section name.
+The quick access tab helps you quickly find and open your most important Power BI content. It shows your Frequent, Recent, and Recommended reports, dashboards, apps, and scorecards, grouped into collapsible sections. To see a longer list of your recent or recommended items, tap **See all** to the right of the section name.
 
 ## Metrics hub
 
-The metrics hub shows you your relevant metrics and lists all the scorecards you've got access to. On the metrics hub you can monitor progress on your metrics, and even make check-ins to update progress, add notes, or get to connected reports.
+The metrics hub shows your relevant metrics and lists all the scorecards you've got access to. On the metrics hub you can monitor progress on your metrics, and even make check-ins to update progress, add notes, or get to connected reports.
 
 :::image type="content" source="media/mobile-apps-home-page/power-bi-mobile-app-hub-checkin.png" border="false" alt-text="Screenshot of metrics hub in the Power BI mobile app.":::
 
