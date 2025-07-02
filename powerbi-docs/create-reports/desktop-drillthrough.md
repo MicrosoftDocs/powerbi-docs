@@ -39,7 +39,7 @@ Here are some articles explaining other ways to use drillthrough.
     - In **Drill through**, add the field that you want to act as the filter for the drill through by dragging it from the Data pane.
     - In the expanded section for the added field, under **Allow drill through when:**, select **Used as category**.
 
-:::image type="content" source="media/desktop-drillthrough/drillthrough-add-fields-here-update.png" alt-text="Screenshot of Visualizations pane with 'Build visual' tab selected and highlighted. Drill through section is highlighted, showing Cross-report setting off and keep all filters setting on. The added field is expanded with the 'Allow drill through when:' set to 'Used as category'. Power BI version 2.145.631.0" lightbox="media/desktop-drillthrough/drillthrough-add-fields-here-update.png":::
+:::image type="content" source="media/desktop-drillthrough/drillthrough-add-fields-here-product.png" alt-text="Screenshot of Visualizations pane with 'Build visual' tab selected and highlighted. Drill through section is highlighted, showing Cross-report setting off and keep all filters setting on. The added field is expanded with the 'Allow drill through when:' set to 'Used as category'. Power BI version 2.145.631.0" lightbox="media/desktop-drillthrough/drillthrough-add-fields-here-product.png":::
 
 
 When you add a field to the **Drill through** well, Power BI automatically creates a *back* button visual. That visual becomes a button in published reports. Users who view your report in the Power BI service use this button on the target page to get back to the original source report page from which they came.
@@ -60,7 +60,7 @@ To use your own image for a back button, follow these steps:
 
 Now users can right-click a data point on the other source pages in your report and get a context menu that supports drillthrough to that target page.
 
-:::image type="content" source="media/desktop-drillthrough/drillthrough-04-update.png" alt-text="Screenshot of Drillthrough menu. 'Drill through' is selected, displaying options 'Return Rate' and 'Market Basket Analysis'" lightbox="media/desktop-drillthrough/drillthrough-04-update.png":::
+:::image type="content" source="media/desktop-drillthrough/drillthrough-04-context-menu.png" alt-text="Screenshot of Drillthrough menu. 'Drill through' is selected, displaying options 'Return Rate' and 'Market Basket Analysis'" lightbox="media/desktop-drillthrough/drillthrough-04-context-menu.png":::
 
 When report readers choose to drill through, the target page is filtered to show information about the data point they right-clicked on. For example, suppose you right-click a data point about Contoso, a manufacturer, and select **Drill through**. The drillthrough page they go to is filtered to Contoso.
 
