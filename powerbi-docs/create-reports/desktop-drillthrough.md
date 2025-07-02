@@ -56,7 +56,7 @@ To use your own image for a back button, follow these steps:
 
 2. Select your new image on the drillthrough target page. Under the **Format image** pane, set the **Action** slider to **On**, and  then set the **Type** to **Back**. Your image now functions as a back button.
 
-:::image type="content" source="media/desktop-drillthrough/drillthrough-create-back-button-update.png" alt-text="Screenshot of a selected image and 'Format image' pane. The 'Format image' subsection 'Action' is highlighted and set to on. 'Type' in this subsection is set to 'Back'. lightbox="media/desktop-drillthrough/drillthrough-create-back-button-update.png":::
+:::image type="content" source="media/desktop-drillthrough/drillthrough-create-back-button-update.png" alt-text="Screenshot of a selected image and 'Format image' pane. The 'Format image' subsection 'Action' is highlighted and set to on. 'Type' in this subsection is set to 'Back'." lightbox="media/desktop-drillthrough/drillthrough-create-back-button-update.png":::
 
 Now users can right-click a data point on the other source pages in your report and get a context menu that supports drillthrough to that target page.
 
