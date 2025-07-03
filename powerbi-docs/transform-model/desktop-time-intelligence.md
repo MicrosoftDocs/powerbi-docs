@@ -114,7 +114,7 @@ Alternatively you can use external tools or the [TMDL view](desktop-tmdl-view.md
 
 Calendars are also shown in the [model explorer](model-explorer.md) under the table on which they're defined:
 
-:::image type="content" source="media/desktop-time-intelligence/calendars-model-explorer.png" height="200px" alt-text="Screenshot showing the model explorer for a semantic model. The Date table node is expanded and the calendars are highlighted." lightbox="media/desktop-time-intelligence/calendars-model-explorer.png":::
+:::image type="content" source="media/desktop-time-intelligence/calendars-model-explorer.png" alt-text="Screenshot showing the model explorer for a semantic model. The Date table node is expanded and the calendars are highlighted." lightbox="media/desktop-time-intelligence/calendars-model-explorer.png":::
 
 ### The calendar options screen
 
