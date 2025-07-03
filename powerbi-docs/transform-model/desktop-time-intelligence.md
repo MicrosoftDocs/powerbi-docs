@@ -129,7 +129,7 @@ The calendar options screen shows the calendars defined on the selected table. H
 
 ### Assigning column categories
 
-Defining a calendar involves giving it a name and assigning columns to categories. Each category represents a unit of time and specific [column categories](#available-column-categories) are available. You need to at least assign one primary column to a category to save your calendar. Each category should have a [primary column and can have zero or more associated columns](#primary-vs-associated-columns). Whenever any columns associated to a category are in context Power BI knows what unit of time they present. Additionally, for some functions such as [TOTALMTD](/dax/totalmtd-function-dax.md) Power BI uses the primary column mapped to the relevant category in the referenced calendar to perform the requested calculation.
+Defining a calendar involves giving it a name and assigning columns to categories. Each category represents a unit of time and specific [column categories](#available-column-categories) are available. You need to at least assign one primary column to a category to save your calendar. Each category should have a [primary column and can have zero or more associated columns](#primary-vs-associated-columns). Whenever any columns associated to a category are in context Power BI knows what unit of time they present. Additionally, for some functions such as [TOTALMTD](/dax/totalmtd-function-dax) Power BI uses the primary column mapped to the relevant category in the referenced calendar to perform the requested calculation.
 To assign a column to a category, select the category from the **Add category** menu and then select the primary and optional associated columns.
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-select-category.png" alt-text="Screenshot showing the calendar creation and edit screen." lightbox="media/desktop-time-intelligence/calendar-select-category.png":::
@@ -232,16 +232,16 @@ If the calendar isn't defined and error is returned:
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-time-intelligence-non-existing-calendar.png" alt-text="Screenshot showing a measure using the TOTALMTD function with a calendar parameter to a nonexisting calendar." lightbox="media/desktop-time-intelligence/calendar-time-intelligence-non-existing-calendar.png":::
 
-Even if the calendar is defined, however, a measure might still return an error. This happens if the function used expects a category to be present in the calendar and the calendar doesn't have that category. For example, [TOTALWTD](/dax/totalwtd-function-dax.md) expects specific categories to be present in the calendar. If they aren't, an error is returned:
+Even if the calendar is defined, however, a measure might still return an error. This happens if the function used expects a category to be present in the calendar and the calendar doesn't have that category. For example, [TOTALWTD](/dax/totalwtd-function-dax) expects specific categories to be present in the calendar. If they aren't, an error is returned:
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-time-intelligence-missing-category-calendar.png" alt-text="Screenshot showing a measure using the TOTALWTD function with a valid calendar reference that doesn't define the required categories." lightbox="media/desktop-time-intelligence/calendar-time-intelligence-missing-category-calendar.png":::
 
 ### Time intelligence functions and required categories
 
-Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require sufficient categories to be included on the calendar that is referenced in the function call so Power BI can identify a uniquely particular unit of time.In other words, Power BI needs to be able to "walk-up" from the level the calculation is performed on all the way to a individual year. For example, when performing a calculation on quarters, for example using [TOTALQTD](/dax/totalqtd-function-dax.md) either assign  **Quarter** category, or assign both **Quarter of Year** and **Year** in the calendar as dictated by the [**Period uniqueness**](#period-uniqueness) validation.
+Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require sufficient categories to be included on the calendar that is referenced in the function call so Power BI can identify a uniquely particular unit of time.In other words, Power BI needs to be able to "walk-up" from the level the calculation is performed on all the way to a individual year. For example, when performing a calculation on quarters, for example using [TOTALQTD](/dax/totalqtd-function-dax) either assign  **Quarter** category, or assign both **Quarter of Year** and **Year** in the calendar as dictated by the [**Period uniqueness**](#period-uniqueness) validation.
 
 > [!NOTE]
-> For some functions their name is indicative for on which level the calculation operates (i.e.,[TOTALYTD](/dax/totalytd-function-dax.md)), while for others it is dependent on the parameters ([DATEADD](/dax/dateadd-function-dax.md)) or the context ([SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax.md))
+> For some functions their name is indicative for on which level the calculation operates (i.e.,[TOTALYTD](/dax/totalytd-function-dax)), while for others it is dependent on the parameters ([DATEADD](/dax/dateadd-function-dax)) or the context ([SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax))
 
 ### TMDL script for calendars
 
@@ -332,7 +332,7 @@ createOrReplace
 
 ### Considerations for working with calendar-based time-intelligence
 
-- Performing a time intelligence calculations on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security.md) rules can lead to unexpected results.
+- Performing a time intelligence calculations on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) rules can lead to unexpected results.
 - Performance of this feature isn't representative of the end product.
 - Calendars are subject to both [real-time](#real-time-validations) as well as [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 - Each calendar must have a unique name within the data model
