@@ -159,9 +159,9 @@ The following table shows the categories that are available and provides the exp
 In addition to these categories, you can associate any number of columns on your table with the **Time-related** category. This isn't currently possible in the calendar options, but can instead only be done using external tools or [TMDL](#tmdl-script-for-calendars).
 
 > [!NOTE]
-> Context on any columns that are assigned to this category is removed when performing calculations. Any context on columns that are part of the table on which the calendar is defined but aren't tagged in that calendar is kept.
+> Context on any columns that are assigned to the **time-related** category is removed when performing calculations in all functions except DATEADD and SAMEPERIODLASTYEAR. Any context on columns that are part of the table on which the calendar is defined but aren't tagged in that calendar is kept.
 
-**TODO: this needs an example - but need help creating the example**
+
 
 ### Primary vs associated columns
 
@@ -260,7 +260,7 @@ createOrReplace
 
         column Year
 			dataType: string
-			lineageTag: 6a50619c-c3ab-43d4-88fb-f5099f189d17
+			lineageTag: abc
 			summarizeBy: none
 			sourceColumn: Year
 
@@ -268,7 +268,7 @@ createOrReplace
         
         column Month
 			dataType: string
-			lineageTag: 148d98d9-511b-4e80-bcb0-453c44a47779
+			lineageTag: def
 			summarizeBy: none
 			sourceColumn: Month
 
@@ -276,7 +276,7 @@ createOrReplace
 
         column MonthName
 			dataType: string
-			lineageTag: 31366904-e84e-4c74-9662-468fa868417a
+			lineageTag: ghi
 			summarizeBy: none
 			sourceColumn: MonthName
 			sortByColumn: SortByMonth
@@ -287,7 +287,7 @@ createOrReplace
 
         column DutchMonthName
 			dataType: string
-			lineageTag: 076ad25d-60aa-47b2-bd7a-3115b6729b7c
+			lineageTag: jkl
 			summarizeBy: none
 			sourceColumn: DutchMonthName
 
@@ -295,7 +295,7 @@ createOrReplace
 
         column 'Holiday Name'
 			dataType: string
-			lineageTag: ab100b31-bbe4-460d-b0c1-a5e46f93c1e5
+			lineageTag: mno
 			summarizeBy: none
 			sourceColumn: Holiday Name
 
@@ -303,7 +303,7 @@ createOrReplace
         
         column IsWorkingDay
 			dataType: string
-			lineageTag: 40fc5f7a-8295-49b8-aef7-a9d6c3af97e1
+			lineageTag: pqr
 			summarizeBy: none
 			sourceColumn: IsWorkingDay
 
@@ -324,11 +324,108 @@ createOrReplace
 			calendarColumnGroup
                 column: 'Holiday Name'
                 column: isWorkingDay
-
-		annotation PBI_ResultType = Table
-
-		annotation PBI_NavigationStepName = Navigation
 ```
+
+### Putting it all together: examples of time shifting
+
+Some [time intelligence functions](/dax/time-intelligence-functions-dax) shift context only laterally, considering all columns, while others perform hierarchical shifts—keeping or clearing context based on whether columns are tagged in the calendar. The time intelligence functions can be divided into two groups based on whether they allow for hierarchical shifts:
+
+- **Fixed**. Functions in this group are [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax). These functions only allow lateral time shifts and do not return values from a different level of detail.
+- **Flexible**. This group contains all other time intelligence functions. THese functions do allow hierarchical time shifts and depending on the calendar setup can return resuls from a different level of detail.
+
+To show these behaviors, let's walk through an example using a simple data model consisting of two tables, two calendars and a couple of five measures.
+
+#### Tables and relationships
+
+For this example, we have the following simple data model:
+
+|Table|Columns|
+|--|--|
+|Date|Year, IsWorkingDay, Date|
+|Sales|OrderKey, Quantity, OrderDate|
+
+Here are some examples rows in the **Date** table:
+:::image type="content" source="media/desktop-time-intelligence/calendars-example-date-table-rows.png" alt-text="Screenshot showing the first 14 rows of the example Date table. The table defines Date, Year and IsWorkingDay. The Date column contains a date, the Year column the year value and the IsWorkingDay column is a boolean (True/False) column that indicates if the date is a working day or not." lightbox="media/desktop-time-intelligence/calendars-example-date-table-rows.png":::
+
+Here are some example rows in the **Sales** table:
+:::image type="content" source="media/desktop-time-intelligence/calendars-example-sales-table-rows.png" alt-text="Screenshot showing the first 9 rows of the example Sales table. The table defines OrderKey, OrderDate and Order Quantity. The OrderKey column contains a unique number for each sales order, the OrderDate is a date which relates Sales to Date and the Order Quantity is a numerical column which represents the number of products for each order." lightbox="media/desktop-time-intelligence/calendars-example-sales-table-rows.png":::
+
+The Sales and Date tables are related on OrderDate and Date.
+
+:::image type="content" source="media/desktop-time-intelligence/calendars-example-data-model.png" alt-text="Screenshot showing the model view for the example model. It shows the Sales and Date table and a one to many relationship between them on OrderDate and Date." lightbox="media/desktop-time-intelligence/calendars-example-data-model.png":::
+
+#### Calendars
+
+On the **Date** table we defined calendars with these mappings:
+
+|CalendarName|Category|Primary Column|
+|--|--|--|
+|**Gregorian**|Year|Year|
+||Date|Date|
+|**GregorianWithWorkingDay**|Year|Year|
+||Date|Date|
+||Time-related|IsWorkingDay|
+
+The equivalent TMDL definition of these two calendars is:
+
+```tmdl
+ref table Date
+    calendar 'Gregorian'
+        lineageTag: xyz
+    
+        calendarColumnGroup = year
+    	    primaryColumn: Year
+    
+    	calendarColumnGroup = date
+    		primaryColumn: Date
+    
+    calendar 'GregorianWithWorkingDay'
+    	lineageTag: dc4fc383-1661-4112-8afb-930d324fbb6e
+    
+    	calendarColumnGroup = year
+    		primaryColumn: Year
+    
+    	calendarColumnGroup = date
+    		primaryColumn: Date
+    
+    	calendarColumnGroup
+    		column: IsWorkingDay   
+```
+
+#### Measures
+
+On the **Sales** table we define the following measures:
+
+```
+Total Quantity = SUM('Sales'[Order Quantity])
+OneYearAgoQuantity = CALCULATE([Total Quantity], DATEADD('Gregorian', -1, YEAR))
+OneYearAgoQuantityTimeRelated = CALCULATE([Total Quantity], DATEADD('GregorianWithWorkingDay', -1, YEAR))
+FullLastYearQuantity = CALCULATE([Total Quantity], PARALLELPERIOD('Gregorian', -1, YEAR))
+FullLastYearQuantityTimeRelated = CALCULATE([Total Quantity], PARALLELPERIOD('GregorianWithWorkingDay', -1, YEAR))
+```
+
+#### Lateral shift example
+
+Let's create a visual that shows Year, MonthOfYear, IsWorkingDay, Total Quantity, OneYearAgoQuantity and OneYearAgoQuantityTimeRelated for 2024 and 2025:
+
+:::image type="content" source="media/desktop-time-intelligence/calendars-example-lateral-shift.png" alt-text="Screenshot showing a table visual that shows Year, IsWorkingDay, Total Quantity, OneYearAgoQuantity and OneYearAgoQuantityTimeRelated. The values for OneYearAgoQuantity and OneYearAgoQuantityTimeRelated for 2025 match the values for 2024 for the same IsWorkingDay values." lightbox="media/desktop-time-intelligence/calendars-example-lateral-shift.png":::
+
+All values for **OneYearAgoQuantity** and **OneYearAgoQuantityTimeRelated** for 2025 match the **Total Quantity** from exactly one year before (2024), for the same **IsWorkingDay** value.
+
+This shows that [DATEADD](/dax/dateadd-function-dax) will maintain the context on any column on the Date table that contains the calendar used regardless of if it is not tagged or if it is tagged as time-related on that calendar. Since in our [measure definitions](#measures) we instructed DATEADD to shift back by one **Year**, the only column whose context was shifted was the column associated with the Year category. Whether the **IsWorkingDay** column was tagged in the calendar as time-related or not tagged at all did not change the result. The only other function that exhibits this behavior is [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax).
+
+#### Hierarchical shift example
+
+Now, let's look at an example in which whether a column is tagged as time-related or not does indeed change the result.
+
+For this, we are going to recreate the same visual as in the previous example, but this time we are going to use the FullLastYearQuantity and FullLastYearQuantityTimeRelated measures:
+:::image type="content" source="media/desktop-time-intelligence/calendars-example-hierarchical-shift.png" alt-text="Screenshot showing a table visual that shows Year, IsWorkingDay, Total Quantity, FullLastYearQuantity and FullLastYearQuantityTimeRelated. The values for FullLastYearQuantity 2025 match the values for 2024 for the same IsWorkingDay values, but the values for FullLastYearQuantityTimeRelated are equal to the total quantity value regardless of the IsWorkingDay values." lightbox="media/desktop-time-intelligence/calendars-example-hierarchical-shift.png":::
+
+This shows that [PARALLELPERIOD](/dax/parallelperiod-function-dax) preserves context for non–time-related columns but clears it for those tagged as time-related. **FullLastYearQuantity** used the **Gregorian** calendar where IsWorkingDay wasn't time-tagged, while **FullLastYearQuantityTimeRelated** used the **GregorianWithWorkingDay** calendar where IsWorkingDay was tagged as time-related. All time intelligence functions except DATEADD and SAMEPERIODLASTYEAR behaves this wya.
+
+#### Conclusion
+
+The elaborate example above shows that different time intelligence functions behave differently depending on whether columns are tagged as time-related in the calendar. [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax) only perform lateral time shifts. All other [time intelligence functions](/dax/time-intelligence-functions-dax) allow hierarchical time shifts.
 
 ### Considerations for working with calendar-based time-intelligence
 
