@@ -185,13 +185,39 @@ You can have zero or more associated columns assigned to a category.
 It's important to validate and test your calendar so you're certain it meets your needs. The validations offered in Power BI include both [real-time validations](#real-time-validations) and [offline validations](#offline-validations).
 
 > [!NOTE]
-> You can still save your calendar even if the validations fail, but it's recommended to perform the validations and resolve any issues before saving your calendar.
+> You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 
 ### Real-time validations
+
+The real-time validations performed on the calendars are:
+
+- **Unique calendar name**. Each calendar has to have a unique name in the semantic model.
+- **Single association per calendar**. A column can't belong to more than one category in the same calendar.
+- [**Period Uniqueness**](#period-uniqueness). Assigned categories should uniquely identify the period.
+- [**Consistent categorization**](#consistent-categorization). This ensures that columns are associated with the same category across calendars.
+
+#### Period Uniqueness
+
+There should always be a path to unique identify the period for the assigned categories.
 
 Whenever you add a category that has a **X of Y** name, such as **Day of Year** Power BI validates that the **"Y"** (**Year** in this example) category is also tagged in the same calendar. If that isn't the case, a warning is shown.
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-realtime-validation-error.png" alt-text="Screenshot showing the calendar creation and edit screen with a real-time validation error." lightbox="media/desktop-time-intelligence/calendar-realtime-validation-error.png":::
+
+For example, when setting up a calendar for week-based calculations, make sure to assign at least a primary column to one of the following sets of categories:
+
+- Week
+- Week of Year, Year
+- Week of Quarter, Quarter
+- Week of Quarter, Quarter of Year, Year
+- Week of Month, Month
+- Week of Month, Month of Year, Year
+- Week of Month, Month of Quarter, Quarter
+- Week of Month, Month of Quarter, Quarter of Year, Year
+
+#### Consistent categorization
+
+Columns must have a consistent category across calendars. You can't assign the same column to different categories like **Year**, **Quarter of Year**, or **time-related** in separate calendars.
 
 ### Offline validations
 
@@ -224,17 +250,7 @@ Even if the calendar is defined, however, a measure might still return an error.
 
 ### Time intelligence functions and required categories
 
-Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require sufficient categories to be included on the calendar that is referenced in the function call so Power BI can identify a uniquely particular unit of time.In other words, Power BI needs to be able to "walk-up" from the level the calculation is performed on all the way to a individual year. For example, when performing a calculation on quarters, for example using [TOTALQTD](/dax/totalqtd-function-dax.md) either assign  **Quarter** category, or assign both **Quarter of Year** and **Year** in the calendar.
-Similarly, when performing a week-based calculation the calendar should at least assign a primary column to one of the following sets of categories:
-
-- Week
-- Week of Year, Year
-- Week of Quarter, Quarter
-- Week of Quarter, Quarter of Year, Year
-- Week of Month, Month
-- Week of Month, Month of Year, Year
-- Week of Month, Month of Quarter, Quarter
-- Week of Month, Month of Quarter, Quarter of Year, Year
+Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require sufficient categories to be included on the calendar that is referenced in the function call so Power BI can identify a uniquely particular unit of time.In other words, Power BI needs to be able to "walk-up" from the level the calculation is performed on all the way to a individual year. For example, when performing a calculation on quarters, for example using [TOTALQTD](/dax/totalqtd-function-dax.md) either assign  **Quarter** category, or assign both **Quarter of Year** and **Year** in the calendar. In general, keep in mind that the **Path to Year** rule applies.
 
 > [!NOTE]
 > For some functions their name is indicative for on which level the calculation operates (i.e.,[TOTALYTD](/dax/totalytd-function-dax.md)), while for others it is dependent on the parameters ([DATEADD](/dax/dateadd-function-dax.md)) or the context ([SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax.md))
@@ -330,6 +346,7 @@ createOrReplace
 
 - Performing a time intelligence calculations on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security.md) rules can lead to unexpected results.
 - Performance of this feature isn't representative of the end product.
+- Calendars are subject to both [real-time](#real-time-validations) as well as [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 
 ## Creating a date table using built-in tools
 
