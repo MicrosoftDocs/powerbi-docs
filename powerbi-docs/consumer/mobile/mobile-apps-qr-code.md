@@ -24,8 +24,6 @@ Say someone in your organization has created a QR code for a report that contain
 
 The Power BI mobile app supports QR codes with [URL query parameters](../../collaborate-share/service-url-filters.md). If the QR code for a report includes such parameters, the report will open filtered according to those parameters.
 
-> [!NOTE]
-> You can also [scan a report QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
 ## Scan a Power BI QR code on your mobile device with the Power BI scanner
 
@@ -54,5 +52,4 @@ The Power BI mobile app supports QR codes with [URL query parameters](../../coll
 * [Connect to Power BI data from the real world](mobile-apps-data-in-real-world-context.md) with the mobile apps
 * [Create a QR code for a report in the Power BI service](../../create-reports/service-create-qr-code-for-report.md)
 * [Create a QR code for a tile in the Power BI service](../../create-reports/service-create-qr-code-for-tile.md)
-* You can also [scan a QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md)
 * Questions? [Ask the Power BI Community](https://community.powerbi.com/)
