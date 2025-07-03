@@ -127,18 +127,6 @@ The calendar options screen shows the calendars defined on the selected table. H
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-options-for-table.png" alt-text="Screenshot showing the Calendar Options on a table." lightbox="media/desktop-time-intelligence/calendar-options-for-table.png":::
 
-#### Considerations
-
-When creating or editing a calendar, keep in mind that:
-
-- Each calendar must have a unique name within the data model
-- A single table can contain multiple calendars
-- A calendar must at least assign one primary column to a category
-- A calendar can only assign columns from its own table to categories
-- Each category should have a primary column and can have zero or more associated columns assigned
-- Any given column can be mapped to only one category per calendar
-- However, a column can be mapped to different categories across different calendars within the same table
-
 ### Assigning column categories
 
 Defining a calendar involves giving it a name and assigning columns to categories. Each category represents a unit of time and specific [column categories](#available-column-categories) are available. You need to at least assign one primary column to a category to save your calendar. Each category should have a [primary column and can have zero or more associated columns](#primary-vs-associated-columns). Whenever any columns associated to a category are in context Power BI knows what unit of time they present. Additionally, for some functions such as [TOTALMTD](/dax/totalmtd-function-dax.md) Power BI uses the primary column mapped to the relevant category in the referenced calendar to perform the requested calculation.
@@ -347,6 +335,12 @@ createOrReplace
 - Performing a time intelligence calculations on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security.md) rules can lead to unexpected results.
 - Performance of this feature isn't representative of the end product.
 - Calendars are subject to both [real-time](#real-time-validations) as well as [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
+- Each calendar must have a unique name within the data model
+- A single table can contain multiple calendars
+- A calendar must at least assign one primary column to a category
+- A calendar can only assign columns from its own table to categories
+- Each category should have a primary column and can have zero or more associated columns assigned
+- Any given column can be mapped to only one category
 
 ## Creating a date table using built-in tools
 
