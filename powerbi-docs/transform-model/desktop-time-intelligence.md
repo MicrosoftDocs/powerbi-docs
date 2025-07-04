@@ -397,11 +397,20 @@ ref table Date
 On the **Sales** table we define the following measures:
 
 ```
-Total Quantity = SUM('Sales'[Order Quantity])
-OneYearAgoQuantity = CALCULATE([Total Quantity], DATEADD('Gregorian', -1, YEAR))
-OneYearAgoQuantityTimeRelated = CALCULATE([Total Quantity], DATEADD('GregorianWithWorkingDay', -1, YEAR))
-FullLastYearQuantity = CALCULATE([Total Quantity], PARALLELPERIOD('Gregorian', -1, YEAR))
-FullLastYearQuantityTimeRelated = CALCULATE([Total Quantity], PARALLELPERIOD('GregorianWithWorkingDay', -1, YEAR))
+Total Quantity = SUM ( 'Sales'[Order Quantity] )
+
+OneYearAgoQuantity =
+CALCULATE ( [Total Quantity], DATEADD ( 'Gregorian', -1, YEAR ) )
+
+OneYearAgoQuantityTimeRelated =
+CALCULATE ( [Total Quantity], DATEADD ( GregorianWithWorkingDay', -1, YEAR ) )
+
+FullLastYearQuantity =
+CALCULATE ( [Total Quantity], PARALLELPERIOD ( 'Gregorian', -1, YEAR ) )
+
+FullLastYearQuantityTimeRelated =
+CALCULATE ( [Total Quantity], PARALLELPERIOD ( 'GregorianWithWorkingDay', -1, YEAR )
+)
 ```
 
 #### Lateral shift example
