@@ -1,20 +1,20 @@
 ---
-title: 'A quick look at the Mobile app home page'
-description: Learn about the main features of the Power BI mobile app home page and how to navigate that page quickly.
+title: 'Tour the Power BI mobile app home page'
+description: Discover the main features of the Power BI mobile app home page and learn how to navigate quickly. Start exploring now.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 01/18/2023
+ms.date: 07/01/2025
 ms.custom: mode-portal, intro-quickstart
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
 
-# A quick tour of the Mobile app home page
+# Tour the Power BI mobile app home page
 
-In this tour, you become acquainted with the home page of the Power BI mobile app and the navigation aids it provides to get to what you need quickly.
+This article introduces the Power BI mobile app home page, highlighting its main features and navigation aids to help you find content quickly.
 
 Applies to:
 
@@ -26,13 +26,29 @@ When you open Power BI Mobile app, you land on the home page, where you have **q
 
 :::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-home.png" border="false" alt-text="Screenshot of the Power BI mobile app home page.":::
 
+## Header
+
+The header helps you quickly access key navigation and account features in the Power BI mobile app. The header provides the following navigation items:
+
+- **Profile picture or avatar** - opens the side panel where you can switch between your Power BI service and [Report Server accounts](mobile-app-ssrs-kpis-mobile-on-premises-reports.md), as well as access Power BI mobile app settings.
+
+    :::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-side-panel.png" border="false" alt-text="Screenshot of profile side panel.":::
+
+- **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode.md) and [QR codes](mobile-apps-qr-code.md).
+
+    :::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-camera-icon.png" border="false" alt-text="Screenshot of the home page with the scanner icon circled.":::
+
+- **Search** - search for Power BI content in your subscription.
+
+    :::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-search-page.png" border="false" alt-text="Screenshot of the Power BI mobile app search page.":::
+
 ## Quick access tab
 
-The quick access tab shows you your Frequent, Recent, and Recommended reports, dashboards, apps, and scorecards, grouped into collapsible sections. To see a longer list of your recent or recommended items, tap **See all** to the right of the section name.
+The quick access tab helps you quickly find and open your most important Power BI content. It shows your Frequent, Recent, and Recommended reports, dashboards, apps, and scorecards, grouped into collapsible sections. To see a longer list of your recent or recommended items, tap **See all** to the right of the section name.
 
 ## Metrics hub
 
-The metrics hub shows you your relevant metrics and lists all the scorecards you've got access to. On the metrics hub you can monitor progress on your metrics, and even make check-ins to update progress, add notes, or get to connected reports.
+The metrics hub shows your relevant metrics and lists all the scorecards you've got access to. On the metrics hub you can monitor progress on your metrics, and even make check-ins to update progress, add notes, or get to connected reports.
 
 :::image type="content" source="media/mobile-apps-home-page/power-bi-mobile-app-hub-checkin.png" border="false" alt-text="Screenshot of metrics hub in the Power BI mobile app.":::
 
@@ -58,9 +74,9 @@ Activity items are aggregated, so all data updates coming from the same app or w
 
 ## Navigation bar
 
-The navigation bar resides at the bottom of the page.
+You can find the navigation bar at the bottom of the page.
 
-:::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-navbar-new.png" border="false" alt-text="Screenshot of the Power BI mobile app navigation bar.":::
+:::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-navbar.jpg" border="false" alt-text="Screenshot of the Power BI mobile app navigation bar.":::
 
 The navigation bar provides quick access to:
 
@@ -72,22 +88,6 @@ The navigation bar provides quick access to:
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-shared-with-me-icon.png" border="false" ::: **Shared with me** - the items other people have shared with you.
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-explore-icon-new.png" border="false" ::: **Explore** - content from your organization that has been chosen especially for you.
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-notification-icon.png" border="false" ::: **Notifications** - opens the [notifications page](mobile-apps-notification-center.md) where you can view and access your notifications. A dot on the notifications bell indicates that you have new notifications.
-
-## Header
-
-The header provides the following navigation items:
-
-- **Profile picture or avatar** - opens the side panel where you can switch between your Power BI service and [Report Server accounts](mobile-app-ssrs-kpis-mobile-on-premises-reports.md), as well as access Power BI mobile app settings.
-
-    :::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-side-panel.png" border="false" alt-text="Screenshot of profile side panel.":::
-
-- **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode.md) and [QR codes](mobile-apps-qr-code.md).
-
-    :::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-camera-icon.png" border="false" alt-text="Screenshot of the home page with the scanner icon circled.":::
-
-- **Search** - search for Power BI content in your subscription.
-
-    :::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-search-page.png" border="false" alt-text="Screenshot of the Power BI mobile app search page.":::
 
 ## Related content
 
