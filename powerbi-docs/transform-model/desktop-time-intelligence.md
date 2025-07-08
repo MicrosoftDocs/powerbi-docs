@@ -432,6 +432,15 @@ For this, we are going to recreate the same visual as in the previous example, b
 
 This shows that [PARALLELPERIOD](/dax/parallelperiod-function-dax) preserves context for non–time-related columns but clears it for those tagged as time-related. **FullLastYearQuantity** used the **Gregorian** calendar where IsWorkingDay wasn't time-tagged, while **FullLastYearQuantityTimeRelated** used the **GregorianWithWorkingDay** calendar where IsWorkingDay was tagged as time-related. All time intelligence functions except DATEADD and SAMEPERIODLASTYEAR behaves this way.
 
+Bonus: If you really wanted to force these functinos to preserve context for time-related columns as well, you can use [VALUES](/dax/values-function-dax):
+
+```dax
+FullLastYearQuantityTimeRelatedOverride =
+CALCULATE ( [Total Quantity], PARALLELPERIOD ( 'GregorianWithWorkingDay', -1, YEAR ), VALUES('Date'[IsWorkingDay]) )
+```
+
+In this case, `FullLastYearQuantityTimeRelatedOverride` returns the same results as `FullLastYearQuantity`.
+
 #### Conclusion
 
 The elaborate example above shows that different time intelligence functions behave differently depending on whether columns are tagged as time-related in the calendar. [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax) only perform lateral time shifts. All other [time intelligence functions](/dax/time-intelligence-functions-dax) allow hierarchical time shifts.
