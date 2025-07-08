@@ -331,7 +331,7 @@ createOrReplace
 Some [time intelligence functions](/dax/time-intelligence-functions-dax) shift context only laterally, considering all columns, while others perform hierarchical shifts—keeping or clearing context based on whether columns are tagged in the calendar. The time intelligence functions can be divided into two groups based on whether they allow for hierarchical shifts:
 
 - **Fixed**. Functions in this group are [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax). These functions only allow lateral time shifts and do not return values from a different level of detail.
-- **Flexible**. This group contains all other time intelligence functions. THese functions do allow hierarchical time shifts and depending on the calendar setup can return resuls from a different level of detail.
+- **Flexible**. This group contains all other time intelligence functions. These functions do allow hierarchical time shifts and depending on the calendar setup can return resuls from a different level of detail.
 
 To show these behaviors, let's walk through an example using a simple data model consisting of two tables, two calendars and a couple of five measures.
 
@@ -396,7 +396,7 @@ ref table Date
 
 On the **Sales** table we define the following measures:
 
-```
+```dax
 Total Quantity = SUM ( 'Sales'[Order Quantity] )
 
 OneYearAgoQuantity =
@@ -430,7 +430,7 @@ Now, let's look at an example in which whether a column is tagged as time-relate
 For this, we are going to recreate the same visual as in the previous example, but this time we are going to use the FullLastYearQuantity and FullLastYearQuantityTimeRelated measures:
 :::image type="content" source="media/desktop-time-intelligence/calendars-example-hierarchical-shift.png" alt-text="Screenshot showing a table visual that shows Year, IsWorkingDay, Total Quantity, FullLastYearQuantity and FullLastYearQuantityTimeRelated. The values for FullLastYearQuantity 2025 match the values for 2024 for the same IsWorkingDay values, but the values for FullLastYearQuantityTimeRelated are equal to the total quantity value regardless of the IsWorkingDay values." lightbox="media/desktop-time-intelligence/calendars-example-hierarchical-shift.png":::
 
-This shows that [PARALLELPERIOD](/dax/parallelperiod-function-dax) preserves context for non–time-related columns but clears it for those tagged as time-related. **FullLastYearQuantity** used the **Gregorian** calendar where IsWorkingDay wasn't time-tagged, while **FullLastYearQuantityTimeRelated** used the **GregorianWithWorkingDay** calendar where IsWorkingDay was tagged as time-related. All time intelligence functions except DATEADD and SAMEPERIODLASTYEAR behaves this wya.
+This shows that [PARALLELPERIOD](/dax/parallelperiod-function-dax) preserves context for non–time-related columns but clears it for those tagged as time-related. **FullLastYearQuantity** used the **Gregorian** calendar where IsWorkingDay wasn't time-tagged, while **FullLastYearQuantityTimeRelated** used the **GregorianWithWorkingDay** calendar where IsWorkingDay was tagged as time-related. All time intelligence functions except DATEADD and SAMEPERIODLASTYEAR behaves this way.
 
 #### Conclusion
 
