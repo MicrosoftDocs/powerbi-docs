@@ -161,7 +161,8 @@ In addition to these categories, you can associate any number of columns on your
 > [!NOTE]
 > Context on any columns that are assigned to the **time-related** category is removed when performing calculations in all functions except DATEADD and SAMEPERIODLASTYEAR. Any context on columns that are part of the table on which the calendar is defined but aren't tagged in that calendar is kept.
 
-
+> [!NOTE]
+> We recommend you associate only the columns in your calendar that you want to use in time intelligence calculations.
 
 ### Primary vs associated columns
 
