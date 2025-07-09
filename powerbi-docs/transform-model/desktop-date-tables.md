@@ -56,7 +56,7 @@ After you specify a date table, you can select which column in that table is the
 
 It's important to note that when you specify your own date table, **Power BI Desktop** doesn't autocreate the hierarchies that it would otherwise build into your model on your behalf. If you later deselect your date table (and no longer have a manually set date table), Power BI Desktop recreates the automatically created built-in date tables for you, for the date columns in the table.
 
-Also important to note is that when you mark a table as a date table, Power BI Desktop removes the built-in (automatically created) date table. And any visuals or DAX expressions you previously created based on those built-in tables no longer works properly.
+Also important to note is that when you mark a table as a date table, Power BI Desktop removes the built-in (automatically created) date table. And any visuals or DAX expressions you previously created based on those built-in tables no longer work properly.
 
 ## Mark your date table as the appropriate data type
 

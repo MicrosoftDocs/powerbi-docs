@@ -41,6 +41,7 @@ There are multiple ways of creating such a table, including:
 - **DAX**. You can use the [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-function-dax) functions to generate a basic calculated date table. You can also use a more advanced DAX statement to create a date table. [An example is provided later in this document](#creating-a-date-table-using-built-in-tools).
 - **External tools**.
 - **Loading from a source**, such as a source system, a file, or another Power BI semantic model.
+
 Which option is best for you depends on various factors and is beyond the scope of this tutorial.
 
 ## Working with time-based calculations
@@ -56,7 +57,7 @@ Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are
 
 ## Classic time intelligence
 
-This option requires you to have a date table in your model and [set it accordingly](desktop-date-tables.md). Afterwards, you can use the [time intelligence functions](/dax/time-intelligence-functions-dax) and refer to your date table. For example, if you have a date table called **Date** in your model that you set as your date table, which contains a Date column then you can use:
+This option requires you to have a date table in your model and to [set it accordingly](desktop-date-tables.md). Afterwards, you can use the [time intelligence functions](/dax/time-intelligence-functions-dax) and refer to your date table. For example, if you have a date table called **Date** in your model that you set as your date table, which contains a Date column then you can use:
 
 ```dax
 SAMEPERIODLASTYEAR ( 'Date'[Date] )
@@ -66,6 +67,7 @@ While this is a fast and easy approach, there are many downsides compared to the
 
 - it requires you set the date table
 - it only works with models that have at least one dedicated date table
+- the date table(s) should have no missing dates between the first and last dates
 - it's less flexible as it's optimized for Gregorian or shifted Gregorian calendars, such as fiscal years that start on July 1 but still follow a Gregorian calendar
 - it doesn't provide week-based calculations
 - in specific scenarios, time-based calculations don't perform well.
@@ -84,9 +86,6 @@ Calendars are metadata definitions added to a table to indicate which columns fr
 - Lunar
 
 The possibilities are endless as there's no built-in assumption from Power BI on how your calendar is structured.
-
-Additionally, calendar-based time intelligence heavily reduces the number of storage engine queries required and therefore has much better performance. For exapmle, in DirectQuery mode, this can result in less queries being sent to the source and a more responsive user experience compared to the classic time intelligence.
-
 
 You can define one or more calendars on any table in your model. After you defined the calendar in your model, you can refer to it in your time-intelligence functions. For example, here's how to calculate a total year to date of Sales using a defined **Fiscal calendar**:
 
@@ -137,24 +136,28 @@ To assign a column to a category, select the category from the **Add category** 
 ### Available column categories
 
 The following table shows the categories that are available and provides the expected cardinality in a Gregorian calendar. It also gives example values for Gregorian calendars.
+Categories are divided into two groups:
 
-|Category|Description|Cardinality in a Gregorian calendar|Example column values in a Gregorian calendar|
-|--|--|--|--|
-|Year|The year|`Y` = number of years|2024, 2025|
-|Quarter|The quarter including the year|`4*Y`|Q1 2024, Q2 2025|
-|Quarter of Year|The quarter of the year|`4`|Year Quarter 1, YQ1, Q1, Quarter 2|
-|Month|The month including the year|`12*Y ≤ value ≤ 13*Y`|January 2023, 2024 Feb|
-|Month of Year|The month of the year|`12`|January, Year Month 11, YM11, M11, 11|
-|Month of Quarter|The month of the quarter|`3`|1, QM2|
-|Week|The week including the year|`52 ≤ value ≤ 53`|Week 50 2023, W50-2023, 2023-W50|
-|Week of Year|The week of the year|`52`|Week 50, W50, 50|
-|Week of Quarter|The week of the quarter|`13`|Quarter Week 10, QW10, 10|
-|Week of Month|The week of the month|`5`|Month Week 2, MW2, 2|
-|Day of Year|The day of the year|`365 ≤ value ≤366`|365, D1|
-|Day of Quarter|The day of the quarter|`92`|Quarter Day 10, QD2, 50|
-|Day of Month|The day of the month|`31`|Month Day 30, MD10, 30|
-|Day of Week|The day of the week|`7`|Week Day 5, WD5, 5|
-|Date|The date|`365*Y ≤ value ≤ 366*Y`|12/31/2025|
+- **Complete**. Data in columns assigned to Complete categories is enough to uniquely identify the time period.
+- **Partial**. Data in columns assigned to Partial categories is not enough to uniquely identify the time period.
+
+|Category|Description|Type|Cardinality in a Gregorian calendar|Example column values in a Gregorian calendar|
+|--|--|--|--|--|
+|Year|The year|Complete|`Y` = number of years|2024, 2025|
+|Quarter|The quarter including the year|Complete|`4*Y`|Q1 2024, Q2 2025|
+|Quarter of Year|The quarter of the year|Partial|`4`|Year Quarter 1, YQ1, Q1, Quarter 2|
+|Month|The month including the year|Complete|`12*Y ≤ value ≤ 13*Y`|January 2023, 2024 Feb|
+|Month of Year|The month of the year|Partial|`12`|January, Year Month 11, YM11, M11, 11|
+|Month of Quarter|The month of the quarter|Partial|`3`|1, QM2|
+|Week|The week including the year|Complete|`52 ≤ value ≤ 53`|Week 50 2023, W50-2023, 2023-W50|
+|Week of Year|The week of the year|Partial|`52`|Week 50, W50, 50|
+|Week of Quarter|The week of the quarter|Partial|`13`|Quarter Week 10, QW10, 10|
+|Week of Month|The week of the month|Partial|`5`|Month Week 2, MW2, 2|
+|Day of Year|The day of the year|Partial|`365 ≤ value ≤366`|365, D1|
+|Day of Quarter|The day of the quarter|Partial|`92`|Quarter Day 10, QD2, 50|
+|Day of Month|The day of the month|Partial|`31`|Month Day 30, MD10, 30|
+|Day of Week|The day of the week|Partial|`7`|Week Day 5, WD5, 5|
+|Date|The date|Complete|`365*Y ≤ value ≤ 366*Y`|12/31/2025|
 
 In addition to these categories, you can associate any number of columns on your table with the **Time-related** category. This isn't currently possible in the calendar options, but can instead only be done using external tools or [TMDL](#tmdl-script-for-calendars).
 
@@ -166,7 +169,10 @@ In addition to these categories, you can associate any number of columns on your
 
 ### Primary vs associated columns
 
-The primary column is required for each category. Whenever that column or any associated columns assigned to the same category on the referenced calendar are in context or the category is required to perform a calculation, Power BI uses the primary column.
+The primary column is required for each category. Whenever that column or any associated columns assigned to the same category on the referenced calendar are in context or the category is required to perform a calculation, Power BI uses the primary column. Additionally, the primary columns are used for sorting. If the values in the primary column don't allow it to be sortable as expected you can either [configure the primary column to sort by another column](../create-reports/desktop-sort-by-column.md) or use another column and make the original column an associated column. For example, a column textual data containing with monthnumber and year in a format of `mm-yyyy` (i.e. `01-2024`, `02-2024` and so on) will not sort correctly across multiple years, but a column that uses the `yyyy-mm` format will:
+
+:::image type="content" source="media/desktop-time-intelligence/calendar-sorting-textual-data-patterns.png" alt-text="Screenshot showing two tables. Each table has one column. The first table contains a column that contains textual monthnumber and year information in a mm-yyyy format and the second contains the same information in a yyyy-mm format. The column containing the mm-yyyy format data is not sorted correctly." lightbox="media/desktop-time-intelligence/calendar-sorting-textual-data-patterns":::
+
 You can have zero or more associated columns assigned to a category.
 
 ### Validation
@@ -189,8 +195,10 @@ The real-time validations performed on the calendars are:
 
 There should always be a path to unique identify the period for the assigned categories.
 
-Whenever you add a category that has a **X of Y** name, such as **Day of Year** Power BI validates that the **"Y"** (**Year** in this example) category is also tagged in the same calendar. If that isn't the case, a warning is shown.
+Whenever you add a **partial category**, Power BI validates that a matching combination of complete or partial categories is also tagged in the same calendar. If that isn't the case, a warning is shown.
 
+
+# TODO: update this image
 :::image type="content" source="media/desktop-time-intelligence/calendar-realtime-validation-error.png" alt-text="Screenshot showing the calendar creation and edit screen with a real-time validation error." lightbox="media/desktop-time-intelligence/calendar-realtime-validation-error.png":::
 
 For example, when setting up a calendar for week-based calculations, make sure to assign at least a primary column to one of the following sets of categories:
@@ -218,12 +226,12 @@ The offline validations check the following rules and  returns a warning if any 
 
 - a column associated with a category doesn't have blank values.
 - higher level and lower level categories have a one-to-many cardinality ratio. For example, columns associated with the Year category should have a one-to-many cardinality with columns associated with the Month category.
-- columns associated with categories on the same level have a one-to-one cardinality ratio. For example, columns associated with the Month category should have a one-to-one cardinality with columns associated with the Month of Year and Year categories.
+- columns associated with categories on the same level have a one-to-one cardinality ratio. For example, columns associated with the Month category should have a one-to-one cardinality with the combinations of the columns associated with the Month of Year and Year categories.
 - primary and associated columns assigned to the same category have a one-to-one cardinality ratio. For example, when assigned to the Month category, a primary column Month and an associated column EnglishMonthName should have a one-to-one cardinality.
 
 ### Working with calendars
 
-Once a calendar is defined, you can refer to it in [Time intelligence functions](/dax/time-intelligence-functions-dax) using the second parameter. For example, the following measure calculates a total month to date value of Total Quantity against the **ISO-454** calendar:
+Once a calendar is defined, you can refer to it in [Time intelligence functions](/dax/time-intelligence-functions-dax). For example, the following measure calculates a total month to date value of Total Quantity against the **ISO-454** calendar:
 
 ```dax
 Total Quantity MTD ISO-454 = TOTALMTD ( [Total Quantity], 'ISO-454' )
@@ -239,10 +247,10 @@ Even if the calendar is defined, however, a measure might still return an error.
 
 ### Time intelligence functions and required categories
 
-Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require sufficient categories to be included on the calendar that is referenced in the function call so Power BI can identify a uniquely particular unit of time.In other words, Power BI needs to be able to "walk-up" from the level the calculation is performed on all the way to a individual year. For example, when performing a calculation on quarters, for example using [TOTALQTD](/dax/totalqtd-function-dax) either assign  **Quarter** category, or assign both **Quarter of Year** and **Year** in the calendar as dictated by the [**Period uniqueness**](#period-uniqueness) validation.
+Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require sufficient categories to be included on the calendar that is referenced in the function call so Power BI can identify a uniquely particular unit of time. In other words, Power BI needs to be able to "walk-up" from the level the calculation is performed on all the way to an individual year. For example, when performing a calculation on quarters, for example using [TOTALQTD](/dax/totalqtd-function-dax) either assign  **Quarter** category, or assign both **Quarter of Year** and **Year** in the calendar as dictated by the [**Period uniqueness**](#period-uniqueness) validation.
 
 > [!NOTE]
-> For some functions their name is indicative for on which level the calculation operates (i.e.,[TOTALYTD](/dax/totalytd-function-dax)), while for others it is dependent on the parameters ([DATEADD](/dax/dateadd-function-dax)) or the context ([SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax))
+> For some functions their name is indicative of which level the calculation operates (e.g. [TOTALYTD](/dax/totalytd-function-dax)), while for others it is dependent on the parameters and context (e.g. [DATEADD](/dax/dateadd-function-dax)).
 
 ### TMDL script for calendars
 
@@ -332,9 +340,9 @@ createOrReplace
 Some [time intelligence functions](/dax/time-intelligence-functions-dax) shift context only laterally, considering all columns, while others perform hierarchical shifts—keeping or clearing context based on whether columns are tagged in the calendar. The time intelligence functions can be divided into two groups based on whether they allow for hierarchical shifts:
 
 - **Fixed**. Functions in this group are [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax). These functions only allow lateral time shifts and do not return values from a different level of detail.
-- **Flexible**. This group contains all other time intelligence functions. These functions do allow hierarchical time shifts and depending on the calendar setup can return resuls from a different level of detail.
+- **Flexible**. This group contains all other time intelligence functions. These functions do allow hierarchical time shifts and depending on the calendar setup can return results from a different level of detail.
 
-To show these behaviors, let's walk through an example using a simple data model consisting of two tables, two calendars and a couple of five measures.
+To show these behaviors, let's walk through an example using a simple data model consisting of two tables, two calendars and five measures.
 
 #### Tables and relationships
 
@@ -431,9 +439,9 @@ Now, let's look at an example in which whether a column is tagged as time-relate
 For this, we are going to recreate the same visual as in the previous example, but this time we are going to use the FullLastYearQuantity and FullLastYearQuantityTimeRelated measures:
 :::image type="content" source="media/desktop-time-intelligence/calendars-example-hierarchical-shift.png" alt-text="Screenshot showing a table visual that shows Year, IsWorkingDay, Total Quantity, FullLastYearQuantity and FullLastYearQuantityTimeRelated. The values for FullLastYearQuantity 2025 match the values for 2024 for the same IsWorkingDay values, but the values for FullLastYearQuantityTimeRelated are equal to the total quantity value regardless of the IsWorkingDay values." lightbox="media/desktop-time-intelligence/calendars-example-hierarchical-shift.png":::
 
-This shows that [PARALLELPERIOD](/dax/parallelperiod-function-dax) preserves context for non–time-related columns but clears it for those tagged as time-related. **FullLastYearQuantity** used the **Gregorian** calendar where IsWorkingDay wasn't time-tagged, while **FullLastYearQuantityTimeRelated** used the **GregorianWithWorkingDay** calendar where IsWorkingDay was tagged as time-related. All time intelligence functions except DATEADD and SAMEPERIODLASTYEAR behaves this way.
+This shows that [PARALLELPERIOD](/dax/parallelperiod-function-dax) preserves context for columns not tagged in the calendar but clears the context for those tagged as time-related. **FullLastYearQuantity** used the **Gregorian** calendar where IsWorkingDay wasn't tagged in the calendar, while **FullLastYearQuantityTimeRelated** used the **GregorianWithWorkingDay** calendar where IsWorkingDay was tagged as time-related. All time intelligence functions except DATEADD and SAMEPERIODLASTYEAR behave this way.
 
-Bonus: If you really wanted to force these functinos to preserve context for time-related columns as well, you can use [VALUES](/dax/values-function-dax):
+Bonus: If you really wanted to force these functions to preserve context for time-related columns as well, you can use [VALUES](/dax/values-function-dax):
 
 ```dax
 FullLastYearQuantityTimeRelatedOverride =
@@ -448,8 +456,8 @@ The elaborate example above shows that different time intelligence functions beh
 
 ### Considerations for working with calendar-based time-intelligence
 
-- Performing a time intelligence calculations on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) rules can lead to unexpected results.
-- Performance of this feature isn't representative of the end product.
+- Performing a time intelligence calculation on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) rules and can lead to unexpected results.
+- Performance of this preview feature isn't representative of the end product.
 - We recommend you associate only the columns in your calendar that you want to use in time intelligence calculations.
 - Calendars are subject to both [real-time](#real-time-validations) as well as [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 - Each calendar must have a unique name within the data model
