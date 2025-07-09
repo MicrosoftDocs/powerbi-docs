@@ -450,6 +450,7 @@ The elaborate example above shows that different time intelligence functions beh
 
 - Performing a time intelligence calculations on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) rules can lead to unexpected results.
 - Performance of this feature isn't representative of the end product.
+- We recommend you associate only the columns in your calendar that you want to use in time intelligence calculations.
 - Calendars are subject to both [real-time](#real-time-validations) as well as [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 - Each calendar must have a unique name within the data model
 - A single table can contain multiple calendars
