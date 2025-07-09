@@ -24,6 +24,11 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ## May 2025
 
 ### Power BI Report Server
+
+- *Version: 1.23.9316.13987 (build 15.0.1118.134), Released: July 9, 2025*
+  - Bug fixes
+    - Fixed issue with document map not expanding when viewing paginated reports.
+
 - *Version: 1.23.9274.14406 (build 15.0.1118.126), Released: May 27, 2025*
   - Bug fixes
     - Fixed issue with showing schedule refresh on reports to users that don't have ’Manage individual subscriptions‘ and ’Manage all subscriptions‘ permissions.
@@ -35,7 +40,6 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
     - Updated underlying version of jQuery to 3.7.1 used for PBIRS Portal and RDL rendering (PBIX still uses 3.5.1 and is aligned with Power BI service version).
     - Support for x-forwarded-for header logging IP address in RSPortal log.
     - Added support for migrating report server catalog from SSRS 2022 to Power BI Report Server.
-
 
   - Bug fixes
     - Fixed issue with models loading in scale out environment.
@@ -76,6 +80,9 @@ Note: This is the last release of Power BI Desktop for RS that will include a 32
     - Fixed issue related to accessibility and screen readers.
       
 ### Power BI Desktop (optimized for Power BI Report Server)
+- *Version: 2.138.6828.0 (January 2025), Released: July 9, 2025*
+     - Fix issue with intermittent crashes when using Oracle data in reports.
+
 - *Version: 2.138.2255.0 (January 2025), Released: January 13, 2025*
      - Support for January 2025 Power BI Report Server.
 
