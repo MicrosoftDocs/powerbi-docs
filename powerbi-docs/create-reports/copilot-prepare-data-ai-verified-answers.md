@@ -75,7 +75,10 @@ To set a verified answer, follow these steps:
 
    :::image type="content" source="media/copilot-prep-data/copilot-verified-answer-selected-filters.png" alt-text="Screenshot of selected filters applied to a verified answer in Power BI." lightbox="media/copilot-prep-data/copilot-verified-answer-selected-filters.png":::
 
-     - **Supported filter types**: Report-level, Page-level, Visual-level.
+     - **Supported filter types**:
+       - Report-level, Page-level, Visual-level
+       - All basic, categorical filters
+       - Advanced categorical filters: startsWith, contains, >, <, >=, and <=
      - **Filter limitations**:
        - Fields already used in the visual (for example, axis, legend) can’t also be filters.
        - Existing hardcoded values (for example, Region = North) can't be overridden.
