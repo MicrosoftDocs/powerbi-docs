@@ -32,7 +32,7 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
   - Features
     - Add new advanced server property EnableCommentsOnReports and set default value to false to control comments on reports. This will disable comments on upgrade and must be enabled if you wish to have the ability to comment on reports in the future. This feature is now considered deprecated and will be removed in 2026.
     - Custom Visual API shipped with release - version v5.10.0
-    - Updated underlying version of jQuery to 3.7.1
+    - Updated underlying version of jQuery to 3.7.1 used for PBIRS Portal and RDL rendering (PBIX still uses 3.5.1 and is aligned with Power BI service version).
     - Support for x-forwarded-for header logging IP address in RSPortal log.
     - Added support for migrating report server catalog from SSRS 2022 to Power BI Report Server.
 
