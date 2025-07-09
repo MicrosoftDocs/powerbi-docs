@@ -412,7 +412,7 @@ OneYearAgoQuantity =
 CALCULATE ( [Total Quantity], DATEADD ( 'Gregorian', -1, YEAR ) )
 
 OneYearAgoQuantityTimeRelated =
-CALCULATE ( [Total Quantity], DATEADD ( GregorianWithWorkingDay', -1, YEAR ) )
+CALCULATE ( [Total Quantity], DATEADD ( 'GregorianWithWorkingDay', -1, YEAR ) )
 
 FullLastYearQuantity =
 CALCULATE ( [Total Quantity], PARALLELPERIOD ( 'Gregorian', -1, YEAR ) )
