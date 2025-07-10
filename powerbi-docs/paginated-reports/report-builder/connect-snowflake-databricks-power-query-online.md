@@ -54,7 +54,7 @@ Follow these steps to connect to a data source using Power Query Online:
    To connect to an on-premises data source, you will need to first create a gateway connection by following the steps outlined in [Add or remove a gateway data source](../../connect-data/service-gateway-data-sources.md). Once the gateway has been created, you can use the gateway connection details in the Connection Credentials section to connect to the on-premises data source. [Add or remove a gateway data source](../../connect-data/service-gateway-data-sources.md) also includes a list of supported on-premises data sources.
 
 > [!NOTE]
-> The recommended threshold for data volume when connecting to an on-premises data source is 500,000 rows with 15 to 20 columns before report processing slows down significantly leading to failures. Refer to [Performance and scalability considerations for paginated reports in Power BI service](/power-bi/guidance/report-paginated-performance-scalability-considerations) to learn more about paginated reports perfomance and scalability considerations.
+> The recommended threshold for data volume when connecting to an on-premises data source is 500,000 rows with 15 to 20 columns before report processing slows down significantly leading to failures. Refer to [Performance and scalability considerations for paginated reports in Power BI service](../../guidance/report-paginated-performance-scalability-considerations.md) to learn more about paginated reports perfomance and scalability considerations.
 
   
 1. After you select or create a connection, select **Next**. Select the tables that you want to use in your report and select **Transform Data**.  
