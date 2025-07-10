@@ -117,12 +117,14 @@ Once you prepare your semantic model for AI and it's ready for consumption, you 
 
 :::image type="content" source="media/copilot-prep-data/copilot-ai-preparation.png" alt-text="Screenshot of the AI preparation settings in Power BI service, showcasing the option to mark a model as prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
 
-When your semantic model is marked as *prepped for AI*, it doesn't receive any friction treatment or warning label in the standalone Copilot agent. Also, reports that use that semantic model can be considered as prepped for AI.
+When your semantic model is marked as *prepped for AI*, it doesn't receive any friction treatment in the standalone Copilot agent. Also, reports that use that semantic model can be considered as prepped for AI.
 
 > [!NOTE]
-> Although marking a semantic model as *prepped for AI* should remove the friction treatment and warning labels in standalone Copilot immediately, reports built from that model might take up to 24 hours to remove these behaviors. To trigger a report reindexing, you can manually save a small change to a report to speed up the process. There's currently no way to mark a report, dashboard, or app as prepped for AI.
+> Although marking a semantic model as *prepped for AI* should remove the friction treatment in standalone Copilot immediately, reports built from that model might take up to 24 hours to remove these behaviors. To trigger a report reindexing, you can manually save a small change to a report to speed up the process. There's currently no way to mark a report, dashboard, or app as prepped for AI.
 
-
+Authors also have the ability to [turn on an admin setting to only search data that is marked as prepped for AI within the standalone Copilot experience](/fabric/admin/service-admin-portal-copilot#only-show-ai-prepped-items-in-the-standalone-copilot-in-power-bi-experience-preview).
+ 
+ within the standalone experience.
 ## Turn off the preview features in Desktop
 
 If you need to remove the ability to author prep data for AI features, you can do this within Power BI Desktop. 
