@@ -137,19 +137,13 @@ As noted previously, the guest user must have the proper licensing in place to v
 
 Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates and large model sizes.
 
-![Diagram of the guest user experience with Power B I Premium.](https://github.com/user-attachments/assets/9d48f19f-b726-42d5-b6ed-cb165f48630d)
-
 #### Assign a Power BI Pro or Premium Per User (PPU) license to guest user
 
 Assigning a Power BI Pro or PPU license from your organization to a guest user lets that guest user view content shared with them. For more information about assigning licenses, see [Assign licenses to users on the Licenses page](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Before assigning Pro or PPU licenses to guest users, consult the [Product Terms site](https://www.microsoft.com/licensing/terms) to ensure you're in compliance with the terms of your licensing agreement with Microsoft.
 
-![Diagram of the guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach-2.png)
-
 #### Guest user brings their own Power BI Pro or Premium Per User (PPU) license
 
 The guest user may already have a Power BI Pro or PPU license that was assigned to them through their own organization.
-
-![Diagram of the guest user experience when they bring their own license.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
 To help allowed guests sign in to Power BI, provide them with the Tenant URL. To find the tenant URL, follow these steps.
 
