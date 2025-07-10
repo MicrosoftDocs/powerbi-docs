@@ -145,6 +145,9 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 > [!IMPORTANT]
 > Power BI Desktop is no longer supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
+> [!IMPORTANT]
+> Starting with the March 2025 version of Power BI Desktop, your CPU must support AVX (Advanced Vector Extensions) instructions. If your CPU doesn't support AVX instructions, you may encounter unexpected errors when running Power BI Desktop. Note that even if your CPU supports AVX, the host machine's BIOS or virtualization settings may have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration.
+
 The following updates are new to Power BI Desktop this month:
 
 ### General
@@ -231,6 +234,9 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 > [!IMPORTANT]
 > Power BI Desktop is no longer supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
+
+> [!IMPORTANT]
+> Starting with the March 2025 version of Power BI Desktop, your CPU must support AVX (Advanced Vector Extensions) instructions. If your CPU doesn't support AVX instructions, you may encounter unexpected errors when running Power BI Desktop. Note that even if your CPU supports AVX, the host machine's BIOS or virtualization settings may have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration.
 
 The following updates are new to Power BI Desktop this month:
 
