@@ -23,88 +23,88 @@ The data sources below are specific to Power BI reports used within Power BI Rep
 
 | **Data source** | **Cached data** | **Scheduled refresh** | **Live/DirectQuery** |
 | --- | --- | --- | --- |
-| SQL Server Database |Yes |Yes |Yes |
-| SQL Server Analysis Services |Yes |Yes |Yes |
-| Azure SQL Database |Yes |Yes |Yes |
-| Azure Analysis Services database |Yes |No |Yes |
-| Azure Synapse Analytics (formerly SQL Data Warehouse) |Yes |Yes |Yes |
-| Access Database |Yes |Yes |No |
-| Active Directory |Yes |Yes |No |
-| Amazon Athena |Yes |No |No |
-| Amazon Redshift |Yes |No |No |
-| Azure Blob Storage |Yes |Yes |No |
-| Azure Cosmos DB |Yes |No |No |
-| Azure Data Explorer (Kusto) |Yes |No |No |
-| Azure Data Lake Store |Yes |No |No |
-| Azure HDInsight (HDFS) |Yes |No |No |
-| Azure HDInsight Spark |Yes |No |No |
-| Azure Table Storage |Yes |Yes |No |
-| Denodo |Yes |No |No |
-| Dynamics 365 (online) |Yes |No |No |
-| Excel |Yes |Yes |No |
-| Facebook |Yes |No |No |
-| Folder |Yes |Yes |No |
-| Google Analytics |Yes |No |No |
-| Google BigQuery |Yes |No |No |
-| Hadoop File (HDFS) |Yes |No |No |
-| IBM DB2 Database |Yes |Yes |No |
-| IBM Netezza |Yes |No |No |
-| Impala |Yes |No |No |
-| JSON |Yes |Yes |No |
-| Microsoft Exchange |Yes |No |No |
-| Microsoft Exchange Online |Yes |No |No |
-| MySQL Database |Yes |Yes |No |
-| OData Feed |Yes |Yes |No |
-| ODBC |Yes |Yes |No |
-| OLE DB |Yes |Yes |No |
-| Oracle Database |Yes |Yes |Yes |
-| PostgreSQL Database |Yes |Yes |Yes |
-| Power BI dataset in the Power BI service |No |No |No |
-| Power BI dataset in Power BI Report Server |No |No |No |
-| Projectplace for Power BI |Yes |No |No |
-| R Script |Yes |No |No |
-| Salesforce Objects |Yes |No |No |
-| Salesforce Reports |Yes |No |No |
-| SAP Business Warehouse server |Yes |Yes |Yes |
-| SAP HANA Database |Yes |Yes |Yes |
-| SharePoint File (on-premises) |Yes |Yes |No |
-| SharePoint Folder (on-premises) |Yes |Yes |No |
-| SharePoint List (on-premises) |Yes |Yes |No |
-| SharePoint Online File |Yes |No |No |
-| SharePoint Online Folder |Yes |No |No |
-| SharePoint Online List |Yes |No |No |
-| Smartsheet |Yes |No |No |
-| Snowflake |Yes |No |No |
-| Spark |Yes |No |No |
-| Sybase Database |Yes |Yes |No |
-| Teradata |Yes |Yes |Yes |
-| Text/CSV |Yes |Yes |No |
-| Vertica |Yes |No |No |
-| Web |Yes |Yes |No |
-| XML |Yes |Yes |No |
-| appFigures (Beta) |Yes |No |No |
-| Common Data Service (Legacy) |Yes |No |No |
-| Dynamics 365 for Customer Insights (Beta) |Yes |No |No |
-| Dynamics 365 for Financials (Beta) |Yes |No |No |
-| GitHub (Beta) |Yes |No |No |
-| IBM Informix database (Beta) |Yes |No |No |
-| MailChimp (Beta) |Yes |No |No |
-| Microsoft Azure Consumption Insights (Beta) |Yes |No |No |
-| Mixpanel (Beta) |Yes |No |No |
-| Planview Enterprise One - CTM (Beta) |Yes |No |No |
-| Planview Enterprise One - PRM (Beta) |Yes |No |No |
-| QuickBooks Online (Beta) |Yes |No |No |
-| SparkPost (Beta) |Yes |No |No |
-| SQL Sentry (Beta) |Yes |No |No |
-| Stripe (Beta) |Yes |No |No |
-| SweetIQ (Beta) |Yes |No |No |
-| Troux (Beta) |Yes |No |No |
-| Twilio (Beta) |Yes |No |No |
-| tyGraph (Beta) |Yes |No |No |
-| Visual Studio Team Services (Beta) |Yes |No |No |
-| Webtrends Analytics (Beta) |Yes |No |No |
-| Zendesk (Beta) |Yes |No |No |
-| Other data sources available but not listed above |Yes |No |No |
+| SQL Server Database |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| SQL Server Analysis Services |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| Azure SQL Database |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark:  |
+| Azure Analysis Services database |Yes :white_check_mark: |No  :no_entry: |Yes :white_check_mark: |
+| Azure Synapse Analytics (formerly SQL Data Warehouse) |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| Access Database |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Active Directory |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Amazon Athena |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Amazon Redshift |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Azure Blob Storage |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Azure Cosmos DB |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Azure Data Explorer (Kusto) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Azure Data Lake Store |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Azure HDInsight (HDFS) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Azure HDInsight Spark |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Azure Table Storage |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Denodo |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Dynamics 365 (online) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Excel |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Facebook |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Folder |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Google Analytics |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Google BigQuery |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Hadoop File (HDFS) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| IBM DB2 Database |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| IBM Netezza |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Impala |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| JSON |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Microsoft Exchange |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Microsoft Exchange Online |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| MySQL Database |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| OData Feed |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| ODBC |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| OLE DB |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Oracle Database |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| PostgreSQL Database |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| Power BI dataset in the Power BI service |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Power BI dataset in Power BI Report Server |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Projectplace for Power BI |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| R Script |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Salesforce Objects |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Salesforce Reports |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| SAP Business Warehouse server |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| SAP HANA Database |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| SharePoint File (on-premises) |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| SharePoint Folder (on-premises) |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| SharePoint List (on-premises) |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| SharePoint Online File |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| SharePoint Online Folder |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| SharePoint Online List |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Smartsheet |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Snowflake |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Spark |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Sybase Database |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Teradata |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| Text/CSV |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| Vertica |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Web |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| XML |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |
+| appFigures (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Common Data Service (Legacy) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Dynamics 365 for Customer Insights (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Dynamics 365 for Financials (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| GitHub (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| IBM Informix database (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| MailChimp (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Microsoft Azure Consumption Insights (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Mixpanel (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Planview Enterprise One - CTM (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Planview Enterprise One - PRM (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| QuickBooks Online (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| SparkPost (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| SQL Sentry (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Stripe (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| SweetIQ (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Troux (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Twilio (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| tyGraph (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Visual Studio Team Services (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Webtrends Analytics (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Zendesk (Beta) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Other data sources available but not listed above |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
 
 > [!IMPORTANT]
 > Row-level security configured at the data source should work for certain DirectQuery (SQL Server, Azure SQL Database, Oracle and Teradata) and live connections assuming Kerberos is configured properly in your environment.
@@ -117,82 +117,82 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 
 | **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and Password** | **Windows Authentication** |
 | --- | --- | --- | --- | --- |
-| SQL Server Database |No |No |Yes |Yes |
-| SQL Server Analysis Services |No |No |Yes |Yes |
-| Azure SQL Database |No |No |Yes |No |
-| Azure Analysis Services database |No |No |Yes (1) |No |
-| Azure Synapse Analytics (formerly SQL Data Warehouse) |No |No |Yes |No |
-| Active Directory |No |No |Yes |Yes |
-| Amazon Athena |No |No |No |No |
-| Amazon Redshift |No |No |No |No |
-| Azure Blob Storage |Yes |Yes |No |No |
-| Azure Cosmos DB |No |No |No |No |
-| Azure Data Explorer (Kusto) |No |No |No |No |
-| Azure Data Lake Store |No |No |No |No |
-| Azure HDInsight (HDFS) |No |No |No |No |
-| Azure HDInsight Spark |No |No |No |No |
-| Azure Table Storage |No |Yes |No |No |
-| Denodo |No |No |No |No |
-| Dynamics 365 (online) |No |No |No |No |
-| Facebook |No |No |No |No |
-| Folder |No |No |No |Yes |
-| Google Analytics |No |No |No |No |
-| Google BigQuery |No |No |No |No |
-| Hadoop File (HDFS) |No |No |No |No |
-| IBM DB2 Database |No |No |Yes |Yes |
-| IBM Netezza |No |No |No |No |
-| Impala |No |No |No |No |
-| Microsoft Exchange |No |No |No |No |
-| Microsoft Exchange Online |No |No |No |No |
-| MySQL Database |No |No |Yes |Yes |
-| OData Feed |Yes |Yes |Yes |Yes |
-| ODBC |Yes |No |Yes |Yes |
-| OLE DB |Yes |No |Yes |Yes |
-| Oracle Database |No |No |Yes |Yes |
-| PostgreSQL Database |No |No |Yes |No |
-| Power BI service |No |No |No |No |
-| Projectplace |No |No |No |No |
-| R Script |No |No |No |No |
-| Salesforce Objects |No |No |No |No |
-| Salesforce Reports |No |No |No |No |
-| SAP Business Warehouse server |No |No |Yes |No |
-| SAP HANA Database |No |No |Yes |Yes |
-| SharePoint File (on-premises) |Yes |No |No |Yes |
-| SharePoint Folder (on-premises) |Yes |No |No |Yes |
-| SharePoint List (on-premises) |Yes |No |No |Yes |
-| SharePoint Online File |No |No |No |No |
-| SharePoint Online Folder |No |No |No |No |
-| SharePoint Online List |No |No |No |No |
-| Smartsheet |No |No |No |No |
-| Snowflake |No |No |No |No |
-| Spark |No |No |No |No |
-| Sybase Database |No |No |Yes |Yes |
-| Teradata |No |No |Yes |Yes (2) |
-| Vertica |No |No |No |No |
-| Web (3) |Yes |No |Yes |Yes |
-| appFigures (Beta) |No |No |No |No |
-| Common Data Service (Legacy) |No |No |No |No |
-| Dynamics 365 for Customer Insights (Beta) |No |No |No |No |
-| Dynamics 365 for Financials (Beta) |No |No |No |No |
-| GitHub (Beta) |No |No |No |No |
-| IBM Informix database (Beta) |No |No |No |No |
-| MailChimp (Beta) |No |No |No |No |
-| Microsoft Azure Consumption Insights (Beta) |No |No |No |No |
-| Mixpanel (Beta) |No |No |No |No |
-| Planview Enterprise One - CTM (Beta) |No |No |No |No |
-| Planview Enterprise One - PRM (Beta) |No |No |No |No |
-| QuickBooks Online (Beta) |No |No |No |No |
-| SparkPost (Beta) |No |No |No |No |
-| SQL Sentry (Beta) |No |No |No |No |
-| Stripe (Beta) |No |No |No |No |
-| SweetIQ (Beta) |No |No |No |No |
-| Troux (Beta) |No |No |No |No |
-| Twilio (Beta) |No |No |No |No |
-| tyGraph (Beta) |No |No |No |No |
-| Visual Studio Team Services (Beta) |No |No |No |No |
-| Webtrends Analytics (Beta) |No |No |No |No |
-| Zendesk (Beta) |No |No |No |No |
-| Other data sources available but not listed above |No |No |No |No |
+| SQL Server Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| SQL Server Analysis Services |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| Azure SQL Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |No  :no_entry: |
+| Azure Analysis Services database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: (1) |No  :no_entry: |
+| Azure Synapse Analytics (formerly SQL Data Warehouse) |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |No  :no_entry: |
+| Active Directory |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| Amazon Athena |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Amazon Redshift |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Azure Blob Storage |Yes :white_check_mark: |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Azure Cosmos DB |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Azure Data Explorer (Kusto) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Azure Data Lake Store |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Azure HDInsight (HDFS) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Azure HDInsight Spark |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Azure Table Storage |No  :no_entry: |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Denodo |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Dynamics 365 (online) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Facebook |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Folder |No  :no_entry: |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |
+| Google Analytics |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Google BigQuery |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Hadoop File (HDFS) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| IBM DB2 Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| IBM Netezza |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Impala |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Microsoft Exchange |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Microsoft Exchange Online |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| MySQL Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| OData Feed |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| ODBC |Yes :white_check_mark: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| OLE DB |Yes :white_check_mark: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| Oracle Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| PostgreSQL Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |No  :no_entry: |
+| Power BI service |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Projectplace |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| R Script |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Salesforce Objects |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Salesforce Reports |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| SAP Business Warehouse server |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |No  :no_entry: |
+| SAP HANA Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| SharePoint File (on-premises) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |
+| SharePoint Folder (on-premises) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |
+| SharePoint List (on-premises) |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |
+| SharePoint Online File |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| SharePoint Online Folder |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| SharePoint Online List |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Smartsheet |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Snowflake |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Spark |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Sybase Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| Teradata |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: (2) |
+| Vertica |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Web (3) |Yes :white_check_mark: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |
+| appFigures (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Common Data Service (Legacy) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Dynamics 365 for Customer Insights (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Dynamics 365 for Financials (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| GitHub (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| IBM Informix database (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| MailChimp (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Microsoft Azure Consumption Insights (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Mixpanel (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Planview Enterprise One - CTM (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Planview Enterprise One - PRM (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| QuickBooks Online (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| SparkPost (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| SQL Sentry (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Stripe (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| SweetIQ (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Troux (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Twilio (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| tyGraph (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Visual Studio Team Services (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Webtrends Analytics (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Zendesk (Beta) |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
+| Other data sources available but not listed above |No  :no_entry: |No  :no_entry: |No  :no_entry: |No  :no_entry: |
 
 (1) For Azure Analysis Services data source, you must have multifactor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multifactor authentication enabled for your environment, review [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview) as an option to disable multifactor authentication for the credentials used in the data source.
 
@@ -209,15 +209,15 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 
 | **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and Password** | **Windows Authentication** | **Integrated Windows Authentication** |
 | --- | --- | --- | --- | --- | --- |
-| SQL Server Database |No |No |Yes |Yes |Yes |
-| SQL Server Analysis Services |No |No |Yes |Yes |Yes |
-| Azure SQL Database |No |No |Yes |No |No |
-| Azure Analysis Services database |No |No |Yes (1) |No |No |
-| Azure Synapse Analytics (formerly SQL Data Warehouse) |No |No |Yes |No |No |
-| Oracle Database |No |No |Yes |Yes |Yes |
-| SAP Business Warehouse server |No |No |Yes |No |No |
-| SAP HANA Database |No |No |Yes |Yes |Yes (2) |
-| Teradata |No |No |Yes |Yes |Yes |
+| SQL Server Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| SQL Server Analysis Services |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| Azure SQL Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Azure Analysis Services database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: (1) |No  :no_entry: |No  :no_entry: |
+| Azure Synapse Analytics (formerly SQL Data Warehouse) |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| Oracle Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
+| SAP Business Warehouse server |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |No  :no_entry: |No  :no_entry: |
+| SAP HANA Database |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: (2) |
+| Teradata |No  :no_entry: |No  :no_entry: |Yes :white_check_mark: |Yes :white_check_mark: |Yes :white_check_mark: |
 
 (1) For Azure Analysis Services data source, you must have multifactor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multifactor authentication enabled for your environment, review [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview) as an option to disable multifactor authentication for the credentials used in the data source.
 
