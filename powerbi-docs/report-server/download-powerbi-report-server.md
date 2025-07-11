@@ -27,13 +27,14 @@ For details and more information about what's new in this release, see [Change l
 
 ## Download PBIRS
 
-**[Download Power BI Report Server](https://aka.ms/pbireportserverexe)**
+**[Donwload Microsoft Power BI Report Server - May 2025](https://www.microsoft.com/en-us/download/details.aspx?id=105944)**
 
 PBIRS May 2025 is the latest generally available (GA) version.
 
 - Release name: Power BI Report Server (May 2025)
-- Build number: 15.0.1118.126
-- Release date: May 27, 2025
+- Version: 1.23.9316.13987
+- Build number: 15.0.1118.134
+- Release date: July 9, 2025
 
 ## System Requirements
 
