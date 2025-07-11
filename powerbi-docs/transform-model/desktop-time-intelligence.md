@@ -50,7 +50,7 @@ Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are
 
 - [**Classic time intelligence**](#classic-time-intelligence). The easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations.
 
-- [**Calendar based time-intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations.
+- [**Calendar-based time intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations.
 
 > [!NOTE]
 > You will need to [set your table as a date table](desktop-date-tables.md#benefits-of-setting-your-own-date-table) for specific scenarios.
@@ -67,7 +67,7 @@ While this is a fast and easy approach, there are many downsides compared to the
 
 - it requires you set the date table
 - it only works with models that have at least one dedicated date table
-- the date table(s) should have no missing dates between the first and last dates
+- the date column(s) used should have no missing dates between the first and last dates. If there are any missing dates between the first and last dates, an error will be thrown.
 - it's less flexible as it's optimized for Gregorian or shifted Gregorian calendars, such as fiscal years that start on July 1 but still follow a Gregorian calendar
 - it doesn't provide week-based calculations
 - in specific scenarios, time-based calculations don't perform well.
@@ -75,9 +75,26 @@ While this is a fast and easy approach, there are many downsides compared to the
 > [!NOTE]
 > We recommend you use the [enhanced, calendar-based](#calendar-based-time-intelligence-preview) approach.
 
-## Calendar-based time-intelligence (preview)
+## Calendar-based time intelligence (preview)
 
-Calendars are metadata definitions added to a table to indicate which columns from that table represent what attributes of time. Calendars give you full flexibility to decide how to divide up time in years, quarters, months, and weeks. You can, for example, define the calendars that follow these patterns:
+Calendars are metadata definitions added to a table to indicate which columns from that table represent what attributes of time. You can define one or more calendars on any table in your model. After you defined the calendar in your model, you can refer to it in your time-intelligence functions. For example, here's how to calculate a total year to date of Sales using a defined **Fiscal calendar**:
+
+```dax
+TOTALYTD ( [Sales], 'Fiscal Calendar' )
+```
+
+### Benefits of calendar-based time intelligence
+
+Main benefits of calendar-based time intelligence are:
+
+- [Works with any calendar](#works-with-any-calendar)
+- [Sparse dates](#sparse-dates)
+- [Week-based calculations](#week-based-calculations)
+- [Performance improvements](#performance-improvements)
+
+#### Works with any calendar
+
+Calendars give you full flexibility to decide how to divide up time in years, quarters, months, and weeks. You can, for example, define the calendars that follow these patterns:
 
 - Gregorian
 - Shifted Gregorian
@@ -85,13 +102,23 @@ Calendars are metadata definitions added to a table to indicate which columns fr
 - 13-month
 - Lunar
 
-The possibilities are endless as there's no built-in assumption from Power BI on how your calendar is structured.
+The possibilities are endless as there's no built-in assumption from Power BI on how your calendar is structured. Calendar-based time intelligence makes no assumptions about the underlying dates. All calculations use the underlying data exactly as-is.
 
-You can define one or more calendars on any table in your model. After you defined the calendar in your model, you can refer to it in your time-intelligence functions. For example, here's how to calculate a total year to date of Sales using a defined **Fiscal calendar**:
+#### Sparse dates
+
+[Classic time intelligence](#classic-time-intelligence) requires that the date column provided is complete - if there are any missing dates between the first and last dates, an error will be thrown. Calendar-based time intelligence functions do not have such a requirement. Instead, they operate on the dates as-is.
+
+#### Week-based calculations
+
+Calendar-based time intelligence directly supplies DAX functions that operate at a week granularity. For example, week-to-date totals can be computed directly using [TOTALWTD](/dax/totalwtd-dax-function):
 
 ```dax
-TOTALYTD ( [Sales], 'Fiscal Calendar' )
+TOTALWTD ( Expr, CalendarName )
 ```
+
+#### Performance improvements
+
+Some scenarios may exhibit improved performance when comparing a calendar-based time intelligence function to its classic counterpart. For example, a visual that is grouped by the week and performs a year-to-date calculation using `TOTALYTD ( ..., CalendarName )` should generally execute more quickly than if its classic counterpart, `TOTALYTD ( ..., TableName[DateColumnName] )`, were used. For insight into why this might happen, please refer to the [**Context clearing**](#context-clearing) section below.
 
 ### Enabling the enhanced DAX Time Intelligence preview
 
@@ -251,6 +278,93 @@ Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require
 
 > [!NOTE]
 > For some functions their name is indicative of which level the calculation operates (e.g. [TOTALYTD](/dax/totalytd-function-dax)), while for others it is dependent on the parameters and context (e.g. [DATEADD](/dax/dateadd-function-dax)).
+
+### Context Clearing
+
+Time intelligence functions operate by starting at a point in time, and then performing some operation on it in order to yield a different point in time. Naturally, the initial point in time may conflict with this result, thus causing a filter context intersection that by default, would yield partial or empty results. For example, consider the following scenario.
+
+#### Calendar definition
+We have a simple Gregorian calendar which tags three categories, defined as:
+
+| Category | Primary Column |
+| --- | --- |
+| Year | Year |
+| Month of Year | MonthOfYear |
+| Quarter | Quarter |
+
+#### Measure definitions
+
+Two basic measures are defined: one to compute the total sales, and another to compute the total sales from the previous quarter:
+
+```dax
+[TotalSales] = CALCULATE ( SUM( FactInternetSales[SalesAmount] ) )
+[LastQuarterSales] = CALCULATE ( [TotalSales], DATEADD( GregorianCalendar, -1, QUARTER ) )
+```
+
+#### Example: how context clearing works
+
+Our table visual browses at a month granularity using the **Year** and **MonthOfYear** columns:
+
+| Year | MonthOfYear | TotalSales | LastQuarterSales |
+| --- | --- | --- | --- |
+| 2011 | 1 | 10 |  |
+| 2011 | 2 | 20 |  |
+| 2011 | 3 | 30 |  |
+| **2011** | **4** | **40** | **10** |
+| 2011 | 5 | 50 | 20 |
+
+In the above, the bolded row is browsing at a month-level, for the month of April 2011. Thus, all measures in this row will be evaluated under the filter context of **[Year] == 2011 and [MonthOfYear] == 4**.  
+As expected, **TotalSales** here is computed as the total sales for April 2011.
+
+**LastQuarterSales** similarly computes **TotalSales**, but given an additional filter provided by the `DATEADD` calendar-based function.
+For this row, `DATEADD` would have an initial starting point in time of April 2011, and would yield the point in time that is exactly one quarter ago: January 2011. As a result, one may expect this **TotalSales** to be computed under the following two filter contexts:
+
+- Provided by the current row's browsing columns:
+`{ [Year] == 2011, [MonthOfYear] == 4 }` (Equivalently, April 2011)
+- Provided by the DATEADD filter:
+`{ [Year] == 2011, [MonthOfYear] == 1 }` (Equivalently, January 2011)
+
+Clearly, the two filter contexts above would conflict - we cannot evaluate the total sales given the current month as both January 2011 **and** April 2011. Such an intersection would of course yield no results.
+However, this is not what occurs. Instead, based on the calendar definition, calendar-based time intelligence functions will identify which categories' columns may result in conflicts, following the time operation that the function performs. In this case, `DATEADD` performs a shift at the **Quarter** level. The function will identify that both the **Year** and **Month of Year** categories may change as a result of a change in the **Quarter** category's columns. Thus, the function will clear filter context on **all** (both primary and associated) columns that are tagged to those categories. 
+
+In other words, we can say that the **Year** and **Month of Year** categories are dependencies of the **Quarter** category. Conversely, we can say that the **Quarter**" category is a dependent of the **Year** and **Month of Year** categories.
+
+#### How context clearing works
+
+:::image type="content" source="media/desktop-time-intelligence/time-lattice.png" alt-text="Lattice structure diagram of all calendar categories." lightbox="media/desktop-time-intelligence/time-lattice.png":::
+
+The diagram above is provided to better visualize the dependencies between the different time categories. Each category in this lattice represents all columns (primary and associated) tagged to that category.
+Categries are connected to their dependencies via arrows. For example, "Month" is dependent on "Year", "Quarter of Year", "Month Of Quarter", "Quarter", and "Month of Year".
+
+When a calendar-based time intelligence functions sets a filter context on a category "X", prior filter context will be cleared on:
+
+1. All category **dependencies** of X. This can be thought of as all categories above X.
+2. All category **dependents** of both X and its dependencies (i.e. from 1. above). This can be thought of as all categories below X and all categories in 1 above.
+
+##### Time-related columns
+
+If filter context is set on a time-related column, context clearing is performed on **all** time-related columns.
+
+##### Cross-calendar behavior
+
+If there are multiple calendars defined on the same table, the above processes will be completed for **every** calendar defined on the table. This includes the above remark regarding the context clearing of time-related columns.
+In other words, assume a table defines 3 calendars: Calendar1, Calendar2, and Calendar3. If filter context is set on category "X" in Calendar1, the above processes will be performed on all three calendars.
+
+#### Example: Filter set on "Quarter"
+
+If filter context were set on the category "Quarter", the process would be as follows.
+
+1. First, all dependencies of the "Quarter" category would be considered.
+
+    :::image type="content" source="media/desktop-time-intelligence/context-clearing-on-quarter-1.png" alt-text="Filter context clearing behavior example starting from category Quarter: Dependencies." lightbox="media/desktop-time-intelligence/context-clearing-on-quarter-1.png":::
+
+2. Next, all dependents of "Quarter" and its dependencies would be considered.
+
+    :::image type="content" source="media/desktop-time-intelligence/context-clearing-on-quarter-2.png" alt-text="Filter context clearing behavior example starting from category Quarter: Dependents." lightbox="media/desktop-time-intelligence/context-clearing-on-quarter-2.png":::
+
+3. Finally, the end result would be the following. All red colored categories would have their prior filter context removed.
+
+    :::image type="content" source="media/desktop-time-intelligence/context-clearing-on-quarter-3.png" alt-text="Filter context clearing behavior example starting from category Quarter: Results" lightbox="media/desktop-time-intelligence/context-clearing-on-quarter-3.png":::
 
 ### TMDL script for calendars
 
