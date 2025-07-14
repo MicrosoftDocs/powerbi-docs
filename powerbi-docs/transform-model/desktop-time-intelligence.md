@@ -224,8 +224,6 @@ There should always be a path to unique identify the period for the assigned cat
 
 Whenever you add a **partial category**, Power BI validates that a matching combination of complete or partial categories is also tagged in the same calendar. If that isn't the case, a warning is shown.
 
-
-# TODO: update this image
 :::image type="content" source="media/desktop-time-intelligence/calendar-realtime-validation-error.png" alt-text="Screenshot showing the calendar creation and edit screen with a real-time validation error." lightbox="media/desktop-time-intelligence/calendar-realtime-validation-error.png":::
 
 For example, when setting up a calendar for week-based calculations, make sure to assign at least a primary column to one of the following sets of categories:
