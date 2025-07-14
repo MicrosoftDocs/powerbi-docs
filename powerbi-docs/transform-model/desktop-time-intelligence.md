@@ -574,6 +574,7 @@ The elaborate example above shows that different time intelligence functions beh
 - Calendars are subject to both [real-time](#real-time-validations) as well as [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 - Each calendar must have a unique name within the data model
 - A single table can contain multiple calendars
+- The table that contains the calendar must have less than 200 columns. If the table contains more than 20,000 rows the validations will not be available but you can still add a calendar.
 - A calendar must at least assign one primary column to a category
 - A calendar can only assign columns from its own table to categories
 - Each category should have a primary column and can have zero or more associated columns assigned
