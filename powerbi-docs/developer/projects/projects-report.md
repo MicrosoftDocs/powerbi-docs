@@ -123,9 +123,11 @@ Example using `byConnection`:
 }
 ```
 > [!IMPORTANT]
-> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you must use `byConnection` references.
+> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you must use `byConnection` references. This should not be confused with the [storage mode](https://learn.microsoft.com/power-bi/transform-model/desktop-storage-mode) of a semantic model such as DirectQuery. The `datasetReference` in the report only specifies which semantic model the report connects to, it does not define how that model stores or accesses its data.
 
-When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
+##### Multiple *.pbir files
+
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always exports definitions with a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
 
 ```md
   ├── definition\
@@ -134,7 +136,7 @@ When the semantic model and report share the same workspace, [Fabric Git Integra
   ├── definition-liveConnect.pbir
   └── definition.pbir
 ```
-This file also specifies the supported report definition formats through the 'version' property.
+The `definition.pbir` file also specifies the supported report definition formats through the 'version' property.
 
 | Version  | Supported formats    |
 |----------|----------------------------|
@@ -380,18 +382,13 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 
 ### PBIR considerations and limitations
 
-PBIR is currently in **preview**. Keep the following limitations in mind:
+PBIR is currently in **preview**. Keep the following in mind:
 
-- Service limitations/bugs
-  - Can't be deployed with deployment pipelines.  
-  - Can't be saved as a copy.
-  - Can't use Power BI Report APIs: [Clone Report](/rest/api/power-bi/reports/clone-report-in-group), [Update Report Content](/rest/api/power-bi/reports/update-report-content-in-group)
-  - Can't use Power BI [usage metrics report](/power-bi/collaborate-share/service-usage-metrics).
-- Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
-  - Saving in Power BI Desktop
-  - Synchronization in Fabric Git Integration
+- Large reports with more than 500 files may experience authoring performance issues (report viewing isn't affected).
 - Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back. Although a backup is created at the moment of conversion.
 - Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
+- [Visual automatic filters](https://learn.microsoft.com/power-bi/create-reports/power-bi-report-filter-types#automatic-filters) are persisted to the PBIR `visual.json` file only after the filter pane has been expanded at least once while editing the report.
+
 
 PBIR size limitations enforced by the service:
 
