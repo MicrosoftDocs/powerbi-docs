@@ -83,7 +83,7 @@ sections:
       - question: |
           Can I create tooling on a report instead of the model?
         answer: |
-          Today, the tooling and configuration features are only available on the model. Configuring different reports built off the same model isn't yet supported. The schema, verified answers, synonyms, instructions, and descriptions are set on the semantic model but not on the report.   
+          Today, the tooling and configuration features are only available on the model. Configuring different reports built off the same model isn't yet supported. The schema, verified answers, instructions, and descriptions are set on the semantic model but not on the report.   
 
       - question: |
           Which Copilot capabilities are affected by preparing my data for Copilot?
@@ -123,8 +123,6 @@ sections:
           If you have a term Copilot is struggling to understand that always have the same single correct item to reference in your model, you can provide an alternative name through AI instructions. 
           
           For example, if your team calls the people who sell your products "closers," then the best option would be to give a reference in AI instructions by setting "sellers" to also be known as "closers."
-          
-          Synonyms set through Q&A setup are respected, but only when Copilot is answering a question from your semantic model. We're actively working on including synonyms to help prepare your data for Copilot.
 
       - question: |
            I'm trying to get Copilot to understand terms with conditions or groupings. Which feature should I use?
