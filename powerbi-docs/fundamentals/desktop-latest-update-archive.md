@@ -11,6 +11,7 @@ ms.date: 07/15/2025
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ai-usage: ai-assisted
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
 
@@ -20,7 +21,7 @@ The monthly blog and video updates for Power BI Desktop now also include "what's
 
 The links beside each update mean the following:
 
-* **[video]** excerpts play in a new browser tab, when the feature is being discussed.
+* **[video]** excerpts play n a new browser tab, when the feature is being discussed.
 * Some features have an **[article]** that provides more detail.
 * Most features are explained in the monthly update **[blog]** post.
 * Lastly, some features are self-explanatory and don't need an article or video.
