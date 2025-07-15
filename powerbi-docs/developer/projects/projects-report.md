@@ -123,7 +123,7 @@ Example using `byConnection`:
 }
 ```
 > [!IMPORTANT]
-> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you must use `byConnection` references. This should not be confused with the [storage mode](https://learn.microsoft.com/power-bi/transform-model/desktop-storage-mode) of a semantic model such as DirectQuery. The `datasetReference` in the report only specifies which semantic model the report connects to, it does not define how that model stores or accesses its data.
+> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you must use `byConnection` references. This should not be confused with the [storage mode](../transform-model/desktop-storage-mode.md) of a semantic model such as DirectQuery. The `datasetReference` in the report only specifies which semantic model the report connects to, it does not define how that model stores or accesses its data.
 
 ##### Multiple *.pbir files
 
@@ -387,7 +387,7 @@ PBIR is currently in **preview**. Keep the following in mind:
 - Large reports with more than 500 files may experience authoring performance issues (report viewing isn't affected).
 - Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back. Although a backup is created at the moment of conversion.
 - Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
-- [Visual automatic filters](https://learn.microsoft.com/power-bi/create-reports/power-bi-report-filter-types#automatic-filters) are persisted to the PBIR `visual.json` file only after the filter pane has been expanded at least once while editing the report.
+- [Visual automatic filters](../create-reports/power-bi-report-filter-types.md#automatic-filters) are persisted to the PBIR `visual.json` file only after the filter pane has been expanded at least once while editing the report.
 
 
 PBIR size limitations enforced by the service:
