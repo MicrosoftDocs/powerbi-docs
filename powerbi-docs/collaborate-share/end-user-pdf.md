@@ -34,26 +34,26 @@ If your report has a sensitivity label, the label and any encryption settings ca
 
 ![Screenshot showing how to select Export from the menu bar.](media/end-user-pdf/power-bi-export-pdf.png)
    
-       A pop-up appears where you can select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in its original state, as the *designer* shared it, and doesn't reflect any changes you made to that original state.
+A pop-up appears where you can select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in its original state, as the *designer* shared it, and doesn't reflect any changes you made to that original state.
  
-       Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, you can leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. After you make your selections, select **Export** to continue.
+Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, you can leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. After you make your selections, select **Export** to continue.
  
-       You may also choose to export only the current page you're viewing in a report by checking the **Only export current page** option. By default, this option is unchecked and all pages are exported from your report.
+You may also choose to export only the current page you're viewing in a report by checking the **Only export current page** option. By default, this option is unchecked and all pages are exported from your report.
  
-       A progress bar displays in the upper-right corner. Exporting might take a few minutes. You can continue to work in the Power BI service while the report is being exported.
+A progress bar displays in the upper-right corner. Exporting might take a few minutes. You can continue to work in the Power BI service while the report is being exported.
 
 ![Image of the Export progress message.](media/end-user-pdf/power-bi-export-progress.png)
    
-       After the Power BI service finishes the export process, the notification banner changes to let you know. In Microsoft Edge, you are prompted to save or open the PDF. 
+After the Power BI service finishes the export process, the notification banner changes to let you know. In Microsoft Edge, you are prompted to save or open the PDF. 
 
 :::image type="content" source="media/end-user-pdf/power-bi-exports.png" alt-text="Screenshot of selecting the option to open or save the PDF.":::
 
 
-       In Google Chrome, the file options display in the lower left corner of the browser. 
+In Google Chrome, the file options display in the lower left corner of the browser. 
 
-       :::image type="content" source="media/end-user-pdf/power-bi-export-end.png" alt-text="Screenshot showing the PDF options in the left corner of s Chrome browser.":::
+:::image type="content" source="media/end-user-pdf/power-bi-export-end.png" alt-text="Screenshot showing the PDF options in the left corner of s Chrome browser.":::
 
-       If you make no selection, by default, the PDF is saved in your **Downloads** folder. 
+If you make no selection, by default, the PDF is saved in your **Downloads** folder. 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
