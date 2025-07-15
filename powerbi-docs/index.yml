@@ -245,7 +245,7 @@ conceptualContent:
             - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
               itemType: quickstart
               text: Explore dashboards and reports
-            - url: /training/modules/explore-power-bi-mobile-apps
+            - url: /power-bi/consumer/mobile/mobile-apps-for-mobile-devices
               itemType: learn
               text: Get data on the go with the mobile apps
           # footerLink (optional)
