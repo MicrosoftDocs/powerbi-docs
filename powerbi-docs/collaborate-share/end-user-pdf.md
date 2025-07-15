@@ -33,27 +33,27 @@ If your report has a sensitivity label, the label and any encryption settings ca
 1. In the Power BI service, select **Export** > **PDF** from the menu bar.
 
     ![Screenshot showing how to select Export from the menu bar.](media/end-user-pdf/power-bi-export-pdf.png)
-
-    A pop-up appears where you can select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in its original state, as the *designer* shared it, and doesn't reflect any changes you made to that original state.
-    
-    Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, you can leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. After you make your selections, select **Export** to continue.
-    
-    You may also choose to export only the current page you're viewing in a report by checking the **Only export current page** option. By default, this option is unchecked and all pages are exported from your report.
-    
-    A progress bar displays in the upper-right corner. Exporting might take a few minutes. You can continue to work in the Power BI service while the report is being exported.
+   
+       A pop-up appears where you can select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in its original state, as the *designer* shared it, and doesn't reflect any changes you made to that original state.
+ 
+       Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, you can leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. After you make your selections, select **Export** to continue.
+ 
+       You may also choose to export only the current page you're viewing in a report by checking the **Only export current page** option. By default, this option is unchecked and all pages are exported from your report.
+ 
+       A progress bar displays in the upper-right corner. Exporting might take a few minutes. You can continue to work in the Power BI service while the report is being exported.
 
     ![Image of the Export progress message.](media/end-user-pdf/power-bi-export-progress.png)
+   
+       After the Power BI service finishes the export process, the notification banner changes to let you know. In Microsoft Edge, you are prompted to save or open the PDF. 
 
-    After the Power BI service finishes the export process, the notification banner changes to let you know. In Microsoft Edge, you are prompted to save or open the PDF. 
-
-    :::image type="content" source="media/end-user-pdf/power-bi-exports.png" alt-text="Screenshot of selecting the option to open or save the PDF.":::
+       :::image type="content" source="media/end-user-pdf/power-bi-exports.png" alt-text="Screenshot of selecting the option to open or save the PDF.":::
 
 
-    In Google Chrome, the file options display in the lower left corner of the browser. 
+       In Google Chrome, the file options display in the lower left corner of the browser. 
 
-    :::image type="content" source="media/end-user-pdf/power-bi-export-end.png" alt-text="Screenshot showing the PDF options in the left corner of s Chrome browser.":::
+       :::image type="content" source="media/end-user-pdf/power-bi-export-end.png" alt-text="Screenshot showing the PDF options in the left corner of s Chrome browser.":::
 
-    If you make no selection, by default, the PDF is saved in your **Downloads** folder. 
+       If you make no selection, by default, the PDF is saved in your **Downloads** folder. 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -123,8 +123,10 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 * Export to PDF supports Unicode 6 and earlier. If for example, Unicode 7 is used, Power BI export displays that image as a blank box. 
 
     ![Export visual with scrollbars.](media/end-user-pdf/export-to-pdf-03.png)
-
+  
 * Visuals in a drilled down state are exported in their default state. 
+* User selection of bookmark navigators is not reflected. If a default is defined, then the default will always show as selected in the export.
+
 * The feature doesn't export any wallpaper you apply to the report. Since wallpaper isn't exported to the PDF, you should pay special attention to reports that use dark wallpaper. If the text in your report is light or white, it is difficult to read in the export to PDF process since the dark wallpaper isn't exported with the rest of the report. 
 * All Power BI reports have a page margin when exported to PDF. That is, there is a band of white space at the top and bottom of the exported file.
 * If you acess a report using a bookmark, the exported report displays with the bookmark filters applied. Any filters applied at the time of the export are ignored. You can get around this by creating a bookmark with the required filters and then export the report.
