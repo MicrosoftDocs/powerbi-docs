@@ -15,7 +15,7 @@ ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 ---
 
-# What's new in Power BI: July 2025 update
+# What's new in Power BI: July 2025 update (2.145.1105.0)
 
 The [July 2025 Power BI update](https://powerbi.microsoft.com/blog/power-bi-july-2025-feature-summary/) introduces richer Microsoft 365 connections, smarter Copilot features, and integrated reporting with PBIRS and SQL Server 2025. This article covers all the new features, benefits, and improvements to help you get the most out of Power BI.
 
