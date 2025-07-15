@@ -153,6 +153,18 @@ Contact the SharePoint Online page owner to help resolve the issue.
 
 Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per User (PPU) license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md#capacities-and-skus)**.
 
+## Enable Copilot in embedded reports in SharePoint
+You can activate Copilot for embedded reports by selecting the "Enable Copilot" checkbox in the embedded reports dialog. Keep in mind that this feature requires an active Copilot tenant switch and either Power BI Premium or paid Fabric capacity in your workspace. Once enabled, users can interact directly with Copilot within the embedded report.
+
+1. From the **File** menu, select Embed report, then select **SharePoint Online**.
+   
+![Screenshot showing More options menu with SharePoint Online highlighted.](media/service-embed-report-spo/powerbi-embed-sharepoint-copilot-menu.png)
+
+2. Select the **Enable Copilot** checkbox.
+   
+![Screenshot of Embed dialog with Enable Copilot option checked.](media/service-embed-report-spo/powerbi-embed-sharepoint-copilot-link.png)
+
+
 ## Known issues and limitations
 
 * Error: "An error occurred, try logging out and back in and then revisiting this page. Correlation ID: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
