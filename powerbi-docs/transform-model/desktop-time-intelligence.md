@@ -360,7 +360,7 @@ If filter context were set on the category "Quarter", the process would be as fo
 
     :::image type="content" source="media/desktop-time-intelligence/context-clearing-on-quarter-2.png" alt-text="Filter context clearing behavior example starting from category Quarter: Dependents." lightbox="media/desktop-time-intelligence/context-clearing-on-quarter-2.png":::
 
-3. Finally, the end result would be the following. All red colored categories would have their prior filter context removed.
+3. Finally, the end result would be the following. All red colored categories would have their prior filter context removed and new context is set on Quarter. 
 
     :::image type="content" source="media/desktop-time-intelligence/context-clearing-on-quarter-3.png" alt-text="Filter context clearing behavior example starting from category Quarter: Results" lightbox="media/desktop-time-intelligence/context-clearing-on-quarter-3.png":::
 
