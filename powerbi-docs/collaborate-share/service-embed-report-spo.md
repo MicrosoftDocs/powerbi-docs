@@ -158,7 +158,7 @@ You can activate Copilot for embedded reports by selecting the "Enable Copilot" 
 
 1. From the **File** menu, select Embed report, then select **SharePoint Online**.
    
-![Screenshot showing More options menu with SharePoint Online highlighted.](media/service-embed-report-spo/powerbi-embed-sharepoint-copilot-menu.png)
+![Screenshot showing More options menu with SharePoint Online highlighted for Copilot.](media/service-embed-report-spo/powerbi-embed-sharepoint-copilot-menu.png)
 
 2. Select the **Enable Copilot** checkbox.
    
