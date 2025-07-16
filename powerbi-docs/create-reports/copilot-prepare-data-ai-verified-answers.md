@@ -175,7 +175,8 @@ These guidelines can help ensure your verified answers are reliably triggered wh
 
 See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-limitations) for a comprehensive list.
 
-- Any filters on the visual (visual, page, or report level) that are applied upon verified answer setup are applied to the data in the verified answer.
+-  Git integration is not yet supported.
+-  Any filters on the visual (visual, page, or report level) that are applied upon verified answer setup are applied to the data in the verified answer.
 - Drill through filters not supported.
 - Cross highlighting / cross filtering not supported.
 - Slicers aren't included in verified answer states (slicers applied on the report don't persist in the verified answer).
