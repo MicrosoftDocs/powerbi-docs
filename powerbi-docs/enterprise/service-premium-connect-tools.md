@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 09/03/2024
+ms.date: 07/01/2025
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -57,7 +57,7 @@ Common applications and tools used with Azure Analysis Services and SQL Server A
 
 **Power BI Report Builder** - A tool for authoring paginated reports. Create a report definition that specifies the data to retrieve, where to get it, and how to display it. You can preview your report in Report Builder and then publish your report to the Power BI service. Requires XMLA read-only. To learn more, see [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
-**Tabular Editor** - An open-source tool for creating, maintaining, and managing tabular models using an intuitive, lightweight editor. A hierarchical view shows all objects in your tabular model. Organizes objects by display folders with support for multi-select property editing and DAX syntax highlighting. Requires XMLA read-only for query operations. Requires read-write for metadata operations. To learn more, see [tabulareditor.github.io](https://github.com/TabularEditor/tabulareditor.github.io).
+**Tabular Editor 2.x** - An open-source tool for creating, maintaining, and managing tabular models using an intuitive, lightweight editor. A hierarchical view shows all objects in your tabular model. Organizes objects by display folders with support for multi-select property editing and DAX syntax highlighting. Requires XMLA read-only for query operations. Requires read-write for metadata operations. To learn more, see [Tabular Editor 2.x](https://github.com/TabularEditor/tabulareditor).
 
 **DAX Studio** – An open-source tool for DAX authoring, diagnosis, performance tuning, and analysis. Features include object browsing, integrated tracing, query execution breakdowns with detailed statistics, DAX syntax highlighting and formatting. Requires XMLA read-only for query operations. To learn more, see [daxstudio.org](https://daxstudio.org/).
 
@@ -138,7 +138,7 @@ With some tools, such as SQL Server Profiler, you must specify an *Initial Catal
 
 To work around, in addition to the workspace name specify the ObjectIDGuid. You can copy the ObjectIDGuid from the workspace objectID in the URL. Append the objectID to the connection URL. For example:
 
-`powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830`.
+`powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - aaaabbbb-0000-cccc-1111-dddd2222eeee`.
 
 ### Duplicate semantic model name
 

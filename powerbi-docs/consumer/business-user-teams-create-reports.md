@@ -78,13 +78,7 @@ To build a report from a semantic model shared with you, follow these steps.
 
 1. Open the Power BI app for Microsoft Teams.
 1. Select the **Create** tab > **Pick a published semantic model**.
-
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Screenshot of Power BI app open in Teams with the Create tab and Pick a published semantic model option selected." lightbox="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png":::
-
 1. Select a semantic model > **Auto-create report**.
-
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Screenshot of a window open to select a semantic model to create a report with the report and create button selected." lightbox="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png":::
-
 1. Start exploring the data.
 
     - Use visualizations like charts, tables, and maps to show data in various ways.

@@ -6485,7 +6485,61 @@
             "source_path": "powerbi-docs/connect-data/service-datamart-details-page.md",
             "redirect_url": "/fabric/governance/onelake-catalog-item-details",
             "redirect_document_id": false
-        } 
-
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/power-bi-service-overview.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/service-service-vs-desktop.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/desktop-what-is-desktop.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/fabric-power-bi.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/consumer/end-user-license.md",
+            "redirect_url": "/power-bi/fundamentals/end-user-license",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md",
+            "redirect_url": "/power-bi/collaborate-share/service-share-dashboards",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/fundamentals/service-experience-changes.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/create-reports/copilot-create-copilots.md",
+            "redirect_url": "/power-bi/create-reports/copilot-create-narrative",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/create-reports/copilot-narrative-visual-embed-power-bi.md",
+            "redirect_url": "/power-bi/create-reports/copilot-create-narrative",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-hololens2-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-known-issues-with-the-iphone-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/",
+            "redirect_document_id": false
+        }   
     ]
 }

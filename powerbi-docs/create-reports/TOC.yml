@@ -264,6 +264,8 @@
           href: copilot-chat-with-data-standalone.md
         - name: Copilot for reports and models
           href: copilot-reports-overview.md
+        - name: Copilot in Power BI Desktop
+          href: copilot-power-bi-desktop.md
         - name: Copilot in Power BI Mobile app
           href: ../consumer/mobile/mobile-apps-copilot.md
       - name: Copilot features for business users
@@ -306,6 +308,8 @@
           href: copilot-prepare-data-ai-faq.yml             
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
+        - name: Optimize your semantic model for Copilot
+          href: copilot-evaluate-data.md
       - name: Copilot for Fabric and Power BI
         items: 
         - name: 1 - Copilot in Fabric overview
@@ -874,14 +878,24 @@
         href: ../paginated-reports/report-design/visualizations/charts-report-builder.md
       - name: Add a chart to paginated reports
         href: ../paginated-reports/report-design/visualizations/add-chart-report-report-builder.md
-      - name: Change the chart type in a paginated report
-        href: ../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md
+      - name: Add multiple series to a chart
+        href: ../paginated-reports/report-design/visualizations/multiple-series-on-chart-report-builder.md
+      - name: Plot data on a secondary axis
+        href: ../paginated-reports/report-design/visualizations/plot-data-secondary-axis-report-builder.md
+      - name: Set or configure measurement units on a chart
+        href: ../paginated-reports/report-design/visualizations/set-configure-measurement-units-report-builder.md
+      - name: Specify consistent colors across multiple shape charts
+        href: ../paginated-reports/report-design/visualizations/specify-consistent-colors-across-multiple-shape-charts-report-builder.md
+      - name: Tree map and sunburst charts in paginated reports
+        href: ../paginated-reports/report-design/visualizations/tree-map-and-sunburst-charts-in-paginated-reports.md
       - name: Chart types in paginated reports
         items: 
         - name: Chart types in paginated reports
           href: ../paginated-reports/report-design/visualizations/chart-types-report-builder.md
         - name: Area charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/area-charts-report-builder.md
+        - name: Bar charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/bar-charts-report-builder.md
         - name: Column charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/column-charts-report-builder.md
         - name: Line charts in paginated reports
@@ -890,20 +904,16 @@
           href: ../paginated-reports/report-design/visualizations/pie-charts-report-builder.md
         - name: Polar charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/polar-charts-report-builder.md
+        - name: Range charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/range-charts-report-builder.md
         - name: Scatter charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/scatter-charts-report-builder.md
         - name: Shape charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/shape-charts-report-builder.md
         - name: Stock charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/stock-charts-report-builder.md
-        - name: Indicators in paginated reports
-          href: ../paginated-reports/report-design/visualizations/indicators-report-builder.md
-        - name: Gauges in paginated reports
-          href: ../paginated-reports/report-design/visualizations/gauges-report-builder.md
-        - name: Add a gauge to a paginated report
-          href: ../paginated-reports/report-design/visualizations/add-gauge-to-report-report-builder.md
-        - name: Bar charts in paginated reports
-          href: ../paginated-reports/report-design/visualizations/bar-charts-report-builder.md
+        - name: Change the chart type in a paginated report
+          href: ../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md
       - name: Format charts in paginated reports
         items:
         - name: Format charts in paginated reports
@@ -984,6 +994,12 @@
           href: ../paginated-reports/report-design/visualizations/start-pie-chart-values-top-pie-report-builder.md
         - name: Vary polygon, line, and point display in a paginated report
           href: ../paginated-reports/report-design/visualizations/vary-polygon-line-point-display-by-rules-analytical-data.md
+        - name: Indicators in paginated reports
+          href: ../paginated-reports/report-design/visualizations/indicators-report-builder.md
+        - name: Gauges in paginated reports
+          href: ../paginated-reports/report-design/visualizations/gauges-report-builder.md
+        - name: Add a gauge to a paginated report
+          href: ../paginated-reports/report-design/visualizations/add-gauge-to-report-report-builder.md
     - name: Headers and footers in paginated reports
       items: 
       - name: Headers and footers in paginated reports
@@ -1040,6 +1056,10 @@
         href: ../paginated-reports/paginated-reports-data-sources.md
       - name: Connect via Get Data
         href: ../paginated-reports/report-builder/connect-snowflake-databricks-power-query-online.md
+      - name: Use the relational query designer
+        href: ../paginated-reports/report-builder/relational-query-designer-user-interface-report-builder.md
+      - name: Teradata connection type
+        href: ../paginated-reports/report-builder/teradata-connection-type-report-builder.md
       - name: Support for ODBC data sources
         href: ../paginated-reports/paginated-reports-odbc-support.md
       - name: Create an embedded data source
@@ -1196,6 +1216,8 @@
         href: ../paginated-reports/parameters/add-cascading-parameters-report-builder.md
       - name: Define parameters in DAX for Analysis Services data source
         href: ../paginated-reports/parameters/define-parameters-in-the-dax-query-designer-for-analysis-services.md
+      - name: Add or modify available values for parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md
     - name: Device information settings
       items:
       - name: Device information settings for rendering extensions
@@ -1230,6 +1252,8 @@
         href: ../paginated-reports/report-builder/export-pdf-file-report-builder.md
       - name: Export to XML file format
         href: ../paginated-reports/report-builder/export-xml-report-builder.md
+      - name: XML device information settings
+        href: ../paginated-reports/device-info/xml-device-information-settings.md
     - name: Report layout and rendering 
       items:
       - name: Page layout and rendering in paginated reports

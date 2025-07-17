@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/27/2025
+ms.date: 07/07/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,16 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## June 2025 QFE 3
+
+*Version 2.144.1378.0, Released: July 3, 2025*
+
+Bug fixes/improvements:
+
+- Resolved an issue where the product would fail to refresh tables when opening the model and the local model.abf is stale.
+- Fixed a bug in error handling by mapping the unrecognized error code to a user-friendly "region not supported" message for Copilot.
 
 ## June 2025 QFE 2 
 
