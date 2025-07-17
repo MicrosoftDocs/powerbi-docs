@@ -126,7 +126,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 
 * The feature doesn't export any wallpaper you apply to the report. Since wallpaper isn't exported to the PDF, you should pay special attention to reports that use dark wallpaper. If the text in your report is light or white, it is difficult to read in the export to PDF process since the dark wallpaper isn't exported with the rest of the report. 
 * All Power BI reports have a page margin when exported to PDF. That is, there is a band of white space at the top and bottom of the exported file.
-* If you acess a report using a bookmark, the exported report displays with the bookmark filters applied. Any filters applied at the time of the export are ignored. You can get around this by creating a bookmark with the required filters and then export the report.
+* If you access a report using a bookmark, the exported report displays with the bookmark filters applied. Any filters applied at the time of the export are ignored. You can get around this by creating a bookmark with the required filters and then export the report.
 * Export to PDF isn't currently supported for tenants in the China North region. 
 
 ## Related content
