@@ -579,6 +579,18 @@ The elaborate example above shows that different time intelligence functions beh
 - A calendar can only assign columns from its own table to categories
 - Each category should have a primary column and can have zero or more associated columns assigned
 - Any given column can be mapped to only one category
+- You cannot nest time intelligence functions that use calendars. For example, the following DAX statement is not supported:
+
+ ```dax
+ ThisIsNotSupported = PREVIOUSDAY ( PREVIOUSMONTH( 'Calendar' ) )
+ ```
+
+Instead, you can do:
+ 
+```dax
+ThisWorks = CALCULATETABLE ( PREVIOUSDAY ( 'Calendar' ), PREVIOUSMONTH( 'Calendar' ) )
+```
+
 
 ## Creating a date table using built-in tools
 
