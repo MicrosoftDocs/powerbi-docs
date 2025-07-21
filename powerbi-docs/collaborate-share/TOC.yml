@@ -2,6 +2,8 @@
   href: index.yml
   expanded: true
   items:
+  - name: "What's new in Power BI collaboration and integration"
+    href: service-power-bi-powerpoint-add-in-whats-new.md
   - name: Share, publish, & endorse your work
     items: 
     - name: "Content endorsement"
@@ -112,8 +114,6 @@
       href: service-power-bi-powerpoint-add-in-admin.md
     - name: "Deploying the add-in in national clouds"
       href: service-power-bi-powerpoint-add-in-national-clouds.md
-    - name: "What's new in the Power BI add-in for PowerPoint"
-      href: service-power-bi-powerpoint-add-in-whats-new.md
     - name: "Troubleshoot the Power BI add-in"
       href: service-power-bi-powerpoint-add-in-troubleshoot.md
     - name: "Export a static Power BI report to PowerPoint"
