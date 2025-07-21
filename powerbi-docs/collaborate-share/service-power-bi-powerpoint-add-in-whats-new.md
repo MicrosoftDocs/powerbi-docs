@@ -14,9 +14,9 @@ ms.date: 07/21/2025
 
 # What's new in Power BI collaboration and integration
 
-Power BI Mobile app versions are released on a monthly cadence. The latest version contains not only new features, but also bug fixes.
+This article summarizes Power BI features that are designed to help you collaborate and integrate Power BI into other products.
 
-To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/desktop-latest-update.md).
+**To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/desktop-latest-update.md).**
 
 ## July 2025
 
