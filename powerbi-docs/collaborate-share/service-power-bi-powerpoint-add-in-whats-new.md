@@ -14,7 +14,7 @@ ms.date: 07/21/2025
 
 # What's new in Power BI collaboration and integration
 
-This article summarizes Power BI features that are designed to help you collaborate and integrate Power BI into other products.
+This article summarizes new or updated Power BI features that are designed to help you collaborate and integrate Power BI into other products.
 
 **To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/desktop-latest-update.md).**
 
