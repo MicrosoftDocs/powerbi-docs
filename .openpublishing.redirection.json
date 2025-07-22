@@ -6647,12 +6647,12 @@
     },
     {
       "source_path": "powerbi-docs/enterprise/service-govus-overview.md",
-      "redirect_url": "/fabric/enterprise/powerbi/service-govus-overview",
+      "redirect_url": "/fabric/enterprise/powerbi/service-government-us-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/enterprise/service-govus-signup.md",
-      "redirect_url": "/fabric/enterprise/powerbi/service-govus-signup",
+      "redirect_url": "/fabric/enterprise/powerbi/service-government-us-signup",
       "redirect_document_id": false
     },
     {
@@ -6772,7 +6772,7 @@
     },
     {
       "source_path": "powerbi-docs/enterprise/troubleshoot-xmla-endpoint.md",
-      "redirect_url": "/fabric/enterprise/powerbi/service-security-sensitivity-label-overview",
+      "redirect_url": "/fabric/enterprise/powerbi/troubleshoot-xml-analysis-endpoint",
       "redirect_document_id": false
     }
   ]
