@@ -6540,6 +6540,11 @@
             "source_path": "powerbi-docs/consumer/mobile/mobile-known-issues-with-the-iphone-app.md",
             "redirect_url": "/power-bi/consumer/mobile/",
             "redirect_document_id": false
-        }   
+        }, 
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-office365mon.md",
+            "redirect_url": "/microsoft-365/enterprise/microsoft-365-monitoring",
+            "redirect_document_id": false
+        }
     ]
 }
