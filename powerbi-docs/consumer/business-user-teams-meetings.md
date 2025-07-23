@@ -144,4 +144,3 @@ Consider using key data points to create metrics and track them in a scorecard. 
 - [Use Power BI metrics to improve results in Microsoft Teams](business-user-teams-goals.md)
 - [Lead data-driven discussions in Microsoft Teams](business-user-teams-share-data.md)
 - [Create reports from data in Microsoft Teams](business-user-teams-create-reports.md)
-- [Analyze your Teams collaboration data](business-user-teams-collaboration-data.md)

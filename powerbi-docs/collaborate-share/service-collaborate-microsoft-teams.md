@@ -27,7 +27,6 @@ Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office t
 - Create a [link preview in the Teams message box](service-teams-link-preview.md) when you paste links to your reports, dashboards, and apps.
 - [Chat in Microsoft Teams directly from the Power BI service](service-share-report-teams.md): Share a filtered view of your reports and dashboards and start conversations.
 - [View all the Power BI tabs you have](service-teams-pivot.md) in Microsoft Teams: Select the **In Teams** tab on the Power BI app home page.
-- [Create a Teams usage report](service-teams-analytics.md) automatically in the Power BI app in Teams: Analyze your Teams activity.
 - [Get notified](service-teams-notifications.md) in the Teams activity feed when important things happen in Power BI.
 - Discover and use Power BI in Teams mobile.
 
