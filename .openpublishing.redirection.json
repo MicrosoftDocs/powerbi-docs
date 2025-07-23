@@ -6779,6 +6779,16 @@
         "source_path": "powerbi-docs/connect-data/service-connect-to-office365mon.md",
         "redirect_url": "/microsoft-365/enterprise/microsoft-365-monitoring",
         "redirect_document_id": false
+    }, 
+    {
+        "source_path": "powerbi-docs/collaborate-share/service-teams-analytics.md",
+        "redirect_url": "/power-bi/collaborate-share/service-collaborate-microsoft-teams",
+        "redirect_document_id": false
+    }, 
+    {
+        "source_path": "powerbi-docs/consumer/business-user-teams-collaboration-data.md",
+        "redirect_url": "/power-bi/collaborate-share/service-collaborate-microsoft-teams",
+        "redirect_document_id": false
     }
   ]
 }
