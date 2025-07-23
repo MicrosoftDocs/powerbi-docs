@@ -172,4 +172,3 @@ To get started with Power BI Desktop, follow these steps.
 - [Use data to make meetings productive in Microsoft Teams](business-user-teams-meetings.md)
 - [Use Power BI metrics to improve results in Microsoft Teams](business-user-teams-goals.md)
 - [Lead data-driven discussions in Microsoft Teams](business-user-teams-share-data.md)
-- [Analyze your Teams collaboration data](business-user-teams-collaboration-data.md)
