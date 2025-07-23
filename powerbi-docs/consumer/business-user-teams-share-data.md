@@ -72,4 +72,3 @@ If you use Power BI in a web browser, it’s easy to send a link to a colleague.
 - [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)
 - [Use Power BI metrics to improve results in Microsoft Teams](business-user-teams-goals.md)
 - [Create reports from data in Microsoft Teams](business-user-teams-create-reports.md)
-- [Analyze your Teams collaboration data](business-user-teams-collaboration-data.md)
