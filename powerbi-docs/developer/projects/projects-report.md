@@ -388,6 +388,7 @@ PBIR is currently in **preview**. Keep the following in mind:
 - Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back. Although a backup is created at the moment of conversion.
 - Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
 - [Visual automatic filters](../../create-reports/power-bi-report-filter-types.md#automatic-filters) are persisted to the PBIR `visual.json` file only after the filter pane has been expanded at least once while editing the report.
+- As PBIR components are stored as sub-folders and files, they are subject to the Windows operating system limits on folder + file name length (default 260 characters). In particular, long Power BI table names may break this limit, resulting in an error when saving in PBIR format. Mitigate this risk by using a short folder path as the home for your PBIR solution, and save immediately after creating or renaming tables.
 
 
 PBIR size limitations enforced by the service:
