@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/07/2025
+ms.date: 07/28/2025
 no-loc: [Copilot]
 ---
 
@@ -17,6 +17,14 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## July 2025 QFE 1
+
+*Version 2.145.1262.0, Released: July 23, 2025*
+
+Bug fixes/improvements:
+
+- Bug fix addressing a null reference error and enhancing exception handling.
+- Fixed the issue of Dataflow refresh failing in Power BI Desktop.
 
 ## June 2025 QFE 3
 
