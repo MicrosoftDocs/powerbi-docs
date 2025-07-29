@@ -3,7 +3,7 @@ title: Use Copilot in Power BI Desktop
 description: Fabric Copilot in Power BI Desktop helps you create reports faster and easier.
 author: shannonlindsay
 ms.author: shlindsay
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.collection: ce-skilling-ai-copilot
 To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled. 
 
 > [!IMPORTANT]
-> In addition to capacity-level enablement, Copilot in **Power BI Desktop** also requires that the **tenant-level Fabric Copilot setting is enabled**. If the tenant-level setting is off, the Copilot button will appear in the ribbon but remain disabled.
+> In addition to capacity-level enablement, Copilot in **Power BI Desktop** also requires that the **tenant-level Fabric Copilot setting is enabled**. If the tenant-level setting is off, the Copilot button appears in the ribbon but remain disabled.
 > This behavior differs from **Power BI Service**, which checks Copilot availability at the **workspace level**.
 
 > [!NOTE]
@@ -27,7 +27,7 @@ To use Copilot in Power BI Desktop, you need admin, member, or contributor acces
 
 When you use Copilot in Power BI Desktop for the first time, you’re asked to pick a Copilot compatible workspace when you select the Copilot button in the ribbon. The workspace you select doesn’t need to be the same as the workspace where you plan to publish your report.
 
-## Start Copilot in Power BI Desktop the first time
+## Start Copilot in Power BI Desktop for the first time
 
 To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
@@ -57,7 +57,6 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
     :::image type="content" source="media/copilot-enable-power-bi/copilot-settings-error.png" alt-text="Screenshot of the Copilot settings with the error message." lightbox="media/copilot-enable-power-bi/copilot-settings-error.png":::
 
 1. Now you're ready to [create a report with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
-
 1. Open a Power BI report and select **Copilot** in the ribbon. The Copilot pane appears and prompts you to select a **workspace**.
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-button-ribbon.png" alt-text="Screenshot of the Copilot pane in Power BI desktop." lightbox="media/copilot-enable-power-bi/copilot-button-ribbon.png":::
@@ -80,10 +79,10 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 
 ## Limitations
 
-- Copilot is not supported in workspaces backed by [Power BI Premium Per User (PPU)](/power-bi/enterprise/service-premium-per-user-faq).
-- In Power BI Desktop, Copilot requires that the **tenant-level Fabric Copilot setting is enabled**. If the tenant setting is off, Copilot features will be unavailable—even if your workspace is properly configured.
-- The Copilot button on the ribbon might be visible to some customers even if the Copilot chat pane is not yet available for them. This situation is temporary.
-- The report view Copilot pane is not supported in Power BI Desktop versions for January 2025 and earlier. Please update to the latest version to access this feature.
+- Copilot isn't supported in workspaces backed by [Power BI Premium Per User (PPU)](/power-bi/enterprise/service-premium-per-user-faq).
+- In Power BI Desktop, Copilot requires that the **tenant-level Fabric Copilot setting is enabled**. If the tenant setting is off, Copilot features are unavailable—even if your workspace is properly configured.
+- The Copilot button on the ribbon might be visible to some customers even if the Copilot chat pane isn't yet available for them. This situation is temporary.
+- The report view Copilot pane isn't supported in Power BI Desktop versions dated January 2025 and earlier. Update to the latest version to access this feature.
 
 ## Send feedback
 
