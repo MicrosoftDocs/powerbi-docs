@@ -24,6 +24,9 @@ Only you can see the alerts you set, even if you share your dashboard. Similarly
 
 :::image type="content" source="media/service-set-data-alerts/powerbi-alert-types-new.png" alt-text="Screenshot of sample Toll Amount and Current Speed tiles.":::
 
+> [!NOTE]
+> This article shows you how to set alerts on **dashboards**. To learn how to set alerts on **reports**, see [Create Fabric Activator alerts in Power BI reports](/fabric/real-time-intelligence/data-activator/activator-get-data-power-bi).
+
 > [!WARNING]
 > Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device is lost or stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
 

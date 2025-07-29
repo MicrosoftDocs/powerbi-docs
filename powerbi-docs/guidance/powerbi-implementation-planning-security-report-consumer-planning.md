@@ -21,7 +21,7 @@ This security planning article describes strategies for read-only consumers. The
 - **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 - **Content creators and owners**: Self-service BI creators who need to create, publish, secure, and manage content that other users consume.
 
-The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
+The series of articles is intended to expand upon the content in the [Power BI security white paper](white-paper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
 
 In an organization, many users are classified as _consumers_. Consumers view content that other users have created and published. Consumers are the focus of this article. For security planning focused on content creators and owners, see the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md) article.
 
@@ -248,7 +248,7 @@ There are three specific types of sharing: sharing links, direct access sharing,
 
 #### Per-item permission links
 
-When you share an individual item, the default experience results in a [sharing link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link). There are three types of sharing links.
+When you share an individual item, the default experience results in a [sharing link](../collaborate-share/service-share-dashboards.md). There are three types of sharing links.
 
 - **People in your organization**: When enabled in your Fabric tenant settings, this type of sharing link is a straightforward way to provide read-only access to everyone within the organization. However, the sharing link won't work for external users. This option is best suited to when anyone can view the content, and the link can be freely shared throughout the organization. Unless it's disabled by the _Allow shareable links to grant access to everyone in your organization_ tenant setting, this type of sharing is the default.
 - **People with existing access**: This option doesn't create a new sharing link. Rather, it allows you to retrieve the URL so you can send it to someone who already has access.

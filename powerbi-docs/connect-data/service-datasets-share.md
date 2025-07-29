@@ -32,7 +32,7 @@ To share a semantic model
 
     ![Screenshot of the Share semantic model dialog.](media/service-datasets-share/power-bi-dataset-grant-access-dialog.png)
 
-    * **Allow allow recipients to modify this semantic model**: This option allows the recipients to modify the semantic model.
+    * **Allow recipients to modify this semantic model**: This option allows the recipients to modify the semantic model.
     * **Allow recipients to share this semantic model**: This option allows the recipients to grant access to other users via sharing.
     * **Allow recipients to build content with the data associated with this semantic model**: This option grants the recipients [Build permission](service-datasets-build-permissions.md) on the semantic model, which enables them to build new reports and dashboards based on the data associated it.
 
@@ -51,5 +51,5 @@ To monitor, change, or remove user access to your semantic model, see [Manage se
 * [Semantic model permissions](service-datasets-permissions.md)
 * [Manage semantic model access permissions](service-datasets-manage-access-permissions.md)
 * [Use semantic models across workspaces](service-datasets-across-workspaces.md)
-* [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
+* [Share a report via link](../collaborate-share/service-share-dashboards.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

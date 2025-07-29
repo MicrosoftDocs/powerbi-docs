@@ -224,12 +224,12 @@ Semantic models that use cloud data sources, such as Azure SQL DB, don't require
 
 ### Accessing on-premises and cloud sources in the same source query
 
-A semantic model can get data from multiple sources, and these sources can reside on-premises or in the cloud. However, a semantic model can only use a single gateway connection, as mentioned earlier. While cloud data sources don't necessarily require a gateway, a gateway is required if a semantic model connects to both on-premises and cloud sources in a single mashup query. In this scenario, Power BI must use a gateway for the cloud data sources as well. The following diagram illustrates how such a semantic model accesses its data sources.
+A semantic model can get data from multiple sources. Depending on where the source resides, connections to the sources can be made using an on-premises data gateway connection, a virtual network data gateway connection, or a cloud connection. However, a semantic model can only use a single gateway connection, as mentioned earlier. Although cloud data sources don't necessarily require a gateway, a gateway is required if a semantic model connects to sources requiring a gateway (such as on-premises or sources in a virtual network) and cloud sources in a single mashup query. In this scenario, Power BI must use the gateway connection for the cloud data sources as well. The following diagram illustrates how such a semantic model accesses its data sources.
 
 ![Cloud and on-premises data sources](media/refresh-data/cloud-on-premises-data-sources-diagram.png)
 
 > [!NOTE]
-> If a semantic model uses separate mashup queries to connect to on-premises and cloud sources, Power BI uses a gateway connection to reach the on-premises sources and a direct network connection to access the cloud sources. If a mashup query merges or appends data from on-premises and cloud sources, Power BI switches to the gateway connection even for the cloud sources.
+> If a semantic model uses separate mashup queries to connect to sources requiring a gateway and cloud sources, Power BI uses a gateway connection to reach the gateway-connected sources and a direct network connection to access the cloud sources. If a mashup query merges or appends data from gateway-connected sources and cloud sources, Power BI switches to the gateway connection for the cloud sources as well.
 
 Power BI semantic models rely on Power Query to access and retrieve source data. The following mashup listing shows a basic example of a query that merges data from an on-premises source and a cloud source.
 

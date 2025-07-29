@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: updatefrequency5
+ms.update-cycle: 1825-days
 ---
 # Constants in expressions in paginated reports (Power BI Report Builder)
 

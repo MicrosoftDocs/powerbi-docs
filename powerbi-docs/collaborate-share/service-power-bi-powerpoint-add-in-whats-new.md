@@ -1,6 +1,6 @@
 ---
-title: What's new in the Power BI add-in for PowerPoint
-description: Learn about new features recently added to the Power BI add-in for PowerPoint.
+title: What's new in Power BI collaboration and integration
+description: Learn about features as they're introduced for collaborating and sharing with Power BI add-ins and integrations.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -9,10 +9,22 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/31/2025
+ms.date: 07/21/2025
 ---
 
-# What's new in the Power BI add-in for PowerPoint
+# What's new in Power BI collaboration and integration
+
+This article summarizes new or updated Power BI features that are designed to help you collaborate and integrate Power BI into other products.
+
+**To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/desktop-latest-update.md).**
+
+## July 2025
+
+### Updated navigation menu in the Power BI app in Teams
+
+We're pleased to share that the new left navigation menu has launched in the Power BI app for Teams. This enhancement streamlines the way you move through the app, making it easier to find and access your Power BI content within Teams. The redesigned menu brings a more user-friendly layout, helping you quickly locate essential tools and features. Try out the updated navigation today to enjoy a more seamless Power BI experience.
+
+:::image type="content" source="../consumer/media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Screenshot of the Power BI app open in Teams with the Create tab and Paste or manually enter data option selected." lightbox="../consumer/media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png":::
 
 ## March 2025
 
@@ -137,7 +149,7 @@ With exciting, recently released features you can now:
 
 ### National cloud support
 
-The Power BI add-in for PowerPoint is now supported in national/regional clouds as an admin-managed add-in. For more information, see [Deploying the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-nationalregional-clouds).
+The Power BI add-in for PowerPoint is now supported in national/regional clouds as an admin-managed add-in. For more information, see [Deploy the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploy-the-add-in-in-nationalregional-clouds).
 
 ## February 2023
 

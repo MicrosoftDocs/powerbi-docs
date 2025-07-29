@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/20/2024
+ms.date: 06/30/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -75,6 +75,20 @@ If you're not signed in to Power BI Desktop, you still see the Copilot entry poi
 
     You can switch back and forth between the previous "smart narrative" visual and the new narrative visual with Copilot by selecting the icon next to the title. The summary content isn't lost when you switch back and forth. Switching may help, as you can't yet edit the body of the Copilot summary. For control over the generated summary, use custom prompts to specify tone or formatting, direct the summary to specific portions of the report, or clarify requests. You can copy and paste it into the smart narrative body for more involved editing.
 
+## Embed the narrative visual
+
+The narrative visual with Copilot is supported in "embed for your organization" scenarios where the user owns the data and in secure embed scenarios.
+
+There are a few embedded scenarios. Only two are supported at this time. This chart makes it clear which scenarios are supported with the Copilot narrative visual.
+
+|Scenario |Supported |
+|---------|---------|
+|[**Embed a report in a secure portal or website**](../collaborate-share/service-embed-secure.md) Power BI. | Yes |
+|**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in. They need a license to sign in. This action is also known as [embed for your organization](../developer/embedded/embed-sample-for-your-organization.md?tabs=net-core). *Note: This scenario does NOT include embedding in PowerPoint at this time* | Yes |
+|**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as [embed for your customer's application](../developer/embedded/embed-sample-for-customers.md?tabs=net-core). | No |
+
+Follow the instructions here to set up Power BI embed and begin embedding your content for your organization: [Set up Power BI Embedded](../developer/embedded/register-app.md?tabs=customers).
+
 ## Save the report
 
 When you're satisfied with the narrative, you save the report just like any other report. If you close and reopen the report that Copilot generated in the Power BI service, the report opens in Reading view and you don't see Copilot.
@@ -87,13 +101,12 @@ We're continuously working to improve the quality of the report pages, including
 
 - Copilot will store the selected prompt with report metadata (e.g., summarize sales data) so that the summary can be generated each time a report is loaded.
 - Authors: To author a copilot narratives visual in the Power BI service, the workspace needs to have a paid dedicated Fabric capacity.
-- You can't edit the visual after Power BI generates it. However, you can change it by using prompts. The summary only takes into account the data that's visualized on the selected page.
+- You can't edit the visual after Power BI generates it. However, you can change it by using prompts. The summary only takes into account the data that's visualized by the selected visuals.
 - The summary only takes into account the data that's visualized on the page.
-- The summary visual is not supported when exporting to Power Point or PDF formats. 
+- The summary visual is not supported when exporting live connections to Power Point.   Static exports are supported.
 - The accuracy of the public preview may be limited.
 - Users need to refresh the summary visual when they update or filter a page, report, or data, to see an updated summary.
 - Filtering and slicing affect the visual, but cross-highlighting (selecting visuals) doesn't impact the summary.
-- Report creation with Copilot is only enabled for Power BI and not for any other sections of Fabric, such as Data Factory.
 - The public preview narrative doesn't yet support all visual types.  For example, it doesn't yet support key influencers.
 
 ## Related content

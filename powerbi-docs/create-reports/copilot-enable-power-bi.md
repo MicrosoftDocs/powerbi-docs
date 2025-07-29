@@ -68,6 +68,15 @@ Enabling this setting allows users to access the standalone, cross-item Power BI
 > [!IMPORTANT]
 > The **Users can use Copilot and other features powered by Azure OpenAI** setting must be enabled at the tenant level to use the standalone Copilot experience. It's not sufficient to enable it at the capacity level (that is, if it's been delegated).
 
+## Only show AI-prepped items in the standalone Copilot in Power BI experience (preview) 
+
+Enabling this setting limits the standalone Power BI Copilot experience to [searching ](/power-bi/create-reports/copilot-search-new-content)for content that has been marked as Prepped for AI.
+
+![Screenshot of the tenant setting to limit the standalone Power BI Copilot to items prepped for AI.](media/copilot-enable-power-bi/limit-to-prepped.png)
+
+> [!IMPORTANT]
+> The setting is delegated to workspace admins to determine when workspaces have sufficient high-value content to be broadly searched by Copilot.
+
 ## Use Copilot for Power BI in the service
 
 To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric (F2 and above)](/fabric/enterprise/licenses) capacity. Alternatively, you could use a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity).
@@ -135,7 +144,7 @@ Once a user is assigned to a Fabric Copilot capacity, no other steps are require
 To use Copilot for Power BI, you must have access to a Premium Power BI capacity or paid Fabric capacity. Your capacity (either Premium or Fabric) needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability).
 
 > [!NOTE]
-> Copilot in Microsoft Fabric isn't supported on trial stock-keeping units (SKUs). Only paid SKUs are supported.
+> Copilot in Microsoft Fabric isn't supported on trial stock-keeping units (SKUs) or trial capacities. Only paid SKUs are supported.
 
 ## Considerations and limitations
 

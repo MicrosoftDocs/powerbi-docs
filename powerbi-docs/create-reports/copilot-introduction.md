@@ -39,7 +39,7 @@ Copilot in Power BI offers a range of capabilities designed to enhance productiv
 
 ### Copilot for business users: Chat with your data
 
-For business users, chatting with your data can mean finding content, asking for ad-hoc analyses or insights, quickly creating and analyzing visuals, and getting summaries of whole reports or specific topics (similar to what you might ask your analyst to do when you have follow-up questions about a report they made). Right now, we have two chat-with-your-data experiences for business users: the standalone Copilot experience and the Copilot pane.
+For business users, chatting with your data can mean finding content, asking for ad-hoc analyses or insights, quickly creating and analyzing visuals, and getting summaries of whole reports or specific topics (similar to what you might ask your analyst to do when you have follow-up questions about a report they made). When a question is related to data in the semantic model, Copilot will use the semantic model to answer the question, otherwise it may answer from the [LLM's general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have two chat-with-your-data experiences for business users: the standalone Copilot experience and the Copilot pane.
 
 #### The standalone Copilot experience (preview): Find data and ask questions about any item
 
@@ -58,8 +58,7 @@ The standalone Copilot can help with the following tasks:
 
 Newly purchased capacity or capacity scale-up operations may take up to 24 hours for Copilot to recognize and become available for use.
 
-The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
-While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use is not officially supported at this time.
+The standalone Copilot experience isn't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West. While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use is not officially supported at this time.
 
 #### The Copilot pane: Ask questions about an open report
 
@@ -96,10 +95,10 @@ To ensure a seamless experience with Copilot in Power BI, it's important to meet
 The following requirements pertain to all Copilot experiences in Power BI.
 
 - Your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/fundamentals/copilot-enable-fabric).
-- You need to have an F2 capacity or above to be able to use Copilot.
+- You need to have an [F2 capacity](https://azure.microsoft.com/pricing/details/microsoft-fabric/) or above to be able to use Copilot.
 - Your Fabric capacity needs to be in one of the regions listed in [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
 - If your tenant or capacity is outside the United States or France, Copilot is disabled by default unless your Fabric tenant admin enables the tenant setting called [**Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance**](/fabric/admin/service-admin-portal-copilot) in the Fabric admin portal.
-- Copilot in Microsoft Fabric isn't supported on trial stock-keeping units (SKUs). Only paid SKUs are supported.
+- Copilot in Microsoft Fabric isn't supported on trial stock-keeping units (SKUs) or trial capacities. Only paid SKUs are supported.
 - Copilot isn't yet supported for sovereign clouds due to GPU availability.
 
 ### Requirements for the standalone Copilot

@@ -3,21 +3,37 @@ title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 04/21/2025
+ms.date: 06/30/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
 
-Power BI Mobile app versions are released on a monthly cadence. The latest version contains not only new features, but also bug fixes.
+Power BI Mobile app versions are released on a monthly cadence. The latest version contains not only new features, but also bug fixes.
 
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## July 2025
+
+### Home in the Power BI mobile app has been reorganized
+
+The **Home** screen in the Power BI mobile app was redesigned to help you find your key content faster. Recent and frequent items now appear together in a single, unified strip, making it easier to spot what matters most. We're also introducing a new **Favorites** strip for quick, one-tap access to your favorited items. Combined with refreshed navigation buttons at the bottom of the screen, these updates make getting around the app simpler and more intuitive.
+
+:::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-home.png" border="false" alt-text="Screenshot of the Power BI mobile app home page.":::
+
+## June 2025
+
+### Org apps are now available in Power BI mobile! (preview)
+
+Org apps, introduced earlier this year in the Power BI service, are now available in the Power BI mobile apps! You can get to them via the **Apps** tab or via workspaces you have access to. Like any other item type in the Power BI mobile apps, Org apps can appear on the home page, be discovered via search, be marked as favorites, and more. The Org app's content list will display both Power BI and Fabric items; however, Fabric items, not currently supported in the mobile apps, will open in your device's browser, rather than in the mobile app. Power BI items will open in the mobile app as usual. [Check out our documentation](./mobile-apps-org-apps.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/org-app.png" alt-text="Screenshot showing an org app in the Power BI mobile app." border="false":::
 
 ## April 2025
 
@@ -53,7 +69,7 @@ Check out our [documentation](./mobile-apps-copilot.md) and get started today!
 
 ### Copilot comes to the Power BI mobile apps! (iOS and Android phones) (preview)
 
-You no longer have to analyze data by yourself in the Power BI mobile apps! Now Copilot can provide report summaries and insights to help you make data driven decisions on the go, anytime, anywhere. Just tap the **Copilot** icon in the report header, choose the desired prompt in the chat window that opens (currently you can choose to get either an executive summary or insights), and Copilot does the rest! Once Copilot has generated its response, you can further explore your data by tapping the references provided in the response, or use the suggested prompts at the bottom of the chat window to change or refine your query.
+You no longer have to analyze data by yourself in the Power BI mobile apps! Now Copilot can provide report summaries and insights to help you make data-driven decisions on the go, anytime, anywhere. Just tap the **Copilot** icon in the report header, choose the desired prompt in the chat window that opens (currently you can choose to get either an executive summary or insights), and Copilot does the rest! Once Copilot has generated its response, you can further explore your data by tapping the references provided in the response, or use the suggested prompts at the bottom of the chat window to change or refine your query.
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/copilot-whats-new.png" alt-text="Screenshot illustrating how to use Copilot in the Power BI mobile apps." border="false":::
 
@@ -533,7 +549,7 @@ We've added support for notch displays on iPhone and iPads, giving you more scre
 ### September 2020
 #### Power BI app (preview) for HoloLens 2 is out in the stores!
 
-The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the toolbelt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our [documentation](mobile-hololens2-app.md) and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
+The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the toolbelt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our documentation and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
 
 
 ### August 2020
@@ -914,7 +930,7 @@ Your IT admin can now use an MDM tool to configure Power BI iOS mobile app acces
 
 #### Power BI for Mixed Reality app (Preview)
 
-The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](./mobile-hololens2-app.md).
+The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new Power BI for Mixed Reality app.
 
 
 ### April 2018
@@ -932,7 +948,7 @@ We recently updated report filters and slicers, so they're automatically saved f
 
 #### Power BI for Mixed Reality app (Preview)
 
-In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality app](./mobile-hololens2-app.md).
+In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new Power BI for Mixed Reality app.
 
 #### Share reports and dashboards externally
 

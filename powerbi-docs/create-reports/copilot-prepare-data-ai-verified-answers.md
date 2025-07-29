@@ -75,7 +75,10 @@ To set a verified answer, follow these steps:
 
    :::image type="content" source="media/copilot-prep-data/copilot-verified-answer-selected-filters.png" alt-text="Screenshot of selected filters applied to a verified answer in Power BI." lightbox="media/copilot-prep-data/copilot-verified-answer-selected-filters.png":::
 
-     - **Supported filter types**: Report-level, Page-level, Visual-level.
+     - **Supported filter types**:
+       - Report-level, Page-level, Visual-level
+       - All basic, categorical filters
+       - Advanced categorical filters: startsWith, contains, >, <, >=, and <=
      - **Filter limitations**:
        - Fields already used in the visual (for example, axis, legend) can’t also be filters.
        - Existing hardcoded values (for example, Region = North) can't be overridden.
@@ -172,7 +175,8 @@ These guidelines can help ensure your verified answers are reliably triggered wh
 
 See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-limitations) for a comprehensive list.
 
-- Any filters on the visual (visual, page, or report level) that are applied upon verified answer setup are applied to the data in the verified answer.
+-  Git integration is not yet supported.
+-  Any filters on the visual (visual, page, or report level) that are applied upon verified answer setup are applied to the data in the verified answer.
 - Drill through filters not supported.
 - Cross highlighting / cross filtering not supported.
 - Slicers aren't included in verified answer states (slicers applied on the report don't persist in the verified answer).

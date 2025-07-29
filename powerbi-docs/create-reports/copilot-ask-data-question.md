@@ -64,7 +64,6 @@ You can also verify the DAX query directly from the expanded view or launch DAX 
 
 :::image type="content" source="media/copilot-ask-data-questions/data-question-answers-01.png" alt-text="Screenshot of copilot answering a question by creating a DAX query.":::
 
-Ad hoc calculations currently require using **Edit Mode** of reports using Copilot.
 
 ## Unsupported question types
 
@@ -114,6 +113,7 @@ There are a few other factors to consider at this time when using this capabilit
 - The only supported language is English.
 - This capability doesn't apply filters or slicers currently affecting visuals on the report page to the answers it generates inside the Copilot pane.
 - The requirement to enable Q&A is unique to this Copilot capability. You can still use Copilot for other tasks, like [asking questions about content present in your report.](copilot-pane-summarize-content.md#answer-questions-about-your-report-content-in-the-copilot-pane)
+- When a question is related to data in the semantic model, Copilot will use the semantic model to answer the question, otherwise it may answer from the [LLM's general knowledge.](https://go.microsoft.com/fwlink/?linkid=2325401)
 - For additional limitations on data sources, see [Limitations of Power BI Q&A](../natural-language/q-and-a-limitations.md).
 
 ## Next steps

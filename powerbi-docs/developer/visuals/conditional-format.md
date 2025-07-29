@@ -197,7 +197,7 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 ## Considerations and limitations
 
-Conditional formatting supported for the following visuals:
+Conditional formatting isn't supported for the following visuals:
 
 * Table based visuals
 

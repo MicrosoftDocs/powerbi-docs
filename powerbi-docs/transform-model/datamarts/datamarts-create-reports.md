@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/01/2024
+ms.date: 06/17/2025
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn how to share reports using datamarts in Power BI.
 ---
@@ -40,7 +40,7 @@ Selecting the **More** opens the report editing canvas to a new report that is b
 
 **Scenario 3:** Using the auto-generated semantic model and semantic model details page. In the Power BI workspace list, select the auto-generated semantic model's name to get to the semantic model details page, where you can find details about the semantic model and see related reports. You can also create a report directly from this page. To learn more about creating a report in this fashion, see [semantic model details](../../connect-data/service-dataset-details-page.md).
 
-In the data hub, you'll see datamarts and their associated auto-generated semantic models. Select the datamart to navigate to the datamart's details page where you can see the datamart’s metadata, supported actions, lineage and impact analysis, along with related reports created from that datamart. Auto-generated semantic models derived from datamarts behave the same as any semantic model.
+In the data hub, you see datamarts and their associated auto-generated semantic models. Select the datamart to navigate to the datamart's details page where you can see the datamart’s metadata, supported actions, lineage and impact analysis, along with related reports created from that datamart. Auto-generated semantic models derived from datamarts behave the same as any semantic model.
 
 To find the datamart, you begin with the data hub. The image below shows the data hub in the Power BI service, with the following numbered information:
 

@@ -163,6 +163,8 @@ No reduction strategy.
 
 ### Scatter chart (high density)
 
+By default, scatter charts display up to 3,500 data points. The limit can be increased up to 10,000 data points under **Advanced options**.
+
 For more information, see [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md).
 
 ### Pie chart
@@ -198,6 +200,8 @@ The shape map can use statistics or dynamic limits.
 ### Table
 
 * Values: Virtualization (data windowing) by using Window of 500 rows at a time.
+* Max columns: 150
+
 
 ### Tree map (could use statistics or dynamic limits)
 
