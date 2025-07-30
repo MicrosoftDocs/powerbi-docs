@@ -362,6 +362,8 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you receive your subscription emails and the day after you receive two emails per subscription. 
 
+- Transactional copy within the body of the email is not localized.
+
 **Row-level security (RLS)**
 
 - For Power BI reports, dashboards, or paginated reports that use a semantic model with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS. A bubble info icon shows up next to the recipients header. If you hover over that icon, you can see the warning message. However, users often scroll past the warning message. 
