@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/28/2025
+ms.date: 07/30/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,14 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## July 2025 QFE 2
+
+*Version 2.145.1457.0, Released: July 28, 2025*
+
+Bug fixes/improvements:
+
+- Fixed reports not behaving properly (unable to navigate pages, wrong visuals being displayed) after ungrouping visuals.
 
 ## July 2025 QFE 1
 
