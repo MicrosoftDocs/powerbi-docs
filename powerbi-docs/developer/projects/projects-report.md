@@ -90,13 +90,11 @@ The definition includes the `datasetReference` property, which references the se
 
 `byPath` - Specifies a relative path to the target semantic model folder. Absolute paths aren't supported. A forward slash (/) is used as a folder separator. When used, Power BI Desktop also opens the semantic model in full edit mode.
 
-`byConnection` - Specifies a remote semantic model in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the semantic model in edit mode.
-
-Using a `byConnection` reference, the following properties must be specified:
+`byConnection` - Specifies the connection to a semantic model in a Fabric workspace by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the semantic model in edit mode. 
 
 ##### [Version 2](#tab/v2)
 
-Version 2 of `definition.pbir` contains only one connection string property pointing to the semantic model in the Fabric workspace.
+Using a `byConnection` reference, the following properties must be specified:
 
 |Property |Description  |
 |---------|---------|
@@ -127,6 +125,8 @@ When deploying a report through [Fabric REST API](/rest/api/fabric/report/items)
 ```
 
 ##### [Version 1](#tab/v1)
+
+Using a `byConnection` reference, the following properties must be specified:
 
 |Property |Description  |
 |---------|---------|
