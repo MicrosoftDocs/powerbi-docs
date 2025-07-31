@@ -125,3 +125,4 @@ These requirements pertain to using Copilot within Power BI reports, including t
 
 - [Overview of Copilot for Fabric (preview)](/fabric/get-started/copilot-fabric-overview)
 - [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
+- [Copilot in Fabric consumption](/fabric/fundamentals/copilot-fabric-consumption)
