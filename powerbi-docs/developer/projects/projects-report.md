@@ -75,8 +75,7 @@ Contains the overall definition of a report and core settings. This file also ho
 Example definition.pbir:
 
 ```json
-{
-  "version": "1.0",
+{  
   "datasetReference": {
     "byPath": {
       "path": "../Sales.Dataset"
@@ -95,9 +94,43 @@ The definition includes the `datasetReference` property, which references the se
 
 Using a `byConnection` reference, the following properties must be specified:
 
+##### [Version 2](#tab/v2)
+
+Version 2 of `definition.pbir` contains only one connection string property pointing to the semantic model in the Fabric workspace.
+
 |Property |Description  |
 |---------|---------|
-|connectionString    |   The connection string referring to the remote semantic model.      |
+|connectionString    |   The connection string referring to the semantic model in a Fabric workspace.      |
+
+Example using `byConnection`:
+
+```json
+{  
+  "datasetReference": {
+    "byConnection": {      
+      "connectionString": "Data Source=\"powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName]\";initial catalog=[SemanticModelName];access mode=readonly;integrated security=ClaimsToken;semanticmodelid=[SemanticModelId]"
+    }
+  }
+}
+```
+
+When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you only need to specify the `semanticmodelid` property. For example: 
+
+```json
+{  
+  "datasetReference": {
+    "byConnection": {      
+      "connectionString": "semanticmodelid=[SemanticModelId]"
+    }
+  }
+}
+```
+
+##### [Version 1](#tab/v1)
+
+|Property |Description  |
+|---------|---------|
+|connectionString    |   The connection string referring to the semantic model in a Fabric workspace.      |
 |pbiModelDatabaseName     |   The remote semantic model ID.      |
 |connectionType     |   Type of connection. For service remote semantic model, this value should be `pbiServiceXmlaStyleLive`.      |
 |pbiModelVirtualServerName    |  An internal property that should have the value, `sobe_wowvirtualserver`.       |
@@ -108,20 +141,21 @@ Example using `byConnection`:
 
 ```json
 {
-  "version": "1.0",
-  "datasetReference": {
-    "byPath": null,
-    "byConnection": {
-      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName];Initial Catalog=[SemanticModelName];Integrated Security=ClaimsToken",
-      "pbiServiceModelId": null,
-      "pbiModelVirtualServerName": "sobe_wowvirtualserver",
-      "pbiModelDatabaseName": "[Semantic Model Id]",
-      "connectionType": "pbiServiceXmlaStyleLive",
-      "name": "EntityDataSource"
-    }
+    "datasetReference": {  
+      "byConnection": {
+        "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName];Initial Catalog=[SemanticModelName];Integrated Security=ClaimsToken",
+        "pbiServiceModelId": null,
+        "pbiModelVirtualServerName": "sobe_wowvirtualserver",
+        "pbiModelDatabaseName": "[Semantic Model Id]",
+        "connectionType": "pbiServiceXmlaStyleLive",
+        "name": "EntityDataSource"
+      }
   }
 }
 ```
+
+---
+
 > [!IMPORTANT]
 > When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you must use `byConnection` references. This should not be confused with the [storage mode](../../transform-model/desktop-storage-mode.md) of a semantic model such as DirectQuery. The `datasetReference` in the report only specifies which semantic model the report connects to, it does not define how that model stores or accesses its data.
 
