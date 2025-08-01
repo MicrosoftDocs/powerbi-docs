@@ -23,7 +23,7 @@ With translytical task flows, you can automate end-user actions like updating re
 
 Translytical task flows work by using [user data functions in Fabric](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to invoke functions on the underlying Fabric data sources.
 
-The following example shows a translytical task flow that connects a Power BI report that shows sales opportunities to an workflow that posts requests to Teams. In this example, you can see that the user filtered the table to display only high-risk high-quantity opportunities with limited time windows. The user requests a 10% discount for these opportunities and justifies the request in a comment field. Once they select the **Request discount** button, the input from the table and the text fields are passed to a user data function. The function posts a message in Teams with the details so that the request can be approved or rejected.
+The following example shows a translytical task flow that connects a Power BI report that shows sales opportunities to a workflow that posts requests to Teams. In this example, you can see that the user filtered the table to display only high-risk high-quantity opportunities with limited time windows. The user requests a 10% discount for these opportunities and justifies the request in a comment field. Once they select the **Request discount** button, the input from the table and the text fields are passed to a user data function. The function posts a message in Teams with the details so that the request can be approved or rejected.
 
 :::image type="content" source="./media/translytical-task-flow-overview/example-request-discount.gif" alt-text="Animated gif that shows a user requesting a discount for opportunities found in a Power BI report, and that request surfacing as a Teams post." lightbox="./media/translytical-task-flow-overview/example-request-discount.gif":::
 
@@ -50,7 +50,7 @@ For data write-back scenarios, user data functions have native connection manage
 * Fabric warehouses 
 * Fabric lakehouses (for files)
 
-For most write-back scenarios, we recommend using SQL database as your underlying data source. SQL databases perform well with the heavy read/write operations required in reporting scenarios. To use SQL database, a tenant admin needs to [Enable SQL database in Fabric using admin portal tenant settings](/fabric/database/sql/enable).
+For most write-back scenarios, we recommend using SQL database as your underlying data source. SQL databases perform well with the heavy read/write operations required in reporting scenarios. To use a SQL database, a tenant admin needs to [Enable SQL database in Fabric using admin portal tenant settings](/fabric/database/sql/enable).
 
 For working samples of user data functions, see [Translytical task flow examples](https://gist.github.com/Sujata994/c354ec8d0821e875e45c86f2bd1d5cc8).
 
@@ -102,7 +102,7 @@ Currently, the following limitations apply to translytical task flows:
 
 * Only the new preview slicers (button slicer, list slicer, and text slicer) are automatically recognized as input controls for function parameters. If you need to use old slicers, you need to create a data analysis expression (DAX) measure to reference those inputs.
 * PBIR (Power BI enhanced report) and PBIP (Power BI Project) formats aren't supported.
-* Power BI embed isn't supported.
+* Power BI Embedded isn't supported.
 
 The following service limitations can also affect your translytical task flows:
 
