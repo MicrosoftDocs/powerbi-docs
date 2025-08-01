@@ -389,7 +389,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 * Email subscriptions aren't supported when the admin setting **Azure private link** > **Block public internet access** is enabled in Power BI. In this case, all subscriptions fail.
 
 * The following Power BI visuals aren't supported. When you subscribe to a report containing these visuals, they display an error symbol. 
-    - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that are [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+    - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md) that are not [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
     - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
     - [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
     - [Power Automate visuals](../create-reports/power-bi-automate-visual.md) 
