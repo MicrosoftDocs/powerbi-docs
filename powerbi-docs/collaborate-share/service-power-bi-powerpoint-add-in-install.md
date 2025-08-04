@@ -39,7 +39,7 @@ Decide how you want to load your data and follow the procedure in one of followi
 Add the report or visual to a new PowerPoint presentation with the following method:
 1. Go to the report or visual.
 1. Make any changes or select filters that you want to the data before you add it to a new PowerPoint presentation.
-1. Select **Share** the live data is a report.
+1. Select **Share** if the live data is a report.
 1. Or, if the live data is in a visual, select **More options (...)** then **Share**.
 1. When you add a report:
     1. Specify what users can access the content as described in the [sharing reports documentation](service-share-dashboards.md).
