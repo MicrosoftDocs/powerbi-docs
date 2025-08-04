@@ -175,6 +175,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     > [!NOTE]
     > - The advanced settings apply to all the audiences, including the workspace users. They can share the semantic models and build content with the semantic models in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
     > - Build permissions only apply to semantic models _in the same workspace_ as the app. If semantic models are in other workspaces, you must explicitly grant build permissions on those semantic models, or at least add the users to the Viewer role in the other workspace.
+    > - Build permissions don't apply to Paginated Reports. For semantic models associated with Paginated Reports, you must explicitly grant build permissions on those semantic models, or at least add the users to the Viewer role in the workspace.
 
 ### Publish the app
 
