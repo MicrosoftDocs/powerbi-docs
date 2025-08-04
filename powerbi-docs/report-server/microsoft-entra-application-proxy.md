@@ -187,7 +187,7 @@ Once your app is published, configure the single sign-on settings with the follo
     - Try running a report or perform test connection to data source so that a Kerberos ticket gets created.
     - After successful execution of the report/ test connection, open command prompt and run the command: `klist`. In the result section, you should see a ticket with `http/` SPN. If it's same as the SPN you have configured with Power BI Report Server, use that SPN in this section.
 
-1. Choose the **Delegated Login Identity** for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities).
+1. Choose the **Delegated Login Identity** for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities](/entra/identity/app-proxy/how-to-configure-sso-with-kcd#working-with-different-on-premises-and-cloud-identities).
 
     We recommend using User Principal name. In our sample, we configured it to work with **User Principal name** option:
 

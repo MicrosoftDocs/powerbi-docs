@@ -223,20 +223,15 @@ Finally, this visual calculation does **not** reset, and continues adding the *S
 RUNNINGSUM([Sales Amount])
 ```
 
-## :::no-loc text="Axis"::: and :::no-loc text="Reset"::: vs ORDERBY and PARTITIONBY
+## :::no-loc text="Axis":::, :::no-loc text="Reset":::, :::no-loc text="OrderBy"::: and :::no-loc text="PartitionBy":::
 
-:::no-loc text="Axis":::, :::no-loc text="Reset":::, [ORDERBY](/dax/orderby-function-dax), and [PARTITIONBY](/dax/partitionby-function-dax) are four functions that can be used in pairs or together to influence how a calculation is evaluated. They form two pairs that are often used together:
+The :::no-loc text="Axis":::, :::no-loc text="Reset":::, :::no-loc text="OrderBy"::: (accepts [ORDERBY](/dax/orderby-function-dax)), and the :::no-loc text="PartitionBy"::: (accepts [PARTITIONBY](/dax/partitionby-function-dax)) parameters can be used to influence how a calculation is evaluated. They don't all have to be specified and can be used in combination with each other. Not all functions provide them, as visual calculations exclusive functions do not provide a :::no-loc text="PartitionBy"::: parameter. Window functions only provide a :::no-loc text="Reset"::: parameter if used in a visual calculation. The :::no-loc text="Relation"::: parameter on window functions is available regardless if used in a visual calculation or not, but only accepts an :::no-loc text="Axis"::: if used in a visual calculation.
 
-* :::no-loc text="Axis"::: and :::no-loc text="Reset":::
-* ORDERBY and PARTITIONBY
+:::no-loc text="Axis"::: and :::no-loc text="Reset"::: reference the visual structure. The :::no-loc text="OrderBy"::: and :::no-loc text="PartitionBy"::: parameters can be used in calculated columns, measures, and visual calculations and refer to fields. While they perform the same function, they're different in the level of abstraction provided; referring to the visual structure is more flexible than the explicit referencing to fields using :::no-loc text="OrderBy"::: or :::no-loc text="PartitionBy":::.
 
-:::no-loc text="Axis"::: and :::no-loc text="Reset"::: are only available for functions that can be used in visual calculations and can only be used in a visual calculation, as they reference the visual structure. ORDERBY and PARTITIONBY are functions that can be used in calculated columns, measures, and visual calculations and refer to fields. While they perform the same function, they're different in the level of abstraction provided; referring to the visual structure is more flexible than the explicit referencing to fields using ORDERBY or PARTITIONBY.
+:::no-loc text="Reset"::: expects there to be multiple levels on the axis. In case you don't have multiple levels on the axis, either because there's only one field or multiple fields in one single level on the axis, you can use :::no-loc text="PartitionBy":::.
 
-Reset expects there to be multiple levels on the axis. In case you don't have multiple levels on the axis, either because there's only one field or multiple fields in one single level on the axis, you can use PARTITIONBY.
-
-Specifying either pair works well, but you can also specify :::no-loc text="Axis":::, ORDERBY and/or PARTITIONBY together, in which case the values specified for ORDERBY and PARTITIONBY override the values dictated by :::no-loc text="Axis":::. :::no-loc text="Reset"::: can't be combined with ORDERBY and PARTITIONBY.
-
-You can think of the ORDERBY and PARTITIONBY pair as pinning field references down by explicitly specifying fields, where Axis and Reset are field agnostic – they refer to the structure and whatever field happens to be on the structure that is getting used.
+You can think of :::no-loc text="OrderBy"::: and :::no-loc text="PartitionBy"::: as pinning field references down by explicitly specifying fields, where :::no-loc text="Axis"::: and :::no-loc text="Reset"::: are field agnostic – they refer to the structure and whatever field happens to be on the structure that is getting used.
 
 ## Available functions
 

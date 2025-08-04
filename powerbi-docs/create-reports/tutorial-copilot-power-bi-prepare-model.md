@@ -10,6 +10,7 @@ ms.subservice: pbi-reports-dashboards
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ms.custom: azure-data-cat
 ms.date: 05/06/2025
 ---
 

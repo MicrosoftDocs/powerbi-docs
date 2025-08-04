@@ -32,8 +32,8 @@ This demographic data layer provides insight, for example, into how household in
 >
 > You can also visit the ArcGIS site, [Esri's ArcGIS for Power BI](https://www.esri.com/powerbi): 
 >
->- Maps: [ArcGIS for Power BI maps](https://doc.arcgis.com/en/maps-for-powerbi/use/explore-maps.htm)
->- Training and documentation: [Esri's ArcGIS for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm)  online help.
+>- Maps: [ArcGIS for Power BI maps](https://doc.arcgis.com/en/power-bi/latest/workflows/arcgis-for-power-bi-user-interface.htm)
+>- Training and documentation: [Esri's ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/latest/get-started/introduction-to-arcgis-for-power-bi.htm)  online help.
 
 > [!NOTE]
 > As a *report designer*, you can share an ArcGIS for Power BI map with a colleague who can view and interact with the map. Your colleague cannot save changes to your map. Further, you currently cannot create an ArcGIS for Power BI map on a mobile device, but you can view and interact with it.
@@ -67,7 +67,7 @@ To add a map to a report, follow these steps:
 
    Power BI adds an empty template to the report canvas and provides an optional sign-in prompt.
 
-   This tutorial uses the **Standard** version of ArcGIS for Power BI. However, if you sign in to a valid, licensed [ArcGIS account](https://www.esri.com/en-us/arcgis/products/arcgis-for-power-bi/buy), you have access to more features. For details about account types, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm).
+   This tutorial uses the **Standard** version of ArcGIS for Power BI. However, if you sign in to a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/power-bi/latest/get-started/sign-in.htm), you have access to more features. For details about account types, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/get-started/accounts.htm).
 
     :::image type="content" source="media/power-bi-visualizations-arcgis/empty-template-signin.png" alt-text="Screenshot shows the Sign in to ArcGIS prompt.":::
 
@@ -108,7 +108,7 @@ ArcGIS map formatting options include:
 After you add data to the map visualization, the Map tools button :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png"::: becomes available.
 
 > [!NOTE]
-> This tutorial shows only the features and options available in the **Standard** version of ArcGIS for Power BI. If you're signed in to a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm) with the proper licensing, you'll have access to more features.
+> This tutorial shows only the features and options available in the **Standard** version of ArcGIS for Power BI. If you're signed in to a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/power-bi/latest/get-started/accounts.htm) with the proper licensing, you'll have access to more features.
 
 Select the Map tools button :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png"::: to expand the tools.
 
@@ -136,7 +136,7 @@ To change the basemap, follow these steps:
 
    The map updates using the new basemap.
 
-For more information about changing the basemap, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/design/change-the-basemap.htm).
+For more information about changing the basemap, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/choose-a-basemap.htm).
 
 ### Show map layers
 
@@ -150,7 +150,7 @@ Different options appear in the menu depending on the type of data in your selec
 
 :::image type="content" source="media/power-bi-visualizations-arcgis/layers-list.png" alt-text="Screenshot shows the ArcGIS Layers list with more options menu.":::
 
-For more information about working with layers, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/design/work-with-layers.htm).
+For more information about working with layers, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/layer-properties.htm).
 
 ### Specify the location type
 
@@ -176,7 +176,7 @@ To modify your data's location type, follow these steps:
 
 1. Select **OK** to save your settings.
 
-For more information about specifying the location type, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/design/specify-location-type.htm).
+For more information about specifying the location type, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/specify-the-location-type.htm).
 
 ### Customize the map's symbology
 
@@ -207,7 +207,7 @@ To change the theme, follow these steps:
 
 1. For this tutorial, choose the **Counts and Amounts (size)** theme.
 
-For more information about themes, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/design/change-the-map-theme.htm).
+For more information about themes, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/apply-themes-in-arcgis-for-power-bi.htm).
 
 #### Symbol style options
 
@@ -221,7 +221,7 @@ To change the symbol style, follow these steps:
 
    The Symbology library is dynamic and responds to the nature of your data and selected theme. From Symbology, you can generally change the shape, fill color, and transparency of symbols and outlines and set a color ramp. Classification settings, such as area of influence, method, classes, the ability to exclude specific null values, size range, and other settings may also be visible on this tab, depending on your data and theme.
 
-   For more information about the different data classification types, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/design/classification-types.htm).
+   For more information about the different data classification types, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/style-settings.htm).
 
 1. Expand the **Symbology** category and select **Advanced options**.
 
@@ -272,7 +272,7 @@ To display the selection tools, follow these steps:
 
    You can select a maximum of 250 data points at a time. When the **Buffer/Drive Time** pane is active, map selection tools are temporarily unavailable.
 
-For more information about selection tools, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm). For more information about reference layers, see [Add a reference layer](https://doc.arcgis.com/en/power-bi/design/add-a-reference-layer.htm). For more information about buffer or drive time areas, see [Create buffers and drive time areas](https://doc.arcgis.com/en/power-bi/design/create-buffers-and-drive-time-areas.htm).
+For more information about selection tools, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/select-features.htm). For more information about reference layers, see [Add a reference layer](https://doc.arcgis.com/en/power-bi/latest/workflows/add-content-from-arcgis.htm). For more information about buffer or drive time areas, see [Create buffers and drive time areas](https://doc.arcgis.com/en/power-bi/latest/workflows/create-a-buffer-drive-time-layer.htm).
 
 ### Pin a location
 
@@ -293,7 +293,7 @@ To pin a location, follow these steps:
 > [!NOTE]
 > Pins remain in place on the map only during the current session; you cannot save a pinned location with the map.
 
-For more information, see [Pin a location](https://doc.arcgis.com/en/power-bi/design/pin-locations.htm) in the ArcGIS for Power BI online help.
+For more information, see [Pin a location](https://doc.arcgis.com/en/power-bi/latest/workflows/find-an-address-or-place.htm) in the ArcGIS for Power BI online help.
 
 ### Add a reference layer
 
@@ -325,11 +325,11 @@ To add a demographic layer, follow these steps:
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/reference-layer-demographics.png" alt-text="Screenshot shows the Demographic layer.":::
 
-Demographic reference layers are interactive. You can select an area to view a [tooltip](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/configure-and-view-tooltips.htm) containing more information about that area. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
+Demographic reference layers are interactive. You can select an area to view a [tooltip](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/configure-and-view-tooltips.htm) containing more information about that area. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/latest/workflows/select-features.htm) that fall within an area on the reference layer.
 
 #### Add a reference layer from ArcGIS
 
-ArcGIS for Power BI allows you to search for publicly shared feature layers on ArcGIS. This library contains thousands of reference layers that provide information curated to enrich your data. Further, when you sign in to ArcGIS for Power BI using a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm), you're granted access to [yet more data content](#arcgis-for-power-bi-features) which you can share within your organization. This data content includes the authenticated and extensive library of ArcGIS content, such as the [ArcGIS Living Atlas of the World](https://livingatlas.arcgis.com/en/home/). Share this data content within your organization and your organization's groups.
+ArcGIS for Power BI allows you to search for publicly shared feature layers on ArcGIS. This library contains thousands of reference layers that provide information curated to enrich your data. Further, when you sign in to ArcGIS for Power BI using a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/power-bi/latest/get-started/accounts.htm), you're granted access to [yet more data content](#arcgis-for-power-bi-features) which you can share within your organization. This data content includes the authenticated and extensive library of ArcGIS content, such as the [ArcGIS Living Atlas of the World](https://livingatlas.arcgis.com/en/home/). Share this data content within your organization and your organization's groups.
 
 > [!NOTE]
 > Layers added from ArcGIS must support HTTPS.
@@ -350,7 +350,7 @@ To add an ArcGIS reference layer, follow these steps:
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/reference-layer-arcgis.png" alt-text="Screenshot shows the map with the ArcGIS public reference layer.":::
 
-ArcGIS reference layers are interactive. Select an area to view a [tooltip](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/configure-and-view-tooltips.htm) containing more information. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
+ArcGIS reference layers are interactive. Select an area to view a [tooltip](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/configure-and-view-tooltips.htm) containing more information. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/latest/workflows/select-features.htm) that fall within an area on the reference layer.
 
 ### Find nearby locations
 
@@ -411,7 +411,7 @@ To add an infographics card to a map, follow these steps:
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/infographics-pane.png" alt-text="Screenshot shows the Infographics pane.":::
 
-   The ArcGIS for Power BI visualization built into Power BI includes a limited number of demographics for the United States only. When you sign in to ArcGIS for Power BI using a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm), you can choose from thousands of United States and global demographic variables.
+   The ArcGIS for Power BI visualization built into Power BI includes a limited number of demographics for the United States only. When you sign in to ArcGIS for Power BI using a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/power-bi/latest/get-started/accounts.htm), you can choose from thousands of United States and global demographic variables.
 
 1. Select the arrow next to a category to view the variables available for that category. For example, select **Population** to expand that category and then expand **Age 5 Year Increments** to view available subcategories.
 
@@ -424,13 +424,13 @@ To add an infographics card to a map, follow these steps:
    > [!TIP]
    > You can also search for a demographic by name in the **Infographics** pane search field.
 
-For more details about adding infographics cards, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/maps-for-powerbi/design/add-infographics.htm).
+For more details about adding infographics cards, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/add-and-manage-a-feature-information-pane.htm).
 
 ## Get help
 
 Esri provides comprehensive online documentation for ArcGIS for Power BI.
 
-To access the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/get-started/about-maps-for-power-bi.htm) from the visualization, follow these steps:
+To access the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/get-started/introduction-to-arcgis-for-power-bi.htm) from the visualization, follow these steps:
 
 1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select the Settings button :::image type="icon" source="media/power-bi-visualizations-arcgis/settings.png":::.
 
@@ -440,15 +440,15 @@ To access the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-
 
 1. Select **OK** on the confirmation window that appears.
 
-   The [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/get-started/about-maps-for-power-bi.htm) opens in a browser window.
+   The [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/get-started/introduction-to-arcgis-for-power-bi.htm) opens in a browser window.
 
    From Esri's content pages, you can use the following resources:
 
-   * Find answers to [frequently asked questions](https://doc.arcgis.com/en/power-bi/get-started/pbi-faq.htm) about ArcGIS for Power BI.
+   * Find answers to [frequently asked questions](https://doc.arcgis.com/en/power-bi/latest/get-started/faqs.htm) about ArcGIS for Power BI.
    * Ask questions, find the latest information, report issues, and find answers on the Power BI [community thread related to **ArcGIS for Power BI**](https://community.powerbi.com/t5/Desktop/ArcGIS-Maps-for-Power-BI-Preview-Discussion/td-p/72947).
    * Give a suggestion for an improvement, submitting it to the [Power BI Ideas list](https://ideas.powerbi.com/).
 
-On the **Settings** pane, you can also view dynamic map attribution that updates for each map extent, read about the [Esri EUEI (End User Experience) program](https://doc.arcgis.com/en/power-bi/get-started/euei-program.htm), and turn **Send usage data to Esri** on or off.
+On the **Settings** pane, you can also view dynamic map attribution that updates for each map extent, read about the [Esri EUEI (End User Experience) program](https://doc.arcgis.com/en/power-bi/latest/get-started/euei.htm), and turn **Send usage data to Esri** on or off.
 
 ## Manage the use of ArcGIS for Power BI within your organization
 
@@ -488,12 +488,12 @@ ArcGIS for Power BI is available in the following services and applications:
 | Power BI Desktop | Yes |
 | Power BI service (powerbi.com)| Yes |
 | Power BI mobile applications* | Yes |
-| Power BI publish to web | Yes, for designers signed in to a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm) |
-| Power BI Embedded| Yes, for designers signed in to a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm) |
+| Power BI publish to web | Yes, for designers signed in to a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/power-bi/latest/get-started/accounts.htm) |
+| Power BI Embedded| Yes, for designers signed in to a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/power-bi/latest/get-started/accounts.htm) |
 | Power BI service embedding (powerbi.com)| No |
 | Power BI Report Server| Yes, when signed in to a valid ArcGIS Enterprise account through Report Server (online environment only); not supported in a disconnected environment or with ArcGIS Online. Accessing Report Server with ArcGIS for Power BI consumes ArcGIS credits; for more information about credits, visit [Understand credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm). |
 
-\*In mobile environments, you can view maps created using the ArcGIS for Power BI visualization included with Power BI ([Standard account](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm)). Maps that contain premium content from ArcGIS aren't supported in mobile environments.
+\*In mobile environments, you can view maps created using the ArcGIS for Power BI visualization included with Power BI ([Standard account](https://doc.arcgis.com/en/power-bi/latest/get-started/accounts.htm)). Maps that contain premium content from ArcGIS aren't supported in mobile environments.
 
 In services or applications where ArcGIS for Power BI isn't available, the visualization show as an empty visual with the Power BI logo.
 

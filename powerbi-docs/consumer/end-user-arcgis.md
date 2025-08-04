@@ -21,7 +21,7 @@ For example, you can use ArcGIS for Power BI to provide regional insight into sa
 :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-sales.png" alt-text="Screenshot of map zoomed in to Lancaster County and displaying tooltip.":::
 
 > [!TIP]
-> To learn more, explore [Esri's Get Started page for the ArcGIS for Power BI visual](https://doc.arcgis.com/en/power-bi/use/explore-maps.htm), or visit [Esri's Marketing site](https://www.esri.com/powerbi) to see examples and read testimonials. For training and documentation, see [Esri's online help](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+> To learn more, explore [Esri's Get Started page for the ArcGIS for Power BI visual](https://doc.arcgis.com/en/power-bi/latest/workflows/arcgis-for-power-bi-user-interface.htm), or visit [Esri's Marketing site](https://www.esri.com/powerbi) to see examples and read testimonials. For training and documentation, see [Esri's online help](https://doc.arcgis.com/en/power-bi/latest/get-started/introduction-to-arcgis-for-power-bi.htm).
 >
 
 ## User consent
@@ -60,7 +60,7 @@ The map tools expand to show the available options. When selected, each tool ope
 
 ## Select locations
 
- There are multiple ways to select locations on the map. The options available depend on the type of layer selected. If the map contains more than one layer, the selection tool will apply the action to the active layer. A maximum of 250 data points can be selected at a time. For more information, see [Select locations on the map](https://doc.arcgis.com/en/power-bi/use/select-features-on-the-map.htm).
+ There are multiple ways to select locations on the map. The options available depend on the type of layer selected. If the map contains more than one layer, the selection tool will apply the action to the active layer. A maximum of 250 data points can be selected at a time. For more information, see [Select locations on the map](https://doc.arcgis.com/en/power-bi/latest/workflows/select-features.htm).
 
 :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-selection-tools.png" alt-text="Screenshot showing the features of the default single select tool.":::
 
@@ -74,7 +74,7 @@ The map tools expand to show the available options. When selected, each tool ope
 
 :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-freehand-select.png"::: **Select by freehand polygon**. With this tool, you can draw a freehand shape on the map and select the contained data points and features. Use **CTRL** to add or remove selections.
 
-:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-reference-layer-select.png"::: **Select by reference layer**. This tool is only visible if there's a reference layer on the map and that reference layer is the active layer. Select features on the reference layer to highlight them. For more information, see [Work with map layers&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-reference-layer-select.png"::: **Select by reference layer**. This tool is only visible if there's a reference layer on the map and that reference layer is the active layer. Select features on the reference layer to highlight them. For more information, see [Work with map layers&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/latest/workflows/layer-properties.htm).
 
  :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-drive-time.png"::: **Drive time select** This tool is only visible if there's a search area layer (buffer or drive time area) on the map and the search area layer is the active layer. Draw to select data points and features within the defined area. For more information, see [Find Nearby Locations](https://pro.arcgis.com/en/pro-app/latest/tool-reference/business-analyst/find-nearby-locations.htm).
 
@@ -88,7 +88,7 @@ Pin a specific address, place, or point of interest on the map. In this example,
 1. Type the keywords **Washington Monument** in the search field.
     Keywords can include an address, place, or point of interest. As you type, recent searches or suggestions based on similar keywords appear.
 1. From the results list, choose **Washington Monument, 2 15th St NW, Washington DC 20024 USA** and select **Close**. A symbol appears on the map, and the map automatically zooms to the location, pinning it during your session. Pins remain in place on the map only during the current session. You can't save a pinned location with the map.
-For more information, see [Pin a location&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/pin-locations.htm).
+For more information, see [Pin a location&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/latest/workflows/find-an-address-or-place.htm).
 
 ## View, show, or hide layers
 
@@ -108,7 +108,7 @@ You can also use the **Filters** pane to filter layer content on your ArcGIS for
 > [!NOTE]
 > If you find that you can't perform these tasks, it may be that the report designer has disabled these features. Contact the report designer if you have questions.
 
-For more information about working with layers, visit [Work with map layers&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
+For more information about working with layers, visit [Work with map layers&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/latest/workflows/layer-properties.htm).
 
 ## Filter map layers
 
@@ -142,7 +142,7 @@ To change the basemap, follow these steps:
 
     :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-change-basemap.png" alt-text="Screenshot of the available basemaps with the Dark Gray Canvas basemap selected and applied.":::
 
-1. The map updates to the new basemap. For more information, see [Change the basemap&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/change-the-basemap.htm).
+1. The map updates to the new basemap. For more information, see [Change the basemap&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/latest/workflows/choose-a-basemap.htm).
 
 ## Select Analysis tools
 
@@ -207,8 +207,8 @@ ArcGIS Maps for Power BI is available in the following services and applications
 |Power BI Desktop     |   Yes      |
 |Power BI service (app.powerbi.com)     |    Yes     |
 |Power BI mobile applications*     |    Yes     |
-|Power BI publish to web     |    Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/en/power-bi/use/sign-in-to-arcgis.htm).     |
-|Power BI Embedded     |   Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/en/power-bi/use/sign-in-to-arcgis.htm).      |
+|Power BI publish to web     |    Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/en/power-bi/latest/get-started/sign-in.htm).     |
+|Power BI Embedded     |   Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/en/power-bi/latest/get-started/sign-in.htm).      |
 |Power BI service embedding (powerbi.com)     |    No     |
 | Power BI Report Server  |  Yes, when signed into a valid ArcGIS Enterprise account through Report Server (online environment only). Not supported in a disconnected environment or with ArcGIS Online. Accessing Report Server with ArcGIS for Power BI consumes ArcGIS credits. For more information about credits, see [Understand credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)  |
 
@@ -224,9 +224,9 @@ Esri offers an Esri [ArcGIS account](https://www.esri.com/en-us/arcgis/products/
 
 :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-sign-up.png" alt-text="Screenshot of the Map tool menu with the sign-up screen feature open.":::
 
-Power BI doesn't send personal information about you to Esri. This is a separate relationship with a third-party vendor. Once you add ArcGIS account content to your ArcGIS for Power BI visualization, you'll have access to all the Esri content and data associated with your account, role, and organization. Any other Power BI user with whom you share that data&dash;whether within your organization or the public&dash;might also need an ArcGIS account to view shared, potentially licensed content. For details about account types and data limitations, see [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm).
+Power BI doesn't send personal information about you to Esri. This is a separate relationship with a third-party vendor. Once you add ArcGIS account content to your ArcGIS for Power BI visualization, you'll have access to all the Esri content and data associated with your account, role, and organization. Any other Power BI user with whom you share that data&dash;whether within your organization or the public&dash;might also need an ArcGIS account to view shared, potentially licensed content. For details about account types and data limitations, see [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/get-started/accounts.htm).
 
-For technical or detailed questions about ArcGIS for Power BI, see [ArcGIS for Power BI get started](https://doc.arcgis.com/en/power-bi/get-started/about-maps-for-power-bi.htm) or reach out to [Esri Technical Support](https://www.esri.com/contact#c=us&t=5).
+For technical or detailed questions about ArcGIS for Power BI, see [ArcGIS for Power BI get started](https://doc.arcgis.com/en/power-bi/latest/get-started/introduction-to-arcgis-for-power-bi.htm) or reach out to [Esri Technical Support](https://www.esri.com/contact#c=us&t=5).
 
 The following table compares the standard features available to all Power BI users to those features available to users signed in to a valid, licensed ArcGIS account.
 
@@ -244,7 +244,7 @@ In services or applications where ArcGIS Maps for Power BI isn't available, the 
 When geocoding latitude and longitude on the map, up to 30,000 data points are displayed. When geocoding data points such as zip codes or street addresses, only the first 15,000 data points are geocoded. Geocoding place names or countries/regions aren't subject to the 15,000 address limit.
 
 **Is there any charge for using ArcGIS Map for Power BI?**</br>
-ArcGIS Maps for Power BI is available to all Power BI users at no extra cost. It's a component provided by **Esri**, and your use is subject to the terms and privacy policy provided by **Esri**, as noted earlier in this article.  If you sign up for an [Esri ArcGIS account](https://doc.arcgis.com/en/power-bi/use/sign-in-to-arcgis.htm), there are [costs associated](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm).
+ArcGIS Maps for Power BI is available to all Power BI users at no extra cost. It's a component provided by **Esri**, and your use is subject to the terms and privacy policy provided by **Esri**, as noted earlier in this article.  If you sign up for an [Esri ArcGIS account](https://doc.arcgis.com/en/power-bi/latest/get-started/sign-in.htm), there are [costs associated](https://doc.arcgis.com/en/power-bi/latest/get-started/accounts.htm).
 
 **I'm getting an error message about my cache being full**</br>
 This is a bug that is being addressed.  In the meantime, select the link in the error message for instructions on clearing your Power BI cache.

@@ -89,7 +89,7 @@ Because AI instructions are heavily prompt-based, it’s important to understand
   - **Example:** For product-specific sales, use the measure "Total_Sales_Product" (example of Product: Word, PowerPoint, Excel, SharePoint, Teams).  
 - **Avoid ambiguity.** If something should be emphasized - or avoided - be clear. The more details and supporting content you can provide Copilot, the better.  
   - **Example:** For Total Active Partners, use the measure "Monthly Active Partner Count" (do NOT filter on "Customers" table).  
-- **Group related instructions.** Organizing instructions by theme or purpose (that is, date logic, key metrics, industry terms) can help Copilot better understand your intent.  
+- **Group related instructions.** Organizing instructions by theme or purpose (that is, date logic, key metrics, industry terms) can help Copilot better understand your intent. Including structural elements, such as sections, hierarchies, and headers, can be very beneficial. 
   - **Example:** See an example of grouping related instructions in the full set of instructions in the [example scenario](#example-scenario).  
 - **The order in which you author instructions can impact the output received.** Testing out different variations, orders, examples, and wording can help you get the correct outputs.  
 - **Break down complex instructions into simpler steps** to improve clarity and reduce errors.  

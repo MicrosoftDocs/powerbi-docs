@@ -81,7 +81,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Selecting multiple noncontiguous rows | **Ctrl + Enter** / **Ctrl + Space** |
 | Selecting multiple contiguous rows | **Shift + Down arrow key or Up arrow key** |
 | Clear selected rows | **Ctrl + Shift + C** |
-| Open URL links | **Ctrl + Alt + O** |
+| Open URL links | **Ctrl + Alt + O** or  **Alt + Shift + O** |
 | Open Context Menu| **Shift + F10** |
 
 ## Matrix navigation
