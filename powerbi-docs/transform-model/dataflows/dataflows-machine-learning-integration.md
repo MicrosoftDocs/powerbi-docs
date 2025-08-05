@@ -1,5 +1,5 @@
 ---
-title: Use Machine Learning and Cognitive Services with dataflows
+title: Use Machine Learning and Cognitive Services with dataflows - Deprecating
 description: Learn how to use machine learning and automated ml with dataflows to create predictive insights from your data.
 author: JulCsc
 ms.author: juliacawthra
