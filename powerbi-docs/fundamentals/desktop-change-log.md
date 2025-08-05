@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/30/2025
+ms.date: 08/05/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,15 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+ 
+## July 2025 QFE 3
+
+*Version 2.145.1602.0, Released: July 31, 2025*
+
+Bug fixes/improvements:
+
+- Fixed the issue of Snowflake query with count distinct logic returning incorrect result.
+- Fixed the error "Object reference not set to an instance of an object" while creating relationships when connected to snowflake.
 
 ## July 2025 QFE 2
 
