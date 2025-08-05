@@ -86,6 +86,13 @@ Some of these capabilities are available through the Copilot pane, whereas other
 
 :::image type="content" source="media/copilot-introduction/copilot-build-reports.png" alt-text="Screenshot of Copilot building a report in Power BI." lightbox="media/copilot-introduction/copilot-build-reports.png":::
 
+### Copilot clear chat
+
+The “clear chat” button will remove the contents of the current conversation and any previous context set throughout the conversation. This is essentially the same as starting a new chat. Note: This does not refresh the underlying data.
+It is best to use “clear chat” when switching topics to avoid overloading Copilot with unrelated prior context. Clear the chat to ensure clear and focused responses.
+
+If you ask the same exact prompt on an unchanged semantic model (same schema, data, and custom instructions) within a rolling 24-hour window, Copilot will respond from the cache for efficiency. It is expected behavior to receive the same response in this case. The “clear chat” button does not impact this. If you were not expecting the same response, try changing your prompt or refreshing the underlying model.
+
 ## Copilot requirements
 
 To ensure a seamless experience with Copilot in Power BI, it's important to meet specific requirements. These requirements vary depending on the type of Copilot experience you're using, such as the standalone Copilot or the Copilot pane within reports. Here's a breakdown of the general and specific requirements for using Copilot effectively.
@@ -125,3 +132,4 @@ These requirements pertain to using Copilot within Power BI reports, including t
 
 - [Overview of Copilot for Fabric (preview)](/fabric/get-started/copilot-fabric-overview)
 - [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
+- [Copilot in Fabric consumption](/fabric/fundamentals/copilot-fabric-consumption)
