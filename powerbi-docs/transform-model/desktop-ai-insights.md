@@ -1,5 +1,5 @@
 ---
-title: Connect to AI Insights in Power BI Desktop
+title: Connect to AI Insights in Power BI Desktop (Deprecating)
 description: Learn how to apply a collection of pre-trained machine learning models from AI Insights to your data in Power BI Desktop.
 author: JulCsc
 ms.author: juliacawthra
