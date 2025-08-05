@@ -23,8 +23,8 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 
 Bug fixes/improvements:
 
-- Fixed the issue of Snowflake query with count distinct logic returning incorrect result.
-- Fixed the error "Object reference not set to an instance of an object" while creating relationships when connected to snowflake.
+- Fixed the issue of Snowflake query with count-distinct logic returning incorrect result.
+- Fixed the error "Object reference not set to an instance of an object" while creating relationships when connected to Snowflake.
 
 ## July 2025 QFE 2
 
