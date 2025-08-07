@@ -321,6 +321,9 @@ Note also that the configured refresh time might not be the exact time when Powe
 > [!NOTE]
 > Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
 
+> [!NOTE]
+> If a refresh schedule is enabled and an update to the semantic model is made (via Publish in Power BI Desktop or Import from the web service), then an on-demand refresh is automatically started in the web service. Updates to the report (including page layout changes) will not be presented to web consumers until that refresh has completed (or been cancelled).
+
 ### Getting refresh failure notifications
 
 By default, Power BI sends refresh failure notifications to the semantic model owner through email, so that they can act in a timely manner should refresh issues occur. If the owner has the Power BI app on their mobile device, they'll also get the failure notification there. Power BI also sends an email notification when the service disables a scheduled refresh due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails semantic model owner** enabled.
