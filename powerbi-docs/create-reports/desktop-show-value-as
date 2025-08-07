@@ -1,0 +1,61 @@
+---
+title: Show value as in Power BI
+description: Change how the value is displayed in a visual by using the Show value as capability in the Visualizations pane.
+author: Jasmita Yechuri
+ms.author: juliacawthra
+ms.reviewer: Jeroen ter Heerdt
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 08/07/2025
+LocalizationGroup: Create reports
+---
+# Show value as in Power BI
+
+The Show value as feature in Power BI lets you display your data as percentages of totals, such as percent of grand total, row total or column total, instead of just raw values. This can help provide context for values in visuals and is particularly useful when creating executive dashboards, performance reports, or comparative views.
+
+This feature is available in the context menu for numerical values or fields placed in the Values of matrix, table or chart visualizations.
+
+![Screenshot of the Visualizations menu, highlighting the Show items with no data within the X-axis dropdown menu.](media/desktop-show-items-no-data/show-items-no-data_02.png)
+
+## Access the "Show value as" menu
+
+To apply "Show value as" to a measure in a Matrix:
+  1. Add a **Matrix visual** to your report.
+  1. Drag a numeric field (for example, Sales) into the **Values** section.
+  1. Select the dropdown arrow within the field.
+  1. Hover over **Show value as**.
+  1. Select from options:
+    * No calculation
+    * Percent of grand total
+    * (Matrix only) Percent of column total
+    * (Matrix only) Percent of row total
+
+## Show value as options
+The following table descibes eahc option in the **Show value as** menu:
+
+|**Option**  |**Description**  |
+|---------|---------|
+|No calculation     |Displays the raw value (default behavior).         |
+|Percent of grand total     |Displays each value as a percentage of the total value of all cells.         |
+|Percent of column total     |Displays each value as a percentage of the total for its column (available for Matrix only).         |
+|Percent of row total     |Displays each value as a percentage of the total for its row (available for Matrix only).        |
+
+The next few examples are of a matrix visual.
+
+## Example of Matrix Visualizaiton
+
+Let’s use the AdventureWorks DW 2020 dataset and build a Matrix with Country-Region from the Customer table in Rows, and Sales Amount from the Sales table to Values. Then, we’ll apply various "Show value as" options to compare results.
+
+### Original Matrix
+
+**Show value as &rarr Percent of grand total**
+
+
+
+
+## Related content
+
+This article described how you can enable the **Show value as** feature in Power BI. You might also be interested in the following articles:
+
+* [Use quick measures for common calculations](powerbi-docs/transform-model/desktop-quick-measures.md)
