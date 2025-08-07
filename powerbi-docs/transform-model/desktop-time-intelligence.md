@@ -332,16 +332,19 @@ In other words, we can say that the **Year** and **Month of Year** categories ar
 :::image type="content" source="media/desktop-time-intelligence/time-lattice.png" alt-text="Lattice structure diagram of all calendar categories." lightbox="media/desktop-time-intelligence/time-lattice.png":::
 
 The diagram above is provided to better visualize the dependencies between the different time categories. Each category in this lattice represents all columns (primary and associated) tagged to that category.
-Categries are connected to their dependencies via arrows. For example, "Month" is dependent on "Year", "Quarter of Year", "Month Of Quarter", "Quarter", and "Month of Year".
+Categories are connected to their dependencies via arrows. For example, "Month" is dependent on "Year", "Quarter of Year", "Month Of Quarter", "Quarter", and "Month of Year".
 
-When a calendar-based time intelligence functions sets a filter context on a category "X", prior filter context will be cleared on:
+When context is set on a column or its associated [sort by column](/create-reports/desktop-sort-by-column.md) that is tagged in a calendar, prior filter context will be cleared on:
 
 1. All category **dependencies** of X. This can be thought of as all categories above X.
 2. All category **dependents** of both X and its dependencies (i.e. from 1. above). This can be thought of as all categories below X and all categories in 1 above.
 
+> [!NOTE]
+> Context clearing happens on columns tagged in a calendar or associated [sort-by columns](/create-reports/desktop-sort-by-column.md) regardless of if the context is set using time intelligence functions or otherwise.
+
 ##### Time-related columns
 
-If filter context is set on a time-related column, context clearing is performed on **all** time-related columns.
+If filter context is set on a time-related column, context clearing is performed on **all** time-related columns and associated [sort-by columns](/create-reports/desktop-sort-by-column.md).
 
 ##### Cross-calendar behavior
 
