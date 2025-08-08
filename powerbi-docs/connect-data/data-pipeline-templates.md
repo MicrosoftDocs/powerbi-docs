@@ -15,13 +15,13 @@ Power BI semantic model refresh templates allow users to orchestrate semantic mo
 
 <!-- :::image type="content" source="media/real-time-intelligence-sample-experience/architecture-scheme.png" alt-text="Schematic of Real-Time Intelligence architecture with sample items."::: -->
 
-Azure Data Factory, part of the Fabric product suite, is a cloud-based ETL and data integration service designed to address complex data orchestration scenarios. It enables the creation of data-driven workflows (pipelines) that automate data movement and transformation at scale.
+[Azure Data Factory](/fabric/azure/data-factory/introduction), part of the Fabric product suite, is a cloud-based ETL and data integration service designed to address complex data orchestration scenarios. It enables the creation of data-driven workflows (pipelines) that automate data movement and transformation at scale.
 
 Learn more about [Templates for Data Factory](/fabric/data-factory/templates) & [Semantic model refresh activity](/fabric/data-factory/semantic-model-refresh-activity) to refresh a Power BI Dataset. 
 
 ## Create a Data Pipeline
 
-Before you begin, you need a [workspace](/fabric/get-started/create-workspaces) with a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity).
+Before you begin, you need a workspace with a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity).
 
 In your Power BI workspace, navigate to the semantic model details page and select **Create Advanced Refresh** from the refresh dropdown to begin orchestrating a refresh. 
 
@@ -40,17 +40,17 @@ Each template provides a guided setup to help you configure the refresh process 
 
 The components of the Data Pipeline template experience include:
 
-* **Guided Tour**: An event stream is the engine for data ingestion and processing of your real-time data into Microsoft Fabric. You can transform your data and route it via filters to various destinations. Read more about [Data Factory templates](/fabric/data-factory/templates).
+* **Guided Tour**: After selecting a semantic model refresh template, you'll be guided step-by-step through the configuration process. Read more about [Data Factory templates](/fabric/data-factory/templates).
 
 * **Semantic Model Refresh Settings**: Select the connection, workspace, and semantic model to refresh. You can also specify tables or partitions for incremental refresh, updating only the changed data to optimize performance. Read more about [semantic model refresh activities](/fabric/data-factory/semantic-model-refresh-activity).
 
 * **Additional Activities**: You can add additional actions to your refresh workflow, such as sending a Teams notification upon successful execution. Read more about [Data Factory Activities](/fabric/data-factory/activity-overview). 
 
-* **Data Pipelines**: Data Pipelines orchestrate the refresh process, allowing you to visualize and sequence refresh activities for common scenarios. They provide a comprehensive and fully integrated solution for managing semantic model refreshes in Power BI.
+* **Data Pipelines**: Data Pipelines orchestrate the refresh process, allowing you to visualize and sequence refresh activities for common scenarios. They provide a comprehensive and integrated solution for managing semantic model refreshes in Power BI. 
 
 ## Related content
 
-* [Data Factory documentation](/fabric/azure/data-factory/)
+* [Data Factory documentation](/fabric/azure/data-factory/introduction)
 * [Templates for Data Factory](/fabric/data-factory/templates)
 * [Semantic model refresh activity to refresh a Power BI Dataset](/fabric/data-factory/semantic-model-refresh-activity)
 
