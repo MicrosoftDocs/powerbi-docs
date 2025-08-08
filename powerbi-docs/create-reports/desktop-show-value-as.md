@@ -20,8 +20,8 @@ This feature is available in the context menu for numerical values or fields pla
 
 ## Access the "Show value as" menu
 
-To apply "Show value as" to a measure in a Matrix:
-  1. Add a **Matrix visual** to your report.
+To apply "Show value as" to a measure in a Matrix or Table:
+  1. Add a **Matrix or Table visual** to your report.
   1. Drag a numeric field (for example, Sales) into the **Values** section.
   1. Select the dropdown arrow within the field.
   1. Hover over **Show value as**.
@@ -49,40 +49,45 @@ The following table describes each option in the **Show value as** menu:
 |Percent of column total     |Displays each value as a percentage of the total for its column (available for Matrix only).         |
 |Percent of row total     |Displays each value as a percentage of the total for its row (available for Matrix only).        |
 
-## Example of Matrix Visualizaiton
+## Example of Matrix visualization
 
 Let’s use the AdventureWorks DW 2020 dataset and build a Matrix with Country-Region from the Customer table in Rows, and Sales Amount from the Sales table to Values. Then, we’ll apply various "Show value as" options to compare results.
 
 ### Original Matrix
+The image below displays the raw data without any transformations being applied.
 
 [ ![Image of original matrix example.](media/desktop-show-value-as/show-value-as-original-matrix.png)](media/desktop-show-value-as/show-value-as-original-matrix.png#lightbox)
 
-### Show value as → Percent of grand total
+### Show value as percent of grand total
+To replicate what the image below shows, you can right-click on the drop-down menu of the measure, select **Show value as** and choose **Percent of grand total.** This converts the raw values into percentages relative to the overall total.
 
 [ ![Image of matrix with percent of grand total.](media/desktop-show-value-as/show-value-as-grand-total.png)](media/desktop-show-value-as/show-value-as-grand-total.png#lightbox)
 
-### Show value as → Percent of column total (Matrix only)
+### Show value as percent of column total (Matrix only)
+To achieve the view shown below, click the drop-down arrow on the measure, select **Show value as** and then choose **Percent of column total** which is only available for a matrix visual. This option displays each value as a percentage of the sum for its column, making it easier to see how each row contributes within that column.
 
 [ ![Image of matrix with percent of column total.](media/desktop-show-value-as/show-value-as-column-total.png)](media/desktop-show-value-as/show-value-as-column-total.png#lightbox)
 
-### Show value as → Percent of row total (Matrix only)
+### Show value as percent of row total (Matrix only)
+To recreate the view in the image below, open the drop-down menu on the measure within the matrix visual, select **Show value as**, and choose **Percent of row total.** This displays each value as a percentage of the total for its row, allowing you to easily compare values across columns within the same row.
 
 [ ![Image of matrix with percent of row total.](media/desktop-show-value-as/show-value-as-row-total.png)](media/desktop-show-value-as/show-value-as-row-total.png#lightbox)
 
 > [!Tip]
-> You can add the same measure multiple times to the Values area and apply a different “Show value as” option to each one. This allows for side-by-side comparisons.
+> You can add the same measure multiple times to the Values area and apply a different “Show value as” option to each one. This allows for side-by-side comparisons (as shown in the image below).
+> [ ![Image of matrix with all 3 options](media/desktop-show-value-as/show-value-as-all-amounts.png)](media/desktop-show-value-as/show-value-as-all-amounts.png#lightbox)
 
-[ ![Image of matrix with all 3 options](media/desktop-show-value-as/show-value-as-all-amounts.png)](media/desktop-show-value-as/show-value-as-all-amounts.png#lightbox)
-
-## Example Funnel Visualization
+## Example Funnel visualization
 
 Let’s use the AdventureWorks DW 2020 dataset and build a Funnel visualization with Color from the Product table in Category, and Sales Amount from the Sales table in Values. Then, we’ll apply various "Show value as" options to compare results.
 
 ### Original Funnel
+This is the default Funnel visualization showing raw Sales Amount values for each product color category, without any transformation applied.
 
 [ ![Image of funnel in original state.](media/desktop-show-value-as/show-value-as-funnel-original.png)](media/desktop-show-value-as/show-value-as-funnel-original.png#lightbox)
 
-### Show value as → Percent of grand total
+### Show value as percent of grand total
+To display each value as a percentage of the total sales amount, open the drop-down menu on the measure in the Funnel visual, choose **Show value as**, and select **Percent of grand total.** This highlights the share each color contributes to the overall total.
 
 [ ![Image of funnel with percent of grand total.](media/desktop-show-value-as/show-value-as-funnel-grand.png)](media/desktop-show-value-as/show-value-as-funnel-grand.png#lightbox)
 
