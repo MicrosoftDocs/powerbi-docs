@@ -33,11 +33,11 @@ To apply "Show value as" to a measure in a Matrix:
 
 Matrix options:
 
-[ ![Matrix visualization pane with show value as options.](media/desktop-show-value-as/show-value-as_matrixOptions.png)](media/desktop-show-value-as/show-value-as_matrixOptions.png#lightbox)
+[ ![Matrix visualization pane with show value as options.](media/desktop-show-value-as/show-value-as-matrix-options.png)](media/desktop-show-value-as/show-value-as-matrix-options.png#lightbox)
 
 Table options:
 
-[ ![Table visualization pane with show value as options.](media/desktop-show-value-as/show-value-as_tableOptions.png)](media/desktop-show-value-as/show-value-as_tableOptions.png#lightbox)
+[ ![Table visualization pane with show value as options.](media/desktop-show-value-as/show-value-as-table-options.png)](media/desktop-show-value-as/show-value-as-table-options.png#lightbox)
 
 ## Show value as options
 The following table describes each option in the **Show value as** menu:
