@@ -297,7 +297,11 @@ And there are some limitations to keep in mind:
 - Maximum of 99,999 rows are returned per query.
 - Write permission on the semantic model. Viewers with build permission can use Power BI Desktop to live connect and use DAX query view to run DAX queries.
 - Only available for non-default semantic models. You can use Power BI Desktop to live connect to the default semantic model and use DAX query view to run DAX queries.
--  **User can edit data models in the Power BI service (preview)** Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models)
+
+  > [!NOTE]
+  > [!INCLUDE [default-semantic-model-retirement](~/../fabric-repo/docs/includes/default-semantic-model-retirement.md)]
+
+- **User can edit data models in the Power BI service (preview)** Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models)
 
 ## Related content
 

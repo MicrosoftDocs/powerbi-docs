@@ -79,6 +79,9 @@ To model your data, navigate to **Model view** by selecting on the **Model View*
 
 In Power BI, a semantic model is always required before any reports can be built, so the default semantic model enables quick reporting capabilities on top of the datamart.  Within the datamart, a user can add datamart objects -  tables to their default semantic model. They can also add additional semantic modeling properties, such as hierarchies and descriptions.  These are then used to create the Power BI semantic model’s tables. Users can also remove objects from the default semantic model. 
 
+> [!NOTE]
+> [!INCLUDE [default-semantic-model-retirement](~/../fabric-repo/docs/includes/default-semantic-model-retirement.md)]
+
 To add objects – tables or views to the default semantic model, a user has two options:
 
 - Automatically add objects to the semantic model, which happens by default with no user intervention needed
