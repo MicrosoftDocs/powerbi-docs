@@ -34,6 +34,9 @@ During preview, default semantic model connectivity is available using [DirectQu
 
 :::image type="content" source="media/datamarts-overview/datamarts-overview-02.png" alt-text="Diagram that shows how datamarts fit into the data connection and analysis continuum.":::
 
+> [!NOTE]
+> [!INCLUDE [default-semantic-model-retirement](~/../fabric-repo/docs/includes/default-semantic-model-retirement.md)]
+
 Default semantic models are different from traditional Power BI semantic models in the following ways:
 
 * The XMLA endpoint supports read-only operations and users can't edit the semantic model directly. With XMLA read-only permission you can query the data in a query window.
@@ -52,6 +55,9 @@ Finally, if you don't want to use the default semantic model directly, you can c
 Currently, tables in the datamart are automatically added to the default semantic model. Users can also manually select tables
 or views from the datamart they want included in the model for more flexibility. Objects that are in the default semantic model
 are created as a layout in the model view.
+
+> [!NOTE]
+> [!INCLUDE [default-semantic-model-retirement](~/../fabric-repo/docs/includes/default-semantic-model-retirement.md)]
 
 The background sync that includes objects (tables and views) waits for the downstream semantic model to not be in use to
 update the semantic model, honoring bounded staleness. Users can always go and manually pick tables they want or not want in
@@ -75,6 +81,9 @@ Incremental refresh and real-time data for datamarts offers the following advant
 ## Understand proactive caching
 
 Proactive caching enables automatic import of the underlying data for the default semantic model so you don't need to manage or orchestrate the storage mode. Import mode for the default semantic model provides performance acceleration for the datamart's semantic model by using the fast Vertipaq engine. When you use proactive caching, Power BI changes the storage mode of your model to import, which uses the in-memory engine in Power BI and Analysis Services.
+
+> [!NOTE]
+> [!INCLUDE [default-semantic-model-retirement](~/../fabric-repo/docs/includes/default-semantic-model-retirement.md)]
 
 Proactive caching works in the following way: after each refresh, the storage mode for the default semantic model is changed to DirectQuery. Proactive caching builds a side-by-side import model asynchronously and is managed by the datamart, and doesn't affect availability or performance of the datamart. Queries coming in after the default semantic model is complete will use the import model.
 
