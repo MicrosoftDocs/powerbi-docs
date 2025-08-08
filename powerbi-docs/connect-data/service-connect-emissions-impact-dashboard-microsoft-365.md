@@ -9,6 +9,9 @@ ms.topic: how-to
 ms.date: 12/03/2024
 LocalizationGroup: Connect to services
 no-loc: [Copilot]
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # Connect to the Emissions Impact Dashboard for Microsoft 365

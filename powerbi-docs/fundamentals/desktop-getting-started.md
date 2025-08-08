@@ -3,12 +3,14 @@ title: Get started with Power BI Desktop
 description: Get started with Power BI Desktop.
 author: JulCsc
 ms.author: juliacawthra
-ms.custom: intro-get-started
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 02/28/2025
 LocalizationGroup: Get started
+ms.custom:
+  - intro-get-started
+  - sfi-image-nochange
 ---
 # Get started with Power BI Desktop
 

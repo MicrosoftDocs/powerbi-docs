@@ -9,6 +9,7 @@ ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 05/17/2024
 LocalizationGroup: Data from files
+ms.custom: sfi-image-nochange
 ---
 # AI with dataflows
 

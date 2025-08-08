@@ -9,6 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 01/06/2023
 LocalizationGroup: Get started
+ms.custom: sfi-image-nochange
 ---
 # Save a Power BI paginated report to a local folder  with Power Automate
 

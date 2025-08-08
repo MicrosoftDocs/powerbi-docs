@@ -9,8 +9,10 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Roles in workspaces
 ms.topic: conceptual
 ms.date: 11/25/2024
-ms.custom: fabric
 LocalizationGroup: Share your work
+ms.custom:
+  - fabric
+  - sfi-image-nochange
 ---
 
 # Roles in workspaces in Power BI

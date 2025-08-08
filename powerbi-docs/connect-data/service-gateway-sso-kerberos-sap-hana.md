@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 10/08/2024
 LocalizationGroup: Gateways
+ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user I want to learn how to configure SSO for my SAP HANA server using Power BI.
 ---
 

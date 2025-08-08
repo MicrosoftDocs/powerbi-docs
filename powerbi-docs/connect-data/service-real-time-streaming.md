@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/27/2025
 LocalizationGroup: Data from files
+ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to understand how to set up and use real-time streaming in Power BI so that I can visualize and analyze live data for timely insights and decision-making.
 #customer intent: 
 ---

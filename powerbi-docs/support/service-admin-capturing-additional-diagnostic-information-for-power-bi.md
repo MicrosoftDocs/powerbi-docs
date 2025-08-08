@@ -8,8 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting
 ms.date: 12/6/2022
-ms.custom: ''
 LocalizationGroup: Troubleshooting
+ms.custom:
+  - ''
+  - sfi-image-nochange
 ---
 
 # Capture diagnostic information from the Power BI service

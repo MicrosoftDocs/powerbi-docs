@@ -7,9 +7,11 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.custom: fabric-cat
 ms.collection: ce-skilling-ai-copilot
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - sfi-ga-nochange
 ---
 
 # Power BI implementation planning: Subscriptions, licenses, and trials

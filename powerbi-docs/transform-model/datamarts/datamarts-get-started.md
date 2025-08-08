@@ -9,6 +9,7 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data from files
+ms.custom: sfi-image-nochange
 ---
 
 # Get started with datamarts

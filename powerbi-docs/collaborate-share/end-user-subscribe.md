@@ -9,8 +9,10 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 04/09/2025
-ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
+ms.custom:
+  - retail analysis sample
+  - sfi-image-nochange
 ---
 
 # Email subscriptions for reports and dashboards in the Power BI service

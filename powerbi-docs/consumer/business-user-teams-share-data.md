@@ -9,6 +9,7 @@ ms.subservice: pbi-explore
 ms.topic: overview
 ms.date: 06/30/2025
 LocalizationGroup: Get started
+ms.custom: sfi-image-nochange
 
 ---
 

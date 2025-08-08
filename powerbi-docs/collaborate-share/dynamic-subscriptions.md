@@ -9,8 +9,10 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/08/2024
-ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
+ms.custom:
+  - retail analysis sample
+  - sfi-image-nochange
 ---
 
 # Dynamic per recipient subscriptions for paginated reports 

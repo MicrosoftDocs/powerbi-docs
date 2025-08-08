@@ -9,6 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 12/07/2022
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 # Share a Power BI dashboard that links to an Excel file in OneDrive
 
