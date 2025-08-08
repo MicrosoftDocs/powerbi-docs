@@ -1,8 +1,8 @@
 ---
 title: Show value as in Power BI
 description: Change how the value is displayed in a visual by using the Show value as capability in the Visualizations pane.
-author: Jasmita Yechuri
-ms.author: jayechuri
+author: JasmitaY
+ms.author: t-jayechuri
 ms.reviewer: Jeroen ter Heerdt
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -16,7 +16,7 @@ The Show value as feature in Power BI lets you display your data as percentages 
 
 This feature is available in the context menu for numerical values or fields placed in the Values of matrix, table or chart visualizations.
 
-[ ![Image of the visualization pane.](media/desktop-show-value-as/show-value-as_Dropdown.png)](media/media/desktop-show-value-as/show-value-as_Dropdown.png#lightbox)
+[ ![Image of the visualization pane.](media/desktop-show-value-as/show-value-as-dropdown.png)](media/desktop-show-value-as/show-value-as-dropdown.png#lightbox)
 
 ## Access the "Show value as" menu
 
@@ -33,11 +33,11 @@ To apply "Show value as" to a measure in a Matrix:
 
 Matrix options:
 
-[ ![Matrix visualization pane with show value as options.](media/desktop-show-value-as/show-value-as_matrixOptions.png)](media/media/desktop-show-value-as/show-value-as_matrixOptions.png#lightbox)
+[ ![Matrix visualization pane with show value as options.](media/desktop-show-value-as/show-value-as_matrixOptions.png)](media/desktop-show-value-as/show-value-as_matrixOptions.png#lightbox)
 
 Table options:
 
-[ ![Table visualization pane with show value as options.](media/desktop-show-value-as/show-value-as_tableOptions.png)](media/media/desktop-show-value-as/show-value-as_tableOptions.png#lightbox)
+[ ![Table visualization pane with show value as options.](media/desktop-show-value-as/show-value-as_tableOptions.png)](media/desktop-show-value-as/show-value-as_tableOptions.png#lightbox)
 
 ## Show value as options
 The following table describes each option in the **Show value as** menu:
@@ -55,24 +55,24 @@ Let’s use the AdventureWorks DW 2020 dataset and build a Matrix with Country-R
 
 ### Original Matrix
 
-[ ![Image of original matrix example.](media/desktop-show-value-as/show-value-as_originalMatrix.png)](media/media/desktop-show-value-as/show-value-as_originalMatrix.png#lightbox)
+[ ![Image of original matrix example.](media/desktop-show-value-as/show-value-as-original-matrix.png)](media/desktop-show-value-as/show-value-as-original-matrix.png#lightbox)
 
 ### Show value as → Percent of grand total
 
-[ ![Image of matrix with percent of grand total.](media/desktop-show-value-as/show-value-as_grandTotalSales.png)](media/media/desktop-show-value-as/show-value-as_grandTotalSales.png#lightbox)
+[ ![Image of matrix with percent of grand total.](media/desktop-show-value-as/show-value-as-grand-total.png)](media/desktop-show-value-as/show-value-as-grand-total.png#lightbox)
 
 ### Show value as → Percent of column total (Matrix only)
 
-[ ![Image of matrix with percent of column total.](media/desktop-show-value-as/show-value-as_columnTotal.png)](media/media/desktop-show-value-as/show-value-as_columnTotal.png#lightbox)
+[ ![Image of matrix with percent of column total.](media/desktop-show-value-as/show-value-as-column-total.png)](media/desktop-show-value-as/show-value-as-column-total.png#lightbox)
 
 ### Show value as → Percent of row total (Matrix only)
 
-[ ![Image of matrix with percent of row total.](media/desktop-show-value-as/show-value-as_rowTotal.png)](media/media/desktop-show-value-as/show-value-as_rowTotal.png#lightbox)
+[ ![Image of matrix with percent of row total.](media/desktop-show-value-as/show-value-as-row-total.png)](media/desktop-show-value-as/show-value-as-row-total.png#lightbox)
 
 > [!Tip]
 > You can add the same measure multiple times to the Values area and apply a different “Show value as” option to each one. This allows for side-by-side comparisons.
 
-[ ![Image of matrix with all 3 options](media/desktop-show-value-as/show-value-as_allAmounts.png)](media/media/desktop-show-value-as/show-value-as_allAmounts.png#lightbox)
+[ ![Image of matrix with all 3 options](media/desktop-show-value-as/show-value-as-all-amounts.png)](media/desktop-show-value-as/show-value-as-all-amounts.png#lightbox)
 
 ## Example Funnel Visualization
 
@@ -80,11 +80,11 @@ Let’s use the AdventureWorks DW 2020 dataset and build a Funnel visualization 
 
 ### Original Funnel
 
-[ ![Image of funnel in original state.](media/desktop-show-value-as/show-value-as_funnelOriginal.png)](media/media/desktop-show-value-as/show-value-as_funnelOriginal.png#lightbox)
+[ ![Image of funnel in original state.](media/desktop-show-value-as/show-value-as-funnel-original.png)](media/desktop-show-value-as/show-value-as-funnel-original.png#lightbox)
 
 ### Show value as → Percent of grand total
 
-[ ![Image of funnel with percent of grand total.](media/desktop-show-value-as/show-value-as_funnelGrandTotal.png)](media/media/desktop-show-value-as/show-value-as_funnelGrandTotal.png#lightbox)
+[ ![Image of funnel with percent of grand total.](media/desktop-show-value-as/show-value-as-funnel-grand.png)](media/desktop-show-value-as/show-value-as-funnel-grand.png#lightbox)
 
 ## Considerations
 
