@@ -80,29 +80,20 @@ While not necessarily Azure services, you can also use the following tools avail
 
 Apart from [Copilot in Fabric](/fabric/get-started/copilot-fabric-overview), there are various AI services that you can integrate with Fabric and Power BI. These services can help you perform advanced analytics to apply specific models to your data, depending on your needs and use cases.
 
-Integrating with AI Azure services requires that you have an active Azure subscription for them. Additionally, some of these services also require that you have Fabric or Premium capacity, and they will use your capacity resources. To ensure that these workloads don't have a negative impact on your capacity utilization, ensure that you set a memory limit for AI workloads within your capacity. That way, you can avoid unexpected usage of your capacity units (CUs). For more information, see [Manage impact on a Premium capacity](../transform-model/desktop-ai-insights.md#manage-impact-on-a-premium-capacity).
+Integrating with AI Azure services requires that you have an active Azure subscription for them. Additionally, some of these services also require that you have Fabric or Premium capacity, and they will use your capacity resources. To ensure that these workloads don't have a negative impact on your capacity utilization, ensure that you set a memory limit for AI workloads within your capacity. That way, you can avoid unexpected usage of your capacity units (CUs).
 
 For guidance on how to integrate with the different AI services in Azure, see:
 
 - [Azure OpenAI Services](/fabric/data-science/ai-services/how-to-use-openai-via-rest-api)
-- [Azure AI Services (Text Analytics and Vision)](../transform-model/desktop-ai-insights.md#use-text-analytics-and-vision)
 - [Azure AI Translator](/fabric/data-science/ai-services/how-to-use-text-translator?tabs=rest)
-- [Azure Machine Learning](../transform-model/desktop-ai-insights.md#use-azure-machine-learning)
 
 #### Integrate Azure AI Services in Power Query
 
 You can invoke specific AI functions in Power Query by using Azure AI Services. These functions run by using Fabric capacity or Premium capacity for a selected workspace. They can derive useful information from less-structured text or image data.
 
-Use cases for Azure AI Services integration with a semantic model or dataflow include:
-
-- [Language detection](../transform-model/desktop-ai-insights.md#detect-language) from text in a field.
-- [Key phrase extraction](../transform-model/desktop-ai-insights.md#extract-key-phrases) from text in a field.
-- [Sentiment analysis](../transform-model/desktop-ai-insights.md#score-sentiment) of text from input fields.
-- [Image classification](../transform-model/desktop-ai-insights.md#tag-images) of images of recognizable objects, entities, scenes, or actions.
-
 #### Integrate Azure Machine Learning in Power Query
 
-Similarly to how you can use Azure AI Services, you can apply machine learning models to your data by [invoking dynamic Power Query functions](../transform-model/desktop-ai-insights.md#invoke-an-azure-machine-learning-model-in-power-query). These machine learning models must have schema files generated in Python by the model creator.
+Similarly to how you can use Azure AI Services, you can apply machine learning models to your data by invoking dynamic Power Query functions. These machine learning models must have schema files generated in Python by the model creator.
 
 Dataflow Gen1 creators can also use [AutoML](../transform-model/dataflows/dataflows-machine-learning-integration.md#work-with-automl) to create their own machine learning models by using Power BI during data preparation. Creators can choose a specific type of model, either [binary prediction](../transform-model/dataflows/dataflows-machine-learning-integration.md#binary-prediction-models), [general classification](../transform-model/dataflows/dataflows-machine-learning-integration.md#classification-models), or [regression](../transform-model/dataflows/dataflows-machine-learning-integration.md#regression-models). Next, they train these models with input data, and evaluate the results before they [apply the model](../transform-model/dataflows/dataflows-machine-learning-integration.md#apply-the-automl-model) to new or updated data after dataflow refresh.
 
