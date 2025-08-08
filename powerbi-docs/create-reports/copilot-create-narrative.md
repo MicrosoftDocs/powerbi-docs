@@ -84,6 +84,7 @@ There are a few embedded scenarios. Only two are supported at this time. This ch
 |Scenario |Supported |
 |---------|---------|
 |[**Embed a report in a secure portal or website**](../collaborate-share/service-embed-secure.md) Power BI. | Yes |
+|**Embed in a Sharepoint Site** A user embeds a report containing the narrative visual as a Power BI web part in a SharePoint site. Users must authenticate. [Embed in a SharePoint site](../collaborate-share/service-embed-report-spo.md?tabs=net-core). | Yes |
 |**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in. They need a license to sign in. This action is also known as [embed for your organization](../developer/embedded/embed-sample-for-your-organization.md?tabs=net-core). *Note: This scenario does NOT include embedding in PowerPoint at this time* | Yes |
 |**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as [embed for your customer's application](../developer/embedded/embed-sample-for-customers.md?tabs=net-core). | No |
 
