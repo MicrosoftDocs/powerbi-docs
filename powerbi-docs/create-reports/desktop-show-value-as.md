@@ -2,7 +2,7 @@
 title: Show value as in Power BI
 description: Change how the value is displayed in a visual by using the Show value as capability in the Visualizations pane.
 author: Jasmita Yechuri
-ms.author: juliacawthra
+ms.author: jayechuri
 ms.reviewer: Jeroen ter Heerdt
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -16,7 +16,7 @@ The Show value as feature in Power BI lets you display your data as percentages 
 
 This feature is available in the context menu for numerical values or fields placed in the Values of matrix, table or chart visualizations.
 
-![Screenshot of the Visualizations menu, highlighting the Show items with no data within the X-axis dropdown menu.](media/desktop-show-items-no-data/show-items-no-data_02.png)
+[ ![Image of the visualization pane.](media/desktop-show-value-as/show-value-as_01.png)](media/media/desktop-show-value-as/show-value-as_01.png#lightbox)
 
 ## Access the "Show value as" menu
 
@@ -26,13 +26,21 @@ To apply "Show value as" to a measure in a Matrix:
   1. Select the dropdown arrow within the field.
   1. Hover over **Show value as**.
   1. Select from options:
-    * No calculation
-    * Percent of grand total
-    * (Matrix only) Percent of column total
-    * (Matrix only) Percent of row total
+		- No calculation
+  		- Percent of grand total
+		- (Matrix only) Percent of column total
+		- (Matrix only) Percent of row total
+
+Matrix options:
+
+[ ![Matrix visualization pane with show value as options.](media/desktop-show-value-as/show-value-as_09.png)](media/media/desktop-show-value-as/show-value-as_09.png#lightbox)
+
+Table options:
+
+[ ![Table visualization pane with show value as options.](media/desktop-show-value-as/show-value-as_10.png)](media/media/desktop-show-value-as/show-value-as_10.png#lightbox)
 
 ## Show value as options
-The following table descibes eahc option in the **Show value as** menu:
+The following table describes each option in the **Show value as** menu:
 
 |**Option**  |**Description**  |
 |---------|---------|
@@ -41,21 +49,30 @@ The following table descibes eahc option in the **Show value as** menu:
 |Percent of column total     |Displays each value as a percentage of the total for its column (available for Matrix only).         |
 |Percent of row total     |Displays each value as a percentage of the total for its row (available for Matrix only).        |
 
-The next few examples are of a matrix visual.
-
 ## Example of Matrix Visualizaiton
 
 Let’s use the AdventureWorks DW 2020 dataset and build a Matrix with Country-Region from the Customer table in Rows, and Sales Amount from the Sales table to Values. Then, we’ll apply various "Show value as" options to compare results.
 
 ### Original Matrix
 
-### Show value as → Percent of grand total
+[ ![Image of original matrix example.](media/desktop-show-value-as/show-value-as_02.png)](media/media/desktop-show-value-as/show-value-as_02.png#lightbox)
 
 ### Show value as → Percent of grand total
+
+[ ![Image of matrix with percent of grand total.](media/desktop-show-value-as/show-value-as_03.png)](media/media/desktop-show-value-as/show-value-as_03.png#lightbox)
+
+### Show value as → Percent of column total (Matrix only)
+
+[ ![Image of matrix with percent of column total.](media/desktop-show-value-as/show-value-as_04.png)](media/media/desktop-show-value-as/show-value-as_04.png#lightbox)
 
 ### Show value as → Percent of row total (Matrix only)
 
-Tip: You can add the same measure multiple times to the Values area and apply a different “Show value as” option to each one. This allows for side-by-side comparisons.
+[ ![Image of matrix with percent of row total.](media/desktop-show-value-as/show-value-as_05.png)](media/media/desktop-show-value-as/show-value-as_05.png#lightbox)
+
+> [!Tip]
+> You can add the same measure multiple times to the Values area and apply a different “Show value as” option to each one. This allows for side-by-side comparisons.
+
+[ ![Image of matrix with all 3 options](media/desktop-show-value-as/show-value-as_06.png)](media/media/desktop-show-value-as/show-value-as_06.png#lightbox)
 
 ## Example Funnel Visualization
 
@@ -63,16 +80,21 @@ Let’s use the AdventureWorks DW 2020 dataset and build a Funnel visualization 
 
 ### Original Funnel
 
+[ ![Image of funnel in original state.](media/desktop-show-value-as/show-value-as_07.png)](media/media/desktop-show-value-as/show-value-as_07.png#lightbox)
+
 ### Show value as → Percent of grand total
 
-## When to use "Show value as"
+[ ![Image of funnel with percent of grand total.](media/desktop-show-value-as/show-value-as_08.png)](media/media/desktop-show-value-as/show-value-as_08.png#lightbox)
+
+## Considerations
+
 Use this feature when:
-	* You need to display **percent contributions** across categories.
-	* You want to **compare performance** between rows or columns.
-	* You are creating **executive summaries** that prioritize percentages over raw numbers.
+- You need to display **percent contributions** across categories.
+- You want to **compare performance** between rows or columns.
+- You are creating **executive summaries** that prioritize percentages over raw numbers.
 
 ## Related content
 
 This article described how you can enable the **Show value as** feature in Power BI. You might also be interested in the following articles:
 
-* [Use quick measures for common calculations](powerbi-docs/transform-model/desktop-quick-measures.md)
+* [Use quick measures for common calculations](../transform-model/desktop-quick-measures.md)
