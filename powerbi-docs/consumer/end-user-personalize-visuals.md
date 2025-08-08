@@ -90,20 +90,6 @@ Change how a measure is computed by changing the aggregation in the **Personaliz
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Screenshot of a report visual with some aggregation values highlighted.":::
 
-### Show value as
-
-Change how the value is displayed in a visual by using the **Show value as** capability in the **Visualizations** pane. This option allows you to apply quick display transformations such as showing a value as a percentage of a total without needing to modify the underlying data model.
-
-This feature is available in matrix, table and chart visuals.
-
-To use Show value as:
-1. In the **Visualizations** pane, locate the numeric field or measure in the **Values** or respective **Axis** based on the visual.
-2. Right-click or select the drop-down menu for the numeric field.
-3. From the drop-down menu, choose **Show value as**.
-Select the calculation you want to apply, such as **Percent of grand total** or **No calculation**
-
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-save-as-value-new.png" alt-text="Screenshot of a reprt visual, navigating to the drop-down with the Show value as option.":::
-
 ### Capture changes
 
 Using personal bookmarks, capture your changes so you can return to your personalized view. Select **Bookmarks** > **Add a personal bookmark** and give the bookmark a name.
