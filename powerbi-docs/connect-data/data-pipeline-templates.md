@@ -1,8 +1,8 @@
 ---
 title: Refresh a Semantic Model using Data Pipelines (Preview)
-description: 
+description: Learn how to use Power BI semantic model refresh templates with Fabric Data Pipelines. 
 author: ggongg
-ms.author: ggongg
+ms.author: gracegong
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -34,7 +34,7 @@ This opens the template gallery, which includes several pre-configured refresh s
 * **Sequencing multiple semantic model refreshes**: trigger refreshes sequentially for different semantic models. 
 Each template provides a guided setup to help you configure the refresh process within Data Pipelines.
 
-:::image type="content" source="media/data-pipeline-templates/dp-template-gallery.png" alt-text="Screen shot of the power bi semantic model refresh template gallery." lightbox="media/data-pipeline-templates/dp-template-gallery.png":::
+:::image type="content" source="media/data-pipeline-templates/datapipeline-template-gallery.png" alt-text="Screen shot of the power bi semantic model refresh template gallery." lightbox="media/data-pipeline-templates/datapipeline-template-gallery.png":::
 
 ## Components of the Data Pipeline solution
 
