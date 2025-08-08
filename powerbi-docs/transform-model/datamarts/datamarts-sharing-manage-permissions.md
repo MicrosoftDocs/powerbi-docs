@@ -61,6 +61,9 @@ Regardless of which way you choose to share a datamart, the **Grant people acces
 
 You can choose whether recipients can reshare the datamart with others in the organization, by selecting the checkbox next to **Allow recipients to share this datamart**. There's an option to allow users to create Power BI reports (from scratch, autocreate, paginated reports) on top of the default semantic model that is connected to the datamart by selecting the checkbox next to **Build reports on the default semantic model**. Both of these options are selected by default.
 
+> [!NOTE]
+> [!INCLUDE [default-semantic-model-retirement](~/../fabric-repo/docs/includes/default-semantic-model-retirement.md)]
+
 You can also choose to send recipients a message to provide more context, by typing a message into the **Add a message (optional)** field in the **Grant people access** window.
 
 The following image shows the **Grant people access** window.
