@@ -1,7 +1,7 @@
 ---
 title: Refresh a Semantic Model using Data Pipelines (Preview)
 description: 
-author: GraceGong
+author: ggongg
 ms.author: ggongg
 ms.reviewer: 
 ms.service: powerbi
