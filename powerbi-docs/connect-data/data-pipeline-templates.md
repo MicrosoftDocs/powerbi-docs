@@ -1,5 +1,5 @@
 ---
-title: Refresh a Semantic Model using Data Pipelines (Preview)
+title: Refresh a Semantic Model Using Data Pipelines (Preview)
 description: Learn how to use Power BI semantic model refresh templates with Fabric data pipelines. 
 author: ggongg
 ms.author: gracegong
