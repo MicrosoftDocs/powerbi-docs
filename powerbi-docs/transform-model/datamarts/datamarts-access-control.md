@@ -34,7 +34,6 @@ Assigning users to the various workspace roles provides the following capabiliti
 
 The Viewer role is a more limited role in comparison with the other workspace roles.  In addition to fewer SQL permissions given to viewers, there are more restricted actions.
 
-
 | Feature | Limitation |
 |---|---|
 |**Settings**|Viewers have read-only access, so they can't rename datamart, add description, or change sensitivity label.|
@@ -46,6 +45,9 @@ The Viewer role is a more limited role in comparison with the other workspace ro
 |**Lineage view**|Viewers don't have access to reading the lineage view chart.|
 |**Share/Manage permissions**|Viewers don't have permission to share datamarts with others.|
 |**Create a report**|Viewers don't have access to create content within the workspace and hence can't build reports on top of the datamart.|
+
+> [!NOTE]
+> [!INCLUDE [default-semantic-model-retirement](~/../fabric-repo/docs/includes/default-semantic-model-retirement.md)]
 
 ## Row level security
 
