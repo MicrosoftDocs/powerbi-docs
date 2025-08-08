@@ -1,8 +1,8 @@
 ---
-title: 
+title: Refresh a Semantic Model using Data Pipelines (Preview)
 description: 
 author: GraceGong
-ms.author: gracegong
+ms.author: ggongg
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -10,8 +10,6 @@ ms.topic: concept-article
 ms.date: 08/08/2025
 ---
 # Refresh a Semantic Model using Data Pipelines (Preview)
-
-> **Disclaimer:** The preview of Power BI semantic model refresh templates will roll out across all environments by the end of August 2025.
 
 Power BI semantic model refresh templates allow users to orchestrate semantic model refreshes using Data Pipelines, providing a streamlined way to visualize and sequence refresh activities for common scenarios. This article describes the Data Pipelines experience with Semantic Model Refresh Templates, which serve as an entry point from Power BI to Data pipelines. 
 
