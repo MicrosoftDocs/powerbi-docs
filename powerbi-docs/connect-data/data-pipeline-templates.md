@@ -43,11 +43,13 @@ The components of the data pipeline template experience include:
 * **Guided tour**: After selecting a semantic model refresh template, you'll be guided step-by-step through the configuration process. Read more about [Data Factory templates](/fabric/data-factory/templates).
 * **Semantic model refresh settings**: Select the connection, workspace, and semantic model to refresh. You can also specify tables or partitions for incremental refresh, updating only the changed data to optimize performance. Read more about [semantic model refresh activities](/fabric/data-factory/semantic-model-refresh-activity).
 * **Additional activities**: You can add additional actions to your refresh workflow, such as sending a Teams notification upon successful execution. Read more about [Data Factory activities](/fabric/data-factory/activity-overview). 
-* **Data pipelines**: Data pipelines orchestrate the refresh process, allowing you to visualize and sequence refresh activities for common scenarios. They provide a comprehensive and integrated solution for managing semantic model refreshes in Power BI. 
+* **Data pipelines**: Data pipelines orchestrate the refresh process, allowing you to visualize and sequence refresh activities for common scenarios. They provide a comprehensive and integrated solution for managing semantic model refreshes in Power BI. Read more about [Data pipelines](/fabric/data-factory/pipeline-landing-page). 
 
 ## Related content
 
 * [Data Factory documentation](/fabric/data-factory/)
+* [Data pipeline landing page](/fabric/data-factory/pipeline-landing-page)
 * [Templates for Data Factory](/fabric/data-factory/templates)
 * [Semantic model refresh activity to refresh a Power BI dataset](/fabric/data-factory/semantic-model-refresh-activity)
+
 
