@@ -29,15 +29,15 @@ The preview for org apps is off by default for tenants. To enable the preview, y
 
 ![Fabric admin portal tenant settings for org apps.](media/org-app-items/org-app-fabric-admin-portal-tenant-settings.png)
 
-### Workspace license mode set to Fabric trial or capacity
+### Workspace license mode set to Pro, Fabric trial, or capacity
 
-A workspace must be in a specific license mode to create an org app item: trial, Premium capacity, or Fabric capacity. To configure a workspace:
+A workspace must be in a specific license mode to create an org app item: Pro, Fabric trial, Premium capacity, or Fabric capacity. To configure a workspace:
 
 1. Create or open the workspace where you want to create org app items.
 1. Select **workspace settings**.
 1. Depending on your tenant, select the **Premium** tab or **License info** tab. 
 1. Select **Edit** to change the license mode for the workspace.
-1. Select **Trial**, **Premium capacity**, or **Fabric capacity** (depending on what your tenant administrator configured). 
+1. Select **Pro**, **Trial**, **Premium capacity**, or **Fabric capacity** (depending on what your tenant administrator configured). 
 
 ![Screenshot of Fabric trial and capacity license modes.](media/org-app-items/org-app-workspace-license-mode-setting.png)
 
