@@ -47,7 +47,8 @@ Alternatively, you can right-click an object in the Data view and select **Scrip
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-04.png" alt-text="Screenshot of right-clicking on an object in Data view to have Power BI create T-M-D-L metadata code.":::
 
 > [!TIP]
-> Multi selection is supported by pressing the CTRL key before scripting the objects into the TMDL view code editor.
+> - You can script entire sections - measures, tables or columns - by dragging the section into code editor to script all objects within the section.
+> - Multi selection is supported by pressing the CTRL key before scripting the objects into the TMDL view code editor.
 
 ## Code editor
 
