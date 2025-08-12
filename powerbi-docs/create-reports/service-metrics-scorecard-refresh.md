@@ -33,7 +33,7 @@ Metrics connected to a semantic model or report visual can be refreshed automati
 
 ### Automate bulk refresh with PowerShell
 
-To refresh all metrics in a workspace automatically, use the PowerShell script from the [Power BI Community Blog](https://community.fabric.microsoft.com/t5/Power-BI-Community-Blog/Power-BI-Metrics-Pro-Tip-Refresh-all-metrics).
+To refresh all metrics in a workspace automatically, use the PowerShell script from the [Power BI community blog](https://community.fabric.microsoft.com/t5/Power-BI-Community-Blog/Power-BI-Metrics-Pro-Tip-Refresh-all-metrics-script/ba-p/3139257).
 
 This script helps you:
 
@@ -47,7 +47,7 @@ Scorecards aggregate multiple metrics and might require a coordinated refresh st
 
 ### PowerShell automation
 
-To automate scorecard refreshes across workspaces, use the PowerShell script from the [Developer Community Blog](https://community.fabric.microsoft.com/t5/Developer/Powershell-script-to-automatically-refresh-scorecards/m-p/3494120).
+To automate scorecard refreshes across workspaces, use the PowerShell script from the [developer community blog](https://community.fabric.microsoft.com/t5/Developer/Powershell-script-to-automatically-refresh-scorecards/m-p/3494120).
 
 Key benefits:
 
@@ -72,7 +72,3 @@ You can also use [Power Automate](service-metrics-power-automate.md) to trigger 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)
 - [Stay on top of your metrics in Power BI](service-goals-check-in.md)
-
-## Feedback
-
-Have suggestions or issues with metric refresh? Share your feedback on the [Power BI Community](https://community.fabric.microsoft.com/).
