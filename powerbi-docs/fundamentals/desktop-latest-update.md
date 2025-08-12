@@ -15,7 +15,7 @@ ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 ---
 
-# What's new in Power BI: August 2025 update
+# What's new in Power BI: August 2025 update (version 2.146.705.0)
 
 The [August 2025 update for Power BI](https://powerbi.microsoft.com/blog/power-bi-august-2025-feature-summary/) delivers a powerful mix of AI enhancements, modeling upgrades, and reporting flexibility. Whether you're embedding reports in SharePoint or refining semantic models, this release is packed with tools to elevate your data experience.
 
@@ -79,10 +79,7 @@ Download previous versions of Power BI Desktop if your organization requires it.
 - If you get a warning when loading a report saved in a newer release, then save that report in the previous version, you lose any information related to new features.
 - Only the English versions of Power BI Desktop are archived.
 
-Select a link to download this version:
-
-- [August 2025 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-08.exe)
-- [August 2025 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-08_x64.exe)
+> **Download** the [August 2025 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494&dlm=002&frame=0&nav=1&msockid=033bf3dd086965063115e683097e64d0).
 
 ## Past updates
 
