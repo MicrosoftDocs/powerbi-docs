@@ -510,12 +510,6 @@
       href: desktop-insights.md
     - name: Use insights to discover how distributions vary
       href: desktop-insights-find-where-different.md
-    - name: Use AI Insights in Desktop
-      href: ../transform-model/desktop-ai-insights.md  
-    - name: Use Cognitive Services
-      href: ../connect-data/service-tutorial-use-cognitive-services.md
-    - name: Build a machine learning model
-      href: ../connect-data/service-tutorial-build-machine-learning-model.md
     - name: Use Machine Learning and Cognitive Services with dataflows
       href: ../transform-model/dataflows/dataflows-machine-learning-integration.md 
     - name: Anomaly detection

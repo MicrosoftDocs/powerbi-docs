@@ -4823,7 +4823,7 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Analytics
-* AI insights now generally available [[video]](https://youtu.be/WUo8TnHNHYM?t=1106)  [[article]](../transform-model/desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_AI) 
+* AI insights now generally available [[video]](https://youtu.be/WUo8TnHNHYM?t=1106) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_AI) 
 
 
 ### Visuals
@@ -5225,7 +5225,7 @@ The following updates were new to Power BI Desktop this month:
 
 
 ### Data preparation
-* Updates to AI Insights functions (preview) [[video]](https://youtu.be/eCEwgZsVUOs?t=2366)  [[article]](../transform-model/desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AIfunc) 
+* Updates to AI Insights functions (preview) [[video]](https://youtu.be/eCEwgZsVUOs?t=2366) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AIfunc) 
 
 
 ### Template apps
@@ -5301,7 +5301,7 @@ The following updates were new to Power BI Desktop this month:
 
 
 ### Data transformation
-* AI functions in Power Query (preview) [[video]](https://youtu.be/kVli3Vm_kDo?t=1976)  [[article]](../transform-model/desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#aiFunctions) 
+* AI functions in Power Query (preview) [[video]](https://youtu.be/kVli3Vm_kDo?t=1976) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#aiFunctions) 
 * Web by Example connector - support for extracting links [[video]](https://youtu.be/kVli3Vm_kDo?t=1861)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#webConnector) 
 
 

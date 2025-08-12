@@ -6789,6 +6789,26 @@
         "source_path": "powerbi-docs/consumer/business-user-teams-collaboration-data.md",
         "redirect_url": "/power-bi/collaborate-share/service-collaborate-microsoft-teams",
         "redirect_document_id": false
+    }, 
+    {
+        "source_path": "powerbi-docs/transform-model/dataflows/dataflows-machine-learning-integration.md",
+        "redirect_url": "/power-bi/transform-model/",
+        "redirect_document_id": false
+    }, 
+    {
+        "source_path": "powerbi-docs/transform-model/desktop-ai-insights.md",
+        "redirect_url": "/power-bi/transform-model/",
+        "redirect_document_id": false
+    }, 
+    {
+        "source_path": "powerbi-docs/connect-data/service-tutorial-build-machine-learning-model.md",
+        "redirect_url": "/power-bi/connect-data/",
+        "redirect_document_id": false
+    }, 
+    {
+        "source_path": "powerbi-docs/connect-data/service-tutorial-use-cognitive-services.md",
+        "redirect_url": "/power-bi/connect-data/",
+        "redirect_document_id": false
     }
   ]
 }
