@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 05/28/2024
 LocalizationGroup: Troubleshooting
+ms.custom: sfi-image-nochange
 ---
 
 # Troubleshoot Power BI gateway (personal mode)

@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
 ms.date: 05/23/2023
+ms.custom: sfi-image-nochange
 ---
 
 # Service interruption notifications

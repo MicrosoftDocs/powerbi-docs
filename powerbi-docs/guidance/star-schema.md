@@ -7,8 +7,10 @@ ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.custom: fabric-cat
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - sfi-image-nochange
 ---
 
 # Understand star schema and the importance for Power BI

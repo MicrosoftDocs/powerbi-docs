@@ -7,8 +7,10 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.custom: fabric-cat
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - sfi-image-nochange
 ---
 
 # Develop scalable multitenancy applications with Power BI embedding

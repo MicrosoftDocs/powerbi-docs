@@ -8,8 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: quickstart
 ms.date: 11/14/2024
-ms.custom: licensing support
 LocalizationGroup: Get started
+ms.custom:
+  - licensing support
+  - sfi-image-nochange
 # customer intent: As an individual, I want to use self-service to sign up for a Power BI license. 
 ---
  

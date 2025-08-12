@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 08/13/2024
 LocalizationGroup: Data refresh
+ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to learn how to configure scheduled refresh for a semantic model in the Power BI service so that I can keep my data up to date and ensure accurate insights in my reports and dashboards.
 ---
 

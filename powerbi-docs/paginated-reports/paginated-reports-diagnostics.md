@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/19/2023
+ms.custom: sfi-image-nochange
 ---
 
 # View diagnostics for Power BI paginated reports

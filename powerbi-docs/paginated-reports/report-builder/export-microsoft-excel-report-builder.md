@@ -9,6 +9,7 @@ ms.topic: conceptual
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
+ms.custom: sfi-image-nochange
 ---
 # Export a Power BI paginated report to Microsoft Excel (Power BI Report Builder)
 

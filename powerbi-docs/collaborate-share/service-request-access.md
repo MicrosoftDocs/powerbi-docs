@@ -9,6 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/15/2024
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 # Request or grant access to shared dashboards or reports
 

@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 01/18/2023
+ms.custom: sfi-image-nochange
 ---
 
 # Publish a paginated report to the Power BI service

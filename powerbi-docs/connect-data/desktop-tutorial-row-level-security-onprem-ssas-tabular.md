@@ -8,6 +8,7 @@ ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 01/16/2024
 LocalizationGroup: Connect to data
+ms.custom: sfi-image-nochange
 ---
 # Implement row-level security in an on-premises Analysis Services tabular model
 

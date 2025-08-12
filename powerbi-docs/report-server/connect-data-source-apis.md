@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 03/09/2021
+ms.custom: sfi-image-nochange
 ---
 # Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server
 

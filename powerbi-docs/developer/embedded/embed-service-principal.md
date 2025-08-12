@@ -7,8 +7,10 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.custom: ""
 ms.date: 11/14/2024
+ms.custom:
+  - ""
+  - sfi-image-nochange
 ---
 
 # Embed Power BI content with service principal and an application secret

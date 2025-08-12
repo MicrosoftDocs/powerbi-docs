@@ -9,6 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 12/14/2022
 LocalizationGroup: Get started
+ms.custom: sfi-image-nochange
 ---
 # Integrate Power BI data alerts with Power Automate
 
