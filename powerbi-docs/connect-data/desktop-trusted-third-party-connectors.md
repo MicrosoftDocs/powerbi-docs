@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 02/26/2025
 LocalizationGroup: Connect to data
+ms.custom: sfi-image-nochange
 ---
 # Trusted third-party connectors
 

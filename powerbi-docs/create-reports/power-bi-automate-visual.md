@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/05/2025
 LocalizationGroup: Create reports
+ms.custom: sfi-image-nochange
 # Customer intent: As a Power Bi user I want to create a Power Automate visual.
 ---
 # Create a Power Automate visual for Power BI

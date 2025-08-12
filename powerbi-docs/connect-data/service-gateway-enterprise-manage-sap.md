@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 02/02/2023
 LocalizationGroup: Gateways
+ms.custom: sfi-image-nochange
 ---
 
 # Manage your data source - SAP HANA

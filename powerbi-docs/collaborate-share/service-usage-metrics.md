@@ -10,6 +10,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 04/10/2025
 LocalizationGroup: Dashboards
+ms.custom: sfi-image-nochange
 ---
 
 # Monitor report usage metrics

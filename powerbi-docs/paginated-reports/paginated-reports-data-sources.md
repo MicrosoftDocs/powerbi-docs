@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 08/26/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Supported data sources for Power BI paginated reports

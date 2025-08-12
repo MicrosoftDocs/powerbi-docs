@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data refresh
+ms.custom: sfi-image-nochange
 ---
 
 # Refresh summaries for Power BI

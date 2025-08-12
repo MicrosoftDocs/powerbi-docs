@@ -6,9 +6,13 @@ ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.topic: troubleshooting
 ms.date: 01/24/2024
+ms.custom:
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # Troubleshoot your embedded application

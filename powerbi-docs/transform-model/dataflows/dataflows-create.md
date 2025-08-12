@@ -8,8 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 09/16/2024
-ms.custom: FY25Q1-Linter
 LocalizationGroup: Data from files
+ms.custom:
+  - FY25Q1-Linter
+  - sfi-image-nochange
 #customer intent: As a Power BI user I want to learn different options to create a dataflow and build on existing dataflows in Power BI.
 ---
 # Creating a dataflow

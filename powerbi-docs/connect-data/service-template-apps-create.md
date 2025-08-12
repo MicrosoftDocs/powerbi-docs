@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 03/17/2023
+ms.custom: sfi-image-nochange
 ---
 
 # Create a template app in Power BI

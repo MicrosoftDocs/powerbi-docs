@@ -8,8 +8,9 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/22/2023
-ms.custom:
 LocalizationGroup: Visualizations
+ms.custom:
+  - sfi-image-nochange
 ---
 # Create a Power BI semantic model directly from a SharePoint list
 

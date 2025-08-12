@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 06/10/2020
+ms.custom: sfi-image-nochange
 ---
 # How to configure Power BI report scheduled refresh
 To refresh data in your Power BI report in Power BI Report Server, you must create a scheduled refresh plan. You create this plan in the *Manage* area of a Power BI report on the report server.

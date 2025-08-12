@@ -4,12 +4,14 @@ description: Learn how a comma separated value file created on OneDrive or Share
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: kayu
-ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data refresh
+ms.custom:
+  - ''
+  - sfi-image-nochange
 ---
 # Refresh a semantic model created from a .CSV file on OneDrive or SharePoint
 

@@ -6,8 +6,10 @@ ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
-ms.custom: fabric-cat
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - sfi-ga-nochange
 ---
 
 # Microsoft Fabric adoption roadmap: User support

@@ -10,6 +10,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/03/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Scale your Power BI Embedded capacity in the Azure portal

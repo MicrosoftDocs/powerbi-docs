@@ -7,7 +7,10 @@ ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting 
 ms.date: 02/07/2024
-ms.custom: template-how-to; subject-moving-resources
+ms.custom:
+  - template-how-to
+  - subject-moving-resources
+  - sfi-ga-nochange
 ---
 
 # Move between regions

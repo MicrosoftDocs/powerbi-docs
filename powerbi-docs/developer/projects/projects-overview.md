@@ -189,6 +189,8 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - Report Linguistic Schema (report page synonyms) isn't supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
 - Power BI Projects is currently not supported in Microsoft Power BI Desktop version optimized for Power BI Report Server.
+- It's not possible to get and set Row-level security role members using [Fabric REST API](/rest/api/fabric/report/items)
+- It's not possible to get and set [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) partitions using [Fabric REST API](/rest/api/fabric/report/items). However, it does export a single partition using the query defined in the refresh policy.
 
 ## Frequently asked questions
 

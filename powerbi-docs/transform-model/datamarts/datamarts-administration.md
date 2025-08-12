@@ -9,6 +9,7 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/07/2024
 LocalizationGroup: Data from files
+ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user I want to learn how to manage and administer datamarts in Power BI.
 ---
 

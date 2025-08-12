@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 11/09/2024
+ms.custom: sfi-image-nochange
 # customer intent: As an ISV, I want to learn how to embed Power BI content with token-based, single sign-on (SSO) identities so I can provide secure access to my customers' data.
 ---
 
