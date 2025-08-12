@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data refresh
+ms.custom: sfi-image-nochange
 ---
 
 # Refresh a semantic model created from an Excel workbook on OneDrive or SharePoint Online

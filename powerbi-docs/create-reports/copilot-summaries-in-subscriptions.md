@@ -11,6 +11,7 @@ ms.date: 11/12/2024
 LocalizationGroup: Create report subscriptions with Copilot summaries
 no-loc: [copilot]
 ms.collection: ce-skilling-ai-copilot
+ms.custom: sfi-image-nochange
 #customer intent: As a report subscription creator, I want Copilot report summaries to be delivered in my subscription email.
 ---
 

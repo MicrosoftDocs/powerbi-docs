@@ -4,12 +4,14 @@ description: Refresh a Power BI Desktop File (pbix file) created from OneDrive, 
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: kayu
-ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data refresh
+ms.custom:
+  - ''
+  - sfi-image-nochange
 ---
 # Refresh a Power BI Desktop File (pbix file) stored on OneDrive or SharePoint Online
 Importing files from OneDrive or SharePoint Online into the Power BI service is a great way to make sure your work in Power BI Desktop stays in sync with the Power BI service.

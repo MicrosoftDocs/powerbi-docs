@@ -10,6 +10,7 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom:
   - video-removed
+  - sfi-image-nochange
 ---
 
 # Configure Kerberos to use Power BI reports

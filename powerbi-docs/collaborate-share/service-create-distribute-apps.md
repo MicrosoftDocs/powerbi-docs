@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 03/12/2025
 
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 
 # Publish an app in Power BI

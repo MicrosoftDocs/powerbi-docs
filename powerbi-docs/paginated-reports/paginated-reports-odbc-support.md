@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 09/28/2023
+ms.custom: sfi-image-nochange
 ---
 
 # Power BI gateway and Report Builder support for ODBC data sources

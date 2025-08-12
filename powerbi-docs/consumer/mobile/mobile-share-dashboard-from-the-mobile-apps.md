@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 02/02/2023
+ms.custom: sfi-image-nochange
 ---
 
 # Share a dashboard or report from Power BI mobile apps

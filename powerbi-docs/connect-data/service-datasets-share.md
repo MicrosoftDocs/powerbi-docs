@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 07/24/2024
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 # Share access to a semantic model
 

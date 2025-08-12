@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 02/28/2025
 LocalizationGroup: Gateways
+ms.custom: sfi-image-nochange
 ---
 
 # Test single sign-on (SSO) configuration

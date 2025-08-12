@@ -8,8 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 12/10/2024
-ms.custom: video-removed, video-removed
 LocalizationGroup: Gateways
+ms.custom:
+  - video-removed
+  - sfi-image-nochange
 #customer intent: As a Power BI user I want to learn how to manage SQL Server Analysis services for the on-premises gateway.
 ---
 # Manage SQL Server Analysis Services data sources
