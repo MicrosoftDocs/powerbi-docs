@@ -143,7 +143,8 @@ See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-lim
 - Users can't set instructions by category or by mode (view or edit) in Power BI Copilot.  
 - Consumers can't see what instructions an author applied to the model in the UI.  
 - End-users can't disable instructions on a semantic model.  
-- AI instructions might not be respected in Power BI Desktop when you're trying to create a page, get suggested report page topics, or a dataset summary with Copilot. To work around this, utilize the skill picker and select only "Create new report pages" to have instructions successfully apply.  
+- AI instructions might not be respected in Power BI Desktop when you're trying to create a page, get suggested report page topics, or a dataset summary with Copilot. To work around this, utilize the skill picker and select only "Create new report pages" to have instructions successfully apply.
+- AI instructions are limited to 10,000 characters. 
 
 ## Related content
 
