@@ -72,6 +72,9 @@ Parameter = {
 
 :::image type="content" source="media/power-bi-field-parameters/editing-field-parameter-in-dax.png" alt-text="Screenshot of example DAX parameters entered on Power BI.":::
 
+> ![NOTE]
+> Notice how the DAX above defines four fields in the Parameter and for each field three columns are provided: a name, column reference and the order number. While it is possible to define extra columns in the DAX above, this is not supported and can lead to unexpected results. We recommend you define the three columns for each field and use unique values for all columns.
+
 ## Limitations
 
 - AI visuals and Q&A aren't supported with the feature.
