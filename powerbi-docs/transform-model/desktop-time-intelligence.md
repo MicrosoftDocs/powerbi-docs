@@ -9,6 +9,7 @@ ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 06/13/2025
 LocalizationGroup: Model your data
+no-loc: [SAMEPERIODLASTYEAR,TOTALYTD,TOTALQTD,TOTALMTD,TOTALWTD,DATEADD,PARALLELPERIOD,SUM,CALCULATE,PREVIOUSDAY,PREVIOUSMONTH]
 ---
 # Implementing time-based calculations in Power BI
 
@@ -557,7 +558,7 @@ For this, we are going to recreate the same visual as in the previous example, b
 
 This shows that [PARALLELPERIOD](/dax/parallelperiod-function-dax) preserves context for columns not tagged in the calendar but clears the context for those tagged as time-related. **FullLastYearQuantity** used the **Gregorian** calendar where IsWorkingDay wasn't tagged in the calendar, while **FullLastYearQuantityTimeRelated** used the **GregorianWithWorkingDay** calendar where IsWorkingDay was tagged as time-related. All time intelligence functions except DATEADD and SAMEPERIODLASTYEAR behave this way.
 
-Bonus: If you really wanted to force these functions to preserve context for time-related columns as well, you can use [VALUES](/dax/values-function-dax):
+Bonus: If you really wanted to force these functions to preserve context for time-related columns as well, you can use [:::no-loc text="VALUES":::](/dax/values-function-dax):
 
 ```dax
 FullLastYearQuantityTimeRelatedOverride =
