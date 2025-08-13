@@ -162,13 +162,14 @@ To assign a column to a category, select the category from the **Add category** 
 
 ### Available column categories
 
-The following table shows the categories that are available and provides the expected cardinality in a Gregorian calendar. It also gives example values for Gregorian calendars.
+The following table shows the categories that are available.The table also gives example values and cardinalities for Gregorian calendars.
+
 Categories are divided into two groups:
 
 - **Complete**. Data in columns assigned to Complete categories is enough to uniquely identify the time period.
 - **Partial**. Data in columns assigned to Partial categories is not enough to uniquely identify the time period.
 
-|Category|Description|Type|Cardinality in a Gregorian calendar|Example column values in a Gregorian calendar|
+|Category|Description|Type|Example cardinality in a Gregorian calendar|Example column values in a Gregorian calendar|
 |--|--|--|--|--|
 |Year|The year|Complete|`Y` = number of years|2024, 2025|
 |Quarter|The quarter including the year|Complete|`4*Y`|Q1 2024, Q2 2025|
