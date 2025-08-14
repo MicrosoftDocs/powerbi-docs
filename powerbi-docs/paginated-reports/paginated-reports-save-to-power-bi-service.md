@@ -31,8 +31,11 @@ This article explains how to publish a paginated report to the Power BI service 
 
     ![Screenshot showing the Publish option under the File menu.](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
    
-       If you aren't signed in to Power BI yet, you need to sign in or create an account now. In the upper-right corner of Report Builder, select **Sign in** and complete the steps.
-
+    
+   
+   > [!CAUTION]
+   > If you aren't signed in to Power BI yet, you need to sign in or create an account now. In the upper-right corner of Report Builder, select **Sign in** and complete the steps.
+   
 1. In the list of workspaces on the left, select a workspace. Type a **File name** in the box > **Save**.
 
     ![Screenshot showing Select a workspace.](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png)
@@ -98,5 +101,6 @@ As with any other Power BI report, if the paginated report data source is on pre
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
+
 - [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md)
 
