@@ -21,7 +21,7 @@ This table compares the three tools provided:
 
 |Tool|Set up effort required|Ease of management|Flexiblity|Notes|
 |--|--|--|--|--|
-|[Auto-date/time](desktop-auto-date-time.md)|virtually zero|hard|low|Increases model size due to multiple hidden date tables between created|
+|[Auto-date/time](desktop-auto-date-time.md)|virtually zero|hard|low|Increases model size due to multiple hidden date tables created|
 |[Classic time intelligence](#classic-time-intelligence)|medium|easy|low|Requires creation of a date table, assumes Gregorian or shifted Gregorian calendar, suffers from performance issues in some specific scenarios|
 |[Calendar-based time intelligence](#calendar-based-time-intelligence-preview)|high|medium|high|Recommended to create a date table, highest flexibility, best performance, but increased setup cost|
 
@@ -107,7 +107,7 @@ The possibilities are endless as there's no built-in assumption from Power BI on
 
 #### Sparse dates
 
-[Classic time intelligence](#classic-time-intelligence) requires that the date column provided is complete - if there are any missing dates between the first and last dates, an error will be thrown. Calendar-based time intelligence functions do not have such a requirement. Instead, they operate on the dates as-is.
+[Classic time intelligence](#classic-time-intelligence) requires that the date column provided is complete - if there are any missing dates between the first and last dates, an error will be thrown. Calendar-based time intelligence functions do not have such a requirement. Instead, they operate on the dates as-is. While we still recommend having a complete and dedicated calendar table, you are no longer required to have that. For example, if all of your retail stores are closed over the weekend, you can skip over the weekend days as they won't have any sales. Assuming your weekend is Saturday and Sunday, you can now use [PREVIOUSDAY[(/dax/previousday-dax-function)] with a calendar based on a table that does not have entries for the weekend to jump from Monday straight to Friday.
 
 #### Week-based calculations
 
@@ -182,11 +182,11 @@ Categories are divided into two groups:
 |Week of Year|The week of the year|Partial|`52`|Week 50, W50, 50|
 |Week of Quarter|The week of the quarter|Partial|`13`|Quarter Week 10, QW10, 10|
 |Week of Month|The week of the month|Partial|`5`|Month Week 2, MW2, 2|
+|Date|The date|Complete|`365*Y ≤ value ≤ 366*Y`|12/31/2025|
 |Day of Year|The day of the year|Partial|`365 ≤ value ≤366`|365, D1|
 |Day of Quarter|The day of the quarter|Partial|`92`|Quarter Day 10, QD2, 50|
 |Day of Month|The day of the month|Partial|`31`|Month Day 30, MD10, 30|
 |Day of Week|The day of the week|Partial|`7`|Week Day 5, WD5, 5|
-|Date|The date|Complete|`365*Y ≤ value ≤ 366*Y`|12/31/2025|
 
 In addition to these categories, you can associate any number of columns on your table with the **Time-related** category. This isn't currently possible in the calendar options, but can instead only be done using external tools or [TMDL](#tmdl-script-for-calendars).
 
@@ -198,7 +198,7 @@ In addition to these categories, you can associate any number of columns on your
 
 ### Primary vs associated columns
 
-The primary column is required for each category. Whenever that column or any associated columns assigned to the same category on the referenced calendar are in context or the category is required to perform a calculation, Power BI uses the primary column. Additionally, the primary columns are used for sorting. If the values in the primary column don't allow it to be sortable as expected you can either [configure the primary column to sort by another column](../create-reports/desktop-sort-by-column.md) or use another column and make the original column an associated column. For example, a column textual data containing with monthnumber and year in a format of `mm-yyyy` (i.e. `01-2024`, `02-2024` and so on) will not sort correctly across multiple years, but a column that uses the `yyyy-mm` format will:
+The primary column is required for each category. Whenever that column or any associated columns assigned to the same category on the referenced calendar are in context or the category is required to perform a calculation, Power BI uses the primary column. Additionally, the primary columns are used for sorting. If the values in the primary column don't allow it to be sortable as expected you can either [configure the primary column to sort by another column](../create-reports/desktop-sort-by-column.md) or use another column and make the original column an associated column. For example, a column with textual data containing monthnumber and year in a format of `mm-yyyy` (i.e. `01-2024`, `02-2024` and so on) will not sort correctly across multiple years, but a column that uses the `yyyy-mm` format will:
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-sorting-textual-data-patterns.png" alt-text="Screenshot showing two tables. Each table has one column. The first table contains a column that contains textual monthnumber and year information in a mm-yyyy format and the second contains the same information in a yyyy-mm format. The column containing the mm-yyyy format data is not sorted correctly." lightbox="media/desktop-time-intelligence/calendar-sorting-textual-data-patterns.png":::
 
@@ -327,7 +327,7 @@ For this row, `DATEADD` would have an initial starting point in time of April 20
 Clearly, the two filter contexts above would conflict - we cannot evaluate the total sales given the current month as both January 2011 **and** April 2011. Such an intersection would of course yield no results.
 However, this is not what occurs. Instead, based on the calendar definition, calendar-based time intelligence functions will identify which categories' columns may result in conflicts, following the time operation that the function performs. In this case, `DATEADD` performs a shift at the **Quarter** level. The function will identify that both the **Year** and **Month of Year** categories may change as a result of a change in the **Quarter** category's columns. Thus, the function will clear filter context on **all** (both primary and associated) columns that are tagged to those categories. 
 
-In other words, we can say that the **Year** and **Month of Year** categories are dependencies of the **Quarter** category. Conversely, we can say that the **Quarter**" category is a dependent of the **Year** and **Month of Year** categories.
+In other words, we can say that the **Year** and **Month of Year** categories are dependencies of the **Quarter** category. Conversely, we can say that the **Quarter** category is a dependent of the **Year** and **Month of Year** categories.
 
 #### How context clearing works
 
@@ -346,7 +346,7 @@ When context is set on a column or its associated [sort by column](../create-rep
 
 ##### Time-related columns
 
-If filter context is set on a time-related column, context clearing is performed on **all** time-related columns and associated [sort-by columns](../create-reports/desktop-sort-by-column.md).
+Most time intelligence functions, with the exception of [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax), will clear context on all time-related columns and associated [sort-by columns](../create-reports/desktop-sort-by-column.md).
 
 ##### Cross-calendar behavior
 
@@ -451,6 +451,9 @@ createOrReplace
                 column: 'Holiday Name'
                 column: isWorkingDay
 ```
+
+> [!NOTE]
+> Notice that if you don't specify any category then the columns are tagged as [time-related](#time-related-columns). In the example above, **Holiday Name** and **isWorkingDay** are time-related columns on the **Demo Calendar**.
 
 ### Putting it all together: examples of time shifting
 
