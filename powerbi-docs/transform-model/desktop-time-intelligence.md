@@ -453,7 +453,7 @@ createOrReplace
 ```
 
 > [!NOTE]
-> Notice that if you don't specify any category then the columns are tagged as [time-related](#time-related-columns). In the example above, **Holiday Name** and **isWorkingDay** are time-related columns on the **Demo Calendar**.
+> Notice that if you don't specify any category for the `calendarColumnGroup` in TMDL, the columns are tagged as [time-related](#time-related-columns). In the example above, **Holiday Name** and **isWorkingDay** are time-related columns on the **Demo Calendar**.
 
 ### Putting it all together: examples of time shifting
 
