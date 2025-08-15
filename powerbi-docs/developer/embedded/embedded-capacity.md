@@ -46,7 +46,7 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 Power BI premium offers two SKUs, *P* and *EM*.
 
 * [Understand the differences between the *P* and *EM* SKUs](../../enterprise/service-premium-what-is.md#subscriptions-and-licensing)
-* [Buy a Premium SKU](/power-bi/enterprise)
+* [Buy a Premium SKU](/power-bi/enterprise/)
 
 ### Microsoft Fabric
 
