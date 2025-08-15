@@ -23,7 +23,7 @@ Before you begin, you need a workspace with a Microsoft Fabric-enabled [capacity
 
 In your Power BI workspace, navigate to the semantic model details page and select **Create Advanced Refresh** from the refresh dropdown to begin orchestrating a refresh. 
 
-:::image type="content" source="media/data-pipeline-templates/advancedrefreshentry.png" alt-text="Screen shot of the power bi semantic model details page entry point for the templates experience." lightbox="media/data-pipeline-templates/advancedrefreshentry.png":::
+:::image type="content" source="media/data-pipeline-templates/advancedrefreshentry.png" alt-text="Screen shot of the power bi semantic model details page entry point for the templates experience." lightbox="media/data-pipeline-templates/advanced-refresh-entry.png":::
 
 This opens the template gallery, which includes several pre-configured refresh scenarios, such as:
 
