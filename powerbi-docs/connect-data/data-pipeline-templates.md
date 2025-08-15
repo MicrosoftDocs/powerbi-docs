@@ -13,8 +13,6 @@ ms.date: 08/08/2025
 
 Power BI semantic model refresh templates allow users to orchestrate semantic model refreshes using data pipelines, providing a streamlined way to visualize and sequence refresh activities for common scenarios. This article describes the data pipelines experience with Semantic Model Refresh Templates, which serve as an entry point from Power BI to Data pipelines. 
 
-:::image type="content" source="media/real-time-intelligence-sample-experience/architecture-scheme.png"  lightbox="media/real-time-intelligence-sample-experience/architecture-scheme.png" alt-text="Schematic of Real-Time Intelligence architecture with sample items.":::
-
 [Azure Data Factory](/fabric/data-factory/data-factory-overview), part of the Fabric product suite, is a cloud-based ETL and data integration service designed to address complex data orchestration scenarios. It enables the creation of data-driven workflows (pipelines) that automate data movement and transformation at scale.
 
 Learn more about [templates for Data Factory](/fabric/data-factory/templates) and [semantic model refresh activity](/fabric/data-factory/semantic-model-refresh-activity) to refresh a Power BI dataset. 
