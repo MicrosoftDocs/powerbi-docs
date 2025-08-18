@@ -288,7 +288,8 @@ There are a few limitations for this release of editing data models in the Power
 Keep in mind the following considerations when interacting with the Power Query editor:
 
 * Using the Power Query editor to Transform data or connect to new data sources is only supported for import storage mode. These capabilities aren't support for Direct Lake or DirectQuery tables.
-* Adding import tables to the model from custom connectors, Azure Database for PostgreSQL, IBM Informix database (Beta), Essbase, Microsoft Exchange, Hadoop File (HDFS), OLE DB, R, and Python aren't supported
+* Adding import tables to the model from custom connectors, Azure Database for PostgreSQL, IBM Informix database (Beta), Essbase, Microsoft Exchange, Hadoop File (HDFS), OLE DB, R, and Python aren't supported. Models using these connectors also do not support query editing in the Power Query editor or refreshing via the ribbon button in the web model editing experience.
+* Semantic models with [connected goals](../create-reports/service-goals-create-connected.md) do not support editing queries in the Power Query editor or refreshing via the ribbon button in the web model editing experience.
 * Native queries aren't supported when connecting to a source using Get data
 * If you select **Cancel** or close the Power Query dialog, any changes made to queries will be discarded. In the web, changes made in the Power Query editor must be explicitly saved and applied to the model for them to persist beyond the editor.
 * You can use existing [personal cloud connections](../connect-data/service-connect-cloud-data-sources.md) in the Power Query editor for the semantic model, but you can't create new ones there. When connecting to a data source in the editor, only on-premises or shared cloud connections can be created. To use a personal cloud connection, link it through the semantic model settings page. Configuration and management of these personal cloud connections can be done in the Power BI **Manage Connections and Gateways** page.
@@ -297,7 +298,6 @@ Keep in mind the following considerations when interacting with the Power Query 
 * Dynamic data sources aren't supported in the Power Query editor.
 * When adding a new import data source using Power Query on the web, the semantic model doesn't automatically inherit the sensitivity label from that data source.
 * When importing data using Power Query in the Power BI service, relationships defined in the underlying data sources aren't automatically imported. These relationships must be manually recreated in the semantic model.
-* Refreshing semantic models from within the web editing experience in Pro workspaces is currently limited to 8 times per day. After reaching this limit, models can still be refreshed through other manual refresh options outside the editing interface.
 
 
 ### Unsupported semantic models
