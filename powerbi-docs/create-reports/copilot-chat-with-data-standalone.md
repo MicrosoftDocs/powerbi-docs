@@ -22,13 +22,11 @@ Copilot in Power BI is available as a full-screen, standalone Copilot experience
 :::image type="content" source="media/copilot-introduction/copilot-standalone-screen.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a chat interface for interacting with data." lightbox="media/copilot-introduction/copilot-standalone-screen.png":::
 
 > [!NOTE]
-> **Admins need to turn on the tenant setting:** To try it out, admins need to [enable Copilot in Power BI](copilot-enable-power-bi.md), and additionally enable the following new tenant setting: Users can access a standalone, cross-item Power BI Copilot experience.
+> **Admins need to turn on the tenant setting:** To try it out, admins need to [enable Copilot in Power BI](copilot-enable-power-bi.md), and additionally enable the following new tenant setting: [Users can access a standalone, cross-item Power BI Copilot experience](copilot-enable-power-bi.md#enable-the-standalone-power-bi-copilot-experience-preview).
 >
 > **Prep your data for good results:** You must prep your data for it to work well with Copilot. Read on to learn what that entails. For more information, see [Prepare your data for AI](copilot-prepare-data-ai.md).
 >
-> **Mark your data as prepped:** Semantic model authors have the ability to mark a semantic model as prepped in model settings. This impacts the appearance of *Needs AI prep* warnings. For more information, see [Mark your model as prepped for AI](copilot-prepare-data-ai.md#mark-your-model-as-prepped-for-ai).
->
-> **Warnings on unprepped data:** Models not marked as prepped result in warnings that the answer quality could be low. At the beginning of the preview, you only see a warning experience on answers.
+
 
 ## Capabilities
 
