@@ -28,10 +28,20 @@ You control query caching behavior on the **Settings** page for the semantic mod
 
 ![Query caching dialog box](media/power-bi-query-caching/power-bi-query-3-options.png)
 
+### ClientCacheRefreshPolicy
+[ClientCacheRefreshPolicy](https://learn.microsoft.com/analysis-services/server-properties/server-properties-in-analysis-services?view=power-bi-premium-current#power-bi-xmla-based-workspace-properties) is an XMLA-based Analysis Services server property. This setting overrides the scheduled cache refresh setting for all semantic models in a workspace.
+
+You can configure client cache refresh policy for individual workspaces by turning on the toggle to Observe XMLA-based workspace settings. To enable, navigate to **Power BI workloads** in the **Capacity Settings** page under **Admin Portal**. This setting has two possible values:
+
+- **0**: Discourage all background cache refreshes
+- **-1** (default): Allows all background cache refreshes as specified in the Scheduled cache refresh setting for the model.
+
 ## Considerations and limitations
 
 - When you change caching settings from **On** to **Off**, all previously saved query results for the semantic model are removed from the capacity cache. You can turn off caching either explicitly or by reverting to capacity default setting that an administrator sets to **Off**. Turning it off can introduce a small delay the next time any report runs queries against this semantic model. The delay is caused by those report queries running on demand and not applying saved results. Also, the required semantic model might need to be loaded into memory before it can service queries.
 - The query cache is refreshed when Power BI performs a semantic model refresh. When the query cache is refreshed, Power BI must run queries against the underlying data models to get the latest results. If a large number of semantic models have query caching enabled and the Premium/Embedded capacity is under heavy load, some performance degradation might occur during cache refresh. Degradation results from the increased volume of queries being executed.
+- **ClientCacheRefreshPolicy** clears the query cache and only avoids the proactive caching after data refresh. However, the capacity will build its dashboard and tiles cache over time until the next refresh.
+- Refresh operations performed by the XMLA endpoint or the enhanced refresh Power BI REST API, do not automatically refresh the query caches. The **ClientCacheRefreshPolicy** only applies when the refresh is performed by the Power BI service (e.g., scheduled or on-demand refreshes).
 
 ## Related content
 
