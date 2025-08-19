@@ -68,7 +68,7 @@ Enabling this setting allows users to access the standalone, cross-item Power BI
 > [!IMPORTANT]
 > 
 > - **Standalone Copilot will be enabled by default:** Starting on or after September 5, 2025, this setting (and therefore the Standalone Copilot experience) will be enabled by default for all tenants where Copilot has already been turned on. To opt out of the default activation for your tenant, an admin will need to turn the setting on, then off again.
->- **Copilot must be enabled at the tenant level:** *"Users can use Copilot and other features powered by Azure OpenAI"* must be enabled at the **tenant level** to use the standalone Copilot experience. It's not sufficient to enable it at the capacity level (that is, if its been delegated).
+>- **Copilot must be enabled at the tenant level:** *"Users can use Copilot and other features powered by Azure OpenAI"* must be enabled at the **tenant level** to use the standalone Copilot experience. It's not sufficient to enable it at the capacity level (that is, if it's been delegated).
 > - **Not all regions are supported:** The standalone Copilot experience is only available to customers with home tenants in geos that support Fabric—so it's only available for customers with home tenants in [this list](/fabric/admin/region-availability#all-workloads).
 
 ## Only show AI-prepped items in the standalone Copilot in Power BI experience (preview) 
