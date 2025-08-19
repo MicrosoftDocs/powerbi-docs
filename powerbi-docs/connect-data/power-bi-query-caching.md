@@ -29,7 +29,7 @@ You control query caching behavior on the **Settings** page for the semantic mod
 ![Query caching dialog box](media/power-bi-query-caching/power-bi-query-3-options.png)
 
 ### ClientCacheRefreshPolicy
-[ClientCacheRefreshPolicy](https://learn.microsoft.com/analysis-services/server-properties/server-properties-in-analysis-services?view=power-bi-premium-current#power-bi-xmla-based-workspace-properties) is an XMLA-based Analysis Services server property. This setting overrides the scheduled cache refresh setting for all semantic models in a workspace.
+ClientCacheRefreshPolicy is an XMLA-based Analysis Services server property. This setting overrides the scheduled cache refresh setting for all semantic models in a workspace.
 
 You can configure client cache refresh policy for individual workspaces by turning on the toggle to Observe XMLA-based workspace settings. To enable, navigate to **Power BI workloads** in the **Capacity Settings** page under **Admin Portal**. This setting has two possible values:
 
