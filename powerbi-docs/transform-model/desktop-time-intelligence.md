@@ -580,6 +580,7 @@ The [DATEADD](/dax/dateadd-function-dax) function has specific parameters that a
 #### Shifting from a shorter to a longer period
 For example, shifting forward one month with a selection in February, so the target month is March.
 You can use the `extension` parameter to influence how the shift is performed:
+
 |Extension parameter value|Description|Result|
 |--|--|--|
 |`precise`|This keeps the original date range strictly.|February 25-28 is shifted to March 25-28.|
@@ -589,6 +590,7 @@ You can use the `extension` parameter to influence how the shift is performed:
 For example, shifting backward one month with a selection in March, so the target month is February.
 
 You can use the `truncation` parameter to influence how the shift is performed:
+
 |Truncation parameter value|Description|Result|
 |--|--|--|
 |`anchored`|Anchors the result to the last valid date of the smaller month.|March 31 is shifted to February 28 (or 29 in  leap year).|
