@@ -574,6 +574,26 @@ In this case, `FullLastYearQuantityTimeRelatedOverride` returns the same results
 
 The elaborate example above shows that different time intelligence functions behave differently depending on whether columns are tagged as time-related in the calendar. [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax) only perform lateral time shifts. All other [time intelligence functions](/dax/time-intelligence-functions-dax) allow hierarchical time shifts.
 
+### Using DATEADD with calendars
+The [DATEADD](/dax/dateadd-function-dax) function has specific parameters that allow fine-grained control over how shifts are performed when the selection is on a more granular level than the shift level indicated by `interval` parameter in DATEADD. This happens for example if you are showing data on the date level but set the `interval` parameter to DATEADD to **MONTH**. For example, in a Gregorian calendar, when shifting a period that spans March 3 to 10 by a month will result in April 3 to 10. However, since months in Gregorian calendars vary in length, this can lead to ambiguities when shifting. Below are example scenarios based on a Gregorian calendar:
+
+#### Shifting from a shorter to a longer period
+For example, shifting forward one month with a selection in February, so the target month is March.
+You can use the `extension` parameter to influence how the shift is performed:
+|Extension parameter value|Description|Result|
+|--|--|--|
+|`precise`|This keeps the original date range strictly.|February 25-28 is shifted to March 25-28.|
+|`extended`|Allows the window to expand toward the end of the month.|February 25-28 is shifted to March 25-31.|
+
+#### Shifting from a longer to a shorter period
+For example, shifting backward one month with a selection in March, so the target month is February.
+
+You can use the `truncation` parameter to influence how the shift is performed:
+|Truncation parameter value|Description|Result|
+|--|--|--|
+|`anchored`|Anchors the result to the last valid date of the smaller month.|March 31 is shifted to February 28 (or 29 in  leap year).|
+|`blank`|When a shifted date does not exist, return *blank* .|Shifting March 31 back one month returns *blank* (since February 31 does not exist).|
+
 ### Considerations for working with calendar-based time-intelligence
 
 - Performing a time intelligence calculation on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) rules and can lead to unexpected results.
