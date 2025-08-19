@@ -260,7 +260,7 @@
           href: copilot-introduction.md
         - name: Enable Copilot in Power BI
           href: copilot-enable-power-bi.md 
-        - name: Chat with your data
+        - name: Standalone Copilot
           href: copilot-chat-with-data-standalone.md
         - name: Copilot for reports and models
           href: copilot-reports-overview.md
