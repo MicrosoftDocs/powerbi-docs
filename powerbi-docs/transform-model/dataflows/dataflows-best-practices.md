@@ -28,6 +28,8 @@ You can use Power Automate or Azure Logic Apps to export your dataflow definitio
 
 You can also manually export your dataflow to a JSON file and import it to another workspace or location. Manually exporting your dataflow is simple and quick, but is a manual process that must be done each time you want to back up your dataflow. 
 
+Dataflows Save As feature is not supported in the event of disaster recovery, as it creates a copy in the same workspace.
+
 
 ## Dataflows best practices table and links
 
