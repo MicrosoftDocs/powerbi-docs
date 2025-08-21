@@ -20,7 +20,7 @@ When you view a report that has parameters, the report viewer toolbar displays e
 ## Parameters pane in the Power BI service
 
 ![Screenshot showing View paginated report with parameters.](media/paginated-reports-view-parameters/power-bi-paginated-view-parameters.png)
-  
+
 1. **Parameters pane** Select **Parameters** to show or hide the Parameters pane.
   
 1. **Organization parameter** The Organization parameter is set to allow you to select only one value.
@@ -30,6 +30,10 @@ When you view a report that has parameters, the report viewer toolbar displays e
 1. **View Report**  After you enter or change parameter values, select **View Report** to run the report. 
 
 1. **Default values** If all parameters have default values, the report runs automatically on first view. The parameters in this report have default values, so you see the report with those values.  
+
+## Considerations and limitations 
+
+- The parameter section does not support right-to-left (RTL) layout.
 
 ## Related content
 
