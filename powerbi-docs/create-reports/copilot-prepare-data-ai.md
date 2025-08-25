@@ -120,7 +120,7 @@ Once you prepare your semantic model for AI and it's ready for consumption, you 
 When your semantic model is marked as *prepped for AI*, answers from that model won't receive any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai) in the standalone Copilot agent. Also, reports that use that semantic model can be considered as prepped for AI.
 
 > [!NOTE]
-> Although marking a semantic model as *prepped for AI* should remove the friction treatment in standalone Copilot immediately, reports built from that model might take up to 1 hour to remove these behaviors(it can take upto 24 hours if model has a lot of reports attached to it). To trigger a report reindexing, you can manually save a small change to a report to speed up the process. There's currently no way to mark a report, dashboard, or app as prepped for AI.
+> Although marking a semantic model as *prepped for AI* should remove the friction treatment in standalone Copilot wihin a few minutes, reports built from that model might take up to 24 hours to remove these behaviors if the model has a lot of reports attached to it. To trigger a report reindexing, you can manually save a small change to a report to speed up the process. There's currently no way to mark a report, dashboard, or app as prepped for AI.
 
 Authors also have the ability to [turn on an admin setting to only search data that is marked as prepped for AI within the standalone Copilot experience](/fabric/admin/service-admin-portal-copilot#only-show-ai-prepped-items-in-the-standalone-copilot-in-power-bi-experience-preview).
  
