@@ -7,7 +7,7 @@ ms.reviewer:  juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: concept-article
-ms.date: 12/30/2024
+ms.date: 08/12/2025
 ms.custom: licensing support
 LocalizationGroup: consumers
 #customer intent: As a Fabric user I want to understand feature availability for the Power BI service.
@@ -119,7 +119,8 @@ The second column represents a free user working with content in a workspace tha
 |View dashboards that have been embedded into PowerApps or SharePoint pages | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  | 
 |**Datasets**
 |  Add, delete, edit  |  ![green myw](media/end-user-features/green-mwo.png)  |  ![orange x](media/end-user-features/orange-x.png) |   
-| Create a report in another workspace based on a dataset in this workspace | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |      
+| Create a report in another workspace based on a dataset in this workspace | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
+| Create a report in "My Workspace" using a dataset located in a Fabric Capacity Workspace |![orange x](media/end-user-features/orange-x.png) | ![orange x](media/end-user-features/orange-x.png)|
 |  Insights on datasets  | ![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |Schedule refresh |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)|
 |Analyze in Excel |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*|

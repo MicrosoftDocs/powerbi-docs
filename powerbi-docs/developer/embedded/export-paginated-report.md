@@ -346,9 +346,11 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 ## Considerations and limitations
 
+> [!NOTE]
+> Exporting a paginated report with a [service principal profile](./embed-multi-tenancy.md) caller is now supported when the data source is a semantic model.
+
 * Exporting a paginated report that has a Power BI semantic model as its data source, isn't supported in the following cases:
 
-  * The caller is a [service principal profile](./embed-multi-tenancy.md).
   * One of the semantic model's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
   * The Power BI semantic model has DirectQuery to Azure Analysis Services or to another Power BI semantic model, and an effective identity was provided.
 

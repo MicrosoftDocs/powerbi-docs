@@ -1,5 +1,5 @@
 ---
-title: Use Copilot to create measure descriptions (preview)
+title: Use Copilot to create measure descriptions
 description: Learn how you can add descriptions to your semantic model measures with Fabric Copilot for Power BI.
 author: JulCsc
 ms.author: juliacawthra
@@ -12,27 +12,21 @@ LocalizationGroup: Model your data
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
-# Use Copilot to create measure descriptions (preview)
+# Use Copilot to create measure descriptions
 
 Add descriptions to your semantic model measures with Fabric Copilot for Power BI. People building reports from your semantic model can see the name and description of your measures, making the description property essential documentation. Fabric Copilot can streamline your semantic model documentation by creating measure descriptions for you.
 
 :::image type="content" source="media/desktop-measure-copilot-descriptions/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/desktop-measure-copilot-descriptions/copilot-measure-description-model-view.png":::
 
-## Turn on the preview feature
-
-To try this preview feature in Power BI Desktop, you need to turn it on. 
-
-- In **Options** > **Preview features**, select **Measure descriptions with Copilot**.
-
-This preview feature is available when [editing a semantic model in the Power BI service](service-edit-data-models.md).
-
 Learn more about how to access to Fabric Copilot for Power BI on your tenant in the [Copilot requirements](../create-reports/copilot-introduction.md#copilot-requirements) section of the Copilot introduction article.
 
 ## Create a description with Copilot
 
-1. Select an existing model measure in the Data pane of Model view to see the measure properties.  
+This feature is available in Power BI Desktop and when editing the data model in the web. 
 
-1. Select the **Create with Copilot (preview)** button under the **Description** textbox.  
+1. Select an existing model measure in the **Data** pane of **Model view** to see the measure properties.  
+
+1. Select the **Create with Copilot** button under the **Description** textbox.  
 
 1. Review the measure description from Copilot, then select **Keep it**.  
 

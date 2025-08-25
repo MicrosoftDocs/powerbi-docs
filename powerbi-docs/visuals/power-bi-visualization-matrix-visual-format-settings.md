@@ -203,6 +203,19 @@ The **Row subtotals** toggle allows you to control whether subtotals are display
 [!INCLUDE [global-background-color](../includes/core-visuals/global-background-color.md)]
 [!INCLUDE [global-apply-to-labels](../includes/core-visuals/global-apply-to-labels.md)]
 
+### Grand Total Color Behavior
+
+#### Values
+
+If no grand total text color is explicitly defined, the subtotal text color is automatically inherited by the grand total.  
+* The grand total text color does **not** support an 'undefined' state.
+
+Similarly, if the grand total background color is not explicitly set, it will **inherit** the background color from the subtotal. 
+* Unlike text color, the grand total background color **does** support an 'undefined' option.
+
+> [!NOTE]
+> These color inheritance behaviors are currently under review and may change in future versions. Developers are strongly encouraged to **explicitly define** any grand total colors to avoid unintended styling
+
 ### Specific column settings
 
 #### Apply settings to
