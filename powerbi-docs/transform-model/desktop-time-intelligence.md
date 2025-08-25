@@ -107,7 +107,7 @@ The possibilities are endless as there's no built-in assumption from Power BI on
 
 #### Sparse dates
 
-[Classic time intelligence](#classic-time-intelligence) requires that the date column provided is complete - if there are any missing dates between the first and last dates, an error will be thrown. Calendar-based time intelligence functions do not have such a requirement. Instead, they operate on the dates as-is. While we still recommend having a complete and dedicated calendar table, you are no longer required to have that. For example, if all of your retail stores are closed over the weekend, you can skip over the weekend days as they won't have any sales. Assuming your weekend is Saturday and Sunday, you can now use [PREVIOUSDAY[(/dax/previousday-dax-function)] with a calendar based on a table that does not have entries for the weekend to jump from Monday straight to Friday.
+[Classic time intelligence](#classic-time-intelligence) requires that the date column provided is complete - if there are any missing dates between the first and last dates, an error will be thrown. Calendar-based time intelligence functions do not have such a requirement. Instead, they operate on the dates as-is. While we still recommend having a complete and dedicated calendar table, you are no longer required to have that. For example, if all of your retail stores are closed over the weekend, you can skip over the weekend days as they won't have any sales. Assuming your weekend is Saturday and Sunday, you can now use [PREVIOUSDAY](/dax/previousday-dax-function) with a calendar based on a table that does not have entries for the weekend to jump from Monday straight to Friday.
 
 #### Week-based calculations
 
@@ -600,6 +600,8 @@ You can use the `truncation` parameter to influence how the shift is performed:
 
 - Performing a time intelligence calculation on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) rules and can lead to unexpected results.
 - Performance of this preview feature isn't representative of the end product.
+- You cannot author calendars in the Power BI Service yet.
+- You should not use [auto date/time](desktop-auto-date-time.md) tables with custom calendars.
 - We recommend you associate only the columns in your calendar that you want to use in time intelligence calculations.
 - Calendars are subject to both [real-time](#real-time-validations) as well as [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 - Each calendar must have a unique name within the data model
