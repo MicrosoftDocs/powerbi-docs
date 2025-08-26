@@ -53,7 +53,7 @@ The following examples show how you can use templates to orchestrate semantic mo
 
 ### Refresh a semantic model after a dataflow refresh
 
-Use this template when you want a semantic model to refresh once a dataflow completes.  
+Use this template when you want a semantic model to refresh once a [dataflow](/fabric/data-factory/dataflow-activity) completes.  
 
 :::image type="content" source="media/data-pipeline-templates/semantic-model-dataflow.png" alt-text="Screenshot of the refresh semantic model after a dataflow refresh configuration." lightbox="media/data-pipeline-templates/semantic-model-dataflow.png":::  
 
@@ -63,20 +63,20 @@ Use this template when you want a semantic model to refresh once a dataflow comp
 :::image type="content" source="media/data-pipeline-templates/semantic-model-dataflow-2.png" alt-text="Screenshot of the semantic model details for refreshing a semantic model after a dataflow refresh." lightbox="media/data-pipeline-templates/semantic-model-dataflow-2.png":::   
 
 
-### Incremental (partition) refresh
+### Incremental refresh
 
-Refresh only the updated partitions.
+A semantic model can be incrementally refreshed according to the selected tables and partitions.
 
 :::image type="content" source="media/data-pipeline-templates/incremental-refresh.png" alt-text="Screenshot of the incremental refresh configuration." lightbox="media/data-pipeline-templates/incremental-refresh.png":::  
 
 1. In the semantic model refresh activity, choose the tables you want to refresh.  
-2. Select partitions (for example, the Category) instead of the entire model.  
+2. Select partitions to be refreshed.  
 3. Run the pipeline to refresh only the changed data.  
 
 
 ### Add notifications or alerts
 
-You can extend your pipeline by adding activities that notify users when a refresh completes or fails.  
+You can extend your pipeline by adding [activities](/fabric/data-factory/activity-overview) that notify users when a refresh completes or fails.  
 
 :::image type="content" source="media/data-pipeline-templates/add-activity.png" alt-text="Screenshot of the teams and outlook activity." lightbox="media/data-pipeline-templates/add-activity.png":::  
 
@@ -93,17 +93,17 @@ Set up a semantic model refresh to run on a schedule.
 
 1. Select the semantic model to refresh.  
 2. Configure the schedule (minute-by-minute, hourly, daily, weekly or monthly).  
-3. Save the pipeline to apply the schedule.  
+3. Save the pipeline to apply the [schedule.](/fabric/data-factory/pipeline-runs) 
 
 :::image type="content" source="media/data-pipeline-templates/save-and-run.png" alt-text="Screenshot of the successful pipeline run." lightbox="media/data-pipeline-templates/save-and-run.png":::  
 
 ### Sequence multiple semantic models
 
-Use this template when multiple models need to refresh in a specific order.  
+Use this template when multiple semantic models need to refresh in a specific order.  
 
 :::image type="content" source="media/data-pipeline-templates/partition1.png" alt-text="Screenshot of the sequence multiple semantic models configuration." lightbox="media/data-pipeline-templates/partition1.png":::  
 
-1. Add multiple semantic model refresh activities to the pipeline.  
+1. Add multiple [semantic model refresh activities](/fabric/data-factory/semantic-model-refresh-activity) to the pipeline.  
 2. Arrange them in sequence.  
 3. Save and run the pipeline.  
 
@@ -118,7 +118,7 @@ Trigger a semantic model refresh based on events.
 2. Configure the semantic model refresh activity with connection, workspace, and model.  
 3. Optionally add alerts or other downstream activities.  
 
-This is ideal for scenarios where your data changes unpredictably, and you need the semantic model updated immediately.  
+This is ideal for scenarios where your data changes unpredictably, and you need the semantic model updated immediately. Read more about [event triggers](/fabric/data-factory/pipeline-storage-event-triggers).  
 
 ## Related content
 
