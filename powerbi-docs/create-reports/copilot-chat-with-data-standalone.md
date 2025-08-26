@@ -102,5 +102,5 @@ Read about [requirements to use the standalone Copilot experience](copilot-intro
 
 ## Considerations and limitations
 
-The standalone Copilot experience isn't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West.
+The standalone Copilot experience is only available to customers with home tenants in geos that support Fabric—so **it's only available** for customers with home tenants in [this list](/fabric/admin/region-availability#all-workloads). You don’t need to have Fabric enabled to use Copilot, they just need to have home tenants in one of the listed regions.
 

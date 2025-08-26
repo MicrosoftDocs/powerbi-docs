@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/18/2024
+ms.custom: sfi-image-nochange
 ---
 # Configure Power BI Report Server with Microsoft Entra application proxy
 

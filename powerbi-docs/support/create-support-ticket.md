@@ -12,6 +12,7 @@ ms.subservice: powerbi-admin
 # ms.prod: # To use ms.prod, uncomment it and delete ms.service
 ms.topic: troubleshooting 
 ms.date: 08/13/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Create a support ticket

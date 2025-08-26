@@ -7,8 +7,10 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.custom: ''
 ms.date: 06/03/2025
+ms.custom:
+  - ''
+  - sfi-image-nochange
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 

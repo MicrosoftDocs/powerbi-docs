@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/06/2023
 LocalizationGroup: Create reports
+ms.custom: sfi-image-nochange
 ---
 # Certificate revocation check, Power BI Desktop
 

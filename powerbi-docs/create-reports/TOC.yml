@@ -260,7 +260,7 @@
           href: copilot-introduction.md
         - name: Enable Copilot in Power BI
           href: copilot-enable-power-bi.md 
-        - name: Chat with your data
+        - name: Standalone Copilot
           href: copilot-chat-with-data-standalone.md
         - name: Copilot for reports and models
           href: copilot-reports-overview.md
@@ -360,6 +360,8 @@
       href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
     - name: Show items with no data
       href: desktop-show-items-no-data.md
+    - name: Show value as
+      href: desktop-show-value-as.md
     - name: Apply data-point limits and strategies by visual type
       href: ../visuals/power-bi-data-points.md
     - name: Display a visual's underlying data
@@ -508,12 +510,6 @@
       href: desktop-insights.md
     - name: Use insights to discover how distributions vary
       href: desktop-insights-find-where-different.md
-    - name: Use AI Insights in Desktop
-      href: ../transform-model/desktop-ai-insights.md  
-    - name: Use Cognitive Services
-      href: ../connect-data/service-tutorial-use-cognitive-services.md
-    - name: Build a machine learning model
-      href: ../connect-data/service-tutorial-build-machine-learning-model.md
     - name: Use Machine Learning and Cognitive Services with dataflows
       href: ../transform-model/dataflows/dataflows-machine-learning-integration.md 
     - name: Anomaly detection

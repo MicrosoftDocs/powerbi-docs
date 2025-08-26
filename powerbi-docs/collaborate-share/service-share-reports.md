@@ -9,6 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 06/22/2023
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 # Share a filtered Power BI report
 

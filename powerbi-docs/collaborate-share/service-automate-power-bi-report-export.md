@@ -9,6 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 12/12/2024
 LocalizationGroup: Get started
+ms.custom: sfi-image-nochange
 ---
 # Export and email a Power BI report with Power Automate
 

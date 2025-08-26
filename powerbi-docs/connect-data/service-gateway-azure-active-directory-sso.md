@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 06/27/2024
 LocalizationGroup: Gateways
+ms.custom: sfi-image-nochange
 ---
 
 # Microsoft Entra SSO

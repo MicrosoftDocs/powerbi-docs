@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/30/2024
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 #customer intent: As a semantic model owner, I want to manage access permissions to my semantic model so that I can ensure the security and proper access control of sensitive data.
 ---
 # Manage semantic model access permissions (preview)

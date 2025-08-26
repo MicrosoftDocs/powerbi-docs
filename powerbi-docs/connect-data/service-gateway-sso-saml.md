@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 05/17/2022
 LocalizationGroup: Gateways
+ms.custom: sfi-image-nochange
 ---
 
 # Use Security Assertion Markup Language for SSO from Power BI to on-premises data sources

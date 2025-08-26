@@ -9,6 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 06/30/2025
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 
 # Collaborate and share Power BI reports and dashboards

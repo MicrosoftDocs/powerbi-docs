@@ -10,6 +10,7 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/11/2025
 LocalizationGroup: Get started
+ms.custom: sfi-image-nochange
 ---
 
 # Sign in to the Power BI service

@@ -16,7 +16,17 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
- 
+
+## August 2025 QFE 1
+
+*Version 2.146.1026.0, Released: August 19, 2025*
+
+Bug fixes/improvements:
+
+- Fixed Databricks SQL Endpoint connection issue.
+- Fixed DirectQuery failures for Gen1 Dataflows with Enhanced compute.
+- Fixed PBIR versioning issues with the Translytical task flows preview.
+
 ## July 2025 QFE 3
 
 *Version 2.145.1602.0, Released: July 31, 2025*

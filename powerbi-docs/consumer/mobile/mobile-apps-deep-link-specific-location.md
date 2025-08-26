@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2024
+ms.custom: sfi-image-nochange
 ---
 # Create a link to a specific location in the Power BI mobile apps
 
