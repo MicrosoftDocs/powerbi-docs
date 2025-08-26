@@ -1,0 +1,27 @@
+# Auto-generated Captions for standalone Copilot search results
+
+**Date:** [MM/DD/YYYY]
+
+## Feature Overview
+Power BI aims to enhance item discoverability by auto-generating captions for items lacking user-created descriptions. These AI-generated captions provide contextual information in search results within the standalone Copilot experience, improving user understanding.
+
+## Purpose of Auto-generated Captions 
+- Captions serve as “pseudo descriptions” displayed when user-created descriptions are absent for the items
+-  They provide context while avoiding repetition of metadata like titles or workspace information
+
+## Requirements for Auto-generated Captions
+ - Caption generation requires the Fabric Copilot tenant setting enabled and respects cross-geo data processing settings.
+ - Generated captions are always displayed without requiring creator approval and cannot be disabled by admins.
+
+## Consumer experience
+ - Captions are generated on report publishing or editing.
+ - Captions appear in Power BI standalone Copilot search results if no description exists for the item
+ - User-created descriptions take precedence over generated captions.
+
+## Considerations and Limitations
+ - Auto-generated captions will be available for Power BI Reports
+
+
+## Related content
+[Find content with Power BI Copilot search](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-search-new-content)  
+[Standalone Copilot experience in Power BI (preview)](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-chat-with-data-standalone)
