@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 09/21/2023
+ms.custom: sfi-image-nochange
 ---
 
 # Create an embedded data source for paginated reports in the Power BI service

@@ -8,6 +8,7 @@ ms.topic: conceptual
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: cookiemccray
+ms.custom: sfi-image-nochange
 ---
 # Use accessibility tools to create accessible paginated reports (Power BI Report Builder)
 

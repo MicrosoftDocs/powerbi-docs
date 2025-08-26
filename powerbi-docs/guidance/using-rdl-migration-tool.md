@@ -7,8 +7,11 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.custom: fabric-cat, intro-migration
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - intro-migration
+  - sfi-image-nochange
 ---
 
 # Using the RDL Migration tool

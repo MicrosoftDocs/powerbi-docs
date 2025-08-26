@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/03/2024
 LocalizationGroup: Connect to data
+ms.custom: sfi-image-nochange
 ---
 # Create and share cloud data sources in the Power BI service
 

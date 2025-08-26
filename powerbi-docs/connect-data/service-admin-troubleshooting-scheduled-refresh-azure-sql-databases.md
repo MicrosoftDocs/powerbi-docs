@@ -8,8 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
 ms.date: 10/08/2024
-ms.custom: ''
 LocalizationGroup: Troubleshooting
+ms.custom:
+  - ''
+  - sfi-image-nochange
 ---
 
 # Troubleshoot scheduled refresh for Azure SQL databases in Power BI

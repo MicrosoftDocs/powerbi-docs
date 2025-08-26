@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 06/28/2024
 LocalizationGroup: Gateways
+ms.custom: sfi-image-nochange
 ---
 # Manage a SQL Server data source
 

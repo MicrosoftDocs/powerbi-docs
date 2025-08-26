@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/31/2023
+ms.custom: sfi-image-nochange
 ---
 # Explore reports in the Power BI mobile apps
 Applies to:

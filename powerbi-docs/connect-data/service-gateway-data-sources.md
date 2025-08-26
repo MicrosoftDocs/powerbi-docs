@@ -8,8 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 08/28/2024
-ms.custom: ''
 LocalizationGroup: Gateways
+ms.custom:
+  - ''
+  - sfi-image-nochange
 #customer intent: As a Power BI user, I want to learn how to add or remove a gateway data source so that I can efficiently manage my data sources and include them in my Power BI dashboards and reports.
 ---
 

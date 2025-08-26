@@ -60,7 +60,7 @@ Use this template when you want a semantic model to refresh once a dataflow comp
 1. Select the dataflow and workspace to monitor.  
 2. Configure the semantic model refresh activity by selecting the connection, workspace, and model.  
 
-:::image type="content" source="media/data-pipeline-templates/semantic-model-dataflow-2.png" alt-text="Screenshot of the refresh semantic model after a dataflow refresh configuration." lightbox="media/data-pipeline-templates/semantic-model-dataflow-2.png":::   
+:::image type="content" source="media/data-pipeline-templates/semantic-model-dataflow-2.png" alt-text="Screenshot of the semantic model details for refreshing a semantic model after a dataflow refresh." lightbox="media/data-pipeline-templates/semantic-model-dataflow-2.png":::   
 
 
 ### Incremental (partition) refresh
@@ -101,7 +101,7 @@ Set up a semantic model refresh to run on a schedule.
 
 Use this template when multiple models need to refresh in a specific order.  
 
-:::image type="content" source="media/data-pipeline-templates/partition1.png" alt-text="Screenshot of the Power BI semantic model refresh template gallery." lightbox="media/data-pipeline-templates/partition1.png":::  
+:::image type="content" source="media/data-pipeline-templates/partition1.png" alt-text="Screenshot of the sequence multiple semantic models configuration." lightbox="media/data-pipeline-templates/partition1.png":::  
 
 1. Add multiple semantic model refresh activities to the pipeline.  
 2. Arrange them in sequence.  
@@ -112,7 +112,7 @@ Use this template when multiple models need to refresh in a specific order.
 
 Trigger a semantic model refresh based on events.  
 
-:::image type="content" source="media/data-pipeline-templates/add-trigger.png" alt-text="Screenshot of the Power BI semantic model refresh template gallery." lightbox="media/data-pipeline-templates/add-trigger.png":::  
+:::image type="content" source="media/data-pipeline-templates/add-trigger.png" alt-text="Screenshot of the add trigger button for event-driven refresh." lightbox="media/data-pipeline-templates/add-trigger.png":::  
 
 1. Add a trigger (for example, a file arriving in storage).  
 2. Configure the semantic model refresh activity with connection, workspace, and model.  
@@ -126,5 +126,4 @@ This is ideal for scenarios where your data changes unpredictably, and you need 
 * [Data pipeline landing page](/fabric/data-factory/pipeline-landing-page)  
 * [Templates for Data Factory](/fabric/data-factory/templates)  
 * [Semantic model refresh activity to refresh a Power BI dataset](/fabric/data-factory/semantic-model-refresh-activity)  
-
 

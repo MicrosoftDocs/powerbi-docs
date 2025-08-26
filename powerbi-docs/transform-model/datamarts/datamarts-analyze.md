@@ -9,6 +9,7 @@ ms.subservice: pbi-dataflows
 ms.topic: concept-article
 ms.date: 06/17/2025
 LocalizationGroup: Data from files
+ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user I want to learn how to analyze my datamarts.
 ---
 

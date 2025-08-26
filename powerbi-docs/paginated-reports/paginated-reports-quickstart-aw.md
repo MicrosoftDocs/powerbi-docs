@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 06/28/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Tutorial: Create a paginated report and upload it to the Power BI service

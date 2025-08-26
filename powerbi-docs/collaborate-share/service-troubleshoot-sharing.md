@@ -9,6 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
 ms.date: 12/16/2022
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 # Troubleshoot issues sharing dashboards and reports
 

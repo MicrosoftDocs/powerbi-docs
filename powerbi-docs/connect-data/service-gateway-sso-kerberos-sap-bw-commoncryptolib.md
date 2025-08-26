@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 10/17/2024
 LocalizationGroup: Gateways
+ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to configure my SAP BW server to enable Kerberos single sign-on using CommonCryptoLib so that I can securely and seamlessly refresh SAP BW-based reports in the Power BI service.
 ---
 
