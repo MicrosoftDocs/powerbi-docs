@@ -81,7 +81,7 @@ createOrReplace
 
 After a UDF is defined, you can apply changes to add the function to your model.
 
-:::image type="content" source="media/desktop-user-defined-functions-overview/view-save-to-model.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the Apply button at the top of the view. This button is the location where you can save a user-defined function." lightbox="media/desktop-user-defined-functions-overviews/view-save-to-model.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/view-save-to-model.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the Apply button at the top of the view. This button is the location where you can save a user-defined function." lightbox="media/desktop-user-defined-functions-overview/view-save-to-model.png":::
 
 
 ## Manage user-defined functions
@@ -96,7 +96,7 @@ In [DAX query view](dax-query-view.md) (DQV), you can use **Quick queries** thro
 
 In [TMDL view](desktop-tmdl-view.md), you can **drag and drop** functions into the canvas or use **Script TMDL to** through Model explorer.
 
-:::image type="content" source="media/desktop-user-defined-functions-overview/model-explorer-script-to.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Script TMDL to, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Script to TMDL is highlighted and selected. The second menu is highlighted and offers Script to TMDL options Script tab and Clipboard." lightbox="media/desktop-user-defined-functions-overviews/model-explorer-script-to.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/model-explorer-script-to.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Script TMDL to, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Script to TMDL is highlighted and selected. The second menu is highlighted and offers Script to TMDL options Script tab and Clipboard." lightbox="media/desktop-user-defined-functions-overview/model-explorer-script-to.png":::
 
 If using a [Power BI Project](../developer/projects/projects-overview.md), functions are also stored in `functions.tmdl` within the *definition* folder.
 
