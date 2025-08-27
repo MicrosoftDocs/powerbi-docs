@@ -2,7 +2,7 @@
 title: "Using DAX user-defined functions in Power BI Desktop"
 description: Learn how to create Data Analysis Expressions (DAX) user-defined functions (UDFs) in Power BI Desktop.
 author: hsteffens30
-ms.author: haileysteffens
+ms.author: t-hsteffens
 ms.service: powerbi
 ms.topic: how-to
 ms.date: 09/15/2025
