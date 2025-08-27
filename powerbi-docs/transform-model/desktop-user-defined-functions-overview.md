@@ -49,7 +49,7 @@ FUNCTION <FunctionName> = ( <ParameterName>: <ParameterType>, ... ) => <Function
 
 ### Example: Simple tax function
 
-Here is a simple example in **DQV** that adds tax onto the given amount. Note that you can also evaluate UDFs in DQV.
+Here's a simple example in **DQV** that adds tax onto the given amount. You can also evaluate UDFs in DQV.
 
 ```dax
 DEFINE
@@ -64,7 +64,7 @@ EVALUATE
 // Returns 11
 ```
 
-After a UDF has been defined, you can update the model or use the code lense to add the function to your model.
+After a UDF is defined, you can update the model or use the code lens to add the function to your model.
 
 :::image type="content" source="media/desktop-user-defined-functions-overview/dax-query-view-save-to-model.png" alt-text="Screenshot of DAX query view in Power BI Desktop, highlighting two locations where you can save a user-defined function. The first is the Update model with changes button at the top of the view. The second is a status line in the code editor labeled Update model: Add new function" lightbox="media/desktop-user-defined-functions-overview/dax-query-view-save-to-model.png":::
 
@@ -79,9 +79,9 @@ createOrReplace
             amount * 1.1
 ```
 
-After a UDF has been defined, you can apply changes to add the function to your model.
+After a UDF is defined, you can apply changes to add the function to your model.
 
-:::image type="content" source="media/desktop-user-defined-functions-overview/view-save-to-model.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the Apply button at the top of the view. This is the location where you can save a user-defined function." lightbox="media/desktop-user-defined-functions-overviews/view-save-to-model.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/view-save-to-model.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the Apply button at the top of the view. This button is the location where you can save a user-defined function." lightbox="media/desktop-user-defined-functions-overviews/view-save-to-model.png":::
 
 
 ## Manage user-defined functions
@@ -92,7 +92,7 @@ Once defined and added to the model, you can view and manage all user-defined fu
 
 In [DAX query view](dax-query-view.md) (DQV), you can use **Quick queries** through Model explorer to easily define and evaluate functions.
 
-:::image type="content" source="media/desktop-user-defined-functions-overview/model-explorer-quick-queries.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Quick queries, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Quick queries is highlighted and selected. The second menu is highlighted and offers Quick queries options Evaluate, Define and evaluate, Define new function, and Define all functions in this model." lightbox="media/desktop-user-defined-functions-overview/model-explorer-quick-queries.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/model-explorer-quick-queries.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Quick queries, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Quick query is highlighted and selected. The second menu is highlighted and offers Quick queries options Evaluate, Define and evaluate, Define new function, and Define all functions in this model." lightbox="media/desktop-user-defined-functions-overview/model-explorer-quick-queries.png":::
 
 In [TMDL view](desktop-tmdl-view.md), you can **drag and drop** functions into the canvas or use **Script TMDL to** through Model explorer.
 
@@ -105,7 +105,7 @@ If using a [Power BI Project](../developer/projects/projects-overview.md), funct
 
 ## Using user-defined functions
 
-After adding a UDF to the model, you can use it anywhere DAX is supported. We will use `AddTax` as an example.
+After adding a UDF to the model, you can use it anywhere DAX is supported. Here we use `AddTax` as an example.
 
 Use UDFs with full filter context with **measures**.
 
@@ -173,7 +173,7 @@ EVALUATE
 // returns 3, 4, 5
 ```
 
-This uses a `Scalar` type, `Int64` subtype, and `val` parameterMode. You can also achieve this by just including the `Int64` subtype as seen in the example below. Non-numeric strings will result in an error.
+This example uses a `Scalar` type, `Int64` subtype, and `val` parameterMode. You can also achieve the same effect by just including the `Int64` subtype as seen in the example below. Non-numeric strings result in an error.
 
 ```dax
 DEFINE
