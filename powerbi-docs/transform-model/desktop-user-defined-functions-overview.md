@@ -2,6 +2,8 @@
 title: "Using DAX user-defined functions in Power BI Desktop"
 description: Learn how to create Data Analysis Expressions (DAX) user-defined functions (UDFs) in Power BI Desktop.
 author: hsteffens30
+ms.author: haileysteffens
+ms.service: powerbi
 ms.topic: how-to
 ms.date: 09/15/2025
 ---
@@ -64,7 +66,7 @@ EVALUATE
 
 After a UDF has been defined, you can update the model or use the code lense to add the function to your model.
 
-:::image type="content" source="media/dax-user-defined-functions/dax-query-view-save-to-model.png" alt-text="Screenshot of DAX query view in Power BI Desktop, highlighting two locations where you can save a user-defined function. The first is the Update model with changes button at the top of the view. The second is a status line in the code editor labeled Update model: Add new function" lightbox="media/dax-user-defined-functions/dax-query-view-save-to-model.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/dax-query-view-save-to-model.png" alt-text="Screenshot of DAX query view in Power BI Desktop, highlighting two locations where you can save a user-defined function. The first is the Update model with changes button at the top of the view. The second is a status line in the code editor labeled Update model: Add new function" lightbox="media/desktop-user-defined-functions-overview/dax-query-view-save-to-model.png":::
 
 
 The same example can be created in **TMDL view**.
@@ -79,26 +81,26 @@ createOrReplace
 
 After a UDF has been defined, you can apply changes to add the function to your model.
 
-:::image type="content" source="media/dax-user-defined-functions/view-save-to-model.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the Apply button at the top of the view. This is the location where you can save a user-defined function." lightbox="media/dax-user-defined-functions/view-save-to-model.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/view-save-to-model.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the Apply button at the top of the view. This is the location where you can save a user-defined function." lightbox="media/desktop-user-defined-functions-overviews/view-save-to-model.png":::
 
 
 ## Manage user-defined functions
 
 Once defined and added to the model, you can view and manage all user-defined functions from [Model explorer](model-explorer.md) under the *Functions* node. 
 
-:::image type="content" source="media/dax-user-defined-functions/model-explorer-view-functions.png" alt-text="Model explorer panel in Power BI Desktop showing the expanded Functions node. Three user-defined functions are listed: AddTax, AverageOrderValue, and CustomerLifetimeValue." lightbox="media/dax-user-defined-functions/model-explorer-view-functions.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/model-explorer-view-functions.png" alt-text="Model explorer panel in Power BI Desktop showing the expanded Functions node. Three user-defined functions are listed: AddTax, AverageOrderValue, and CustomerLifetimeValue." lightbox="media/desktop-user-defined-functions-overview/model-explorer-view-functions.png":::
 
 In [DAX query view](dax-query-view.md) (DQV), you can use **Quick queries** through Model explorer to easily define and evaluate functions.
 
-:::image type="content" source="media/dax-user-defined-functions/model-explorer-quick-queries.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Quick queries, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Quick queries is highlighted and selected. The second menu is highlighted and offers Quick queries options Evaluate, Define and evaluate, Define new function, and Define all functions in this model." lightbox="media/dax-user-defined-functions/model-explorer-quick-queries.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/model-explorer-quick-queries.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Quick queries, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Quick queries is highlighted and selected. The second menu is highlighted and offers Quick queries options Evaluate, Define and evaluate, Define new function, and Define all functions in this model." lightbox="media/desktop-user-defined-functions-overview/model-explorer-quick-queries.png":::
 
-In [TMDL view](desktop-tmdl-view.md), you can **drag and drop** functions into the canvas or use **Script TMDL to** throught Model explorer.
+In [TMDL view](desktop-tmdl-view.md), you can **drag and drop** functions into the canvas or use **Script TMDL to** through Model explorer.
 
-:::image type="content" source="media/dax-user-defined-functions/model-explorer-script-to.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Script TMDL to, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Script to TMDL is highlighted and selected. The second menu is highlighted and offers Script to TMDL options Script tab and Clipboard." lightbox="media/dax-user-defined-functions/model-explorer-script-to.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/model-explorer-script-to.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Script TMDL to, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Script to TMDL is highlighted and selected. The second menu is highlighted and offers Script to TMDL options Script tab and Clipboard." lightbox="media/desktop-user-defined-functions-overviews/model-explorer-script-to.png":::
 
 If using a [Power BI Project](../developer/projects/projects-overview.md), functions are also stored in `functions.tmdl` within the *definition* folder.
 
-:::image type="content" source="media/dax-user-defined-functions/project-script.png" alt-text="Visual Studio Code screenshot of a Power BI project. Explorer is open to the semantic model folder. 'functions.tmdl' is open in the code editor. Three functions are displayed: CustomerLifetimeValue, AverageOrderValue, and AddTax." lightbox="media/dax-user-defined-functions/project-script.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/project-script.png" alt-text="Visual Studio Code screenshot of a Power BI project. Explorer is open to the semantic model folder. 'functions.tmdl' is open in the code editor. Three functions are displayed: CustomerLifetimeValue, AverageOrderValue, and AddTax." lightbox="media/desktop-user-defined-functions-overview/project-script.png":::
 
 
 ## Using user-defined functions
