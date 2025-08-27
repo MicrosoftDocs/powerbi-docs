@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/03/2025
+ms.date: 08/27/2025
 LocalizationGroup: Create reports
 ---
 #  Dark mode in Power BI Desktop
@@ -61,8 +61,8 @@ Try the different modes and see which you prefer.
 
 ## Considerations and limitations
 
-- Collapsing of the Power Query editor ribbon isn't currently available in dark mode or light mode.
-- Power Query editor doesn't support Quick access tool bar in dark or light mode.
+- Collapsing of the Power Query editor ribbon isn't currently available in dark or light mode.
+- The Power Query editor doesn't support the Quick access tool bar in dark or light mode.
 
 
 ## Related content
