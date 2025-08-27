@@ -61,7 +61,8 @@ Try the different modes and see which you prefer.
 
 ## Considerations and limitations
 
-- The Power Query editor ribbon and the Quick access toolbar in Power Query editor can't currently be collapsed in dark mode or light mode.
+- Collapsing of the Power Query editor ribbon isn't currently available in dark mode or light mode.
+- Power Query editor doesn't support Quick access tool bar in dark or light mode.
 
 
 ## Related content
