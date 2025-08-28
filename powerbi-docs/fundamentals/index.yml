@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Get started with Power BI
-summary: Learn how to use Power BI to connect to data, build reports, and share insights. This page helps you begin your Power BI journey with tutorials, quickstarts, and scenario-based guidance.
+title: Power BI get started documentation
+summary: Power BI documentation provides expert information and answers to get you started using Power BI.
 metadata:
-  title: Get started with Power BI
-  description: Learn how to use Power BI to connect to data, build reports, and share insights.
+  title: Power BI get started documentation
+  description: Power BI documentation provides expert information and answers to get you started using Power BI.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-fundamentals
@@ -14,55 +14,38 @@ metadata:
   ms.date: 08/28/2025
 
 landingContent:
-  - title: Learn Power BI basics
+  - title: Learn the basics
     linkLists:
-      - linkListType: quickstart
+      - linkListType: overview
         links:
-          - text: Connect to data
-            url: quickstart-connect-to-data.md
-          - text: Build your first report
-            url: quickstart-build-report.md
-          - text: Share your report
-            url: quickstart-share-report.md
+          - text: What is Power BI?
+            url: power-bi-overview.md
+          - text: Basic concepts
+            url: service-basic-concepts.md
 
-  - title: Explore tutorials
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Create interactive dashboards
-            url: tutorial-create-dashboard.md
-          - text: Use Power BI with Excel
-            url: tutorial-excel-integration.md
-
-  - title: Understand licensing and setup
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Sign up for Power BI
-            url: service-self-service-signup-for-power-bi.md
-          - text: Features by license type
-            url: service-features-license-type.md
-
-  - title: Watch and learn
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Power BI video library
-            url: videos.md
-
-  - title: What's new in Power BI
+  - title: Stay up to date
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Latest updates
+          - text: What's new in Power BI?
             url: desktop-latest-update.md
+          - text: Desktop change log
+            url: desktop-change-log.md
 
-  - title: Plan your adoption journey
+  - title: Get started with Power BI
     linkLists:
-      - linkListType: learn
+      - linkListType: get-started
         links:
-          - text: Adoption roadmap
-            url: adoption-roadmap.md
-          - text: Center of Excellence
-            url: center-of-excellence.md
-          - text: Power BI FAQs
+          - text: Sign up for Power BI
+            url: service-self-service-signup-for-power-bi.md
+          - text: Start using Power BI Desktop
+            url: desktop-getting-started.md
+          - text: Start using the Power BI service
+            url: service-get-started.md
+
+  - title: Watch and learn
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Power BI videos
+            url: videos.md
