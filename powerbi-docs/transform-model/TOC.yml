@@ -153,7 +153,7 @@
         href: desktop-calculated-tables.md
       - name: "Using visual calculations (preview)"
         href: desktop-visual-calculations-overview.md
-      - name: "Using DAX user-defined functions in Power BI Desktop"
+      - name: "Using DAX user-defined functions (preview)"
         href: desktop-user-defined-functions-overview.md
       - name: "Create measures for data analysis"
         href: desktop-measures.md
