@@ -1,56 +1,68 @@
 ### YamlMime:Landing
-
-title: Power BI get started documentation
-summary: Power BI documentation provides expert information and answers to get you started using Power BI.
-
+title: Get started with Power BI
+summary: Learn how to use Power BI to connect to data, build reports, and share insights. This page helps you begin your Power BI journey with tutorials, quickstarts, and scenario-based guidance.
 metadata:
-  title: Power BI get started documentation
-  description: Power BI documentation provides expert information and answers to get you started using Power BI.
+  title: Get started with Power BI
+  description: Learn how to use Power BI to connect to data, build reports, and share insights.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-fundamentals
-  ms.topic: landing-page # Required
+  ms.topic: landing-page
   ms.collection: collection
   author: julcsc
   ms.author: juliacawthra
-  ms.date: 11/15/2021
-
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  ms.date: 08/28/2025
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: What is Power BI?
+  - title: Learn Power BI basics
     linkLists:
-      - linkListType: overview
+      - linkListType: quickstart
         links:
-          - text: What is Power BI?
-            url: power-bi-overview.md
+          - text: Connect to data
+            url: quickstart-connect-to-data.md
+          - text: Build your first report
+            url: quickstart-build-report.md
+          - text: Share your report
+            url: quickstart-share-report.md
 
-  # Card (optional)
-  - title: What's new?
+  - title: Explore tutorials
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Create interactive dashboards
+            url: tutorial-create-dashboard.md
+          - text: Use Power BI with Excel
+            url: tutorial-excel-integration.md
+
+  - title: Understand licensing and setup
     linkLists:
       - linkListType: concept
         links:
-          - text: What's new in Power BI?
-            url: desktop-latest-update.md
-
-  # Card (optional)
-  - title: Licensing
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Sign up for Power BI"
-            url: service-self-service-signup-for-power-bi.md 
-          - text: "Features by license type"
+          - text: Sign up for Power BI
+            url: service-self-service-signup-for-power-bi.md
+          - text: Features by license type
             url: service-features-license-type.md
 
-  # Card (optional)
-  - title: Resources
+  - title: Watch and learn
     linkLists:
-      - linkListType: reference
+      - linkListType: video
         links:
-          - text: "Power BI videos"
-            url: videos.md 
-          
+          - text: Power BI video library
+            url: videos.md
+
+  - title: What's new in Power BI
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Latest updates
+            url: desktop-latest-update.md
+
+  - title: Plan your adoption journey
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Adoption roadmap
+            url: adoption-roadmap.md
+          - text: Center of Excellence
+            url: center-of-excellence.md
+          - text: Power BI FAQs
