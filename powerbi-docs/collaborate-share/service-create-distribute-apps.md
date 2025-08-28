@@ -381,6 +381,7 @@ To maintain app reliability and performance here are some app, audience group, a
 - If you include a paginated report that uses a semantic model, in an app, when you add a user to an audience group, make sure to give permission to the semantic model.
 - Guest users require the [Directory Readers](/entra/identity/role-based-access-control/permissions-reference#directory-readers) role in order to update.
 - Custom access requests and automated custom messages aren't supported in reports; however, they're supported in [Power BI apps](../collaborate-share/service-create-distribute-apps.md#customize-the-access-request-behavior).
+- Note that items published in an app have a unique ID generated. The ID for the item in the app and the original item ID in the workspace are two different, unique IDs. When tracking usage or checking logs, please consider these ID differences between original item and app item.
 
 
 Additional things to keep in mind about publishing apps:
