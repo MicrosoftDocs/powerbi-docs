@@ -610,9 +610,11 @@
         href: service-goals-create-connected.md
       - name: Create scorecards and manual goals
         href: service-goals-create.md
-      - name: Create submetrics
+      - name: Refresh goals and scorecards
+        href: service-metrics-scorecard-refresh.md
+      - name: Create subgoals
         href: service-goals-subgoals.md
-      - name: Create linked metrics
+      - name: Create linked goals
         href: service-metrics-linked-metrics.md
       - name: Create automated status rules
         href: service-goals-status-rules.md
@@ -620,7 +622,7 @@
         href: service-goals-custom-status.md 
       - name: Stay on top of your goals
         href: service-goals-check-in.md        
-      - name: Create email subscriptions for metrics
+      - name: Create email subscriptions for goals
         href: service-goals-subscriptions.md        
       - name: Follow your goals
         href: service-goals-follow.md        
