@@ -58,6 +58,9 @@ A filter with the word **All** next to it is unfiltered, showing all the values 
 
 When you create a report, you can turn off switching and [not allow report readers to change filter types](power-bi-report-filter.md#restrict-changes-to-filter-type). You can also turn off searches in the filter pane.
 
+>[!NOTE]
+>Advanced filters support up to 100 distinct conditions, with a temporary limitation of 24 in Power BI Desktop.  For these cases, consider instead creating a separate table in your data model to support targeted analysis.
+
 ## Filters in Reading or Editing view
 
 There are two modes for interacting with reports in the Power BI service: Reading view and Editing view. The filtering capabilities available to you depend on which mode you're in.
