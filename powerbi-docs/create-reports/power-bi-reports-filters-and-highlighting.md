@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/10/2023
+ms.date: 08/29/2025
 LocalizationGroup: Reports
 ---
 # Filters and highlighting in Power BI reports
@@ -58,8 +58,8 @@ A filter with the word **All** next to it is unfiltered, showing all the values 
 
 When you create a report, you can turn off switching and [not allow report readers to change filter types](power-bi-report-filter.md#restrict-changes-to-filter-type). You can also turn off searches in the filter pane.
 
->[!NOTE]
->Advanced filters support up to 100 distinct conditions, with a temporary limitation of 24 in Power BI Desktop.  For these cases, consider instead creating a separate table in your data model to support targeted analysis.
+> [!NOTE]
+> Advanced filters support up to 100 distinct conditions, with a temporary limitation of 24 in Power BI Desktop. For these cases, consider instead creating a separate table in your data model to support targeted analysis.
 
 ## Filters in Reading or Editing view
 
