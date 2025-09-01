@@ -39,6 +39,8 @@ When you ask a question like "Find items about sales revenue," Copilot responds 
 
 In these search results, Copilot shows the item types that were found through the icons, the title of the item, the workspace the item belongs to, when you last opened it, the description if it has one, the metadata this item matched with from your input, and whether a report is part of an app.
 
+Copilot will generate a description of the item's content if the author hasn't added one. This description is generated from the [item's metadata](/power-bi/create-reports/copilot-search-new-content).
+
 The title includes a hyperlink that opens the item in a new tab. This lets you look at your item contents while still maintaining chat history to browse the other items or to continue chatting with your data.  
 
 > [!TIP]
@@ -102,7 +104,8 @@ You might have an abundance of content. When multiple items are found, Copilot r
 
 Here are some best practices to make your items more discoverable in the standalone Copilot experience:
 
-- **Add item descriptions**: Give context to your business users by adding a description. Use natural language when writing item descriptions to help Copilot and your business users to understand what an item is about.  
+- **Add item descriptions**: Give context to your business users by adding a description. Use natural language when writing item descriptions to help Copilot and your business users to understand what an item is about.
+
 - **Use unique keywords**: Many items are named similarly, and it can be hard to distinguish one from the other. Use unique keywords to help your business users better recall and navigate to an item.  
 - **Apply an endorsement label**: Endorsement labels are a sign that content is trustworthy. Any creator with *edit access* can add a [**Promoted** label](../collaborate-share/service-endorsement-overview.md).  
 - ***Favorite*** **an item**: Marking an item as a *Favorite* is an explicit signal to Copilot that it's important to you. By marking an item as a *Favorite*, you're more likely to see it in your search results.
@@ -128,9 +131,15 @@ In standalone Copilot, users will always be able to [manually attach items](/pow
   - Copilot respects app audiences, if defined, and only searches over reports that you have access to within an app.
   - Copilot doesn't find semantic models [marked as discoverable](../collaborate-share/service-discovery.md#how-to-mark-a-semantic-model-as-discoverable) unless you already have direct access to the model.
   - Users with only view access to semantic models will not see models in their search result listings, but can attach models directly to questions. Search lists will expand to include semantic models in a future release.
-  - Users with access to items via [M365 groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&preserve-view=true) (sometimes called unified groups) will not be able to find those items with Copilot. Search lists will expand to show items  users have access to via M365 groups in a future release.
+  - Users with access to items via [M365 groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&preserve-view=true) (sometimes called unified groups) will not be able to find those items with Copilot. Search lists will expand to show items users have access to via M365 groups in a future release.
+    
 - Copilot respects hidden elements such as hidden table and column names, and doesn't search over these fields.
+- Copilot will generate descriptions for reports to show in search responses alongside information like the report's name & workspace location to help users choose relevant reports. Copilot descriptions are refreshed at most daily when the report is updated. 
+
+- Copilot does not generate descriptions for other item types, like semantic models or Fabric data agents. 
+
 - Copilot best understands natural language. When you're searching for items through the standalone Copilot, adding more context can help with finding more relevant content. For example, searching for "Find reports about Q4 revenue over time" yields better results than a search for the keyword "Q4."
 - If edits are made directly to an item (for example, updating a visual, renaming titles), these changes are reflected in search results within five minutes. If edits are made indirectly to an item (such as renaming the workspace), the changes might take up to 24 hours to reflect in the search results.
 - Reports may not reflect the prepped status of the associated semantic model for up to 24 hours.
-- The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
+- Search is a part of the standalone Copilot experience, subject to the same [limitations](/power-bi/create-reports/copilot-chat-with-data-standalone). 
+
