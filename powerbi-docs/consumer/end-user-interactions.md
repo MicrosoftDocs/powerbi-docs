@@ -22,9 +22,9 @@ One of the great features of Power BI is the way all visuals on a report page ar
 
 ## How visuals interact with each other
 
-By default, selecting a data point in one visual on a report page will cross-filter or cross-highlight the other visuals on the page. The report *designer* sets how the visuals on a page interact. *Designers* have options to turn visual interactions on and off, and to change the default cross-filtering, cross-highlighting, and [drilling](end-user-drill.md) behavior.
+By default, selecting a data point in one visual on a report page will cross-filter or cross-highlight the other visuals on the page. The report *designer* sets how the visuals on a page interact. *Designers* have options to turn visual interactions on and off, and to change the default cross-filtering, cross-highlighting, and [drilling](../create-reports/desktop-drillthrough.md) behavior.
 
-If you haven't encountered hierarchies or drilling yet, you can learn all about them by reading [Drill down in Power BI](end-user-drill.md).
+If you haven't encountered hierarchies or drilling yet, you can learn all about them by reading [Drill down in Power BI](../create-reports/desktop-drillthrough.md).
 
 ### Cross-filter and cross-highlight
 
@@ -46,7 +46,7 @@ Because **Moderation** is selected on the bar chart:
 
 ## Considerations and troubleshooting
 
-- If your report has a visual that supports [drilling](end-user-drill.md), by default, drilling one visual has no effect on the other visuals on the report page. However, the report *designer* can change this behavior, so check your drillable visuals to see if **drilling filters other visuals** has been enabled by the report *designer*.
+- If your report has a visual that supports [drilling](../create-reports/desktop-drillthrough.md), by default, drilling one visual has no effect on the other visuals on the report page. However, the report *designer* can change this behavior, so check your drillable visuals to see if **drilling filters other visuals** has been enabled by the report *designer*.
 
 - Visual-level filters are retained when cross-filtering and cross-highlighting other visuals on the report page. So, if VisualA has visual-level filters applied by the report designer or by you, and you use VisualA to interact with VisualB, visual-level filters from VisualA will be applied to VisualB.
 

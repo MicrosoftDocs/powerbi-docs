@@ -160,12 +160,8 @@
           href: translytical-task-flow-tutorial.md
         - name: Create data function buttons
           href: translytical-task-flow-button.md
-    - name: Create drillthrough buttons
-      href: desktop-drill-through-buttons.md
-    - name: Use the drillthrough feature
-      href: desktop-drillthrough.md      
-    - name: Use the cross-report drillthrough feature
-      href: desktop-cross-report-drill-through.md              
+    - name: Use drillthrough
+      href: desktop-drillthrough.md                   
     - name: Certificate revocation
       href: desktop-certificate-revocation.md     
     - name: Evaluation configuration settings

@@ -70,6 +70,6 @@ And that's all there is to using grouping and binning to ensure the visuals in y
 
 You might also be interested in the following articles:
 
-* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Use cross-report drillthrough in Power BI Desktop](desktop-drillthrough.md)
 * [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
 

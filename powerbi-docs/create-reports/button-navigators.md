@@ -200,4 +200,3 @@ For more information about features that are similar or interact with buttons, t
 - [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
 - [Use drillthrough in Power BI reports](desktop-drillthrough.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
-- [Create a drillthrough button](desktop-drill-through-buttons.md)

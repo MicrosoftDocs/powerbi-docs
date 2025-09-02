@@ -77,7 +77,7 @@
     - name: "Types of visualizations"
       href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
     - name: "Drill down in a visualization"
-      href: end-user-drill.md
+      href: ../create-reports/desktop-drillthrough.md
     - name: "How to use an ArcGIS map in Power BI"
       href: end-user-arcgis.md
   - name: Paginated reports in Power BI
