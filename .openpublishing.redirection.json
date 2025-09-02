@@ -4023,7 +4023,7 @@
     {
       "source_path": "powerbi-docs/desktop-cross-report-drill-through.md",
       "redirect_url": "/power-bi/create-reports/desktop-cross-report-drill-through",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/desktop-custom-format-strings.md",
@@ -4043,7 +4043,7 @@
     {
       "source_path": "powerbi-docs/desktop-drill-through-buttons.md",
       "redirect_url": "/power-bi/create-reports/desktop-drill-through-buttons",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/desktop-export-to-pdf.md",
@@ -6821,7 +6821,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "power-bi/visuals/consumer/end-user-drill.md",
+      "source_path": "power-bi/consumer/end-user-drill.md",
       "redirect_url": "/power-bi/create-reports/desktop-drillthrough",
       "redirect_document_id": false
     }
