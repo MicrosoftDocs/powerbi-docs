@@ -91,7 +91,7 @@ When drilling with geo-hierarchies, it's important to know how each drill button
 
 ## Related content
 
-* [Drill down in a Power BI visualization.](../consumer/end-user-drill.md)
+* [Drill down in a Power BI visualization.](../create-reports/desktop-drillthrough.md)
 
 * [Power BI visualizations.](power-bi-report-visualizations.md)
 

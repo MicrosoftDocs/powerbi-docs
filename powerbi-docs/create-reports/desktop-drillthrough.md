@@ -1,5 +1,5 @@
 ---
-title: `Drillthrough in Power BI Reports: Navigate to Detailed Insights`
+title: 'Drillthrough in Power BI Reports: Navigate to Detailed Insights'
 description: Learn how to use drillthrough filters, buttons, and cross-report drillthrough in Power BI Desktop to provide detailed, context-specific insights.
 ms.topic: conceptual
 ms.service: powerbi
@@ -10,6 +10,7 @@ ms.reviewer: ''
 ms.date: 09/02/2025
 ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix"
 LocalizationGroup: Create reports
+ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to set up drillthrough in my reports so that I can provide detailed, context-specific information to my report readers.
 ---
 
