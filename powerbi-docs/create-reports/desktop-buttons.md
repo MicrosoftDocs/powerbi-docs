@@ -83,7 +83,7 @@ Here are the options for button actions:
 
 - **Back** returns the user to the previous page of the report. This action is useful for drillthrough pages.
 - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md).
-- **Drill through** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drill-through-buttons.md).
+- **Drill through** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drillthrough.md).
 - **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page and bookmark navigators](button-navigators.md) for details. 
 - **Bookmark navigation** navigates the user to a different state in the report, either on the same or a different page, by using bookmarks. See [Create page and bookmark navigators](button-navigators.md#bookmark-navigator) for details.
 - **Q&A** opens a **Q&A Explorer** window. When your report readers select a Q&A button, the Q&A Explorer opens, and they can ask natural-language questions about your data.
@@ -100,11 +100,11 @@ To select a button action:
 
 1. On the **Button** tab of the **Format button** pane, turn the **Action** to **On**, and then expand the card.
 
-1. Expand **Action**, and then select the **Type** of button action.
+2. Expand **Action**, and then select the **Type** of button action.
 
     ![Screenshot showing Action selections for a button in Power BI.](media/desktop-buttons/power-bi-button-action.png)
 
-1. Test the buttons you create for your report by selecting <kbd>Ctrl</kbd> and the button.
+3. Test the buttons you create for your report by selecting <kbd>Ctrl</kbd> and the button.
 
 ## Create page navigation
 
@@ -155,5 +155,4 @@ For more information about features that are similar or interact with buttons, t
 - [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
 - [Create page and bookmark navigators](button-navigators.md)
 - [Create report bookmarks in Power BI to share insights and build stories](desktop-bookmarks.md)
-- [Create a drillthrough button in Power BI](desktop-drill-through-buttons.md)
 - [Set up drillthrough in Power BI reports](desktop-drillthrough.md)

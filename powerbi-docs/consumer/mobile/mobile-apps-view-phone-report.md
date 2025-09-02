@@ -77,7 +77,7 @@ Some actions are only possible in focus mode, due to screen size constraints:
     Revert is available at the report level, clearing exploration from all visuals, or at the visual level, clearing exploration from the selected visual.   
 
 ## Drill down in a visual
-If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](../end-user-drill.md) either in the Power BI service or in Power BI Desktop.
+If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](../../create-reports/desktop-drillthrough.md) either in the Power BI service or in Power BI Desktop.
 
 There are few ways to drill down:
 

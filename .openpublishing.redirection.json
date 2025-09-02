@@ -4023,7 +4023,7 @@
     {
       "source_path": "powerbi-docs/desktop-cross-report-drill-through.md",
       "redirect_url": "/power-bi/create-reports/desktop-cross-report-drill-through",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/desktop-custom-format-strings.md",
@@ -4043,7 +4043,7 @@
     {
       "source_path": "powerbi-docs/desktop-drill-through-buttons.md",
       "redirect_url": "/power-bi/create-reports/desktop-drill-through-buttons",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/desktop-export-to-pdf.md",
@@ -6809,6 +6809,21 @@
         "source_path": "powerbi-docs/connect-data/service-tutorial-use-cognitive-services.md",
         "redirect_url": "/power-bi/connect-data/",
         "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/desktop-cross-report-drill-through.md",
+      "redirect_url": "/power-bi/create-reports/desktop-drillthrough",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/desktop-drill-through-buttons.md",
+      "redirect_url": "/power-bi/create-reports/desktop-drillthrough",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-drill.md",
+      "redirect_url": "/power-bi/create-reports/desktop-drillthrough",
+      "redirect_document_id": false
     }
   ]
 }

@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/26/2025
+ms.date: 09/02/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,15 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## August 2025 QFE 3 
+
+*Version 2.146.1254.0, Released: August 28, 2025*
+
+Bug fixes/improvements: 
+
+- Resolved an issue where users are unable to save Power BI Desktop reports after converting from LiveConnect to a composite model, with the **Save** button failing to update the file.
+- Fixed the missing "Queries" section in PowerQuery Editor for dark and light mode.
 
 ## August 2025 QFE 2
 
