@@ -124,6 +124,7 @@ If no insights found are found, you see this message: “We didn’t find any in
     - Publish to Web
     -	Live Connection to Azure Analysis Services or SQL Server Analysis Services
     -	MultiDimensional Analysis Services data sources (for example, SAP BW and SAP HANA)
+    -	Redshift data sources
     -	Power BI Report Server
   
 **Explanations** aren't supported in the following cases:
