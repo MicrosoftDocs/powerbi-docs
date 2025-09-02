@@ -6811,17 +6811,17 @@
         "redirect_document_id": false
     },
     {
-      "source_path": "power-bi/create-reports/desktop-cross-report-drill-through.md",
+      "source_path": "powerbi-docs/create-reports/desktop-cross-report-drill-through.md",
       "redirect_url": "/power-bi/create-reports/desktop-drillthrough",
       "redirect_document_id": false
     },
     {
-      "source_path": "power-bi/create-reports/desktop-drill-through-buttons.md",
+      "source_path": "powerbi-docs/create-reports/desktop-drill-through-buttons.md",
       "redirect_url": "/power-bi/create-reports/desktop-drillthrough",
       "redirect_document_id": false
     },
     {
-      "source_path": "power-bi/consumer/end-user-drill.md",
+      "source_path": "powerbi-docs/consumer/end-user-drill.md",
       "redirect_url": "/power-bi/create-reports/desktop-drillthrough",
       "redirect_document_id": false
     }
