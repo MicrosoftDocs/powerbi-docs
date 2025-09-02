@@ -58,7 +58,7 @@ The administrator or the designer can disable your ability to see or use these f
 |[Export data to Excel from a Power BI dashboard tile or a report visual.](/power-bi/visuals/power-bi-visualization-export-data)|Yes|Yes|No|
 |[Create an alert to notify you when a value crosses a limit you set](end-user-alerts.md).|Yes|No|No|
 |[Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).|No|Yes|n/a|
-|[Drill a visual that has a hierarchy](end-user-drill.md).|No|Yes|No|
+|[Drill a visual that has a hierarchy](../create-reports/desktop-drillthrough.md).|No|Yes|No|
 
 ## Related content
 

@@ -97,5 +97,5 @@ With so many options for sorting your visuals, creating just the chart or image 
 You might also be interested in the following articles:
 
 * [Change how a chart is sorted in a Power BI report](../consumer/end-user-change-sort.md)
-* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Use cross-report drillthrough in Power BI Desktop](desktop-drillthrough.md)
 * [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)

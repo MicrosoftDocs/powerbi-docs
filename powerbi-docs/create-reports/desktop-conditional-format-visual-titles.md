@@ -73,5 +73,4 @@ There are a few limitations to the current implementation of expression-based ti
 This article described how to create DAX expressions that turn the titles of your visuals into dynamic fields that can change as users interact with your reports. You might find the following articles useful as well.
 
 * [Apply conditional formatting in tables and matrixes](desktop-conditional-table-formatting.md)
-* [Use cross-report drillthrough in Power BI](desktop-cross-report-drill-through.md)
 * [Set up drillthrough in Power BI reports](desktop-drillthrough.md)

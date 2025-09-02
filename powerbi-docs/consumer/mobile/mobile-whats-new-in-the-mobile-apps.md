@@ -687,7 +687,7 @@ We added Android support for remote configuration of the Power BI mobile app's R
 This month we've added support for cross-report drillthrough. You can now tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings.
 
 > [!NOTE]
-> Cross-report drillthrough is only available if it was enabled during report creation. [Learn more about cross-report drillthrough](../../create-reports/desktop-cross-report-drill-through.md).
+> Cross-report drillthrough is only available if it was enabled during report creation. 
 
 
 #### Data sensitivity labels

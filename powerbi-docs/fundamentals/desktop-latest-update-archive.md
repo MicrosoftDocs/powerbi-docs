@@ -4816,7 +4816,7 @@ The following updates are new to Power BI Desktop this month:
 ### Reporting
 * Enhancements to mobile layout authoring [[video]](https://youtu.be/WUo8TnHNHYM?t=15)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile) 
 * Automatic page refresh now generally available  [[video]](https://youtu.be/WUo8TnHNHYM?t=266)  [[article]](../create-reports/desktop-automatic-page-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_APR) 
-* Hierarchical slicer now generally available  [[video]](https://youtu.be/WUo8TnHNHYM?t=819)  [[article]](../create-reports/desktop-drill-through-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Hierarchical_slicer) 
+* Hierarchical slicer now generally available  [[video]](https://youtu.be/WUo8TnHNHYM?t=819)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Hierarchical_slicer) 
 * Modern ribbon now generally available   [[video]](https://youtu.be/WUo8TnHNHYM?t=1057)  [[article]](../create-reports/desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_ribbon) 
 * RLS now supported for Featured Tables in Excel's Data Types gallery  [[video]](https://youtu.be/WUo8TnHNHYM?t=1075) [[article]](../collaborate-share/service-excel-featured-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_RLS) 
 
@@ -4888,7 +4888,7 @@ The following updates are new to Power BI Desktop this month:
 * Curate featured tables for Excel (preview) [[video]](https://youtu.be/JtuHIslowxk?t=20)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Excel) 
 * Apply all filters (preview)   [[video]](https://youtu.be/JtuHIslowxk?t=193) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Apply_all) 
 * Enhancements to change detection (preview)  [[video]](https://youtu.be/JtuHIslowxk?t=475)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_CDM) 
-* Drillthrough button action is now generally available  [[video]](https://youtu.be/JtuHIslowxk?t=626)  [[article]](../create-reports/desktop-drill-through-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Drill_through) 
+* Drillthrough button action is now generally available  [[video]](https://youtu.be/JtuHIslowxk?t=626)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Drill_through) 
 * Enhancements to page navigation action   [[video]](https://youtu.be/JtuHIslowxk?t=1143)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_page_nav) 
 * Buttons now support fill images  [[video]](https://youtu.be/JtuHIslowxk?t=1465)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_fill_images) 
 * Drop shadow support for visuals  [[video]](https://youtu.be/JtuHIslowxk?t=1561)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_shadow) 
@@ -5807,7 +5807,7 @@ The following updates were new to **Power BI Desktop** this month:
 
 
 ### Analytics
-* Drill through across reports [[video]](https://youtu.be/vih35kSrEHU?t=567)  [[article]](../create-reports/desktop-cross-report-drill-through.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
+* Drill through across reports [[video]](https://youtu.be/vih35kSrEHU?t=567)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
 * Key Influencers visual now supports continuous analysis for numeric targets [[video]](https://youtu.be/vih35kSrEHU?t=753)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#keyInfluencers) 
 * Python support not generally available [[video]](https://youtu.be/vih35kSrEHU?t=889)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#python) 
 * Partial synonym matching for terms in Q&A [[video]](https://youtu.be/vih35kSrEHU?t=912)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
@@ -6438,7 +6438,7 @@ The following updates were new to **Power BI Desktop** in May:
 
 ### Analytics
 
-* Measure drillthrough  [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[article]](../create-reports/desktop-drillthrough.md#pass-all-filters-in-drillthrough)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
+* Measure drillthrough  [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[article]](../create-reports/desktop-drillthrough.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
 
 ### Power BI Premium
 

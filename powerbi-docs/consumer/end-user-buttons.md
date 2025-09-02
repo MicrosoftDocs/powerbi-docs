@@ -98,4 +98,4 @@ Since the page opens in a separate window, to return to the Power BI report, clo
 ## Related content
 
 - [Bookmarks in the Power BI service](end-user-bookmarks.md)
-- [Drill mode in the Power BI service](end-user-drill.md)
+- [Drill mode in the Power BI service](../create-reports/desktop-drillthrough.md)

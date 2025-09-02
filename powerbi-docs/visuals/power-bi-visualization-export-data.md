@@ -70,7 +70,7 @@ Exporting data from a report visual in Power BI Desktop is straightforward. When
 
 You have many more options when exporting data from a report visual in the Power BI service. To illustrate the different options, create a stacked column chart that includes:
 
-- A [hierarchy](../consumer/end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again.
+- A [hierarchy](../create-reports/desktop-drillthrough.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again.
 - A filter for **City**.
 - An aggregate for **Discount percent** (count was changed to average).
 
