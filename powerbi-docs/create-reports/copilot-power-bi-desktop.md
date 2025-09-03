@@ -29,7 +29,7 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 
 ## Start Copilot in Power BI Desktop for the first time
 
-To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
+To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
 > [!NOTE]
 > The Copilot button in Desktop always appears in the ribbon. To be able to use Copilot, you must be signed in and have access to a workspace that is in Premium or Fabric capacity.
