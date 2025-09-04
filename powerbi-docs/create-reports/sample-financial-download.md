@@ -1,5 +1,5 @@
 ---
-title: Download the Financial Sample Excel workbook for Power BI
+title: Download the Financial Sample Excel Workbook for Power BI
 description: Learn how to download the Financial Sample workbook for Power BI directly from this page or from Power BI Desktop.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: sample
-ms.date: 02/21/2023
+ms.date: 09/04/2025
 LocalizationGroup: Samples
 ---
 # Download the Financial Sample Excel workbook for Power BI
@@ -22,13 +22,13 @@ You can directly download the [Financial Sample Excel workbook](https://go.micro
 
 You can also download sample data from Power BI Desktop.
 
-1. Select **Try a sample semantic model** from the **Add data to your report** screen.
+1. Select **Use sample data** from the **Add data to your report** screen.
 
-   :::image type="content" source="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Power BI Desktop, highlighting Try a sample semantic model." lightbox="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png":::
+   :::image type="content" source="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Power BI Desktop, highlighting Use sample data." lightbox="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png":::
 
 1. In the **Two ways to use sample data** dialog, choose **Load sample data**.
 
-1. In the **Navigator**, select data in the left pane, such as **Financials**, and the choose **Load**.
+1. In the **Navigator**, select data in the left pane, such as **Financials**, and then choose **Load**.
 
 ## Related content
 
