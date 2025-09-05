@@ -1,6 +1,6 @@
 ---
 title: Model relationships in Power BI Desktop
-description: Introduce theory about model relationships in Power BI Desktop
+description: Learn about the purpose, basic design principles, and properties of data model relationships in Power BI Desktop.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: maroche
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 03/07/2024
+ms.date: 09/05/2025
 ---
 
 # Model relationships in Power BI Desktop
@@ -56,6 +56,7 @@ A model relationship relates one column in a table to one column in a different 
 > It's not possible to relate a column to a different column *in the same table*. This concept is sometimes confused with the ability to define a relational database foreign key constraint that's table self-referencing. You can use this relational database concept to store parent-child relationships (for example, each employee record is related to a "reports to" employee). However, you can't use model relationships to generate a model hierarchy based on this type of relationship. To create a parent-child hierarchy, see [Parent and Child functions](/dax/parent-and-child-functions-dax).
 
 ### Data types of columns
+
 The data type for both the "from" and "to" column of the relationship should be the same. Working with relationships defined on **DateTime** columns might not behave as expected. The engine that stores Power BI data, only uses *DateTime* data types; *Date*, *Time*, and *Date/Time/Timezone* data types are Power BI formatting constructs implemented on top. Any model-dependent objects will still appear as *DateTime* in the engine (such as relationships, groups, and so on). As such, if a user selects **Date** from the **Modeling** tab for such columns, they still don't register as being the same date, because the time portion of the data is still being considered by the engine. [Read more about how Date/time types are handled](../connect-data/desktop-data-types.md#datetime-types). To correct the behavior, the column data types should be updated in the **Power Query Editor** to remove the *Time* portion from the imported data, so when the engine is handling the data, the values will appear the same.
 
 ### Cardinality
@@ -96,7 +97,7 @@ For guidance on using this cardinality type, see [Many-to-many relationship guid
 > The Many-to-many cardinality type is supported for models developed for Power BI Report Server January 2024 and later.
 
 > [!TIP]
-> In Power BI Desktop model view, you can interpret a relationship's cardinality type by looking at the indicators (1 or \*) on either side of the relationship line. To determine which columns are related, you'll need to select, or hover the cursor over, the relationship line to highlight the columns.
+> In Power BI Desktop model view, you can interpret a relationship's cardinality type by looking at the indicators (1 or \*) on either side of the relationship line. To determine which columns are related, select, or hover the cursor over, the relationship line to highlight the columns.
 >
 > :::image type="content" source="media/desktop-relationships-understand/model-diagram-cardinality.png" alt-text="Screenshot of two tables in the model diagram with the cardinality indicators highlighted.":::
 
@@ -123,7 +124,7 @@ Bear in mind that bi-directional relationships can impact negatively on performa
 We recommend using bi-directional filtering only as needed. For more information, see [Bi-directional relationship guidance](../guidance/relationships-bidirectional-filtering.md).
 
 > [!TIP]
-> In Power BI Desktop model view, you can interpret a relationship's cross filter direction by noticing the arrowhead(s) along the relationship line. A single arrowhead represents a single-direction filter in the direction of the arrowhead; a double arrowhead represents a bi-directional relationship.
+> In Power BI Desktop model view, you can interpret a relationship's cross filter direction by noticing the arrowheads along the relationship line. A single arrowhead represents a single-direction filter in the direction of the arrowhead; a double arrowhead represents a bi-directional relationship.
 >
 > :::image type="content" source="media/desktop-relationships-understand/model-diagram-cross-filter-direction.png" alt-text="Screenshot of two tables in the model diagram with the cross filter arrowhead highlighted.":::
 
@@ -141,7 +142,7 @@ In specific circumstances, however, you can define one or more inactive relation
 For more information, see [Active vs inactive relationship guidance](../guidance/relationships-active-inactive.md).
 
 > [!TIP]
-> In Power BI Desktop model view, you can interpret a relationship's active vs inactive status. An active relationship is represented by a solid line; an inactive relationship is represented as a dashed line.
+> In Power BI Desktop model view, you can interpret a relationship's active vs inactive status. A solid line represents an active relationship, and a dashed line represents an inactive relationship.
 >
 > :::image type="content" source="media/desktop-relationships-understand/model-diagram-active-vs-inactive-relationship.png" alt-text="Screenshot of two tables in the model diagram and two relationships; one solid line for active and one dashed line for inactive":::
 
@@ -154,7 +155,7 @@ When enabled, native queries sent to the data source will join the two tables to
 Always enable this property when a database foreign key constraint exists between the two tables. Even when a foreign key constraint doesn't exist, consider enabling the property as long as you're certain data integrity exists.
 
 > [!IMPORTANT]
-> If data integrity should become compromised, the inner join will eliminate unmatched rows between the tables. For example, consider a model **Sales** table with a **ProductID** column value that didn't exist in the related **Product** table. Filter propagation from the **Product** table to the **Sales** table will eliminate sales rows for unknown products. This would result in an understatement of the sales results.
+> If data integrity should become compromised, the inner join eliminates unmatched rows between the tables. For example, consider a model **Sales** table with a **ProductID** column value that didn't exist in the related **Product** table. Filter propagation from the **Product** table to the **Sales** table eliminates sales rows for unknown products, resulting in an understatement of the sales results.
 >
 > For more information, see [Assume referential integrity settings in Power BI Desktop](../connect-data/desktop-assume-referential-integrity.md).
 
@@ -240,7 +241,7 @@ There are other restrictions related to limited relationships:
 
 ### Resolve relationship path ambiguity
 
-Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When evaluating ambiguity, Power BI chooses the filter propagation path according to its [priority](#priority) and [weight](#weight).
+Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When it evaluates ambiguity, Power BI chooses the filter propagation path according to its [priority](#priority) and [weight](#weight).
 
 #### Priority
 
@@ -275,7 +276,7 @@ CALCULATE(
 ```
 
 > [!NOTE]
-> If Power BI detects multiple paths that have the same priority and the same weight, it will return an ambiguous path error. In this case, you must resolve the ambiguity by influencing the relationship weights by using the [USERELATIONSHIP](/dax/userelationship-function-dax) function, or by removing or modifying model relationships.
+> If Power BI detects multiple paths that have the same priority and the same weight, it returns an ambiguous path error. In this case, you must resolve the ambiguity by influencing the relationship weights by using the [USERELATIONSHIP](/dax/userelationship-function-dax) function, or by removing or modifying model relationships.
 
 ### Performance preference
 
