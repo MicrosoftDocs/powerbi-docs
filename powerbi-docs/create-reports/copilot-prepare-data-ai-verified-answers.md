@@ -60,9 +60,9 @@ To set a verified answer, follow these steps:
 
 1. Add filters for flexible slicing:
    1. Select the **filter** icon.
-      - Verified answers support up to three filters that users can adjust using natural language in their prompt.
+      - Verified answers support up to 10 filters that users can adjust using natural language in their prompt.
    1. Select **Available to users** and apply any desired filters.
-      - This allows end users to slice and dice without needing a new verified answer for every visual + filter combination.
+      - This allows end users to slice and dice without needing a new verified answer for every visual + filter combination.  Consumers can only apply 3 separate filters to a verified answer at a time.
 
    The benefit of this filter experience is that you can use one centralized, base verified answer and allow end users to slice and dice without needing a new verified answer for every visual + filter combination.
 
@@ -79,10 +79,10 @@ To set a verified answer, follow these steps:
        - Report-level, Page-level, Visual-level
        - All basic, categorical filters
        - Advanced categorical filters: startsWith, contains, >, <, >=, and <=
+       - Date range filters (NOT relative date filters, such as YTD, last 3 months, next 5 years, etc.) (Supported = between Jan 2024 and July 2025, before 3/4/2025, etc.)
      - **Filter limitations**:
-       - Fields already used in the visual (for example, axis, legend) can’t also be filters.
        - Existing hardcoded values (for example, Region = North) can't be overridden.
-       - User prompts can only invoke one filter on a verified answer at a time
+       - User prompts can only invoke 3 filters on a verified answer at a time
 
    > [!NOTE]
    > To review existing filters that affect the visual, select **Applied to this visual** during setup.
@@ -201,16 +201,78 @@ See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-lim
   - Import models
   - DQ models
   - Composite models (local)
+  - Direct lake in web only (and only for verified answers)
 - GIT edits (third-party tools) can't yet be synced in desktop experience, though updates appear in service.
 - Report themes aren't yet supported in verified answers.
 - Field parameters don't work with verified answers.
-- In authoring scenarios, there's a chance that trigger phrases could invoke authoring Copilot skills such as DAX answers or page creation. This is something that might affect quality testing. Make sure to use the skill selector when testing and disable create page skills.
+- In authoring scenarios, there's a chance that trigger phrases could invoke authoring Copilot skills such as DAX answers or page creation. This is something that might affect quality testing. Make sure to use the skill selector when testing in desktop and disable create page skills.
 - We highly recommend five to seven trigger phrases per verified answer
 - Verified answers support:
   - 250 verified answers per model
   - 15 trigger prompts Per verified answer
   - 500 character limit for trigger prompts
   - Visual size (same as report visuals limits)
+    
+### Trouble shooting and FAQs for verified answers
+
+**I don’t see the “set up verified answer” entry point on my visual.**
+
+- **Is your visual type supported for verified answers?** Not all visual types can be made into verified answers yet.  Above is a list of unsupported visual types.  See limitation section.
+- **Is your model type supported for Prep data for AI?** It is also possible the model type you are using is not supported, and therefore you will not see any prep data entry points.  Above is a list of the supported model types for verified answers.  See limitation section.
+
+**I edited the report visual, but my verified answer didn’t update.**
+
+Verified answers are part of the semantic model, not the report.  This means editing the visual that was used to create a verified answer won’t affect the verified answer. To modify a verified answer, use the management dialog in the Verified Answers section of Prep data for AI, where you can update trigger phrases and add/remove filters. For any other changes, delete the existing verified answer and create a new one using the updated visual. Editing capabilities are coming. 
+
+**I can’t get my verified answer to return in Copilot**
+
+- **Did you create in desktop?**
+     - **Have you used the skill picker?**
+    If you created verified answers in desktop and are also testing in desktop, make sure to utilize the skill picker.  This is an experience where you can de-select create page skills in order to mimic what end users will see.  That can help return verified answers rather than creating new pages with your requests.  
+     - **Have you already published to service?**
+    If you created your verified answers in desktop, then published to the service and still cannot see them, it may be because of a delay. There is an update delay from the time of publish to when verified answers will show up in the standalone Copilot experience, or even in reports.  Usually, this takes about 15 minutes to update and be able to see verified answers.  To speed this up, you can also publish your report to the service, then make any small change in the service editing dialog.  For example, add a space to a trigger prompt, remove and re-add a trigger prompt, anything small will do.  Save the changes and test again to see if you get verified answers.  They should now return. 
+    
+- **Did you create in service, or are expecting to see verified answers in service?** If you have waited the 15 minutes or made changes so you should see verified answers but are STILL not getting them returned, there may be other aspects at play that you might try. 
+     - **Are there any hidden fields being used by the verified answer?** If a field that’s used in a verified answer is hidden in the model, it will not be returned as a verified answer.  Ensure all fields are visible in the model. (This includes filters) 
+     - **Are there filters being used?** Are all filter fields selected in the schema selection UI?  Filters (whether applied or not) become part of the verified answer definition.  If even parts of filter information are hidden with schema selection, the verified answer may not be reliably returned.  Ensure all filter fields are unhidden in schema selection. 
+     - **Are there conflicting custom instructions?**  For example, if you have a custom instruction that says “Always apply filter Region = ‘USA’” on every answer. But in your Verified Answer, you have not setup Region column as an allowed filter, then copilot won’t match the Verified Answer. 
+     - **Is your Copilot prompt similar enough to your trigger prompts?**  There are two ways Copilot matches user prompts to a verified answer.
+       **Exact matches:** Phrase matches character-for-character (for example, "Snowboard sales by month" when the trigger phrase is "snowboard sales by month").
+       **Semantic matches:** Phrases with different wording but the same intent (for example, "Snowboard sales over time").
+
+    For semantically similar phrases, Copilot uses semantic matching to trigger verified answers - meaning it can recognize prompts that are phrased differently but still align with the intent of a trigger phrase, but there is still nuance to how much you can change and still be recognized as a match.  
+
+     - **What doesn’t work (not supported):**
+       - Adding, removing, or swapping out fields or dimensions
+       - Modifying or replacing the original measure in the phrase 
+
+     - **What works (supported):**
+       - Using synonyms that are commonly understood or defined within the semantic model
+       - Rearranging the order of words or fields in the original trigger phrase
+       - Including filter criteria directly in the prompt (for example, "for Northeast region")
+       - See examples above.
+
+**I cannot get filters to work with my verified answer**
+
+Filters can be tricky—here are some common questions we hear: 
+
+- **Why can’t I add filters to my verified answer?** Filters will only appear as available options for verified answers if all of the following conditions are met:
+     - They exist on the visual, page, or report: If the filter isn’t present in the report, it won’t be available to apply.
+     - They are unlocked and visible: Only filters that end users can interact with will show up. Locked or hidden filters are excluded from the list.
+     - They have no values applied: Filters must be set to “All” in the report to be available in the verified answer experience. (Tip: If a filter is missing, check the “applied to this visual” section in the UI. If it appears there, it won’t be eligible until its values are cleared in the report.)
+     - They are a supported filter type:
+     - All basic, categorical filters
+     - The following advanced categorical filters: startsWith, contains, >, <, >=, <=
+     - Date range filters (NOT relative date filters, such as YTD, last 3 months, next 5 years, etc.) (Supported = between Jan 2024 and July 2025, before 3/4/2025, etc.)
+     - There are no more than 10 filters already selected: Verified answers support a maximum of 10 filters during creation, and three at a time in consumption.
+
+**Why won’t my verified answer filter like I want it to in the Copilot pane?**
+- **Is the filter included in the verified answer?** Filters must be explicitly added by the author when the verified answer is created. If the filter you're trying to use wasn't added, it won't work in Copilot. Double-check that it's part of the verified answer configuration.
+- **Are the filter fields visible in the model and schema selection?** Even if a filter is applied, it won’t function properly if any part of it is hidden. Filters are embedded in the verified answer definition, so make sure all related fields are unhidden in both the schema selection and the data model. Hidden fields can prevent filters from working as expected.
+- **Is it actually filtered?** Check the “how copilot arrived at this” section and see what (if any) filters are applied here. The “matched on” trigger phrase does not update to show the filter while the data in the verified answer DOES, so sometimes they can be sneaky. 
+
+
+  
 
 ## Related content
 
