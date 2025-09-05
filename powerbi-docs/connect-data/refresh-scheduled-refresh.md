@@ -18,7 +18,10 @@ ms.custom: sfi-image-nochange
 >[!NOTE]
 >After two months of inactivity, scheduled refresh on your semantic model is paused. For more information, see [*Scheduled refresh*](#scheduled-refresh) later in this article.
 
-This article describes the options available for scheduled refresh for the [On-premises data gateway (personal mode)](service-gateway-personal-mode.md) and the [On-premises data gateway](service-gateway-onprem.md). You specify refresh options in the following areas of the Power BI service: **Gateway connection**, **Data source credentials**, and **Schedule refresh**. We'll look at each in turn. For more information about data refresh, including limitations on refresh schedules, see [Data refresh](refresh-data.md#data-refresh).
+This article describes the options available for scheduled refresh for the [On-premises data gateway (personal mode)](service-gateway-personal-mode.md) and the [On-premises data gateway](service-gateway-onprem.md). You specify refresh options in the following areas of the Power BI service: **Gateway connection**, **Data source credentials**, and **Schedule refresh**. We'll look at each in turn. For more information about data refresh, including limitations on refresh schedules, see [Data refresh](refresh-data.md#data-refresh). 
+
+You can now also configure semantic model refreshes via **Fabric Data Pipelines**, including scenarios like scheduled monthly refreshes or cascading refresh workflows. To explore this option, see the [Power BI Semantic Model Refresh Templates documentation](power-bi/connect-data/data-pipeline-templates).
+
 
 To get to the **Schedule refresh** screen:
 
