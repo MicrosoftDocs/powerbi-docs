@@ -69,7 +69,7 @@ Combo charts are a great choice:
 - When you have a line chart and a column chart with the same X axis.
 - To compare multiple measures with different value ranges.
 - To illustrate the correlation between two measures in one visual.
-- To check whether one measure meets the target, which is defined by another measure.
+- To check whether one measure meets the target, which another measure defines.
 - To conserve canvas space.
 
 For more information, see [Combo charts in Power BI](power-bi-visualization-combo-chart.md).
@@ -78,13 +78,13 @@ For more information, see [Combo charts in Power BI](power-bi-visualization-comb
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition.png" alt-text="Screenshot of a Decomposition tree." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition-expanded.png":::
 
-The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It's also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
+The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It's also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for improvised exploration and conducting root cause analysis.
 
 ## Doughnut charts
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/donut-small.png" alt-text="Screenshot of a Doughnut chart.":::
 
-Doughnut charts are similar to pie charts.  They show the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
+Doughnut charts are similar to pie charts. They show the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
 For more information, see [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md).
 
@@ -92,10 +92,10 @@ For more information, see [Doughnut charts in Power BI](power-bi-visualization-d
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-funnel-chart.png" alt-text="Screenshot of a Funnel chart.":::
 
-Funnels help visualize a process that has stages, and items flow sequentially from one stage to the next.  One example is a sales process that starts with leads and ends with purchase fulfillment.
+Funnels help visualize a process that has stages, and items flow sequentially from one stage to the next. One example is a sales process that starts with leads and ends with purchase fulfillment.
 
 For example, a sales funnel that tracks customers through stages: Lead > Qualified Lead > Prospect > Contract > Close. At a glance, the shape of the funnel conveys the health of the process you're tracking.
-Each funnel stage represents a percentage of the total. In most cases a funnel chart is shaped like a funnel with the first stage being the largest and each subsequent stage smaller than its predecessor. A pear-shaped funnel is also useful as it can identify a problem in the process. But typically, the first stage, the "intake" stage, is the largest.
+Each funnel stage represents a percentage of the total. In most cases, a funnel chart is shaped like a funnel with the first stage being the largest and each subsequent stage smaller than its predecessor. A pear-shaped funnel is also useful as it can identify a problem in the process. But typically, the first stage, the "intake" stage, is the largest.
 
 For more information, see [Funnel Charts in Power BI](power-bi-visualization-funnel-charts.md).
 
@@ -325,7 +325,7 @@ For more information, see [Working with tables in Power BI](power-bi-visualizati
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-treemap.png" alt-text="Screenshot of a Treemap.":::
 
-Treemaps are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. The rectangles are arranged in size from top left (largest) to bottom right (smallest).
+Treemaps are charts of colored rectangles, with size representing value. They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. The rectangles are arranged in size from top left (largest) to bottom right (smallest).
 
 Treemaps are a great choice:
 
@@ -344,7 +344,7 @@ For more information, see [Treemaps in Power BI](power-bi-visualization-treemaps
 
 A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how an initial value (for example, net income) is affected by a series of positive and negative changes.
 
-The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often start on the horizontal axis, while the intermediate values are floating columns. Because of this "look", waterfall charts are also called bridge charts.
+The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often start on the horizontal axis, while the intermediate values are floating columns. Because of this "look," waterfall charts are also called bridge charts.
 
 Waterfall charts are a great choice:
 
