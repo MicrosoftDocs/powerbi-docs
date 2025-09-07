@@ -76,11 +76,12 @@ Example definition.pbir:
 
 ```json
 {  
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
   "datasetReference": {
     "byPath": {
       "path": "../Sales.Dataset"
-    },
-    "byConnection": null
+    }    
   }
 }
 
@@ -104,6 +105,8 @@ Example using `byConnection`:
 
 ```json
 {  
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
   "datasetReference": {
     "byConnection": {      
       "connectionString": "Data Source=\"powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName]\";initial catalog=[SemanticModelName];access mode=readonly;integrated security=ClaimsToken;semanticmodelid=[SemanticModelId]"
@@ -116,6 +119,8 @@ When deploying a report through [Fabric REST API](/rest/api/fabric/report/items)
 
 ```json
 {  
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
   "datasetReference": {
     "byConnection": {      
       "connectionString": "semanticmodelid=[SemanticModelId]"
@@ -141,6 +146,8 @@ Example using `byConnection`:
 
 ```json
 {
+    "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/1.0.0/schema.json",
+    "version": "4.0",
     "datasetReference": {  
       "byConnection": {
         "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName];Initial Catalog=[SemanticModelName];Integrated Security=ClaimsToken",
