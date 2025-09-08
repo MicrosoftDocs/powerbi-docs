@@ -29,17 +29,17 @@ This *Insights* feature helps you easily explore and find insights such as anoma
 
 ## Notifications
 
-Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are insights that are noteworthy, based on factors like recency and significance of the trend or anomaly. These notifications are supported only in Premium and PPU workspaces. Note that the tenant and report setting for receiving notifications should be turned on for this to work.
+Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are insights that are noteworthy, based on factors like recency and significance of the trend or anomaly. These notifications are supported only in Premium and PPU workspaces. The tenant and report setting for receiving notifications should be turned on for this feature to work.
 
 :::image type="content" source="media/power-bi-insights/toast.png" alt-text="Screenshot that shows toast notification for insights.":::
 
 Select the **See insights** button to open the Insights pane or choose **Show me later** if you’d not like to get further notifications for this report in the current session.
 
-If you usually dismiss these notifications or don't engage with them, they'll be disabled for the current session. You can select **Keep Showing** to continue getting notifications.
+If you usually dismiss these notifications or don't engage with them, they're disabled for the current session. You can select **Keep Showing** to continue getting notifications.
 
 :::image type="content" source="media/power-bi-insights/toast-dismiss.png" alt-text="Screenshot that shows notification when toasts are dismissed.":::
 
-You can control the setting for notifications in a report as shown below:
+You can control the setting for notifications in a report as shown in this image:
 
 :::image type="content" source="media/power-bi-insights/report-setting.png" alt-text="Screenshot that shows report setting for insights.":::
 
@@ -57,16 +57,16 @@ Select **More options (...)** in the upper-right corner of a visual and then **G
 
 ## Insights
 
-The Insights pane currently shows you three types of insights – Anomalies, Trends, and KPI analysis.
-The **Top** tab shows you Top insights. **All** tab shows you both Top insights and other insights. 
+The Insights pane currently shows you three types of insights – Anomalies, Trends, and Key Performance Indicator (KPI) analysis.
+The **Top** tab shows you Top insights. **All** tab shows you both Top insights and other insights.
 
 :::image type="content" source="media/power-bi-insights/insights-pane.png" alt-text="Screenshot that shows the pane containing insights.":::
 
-Insights are computed every time you open a report or interact with a report such as changing pages, changing filters, or cross-filtering your data.
+Insights are computed for your data every time you open a report or interact with a report. For example, when you change pages, change filters, or cross-filter your data.
 
 ### Anomalies
 
-An anomaly is an abnormality in time-series data, such as unexpected spikes and dips in the data. The algorithm computes a boundary around what’s considered a normal or expected value. Any value found outside this boundary is marked as an anomaly. Check out this [technical blog](https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/overview-of-sr-cnn-algorithm-in-azure-anomaly-detector/ba-p/982798) for more details about the Anomaly Detector algorithm. There are three types of anomaly insights:
+An anomaly is an abnormality in time-series data, such as unexpected spikes and dips in the data. The algorithm computes a boundary around values that are considered normal or expected. Any value found outside this boundary is marked as an anomaly. Check out this [technical blog](https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/overview-of-sr-cnn-algorithm-in-azure-anomaly-detector/ba-p/982798) for more details about the Anomaly Detector algorithm. There are three types of anomaly insights:
 
 - Significant Anomaly:
   The anomaly has a high score. Anomaly score indicates how far the point is from the expected range. 
@@ -77,7 +77,7 @@ An anomaly is an abnormality in time-series data, such as unexpected spikes and 
 
 ### Trends
 
-A trend occurs if there's a prolonged increase or decrease in time-series data. There are a series of steps the Power BI algorithm uses to find meaningful trends: It first performs data smoothing, interpolation, and time-series sampling. The trends are then identified for statistical significance based on the slope and length of a change in value. The algorithm removes noise like seasonality and outliers. For example, if sales jump in December, the algorithm won't mark that as a noteworthy trend because it's common for sales to jump around the holidays.
+A trend occurs if there's a prolonged increase or decrease in time-series data. There are a series of steps the Power BI algorithm uses to find meaningful trends: It first performs data smoothing, interpolation, and time-series sampling. The trends are then identified for statistical significance based on the slope and length of a change in value. The algorithm removes noise like seasonality and outliers. For example, if sales jump in December, the algorithm doesn't mark that as a noteworthy trend because it's common for sales to jump around the holidays.
 
 - Long trend:
   The trend is significant and is the longest trend within a single series or across multiple series in a visual. 
@@ -105,7 +105,7 @@ When an anomaly in your data is flagged, Power BI runs the analysis across diffe
 
 ### Trends
 
-When a trend in your data is flagged, Power BI looks for and identifies the categories that most influenced the increase or decrease in the identified trend. Possible explanations are ranked based on the relative contributions from different categories to the increase or decrease in trend. For more information see [Run quick insights on a semantic model](service-insights.md#run-quick-insights-on-a-semantic-model).
+When a trend in your data is flagged, Power BI looks for and identifies the categories that most influenced the increase or decrease in the identified trend. Possible explanations are ranked based on the relative contributions from different categories to the increase or decrease in trend. For more information, see [Run quick insights on a semantic model](service-insights.md#run-quick-insights-on-a-semantic-model).
 
 :::image type="content" source="media/power-bi-insights/trend-explanations.png" alt-text="Screenshot that shows explanations for a trend insight.":::
 
@@ -124,11 +124,11 @@ If the insight mentions multiple anomalies, or trends, selecting the insight car
 ## Considerations and limitations
 
 **Insights** is currently not available in apps and embedded for reports in Premium workspaces. Users with PPU license can still use Insights.
-If no insights are found, you see this message: “We didn’t find any insights”. Here are some possible reasons:
+If no insights are found, you see this message: "We didn’t find any insights." Here are some possible reasons:
 
 - The data or visuals aren't supported:
 
-  - Anomalies and trend insights are supported on time series with numeric data on visuals such as line charts; area charts; stacked area, bar, and column charts; clustered bar and column charts; and KPIs. KPI analysis insight is supported on KPIs, gauges, cards, and bar and column charts.
+  - Anomalies and trend insights are supported on a time-series with numeric data on the following types of visuals: line charts; area charts; stacked area, bar, and column charts; clustered bar and column charts; and KPIs. KPI analysis insight is supported on KPIs, gauges, cards, and bar and column charts.
   -	Anomalies and trends are only supported for built-in date hierarchy or date time fields. They aren't supported on custom date hierarchy.
 - The data doesn't have significant anomalies or trends. You can try filtering your data or check back later when there’s new data.
 - The following functionality isn't supported:
@@ -137,7 +137,7 @@ If no insights are found, you see this message: “We didn’t find any insights
   - Live Connection to Azure Analysis Services or SQL Server Analysis Services
   - MultiDimensional Analysis Services data sources (for example, SAP BW and SAP HANA)
   - Redshift data sources
-  -Power BI Report Server
+  - Power BI Report Server
   
 **Explanations** aren't supported in the following cases:
 
