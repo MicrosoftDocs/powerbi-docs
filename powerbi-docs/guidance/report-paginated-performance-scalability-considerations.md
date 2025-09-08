@@ -50,11 +50,9 @@ The recommended threshold for data volume in a standard execution environment be
 
 > [!WARNING]
 > #### Data volume limits per query execution
-> 
-> If a single paginated report dataset query fetches more than 2,000,000,000 bytes (~2GB), query execution is aborted, and rendering fails with the following an error:
+> > If a single paginated report dataset query fetches more than 2,000,000,000 bytes (~2GB), query execution is aborted, and rendering fails with the following error:
 > ![Data Limits Error Message](media/report-paginated-performance-scalability-considerations/data-limits-error-message.png)
-> 
-> To prevent this error, ensure each paginated report query retrieves less than 2,000,000,000 bytes.
+> > To prevent this error, ensure each paginated report query retrieves less than 2,000,000,000 bytes.
 
 ## Performance considerations   
 
