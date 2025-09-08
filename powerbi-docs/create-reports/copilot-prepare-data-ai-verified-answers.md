@@ -68,8 +68,8 @@ To set a verified answer, follow these steps:
 
    Example:
 
-     - **Trigger phrase**: "Show me a break down of sales over time"
-     - **User prompt**: "Sales break down over time for the Northeast"
+     - **Trigger phrase**: "Show me a breakdown of sales over time"
+     - **User prompt**: "Sales breakdown over time for the Northeast"
 
    Copilot returns the verified answer visual, automatically filtered to match the user's prompt. From there, you can apply any available filters that you’d like.
 
@@ -235,7 +235,7 @@ Verified answers are part of the semantic model, not the report. This means edit
 - **Did you create in service, or are expecting to see verified answers in service?** If you waited the 15 minutes or made changes in service but are STILL not getting them returned, there may be other aspects at play that you might try. 
      - **Are there any hidden fields being used by the verified answer?** If a field that’s used in a verified answer is hidden in the model, it will not be returned as a verified answer. Ensure all fields are visible in the model. (This limitation includes filters) 
      - **Are there filters being used?** Are all filter fields selected in the schema selection UI? Filters (whether applied or not) become part of the verified answer definition. If even parts of filter information are hidden with schema selection, the verified answer may not be reliably returned. Ensure all filter fields are unhidden in schema selection. 
-     - **Are there conflicting custom instructions?** For example, if you have a custom instruction that says “Always apply filter Region = ‘USA’” on every answer, but in your Verified Answer, you did not setup Region column as an allowed filter, then copilot won’t match the Verified Answer. 
+     - **Are there conflicting custom instructions?** For example, if you have a custom instruction that says “Always apply filter Region = ‘USA’” on every answer, but in your Verified Answer, you did not set up Region column as an allowed filter, then copilot won’t match the Verified Answer. 
      - **Is your Copilot prompt similar enough to your trigger prompts?** There are two ways Copilot matches user prompts to a verified answer.
        **Exact matches:** Phrase matches character-for-character (for example, "Snowboard sales by month" when the trigger phrase is "snowboard sales by month").
        **Semantic matches:** Phrases with different wording but the same intent (for example, "Snowboard sales over time").
