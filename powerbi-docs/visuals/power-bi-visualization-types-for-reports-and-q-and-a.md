@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A visualization is an image created from data. Visualizations are also called "visuals." Some examples of visuals are: pie chart, line chart, map, and KPI. This article lists visualizations available in Power BI. We add new visualizations. Stay tuned!
+A visualization is an image created from data. Visualizations are also called "visuals." Some examples of visuals are: pie chart, line chart, map, and KPI. This article lists visualizations available in Power BI. We add new visualizations so stay tuned!
 
 And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), where you find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
 
@@ -56,7 +56,7 @@ Multi row cards display one or more data points, one per row.
 
 Single number cards display a single fact, a single data point. Sometimes a single number is the most important thing you want to track in your Power BI dashboard or report, such as total sales, market share year over year, or total opportunities.  
 
-For more information, see [Create a Card (big number tile)](power-bi-visualization-card.md).
+For more information, see [Create a Card (large number tile)](power-bi-visualization-card.md).
 
 ## Combo charts
 
@@ -103,7 +103,7 @@ For more information, see [Funnel Charts in Power BI](power-bi-visualization-fun
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/gauge-m.png" alt-text="Screenshot of a Radial gauge chart.":::
 
-A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal. The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading. And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
+A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal. The line (needle) represents the goal, or target value. The shading represents progress toward that goal. And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
 In the example, we're a car retailer tracking our Sales team's average sales per month. Our goal is 200,000 and represented by the location of the needle. The minimum possible average sales number is 100,000, and we set the maximum as 250,000. The blue shading shows that we're currently averaging approximately $180,000 this month. Luckily, we still have another week to reach our goal.
 
@@ -342,7 +342,7 @@ For more information, see [Treemaps in Power BI](power-bi-visualization-treemaps
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/waterfall-small.png" alt-text="Screenshot of a Waterfall chart.":::
 
-A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how an initial value (for example, net income) is affected by a series of positive and negative changes.
+A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how a series of positive and negative changes affects an initial value (for example, net income).
 
 The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often start on the horizontal axis, while the intermediate values are floating columns. Because of this "look," waterfall charts are also called bridge charts.
 
