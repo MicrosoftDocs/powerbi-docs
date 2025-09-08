@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: build-2023, build-2023-dataai
 ms.topic: how-to
-ms.date: 03/07/2024
+ms.date: 09/08/2025
 LocalizationGroup: 
 ---
 # Find Insights in your reports (preview)
