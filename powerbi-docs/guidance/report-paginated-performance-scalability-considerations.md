@@ -39,7 +39,7 @@ To check if a report was run in the optimized environment, click on the Diagnost
 
 Both the standard and optimized execution environments for paginated reports have specific data volume limits that, when exceeded, significantly slow down report processing. When performance slows down during the export report scenario, the user sees the warning shown in this image: 
 
-:::image type="content" source="media/reports-paginated-performance-scalability/high-data-volume-export.png" alt-text="Screenshot of the warning for high data volumne export." border="false":::
+:::image type="content" source="media/reports-paginated-performance-scalability/high-data-volume-export.png" alt-text="Screenshot of the warning for high data volume export." border="false":::
 
 This issue typically occurs in two scenarios:
 -	Data dumps of tables with no groupings and many columns/rows: these data dumps require significant resources when exporting the paginated report to Excel. Alternatively, consider exporting the report to CSV format, which is less intensive.
@@ -51,7 +51,7 @@ The recommended threshold for data volume in a standard execution environment be
 > [!WARNING]
 > #### Data volume limits per query execution
 > > If a single paginated report dataset query fetches more than 2,000,000,000 bytes (~2GB), query execution is aborted, and rendering fails with the following error:
-> ![Data Limits Error Message](media/report-paginated-performance-scalability-considerations/data-limits-error-message.png)
+> ![Screenshot of Data Limits Error Message.](media/report-paginated-performance-scalability-considerations/data-limits-error-message.png)
 > > To prevent this error, ensure each paginated report query retrieves less than 2,000,000,000 bytes.
 
 ## Performance considerations   
@@ -93,4 +93,5 @@ For more information related to this article, check out the following resources:
 - [Paginated reports data retrieval guidance](report-paginated-data-retrieval.md)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
+
 
