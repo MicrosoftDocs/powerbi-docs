@@ -74,7 +74,7 @@ Power BI offers several ways to collaborate and share Power BI reports, dashboar
 - Only direct recipients can access the shared content; forwarding the link does not grant access.
 - If RLS is implemented, external users only see data they're permitted to view.
 
-See [Microsoft Entra B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) for more.
+See [Microsoft Entra B2B guest users](fabric/enterprise/powerbi/service-admin-entra-b2b) for more.
 
 ### Share with large groups
 

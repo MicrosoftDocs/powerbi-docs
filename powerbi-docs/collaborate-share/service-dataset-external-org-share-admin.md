@@ -22,7 +22,7 @@ For a full list of requirements necessary to use in-place datset sharing, see th
 
 ## Licensing
 
-Users must have an active Power BI account and a Power BI Pro or Premium license. For detailed information on licensing requirements, see the licensing requirements section of [Distribute Power BI content to external guest users with Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md#licensing).
+Users must have an active Power BI account and a Power BI Pro or Premium license. For detailed information on licensing requirements, see the licensing requirements section of [Distribute Power BI content to external guest users with Microsoft Entra B2B](fabric/enterprise/powerbi/service-admin-entra-b2b#licensing).
 
 ## Guest users can work with shared semantic models in their own tenants 
 

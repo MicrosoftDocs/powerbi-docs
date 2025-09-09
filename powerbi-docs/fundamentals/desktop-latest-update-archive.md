@@ -2659,7 +2659,7 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* Guest users can now create their own email subscriptions  [[video]](https://youtu.be/Vlo7dJgr4WM?t=961)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053193) [[article]](../enterprise/service-admin-azure-ad-b2b.md)
+* Guest users can now create their own email subscriptions  [[video]](https://youtu.be/Vlo7dJgr4WM?t=961)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053193) [[article]](fabric/enterprise/powerbi/service-admin-entra-b2b)
 * Downloading a PBIX now available for more scenarios  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1028)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053194)  [[article]](../create-reports/service-export-to-pbix.md)
 * Administration and governance  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1068)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053195)
 * Deployment pipelines updates  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1100)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053197) [[article]](/fabric/cicd/deployment-pipelines/deployment-history)

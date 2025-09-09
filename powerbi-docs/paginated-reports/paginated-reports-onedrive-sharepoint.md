@@ -96,7 +96,7 @@ Learn more about [subscribing to OneDrive SharePoint](/sharepoint/onedrive-overv
 
 ## Considerations and limitations 
 
-- [Microsoft Entra Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md) can't choose OneDrive SharePoint. 
+- [Microsoft Entra Business-to-Business (B2B) guest users](fabric/enterprise/powerbi/service-admin-entra-b2b) can't choose OneDrive SharePoint. 
 - Premium per user accounts can't choose OneDrive SharePoint.
 
 
