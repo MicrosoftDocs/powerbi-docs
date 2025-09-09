@@ -228,9 +228,17 @@ Some of the possible scenarios now available with PBIR include:
 
 ### Enable PBIR format Preview feature
 
-Saving as a Power BI Project using PBIR is currently in preview. Before using it, enable it in Power BI Desktop preview features:
+Saving as a Power BI reports using PBIR is currently in preview. Before using it, enable it in Power BI Desktop preview features:
+
+For Power BI Project (PBIP) files:
 
 Go to **File > Options and settings > Options > Preview features** and check the box next to **Store reports using enhanced metadata format (PBIR)**.
+
+For PBIX files:
+
+Go to **File > Options and settings > Options > Preview features** and check the box next to **Store PBIR reports using enhanced metadata format (PBIR)**.
+
+Enabling PBIR for PBIX ensures that the PBIR format is saved within PBIX files as well, not just in Power BI Project (PBIP) files.
 
 ### Save as a project using PBIR
 
@@ -434,10 +442,14 @@ PBIR is currently in **preview**. Keep the following in mind:
 PBIR size limitations enforced by the service:
 
 - 1,000 max pages per report.
-- 300 max visuals per page.
+- 1000 max visuals per page.
 - 1,000 max resource package files per report.
 - 300-mb max size for all resource package files.
 - 300-mb max size of all report files.
+
+> [!IMPORTANT]
+> If you reach the limits above, you should consider optimizing your report. See the [Power BI Optimization document](/power-bi/guidance/power-bi-optimization#power-bi-reports).
+
 
 [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) export reports using the format currently applied in the service. If a report is created or imported into Fabric using the PBIR format, it will be exported in PBIR. Likewise, if a report is PBIR-Legacy, it will be exported in the PBIR-Legacy format. 
 
