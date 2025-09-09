@@ -304,7 +304,7 @@ The following list includes items that you might choose to prioritize when intro
 
 - Recommendations and requirements for [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md)
 - Recommendations and requirements for [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md)
-- Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](fabric/enterprise/powerbi/service-admin-entra-b2b), such as customers, partners, or vendors
+- Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](/fabric/enterprise/powerbi/service-admin-entra-b2b), such as customers, partners, or vendors
 - How users are permitted to work with regulated data and highly sensitive data
 - Allowed use of unverified data sources that are unknown to IT
 - When manually maintained data sources, such as Excel or flat files, are permitted

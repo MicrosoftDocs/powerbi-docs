@@ -99,7 +99,7 @@ Publishing reports to the workspace enforces existing licensing rules. If you tr
 
 ### Guest users
 
-[Microsoft Entra B2B Guest users](fabric/enterprise/powerbi/service-admin-entra-b2b) who have been assigned a workspace role or granted specific item permissions, will be able to perform the operations permitted by those roles or permissions.
+[Microsoft Entra B2B Guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b) who have been assigned a workspace role or granted specific item permissions, will be able to perform the operations permitted by those roles or permissions.
 
 > [!NOTE]
 > Guest users who have been assigned workspace roles or specific item permissions will continue to have those roles and/or permissions, even if the **[Allow Microsoft Entra guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization)** tenant setting is disabled.
