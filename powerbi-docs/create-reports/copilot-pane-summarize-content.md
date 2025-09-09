@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/15/2025
+ms.date: 09/09/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -146,19 +146,18 @@ Copilot report summaries and answers are based on the report’s visualized data
 
 The quality of the results depends heavily on the amount of data and the clarity of labels. When Copilot resorts to sampling due to volume, accuracy may decrease. 
 
-**Tip**
-If report summaries or answers are taking longer than you expect, you can look at the visuals being used, and how long they take to query.  This means that if crucial visuals important for answering questions are taking a long time to load, you can break the visuals up into smaller pieces to make them faster for Copilot.  Additionally, you can remove long running query time visuals if they are not important for Copilot to use.  You can see this information in the diagnostics available in the elipses menu.
+> [!TIP]
+> If report summaries or answers are taking longer than you expect, you can look at the visuals being used, and how long they take to query.  This means that if crucial visuals important for answering questions are taking a long time to load, you can break the visuals up into smaller pieces to make them faster for Copilot.  Additionally, you can remove long running query time visuals if they are not important for Copilot to use.  You can see this information in the diagnostics available in the elipses menu.
+>
+> :::image type="content" source="media/copilot-create-narrative/copilot-diagnostics-entry-point.png" alt-text="Screenshot showing the Copilot diagnostics entry point in standalone." lightbox="media/copilot-create-narrative/copilot-diagnostics-entry-point.png":::
 
-:::image type="content" source="media/copilot-create-narrative/copilot-diagnostics-entry-point.png" alt-text="Screenshot showing the Copilot diagnostics entry point in standalone." lightbox="media/copilot-create-narrative/copilot-diagnostics-entry-point.png":::
+The information we give is:
 
-
-The information we give is: 
 1. Visual title
 1. The page the visual is located on
 1. The time in seconds it took to load/query the visual
 
-:::image type="content" source="media/copilot-create-narrative/copilot-diagnostics-timings.png" alt-text="Screenshot an example diagnostic file that showcases visual timings for Copilot queries." lightbox="media/copilot-create-narrative/copilot-diagnostics-timings.png":::
-
+:::image type="content" source="media/copilot-create-narrative/copilot-diagnostic-timings.png" alt-text="Screenshot an example diagnostic file that showcases visual timings for Copilot queries." lightbox="media/copilot-create-narrative/copilot-diagnostic-timings.png":::
 
 ### Report composition
 
