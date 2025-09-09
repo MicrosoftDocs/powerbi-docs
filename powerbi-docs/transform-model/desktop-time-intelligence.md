@@ -19,7 +19,7 @@ We recommend using [calendar-based time intelligence (preview)](#calendar-based-
 
 This table compares the three tools provided:
 
-|Tool|Set up effort required|Ease of management|Flexiblity|Notes|
+|Tool|Set up effort required|Ease of management|Flexibility|Notes|
 |--|--|--|--|--|
 |[Auto-date/time](desktop-auto-date-time.md)|virtually zero|hard|low|Increases model size due to multiple hidden date tables created|
 |[Classic time intelligence](#classic-time-intelligence)|medium|easy|low|Requires creation of a date table, assumes Gregorian or shifted Gregorian calendar, suffers from performance issues in some specific scenarios|
@@ -54,7 +54,7 @@ Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are
 - [**Calendar-based time intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations.
 
 > [!NOTE]
-> You will need to [set your table as a date table](desktop-date-tables.md#benefits-of-setting-your-own-date-table) for specific scenarios.
+> You need to [set your table as a date table](desktop-date-tables.md#benefits-of-setting-your-own-date-table) for specific scenarios.
 
 ## Classic time intelligence
 
@@ -68,7 +68,7 @@ While this is a fast and easy approach, there are many downsides compared to the
 
 - it requires you set the date table
 - it only works with models that have at least one dedicated date table
-- the date column(s) used should have no missing dates between the first and last dates. If there are any missing dates between the first and last dates, an error will be thrown.
+- the date columns used should have no missing dates between the first and last dates. If there are any missing dates between the first and last dates, an error is thrown.
 - it's less flexible as it's optimized for Gregorian or shifted Gregorian calendars, such as fiscal years that start on July 1 but still follow a Gregorian calendar
 - it doesn't provide week-based calculations
 - in specific scenarios, time-based calculations don't perform well.
@@ -107,7 +107,7 @@ The possibilities are endless as there's no built-in assumption from Power BI on
 
 #### Sparse dates
 
-[Classic time intelligence](#classic-time-intelligence) requires that the date column provided is complete - if there are any missing dates between the first and last dates, an error will be thrown. Calendar-based time intelligence functions do not have such a requirement. Instead, they operate on the dates as-is. While we still recommend having a complete and dedicated calendar table, you are no longer required to have that. For example, if all of your retail stores are closed over the weekend, you can skip over the weekend days as they won't have any sales. Assuming your weekend is Saturday and Sunday, you can now use [PREVIOUSDAY](/dax/previousday-dax-function) with a calendar based on a table that does not have entries for the weekend to jump from Monday straight to Friday.
+[Classic time intelligence](#classic-time-intelligence) requires that the date column provided is complete - if there are any missing dates between the first and last dates, an error is thrown. Calendar-based time intelligence functions don't have such a requirement. Instead, they operate on the dates as-is. While we still recommend having a complete and dedicated calendar table, you're no longer required to have that. For example, if all of your retail stores are closed over the weekend, you can skip over the weekend days as they don't have any sales. Assuming your weekend is Saturday and Sunday, you can now use [PREVIOUSDAY](/dax/previousday-dax-function) with a calendar based on a table that doesn't have entries for the weekend to jump from Monday straight to Friday.
 
 #### Week-based calculations
 
@@ -119,7 +119,7 @@ TOTALWTD ( Expr, CalendarName )
 
 #### Performance improvements
 
-Some scenarios may exhibit improved performance when comparing a calendar-based time intelligence function to its classic counterpart. For example, a visual that is grouped by the week and performs a year-to-date calculation using `TOTALYTD ( ..., CalendarName )` should generally execute more quickly than if its classic counterpart, `TOTALYTD ( ..., TableName[DateColumnName] )`, were used. For insight into why this might happen, please refer to the [**Context clearing**](#context-clearing) section below.
+Some scenarios may exhibit improved performance when comparing a calendar-based time intelligence function to its classic counterpart. For example, a visual that is grouped by the week and performs a year-to-date calculation using `TOTALYTD ( ..., CalendarName )` should generally execute more quickly than if its classic counterpart, `TOTALYTD ( ..., TableName[DateColumnName] )`, were used. For insight into why this might happen, refer to the [**Context clearing**](#context-clearing) section.
 
 ### Enabling the enhanced DAX Time Intelligence preview
 
@@ -163,12 +163,12 @@ To assign a column to a category, select the category from the **Add category** 
 
 ### Available column categories
 
-The following table shows the categories that are available.The table also gives example values and cardinalities for Gregorian calendars.
+The following table shows the categories that are available. The table also gives example values and cardinalities for Gregorian calendars.
 
 Categories are divided into two groups:
 
 - **Complete**. Data in columns assigned to Complete categories is enough to uniquely identify the time period.
-- **Partial**. Data in columns assigned to Partial categories is not enough to uniquely identify the time period.
+- **Partial**. Data in columns assigned to Partial categories isn't enough to uniquely identify the time period.
 
 |Category|Description|Type|Example cardinality in a Gregorian calendar|Example column values in a Gregorian calendar|
 |--|--|--|--|--|
@@ -198,9 +198,9 @@ In addition to these categories, you can associate any number of columns on your
 
 ### Primary vs associated columns
 
-The primary column is required for each category. Whenever that column or any associated columns assigned to the same category on the referenced calendar are in context or the category is required to perform a calculation, Power BI uses the primary column. Additionally, the primary columns are used for sorting. If the values in the primary column don't allow it to be sortable as expected you can either [configure the primary column to sort by another column](../create-reports/desktop-sort-by-column.md) or use another column and make the original column an associated column. For example, a column with textual data containing monthnumber and year in a format of `mm-yyyy` (i.e. `01-2024`, `02-2024` and so on) will not sort correctly across multiple years, but a column that uses the `yyyy-mm` format will:
+The primary column is required for each category. Whenever that column or any associated columns assigned to the same category on the referenced calendar are in context or the category is required to perform a calculation, Power BI uses the primary column. Additionally, the primary columns are used for sorting. If the values in the primary column don't allow it to be sortable as expected you can either [configure the primary column to sort by another column](../create-reports/desktop-sort-by-column.md) or use another column and make the original column an associated column. For example, a column with textual data containing month number and year in a format of `mm-yyyy` (that is, `01-2024`, `02-2024`, and so on) won't sort correctly across multiple years, but a column that uses the `yyyy-mm` format will:
 
-:::image type="content" source="media/desktop-time-intelligence/calendar-sorting-textual-data-patterns.png" alt-text="Screenshot showing two tables. Each table has one column. The first table contains a column that contains textual monthnumber and year information in a mm-yyyy format and the second contains the same information in a yyyy-mm format. The column containing the mm-yyyy format data is not sorted correctly." lightbox="media/desktop-time-intelligence/calendar-sorting-textual-data-patterns.png":::
+:::image type="content" source="media/desktop-time-intelligence/calendar-sorting-textual-data-patterns.png" alt-text="Screenshot showing two tables. Each table has one column. The first table contains a column that contains textual month number and year information in a mm-yyyy format and the second contains the same information in a yyyy-mm format. The column containing the mm-yyyy format data isn't sorted correctly." lightbox="media/desktop-time-intelligence/calendar-sorting-textual-data-patterns.png":::
 
 You can have zero or more associated columns assigned to a category.
 
@@ -222,7 +222,7 @@ The real-time validations performed on the calendars are:
 
 #### Period Uniqueness
 
-There should always be a path to unique identify the period for the assigned categories.
+There should always be a path to uniquely identify the period for the assigned categories.
 
 Whenever you add a **partial category**, Power BI validates that a matching combination of complete or partial categories is also tagged in the same calendar. If that isn't the case, a warning is shown.
 
@@ -277,14 +277,14 @@ Even if the calendar is defined, however, a measure might still return an error.
 Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require sufficient categories to be included on the calendar that is referenced in the function call so Power BI can identify a uniquely particular unit of time. In other words, Power BI needs to be able to "walk-up" from the level the calculation is performed on all the way to an individual year. For example, when performing a calculation on quarters, for example using [TOTALQTD](/dax/totalqtd-function-dax) either assign  **Quarter** category, or assign both **Quarter of Year** and **Year** in the calendar as dictated by the [**Period uniqueness**](#period-uniqueness) validation.
 
 > [!NOTE]
-> For some functions their name is indicative of which level the calculation operates (e.g. [TOTALYTD](/dax/totalytd-function-dax)), while for others it is dependent on the parameters and context (e.g. [DATEADD](/dax/dateadd-function-dax)).
+> For some functions their name is indicative of which level the calculation operates (for example, [TOTALYTD](/dax/totalytd-function-dax)), while for others it's dependent on the parameters and context (for example, [DATEADD](/dax/dateadd-function-dax)).
 
 ### Context Clearing
 
 Time intelligence functions operate by starting at a point in time, and then performing some operation on it in order to yield a different point in time. Naturally, the initial point in time may conflict with this result, thus causing a filter context intersection that by default, would yield partial or empty results. For example, consider the following scenario.
 
 #### Calendar definition
-We have a simple Gregorian calendar which tags three categories, defined as:
+We have a simple Gregorian calendar that tags three categories, defined as:
 
 | Category | Primary Column |
 | --- | --- |
@@ -313,10 +313,10 @@ Our table visual browses at a month granularity using the **Year** and **MonthOf
 | **2011** | **4** | **40** | **10** |
 | 2011 | 5 | 50 | 20 |
 
-In the above, the bolded row is browsing at a month-level, for the month of April 2011. Thus, all measures in this row will be evaluated under the filter context of **[Year] == 2011 and [MonthOfYear] == 4**.  
-As expected, **TotalSales** here is computed as the total sales for April 2011.
+In this table, the bolded row is browsing at a month-level, for the month of April 2011. Thus, all measures in this row will be evaluated under the filter context of **[Year] == 2011 and [MonthOfYear] == 4**.  
+As expected, **TotalSales** here's computed as the total sales for April 2011.
 
-**LastQuarterSales** similarly computes **TotalSales**, but given an additional filter provided by the `DATEADD` calendar-based function.
+**LastQuarterSales** similarly computes **TotalSales**, but given an extra filter provided by the `DATEADD` calendar-based function.
 For this row, `DATEADD` would have an initial starting point in time of April 2011, and would yield the point in time that is exactly one quarter ago: January 2011. As a result, one may expect this **TotalSales** to be computed under the following two filter contexts:
 
 - Provided by the current row's browsing columns:
@@ -324,8 +324,8 @@ For this row, `DATEADD` would have an initial starting point in time of April 20
 - Provided by the DATEADD filter:
 `{ [Year] == 2011, [MonthOfYear] == 1 }` (Equivalently, January 2011)
 
-Clearly, the two filter contexts above would conflict - we cannot evaluate the total sales given the current month as both January 2011 **and** April 2011. Such an intersection would of course yield no results.
-However, this is not what occurs. Instead, based on the calendar definition, calendar-based time intelligence functions will identify which categories' columns may result in conflicts, following the time operation that the function performs. In this case, `DATEADD` performs a shift at the **Quarter** level. The function will identify that both the **Year** and **Month of Year** categories may change as a result of a change in the **Quarter** category's columns. Thus, the function will clear filter context on **all** (both primary and associated) columns that are tagged to those categories. 
+Clearly, these two filter contexts would conflict - we can't evaluate the total sales given the current month as both January 2011 **and** April 2011. Such an intersection would yield no results.
+However, this isn't what occurs. Instead, based on the calendar definition, calendar-based time intelligence functions identify which categories' columns may result in conflicts, following the time operation that the function performs. In this case, `DATEADD` performs a shift at the **Quarter** level. The function identifies that both the **Year** and **Month of Year** categories may change as a result of a change in the **Quarter** category's columns. Thus, the function clears filter context on **all** (both primary and associated) columns that are tagged to those categories. 
 
 In other words, we can say that the **Year** and **Month of Year** categories are dependencies of the **Quarter** category. Conversely, we can say that the **Quarter** category is a dependent of the **Year** and **Month of Year** categories.
 
@@ -333,25 +333,25 @@ In other words, we can say that the **Year** and **Month of Year** categories ar
 
 :::image type="content" source="media/desktop-time-intelligence/time-lattice.png" alt-text="Lattice structure diagram of all calendar categories." lightbox="media/desktop-time-intelligence/time-lattice.png":::
 
-The diagram above is provided to better visualize the dependencies between the different time categories. Each category in this lattice represents all columns (primary and associated) tagged to that category.
+This diagram is provided to better visualize the dependencies between the different time categories. Each category in this lattice represents all columns (primary and associated) tagged to that category.
 Categories are connected to their dependencies via arrows. For example, "Month" is dependent on "Year", "Quarter of Year", "Month Of Quarter", "Quarter", and "Month of Year".
 
-When context is set on a column or its associated [sort by column](../create-reports/desktop-sort-by-column.md) that is tagged in a calendar, prior filter context will be cleared on:
+When context is set on a column or its associated [sort by column](../create-reports/desktop-sort-by-column.md) that is tagged in a calendar, prior filter context is cleared on:
 
 1. All category **dependencies** of X. This can be thought of as all categories above X.
-2. All category **dependents** of both X and its dependencies (i.e. from 1. above). This can be thought of as all categories below X and all categories in 1 above.
+2. All category **dependents** of both X and its dependencies (that is, from 1. above). This can be thought of as all categories below X and all categories in 1 above.
 
 > [!NOTE]
 > Context clearing happens on columns tagged in a calendar or associated [sort-by columns](../create-reports/desktop-sort-by-column.md) regardless if the context is set using time intelligence functions or otherwise.
 
 ##### Time-related columns
 
-Most time intelligence functions, with the exception of [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax), will clear context on all time-related columns and associated [sort-by columns](../create-reports/desktop-sort-by-column.md).
+Most time intelligence functions, except for [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax), will clear context on all time-related columns and associated [sort-by columns](../create-reports/desktop-sort-by-column.md).
 
 ##### Cross-calendar behavior
 
-If there are multiple calendars defined on the same table, the above processes will be completed for **every** calendar defined on the table. This includes the above remark regarding the context clearing of time-related columns.
-In other words, assume a table defines 3 calendars: Calendar1, Calendar2, and Calendar3. If filter context is set on category "X" in Calendar1, the above processes will be performed on all three calendars.
+If there are multiple calendars defined on the same table, these processes are completed for **every** calendar defined on the table. This includes the remark regarding the context clearing of time-related columns.
+In other words, assume a table defines three calendars: Calendar1, Calendar2, and Calendar3. If filter context is set on category "X" in Calendar1, the above processes are performed on all three calendars.
 
 #### Example: Filter set on "Quarter"
 
@@ -453,13 +453,13 @@ createOrReplace
 ```
 
 > [!NOTE]
-> Notice that if you don't specify any category for the `calendarColumnGroup` in TMDL, the columns are tagged as [time-related](#time-related-columns). In the example above, **Holiday Name** and **isWorkingDay** are time-related columns on the **Demo Calendar**.
+> Notice that if you don't specify any category for the `calendarColumnGroup` in TMDL, the columns are tagged as [time-related](#time-related-columns). In this example, **Holiday Name** and **isWorkingDay** are time-related columns on the **Demo Calendar**.
 
 ### Putting it all together: examples of time shifting
 
 Some [time intelligence functions](/dax/time-intelligence-functions-dax) shift context only laterally, considering all columns, while others perform hierarchical shifts—keeping or clearing context based on whether columns are tagged in the calendar. The time intelligence functions can be divided into two groups based on whether they allow for hierarchical shifts:
 
-- **Fixed**. Functions in this group are [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax). These functions only allow lateral time shifts and do not return values from a different level of detail.
+- **Fixed**. Functions in this group are [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax). These functions only allow lateral time shifts and don't return values from a different level of detail.
 - **Flexible**. This group contains all other time intelligence functions. These functions do allow hierarchical time shifts and depending on the calendar setup can return results from a different level of detail.
 
 To show these behaviors, let's walk through an example using a simple data model consisting of two tables, two calendars and five measures.
@@ -474,18 +474,18 @@ For this example, we have the following simple data model:
 |Sales|OrderKey, Quantity, OrderDate|
 
 Here are some examples rows in the **Date** table:
-:::image type="content" source="media/desktop-time-intelligence/calendars-example-date-table-rows.png" alt-text="Screenshot showing the first 14 rows of the example Date table. The table defines Date, Year and IsWorkingDay. The Date column contains a date, the Year column the year value and the IsWorkingDay column is a boolean (True/False) column that indicates if the date is a working day or not." lightbox="media/desktop-time-intelligence/calendars-example-date-table-rows.png":::
+:::image type="content" source="media/desktop-time-intelligence/calendars-example-date-table-rows.png" alt-text="Screenshot showing the first 14 rows of the example Date table. The table defines Date, Year, and IsWorkingDay. The Date column contains a date, the Year column the year value, and the IsWorkingDay column is a boolean (True/False) column that indicates if the date is a working day or not." lightbox="media/desktop-time-intelligence/calendars-example-date-table-rows.png":::
 
 Here are some example rows in the **Sales** table:
-:::image type="content" source="media/desktop-time-intelligence/calendars-example-sales-table-rows.png" alt-text="Screenshot showing the first 9 rows of the example Sales table. The table defines OrderKey, OrderDate and Order Quantity. The OrderKey column contains a unique number for each sales order, the OrderDate is a date which relates Sales to Date and the Order Quantity is a numerical column which represents the number of products for each order." lightbox="media/desktop-time-intelligence/calendars-example-sales-table-rows.png":::
+:::image type="content" source="media/desktop-time-intelligence/calendars-example-sales-table-rows.png" alt-text="Screenshot showing the first nine rows of the example Sales table. The table defines OrderKey, OrderDate, and Order Quantity. The OrderKey column contains a unique number for each sales order, the OrderDate is a date that relates Sales to Date and the Order Quantity is a numerical column that represents the number of products for each order." lightbox="media/desktop-time-intelligence/calendars-example-sales-table-rows.png":::
 
 The Sales and Date tables are related on OrderDate and Date.
 
-:::image type="content" source="media/desktop-time-intelligence/calendars-example-data-model.png" alt-text="Screenshot showing the model view for the example model. It shows the Sales and Date table and a one to many relationship between them on OrderDate and Date." lightbox="media/desktop-time-intelligence/calendars-example-data-model.png":::
+:::image type="content" source="media/desktop-time-intelligence/calendars-example-data-model.png" alt-text="Screenshot showing the model view for the example model. It shows the Sales and Date table and a one-to-many relationship between them on OrderDate and Date." lightbox="media/desktop-time-intelligence/calendars-example-data-model.png":::
 
 #### Calendars
 
-On the **Date** table we defined calendars with these mappings:
+On the **Date** table, we defined calendars with these mappings:
 
 |CalendarName|Category|Primary Column|
 |--|--|--|
@@ -523,7 +523,7 @@ ref table Date
 
 #### Measures
 
-On the **Sales** table we define the following measures:
+On the **Sales** table, we define the following measures:
 
 ```dax
 Total Quantity = SUM ( 'Sales'[Order Quantity] )
@@ -550,13 +550,13 @@ Let's create a visual that shows Year, MonthOfYear, IsWorkingDay, Total Quantity
 
 All values for **OneYearAgoQuantity** and **OneYearAgoQuantityTimeRelated** for 2025 match the **Total Quantity** from exactly one year before (2024), for the same **IsWorkingDay** value.
 
-This shows that [DATEADD](/dax/dateadd-function-dax) will maintain the context on any column on the Date table that contains the calendar used regardless of if it is not tagged or if it is tagged as time-related on that calendar. Since in our [measure definitions](#measures) we instructed DATEADD to shift back by one **Year**, the only column whose context was shifted was the column associated with the Year category. Whether the **IsWorkingDay** column was tagged in the calendar as time-related or not tagged at all did not change the result. The only other function that exhibits this behavior is [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax).
+This shows that [DATEADD](/dax/dateadd-function-dax) maintains the context on any column on the Date table that contains the calendar used regardless of if it isn't tagged or if it's tagged as time-related on that calendar. Since in our [measure definitions](#measures) we instructed DATEADD to shift back by one **Year**, the only column whose context was shifted was the column associated with the Year category. Whether the **IsWorkingDay** column was tagged in the calendar as time-related or not tagged at all didn't change the result. The only other function that exhibits this behavior is [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax).
 
 #### Hierarchical shift example
 
 Now, let's look at an example in which whether a column is tagged as time-related or not does indeed change the result.
 
-For this, we are going to recreate the same visual as in the previous example, but this time we are going to use the FullLastYearQuantity and FullLastYearQuantityTimeRelated measures:
+For this, we're going to recreate the same visual as in the previous example, but this time we're going to use the FullLastYearQuantity and FullLastYearQuantityTimeRelated measures:
 :::image type="content" source="media/desktop-time-intelligence/calendars-example-hierarchical-shift.png" alt-text="Screenshot showing a table visual that shows Year, IsWorkingDay, Total Quantity, FullLastYearQuantity and FullLastYearQuantityTimeRelated. The values for FullLastYearQuantity 2025 match the values for 2024 for the same IsWorkingDay values, but the values for FullLastYearQuantityTimeRelated are equal to the total quantity value regardless of the IsWorkingDay values." lightbox="media/desktop-time-intelligence/calendars-example-hierarchical-shift.png":::
 
 This shows that [PARALLELPERIOD](/dax/parallelperiod-function-dax) preserves context for columns not tagged in the calendar but clears the context for those tagged as time-related. **FullLastYearQuantity** used the **Gregorian** calendar where IsWorkingDay wasn't tagged in the calendar, while **FullLastYearQuantityTimeRelated** used the **GregorianWithWorkingDay** calendar where IsWorkingDay was tagged as time-related. All time intelligence functions except DATEADD and SAMEPERIODLASTYEAR behave this way.
@@ -575,7 +575,7 @@ In this case, `FullLastYearQuantityTimeRelatedOverride` returns the same results
 The elaborate example above shows that different time intelligence functions behave differently depending on whether columns are tagged as time-related in the calendar. [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax) only perform lateral time shifts. All other [time intelligence functions](/dax/time-intelligence-functions-dax) allow hierarchical time shifts.
 
 ### Using DATEADD with calendars
-The [DATEADD](/dax/dateadd-function-dax) function has specific parameters that allow fine-grained control over how shifts are performed when the selection is on a more granular level than the shift level indicated by `interval` parameter in DATEADD. This happens for example if you are showing data on the date level but set the `interval` parameter to DATEADD to **MONTH**. For example, in a Gregorian calendar, when shifting a period that spans March 3 to 10 by a month will result in April 3 to 10. However, since months in Gregorian calendars vary in length, this can lead to ambiguities when shifting. Below are example scenarios based on a Gregorian calendar:
+The [DATEADD](/dax/dateadd-function-dax) function has specific parameters that allow fine-grained control over how shifts are performed when the selection is on a more granular level than the shift level indicated by `interval` parameter in DATEADD. This happens, for example,  if you're showing data on the date level but set the `interval` parameter to DATEADD to **MONTH**. For example, in a Gregorian calendar, when shifting a period that spans March 3 to 10 by a month will result in April 3 to 10. However, since months in Gregorian calendars vary in length, this can lead to ambiguities when shifting. Below are example scenarios based on a Gregorian calendar:
 
 #### Shifting from a shorter to a longer period
 For example, shifting forward one month with a selection in February, so the target month is March.
@@ -594,26 +594,26 @@ You can use the `truncation` parameter to influence how the shift is performed:
 |Truncation parameter value|Description|Result|
 |--|--|--|
 |`anchored`|Anchors the result to the last valid date of the smaller month.|March 31 is shifted to February 28 (or 29 in  leap year).|
-|`blank`|When a shifted date does not exist, return *blank* .|Shifting March 31 back one month returns *blank* (since February 31 does not exist).|
+|`blank`|When a shifted date doesn't exist, return *blank*.|Shifting March 31 back one month returns *blank* (since February 31 doesn't exist).|
 
 ### Considerations for working with calendar-based time-intelligence
 
 - Performing a time intelligence calculation on a fact table that defines a calendar and is subject to [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) rules and can lead to unexpected results.
 - Performance of this preview feature isn't representative of the end product.
-- You cannot author calendars in the Power BI Service yet.
-- You should not use [auto date/time](desktop-auto-date-time.md) tables with custom calendars.
-- You can't use calendars with Live connect, Direct Lake or composite models.
+- You can't author calendars in the Power BI Service yet.
+- You shouldn't use [auto date/time](desktop-auto-date-time.md) tables with custom calendars.
+- You can't use calendars with Live connect, Direct Lake, or composite models.
 - We recommend you associate only the columns in your calendar that you want to use in time intelligence calculations.
-- Calendars are subject to both [real-time](#real-time-validations) as well as [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
+- Calendars are subject to both [real-time](#real-time-validations) and [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 - Each calendar must have a unique name within the data model
 - A single table can contain multiple calendars
-- The table that contains the calendar must have less than 200 columns. If the table contains more than 20,000 rows the validations will not be available but you can still add a calendar.
+- The table that contains the calendar must have fewer than 200 columns. If the table contains more than 20,000 rows the validations won't be available but you can still add a calendar.
 - A calendar must at least assign one primary column to a category
 - A calendar can only assign columns from its own table to categories
 - Each category should have a primary column and can have zero or more associated columns assigned
-- [DATEADD has new parameters to control extension and extension behavior](/dax/dateadd-function-dax.md), which are not recognized in IntelliSense.
+- [DATEADD has new parameters to control extension and extension behavior](/dax/dateadd-function-dax.md), which aren't recognized in IntelliSense.
 - Any given column can be mapped to only one category
-- You cannot nest time intelligence functions that use calendars. For example, the following DAX statement is not supported:
+- You can't nest time intelligence functions that use calendars. For example, the following DAX statement isn't supported:
 
  ```dax
  ThisIsNotSupported = PREVIOUSDAY ( PREVIOUSMONTH( 'Calendar' ) )
