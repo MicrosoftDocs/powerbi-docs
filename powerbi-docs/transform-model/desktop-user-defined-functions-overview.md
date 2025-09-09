@@ -18,7 +18,7 @@ DAX user-defined functions (UDFs) let you package reusable, parameterized DAX lo
 
 ## Why use user-defined functions?
 
-- **Reusability  and consistency**: Define a calculation once and reuse it everywhere.
+- **Reusability and consistency**: Define a calculation once and reuse it everywhere.
 - **Maintainability**: Update logic in one place to fix or evolve rules.
 - **Safer authoring**: Optional type hints and type check helpers support predictable, error-resistant code.
 - **First-class model objects**: UDFs live in the model and can be viewed in Model Explorer.
