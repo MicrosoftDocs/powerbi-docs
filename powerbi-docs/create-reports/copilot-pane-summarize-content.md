@@ -36,7 +36,7 @@ Copilot summaries let you generate a concise summary of the report’s data in s
 Let’s begin with the report experience. Here, you’re inside of a Power BI Report that has access to Copilot. To get started, select the **Copilot** button in the ribbon in either Power BI Desktop or the Power BI service. In the service, the button is available in both edit mode and view mode.
 
 > [!TIP]
-> If you don't see Copilot, your admins likley didn't enable it, or you could be in a workspace that doesn't meet the Copilot requirements. 
+> If you don't see Copilot, your admins likely didn't enable it, or you could be in a workspace that doesn't meet the Copilot requirements. 
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-button-ribbon.png" alt-text="Screenshot showing select the Copilot button in the ribbon in either Power BI Desktop or the Power BI service." lightbox="media/copilot-pane-summarize-content/copilot-button-ribbon.png":::
 
@@ -131,7 +131,7 @@ Lastly, in the standalone experience, you are able to ask about report data behi
 
 :::image type="content" source="media/copilot-create-narrative/copilot-filtered-summary.png" alt-text="Screenshot of a filtered summary and hover icon in standalone experience." lightbox="media/copilot-create-narrative/copilot-filtered-summary.png":::
 
-You can see based on the description that the summary was filtered, but you can even hover over the filter icon and see that the Maui filter was applied to all the visuals I see in the response. You can click the **view in report** button in the standalone experience and be taken to the visual being referenced, with the appropriate filters applied. There are some filtering limiations which are noted below.
+You can see based on the description that the summary was filtered, but you can even hover over the filter icon and see that the Maui filter was applied to all the visuals I see in the response. You can click the **view in report** button in the standalone experience and be taken to the visual being referenced, with the appropriate filters applied. There are some filtering limitations which are noted below.
 
 ## Best practices
 
@@ -147,7 +147,7 @@ Copilot report summaries and answers are based on the report’s visualized data
 The quality of the results depends heavily on the amount of data and the clarity of labels. When Copilot resorts to sampling due to volume, accuracy may decrease. 
 
 > [!TIP]
-> If report summaries or answers are taking longer than you expect, you can look at the visuals being used, and how long they take to query.  This means that if crucial visuals important for answering questions are taking a long time to load, you can break the visuals up into smaller pieces to make them faster for Copilot.  Additionally, you can remove long running query time visuals if they are not important for Copilot to use.  You can see this information in the diagnostics available in the elipses menu.
+> If report summaries or answers are taking longer than you expect, you can look at the visuals being used, and how long they take to query.  This means that if crucial visuals important for answering questions are taking a long time to load, you can break the visuals up into smaller pieces to make them faster for Copilot.  Additionally, you can remove long running query time visuals if they are not important for Copilot to use.  You can see this information in the diagnostics available in the ellipses menu.
 >
 > :::image type="content" source="media/copilot-create-narrative/copilot-diagnostics-entry-point.png" alt-text="Screenshot showing the Copilot diagnostics entry point in standalone." lightbox="media/copilot-create-narrative/copilot-diagnostics-entry-point.png":::
 
