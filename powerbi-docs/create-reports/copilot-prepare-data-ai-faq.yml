@@ -204,7 +204,7 @@ sections:
 
           #### Known limitations 
 
-          - Indexing has an upper bound limit of 5 million instance values or 1,000 model entities (tables/columns) for large semantic models. 
+          - Indexing has an upper bound limit of five million instance values or 1,000 model entities (tables/columns) for large semantic models. 
           - Text values of 100+ characters aren't indexed.
           - Direct Query models only indexes columns for data sources that support `APPROXIMATEDISTINCTCOUNT`.
-          - Indexing for Direct Query and Direct Lake models occur once during a 24-hour time period unless the model is republished.
+          - Indexing for Direct Query and Direct Lake models occurs once during a 24-hour time period unless the model is republished.
