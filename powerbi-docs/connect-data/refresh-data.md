@@ -483,6 +483,20 @@ To stop a refresh, follow these steps:
 
     :::image type="content" source="media/refresh-data/cancel-refresh-window.png" alt-text="A screenshot of the cancel refresh pop-up window with the yes button highlighted.":::
 
+
+## Power BI Desktop refresh options
+
+:::image type="content" source="media/refresh-data/desktop-refresh-options.png" alt-text="Screenshot of Power BI Desktop Refresh options":::
+
+When you select **Refresh** in Power BI Desktop, it always performs a schema sync first, followed by a data refresh. While this behavior is convenient in most cases, there are scenarios where you may want to refresh the data without updating the model schema, even if the data source has changed its schema. For example, in Direct Lake semantic models, the underlying Lakehouse table might have changed (e.g., a new column added). You may want the latest data but prefer not to bring new columns into the model. 
+
+You can expand the **Refresh** button in both the Ribbon and the Data Pane to choose from the following options:
+
+* **Sync schema only** – Updates the semantic model to reflect the data source structure (e.g., column type changes or new columns).
+* **Refresh data only** – Loads fresh data while preserving the current schema in your semantic model.
+
+This added flexibility helps you manage your models refresh operations more intentionally, based on your specific needs. 
+
 ## Best practices
 
 Checking the refresh history of your semantic models regularly is one of the most important best practices you can adopt to ensure that your reports and dashboards use current data. If you discover issues, address them promptly and follow up with data source owners and gateway administrators if necessary.
