@@ -49,7 +49,7 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 
 * The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. WebView2 comes standard on recent Windows versions, but if you get an error when you try to use the add-in, you might need to install it manually. See [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md) for details.
 * The add-in currently supports Power BI report pages and visuals only. Other types of items such as dashboards and paginated reports aren't supported.
-* [Business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios aren't supported.
+* [Business-to-business (B2B)](/fabric/enterprise/powerbi/service-admin-entra-b2b) scenarios aren't supported.
 * The [add-in side pane options](./service-power-bi-powerpoint-add-in-view-present.md#add-in-side-pane) **Delete** and **Reload** are available only in the PowerPoint desktop application. This is because PowerPoint for the web doesn't support the add-in side menu.
 * **In sovereign clouds, the add-in is supported as an admin-managed add-in only**, as the Office add-in store isn't accessible from national/regional clouds. Admins should see [Deploy the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploy-the-add-in-in-nationalregional-clouds) for information about how to get and deploy the add-in.
 

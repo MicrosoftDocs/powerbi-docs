@@ -96,7 +96,7 @@ When a one-to-one _intra source group_ relationship exists between tables, we re
 
 The following steps present a methodology to consolidate and model the one-to-one related data.
 
-1. **Merge queries**: When [combining the two queries](../connect-data/desktop-shape-and-combine-data.md#combine-queries), give consideration to the completeness of data in each query. If one query contains a complete set of rows (like a master list), merge the other query with it. Set the merge transformation to use a _left outer join_, which is the default join type. This join type ensures you'll keep all rows of the first query, and supplement them with any matching rows of the second query. Expand all required columns of the second query into the first query.
+1. **Merge queries**: When [combining the two queries](../connect-data/desktop-shape-and-combine-data.md), give consideration to the completeness of data in each query. If one query contains a complete set of rows (like a master list), merge the other query with it. Set the merge transformation to use a _left outer join_, which is the default join type. This join type ensures you'll keep all rows of the first query, and supplement them with any matching rows of the second query. Expand all required columns of the second query into the first query.
 
     :::image type="content" source="media/relationships-one-to-one/product-to-product-category-consolidated.svg" alt-text="Diagram showing data consolidated to a single Product dimension table." border="false":::
 
