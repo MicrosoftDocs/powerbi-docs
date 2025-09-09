@@ -329,7 +329,7 @@ In this approach, you create duplicate identities for external consumers that be
 
 This approach is beneficial when:
 
-- [Limitations of Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md#considerations-and-limitations) prevent you from doing what you need to do. Examples of limitations of Microsoft Entra B2B for consumers include:
+- [Limitations of Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b#considerations-and-limitations) prevent you from doing what you need to do. Examples of limitations of Microsoft Entra B2B for consumers include:
   - External guest users might not be able to open files exported from reports that have a sensitivity label with protection settings.
   - External guest users can't use Power BI Desktop to connect to semantic models or dataflows that are in the Power BI service.
   - External guest users can't use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md#analyze-in-excel).
@@ -605,7 +605,7 @@ Consider using duplicate identities for external creators when:
 
 - External creators need to access other internal services, or they prefer to use a separate, internal account.
 - Organizational policies or administrator settings don't allow for business-to-business (B2B) sharing.
-- [Limitations of Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md#considerations-and-limitations) prevent you from doing what you need to do. Examples of limitations of Microsoft Entra B2B for creators include:
+- [Limitations of Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b#considerations-and-limitations) prevent you from doing what you need to do. Examples of limitations of Microsoft Entra B2B for creators include:
   - External guest users can't use Power BI Desktop to connect to semantic models or dataflows that are in the Power BI service and can't publish from Power BI Desktop.
   - External guest users can't set sensitivity labels.
   - External guest users can't install an on-premises data gateway.
