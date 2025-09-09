@@ -129,7 +129,7 @@ In this immersive experience, you can also dive deeper into the visuals provided
 
 Lastly, in the standalone experience, you are able to ask about report data behind filters and slicers, and get filtered answers and summaries back.  This is different from the report pane experience, but we will bring the filtering capability there soon.  Here is an example where I have asked Copilot specifically for a summary about Maui, rather than an overview.  
 
-:::image type="content" source="media/copilot-create-narrative/copilot-filtered-summary.png" alt-text="Screenshot a filtered summary and hover icon in standalone experience." lightbox="media/copilot-create-narrative/copilot-filtered-summary.png":::
+:::image type="content" source="media/copilot-create-narrative/copilot-filtered-summary.png" alt-text="Screenshot of a filtered summary and hover icon in standalone experience." lightbox="media/copilot-create-narrative/copilot-filtered-summary.png":::
 
 You can see based on the description that the summary was filtered, but you can even hover over the filter icon and see that the Maui filter was applied to all the visuals I see in the response. You can click the **view in report** button in the standalone experience and be taken to the visual being referenced, with the appropriate filters applied. There are some filtering limiations which are noted below.
 
@@ -157,7 +157,7 @@ The information we give is:
 1. The page the visual is located on
 1. The time in seconds it took to load/query the visual
 
-:::image type="content" source="media/copilot-create-narrative/copilot-diagnostic-timings.png" alt-text="Screenshot an example diagnostic file that showcases visual timings for Copilot queries." lightbox="media/copilot-create-narrative/copilot-diagnostic-timings.png":::
+:::image type="content" source="media/copilot-create-narrative/copilot-diagnostic-timings.png" alt-text="Screenshot of an example diagnostic file that showcases visual timings for Copilot queries." lightbox="media/copilot-create-narrative/copilot-diagnostic-timings.png":::
 
 ### Report composition
 
