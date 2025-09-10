@@ -54,7 +54,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: How to be sure that content is up to date
+          - text: Make sure your content is up to date
             url: end-user-fresh.md
           - text: Add comments to dashboards and reports
             url: end-user-comment.md
