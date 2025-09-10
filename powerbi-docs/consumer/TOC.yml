@@ -88,7 +88,6 @@
       href: paginated-reports-view-power-bi-service.md
     - name: "Interact with parameters"
       href: paginated-reports-view-parameters.md
-
   - name: Power BI mobile apps
     expanded: true
     items:
@@ -123,7 +122,7 @@
         - name: "Dashboards for mobile Power BI"
           href: mobile/mobile-apps-view-dashboard.md
         - name: "Reports in the mobile apps"
-          href: mobile/mobile-apps-reports-in-the-mobile-apps.md
+          href: mobile/mobile-reports-in-the-mobile-apps.md
         - name: "Use Copilot to generate summaries and insights"
           href: mobile/mobile-apps-copilot.md
         - name: "Work with org apps in the mobile apps"
