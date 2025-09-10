@@ -63,8 +63,6 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Power BI mobile apps documentation
-            url: mobile/
           - text: What are the Power BI mobile apps?
             url: mobile/mobile-apps-for-mobile-devices.md
           - text: View dashboards in the Power BI mobile apps
