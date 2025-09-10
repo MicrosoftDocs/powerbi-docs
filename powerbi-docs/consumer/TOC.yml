@@ -7,8 +7,6 @@
     items: 
     - name: "What is a Power BI business user?"
       href: end-user-consumer.md
-    - name: "Basic concepts and terminology for Power BI business users"
-      href: ../fundamentals/service-basic-concepts.md
     - name: "Take a tour of the Power BI service"
       href: end-user-reading-view.md     
   - name: Get started
@@ -231,19 +229,15 @@
       href: end-user-apps.md
     - name: "Install and use apps"
       href: end-user-app-view.md
-    - name: "Connect to services"
-      href: ../connect-data/service-connect-to-services.md
     - name: Get started with org apps (preview)
-      href: ./org-app-items/org-app-items.md
+      href: org-app-items/org-app-items.md
       displayName: apps, org apps, preview, distribution, sharing
     - name: Org apps and CI/CD
-      href: ./org-app-items/org-app-cicd.md
+      href: org-app-items/org-app-cicd.md
   - name: Ask questions of your data
     items:
     - name: "Q&A in Power BI"
       href: end-user-q-and-a.md
-    - name: "Q&A tutorial"
-      href: ../natural-language/end-user-q-and-a-tutorial.md
     - name: "Tips and tricks for asking questions with Q&A in Power BI"
       href: end-user-q-and-a-tips.md
   - name: Resources
@@ -252,7 +246,31 @@
       href: end-user-glossary.md
     - name: "Frequently asked questions"
       href: end-user-faq.yml
-    - name: "Supported browsers"
-      href: ../fundamentals/power-bi-browsers.md
     - name: "Types of Quick Insights"
       href: end-user-insight-types.md
+  - name: All Power BI documentation
+    expanded: true
+    items: 
+    - name: "Get started with Power BI"
+      href: ../fundamentals/index.yml
+    - name: "Copilot for Power BI"
+      href: ../create-reports/copilot-introduction.md
+    - name: "Collaborate and share"
+      href: ../collaborate-share/index.yml
+    - name: "Connect to data"
+      href: ../connect-data/index.yml
+    - name: "Create reports and dashboards"
+      href: ../create-reports/index.yml
+    - name: "Report Server"
+      href: ../report-server/index.yml
+    - name: "Transform, shape, and model data"
+      href: ../transform-model/index.yml  
+    - name: "Developer documentation"
+      href: ../developer/index.yml
+    - name: "Guidance and best practices"
+      href: ../guidance/index.yml
+    - name: "Self-service and support"
+      href: ../support/index.yml  
+    - name: "Troubleshoot"
+      href: ../troubleshoot/index.yml
+
