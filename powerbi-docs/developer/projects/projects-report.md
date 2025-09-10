@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/22/2025
+ms.date: 09/10/2025
 ---
 
 # Power BI Desktop project report folder
@@ -226,19 +226,21 @@ Some of the possible scenarios now available with PBIR include:
 - Easy find and replace across multiple reports files.
 - Apply a batch edit across all visuals using a script (for example, hide visual level filters)
 
-### Enable PBIR format Preview feature
+### Enable the PBIR format preview feature
 
 Saving as a Power BI reports using PBIR is currently in preview. Before using it, enable it in Power BI Desktop preview features:
 
 For Power BI Project (PBIP) files:
 
-Go to **File > Options and settings > Options > Preview features** and check the box next to **Store reports using enhanced metadata format (PBIR)**.
+1. Go to **File > Options and settings > Options > Preview features**.
+1. Select the **Store reports using enhanced metadata format (PBIR)** checkbox.
 
 For PBIX files:
 
-Go to **File > Options and settings > Options > Preview features** and check the box next to **Store PBIR reports using enhanced metadata format (PBIR)**.
+1. Go to **File > Options and settings > Options > Preview features**.
+1. Select the **Store PBIR reports using enhanced metadata format (PBIR)** checkbox.
 
-Enabling PBIR for PBIX ensures that the PBIR format is saved within PBIX files as well, not just in Power BI Project (PBIP) files.
+Enabling PBIR for PBIX ensures that the PBIR format is saved within PBIX files as well, not only in Power BI Project (PBIP) files.
 
 ### Save as a project using PBIR
 
@@ -438,7 +440,6 @@ PBIR is currently in **preview**. Keep the following in mind:
 - Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
 - [Visual automatic filters](../../create-reports/power-bi-report-filter-types.md#automatic-filters) are persisted to the PBIR `visual.json` file only after the filter pane has been expanded at least once while editing the report.
 
-
 PBIR size limitations enforced by the service:
 
 - 1,000 max pages per report.
@@ -448,11 +449,9 @@ PBIR size limitations enforced by the service:
 - 300-mb max size of all report files.
 
 > [!IMPORTANT]
-> If you reach the limits above, you should consider optimizing your report. See the [Power BI Optimization document](/power-bi/guidance/power-bi-optimization#power-bi-reports).
-
+> If you reach the limits above, you should consider optimizing your report. See the [Power BI Optimization document](../../guidance/power-bi-optimization.md#power-bi-reports).
 
 [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) export reports using the format currently applied in the service. If a report is created or imported into Fabric using the PBIR format, it will be exported in PBIR. Likewise, if a report is PBIR-Legacy, it will be exported in the PBIR-Legacy format. 
-
 
 ## Related content
 
