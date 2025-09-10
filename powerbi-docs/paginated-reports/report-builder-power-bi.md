@@ -1,6 +1,6 @@
 ---
 title: "Power BI Report Builder"
-description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service. Paginated reports are designed to be printed or shared. They're formatted to fit well on a page, and they display *all* the data in a table, even if the table spans multiple pages.
+description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service. You can print or share paginated reports by design. They're formatted to fit well on a page, and they display *all* the data in a table, even if the table spans multiple pages.
 author: JulCsc
 ms.author: juliacawthra
 ms.date: 09/10/2025
@@ -13,11 +13,11 @@ ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-Power BI Report Builder is a tool for authoring *paginated reports* that you can publish to the Power BI service. Paginated reports are designed to be printed or shared. They're formatted to fit well on a page, and they display *all* the data in a table, even if the table spans multiple pages.  When you design a paginated report, you're creating a *report definition* that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You preview your report in Report Builder, and then publish your report to the Power BI service. See [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md) for more background.
+Power BI Report Builder is a tool for authoring *paginated reports* that you can publish to the Power BI service. You can print or share paginated reports by design. They're formatted to fit well on a page, and they display *all* the data in a table, even if the table spans multiple pages. When you design a paginated report, you're creating a *report definition* that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You preview your report in Report Builder, and then publish your report to the Power BI service. See [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md) for more background.
 
 Ready to start authoring? [Install Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=105942) from the Microsoft Download Center.
 
-Prefer learning from videos? Check out the [Video-based course: Power BI Paginated Reports in a Day](paginated-reports-report-builder-power-bi.md).
+Prefer learning from videos? Check out the [Video-based course: Power BI Paginated Reports in a Day](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT&index=1).
 
 The following paginated report is a sample of an invoice. You can download it and other samples, such as letters, transcripts, and labels. Read more about [sample Power BI paginated reports](paginated-reports-samples.md).
 
@@ -75,7 +75,7 @@ Read about how to [get started with deployment pipelines](/fabric/cicd/deploymen
 
 ## Considerations and limitations
 
-You might not be able to configure Parameters as both "Multi-value" and "Allow null". "Multi value" and "Allow blank" is an allowed combination but Null is treated differently.
+You might not be able to configure Parameters as both "Multi-value" and "Allow null." "Multi value" and "Allow blank" is an allowed combination but Null is treated differently.
 
 ## Power BI Report Builder in a virtualized environment
 
@@ -85,6 +85,7 @@ Running Power BI Report Builder as a virtualized application (for example, as a 
 
 ## Related content
 
-- [Video-based course and What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
+- [Video-based course: Power BI Paginated Reports in a Day](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT&index=1)
 - [Keyboard shortcuts for accessibility in Report Builder](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)
