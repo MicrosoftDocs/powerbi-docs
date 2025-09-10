@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: JulCsc
   ms.author: juliacawthra
-  ms.date: 02/25/2020
+  ms.date: 09/10/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -74,7 +74,7 @@ landingContent:
           - text: "Data refresh"
             url: refresh-data.md
           - text: "Incremental refresh for semantic models"
-            url: ../connect-data/incremental-refresh-overview.md
+            url: incremental-refresh-overview.md
       - linkListType: how-to-guide
         links:
           - text: "Configure scheduled refresh"
