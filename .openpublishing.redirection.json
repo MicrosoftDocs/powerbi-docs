@@ -6824,6 +6824,11 @@
       "source_path": "powerbi-docs/consumer/end-user-drill.md",
       "redirect_url": "/power-bi/create-reports/desktop-drillthrough",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/index.yml",
+      "redirect_url": "/power-bi/consumer",
+      "redirect_document_id": false
     }
   ]
 }
