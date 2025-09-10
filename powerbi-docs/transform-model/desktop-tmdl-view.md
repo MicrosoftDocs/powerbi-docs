@@ -1,5 +1,5 @@
 ---
-title: Use Tabular Model Definition Language (TMDL) view in Power BI Desktop (preview)
+title: Use Tabular Model Definition Language (TMDL) view in Power BI Desktop
 description: Learn how to use TMDL view to see and work with semantic model metadata in a visual format in Power BI Desktop.
 author: JulCsc
 ms.author: juliacawthra
@@ -11,7 +11,7 @@ ms.date: 04/22/2025
 LocalizationGroup: Transform and shape data
 ---
 
-# Work with TMDL view in Power BI Desktop (preview)
+# Work with TMDL view in Power BI Desktop
 
 **TMDL view** lets you script, modify, and apply changes to semantic model objects with a modern code editor using [Tabular Model Definition Language (TMDL)](../developer/projects/projects-dataset.md) in Power BI Desktop, improving development efficiency and providing complete visibility and control over semantic model metadata. 
 
@@ -22,11 +22,6 @@ TMDL view offers the following advantages:
 * **Enhanced development efficiency** with a rich code editor that includes search-and-replace, keyboard shortcuts, multi-line edits and more. 
 * **Increase reusability** by easily scripting, sharing, and reusing TMDL scripts among semantic model developers. For example, use a centralized SharePoint site to easily share reusable semantic model objects such as calendar tables, or time intelligence calculation groups. 
 * **Gain more control and transparency**, showing all semantic model objects and properties, and allowing changes to items not available in the Power BI Desktop user interface, such as *[IsAvailableInMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx)* or *[DetailRowsDefinition](/dotnet/api/microsoft.analysisservices.tabular.measure.detailrowsdefinition)*.  
-
-
-## Enable preview feature
-
-To use **TMDL view**, you must enable the preview feature. In Power BI Desktop select **File > Options and settings > Options > Preview features** and select the box next to **TMDL View**. 
 
 ## Script to TMDL
 
@@ -285,12 +280,9 @@ createOrReplace
 
 ## Considerations and limitations
 
-TMDL view is currently in preview, so keep the following limitations in mind:
-
 * You can use the TMDL view to edit any object or property within a semantic model. However, incomplete or incorrect modifications may lead to unexpected behavior. For more guidance on these operations, refer to the [Model Authoring article](../developer/projects/projects-overview.md#model-authoring).
 * The *Command palette* displays some commands that aren't currently supported.
 * Setting up the *initial* Git integration *from* the workspace won't include TMDL View scripts saved in published semantic model. Learn more in the [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo) article.
-* You can't script model explorer groups such as Measures, Columns, so on.
 
 
 ## Related content
