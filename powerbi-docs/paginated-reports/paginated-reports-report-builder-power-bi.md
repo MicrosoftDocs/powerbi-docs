@@ -15,7 +15,7 @@ ms.date: 09/09/2025
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-*Paginated reports* are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service.
+You can print or share *Paginated reports* by design. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service.
 
 Here are some quick links if you're ready to get started:
 
@@ -107,13 +107,13 @@ Read about how to [get started with deployment pipelines](/fabric/cicd/deploymen
 
 ## Embed Power BI paginated reports
 
-With Power BI embedded analytics, you can create Power BI content that displays paginated reports in a fully integrated and interactive application. You can embed paginated reports either for your customers or for your organization. See [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md) for more information.
+With Power BI embedded analytics, you can create Power BI content that displays paginated reports in a fully integrated and interactive application. You can embed paginated reports either for your customers or for your organization. For more information, see [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md).
 
 ## Considerations and limitations
 
 Here are some other features that aren't supported:
 
-- Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server prior to the September 2022 release or SQL Server Reporting Services 2022 release report server. See [Pin Reporting Services items to Power BI dashboards](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information on this discontinued feature.
+- Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server prior to the September 2022 release or SQL Server Reporting Services 2022 release report server. For more information on this discontinued feature, see [Pin Reporting Services items to Power BI dashboards](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
 - Document maps. They don't render in the Power BI service, but they do when you export a report.
 - Shared data sources and shared datasets.
 - Data-driven subscriptions for paginated reports in the Power BI service.
