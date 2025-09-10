@@ -480,7 +480,7 @@ To stop a refresh, follow these steps:
 
 ## Power BI Desktop refresh options
 
-:::image type="content" source="media/refresh-data/desktop-refresh-options.png" alt-text="Screenshot of Power BI Desktop Refresh options":::
+:::image type="content" source="media/refresh-data/desktop-refresh-options.png" alt-text="Screenshot of Power BI Desktop Refresh options.":::
 
 When you select **Refresh** in Power BI Desktop, it always performs a schema sync first, followed by a data refresh. While this behavior is convenient in most cases, there are scenarios where you may want to refresh the data without updating the model schema, even if the data source has changed its schema. For example, in Direct Lake semantic models, the underlying Lakehouse table might have changed (such as a new column being added). You may want the latest data but prefer not to bring new columns into the model. 
 
