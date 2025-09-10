@@ -88,6 +88,118 @@
       href: paginated-reports-view-power-bi-service.md
     - name: "Interact with parameters"
       href: paginated-reports-view-parameters.md
+
+  - name: Power BI mobile apps
+    expanded: true
+    items:
+    - name: Overview
+      items: 
+      - name: "What are the mobile apps?"
+        href: mobile/mobile-apps-for-mobile-devices.md
+      - name: "What's new in the mobile apps"
+        href: mobile/mobile-whats-new-in-the-mobile-apps.md
+      - name: "Meet the home page"
+        href: mobile/mobile-apps-home-page.md
+    - name: Quickstarts
+      items:
+      - name: "Explore dashboards and reports"
+        href: mobile/mobile-apps-quickstart-view-dashboard-report.md
+    - name: Tutorials
+      items: 
+      - name: "Ask questions in the iOS mobile apps"
+        href: mobile/tutorial-mobile-apps-ios-qna.md
+    - name: Concepts
+      items: 
+      - name: "Get real-world data with the mobile apps"
+        href: mobile/mobile-apps-data-in-real-world-context.md
+      - name: "View your data offline in the mobile apps"
+        href: mobile/mobile-apps-offline-data.md
+    - name: How to
+      items: 
+      - name: All mobile apps
+        items:
+        - name: "Download samples in the Power BI service"
+          href: mobile/mobile-apps-download-samples.md
+        - name: "Dashboards for mobile Power BI"
+          href: mobile/mobile-apps-view-dashboard.md
+        - name: "Reports in the mobile apps"
+          href: mobile/mobile-apps-reports-in-the-mobile-apps.md
+        - name: "Use Copilot to generate summaries and insights"
+          href: mobile/mobile-apps-copilot.md
+        - name: "Work with org apps in the mobile apps"
+          href: mobile/mobile-apps-org-apps.md
+        - name: "Work with metrics"
+          href: mobile/mobile-apps-metrics.md
+        - name: "Interact with tiles in the mobile apps"
+          href: mobile/mobile-tiles-in-the-mobile-apps.md
+        - name: "Share a dashboard from the Power BI mobile apps"
+          href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+        - name: "Favorites in the mobile apps"
+          href: mobile/mobile-apps-favorites.md
+        - name: "Set data alerts in the Power BI mobile apps"
+          href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
+        - name: "Get notifications in the Power BI mobile apps"
+          href: mobile/mobile-apps-notification-center.md
+        - name: "Create a deep link that goes to a specific location"
+          href: mobile/mobile-apps-deep-link-specific-location.md
+        - name: "Connect data to locations with NFC tags"
+          href: mobile/mobile-apps-nfc-tags.md
+        - name: "Filter a report by location in the Power BI mobile apps"
+          href: mobile/mobile-apps-geographic-filtering.md
+        - name: "Dark mode"
+          href: mobile/mobile-apps-dark-mode.md
+      - name: iOS and Android
+        items: 
+        - name: "Admin: Configuration using mobile device management"
+          href: mobile/mobile-app-configuration.md
+        - name: "Admin: Shared device mode"
+          href: mobile/mobile-app-shared-device-mode.md
+        - name: "View reports optimized for your phone"
+          href: mobile/mobile-apps-view-phone-report.md
+        - name: "View on-premises reports in the mobile apps"
+          href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+        - name: "Work with semantic models"
+          href: mobile/mobile-apps-dataset-refresh.md
+        - name: "Set up a launch item"
+          href: mobile/mobile-apps-launch-item.md
+        - name: "Protect with Face ID, Touch ID, Passcode or Fingerprint ID"
+          href: mobile/mobile-native-secure-access.md
+        - name: "Access content from an external organization (B2B)"
+          href: mobile/mobile-apps-b2b.md
+        - name: "Scan QR codes to open reports and tiles"
+          href: mobile/mobile-apps-qr-code.md
+        - name: "Scan barcodes to open filtered reports"
+          href: mobile/mobile-apps-scan-barcode.md
+        - name: "Annotate and share in the mobile apps"
+          href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+        - name: "Configure interaction settings"
+          href: mobile/mobile-app-interaction-settings.md
+        - name: "Work side by side with other apps"
+          href: mobile/mobile-apps-split-screen.md
+      - name: iOS
+        items: 
+        - name: "Get started with the iOS app"
+          href: mobile/mobile-iphone-app-get-started.md
+        - name: "Q&A virtual analyst in iOS mobile apps"
+          href: mobile/mobile-apps-ios-qna.md       
+        - name: "Power BI mobile app integration with Siri Shortcuts"
+          href: mobile/mobile-apps-iOS-siri-Shortcuts.md
+        - name: "iOS device search integration"
+          href: mobile/mobile-apps-iOS-search-integration.md
+        - name: "Power BI Apple Watch app"
+          href: mobile/mobile-apple-watch.md
+      - name: Android devices
+        items: 
+        - name: "Get started with the Android app"
+          href: mobile/mobile-android-app-get-started.md
+        - name: "Use Android app Shortcuts"
+          href: mobile/mobile-app-quick-access-shortcuts.md
+        - name: "Fixing 'Your corporate SSL certificate is untrusted'"
+          href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+    - name: Resources
+      items: 
+      - name: "Supported languages in the mobile apps"
+        href: mobile/mobile-apps-supported-languages.md
   - name: Power BI in Teams
     items: 
     - name: "Use data for productive meetings"

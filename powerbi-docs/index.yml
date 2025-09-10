@@ -248,10 +248,7 @@ conceptualContent:
             - url: /power-bi/consumer/mobile/mobile-apps-for-mobile-devices
               itemType: learn
               text: Get data on the go with the mobile apps
-          # footerLink (optional)
-          footerLink:
-            url: consumer/mobile/index.yml
-            text: See all mobile apps docs
+
     - title: Additional Power BI resources # < 60 chars (Optional; Remove if not applicable.)
       items:
         # Card
