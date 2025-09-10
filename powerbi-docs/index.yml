@@ -80,17 +80,17 @@ conceptualContent:
             url: fundamentals/index.yml
             text: See all getting started docs
         # Card
-        - title: Copilot in Power BI (preview)
+        - title: Copilot in Power BI
           links:
             - url: create-reports/copilot-introduction.md
               itemType: concept
               text: Copilot for Power BI overview
             - url: create-reports/copilot-evaluate-data.md
               itemType: concept
-              text: Update your data model to work with Copilot (preview)
+              text: Update your data model to work with Copilot
             - url: create-reports/copilot-create-report-service.md
               itemType: tutorial
-              text: Create report pages with Copilot for Power BI (preview)
+              text: Create report pages with Copilot for Power BI
           # footerLink (optional)
           footerLink:
             url: /fabric/get-started/copilot-fabric-overview?toc=/power-bi/create-reports/breadcrumb/toc.yml
