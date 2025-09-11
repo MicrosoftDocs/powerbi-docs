@@ -63,7 +63,7 @@ And we see in our previous map visualization that we have stores in North Caroli
 ?filter=Store/Territory eq 'NC'
 ```
 
-:::image type="content" source="media/service-url-filters/power-bi-filter-urls7.png" alt-text="Screenshot of the report URL with a filter for North Carolina added the.":::
+:::image type="content" source="media/service-url-filters/power-bi-filter-urls7.png" alt-text="Screenshot of the report URL with a filter for North Carolina added.":::
 
 Our report is now filtered for North Carolina; all the visualizations in the report show data for only North Carolina.
 
