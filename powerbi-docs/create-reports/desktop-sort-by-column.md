@@ -92,6 +92,10 @@ Go to the menu and select **SalesQuantity** again, the visual defaults to being 
 With so many options for sorting your visuals, creating just the chart or image you want is easy.
 --->
 
+## Considerations
+
+* If a column sorted by another is marked as a key column, its sort order is ignored and defaults are used.
+  
 ## Related content
 
 You might also be interested in the following articles:
