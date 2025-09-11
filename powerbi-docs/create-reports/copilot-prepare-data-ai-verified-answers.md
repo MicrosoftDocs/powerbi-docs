@@ -62,7 +62,7 @@ To set a verified answer, follow these steps:
    1. Select the **filter** icon.
       - Verified answers support up to 10 filters that users can adjust using natural language in their prompt.
    1. Select **Available to users** and apply any desired filters.
-      - The **available to users** filter section allows end users to slice and dice without needing a new verified answer for every visual + filter combination. 
+      - The **Available to users** filter section allows end users to slice and dice without needing a new verified answer for every visual + filter combination. 
 
    The benefit of this filter experience is that you can use one centralized, base verified answer and allow end users to slice and dice without needing a new verified answer for every visual + filter combination.
 
@@ -83,6 +83,14 @@ To set a verified answer, follow these steps:
      - **Filter limitations**:
        - Existing hardcoded values (for example, Region = North) can't be overridden.
        - User prompts can only invoke 3 filters on a verified answer at a time
+
+For a filter to appear in the Available to users section, it must already exist in the report. This can be at the visual, page, or report level. In addition, the filter must not have a specific value applied.
+
+For example:
+- If a region filter has no selection (or shows "All"), it will appear under Available to users.
+- If the region filter is set to Northwest, it will not appear in Available to users but will instead show under Applied to this visual.
+
+Note: Slicers are not carried over into verified answers and do not appear as filter options. Additionally, filters will be eligible as they are set.  For example, advanced filters carry over as advanced filters, and basic filters carry over as advanced filters.  Please see supported filter types above.
 
    > [!NOTE]
    > To review existing filters that affect the visual, select **Applied to this visual** during setup.
@@ -262,7 +270,7 @@ Filters can be tricky—here are some common questions we hear:
      - They have no values applied: Filters must be set to "All" in the report to be available in the verified answer experience. (Tip: If a filter is missing, check the "applied to this visual" section in the UI. If it appears there, it is not eligible until its values are cleared in the report.)
      - They're a supported filter type:
      - All basic, categorical filters
-     - The following advanced categorical filters: startsWith, contains, >, <, >=, <=
+     - The following advanced categorical filters: startsWith, contains, =, /=, >, <, >=, <=
      - Date range filters (NOT relative date filters, such as YTD (year to date), last three months, next five years, etc.) (Supported = between Jan 2024 and July 2025, before 3/4/2025, etc.)
      - There are no more than 10 filters already selected: Verified answers support a maximum of 10 filters during creation, and three at a time in consumption.
 
