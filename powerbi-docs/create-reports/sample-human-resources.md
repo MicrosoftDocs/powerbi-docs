@@ -68,7 +68,7 @@ If you want to view the data source for this sample, it's also available as an E
 
 If you want to get and use the Excel file in the Power BI service, follow these steps:
 
-1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *IT Spend Analysis Sample-no-PV.xlsx*.
+1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Human Resources Sample-no-PV.xlsx*.
 
 1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
 

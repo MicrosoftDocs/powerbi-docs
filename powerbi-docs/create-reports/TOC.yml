@@ -32,8 +32,6 @@
       href: sample-artificial-intelligence.md
     - name: COVID-19 US sample
       href: sample-covid-19-us.md
-    - name: Power BI Release Plan report
-      href: ../connect-data/service-connect-to-power-bi-release-plan.md
     - name: Customer Profitability sample
       href: sample-customer-profitability.md
     - name: Corporate Spend sample
@@ -64,7 +62,7 @@
       href: sample-sales-returns.md
     - name: Supplier Quality Analysis sample
       href: sample-supplier-quality.md
-    - name: Download the Financial Sample workbook
+    - name: Financial workbook sample
       href: sample-financial-download.md
   - name: Power BI reports
     items: 
