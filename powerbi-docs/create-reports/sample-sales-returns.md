@@ -21,7 +21,7 @@ This sample report is based on a fictional company that sells Microsoft-themed s
 
 :::image type="content" source="media/sample-datasets/sales-returns-sample-pbix.png" alt-text="Screenshot of the Sales and Returns sample report in Power BI that shows a *.pbix* file." lightbox="media/sample-datasets/sales-returns-sample-pbix.png" border="true":::
 
-## Get the Sales and returns sample report
+## Get the Sales and Returns sample report
 
 To get the report:
 
@@ -31,16 +31,16 @@ To get the report:
 
 This sample works best with Power BI Desktop, the Power BI service, and mobile devices.
 
-## Key features of the sales and returns sample report 
+## Key features of the Sales and Returns sample report 
 
 This report demonstrates several advanced Power BI capabilities:
 
-- **Custom visuals** from AppSource are integrated with native visuals.
-- **Power Apps visuals** are embedded directly in the report.
-- **Animated tooltips** guide users through interactive elements.
-- **Design best practices** focus on layout, accessibility, and cross-platform usability.
+- **Custom visuals** from AppSource are integrated with native visuals
+- **Power Apps visuals** are embedded directly in the report
+- **Animated tooltips** guide users through interactive elements
+- **Design best practices** focus on layout, accessibility, and cross-platform usability
 
-## Sales and returns sample report structure
+## Sales and Returns sample report structure
 
 The report includes five main pages, each with a specific analytical focus:
 
