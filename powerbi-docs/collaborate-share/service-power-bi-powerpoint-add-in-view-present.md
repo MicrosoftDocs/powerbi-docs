@@ -3,7 +3,7 @@ title: View and Present Live Power BI Data in PowerPoint
 description: Learn how to work with live Power BI data in PowerPoint.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 03/31/2025
+ms.date: 09/11/2025
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
@@ -21,7 +21,7 @@ As soon as you add a live Power BI report page or visual to PowerPoint, you can 
 | [Style options](#add-styles-to-your-presentation) | [Add-in options](#add-in-options) | [Expand/collapse toolbar](#expandcollapse-toolbar) |
 | [Add-in side menu](#add-in-side-pane) | N/A | N/A |
 
-## Understanding what you see
+## Understand what you see
 
 In the add-in, you see:
 
@@ -106,9 +106,12 @@ Every time you open your presentation, the report page or visual reloads into th
 
 The menu allows you to set the view to live data or to a snapshot (you can also switch views with [keyboard shortcuts](#keyboard-shortcuts)). Two snapshot options provide you with some control over who is able to see the Power BI content in the snapshot:
 
-- **Snapshot**: When you choose Snapshot, only users who have permissions to view the report in Power BI are able see the static image of the Power BI content. Users who don't have permissions are able to request access. This option helps keep you from inadvertently showing Power BI content to unauthorized users.
+- **Snapshot**: When you choose **Snapshot**, only users who have permissions to view the report in Power BI are able see the static image of the Power BI content. Users who don't have permissions are able to request access. This option helps keep you from inadvertently showing Power BI content to unauthorized users.
+- **Public snapshot**: If you choose **Public snapshot**, anyone who can view the presentation to be able to see the static image of the Power BI content, regardless of their permissions in Power BI.
+- **Image**: If you choose to **Show as a saved image**, you can save the add-in as an image that anyone with permissions to the presentation can view. This settings offers better image quality than the public snapshot.
 
-- **Public snapshot**: If you choose Public snapshot, anyone who can view the presentation to be able to see the static image of the Power BI content, regardless of their permissions in Power BI.
+  > [!IMPORTANT]
+  > We recommend using the **Public snapshot** option because.....[text to come from Maya]
 
 To restore the interactive view, select **Live data**. The live report page or visual will reload in the state it was last in, but with the latest data from Power BI.
 
