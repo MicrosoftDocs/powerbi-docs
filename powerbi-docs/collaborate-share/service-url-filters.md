@@ -7,7 +7,7 @@ ms.reviewer: 'kayu'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 07/16/2024
+ms.date: 09/11/2025
 ms.topic: how-to
 LocalizationGroup: Reports
 ---
