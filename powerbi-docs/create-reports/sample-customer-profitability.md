@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/01/2023
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
