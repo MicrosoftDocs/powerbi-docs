@@ -103,7 +103,7 @@
     - name: "Add live data to PowerPoint"
       href: service-power-bi-powerpoint-add-in-install.md
     - name: "Manage add-ins with the Power BI Controller (preview)"
-      href: storytelling-power-bi-controller.md
+      href: storytelling-powerbi-controller.md
     - name: "View and present live data in PowerPoint"
       href: service-power-bi-powerpoint-add-in-view-present.md
     - name: "Annotate your embedded Power BI visuals"
