@@ -32,7 +32,7 @@ With parameters, you can filter the report for one or more values, even if those
 
 *URL*?filter=*Table*/*Field* eq '*value*'
 
-:::image type="content" source="media/service-url-filters/power-bi-filter-urls7b.png" alt-text="Screenshot of URL with filter.":::
+:::image type="content" source="media/service-url-filters/power-bi-filter-urls7b.png" alt-text="Screenshot of URL with a filter.":::
 
 - **Table** and **Field** names are case-sensitive; **value** isn't.
 - Fields that are hidden from report view can still be filtered.
@@ -49,13 +49,13 @@ Field type can be a number, datetime, or string and the type used must match the
 - **Numbers** require no special formatting. See [Numeric data types](#numeric-data-types) in this article for details.
 - **Dates and times** See [Date data types](#date-data-types) in this article. 
 
-If it's still confusing, continue reading and we'll break it down. 
+If it's still confusing, continue reading while we break it down.
 
 ## Filter on a field
 
 Let’s assume that the URL to our report is the following.
 
-:::image type="content" source="media/service-url-filters/power-bi-filter-urls6.png" alt-text="Screenshot of starting URL.":::
+:::image type="content" source="media/service-url-filters/power-bi-filter-urls6.png" alt-text="Screenshot of the starting URL for the report.":::
 
 And we see in our previous map visualization that we have stores in North Carolina. *NC* is the value that represents North Carolina in the **Territory** field of the **Store** table. So to filter the report to show data only for stores in "NC", we append this string to the URL:
 
@@ -63,11 +63,11 @@ And we see in our previous map visualization that we have stores in North Caroli
 ?filter=Store/Territory eq 'NC'
 ```
 
-:::image type="content" source="media/service-url-filters/power-bi-filter-urls7.png" alt-text="Screenshot of U R L with filter for North Carolina.":::
+:::image type="content" source="media/service-url-filters/power-bi-filter-urls7.png" alt-text="Screenshot of the report URL with a filter for North Carolina added the.":::
 
 Our report is now filtered for North Carolina; all the visualizations in the report show data for only North Carolina.
 
-:::image type="content" source="media/service-url-filters/power-bi-url-filter-nc.png" alt-text="Screenshot of Report filtered for North Carolina.":::
+:::image type="content" source="media/service-url-filters/power-bi-url-filter-nc.png" alt-text="Screenshot of the Report in Power BI filtered for North Carolina.":::
 
 ## Filter on more than one value in a field
 
@@ -154,16 +154,16 @@ Special characters, spaces, and leading numbers in table and column names requir
 |**2TableName**|2 is x0032|\_x0032\_TableName|
 
 Table\_x0020\_Name/Column\_x002B\_Plus eq 3
-:::image type="content" source="media/service-url-filters/power-bi-special-characters1.png" alt-text="[Screenshot of table visual rendering special characters for Unicode.":::
+:::image type="content" source="media/service-url-filters/power-bi-special-characters1.png" alt-text="Screenshot of table visual rendering special characters for Unicode.":::
 
 Table\_x0020\_Special/\_x005B\_Column\_x0020\_Brackets\_x005D\_ eq '[C]'
-:::image type="content" source="media/service-url-filters/power-bi-special-characters2.png" alt-text="[Screenshot of table visual rendering special characters for coding for Power B I.":::
+:::image type="content" source="media/service-url-filters/power-bi-special-characters2.png" alt-text="Screenshot of table visual rendering special characters for coding for Power BI.":::
 
 ### Special characters in values
 
 URL filters support most special characters in field values, but some also require *escape codes*. For example, to search for a single quote character, use two single quotes (''). 
 
-- `?filter=Table/Name eq 'O''Brien'` becomes: 
+- `?filter=Table/Name eq 'O''Brien'` becomes:
 
     :::image type="content" source="media/service-url-filters/power-bi-url-filter-obrien.png" alt-text="Name is O'Brien":::
 
