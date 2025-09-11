@@ -1,23 +1,23 @@
 ---
-title: DAX query view
+title: DAX Query View
 description: Learn how to use DAX query view to evaluate your DAX queries.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 05/14/2024
+ms.topic: concept-article
+ms.date: 09/11/2025
 LocalizationGroup: Create reports
 ---
 
 # Work with DAX query view
 
-With DAX query view in Power BI, you can view and work with Data Analysis Expressions (DAX) queries on semantic models. 
+With DAX query view in Power BI, you can view and work with Data Analysis Expressions (DAX) queries on semantic models.
 
 ## DAX queries
 
-In Power BI, DAX *formulas* are used to define different types of calculations for your data, and can also be used to define role security. DAX *queries*, on the other hand, can be used to return data from the model.
+In Power BI, DAX *formulas* are used to define different types of calculations for your data and can also be used to define role security. DAX *queries*, on the other hand, can be used to return data from the model.
 
 DAX queries are similar to SQL queries in that they can show you data you already have. DAX queries don't create items in the model or visuals in the report.
 
@@ -34,7 +34,7 @@ In Power BI Desktop, select the **DAX Query View** icon on the left side.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-icon.png" alt-text="Screenshot of the DAX query view icon in Power BI Desktop." lightbox="media/dax-query-view/dax-query-view-icon.png":::
 
-In the Power BI service or Fabric portal workspace, choose **Write DAX queries** from the context menu. 
+In the Power BI service or Fabric portal workspace, choose **Write DAX queries** from the context menu.
 
 :::image type="content" source="media/dax-query-view/write-dax-queries-web-from-context-menu.png" alt-text="Screenshot of the Write DAX queries entry point in the context menu of a semantic model." lightbox="media/dax-query-view/write-dax-queries-web-from-context-menu.png":::
 
@@ -58,17 +58,17 @@ The DAX query view ribbon has common actions used when writing DAX queries.
 
 Let's take a closer look at elements in the ribbon:
 
-#### Format query
+#### Format
 
-Select the **Format query** ribbon button or use SHIFT+ALT+F to format the current query. The query is indented with tabs. DAX functions are changed to UPPERCASE, and extra lines are added. Formatting your DAX query is considered a best practice and improves the DAX query readability. The formatting also indents in such a way that you can collapse and expand sections of the query.
+Select the **Format** ribbon button or use SHIFT+ALT+F to format the current query. The query is indented with tabs. DAX functions are changed to UPPERCASE, and extra lines are added. Formatting your DAX query is considered a best practice and improves the DAX query readability. The formatting also indents in such a way that you can collapse and expand sections of the query.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-format-query.png" alt-text="Screenshot of the Format query button." lightbox="media/dax-query-view/dax-query-view-format-query.png" :::
+:::image type="content" source="media/dax-query-view/dax-query-view-format-query.png" alt-text="Screenshot of the Format button." lightbox="media/dax-query-view/dax-query-view-format-query.png" :::
 
 #### Comment and Uncomment
 
-Select the **Comment** ribbon button to add a double backslash (**//**) to the beginning of the line where the cursor is or all the selected lines. This action comments out the lines and when the DAX query is run, those lines are ignored.
+Select the **Comment** ribbon button to add a double backslash (**//**) to the beginning of the line where the cursor is or all the selected lines. This action comments out the lines. When the DAX query is run, those lines are ignored.
 
-Select the **Uncomment** ribbon button to remove **//** at the beginning of any line where the cursor is, or all the selected lines. It doesn't work on lines where multiple line comment notation is added.
+Select the **Uncomment** ribbon button to remove **//** at the beginning of any line where the cursor is or all the selected lines. It doesn't work on lines where multiple line comment notation is added.
 
 You can also use CTRL+/ to toggle between comment and uncomment.
 
@@ -92,9 +92,10 @@ Select the **Command palette** ribbon button or use CTRL+ALT+P to open the comma
 
 ### Command bar
 
-The DAX query view command bar includes the most important actions when using DAX query view. 
+The DAX query view command bar includes the most important actions when using DAX query view.
 
 #### Run and Cancel
+
 The **Run** button executes the DAX query or the selected lines of a query. The status of a query after it runs appears in the lower status bar.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-command-bar.png" alt-text="Screenshot of the DAX query view command bar." lightbox="media/dax-query-view/dax-query-view-command-bar.png" :::
@@ -133,9 +134,9 @@ Selecting on a measure in an EVALUATE statement in a query without a DEFINE stat
 
 #### Update model measures using CodeLens  
 
-Using **DEFINE MEASURE** is helpful when creating measures by first allowing you to create them as DAX query scoped measures. You can edit multiple measures in one window and then run the query to see the results of all or just some of them with specific group by columns. You don't need to create a table visual in Report view and switch back and forth between measure formulas. CodeLens takes this one step further by providing prompts when the measure already exists in the model. These offer quick links to add the measure or overwrite the measure in the model.
+Using **DEFINE MEASURE** is helpful when creating measures by first allowing you to create them as DAX query scoped measures. You can edit multiple measures in one window, and then run the query to see the results of all or just some of them with specific group by columns. You don't need to create a table visual in Report view and switch back and forth between measure formulas. CodeLens takes this one step further by providing prompts when the measure already exists in the model. These offer quick links to add the measure or overwrite the measure in the model.
 
-CodeLens is the clickable text that shows above a DEFINE MEASURE block. For DAX query scoped measures that aren't already present in the model, the **Update model: Add new measure** CodeLens appears, which adds the model measure when clicked. For DAX query scoped measures that are already present in the model, and when the DAX scoped measure DAX formula is different, the **Update model: Overwrite measure** CodeLens appears, which changes the model measure to this DAX formula when clicked.
+CodeLens is the clickable text that shows above a DEFINE MEASURE block. For DAX query scoped measures that aren't already present in the model, the **Update model: Add new measure** CodeLens appears, which adds the model measure when clicked. For DAX query scoped measures that are already present in the model, and when the DAX scoped measure DAX formula is different, the **Update model: Overwrite measure** CodeLens appears. This changes the model measure to this DAX formula when clicked.
 
 Alternatively, you can add or overwrite multiple measures at once by clicking the **Update model with changes** button in the **Command** bar.
 
@@ -145,10 +146,10 @@ Alternatively, you can add or overwrite multiple measures at once by clicking th
 
 The lightbulb quick actions and CodeLens can be used together in a complete workflow:
 
-1. In the context menu of a measure, choose Quick queries, then Evaluate to have the query created for you in a new Query tab.
+1. In the context menu of a measure, choose Quick queries, and then Evaluate to have the query created for you in a new Query tab.
 1. Select the measure in the query to Define or Define with references, adding the DEFINE statement.
-1. Make DAX formula updates to the measure, then run the DAX query to see the results.
-1. When the change appears as expected, then use the CodeLens Update model: Overwrite measure to save it back to the model.
+1. Make DAX formula updates to the measure, and then run the DAX query to see the results.
+1. When the change appears as expected, use the CodeLens Update model: Overwrite measure to save it back to the model.
 
 Here's a more visual way to understand the workflow:
 
@@ -194,7 +195,7 @@ DAX query view query tabs are saved in the file when you save from Power BI Desk
 
 Currently, you can't view or edit the DAX queries previously added in Power BI Desktop in the Power BI service. Viewers of the report or semantic model don't see the DAX queries saved with the semantic model.
 
-DAX query view tabs are discarded on close when you **Write DAX queries** from the Power BI service or Fabric portal. 
+DAX query view tabs are discarded on close when you **Write DAX queries** from the Power BI service or Fabric portal.
 
 ### Data pane
 
@@ -248,34 +249,35 @@ The **Data** pane context menu includes **Quick queries**. Use quick queries to 
 
 Visuals in Report view get data from the model by creating a DAX query. The visual query can be viewed in DAX query view by using Performance Analyzer. Performance Analyzer can give you insight into why a visual may be showing an unexpected value or simply as a way to quickly start a query you can further modify.
 
-In **Report view**, go to the **Optimize** ribbon, then select **Performance Analyzer**. Select **Start recording**, then **Refresh visuals**. In the table below, expand a visual to see options to copy query or run in DAX query view. Selecting on **Run** in DAX query view takes the visual query, adds it as a new Query tab in DAX query view, and then runs it.
+In **Report view**, go to the **Optimize** ribbon, and then select **Performance Analyzer**. Select **Start recording**, and then **Refresh visuals**. In the table below, expand a visual to see options to copy query or run in DAX query view. Selecting on **Run** in DAX query view takes the visual query, adds it as a new Query tab in DAX query view, and then runs it.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-performance-analyzer.png" alt-text="Screenshot of the visual DAX queries in Performance Analyzer feature." lightbox="media/dax-query-view/dax-query-view-performance-analyzer.png":::
 
 ## DAX query view and live connect in Power BI Desktop
 
-Power BI Desktop can live connect to a published Power BI semantic model by clicking **Connect** when a semantic model is selected in the OneLake data hub. In the lower right-hand corner of the Report view will show **Live connected to the Power BI semantic model**. DAX query view can be used to write DAX queries when live connected.
+Power BI Desktop can live connect to a published Power BI semantic model by clicking **Connect** when a semantic model is selected in the OneLake data hub. The lower right-hand corner of the Report view will show **Live connected to the Power BI semantic model**. DAX query view can be used to write DAX queries when live connected.
 
 ### Model measures
 
-When live connected to a published Power BI semantic model, you can't view or edit model measures. **Quick queries** options are limited to only **Evaluate**. 
+When live connected to a published Power BI semantic model, you can't view or edit model measures. **Quick queries** options are limited to only **Evaluate**.
 
 ### Report measures
 
-When live connected to a published Power BI semantic model, you can create report measures. Report measures can be created using the **New measure** action in **Report** and **Model** view, but as the name suggests, are only available in the current report. Once created, the **Quick queries** in DAX query view shows the option to **Define with references and evaluate**. DAX queries run on the semantic model, so report measures must always be converted to DAX query scoped measures in the DEFINE MEASURE block to run, as they don't exists in the model itself. 
+When live connected to a published Power BI semantic model, you can create report measures. Report measures can be created using the **New measure** action in **Report** and **Model** view, but as the name suggests, are only available in the current report. Once created, the **Quick queries** in DAX query view shows the option to **Define with references and evaluate**. DAX queries run on the semantic model, so report measures must always be converted to DAX query scoped measures in the DEFINE MEASURE block to run, as they don't exists in the model itself.
 
-**Update model with changes** button and CodeLens options to **Update model** are not available for report measures.
+**Update model with changes** button and CodeLens options to **Update model** aren't available for report measures.
 
 ## DAX query view in web
 
 **Write DAX queries** from published semantic models use DAX query view in the web. DAX query view in the web is the same experience in Power BI Desktop, with a couple of exceptions.
 
-- **User can edit data models in the Power BI service (preview)** Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models).
-- **DAX queries are discarded on close.** DAX queries in Power BI Desktop save to the model and a semantic model may have DAX queries already saved in the model. DAX query view in the web currently won't display any previously saved DAX queries that may exist in the semantic model, and queries created in the web are not kept after you close the browser.
-- **Write DAX queries requires write permission on the semantic model.** Workspace viewers have to use Power BI Desktop with live connection to the semantic model to write DAX queries.
+- **User can edit data models in the Power BI service (preview)**: Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models).
+- **DAX queries are discarded on close**: DAX queries in Power BI Desktop save to the model and a semantic model may have DAX queries already saved in the model. DAX query view in the web currently won't display any previously saved DAX queries that may exist in the semantic model, and queries created in the web aren't kept after you close the browser.
+- **Write DAX queries requires write permission on the semantic model**: Workspace viewers have to use Power BI Desktop with live connection to the semantic model to write DAX queries.
 
 ### Link sharing of a query
-A DAX query added as a parameter using ?query= after the URL linking to DAX query view in the web is no longer supported. 
+
+A DAX query added as a parameter using ?query= after the URL linking to DAX query view in the web is no longer supported.
 
 ## Considerations and limitations
 
@@ -287,13 +289,14 @@ Considerations to keep in mind:
 - Result grid won't show columns and measures with specified format, such as Currency, Whole number with thousands, etc.
 - Setting up the *initial* Git integration *from* the workspace won't include DAX queries saved in published semantic model. Learn more at [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
 
-And there are some limitations to keep in mind:
+There are some limitations to keep in mind:
 
-- Maximum of 15MB of data per query. Once 15MB is exceeded, the current row completes but no additional rows are written.
+- Maximum of 15MB of data per query. Once 15MB is exceeded, the current row completes, but no additional rows are written.
 - Maximum of 1,000,000 values per query. If you query for 20 columns, you can get back max 50,000 rows (1 million divided by 20).
 - Define all measures in this table or model is unavailable when there are more than 500 measures.
 
  Running DAX queries in the web has additional limitaitons:
+
 - Maximum of 99,999 rows are returned per query.
 - Write permission on the semantic model. Viewers with build permission can use Power BI Desktop to live connect and use DAX query view to run DAX queries.
 - Only available for non-default semantic models. You can use Power BI Desktop to live connect to the default semantic model and use DAX query view to run DAX queries.
@@ -301,7 +304,7 @@ And there are some limitations to keep in mind:
   > [!NOTE]
   > [!INCLUDE [default-semantic-model-retirement](~/../fabric-repo/docs/includes/default-semantic-model-retirement.md)]
 
-- **User can edit data models in the Power BI service (preview)** Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models)
+- **User can edit data models in the Power BI service (preview)**: Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models)
 
 ## Related content
 
