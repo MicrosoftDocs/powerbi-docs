@@ -68,8 +68,6 @@ Use binning to right-size the data that Power BI Desktop displays. You can set t
 
 To see binning in action, take a look at this [video](https://www.youtube.com/watch?v=BRvdZSfO0DY).
 
-And that's all there is, to use grouping and binning to ensure the visuals in your reports show your data just the way you want them to.
-
 ## Related content
 
 You might also be interested in the following articles:
