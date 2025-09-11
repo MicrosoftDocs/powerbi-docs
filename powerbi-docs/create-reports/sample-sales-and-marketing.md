@@ -12,9 +12,6 @@ LocalizationGroup: Samples
 ---
 # Sales and Marketing sample for Power BI: Take a tour
 
-> [!NOTE]
-> For an updated version of this sample, see [Competitive Marketing Analysis: Take a tour](sample-competitive-marketing-analysis.md).
-
 The Sales and Marketing sample contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. The VanArsdel Chief Marketing Officer (CMO) created this dashboard to keep an eye on the industry and the company's market share, product volume, sales, and sentiment.
 
 VanArsdel has many competitors but is the market leader in its industry. The CMO wants to increase market share and discover growth opportunities. However, for unknown reasons, VanArsdel's market share has started to decline, with significant dips in June.
@@ -86,7 +83,7 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 1. Select a workspace, such as **My workspace**, and choose **Export**.
 
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md).
 
 1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 

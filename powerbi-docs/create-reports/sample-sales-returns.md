@@ -54,5 +54,5 @@ Additional hidden pages support tooltips and interactive elements.
 
 ## Related content
 
-- [Power BI sample datasets](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets)
+- [Power BI sample datasets](sample-datasets.md)
 - [Tutorial: Explore a Power BI sample](sample-tutorial-connect-to-the-samples.md)

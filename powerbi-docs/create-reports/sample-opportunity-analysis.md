@@ -13,9 +13,6 @@ LocalizationGroup: Samples
 
 # Opportunity Analysis sample for Power BI: Take a tour
 
-> [!NOTE]
-> For an updated version of this sample, see [Revenue Opportunities sample for Power BI: Take a tour](sample-revenue-opportunities.md).
-
 The Opportunity Analysis built-in sample contains a dashboard, report, and semantic model for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 
 This sample relies on two measures of revenue:
@@ -102,7 +99,7 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 1. Select a workspace, such as **My workspace**, and choose **Export**.
 
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md).
 
 1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 

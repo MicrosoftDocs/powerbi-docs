@@ -12,9 +12,6 @@ LocalizationGroup: Samples
 ---
 # Human Resources sample for Power BI: Take a tour
 
-> [!NOTE]
-> For an updated version of this sample, see [Employee Hiring and History: Take a tour](sample-employee-hiring-history.md).
-
 The Human Resources built-in sample contains a dashboard, report, and semantic model for a human resources department. In this sample, the human resources department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who have left. It strives to uncover any trends in the hiring strategy. The main objectives are to understand:
 
 - Who you hire
@@ -77,7 +74,7 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 1. Select a workspace, such as **My workspace**, and choose **Export**.
 
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-semantic models.md#explore-excel-samples-in-excel).
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md).
 
 1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 
