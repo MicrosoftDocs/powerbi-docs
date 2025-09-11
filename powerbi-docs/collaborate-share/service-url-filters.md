@@ -1,6 +1,6 @@
 ---
 title: Filter a report using query string parameters in the URL
-description: Learn how to filter a report using URL query string parameters. Including, filtering on more than one field.
+description: Learn how to filter a report using URL query string parameters, including filtering on more than one field.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: 'kayu'
