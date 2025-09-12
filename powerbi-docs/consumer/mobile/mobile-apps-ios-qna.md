@@ -29,7 +29,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Prerequisites
 
 * **Install the Power BI for iOS app**: [Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062) to your iPhone or iPad.
-* **Download the Retail Analysis and Opportunity Analysis Samples**: The first step in this quickstart is to download the Retail Analysis and Opportunity Analysis samples into your account in the Power BI service. See [Install built-in samples](../../create-reports/sample-datasets.md#install-built-in-samples) for instructions. Be sure to choose the Retail Analysis Sample and the Opportunity Analysis Sample.
+* **Download the Retail Analysis and Opportunity Analysis Samples**: The first step in this quickstart is to download the Retail Analysis and Opportunity Analysis samples into your account in the Power BI service. See [Install built-in samples](../../create-reports/sample-retail-analysis.md) for instructions. Be sure to choose the Retail Analysis Sample and the Opportunity Analysis Sample.
 
 Once you've completed the prerequisites you are ready to try the Q&A virtual analyst.
 

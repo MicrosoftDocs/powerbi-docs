@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/24/2025
+ms.date: 09/12/2025
 LocalizationGroup: Data refresh
 ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
@@ -388,7 +388,7 @@ Significant use of dashboard tiles or premium caching can increase refresh durat
 
 The data and query cache phases are independent of each other, but run in sequence. The data refresh runs first, and when that succeeds, the query cache refresh runs. If the data refresh fails, the query refresh is not initiated. It's possible that the data refresh can run successfully, but the query cache refresh fails.
 
-Refreshes made using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) won't show attempt details in the **Refresh history** window.
+A refresh initiated via the public [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) appears in the Power BI **Refresh history** window only if it successfully completes all stages and retrieves new data from the data source.
 
 > [!NOTE]
 > You can enhance monitoring with workspace monitoring. For more information, see [What is workspace monitoring?](/fabric/fundamentals/workspace-monitoring-overview)
