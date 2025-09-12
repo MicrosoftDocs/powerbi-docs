@@ -7,13 +7,10 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 06/23/2023
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
-
-> [!NOTE]
-> For an updated version of this sample, see [Store Sales sample for Power BI: Take a tour](sample-store-sales.md).
 
 The Retail Analysis built-in sample contains a dashboard, report, and semantic model that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, variance, and new-store analysis.
 
@@ -71,7 +68,7 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 1. Select a workspace, such as **My workspace**, and choose **Export**.
 
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md).
 
 1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 
