@@ -41,7 +41,7 @@ Some samples are available as Power BI *.pbix* files. The *.pbix* files are desi
 
 Each of the built-in samples is also available as an Excel workbook. The Excel workbooks are designed to be used as a data source in the Power BI service or Power BI Desktop. If you're an advanced Excel user, you can explore or edit the data models in the Power Pivot add-in to Excel.
 
-1. Select a **.xlsx** link from the table to download the sample file.
+1. Select an **.xlsx** link from the table to download the sample file.
 1. You can use the files as data sources in Power BI Desktop, or Publish to Power BI from Excel to the Power BI service.
 1. In the Power BI service (`app.powerbi.com`), navigate to **My workspace** or to another workspace of your choice.
 1. In the upper-left corner of the workspace, select **Upload**, then select one of the sources.
@@ -53,7 +53,7 @@ The following table includes some of the samples available to help you explore t
 
 | Downloadable sample | Description |
 |---|---|
-| **Artificial Intelligence** sample<br> [.pbix](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%Reports/Artificial%Intelligence%Sample.pbix) | Demonstrates AI-powered visuals and cognitive insights to surface patterns, predictions, and natural-language summaries from data. [Learn more about the Artificial Intelligence sample](sample-artificial-intelligence.md). |
+| **Artificial Intelligence** sample<br> [.pbix](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Artificial%20Intelligence%20Sample.pbix) | Demonstrates AI-powered visuals and cognitive insights to surface patterns, predictions, and natural-language summaries from data. [Learn more about the Artificial Intelligence sample](sample-artificial-intelligence.md). |
 | **COVID-19 US** sample<br> [.pbit](https://github.com/microsoft/powerbi-desktop-samples/blob/main/powerbi-service-samples/COVID-19%20US%20Tracking%20Sample.pbit) | Tracks COVID-19 cases, testing, and trends across US geographies with time-series charts and maps for outbreak analysis. [Learn more about the COVID-19 US sample](sample-covid-19-us.md). |
 | **Customer Profitability** sample<br> [.pbix](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix), [.xlsx](https://github.com/microsoft/powerbi-desktop-samples/blob/main/powerbi-service-samples/Customer%20Profitability%20Sample-no-PV.xlsx) | Analyzes revenue, costs, and customer segments to identify high- and low-profit customers and lifetime value. [Learn more about the Customer Profitability sample](sample-customer-profitability.md). |
 | **Corporate Spend** sample<br> [.pbix](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix) | Provides insight into corporate expenditures by category, department, and vendor to support spend optimization. [Learn more about the Corporate Spend sample](sample-corporate-spend.md). |
@@ -70,7 +70,7 @@ The following table includes some of the samples available to help you explore t
 | **Sales and Marketing** sample<br> [.pbix](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), [.xlsx](https://github.com/microsoft/powerbi-desktop-samples/blob/main/powerbi-service-samples/Sales%20and%20Marketing%20Sample-no-PV.xlsx) | Blends sales and marketing data to measure campaign affect on pipeline, conversions, and revenue. [Learn more about the Sales and Marketing sample](sample-sales-and-marketing.md). |
 | **Sales and Returns** sample<br> [.pbix](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix) | Demonstrates features like buttons, drillthrough, conditional formatting, what-if, and customized tooltips. [Learn more about the Sales and Returns sample](sample-sales-returns.md). |
 | **Supplier Quality Analysis** sample<br> [.pbix](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), [.xlsx](https://github.com/microsoft/powerbi-desktop-samples/blob/main/powerbi-service-samples/Supplier%20Quality%20Analysis%20Sample-no-PV.xlsx) | Monitors supplier quality metrics, defects, and compliance to drive supplier performance improvements. [Learn more about the Supplier Quality Analysis sample](sample-supplier-quality.md). |
-| **Financial Excel Workbook** sample<br> [.xslx](https://go.microsoft.com/fwlink/?LinkID=521962) | Provides a downloadable financial workbook that demonstrates financial statements, KPIs, and sample reports for finance scenarios. [Learn more about the Financial Excel Workbook sample](sample-financial-download.md). |
+| **Financial Excel Workbook** sample<br> [.xlsx](https://go.microsoft.com/fwlink/?LinkID=521962) | Provides a downloadable financial workbook that demonstrates financial statements, KPIs, and sample reports for finance scenarios. [Learn more about the Financial Excel Workbook sample](sample-financial-download.md). |
 
 ## Legal guidelines for using samples
 

@@ -208,7 +208,7 @@ This report page provides a different slice of the data. It looks at gross margi
 
 ### Executive Scorecard page
 
-This page has a custom page size format, optimized for display on a mobile device..
+This page has a custom page size format, optimized for display on a mobile device.
 
 ## Dig into the data by asking questions with Q&A
 
