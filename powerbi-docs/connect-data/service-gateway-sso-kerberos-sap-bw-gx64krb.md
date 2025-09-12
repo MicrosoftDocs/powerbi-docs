@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 10/17/2024
 LocalizationGroup: Gateways
+ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to configure Kerberos for single sign-on to SAP BW using the gx64krb5 library so that I can securely access SAP BW data from the Power BI service without needing to re-enter credentials.
 ---
 

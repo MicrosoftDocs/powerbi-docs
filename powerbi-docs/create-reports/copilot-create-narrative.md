@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/20/2024
+ms.date: 06/30/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -74,6 +74,21 @@ If you're not signed in to Power BI Desktop, you still see the Copilot entry poi
     :::image type="content" source="media/copilot-create-narrative/highlighted-referenced-visual.png" alt-text="Screenshot showing highlighted visual." lightbox="media/copilot-create-narrative/highlighted-referenced-visual.png":::
 
     You can switch back and forth between the previous "smart narrative" visual and the new narrative visual with Copilot by selecting the icon next to the title. The summary content isn't lost when you switch back and forth. Switching may help, as you can't yet edit the body of the Copilot summary. For control over the generated summary, use custom prompts to specify tone or formatting, direct the summary to specific portions of the report, or clarify requests. You can copy and paste it into the smart narrative body for more involved editing.
+
+## Embed the narrative visual
+
+The narrative visual with Copilot is supported in "embed for your organization" scenarios where the user owns the data and in secure embed scenarios.
+
+There are a few embedded scenarios. Only two are supported at this time. This chart makes it clear which scenarios are supported with the Copilot narrative visual.
+
+|Scenario |Supported |
+|---------|---------|
+|[**Embed a report in a secure portal or website**](../collaborate-share/service-embed-secure.md) Power BI. | Yes |
+|**Embed in a Sharepoint Site** A user embeds a report containing the narrative visual as a Power BI web part in a SharePoint site. Users must authenticate. [Embed in a SharePoint site](../collaborate-share/service-embed-report-spo.md?tabs=net-core). | Yes |
+|**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in. They need a license to sign in. This action is also known as [embed for your organization](../developer/embedded/embed-sample-for-your-organization.md?tabs=net-core). *Note: This scenario does NOT include embedding in PowerPoint at this time* | Yes |
+|**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as [embed for your customer's application](../developer/embedded/embed-sample-for-customers.md?tabs=net-core). | No |
+
+Follow the instructions here to set up Power BI embed and begin embedding your content for your organization: [Set up Power BI Embedded](../developer/embedded/register-app.md?tabs=customers).
 
 ## Save the report
 

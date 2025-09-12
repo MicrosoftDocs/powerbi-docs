@@ -3,13 +3,13 @@ title: Add a live Power BI report page to PowerPoint
 description: Learn how to install the Power BI PowerPoint add-in in a PowerPoint slide.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: mayabendov
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 07/01/2024
+ms.date: 09/10/2025
 ---
 
 # Add live Power BI data to PowerPoint
@@ -39,10 +39,10 @@ Decide how you want to load your data and follow the procedure in one of followi
 Add the report or visual to a new PowerPoint presentation with the following method:
 1. Go to the report or visual.
 1. Make any changes or select filters that you want to the data before you add it to a new PowerPoint presentation.
-1. Select **Share** the live data is a report.
+1. Select **Share** if the live data is a report.
 1. Or, if the live data is in a visual, select **More options (...)** then **Share**.
 1. When you add a report:
-    1. Specify what users can access the content as described in the [sharing reports documentation](service-share-dashboards.md#share-a-report-via-link).
+    1. Specify what users can access the content as described in the [sharing reports documentation](service-share-dashboards.md).
     1. Check the **Include my changes** box if you want to add the data in its current state.
     1. Select **Apply**.
 1. Choose **Open in PowerPoint**.
@@ -65,13 +65,18 @@ Add the report or visual to a new PowerPoint presentation with the following met
 
 ## Add live Power BI data to an existing presentation
 
+Use the Power BI add-in to insert live report pages or individual visuals into an existing presentation. You can let the add-in suggest relevant content based on the slide title, paste a report or visual URL directly, or convert a direct link into a shareable link so viewers can see the report without requesting access. Inserted content remains connected to Power BI and reflects the report's current state for viewers who have the required permissions.
+
+> [!TIP]
+> To optimize your presentation's performance, try to use no more than 25 Power BI add-ins.
+
 ### Use the content recommended by the Power BI add-in
 
 1. On the slide you want to add live content, type the title of the slide. The title should include the name of the report you wish to add.
 1. select **Add-Ins** from the top ribbon.
 1. Select the Power BI add-in. 
 1. The add-in then automatically scans the title of your slide then suggests Power BI content that might be relevant under the *Recommended* section. 
-    
+
     For example, if the title of your slide is "New stores sales," the add-in shows you a list of Power BI reports that contain those keywords. The add-in also shows you reports you recently visited in Power BI, so you can easily access reports you’re working on or frequently use.
 
     :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/suggested-content.gif" alt-text="Screenshot showing suggest content for the Power BI add-in for PowerPoint.":::
@@ -91,8 +96,7 @@ Add the report or visual to a new PowerPoint presentation with the following met
 > [!NOTE]
 > If the report you want to add doesn’t appear in the list of recommended content, use the  [Use the direct URL to add live data to a presentation](#use-the-direct-url-to-add-live-data-to-a-presentation) method.
 
-
-## Use the direct URL to add live data to a presentation
+### Use the direct URL to add live data to a presentation
 
 If you want to add a live report page to your presentation with a URL, there are three ways to get the report page URL, you can get the URL from the **Share** option, **Export** option, or directly from the browser's address bar.
 
@@ -109,7 +113,7 @@ Use the following procedure to add live data to a presentation with a URL:
     1. Select **Apply**.
 
         :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/send-link-dialog.png" alt-text="Screenshot of Power BI report send link dialog.":::
-    
+
     1. Copy the URL.
 1. Or, if you use a visual:
     1. Select **More options (...)**.

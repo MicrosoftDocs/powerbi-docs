@@ -10,6 +10,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
 LocalizationGroup: Share your work
 ms.date: 02/25/2025
+ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user I want to show notifications in the Power BI activity feed.
 ---
 

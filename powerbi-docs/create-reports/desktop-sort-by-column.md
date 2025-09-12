@@ -92,10 +92,14 @@ Go to the menu and select **SalesQuantity** again, the visual defaults to being 
 With so many options for sorting your visuals, creating just the chart or image you want is easy.
 --->
 
+## Considerations
+
+* If a column sorted by another is marked as a key column, its sort order is ignored and defaults are used.
+  
 ## Related content
 
 You might also be interested in the following articles:
 
 * [Change how a chart is sorted in a Power BI report](../consumer/end-user-change-sort.md)
-* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Use cross-report drillthrough in Power BI Desktop](desktop-drillthrough.md)
 * [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)

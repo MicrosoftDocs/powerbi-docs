@@ -91,8 +91,6 @@
       href: dataflows/dataflows-azure-data-lake-storage-integration.md       
     - name: "Premium features of dataflows"
       href: dataflows/dataflows-premium-features.md      
-    - name: "Use Machine Learning and Cognitive Services with dataflows"
-      href: dataflows/dataflows-machine-learning-integration.md  
     - name: "Dataflows best practices"
       href: ./dataflows/dataflows-best-practices.md  
     - name: "Understanding and optimizing dataflow refresh"
@@ -134,9 +132,7 @@
     - name: Transform and shape data
       items: 
       - name: "Combine files (binaries)"
-        href: desktop-combine-binaries.md
-      - name: "Use AI Insights"
-        href: desktop-ai-insights.md        
+        href: desktop-combine-binaries.md     
     - name: Model your data
       items: 
       - name: "Create quick measures for common calculations"
@@ -161,6 +157,8 @@
         href: desktop-measures.md
       - name: "Import and display KPIs"
         href: desktop-import-and-display-kpis.md
+      - name: "Set and use date tables"
+        href: desktop-date-tables.md
       - name: "Apply auto date/time"
         href: desktop-auto-date-time.md   
   - name: External tools

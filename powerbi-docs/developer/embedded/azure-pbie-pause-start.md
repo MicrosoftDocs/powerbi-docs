@@ -10,6 +10,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 01/19/2025
+ms.custom: sfi-image-nochange
 #customer intent: As a Power BI Embedded capacity admin, I want to learn how to pause and start my capacity in the Azure portal to prevent billing when the capacity isn't needed.
 ---
 

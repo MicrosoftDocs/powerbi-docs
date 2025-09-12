@@ -9,7 +9,7 @@ ms.date: 12/09/2020
 ms.custom: include file
 ---
 
-To get the client ID GUID (also know as *application ID*), follow these steps:
+To get the client ID GUID (also known as *application ID*), follow these steps:
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 

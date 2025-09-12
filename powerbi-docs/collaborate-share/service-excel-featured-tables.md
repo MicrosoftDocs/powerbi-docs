@@ -9,6 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 03/06/2023
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 
 # Access Power BI featured tables in Excel organization data types

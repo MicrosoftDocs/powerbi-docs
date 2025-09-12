@@ -7,8 +7,10 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.custom: fabric-cat
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - sfi-image-nochange
 ---
 
 # Power BI implementation planning: Report consumer security planning
@@ -248,7 +250,7 @@ There are three specific types of sharing: sharing links, direct access sharing,
 
 #### Per-item permission links
 
-When you share an individual item, the default experience results in a [sharing link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link). There are three types of sharing links.
+When you share an individual item, the default experience results in a [sharing link](../collaborate-share/service-share-dashboards.md). There are three types of sharing links.
 
 - **People in your organization**: When enabled in your Fabric tenant settings, this type of sharing link is a straightforward way to provide read-only access to everyone within the organization. However, the sharing link won't work for external users. This option is best suited to when anyone can view the content, and the link can be freely shared throughout the organization. Unless it's disabled by the _Allow shareable links to grant access to everyone in your organization_ tenant setting, this type of sharing is the default.
 - **People with existing access**: This option doesn't create a new sharing link. Rather, it allows you to retrieve the URL so you can send it to someone who already has access.

@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/30/2024
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 #customer intent: As a semantic model owner, I want to manage access permissions to my semantic model so that I can ensure the security and proper access control of sensitive data.
 ---
 # Manage semantic model access permissions (preview)
@@ -79,5 +80,5 @@ The shared report links tab lists [links that have been created to shared report
 * [Semantic model permissions](./service-datasets-permissions.md)
 * [Share access to a semantic model](./service-datasets-share.md)
 * [Use semantic models across workspaces](./service-datasets-across-workspaces.md)
-* [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
+* [Share a report via link](../collaborate-share/service-share-dashboards.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

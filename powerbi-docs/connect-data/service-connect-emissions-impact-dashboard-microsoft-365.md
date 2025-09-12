@@ -9,6 +9,9 @@ ms.topic: how-to
 ms.date: 12/03/2024
 LocalizationGroup: Connect to services
 no-loc: [Copilot]
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # Connect to the Emissions Impact Dashboard for Microsoft 365
@@ -151,10 +154,6 @@ If you choose to export data from the **GHG Preparation Report** tab, use the fo
 |Quarter|String|The quarter in which the active usage is being reported.|Qtr1|
 |Month|String|The month in which the active usage is being reported.|January|
 |Microsoft 365 active users|Integer|Count of unique active users across the [Microsoft 365 apps currently included in the report](#included-microsoft-365-applications). If a given user has usage of multiple applications, they're only counted once.|5000|
-
-## Accessing the data via the Cloud for Sustainability API (preview)
-
-The same underlying data that powers the Emissions Impact Dashboard for Microsoft 365 can be accessed programmatically through the Cloud for Sustainability API (preview). [Learn more here](/industry/sustainability/api-overview).
 
 ## Additional resources
 

@@ -16,7 +16,7 @@ ms.date: 10/12/2024
 
 When a visual has a hierarchy, you can allow users to use the Power BI drill-down feature to reveal more details.
 
-Read more about the Power BI drill-down feature at [Drill mode in the Power BI service](./../../consumer/end-user-drill.md).
+Read more about the Power BI drill-down feature at [Drill mode in the Power BI service](./../../create-reports/desktop-drillthrough.md).
 To allows the visual to enable or disable the drill feature dynamically, see [Dynamic drill-down control](./dynamic-drill-down.md).
 
 ## Enable drill-down support in the visual

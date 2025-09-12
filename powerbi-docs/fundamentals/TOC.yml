@@ -1,74 +1,53 @@
-﻿- name: "Get started with Power BI - documentation"
+- name: Get started with Power BI - documentation
   href: index.yml
-  expanded: true
   items:
-  - name: Overview
-    expanded: true
-    items: 
-    - name: "What is Power BI?"
+    - name: What is Power BI?
       href: power-bi-overview.md
-    - name: "What is Power BI Desktop?"
-      href: desktop-what-is-desktop.md
-    - name: "What is the Power BI service?"
-      href: power-bi-service-overview.md
-    - name: "Comparing Power BI Desktop and the service"
-      href: service-service-vs-desktop.md
-    - name: "Comparing Fabric and the Power BI service"
-      href: fabric-power-bi.md
-  - name: Tutorials
-    expanded: true
-    items: 
-    - name: "Get started with Power BI Desktop"
-      href: desktop-getting-started.md
-    - name: Sign up or purchase a license for Power BI
-      href: service-self-service-signup-for-power-bi.md
-    - name: "Get started with the Power BI service"
-      href: service-get-started.md
-    - name: "Get started with Microsoft Fabric and Power BI"
-      href: fabric-get-started.md      
-  - name: Concepts
-    expanded: true
-    items: 
-    - name: "What's new in the latest Power BI update?"
-      href: desktop-latest-update.md
-    - name: "The new experience in the Power BI service"
-      href: service-experience-changes.md
-    - name: "Basics of Power BI service"
-      href: service-basic-concepts.md
-    - name: "Ten tips for getting help"
-      href: ../support/service-tips-for-finding-help.md
-    - name: Licensing
-      items: 
-      - name: "Sign up or purchase Power BI as an individual"
-        href: service-self-service-signup-purchase-for-power-bi.md         
-      - name: "Features by license type"
-        href: service-features-license-type.md
-      - name: "Get help purchasing or signing up for Power BI"
-        href: service-self-service-sign-up-help.md 
-    - name: Security
-      items: 
-      - name: Security baseline
-        href: /security/benchmark/azure/baselines/power-bi-security-baseline?toc=/power-bi/fundamentals/toc.json
-  - name: How-to guides
-    expanded: true
-    items: 
-    - name: "Get Power BI Desktop"
+    - name: Get Power BI Desktop
       href: desktop-get-the-desktop.md
-  - name: Reference
-    items:
-    - name: "Supported languages and countries/regions"
-      href: supported-languages-countries-regions.md
-    - name: "Supported browsers"
-      href: power-bi-browsers.md
-  - name: Resources
-    items:
-    - name: "Videos"
-      href: videos.md                    
-    - name: "Power BI updates archive"
-      href: desktop-latest-update-archive.md
-    - name: "Power BI Desktop change log"
-      href: desktop-change-log.md
-    - name: "Power BI Desktop Send a Smile Privacy Statement"
-      href: desktop-send-smile-privacy-statement.md
-    - name: "Power BI Desktop diagnostics"
-      href: desktop-diagnostics.md
+    - name: Basics of Power BI service
+      href: service-basic-concepts.md
+    - name: What's new in the latest Power BI update?
+      href: desktop-latest-update.md
+    - name: Tutorials
+      items:
+        - name: Get started with Power BI Desktop
+          href: desktop-getting-started.md
+        - name: Get started with the Power BI service
+          href: service-get-started.md
+        - name: Get started with Microsoft Fabric and Power BI
+          href: fabric-get-started.md
+    - name: Licensing
+      items:
+        - name: Sign up or purchase Power BI as an individual
+          href: service-self-service-signup-purchase-for-power-bi.md
+        - name: Features by license type
+          href: service-features-license-type.md
+        - name: Get help purchasing or signing up for Power BI
+          href: service-self-service-sign-up-help.md
+        - name: Sign up or purchase a license for Power BI
+          href: service-self-service-signup-for-power-bi.md
+        - name: Licenses and subscriptions for business users
+          href: end-user-license.md
+    - name: Security
+      items:
+        - name: Security baseline
+          href: /security/benchmark/azure/baselines/power-bi-security-baseline?toc=/power-bi/fundamentals/toc.json
+    - name: Resources
+      items:
+        - name: Videos
+          href: videos.md
+        - name: Power BI updates archive
+          href: desktop-latest-update-archive.md
+        - name: Power BI Desktop change log
+          href: desktop-change-log.md
+        - name: Power BI Desktop Send a Smile Privacy Statement
+          href: desktop-send-smile-privacy-statement.md
+        - name: Power BI Desktop diagnostics
+          href: desktop-diagnostics.md
+        - name: Ten tips for getting help
+          href: ../support/service-tips-for-finding-help.md
+        - name: Supported languages and countries/regions
+          href: supported-languages-countries-regions.md
+        - name: Supported browsers
+          href: power-bi-browsers.md

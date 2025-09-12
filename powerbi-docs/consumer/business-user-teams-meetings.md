@@ -9,6 +9,7 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 02/25/2025
 LocalizationGroup: Get started
+ms.custom: sfi-image-nochange
 #customer intent: As a business user, I want to understand how to use Power BI in Teams meetings so that I can effectively collaborate and make data-driven decisions during meetings.
 ---
 
@@ -144,4 +145,3 @@ Consider using key data points to create metrics and track them in a scorecard. 
 - [Use Power BI metrics to improve results in Microsoft Teams](business-user-teams-goals.md)
 - [Lead data-driven discussions in Microsoft Teams](business-user-teams-share-data.md)
 - [Create reports from data in Microsoft Teams](business-user-teams-create-reports.md)
-- [Analyze your Teams collaboration data](business-user-teams-collaboration-data.md)

@@ -29,10 +29,6 @@
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
-    - name: "Use Cognitive Services"
-      href: service-tutorial-use-cognitive-services.md
-    - name: "Build a machine learning model"
-      href: service-tutorial-build-machine-learning-model.md
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md
     - name: "Automate template app configuration"
@@ -281,6 +277,8 @@
         href: refresh-excel-file-onedrive.md
       - name: "Refresh a semantic model from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
+      - name: "Refresh a Semantic Model using Data Pipelines (Preview)"
+        href: data-pipeline-templates.md
       - name: "Frequent refreshes using Real-Time Intelligence"
         href: real-time-intelligence-sample.md
     - name: Template apps

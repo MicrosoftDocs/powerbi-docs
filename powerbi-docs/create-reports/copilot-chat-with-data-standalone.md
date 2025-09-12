@@ -55,7 +55,7 @@ Summaries in the standalone Copilot experience include both textual insights and
 
 Copilot can answer questions and create visuals using the measures and other data fields in your model. It can also create new data analysis expression (DAX) calculations if needed.
 
-Unlike the Copilot pane within a report, the standalone Copilot experience doesn't reference report content when answering questions. Answers are always generated directly from the underlying model.
+The standalone Copilot experience can summarize data from reports, as well as use the report visuals to answer specific questions.  If the answer can't be found in the report, it will then default to using the semantic model to generate rich answers for users.
 Learn more about [asking questions about your data](copilot-ask-data-question.md).
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-data-question-result.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a question and answer about data." lightbox="media/copilot-introduction/copilot-standalone-data-question-result.png":::
@@ -102,5 +102,5 @@ Read about [requirements to use the standalone Copilot experience](copilot-intro
 
 ## Considerations and limitations
 
-The standalone Copilot experience isn't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West.
+The standalone Copilot experience is only available to customers with home tenants in geos that support Fabric—so **it's only available** for customers with home tenants in [this list](/fabric/admin/region-availability#all-workloads). You don’t need to have Fabric enabled to use Copilot, they just need to have home tenants in one of the listed regions.
 

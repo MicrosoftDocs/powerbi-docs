@@ -7,8 +7,10 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.custom: fabric-cat
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - sfi-image-nochange
 ---
 
 # Power BI implementation planning: Content creator security planning

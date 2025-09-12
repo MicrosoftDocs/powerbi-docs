@@ -24,7 +24,7 @@ You can find this capability in Power BI Desktop or Power BI service.
 
 ## Video
 
-Watch this video showing how to add page and bookmark navigators, and then try it yourself.
+Watch this video showing how to add page and bookmark navigators and then try it yourself.
 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
@@ -190,6 +190,8 @@ Create a page navigation button and select the conditional formatting option for
 
 - If the bold, italic and underline settings are **On** for the **Default** state, you can't turn them off for the **Selected** state.
 
+- Bookmark navigator selected state is not reflected in exports of the report.
+
 ## Related content
 
 For more information about features that are similar or interact with buttons, take a look at the following articles:
@@ -198,4 +200,3 @@ For more information about features that are similar or interact with buttons, t
 - [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
 - [Use drillthrough in Power BI reports](desktop-drillthrough.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
-- [Create a drillthrough button](desktop-drill-through-buttons.md)

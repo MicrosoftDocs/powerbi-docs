@@ -8,6 +8,7 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 03/06/2024
 LocalizationGroup: Connect to services
+ms.custom: sfi-image-nochange
 ---
 
 # Connect to the Emissions Impact Dashboard for Azure

@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/01/2023
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
@@ -65,13 +65,13 @@ If you want to view the data source for this sample, it's also available as an E
 
 If you want to get and use the Excel file in the Power BI service, follow these steps:
 
-1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *IT Spend Analysis Sample-no-PV.xlsx*.
+1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Customer Profitability Sample-no-PV.xlsx*.
 
 1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
 
 1. Select a workspace, such as **My workspace**, and choose **Export**.
 
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md).
 
 1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 
@@ -208,7 +208,7 @@ This report page provides a different slice of the data. It looks at gross margi
 
 ### Executive Scorecard page
 
-This page has a custom page size format, optimized for display on a mobile device..
+This page has a custom page size format, optimized for display on a mobile device.
 
 ## Dig into the data by asking questions with Q&A
 

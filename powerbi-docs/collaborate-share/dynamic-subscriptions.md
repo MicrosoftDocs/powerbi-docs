@@ -9,8 +9,10 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/08/2024
-ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
+ms.custom:
+  - retail analysis sample
+  - sfi-image-nochange
 ---
 
 # Dynamic per recipient subscriptions for paginated reports 
@@ -134,12 +136,16 @@ Another way to review your subscription is to select the arrow in the **Subscrip
 As with other subscriptions, you can edit, delete, turn on, and turn off the subscription. 
 
 ## Considerations and limitations
+- Dynamic per recipient subscriptions of paginated reports are subject to a timeout of 10 minutes. 
+
 - Your recipient semantic model has a limit of 1000 rows of recipients. If the recipient list exceeds 1000 rows at any point, only the first 1000 recipients receive the subscription email, and the subscription creator receives an error email.
 - Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
 - [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter).  
   
 
 ## Related content
+
+- [Performance and scalability for paginated reports.](/power-bi/guidance/report-paginated-performance-scalability-considerations)
 
 - [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).   
 - [Search for and sort content](../consumer/end-user-search-sort.md).

@@ -22,7 +22,7 @@ Changing the colors of the report visuals on a dashboard doesn't affect the visu
 
 ## Prerequisites
 
-To follow along, open the [Sales & Returns sample dashboard](sample-datasets.md#sales--returns-sample-pbix-file).
+To follow along, open the [Sales and Returns sample dashboard](sample-sales-returns.md).
 
 ## How dashboard themes work
 

@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 02/28/2023
 LocalizationGroup: Common tasks
+ms.custom: sfi-image-nochange
 ---
 # Set contact information for reports and dashboards in the Power BI service
 

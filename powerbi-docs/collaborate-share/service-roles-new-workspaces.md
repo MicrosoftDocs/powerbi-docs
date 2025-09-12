@@ -9,8 +9,10 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Roles in workspaces
 ms.topic: conceptual
 ms.date: 11/25/2024
-ms.custom: fabric
 LocalizationGroup: Share your work
+ms.custom:
+  - fabric
+  - sfi-image-nochange
 ---
 
 # Roles in workspaces in Power BI
@@ -76,7 +78,7 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 
 <sup>9</sup> If you want your users with the Viewer role to Analyze in Excel or export underlying data from the datasets in the workspace, you need to also give them Build permission on the appropriate datasets.
 
-<sup>10</sup> Consuming data from a dataflow gen2 with the dataflow connector requieres Admin, Member or Contributor permissions. Viewer permissions is not sufficient and is not supported for consuming data from the dataflow gen2.
+<sup>10</sup> Consuming data from a dataflow gen2 with the dataflow connector requires Admin, Member or Contributor permissions. Viewer permissions is not sufficient and is not supported for consuming data from the dataflow gen2.
 
 > [!NOTE]
 > - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro or PPU licenses to a role that requires a license. See [Licenses](#licenses) for details.
@@ -84,8 +86,8 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 > - Members can add users to a workspace with lower permissions, but can't remove users from any workspace roles.
 > - Deleting a user from Microsoft Entra ID doesn't automatically remove their access to Power BI workspaces. This fact is by design to prevent accidental data loss. Even after they're deleted from Microsoft Entra ID, the user's workspace access remains until explicitly removed.
 
-
 ## Licenses
+
 If one of the workspaces is in a shared capacity, everyone you add to it needs a Power BI Pro or Premium Per User (PPU) license. These users can all collaborate on the dashboards and reports in the workspace. If you want to distribute content to others inside your organization, either assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
 
 When the workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro or Premium Per User (PPU) license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro trial when they try to create an artifact in the workspace<sup>8</sup>. If you want users without Pro or Premium Per User (PPU) licenses to use the Viewer role, make sure they don't also have other workspace roles, either as individuals or as part of a user group.
@@ -97,7 +99,7 @@ Publishing reports to the workspace enforces existing licensing rules. If you tr
 
 ### Guest users
 
-[Microsoft Entra B2B Guest users](../enterprise/service-admin-azure-ad-b2b.md) who have been assigned a workspace role or granted specific item permissions, will be able to perform the operations permitted by those roles or permissions.
+[Microsoft Entra B2B Guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b) who have been assigned a workspace role or granted specific item permissions, will be able to perform the operations permitted by those roles or permissions.
 
 > [!NOTE]
 > Guest users who have been assigned workspace roles or specific item permissions will continue to have those roles and/or permissions, even if the **[Allow Microsoft Entra guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization)** tenant setting is disabled.

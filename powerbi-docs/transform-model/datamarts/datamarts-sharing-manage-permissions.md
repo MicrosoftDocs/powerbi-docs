@@ -8,8 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: concept-article
 ms.date: 06/17/2025
-ms.custom: FY25Q1-Linter
 LocalizationGroup: Data from files
+ms.custom:
+  - FY25Q1-Linter
+  - sfi-image-nochange
 #customer intent: As a Power BI user I want to learn how to share Power BI datamarts and manage permissions.
 ---
 
@@ -60,6 +62,9 @@ You can also select the **Share datamart** button from the information panel its
 Regardless of which way you choose to share a datamart, the **Grant people access** window appears so you can enter the names or email addresses of the people or groups (distribution groups or security groups) in your organization with whom you want to grant access to the datamart.
 
 You can choose whether recipients can reshare the datamart with others in the organization, by selecting the checkbox next to **Allow recipients to share this datamart**. There's an option to allow users to create Power BI reports (from scratch, autocreate, paginated reports) on top of the default semantic model that is connected to the datamart by selecting the checkbox next to **Build reports on the default semantic model**. Both of these options are selected by default.
+
+> [!NOTE]
+> [!INCLUDE [default-semantic-model-retirement](~/../fabric-repo/docs/includes/default-semantic-model-retirement.md)]
 
 You can also choose to send recipients a message to provide more context, by typing a message into the **Add a message (optional)** field in the **Grant people access** window.
 

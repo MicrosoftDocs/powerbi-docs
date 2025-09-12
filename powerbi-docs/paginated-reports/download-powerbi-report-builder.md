@@ -31,8 +31,8 @@ For details and more information about what's new in this release, see [Change l
 PBIRB March 2025 is the latest generally available (GA) version.
 
 - Release name: Power BI Report Builder
-- Build number: 15.7.1814.616
-- Release date: March 25, 2025
+- Build number: 15.7.1815.334
+- Release date: September 11, 2025
 
 ## System Requirements
 

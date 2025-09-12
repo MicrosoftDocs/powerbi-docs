@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 03/12/2025
 
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 
 # Publish an app in Power BI
@@ -175,6 +176,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     > [!NOTE]
     > - The advanced settings apply to all the audiences, including the workspace users. They can share the semantic models and build content with the semantic models in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
     > - Build permissions only apply to semantic models _in the same workspace_ as the app. If semantic models are in other workspaces, you must explicitly grant build permissions on those semantic models, or at least add the users to the Viewer role in the other workspace.
+    > - Build permissions don't apply to Paginated Reports. For semantic models associated with Paginated Reports, you must explicitly grant build permissions on those semantic models, or at least add the users to the Viewer role in the workspace.
 
 ### Publish the app
 
@@ -375,8 +377,11 @@ To maintain app reliability and performance here are some app, audience group, a
 - Each workspace user or user group is counted per audience group. For example, if you have four workspace users and five app audience groups those four workspace users will be counted per audience group (4x5), accounting for 20 users against the 10,000 users or user groups limit per app. Additionally, each workspace user or user group is counted against the 1,000 users or user groups per audience group.
 - Consider how many workspace users or user groups have access to the app and how many users and user groups you have added to audience groups when creating additional audience groups. It is possible to hit the maximum number of 10,000 users or user groups per app before hitting the limit of 25 audience groups per app. For example, if you create 10 audience groups and have 1,000 users per audience group (accounting for workspace users too) you would hit the 10,000 app user or user groups limit and any additional audience groups with additional users or user groups will block the app from publishing or updating.
 - If you include a report that uses chained semantic models in an app, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), when you add a user to an audience group, make sure to give permissions to all the semantic models in the chain. We recommend using Microsoft Entra Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). The same consideration should be made for semantic models in a different workspace other than the app, make sure to give permissions to semantic models in a different workspace.
+- If you include content that uses a Direct Lake semantic model, consider the [Direct Lake scenarios and permission requirements](/fabric/fundamentals/direct-lake-overview#permission-requirements).
 - If you include a paginated report that uses a semantic model, in an app, when you add a user to an audience group, make sure to give permission to the semantic model.
 - Guest users require the [Directory Readers](/entra/identity/role-based-access-control/permissions-reference#directory-readers) role in order to update.
+- Custom access requests and automated custom messages aren't supported in reports; however, they're supported in [Power BI apps](../collaborate-share/service-create-distribute-apps.md#customize-the-access-request-behavior).
+- Note that items published in an app have a unique ID generated. The ID for the item in the app and the original item ID in the workspace are two different, unique IDs. When tracking usage or checking logs, please consider these ID differences between original item and app item.
 
 
 Additional things to keep in mind about publishing apps:

@@ -93,7 +93,7 @@ Start by creating a lakehouse to store your data. You'll use Dataflows Gen2 to p
 
     If prompted, set authentication to **Organizational account** and select **Next**.
 
-    :::image type="content" source="media/fabric-get-started/add-lakehouse-destination.png" alt-text="Screenshot of the data destination modify section and settings icon.":::
+    :::image type="content" source="media/fabric-get-started/add-lakehouse-destination.png" alt-text="Screenshot showing the data destination modify section and settings icon.":::
 
 4. In the navigator, select your workspace and expand to view all **Lakehouse** items. Select **SalesLakehouse** and ensure **New table** is selected, then select **Next**.
 
@@ -226,7 +226,7 @@ The data you loaded is almost ready for reporting. Next, use the tables in the l
     | DimStore        |
     | FactOnlineSales |
 
-    :::image type="content" source="media/fabric-get-started/new-semantic-model-tables.png" alt-text="Screenshot of the lakehouse item in a workspace.":::
+    :::image type="content" source="media/fabric-get-started/new-semantic-model-tables.png" alt-text="Screenshot showing the lakehouse item in a workspace.":::
 
 ### Create relationships
 
