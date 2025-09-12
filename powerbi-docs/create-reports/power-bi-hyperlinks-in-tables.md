@@ -51,8 +51,8 @@ You can format a field with URLs as hyperlinks in Power BI Desktop, but not in t
 
 ## Display a hyperlink icon instead of a URL
 
-If you don't want to display a long URL in a table, you can display a hyperlink icon instead:
-:::image type="content" source="media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png" alt-text="Hyperlink icon.":::
+If you don't want to display a long URL in a table, you can display a hyperlink icon 
+:::image type="content" source="media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png" alt-text="Hyperlink icon."::: instead.
 
 > [!NOTE]
 > You can't display icons in a matrix.
