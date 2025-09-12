@@ -6,7 +6,8 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 03/06/2024
+ms.reviewer: lsuresh
+ms.date: 09/12/2025
 LocalizationGroup: Connect to services
 ms.custom: sfi-image-nochange
 ---
