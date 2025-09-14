@@ -9,7 +9,7 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 01/12/2025
 LocalizationGroup: Transform and shape data
-
+---
 
 # Edit semantic models in the Power BI service 
 
