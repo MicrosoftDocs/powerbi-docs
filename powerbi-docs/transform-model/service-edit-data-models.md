@@ -29,9 +29,9 @@ This will launch the modern Power Query 'Get data' experience where you can choo
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-40.png" alt-text="Screenshot of options to create a report or semantic model only." lightbox="media/service-edit-data-models/service-edit-data-models-40.png":::
 
-## Open the semantic model
+## Open an existing semantic model
 
-You can open the semantic model in the following ways:
+You can open an existing semantic model in the following ways:
 
 * From the workspace content list, select **More options (...)** for the semantic model and select **Open data model**.
 
