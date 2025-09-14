@@ -1,5 +1,5 @@
 ---
-title: Use Performance Analyzer to examine report element performance
+title: Use Performance Analyzer to examine report performance
 description: Find out how visuals and report elements are performing in terms of resource usage and responsiveness.
 author: JulCsc
 ms.author: juliacawthra
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Create reports
 ---
-# Use Performance Analyzer to examine report element performance
+# Use Performance Analyzer to examine report performance
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -77,7 +77,12 @@ Visuals in Power BI reports display data from the semantic model. The data is ac
 
 **Run in DAX query view** in performance analyzer runs the DAX query in [DAX query view](/power-bi/transform-model/dax-query-view). The result grid shows the data the visual uses and you can inspect the logic of the DAX query itself. This option isn't available in the Power BI service, but the copied DAX query can be run after navigating to DAX query view in the service and pasting in the DAX query.
 
-The structure of a DAX query from a visual is more verbose and structured than necessary to get the same result. The visual DAX query structure helps as you change visuals from one type to another when building a report. [Fabric Copilot to write and explain DAX queries](/dax/dax-copilot) in DAX query view can help structure the visual DAX query into a simplier form with prompts such as "Remove the VARs and simplify this DAX query". 
+The structure of a DAX query from a visual is more verbose and structured than necessary to get the same result. The visual DAX query structure helps as you change visuals from one type to another when building a report. [Fabric Copilot to write and explain DAX queries](/dax/dax-copilot) in DAX query view can help structure the visual DAX query into a simplier form with the following prompt.
+
+```copilot-prompt
+   Remove the VARs and simplify this DAX query
+``` 
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 Learn more about DAX queries in the [DAX queries learn documenation](/dax/dax-queries).
 
