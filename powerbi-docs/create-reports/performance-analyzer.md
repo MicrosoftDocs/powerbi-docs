@@ -80,7 +80,7 @@ Visuals in Power BI reports display data from the semantic model. The data is ac
 The structure of a DAX query from a visual is more verbose and structured than necessary to get the same result. The visual DAX query structure helps as you change visuals from one type to another when building a report. [Fabric Copilot to write and explain DAX queries](/dax/dax-copilot) in DAX query view can help structure the visual DAX query into a simplier form with the following prompt.
 
 ```copilot-prompt
-   Remove the VARs and simplify this DAX query
+   Remove the VARs and TOPN and simplify this DAX query
 ``` 
 *Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
