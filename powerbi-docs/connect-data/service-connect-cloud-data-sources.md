@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/11/2025
+ms.date: 08/28/2025
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service
@@ -76,10 +76,9 @@ Keep the following considerations in mind when creating or using a **Workspace i
 
 * **Workspace identity** is supported with Fabric data sources.
 * **Workspace identity** is also supported for Power BI semantic models. Set the *Authentication method* in the Analysis Services data connection to **Workspace identity**.
-  * The tenant switch relies on the **Service principals can call Fabric public APIs** setting.
-  * Ensure the **workspace identity** is added tot he security group when the tenant switch applies to specific security groups.
+  * **Workspace identity** authentication for Power BI semantic models requires the tenant setting **Service principals can call Fabric public APIs** to be enabled. Ensure that the **Workspace identity** has **Contributor** (or higher) access to the source workspace.
+  * If you restrict the tenant setting **Service principals can call Fabric public APIs** to specific security groups, ensure that the **Workspace identity** is a member of at least one of these security groups.
 * The connection type being used must support the **Workspace identity** authentication type, which includes SQL Server and ADLS connectors. For the connection type being used, if there's a **Workspace identity** option under the *Authentication* setting, then that connector is supported.
-
 
 ## Default connection settings
 

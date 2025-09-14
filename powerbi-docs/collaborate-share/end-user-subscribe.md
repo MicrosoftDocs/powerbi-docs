@@ -32,7 +32,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 
 ## Requirements
-The requirements apply to users in the organization and to [Microsoft Entra Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you need permissions to access the particular report or dashboard and **either**:
+The requirements apply to users in the organization and to [Microsoft Entra Business-to-Business (B2B) guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b). To create a subscription for yourself, you need permissions to access the particular report or dashboard and **either**:
 
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
@@ -115,7 +115,7 @@ To create a subscription that includes others, in addition to the [requirements 
 
 - A Pro or PPU license with Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
-- To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others, only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+- To be part of the organization. [B2B guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b) can't subscribe others, only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
 - If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
@@ -298,7 +298,7 @@ You can subscribe external B2B guests to a report or dashboard if your report or
 
 ### B2B guest users can set up and be subscribed to email subscriptions
 
-B2B guests can create their own content subscription to which they have access. Users in the organization can subscribe as well. First, a member of the organization adds and subscribes the B2B guest user to the email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md).
+B2B guests can create their own content subscription to which they have access. Users in the organization can subscribe as well. First, a member of the organization adds and subscribes the B2B guest user to the email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b).
 
 In addition to external B2B guests meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
@@ -360,6 +360,8 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
   
 - The **Save** or **Save and Close** button will be disabled if there are errors. You must fix all errors to save the subscription.
 - Internal guests are users who have an account in your Microsoft Entra directory but only guest-level access in your organization. External B2B guests are users with an external Microsoft Entra account, social identity, or other external identity provider sign-in. Internal guest users can't create email subscriptions in Power BI. 
+- Users will subdomain email addresses are generally treated as external users. They may only set up subscriptions or receive emails from subscriptions when the tenant setting [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing) is enabled. 
+
 - If you can't use the subscription feature, contact your Fabric administrator or IT help desk. Your organization may disable this feature or the maximum subscriber limit may be.
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you receive your subscription emails and the day after you receive two emails per subscription. 

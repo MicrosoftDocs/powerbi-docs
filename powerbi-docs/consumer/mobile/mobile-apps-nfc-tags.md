@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 09/29/2024
+ms.date: 09/08/2025
 ---
 
-# Connect data to physical locations with NFC tags (preview)
+# Connect data to physical locations with NFC tags
 
 | :::image type="icon" source="./media/mobile-apps-qr-code/ios-logo-40-px.png"::: | :::image type="icon" source="././media/mobile-apps-qr-code/android-logo-40-px.png"::: | :::image type="icon" source="././media/mobile-apps-qr-code/android-logo-40-px.png"::: |
 |:--- |:--- |:--- |
@@ -45,7 +45,7 @@ To enable users to be able to open an item by tapping their devices on an NFC ta
 
 1. Launch the Power BI mobile app and open the item you want to register on the NFC tag. You can register a Power BI report, dashboard, scrorecard, app, or workspace. If the item is a report, filter the report to display what you want the users to see when they open the report via the NFC tag.
 
-1. Hold the device close to the tag, select the options menu, and tap **NFC (preview)**.
+1. Hold the device close to the tag, select the options menu, and tap **NFC**.
 
     :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-option.png" alt-text="Screenshot showing the Register on an NFC tag option on the Power BI mobile app options menu." border="false":::
 
@@ -71,7 +71,7 @@ To read the NFC tag, hold your device close to the tag.
 
     :::image type="content" source="./media/mobile-apps-nfc-tags/read-nfc-tag-push-notification.png" alt-text="Screenshot showing the Read NFC tag push notification on an iPhone." border="false":::
 
-    Alternatively, on the Home page, Workspace list, and Apps list, you can open the options menu in the header and select **Read NFC (preview)**.
+    Alternatively, on the Home page, Workspace list, and Apps list, you can open the options menu in the header and select **Read NFC**.
 
     :::image type="content" source="./media/mobile-apps-nfc-tags/read-nfc-tag-read-option.png" alt-text="Screenshot showing the Read NFC tag options menu selection on an iPhone." border="false":::
 
