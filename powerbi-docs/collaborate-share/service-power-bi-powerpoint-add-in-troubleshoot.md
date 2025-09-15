@@ -61,7 +61,7 @@ If WebView2 is installed but you still can't use the add-in, it may be because t
 If your system doesn't meet the above requirements, you need to upgrade your [Windows](https://support.microsoft.com/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212#:~:text=To%20check%20for%20updates%2C%20select,can%20choose%20to%20install%20them.) and/or [Office](https://support.microsoft.com/office/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) versions before you'll be able to run the Storytelling add-in.
 
 >[!Note]
->For Office builds 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, a system admin needs to update a registry key as described in [Adding a registry key](#adding-a-registry-key) below.
+>For Office builds 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, a system admin needs to update a registry key as described in [Adding a registry key](#how-do-i-add-a-registry-key).
 
 If your device does meet the minimum system requirements, the problem may be because the presentation is protected by Windows Information Protection. The WebView2 isn't supported for such presentations.
 
