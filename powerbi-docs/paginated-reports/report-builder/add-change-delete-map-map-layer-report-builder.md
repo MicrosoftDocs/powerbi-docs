@@ -15,6 +15,10 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
+> [!IMPORTANT]
+> Following the __[announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps)__, the migration of paginated reports map visuals from Bing Maps to Azure Maps has begun. This migration will occur in two phases: first, migrating to Azure Maps in PBIRB, followed by migration to Azure Maps for paginated reports in the service. The initial phase is complete. Beginning with the September release of PBIRB, users can create map visuals powered by Azure Maps by default. However, paginated reports published in the service will continue to use Bing Maps until phase two is completed.
+> Paginated reports authors can revert back to Bing Maps for authoring in PBIRB until both phases are complete. To enable this, users must set the “RevertToBingMaps” registry key located in the “Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Report Builder” folder to 1. If the “Microsoft Power BI Report Builder” folder does not exist, it should be manually created before setting the registry key.
+
   A map is a collection of layers. When you add a map to a Power BI paginated report, you define the first layer. You can create additional layers by using the map layer wizard.  
   
  The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, select in the map on the report design surface. The following figure displays the parts of the pane:  
@@ -32,7 +36,7 @@ The following table displays the toolbar icons for the **Map** pane.
 |![Screenshot showing how to add a map layer that displays areas or shapes that are based sets of polygon coordinates.](../media/paginated-reports-maps/map-polygon-layer.gif)|Polygon Layer|Add a map layer that displays areas or shapes that are based sets of polygon coordinates.|  
 |![Screenshot showing how to add a map layer that displays paths or routes that are based on sets of line coordinates.](../media/paginated-reports-maps/map-line-layer.gif)|Line Layer|Add a map layer that displays paths or routes that are based on sets of line coordinates.|  
 |![Screenshot showing how to add a map layer that displays locations that are based on sets of point coordinates.](../media/paginated-reports-maps/map-point-layer.gif)|Point Layer|Add a map layer that displays locations that are based on sets of point coordinates.|  
-|![Screenshot showing how to add a map layer that displays Bing Map tiles that correspond to the current map view area that is defined by the viewport.](../media/paginated-reports-maps/map-tile-layer.gif)|Tile Layer|Add a map layer that displays Bing or Azure Map tiles that correspond to the current map view area that is defined by the viewport.|  
+|![Screenshot showing how to add a map layer that displays Bing Map tiles that correspond to the current map view area that is defined by the viewport.](../media/paginated-reports-maps/map-tile-layer.gif)|Tile Layer|Add a map layer that displays Azure Map tiles that correspond to the current map view area that is defined by the viewport.|  
 
  At the bottom of the Map pane is the Map view area. To change the center or zoom options for the map, use the arrow keys to adjust the view center and the slider to adjust the zoom level.  
   
@@ -132,15 +136,17 @@ The following table displays the toolbar icons for the **Map** pane.
 1. On the toolbar, select the **Add Layer** button, and from the drop-down list, select **Tile Layer**.  
 
    > [!NOTE]
-   >  For more information about the use of Bing map tiles in your report, see [Additional Terms of Use](https://go.microsoft.com/fwlink/?LinkId=151371).  For more information about the use of Azure Maps tiles in your report, see [Additional Terms of Use](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MOSA#clause-2036-h3-1).
+   >  For more information about the use of Azure Maps tiles in your report, see [Additional Terms of Use](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MOSA#clause-2036-h3-1).
+   
    
    
 1. Right-click the tile layer in the Map pane, and then select **Tile Properties**.  
   
-1. In **Tile options**, select a tile style. If the Bing map tiles are available, the layer on the design surface updates with the style that you select.  
+1. In **Tile options**, select a tile style. If the Azure Maps tiles are available, the layer on the design surface updates with the style that you select.  
 
    > [!NOTE]
-   >  A tile layer can also be added when you add a polygon, line, or point layer in the Map or Map Layer wizard. On the **Choose spatial data and map view options** page, select the option **Add a Bing or Azure Maps background for this map view**.  
+   >  A tile layer can also be added when you add a polygon, line, or point layer in the Map or Map Layer wizard. On the **Choose spatial data and map view options** page, select the option **Add an Azure Maps background for this map view**.  
+   
    
    
 ##  <a name="DrawingOrder"></a> Change the drawing order of a layer  
@@ -183,7 +189,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
 1. In the Properties pane, set UseSecureConnection to **True**.  
   
- The connection for the Bing or Azure Maps Web service will use the HTTP SSL service to retrieve Bing or Azure map tiles for this layer. Transport Layer Security (TLS) was previously known as Secure Sockets Layer (SSL).
+ The connection for the Azure Maps Web service will use the HTTP SSL service to retrieve Azure map tiles for this layer. Transport Layer Security (TLS) was previously known as Secure Sockets Layer (SSL).
 
 ##  <a name="Language"></a> Specify the language for tile labels  
   
