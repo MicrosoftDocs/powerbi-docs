@@ -50,8 +50,8 @@ Good reports present information that leads to actions or insights. To present a
   
 - Maps from reports in the Map Gallery.  
     
-- Bing map tiles, which provide a background for the map view. 
-  
+- Bing or Azure map tiles, which provide a background for the map view. 
+
  Spatial data can be politically sensitive and possibly copyrighted. Check the terms of use and privacy statements for spatial data sources to understand how you can use spatial data in your report.  
   
  After you find the data that you want, you can embed the data in the report definition or retrieve the data dynamically when the report is processed. For more information, see [Balance Report Definition Size and Report Processing Time](#Embedding) later in this topic.  
@@ -125,8 +125,8 @@ Good reports present information that leads to actions or insights. To present a
   
 ##  <a name="Embedding"></a> Balance report definition size and report processing time
 
- Good report design for maps requires that you balance the options that control report performance and report definition size. Map elements that are based on spatial data, or Bing map tiles, can be static and embedded in the report definition or dynamic and created every time the report is processed. You must assess the trade-offs for static or dynamic map data and find the balance that works for your circumstances. Consider the following information to make this decision:  
-  
+ Good report design for maps requires that you balance the options that control report performance and report definition size. Map elements that are based on spatial data, or Bing and Azure map tiles, can be static and embedded in the report definition or dynamic and created every time the report is processed. You must assess the trade-offs for static or dynamic map data and find the balance that works for your circumstances. Consider the following information to make this decision:  
+
 - Embedded map elements can significantly increase the size of the report definition, but reduce the time that is required to view the map in the report. Your report server might have size limits that you need to work with.  
   
 - The report definition specifies limits to the number of spatial data points that can be processed and a separate value that specifies the number of map elements that can be included in the report definition.  
