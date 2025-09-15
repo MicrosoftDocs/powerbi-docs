@@ -13,7 +13,7 @@ ms.date: 09/11/2025
 
 # Manage multiple add-ins with the Power BI Controller (preview)
 
-The [Power BI Controller (preview)](https://go.microsoft.com/fwlink/?linkid=2334981) is a task pane add-in that serves as a central command center for all Power BI add-ins within a PowerPoint presentation. With this tool, users can efficiently and consistently perform operations across multiple add-ins.
+The Power BI Controller (preview) is a task pane add-in that serves as a central command center for all Power BI add-ins within a PowerPoint presentation. With this tool, users can efficiently and consistently perform operations across multiple add-ins.
 
 ## Background
 
@@ -21,17 +21,19 @@ Power BI storytelling lets users embed interactive reports and visuals into Powe
 
 ## Example scenario
 
-You're a business leader who needs to prepare a monthly review presentation with multiple embedded Power BI reports covering sales, operations, and finance. You create a new version of the presentation every month, capturing the latest data in **Image** mode, and share it with relevant stakeholders.
+You're a business leader who needs to prepare a monthly review presentation with multiple embedded Power BI reports covering sales, operations, and finance. You create a new version of the presentation every month, capturing the latest data in **Snapshot** mode, and share it with relevant stakeholders.
 
 With the Power BI Controller, you can:
 
-- Switch all add-ins from **Image** view to **Live** view with a single action, ensuring every report shows the most current data.
-- Revert all add-ins to **Image** view after updating, locking the data for secure sharing.
+- Switch all add-ins from **Snapshot** view to **Live** view with a single action, ensuring every report shows the most current data.
+- Revert all add-ins to **Snapshot** view after updating, locking the data for secure sharing.
 - Distribute the finalized presentation to stakeholders, ensuring all information is accurate and up to date without repetitive, manual updates.
 
 ## Get the Power BI Controller add-in
 
-To get the Power BI Controller add-in:
+You can [get the Power BI Controller from the Microsoft Office add-in store](https://go.microsoft.com/fwlink/?linkid=2334981).
+
+You can also get the add-in directly from the PowerPoint ribbon:
 
 1. Go to **Add-ins** in the PowerPoint ribbon, and search for "Microsoft Power BI Controller."
 1. Select **Add**.
