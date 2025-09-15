@@ -98,9 +98,9 @@ If you create a static, noninteractive image for your presentation using the [**
 To enable the **Show as a saved image** option:
 
 1. From the footer menu of the add-in, select the **Enable add-in 'Show as a saved image'** checkbox.
-1. Select **Enable** button on the confirmation prompt.
+1. Select the **Enable** button on the confirmation prompt.
 
-Now **Show as a saved image** is included in the main PowerPoint menu in the top right corner.
+Now the **Show as a saved image** option is included in the main PowerPoint menu in the top right corner.
 
 ## How do I know if my presentation is protected by Windows Information Protection?
 
