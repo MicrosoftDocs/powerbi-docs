@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 03/15/2024
+ms.date: 09/15/2025
 LocalizationGroup: Create reports
 ---
 # Use quick measures for common calculations
@@ -29,46 +29,46 @@ Choose the **Select a calculation** field to see a long list of available quick 
 
 :::image type="content" source="media/desktop-quick-measures/quick-measures_04.png" alt-text="Screenshot of the Quick measures screen and the Select a calculation drop-down menu.":::
 
-The five quick measure calculation types, with their calculations, are:
+The quick measure calculation types, with their calculations, are:
 
-* **Aggregate per category**
-  * Average per category
-  * Variance per category
-  * Max per category
-  * Min per category
-  * Weighted average per category
-* **Filters**
-  * Filtered value
-  * Difference from filtered value
-  * Percentage difference from filtered value
-  * Sales from new customers
-* **Time intelligence**
-  * Year-to-date total
-  * Quarter-to-date total
-  * Month-to-date total
-  * Year-over-year change
-  * Quarter-over-quarter change
-  * Month-over-month change
-  * Rolling average
-* **Totals**
-  * Running total
-  * Total for category (filters applied)
-  * Total for category (filters not applied)
-* **Mathematical operations**
-  * Addition
-  * Subtraction
-  * Multiplication
-  * Division
-  * Percentage difference
-  * Correlation coefficient
-* **Text**
-  * Star rating
-  * Concatenated list of values
+- **Aggregate per category**
+  - Average per category
+  - Variance per category
+  - Max per category
+  - Min per category
+  - Weighted average per category
+- **Filters**
+  - Filtered value
+  - Difference from filtered value
+  - Percentage difference from filtered value
+  - Sales from new customers
+- **Time intelligence**
+  - Year-to-date total
+  - Quarter-to-date total
+  - Month-to-date total
+  - Year-over-year change
+  - Quarter-over-quarter change
+  - Month-over-month change
+  - Rolling average
+- **Totals**
+  - Running total
+  - Total for category (filters applied)
+  - Total for category (filters not applied)
+- **Mathematical operations**
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division
+  - Percentage difference
+  - Correlation coefficient
+- **Text**
+  - Star rating
+  - Concatenated list of values
 
 To submit your ideas about new quick measures you'd like to see, underlying DAX formulas, or other quick measures ideas for consideration, check out the [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) page.
 
 > [!NOTE]
-> When using SQL Server Analysis Services (SSAS) live connections, some quick measures are available. Power BI Desktop displays only the quick measures that are supported for the version of SSAS you're connecting to. If you're connected to a SSAS live data source and don't see certain quick measures in the list, it's because the SSAS version you're connected to doesn't support the DAX commands used to implement those quick measures.
+> When you use SQL Server Analysis Services (SSAS) live connections, Power BI Desktop displays only the quick measures that are supported for the version of SSAS you're connecting to. If you don't see certain quick measures in the list when you're connected to an SSAS live data source. It means that you're connected to an SSAS version that doesn't support the DAX commands used to implement those quick measures.
 
 After you select the calculations and fields you want for your quick measure, choose **OK**. The new quick measure appears in the **Fields** pane, and the underlying DAX formula appears in the formula bar.
 
@@ -94,9 +94,9 @@ When you select **OK**, several interesting things happen.
 
 1. The matrix visual has a new column that shows the calculated **Average Unit Price average per Category**.
 
-2. The DAX formula for the new quick measure appears in the formula bar. See the [next section](#learn-dax-by-using-quick-measures) for more about the DAX formula.
+1. The DAX formula for the new quick measure appears in the formula bar. See the [next section](#learn-dax-by-using-quick-measures) for more about the DAX formula.
 
-3. The new quick measure appears selected and highlighted in the **Fields** pane.
+1. The new quick measure appears selected and highlighted in the **Fields** pane.
 
 The new quick measure is available to any visual in the report, not just the visual you created it for. The following image shows a quick column chart visual created by using the new quick measure field.
 
@@ -120,13 +120,13 @@ You can always delete quick measures from your model if you don't like them by r
 
 There are a few considerations and limitations to keep in mind.
 
-* You can use quick measures added to the **Fields** pane with any visual in the report.
-* You can always see the DAX associated with a quick measure by selecting the measure in the **Fields** list and looking at the formula in the formula bar.
-* Quick measures are only available if you can modify the model. One exception is the case when you're working with some Live connections. SSAS tabular live connections are supported, as previously described.
-* You can't create time intelligence quick measures when working in DirectQuery mode. The DAX functions used in these quick measures have performance implications when translated into the T-SQL statements that are sent to your data source.
+- You can use quick measures added to the **Fields** pane with any visual in the report.
+- You can always see the DAX associated with a quick measure by selecting the measure in the **Fields** list and looking at the formula in the formula bar.
+- Quick measures are only available if you can modify the model. One exception is the case when you're working with some Live connections. SSAS tabular live connections are supported, as previously described.
+- You can't create time intelligence quick measures when working in DirectQuery mode. The DAX functions used in these quick measures have performance implications when translated into the T-SQL statements that are sent to your data source.
 
 > [!IMPORTANT]
-> DAX statements for quick measures use only commas for argument separators. If your version of Power BI Desktop is in a language that uses commas as decimal separators, quick measures will not work properly.
+> DAX statements for quick measures use only commas for argument separators. If your version of Power BI Desktop is in a language that uses commas as decimal separators, quick measures don't work properly.
 
 ### Time intelligence and quick measures
 
@@ -140,5 +140,5 @@ Have an idea for a quick measure that isn't already provided? Great! Go to the [
 
 Other articles of interest:
 
-* [Using visual calculations (preview)](desktop-visual-calculations-overview.md)
-* [Using calculations options in Power BI Desktop](desktop-calculations-options.md)
+- [Using visual calculations (preview)](desktop-visual-calculations-overview.md)
+- [Using calculations options in Power BI Desktop](desktop-calculations-options.md)
