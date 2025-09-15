@@ -1,6 +1,6 @@
 ---
-title: Edit data models in the Power BI service (preview)
-description: Learn how to edit data models in the Power BI service, including editing relationships, creating DAX measures, managing RLS, and more.
+title: Edit semantic models in the Power BI service
+description: Learn how to edit semantic models in the Power BI service, including editing relationships, creating DAX measures, managing RLS, and more.
 author: emlisa
 ms.author: emlisa
 ms.reviewer: ''
@@ -9,34 +9,29 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 01/12/2025
 LocalizationGroup: Transform and shape data
-ms.custom:
-  - FY25Q1-Linter
-  - sfi-image-nochange
-#customer intent: As a Power BI user I want to learn how to edit data models in Power BI.
 ---
 
-# Edit data models in the Power BI service (preview)
+# Edit semantic models in the Power BI service 
 
-Power BI lets users modify existing data models in the Power BI service using actions such as editing relationships, creating DAX measures and managing RLS. In this experience, users can work and collaborate simultaneously on the same data model. 
+Power BI lets users create and edit semantic models in the Power BI service using actions such as Power Query editing, managing relationships, creating DAX measures, and defining row-level security roles. In this experience, users can work and collaborate simultaneously on the same semantic model. 
 
-## Enable the preview feature
 
-Editing data models in the Power BI service is automatically supported for semantic models stored in *My Workspace*. To open the data model for semantic models stored in collaborative workspaces, the preview feature for that workspace must be enabled. This can be done by completing the following steps:
+## Create new semantic models
 
-1. In the Power BI service, select **Settings** for the workspace where you want to enable the preview feature.
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-01.png" alt-text="Screenshot of settings gear icon" lightbox="media/service-edit-data-models/service-edit-data-models-01.png":::
-2. Select **Advanced > Data model settings > Users can edit data models in the Power BI service (preview)**
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-02.png" alt-text="Screenshot of enable preview feature" lightbox="media/service-edit-data-models/service-edit-data-models-02.png":::
-3. Select **Save** to see the new experience for semantic models in your workspace.
+You can create new import semantic models in the service by selecting **Get Data** in the **Create** page.
 
-This preview feature is enabled by default.
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-39.png" alt-text="Screenshot of Get Data on the create page." lightbox="media/service-edit-data-models/service-edit-data-models-39.png":::
 
-> [!NOTE]
-> Enabling the *edit data models in the Power BI service* preview doesn't apply to editing a semantic model through an API or an XMLA endpoint.
+This will launch the modern Power Query 'Get data' experience where you can choose your connector and make transformations. From this experience you have the following options as the last step for creating your new import semantic model:
 
-## Open the data model
+* **Create a report:** This option takes you into the report editing experience in the Power BI service. Here, you can immediately start building a report on top of your newly created semantic model. The report editor provides all the familiar tools for designing visuals, adding filters, and customizing your report layout—right in the browser. 
+* **Create a semantic model only:** Selecting this option creates just the semantic model, without launching the report editor. You’ll land in the model editor in the web, where you can make further edits to your semantic model. This is ideal if you want to refine your semantic model, add relationships, create DAX measures, or configure row-level security before building reports.
 
-You can open the data model for your semantic model in the following ways:
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-40.png" alt-text="Screenshot of options to create a report or semantic model only." lightbox="media/service-edit-data-models/service-edit-data-models-40.png":::
+
+## Open an existing semantic model
+
+You can open an existing semantic model in the following ways:
 
 * From the workspace content list, select **More options (...)** for the semantic model and select **Open data model**.
 
@@ -46,7 +41,7 @@ You can open the data model for your semantic model in the following ways:
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screenshot of opening the data model from the data hub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
 
-* From the semantic model details page, select **Open data model**.
+* From the semantic model details page, select **Open semantic model**.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-05.png" alt-text="Screenshot of opening the data model from the open data model button." lightbox="media/service-edit-data-models/service-edit-data-models-05.png":::
 
@@ -62,7 +57,7 @@ When you open your semantic models on the web they default to **Viewing mode**, 
 
 ## Model data
 
-When you open your data model you can see all the tables, columns, and relationships in your model. You can now edit your data model, and any changes are automatically saved.
+When you open your semantic model you can see all the tables, columns, and relationships in your model. You can now edit your semantic model, and any changes are automatically saved.
 
 ### Create measures
 
@@ -237,7 +232,7 @@ You can then drag a table from the **Data** pane onto the new layout. Right-clic
 
 ### Create reports
 
-You can create a new report from the data model editing in the service experience by selecting the **New report** button in the ribbon. This opens a new browser tab to the report editing canvas to a new report that is built on the semantic model.
+You can create a new report from the semantic model editing in the service experience by selecting the **New report** button in the ribbon. This opens a new browser tab to the report editing canvas to a new report that is built on the semantic model.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-21.png" alt-text="Screenshot of selecting the new report button from the ribbon.":::
 
@@ -245,43 +240,43 @@ When you save your new report, you're prompted to choose a workspace, provided y
 
 ## AutoSave
 
-As you made changes to your data model, your changes are automatically saved. Changes are permanent with no option to undo.
+As you made changes to your semantic model, your changes are automatically saved. Changes are permanent with no option to undo.
 
 ## Permissions
 
-*A user must have write and build [semantic model permissions](../connect-data/service-datasets-permissions.md) in order to open and edit the corresponding data model in the Power BI service.
+*A user must have write and build [semantic model permissions](../connect-data/service-datasets-permissions.md) in order to open and edit the corresponding semantic model in the Power BI service.
 *If [granular access control](../connect-data/service-create-share-cloud-data-sources.md#granular-access-control) is enabled on the semantic model, then users who have write but not owner permissions on the semantic model can only switch to **Editing mode** if they have access to all the underlying data sources for the model. Semantic model owners will always be able to toggle to **Editing mode**. 
 *A user must be the semantic model owner in order to access the **Get data** dialog and add additional import tables to a semantic model.
 
-## Enabling data model editing in the admin portal
+## Enabling semantic model editing in the admin portal
 
-Power BI administrators can enable or disable data model editing in the service for the entire organization or for specific security groups, using the setting found in the Power BI **admin portal**, as shown in the following image.
+Power BI administrators can enable or disable semantic model editing in the service for the entire organization or for specific security groups, using the setting found in the Power BI **admin portal**, as shown in the following image.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-22.png" alt-text="Screenshot of the admin portal setting enabled for editing data models in the service.":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-22.png" alt-text="Screenshot of the admin portal setting enabled for editing semantic models in the service.":::
 
 ## Viewing audit logs and activity events
 
-Power BI administrators can audit operations pertaining to editing data models in the web operations from the **Microsoft 365 Admin Center**. Audit operations supported for editing data models in the web are the following:
+Power BI administrators can audit operations pertaining to editing semantic models in the web operations from the **Microsoft 365 Admin Center**. Audit operations supported for editing semantic models in the web are the following:
 
 |Friendly name  |Operation name  |Notes  |
 |---------|---------|---------|
-|Applied a change to model in Power BI     |ApplyChangeToPowerBIModel         |A user makes a change to an existing model. This occurs whenever any edit is made to the model (example: write a DAX measure, manage relationships, others)         |
-|Retrieved a model from Power BI     |GetPowerBIDataModel         |A user opens the **Open data model** experience or resyncs a data model.         |
+|Applied a change to model in Power BI     |ApplyChangeToPowerBIModel         |A user makes a change to a semantic model. This occurs whenever any edit is made to the model (example: write a DAX measure, manage relationships, others)         |
+|Retrieved a model from Power BI     |GetPowerBIDataModel         |A user opens the **Open semantic model** experience or resyncs a semantic model.         |
 
 For more information on accessing your audit logs, see the [Access your audit logs](../admin/service-admin-auditing.md) article.
 
 ## Capacity utilization and reporting
 
-You can monitor the effect editing data models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity effect can be monitored for editing data models in the web using the following [operations](/fabric/enterprise/fabric-operations#background-operations).
+You can monitor the effect editing semantic models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity effect can be monitored for editing semantic models in the web using the following [operations](/fabric/enterprise/fabric-operations#background-operations).
 
 |Operation  |Description  |Workload |Type  |
 |---------|---------|---------|---------|
-|Web Modeling read     |A data model read operation in the semantic model web modeling user experience         |Semantic models|Interactive         |
-|Web Modeling write     |A data model write operation in the semantic model web modeling user experience         |Semantic models|Interactive         |
+|Web Modeling read     |A semantic model read operation in the semantic model web modeling user experience         |Semantic models|Interactive         |
+|Web Modeling write     |A semantic model write operation in the semantic model web modeling user experience         |Semantic models|Interactive         |
 
 ## Considerations and limitations
 
-There are a few limitations for this release of editing data models in the Power BI service, which fall into a handful of categories.
+There are a few limitations for this release of editing semantic models in the Power BI service, which fall into a handful of categories.
 
 ### Considerations with the Power Query editor
 
@@ -301,7 +296,7 @@ Keep in mind the following considerations when interacting with the Power Query 
 
 ### Unsupported semantic models
 
-The following scenarios don't support opening the data model for a semantic model in the service:
+The following scenarios don't support opening the semantic model in the service:
 
 * Semantic models that have incremental refresh.
 * Semantic models deployed through deployment pipelines can only be edited on the web in the development workspace. Editing in test and production workspaces isn't supported.
@@ -311,9 +306,9 @@ The following scenarios don't support opening the data model for a semantic mode
 * Semantic models migrated from Azure Analysis Services (AAS).
 * Not all semantic models in Pro workspaces are currently supported in UAE North.
 
-To see which limitation is preventing you from opening your data model, hover over the **Open data model** button in the semantic model details page. This displays a tooltip indicating which limitation is causing the **Open data model** button to be disabled.
+To see which limitation is preventing you from opening your semantic model, hover over the **Open semantic model** button in the semantic model details page. This displays a tooltip indicating which limitation is causing the **Open semantic model** button to be disabled.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-23.png" alt-text="Screenshot of hovering over the open data model button.":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-23.png" alt-text="Screenshot of hovering over the open semantic model button.":::
 
 ### Limitations
 
@@ -327,10 +322,11 @@ There are still many functional gaps between the model view in Power BI desktop 
 * View as dialog
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
-* When modifying your data model within the Service, changing the name of data fields won't automatically update in existing visuals in downstream artifacts that depend on that semantic model.
+* When modifying your semantic model within the Service, changing the name of data fields won't automatically update in existing visuals in downstream artifacts that depend on that semantic model.
 
 
 Additionally, keep in mind the following: 
+* As you make changes to your semantic model, your changes will be automatically saved. [Semantic model version history](../transform-model/service-semantic-model-version-history.md) is supported for semantic models edited in the web and is still in preview. This feature allows you to recover from critical mistakes.
 * Editing on the web isn't available in collaborative workspaces if converting the model to [large semantic model storage format fails](https://go.microsoft.com/fwlink/?linkid=2309615). In this case you can still use Viewing mode to view but not edit the model.
 * The *Edit in Desktop* option from the Viewing/Editing mode toggle is available only for Direct Lake models. This launches live editing of the Direct Lake semantic model in Power BI Desktop, and it's supported only on Windows machines. All requirements for [live editing Direct Lake models in Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2314634) apply.
 
@@ -339,13 +335,10 @@ Additionally, keep in mind the following:
 
 Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected behavior when editing your semantic model in the web if the write operation isn't supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring).
 
-### Accessibility
-
-Full accessibility isn’t currently supported for data model editing in the Power BI service.
 
 ## Related content
 
-This article provided information about the preview for editing data models in the Power BI service. For more information on data modeling in Power BI, see the following resources:
+This article provided information about editing semantic models in the Power BI service. For more information on semantic modeling in Power BI, see the following resources:
 
 * [Work with Modeling view](desktop-modeling-view.md)
 * [Understand model relationships](desktop-relationships-understand.md)

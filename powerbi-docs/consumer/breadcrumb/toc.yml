@@ -1,8 +1,8 @@
 ### 
 ### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
 ###
-- name: Power Platform
-  topicHref: /power-platform/
+- name: Microsoft Fabric
+  topicHref: /fabric/
   items:
   - name: Power BI
     tocHref: /power-bi/
