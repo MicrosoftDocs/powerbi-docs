@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
-ms.date: 09/18/2024
+ms.date: 09/15/2025
 ms.custom: FY25Q1-Linter
 LocalizationGroup: Transform and shape data
 #customer intent: As a Power BI user I want to learn how to use relationships with many-to-many cardinality in Power BI.
@@ -16,8 +16,6 @@ LocalizationGroup: Transform and shape data
 # Apply many-to-many relationships in Power BI Desktop
 
 With *relationships with a many-to-many cardinality* in Power BI Desktop, you can join tables that use a cardinality of *many-to-many*. You can more easily and intuitively create data models that contain two or more data sources. *Relationships with a many-to-many cardinality* are part of the larger *composite models* capabilities in Power BI Desktop. For more information about **composite models**, see [Use composite models in Power BI Desktop](desktop-composite-models.md)
-
-:::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_01.png" alt-text="Screenshot of a many-to-many relationship in the Edit relationship pane.":::
 
 ## What a relationship with a many-to-many cardinality solves
 
@@ -106,8 +104,6 @@ You can directly relate tables, such as the ones we described earlier, without h
 In Power BI Desktop, the cardinality defaults to *many-to-many* when it determines neither table contains unique values for the relationship columns. In such cases, a warning message confirms that you want to set a relationship, and that the change isn't the unintended effect of a data issue.
 
 For example, when you create a relationship directly between CityData and Sales&mdash;where filters should flow from CityData to Sales&mdash;Power BI Desktop displays the **Edit relationship** dialog:
-
-:::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_01.png" alt-text="Screenshot of the Edit relationship dialog box with Cardinality and Cross filter direction highlighted.":::
 
 The resulting **Relationship** view would then display the direct, many-to-many relationship between the two tables. The tables' appearance in the **Fields** list, and their later behavior when the visuals are created, are similar to when we applied the workaround. In the workaround, the extra table that displays the distinct State data isn't made visible. As described earlier, a visual that shows **State**, **Population**, and **Sales** data would be displayed:
 
