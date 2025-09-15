@@ -104,14 +104,13 @@ Every time you open your presentation, the report page or visual reloads into th
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png" alt-text="Screenshot of the add-in saved image option on the side pane.":::
 
-The menu allows you to set the view to live data or to a snapshot (you can also switch views with [keyboard shortcuts](#keyboard-shortcuts)). Two snapshot options provide you with some control over who is able to see the Power BI content in the snapshot:
+The menu allows you to set the view to live data or to a snapshot (you can also switch views with [keyboard shortcuts](#keyboard-shortcuts)). The following options provide you with some control over who is able to see the Power BI content in the snapshot:
 
 - **Snapshot**: When you choose **Snapshot**, only users who have permissions to view the report in Power BI are able see the static image of the Power BI content. Users who don't have permissions are able to request access. This option helps keep you from inadvertently showing Power BI content to unauthorized users.
 - **Public snapshot**: If you choose **Public snapshot**, anyone who can view the presentation to be able to see the static image of the Power BI content, regardless of their permissions in Power BI.
-- **Image**: If you choose to **Show as a saved image**, you can save the add-in as an image that anyone with permissions to the presentation can view. This settings offers better image quality than the public snapshot.
-
-  > [!IMPORTANT]
-  > We recommend using the **Public snapshot** option because.....[text to come from Maya]
+  
+  > [!NOTE]
+  > If the image resolution of a public snapshot isn't sufficient, you can select **Show as a saved image**, which saves the add-in as an image that anyone with permissions to the presentation can view. This settings offers better image quality than the public snapshot. **However, we recommend using the **Public snapshot** option.**
 
 To restore the interactive view, select **Live data**. The live report page or visual will reload in the state it was last in, but with the latest data from Power BI.
 
