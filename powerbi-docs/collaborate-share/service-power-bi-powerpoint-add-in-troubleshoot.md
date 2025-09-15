@@ -14,17 +14,17 @@ ms.date: 09/15/2025
 
 # Troubleshoot the Power BI add-in for PowerPoint
 
-This article describes what to do if you get the following error when trying to use the Microsoft Power BI add-in.
+This article offers solutions for troubleshooting the Microsoft Power BI add-in.
+
+## Why am I getting the error, "Cannot run Power BI. Your current browser engine isn't supported by Power BI. Please upgrade to a modern browser to be able to run Power BI here"?
 
 ![Screenshot of Cannot run Power B I add in error message.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-error.png)
-
-## Why am I getting this error?
 
 The most likely reason for getting this error is that WebView2 isn't installed on your device. The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. If WebView2 isn't installed, you need to install it before you'll be able to use the add-in.
 
 Another reason you might get this error is if your PowerPoint presentation is protected by Windows Information Protection. WebView2 and the Power BI storytelling add-in aren't supported for such presentations. For more information, see [How do I know if my presentation is protected by Windows Information Protection?](#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection). 
 
-## What is WebView2?
+### What is WebView2?
 
 Microsoft Edge WebView2 is a control used to provide web-based features in Microsoft 365 desktop applications such as PowerPoint. It uses Microsoft Edge as the rendering engine, and requires that Microsoft Edge WebView2 Runtime be installed on the device that is running the Office application.
 
@@ -32,7 +32,7 @@ WebView2 comes standard on recent Windows versions, but may not be included in e
 
 See [Microsoft Edge WebView2](/deployoffice/webview2-install) and Microsoft 365 Apps to learn more about Office Add-ins runtime and WebView2.
 
-## How do I install WebView2?
+### How do I install WebView2?
 
 It takes just a minute to install WebView2. You can get and install it from [Download Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/consumer/).
 
@@ -47,7 +47,7 @@ If the Security Info window says **Runtime: Microsoft Edge**, WebView2 is instal
 >[!NOTE]
 > After installing WebView2, you might need to close and re-open all Office applications.
 
-## I installed WebView2, so why doesn't the Power BI storytelling add-in run?
+### I installed WebView2, so why doesn't the Power BI storytelling add-in run?
 
 If WebView2 is installed but you still can't use the add-in, it may be because the Office build and/or Windows edition on your device don't meet minimum requirements. The minimum system requirements are as follows:
 
@@ -84,17 +84,11 @@ Open **File Explorer**, right-click **This PC**, and choose **Properties**. In t
 If you have a Microsoft 365 Office subscription, and the Office build on your device is 16.0.13530.20424 or later but earlier than 16.0.14326.xxxxx, someone with admin permissions on your device can use the following steps to create a registry key that enables you to use the add-in.
 
 1. Open the Registry Editor by typing *regedit* in the Start menu search bar and selecting the Registry Editor app.
-
 1. Navigate to the following registry key: `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Wef`
-
 1. Right-click on the `Wef` folder and select `New > DWORD (32-bit) Value`.
-
 1. Name the new value `Win32WebView2`.
-
 1. Double-click on the new value and set its value data to `1`.
-
 1. Close the Registry Editor.
-
 1. Restart your Office application.
 
 ## What can I do if I want to freeze the data visual in my presentation but the *public snapshot* isn't clear enough?
