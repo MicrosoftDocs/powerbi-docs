@@ -97,9 +97,16 @@ If you have a Microsoft 365 Office subscription, and the Office build on your de
 
 1. Restart your Office application.
 
-## What can I do if my public snapshot isn't clear enough?
+## What can I do if I want to freeze the data visual in my presentation but the *public snapshot* isn't clear enough?
 
-With the [**Public snapshot** option](service-power-bi-powerpoint-add-in-view-present.md#freeze-a-snapshot-of-the-current-view), anyone who can view the presentation to be able to see the static image of the Power BI content. If the image resolution of your public snapshot isn't sufficient, you can select **Show as a saved image**, which saves the add-in as an image that anyone with permissions to the presentation can view. Although this settings offers better image quality than the public snapshot, **we recommend using the **Public snapshot** option.**
+If you create a static, noninteractive image for your presentation using the [**Public snapshot** option](service-power-bi-powerpoint-add-in-view-present.md#freeze-a-snapshot-of-the-current-view) and the image resolution isn't sufficient, you can select **Show as a saved image**. The **Show as a saved image** option saves the add-in as an image that anyone with permissions to the presentation can view. Although this settings offers better image quality than the public snapshot, **we still recommend using the **Public snapshot** option.**
+
+To enable the **Show as a saved image** option:
+
+1. From the footer menu of the add-in, select the **Enable add-in 'Show as a saved image'** checkbox.
+1. Select **Enable** button on the confirmation prompt.
+
+Now **Show as a saved image** is included in the main PowerPoint menu in the top right corner.
 
 ## How do I know if my presentation is protected by Windows Information Protection?
 
