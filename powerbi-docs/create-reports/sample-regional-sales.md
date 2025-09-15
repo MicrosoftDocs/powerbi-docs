@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 06/29/2023
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # Regional Sales sample for Power BI: Take a tour
