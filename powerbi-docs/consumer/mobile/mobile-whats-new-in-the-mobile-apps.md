@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 06/30/2025
+ms.date: 09/08/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,12 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## September 2025
+
+### NFC tags are now generally available
+
+Near field communication (NFC) tag support is now generally available in Power BI Mobile, making data access faster than ever. To set up the connection between any Power BI item and an NFC tag, open the item on a supported device, and select the **Register on an NFC tag** action. When you're done setting up, tap your device on the tag to view your data instantly.
 
 ## July 2025
 
@@ -687,7 +693,7 @@ We added Android support for remote configuration of the Power BI mobile app's R
 This month we've added support for cross-report drillthrough. You can now tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings.
 
 > [!NOTE]
-> Cross-report drillthrough is only available if it was enabled during report creation. [Learn more about cross-report drillthrough](../../create-reports/desktop-cross-report-drill-through.md).
+> Cross-report drillthrough is only available if it was enabled during report creation. 
 
 
 #### Data sensitivity labels

@@ -18,7 +18,13 @@ LocalizationGroup: consumers
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 As a Power BI service user with a free license, you explore content (such as reports, apps, scorecards, dashboards, and more) in order to make business decisions. That content is created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. In order to share it with users with free licenses, designers need to publish that content to a group workspace backed by a Premium capacity. Premium capacity provides the benefit of unlimited content sharing. Sometimes, designers share content by sending you links to content such as a Power BI app [Apps in the Power BI service](end-user-apps.md), and sometimes the [content automatically installs](end-user-apps.md) and appears in Power BI under **Apps** or **Browse** > **Shared with me**.
+
 There are many different ways designers can share content. But this article is for Power BI users with a free license, and therefore only describes how "free users" receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
+
+> [!TIP]
+> - For a list of Fabric features by SKU type, see [Microsoft Fabric features parity](/fabric/enterprise/fabric-features).
+> 
+> - For a list of features that apply to all the Power BI Premium licenses, including Premium Per User (PPU) and Power BI Embedded, see [Power BI Premium features](/fabric/enterprise/powerbi/service-premium-features).
 
 ![Power BI navigation pane](media/end-user-features/power-bi-shared.png)
 
@@ -54,6 +60,11 @@ To find out what type of license is assigned to your account, select your profil
 ## Power BI feature list for users with a free license
 
 The following chart identifies which tasks can be performed by a user with a **free** license interacting with content in their own **My Workspace** or in **Premium** capacity.
+
+> [!TIP]
+> - For a list of Fabric features by SKU type, see [Microsoft Fabric features parity](/fabric/enterprise/fabric-features).
+> 
+> - For a list of features that apply to all the Power BI Premium licenses, including Premium Per User (PPU) and Power BI Embedded, see [Power BI Premium features](/fabric/enterprise/powerbi/service-premium-features).
 
 The first column represents a free user only working with content in **My workspace**. This user cannot collaborate with colleagues in the Power BI service. Colleagues cannot directly share content with this user, and this user cannot share from **My workspace**.
 

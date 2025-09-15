@@ -157,3 +157,54 @@ sections:
         answer: |
           The capabilities as they exist today are limited to broad consumption. Creating a glossary based on different groups isn't supported today. For example, if usage to engineers means "number of times clicked" and usage to a product manager means "paying customers in a given month" then defining "usage" in the model in two different ways can't be supported today. 
   
+  - name: Prep data for AI
+    questions:
+      - question: |
+           I get an error that says, "Copilot is currently syncing with the data model." What does this mean? 
+        answer: |    
+          For Copilot to be able to perform at its best, it's critical that Copilot can understand the underlying data in the semantic model. One way that Power BI Copilot tries to understand the underlying data is by indexing the semantic model to accurately search for relevant values to match on. This allows Copilot to answer questions effectively based off of the user's prompt. 
+
+          Consider the Hawaii Tourism Dataset. To answer questions like, "How did weather affect tourist visits on Maui?" Copilot needs to understand that Maui is an instance value in the semantic model in the **Island name** column of the **Island** table.
+
+          To provide Copilot the ability to effectively search these instance values, the semantic model is indexed when Q&A is enabled and reindexed when Power BI detects changes were made to the model.  
+
+          #### Model indexing frequency 
+
+          Indexing is done for all models that have the Q&A setting enabled. 
+          
+          > [!NOTE]
+          > The Q&A setting is on by default for *import* models. More details of this setting can be found on the Q&A settings documentation. 
+
+          Reindexing occurs when one of the following actions takes place: 
+
+          - For *import* models: 
+            - The model was published/republished to the service. 
+            - The model was refreshed via manual or scheduled refresh and Copilot/Q&A was used within the last 14 days. 
+          - For *Direct Query* and *Direct Lake* models: 
+            - The model was published/republished to the service.
+            - The index is older than 24 hours and Copilot/Q&A was used within the last 14 days.
+
+          The following message in Copilot indicates that the model is currently in the process of indexing. The message should automatically resolve once the indexing is complete.  
+
+          :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-indexing.png" alt-text="Screenshot of the Copilot message indicating that the model is currently indexing." lightbox="media/copilot-prep-data/copilot-prep-data-faq-indexing.png":::
+
+          
+          > [!NOTE]
+          > This error doesn't mean that Copilot isn't available to users. This message indicates that any new instance values added or changed in the model might not reflect in Copilot's responses until the indexing activity is complete. 
+
+          #### Indexing methodology 
+
+          Text columns in the semantic model are the only columns that are indexed. Columns that are hidden in the AI schema through the **Prep your data for AI** feature aren't indexed.  
+
+          Up to five million instance values are indexed with columns, with smallest cardinality being indexed first. Cardinality of the column is determined with `DISTINCTCOUNT` for import models and `COLUMNSTATISTICS` for Direct Query models. For Direct Query sources, the `COLUMNSTATISTICS` function uses the `APPROXIMATEDISTINCTCOUNT` function for underlying data sources that support it to efficiently determine approximate column cardinalities. To further prevent overloading the underlying system for Direct Query models with an influx of queries due to indexing, the results of `COLUMNSTATISTICS` are cached and the statistics are recomputed every seven days. During the indexing process, if the five million instance value upper bound would be crossed with the indexing of the next column, then the indexing of the column is skipped entirely. 
+
+          If the limit of the indexing is reached, Copilot still answers but based on the index it built, which doesn't include all instance values. Users see the following warning when the semantic model in question hits the indexing limit. 
+
+          :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-index-methodology.png" alt-text="Screenshot of the Copilot message indicating that the model is currently indexing." lightbox="media/copilot-prep-data/copilot-prep-data-faq-index-methodology.png":::
+
+          #### Known limitations 
+
+          - Indexing has an upper bound limit of five million instance values or 1,000 model entities (tables/columns) for large semantic models. 
+          - Text values of 100+ characters aren't indexed.
+          - Direct Query models only indexes columns for data sources that support `APPROXIMATEDISTINCTCOUNT`.
+          - Indexing for Direct Query and Direct Lake models occurs once during a 24-hour time period unless the model is republished.

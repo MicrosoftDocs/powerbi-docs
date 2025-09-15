@@ -71,5 +71,5 @@ Once you apply a background color, clicking on the space between visuals in the 
 
 ## Related content
 
-* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Use cross-report drillthrough in Power BI Desktop](desktop-drillthrough.md)
 * [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
