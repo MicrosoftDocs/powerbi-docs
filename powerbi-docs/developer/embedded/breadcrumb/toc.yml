@@ -5,9 +5,9 @@
   href: /
   topicHref: /
   items:
-  - name: Power Platform
-    href: /power-platform/
-    topicHref: /power-platform/
+  - name: Microsoft Fabric
+    href: /fabric/
+    topicHref: /fabric/
     items:
     - name: Power BI
       tocHref: /power-bi/

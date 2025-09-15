@@ -6,9 +6,9 @@ items:
   href: /
   topicHref: /
   items:
-  - name: Power Platform
-    href: /azure/
-    topicHref: /power-platform/
+  - name: Microsoft Fabric
+    href: /fabric/
+    topicHref: /fabric/
     items:
     - name: Power BI
       tocHref: /azure/
@@ -17,9 +17,9 @@ items:
       - name: Create reports and dashboards
         tocHref: /azure/azure-maps/
         topicHref: /power-bi/create-reports/index
-  - name: Power Platform
-    href: /sql/
-    topicHref: /power-platform/
+  - name: Microsoft Fabric
+    href: /fabric/
+    topicHref: /fabric/
     items:
     - name: Power BI
       tocHref: /power-bi/
@@ -28,9 +28,9 @@ items:
       - name: Create reports and dashboards
         tocHref: /power-bi/create-reports/
         topicHref: /sql/reporting-services/report-builder/index
-  - name: Power Platform
-    href: /
-    topicHref: /power-platform/
+  - name: Microsoft Fabric
+    href: /fabric/
+    topicHref: /fabric/
     items:
     - name: Power BI
       tocHref: /power-bi/
