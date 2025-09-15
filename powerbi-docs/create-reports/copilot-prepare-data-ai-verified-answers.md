@@ -186,6 +186,7 @@ See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-lim
 -  Git integration isn't supported.
 -  Any filters on the visual (visual, page, or report level) that are applied upon verified answer setup are applied to the data in the verified answer.
 - Drill through filters not supported.
+- RLS and OLS are not fully supported as security features for verified answers. In most cases, if a verified answer contains data protected by RLS or OLS, it will not be matched on or returned to users, which prevents broken visuals from appearing. In these situations, Copilot will respond without the verified answer. However, there are scenarios where data may still be exposed (for example, through the file format in GIT). Please note that during public preview, this should not be considered a reliable security feature, even though it will function correctly in the majority of cases.
 - Cross highlighting / cross filtering not supported.
 - Slicers aren't included in verified answer states (slicers applied on the report don't persist in the verified answer).
 - Verified answers don't work if fields in the verified answer are hidden in the model (there's no entry point on the visual).
