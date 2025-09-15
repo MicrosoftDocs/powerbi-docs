@@ -108,9 +108,6 @@ The menu allows you to set the view to live data or to a snapshot (you can also 
 
 - **Snapshot**: When you choose **Snapshot**, only users who have permissions to view the report in Power BI are able see the static image of the Power BI content. Users who don't have permissions are able to request access. This option helps keep you from inadvertently showing Power BI content to unauthorized users.
 - **Public snapshot**: If you choose **Public snapshot**, anyone who can view the presentation to be able to see the static image of the Power BI content, regardless of their permissions in Power BI.
-  
-  > [!NOTE]
-  > If the image resolution of a public snapshot isn't sufficient, you can select **Show as a saved image**, which saves the add-in as an image that anyone with permissions to the presentation can view. This settings offers better image quality than the public snapshot. **However, we recommend using the **Public snapshot** option.**
 
 To restore the interactive view, select **Live data**. The live report page or visual will reload in the state it was last in, but with the latest data from Power BI.
 
