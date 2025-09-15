@@ -19,7 +19,7 @@ Suppose you want your report readers to be able to look at overall sales metrics
 
 ![Animation of Slicer in action.](media/power-bi-visualization-slicers/slicer2.gif)
 
-This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also covers controlling which visuals are affected by a slicer, syncing with slicers on other pages, and filtering and formatting slicers.
+This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also covers controlling which visuals a slicer affects, syncing with slicers on other pages, and filtering and formatting slicers.
 
 These other articles explain how to make specific types of slicers:
 
@@ -71,6 +71,8 @@ This slicer filters data by district manager. If you want to follow along with t
 
 4. Select **Edit** on the menu bar to display the **Visualizations** pane, and then select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: to create a new slicer.
 
+---
+
 5. With the new slicer selected, from the **Data** pane, expand the **District** table. Select **DM** to populate the slicer.
 
 6. Resize and drag the elements on the canvas to make room for the slicer. If you resize the slicer too small, its items are cut off.
@@ -83,11 +85,11 @@ This slicer filters data by district manager. If you want to follow along with t
 
     :::image type="content" source="media/power-bi-visualization-slicers/slicer-vertical-multi-select.png" alt-text="Screenshot showing vertical slicer with three names selected and report filtered.":::
 
-## Control which page visuals are affected by slicers
+## Control which page visuals slicers affect
 
 By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date slicers that you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers.
 
-Use visual interactions to exclude some page visualizations from being affected by others. For example, in the Retail Analysis sample on the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which is information that you may want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
+Use visual interactions to exclude some page visualizations from affecting others. For example, in the Retail Analysis sample on the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which is information that you may want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -108,6 +110,8 @@ Use visual interactions to exclude some page visualizations from being affected 
    :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-service.png" alt-text="Screenshot of the Edit Interactions button in the service version.":::
 
     Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the other visuals on the page. Initially, the **Filter** option is preselected on all the controls.
+
+---
 
 3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **District Manager** slicer from filtering it.
 
@@ -138,6 +142,8 @@ In the current report, the **District Monthly Sales** page has a **District Mana
     The **Sync slicers** pane appears between the **Filters** and **Visualizations** panes.
 
     :::image type="content" source="media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png" alt-text="Screenshot of Sync slicers pane.":::
+
+---
 
 2. On the **District Monthly Sales** page of the report, select the **District Manager** slicer.
 
