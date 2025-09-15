@@ -129,7 +129,7 @@ These requirements pertain to using Copilot within Power BI reports, including t
   - To add a narrative visual to a report or generate Copilot reports, you need *edit access* to the workspace or report, or *build access* to the semantic model
 
 ### Requirements for Copilot in apps
-These requirements pertain to using Copilot in Power BI apps, the full-page Copilot exprience accessible from app navigation.
+These requirements pertain to using Copilot in Power BI apps, the full-page Copilot experience accessible from app navigation.
 
 - The setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
 - The setting for showing Copilot in the app navigation must be enabled. This setting is unique per app and is managed while updating an app under *Advanced settings* > *Show Copilot in app navigation*.
