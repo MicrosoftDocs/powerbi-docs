@@ -13,8 +13,11 @@ ms.reviewer: monaraya
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  To visualize business data against a geographical background, you can add a map to your Power BI paginated report. The type of map that you select depends on what information that you want to communicate in your report. You can add a map that displays locations only, or a bubble map that varies bubble size based on number of households for an area, or a marker map that varies marker style based on the most profitable product for each store, or a line map that displays routes between stores.  
+
   
+
+To visualize business data against a geographical background, you can add a map to your Power BI paginated report. The type of map that you select depends on what information that you want to communicate in your report. You can add a map that displays locations only, or a bubble map that varies bubble size based on number of households for an area, or a marker map that varies marker style based on the most profitable product for each store, or a line map that displays routes between stores.  
+
  A map contains a title, a viewport that specifies the center point and scale, an optional Bing map tile background for the viewport, one or more layers that display spatial data, and a variety of legends that help users interpret the data visualizations. The following illustration shows the basic parts of a map.  
   
  ![Screenshot showing how to add legend color scale and associated elements.](../media/paginated-reports-maps/map-elements.png "Screenshot showing how to add legend color scale and associated elements.")
