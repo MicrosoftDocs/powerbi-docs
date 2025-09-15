@@ -53,9 +53,11 @@ Spend a moment exploring the layout—it’s designed to be intuitive and flexib
 
 ## Connect Power BI to Excel
 
-Many users start with Excel data, and Power BI makes it easy to bring that data into your reports. Here's how:
+Many users start with Excel data, and Power BI makes it easy to bring that data into your reports. 
 
-To import data from Excel into Power BI Desktop:
+### Import data from Excel into Power BI Desktop
+
+To get started with building reports in Power BI, you first need to bring in your data. Here's how to import data from an Excel file:
 
 1. Open Power BI Desktop.
 1. Select **Home > Get Data > Excel**.
@@ -65,7 +67,7 @@ To import data from Excel into Power BI Desktop:
 
 This allows you to build reports and visualizations using your Excel data.
 
-To analyze Power BI data in Excel:
+### Analyze Power BI data in Excel
 
 If you want to go the other way—using Excel to analyze Power BI data—you can use the **Analyze in Excel** feature:
 
