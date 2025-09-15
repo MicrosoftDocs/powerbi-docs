@@ -20,7 +20,7 @@ You can format numbers and dates in paginated reports to improve readability and
 To format numbers in a table, matrix, or chart:
 
 1. Select the text box or cell.
-1. Right-click and choose **Text Box Properties**.
+1. Right-click and choose **Text box properties**.
 1. Go to the **Number** page.
 1. Choose a category (such as **Number**, **Currency**, or **Percentage**).
 1. Adjust options like decimal places, thousand separators, and negative number display.
@@ -54,14 +54,14 @@ You can also use expressions to format dates dynamically:
 
 ### Example date formats
 
-|Format string|Description|Example output|
+|Format type | Format string|Example output|
 |---|---|---|---|
-|d | Short date | 9/15/2025
-| D |Long date | Monday, September 15, 2025 | 
-| g | General date/time (short time) | 9/15/2025 3:30 PM|
-|G | General date/time (long time)9/15/2025 3:30:00 PM|
-|yyyy-MM-dd | ISO format | 2025-09-15|
-| MMM dd, yyyy | Custom format | Sep 15, 2025 |
+| Short date |`d` | `9/15/2025` |
+| Long date | `D` | `Monday, September 15, 2025` | 
+| General date/time (short time) | `g` | `9/15/2025 3:30 PM`|
+| General date/time (long time) | `G` | `9/15/2025 3:30:00 PM`|
+| ISO format | `yyyy-MM-dd`| `2025-09-15`|
+| Custom format | `MMM dd, yyyy`  | `Sep 15, 2025` |
 
 > [!TIP]
 > Use `Globals!ExecutionTime` to display the report run time:
