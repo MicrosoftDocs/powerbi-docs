@@ -1,13 +1,13 @@
 ### 
 ### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
 ###
-- name: Power Platform
-  topicHref: /power-platform/
+- name: Microsoft Fabric
+  topicHref: /fabric/
   items:
   - name: Power BI
     tocHref: /power-bi/
     topicHref: /power-bi/index
     items:
     - name: Collaborate, share, and integrate across products
-      tocHref: /power-bi/consumer/
+      tocHref: /power-bi/collaborate-share/
       topicHref: /power-bi/collaborate-share/index
