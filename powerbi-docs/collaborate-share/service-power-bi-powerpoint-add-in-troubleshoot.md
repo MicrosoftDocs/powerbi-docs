@@ -32,7 +32,8 @@ WebView2 comes standard on recent Windows versions, but may not be included in e
 
 See [Microsoft Edge WebView2](/deployoffice/webview2-install) and Microsoft 365 Apps to learn more about Office Add-ins runtime and WebView2.
 
-## How to install WebView2?
+## How do I install WebView2?
+
 It takes just a minute to install WebView2. You can get and install it from [Download Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/consumer/).
 
 When the installation is done, check to make sure WebView2 is installed. Open the add-in side menu, select **Security Info**. The Security Info window will appear.
@@ -46,7 +47,7 @@ If the Security Info window says **Runtime: Microsoft Edge**, WebView2 is instal
 >[!NOTE]
 > After installing WebView2, you might need to close and re-open all Office applications.
 
-## I installed WebView2, but the Power BI storytelling add-in still doesn't run
+## I installed WebView2, so why doesn't the Power BI storytelling add-in run?
 
 If WebView2 is installed but you still can't use the add-in, it may be because the Office build and/or Windows edition on your device don't meet minimum requirements. The minimum system requirements are as follows:
 
@@ -66,19 +67,19 @@ If your device does meet the minimum system requirements, the problem may be bec
 
 The following sections show you how to check your device's Office build and Windows edition, and, if necessary, [how to tell whether your presentation is protected by Windows Information Protection](#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection).
 
-## Check your Office build and subscription type
+## How do I check my Office build and subscription type?
 
 In PowerPoint, choose **File > Account**, and then press **About PowerPoint**. The following info box will appear. Take note of the **build number** and the **subscription/non-subscription indication**.
 
 ![Screenshot of the about PowerPoint info pane.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-about-powerpoint.png)
 
-## Check your Windows version
+## How do I check my Windows version?
 
 Open **File Explorer**, right-click **This PC**, and choose **Properties**. In the Windows specifications section, note the Windows edition.
 
 ![Screenshot of Windows specifications window.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-windows-specification-window.png)
 
-## Adding a registry key
+## How do I add a registry key?
 
 If you have a Microsoft 365 Office subscription, and the Office build on your device is 16.0.13530.20424 or later but earlier than 16.0.14326.xxxxx, someone with admin permissions on your device can use the following steps to create a registry key that enables you to use the add-in.
 
@@ -95,6 +96,10 @@ If you have a Microsoft 365 Office subscription, and the Office build on your de
 1. Close the Registry Editor.
 
 1. Restart your Office application.
+
+## What can I do if my public snapshot isn't clear enough?
+
+With the [**Public snapshot** option](service-power-bi-powerpoint-add-in-view-present.md#freeze-a-snapshot-of-the-current-view), anyone who can view the presentation to be able to see the static image of the Power BI content. If the image resolution of your public snapshot isn't sufficient, you can select **Show as a saved image**, which saves the add-in as an image that anyone with permissions to the presentation can view. Although this settings offers better image quality than the public snapshot, **we recommend using the **Public snapshot** option.**
 
 ## How do I know if my presentation is protected by Windows Information Protection?
 
