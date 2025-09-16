@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 06/13/2025
+ms.date: 09/15/2025
 LocalizationGroup: Model your data
 no-loc: [SAMEPERIODLASTYEAR,TOTALYTD,TOTALQTD,TOTALMTD,TOTALWTD,DATEADD,PARALLELPERIOD,SUM,CALCULATE,PREVIOUSDAY,PREVIOUSMONTH]
 ---
@@ -32,7 +32,7 @@ The auto-date/time feature automatically creates hidden date tables for each dat
 > [!NOTE]
 > While auto-date/time is a convenient option for simple models, it isn't recommended for more complex scenarios and larger models. For those models, it's preferable to create a dedicated table for more flexibility.
 
-## Adding a date table
+## Add a date table
 
 For most models, it's recommended to add a date table (or more in some scenarios). Many data analysts prefer to create their own date tables, which is fine.
 
@@ -45,12 +45,11 @@ There are multiple ways of creating such a table, including:
 
 Which option is best for you depends on various factors and is beyond the scope of this tutorial.
 
-## Working with time-based calculations
+## Work with time-based calculations
 
 Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are two alternative ways of working with [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) to perform time-based calculations:
 
 - [**Classic time intelligence**](#classic-time-intelligence). The easiest option and works great for Gregorian or shifted Gregorian calendars but has limited flexibility for calendars that are structured differently or for week-based calculations.
-
 - [**Calendar-based time intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations.
 
 > [!NOTE]
@@ -121,17 +120,16 @@ TOTALWTD ( Expr, CalendarName )
 
 Some scenarios may exhibit improved performance when comparing a calendar-based time intelligence function to its classic counterpart. For example, a visual that is grouped by the week and performs a year-to-date calculation using `TOTALYTD ( ..., CalendarName )` should generally execute more quickly than if its classic counterpart, `TOTALYTD ( ..., TableName[DateColumnName] )`, were used. For insight into why this might happen, refer to the [**Context clearing**](#context-clearing) section.
 
-### Enabling the enhanced DAX Time Intelligence preview
+### Enable the enhanced DAX Time Intelligence preview
 
 To get started, you first need to enable the **Enhanced DAX Time Intelligence** preview feature.
 
 1. In Power BI Desktop, go to File > Options and settings > Options > Preview features.
+1. Select the **Enhanced DAX Time Intelligence** preview.
+1. Select **OK**
+1. Restart Power BI Desktop
 
-2. Select the **Enhanced DAX Time Intelligence** preview.
-3. Select **OK**
-4. Restart Power BI Desktop
-
-### Managing calendars
+### Manage calendars
 
 To manage a calendar, right-click the table that contains the calendar or on which you want to define the calendar and choose **Calendar options** or select **Calendar options** in the Table tools ribbon after selecting the table:
 
@@ -154,7 +152,7 @@ The calendar options screen shows the calendars defined on the selected table. H
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-options-for-table.png" alt-text="Screenshot showing the Calendar Options on a table." lightbox="media/desktop-time-intelligence/calendar-options-for-table.png":::
 
-### Assigning column categories
+### Assign column categories
 
 Defining a calendar involves giving it a name and assigning columns to categories. Each category represents a unit of time and specific [column categories](#available-column-categories) are available. You need to at least assign one primary column to a category to save your calendar. Each category should have a [primary column and can have zero or more associated columns](#primary-vs-associated-columns). Whenever any columns associated to a category are in context Power BI knows what unit of time they present. Additionally, for some functions such as [TOTALMTD](/dax/totalmtd-function-dax) Power BI uses the primary column mapped to the relevant category in the referenced calendar to perform the requested calculation.
 To assign a column to a category, select the category from the **Add category** menu and then select the primary and optional associated columns.
@@ -196,7 +194,7 @@ In addition to these categories, you can associate any number of columns on your
 > [!NOTE]
 > We recommend you associate only the columns in your calendar that you want to use in time intelligence calculations.
 
-### Primary vs associated columns
+### Primary versus associated columns
 
 The primary column is required for each category. Whenever that column or any associated columns assigned to the same category on the referenced calendar are in context or the category is required to perform a calculation, Power BI uses the primary column. Additionally, the primary columns are used for sorting. If the values in the primary column don't allow it to be sortable as expected you can either [configure the primary column to sort by another column](../create-reports/desktop-sort-by-column.md) or use another column and make the original column an associated column. For example, a column with textual data containing month number and year in a format of `mm-yyyy` (that is, `01-2024`, `02-2024`, and so on) won't sort correctly across multiple years, but a column that uses the `yyyy-mm` format will:
 
@@ -256,7 +254,7 @@ The offline validations check the following rules and  returns a warning if any 
 - columns associated with categories on the same level have a one-to-one cardinality ratio. For example, columns associated with the Month category should have a one-to-one cardinality with the combinations of the columns associated with the Month of Year and Year categories.
 - primary and associated columns assigned to the same category have a one-to-one cardinality ratio. For example, when assigned to the Month category, a primary column Month and an associated column EnglishMonthName should have a one-to-one cardinality.
 
-### Working with calendars
+### Work with calendars
 
 Once a calendar is defined, you can refer to it in [Time intelligence functions](/dax/time-intelligence-functions-dax). For example, the following measure calculates a total month to date value of Total Quantity against the **ISO-454** calendar:
 
@@ -279,7 +277,7 @@ Many [Time intelligence functions](/dax/time-intelligence-functions-dax) require
 > [!NOTE]
 > For some functions their name is indicative of which level the calculation operates (for example, [TOTALYTD](/dax/totalytd-function-dax)), while for others it's dependent on the parameters and context (for example, [DATEADD](/dax/dateadd-function-dax)).
 
-### Context Clearing
+### Context clearing
 
 Time intelligence functions operate by starting at a point in time, and then performing some operation on it in order to yield a different point in time. Naturally, the initial point in time may conflict with this result, thus causing a filter context intersection that by default, would yield partial or empty results. For example, consider the following scenario.
 
@@ -301,7 +299,7 @@ Two basic measures are defined: one to compute the total sales, and another to c
 [LastQuarterSales] = CALCULATE ( [TotalSales], DATEADD( GregorianCalendar, -1, QUARTER ) )
 ```
 
-#### Example: how context clearing works
+#### Example: How context clearing works
 
 Our table visual browses at a month granularity using the **Year** and **MonthOfYear** columns:
 
@@ -361,11 +359,11 @@ If filter context were set on the category "Quarter", the process would be as fo
 
     :::image type="content" source="media/desktop-time-intelligence/context-clearing-on-quarter-1.png" alt-text="Filter context clearing behavior example starting from category Quarter: Dependencies." lightbox="media/desktop-time-intelligence/context-clearing-on-quarter-1.png":::
 
-2. Next, all dependents of "Quarter" and its dependencies would be considered.
+1. Next, all dependents of "Quarter" and its dependencies would be considered.
 
     :::image type="content" source="media/desktop-time-intelligence/context-clearing-on-quarter-2.png" alt-text="Filter context clearing behavior example starting from category Quarter: Dependents." lightbox="media/desktop-time-intelligence/context-clearing-on-quarter-2.png":::
 
-3. Finally, the end result would be the following. All red colored categories would have their prior filter context removed and new context is set on Quarter. 
+1. Finally, the end result would be the following. All red colored categories would have their prior filter context removed and new context is set on Quarter. 
 
     :::image type="content" source="media/desktop-time-intelligence/context-clearing-on-quarter-3.png" alt-text="Filter context clearing behavior example starting from category Quarter: Results" lightbox="media/desktop-time-intelligence/context-clearing-on-quarter-3.png":::
 
@@ -455,7 +453,7 @@ createOrReplace
 > [!NOTE]
 > Notice that if you don't specify any category for the `calendarColumnGroup` in TMDL, the columns are tagged as [time-related](#time-related-columns). In this example, **Holiday Name** and **isWorkingDay** are time-related columns on the **Demo Calendar**.
 
-### Putting it all together: examples of time shifting
+### Put it all together: Examples of time shifting
 
 Some [time intelligence functions](/dax/time-intelligence-functions-dax) shift context only laterally, considering all columns, while others perform hierarchical shifts—keeping or clearing context based on whether columns are tagged in the calendar. The time intelligence functions can be divided into two groups based on whether they allow for hierarchical shifts:
 
@@ -574,10 +572,12 @@ In this case, `FullLastYearQuantityTimeRelatedOverride` returns the same results
 
 The elaborate example above shows that different time intelligence functions behave differently depending on whether columns are tagged as time-related in the calendar. [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax) only perform lateral time shifts. All other [time intelligence functions](/dax/time-intelligence-functions-dax) allow hierarchical time shifts.
 
-### Using DATEADD with calendars
+### Use DATEADD with calendars
+
 The [DATEADD](/dax/dateadd-function-dax) function has specific parameters that allow fine-grained control over how shifts are performed when the selection is on a more granular level than the shift level indicated by `interval` parameter in DATEADD. This happens, for example,  if you're showing data on the date level but set the `interval` parameter to DATEADD to **MONTH**. For example, in a Gregorian calendar, when shifting a period that spans March 3 to 10 by a month will result in April 3 to 10. However, since months in Gregorian calendars vary in length, this can lead to ambiguities when shifting. Below are example scenarios based on a Gregorian calendar:
 
-#### Shifting from a shorter to a longer period
+#### Shift from a shorter to a longer period
+
 For example, shifting forward one month with a selection in February, so the target month is March.
 You can use the `extension` parameter to influence how the shift is performed:
 
@@ -586,7 +586,8 @@ You can use the `extension` parameter to influence how the shift is performed:
 |`precise`|This keeps the original date range strictly.|February 25-28 is shifted to March 25-28.|
 |`extended`|Allows the window to expand toward the end of the month.|February 25-28 is shifted to March 25-31.|
 
-#### Shifting from a longer to a shorter period
+#### Shift from a longer to a shorter period
+
 For example, shifting backward one month with a selection in March, so the target month is February.
 
 You can use the `truncation` parameter to influence how the shift is performed:
@@ -625,8 +626,7 @@ Instead, you can do:
 ThisWorks = CALCULATETABLE ( PREVIOUSDAY ( 'Calendar' ), PREVIOUSMONTH( 'Calendar' ) )
 ```
 
-
-## Creating a date table using built-in tools
+## Create a date table using built-in tools
 
 The following examples create a date table from January 1, 2010 to December 31, 2030 using either Power Query M or DAX. It includes the following columns: Year, Month Number, Month Name, Month Year, Quarter, Year Quarter, Day, and Date.
 
