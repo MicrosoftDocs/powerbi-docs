@@ -23,11 +23,11 @@
       href: service-notebooks.md  
     - name: "Edit data models in the Power BI service (preview)"
       href: service-edit-data-models.md  
-    - name: "Implementing time-based calculations in Power BI"
+    - name: "Implement time-based calculations in Power BI"
       href: desktop-time-intelligence.md
     - name: "Use semantic model version history (preview)"
       href: service-semantic-model-version-history.md  
-    - name: "Using calculations options in Power BI Desktop"
+    - name: "Use calculations options in Power BI Desktop"
       href: desktop-calculations-options.md  
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
@@ -67,7 +67,7 @@
       href: datamarts/datamarts-understand.md
     - name: "Get started with datamarts (preview)"
       href: datamarts/datamarts-get-started.md   
-    - name: "Analyzing datamarts (preview)"
+    - name: "Analyze datamarts (preview)"
       href: datamarts/datamarts-analyze.md         
     - name: "Discover data with datamarts (preview)"
       href: datamarts/datamarts-discovery.md          
@@ -97,21 +97,21 @@
       href: dataflows/dataflows-machine-learning-integration.md  
     - name: "Dataflows best practices"
       href: ./dataflows/dataflows-best-practices.md  
-    - name: "Understanding and optimizing dataflow refresh"
+    - name: "Understand and optimize dataflow refresh"
       href: ./dataflows/dataflows-understand-optimize-refresh.md  
-    - name: "Using DirectQuery with dataflows"
+    - name: "Use DirectQuery with dataflows"
       href: ./dataflows/dataflows-directquery.md       
     - name: "Dataflows considerations and limitations"
       href: dataflows/dataflows-features-limitations.md
     - name: "Streaming dataflows (preview)"
       href: dataflows/dataflows-streaming.md
-    - name: "Developing dataflows solutions"
+    - name: "Develop dataflows solutions"
       href: dataflows/dataflows-develop-solutions.md      
     - name: "Connect to data created by Power Platform dataflows in Power BI Desktop"
       href: desktop-connect-dataflows.md      
   - name: Log analytics
     items: 
-    - name: "Using Azure Log Analytics in Power BI"
+    - name: "Use Azure Log Analytics in Power BI"
       href: log-analytics/desktop-log-analytics-overview.md
     - name: "Configuring Azure Log Analytics in Power BI"
       href: log-analytics/desktop-log-analytics-configure.md
@@ -157,7 +157,7 @@
         href: desktop-calculated-columns.md
       - name: "Create calculated tables"
         href: desktop-calculated-tables.md
-      - name: "Using visual calculations (preview)"
+      - name: "Use visual calculations (preview)"
         href: desktop-visual-calculations-overview.md
       - name: "Create measures for data analysis"
         href: desktop-measures.md
