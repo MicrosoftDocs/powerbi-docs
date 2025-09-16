@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 02/26/2025
+ms.date: 09/15/2025
 LocalizationGroup: Model your data
 ---
 # Set and use date tables in Power BI Desktop
@@ -66,11 +66,11 @@ When you specify your own **date table**, you need to make sure the data type is
 
     :::image type="content" source="media/desktop-date-tables/date-tables_04.png" alt-text="Screenshot of Power BI Desktop showing the Date filter in the Fields pane.":::
 
-2. On the **Column tools** tab, select **Data type** and then choose the dropdown arrow to show available data types.
+1. On the **Column tools** tab, select **Data type** and then choose the dropdown arrow to show available data types.
 
     :::image type="content" source="media/desktop-date-tables/date-tables_05.png" alt-text="Screenshot of Power BI Desktop showing the Modeling tab with the Data Type filter selected.":::
 
-3. Specify the data type for your column.
+1. Specify the data type for your column.
 
 ## Related content
 
