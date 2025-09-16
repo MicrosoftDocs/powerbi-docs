@@ -38,8 +38,8 @@ For most models, it's recommended to add a date table (or more in some scenarios
 
 There are multiple ways of creating such a table, including:
 
-- **Power Query M**. You can use the [List.Dates](/powerquery-m/list-dates) function. [An example is provided later in this document](#creating-a-date-table-using-built-in-tools).
-- **DAX**. You can use the [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-function-dax) functions to generate a basic calculated date table. You can also use a more advanced DAX statement to create a date table. [An example is provided later in this document](#creating-a-date-table-using-built-in-tools).
+- **Power Query M**. You can use the [List.Dates](/powerquery-m/list-dates) function. [An example is provided later in this document](#create-a-date-table-using-built-in-tools).
+- **DAX**. You can use the [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-function-dax) functions to generate a basic calculated date table. You can also use a more advanced DAX statement to create a date table. [An example is provided later in this document](#create-a-date-table-using-built-in-tools).
 - **External tools**.
 - **Loading from a source**, such as a source system, a file, or another Power BI semantic model.
 
@@ -133,7 +133,7 @@ To get started, you first need to enable the **Enhanced DAX Time Intelligence** 
 
 To manage a calendar, right-click the table that contains the calendar or on which you want to define the calendar and choose **Calendar options** or select **Calendar options** in the Table tools ribbon after selecting the table:
 
-:::image type="content" source="media/desktop-time-intelligence/calendar-options-entrypoints.png" alt-text="Screenshot showing the entry points to open the Calendar Options on a table." lightbox="media/desktop-time-intelligence/calendar-options-entrypoints.png":::
+:::image type="content" source="media/desktop-time-intelligence/calendar-options-entry-points.png" alt-text="Screenshot showing the entry points to open the Calendar Options on a table." lightbox="media/desktop-time-intelligence/calendar-options-entry-points.png":::
 
 Alternatively you can use external tools or the [TMDL view](desktop-tmdl-view.md) to define a calendar. For more information, see the [TMDL script](#tmdl-script-for-calendars).
 
@@ -154,7 +154,7 @@ The calendar options screen shows the calendars defined on the selected table. H
 
 ### Assign column categories
 
-Defining a calendar involves giving it a name and assigning columns to categories. Each category represents a unit of time and specific [column categories](#available-column-categories) are available. You need to at least assign one primary column to a category to save your calendar. Each category should have a [primary column and can have zero or more associated columns](#primary-vs-associated-columns). Whenever any columns associated to a category are in context Power BI knows what unit of time they present. Additionally, for some functions such as [TOTALMTD](/dax/totalmtd-function-dax) Power BI uses the primary column mapped to the relevant category in the referenced calendar to perform the requested calculation.
+Defining a calendar involves giving it a name and assigning columns to categories. Each category represents a unit of time and specific [column categories](#available-column-categories) are available. You need to at least assign one primary column to a category to save your calendar. Each category should have a [primary column and can have zero or more associated columns](#primary-versus-associated-columns). Whenever any columns associated to a category are in context Power BI knows what unit of time they present. Additionally, for some functions such as [TOTALMTD](/dax/totalmtd-function-dax) Power BI uses the primary column mapped to the relevant category in the referenced calendar to perform the requested calculation.
 To assign a column to a category, select the category from the **Add category** menu and then select the primary and optional associated columns.
 
 :::image type="content" source="media/desktop-time-intelligence/calendar-select-category.png" alt-text="Screenshot showing the calendar creation and edit screen." lightbox="media/desktop-time-intelligence/calendar-select-category.png":::
