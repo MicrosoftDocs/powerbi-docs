@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: JulCsc
   ms.author: juliacawthra
-  ms.date: 10/22/2024
+  ms.date: 09/15/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -49,7 +49,7 @@ landingContent:
             url: desktop-modeling-view.md
           - text: "Many-to-many relationships"
             url: desktop-many-to-many-relationships.md
-          - text: "Implementing time-based calculations"
+          - text: "Implement time-based calculations"
             url: desktop-time-intelligence.md
       - linkListType: how-to-guide
         links:
