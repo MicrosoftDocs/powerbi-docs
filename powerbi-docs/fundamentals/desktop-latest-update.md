@@ -43,7 +43,7 @@ For a quick summary of the September features, read on. For a detailed look at t
 |**Save explorations to pro workspaces**|Explorations can now be saved to Pro workspaces, making it easier to share insights. For more information, see [Use Explore in the Power BI service](../consumer/explore-data-service.md)|
 |**Find Power BI reports in Microsoft 365**|Search for Power BI reports in Microsoft 365 by title, description, or chart details, improving discovery in M365 Copilot and Office search. For more information, see [Share data with your Microsoft 365 services](/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services#how-to-turn-sharing-with-microsoft-365-services-on-and-off).|
 |**Copilot search improvements**|Copilot search now boosts content marked as "Prepped for AI," provides descriptive captions for reports, and supports workspace and item type hints. For more information, see [Find content with Power BI Copilot search](../create-reports/copilot-search-new-content.md).|
-|**Prep data for AI coming soon to the Power BI service**|Prepare semantic models for AI directly in the Power BI service, including Direct Lake models. Features include schema selection, verified answers, and AI instructions. For more information, see [Mark your model as prepped for AI](../create-reports/copilot-prepare-data-ai#mark-your-model-as-prepped-for-ai).|
+|**Prep data for AI coming soon to the Power BI service**|Prepare semantic models for AI directly in the Power BI service, including Direct Lake models. Features include schema selection, verified answers, and AI instructions. For more information, see [Mark your model as prepped for AI](../create-reports/copilot-prepare-data-ai.md#mark-your-model-as-prepped-for-ai).|
 
 ## Reporting
 
@@ -65,7 +65,7 @@ For a quick summary of the September features, read on. For a detailed look at t
 |**Direct Lake on OneLake + import in web modeling (preview)**|Combine Direct Lake and import table storage modes in web modeling for flexible data integration. For more information, see [Direct Lake overview](/fabric/fundamentals/direct-lake-overview).|
 |**Direct Lake on OneLake + import in desktop**|Power BI Desktop can also live edit semantic models with both Direct Lake and import tables. For more information, see [Direct Lake overview](/fabric/fundamentals/direct-lake-overview).|
 |**DAX user-defined functions (preview)**|Define reusable DAX functions with parameters for cleaner, maintainable logic. For more information, see [Power BI DAX User Data Functions](https://aka.ms/powerbi-dax-UDFs-docs).|
-|**Refresh data or schema options in Power BI Desktop**|Choose to refresh data only or sync schema only, providing more control over refresh operations. For more information, see [Data refresh in Power BI](../connect-data/refresh-data.md#Power-BI-Desktop-refresh-options).|
+|**Refresh data or schema options in Power BI Desktop**|Choose to refresh data only or sync schema only, providing more control over refresh operations. For more information, see [Data refresh in Power BI](../connect-data/refresh-data.md#power-bi-desktop-refresh-options).|
 |**Power BI content shared in Teams now opens in a separate window**|Power BI items shared in Teams now open in a separate window, preserving the chat view. For more information, see [Link preview cards in Microsoft Teams chats and channels](../collaborate-share/service-teams-link-preview.md).|
 
 ## Mobile
@@ -78,7 +78,7 @@ For a quick summary of the September features, read on. For a detailed look at t
 
 | Feature | Details and related documentation |
 |---|---|
-|**New tenant setting for set alert button visibility**|Admins can control visibility of the 'Set alert' button for creating Fabric Activator alerts. For more information, see [Create an alert in Power BI report](/fabric/real-time-intelligence/data-activator/activator-get-data-power-bi.md)|
+|**New tenant setting for set alert button visibility**|Admins can control visibility of the 'Set alert' button for creating Fabric Activator alerts. For more information, see [Create an alert in Power BI report](/fabric/real-time-intelligence/data-activator/activator-get-data-power-bi)|
 
 ## Visualizations
 
