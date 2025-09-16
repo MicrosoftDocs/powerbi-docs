@@ -1,5 +1,5 @@
 ---
-title: Implementing time-based calculations in Power BI
+title: Implement time-based calculations in Power BI
 description: Learn how to use time intelligence to implement time-based calculations
 author: jeroenterheerdt
 ms.author: jterh
@@ -11,7 +11,7 @@ ms.date: 09/15/2025
 LocalizationGroup: Model your data
 no-loc: [SAMEPERIODLASTYEAR,TOTALYTD,TOTALQTD,TOTALMTD,TOTALWTD,DATEADD,PARALLELPERIOD,SUM,CALCULATE,PREVIOUSDAY,PREVIOUSMONTH]
 ---
-# Implementing time-based calculations in Power BI
+# Implement time-based calculations in Power BI
 
 Power BI offers multiple tools to perform time-based calculations, which either rely on automatic date tables or date tables you add.
 
@@ -19,7 +19,7 @@ We recommend using [calendar-based time intelligence (preview)](#calendar-based-
 
 This table compares the three tools provided:
 
-|Tool|Set up effort required|Ease of management|Flexibility|Notes|
+|Tool|Setup effort required|Ease of management|Flexibility|Notes|
 |--|--|--|--|--|
 |[Auto-date/time](desktop-auto-date-time.md)|virtually zero|hard|low|Increases model size due to multiple hidden date tables created|
 |[Classic time intelligence](#classic-time-intelligence)|medium|easy|low|Requires creation of a date table, assumes Gregorian or shifted Gregorian calendar, suffers from performance issues in some specific scenarios|
