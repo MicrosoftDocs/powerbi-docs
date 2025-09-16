@@ -19,7 +19,7 @@ ai-usage: ai-assisted
 
 The [Power BI September 2025 Feature Summary blog post](https://aka.ms/fabricsept2025update) introduces updates for users and coincides with FabCon Vienna. This release introduces several key enhancements, including, updates to Copilot and AI capabilities such as the standalone Copilot default-on experience and important changes to default visuals like the Bing Maps Visual icon. Dive into the details to discover how these innovations can elevate your Power BI experience.
 
-For a quick summary of the September features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://ms/fabricsept2025update). You can also watch the September demos in the [monthly playlist](https://youtu.be/CQVQtXr9EbI).
+For a quick summary of the September features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://aka.ms/fabricsept2025update). You can also watch the September demos in the [monthly playlist](https://youtu.be/CQVQtXr9EbI).
 
 > **Download** the [September 2025 version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494).
 
