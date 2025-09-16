@@ -19,7 +19,7 @@ ai-usage: ai-assisted
 
 The [Power BI September 2025 Feature Summary blog post](https://aka.ms/fabricsept2025update) introduces updates for users and coincides with FabCon Vienna. This release introduces several key enhancements, including, updates to Copilot and AI capabilities such as the standalone Copilot default-on experience and important changes to default visuals like the Bing Maps Visual icon. Dive into the details to discover how these innovations can elevate your Power BI experience.
 
-For a quick summary of the September features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://aka.ms/fabricsept2025update). You can also watch the September demos in the [monthly playlist](https://youtu.be/CQVQtXr9EbI).
+For a quick summary of the September features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://ms/fabricsept2025update). You can also watch the September demos in the [monthly playlist](https://youtu.be/CQVQtXr9EbI).
 
 > **Download** the [September 2025 version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494).
 
@@ -49,7 +49,7 @@ For a quick summary of the September features, read on. For a detailed look at t
 
 | Feature | Details and related documentation |
 |---|---|
-|**Enhanced DAX time intelligence (preview)**|Define custom calendars, such as fiscal or 4-5-4 retail calendars, for precise time-based calculations. Includes new functions like TOTALWTD and PREVIOUSWEEK. For more information, see [Implement time-based calculations in Power BI](https://aka.ms/powerbi-calendar-TI-docs).|
+|**Enhanced DAX time intelligence (preview)**|Define custom calendars, such as fiscal or 4-5-4 retail calendars, for precise time-based calculations. Includes new functions like TOTALWTD and PREVIOUSWEEK. For more information, see [Implement time-based calculations in Power BI](../transform-model/desktop-time-intelligence.md).|
 |**Performance analyzer available when editing a report in the web**|Observe visual load times and copy DAX queries directly in the web report editing experience. For more information, see [Use Performance Analyzer to examine report element performance in Power BI Desktop](../create-reports/desktop-performance-analyzer.md).|
 |**Translytical task flows are now enabled by default in Power BI**|Automate tasks like updating records and triggering workflows directly from reports using Fabric User data functions. For more information, see [Understand translytical task flows](../create-reports/translytical-task-flow-overview.md).|
 
@@ -64,7 +64,7 @@ For a quick summary of the September features, read on. For a detailed look at t
 |**Fabric Notebooks for Power BI: best practices analyzer and memory analyzer (generally available)**|Analyze semantic models with Fabric Notebooks for performance, memory, and storage optimization. For more information, see [Use notebooks with a semantic model](https://go.microsoft.com/fwlink/?linkid=2303903).|
 |**Direct Lake on OneLake + import in web modeling (preview)**|Combine Direct Lake and import table storage modes in web modeling for flexible data integration. For more information, see [Direct Lake overview](/fabric/fundamentals/direct-lake-overview).|
 |**Direct Lake on OneLake + import in desktop**|Power BI Desktop can also live edit semantic models with both Direct Lake and import tables. For more information, see [Direct Lake overview](/fabric/fundamentals/direct-lake-overview).|
-|**DAX user-defined functions (preview)**|Define reusable DAX functions with parameters for cleaner, maintainable logic. For more information, see [Power BI DAX User Data Functions](https://aka.ms/powerbi-dax-UDFs-docs).|
+|**DAX user-defined functions (preview)**|Define reusable DAX functions with parameters for cleaner, maintainable logic. For more information, see [DAX user-data functions](../transform-model/desktop-user-defined-functions-overview.md).|
 |**Refresh data or schema options in Power BI Desktop**|Choose to refresh data only or sync schema only, providing more control over refresh operations. For more information, see [Data refresh in Power BI](../connect-data/refresh-data.md#power-bi-desktop-refresh-options).|
 |**Power BI content shared in Teams now opens in a separate window**|Power BI items shared in Teams now open in a separate window, preserving the chat view. For more information, see [Link preview cards in Microsoft Teams chats and channels](../collaborate-share/service-teams-link-preview.md).|
 
