@@ -17,15 +17,15 @@ ai-usage: ai-assisted
 
 # What's new in Power BI: September 2025 update (version 2.147.909.0)
 
-The [Power BI September 2025 Feature Summary blog post](https://powerbi.microsoft.com/blog/2025/09/) introduces updates for users and coincides with FabCon Vienna. This release introduces several key enhancements, including, updates to Copilot and AI capabilities such as the standalone Copilot default-on experience and important changes to default visuals like the Bing Maps Visual icon. Dive into the details to discover how these innovations can elevate your Power BI experience.
+The [Power BI September 2025 Feature Summary blog post](https://powerbi.microsoft.com/blog/power-bi-september-2025-feature-summary/) introduces updates for users and coincides with FabCon Vienna. This release introduces several key enhancements, including, updates to Copilot and AI capabilities such as the standalone Copilot default-on experience and important changes to default visuals like the Bing Maps Visual icon. Dive into the details to discover how these innovations can elevate your Power BI experience.
 
-For a quick summary of the September features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://powerbi.microsoft.com/blog/2025/09/). You can also watch the September demos in the [monthly playlist](https://youtu.be/CQVQtXr9EbI).
+For a quick summary of the September features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://powerbi.microsoft.com/blog/power-bi-september-2025-feature-summary/). You can also watch the September demos in the [monthly playlist](https://youtu.be/CQVQtXr9EbI).
 
 > **Download** the [September 2025 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ## Events and announcements
 
-- **Power BI Dataviz World Championships**: Four finalists are taking the stage at FabCon Vienna to compete for the title of world champion. Follow the [Power BI September 2025 Feature Summary blog](https://powerbi.microsoft.com/blog/2025/09/) to find out who was crowned champion.
+- **Power BI Dataviz World Championships**: Four finalists are taking the stage at FabCon Vienna to compete for the title of world champion. Follow the [Power BI September 2025 Feature Summary blog](https://powerbi.microsoft.com/blog/power-bi-september-2025-feature-summary/) to find out who was crowned champion.
 - **Get certified in Microsoft Fabric**: Join the thousands of other Fabric users who’ve achieved over 50,000 certifications collectively for the Fabric Analytics Engineers and Fabric Data Engineers roles. To celebrate FabCon Vienna, we are offering the entire Fabric community a **50% discount** on exams *DP-600*, *DP-700*, *DP-900*, and *PL-300*.
 
 ## General
