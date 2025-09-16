@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: tutorial
-ms.date: 03/15/2024
+ms.date: 09/16/2025
 LocalizationGroup: Learn more
 ---
 
@@ -53,7 +53,7 @@ Values calculated from measures change in response to your interactions with you
 
 :::image type="content" source="media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png" alt-text="Screenshot of the chart showing SaleAmount by Country/Region.":::
 
-When the result of a measure changes because of an interaction with your report, you've affected your measure’s *context*. Every time you interact with your report visualizations, you're changing the context in which a measure calculates and displays its results.
+When the result of a measure changes because of an interaction with your report, you affect your measure’s *context*. Every time you interact with your report visualizations, you're changing the context in which a measure calculates and displays its results.
 
 ## Create and use your own measures
 
@@ -96,7 +96,7 @@ To create a measure, follow these steps:
     >[!TIP]
     >When you create a measure from the ribbon, you can create it in any of your tables, but it's easier to find if you create it where you plan to use it. In this case, select the **Sales** table first to make it active, and then choose **New measure**.
 
-    The formula bar appears along the top of the report canvas, where you can rename your measure and enter a DAX formula.
+    In the formula bar that appears along the top of the report canvas, you can rename your measure and enter a DAX formula.
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formulabar.png" alt-text="Screenshot of the formula bar.":::
 
@@ -234,7 +234,7 @@ Suppose you want to find out which products have the highest net sales amount pe
 
 ## What you've learned
 
-Measures give you the power to get the insights you want from your data. You've learned how to create measures by using the formula bar, name them whatever makes most sense, and find and select the right formula elements by using the DAX suggestion lists. You've also been introduced to context, where the results of calculations in measures change according to other fields or other expressions in your formula.
+Measures give you the power to get the insights you want from your data. You learned how to create measures by using the formula bar and give them names that make sense to you. You learned how to find and select the right formula elements by using the DAX suggestion lists. Finally, you were introduced to context, where the results of calculations in measures change according to other fields or other expressions in your formula.
 
 ## Related content
 
