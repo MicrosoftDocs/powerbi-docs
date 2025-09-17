@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: tutorial
-ms.date: 03/15/2024
+ms.date: 09/17/2025
 LocalizationGroup: Learn more
 ---
 
