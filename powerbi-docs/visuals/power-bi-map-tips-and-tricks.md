@@ -8,7 +8,7 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/29/2024
+ms.date: 09/17/2025
 LocalizationGroup: Visualizations
 ---
 
