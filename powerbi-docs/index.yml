@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: JulCsc #Required; your GitHub user alias, with correct capitalization.
   ms.author: juliacawthra #Required; microsoft alias of author; optional team alias.
-  ms.date: 01/25/2025
+  ms.date: 09/10/2025
   no-loc: [Copilot]
 
 # highlightedContent section (optional)
@@ -24,9 +24,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Join the Fabric Community Conference
+    - title: Learn about the latest release
       itemType: whats-new
-      url: https://fabricconf.com/#!/
+      url: fundamentals/desktop-latest-update.md
     # Card
     - title: Download Power BI Desktop for free
       itemType: get-started
@@ -80,17 +80,17 @@ conceptualContent:
             url: fundamentals/index.yml
             text: See all getting started docs
         # Card
-        - title: Copilot in Power BI (preview)
+        - title: Copilot in Power BI
           links:
             - url: create-reports/copilot-introduction.md
               itemType: concept
               text: Copilot for Power BI overview
             - url: create-reports/copilot-evaluate-data.md
               itemType: concept
-              text: Update your data model to work with Copilot (preview)
+              text: Update your data model to work with Copilot
             - url: create-reports/copilot-create-report-service.md
               itemType: tutorial
-              text: Create report pages with Copilot for Power BI (preview)
+              text: Create report pages with Copilot for Power BI
           # footerLink (optional)
           footerLink:
             url: /fabric/get-started/copilot-fabric-overview?toc=/power-bi/create-reports/breadcrumb/toc.yml
@@ -248,10 +248,7 @@ conceptualContent:
             - url: /power-bi/consumer/mobile/mobile-apps-for-mobile-devices
               itemType: learn
               text: Get data on the go with the mobile apps
-          # footerLink (optional)
-          footerLink:
-            url: consumer/mobile/index.yml
-            text: See all mobile apps docs
+
     - title: Additional Power BI resources # < 60 chars (Optional; Remove if not applicable.)
       items:
         # Card

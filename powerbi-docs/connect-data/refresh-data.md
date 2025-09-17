@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/24/2025
+ms.date: 09/10/2025
 LocalizationGroup: Data refresh
 ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
@@ -65,10 +65,10 @@ Because Power BI doesn't import the data, you don't need to run a data refresh. 
 
 :::image type="content" source="media/refresh-data/refresh-schedule-01.png" alt-text="Screenshot of refresh schedule options.":::
 
-
 > [!NOTE]
-> * Semantic models in Import mode and composite semantic models that combine Import mode and DirectQuery mode don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. Semantic models that are updated based on the XMLA endpoint will only clear the cached tile data (invalidate cache). The tile caches aren't refreshed until each user accesses the dashboard. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Semantic models** tab. For composite semantic models, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
-> * Power BI doesn't support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
+> Semantic models in Import mode and composite semantic models that combine Import mode and DirectQuery mode don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. Semantic models that are updated based on the XMLA endpoint will only clear the cached tile data (invalidate cache). The tile caches aren't refreshed until each user accesses the dashboard. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Semantic models** tab. For composite semantic models, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
+>
+> Power BI doesn't support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
 
 #### Push semantic models
 
@@ -87,25 +87,23 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 
 Another way to consider the different refresh types is what they impact and where you can apply them. Changes in data source table structure, or schema, such as a new, renamed, or removed column can only be applied in Power BI Desktop, and in the Power BI service they can cause the refresh to fail. For a quick reference on what they impact, refer to the following table.
 
-<br> | Refresh of report visuals | Data refresh | Schema refresh
----------|----------|---------|--------- 
- What do the different refresh types do? | **Queries used to populate visuals are refreshed.** <br><br> For visuals using DirectQuery tables, the visual will query to get the latest data from the data source. <br><br> For visuals using imported tables, the visual will only query data already imported to the semantic model on the last data refresh. | **Data is refreshed from the data source.** <br><br>Doesn't apply to DirectQuery tables as they are at the visual level and rely on refresh of report visuals. <br><br> For imported tables, the data is refreshed from the source. | **Any data source table structure change since previous refresh will show.** <br><br> For example: To show a new column added to a Power BI Dataflow or SQL Database view. <br><br> Applies to imported, DirectQuery, and Direct Lake tables.
+|<br> | Refresh of report visuals | Data refresh | Schema refresh|
+---------|----------|---------|--------- |
+| What do the different refresh types do? | **Queries used to populate visuals are refreshed.** <br><br> For visuals using DirectQuery tables, the visual will query to get the latest data from the data source. <br><br> For visuals using imported tables, the visual will only query data already imported to the semantic model on the last data refresh. | **Data is refreshed from the data source.** <br><br>Doesn't apply to DirectQuery tables as they are at the visual level and rely on refresh of report visuals. <br><br> For imported tables, the data is refreshed from the source. | **Any data source table structure change since previous refresh will show.** <br><br> For example: To show a new column added to a Power BI Dataflow or SQL Database view. <br><br> Applies to imported, DirectQuery, and Direct Lake tables.|
  
- In **Power BI Desktop**, refresh of report visuals, data refresh, and schema refresh all happen together using
+ In **Power BI Desktop**, refresh of report visuals, data refresh, and schema refresh all happen together using:
 
 - **Home** ribbon > **Refresh** button.
-
 - **Home** ribbon > **Transform data** > **Close & Apply** button.
-
 - The context menu (right-click or select the ellipsis) on any table in the Data pane: choose **Refresh data**.
 
- These refresh types can't always be applied independently, and where you can apply them is different in Power BI Desktop and the Power BI service. For a quick reference, refer to the following table.
+These refresh types can't always be applied independently, and where you can apply them is different in Power BI Desktop and the Power BI service. For a quick reference, refer to the following table.
  
-|<br>  | Refresh of report visuals | Data refresh | Schema refresh
-|---------|----------|---------|--------- 
- | In **Power BI Desktop**| <ul> <li>**Optimize** ribbon > **Refresh visuals** <li>**View** ribbon > **Performance Analyzer** button > **Refresh visuals** <li> Creating and changing visuals causing a DAX query to run <li>When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) <li> Opening the PBIX file </ul> | Not available independently from other refresh types | Not available independently from other refresh types
- | In the **Power BI service** | <ul><li>When the browser loads or reloads the report	<li> Clicking the **Refresh Visuals** top right menu bar button <li> Clicking the **Refresh** button in edit mode <li> When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) | <ul> <li> Scheduled refresh <li>	Refresh now <li> Refresh a Power BI semantic model from Power Automate <li> Processing the table from SQL Server Management Studio (Premium) </ul> | Only available for semantic models in [Direct Lake mode](/fabric/get-started/direct-lake-overview) when using [Edit tables](/fabric/get-started/direct-lake-edit-tables) when [editing a data model in the Power BI service](/power-bi/transform-model/service-edit-data-models).
- | Keep in mind | For example, if you open a report in the browser, then the scheduled refresh performs a data refresh of the imported tables, the report visuals in the open browser won't update until a refresh of report visuals is initiated. | Data refresh in the Power BI service will fail when the source column or table is renamed or removed. It fails because the Power BI service doesn't also include a schema refresh. To correct this error, a schema refresh needs to happen in Power BI Desktop and the semantic model needs to be republished to the service. | A renamed or removed column or table at the data source will be removed with a schema refresh, and it can break visuals and DAX expressions (measures, calculated columns, row-level security, etc.), as well as remove relationships that are dependent on those columns or tables.
+|<br>  | Refresh of report visuals | Data refresh | Schema refresh |
+|---------|----------|---------|--------- |
+ | In **Power BI Desktop**| <ul> <li>**Optimize** ribbon > **Refresh visuals** <li>**View** ribbon > **Performance Analyzer** button > **Refresh visuals** <li> Creating and changing visuals causing a DAX query to run <li>When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) <li> Opening the PBIX file </ul> | Not available independently from other refresh types | Not available independently from other refresh types|
+ | In the **Power BI service** | <ul><li>When the browser loads or reloads the report	<li> Clicking the **Refresh Visuals** top right menu bar button <li> Clicking the **Refresh** button in edit mode <li> When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) | <ul> <li> Scheduled refresh <li>	Refresh now <li> Refresh a Power BI semantic model from Power Automate <li> Processing the table from SQL Server Management Studio (Premium) </ul> | Only available for semantic models in [Direct Lake mode](/fabric/get-started/direct-lake-overview) when using [Edit tables](/fabric/get-started/direct-lake-edit-tables) when [editing a data model in the Power BI service](/power-bi/transform-model/service-edit-data-models).|
+ | Keep in mind | For example, if you open a report in the browser, then the scheduled refresh performs a data refresh of the imported tables, the report visuals in the open browser won't update until a refresh of report visuals is initiated. | Data refresh in the Power BI service will fail when the source column or table is renamed or removed. It fails because the Power BI service doesn't also include a schema refresh. To correct this error, a schema refresh needs to happen in Power BI Desktop and the semantic model needs to be republished to the service. | A renamed or removed column or table at the data source will be removed with a schema refresh, and it can break visuals and DAX expressions (measures, calculated columns, row-level security, etc.), as well as remove relationships that are dependent on those columns or tables.|
 
 #### Data refresh
 
@@ -208,7 +206,7 @@ Make sure you map the correct data source definition to your data source. As the
 
 #### Deploying a personal data gateway
 
-If you have no access to an enterprise data gateway and you're the only person who manages semantic models so you don't need to share data sources with others, you can deploy a data gateway in personal mode. In the **Gateway connection** section, under **You have no personal gateways installed** , select **Install now**. The personal data gateway has several limitations as documented in [Use a personal gateway in Power BI](service-gateway-personal-mode.md).
+If you have no access to an enterprise data gateway and you're the only person who manages semantic models so you don't need to share data sources with others, you can deploy a data gateway in personal mode. In the **Gateway connection** section, under **You have no personal gateways installed**, select **Install now**. The personal data gateway has several limitations as documented in [Use a personal gateway in Power BI](service-gateway-personal-mode.md).
 
 Unlike an enterprise data gateway, you don't need to add data source definitions to a personal gateway. Instead, you manage the data source configuration by using the **Data source credentials** section in the semantic model settings, as the following screenshot illustrates.
 
@@ -388,7 +386,7 @@ Significant use of dashboard tiles or premium caching can increase refresh durat
 
 The data and query cache phases are independent of each other, but run in sequence. The data refresh runs first, and when that succeeds, the query cache refresh runs. If the data refresh fails, the query refresh is not initiated. It's possible that the data refresh can run successfully, but the query cache refresh fails.
 
-Refreshes made using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) won't show attempt details in the **Refresh history** window.
+A refresh initiated via the public [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) appears in the Power BI **Refresh history** window only if it successfully completes all stages and retrieves new data from the data source.
 
 > [!NOTE]
 > You can enhance monitoring with workspace monitoring. For more information, see [What is workspace monitoring?](/fabric/fundamentals/workspace-monitoring-overview)
@@ -418,7 +416,6 @@ The following image highlights where to click on the semantic model refresh sett
 In the following image, you can see where to click on the semantic model details page to access refresh details:
 
 :::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-04.png" alt-text="Screenshot of where to find refresh details from semantic model details page." lightbox="media/refresh-data/visualize-semantic-model-refresh-04.png":::
-
 
 ### View refresh metrics
 
@@ -458,8 +455,6 @@ The previous code generates a table with refresh IDs and their corresponding det
 
 :::image type="content" source="media/refresh-data/visualize-semantic-model-refresh-06.png" alt-text="Screenshot of code generated table with refresh identifiers and page URLs.":::
 
-
-
 ## Refresh cancellation
 
 Stopping a semantic model refresh is useful when you want to stop a refresh of a large semantic model during peak time. Use the refresh cancellation feature to stop refreshing semantic models that reside on [Premium](./../enterprise/service-premium-what-is.md), [Premium Per User (PPU)](./../enterprise/service-premium-per-user-faq.yml) or [Power BI Embedded](./../developer/embedded/embedded-analytics-power-bi.md) capacities.
@@ -479,9 +474,22 @@ To stop a refresh, follow these steps:
 
     :::image type="content" source="media/refresh-data/stop-dataset-refresh.png" alt-text="A screenshot of stopping a semantic model refresh.":::
 
-2. In the *Cancel refresh* pop-up window, select **Yes**.
+1. In the *Cancel refresh* pop-up window, select **Yes**.
 
     :::image type="content" source="media/refresh-data/cancel-refresh-window.png" alt-text="A screenshot of the cancel refresh pop-up window with the yes button highlighted.":::
+
+## Power BI Desktop refresh options
+
+:::image type="content" source="media/refresh-data/desktop-refresh-options.png" alt-text="Screenshot of Power BI Desktop Refresh options.":::
+
+When you select **Refresh** in Power BI Desktop, it always performs a schema sync first, followed by a data refresh. While this behavior is convenient in most cases, there are scenarios where you may want to refresh the data without updating the model schema, even if the data source has changed its schema. For example, in Direct Lake semantic models, the underlying Lakehouse table might have changed (such as a new column being added). You may want the latest data but prefer not to bring new columns into the model. 
+
+You can expand the **Refresh** button in both the **Home** ribbon and the **Data** pane and choose from the following options:
+
+- **Sync schema only** – Updates the semantic model to reflect the data source structure (for example, column type changes or new columns).
+- **Refresh data only** – Loads fresh data while preserving the current schema in your semantic model.
+
+This added flexibility helps you manage your model refresh operations more intentionally, based on your specific needs. 
 
 ## Best practices
 

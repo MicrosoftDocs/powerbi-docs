@@ -5,9 +5,9 @@
   href: /
   topicHref: /
   items:
-  - name: Power Platform
-    href: /power-platform/
-    topicHref: /power-platform/
+  - name: Microsoft Fabric
+    href: /fabric/
+    topicHref: /fabric/
     items:
     - name: Power BI
       tocHref: /power-bi/
@@ -16,9 +16,6 @@
       - name: Embedded analytics
         tocHref: /power-bi/developer/embedded/
         topicHref: /power-bi/developer/embedded/index
-      - name: Mobile
-        tocHref: /power-bi/consumer/mobile/
-        topicHref: /power-bi/consumer/mobile/index
       - name: Report Server
         tocHref: /power-bi/report-server/
         topicHref: /power-bi/report-server/index

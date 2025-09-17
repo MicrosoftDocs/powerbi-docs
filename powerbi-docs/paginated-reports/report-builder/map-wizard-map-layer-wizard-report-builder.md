@@ -15,6 +15,10 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
+> [!IMPORTANT]
+> Following the __[announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps)__, the migration of paginated reports map visuals from Bing Maps to Azure Maps has begun. This migration will occur in two phases: first, migrating to Azure Maps in PBIRB, followed by migration to Azure Maps for paginated reports in the service. The initial phase is complete. Beginning with the September release of PBIRB, users can create map visuals powered by Azure Maps by default. However, paginated reports published in the service will continue to use Bing Maps until phase two is completed.
+> Paginated reports authors can revert back to Bing Maps for authoring in PBIRB until both phases are complete. To enable this, users must set the “RevertToBingMaps” registry key located in the “Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Report Builder” folder to 1. If the “Microsoft Power BI Report Builder” folder does not exist, it should be manually created before setting the registry key.
+
  In Power BI paginated reports, the Map Wizard and Map Layer Wizard automate the task of creating a map, adding a map layer, or changing map layer options on an existing layer.  
   
  Before you add a map to a report or a map layer to a map, gather the following information:  
@@ -48,13 +52,13 @@ ms.reviewer: saurkumar
     -   [What is the Map gallery?](#MapGallery)  
     -   [What is a SQL Server spatial query?](#SqlServerSpatial)  
   
-2.  [Choose spatial data and map view options](#MapView). Set the map view, the map resolution, specify whether to embed spatial data in the report, and specify whether to include a tile background of Microsoft Bing map tiles.  
-  
+1. [Choose spatial data and map view options](#MapView). Set the map view, the map resolution, specify whether to embed spatial data in the report, and specify whether to include a tile background of Microsoft Azure Maps tiles.  
+
     -   [What is the map view or viewport?](#Viewport)  
     -   [What is map resolution or optimization?](#Resolution)  
     -   [What does embedding spatial data do?](#Embed)  
-    -   [What is a Bing maps tile background?](#Tiles)  
-  
+   - [What is an Azure maps tile background?](#Tiles)  
+      
 3.  [Choose map visualization](#Visualization). Choose the type of map to create.  
   
     -   [What is the difference between a Basic Map, a Bubble Map, and an Analytical Map?](#MapType)  
@@ -126,8 +130,8 @@ ms.reviewer: saurkumar
   
 -   For embedded data, specify whether to include all data or just the data in the current view.  
   
--   Specify whether to include a Microsoft Bing map tiles background.  
-  
+- Specify whether to include a Microsoft Azure Maps tiles background.  
+
 ###  <a name="Viewport"></a> What is the map view or viewport?  
  The map viewport defines the map area to display for all layers in your report.  
   
@@ -143,27 +147,28 @@ ms.reviewer: saurkumar
  As you adjust the slider, the preview data in the wizard pane updates to give you an indication of the effect. After you add the map to the report, you can adjust this value by changing map viewport options.  
   
 ###  <a name="Embed"></a> What does embedding spatial data do?  
- When you embed map elements or Bing map tiles in a report, the spatial data is stored in the report definition.  
-  
- A report with a map can use spatial data or Bing map tiles that are retrieved dynamically either when the report is processed or at design time and then embedded in the report definition. Embedded map elements can significantly increase the size of the report definition, but reduce the time it takes to view the map in the report. Dynamic map elements reduce the report definition size but increase the time it takes to process and view the map.  
-  
+ When you embed map elements or Azure map tiles in a report, the spatial data is stored in the report definition.  
+
+ A report with a map can use spatial data or Azure map tiles that are retrieved dynamically either when the report is processed or at design time and then embedded in the report definition. Embedded map elements can significantly increase the size of the report definition, but reduce the time it takes to view the map in the report. Dynamic map elements reduce the report definition size but increase the time it takes to process and view the map.  
+
  Good report design requires that you assess the trade-offs for static or dynamic map data and find the balance that works for your circumstances. In general, more data means the report definition and the compiled report requires more storage on the report server and longer processing times. It is always a best practice to crop spatial data, as well as limit other report data, to include just what is needed for the report.  
   
-###  <a name="Tiles"></a> What is a Bing map tile background?  
- To add a geographic image background to your map, select the Bing map tile background option. The report processor downloads tiles from Bing Maps Web Services for the map area and resolution that you specify on this wizard page. You can specify one of the following tile types:  
-  
+### <a name="Tiles"></a> What is an Azure map tile background?
+
+ To add a geographic image background to your map, select the Azure map tile background option. The report processor downloads tiles from Azure Maps Web Services for the map area and resolution that you specify on this wizard page. You can specify one of the following tile types:  
+
 -   **Road.** Display a road map style with white background.  
   
 -   **Aerial.** Display an aerial view only. No text is displayed in this mode.  
   
 -   **Hybrid.** Display the combination of **Road** and **Aerial** views.  
   
- For more information about tiles, see [Bing Maps Tiles System](/bingmaps/articles/bing-maps-tile-system). For more information about the use of Bing map tiles in your report, see [Additional Terms of Use](https://go.microsoft.com/fwlink/?LinkId=151371).  
-  
- To see a tile background in Design view, you must have Internet access. To see the tile background in preview from a report on a report server, the report server must be configured to support Bing map tiles. For more information, see [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md) and [Plan a Map Report](plan-map-report-report-builder.md).  
-  
- For more information on other ways to customize a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md).  
-  
+For more information about Azure tiles, see [Azure Maps Tiles](/azure/azure-maps/map-add-tile-layer). For more information about the use of Azure Maps tiles in your report, see [Additional Terms of Use](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MOSA#clause-2036-h3-1).  
+
+To see a tile background in Design view, you must have Internet access. To see the tile background in preview from a report on a report server, the report server must be configured to support Azure map tiles. For more information, see [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md) and [Plan a Map Report](plan-map-report-report-builder.md).  
+
+For more information on other ways to customize a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md).  
+
 ##  <a name="Visualization"></a> Choose map visualization  
  On this page, choose the type of map or map layer to add to your report. The first time you run the wizard, you are adding the map and the first map layer to the report. A map can contain multiple map layers. Each map layer displays a specific type of spatial data: polygons, lines, or points.  
   
