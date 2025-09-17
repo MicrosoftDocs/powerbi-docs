@@ -35,7 +35,7 @@ Watch Amanda add some alerts to tiles on the dashboard. Then follow the step-by-
 > [!NOTE]
 > The following video might use earlier versions of Power BI Desktop or the Power BI service.
 
-[!VIDEO https://www.youtube.com/embed/JbL2-HJ8clE]
+> [!VIDEO https://www.youtube.com/embed/JbL2-HJ8clE]
 
 This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) if you want to follow along.
 
