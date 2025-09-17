@@ -41,7 +41,7 @@ When you author dataflows, be mindful of the following considerations:
 * Authoring in dataflows is done in the Power Query Online (PQO) environment; see the limitations described in [Power Query limits](/power-query/power-query-online-limits).
 Because dataflows authoring is done in the Power Query Online (PQO) environment, updates performed on the dataflows workload configurations only affects refreshes and don't have an effect on the authoring experience.
 
-* Dataflows can only be modified by their owners.
+* Only owners can modify their dataflows.
 
 * Dataflows aren't available in *My Workspace*.
 

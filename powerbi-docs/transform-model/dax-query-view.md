@@ -130,7 +130,7 @@ When a measure is included in the DAX query, you can hover on it to see the form
 
 #### Select to see measure ligh tbulb quick actions
 
-Selecting on a measure in an EVALUATE statement in a query without a DEFINE statement shows the quick actions light bulb. Select **Define** or **Define with references** to create a DEFINE statement with this measure’s formula with or without the reference measure DAX formulas.
+Selecting on a measure in an EVALUATE statement in a query without a DEFINE statement shows the quick actions lightbulb. Select **Define** or **Define with references** to create a DEFINE statement with this measure’s formula with or without the reference measure DAX formulas.
 
 #### Update model measures using CodeLens  
 
@@ -144,7 +144,7 @@ Alternatively, you can add or overwrite multiple measures at once by clicking th
 
 #### Measure update workflow
 
-The light bulb quick actions and CodeLens can be used together in a complete workflow:
+The lightbulb quick actions and CodeLens can be used together in a complete workflow:
 
 1. In the context menu of a measure, choose Quick queries, and then Evaluate to have the query created for you in a new Query tab.
 1. Select the measure in the query to Define or Define with references, adding the DEFINE statement.
@@ -284,7 +284,7 @@ A DAX query added as a parameter using ?query= after the URL linking to DAX quer
 Considerations to keep in mind:
 
 - 500+ lines in DAX query editor has noticeable lag when typing.
-- Light bulb quick actions for measures only displays when no DEFINE statement is in the query tab.
+- Lightbulb quick actions for measures only displays when no DEFINE statement is in the query tab.
 - Command palette shows some commands that don't yet work.
 - Result grid won't show columns and measures with specified format, such as Currency, Whole number with thousands, etc.
 - Setting up the *initial* Git integration *from* the workspace won't include DAX queries saved in published semantic model. Learn more at [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
