@@ -128,7 +128,7 @@ Calculated columns can enrich your data and provide easier insights. You learned
 
 If you want to take a deeper dive into DAX formulas and create calculated columns with more advanced formulas, see [DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
-Be sure to add the [Data Analysis Expressions (DAX) Reference](/dax/) to your favorites. In this This reference, you can find detailed info on DAX syntax, operators, and over 200 DAX functions.
+Be sure to add the [Data Analysis Expressions (DAX) Reference](/dax/) to your favorites. In this reference, you can find detailed info on DAX syntax, operators, and over 200 DAX functions.
 
 Other articles of interest:
 
