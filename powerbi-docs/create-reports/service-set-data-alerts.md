@@ -8,7 +8,7 @@ ms.custom: video-JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/11/2025
+ms.date: 09/17/2025
 LocalizationGroup: Dashboards
 ---
 
@@ -33,9 +33,9 @@ Only you can see the alerts you set, even if you share your dashboard. Similarly
 Watch Amanda add some alerts to tiles on the dashboard. Then follow the step-by-step instructions after the video to try it out yourself.
 
 > [!NOTE]
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
+> The following video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.youtube.com/embed/JbL2-HJ8clE]
+[!VIDEO https://www.youtube.com/embed/JbL2-HJ8clE]
 
 This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) if you want to follow along.
 
@@ -54,20 +54,20 @@ When the tracked data reaches one of the thresholds you set, Power BI checks the
 
 Next, Power BI sends an alert to your **Notification center** and, optionally, an email. Each alert contains a direct link to your data. Select the link to see the relevant tile where you can explore, share, and learn more.
 
-* If you set the alert to send you an email, you find something like this message in your inbox.
-* Power BI adds a message to your **Notification center** and adds a new alert icon to the applicable tile.
-* Your **Notification center** displays the alert details.
+- If you set the alert to send you an email, you find something like this message in your inbox.
+- Power BI adds a message to your **Notification center** and adds a new alert icon to the applicable tile.
+- Your **Notification center** displays the alert details.
 
    > [!NOTE]
-   > Alerts only work on refreshed data. When data refreshes, Power BI looks to see whether an alert is set for that data. If the data has reached an alert threshold, Power BI triggers an alert.
+   > Alerts only work on refreshed data. When data refreshes, Power BI looks to see whether an alert is set for that data. If the data reaches an alert threshold, Power BI triggers an alert.
 
 ## Manage alerts
 
 There are many ways to manage your alerts:
 
-* From the [dashboard tile](#dashboard-tile).
-* From the [Power BI **Settings** menu](#power-bi-settings-menu).
-* On a tile in the [Power BI mobile apps](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+- From a [dashboard tile](#dashboard-tile).
+- From the [Power BI **Settings** menu](#power-bi-settings-menu).
+- On a tile in the [Power BI mobile apps](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### Dashboard tile
 
@@ -86,18 +86,18 @@ There are many ways to manage your alerts:
 
 ## Considerations and troubleshooting
 
-* Alerts aren't supported for card tiles with date or time measures.
-* Alerts only work with numeric data types.
-* Alerts only work on refreshed data. They don't work on static data.
-* Because alerts are only sent if your data changes, you don't receive duplicate alerts for an unchanged value.
-* Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
-* You can create up to 250 alerts across all your models.
-* Alerts don't have support for co-ownership. If you need to transfer ownership between users, you need to create a new alert. If you're integrating your alerts with Power Automate, you also need to recreate the flow.
+- Alerts aren't supported for card tiles with date or time measures.
+- Alerts only work with numeric data types.
+- Alerts only work on refreshed data. They don't work on static data.
+- Because alerts are only sent if your data changes, you don't receive duplicate alerts for an unchanged value.
+- Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
+- You can create up to 250 alerts across all your models.
+- Alerts don't have support for co-ownership. If you need to transfer ownership between users, you need to create a new alert. If you're integrating your alerts with Power Automate, you also need to recreate the flow.
 
 ## Related content
 
-* [Create a Power Automate workflow that includes a data alert](../collaborate-share/service-flow-integration.md)
-* [Set data alerts on your mobile device](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* [What is Power BI?](../fundamentals/power-bi-overview.md)
+- [Create a Power Automate workflow that includes a data alert](../collaborate-share/service-flow-integration.md)
+- [Set data alerts on your mobile device](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+- [What is Power BI?](../fundamentals/power-bi-overview.md)
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
