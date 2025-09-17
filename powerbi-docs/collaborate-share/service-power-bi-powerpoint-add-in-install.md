@@ -62,7 +62,7 @@ Add the report or visual to a new PowerPoint presentation with the following met
 1. Select **Open in PowerPoint**.
 
 > [!NOTE]
-> Although this option is located in the Export menu and leads to the "Embed live data", no data actually becomes part of the PowerPoint file. The data remains secure in Power BI.
+> Although this option is located in the Export menu and leads to the "Embed live data," no data actually becomes part of the PowerPoint file. The data remains secure in Power BI.
 
 ## Add live Power BI data to an existing presentation
 
