@@ -68,9 +68,7 @@ The same example can be created in **TMDL view**.
 ```tmdl
 createOrReplace
     /// AddTax takes in amount and returns amount including tax
-    function AddTax = 
-        (amount : NUMERIC) =>
-            amount * 1.1
+    function AddTax = (amount : NUMERIC) => amount * 1.1
 ```
 
 After a UDF is defined, you can apply changes to add the function to your model.

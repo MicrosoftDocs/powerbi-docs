@@ -7,12 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: tutorial
-ms.date: 03/15/2024
+ms.date: 09/16/2025
 LocalizationGroup: Learn more
 ---
+
 # Tutorial: Create your own measures in Power BI Desktop
 
-By using measures, you can create some of the most powerful data analysis solutions in Power BI Desktop. Measures help you by performing calculations on your data as you interact with your reports. This tutorial will guide you through understanding measures and creating your own basic measures in Power BI Desktop.
+By using measures, you can create some of the most powerful data analysis solutions in Power BI Desktop. Measures help you by performing calculations on your data as you interact with your reports. This tutorial guides you through understanding measures and creating your own basic measures in Power BI Desktop.
 
 ## Prerequisites
 
@@ -26,13 +27,13 @@ When Power BI Desktop creates a measure, it's most often created for you automat
 
 1. In Power BI Desktop, select **File** > **Open**, browse to the *Contoso Sales Sample for Power BI Desktop.pbix* file, and then choose **Open**.
 
-2. In the **Fields** pane, expand the **Sales** table. Then, either select the check box next to the **SalesAmount** field or drag **SalesAmount** onto the report canvas.
+1. In the **Fields** pane, expand the **Sales** table. Then, either select the check box next to the **SalesAmount** field or drag **SalesAmount** onto the report canvas.
 
     A new column chart visualization appears, showing the sum total of all values in the **SalesAmount** column of the **Sales** table.
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_salesamountchart.png" alt-text="Screenshot of the SalesAmount column chart.":::
 
-   Any field (column) in the **Fields** pane with a sigma icon ![Sigma icon](media/desktop-tutorial-create-measures/meastut_sigma.png) is numeric, and its values can be aggregated. Rather than display a table with many values (2,000,000 rows for **SalesAmount**), Power BI Desktop automatically creates and calculates a measure to aggregate the data if it detects a numeric datatype. Sum is the default aggregation for a numeric datatype, but you can easily apply different aggregations like average or count. Understanding aggregations is fundamental to understanding measures, because every measure performs some type of aggregation.
+    Any field (column) in the **Fields** pane with a sigma icon ![Sigma icon](media/desktop-tutorial-create-measures/meastut_sigma.png) is numeric, and its values can be aggregated. Rather than display a table with many values (2,000,000 rows for **SalesAmount**), Power BI Desktop automatically creates and calculates a measure to aggregate the data if it detects a numeric datatype. Sum is the default aggregation for a numeric datatype, but you can easily apply different aggregations like average or count. Understanding aggregations is fundamental to understanding measures, because every measure performs some type of aggregation.
 
 To change the chart aggregation, follow these steps:
 
@@ -52,13 +53,13 @@ Values calculated from measures change in response to your interactions with you
 
 :::image type="content" source="media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png" alt-text="Screenshot of the chart showing SaleAmount by Country/Region.":::
 
-When the result of a measure changes because of an interaction with your report, you've affected your measure’s *context*. Every time you interact with your report visualizations, you're changing the context in which a measure calculates and displays its results.
+When the result of a measure changes because of an interaction with your report, you affect your measure’s *context*. Every time you interact with your report visualizations, you're changing the context in which a measure calculates and displays its results.
 
 ## Create and use your own measures
 
 In most cases, Power BI Desktop automatically calculates and returns values according to the types of fields and aggregations you choose. However, in some cases you might want to create your own measures to perform more complex, unique calculations. With Power BI Desktop, you can create your own measures with the Data Analysis Expressions (DAX) formula language.
 
-DAX formulas use many of the same functions, operators, and syntax as Excel formulas. However, DAX functions are designed to work with relational data and perform more dynamic calculations as you interact with your reports. There are over 200 DAX functions that do everything from simple aggregations like sum and average to more complex statistical and filtering functions. There are many resources to help you learn more about DAX. After you've finished this tutorial, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
+DAX formulas use many of the same functions, operators, and syntax as Excel formulas. However, DAX functions are designed to work with relational data and perform more dynamic calculations as you interact with your reports. There are over 200 DAX functions that do everything from simple aggregations like sum and average to more complex statistical and filtering functions. There are many resources to help you learn more about DAX. After you finish this tutorial, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
 When you create your own measure, it's called a *model* measure, and it's added to the **Fields** list for the table you select. Some advantages of model measures are that you can name them whatever you want, making them more identifiable. You can use them as arguments in other DAX expressions, and you can make them perform complex calculations quickly.
 
@@ -95,13 +96,13 @@ To create a measure, follow these steps:
     >[!TIP]
     >When you create a measure from the ribbon, you can create it in any of your tables, but it's easier to find if you create it where you plan to use it. In this case, select the **Sales** table first to make it active, and then choose **New measure**.
 
-    The formula bar appears along the top of the report canvas, where you can rename your measure and enter a DAX formula.
+    In the formula bar that appears along the top of the report canvas, you can rename your measure and enter a DAX formula.
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formulabar.png" alt-text="Screenshot of the formula bar.":::
 
 1. By default, each new measure is named *Measure*. If you don’t rename it, new measures are named *Measure 2*, *Measure 3*, and so on. Because we want this measure to be more identifiable, highlight *Measure* in the formula bar, and then change it to *Net Sales*.
 
-1. Begin entering your formula. After the equals sign, start to type *Sum*. As you type, a drop-down suggestion list appears, showing all the DAX functions, beginning with the letters you type. Scroll down, if necessary, to select **SUM** from the list, and then press **Enter**.
+1. Begin entering your formula. After the `=` sign, start to type *Sum*. As you type, a drop-down suggestion list appears, showing all the DAX functions, beginning with the letters you type. Scroll down, if necessary, to select **SUM** from the list, and then press **Enter**.
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_s.png" alt-text="Screenshot of SUM chosen from a list in the formula bar.":::
 
@@ -180,21 +181,20 @@ Add a slicer to further filter net sales and sales amounts by calendar year:
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_netsales_yearaggtable.png" alt-text="Screenshot of the year aggregation.":::
 
-3. In the **Values** box in the **Visualizations** pane, select the down arrow next to **Year**, and then choose **Don't summarize** from the list. The table now lists individual years.
+1. In the **Values** box in the **Visualizations** pane, select the down arrow next to **Year**, and then choose **Don't summarize** from the list. The table now lists individual years.
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_netsales_year_donotsummarize.png" alt-text="Screenshot of menu selecting Don't summarize.":::
-
-4. Select the **Slicer** icon in the **Visualizations** pane to convert the table to a slicer. If the visualization displays a slider instead of a list, choose **List** from the down arrow in the slider.
+1. Select the **Slicer** icon in the **Visualizations** pane to convert the table to a slicer. If the visualization displays a slider instead of a list, choose **List** from the down arrow in the slider.
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_netsales_year_changetoslicer.png" alt-text="Screenshot of the slicer icon in the Visualizations pane.":::
 
-5. Select any value in the **Year** slicer to filter the **Net Sales and Sales Amount by RegionCountryName** chart accordingly. The **Net Sales** and **SalesAmount** measures recalculate and display results in the context of the selected **Year** field.
+1. Select any value in the **Year** slicer to filter the **Net Sales and Sales Amount by RegionCountryName** chart accordingly. The **Net Sales** and **SalesAmount** measures recalculate and display results in the context of the selected **Year** field.
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_netsales_chartslicedbyyear.png" alt-text="Screenshot of the Net Sales and SalesAmount chart sliced by Year.":::
 
 ### Use your measure in another measure
 
-Suppose you want to find out which products have the highest net sales amount per unit sold. You'll need a measure that divides net sales by the quantity of units sold. Create a new measure that divides the result of your **Net Sales** measure by the sum of **Sales[SalesQuantity]**.
+Suppose you want to find out which products have the highest net sales amount per unit sold. You need a measure that divides net sales by the quantity of units sold. Create a new measure that divides the result of your **Net Sales** measure by the sum of **Sales[SalesQuantity]**.
 
 1. In the **Fields** pane, create a new measure named **Net Sales per Unit** in the **Sales** table.
 
@@ -226,7 +226,7 @@ Suppose you want to find out which products have the highest net sales amount pe
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_nspu_byproductcat.png" alt-text="Screenshot of treemap by Product Category.":::
 
-7. Try removing the **ProductCategory** field, and dragging the **ProductName** field onto the chart instead.
+1. Try removing the **ProductCategory** field, and dragging the **ProductName** field onto the chart instead.
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_nspu_byproductname.png" alt-text="Screenshot of treemap by Product Name.":::
 
@@ -234,7 +234,7 @@ Suppose you want to find out which products have the highest net sales amount pe
 
 ## What you've learned
 
-Measures give you the power to get the insights you want from your data. You've learned how to create measures by using the formula bar, name them whatever makes most sense, and find and select the right formula elements by using the DAX suggestion lists. You've also been introduced to context, where the results of calculations in measures change according to other fields or other expressions in your formula.
+Measures give you the power to get the insights you want from your data. You learned how to create measures by using the formula bar and give them names that make sense to you. You learned how to find and select the right formula elements by using the DAX suggestion lists. Finally, you were introduced to context, where the results of calculations in measures change according to other fields or other expressions in your formula.
 
 ## Related content
 
@@ -242,7 +242,7 @@ Measures give you the power to get the insights you want from your data. You've 
   
 - If you want to take a deeper dive into DAX formulas and create some more advanced measures, see [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
   
-- Be sure to add the [Data Analysis Expressions (DAX) Reference](/dax/index) to your favorites. This reference is where you'll find detailed info on DAX syntax, operators, and over 200 DAX functions.
+- Be sure to add the [Data Analysis Expressions (DAX) Reference](/dax/index) to your favorites. In this reference you can find detailed info on DAX syntax, operators, and over 200 DAX functions.
 
 Other articles of interest:
 
