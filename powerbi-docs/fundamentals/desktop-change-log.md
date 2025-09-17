@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/02/2025
+ms.date: 09/17/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,14 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## September 2025 QFE 1 
+
+*Version 2.147.931.0, Released: September 15, 2025*
+
+Bug fixes/improvements: 
+
+- Resolved an issue where users saw an error while refreshing tables that use DirectQuery.
 
 ## August 2025 QFE 3 
 
