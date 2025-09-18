@@ -274,25 +274,25 @@ Gateway logs are required for troubleshooting and creating a support ticket. Use
 
 1. Identify the gateway cluster.
 
-If you're a semantic model owner, first check the gateway cluster name associated with your semantic model. In the following image, *IgniteGateway* is the gateway cluster.
+   If you're a semantic model owner, first check the gateway cluster name associated with your semantic model. In the following image, *IgniteGateway* is the gateway cluster.
 
-![Gateway cluster name (IgniteGateway) highlighted in gateway connection settings](media/service-gateway-onprem-tshoot/gateway-cluster.png)
+   ![Gateway cluster name (IgniteGateway) highlighted in gateway connection settings](media/service-gateway-onprem-tshoot/gateway-cluster.png)
 
 1. Check the gateway properties.
 
-The gateway admin should then check the number of gateway members in the cluster and if load balancing is enabled.
+   The gateway admin should then check the number of gateway members in the cluster and if load balancing is enabled.
 
-If load balancing is enabled, then step 3 should be repeated for all gateway members. If it's not enabled, then exporting logs on the primary gateway is sufficient.
+   If load balancing is enabled, then step 3 should be repeated for all gateway members. If it's not enabled, then exporting logs on the primary gateway is sufficient.
 
 1. Retrieve and export the gateway logs.
 
-Next, the gateway admin, who is also the administrator of the gateway system, should do the following steps:
+   Next, the gateway admin, who is also the administrator of the gateway system, should do the following steps:
 
-- Sign in to the gateway machine, and then launch the [on-premises data gateway app](/data-integration/gateway/service-gateway-app) to sign in to the gateway.
-- Enable [additional logging](/data-integration/gateway/service-gateway-performance#slow-performing-queries).
-- (Optional) [Enable the performance monitoring features](/data-integration/gateway/service-gateway-performance#enable-performance-logging) and include performance logs.
-- Run the scenario for which you're trying to capture gateway logs.
-- [Export the gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
+     1. Sign in to the gateway machine, and then launch the [on-premises data gateway app](/data-integration/gateway/service-gateway-app) to sign in to the gateway.
+     1. Enable [additional logging](/data-integration/gateway/service-gateway-performance#slow-performing-queries).
+     1. (Optional) [Enable the performance monitoring features](/data-integration/gateway/service-gateway-performance#enable-performance-logging) and include performance logs.
+     1. Run the scenario for which you're trying to capture gateway logs.
+     1. [Export the gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 ## Refresh history
 
