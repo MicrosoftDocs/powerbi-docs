@@ -7,9 +7,10 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/10/2025
+ms.date: 09/18/2025
 LocalizationGroup: Data refresh
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
 ---
 
@@ -35,10 +36,10 @@ A Power BI semantic model can operate in one of the following modes to access da
 - Import mode
 - DirectQuery mode
 - Direct Lake mode
-- LiveConnect mode
+- Live connection mode
 - Push mode
 
-The following diagram illustrates the different data flows, based on storage mode. The most significant point is that only Import mode semantic models require a source data refresh. They require refresh because only this type of semantic model imports data from its data sources, and the imported data might be updated on a regular or ad-hoc basis. Semantic models in DirectQuery, Direct Lake, or LiveConnect mode to Analysis Services don't import data; they query the underlying data source with every user interaction. Semantic models in Push mode don't access any data sources directly but expect you to push the data into Power BI. Semantic model refresh requirements vary depending on the storage mode/semantic model type.
+The following diagram illustrates the different data flows, based on storage mode. The most significant point is that only Import mode semantic models require a source data refresh. They require refresh because only this type of semantic model imports data from its data sources, and the imported data might be updated on a regular or ad-hoc basis. Semantic models in DirectQuery, Direct Lake, or live connection mode to Analysis Services don't import data; they query the underlying data source with every user interaction. Semantic models in Push mode don't access any data sources directly but expect you to push the data into Power BI. Semantic model refresh requirements vary depending on the storage mode/semantic model type.
 
 ![Storage modes and semantic model types](media/refresh-data/storage-modes-dataset-types-diagram.png)
 
@@ -82,8 +83,8 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 | --- | --- | --- | --- | --- | --- |
 | Import | Scheduled and on demand | Yes, for connected semantic models | If enabled on Premium capacity | Automatically and on demand | No |
 | DirectQuery | Not applicable | Yes, for connected semantic models | Not applicable | Automatically and on demand | No |
-| LiveConnect | Not applicable | Yes, for connected semantic models | Not applicable | Automatically and on demand | Yes |
-| Push | Not applicable | Not applicable | Not practical | Automatically and on demand | No |
+| Live connection | Not applicable | Yes, for connected semantic models | Not applicable | Automatically and on demand | Yes |
+| Push | Not applicable | Not applicable | Not applicable | Automatically and on demand | No |
 
 Another way to consider the different refresh types is what they impact and where you can apply them. Changes in data source table structure, or schema, such as a new, renamed, or removed column can only be applied in Power BI Desktop, and in the Power BI service they can cause the refresh to fail. For a quick reference on what they impact, refer to the following table.
 
@@ -107,13 +108,13 @@ These refresh types can't always be applied independently, and where you can app
 
 #### Data refresh
 
-For Power BI users, refreshing data typically means importing data from the original data sources into a semantic model, either based on a refresh schedule or on demand. You can perform multiple semantic model refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits semantic models on shared capacity to eight scheduled daily semantic model refreshes. The eight time values are stored in the back-end database and are based on the *local time* zone that was selected on the semantic model settings page. The scheduler checks which model should be refreshed and at what time(s). The quota of eight refreshes resets daily at 12:01 AM local time.
+For Power BI users, refreshing data typically means importing data from the original data sources into a semantic model, either based on a refresh schedule or on demand. You can perform multiple semantic model refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits semantic models on shared capacity to eight scheduled daily semantic model refreshes. The eight time values are stored in the back-end database and are based on the *local time* zone that was selected on the semantic model settings page. The scheduler checks which model should be refreshed and at what time(s). The quota of eight scheduled refreshes resets daily at 12:01 AM local time.
 
 :::image type="content" source="media/refresh-data/power-bi-refresh-data-01.png" alt-text="Screen shot of time zone setting for refresh.":::
 
-If the semantic model resides on a Premium capacity, you can schedule up to 48 refreshes per day in the semantic model settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Semantic models on a Premium capacity with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
+If the semantic model resides on a Premium capacity, PPU, or Fabric capacity, you can schedule up to 48 refreshes per day in the semantic model settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Semantic models on these capacities with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for read-write support effectively unlimited refresh operations when configured programmatically with TMSL or PowerShell (subject to capacity resources and concurrency limits).
 
-It's also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh now** in the ribbon on the semantic model settings page, as the following screenshot depicts. On-demand refreshes aren't included in the refresh limitation. Also note that semantic models on a Premium capacity don't impose limitations for API refreshes. If you're interested in building your own refresh solution by using the Power BI REST API, see [semantic models - Refresh semantic model](/rest/api/power-bi/datasets/refreshdataset).
+It's also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and refreshes triggered through the REST API. You can also trigger an on-demand refresh by selecting **Refresh now** in the ribbon on the semantic model settings page, as the following screenshot depicts. Manual UI-triggered on-demand refreshes aren't included in the eight scheduled refresh limitation. Semantic models on a Premium/PPU/Fabric capacity don't impose a fixed numeric limit for API refreshes, but they're governed by capacity resources and may queue when resources are constrained. If you're interested in building your own refresh solution by using the Power BI REST API, see [semantic models - Refresh semantic model](/rest/api/power-bi/datasets/refreshdataset) (API naming still uses *datasets*).
 
 ![Refresh now](media/refresh-data/refresh-now.png)
 
@@ -276,7 +277,7 @@ in
 ```
 
 > [!NOTE]
-> Query parameters are only supported for Import mode semantic models. DirectQuery/LiveConnect mode does not support query parameter definitions.
+> Query parameters are only supported for Import mode semantic models. DirectQuery/live connection mode does not support query parameter definitions.
 
 To ensure that a parameterized semantic model accesses the correct data, you must configure the mashup query parameters in the semantic model settings. You can also update the parameters programmatically by using the [Power BI REST API](/rest/api/power-bi/datasets/updateparametersingroup). The following screenshot shows the user interface to configure the query parameters for a semantic model that uses the above mashup query.
 
@@ -313,7 +314,7 @@ The **Refresh** section is where you define the frequency and time slots to refr
 Having configured a refresh schedule, the semantic model settings page informs you about the next refresh time, as in the screenshot above. If you want to refresh the data sooner, to test your gateway and data source configuration, for example, perform an on-demand refresh by using the **Refresh now** option on the semantic model settings page. On-demand refreshes don't affect the next scheduled refresh time.
 
 > [!TIP]
-> Power BI does not have a monthly refresh interval option. However, you can use Power Automate to create a custom refresh interval that occurs monthly, as described in the following [Power BI blog post](https://powerbi.microsoft.com/blog/refresh-your-power-bi-dataset-using-microsoft-flow/).
+> Power BI does not have a monthly refresh interval option. However, you can use Power Automate (formerly Microsoft Flow) to create a custom refresh interval that occurs monthly, as described in the following [Power BI blog post](https://powerbi.microsoft.com/blog/refresh-your-power-bi-dataset-using-microsoft-flow/).
 
 Note also that the configured refresh time might not be the exact time when Power BI starts the next scheduled process. Power BI starts scheduled refreshes on a best-effort basis. The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
 
@@ -329,7 +330,7 @@ It's also a good idea to specify additional recipients for scheduled refresh fai
 > [!NOTE]
 > Push notifications to the mobile apps do not support group aliases.
 
-Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report built on the semantic model, Power BI considers the semantic model inactive. In this situation, Power BI sends an email message to the semantic model owner indicating that the service paused the refresh schedule for the semantic model. See the following screenshot for an example of such a notification.
+Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report (including via an app or embedded scenario) built on the semantic model, Power BI considers the semantic model inactive. In this situation, Power BI sends an email message to the semantic model owner indicating that the service paused the refresh schedule for the semantic model. See the following screenshot for an example of such a notification. For more detail, see [Configure scheduled refresh](refresh-scheduled-refresh.md#scheduled-refresh).
 
 ![Email for paused refresh](media/refresh-data/email-paused-refresh.png)
 
@@ -432,7 +433,7 @@ You can link semantic model refresh details from external applications by constr
 For example, the following Fabric Notebook uses semantic link *sempy* and Power BI API Get Refresh History to create a refresh detail URL for each run of a semantic model:
 
 
-```dax
+```python
 import sempy
 import sempy.fabric as fabric
 import pandas as pd 
@@ -498,13 +499,13 @@ Checking the refresh history of your semantic models regularly is one of the mos
 In addition, consider the following recommendations to establish and maintain reliable data refresh processes for your semantic models:
 
 - Schedule your refreshes for less busy times, especially if your semantic models are on Power BI Premium. If you distribute the refresh cycles for your semantic models across a broader time window, you can help avoid peaks that might otherwise overtax available resources. Delays starting a refresh cycle are an indicator of resource overload. If a Premium capacity is exhausted, Power BI might even skip a refresh cycle.
-- Keep refresh limits in mind. If the source data changes frequently or the data volume is substantial, consider using DirectQuery/LiveConnect mode instead of Import mode if the increased load at the source and the impact on query performance are acceptable. Avoid constantly refreshing an Import mode semantic model. You should also be aware that DirectQuery/LiveConnect mode has several limitations, such as a one million-row limit for returning data and a 225-seconds response time limit for running queries, as documented in [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md). These limitations might require you to use Import mode nonetheless. For large data volumes, consider the use of [aggregations in Power BI](../enterprise/aggregations-auto.md).
+- Keep refresh limits in mind. If the source data changes frequently or the data volume is substantial, consider using DirectQuery/live connection mode instead of Import mode if the increased load at the source and the impact on query performance are acceptable. Avoid constantly refreshing an Import mode semantic model. You should also be aware that DirectQuery/live connection mode has several limitations, such as a one million-row limit for returning data and a 225-seconds response time limit for running queries, as documented in [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md). These limitations might require you to use Import mode nonetheless. For large data volumes, consider the use of [aggregations in Power BI](../enterprise/aggregations-auto.md).
 - Verify that your semantic model refresh time doesn't exceed the maximum refresh duration. Use Power BI Desktop to check the refresh duration. If it takes more than two hours, consider moving your semantic model to Power BI Premium. Your semantic model might not be refreshable on shared capacity. Also consider using [incremental refresh](../connect-data/incremental-refresh-overview.md) for semantic models that are larger than 1 GB or that take several hours to refresh.
 - Optimize your semantic models to include only those tables and columns that your reports and dashboards use. Optimize your mashup queries and, if possible, avoid dynamic data source definitions and expensive DAX calculations. Specifically avoid DAX functions that test every row in a table because of the high memory consumption and processing overhead.
 - Apply the same privacy settings as in Power BI Desktop to ensure that Power BI can generate efficient source queries. Keep in mind that Power BI Desktop does not publish privacy settings. You must manually reapply the settings in the data source definitions after publishing your semantic model.
 - Limit the number of visuals on your dashboards, especially if you use [row-level security (RLS)](/fabric/security/service-admin-row-level-security). As explained earlier in this article, an excessive number of dashboard tiles can significantly increase the refresh duration.
 - Use a reliable enterprise data gateway deployment to connect your semantic models to on-premises data sources. If you notice gateway-related refresh failures, such as gateway unavailable or overloaded, follow up with gateway administrators to either add additional gateways to an existing cluster or deploy a new cluster (scale up versus scale out).
-- Use separate data gateways for semantic models in Import mode and DirectQuery/LiveConnect semantic models so that the data imports during scheduled refresh don't impact the performance of reports and dashboards on top of DirectQuery/LiveConnect semantic models, which query the data sources with each user interaction.
+- Use separate data gateways for semantic models in Import mode and DirectQuery/live connection semantic models so that the data imports during scheduled refresh don't impact the performance of reports and dashboards on top of DirectQuery/live connection semantic models, which query the data sources with each user interaction.
 - Ensure that Power BI can send refresh failure notifications to your mailbox. Spam filters might block the email messages or move them into a separate folder where you might not notice them immediately.
 
 ## Related content
