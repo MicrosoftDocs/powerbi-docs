@@ -27,7 +27,7 @@ To get to the **Schedule refresh** screen:
 
 1. On the semantic model details page, select **Refresh** > **Schedule refresh**.
 
-    :::image type="content" source="media/refresh-scheduled-refresh/dataset-schedule-refresh.png" alt-text="Schedule refresh menu option on a semantic model details page in the Power BI service.":::
+    :::image type="content" source="media/refresh-scheduled-refresh/dataset-schedule-refresh.png" alt-text="Screenshot of schedule refresh menu option on a semantic model details page in the Power BI service.":::
 
 ## Gateway and cloud connections
 
@@ -37,7 +37,7 @@ If no gateway is available, you'll see **Gateway connection** disabled. You'll a
 
 If you have a personal gateway configured and it's online, it's available to select. It shows offline if it's not available.
 
-:::image type="content" source="media/refresh-scheduled-refresh/gateway-connection.png" alt-text="Gateway connection section showing available personal and on-premises data gateways.":::
+:::image type="content" source="media/refresh-scheduled-refresh/gateway-connection.png" alt-text="Screenshot of gateway connection section showing available personal and on-premises data gateways.":::
 
 You can also select the enterprise gateway if one is available for you. You only see an enterprise gateway available if your account is listed in the **Users** tab of the data source configured for a given gateway.
 
@@ -47,7 +47,7 @@ You can also select the enterprise gateway if one is available for you. You only
 
 If you're using the personal gateway to refresh data, you must supply the credentials to connect to the back-end data source. If you connected to an app from an online service, the credentials you entered to connect are carried over for scheduled refresh.
 
-:::image type="content" source="media/refresh-scheduled-refresh/data-source-credentials-pgw.png" alt-text="Data source credentials dialog for a semantic model using a personal gateway.":::
+:::image type="content" source="media/refresh-scheduled-refresh/data-source-credentials-pgw.png" alt-text="Screenshot of data source credentials dialog for a semantic model using a personal gateway.":::
 
 You're only required to sign in to a data source the first time you use refresh on that semantic model. Once entered, those credentials are retained with the semantic model.
 
@@ -60,7 +60,7 @@ If there's a problem, typically it's either the gateway is offline because it co
 
 If you're using the on-premises data gateway to refresh data, you don't need to supply credentials, as they're defined for the data source by the gateway administrator.
 
-:::image type="content" source="media/refresh-scheduled-refresh/data-source-credentials-egw.png" alt-text="Data source credentials section grayed out when using an on-premises data gateway (managed by gateway admins).":::
+:::image type="content" source="media/refresh-scheduled-refresh/data-source-credentials-egw.png" alt-text="Screenshot of data source credentials section grayed out when using an on-premises data gateway managed by gateway admins.":::
 
 > [!NOTE]
 > When connecting to on-premises SharePoint for data refresh, Power BI supports only *Anonymous*, *Basic*, and *Windows (NTLM/Kerberos)* authentication mechanisms. Power BI does not support *ADFS* or any *Forms-Based Authentication* mechanisms for data refresh of on-premises SharePoint data sources.
@@ -76,7 +76,7 @@ Set the **Configure a refresh schedule** slider to **On** to configure the setti
 > [!NOTE]
 > The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner. Refresh can begin as early as five minutes before the scheduled refresh time.
 
-:::image type="content" source="media/refresh-scheduled-refresh/scheduled-refresh.png" alt-text="Scheduled refresh settings showing frequency and time slots for a semantic model.":::
+:::image type="content" source="media/refresh-scheduled-refresh/scheduled-refresh.png" alt-text="Screenshot of scheduled refresh settings showing frequency and time slots for a semantic model.":::
 
 > [!NOTE]
 > Inactivity pause: After two months of inactivity, scheduled refresh on your semantic model is paused. A semantic model is considered inactive when no user has visited any dashboard or report built on it. Any view by any user (including via an app or Embedded scenario) resets the inactivity counter. When scheduled refresh is paused, the semantic model owner is emailed and the refresh schedule is displayed as **Disabled**. To resume, open any report or dashboard that uses the semantic model, then re-enable the schedule if needed.

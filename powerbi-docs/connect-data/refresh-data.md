@@ -110,7 +110,7 @@ These refresh types can't always be applied independently, and where you can app
 
 For Power BI users, refreshing data typically means importing data from the original data sources into a semantic model, either based on a refresh schedule or on demand. You can perform multiple semantic model refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits semantic models on shared capacity to eight scheduled daily semantic model refreshes. The eight time values are stored in the back-end database and are based on the *local time* zone that was selected on the semantic model settings page. The scheduler checks which model should be refreshed and at what time(s). The quota of eight scheduled refreshes resets daily at 12:01 AM local time.
 
-:::image type="content" source="media/refresh-data/power-bi-refresh-data-01.png" alt-text="Screen shot of time zone setting for refresh.":::
+:::image type="content" source="media/refresh-data/power-bi-refresh-data-01.png" alt-text="Screenshot of time zone setting for refresh.":::
 
 If the semantic model resides on a Premium capacity, PPU, or Fabric capacity, you can schedule up to 48 refreshes per day in the semantic model settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Semantic models on these capacities with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for read-write support effectively unlimited refresh operations when configured programmatically with TMSL or PowerShell (subject to capacity resources and concurrency limits).
 
@@ -467,17 +467,17 @@ To cancel a semantic model refresh, you need to be a contributor, member, or an 
 
 To start a refresh, go to the semantic model you want to refresh, then select **Refresh now**.
 
-:::image type="content" source="media/refresh-data/start-dataset-refresh.png" alt-text="A screenshot of the refreshing a semantic model.":::
+:::image type="content" source="media/refresh-data/start-dataset-refresh.png" alt-text="Screenshot of the refreshing a semantic model.":::
 
 To stop a refresh, follow these steps:
 
 1. Go to the semantic model that's refreshing and select **Cancel refresh**.
 
-    :::image type="content" source="media/refresh-data/stop-dataset-refresh.png" alt-text="A screenshot of stopping a semantic model refresh.":::
+    :::image type="content" source="media/refresh-data/stop-dataset-refresh.png" alt-text="Screenshot of stopping a semantic model refresh.":::
 
 1. In the *Cancel refresh* pop-up window, select **Yes**.
 
-    :::image type="content" source="media/refresh-data/cancel-refresh-window.png" alt-text="A screenshot of the cancel refresh pop-up window with the yes button highlighted.":::
+    :::image type="content" source="media/refresh-data/cancel-refresh-window.png" alt-text="Screenshot of the cancel refresh pop-up window with the yes button highlighted.":::
 
 ## Power BI Desktop refresh options
 
