@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 05/29/2024
+ms.date: 09/19/2025
 ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx"
 LocalizationGroup: Reports
 ---
@@ -20,7 +20,7 @@ In this tutorial, you start with a dimensional model and build a beautiful repor
 
 You work at AdventureWorks and your manager wants to see an executive summary report on your latest sales figures that answers these specific questions:
 
-- Which day had the most sales in February 2019? 
+- Which day had the most sales in February 2019?
 - Which country/region is the company seeing the most success in? 
 - Which product category and reseller business types should the company continue to invest in? 
 
