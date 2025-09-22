@@ -85,10 +85,14 @@ Compile your Power BI visual with `pbiviz package`. If you're using your own bui
 
 >[!TIP]
 > Starting from powerbi-visuals-tools version 6.1.0, you can check your visual for unsafe calls to `fetch`, `XMLHttpRequest`, and `eval` using the following command:
-`pbiviz package --certification-audit`.
-If any unsafe code is detected during the audit, you can automatically build a package with the necessary fixes by running:
-`pbiviz package --certification-fix`.
-This flag removes all forbidden calls. You need to thoroughly test your visual to ensure it works as expected. Also, don't forget to update npm run package script in package.json to avoid hash mismatch during certification review.
+>
+> `pbiviz package --certification-audit`
+>
+> If any unsafe code is detected during the audit, you can automatically build a package with the necessary fixes by running:
+>
+> `pbiviz package --certification-fix`
+>
+> This flag removes all forbidden calls. The flag is intended **only** for cases where such functions are part of the libraries that are outside of your control. In case the offending code resides within your own repository, it must be removed from the code to comply with certification requirements. You need to thoroughly test your visual to ensure it works as expected. Also, don't forget to update npm run package script in package.json to avoid hash mismatch during certification review.
 
 ### Source code requirements
 
@@ -109,7 +113,7 @@ Follow the code requirements listed here to make sure that your code is in line 
 * Using `XMLHttpRequest`, or `fetch`.
 * Using `innerHTML`, or `D3.html(user data or user input)`.
 * JavaScript errors or exceptions in the browser console, for any input data.
-* Arbitrary or dynamic code such as `eval()`, unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.
+* Arbitrary or dynamic code such as `eval()`, `Function()` unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.
 * Minified JavaScript files or projects.
 
 ## Submit a Power BI visual for certification
