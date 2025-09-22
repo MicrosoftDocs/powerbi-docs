@@ -19,13 +19,13 @@
   - name: Concepts
     expanded: true
     items:
-    - name: "Use notebooks with your semantic model (preview)"
+    - name: "Use notebooks with your semantic model"
       href: service-notebooks.md  
-    - name: "Edit data models in the Power BI service (preview)"
+    - name: "Edit data models in the Power BI service"
       href: service-edit-data-models.md  
     - name: "Implement time-based calculations in Power BI"
       href: desktop-time-intelligence.md
-    - name: "Use semantic model version history (preview)"
+    - name: "Use semantic model version history"
       href: service-semantic-model-version-history.md  
     - name: "Use calculations options in Power BI Desktop"
       href: desktop-calculations-options.md  
