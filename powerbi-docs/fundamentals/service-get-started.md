@@ -47,18 +47,6 @@ Although a paid or trial license is recommended, it isn't required for this tuto
 
 :::image type="content" source="media/service-get-started/power-bi-pro.png" alt-text="Screenshot that shows how to choose the type of license to purchase." border="false":::
 
-### Switch between report views
-
-Reports have two modes: **Editing** and **Reading**. To create a report, add visuals, and edit your report, use **Editing** mode. To view your report in progress, switch to the **Reading** view at the top of the page: 
-
-:::image type="content" source="media/service-get-started/report-reading-view.png" alt-text="Screenshot that shows how to switch to the Reading view of a report canvas.":::
-
-In the Editing view, you can modify reports because you're an *owner* or  *creator* of the report. When you share your report with colleagues, they often can interact with the report in Reading view only. 
-
-When you're ready to continue working on your report, select **Edit**:
-
-:::image type="content" source="media/service-get-started/report-editing-view.png" alt-text="Screenshot that shows how to switch to the Editing view of a report canvas.":::
-
 ## Add data to create a report
 
 Often, when you want to create a Power BI report, you start in Power BI Desktop. Power BI Desktop offers more power. You can transform, shape, and model data, before you start designing reports.
@@ -91,7 +79,7 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
    > [!NOTE]
    > If the file doesn't open, try changing the Sensitivity label to **Public**.
 
-1. Select the data to use by placing a checkmark next to **financials** and choosing **Create**.
+1. Add data to use by selecting the box next to **financials** and choosing **Create**.
 
    The Power BI service imports the sample data from the Excel file as a semantic model and opens a report canvas. We can now use the sample semantic model to create reports and dashboards. We're going to create a report partly from scratch and partly using Copilot. Let's start with Copilot.
    
@@ -100,11 +88,22 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 After you connect data to build a report, you're ready to start exploring. When you find an interesting item, you can save it on the report canvas. From the report canvas, you can pin the item to a dashboard to monitor the data for changes over time.
 
 We can start by asking Copilot to review our data and suggest some visuals. 
-   
+
+### Switch between report views
+
+Reports have two modes: **Editing** and **Reading**. To create a report, add visuals, and edit your report, use **Editing** mode. To view your report in progress, switch to the **Reading** view at the top of the page: 
+
+:::image type="content" source="media/service-get-started/report-reading-view.png" alt-text="Screenshot that shows how to switch to the Reading view of a report canvas.":::
+
+In the Editing view, you can modify reports because you're an *owner* or  *creator* of the report. When you share your report with colleagues, they often can interact with the report in Reading view only. 
+
+When you're ready to continue working on your report, select **Edit**:
+
+:::image type="content" source="media/service-get-started/report-editing-view.png" alt-text="Screenshot that shows how to switch to the Editing view of a report canvas.":::
+
 ## Build a report
 
 There are many ways to build a report. In this article, we start by using Microsoft Copilot to create some report pages. Next, we add additional visuals to a report page from scratch. 
-
 
 ### Use Copilot to create a report in Power BI
 
