@@ -6,7 +6,7 @@ ms.author: willthom
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: landing-page
-ms.date: 06/13/2022
+ms.date: 09/23/2025
 layout: LandingPage
 LocalizationGroup: Get started
 # Customer intent: As an Azure user, wanting to get started with Power BI, I want a link to all the pages.
