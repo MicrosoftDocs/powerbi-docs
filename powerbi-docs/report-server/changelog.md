@@ -21,6 +21,25 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
 You must use Microsoft Report Builder to create paginated reports in Power BI Report Server. For information about Microsoft Report Builder, see [Install Microsoft Report Builder - Power BI Report Server](install-report-builder.md).
 
 
+## September 2025
+
+### Power BI Report Server
+
+- *Version: 1.24.9392.34333 (build 15.0.1119.107), Released: September 22, 2025*
+ - Fixed issue where custom authentication didn't re-authenticate upon cookie expiration 
+ - Fixed issue with exporting Power BI visual to excel caused an error
+ - Resolved several accessibility issues
+ - Custom Visual API shipped with release - version v5.10.0
+ - Security updates
+
+### Power BI Desktop (optimized for Power BI Report Server)
+
+Note: This is the first release of Power BI Desktop for RS that will not include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+
+- *Version: 2.147.1088.0  (September 2025), Released: September 22, 2025*
+     - Support for September 2025 Power BI Report Server.
+
+
 ## May 2025
 
 ### Power BI Report Server
