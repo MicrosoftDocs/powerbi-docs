@@ -35,7 +35,7 @@ This demographic data layer provides insight, for example, into how household in
 >- Maps: [ArcGIS for Power BI maps](https://doc.arcgis.com/en/power-bi/latest/workflows/arcgis-for-power-bi-user-interface.htm)
 >- Training and documentation: [Esri's ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/latest/get-started/introduction-to-arcgis-for-power-bi.htm) online help.
 > [!NOTE]
-> As a *report designer*, you can share an ArcGIS for Power BI map with a colleague who can view and interact with the map. Your colleague cannot save changes to your map. Further, you currently cannot create an ArcGIS for Power BI map on a mobile device, but you can view and interact with it.
+> As a *report designer*, you can share an ArcGIS for Power BI map with a colleague who can view and interact with the map. Your colleague can't save changes to your map. Further, you currently can't create an ArcGIS for Power BI map on a mobile device, but you can view and interact with it.
 
 ## User consent
 
@@ -282,7 +282,7 @@ To pin a location, follow these steps:
    A symbol appears on the map, and the map automatically zooms to the location, pinning it for the duration of your session.
 
 > [!NOTE]
-> Pins remain in place on the map only during the current session; you cannot save a pinned location with the map.
+> Pins remain in place on the map only during the current session; you can't save a pinned location with the map.
 
 For more information, see [Pin a location](https://doc.arcgis.com/en/power-bi/latest/workflows/find-an-address-or-place.htm) in the ArcGIS for Power BI online help.
 
