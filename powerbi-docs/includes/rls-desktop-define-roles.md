@@ -15,11 +15,11 @@ To define security roles:
 
 1. From the **Manage security roles** window, select **+ New** to create a new role.
 
-    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-newrole.png" alt-text="Screenshot of the Manage security roles window, highlighting the + New button that creates a new role." lightbox="../includes/media/rls-desktop-define-roles/powerbi-security-newrole.png":::
+    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-new-role.png" alt-text="Screenshot of the Manage security roles window, highlighting the + New button that creates a new role." lightbox="../includes/media/rls-desktop-define-roles/powerbi-security-new-role.png":::
 
 1. Under **Roles**, provide a name for the role and select enter.
 
-    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-renamerole.png" alt-text="Screenshot of the Roles section of the Manage security roles window. The name field is highlighted where you can rename the role." lightbox="../includes/media/rls-desktop-define-roles/powerbi-security-renamerole.png":::
+    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-rename-role.png" alt-text="Screenshot of the Roles section of the Manage security roles window. The name field is highlighted where you can rename the role.":::
 
     > [!NOTE]
     > You can't define a role with a comma, for example `London,ParisRole`.
@@ -28,21 +28,21 @@ To define security roles:
 
 1. Under **Rules**, use the default editor to define your role. The expressions created return a true or false value.
 
-    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-defaulteditor.png" alt-text="Screenshot of the Manage security roles window, showing the default editor for defining row level security." lightbox="../includes/media/rls-desktop-define-roles/powerbi-security-defaulteditor.png":::
+    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-default-editor.png" alt-text="Screenshot of the Manage security roles window, showing the default editor for defining row level security." lightbox="../includes/media/rls-desktop-define-roles/powerbi-security-default-editor.png":::
 
     > [!NOTE]
     > Not all row-level security filters supported in Power BI can be defined using the default editor. Limitations include expressions that today can only be defined using Data Analysis Expressions (DAX) including dynamic rules such as `username()` or `userprincipalname()`. To define roles using these filters, switch to use the DAX editor.
 
 1. Optionally, select **Switch to DAX editor** to switch to using the DAX editor to define your role. DAX expressions return a value of true or false. For example: `[Entity ID] = “Value”`. The DAX editor is complete with autocomplete for formulas (intellisense). You can select the checkmark above the expression box to validate the expression and the X button above the expression box to revert changes.
 
-    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-daxeditor.png" alt-text="Screenshot of the Manage security roles window,  showing the DAX editor. An example DAX expression is highlighted." lightbox="../includes/media/rls-desktop-define-roles/powerbi-security-daxeditor.png":::
+    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-dax-editor.png" alt-text="Screenshot of the Manage security roles window,  showing the DAX editor. An example DAX expression is highlighted." lightbox="../includes/media/rls-desktop-define-roles/powerbi-security-dax-editor.png":::
 
     > [!NOTE]
     > You can use `username()` within this expression, but note that `username()` has the format of `DOMAIN\username` within Power BI Desktop. Within the Power BI service and Power BI Report Server, it's in the format of the user's User Principal Name (UPN). Additionally, in this expression box, use commas to separate DAX function arguments even if you're using a locale that normally uses semicolon separators, such as French or German.
 
 1. You can switch back to the default editor by selecting **Switch to default editor**. When possible, all changes made in either editor interface persist when switching interfaces. You can define a role using the DAX editor that can't be defined in the default editor. However, if you do so, you're prompted with a warning if you attempt to switch to the default editor. The warning states that switching editors might result in some information being lost. To keep this information, select **Cancel** and continue only editing this role in the DAX editor.
 
-    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-switchtodefaulteditor.png" alt-text="Screenshot of the dialog confirming you would like to switch to the default editor." lightbox="../includes/media/rls-desktop-define-roles/powerbi-security-switchtodefaulteditor.png":::
+    :::image type="content" source="../includes/media/rls-desktop-define-roles/powerbi-security-switch-to-default-editor.png" alt-text="Screenshot of the dialog confirming you would like to switch to the default editor.":::
 
     > [!NOTE]
     > In this expression box, use commas to separate DAX function arguments even if you're using a locale that normally uses semicolon separators, such as French or German.
