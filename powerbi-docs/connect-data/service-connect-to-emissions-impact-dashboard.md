@@ -130,7 +130,7 @@ Follow these steps to find your company's billing account ID, or ask your organi
 
 ### Why are there updated values for my organization’s Azure emissions data?
 
-In January 2024, we refined our methodology for attributing carbon estimates. This update allows for a more granular and precise allocation of carbon emissions to each Azure resource, subscription, and customer.
+In February 2024, we refined our methodology for attributing carbon estimates. This update allows for a more granular and precise allocation of carbon emissions to each Azure resource, subscription, and customer.
 
 ### What is the difference between the old and new methodologies?
 
@@ -197,7 +197,7 @@ As part of the app’s development, the methodology and its implementation went 
 
 **What data is required to calculate the Azure carbon footprint? Do you access my company's data?**
 
-The estimated carbon calculations are performed based on consumption of Azure services accessed using Azure Consumed Revenue. The dashboard doesn't access any of your stored customer data. The consumption data is combined with Microsoft's energy and carbon tracking data to compute the estimated emissions associated with your consumption of Azure services based on the datacenters that provide those services.
+The estimated carbon emissions calculations are performed based on consumption of Azure services accessed using Azure Consumed Revenue. The dashboard doesn't access any of your stored customer data. The consumption data is combined with Microsoft's energy and carbon tracking data to compute the estimated emissions associated with your consumption of Azure services in the datacenters that provide those services.
 
 **Does this calculation include all Azure services and all Azure regions?**
 
