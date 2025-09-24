@@ -1,14 +1,14 @@
 ---
 title: Visualization types in Power BI
-description: Visualization types in Power BI
+description: Learn about all visualization types available in Power BI, including charts, maps, tables, and custom visuals to create effective reports and dashboards.
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'kfollis'
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.search.form: Visualization types in Power BI
 ms.topic: conceptual
-ms.date: 06/05/2024
+ms.date: 09/24/2025
 ms.custom: retail-analysis-sample-PBIX
 LocalizationGroup: Visualizations
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A visualization is an image created from data. Visualizations are also called "visuals." Some examples of visuals are: pie chart, line chart, map, and KPI. This article lists visualizations available in Power BI. We add new visualizations. Stay tuned!
+A visualization is an image created from data that helps you analyze and understand your information better. Visualizations in Power BI, also called "visuals," include pie charts, line charts, maps, and KPIs that transform raw data into actionable insights. This article lists most of the visualization types available in Power BI, but we're constantly making updates. Use this page to help you choose the right visual for your reports and dashboards.
 
 And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), where you find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
 
@@ -25,7 +25,7 @@ And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketpl
 
 All of these visualizations can be added to Power BI reports, specified in Q&A, and pinned to dashboards.
 
-## Area charts: Basic (Layered) and Stacked
+## Area charts: Basic (layered) and stacked
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/basic-area-map-small.png" alt-text="Screenshot of an Area chart.":::
 
@@ -44,11 +44,11 @@ Bar charts are the standard for looking at a specific value across different cat
 
 ## Cards
 
-### Multi row
+### Multirow
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png" alt-text="Screenshot of a Multi row card.":::
 
-Multi row cards display one or more data points, one per row.
+Multirow cards display one or more data points, one per row.
 
 ### Single number
 
@@ -78,13 +78,13 @@ For more information, see [Combo charts in Power BI](power-bi-visualization-comb
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition.png" alt-text="Screenshot of a Decomposition tree." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition-expanded.png":::
 
-The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
+The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It's also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
 
 ## Doughnut charts
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/donut-small.png" alt-text="Screenshot of a Doughnut chart.":::
 
-Doughnut charts are similar to pie charts.  They show the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
+Doughnut charts are similar to pie charts. They show the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
 For more information, see [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md).
 
@@ -92,10 +92,10 @@ For more information, see [Doughnut charts in Power BI](power-bi-visualization-d
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-funnel-chart.png" alt-text="Screenshot of a Funnel chart.":::
 
-Funnels help visualize a process that has stages, and items flow sequentially from one stage to the next.  One example is a sales process that starts with leads and ends with purchase fulfillment.
+Funnels help visualize a process that has stages, and items flow sequentially from one stage to the next. One example is a sales process that starts with leads and ends with purchase fulfillment.
 
 For example, a sales funnel that tracks customers through stages: Lead > Qualified Lead > Prospect > Contract > Close. At a glance, the shape of the funnel conveys the health of the process you're tracking.
-Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor. A pear-shaped funnel is also useful -- it can identify a problem in the process. But typically, the first stage, the "intake" stage, is the largest.
+Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel - with the first stage being the largest, and each subsequent stage smaller than its predecessor. A pear-shaped funnel is also useful - it can identify a problem in the process. But typically, the first stage, the "intake" stage, is the largest.
 
 For more information, see [Funnel Charts in Power BI](power-bi-visualization-funnel-charts.md).
 
@@ -105,7 +105,7 @@ For more information, see [Funnel Charts in Power BI](power-bi-visualization-fun
 
 A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal. The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading. And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
-In the example, we are a car retailer, tracking our Sales team's average sales per month. Our goal is 200,000 and represented by the location of the needle. The minimum possible average sales is 100,000 and we set the maximum as 250,000. The blue shading shows that we're currently averaging approximately $180,000 this month. Luckily, we still have another week to reach our goal.
+In the example, we're a car retailer, tracking our Sales team's average sales per month. Our goal is 200,000 and represented by the location of the needle. The minimum possible average sales are 100,000 and we set the maximum as 250,000. The blue shading shows that we're currently averaging approximately $180,000 this month. Luckily, we still have another week to reach our goal.
 
 Radial gauges are a great choice to:
 
@@ -130,7 +130,7 @@ For more information, see [Key influencer charts in Power BI](power-bi-visualiza
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png" alt-text="Screenshot of a KPI chart.":::
 
-A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. 
+A key performance indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. 
 
 KPIs are a great choice:
 
@@ -146,6 +146,9 @@ For more information, see [KPIs in Power BI](power-bi-visualization-kpi.md).
 Line charts emphasize the overall shape of an entire series of values, usually over time.
 
 ## Maps
+
+> [!IMPORTANT]
+> The **Bing Maps** visual icon is being removed from the default visuals list of the visualization pane. If you haven't already, we recommend upgrading your existing Bing Maps visuals to the Azure Maps visuals to ensure seamless functionality. This change doesn't affect sovereign cloud users or users in South Korea and Brazil.
 
 ### Basic map
 
@@ -172,7 +175,7 @@ For more information, see [ArcGIS maps in Power BI](power-bi-visualizations-arcg
 
 For more information, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context).
 
-### Filled map (Choropleth)
+### Filled map (choropleth)
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-filled-map.png" alt-text="Screenshot of a Filled map.":::
 
@@ -222,7 +225,7 @@ For more information, see [Add a Power Apps visual to your report](power-bi-visu
 
 The Q&A visual provides users with a text box to query data in Power BI reports. Users can use natural language to query data, and the Q&A visual interprets the query and provides an appropriate visualization.
 
-For example, if a user asks a question like "What were the product sales in 2019?" the Q&A visual queries the relevant data and create an appropriate visualization to display the results. This visualization can be in many different formats, such as a chart or a table.
+For example, if a user asks a question like "What were the product sales in 2019?" then the Q&A visual queries the relevant data and create an appropriate visualization to display the results. This visualization can be in many different formats, such as a chart or a table.
 
 >[!TIP]
 >Similar to the [Q&A experience on dashboards](../create-reports/power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language.
@@ -254,7 +257,7 @@ A scatter chart always has two value axes to show one set of numerical data alon
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-scatter-chart.png" alt-text="Screenshot of a scatter chart, with points at the intersection of the x and y axis.":::
 
-A bubble chart replaces data points with bubbles, with the bubble size representing an additional dimension of the data.
+A bubble chart replaces data points with bubbles, with the bubble size representing another dimension of the data.
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-bubble-chart.png" alt-text="Screenshot of a bubble chart, with bubble size representing an additional dimension of data.":::
 
@@ -311,7 +314,7 @@ For more information, see [Add an image widget to a dashboard](../create-reports
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/table-type.png" alt-text="Screenshot of a Table visual.":::
 
-A table is a grid that contains related data in a logical series of rows and columns. It might also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays five different measures for Category.
+A table is a grid that contains related data in a logical series of rows and columns. It might also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. For example, this table displays five different measures for Category.
 
 Tables are a great choice:
 
@@ -325,7 +328,7 @@ For more information, see [Working with tables in Power BI](power-bi-visualizati
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-treemap.png" alt-text="Screenshot of a Treemap.":::
 
-Treemaps are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. And the rectangles are arranged in size from top left (largest) to bottom right (smallest).
+Treemaps are charts of colored rectangles, with size representing value. They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. And the rectangles are arranged in size from top left (largest) to bottom right (smallest).
 
 Treemaps are a great choice:
 
@@ -344,7 +347,7 @@ For more information, see [Treemaps in Power BI](power-bi-visualization-treemaps
 
 A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how an initial value (for example, net income) is affected by a series of positive and negative changes.
 
-The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often start on the horizontal axis, while the intermediate values are floating columns. Because of this "look", waterfall charts are also called bridge charts.
+The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often start on the horizontal axis, while the intermediate values are floating columns. Because of this "look," waterfall charts are also called bridge charts.
 
 Waterfall charts are a great choice:
 

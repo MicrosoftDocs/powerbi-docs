@@ -5,7 +5,7 @@ author: julcsc
 ms.author: juliacawthra
 services: powerbi
 documentationcenter: ''
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 editor: ''
 tags: ''
 ms.service: powerbi

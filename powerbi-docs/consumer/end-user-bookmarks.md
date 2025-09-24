@@ -3,7 +3,7 @@ title: Overview of bookmarks in Power BI service reports
 description: In the Power BI service, learn how to open, create, and share personal bookmarks and report bookmarks.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

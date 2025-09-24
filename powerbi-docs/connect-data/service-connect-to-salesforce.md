@@ -3,7 +3,7 @@ title: Connect to Salesforce with Power BI
 description: Salesforce for Power BI
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

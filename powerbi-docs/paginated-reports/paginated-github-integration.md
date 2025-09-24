@@ -1,8 +1,8 @@
 ---
 title: "Git integration with paginated reports"
 description: You can edit paginated reports using git integration in the Power BI service.
-author: nirusrin
-ms.author: nisrinivasan
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

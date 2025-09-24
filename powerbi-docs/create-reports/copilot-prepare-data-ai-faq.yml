@@ -12,8 +12,7 @@ metadata:
 title: Frequently asked questions about preparing data for AI
 summary: |
   > [!NOTE]
-  > *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
-
+  >  *Authoring* of all prep data for AI features are not available in both the Power BI service and Power BI Desktop. *Consumption* of these features is available everywhere Copilot exists.
 sections:
   - name: Tooling features
     questions:
