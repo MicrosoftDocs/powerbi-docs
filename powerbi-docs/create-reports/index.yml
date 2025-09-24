@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Create reports and dashboards in Power BI
-summary: Power BI documentation provides expert information for creating reports, dashboards, metrics, and paginated reports.
+summary: Learn how to create compelling reports in Power BI using visuals, AI, filters, and formatting. Explore tutorials, samples, and best practices.
 
 metadata:
   title: Create reports and dashboards in Power BI
-  description: Power BI documentation provides expert information for creating reports, dashboards, metrics, and paginated reports.
+  description: Learn how to create compelling reports in Power BI using visuals, AI, filters, and formatting. Explore tutorials, samples, and best practices.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-reports-dashboards
@@ -15,171 +15,107 @@ metadata:
   ms.author: juliacawthra
   ms.date: 09/24/2025
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
 
-  # Card (optional)
-  - title: Get started
+  - title: Get started creating reports
     linkLists:
-      - linkListType: get-started
+      - linkListType: overview
         links:
           - text: Use Power BI Home
             url: desktop-home.md
           - text: Use the updated ribbon
-            url: desktop-ribbon.md
-          - text: "Accessibility overview"
-            url: desktop-accessibility-overview.md
-      - linkListType: tutorial
+            url: desktop-optimize-ribbon.md
+      - linkListType: quickstart
         links:
-          - text: From Excel to report in Power BI Desktop
-            url: desktop-excel-stunning-report.md
+          - text: Create a report from Excel
+            url: service-from-excel-to-stunning-report.md
+          - text: Create a quick report from SharePoint
+            url: service-quick-create-sharepoint-list.md
+
+  - title: Design and format your reports
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Use grouping and binning
+            url: desktop-grouping-and-binning.md
+          - text: Add custom format strings
+            url: desktop-custom-format-strings.md
+          - text: Add filters to a report
+            url: power-bi-report-add-filter.md
+          - text: Use dynamic format strings
+            url: desktop-dynamic-format-strings.md
+          - text: Show items with no data
+            url: desktop-show-items-no-data.md
+          - text: Add hyperlinks to tables
+            url: power-bi-hyperlinks-in-tables.md
+          - text: Add images to tables
+            url: power-bi-images-tables.md
+          - text: Use sparklines in tables
+            url: power-bi-sparklines-tables.md
+          - text: Personalize visuals
+            url: power-bi-personalize-visuals.md
+          - text: Use slicers with hierarchies
+            url: power-bi-slicer-hierarchy-multiple-fields.md
+
+  - title: Use AI and Copilot to enhance reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Generate insights automatically
+            url: insights.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use Copilot to create a report in the service
+            url: copilot-create-report-service.md
+          - text: Use Copilot to create a report in Desktop
+            url: copilot-create-desktop-report.md
+          - text: Use Copilot to evaluate data
+            url: copilot-evaluate-data.md
+          - text: Use Copilot prompts for report pages
+            url: copilot-prompts-report-pages.md
+          - text: Use Copilot prompts for narratives
+            url: copilot-prompts-narratives.md
+
+  - title: Explore report samples
+    linkLists:
       - linkListType: sample
         links:
-          - text: "Get sample data"
-            url: sample-datasets.md
-          - text: "COVID-19 sample: US data"
-            url: sample-covid-19-us.md
-
-
-  # Card (optional)
-  - title: Visualizations
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Visualizations overview
-            url: ../visuals/power-bi-report-visualizations.md
-          - text: Visualization types
-            url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-      - linkListType: how-to-guide
-        links:
-          - text: Tips & tricks for maps
-            url: ../visuals/power-bi-map-tips-and-tricks.md
-          - text: Export data from a visual
-            url: ../visuals/power-bi-visualization-export-data.md
-          - text: Power Automate visual for Power BI (preview)
-            url: power-bi-automate-visual.md
-          - text: Slicers
-            url: ../visuals/power-bi-visualization-slicers.md
-
-  # Card (optional)
-  - title: Design reports
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Report themes"
-            url: desktop-report-themes.md
-          - text: "Text boxes and shapes"
-            url: power-bi-reports-add-text-and-shapes.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Conditional table formatting"
-            url: desktop-conditional-table-formatting.md
-          - text: "Use grouping & binning"
-            url: desktop-grouping-and-binning.md
-          - text: "Add bookmarks to a report"
-            url: desktop-bookmarks.md
-
-  # Card (optional)
-  - title: Artificial intelligence in Power BI
-    linkLists:
+          - text: Financial sample
+            url: sample-financial-download.md
+          - text: Sales and marketing sample
+            url: sample-sales-and-marketing.md
+          - text: Human resources sample
+            url: sample-human-resources.md
+          - text: Artificial intelligence sample
+            url: sample-artificial-intelligence.md
+          - text: Store sales sample
+            url: sample-store-sales.md
+          - text: Customer profitability sample
+            url: sample-customer-profitability.md
+          - text: Retail analysis sample
+            url: sample-retail-analysis.md
+          - text: Competitive marketing analysis sample
+            url: sample-competitive-marketing-analysis.md
+          - text: Regional sales sample
+            url: sample-regional-sales.md
+          - text: Procurement sample
+            url: sample-procurement.md
       - linkListType: tutorial
         links:
-          - text: "Anomaly detection"
-            url: ../visuals/power-bi-visualization-anomaly-detection.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Generate data insights automatically"
-            url: service-insights.md
-          - text: "Decomposition tree visuals"
-            url: ../visuals/power-bi-visualization-decomposition-tree.md
-          - text: "Smart narrative visuals"
-            url: ../visuals/power-bi-visualization-smart-narrative.md
-          - text: "Key influencers visuals"
-            url: ../visuals/power-bi-visualization-influencers.md
+          - text: "Tutorial: Connect to the samples"
+            url: sample-tutorial-connect-to-the-samples.md
+          - text: "Tutorial: Decomposition tree"
+            url: sample-tutorial-decomp-tree.md
 
-  # Card (optional)
-  - title: Metrics and scorecards (preview)
+  - title: Improve dashboards with tiles and themes
     linkLists:
-      - linkListType: concept
-        links:
-          - text: "Get started with goals"
-            url: service-goals-introduction.md
       - linkListType: how-to-guide
         links:
-          - text: "Create scorecards and manual goals"
-            url: service-goals-create.md
-          - text: "Create connected goals"
-            url: service-goals-create-connected.md
-          - text: "Stay on top of your goals"
-            url: service-goals-check-in.md
-
-  # Card (optional)
-  - title: Design report interactions
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Report view in Power BI Desktop"
-            url: desktop-report-view.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Explore data with Q&A"
-            url: power-bi-tutorial-q-and-a.md
-          - text: "Use drillthrough in a report"
-            url: desktop-drillthrough.md
-          - text: "Add bookmarks to a report"
-            url: desktop-bookmarks.md
-          - text: "Format filters in a report"
-            url: power-bi-report-filter.md
-
-  # Card (optional)
-  - title: Natural language Q&A
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Intro to Power BI Q&A
-            url: ../natural-language/q-and-a-intro.md
-      - linkListType: tutorial
-        links:
-          - text: Use Q&A to explore data and create visuals
-            url: power-bi-tutorial-q-and-a.md
-      - linkListType: how-to-guide
-        links:
-          - text: Create a Q&A visual
-            url: ../visuals/power-bi-visualization-q-and-a.md
-
-  # Card (optional)
-  - title: Power BI paginated reports
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What are Power BI paginated reports?
-            url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
-          - text: Report Builder in Power BI
-            url: ../paginated-reports/report-builder-power-bi.md
-      - linkListType: learn
-        links:
-          - text: "Online course: Paginated reports in a day"
-            url: ../learning-catalog/paginated-reports-online-course.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Create a report on a shared semantic model"
-            url: ../paginated-reports/report-builder-shared-datasets.md
-
-  # Card (optional)
-  - title: Dashboards
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Intro to dashboards"
-            url: service-dashboards.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Create a dashboard"
-            url: service-dashboard-create.md
-          - text: "Pin a tile to a dashboard"
-            url: service-dashboard-create.md
-          - text: "Add images or video to a dashboard"
-            url: service-dashboard-add-widget.md
+          - text: Design tips for dashboards
+            url: service-dashboards-design-tips.md
+          - text: Pin live tiles from reports
+            url: service-dashboard-pin-live-tile-from-report.md
+          - text: Edit dashboard tiles
+            url: service-dashboard-edit-tile.md
+          - text: Copy dashboards
+            url: service-dashboard-copy.md
