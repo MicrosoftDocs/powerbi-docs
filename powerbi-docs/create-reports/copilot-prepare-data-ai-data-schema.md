@@ -17,7 +17,7 @@ ms.collection: ce-skilling-ai-copilot
 # Prepare your data for AI - AI data schema
 
 > [!NOTE]
-> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
+> *Authoring* of all prep data for AI features are not available in both the Power BI service and Power BI Desktop. *Consumption* of these features is available everywhere Copilot exists.
 
 An AI data schema enables semantic model authors to define a focused subset of the model's schema for Copilot to prioritize when generating responses. Authors select the most relevant fields to guide Copilot to provide answers that are more aligned with the user's queries. A streamlined schema reduces ambiguity, helping Copilot deliver clearer and more accurate responses.
 
@@ -29,7 +29,7 @@ A defined AI data schema lets model authors ensure that Copilot pulls the most r
 
 To set an AI data schema, follow these steps:
 
-1. Select the **Prep data for AI** button located on the Home ribbon in Power BI Desktop.  
+1. Select the **Prep data for AI** button located on the Home ribbon in Power BI Desktop, or in the ribbon on the semantic model page if in the Power BI service.  
 
    If the tabs in **Prep Data for AI** are disabled, enable Q&A for your model.
 
@@ -46,11 +46,11 @@ Once you exit the dialog, your changes are saved to your model. Copilot now uses
 
 You can update your AI data schema at any time by reopening the **Prep data for AI** dialog.
 
-## Test your AI data schema
+## Test your AI data schema in Power BI Desktop
 
 You can test that the changes in the AI data schema are being respected.
 
-1. Open the Copilot report pane.
+1. Open the Copilot report pane in Power BI Desktop.
 1. Select the **skill picker** and choose **Answer data question**.
 1. Ask a data question using a field that *isn't* in the AI data schema. Copilot shouldn't be able to return an answer.
 1. Ask a data question using a field that *is* in the AI data schema. Copilot should return an answer.
@@ -58,7 +58,7 @@ You can test that the changes in the AI data schema are being respected.
 
 ## Consume the AI data schema in the service
 
-Once your report is published to the service, end-users can take advantage of the AI data schema everywhere that model interacts with Copilot. When users ask a data question, Copilot answers using the AI data schema.
+Once your report is published to the service, or when you made changes using prep data for AI in the service, end-users can take advantage of the AI data schema everywhere that model interacts with Copilot. When users ask a data question, Copilot answers using the AI data schema.
 
 > [!NOTE]
 > End-users can't see the AI data schema set on the model.
