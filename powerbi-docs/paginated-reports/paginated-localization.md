@@ -1,8 +1,8 @@
 ---
 title: "View localized paginated reports in the Power BI service"
 description: You can view paginated reports in your local or preferred language in the Power BI service.
-author: nirusrin
-ms.author: nisrinivasan
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

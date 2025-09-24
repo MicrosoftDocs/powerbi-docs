@@ -1,9 +1,9 @@
 ---
 title: Add Copilot summaries to email subscriptions
 description: You can add Copilot summaries to Power BI report subscriptions.
-author: nirusrin
-ms.author: nisrinivasan
-ms.reviewer: maggieMSFT
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
