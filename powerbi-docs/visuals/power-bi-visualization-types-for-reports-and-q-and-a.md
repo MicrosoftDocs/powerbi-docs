@@ -147,13 +147,8 @@ Line charts emphasize the overall shape of an entire series of values, usually o
 
 ## Maps
 
-> [IMPORTANT]
-> The **Bing Maps** Visual icon will be removed from the default visuals list of the visualization pane
-Beginning with the October release, the Bing Maps visual icon will be removed from the default visuals list in the Power BI visualization pane.
-> 
-> If you haven’t already, we recommend upgrading your existing Bing Maps visuals to the Azure Maps visuals to ensure seamless functionality.
-> 
-> This change won’t impact sovereign cloud users or users in South Korea and Brazil.
+> [!IMPORTANT]
+> The **Bing Maps** visual icon is being removed from the default visuals list of the visualization pane. If you haven't already, we recommend upgrading your existing Bing Maps visuals to the Azure Maps visuals to ensure seamless functionality. This change doesn't affect sovereign cloud users or users in South Korea and Brazil.
 
 ### Basic map
 
