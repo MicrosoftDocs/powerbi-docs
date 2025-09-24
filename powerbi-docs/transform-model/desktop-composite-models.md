@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 12/16/2024
 Localizat2onGroup: Transform and shape data
 ---
-# Use composite models in Power BI Desktop
+# Use composite models in Power BI
 
-Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections, whether DirectQuery or import, were allowed for that report. With composite models, that restriction is removed. A report can seamlessly include data connections from more than one DirectQuery or import data connection, in any combination you choose.
+Previously in Power BI, when you used a DirectQuery or Direct Lake on OneLake tables in a semantic model, DirectQuery tables from other data sources or import tables weren't allowed to be added. With composite models, that restriction is removed. A semantic model can seamlessly include import, Direct Lake on OneLake, and/or DirectQuery tables, in any combination you choose.
 
-The composite models capability in Power BI Desktop consists of three related features:
+The composite models capability in Power BI consists of three related features:
 
 * **Composite models**: Allows a report to have two or more data connections from different source groups. These source groups can be one or more DirectQuery connections and an import connection, two or more DirectQuery connections, or any combination thereof. This article describes composite models in detail.
 
