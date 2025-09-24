@@ -1,6 +1,6 @@
 ---
-title: "What are paginated reports in Power BI?"
-description: Learn about paginated reports in Power BI: pixel-perfect reports designed for printing and sharing. Discover how to create, publish, and distribute reports that display all data across multiple pages with exact layout control.
+title: What are paginated reports in Power BI?
+description: Learn about paginated reports in Power BI - pixel-perfect reports designed for printing and sharing. Discover how to create, publish, and distribute reports that display all data across multiple pages with exact layout control.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
