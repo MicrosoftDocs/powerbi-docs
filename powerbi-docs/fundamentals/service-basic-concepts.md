@@ -3,7 +3,7 @@ title: Basics of the Power BI service
 description: The Power BI service apps, workspaces, dashboards, reports, semantic models, and workbooks, written for all users.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore

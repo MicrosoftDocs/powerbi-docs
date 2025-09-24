@@ -3,7 +3,7 @@ title: Reports in the Power BI service
 description: Learn about the parts of a Power BI report, advantages of reports, and the difference between dashboards and reports.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with reports
