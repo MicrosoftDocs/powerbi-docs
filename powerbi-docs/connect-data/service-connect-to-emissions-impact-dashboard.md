@@ -108,6 +108,12 @@ Follow these steps to make sure your dataset configurations are set correctly:
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/updating-app.png" alt-text="Screenshot of Updating App.":::
 
+## Additional resources
+
+- [How-to video](https://learn-video.azurefd.net/vod/player?id=5f68866b-2e9b-4b84-bcc1-c862676cd456)
+- [What is Carbon optimization in Azure - Carbon optimization in Azure | Microsoft Learn(/azure/carbon-optimization/overview)]
+
+
 ## Finding your company's billing account ID
 
 Follow these steps to find your company's billing account ID, or ask your organization’s Azure administrator.
