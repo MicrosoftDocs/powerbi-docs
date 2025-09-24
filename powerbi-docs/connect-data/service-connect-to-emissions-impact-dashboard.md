@@ -111,7 +111,7 @@ Follow these steps to make sure your dataset configurations are set correctly:
 ## Additional resources
 
 - [How-to video](https://learn-video.azurefd.net/vod/player?id=5f68866b-2e9b-4b84-bcc1-c862676cd456)
-- [What is Carbon optimization in Azure - Carbon optimization in Azure | Microsoft Learn(/azure/carbon-optimization/overview)]
+- [What is Carbon optimization in Azure - Carbon optimization in Azure | Microsoft Learn ](/azure/carbon-optimization/overview)
 
 
 ## Finding your company's billing account ID
