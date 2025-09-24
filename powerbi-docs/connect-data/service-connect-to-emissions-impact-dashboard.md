@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.reviewer: lsuresh
-ms.date: 09/12/2025
+ms.date: 09/24/2025
 LocalizationGroup: Connect to services
 ms.custom: sfi-image-nochange
 ---
