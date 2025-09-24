@@ -20,33 +20,32 @@ Do you work with data, manage infrastructure, or build applications in Microsoft
 
 Are you more of a Power BI consumer? Welcome to you, too. We suggest starting with [Power BI for consumers](../consumer/index.yml).
 
-:::image type="icon" source="media/power-bi-creator-landing/power-bi-designer-get-started.svg"::: **Get started creating with Power BI**:
+**Get started creating with Power BI**:
 
 - [Start with Power BI Desktop](../fundamentals/desktop-what-is-desktop.md)
 - [Start with the Power BI service](../fundamentals/power-bi-overview.md)
 - [What is Power BI Report Server?](../report-server/get-started.md)
 
-:::image type="icon" source="media/power-bi-creator-landing/power-bi-designer-transform-shape-data.svg"::: **Analyze your Azure SQL data**:
+**Analyze your Azure SQL data**:
 
 - [Connect to data in Azure SQL databases](service-azure-sql-database-with-direct-connect.md)
 - [Connect to data in Azure Synapse Analytics](service-azure-sql-data-warehouse-with-direct-connect.md)
 
-
-:::image type="icon" source="media/power-bi-creator-landing/power-bi-designer-connect-data.svg"::: **Analyze data from other Azure services**: 
+ **Analyze data from other Azure services**: 
 
 - [Connect to Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)
 - [Visualize data from Azure Cosmos DB](/azure/cosmos-db/powerbi-visualize)
 - [Visualize data from Azure Data Explorer](/azure/data-explorer/visualize-power-bi)
 
-:::image type="icon" source="media/power-bi-creator-landing/power-bi-designer-licensing.svg"::: **Analyze your Azure costs and usage**:
+**Analyze your Azure costs and usage**:
 
 - [Connect to Azure Consumption Insights](desktop-connect-azure-consumption-insights.md)
 
-:::image type="icon" source="media/power-bi-creator-landing/power-bi-designer-modeling-data-relationships.svg"::: **Embed Power BI in your own applications**: 
+ **Embed Power BI in your own applications**: 
 
 - [Power BI embedded analytics](../developer/embedded/embedded-analytics-power-bi.md)
 - [Tutorial: Embed Power BI content using a sample embed-for-your-customers application](../developer/embedded/embed-sample-for-customers.md)
 
-:::image type="icon" source="media/power-bi-creator-landing/power-bi-designer-create-reports-visuals-dashboards.svg"::: **Enrich Power BI with Azure Machine Learning**:
+**Enrich Power BI with Azure Machine Learning**:
 
 - [Azure Machine Learning and Power BI](/power-bi/transform-model/dataflows/dataflows-machine-learning-integration)
