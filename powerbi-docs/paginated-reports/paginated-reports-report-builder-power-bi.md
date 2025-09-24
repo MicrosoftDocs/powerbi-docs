@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 09/24/2025
+ai-usage: ai-assisted
 ---
 
 # What are paginated reports in Power BI?
