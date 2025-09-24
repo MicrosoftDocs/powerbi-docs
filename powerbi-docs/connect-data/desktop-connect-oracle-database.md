@@ -12,13 +12,13 @@ LocalizationGroup: Connect to data
 ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to learn how to connect to an Oracle database with Power BI Desktop using the Oracle Client for Microsoft Tools and an on-premises data gateway so that I can access and analyze data from Oracle databases in my Power BI reports and dashboards.
 ---
-# Connect to an Oracle Database with Power BI Desktop
+# Connect to an Oracle database with Power BI Desktop
 
 You can easily connect to an Oracle database to access and analyze data in Power BI Desktop. This article explains the initial setup requirements so you can create the connection successfully.
 
 To connect to an Oracle database or Oracle Autonomous Database with Power BI Desktop, install Oracle Client for Microsoft Tools (OCMT) on the computer running Power BI Desktop. The OCMT software you use depends on which version of Power BI Desktop you've installed: 32-bit or 64-bit. It also depends on your version of Oracle server.
 
-## Supported Oracle Database versions
+## Supported Oracle database versions
 
 - Oracle Database 12c (12.1.0.2) and later
 - Oracle Autonomous Database - all versions
