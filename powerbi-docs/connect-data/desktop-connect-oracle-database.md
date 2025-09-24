@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/13/2024
+ms.date: 09/25/2025
 LocalizationGroup: Connect to data
 ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to learn how to connect to an Oracle database with Power BI Desktop using the Oracle Client for Microsoft Tools and an on-premises data gateway so that I can access and analyze data from Oracle databases in my Power BI reports and dashboards.
