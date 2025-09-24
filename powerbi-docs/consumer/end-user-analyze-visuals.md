@@ -4,7 +4,7 @@ description: Learn how to use the Analyze feature in the Power BI service to exp
 ms.custom: Sales and marketing sample
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual

@@ -3,7 +3,7 @@ title: Download Power BI Report Server
 description: This page helps users download and install Power BI Report Server.
 author: petebro-MSFT
 ms.author: petebro
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
