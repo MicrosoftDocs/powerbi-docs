@@ -29,7 +29,7 @@ To determine which version of Power BI Desktop is installed, on the **Help** rib
 
 :::image type="content" source="media/desktop-connect-oracle-database/connect-oracle-database_1.png" alt-text="Screenshot of the Power BI Desktop About dialog showing the 64-bit version information.":::
 
-## Install the Oracle Client for Microsoft tools
+## Install the Oracle Client for Microsoft Tools
 
 OCMT installs and configures Oracle Data Provider for .NET (ODP.​NET) to support 32-bit and 64-bit Microsoft tool connections with Oracle on-premises and cloud databases, including Oracle Autonomous Database. It is a graphical installer that automates the Oracle Database Client setup process. It supports connecting with Power BI Desktop, Power BI service, Excel, SQL Server Analysis Services, SQL Server Data Tools, SQL Server Integration Services, SQL Server Reporting Services, and BizTalk Server.
 
