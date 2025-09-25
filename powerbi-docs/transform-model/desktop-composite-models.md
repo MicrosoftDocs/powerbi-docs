@@ -12,15 +12,47 @@ Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI
 
-Previously in Power BI, when you used a DirectQuery or Direct Lake on OneLake tables in a semantic model, DirectQuery tables from other data sources or import tables weren't allowed to be added. With composite models, that restriction is removed. A semantic model can seamlessly include import, Direct Lake on OneLake, and/or DirectQuery tables, in any combination you choose.
 
-The composite models capability in Power BI consists of three related features:
+Power BI semantic models can have tables from one or more data sources using any of the supported [table storage modes](desktop-storage-mode.md). The model is considered a composite semantic model when the tables have different storage modes, and in the case of DirectQuery table storage mode, with the DirectQuery tables have different data sources. 
 
-* **Composite models**: Allows a report to have two or more data connections from different source groups. These source groups can be one or more DirectQuery connections and an import connection, two or more DirectQuery connections, or any combination thereof. This article describes composite models in detail.
+> [!Note]
+> Import tables from one or more data sources are not considered composite models until they are mixed with non-import tables. The same applies for semantic models with Direct Lake tables from one or more data sources.
 
-* **Many-to-many relationships**: With composite models, you can establish *many-to-many relationships* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Apply many-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
+> [!Note]
+> Direct Lake table storage mode is assumed to be Direct Lake on OneLake for composite models. Direct Lake on SQL table storage mode is single source only and can't be added to any composite model. Learn more about the differences of Direct Lake table storage mode at [aka.ms/DirectLake](https://aka.ms/DirectLake).
 
-* **Storage mode**: You can now specify which visuals query back-end data sources. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries to back-end sources. For more information, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
+## Types of composite models
+
+There are different types of composite models depending on the combination of table storage modes in the semantic model. Each type has its own considerations in functionality and tooling
+
+| **Composite model type**          | **Tooling available**       | **Notes**                         |
+|-----------------------------------|-----------------------------|-----------------------------------|
+| DirectQuery to another Power BI semantic model with or without additional tables in import or DirectQuery storage mode    | Power BI Desktop only   | Connect to a Power BI semantic model then choose **Make changes to this model** or connect after adding a table in import or DirectQuery storage mode.    |
+| DirectQuery tables coming from different data sources   | Power BI Desktop only   | For example, *Table A* comes from *SQL database A* and *Table B* comes from *SQL database B*   |
+| Import and DirectQuery tables in the same semantic model   | Power BI Desktop only   |   |
+| Import and Direct Lake tables in the same semantic model   | [Power BI web modeling](/power-bi/transform-model/service-edit-data-models) only   | Import or Direct Lake tables can be added in Desktop, but only combined in web modeling. |
+| DirectQuery and Direct Lake tables in the same semantic model   | [XMLA](/fabric/enterprise/powerbi/service-premium-connect-tools) only   | Combine using an XMLA script or XMLA community based tools. Can be opened in web modeling for semantic model edits only without any refresh or tables change options. |
+
+## Create composite models in Power BI Desktop
+
+In Power BI Desktop, semantic models can be created with import or DirectQuery tables locally. Additional tables can then be added from Get data in the other storage mode to be considered a composite model. 
+
+> [!Note]
+> If import and DirectQuery tables are both in a semantic model, dual storage mode is available. Dual table storage mode can help keep the import data in sync with DirectQuery tables outside of schedule refresh.
+> 
+Adding DirectQuery tables from another Power BI semantic model have a couple different create paths. 
+
+1. In a blank Power BI file, first connect to the Power BI semantic model. Once live connected, you have the option to **Make changes to this model**. Selecting **Make changes to this model** from the ribbon or footer will convert the live connection to a DirectQuery connection. The DirectQuery connection creates a new local semantic model with the tables in DirectQuery storage mode. You can add new tables in either import or DirectQuery storage mode, as well as give you the option to override some column properties on the source semantic model.
+
+2. In semantic model with import or DirectQuery tables already, connect to a Power BI semantic model and the tables you choose will be added as DirectQuery.
+
+Semantic models created with Direct Lake tables are live edited in Power BI Desktop. Adding additional Direct Lake tables is supported. Open the semantic model in [Power BI web modeling](/power-bi/transform-model/service-edit-data-models) to add import tables. Use [XMLA](/fabric/enterprise/powerbi/service-premium-connect-tools) only to add DirectQuery tables.
+
+Live editing a Direct Lake and import semantic model is possible in Desktop, but no additional tables can be added. Tables can only be added from [Power BI web modeling](/power-bi/transform-model/service-edit-data-models) for Direct Lake and import composite models.
+
+## Create composite models in web modeling
+
+In [Power BI web modeling](/power-bi/transform-model/service-edit-data-models) semantic models can be created with import or Direct Lake tables. DirectQuery tables can't be added. Additional tables can then be added in the other storage mode and be considered a composite model. 
 
 ## Use composite models
 
@@ -177,7 +209,7 @@ If you added another DirectQuery connection to another source, such as a DirectQ
 :::image type="content" source="media/desktop-composite-models/composite-models-source-groups-2.png" alt-text="Diagram showing the Import, Sales, and Inventory source groups containing the tables from the respective sources.":::
 
 > [!NOTE]
-> Importing data from another source will **not** add another source group, because all items from all imported sources are in one source group.
+> Importing data from another source will **not** add another source group, because all items from all imported sources are in one source group. Direct Lake and import tables are also considered the same source group.
 
 ### Source groups and relationships
 
