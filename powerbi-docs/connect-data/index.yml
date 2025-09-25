@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Connect to data in Power BI - documentation
-summary: Power BI documentation provides expert information for connecting to data with tools such as gateways, template apps, and data refresh.
+title: Connect to data in Power BI
+summary: Learn how to connect Power BI to a wide variety of data sources, configure gateways, and manage data refresh. This documentation helps you get data into Power BI Desktop and the Power BI service, whether it's on-premises or in the cloud.
 
 metadata:
-  title: Connect to data in Power BI - documentation
-  description: Power BI documentation provides expert information for connecting to data with tools such as gateways, template apps, and data refresh.
+  title: Connect to data in Power BI
+  description: Power BI makes it easy to bring your data to life. Whether you're connecting to cloud services, on-premises databases, or custom data sources, this documentation helps you take action. Learn how to connect, refresh, transform, and manage your data using Power BI Desktop and the Power BI service. Start with the basics or dive into advanced scenarios like DirectQuery, gateways, and incremental refresh.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-data-sources
@@ -13,69 +13,94 @@ metadata:
   ms.collection: collection
   author: JulCsc
   ms.author: juliacawthra
-  ms.date: 09/10/2025
+  ms.date: 09/23/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
+  # Cards and links should be based on top customer tasks or top subjects
+  # Start card title with a verb
   # Card (optional)
-  - title: Connect to data in Power BI
+  - title: Get started connecting to data
     linkLists:
-      - linkListType: concept
+      - linkListType: quickstart
         links:
-          - text: Data sources
-            url: desktop-data-sources.md
-          - text: Table view in Power BI Desktop
-            url: desktop-data-view.md
-          - text: New name for Power BI datasets
-            url: service-datasets-rename.md
-      - linkListType: tutorial
-        links:
-          - text: Import data from a web page
-            url: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-
-  # Card (optional)
-  - title: Gateways
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "On-premises data gateways"
-            url: service-gateway-onprem.md
-      - linkListType: tutorial
-        links:
-          - text: "Connect to on-premises SQL Server data"
-            url: service-gateway-sql-tutorial.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Use personal gateways"
-            url: service-gateway-personal-mode.md
-
-  # Card (optional)
-  - title: Template apps
-    linkLists:
+          - text: Complete a quickstart to connect to data
+            url: desktop-quickstart-connect-to-data.md
       - linkListType: overview
         links:
-          - text: "What are template apps?"
-            url: service-template-apps-overview.md
-      - linkListType: concept
-        links:
-          - text: "Create template apps"
-            url: service-template-apps-create.md
-          - text: "Distribute template apps in your org"
-            url: service-template-apps-install-distribute.md
+          - text: Connect to data in Power BI Desktop
+            url: desktop-connect-to-data.md
+          - text: Explore available Power BI data sources
+            url: power-bi-data-sources.md
 
-  # Card (optional)
-  - title: Refresh data
+  - title: Manage data refresh
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure scheduled refresh
+            url: refresh-scheduled-refresh.md
+          - text: Set up incremental refresh
+            url: incremental-refresh-overview.md
+          - text: Implement incremental refresh with XMLA
+            url: incremental-refresh-xmla.md
+
+  - title: Set up and troubleshoot gateways
     linkLists:
       - linkListType: concept
         links:
-          - text: "Data refresh"
-            url: refresh-data.md
-          - text: "Incremental refresh for semantic models"
-            url: incremental-refresh-overview.md
+          - text: Learn about on-premises data gateways
+            url: service-gateway-onprem-indepth.md
       - linkListType: how-to-guide
         links:
-          - text: "Configure scheduled refresh"
-            url: refresh-scheduled-refresh.md
+          - text: Troubleshoot on-premises gateway issues
+            url: service-gateway-onprem-tshoot.md
+          - text: Use personal mode gateway
+            url: service-gateway-personal-mode.md
+          - text: Manage gateway data sources
+            url: service-gateway-data-sources.md
+          - text: Build custom connectors for gateways
+            url: service-gateway-custom-connectors.md
+      - linkListType: tutorial
+        links:
+          - text: Follow a SQL Server gateway tutorial
+            url: service-gateway-sql-tutorial.md
+
+  - title: Use DirectQuery and live connections
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Understand how DirectQuery works
+            url: desktop-directquery-about.md
+          - text: Enable referential integrity
+            url: desktop-assume-referential-integrity.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use DirectQuery in Power BI Desktop
+            url: desktop-use-directquery.md
+          - text: Connect to live and DirectQuery datasets
+            url: service-live-connect-dq-datasets.md
+
+  - title: Connect to advanced data sources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Connect to an Oracle database
+            url: desktop-connect-oracle-database.md
+          - text: Use Python scripts in Power BI Desktop
+            url: desktop-python-scripts.md
+          - text: Create Python visuals in Power BI
+            url: desktop-python-visuals.md
+          - text: Extend connectors with custom logic
+            url: desktop-connector-extensibility.md
+
+  - title: Work with datasets and cloud data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Understand datasets in the Power BI service
+            url: service-datasets-understand.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create and share cloud data sources
+            url: service-create-share-cloud-data-sources.md

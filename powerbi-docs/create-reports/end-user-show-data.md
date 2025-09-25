@@ -3,7 +3,7 @@ title: Show the data that was used to create the report visual
 description: Learn how Power BI business users can "see" the data used to create a report visual by showing it as a table.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

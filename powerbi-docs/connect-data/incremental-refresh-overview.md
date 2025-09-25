@@ -1,16 +1,17 @@
 ---
-title: Incremental refresh for semantic models in Power BI
-description: Learn how to configure and use the incremental refresh features in Power BI to capture fast-moving data.
+title: Configure incremental refresh and real-time data for Power BI semantic models
+description: Learn how to configure incremental refresh and real-time data in Power BI semantic models. Improve refresh performance, reduce resource consumption, and capture fast-moving data efficiently.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
-ms.date: 08/20/2024
+ms.date: 09/24/2025
+ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to learn how to configure and use incremental refresh in Power BI to capture fast-moving data, so that I can improve the performance of model refreshes and reduce resource consumption.
 ---
-# Incremental refresh and real-time data for semantic models
+# Configure incremental refresh and real-time data for Power BI semantic models
 
 Incremental refresh and real-time data for semantic models in Power BI provide efficient ways to handle dynamic data and improve model refresh performance. By automating partition creation and management, incremental refresh reduces the amount of data that needs to be refreshed and allows for the inclusion of real-time data. This article explains how to configure and use incremental refresh features in Power BI to capture fast-moving data and enhance performance.
 
@@ -18,16 +19,16 @@ Incremental refresh extends scheduled refresh operations by providing automated 
 
 With incremental refresh and real-time data:
 
-- **Fewer refresh cycles for fast-changing data are needed.** DirectQuery mode gets the latest data updates as queries are processed, without requiring a high refresh cadence. 
-- **Refreshes are faster.** Only the most recent data that has changed needs to be refreshed.
-- **Refreshes are more reliable.** Long-running connections to volatile data sources aren't necessary. Queries to source data run faster, reducing potential for network problems to interfere.
-- **Resource consumption is reduced.** Less data to refresh reduces overall consumption of memory and other resources in both Power BI and data source systems.
-- **Large semantic models are enabled.** Semantic models with potentially billions of rows can grow without the need to fully refresh the entire model with each refresh operation.
-- **Setup is easy.** Incremental refresh *policies* are defined in Power BI Desktop with just a few tasks. When Power BI Desktop publishes the report, the service automatically applies those policies with each refresh.  
+- **Fewer refresh cycles for fast-changing data are needed**: DirectQuery mode gets the latest data updates as queries are processed, without requiring a high refresh cadence. 
+- **Refreshes are faster**: Only the most recent data that changed needs to be refreshed.
+- **Refreshes are more reliable**: Long-running connections to volatile data sources aren't necessary. Queries to source data run faster, reducing potential for network problems to interfere.
+- **Resource consumption is reduced**: Less data to refresh reduces overall consumption of memory and other resources in both Power BI and data source systems.
+- **Large semantic models are enabled**: Semantic models with potentially billions of rows can grow without the need to fully refresh the entire model with each refresh operation.
+- **Setup is easy**: Incremental refresh *policies* are defined in Power BI Desktop with just a few tasks. When Power BI Desktop publishes the report, the service automatically applies those policies with each refresh.  
 
 When you publish a Power BI Desktop model to the service, each table in the new model has a single partition. That single partition contains all rows for that table. If the table is large, say with tens of millions of rows or more, a refresh for that table can take a long time and consume an excessive amount of resources.
 
-With incremental refresh, the service dynamically partitions and separates data that needs to be refreshed frequently from data that can be refreshed less frequently. Table data is filtered by using Power Query date/time parameters with the reserved, case-sensitive names `RangeStart` and `RangeEnd`. When you configure incremental refresh in Power BI Desktop, these parameters are used to filter only a small period of data that's loaded into the model. When Power BI Desktop publishes the report to the Power BI service, with the first refresh operation the service creates incremental refresh and historical partitions, and optionally a real-time DirectQuery partition based on the incremental refresh policy settings. The service then overrides the parameter values to filter and query data for each partition based on date/time values for each row.
+With incremental refresh, the service dynamically partitions and separates data that needs to be refreshed frequently from data that can be refreshed less frequently. Table data is filtered by using Power Query date/time parameters with the reserved, case-sensitive names `RangeStart` and `RangeEnd`. When you configure incremental refresh in Power BI Desktop, these parameters are used to filter only a small period of data that's loaded into the model. When Power BI Desktop publishes the report to the Power BI service, with the first refresh operation, the service creates incremental refresh and historical partitions, and optionally a real-time DirectQuery partition based on the incremental refresh policy settings. The service then overrides the parameter values to filter and query data for each partition based on date/time values for each row.
 
 With each subsequent refresh, the query filters return only those rows within the refresh period dynamically defined by the parameters. Those rows with a date/time within the refresh period are refreshed. Rows with a date/time no longer within the refresh period then become part of the historical period, which isn't refreshed. If a real-time DirectQuery partition is included in the incremental refresh policy, its filter is also updated so that it picks up any changes that occur after the refresh period. Both the refresh and historical periods are rolled forward. As new incremental refresh partitions are created, refresh partitions no longer in the refresh period become historical partitions. Over time, historical partitions become less granular as they're merged together. When a historical partition is no longer in the historical period defined by the policy, it's removed from the model entirely. This behavior is known as a *rolling window pattern*.
 
@@ -49,7 +50,7 @@ Getting the latest data in real time with DirectQuery is only supported for Powe
 
 Incremental refresh and real-time data works best for structured, relational data sources like SQL Database and Azure Synapse, but can also work for other data sources. In any case, your data source must support the following:
 
-**Date filtering** - The data source must support some mechanism to filter data by date. For a relational source, this is typically a date column of the date/time or integer data type on the target table. The RangeStart and RangeEnd parameters, which must be the date/time data type, filter table data based on the date column. For date columns of integer surrogate keys in the form of `yyyymmdd`, you can create a function that converts the date/time value in the RangeStart and RangeEnd parameters to match the integer surrogate keys of the date column. To learn more, see [Configure incremental refresh and real-time data - Convert DateTime to integer](incremental-refresh-configure.md#convert-datetime-to-integer).  
+**Date filtering**: The data source must support some mechanism to filter data by date. For a relational source, this is typically a date column of the date/time or integer data type on the target table. The RangeStart and RangeEnd parameters, which must be the date/time data type, filter table data based on the date column. For date columns of integer surrogate keys in the form of `yyyymmdd`, you can create a function that converts the date/time value in the RangeStart and RangeEnd parameters to match the integer surrogate keys of the date column. To learn more, see [Configure incremental refresh and real-time data - Convert DateTime to integer](incremental-refresh-configure.md#convert-datetime-to-integer).  
 
 For other data sources, the RangeStart and RangeEnd parameters must be passed to the data source in some way that enables filtering. For file-based data sources where files and folders are organized by date, the RangeStart and RangeEnd parameters can be used to filter the files and folders to select which files to load. For web-based data sources, the RangeStart and RangeEnd parameters can be integrated into the HTTP request. For example, the following query can be used for incremental refresh of the traces from an AppInsights instance:
 
@@ -84,7 +85,7 @@ in
 Table
 ```
 
-When incremental refresh is configured, a Power Query expression that includes a date/time filter based on the RangeStart and RangeEnd parameters is executed against the data source. If the filter is specified in a query step after the initial source query, it's important that query folding combines the initial query step with the steps that reference the RangeStart and RangeEnd parameters. For example, in the following query expression, `Table.SelectRows` will fold because it immediately follows the `Sql.Database` step, and SQL Server supports folding:
+When incremental refresh is configured, a Power Query expression that includes a date/time filter based on the RangeStart and RangeEnd parameters is executed against the data source. If the filter is specified in a query step after the initial source query, it's important that query folding combines the initial query step with the steps that reference the RangeStart and RangeEnd parameters. For example, in the following query expression, `Table.SelectRows` folds because it immediately follows the `Sql.Database` step, and SQL Server supports folding:
 
 ```powerquery-m
 let
@@ -97,7 +98,7 @@ in
   #"Filtered Rows1"
  ```
 
-There's no requirement for _final query_ to support folding. For example, in the following expression, we use a non-folding NativeQuery but integrate the RangeStart and RangeEnd parameters directly into SQL:
+There's no requirement for _final query_ to support folding. For example, in the following expression, we use a nonfolding NativeQuery but integrate the RangeStart and RangeEnd parameters directly into SQL:
 
 ```powerquery-m
 let
@@ -108,9 +109,9 @@ in
   Data
 ```
 
-However, if the incremental refresh policy includes getting real-time data with DirectQuery, non-folding transformations can't be used. If it’s a pure Import mode policy without real-time data, the query mashup engine might compensate and apply the filter locally, which requires retrieving all rows for the table from the data source. This can cause incremental refresh to be slow, and the process can run out of resources either in the Power BI service or in an on-premises data gateway - effectively defeating the purpose of incremental refresh.
+However, if the incremental refresh policy includes getting real-time data with DirectQuery, nonfolding transformations can't be used. If it’s a pure Import mode policy without real-time data, the query mashup engine might compensate and apply the filter locally, which requires retrieving all rows for the table from the data source. This can cause incremental refresh to be slow, and the process can run out of resources either in the Power BI service or in an on-premises data gateway - effectively defeating the purpose of incremental refresh.
 
-Because support for query folding is different for different types of data sources, verification should be performed to ensure the filter logic is included in the queries being run against the data source. In most cases, Power BI Desktop attempts to perform this verification for you when defining the incremental refresh policy. For SQL-based data sources such as SQL Database, Azure Synapse, Oracle, and Teradata, this verification is reliable. However, other data sources may be unable to verify without tracing the queries. If Power BI Desktop is unable to confirm the queries, a warning is shown in the Incremental refresh policy configuration dialog.
+Because support for query folding is different for different types of data sources, verification should be performed to ensure the filter logic is included in the queries being run against the data source. In most cases, Power BI Desktop attempts to perform this verification for you when defining the incremental refresh policy. For SQL-based data sources such as SQL Database, Azure Synapse, Oracle, and Teradata, this verification is reliable. However, other data sources might be unable to verify without tracing the queries. If Power BI Desktop is unable to confirm the queries, a warning is shown in the Incremental refresh policy configuration dialog.
 
 :::image type="content" source="media/incremental-refresh-overview/query-folding-warning.png" alt-text="Screenshot of the query folding warning":::
 
@@ -154,7 +155,7 @@ By default, the current date and time is determined based on Coordinated Univers
 
 :::image type="content" source="media/incremental-refresh-overview/time-zone.png" alt-text="Screenshot of Scheduled refresh dialog showing the Time zone input field":::
 
-Refresh operations not invoked through the Power BI service, such as the [XMLA TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true), do not consider the time zone configuration and default to UTC.
+Refresh operations not invoked through the Power BI service, such as the [XMLA TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true), don't consider the time zone configuration and default to UTC.
 
 ## Configure incremental refresh and real-time data
 
@@ -168,7 +169,12 @@ Configuring incremental refresh is done in Power BI Desktop. For most models, on
 
 ### Create parameters
 
-To configure incremental refresh in Power BI Desktop, you first create two Power Query date/time parameters with the reserved, case-sensitive names `RangeStart` and `RangeEnd`. These parameters, defined in the Manage Parameters dialog in Power Query Editor, are initially used to filter the data loaded into the Power BI Desktop model table to include only those rows with a date/time within that period. `RangeStart` represents the oldest, or earliest date/time, and `RangeEnd` represents the newest, or latest date/time. After the model is published to the service, `RangeStart` and `RangeEnd` are overridden automatically by the service to query data defined by the refresh period specified in the incremental refresh policy settings.
+To configure incremental refresh in Power BI Desktop, you first create two Power Query date/time parameters with the reserved, case-sensitive names `RangeStart` and `RangeEnd`. These parameters, defined in the **Manage Parameters** dialog in Power Query Editor, are initially used to filter the data loaded into the Power BI Desktop model table to include only those rows with a date/time within that period. 
+
+> [!NOTE]
+> You need to manually reference these parameters in filter expressions - they can't be used through the standard Custom Filter UI. 
+
+`RangeStart` represents the oldest, or earliest date/time, and `RangeEnd` represents the newest, or latest date/time. After the model is published to the service, `RangeStart` and `RangeEnd` are overridden automatically by the service to query data defined by the refresh period specified in the incremental refresh policy settings.
 
 For example, the FactInternetSales data source table averages 10,000 new rows per day. To limit the number of rows initially loaded into the model in Power BI Desktop, specify a two-day period between `RangeStart` and `RangeEnd`.
 
@@ -176,7 +182,20 @@ For example, the FactInternetSales data source table averages 10,000 new rows pe
 
 ### Filter data
 
-With the `RangeStart` and `RangeEnd` parameters defined, you apply custom date filters on your table's date column. The filters you apply select a subset of data that's loaded into the model when you select **Apply**.
+With the `RangeStart` and `RangeEnd` parameters defined, you need to create parameterized filters on your table's date column. You can't use the standard "Custom Filter" UI option for this - instead, you must manually add filter steps that reference the parameters.
+
+In Power Query Editor, add filtering steps:
+
+1. Select **Add Step**, or modify the query directly in the formula bar.
+1. Use the `Table.SelectRows` function to create filters that reference your parameters.
+1. Apply separate filter steps for both the start and end date conditions.
+
+For example, to filter by OrderDateKey:
+
+```powerquery-m
+#"Filtered Rows" = Table.SelectRows(Source, each [OrderDateKey] >= Int32.From(DateTime.ToText(RangeStart,[Format="yyyyMMdd"]))),
+#"Filtered Rows1" = Table.SelectRows(#"Filtered Rows", each [OrderDateKey] < Int32.From(DateTime.ToText(RangeEnd,[Format="yyyyMMdd"])))
+```
 
 :::image type="content" source="media/incremental-refresh-overview/custom-filter.png" alt-text="Screenshot of column context menu with Custom Filter selected":::
 
@@ -196,7 +215,7 @@ The **Select table** listbox defaults to the table you selected in Table view. E
 
 The **Archive data starting before refresh date** setting determines the historical period in which rows with a date/time in that period are included in the model, plus rows for the current incomplete historical period, plus rows in the refresh period up to the current date and time.
 
-For example, if you specify five *years*, the table stores the last five whole years of historical data in year partitions. The table will also include rows for the current year in quarter, month, or day partitions, up to and including the refresh period.
+For example, if you specify five *years*, the table stores the last five whole years of historical data in year partitions. The table also includes rows for the current year in quarter, month, or day partitions, up to and including the refresh period.
 
 For models in Premium capacities, backdated historical partitions can be selectively refreshed at a granularity determined by this setting. To learn more, see [Advanced incremental refresh - Partitions](incremental-refresh-xmla.md#partitions).
 
@@ -224,7 +243,7 @@ The current design requires that the column to detect data changes is persisted 
 - Reduce the precision to an acceptable level, given your refresh-frequency requirements.
 - Define a custom query for detecting data changes by using the XMLA endpoint, and avoid persisting the column value altogether.
 
-In some cases, enabling the **Detect data changes** option can be further enhanced. For example, you may want to avoid persisting a last-update column in the in-memory cache, or enable scenarios where a configuration/instruction table is prepared by extract-transform-load (ETL) processes for flagging only those partitions that need to be refreshed. In cases like these, for Premium capacities, use TMSL and/or the TOM to override the detect data changes behavior. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
+In some cases, enabling the **Detect data changes** option can be further enhanced. For example, you might want to avoid persisting a last-update column in the in-memory cache, or enable scenarios where a configuration/instruction table is prepared by extract-transform-load (ETL) processes for flagging only those partitions that need to be refreshed. In cases like these, for Premium capacities, use TMSL and/or the TOM to override the detect data changes behavior. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
 
 ## Publish
 
@@ -233,7 +252,7 @@ After configuring the incremental refresh policy, you publish the model to the s
 > [!NOTE]
 > Semantic models with an incremental refresh policy to get the latest data in real time with DirectQuery can only be published to a Premium workspace.
 
-For models published to workspaces assigned to Premium capacities, if you think the model will grow beyond 1 GB, you can improve refresh operation performance and ensure the model doesn't max out size limits by enabling the Large semantic model storage format setting *before* performing the first refresh operation in the service. To learn more, see [Large models in Power BI Premium](../enterprise/service-premium-large-models.md).
+For models published to workspaces assigned to Premium capacities, if you think the model might grow beyond 1 GB, you can improve refresh operation performance and ensure the model doesn't max out size limits by enabling the Large semantic model storage format setting *before* performing the first refresh operation in the service. To learn more, see [Large models in Power BI Premium](../enterprise/service-premium-large-models.md).
 
 > [!IMPORTANT]
 > After Power BI Desktop publishes the model to the service, you can't download that *.pbix* back.

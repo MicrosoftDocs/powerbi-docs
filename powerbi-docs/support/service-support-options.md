@@ -3,11 +3,11 @@ title: Power BI and Fabric support overview
 description: This article describes how users of Power BI and Fabric can access support
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting
-ms.date: 05/10/2023
+ms.date: 09/19/2025
 ---
 
 # Fabric and Power BI support overview
@@ -22,19 +22,19 @@ Many resources are available to help you identify, research, and solve issues. F
 
 From the Help pane, you can navigate to the Fabric Support page to check [Fabric service status](https://support.fabric.microsoft.com/support) or to view [Fabric current known issues](https://support.fabric.microsoft.com/known-issues).
 
-![Screenshot of links to service status and known issues in the Help Pane.](media/service-support-options/help-pane-service-status.png)
+:::image type="content" source="media/service-support-options/help-pane-service-status.png" alt-text="Screenshot of links to service status and known issues in the Help Pane.":::
 
 ### Searching for content in the Help Pane
 
-In the Help pane, enter a keyword to find recommended solution and relevant information and resources from Microsoft documentation and community forum topics. Use the dropdown to filter the results.
+In the Help pane, enter a keyword to find a recommended solution and relevant information and resources from Microsoft documentation and community forum topics. Use the dropdown to filter the results.
 
-![Screenshot showing how to filter the Help pane results. ](media/service-support-options/help-pane-search-with-recommended-solution.png)
+:::image type="content" source="media/service-support-options/help-pane-search-with-recommended-solution.png" alt-text="Screenshot showing how to filter the Help pane results.":::
 
 ### Search for help in Fabric communities
 
 Clicking on "Ask the community" in the Help Pane takes you to the Fabric Community site where you can post questions and seek help from other users.
 
-![Screenshot of additional resources in the Help Pane including link to community.](media/service-support-options/help-pane-community.png)
+:::image type="content" source="media/service-support-options/help-pane-community.png" alt-text="Screenshot of additional resources in the Help Pane including link to community.":::
 
 ## About Support
 
@@ -46,14 +46,14 @@ Microsoft provides support in English globally and in other languages (Japanese,
 |---------|---------|---------|---------|
 |Provided globally all day, every day   |Available to customers in Japan region during that region's business hours.        |Available to customers in Europe/Middle East/Africa regions during those regions' business hours. <br />Spanish/Portuguese available to customers in South America during that region's business hours.   | Available to customers in Asia/Pacific region during that region's business hours.        |
 
-<sup>*</sup> Around the clock (all day, every day) support is available based on issue severity and your support offering.<br/><sup>**</sup> Support in languages other than English may be available during local business hours subject to availability.
+<sup>*</sup> Around the clock (all day, every day) support is available based on issue severity and your support offering.<br/><sup>**</sup> Support in languages other than English might be available during local business hours subject to availability.
 
 > [!NOTE]
 > Translation services might be available to assist with other languages outside normal business hours.
 
 ### Do I get around the clock support? 
 
-- Microsoft provides all day, everyday support in English for all **Severity A** issues and might provide all day, everyday assistance for issues of other severity based on your support offering. 
+- Microsoft provides all day, everyday support in English for all **Severity A** issues and might provide all day, everyday assistance for issues of other severity based on your support offering.
 
 - For those issues that don't qualify for all day, everyday support, Microsoft provides assistance during local business hours only.
 
@@ -68,13 +68,13 @@ For **most countries**, business hours are from 9:00 AM to 5:00 PM during weekda
 
 ### What is a preview (beta) service or feature?
 
-Microsoft may provide access to Fabric workloads, artifacts, or features that are still in preview to obtain feedback and for evaluation purposes. There are different kinds of preview services and features, with service availability and access being the biggest differentiators:
+Microsoft might provide access to Fabric workloads, artifacts, or features that are still in preview to obtain feedback and for evaluation purposes. There are different kinds of preview services and features, with service availability and access being the biggest differentiators:
 
 - **Public Preview**: Made available to all Fabric or Power BI users. Some preview experiences or features have to be enabled or disabled by Fabric admins in the Admin Portal. The public preview experience is intended to give users an early look into what is coming and a chance to test upcoming features.
 
-- **Private Preview**: Provided only to a small subset of customers, in direct contact with product engineering teams who are building the features, focused on direct and continual feedback during the development phase of a service.
+- **Private Preview**: Provided only to a small subset of customers in direct contact with the product engineering teams who are building the features. This type of preview is focused on direct and continual feedback during the development phase of a service.
 
-When Microsoft offers you early access to a Fabric workload and/or features, these preview services and features are subject to reduced or different service terms as described in your service agreement and the preview supplemental terms. Preview services and features are provided "as-is," "with all faults," and "as available," and are excluded from any Limited Warranties provided by Microsoft for services released to general availability (GA), and are made available to you on the condition that you agree to these terms of use, which supplement your agreement governing use of customer engagement apps.
+When Microsoft offers you early access to a Fabric workload and/or features, these preview services and features are subject to reduced or different service terms as described in your service agreement and the preview supplemental terms. Preview services and features are provided "as-is," "with all faults," and "as available," they're excluded from any Limited Warranties provided by Microsoft for services released to general availability (GA). They're made available to you on the condition that you agree to these terms of use, which supplement your agreement governing use of customer engagement apps.
 
 ### Does Fabric support cover preview (beta) services or features?
 
@@ -88,19 +88,19 @@ When Microsoft offers you early access to a Fabric workload and/or features, the
 
 Verify whether Microsoft support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Power BI service, then choose **Get Help**. If this selection takes you to Power BI support, you might use the following listed support options. Otherwise, you're  directed to the preferred support option for your organization. If your product doesn't have a support contract, you receive a message that "This product isn't supported."
 
-![Help_pane2](media/service-support-options/help-pane2.png)
+:::image type="content" source="media/service-support-options/help-pane2.png" alt-text="Screenshot of the Help Menu in Power BI service, with the Get Help option highlighted.":::
 
 If Microsoft support is your admin's preferred option:
 
 1. Check for service outages or degradation at [Power BI and Fabric Support](https://support.fabric.microsoft.com).
-2. Check for [known issues with Power BI or Fabric features](https://support.fabric.microsoft.com/known-issues). 
+1. Check for [known issues with Power BI or Fabric features](https://support.fabric.microsoft.com/known-issues). 
 1. See if your issue has been addressed by the [Community](https://community.fabric.microsoft.com).
 
-1. Review the [Fabric troubleshooting documentation ](/fabric/get-started/)or the [Power BI troubleshooting documentation](/power-bi/troubleshoot/).
+1. Review the [Fabric troubleshooting documentation](/fabric/get-started/) or the [Power BI troubleshooting documentation](/power-bi/troubleshoot/).
 
-5. Open your Account manager to find out which license you have. Select your profile picture from the page header to open your Account manager. For Power BI, if **Pro account** or **Premium Per User account** displays, you might use the following listed support options. For Fabric, all users might use the following listed support options.
+1. Open your Account manager to find out which license you have, by selecting your profile picture from the page header. For Power BI, if **Pro account** or **Premium Per User account** displays, you might use the following listed support options. For Fabric, all users might use the following listed support options.
 
-   :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::  
+    :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::  
 
 ## Using Support
 
@@ -115,10 +115,9 @@ Access Support through either the Fabric [Admin Portal](https://app.powerbi.com/
 |**Fabric user**: Technical and billing support for users creating in Fabric in Fabric capacities.|X|X | |One business day |[Fabric support](https://support.fabric.microsoft.com) OR [Fabric Support Center](https://app.powerbi.com/admin-portal/supportCenter)|
 |**Fabric or Power BI Premium admin support**: Technical support for administrators deploying and operating Power BI Premium capacities. | X |   |   |One business day or one hour, depending on severity of case.\* |[Fabric support](https://support.fabric.microsoft.com) OR [Fabric Support Center](https://app.powerbi.com/admin-portal/supportCenter) |
 |**Fabric or** **Power BI admin support**: Technical and billing support for administrators of Power BI deployments at their organizations. To use this option, you must be a Power BI Administrator or be assigned a Microsoft 365 admin role that can manage service requests. | X | X |   |One business day or one hour, depending on severity of case.\* |[Fabric Support Center](https://app.powerbi.com/admin-portal/supportCenter) |
-|**Microsoft Premier support**: An enterprise-grade approach to support, with account management, the option for on-site support, and services such as training and data model performance optimization. | X | X | X |Various, depending on offering and severity of case.\* |Customer Success Account Manager <br>OR<br> [Fabric Support Center](https://app.powerbi.com/admin-portal/supportCenter) |
+|**Microsoft Premier support**: An enterprise-grade approach to support. This option includes account management, the option for on-site support, and services such as training and data model performance optimization. | X | X | X |Various, depending on offering and severity of case.\* |Customer Success Account Manager <br>OR<br> [Fabric Support Center](https://app.powerbi.com/admin-portal/supportCenter) |
 
-
-\* A one-hour SLA is available only through _Sev A cases_, which require justification of immediate, direct business impact from work stoppage in existing production reporting.
+\* A one-hour SLA is available only through *Severity A cases*, which require justification of immediate, direct business impact from work stoppage in existing production reporting.
 
 ### Why is submitting a request online the preferred method of contacting Support?
 
@@ -142,7 +141,7 @@ If you can't submit a support request online, you can find a local support phone
 
 > [!NOTE]
 > If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
-> 
+
 ### What is Initial Response Time, and how quickly can I expect to hear back from someone after submitting my support request? 
 
 Initial Response Time is the period from when you submit your support request to when a Microsoft Support Engineer contacts you and starts working on your support request. The Initial Response Time varies with both the support plan and the business impact of the request (also known as Severity). Initial Response Times are calculated using business-hours support for subscription-based support. Elevated support plans contain non–business hours response times.
@@ -175,9 +174,9 @@ Microsoft is committed to assisting you in resolving your issue as soon as possi
 
 ### How is support provided for Performance issues?
 
-Microsoft Fabric subscription support primarily covers break-fix issues, which are technical problems that you experience while using Microsoft Fabric. "Break-fix" is an industry term, which refers to "work involved in supporting a technology when it fails in the normal course of its function. Break-fixes require intervention by a support organization to be restored to working order."
+Support for a Microsoft Fabric subscription primarily covers break-fix issues, which are technical problems that you experience while using Microsoft Fabric. "Break-fix" is an industry term, which refers to "work involved in supporting a technology when it fails in the normal course of its function. Break-fixes require intervention by a support organization to be restored to working order."
 
-Microsoft Fabric subscription support doesn't cover the following issues:
+Support for a Microsoft Fabric subscription doesn't cover the following issues:
 
 - Customer proposals for product features (you can submit requests through [Fabric Ideas](https://ideas.fabric.microsoft.com/))
 
@@ -191,7 +190,7 @@ If you want this level of support, you can evaluate [Unified Support](https://ww
 
 ### Does Microsoft provide support for Data Corruption?
 
-Data may become corrupt due to many reasons (malfunctioning software, custom code, partner or ISV software, power outages, etc.). Microsoft doesn't provide assistance for correcting damaged data. Note that per the Service Provider License Agreement (SPLA), Microsoft doesn't have a legal obligation to change or correct data being corrupted due to malfunctioning software. Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
+Data can become corrupt due to many reasons (malfunctioning software, custom code, partner or ISV software, power outages, etc.). Microsoft doesn't provide assistance for correcting damaged data. Per the Service Provider License Agreement (SPLA), Microsoft doesn't have a legal obligation to change or correct data being corrupted due to malfunctioning software. Microsoft might execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
 
 ## Get started with support for administrators
 
@@ -200,12 +199,12 @@ Data may become corrupt due to many reasons (malfunctioning software, custom cod
 
 Admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) to get self-help solutions and to create a new service request. Before you contact Microsoft support, follow these steps:
 
-* Check for service outages or degradation at [Fabric Support](https://support.fabric.microsoft.com).
-* Check for [known issues with Power BI or Fabric features](https://blog.fabric.microsoft.com/known-issues).
-* Look for any notifications about Power BI or Fabric in the [Microsoft 365 service health dashboard](https://admin.microsoft.com/#/servicehealth).
-* Check [Microsoft 365 message center](https://admin.microsoft.com/#/MessageCenter) to make sure there are no planned maintenance activities affecting your experience.
+- Check for service outages or degradation at [Fabric Support](https://support.fabric.microsoft.com).
+- Check for [known issues with Power BI or Fabric features](https://blog.fabric.microsoft.com/known-issues).
+- Look for any notifications about Power BI or Fabric in the [Microsoft 365 service health dashboard](https://admin.microsoft.com/#/servicehealth).
+- Check [Microsoft 365 message center](https://admin.microsoft.com/#/MessageCenter) to make sure there are no planned maintenance activities affecting your experience.
 
-* [Capture diagnostic information from the Power BI or Fabric service](service-admin-capturing-additional-diagnostic-information-for-power-bi.md) or Fabric service that you can attach to your service request.
+- [Capture diagnostic information from the Power BI or Fabric service](service-admin-capturing-additional-diagnostic-information-for-power-bi.md) or Fabric service that you can attach to your service request.
 
 Learn more about how admins can [contact support for help with Microsoft 365 business products](/microsoft-365/admin/contact-support-for-business-products).
 
@@ -214,30 +213,30 @@ Learn more about how admins can [contact support for help with Microsoft 365 bus
 
 With Microsoft Unified contract support, you also get the following benefits:
 
-* Account management
-* Option for on-site support
-* Health check, risk assessments, and reviews
-* Training and workshops
-* Developer support
+- Account management
+- Option for on-site support
+- Health check, risk assessments, and reviews
+- Training and workshops
+- Developer support
 
 As a Power BI or Fabric customer, you can also take advantage of the following offerings for proactive support hours:
 
-* **Power BI Assessment**. A Microsoft-accredited Customer Engineer diagnoses potential issues and performance with your Power BI environment. The engineer provides valuable guidance on recommended practices to improve the health and performance of your Power BI environment. At the end of this assessment, you receive a comprehensive Power BI report of results, a detailed best practice guidance deck, and a summary report tailored to your environment.
+- **Power BI Assessment**. A Microsoft-accredited Customer Engineer diagnoses potential issues and performance with your Power BI environment. The engineer provides valuable guidance on recommended practices to improve the health and performance of your Power BI environment. At the end of this assessment, you receive a comprehensive Power BI report of results, a detailed best practice guidance deck, and a summary report tailored to your environment.
 
-* **Activate Business Analytics with Power BI**. This offering is designed to help you to implement a real-life scenario and enable Power BI for your organization. Work side-by-side with an expert over three days, developing a proof-of-concept in Power BI, with the objective of improving one of the following scenarios:
-  * Scenario 1: Power BI Solution Development. Your organization already has a data warehouse or data marts in place, or your department wants to explore data that isn't in the corporate store yet. The support expert can prototype a Power BI solution that connects to your data and extracts meaningful insights using Power BI models and reports. Common data sources include Azure SQL Database, Azure SQL Data Warehouse (DW), or on-premises data using Enterprise Data Gateway.
-  * Scenario 2: Adoption, Governance, and Administration. The focus here's on establishing a framework for Power BI governance and operational processes. We'll review your infrastructure, discuss key components in typical Power BI deployments, and recommend practices for governance, administration, and management of Power BI.
-  * Scenario 3: Enterprise Scale Data Analytics. The focus in this scenario is on developing Power BI Premium models or migrating existing AAS/SSAS models to Power BI. We consider key components, advantages, and limitations of Power BI Premium capacity management and migrations to Power BI Premium from existing enterprise analytics infrastructure.
+- **Activate Business Analytics with Power BI**. This offering is designed to help you to implement a real-life scenario and enable Power BI for your organization. Work side-by-side with an expert over three days, developing a proof-of-concept in Power BI, with the objective of improving one of the following scenarios:
+  - Scenario 1: Power BI Solution Development. Your organization already has a data warehouse or data marts in place, or your department wants to explore data that isn't in the corporate store yet. The support expert can prototype a Power BI solution that connects to your data and extracts meaningful insights using Power BI models and reports. Common data sources include Azure SQL Database, Azure SQL Data Warehouse (DW), or on-premises data using Enterprise Data Gateway.
+  - Scenario 2: Adoption, Governance, and Administration. The focus here's on establishing a framework for Power BI governance and operational processes. We review your infrastructure, discuss key components in typical Power BI deployments, and recommend practices for governance, administration, and management of Power BI.
+  - Scenario 3: Enterprise Scale Data Analytics. The focus in this scenario is on developing Power BI Premium models or migrating existing AAS/SSAS models to Power BI. We consider key components, advantages, and limitations of Power BI Premium capacity management and migrations to Power BI Premium from existing enterprise analytics infrastructure.
 
-* **WorkshopPLUS - Data AI: Business Analytics with Power BI**. This workshop is a great introduction to Power BI, making it an excellent starting point for adoption or for ramping up your users. It provides you with a complete overview of Power BI functionality and capabilities and covers both Power BI Desktop and the Power BI service. You learn in detail how to build calculations and reports, transform data, and build a model. You also learn best practices around sharing and governing that content in the Power BI service. You can also expect many demonstrations and labs, so you can experiment and see the technology in action.
+- **WorkshopPLUS - Data AI: Business Analytics with Power BI**. This workshop is a great introduction to Power BI, making it an excellent starting point for adoption or for ramping up your users. It provides you with a complete overview of Power BI functionality and capabilities and covers both Power BI Desktop and the Power BI service. You learn in detail how to build calculations and reports, transform data, and build a model. You also learn best practices around sharing and governing that content in the Power BI service. You can also expect many demonstrations and labs, so you can experiment and see the technology in action.
 
-* **WorkshopPLUS - Data AI: Advanced Data Analytics with Power BI**. This offering presents how you can implement the key principles of data modeling in Power BI, using tools such as Power BI Desktop and the accompanying cloud service for the publishing and consumption of Power BI assets. You develop reports, including DAX, and use premium capacities in Power BI. You also deal with advanced analytics involving AI components, Premium, and Data flows.
+- **WorkshopPLUS - Data AI: Advanced Data Analytics with Power BI**. This offering presents how you can implement the key principles of data modeling in Power BI. You use tools such as Power BI Desktop and the accompanying cloud service for the publishing and consumption of Power BI assets. You develop reports, including DAX, and use premium capacities in Power BI. You also deal with advanced analytics involving AI components, Premium, and Data flows.
 
-* **Power BI Clinic**. This offering presents how you can optimize your Power BI workload. Use this clinic as a proactive service to help optimize performance before deploying Power BI, or as a reactive service to alleviate existing bottlenecks. You have an opportunity to work with a Microsoft SME (subject matter expert) on performance tuning and optimization of slow running Power BI reports, with a focus on report models and DAX. You also have an opportunity to work on slow semantic model refresh with a focus on refresh performance in the Power BI cloud service or Power BI Report Server.
+- **Power BI Clinic**. This offering presents how you can optimize your Power BI workload. Use this clinic as a proactive service to help optimize performance before deploying Power BI, or as a reactive service to alleviate existing bottlenecks. You have an opportunity to work with a Microsoft SME (subject matter expert) on performance tuning and optimization of slow running Power BI reports, with a focus on report models and DAX. You also have an opportunity to work on slow semantic model refresh with a focus on refresh performance in the Power BI cloud service or Power BI Report Server.
   
 Contact your Microsoft Customer Account Manager for details. If you don't already have a Microsoft Premier or Unified support contract, learn more at [Premier and Unified support](https://www.microsoft.com/en-us/unifiedsupport).
 
 ## Related content
 
-* [Help and support tenant settings](/fabric/admin/service-admin-portal-help-support)
-* [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)
+- [Help and support tenant settings](/fabric/admin/service-admin-portal-help-support)
+- [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)

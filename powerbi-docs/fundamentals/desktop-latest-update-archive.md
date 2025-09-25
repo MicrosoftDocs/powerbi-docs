@@ -87,7 +87,7 @@ Download previous versions of Power BI Desktop if your organization requires it.
 - If you get a warning when loading a report saved in a newer release, then save that report in the previous version, you lose any information related to new features.
 - Only the English versions of Power BI Desktop are archived.
 
-> **Download** the [August 2025 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494&dlm=002&frame=0&nav=1&msockid=033bf3dd086965063115e683097e64d0).
+> **Download** the [August 2025 version of Power BI Desktop](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-08_x64.exe).
 
 ## July 2025 update (2.145.1105.0)
 

@@ -43,9 +43,9 @@ By default, the Power BI service includes entry points that enable users to inse
 
 Power BI entry points for the add-in aren't available in national/regional, government, and air-gapped clouds. See the [Microsoft Office documentation](/office/dev/add-ins/publish/government-cloud-guidance) for information about the availability of the add-in in PowerPoint in these clouds.
 
-## Power BI add-in button in PowerPoint Insert ribbon
+## Power BI add-in button in PowerPoint Insert ribbon (*PowerPoint desktop for Windows only*)
 
-If your organization has a Microsoft 365 Office subscription, a button for the add-in will appear in the PowerPoint ribbon.
+If your organization has a Microsoft 365 Office subscription, a button for the add-in appears in the PowerPoint ribbon when using the desktop application for Windows. This doesn't apply to PowerPoint for the web or if you're using a Mac.
 
 ![Screenshot of Power BI add-in for PowerPoint button on Insert ribbon.](media/service-power-bi-powerpoint-add-in-admin/power-bi-addin-powerpoint-button.png)
 

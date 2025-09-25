@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: From Excel to stunning report in Power BI Desktop"
+title: "Tutorial: From Excel workbook to stunning report in Power BI Desktop"
 description: This tutorial shows how you can quickly create a stunning report in Power BI Desktop from an Excel workbook.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 02/13/2025
+ms.date: 09/18/2025
+ai-usage: ai-assisted
 LocalizationGroup: Data from files
 #customer intent: As a business analyst, I want to create a visually appealing and informative report from Excel data in Power BI Desktop so that I can effectively communicate key insights and performance metrics to my manager and colleagues.
 ---
@@ -17,7 +18,7 @@ LocalizationGroup: Data from files
 
 In this tutorial, you build a beautiful report from start to finish in 20 minutes!
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of your completed Power B I report in the Power B I service." lightbox="media/desktop-excel-stunning-report/power-bi-excel-report-service.png":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of the completed Power BI report in the Power BI service." lightbox="media/desktop-excel-stunning-report/power-bi-excel-report-service.png":::
 
 Your manager wants to see a report on your latest sales figures. They've requested an executive summary of:
 
@@ -65,7 +66,7 @@ You can also download the sample workbook directly.
 
 ## Prepare your data
 
-In **Navigator**, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, transform your data before loading. To make the visualizations easier to read later, we want to transform the data for this exercise. As you make each transformation in Power Query Editor, you see it added to the list under **Query Settings** in **APPLIED STEPS**.
+In **Navigator**, you have the option to *transform* or *load* the data. The preview lets you verify you have the expected range and detected data types. If you need to make changes, transform your data before loading. To make the visualizations easier to read later, we want to transform the data for this exercise. As you make each transformation in Power Query Editor, you see it added to the list under **Query Settings** in **APPLIED STEPS**.
 
 1. Select the checkbox for the **financials** table, then select **Transform Data**.
 
@@ -114,7 +115,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 1. Copy and paste this expression in the formula bar at the top of the report canvas to add all the numbers in the Units Sold column.
 
     ```dax
-    Total Units Sold = SUM(financials[Units Sold])    
+    Total Units Sold = SUM(financials[Units Sold])
     ```
 
 1. Select the check mark to commit. The measure is added to the list in the Data pane.
@@ -125,7 +126,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 1. Now select the **Table view** icon on the left.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Table view icon in Power B I Desktop.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Table view icon in Power BI Desktop.":::
 
 1. On the **Home** ribbon, select **New table**.
 
@@ -134,7 +135,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 1. Copy and paste this expression in the formula bar to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.
 
     ```dax
-    Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))    
+    Calendar = CALENDAR(DATE(2013,01,01),DATE(2014,12,31))
     ```
 
 1. Select the check mark to commit.
@@ -147,7 +148,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 1. Now select **Model view** on the left.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of model view icon in Power B I Desktop.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model view icon in Power BI Desktop.":::
 
 1. Drag the **Date** field from the financials table to the **Date** field in the Calendar table to join the tables and create a *relationship* between them. In the **New relationship** dialog that opens, select **Save** to apply the selections that Power BI automatically filled in for you.
 
@@ -157,7 +158,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 Now that you've transformed and loaded your data, it's time to create your report. In the left rail, select **Report view**.
 
-:::image type="content" source="media/desktop-excel-stunning-report/report-view-icon.png" alt-text="Screenshot of report view icon in Power B I Desktop.":::
+:::image type="content" source="media/desktop-excel-stunning-report/report-view-icon.png" alt-text="Screenshot of Report view icon in Power BI Desktop.":::
 
 In the Data pane on the right, you see the fields in the data model you created.
 
@@ -230,9 +231,9 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 1. In the Data pane, select the **Date** field in the financials table. Drag it to the blank area you reserved on the canvas.
 1. In the Visualizations pane, choose **Slicer**.
 
-    Slicer is the icon with a funnel next to a tab, but without the small lightning bolt. Power BI automatically creates a numeric range slicer.
+    Select the Slicer visual (funnel icon). Power BI automatically creates a numeric range slicer.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-slicer.png" alt-text="Screenshot of Slicer.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-slicer.png" alt-text="Screenshot of a date range slicer visual in Power BI Desktop.":::
 
     When you choose Slicer for the visual, you see the following image: 
     
@@ -244,7 +245,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
 1. In the Data pane, select the **Date** field in the Calendar table. Drag it to the blank area on the canvas.
 1. On the Visualizations pane's Build visual tab, choose **Slicer**.
-1. In the Data pane, expand the **Data** field and clear the boxes for Quarter and Day so only Year and Month are left.
+1. In the Data pane, expand the **Date** field and clear the boxes for Quarter and Day so only Year and Month are left.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Screenshot of changing the Date hierarchy.":::
 
@@ -300,7 +301,7 @@ With the appropriate visual selected, make the following changes on the **Visual
 
 Here's how your final, polished report will look:  
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of final, formatted report in Power B I Desktop." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of the final formatted report in Power BI Desktop." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
 
 In summary, this report answers your manager’s top questions:
 
@@ -335,7 +336,7 @@ To share your report with your manager and colleagues, publish it to the Power B
 
     Your published report opens in the browser.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of your completed Power B I report in the Power B I service.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of the completed Power BI report in the Power BI service.":::
 
 1. Select **Share** at the top of the report to share your report with others.
 

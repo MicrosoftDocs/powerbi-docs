@@ -3,7 +3,7 @@ title: Understand how visuals interact in a report
 description: Learn about how Power BI visuals interact on a report page by cross-filtering and cross-highlighting data. 
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Cross-filtering in a report

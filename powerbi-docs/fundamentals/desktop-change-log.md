@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/17/2025
+ms.date: 09/22/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,15 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## September 2025 QFE 2 
+
+*Version 2.147.1085.0, Released: September 19, 2025*
+
+Bug fixes/improvements: 
+
+- Preview feature "Enable using bundled Oracle Managed ODP Provider for Import Mode" was enabled by default in the September build. However, we discovered that it fails in certain scenarios where customers use a TNS alias as the server name. To address this, we reverted the default setting of this preview feature to false.
+- Correctly categorized Copilot orchestration throttling failures as user error.
 
 ## September 2025 QFE 1 
 

@@ -17,7 +17,7 @@ ms.collection: ce-skilling-ai-copilot
 # Prepare your data for AI - Verified answers
 
 > [!NOTE]
-> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
+> *Authoring* of all prep data for AI features are not available in both the Power BI service and Power BI Desktop. *Consumption* of these features is available everywhere Copilot exists.
 
 Verified answers are human-approved, visual responses in Copilot that are triggered with predefined phrases. Each verified answer includes one or more trigger phrases, a visual, and optional associated filters.
 
@@ -210,7 +210,7 @@ See [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-lim
   - Import models
   - Direct Query models 
   - Composite models (local)
-  - Direct lake in web only (and only for verified answers)
+  - Direct lake in web only
 - GIT edits (third-party tools) can't yet be synced in desktop experience, though updates appear in service.
 - Report themes aren't yet supported in verified answers.
 - Field parameters don't work with verified answers.
