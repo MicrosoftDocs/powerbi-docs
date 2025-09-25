@@ -1,31 +1,45 @@
 ---
 title: "Power BI Report Builder"
-description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service. Paginated reports are designed to be printed or shared. They're formatted to fit well on a page, and they display *all* the data in a table, even if the table spans multiple pages.
+description: Power BI Report Builder lets you author paginated, print-ready reports and publish them to the Power BI service, showing all data across multiple pages with precise layout control.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 05/30/2024
+ms.date: 09/25/2025
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 ---
+
 # Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-Power BI Report Builder is a tool for authoring *paginated reports* that you can publish to the Power BI service. Paginated reports are designed to be printed or shared. They're formatted to fit well on a page, and they display *all* the data in a table, even if the table spans multiple pages.  When you design a paginated report, you're creating a *report definition* that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You preview your report in Report Builder. Then publish your report to the Power BI service. See [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md) for more background.
- 
+Power BI Report Builder lets you author *paginated reports*—print-friendly, multi-page, pixel-precise reports that render all rows in a table. You design a *report definition* (what data, where to get it, how to lay it out), preview it locally, then publish to the Power BI service. For more information, see [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md).
+
 Ready to start authoring? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
-Prefer learning from videos? Check out the [Video-based course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md).
+Prefer videos? See the [Power BI Paginated Reports in a Day course](../learning-catalog/paginated-reports-online-course.md).
 
-The following paginated report is a sample of an invoice. You can download it and other samples, such as letters, transcripts, and labels. Read more about [sample Power BI paginated reports](paginated-reports-samples.md). 
+The following sample invoice report is one of several you can download—see [sample Power BI paginated reports](paginated-reports-samples.md).
 
-![Screenshot of a sample paginated report in Power BI Report Builder.](media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png)
+:::image type="content" source="media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png" alt-text="Screenshot of a sample invoice-style paginated report showing header, detail rows, and totals in Power BI Report Builder.":::
+
+## Key capabilities (at a glance)
+
+Here's a quick overview of what you can do with Power BI Report Builder:
+
+| Scenario | Supported examples |
+| -------- | ------------------ |
+| Data sources | SQL Server, Oracle, Power BI semantic models, Analysis Services, Azure SQL, OData, more |
+| Layout control | Precise page sizing, headers/footers, repeating groups, nested regions |
+| Expressions | Rich expression language for conditional formatting and calculations |
+| Delivery | Interactive, export (PDF, Excel, Word, CSV, XML, MHTML) |
+| Distribution | Email subscriptions, deployment pipelines |
+| Governance | Sensitivity labels, workspace permissions, audit logs |
 
 ## System requirements
-  
-See the **System requirements** section of the [Power BI Report Builder download page](https://go.microsoft.com/fwlink/?LinkID=2086513) on the Microsoft Download Center.
+
+See system requirements on the [download page](https://go.microsoft.com/fwlink/?LinkID=2086513).
 
 ## Prerequisites
 
@@ -33,54 +47,43 @@ See the **System requirements** section of the [Power BI Report Builder download
 
 ## Start with the Table, Matrix, or Chart wizard
 
-Create a data source connection, drag and drop fields to create a dataset query, select a layout and style, add accessibility row properties, and customize your report.  
-  
+Create a data source connection, build a dataset query, select a layout and style, add accessibility row properties, and customize your report.
+
 ## Start with the Map wizard
 
-Create reports that display aggregated data against a geographic or geometric background. Map data can be spatial data from a Transact-SQL query or an Environmental Systems Research Institute, Inc. (ESRI) shapefile. You can also add a Microsoft Bing map tile background.  
+Create reports that display aggregated data on geographic or geometric backgrounds (SQL spatial, Environmental Systems Research Institute [ESRI] shapefile, or Bing map tiles).
 
-##  <a name="DesignRept"></a> Design your report  
-  
--   **Create paginated reports with table, matrix, chart, and free-form report layouts.** Create table reports for column-based data, matrix reports (like cross-tab or PivotTable reports) for summarized data, chart reports for graphical data, and free-form reports for anything else. Reports can embed other reports and charts, together with lists, graphics, and controls for dynamic Web-based applications.  
-  
--   **Report from a variety of data sources.** You can create reports that use relational and multidimensional data from SQL Server and Analysis Services, Oracle, Power BI semantic models, and other databases.  
-  
--   **Modify existing reports.** By using Report Builder, you can customize and update reports that were created in SQL Server Data Tools (SSDT) Report Designer.  
-  
--   **Modify your data**. Filter, group, and sort data, or add formulas or expressions.  
+## Design your report
 
--   **Add charts, gauges, sparklines, and indicators**. Summarize data in a visual format, and present large volumes of aggregated information at a glance.  
-  
--   **Add interactive features** such as document maps, show/hide buttons, and drillthrough links to subreports and drillthrough reports. Use parameters and filters to filter data for customized views.  
-  
--   **Embed or reference images** and other resources, including external content.  
-  
-##  <a name="ManageRpt"></a> Manage your report  
-  
--   **Save the definition of the report** to your computer or to the report server, where you can manage it and share it with others.  
-  
--   **Choose a presentation format** when you open the report, or after you open the report. You can select Web-oriented, page-oriented, and desktop application formats. Formats include MHTML, PDF, XML, CSV, Word, and Excel.  
-  
--   **Set up subscriptions.** After you publish the report to the Power BI service, you can configure your report to run at a specific time and send as an e-mail subscription.  
+The following features help you design effective paginated reports in Power BI Report Builder:
+
+- **Create paginated reports with table, matrix, chart, and free-form layouts.** Use table layouts for column data, matrix for pivot-style summaries, chart for trends, and free-form for invoices or mixed content.
+- **Report from many data sources.** Use relational or multidimensional sources such as SQL Server, Analysis Services, Oracle, or Power BI semantic models.
+- **Modify existing reports.** Open and refine reports originally authored in SQL Server Data Tools.
+- **Modify your data.** Filter, group, sort, and add expressions.
+- **Add charts, gauges, sparklines, and indicators.** Summarize patterns visually.
+- **Add interactive features** (document maps, drillthrough, show/hide toggles) plus parameters for user filtering.
+- **Embed or reference images** and other resources (internal or external).
+
+## Manage your report
+
+Managing your paginated reports in Power BI Report Builder involves several key tasks to ensure your reports are organized, accessible, and distributed effectively:
+
+- **Save the report definition** locally or to the service.
+- **Select export formats** (PDF, Excel, Word, CSV, XML, MHTML, web view).
+- **Set up subscriptions.** After publishing, schedule email delivery.
 
 ## Use deployment pipelines with paginated reports
 
-In the Power BI service, you can use the deployment pipeline tool with paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
-- Development
-- Test
-- Production
-
-Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
+Deployment pipelines let you develop and test before releasing to users (Development → Test → Production). See [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines).
 
 ## Considerations and limitations
 
-You might not be able to configure Parameters as both "Multi-value" and "Allow null". "Multi value" and "Allow blank" is an allowed combination but Null is treated differently.
+You can't set a report parameter to be both **Multivalue** and **Allow null** at the same time. However, you can combine **Multivalue** with **Allow blank**. In paginated reports, a blank value is different from a null value.
 
 ## Power BI Report Builder in a virtualized environment
 
-Power BI Report Builder is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](/windows-365/overview). 
-
-Running Power BI Report Builder as a virtualized application (for example, as a Citrix application) isn't supported.
+Power BI Report Builder is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) and [Windows 365](/windows-365/overview). Running it as a virtualized application (for example, Citrix published app) isn't supported.
 
 ## Related content
 
