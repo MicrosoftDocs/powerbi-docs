@@ -13,6 +13,9 @@ ms.date: 11/30/2024
 ---
 # Use Power Automate to update metrics automatically
 
+> [!WARNING]
+> Metric sets are going away. Starting 25th of October, creating new Metric sets will no longer be possible, but you can access existing Metric sets until November 15, 2025. Please note that Scorecards and all associated datasets or measures will not be impacted by this change.
+
 Many organizations want to use scorecards in processes that help them achieve results more quickly. However, manually monitoring scorecards can be resource intensive and error prone. In this documentation, we go over how you automate business processes when important changes happen within your scorecard. It helps organization quickly respond to changing conditions by keeping everyone up to date, and taking automated actions to improve outcomes. This new capability is easy to use: You launch Power Automate right from your scorecard and immediately construct your automated flow.
 
 ## Get started
