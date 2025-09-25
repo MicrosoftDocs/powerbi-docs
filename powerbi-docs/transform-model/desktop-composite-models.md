@@ -13,7 +13,7 @@ Localizat2onGroup: Transform and shape data
 # Use composite models in Power BI
 
 
-Power BI semantic models can have tables from one or more data sources using any of the supported [table storage modes](desktop-storage-mode.md). The model is considered a composite semantic model when the tables have different storage modes, and in the case of DirectQuery table storage mode, with the DirectQuery tables have different data sources. 
+Power BI semantic models can have tables from one or more data sources using any of the supported [table storage modes](desktop-storage-mode.md). The model is considered a composite semantic model when the tables have different storage modes, and in the case of DirectQuery table storage mode, when the DirectQuery tables have different data sources. 
 
 > [!Note]
 > Import tables from one or more data sources are not considered composite models until they are mixed with non-import tables. The same applies for semantic models with Direct Lake tables from one or more data sources.
@@ -72,7 +72,7 @@ For example, by using composite models, you can build a model that combines the 
 * Sales-target data from a departmental SQL Server database.
 * Data imported from a spreadsheet.
 
-A model that combines data from more than one DirectQuery source or that combines DirectQuery with import data is called a composite model.
+A semantic model combining tables from more than one DirectQuery source, or combining DirectQuery, Direct Lake, and/or import tables, is a composite semantic model.
 
 You can create relationships between tables as you always have, even when those tables come from different sources. Any relationships that are cross-source are created with a cardinality of many-to-many, regardless of their actual cardinality. You can change them to one-to-many, many-to-one, or one-to-one. Whichever cardinality you set, cross-source relationships have different behavior. You can't use Data Analysis Expressions (DAX) functions to retrieve values on the `one` side from the `many` side. You might also see a performance impact versus many-to-many relationships within the same source.
 
@@ -159,7 +159,7 @@ Calculated tables are always imported, and their data is refreshed when you refr
 
 ## Security implications
 
-Composite models have some security implications. A query sent to one data source can include data values that have been retrieved from another source. In the earlier example, the visual that shows **(Sales Amount)** by **Product Manager** sends an SQL query to the Sales relational database. That SQL query might contain the names of Product Managers and their associated Products.
+Composite models have some security implications. A query sent to one data source can include data values that have been retrieved from another source. In the earlier example, the visual that shows **(Sales Amount)** by **Product Manager** sends a SQL query to the Sales relational database. That SQL query might contain the names of Product Managers and their associated Products.
 
 :::image type="content" source="media/desktop-composite-models/composite-models_17.png" alt-text="Screenshot of a script showing security implications.":::
 
@@ -181,7 +181,7 @@ When you use DirectQuery, you should always consider performance, primarily to e
 
 Using composite models adds other performance considerations. A single visual can result in sending queries to multiple sources, which often pass the results from one query across to a second source. This situation can result in the following forms of execution:
 
-* **A source query that includes a large number of literal values**: For example, a visual that requests total **Sales Amount** for a set of selected **Product Managers** would first need to find which **Products** were managed by those product managers. This sequence must happen before the visual sends an SQL query that includes all of the product IDs in a `WHERE` clause.
+* **A source query that includes a large number of literal values**: For example, a visual that requests total **Sales Amount** for a set of selected **Product Managers** would first need to find which **Products** were managed by those product managers. This sequence must happen before the visual sends a SQL query that includes all of the product IDs in a `WHERE` clause.
 
 * **A source query that queries at a lower level of granularity, with the data later being aggregated locally**: As the number of **Products** that meet the filter criteria on **Product Manager** grows large, it can become inefficient or unfeasible to include all products in a `WHERE` clause. Instead, you can query the relational source at the lower level of **Products** and then aggregate the results locally. If the cardinality of **Products** exceeds a limit of 1 million, the query fails.
 
@@ -204,7 +204,7 @@ A source group is a collection of items, such as tables and relationships, from 
 
 :::image type="content" source="media/desktop-composite-models/composite-models-source-groups.png" alt-text="Diagram showing the Import and Sales source groups containing the tables from the respective sources.":::
 
-If you added another DirectQuery connection to another source, such as a DirectQuery connection to a SQL Server database called **Inventory**, the items from that source are added another source group:
+If you added another DirectQuery connection to another source, such as a DirectQuery connection to a SQL Server database called **Inventory**, the items from that source are added as another source group:
 
 :::image type="content" source="media/desktop-composite-models/composite-models-source-groups-2.png" alt-text="Diagram showing the Import, Sales, and Inventory source groups containing the tables from the respective sources.":::
 
@@ -259,7 +259,7 @@ Using composite models with Power BI semantic models and Analysis Services, you 
 
 To enable the creation and consumption of composite models on Power BI semantic models, your tenant needs to have the following switches enabled:
 
-- [Allow XMLA Endpoints and Analyze in Excel with on-premises semantic models](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets). If this switch is disabled a DirectQuery connection to a Power BI semantic model can't be made.
+- [Allow XMLA Endpoints and Analyze in Excel with on-premises semantic models](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets). If this switch is disabled, a DirectQuery connection to a Power BI semantic model can't be made.
 - [Users can work with Power BI semantic models in Excel using a live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection). If this switch is disabled, users can't make live connections to Power BI semantic models so the **Make changes to this model** button can't be reached.
 - [Allow DirectQuery connection to Power BI semantic models](/fabric/admin/service-admin-portal-export-sharing#allow-directquery-connections-to-power-bi-datasets). See the following paragraphs for more information on this switch and the effect of disabling it.
 
@@ -300,19 +300,23 @@ Selecting the button displays a dialog confirming addition of a local model. Sel
 
 ![Screenshot showing Create local model dialog.](media/desktop-composite-models/directquery-datasets-03.png)
 
-When you're connected live to an Analysis Services source, there's no local model. To use DirectQuery for live connected sources, such as Power BI semantic models and Analysis Services, you must add a local model to your report. When you publish a report with a local model to the Power BI service, a semantic model for that local model is published a well.
+When you're connected live to an Analysis Services source, there's no local model. To use DirectQuery for live connected sources, such as Power BI semantic models and Analysis Services, you must add a local model to your report. When you publish a report with a local model to the Power BI service, a semantic model for that local model is published as well.
 
 ### Chaining
 
-Semantic models and the semantic models on which they're based form a *chain*. This process, called *chaining*, lets you publish a report and semantic model based on other Power BI semantic models, a feature that previously wasn't possible.
+Semantic models and the semantic models on which they're based on then form a *chain*. This process, called *chaining*, lets you publish a report and semantic model based on other Power BI semantic models.
 
-For example, imagine your colleague publishes a Power BI semantic model called *Sales and Budget* based on an Analysis Services model called *Sales*, and combines it with an Excel sheet called *Budget*.
+For example, imagine your colleague publishes a Power BI semantic model called *Sales and Budget* based on an Analysis Services model called *Sales*, and combines it with an Excel sheet called *Budget*. Then you create and publish a composite semantic model and report, called *Sales and Budget Europe*, using the on the *Sales and Budget* Power BI semantic model with your own modifications. This semantic model is third in the chain. 
 
-When you publish a new report (and semantic model) called *Sales and Budget Europe* based on the *Sales and Budget* Power BI semantic model published by your colleague, making some further modifications or extensions as you do so, you're effectively adding a report and semantic model to a chain of length three, which started with the *Sales* Analysis Services model, and ends with your *Sales and Budget Europe* Power BI semantic model. The following image visualizes this chaining process.
+1. The first chain is the *Sales* Analysis Services model.
+2. The second chain is the *Sales and Budget* Power BI composite semantic model.
+3. The third chain is your *Sales and Budget Europe* Power BI composite semantic model.
+
+The following image visualizes this chaining process.
 
 ![Screenshot showing The process of chaining semantic models.](media/desktop-composite-models/directquery-datasets-04.png)
 
-The chain in the previous image is of length three, which is the maximum length. Extending beyond a chain length of three isn't supported and results in errors.
+The length of the chain in the previous image is three, which is the maximum length. Extending beyond a chain length of three isn't supported and results in errors.
 
 ### Permissions and licensing
 
@@ -334,7 +338,7 @@ The required permissions can be illustrated with the following example:
 A user viewing reports using **Composite Model A** must have **Read** permissions to both **Composite Model A** and **Semantic Model B**, while a user viewing reports using **Composite Model C** must have **Read** permissions on **Composite Model C**, **Semantic Model D**, **Composite Model A** and **Semantic Model B**.
 
 > [!NOTE]
-> Refer to this blogpost for important information about [permissions required for composite models on Power BI semantic models and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
+> Refer to this blog post for important information about [permissions required for composite models on Power BI semantic models and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
 
 If any dataset in the chain is in a Premium Per User workspace, the user accessing it needs a [Premium Per User license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license). If any dataset in the chain is in a Pro workspace, the user accessing it needs a [Pro license](../fundamentals/service-features-license-type.md#pro-license). If all the datasets in the chain are on [Premium capacities](../fundamentals/service-features-license-type.md#premium-capacity) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus), a user can access it using a [Free license](../fundamentals/service-features-license-type.md#free-per-user-license).
 
@@ -369,7 +373,7 @@ When working with DirectQuery for Power BI semantic models and Analysis Services
 * To build reports in the Power BI service on a composite model based on another semantic model, all credentials must be set.  
 * Connections to a SQL Server 2022 and later Analysis Services server on-premises or IAAS require an On-premises data gateway (Standard mode). 
 * All connections to remote Power BI semantic models are made using single sign-on. Authenticating with a service principal isn't currently supported. 
-* RLS rules are applied on the source on which they're defined, but aren't applied to any other semantic models in the model. RLS defined in the report aren't applied to remote sources, and RLS set on remote sources aren't applied to other data sources. Also, you can't define RLS on a table loaded from a remote source, and RLS defined on local tables do not filter any tables loaded from a remote source. 
+* RLS rules are applied on the source on which they're defined, but aren't applied to any other semantic models in the model. RLS defined in the report isn't applied to remote sources, and RLS set on remote sources aren't applied to other data sources. Also, you can't define RLS on a table loaded from a remote source, and RLS defined on local tables do not filter any tables loaded from a remote source. 
 * KPIs, row level security, and translations aren't imported from the source. 
 * You might see some unexpected behavior when using a date hierarchy. To resolve this issue, use a date column instead. After adding a date hierarchy to a visual, you can switch to a date column by clicking on the down arrow in the field name, and then clicking on the name of that field instead of using Date Hierarchy: 
 
