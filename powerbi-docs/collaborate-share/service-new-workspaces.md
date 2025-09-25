@@ -25,7 +25,7 @@ To create a workspace, see [Create a workspace](service-create-the-new-workspace
 
 Here are some useful tips about working with workspaces.
 
-- **Granular workspace roles**: Use for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer.  Read more about [workspace roles](#roles-and-licenses) in this article.
+- **Granular workspace roles**: Use for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer. Read more about [workspace roles](#roles-and-licenses) in this article.
 - **Contact list**: Specify who receives notifications about workspace activity. Read more about [workspace contact lists](#workspace-contact-list) in this article.
 - **Create template apps**: You can create *template apps* in workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read the article about [template apps](../connect-data/service-template-apps-overview.md).
 - **Share semantic models**: You can share semantic models between workspaces. Read more about [shared semantic models](../connect-data/service-datasets-across-workspaces.md).
