@@ -22,7 +22,6 @@ The on-premises data gateway (personal mode) works only with Power BI. Install i
 > [!NOTE]
 > Each Power BI user can run only one personal mode gateway. If the user installs another on a different computer, the most recent installation replaces the previous one.
 
-
 ## When to (and not to) use personal mode
 
 Use personal mode when:
@@ -37,7 +36,9 @@ Use the standard on-premises data gateway instead when:
 - You need high availability, clustering, or load balancing.
 - You need centralized auditing and governance.
 
-## On-premises data gateway vs. personal mode
+<a id="on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode"></a>
+
+## On-premises data gateway versus personal mode
 
 This table shows the differences between the standard gateway and the personal mode gateway.
 
