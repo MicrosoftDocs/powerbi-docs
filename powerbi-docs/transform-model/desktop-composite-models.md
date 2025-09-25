@@ -373,7 +373,7 @@ When working with DirectQuery for Power BI semantic models and Analysis Services
 * To build reports in the Power BI service on a composite model based on another semantic model, all credentials must be set.  
 * Connections to a SQL Server 2022 and later Analysis Services server on-premises or IAAS require an On-premises data gateway (Standard mode). 
 * All connections to remote Power BI semantic models are made using single sign-on. Authenticating with a service principal isn't currently supported. 
-* RLS rules are applied on the source on which they're defined, but aren't applied to any other semantic models in the model. RLS defined in the report isn't applied to remote sources, and RLS set on remote sources aren't applied to other data sources. Also, you can't define RLS on a table loaded from a remote source, and RLS defined on local tables do not filter any tables loaded from a remote source. 
+* RLS rules are applied on the source on which they're defined, but aren't applied to any other semantic models in the model. RLS defined in the report isn't applied to remote sources, and RLS set on remote sources aren't applied to other data sources. Also, you can't define RLS on a table loaded from a remote source, and RLS defined on local tables don't filter any tables loaded from a remote source. 
 * KPIs, row level security, and translations aren't imported from the source. 
 * You might see some unexpected behavior when using a date hierarchy. To resolve this issue, use a date column instead. After adding a date hierarchy to a visual, you can switch to a date column by clicking on the down arrow in the field name, and then clicking on the name of that field instead of using Date Hierarchy: 
 
@@ -406,7 +406,7 @@ The following **limitations** apply when working with DirectQuery for Power BI s
 - Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication are supported in the Power BI service with an assigned [shareable cloud connection](../connect-data/service-create-share-cloud-data-sources.md) and / or [granular access control](../connect-data/service-create-share-cloud-data-sources.md#granular-access-control).
 * If you rename a workspace after the DirectQuery connection has been set up you need to update the data source in Power BI Desktop for the report to continue working.
 * Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. For more information, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
-* Take over of a semantic model that is using the **DirectQuery to other semantic models** feature isn't currently supported.
+* Take over of a semantic model that's using the **DirectQuery to other semantic models** feature isn't currently supported.
 * As with any DirectQuery data source, hierarchies defined in an Analysis Services model or Power BI semantic model aren't shown when connecting to the model or semantic model in DirectQuery mode using Excel.
 
 There are a few other things to **consider** when working with DirectQuery for Power BI semantic models and Analysis Services:
@@ -499,7 +499,7 @@ After you make the connections and set up the deduplication rule, your field lis
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-name-deduplication-rules-effect.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI semantic model or Analysis Services model.":::
 
 
-If you don't specify a deduplication rule, or the deduplication rules you specified don't resolve the name conflict, the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of the conflicting item. If there is a name conflict on the 'Customer' table one of the 'Customer' tables is renamed 'Customer 2'.
+If you don't specify a deduplication rule, or the deduplication rules you specified don't resolve the name conflict, the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of the conflicting item. If there's a name conflict on the 'Customer' table one of the 'Customer' tables is renamed 'Customer 2'.
 
 
 ## XMLA modifications and composite models
@@ -529,7 +529,7 @@ Using streaming semantic models in composite models isn't supported.
 
 The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables that aren't in DirectQuery, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights feature isn't available on a model if any of the tables within it has a storage mode of DirectQuery.
 
-If you are using row-level security in a composite model with some of the tables in DirectQuery mode, you must refresh the model to apply new updates from the DirectQuery tables. For example, if a Users table in  DirectQuery mode has new user records at the source, the new records will only be included after the next  model refresh. Power BI Service caches the Users query to improve performance and doesn’t reload the data from the source until the next manual or scheduled refresh.
+If you're using row-level security in a composite model with some of the tables in DirectQuery mode, you must refresh the model to apply new updates from the DirectQuery tables. For example, if a Users table in  DirectQuery mode has new user records at the source, the new records will only be included after the next  model refresh. Power BI Service caches the Users query to improve performance and doesn’t reload the data from the source until the next manual or scheduled refresh.
 
 ## Related content
 
