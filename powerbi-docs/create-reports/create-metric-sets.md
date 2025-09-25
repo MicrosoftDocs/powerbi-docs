@@ -19,6 +19,9 @@ This article tells you how to create a metric set in the Power BI service. It al
 
 If you're new to metric sets and are looking for an introduction to this feature, see [Get started with metric sets](./get-started-metrics.md).
 
+> [!WARNING]
+> Metric sets are going away. Starting 25th of October, creating new Metric sets will no longer be possible, but you can access existing Metric sets until November 15, 2025.
+
 ## Prerequisites
 
 To create and manage metric sets, you must:
