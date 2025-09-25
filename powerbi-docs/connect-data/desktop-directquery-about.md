@@ -257,6 +257,8 @@ When designing reports that use DirectQuery, consider the following best practic
 
   :::image type="content" source="media/desktop-directquery-about/directquery-about_04.png" alt-text="Screenshot of two visuals demonstrating cross filtering and highlighting interactions that can trigger multiple source queries.":::
 
+<a id="maximum-number-of-connections-option-for-directquery"></a>
+
 ### Maximum number of connections
 
 Adjust per file DirectQuery concurrency (default 10) in **File > Options and settings > Options > DirectQuery** for the current file.
@@ -386,8 +388,6 @@ Subselect query patterns usually don't hurt performance on supported engines bec
 - [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
 - [Use DirectQuery for Power BI semantic models and Analysis Services](desktop-directquery-datasets-azure-analysis-services.md)
 - [Aggregations in Power BI](../transform-model/desktop-aggregations.md)
-- [Incremental refresh overview](../transform-model/desktop-incremental-refresh.md)
-- [Hybrid tables (real-time with incremental refresh)](../transform-model/desktop-incremental-refresh-overview.md)
 - [Performance analyzer](../create-reports/desktop-performance-analyzer.md)
 - [Composite models](../transform-model/desktop-composite-models.md)
 - [Row-level security overview](/fabric/security/service-admin-row-level-security)
