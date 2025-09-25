@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
 ms.date: 09/25/2025
+ai-usage: ai-assisted
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI user, I want to understand DirectQuery in Power BI, its trade-offs, and alternatives so I can choose the right connectivity mode.
 ---
