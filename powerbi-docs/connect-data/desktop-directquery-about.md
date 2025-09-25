@@ -337,7 +337,7 @@ To locate the trace:
 1. In Power BI Desktop, select **File > Options and settings > Options > Diagnostics**.
 1. Select **Open crash dump/traces folder**.
 
-:::image type="content" source="media/desktop-directquery-about/directquery-about_06.png" alt-text="Screenshot of the Diagnostics options dialog in Power BI Desktop with a link to open the traces folder.":::
+   :::image type="content" source="media/desktop-directquery-about/directquery-about_06.png" alt-text="Screenshot of the Diagnostics options dialog in Power BI Desktop with a link to open the traces folder.":::
 
 1. Go up one level to *AnalysisServicesWorkspaces*, open the active workspace folder, then *Data*, and locate *FlightRecorderCurrent.trc*.
 1. In SQL Server Profiler, open the file: **File > Open > Trace File**.
