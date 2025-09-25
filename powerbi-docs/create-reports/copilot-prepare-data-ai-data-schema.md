@@ -17,11 +17,7 @@ ms.collection: ce-skilling-ai-copilot
 # Prepare your data for AI - AI data schemas
 
 > [!NOTE]
-<<<<<<< HEAD
-> You can only *author* AI instructions and AI data schemas in Power BI Desktop. You can use verified answers in both Power BI Desktop and the Power BI service. Users can *consume* these features everywhere that Copilot exists.
-=======
-> *Authoring* of all prep data for AI features are not available in both the Power BI service and Power BI Desktop. *Consumption* of these features is available everywhere Copilot exists.
->>>>>>> 2dea999fd6605c731706b09e72cfb542b14d2ba7
+> You can't *author* **Prep data for AI** features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
 By using an AI data schema, semantic model authors can define a focused subset of the model's schema for Copilot to prioritize when it generates responses. Authors select the most relevant fields to guide Copilot to provide answers that are more aligned with the user's queries. A streamlined schema reduces ambiguity, which helps Copilot deliver clearer and more accurate responses.
 
@@ -33,12 +29,7 @@ By using a defined AI data schema, model authors can ensure that Copilot pulls t
 
 To set an AI data schema, follow these steps:
 
-<<<<<<< HEAD
-1. Select the **Prep data for AI** button that's located on the **Home** ribbon in Power BI Desktop.  
-=======
-1. Select the **Prep data for AI** button located on the Home ribbon in Power BI Desktop, or in the ribbon on the semantic model page if in the Power BI service.  
->>>>>>> 2dea999fd6605c731706b09e72cfb542b14d2ba7
-
+1. Select the **Prep data for AI** button that's located on the **Home** ribbon in Power BI Desktop. In the Power BI service, you can select the button from the ribbon on the semantic model page.  
    If the tabs in **Prep Data for AI** are disabled, turn on Power BI Q&A for your model.
 
 1. Go to the **Simplify data schema** tab.
@@ -58,8 +49,7 @@ You can update your AI data schema at any time by reopening the **Prep data for 
 
 You can make sure that the changes in the AI data schema are being respected by testing. Follow these instructions:
 
-<<<<<<< HEAD
-1. Open the Copilot report pane.
+1. Open the Copilot report pane in Power BI Desktop.
 1. Select **skill picker**, and then select **Answer data question**.
 1. Ask a data question by using a field that *isn't* in the AI data schema. Copilot shouldn't be able to return an answer.
 1. Ask a data question by using a field that *is* in the AI data schema. Copilot should be able to return an answer.
@@ -67,18 +57,7 @@ You can make sure that the changes in the AI data schema are being respected by 
 
 ## Consume the AI data schema in the service
 
-After your report is published to the service, users can take advantage of the AI data schema everywhere that model interacts with Copilot. When users ask a data question, Copilot answers by using the AI data schema.
-=======
-1. Open the Copilot report pane in Power BI Desktop.
-1. Select the **skill picker** and choose **Answer data question**.
-1. Ask a data question using a field that *isn't* in the AI data schema. Copilot shouldn't be able to return an answer.
-1. Ask a data question using a field that *is* in the AI data schema. Copilot should return an answer.
-1. Publish your report to the Power BI service for consumers to use the AI data schema.
-
-## Consume the AI data schema in the service
-
-Once your report is published to the service, or when you made changes using prep data for AI in the service, end-users can take advantage of the AI data schema everywhere that model interacts with Copilot. When users ask a data question, Copilot answers using the AI data schema.
->>>>>>> 2dea999fd6605c731706b09e72cfb542b14d2ba7
+After your report is published to the service, or after you made changes by using the **Prep data for AI** feature in the service, users can take advantage of the AI data schema everywhere that model interacts with Copilot. When users ask a data question, Copilot answers by using the AI data schema.
 
 > [!NOTE]
 > End users can't see the AI data schema set on the model.
