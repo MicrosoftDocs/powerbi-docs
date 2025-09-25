@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 **APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for business users :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium Per User or Fabric license
 
 > [!WARNING]
-> Metric sets are going away. Starting 25th of October, creating new Metric sets will no longer be possible, but you can access existing Metric sets until November 15, 2025.
+> Metric sets are going away. Starting 25th of October, creating new Metric sets will no longer be possible, but you can access existing Metric sets until November 15, 2025. Please note that Scorecards and all associated datasets or measures will not be impacted by this change.
 
 Metric sets help organizations define, discover, and reuse trusted metrics. When you create a metric set, you establish the metrics within it as reliable sources that people in your organization should use for greater accuracy, consistency, and reliability in their reports and analysis. Bundle selected metrics from your data into a metric set that you can endorse and share with others.
 
