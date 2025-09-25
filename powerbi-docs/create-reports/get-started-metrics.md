@@ -52,7 +52,7 @@ Permissions also factor into the ability to view and edit metric sets:
 - Users need Build permission to customize views and visuals using the Explore feature.
 - Users must have at least a Contributor role in the workspace to create and manage metric sets.
 
-## Explore the Metrics hub
+## Explore the Metrics hub 
 
 After you sign in to the Power BI service, select Metrics from the navigation pane. Power BI displays the new Metrics hub, which contains sections for metric sets and for scorecards. The default is to land on the Metric sets area. Once your organization has content, you see metric sets populated in the browsing area, with tabs to look through *All*, *Endorsed*, and *Favorites*.
 
