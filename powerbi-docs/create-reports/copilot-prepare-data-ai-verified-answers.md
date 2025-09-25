@@ -17,7 +17,7 @@ ms.collection: ce-skilling-ai-copilot
 # Prepare your data for AI - Verified answers
 
 > [!NOTE]
-> You can only *author* AI instructions and AI data schemas in Power BI Desktop. You can use verified answers in both Power BI Desktop and the Power BI service. Users can *consume* these features everywhere that Copilot exists.
+> You can't *author* **Prep data for AI** features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
 Verified answers are human-approved, visual responses in Copilot that are triggered by predefined phrases. Each verified answer includes one or more trigger phrases, a visual, and optional associated filters.
 
@@ -185,6 +185,7 @@ Here are some things that you need to know:
 - Git integration isn't supported.
 - Any filters on the visual (visual, page, or report level) that are applied upon verified answer setup are applied to the data in the verified answer.
 - Drill-through filters aren't supported.
+- RLS and OLS are not fully supported as security features for verified answers. In most cases, if a verified answer contains data protected by RLS or OLS, it isn't matched on or returned to users. This prevents broken visuals from appearing. In these situations, Copilot will respond without the verified answer. However, there are scenarios where data may still be exposed (for example, through the file format in GIT). Please note that during preview, we don't recommend that you considered this a reliable security feature, even though it will function correctly in the majority of cases.
 - Cross highlighting and cross filtering aren't supported.
 - Slicers aren't included in verified answer states. Slicers that are applied on the report don't persist in the verified answer.
 - Verified answers don't work if fields in the verified answer are hidden in the model, because there's no entry point on the visual.
@@ -193,6 +194,22 @@ Here are some things that you need to know:
 - Verified answers are stored as part of the semantic model, so they're presented as Copilot responses for any downstream items (reports) that use that model.
 - Verified answer visuals aren't synced or attached to the visuals on the report page. When a verified answer is set up, the visual on the report can be changed or deleted without impacting the verified answer.  
   - To edit an existing verified answer, you need to go through the AI setup dialog, not the visual entry point, because that creates a new verified answer.
+- Unsupported visual types include:
+  - New card visual
+  - Textbox visual
+  - Data Q&A
+  - AI visuals  
+  - Key influencers
+  - Narrative with Copilot
+  - Smart narratives (old)
+  - Decomposition tree
+  - Any forecasting visual (R and Python)
+  - Custom visuals
+- Supported model types:
+  - Import models
+  - DirectQuery models
+  - Composite models (local)
+  - Direct Lake (web only)
 - Git edits (third-party tools) can't yet be synced in desktop experience, though updates appear in service.
 - Report themes aren't yet supported in verified answers.
 - Field parameters don't work with verified answers.

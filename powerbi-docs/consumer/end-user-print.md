@@ -3,7 +3,7 @@ title: Print from the Power BI service
 description: Learn how to adjust print settings and print a dashboard, tile, or report page from the Power BI service.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore

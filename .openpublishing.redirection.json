@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "powerbi-docs/create-reports/desktop-performance-analyzer.md",
+      "redirect_url": "/power-bi/create-reports/performance-analyzer",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "powerbi-docs/transform-model/dax-query-copilot-features.md",
       "redirect_url": "/dax/dax-copilot",
       "redirect_document_id": false

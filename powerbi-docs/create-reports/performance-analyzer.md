@@ -1,5 +1,5 @@
 ---
-title: Use Performance Analyzer to examine report element performance in Power BI Desktop
+title: Use Performance Analyzer to Examine Report Performance
 description: Find out how visuals and report elements are performing in terms of resource usage and responsiveness.
 author: JulCsc
 ms.author: juliacawthra
@@ -10,11 +10,11 @@ ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Create reports
 ---
-# Use Performance Analyzer to examine report element performance in Power BI Desktop
+# Use Performance Analyzer to examine report performance
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In **Power BI Desktop**, you can find out how each of your report elements, such as visuals and DAX formulas, are performing. By using the **Performance Analyzer**, you can see and record logs that measure how each of your report elements performs when users interact with them and which aspects of their performance are most (or least) resource intensive.
+In Power BI reports, you can find out how each of your report elements, such as visuals and DAX formulas, are performing. By using the **Performance Analyzer**, you can see and record logs that measure how each of your report elements performs when users interact with them and which aspects of their performance are most (or least) resource intensive.
 
 :::image type="content" source="media/desktop-performance-analyzer/performance-analyzer-01-inline.png" alt-text="Screenshot that shows Performance Analyzer." lightbox="media/desktop-performance-analyzer/performance-analyzer-01-expanded.png":::
 
@@ -26,7 +26,11 @@ In **Power BI Desktop** select the **Optimize** ribbon, and then select **Perfor
 
 :::image type="content" source="media/desktop-performance-analyzer/performance-analyzer-02-inline.png" alt-text="Screenshot of the View ribbon, highlighting Performance Analyzer." lightbox="media/desktop-performance-analyzer/performance-analyzer-02-expanded.png":::
 
-Once selected, Performance Analyzer is displayed in its own pane to the right of the report canvas.
+In **Power BI service** open a report and select **Edit**. When editing a report, select the **View** menu, and then select **Performance Analyzer** to display the Performance Analyzer pane.
+
+:::image type="content" source="media/performance-analyzer/performance-analyzer-in-web.png" alt-text="Screenshot of the View menu, highlighting Performance Analyzer when editing a report in the Power BI service." lightbox="media/performance-analyzer/performance-analyzer-in-web.png":::
+
+Once selected, Performance Analyzer is displayed in its own pane to the right of the report canvas in either Power BI Desktop or the Power BI service.
 
 ## Use Performance Analyzer
 
@@ -50,7 +54,8 @@ Each interaction has a section identifier in the pane, describing the action tha
 
 Each visual's log information includes the time spent (duration) to complete the following categories of tasks:
 
-* **DAX query** - If a DAX query was required, this is the time between the visual sending the query and Analysis Services returning the results.
+* **DAX query** - If a DAX query was required, this is the time between the visual sending the query and the semantic model or Analysis services model returning the results.
+* **Direct query** - If the table storage mode is DirectQuery, this is the time for the external query to return results.
 * **Visual display** - This is the time required for the visual to draw on the screen, including the time required to retrieve any web images or geocoding.
 * **Other** - This is the time required by the visual for preparing queries, waiting for other visuals to complete, or performing other background processing.
 * **Evaluated parameters** (preview) - This is the time spent evaluating the field parameters within a visual. Learn more about [field parameters (preview)](../create-reports/power-bi-field-parameters.md).
@@ -65,6 +70,21 @@ To clear out the information in the Performance Analyzer pane, select **Clear**.
 
 > [!TIP]
 > When Power BI processes queries and their associated metadata, the processing of the query can be impacted by the complexity of the schema, the number of tables in the database(s), the complexity of the relationships between them, and the number of foreign key constraints on the tables. Such complexity can result in initial delays in returning or rendering a report.
+
+## DAX queries in visuals
+
+Visuals in Power BI reports display data from the semantic model. The data is accessed with a DAX query. You can see the DAX query of each visual by selecting **Copy query** in performance analyzer. For tables using DirectQuery table storage mode, this query includes the DAX query and the translated query in SQL or KQL.
+
+**Run in DAX query view** in performance analyzer runs the DAX query in [DAX query view](/power-bi/transform-model/dax-query-view). The result grid shows the data the visual uses and you can inspect the logic of the DAX query itself. This option isn't available in the Power BI service, but the copied DAX query can be run after navigating to DAX query view in the service and pasting in the DAX query.
+
+The structure of a DAX query from a visual is more verbose and structured than necessary to get the same result. The visual DAX query structure helps as you change visuals from one type to another when building a report. [Fabric Copilot to write and explain DAX queries](/dax/dax-copilot) in DAX query view can help structure the visual DAX query into a simpler form with the following prompt.
+
+```copilot-prompt
+   Remove the VARs and TOPN and simplify this DAX query
+``` 
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
+
+Learn more about DAX queries in the [DAX queries learn documentation](/dax/dax-queries).
 
 ## Refreshing visuals
 
@@ -86,10 +106,9 @@ For more information about **Power BI Desktop** and how to get started, see the 
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
-* [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
-* [Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
+* [DAX queries](/dax/dax-queries)
+* [DAX query view](/power-bi/transform-model/dax-query-view)
+* [Fabric Copilot to write and explain DAX queries](/dax/dax-copilot)
 
 For information about the Performance Analyzer sample, check out the following resources.
 

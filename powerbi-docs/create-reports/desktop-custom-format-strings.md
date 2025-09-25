@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/21/2024
+ms.date: 09/24/2025
 LocalizationGroup: Create reports
 ---
 # Use custom format strings in Power BI Desktop
@@ -40,9 +40,13 @@ The element level format string is only available to specific visuals and data l
 
 ## How to use custom format strings
 
-To use custom format strings, you first need to decide which level you're going to work on: Model, Visual or Element.
+To use custom format strings, you first need to decide which level you're going to work on: Model, Visual, or Element.  
+
+> [!TIP]  
+> If you see unexpected suffixes like K or M, they come from the visual’s **Display units** setting (Auto) rather than the custom format string itself—set Display units to **None** to show the full number.
 
 ### Add a model level format string
+
 To create custom format strings in the model, select the field in the **Modeling** view, and then select the dropdown arrow under **Format** in the **Properties** pane.
 
 ![Screenshot of the Properties pane, highlighting the Format menu.](media/desktop-custom-format-strings/custom-format-strings-02.png)
@@ -52,54 +56,160 @@ Once you select **Custom** from the **Format** dropdown menu, choose from a list
 ![Screenshot of the Formatting menu, highlighting Custom.](media/desktop-custom-format-strings/custom-format-strings-03.png)
 
 ### Add a visual level format string
+
 To create a visual level format string, first add the field or [visual calculation](../transform-model/desktop-visual-calculations-overview.md) to your visual. Then, with your visual selected, open the format pane and go to the **General** section of the format pane. Find the **Format data** settings and configure the format string there:
 
 ![Screenshot of the Format pane for a visual, showing the Data format settings in the General section.](media/desktop-custom-format-strings/custom-format-strings-visual-level-format-string.png)
 
 > [!NOTE]
-> For now, you will need to enter a [.NET format string](/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead of a [VBA format string](#supported-custom-format-syntax). This is a temporary issue that will be resolved in a future release.
+> For now, you need to enter a [.NET format string](/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead of a [VBA format string](#supported-custom-format-syntax). This is a temporary issue that will be resolved in a future release.
 
 ### Add an element level format string
-To create an element level format string, open the format pane and find the format string sections for the element you want to set the format on. Keep in mind that not all elements support format strings. To set a format string on a data label, open the **Visual** section of the format pane, set **Data Labels** > **Value** > **Display units** to custom and enter the format code:
+
+To create an element level format string, open the format pane and find the format string sections for the element you want to set the format on. Keep in mind that not all elements support format strings. Also, element-level **Display units** can still apply automatic K/M/B scaling unless you set them to **None**. To set a format string on a data label, open the **Visual** section of the format pane, set **Data Labels** > **Value** > **Display units** to custom and enter the format code:
 
 ![Screenshot of the Format pane for a visual, showing the Value format settings for Data Labels in the Visual section.](media/desktop-custom-format-strings/custom-format-strings-element-level-format-string.png)
-
 
 ## Supported custom format syntax
 
 Custom format strings follow the VBA style syntax, common to Excel and other Microsoft products, but they don't support all syntax used in other products.
 
 > [!NOTE]
-> For now, visual level format strings require you to enter a [.NET format string](/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead. This is a temporary issue that will be resolved in a future release.
+> Visual level format strings currently use **.NET** date/time and numeric format tokens (temporary limitation). This means casing matters (`M` = month, `m` = minute). Model- and element-level custom format strings use the VBA-style tokens documented in the following tables. This limitation will be removed in a future release so all levels use a unified syntax.
+
+### Troubleshooting unexpected month or minute values
+
+If a custom format shows minutes where you expected a month:
+
+1. Confirm whether you applied the format at the visual level (currently .NET syntax).
+1. If so, change `m` to `M` for month, or move the custom format string to the model level to use VBA-style `m`.
+1. Use `nn` for minutes in VBA-style contexts to avoid confusion with month symbols.
+
+### Troubleshooting unwanted automatic scaling (K, M, B suffixes)
+
+If your visual shows a suffix such as K (thousands), M (millions), or B (billions) even though you set a custom number format (for example `#.###` or `#,##0`), the suffix usually isn’t coming from the custom format string. It’s applied by the **Display units** (autoscaling) setting on the visual or element.
+
+**Typical causes:**
+
+- Display units set to **Auto** (default) for a card, KPI, gauge, new card, slicer value, or data label.
+- Element-level formatting applied, but element’s Display units still autoscale.
+- A visual calculation or aggregation readded after changing format (Display units reverted to Auto).
+
+**How to remove the K/M/B suffix:**
+
+1. Select the visual.
+1. Open the **Format** pane.
+1. Locate the numeric value settings (for example **General > Data format**, **Visual > Data labels**, **Callout value**, or **Values** for the new card).
+1. Set **Display units** (sometimes labeled **Units** or **Value units**) to **None** (not Auto).
+1. Reapply (or confirm) the desired custom format string (for example `#,##0`, `0`, `0.0`, `#,##0.###`).
+
+**If still present:**
+
+- Check for an element-level override (for example data label settings) also set to Auto.
+- Confirm you didn’t embed a literal “K” in the custom format (for example `0" K"`).  
+- For model-level measures, ensure no DAX logic already scales the value (for example dividing by 1000).
+
+**Example comparison:**
+
+| Setting | Display units | Custom format | Result |
+| --- | --- | --- | --- |
+| Card visual (default) | Auto | `#,##0` | `12K` (scaled) |
+| Card visual (changed) | None | `#,##0` | `11,732` |
+| Data label (clustered column) | Auto | `0` | `12K` |
+| Data label (clustered column) | None | `0` | `11,732` |
+| New card (Value formatting) | Auto | `0.0" °C"` | `23.4K °C` (undesired) |
+| New card (Value formatting) | None | `0.0" °C"` | `23.4 °C` |
+
+> [!TIP]  
+> If you want custom *abbreviations* but not the default K/M/B logic, keep **Display units: None** and append literal text in the format string (for example `0.0"k"`). This preserves raw numeric precision control.
+
+> [!NOTE]  
+> Dynamic scaling based on value size (for example, switching between no suffix, K, and M) requires a measure returning text (for example, using `FORMAT()` or conditional logic) or a dynamic format string measure. Static custom format strings alone don’t provide conditional suffix logic.
 
 The following tables define the syntax supported in Power BI.
 
-### Supported Date symbols
+### Supported date symbols (VBA-style syntax used by model and element level)
 
-| **Symbol** | **Range** |
+The following symbols apply to custom format strings that use the VBA-style (Excel-like) syntax.
+
+> [!IMPORTANT]  
+> Visual-level custom format strings temporarily require **.NET** format tokens (see note that follows). In .NET custom date/time formats, uppercase `M` represents month and lowercase `m` represents minutes. In VBA-style formats (used at model and element levels here), lowercase `m` represents month. This difference is a common source of confusion.
+
+| Symbol | Meaning or output |
 | --- | --- |
-| _d_ | 1-31 (Day of month, with no leading zero) |
-| _dd_ | 01-31 (Day of month, with a leading zero) |
-| _m_ | 1-12 (Month of year, with no leading zero, starting with January = 1) |
-| _mm_ | 01-12 (Month of year, with a leading zero, starting with January = 01) |
-| _mmm_ | Displays abbreviated month names (Hijri month names have no abbreviations) |
-| _mmmm_ | Displays full month names |
-| _yy_ | 00-99 (Last two digits of year) |
-| _yyyy_ | 100-9999 (Three- or four-digit year) |
+| d | Day of month without leading zero (1–31). |
+| dd | Day of month with leading zero (01–31). |
+| m | Month number without leading zero (1–12). If immediately after `h` or `hh`, it's interpreted as minutes (see “Minute symbols” that follow). |
+| mm | Month number with leading zero (01–12). If immediately after `h` or `hh`, it's interpreted as minutes with leading zero (00–59). |
+| mmm | Abbreviated month name (Jan–Dec). (Hijri month names have no abbreviations.) |
+| mmmm | Full month name (January–December). |
+| yy | Two‑digit year (00–99). |
+| yyyy | Four‑digit year (0001–9999). |
 
-### Supported Time symbols
+> [!NOTE]  
+> If you see unexpected minute values where you expect months, confirm whether you entered the format in a visual-level setting (currently .NET style) or a model/element level setting (VBA style).
 
-| **Symbol** | **Range** |
+### Supported time symbols (VBA-style)
+
+| Symbol | Meaning or output |
 | --- | --- |
-| _h_ | 0-23 (1-12 with "AM" or "PM" appended) (Hour of day, with no leading zero) |
-| _hh_ | 00-23 (01-12 with "AM" or "PM" appended) (Hour of day, with a leading zero) |
-| _n_ | 0-59 (Minute of hour, with no leading zero) |
-| _nn_ | 00-59 (Minute of hour, with a leading zero) |
-| _m_ | 0-59 (Minute of hour, with no leading zero). Only if preceded by _h_ or _hh_ |
-| _mm_ | 00-59 (Minute of hour, with a leading zero). Only if preceded by _h_ or _hh_ |
-| _s_ | 0-59 (Second of minute, with no leading zero) |
-| _ss_ | 00-59 (Second of minute, with a leading zero) |
+| h | Hour without leading zero (0–23). When combined with AM/PM, represents 1–12. |
+| hh | Hour with leading zero (00–23). When combined with AM/PM, represents 01–12. |
+| n | Minute without leading zero (0–59). |
+| nn | Minute with leading zero (00–59). |
+| m / mm | ALSO minutes (0–59 / 00–59) **only when they immediately follow `h` or `hh`**. Otherwise they're treated as month symbols (see date symbols). |
+| s | Second without leading zero (0–59). |
+| ss | Second with leading zero (00–59). |
 
+> [!TIP]  
+> Prefer `n` / `nn` for minutes to avoid ambiguity with `m` / `mm` month symbols.
+
+### Date and time examples
+
+Assume the sample timestamp: 2025-09-04 15:07:08 (September 4, 2025, 3:07:08 PM).
+
+| Format string | Context (VBA-style versus .NET) | Expected output | Notes |
+| --- | --- | --- | --- |
+| m/d/yy | VBA-style (model) | 9/4/25 | Month as number; day no leading zero. |
+| mm/dd/yyyy | VBA-style (model) | 09/04/2025 | Leading zeros. |
+| mmm d, yyyy | VBA-style (model) | Sep 4, 2025 | Abbreviated month. |
+| mmmm d | VBA-style (model) | September 4 | Full month name. |
+| h:nn:ss | VBA-style (model) | 15:07:08 | Uses `nn` to avoid month ambiguity. |
+| h:m:s | VBA-style (model) | 15:7:8 | `m` interpreted as minutes (follows `h`). |
+| m | VBA-style (model) | 9 | Standalone month number. |
+| M | .NET visual-level | 9 | In .NET, uppercase M = month. |
+| m | .NET visual-level | 07 | In .NET, lowercase m = minutes. |
+| mm/dd | Mixed misuse (.NET visual-level) | 07/04 | Shows minutes/day if user expected month/day—source of confusion. |
+
+> [!NOTE]  
+> If you see a minute value (like 07) where you expected a month (like 09), you likely entered a .NET-style format (visual level) thinking it was VBA-style. Adjust the casing (`M` vs `m`) or move the formatting to the model level.
+
+### Add Unicode or special symbols (degree, currency, superscripts)
+
+Custom format strings don’t support hex or escape sequences (for example `\u00B0`, `0xB0`, or `&#176;`). To include a symbol, insert (paste/type) the actual Unicode character inside a quoted literal or (for some numeric formats) unquoted if it’s a trailing literal.
+
+| Goal | Format string (model / VBA style) | Output example | Notes |
+| --- | --- | --- | --- |
+| Append Celsius with a space | `0.0" °C"` | `23.4 °C` | Space is inside quotes so it’s preserved. |
+| Add percent text (not automatic scaling) | `0.00" pct"` | `12.34 pct` | Different from `%` placeholder (which multiplies by 100). |
+| Show thousands with KB suffix | `0" KB"` | `512 KB` | Literal “KB”. |
+| Currency with explicit symbol | `#,##0.00" €"` | `1,234.00 €` | Prefer locale-based model-level currency if dynamic symbol needed. |
+| Microseconds label | `0" µs"` | `15 µs` | Paste µ (U+00B5). |
+| Degree without trailing unit | `0"°"` | `90°` | No space added. |
+| Superscript squared | `0" m²"` | `25 m²` | Paste `²` (U+00B2). |
+
+> [!TIP]  
+> To insert a symbol: 
+> 
+> - Windows: Press `Win + .` (emoji/symbol panel) or use an ALT code (for example, hold `Alt`, type `0176` on numeric keypad for °).  
+> - Copy/paste from a character map.  
+> Once the literal is in the format string, it’s treated as plain text.
+
+> [!IMPORTANT]  
+> Backslash (`\`), `\uXXXX`, or `0xNN` escape patterns aren’t interpreted—Power BI doesn’t translate them to Unicode in custom format strings. Use the character itself. For visual-level (.NET) formats the rule is the same: include the actual character inside quotes (for example `0.0" °C"`). A backslash only escapes the next character; it doesn’t create Unicode sequences.
+
+> [!NOTE]  
+> For dynamic symbol logic (for example, switching °C / °F based on slicer selection) use a DAX measure returning a text value, or a dynamic format string measure rather than only a static custom format string.
 
 You can see an [example](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example) of how to format custom value strings.
 
@@ -130,51 +240,40 @@ The following table identifies the predefined **named numeric formats**:
 
 | **Format name** | **Description** |
 | --- | --- |
-| **General Number** | Display number with no thousand separator. |
-| **Currency** | Display number with a thousand separator. Display two digits after the decimal separator. Output is based on system locale settings. |
+| **General Number** | Display number with no thousands separator. |
+| **Currency** | Display number with a thousands separator. Display two digits after the decimal separator. Output is based on system locale settings. |
 | **Fixed** | Display at least one digit before and two digits after the decimal separator. |
-| **Standard** | Display number with a thousand separator, at least one digit before and two digits after the decimal separator. |
+| **Standard** | Display number with a thousands separator, at least one digit before and two digits after the decimal separator. |
 | **Percent** | Display number multiplied by 100 with a percent sign ( **%** ). Always display two digits after the decimal separator. |
 | **Scientific** | Use standard scientific notation. |
 
-The following table identifies characters you can use to create **user-defined date/time formats**.
+### Other date/time formatting characters
 
-| **Character** | **Description** |
+The following supplemental characters apply (not already covered):
+
+| Character | Description |
 | --- | --- |
-| ( **:** ) | Time separator. In some locales, other characters might be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character used as the time separator in formatted output is determined by your system settings. |
-| ( **/** ) | Date separator. In some locales, other characters might be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings. |
-| d | Display the day as a number without a leading zero (1–31). |
-| dd | Display the day as a number with a leading zero (01–31). |
-| ddd | Display the day as an abbreviation (Sun–Sat). Localized. |
-| dddd | Display the day as a full name (Sunday–Saturday). Localized. |
-| m | Display the month as a number without a leading zero (1–12). If m immediately follows h or hh, the minute rather than the month is displayed. |
-| mm | Display the month as a number with a leading zero (01–12). If m immediately follows h or hh, the minute rather than the month is displayed. |
-| mmm | Display the month as an abbreviation (Jan–Dec). Localized. |
-| mmmm | Display the month as a full month name (January–December). Localized. |
-| yy | Display the year as a two-digit number (00–99). |
-| yyyy | Display the year as a four-digit number (100–9999). |
-| h | Display the hour as a number without a leading zero (0–23). |
-| hh | Display the hour as a number with a leading zero (00–23). |
-| n | Display the minute as a number without a leading zero (0–59). |
-| nn | Display the minute as a number with a leading zero (00–59). |
-| s | Display the second as a number without a leading zero (0–59). |
-| ss | Display the second as a number with a leading zero (00–59). |
-| tt | Use the 12-hour clock and display an uppercase AM with any hour before noon; display an uppercase PM with any hour between noon and 11:59 P.M. |
+| : | Time separator (locale-specific). |
+| / | Date separator (locale-specific). |
+| tt | AM/PM designator (12-hour clock, uppercase). |
+
+> [!NOTE]  
+> Other day/month/year/hour/minute/second tokens already defined follow VBA-style semantics at model/element level and .NET semantics (casing-sensitive) at visual level.
 
 The following table identifies characters you can use to create **user-defined number formats**.
 
-| **Character** | **Description** |
+| Character | Description |
 | --- | --- |
 | None | Display the number with no formatting. |
 | ( **0** ) | Digit placeholder. Display a digit or a zero. If the expression has a digit in the position where the 0 appears in the format string, display it. Otherwise, display a zero in that position. If the number has fewer digits than there are zeros (on either side of the decimal) in the format expression, display leading or trailing zeros. If the number has more digits than there are zeros after the decimal separator, round the number to as many decimal places as there are zeros. If the number has more digits than there are zeros before the decimal separator, display the extra digits without modification. |
 | ( **#** ) | Digit placeholder. Display a digit or nothing. If the expression has a digit in the position where the # appears in the format string, display it; otherwise, display nothing in that position. This symbol works like the zero-digit placeholder. However, leading and trailing zeros don't display if the number has the same or fewer digits than there are # characters on either side of the decimal separator in the format expression. |
 | ( **.** ) | Decimal placeholder. In some locales, a comma is used as the decimal separator. The decimal placeholder determines how many digits are displayed before and after the decimal separator. If the format expression contains only number signs to the left of this symbol, numbers smaller than one begin with a decimal separator. To display a leading zero displayed with fractional numbers, use 0 as the first-digit placeholder to the left of the decimal separator. The actual character used as a decimal placeholder in the formatted output depends on the Number Format recognized by your system. |
 | (**%)** | Percentage placeholder. The expression is multiplied by 100. The percent character ( **%** ) is inserted in the position where it appears in the format string. |
-| ( **,** ) | Thousand separators. In some locales, a period is used as a thousand separator. The thousand separator separates thousands from hundreds within a number that has four or more places to the left of the decimal separator. Standard use of the thousand separator is specified if the format contains a thousand separator surrounded by digit placeholders ( **0**  or  **#** ). Two adjacent thousand separators or a thousand separator immediately to the left of the decimal separator (whether or not a decimal is specified) means "scale the number by dividing it by 1000, rounding as needed." For example, you can use the format string "##0,," to represent 100 million as 100. Numbers smaller than one million are displayed as 0. Two adjacent thousand separators in any position other than immediately to the left of the decimal separator are treated simply as specifying the use of a thousand separator. The actual character used as the thousand separator in the formatted output depends on the Number Format recognized by your system. |
+| ( **,** ) | Thousands separators. In some locales, a period is used as a thousands separator. The thousands separator separates thousands from hundreds within a number that has four or more places to the left of the decimal separator. Standard use of the thousands separator is specified if the format contains a thousands separator surrounded by digit placeholders ( **0**  or  **#** ). Two adjacent thousands separators or a thousands separator immediately to the left of the decimal separator (whether or not a decimal is specified) means "scale the number by dividing it by 1000, rounding as needed." For example, you can use the format string "##0,," to represent 100 million as 100. Numbers smaller than one million are displayed as 0. Two adjacent thousands separators in any position other than immediately to the left of the decimal separator are treated simply as specifying the use of a thousands separator. The actual character used as the thousands separator in the formatted output depends on the Number Format recognized by your system. |
 | ( **:** ) | Time separator. In some locales, other characters might be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character used as the time separator in formatted output is determined by your system settings. |
 | ( **/** ) | Date separator. In some locales, other characters might be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings. |
 | ( **E- E+ e- e+** ) | Scientific format. If the format expression contains at least one digit placeholder ( **0**  or  **#** ) after E-, E+, e-, or e+, the number is displayed in scientific format and E or e is inserted between the number and its exponent. The number of digit placeholders determines the number of digits in the exponent. Use E- or e- to place a minus sign next to negative exponents. Use E+ or e+ to place a minus sign next to negative exponents and a plus sign next to positive exponents. |
-| - **+ $**  ( ) | Display a literal character. To display a different character, precede it with a backslash (\\) or enclose it in double quotation marks (" "). |
+| - **+ $**  ( ) | Display these literal characters. Any other Unicode character (°, €, µ, ², etc.) can be included by typing or pasting it inside double quotes (for example `0.0" °C"`). Use a backslash only to escape the next character if it would otherwise be interpreted (it doesn’t introduce hex or `\u` escapes). |
 | ( **\\** ) | Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (\\). The backslash itself isn't displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (\\\\). Date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, /, and :) can't be displayed as literal characters, the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &, <, >, !). |
 | ("ABC") | Display the string inside the double quotation marks (" "). |
 

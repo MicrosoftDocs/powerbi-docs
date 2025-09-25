@@ -3,7 +3,7 @@ title: Basic area chart
 description: 'Learn how to create and use basic area chart.'
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'kfollis'
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual

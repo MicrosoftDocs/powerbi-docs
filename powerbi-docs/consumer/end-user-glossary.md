@@ -4,7 +4,7 @@ description: Learn Power BI terminology with this glossary, which provides defin
 author: julcsc
 ms.author: juliacawthra
 services: power-bi
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual

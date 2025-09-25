@@ -3,7 +3,7 @@ title: Show the data that was used to create the Power BI visualization
 description: This document explains how to show the data used to create a visual in Power BI and how to export that data to a .csv file.
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'kfollis'
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

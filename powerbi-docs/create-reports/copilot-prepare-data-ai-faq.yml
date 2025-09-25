@@ -11,8 +11,9 @@ metadata:
   ms.date: 05/12/2025
 title: Frequently asked questions about preparing data for AI
 summary: |
+
   > [!NOTE]
-  > You can only *author* AI instructions and AI data schema in Power BI Desktop. You can use verified answers in both Power BI Desktop and the Power BI service. Users can *consume* these features everywhere that Copilot exists.
+  > You can't *author* prep data for AI features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
 sections:
   - name: Tooling features

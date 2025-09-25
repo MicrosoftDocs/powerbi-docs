@@ -19,17 +19,11 @@ ms.collection: ce-skilling-ai-copilot
 Microsoft Power BI has new capabilities to help you get your data ready for natural language experiences with Copilot. To get the best results from Power BI Copilot, we recommend that you have a semantic model that follows best practices. However, models often require more assistance to be fully prepared for optimal interactions with AI. There are tooling features to help you prepare your data for AI. These features allow you to provide more context about your model, help guide Copilot to the right data in the model, and help increase the quality of Copilot output.
 
 > [!NOTE]
-> You can only *author* AI instructions and AI data schemas in Power BI Desktop. You can use verified answers in both Power BI Desktop and the Power BI service. Users can *consume* these features everywhere that Copilot exists.
+> You can now *author* all features in both Power BI Desktop and the Power BI service. Users can *consume* these features everywhere that Copilot exists.
 
 ## New tooling features to help you prep your data for AI
 
-Learn about three new features:
-
-- **AI data schemas**: Allows model authors to define a dedicated schema specifically for Copilot, which makes it easier for AI systems to understand which tables, fields, and relationships are most relevant.
-- **Verified answers**: Makes it possible for you to link a question to a specific visual, allowing Copilot to produce an answer that a human evaluates and verifies.
-- **AI instructions**: Provides important context about your data model, which helps Copilot generate responses that are more accurate and aligned with your intent.
-
-These features help to prepare your data for AI. This preparation provides Copilot the context it needs to reduce ambiguity, improve relevance and accuracy, and make user interactions with Copilot more fluent and intuitive.
+You can now utilize three key features to help prepare your data for AI. This preparation provides Copilot the context it needs to reduce ambiguity, improve relevance and accuracy, and make user interactions with Copilot more fluent and intuitive.
 
 :::image type="content" source="media/copilot-prep-data/copilot-prep-data.png" alt-text="Screenshot of the Prep data for AI button in Power BI Desktop, located next to the Copilot button in the home ribbon." lightbox="media/copilot-prep-data/copilot-prep-data.png":::
 
@@ -58,10 +52,20 @@ All updates are saved on the semantic model, not the report.
 
 ### Power BI service
 
-To set a verified answer in the Power BI service, fulfill the below requirements:
+To author an AI data schema and AI instructions in the Power BI service, follow these steps:
+
+1. Select the semantic model to prep for AI.
+2. From the ribbon, select the **Prep data for AI** button.
+3. Use the available features, and then hit apply when you are satisfied with your updates.
+
+> [!NOTE]
+> It might take time for the changes that you made to affect Copilot results. If **Prep data for AI** features don't take effect immediately, please wait a few minutes and try again.
+
+To set or create a verified answer in the Power BI service, first meet the following requirements:
 
 - You're in a Copilot-enabled workspace.
 - You have authoring permission on the semantic model the report is built on.
+- You are on a report page.
 - You're in edit mode.
 - The visual is selected.
 
@@ -139,12 +143,13 @@ When you restart Desktop, you no longer see the **Prep data for AI** button.
 
 - You must enable Power BI Q&A on your semantic model.
 - You can author all **Prep data for AI** features in Power BI Desktop.
-- You can only author verified answers in the Power BI service.
-- All **Prep data for AI** features can be consumed by users everywhere Power BI Copilot is available.
+- You can author all **Prep data for AI** features in Power BI Desktop and the Power BI service.
+- Users can consume all **Prep data for AI** features everywhere that Power BI Copilot is available.
 - Prep data for AI features in Power BI Desktop are only supported with the following connection types:
   - Import
   - DirectQuery
   - Composite (local)
+- All model types can use the **Prep data for AI** features within the Power BI service.
 - When you close the dialog, all **Prep data for AI** features are saved to the model.
 - You can test all **Prep data for AI** features in the report Copilot pane before publishing to the service.
 - You can troubleshoot **Prep data for AI** features. Use the HCAAT functionality and use the **Download diagnostics** feature from the **...** menu in the Copilot pane in Power BI Desktop. This action ensures that **Prep data for AI** features are applied. Include the diagnostic file when you create support requests.
