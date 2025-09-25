@@ -16,6 +16,9 @@ LocalizationGroup: Get started
 
 **APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for business users :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium Per User or Fabric license
 
+> [!WARNING]
+> Metric sets are going away. Starting 25th of October, creating new Metric sets will no longer be possible, but you can access existing Metric sets until November 15, 2025.
+
 Metric sets help organizations define, discover, and reuse trusted metrics. When you create a metric set, you establish the metrics within it as reliable sources that people in your organization should use for greater accuracy, consistency, and reliability in their reports and analysis. Bundle selected metrics from your data into a metric set that you can endorse and share with others.
 
 Currently, metrics are defined in semantic layers as measures in models. Over time, these models become large and complex, making them difficult to manage and use, which leads to the creation of many specific models. When organizations have many specific models, it causes data silos and duplicate metrics, resulting in more metric redefinitions. The fragmentation in models makes it hard for users to trust existing metrics and creates logistical challenges. Metric sets address this issue by giving users tools to manage and reuse key metrics across the organization.
