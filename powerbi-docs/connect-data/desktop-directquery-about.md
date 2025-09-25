@@ -159,6 +159,8 @@ Confirm query folding (select **View Native Query** in Power Query Editor) so tr
 
 Using DirectQuery has implications across consistency, performance, security, transformations, modeling, and reporting.
 
+<a id="implications-of-using-directquery"></a>
+
 ### General implications
 
 The following general implications apply when using DirectQuery in Power BI:
@@ -242,6 +244,8 @@ Filtering example:
 Resulting native query uses a fixed literal date:
 
 :::image type="content" source="media/desktop-directquery-about/directquery-about_03.png" alt-text="Screenshot of the native SQL query generated with a fixed date literal after applying a relative date filter in Power Query.":::
+
+<a id="report-design-guidance"></a>
 
 ### Report design
 
