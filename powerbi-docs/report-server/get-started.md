@@ -24,14 +24,14 @@ Power BI Report Server is similar to both SQL Server Reporting Services and the 
 ## Licensing Power BI Report Server
 
 > [!NOTE]
-> Following the announcement that beginning with SQL Server 2025, we're consolidating on-premises reporting services under Power BI Report Server (PBIRS). Further information on PBIRS licensing will be provided when SQL Server reaches general availability (GA). For customers using SQL Server 2022 and earlier versions, the licensing details outlined below remain applicable.
+> Following the announcement that beginning with SQL Server 2025, we're consolidating on-premises reporting services under Power BI Report Server (PBIRS). Further information on PBIRS licensing will be provided when SQL Server reaches general availability (GA). For customers using SQL Server 2022 and earlier versions, the licensing details following remain applicable.
 
 Power BI Report Server operates on a core-based licensing model and is currently available through three different licenses: [Fabric F64+ reserved instances](/fabric/enterprise/licenses), SQL Server Enterprise Edition with Software Assurance, or SQL Server Enterprise Subscriptions. See [Microsoft Volume Licensing](https://www.microsoft.com/licensing/docs) for SQL Server licensing details. Similar to SQL Server licensing, customers may run the Power BI Report Server software in a Physical or Virtual OSE with up to the number of cores included under their Fabric F64+ capacity. You can find the number of Power BI v-cores available for [each Fabric license here](/fabric/enterprise/licenses).
 
 If you purchase [Fabric F64+ reserved instances](/fabric/enterprise/licenses), a Power BI Pro license is required to publish both paginated and Power BI reports in PBIRS. However, for SQL Server Enterprise Edition with Software Assurance or SQL Server Enterprise subscription, a Power BI Pro license is only required for publishing Power BI reports in PBIRS. You don't need a Power BI Pro license to view and interact with paginated and Power BI reports on Power BI Report Server.
 
 > [!NOTE]
-> For Power BI Premium, Power BI Report Server is only included with P SKUs. It's not included with EM SKUs. Power BI Report Server is also **not** included with any F SKUs below F64 reserved instance.
+> For Power BI Premium, Power BI Report Server is only included with P SKUs. It's not included with EM SKUs. Power BI Report Server is also **not** included with any F SKUs under F64 reserved instance.
 
 ## Web portal
 

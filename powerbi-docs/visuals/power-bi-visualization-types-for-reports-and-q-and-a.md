@@ -1,24 +1,14 @@
 ---
-<<<<<<< HEAD
-title: Visualization Types in Power BI
-description: Visualization types in Power BI
-=======
 title: Visualization types in Power BI
 description: Learn about all visualization types available in Power BI, including charts, maps, tables, and custom visuals to create effective reports and dashboards.
->>>>>>> 2dea999fd6605c731706b09e72cfb542b14d2ba7
 author: miguelmyersMS
 ms.author: miguelmyers
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.search.form: Visualization types in Power BI
-<<<<<<< HEAD
-ms.topic: concept-article
-ms.date: 09/05/2025
-=======
 ms.topic: conceptual
 ms.date: 09/24/2025
->>>>>>> 2dea999fd6605c731706b09e72cfb542b14d2ba7
 ms.custom: retail-analysis-sample-PBIX
 LocalizationGroup: Visualizations
 ---
@@ -27,11 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-<<<<<<< HEAD
-A visualization is an image created from data. Visualizations are also called "visuals." Some examples of visuals are: pie chart, line chart, map, and KPI. This article lists visualizations available in Power BI. We add new visualizations so stay tuned!
-=======
 A visualization is an image created from data that helps you analyze and understand your information better. Visualizations in Power BI, also called "visuals," include pie charts, line charts, maps, and KPIs that transform raw data into actionable insights. This article lists most of the visualization types available in Power BI, but we're constantly making updates. Use this page to help you choose the right visual for your reports and dashboards.
->>>>>>> 2dea999fd6605c731706b09e72cfb542b14d2ba7
 
 And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), where you find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
 
