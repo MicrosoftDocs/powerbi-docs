@@ -14,6 +14,9 @@ LocalizationGroup: Reports
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
+> [!WARNING]
+>This feature is being deprecated. Starting 11 November 2025, users will no longer be able to create new reports from a SharePoint list or library using this integration. From 11 December 2025, any previously published reports created using this feature will no longer be accessible. For more details and recommended alternatives, please visit the https://powerbi.microsoft.com/en-us/blog/deprecation-of-power-bi-integration-within-sharepoint-lists-and-libraries/
+
 There's a new way to create reports quickly from data in SharePoint lists or libraries. Power BI automatically generates the visuals for you. Microsoft List and SharePoint list or library users can explore their data with just a few clicks.
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-report.png" alt-text="Screenshot of Create a quick report from a SharePoint list.":::
