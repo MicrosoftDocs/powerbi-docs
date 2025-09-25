@@ -16,7 +16,7 @@ Localizat2onGroup: Transform and shape data
 Power BI semantic models can have tables from one or more data sources using any of the supported [table storage modes](desktop-storage-mode.md). The model is considered a composite semantic model when the tables have different storage modes, and in the case of DirectQuery table storage mode, when the DirectQuery tables have different data sources. 
 
 > [!Note]
-> Import tables from one or more data sources are not considered composite models until they are mixed with non-import tables. The same applies for semantic models with Direct Lake tables from one or more data sources.
+> Import tables from one or more data sources aren't considered composite models until they are mixed with non-import tables. The same applies for semantic models with Direct Lake tables from one or more data sources.
 
 > [!Note]
 > Direct Lake table storage mode is assumed to be Direct Lake on OneLake for composite models. Direct Lake on SQL table storage mode is single source only and can't be added to any composite model. Learn more about the differences of Direct Lake table storage mode at [aka.ms/DirectLake](https://aka.ms/DirectLake).
@@ -35,16 +35,17 @@ There are different types of composite models depending on the combination of ta
 
 ## Create composite models in Power BI Desktop
 
-In Power BI Desktop, semantic models can be created with import or DirectQuery tables locally. Additional tables can then be added from Get data in the other storage mode to be considered a composite model. 
+In Power BI Desktop, semantic models can be created with import or DirectQuery tables locally. Additional tables can then be added from the **Get data** ribbon button in the other storage mode to be considered a composite model. 
 
 > [!Note]
 > If import and DirectQuery tables are both in a semantic model, dual storage mode is available. Dual table storage mode can help keep the import data in sync with DirectQuery tables outside of schedule refresh.
-> 
+
+
 Adding DirectQuery tables from another Power BI semantic model have a couple different create paths. 
 
-1. In a blank Power BI file, first connect to the Power BI semantic model. Once live connected, you have the option to **Make changes to this model**. Selecting **Make changes to this model** from the ribbon or footer will convert the live connection to a DirectQuery connection. The DirectQuery connection creates a new local semantic model with the tables in DirectQuery storage mode. You can add new tables in either import or DirectQuery storage mode, as well as give you the option to override some column properties on the source semantic model.
+1. In a blank Power BI file, first **connect** to the Power BI semantic model. Once live connected, you have the option to **Make changes to this model**. Selecting **Make changes to this model** from the ribbon or footer will convert the live connection to a DirectQuery connection. The DirectQuery connection creates a new local semantic model with the tables in DirectQuery storage mode. You can add new tables in either import or DirectQuery storage mode, as well as give you the option to override some column properties on the source semantic model.
 
-2. In semantic model with import or DirectQuery tables already, connect to a Power BI semantic model and the tables you choose will be added as DirectQuery.
+2. In semantic model with import or DirectQuery tables already, **connect** to a Power BI semantic model and the tables you choose will be added as DirectQuery.
 
 Semantic models created with Direct Lake tables are live edited in Power BI Desktop. Adding additional Direct Lake tables is supported. Open the semantic model in [Power BI web modeling](/power-bi/transform-model/service-edit-data-models) to add import tables. Use [XMLA](/fabric/enterprise/powerbi/service-premium-connect-tools) only to add DirectQuery tables.
 
