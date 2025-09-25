@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 01/18/2025
+ms.date: 09/24/2025
 ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
@@ -29,6 +29,7 @@ If you're a report *reader* or *viewer* rather than a creator, check out the [Ge
 In this tutorial, you complete the following tasks:
 
 > [!div class="checklist"]
+>
 > * Sign in to your Power BI online account, or sign up, if you don't have an account yet.
 > * Open the Power BI service.
 > * Add and view data in reading or editing mode.
@@ -47,25 +48,13 @@ Although a paid or trial license is recommended, it isn't required for this tuto
 
 :::image type="content" source="media/service-get-started/power-bi-pro.png" alt-text="Screenshot that shows how to choose the type of license to purchase." border="false":::
 
-### Switch between report views
-
-Reports have two modes: **Editing** and **Reading**. To create a report, add visuals, and edit your report, use **Editing** mode. To view your report in progress, switch to the **Reading** view at the top of the page: 
-
-:::image type="content" source="media/service-get-started/report-reading-view.png" alt-text="Screenshot that shows how to switch to the Reading view of a report canvas.":::
-
-In the Editing view, you can modify reports because you're an *owner* or  *creator* of the report. When you share your report with colleagues, they often can interact with the report in Reading view only. 
-
-When you're ready to continue working on your report, select **Edit**:
-
-:::image type="content" source="media/service-get-started/report-editing-view.png" alt-text="Screenshot that shows how to switch to the Editing view of a report canvas.":::
-
 ## Add data to create a report
 
 Often, when you want to create a Power BI report, you start in Power BI Desktop. Power BI Desktop offers more power. You can transform, shape, and model data, before you start designing reports.
 
 For this tutorial, we start from scratch by creating a report in the Power BI service rather than through the Desktop. We create a semantic model from a simple Microsoft Excel file that contains sample financial data.
 
-1. Open the Power BI service (app.powerbi.com) in your browser. 
+1. Open the Power BI service (app.powerbi.com) in your browser.
 
    Don't have an account? [Sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web).
 
@@ -94,22 +83,33 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 1. Select the data to use by placing a checkmark next to **financials** and choosing **Create**.
 
    The Power BI service imports the sample data from the Excel file as a semantic model and opens a report canvas. We can now use the sample semantic model to create reports and dashboards. We're going to create a report partly from scratch and partly using Copilot. Let's start with Copilot.
-   
+
    :::image type="content" source="media/service-get-started/power-bi-financials-sample.png" alt-text="Screenshot that shows the imported Financial Sample semantic model page." border="false":::
 
 After you connect data to build a report, you're ready to start exploring. When you find an interesting item, you can save it on the report canvas. From the report canvas, you can pin the item to a dashboard to monitor the data for changes over time.
 
-We can start by asking Copilot to review our data and suggest some visuals. 
-   
+We can start by asking Copilot to review our data and suggest some visuals.
+
+### Switch between report views
+
+Reports have two modes: **Editing** and **Reading**. To create a report, add visuals, and edit your report, use **Editing** mode. To view your report in progress, switch to the **Reading** view at the top of the page:
+
+:::image type="content" source="media/service-get-started/report-reading-view.png" alt-text="Screenshot that shows how to switch to the Reading view of a report canvas.":::
+
+In the Editing view, you can modify reports because you're an *owner* or  *creator* of the report. When you share your report with colleagues, they often can interact with the report in Reading view only.
+
+When you're ready to continue working on your report, select **Edit**:
+
+:::image type="content" source="media/service-get-started/report-editing-view.png" alt-text="Screenshot that shows how to switch to the Editing view of a report canvas.":::
+
 ## Build a report
 
-There are many ways to build a report. In this article, we start by using Microsoft Copilot to create some report pages. Next, we add additional visuals to a report page from scratch. 
-
+There are many ways to build a report. In this article, we start by using Microsoft Copilot to create some report pages. Next, we add more visuals to a report page from scratch.
 
 ### Use Copilot to create a report in Power BI
 
 You can get AI assistance from Copilot. Generate a Power BI report based on gross sales in Power BI.
-    
+
 ```copilot-prompt
 Create a Gross Sales report.
  ```
@@ -118,9 +118,11 @@ Copilot creates a report page and names it *Gross Sales Report*. Copilot is powe
 
 ### Pin a report visual to a dashboard
 
-Create a new dashboard using one of the visuals from the report. Select the *Gross Sales Trend Over Time* visual. Hover over the visual and select **Pin visual** > **New dashboard** > **Keep current theme**. Give the new dashboard a name and select **Pin**. 
+Create a new dashboard using one of the visuals from the report. Select the *Gross Sales Trend Over Time* visual. Hover over the visual and select **Pin visual** > **New dashboard** > **Keep current theme**. Give the new dashboard a name and select **Pin**. You can pin the whole report by selecting **Pin to a dashboard** in the top menu bar.
 
 After you pin a visualization, it appears on the dashboard as a *tile*. The data in the visualization stays up-to-date so you can track the latest value at a glance.
+
+:::image type="content" source="media/power-bi-pin-report-visual.png" alt-text="Screenshot of the pinning options within a report." border="false":::
 
 > [!NOTE]
 > When the report is new, you're prompted to save the report before you can pin the visualization to a dashboard. Power BI saves the report to the selected location. The default is **My workspace**. Power BI shows the report in Reading view.
@@ -131,9 +133,15 @@ To continue editing the report, select **Edit** from the top menu bar.
 
 1. Add a new report page by selecting the plus icon (+) at the bottom of the report.
 
-1. Ask Copilot to suggest content. Select **Suggest content for a new report page** and then choose **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
+1. Ask Copilot to suggest content.
 
-1. Select another visual to pin to your dashboard. Select **Profit by Product** and pin it to the same dashboard. 
+```copilot-prompt
+Suggest content for a new report page.
+ ```
+
+Select **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
+
+1. Select another visual to pin to your dashboard. Select **Profit by Product** and pin it to the same dashboard.
 
 ### Create report visuals from scratch
 
@@ -147,28 +155,28 @@ Add a new page to your report. The new report page canvas is blank and shows the
 
    :::image type="content" source="media/service-get-started/data-pane-sigma-symbol.png" alt-text="Screenshot that shows items in the Data pane with a sigma symbol to indicate the data has numeric values.":::
 
-1. Under **financials**, select the **Profit** data item, and then select the **Date** item. **Date** has a hierarchy, so expand **Date** and select only **Month**. 
+1. Under **financials**, select the **Profit** data item, and then select the **Date** item. **Date** has a hierarchy, so expand **Date** and select **Quarter** and **Year**.
 
    :::image type="content" source="media/service-get-started/power-bi-hierarchy-line.png" alt-text="Screenshot that shows the Gross Sales and Date data items selected in the Data pane.":::
 
+   > [!NOTE]
+   > If you select the **Date** items before you select the **Profit** item, Power BI creates a table rather than a column chart. If you selected the items in this order, it's not a problem. We're going to change the visualization of the data in step 4.
+
 1. Expand the **Filters** pane and change **Date - Year** to **2014**.
 
-   Power BI analyzes the selected data and creates a column chart visualization. 
+   Power BI analyzes the selected data and creates a column chart visualization.
 
    :::image type="content" source="media/service-get-started/power-bi-chart-column.png" alt-text="Screenshot that shows a column chart visualization for the selected data items.":::
-
-   > [!NOTE]
-   > If you select the **Date** item before you select the **Profit** item, Power BI creates a table rather than a column chart. If you selected the data items in this order, it's not a problem. We're going to change the visualization of the data in the next step.
 
 1. Let's try a different display of the selected data. Line charts are good visuals for showing changes in values over time. With the visual active, in the **Visualizations** pane, select **Line chart**.
 
    :::image type="content" source="media/service-get-started/power-bi-line.png" alt-text="Screenshot that shows how to select the line chart display in the Visualizations pane.":::
 
 1. The line chart looks interesting, so let's pin the visualization to our dashboard.
-  
-   Power BI displays a success message after the service adds the visualization to the dashboard. The success dialog includes an option to create an optimized layout of the dashboard for your mobile device.
 
-1. In the message dialog, select **Go to dashboard**. 
+1. In the message dialog, select **Go to dashboard**.
+
+   Power BI displays a success message after the service adds the visualization to the dashboard. The success dialog includes an option to create an optimized layout of the dashboard for mobile devices.
 
    :::image type="content" source="media/service-get-started/open-new-dashboard.png" alt-text="Screenshot of the Pinned to dashboard dialog with the option to go to the new dashboard." border="false":::
 
