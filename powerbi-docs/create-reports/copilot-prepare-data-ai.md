@@ -16,7 +16,11 @@ ms.collection: ce-skilling-ai-copilot
 
 # Prepare your data for AI
 
-Microsoft Power BI has new capabilities to help you get your data ready for natural language experiences with Copilot. To get the best results from Power BI Copilot, we recommend that you have a semantic model that follows best practices. However, models often require more assistance to be fully prepared for optimal interactions with AI. There are tooling features to help you prepare your data for AI. These features allow you to provide more context about your model, help guide Copilot to the right data in the model, and help increase the quality of Copilot output.
+Microsoft Power BI has new capabilities to help you get your data ready for natural language experiences with Copilot.
+
+To get the best results from Copilot in Power BI, we recommend that you have a semantic model that follows best practices. However, models often require more assistance to be fully prepared for optimal interactions with AI.
+
+There are tooling features to help you prepare your data for AI. These features allow you to provide more context about your model, help guide Copilot to the right data in the model, and help increase the quality of Copilot output.
 
 > [!NOTE]
 > You can now *author* all features in both Power BI Desktop and the Power BI service. Users can *consume* these features everywhere that Copilot exists.
@@ -27,14 +31,16 @@ You can now utilize three key features to help prepare your data for AI. This pr
 
 :::image type="content" source="media/copilot-prep-data/copilot-prep-data.png" alt-text="Screenshot of the Prep data for AI button in Power BI Desktop, located next to the Copilot button in the home ribbon." lightbox="media/copilot-prep-data/copilot-prep-data.png":::
 
-## Why you want to prepare your data for AI
+## Benefits of preparing your data for AI
 
-When you prepare your data for AI, you create the foundation for high-quality, grounded, and context-aware AI experiences. When data is unstructured or ambiguous, AI systems can struggle to correctly interpret it. Outputs might be generic, inaccurate, or even misleading. When you invest in data preparation, you help AI systems understand your unique business context, prioritize the right information, and deliver responses that are consistent, reliable, and aligned with your goals. Data preparation not only improves user trust but also accelerates adoption and impact across your organization.
+When you prepare your data for AI, you create the foundation for high-quality, grounded, and context-aware AI experiences. When data is unstructured or ambiguous, AI systems can struggle to correctly interpret it. Outputs might be generic, inaccurate, or even misleading. 
+
+When you invest in data preparation, you help AI systems understand your unique business context, prioritize the right information, and deliver responses that are consistent, reliable, and aligned with your goals. Data preparation not only improves user trust but also accelerates adoption and impact across your organization.
 
 > [!NOTE]
 > Features that help prepare your data for AI can't ensure a specific output every time. AI behavior is nondeterministic. Copilot doesn’t always produce the exact same response, even with the same input.
 
-## Access features to prepare your data for AI
+## Features to help you prepare your data for AI
 
 ### Power BI Desktop
 
@@ -68,6 +74,8 @@ To set or create a verified answer in the Power BI service, first meet the follo
 - You are on a report page.
 - You're in edit mode.
 - The visual is selected.
+
+#### Set a verified answer
 
 1. To set a verified answer, select a visual.
 1. Select the **...** menu, and then select **Set up a verified answer**.
@@ -110,7 +118,7 @@ You can troubleshoot changes through **Access the download diagnostic** in the *
 
 After you test and confirm your **Prep data for AI** enhancements, you can publish your report to the Power BI service for broad consumption.
 
-## Mark your model as prepped for AI
+## Mark your model prepped for AI
 
 After you prepare your semantic model for AI and it's ready for consumption, you can mark your model *prepped for AI* by following these steps:
 
@@ -124,7 +132,9 @@ After you prepare your semantic model for AI and it's ready for consumption, you
 When you mark your semantic model *prepped for AI*, the standalone Copilot agent doesn't apply any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai) to answers from that model. Also, reports that use that semantic model can be considered *prepped for AI*.
 
 > [!NOTE]
-> When you mark a semantic model *prepped for AI*, the friction treatment in standalone Copilot for associated reports should be removed. In most cases, changes are fully reflected within an hour, but it can take up to 24 hours if the model has a lot of reports attached. To force an update to a specific report, you can speed up the process by manually saving a small change to a report.
+> When you mark a semantic model *prepped for AI*, the friction treatment in standalone Copilot for associated reports should be removed.
+>
+> In most cases, changes are fully reflected within an hour, but it can take up to 24 hours if the model has a lot of reports attached. To force an update to a specific report, you can speed up the process by manually saving a small change to a report.
 >
 > There's currently *no way* to mark a report, dashboard, or app *prepped for AI*.
 
@@ -142,9 +152,8 @@ When you restart Desktop, you no longer see the **Prep data for AI** button.
 ## Considerations and limitations
 
 - You must enable Power BI Q&A on your semantic model.
-- You can author all **Prep data for AI** features in Power BI Desktop.
 - You can author all **Prep data for AI** features in Power BI Desktop and the Power BI service.
-- Users can consume all **Prep data for AI** features everywhere that Power BI Copilot is available.
+- Users can consume all **Prep data for AI** features everywhere that Copilot in Power BI is available.
 - Prep data for AI features in Power BI Desktop are only supported with the following connection types:
   - Import
   - DirectQuery
@@ -157,7 +166,7 @@ When you restart Desktop, you no longer see the **Prep data for AI** button.
 - After you save changes in the **Prep data for AI** dialog, refresh the Copilot pane by closing and reopening it so that changes take effect.
 - AI instructions and AI data schemas save to the LSDL and you can edit them as needed.
 - In rare circumstances, Copilot capabilities might time out, which results in an error because it can't fetch the LSDL.
-- When you make LSDL or Tooling edits through Git or deployment pipelines, take note of the following requirements:
+- When you make LSDL or tooling edits through Git or deployment pipelines, take note of the following requirements:
   - **Import models**: You're required to do a model refresh in the Power BI service to sync the LSDL or tooling changes after deployment.
   - **DirectQuery models**: You're required to do a model refresh in the Power BI service to sync the LSDL or tooling changes after deployment, but only once a day.
   - **Direct Lake models**: You're required to do a model refresh in the Power BI service to sync the LSDL or tooling changes after deployment, but only once a day.

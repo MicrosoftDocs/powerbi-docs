@@ -39,8 +39,8 @@ However, adding synonyms for every data entity in your model can be time consumi
 
 There are a few ways to add Copilot-suggested synonyms to Q&A:
 
-- When you first create a Q&A visual or open the Q&A setup menu, you might see a banner at the top of the visual or menu. The banner prompts you to improve your Q&A visual by getting synonyms. You can select **add synonyms** to have Copilot generate synonyms for the names of your tables and columns.
-- You can also get Copilot-generated synonyms via the synonyms tab of the Q&A setup menu. Enable Copilot as a source via the suggestion settings dropdown menu, and then select **apply**. Copilot generates suggestions.
+- When you first create a Q&A visual or open the Q&A setup menu, you might see a banner at the top of the visual or menu. The banner prompts you to improve your Q&A visual by getting synonyms. You can select **Add synonyms** to have Copilot generate synonyms for the names of your tables and columns.
+- You can also get Copilot-generated synonyms via the synonyms tab of the Q&A setup menu. Enable Copilot as a source via the suggestion settings dropdown menu, and then select **Apply**. Copilot generates suggestions.
 - If Copilot is already enabled as a source, you can refresh suggestions from Copilot by selecting the **Refresh** button next to the suggestion settings dropdown menu.
 
 Whenever you get suggested synonyms from Copilot, Q&A sends your model metadata to Copilot. Your model metadata includes the names of tables and fields in your data model, but not the row contents of those tables or any user questions. Copilot returns some suggested synonyms for those names.

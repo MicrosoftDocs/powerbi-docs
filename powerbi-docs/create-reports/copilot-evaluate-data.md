@@ -1,5 +1,5 @@
 ---
-title: Optimize your semantic model for Copilot in Power BI
+title: Optimize Your Semantic Model for Copilot in Power BI
 description: Before you start using Copilot with your semantic model, evaluate your data to see if you can improve its performance.
 author: julcsc
 ms.author: juliacawthra
@@ -27,8 +27,8 @@ You can create accurate reports with Copilot by using the criteria in the follow
 
 |Element  | Consideration  | Description  | Example  |
 |---------|---------|---------|-----|
-|Table linking  | Define clear relationships  | Ensure that all relationships between tables are clearly defined and logical. Indicate which are one-to-many, many-to-one, or many-to-many.  | `Sales` table connected to `Date` table by `DateID` field.  |
-|Measures  | Standardized calculation logic  | Measures should have standardized, clear calculation logic that's easy to explain and understand.  | `Total Sales` calculated as the sum of `SaleAmount` from the `Sales` table.  |
+|Table linking  | Define clear relationships  | Ensure that all relationships between tables are clearly defined and logical. Indicate which are one-to-many, many-to-one, or many-to-many.  | The `Sales` table is connected to the `Date` table by the `DateID` field.  |
+|Measures  | Standardized calculation logic  | Measures should have standardized, clear calculation logic that's easy to explain and understand.  | `Total Sales` is calculated as the sum of the `SaleAmount` field from the `Sales` table.  |
 |Measures  | Naming conventions  | Names for measures should clearly reflect their calculation and purpose.  | Use `Average_Customer_Rating` instead of `AvgRating`.  |
 |Measures  | Predefined measures  | Include a set of predefined measures that users are most likely to request in reports.  | Like `Year_To_Date_Sales` or `Month_Over_Month_Growth`.  |
 |Fact tables  | Clear delineation  | Clearly delineate fact tables, which hold the measurable, quantitative data for analysis.  | `Transactions`, `Sales`, and `Visits`.  |
@@ -38,12 +38,12 @@ You can create accurate reports with Copilot by using the criteria in the follow
 |Column data types  | Correct and consistent  | Apply correct and consistent data types for columns across all tables to ensure that measures calculate correctly and to enable proper sorting and filtering.  | Ensure numeric columns used in calculations aren't set as text data types.  |
 |Relationship types  | Clearly specified  | To ensure accurate report generation, clearly specify the nature of relationships (active or inactive) and their cardinality.  | Mark whether a relationship is `One-to-One`, `One-to-Many`, or `Many-to-Many`.  |
 |Data consistency  | Standardized values  | Maintain standardized values within columns to ensure consistency in filters and reporting.  | If you have a `Status` column, consistently use filters like `Open`, `Closed`, or `Pending`.  |
-|Key performance indicators (KPIs)  | Predefined and relevant  | Establish a set of KPIs that are relevant to the business context and are commonly used in reports.  | `Return on Investment (ROI)`, `Customer Acquisition Cost (CAC)`, `Lifetime Value (LTV)`.  |
+|Key performance indicators (KPIs)  | Predefined and relevant  | Establish a set of KPIs that are relevant to the business context and are commonly used in reports.  | `Return on Investment (ROI)`, `Customer Acquisition Cost (CAC)`, or `Lifetime Value (LTV)`.  |
 |Refresh schedules  | Transparent and scheduled  | Clearly communicate the refresh schedules of the data to ensure users understand the timeliness of the data they're analyzing.  | Indicate if the data is real-time, daily, weekly, and so on.  |
 |Security  | Role-level definitions  | Define security roles for different levels of data access if there are sensitive elements that not all users should see.  | Sales team members can see sales data but not HR data.  |
 |Metadata  | Documentation of structure  | For reference, document the structure of the data model, including tables, columns, relationships, and measures.  | A data dictionary or model diagram provided as a reference.  |
 
-The following table lists other criteria that can help you create accurate [DAX queries with Copilot](/dax/dax-copilot). These recommendations can help you generate accurate DAX queries.
+The following table lists other criteria that can help you create accurate [Data Analysis Expressions (DAX) queries with Copilot](/dax/dax-copilot). These recommendations can help you generate accurate DAX queries.
 
 |Element  | Consideration  | Description  | Example  |
 |---------|---------|---------|-----|

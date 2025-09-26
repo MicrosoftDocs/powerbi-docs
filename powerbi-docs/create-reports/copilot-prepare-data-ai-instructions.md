@@ -1,5 +1,5 @@
 ---
-title: Prepare your data for AI - AI instructions
+title: Prepare Your Data for AI - AI Instructions
 description: Prepare your data for AI in Power BI with AI instructions. Learn how to optimize your semantic model for Copilot and enhance AI-driven insights.
 author: julcsc
 ms.author: juliacawthra
@@ -75,7 +75,7 @@ Instructions can help Copilot frame responses within the context of your busines
 
 - Busy season is October to February.  
 - Frame insights with a focus on risk assessment and market trends.  
-- When a user mentions *ABCD*, they're referring to the `total invoice` field.  
+- When a user mentions *ABCD*, they're referring to the **total invoice** field.  
 - A lower attrition percent is more positive.
 
 ### Analysis rules
@@ -86,7 +86,7 @@ You can guide Copilot on how to approach certain types of analysis by providing 
 - When showcasing revenue, break it down by quarter and compare it to the 'industry' field.  
 - For retail insights, prioritize the `customsegmentationtable` and `saleschannel` tables.  
 - Use the `sales_fact` table as the primary source for all sales-related questions.  
-- Always ask for clarification on location when a user asks about product sales.  
+- When a user asks about product sales, always ask for clarification on location.  
 
 ## Prompt engineering for AI instructions  
 
@@ -94,21 +94,19 @@ Because AI instructions are heavily prompt-based, it’s important to understand
 
 ### Be explicit and specific
 
-Assume Copilot has no understanding of how to use the data model or business context for your data. Example: Instead of writing, "You're a seasoned BI Analyst who is detail oriented," consider, "You're a seasoned BI Analyst who works for a big food distributor. Responses should be detail oriented and focused on revenue and profitability."  
+Assume Copilot has no understanding of how to use the data model or business context for your data. For example, instead of writing, "You're a seasoned BI Analyst who is detail oriented," consider, "You're a seasoned BI Analyst who works for a big food distributor. Responses should be detail oriented and focused on revenue and profitability."  
 
 ### Use analogies and descriptive language
 
-When you use analogies and descriptive language, you help the model understand your desired outcome. Examples can also play a vital role in helping the model understand exactly what you mean. Example: For product-specific sales, use the measure "Total_Sales_Product" (example of Product: Word, PowerPoint, Excel, SharePoint, Teams).  
+When you use analogies and descriptive language, you help the model understand your desired outcome. Examples can also play a vital role in helping the model understand exactly what you mean. For example, for product-specific sales, use the measure "Total_Sales_Product" (example of Product: Word, PowerPoint, Excel, SharePoint, Teams).  
 
 ### Avoid ambiguity
 
-Be clear about anything that should emphasized or avoided. The more details and supporting content you can provide Copilot, the better. Example: For Total Active Partners, use the measure "Monthly Active Partner Count" (do NOT filter on "Customers" table).  
+Be clear about anything that you want Copilot to emphasize or avoid. The more details and supporting content you can provide Copilot, the better. For example, for Total Active Partners, use the measure "Monthly Active Partner Count" (do *not* filter on the "Customers" table).  
 
 ### Group related instructions
 
-Organizing instructions by theme or purpose (that is, date logic, key metrics, industry terms) can help Copilot better understand your intent. Including structural elements, such as sections, hierarchies, and headers, can be very beneficial.
-
-- **Example:** See an example of grouping related instructions in the full set of instructions in the [example scenario](#example-scenario).
+Organize instructions by theme or purpose (like date logic, key metrics, and industry terms) to help Copilot better understand your intent. It can be very beneficial to include structural elements, such as sections, hierarchies, and headers. See an example of how to group related instructions in the full set of instructions in the [example scenario](#example-scenario).
 
 ### The order in which you author instructions can affect the output you receive
 
@@ -130,41 +128,41 @@ See the following example scenario of a set of AI instructions that are prompt e
 
 Gross product sales (GPS) should reference the `grossrevenue` field in the **Revenue** table.
 
-Top sellers refers to the top three partners with the highest revenue. Don't show customers unless the user explicitly asks.
+*Top sellers* refers to the top three partners with the highest revenue. Don't show customers unless the user explicitly asks.
 
 #### Customer identification
 
 - `accountid` refers to customers in the **Revenue** table.
-- `earningsid` refers to Customers in the **Partners** table.
-- `customid` in the order table doesn't refer to Customers.
-- Define "top customers" by first looking at the revenue table, and then only returning the customers with the highest order values.
+- `earningsid` refers to customers in the **Partners** table.
+- `customid` in the order table doesn't refer to customers.
+- Define *top customers* by first looking at the revenue table, and then only returning the customers with the highest order values.
 - Some partners are also customers. Don't remove these duplicates. Instead, indicate whether it's a partner or a customer based on the ID value.
 
 #### Product metrics
 
 - Filter data by `State= Washington` or `State= California` unless the user specifically asks for a different state.  
-- For product specific sales, use the measure `Total_Sales_Product` (example of product: Word, PowerPoint, Excel, SharePoint, Teams), and filter on the **Product** column from the **Sales** table.
+- For product specific sales, use the measure `Total_Sales_Product` (example of product: Word, PowerPoint, Excel, SharePoint, or Teams), and filter on the **Product** column from the **Sales** table.
 - For `Total Active Partners`, use the measure `Monthly Active Partner Count_ID` (don't filter on the **Customers** table).
 - Food product sales are always from retail stores.
-  -If `product_type` in the **Product** table is `Food`, then ***ALWAYS*** show the store where the item was sold. Store information is found in the **Store** table with the field `store_name` and it can be linked to `product_type` by `store_id`.
+  - If the value `product_type` in the **Product** table is `Food`, then *always* show the store where the item was sold. Store information is found in the **Store** table with the field `store_name` and it can be linked to `product_type` by `store_id`.
 
 > [!NOTE]
 >
 > You often need to iterate to get the most benefit from AI instructions. As you experiment and observe how Copilot responds, you develop a better understanding of what types of instructions drive the best outcomes for your model and your users.  
 
-## Considerations and Limitations  
+## Considerations and limitations  
 
 Here are some things that you need to know:
 
-- Because AI instructions are unstructured guidance to Copilot, they can only be interpreted by the LLM and can't be guaranteed to be followed exactly.
+- Because AI instructions are unstructured guidance to Copilot, they can only be interpreted by the LLM and aren't guaranteed to be followed exactly.
 - AI instructions affect Copilot capabilities but don't extend to general conversations with Copilot.  
 - AI instructions are saved at the semantic model level. Instructions can't currently be stored at the report level.  
 - AI instructions aren't expected to be persona-specific or modify non-data-related outputs for the end user.
-- AI instructions cannot disable other Power BI Copilot features or prevent or prioritize certain features from being called.
+- AI instructions can't disable other Copilot in Power BI features or prevent or prioritize certain features from being called.
 - Instructions aren't intended to work with visual modifications or theming in your report.  
 - Currently, you can't upload instructions to the dialog in Desktop.  
 - To test instructions in Desktop, you need to close and reopen your Copilot pane to see new instructions applied.  
-- Users can't set instructions by category or by mode (view or edit) in Power BI Copilot.  
+- Users can't set instructions by category or by mode (view or edit) in Copilot in Power BI.  
 - Consumers can't see what instructions an author applied to the model in the UI.  
 - End users can't disable instructions on a semantic model.  
 - AI instructions might not be respected in Power BI Desktop when you're trying to create a page, get suggested report page topics, or a dataset summary with Copilot. To work around this, use the skill picker and select only **Create new report pages** to have instructions successfully apply.
