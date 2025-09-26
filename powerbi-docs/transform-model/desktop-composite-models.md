@@ -38,7 +38,7 @@ There are different types of composite models depending on the combination of ta
 In Power BI Desktop, semantic models can be created with import or DirectQuery tables locally. Additional tables can then be added from the **Get data** ribbon button in the other storage mode to be considered a composite model. 
 
 > [!Note]
-> If import and DirectQuery tables are both in a semantic model, dual storage mode is available. Dual table storage mode can help keep the import data in sync with DirectQuery tables outside of schedule refresh.
+> If import and DirectQuery tables are both in a semantic model and from the same data source, dual storage mode is available. Dual mode used instead of DirectQuery can avoid limited relationships with import tables. Learn more about dual storage mode in the [storage mode documenation](/power-bi/transform-model/desktop-storage-mode). 
 
 
 Adding DirectQuery tables from another Power BI semantic model have a couple different create paths. 
