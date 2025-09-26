@@ -1,6 +1,6 @@
 ---
-title: Use storage mode in Power BI Desktop
-description: Learn how to use storage mode to control whether or not data is cached in-memory for reports in Power BI Desktop.
+title: Table storage mode in Power BI semantic models
+description: Learn about table storage mode to control whether or not data is cached in-memory for reports in Power BI semantic models.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -11,53 +11,39 @@ ms.date: 01/08/2024
 LocalizationGroup: Transform and shape data
 ---
 
-# Manage storage mode in Power BI Desktop
+# Table storage mode in Power BI semantic models
 
-In Microsoft Power BI Desktop, you can specify the storage mode of a table. The storage mode lets you control whether or not Power BI Desktop caches table data in-memory for reports. Caching means temporarily storing data in memory.
+Tables in Power BI semantic models have different storage modes depending on the data source. The storage mode lets you control whether or not Power BI stores the table data in-memory for reports or retrieves the data from the data source when visuals load. 
 
-Setting the storage mode provides many advantages. You can set the storage mode for each table individually in your model. This action enables a single semantic model, which provides the following benefits:
+| **Table storage mode**     | **When available**     | **Benefits** |
+| ---------------------------|------------------------|--------------|
+| Import    | Available in Power BI Desktop and Power BI web modeling using **Get data** (using Power Query) from almost all data sources.    | Stores a snapshot of the data in a native storage for quick loading visuals in reports. Refresh the semantic model or table to get the latest data from the data source.    | 
+| Direct Lake on OneLake     | Available in Power BI Desktop and Power BI web modeling using **OneLake catalog** for Fabric data sources.    | Data is scanned from OneLake delta tables for quick loading visuals in reports. By default, latest data is loaded and there's an option to access latest data on refresh. Refresh is also called reframing for Direct Lake.     |
+| Direct Lake on SQL    | Available from **new semantic model** button in the SQL analytic endpoints of Fabric items.     | Data is scanned from OneLake delta tables for quick loading in reports. If a view is used, SQL granular access enabled, or a Direct Lake guardrail reached, then data is accessed using DirectQuery storage mode. |
+| DirectQuery    | Available in Power BI Desktop using the **Get data** (using Power Query) for some data sources, such as SQL databases.     | Data is queried from the data source when visuals load and not stored in the semantic model. The query is a translation from the Power BI DAX query used in visuals to the native query language of the data source, such as a SQL query. |
+| DirectQuery on Power BI semantic models    | Available in Power BI Desktop when connecting to a Power BI semantic model then selecting **make changes to this model** or when an import or DirectQuery table is already added.     | 
+| Dual    | Available in Power BI Desktop when converting a DirectQuery table to import. An option shows to convert the remaining DirectQuery tables to dual.     | The relationships between DirectQuery and import tables are limited, dual can help keep them as regular relationships. |
+| Hybrid    | Available for incremental refresh scenarios on an import table. The latest partition of the table can be in DirectQuery to ensure the latest data is available between import refreshes.     |
 
-* **Query performance**: As users interact with visuals in Power BI reports, Data Analysis Expressions (DAX) queries are submitted to the semantic model. Caching data into memory by properly setting the storage mode can boost the query performance and interactivity of your reports.
+> [!Note]
+> **Live connect** is when you connect to a Power BI semantic model in Power BI Desktop to create a report or create a report from Power BI semantic model in the web. There is no local semantic model for this report. This is sometimes called a **thin report**. The remote Power BI semantic model may be using any of the table storage modes. The report author can see the model in model view but only limited information is available. Measures created are stored in the report.
 
-* **Large semantic models**: Tables that aren't cached don't consume memory for caching purposes. You can enable interactive analysis over large semantic models that are too large or expensive to completely cache into memory. You can choose which tables are worth caching, and which aren't.
+**Composite models** is a smeantic model with table in more than one storage mode. For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
 
-* **Data refresh optimization**: You don't need to refresh tables that aren't cached. You can reduce refresh times by caching only the data that's necessary to meet your service level agreements and your business requirements.
 
-* **Near-real time requirements**: Tables with near-real time requirements might benefit from not being cached, to reduce data latency.
+## Seeing the storage mode of a table
 
-* **Writeback**: Writeback enables business users to explore what-if scenarios by changing cell values. Custom applications can apply changes to the data source. Tables that aren't cached can display changes immediately, which allows instant analysis of the effects.
+The **Storage mode** property is a property on each table. 
 
-The storage mode setting in Power BI Desktop is one of three related features:
-
-* **Composite models**: Allows a report to have two or more data connections, including DirectQuery connections or Import, in any combination. For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
-
-* **Many-to-many relationships**: With composite models, you can establish *many-to-many relationships* between tables. In a many-to-many relationship, requirements are removed for unique values in tables. It also removes prior workarounds, such as introducing new tables only to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
-
-* **Storage mode**: With storage mode, you can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries that were sent to back-end sources.
-
-## Use the Storage mode property
-
-The **Storage mode** property is a property that you can set on each table in your model and controls how Power BI caches the table data.
-
-To set the **Storage mode** property, or view its current setting:
-
-1. In **Model** view, select the table whose properties you want to view or set.
+1. In **Model** view, select the table.
 2. In the **Properties** pane, expand the **Advanced** section, and expand the **Storage mode** drop-down.
 
     :::image type="content" source="media/desktop-storage-mode/storage-mode-02.png" alt-text="Screenshot of Relationship view highlight the option drop-down to change the storage mode.":::
 
-You set the **Storage mode** property to one of these three values:
-
-* **Import**: Imported tables with this setting are cached. Queries submitted to the Power BI semantic model that return data from Import tables can be fulfilled only from cached data.
-
-* **DirectQuery**: Tables with this setting aren't cached. Queries that you submit to the Power BI semantic model - for example, DAX queries - and that return data from DirectQuery tables can be fulfilled only by executing on-demand queries to the data source. Queries that you submit to the data source use the query language for that data source, for example, SQL.
-
-* **Dual**: Tables with this setting can act as either cached or not cached, depending on the context of the query that's submitted to the Power BI semantic model. In some cases, you fulfill queries from cached data. In other cases, you fulfill queries by executing an on-demand query to the data source.
-
-Changing the **Storage mode** of a table to **Import** is an *irreversible* operation. After this property is set, it can't later be changed to either **DirectQuery** or **Dual**.
+For most storage modes this property is set when you add the table only. The storage mode can only be changed if the table is in DirectQuery. You can change a DirectQuery table to import or dual. After this property is set, it can't be put back to DirectQuery. Power BI web modeling and live editing in Power BI Desktop do have version control which can be used to reverse a changed storage mode.
 
 > [!NOTE]
-> You can use **Dual** storage mode in both Power BI Desktop and the Power BI service.
+> Direct Lake on OneLake tables can be converted to import using semantic link labs in Fabric notebooks.
 
 ## Constraints on DirectQuery and Dual tables
 
