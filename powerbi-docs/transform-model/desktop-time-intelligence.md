@@ -25,6 +25,9 @@ This table compares the three tools provided:
 |[Classic time intelligence](#classic-time-intelligence)|medium|easy|low|Requires creation of a date table, assumes Gregorian or shifted Gregorian calendar, suffers from performance issues in some specific scenarios|
 |[Calendar-based time intelligence](#calendar-based-time-intelligence-preview)|high|medium|high|Recommended to create a date table, highest flexibility, best performance, but increased setup cost|
 
+> [!NOTE]
+> We advise against using alternative time intelligence techniques, particularly those that involve adding extra columns to date tables to calculate offsets. While these approaches may appeal to beginners due to their straightforward DAX formulas, they tend to inflate semantic models unnecessarily. This bloating can lead to slower data refreshes and diminished report performance as datasets grow.
+
 ## Auto-date/time
 
 The auto-date/time feature automatically creates hidden date tables for each date field in your data model. For more information about this automatic behavior, see [Apply auto date/time in Power BI Desktop](desktop-auto-date-time.md).
