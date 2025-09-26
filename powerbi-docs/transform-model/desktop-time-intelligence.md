@@ -615,7 +615,7 @@ You can use the `truncation` parameter to influence how the shift is performed:
 - A calendar must at least assign one primary column to a category
 - A calendar can only assign columns from its own table to categories
 - Each category should have a primary column and can have zero or more associated columns assigned
-- [DATEADD has new parameters to control extension and extension behavior](/dax/dateadd-function-dax.md), which aren't recognized in IntelliSense.
+- [DATEADD has new parameters to control extension and extension behavior](/dax/dateadd-function-dax), which aren't recognized in IntelliSense.
 - Any given column can be mapped to only one category
 - You can't nest time intelligence functions that use calendars. For example, the following DAX statement isn't supported:
 
