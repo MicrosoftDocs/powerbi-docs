@@ -21,7 +21,7 @@ ms.collection: ce-skilling-ai-copilot
 
 By using an AI data schema, semantic model authors can define a focused subset of the model's schema for Copilot to prioritize when it generates responses. Authors select the most relevant fields to guide Copilot to provide answers that are more aligned with the user's queries. A streamlined schema reduces ambiguity, which helps Copilot deliver clearer and more accurate responses.
 
-When you set an AI data schema for a model, Copilot uses the selected fields when it responds to data-related questions. When users ask questions, Copilot uses the reduced schema. It produce more accurate responses by using the correct field without needing clarification from the end user.
+When you set an AI data schema for a model, Copilot uses the selected fields when it responds to data-related questions. When users ask questions, Copilot uses the reduced schema. It produces more accurate responses by using the correct field without needing clarification from the end user.
 
 By using a defined AI data schema, model authors can ensure that Copilot pulls the most relevant and focused data for specific queries. This practice enhances the quality and relevance of Copilot's responses, which makes the interactions more efficient and tailored to the user's needs. The AI data schema ensures that Copilot works with the most important fields for specific tasks, improving accuracy and clarity in its output.
 
