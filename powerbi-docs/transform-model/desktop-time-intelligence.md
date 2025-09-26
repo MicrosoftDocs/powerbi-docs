@@ -109,11 +109,11 @@ The possibilities are endless as there's no built-in assumption from Power BI on
 
 #### Sparse dates
 
-[Classic time intelligence](#classic-time-intelligence) requires that the date column provided is complete - if there are any missing dates between the first and last dates, an error is thrown. Calendar-based time intelligence functions don't have such a requirement. Instead, they operate on the dates as-is. While we still recommend having a complete and dedicated calendar table, you're no longer required to have that. For example, if all of your retail stores are closed over the weekend, you can skip over the weekend days as they don't have any sales. Assuming your weekend is Saturday and Sunday, you can now use [PREVIOUSDAY](/dax/previousday-dax-function) with a calendar based on a table that doesn't have entries for the weekend to jump from Monday straight to Friday.
+[Classic time intelligence](#classic-time-intelligence) requires that the date column provided is complete - if there are any missing dates between the first and last dates, an error is thrown. Calendar-based time intelligence functions don't have such a requirement. Instead, they operate on the dates as-is. While we still recommend having a complete and dedicated calendar table, you're no longer required to have that. For example, if all of your retail stores are closed over the weekend, you can skip over the weekend days as they don't have any sales. Assuming your weekend is Saturday and Sunday, you can now use [PREVIOUSDAY](/dax/previousday-function-dax) with a calendar based on a table that doesn't have entries for the weekend to jump from Monday straight to Friday.
 
 #### Week-based calculations
 
-Calendar-based time intelligence directly supplies DAX functions that operate at a week granularity. For example, week-to-date totals can be computed directly using [TOTALWTD](/dax/totalwtd-dax-function):
+Calendar-based time intelligence directly supplies DAX functions that operate at a week granularity. For example, week-to-date totals can be computed directly using [TOTALWTD](/dax/totalwtd-function-dax):
 
 ```dax
 TOTALWTD ( Expr, CalendarName )
