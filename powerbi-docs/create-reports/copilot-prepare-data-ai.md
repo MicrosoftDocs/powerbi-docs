@@ -29,7 +29,7 @@ There are tooling features to help you prepare your data for AI. These features 
 
 You can now utilize three key features to help prepare your data for AI. This preparation provides Copilot the context it needs to reduce ambiguity, improve relevance and accuracy, and make user interactions with Copilot more fluent and intuitive.
 
-:::image type="content" source="media/copilot-prep-data/copilot-prep-data.png" alt-text="Screenshot of the Prep data for AI button in Power BI Desktop, located next to the Copilot button in the home ribbon." lightbox="media/copilot-prep-data/copilot-prep-data.png":::
+:::image type="content" source="media/copilot-prep-data/copilot-prep-data.png" alt-text="Screenshot of the Prep data for AI button in Power BI Desktop, located next to the Copilot button on the home ribbon." lightbox="media/copilot-prep-data/copilot-prep-data.png":::
 
 ## Benefits of preparing your data for AI
 
@@ -84,7 +84,7 @@ Now you can set trigger phrases that use the selected visual to return an answer
 
 :::image type="content" source="media/copilot-prep-data/copilot-service-features.png" alt-text="Screenshot that shows Copilot features in Power BI including the Prep data for AI options." lightbox="media/copilot-prep-data/copilot-service-features.png":::
 
-You can manage verified answers by selecting the **Prep data for AI** button in the ribbon of the semantic model page.
+You can manage verified answers by selecting the **Prep data for AI** button on the ribbon of the semantic model page.
 
 :::image type="content" source="media/copilot-prep-data/copilot-prep-data-ai-service.png" alt-text="Screenshot that shows the Prep data for AI features in the Power BI service that showcases the options you can use to prepare data for AI." lightbox="media/copilot-prep-data/copilot-prep-data-ai-service.png":::
 
