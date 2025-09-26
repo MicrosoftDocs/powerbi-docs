@@ -118,7 +118,7 @@ You can troubleshoot changes through **Access the download diagnostic** in the *
 
 After you test and confirm your **Prep data for AI** enhancements, you can publish your report to the Power BI service for broad consumption.
 
-## Mark your model prepped for AI
+## <a name = "mark-your-model-as-prepped-for-ai"></a> Mark your model prepped for AI
 
 After you prepare your semantic model for AI and it's ready for consumption, you can mark your model *prepped for AI* by following these steps:
 
