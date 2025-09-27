@@ -26,7 +26,7 @@ This table compares the three tools provided:
 |[Calendar-based time intelligence](#calendar-based-time-intelligence-preview)|high|medium|high|Recommended to create a date table, highest flexibility, best performance, but increased setup cost|
 
 > [!NOTE]
-> We advise against using alternative time intelligence techniques, particularly those that involve adding extra columns to date tables to calculate offsets. While these approaches may appeal to beginners due to their straightforward DAX formulas, they tend to inflate semantic models unnecessarily. This bloating can lead to slower data refreshes and diminished report performance as datasets grow.
+> We advise against using alternative time intelligence techniques, particularly those that involve adding extra columns to date tables to calculate offsets except for specific use cases. While these approaches may appeal to beginners due to their straightforward DAX formulas, they tend to inflate semantic models unnecessarily. This bloating can lead to slower data refreshes and diminished report performance as datasets grow.
 
 ## Auto-date/time
 
