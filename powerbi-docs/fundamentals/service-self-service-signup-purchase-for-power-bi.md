@@ -41,7 +41,7 @@ Use one of these fast paths to obtain an initial individual license (typically F
 |--------|--------------|-------|---------|
 | **Published button** | Go to the [Power BI website](https://powerbi.com) and select **Start free** (may appear as **Try free**, **Start a free trial**, or **Buy now**) | 1. Sign in with your work or school account.<br>2. If recognized, you are assigned a Fabric (Free) license and land on **Home**. | Assigned Fabric (Free) license |
 | **Shared link in email** | Open the email and select the shared dashboard, report, or app link | 1. First-time access triggers license evaluation.<br>2. A free (or sometimes paid) license is assigned depending on organizational settings. | License assigned based on org settings |
-| **In-product upgrade prompt** | While on a Fabric (Free) license, select a feature that requires a paid license | 1. In the prompt choose **Start trial** or **Buy now**. | Start trial or purchase license |
+| **In-product upgrade prompt** | While on a Fabric (Free) license, select a feature that requires a paid license | - In the prompt choose **Start trial** or **Buy now**. | Start trial or purchase license |
 | **Account manager** | Select your profile (account manager) in the upper-right corner | 1. Review **License type**.<br>2. Select **Buy now** or **Start trial** (if shown). | Start trial or purchase license |
 
 If a Fabric (Free) license meets your needs, you can work in **My workspace** and consume content in Premium capacity. Otherwise, continue with the trial or purchase sections below.
