@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/13/2025
+ms.date: 09/29/2025
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user, I want to apply conditional formatting to tables and matrices so that I can visually highlight and interpret data trends effectively.
 ---
@@ -15,6 +15,9 @@ LocalizationGroup: Create reports
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 Conditional formatting in Power BI is a powerful way to make your data more engaging and easier to interpret. By applying customized colors, data bars, icons, or even web links to your tables and matrices, you can highlight trends, outliers, and key insights at a glance. Whether you're looking to emphasize high-performing metrics, visually rank data, or create interactive reports, this guide shows you how to bring your data to life with conditional formatting.
+
+> [!NOTE]
+> Conditional formatting is only available for values in tables and matrices, not for columns or rows in a matrix. You can format values, totals, and subtotals, but not row or column headers.
 
 ## Apply conditional formatting in Power BI
 
@@ -100,6 +103,12 @@ You can apply conditional formatting rules to totals and subtotals, for both tab
 ## Color by rules for percentages
 
 If the field that the formatting is based on contains percentages, write the numbers in the rules as decimals, which are the actual values. For example, ".25" instead of "25". Also, select **Number** instead of **Percent** for the number format. For example, "If value is greater than or equal to 0 Number and is less than .25 Number" returns values less than 25%.
+
+> [!TIP]
+> When using conditional formatting with negative values (such as -15%), ensure your rules cover the negative range. For example, set a rule for "If value is less than 0" to apply a color for negative percentages.
+
+> [!NOTE]
+> If your field contains percentages, enter rule values as decimals (such as .25 for 25%). Select **Number** for the format, not **Percent**. Using **Percent** may produce unexpected results.
 
 ![Conditional formatting dialog for background color by rules for percentages: format style dropdown option is set to rules.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-rules.png)
 
