@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: video-RE4M2hq
 ms.topic: how-to
-ms.date: 10/25/2024
+ms.date: 09/29/2025
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI Desktop user, I want to understand dynamic M query parameters and learn how to use them to improve data filtering and optimize query performance in my reports.
 ---
@@ -17,6 +17,9 @@ LocalizationGroup: Connect to data
 This article describes how to create and work with dynamic M query parameters in Power BI Desktop. With dynamic M query parameters, model authors can configure the filter or slicer values that report viewers can use for an M query [parameter](/power-query/power-query-query-parameters). Dynamic M query parameters give model authors more control over the filter selections to incorporate into DirectQuery source queries.
 
 Model authors understand the intended semantics of their filters, and often know how to write efficient queries against their data source. With dynamic M query parameters, model authors can ensure that filter selections incorporate into source queries at the right point to achieve the intended results with optimum performance. Dynamic M query parameters can be especially useful for query performance optimization.
+
+[!NOTE]
+Examples in this article use both Kusto and T-SQL to demonstrate dynamic M query parameters. The concepts apply to any supported DirectQuery source.
 
 Watch Sujata explain and use dynamic M query parameters in the following video, and then try them out yourself.
 
@@ -60,6 +63,17 @@ The following example passes a single value through to a parameter dynamically.
 1. Reference the parameters in the M query, as highlighted in yellow in the following image:
 
    [![Screenshot that shows referencing the parameter.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-06.png)](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-06.png#lightbox)
+
+> [!TIP]
+> To reference a parameter in M code, use its name directly (for example, `CountryParameter`). For text parameters, you can concatenate as shown above. For date or numeric parameters, ensure the data type matches.
+
+**T-SQL Example (Single Parameter)**
+```m
+let
+      Source = Sql.Database("server", "database", [Query="SELECT * FROM Sales WHERE Country = '" & CountryParameter & "'"])
+in
+      Source
+```
 
 1. When you're done editing the query, select **Done**.
 
@@ -114,6 +128,9 @@ Now that you created the tables with the `Date` fields, you can bind each field 
 1. Repeat these steps if you have other fields to bind to other parameters.
 
    ![Screenshot that shows configuring more parameters.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-14.png)
+
+> [!NOTE]
+> The **Bind to parameter** dropdown is only available for supported DirectQuery sources and specific data types. If you do not see this option in Model view, ensure you are using a supported source and have created the parameter correctly. This feature was introduced in Power BI Desktop in June 2022.
 
 You can now reference this field in a slicer or as a filter:
 
