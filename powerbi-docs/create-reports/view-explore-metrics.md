@@ -15,7 +15,7 @@ LocalizationGroup: Consumers
 # View and explore metrics
 
 > [!WARNING]
-> Metric sets are going away. Starting 25th of October, creating new Metric sets will no longer be possible, but you can access existing Metric sets until November 15, 2025. Please note that Scorecards and all associated datasets or measures will not be impacted by this change.
+> Metric sets are going away. Starting October 25th, creating new Metric sets will no longer be possible, but you can access existing Metric sets until November 15, 2025. Please note that Scorecards and all associated datasets or measures will not be impacted by this change.
 
 Metric sets are collections of metrics and key performance indicators you create and use for greater accuracy, consistency, and reliability in reports and analysis.
 This article guides you through the display area you see when you open a metric set in Fabric or the Power BI service. It also shows you how to use the Explore feature for in-depth analysis of metric set data. If you already have a metric set created in a workspace, the information provided here will familiarize you with the view and the actions you can take within it.
