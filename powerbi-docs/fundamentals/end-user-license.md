@@ -58,17 +58,14 @@ For more info about Premium capacity, see [What is Microsoft Power BI Premium?](
 
 To see your account information, sign in to Power BI in your browser (app.powerbi.com). Select your profile picture in the upper right corner. In the following screenshot, a user named Zalan has a free account and is signed up for a free trial. Other types of licenses are Pro and Premium per-user. To see more details about your account, select **View account** > **Subscriptions.**
 
-![Screenshot of the menu that appears when you select your profile picture.](media/end-user-license/power-bi-account-manager.png)
 :::image type="content" source="media/end-user-license/power-bi-account-manager.png" alt-text="Screenshot of the menu that appears when you select your profile picture.":::
 
 The first user, Pradtanna, has Office 365 E5, which includes a Power BI Pro license.
 
-![Office portal subscriptions tab showing Office 365 E5 subscription](media/end-user-license/power-bi-license-office.png)
 :::image type="content" source="media/end-user-license/power-bi-license-office.png" alt-text="Screenshot of Office portal subscriptions tab showing Office 365 E5 subscription.":::
 
 The second user, Zalan, has a free license. The license name is Fabric (Free). 
 
-![Office portal subscriptions tab](media/end-user-license/power-bi-license-free.png) 
 :::image type="content" source="media/end-user-license/power-bi-license-free.png" alt-text="Screenshot of Office portal subscriptions tab for a free license.":::
 
 ### Microsoft Power BI and Microsoft Fabric
@@ -89,7 +86,6 @@ Apps and app workspaces saved in Premium capacity also have a diamond icon.
 
 In the following image, two apps are stored in Premium capacity.
 
-![Screenshot showing the diamond icon that represents content stored in Premium capacity.](media/end-user-license/power-bi-premium.png)
 :::image type="content" source="media/end-user-license/power-bi-premium.png" alt-text="Screenshot of the diamond icon that represents content stored in Premium capacity.":::
 
 If you don't see any diamond icons, it can mean that no colleague has shared content with you from Premium capacity.
@@ -108,7 +104,6 @@ In the following diagram, the left side shows Pro users who create and share con
 - **Workspace A** isn't in Premium capacity.
 - **Workspace B** is created and saved in Premium capacity. This workspace has a diamond icon.  
 
-    ![Screenshot showing Premium and shared capacity workspaces, and the users that can interact with each.](media/end-user-license/power-bi-dedicated.jpg)
     :::image type="content" source="media/end-user-license/power-bi-dedicated.jpg" alt-text="Screenshot of Premium and shared capacity workspaces, and the users that can interact with each.":::
 
 Power BI Pro creators share and collaborate with other Pro users in either workspace. Power BI Pro users can only share and collaborate with free users by using Workspace B, which is in Premium capacity. The creator assigns roles to collaborators within the workspace. Your role determines what actions you can take. Power BI business users usually get the Viewer role. For more information, see [Permissions in the workspaces](../consumer/end-user-workspaces.md#permissions-in-the-workspaces).
