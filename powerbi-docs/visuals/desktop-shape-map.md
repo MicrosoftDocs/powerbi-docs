@@ -30,7 +30,7 @@ The **Shape map** visual is only available in Power BI Desktop and not in Power 
 
 ## Create a Shape map
 
-You can test the **Shape map** control with the maps that ship with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use custom maps**. **Shape map** visuals are based on maps that you can find on the Internet, create yourself, or convert to the TopoJSON format. See the section below to learn more. Examples of custom maps are: geographical, seating arrangements, floor plans, and others.
+You can test the **Shape map** control with the maps that ship with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use custom maps**. **Shape map** visuals are based on maps that you can find on the Internet, create yourself, or convert to the TopoJSON format. See the following section to learn more. Examples of custom maps are: geographical, seating arrangements, floor plans, and others.
 
 In Power BI Desktop, after **Shape map visual** is enabled, select the **Shape map** icon from the **Visualizations** pane.
 
@@ -84,7 +84,7 @@ If you'd like to experiment with custom maps, download this PBIX file and follow
 
 1. From Power BI Desktop, select **File** > **Open report**.
 
-2. Since states can be divided into multiple districts, we have to use a custom shape map for districts.  By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below uses a custom map named *2000_districts_extra_simplified_CONUS.json* file.
+2. Since states can be divided into multiple districts, we have to use a custom shape map for districts. By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The following image uses a custom map named *2000_districts_extra_simplified_CONUS.json* file.
 
     :::image type="content" source="media/desktop-shape-map/power-bi-custom-maps.png" alt-text="Screenshot of custom map dropdown to choose districts.":::
 
@@ -107,7 +107,7 @@ In this example, we've selected the data for Mexico and pasted it into Desktop u
 You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell just like you can do in Excel. When finished, select **Load**, and the table is added to the data model for Power BI Desktop.
 
 > [!NOTE]
-> When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+> When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. *Don't* use two-letter abbreviations, as some countries or regions may not be properly recognized.
 >
 > If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 
