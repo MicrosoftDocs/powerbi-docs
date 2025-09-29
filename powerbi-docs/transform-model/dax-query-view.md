@@ -282,7 +282,7 @@ You can't add a DAX query as a parameter using ?query= after the URL to link to 
 Considerations to keep in mind:
 
 - 500+ lines in DAX query editor has noticeable lag when typing.
-- Lightbulb quick actions for measures only displays when no DEFINE statement is in the query tab.
+- Lightbulb quick actions for measures only display when no `DEFINE` statement is in the query tab.
 - Command palette shows some commands that don't yet work.
 - Result grid won't show columns and measures with specified format, such as Currency, Whole number with thousands, etc.
 - Setting up the *initial* Git integration *from* the workspace won't include DAX queries saved in published semantic model. Learn more at [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
@@ -292,8 +292,7 @@ Limitations to keep in mind:
 - Maximum of 15MB of data per query. Once 15MB is exceeded, the current row completes but no additional rows are written.
 - Maximum of 1,000,000 values per query. If you query for 20 columns, you can get back max 50,000 rows (1 million divided by 20).
 - Define all measures in this table or model is unavailable when there are more than 500 measures.
-- Running DAX queries in the web has additional limitaitons:
-
+- Running DAX queries in the web has additional limitations:
   - Maximum of 99,999 rows are returned per query.
   - Write permission on the semantic model. Viewers with build permission can use Power BI Desktop to live connect and use DAX query view to run DAX queries.
   - Only available for non-default semantic models. You can use Power BI Desktop to live connect to the default semantic model and use DAX query view to run DAX queries.
