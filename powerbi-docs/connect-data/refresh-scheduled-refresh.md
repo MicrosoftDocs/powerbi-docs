@@ -19,7 +19,11 @@ ai-usage: ai-assisted
 > [!NOTE]
 > Scheduled refresh is automatically paused after a period of inactivity. For details (including what counts as activity and how to resume), see the inactivity note in the [Scheduled refresh](#scheduled-refresh) section.
 
-This article describes the options available for scheduled refresh for the [On-premises data gateway (personal mode)](service-gateway-personal-mode.md) and the [On-premises data gateway](service-gateway-onprem.md). You specify refresh options in the following areas of the Power BI service: **Gateway connection**, **Data source credentials**, and **Schedule refresh**. We'll look at each in turn. For more information about data refresh, including limitations on refresh schedules, see [Data refresh](refresh-data.md#data-refresh).
+This article describes the options available for scheduled refresh for the [On-premises data gateway (personal mode)](service-gateway-personal-mode.md) and the [On-premises data gateway](service-gateway-onprem.md). You specify refresh options in the following areas of the Power BI service: **Gateway connection**, **Data source credentials**, and **Schedule refresh**. We'll look at each in turn. For more information about data refresh, including limitations on refresh schedules, see [Data refresh](refresh-data.md#data-refresh). 
+
+> [!NOTE]
+> You can configure semantic model refresh with **Fabric Data Pipelines** using refresh templates (**Fabric required**). Examples include scheduled monthly refreshes and cascading refresh workflows. Refresh templates offer **additional capabilities beyond the standard Scheduled refresh**, making it easier to manage complex scenarios. See [Refresh templates](data-pipeline-templates.md) for details.
+
 
 To get to the **Schedule refresh** screen:
 
