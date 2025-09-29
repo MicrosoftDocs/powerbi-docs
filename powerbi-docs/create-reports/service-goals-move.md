@@ -15,11 +15,13 @@ ms.date: 12/10/2024
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-In some scenarios, you can hide a column, or put the columns in a different order. You can also reorder the goals in a scorecard, make one goal a subgoal of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make the following changes to optimize the scorecard for your audience:
+In some scenarios, you want to rename, hide or put the columns in a different order. You can also reorder the goals in a scorecard, make one goal a subgoal of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make the following changes to optimize the scorecard for your audience:
 
 - Move goals and scorecards
 - Decide which columns that your scorecard users see
 - Decide the order columns are in
+
+- Change columns' names
 
 :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
 
@@ -52,6 +54,20 @@ To reorder goals on the scorecard, or make them subgoals:
 
 1. You can also re-order columns in this view by dragging them up or down.
 1. Select **Apply**.
+
+## Rename a column
+
+In some scenarios the column names that come with a scorecard aren't right for your organization’s needs. You may want to customize the names to reflect your organization’s terminology.
+
+1. Open the scorecard in edit mode, and select the arrow icon next to the column you want to rename > Column settings.
+
+1. Click a column name to rename it.
+
+1. To reset all column’s names to the default settings (the original names), select Reset to default at the top.
+
+Note: We do not allow blank label names or more than 25 characters.
+
+![User's image](media/service-goals-move/image.png)
 
 ## Move or copy a scorecard (preview)
 
