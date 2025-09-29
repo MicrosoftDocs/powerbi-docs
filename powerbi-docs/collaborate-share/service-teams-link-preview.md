@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/10/2025
+ms.date: 09/29/2025
 ---
 
 # Link preview cards in Microsoft Teams chats and channels
@@ -19,17 +19,17 @@ When you paste a link to a Power BI report, app, dashboard, or workspace into a 
 
 :::image type="content" source="./media/service-teams-link-preview/teams-link-preview.png" alt-text="Screenshot showing a link preview card for a report in a Teams chat window." border="false":::
 
-If a chat participant decides to open the link, the item opens directly in their Power BI app in Teams - there's no need to switch applications. This saves time and helps them stay focused on the task at hand.
+If a chat participant decides to open the link, the preview card opens in a new Teams window instead of directly in the Power BI app in Teams.
 
 > [!IMPORTANT]
 > When you paste a link into the chat, it might take a second or two for the link preview card to appear. **Wait for the card to appear before sending the message!** If you press send before the card appears, it will never be generated.
 
 Typically, the preview card provides the following:
 
-* The name of the linked-to item.
-* The location of the item.
-* An *Open* button that opens the item in the Power BI app in Teams.
-* A *Subscribe* button that navigates the user to the Subscriptions pane in the Power BI app in Teams.
+- The name of the linked-to item.
+- The location of the item.
+- An *Open* button that opens the item in the Power BI app in Teams.
+- A *Subscribe* button that navigates the user to the Subscriptions pane in the Power BI app in Teams.
 
 The preview card is sensitive to the permissions and licenses that the chat participant has. Thus if a chat participant doesn't have permissions to view the item, an *Open to request access* button appears on the card instead of the *Open button*.
 
@@ -48,19 +48,19 @@ The following image shows the link preview card with the *Open Copilot summary i
 
 Link preview cards are generated for the following Power BI items.
 
-* Reports
-* Org apps 
-* Dashboards
-* Workspaces
+- Reports
+- Org apps 
+- Dashboards
+- Workspaces
 
 ## Considerations and limitations
 
-* In chats or channels with more than 60 participants, permissions and licensing of card viewers isn't checked. All participants see the card as it was generated for the person who pasted the link in the chat. This can lead to the following unexpected behaviors:
-    * Chat participants who don't have permissions to view the item may still see the *Open* button, even though they won't be able to open the item when they select the button.
-    * Chat participants who don't have the appropriate license for Copilot might see the *Open Copilot summary in Power BI* button, but won't be able to open the report with the Copilot summary when they select the link.
-* See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
+- In chats or channels with more than 60 participants, permissions and licensing of card viewers isn't checked. All participants see the card as it was generated for the person who pasted the link in the chat. This can lead to the following unexpected behaviors:
+    - Chat participants who don't have permissions to view the item may still see the *Open* button, even though they won't be able to open the item when they select the button.
+    - Chat participants who don't have the appropriate license for Copilot might see the *Open Copilot summary in Power BI* button, but won't be able to open the report with the Copilot summary when they select the link.
+- See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
 
 ## Related content
 
-* [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
-* [Summarize a report in the Copilot pane](/power-bi/create-reports/copilot-pane-summarize-content)
+- [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
+- [Summarize a report in the Copilot pane](/power-bi/create-reports/copilot-pane-summarize-content)
