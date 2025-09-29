@@ -19,7 +19,7 @@ A preview card appears in your Teams chat or channel window when you paste a lin
 
 :::image type="content" source="./media/service-teams-link-preview/teams-link-preview.png" alt-text="Screenshot showing a link preview card for a report in a Teams chat window." border="false":::
 
-If someone in that chat or channel opens the link you pasted, the preview card opens in a new Teams window instead of directly in the Power BI app in Teams.
+If someone in that chat or channel opens the link you pasted, it opens in a new Teams window instead of directly in the Power BI app in Teams.
 
 > [!IMPORTANT]
 > When you paste a link into the chat, it might take a second or two for the link preview card to appear. **Wait for the card to appear before sending the message.** If you press **Send** before the card appears, the preview card isn't generated.
