@@ -6834,6 +6834,11 @@
       "source_path": "powerbi-docs/consumer/mobile/index.yml",
       "redirect_url": "/power-bi/consumer",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/fundamentals/service-self-service-signup-for-power-bi.md",
+      "redirect_url": "/power-bi/fundamentals/service-self-service-signup-purchase-for-power-bi",
+      "redirect_document_id": false
     }
   ]
 }
