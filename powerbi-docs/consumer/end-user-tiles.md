@@ -3,7 +3,7 @@ title: Dashboard tiles in Power BI service for business users
 description: Learn about Power BI dashboard tiles for business users, including tiles that are created from SQL Server Reporting Services (SSRS).
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Dashboard tiles in Power BI

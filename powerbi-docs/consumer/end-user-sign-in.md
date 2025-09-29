@@ -3,7 +3,7 @@ title: Sign in and out of the Power BI service
 description: Learn how to sign in and out of the Power BI service on the web and safely interact with your content.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore

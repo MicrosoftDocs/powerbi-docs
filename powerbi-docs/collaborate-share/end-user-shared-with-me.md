@@ -3,7 +3,7 @@ title: Display the dashboards and reports that others share with me
 description: Learn how to interact with the reports and dashboards that other Power BI users share with you.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: product-power-bi, See content that others have shared with me

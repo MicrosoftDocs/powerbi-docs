@@ -3,7 +3,7 @@ title: Export entire reports to PowerPoint
 description: Learn how to export a Power BI report to PowerPoint.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

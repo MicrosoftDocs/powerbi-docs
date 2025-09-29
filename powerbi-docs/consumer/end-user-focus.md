@@ -3,7 +3,7 @@ title: Focus mode and View mode - how to zoom in to see more detail
 description: Documentation for displaying a Power BI dashboard, dashboard tile, report, or report visual in focus mode or view mode.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore

@@ -3,7 +3,6 @@ title: Share B2B semantic models with external guest users (preview)
 description: See information about the in-place semantic model sharing with external users that Power BI administrators need to be aware of.
 author: JulCsc
 ms.author: juliacawthra
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

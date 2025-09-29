@@ -17,7 +17,7 @@ ms.collection: ce-skilling-ai-copilot
 # Prepare your data for AI - AI instructions
 
 > [!NOTE]
-> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
+> *Authoring* of all prep data for AI features are not available in both the Power BI service and Power BI Desktop. *Consumption* of these features is available everywhere Copilot exists.
 
 Preparing your data for AI in Power BI involves optimizing your semantic model to enhance Copilot's performance. Features like AI instructions let you give context and guidance that improve the relevance and accuracy of AI-driven insights. This guide walks you through the steps to set up and test AI instructions, ensuring your data is ready for AI-powered analysis.
 AI Instructions allow model authors to provide context, business logic, and specific guidance directly on the semantic model. These instructions are used by Copilot to better interpret user questions by incorporating organizational language, terminology, and analytical priorities that Copilot wouldn’t otherwise understand on its own.  
@@ -27,7 +27,7 @@ AI Instructions make Copilot more aligned to your business. They improve the qua
 
 ## Set up AI instructions
 
-1. Select the **Prep data for AI** button located on the Home ribbon in Power BI Desktop.  
+1. Select the **Prep data for AI** button located on the Home ribbon in Power BI Desktop, or on the ribbon on the selected semantic model in the Power BI service.  
 
    :::image type="content" source="media/copilot-prep-data/copilot-prep-data-ai.png" alt-text="Screenshot showing the Prep Data for AI feature in Power BI Desktop." lightbox="media/copilot-prep-data/copilot-prep-data-ai.png":::
 
@@ -44,7 +44,7 @@ AI Instructions make Copilot more aligned to your business. They improve the qua
 
 Once you exit the dialog, your changes are saved to your model. Copilot now uses the AI instructions.  
 
-## Test AI instructions  
+## Test AI instructions in Power BI Desktop
 
 1. Open the Copilot pane in Power BI Desktop.  
 1. Use the skill picker to select the specific Copilot capability you want to test. We recommend choosing **Answers questions about the data**.  
@@ -58,7 +58,7 @@ Once you exit the dialog, your changes are saved to your model. Copilot now uses
 
 ## Consume AI instructions  
 
-Once your report is published to the service, end-users can take advantage of the AI instructions everywhere that model interacts with Copilot.  
+Once your report is published to the service, or changes are saved in the Power BI service, end-users can take advantage of the AI instructions everywhere that model interacts with Copilot.  
 
 > [!NOTE]
 > End-users can't see the AI instructions set on the model.  
