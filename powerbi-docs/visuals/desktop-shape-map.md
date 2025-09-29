@@ -1,5 +1,5 @@
 ---
-title: Use Shape maps in Power BI Desktop (Preview)
+title: Use Shape Maps in Power BI Desktop (Preview)
 description: Create relative comparisons to regions using Shape maps in Power BI Desktop.
 author: miguelmyersMS
 ms.author: miguelmyers
@@ -7,7 +7,7 @@ ms.reviewer: 'sujata'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/17/2023
+ms.date: 09/29/2025
 LocalizationGroup: Transform and shape data
 ---
 
@@ -21,7 +21,7 @@ Create a **Shape map** visual to compare regions on a map using color. Unlike th
 
 :::image type="content" source="media/desktop-shape-map/power-bi-shape-map.png" alt-text="Screenshot of a shape map example.":::
 
-The **Shape map** visual is only available in Power BI Desktop and not in Power BI service or mobile. Since it is in preview, it must be enabled before you can use it. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape map visual** checkbox. You'll need to restart Power BI Desktop after you make the selection.
+The **Shape map** visual is only available in Power BI Desktop and not in Power BI service or mobile. Since it's in preview, it must be enabled before you can use it. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, and then select the **Shape map visual** checkbox. You'll need to restart Power BI Desktop after you make the selection.
 
 :::image type="content" source="media/desktop-shape-map/power-bi-preview-features.png" alt-text="Screenshot of preview features in the Options pane.":::
 
@@ -58,9 +58,9 @@ Take the following steps to create a **Shape map**:
    :::image type="content" source="media/desktop-shape-map/power-bi-map-keys.png" alt-text="Screenshot of map key values used to build the shape map.":::
 
 1. Choose which way to display a three-dimensional object (the earth) as a two-dimensional map using the **Projection** dropdown.
-    - **Equirectangular**: cylindrical projection that converts the globe into a grid with each rectangular cell having the same size, shape, and area.
-    - **Mercator**: cylindrical projection with the equator depicted as the line of tangency. Polar areas are more distorted than Equirectangular projections.
-    - **Orthographic**: a projection from an infinite point, as if from deep space. It gives the illusion of a three-dimensional globe  
+    - **Equirectangular**: Cylindrical projection that converts the globe into a grid with each rectangular cell having the same size, shape, and area.
+    - **Mercator**: Cylindrical projection with the equator depicted as the line of tangency. Polar areas are more distorted than Equirectangular projections.
+    - **Orthographic**: A projection from an infinite point, as if from deep space. It gives the illusion of a three-dimensional globe  
 
     For more detailed information, see [ESRI's map projections article](http://downloads2.esri.com/support/documentation/ao_/710Understanding_Map_Projections.pdf)
 
@@ -70,7 +70,7 @@ Take the following steps to create a **Shape map**:
 
 You can use custom maps with **Shape map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](https://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
 
-To use a **TopoJSON** map file, add a Shape map visual to your report. Under **Map settings** in the **Format** pane, select **Custom map** from the dropdown, then choose **Add a map type**.
+To use a **TopoJSON** map file, add a Shape map visual to your report. Under **Map settings** in the **Format** pane, select **Custom map** from the dropdown, and then choose **Add a map type**.
 
 :::image type="content" source="media/desktop-shape-map/power-bi-add-custom.png" alt-text="Screenshot of Format pane to select Add map.":::
 
@@ -90,13 +90,13 @@ If you'd like to experiment with custom maps, download this PBIX file and follow
 
     :::image type="content" source="media/desktop-shape-map/shape-map-7a.png" alt-text="Screenshot of custom shape map with Texas highlighted.":::
 
-You can do interesting things with the individual state maps as well, and show more detail based on the districts it contains.
+You can do interesting things with the individual state maps as well and show more detail based on the districts it contains.
 
 :::image type="content" source="media/desktop-shape-map/shape-map-7b.png" alt-text="Screenshot of Texas shape map.":::
 
 ## Getting map data
 
-To quickly get data into a model to test **Shape map**, you can copy one of the tables at the end of this article, then select **Enter data** from the **Home** ribbon.
+To quickly get data into a model to test **Shape map**, you can copy one of the tables at the end of this article, and then select **Enter data** from the **Home** ribbon.
 
 :::image type="content" source="media/desktop-shape-map/shape-map-4-new.png" alt-text="Screenshot of button on menu bar to enter data.":::
 
@@ -104,7 +104,7 @@ In this example, we've selected the data for Mexico and pasted it into Desktop u
 
 :::image type="content" source="media/desktop-shape-map/power-bi-create-table.png" alt-text="Screenshot of data entered using copy and paste. ":::
 
-You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select **Load** and the table is added to the data model for Power BI Desktop.
+You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell just like you can do in Excel. When finished, select **Load**, and the table is added to the data model for Power BI Desktop.
 
 > [!NOTE]
 > When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
@@ -115,7 +115,7 @@ You can enter a new column simply by typing a new column name (in the blank colu
 
 There are a few considerations and requirements for this Preview release of **Shape Map**:
 
-- The **Shape map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape map visual** checkbox.
+- The **Shape map** visual is in Preview and must be enabled in Power BI Desktop. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, and then select the **Shape map visual** checkbox.
 - Currently, you must also have the **Color saturation** bucket set in order for the **Legend** classification to work properly.
 - The **Shape map** visual will plot up to a maximum of 1,500 data points.
 
