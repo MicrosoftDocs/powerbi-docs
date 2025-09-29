@@ -64,16 +64,16 @@ The following example passes a single value through to a parameter dynamically.
 
    [![Screenshot that shows referencing the parameter.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-06.png)](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-06.png#lightbox)
 
-> [!TIP]
-> To reference a parameter in M code, use its name directly (for example, `CountryParameter`). For text parameters, you can concatenate as shown above. For date or numeric parameters, ensure the data type matches.
-
-**T-SQL Example (Single Parameter)**
-```m
-let
-      Source = Sql.Database("server", "database", [Query="SELECT * FROM Sales WHERE Country = '" & CountryParameter & "'"])
-in
-      Source
-```
+   > [!TIP]
+   > To reference a parameter in M code, use its name directly (for example, `CountryParameter`). For text parameters, you can concatenate as shown above. For date or numeric parameters, ensure the data type matches.
+   
+   **T-SQL Example (Single Parameter)**
+   ```m
+   let
+         Source = Sql.Database("server", "database", [Query="SELECT * FROM Sales WHERE Country = '" & CountryParameter & "'"])
+   in
+         Source
+   ```
 
 1. When you're done editing the query, select **Done**.
 

@@ -58,11 +58,11 @@ For this quick three-step guide, let's use the first option:
 
 Congratulations! You've successfully created a (new) card visual with Power BI Desktop.
 
-(power-bi-visualization-card-visual-new-format-settings.md) and controls for you to use as reference. Also, take time to familiarize yourself with the [Considerations and limitations](power-bi-visualization-card-visual-considerations.md) for (new) card visuals.
+Take the time to familiarize yourself with the [Considerations and limitations](power-bi-visualization-card-visual-considerations.md) for (new) card visuals.
 
 ## Related content
 
-* [(new) Card visual considerations and limitations](power-bi-visualization-card-visual-considerations.md)
-* [(new) Card visual format settings](power-bi-visualization-card-visual-new-format-settings.md) 
+* [Card visual considerations and limitations](power-bi-visualization-card-visual-considerations.md)
+* [Card visual format settings](power-bi-visualization-card-visual-new-format-settings.md) 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 * [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

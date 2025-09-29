@@ -25,14 +25,14 @@ Before you can access the semantic models shared in-place, you need to enable th
 1. Select the checkbox next to the **Connect to external semantic models shared with me** option. 
 
 > [!NOTE]
-> As of July 2025, the **DirectQuery for PBI semantic models and AS** preview feature might not be available in all Power BI Desktop versions. If you do not see this option, check for updates or review the official release notes for feature availability.
+> As of July 2025, the **DirectQuery for PBI semantic models and AS** preview feature might not be available in all Power BI Desktop versions. If you don't see this option, check for updates or review the official release notes for feature availability.
 
 ## Access shared semantic models
 
 Once enabled on provider side, consumers can see the semantic models in the OneLake catalog in Power BI Desktop, on a tab called *External data*. Use the following instructions to access and build reports with a semantic model that a data provider shared to your tenant:
 
 > [!TIP]
-> The steps and UI for accessing external semantic models may change between Power BI Desktop versions. If you do not see the described options, ensure you are using the latest version and check the official documentation for current instructions.
+> The steps and UI for accessing external semantic models may change between Power BI Desktop versions. If you don't see the described options, ensure you're using the latest version and check the official documentation for current instructions.
 
 > [!IMPORTANT]
 > If external sharing is ever disabled by the provider, reports built on top of the external semantic model will lose functionality within a few minutes and display an error message.
@@ -48,7 +48,7 @@ Once enabled on provider side, consumers can see the semantic models in the OneL
 
 ## Publish reports made from shared semantic models
 
-1. After publishing a *.pbix* file with external data reference, consumers can do the following: 
+- After publishing a *.pbix* file with external data reference, consumers can do the following: 
     - Build further reports on top of the existing report
     - Share any content built on top with others in their organization
 
