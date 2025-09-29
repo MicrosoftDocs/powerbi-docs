@@ -13,19 +13,17 @@ ai-usage: ai-assisted
 ---
 # Power BI self-service licensing and trial FAQ
 
-This FAQ helps you quickly diagnose and resolve problems when trying to sign yourself up for the Power BI service, start (or extend) a trial, or purchase/upgrade an individual per-user license (Fabric (Free), Power BI Pro, or Power BI Premium Per User). It focuses on the most common blockers in self-service flows: organizational policies that disable trials or purchases, email/tenant validation behaviors, license capability differences, Premium (capacity) versus PPU workspace access, and trial lifecycle changes.
+This FAQ helps you quickly diagnose and resolve problems when trying to sign yourself up for the Power BI service, start (or extend) a trial, or purchase/upgrade an individual per-user license (Fabric [Free], Power BI Pro, or Power BI Premium Per User [PPU]). It focuses on the most common blockers in self-service flows: organizational policies that disable trials or purchases, email/tenant validation behaviors, license capability differences, Premium (capacity) versus PPU workspace access, and trial lifecycle changes.
 
 ## What do I do if I see a message that self-service is disabled?
 
 When you attempt a self-service sign-up, trial, or purchase for a Power BI license, it fails with a message that self-service is disabled. Some organizations block self-service sign-up, trials, and purchases so IT can centrally manage all licenses, including free ones.
 
-:::image type="content" source="media/service-self-service-purchase-help/power-bi-self-service-disabled-message.png" alt-text="Screenshot of the getting started dialog showing the message that the organization doesn't allow users to purchase Power BI Pro.":::
-
 To finish your purchase, contact your IT department or help desk and ask them to [follow these instructions to provide you with a license.](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)
 
 ## What do I do if my license-request process looks different than what is suggested in this documentation?
 
-Some organizations set up their own process for requesting trials, upgrades, and licenses. Follow the steps your organization suggests to request a license.
+Some organizations set up their own process for requesting trials, upgrades, and licenses. Follow the steps your organization suggests when requesting a license.
 
 ## How do I use self-service if I'm the administrator of a tenant?
 
@@ -37,35 +35,35 @@ Power BI and Fabric offer several different trials. Some trials can't be extende
 
 ## How do I find out which license I already have?
 
-Open the Power BI service (app.powerbi.com) and select your profile picture (account manager) in the upper-right corner to view your current license type. For more details select **View account** > **Subscriptions.**
+To view your current license type, open the Power BI service (app.powerbi.com) and select your profile picture (account manager) in the upper-right corner. For more detail, select **View account** > **Subscriptions.**
 
-## Why don’t I see an option to start a trial or upgrade?
+## Why don't I see an option to start a trial or upgrade?
 
-Your organization might have disabled self-service trials or purchases, or you already hold an active paid or trial license. When self-service is disabled only an administrator can assign or purchase licenses for you.
+Your organization might disable self-service trials or purchases, or you already hold an active paid or trial license. When self-service is disabled, only an administrator can assign or purchase licenses for you.
 
-## Why can’t I use a personal email (gmail, hotmail, outlook.com) to sign up?
+## Why can't I use a personal email (Gmail, Hotmail, Outlook.com) to sign up?
 
 Self-service sign-up requires a work or school account. Consumer email domains aren't accepted for Power BI service sign-up.
 
 ## Why did clicking a shared Power BI link start my sign-up?
 
-Selecting a shared dashboard, report, or app link for the first time initiates license assignment if self-service is enabled. The service evaluates your email and assigns an appropriate license based on your organization’s settings.
+Selecting a shared dashboard, report, or app link for the first time initiates license assignment if self-service is enabled. The service evaluates your email and assigns an appropriate license based on your organization's settings.
 
 ## Why was I redirected to create a new tenant during sign-up?
 
-If your organization hasn’t purchased Power BI and you enter a work or school email not already enabled for Power BI, the email validation process can route you to an alternate sign-up flow that provisions an account (and sometimes a new tenant).
+If your organization hasn't purchased Power BI and you enter a work or school email not already enabled for Power BI, the email validation process can route you to an alternate sign-up flow that provisions an account (and sometimes a new tenant).
 
 ## What does a Fabric (Free) license allow me to do?
 
-You can create and view content for yourself in **My workspace** and consume content shared from a workspace in Premium (Fabric F64 or greater) capacity. You can’t share your own content or collaborate in non-Premium workspaces.
+You can create and view content for yourself in **My workspace** and consume content shared from a workspace in Premium (Fabric F64 or greater) capacity. You can't share your own content or collaborate in non-Premium workspaces.
 
-## Why can’t I share my report or publish to another workspace?
+## Why can't I share my report or publish to another workspace?
 
-Sharing and publishing to app or shared workspaces require a paid (Pro or PPU) license unless you are only consuming content in a Premium capacity workspace created and shared by someone with a paid license.
+Sharing and publishing to app or shared workspaces require a paid (Pro or PPU) license unless you're only consuming content in a Premium capacity workspace created and shared by someone with a paid license.
 
 ## Why do I still see Upgrade prompts after signing in?
 
-You’re attempting a feature that requires a paid license (Pro or PPU) while signed in with only a Fabric (Free) license or a license without that capability.
+You're attempting a feature that requires a paid license (Pro or PPU) while signed in with only a Fabric (Free) license or a license without that capability.
 
 ## What happens when my trial ends?
 
@@ -73,7 +71,7 @@ Your license reverts to the previous state (for example, back to Fabric (Free) o
 
 ## Can I extend a trial?
 
-Some trials can’t be extended. When a non-extendable trial expires you must purchase or be assigned a paid license to continue using paid features.
+Some trials can't be extended. When a nonextendable trial expires, you must purchase or be assigned a paid license to continue using paid features.
 
 ## How can I get Premium Per User–like capabilities without immediately purchasing PPU?
 
@@ -81,7 +79,7 @@ Start a Fabric capacity trial. The trial capacity includes a license with capabi
 
 ## Why am I asked for a credit card when trying another path to sign up?
 
-Signing up through a Microsoft 365 (Office 365 E5) trial to obtain an *onmicrosoft* account and tenant requires a credit card. Cancel before the trial ends if you don’t intend to purchase.
+Signing up through a Microsoft 365 (Office 365 E5) trial to obtain an *onmicrosoft* account and tenant requires a credit card. Cancel before the trial ends if you don't intend to purchase.
 
 ## How do I know if a workspace is in Premium capacity?
 
@@ -89,11 +87,11 @@ In the **Workspaces** list, a diamond icon marks a workspace (and associated app
 
 ## Why are free users still prompted to upgrade when viewing shared content?
 
-Either the content isn’t stored in a Premium (Fabric F64 or greater) capacity workspace or they haven’t been granted a workspace role or app access. Assign the workspace to Premium capacity and grant appropriate permissions.
+Either the content isn't stored in a Premium (Fabric F64 or greater) capacity workspace or they haven't been granted a workspace role or app access. Assign the workspace to Premium capacity and grant appropriate permissions.
 
 ## Can I have more than one license at the same time?
 
-Yes. It’s possible to hold multiple license types. The service provides capabilities equal to the most permissive applicable license you have.
+Yes. It's possible to hold multiple license types. The service provides capabilities equal to the most permissive applicable license you have.
 
 ## Why does my Fabric capacity trial show but my license still says Fabric (Free)?
 
@@ -101,13 +99,13 @@ A Fabric capacity trial grants elevated capabilities similar to PPU while active
 
 ## Why did I lose access to editing or sharing features?
 
-Your trial or paid license may have expired or been removed, causing a reversion to Fabric (Free). You need a Pro or PPU license (or an active Fabric capacity trial) to regain those capabilities.
+Your trial or paid license might have expired or been removed, causing a reversion to Fabric (Free). You need a Pro or PPU license (or an active Fabric capacity trial) to regain those capabilities.
 
 ## How can I let colleagues with free licenses view my app or reports?
 
 Store and share the content in a workspace assigned to Premium (Fabric F64 or greater) capacity and grant them access (workspace role or app audience). Free users can then consume the content.
 
-## Why don’t I see Buy now in my account manager?
+## Why don't I see Buy now in my account manager?
 
 Your organization might have disabled self-service purchase or you already have an equal or higher paid license, removing the need for that option.
 
@@ -125,13 +123,13 @@ If the workspace is PPU, you need a PPU license (unless the workspace is in Prem
 
 ## Why did I receive an upgrade message when accessing a PPU workspace even though I have Pro?
 
-PPU workspaces require all participants (except when moved to Premium capacity) to have PPU licenses. A Pro license alone doesn’t grant access to PPU-only features.
+PPU workspaces require all participants (except when moved to Premium capacity) to have PPU licenses. A Pro license alone doesn't grant access to PPU-only features.
 
-## Why doesn’t my free license expire?
+## Why doesn't my free license expire?
 
 Fabric (Free) licenses obtained through self-service remain available unless canceled or removed by an administrator.
 
-## Why did a colleague get a paid trial prompt but I didn’t?
+## Why did a colleague get a paid trial prompt but I didn't?
 
 Trial eligibility and prompts depend on your existing license state and whether administrators enabled self-service trials for your account.
 
