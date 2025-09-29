@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/25/2023
+ms.date: 09/29/2025
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
@@ -18,6 +18,14 @@ LocalizationGroup: Visualizations
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 [!INCLUDE [note-azure-maps](../includes/note-azure-maps.md)]
+
+> [!IMPORTANT]
+> **Bing Maps visual deprecation:**  
+> Beginning with the October 2025 release, the Bing Maps visual icon will be removed from the default visuals list in the Power BI visualization pane. Users will no longer be able to create new Bing Maps visuals. Existing Bing Maps visuals will continue to work for approximately six months after this change.
+>
+> This change does **not** impact customers whose Power BI tenant’s home geography region is China, South Korea, or Sovereign Cloud, or any region where Azure Maps is not yet available. The restriction is based on the tenant’s home geography, not the user’s physical location.
+>
+> To learn about Azure Maps, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started).
 
 A filled, or _choropleth_, map uses shading, tinting, or patterns to display how a value differs in proportion across a geography or region. You can quickly display relative differences with shading that ranges from light (less frequent or lower) to dark (more frequent or greater).
 
