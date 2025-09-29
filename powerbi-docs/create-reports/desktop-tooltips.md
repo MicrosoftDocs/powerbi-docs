@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 11/25/2024
+ms.date: 09/29/2025
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn how to create hover-based tooltips for visual reports.
 ---
@@ -15,6 +15,9 @@ LocalizationGroup: Create reports
 # Create tooltips based on report pages
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+> [!NOTE]
+> The location and availability of tooltip options may change between Power BI Desktop versions. If you do not see the options described, ensure you are using the latest version and check the official documentation for UI changes.
 
 You can create visually rich **report tooltips** that appear when you hover over visuals, based on report pages you create in **Power BI Desktop** and the **Power BI service**. By creating a report page that serves as your tooltip, your custom tooltips can include visuals, images, and any other collection of items you create in the report page.
 Just getting started modifying tooltips? Check out [Customize tooltips](desktop-custom-tooltips.md).
@@ -65,6 +68,9 @@ There are more steps to complete before your tooltip report page is ready to wor
 ## Configure your tooltip report page
 
 Once you have the tooltip report page created, you need to configure the page in order to register it as a tooltip, and to ensure it appears in over the right visuals.
+
+> [!TIP]
+> If your tooltip page appears blank or does not populate, make sure you have added fields to the Tooltip fields bucket and that your visuals reference those fields. The tooltip page must contain visuals and be set as a tooltip in Page Information.
 
 To begin with, you need to turn the **Tooltip** slider to **On**, in the **Page Information** card, to make the page a tooltip.
 
@@ -121,6 +127,9 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 ## Considerations and limitations
 
 There are a few considerations and limitations for **tooltips** to keep in mind.
+
+> [!NOTE]
+> Tooltip pages are supported in the Power BI mobile app for iPad, but some features or formatting may differ from Power BI Desktop.
 
 * Button visuals also support tooltips.
 * Dashboards don't support page tooltips.
