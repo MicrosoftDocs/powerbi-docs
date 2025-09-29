@@ -39,7 +39,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 When you author dataflows, be mindful of the following considerations:
 
 - Authoring in dataflows is done in the Power Query Online (PQO) environment; see the limitations described in [Power Query limits](/power-query/power-query-online-limits).
-Because dataflows authoring is done in the  Power Query Online (PQO) environment, updates performed on the dataflows workload configurations only affects refreshes, and don't have an effect on the authoring experience.
+Because dataflows authoring is done in the  Power Query Online (PQO) environment, updates performed on the dataflows workload configurations only affect refreshes and have no effect on the authoring experience.
 - Dataflows can only be modified by their owners.
 - Dataflows aren't available in *My Workspace*.
 - Dataflows using gateway data sources don't support multiple credentials for the same data source.
@@ -97,7 +97,7 @@ Dataflows that exist in Premium have the following considerations and limitation
 
 - While using the Compute engine, there's an approximate 10% to 20% initial increase in time for data ingestion.
   - This only applied to the first dataflow that is on the compute engine, and reads data from the data source.
-  - Subsequent dataflows that use the source dataflow doesn't incur the same penalty.
+  - Subsequent dataflows that use the source dataflow don't incur the same penalty.
 - Only certain operations make use of the compute engine, and only when used through a linked table or as a computed table. A full list of operations is available in [this blog post](http://petcu40.blogspot.com/2019/06/m-folding-in-enhanced-engine-of-power.html).
 
 **Capacity management:**
