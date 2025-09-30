@@ -7,7 +7,7 @@ ms.reviewer:  juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: concept-article
-ms.date: 08/12/2025
+ms.date: 09/29/2025
 ms.custom: licensing support
 LocalizationGroup: consumers
 #customer intent: As a Fabric user I want to understand feature availability for the Power BI service.
@@ -28,7 +28,7 @@ There are many different ways designers can share content. But this article is f
 
 ![Power BI navigation pane](media/end-user-features/power-bi-shared.png)
 
-In the [previous article](end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your [roles](../collaborate-share/service-roles-new-workspaces.md) and [permissions](../connect-data/service-datasets-permissions.md), and where content is stored.
+In [Licenses for consumers](end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your [roles](../collaborate-share/service-roles-new-workspaces.md) and [permissions](../connect-data/service-datasets-permissions.md), and where content is stored.
 
 This article lists which features in the Power BI service are available to users with Free licenses. 
 
@@ -100,7 +100,7 @@ The second column represents a free user working with content in a workspace tha
  |Create new app |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |AppSource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Organization store: download and open|![orange x](media/end-user-features/orange-x.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
-| Reshare an app | ![orange x](media/end-user-features/orange-x.png)  | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
+| Reshare an app | ![orange x](media/end-user-features/orange-x.png)  | ![orange x](media/end-user-features/orange-x.png)  |
  |**Workspaces in Premium capacity**
 | Create, edit, or delete workspace or content  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Add endorsements | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
@@ -111,7 +111,7 @@ The second column represents a free user working with content in a workspace tha
 | Add alerts to tiles  |  ![green myw](media/end-user-features/green-mwo.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 | View and respond to comments from others: add your own comments  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*  |
 | Save a copy | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
-|Copy visual as an image? |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
+|Copy visual as an image* |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*|
 |Create, edit, update, delete | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
 |Export tile to .csv |![green myw](media/end-user-features/green-mwo.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
 |Favorite |![green myw](media/end-user-features/green-mwo.png)| ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
@@ -148,7 +148,7 @@ The second column represents a free user working with content in a workspace tha
 | View and respond to comments from others: add new comments  | ![orange x](media/end-user-features/orange-x.png)|![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 |Change display dimensions   | ![green myw](media/end-user-features/green-mwo.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  | 
 | Save a copy |![orange x](media/end-user-features/orange-x.png) |![orange x](media/end-user-features/orange-x.png)  
-|Copy visual as an image* |
+|Copy visual as an image* |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*|
 | Cross-highlight and cross-filter report visuals   |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 |  Drill   |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 | Drillthrough |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |

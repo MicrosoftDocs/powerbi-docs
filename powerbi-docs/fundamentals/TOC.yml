@@ -21,12 +21,10 @@
       items:
         - name: Sign up or purchase Power BI as an individual
           href: service-self-service-signup-purchase-for-power-bi.md
+        - name: Self-service licensing and trial FAQ
+          href: service-self-service-sign-up-help.md
         - name: Features by license type
           href: service-features-license-type.md
-        - name: Get help purchasing or signing up for Power BI
-          href: service-self-service-sign-up-help.md
-        - name: Sign up or purchase a license for Power BI
-          href: service-self-service-signup-for-power-bi.md
         - name: Licenses and subscriptions for business users
           href: end-user-license.md
     - name: Security
@@ -45,8 +43,6 @@
           href: desktop-send-smile-privacy-statement.md
         - name: Power BI Desktop diagnostics
           href: desktop-diagnostics.md
-        - name: Ten tips for getting help
-          href: ../support/service-tips-for-finding-help.md
         - name: Supported languages and countries/regions
           href: supported-languages-countries-regions.md
         - name: Supported browsers
