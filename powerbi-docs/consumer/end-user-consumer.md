@@ -49,7 +49,7 @@ Because you're working with content that is shared with you, at least one of the
 > [!NOTE]
 > Users with PPU capacity subscriptions can only share content with other users who also have a PPU license.
 
-For more information about licenses and subscriptions, see [Which license do I have?](end-user-license.md)
+For more information about licenses and subscriptions, see [Which license do I have?](../fundamentals/end-user-license.md)
 
 ## Safely interact with content
 

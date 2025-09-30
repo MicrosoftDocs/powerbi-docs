@@ -29,7 +29,7 @@ There's a unique type of app called a [template app](../connect-data/service-tem
 
 Depending on your role, you might be a designer who creates apps for your own use or to share with colleagues. Or, you might be a business user who receives and downloads apps created by others. The resources in this article are for business users.
 
-Viewing and opening an app requires certain permissions. The recipient must have a Power BI Pro or Premium Per User (PPU) license, or the app must be shared with the recipient in a type of cloud storage called **Premium capacity**. To learn more about licenses and Premium capacity, see [Licensing for the Power BI service](end-user-license.md).
+Viewing and opening an app requires certain permissions. The recipient must have a Power BI Pro or Premium Per User (PPU) license, or the app must be shared with the recipient in a type of cloud storage called **Premium capacity**. To learn more about licenses and Premium capacity, see [Licensing for the Power BI service](../fundamentals/end-user-license.md).
 
 ## Advantages of apps
 
