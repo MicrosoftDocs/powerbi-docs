@@ -78,7 +78,7 @@ For more information, see [Combo charts in Power BI](power-bi-visualization-comb
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition.png" alt-text="Screenshot of a Decomposition tree." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition-expanded.png":::
 
-The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It's also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
+The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It's also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for exploration and conducting root cause analysis.
 
 ## Doughnut charts
 
@@ -225,7 +225,7 @@ For more information, see [Add a Power Apps visual to your report](power-bi-visu
 
 The Q&A visual provides users with a text box to query data in Power BI reports. Users can use natural language to query data, and the Q&A visual interprets the query and provides an appropriate visualization.
 
-For example, if a user asks a question like "What were the product sales in 2019?" then the Q&A visual queries the relevant data and create an appropriate visualization to display the results. This visualization can be in many different formats, such as a chart or a table.
+For example, if a user asks a question like "What were the product sales in 2019?" then the Q&A visual queries the relevant data and creates an appropriate visualization to display the results. This visualization can be in many different formats, such as a chart or a table.
 
 >[!TIP]
 >Similar to the [Q&A experience on dashboards](../create-reports/power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language.
@@ -306,7 +306,7 @@ For more information, see [Create smart narrative summaries](power-bi-visualizat
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-image.png" alt-text="Screenshot of a Standalone image visual.":::
 
-A standalone image is a graphic that's added to a report or dashboard.
+A standalone image is a graphic that is added to a report or dashboard.
 
 For more information, see [Add an image widget to a dashboard](../create-reports/service-dashboard-add-widget.md).
 
