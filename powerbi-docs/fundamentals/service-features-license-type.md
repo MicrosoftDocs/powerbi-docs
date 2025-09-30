@@ -26,15 +26,11 @@ Power BI service features vary by license. There are three per user license type
 
 There are several ways to begin using the Power BI service and Fabric.
 
-- If you already have a subscription to Microsoft 365, [check to see if that subscriptions includes a Power BI and Fabric license](../consumer/end-user-license.md).
-
-- If your [administrator already purchased an organizational subscription](../enterprise/service-admin-manage-licenses.md), check for a license by typing app.powerbi.com into your browser.
-
-- If you're not ready to buy, start with a [Trial of a Fabric capacity](/fabric/get-started/fabric-trial). The trial capacity includes a license similar to PPU.
-
-- If you're signing up as an individual within an organization, and your administrator didn't assign you a license, [use self-service to try or buy](service-self-service-signup-purchase-for-power-bi.md) the Power BI service or Fabric.
-
-- If you don't already have Microsoft 365, and don't already have a Power BI license, [Sign up for a new Microsoft 365 trial of Office 365 E5](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
+- If you already have a Microsoft 365 subscription, [check whether that subscription includes a Power BI and Fabric license](end-user-license.md).
+- If your [administrator purchased an organizational subscription](../enterprise/service-admin-manage-licenses.md), go to app.powerbi.com to check your license.
+- If you're not ready to buy, start a [Fabric capacity trial](/fabric/get-started/fabric-trial). The trial capacity includes a license similar to PPU.
+- If you're signing up as an individual in an organization and your administrator didn't assign you a license, [use self-service signup to try or buy](service-self-service-signup-purchase-for-power-bi.md) Power BI or Fabric.
+- If you don't have Microsoft 365 or a Power BI license, [sign up for a Microsoft 365 Office 365 E5 trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
 
 ## Power BI service licenses
 
@@ -68,7 +64,7 @@ Learn more about Power BI Premium in [What is Power BI Premium?](../enterprise/s
 
 For a comparison of Power BI Pro and Power BI Premium, see the *Power BI features comparison* section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
-To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](../consumer/end-user-license.md).
+To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](end-user-license.md).
 
 ## Related content
 

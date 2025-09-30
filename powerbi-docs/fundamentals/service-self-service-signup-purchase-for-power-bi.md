@@ -60,7 +60,7 @@ You may not be able to sign up individually if:
 
 ## Look up your current license or trial
 
-You might already have a Power BI license or trial. To look up your license type, see [licenses and trials](../consumer/end-user-license.md#find-out-which-licenses-you-have).
+You might already have a Power BI license or trial. To look up your license type, see [licenses and trials](end-user-license.md#find-out-which-licenses-you-have).
 
 For example, your organization might provide you with Microsoft 365. Some versions of Office 365 include Power BI Pro licenses.
 
@@ -78,7 +78,7 @@ If your organization purchased a Power BI subscription and self-service is enabl
 
     :::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-email.png" alt-text="Screenshot of an email that contains a Power BI link.":::
 
-All of these actions sign you up for a per-user license and open the Power BI service in a browser. The type of license assigned to you depends on your organization's subscription and self-service settings. To learn more about the types of licenses, see [Power BI license types](../consumer/end-user-license.md).
+All of these actions sign you up for a per-user license and open the Power BI service in a browser. The type of license assigned to you depends on your organization's subscription and self-service settings. To learn more about the types of licenses, see [Power BI license types](end-user-license.md).
 
 If the Power BI service doesn't open or if you receive an error message, your organization might not have a Power BI subscription **or self-service might be disabled**. See [Email validation](#email-validation) and, if self-service is disabled, contact your administrator to request a license.
 

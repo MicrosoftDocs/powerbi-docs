@@ -28,7 +28,7 @@ There are many different ways designers can share content. But this article is f
 
 ![Power BI navigation pane](media/end-user-features/power-bi-shared.png)
 
-In [Licenses for consumers](end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your [roles](../collaborate-share/service-roles-new-workspaces.md) and [permissions](../connect-data/service-datasets-permissions.md), and where content is stored.
+In [Licenses for consumers](../fundamentals/end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your [roles](../collaborate-share/service-roles-new-workspaces.md) and [permissions](../connect-data/service-datasets-permissions.md), and where content is stored.
 
 This article lists which features in the Power BI service are available to users with Free licenses. 
 
@@ -37,7 +37,7 @@ This article lists which features in the Power BI service are available to users
 
 ## Quick review of terminology
 
-Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Basics of the Power BI service](../fundamentals/service-basic-concepts.md).
+Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](../fundamentals/end-user-license.md) or [Basics of the Power BI service](../fundamentals/service-basic-concepts.md).
 
 ### Workspaces and roles
 
