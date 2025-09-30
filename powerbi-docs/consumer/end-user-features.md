@@ -18,13 +18,13 @@ LocalizationGroup: consumers
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a Power BI service user with a free license, you explore content (such as reports, apps, scorecards, dashboards, and more) to make business decisions. That content is created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. To share it with free users, designers publish that content to a workspace on a qualifying capacity (Fabric F64+ or Premium (P)). A qualifying capacity (Fabric F64+ or Premium P) enables free users to view content shared with them. Sometimes, designers share content by sending you links to content such as a Power BI app [Apps in the Power BI service](end-user-apps.md), and sometimes the [content automatically installs](end-user-apps.md) and appears in Power BI under **Apps** or **Browse** > **Shared with me**.
+As a Power BI service user with a free license, you explore content (such as reports, apps, scorecards, dashboards, and more) to make business decisions. That content is created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. To share it with free users, designers publish that content to a workspace on a qualifying capacity (Fabric F64+ or Premium). A qualifying capacity (Fabric F64+ or Premium P) enables free users to view content shared with them. Sometimes, designers share content by sending you links to content such as a Power BI app [Apps in the Power BI service](end-user-apps.md), and sometimes the [content automatically installs](end-user-apps.md) and appears in Power BI under **Apps** or **Browse** > **Shared with me**.
 
 There are many different ways designers can share content. But this article is for Power BI users with a free license, and therefore only describes how "free users" receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
 > [!TIP]
 > - For a list of Fabric features by SKU type, see [Microsoft Fabric features parity](/fabric/enterprise/fabric-features).
-> 
+>
 > - For a list of features that apply to all the Power BI Premium licenses, including Premium Per User (PPU) and Power BI Embedded, see [Power BI Premium features](/fabric/enterprise/powerbi/service-premium-features).
 
 ![Power BI navigation pane](media/end-user-features/power-bi-shared.png)
@@ -34,7 +34,7 @@ In [Licenses for consumers](end-user-license.md), you learned that what you can 
 This article lists which features in the Power BI service are available to users with Free licenses. 
 
 > [!NOTE]
-> In sovereign cloud environments with capacity (Fabric F64+ or Premium (P)), all users can view content without needing an assigned license. Behavior can vary by sovereign cloud region; consult regional documentation for any exceptions (see footnote 3).  
+> In sovereign cloud environments with capacity (Fabric F64+ or Premium), all users can view content without needing an assigned license. Behavior can vary by sovereign cloud region; consult regional documentation for any exceptions (see ‡ note below the feature table).  
 
 ## Quick review of terminology
 
@@ -46,13 +46,13 @@ Collaborating and sharing in workspaces requires that workspace owners, who have
 
 Roles determine who can do what in that workspace. Free users are assigned the **Viewer** role. Being assigned any other role requires that a free user upgrade to Pro or PPU. 
 
-### Capacity (Fabric F64+ / Premium (P))
+### Capacity: Fabric F64+ and Premium
 
-When an organization has a qualifying capacity subscription (Fabric F64+ or Premium (P)), admins and Pro/PPU users can assign workspaces to that capacity. Content in workspaces hosted on a qualifying capacity can be accessed by users with any Power BI license (including free) as long as they have appropriate permissions.
+When an organization has a qualifying capacity subscription (Fabric F64+ or Premium), admins and Pro/PPU users can assign workspaces to that capacity. Content in workspaces hosted on a qualifying capacity can be accessed by users with any Power BI license (including free) as long as they have appropriate permissions.
 
 ### Licenses
 
-Each Power BI service user has at least one of the following: a free license, a Power BI Pro license, or a Premium Per User (PPU) license. As long as your colleagues use capacity workspaces (Fabric F64+ or Premium P) to share content, free users can view and interact with that content.
+Each Power BI service user has at least one of the following: a free license, a Power BI Pro license, or a Premium Per User (PPU) license. As long as your colleagues use capacity workspaces (Fabric F64+ or Premium) to share content, free users can view and interact with that content.
 
 To find out what type of license is assigned to your account, select your profile picture from the page header in [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you can share content with other users. When **Free** is shown, you can only create content in My Workspace and consume content that is hosted in a Premium workspace. Select **View account** to see more details about your account.
 
@@ -60,7 +60,7 @@ To find out what type of license is assigned to your account, select your profil
 
 ## Power BI feature list for users with a free license
 
-The following chart identifies which tasks can be performed by a user with a **free** license interacting with content in their own **My workspace** or in a workspace on a capacity (Fabric F64+ or Premium (P)).
+The following chart identifies which tasks can be performed by a user with a **free** license interacting with content in their own **My workspace** or in a workspace on a capacity (Fabric F64+ or Premium).
 
 > [!TIP]
 > - For a list of Fabric features by SKU type, see [Microsoft Fabric features parity](/fabric/enterprise/fabric-features).
@@ -69,10 +69,10 @@ The following chart identifies which tasks can be performed by a user with a **f
 
 The first column represents a free user only working with content in **My workspace**. This user cannot collaborate with colleagues in the Power BI service. Colleagues cannot directly share content with this user, and this user cannot share from **My workspace**.
 
-The second column represents a free user working with content in a workspace that is saved on a capacity (Fabric F64+ or Premium (P)). This free user:
+The second column represents a free user working with content in a workspace that is saved on a capacity (Fabric F64+ or Premium). This free user:
 
 - has a free user license type
-- is part of an organization that has a capacity subscription (Fabric F or Premium (P))
+- is part of an organization that has a capacity subscription (Fabric F or Premium)
 - gets content (apps, dashboards, reports, etc.) from Pro or PPU users who share that content using workspaces on capacity.
 - is assigned the **Viewer** role to those app workspaces.
 
@@ -87,13 +87,11 @@ The second column represents a free user working with content in a workspace tha
 
  **![green mw](media/end-user-features/green-mwo.png)** Feature availability is limited to **My workspace**. Content in **My workspace** is for the owner's personal use and cannot be viewed by anyone else in Power BI.
 
- \*  Feature can be limited or disabled by an admin or tenant setting (examples: export, copy visual as image, subscriptions, comments, persistent filters).
-
 ### Feature list
 
-|Features   | Scenario 1: Free user who has no access to content hosted in capacity (Fabric F64+ or Premium (P)).    | Scenario 2: Free user with **Viewer** permissions to content stored in capacity (Fabric F64+ or Premium (P)).  |
+|Features   | Scenario 1: Free user who has no access to content hosted in capacity (Fabric F64+ or Premium).    | Scenario 2: Free user with **Viewer** permissions to content stored in capacity (Fabric F64+ or Premium).  |
 |---|---|---|
-|**Apps** 
+|**Apps** |
 |Installs automatically | ![orange x](media/end-user-features/orange-x.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*|
 |Open | ![orange x](media/end-user-features/orange-x.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 |Favorite | ![orange x](media/end-user-features/orange-x.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
@@ -102,7 +100,7 @@ The second column represents a free user working with content in a workspace tha
  |AppSource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Organization store: download and open|![orange x](media/end-user-features/orange-x.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 | Reshare an app | ![orange x](media/end-user-features/orange-x.png)  | ![orange x](media/end-user-features/orange-x.png)  |
-|**Workspaces on capacity (Fabric F64+ or Premium (P))** | | |
+|**Workspaces on capacity (Fabric F64+ or Premium)** | | |
 | Create, edit, or delete workspace or content  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Add endorsements | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Open and view  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
@@ -135,7 +133,7 @@ The second column represents a free user working with content in a workspace tha
 | Create a report in "My Workspace" using a dataset located in a Fabric Capacity Workspace |![orange x](media/end-user-features/orange-x.png) | ![orange x](media/end-user-features/orange-x.png)|
 |  Insights on datasets  | ![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |Schedule refresh |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)|
-|Analyze in Excel (see footnote 2) |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
+|Analyze in Excel† |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
 |Create a report |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)|
 |Create a paginated report |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)|
 |Share |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
@@ -144,7 +142,7 @@ The second column represents a free user working with content in a workspace tha
 |Create from template |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |**Reports**
 |Receive reports from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  | 
-| Analyze report in Excel (see footnote 2) |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
+| Analyze report in Excel† |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
 | View bookmarks created by others, and add your own bookmarks  | ![orange x](media/end-user-features/orange-x.png)|![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 | View and respond to comments from others: add new comments  | ![orange x](media/end-user-features/orange-x.png)|![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 |Change display dimensions   | ![green myw](media/end-user-features/green-mwo.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  | 
@@ -153,7 +151,7 @@ The second column represents a free user working with content in a workspace tha
 | Cross-highlight and cross-filter report visuals   |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 |  Drill   |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 | Drillthrough |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
-|  Embed (publish to web, public) (see footnote 4) | ![orange x](media/end-user-features/orange-x.png) |![orange x](media/end-user-features/orange-x.png) |  
+|  Embed (publish to web, public)§ | ![orange x](media/end-user-features/orange-x.png) |![orange x](media/end-user-features/orange-x.png) |  
 |  Export summarized data from report visuals*  |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
 |Export underlying data from report visuals* | ![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  | 
 |  Favorite the report  |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
@@ -162,7 +160,7 @@ The second column represents a free user working with content in a workspace tha
 |  Filters: persistent  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
 | Search on the filter pane |![green myw](media/end-user-features/green-mwo.png)* |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)* |
 | Full screen and focus modes   |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
-|  Insights on reports<sup>1</sup>  | ![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)| 
+|  Insights on reports  | ![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
 | Lineage view  |![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
 |Export to PDF* |![green myw](media/end-user-features/green-mwo.png) |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)  |
 |Performance Inspector |![green myw](media/end-user-features/green-mwo.png)|![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
@@ -189,22 +187,13 @@ The second column represents a free user working with content in a workspace tha
 |Visuals: change type |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
 | Visuals: hover to reveal details and tooltips  |![green myw](media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png) |
 
-### Footnotes
+*\* An admin or tenant setting can enable or disable the feature for some or all users.*
 
-1. (Star in table) Admin / tenant setting can enable or disable this feature for some or all users.
-2. Analyze in Excel (and related Excel live connection experiences) also require Build permission on the semantic model and the relevant tenant settings to be enabled.
-3. Sovereign (national/regional) cloud behavior can differ; some capabilities may lag or have alternate licensing enforcement.
-4. Publish to web embed code creation requires Pro or PPU. Free users cannot create embed codes; anyone can view an already-published public link (subject to admin enablement and governance policies).
+*† Analyze in Excel (and related Excel live connection experiences) also requires Build permission on the semantic model and the relevant tenant settings to be enabled.*
 
-### Sources (representative)
+*‡ Sovereign (national/regional) cloud behavior can differ; some capabilities may lag or have alternate licensing enforcement.*
 
-- [Power BI service features by license type](/power-bi/fundamentals/service-features-license-type)
-- [Licenses and subscriptions for business users](/power-bi/fundamentals/end-user-license)
-- [Publish to web from Power BI](/power-bi/collaborate-share/service-publish-to-web)
-- [Analyze in Excel prerequisites](/power-bi/collaborate-share/service-analyze-power-bi-datasets-excel)
-- [Paginated reports prerequisites](/power-bi/paginated-reports/paginated-reports-report-builder-power-bi#prerequisites)
-- [Dashboard alerts tutorial](/power-bi/consumer/end-user-alerts)
-- [Export a report to PowerPoint](/power-bi/collaborate-share/end-user-powerpoint) / [Export reports to PDF](/power-bi/collaborate-share/end-user-pdf)
+*§ Publish to web embed code creation requires Pro or PPU. Free users cannot create embed codes; anyone can view an already-published public link (subject to admin enablement and governance policies).*
 
 ## Related content
 
