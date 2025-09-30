@@ -7,9 +7,10 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/20/2025
+ms.date: 09/30/2025
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the list slicer (preview) feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
+ai-usage: ai-assisted
 ---
 
 # Create a list slicer (preview)
@@ -42,8 +43,7 @@ In the following guide, we're using the [Retail Analysis Sample PBIX file](https
 
 :::image type="content" source="media/button-slicer/button-slicer-sample.png" alt-text="Screenshot of the sample file showing district manager names as selectable tiles." lightbox="media/button-slicer/button-slicer-sample.png":::
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have an individual **Power BI Pro license** or that you save the report in **Premium capacity**.
+[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
 
 ## Let’s create a list slicer
 

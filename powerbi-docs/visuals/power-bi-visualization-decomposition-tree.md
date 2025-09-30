@@ -7,9 +7,10 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 09/30/2025
 ms.custom: sample-supply-chain
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 
 # Create and view decomposition tree visuals in Power BI
@@ -28,8 +29,7 @@ This tutorial uses two examples:
 For Power BI Desktop, you can download the [supply chain scenario semantic model](
 https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix). If you'd like to use the Power BI service, download Supply Chain Sample.pbix, and then upload it to a workspace in the Power BI service.
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
+[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
 
 ## Get started
 

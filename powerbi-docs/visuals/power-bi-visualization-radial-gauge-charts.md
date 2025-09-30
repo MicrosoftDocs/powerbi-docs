@@ -8,9 +8,10 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 12/25/2023
+ms.date: 09/30/2025
 LocalizationGroup: Visualizations
 ms.custom: sample-financialsample
+ai-usage: ai-assisted
 ---
 
 # Radial gauge charts in Power BI
@@ -39,7 +40,7 @@ Radial gauges are a great choice in many scenarios:
 
 ## Prerequisites
 
-If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both of you don't have individual Power BI Pro licenses, you need to save the report to a workspace in a Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
 
 ## Download the sample data
 

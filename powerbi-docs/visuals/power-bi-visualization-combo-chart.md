@@ -8,8 +8,9 @@ ms.custom: video-removed, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 09/30/2025
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 # Create and use combo charts in Power BI
 
@@ -33,8 +34,7 @@ Combo charts are a great choice:
 
 <a name="create"></a>
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
+[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 

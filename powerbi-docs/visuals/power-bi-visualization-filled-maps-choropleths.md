@@ -8,9 +8,10 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/25/2023
+ms.date: 09/30/2025
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 
 # Create and use filled maps (choropleth maps) in Power BI
@@ -85,8 +86,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
 ---
 
-> [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
 
 ## Create a filled map
 
