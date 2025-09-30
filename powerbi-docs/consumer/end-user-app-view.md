@@ -32,7 +32,7 @@ With Power BI mobile, you can only install an app from a direct link. The Power 
 
 Not all Power BI users can view and interact with apps. If you have a free license, you can open apps that are stored in Premium capacity or Fabric F64 or greater capacity and that are shared with you. If you have a Pro license or a Premium Per User license, you can open apps that are shared with you.
 
-So, if you can't open an app, contact your administrator or help desk. For information about licensing, see [Power BI licensing](end-user-license.md).
+So, if you can't open an app, contact your administrator or help desk. For information about licensing, see [Power BI licensing](../fundamentals/end-user-license.md).
 
 ## Get the app from the Power BI apps marketplace
 
@@ -69,7 +69,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
  * If you're installing a template app, you'll be taken to the template app offering in AppSource.
 
    > [!NOTE]
-   > If you're using a free user license, you can download apps but you can't view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity or Fabric F64 or greater capacity. For more information, see [Licenses for business users](end-user-license.md).
+   > If you're using a free user license, you can download apps but you can't view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity or Fabric F64 or greater capacity. For more information, see [Licenses for business users](../fundamentals/end-user-license.md).
 
 ## Install an app from a direct link
 
@@ -154,7 +154,7 @@ Sometimes app designers release new versions of their apps. How you get the new 
 ## Considerations and troubleshooting
 
 - The ability to install apps can be turned on and off by your Power BI administrator. Contact your IT department or help desk if you need this feature enabled.
-- The use of apps requires either a Pro or Premium Per User license or for the app to be stored in a workspace in Premium shared capacity. [Learn about licenses](end-user-license.md).
+- The use of apps requires either a Pro or Premium Per User license or for the app to be stored in a workspace in Premium shared capacity. [Learn about licenses](../fundamentals/end-user-license.md).
 
 ## Related content
 

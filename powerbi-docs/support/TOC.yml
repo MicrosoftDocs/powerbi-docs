@@ -32,8 +32,6 @@
       href: /fabric/get-started/fabric-known-issues
     - name: Look for an answer in the Community forum
       href: https://community.powerbi.com
-    - name: Tips for getting answers to your Power BI questions
-      href: service-tips-for-finding-help.md
     - name: Capture diagnostic information (traces)
       href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
     - name: Find your organization ID and name
