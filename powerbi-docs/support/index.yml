@@ -45,8 +45,6 @@ landingContent:
             url: ../troubleshoot/index.yml
           - text: Look for an answer in the Community forum
             url: https://community.powerbi.com
-          - text: Get answers to your Power BI questions
-            url: service-tips-for-finding-help.md
 
   - title: Get support for Power BI
     linkLists:
