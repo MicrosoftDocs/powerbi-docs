@@ -37,7 +37,7 @@ To publish to other workspaces, you need to meet these prerequisites:
 - You have a Power BI Pro or Premium Per User license.
 - You have write access to the workspace.
 
-Read more about [Power BI licenses](../consumer/end-user-license.md).
+Read more about [Power BI licenses](../fundamentals/end-user-license.md).
 
 ## Supported versions
 

@@ -30,7 +30,7 @@ There are two types of Power BI bookmarks: *personal* and *report*. Report desig
 
 This article explains how to create and use personal bookmarks. It also explains how to interact with report bookmarks that someone else creates and shares with you. Viewing shared reports and report bookmarks requires one or both of the following prerequisites:
 
-- a Power BI Pro or a Premium Per User (PPU) license [Which license do I have?](end-user-license.md)
+- a Power BI Pro or a Premium Per User (PPU) license [Which license do I have?](../fundamentals/end-user-license.md)
 - a report that is saved in Premium capacity and shared with you.
 
 If you're designing reports and creating report bookmarks for others to use, see [Create report bookmarks](../create-reports/desktop-bookmarks.md).
@@ -107,7 +107,7 @@ To view the report bookmarks created by the report designer, from the **Bookmark
 :::image type="content" source="media/end-user-bookmarks/power-bi-show-bookmark.png" alt-text="A screenshot showing the Bookmarks pane. The Report bookmarks option is outlined.":::
 
 > [!NOTE]
-> To view shared reports, or to save reports in Premium capacity, you need a Power BI Pro or Premium Per User license. To learn more, see [Licenses and subscriptions for business users](end-user-license.md).
+> To view shared reports, or to save reports in Premium capacity, you need a Power BI Pro or Premium Per User license. To learn more, see [Licenses and subscriptions for business users](../fundamentals/end-user-license.md).
 
 ### Report bookmarks
 
@@ -153,7 +153,7 @@ Here are a few ways you can share your view with others:
 If you make changes to your personal bookmark after you share a report, it has no effect on your recipients' view. For example, if you share a report with a 2021 date filter applied and then change the year to 2022 in your bookmark, your recipient still sees the 2021 filter.
 
 > [!NOTE]
-> To share reports, you will need a Power BI Pro or Premium Per User license, or for the report to be saved in reserved capacity. To learn more, see [Licenses and subscriptions for business users](end-user-license.md).
+> To share reports, you will need a Power BI Pro or Premium Per User license, or for the report to be saved in reserved capacity. To learn more, see [Licenses and subscriptions for business users](../fundamentals/end-user-license.md).
 
 ### Reset all your changes to a report
 

@@ -29,7 +29,7 @@ You know the [basics of the Power BI service](../fundamentals/service-basic-conc
 
   - A Power BI Pro or Premium Per User (PPU) license
   - A Power BI Premium subscription in your organization, with the content shared from a Premium capacity
-    [Learn about licenses and subscriptions](end-user-license.md)
+    [Learn about licenses and subscriptions](../fundamentals/end-user-license.md)
 
     For this overview, you don't need either condition. Microsoft provides sample content directly in the Power BI service. Use the samples to learn your way around the service.
 

@@ -26,7 +26,7 @@ Power BI service features vary by license. There are three per user license type
 
 Use one of these options to start using Power BI and Fabric.
 
-- If you already have a Microsoft 365 subscription, [check whether that subscription includes a Power BI and Fabric license](../consumer/end-user-license.md).
+- If you already have a Microsoft 365 subscription, [check whether that subscription includes a Power BI and Fabric license](end-user-license.md).
 - If your [administrator purchased an organizational subscription](../enterprise/service-admin-manage-licenses.md), go to app.powerbi.com to check your license.
 - If you're not ready to buy, start a [Fabric capacity trial](/fabric/get-started/fabric-trial). The trial capacity includes a license similar to PPU.
 - If you're signing up as an individual in an organization and your administrator didn't assign you a license, [use self-service signup to try or buy](service-self-service-signup-purchase-for-power-bi.md) Power BI or Fabric.
@@ -64,7 +64,7 @@ Learn more about Power BI Premium in [What is Power BI Premium?](../enterprise/s
 
 For a comparison of Power BI Pro and Power BI Premium, see the *Power BI features comparison* section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
-To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](../consumer/end-user-license.md).
+To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](end-user-license.md).
 
 ## Related content
 

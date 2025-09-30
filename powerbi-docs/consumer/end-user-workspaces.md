@@ -47,13 +47,13 @@ For a detailed list of all four roles and their capabilities, see [Workspace rol
 ## Licensing, workspaces, and capacity
 Licensing also plays a part in determining what you can and can't do in a workspace. Many sharing and collaborating features require that the user has a Power BI *Pro* or *Premium Per User (PPU)* license or for the workspace to be stored in Premium capacity. 
 
-Often, *business users* work with a free license. [Learn more about licensing](end-user-license.md). If the content isn't stored in Premium capacity, the business user doesn't have access.
+Often, *business users* work with a free license. [Learn more about licensing](../fundamentals/end-user-license.md). If the content isn't stored in Premium capacity, the business user doesn't have access.
 
 If the workspace is stored in Premium capacity, *business users* who are granted permission by the designer, are able to view and interact with the content in that workspace. This icon :::image type="icon" source="media/end-user-workspaces/power-bi-diamond-icon.png"::: identifies Premium workspaces. This icon :::image type="icon" source="media/end-user-workspaces/power-bi-PPU-icon.png"::: identifies Premium Per User workspaces.
 
 :::image type="content" source="media/end-user-workspaces/power-bi-diamond.png" alt-text="Screenshot showing a list of Workspaces with Premium icons outlined.":::
 
-To learn more, see [Which license do I have?](end-user-license.md).
+To learn more, see [Which license do I have?](../fundamentals/end-user-license.md).
 
 
 ## Related content

@@ -21,11 +21,20 @@ This article explains how to interact with the Power BI service to discover data
 
 If you're not signed up for the Power BI service, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
+## Prerequisites
+
+Most interactions in this article assume:
+
+- You have at least a Power BI Pro or Premium Per User (PPU) license, or the content you are viewing is stored in a Premium (or Fabric F64+) capacity that allows free users to consume it. Fabric (Free) users are limited to content in their own My workspace or Premium/Fabric capacity workspaces shared with them.
+- The feature has not been disabled by your Power BI / Fabric admin (admins can turn off or restrict capabilities like export, Analyze in Excel, or Q&A for governance).
+
+For details, see [Power BI license types](../fundamentals/end-user-license.md) and [service features by license](../fundamentals/service-features-license-type.md).
+
 ## What is Power BI?
 
 Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data might be a simple Excel spreadsheet or a collection of data from different data sources. No matter, Power BI lets you easily connect to your data sources, visualize (or discover) what's important, and share that with anyone or everyone you want.
 
-![Screenshot illustrating Power BI getting content from various sources and outputting a report.](./media/end-user-reading-view/power-bi-concept.png)
+:::image type="content" source="./media/end-user-reading-view/power-bi-concept.png" alt-text="Screenshot of the Power BI concept diagram showing multiple data sources feeding into a report.":::
 
 Open the Power BI service, in a browser or on a mobile device. You and your colleagues work from the same trusted apps, dashboards, and reports, that update and refresh automatically, so you're always working with the freshest content.
 
@@ -67,17 +76,23 @@ For definitions of core building blocks (reports, dashboards, apps) see the link
 
 Skip the email. Add a personal comment or start a conversation with colleagues about a dashboard, right there on that dashboard. The comment feature is just one of the ways you can collaborate with others.
 
-![commenting video](./media/end-user-reading-view/comment.gif)
+:::image type="content" source="./media/end-user-reading-view/comment.gif" alt-text="Screenshot of the commenting feature animation on a dashboard.":::
 
 Learn more about [commenting.](end-user-comment.md)
+
+> [!TIP]
+> Commenting (and other collaboration actions) requires Pro or PPU, or that the content resides in a Premium / Fabric capacity workspace that grants you access. See [license types](../fundamentals/end-user-license.md).
 
 ### Subscribe to a dashboard or report
 
 It's not necessary to open Power BI to monitor a dashboard. You can subscribe instead, and Power BI emails you a snapshot of that dashboard on a schedule you set.
 
-![select the Subscribe icon.](./media/end-user-reading-view/power-bi-subscribe-and-email.png)
+:::image type="content" source="./media/end-user-reading-view/power-bi-subscribe-and-email.png" alt-text="Screenshot of the Subscribe icon and email subscription dialog.":::
 
  Learn more about [Power BI subscriptions.](/power-bi/collaborate-share/end-user-subscribe)
+
+> [!NOTE]
+> Subscriptions require a Pro or PPU license unless the content is hosted in a Premium capacity. Admins can disable subscriptions for governance or compliance.
 
 ### Get alerts when your data reaches a threshold
 
@@ -89,19 +104,25 @@ Power BI sends you an email when the value increases or decreases past the limit
 
 Learn more about [Power BI alerts.](end-user-alerts.md)
 
+> [!IMPORTANT]
+> Data alerts work only on certain dashboard tile types (KPI, gauge, card) and not on report visuals directly. They require at least a Pro license unless the dashboard is in a Premium capacity. Alerts also respect row-level security (RLS) and only evaluate data the user is authorized to view.
+
 ### Use Q&A to ask questions using natural language
 
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A question box is available at the top of your dashboard. For example, "show me count of large opportunities by sales stage as a funnel."
 
-![Q&A](./media/end-user-reading-view/power-bi-q-and-a-funnel.png)
+:::image type="content" source="./media/end-user-reading-view/power-bi-q-and-a-funnel.png" alt-text="Screenshot of a Q&A funnel visualization result.":::
 
 Learn more about [Power BI Q&A.](end-user-q-and-a.md)
+
+> [!TIP]
+> Q&A availability can be limited or turned off by an admin or the dataset owner (semantic model). Some older dialogs might still display the term *dataset* instead of *semantic model*—the concepts are the same for the purposes of this article.
 
 ### Display details on a visualization
 
 Visuals are made up of datapoints, and by hovering over a datapoint, you can view the details.
 
-![hover to see details](media/end-user-reading-view/power-bi-hover.gif)
+:::image type="content" source="media/end-user-reading-view/power-bi-hover.gif" alt-text="Screenshot of a visual tooltip appearing when hovering over a data point.":::
 
 ### Adjust the display dimensions
 
@@ -109,13 +130,13 @@ Reports are viewed on many different devices, with varying screen sizes and aspe
 
 To adjust, from the upper right menu bar select the **View** icon and choose one of the display options.
 
-![report View menu](media/end-user-reading-view/power-bi-view-icon.png)
+:::image type="content" source="media/end-user-reading-view/power-bi-view-icon.png" alt-text="Screenshot of the report View menu icon and options.":::
 
 ### See how all the visuals on a page are interconnected
 
 Cross-highlight and cross-filter the related visualizations on a report page. The visualizations on a single report page are all "connected" to each other. What this means is that if you select one or more values in one visualization, other visualizations that use that same value change based on your selection.
 
-![cross highlight](media/end-user-reading-view/pagefilter3b.gif)
+:::image type="content" source="media/end-user-reading-view/pagefilter3b.gif" alt-text="Screenshot of cross-highlighting across multiple visuals on a report page.":::
 
 Learn more about [visual interactions.](end-user-interactions.md)
 
@@ -125,21 +146,21 @@ Open the **Filters** pane to reveal the filters applied to the page, report, and
 
 :::image type="content" source="media/end-user-reading-view/power-bi-filters.png" alt-text="Screenshot of the Filters pane expanded.":::
 
-If the report has filters applied, they'll display in the **Filters** pane. Make changes to the filters to see the effect on the visuals. Save your changes, or use the ![Reset icon](media/end-user-reading-view/power-bi-revert-icon.png) to revert to the default report page state.
+If the report has filters applied, they'll display in the **Filters** pane. Make changes to the filters to see the effect on the visuals. Save your changes, or use the :::image type="icon" source="media/end-user-reading-view/power-bi-revert-icon.png" border="false" alt-text="Screenshot of the reset icon."::: to revert to the default report page state.
 
 ### Zoom in on individual visuals
 
-Hover over a visual and select the **Focus mode** icon ![select Focus mode from menu ](media/end-user-reading-view/pbi_popouticon.jpg). When you view a visualization in Focus mode, it expands to fill the entire report canvas.
+Hover over a visual and select the **Focus mode** icon :::image type="icon" source="media/end-user-reading-view/pbi_popouticon.jpg" border="false" alt-text="Screenshot of the Focus mode icon.":::. When you view a visualization in Focus mode, it expands to fill the entire report canvas.
 
-![Screenshot with arrow pointing to the icon for Focus mode.](media/end-user-reading-view/power-bi-fullscreen.png)
+:::image type="content" source="media/end-user-reading-view/power-bi-fullscreen.png" alt-text="Screenshot of a visual with an arrow pointing to the Focus mode icon.":::
 
-![Screenshot showing the focus mode visual filling the entire canvas.](media/end-user-reading-view/power-bi-fullscreen-last.png)
+:::image type="content" source="media/end-user-reading-view/power-bi-fullscreen-last.png" alt-text="Screenshot of a visual in focus mode filling the report canvas.":::
 
 To display that same visualization without the distraction of menu bars, filter pane, and other chrome--select **Full screen** from the View dropdown.
 
-![Screenshot showing the dropdown menu for View.](media/end-user-reading-view/power-bi-focus.png)
+:::image type="content" source="media/end-user-reading-view/power-bi-focus.png" alt-text="Screenshot of the View dropdown menu with Full screen option.":::
 
-![Screenshot showing same visual in full screen mode.](media/end-user-reading-view/power-bi-full.png)
+:::image type="content" source="media/end-user-reading-view/power-bi-full.png" alt-text="Screenshot of the visual displayed in full screen mode.":::
 
 Learn more about [focus mode and full screen mode.](end-user-focus.md)
 
@@ -149,7 +170,7 @@ Visuals on a report page can be sorted and saved with your changes applied.
 
 Hover over a visual to make it active, and select **More options** (...) to open sorting options.
 
-![sort a chart](media/end-user-reading-view/sort.gif)
+:::image type="content" source="media/end-user-reading-view/sort.gif" alt-text="Screenshot of selecting a sort option on a chart.":::
 
 Learn more about [sorting visuals.](end-user-search-sort.md)
 
@@ -159,13 +180,16 @@ A Power BI visualization is constructed using data from underlying semantic mode
 
 With a visual active, select **More options** (...) and choose **Show as a table**.
 
-   ![Screenshot showing an area chart at top and a table with the data below.](media/end-user-reading-view/power-bi-show-data-table.png)
+   :::image type="content" source="media/end-user-reading-view/power-bi-show-data-table.png" alt-text="Screenshot of an area chart with its underlying data table shown below.":::
 
 ### Export data to Excel
 
 In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you're creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file don't impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility. For more information, visit [Export the data that was used to create a visualization](../visuals/power-bi-visualization-export-data.md).
 
 Exporting isn't limited to individual visuals; you can export entire reports to Excel or PowerPoint to share with your colleagues. For more information, see [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and [Power BI in PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md).
+
+> [!NOTE]
+> Export / Analyze in Excel and PowerPoint features can be disabled by your admin. Export respects security: row-level security (RLS), object-level security (OLS), and any applied filters/slicers at the time of export. Large exports are subject to service limits.
 
 This article is a quick overview of just some of the things *business users* can do with the Power BI service.  
 
