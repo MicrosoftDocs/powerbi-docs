@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "powerbi-docs/consumer/end-user-home.md",
+      "redirect_url": "/power-bi/consumer/end-user-experience#home",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "powerbi-docs/create-reports/desktop-performance-analyzer.md",
       "redirect_url": "/power-bi/create-reports/performance-analyzer",
       "redirect_document_id": true

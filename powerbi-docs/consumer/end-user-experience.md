@@ -16,161 +16,126 @@ ai-usage: ai-assisted
 # Get around in the Power BI service
 
 > [!NOTE]
-> This article is an overview (not a step-by-step tutorial) of the navigation experience for business users (consumers). If you're looking for a creation walkthrough, see [Tutorial: Get started creating in the Power BI service](../fundamentals/service-get-started.md). For a deeper list of end-user interaction capabilities (filtering, focus mode, exporting, Q&A, alerts, subscriptions, etc.), see [Interact with reports and dashboards](end-user-reading-view.md).
+> This article is a high-level overview of the navigation experience for business users. For creation tasks, see [Tutorial: Get started creating in the Power BI service](../fundamentals/service-get-started.md). For details about interactions like filtering, focus mode, exporting, Q&A, alerts, and subscriptions, see [Interact with reports and dashboards](end-user-reading-view.md).
 
-Now that you know the [basics of the Power BI service](../fundamentals/service-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in [Power BI Desktop](https://powerbi.microsoft.com/desktop/), combining data and creating reports, dashboards, and apps for others. They're *designers* and *creators*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This overview is for *business users* of the Power BI service.
+You know the [basics of the Power BI service](../fundamentals/service-basic-concepts.md). Here's how to get around the **Power BI service**. Some teammates work in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) to combine data and build reports, dashboards, and apps for others. They're *designers* and *creators*. You work in the Power BI service to view and interact with content they publish. You're a *business user*, and this overview is for business users.
 
 ## Prerequisites
 
-- If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+- Not signed up for Power BI? [Sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
-- Read [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
-- Viewing Power BI content (reports, dashboards, apps) created by *designers* requires one of two conditions:
-    - A Power BI Pro or Premium Per User (PPU) license.
-    - Your organization to have a Power BI Premium subscription, and the content to be shared with you from a Premium capacity.
-    [Learn about licenses and subscriptions](end-user-license.md).
+- Review [Basics of the Power BI service](../fundamentals/service-basic-concepts.md).
+- To view Power BI content (reports, dashboards, apps) created by *designers*, you need either:
 
-    For the purposes of this overview, we aren't requiring either of these conditions to be met. Microsoft has sample content available to you directly from the Power BI service interface. Use this sample content to learn your way around the Power BI service.
+  - A Power BI Pro or Premium Per User (PPU) license
+  - A Power BI Premium subscription in your organization, with the content shared from a Premium capacity
+    [Learn about licenses and subscriptions](end-user-license.md)
+
+    For this overview, you don't need either condition. Microsoft provides sample content directly in the Power BI service. Use the samples to learn your way around the service.
+
+## Navigation pane at a glance
+
+| Nav item | Purpose | Typical actions | Details and learn more |
+|----------|---------|-----------------|------------------------|
+| Home | Personalized landing (recent, favorites, recommended). | Open recent/favorites, launch apps, global search. | Central starting point showing activity, favorites, recommendations, and quick links. Learn more about [Home](#home). |
+| Browse | List-based access to recent, favorites, shared. | Sort, filter, open items. | Consolidated lists let you scan and open commonly accessed content without navigating workspaces. |
+| OneLake | Discover semantic models and other reusable data artifacts. Formerly called Data hub. | Find data, view metadata, request access. | Enterprise discovery surface for governed data you can build reports on; improves reuse and reduces duplication. Learn more about [OneLake](/fabric/onelake/onelake-overview).|
+| OneLake catalog | Fabric-wide discoverability & governance view for data items. | Search/filter, request access, reuse data. | Broader governed asset catalog (beyond Power BI) for cross-domain analytics. Learn more about the [OneLake catalog](/fabric/governance/onelake-catalog-overview). |
+| Create | Start new content (report, semantic model, quick create, upload). | Quick create, import files, start metric set. | Launch point for building; options vary by license, role, and enabled Fabric features. |
+| Apps | Access packaged collections (reports/dashboards). | Open or install apps, switch views. | Curated bundles deployed to groups for consistent consumption. Learn more about [Apps in Power BI](end-user-apps.md). |
+| Workspaces | Team/content containers (dashboards, reports, semantic models, dataflows). | Navigate content, manage access (if permitted). | Collaborative areas before packaging as apps; role-based access. Learn more about  [Workspaces](end-user-workspaces.md). |
+| Metrics | Track organizational goals / metric sets. | View, update status, drill into metrics. | Scorecards aggregate KPIs for progress visibility; may require specific permissions. Learn more about [Metrics](../create-reports/get-started-metrics.md) |
+| Copilot | AI assistance (tenant-controlled availability). | Summarize, ask questions, generate insights. | Natural language help for understanding, describing, or exploring data; availability depends on admin settings. Learn more about [Copilot](../create-reports/copilot-introduction.md) |
+| Learn | Tutorials, samples, videos, training links. | Open sample reports, launch learning modules. | Built‑in training hub to accelerate onboarding and self‑service skills. |
+| Monitor\* | Operational views (refresh, performance, capacity) – role-based. | Inspect refreshes, performance (eligible roles). | Administrative/advanced visibility into system health and workload performance. |
+| Real-Time\* | Real-time items (event streams, KQL DB) – Fabric feature dependent. | Explore/create real-time artifacts. | Entry point for streaming and low-latency analytical scenarios when Fabric real-time features are enabled. Learn more about [Real-Time Intelligence](/fabric/real-time-intelligence/overview).|
+| Deployment pipelines\* | Lifecycle promotion (dev/test/prod). | Compare, deploy stages. | Visualize and promote content between stages for controlled release management. |
+| Workloads\* | Capacity workload settings (admin). | Adjust workload configuration. | Admin surface to tune capacity resource allocation across feature workloads. |
+
+*\*Conditional: Appears only with specific roles, licenses, or Fabric features enabled.*
 
 ## Open the Power BI service
 
-1. To begin, open the Power BI service (app.powerbi.com), and sign in if you're prompted.
+1. Open the Power BI service (app.powerbi.com) and sign in if you're prompted.
 
-    ![Screenshot shows the Home page for a new user.](./media/end-user-experience/power-bi-home.png)
+    :::image type="content" source="./media/end-user-experience/power-bi-home.png" alt-text="Screenshot of the Power BI Home page for a new user.":::
 
-1. Open a Power BI sample. From the navigation pane, select the **Learn** icon :::image type="content" source="media/end-user-experience/power-bi-learn-icon.png" alt-text="Screenshot of the Learn icon."::: and in the **Learning center**, scroll down to **Sample reports**. Select the right arrow until you get to **Sales and Marketing Sample**. Select the sample to open it.  
+1. Open a Power BI sample. In the navigation pane, select the **Learn** icon :::image type="icon" source="media/end-user-experience/power-bi-learn-icon.png" border="false" alt-text="Screenshot of the Learn icon.":::. In the **Learning center**, scroll to **Sample reports**. Select the right arrow until you reach **Sales and Marketing Sample**, then select it.  
+1. Select **My workspace**. The Power BI service installs the sample there—your private sandbox for learning and experimenting. Only you can see it. Review the sample details.
 
-   :::image type="content" source="media/end-user-experience/power-bi-samples-list.png" alt-text="Screenshot shows the sample reports on the Learn page.":::
-
-1. The Power BI service installs the sample in **My workspace**, your private sandbox for learning and experimenting. Only you can see your workspace. Select **My workspace** to see details about this sample.
-
-    :::image type="content" source="./media/end-user-experience/power-bi-my-workspace-file.png" alt-text="Screenshot shows the Power BI screen with a red border around My workspace.":::
-
-    The sample includes one report, one dashboard, and one semantic model. Most content shared with business users doesn't include direct access to the underlying semantic models, but the samples, which are designed for all users, include semantic models.
-
-## View workspace content
-
-The sample content is organized within the context of a workspace named **My workspace.** **My workspace** stores all of the content that you own and create. Think of it as your personal sandbox or work area for your own content. Any sample data that you download from the Power BI Learning Center is saved in your **My workspace**.
-
-You acquire more workspaces when designers share content with you. For example, if designers assign you access permissions to one of their workspaces, that workspace shows up in your Power BI site.
-
-### My workspace
-
-Workspaces are more than storage locations. From a workspace you can learn a lot about the included dashboards, reports, and semantic models. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
-
-![Screenshot showing App workspace screen with More actions menu displayed for the report.](./media/end-user-experience/power-bi-more-action.png)
-
-From a workspace, you can open a dashboard or report by selecting it from the list. You can favorite a dashboard or report by hovering and selecting the star icon. If a workspace *owner* gave you [sharing permissions](../collaborate-share/end-user-shared-with-me.md), you can share from here as well. 
-
-Learn more about [Workspaces](end-user-workspaces.md).
+    The sample includes one report, one dashboard, and one semantic model. Most content for business users doesn't provide direct access to semantic models, but these samples are for all users and include them.
 
 ## Open a dashboard and a report
 
-A dashboard is a single page that shows visualizations of the most important elements from one or more reports.
+A dashboard is a single page that shows key visuals from one or more reports.
 
-1. The Sales and marketing sample has one dashboard. To open the dashboard, select it.
+1. Open the Sales and marketing sample dashboard.
 
-    :::image type="content" source="media/end-user-experience/power-bi-related.png" alt-text="Screenshot of the Related content window.":::
+      > [!NOTE]
+    > If the dashboard doesn't appear right away, the sample file might be large. Try again in a few minutes.
 
-   > [!NOTE]
-    > If the dashboard doesn't appear in the list right away, it could be because the sample file is large. Check back in a few minutes.
+1. The dashboard opens in the Power BI service. Dashboards differentiate the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md).
+1. The top menu bar shows dashboard actions. Select **More options (...)** to see the full list.
+1. The visuals on the dashboard are arranged as *tiles*. Hover over a tile and select **More options (...)** to see its interaction options.
+1. Select a dashboard tile to open its source report. The report opens to the page that contains the tile's visual. In this example, selecting the treemap tile opens the **YTD Category** report page.
 
-1. The dashboard opens in the Power BI service. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md).
+    A report has one or more pages. Each page tells a story with visualizations, text, shapes, and images.
 
-    ![Dashboards open](./media/end-user-experience/power-bi-dash-opens.png)
-
-1. The actions you can take on a dashboard are displayed in the top menu bar. Select **More options (...)** to see the complete list.
-
-    :::image type="content" source="./media/end-user-experience/power-bi-top-menu-items.png" alt-text="Screenshot of the top portion of the Power BI service.":::
-
-1. The visuals on the dashboard are arranged as *tiles*. Hover over a dashboard tile and select **More options (...)** to see the options you have for interacting with that tile.
-
-    ![Screenshot showing the dropdown menu for a dashboard tile.](./media/end-user-experience/power-bi-tile-menu.png)
-
-1. Select a dashboard tile to open the report that was used to create that tile. The report opens to the page that contains the visual that is on the tile. In this example, selecting the dashboard tile with the treemap opens the **YTD Category** report page.
-
-    ![Report opens.](./media/end-user-experience/power-bi-report.png)
-
-    A report is made up of one or more pages. In most cases, each page is designed to tell a story and that story is told with visualizations, text, shapes, and images. 
-
-    Reports have several sections. On the left is the clickable list of report pages. Across the top, is the menu bar containing actions you can take with the report. The options available depend on the role and permission the report *designer* assigned to you. On the right side is the **Filters** pane. And the center canvas contains the report itself. Similar to the dashboard, there are actions that you can take for the entire report, for individual visuals, and also for a single report page. 
+    Reports have several sections. The left side shows the list of report pages. Across the top is the menu bar with report actions. Available options depend on the roles and permissions the report *designer* assigns to you. The right side has the **Filters** pane. The center canvas contains the report. Like the dashboard, you can take actions on the entire report, an individual visual, or a single page.
 
     Learn more about [Power BI reports](end-user-reports.md).
 
-## Use the left navigation pane (nav pane)
+## Use the navigation pane
 
-The nav pane becomes more useful as colleagues share content with you. In this section of the overview, we look at the Power BI service for a *business user* who works with colleagues who share lots of reports, dashboards, and apps.
+The navigation pane becomes more useful as colleagues share content with you. This article focuses on the Power BI service for a *business user* whose colleagues share many reports, dashboards, and apps.
 
-The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. **Home** brings together search, sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards, but that changes as content is shared with you.
+### Home
 
-![Screenshot of a populated Home canvas.](./media/end-user-experience/power-bi-all-home.png)
+The top icon in the navigation pane is your Power BI **Home**. It's the default landing page when you sign in to the Power BI service. **Home** brings together search, sorting tools, the navigation pane, and a canvas with *cards* you select to open content. At first, you might not see many cards. The number grows as colleagues share content.
 
-To learn more, see [Power BI Home.](end-user-home.md)
+Power BI **Home** is the landing page for business users. It surfaces the content you can access and offers multiple ways to open it quickly.
 
-## Browse
+Key elements:
 
-See your full list of favorites, recent, and shared content by selecting **Browse** on the nav pane. Here you find content lists that provide details about reports, apps, and dashboards.
+- Layouts: **Simplified** (default) and **Expanded** (switch via the View menu). Your choice persists.
+- Sections: **Favorites + frequents**, **Featured**, and a tabbed list area.
+- Tabs (availability depends on your activity and tenant): **All**, **Recent**, **Shared**, **Favorites**, **My apps**, **From external orgs** (preview), plus recommended items surfaced automatically.
+- Optional *getting started* resources for new users; can be hidden.
+- Left navigation pane mirrors major entry points: **Browse** (lists Recent, Favorites, Shared with me), **Data hub**, **Apps**, **Learn**, **Workspaces**, plus **Home** itself.
+- Workspaces: **My workspace** (personal), plus any shared workspaces you are granted access to; each lists dashboards, reports, semantic models, dataflows, and other artifacts.
+- Global search (top bar) finds content by name, owner, or keyword across items you can access.
+- Featured content can be promoted by authorized workspace roles (Administrator, Member, Contributor) if tenant settings allow.
+- External tenant (B2B) semantic models may appear under **From external orgs** when enabled.
 
-:::image type="content" source="./media/end-user-experience/power-bi-browses.png" alt-text="Screenshot of the Browse page on the navigation pane.":::
+Use **Home** to:
 
-*Recent* content is the last reports, dashboards, apps, and other Power BI content that you've visited. For more information about tagging content as a *favorite*, see [Favorites](end-user-favorite.md) and for more information about how content is shared by colleagues, see [Shared with me](../collaborate-share/end-user-shared-with-me.md).
-
-## Open apps
-
-Go directly to your apps by selecting **Apps** on the navigation pane. You might not have any apps yet. The **Apps** pane contains apps that are shared with you or that you install.
-
-For more information, see [Apps in Power BI](end-user-apps.md).
-
-## Open the Learning center
-
-For new users, the **Learning center** (select **Learn**) is especially helpful, with getting started content, samples, and videos.
-
-## Use Home to find content
-
-The Home canvas plus the nav pane and global search give you three complementary ways to locate content:
-
-- **Canvas cards and lists**: Recommended, Recent, Favorites, Shared, My apps, and (preview) From external orgs. These adapt as your usage changes.
-- **Nav pane**: Persistent, list-based access (Browse, Data hub, Apps, Learn, Workspaces). Efficient when you know the type of item you're opening.
-- **Global search**: Fastest route when you remember part of a name or owner.
-
-### Simplified vs expanded layout
+- Open recently used items
+- Jump to favorites
+- Discover recommended or shared content
+- Launch apps
+- Pivot to the Data hub or Workspaces for broader exploration
 
 Home supports two layouts:
 
-- **Simplified** (default): High-value cards (Recommended, recent, favorites) with tabs for quick switching.
-- **Expanded**: Adds richer list detail and workspace emphasis. Switch layout from the Home **View** menu; your choice persists.
+- **Simplified** (default): High-value cards (Recommended, Recent, Favorites) with tabs for quick switching.
+- **Expanded**: Adds richer list detail and emphasizes workspaces. Switch the layout from the Home **View** menu. Your choice persists.
 
-### Key sections
-
-- **Favorites + frequents**: Items you visit often or star. Manage favorites inline; see [Favorites](end-user-favorite.md).
-- **Featured**: Content promoted by workspace contributors or admins; surfaces org-critical items. See [Feature content on Home](../collaborate-share/service-featured-content.md).
-- **Tabbed lists**: Consolidated (All) plus Recent, Shared, Favorites, My apps, From external orgs (preview). Use column sort, filters, and search refinements for large lists.
-- **Getting started** (new users): Introductory learning; hide when no longer needed (Learning content always available under **Learn**).
-
-### Tips
-
-- Prefer search when you recall partial titles or owners.
-- Use **Browse > Shared with me** to discover newly shared artifacts you haven't opened yet.
-- Star (favorite) items you open daily; they rise automatically in Recommendations.
-
-### Search, sort, and filter
+## Search, sort, and filter
 
 - Use the global search box (top bar) or local list search boxes to match on title, type, or owner.
-- Sort by clicking column headers (where enabled); re-click to toggle ascending/descending.
+- Sort by selecting column headers (where enabled). Select again to toggle ascending or descending.
 - Apply **Filters** (list toolbar) to narrow by type (dashboard, report, app) or owner when lists grow large.
 
-Learn more: [Global search](end-user-search-sort.md).
+Learn more about [Global search](end-user-search-sort.md).
 
 ## Find the owner
 
-Need to know who owns a dashboard, report, app, or semantic model? With the item open, select the title menu to display the owner/contact. The contact may be an individual or a group.
-
-:::image type="content" source="./media/end-user-experience/power-bi-owners.png" alt-text="Screenshot showing the title menu where contact information is.":::
+See who owns a dashboard, report, app, or semantic model. With the item open, select the title menu to show the owner contact. The contact might be an individual or a group.
 
 ## Clean up the sample
 
-Finished exploring the sample? In **My workspace**, use **More options (...) > Delete** on the sample report, dashboard, and semantic model.
+- In **My workspace**, select **More options (...) > Delete** for the sample report, dashboard, and semantic model.
 
 ## Related content
 
-- [Learn about the Power BI capabilities for business users](end-user-reading-view.md)
+- [Power BI capabilities for business users](end-user-reading-view.md)

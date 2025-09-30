@@ -18,14 +18,6 @@
       href: end-user-sign-in.md
     - name: "Get around Power BI service"
       href: end-user-experience.md
-    - name: "Find content with Home"
-      href: end-user-home.md
-    - name: "Search and sort content"
-      href: end-user-search-sort.md
-    - name: "Look up the content owner and last refreshed date"
-      href: end-user-fresh.md
-    - name: "View related content"
-      href: end-user-related.md
   - name: "Navigate, discover, and organize content"
     items:
     - name: "Favorite dashboards, reports, and apps"
@@ -38,6 +30,12 @@
       href: end-user-app-view.md
     - name: Get started with org apps (preview)
       href: org-app-items/org-app-items.md
+    - name: "Search and sort content"
+      href: end-user-search-sort.md
+    - name: "View related content"
+      href: end-user-related.md
+    - name: "Look up the content owner and last refreshed date"
+      href: end-user-fresh.md
       displayName: apps, org apps, preview, distribution, sharing
     - name: Org apps and CI/CD
       href: org-app-items/org-app-cicd.md
