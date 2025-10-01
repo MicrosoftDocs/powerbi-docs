@@ -18,12 +18,12 @@ LocalizationGroup: Visualizations
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 > [!IMPORTANT]
-> **Bing Maps visual deprecation:**  
-> Beginning with the October 2025 release, the Bing Maps visual icon will be removed from the default visuals list in the Power BI visualization pane. Users will no longer be able to create new Bing Maps visuals. Existing Bing Maps visuals will continue to work for approximately six months after this change.
+> The Bing Maps visual icon is scheduled for deprecation, with the timeline still being planned. To prepare for this upcoming change, **upgrade to Azure Maps** *unless*:
 >
-> This change doesn't affect customers whose Power BI tenant’s home geography region is China, South Korea, or sovereign cloud, or any region where Azure Maps isn't yet available. The restriction is based on the tenant’s home geography, not the user’s physical location.
+> - you have team members who would consume the report in China, Korea, or government clouds.
+> - you're physically located in China, Korea, or a government cloud (regardless of where your home tenant is located).
 >
-> To learn about Azure Maps, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started).
+> We're working to support Azure Maps in unsupported regions. To learn about Azure Maps, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started).
 
 [!INCLUDE [note-azure-maps](../includes/note-azure-maps.md)]
 
