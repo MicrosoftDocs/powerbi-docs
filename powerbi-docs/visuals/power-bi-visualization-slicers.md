@@ -7,7 +7,8 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/12/2023
+ms.date: 09/30/2025
+ai-usage: ai-assisted
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -15,27 +16,28 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Suppose you want your report readers to be able to look at overall sales metrics, but also highlight performance for individual district managers and different time frames. You could create separate reports or comparative charts. You could add filters in the Filters pane. Or you could use *slicers*. Slicers are another way of filtering. They're displayed on the report page, and narrow the portion of the semantic model that's shown in the other report visualizations.
+Suppose you want readers to view overall sales metrics and highlight performance by district manager and time frame. You could create separate reports, build comparative charts, or add filters in the Filters pane. Or use *slicers*. Slicers filter data directly on the report page. They narrow the portion of the semantic model shown in the other visuals.
 
-![Animation of Slicer in action.](media/power-bi-visualization-slicers/slicer2.gif)
+:::image type="content" source="media/power-bi-visualization-slicers/slicer2.gif" alt-text="Screenshot of an animated Power BI slicer filtering related visuals on a report page.":::
 
-This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also covers controlling which visuals are affected by a slicer, syncing with slicers on other pages, and filtering and formatting slicers.
+This article shows you how to create and format a basic slicer by using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also covers controlling which visuals a slicer affects, syncing slicers across pages, and filtering and formatting slicers.
 
 These other articles explain how to make specific types of slicers:
 
-- [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md).
-- [Relative date slicers](desktop-slicer-filter-date-range.md).
-- [Relative time slicers](../create-reports/slicer-filter-relative-time.md).
-- Responsive, [resizable slicers](../create-reports/power-bi-slicer-filter-responsive.md).
-- [Hierarchy slicers](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) with multiple fields.
+- [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md)
+- [Relative date slicers](desktop-slicer-filter-date-range.md)
+- [Relative time slicers](../create-reports/slicer-filter-relative-time.md)
+- [Responsive, resizable slicers](../create-reports/power-bi-slicer-filter-responsive.md)
+- [Hierarchy slicers](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) with multiple fields
 
 ## When to use a slicer
-Slicers are a great choice when you want to:
 
-- Display commonly used or important filters on the report canvas for easier access.
-- Make it easier to see the current filtered state without having to open a drop-down list. 
-- Filter by columns that are unneeded and hidden in the data tables.
-- Create more focused reports by putting slicers next to important visuals.
+Use slicers to:
+
+- Show commonly used filters on the report canvas for quick access
+- Show the current filter state without opening a drop-down list
+- Filter by columns that are hidden in data tables
+- Create focused reports by placing slicers next to key visuals
 
 Power BI slicers don't support:
 
@@ -46,79 +48,71 @@ Power BI slicers don't support:
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-This slicer filters data by district manager. If you want to follow along with this procedure, download the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+This slicer filters data by district manager. To follow along, download the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Open Power BI Desktop, and from the menu bar, select **File** > **Open report**.
-
-2. Browse to the **Retail Analysis Sample PBIX.pbix** file, then select **Open**.
-
-3. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
-
-4. On the **Overview** page, with nothing selected on the report canvas, select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: in the **Visualizations** pane to create a new slicer.
+1. Browse to the **Retail Analysis Sample PBIX.pbix** file and select **Open**.
+1. In the navigation pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
+1. On the **Overview** page, with nothing selected on the report canvas, select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: in the **Visualizations** pane to create a slicer.
 
 # [Power BI service](#tab/powerbi-service)
 
-This slicer filters data by district manager. If you want to follow along with this procedure, use the built-in Retail Analysis Sample.
+This slicer filters data by district manager. To follow along, use the built-in Retail Analysis Sample.
 
 1. In the Power BI service (app.powerbi.com), select **Learn** in the left nav.
-
-2. On the Learning center page, under **Sample reports**, scroll until you see the **Retail Analysis Sample**.
+1. On the Learning center page, under **Sample reports**, scroll until you see **Retail Analysis Sample**.
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-service-learning-center-samples.png" alt-text="Screenshot of the Learning center page with the Retail Analysis Sample.":::
 
-3. Select the **Retail Analysis Sample**. It opens in Reading mode.
-
-4. Select **Edit** on the menu bar to display the **Visualizations** pane, then select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: to create a new slicer.
+1. Select **Retail Analysis Sample**. It opens in reading mode.
+1. Select **Edit** on the menu bar to display the **Visualizations** pane, and select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: to create a slicer.
 
 ---
-5. With the new slicer selected, from the **Fields** pane, expand the **District** table and select **DM** to populate the slicer.
-
-6. Resize and drag the elements on the canvas to make room for the slicer. If you resize the slicer too small, its items are cut off. 
+1. With the slicer selected, in the **Fields** pane, expand the **District** table and select **DM** to populate it.
+1. Resize or move elements on the canvas to make room for the slicer. If the slicer is too small, items are cut off.
 
    The new slicer is now populated with a list of district manager names and their selection boxes.
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer-desktop.png" alt-text="Screenshot of Slicer populated with district manager names.":::
 
-7. Select names on the slicer and notice the effects on the other visualizations on the page. Select names again to deselect them, or hold down the **Ctrl** key to select more than one name. Selecting all names has the same effect as selecting none.
+1. Select names on the slicer to filter other visuals. Select a name again to clear it, or hold <kbd>Ctrl</kbd> to select multiple names. Selecting all names has the same effect as selecting none.
 
-    :::image type="content" source="media/power-bi-visualization-slicers/slicer-vertical-multi-select.png" alt-text="Screenshot showing vertical slicer with three names selected and report filtered.":::
+    :::image type="content" source="media/power-bi-visualization-slicers/slicer-vertical-multi-select.png" alt-text="Screenshot of vertical slicer with three names selected and report filtered.":::
 
 ## Control which page visuals are affected by slicers
 
-By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date slicers that you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
+By default, slicers on a report page filter all other visuals on that page, including other slicers. When you choose values in the list and date slicers, the other visuals update. Power BI filters data to the intersection of the selected slicer values. 
 
-Use visual interactions to exclude some page visualizations from being affected by others. For example, in the Retail Analysis sample on the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which is information that you may want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
+Use visual interactions to exclude some page visualizations from being affected by others. For example, in the Retail Analysis sample on the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows comparative data for district managers by month that you might want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-1. Select a slicer that you previously created. In this case, on the **Overview** page of the Retail Analysis sample report, select the **District Manager** slicer.
+1. Select the **District Manager** slicer on the **Overview** page of the Retail Analysis sample report.
+1. On the ribbon, go to **Format**, and then select **Edit interactions**.
 
-2. Select the **Format** ribbon, then select **Edit interactions**.
+   :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-desktop.png" alt-text="Screenshot of the Edit interactions button in Power BI Desktop.":::
 
-   :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-desktop.png" alt-text="Screenshot of the Edit Interactions button on desktop version.":::
-
-    Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the other visuals on the page. Initially, the **Filter** option is preselected on all the controls.
+Filter controls :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: with **Filter** and **None** options appear above the other visuals on the page. The **Filter** option is selected by default.
 
 # [Power BI service](#tab/powerbi-service)
 
 1. Select a slicer that you previously created. In this case, on the **Overview** page of the Retail Analysis sample report, select the **District Manager** slicer.
+1. Select **Visual interactions**, and then turn on **Edit interactions**.
 
-2. Select **Visual interactions** from the menu, and then turn on **Edit interactions**.
-
-   :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-service.png" alt-text="Screenshot of the Edit Interactions button in the service version.":::
+   :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-service.png" alt-text="Screenshot of the Edit interactions button in the Power BI service.":::
 
     Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the other visuals on the page. Initially, the **Filter** option is preselected on all the controls.
 
 ---
-3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **District Manager** slicer from filtering it. 
+1. Select **None** in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **District Manager** slicer from filtering it.
 
-For more information about editing interactions, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
+Learn more in [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
 ## Sync and use slicers on other pages
 
 You can sync a slicer and use it on any or all pages in a report.
 
-In the current report, the **District Monthly Sales** page has a **District Manager (or DM)** slicer, but what if we also wanted that slicer on the **New Stores** page? The **New Stores** page has a slicer, but it provides only **Store Name** information. With the **Sync slicers** pane, you can sync the **District Manager** slicer to these pages, so that slicer selections on any page affect visualizations on all three pages.
+The **District Monthly Sales** page has a **District Manager (or DM)** slicer. You might also want that slicer on the **New Stores** page. The **New Stores** page has a slicer, but it provides only **Store Name** information. With the **Sync slicers** pane, you can sync the **District Manager** slicer to these pages, so that slicer selections on any page affect visualizations on all three pages.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -142,23 +136,23 @@ In the current report, the **District Monthly Sales** page has a **District Mana
 
 ---
 
-2. On the **District Monthly Sales** page of the report, select the **District Manager** slicer. 
+1. On the **District Monthly Sales** page of the report, select the **District Manager** slicer. 
 
-   Because you've already created a **District Manager** slicer on the **Overview** page, the **Sync slicers** pane appears as follows:
+   Because you already created a **District Manager** slicer on the **Overview** page, the **Sync slicers** pane appears like this:
 
    :::image type="content" source="media/power-bi-visualization-slicers/9-sync-slicers.png" alt-text="Screenshot of Sync District Monthly Sales slicer.":::
 
-3. In the **Sync** column of the **Sync slicers** pane, select the **Overview**, **District Monthly Sales**, and **New Stores** pages. 
+1. In the **Sync** column of the **Sync slicers** pane, select the **Overview**, **District Monthly Sales**, and **New Stores** pages. 
 
    This selection causes the **District Monthly Sales** slicer to sync across these three pages. 
 
-4. In the **Visible** column of the **Sync slicers** pane, select the **New Stores** page. 
+1. In the **Visible** column of the **Sync slicers** pane, select the **New Stores** page. 
 
-   This selection causes the **District Monthly Sales** slicer to be visible in these three pages. The **Sync slicers** pane now appears as follows:
+   This selection makes the **District Monthly Sales** slicer visible on these three pages. The **Sync slicers** pane now appears like this:
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-sync-slicer-finished.png" alt-text="Screenshot of Select pages in Sync slicers.":::
 
-5. Observe the effects of syncing the slicer and making it visible on the other pages. On the **District Monthly Sales** page, notice that the **District Manager** slicer now shows the same selections as on the **Overview** page. On the **New Stores** page, the **District Manager** slicer is now visible and it selections affect the selections that are visible in the **Store Name** slicer.
+1. Observe the effects of syncing. On the **District Monthly Sales** page, the **District Manager** slicer shows the same selections as on the **Overview** page. On the **New Stores** page, the **District Manager** slicer is visible, and its selections affect what's shown in the **Store Name** slicer.
 
     >[!TIP]
     >Although the slicer initially appears on the synced pages at the same size and position as on the original page, you can move, resize, and format synced slicers on the various pages independently.
@@ -187,11 +181,11 @@ You can also sync two or more separate slicers. Syncing slicers is useful when w
 
 1. Test that the sync works the way you want by changing the selection in one of the slicers. Observe that it gets updated in the other slicer in the group.
 
-## Filtering slicers
+## Filter slicers
 
-You can apply visual-level filters to slicers to reduce the list of values that are displayed in the slicer. For example you might filter out blank values from a list slicer, or filter out certain dates from a range slicer. When you filter the slicer, it only affects *the values that are shown in the slicer*, not *the filter that the slicer applies to other visuals* when you make a selection. For example, let's say you apply a filter to a range slicer to only show certain dates. The selection on the slicer will only show the first and last dates from that range, but you would still see other dates in your other visuals. Once you change the selected range in the slicer, you'll see the other visuals update. Clearing the slicer would show all the dates again.
+Apply visual-level filters to a slicer to reduce the list of values it shows. For example, filter out blank values from a list slicer or certain dates from a range slicer. Filtering a slicer only changes the values shown in the slicer, not the filter it applies to other visuals when you make a selection. For example, apply a filter to a range slicer to show only certain dates. The selection in the slicer only shows the first and last dates from that range, but you still see other dates in your other visuals. When you change the selected range in the slicer, you see the other visuals update. Clear the slicer to show all dates again.
 
-For more information on visual-level filters, see [Filter types](../create-reports/power-bi-report-filter-types.md).
+Learn more about visual-level filters in [Filter types](../create-reports/power-bi-report-filter-types.md).
 
 ## Format slicers
 
@@ -199,46 +193,44 @@ Different formatting options are available, depending on the slicer type. For **
 
 ### Visual options
 
-1. Select the "District Manager" slicer, and select the **Format** icon ![Screenshot of Format icon.](media/power-bi-visualization-slicers/power-bi-format-brush.png) in the **Visualizations** pane.
+1. Select the **District Manager** slicer, and select the **Format** icon ![Screenshot of the Format icon (paint roller) in the Visualizations pane.](media/power-bi-visualization-slicers/power-bi-format-brush.png) in the **Visualizations** pane.
 
-1. Resize the slicer to be wide but not tall.
-
+1. Resize the slicer so it's wide, not tall.
 1. In the **Format** pane, under **Visual**, expand **Slicer settings** > **Options**, and select **Tile**.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-tile-slicer.png" alt-text="Screenshot of Tile slicer.":::
+   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-tile-slicer.png" alt-text="Screenshot of a tile slicer after selecting the Tile option in Slicer settings.":::
 
    >[!TIP]
-   >Slicer list items are sorted in ascending order, by default. To reverse the sort order to descending, select the ellipsis (**...**) in the top right corner of the slicer > **Sort axis** > **Sort descending**.
+   >By default, slicer list items sort in ascending order. To switch to descending order, select the ellipsis (**...**) in the top right corner of the slicer > **Sort axis** > **Sort descending**.
 
 1. Expand **Slicer header** and change the **Title text** to "District Manager".
-
 1. Expand **Values** and select a **Background Color**. This color is one of the theme colors, `#abdae5`.
 
     :::image type="content" source="media/power-bi-visualization-slicers/slicer-tile-color.png" alt-text="Screenshot showing tile slicer with background color.":::
 
    >[!TIP]
-   >  - With the **Tile** style, deselected items show the chosen text and background colors. Selected items use the system default, usually a black background with white text.
-   >  - With the **Vertical list** style, items always show the selected colors, and selected check boxes are always black.
+   >- With the **Tile** style, deselected items show the chosen text and background colors. Selected items use the system default, usually a black background with white text.
+   >- With the **Vertical list** style, items always show the selected colors, and selected check boxes are always black.
 
 ### Responsive layout
 
-After you select the Tile style, you can turn **On** the **Responsive** layout to change the size and arrangement of slicer items according to the view screen and slicer size.
+After you select the **Tile** style, turn **On** **Responsive** layout to change the size and arrangement of slicer items based on the view screen and slicer size.
 
 :::image type="content" source="media/power-bi-visualization-slicers/responsive-slicer.png" alt-text="Screenshot of selecting responsive layout.":::
 
-Responsive layout is only available for tile slicers and numeric range slicers, not for vertical list slicers. For more information about responsive layouts, see [Create a responsive slicer you can resize](../create-reports/power-bi-slicer-filter-responsive.md).
+Responsive layout works only for tile and numeric range slicers, not for vertical list slicers. For more information about responsive layouts, see [Create a responsive slicer you can resize](../create-reports/power-bi-slicer-filter-responsive.md).
 
-For range slicers, responsive formatting changes the style of the slider and provides more flexible resizing. Read more about [numeric range slicers](../create-reports/desktop-slicer-numeric-range.md).
+For range slicers, responsive formatting changes the slider style and lets you resize more flexibly. Read more about [numeric range slicers](../create-reports/desktop-slicer-numeric-range.md).
 
 ### Selection controls
 
-- The **Show "Select all" option** is **Off** by default. Under **Selection**, turn **Show "Select all" option** to **On** to add a **Select all** item to the slicer. With it, you can select or deselect all items as once. When all items are selected, selecting one item deselects it, allowing an *is-not* type of filter.
+- The **Show "Select all" option** is **Off** by default. Under **Selection**, turn **Show "Select all" option** to **On** to add a **Select all** item to the slicer. Use it to select or deselect all items at once. When all items are selected, selecting one item deselects it, which allows an *is-not* filter.
 
     :::image type="content" source="media/power-bi-visualization-slicers/slicer-select-all.png" alt-text="Screenshot of adding a Select all option to a slicer.":::
 
-- **Single select** is **Off** by default. Selecting an item selects it. When you hold down the **Ctrl** key, you can select multiple items. Selecting an item again deselects it.
+- **Single select** is **Off** by default. Select an item to select it. Hold <kbd>Ctrl</kbd> to select multiple items. Select an item again to deselect it.
 
-    When you turn **Single select** to **On**, you can't select more than one item at a time. In vertical list slicers, the check boxes become radio buttons.
+    When **Single select** is **On**, you can select only one item. In vertical list slicers, the check boxes become radio buttons.
 
 ### Title options
 
@@ -256,11 +248,11 @@ Other formatting options are **Off** by default. Turn **On** these options to co
 
     There's also a **Border** option on the **Visual** tab. It adds a border either over, under, or next to each option in the slicer. It's separate from and unaffected by the **General** settings.
 
-- **Shadow**: Add a drop shadow to the slider. Under **General** > **Effects**.
+- **Shadow**: Add a drop shadow to the slicer. Under **General** > **Effects**.
 
 ## Related content
 
-For more about slicers, see the following articles:
+Learn more about slicers in these articles:
 
 - [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md)
 - [Relative date slicers](desktop-slicer-filter-date-range.md)
