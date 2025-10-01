@@ -15,7 +15,7 @@ LocalizationGroup: Consumers
 # Use and monitor metrics
 
 > [!WARNING]
-> Metric sets are going away. Starting October 25th, creating new Metric sets will no longer be possible, but you can access existing Metric sets until November 15, 2025. Please note that Scorecards and all associated datasets or measures will not be impacted by this change.
+> Metric sets are going away. Starting October 25th, creating new metric sets will no longer be possible, but you can access existing metric sets until November 15, 2025. Please note that scorecards and all associated datasets or measures will not be impacted by this change.
 
 Metric sets are collections of metrics and key performance indicators you create and use for greater accuracy, consistency, and reliability in reports and analysis. This guide walks you through methods to effectively use and monitor metrics in Power BI, including integrating metrics into reports, notebooks, and APIs, as well as understanding their lineage and usage.
 
