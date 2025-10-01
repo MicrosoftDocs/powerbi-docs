@@ -169,8 +169,6 @@ To modify your data's location type, follow these steps:
 
 1. On your data layer, select **more options** and choose **Location type** from the dropdown menu.
 
-   :::image type="content" source="media/power-bi-visualizations-arcgis/layer-options.png" alt-text="Screenshot of the layer more options menu with Location type selected to change point or boundary rendering.":::
-
    Accept the default values to render the locations as points on the map and select the United States.
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/location-type-us-points.png" alt-text="Screenshot of Location type settings showing United States selected and points chosen as the default representation.":::
