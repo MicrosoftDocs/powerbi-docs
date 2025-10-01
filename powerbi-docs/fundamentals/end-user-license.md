@@ -64,7 +64,7 @@ The first user, Pradtanna, has Office 365 E5, which includes a Power BI Pro lice
 
 :::image type="content" source="media/end-user-license/power-bi-license-office.png" alt-text="Screenshot of Office portal subscriptions tab showing Office 365 E5 subscription.":::
 
-The second user, Zalan, has a free license. The license name is Fabric (Free). 
+The second user, Zalan, has a free license. The license name is Fabric (Free).
 
 :::image type="content" source="media/end-user-license/power-bi-license-free.png" alt-text="Screenshot of Office portal subscriptions tab for a free license.":::
 
