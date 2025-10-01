@@ -79,7 +79,7 @@ This slicer filters data by district manager. To follow along, use the built-in 
 
     :::image type="content" source="media/power-bi-visualization-slicers/slicer-vertical-multi-select.png" alt-text="Screenshot of vertical slicer with three names selected and report filtered.":::
 
-## Control which page visuals are affected by slicers
+## Control which page visuals slicers affect
 
 By default, slicers on a report page filter all other visuals on that page, including other slicers. When you choose values in the list and date slicers, the other visuals update. Power BI filters data to the intersection of the selected slicer values. 
 
@@ -126,7 +126,7 @@ The **District Monthly Sales** page has a **District Manager (or DM)** slicer. Y
 
 # [Power BI service](#tab/powerbi-service)
 
-1. In the Power BI service, on the **View** menu, set the **Sync slicers pane** to **On**.
+1. In the Power BI service, on the **View** menu, select the **Sync slicers pane**.
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-service-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in the Power BI service.":::
 
@@ -144,7 +144,7 @@ The **District Monthly Sales** page has a **District Manager (or DM)** slicer. Y
 
 1. In the **Sync** column of the **Sync slicers** pane, select the **Overview**, **District Monthly Sales**, and **New Stores** pages. 
 
-   This selection causes the **District Monthly Sales** slicer to sync across these three pages. 
+   This selection causes the **District Monthly Sales** slicer to sync across these three pages.
 
 1. In the **Visible** column of the **Sync slicers** pane, select the **New Stores** page. 
 
@@ -156,11 +156,10 @@ The **District Monthly Sales** page has a **District Manager (or DM)** slicer. Y
 
     >[!TIP]
     >Although the slicer initially appears on the synced pages at the same size and position as on the original page, you can move, resize, and format synced slicers on the various pages independently.
-
     >[!NOTE]
     >If you sync a slicer to a page but don't make it visible on that page, slicer selections made on the other pages still filter the data on the page.
 
-### Sync separate slicers
+## Sync separate slicers
 
 You can also sync two or more separate slicers. Syncing slicers is useful when working with composite models, as you might want to make the same selection across sources without relying on cross-source group relationships. To sync two or more separate slicers, you mark them as being part of a group.
 
@@ -174,9 +173,9 @@ You can also sync two or more separate slicers. Syncing slicers is useful when w
 
 1. Then select another slicer you want to sync with the first, and enter the same name in the **group name** box. Be sure to enter it exactly the same.
 
-1. Make sure to select either **Sync field changes to other slicers**, **Sync filter changes to other slicers** or both depending on your scenario. 
+1. Make sure to select either **Sync field changes to other slicers**, **Sync filter changes to other slicers**, or both depending on your scenario.
 
-   - If you just want to keep the slicers in sync so filters set by the slicers are kept in sync, select **Sync filter changes to other slicers**. 
+   - If you just want to keep the slicers in sync so filters set by the slicers are kept in sync, select **Sync filter changes to other slicers**.
    - If you also want to make sure that any changes you make to the field on which the slicers are based get synced across the group, select **Sync field changes to other slicers**.
 
 1. Test that the sync works the way you want by changing the selection in one of the slicers. Observe that it gets updated in the other slicer in the group.
@@ -189,7 +188,7 @@ Learn more about visual-level filters in [Filter types](../create-reports/power-
 
 ## Format slicers
 
-Different formatting options are available, depending on the slicer type. For **Style**, **Vertical list** is the default. Select **Tile** to produce a slicer with tiles or buttons arranged horizontally, and scroll arrows to access items that don't fit in the slicer. By using the **Tile** style with **Responsive** layout, and **Background** coloring, you can produce buttons or tiles rather than standard list items, and make slicer items resize to fit different screen sizes and layouts.  
+Different formatting options are available, depending on the slicer type. For **Style**, **Vertical list** is the default. Select **Tile** to produce a slicer with tiles or buttons arranged horizontally, and scroll arrows to access items that don't fit in the slicer. By using the **Tile** style with **Responsive** layout and **Background** coloring, you can produce buttons or tiles rather than standard list items, and make slicer items resize to fit different screen sizes and layouts.  
 
 ### Visual options
 

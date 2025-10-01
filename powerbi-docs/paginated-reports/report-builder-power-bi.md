@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.date: 09/25/2025
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 ---
 
@@ -88,6 +88,6 @@ Power BI Report Builder is fully supported on [Azure Virtual Desktop](/azure/vir
 ## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
-- [Video-based course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
+- [Video-based course: Power BI Paginated Reports in a Day](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT&index=1)
 - [Keyboard shortcuts for accessibility in Report Builder](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)

@@ -91,7 +91,7 @@ Dataflows that exist in Premium have the following considerations and limitation
 - Cyclic dependencies of linked tables aren't allowed.
 - A linked table can't be joined with a regular table that gets its data from an on-premises data source.
 - When a query (query *A*, for example) is used in the calculation of another query (query *B*) in dataflows, query *B* becomes a calculated table. Calculated tables can't refer to on-premises sources.
-- Linked tables that reference entities in different tenants aren't supported. 
+- Linked tables that reference entities in different tenants aren't supported.
 
 **Compute engine:**
 
@@ -113,7 +113,7 @@ Dataflows that exist in Premium have the following considerations and limitation
   - Failing to ensure those credentials are the same results in a *Key not found* error upon semantic model refresh
 
 > [!NOTE]
-> If the dataflow structure is changed, such as a new or renamed column, the semantic model doesn't show the change, and the change may also cause a data refresh to fail in the Power BI service for the semantic model, until refreshed in Power BI Desktop and re-published.
+> If the dataflow structure is changed, such as a new or renamed column, the semantic model doesn't show the change. The change may also cause a data refresh to fail in the Power BI service for the semantic model, until refreshed in Power BI Desktop and re-published.
 
 ## Dataflows and named connections
 
@@ -127,17 +127,17 @@ When using dataflows with [named connections](/power-query/connection-authentica
 - ADLS isn't available in GCC, GCC High, or DOD environments. For more information, see [Power BI for US government customers](../../enterprise/service-govus-overview.md).
 - You must be assigned as an owner of the resource, due to changes in the ADLS Gen 2 APIs.
 - Azure subscription migration isn't supported, but there are two alternatives to do so:
-  - First approach: after migration, the user can detach workspaces and reattach them. If using the tenant level account, you must detach all workspaces then detach at the tenant level, and reattach. This can be undesirable for customers who don't want to delete all of their dataflows, or have many workspaces. 
+  - First approach: after migration, the user can detach workspaces and reattach them. If using the tenant level account, you must detach all workspaces then detach at the tenant level, and reattach. This can be undesirable for customers who don't want to delete all of their dataflows, or have many workspaces.
   - Second approach: if the previous approach isn't feasible, submit a support request to change the subscription ID in the database.
 - ADLS doesn't support most elements in the list in the [Directories and file names](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata) section of the article for workspace naming and dataflow naming, due to the following limitations:
-  - Power BI either returns an unhelpful error, or allows the process to happen but the refresh fails. 
+  - Power BI either returns an unhelpful error, or allows the process to happen but the refresh fails.
 - Cross tenant ADLS subscriptions aren't supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Microsoft Entra ID.
 
 ## Dataflow data types
 
 The data types supported in dataflows are the following:
 
-|Mashup data type	|Dataflow data type |
+|Mashup data type|Dataflow data type |
 |---------|---------|
 |Time|Time|
 |Date|Date|

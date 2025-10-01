@@ -1,5 +1,5 @@
 ---
-title: Use Shape maps in Power BI Desktop (Preview)
+title: Use Shape Maps in Power BI Desktop (Preview)
 description: Create relative comparisons to regions using Shape maps in Power BI Desktop.
 author: miguelmyersMS
 ms.author: miguelmyers
@@ -70,9 +70,9 @@ Power BI Desktop adds an empty Shape map visual to the report canvas.
    :::image type="content" source="media/desktop-shape-map/power-bi-map-keys.png" alt-text="Screenshot of map key values used to build the shape map.":::
 
 1. Choose which way to display a three-dimensional object (the earth) as a two-dimensional map using the **Projection** dropdown.
-    - **Equirectangular**: cylindrical projection that converts the globe into a grid with each rectangular cell having the same size, shape, and area.
-    - **Mercator**: cylindrical projection with the equator depicted as the line of tangency. Polar areas are more distorted than Equirectangular projections.
-    - **Orthographic**: a projection from an infinite point, as if from deep space. It gives the illusion of a three-dimensional globe.
+    - **Equirectangular**: Cylindrical projection that converts the globe into a grid with each rectangular cell having the same size, shape, and area.
+    - **Mercator**: Cylindrical projection with the equator depicted as the line of tangency. Polar areas are more distorted than Equirectangular projections.
+    - **Orthographic**: A projection from an infinite point, as if from deep space. It gives the illusion of a three-dimensional globe.
 
     For more detailed information, see [Esri map projections reference](https://downloads.esri.com/support/documentation/ao_/710Understanding_Map_Projections.pdf).
 
@@ -112,13 +112,13 @@ If you'd like to experiment with custom maps, download this PBIX file and follow
 
     :::image type="content" source="media/desktop-shape-map/shape-map-7a.png" alt-text="Screenshot of custom shape map with Texas highlighted.":::
 
-You can do interesting things with the individual state maps as well, and show more detail based on the districts it contains.
+You can do interesting things with the individual state maps as well and show more detail based on the districts it contains.
 
 :::image type="content" source="media/desktop-shape-map/shape-map-7b.png" alt-text="Screenshot of Texas shape map.":::
 
 ## Getting map data
 
-To quickly get data into a model to test **Shape map**, you can copy one of the tables at the end of this article, then select **Enter data** from the **Home** ribbon.
+To quickly get data into a model to test **Shape map**, you can copy one of the tables at the end of this article, and then select **Enter data** from the **Home** ribbon.
 
 :::image type="content" source="media/desktop-shape-map/shape-map-4-new.png" alt-text="Screenshot of button on menu bar to enter data.":::
 
@@ -126,10 +126,10 @@ In this example, we've selected the data for Mexico and pasted it into Desktop u
 
 :::image type="content" source="media/desktop-shape-map/power-bi-create-table.png" alt-text="Screenshot of data entered using copy and paste.":::
 
-You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select **Load** and the table is added to the data model for Power BI Desktop.
+You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell just like you can do in Excel. When finished, select **Load**, and the table is added to the data model for Power BI Desktop.
 
 > [!NOTE]
-> When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+> When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. *Don't* use two-letter abbreviations, as some countries or regions may not be properly recognized.
 >
 > If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 

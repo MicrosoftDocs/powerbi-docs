@@ -1,5 +1,5 @@
 ---
-title: Create an ArcGIS map in Power BI
+title: Create an ArcGIS Map in Power BI
 description: 'Create an ArcGIS map by ESRI in Power BI. ArcGIS for Power BI is a mapping visualization that helps you to enrich your data, reports, and dashboards.'
 author: miguelmyersMS
 ms.author: miguelmyers
@@ -171,17 +171,17 @@ To modify your data's location type, follow these steps:
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/layer-options.png" alt-text="Screenshot of the layer more options menu with Location type selected to change point or boundary rendering.":::
 
-   Accept the default values to render the locations as points on the map and in one country/region, the United States.
+   Accept the default values to render the locations as points on the map and select the United States.
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/location-type-us-points.png" alt-text="Screenshot of Location type settings showing United States selected and points chosen as the default representation.":::
 
-1. Select **OK** to save your settings.
+1. Select **Update** to save your settings.
 
 For more information about specifying the location type, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/specify-the-location-type.htm).
 
 ### Customize the map's symbology
 
-ArcGIS for Power BI uses values in the **Fields** pane to determine how it should render locations on your map with predictive *smart mapping*. Use the **Symbology** feature to modify the default styles.
+ArcGIS for Power BI uses values in the **Data** pane to determine how it should render locations on your map with predictive *smart mapping*. Use the **Symbology** feature to modify the default styles.
 
 Choose a different style theme and customize the symbols and colors used to represent locations on the map. The available themes and style options depend on the values you added to the **Fields** pane.
 
@@ -189,9 +189,9 @@ To change a layer's symbology, follow these steps:
 
 1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select **Layers** :::image type="icon" source="media/power-bi-visualizations-arcgis/layers.png":::.
 
-1. On your data layer, select **more options** :::image type="icon" source="media/power-bi-visualizations-arcgis/more-options-button.png"::: and choose **Symbology** from the menu.
+1. On your data layer, select the **Symbology**, :::image type="icon" source="media/power-bi-visualizations-arcgis/symbology-icon.png"::: icon.
 
-   The **Symbol style** pane appears, displaying the available symbol style themes.
+   The **Symbol type** dropdown appears, displaying the available symbol type themes.
 
 #### Change the map theme
 
@@ -204,9 +204,9 @@ To change the theme, follow these steps:
    :::image type="content" source="media/power-bi-visualizations-arcgis/style-map-theme.png" alt-text="Screenshot of the Symbol style pane displaying available map themes such as Counts and Amounts (size) and other styling choices.":::
 
    > [!NOTE]
-   > Not all themes appear in the style pane if your selected data values do not match the options for that style.
+   > Not all themes appear in the style pane if your selected data values don't match the options for that style.
 
-1. For this tutorial, choose the **Counts and Amounts (size)** theme.
+1. For this tutorial, choose the **Size** theme.
 
 For more information about themes, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/apply-themes-in-arcgis-for-power-bi.htm).
 
@@ -216,7 +216,7 @@ Symbol styles allow you to fine-tune how data is presented on the map. The avail
 
 To change the symbol style, follow these steps:
 
-1. In the **Symbology** pane, hover over the **Counts and Amounts (size)** panel to expand the **Style options** link.
+1. On the **Layers** menu, select the **Style Options** tab.
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/style-options-hover.png" alt-text="Screenshot of hovering over Counts and Amounts (size) theme to reveal the Style options link in the Symbology pane.":::
 
@@ -231,8 +231,6 @@ To change the symbol style, follow these steps:
    This example shows the theme set to **Counts and Amounts (size)** with a green symbol set to 30 percent transparency.
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/style-symbol-size-map.png" alt-text="Screenshot of map after applying green symbols at 30 percent fill transparency using the Counts and Amounts (size) theme.":::
-
-1. Close the **Symbol style** pane.
 
 ## Analyze your data
 
@@ -254,7 +252,7 @@ To display the selection tools, follow these steps:
 
 1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select **Selection tools** :::image type="icon" source="media/power-bi-visualizations-arcgis/select.png"::: to expand the toolset.
 
-   There are several selection tools. The tools available in the **Selection tools** menu vary depending on the type of layer that is currently active.
+   There are several selection tools. The tools available in the **Selection tools** menu vary depending on the type of layer that's currently active.
 
    | **Tool** | **Description** |
    | --- | --- |
@@ -285,13 +283,12 @@ To pin a location, follow these steps:
 
     Keywords can include an address, place, or point of interest. As you type, similar recent searches or suggestions based on similar keywords appear.
 
-1. From the results list, choose **Pittsburgh International Airport** and select **Close**.
+1. From the results list, choose **Pittsburgh International Airport**, and select **Close**.
 
    A symbol appears on the map, and the map automatically zooms to the location, pinning it for the duration of your session.
 
 > [!NOTE]
 > Pins remain only for the current session; you can't save a pinned location with the map.
-
 For more information, see [Pin a location](https://doc.arcgis.com/en/power-bi/latest/workflows/find-an-address-or-place.htm) in the ArcGIS for Power BI online help.
 
 ### Add a reference layer
@@ -308,17 +305,17 @@ The Standard ArcGIS for Power BI account includes a curated selection of United 
 
 To add a demographic layer, follow these steps:
 
-1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select **Analysis tools** :::image type="icon" source="media/power-bi-visualizations-arcgis/analysis.png"::: to expand the toolset.
+1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select **Layers** :::image type="icon" source="media/power-bi-visualizations-arcgis/layers.png"::: to expand the toolset.
 
-1. Select the **Reference layer** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-13.png":::.
+1. Select the **+ArcGIS data** tab.
 
-   The **Reference layer** pane appears, displaying the **Demographics** tab and its selection of layers.
+   The **Add layer** pane appears, displaying the **Demographics** tab and its selection of layers.
 
    View these layers as a list :::image type="icon" source="media/power-bi-visualizations-arcgis/list-view.png"::: or detailed view :::image type="icon" source="media/power-bi-visualizations-arcgis/details-view.png":::
 
-1. Scroll through the gallery and select **Add** :::image type="icon" source="media/power-bi-visualizations-arcgis/add-button.png"::: on the layer you want to add to your map.
+1. Scroll through the gallery, and select the layer you want to add to your map.
 
-   For this tutorial, find the **2020 USA Average Household Income** layer and select **Add** :::image type="icon" source="media/power-bi-visualizations-arcgis/add-button.png":::.
+   For this tutorial, find the **2025 Median Household Income** layer and select the checkbox to add.
 
    The map updates to include the reference layer.
 
@@ -342,7 +339,7 @@ To add an ArcGIS reference layer, follow these steps:
 
    The gallery populates with several possible results.
 
-1. Locate the **USA 117th Congressional Districts** layer and select **Add** :::image type="icon" source="media/power-bi-visualizations-arcgis/add-button.png":::.
+1. Locate the **USA 117th Congressional Districts** layer, and select the check box to add.
 
    The map updates to include this ArcGIS public reference layer.
 
@@ -358,13 +355,13 @@ In this tutorial, you use the **Pittsburgh International Airport** you pinned ea
 
 To find locations within a specific distance, or *ring buffer*, of the point of origin, follow these steps:
 
-1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select **Analysis tools** :::image type="icon" source="media/power-bi-visualizations-arcgis/analysis.png"::: to expand the toolset.
+1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select **Analysis** :::image type="icon" source="media/power-bi-visualizations-arcgis/analysis.png"::: to expand the toolset.
 
-1. Select **Drive-time** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-14.png":::.
+1. Select **Buffer/Drive-time** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-14.png":::.
 
-   The **Drive Time** pane appears.
+   The **Buffer/Drive Time** pane appears.
 
-1. From the **Choose input features** menu, choose the starting point for the calculation.
+1. From the **Input layer (or features)** menu, choose the starting point for the calculation.
 
    You can select a layer in the map, use your current location, or choose **Click to add a point** to select a location manually.
 
@@ -375,12 +372,12 @@ To find locations within a specific distance, or *ring buffer*, of the point of 
    > [!TIP]
    > If your map is styled using Clustering, you won't be able to select the clustered locations on the map. Choose a different theme and try again.
 
-1. From the **Choose analysis type** menu in the **Drive Time** pane, choose how the area around the point you selected is measured:
+1. From the **Analysis type** menu in the **Buffer/Drive Time** pane, choose how the area around the point you selected is measured:
 
    - To use a distance-based measurement, select **Ring buffer**. Set the unit of measurement using the drop-down menu and change the distance using the text box or arrow buttons (maximum 100 miles).
    - To use a time-based measurement, select **Drive Time**. Change the amount of time using the text box or arrow buttons (maximum 30 minutes).
 
-   For this tutorial, choose **Ring buffer** and **50** miles and select **Run Analysis**.
+   For this tutorial, choose **Ring buffer** and **50** miles, and select **Run Analysis**.
 
    The map shows a circle surrounding the pinned airport location.
 
@@ -413,7 +410,7 @@ To add an infographics card to a map, follow these steps:
 1. Select the arrow next to a category to view the variables available for that category. For example, select **Population** to expand that category and then expand **Age 5 Year Increments** to view available subcategories.
 1. For this tutorial, select **Population > (Year) Age: 5-Year Increments > (Year) Median Age**.
 
-   An infographic appears on the map displaying **2021 Median Age** for the current extent of the map.
+   An infographic appears on the map displaying **2025 Median Age** for the current extent of the map.
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/map-infographic.png" alt-text="Screenshot of the map with an infographic card displaying 2021 median age for the current extent.":::
 
