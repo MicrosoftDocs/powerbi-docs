@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 10/02/2025
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
@@ -18,12 +18,15 @@ LocalizationGroup: Visualizations
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 > [!IMPORTANT]
-> The Bing Maps visual icon is scheduled for deprecation, with the timeline still being planned. To prepare for this upcoming change, **upgrade to Azure Maps** *unless*:
+> The **Bing Maps** visual is scheduled for deprecation, with the timeline still being planned. Any existing Bing Maps already in your reports will still be available.
+>
+> To prepare for this upcoming change, **upgrade to Azure Maps** *unless*:
 >
 > - you have team members who would consume the report in China, Korea, or government clouds.
-> - you're physically located in China, Korea, or a government cloud (regardless of where your home tenant is located).
+> - you're physically located in China or Korea (regardless of where your home tenant is located).
+> - you're part of a government cloud (regardless of where your home tenant is located).
 >
-> We're working to support Azure Maps in unsupported regions. To learn about Azure Maps, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started).
+> We're working to support Azure Maps in these unsupported regions. **If you and all report users are located in a supported region, you're encouraged to start using Azure Maps now.** Learn how to [upgrade to Azure Maps](/azure/azure-maps/power-bi-visual-conversion). To see the list of supported regions, see [Azure Maps service geographic scope](/azure/azure-maps/geographic-scope). For more information about Azure Maps, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started).
 
 [!INCLUDE [note-azure-maps](../includes/note-azure-maps.md)]
 
