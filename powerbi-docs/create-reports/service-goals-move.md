@@ -62,9 +62,9 @@ In some scenarios, the column names that come with a scorecard aren't right for 
 1. Select the column you want to rename. To reset all column names to their default settings (that is, the original names), select **Reset to default** at the top.
 
 > [!NOTE]
-> We don't allow names that are blank or longer than 25 characters.
+> Column names must be between 1 and 25 characters long.
 
-![User's image](media/service-goals-move/image.png)
+    :::image type="content" source="media/service-goals-move/rename-column.png" alt-text="Screenshot depicting how to rename a column or reset it to the default name.":::
 
 ## Move or copy a scorecard (preview)
 
