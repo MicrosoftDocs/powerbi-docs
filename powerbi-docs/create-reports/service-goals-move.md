@@ -64,7 +64,7 @@ In some scenarios, the column names that come with a scorecard aren't right for 
 > [!NOTE]
 > Column names must be between 1 and 25 characters long.
 
-    :::image type="content" source="media/service-goals-move/rename-column.png" alt-text="Screenshot depicting how to rename a column or reset it to the default name.":::
+:::image type="content" source="media/service-goals-move/rename-column.png" alt-text="Screenshot depicting how to rename a column or reset it to the default name.":::
 
 ## Move or copy a scorecard (preview)
 
