@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/25/2023
+ms.date: 10/02/2025
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
@@ -16,6 +16,17 @@ LocalizationGroup: Visualizations
 # Create and use filled maps (choropleth maps) in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+> [!IMPORTANT]
+> The **Bing Maps** visual is scheduled for deprecation, with the timeline still being planned. Any existing Bing Maps already in your reports will still be available.
+>
+> To prepare for this upcoming change, **upgrade to Azure Maps** *unless*:
+>
+> - you have team members who would consume the report in China, Korea, or government clouds.
+> - you're physically located in China or Korea (regardless of where your home tenant is located).
+> - you're part of a government cloud (regardless of where your home tenant is located).
+>
+> We're working to support Azure Maps in these unsupported regions. **If you and all report users are located in a supported region, you're encouraged to start using Azure Maps now.** Learn how to [upgrade to Azure Maps](/azure/azure-maps/power-bi-visual-conversion). To see the list of supported regions, see [Azure Maps service geographic scope](/azure/azure-maps/geographic-scope). For more information about Azure Maps, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started).
 
 [!INCLUDE [note-azure-maps](../includes/note-azure-maps.md)]
 
@@ -29,7 +40,7 @@ Power BI integrates with Bing to provide default map coordinates (a process call
 
 > [!IMPORTANT]
 > Your firewall might require updates to allow access to the URLs that Bing uses for geocoding. Make sure your firewall allows access to the following URLs:
-> 
+>
 > - `https://dev.virtualearth.net/REST/V1/Locations`
 > - `https://platform.bing.com/geo/spatial/v1/public/Geodata`
 > - `https://www.bing.com/api/maps/mapcontrol`
@@ -58,7 +69,6 @@ This tutorial uses the Sales and Marketing Sample .pbix file.
 1. Download the [Sales and Marketing Sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to your desktop.
 
 1. In Power BI Desktop, select **File** > **Open report**.
-
 1. Browse to and select the **Sales and Marketing Sample** .pbix file, and then select **Open**.
 
    The **Sales and Marketing Sample** .pbix file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
@@ -70,9 +80,7 @@ This tutorial uses the Sales and Marketing Sample .pbix file.
 This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
 1. Sign in to the Power BI service (`app.powerbi.com`).
-
 1. Select **Learn** in the navigation pane.
-
 1. On the **Learning center** page, under **Sample reports**, locate and select the **Sales and Marketing Sample** to download it. The sample opens in report view.
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-sales-marketing-sample.png" alt-text="Screenshot that shows the Sales and Marketing Sample open in report view in the Power BI service." lightbox="media/power-bi-visualization-filled-maps-choropleths/power-bi-sales-marketing-sample-expanded.png" border="false":::
@@ -105,7 +113,7 @@ Let's create a filled map by using location data from the Sales and Marketing Sa
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png" alt-text="Screenshot that shows how to convert the visual to a filled map in Power BI Desktop.":::
 
    Bing Maps uses the **State** field for the **Location** option to create the filled map. Bing Maps provides filled map shapes for locations around the world.
-   
+
    > [!IMPORTANT]
    > The **Location** option must contain a valid value for Power BI to create the filled map. Valid locations include countries/regions, states, counties, cities, zip codes, postal codes, and so on. 
 
@@ -132,7 +140,6 @@ Now you can filter the map to display specific data and apply custom formatting.
 You can also apply various formatting options to a filled map visual.
 
 1. On the **Visualizations** pane, select the paint brush icon to open the **Format visual** section. Make sure the **Visual** tab is selected.
-
 1. On the **Format** pane, expand the **Fill colors** section, and then expand the **Colors** options.
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-format-colors.png" alt-text="Screenshot that shows how to switch to the Format pane and view the Fill colors options.":::
@@ -176,7 +183,6 @@ You can also apply various formatting options to a filled map visual.
 Power BI supports tooltips for areas on a filled map and for specific fields. When you configure tooltips, you can hover on areas on your map to see details about the underlying data.
 
 1. Expand the **Data** and **Visualizations** panes, if they're collapsed.
-
 1. On the **Data** pane, locate the **SalesFact** > **Sentiment Gap** field. Drag the field onto the **Tooltips** option on the **Visualizations** pane.
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-add-tooltip-field.png" alt-text="Screenshot that shows how to add a field from the Data pane to the Tooltips option on the Visualizations pane.":::

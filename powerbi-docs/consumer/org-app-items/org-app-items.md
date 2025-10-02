@@ -284,7 +284,7 @@ Want to grant extra permissions to a user? Find the user you would like to manag
 > There are select cases where your org app doesn't automatically propagate or revoke access to items the org app is dependent on.
 > **Access propagation**: For example, a report with a paginated report visual, also known as a report definition language (RDL) visual, is dependent on a paginated report item. Org apps don't propagate access to underlying paginated reports at this time. If your org app consumers have a broken view in an org app, consider all the items your consumers need access to, grant necessary access, and have your consumers view the org app again.
 
-Here are the items org apps propagate and revoke access to:
+Here are the items an org app propagates and revokes access to:
 - The org app item itself 
   - Included report and paginated report items
     - The underlying semantic model for a report or paginated report item (for a model in the same workspace or separate workspace)
@@ -367,3 +367,10 @@ In list views, org app items are labeled as "org app" while Power BI apps are la
 ![Item type labels on apps and org apps.](media/org-app-items/org-app-and-app-type-labels.png)
 
 Org app consumers without permissions to edit the org app are able to view, favorite, and share the org app. If a consumer doesn't have share permissions, they can only share links with users who already have access.
+
+## Considerations and limitations
+Some report capabilities available in workspace apps aren't supported in org apps, for example:
+- filters set by user on a report page aren't persisted when navigating from page to page in a single report
+- filters set by user on a report item aren't persisted when navigating to another item in the org app and then returning to that previous report item
+- reset to default isn't available for report items
+- some report toolbar capabilities like bookmarks aren't available in org apps
