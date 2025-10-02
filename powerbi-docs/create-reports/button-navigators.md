@@ -186,6 +186,21 @@ Create a page navigation button and select the conditional formatting option for
 
    :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
 
+## Accessibility guidance
+To ensure your approach of using the bookmark navigator is accessible and meets requirements, follow these best practices:
+
+1. Name the bookmark buttons clearly and use alt text appropriately
+   - Bookmark buttons should have clear, descriptive labels so all users understand what content will be modified. In addition, use the 'Alt text' field to provide an accessible name that gives screen reader users the same clarity.
+   - Whenever possible, tie both to the name of the data grid or its containing group. (ex. Bookmark button's label: “Sales Details” &  Bookmark button's alt text: “Show Sales Details data.”)
+  
+2. Ensure logical focus order
+   - The bookmark buttons and the content they control should be positioned so that users navigating by keyboard can move directly between them.
+   - Avoid placing unrelated focusable elements (such as slicers) between the bookmark navigator and the content it adjusts to ensure smooth navigation and help users quickly associate the button with its corresponding data.
+     
+3. Provide meaningful names for data grids
+   - Each data grid should have a clear name that reflects which button is currently active.
+   - The group containing the grid can have a consistent name, while the grid itself updates (for example, “Summary data” or “Detailed data”).
+
 ## Considerations and limitations
 
 - If the bold, italic and underline settings are **On** for the **Default** state, you can't turn them off for the **Selected** state.
@@ -200,3 +215,4 @@ For more information about features that are similar or interact with buttons, t
 - [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
 - [Use drillthrough in Power BI reports](desktop-drillthrough.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
+
