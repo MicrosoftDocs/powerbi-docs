@@ -367,3 +367,10 @@ In list views, org app items are labeled as "org app" while Power BI apps are la
 ![Item type labels on apps and org apps.](media/org-app-items/org-app-and-app-type-labels.png)
 
 Org app consumers without permissions to edit the org app are able to view, favorite, and share the org app. If a consumer doesn't have share permissions, they can only share links with users who already have access.
+
+## Considerations and limitations
+Some report functionality available in workspace apps are not supported in org apps, for example:
+- filters set by user on a report page are not persisted when navigating from page to page in a single report
+- filters set by user on a report item are not persisted when navigating to another item in the org app and then returning to that previous report item
+- reset to default is not available for report items
+- some report toolbar functionality like bookmarks are not available in org apps
