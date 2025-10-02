@@ -284,7 +284,7 @@ Want to grant extra permissions to a user? Find the user you would like to manag
 > There are select cases where your org app doesn't automatically propagate or revoke access to items the org app is dependent on.
 > **Access propagation**: For example, a report with a paginated report visual, also known as a report definition language (RDL) visual, is dependent on a paginated report item. Org apps don't propagate access to underlying paginated reports at this time. If your org app consumers have a broken view in an org app, consider all the items your consumers need access to, grant necessary access, and have your consumers view the org app again.
 
-Here are the items an org app will propagate and revoke access to:
+Here are the items an org app propagates and revokes access to:
 - The org app item itself 
   - Included report and paginated report items
     - The underlying semantic model for a report or paginated report item (for a model in the same workspace or separate workspace)
