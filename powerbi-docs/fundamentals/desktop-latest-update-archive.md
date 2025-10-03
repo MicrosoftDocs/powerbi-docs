@@ -661,16 +661,6 @@ You can also download previous versions of Power BI Desktop if your organization
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
 
-Select the following links to download this earlier version: 
-
-* [February 2025 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-02.exe)
-* [February 2025 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-02_x64.exe)
-
-
-
-
-
-
 
 ## January 2025 Update (2.139.1576.0)
 
@@ -773,14 +763,6 @@ You can also download previous versions of Power BI Desktop if your organization
 * It might not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [January 2025 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-12.exe)
-* [January 2025 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-12_x64.exe)
-
-
-
 
 
 ## November 2024 Update (2.138.782.0)
