@@ -50,7 +50,7 @@ For data write-back scenarios, user data functions have native connection manage
 * Fabric warehouses 
 * Fabric lakehouses (for files)
 
-For most write-back scenarios, we recommend using SQL database as your underlying data source. SQL databases perform well with the heavy read/write operations required in reporting scenarios. To use a SQL database, a tenant admin needs to [Enable SQL database in Fabric using admin portal tenant settings](/fabric/database/sql/enable).
+For most write-back scenarios, we recommend using SQL database as your underlying data source. SQL databases perform well with the heavy read/write operations required in reporting scenarios.
 
 For working samples of user data functions, see [Translytical task flow examples](https://gist.github.com/Sujata994/c354ec8d0821e875e45c86f2bd1d5cc8).
 
