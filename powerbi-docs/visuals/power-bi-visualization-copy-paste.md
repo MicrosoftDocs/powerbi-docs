@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/09/2025
+ms.date: 10/02/2025
 ms.custom: Sample - Sales and Marketing, Sample - Corporate Spend
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to copy and paste visualizations so that I can easily share and reuse them across different reports and applications.
@@ -180,7 +180,7 @@ As a Power BI user, the awareness of any considerations and limitations when cop
 **Q:** Will all content from a long table visual be copied when I use the copy-paste feature in Power BI?<br>
 **A:** Not necessarily. When copying visuals such as tables that require scrolling to view all rows or columns, only the visible portion of the visual at the time of copying is included. Any data that extends beyond the scrollable view might be cut off and not captured in the pasted output. To ensure complete data capture, consider exporting the data instead.
 
-**Q:** Why is the right side of my table visual (without scrollbar) getting cut off?<br>
+**Q:** Why is the right side of my table visual (without the horizontal scrollbar) getting cut off?<br>
 **A:** This happens when the combined width of all columns is wider than the available rendering space. The table doesn't automatically shrink its columns to fit, which causes the content on the far right to be cropped. To fix this, you can manually make the columns narrower until you get the complete visual or consider exporting the data instead.
 
 ## Related content
