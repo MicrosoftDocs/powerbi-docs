@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 02/28/2023
+ms.date: 10/01/2025
 LocalizationGroup: Samples
 ---
 # Tutorial: Create a decomposition tree with a Power BI sample
