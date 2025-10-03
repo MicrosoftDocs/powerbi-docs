@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-RWRCPO
-ms.date: 05/30/2024
+ms.date: 10/02/2023
 LocalizationGroup: Create reports
 ---
 
@@ -164,11 +164,11 @@ To create this example, start by creating a single-column table in Power BI Desk
 
    The **Create Table** dialog box opens.
 
-2. In the **Create Table** dialog box, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination, so ensure that the values you entered exactly match your drillthrough page names.
+1. In the **Create Table** dialog box, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination, so ensure that the values you entered exactly match your drillthrough page names.
 
    :::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Screenshot showing Create a table.":::
 
-3. After you've created the table, add it to the page as a single-select slicer:
+1. After you've created the table, add it to the page as a single-select slicer:
 
    :::image type="content" source="media/desktop-buttons/button-navigate-slicer.png" alt-text="Screenshot showing Navigate slicer.":::
 
@@ -186,10 +186,24 @@ Create a page navigation button and select the conditional formatting option for
 
    :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
 
+## Accessibility guidance
+
+To ensure your approach of using the bookmark navigator is accessible and meets requirements, follow these best practices:
+
+- Name the bookmark buttons clearly and use alt text appropriately:
+   - Use clear, descriptive labels for bookmark buttons so all users understand what content will be modified.
+   - Use the **Alt text** field to provide an accessible name that gives screen reader users the same clarity.
+   - Whenever possible, tie both to the name of the data grid or its containing group (for example, the Bookmark button's label is "Sales details" and alt text is "Show sales details data.")
+- Ensure logical focus order:
+   - The bookmark buttons and the content they control should be positioned so that users navigating by keyboard can move directly between them.
+   - Avoid placing unrelated focusable elements (such as slicers) between the bookmark navigator and the content it adjusts to ensure smooth navigation and help users quickly associate the button with its corresponding data.
+- Use meaningful names for data grids:
+   - Each data grid should have a clear name that reflects which button is currently active.
+   - The group containing the grid can have a consistent name, whereas the grid itself updates (for example, "Summary data" or "Detailed data").
+
 ## Considerations and limitations
 
 - If the bold, italic and underline settings are **On** for the **Default** state, you can't turn them off for the **Selected** state.
-
 - Bookmark navigator selected state is not reflected in exports of the report.
 
 ## Related content
@@ -200,3 +214,5 @@ For more information about features that are similar or interact with buttons, t
 - [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
 - [Use drillthrough in Power BI reports](desktop-drillthrough.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
+
+

@@ -56,20 +56,20 @@ Multirow cards display one or more data points, one per row.
 
 Single number cards display a single fact, a single data point. Sometimes a single number is the most important thing you want to track in your Power BI dashboard or report, such as total sales, market share year over year, or total opportunities.  
 
-For more information, see [Create a Card (big number tile)](power-bi-visualization-card.md).
+For more information, see [Create a Card (large number tile)](power-bi-visualization-card.md).
 
 ## Combo charts
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/combo-small.png" alt-text="Screenshot of a Combo chart.":::
 
-A combo chart combines a column chart and a line chart. Combining the two charts into one lets you make a quicker comparison of the data. Combo charts can have one or two Y axes, so be sure to look closely. 
+A combo chart combines a column chart and a line chart. Combining the two charts into one lets you make a quicker comparison of the data. Combo charts can have one or two Y axes, so be sure to look closely.
 
 Combo charts are a great choice:
 
 - When you have a line chart and a column chart with the same X axis.
 - To compare multiple measures with different value ranges.
 - To illustrate the correlation between two measures in one visual.
-- To check whether one measure meets the target, which is defined by another measure.
+- To check whether one measure meets the target, which another measure defines.
 - To conserve canvas space.
 
 For more information, see [Combo charts in Power BI](power-bi-visualization-combo-chart.md).
@@ -78,7 +78,7 @@ For more information, see [Combo charts in Power BI](power-bi-visualization-comb
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition.png" alt-text="Screenshot of a Decomposition tree." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition-expanded.png":::
 
-The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It's also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
+The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It's also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for exploration and conducting root cause analysis.
 
 ## Doughnut charts
 
@@ -103,7 +103,7 @@ For more information, see [Funnel Charts in Power BI](power-bi-visualization-fun
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/gauge-m.png" alt-text="Screenshot of a Radial gauge chart.":::
 
-A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal. The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading. And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
+A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal. The line (needle) represents the goal, or target value. The shading represents progress toward that goal. And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
 In the example, we're a car retailer, tracking our Sales team's average sales per month. Our goal is 200,000 and represented by the location of the needle. The minimum possible average sales are 100,000 and we set the maximum as 250,000. The blue shading shows that we're currently averaging approximately $180,000 this month. Luckily, we still have another week to reach our goal.
 
@@ -124,7 +124,7 @@ A key influencer chart displays the major contributors to a selected result or v
 
 Key influencers are a great choice to help you understand the factors that influence a key metric. For example, *what influences customers to place a second order* or *why were sales so high last June*.
 
-For more information, see [Key influencer charts in Power BI](power-bi-visualization-influencers.md)
+For more information, see [Key influencer charts in Power BI](power-bi-visualization-influencers.md).
 
 ## KPIs
 
@@ -179,7 +179,7 @@ For more information, see [Azure Maps visual for Power BI](/azure/azure-maps/pow
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-filled-map.png" alt-text="Screenshot of a Filled map.":::
 
-A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region. Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).
+A filled map uses shading, tinting, or patterns to display how a value differs in proportion across a geography or region. Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/higher).
 
 >[!TIP]
 >The more intense the color, the larger the value.
@@ -225,7 +225,7 @@ For more information, see [Add a Power Apps visual to your report](power-bi-visu
 
 The Q&A visual provides users with a text box to query data in Power BI reports. Users can use natural language to query data, and the Q&A visual interprets the query and provides an appropriate visualization.
 
-For example, if a user asks a question like "What were the product sales in 2019?" then the Q&A visual queries the relevant data and create an appropriate visualization to display the results. This visualization can be in many different formats, such as a chart or a table.
+For example, if a user asks a question like "What were the product sales in 2019?" then the Q&A visual queries the relevant data and creates an appropriate visualization to display the results. This visualization can be in many different formats, such as a chart or a table.
 
 >[!TIP]
 >Similar to the [Q&A experience on dashboards](../create-reports/power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language.
@@ -273,7 +273,7 @@ For more information, see [Scatter charts in Power BI](power-bi-visualization-sc
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png" alt-text="Screenshot of a high density Scatter chart." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter-expanded.png":::
 
-By definition, high-density data is sampled to quickly create visuals that are responsive to interactivity. High-density sampling uses an algorithm that eliminates overlapping points, and ensures that all points in the data set are represented in the visual. It doesn't just plot a representative sample of the data.  
+By definition, high-density data is sampled to quickly create visuals that are responsive to interactivity. High-density sampling uses an algorithm that eliminates overlapping points, and it ensures that all points in the data set are represented in the visual. It doesn't just plot a representative sample of the data.  
 
 This ensures the best combination of responsiveness, representation, and clear preservation of important points in the overall data set.
 
@@ -283,7 +283,7 @@ For more information, see [High Density Scatter charts in Power BI](../create-re
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-slicer.png" alt-text="Screenshot of a slicer.":::
 
-A slicer is a standalone chart that can be used to filter the other visuals on the page. Slicers come in many different formats (category, range, date, etc.) and can be formatted to allow selection of only one, many, or all of the available values. 
+A slicer is a standalone chart that can be used to filter the other visuals on the page. Slicers come in many different formats (category, range, date, etc.) and can be formatted to allow selection of only one, many, or all of the available values.
 
 Slicers are a great choice to:
 
@@ -345,7 +345,7 @@ For more information, see [Treemaps in Power BI](power-bi-visualization-treemaps
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/waterfall-small.png" alt-text="Screenshot of a Waterfall chart.":::
 
-A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how an initial value (for example, net income) is affected by a series of positive and negative changes.
+A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how a series of positive and negative changes affects an initial value (for example, net income).
 
 The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often start on the horizontal axis, while the intermediate values are floating columns. Because of this "look," waterfall charts are also called bridge charts.
 
@@ -353,9 +353,9 @@ Waterfall charts are a great choice:
 
 - When you have changes for the measure across time or across different categories.
 - To audit the major changes contributing to the total value.
-- To plot your company's annual profit by showing various sources of revenue and arrive at the total profit (or loss).
+- To plot your company's annual profit by showing various sources of revenue and to arrive at the total profit (or loss).
 - To illustrate the beginning and the ending headcount for your company in a year.
-- To visualize how much money you make and spend each month, and the running balance for your account.
+- To visualize how much money you make and spend each month and the running balance for your account.
 
 For more information, see [Waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md).
 
