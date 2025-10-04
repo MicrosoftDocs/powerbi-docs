@@ -203,7 +203,7 @@ To ensure your approach of using the bookmark navigator is accessible and meets 
 
 ## Considerations and limitations
 
-- If the bold, italic and underline settings are **On** for the **Default** state, you can't turn them off for the **Selected** state.
+- If two or more bookmark navigators are used on a report page and the bookmarks within multiple bookmark groups that control filters, drill and expansion, or formatting that is not disjoint between the groups, then the active bookmarks on each navigator may not reflect what users think should be active.  This behavior is due to the current limitation that reports can only have one _active bookmark_ at a time, so each bookmark navigator will fall back to the last-clicked bookmark within that navigator.  We suggest ensuring that bookmarks between two different groups are sufficiently disjoint, and biasing against using multiple bookmark navigators for complex analysis.
 - Bookmark navigator selected state is not reflected in exports of the report.
 
 ## Related content
@@ -214,5 +214,6 @@ For more information about features that are similar or interact with buttons, t
 - [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
 - [Use drillthrough in Power BI reports](desktop-drillthrough.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
+
 
 
