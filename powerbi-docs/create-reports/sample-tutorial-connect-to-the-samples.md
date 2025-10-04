@@ -15,7 +15,7 @@ LocalizationGroup: Samples
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Power BI has several built-in samples (with a report and semantic model) that you can either import into the [Power BI service (https://app.powerbi.com)](https://app.powerbi.com) or download and open in Power BI Desktop.
+Power BI has several built-in samples with a report and semantic model. You can either import them into the [Power BI service (https://app.powerbi.com)](https://app.powerbi.com) or download and open sample files in Power BI Desktop.
 
 :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png" alt-text="Screenshot showing the Overview page of the Retail Analysis Sample." lightbox="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png":::
 
@@ -52,9 +52,9 @@ The prerequisites depend on whether you're using the Power BI service or Power B
 
 ## Import the sample in the Power BI service
 
-1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
+1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left pane.
 
-1. On the **Learning center** page, under **Sample reports**, scroll to the right until you can select the **Retail Analysis Sample**.
+1. On the **Learning center** page, under **Sample reports**, scroll by selecting the right arrow until you can select the **Retail Analysis Sample**.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-learn.png" alt-text="Screenshot shows the Power BI Learning center where you can import samples." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-learn.png":::
 
@@ -64,7 +64,7 @@ The prerequisites depend on whether you're using the Power BI service or Power B
 
     :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-entry.png" alt-text="Screenshot showing the Retail Analysis Sample entry in your workspace." lightbox="media/sample-tutorial-connect-to-the-samples/retail-entry.png":::
 
-Now let's explore the [dashboard](#explore-the-dashboard) and [semantic model](#explore-the-semantic-model).
+Now let's explore the [dashboard](#explore-the-dashboard), reports, and [semantic model](#explore-the-semantic-model).
 
 ## Explore the dashboard
 
@@ -115,7 +115,7 @@ The Q&A feature in the Power BI service lets you explore your data in your own w
 
 If a tile was [pinned from a report](/power-bi/create-reports/service-dashboard-pin-live-tile-from-report), the report opens when you select it.
 
-1. Select one of the other tiles in the dashboard to open the underlying report. In this example, select the area chart, **This Year's Sales, Last Year's Sales by Fiscal Month**.  
+1. Select one of the other tiles in the dashboard. In this example, select the area chart, **This Year's Sales, Last Year's Sales by Fiscal Month**. The underlying report opens.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png" alt-text="Screenshot showing Retail Analysis Sample dashboard with This Year's Sales chart highlighted." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png":::
 
@@ -161,7 +161,7 @@ To auto-create a report:
 
 1. In your workspace, select the **Retail Analysis Sample** semantic model to open it.
 
-1. From the **Discover business insights** pane select **Explore this data** > **Auto-create a report**.
+1. From the **Discover business insights** pane, select **Explore this data** > **Auto-create a report**.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png" alt-text="Screenshot showing the Auto-create report menu item." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png":::
 
@@ -172,7 +172,7 @@ To auto-create a report:
     :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png" alt-text="Screenshot showing a brand-new report in report-editing mode." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png":::
 
     > [!NOTE]
-    > When you switch to edit mode, you'll lose access to **Your data** pane.
+    > When you switch to edit mode, you lose access to **Your data** pane.
 
 ## Download the sample in Power BI Desktop
 
@@ -203,11 +203,14 @@ To download the sample:
 
 ## What's in your report?
 
-When you download a sample *.pbix* file, you've downloaded not just a report but also the *underlying semantic model*. When you open the file, Power BI Desktop loads the data with its associated queries and relationships. You can view the underlying data and relationships, but you can't view the underlying queries in the Query Editor.
+The downloaded sample *.pbix* file includes not just a report but also the underlying semantic model. When you open the file, Power BI Desktop loads the data with its associated queries and relationships. 
+
+> [!NOTE]
+> You can view the underlying data and relationships, but you can't view the underlying queries in the Query Editor.
 
 To view the underlying data and model:
 
-1. Switch to [Table view](../connect-data/desktop-data-view.md) by selecting the Table view icon :::image type="icon" source="media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png":::.
+1. Switch to [Table view](../connect-data/desktop-data-view.md) by selecting the Table view icon: :::image type="icon" source="media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png":::
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png" alt-text="Screenshot showing Table view in Power BI Desktop." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png":::
 
@@ -215,7 +218,7 @@ To view the underlying data and model:
 
    When you're modeling your data, sometimes you want to see what's actually in the rows and columns of a table, without creating a visual on the report canvas. This fact is especially true when you're creating measures and calculated columns, or you need to identify a data type or data category.
 
-1. Switch to [Model view](../transform-model/desktop-relationship-view.md) by selecting the model view icon: :::image type="icon" source="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png":::.
+1. Switch to [Model view](../transform-model/desktop-relationship-view.md) by selecting the model view icon: :::image type="icon" source="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png":::
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png" alt-text="Screenshot showing Model view in Power BI Desktop." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png":::
 
@@ -225,7 +228,7 @@ To view the underlying data and model:
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
-We hope this tour has shown how Power BI dashboards, semantic models, relationships, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md) and [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md).  
+This tutorial showed how Power BI dashboards, semantic models, relationships, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md) and [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md).  
 
 > [!div class="nextstepaction"]
 > [Samples for the Power BI service](sample-datasets.md)
