@@ -151,7 +151,7 @@ One easy way of exploring a semantic model is to run [quick insights](../consume
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-quick-insights.png" alt-text="Screenshot showing the insights report for the Retail Analysis Sample." lightbox="media/sample-tutorial-connect-to-the-samples/retail-quick-insights-zoom.png":::
 
-1. If an insight is of interest to you, pin it to the dashboard.
+1. If an insight is of interest, you can pin it to the dashboard.
 
 ### Create a report from the semantic model
 
@@ -161,27 +161,41 @@ To auto-create a report:
 
 1. In your workspace, select the **Retail Analysis Sample** semantic model to open it.
 
-1. From the **Discover business insights** pane select **Explore this data**, then **Auto-create a report**.
+1. From the **Discover business insights** pane select **Explore this data** > **Auto-create a report**.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png" alt-text="Screenshot showing the Auto-create report menu item." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png":::
 
-   Power BI shows you the new report. Select **Edit** to revise and improve it.
+1. Select some data from the list of available fields. For example, under **Store** select **Count of rows** and **Territory**.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png" alt-text="Screenshot showing a brand-new report in report-editing mode." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png":::
+1. Select **Edit** to revise and improve the report. 
+
+    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png" alt-text="Screenshot showing a brand-new report in report-editing mode." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png":::
+
+    > [!NOTE]
+    > When you switch to edit mode, you'll lose access to **Your data** pane.
 
 ## Download the sample in Power BI Desktop
 
 When you first open the sample *.pbix* file in Power BI Desktop, it displays in *Report* view where you can explore and modify existing report pages and add new ones, with your own visualizations. Report view provides almost the same design experience as report *Editing* view in the Power BI service. You can move visualizations around, copy and paste, change the kind of visualization, and so on.
 
+> [!NOTE]
+> You might be prompted to convert Bing Maps visuals to Azure Maps. You should upgrade because Bing Maps is being deprecated. 
+>
+> For a comprehensive understanding of Azure Maps, including how to get started, what data is sent to Azure, and the service's limitations, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started).
+
 Unlike editing a report in the Power BI service, in Power BI Desktop you can also work with your queries and model your data to ensure your data supports the best insights in your reports. You can then save your Power BI Desktop file wherever you like, whether it's to your local drive or to the Power BI service.
 
 To download the sample:
 
-1. Download the [Retail Analysis sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) and open it in Power BI Desktop.
+1. Download the [Retail Analysis sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+
+1. Open the sample *Retail Analysis Sample PBIX.pbix* in Power BI Desktop. 
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png" alt-text="Screenshot showing the Retail Analysis sample in Power BI report view." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png":::
 
-   The file opens in Report view. There are four tabs at the bottom of the report editor. These tabs represent the four pages in this report. For this example, the **New Stores** page is currently selected.
+   The file opens in Report view. There are four tabs at the bottom of the report editor. These tabs represent the four pages in this report. 
+
+1. Select the **New Stores** page.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png" alt-text="Screenshot showing the New Stores tab highlighted.":::
 
@@ -201,7 +215,7 @@ To view the underlying data and model:
 
    When you're modeling your data, sometimes you want to see what's actually in the rows and columns of a table, without creating a visual on the report canvas. This fact is especially true when you're creating measures and calculated columns, or you need to identify a data type or data category.
 
-1. Switch to [Model view](../transform-model/desktop-relationship-view.md) by selecting the following icon: :::image type="icon" source="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png":::.
+1. Switch to [Model view](../transform-model/desktop-relationship-view.md) by selecting the model view icon: :::image type="icon" source="media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png":::.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png" alt-text="Screenshot showing Model view in Power BI Desktop." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png":::
 
