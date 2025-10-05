@@ -23,7 +23,7 @@ This tutorial shows you how to:
 
 > [!div class="checklist"]
 >
-> - Sign up for a Power BI license, if you don't have one.
+> - Sign up for a Power BI license if you don't have one.
 > - Import the Retail Analysis sample and add it to the [Power BI service](https://app.powerbi.com).
 > - Explore the sample in the service.
 > - Create a visual by using natural language in *Q&A*.
@@ -47,7 +47,7 @@ The prerequisites depend on whether you're using the Power BI service or Power B
 > [!TIP]
 > You don't need a Power BI license to explore the samples in Power BI Desktop. 
 
-- You need to [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). It's a free download.
+- To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). It's a free download.
 - You need to download the [Retail Analysis Sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 ## Import the sample in the Power BI service
