@@ -8,25 +8,27 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 10/01/2025
+ms.date: 10/06/2025
 LocalizationGroup: Samples
 ---
 # Tutorial: Create a decomposition tree with a Power BI sample
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you start with a built-in Power BI sample semantic model and create a report with a *decomposition tree*. A decomposition tree is an interactive visual for exploration and conducting root cause analysis. 
+In this tutorial, you start with a built-in Power BI sample semantic model and create a report with a *decomposition tree*. A decomposition tree is an interactive visual for exploration and conducting root cause analysis.
 
 A decomposition tree is also an artificial intelligence (AI) visualization. You can ask it to find the next category, or dimension, to drill down into based on certain criteria. For more information, see [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
 
 :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-final.png" alt-text="Screenshot shows the completed decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-final.png":::
 
+> [!NOTE]
+> You can also create a decomposition tree in the Power BI service by following similar steps. For simplicity, the rest of this tutorial demonstrates the process in Power BI Desktop.
+
 This tutorial shows you how to:
 
 > [!div class="checklist"]
 >
-> - Sign up for a Power BI license if you don't have one.
-> - Import the Retail Analysis sample and add it to the [Power BI service](https://app.powerbi.com).
+> - Download the Retail Analysis sample and open it in Power BI Desktop.
 > - Create a decomposition tree.
 > - Do root cause analysis on your data in the decomposition tree in Edit mode.
 > - Save the report and continue root cause analysis in reading view.
@@ -35,54 +37,23 @@ If you want to get familiar with the built-in sample in this tutorial and its sc
 
 ## Prerequisites
 
-The prerequisites depend on whether you're using the Power BI service or Power BI Desktop.
-
-### Power BI service (app.powerbi.com)
-
-- You need a [Fabric free license](../consumer/end-user-features.md) to explore samples and save them to your workspace in the [Power BI service](https://app.powerbi.com). [Sign up for a free trial](https://aka.ms/try-fabric) if you don't have access.
-
-### Power BI Desktop
-
 > [!TIP]
 > You don't need a Power BI license to explore the samples in Power BI Desktop. 
 
 - To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). It's a free download.
 - You need to download the [Retail Analysis Sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-
-## Import the sample in the Power BI service
-
-1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left pane.
-
-1. On the **Learning center** page, under **Sample reports**, scroll by selecting the right arrow until you can select the **Retail Analysis Sample**.
-
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-learn.png" alt-text="Screenshot shows the Power BI Learning center where you can import samples." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-learn.png":::
-
-1. Select the **Retail Analysis Sample**. 
-
-1. Power BI imports a copy of the built-in sample in reading mode into your current workspace. After import, you see a dashboard, report, and semantic model available in your workspace.
-
-### Create a report from the semantic model
-
-You have several options for exploring your semantic model. In this tutorial, you're going to explore the semantic model by creating your own report from scratch.
-
-1. Select **More options** (**...**) > **Create report**.
-
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png" alt-text="Screenshot shows the Create report menu item." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png":::
-
-   The semantic model opens in report editing mode.
-
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png" alt-text="Screenshot shows a brand-new report in edit mode." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png":::
-
-## Create a decomposition tree
-
-Let's add a decomposition tree to our report for analysis.
+## Open the sample in Power BI Desktop
 
 1. Download the [Retail Analysis Sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Open the Retail Analysis Sample in Power BI Desktop. The report should open in **Report view**. 
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-visualizations-report-view.png" alt-text="Screenshot shows the report view with the option to choose visualizations." lightbox="media/sample-tutorial-decomp-tree/retail-visualizations-report-view.png":::
+
+## Create a decomposition tree
+
+Let's add a decomposition tree to our report for analysis in Power BI Desktop.
 
 1. Under **Build visual** in the **Visualizations** pane, select the **Decomposition tree** icon.
 
