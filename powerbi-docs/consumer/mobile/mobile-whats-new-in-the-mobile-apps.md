@@ -982,7 +982,7 @@ When you tap and hold on a report visual to access tooltips, you can now drag yo
 
 #### Report favorites
 
-Tag reports as favorites so they appear on the **Favorites** page. Read more about [favorites in the Power BI mobile apps](end-user-favorite.md#mobile).
+Tag reports as favorites so they appear on the **Favorites** page. Read more about [favorites in the Power BI mobile apps](../end-user-favorite.md#mobile).
 
 #### View shared reports
 
@@ -1234,7 +1234,7 @@ This custom visualization is now available on the Surface Hub
 ### August 2016
 #### All phones
 **Favorites** 
-View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](end-user-favorite.md#mobile).
+View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](../end-user-favorite.md#mobile).
 
 **Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards.
 **Data-driven alerts**

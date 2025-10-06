@@ -205,9 +205,7 @@ This month brings new formatting enhancements for column and bar charts in Power
 * **Layout**: We’ve renamed the Spacing card to be the new Layout card, relocated the familiar Reverse Order toggle that allows you to invert series, and introduced Sort by Value, Space between categories, and Space between series. And, with clustered columns and bar charts, you now have the option to Erode or Explode the stacked series.  
 * **Advanced ribbon settings**: Highlight a series or create visual continuity with an array of options including matching series color or choosing a color selection, transparency, border color matching or color selection, border width, and border spacing.  
 
-These features aim to provide you with greater flexibility and creative freedom in presenting your data, ensuring that your insights stand out with clarity and style. Enjoy exploring these new capabilities and crafting compelling narratives with your data in Power BI. 
-  
-For comprehensive information, see this [blog post about new features for column and bar charts](https://www.linkedin.com/posts/pbicorevisuals_exciting-news-get-ready-for-a-game-changing-activity-7138587557533032449-qQcZ).  
+These features aim to provide you with greater flexibility and creative freedom in presenting your data, ensuring that your insights stand out with clarity and style. Enjoy exploring these new capabilities and crafting compelling narratives with your data in Power BI.  
 
 #### Extended customization for data labels 
 

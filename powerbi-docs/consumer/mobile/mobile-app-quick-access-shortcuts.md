@@ -104,4 +104,4 @@ Open the item, then go to **More options (…)** > **Siri shortcut**, and select
 
 ## Related content
 
-- [Make and view favorites in the Power BI mobile apps](end-user-favorite.md#mobile)
+- [Make and view favorites in the Power BI mobile apps](../end-user-favorite.md#mobile)

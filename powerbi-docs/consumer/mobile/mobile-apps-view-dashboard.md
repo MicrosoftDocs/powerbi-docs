@@ -54,7 +54,7 @@ Here's a Power BI dashboard in the Power BI service:
 3. Swipe up and down to see all the tiles in the dashboard. You can:
    
    * Tap a tile to open it in focus mode and interact with it.
-   * Tap the star ![Not favorite star](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) to [make it a favorite](end-user-favorite.md#mobile).
+   * Tap the star ![Not favorite star](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) to [make it a favorite](../end-user-favorite.md#mobile).
    * Tap **Invite** ![Invite icon](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) to [invite a colleague](mobile-share-dashboard-from-the-mobile-apps.md) to view your dashboard.
    * [Sync the dashboard with your Apple Watch](mobile-apple-watch.md).
 4. To get back to the list of dashboards, tap the arrow next to the dashboard title, then tap **My Workspace**.
