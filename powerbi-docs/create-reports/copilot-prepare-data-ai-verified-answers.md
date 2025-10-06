@@ -60,7 +60,7 @@ To set a verified answer, follow these steps:
 
 1. Add filters for flexible slicing:
    1. Select the **filter** icon.
-      - Verified answers support up to 10 filters that users can adjust using natural language in their prompt.
+      - Verified answers support up to three filters that users can adjust using natural language in their prompt.
    1. Select **Available to users** and apply any desired filters.
       - The **Available to users** filter section allows end users to slice and dice without needing a new verified answer for every visual + filter combination. 
 
@@ -273,7 +273,7 @@ Filters can be tricky—here are some common questions we hear:
      - All basic, categorical filters
      - The following advanced categorical filters: startsWith, contains, =, /=, >, <, >=, <=
      - Date range filters (NOT relative date filters, such as YTD (year to date), last three months, next five years, etc.) (Supported = between Jan 2024 and July 2025, before 3/4/2025, etc.)
-     - There are no more than 10 filters already selected: Verified answers support a maximum of 10 filters during creation, and three at a time in consumption.
+     - There are no more than three filters already selected: Verified answers support a maximum of three filters during creation, and three at a time in consumption.
 
 **Why won’t my verified answer filter like I want it to in the Copilot pane?**
 - **Is the filter included in the verified answer?** Filters must be explicitly added by the author when the verified answer is created. If the filter you're trying to use isn't added to the verified answer, it doesn't work in Copilot. Double-check that it's part of the verified answer configuration.

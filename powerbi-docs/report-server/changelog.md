@@ -72,6 +72,9 @@ Note: This is the first release of Power BI Desktop for RS that will not include
 
 Note: This is the last release of Power BI Desktop for RS that will include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
 
+- *Version: 2.143.4379.0  (May 2025), Released: October 6, 2025*
+     - Security updates
+
 - *Version: 2.143.954.0  (May 2025), Released: May 22, 2025*
      - Support for May 2025 Power BI Report Server.
 

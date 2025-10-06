@@ -74,7 +74,7 @@ SQL Server hosts the Report Server databases. Most commonly, a SQL Server Databa
 
 ### Mobile access
 
-Additional configurations must be done to enable remote mobile access to Power BI Report Server. For more information, see [Configure Power BI mobile app access to Report Server remotely](../report-server/configure-powerbi-mobile-apps-remote.md).
+Additional configurations must be done to enable remote mobile access to Power BI Report Server.
 
 ### Licensing Power BI Report Server
 
