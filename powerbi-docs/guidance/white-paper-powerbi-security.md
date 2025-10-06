@@ -151,7 +151,7 @@ Power BI Mobile cached data is deleted when the app is removed, when the user si
 
 Power BI Mobile doesn't access other application folders or files on the device.
 
-The Power BI apps for iOS and Android let you protect your data by configuring additional identification, such as providing Face ID, Touch ID, or a passcode for iOS, and biometric data (Fingerprint ID) for Android. [Learn more about additional identification](../consumer/mobile/mobile-native-secure-access.md).
+The Power BI apps for iOS and Android let you protect your data by configuring additional identification, such as providing Face ID, Touch ID, or a passcode for iOS, and biometric data (Fingerprint ID) for Android. 
 
 ## Authentication to the Power BI service
 

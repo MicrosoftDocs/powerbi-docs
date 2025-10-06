@@ -610,7 +610,7 @@ Now you can view your dashboards in full-screen mode, giving you more space to v
 We've made it easier to find and launch your data by integrating both shortcuts and Google Search with the Power BI app. Create shortcuts for easy access to your favorite reports and dashboards directly from your device's home screen. And use Google Search to quickly search for and open your Power BI content. Learn more about [Android app shortcuts](mobile-app-quick-access-shortcuts.md)!
 
 #### Enhanced security using device protection (preview) (Android)
-Use your device's built-in protection capabilities to secure your Power BI app and get the privacy you need. Requiring biometric authentication (Fingerprint ID) for accessing the Power BI app ensures your data is kept private and seen by your eyes only. [Learn about native secure access](mobile-native-secure-access.md)
+Use your device's built-in protection capabilities to secure your Power BI app and get the privacy you need. Requiring biometric authentication (Fingerprint ID) for accessing the Power BI app ensures your data is kept private and seen by your eyes only. 
 
 #### Scanning is now available on iPad
 Now, right from your iPad, you can scan barcodes to filter your reports, and use QR codes to open reports quickly.  
@@ -686,7 +686,7 @@ The Power BI mobile app now supports bookmarks created in Power BI. When you ope
 
 #### Android support for remote configuration of Report Server access settings
 
-We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices. See [Configure Power BI mobile app access to Report Server remotely](../../report-server/configure-powerbi-mobile-apps-remote.md) for details.
+We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices.
 
 #### Cross-report drillthrough
 
@@ -764,7 +764,7 @@ We integrated with Azure AD [new app protection-based conditional access capabil
 
 #### Device protection (iOS)
 
-Users can use device built-in protection to secure Power BI, by asking for Face ID, Touch ID or passcode for accessing Power BI. This can be control by the user using the app settings, but also by admins using Intune and any other MDM tool. [Learn more](./mobile-native-secure-access.md).
+Users can use device built-in protection to secure Power BI, by asking for Face ID, Touch ID or passcode for accessing Power BI. This can be control by the user using the app settings, but also by admins using Intune and any other MDM tool. 
 
 #### One page report Slideshow (Windows)
 
@@ -932,7 +932,7 @@ When report authors customize dashboard themes in the Power BI service, the look
 
 #### iOS: Configure Power BI iOS mobile app access to a report server remotely
 
-Your IT admin can now use an MDM tool to configure Power BI iOS mobile app access to a report server. See [Configure Power BI iOS mobile app access to a report server remotely](../../report-server/configure-powerbi-mobile-apps-remote.md) for details.
+Your IT admin can now use an MDM tool to configure Power BI iOS mobile app access to a report server. 
 
 #### Power BI for Mixed Reality app (Preview)
 
@@ -982,7 +982,7 @@ When you tap and hold on a report visual to access tooltips, you can now drag yo
 
 #### Report favorites
 
-Tag reports as favorites so they appear on the **Favorites** page. Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
+Tag reports as favorites so they appear on the **Favorites** page. Read more about [favorites in the Power BI mobile apps](end-user-favorite.md#mobile).
 
 #### View shared reports
 
@@ -1039,7 +1039,7 @@ Read the [mobile apps feature summary for July 2017](https://powerbi.microsoft.c
 
 #### iOS devices
 **New Q&A experience on iOS (Preview)**
-Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. Even if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](mobile-apps-ios-qna.md).
+Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. Even if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. 
 
 ### Responsive visuals
 **Responsive visual for phone reports and dashboards**
@@ -1076,7 +1076,7 @@ Read this [Developer guide](https://github.com/PowerBi-Projects/PowerBI-visuals/
 
 #### iOS devices
 **Talk to your data: ask questions by speaking**
-Now you can [ask questions of your data with Q&A](mobile-apps-ios-qna.md) by talking rather than typing. 
+Now you can ask questions of your data with Q&A by talking rather than typing. 
 
 ### March 2017
 Read the [mobile apps feature summary for March 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-2017/).
@@ -1114,7 +1114,7 @@ Now you can scroll in bar and column charts in a report by touching the chart it
 #### iOS devices
 **Ask questions of your data with a preview of Q&A** 
 
-With Q&A, you ask questions about your data in your own words, and Power BI provides the answers. Q&A is already in the Power BI service on https://powerbi.com. Now it's also [available in the mobile app on your iPhone or iPad](mobile-apps-ios-qna.md).
+With Q&A, you ask questions about your data in your own words, and Power BI provides the answers. Q&A is already in the Power BI service on https://powerbi.com. Now it's also available in the mobile app on your iPhone or iPad.
 
 **Connect to more than one SSRS server** 
 
@@ -1160,10 +1160,7 @@ To make sure you can access your latest data while offline, we perform a refresh
 #### iOS devices
 **Annotate and share**
 
-Now you can annotate and share a tile, report, or visualization from the Power BI mobile app for iOS. 
-
-* [On the iPhone](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
-* [On the iPad](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
+Now you can [annotate and share](mobile-share-dashboard-from-the-mobile-apps.md#annotate-and-share) a tile, report, or visualization from the Power BI mobile app for iOS. 
 
 **Request access to dashboards**
 
@@ -1237,7 +1234,7 @@ This custom visualization is now available on the Surface Hub
 ### August 2016
 #### All phones
 **Favorites** 
-View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
+View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](end-user-favorite.md#mobile).
 
 **Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards.
 **Data-driven alerts**
@@ -1394,7 +1391,7 @@ View dashboards in [landscape mode on Android phones](mobile-apps-view-dashboard
 #### Power BI app for Windows 10 devices
 View [reports on your Windows 10 phone](mobile-reports-in-the-mobile-apps.md).
 
-Faster time to [insights on your Windows 10 mobile dashboards](mobile-tiles-in-the-mobile-apps.md): Share a tile snapshot or open a report directly from the dashboard.
+Faster time to insights on your Windows 10 mobile dashboards: Share a tile snapshot or open a report directly from the dashboard.
 
 ### January 2016
 

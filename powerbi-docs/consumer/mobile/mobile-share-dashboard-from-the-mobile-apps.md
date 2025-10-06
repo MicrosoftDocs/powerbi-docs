@@ -1,13 +1,14 @@
 ---
-title: Share a dashboard or report from Power BI mobile apps
-description: Learn how you can share links from Power BI mobile apps so others can view your dashboards and reports.
+title: Share a Dashboard or Report From Power BI Mobile Apps
+description: Share dashboards and reports from Power BI mobile apps by sending secure links to coworkers; learn steps and start sharing today.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 02/02/2023
+ms.date: 10/06/2025
+ai-usage: ai-assisted
 ms.custom: sfi-image-nochange
 ---
 
@@ -20,50 +21,70 @@ Applies to:
 | iPhones |iPads |Android phones |Android tablets |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** was discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones).
+>Power BI mobile app support for **phones using Windows 10 Mobile** is discontinued as of March 16, 2021. [Learn more](/legal/powerbi/power-bi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones).
 
-With a [Power BI Pro or Premium Per User (PPU) license](../../fundamentals/service-features-license-type.md), you can invite others to view your dashboards and reports by sharing links from the Power BI mobile apps. You can share with anyone, in or out of your organization, with or without a corporate mail account. They need to have a Power BI Pro or Premium Per User (PPU) license, or the content needs to be in a [Premium capacity](../../enterprise/service-premium-what-is.md).
+Share dashboards and reports from the Power BI mobile apps so colleagues can view live data on any device. Learn licensing requirements and sharing options.
 
-From the Power BI mobile apps for iOS and Android, you can [annotate and share a snapshot of a tile, report, or visual](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) with anyone.
+In the Power BI mobile apps for iOS and Android, [annotate and share a snapshot of a tile, report, or visual](#annotate-and-share) with anyone.
+
+## Annotate and share
+
+Capture a snapshot of any tile, report page, or visual, add lightweight markup, and share it by email or chat.
+
+### Steps (iOS and Android)
+
+1. Open the tile (focus mode).
+1. Tap the annotate (pen) icon. Use the toolbar to:
+   - Draw (choose color and thickness)
+   - Add text (choose size and color)
+   - Place stamps (emoticon markers)
+   - Place stamps (emoticon markers)
+1. (Optional) Undo or redo changes, or clear the snapshot.
+1. Tap **Share**, choose recipients, and send. The message includes the annotated image and a link to the live item. Recipients need existing permission.
+
+> [!NOTE]
+>
+> - Snapshot annotations are static. Data continues to update in Power BI.
+> - Sharing a snapshot doesn't grant access. Recipients still need Power BI licensing and permissions.
+> - Use comments for ongoing discussion. Use snapshots for quick visual callouts.
 
 ## Share from your iPhone or iPad
 
-1. You can share a dashboard or report either from within the dashboard or report itself, or from the dashboard or report home page:
+1. Share a dashboard or report from within the dashboard or report or from its home page.
 
-   * From within a dashboard or report, tap the **Share** icon :::image type="icon" source="././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png" border="false"::: in the actions bar at the bottom of the dashboard or report.
-   * On a dashboard or report home page, tap **Info** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-more-info-icon.png" border="false"::: next to the dashboard or report name, and then tap the **Share** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png" border="false"::: in the info tab that appears.
+   - From within a dashboard or report, tap the **Share** icon :::image type="icon" source="././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png" border="false"::: in the actions bar at the bottom of the dashboard or report.
+   - On a dashboard or report home page, tap the **Info** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-more-info-icon.png" border="false"::: next to the dashboard or report name, and then tap the **Share** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png" border="false"::: in the info tab that appears.
 
-2. Type names, separated by commas, and a message to accompany your invitation. To allow resharing, leave **Allow recipients to reshare** selected. Resharing allows your colleagues to forward the email invitation to others in your organization, either through the web or the mobile apps.
-3. Tap **Send** in the upper-right corner.
+1. Enter names separated by commas, and enter a message to include with your invitation. To allow resharing, leave **Allow recipients to reshare** selected. Resharing lets your colleagues forward the email invitation to others in your organization in the web service or the mobile apps.
+1. Tap **Send** in the upper-right corner.
 
-   Recipients get an email invitation with a direct link to the dashboard or report. The invitation expires after one month. When they open it in either the Power BI service or the Power BI mobile app, it's added to the **Shared with me** section of their Power BI account. To access your **Shared with me** section:
+   Recipients get an email invitation with a direct link to the dashboard or report. The invitation expires after one month. When they open it in the Power BI service or Power BI mobile app, it's added to their **Shared with me** section. To open **Shared with me**:
 
-   * On the Power BI mobile app, tap **More options** (...) on the navigation bar and choose :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me**.
-   * In the Power BI service, click :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me** in the left-hand navigation pane.
+   - On the Power BI mobile app, tap **More options** (...) on the navigation bar, then tap :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me**.
+   - In the Power BI service, select :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me** in the left navigation pane.
 
    For more information, see [Share Power BI reports and dashboards with coworkers and others](../../collaborate-share/service-share-dashboards.md).
 
 ### Unshare from your iPhone or iPad
 
-You can unshare only if you're the owner of the shared content.
+Unshare only if you're the owner of the content.
 
 1. In the actions bar at the bottom of the dashboard or report, tap the **Share** icon :::image type="icon" source="././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png" border="false":::.
-2. Tap **Shared with**. You see the list of colleagues with whom you've shared this dashboard or report.
-3. Tap **More options** (...) next to the name of the person you want to unshare, and choose whether you want to remove access just to the shared dashboard or to any underlying content it uses as well.
+1. Tap **Shared with**. The list shows the colleagues you've shared this dashboard or report with.
+1. Tap **More options** (...) next to the person. Choose whether to remove access only to the dashboard or also to its underlying content.
 
 ## Share from your Android device
 
 1. You can share a dashboard or report either from within the dashboard or report itself, or from the dashboard or report home page:
 
-   * From within a dashboard or report, tap **More options** (...) at the top of the dashboard or report and choose **Invite a colleague**.
-   * On a dashboard or report home page, tap **More options** (...) next to the dashboard or report name, and then tap the **Share** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png" border="false"::: in the info tab that appears.
+   - From within a dashboard or report, tap **More options** (...) at the top and tap **Invite a colleague**.
+   - On a dashboard or report home page, tap **More options** (...) next to its name, then tap the **Share** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png" border="false"::: in the info tab.
 
-2. Type email addresses, and a message to accompany your dashboard invitation. Otherwise Power BI sends a default message. To allow resharing, leave **Allow recipients to share this dashboard** selected. Resharing allows your coworkers to forward the email invitation to others in your organization, either through the browser or the mobile apps.
-3. Tap the **Send** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png" border="false"::: in the upper-right corner to send the mail.
-   Recipients get an email invitation with a direct link to the dashboard or report. The invitation expires after one month. When they open it in either the Power BI service or the Power BI mobile app, it's added to the **Shared with me** section of their Power BI account. To access your **Shared with me** section:
+1. Type email addresses, and a message to accompany your dashboard invitation. Otherwise Power BI sends a default message. To allow resharing, leave **Allow recipients to share this dashboard** selected. Resharing allows your coworkers to forward the email invitation1. Tap the **Send** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png" border="false"::: to send the email.
+   Recipients get an email with a direct link to the dashboard or report. The invitation expires after one month. When they open it in the Power BI service or mobile app, it's added to their **Shared with me** section. To access your **Shared with me** section, do one of the following:me** section of their Power BI account. To access your **Shared with me** section:
 
-   * On the Power BI mobile app, tap **More options** (...) on the navigation bar and choose :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me**.
-   * In the Power BI service, click :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me** in the left-hand navigation pane.
+   - On the Power BI mobile app, tap **More options** (...) on the navigation bar and choose :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me**.
+   - In the Power BI service, click :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me** in the left-hand navigation pane.
 
    For more information, see [Share Power BI reports and dashboards with coworkers and others](../../collaborate-share/service-share-dashboards.md).
 
@@ -71,16 +92,15 @@ You can unshare only if you're the owner of the shared content.
 
 You can unshare only if you're the owner of the shared content.
 
-1. You can unshare a dashboard or report from within the dashboard or report itself or from the dashboard or report home page:
+1. Unshare a dashboard or report from within it or from its home page.
 
-   * From within a dashboard or report, tap **More options** (...) at the top of the dashboard or report and choose **Invite a colleague**.
-   * On a dashboard or report home page, tap **More options** (...) next to the dashboard or report name, and then tap the **Share** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png" border="false"::: in the info tab that appears.
+   - From within a dashboard or report, tap **More options** (...) at the top of the dashboard or report and choose **Invite a colleague**.
+   - On a dashboard or report home page, tap **More options** (...) next to the dashboard or report name, and then tap the **Share** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png" border="false"::: in the info tab that appears.
 
-2. Towards the bottom of the **Add people** page that opens, you see the list of colleagues with whom you've shared this dashboard or report. Tap the name of the colleague you want to unshare with.
-3. On the **Who has access** page that appears, tap the **Remove** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-remove-icon.png" border="false"::: and choose whether to remove access just to the shared dashboard or to any underlying content it uses as well.
+1. At the bottom of the **Add people** page, tap the colleague to remove.
+1. On the **Who has access** page, tap the **Remove** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-remove-icon.png" border="false":::, then choose whether to remove access only to the shared dashboard or also to its underlying content.
 
 ## Related content
 
-* [Annotate and share a tile, report, or visual in Power BI mobile apps](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
-* [Share Power BI reports and dashboards with coworkers and others](../../collaborate-share/service-share-dashboards.md)
-* Questions? [Ask the Power BI Community](https://community.powerbi.com/)
+- [Share Power BI reports and dashboards with coworkers and others](../../collaborate-share/service-share-dashboards.md)
+- Questions? [Ask the Power BI Community](https://community.powerbi.com/).

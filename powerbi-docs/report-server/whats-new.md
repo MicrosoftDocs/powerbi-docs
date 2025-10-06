@@ -1245,7 +1245,7 @@ SAP HANA SSO Direct Query support with Kerberos is now available for Power BI Re
 
 ### Configure Power BI iOS mobile apps for report servers remotely
 
-As an IT admin, you can now use your organization's MDM tool to remotely configure Power BI iOS mobile app access to a report server. See [Configure Power BI iOS mobile app access to a report server remotely](configure-powerbi-mobile-apps-remote.md) for details.
+As an IT admin, you can now use your organization's MDM tool to remotely configure Power BI iOS mobile app access to a report server. 
 
 ## March 2018
 
@@ -1363,7 +1363,7 @@ You can upload files up to 2 GB in size, though by default this limit is set to 
 
 ### Accessing shared datasets as OData feeds
 
-You can access shared datasets from Power BI Desktop with an OData feed. For more information, see [Accessing shared datasets as OData feeds in Power BI Report Server](access-dataset-odata.md).
+You can access shared datasets from Power BI Desktop with an OData feed.
 
 ### Scale-out
 

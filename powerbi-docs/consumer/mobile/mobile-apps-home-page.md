@@ -81,13 +81,13 @@ You can find the navigation bar at the bottom of the page.
 The navigation bar provides quick access to:
 
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-home-icon.png" border="false" ::: **Home** - returns you to the home page.
-- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-favorites-icon.png" border="false" ::: **Favorites** - the reports, dashboards and apps you have marked as [favorites](mobile-apps-favorites.md).
+- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-favorites-icon.png" border="false" ::: **Favorites** - the reports, dashboards and apps you have marked as [favorites](end-user-favorite.md#mobile).
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-apps-icon.png" border="false" ::: **Apps** - the apps you have installed in your account.
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-workspaces-icon.png" border="false" ::: **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-recents-icon.png" border="false" ::: **Recents** - the items you have recently viewed.
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-shared-with-me-icon.png" border="false" ::: **Shared with me** - the items other people have shared with you.
 - :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-explore-icon-new.png" border="false" ::: **Explore** - content from your organization that has been chosen especially for you.
-- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-notification-icon.png" border="false" ::: **Notifications** - opens the [notifications page](mobile-apps-notification-center.md) where you can view and access your notifications. A dot on the notifications bell indicates that you have new notifications.
+- :::image type="icon" source="./media/mobile-apps-home-page/power-bi-mobile-app-notification-icon.png" border="false" ::: **Notifications** - opens the notifications page, where you can view and access your notifications. A dot on the notifications bell indicates that you have new notifications.
 
 ## Related content
 
