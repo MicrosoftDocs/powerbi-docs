@@ -70,12 +70,8 @@
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: "Work with KPIs"
         href: /sql/reporting-services/working-with-kpis-in-reporting-services
-      - name: "Access shared semantic models as OData feeds"
-        href: access-dataset-odata.md
       - name: "Change data source connection strings with PowerShell"
         href: connect-data-source-apis.md
-      - name: "Change data source connection strings with PowerShell, pre-October 2020"
-        href: connect-data-source-apis-pre-oct-2020.md
       - name: "Configure scheduled refresh"
         href: configure-scheduled-refresh.md
       - name: "Add comments to a report"
@@ -92,8 +88,6 @@
         href: migrate-report-server.md
       - name: "Configure Kerberos to use Power BI reports"
         href: configure-kerberos-powerbi-reports.md
-      - name: "Configure mobile app access remotely"
-        href: configure-powerbi-mobile-apps-remote.md
       - name: "Configure a report server with Microsoft Entra application proxy"
         href: microsoft-entra-application-proxy.md
       - name: "Connect to Report Server and SSRS from Power BI mobile applications"

@@ -53,7 +53,7 @@ To learn more, see [Use Q&A in a report.](../natural-language/power-bi-tutorial-
 
 ### Use Q&A in mobile apps and embedded reports
 
-Q&A is available in [Power BI iOS apps](mobile/mobile-apps-ios-qna.md) and in [Power BI embedded analytics](../developer/embedded/qanda.md) as well. 
+Q&A is available in Power BI iOS apps and in [Power BI embedded analytics](../developer/embedded/qanda.md) as well. 
 
 ## Considerations and limitations
 
