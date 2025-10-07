@@ -149,7 +149,7 @@ sections:
       - question: |
            I'm trying to get Copilot to return the correct answer to the most commonly asked questions. Which feature should I use?
         answer: |
-          Consumers of your report and data likely ask some questions more frequently. You can address this occurence by applying verified answers to your model. Apply a verified answer by selecting a visual and setting trigger phrases. When a user asks about the topic, Copilot returns information by using the visual assigned. 
+          Consumers of your report and data likely ask some questions more frequently. You can address this occurrence by applying verified answers to your model. Apply a verified answer by selecting a visual and setting trigger phrases. When a user asks about the topic, Copilot returns information by using the visual assigned. 
           
           For example, consumers of the report and model might often ask, "What product had the highest sales last week?" You can set a verified answer to help Copilot to understand where it can find the right information. This method helps authors and consumers trust that the answer is correct. 
 
