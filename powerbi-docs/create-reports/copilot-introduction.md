@@ -125,7 +125,7 @@ To use the standalone Copilot experience, your activity must be linked to a capa
 
 #### Use an autoselected Copilot workspace
 
-If your org doesn't have an FCC, standalone Coiplot automatically selects a workspace linked to a capacity that supports Copilot. This workspace must meet Copilot requirements (linked to an F2 capacity or higher, in a supported region, and enabled for Copilot) and is used for usage tracking and billing.
+If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot. This workspace must meet Copilot requirements (linked to an F2 capacity or higher, in a supported region, and enabled for Copilot) and is used for usage tracking and billing.
 We automatically select a workspace from a partially randomized list of eligible workspaces, weighted toward those with more available capacity. This approach helps balance usage and prevents overloading any single capacity. This selection persists across sessions as long as the workspace remains Copilot-enabled and has available capacity. If the workspace becomes disabled for Copilot or reaches its capacity limit, we automatically reassign a new one and notify the user. If an FCC becomes available, it always overrides the autoselected workspace. Users receive a dismissible notification showing the chosen workspace and a direct option to change it.
 
 :::image type="content" source="media/copilot-introduction/workspace-autoselection.png" alt-text="Screenshot of the standalone Copilot confirmation that the workspace was autoassigned via autoselection." lightbox="media/copilot-introduction/workspace-autoselection.png":::
