@@ -60,11 +60,7 @@ To set a verified answer, follow these steps:
 
 1. Add filters for flexible slicing:
    1. Select the **filter** icon.
-<<<<<<< HEAD
-      - Verified answers support up to 10 filters that users can adjust by using natural language in their prompt.
-=======
-      - Verified answers support up to three filters that users can adjust using natural language in their prompt.
->>>>>>> 85de7a3d038781c6fc698aa4945c2b292bd9d241
+      - Verified answers support up to three filters that users can adjust by using natural language in their prompt.
    1. Select **Available to users** and apply any desired filters.
       - The **Available to users** filter section allows end users to slice and dice without needing a new verified answer for every visual and filter combination.
 
