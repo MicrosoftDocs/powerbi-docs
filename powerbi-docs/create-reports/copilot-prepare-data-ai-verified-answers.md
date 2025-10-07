@@ -36,7 +36,7 @@ When a user types a prompt in Copilot, it first checks for an exact or semantica
 
 Because verified answers are model-level (not report-level), they work across any report that uses the same semantic model. For example, a verified answer tied to *snowboard sales by month* is also triggered if a user asks, "How do snowboard sales change over time?"
 
-Also, Copilot learns from how users interact with verified answers and gains a better understanding of phrasing, synonyms, and data relationships to improve its future responses. Over time, Copilot's ability to understand and respond to prompts improves, even when users phrase questions differently from the original trigger phrases.
+Also, Copilot learns from how users interact with verified answers. It gains a better understanding of phrasing, synonyms, and data relationships to improve its future responses. Over time, Copilot's ability to understand and respond to prompts improves, even when users phrase questions differently from the original trigger phrases.
 
 ## Set a verified answer
 
@@ -69,7 +69,7 @@ To set a verified answer, follow these steps:
      - **Trigger phrase**: "Show me a breakdown of sales over time"
      - **User prompt**: "Sales breakdown over time for the Northeast"
 
-   Copilot returns the verified answer visual, automatically filtered to match the user's prompt. From there, you can apply any available filters that you’d like.
+   Copilot returns the verified answer visual, automatically filtered to match the user's prompt. From there, you can apply any available filters.
 
    :::image type="content" source="media/copilot-prep-data/copilot-verified-answer-selected-filters.png" alt-text="Screenshot that shows selected filters applied to a verified answer in Power BI." lightbox="media/copilot-prep-data/copilot-verified-answer-selected-filters.png":::
 
@@ -108,7 +108,7 @@ Copilot now uses the verified answers that you set on the model when users invok
 
 1. Publish or save your report.
 
-After you test and confirm that your verified answers are working, you can either publish your report from Desktop, or save it if you’re in the Power BI service.
+Either publish your report from Desktop, or save it if you're in the Power BI service.
 
 ## Manage verified answers
 
@@ -123,7 +123,7 @@ To manage verified answers, including deleting and editing, follow these steps:
 
 Copilot now uses the verified answers set on the model when users invoke a trigger phrase.  
 
-After you test and confirm that your verified answers are working, you can either publish your report from Desktop, or save it if you’re in the Power BI service.
+Either publish your report from Desktop, or save it if you're in the Power BI service.
 
 > [!NOTE]
 > Each time you add, edit, or delete a verified answer, refresh the Copilot pane by closing and reopening it.
@@ -175,7 +175,7 @@ These guidelines can help make sure that your verified answers are reliably trig
 | Trigger phrase | Does match | Doesn't match|
 |----------------|--------------|----------------|
 |Snowboard sales by month | - Snowboard sales for November<br>- Snowboard sales over time<br>- What are the snowboard sales for October? | - Winter sports rates<br>- Why are people snowboarding?<br>- Ski bib sales by month |
-| Visitor spending over time by island | - Visitor expenditures for all islands<br>- Spending over time for Maui<br>- What’s the average visitor spend by island? |- Visitor arrivals over time<br>- Visitor spending per person |
+| Visitor spending over time by island | - Visitor expenditures for all islands<br>- Spending over time for Maui<br>- What's the average visitor spend by island? |- Visitor arrivals over time<br>- Visitor spending per person |
 | Quarterly regional sales for all products | - Regional sales by quarter<br>- Sales across all products over time | - Quarterly sales by lead type<br>- Average weekly sales |
 
 ### Limitations
@@ -185,7 +185,7 @@ Here are some things that you need to know:
 - Git integration isn't supported.
 - Any filters on the visual (visual, page, or report level) that are applied upon verified answer setup are applied to the data in the verified answer.
 - Drill-through filters aren't supported.
-- Row-level security (RLS) and object-level security (OLS) aren't fully supported as security features for verified answers. In most cases, if a verified answer contains data protected by RLS or OLS, it isn't matched on or returned to users. This prevents broken visuals from appearing. In these situations, Copilot will respond without the verified answer. However, there are scenarios where data may still be exposed (for example, through the file format in Git). During preview, we don't recommend that you rely on this as a security feature, even though it will function correctly in the majority of cases.
+- Row-level security (RLS) and object-level security (OLS) aren't fully supported as security features for verified answers. In most cases, if a verified answer contains data protected by RLS or OLS, it isn't matched on or returned to users. This practice prevents broken visuals from appearing. In these situations, Copilot responds without the verified answer. However, there are scenarios where data may still be exposed (for example, through the file format in Git). During preview, we don't recommend that you rely on this as a security feature, even though it functions correctly in the majority of cases.
 - Cross highlighting and cross filtering aren't supported.
 - Slicers aren't included in verified answer states. Slicers that are applied on the report don't persist in the verified answer.
 - Verified answers don't work if fields in the verified answer are hidden in the model, because there's no entry point on the visual.
@@ -231,7 +231,7 @@ For a comprehensive list of considerations and limitations, see [Prepare your da
 
 ### Verified answers troubleshooting and FAQs
 
-**I don’t see the set up verified answer entry point on my visual.**
+**I don't see the set up verified answer entry point on my visual.**
 
 - **Is your visual type supported for verified answers?** Not all visual types can be made into verified answers yet. See the list of unsupported visual types in the previous section.
 - **Is your model type supported for Prep data for AI?** The model type you're using might not be supported, so prep data entry points aren't visible. See the list of supported model types for verified answers in the previous section.
@@ -252,15 +252,15 @@ Verified answers are part of the semantic model, not the report. When you edit t
 
     To speed up the update, you can also publish your report to the service, and then make any small change in the service editing dialog. For example, you can add a space to a trigger prompt or remove and re-add a trigger prompt. Any small change works. Save the changes and test again to see if you get verified answers. They should now return.
 
-- **Did you create it in the service, or are you expecting to see verified answers in the service?** If you waited the 15 minutes or made changes in the service but they're *still* not returned, there might be other aspects at play, and different workarounds that you might try.
-  - **Is the verified answer using any hidden fields?** If a field that's used in a verified answer is hidden in the model, it's not returned as a verified answer. Ensure all fields are visible in the model. (This limitation includes filters.)
+- **Did you create it in the service, or are you expecting to see verified answers in the service?** If you waited the 15 minutes or made changes in the service but they're *still* not returned, there might be other aspects at play. You might try different workarounds.
+  - **Is the verified answer using any hidden fields?** If a field that's used in a verified answer is hidden in the model, it isn't returned as a verified answer. Ensure all fields are visible in the model. (This limitation includes filters.)
   - **Are filters being used?** Are all filter fields selected in the schema selection UI? Filters (whether applied or not) become part of the verified answer definition. If even parts of filter information are hidden with schema selection, the verified answer might not be reliably returned. Ensure that all filter fields are unhidden in the schema selection.
   - **Are there conflicting custom instructions?** For example, if you have a custom instruction that says, "Always apply filter Region = 'USA'" on every answer, but you didn't set up a **Region** column as an allowed filter in your verified answer, then Copilot doesn't match the verified answer.
     - **Is your Copilot prompt similar enough to your trigger prompts?** There are two ways Copilot matches user prompts to a verified answer.
       - **Exact matches:** Phrase matches character-for-character (for example, *Snowboard sales by month* when the trigger phrase is *snowboard sales by month*).
       - **Semantic matches:** Phrases with different wording but the same intent (for example, *Snowboard sales over time*).
 
-      For semantically similar phrases, Copilot uses semantic matching to trigger verified answers. It can recognize prompts that are phrased differently but still align with the intent of a trigger phrase. However, there's still nuance to how much you can change and still be recognized as a match. Here's some information about what's supported:
+      For semantically similar phrases, Copilot uses semantic matching to trigger verified answers. It can recognize prompts that are phrased differently but still align with the intent of a trigger phrase. However, there's still nuance to how much you can change and still be recognized as a match. Here's some information about supported and unsupported practices:
 
     - **Supported**:
       - Using synonyms that are commonly understood or defined within the semantic model
@@ -271,9 +271,9 @@ Verified answers are part of the semantic model, not the report. When you edit t
       - Modifying or replacing the original measure in the phrase
 
 - **Why can't I add filters to my verified answer?** Filters only appear as available options for verified answers if all of the following conditions are met:
-- They exist on the visual, page, or report. If the filter isn’t present in the report, it isn't available to apply.
+- They exist on the visual, page, or report. If the filter isn't present in the report, it isn't available to apply.
 - They're unlocked and visible. The filters that show up are those that end users can interact with. Locked or hidden filters are excluded from the list.
-- They have no applied values. Filters must be set to *All* in the report to be available in the verified answer experience. (Tip: If a filter is missing, check the **applied to this visual** section in the UI. If it appears there, it's not eligible until its values are cleared in the report.)
+- They don't have applied values. Filters must be set to *All* in the report to be available in the verified answer experience. (Tip: If a filter is missing, check the **applied to this visual** section in the UI. If it appears there, it's not eligible until its values are cleared in the report.)
 - They're a supported filter type. Supported types include:
   - All basic, categorical filters.
   - The following advanced categorical filters: `startsWith`, `contains`, `=`, `/=`, `>`, `<`, `>=`, and `<=`.

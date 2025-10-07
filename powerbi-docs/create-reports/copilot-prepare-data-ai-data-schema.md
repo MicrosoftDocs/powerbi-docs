@@ -29,7 +29,7 @@ By using a defined AI data schema, model authors can ensure that Copilot pulls t
 
 To set an AI data schema, follow these steps:
 
-1. Select the **Prep data for AI** button that's located on the **Home** ribbon in Power BI Desktop. In the Power BI service, you can select the button from the ribbon on the semantic model page. If the tabs in **Prep Data for AI** are disabled, turn on Power BI Q&A for your model.
+1. Select the **Prep data for AI** button on the **Home** ribbon in Power BI Desktop. In the Power BI service, you can select the button from the ribbon on the semantic model page. If the tabs in **Prep Data for AI** are disabled, turn on Power BI Q&A for your model.
 
 1. Go to the **Simplify data schema** tab.
 1. Select fields that you want Copilot to reason over. Prioritize clean columns with limited ambiguity and remove any fields that could be confusing for Copilot.
@@ -66,10 +66,10 @@ Here are some things you need to know:
 - Consumers of your semantic model can't see the AI data schema set on the model.
 - The data schema only applies to Copilot capabilities that utilize the schema.
 - The AI data schema isn't considered for Copilot capabilities that don't use the model schema. For example, when Copilot gives a summary of the report or answers a question directly from the report page.
-- When you use Copilot to create a report page, search for data, or use a Data Analysis Expressions (DAX) query, Copilot requires the entire semantic model and doesn't consider the AI data schema.
+- When you use Copilot to create a report page, search for data, or use a Data Analysis Expressions (DAX) query, Copilot requires the entire semantic model. It doesn't consider the AI data schema.
 - All fields that are available in the semantic model appear in the AI data schema selection pane regardless of how visibility is set on the semantic model. Fields that are hidden in the semantic model are automatically excluded in the initial AI data schema when you set it up for the first time.
-- Hierarchies can be selected as part of the AI data schema, but not individual hierarchy components. Select individual fields as part of the table as required. If a hierarchy is included in the AI data schema, but a column of the hierarchy isn't selected as part of the table, the column is still included as part of the Copilot schema.
-- Relationships are still respected regardless of the AI data schema set. For example, if two fields are related, and one of the fields is included in the AI data schema, Copilot can still return answers that require that relationship.
+- Hierarchies can be selected as part of the AI data schema, but not individual hierarchy components. Select individual fields as part of the table as required. If the AI data schema includes a hierarchy, but you don't select a column of the hierarchy as part of the table, the Copilot schema still includes the column.
+- Relationships are still respected regardless of the AI data schema set. For example, if two fields are related, and one of them is included in the AI data schema, Copilot can still return answers that require that relationship.
 - End users can't disable the AI data schema.
 
 For a comprehensive list of considerations and limitations, see [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-limitations).

@@ -38,7 +38,7 @@ When you prepare your data for AI, you create the foundation for high-quality, g
 When you invest in data preparation, you help AI systems understand your unique business context, prioritize the right information, and deliver responses that are consistent, reliable, and aligned with your goals. Data preparation not only improves user trust but also accelerates adoption and impact across your organization.
 
 > [!NOTE]
-> Features that help prepare your data for AI can't ensure a specific output every time. AI behavior is nondeterministic. Copilot doesn’t always produce the exact same response, even with the same input.
+> Features that help prepare your data for AI can't ensure a specific output every time. AI behavior is nondeterministic. Copilot doesn't always produce the exact same response, even with the same input.
 
 ## Features to help you prepare your data for AI
 
@@ -62,16 +62,16 @@ To author an AI data schema and AI instructions in the Power BI service, follow 
 
 1. Select the semantic model to prep for AI.
 2. From the ribbon, select the **Prep data for AI** button.
-3. Use the available features, and then hit apply when you are satisfied with your updates.
+3. Use the available features, and then hit apply when you're satisfied with your updates.
 
 > [!NOTE]
-> It might take time for the changes that you made to affect Copilot results. If **Prep data for AI** features don't take effect immediately, please wait a few minutes and try again.
+> It might take time for the changes that you made to affect Copilot results. If **Prep data for AI** features don't take effect immediately, wait a few minutes and try again.
 
 To set or create a verified answer in the Power BI service, first meet the following requirements:
 
 - You're in a Copilot-enabled workspace.
 - You have authoring permission on the semantic model the report is built on.
-- You are on a report page.
+- You're on a report page.
 - You're in edit mode.
 - The visual is selected.
 
@@ -110,7 +110,7 @@ All three skills are enabled in Power BI Desktop by default. You can immediately
 
 ### Test the prepared data for AI capabilities
 
-Use the Copilot report pane in Power BI Desktop to test changes that you make through the **Prep data for AI** dialog. We recommend that you create a testing process that's iterative and thorough. Each time that you make an update to one of the features, you can view the latest updates by refreshing the Copilot report pane. Just close and reopen it.
+Use the Copilot report pane in Power BI Desktop to test changes that you make through the **Prep data for AI** dialog. We recommend that you create an iterative and thorough testing process. Each time that you make an update to one of the features, you can view the latest updates by refreshing the Copilot report pane. Just close and reopen it.
 
 You can troubleshoot changes through **Access the download diagnostic** in the **...** menu in the report pane. You can also analyze the **How Copilot arrived at this** (HCAAT) feature, which is included in answers from your semantic model.
 

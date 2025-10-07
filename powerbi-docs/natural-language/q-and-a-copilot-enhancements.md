@@ -28,7 +28,7 @@ Before you can use Copilot-generated content in Power BI Q&A, you need to satisf
 >
 > - Your F64 or P1 capacity must be in one of the regions listed in this article: [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
 > - Your administrator needs to enable the tenant switch before you start using Copilot. For details, see the article [Copilot tenant settings](/fabric/admin/service-admin-portal-copilot).
-> - If your tenant or capacity is outside the US or France, Copilot is disabled by default. The one exception is if your Fabric tenant admin enables the [Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance](/fabric/admin/service-admin-portal-copilot) tenant setting in the Fabric Admin portal.
+> - If your tenant or capacity is outside the US or France, Copilot is disabled by default. The one exception is if your Fabric tenant admin enables the [Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance](/fabric/admin/service-admin-portal-copilot) tenant setting. You can find this setting in the Fabric admin portal.
 > - Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
 
 ## Synonym suggestions
