@@ -82,8 +82,6 @@ Tap the magnifying glass in the header to start searching for your Power BI cont
 ## View your favorite dashboards and reports
 Tap **Favorites** (![Favorites icon](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) on the navigation bar to view your Favorites page. 
 
-Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
-
 ## Enterprise support for the Power BI mobile apps
 Organizations can use Microsoft Intune to manage devices and applications, including the Power BI mobile apps for Android and iOS.
 
@@ -103,13 +101,10 @@ Here are some other things you can do in the Android device app for Power BI wit
 ### Power BI dashboards and reports
 * View [your apps](../../collaborate-share/service-create-distribute-apps.md).
 * View your [dashboards](mobile-apps-view-dashboard.md).
-* Explore the [tiles on your dashboards](mobile-tiles-in-the-mobile-apps.md).
 * Open [Power BI reports](mobile-reports-in-the-mobile-apps.md).
 * View [your apps](../../collaborate-share/service-create-distribute-apps.md).
-* [Annotate and share tiles](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Share [dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
 * [Scan a Power BI QR code](mobile-apps-qr-code.md) with your Android phone to open a related dashboard tile or report. 
-* View [notifications about updates to your Power BI account](mobile-apps-notification-center.md), such as dashboards that colleagues share with you.
 
 ### Reports and KPIs on the Power BI Report Server and Reporting Services web portals
 * [View reports and KPIs on the web portal](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) in the Power BI mobile app for Android devices.

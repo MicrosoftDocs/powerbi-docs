@@ -22,7 +22,7 @@ ms.custom:
 Subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You receive an email on a schedule you set. The email contains a snapshot and link to the report or dashboard or a full attachment of the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions owned by others.
 
 > [!IMPORTANT]
-> Subscribing others requires a paid license (Pro or PPU). For information about licenses, see [Fabric and Power BI licenses and subscriptions](../consumer/end-user-license.md).
+> Subscribing others requires a paid license (Pro or PPU). For information about licenses, see [Fabric and Power BI licenses and subscriptions](../fundamentals/end-user-license.md).
 
 ## Subscribe to a report or dashboard in the Power BI service 
 
@@ -34,7 +34,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 ## Requirements
 The requirements apply to users in the organization and to [Microsoft Entra Business-to-Business (B2B) guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b). To create a subscription for yourself, you need permissions to access the particular report or dashboard and **either**:
 
-- A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
+- A Power BI Pro or [Premium Per User (PPU) license](../fundamentals/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
 
 Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#users-can-set-up-email-subscriptions) and see [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).

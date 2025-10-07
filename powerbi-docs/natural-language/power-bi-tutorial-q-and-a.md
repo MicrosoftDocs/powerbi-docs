@@ -20,7 +20,6 @@ These articles cover using Q&A in other scenarios in Power BI:
 
 - [Use Q&A on a dashboard](end-user-q-and-a-tutorial.md)
 - [Create a Q&A visual or Q&A button in a report](../visuals/power-bi-visualization-q-and-a.md). 
-- [Q&A virtual analyst in Power BI iOS apps](../consumer/mobile/mobile-apps-ios-qna.md)
 - [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md)
 
 ## Use Q&A in a report

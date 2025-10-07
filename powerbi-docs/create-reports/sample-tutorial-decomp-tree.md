@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 02/28/2023
+ms.date: 10/01/2025
 LocalizationGroup: Samples
 ---
 # Tutorial: Create a decomposition tree with a Power BI sample
@@ -52,8 +52,6 @@ To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundament
 ### Create a report from the semantic model
 
 You have several options for exploring your semantic model. In this tutorial, you're going to explore the semantic model by creating your own report from scratch.
-
-:::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot shows the Retail Analysis Sample semantic model entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png":::
 
 1. Select **More options** (**...**) > **Create report**.
 

@@ -14,13 +14,13 @@ ai-usage: ai-assisted
 
 # What are paginated reports in Power BI?
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
 *Paginated reports* are designed for printing or sharing. You can preview your report in Report Builder, then publish it to the Power BI service, `app.powerbi.com`. Paginated reports display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service.
 
 Here are some quick links if you're ready to get started:
 
-- [Install Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder)
+- [Install Power BI Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=105942)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)
 - Looking for information about Microsoft Report Builder for Power BI Report Server and SQL Server Reporting Services? See [Install Microsoft Report Builder - Power BI Report Server](../report-server/install-report-builder.md) instead.
@@ -29,7 +29,7 @@ Paginated reports often have many pages. For example, this report has 563 pages.
 
 ![Paginated](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-You can preview your report in Report Builder, then publish it to the Power BI service, app.powerbi.com. 
+You can preview your report in Report Builder, then publish it to the Power BI service, app.powerbi.com.
 
 ## Prerequisites
 
@@ -70,7 +70,7 @@ See [Supported data sources for Power BI paginated reports](paginated-reports-da
 
 ### Create paginated reports with matrix, chart, and free-form layouts
 
-Table reports work well for column-based data. Matrix reports, like cross-tab or PivotTable reports, are good for summarized data. Chart reports present data in a graphical format, and free-form *list* reports can present almost anything else, such as invoices. 
+Table reports work well for column-based data. Matrix reports, like cross-tab or PivotTable reports, are good for summarized data. Chart reports present data in a graphical format, and free-form *list* reports can present almost anything else, such as invoices.
   
 Start with one of the Report Builder wizards. The Table, Matrix, and Chart wizards walk you through creating the embedded data source connection and embedded dataset. Then you drag and drop fields to create a dataset query, select a layout and style, and customize your report.  
   
@@ -78,7 +78,7 @@ The Map wizard creates reports that display aggregated data against a geographic
 
 ### Add more to your report
 
-Modify your data by filtering, grouping, and sorting data, or by adding formulas or expressions. Add charts, gauges, sparklines, and indicators to summarize data in a visual format.  Use parameters and filters to filter data for customized views. Embed or reference images and other resources, including external content.  
+Modify your data by filtering, grouping, and sorting data, or by adding formulas or expressions. Add charts, gauges, sparklines, and indicators to summarize data in a visual format. Use parameters and filters to filter data for customized views. Embed or reference images and other resources, including external content.  
 
 Everything in a paginated report, from the report itself to every text box, image, table, and chart, has an array of properties you can set to make the report look exactly as you want it.
 
@@ -94,7 +94,7 @@ View your paginated report in the Power BI service in a browser and in the Power
 
 You can set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as subscribing to reports and dashboards in the Power BI service. Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or hourly. The subscription contains a PDF attachment of the entire report output.
 
-For details, see "Subscribe to paginated reports" in the article [Email subscriptions for reports and dashboards in the Power BI service](/power-bi/collaborate-share/end-user-subscribe#subscribe-to-paginated-reports). 
+For details, see "Subscribe to paginated reports" in the article [Email subscriptions for reports and dashboards in the Power BI service](/power-bi/collaborate-share/end-user-subscribe#subscribe-to-paginated-reports).
 
 ## Use deployment pipelines with paginated reports
 
@@ -108,7 +108,7 @@ Read about how to [get started with deployment pipelines](/fabric/cicd/deploymen
 
 ## Embed Power BI paginated reports
 
-With Power BI embedded analytics, you can create Power BI content that displays paginated reports in a fully integrated and interactive application. You can embed paginated reports either for your customers or for your organization. See [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md) for more information.
+With Power BI embedded analytics, you can create Power BI content that displays paginated reports in a fully integrated and interactive application. You can embed paginated reports either for your customers or for your organization. For more information, see [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md).
 
 ## Considerations and limitations
 
@@ -131,7 +131,7 @@ Paginated reports have memory limits that vary by license type. These limits aff
 
 ## Related content
 
-- [Install Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder)
+- [Install Power BI Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=105942)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
 - [Online course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)

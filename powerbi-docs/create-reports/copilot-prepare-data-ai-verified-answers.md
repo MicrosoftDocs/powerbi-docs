@@ -60,7 +60,11 @@ To set a verified answer, follow these steps:
 
 1. Add filters for flexible slicing:
    1. Select the **filter** icon.
+<<<<<<< HEAD
       - Verified answers support up to 10 filters that users can adjust by using natural language in their prompt.
+=======
+      - Verified answers support up to three filters that users can adjust using natural language in their prompt.
+>>>>>>> 85de7a3d038781c6fc698aa4945c2b292bd9d241
    1. Select **Available to users** and apply any desired filters.
       - The **Available to users** filter section allows end users to slice and dice without needing a new verified answer for every visual and filter combination.
 
@@ -270,10 +274,6 @@ Verified answers are part of the semantic model, not the report. When you edit t
       - Adding, removing, or swapping out fields or dimensions
       - Modifying or replacing the original measure in the phrase
 
-**I can't get filters to work with my verified answer**
-
-Filters can be tricky. Here are some common questions:
-
 - **Why can't I add filters to my verified answer?** Filters only appear as available options for verified answers if all of the following conditions are met:
 - They exist on the visual, page, or report. If the filter isn’t present in the report, it isn't available to apply.
 - They're unlocked and visible. The filters that show up are those that end users can interact with. Locked or hidden filters are excluded from the list.
@@ -282,7 +282,7 @@ Filters can be tricky. Here are some common questions:
   - All basic, categorical filters.
   - The following advanced categorical filters: `startsWith`, `contains`, `=`, `/=`, `>`, `<`, `>=`, and `<=`.
   - Date range filters like *between January 2024 and July 2025* or *before 3/4/2025*. Relative date filters, such as *YTD* (year to date), *last three months*, or *next five years* aren't supported.
-- There are no more than 10 filters already selected. Verified answers support a maximum of 10 filters during creation, and three at a time in consumption.
+- There are no more than three filters already selected. Verified answers support a maximum of three filters during creation, and three at a time in consumption.
 
 **Why won't my verified answer filter the way that I want in the Copilot pane?**
 

@@ -31,7 +31,7 @@ Then fill in the information for the data source, which includes the source info
 
 :::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/authentication-sql.png" alt-text="Screenshot of credentials for SQL data source." :::
 
-For a list of data source types that can be used with scheduled refresh, see [List of available data source types](service-gateway-data-sources.md#list-of-available-data-source-types).
+For a list of data source types that can be used with scheduled refresh, see [List of available data source types](service-gateway-data-sources.md#available-data-source-types).
 
 After you fill in everything, select **Create**. If the action succeeds, you see *Created New data source.* You can now use this data source for scheduled refresh with your on-premises data.
 

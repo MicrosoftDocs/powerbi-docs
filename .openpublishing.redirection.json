@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "powerbi-docs/consumer/end-user-home.md",
+      "redirect_url": "/power-bi/consumer/end-user-experience#home",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "powerbi-docs/create-reports/desktop-performance-analyzer.md",
       "redirect_url": "/power-bi/create-reports/performance-analyzer",
       "redirect_document_id": true
@@ -6833,6 +6838,66 @@
     {
       "source_path": "powerbi-docs/consumer/mobile/index.yml",
       "redirect_url": "/power-bi/consumer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/fundamentals/service-self-service-signup-for-power-bi.md",
+      "redirect_url": "/power-bi/fundamentals/service-self-service-signup-purchase-for-power-bi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/support/service-tips-for-finding-help.md",
+      "redirect_url": "/power-bi/support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-share-dashboard-from-the-mobile-apps#annotate-and-share",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-favorites.md",
+      "redirect_url": "/power-bi/consumer/end-user-favorite#mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-ios-qna.md",
+      "redirect_url": "/power-bi/consumer/mobile/tutorial-mobile-apps-ios-qna",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-ios-siri-shortcuts.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-app-quick-access-shortcuts#siri-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-notification-center.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps#notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-tiles-in-the-mobile-apps.md",
+      "redirect_url": "/power-bi/consumer/end-user-tiles#mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-native-secure-access.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-app-configuration#data-protection-settings-ios-and-android",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/report-server/access-dataset-odata.md",
+      "redirect_url": "/power-bi/report-server/connect-data-sources#odata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/report-server/configure-powerbi-mobile-apps-remote.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-app-configuration#remote-report-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/report-server/connect-data-source-apis-pre-oct-2020.md",
+      "redirect_url": "/power-bi/report-server/connect-data-source-apis",
       "redirect_document_id": false
     }
   ]

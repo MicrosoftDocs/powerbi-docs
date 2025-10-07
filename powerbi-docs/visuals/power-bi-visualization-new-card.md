@@ -52,17 +52,17 @@ For this quick three-step guide, let's use the first option:
 
     :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-2.png" alt-text="Screenshot: Data pane, Sales group expanded, StoreCount + TotalSalesTV measures highlighted, selected, and added to Data field in Visualizations pane." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-2.png":::
 
-3. To customize your column chart, select the Format visual icon in the Visualizations pane, granting you access to all available settings. This allows you to tailor the chart's appearance and functionality to your specific requirements as shown in the example.
+3. To customize your visual, select the Format visual icon in the Visualizations pane, granting you access to all available settings. This allows you to tailor the chart's appearance and functionality to your specific requirements as shown in the example.
 
     :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-3.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-3.png":::
 
 Congratulations! You've successfully created a (new) card visual with Power BI Desktop.
 
-(power-bi-visualization-card-visual-new-format-settings.md) and controls for you to use as reference. Also, take time to familiarize yourself with the [Considerations and limitations](power-bi-visualization-card-visual-considerations.md) for (new) card visuals.
+Take the time to familiarize yourself with the [Considerations and limitations](power-bi-visualization-card-visual-considerations.md) for (new) card visuals.
 
 ## Related content
 
-* [(new) Card visual considerations and limitations](power-bi-visualization-card-visual-considerations.md)
-* [(new) Card visual format settings](power-bi-visualization-card-visual-new-format-settings.md) 
+* [Card visual considerations and limitations](power-bi-visualization-card-visual-considerations.md)
+* [Card visual format settings](power-bi-visualization-card-visual-new-format-settings.md) 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 * [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

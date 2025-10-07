@@ -16,6 +16,9 @@ LocalizationGroup: Get started
 
 **APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for business users :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium Per User or Fabric license
 
+> [!WARNING]
+> Metric sets are going away. Starting October 25th, creating new metric sets will no longer be possible, but you can access existing metric sets until November 15, 2025. Please note that scorecards and all associated datasets or measures will not be impacted by this change.
+
 Metric sets help organizations define, discover, and reuse trusted metrics. When you create a metric set, you establish the metrics within it as reliable sources that people in your organization should use for greater accuracy, consistency, and reliability in their reports and analysis. Bundle selected metrics from your data into a metric set that you can endorse and share with others.
 
 Currently, metrics are defined in semantic layers as measures in models. Over time, these models become large and complex, making them difficult to manage and use, which leads to the creation of many specific models. When organizations have many specific models, it causes data silos and duplicate metrics, resulting in more metric redefinitions. The fragmentation in models makes it hard for users to trust existing metrics and creates logistical challenges. Metric sets address this issue by giving users tools to manage and reuse key metrics across the organization.
@@ -52,7 +55,7 @@ Permissions also factor into the ability to view and edit metric sets:
 - Users need Build permission to customize views and visuals using the Explore feature.
 - Users must have at least a Contributor role in the workspace to create and manage metric sets.
 
-## Explore the Metrics hub
+## Explore the Metrics hub 
 
 After you sign in to the Power BI service, select Metrics from the navigation pane. Power BI displays the new Metrics hub, which contains sections for metric sets and for scorecards. The default is to land on the Metric sets area. Once your organization has content, you see metric sets populated in the browsing area, with tabs to look through *All*, *Endorsed*, and *Favorites*.
 

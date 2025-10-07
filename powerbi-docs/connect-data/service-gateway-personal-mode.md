@@ -1,14 +1,15 @@
 ---
-title: Use a personal gateway in Power BI
-description: See information about the Power BI on-premises data gateway (personal mode) that you can use for connecting to on-premises data.
+title: Use a Personal Gateway in Power BI
+description: Learn when to use the Power BI on-premises data gateway (personal mode), how it differs from standard, and install it to securely refresh on-premises data.
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 08/13/2024
+ms.date: 09/25/2025
 LocalizationGroup: Gateways
+ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to understand how to use a personal gateway in Power BI so that I can easily and securely connect to on-premises data.
 ---
 
@@ -16,87 +17,112 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-The on-premises data gateway (personal mode) is a version of the on-premises data gateway that works only with Power BI. You can use a personal gateway to install a gateway on your own computer and get access to on-premises data. This article provides information on how to use a personal gateway in Power BI to easily and securely connect to on-premises data.
+The on-premises data gateway (personal mode) works only with Power BI. Install it on your computer to refresh import semantic models from on-premises data sources. This article shows when to use personal mode, how it differs from the standard gateway, and how to set up refresh securely.
 
 > [!NOTE]
-> Each Power BI user can have only one personal mode gateway running. If the same user installs another personal mode gateway, even on a different computer, the most recent installation replaces the existing previous installation.
+> Each Power BI user can run only one personal mode gateway. If the user installs another on a different computer, the most recent installation replaces the previous one.
 
-## On-premises data gateway vs. on-premises data gateway (personal mode)
+## When to (and not to) use personal mode
 
-The following table describes differences between an on-premises data gateway and an on-premises data gateway (personal mode).
+Use personal mode when:
 
-|   |On-premises data gateway | On-premises data gateway (personal mode) |
+- You’re an individual author refreshing a few Import semantic models.
+- You don’t need to share data sources or manage centralized credentials.
+
+Use the standard on-premises data gateway instead when:
+
+- Multiple authors or admins manage data sources and credentials.
+- You need DirectQuery, live connection, composite models, or virtual network gateway scenarios.
+- You need high availability, clustering, or load balancing.
+- You need centralized auditing and governance.
+
+<a id="on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode"></a>
+
+## On-premises data gateway versus personal mode
+
+This table shows the differences between the standard gateway and the personal mode gateway.
+
+|   | On-premises data gateway | On-premises data gateway (personal mode) |
 | ---- | ---- | ---- |
-|**Supports cloud services:** |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows | None |
-|**Runs under credentials:** |As configured by users who have access to the gateway |Your credentials for Windows authentication, or credentials you configure for other authentication types |
-|**Can install only as computer admin** |Yes |No |
-|**Centralized gateway and data source management** |Yes |No |
-|**Can import data and schedule refresh** |Yes |Yes |
-|**DirectQuery support** |Yes |No |
-|**LiveConnect support for Analysis Services** |Yes |No |
+| **Supports cloud services** | Power BI, Power Apps, Power Automate, Azure Logic Apps, Azure Analysis Services, Power BI dataflows | Power BI only |
+| **Runs under credentials** | As configured by authorized gateway users | Your Windows credentials (interactive sign-in) or per data source credentials you set |
+| **Install only as a local admin** | Yes | No |
+| **Centralized gateway and data source management** | Yes | No |
+| **Import data and schedule refresh** | Yes | Yes |
+| **DirectQuery support** | Yes | No |
+| **Live connection to Analysis Services** | Yes | No |
+
+> [!NOTE]
+> Personal mode supports only Import semantic models that use scheduled or on-demand refresh. It doesn’t support DirectQuery, live connection to Analysis Services, composite models, multiple custom connector sources in DirectQuery, virtual network data gateway, clustering, or high availability.
 
 ## Install the on-premises data gateway (personal mode)
 
-To install the on-premises data gateway (personal mode):
+Use these steps to install the on-premises data gateway (personal mode).
 
 1. [Download the on-premises data gateway](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
+1. Open the installer and select **Next**.
+1. Select **On-premises data gateway (personal mode)**, then select **Next**.
 
-1. Open the installer, and select **Next**.
+   :::image type="content" source="media/service-gateway-personal-mode/personal-gateway-select.png" alt-text="Screenshot of selecting the on-premises data gateway personal mode option in the installer.":::
 
-1. Select **On-premises data gateway (personal mode)**, and then select **Next**.
-
-   ![Screenshot that shows selecting the on-premises data gateway (personal mode).](media/service-gateway-personal-mode/personal-gateway-select.png)
-
-1. On the next screen, review the minimum requirements, verify or edit the installation path, and select the checkbox to accept the terms of use and privacy statement. Then select **Install**.
-
-1. After the installation completes successfully, enter your email address under **Email address to use with this gateway**, and select **Sign in**.
-
-1. After you sign in, a confirmation screen displays. 
-1. Select **Close** to close the installer.
+1. On the next screen, review requirements, check or change the installation path, accept the terms, and select **Install**.
+1. Enter your email address in **Email address to use with this gateway**, and select **Sign in**.
+1. After you sign in, select **Close** on the confirmation screen.
 
 ## Use Fast Combine with the personal gateway
 
-Fast Combine on a personal gateway helps you ignore specified privacy levels when you run queries. To enable Fast Combine for the on-premises data gateway (personal mode):
+> [!IMPORTANT]
+> Enabling Fast Combine disables privacy level isolation for combined queries, so enable it only if all sources are trusted.
 
-1. Use Windows File Explorer to open the file *\<localappdata>\\Microsoft\\On-premises data gateway (personal mode)\\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
+Fast Combine lets you ignore privacy levels when you run queries. Enable Fast Combine:
 
-2. At the end of the file, before `</Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.GatewayCoreSettings>`, add the following code, and then save the file.
+1. Open *%LOCALAPPDATA%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
+1. Before `</Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.GatewayCoreSettings>`, add the following:
 
-    ```xml
-    <setting name="EnableFastCombine" serializeAs="String">
-       <value>true</value>
-    </setting>
-    ```
+   ```xml
+   <setting name="EnableFastCombine" serializeAs="String">
+     <value>true</value>
+   </setting>
+   ```
 
-3. The setting takes effect in approximately one minute. To confirm that Fast Combine is working properly, try an on-demand refresh in the Power BI service.
+1. Wait about a minute, then run an on-demand refresh in the Power BI service to confirm.
 
-## Frequently asked questions (FAQ)
+## Frequently asked questions
 
-- **Question:** Can you run the on-premises data gateway (personal mode) side by side with the on-premises data gateway that used to be called the Enterprise gateway?
+- **Question:** Can you run the on-premises data gateway (personal mode) side by side with the standard gateway (previously called Enterprise gateway)?  
   
-  **Answer:** Yes, both gateways can run simultaneously.
+  **Answer:** Yes.
 
-- **Question:** Can you run the on-premises data gateway (personal mode) as a service?
+- **Question:** Can personal mode run as a Windows service?  
   
-  **Answer:** No. The on-premises data gateway (personal mode) can run only as an application. To run a gateway as a service or in admin mode, use the [on-premises data gateway](/data-integration/gateway/service-gateway-onprem), which used to be called the Enterprise gateway.
+  **Answer:** No. It's only an interactive application. Use the standard gateway for service mode.
 
-- **Question:** How often does the on-premises data gateway (personal mode) update?
-  
-  **Answer:** The personal gateway updates monthly.
+- **Question:** How often does personal mode update?  
+  **Answer:** Monthly.
 
-- **Question:** Why does the personal gateway ask you to update your credentials?
+- **Question:** Why are you prompted to update credentials?  
   
-  **Answer:** Many situations can trigger a request for credentials. The most common scenario is that you reinstalled the on-premises data gateway (personal mode) on a different machine than your original Power BI personal gateway. There could also be an issue in the data source, or Power BI failed to make a test connection, or a timeout or system error occurred.
-  
-  To update your credentials in the Power BI service, open the semantic model settings and choose **Data source credentials**.
+  **Answer:** Common causes include reinstalling on a different machine, changed data source credentials, a test connection failure, a timeout, or a transient system error. Update credentials in the semantic model’s **Data source credentials** pane in the Power BI service.
 
-- **Question:** How long is a personal gateway offline during an upgrade?
+- **Question:** How long is personal mode offline during an upgrade?  
   
-  **Answer:** Upgrading the personal gateway to a new version takes only few minutes.
+  **Answer:** Typically only a few minutes.
 
-- **Question:** Does the personal gateway support R and Python scripts?
+- **Question:** Does personal mode support R and Python scripts?  
   
-  **Answer:** Yes, personal mode supports R and Python scripts.​
+  **Answer:** Yes. To refresh a model that uses R or Python in Power Query steps:
+
+  1. Install the matching R or Python version locally.
+  1. Set the executable paths via **File > Options and settings > Options > R script / Python script**, then save and republish if you changed them.
+  1. Install the required packages for the gateway user.
+  1. Keep the machine powered on and the gateway signed in during refresh.
+  
+  > [!NOTE]
+  > Script visuals render at view time. The gateway runs only the Power Query transformation steps during refresh.
+
+- **Question:** How do you reopen or check the personal gateway?  
+  
+  **Answer:** Use the system tray icon, search the Start menu for On-premises data gateway (personal mode), or launch *%LOCALAPPDATA%\Microsoft\On-premises data gateway (personal mode)\GatewayApp.exe*. If the status shows **Not connected**, sign in again and check network access.
 
 ## Related content
 
@@ -104,4 +130,4 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
 - [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
 - [Power BI implementation planning: Data gateways](../guidance/powerbi-implementation-planning-data-gateways.md)
 
-More questions? Try the [Power BI Community](https://community.powerbi.com/).
+Go to the [Power BI Community](https://community.powerbi.com/) for more answers.
