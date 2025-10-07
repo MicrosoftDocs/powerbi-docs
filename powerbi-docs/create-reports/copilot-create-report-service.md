@@ -1,26 +1,26 @@
 ---
 title: Create reports in the Power BI service with Copilot
 description: Using Copilot, you can quickly create a Power BI report.
-author: julcsc
+author: bezulau
 ms.author: juliacawthra
 ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/04/2024
+ms.date: 10/07/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 #customer intent: As a report creator, I want to learn how to use Copilot in the Power BI service to create a Power BI report quickly.
 ---
 
-# Create reports in the Power BI service with Copilot
+# Create and edit reports in the Power BI service with Copilot
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-When you use Copilot for Power BI, you can quickly create report pages with just a few clicks. Copilot can save you hours of effort building your report pages. You can also [create reports with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
+When you use Copilot for Power BI, you can quickly create and edit report pages using natural language prompts. Copilot can save you hours of effort building and refining your report pages. You can also [create reports with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
 
-:::image type="content" source="media/copilot-create-report/copilot-create-sales-performance.png" alt-text="Screenshot showing Copilot creating sales performance analysis." lightbox="media/copilot-create-report/copilot-create-sales-performance.png":::
+:::image type="content" source="media/copilot-create-report/copilot-create-page-update.png" alt-text="Screenshot showing Copilot creating travel analysis." lightbox="media/copilot-create-report/copilot-create-page-update.png":::
 
 ## Before you start
 
@@ -64,37 +64,21 @@ To see the **Copilot** button in your report, you first need to select a semanti
     > [!TIP]
     > If you don't see **Copilot**, your [admins may not have enabled it in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview), or you may not have selected a semantic model. Select a semantic model to see it.
 
-1. In the Copilot pane, select **Suggest content for this report**. Copilot evaluates the data and makes suggestions.
+1. In the Copilot pane, you can either select **Suggest content for this report** to have Copilot evaluate your data and makes suggestions, or enter a prompt directly to describe the report or visuals you want Copilot to create.
 
-    :::image type="content" source="media/copilot-create-report/copilot-suggest-content-this-report.png" alt-text="Screenshot showing Copilot pane, suggest content.":::
+    :::image type="content" source="media/copilot-create-report/copilot-create-start.png" alt-text="Screenshot showing Copilot pane.":::
 
-    Copilot suggests possible pages for your report.
+1. If you need help with writing prompts, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
-    :::image type="content" source="media/copilot-create-report/copilot-suggest-content-outline.png" alt-text="Screenshot showing Copilot suggesting pages.":::
+## Improved report creation and edits
 
-1. Select **Create** next to the first page you want Copilot to create.
+With updates to report creation in the Power BI service, you can work with Copilot to both create and edit report pages. These updates provide more control, flexibility, and visual intelligence when building reports.
 
-    :::image type="content" source="media/copilot-create-report/copilot-create-page.png" alt-text="Screenshot showing selecting the Create page button.":::
+Copilot now delivers more accurate and relevant visuals, automatically selecting the best way to represent your data. It also supports a wider range of visual types, helping you present insights in the format that best fits your needs.
 
-    Copilot creates that page. 
+In addition to creating new pages, you can now use Copilot to add visuals to existing report pages, change or replace visuals, or delete visuals that are no longer needed.
 
-    :::image type="content" source="media/copilot-create-report/copilot-create-visitor-insights.png" alt-text="Screenshot of Copilot creating the Visitor Patterns Analysis Page." lightbox="media/copilot-create-report/copilot-create-visitor-insights.png":::
-
-    Continue creating the pages that Copilot suggests. Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
-
-1. If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
-
-## Enhanced report creation 
-
-With updates to report creation in the Power BI Service, you can work with Copilot to clarify intent and details of reports created. Report outlines are also provided to help improve transparency on what data fields copilot is using to build a report. These updates aim to make it easier to generate more relevant and transparent Power BI reports with Copilot.
-
-## Create a narrative summary
-
-You can also use Copilot for Power BI to create a narrative summary with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals. See [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md) to learn how.
-
-## Undo a page  
-
-After Copilot generates the page, then you can review it. You have the option to start over by selecting the **Undo** button.  If you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
+These enhancements make it easier to collaborate with Copilot as you refine and update reports, generating more relevant and transparent results in Power BI.
 
 ## Save the report
 
@@ -109,6 +93,10 @@ There are limitations related to creating pages in specific semantic model scena
 - **Real-Time Streaming Models**: Report pages can't be created by Copilot for semantic models utilizing real-time streaming.
 - **Live Connection to Analysis Services**: Semantic models connected live to Analysis Services aren't supported by page creation.
 - **Semantic models with implicit measures disabled**: In scenarios where implicit measures are disabled in your semantic model, Copilot cannot create report pages.
+- **Q&A feature switch**: The Q&A feature switch for your model must be turned on to use Copilot for report creation and editing.
+- **Custom visuals**: Custom visuals aren't currently supported.
+- **Styling changes**: Styling or formatting changes aren't supported through Copilot.
+- **Complex visuals**: Changing complex visuals may result in some loss of detail or formatting.
   
 ## Next steps
 
