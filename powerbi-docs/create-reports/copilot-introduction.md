@@ -123,14 +123,14 @@ The following requirements pertain to the full-screen standalone Copilot experie
 
 To use the standalone Copilot experience, your activity must be linked to a capacity. The recommended approach is to use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI is automatically billed to a single, centralized capacity. 
 
-##### Use an autoselected Copilot workspace
+#### Use an autoselected Copilot workspace
 
 If your org doesn't have an FCC, standalone Coiplot automatically selects a workspace linked to a capacity that supports Copilot. This workspace must meet Copilot requirements (linked to an F2 capacity or higher, in a supported region, and enabled for Copilot) and is used for usage tracking and billing.
 We automatically select a workspace from a partially randomized list of eligible workspaces, weighted toward those with more available capacity. This approach helps balance usage and prevents overloading any single capacity. This selection persists across sessions as long as the workspace remains Copilot-enabled and has available capacity. If the workspace becomes disabled for Copilot or reaches its capacity limit, we automatically reassign a new one and notify the user. If an FCC becomes available, it always overrides the autoselected workspace. Users receive a dismissible notification showing the chosen workspace and a direct option to change it.
 
 :::image type="content" source="media/copilot-introduction/workspace-autoselection.png" alt-text="Screenshot of the standalone Copilot confirmation that the workspace was autoassigned via autoselection." lightbox="media/copilot-introduction/workspace-autoselection.png":::
 
-##### Change your Copilot workspace
+#### Change your Copilot workspace
 
 You can update your Copilot workspace anytime via **More > Manage workspace** in the standalone Copilot experience. Once you manually select a workspace, we only override it if an FCC becomes available. If your chosen workspace becomes disabled or reaches its capacity limit, we alert you and provide options to select a new workspace manually or through autoselection.
 
