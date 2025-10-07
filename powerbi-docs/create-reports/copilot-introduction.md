@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/06/2025
+ms.date: 10/07/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -112,19 +112,30 @@ The following requirements pertain to all Copilot experiences in Power BI.
 
 The following requirements pertain to the full-screen standalone Copilot experience accessed via the left navigation.
 
-#### Tenant settings
+#### Enable tenant settings
+
 - The setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
 - The tenant setting called [**Users can access a standalone, cross-item Power BI Copilot experience (preview)**](copilot-enable-power-bi.md#enable-the-standalone-power-bi-copilot-experience-preview) must be enabled.
 
 :::image type="content" source="media/copilot-introduction/copilot-access-standalone-enabled.png" alt-text="Screenshot of the standalone Copilot admin screen with options enabled." lightbox="media/copilot-introduction/copilot-access-standalone-enabled.png":::
 
-#### Capacity 
-To use the standalone Copilot experience, your activity must be associated with a capacity. The recommended approach is to use a dedicated Fabric Copilot Capacity (FCC), which allows Copilot usage across Power BI to be billed to a single, centralized capacity. If you don't have access to an FCC, the standalone Copilot experience will automatically select a Copilot workspace—that is, a workspace backed by a capacity that meets copilot requirements (F2 or higher, in a supported region, enabled for use with Copilot)—to use for usage tracking and billing.
+#### Link to a capacity
 
-_How auto-selection works:_ We generate a partially randomized list of workspaces, weighted toward those with more available capacity. This helps balance usage and avoids overloading any single capacity. We’ll go down that list and pick a workspace tied to a capacity that meets Copilot requirements. As long as the auto-selected workspace remains Copilot-enabled and has capacity, the selection will persist across sessions. If the auto-selected workspace becomes disabled for Copilot or hits its usage capacity, we’ll automatically reassign a new one and alert the user. Additionally, if an FCC becomes available, it will always override the auto-selected workspace. A dismissible notification will let users know which workspace was chosen, with a direct option to change it. 
+To use the standalone Copilot experience, your activity must be linked to a capacity. The recommended approach is to use a dedicated [Fabric Copilot Capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). An FCC allows all Copilot usage across Power BI to be billed to a single, centralized capacity. If you don’t have access to an FCC, the standalone Copilot experience automatically selects a Copilot workspace. This workspace must meet Copilot requirements (F2 or higher, in a supported region, and enabled for Copilot) and is used for usage tracking and billing.
 
-_You can change your Copilot workspace any time:_ Users can also update the selected workspace anytime via **More > Manage workspace** in the standalone Copilot experience. Once a manual selection is made, we will only override their selection automatically if an FCC becomes available to them. If a manually-selected workspace becomes disabled or hits a capacity limit, we'll alert the user and give them the option to manually or automatically choose a new workspace.
+##### Use an autoselected Copilot workspace
 
+We create a partially randomized list of eligible workspaces, weighted toward those with more available capacity. This approach helps balance usage and prevents overloading any single capacity. From that list, we select a workspace tied to a capacity that meets Copilot requirements. The selection persists across sessions as long as the workspace remains Copilot-enabled and has available capacity. If the workspace becomes disabled for Copilot or reaches its capacity limit, we automatically reassign a new one and notify the user. If an FCC becomes available, it always overrides the autoselected workspace. Users receive a dismissible notification showing the chosen workspace and a direct option to change it.
+
+:::image type="content" source="media/copilot-introduction/workspace-autoselection.png" alt-text="Screenshot of the standalone Copilot confirmation that the workspace was autoassigned via autoselection." lightbox="media/copilot-introduction/workspace-autoselection.png":::
+
+##### Change your Copilot workspace
+
+You can update your Copilot workspace anytime via **More > Manage workspace** in the standalone Copilot experience. Once you manually select a workspace, we only override it if an FCC becomes available. If your chosen workspace becomes disabled or reaches its capacity limit, we alert you and provide options to select a new workspace manually or through autoselection.
+
+:::image type="content" source="media/copilot-introduction/workspace-manage.png" alt-text="Screenshot of the standalone Copilot more menu with the option to manage workspace." lightbox="media/copilot-introduction/workspace-manage.png":::
+
+:::image type="content" source="media/copilot-introduction/workspace-choose.png" alt-text="Screenshot of the standalone Copilot menu with the option to choose or update your Copilot workspace." lightbox="media/copilot-introduction/workspace-choose.png":::
 
 ### Requirements for Copilot within reports
 
@@ -138,6 +149,7 @@ These requirements pertain to using Copilot within Power BI reports, including t
   - To add a narrative visual to a report or generate Copilot reports, you need *edit access* to the workspace or report, or *build access* to the semantic model
 
 ### Requirements for Copilot in apps
+
 These requirements pertain to using Copilot in Power BI apps, the full-page Copilot experience accessible from app navigation.
 
 - The setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
