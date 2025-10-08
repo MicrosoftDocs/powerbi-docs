@@ -18,7 +18,9 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-When you use Copilot for Power BI, you can quickly create and edit report pages using natural language prompts. Copilot can save you hours of effort building and refining your report pages. You can also [create reports with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
+When you use Copilot for Power BI, you can quickly create and edit report pages using natural language prompts. Copilot can save you hours of effort building and refining your report pages. 
+
+You can also [create reports with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
 
 :::image type="content" source="media/copilot-create-report/copilot-create-page-update.png" alt-text="Screenshot showing Copilot creating travel analysis." lightbox="media/copilot-create-report/copilot-create-page-update.png":::
 
@@ -68,17 +70,29 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
     :::image type="content" source="media/copilot-create-report/copilot-create-start.png" alt-text="Screenshot showing Copilot pane.":::
 
+1. Copilot generates a report page based on your request.
+    
+    :::image type="content" source="media/copilot-create-report/copilot-create-page-step2.png" alt-text="Screenshot showing Copilot pane.":::
+
+1. You can further edit the report by prompting Copilot to add, delete, or change visuals.
+
+    :::image type="content" source="media/copilot-create-report/copilot-create-page-step3.png" alt-text="Screenshot showing Copilot pane.":::
+
 1. If you need help with writing prompts, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
 ## Improved report creation and edits
 
-With updates to report creation in the Power BI service, you can work with Copilot to both create and edit report pages. These updates provide more control, flexibility, and visual intelligence when building reports.
+With updates to report creation in the Power BI service, you can now work with Copilot to both create and edit report pages. These improvements provide more control, flexibility, and visual intelligence when building reports.
 
+### Smarter report creation
 Copilot now delivers more accurate and relevant visuals, automatically selecting the best way to represent your data. It also supports a wider range of visual types, helping you present insights in the format that best fits your needs.
 
-In addition to creating new pages, you can now use Copilot to add visuals to existing report pages, change or replace visuals, or delete visuals that are no longer needed.
-
-These enhancements make it easier to collaborate with Copilot as you refine and update reports, generating more relevant and transparent results in Power BI.
+### Flexible editing with Copilot
+In addition to creating new pages, you can now:
+- **Add visuals** to existing report pages.  
+- **Change visuals** by selecting new visual types or adjusting the fields used.  
+- **Delete visuals** that are no longer needed.  
+- **Use undo and redo** to easily reverse recent Copilot actions.
 
 ## Save the report
 
@@ -90,10 +104,10 @@ When you're satisfied with the report, you save the report just like any other r
 
 There are limitations related to creating pages in specific semantic model scenarios.
 
+- **Q&A feature switch**: The Q&A feature switch for your model must be turned on to use Copilot for report creation and editing.
 - **Real-Time Streaming Models**: Report pages can't be created by Copilot for semantic models utilizing real-time streaming.
 - **Live Connection to Analysis Services**: Semantic models connected live to Analysis Services aren't supported by page creation.
 - **Semantic models with implicit measures disabled**: In scenarios where implicit measures are disabled in your semantic model, Copilot cannot create report pages.
-- **Q&A feature switch**: The Q&A feature switch for your model must be turned on to use Copilot for report creation and editing.
 - **Custom visuals**: Custom visuals aren't currently supported.
 - **Styling changes**: Styling or formatting changes aren't supported through Copilot.
 - **Complex visuals**: Changing complex visuals may result in some loss of detail or formatting.
