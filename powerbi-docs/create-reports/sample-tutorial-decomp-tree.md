@@ -53,17 +53,15 @@ If you want to get familiar with the built-in sample in this tutorial and its sc
 
 ## Create a decomposition tree
 
-Let's add a decomposition tree to our report for analysis in Power BI Desktop.
+Now you can create a decomposition tree to analyze the sample data.
 
-1. Under **Build visual** in the **Visualizations** pane, select the **Decomposition tree** icon.
+1. In the **Visualizations** pane under **Build visual**, select the **Decomposition tree** icon.
 
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png" alt-text="Screenshot shows the Visualizations pane with Decomposition tree selected." lightbox="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png":::
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png" alt-text="Screenshot shows the visualizations pane with the decomposition tree icon highlighted." lightbox="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png":::
 
-1. Select the focus mode icon or drag the edge so the visualization fills most of the page. In this example, we're in focus mode. 
+1. Decomposition trees can get wide. Select the focus mode icon or drag the edge so the visualization fills most of the page. In this example, we're in focus mode.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-resize-desktop.png" alt-text="Screenshot shows the resized decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-resize-desktop.png":::
-
-    Decomposition trees can get wide.
 
 1. Expand **Sales** > **This Year Sales** and then select **Value**. Power BI adds the corresponding value to the **Analyze** box. 
 
