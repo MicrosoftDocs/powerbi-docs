@@ -79,7 +79,7 @@ sections:
 
               Descriptions provide extra metadata that Copilot can use to understand your model.
               
-              While descriptions currently influence only some Copilot behaviors, they'll play a larger role in future capabilities. Adding them now helps build a strong foundation for long-term success with natural language interactions in Power BI.
+              Although descriptions currently influence only some Copilot behaviors, they'll play a larger role in future capabilities. Adding them now helps build a strong foundation for long-term success with natural language interactions in Power BI.
 
       - question: |
           Can I create tooling on a report instead of on the model?
