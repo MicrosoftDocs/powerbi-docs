@@ -13,6 +13,8 @@ ms.collection: ce-skilling-ai-copilot
 ---
 
 > [!NOTE]
+> Keep the following requirements in mind:
+>
 > - Your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
 > - Your Fabric capacity needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
 > - Your administrator needs to enable the tenant switch before you start using Copilot. See the article [Copilot tenant settings](/fabric/admin/service-admin-portal-copilot) for details.

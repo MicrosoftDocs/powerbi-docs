@@ -16,9 +16,6 @@ ms.collection: ce-skilling-ai-copilot
 
 # Prepare your data for AI - AI instructions
 
-> [!NOTE]
-> You can't *author* **Prep data for AI** features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
-
 To prepare your data for AI in Power BI, you need to optimize your semantic model to enhance the performance of Copilot. When you use features like AI instructions, you can provide context and guidance that improve the relevance and accuracy of AI-driven insights. This guide walks you through the steps to set up and test AI instructions, to help prepare your data for AI-powered analysis.
 
 AI instructions allow model authors to provide context, business logic, and specific guidance directly on the semantic model. Copilot uses these instructions to better interpret user questions by incorporating organizational language, terminology, and analytical priorities that Copilot wouldn't otherwise understand on its own.
@@ -28,6 +25,9 @@ These instructions help clarify business terms, guide analysis approaches, and p
 AI instructions make Copilot more aligned to your business. They improve the quality and relevance of responses by reducing ambiguity and ensuring that Copilot understands your domain-specific terms and analysis expectations. Ultimately, this practice leads to more meaningful insights, less user frustration, and a smoother experience with Copilot across reports that use the same model.
 
 ## Set up AI instructions
+
+> [!NOTE]
+> You can't *author* **Prep data for AI** features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
 1. Select the **Prep data for AI** button located on the Home ribbon in Power BI Desktop, or on the ribbon on the selected semantic model in the Power BI service.  
 
