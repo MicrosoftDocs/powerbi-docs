@@ -1,5 +1,5 @@
 ---
-title: Run Python scripts in Power BI Desktop
+title: Run Python Scripts in Power BI Desktop
 description: Run Python scripts directly in Power BI Desktop and import the resulting datasets into a Power BI Desktop data model.
 author: otarb
 ms.author: otarb
