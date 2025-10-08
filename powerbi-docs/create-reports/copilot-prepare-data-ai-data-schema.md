@@ -11,7 +11,7 @@ ms.date: 05/11/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
-#customer intent: As a Power BI user, I want to learn how to prepare my data for AI by using features like AI data schemas to optimize Copilot's performance, ensure accurate and verified answers, and enhance AI-driven insights and user interactions.
+#customer intent: As a Power BI user, I want to learn how to prepare my data for AI by using features like AI data schemas to optimize the performance of Copilot, ensure accurate and verified answers, and enhance AI-driven insights and user interactions.
 ---
 
 # Prepare your data for AI: AI data schemas
@@ -23,7 +23,7 @@ By using an AI data schema, semantic model authors can define a focused subset o
 
 When you set an AI data schema for a model, Copilot uses the selected fields when it responds to data-related questions. When users ask questions, Copilot uses the reduced schema. It produces more accurate responses by using the correct field without needing clarification from the end user.
 
-By using a defined AI data schema, model authors can ensure that Copilot pulls the most relevant and focused data for specific queries. This practice enhances the quality and relevance of Copilot's responses, which makes the interactions more efficient and tailored to the user's needs. The AI data schema ensures that Copilot works with the most important fields for specific tasks, improving accuracy and clarity in its output.
+By using a defined AI data schema, model authors can ensure that Copilot pulls the most relevant and focused data for specific queries. This practice enhances the quality and relevance of Copilot responses, which makes the interactions more efficient and tailored to the user's needs. The AI data schema ensures that Copilot works with the most important fields for specific tasks, improving accuracy and clarity in its output.
 
 ## Set an AI data schema
 
@@ -38,13 +38,13 @@ To set an AI data schema, follow these steps:
 
 1. Select **Apply** to make your changes.
 
-After you exit the dialog, your changes are saved to your model. Copilot now uses your AI data schema when it answers questions from users.  
+After you close the dialog, your changes are saved to your model. Copilot now uses your AI data schema when it answers questions from users.  
 
 You can update your AI data schema at any time by reopening the **Prep data for AI** dialog.
 
 ## Test your AI data schema in Power BI Desktop
 
-You can test to make sure that Copilot is following the changes you made in the AI data schema. Follow these instructions:
+You can test to ensure that Copilot is following the changes you made in the AI data schema. Follow these instructions:
 
 1. Open the **Copilot report** pane in Power BI Desktop.
 1. Select **skill picker**, and then select **Answer data question**.
@@ -64,7 +64,7 @@ After your report is published to the service, or after you made changes by usin
 Here are some things you need to know:
 
 - Consumers of your semantic model can't see the AI data schema set on the model.
-- The data schema only applies to Copilot capabilities that utilize the schema.
+- The data schema only applies to Copilot capabilities that use the schema.
 - The AI data schema isn't considered for Copilot capabilities that don't use the model schema. For example, when Copilot gives a summary of the report or answers a question directly from the report page.
 - When you use Copilot to create a report page, search for data, or use a Data Analysis Expressions (DAX) query, Copilot requires the entire semantic model. It doesn't consider the AI data schema.
 - All fields that are available in the semantic model appear in the AI data schema selection pane regardless of how visibility is set on the semantic model. Fields that are hidden in the semantic model are automatically excluded in the initial AI data schema when you set it up for the first time.

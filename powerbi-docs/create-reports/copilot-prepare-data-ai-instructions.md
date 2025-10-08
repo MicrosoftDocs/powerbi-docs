@@ -11,7 +11,7 @@ ms.date: 05/12/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
-#customer intent: As a Power BI user, I want to understand how to prepare my data for AI to optimize Copilot's performance, improve AI-driven insights, and enhance user interactions by leveraging AI instructions.
+#customer intent: As a Power BI user, I want to understand how to prepare my data for AI to optimize the performance of Copilot, improve AI-driven insights, and enhance user interactions by leveraging AI instructions.
 ---
 
 # Prepare your data for AI - AI instructions
@@ -19,7 +19,7 @@ ms.collection: ce-skilling-ai-copilot
 > [!NOTE]
 > You can't *author* **Prep data for AI** features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
-To prepare your data for AI in Power BI, you need to optimize your semantic model to enhance Copilot's performance. When you use features like AI instructions, you can provide context and guidance that improve the relevance and accuracy of AI-driven insights. This guide walks you through the steps to set up and test AI instructions, to help prepare your data for AI-powered analysis.
+To prepare your data for AI in Power BI, you need to optimize your semantic model to enhance the performance of Copilot. When you use features like AI instructions, you can provide context and guidance that improve the relevance and accuracy of AI-driven insights. This guide walks you through the steps to set up and test AI instructions, to help prepare your data for AI-powered analysis.
 
 AI instructions allow model authors to provide context, business logic, and specific guidance directly on the semantic model. Copilot uses these instructions to better interpret user questions by incorporating organizational language, terminology, and analytical priorities that Copilot wouldn't otherwise understand on its own.
 
@@ -44,7 +44,7 @@ AI instructions make Copilot more aligned to your business. They improve the qua
 
 1. Select **Apply**.  
 
-After you exit the dialog, your changes are saved to your model. Copilot now uses the AI instructions.  
+After you close the dialog, your changes are saved to your model. Copilot now uses the AI instructions.  
 
 ## Test AI instructions in Power BI Desktop
 
@@ -53,7 +53,7 @@ After you exit the dialog, your changes are saved to your model. Copilot now use
 1. Interact with Copilot by utilizing one of the instructions that you set.  
 1. Ensure that Copilot responds accurately.  
 1. If you need to change the instructions, reopen the **Prep data for AI** dialog and adjust.  
-1. Publish or save your report. When you're done testing and you're satisfied with the AI instructions, publish your report to the Power BI service.  
+1. Publish or save your report. When you finish testing and are satisfied with the AI instructions, publish your report to the Power BI service.  
 
 > [!NOTE]
 > Each time you edit an instruction in the **Prep data for AI** dialog, you need to refresh the Copilot pane by closing and reopening it.  
@@ -90,7 +90,7 @@ You can guide Copilot on how to approach certain types of analysis by providing 
 
 ## Prompt engineering for AI instructions  
 
-Because AI instructions are heavily prompt-based, it's important to understand best practices for prompt engineering as you build out your instructions for a semantic model. Copilot can be sensitive to the prompts that it receives, so prompt construction affects Copilot outputs. Here are some ways to get the most out of your AI instructions, including an example of best practices in action:  
+Because AI instructions are heavily prompt-based, it's important to understand best practices for prompt engineering as you build out your instructions for a semantic model. Copilot can be sensitive to the prompts that it receives, so prompt construction affects Copilot outputs. Here are some ways to get the most out of your AI instructions, including an example of best practices in action.
 
 ### Be explicit and specific
 
@@ -102,7 +102,7 @@ When you use analogies and descriptive language, you help the model understand y
 
 ### Avoid ambiguity
 
-Be clear about anything that you want Copilot to emphasize or avoid. The more details and supporting content you can provide Copilot, the better. For example, for Total Active Partners, use the measure "Monthly Active Partner Count" (don't filter on the "Customers" table).  
+Be clear about anything that you want Copilot to emphasize or avoid. The more details and supporting content you can provide Copilot, the better. For example, for `Total Active Partners`, use the measure "Monthly Active Partner Count" (don't filter on the **Customers** table).  
 
 ### Group related instructions
 
@@ -147,7 +147,6 @@ Gross product sales (GPS) should reference the `grossrevenue` field in the **Rev
   - If the value `product_type` in the **Product** table is `Food`, then *always* show the store where the item was sold. Store information is found in the **Store** table with the field `store_name` and it can be linked to `product_type` by `store_id`.
 
 > [!NOTE]
->
 > You often need to iterate to get the most benefit from AI instructions. As you experiment and observe how Copilot responds, you develop a better understanding of what types of instructions drive the best outcomes for your model and your users.  
 
 ## Considerations and limitations  
@@ -158,7 +157,7 @@ Here are some things that you need to know:
 - AI instructions affect Copilot capabilities but don't extend to general conversations with Copilot.  
 - AI instructions are saved at the semantic model level. Instructions can't currently be stored at the report level.  
 - AI instructions aren't expected to be persona-specific or modify non-data-related outputs for the end user.
-- AI instructions can't disable other Copilot in Power BI features or prevent or prioritize certain features from being called.
+- AI instructions can't disable other Copilot in Power BI features or prevent/prioritize certain features from being called.
 - Instructions aren't intended to work with visual modifications or theming in your report.  
 - Currently, you can't upload instructions to the dialog in Desktop.  
 - To test instructions in Desktop, you need to close and reopen your Copilot pane to see new instructions applied.  

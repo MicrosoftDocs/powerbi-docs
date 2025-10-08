@@ -11,7 +11,7 @@ ms.date: 05/08/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
-#customer intent: As a Power BI user, I want to understand how to prepare my data for AI to optimize Copilot's performance, improve AI-driven insights, and enhance user interactions by leveraging new features like AI data schemas, verified answers, and AI instructions.
+#customer intent: As a Power BI user, I want to understand how to prepare my data for AI to optimize the performance of Copilot, improve AI-driven insights, and enhance user interactions by leveraging new features like AI data schemas, verified answers, and AI instructions.
 ---
 
 # Prepare your data for AI
@@ -27,7 +27,7 @@ There are tooling features to help you prepare your data for AI. These features 
 
 ## New tooling features to help you prep your data for AI
 
-You can now utilize three key features to help prepare your data for AI. This preparation provides Copilot the context it needs to reduce ambiguity, improve relevance and accuracy, and make user interactions with Copilot more fluent and intuitive.
+You can now use three key features to help prepare your data for AI. This preparation provides Copilot the context it needs to reduce ambiguity, improve relevance and accuracy, and make user interactions with Copilot more fluent and intuitive.
 
 :::image type="content" source="media/copilot-prep-data/copilot-prep-data.png" alt-text="Screenshot of the Prep data for AI button in Power BI Desktop, located next to the Copilot button on the home ribbon." lightbox="media/copilot-prep-data/copilot-prep-data.png":::
 
@@ -118,27 +118,27 @@ You can troubleshoot changes through **Access the download diagnostic** in the *
 
 After you test and confirm your **Prep data for AI** enhancements, you can publish your report to the Power BI service for broad consumption.
 
-## <a name = "mark-your-model-as-prepped-for-ai"></a> Mark your model prepped for AI
+## <a name = "mark-your-model-as-prepped-for-ai"></a> Mark your model Prepped for AI
 
-After you prepare your semantic model for AI and it's ready for consumption, you can mark your model *prepped for AI* by following these steps:
+After you prepare your semantic model for AI and it's ready for consumption, you can mark your model **Prepped for AI** by following these steps:
 
 1. Go to the Power BI service and find your semantic model.
-1. Select the **Settings** icon in the top left corner.
+1. Select the **Settings** icon in the upper-left corner.
 1. Expand the **AI preparation** section.
 1. Select the **Prepped for AI** box, and then select the **Apply** button.
 
-:::image type="content" source="media/copilot-prep-data/copilot-ai-preparation.png" alt-text="Screenshot of the AI preparation settings in Power BI service that showcases the option to mark a model prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
+:::image type="content" source="media/copilot-prep-data/copilot-ai-preparation.png" alt-text="Screenshot of the AI preparation settings in Power BI service that showcases the option to mark a model Prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
 
-When you mark your semantic model *prepped for AI*, the standalone Copilot agent doesn't apply any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai) to answers from that model. Also, reports that use that semantic model can be considered *prepped for AI*.
+When you mark your semantic model **Prepped for AI**, the standalone Copilot agent doesn't apply any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai) to answers from that model. Also, reports that use that semantic model can be considered **Prepped for AI**.
 
 > [!NOTE]
-> When you mark a semantic model *prepped for AI*, the friction treatment in standalone Copilot for associated reports should be removed.
+> When you mark a semantic model **Prepped for AI**, the friction treatment in standalone Copilot for associated reports should be removed.
 >
 > In most cases, changes are fully reflected within an hour, but it can take up to 24 hours if the model has a lot of reports attached. To force an update to a specific report, you can speed up the process by manually saving a small change to a report.
 >
-> There's currently *no way* to mark a report, dashboard, or app *prepped for AI*.
+> There's currently *no way* to mark a report, dashboard, or app **Prepped for AI**.
 
-Authors can also turn on an admin setting to [only search data that is marked *prepped for AI*](/fabric/admin/service-admin-portal-copilot#only-show-ai-prepped-items-in-the-standalone-copilot-in-power-bi-experience-preview) within the standalone Copilot experience.
+Authors can also turn on an admin setting to [only search data that is marked **Prepped for AI**](/fabric/admin/service-admin-portal-copilot#only-show-ai-prepped-items-in-the-standalone-copilot-in-power-bi-experience-preview) within the standalone Copilot experience.
 
 ## Turn off the preview features in Desktop
 

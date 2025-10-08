@@ -61,11 +61,11 @@ sections:
               
               Now, when the user asks for *sales by area*, Copilot returns the verified answer that the model author approves.
 
-              :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-step-2.png" alt-text="Screenshot that shows an example of how verified answers improve the accuracy of Copilot's responses to user queries." lightbox="media/copilot-prep-data/copilot-prep-data-faq-step-2.png":::
+              :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-step-2.png" alt-text="Screenshot that shows an example of how verified answers improve the accuracy of Copilot responses to user queries." lightbox="media/copilot-prep-data/copilot-prep-data-faq-step-2.png":::
 
           1. [Add AI instructions](copilot-prepare-data-ai-instructions.md).
 
-              After you define the schema and verified answers, you can use AI instructions to guide Copilot's behavior at the model level.
+              After you define the schema and verified answers, you can use AI instructions to guide the behavior of Copilot at the model level.
 
               Instructions help clarify business logic, map user terminology to model fields, and tell Copilot how to interpret or analyze specific types of data. They're helpful because they provide context that Copilot wouldn't infer on its own.
 
@@ -167,7 +167,7 @@ sections:
 
           Consider a dataset related to Hawaii tourism. To answer questions like, "How did weather affect tourist visits on Maui?" Copilot needs to understand that Maui is an instance value in the semantic model in the **Island name** column of the **Island** table.
 
-          In order for Copilot to effectively search these instance values, the semantic model is indexed when Power BI Q&A is enabled. It's reindexed when Power BI detects changes to the model.  
+          For Copilot to effectively search these instance values, the semantic model is indexed when Power BI Q&A is enabled. It's reindexed when Power BI detects changes to the model.  
 
           #### Model indexing frequency 
 
@@ -191,7 +191,7 @@ sections:
 
           
           > [!NOTE]
-          > This error doesn't mean that Copilot isn't available to users. This message indicates that any new instance values added or changed in the model might not reflect in Copilot's responses until the indexing activity finishes. 
+          > This error doesn't mean that Copilot isn't available to users. This message indicates that any new instance values added or changed in the model might not reflect in Copilot responses until the indexing activity finishes. 
 
           #### Indexing methodology 
 

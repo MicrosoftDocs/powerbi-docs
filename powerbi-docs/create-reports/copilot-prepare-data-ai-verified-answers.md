@@ -1,6 +1,6 @@
 ---
 title: Prepare Your Data for AI - Verified Answers
-description: Prepare your data for AI in Power BI by using verified answers. Optimize Copilot's performance, improve AI-driven insights, and enhance user interactions.
+description: Prepare your data for AI in Power BI by using verified answers. Optimize the performance of Copilot, improve AI-driven insights, and enhance user interactions.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: 
@@ -11,7 +11,7 @@ ms.date: 05/11/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
-#customer intent: As a Power BI user, I want to learn how to prepare my data for AI by using features like AI data schemas to optimize Copilot's performance, ensure accurate and verified answers, and enhance AI-driven insights and user interactions.
+#customer intent: As a Power BI user, I want to learn how to prepare my data for AI by using features like AI data schemas to optimize the performance of Copilot, ensure accurate and verified answers, and enhance AI-driven insights and user interactions.
 ---
 
 # Prepare your data for AI - Verified answers
@@ -30,13 +30,13 @@ There are two major reasons to use verified answers:
 - **Improve consistency**: Provide curated, reliable responses to common or complex questions, so users always get the same trusted insights.
 - **Boost Copilot accuracy**: Help Copilot learn from effective responses and improve its understanding of user intent over time.
 
-With verified answers, authors can shape Copilot's responses to key business questions, which makes Copilot smarter, faster, and more aligned with user expectations.
+With verified answers, authors can shape Copilot responses to key business questions. Verified answers can help make Copilot smarter, faster, and more aligned with user expectations.
 
 When a user types a prompt in Copilot, it first checks for an exact or semantically similar match to any trigger phrase tied to a verified answer. If a match is found, Copilot returns the verified answer instead of generating a new response.
 
 Because verified answers are model-level (not report-level), they work across any report that uses the same semantic model. For example, a verified answer tied to *snowboard sales by month* is also triggered if a user asks, "How do snowboard sales change over time?"
 
-Also, Copilot learns from how users interact with verified answers. It gains a better understanding of phrasing, synonyms, and data relationships to improve its future responses. Over time, Copilot's ability to understand and respond to prompts improves, even when users phrase questions differently from the original trigger phrases.
+Also, Copilot learns from how users interact with verified answers. It gains a better understanding of phrasing, synonyms, and data relationships to improve its future responses. Over time, the ability of Copilot to understand and respond to prompts improves, even when users phrase questions differently from the original trigger phrases.
 
 ## Set a verified answer
 
@@ -89,7 +89,7 @@ For example:
 - If a region filter has no selection (or shows *All*), it appears under **Available to users**.
 - If the region filter is set to *Northwest*, it doesn't appear in **Available to users**. It shows under **Applied to this visual**.
 
-Note: Slicers aren't carried over into verified answers and don't appear as filter options. Additionally, filters are eligible as they're set. For example, advanced filters carry over as advanced filters, and basic filters carry over as advanced filters. Reference the supported filter types mentioned previously in this article.
+Slicers aren't carried over into verified answers and don't appear as filter options. Additionally, filters are eligible as they're set. For example, advanced filters carry over as advanced filters, and basic filters carry over as advanced filters. Reference the supported filter types mentioned previously in this article.
 
    > [!NOTE]
    > To review existing filters that affect the visual, select **Applied to this visual** during setup.
@@ -160,7 +160,7 @@ With this flexibility, authors don't need to predict every possible phrasing. Th
 
 ### Semantically similar phrases
 
-Copilot uses semantic matching to trigger verified answers, which means that it can recognize prompts that are phrased differently but still align with the intent of a trigger phrase. Here's what *is* and *isn't* supported:
+Copilot uses semantic matching to trigger verified answers. It can recognize prompts that are phrased differently but still align with the intent of a trigger phrase. Here's what *is* and *isn't* supported:
 
 - **Supported**:
   - Using synonyms that are commonly understood or defined within the semantic model
@@ -170,7 +170,7 @@ Copilot uses semantic matching to trigger verified answers, which means that it 
   - Adding, removing, or swapping out fields or dimensions
   - Modifying or replacing the original measure in the phrase
 
-These guidelines can help make sure that your verified answers are reliably triggered, while preserving the integrity of the visual and its logic.
+These guidelines can help ensure that your verified answers are reliably triggered, while preserving the integrity of the visual and its logic.
 
 | Trigger phrase | Does match | Doesn't match|
 |----------------|--------------|----------------|
@@ -186,7 +186,7 @@ Here are some things that you need to know:
 - Any filters on the visual (visual, page, or report level) that are applied upon verified answer setup are applied to the data in the verified answer.
 - Drill-through filters aren't supported.
 - Row-level security (RLS) and object-level security (OLS) aren't fully supported as security features for verified answers. In most cases, if a verified answer contains data protected by RLS or OLS, it isn't matched on or returned to users. This practice prevents broken visuals from appearing. In these situations, Copilot responds without the verified answer. However, there are scenarios where data may still be exposed (for example, through the file format in Git). During preview, we don't recommend that you rely on this functionality as a security feature, even though it functions correctly in the majority of cases.
-- Cross highlighting and cross filtering aren't supported.
+- Cross-highlighting and cross-filtering aren't supported.
 - Slicers aren't included in verified answer states. Slicers that are applied on the report don't persist in the verified answer.
 - Verified answers don't work if fields in the verified answer are hidden in the model, because there's no entry point on the visual.
 - You must select the visual to enable the setup experience in the context menu (must be in a selected state).
@@ -283,7 +283,7 @@ Verified answers are part of the semantic model, not the report. When you edit t
 **Why won't my verified answer filter the way that I want in the Copilot pane?**
 
 - **Is the filter included in the verified answer?** The author must explicitly add filters when they create the verified answer. If the filter you're trying to use isn't added to the verified answer, it doesn't work in Copilot. Double check that it's part of the verified answer configuration.
-- **Are the filter fields visible in the model and schema selection?** Even if a filter is applied, it doesn't function properly if any part of it is hidden. Filters are embedded in the verified answer definition, so make sure all related fields are unhidden in both the schema selection and the data model. Hidden fields can prevent filters from working as expected.
+- **Are the filter fields visible in the model and schema selection?** Even if a filter is applied, it doesn't function properly if any part of it is hidden. Filters are embedded in the verified answer definition, so ensure that all related fields are unhidden in both the schema selection and the data model. Hidden fields can prevent filters from working as expected.
 - **Is it actually filtered?** Check the **How Copilot arrived at this** section and see what (if any) filters are applied. The "matched on" trigger phrase doesn't update to show the filter, but the data in the verified answer *does*, so it can sometimes be hard to tell.
 
 ## Related content

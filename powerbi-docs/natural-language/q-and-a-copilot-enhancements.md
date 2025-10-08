@@ -22,14 +22,12 @@ The Q&A visual and its natural language processing capabilities don't rely on ge
 
 ## Prerequisites
 
-Before you can use Copilot-generated content in Power BI Q&A, you need to satisfy the [requirements for using Copilot](../create-reports/copilot-introduction.md#copilot-requirements).
+Before you can use Copilot-generated content in Power BI Q&A, you need to satisfy the [requirements for using Copilot](../create-reports/copilot-introduction.md#copilot-requirements):
 
-> [!NOTE]
->
-> - Your F64 or P1 capacity must be in one of the regions listed in this article: [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
-> - Your administrator needs to enable the tenant switch before you start using Copilot. For details, see the article [Copilot tenant settings](/fabric/admin/service-admin-portal-copilot).
-> - If your tenant or capacity is outside the US or France, Copilot is disabled by default. The one exception is if your Fabric tenant admin enables the [Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance](/fabric/admin/service-admin-portal-copilot) tenant setting. You can find this setting in the Fabric admin portal.
-> - Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
+- Your F64 or P1 capacity must be in one of the regions listed in this article: [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
+- Your administrator needs to enable the tenant switch before you start using Copilot. For details, see the article [Copilot tenant settings](/fabric/admin/service-admin-portal-copilot).
+- If your tenant or capacity is outside the US or France, Copilot is disabled by default. The one exception is if your Fabric tenant admin enables the [Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance](/fabric/admin/service-admin-portal-copilot) tenant setting. You can find this setting in the Fabric admin portal.
+- Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
 
 ## Synonym suggestions
 
@@ -40,8 +38,8 @@ However, adding synonyms for every data entity in your model can be time consumi
 There are a few ways to add Copilot-suggested synonyms to Q&A:
 
 - When you first create a Q&A visual or open the Q&A setup menu, you might see a banner at the top of the visual or menu. The banner prompts you to improve your Q&A visual by getting synonyms. You can select **Add synonyms** to have Copilot generate synonyms for the names of your tables and columns.
-- You can also get Copilot-generated synonyms via the synonyms tab of the Q&A setup menu. Enable Copilot as a source via the suggestion settings dropdown menu, and then select **Apply**. Copilot generates suggestions.
-- If Copilot is already enabled as a source, you can refresh suggestions from Copilot by selecting the **Refresh** button next to the suggestion settings dropdown menu.
+- You can also get Copilot-generated synonyms via the synonyms tab of the Q&A setup menu. Enable Copilot as a source via the **Suggestion settings** dropdown menu, and then select **Apply**. Copilot generates suggestions.
+- If Copilot is already enabled as a source, you can refresh suggestions from Copilot by selecting the **Refresh** button next to the **Suggestion settings** dropdown menu.
 
 Whenever you get suggested synonyms from Copilot, Q&A sends your model metadata to Copilot. Your model metadata includes the names of tables and fields in your data model, but not the row contents of those tables or any user questions. Copilot returns some suggested synonyms for those names.
 
