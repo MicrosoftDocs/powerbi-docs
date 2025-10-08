@@ -38,6 +38,7 @@ Power BI supports the following data sources:
 * Azure SQL (Microsoft Entra ID)
 * Azure Synapse Analytics (Microsoft Entra ID)
 * Denodo (Kerberos)
+* Dremio Cloud (Microsoft Entra ID)
 * Hive LLAP (Kerberos)
 * Impala (Kerberos)
 * Oracle (Kerberos)
