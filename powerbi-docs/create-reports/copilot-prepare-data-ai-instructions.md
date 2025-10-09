@@ -14,7 +14,7 @@ ms.collection: ce-skilling-ai-copilot
 #customer intent: As a Power BI user, I want to understand how to prepare my data for AI to optimize the performance of Copilot, improve AI-driven insights, and enhance user interactions by leveraging AI instructions.
 ---
 
-# Prepare your data for AI - AI instructions
+# Prepare your data for AI: AI instructions
 
 Preparing your data for AI in Power BI involves optimizing your semantic model to enhance the performance of Copilot. When you use features like AI instructions, you can provide context and guidance that improve the relevance and accuracy of AI-driven insights. This guide walks you through the steps to set up and test AI instructions, to help prepare your data for AI-powered analysis.
 
@@ -102,11 +102,11 @@ When you use analogies and descriptive language, you help the model understand y
 
 ### Avoid ambiguity
 
-Be clear about anything that you want Copilot to emphasize or avoid. The more details and supporting content you can provide Copilot, the better. For example, for `Total Active Partners`, use the measure `Monthly Active Partner Count` (don't filter on the **Customers** table).  
+Be clear about anything that you want Copilot to emphasize or avoid. The more details and supporting content you can provide Copilot, the better. For example, for `Total Active Partners`, use the measure `Monthly Active Partner Count`. (Don't filter on the **Customers** table.)  
 
 ### Group related instructions
 
-To help Copilot better understand your intent, organize instructions by theme or purpose (like date logic, key metrics, and industry terms). It can be beneficial to include structural elements, such as sections, hierarchies, and headers. See an example of how to group related instructions in the full set of instructions in the [example scenario](#example-scenario).
+To help Copilot better understand your intent, organize instructions by theme or purpose (like date logic, key metrics, and industry terms). It can be beneficial to include structural elements, such as sections, hierarchies, and headers. For an example of how to group related instructions in the full set of instructions, see the [example scenario](#example-scenario).
 
 ### The order in which you author instructions can affect the output you receive
 
@@ -114,7 +114,7 @@ You can boost your chances of getting correct outputs by testing different varia
 
 ### Break down complex instructions into simpler steps
 
-When you break down instructions into simple steps, you can improve clarity and reduce errors. Example: Define "top customers" by first looking at the revenue table, and then only returning the customers with the highest order values.  
+When you break down instructions into simple steps, you can improve clarity and reduce errors. For example, define *top customers* by first looking at the revenue table and then returning only the customers with the highest order values.  
 
 ### Keep instructions focused
 
@@ -122,7 +122,7 @@ Depending on the model and the instructions you set, sometimes less is more. Con
 
 ## Example scenario
 
-See the following example scenario of a set of AI instructions that are prompt engineered to fit a specific model.
+The following example scenario shows a set of AI instructions that are prompt engineered to fit a specific model.
 
 ### Instructions for answering data questions
 
@@ -135,23 +135,22 @@ Gross product sales (GPS) should reference the `grossrevenue` field in the **Rev
 - `accountid` refers to customers in the **Revenue** table.
 - `earningsid` refers to customers in the **Partners** table.
 - `customid` in the order table doesn't refer to customers.
-- Define *top customers* by first looking at the revenue table, and then only returning the customers with the highest order values.
+- Define *top customers* by first looking at the revenue table and then returning only the customers with the highest order values.
 - Some partners are also customers. Don't remove these duplicates. Instead, indicate whether it's a partner or a customer based on the ID value.
 
 #### Product metrics
 
 - Filter data by `State= Washington` or `State= California` unless the user specifically asks for a different state.  
-- For product specific sales, use the measure `Total_Sales_Product` (example of product: Word, PowerPoint, Excel, SharePoint, or Teams), and filter on the **Product** column from the **Sales** table.
-- For `Total Active Partners`, use the measure `Monthly Active Partner Count_ID` (don't filter on the **Customers** table).
+- For product specific sales, use the measure `Total_Sales_Product` (example of product: Word, PowerPoint, Excel, SharePoint, or Teams). Filter on the **Product** column from the **Sales** table.
+- For `Total Active Partners`, use the measure `Monthly Active Partner Count_ID`. (Don't filter on the **Customers** table.)
 - Food product sales are always from retail stores.
-  - If the value `product_type` in the **Product** table is `Food`, then *always* show the store where the item was sold. Store information is found in the **Store** table with the field `store_name` and it can be linked to `product_type` by `store_id`.
+  
+  If the value `product_type` in the **Product** table is `Food`, then *always* show the store where the item was sold. Store information is found in the **Store** table with the field `store_name`, and it can be linked to `product_type` by `store_id`.
 
 > [!NOTE]
 > You often need to iterate to get the most benefit from AI instructions. As you experiment and observe how Copilot responds, you develop a better understanding of what types of instructions drive the best outcomes for your model and your users.  
 
 ## Considerations and limitations  
-
-Here are some things that you need to know:
 
 - Because AI instructions are unstructured guidance to Copilot, the LLM only interprets them. There's no guarantee that the LLM will exactly follow instructions.
 - AI instructions affect Copilot capabilities but don't extend to general conversations with Copilot.  
