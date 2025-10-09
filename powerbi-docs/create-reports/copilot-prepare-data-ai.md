@@ -62,7 +62,7 @@ To author an AI data schema and AI instructions in the Power BI service, follow 
 
 1. Select the semantic model to prep for AI.
 2. From the ribbon, select the **Prep data for AI** button.
-3. Use the available features, and then hit apply when you're satisfied with your updates.
+3. Use the available features, and then select **Apply** when you're satisfied with your updates.
 
 > [!NOTE]
 > It might take time for the changes that you made to affect Copilot results. If **Prep data for AI** features don't take effect immediately, wait a few minutes and try again.
@@ -112,7 +112,7 @@ All three skills are enabled in Power BI Desktop by default. You can immediately
 
 Use the Copilot report pane in Power BI Desktop to test changes that you make through the **Prep data for AI** dialog. We recommend that you create an iterative and thorough testing process. Each time that you make an update to one of the features, you can view the latest updates by refreshing the Copilot report pane. Just close and reopen it.
 
-You can troubleshoot changes through **Access the download diagnostic** in the **...** menu in the report pane. You can also analyze the **How Copilot arrived at this** (HCAAT) feature, which is included in answers from your semantic model.
+You can troubleshoot changes through **Access the download diagnostic** on the **...** menu on the report pane. You can also analyze the **How Copilot arrived at this** (HCAAT) feature, which is included in answers from your semantic model.
 
 :::image type="content" source="media/copilot-prep-data/copilot-test-prep.png" alt-text="Screenshot that shows how to test the Prep data for AI features in Power BI Desktop that showcases the Copilot report pane." lightbox="media/copilot-prep-data/copilot-test-prep.png":::
 
@@ -145,7 +145,7 @@ Authors can also turn on an admin setting to [only search data that is marked **
 You can also remove the ability to author **Prep data for AI** features within Power BI Desktop.
 
 1. Select **File** > **Options and settings** > **Options** > **Preview features** > **Prep data for AI**.
-1. Deselect the **Prep data for AI** box.
+1. Clear the **Prep data for AI** box.
 
 When you restart Desktop, you no longer see the **Prep data for AI** button.
 
@@ -160,8 +160,8 @@ When you restart Desktop, you no longer see the **Prep data for AI** button.
   - Composite (local)
 - All model types can use the **Prep data for AI** features within the Power BI service.
 - When you close the dialog, all **Prep data for AI** features are saved to the model.
-- You can test all **Prep data for AI** features in the report Copilot pane before publishing to the service.
-- You can troubleshoot **Prep data for AI** features. Use the HCAAT functionality and use the **Download diagnostics** feature from the **...** menu in the Copilot pane in Power BI Desktop. This action ensures that **Prep data for AI** features are applied. Include the diagnostic file when you create support requests.
+- You can test all **Prep data for AI** features on the report Copilot pane before publishing to the service.
+- You can troubleshoot **Prep data for AI** features. Use the HCAAT functionality and use the **Download diagnostics** feature from the **...** menu on the Copilot pane in Power BI Desktop. This action ensures that **Prep data for AI** features are applied. Include the diagnostic file when you create support requests.
 - We encourage the use of HCAAT, which is included in answers that come from a semantic model. When you use HCAAT, you can see what Copilot used to arrive at an answer.
 - After you save changes in the **Prep data for AI** dialog, refresh the Copilot pane by closing and reopening it so that changes take effect.
 - AI instructions and AI data schemas save to the LSDL and you can edit them as needed.
