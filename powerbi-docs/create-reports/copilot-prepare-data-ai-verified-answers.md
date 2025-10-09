@@ -14,7 +14,7 @@ ms.collection: ce-skilling-ai-copilot
 #customer intent: As a Power BI user, I want to learn how to prepare my data for AI by using features like AI data schemas to optimize the performance of Copilot, ensure accurate and verified answers, and enhance AI-driven insights and user interactions.
 ---
 
-# Prepare your data for AI - Verified answers
+# Prepare your data for AI: Verified answers
 
 > [!NOTE]
 > You can't *author* **Prep data for AI** features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
@@ -46,8 +46,8 @@ Also, Copilot learns from how users interact with verified answers. It gains a b
 To set a verified answer, follow these steps:
 
 1. Select a visual:
-   - **Power BI Desktop**: Select the visual that you want to use as your verified answer. From the **...** menu on the visual header, select **Set up a verified answer**.
-   - **Power BI service**: Select a report in a Copilot-enabled workspace where you have authoring permission on the semantic model. Ensure that you're in edit mode and that the desired visual is selected. From the **...** menu on the visual header, select **Set up a verified answer**.
+   - **Power BI Desktop**: Select the visual that you want to use as your verified answer. From the three-dot menu on the visual header, select **Set up a verified answer**.
+   - **Power BI service**: Select a report in a Copilot-enabled workspace where you have authoring permission on the semantic model. Ensure that you're in edit mode and that the desired visual is selected. From the three-dot menu on the visual header, select **Set up a verified answer**.
 
    > [!NOTE]
    > Any persistent filters (for example, Region = Northwest) that are applied to the visual at setup are saved as part of the verified answer. Slicers aren't currently supported.
