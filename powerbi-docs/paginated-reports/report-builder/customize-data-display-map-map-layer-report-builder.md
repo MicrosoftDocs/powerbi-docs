@@ -96,7 +96,7 @@ ms.reviewer: monaraya
   
 - Layer visibility, including transparency. To have one layer show through another layer, set the transparency to a value higher than 0. A value of 100% means the layer is not visible. To work with an individual layer, you can easily show or hide each layer independently by using the **Visibility** icon in the Map pane. You can also set zoom level options to specify when to show or hide map elements on the layer based on the zoom level.  
   
-- Add a Bing or Azure map tile layer for the current viewport center and zoom level. You do not need to specify the geographic coordinates for a tile layer. Tiles are automatically loaded to match the viewport area when the coordinate system is Geographic, the projection is Mercator, the Bing or Azure Maps servers are available, and when the report server has been configured to support this feature. For each report, you can specify whether to use a secure connection to retrieve tiles.  
+- Add Azure map tile layer for the current viewport center and zoom level. You do not need to specify the geographic coordinates for a tile layer. Tiles are automatically loaded to match the viewport area when the coordinate system is Geographic, the projection is Mercator, the Azure Maps servers are available, and when the report server has been configured to support this feature. For each report, you can specify whether to use a secure connection to retrieve tiles.  
 
  For more information about layers, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md).  
   
