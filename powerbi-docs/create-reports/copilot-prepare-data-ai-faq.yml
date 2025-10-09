@@ -13,7 +13,7 @@ title: Frequently asked questions about preparing data for AI
 summary: |
 
   > [!NOTE]
-  > You can't *author* prep data for AI features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
+  > You can't *author* **Prep data for AI** features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
 sections:
   - name: Tooling features
@@ -115,7 +115,7 @@ sections:
 
           1. Customize instructions for specific fields.
             
-             After you set the schema and verified answers, you can use AI instructions to guide Copilot when selecting particular fields. We recommend that you use instructions for fine tuning and for advanced scenarios, after other prep data AI features are set. 
+             After you set the schema and verified answers, you can use AI instructions to guide Copilot when selecting particular fields. We recommend that you use instructions for fine tuning and for advanced scenarios, after other **Prep data for AI** features are set. 
              By using this sequence of steps, you can help ensure that Copilot returns the most accurate and contextually relevant results to users, guided by your model's structure and your defined instructions.
        
       - question: |
