@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 
 # Prepare your data for AI - AI instructions
 
-To prepare your data for AI in Power BI, you need to optimize your semantic model to enhance the performance of Copilot. When you use features like AI instructions, you can provide context and guidance that improve the relevance and accuracy of AI-driven insights. This guide walks you through the steps to set up and test AI instructions, to help prepare your data for AI-powered analysis.
+Preparing your data for AI in Power BI involves optimizing your semantic model to enhance the performance of Copilot. When you use features like AI instructions, you can provide context and guidance that improve the relevance and accuracy of AI-driven insights. This guide walks you through the steps to set up and test AI instructions, to help prepare your data for AI-powered analysis.
 
 AI instructions allow model authors to provide context, business logic, and specific guidance directly on the semantic model. Copilot uses these instructions to better interpret user questions by incorporating organizational language, terminology, and analytical priorities that Copilot wouldn't otherwise understand on its own.
 
@@ -29,11 +29,11 @@ AI instructions make Copilot more aligned to your business. They improve the qua
 > [!NOTE]
 > You can't *author* **Prep data for AI** features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
-1. Select the **Prep data for AI** button located on the Home ribbon in Power BI Desktop, or on the ribbon on the selected semantic model in the Power BI service.  
+1. Select the **Prep data for AI** button located on the **Home** ribbon in Power BI Desktop, or on the ribbon on the selected semantic model in the Power BI service.  
 
    :::image type="content" source="media/copilot-prep-data/copilot-prep-data-ai.png" alt-text="Screenshot that shows the Prep Data for AI feature in Power BI Desktop." lightbox="media/copilot-prep-data/copilot-prep-data-ai.png":::
 
-   If the tabs in **Prep Data for AI** are disabled, enable Power BI Q&A for your model.  
+   If the tabs in **Prep data for AI** are disabled, enable Power BI Q&A for your model.  
 
    :::image type="content" source="media/copilot-prep-data/copilot-turn-on-qa.png" alt-text="Screenshot that shows how to enable Q&A for the model in Power BI Desktop." lightbox="media/copilot-prep-data/copilot-turn-on-qa.png":::
 
@@ -67,7 +67,7 @@ After your report is published to the Power BI service, or changes are saved in 
 
 ## Common use cases for AI instructions  
 
-AI instructions offer a flexible way to enhance how Copilot interprets and responds to user prompts. While there are many potential applications, two common use cases stand out: general business context and data interpretation and analysis rules.
+AI instructions offer a flexible way to enhance how Copilot interprets and responds to user prompts. Although there are many potential applications, two common use cases stand out: general business context and data interpretation and analysis rules.
 
 ### General business context and data interpretation
 
@@ -83,7 +83,7 @@ Instructions can help Copilot frame responses within the context of your busines
 You can guide Copilot on how to approach certain types of analysis by providing rules and preferences for how data should be sliced or prioritized. Some examples include:
 
 - Always analyze sales on a quarterly basis.  
-- When showcasing revenue, break it down by quarter and compare it to the 'industry' field.  
+- When showcasing revenue, break it down by quarter and compare it to the `industry` field.  
 - For retail insights, prioritize the `customsegmentationtable` and `saleschannel` tables.  
 - Use the `sales_fact` table as the primary source for all sales-related questions.  
 - When a user asks about product sales, always ask for clarification on location.  
@@ -94,15 +94,15 @@ Because AI instructions are heavily prompt-based, it's important to understand b
 
 ### Be explicit and specific
 
-Assume Copilot has no understanding of how to use the data model or business context for your data. For example, instead of writing, "You're a seasoned BI Analyst who is detail oriented," consider, "You're a seasoned BI Analyst who works for a big food distributor. Responses should be detail oriented and focused on revenue and profitability."  
+Assume Copilot has no understanding of how to use the data model or business context for your data. For example, instead of writing "You're a seasoned BI Analyst who is detail oriented," consider: "You're a seasoned BI Analyst who works for a big food distributor. Responses should be detail oriented and focused on revenue and profitability."  
 
 ### Use analogies and descriptive language
 
-When you use analogies and descriptive language, you help the model understand your desired outcome. Examples can also play a vital role in helping the model understand exactly what you mean. For example, for product-specific sales, use the measure "Total_Sales_Product" (example of Product: Word, PowerPoint, Excel, SharePoint, Teams).  
+When you use analogies and descriptive language, you help the model understand your desired outcome. Examples can also play a vital role in helping the model understand exactly what you mean. For example, for product-specific sales, use the measure `Total_Sales_Product` (example of product: Word, PowerPoint, Excel, SharePoint, Teams).  
 
 ### Avoid ambiguity
 
-Be clear about anything that you want Copilot to emphasize or avoid. The more details and supporting content you can provide Copilot, the better. For example, for `Total Active Partners`, use the measure "Monthly Active Partner Count" (don't filter on the **Customers** table).  
+Be clear about anything that you want Copilot to emphasize or avoid. The more details and supporting content you can provide Copilot, the better. For example, for `Total Active Partners`, use the measure `Monthly Active Partner Count` (don't filter on the **Customers** table).  
 
 ### Group related instructions
 
