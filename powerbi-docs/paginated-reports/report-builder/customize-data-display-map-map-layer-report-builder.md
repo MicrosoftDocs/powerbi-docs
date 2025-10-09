@@ -100,7 +100,7 @@ Map elements are the points, lines, or polygons on a layer that are based on the
 
 Display options for map elements follow a precedence order based on the layer, the map element, rules for the map element, and override options for embedded map elements.  
 
-To change these options, right-click the map element, use the embedded properties dialog box. For example, for an embedded polygon, use the Map Embedded Polygon Properties Dialog Box, General page and related pages.  
+To change these options, right-click the map element, and use the embedded properties dialog box. For example, for an embedded polygon, use the Map Embedded Polygon Properties Dialog Box, General page and related pages.  
 
 ## <a name="Precedence"></a> Understanding display option precedence  
 
