@@ -23,7 +23,7 @@ To get the best results from Copilot in Power BI, we recommend that you have a s
 There are tooling features to help you prepare your data for AI. These features allow you to provide more context about your model, help guide Copilot to the right data in the model, and help increase the quality of Copilot output.
 
 > [!NOTE]
-> You can now *author* **Prep data for AI** features in both the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
+> You can now *author* **Prep data for AI** features in both the Power BI service and Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
 ## New tooling features to help you prep your data for AI
 
