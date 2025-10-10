@@ -14,20 +14,20 @@ LocalizationGroup: Create reports
 ---
 # Create and use parameters to visualize variables in Power BI Desktop
 
-You can create variables for your reports, interact with the variable as a slicer, and visualize and quantify different key values in your reports.
+You can create variables for your reports, interact with a variable as a slicer, and visualize and quantify key values in your reports.
 
 :::image type="content" source="media/desktop-what-if/create-new-parameter.png" alt-text="Screenshot of Power BI Desktop highlighting the New parameter button.":::
 
-Create a parameter on the **Modeling** tab in Power BI Desktop. When you select it, a dialog box appears where you can configure the parameter.
+Create a parameter on the **Modeling** tab in Power BI Desktop. When you select it, a dialog appears where you can configure the parameter.
 
 ## Create a parameter
 
-1. To create a parameter, select **New parameter** from the **Modeling** tab in Power BI Desktop
-2. Choose either **Fields** or **Numeric range**.
+1. To create a parameter in Power BI Desktop, go to the **Modeling** tab, and then select **New parameter**.
+1. Select **Fields** or **Numeric range**.
 
 The following examples use **Numeric range**, similar procedures apply to using **Fields**. Name the example *Discount Percentage* and set its **Data type** to **Decimal number**. The **Minimum** value is zero. The **Maximum** is 0.50 (50 percent). Also set the **Increment** to 0.05, or five percent. The increment determines how much the parameter will adjust when interacted with in a report.
 
-:::image type="content" source="media/desktop-what-if/parameters-dialog-box.png" alt-text="Screenshot of the Parameters dialog box with the example data filled out in the fields.":::
+:::image type="content" source="media/desktop-what-if/parameters-dialog-box.png" alt-text="Screenshot of the Parameters dialog with the example data filled out in the fields.":::
 
 > [!NOTE]
 > For decimal numbers, make sure you precede the value with a zero, as in 0.50 versus just .50. Otherwise, the number won't validate and the **OK** button won't be selectable.
