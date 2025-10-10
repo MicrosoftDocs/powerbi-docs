@@ -17,7 +17,7 @@ ms.collection: ce-skilling-ai-copilot
 # Prepare your data for AI: AI data schemas
 
 > [!NOTE]
-> You can now *author* **Prep data for AI** features in both the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
+> You can now *author* **Prep data for AI** features in both the Power BI service and Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
 By using an AI data schema, semantic model authors can define a focused subset of the model's schema for Copilot to prioritize when it generates responses. Authors select the most relevant fields to guide Copilot to provide answers that are more aligned with the user's queries. A streamlined schema reduces ambiguity, which helps Copilot deliver clearer and more accurate responses.
 
