@@ -34,7 +34,7 @@ Here are the prerequisites for creating the paginated report:
 
 - Install [Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder) for free.
 
-- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 - Follow the quickstart [Create an Azure SQL database sample in the Azure portal](/azure/sql-database/sql-database-get-started-portal). Copy and save the value in the **Server name** box on the **Overview** tab. Remember the user name and password you created in Azure.
 
