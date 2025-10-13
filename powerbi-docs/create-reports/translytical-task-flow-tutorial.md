@@ -31,7 +31,6 @@ If you don't have an existing Fabric capacity, [start a Fabric trial](/fabric/fu
 ## Prerequisites
 
 * Enable [required preview features](./translytical-task-flow-overview.md) in Power BI and Fabric.
-* [Enable SQL database in Fabric using admin portal tenant settings](/fabric/database/sql/enable).
 * Power BI Desktop. If you don't have Power BI Desktop installed on your device, follow the instructions in [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md).
 
 ## Overview
