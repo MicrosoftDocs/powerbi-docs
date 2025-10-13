@@ -211,3 +211,5 @@ sections:
           - Text values of 100+ characters aren't indexed.
           - DirectQuery models only index columns for data sources that support `APPROXIMATEDISTINCTCOUNT`.
           - Indexing for DirectQuery and Direct Lake models occurs once during a 24-hour time period unless the model is republished.
+          - If the underlying semantic model refresh fails, the data index may be stale until the next successful semantic model refresh.
+          - The first data index generation for the semantic model may be delayed by 15 minutes to allow for backend activities to generate the index. 
