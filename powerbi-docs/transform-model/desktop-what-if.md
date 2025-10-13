@@ -52,7 +52,7 @@ After you create a parameter, both the parameter and the measure become part of 
 
 This next example shows you how to use a parameter to interact with your data. In this example, you put the parameter from the previous section to use. Specifically, you create a new measure by using a formula that includes the parameter. Then you adjust the value of that measure by using a slicer.
 
-The new measure represents the total sales amount. Its value is calculated by applying the discount rate stored in your **Discount Percentage** parameter.
+The new measure represents the total sales amount. Its value is calculated by applying the discount rate stored in your **Discount percentage** parameter.
 
 In Power BI, you can create complex and interesting measures that consumers of your reports can use to visualize the variable of your parameter. For example, you can create a report that sales people can use to observe the following data:
 
@@ -66,7 +66,7 @@ In Power BI, you can create complex and interesting measures that consumers of y
 1. In the formula bar, enter the following formula:
 
    ```dax
-   Sales after Discount = SUM(Sales[SalesAmount]) - (SUM(Sales[SalesAmount]) * 'Discount Percentage' [Discount percentage Value])
+   Sales after Discount = SUM(Sales[SalesAmount]) - (SUM(Sales[SalesAmount]) * 'Discount percentage' [Discount percentage Value])
    ```
 
    This formula creates a measure named **Sales after Discount**.
