@@ -33,7 +33,7 @@ In this tutorial, you complete the following steps:
 * If you don't already have one, sign up for a [free Power BI trial](https://www.microsoft.com/power-platform/products/power-bi/getting-started-with-power-bi) before you begin.
 * [Install Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) on a local computer.
 * [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [AdventureWorksDW2017 sample database from a backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). For more information about the AdventureWorks sample databases, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
-* [Install SQL Server Management Studio (SSMS)](ssms/install/install).
+* [Install SQL Server Management Studio (SSMS)](/ssms/install/install).
 * [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install) on the same local computer as SQL Server. In production, the gateway would usually be on a different computer.
 
 > [!NOTE]
@@ -67,7 +67,7 @@ Use the following procedure to create a basic Power BI report that uses the Adve
 
 1. In the **Navigator** dialog box, select the **DimProduct** table, then select **Load**.
 
-   :::image type="content" source="./media/service-gateway-sql-tutorial/data-source-navigator.pngg" alt-text="Screenshot of the Navigator dialog box.":::
+   :::image type="content" source="./media/service-gateway-sql-tutorial/data-source-navigator.png" alt-text="Screenshot of the Navigator dialog box.":::
 
 1. In the Power BI Desktop **Report** view, in the **Visualizations** pane, select the **Stacked column chart**.
 
