@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 You can create variables for your Power BI Desktop reports. Variables provide a way for you to visualize and quantify key values and then interact with those values in your reports. To adjust the value of a variable, you can use a slicer.
 
-This article shows you how to create a parameter. In Power BI Desktop, you use a parameter to store a variable. This article also shows you how to create a measure by using a formula that includes the parameter. Then it shows you how to create a visual that changes as you use a slicer to adjust the parameter value.
+In Power BI Desktop, you use a parameter to store a variable. This article shows you how to create a parameter and how to create a measure by using a formula that includes the parameter. The article then shows you how to create a visual that changes as you use a slicer to adjust the parameter value.
 
 ## Create a parameter
 
@@ -50,7 +50,7 @@ After you create a parameter, both the parameter and the measure become part of 
 
 ## Use a numeric range parameter
 
-This next example shows you how to use a parameter to interact with your data. In this example, you put the parameter from the previous section to use. Specifically, you create a new measure and then adjust the value of that measure by using a slicer.
+This next example shows you how to use a parameter to interact with your data. In this example, you put the parameter from the previous section to use. Specifically, you create a new measure by using a formula that includes the parameter. Then you adjust the value of that measure by using a slicer.
 
 The new measure represents the total sales amount. Its value is calculated by applying the discount rate stored in your **Discount Percentage** parameter.
 
@@ -75,7 +75,7 @@ In Power BI, you can create complex and interesting measures that consumers of y
 
    :::image type="content" source="media/desktop-what-if/sales-amount-column-visual.png" alt-text="Screenshot of a clustered column chart that shows sales and discounted sales for a year when the discount is zero. The values are the same each month." lightbox="media/desktop-what-if/sales-amount-column-visual.png":::
 
-1. Move the slider for the **Discount Percentage** parameter. The **Sales after Discount** column reflects the discounted sales amount.
+1. Move the slider for the **Discount percentage** parameter. The **Sales after Discount** column reflects the discounted sales amount.
 
    :::image type="content" source="media/desktop-what-if/sales-amount-discount-column-visual.png" alt-text="Screenshot of a chart that shows sales and discounted sales when the discount slider is at 0.3. The discounted sales value is 30% less each month." lightbox="media/desktop-what-if/sales-amount-discount-column-visual.png":::
 
