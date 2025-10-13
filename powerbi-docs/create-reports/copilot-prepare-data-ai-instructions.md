@@ -27,7 +27,7 @@ AI instructions make Copilot more aligned to your business. They improve the qua
 ## Set up AI instructions
 
 > [!NOTE]
-> You can't *author* **Prep data for AI** features in either the Power BI service or Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
+> You can now *author* **Prep data for AI** features in both the Power BI service and Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
 
 1. Select the **Prep data for AI** button located on the **Home** ribbon in Power BI Desktop, or on the ribbon on the selected semantic model in the Power BI service.  
 
