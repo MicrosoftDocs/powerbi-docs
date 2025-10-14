@@ -53,9 +53,10 @@ In this quick and easy three-step guide, we create a **Button slicer** in Power 
 
 Great job! Congratulations on successfully creating a button slicer with Power BI.
 
-Next, take time familiarize yourself with the [Considerations and limitations](power-bi-visualization-button-slicer-considerations-limitations.md) for button slicers. 
-
 ## Related content
 
+- [Use visual highlights](button-slicer-visual-highlights.md) 
+- [Use conditional formatting](button-slicer-conditional-formatting.md)
+- [Paste values to select](button-slicer-paste-values.md)
 - [Button slicer considerations and limitations](power-bi-visualization-button-slicer-considerations-limitations.md)
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
