@@ -152,6 +152,12 @@
           href: desktop-bookmarks.md
         - name: Create page and bookmark navigators
           href: button-navigators.md
+    - name: Themes in Power BI reports
+      items: 
+        - name: Organizational themes (Preview)
+          href: desktop-organizational-themes.md
+        - name: Use report themes in Power BI
+          href: desktop-report-themes.md            
     - name: Translytical task flows
       items: 
         - name: Understand translytical task flows
@@ -166,8 +172,6 @@
       href: desktop-certificate-revocation.md     
     - name: Evaluation configuration settings
       href: desktop-evaluation-configuration.md     
-    - name: Work with report themes
-      href: desktop-report-themes.md
     - name: Apply grouping and binning
       href: desktop-grouping-and-binning.md
     - name: Apply gridlines and snap-to-grid
