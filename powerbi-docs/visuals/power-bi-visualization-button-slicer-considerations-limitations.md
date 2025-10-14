@@ -1,46 +1,49 @@
 ---
-title: Button slicer (preview) considerations and limitations
-description: This article provides a clear overview of the considerations and limitations for the Button slicer (preview) in Power BI Desktop.
+title: Button Slicer Considerations and Limitations 
+Learn the key considerations and limitations of the Button slicer in Power BI Desktop to avoid filter issues and design clearer reports.  
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 05/20/2025
+ms.date: 10/14/2025
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to know about any considerations or limitations for the Button slicer (preview) so that I'm always aware of the nuances of the Button slicer (preview) in Power BI Desktop.
+#customer intent: As a Power BI user, I want to know about any considerations or limitations for the Button slicer so that I'm always aware of the nuances of the Button slicer in Power BI Desktop.
 ---
 
-# Button slicer (preview) considerations and limitations
+# Button slicer considerations and limitations
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-This article provides a list of known considerations and limitations, designed to help you navigate the nuances of the Button slicer (preview) in Power BI Desktop.
+This article lists the key considerations and limitations of the Button slicer in Power BI Desktop so you can anticipate filtering behavior and avoid confusion.
 
-> [!IMPORTANT]
-> The button slicer (preview) is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before it is released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+## Paste values
 
-## Preview feature
+- You can paste up to 2,000 values into the button slicer; any extras are ignored.
+- Pasting new values removes all previous selections.
+- When you paste values, the slicer applies exact-match ("IS") filtering by only selecting buttons with values that precisely correspond. If the pasted values don't match any available buttons, those values are still used as filters; so visuals might display as blank due to the absence of matching data.
 
-Because the Button slicer is a preview feature in Power BI Desktop, the following considerations and limitations apply.
+## Sort buttons
 
-### Power BI service
+- Sorting via the ellipsis menu is limited to **Value**. **Label** sorting is currently unavailable.
 
-Users can't see the Button slicer (preview) in the **Power BI service** because it's currently a preview feature exclusive to **Power BI Desktop**.
+## Single select toggle
 
-The Button slicer (preview) is in the preview phase and is only available within the Power BI Desktop environment. This limitation is a common practice for features that are still under development, allowing users to test and provide feedback before a broader release. Although the Button slicer (preview) isn't directly available in the Power BI service, any Button slicer (preview) created in Power BI Desktop can be published, making them visible in the Power BI service. This capability allows users to take advantage of the new features while ensuring compatibility and stability within the Service environment.
+- The **Single select** toggle permits multiple selections only when the **Force selection** toggle is *off*. To select multiple options, hold **CTRL** and select other buttons.
+- If the **Single select** and **Force selection** toggles are *on*, only one option can be selected at a time. Selecting **CTRL** + other buttons isn't allowed.
 
-### Format settings
+## Force selection toggle
 
-When you're formatting a Button slicer (preview), you might notice that some of the format settings are in a different location, or the name of the setting is changed. Often, new settings or controls are added from one product update to the next. Such changes are expected, as preview features are continuously under development. They're subject to modifications that enhance functionality and user experience. It's the responsibility of report creators to stay informed about these changes when using preview features. Keeping abreast of product updates ensure the effective use of these features in your reports.
-
-### Accessibility
-
-During the preview phase, certain Accessibility features such as keyboard navigation and screen-reader support might not be fully operational. However, we're committed to ensuring that all functionalities comply with Accessibility standards upon the conclusion of the preview period.
+- When the **Force selection** toggle is *on*, the button slicer ensures that one item is always selected. This requires **Single select** toggle to also be *on*.
+- If a user applies another filter that hides the currently selected button, the slicer might look unselected. However, the previously selected (but now hidden) value continues to affect other visuals. Selected items are never cleared, even if they're temporarily removed from the current data due to filtering.
+- Currently, the slicer doesn't automatically select the first visible option when the forced selection is *on* and the selected button is filtered out. Instead, the hidden selection remains active until the user chooses another visible option.
 
 ## Related content
 
-- [Create a Button slicer (preview)](power-bi-visualization-button-slicer.md)
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Create a button slicer](power-bi-visualization-button-slicer-considerations-limitations.md)
+- [Use conditional formatting](button-slicer-conditional-formatting.md)
+- [Paste values to select](button-slicer-paste-values.md)
+- [Use visual highlights](button-slicer-visual-highlights.md)
+- [Button slicer considerations and limitations](power-bi-visualization-list-slicer-considerations-limitations.md)
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

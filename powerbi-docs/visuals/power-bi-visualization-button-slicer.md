@@ -1,40 +1,30 @@
 ---
-title: Create a button slicer (preview)
-description: Learn how to create a button slicer (preview) in Power BI Desktop.
+title: Create a button slicer
+description: Learn how to create a button slicer in Power BI Desktop.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/20/2025
+ms.date: 10/14/2025
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to learn about the button slicer (preview) feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
+#customer intent: As a Power BI user, I want to learn about the button slicer feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
 ---
 
-# Create a button slicer (preview)
+# Create a button slicer
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In Power BI, the button slicer (preview) is an interactive visual element that allows users to filter data in reports and dashboards, providing an easy and dynamic way to browse and analyze large datasets.
+In Power BI, the button slicer is an interactive visual element that allows users to filter data in reports and dashboards, providing an easy and dynamic way to browse and analyze large datasets.
 
-Among the various types of slicers, the button slicer (preview) stands out due to its unique properties. It offers customizable button styles, interactive states, conditional formatting for labels, and a grid layout for arranging buttons in rows and columns. Additionally, the button slicer (preview) can integrate images, enhancing visual appeal and providing more context. 
+Among the various types of slicers, the button slicer stands out due to its unique properties. It offers customizable button styles, interactive states, conditional formatting for labels, and a grid layout for arranging buttons in rows and columns. Additionally, the button slicer can integrate images, enhancing visual appeal and providing more context. 
 
-These features make the button slicer (preview) a powerful tool for creating interactive and visually appealing reports, offering a user-friendly setup and comprehensive formatting options.
-
-> [!IMPORTANT]
-> The button slicer (preview) is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+These features make the button slicer a powerful tool for creating interactive and visually appealing reports, offering a user-friendly setup and comprehensive formatting options.
 
 ## Prerequisites
 
 Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
-
-For the purposes of this guide, in Power BI Desktop's **Global options**, under the **Preview features** section, the **Button slicer visual** feature is *disabled* by default, however, by completing the following steps you can enable it:
-
-1. Open **Power BI Desktop**.
-1. Navigate to the **Options** section found under the **File** menu.
-1. In the **Global options** window, go to the **Preview features** section and find the **Button slicer visual** option.
-1. Select the checkbox to enable the feature.
 
 In the following guide, we're using the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). After downloading the file, let’s get started:
 
@@ -59,9 +49,7 @@ In this quick and easy three-step guide, we create a **Button slicer** in Power 
 
    :::image type="content" source="media/button-slicer/button-slicer-district-highlighted.png" lightbox="media/button-slicer/button-slicer-district-highlighted.png" alt-text="Screenshot of the Data pane, District table, DM selected and highlighted, slicer on canvas displaying  nine tiles with truncated district manager names.":::
 
-1. To customize your slicer, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available format settings. This allows you to tailor the slicer's appearance and functionality to your specific requirements as demonstrated in the following example. 
-
-   :::image type="content" source="media/button-slicer/button-slicer-displayed.png" lightbox="media/button-slicer/button-slicer-displayed.png"  alt-text="Screenshot of Visualizations pane expanded, Format visual icon selected, showing Visual and General tabs, and a formatted slicer with DM pics displayed.":::
+1. To customize your slicer, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available format settings. This allows you to tailor the slicer's appearance and functionality to your specific requirements.
 
 Great job! Congratulations on successfully creating a button slicer with Power BI.
 

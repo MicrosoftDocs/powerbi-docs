@@ -386,8 +386,14 @@
         href: ../visuals/power-bi-visualization-card-visual-considerations.md
     - name: Button slicer
       items: 
-      - name: Create a button slicer (preview)
+      - name: Create a button slicer
         href: ../visuals/power-bi-visualization-button-slicer.md
+      - name: Use visual highlights
+        href: ../visuals/button-slicer-visual-highlights.md
+      - name: Use conditional formatting
+        href: ../visuals/button-slicer-conditional-formatting.md
+      - name: Paste values to select
+        href: ../visuals/button-slicer-paste-values.md
       - name: Button slicer considerations and limitations
         href: ../visuals/power-bi-visualization-button-slicer-considerations-limitations.md
     - name: List slicer
