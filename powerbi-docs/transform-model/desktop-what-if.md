@@ -1,6 +1,6 @@
 ---
-title: Use parameters to visualize variables
-description: Learn how to create your own parameters to imagine and visualize variables in your Power BI reports.
+title: Use Parameters to Visualize Variables
+description: Find out how to create your own parameters in Power BI Desktop so that you can adjust variable values and observe the impact on your reports.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -8,77 +8,87 @@ ms.custom: FY25Q1-Linter
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 09/24/2024
+ms.date: 10/13/2025
 LocalizationGroup: Create reports
-#customer intent: As a Power BI user I want to learn to create my own parameters for variables in my Power BI reports.
+#customer intent: As a Power BI user, I want to find out how to create my own parameters for variables in my Power BI reports so that I can interact with my data.
 ---
 # Create and use parameters to visualize variables in Power BI Desktop
 
-You can create variables for your reports, interact with the variable as a slicer, and visualize and quantify different key values in your reports.
+You can create variables for your Power BI Desktop reports. Variables provide a way for you to visualize and quantify key values and then interact with those values in your reports. To adjust the value of a variable, you can use a slicer.
 
-:::image type="content" source="media/desktop-what-if/create-new-parameter.png" alt-text="Screenshot of Power BI Desktop highlighting the New parameter button.":::
-
-Create a parameter on the **Modeling** tab in Power BI Desktop. When you select it, a dialog box appears where you can configure the parameter.
+In Power BI Desktop, you use a parameter to store a variable. This article shows you how to create a parameter and how to create a measure by using a formula that includes the parameter. The article then shows you how to create a visual that changes as you use a slicer to adjust the parameter value.
 
 ## Create a parameter
 
-1. To create a parameter, select **New parameter** from the **Modeling** tab in Power BI Desktop
-2. Choose either **Fields** or **Numeric range**.
+1. To create a parameter in Power BI Desktop, go to the **Modeling** tab, and then select **New parameter**.
 
-The following examples use **Numeric range**, similar procedures apply to using **Fields**. Name the example *Discount Percentage* and set its **Data type** to **Decimal number**. The **Minimum** value is zero. The **Maximum** is 0.50 (50 percent). Also set the **Increment** to 0.05, or five percent. The increment determines how much the parameter will adjust when interacted with in a report.
+   :::image type="content" source="media/desktop-what-if/create-new-parameter.png" alt-text="Screenshot of the Power BI Desktop ribbon. On the Modeling tab, the New parameter button is highlighted.":::
 
-:::image type="content" source="media/desktop-what-if/parameters-dialog-box.png" alt-text="Screenshot of the Parameters dialog box with the example data filled out in the fields.":::
+1. Select **Fields** or **Numeric range**. The examples in this article use **Numeric range** as the type of parameter. Similar procedures apply to using **Fields** as the type.
 
-> [!NOTE]
-> For decimal numbers, make sure you precede the value with a zero, as in 0.50 versus just .50. Otherwise, the number won't validate and the **OK** button won't be selectable.
->
->
+1. In the **Parameters** dialog, take the following actions:
+   * For **Name**, enter **Discount percentage**.
+   * For **Data type**, select **Decimal number**.
+   * For **Minimum**, enter **0**.
+   * For **Maximum**, enter **0.50**, which represents 50%.
+   * For **Increment**, enter **0.05**, which represents 5%. The increment determines how much the parameter adjusts when you interact with it in a report.
 
-For your convenience, the **Add slicer to this page** checkbox automatically puts a slicer with your parameter onto the current report page.
+   :::image type="content" source="media/desktop-what-if/parameters-dialog-box.png" alt-text="Screenshot of the Parameters dialog in Power BI Desktop. The Name, Data type, Minimum, Increment, and Maximum fields contain data.":::
 
-:::image type="content" source="media/desktop-what-if/what-if_03.png" alt-text="Screenshot of the Discount percentage slicer on the report page.":::
+   > [!NOTE]
+   > For decimal numbers, precede the value with a zero, as in **0.50**, not **.50**. Otherwise, Power BI can't validate the value, and the **Create** button isn't available.
 
-In addition to creating the parameter, you also create a measure automatically in this process, which you can use to visualize the current value of the parameter.
+1. If you want Power BI to create a slicer for your parameter, select **Add slicer to this page**. After you select **Create**, a slicer is added to the current report page.
 
-:::image type="content" source="media/desktop-what-if/what-if_04.png" alt-text="Screenshot of the parameter measure and visual highlighted in Power BI Desktop.":::
+   :::image type="content" source="media/desktop-what-if/what-if_03.png" alt-text="Screenshot of the Discount percentage slicer on the report page. A control is available for setting the value, which is currently 0.05." lightbox="media/desktop-what-if/what-if_03.png":::
 
-It's important and useful to note that after you create a parameter, both the parameter and the measure become part of your model. So, they're available throughout the report and can be used on other report pages. And, since they're part of the model, you can delete the slicer from the report page. If you want it back, choose the parameter from the **Fields** list and drag it onto the canvas, then change the visual to a slicer.
+When you create a parameter, a measure is also automatically created. You can use the measure to visualize the current value of the parameter.
+
+:::image type="content" source="media/desktop-what-if/measure-visual.png" alt-text="Screenshot of Power BI Desktop. In Fields, the Discount percentage Value measure is highlighted. A bar chart shows the value of that measure." lightbox="media/desktop-what-if/measure-visual.png":::
+
+After you create a parameter, both the parameter and the measure become part of your model. They're available throughout the report, so you can use them on other report pages. Because they're part of the model, you can delete the slicer from the report page. If you want the slicer back, go to the **Fields** list. Select the parameter, drag it onto the canvas, and then change the visual to a slicer.
 
 ## Use a numeric range parameter
 
-This next example shows you how to use a parameter with data. You created the parameter in the previous section. Now you'll put it to use by creating a new measure whose value adjusts with the slider.
+This next example shows you how to use a parameter to interact with your data. In this example, you put the parameter from the previous section to use. Specifically, you create a new measure by using a formula that includes the parameter. Then you adjust the value of that measure by using a slicer.
 
-:::image type="content" source="media/desktop-what-if/what-if_05.png" alt-text="Screenshot of the New Measure button highlighted in Power BI Desktop.":::
+The new measure represents the total sales amount. Its value is calculated by applying the discount rate stored in your **Discount percentage** parameter.
 
-The new measure is going to be the total sales amount, with the discount rate applied. You can create complex and interesting measures that let the consumers of your reports visualize the variable of your parameter. For example, you could create a report that lets sales people see their compensation if they meet certain sales goals or percentages, or see the effect of increased sales to deeper discounts.
+In Power BI, you can create complex and interesting measures that consumers of your reports can use to visualize the variable of your parameter. For example, you can create a report that sales people can use to observe the following data:
 
-Enter the measure formula into the formula bar, and name the formula *Sales after Discount*.
+* Their compensation if they meet certain sales goals or percentages
+* The effect of discounts on sales
 
-```dax
-Sales after Discount = SUM(Sales[SalesAmount]) - (SUM(Sales[SalesAmount]) * 'Discount percentage' [Discount percentage Value])
-```
+1. To create the measure, go to the **Modeling** tab, and then select **New measure**.
 
-Then, create a column visual with **OrderDate** on the axis, and both **SalesAmount** and the just-created measure, **Sales after Discount** as the values.
+   :::image type="content" source="media/desktop-what-if/select-new-measure.png" alt-text="Screenshot of the Power BI Desktop ribbon. On the Modeling tab, the New measure button is highlighted.":::
 
-:::image type="content" source="media/desktop-what-if/what-if_07.png" alt-text="Screenshot visualizing SalesAmount from the example measure formula.":::
+1. In the formula bar, enter the following formula:
 
-Then, as you move the slider, you'll see that the **Sales after Discount** column reflects the discounted sales amount.
+   ```dax
+   Sales after Discount = SUM(Sales[SalesAmount]) - (SUM(Sales[SalesAmount]) * 'Discount percentage' [Discount percentage Value])
+   ```
 
-:::image type="content" source="media/desktop-what-if/what-if_08.png" alt-text="Screenshot of the SalesAmount visual changed by using the parameter slider.":::
+   This formula creates a measure named **Sales after Discount**.
 
-This process is how you create parameters for any data you might want to work with. You can use parameters in all sorts of situations. These parameters enable the consumers of reports to interact with different scenarios that you create in your reports.
+1. Create a column visual with **OrderDate** on the x-axis. For the values, use **SalesAmount** and the new measure, **Sales after Discount**.
+
+   :::image type="content" source="media/desktop-what-if/sales-amount-column-visual.png" alt-text="Screenshot of a clustered column chart that shows sales and discounted sales for a year when the discount is zero. The values are the same each month." lightbox="media/desktop-what-if/sales-amount-column-visual.png":::
+
+1. Move the slider for the **Discount percentage** parameter. The **Sales after Discount** column reflects the discounted sales amount.
+
+   :::image type="content" source="media/desktop-what-if/sales-amount-discount-column-visual.png" alt-text="Screenshot of a chart that shows sales and discounted sales when the discount slider is at 0.3. The discounted sales value is 30% less each month." lightbox="media/desktop-what-if/sales-amount-discount-column-visual.png":::
+
+You can use this process to create parameters for any data you want to work with. Parameters are useful in all sorts of situations. Parameters provide a way for report consumers to interact with scenarios that you create in your reports.
 
 ## Considerations and limitations
 
-There are a couple considerations and limitations for parameters to keep in mind:
+When you work with parameters, keep in mind the following considerations and limitations:
 
-* Parameters can only have 1,000 unique values. For parameters with more than 1,000 unique values, the parameter values will be evenly sampled.
-
-* Parameters are designed for measures within visuals, and might not calculate properly when used in a dimension calculation.
+* Parameters can have at most 1,000 unique values. If a parameter has more than 1,000 unique values, the parameter values get evenly sampled.
+* Parameters are designed for measures within visuals. If you use a parameter in a dimension calculation, the parameter value might be calculated incorrectly.
 
 ## Related content
-
-You might also be interested in the following articles:
 
 * [Use quick measures for common calculations](desktop-quick-measures.md)
 * [Create calculated columns in Power BI Desktop](desktop-calculated-columns.md)
