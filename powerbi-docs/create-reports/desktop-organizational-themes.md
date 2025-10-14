@@ -85,7 +85,7 @@ The **Delete** option permanently removes the theme from the Admin portal and th
 - You’re replacing it with an updated version.
 
 > [!IMPORTANT]
-> This action cannot be undone, so use it with caution.
+> The Delete action cannot be undone, so use it with caution.
 > Deleting a theme does not affect reports that already have the theme applied. Those reports will retain the styling unless manually changed.
 
 ### Enable/Disable for theme gallery
@@ -130,5 +130,5 @@ You’ll find the Copilot theme at the end of the Theme gallery list in both 
 
 ## Related content
 
-- [Work with report themes in Power BI Desktop](desktop-report-themes.md)
+- [Use report themes in Power BI Desktop](desktop-report-themes.md)
   
