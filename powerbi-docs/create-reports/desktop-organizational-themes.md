@@ -1,6 +1,6 @@
 ---
 title: Organizational themes (Preview)
-description: Learn how to use report themes to create a custom color palette and apply it to an entire report in Power BI Desktop.
+description: Learn about creating and managing organizational themes in Power BI to ensure consistent branding across all reports in an organization.
 author: blairjsarmstrong
 ms.author: juliacawthra
 ms.service: powerbi
