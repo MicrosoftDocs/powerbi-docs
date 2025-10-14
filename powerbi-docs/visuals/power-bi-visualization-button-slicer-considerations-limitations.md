@@ -1,6 +1,6 @@
 ---
 title: Button Slicer Considerations and Limitations 
-Learn the key considerations and limitations of the Button slicer in Power BI Desktop to avoid filter issues and design clearer reports.  
+description: Learn the key considerations and limitations of the Button slicer in Power BI Desktop to avoid filter issues and design clearer reports.  
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: miguelmyers
