@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-reports-dashboards
   ms.topic: faq
-  ms.date: 05/12/2025
+  ms.date: 10/14/2025
 title: Frequently asked questions about preparing data for AI
 summary: |
 
@@ -211,3 +211,6 @@ sections:
           - Text values of 100+ characters aren't indexed.
           - DirectQuery models only index columns for data sources that support `APPROXIMATEDISTINCTCOUNT`.
           - Indexing for DirectQuery and Direct Lake models occurs once during a 24-hour time period unless the model is republished.
+          - If the underlying semantic model refresh fails, the data index might be stale until the next successful semantic model refresh.
+          - The first data index generation for the semantic model might be delayed by 15 minutes to allow for backend activities to generate the index.
+        
