@@ -65,7 +65,7 @@ It's easy to confuse [dashboards](end-user-dashboards.md) with reports because t
 
 ## Related content
 
-Depending on your role, might may be a *designer*, someone who creates reports for your own use or to share with colleagues. You want to learn how to create and share reports.
+Depending on your role, you might be a *designer*, someone who creates reports for your own use or to share with colleagues. You want to learn how to create and share reports.
 
 Or you might be a *business user*, someone who receives reports from others. You want to learn how to understand and interact with the reports. If you're a report *business user*, these links are for you:
 
