@@ -146,7 +146,7 @@ If your semantic model is still using the [Q&A tooling](/power-bi/natural-langua
 
 :::image type="content" source="media/copilot-prep-data/copilot-migrate-from-qa-desktop.png" alt-text="Screenshot of the Prep data for AI migration from Q&A." lightbox="media/copilot-prep-data/copilot-migrate-from-qa-desktop.png":::
 
-This upgrade is required to continue editing Copilot metadata and to enable upcoming Copilot features. It also improves integration with development tools when using [**Power BI Project (PBIP)**](/power-bi/developer/projects/projects-overview.md), since all Copilot metadata is now stored using the new [Copilot tooling file format](#copilot-tooling-file-format).
+This upgrade is required to continue editing Copilot metadata and to enable upcoming Copilot features. It also improves integration with development tools when using [**Power BI Project (PBIP)**](/power-bi/developer/projects/projects-overview), since all Copilot metadata is now stored using the new [Copilot tooling file format](#copilot-tooling-file-format).
 
 For new semantic models, the new Copilot tooling format is used by default when the **Prep data for AI** preview feature is enabled.
 
@@ -174,7 +174,7 @@ Once you upgrade to the new Copilot tooling format, you cannot revert to using Q
 
 ## Copilot tooling file format
 
-When saving as a [**Power BI Project (PBIP)**](/power-bi/developer/projects/projects-overview.md), all Copilot metadata is stored in a single `Copilot/` folder. This structure makes it easier to edit Copilot settings using code editors and enables seamless collaboration through Git.
+When saving as a [**Power BI Project (PBIP)**](/power-bi/developer/projects/projects-overview), all Copilot metadata is stored in a single `Copilot/` folder. This structure makes it easier to edit Copilot settings using code editors and enables seamless collaboration through Git.
 
 Example structure of the `Copilot/` folder for a semantic model:
 
@@ -196,7 +196,7 @@ PBIP/
 │   └── definition.pbism
 ```
 
-Learn more about these files in [Power BI Project documentation](/power-bi/developer/projects/projects-dataset.md#copilot-folder).
+Learn more about these files in [Power BI Project documentation](/power-bi/developer/projects/projects-dataset#copilot-folder).
 
 ## Turn off the preview features in Desktop
 
