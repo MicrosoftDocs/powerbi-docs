@@ -3,7 +3,7 @@ title: Use Organizational Themes (Preview)
 description: Create and manage organizational themes in Power BI to enforce consistent branding across all reports. Learn how to centralize styling for governance.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
+ms.reviewer: jacindaeng
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
