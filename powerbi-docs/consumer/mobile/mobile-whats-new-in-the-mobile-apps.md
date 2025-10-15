@@ -17,7 +17,7 @@ Power BI Mobile app versions are released on a monthly cadence. The latest versi
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
-* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+* [What's new in Power BI](../../fundamentals/whats-new.md)
 
 ## September 2025
 

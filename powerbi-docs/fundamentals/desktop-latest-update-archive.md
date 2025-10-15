@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
 
-This article describes previous updates to **Power BI Desktop** and the **Power BI service**. For the most current month's release, check out [**Power BI** latest updates](desktop-latest-update.md). To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes previous updates to **Power BI Desktop** and the **Power BI service**. For the most current month's release, check out [**Power BI** latest updates](whats-new.md). To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
 
