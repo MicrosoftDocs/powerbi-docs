@@ -31,14 +31,14 @@ Tables in Power BI semantic models have different storage modes depending on the
 **Composite semantic model** is a semantic model with tables in more than one storage mode. For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
 
 
-## Seeing the storage mode of a table
+## See the storage mode of a table
 
 The **Storage mode** property is a property on each table. 
 
 1. In **Model** view, select the table.
-2. In the **Properties** pane, expand the **Advanced** section, and expand the **Storage mode** drop-down.
+1. In the **Properties** pane, expand the **Advanced** section, and then expand the **Storage mode** list.
 
-    :::image type="content" source="media/desktop-storage-mode/storage-mode-02.png" alt-text="Screenshot of Relationship view highlight the option drop-down to change the storage mode.":::
+   :::image type="content" source="media/desktop-storage-mode/see-storage-mode.png" alt-text="Screenshot of the Model view in Power BI Desktop. One table is highlighted. Under Properties, the Storage mode list is expanded and highlighted.":::
 
 For most tables, storage mode is set when you add the table only. The storage mode can only be changed if the table is in DirectQuery storage mode when created. You can change a DirectQuery table to import or dual. After this property is set, it can't be put back to DirectQuery. Power BI web modeling and live editing in Power BI Desktop do have version control, which can be used to reverse a changed storage mode.
 
