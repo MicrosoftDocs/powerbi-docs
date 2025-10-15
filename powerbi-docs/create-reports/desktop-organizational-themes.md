@@ -44,10 +44,10 @@ Keep in mind that each theme must have a unique name. The Power BI Admin portal 
 
 When a Power BI administrator uploads a theme to the **Organizational themes** section of the Admin Portal, four key management options automatically appear. In the following sections, we walk through each option to explain what they do, when to use them, and how they affect report creators and Copilot-generated reports.
 
-- **[Export](#export)** – Download the theme's JSON file for backup or reuse.
-- **[Details](#details)** – View and edit the theme's name and description.
-- **[Delete](#delete)** – Permanently remove the theme from the organizational gallery.
-- **[Enable/Disable for theme gallery](#enabledisable-for-theme-gallery)** – Control whether the theme is visible to report creators.
+- **[Export](#export-a-theme)** – Download the theme's JSON file for backup or reuse.
+- **[Details](#view-and-edit-theme-details)** – View and edit the theme's name and description.
+- **[Delete](#delete-a-theme)** – Permanently remove the theme from the organizational gallery.
+- **[Set theme visibility](#set-theme-visibility)** – Control whether the theme is visible to report creators.
 
    :::image type="content" source="media/organizational-themes/theme-actions.png" alt-text="Screenshot of Organizational themes Admin portal menu bar with Export, Details, Delete, and Enable or Disable for theme gallery options highlighted." lightbox="media/organizational-themes/theme-actions.png":::
 
