@@ -154,7 +154,7 @@
           href: button-navigators.md
     - name: Themes in Power BI reports
       items: 
-        - name: Organizational themes (Preview)
+        - name: Use organizational themes (preview)
           href: desktop-organizational-themes.md
         - name: Use report themes in Power BI
           href: desktop-report-themes.md            
