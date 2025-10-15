@@ -25,9 +25,26 @@ To enable the feature from Power BI Desktop, click on the File menu and select O
 
 ### Export Query Results
 
+In the Power Query editor, you will see Export Query Results in the ribbon. Click on the icon.
+
+:::image type="content" source="media/export-query-results/export-query-results-power-query-ribbon.png" alt-text="Screenshot of Power BI Desktop Power Query editor ribbon with Export Query Results enabled":::
+
+### Check for Fabric enablement
+
+For this feature to work, you need to have access to Fabric and your "My Workspace" needs to be attached to a Fabric or trial capacity. If this is not the case, you will see the following error popup.
+
+:::image type="content" source="media/export-query-results/export-query-results-fabric-not-enabled-on-my-workspace.png" alt-text="Screenshot of Export Query Results showing when Fabric is not enabled on my workspace":::
+
+You have two options - (1) Sign up for a [Fabric trial](/fabric/fundamentals/fabric-trial) and then [assign](/fabric/fundamentals/fabric-trial#share-by-assigning-workspaces) your "My Workspace" to the trial capacity (2) Assign "My Workspace" to a Fabric capacity in your organization. If you are blocked from using Fabric, you will not be able to use this feature and you will need to reach out to your organization's Fabric administrator.
+
 ### Select Destination
+Once your "My Workspace" is assigned to Fabric, you will be able to proceed to this screen where you can select an online destination of your choice. All destinations that are supported within [Fabric Dataflows](/fabric/data-factory/dataflow-gen2-data-destinations-and-managed-settings) are enabled here. You can also review existing OneLake destinations you already have access to.
+
+:::image type="content" source="media/export-query-results/export-query-results-select-destination.png" alt-text="Screenshot of Export Query Results showing destination selection":::
 
 ### Enter Credentials
+
+Once you select a destination, 
 
 ### Export Query Results
 
