@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: From Excel workbook to a Power BI report in Microsoft Teams"
+title: "Tutorial: From Excel Workbook to a Power BI Report in Microsoft Teams"
 description: This article shows how you can quickly create a stunning report in the Power BI service from an Excel workbook, and share it in Teams.
 author: julcsc
 ms.author: juliacawthra
@@ -7,42 +7,40 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 06/12/2024
+ms.date: 10/16/2025
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a Power BI report in Microsoft Teams
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Your manager wants to see a report on your latest sales and profit figures by the end of the day. However, the latest data is in files on your laptop. In the past, it's taken hours to create a report, and you’re beginning to feel anxious.
+Your manager wants to see a report on your latest sales and profit figures by the end of the day. However, the latest data is in files on your laptop. In the past, it's taken hours to create a report, and you're beginning to feel anxious.
 
 No worries. With Power BI, you can create a stunning report and share it in Microsoft Teams in no time!
 
 :::image type="content" source="media/service-from-excel-to-stunning-report/worldwide-sales-report.png" alt-text="Screenshot of the finished Financial Sample report." lightbox="media/service-from-excel-to-stunning-report/worldwide-sales-report.png":::
 
-In this tutorial, we upload an Excel file, create a new report, and share it with colleagues in Microsoft Teams, all from within Power BI. You'll learn how to:
+In this tutorial, we upload an Excel file, create a new report, and share it with colleagues in Microsoft Teams, all from within Power BI. In this tutorial, you learn how to:
 
-> [!div class="checklist"]
-
-> * Prepare your data in Excel.
-> * Download sample data.
-> * Build a report in the Power BI service.
-> * Pin the report visuals to a dashboard.
-> * Share a link to the dashboard.
-> * Share the dashboard in Microsoft Teams
+* Prepare your data in Excel.
+* Download sample data.
+* Build a report in the Power BI service.
+* Pin the report visuals to a dashboard.
+* Share a link to the dashboard.
+* Share the dashboard in Microsoft Teams
 
 ## Prerequisites
 
-- [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md).
-- Download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962) and save it to your computer or to OneDrive for Business.
+* [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md).
+* Download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962) and save it to your computer or to OneDrive for Business.
 
 ## Prepare data in Excel
 
-Let’s take an Excel file as an example.
+Let's take an Excel file as an example.
 
-1. Before you can load your Excel file into Power BI, you must organize your data in a flat table. In a flat table, each column contains the same data type; for example, text, date, number, or currency. Your table should have a header row but no columns or rows that display totals.
+1. Before you can load your Excel file into Power BI, you must organize your data in a flat table. In a flat table, each column contains the same data type; for example, text, date, number, or currency. Your table should have a header row, but no columns or rows that display totals.
 
-   ![Screenshot of the data organized in Excel.](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
+   :::image type="content" source="media/service-from-excel-to-stunning-report/pbi_excel_file.png" alt-text="Screenshot of the data organized in Excel.":::
 
 1. Next, format your data as a table. In Excel, on the **Home** tab, in the **Styles** group, select **Format as Table**.
 
@@ -50,15 +48,15 @@ Let’s take an Excel file as an example.
 
    Your Excel worksheet is now ready to load into Power BI.
 
-   ![Screenshot of the data formatted as a table.](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
+   :::image type="content" source="media/service-from-excel-to-stunning-report/pbi_excel_table.png" alt-text="Screenshot of the data formatted as a table.":::
 
 ## Upload your Excel file to the Power BI service
 
 The Power BI service connects to many data sources, including Excel files that live on your computer.
 
-1. To get started, sign in to the Power BI service. If you haven’t signed up, [you can do so for free](https://powerbi.com).
+1. To get started, sign in to the Power BI service. If you haven't signed up, [you can do so for free](https://powerbi.com).
 
-1. In **My workspace**, select **New** > **Report**.
+1. In **My workspace**, select **New item** > **Report**.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-report.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the New report option.":::
 
@@ -66,7 +64,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-select-excel.png" alt-text="Screenshot of My Workspace, highlighting the Excel data source option.":::
 
-1. Select **Upload file**, and drag or browse to the Excel file location.
+1. Select **Upload file** and drag or browse to the Excel file location.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-query-upload-file.png" alt-text="Screenshot of the Power Query dialog, highlighting the Connect to data source dialog box.":::
 
@@ -74,7 +72,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. If you aren't signed in, you need to sign in before you can upload the Excel file. Select **Next**.
 
-1. In the Power Query **Choose data** window, select the **financials** table in the Excel workbook, and select **Create**.
+1. In the Power Query **Choose data** window, select the **financials** table in the Excel workbook, then select **Create**.
 
    :::image type="content" source="media/service-from-excel-to-stunning-report/power-query-choose-data.png" alt-text="Screenshot of Power Query Choose data window, select the financials table." lightbox="media/service-from-excel-to-stunning-report/power-query-choose-data.png":::
 
