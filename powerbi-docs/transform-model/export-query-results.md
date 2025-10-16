@@ -3,7 +3,7 @@ title: Export Query Results in Power BI Desktop
 description: Export query results to an online destination using Power BI Desktop
 author: mihirwagleMSFT
 ms.author: mihirwagle
-ms.reviewer: ''
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
@@ -14,13 +14,11 @@ ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to export my query results to a destination of my choice.
 ---
 
-# Export Query Results in Power BI Desktop
+# Export query results in Power BI Desktop
 
-Power Query Editor in Power BI Desktop lets you connect to one or more data sources, shape and transform the data, and load it into your model. The **Export Query Results** feature helps you send this data to an online destination without manually exporting queries. This feature is in Preview and requires some setup.
+Power Query Editor in Power BI Desktop lets you connect to one or more data sources, shape and transform the data, and load it into your model. The **Export query results** feature helps you send this data to an online destination without manually exporting queries. This feature is in Preview and requires some setup.
 
----
-
-## 1. Turn on the Preview Feature
+## Turn on the preview feature
 
 To enable this feature:
 
@@ -30,9 +28,7 @@ To enable this feature:
 
 :::image type="content" source="media/export-query-results/preview-feature-export-query-enable.png" alt-text="Power BI Desktop Options menu with Export Queries enabled":::
 
----
-
-## 1. Open Export Query Results
+## Open the *Export query results* feature
 
 After enabling the preview:
 
@@ -41,9 +37,7 @@ After enabling the preview:
 
 :::image type="content" source="media/export-query-results/export-query-results-power-query-ribbon.png" alt-text="Power Query editor ribbon with Export Query Results enabled":::
 
----
-
-## 1. Check Fabric Access
+## Check Fabric access
 
 To use this feature:
 
@@ -56,26 +50,21 @@ If these conditions aren’t met, you’ll see an error message.
 
 **Options:**
 
-1. Sign up for a [Fabric trial](/fabric/fundamentals/fabric-trial) and [assign your workspace](/fabric/fundamentals/fabric-trial#share-by-assigning-workspaces).
-1. Assign **My Workspace** to a Fabric capacity in your organization.
+- Sign up for a [Fabric trial](/fabric/fundamentals/fabric-trial) and [assign your workspace](/fabric/fundamentals/fabric-trial#share-by-assigning-workspaces).
+- Assign **My Workspace** to a Fabric capacity in your organization.
 
 If you can’t enable Fabric, contact your Fabric admin.
 
----
+## Select a destination
 
-## 1. Select a Destination
+Once your workspace is assigned to Fabric, choose an online destination:
 
-Once your workspace is assigned to Fabric:
-
-- Choose an online destination.
 - Supported destinations match those in [Fabric Dataflows](/fabric/data-factory/dataflow-gen2-data-destinations-and-managed-settings).
 - You can also pick existing OneLake destinations.
 
 :::image type="content" source="media/export-query-results/export-query-results-select-destination.png" alt-text="Destination selection screen":::
 
----
-
-## 1. Enter Credentials
+## Enter credentials
 
 After selecting a destination:
 
@@ -84,46 +73,39 @@ After selecting a destination:
 
 :::image type="content" source="media/export-query-results/export-query-results-select-edit-connection.png" alt-text="Connection edit screen":::
 
----
+## Confirm and export
 
-## 1. Confirm and Export
-
-You’ll see a summary screen:
+You see a summary screen:
 
 - A Fabric Dataflow Gen2 is created in **My Workspace**.
 - You can rename the dataflow but can’t change the workspace yet.
 - Expand **Manage Connections** to check or fix query connections.
 
-:::image type="content" source="media/export-query-results/edit-destination-settings-manage-connections-collapsed.png" alt-text="Connections collapsed":::
-:::image type="content" source="media/export-query-results/edit-destination-settings-manage-connections-expanded.png" alt-text="Connections expanded":::
+   :::image type="content" source="media/export-query-results/edit-destination-settings-manage-connections-collapsed.png" alt-text="Connections collapsed":::
 
-When ready, select **Export**.
+   :::image type="content" source="media/export-query-results/edit-destination-settings-manage-connections-expanded.png" alt-text="Connections expanded":::
+
+   When ready, select **Export**.
 
 - The next screen shows export progress.
 
-:::image type="content" source="media/export-query-results/export-query-results-in-progress.png" alt-text="Export in progress screen":::
+   :::image type="content" source="media/export-query-results/export-query-results-in-progress.png" alt-text="Export in progress screen":::
 
 - After completion, review your dataflow in Fabric.
 - If errors occur, open the dataflow in Fabric and run it to debug.
 
-:::image type="content" source="media/export-query-results/export-query-results-success.png" alt-text="Export success screen":::
+   :::image type="content" source="media/export-query-results/export-query-results-success.png" alt-text="Export success screen":::
 
----
+## Troubleshooting
 
-## 1. Troubleshooting
+Not all errors appear in Power BI Desktop. Validate and fix issues in Fabric. Learn more about [running a Fabric Dataflow](/fabric/data-factory/dataflows-gen2-overview).
 
-Not all errors appear in Power BI Desktop. Validate and fix issues in Fabric. Learn more about [running a Fabric Dataflow](/fabric/data-factory/dataflows-gen2-overview.md).
+## Considerations and limitations
 
----
+- You must sign in to Microsoft Fabric.
+- Dataflows are created in **My Workspace**, which needs Fabric or trial capacity. Future updates will allow workspace changes.
 
-## 1. Considerations and Limitations
-
-1. You must sign in to Microsoft Fabric.
-1. Dataflows are created in **My Workspace**, which needs Fabric or trial capacity. Future updates will allow workspace changes.
-
----
-
-## 1. Related Content
+## Related Content
 
 Explore more Power BI Desktop features:
 
