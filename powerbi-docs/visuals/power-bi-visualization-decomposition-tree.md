@@ -1,9 +1,9 @@
 ---
-title: Decomposition Tree
+title: Create and View Decomposition Tree Visuals in Power BI
 description: 'Tutorial: Create a decomposition tree visualization in Power BI'
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: juluczni
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
@@ -150,7 +150,7 @@ In the following example, the first two levels are locked. Report consumers can 
 
 ## Considerations and limitations
 
-The maximum number of levels for the tree is 50. Maximum number of data points you can visualize at one time on the tree is 5000. We truncate levels to show top n. Currently the top n per level is set to 10.
+The maximum number of levels for the tree is 50. Maximum number of data points you can visualize at one time on the tree is 5,000. We truncate levels to show top n. Currently the top n per level is set to 10.
 
 The decomposition tree isn't supported in the following scenarios:
 
@@ -170,5 +170,4 @@ Other limitations:
 ## Related content
 
 - [Create and use doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
-
 - [Customize the Visualizations pane in Power BI Desktop and the Power BI service](power-bi-report-visualizations.md)
