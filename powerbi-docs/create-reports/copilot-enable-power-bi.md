@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/07/2025
+ms.date: 10/16/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -58,6 +58,20 @@ Enabling this setting only applies if Azure OpenAI isn't available in your geogr
 
 > [!IMPORTANT]
 > If you have Fabric enabled, enabling Copilot in Fabric means that users can access Copilot across workloads. Copilot access isn't limited to a specific workload, like Power BI.
+
+## Enable Copilot on capacity level
+
+In the tenant admin portal, admins can delegate the enablement of AI and Copilot features to capacity administrators.  **This AI and Copilot setting is automatically delegated to capacity administrators;  tenant administrators can't turn off the delegation.**
+
+:::image type="content" source="media/copilot-enable-power-bi/capacity-delegation-toggle.png" alt-text="Screenshot of the Copilot setting in the Fabric admin portal that asks admins to enable delegation to capacity admins." lightbox="media/copilot-enable-power-bi/capacity-delegation-toggle.png":::
+
+The cross-geo setting stays disabled and doesn't autodelegate to capacity administrators. Capacity administrators see the **Copilot and Azure OpenAI Service (preview)** settings under **Capacity settings** > **Fabric capacity** > **Capacity name** > **Delegated tenant settings**. By default, the capacity setting inherits tenant-level settings. Capacity administrators can decide whether to override the tenant administrator’s selection. This means that even if Copilot isn't enabled on a tenant level, a capacity administrator can choose to enable Copilot for their capacity. With this level of control, it's easier to control which Fabric workspaces can use AI features like Copilot in Microsoft Fabric.
+
+:::image type="content" source="media/copilot-enable-power-bi/capacity-delegation-capacity-settings.png" alt-text="Screenshot of the Copilot setting in the Fabric admin portal that lets admins set cross-geo and delegated cross-geo." lightbox="media/copilot-enable-power-bi/capacity-delegation-capacity-settings.png":::
+
+Capacity admins can find delegated settings under **Capacity settings.**
+
+:::image type="content" source="media/copilot-enable-power-bi/capacity-delegation-delegated-settings.png" alt-text="Screenshot of the Copilot setting in the Fabric admin portal that lets capacity admins set Copilot." lightbox="media/copilot-enable-power-bi/capacity-delegation-delegated-settings.png":::
 
 ## Enable the standalone Power BI Copilot experience (preview)
 
