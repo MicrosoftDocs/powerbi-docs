@@ -8,7 +8,7 @@ ms.reviewer: mayabendov
 ms.topic: concept-article
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 09/11/2025
+ms.date: 10/16/2025
 ---
 
 # Manage multiple add-ins with the Power BI Controller (preview)
@@ -31,22 +31,36 @@ With the Power BI Controller, you can:
 
 ## Get the Power BI Controller add-in
 
-You can [get the Power BI Controller from the Microsoft Office add-in store](https://go.microsoft.com/fwlink/?linkid=2334981).
-
-You can also get the add-in directly from the PowerPoint ribbon:
+You can get the add-in directly from the PowerPoint ribbon:
 
 1. Go to **Add-ins** in the PowerPoint ribbon, and search for "Microsoft Power BI Controller."
 1. Select **Add**.
+
+## Use the Power BI Controller
 
 A new panel opens with the commands that the Power BI Controller supports. During the preview release, supported commands let you:
 
 - Change view modes from snapshot or public snapshot to live (and vice versa)
 - Sync with Power BI
 
+:::image type="content" source="media/power-bi-controller/power-bi-controller-powerpoint.png" alt-text="Screenshot of a PowerPoint presentation showing the Power BI Controller pane with options to reset or change view mode for all add-ins in the presentation.":::
+
+> [!NOTE]
+> The presentation file must be **saved** before the controller can execute any command.
+
+### How commands are processed
+
+When you send the **first command**, the controller scans the entire presentation to discover all Power BI add-ins. This initial scan might take some time to complete. Subsequent commands execute immediately because the add-ins have already been identified.
+
+Each add-in found on the slides is listed in the controller pane along with its current status. This gives you visibility into which add-ins are ready for the selected operation.
+
 When you apply a command to the entire presentation, only the add-ins that support the command execute it. Other add-ins might reject it and report back to the controller as "not applicable." For example, if you send a **Switch to snapshot** command:
 
 - Add-ins that are in **Live** mode respect the command and switch to **Snapshot** mode.
 - Add-ins that are already in **Snapshot** mode don't change because the command isn't applicable.
+
+> [!IMPORTANT]
+> The Power BI Controller is **not yet available for sovereign clouds**.
 
 ## Benefits of the Power BI Controller
 
@@ -56,10 +70,6 @@ Benefits of the Power BI Controller include:
 - **Consistency**: Power BI Controller ensures all embedded reports are updated and managed uniformly.
 - **Accuracy**: Power BI Controller reduces the risk of presenting outdated or inconsistent data.
 - **Control**: Power BI Controller provides clear feedback and lets you manage or cancel operations as needed.
-
-## Next steps
-
-We encourage all Power BI storytelling users to use the Power BI Controller in their next presentation. Your feedback is invaluable and will help us continue to enhance this feature. Share your experiences and suggestions with the Power BI team. Stay tuned for further updates and enhancements.
 
 ## Related content
 
