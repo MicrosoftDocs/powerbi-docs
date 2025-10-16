@@ -8,7 +8,7 @@
     - name: Basics of Power BI service
       href: service-basic-concepts.md
     - name: What's new in the latest Power BI update?
-      href: desktop-latest-update.md
+      href: whats-new.md
     - name: Tutorials
       items:
         - name: Get started with Power BI Desktop

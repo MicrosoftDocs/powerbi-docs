@@ -6899,6 +6899,11 @@
       "source_path": "powerbi-docs/report-server/connect-data-source-apis-pre-oct-2020.md",
       "redirect_url": "/power-bi/report-server/connect-data-source-apis",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/fundamentals/desktop-latest-update.md",
+      "redirect_url": "/power-bi/fundamentals/whats-new",
+      "redirect_document_id": true
     }
   ]
 }

@@ -106,6 +106,8 @@
       href: service-power-bi-powerpoint-add-in-view-present.md
     - name: "Annotate your embedded Power BI visuals"
       href: service-power-bi-powerpoint-add-in-annotate.md
+    - name: "Manage add-ins with the Power BI Controller (preview)"
+      href: storytelling-powerbi-controller.md
     - name: "Information for the Power BI admin"
       href: service-power-bi-powerpoint-add-in-admin.md
     - name: "Deploying the add-in in national clouds"
