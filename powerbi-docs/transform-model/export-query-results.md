@@ -56,7 +56,7 @@ If these conditions aren’t met, you’ll see an error message.
 
 **Options:**
 
-1. Sign up for a [Fabric trial](/fabric/fundamentals/fabric-trial.md) and [assign your workspace](/fabric/fundamentals/fabric-trial#share-by-assigning-workspaces).
+1. Sign up for a [Fabric trial](/fabric/fundamentals/fabric-trial) and [assign your workspace](/fabric/fundamentals/fabric-trial#share-by-assigning-workspaces).
 1. Assign **My Workspace** to a Fabric capacity in your organization.
 
 If you can’t enable Fabric, contact your Fabric admin.
@@ -68,7 +68,7 @@ If you can’t enable Fabric, contact your Fabric admin.
 Once your workspace is assigned to Fabric:
 
 - Choose an online destination.
-- Supported destinations match those in [Fabric Dataflows](/fabric/data-factory/dataflow-gen2-data-destinations-and-managed-settings.md).
+- Supported destinations match those in [Fabric Dataflows](/fabric/data-factory/dataflow-gen2-data-destinations-and-managed-settings).
 - You can also pick existing OneLake destinations.
 
 :::image type="content" source="media/export-query-results/export-query-results-select-destination.png" alt-text="Destination selection screen":::
