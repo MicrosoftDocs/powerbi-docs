@@ -37,8 +37,6 @@ You can get the add-in directly from the PowerPoint ribbon:
 1. Select **Add**. The Microsoft Power BI Controller add-in now appears in your ribbon.
 1. Select **Microsoft Power BI Controller** from the ribbon to open the controller panel.
 
-:::image type="content" source="media/power-bi-controller/add-power-bi-controller.png" alt-text="Screenshot of a PowerPoint presentation highlighting the add-in button and the installed Power BI Controller add-in.":::
-
 ## Use the Power BI Controller
 
 The Power BI Controller opens in a panel with the supported commands. During the preview release, supported commands let you:
