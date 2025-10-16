@@ -59,7 +59,7 @@
       href: ../connect-data/desktop-default-member-multidimensional-models.md            
     - name: "Work with value filter behavior (preview)"
       href: value-filter-behavior.md
-    - name: "Export Query Results (preview)"
+    - name: "Export query results (preview)"
       href: export-query-results.md
   - name: Datamarts (preview)
     items: 
