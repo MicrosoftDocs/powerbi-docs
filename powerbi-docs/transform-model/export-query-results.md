@@ -100,16 +100,19 @@ You’ll see a summary screen:
 When ready, select **Export**.
 
 - The next screen shows export progress.
+
+:::image type="content" source="media/export-query-results/export-query-results-in-progress.png" alt-text="Export in progress screen":::
+
 - After completion, review your dataflow in Fabric.
 - If errors occur, open the dataflow in Fabric and run it to debug.
 
-:::image type="content" source="media/export-query-results/edit-destination-settings-export-query-results-success.png" alt-text="Export success screen":::
+:::image type="content" source="media/export-query-results/export-query-results-success.png" alt-text="Export success screen":::
 
 ---
 
 ## 1. Troubleshooting
 
-Not all errors appear in Power BI Desktop. Validate and fix issues in Fabric. Learn more about [running a Fabric Dataflow](fabric/data-factory/dataflows-gen2-overview.md).
+Not all errors appear in Power BI Desktop. Validate and fix issues in Fabric. Learn more about [running a Fabric Dataflow](/fabric/data-factory/dataflows-gen2-overview.md).
 
 ---
 
