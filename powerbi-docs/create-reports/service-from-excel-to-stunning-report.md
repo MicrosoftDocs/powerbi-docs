@@ -84,9 +84,9 @@ Notice the Sigma symbols in the Data list? Power BI has detected that those fiel
 
 ![Screenshot of the Data pane, showing Excel columns as fields in the financials table.](media/service-from-excel-to-stunning-report/power-bi-fields-list-financial.png)
 
-1. To have more room for the report canvas, minimize the **Filters** pane.
+1. To have more room for the report canvas, minimize the **Filters** pane by using the **arrow** (**>>**).
 
-1. Now you can begin to create visualizations. Let's say your manager wants to see profit over time. In the **Data** pane, drag **Profit** to the report canvas.
+1. Now you can begin to create visualizations. Let's say your manager wants to see profit over time. From the **Data** pane, drag **Profit** to the report canvas.
 
    By default, Power BI displays a column chart with one column.
 
@@ -98,7 +98,7 @@ Notice the Sigma symbols in the Data list? Power BI has detected that those fiel
 
    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-profit-year.png" alt-text="Screenshot of a column chart by year in report editor.":::
 
-1. Hover over the chart and select the forked double arrows to show quarters, then select them again to show months.
+1. Hover over the chart and select the **forked double arrows** to show quarters, then select them again to show months.
 
    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-profit-month.png" alt-text="Screenshot of a column chart by month in report editor.":::
 
@@ -138,29 +138,29 @@ What about displaying a visual showing sales by product and market segment? That
 
    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-stacked-column.png" alt-text="Screenshot of a stacked column chart in the report editor.":::
 
-1. To sort the chart, select **More options** (**...**) > **Sort by**.
+1. To sort the chart, select **More options** (**...**) and select a sort option from the menu.
 
 ### Spruce up the visuals
 
-Make the following changes on the **Format** tab in the Visualizations pane.
+Make the following changes on the **Format** tab in the **Visualizations** pane, then select the **General** tab.
 
 :::image type="content" source="media/desktop-excel-stunning-report/power-bi-format-tab-visualizations.png" alt-text="Screenshot of the Format tab in the Visualizations pane.":::
 
-1. Select the **Profit by Year, Quarter, Month, and Day** column chart. In the **Title** section, change **Text size** to **16 pt**. Toggle **Shadow** to **On**.
+1. Select the **Sum of Profit by Year, Quarter, Month, and Day** column chart. In the **Title** section, change **Text size** to **16 pt**. In the **Effects** section, toggle **Shadow** to **On**.
 
-1. Select the **Sales by Product and Segment** stacked column chart. In the **Title** section, change title **Text size** to **16 pt**. Toggle **Shadow** to **On**.
+1. Select the **Sales by Product and Segment** stacked column chart. In the **Title** section, change title **Text size** to **16 pt**. In the **Effects** section, toggle **Shadow** to **On**.
 
-1. Select the **Profit by Country** map. In the **Map styles** section, change **Theme** to **Grayscale**. In the **Title** section, change title **Text size** to **16 pt**. Toggle **Shadow** to **On**.
+1. Select the **Profit by Country** map. Select the **Visual** tab, then select **Map Settings** > **Style**. Change the **Default style** to **Grayscale (Light)**. Select the **General** tab. In the **Title** section, change title **Text size** to **16 pt**. In the **Effects** section, toggle **Shadow** to **On**.
 
 ## Add a report title
 
 1. Select the **Text box** option.
 
-1. Drag the box to the upper-left corner. Type "Worldwide Sales" in the box.
+1. Drag the box to the upper-left corner. Type *Worldwide Sales* in the box.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/create-text-box.png" alt-text="Screenshot of creating a text box in the report.":::
 
-1. Select the text, and make the **Font size** **36**.
+1. Select the text and make the **Font size** **36**.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-add-title-worldwide-sales.png" alt-text="Screenshot of formatting the title in the report.":::
 
@@ -175,7 +175,7 @@ You can pin all of your visuals to the blank dashboard that Power BI created by 
 1. You must save your report before you can pin a visual to the dashboard. Give your report a name and select **Save**.
 1. Pin each visual to the dashboard that Power BI created, **Financial Sample.xlsx**.
 1. When you pin the last visual, select **Go to dashboard**.
-1. Power BI added a placeholder Financial Sample.xlsx tile to the dashboard automatically. Select **More options (...)** > **Delete tile**.
+1. Power BI added a placeholder *Financial Sample.xlsx* tile to the dashboard automatically. Select **More options (...)** > **Delete tile**.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-tile-more-options.png" alt-text="Screenshot of More options for a tile.":::
 
@@ -191,12 +191,12 @@ Now it's time to share your dashboard with your manager. You can share your dash
 
    ![Screenshot of My workspace, highlighting the Share icon.](media/service-from-excel-to-stunning-report/power-bi-share-dashboard.png)
 
-2. In the **Share dashboard** screen, enter the email addresses of the recipients in the **Enter a name or email addresses** field and add an optional message.
+1. In the **Share dashboard** screen, enter the email addresses of the recipients in the **Enter a name or email addresses** field and add an optional message.
 
-3. Select the option to **Send an email notification**. Choose any other options you want:
+1. Select the option to **Send an email notification**. Choose any other options you want:
 
-    - **Allow recipients to share this dashboard**
-    - **Allow recipients to build content with the data associated with this dashboard**
+   * **Allow recipients to share this dashboard**
+   * **Allow recipients to build content with the data associated with this dashboard**
 
    ![Screenshot of the Share dashboard pane, with all options selected.](media/service-from-excel-to-stunning-report/power-bi-share-dashboard-pane.png)
 
@@ -220,6 +220,6 @@ You can also share reports and dashboards directly to your colleagues in Microso
 
 ## Related content
 
-* Now that you've created a basic report in the Power BI service, how about creating a report in Power BI Desktop? Try the tutorial, [From Excel workbook to stunning report in Power BI Desktop](desktop-excel-stunning-report.md).
+* Now that you've created a basic report in the Power BI service, how about creating a report in Power BI Desktop? Try the [From Excel workbook to stunning report in Power BI Desktop](desktop-excel-stunning-report.md) tutorial.
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
