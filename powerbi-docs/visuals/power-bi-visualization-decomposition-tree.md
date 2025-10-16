@@ -126,7 +126,7 @@ You can have multiple subsequent AI levels. You can also mix up different kinds 
 
 If you select a different node in the tree, the AI Splits recalculate from scratch. In the following example, we changed the selected node in the **Forecast Bias** level. The subsequent levels change to yield the correct high and low values.
 
-:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png" alt-text="Sceenshot of decomposition tree AI interactions.":::
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png" alt-text="Screenshot of decomposition tree AI interactions.":::
 
 AI levels are also recalculated when you cross-filter the decomposition tree by another visual. In the following example, we can see that our backorder % is highest for Plant #0477.
 
