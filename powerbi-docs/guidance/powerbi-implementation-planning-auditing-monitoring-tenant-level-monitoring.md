@@ -201,7 +201,7 @@ We recommend that you closely monitor releases for the Power BI service and Powe
 
 The Power BI service is a cloud service that's updated continually and frequently. Power BI Desktop, which must be installed on a Windows machine, is usually updated monthly (except for fixes, which are described next). Microsoft posts release announcements on the [Power BI blog](https://powerbi.microsoft.com/blog/).
 
-For information about version numbers and links to more information for the current release, see [What's new in Power BI](../fundamentals/desktop-latest-update.md).
+For information about version numbers and links to more information for the current release, see [What's new in Power BI](../fundamentals/whats-new.md).
 
 For information about previous releases, see [Power BI updates archive](../fundamentals/desktop-latest-update-archive.md).
 
