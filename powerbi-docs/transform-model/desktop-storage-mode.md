@@ -15,21 +15,20 @@ LocalizationGroup: Transform and shape data
 
 In Power BI semantic models, the storage mode of a table depends on its data source. You can use the storage mode to control whether Power BI stores the table data in memory for reports or retrieves the data from the data source when visuals load. 
 
-| **Table storage mode**     | **When available**     | **Benefits** |
-| ---------------------------|------------------------|--------------|
-| Import    | For almost all data sources in Power BI Desktop and Power BI web modeling when you select **Get data** and use Power Query.    | Stores a snapshot of the data in a native storage for quick loading visuals in reports. Refresh the semantic model or table to get the latest data from the data source.    | 
-| Direct Lake on OneLake     | For Fabric data sources in Power BI Desktop and Power BI web modeling when you select **OneLake catalog**.    | Data is scanned from OneLake delta tables for quick loading visuals in reports. By default, latest data is loaded. Turn off auto-sync in the scheduled refresh settings page to access the latest data on refresh instead. Refresh is also called reframing for Direct Lake. Learn more about Direct Lake at [aka.ms/DirectLake](https://aka.ms/DirectLake).     |
-| Direct Lake on SQL    | Available from **new semantic model** button in the SQL analytic endpoints of Fabric items.     | Data is scanned from OneLake delta tables for quick loading in reports. If a view is used, SQL granular access enabled, or a Direct Lake guardrail reached, then data is accessed using DirectQuery storage mode. |
-| DirectQuery    | Available in Power BI Desktop using the **Get data** (using Power Query) for some data sources, such as SQL databases.     | Data is queried from the data source when visuals load and not stored in the semantic model. The query is a translation from the Power BI DAX query used in visuals to the native query language of the data source, such as a SQL query. |
-| DirectQuery on Power BI semantic models    | Available in Power BI Desktop when connecting to a Power BI semantic model then selecting **make changes to this model** or when an import or DirectQuery table is already added.     | DAX queries from the new model run on the source model and can use measures from both. Some column properties on the remote model can be overridden in the new model. This customization includes format strings and display names. Use this storage mode when you need to make a small change to an existing semantic model for a specific report.    |
-| Dual    | Available in Power BI Desktop when converting a DirectQuery table to import. A dialog shows with options to then convert the remaining DirectQuery tables to dual.     | The relationships between DirectQuery and import tables are limited and dual can help keep them as regular relationships. |
-| Hybrid    | Available for incremental refresh scenarios on an import table. The latest partition of the table can be in DirectQuery to ensure the latest data is available between import refreshes.     | Learn more about incremental refresh in the [incremental refresh overview](/power-bi/connect-data/incremental-refresh-overview).
+| Table storage mode     | When available     | Benefits | Note |
+| ---------------------------|------------------------|--------------|---|
+| Import    | In Power BI Desktop and Power BI web modeling, for almost all data sources, when you select **Get data** and use Power Query. | Stores a snapshot of the data in a native storage for quick loading visuals in reports.  | To get the latest data from the data source, refresh the semantic model or table. |
+| Direct Lake on OneLake     | In Power BI Desktop and Power BI web modeling, for Fabric data sources, when you select **OneLake catalog**. | Data is scanned from OneLake delta tables for the quick loading of visuals in reports. | By default, the latest data is loaded. To access the latest data on refresh instead, turn off auto-sync in the scheduled refresh settings page. Refresh is also called reframing for Direct Lake. For more information about Direct Lake, see [Direct Lake overview](https://aka.ms/DirectLake). |
+| Direct Lake on SQL    | In the SQL analytic endpoints of Fabric items, when you select **New semantic model**. | Data is scanned from OneLake delta tables for quick loading in reports. | If a view is used, SQL granular access is enabled, or a Direct Lake guardrail is reached, Power BI uses DirectQuery storage mode to access data. |
+| DirectQuery    | In Power BI Desktop, for some data sources such as SQL databases, when you select **Get data** and use Power Query. | Data is queried from the data source when visuals load and isn't stored in the semantic model. | The query is a translation from the Power BI Data Analysis Expressions (DAX) query used in visuals to the native query language of the data source, such as a SQL query. |
+| DirectQuery on Power BI semantic models    | In Power BI Desktop, when you connect to a Power BI semantic model and then select **Make changes to this model**, or when an Import or DirectQuery table is already added. | DAX queries from the new model run on the source model and can use measures from both. Some column properties on the remote model can be overridden in the new model. This customization includes format strings and display names. | Use this storage mode when you need to make a small change to an existing semantic model for a specific report. |
+| Dual    | In Power BI Desktop, when you convert a DirectQuery table to Import mode. A dialog appears with options for converting the remaining DirectQuery tables to Dual mode. | The relationships between DirectQuery and import tables are limited. Dual mode can help keep them as regular relationships. | |
+| Hybrid    | In incremental refresh scenarios on an Import table. The latest partition of the table can be in DirectQuery mode to help ensure the latest data is available between Import refreshes. | Partition creation and management is automated to reduce the amount of data that needs to be refreshed. | For more information, see [Configure incremental refresh and real-time data for Power BI semantic models](/power-bi/connect-data/incremental-refresh-overview). |
 
 > [!Note]
-> **Live connect** is when you connect to a Power BI semantic model in Power BI Desktop to create a report or create a report from Power BI semantic model in the web. There is no local semantic model for this report. This is sometimes called a **thin report**. The remote Power BI semantic model may be using any of the table storage modes. The report author can see the model in model view but only limited information is available. Measures created are stored in the report.
+> *Live connect* is when you connect to a Power BI semantic model in Power BI Desktop to create a report or create a report from Power BI semantic model in the web. There is no local semantic model for this report. This is sometimes called a *thin report*. The remote Power BI semantic model may be using any of the table storage modes. The report author can see the model in model view but only limited information is available. Measures created are stored in the report.
 
-**Composite semantic model** is a semantic model with tables in more than one storage mode. For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
-
+A *composite semantic model* is a semantic model with tables in more than one storage mode. For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
 
 ## See the storage mode of a table
 
@@ -40,10 +39,12 @@ The **Storage mode** property is a property on each table.
 
    :::image type="content" source="media/desktop-storage-mode/see-storage-mode.png" alt-text="Screenshot of the Model view in Power BI Desktop. One table is highlighted. Under Properties, the Storage mode list is expanded and highlighted.":::
 
-For most tables, storage mode is set when you add the table only. The storage mode can only be changed if the table is in DirectQuery storage mode when created. You can change a DirectQuery table to import or dual. After this property is set, it can't be put back to DirectQuery. Power BI web modeling and live editing in Power BI Desktop do have version control, which can be used to reverse a changed storage mode.
+For most tables, you can set the storage mode only when you add the table. And in most cases, you can change the storage mode only if the table is in DirectQuery storage mode when created.
+
+You can change a DirectQuery table to Import or Dual mode. After you set this property, you can't set the mode back to DirectQuery. Exceptions to this rule are Power BI web modeling and live editing in Power BI Desktop. Both environments have version control, which you can use to reverse a changed storage mode.
 
 > [!NOTE]
-> Direct Lake on OneLake tables can be converted to import using semantic link labs in Fabric notebooks.
+> You can convert Direct Lake on OneLake tables to Import tables by using semantic link labs in Fabric notebooks.
 
 ## Constraints on DirectQuery and Dual tables
 
@@ -55,15 +56,15 @@ Consider the following model, where all the tables are from a single source that
 
 :::image type="content" source="media/desktop-storage-mode/storage-mode-04.png" alt-text="Screenshot of the example Relationship view for storage mode.":::
 
-Let’s say all tables in this model are initially set to **DirectQuery**. If you then change the **Storage mode** of the **SurveyResponse** table to **Import**, the following warning window is displayed:
+Say all tables in this model are initially set to **DirectQuery**. If you then change the **Storage mode** of the **SurveyResponse** table to **Import**, the following warning window is displayed:
 
-:::image type="content" source="media/desktop-storage-mode/storage-mode-05.png" alt-text="Screenshot showing a warning window that describes the results of changing the storage mode to Import.":::
+:::image type="content" source="media/desktop-storage-mode/limited-relationship-warning.png" alt-text="Screenshot of a window that describes the effect of changing the storage mode to Import, with an option for setting dimension tables to Dual mode.":::
 
 You can set the dimension tables (**Customer**, **Geography**, and **Date**) to **Dual** to reduce the number of limited relationships in the semantic model, and improve performance. Limited relationships normally involve at least one DirectQuery table where join logic can't be pushed to the source systems. Because Dual tables can act as either DirectQuery or Import tables, this situation is avoided.
 
 The propagation logic is designed to help with models that contain many tables. Suppose you have a model with 50 tables and only certain fact (transactional) tables need to be cached. The logic in Power BI Desktop calculates the minimum set of dimension tables that must be set to **Dual**, so you don’t have to.
 
-The propagation logic traverses only to the one side of one-to-many relationships.
+The propagation logic traverses only to the *one* side of one-to-many relationships.
 
 ## Storage mode usage example
 
