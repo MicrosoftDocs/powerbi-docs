@@ -606,7 +606,7 @@ You can use the `truncation` parameter to influence how the shift is performed:
 - Performance of this preview feature isn't representative of the end product.
 - You can't author calendars in the Power BI Service yet.
 - You shouldn't use [auto date/time](desktop-auto-date-time.md) tables with custom calendars.
-- You can't use calendars with Live connect, Direct Lake, or composite models.
+- You can't use calendars with live connected or composite models.
 - We recommend you associate only the columns in your calendar that you want to use in time intelligence calculations.
 - Calendars are subject to both [real-time](#real-time-validations) and [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 - Each calendar must have a unique name within the data model
