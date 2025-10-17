@@ -68,8 +68,6 @@ These requirements pertain to using Copilot in Power BI apps, the full-page Copi
 - The setting for showing Copilot in the app navigation must be enabled.
 - This setting is unique per app and is managed while updating an app under *Advanced settings > Show Copilot* in app navigation.
 
-// :::image type="content" source="media/service-create-distribute-apps/access-hidden-content.png" alt-text="Screenshot showing turning on Access to hidden content.":::
-
 > [!NOTE]
 > **Copilot in apps is on by default** and can be managed per app.
 >
