@@ -3,12 +3,13 @@ title: Table visualizations in Power BI reports and dashboards
 description: Learn how to work with table visualizations in Power BI reports and dashboards, including how to resize column widths.
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'willt'
+editor: BlairJSArmstrong
+ms.reviewer: JulCsc
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/22/2023
+ms.date: 10/17/2025
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -78,14 +79,14 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 You can create a table like the one shown at the beginning of this article and display sales values by item category.
 
-1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample semantic model. If you don't see a table visual, use the Visualization section to select the table icon. 
+1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample semantic model. If you don't see a table visual, use the Visualization section to select the table icon.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icon.png" alt-text="Image of the icon for a table visual." border="false"::: 
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icon.png" alt-text="Image of the icon for a table visual." border="false":::
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-1.png" alt-text="Screenshot that shows the Category checkbox selected and the default table visual created by Power BI." border="false":::
 
     This action configures the *Category* data as a field in the **Columns** section on the **Visualizations** pane.
-    
+
     Let's add more categories to the table.
 
 1. Expand **Sales** and select the **Average Unit Price** and **Last Year Sales** checkboxes. Under **Sales**, expand **This Year Sales** and select the checkboxes for all three options: **Value**, **Goal**, and **Status**.
@@ -121,12 +122,12 @@ The following steps show how to configure settings and options to adjust the pre
 1. Next, try adjusting the column header text.
 
    1. Expand the **Column headers** > **Text** options.
-   
+
    1. Set the following options:
 
       - Increase the **Font** size and apply bold (**B**).
       - Change the **Background color**.
-      - Adjust the **Header alignment** to _center_ the header text.
+      - Adjust the **Header alignment** to *center* the header text.
       - Turn on **Text wrap** to allow long column headings to display across multiple lines.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-column-headers.png" alt-text="Screenshot that shows table column header options in the Format section of the Visualizations pane." border="false":::
@@ -134,29 +135,29 @@ The following steps show how to configure settings and options to adjust the pre
 1. You can also format individual columns and headers.
 
    1. Expand the **Specific column** section.
-   
+
    1. For the **Apply settings to** options, select the specific column to format by using the **Series** drop-down list.
 
       Let's begin by selecting the column **This Year Sales**.
-   
-      The data values in the selected column determine the available formatting options. 
+
+      The data values in the selected column determine the available formatting options.
 
    1. Expand the **Values** options, and update some format settings, such as **Text color** and **Background color**.
 
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-specific-column.png" alt-text="Screenshot that shows how to select a specific column to update the formatting options." border="false":::
-   
+
    1. Finally, configure the other **Apply settings to** options to specify how to use the updated settings for the column data.
-   
+
       Let's apply the changes to all **values** in the column and to the row that shows the **total** of value.
-      
+
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-format.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
 
-1. Practice what you learned by updating another specific column field. 
+1. Practice what you learned by updating another specific column field.
 
    1. Update the **This Year Sales Status** column.
-   
-   1. For the **Values** options, specify _center_ **Alignment**.
-   
+
+   1. For the **Values** options, specify *center* **Alignment**.
+
    1. Configure the **Apply settings to** options to use the updated settings for the cell **values** only.
 
 1. Select **File** > **Save** to save your changes for the table report page.
@@ -185,7 +186,7 @@ By default, Power BI uses a gradient that spans across two primary colors, from 
 
 Let's modify the background color for a column that has numerical data values.
 
-1. Select the table visual. 
+1. Select the table visual.
 
 1. On the **Visualizations** pane, expand the drop-down menu for a field under **Columns**. Choose the **Average Unit Price** column.
 
@@ -193,7 +194,7 @@ Let's modify the background color for a column that has numerical data values.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-color.png" alt-text="Screenshot that shows how to open the Conditional formatting menu for a selected column in the Visualizations pane." border="false":::
 
-   The **Background color** dialog opens. 
+   The **Background color** dialog opens.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-dialog.png" alt-text="Screenshot that shows the Background color dialog with the color gradient spanning two primary colors, from red to green." border="false":::
 
@@ -205,7 +206,7 @@ Let's modify the background color for a column that has numerical data values.
 
 1. Choose colors for the **Minimum** (lowest) and **Maximum** (highest) values.
 
-1. Choose a color for the **Center** (middle) option for values within the range. 
+1. Choose a color for the **Center** (middle) option for values within the range.
 
 1. Select **OK** to apply your changes to the specified column.
 
@@ -219,12 +220,12 @@ You can replace numerical values in the table presentation with **Data bars**. B
 
 Power BI shows negative and positive data values in the table by using different bar colors. By default, **Negative** values are shaded red and **Positive** values are shaded green. This approach is similar to the default settings for the **Minimum** and **Maximum** values in the background color gradient.
 
-Each bar is the same height, which is based on the table row cell height. The length of each bar represents the numerical amount of the data. A higher number value is shown with a longer bar compared to other bars in the same column. 
+Each bar is the same height, which is based on the table row cell height. The length of each bar represents the numerical amount of the data. A higher number value is shown with a longer bar compared to other bars in the same column.
 
 Let's add another column to the table with a field that has both positive and negative data values. We can configure the column data to display as color bars rather than numbers.
 
 1. On the **Data** pane, expand **Sales** and select the **Total Sales Variance** checkbox.
-   
+
    Power BI adds the new field to the **Columns** section of the **Visualizations** pane.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-add-column.png" alt-text="Screenshot that shows how to add the Total Sales Variance column to the table." border="false":::
@@ -256,7 +257,7 @@ Another formatting option is to add visual cues to the table with conditional **
    The default presentation uses three different icons based on the numerical value. Each icon represents values for one third of all the values (lowest, middle, and highest) for a range of 33 percentage points. The default position for an icon is to the left of the number within the column.
 
    - Choose your preferences for **Icon layout**, **Icon alignment**, and **Style**.
-   - Configure your desired presentation settings according to the numerical values for the column data. 
+   - Configure your desired presentation settings according to the numerical values for the column data.
    - Make any other changes you'd like.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-configure-icons.png" alt-text="Screenshot that shows how to configure icons to represent data for a selected table column." border="false":::
@@ -309,6 +310,42 @@ Sometimes Power BI truncates a column heading in a report and on a dashboard. To
 
 ![Video that shows how to resize a column.](media/power-bi-visualization-tables/resize-table.gif)
 
+## Use Grow to fit to auto-expand table columns
+
+Power BI includes a formatting option for table visuals that helps create cleaner, more balanced layouts automatically. The **Grow to fit** feature distributes unused space evenly across all columns when the total column width is smaller than the visual container. This enhancement improves readability and visual polish without requiring manual adjustments.
+
+Previously, you could [manually resize columns](#adjust-column-width) or enable **Auto-size width**, which adjusts column widths based on content (**Fit to content**). However, these approaches don’t guarantee that the table will fill the entire visual width. For example, this table doesn’t fully utilize the available space:
+
+   :::image type="content" source="media/power-bi-visualization-tables/tables-grow-to-fit-01.png" alt-text="Image of table visual with columns that don’t fill the entire width of the container, leaving empty space." border="false":::
+
+The **Grow to fit** option provides a more dynamic solution. When enabled, Power BI automatically expands the table to use all available space. The extra space is distributed evenly across all columns, resulting in a more professional and visually balanced layout.
+
+   :::image type="content" source="media/power-bi-visualization-tables/tables-grow-to-fit-02.png" alt-text="Image of table visual with columns evenly expanded to fill the full width of the container after enabling Grow to fit." border="false":::
+
+### How to enable Grow to fit
+
+To enable the **Grow to fit** feature:
+
+   1. Select the **table visual**.
+   2. Open the **Format pane**.
+   3. Expand **Column headers > Options**.
+   4. Toggle **Auto-size width** to **On**.
+   5. From the **Resize behavior** dropdown, select **Grow to fit**.
+
+   :::image type="content" source="media/power-bi-visualization-tables/tables-grow-to-fit-03.png" alt-text="Image of Columns headers card expanded, Options are expanded, Auto-size width is enabled, and Resize behavior dropdown displaying Fit to content and Grow to fit." border="false":::
+
+Once **Grow to fit** is enabled, Power BI evaluates the total width of all columns. If the combined width is smaller than the visual container, the remaining space is distributed evenly across all columns.
+
+> [!NOTE]
+> If you manually adjust a column’s width, that column will no longer be affected by the auto-grow behavior. Manual overrides take precedence.
+
+### Behavior and layout impact of Grow to fit
+
+- **Grow to fit** only activates when there is unused space in the visual container.
+- Columns are expanded proportionally to fill the gap.
+- The feature works in combination with **Auto-size width**, which must be turned on for **Grow to fit** to be available.
+- This behavior does not affect column widths that have been manually resized.
+
 ## Considerations and troubleshooting
 
 Review the following considerations for working with tables in Power BI.
@@ -325,4 +362,3 @@ Review the following considerations for working with tables in Power BI.
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
 - Apply [conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md).
 - Apply [data point limits and strategies by visual type](power-bi-data-points.md).
-
