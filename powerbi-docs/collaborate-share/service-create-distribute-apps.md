@@ -69,7 +69,7 @@ These requirements pertain to using Copilot in Power BI apps, the full-page Copi
 :::image type="content" source="media/service-create-distribute-apps/workspace-app-copilot-in-app-nav.png" alt-text="Screenshot of app-scoped Copilot in the app nav.":::
 
 - The setting for showing Copilot in the app navigation must be enabled.
-- This setting is unique per app and is managed while updating an app under *Advanced settings > Show Copilot* in app navigation.
+- This setting is unique per app and is managed while updating an app under *Advanced settings > Show Copilot in app navigation*.
 
 :::image type="content" source="media/service-create-distribute-apps/workspace-app-copilot-setting.png" alt-text="Screenshot of app-scoped Copilot setting.":::
 
