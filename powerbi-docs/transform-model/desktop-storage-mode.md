@@ -18,7 +18,7 @@ In Power BI semantic models, the storage mode of a table depends on its data sou
 
 This article introduces you to the various table storage modes and describes how they affect report behavior.
 
-## Storage modes
+## Table storage modes
 
 | Table storage mode     | When available     | Benefits | Note |
 | ---------------------------|------------------------|--------------|---|
@@ -38,7 +38,7 @@ This article introduces you to the various table storage modes and describes how
 >
 > A Live connect report has no local semantic model and is sometimes called a *thin report*. The remote Power BI semantic model can use any table storage mode. As the report author, you can see the model in **Model** view, but only limited information is available. Measures that you create are stored in the report.
 
-A *composite semantic model* is a semantic model with tables in more than one storage mode. For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
+A *composite semantic model* is a semantic model with tables in more than one storage mode. For more information, see [Use composite models in Power BI](desktop-composite-models.md).
 
 ## See the storage mode of a table
 
@@ -56,7 +56,7 @@ For most tables, you can set the storage mode only when you add the table. You c
 
 ## Constraints on DirectQuery and Dual tables
 
-Dual tables have the same functional constraints as DirectQuery tables. These constraints include limited M transformations and restricted DAX functions in calculated columns. For more information, see [DirectQuery limitations](../connect-data/desktop-directquery-about.md#implications-of-using-directquery).
+Dual tables have the same functional constraints as DirectQuery tables. These constraints include limited M transformations and restricted DAX functions in calculated columns. For more information, see [DirectQuery limitations](../connect-data/desktop-directquery-about.md#general-implications).
 
 ## Propagation of the Dual setting
 
@@ -125,7 +125,7 @@ The following query is interesting because it combines both columns. This query 
 
 ## Keep caches in sync
 
-The queries in the previous section show that Dual tables sometimes hit the cache and sometimes don't. As a result, the values that are returned from an out-of-date cache can differ from values returned from the source. Query execution doesn't attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. It's your responsibility to know your data flows, and you should design accordingly. There are established techniques to handle such cases at the source, if necessary.
+The queries in the previous section show that Dual tables sometimes hit the cache and sometimes don't. As a result, the values that are returned from an out-of-date cache can differ from values returned from the source. Query execution doesn't attempt to mask data issues, for example, by filtering DirectQuery results to match cached values. It's your responsibility to know your data flows, and you should design accordingly. There are established techniques to handle such cases at the source, if necessary.
 
 The Dual storage mode is a performance optimization. You should use it only in ways that don't compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in [Understand many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
 
@@ -154,6 +154,6 @@ The limitations of using DirectQuery mode still apply when you use composite mod
 
 For more information about composite models and DirectQuery mode, see the following articles:
 
-* [Use composite models in Power BI Desktop](desktop-composite-models.md)
+* [Use composite models in Power BI](desktop-composite-models.md)
 * [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Power BI data sources](../connect-data/power-bi-data-sources.md)
