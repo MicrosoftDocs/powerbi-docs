@@ -65,8 +65,13 @@ When the content in your workspace is ready, you can start the publishing proces
 
 #### Manage app-scoped Copilot availability
 These requirements pertain to using Copilot in Power BI apps, the full-page Copilot experience accessible from app navigation. Copilot in Power BI apps is scoped to reports and semantic models users have access to in the app.
+
+:::image type="content" source="media/service-create-distribute-apps/workspace-app-copilot-in-app-nav.png" alt-text="Screenshot of app-scoped Copilot in the app nav.":::
+
 - The setting for showing Copilot in the app navigation must be enabled.
 - This setting is unique per app and is managed while updating an app under *Advanced settings > Show Copilot* in app navigation.
+
+:::image type="content" source="media/service-create-distribute-apps/workspace-app-copilot-setting.png" alt-text="Screenshot of app-scoped Copilot setting.":::
 
 > [!NOTE]
 > **Copilot in apps is on by default** and can be managed per app.
