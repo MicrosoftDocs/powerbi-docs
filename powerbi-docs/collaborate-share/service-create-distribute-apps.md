@@ -63,6 +63,20 @@ When the content in your workspace is ready, you can start the publishing proces
 
 1. Select **Next: [Add content](#add-content-to-the-app)**.
 
+#### Manage app-scoped Copilot availability
+These requirements pertain to using Copilot in Power BI apps, the full-page Copilot experience accessible from app navigation. Copilot in Power BI apps is scoped to reports and semantic models users have access to in the app.
+- The setting for showing Copilot in the app navigation must be enabled.
+- This setting is unique per app and is managed while updating an app under *Advanced settings > Show Copilot* in app navigation.
+
+// :::image type="content" source="media/service-create-distribute-apps/access-hidden-content.png" alt-text="Screenshot showing turning on Access to hidden content.":::
+
+> [!NOTE]
+> **Copilot in apps is on by default** and can be managed per app.
+>
+> For more information on Copilot availability, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview).
+> For more information on turning Copilot on and off, generally for Power BI or specifically for Copilot on reports (also shown on reports in apps), see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
+
+
 #### Allow saving a copy of a report
 
 In the **Setup** tab, decide if you want to allow app users who have build permissions to save copies of reports to their workspace. After they save the reports, app users can customize their report copies to meet their needs. 
