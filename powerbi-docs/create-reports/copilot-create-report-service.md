@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/07/2025
+ms.date: 10/17/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -85,10 +85,13 @@ To see the **Copilot** button in your report, you first need to select a semanti
 With updates to report creation in the Power BI service, you can now work with Copilot to both create and edit report pages. These improvements provide more control, flexibility, and visual intelligence when building reports.
 
 ### Smarter report creation
+
 Copilot now delivers more accurate and relevant visuals, automatically selecting the best way to represent your data. It also supports a wider range of visual types, helping you present insights in the format that best fits your needs.
 
 ### Flexible editing with Copilot
+
 In addition to creating new pages, you can now:
+
 - **Add visuals** to existing report pages.  
 - **Change visuals** by selecting new visual types or adjusting the fields used.  
 - **Delete visuals** that are no longer needed.  
