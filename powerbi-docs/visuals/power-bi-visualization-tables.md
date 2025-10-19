@@ -47,9 +47,9 @@ This tutorial uses the Retail Analysis Sample PBIX file.
 1. In Power BI Desktop, select **File** > **Open report**.
 1. Browse to and select the **Retail Analysis Sample PBIX** file, and then select **Open**.
 
-   The **Retail Analysis Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
+   The **Retail Analysis Sample PBIX** file opens in report view. 
 
-1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
+1. At the bottom, select **+** to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -58,14 +58,8 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 1. Sign in to the Power BI service (`app.powerbi.com`).
 1. Select **Learn** in the navigation pane.
 1. On the **Learning center** page, under **Sample reports**, locate and select the **Retail Analysis Sample** to download it. The sample opens in report view.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-retail-analysis-sample.png" alt-text="Screenshot of the Retail Analysis Sample open in report view in the Power BI service." lightbox="media/power-bi-visualization-tables/power-bi-retail-analysis-sample-expanded.png" border="false":::
-
 1. At the top, select **Edit** to open the Report editor.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-edit-report.png" alt-text="Screenshot of how to select Edit to modify the report in the Power BI service." border="false":::
-
-1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
+1. At the bottom, select **+** to add a new page to the report.
 
 ---
 
@@ -75,9 +69,7 @@ You can create a table like the one shown at the beginning of this article and d
 
 1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample semantic model. If you don't see a table visual, use the Visualization section to select the table icon.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icon.png" alt-text="Screenshot of the icon for a table visual." border="false":::
-
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-1.png" alt-text="Screenshot of the Category checkbox selected and the default table visual created by Power BI." border="false":::
+    :::image type="content" source="media/power-bi-visualization-tables/table-category.png" alt-text="Screenshot of the Category checkbox selected and the default table visual created by Power BI." border="false":::
 
     This action configures the *Category* data as a field in the **Columns** section on the **Visualizations** pane.
 
@@ -85,7 +77,7 @@ You can create a table like the one shown at the beginning of this article and d
 
 1. Expand **Sales** and select the **Average Unit Price** and **Last Year Sales** checkboxes. Under **Sales**, expand **This Year Sales** and select the checkboxes for all three options: **Value**, **Goal**, and **Status**.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-2.png" alt-text="Screenshot of several checkboxes selected in the Data pane and the table visual updated by Power BI." border="false":::
+    :::image type="content" source="media/power-bi-visualization-tables/table-value-goal-status.png" alt-text="Screenshot of several checkboxes selected in the Data pane and the table visual updated by Power BI." border="false":::
 
     Power BI adds the selected data as fields to the **Columns** section on the **Visualizations** pane.
 
@@ -297,11 +289,11 @@ The **Grow to fit** feature automatically expands your columns to fill the visua
 
 The [manual resize](#adjust-column-width) and **Autosize width** (fitting to content) options size each column to its contents, but you might still have some unused space in the visual container:
 
-   :::image type="content" source="media/power-bi-visualization-tables/tables-grow-to-fit-01.png" alt-text="Screenshot of table visual with columns that don’t fill the entire width of the container, leaving empty space." border="false":::
+   :::image type="content" source="media/power-bi-visualization-tables/table-unused-space.png" alt-text="Screenshot of table visual with columns that don’t fill the entire width of the container, leaving empty space." border="false":::
 
 **Grow to fit** expands the table to the full visual width:
 
-   :::image type="content" source="media/power-bi-visualization-tables/tables-grow-to-fit-02.png" alt-text="Screenshot of table visual with columns evenly expanded to fill the full width of the container after enabling Grow to fit." border="false":::
+   :::image type="content" source="media/power-bi-visualization-tables/fill-space-grow-fit.png" alt-text="Screenshot of table visual with columns evenly expanded to fill the full width of the container after enabling Grow to fit." border="false":::
 
 To enable **Grow to fit**:
 
@@ -311,7 +303,7 @@ To enable **Grow to fit**:
    1. Toggle **Autosize width** to *On*.
    1. From the **Resize behavior** dropdown, select **Grow to fit**.
 
-   :::image type="content" source="media/power-bi-visualization-tables/tables-grow-to-fit-03.png" alt-text="Screenshot of Columns headers card expanded, Options are expanded, autosize width is enabled, and resize behavior dropdown displaying Fit to content and Grow to fit." border="false":::
+   :::image type="content" source="media/power-bi-visualization-tables/grow-fit-autosize-toggle.png" alt-text="Screenshot of Columns headers card expanded, Options are expanded, autosize width is enabled, and resize behavior dropdown displaying Fit to content and Grow to fit." border="false":::
 
 ## Considerations and troubleshooting
 
