@@ -16,9 +16,9 @@ ai-usage: ai-assisted
 ---
 # What's new in Power BI: October 2025 update
 
-Get a concise overview of the October 2025 Power BI update—key reporting, Copilot, performance, connectivity, and visualization changes—with links to the full feature summary, demo playlist, and desktop download. For more information, visit the [Power BI October 2025 Feature Summary blog post](https://aka.ms/powerbioctober2025update).
+The October update brings exciting opportunities for learning and community engagement, including the upcoming Fabric Data Days and the return of FabCon in Atlanta next spring. Notably, Power BI is making strides in mapping capabilities by transitioning from Bing Maps to Azure Maps, ensuring users have access to the latest features and support. Read on to get a concise overview of the October 2025 Power BI update—key reporting, Copilot, performance, connectivity, and visualization changes. For more information, visit the [Power BI October 2025 Feature Summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2025-feature-summary/).
 
-> Download the [October 2025 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [October 2025 version of Power BI Desktop: v2.148.878.0](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ## Events and announcements
 
@@ -90,7 +90,7 @@ If your organization needs an earlier version, download it. Use the most recent 
 - If you load a report from a newer release, get a warning, and then save it in a previous version, you lose information related to new features.
 - Only English versions of Power BI Desktop are archived.
 
-> **Download** the [October 2025 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [October 2025 version of Power BI Desktop: v2.148.878.0](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ## Past updates
 
