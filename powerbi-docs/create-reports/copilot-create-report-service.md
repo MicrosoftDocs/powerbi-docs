@@ -1,9 +1,9 @@
 ---
 title: Create reports in the Power BI service with Copilot
 description: Using Copilot, you can quickly create a Power BI report.
-author: bezulau
+author: Julcsc
 ms.author: juliacawthra
-ms.reviewer: guptamaya
+ms.reviewer: bczulauf
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -71,11 +71,11 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
 1. Copilot generates a report page based on your request.
     
-    :::image type="content" source="media/copilot-create-report/copilot-create-page-step2.png" alt-text="Screenshot showing Copilot pane.":::
+    :::image type="content" source="media/copilot-create-report/copilot-create-new-page.png" alt-text="Screenshot showing Copilot pane and generated report page.":::
 
 1. You can further edit the report by prompting Copilot to add, delete, or change visuals.
 
-    :::image type="content" source="media/copilot-create-report/copilot-create-page-step3.png" alt-text="Screenshot showing Copilot pane.":::
+    :::image type="content" source="media/copilot-create-report/copilot-create-page-edits.png" alt-text="Screenshot showing Copilot pane and options to edit report.":::
 
 1. If you need help with writing prompts, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
