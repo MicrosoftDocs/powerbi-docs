@@ -31,6 +31,7 @@ There are three main settings related to Copilot that admins need to be aware of
 - [Enable Copilot setting](#enable-copilot-setting)
 - [Enable sharing data across geographic boundaries](#enable-sharing-data-across-geographic-boundaries)
 - [Enable the standalone Power BI Copilot experience (preview)](#enable-the-standalone-power-bi-copilot-experience-preview)
+- [Enable Copilot at the capacity level](#enable-copilot-at-the-capacity-level)
 
 If the admins disabled Copilot, see the following instructions to turn Copilot on.
 
@@ -59,7 +60,7 @@ Enabling this setting only applies if Azure OpenAI isn't available in your geogr
 > [!IMPORTANT]
 > If you have Fabric enabled, enabling Copilot in Fabric means that users can access Copilot across workloads. Copilot access isn't limited to a specific workload, like Power BI.
 
-## Enable Copilot on capacity level
+## Enable Copilot at the capacity level
 
 In the tenant admin portal, admins can delegate the enablement of AI and Copilot features to capacity administrators.  **This AI and Copilot setting is automatically delegated to capacity administrators;  tenant administrators can't turn off the delegation.**
 
