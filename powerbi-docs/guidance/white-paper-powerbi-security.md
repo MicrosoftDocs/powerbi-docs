@@ -151,7 +151,7 @@ Power BI Mobile cached data is deleted when the app is removed, when the user si
 
 Power BI Mobile doesn't access other application folders or files on the device.
 
-The Power BI apps for iOS and Android let you protect your data by configuring additional identification, such as providing Face ID, Touch ID, or a passcode for iOS, and biometric data (Fingerprint ID) for Android. [Learn more about additional identification](../consumer/mobile/mobile-native-secure-access.md).
+The Power BI apps for iOS and Android let you protect your data by configuring additional identification, such as providing Face ID, Touch ID, or a passcode for iOS, and biometric data (Fingerprint ID) for Android. 
 
 ## Authentication to the Power BI service
 
@@ -378,7 +378,7 @@ For more information, see [Sensitivity labels in Power BI](../enterprise/service
 
 ### Microsoft Purview Data Loss Prevention (DLP) Policies for Power BI
 
-Microsoft Purview's Data Loss Prevention (DLP) policies help organizations reduce the risk of sensitive business data leakage from Power BI. DLP policies help them meet compliance requirements of government or industry regulations, such as the European Union's General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA), and make sure their data in Power BI is managed.
+Microsoft Purview's Data Loss Prevention (DLP) policies help organizations reduce the risk of sensitive business data leakage from Power BI. DLP policies help them meet compliance requirements of government or industry regulations and make sure their data in Power BI is managed.
 
 When DLP policies for Power BI are set up:
 

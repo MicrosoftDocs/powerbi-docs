@@ -64,7 +64,7 @@ In a summary response from the Copilot pane, citations are provided within the s
 
 ## Custom prompts
 
-The benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted list or a summary specifically about sales, or about another nuanced slice of your data. 
+The benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted list or a summary specifically about sales, or about another nuanced slice of your data. You can even ask about data behind slicers and filters on your report page.  So long as the filter or slicer exists in the report, Copilot can filter the response for you.
  
 :::image type="content" source="media/copilot-pane-summarize-content/bulleted-insights.png" alt-text="Screenshot showing type custom prompts to request a specific summary." lightbox="media/copilot-pane-summarize-content/bulleted-insights.png":::
 
@@ -127,7 +127,7 @@ In this immersive experience, you can also dive deeper into the visuals provided
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png" alt-text="Screenshot showing what happens when users explore in the full immersive summary in Copilot." lightbox="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png":::
 
-Lastly, in the standalone experience, you are able to ask about report data behind filters and slicers, and get filtered answers and summaries back.  This is different from the report pane experience, but we will bring the filtering capability there soon.  Here is an example where I have asked Copilot specifically for a summary about Maui, rather than an overview.  
+Remember, you can filter. Here is an example where I have asked Copilot specifically for a summary about Maui, rather than an overview.  
 
 :::image type="content" source="media/copilot-create-narrative/copilot-filtered-summary.png" alt-text="Screenshot of a filtered summary and hover icon in standalone experience." lightbox="media/copilot-create-narrative/copilot-filtered-summary.png":::
 
@@ -188,13 +188,13 @@ The information we give is:
 
 The following are limitations and considerations across both experiences (also see the [best practices](#best-practices) section).
 
-- Filters and slicers aren't yet supported in summary REPORT PANE experiences (coming soon)
-- Filter limitations for standalone experience:
-  - Filters and slicers must exist on the report to be applied in standalone 
+- Filter limitations:
+  - Filters and slicers must exist on the report to be applied in Copilot responses
   - Page and report level filters are supported, visual level filters are not yet supported
   - Basic, categorical filters/slicers are supported
-  - Advanced filters/slicers aren't yet supported but are coming soon
+  - Advanced filters/slicers aren't yet supported but are coming 
   - Filters with a high volume of instance values (filter options) may not work with a high degree of accuracy yet
+  
 - For the Copilot button to be available in reports, the report needs to be in:
   - An eligible workspace: the workspace needs to have a paid dedicated Fabric capacity.
   - A tenant where the admin settings are enabled.

@@ -33,6 +33,8 @@ The dynamic subscription filters are stored in a separate Power BI semantic mode
 - Build permissions to a Power BI semantic model that contains recipient data. This data includes the email addresses of your recipients and filter values that should be applied for each recipient.  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
 
+- The user cannot be a [guest user](/fabric/enterprise/powerbi/service-admin-entra-b2b). Guest users [cannot subscribe others](/power-bi/collaborate-share/end-user-subscribe?tabs=creator) and dynamic subscriptions can always bring in "others" through datasets. Therefore, guest users cannot create dynamic subscriptions. 
+
 ## Create a dynamic subscription
 
 Do you want to create one subscription that sends customized views of a report to your subscribers based on filters that you set? Perhaps you're a regional director and want to send a report to various managers, each interested in the sales by each of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. To do this, Power BI connects to two different semantic models. One contains subscription recipient data, including email addresses of the managers. The other contains the data and defines the mapping between recipients and filters. When it's time to send the report, the latest data available in this second semantic model determines which manager receives a report in their inbox, and what filters are used in that report.
@@ -133,5 +135,5 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 
 ## Related content
 
-[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).   
+[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).  
 [Search for and sort content](../consumer/end-user-search-sort.md).

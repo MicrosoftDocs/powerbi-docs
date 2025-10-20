@@ -1,6 +1,6 @@
 ---
-title: Favorites in Power BI service (dashboards, reports, apps)
-description: Learn how to set frequently opened dashboards, reports, and apps as favorites in the Power BI service.
+title: Add Favorites for Dashboards, Reports, and Apps in Power BI
+description: Learn how to add and manage favorites for frequently used dashboards, reports, and apps in the Power BI service to access content faster. Follow these steps.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: juliacawthra
@@ -9,59 +9,68 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View your Favorites
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 10/06/2025
+ai-usage: ai-assisted
 LocalizationGroup: Common tasks
 # customer intent: As a Power BI custome using the Power BI service, I want to know how to create and remove favorite content. 
 ---
 
-# Favorite dashboards, reports, and apps in the Power BI service
+# Add favorites for dashboards, reports, and apps in Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-When you make content a *favorite*, you can access it quickly from the **Favorites** content list. Favorites are typically content that you visit most often and are identified with a filled star.
+When you mark content as a *favorite*, you access it quickly from the **Favorites** list. Favorites are content you visit most often and show a filled star.
 
    :::image type="content" source="./media/end-user-favorite/power-bi-nav-favorite.png" alt-text="Screenshot of the main Power BI page with Favorites highlighted.":::
 
 ## Add a dashboard or report as a favorite
 
-1. Open a dashboard or report that you use often. Even content that is shared with you can be a favorite.
+1. Open a dashboard or report you use often. Shared content can be a favorite.
 
-2. From the upper menu bar of the Power BI service, select **Add to Favorites** or the star :::image type="icon" source="./media/end-user-favorite/power-bi-favorite-icon.png"::: icon.
+1. On the top menu bar in the Power BI service, select **Add to Favorites** or the star :::image type="icon" source="./media/end-user-favorite/power-bi-favorite-icon.png"::: icon.
 
    :::image type="content" source="./media/end-user-favorite/power-bi-favorite-menu.png" alt-text="Screenshot of the Favorites icon on the toolbar.":::
 
-   You can also favorite a dashboard or report from anywhere you see the star icon, such as Home, Recent, Apps, and Shared with me.
+   Favorite a dashboard or report anywhere you see the star icon, like Home, Recent, Apps, and Shared with me.
 
    :::image type="content" source="./media/end-user-favorite/power-bi-recent-favorite.png" alt-text="Screenshot of the Favorites tab on the Power BI main page.":::
-   
 
 ## Work with favorites
 
-You have several options for viewing your favorites.
+View your favorites in a few ways.
 
-1. To see all the content that you added as favorites, on the **Browse** pane, select the **Favorites** tab.
+1. On the **Browse** pane, select the **Favorites** tab to see all your favorites.
 
    :::image type="content" source="./media/end-user-favorite/power-bi-browse.png" alt-text="Screenshot of the Home page with the Favorites tab highlighted.":::
 
-   From here, you can take action. You can open a favorite, identify owners, and even share favorites with your colleagues.
+   Open a favorite, identify owners, and share favorites with colleagues.
 
-2. Favorites are also available from Power BI Home. If you selected the **Expanded** display mode, your favorites are listed in the **Favorites + frequents** section. If you selected the **Simplified** display mode, your favorites are listed in the **Favorites** tab.
+1. Access favorites from Power BI Home: In the **Expanded** display mode they're in **Favorites + frequents**, and in the **Simplified** display mode they're on the **Favorites** tab.
 
-   :::image type="content" source="media/end-user-favorite/power-bi-simplified-mode-new.png" alt-text="From the upper right corner of Home, select the Simplified display mode.":::
+   :::image type="content" source="media/end-user-favorite/power-bi-simplified-mode-new.png" alt-text="Screenshot of Home showing where to select the Simplified display mode in the upper right corner.":::
 
-   :::image type="content" source="media/end-user-favorite/power-bi-favorite-tab.png" alt-text="On the Home page, select the tab for Favorites.":::
+   :::image type="content" source="media/end-user-favorite/power-bi-favorite-tab.png" alt-text="Screenshot of Home showing the Favorites tab selected.":::
 
 ## Unfavorite content
 
-If you no longer use a report, dashboard, or app as often as you used to, you can unfavorite it. When you unfavorite content, it's removed from your Favorites list but not from Power BI. Just select the black star to turn it back to a white star.
+If you no longer use a report, dashboard, or app often, unfavorite it. Unfavoriting removes it from your Favorites list, not from Power BI. Select the black star to turn it white again.
 
    :::image type="content" source="./media/end-user-favorite/power-bi-unfavorite.png" alt-text="Screenshot of the Favorites tab with an item being unfavorited.":::
 
+## Mobile
+
+In the Power BI mobile apps (iOS and Android):
+
+- Tap the star in the header or item menu to favorite or unfavorite.
+- Favorites sync across devices and the Power BI service.
+- When you favorite an app, all dashboards and reports in that app are also favorited. You can't unfavorite them individually.
+- To unfavorite, tap the filled star again.
+
 ## Considerations and limitations
 
-When you set an app as a favorite, it automatically favorites all the reports and dashboards for that app. It isn't possible to favorite individual app reports or dashboards.
+When you favorite an app, you also favorite all its reports and dashboards. You can't favorite individual reports or dashboards in an app.
 
 ## Related content
 
 - [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
-- More questions? Ask the [Power BI Community](https://community.powerbi.com/).
+- Have more questions? Ask the [Power BI Community](https://community.powerbi.com/).

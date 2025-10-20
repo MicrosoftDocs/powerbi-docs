@@ -54,8 +54,6 @@ landingContent:
             url: capacity-planning.md
           - text: Connect with ADFS and WAP
             url: connect-adfs-wap-report-server.md
-          - text: Configure Power BI mobile apps for remote access
-            url: configure-powerbi-mobile-apps-remote.md
 
   - title: Create and publish reports
     linkLists:
@@ -73,8 +71,6 @@ landingContent:
             url: connect-data-sources.md
           - text: Connect to data source APIs
             url: connect-data-source-apis.md
-          - text: Connect to data source APIs (pre-Oct 2020)
-            url: connect-data-source-apis-pre-oct-2020.md
           - text: Use Excel with Office Online Server
             url: excel-oos.md
           - text: Troubleshoot custom visuals
@@ -92,8 +88,6 @@ landingContent:
             url: scheduled-refresh.md
           - text: Troubleshoot scheduled refresh
             url: scheduled-refresh-troubleshoot.md
-          - text: Access datasets via OData
-            url: access-dataset-odata.md
           - text: Always Encrypted support
             url: always-encrypted-support.md
           - text: Use Microsoft Entra application proxy
