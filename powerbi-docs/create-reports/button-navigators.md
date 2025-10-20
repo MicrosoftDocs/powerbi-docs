@@ -54,11 +54,11 @@ When you select **Page navigator**, Power BI automatically creates a page naviga
 
 The page navigator is automatically in sync with your report pages:
 
-- The titles of the buttons match the page display names.
+- The button labels match the page display names.
 - The ordering of the buttons matches the order of your report pages.
 - The selected button is the current page.
-- The navigator updates automatically as you add or remove pages in your report.
-- The titles of the buttons update automatically as you rename pages.
+- The navigator is updated automatically as you add or remove pages in your report.
+- The titles of the buttons are updated automatically as you rename pages.
 
 If you want to further customize the pages that appear in the page navigator or are hidden, go to the **Format navigator** pane. Under **Pages**, adjust the settings for showing hidden pages and tooltip pages:
 
@@ -69,11 +69,11 @@ If you want to further customize the pages that appear in the page navigator or 
 
 ## Bookmark navigator
 
-Before you can create the bookmark navigator, you need to [create the bookmarks](desktop-bookmarks.md). Additionally, create separate bookmark groups if you plan on creating different bookmark navigators within the same report.
+Before you can create the bookmark navigator, you need to [create the bookmarks](desktop-bookmarks.md). Also, create separate bookmark groups if you plan on creating different bookmark navigators within the same report.
 
-:::image type="content" source="media/desktop-buttons/example-bookmarks.png" alt-text="Screenshot showing a Bookmarks navigator example.":::  
+:::image type="content" source="media/desktop-buttons/example-bookmarks.png" alt-text="Screenshot of the Bookmarks pane in Power BI. Four groups are listed. The top group is expanded and contains three bookmarks.":::  
 
-Once you’ve created your bookmarks, select the **Bookmark navigator** option.
+After you create your bookmarks, create a bookmark navigator:
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -83,7 +83,7 @@ On the **Insert** tab, select **Buttons** > **Navigator** > **Bookmark navigator
 
 # [Power BI service](#tab/powerbi-service)
 
-Select **Edit** to edit the report, then on the menu bar select **Buttons** > **Navigator** > **Bookmark navigator**.
+Select **Edit** to edit the report. Then on the menu bar, select **Buttons** > **Navigator** > **Bookmark navigator**.
 
 :::image type="content" source="media/desktop-buttons/create-bookmark-navigator-service.png" alt-text="Screenshot of the Power BI service. On the Buttons menu, Navigator is highlighted. In its shortcut menu, Bookmark navigator is highlighted." lightbox="media/desktop-buttons/create-bookmark-navigator-service.png:::
 
@@ -91,34 +91,32 @@ Select **Edit** to edit the report, then on the menu bar select **Buttons** > **
 
 Power BI automatically creates a bookmark navigator for you:
 
-:::image type="content" source="media/desktop-buttons/example-bookmark-navigator.png" alt-text="Screenshot of a Bookmark navigator example.":::
+:::image type="content" source="media/desktop-buttons/example-bookmark-navigator.png" alt-text="Screenshot of a navigator with horizontally aligned buttons labeled with bookmark names. The Bookmarks configuration pane contains the same bookmarks.":::
 
-The bookmark navigator is automatically in sync with your report bookmarks, meaning:
+The bookmark navigator is automatically in sync with your report bookmarks:
 
-- Titles of the buttons match the bookmark display names.
-- Ordering of the buttons matches the order of your report bookmarks.
+- The button labels match the bookmark display names.
+- The ordering of the buttons matches the order of your report bookmarks.
 - The selected button is the last selected bookmark.
-- The navigator updates automatically as you add or remove bookmarks in your report.
-- The titles of the buttons update automatically as you rename bookmarks.
+- The navigator is updated automatically as you add or remove bookmarks in your report.
+- The titles of the buttons are updated automatically as you rename bookmarks.
 
-If you want to further customize the bookmarks that show or hide in the bookmark navigator, go to the **Format navigator** pane > **Bookmarks** tab:
+If you want to further customize the bookmarks that apper or are hidden in the bookmark navigator, go to the **Format navigator** pane, and then go to the **Bookmarks** tab:
 
-:::image type="content" source="media/button-navigators/bookmark-settings.png" alt-text="Screenshot of the Power BI Desktop Format navigator pane. The Bookmarks settings are highlighted, with controls for selecting bookmarks."lightbox="media/button-navigators/bookmark-settings.png":::
+:::image type="content" source="media/button-navigators/bookmark-settings.png" alt-text="Screenshot of the Power BI Desktop Format navigator pane. The Bookmarks settings are highlighted. Controls for selecting bookmarks are available."lightbox="media/button-navigators/bookmark-settings.png":::
 
-By default, **All** bookmarks are shown in the bookmark navigator; however, you can create and select a specific bookmark group to show only the bookmarks within that group.
+By default, all bookmarks are shown in the bookmark navigator. However, you can create and select a specific bookmark group to show only the bookmarks within that group.
 
-:::image type="content" source="media/desktop-buttons/selecting-all-bookmarks-or-bookmark-group.png" alt-text="Screenshot of the bookmark group options within the Bookmark dropdown menu.":::
+:::image type="content" source="media/desktop-buttons/selecting-all-bookmarks-or-bookmark-group.png" alt-text="Screenshot of the Bookmarks tab in the Format navigator pane. The Bookmark list is expanded, and a bookmark named EU sales is selected.":::
 
-You also can **Allow deselection**, meaning users can deselect all the buttons in the bookmark navigator. This option is great for building a toggle-like experience or allowing for a deselected default state. To set up either of these types of experiences, first create a bookmark with the desired deselected state. Here’s an example of a deselected state:
+You also can turn on the **Allow deselection** option. If you do, users can deselect all the buttons in the bookmark navigator. This option is useful for building a toggle-like experience or offering a deselected default state. To set up either of these types of experiences, first create a bookmark with the desired deselected state. Here's an example of a deselected state:
 
-:::image type="content" source="media/desktop-buttons/example-unselected-state.png" alt-text="Screenshot of an example bookmark navigator in the deselected state.":::
+:::image type="content" source="media/desktop-buttons/example-unselected-state.png" alt-text="Screenshot of a report page that contains only a welcome message and a bookmark navigator. None of the bookmark buttons are selected.":::
 
-Once you've bookmarked the deselected state, turn on **Allow deselection** and select the bookmark that you want to **Launch on deselection**. In this case, that bookmark is named *No filter*.
+After you bookmark the deselected state, turn on **Allow deselection**. Under **Launch on deselection**, select the bookmark that you want to go to when no bookmark is selected in the navigator. In the following screenshot, that bookmark is named *No filter*. If you don't want the bookmark that you use for deselection to appear in the bookmark navigator, select **Hide deselection bookmark**.
 
-If the bookmark that you’re using for deselection is within the bookmark navigator already, you can choose to **Hide the deselection bookmark** within the navigator if you don’t want to show it:
+:::image type="content" source="media/button-navigators/hide-deselection-bookmark-setting.png" alt-text="Screenshot of the Format navigator pane Bookmarks tab. Under Launch on deselection, No filter is selected. Hide deselection bookmark is turned on."lightbox="media/button-navigators/hide-deselection-bookmark-setting.png":::
 
-:::image type="content" source="media/button-navigators/hide-deselection-bookmark-setting.png" alt-text="Screenshot of the Bookmarks navigator option to Hide deselection bookmark."lightbox="media/button-navigators/hide-deselection-bookmark-setting.png":::
- 
 ## Formatting options
 
 Just like for other buttons, there are lots of formatting options for the navigators including:
@@ -138,45 +136,50 @@ The navigators also include two more formatting options:
 
 ### Grid layout
 
-The grid layout tab includes options to change the orientation of the navigator in the following forms:
+You can use the **Grid layout** tab to select from the following options for the navigator orientation:
 
 - Horizontal
 - Vertical
 - Grid  
 
-It also includes the option to change the **Padding** between buttons in the navigator.
+That tab also includes the option to change the **Padding** value between buttons in the navigator.
 
-:::image type="content" source="media/button-navigators/grid-layout-settings.png" alt-text="Screenshot of the Power BI Desktop Format navigator pane. The Gird layout settings are highlighted, with controls for orientation and padding.":::
+:::image type="content" source="media/button-navigators/grid-layout-settings.png" alt-text="Screenshot of the Power BI Desktop Format navigator pane. The Grid layout settings are highlighted, with controls for orientation and padding.":::
 
 ### Selected state
 
-The navigators can customize the Selected state of the button. You can use this option to help the selected state of the button stand out from the default state. In this example, we’ve customized both the **Fill** and **Text** formatting for the **Selected** state:
+You can customize the selected state of a navigator button. This option is useful for making the selected state of the button stand out from the default state. In the following example, the **Fill** and **Text** values are customized for the **Selected** state:
 
-:::image type="content" source="media/button-navigators/selected-state-settings.png" alt-text="Screenshot of the Power BI Desktop Format navigator pane. Under Style, the State, Text, and Fill settings are highlighted.":::
+:::image type="content" source="media/button-navigators/selected-state-settings.png" alt-text="Screenshot of the Format navigator pane with the State, Text, and Fill settings highlighted. A selected navigator button is darker than other buttons.":::
 
 ## Set the page navigation destination conditionally
 
-You can use conditional formatting to set the navigation destination, based on the output of a measure you create in Power BI Desktop. For example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection:
+You can use conditional formatting to set the navigation destination, based on the output of a measure you create in Power BI Desktop. For example, you might want to save space on your report canvas by having a single button to navigate to the page that the user selects:
 
 :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot of a dropdown list labeled Select a destination. In the list, Market details is selected. Next to the list, a green button is labeled Go.":::
 
-To create this example, start by creating a single-column table in Power BI Desktop with the names of the navigation destinations:
+To create this navigation experience, take the following steps to create a single-column table in Power BI Desktop that contains the names of the navigation destinations:
 
 1. On the **Home** tab, select **Enter data**.
 
-   The **Create Table** dialog box opens.
+   The **Create Table** dialog opens.
 
-1. In the **Create Table** dialog box, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination, so ensure that the values you entered exactly match your drillthrough page names.
+1. In the **Create Table** dialog, enter the names of your pages in the column. Power BI uses an exact string match to set the drill-through destination. So ensure that the values you enter exactly match your drill-through page names.
 
    :::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Screenshot of the Create Table dialog that shows a table with one column. One row contains Market details. The other contains Store details.":::
 
-1. After you've created the table, add it to the page as a single-select slicer:
+1. After you create the table, add it to the page as a single-select slicer:
 
    :::image type="content" source="media/desktop-buttons/button-navigate-slicer.png" alt-text="Screenshot of a dropdown list labeled Select a destination. In the list, Market details is selected.":::
 
-Create a page navigation button by selecting **Insert** > **Buttons** > **Blank**. Use the **Format button** pane to add text to your button and to adjust its shape and fill. Then select the conditional formatting option for the destination:
+1. Create a page navigation button by selecting **Insert** > **Buttons** > **Blank**. Use the **Format button** pane to add text to your button and to adjust its shape and fill.
 
-1. Go to the **Format button** pane. Under **Style**, set **Action** to **On**, and then expand **Action**. Select **Page navigation** for **Type**, and then select the **Conditional formatting** (**fx**) icon next to the **Destination**.
+1. Select the conditional formatting option for the destination by taking the following steps:
+   1. Go to the **Format button** pane.
+   1. Under **Style**, set **Action** to **On**.
+   1. Expand **Action**.
+   1. Under **Type**, select **Page navigation**.
+   1. Under **Destination**, select the **Conditional formatting** (**fx**) icon.
 
    :::image type="content" source="media/desktop-buttons/button-set-page-nav-destination.png" alt-text="Screenshot showing Page navigation button.":::
 
@@ -184,7 +187,7 @@ Create a page navigation button by selecting **Insert** > **Buttons** > **Blank*
 
    :::image type="content" source="media/desktop-buttons/button-select-destination.png" alt-text="Screenshot showing Select a destination.":::
 
-   Now the button can navigate to different pages, depending on the user’s selection.
+   Now the button can navigate to different pages, depending on the user's selection.
 
    :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot of a dropdown list labeled Select a destination. In the list, Market details is selected. Next to the list is a green Go button.":::
 
