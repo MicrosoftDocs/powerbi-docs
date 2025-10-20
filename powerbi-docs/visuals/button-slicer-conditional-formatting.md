@@ -24,14 +24,27 @@ This capability enhances report interactivity and readability by guiding users�
 
 ## Prerequisites
 
-Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
+In the following guide, we're using the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
-In the following guide, we're using the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). After downloading the file, let’s get started:
+# [Power BI Desktop](#tab/powerbi-desktop)
 
-1. Launch **Power BI Desktop**.
-1. On the left-side navigation pane, select **Open**; otherwise, on the top-left of the window, select **File > Open**.
-1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view, ready for you to begin.
-1. Before proceeding, make sure you created a button slicer as described in the [Let’s create a button slicer](/power-bi/visuals/power-bi-visualization-button-slicer#lets-create-a-button-slicer) section.
+> [!IMPORTANT]
+> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
+
+1. Launch **Power BI Desktop**.
+1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.
+1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view.
+
+# [Power BI service](#tab/powerbi-service)
+
+1. Sign in to the Power BI service (`app.powerbi.com`).
+1. From the left-side navigation pane, select **Learn**.
+1. On the **Learning center** page, under **Sample reports**, locate and select **Retail Analysis Sample**. It opens in Reading mode and adds the dashboard, report, and semantic model to your workspace.
+1. At the top of the report, select **Edit** to switch to the Report editor (Edit mode).
+
+---
+
+Before proceeding, make sure you created a button slicer as described in the [Let's create a button slicer](/power-bi/visuals/power-bi-visualization-button-slicer#lets-create-a-button-slicer) section.
 
     :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-get-started.png" alt-text="Screenshot of button slicer visual overview in Power BI Desktop." lightbox="media/button-slicer-visual-highlights/button-slicer-get-started.png":::
 
