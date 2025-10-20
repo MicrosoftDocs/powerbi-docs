@@ -20,6 +20,9 @@ In Power BI, the button slicer is an interactive visual element that allows user
 
 Among the various types of slicers, the button slicer stands out due to its unique properties. It offers customizable button styles, interactive states, conditional formatting for labels, and a grid layout for arranging buttons in rows and columns. Additionally, the button slicer can integrate images, enhancing visual appeal and providing more context. 
 
+> [!IMPORTANT]
+> Because the button slicer is now generally available, your current experience may differ from the earlier preview experience. However, these changes can be easily reverted by making the updates in the **Format** pane.
+
 These features make the button slicer a powerful tool for creating interactive and visually appealing reports, offering a user-friendly setup and comprehensive formatting options.
 
 ## Prerequisites
