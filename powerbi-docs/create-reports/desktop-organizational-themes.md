@@ -17,47 +17,47 @@ LocalizationGroup: Create reports
 
 Organizational themes (preview) allow Power BI administrators to centrally manage and distribute custom report themes across the organization. Maintaining a consistent visual identity across Power BI reports is now simpler and more scalable, thanks to organizational themes. Whether reports are built manually or generated with Copilot, this feature ensures that styling and branding stay aligned with your organization's identity and design standards.
 
-The **Organizational themes** feature is available exclusively to **Power BI tenant administrators** through the **Admin portal**. While report creators benefit from the themes and styling options defined through this feature, they can't configure them directly. Instead, administrators can upload custom JSON theme files, validate them, add descriptions, rename them for clarity, and control their visibility across the organization. Once published, these themes appear in the theme gallery, making them easily accessible to report creators in both Power BI Desktop and Power BI Service.
+The **Organizational themes** feature is available exclusively to **tenant administrators** through the Power BI [admin portal](/fabric/admin/admin-center). While report creators benefit from the themes and styling options defined through this feature, they can't configure them directly. Instead, administrators can upload custom JSON theme files, validate them, add descriptions, rename them for clarity, and control their visibility across the organization. Once published, these themes appear in the theme gallery, making them easily accessible to report creators in both Power BI Desktop and Power BI Service.
 
 > [!IMPORTANT]
 > The **Organizational themes** feature is currently in preview. The information in this article relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ## Organizational themes in the admin portal
 
-Adding a new organizational theme in Power BI is a streamlined process designed for admin control and governance. First, navigate to the Power BI **Admin portal**, where a dedicated section for **Organizational themes (preview)** is available. This is the central hub for managing all theme-related assets.
+Adding a new organizational theme in Power BI is a streamlined process designed for admin control and governance. First, navigate to the [**admin portal**](/fabric/admin/admin-center), where a dedicated section for **Organizational themes (preview)** is available. This is the central hub for managing all theme-related assets.
 
-   :::image type="content" source="media/organizational-themes/admin-portal.png" alt-text="Screenshot of Organizational themes Admin portal with Organizational theme (preview) menu section selected and highlighted." lightbox="media/organizational-themes/admin-portal.png":::
+   :::image type="content" source="media/organizational-themes/admin-portal.png" alt-text="Screenshot of Organizational themes admin portal with Organizational theme (preview) menu section selected and highlighted." lightbox="media/organizational-themes/admin-portal.png":::
 
 ## Upload a theme file
 
 Administrators can upload a custom theme using a .JSON file. This file defines the visual styling—colors, fonts, and layout preferences—that are applied to reports. To upload a theme, admins fist have to select the **+ Add theme** button, this opens the **Theme settings** pane that requires to upload a .JSON file, assign a name, and it's optional to add a description.
 
-   :::image type="content" source="media/organizational-themes/add-theme-button.png" alt-text="Screenshot of Organizational themes Admin portal with the '+ Add theme' button highlighted, and 'Theme settings' dialog open and highlighted." lightbox="media/organizational-themes/add-theme-button.png":::
+   :::image type="content" source="media/organizational-themes/add-theme-button.png" alt-text="Screenshot of Organizational themes admin portal with the '+ Add theme' button highlighted, and 'Theme settings' dialog open and highlighted." lightbox="media/organizational-themes/add-theme-button.png":::
 
 After selecting and uploading a custom theme .JSON file, the system automatically validates the file format and structure. If the file is unsupported or incorrectly formatted, a clear error message is displayed.
 
-   :::image type="content" source="media/organizational-themes/add-theme-error.png" alt-text="Screenshot of Organizational themes Admin portal with the 'Organizational Theme Error' dialog open." lightbox="media/organizational-themes/add-theme-error.png":::
+   :::image type="content" source="media/organizational-themes/add-theme-error.png" alt-text="Screenshot of Organizational themes admin portal with the 'Organizational Theme Error' dialog open." lightbox="media/organizational-themes/add-theme-error.png":::
 
-Keep in mind that each theme must have a unique name. The Power BI Admin portal includes a real-time name-checking mechanism to prevent duplicates, ensuring clarity and consistency across the organization.
+Keep in mind that each theme must have a unique name. The admin portal includes a real-time name-checking mechanism to prevent duplicates, ensuring clarity and consistency across the organization.
 
 ## Manage uploaded themes
 
-When a Power BI administrator uploads a theme to the **Organizational themes** section of the Admin Portal, four key management options automatically appear. In the following sections, we walk through each option to explain what they do, when to use them, and how they affect report creators and Copilot-generated reports.
+When a Power BI administrator uploads a theme to the **Organizational themes** section of the [admin portal](/fabric/admin/admin-center), four key management options automatically appear. In the following sections, we walk through each option to explain what they do, when to use them, and how they affect report creators and Copilot-generated reports.
 
 - **[Export](#export-a-theme)** – Download the theme's JSON file for backup or reuse.
 - **[Details](#view-and-edit-theme-details)** – View and edit the theme's name and description.
 - **[Delete](#delete-a-theme)** – Permanently remove the theme from the organizational gallery.
 - **[Set theme visibility](#set-theme-visibility)** – Control whether the theme is visible to report creators.
 
-   :::image type="content" source="media/organizational-themes/theme-actions.png" alt-text="Screenshot of Organizational themes Admin portal menu bar with Export, Details, Delete, and Enable or Disable for theme gallery options highlighted." lightbox="media/organizational-themes/theme-actions.png":::
+   :::image type="content" source="media/organizational-themes/theme-actions.png" alt-text="Screenshot of Organizational themes admin portal menu bar with Export, Details, Delete, and Enable or Disable for theme gallery options highlighted." lightbox="media/organizational-themes/theme-actions.png":::
 
-Alternatively, the **Details**, **Delete**, and **Enable/Disable for theme gallery options** can also be accessed via the **ellipsis button** (three-dot menu) next to the theme's name in the Admin Portal. This provides a quick way for admins to manage individual themes directly from the list view.
+Alternatively, the **Details**, **Delete**, and **Enable/Disable for theme gallery options** can also be accessed via the **ellipsis button** (three-dot menu) next to the theme's name in the admin portal. This provides a quick way for admins to manage individual themes directly from the list view.
 
-   :::image type="content" source="media/organizational-themes/theme-ellipsis-actions.png" alt-text="Screenshot of Admin portal with organizational theme selected and menu expanded showing Details, Delete, and Enable or Disable for theme gallery options." lightbox="media/organizational-themes/theme-ellipsis-actions.png":::
+   :::image type="content" source="media/organizational-themes/theme-ellipsis-actions.png" alt-text="Screenshot of admin portal with organizational theme selected and menu expanded showing Details, Delete, and Enable or Disable for theme gallery options." lightbox="media/organizational-themes/theme-ellipsis-actions.png":::
 
 ### Export a theme
 
-The **Export** option allows administrators to download the theme's JSON file directly from the Admin Portal. This is useful for:
+The **Export** option allows administrators to download the theme's JSON file directly from the admin portal. This is useful for:
 
 - Backing up the theme configuration for safekeeping.
 - Sharing the theme with other admins or teams.
@@ -77,7 +77,7 @@ This helps maintain clarity, especially when multiple themes are available in th
 
 ### Delete a theme
 
-The **Delete** option permanently removes the theme from the Admin portal and the organizational theme list. Use the Delete option when:
+The **Delete** option permanently removes the theme from the admin portal and the organizational theme list. Use the Delete option when:
 
 - A theme is outdated or no longer aligns with your organization's branding.
 - You want to clean up unused or test themes.
@@ -92,7 +92,7 @@ The **Delete** option permanently removes the theme from the Admin portal and th
 The **Enable/Disable for theme gallery** toggle controls whether the theme is visible to report creators in the theme gallery within Power BI Desktop and Service.
 
 - **Enable**:  By default, newly uploaded themes are hidden from the theme gallery in Power BI Desktop and Service. Selecting this option makes the theme visible to report creators, allowing them to apply it directly from organizational themes in the theme gallery.
-- **Disable**: This option gives administrators flexibility to test or reserve themes without exposing them to all users. If a theme is already enabled, the Disable option appears instead. Selecting the Disable option will hide the theme from the gallery, though it will remain available in the Admin portal for future use, editing, or reactivation. The theme can still be used by Copilot if it's set as the default.
+- **Disable**: This option gives administrators flexibility to test or reserve themes without exposing them to all users. If a theme is already enabled, the Disable option appears instead. Selecting the Disable option will hide the theme from the gallery, though it will remain available in the admin portal for future use, editing, or reactivation. The theme can still be used by Copilot if it's set as the default.
 
 ## Use the theme gallery
 
@@ -108,14 +108,14 @@ To access the theme gallery in Power BI service, go to the **View** tab in the
 
 ## Enable a theme for Copilot
 
-When uploading or editing an organizational theme in the Power BI Admin portal, administrators can to enable the **Copilot** toggle. This setting determines whether the selected theme is used by Copilot when it generates the first page of a new report.
+When uploading or editing an organizational theme in the admin portal, administrators can to enable the **Copilot** toggle. This setting determines whether the selected theme is used by Copilot when it generates the first page of a new report.
 
 - If enabled: Copilot applies this theme by default when creating a report from scratch, ensuring that the output aligns with your organization's visual identity and styling preferences.
 - If disabled: Copilot falls back to its own default theme, which might not reflect your organization's branding.
 
 The **Copilot** toggle gives administrators control over how AI-generated content adheres to governance and design standards, making it easier to maintain consistency across both manually authored and Copilot-assisted reports.
 
-   :::image type="content" source="media/organizational-themes/theme-copilot.png" alt-text="Screenshot of Organizational theme section in the Admin portal with Copilot toggle highlighted and enabled." lightbox="media/organizational-themes/theme-copilot.png":::
+   :::image type="content" source="media/organizational-themes/theme-copilot.png" alt-text="Screenshot of Organizational theme section in the admin portal with Copilot toggle highlighted and enabled." lightbox="media/organizational-themes/theme-copilot.png":::
 
 Only one theme can be enabled as the default theme for Copilot. Enabling a new default theme replaces the previous default theme, and the new theme is applied when COpilot generates the initial page.
 
