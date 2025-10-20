@@ -44,7 +44,7 @@ In the following guide, we're using the [Retail Analysis Sample PBIX file](http
 
 Before proceeding, make sure you created a button slicer as described in the [Let's create a button slicer](/power-bi/visuals/power-bi-visualization-button-slicer#lets-create-a-button-slicer) section.
 
-    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-get-started.png" alt-text="Screenshot of button slicer visual overview in Power BI Desktop." lightbox="media/button-slicer-visual-highlights/button-slicer-get-started.png":::
+:::image type="content" source="media/button-slicer-visual-highlights/button-slicer-get-started.png" alt-text="Screenshot of button slicer visual overview in Power BI Desktop." lightbox="media/button-slicer-visual-highlights/button-slicer-get-started.png":::
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have an individual Power BI Pro license or that you save the report in Premium capacity.
