@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/21/2025
+ms.date: 10/20/2025
 ---
 
 # What's new in Power BI collaboration and integration
@@ -17,6 +17,17 @@ ms.date: 07/21/2025
 This article summarizes new or updated Power BI features that are designed to help you collaborate and integrate Power BI into other products.
 
 **To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/whats-new.md).**
+
+## October 2025
+
+### Power BI Controller (preview)
+
+Power BI Controller (preview) is a task pane add-in that acts as a central command center for all Power BI add-ins in your presentation. With this feature, you can perform bulk actions across slides with one click.
+
+- **Bulk switch live/snapshot**: Toggle every embedded Power BI add-in in the deck between Live, Snapshot, or Public snapshot views with a single action—perfect for monthly business reviews or finalizing a shareable version.
+- **Sync with Power BI**: Ensure add-ins reflect the latest state without opening each slide.
+
+To learn more about this feature, see [Manage multiple add-ins with the Power BI Controller (preview)](storytelling-powerbi-controller.md).
 
 ## July 2025
 
