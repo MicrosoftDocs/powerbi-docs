@@ -108,7 +108,7 @@ To access the theme gallery in Power BI service, go to the **View** tab in the
 
 ## Enable a theme for Copilot
 
-When uploading or editing an organizational theme in the admin portal, administrators can to enable the **Copilot** toggle. This setting determines whether the selected theme is used by Copilot when it generates the first page of a new report.
+When uploading or editing an organizational theme in the admin portal, administrators can enable the **Copilot** toggle. This setting determines whether the selected theme is used by Copilot when it generates the first page of a new report.
 
 - If enabled: Copilot applies this theme by default when creating a report from scratch, ensuring that the output aligns with your organization's visual identity and styling preferences.
 - If disabled: Copilot falls back to its own default theme, which might not reflect your organization's branding.
