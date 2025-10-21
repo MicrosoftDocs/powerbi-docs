@@ -16,4 +16,7 @@ In the following guide, we're using the [**Retail Analysis Sample PBIX**](https:
 1. Launch **Power BI Desktop**.
 1. On the left-side navigation pane, select **Open**, otherwise on the top-left of the window, select **File** > **Open**.
 1. Locate and select your copy of the **Retail Analysis Sample PBIX** file. The file will open in report view, ready for you to begin.
+
+   :::image type="content" source="../media/power-bi-visualization-column-charts/desktop-retail-analysis-sample-report-view.png" alt-text="Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service." lightbox="../media/power-bi-visualization-column-charts/desktop-retail-analysis-sample-report-view-expanded.png" border="false":::
+
 1. Select the + icon at the bottom of the window to add a new page to the report.
