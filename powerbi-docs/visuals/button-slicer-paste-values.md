@@ -51,10 +51,7 @@ Before proceeding, make sure you created a button slicer as described in the [Le
 
 ## Paste values into a button slicer
 
-1. To paste a set of values into a button slicer, begin by opening Excel. Create a new worksheet and enter your desired list of values. For instance, type "Brad Sutton" in cell A1, "Carlos Grilo" in cell A2, and "Tina Lassila" in cell A3. Your worksheet should look like:
-
-    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-worksheet.png" alt-text="Screenshot of Excel worksheet with sample names entered for button slicer." lightbox="media/button-slicer-visual-highlights/button-slicer-worksheet.png":::
-
+1. To paste a set of values into a button slicer, begin by opening Excel. Create a new worksheet and enter your desired list of values. For instance, type "Brad Sutton" in cell A1, "Carlos Grilo" in cell A2, and "Tina Lassila" in cell A3. 
 1. After entering the names in Excel, highlight the cells containing your list (A1 to A3) and copy them. Next, return to Power BI, select your button slicer on the report canvas, and use **Ctrl-V** to paste the copied values, or use the slicer's ellipsis menu to paste the copied values. Each button with the matching names appears selected within the slicer, enabling straightforward filtering and analysis.
 
     :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-paste.png" alt-text="Screenshot of button slicer after pasting values showing selected names." lightbox="media/button-slicer-visual-highlights/button-slicer-paste.png":::
