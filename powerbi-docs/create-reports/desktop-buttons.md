@@ -85,7 +85,7 @@ Here are the options for button actions:
 - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md).
 - **Drill through** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drillthrough.md).
 - **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page and bookmark navigators](button-navigators.md) for details. 
-- **Bookmark navigation** navigates the user to a different state in the report, either on the same or a different page, by using bookmarks. See [Create page and bookmark navigators](button-navigators.md#bookmark-navigator) for details.
+- **Bookmark navigation** navigates the user to a different state in the report, either on the same or a different page, by using bookmarks. See [Create page and bookmark navigators](button-navigators.md#create-a-bookmark-navigator) for details.
 - **Q&A** opens a **Q&A Explorer** window. When your report readers select a Q&A button, the Q&A Explorer opens, and they can ask natural-language questions about your data.
 - **Web URL** opens a web page in a browser.
 - **Apply all slicers** and **Clear all slicers** buttons apply all the slicers or clear all the slicers on a page. See [Create Apply all slicers and Clear all slicers buttons in reports](buttons-apply-all-clear-all-slicers.md) for details.

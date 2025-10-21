@@ -38,7 +38,7 @@ If you're designing reports and creating report bookmarks for others to use, see
 ## Other articles about bookmarks
 
 - In the Power BI service and Power BI Desktop, report owners can create report bookmarks. For more information, read about [report bookmarks](../create-reports/desktop-bookmarks.md).
-- If you have edit permissions for the report, you can quickly build a [bookmark navigation experience](../create-reports/button-navigators.md#bookmark-navigator). Bookmark navigation is available for both personal and report bookmarks. Each bookmark converts to a customizable button or dropdown menu.
+- If you have edit permissions for the report, you can quickly build a [bookmark navigation experience](../create-reports/button-navigators.md#create-a-bookmark-navigator). Bookmark navigation is available for both personal and report bookmarks. Each bookmark converts to a customizable button or dropdown menu.
 
 ## Use personal bookmarks to save insights and build stories in Power BI
 
