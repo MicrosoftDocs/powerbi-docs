@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/15/2024
+ms.date: 10/11/2025
 LocalizationGroup: Connect to data
 ---
 
@@ -25,7 +25,7 @@ Power BI report templates contain the following information from the report from
 
 - Report **pages**, visuals, and other visual elements.
 - The **data model definition**, including the schema, relationships, measures, and other model definition items.
-- All **query definitions**, such as queries, query Parameters, and other query elements.
+- All **query definitions**, such as queries, query parameters, and other query elements.
 
 While Power BI Desktop reports use the `.PBIX`  extension, report templates use the file extension `.PBIT`.
 
@@ -57,7 +57,7 @@ When you open a report template, a dialog might appear. The dialog asks for valu
 
 After any required parameters are provided, you're prompted for the location of the underlying data associated with the report. The current report creator can then connect to data based on their credentials.
 
-:::image type="content" source="media/desktop-templates/desktop-templates-05.png" alt-text="Screenshot of an example parameters dialog.":::
+:::image type="content" source="media/desktop-templates/desktop-templates-05.png" alt-text="Screenshot of a dialog for an exmaple parameter where you specify the location of the underlying report data.":::
 
 Once the parameters and data are specified, a report is created. This report contains all the pages, visuals, data model items, and queries that are in the report on which the template is based.
 
