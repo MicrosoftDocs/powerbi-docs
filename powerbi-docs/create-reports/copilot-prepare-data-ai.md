@@ -215,7 +215,6 @@ When you restart Desktop, you no longer see the **Prep data for AI** button.
   - Import
   - DirectQuery
   - Composite (local)
-  - Direct Lake
 - All model types can use the **Prep data for AI** features within the Power BI service.
 - When you close the dialog, all **Prep data for AI** features are saved to the model.
 - You can test all **Prep data for AI** features on the report Copilot pane before publishing to the service.
