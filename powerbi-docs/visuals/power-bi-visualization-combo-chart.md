@@ -8,7 +8,7 @@ ms.custom: video-removed, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 10/21/2025
 LocalizationGroup: Visualizations
 ---
 
@@ -27,7 +27,7 @@ Combo charts are a great choice:
 - when you have a line chart and a column chart with the same X axis.
 - to compare multiple measures with different value ranges.
 - to illustrate the correlation between two measures in one visualization.
-- to check whether one measure meets the target defined by another measure
+- to check whether one measure meets the target defined by another measure.
 - to conserve canvas space.
 
 ## How to create a combo chart  
@@ -107,7 +107,7 @@ In this task, we compare gross margin and sales.
 
 1. Select the ellipsis to sort it by **FiscalMonth**, then select the ellipsis again and choose **Sort axis** \> **Sort ascending**.
   
-1. In January, Gross Margin (GM)% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Can we expect a similar pattern in sales last year and this year?
+1. In January, Gross Margin % was 35%, peaked at 45% in April, dropped in July and peaked again in August. Can we expect a similar pattern in sales last year and this year?
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-gross-margin-line-chart.png" alt-text="Line chart showing last year's gross margin percentage.":::
 
@@ -119,7 +119,7 @@ In this task, we compare gross margin and sales.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-and-stacked-column-chart-icon.png" alt-text="Icon for Line and stacked column chart.":::
 
-1. Drag **Gross Margin Last Year %** from **Column y-axis** into **Line y-axis**. 
+1. Drag **Gross Margin Last Year %** from **Column y-axis** into **Line y-axis**.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-and-stacked-column-chart-fields.png" alt-text="Screenshot of combo chart fields showing Line y-axis field.":::
 
