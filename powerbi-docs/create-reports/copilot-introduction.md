@@ -157,6 +157,9 @@ These requirements pertain to using Copilot in Power BI apps, the full-page Copi
 - The setting for showing Copilot in the app navigation must be enabled. This setting is unique per app and is managed while [publishing or updating an app](../collaborate-share/service-create-distribute-apps) under *Advanced settings* > *Show Copilot in app navigation*.
   - Note: Copilot in apps is on by default and can be managed per app.
 
+:::image type="content" source="media/copilot-introduction/workspace-app-copilot-setting.png" alt-text="Screenshot of app-scoped Copilot setting.":::
+
+
 ## Related content
 
 - [Overview of Copilot for Fabric (preview)](/fabric/get-started/copilot-fabric-overview)
