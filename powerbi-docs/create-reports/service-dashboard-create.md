@@ -79,9 +79,32 @@ Some report formatting options or themes aren't applied to visuals when you pin 
 - Border, shadow, and background settings, as well as all title and subtitle formatting (aside from the text itself), are ignored in the pinned tile.
 - For card visuals, the text used for the value is shown in dashboards using the 'DIN' font family, with black text. You can change the text color for all the tiles on a dashboard by [creating a custom dashboard theme](service-dashboard-themes.md).
 - Conditional formatting isn't applied.
-- Button visuals that trigger bookmarks or clear or apply filters when you select them have no action in a dashboard tile. These actions only make sense within the context of a report.
-- Visuals adjust their size to fit the size of the tile. This can result in differences in layout as if the visual is resized on the report.
+
+Certain interactivity/features are lost or limited.
+- If you pin just a visual (rather than an entire report page), filters and slicers in the report may not persist or apply the same way on the tile.
+- Button visuals that trigger bookmarks or clear or apply filters when you select them have no action in a dashboard tile. These actions only make sense within the context of a report. The tile is a snapshot/hyperlink, not full report functionality.
+- If you’re a viewer (not creator) of a dashboard, you often cannot move or resize tiles. Dashboard tile refresh and behavior may depend on dataset refresh and cache.
+
+Live changes in the report may not update the tile’s visual type.
+- If you pinned a line chart, then later change the visual in the report to a bar chart, the dashboard tile still shows the original line-chart visual type (though data may refresh).
+- Similarly, geometry or layout changes may not propagate.
+
+Limitations with visual types, data size, and image sizes.
+- Some custom visuals, certain slicer visuals, or unsupported visuals may not be pinnable.
+- Visuals adjust their size to fit the size of the tile, which can result in differences in layout as if the visual were resized in the report.
 - Because some visualizations use background images, pinning might not work if the background image is too large. Try reducing the image size or using image compression.
+- While you can pin visuals from different reports or datasets to one dashboard, you cannot create new visuals on the dashboard itself that combine data from different underlying datasets in the way you can in a report.
+- Custom fonts that aren’t part of Power BI’s supported font list aren’t applied on dashboards.
+
+Dashboard theme and visual theme mismatches.
+- When you pin a tile, you can choose to keep the report’s theme (so the visual looks as it did) or use the dashboard theme (so all tiles match). However, some tiles might lose formatting when the dashboard theme is applied.
+- Some theme-level formatting (tile background color, tile border) may not apply in all cases (for example, pinned live report pages or certain tile types).
+  
+Dashboard limitations (beyond pinning) that impact pinned visuals.
+- Dashboards are limited to one page (one canvas), whereas reports can have many pages.
+- You cannot create dashboards in Power BI Desktop—only in the Power BI service.
+- On a dashboard, filtering or slicing the canvas is not available in the same way as in a report: you cannot drop a slicer across tiles and have them all respond (unless each tile was pinned from a live page).
+
 
 ## Related content
 
