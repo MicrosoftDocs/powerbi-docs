@@ -14,40 +14,42 @@ LocalizationGroup: Model your data
 ---
 # Create measures for data analysis in Power BI Desktop
 
-Power BI Desktop helps you create insights into your data with just a few actions. But sometimes that data just doesn’t include everything you need to answer some of your most important questions. Measures can help you get there.
+Power BI Desktop helps you create insights into your data with just a few actions. But sometimes that data doesn't include everything you need to answer some of your most important questions. Measures can help you get there.
 
-Measures are used in some of the most common data analyses. Simple summarizations such as sums, averages, minimum, maximum and counts can be set through the **Fields** well. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look. For more information, see [Create measures](/training/modules/model-data-power-bi/4b-create-calculated-measures).
+Measures are used in some of the most common data analyses. You can set basic summarizations such as sums, averages, minimums, maximums, and counts through the **Data** pane. The calculated results of measures change as you interact with your reports, making it possible to do fast and dynamic ad-hoc data exploration.
 
-## Understanding measures
+This article introduces you to measures and shows you how to use and organize them. For more information, see [Create measures](/training/modules/model-data-power-bi/4b-create-calculated-measures).
 
-In Power BI Desktop, measures are created and displayed in *Report View*, *Table View*, or *Model View*. Measures you create yourself appear in the **Fields** list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
+## Understand measures
 
-:::image type="content" source="media/desktop-measures/measuresinpbid_measinfieldlist.png" alt-text="Screenshot of Measure fields in the Fields pane.":::
+In Power BI Desktop, you create and display measures in *Report View*, *Table View*, or *Model View*. Measures you create yourself appear in the **Data** list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
 
-## Report level measures
+:::image type="content" source="media/desktop-measures/data-pane-measures.png" alt-text="Screenshot of the Data pane in Power BI Desktop. Among the list of data fields are three measures that are related to sales, which are highlighted.":::
 
-Report level measures or report measures are custom calculations or metrics created directly within a report, based on an existing dataset or a live connection. These measures allow users to add specific business logic, create visual calculations, or perform calculations that are relevant to the report's context without altering the original dataset. Report level measures are written using Data Analysis Expressions (DAX) and can be used in visualizations within the report to provide additional insights and tailor the data presentation to meet specific analytical needs. They enhance flexibility, enabling users to derive new insights from existing data models dynamically.
+## Report-level measures
+
+Report-level measures, or report measures, are custom calculations or metrics that you create directly within a report, based on an existing dataset or a live connection. These measures provide a way for users to add specific business logic, create visual calculations, or perform calculations that are relevant to the report's context without altering the original dataset. You use Data Analysis Expressions (DAX) to write report-level measures. You can use these measures in visualizations within a report to provide extra insights and tailor the data presentation to meet specific analytical needs. These measures enhance flexibility, helping users to derive new insights from existing data models dynamically.
 
 > [!NOTE]
-> You might also be interested in *quick measures*, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn Data Analysis Expressions (DAX) syntax, since their automatically created DAX formulas are available to review. For more information, see [quick measures](desktop-quick-measures.md).
+> You might also be interested in *quick measures*, which are ready-made measures you can select from dialogs. They're a good way to quickly create measures, and also a good way to learn DAX syntax, because their automatically created DAX formulas are available to review. For more information, see [quick measures](desktop-quick-measures.md).
 >
 >
 
 ## Data Analysis Expressions
 
-Measures calculate a result from an expression formula. When you create your own measures, you’ll use the [Data Analysis Expressions](/dax/) (DAX) formula language. DAX includes a library of over 200 functions, operators, and constructs. Its library provides immense flexibility in creating measures to calculate results for just about any data analysis need.
+Measures calculate a result from an expression formula. When you create your own measures, you use the [DAX](/dax/) (DAX) formula language. DAX includes a library of over 200 functions, operators, and constructs. Its library provides immense flexibility in creating measures to calculate results for just about any data analysis need.
 
-DAX formulas are a lot like Excel formulas. DAX even has many of the same functions as Excel, such like `DATE`, `SUM`, and `LEFT`. But the DAX functions are meant to work with relational data like we have in Power BI Desktop.
+DAX formulas are a lot like Excel formulas. DAX even has many of the same functions as Excel, such as `DATE`, `SUM`, and `LEFT`. But the DAX functions are meant to work with relational data like you find in Power BI Desktop.
 
-## Let’s look at an example
+## Sales projection example
 
 Janice is a sales manager at Contoso. Janice has been asked to provide reseller sales projections over the next fiscal year. Janice decides to base the estimates on last year's sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
 
-To report the estimates, Janice imports last year's sales data into Power BI Desktop. Janice finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Janice renames the **SalesAmount** field to *Last Years Sales*. Janice then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as a single value that is the sum of all reseller sales from last year.
+To report the estimates, Janice imports last year's sales data into Power BI Desktop. Janice finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Janice renames the **SalesAmount** field to *Last Years Sales*. Janice then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as a single value that's the sum of all reseller sales from last year.
 
-Janice notices that even without specifying a calculation, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in **Last Years Sales**.
+Janice notices that even without specifying a calculation, one is provided automatically. Power BI Desktop creates its own measure by summing up all of the values in **Last Years Sales**.
 
-But Janice needs a measure to calculate sales projections for the coming year, which will be based on last year's sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Janice will create a measure. Janice creates a new measure by using the *New Measure* feature, then enters the following DAX formula:
+But Janice needs a measure to calculate sales projections for the coming year. The measure should be last year's sales multiplied by 1.06 to account for the expected 6% increase in business. For this calculation, Janice creates a measure by using the *New Measure* feature and then entering the following DAX formula:
 
 ```dax
     Projected Sales = SUM('Reseller Sales'[Last Years Sales])*1.06
@@ -55,45 +57,60 @@ But Janice needs a measure to calculate sales projections for the coming year, w
 
 Janice then drags the new Projected Sales measure into the chart.
 
-:::image type="content" source="media/desktop-measures/measuresinpbid_lastyearsales.png" alt-text="Screenshot of the new Projected Sales visual.":::
+:::image type="content" source="media/desktop-measures/last-year-sales-projected-sales-chart.png" alt-text="Screenshot of a Power BI Desktop clustered column chart, with columns for sales and projected sales. In the Data pane, those measures are highlighted.":::
 
 Quickly and with minimal effort, Janice now has a measure to calculate projected sales. Janice can further analyze the projections by filtering on specific resellers or by adding other fields to the report.
 
 ## Data categories for measures
 
-You can also pick data categories for measures.
+You can also select data categories for measures.
 
-Among other things, data categories allow you to use measures to dynamically create URLs, and mark the data category as a Web URL.
+Among other things, data categories provide a way for you to use measures to dynamically create URLs, and to mark each data category as a Web URL.
 
-You could create tables that display the measures as Web URLs, and be able to select on the URL that's created based on your selection. This approach is especially useful when you want to link to other Power BI reports with [URL filter parameters](../collaborate-share/service-url-filters.md).
+You can create tables that display the measures as Web URLs. Then you can select the URL that's created based on your selection. This approach is especially useful when you want to link to other Power BI reports with [URL filter parameters](../collaborate-share/service-url-filters.md).
 
-## Organizing your measures
+## Organize your measures
 
-Measures have a *Home* table that defines where they're found in the field list. You can change their location by choosing a location from the tables in your model.
+Measures have a *home table* that defines where they're found in the data list. You can change their location by choosing a location from the tables in your model.
 
-:::image type="content" source="media/desktop-measures/measures-03.png" alt-text="Screenshot showing selection of a table for the measure.":::
+:::image type="content" source="media/desktop-measures/net-sales-home-table.png" alt-text="Screenshot of Power BI Desktop that shows the formula and settings for the Net Sales measure. The expanded Home table list contains three tables.":::
 
-You can also organize fields in a table into *Display Folders*. Select **Model** from the left edge of the Power BI Desktop. In the **Properties** pane, select the field you want to move from the list of available fields. Enter a name for a new folder in **Display folder** to create a folder. Creating a folder moves the selected field into that folder.
+You can also organize fields in a table into *display folders*:
 
-:::image type="content" source="media/desktop-measures/measures-04.gif" alt-text="Animation that shows the steps to create.":::
+1. On the left edge of Power BI Desktop, select **Model view**.
+1. On the **Data** pane, select the field you want to move from the list of available fields.
+1. On the **Properties** pane, under **Display folder**, enter a name for a new folder.
 
-You can create subfolders by using a backslash character. For example, *Finance\Currencies* creates a *Finance* folder and within it, a *Currencies* folder.
+The new folder is created, and the selected field is moved into that folder.
 
-You can make a field appear in multiple folders by using a semicolon to separate the folder names. For example, *Products\Names;Departments* results in the field appearing in a *Departments* folder and a *Names* folder inside a *Products* folder.
+:::image type="content" source="media/desktop-measures/measures-04.gif" alt-text="Animation that shows a name being entered into the Display folder field, a folder being created, and a selected field being added to the new folder.":::
 
-You can create a special table that contains only measures. That table always appears at the top of the **Fields**. To do so, create a table with just one column. You can use **Enter data** to create that table. Then move your measures to that table. Finally, hide the column, but not the table, that you created. Select the arrow at the top of **Fields** to close and reopen the fields list to see your changes.
+You can create subfolders by using a backslash character. For example, if you enter **Finance\Currencies**, Power BI creates a *Finance* folder and within it, a *Currencies* folder.
 
-:::image type="content" source="media/desktop-measures/measures-05.png" alt-text="Screenshot of the changed fields list":::
+You can make a field appear in multiple folders by using a semicolon to separate the folder names. For example, if you enter **Products\Names;Departments**, the field appears in a *Departments* folder and a *Names* folder inside a *Products* folder.
+
+You can create a special table that contains only measures. That table always appears at the top of the **Data** pane. To do so, take the following steps:
+
+1. Use **Enter data** to create a table with just one column.
+1. Move your measures to that table.
+1. Hide the column of that table, but not the table itself.
+1. Select the arrow at the top of the **Data** pane to close and reopen the field list and see your changes.
+
+:::image type="content" source="media/desktop-measures/measures-table.png" alt-text="Screenshot of the Data pane in Power BI Desktop. The field at the top of the list is a table that contains three measures and no columns.":::
 
 > [!TIP]
-> Hidden measures are displayed and accessible in Power BI Desktop, however, you won't see hidden measures in Excel or the Power BI services, since Excel and the Power BI service are considered client tools.
+> Hidden measures are displayed and accessible in Power BI Desktop. However, you don't see hidden measures in Excel or the Power BI service, because Excel and the Power BI service are considered client tools.
 
 ## Dynamic format strings
 
-With *dynamic format strings*, you can customize how measures appear in visuals by conditionally applying a format string with a separate DAX expression. To learn more, see [Dynamic format strings](../create-reports/desktop-dynamic-format-strings.md).
+When you use *dynamic format strings*, you can customize how measures appear in visuals by conditionally applying a format string with a separate DAX expression. For more information, see [Dynamic format strings](../create-reports/desktop-dynamic-format-strings.md).
 
-## Related Content
+## Related content
 
-We’ve only provided you with a quick introduction to measures here. There’s a lot more to help you learn how to create your own. For more information, see [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md). You can download a sample file and get step-by-step lessons on how to create more measures.  
+This article provides you with a quick introduction to measures. Many other resources are available to show you how to create your own measures. For more information, see [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md). When you follow that tutorial, you can download a sample file and get step-by-step instructions on how to create more measures.
 
-To dive a little deeper into DAX, see [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). The [Data Analysis Expressions Reference](/dax/) provides detailed articles on each of the functions, syntax, operators, and naming conventions. DAX has been around for several years in Power Pivot in Excel and SQL Server Analysis Services. There are many other great resources available, too. Be sure to check out the [DAX Resource Center Wiki](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), where influential members of the BI community share their knowledge of DAX.
+DAX has been around for several years in Power Pivot in Excel and SQL Server Analysis Services. For more information about DAX, see the following resources:
+
+- For description, see [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
+- For detailed articles on each of the DAX functions, syntax, operators, and naming conventions, see [Data Analysis Expressions Reference](/dax/).
+- For a site where influential members of the business intelligence (BI) community share their knowledge of DAX, see [DAX Resource Center Wiki](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx).
