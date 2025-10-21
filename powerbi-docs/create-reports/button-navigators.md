@@ -166,7 +166,7 @@ To create this navigation experience, start by creating a single-column table in
 
    The **Create Table** dialog opens.
 
-1. In the **Create Table** dialog, enter the names of your pages in the column. Power BI uses an exact string match to set the drill-through destination. So ensure that the values you enter exactly match your drill-through page names.
+1. In the **Create Table** dialog, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination. So ensure that the values you enter exactly match your drillthrough page names.
 
    :::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Screenshot of the Create Table dialog that shows a table with one column. One row contains Market details. Another row contains Store details." lightbox="media/desktop-buttons/button-create-table.png":::
 
