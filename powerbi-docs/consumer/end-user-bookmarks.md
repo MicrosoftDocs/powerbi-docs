@@ -30,7 +30,7 @@ There are two types of Power BI bookmarks: *personal* and *report*. Report desig
 
 This article explains how to create and use personal bookmarks. It also explains how to interact with report bookmarks that someone else creates and shares with you. Viewing shared reports and report bookmarks requires one or both of the following prerequisites:
 
-- a Power BI Pro or a Premium Per User (PPU) license [Which license do I have?](../fundamentals/end-user-license.md)
+- a Power BI Pro or a Premium Per User (PPU) license. See [Which license do I have?](../fundamentals/end-user-license.md).
 - a report that is saved in Premium capacity and shared with you.
 
 If you're designing reports and creating report bookmarks for others to use, see [Create report bookmarks](../create-reports/desktop-bookmarks.md).
