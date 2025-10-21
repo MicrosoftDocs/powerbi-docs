@@ -57,7 +57,7 @@ When you open a report template, a dialog might appear. The dialog asks for valu
 
 After any required parameters are provided, you're prompted for the location of the underlying data associated with the report. The current report creator can then connect to data based on their credentials.
 
-:::image type="content" source="media/desktop-templates/desktop-templates-05.png" alt-text="Screenshot of a dialog for an exmaple parameter where you specify the location of the underlying report data.":::
+:::image type="content" source="media/desktop-templates/desktop-templates-05.png" alt-text="Screenshot of a dialog for an example parameter where you specify the location of the underlying report data.":::
 
 Once the parameters and data are specified, a report is created. This report contains all the pages, visuals, data model items, and queries that are in the report on which the template is based.
 
