@@ -85,7 +85,7 @@ On the **Insert** tab, select **Buttons** > **Navigator** > **Bookmark navigator
 
 Select **Edit** to edit the report. Then on the menu bar, select **Buttons** > **Navigator** > **Bookmark navigator**.
 
-:::image type="content" source="media/desktop-buttons/select-bookmark-navigator-service.png" alt-text="Screenshot of the Power BI service. On the expanded Buttons menu, Navigator is highlighted. In its shortcut menu, Bookmark navigator is highlighted." lightbox="media/desktop-buttons/select-bookmark-navigator-service.png:::
+:::image type="content" source="media/desktop-buttons/select-bookmark-navigator-service.png" alt-text="Screenshot of the Power BI service. On the expanded Buttons menu, Navigator is highlighted. In its shortcut menu, Bookmark navigator is highlighted." lightbox="media/desktop-buttons/select-bookmark-navigator-service.png":::
 
 ---
 
