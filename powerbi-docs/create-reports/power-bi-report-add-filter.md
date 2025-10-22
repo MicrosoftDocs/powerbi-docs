@@ -70,15 +70,15 @@ Visuals have two kinds of filters:
 
    :::image type="content" source="media/power-bi-report-add-filter/power-bi-default-visual-filter.png" alt-text="Screenshot of a report in edit mode. A scatter chart is selected. In the side panes, the filters on this visual and the values are highlighted." lightbox="media/power-bi-report-add-filter/power-bi-default-visual-filter.png":::
   
-1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Filters on this visual** area. In this example, we drag **Category** to **Add data fields here**.
+1. From the **Data** pane, locate the field that you want to add as a new visual-level filter. Drag that field to the **Filters** pane, into the area under **Filters on this visual** that's labeled **Add data fields here**. In this example, the **Category** field is added to that area.
 
-   :::image type="content" source="media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png" alt-text="Screenshot showing where to select a filter and where to drag it." lightbox="media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png":::
+   :::image type="content" source="media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png" alt-text="Screenshot of a report in edit mode. The Category field is highlighted in the Data pane and in the Filters pane, among other visual-level filters." lightbox="media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png":::
 
-    Notice **Category** *isn't* added to the visualization itself.
+   The **Category** field *isn't* added to the visualization itself.
 
-1. Select **Kids**. The scatter chart is filtered, but the other visuals stay the same.
+1. In the **Filter** pane, go to the filter for the **Category** field, and then select **030-Kids**. The scatter chart is updated as the filter is applied, but the other visuals stay the same.
 
-    :::image type="content" source="media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png" alt-text="Screenshot showing a scatter chart that reflects the filtered values based on the new field." lightbox="media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png":::
+    :::image type="content" source="media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png" alt-text="Screenshot of a report in edit mode. The scatter chart reflects the filtered values based on the selected field." lightbox="media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png":::
 
     If you save your report with this filter, report readers can interact with the **Category** filter in Reading view, selecting or clearing values.
 
