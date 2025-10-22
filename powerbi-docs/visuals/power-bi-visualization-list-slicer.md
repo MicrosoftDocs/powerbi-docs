@@ -1,5 +1,5 @@
 ---
-title: Use a list slicer (preview)
+title: Create and Use a List Slicer (Preview) 
 description: Learn how to create, customize, and use list slicers in Power BI Desktop. Filter data interactively with hierarchies, search, and conditional formatting. Try it now.
 author: julcsc
 ms.author: juliacawthra
@@ -9,19 +9,19 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 10/21/2025
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to learn about the list slicer (preview) feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
+#customer intent: As a Power BI user, I want to learn about the List slicer (preview)  feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
 ---
 
-# Create and use a list slicer (preview)
+# Create and use a List slicer (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-The list slicer (preview) in Power BI is an interactive visual that filters data directly within reports and dashboards. It offers a dynamic way to explore large datasets by selecting values from a vertically arranged list.
+The List slicer (preview)  in Power BI is an interactive visual that filters data directly within reports and dashboards. It offers a dynamic way to explore large datasets by selecting values from a vertically arranged list.
 
 List slicers balance simplicity and flexibility, making them ideal for both novice users and advanced report builders. You can apply hierarchies, search functionality, and conditional formatting to enhance your filtering experience.
 
 > [!IMPORTANT]
-> The list slicer (preview) is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before release. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> The List slicer (preview)  is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before release. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ## Prerequisites
 
@@ -149,10 +149,7 @@ This approach not only saves time but also reduces the likelihood of overlooking
 
 In the next section, you learn how to use this feature with a practical example to maximize its effect on your workflow.
 
-1. To paste a set of values into a list slicer, open Excel. Create a new worksheet and enter your desired list of values. For example, type "Brad Sutton" in cell A1, "Carlos Grilo" in cell A2, and "Tina Lassila" in cell A3. Your worksheet should look like:
-
-   :::image type="content" source="media/list-slicer/list-paste.png" alt-text="Screenshot of Excel worksheet with names Brad Sutton, Carlos Grilo, and Tina Lassila in cells A1 through A3.":::
-
+1. To paste a set of values into a list slicer, open Excel. Create a new worksheet and enter your desired list of values. For example, type "Brad Sutton" in cell A1, "Carlos Grilo" in cell A2, and "Tina Lassila" in cell A3.
 1. After entering the names in Excel, highlight the cells containing your list (A1 to A3) and copy them. Next, return to Power BI, select your list slicer on the report canvas, or use the slicer's ellipsis menu, and paste the copied values. Each entry with the matching names appears selected within the slicer, enabling straightforward filtering and analysis.
 
 Pasting values into the list slicer streamlines filtering by quickly selecting multiple relevant entries at once. You save time and effort during data analysis.

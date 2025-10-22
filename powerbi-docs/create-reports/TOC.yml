@@ -388,11 +388,11 @@
         href: ../visuals/power-bi-visualization-card-visual-new-format-settings.md
       - name: (new) Card visual considerations and limitations
         href: ../visuals/power-bi-visualization-card-visual-considerations.md
-    - name: Use a button slicer
+    - name: Button slicer
       href: ../visuals/power-bi-visualization-button-slicer.md
-    - name: Use a list slicer (preview)
+    - name: List slicer (preview)
       href: ../visuals/power-bi-visualization-list-slicer.md
-    - name: Use a text slicer (preview)
+    - name: Text slicer (preview)
       href: ../visuals/power-bi-visualization-text-slicer.md
     - name: Column charts
       items: 
