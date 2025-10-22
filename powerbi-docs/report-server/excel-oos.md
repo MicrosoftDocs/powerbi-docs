@@ -12,6 +12,9 @@ ms.date: 10/19/2021
 
 # Configure your report server to host Excel workbooks using Office Online Server (OOS)
 
+> [!WARNING]
+> Office Online Server is scheduled to be [retired on December 31, 2026](). As a result, Report Server will no longer support hosting Excel workbooks with Office Online Server after this date. Customers who rely on this feature should consider switching to the Excel desktop application or migrating to the Power BI service to continue accessing their workbooks.
+
 In addition to viewing Power BI reports in the web portal, Power BI Report Server can host Excel workbooks by using [Office Online Server](/officeonlineserver/office-online-server-overview) (OOS). Your report server becomes a single location to publish and view self-service Microsoft BI content.
 
 ![Excel reports viewed from the report server web portal](media/excel-oos/excel-in-pbirs.png)
