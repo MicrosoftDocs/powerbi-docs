@@ -33,6 +33,7 @@ In the following guide, you use the [Retail Analysis Sample PBIX file](https://d
 1. Launch **Power BI Desktop**.
 1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.
 1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view.
+1. Select the **+** icon at the bottom of the window to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -40,10 +41,9 @@ In the following guide, you use the [Retail Analysis Sample PBIX file](https://d
 1. From the left-side navigation pane, select **Learn**.
 1. On the **Learning center** page, under **Sample reports**, locate and select **Retail Analysis Sample**. It opens in Reading mode and adds the dashboard, report, and semantic model to your workspace.
 1. At the top of the report, select **Edit** to switch to the Report editor (Edit mode).
+1. Select the **+** icon at the bottom of the window to add a new page to the report.
 
 ---
-
-1. Select the **+** icon at the bottom of the window to add a new page to the report.
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you *both* have an individual **Power BI Pro license** or that you save the report in **Premium capacity**.
