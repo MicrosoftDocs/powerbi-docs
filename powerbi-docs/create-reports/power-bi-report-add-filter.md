@@ -16,53 +16,59 @@ LocalizationGroup: Reports
 
 This article explains how to add a visualization filter, page filter, or report filter to a report in Power BI. You need to be able to edit a report to add filters. The examples in this article are in the Power BI service, and the steps are almost identical in Power BI Desktop.
 
-:::image type="content" source="media/power-bi-report-add-filter/power-bi-filter-reading.png" alt-text="Screenshot of a report example in Power BI, showing where to find the Filter options." lightbox="media/power-bi-report-add-filter/power-bi-filter-reading.png":::
+:::image type="content" source="media/power-bi-report-add-filter/power-bi-filter-reading.png" alt-text="Screenshot of a Power BI service report, with the Filters pane highlighted to the side of the canvas. Filters are listed for a visual and the page." lightbox="media/power-bi-report-add-filter/power-bi-filter-reading.png":::
 
 ## Other articles about filters in Power BI
 
-- Looking for an overview? Check out [Filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md) first.
-- Power BI offers many different kinds of filters, from the manual and automatic to the drillthrough and pass-through. Read about the [different kinds of filters](power-bi-report-filter-types.md).
-- After you add filters, you can [format the filters in your Power BI reports](power-bi-report-filter.md) to look and act the way you want.
-- You interact with reports in two different views: Reading view and Editing view. This article describes how to create filters in report **Editing view**. Read about [interacting with filters in report Reading view](../consumer/end-user-report-filter.md).
+- For an overview of filters, see [Filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md).
+- For information about the various kinds of filters that Power BI offers, from the manual and automatic to the drillthrough and pass-through, see [different kinds of filters](power-bi-report-filter-types.md).
+- To see how to make filters look and act the way you want, see [format the filters in your Power BI reports](power-bi-report-filter.md).
+- To find out how to interact with filters in report Reading view, see [Take a tour of the report Filters pane](../consumer/end-user-report-filter.md). You interact with reports in two different views: Reading view and Editing view. This article describes how to create filters in report Editing view.
 
 ## Levels of filters in the Filters pane
 
-Whether you're using Power BI Desktop or Power BI service, the Filters pane displays along the right side of the report canvas. If you don't see the Filters pane, select the ">" icon from the upper-right corner to expand it.
+Whether you use Power BI Desktop or the Power BI service, the **Filters** pane appears along the right side of the report canvas. If you don't see the **Filters** pane, go to the upper-right corner and select the ">>" icon to expand the pane.
 
-You can set filters at three different levels for the report:
+You can set filters at three levels for the report:
 
-- The [visual level](#add-a-filter-to-a-visual).
-- The [page level](#add-a-filter-to-an-entire-page).
-- The [report level](#add-a-report-level-filter-for-an-entire-report).
+- The [visual level](#add-a-filter-to-a-visual)
+- The [page level](#add-a-filter-to-an-entire-page)
+- The [report level](#add-a-report-level-filter-for-an-entire-report)
 
-This article explains how to set the different levels.
+This article explains how to set filters at these levels.
+
+The examples in this article use the Retail Analysis sample. If you'd like to install this sample and follow along, see [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service).
 
 ## Add a filter to a visual
 
-Visuals have two different kinds of filters. The fields that are in a visual are automatically filters for that visual. As the report designer, you can identify a field that isn't already the visual, and add that field directly to the **Visual level filters** bucket.
+Visuals have two kinds of filters:
 
-By the way, this article uses the Retail Analysis sample, if you'd like to install it and follow along. Install the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service).
+- The fields that are in a visual are automatically filters for that visual.
+- You can also filter on fields that aren't displayed in the visual. As the report designer, you can identify a field that isn't already the visual. Then you can add that field directly to the **Visual level filters** bucket.
 
 ### Filter with a field that's not in the visual
 
 # [Power BI Desktop](#tab/powerbi-desktop)
+
 1. In Power BI Desktop, select the Report icon.
 
    :::image type="content" source="media/power-bi-report-add-filter/power-bi-report-view.png" alt-text="Screenshot showing where to find the Report view icon in Power BI Desktop.":::
 
 # [Power BI service](#tab/powerbi-service)
+
 1. In the Power BI service, select **Edit** to open your report in Editing view.
 
-   :::image type="content" source="media/power-bi-report-add-filter/power-bi-edit-view.png" alt-text="Screenshot showing where to find the edit report option on the ribbon.":::
+   :::image type="content" source="media/power-bi-report-add-filter/power-bi-edit-view.png" alt-text="Screenshot of the Power BI service menu bar. On the end, the Edit menu title and pencil icon are highlighted.":::
+
 ---
 
-2. Open the Visualizations, Filters, and Fields panes, if they're not already open.
+1. Open the **Filters**, **Visualizations**, and **Data** panes, if they're not already open.
 
-   :::image type="content" source="media/power-bi-report-add-filter/power-bi-display-panes.png" alt-text="Screenshot showing the Visualizations, Filters, and Fields panes." lightbox="media/power-bi-report-add-filter/power-bi-display-panes.png":::
+   :::image type="content" source="media/power-bi-report-add-filter/power-bi-display-panes.png" alt-text="Screenshot of a Power BI service report in edit mode. The Filters, Visualizations, and Data panes are next to the canvas and are highlighted." lightbox="media/power-bi-report-add-filter/power-bi-display-panes.png":::
 
-3. To make a visual active, select it. In this case, it's the scatter chart on the Overview page. All the fields in the visual are in the **Visualizations** pane. They're also listed in the **Filters** pane, under the **Filters on this visual** heading.
+1. To make a visual active, select it. In the following image, the scatter chart on the **Overview** page is selected. The **Visualizations** pane lists all the fields in the visual. The **Filters** pane also lists the fields, under the **Filters on this visual** heading.
 
-   :::image type="content" source="media/power-bi-report-add-filter/power-bi-default-visual-filter.png" alt-text="Screenshot showing where to select visual-level filters." lightbox="media/power-bi-report-add-filter/power-bi-default-visual-filter.png":::
+   :::image type="content" source="media/power-bi-report-add-filter/power-bi-default-visual-filter.png" alt-text="Screenshot of a report in edit mode. A scatter chart is selected. In the side panes, the filters on this visual and the values are highlighted." lightbox="media/power-bi-report-add-filter/power-bi-default-visual-filter.png":::
   
 1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Filters on this visual** area. In this example, we drag **Category** to **Add data fields here**.
 
