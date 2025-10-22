@@ -171,6 +171,11 @@ The following general implications apply when using DirectQuery in Power BI:
 - One million row intermediate result limit. Any query (or intermediate operation) that returns more than 1,000,000 rows fails. Premium capacities can raise this limit—see [Max Intermediate Row Set Count](../enterprise/service-admin-premium-workloads.md#max-intermediate-row-set-count).
 - Changing storage mode is constrained. You can't globally switch an Import-only model to DirectQuery. See the next section.
 
+> [!IMPORTANT]
+> Because the engine that stores and queries data in Power BI is case insensitive, take special care when you work in DirectQuery mode with a case-sensitive source. Power BI assumes that the source has eliminated duplicate rows. Because Power BI is case insensitive, it treats two values that differ only by case as duplicate, whereas the source might not treat them as such. In such cases, the final result is undefined.
+>
+> To avoid this situation, if you use DirectQuery mode with a case-sensitive data source, normalize casing in the source query or in Power Query Editor.
+
 ### Changing storage modes (Import ↔ DirectQuery)
 
 You can't toggle an entire Import model to DirectQuery. Instead:
@@ -195,11 +200,6 @@ Unless SSO is configured, DirectQuery uses configured stored credentials for all
 
 Power Query folding is required for scalable performance. Transformations must condense into a single native query. Complex steps (nonfoldable operations, certain custom functions, multistep procedural logic) can cause errors that require simplification or switching to Import. OLAP sources like SAP BW disallow in-query transformations because the entire external model is exposed. Stored procedure calls and common table expressions (CTEs) aren't supported in a way that allows folding in DirectQuery.
 
-> [!IMPORTANT]
-> Because the engine that stores and queries data in Power BI is case insensitive, take special care when you work in DirectQuery mode with a case-sensitive source. Power BI assumes that the source has eliminated duplicate rows. Because Power BI is case insensitive, it treats two values that differ only by case as duplicate, whereas the source might not treat them as such. In such cases, the final result is undefined.
->
-> To avoid this situation, if you use DirectQuery mode with a case-sensitive data source, normalize casing in the source query or in Power Query Editor.
-
 ### Modeling limitations
 
 Most enrichment works, but some capabilities are reduced:
@@ -209,11 +209,6 @@ Most enrichment works, but some capabilities are reduced:
 - Calculated columns limited to row-level expressions that fold; unsupported functions omitted from autocomplete.
 - No parent-child PATH functions.
 - Clustering not supported.
-
-> [!IMPORTANT]
-> Because the engine that stores and queries data in Power BI is case insensitive, take special care when you work in DirectQuery mode with a case-sensitive source. Power BI assumes that the source has eliminated duplicate rows. Because Power BI is case insensitive, it treats two values that differ only by case as duplicate, whereas the source might not treat them as such. In such cases, the final result is undefined.
->
-> To avoid this situation, if you use DirectQuery mode with a case-sensitive data source, normalize casing in the source query or in Power Query Editor.
 
 ### Reporting limitations
 
