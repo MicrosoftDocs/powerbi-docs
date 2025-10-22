@@ -192,3 +192,8 @@ This section provides a list of known considerations and limitations, designed t
   - If a user applies another filter that hides the currently selected button, the slicer might look unselected. However, the previously selected (but now hidden) value continues to affect other visuals. Selected items are never cleared, even if they're temporarily removed from the current data due to filtering.
   - Currently, the slicer doesn't automatically select the first visible option when the forced selection is ON and the selected button is filtered out. Instead, the hidden selection remains active until the user chooses another visible option.
 
+## Related content
+
+- [Text slicer](power-bi-visualization-text-slicer.md)
+- [Button slicer](power-bi-visualization-button-slicer.md)
+- [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

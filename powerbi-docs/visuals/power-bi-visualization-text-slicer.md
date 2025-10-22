@@ -53,8 +53,6 @@ In this quick and easy three-step guide, you create a **text slicer** in Power *
 
    :::image type="content" source="media/text-slicer/text-slicer-displayed.png" lightbox="media/text-slicer/text-slicer-displayed.png" alt-text="Screenshot of the Format visual pane in Power BI Desktop showing customization options for the text slicer.":::
 
-Next, take time to familiarize yourself with the [Considerations and limitations](power-bi-visualization-text-slicer-considerations-limitations.md) for text slicers.
-
 ## Considerations and limitations
 
 This section provides a list of known considerations and limitations. It helps you navigate the nuances of the Text slicer (preview) in Power BI Desktop.
@@ -83,5 +81,6 @@ This section provides a list of known considerations and limitations. It helps y
 
 ## Related content
 
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [List slicer](power-bi-visualization-list-slicer.md)
+- [Button slicer](power-bi-visualization-button-slicer.md)
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

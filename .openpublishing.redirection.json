@@ -6914,6 +6914,26 @@
       "source_path": "powerbi-docs/visuals/power-bi-visualization-text-slicer-considerations-limitations.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualization-text-slicer",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/button-slicer-visual-highlights.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-button-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/button-slicer-conditional-formatting.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-button-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/button-slicer-paste-values.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-button-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-button-slicer-considerations-limitations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-button-slicer",
+      "redirect_document_id": false
     }
   ]
 }                           
