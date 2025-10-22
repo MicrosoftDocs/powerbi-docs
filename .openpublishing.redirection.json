@@ -6904,6 +6904,11 @@
       "source_path": "powerbi-docs/fundamentals/desktop-latest-update.md",
       "redirect_url": "/power-bi/fundamentals/whats-new",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-list-slicer-considerations-limitations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-list-slicer",
+      "redirect_document_id": false
     }
   ]
 }
