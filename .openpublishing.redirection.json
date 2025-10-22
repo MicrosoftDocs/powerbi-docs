@@ -6904,6 +6904,11 @@
       "source_path": "powerbi-docs/fundamentals/desktop-latest-update.md",
       "redirect_url": "/power-bi/fundamentals/whats-new",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-doughnut-charts.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-pie-donut-chart",
+      "redirect_document_id": true
     }
   ]
 }
