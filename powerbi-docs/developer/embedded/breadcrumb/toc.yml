@@ -27,5 +27,5 @@
           tocHref: /power-bi/collaborate-share/
           topicHref: /power-bi/developer/embedded/index
         - name: Embedded analytics
-          tocHref: /power-bi/enterprise/
+          tocHref: /fabric/enterprise/powerbi/
           topicHref: /power-bi/developer/embedded/index
