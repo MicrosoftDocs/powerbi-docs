@@ -402,12 +402,8 @@
         href: ../visuals/power-bi-visualization-button-slicer-considerations-limitations.md
     - name: Use a list slicer (preview)
       href: ../visuals/power-bi-visualization-list-slicer.md
-    - name: Text slicer
-      items: 
-      - name: Create a text slicer (preview)
-        href: ../visuals/power-bi-visualization-text-slicer.md
-      - name: Text slicer considerations and limitations
-        href: ../visuals/power-bi-visualization-text-slicer-considerations-limitations.md                                
+    - name: Use a text slicer (preview)
+      href: ../visuals/power-bi-visualization-text-slicer.md
     - name: Column charts
       items: 
       - name: Create a column chart visual

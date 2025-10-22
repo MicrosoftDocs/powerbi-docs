@@ -72,7 +72,7 @@ In the following steps, you learn how to build and apply a hierarchical slicer i
 1. With the hierarchy now visible in your list slicer, right-click on either of the hierarchy groups and choose **Expand \> All** from the context menu. This action fully unfolds the hierarchy, displaying every available **Chain** along with the corresponding **District Managers** nested beneath each one.
 1. By expanding all levels at once, you can immediately grasp the full organizational structure without needing to select each item individually. This action not only improves visibility but also streamlines analysis by presenting grouped relationships in a clear, accessible format.
 
-   :::image type="content" source="media/list-slicer/image3.png" lightbox="media/list-slicer/image3.png" alt-text="Screenshot of list slicer with fully expanded hierarchy showing Chains and District Managers.":::
+   :::image type="content" source="media/list-slicer/list-hierarchy.png" alt-text="Screenshot of list slicer with fully expanded hierarchy showing Chains and District Managers." lightbox="media/list-slicer/list-hierarchy.png":::
 
 By following these steps, you enhance your Power BI report with an interactive hierarchical slicer that makes data exploration more intuitive, structured, and insightful.
 
@@ -88,7 +88,7 @@ Before proceeding, ensure your list slicer is configured with a hierarchy, as ou
 
 1. To limit selection to only the lowest-level items (leaf nodes), go to the **Visualizations** pane. With the slicer still selected, find the **Slicer settings** under the **Visual** tab, and toggle **Restrict to leaf nodes** to **On**.
 
-   :::image type="content" source="media/list-slicer/ListLeaf-02.png" alt-text="Screenshot of Visualizations pane with Slicer settings and Restrict to leaf nodes toggle turned on.":::
+   :::image type="content" source="media/list-slicer/list-leaf.png" alt-text="Screenshot of Visualizations pane with Slicer settings and Restrict to leaf nodes toggle turned on.":::
 
    When you turn on this setting, all previously *selected* items are now *unselected*. This behavior is expected, as the slicer now prohibits selection of parent-level items like *Fashions Direct*.
 
@@ -108,7 +108,7 @@ In the following section, you learn how to search and filter your list slicer by
 
 1. Select the **search bar** and start typing a name or keyword. For example, entering the letter **C** instantly filters the slicer to show only District Managers whose names begin with or contain the letter **C**. In this example, the search feature makes it much easier to locate specific District Managers, like *Carlos Grilo*, *Chris Gray*, and *Chris McGurk*, in the dataset.
 
-   :::image type="content" source="media/list-slicer/ListSearch-02.png" alt-text="Screenshot of list slicer search bar with letter C entered, filtering results to show District Managers with names containing C.":::
+   :::image type="content" source="media/list-slicer/list-search.png" alt-text="Screenshot of list slicer search bar with letter C entered, filtering results to show District Managers with names containing C.":::
 
 The search feature in list slicers helps you quickly find and select specific entries, making navigation smoother and more efficient—especially when working with long or hierarchical lists.
 
@@ -124,7 +124,7 @@ In the following section, you learn how to quickly clear multiple selections in 
 
 1. To clear all selections at once, select the **eraser icon** located next to the **ellipsis menu (...)** in the top-right corner of the slicer. Instantly, all selected items are deselected, and the slicer returns to its default state.
 
-   :::image type="content" source="media/list-slicer/ListEraser-03.png" alt-text="Screenshot of list slicer with eraser icon highlighted and all selections cleared.":::
+   :::image type="content" source="media/list-slicer/list-eraser.png" alt-text="Screenshot of list slicer with eraser icon highlighted and all selections cleared.":::
 
 The eraser icon in Power BI's list slicer offers a quick and user-friendly way to reset selections. It makes it easier to explore data without manually clearing filters, particularly when working with multiple or hierarchical values.
 
@@ -146,7 +146,7 @@ In the following section, you learn how to apply conditional formatting to the l
 
 1. The district managers associated with a negative sales status are now displayed in red, while those with a positive status appear in blue. This color coding makes it easier and quicker for users to identify key information.
 
-   :::image type="content" source="media/list-slicer/ListFx-03.png" alt-text="Screenshot of list slicer with District Managers color-coded red for negative sales and blue for positive sales.":::
+   :::image type="content" source="media/list-slicer/list-formatting.png" alt-text="Screenshot of list slicer with District Managers color-coded red for negative sales and blue for positive sales.":::
 
 Conditional formatting in list slicers helps you visually emphasize important data points, making your reports more intuitive and impactful. It's a simple way to guide users toward meaningful selections and improve overall report clarity.
 
@@ -162,7 +162,7 @@ In the next section, you learn how to use this feature with a practical example 
 
 1. To paste a set of values into a list slicer, open Excel. Create a new worksheet and enter your desired list of values. For example, type "Brad Sutton" in cell A1, "Carlos Grilo" in cell A2, and "Tina Lassila" in cell A3. Your worksheet should look like:
 
-   :::image type="content" source="media/list-slicer/ListPaste-01.png" alt-text="Screenshot of Excel worksheet with names Brad Sutton, Carlos Grilo, and Tina Lassila in cells A1 through A3.":::
+   :::image type="content" source="media/list-slicer/list-paste.png" alt-text="Screenshot of Excel worksheet with names Brad Sutton, Carlos Grilo, and Tina Lassila in cells A1 through A3.":::
 
 1. After entering the names in Excel, highlight the cells containing your list (A1 to A3) and copy them. Next, return to Power BI, select your list slicer on the report canvas, or use the slicer's ellipsis menu, and paste the copied values. Each entry with the matching names appears selected within the slicer, enabling straightforward filtering and analysis.
 

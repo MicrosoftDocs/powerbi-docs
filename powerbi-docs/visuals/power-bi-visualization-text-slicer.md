@@ -65,6 +65,41 @@ Great job! Congratulations on successfully creating a text slicer with Power BI.
 
 Next, take time familiarize yourself with the [Considerations and limitations](power-bi-visualization-text-slicer-considerations-limitations.md) for text slicers. 
 
+## Considerations and limitations
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
+This article provides a list of known considerations and limitations, designed to help you navigate the nuances of the text slicer (preview) in Power BI Desktop.
+
+> [!IMPORTANT]
+> The text slicer (preview) is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before it is released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+
+### Preview feature
+
+Because the text slicer is a preview feature in Power BI Desktop, the following considerations and limitations apply.
+
+### Power BI service
+
+Users can't see the text slicer (preview) in the **Power BI service** because it's currently a preview feature exclusive to **Power BI Desktop**.
+
+The text slicer (preview) is in the preview phase and is only available within the Power BI Desktop environment. This limitation is a common practice for features that are still under development, allowing users to test and provide feedback before a broader release. Although the text slicer (preview) isn't directly available in the Power BI service, any text slicer (preview) created in Power BI Desktop can be published, making them visible in the Power BI service. This capability allows users to take advantage of the new features while ensuring compatibility and stability within the Service environment.
+
+### Format settings
+
+When you're formatting a text slicer (preview), you might notice that some of the format settings are in a different location, or the name of the setting is changed. Often, new settings or controls are added from one product update to the next. Such changes are expected, as preview features are continuously under development. They're subject to modifications that enhance functionality and user experience. It's the responsibility of report creators to stay informed about these changes when using preview features. Keeping abreast of product updates ensure the effective use of these features in your reports.
+
+### Accessibility
+
+During the preview phase, certain Accessibility features such as keyboard navigation and screen-reader support might not be fully operational. However, we're committed to ensuring that all functionalities comply with Accessibility standards upon the conclusion of the preview period.
+
+### Filter logic and operators
+
+The Text slicer uses contains as its default filter logic and applies an or operator when multiple values are entered. This means that any record containing one or more of the input strings will be returned. 
+
+### Text slicer as input control 
+
+The text slicer can be configured as a pure input control by a meeting the ‘Field’ assignment in the build pane. This disables its filtering capability and transforms it into a parameter input mechanism. This setup is essential for Translytical Task Flows, especially when passing parameters that are not tied to a specific data field, such as comments, annotations, or external triggers. When used this way, the slicer activates the User Data Function through a button, provided the parameter is marked as required. This enables workflows like writebacks, approvals, or notifications, without relying on dataset-bound filtering. 
+
 ## Related content
 
 - [text slicer considerations and limitations](power-bi-visualization-text-slicer-considerations-limitations.md)
