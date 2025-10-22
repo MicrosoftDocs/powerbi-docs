@@ -81,22 +81,22 @@ To enable drill functionality, prepare the pie chart with a hierarchy.
    :::image type="content" source="media/pie-donut-chart/pie-donut-drill-icons.png" alt-text="Screenshot of Power BI showing the pie chart with four drill icons displayed.":::
 
 1. To begin, activate the **Drill down** mode by selecting the **downward arrow icon** labeled **Click to turn on drill down**. Once selected, a message appears indicating **Drill mode is on: Click a data point to drill**. This mode allows you to select individual slices in the visual to drill into more detailed data.
-1. Drilling down into a data point is done by simply clicking on a slice. Once selected, the chart updates to show the next level in the hierarchy for that specific data point. For example, clicking on **Lindseys** reveals its district managers.
+1. Drilling down into a data point is done by selecting a slice. Once selected, the chart updates to show the next level in the hierarchy for that specific data point. For example, selecting **Lindseys** reveals its district managers.
 1. Before the next step, select the **upward arrow icon** to drill back up to the next higher level in the hierarchy. Now, use **Go to the next level in the hierarchy** by selecting the **double downward arrow icon** to expand all data points to the next level in the hierarchy. This action shows the next level (for example, all district managers) without needing to select each slice individually.
 1. Finally, select the **upward arrow icon** again to drill back up to the next higher level in the hierarchy. Now, to use **Expand all down one level in the hierarchy**, select the fourth icon to expand next lower-level data grouped under each top-level category. This view maintains grouping while showing the next level of detail.
 
-Unlock deeper insights with drill functionality in Power BI's pie charts. By moving between summary and detailed views, drill actions turn static visuals into interactive tools that reveal trends, highlight anomalies, and support smarter decisions. Whether you're analyzing sales share or operational metrics, mastering drill features in pie charts gives you the flexibility to explore your data with clarity and precision.
+Unlock deeper insights with drill functionality in Power BI's pie charts. By moving between summary and detailed views, drill actions turn static visuals into interactive tools that reveal trends, highlight anomalies, and support smarter decisions. Whether you're analyzing sales share or operational metrics, using drill features in pie charts gives you the flexibility to explore your data with clarity and precision.
 
 ## Use cross-filter and cross-highlight
 
-Power BI makes pie charts interactive through cross-filtering and cross-highlighting. These features let you click a slice in a pie chart and instantly see its impact on other visuals on the report page. This interaction helps reveal relationships, trends, and outliers across your data.
+Power BI makes pie charts interactive through cross-filtering and cross-highlighting. These features let you select a slice in a pie chart and instantly see its effect on other visuals on the report page. This interaction helps reveal relationships, trends, and outliers across your data.
 
 - **Cross-filtering** temporarily filters connected visuals to show only related data, making it easier to focus without applying permanent filters.
-- **Cross-highlighting** emphasizes related data by dimming non-matching values, so you can compare contributions while keeping full context visible.
+- **Cross-highlighting** emphasizes related data by dimming nonmatching values, so you can compare contributions while keeping full context visible.
 
 These tools turn static pie charts into dynamic exploration visuals, helping you uncover insights quickly and intuitively. In this section, you learn how to enable and use cross-filter and cross-highlight features in Power BI.
 
-Using a pie chart and a column chart as examples, this guide walks you through how visuals respond to user selections and how to configure interaction settings to control this behaviour. You can also use these exact same steps with a **Donut chart**.
+Using a pie chart and a column chart as examples, this guide walks you through how visuals respond to user selections and how to configure interaction settings to control this behavior. You can also use these exact same steps with a **Donut chart**.
 
 To use and understand the difference between cross-filter and cross-highlight features, you use the pie chart visual to trigger interactions with other visuals. Let's prepare for this step-by-step guide, enable interactions, and learn how everything works.
 
@@ -124,7 +124,7 @@ To use and understand the difference between cross-filter and cross-highlight fe
 
 1. Once again, with the column chart visual selected, demonstrate the **Cross-highlight** feature by selecting the **Highlight** icon on the pie chart visual to ensure it highlights the data related to the selected column in the column chart.
 
-   Then, select a column in the column chart to immediately highlight the data in the pie chart to show the data related to the selected column, while the pie chart remains visible but is dimmed similar the unselected columns that remains visible but is also dimmed.
+   Then, select a column in the column chart to immediately highlight the data in the pie chart to show the data related to the selected column, while the pie chart remains visible but is dimmed similar the unselected columns that remain visible but are also dimmed.
 
 By enabling cross-filtering and cross-highlighting, you turn a static report into a dynamic, interactive experience with exploration tools. These features help you make connections across visuals, compare data points, and dive deeper into the story behind the numbers, all without leaving the page or applying permanent filters. Users can uncover patterns, compare performance, and make data-driven decisions with clarity.
 
@@ -132,7 +132,7 @@ By enabling cross-filtering and cross-highlighting, you turn a static report int
 
 As a Power BI user, being aware of any pie and donut chart considerations and limitations helps you create effective and visually appealing data visualizations.
 
-Understanding the considerations and limitations allows you to make informed decisions and leverage the full potential of Power BI column charts. Whether you're a novice or an experienced user, this section aims to enhance your chart-building experience by keeping you up to date with practical insights and tips for any known issues.
+Understanding the considerations and limitations allows you to make informed decisions and use the full potential of Power BI column charts. Whether you're a novice or an experienced user, this section aims to enhance your chart-building experience by keeping you up to date with practical insights and tips for any known issues.
 
 This section provides an updated list of known pie and donut chart considerations and limitations. It helps you navigate the nuances of pie and donut charts in both Power BI Desktop and the Power BI service.
 

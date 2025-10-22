@@ -134,11 +134,11 @@ A correlation tells us how the behavior of things is related. If their patterns 
 
 ### Cross-filter
 
-Applies to visual interactions. Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the doughnut chart cross-filters the line chart. The line chart now displays only data points that apply to the Moderation segment.
+Applies to visual interactions. Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the donut chart cross-filters the line chart. The line chart now displays only data points that apply to the Moderation segment.
 
 ### Cross-highlight
 
-Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that doesn't apply to your selection. For example, selecting **Moderation** in the doughnut chart cross-highlights the column chart. The column chart dims all the data that doesn't apply to the Moderation segment, and highlights all the data that does apply to the Moderation segment.
+Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that doesn't apply to your selection. For example, selecting **Moderation** in the donut chart cross-highlights the column chart. The column chart dims all the data that doesn't apply to the Moderation segment, and highlights all the data that does apply to the Moderation segment.
 
 ### Custom visual
 
@@ -575,7 +575,7 @@ Numerical data to be visualized.
 
 ### Visual, visualization
 
-A chart. Some visuals are: bar chart, treemap, doughnut chart, map.
+A chart. Some visuals are: bar chart, treemap, donut chart, map.
 
 ### Visual interaction
 
