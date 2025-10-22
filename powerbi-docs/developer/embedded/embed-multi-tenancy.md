@@ -205,7 +205,7 @@ Before setting up a profile-based multitenant solution, you should be aware of t
 
 ### Scalability
 
-By separating the data into separate semantic models for each customer, you minimize the need for [large semantic models](/power-bi/enterprise/service-premium-large-models). When the capacity gets overloaded, it can evict unused semantic models to free memory for active semantic models. This optimization is impossible for a [single large semantic model](#row-level-security). By using multiple semantic models, you can also separate tenants into multiple Power BI capacities if necessary.
+By separating the data into separate semantic models for each customer, you minimize the need for [large semantic models](/fabric/enterprise/powerbi/service-premium-large-models). When the capacity gets overloaded, it can evict unused semantic models to free memory for active semantic models. This optimization is impossible for a [single large semantic model](#row-level-security). By using multiple semantic models, you can also separate tenants into multiple Power BI capacities if necessary.
 
 Without profiles, a service principal is limited to 1,000 [workspaces](pbi-glossary.md#workspace). To overcome this limit, a service principal can create multiple profiles, where each profile can access/create up to 1,000 workspaces. With multiple profiles, the ISV app can isolate each customer's content using distinct logical containers.
 
@@ -260,9 +260,9 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ### Power BI capacity limitations
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended semantic model size for each SKU, reference [Premium large semantic models](/power-bi/enterprise/service-premium-what-is#large-datasets).
-* To use a semantic model larger than 10 GB, use a Premium capacity and enable the [Large semantic models](/power-bi/enterprise/service-premium-large-models) setting.
-* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/fabric/enterprise/power-bi/service-premium-what-is). For the recommended semantic model size for each SKU, reference [Premium large semantic models](/fabric/enterprise/power-bi/service-premium-what-is#large-datasets).
+* To use a semantic model larger than 10 GB, use a Premium capacity and enable the [Large semantic models](/fabric/enterprise/power-bi/service-premium-large-models) setting.
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/fabric/enterprise/power-bi/service-premium-what-is#capacity-nodes).
 
 ### Manage service principals
 

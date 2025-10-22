@@ -3326,7 +3326,7 @@ The following updates are new to Power BI Desktop this month:
 * Error bars (preview) [[video]](https://youtu.be/6BpiFBCCS5A?t=64)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245362) 
 * Dynamic format strings now supported for all chart elements  [[video]](https://youtu.be/6BpiFBCCS5A?t=640)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245363)  
 * Updates to the Azure Maps visual (preview) [[video]](https://youtu.be/6BpiFBCCS5A?t=690)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245364)  [[Geocoding article]](/azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context) [[Pie chart article]](/azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context/power-bi/fundamentals/desktop-format-pane)
-* Sensitivity labels update  [[video]](https://youtu.be/6BpiFBCCS5A?t=987)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245365)   [[article]](/power-bi/enterprise/service-security-sensitivity-label-overview) 
+* Sensitivity labels update  [[video]](https://youtu.be/6BpiFBCCS5A?t=987)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245365)   [[article]](/fabric/enterprise/power-bi/service-security-sensitivity-label-overview) 
 * Multi-row card selection  [[video]](https://youtu.be/6BpiFBCCS5A?t=1003)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245366)
 
 ### Data connectivity and preparation

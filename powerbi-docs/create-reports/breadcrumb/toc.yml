@@ -40,5 +40,5 @@ items:
         tocHref: /power-bi/guidance/
         topicHref: /power-bi/create-reports/index
       - name: Create reports and dashboards
-        tocHref: /power-bi/enterprise/
+        tocHref: /fabric/enterprise/power-bi/
         topicHref: /power-bi/create-reports/index
