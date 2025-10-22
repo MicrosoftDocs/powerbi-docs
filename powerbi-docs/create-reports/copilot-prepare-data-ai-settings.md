@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 10/22/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -16,15 +16,27 @@ ms.collection: ce-skilling-ai-copilot
 
 # Prepare your data for AI: Settings
 
-TODO: list/table of all the settings and what they do. 
+This article explains the Prepare Data for AI **Settings** page, which controls how Power BI Copilot interacts with your data, including indexing behavior and known limitations.
+
+> [!NOTE]
+> You can now *author* **Prep data for AI** features in both the Power BI service and Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
+
+|Setting | Description | Default behavior | Editable |
+|---|---|---|---|
+|Copilot indexing | Indexes model metadata and column values so Copilot can answer data questions faster and more accurately | Enabled automatically after migrating to the new Copilot file format | Yes |
 
 ## Copilot indexing
 
-TODO: Explain what the setting does and particularities around DQ data sources.
+Copilot indexing enables Copilot to answer data questions faster and more accurately by indexing model metadata and column values.
+
+> [!NOTE]
+> For Power BI Desktop, there's an additional Local Desktop Indexing setting. This allows Desktop to locally index external data sources (DirectQuery, Live connection) for Copilot. It can be edited per machine through the Prep Data for AI settings dialog.
+
+:::image type="content" source="media/copilot-prep-data/copilot-prep-data-ai-settings.png" alt-text="Screenshot of the Prepare Data for AI settings page in Power BI Copilot.":::
 
 ## Considerations and limitations
 
-TODO
+- The Local Desktop Indexing setting applies only to DirectQuery and Live connection.
 
 ## Related content
 
