@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Create and use a list slicer (preview)
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 The list slicer (preview) in Power BI is an interactive visual that filters data directly within reports and dashboards. It offers a dynamic way to explore large datasets by selecting values from a vertically arranged list.
 
@@ -27,23 +27,12 @@ List slicers balance simplicity and flexibility, making them ideal for both novi
 
 In the following guide, use the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
-# [Power BI Desktop](#tab/powerbi-desktop)
-
 > [!IMPORTANT]
 > Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
 
 1. Launch **Power BI Desktop**.
 1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.
 1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view.
-
-# [Power BI service](#tab/powerbi-service)
-
-1. Sign in to the Power BI service (`app.powerbi.com`).
-1. From the left-side navigation pane, select **Learn**.
-1. On the **Learning center** page, under **Sample reports**, locate and select **Retail Analysis Sample**. It opens in Reading mode and adds the dashboard, report, and semantic model to your workspace.
-1. At the top of the report, select **Edit** to switch to the Report editor (Edit mode).
-
----
 
 > [!NOTE]
 > To share your report with a Power BI colleague, both of you need individual Power BI Pro licenses, or you need to save the report in Premium capacity.
@@ -178,9 +167,9 @@ This section provides a list of known considerations and limitations, designed t
 > Because the List slicer is a preview feature in Power BI Desktop, the following considerations and limitations apply.
 
 - **Power BI service**:
-  - Users can't see the Button slicer (preview) in the **Power BI service** because it's currently a preview feature exclusive to **Power BI Desktop**.
-  - The Button slicer (preview) is in the preview phase and is only available within the Power BI Desktop environment. This limitation is a common practice for features that are still under development, allowing users to test and provide feedback before a broader release.
-  - Although the Button slicer (preview) isn't directly available in the Power BI service, you can publish any Button slicer (preview) you create in Power BI Desktop, making it visible in the Power BI service. This capability allows you to take advantage of the new features while ensuring compatibility and stability within the Service environment.
+  - Users can't see the List slicer (preview) in the **Power BI service** because it's currently a preview feature exclusive to **Power BI Desktop**.
+  - The List slicer (preview) is in the preview phase and is only available within the Power BI Desktop environment. This limitation is a common practice for features that are still under development, allowing users to test and provide feedback before a broader release.
+  - Although the List slicer (preview) isn't directly available in the Power BI service, you can publish any List slicer (preview) you create in Power BI Desktop, making it visible in the Power BI service. This capability allows you to take advantage of the new features while ensuring compatibility and stability within the Service environment.
 - **Format settings**:
   - When you're formatting a List slicer (preview), you might notice that some of the format settings are in a different location, or the name of the setting is changed.
   - Often, new settings or controls are added from one product update to the next. Such changes are expected, as preview features are continuously under development.
