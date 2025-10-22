@@ -260,9 +260,9 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ### Power BI capacity limitations
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/fabric/enterprise/power-bi/service-premium-what-is). For the recommended semantic model size for each SKU, reference [Premium large semantic models](/fabric/enterprise/power-bi/service-premium-what-is#large-datasets).
-* To use a semantic model larger than 10 GB, use a Premium capacity and enable the [Large semantic models](/fabric/enterprise/power-bi/service-premium-large-models) setting.
-* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/fabric/enterprise/power-bi/service-premium-what-is#capacity-nodes).
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/fabric/enterprise/powerbi/service-premium-what-is). For the recommended semantic model size for each SKU, reference [Premium large semantic models](/fabric/enterprise/powerbi/service-premium-what-is#large-datasets).
+* To use a semantic model larger than 10 GB, use a Premium capacity and enable the [Large semantic models](/fabric/enterprise/powerbi/service-premium-large-models) setting.
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/fabric/enterprise/powerbi/service-premium-what-is#capacity-nodes).
 
 ### Manage service principals
 

@@ -32,7 +32,7 @@
       expanded: false
       items:
       - name: Troubleshoot XMLA endpoint connectivity
-        href: /fabric/enterprise/power-bi/troubleshoot-xmla-endpoint            
+        href: /fabric/enterprise/powerbi/troubleshoot-xmla-endpoint            
     - name: Gateways
       expanded: false
       items:

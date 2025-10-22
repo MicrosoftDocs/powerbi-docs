@@ -129,7 +129,7 @@ Do the following steps to recreate the configuration of the original region:
     
 - Create Service Principals Names (SPN) profiles
 
-- Create capacities. Read more about this step in [Configure and manage capacities in Power BI Premium](/fabric/enterprise/power-bi/service-admin-premium-manage).
+- Create capacities. Read more about this step in [Configure and manage capacities in Power BI Premium](/fabric/enterprise/powerbi/service-admin-premium-manage).
 
   - Update settings
   
