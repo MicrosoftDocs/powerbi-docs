@@ -35,7 +35,7 @@ Besides *model measures* that you create in your data model, you can also create
 You use Data Analysis Expressions (DAX) to write report-level measures. You can use these measures in visualizations within a report to provide extra insights and tailor the data presentation to meet specific analytical needs. These measures enhance flexibility, helping users to derive new insights from existing data models dynamically.
 
 > [!NOTE]
-> You might also be interested in *quick measures*, which are ready-made measures you can select from dialogs. They're a good way to quickly create measures, and also a good way to learn DAX syntax, because their automatically created DAX formulas are available to review. For more information, see [quick measures](desktop-quick-measures.md).
+> You might also be interested in *quick measures*, which are ready-made measures you can select from dialogs. They're a good way to quickly create measures, and also a good way to learn DAX syntax, because their automatically created DAX formulas are available to review. For more information, see [Use quick measures for common calculations](desktop-quick-measures.md).
 
 ## DAX
 
@@ -47,7 +47,7 @@ DAX formulas are a lot like Excel formulas. DAX even has many of the same functi
 
 Janice is a sales manager at Contoso. Janice needs to provide reseller sales projections over the next fiscal year. Janice decides to base the estimates on last year's sales amounts, with a 6 percent annual increase resulting from various promotions that are scheduled over the next six months.
 
-To report the estimates, Janice imports last year's sales data into Power BI Desktop. Janice finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Janice renames the **SalesAmount** field *Last Years Sales*. Janice then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as a single value that's the sum of all reseller sales from last year.
+To report the estimates, Janice imports last year's sales data into Power BI Desktop. Janice finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data contains sales amounts only for last year, Janice renames the **SalesAmount** field *Last Years Sales*. Janice then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as a single value that's the sum of all reseller sales from last year.
 
 Janice notices that even without specifying a calculation, one is provided automatically. Power BI Desktop creates its own measure by summing up all the values in **Last Years Sales**.
 
@@ -105,7 +105,7 @@ You can create a special table that contains only measures. That table always ap
 
 ## Dynamic format strings
 
-When you use *dynamic format strings*, you can customize how measures appear in visuals by conditionally applying a format string with a separate DAX expression. For more information, see [Dynamic format strings](../create-reports/desktop-dynamic-format-strings.md).
+When you use *dynamic format strings*, you can customize how measures appear in visuals by conditionally applying a format string with a separate DAX expression. For more information, see [Create dynamic format strings for measures](../create-reports/desktop-dynamic-format-strings.md).
 
 ## Related content
 
@@ -113,5 +113,5 @@ When you use *dynamic format strings*, you can customize how measures appear in 
 
 - DAX is an established language that's used in Power Pivot in Excel and SQL Server Analysis Services, besides Power BI. For more information about DAX, see the following resources:
   - To see how to use DAX for basic calculations and data analysis problems, see [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
-  - For detailed articles on DAX functions, syntax, operators, and naming conventions, see [Data Analysis Expressions Reference](/dax/).
-  - For discussions about DAX among influential members of the business intelligence (BI) community, see [DAX Resource Center Wiki](/archive/technet-wiki/1088.dax-resource-center).
+  - For detailed articles on DAX functions, syntax, operators, and naming conventions, see [Data Analysis Expressions (DAX) Reference](/dax/).
+  - For discussions about DAX among influential members of the business intelligence (BI) community, see [DAX Resource Center](/archive/technet-wiki/1088.dax-resource-center).
