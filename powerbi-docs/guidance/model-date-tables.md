@@ -25,7 +25,7 @@ What's more, in order to work with Data Analysis Expressions (DAX) [time intelli
 > - The date column must not contain BLANKs.
 > - The date column must not have any missing dates.
 > - The date column must span full years. A year isn't necessarily a calendar year (January-December).
-> - The date table must be [marked as a date table](../transform-model/desktop-date-tables.md#set-your-own-date-table).
+> - If using [Classic time intelligence](/transform-model/desktop-time-intelligence.md#classic-time-intelligence), the date table must be [marked as a date table](../transform-model/desktop-date-tables.md#how-to-set-your-own-date-table). This is not necessary if you use the recommended [Calendar-based time intelligence](/transform-model/desktop-time-intelligence.md#calendar-based-time-intelligence-preview), except in [specific circumstances](/transform-model/desktop-date-tables.md#when-you-must-mark-your-date-table).
 
 You can use any of several techniques to add a date table to your model:
 

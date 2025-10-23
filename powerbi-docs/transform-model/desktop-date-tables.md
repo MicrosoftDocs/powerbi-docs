@@ -29,7 +29,7 @@ You have to mark your date table if you use the [Classic time intelligence funct
 - The relationships between the date table and other tables in your model are based on columns of a different data type than Datetime. For example, if you load data from a source such as a data warehouse, specific columns that represent dates are often provided. These columns (also called surrogate keys) are often stored as a whole number and formatted as yyyy-mm-dd (for example: *20241231* to represent December 31, 2024). If you have relationships between the date table and other tables in your model that use such columns, you need to set your own date table in order use the time intelligence capabilities.
 - If you want to use [advanced date filters in Excel PivotTables or PivotCharts](https://support.microsoft.com/office/filter-dates-in-a-pivottable-or-pivotchart-571cc416-ba4d-4005-a01e-3d99306ccefc) based on Power BI data.
 
-## How set your own date table
+## How to set your own date table
 
 To set a **date table**, select the table you want to use as a date table in the **Fields** pane, then right-click the table and choose **Mark as date table > Mark as date table** in the menu that appears, as shown in the following image.
 
