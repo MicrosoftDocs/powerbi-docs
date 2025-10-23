@@ -95,7 +95,7 @@ In the following section, you learn how to search and filter your list slicer by
 
 1. Open the search box by selecting the three-dot **ellipsis menu (...)** in the top-right corner of your list slicer visual. From the dropdown, select **Search**. This action adds a search bar at the top of the slicer, so you can quickly find items without scrolling through the entire list.
 
-1. Select the **search bar** and start typing a name or keyword. For example, entering the letter **C** instantly filters the slicer to show only District Managers whose names begin with or contain the letter **C**. In this example, the search feature makes it much easier to locate specific District Managers, like *Carlos Grilo*, *Chris Gray*, and *Chris McGurk*, in the dataset.
+1. Select the **search bar** and start typing a name or keyword. For example, entering the letter **C** instantly filters the slicer to show only District Managers whose names begin with or contain the letter **C**.
 
    :::image type="content" source="media/list-slicer/list-search.png" alt-text="Screenshot of list slicer search bar with letter C entered, filtering results to show District Managers with names containing C.":::
 
@@ -149,7 +149,7 @@ This approach not only saves time but also reduces the likelihood of overlooking
 
 In the next section, you learn how to use this feature with a practical example to maximize its effect on your workflow.
 
-1. To paste a set of values into a list slicer, open Excel. Create a new worksheet and enter your desired list of values. For example, type "Brad Sutton" in cell A1, "Carlos Grilo" in cell A2, and "Tina Lassila" in cell A3.
+1. To paste a set of values into a list slicer, open Excel. Create a new worksheet and enter your desired list of values. 
 1. After entering the names in Excel, highlight the cells containing your list (A1 to A3) and copy them. Next, return to Power BI, select your list slicer on the report canvas, or use the slicer's ellipsis menu, and paste the copied values. Each entry with the matching names appears selected within the slicer, enabling straightforward filtering and analysis.
 
 Pasting values into the list slicer streamlines filtering by quickly selecting multiple relevant entries at once. You save time and effort during data analysis.
