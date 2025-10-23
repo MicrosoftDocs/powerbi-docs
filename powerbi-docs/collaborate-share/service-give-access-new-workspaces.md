@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/14/2022
+ms.date: 10/23/2025
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
@@ -23,11 +23,13 @@ After you [create a workspace](service-create-the-new-workspaces.md) in Power BI
 
 ## Give access to your workspace
 
-1. Because you have the Admin role in the workspace, on the workspace content list page, you see **Access**.
+1. Because you have the Admin role in the workspace, on the workspace content list page, you see **Manage access**.
 
     :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png" alt-text="Screenshot that shows the Workspaces content list.":::
 
-1. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers. 
+1. Select **Manage access** and then select **+ Add people or groups**.
+
+1. On the **Add people** screen, you can add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers.
 
     :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-add-members.png" alt-text="Screenshot that shows how to add members, admins, contributors to a workspace.":::
 
