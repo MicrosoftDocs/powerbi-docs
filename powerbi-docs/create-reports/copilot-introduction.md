@@ -23,7 +23,7 @@ This article provides an overview of the Copilot capabilities for Power BI.
 > [!NOTE]
 > **Copilot is enabled by default.** Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 >
-> **Some Copilot experiences are generally available, and others are in preview.** The report agent — the Copilot pane available on the right side of reports — is generally available. The Power BI agent — the standalone, full-screen experience accessible from the Power BI left navigation and Copilot in apps — the full-page experience accessible from app navigation — are both in preview. Copilot experiences for Data Factory, Data Engineering, Data Science, Data Warehouse, and Real-Time Intelligence are in preview.
+> **Some Copilot experiences are generally available, and others are in preview.** The report agent—the Copilot pane available on the right side of reports—is generally available. The Power BI agent—the standalone, full-screen experience accessible from the Power BI left navigation and Copilot in apps—the full-page experience accessible from app navigation—are both in preview. Copilot experiences for Data Factory, Data Engineering, Data Science, Data Warehouse, and Real-Time Intelligence are in preview.
 >
 > **Sovereign clouds are unsupported.** Copilot isn't yet supported for sovereign clouds due to GPU availability.
 >
