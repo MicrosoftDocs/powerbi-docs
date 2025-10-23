@@ -389,29 +389,11 @@
       - name: (new) Card visual considerations and limitations
         href: ../visuals/power-bi-visualization-card-visual-considerations.md
     - name: Button slicer
-      items: 
-      - name: Create a button slicer
-        href: ../visuals/power-bi-visualization-button-slicer.md
-      - name: Use visual highlights
-        href: ../visuals/button-slicer-visual-highlights.md
-      - name: Use conditional formatting
-        href: ../visuals/button-slicer-conditional-formatting.md
-      - name: Paste values to select
-        href: ../visuals/button-slicer-paste-values.md
-      - name: Button slicer considerations and limitations
-        href: ../visuals/power-bi-visualization-button-slicer-considerations-limitations.md
-    - name: List slicer
-      items: 
-      - name: Create a list slicer (preview)
-        href: ../visuals/power-bi-visualization-list-slicer.md
-      - name: List slicer considerations and limitations
-        href: ../visuals/power-bi-visualization-list-slicer-considerations-limitations.md
-    - name: Text slicer
-      items: 
-      - name: Create a text slicer (preview)
-        href: ../visuals/power-bi-visualization-text-slicer.md
-      - name: Text slicer considerations and limitations
-        href: ../visuals/power-bi-visualization-text-slicer-considerations-limitations.md                                
+      href: ../visuals/power-bi-visualization-button-slicer.md
+    - name: List slicer (preview)
+      href: ../visuals/power-bi-visualization-list-slicer.md
+    - name: Text slicer (preview)
+      href: ../visuals/power-bi-visualization-text-slicer.md
     - name: Column charts
       items: 
       - name: Create a column chart visual
