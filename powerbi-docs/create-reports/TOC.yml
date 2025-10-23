@@ -264,6 +264,8 @@
           href: copilot-chat-with-data-standalone.md
         - name: Copilot for reports and models
           href: copilot-reports-overview.md
+        - name: Copilot for apps
+          href: copilot-apps-overview.md
         - name: Copilot in Power BI Desktop
           href: copilot-power-bi-desktop.md
         - name: Copilot in Power BI Mobile app
