@@ -39,7 +39,7 @@ Copilot in Power BI offers a range of capabilities designed to enhance productiv
 
 ### Copilot for business users: Chat with your data
 
-For business users, chatting with your data can mean finding content, asking for ad-hoc analyses or insights, quickly creating and analyzing visuals, and getting summaries of whole reports or specific topics. All similar to what you might ask your analyst to do when you have follow-up questions about a report they made. When a question is related to data in the semantic model, Copilot uses the semantic model to answer the question, otherwise it may answer from the LLM's (large language model) [general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have three chat-with-your-data experiences for business users: the standalone Copilot experience, the Copilot pane for reports, and Copilot in apps.
+For business users, chatting with your data can mean finding content, asking for ad-hoc analyses or insights, quickly creating and analyzing visuals, and getting summaries of whole reports or specific topics. All similar to what you might ask your analyst to do when you have follow-up questions about a report they made. When a question is related to data in the semantic model, Copilot uses the semantic model to answer the question, otherwise it may answer from the large language model's (LLM) [general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have three chat-with-your-data experiences for business users: the standalone Copilot experience, the Copilot pane for reports, and Copilot in apps.
 
 #### The standalone Copilot experience (preview): Find data and ask questions about any item
 
