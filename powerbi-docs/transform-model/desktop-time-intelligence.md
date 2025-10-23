@@ -56,7 +56,7 @@ Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are
 - [**Calendar-based time intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations.
 
 > [!NOTE]
-> You need to [set your table as a date table](desktop-date-tables.md#etting-your-own-date-table) for specific scenarios.
+> You need to [set your table as a date table](desktop-date-tables.md#setting-your-own-date-table) for specific scenarios.
 
 ## Classic time intelligence
 
@@ -672,7 +672,7 @@ ADDCOLUMNS (
 )
 ```
 
-For more information and more options see [Date tables](/guidance/model-date-tables.md).
+For more information and more options see [Date tables](../guidance/model-date-tables.md).
 
 ## Related content
 
