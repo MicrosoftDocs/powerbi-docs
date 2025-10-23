@@ -1,6 +1,6 @@
 ---
 title: Give Users Access to Workspaces - Power BI
-description: "Learn how to give others access to workspaces. Including, collections of dashboards, reports, and paginated reports that are built to deliver key metrics for your organization."
+description: "Learn how to give other users access to workspaces in Power BI, including collections of dashboards, reports, and paginated reports."
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: lukaszp
