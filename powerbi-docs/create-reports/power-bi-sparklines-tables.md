@@ -2,13 +2,13 @@
 title: Create sparklines in a table or matrix in a report
 description: In Power BI, you can create sparklines in a table or matrix in a Power BI report.
 author: julcsc
-ms.author: juliacawthra
-ms.reviewer: ''
+ms.author: jterh
+ms.reviewer: julcsc
 ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/21/2024
+ms.date: 10/24/2025
 LocalizationGroup: Visualizations
 ---
 # Create sparklines in a table or matrix in a Power BI report
@@ -80,17 +80,28 @@ Changing the sparkline's configuration to apply the calculation group to the spa
 
 ## Formatting the sparkline
 
-You can edit the sparkline’s format.
+You can edit the sparkline’s format by selecting the dropdown arrow next to the sparkline and choosing Edit sparkline. In the Sparklines card in the Format pane, you can modify the sparkline’s line and marker formatting. This includes:
+
+- Changing the line color and width
+- Adding markers for different value types (such as highest, first, last)
+- Adjusting marker size, color, and shape
+- Switching the chart type from a line to a column chart
+
+> [!NOTE]
+> The **Sparkline** section in the **Visual** > **Formatting** pane is only active when sparklines are present in the visual. If no sparklines are added, this section will be disabled and this tooltip will be displayed:
+“**To use these formatting options, add a field to the sparkline section of the Visualizations pane.**”
+
+Ready to customize your sparkline? Let’s walk through the formatting process in three quick steps as shown here.
 
 1. Select the dropdown arrow next to sparkline, and select **Edit sparkline**.
 
     :::image type="content" source="media/power-bi-sparklines-tables/sparklines-4-new-column.png" alt-text="Screenshot of select Edit sparkline." lightbox="media/power-bi-sparklines-tables/sparklines-4-new-column.png":::
 
-1. In the **Sparklines** card in the **Format** pane, modify the sparkline line and marker formatting. Change the line color and width, add markers for different value types (highest, first, last, and so on), and change the marker size, color, and shape.
+2. In the **Sparklines** card in the **Format** pane, modify the sparkline line and marker formatting. Change the line color and width, add markers for different value types (highest, first, last, and so on), and change the marker size, color, and shape.
 
     :::image type="content" source="media/power-bi-sparklines-tables/sparklines-6-format-pane.png" alt-text="Screenshot of format the sparkline." lightbox="media/power-bi-sparklines-tables/sparklines-6-format-pane.png":::
 
-1. The **Format** pane is also where you change the chart type from a line to a column chart.
+3. The **Format** pane is also where you change the chart type from a line to a column chart.
 
     :::image type="content" source="media/power-bi-sparklines-tables/sparklines-7-column-chart.png" alt-text="Screenshot of change from line to column chart." lightbox="media/power-bi-sparklines-tables/sparklines-7-column-chart.png":::
 
