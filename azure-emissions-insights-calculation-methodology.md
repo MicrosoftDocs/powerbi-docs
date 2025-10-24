@@ -1,21 +1,18 @@
 ---
 title: Calculation methodology for Azure emissions
-description: Learn about the calculation methodology for Azure emissions in Sustainability data solutions in Microsoft Fabric.
+description: Learn about the calculation methodology for Azure emissions.
 author: lavanyapg
-ms.service: microsoft-cloud-sustainability
+ms.service: powerbi
+ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 11/12/2024
-ms.author: lsuresh
+ms.date: 10/24/2025
+ms.author: mamaza
 ms.reviewer: lsuresh
-ms.collection: microsoftcloud-sustainability
 ms.search.form: Azure emissions insights
 ms.custom: ignite-2024
 ---
 
 # Calculation methodology for Azure emissions
-
-[!INCLUDE[announcement-banner-deprecation](includes/announcement-banner-deprecation.md)]
-
 
 Microsoft's cloud carbon calculation methodology calculates the carbon emissions associated with the use of Microsoft’s Azure and Microsoft 365 cloud computing resources. It covers scope 1, 2, and 3 carbon emissions as calculated from the manufacture, packaging, transportation, use, and end-of-life phases of data center hardware in all data centers owned and leased by Microsoft. The emissions and usage measured by this methodology are for Microsoft’s Azure and Microsoft 365 cloud only. The Microsoft 365 methodology is limited to emissions associated with using the following products:
 
@@ -26,7 +23,7 @@ Microsoft's cloud carbon calculation methodology calculates the carbon emissions
 - Microsoft Word
 - Microsoft Excel
 - Microsoft PowerPoint
-- Microsoft Outlook
+- Microsoft Outlook 
 
 > [!NOTE]
 > Carbon accounting practices are evolving rapidly. We're committed to evolving, revising, and refining our methodologies over time to incorporate science-based, validated approaches as they become available and relevant to assessing the carbon emissions associated with the Azure cloud.  
@@ -153,5 +150,6 @@ The unit used is metric tons of carbon dioxide equivalent (MTCO<sub>2</sub>E).
 ## Related information
 
 - [Overview of Azure emissions insights](azure-emissions-insights-overview.md)
+
 
 
