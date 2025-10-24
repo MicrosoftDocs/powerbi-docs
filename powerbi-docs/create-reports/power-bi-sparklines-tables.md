@@ -80,7 +80,7 @@ Changing the sparkline's configuration to apply the calculation group to the spa
 
 ## Formatting the sparkline
 
-You can edit the sparkline’s format by selecting the dropdown arrow next to the sparkline and choosing Edit sparkline. In the Sparklines card in the Format pane, you can modify the sparkline’s line and marker formatting. This includes:
+You can edit the sparkline’s format by selecting the dropdown arrow next to the sparkline and choosing **Edit sparkline**. In the **Sparklines** card in the **Format** pane, you can modify the sparkline’s line and marker formatting. This includes:
 
 - Changing the line color and width
 - Adding markers for different value types (such as highest, first, last)
@@ -88,7 +88,7 @@ You can edit the sparkline’s format by selecting the dropdown arrow next to th
 - Switching the chart type from a line to a column chart
 
 > [!NOTE]
-> The **Sparkline** section in the **Visual** > **Formatting** pane is only active when sparklines are present in the visual. If no sparklines are added, this section will be disabled and this tooltip will be displayed:
+> The **Sparkline** section in the **Visual** > **Formatting** pane is only active when sparklines are present in the visual. If no sparklines were added to the visual, this section will be disabled and this tooltip will be displayed:
 “**To use these formatting options, add a field to the sparkline section of the Visualizations pane.**”
 
 Ready to customize your sparkline? Let’s walk through the formatting process in three quick steps as shown here.
