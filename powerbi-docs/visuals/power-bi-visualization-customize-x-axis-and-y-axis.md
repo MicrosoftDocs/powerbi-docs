@@ -1,6 +1,6 @@
 ---
-title: Customize X-axis and Y-axis properties
-description: 'Customize X-axis and Y-axis properties'
+title: Customize X-axis and Y-axis Properties
+description: Learn how to customize X-axis and Y-axis properties.
 author: miguelmyersMS
 ms.author: miguelmyers
 ms.reviewer: juliacawthra
@@ -18,25 +18,24 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes. Pie charts, for example, don't have axes. And customization options vary from visual to visual. There are too many options to cover in a single article, so we'll take a look at some of the most-used customizations and get comfortable using the visual **Format** pane in the Power BI report canvas.  
+In this tutorial, you learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes. Pie charts, for example, don't have axes. And customization options vary from visual to visual. There are too many options to cover in a single article, so let's take a look at some of the most-used customizations and get comfortable using the visual **Format** pane in the Power BI report canvas. 
 
 ## Prerequisites
 
 - Power BI Desktop
-
 - [Retail Analysis Sample ](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
 
 ## Add a new visualization
 
 Before you can customize your visualization, you have to build it.
 
-1. In Power BI Desktop, open the Retail Analysis sample.  
+1. In Power BI Desktop, open the Retail Analysis sample. 
 
-1. At the bottom, select the yellow plus icon to add a new page.
+1. At the bottom, select the plus icon to add a new page.
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-new-page-icon.png" alt-text="Screenshot showing the new page icon, a yellow plus sign.":::
+   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-new-page-icon.png" alt-text="Screenshot showing the new page icon, a plus sign.":::
 
-1. From the **Visualizations** pane, select the stacked column chart icon. This adds an empty template to your report canvas.
+1. From the **Visualizations** pane, select the stacked column chart icon to add an empty template to your report canvas.
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-column-chart.png" alt-text="Screenshot of the Visualizations pane and an empty stacked column chart.":::
 
@@ -46,7 +45,7 @@ Before you can customize your visualization, you have to build it.
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-build-visual.png" alt-text="Screenshot of the populated stacked column chart.":::
 
-Now you can customize your X-axis. Power BI gives you almost limitless options for formatting your visualization. 
+Now you can customize your X-axis. Power BI provides almost limitless options for formatting your visualization.
 
 ## Customize the X-axis
 
@@ -58,7 +57,7 @@ The following example shows customization for a column chart. Let's add a few cu
 
 The X-axis labels display below the columns in the chart. Right now, they're light grey, small, and difficult to read. Let's change that.
 
-1. In the **Visualizations** pane, select **Format** (the paint brush icon :::image type="icon" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller-icon.png":::) to reveal the customization options.
+1. In the **Visualizations** pane, select **Format** :::image type="icon" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller-icon.png"::: to reveal the customization options.
 
 1. Expand the X-axis options.
 
@@ -68,7 +67,7 @@ The X-axis labels display below the columns in the chart. Right now, they're lig
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png" alt-text="Screenshot of the On slider for the X axis.":::
 
-   Some reasons you may want to set the X axis to **Off**, is if the visualization is self-explanatory without labels or if you have a crowded report page and need to make space to display more data.
+   There are cases where you might want to set the X axis to **Off**. For example, if the visualization is self-explanatory without labels or if you have a crowded report page and need to make space to display more data.
 
 1. Format the text color, size, and font:
 
@@ -77,19 +76,20 @@ The X-axis labels display below the columns in the chart. Right now, they're lig
    - **Text size**: Enter *14*
 
    - **Font family**: Select **Arial Black**
-   
+
    - **Columns**: Open **Spacing**
 
    - **Inner padding**: Enter *40%*
 
      :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-x.png" alt-text="Screenshot with labels on an angle.":::
 
-1. Maybe you don't like the way the X-axis text is displayed on a diagonal. You have several options. 
-    - Change the text size to something smaller than 14.
-    - Make the visualization larger. 
-    - Display fewer columns and add a scrollbar by increasing **Minimum category width**. 
+1. Maybe you don't like the way the X-axis text is displayed on a diagonal. You have several options.
 
-   Here, we've selected the second option and grabbed one of the resize bars to make the visualization wider. It now accommodates the 14-point text without needing to display the text on an angle or with a scrollbar.
+   - Change the text size to something smaller than 14.
+   - Make the visualization larger. 
+   - Display fewer columns and add a scrollbar by increasing **Minimum category width**. 
+
+   Here, we selected the second option and grabbed one of the resize bars to make the visualization wider. It now accommodates the 14-point text without needing to display the text on an angle or with a scrollbar.
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stretch.png" alt-text="Chart and formatting pane with labels horizontal.":::
 
@@ -97,11 +97,11 @@ The X-axis labels display below the columns in the chart. Right now, they're lig
 
 When the X-axis title is **On**, the X-axis title displays below the X-axis labels.
 
-1. Start by turning the X-axis title to **On**.  
+1. Start by turning the X-axis title to **On**. 
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-title-on.png" alt-text="Screenshot showing the X-axis Title On/Off toggle.":::
 
-   The first thing you'll notice is that your visualization now has a default X-axis title.  In this case, it's **FiscalMonth**.
+   The first thing you might notice is that your visualization now has a default X-axis title. In this case, it's **FiscalMonth**.
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title.png" alt-text="Chart with title displayed along bottom.":::
 
@@ -117,7 +117,7 @@ When the X-axis title is **On**, the X-axis title displays below the X-axis labe
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title-formatted.png" alt-text="Screenshot of the customized stacked column chart.":::
 
-1. Save the changes you've made and move to the next section. If you ever need to revert all of the changes, select **Revert to default** at the bottom of the **X-Axis** customization pane. Next, you'll customize your Y-Axis.
+1. Save your changes and move to the next section. If you ever need to revert all of the changes, select **Revert to default** at the bottom of the **X-Axis** customization pane. Next, let's customize the Y-Axis.
 
 ## Customize the Y-axis
 
@@ -127,13 +127,13 @@ The following example continues our customization of a column chart. Let's make 
 
 ### Customize the Y-axis labels
 
-The Y-axis labels are displayed to the left by default. Right now, they're light grey, small, and difficult to read. Let's change that.
+The Y-axis labels are displayed on the left side by default. Right now, they're light grey, small, and difficult to read. Let's change that.
 
 1. Expand the Y-Axis options.
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-axis-y.png" alt-text="Screenshot of the Y-axis options.":::
 
-1. Move the **Y-Axis** slider to **On**.  
+1. Move the **Y-Axis** slider to **On**. 
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png" alt-text="Screenshot of the On slider for the Y axis.":::
 
@@ -151,7 +151,7 @@ The Y-axis labels are displayed to the left by default. Right now, they're light
 
 ### Customize the Y-axis title
 
-When the Y-axis title is **On**, the Y-axis title displays next to the Y-axis labels. For this visualization, having a Y-Axis title doesn't improve the visual, so leave **Title** turned **Off**. We'll add Y-axis titles to a dual-axis visual later in this tutorial. 
+When the Y-axis title is **On**, the Y-axis title displays next to the Y-axis labels. For this visualization, having a Y-Axis title doesn't improve the visual, so leave **Title** turned **Off**. Later in this tutorial, we add Y-axis titles to a dual-axis visual.
 
 ### Customize the gridlines
 
@@ -169,14 +169,13 @@ After all these customizations, your column chart should look something like thi
 
 ## Customizing visualizations with dual Y axes
 
-Some visualizations can benefit from having two Y axes. Combo charts are a good example. Before we can format dual Y axes, we'll create a combo chart that compares trends for sales and gross margin.  
+Some visualizations can benefit from having two Y axes. Combo charts are a good example. Before we can format dual Y axes, we need to create a combo chart that compares trends for sales and gross margin. 
 
 ### Create a chart with two Y-Axes
 
 1. Select the column chart, and change it to a *Line and stacked column* chart. This type of visual supports a single line chart value and multiple stackable column values. 
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png" alt-text="Screenshot of the Visualizations pane with the line and stacked column chart icon called out.":::
-
 
 1. Drag **Sales** > **Gross Margin Last Year %** from your Fields pane into the **Line Values** bucket.
 
@@ -186,11 +185,11 @@ Some visualizations can benefit from having two Y axes. Combo charts are a good 
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png" alt-text="Combo chart and Format pane with the font size reduced to 12.":::
 
-   Power BI creates two Y axes, allowing the values to be scaled differently. The left axis measures sales dollars and the right axis measures gross margin percentage.
+   Power BI creates two Y axes, allowing the values to be scaled differently. The left axis measures sales dollars. The right axis measures gross margin percentage.
 
 ### Format the second Y-Axis
 
-Because we started with a visualization with one formatted Y-axis, Power BI created the second Y-axis using the same settings. But we can change that. 
+Because we started with a visualization with one formatted Y-axis, Power BI created the second Y-axis using the same settings. But we can change that.
 
 1. In the **Visualizations** pane, select the paint brush icon to display the format options.
 
@@ -204,7 +203,7 @@ Because we started with a visualization with one formatted Y-axis, Power BI crea
 
 ### Add titles to both axes
 
-With a visualization that's complex, it helps to add axes titles.  Titles help your colleagues understand the story your visualization is telling.
+With a visualization that's complex, it helps to add axes titles. Titles help your colleagues understand the story your visualization is telling.
 
 1. Toggle **Title** to **On** for **Y-Axis (Column)** and the **Y-Axis (Line)**.
 
@@ -216,7 +215,7 @@ With a visualization that's complex, it helps to add axes titles.  Titles help y
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-titles-on.png" alt-text="Screenshot of the customized dual Y-Axes chart.":::
 
-1. Format the titles. In this example, we've shorted one of the titles and reduced the font size for both.
+1. Format the titles. In this example, we shortened one of the titles and reduced the font size for both.
 
    - Font size: **9**
    - Shortened the **Axis title** for the first Y axis (the column chart): Sales last year & this year.
@@ -235,7 +234,7 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
 ## Considerations and limitations
 
-- For continuous axis tick marks, you cannot control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. Date values will be localized based on your system or browser locale.
+- For continuous axis tick marks, you can't control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. Date values are localized based on your system or browser locale.
 
 ## Related content
 
