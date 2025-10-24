@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/21/2025
+ms.date: 10/24/2025
 LocalizationGroup: Connect to services
 no-loc: [Copilot]
 ms.custom:
