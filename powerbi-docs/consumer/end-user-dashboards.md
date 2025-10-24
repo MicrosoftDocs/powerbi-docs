@@ -3,7 +3,7 @@ title: Dashboards for business users of the Power BI service
 description: A dashboard is a single page canvas that contains the most important elements of data. Learn the advantages of dashboards and how they differ from reports.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with dashboards
@@ -26,7 +26,7 @@ The visualizations on the dashboard are called *tiles*. Report designers *pin* t
 >
 >You can view and share dashboards on [mobile devices](mobile/mobile-apps-view-dashboard.md).
 >
->To view dashboards that colleagues share with you, you must have a Pro or Premium Per User (PPU) license or the content must be shared with you from a workspace in Premium capacity. For more information, see [Power BI license types](end-user-license.md).
+>To view dashboards that colleagues share with you, you must have a Power BI Pro or Premium Per User (PPU) license, or the content must be shared with you from a Premium (or Fabric F64+) capacity. For more information, see [Power BI license types](../fundamentals/end-user-license.md).
 
 The visualizations on a dashboard come from reports, and each report is based on one semantic model. You can think of a dashboard as an entryway into the underlying reports and semantic models. Select a visualization to take you to the report that was used to create it.
 

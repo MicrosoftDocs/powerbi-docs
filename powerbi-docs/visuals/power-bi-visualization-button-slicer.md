@@ -1,73 +1,155 @@
 ---
-title: Create a button slicer (preview)
-description: Learn how to create a button slicer (preview) in Power BI Desktop.
+title: Create and Use a Button Slicer
+description: Learn how to create, customize, and use button slicers in Power BI Desktop. Filter data interactively with grid layouts, visual highlights, and conditional formatting.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/20/2025
+ms.date: 10/22/2025
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to learn about the button slicer (preview) feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
+#customer intent: As a Power BI user, I want to learn about the button slicer feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
 ---
 
-# Create a button slicer (preview)
+# Create and use a button slicer
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In Power BI, the button slicer (preview) is an interactive visual element that allows users to filter data in reports and dashboards, providing an easy and dynamic way to browse and analyze large datasets.
+In Power BI, the button slicer is an interactive visual element that allows users to filter data in reports and dashboards, providing an easy and dynamic way to browse and analyze large datasets.
 
-Among the various types of slicers, the button slicer (preview) stands out due to its unique properties. It offers customizable button styles, interactive states, conditional formatting for labels, and a grid layout for arranging buttons in rows and columns. Additionally, the button slicer (preview) can integrate images, enhancing visual appeal and providing more context. 
-
-These features make the button slicer (preview) a powerful tool for creating interactive and visually appealing reports, offering a user-friendly setup and comprehensive formatting options.
+Among the various types of slicers, the button slicer stands out due to its unique properties. It offers customizable button styles, interactive states, conditional formatting for labels, and a grid layout for arranging buttons in rows and columns. Additionally, the button slicer can integrate images, enhancing visual appeal and providing more context.
 
 > [!IMPORTANT]
-> The button slicer (preview) is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Because the button slicer is now generally available, your current experience may differ from the earlier preview experience. However, these changes can be easily reverted by making the updates in the **Format** pane.
+
+These features make the button slicer a powerful tool for creating interactive and visually appealing reports, offering a user-friendly setup and comprehensive formatting options.
 
 ## Prerequisites
 
-Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
+In the following guide, we're using the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
-For the purposes of this guide, in Power BI Desktop's **Global options**, under the **Preview features** section, the **Button slicer visual** feature is *disabled* by default, however, by completing the following steps you can enable it:
+# [Power BI Desktop](#tab/powerbi-desktop)
 
-1. Open **Power BI Desktop**.
-1. Navigate to the **Options** section found under the **File** menu.
-1. In the **Global options** window, go to the **Preview features** section and find the **Button slicer visual** option.
-1. Select the checkbox to enable the feature.
-
-In the following guide, we're using the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). After downloading the file, let’s get started:
+> [!IMPORTANT]
+> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
 
 1. Launch **Power BI Desktop**.
-1. On the left-side navigation pane, select **Open**; otherwise, on the top-left of the window, select **File > Open**.
-1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view, ready for you to begin.
+1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.
+1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view.
 
-:::image type="content" source="media/button-slicer/button-slicer-sample.png" alt-text="Screenshot of the sample file showing district manager names as selectable tiles." lightbox="media/button-slicer/button-slicer-sample.png":::
+# [Power BI service](#tab/powerbi-service)
+
+1. Sign in to the Power BI service (`app.powerbi.com`).
+1. From the left-side navigation pane, select **Learn**.
+1. On the **Learning center** page, under **Sample reports**, locate and select **Retail Analysis Sample**. It opens in Reading mode and adds the dashboard, report, and semantic model to your workspace.
+1. At the top of the report, select **Edit** to switch to the Report editor (Edit mode).
+
+---
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have an individual **Power BI Pro license** or that you save the report in **Premium capacity**.
+> Sharing your report with a Power BI colleague requires that you both have an individual Power BI Pro license or that you save the report in Premium capacity.
 
-## Let’s create a button slicer
+## Create a button slicer
 
-In this quick and easy three-step guide, we create a **Button slicer** in Power **BI Desktop**. Review the [Prerequisites](#prerequisites) section before following these steps.
+In this quick and easy three-step guide, you create a **Button slicer** in Power BI Desktop. Review the [Prerequisites](#prerequisites) section before following these steps.
 
-1. With the **Retail Analysis Sample PBIX** open, make sure you are on the Overview page by selecting the **Overview** tab. To make room for your button slicer, select and resize the Scatter chart by dragging the dark **visualization handles**. Then, with nothing selected on the report canvas, select the **Button slicer** icon in the **Build visual** tab on the **Visualizations** pane to create a new slicer on the report canvas.
+1. With the **Retail Analysis Sample PBIX** open, make sure you're on the Overview page by selecting the **Overview** tab. To make room for your button slicer, select and resize the scatter chart by dragging the dark **visualization handles**. Then, with nothing selected on the report canvas, select the **Button slicer** icon in the **Build visual** tab on the **Visualizations** pane to create a new slicer on the report canvas.
 
    :::image type="content" source="media/button-slicer/button-slicer-icon-highlighted.png" lightbox="media/button-slicer/button-slicer-icon-highlighted.png" alt-text="Screenshot of the Power BI Desktop Overview tab, Visualizations pane, Build visual, and Button slicer icon highlighted, slicer placeholder with resize handles on canvas.":::
 
-1. To add data to the visual, we use the **Data** pane. With your slicer selected on the report canvas, navigate to the Data pane, expand the **District** table, and select **DM** to populate the slicer. The slicer now displays tiles with the district manager names. You can resize the slicer as needed and rearrange the elements on the canvas to your preference. but be cautious not to make the slicer too small, which affects the displayed information.
+1. To add data to the visual, use the **Data** pane. With your slicer selected on the report canvas, go to the Data pane, expand the **District** table, and select **DM** to populate the slicer. The slicer now displays tiles with the district manager names. You can resize the slicer as needed and rearrange the elements on the canvas to your preference. Be careful not to make the slicer too small, which affects the displayed information.
 
    :::image type="content" source="media/button-slicer/button-slicer-district-highlighted.png" lightbox="media/button-slicer/button-slicer-district-highlighted.png" alt-text="Screenshot of the Data pane, District table, DM selected and highlighted, slicer on canvas displaying  nine tiles with truncated district manager names.":::
 
-1. To customize your slicer, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available format settings. This allows you to tailor the slicer's appearance and functionality to your specific requirements as demonstrated in the following example. 
+1. To customize your slicer, select the **Format visual** icon in the **Visualizations** pane. This icon grants you access to all available format settings. You can tailor the slicer's appearance and functionality to your specific requirements.
 
-   :::image type="content" source="media/button-slicer/button-slicer-displayed.png" lightbox="media/button-slicer/button-slicer-displayed.png"  alt-text="Screenshot of Visualizations pane expanded, Format visual icon selected, showing Visual and General tabs, and a formatted slicer with DM pics displayed.":::
+## Use visual highlights
 
-Great job! Congratulations on successfully creating a button slicer with Power BI.
+Highlighting in Power BI enhances report interactivity by letting users focus on selected data points across visuals. When used with the button slicer, it draws attention to selected values and updates other visuals in context.
 
-Next, take time familiarize yourself with the [Considerations and limitations](power-bi-visualization-button-slicer-considerations-limitations.md) for button slicers. 
+As you interact with various elements like pie charts or tables, the corresponding buttons in the slicer stay highlighted and easy to identify, while the buttons not related to your selection become dimmed or less prominent.
+
+Understanding how highlighting impacts the button slicer prepares you to create more engaging and insightful reports, making it easier for viewers to analyze filtered data and uncover meaningful trends.
+
+In the following steps, you learn how to set up and utilize highlighting with the button slicer in Power BI, ensuring your report offers a seamless and intuitive data exploration experience.
+
+1. With the button slicer still selected on your report canvas, look to the **Visualizations pane** and choose the **Build visual** tab. Here, you find the **Highlight label** field well. From the **Data pane**, drag the 'Value' measure found under Sales > This Year Sales, to the **Highlight label** field well. Once added, each button in your slicer displays the corresponding sales value as a label below the main callout value, making it easy to see sales figures for each selection.
+
+    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-highlight-label.png" alt-text="Screenshot of Power BI showing a button slicer with highlight labels added below each button value." lightbox="media/button-slicer-visual-highlights/button-slicer-highlight-label.png":::
+
+1. Now that you've added a highlight label to your button slicer, let's explore how it responds when interacting with other visuals in your report. On your Overview page, locate the "This Year Sales by Chain" pie chart. Select the segment labeled "Lindseys" within the pie chart. In the button slicer, only the buttons related to the Lindseys series remain highlighted, while all other buttons become inactive or greyed out. This visual cue helps you quickly identify which selections are relevant to your chosen data point.
+
+    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-highlight-relevant.png" alt-text="Screenshot of Power BI showing only Lindseys-related buttons highlighted after selecting a pie chart segment." lightbox="media/button-slicer-visual-highlights/button-slicer-highlight-relevant.png":::
+
+By following these steps, you enhance your Power BI report with an interactive slicer that makes data exploration more intuitive and insightful.
+
+## Use conditional formatting
+
+Conditional formatting in Power BI's button slicer lets you customize the appearance of slicer items based on dynamic data conditions. Whether you want to highlight top performers, flag exceptions, or align visuals with business logic, this feature enhances the user experience and helps guide users' attention to the most relevant selections. It adds clarity, improves interactivity, and helps create a more intuitive and impactful interface.
+
+In this section, you learn how to apply conditional formatting to the button slicer by using a practical example. With this knowledge, you can further tailor your reports with precision and impact.
+
+1. Select the button slicer visual on your report canvas. This action ensures that any formatting changes you apply are specific to that slicer.
+1. In the **Visualizations pane**, select the **Format visual icon**. Make sure you're in the **Visual tab**, then scroll down to locate the **Buttons** card to reveal further customization options.
+1. Within the **Buttons** card, locate and expand the **Background** group to display the **Fill color** control, along with an 'fx' button beside the color picker.
+
+    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-conditional-formatting.png" alt-text="Screenshot of conditional formatting background color rules dialog trigger in button slicer settings." lightbox="media/button-slicer-visual-highlights/button-slicer-conditional-formatting.png":::
+
+1. Select the 'fx' button to launch the conditional formatting dialog window. Ensure the Format style is set to Rules. In the **What field should we base this on** dropdown, select **Status measure** for the **This Year Sales**, and then define the rules as follows:
+
+   - First rule: **\>= 0 Percent** and **\< 0 Number** then **red** (*\#D64550*).
+   - Second rule: **\>= 0 Number** and **\<=** **100 Percent** then **blue** (*\#118DFF*).
+
+   Once the rules are defined, select **OK** to apply the desired formatting based on your conditions.
+
+    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-format-fields.png" alt-text="Screenshot of conditional formatting rules dialog for button slicer background settings in Power BI Desktop." lightbox="media/button-slicer-visual-highlights/button-slicer-format-fields.png":::
+
+1. The district managers associated with a negative sales status are now displayed in red, while those with a positive status appear in blue. This color coding makes it easier and quicker for users to identify key information.
+
+    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-formatting-applied.png" alt-text="Screenshot of button slicer displaying conditional formatting colors for sales status." lightbox="media/button-slicer-visual-highlights/button-slicer-formatting-applied.png":::
+
+Conditional formatting in button slicers helps you visually emphasize important data points, making your reports more intuitive and impactful. It's a simple way to guide users toward meaningful selections and improve overall report clarity.
+
+The button slicer supports conditional formatting for multiple elements, including callout values, callout labels, button backgrounds, button borders, and button effects.
+
+## Paste values to select
+
+The **Paste** feature lets you apply multiple selections to a button slicer by pasting a list of values. You don't need to manually select each option one by one. This feature streamlines the filtering process, especially when working with large datasets or predefined lists.
+
+Instead of spending time selecting items individually, you can copy values from external sources (like Excel, Notepad, or emails) and paste them directly into the slicer. The slicer then automatically recognizes and applies all matching selections at once.
+
+This approach not only saves time but also reduces the likelihood of overlooking values. It's perfect for scenarios where precision and speed are essential.
+
+In this section, you learn how to use this feature with a practical example to maximize its effect on your workflow.
+
+1. To paste a set of values into a button slicer, open Excel. Create a new worksheet and enter your desired list of values. 
+1. After entering the names in Excel, highlight the cells containing your list (A1 to A3) and copy them. Next, return to Power BI, select your button slicer on the report canvas, and use **Ctrl-V** to paste the copied values, or use the slicer's ellipsis menu to paste the copied values. Each button with the matching names appears selected within the slicer, enabling straightforward filtering and analysis.
+
+    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-paste.png" alt-text="Screenshot of button slicer after pasting values showing selected names." lightbox="media/button-slicer-visual-highlights/button-slicer-paste.png":::
+
+Pasting values into the button slicer streamlines filtering by quickly selecting multiple relevant entries at once. You save time and effort during data analysis.
+
+## Considerations and limitations
+
+This section lists the key considerations and limitations of the Button slicer in Power BI Desktop so you can anticipate filtering behavior and avoid confusion.
+
+- **Paste values**:
+  - You can paste up to 2,000 values into the button slicer; any extras are ignored.
+  - Pasting new values removes all previous selections.
+  - When you paste values, the slicer applies exact-match ("IS") filtering by only selecting buttons with values that precisely correspond. If the pasted values don't match any available buttons, those values are still used as filters; so visuals might display as blank due to the absence of matching data.
+- **Sort buttons**:
+  - Sorting via the ellipsis menu is limited to **Value**. **Label** sorting is currently unavailable.
+- **Single select toggle**:
+  - The **Single select** toggle permits multiple selections only when the **Force selection** toggle is *off*. To select multiple options, hold **CTRL** and select other buttons.
+  - If the **Single select** and **Force selection** toggles are *on*, only one option can be selected at a time. Selecting **CTRL** + other buttons isn't allowed.
+- **Force selection toggle**:
+  - When the **Force selection** toggle is *on*, the button slicer ensures that one item is always selected. This requires **Single select** toggle to also be *on*.
+  - If a user applies another filter that hides the currently selected button, the slicer might look unselected. However, the previously selected (but now hidden) value continues to affect other visuals. Selected items are never cleared, even if they're temporarily removed from the current data due to filtering.
+  - Currently, the slicer doesn't automatically select the first visible option when the forced selection is *on* and the selected button is filtered out. Instead, the hidden selection remains active until the user chooses another visible option.
 
 ## Related content
 
-- [Button slicer considerations and limitations](power-bi-visualization-button-slicer-considerations-limitations.md)
+- [List slicer](power-bi-visualization-list-slicer.md)
+- [Text slicer](power-bi-visualization-text-slicer.md)
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

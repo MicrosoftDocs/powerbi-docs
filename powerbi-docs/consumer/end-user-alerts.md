@@ -3,7 +3,7 @@ title: Tutorial for setting data alerts on Power BI service dashboards.
 description: In this tutorial, you learn to set alerts to notify you when data in your dashboards changes beyond limits you set in the Microsoft Power BI service.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -43,7 +43,7 @@ This tutorial covers the following.
 
 Alerts can be created in the Power BI service by customers with any license type. Set alerts on dashboard tiles:
 - created in **My workspace**.
-- shared with you in a [Premium reserved capacity](end-user-license.md). 
+- shared with you in a [Premium reserved capacity](../fundamentals/end-user-license.md).
 - saved in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.
 
 ## Who can see alerts I create?
@@ -118,7 +118,7 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 * If you're unable to set an alert for a gauge, KPI, or card, contact your Power BI admin or IT help desk for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They don't work on static data. Most of the samples supplied by Microsoft are static. 
-* The ability to receive and view shared content requires a few conditions to be met. Those conditions are that you have a Power BI Pro license, a Premium Per User license, or the report is saved in Premium reserved capacity. For more information, read [Which license do I have?](end-user-license.md).
+* The ability to receive and view shared content requires a few conditions to be met. Those conditions are that you have a Power BI Pro license, a Premium Per User license, or the report is saved in Premium reserved capacity. For more information, read [Which license do I have?](../fundamentals/end-user-license.md).
 * Alerts can be set on visuals created from streaming datasets that are pinned from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
 
 

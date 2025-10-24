@@ -3,7 +3,7 @@ title: Add comments to dashboards and reports
 description: This document shows how to add comments to a dashboard, report, or visual and how to use comments to have conversations with collaborators.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 featuredvideoid: 
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -20,7 +20,7 @@ Add a personal comment or start a conversation about a dashboard or report with 
 :::image type="content" source="media/end-user-comment/comment.gif" alt-text="An animation showing the Comments screen when there are no comments added.":::
 
 > [!NOTE]
-> Collaborating with others, including adding comments to shared reports, requires a Power BI Pro license or for the content to be hosted in Power BI Premium capacity. [Which license type do I have?](end-user-license.md)
+> Collaborating with others (including adding comments) requires a Power BI Pro or Premium Per User (PPU) license, or the content must reside in a Premium (or Fabric F64+) capacity that grants you access. See [Power BI license types](../fundamentals/end-user-license.md).
 
 ## How to use the Comments feature
 Comments can be added to an entire dashboard, individual visuals on a dashboard, a report page, a paginated report, and individual visuals on a report page. Add a general comment or add a comment targeted at specific colleagues. Comments can be up to 2,000 characters, including @mentions of other users and spaces.

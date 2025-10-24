@@ -1,8 +1,8 @@
 ---
 title: Install Power BI Report Server
 description: 'Learn how to install Power BI Report Server, or create a virtual machine running Power BI Report Server on Azure.'
-author: JulCsc
-ms.author: nisrinivasan
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

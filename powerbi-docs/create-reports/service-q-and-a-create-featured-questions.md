@@ -18,7 +18,7 @@ LocalizationGroup: Ask questions of your data
 If you have edit permission for a semantic model, you can add your own featured questions to that semantic model. Power BI Q&A will show those questions to colleagues who consume dashboards based on that semantic model. Featured questions give your colleagues ideas about the types of questions they can ask about the semantic model. The featured questions you add are up to you. You can add popular questions, questions that display interesting results, or questions that might be hard to phrase.
 
 > [!NOTE]
-> Q&A featured questions are available for use in the [Microsoft Power BI app on iPads, iPhones, and iPod Touch devices](../consumer/mobile/mobile-apps-ios-qna.md) and in the Power BI service (app.powerbi.com). Creating the questions is only available in the Power BI service.
+> Q&A featured questions are available for use in the Microsoft Power BI app on iPads, iPhones, and iPod Touch devices and in the Power BI service (app.powerbi.com). Creating the questions is only available in the Power BI service.
 
 ## Prerequisites
 

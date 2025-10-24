@@ -3,7 +3,7 @@ title: Sign in and out of the Power BI service
 description: Learn how to sign in and out of the Power BI service on the web and safely interact with your content.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -21,7 +21,7 @@ This article is for Power BI business users who are signing in to the Power BI s
 
 ## Power BI accounts
 
-Before you can sign in to the Power BI service, you need an [account and a license](end-user-license.md). There are several ways to get an account and license. This article describes a common scenario where employees at a corporation use their work email to sign in to their Power BI account. And, the employees use licenses that were purchased and allocated for them by their corporation. 
+Before you can sign in to the Power BI service, you need an [account and a license](../fundamentals/end-user-license.md). There are several ways to get an account and license. This article describes a common scenario where employees at a corporation use their work email to sign in to their Power BI account. And, the employees use licenses that were purchased and allocated for them by their corporation.
 
 ## Sign in for the first time
 

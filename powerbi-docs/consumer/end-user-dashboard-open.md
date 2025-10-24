@@ -3,7 +3,7 @@ title: View a Power BI dashboard
 description: Learn how to open and view a Power BI dashboard to highlight specific information from the underlying reports and semantic models.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
@@ -21,7 +21,7 @@ Power BI *business users* spend a lot of time viewing dashboards. Dashboards are
 :::image type="content" source="media/end-user-dashboard-open/power-bi-sales-dashboard.png" alt-text="Screenshot of the Sales and Marketing Sample dashboard.":::
 
 
-A Power BI Pro or Premium license is required for both sharing a dashboard and viewing a shared dashboard. [Which license do I have?](end-user-license.md). 
+A Power BI Pro or Premium Per User (PPU) license is required for both sharing a dashboard and viewing a shared dashboard unless the content is hosted in a Premium (or Fabric F64+) capacity. [Which license do I have?](../fundamentals/end-user-license.md).
 
 ## Open a dashboard
 

@@ -5,7 +5,7 @@ author: julcsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.custom:  
 ms.topic: how-to
 ms.date: 01/09/2025

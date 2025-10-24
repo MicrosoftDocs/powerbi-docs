@@ -20,7 +20,7 @@ This article walks through how to pause and start a Power BI Embedded capacity i
 
 This information only applies to A SKU embedded capacities. EM SKU embedded capacities don't work the same way. For information on pausing F SKU capacities, see [Pause and resume your capacity](/fabric/enterprise/pause-resume).
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## Pause your capacity
 

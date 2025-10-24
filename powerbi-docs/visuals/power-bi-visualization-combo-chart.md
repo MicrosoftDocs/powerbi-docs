@@ -1,16 +1,17 @@
 ---
-title: Combo chart in Power BI
+title: Combo Chart in Power BI
 description: This tutorial about combo charts explains when to use them and how to build them in the Power BI service and Desktop.
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'kfollis'
+ms.reviewer: juliacawthra
 ms.custom: video-removed, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 10/21/2025
 LocalizationGroup: Visualizations
 ---
+
 # Create and use combo charts in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
@@ -23,11 +24,11 @@ Combo charts can have one or two Y axes.
 
 Combo charts are a great choice:
 
-* when you have a line chart and a column chart with the same X axis.
-* to compare multiple measures with different value ranges.
-* to illustrate the correlation between two measures in one visualization.
-* to check whether one measure meets the target defined by another measure
-* to conserve canvas space.
+- when you have a line chart and a column chart with the same X axis.
+- to compare multiple measures with different value ranges.
+- to illustrate the correlation between two measures in one visualization.
+- to check whether one measure meets the target defined by another measure.
+- to conserve canvas space.
 
 ## How to create a combo chart  
 
@@ -102,15 +103,15 @@ To follow along, use the [Retail Analysis sample](../create-reports/sample-retai
 
 In this task, we compare gross margin and sales.
 
-1. Create a new line chart that tracks **Gross Margin Last Year %** by **FiscalMonth**. 
+1. Create a new line chart that tracks **Gross Margin Last Year %** by **FiscalMonth**.
 
 1. Select the ellipsis to sort it by **FiscalMonth**, then select the ellipsis again and choose **Sort axis** \> **Sort ascending**.
   
-1. In January, GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
+1. In January, Gross Margin % was 35%, peaked at 45% in April, dropped in July and peaked again in August. Can we expect a similar pattern in sales last year and this year?
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-gross-margin-line-chart.png" alt-text="Line chart showing last year's gross margin percentage.":::
 
-1. Add **This Year Sales** \> **Value** and **Last Year Sales** to the line chart. The scale of **Gross Margin Last Year %** is much smaller than the scale of **Sales** which makes it difficult to compare.
+1. Add **This Year Sales** \> **Value** and **Last Year Sales** to the line chart. The scale of **Gross Margin Last Year %** is considerably smaller than the scale of **Sales** which makes it difficult to compare.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-chart-scales.png" alt-text="Line chart showing Values, Sales, and Gross Margin percentage at the same scale.":::
 
@@ -118,7 +119,7 @@ In this task, we compare gross margin and sales.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-and-stacked-column-chart-icon.png" alt-text="Icon for Line and stacked column chart.":::
 
-1. Drag **Gross Margin Last Year %** from **Column y-axis** into **Line y-axis**. 
+1. Drag **Gross Margin Last Year %** from **Column y-axis** into **Line y-axis**.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-and-stacked-column-chart-fields.png" alt-text="Screenshot of combo chart fields showing Line y-axis field.":::
 
@@ -152,9 +153,9 @@ In this task, we compare gross margin and sales.
 
 From here, you might want to:
 
-* [Add the combo chart as a dashboard tile](../create-reports/service-dashboard-tiles.md).
-* Save the report.
-* [Make the report more accessible for people with disabilities](../create-reports/desktop-accessibility-overview.md).
+- [Add the combo chart as a dashboard tile](../create-reports/service-dashboard-tiles.md).
+- Save the report.
+- [Make the report more accessible for people with disabilities](../create-reports/desktop-accessibility-overview.md).
 
 ## Cross-highlighting and cross-filtering
 
@@ -162,10 +163,10 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 
 ## Considerations and limitations
 
-* The secondary y-axis (line values) automatically shows or hides by default if its data range sufficiently overlaps with the primary y-axis (column values). To force show or hide the secondary y-axis, toggle the top-level toggle switch to "On" or "Off" on the "Secondary y-axis" formatting card to override this automatic behavior.
-* The data labels may or may not display, depending on the size of your combo chart. If you don't see data labels, resize the combo chart. 
+- The secondary y-axis (line values) automatically shows or hides by default if its data range sufficiently overlaps with the primary y-axis (column values). To force show or hide the secondary y-axis, toggle the top-level toggle switch to "On" or "Off" on the "Secondary y-axis" formatting card to override this automatic behavior.
+- The data labels might not display, depending on the size of your combo chart. If you don't see data labels, resize the combo chart.
 
 ## Related content
 
-* [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
-* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
+- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

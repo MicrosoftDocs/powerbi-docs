@@ -3,12 +3,12 @@ title: Key Performance Indicator (KPI) visuals
 description: Create Key Performance Indicator (KPI) visuals in Power BI. 
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'kfollis'
+ms.reviewer: juliacawthra
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/15/2023
+ms.date: 09/10/2025
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
@@ -20,14 +20,13 @@ LocalizationGroup: Visualizations
 
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more about KPIs, see [Key Performance Indicators (KPIs) in PowerPivot](https://support.office.com/article/Key-Performance-Indicators-KPIs-in-Power-Pivot-E653EDEF-8A21-40E4-9ECE-83A6C8C306AA).
 
-
 ## When to use a KPI
 
 KPIs are a great choice:
 
-* To measure progress. Answers the question, "What am I ahead or behind on?"
+- To measure progress. Answers the question, "What am I ahead or behind on?"
 
-* To measure distance to a goal. Answers the question, "How far ahead or behind am I?"
+- To measure distance to a goal. Answers the question, "How far ahead or behind am I?"
 
 ## KPI requirements
 
@@ -105,31 +104,31 @@ In this example, you create a KPI that measures the progress you made toward a s
 
     :::image type="content" source="media/power-bi-visualization-kpi/power-bi-format-visual.png" alt-text="Screenshot of the Format visual pane.":::
 
-    * **Callout value** - controls the indicator's display units, decimal places, and text formatting.
+    - **Callout value** - controls the indicator's display units, decimal places, and text formatting.
 
-    * **Icons** - when set to **On**, the visual shows small icons next to the value, a green checkmark for an increasing value, and a red exclamation point for a decreasing value. The value's direction is set by **Trend axis**.
+    - **Icons** - when set to **On**, the visual shows small icons next to the value, a green checkmark for an increasing value, and a red exclamation point for a decreasing value. The value's direction is set by **Trend axis**.
 
-    * **Trend axis** - when set to **On**, the visual shows the trend axis as the background of the KPI visual. People consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. For this report, select **Direction** \> **High is good**. Optionally, change the color settings.
+    - **Trend axis** - when set to **On**, the visual shows the trend axis as the background of the KPI visual. People consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. For this report, select **Direction** \> **High is good**. Optionally, change the color settings.
 
         :::image type="content" source="media/power-bi-visualization-kpi/power-bi-format-trend-axis.png" alt-text="Screenshot of the Trend axis formatting options.":::
 
-    * **Target label** - when set to **On**, the visual shows the value's label. **Distance to goal** sets the style and direction of the distance from the goal.
+    - **Target label** - when set to **On**, the visual shows the value's label. **Distance to goal** sets the style and direction of the distance from the goal.
 
         :::image type="content" source="media/power-bi-visualization-kpi/power-bi-format-distance-to-goal.png" alt-text="Screenshot of the Format distance to go pane.":::
 
-    * **Date** - when set to **On**, the visual shows the date. Optionally, change the font, and its style and color.
+    - **Date** - when set to **On**, the visual shows the date. Optionally, change the font, and its style and color.
 
 KPIs are also available on your mobile devices. It gives you the option to be always connected to your business's heartbeat.
 
 ## Considerations and troubleshooting
 
-- If your KPI doesn't look like the example, it may be because you didn't sort by **FiscalMonth**. KPIs don't have a sort option. Start again and sort by **FiscalMonth** *before* you convert your visualization to a KPI.   
+- If your KPI doesn't look like the example, it might be because you didn't sort by **FiscalMonth**. KPIs don't have a sort option. Start again and sort by **FiscalMonth** *before* you convert your visualization to a KPI.
 - In general, if your KPI doesn't display a trend axis, make sure that the column in the **Value** well is continuous and doesn't include a null value.
 
 ## Related content
 
-* [Tips and tricks for Power BI Map visualizations](power-bi-map-tips-and-tricks.md)
+- [Tips and tricks for Power BI Map visualizations](power-bi-map-tips-and-tricks.md)
 
-* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 More questions? [Try the Power BI Community.](https://community.powerbi.com/)

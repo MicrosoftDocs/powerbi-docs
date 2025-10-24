@@ -3,7 +3,7 @@ title: Customize the Visualizations pane in Power BI Desktop and the Power BI se
 description: Personalize the report Visualizations pane in Microsoft Power BI.
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'kfollis'
+ms.reviewer: juliacawthra
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals

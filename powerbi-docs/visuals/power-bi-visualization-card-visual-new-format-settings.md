@@ -27,7 +27,7 @@ Whether you’re a seasoned Power BI user or new to data visualization, if you'r
 
 ## Prerequisites
 
-To format and customize your column chart in **Power BI Desktop**, select the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+To format and customize your card visual in **Power BI Desktop**, select the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your card visuals to meet your specific needs.
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/(new)-card-format-settings-desktop.png" alt-text="Power BI Desktop screenshot showing the Visualizations pane, Format visual icon, and both the Visual and General tabs highlighted.":::
 

@@ -20,7 +20,7 @@ Query Editor in Power BI Desktop is similar to the Power Query add-in capability
 
 You can get additional information from the [Power Query Resource Center](https://support.office.com/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94).
 
-You can also view the [Formula Reference](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
+You can also view the [Formula Reference](https://support.microsoft.com/office/create-power-query-formulas-in-excel-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## Data types in Query Editor
 

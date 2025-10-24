@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/06/2025
+ms.date: 10/07/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -23,7 +23,7 @@ This article provides an overview of the Copilot capabilities for Power BI.
 > [!NOTE]
 > **Copilot is enabled by default.** Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 >
-> **Some Copilot experiences are generally available, and others are in preview.** The report agent (the Copilot pane available on the right side of reports) is generally available, while the Power BI agent (the standalone, full-screen experience accessible from the Power BI left navigation) is in preview. Copilot experiences for Data Factory, Data Engineering, Data Science, Data Warehouse, and Real-Time Intelligence are in preview.
+> **Some Copilot experiences are generally available, and others are in preview.** The report agent (the Copilot pane available on the right side of reports) is generally available, while the Power BI agent (the standalone, full-screen experience accessible from the Power BI left navigation) and Copilot in apps (the full-page experience accessible from app navigation) are both in preview. Copilot experiences for Data Factory, Data Engineering, Data Science, Data Warehouse, and Real-Time Intelligence are in preview.
 >
 > **Sovereign clouds are unsupported.** Copilot isn't yet supported for sovereign clouds due to GPU availability.
 >
@@ -39,7 +39,7 @@ Copilot in Power BI offers a range of capabilities designed to enhance productiv
 
 ### Copilot for business users: Chat with your data
 
-For business users, chatting with your data can mean finding content, asking for ad-hoc analyses or insights, quickly creating and analyzing visuals, and getting summaries of whole reports or specific topics (similar to what you might ask your analyst to do when you have follow-up questions about a report they made). When a question is related to data in the semantic model, Copilot will use the semantic model to answer the question, otherwise it may answer from the [LLM's general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have two chat-with-your-data experiences for business users: the standalone Copilot experience and the Copilot pane.
+For business users, chatting with your data can mean finding content, asking for ad-hoc analyses or insights, quickly creating and analyzing visuals, and getting summaries of whole reports or specific topics (similar to what you might ask your analyst to do when you have follow-up questions about a report they made). When a question is related to data in the semantic model, Copilot will use the semantic model to answer the question, otherwise it may answer from the [LLM's general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have three chat-with-your-data experiences for business users: the standalone Copilot experience, the Copilot pane for reports, and Copilot in apps.
 
 #### The standalone Copilot experience (preview): Find data and ask questions about any item
 
@@ -58,7 +58,7 @@ The standalone Copilot can help with the following tasks:
 
 Newly purchased capacity or capacity scale-up operations may take up to 24 hours for Copilot to recognize and become available for use.
 
-The standalone Copilot experience isn't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West. While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use is not officially supported at this time.
+The standalone Copilot and Copilot in apps experiences aren't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West. While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use is not officially supported at this time.
 
 #### The Copilot pane: Ask questions about an open report
 
@@ -112,10 +112,31 @@ The following requirements pertain to all Copilot experiences in Power BI.
 
 The following requirements pertain to the full-screen standalone Copilot experience accessed via the left navigation.
 
+#### Enable tenant settings
+
 - The setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
 - The tenant setting called [**Users can access a standalone, cross-item Power BI Copilot experience (preview)**](copilot-enable-power-bi.md#enable-the-standalone-power-bi-copilot-experience-preview) must be enabled.
 
 :::image type="content" source="media/copilot-introduction/copilot-access-standalone-enabled.png" alt-text="Screenshot of the standalone Copilot admin screen with options enabled." lightbox="media/copilot-introduction/copilot-access-standalone-enabled.png":::
+
+#### Link to a Fabric Copilot capacity
+
+To use the standalone Copilot experience, your activity must be linked to a capacity. The recommended approach is to use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI is automatically billed to a single, centralized capacity. 
+
+#### Use an autoselected Copilot workspace
+
+If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot. This workspace must meet Copilot requirements (linked to an F2 capacity or higher, in a supported region, and enabled for Copilot) and is used for usage tracking and billing.
+We automatically select a workspace from a partially randomized list of eligible workspaces, weighted toward those with more available capacity. This approach helps balance usage and prevents overloading any single capacity. This selection persists across sessions as long as the workspace remains Copilot-enabled and has available capacity. If the workspace becomes disabled for Copilot or reaches its capacity limit, we automatically reassign a new one and notify the user. If an FCC becomes available, it always overrides the autoselected workspace. Users receive a dismissible notification showing the chosen workspace and a direct option to change it.
+
+:::image type="content" source="media/copilot-introduction/workspace-autoselection.png" alt-text="Screenshot of the standalone Copilot confirmation that the workspace was autoassigned via autoselection." lightbox="media/copilot-introduction/workspace-autoselection.png":::
+
+#### Change your Copilot workspace
+
+You can update your Copilot workspace anytime via **More > Manage workspace** in the standalone Copilot experience. Once you manually select a workspace, we only override it if an FCC becomes available. If your chosen workspace becomes disabled or reaches its capacity limit, we alert you and provide options to select a new workspace manually or through autoselection.
+
+:::image type="content" source="media/copilot-introduction/workspace-manage.png" alt-text="Screenshot of the standalone Copilot more menu with the option to manage workspace." lightbox="media/copilot-introduction/workspace-manage.png":::
+
+:::image type="content" source="media/copilot-introduction/workspace-choose.png" alt-text="Screenshot of the standalone Copilot menu with the option to choose or update your Copilot workspace." lightbox="media/copilot-introduction/workspace-choose.png":::
 
 ### Requirements for Copilot within reports
 
@@ -127,6 +148,17 @@ These requirements pertain to using Copilot within Power BI reports, including t
   - The report must be located in a workspace linked to either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or a paid [Fabric](/fabric/enterprise/licenses) capacity. [Learn how to check your license type](copilot-create-report-service.md#use-copilot-in-the-power-bi-service-for-the-first-time).
   - To generate summarized insights in reports, you need at least *read access* to the workspace, report, or app.
   - To add a narrative visual to a report or generate Copilot reports, you need *edit access* to the workspace or report, or *build access* to the semantic model
+
+### Requirements for app-scoped Copilot (preview)
+
+These requirements pertain to using app-scoped Copilot in Power BI apps, the full-page Copilot experience accessible from app navigation.
+
+- The setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
+- The setting for showing Copilot in the app navigation must be enabled. This setting is unique per app and is managed while [publishing or updating an app](../collaborate-share/service-create-distribute-apps.md) under *Advanced settings* > *Show Copilot in app navigation*.
+  - Note: Copilot in apps is on by default and can be managed per app.
+
+:::image type="content" source="media/copilot-introduction/workspace-app-copilot-setting.png" alt-text="Screenshot of app-scoped Copilot setting.":::
+
 
 ## Related content
 

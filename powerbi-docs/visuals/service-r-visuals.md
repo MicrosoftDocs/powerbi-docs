@@ -3,7 +3,7 @@ title: Create advanced analytics and visualizations using R scripts
 description: Use R scripts in Power BI Desktop to create advanced analytics and advanced visualizations.
 author: miguelmyersMS
 ms.author: miguelmyers
-ms.reviewer: 'kfollis'
+ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -75,7 +75,7 @@ The following table describes R visuals capabilities based on licensing.
 
 Note: (*) Python visuals in the service are supported in Fabric regions. This means that reports published to workspaces will display the Python chart visual when the workspace has (1) a Fabric license, (2) a Pro or PPU license, or (3) a premium license and the PBI home tenant is in a region with [Fabric Spark workload availability](/fabric/admin/region-availability). Python visuals are supported in Desktop for all users.  
   
-For more information about Power BI Pro licenses and how they differ from free licenses, see [Purchase and assign Power BI Pro user licenses](/power-bi/enterprise/service-admin-purchasing-power-bi-pro).
+For more information about Power BI Pro licenses and how they differ from free licenses, see [Purchase and assign Power BI Pro user licenses](/fabric/enterprise/powerbi/service-admin-purchasing-power-bi-pro).
 
 ## Overview of R packages
 

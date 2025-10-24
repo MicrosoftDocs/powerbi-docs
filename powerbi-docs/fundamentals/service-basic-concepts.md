@@ -3,7 +3,7 @@ title: Basics of the Power BI service
 description: The Power BI service apps, workspaces, dashboards, reports, semantic models, and workbooks, written for all users.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -52,7 +52,7 @@ The following table lists some of the key concepts and terms used in the Power B
 | Report | One or more pages of interactive visuals, text, and graphics based on a single semantic model, often organized to address specific questions or areas of interest. | [Reports in Power BI](../consumer/end-user-reports.md)<br><br>[Reports versus dashboards](../consumer/end-user-reports.md#dashboards-versus-reports) |
 | App | A collection of dashboards, reports, and semantic models bundled together for sharing with individuals, groups, or organizations. | [End-user apps](../consumer/end-user-apps.md) |
 | Workspace| A collaborative area where designers store and manage collections of dashboards and reports. Business users are assigned roles to interact with the content. | [Learn more about workspaces](../consumer/end-user-workspaces.md) |
-| License and subscription | Determines the level of access and features available to users in the Power BI service, such as free, Pro, or Premium licenses. | [Organizational licenses and subscriptions for Fabric and Power BI](../enterprise/service-admin-licensing-organization.md)<br><br>[Licenses and subscriptions for business users](../consumer/end-user-license.md) |
+| License and subscription | Determines the level of access and features available to users in the Power BI service, such as free, Pro, or Premium licenses. | [Organizational licenses and subscriptions for Fabric and Power BI](../enterprise/service-admin-licensing-organization.md)<br><br>[Licenses and subscriptions for business users](end-user-license.md) |
 | Capacity | A dedicated set of resources used to enhance performance and scalability for Power BI content, often associated with Premium features. | [Manage your Fabric capacity](/fabric/admin/capacity-settings) |
 | Workbook | An Excel file uploaded to the Power BI service, which can be viewed or used as a data source for reports and dashboards. | [Get data from Excel workbook files](../connect-data/service-excel-workbook-files.md)<br><br>[Publish to Power BI from Microsoft Excel](../connect-data/service-publish-from-excel.md) |
 | Dataflow | A collection of data transformation steps stored in the Power BI service, enabling reusable and centralized data preparation. | [Creating a dataflow](../transform-model/dataflows/dataflows-create.md)<br><br>[Introduction to dataflows and self-service data prep](../transform-model/dataflows/dataflows-introduction-self-service.md) |

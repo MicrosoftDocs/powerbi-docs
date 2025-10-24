@@ -37,7 +37,7 @@ A constraint in the Power BI service allows only *one* gateway per *report*. Eve
 
 ### Connection type
 
-The Power BI service offers two types of connections: DirectQuery and Import. Not all data sources support both connection types. Many factors might contribute to your choice of one over the other, such as security requirements, performance, data limits, and data model sizes. To learn more about connection types and supported data sources, see the [list of available data source types](service-gateway-data-sources.md#list-of-available-data-source-types).
+The Power BI service offers two types of connections: DirectQuery and Import. Not all data sources support both connection types. Many factors might contribute to your choice of one over the other, such as security requirements, performance, data limits, and data model sizes. To learn more about connection types and supported data sources, see the [list of available data source types](service-gateway-data-sources.md#available-data-source-types).
 
 Depending on which type of connection is used, gateway usage can be different. For example, try to separate DirectQuery data sources from scheduled refresh data sources whenever possible. The assumption is that they're in different reports and can be separated. Separating sources prevents the gateway from having thousands of DirectQuery requests queued up at the same time as the morning's scheduled refresh of a large-size data model that's used for the company's main dashboard.
 

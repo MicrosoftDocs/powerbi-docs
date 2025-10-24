@@ -79,7 +79,7 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 
 ## Limitations
 
-- Copilot isn't supported in workspaces backed by [Power BI Premium Per User (PPU)](/power-bi/enterprise/service-premium-per-user-faq).
+- Copilot isn't supported in workspaces backed by [Power BI Premium Per User (PPU)](/fabric/enterprise/powerbi/service-premium-per-user-faq).
 - The Copilot button on the ribbon might be visible to some customers even if the Copilot chat pane isn't yet available for them. This situation is temporary.
 - The report view Copilot pane isn't supported in Power BI Desktop versions dated January 2025 and earlier. Update to the latest version to access this feature.
 

@@ -50,7 +50,7 @@ To download a report as a .pbix file, follow these steps:
 To download a report .pbix file, two **modes** are available:
 
 - **A copy of the report and data**. Choosing this mode results in downloading a .pbix file that includes both the report you're downloading and the data on which the report is based.
-- **A copy of the report with a live connection to the data online**. Choosing this mode results in downloading a .pbix file that contains the report you're downloading, but no data. Instead, the .pbix has a live connection to the semantic model in the Power BI service. This mode is especially useful in situations in which Power BI Desktop would be unable to open the .pbix file if the data was included, such as for reports based on a semantic model that is configured for [incremental refresh](../connect-data/incremental-refresh-configure.md), or reports that have been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
+- **A copy of the report with a live connection to the data online**. Choosing this mode results in downloading a .pbix file that contains the report you're downloading, but no data. Instead, the .pbix has a live connection to the semantic model in the Power BI service. This mode is especially useful in situations in which Power BI Desktop would be unable to open the .pbix file if the data was included, such as for reports based on a semantic model that is configured for [incremental refresh](../connect-data/incremental-refresh-configure.md).
 
 Both modes aren't available in all scenarios. If a mode isn't available, a tooltip explains why. For example, here's the message that you see if you download a report that's based on a semantic model that's configured for incremental refresh:
 
@@ -123,7 +123,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * You can't download reports based on semantic models that are imported from OneDrive for work or school.
 * You can't download reports based on local [Excel](../connect-data/service-excel-workbook-files.md) or [CSV](../connect-data/service-comma-separated-value-files.md) files that were uploaded to Power BI.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
-* You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md#download-original-sample-pbix-power-bi-files) from the Power BI samples article.
+* You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md) from the Power BI samples article.
 * You can only download usage metric reports in [live connected report mode](#download-modes).
 * You can't download a copy of a report if the copy is saved in a workspace other than where the original report is saved.
 * If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix will still contain the old data source.
@@ -143,7 +143,6 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Semantic models with [incremental refresh](../connect-data/incremental-refresh-configure.md) can't be downloaded to a .pbix file.
 * Semantic models migrated from Azure Analysis Services by using the [Azure Analysis Services to Power BI Premium migration feature](../enterprise/aas-pbi-migration-overview.md) can't be downloaded to a .pbix file.
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#considerations-and-limitations).
-* Semantic models modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
 * You can't download semantic models based on data imported from OneDrive for work or school.
 * You can't download Direct Lake semantic models.
 * Downloading a .pbix is subject to size limitations. The maximum size allowed is the smaller of the following: [maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size), or 10GB. 

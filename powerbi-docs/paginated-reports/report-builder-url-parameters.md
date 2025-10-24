@@ -6,7 +6,6 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.reviewer: "nisrinivasan"
 ms.custom: ""
 ms.date: 01/18/2023
 ---

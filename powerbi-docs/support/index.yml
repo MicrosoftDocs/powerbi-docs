@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Power BI support
-summary: Self-service guidance to solve common support issues or to learn how to contact Support.
+title: Power BI self-service guidance and support
+summary: Learn how to get help with Power BI, create support tickets, and understand support options and best practices.
 
 metadata:
-  title: Power BI support
-  description: Self-service guidance to solve common support issues or to learn how to contact Support.
+  title: Power BI self-service guidance and support
+  description: Learn how to get help with Power BI, create support tickets, and understand support options and best practices.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-fundamentals
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: julcsc
   ms.author: juliacawthra
-  ms.date: 02/26/2024
+  ms.date: 09/24/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -22,48 +22,45 @@ landingContent:
 # Start card title with a verb
 
   # Card (optional)
-  - title: About Support requests
-    linkLists: 
-      - linkListType: how-to-guide
-        links:
-          - text: Support overview
-            url: service-support-options.md
-          - text: How to contact Support #can we eliminate the PBI version?
-            url: service-support-options.md
-          - text: Create a Support ticket
-            url: create-support-ticket.md
-
-# Card (optional)
-  - title: Support-related admin settings
+  - title: Stay informed about service status
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: whats-new
         links:
-          - text: Help and Support settings
-            url: ../admin/service-admin-portal-help-support.md
+          - text: Planned maintenance
+            url: service-planned-maintenance.md
           - text: Service interruption notifications
             url: service-interruption-notifications.md
+          - text: Check for service-wide outages
+            url: https://support.powerbi.com
 
-  # Card (optional)
   - title: Before you contact Support
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: View current and historical service health in the Microsoft 365 admin center
+          - text: Track service health in Microsoft 365
             url:  service-admin-health.md
-          - text: Are there any service-wide outages
-            url: https://support.powerbi.com
-          - text: Is this problem a known issue?
+          - text: See if this is a known issue
             url: ../troubleshoot/known-issues/power-bi-known-issues.md
+          - text: Check troubleshooting guides
+            url: ../troubleshoot/index.yml
           - text: Look for an answer in the Community forum
             url: https://community.powerbi.com
-          - text: Tips for getting answers to your Power BI questions
-            url: service-tips-for-finding-help.md
 
-  # Card
-  - title: Troubleshooting guides
+  - title: Get support for Power BI
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Power BI
-            url: ../troubleshoot/index.yml
+          - text: Know your support options
+            url: service-support-options.md
+          - text: Create a support ticket
+            url: create-support-ticket.md
+          - text: Be efficient with support requests
+            url: best-practices-creating-sr.md
+          - text: Access customer data
+            url: access-customer-data.md
+          - text: Capture diagnostic information
+            url: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+          - text: Move Power BI between regions
+            url: service-admin-region-move.md
+
             

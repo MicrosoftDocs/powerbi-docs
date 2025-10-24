@@ -14,9 +14,17 @@ ms.date: 9/17/2024
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
+Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/whats-new.md).
 
 Ready to get started? [Get Power BI Report Builder](./download-powerbi-report-builder.md).
+
+## September 2025
+
+Version 15.7.1815.334, released September 11, 2025
+
+- Default map in Power BI Report Builder to use Azure Maps instead of Bing Maps APIs.
+- Fixed issue where login dialog would not prompt users to login when editing paginated report from Power BI workspace
+- Added data limits for Azure Analysis Services data sources
 
 ## March 2025
 

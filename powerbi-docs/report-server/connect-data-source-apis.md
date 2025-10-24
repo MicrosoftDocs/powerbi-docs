@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 We enable the ability to update connections for Power BI reports for DirectQuery and refresh.
 
 > [!IMPORTANT]
-> This is also a breaking change on how you could set this up in previous releases. If you're using a pre-October 2020 version of Power BI Report Server, see [Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server pre-October 2020](connect-data-source-apis-pre-oct-2020.md)
+> This is also a breaking change on how you could set this up in previous releases.
 
 ## Prerequisites
 
