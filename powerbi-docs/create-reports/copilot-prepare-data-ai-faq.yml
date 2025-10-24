@@ -174,7 +174,7 @@ sections:
           Indexing is done for all models that have the Q&A setting enabled. 
           
           > [!NOTE]
-          > The Q&A setting is on by default for *import* models. You can find more details about this setting in Q&A settings documentation. 
+          > The Q&A setting is on by default for *import and direct lake* models. You can find more details about this setting in Q&A settings documentation. 
 
           Reindexing occurs when one of the following actions takes place: 
 
