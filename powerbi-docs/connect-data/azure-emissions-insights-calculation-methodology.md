@@ -30,7 +30,7 @@ Microsoft's cloud carbon calculation methodology calculates the carbon emissions
 
 The following image shows examples of scope 1, 2, and 3 carbon emission types in the Microsoft cloud value chain.
 
-:::image type="content" source="media/azure-emissions-calculation-methodology/api-scope-valuechain.png" alt-text="Carbon emission types in Microsoft cloud value chain.":::
+:::image type="content" source="./media/azure-emissions-calculation-methodology/api-scope-valuechain.png" alt-text="Carbon emission types in Microsoft cloud value chain.":::
 
 ## Standards used for calculation
 
@@ -50,7 +50,7 @@ The API calculations are the result of a life cycle evaluation. This evaluation 
 
 The following image shows carbon accounting scopes by stakeholder:
 
-:::image type="content" source="media/azure-emissions-calculation-methodology/api-stakeholder-scope.png" alt-text="Carbon scopes by stakeholder.":::
+:::image type="content" source="./media/azure-emissions-calculation-methodology/api-stakeholder-scope.png" alt-text="Carbon scopes by stakeholder.":::
 
 ## Included emission sources
 
@@ -97,7 +97,7 @@ The scope 2 methodology calculates the energy and carbon impacts for each data c
 
 The following image summarizes calculation of scope 3 emissions. It shows the scope 3 emissions allocation methodology.
 
-:::image type="content" source="media/azure-emissions-calculation-methodology/api-lifecycle.png" alt-text="scope 3 allocation":::
+:::image type="content" source="./media/azure-emissions-calculation-methodology/api-lifecycle.png" alt-text="scope 3 allocation":::
 
 We start with the life cycle evaluation of materials used in our data center infrastructure and calculate carbon emissions by data center. We then segment this sum based on customer usage of each data center.
 
