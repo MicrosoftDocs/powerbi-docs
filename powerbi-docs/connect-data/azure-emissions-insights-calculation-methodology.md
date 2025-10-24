@@ -29,7 +29,7 @@ Microsoft's Azure emissions calculation methodology determines the carbon emissi
 
 The following image shows examples of scope 1, 2, and 3 carbon emission types in the Microsoft cloud value chain.
 
-:::image type="content" source="./media/azure-emissions-calculation-methodology/api-scope-valuechain.png" alt-text="Screenshot of carbon emission types in Microsoft cloud value chain.":::
+:::image type="content" source="./media/azure-emissions-calculation-methodology/api-scope-value-chain.png" alt-text="Screenshot of carbon emission types in Microsoft cloud value chain.":::
 
 ## Standards used for calculation
 
