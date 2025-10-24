@@ -8,7 +8,6 @@ ms.topic: how-to
 ms.date: 10/24/2025
 ms.author: mamaza
 ms.reviewer: lsuresh
-ms.search.form: Azure emissions insights
 ms.custom: ignite-2024
 ---
 
@@ -147,6 +146,3 @@ Usage is based on a sum of your company’s compute, storage, and data transfer 
 The unit used is metric tons of carbon dioxide equivalent (MTCO<sub>2</sub>E).
 
 
-## Related information
-
-- [Overview of Azure emissions insights](azure-emissions-insights-overview.md)
