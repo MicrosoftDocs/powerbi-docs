@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.reviewer: lsuresh
-ms.date: 10/21/2025
+ms.date: 10/24/2025
 LocalizationGroup: Connect to services
 ms.custom: sfi-image-nochange
 ---
@@ -134,7 +134,7 @@ In February 2024, we refined our methodology for attributing carbon estimates. T
 
 ### What is the difference between the old and new methodologies?
 
-The new methodology now allows for a more enhanced and detailed attribution of carbon emissions when a resource belongs to a nonspecific region such as **All**, **Null**, or **Global**. Instead of only subscription-level carbon emissions data, you can now access emissions information for each of your individual Azure resources. This granular data is accessible through Azure Carbon Optimization capabilities. It provides you with detailed emissions to help you understand and reduce carbon footprint of your Azure workloads.
+The new methodology allows for a more enhanced and detailed attribution of carbon emissions when a resource belongs to a nonspecific region such as **All**, **Null**, or **Global**. Instead of only subscription-level carbon emissions data, you can now access emissions information for each of your individual Azure resources. This granular data is accessible through Azure Carbon Optimization capabilities. It provides you with detailed emissions to help you understand and reduce carbon footprint of your Azure workloads.
 
 ### Is there a plan to update the Emissions Impact Dashboard for Azure to display granular, resource-grain emissions data?
 
@@ -166,15 +166,11 @@ The Emissions Impact Dashboard for Azure might take up to 24 hours to load your 
 
 **Is Microsoft trying to shift responsibility for emissions from Microsoft to me?**
 
-No. Carbon emissions from Azure services are reported as Microsoft's scope 1, 2 and 3 emissions, consistent with the industry-standard [Greenhouse Gas (GHG) Protocol](https://ghgprotocol.org/). Collectively they become our customers’ scope 3 emissions as defined by the GHG Protocol - scope 3 emissions are emissions another entity emits on your behalf. The Emissions Impact Dashboard for Azure provides new transparency to your scope 3 emissions associated with the use of Azure services, specifically Scope 3 Category 1 "Purchased goods and services."
-
-**If Microsoft's operations are carbon neutral and powered by renewable energy, why aren't customer emissions from Azure services zero?**
-
-There are two primary reasons why customer emissions from Microsoft aren’t zero. The first is related to GHG accounting practices, and the second has to do with the boundary of this analysis. To achieve carbon neutral operations, Microsoft uses carbon offsets to reduce certain emission sources such as onsite fuel combustion for backup generators, refrigerants, and vehicle fleets. These reduce Microsoft’s *net* emissions to zero. The dashboard reports *gross* GHG emissions before the application of these offsets, though the volume of offsets applied and net emissions is reported in the **GHG Reporting** tab for further transparency. The second reason is that in addition to the energy and emissions associated with the operation of Microsoft's datacenters, the emissions footprint includes the energy used by Internet Service Providers outside of Microsoft’s operational boundary to transmit data between Microsoft datacenters and Azure customers.
+No. Carbon emissions from Azure services are reported as Microsoft's scope 1, 2 and 3 emissions, consistent with the industry-standard [Greenhouse Gas (GHG) Protocol](https://ghgprotocol.org/). Collectively they become our customers’ scope 3 emissions as defined by the GHG Protocol. Scope 3 emissions are emissions another entity emits on your behalf. The Emissions Impact Dashboard for Azure provides new transparency to your scope 3 emissions associated with the use of Azure services, specifically Scope 3 Category 1 "Purchased goods and services."
 
 **What can I do to reduce emissions further?**
 
-Being resource and cost efficient in Azure reduces the environmental impact from your use of Azure. As an example, unused virtual machines are wasteful whether in the cloud or on-premises. Right-sizing virtual machines to improve compute utilization factors (CUF) decreases energy use per useful output, just as it does with physical servers. [Microsoft Cost Management](/azure/cost-management-billing/costs/cost-mgt-best-practices) and [Azure carbon optimization](/azure/carbon-optimization/overview) give you the tools to plan for, analyze and reduce your spending to maximize your cloud investment. The [sustainability guidance within the Azure Well-Architected Framework (WAF)](/azure/architecture/framework/sustainability/) is also designed to help you optimize your cloud workloads and reduce your operational footprint.
+Resource and cost efficiencies in Azure reduce the environmental impact from your use of Azure. As an example, unused virtual machines are wasteful whether in the cloud or on-premises. Right-sizing virtual machines to improve compute utilization factors (CUF) decreases energy use per useful output, just as it does with physical servers. [Microsoft Cost Management](/azure/cost-management-billing/costs/cost-mgt-best-practices) and [Azure carbon optimization](/azure/carbon-optimization/overview) give you the tools to plan for, analyze and reduce your spending to maximize your cloud investment. The [sustainability guidance within the Azure Well-Architected Framework (WAF)](/azure/architecture/framework/sustainability/) is also designed to help you optimize your cloud workloads and reduce your operational footprint.
 
 **My company contract renewal process is underway and we'll have a new account number. Will I lose my historical emissions data?**
 
