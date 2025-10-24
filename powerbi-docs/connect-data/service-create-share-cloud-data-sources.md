@@ -40,32 +40,39 @@ To create a shareable cloud connection, take the following steps:
 With your connection created, you're ready to share it with others.
 
 > [!NOTE]
-> When a .PBIX file with a cloud data source is published from Power BI Desktop, a cloud connection is created automatically.
+> When you publish a .PBIX file with a cloud data source from Power BI Desktop, a cloud connection is created automatically.
 
 ## Share a shareable cloud connection
 
-To share a shareable cloud connection that you've already created, go to your **Connections** settings in the Power BI service, select the **More** menu (the ellipses) for the connection you want to share, and select **Manage users**.
+To share a shareable cloud connection, take the following steps:
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-04.png" alt-text="Screenshot of adding users to a shareable connection.":::
+1. In the Power BI service, select **Settings** :::image type="icon" source="media/service-create-share-cloud-data-sources/settings-icon.png":::, and then select **Manage connections and gateways**.
 
-The **Manage users** window appears, where you can search users by name or by their email address, and then grant them the permission level you want them to have. You must at least grant *User* permission to allow users to connect their artifacts to the connection's data source.
+1. Locate the connection that you want to share. Next to it, select **More** :::image type="icon" source="media/service-create-share-cloud-data-sources/ellipsis-icon.png":::, and then select **Manage users**.
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-05.png" alt-text="Screenshot of applying user permission to a shareable cloud connection.":::
+   :::image type="content" source="media/service-create-share-cloud-data-sources/manage-connections-gateways-manage-users.png" alt-text="Screenshot of the Manage Connections and Gateways page. In the connection list, Manage users is highlighted in the shortcut menu for MyDemoConnection.":::
 
-Once you've found the user and assigned permission, select **Share** at the bottom of the **Manage users** window to apply your selections.
+1. In the **Manage users** dialog, search for users you want to share the connection with. You can search by their name or email address. Grant them the permission level you want them to have. You must at least grant *User* permission to allow users to connect their artifacts to the connection's data source.
 
+   :::image type="content" source="media/service-create-share-cloud-data-sources/manage-users-share-connection-dialog.png" alt-text="Screenshot of the Manage users dialog that shows a search box and a Shared with list. Available permissions are User, User with resharing, and Owner.":::
+
+1. Select **Share** to apply your selections.
 
 ## Assign a shared cloud connection to a semantic model
 
-Once you've created a shareable cloud connection, you can assign it to a semantic model.
+After you create a shareable cloud connection, you can assign it to a semantic model.
 
-Open the settings for the semantic model to which you want the shareable connection to apply, and expand the **Gateway and cloud connections** section. You'll notice that the connection is mapped to a *Personal Cloud Connection* by default.
+1. Go to the workspace that contains the semantic model that you want to apply the shareable connection to.
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-06.png" alt-text="Screenshot of cloud connection defaulting to personal cloud connection.":::
+1. Locate the semantic model in the list. Next to the name of the model, select **More** :::image type="icon" source="media/service-create-share-cloud-data-sources/ellipsis-icon.png":::, and then select **Settings**.
 
-From the **Maps to** drop down, select the name of the shareable connection you created and want to use, then select **Apply**.
+1. On the settings page, expand the **Gateway and cloud connections** section. The connection is mapped to a personal cloud connection by default.
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-07.png" alt-text="Screenshot of selecting a shareable cloud connection for a semantic model.":::
+   :::image type="content" source="media/service-create-share-cloud-data-sources/semantic-model-cloud-connection-default-settings.png" alt-text="Screenshot of the gateway and cloud connection settings for a semantic model. The data source is mapped to a personal cloud connection.":::
+
+1. In the **Maps to** list, select the name of the shareable connection that you want to use, and then select **Apply**.
+
+   :::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-07.png" alt-text="Screenshot of selecting a shareable cloud connection for a semantic model.":::
 
 That's it, you've now assigned your shareable cloud connection to the semantic model.
 
