@@ -131,9 +131,8 @@ Some regions aren't included in the emissions calculations, including data cente
 | --- | --- |
 | Azure Government | US DoD Central </br> US DoD East </br> US Gov Arizona </br> US Gov Texas </br> US Gov Virginia </br> US Sec East </br> US Sec West </br> US Sec West Central </br> |
 | China | China East </br> China East 2 </br> China East 3 </br> China North </br> China North 2 </br> China North 3 |
-| Germany | Germany Central (Sovereign) </br> Germany North </br> Germany Northeast (Sovereign) </br> Germany West Central |
-| India | Central India </br> West India |
-| Qatar | Qatar Central |
+| Germany | Germany Central (Sovereign) </br> Germany Northeast (Sovereign) |
+
 
 ## FAQ
 
