@@ -70,7 +70,7 @@ Review the following prerequisites for using scatter, bubble, and dot plot chart
 
 This tutorial uses the **Retail Analysis Sample PBIX** file.
 
-1. Download the [Retail Analysis Sample  file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
+1. Download the [Retail Analysis Sample file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
 
 1. In Power BI Desktop, select **File** > **Open report**.
 
@@ -111,7 +111,7 @@ Let's begin by creating a scatter chart that highlights district sales data in t
 
    - Expand **Sales** and select the **Sales Per Sq Ft** and **Total Sales Variance %** checkboxes.
 
-   - Expand **District** and select the  **District** checkbox.
+   - Expand **District** and select the **District** checkbox.
 
    By default, Power BI creates a clustered column chart to display the data. On the **Visualizations** pane, the **District** field is assigned to the **X-axis** and the other two fields are assigned to the **Y-axis**.
 
@@ -139,7 +139,7 @@ The following steps show how to chart a third data dimension for the Retail Anal
 
 1. On the **Data** pane, expand **Sales** > **This Year Sales** and select the **Value** checkbox.
 
-   Notice that the field **This Year Sales** is added to the **Size** section of the **Visualizations** pane. Power BI uses the value information for the field to replace each data point with a _bubble_. The volume size of the bubble is proportionate to the numerical sales value of the data point.  
+   Notice that the field **This Year Sales** is added to the **Size** section of the **Visualizations** pane. Power BI uses the value information for the field to replace each data point with a _bubble_. The volume size of the bubble is proportionate to the numerical sales value of the data point.
 
    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-bubble-initial.png" alt-text="Screenshot that shows how data points on a scatter chart transition to bubbles of different sizes based on the numerical value.":::
 
@@ -176,7 +176,7 @@ The following steps show how to chart a third data dimension for the Retail Anal
 
     :::image type="icon" source="media/power-bi-visualization-scatter/power-bi-median.png" alt-text="Screenshot of Analytics pane with Median line outlined in red."::: 
 
-1. Add a median line. Select **Median line** > **Add line**. By default, Power BI adds a median line for *Sales per sq ft*. This line isn't helpful since there are only 10 data points so that the median is created with just five data points on each side. Instead, switch the **Series** to *Total sales variance %*.  
+1. Add a median line. Select **Median line** > **Add line**. By default, Power BI adds a median line for *Sales per sq ft*. This line isn't helpful since there are only 10 data points so that the median is created with just five data points on each side. Instead, switch the **Series** to *Total sales variance %*.
 
 ## Create a dot plot chart
 
