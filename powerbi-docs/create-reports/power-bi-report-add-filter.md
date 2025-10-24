@@ -63,21 +63,21 @@ Visuals have two kinds of filters:
 
 ---
 
-1. Open the **Filters**, **Visualizations**, and **Data** panes, if they're not already open.
+2. Open the **Filters**, **Visualizations**, and **Data** panes, if they're not already open.
 
     :::image type="content" source="media/power-bi-report-add-filter/power-bi-display-panes.png" alt-text="Screenshot of a Power BI service report in edit mode. The Filters, Visualizations, and Data panes are next to the canvas and are highlighted." lightbox="media/power-bi-report-add-filter/power-bi-display-panes.png":::
 
-1. To make a visual active, select it. In this example, the scatter chart on the **Overview** page is selected. The **Visualizations** pane lists all the fields in the visual. The **Filters** pane also lists the fields, under the **Filters on this visual** heading.
+3. To make a visual active, select it. In this example, the scatter chart on the **Overview** page is selected. The **Visualizations** pane lists all the fields in the visual. The **Filters** pane also lists the fields, under the **Filters on this visual** heading.
 
     :::image type="content" source="media/power-bi-report-add-filter/power-bi-default-visual-filter.png" alt-text="Screenshot of a report in edit mode. A scatter chart is selected. In the side panes, the filters on this visual and the values are highlighted." lightbox="media/power-bi-report-add-filter/power-bi-default-visual-filter.png":::
   
-1. On the **Data** pane, locate the field that you want to add as a new visual-level filter. Drag that field to the **Filters** pane, into the area under **Filters on this visual** that's labeled **Add data fields here**. In this example, the **Category** field is added to that area.
+4. On the **Data** pane, locate the field that you want to add as a new visual-level filter. Drag that field to the **Filters** pane, into the area under **Filters on this visual** that's labeled **Add data fields here**. In this example, the **Category** field is added to that area.
 
     :::image type="content" source="media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png" alt-text="Screenshot of a report in edit mode. The Category field is highlighted in the Data pane and in the Filters pane, among other visual-level filters." lightbox="media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png":::
 
     The **Category** field *isn't* added to the visualization itself.
 
-1. On the **Filters** pane, go to the filter for the **Category** field, and then select **030-Kids**. The scatter chart is updated when the filter is applied, but the other visuals stay the same.
+5. On the **Filters** pane, go to the filter for the **Category** field, and then select **030-Kids**. The scatter chart is updated when the filter is applied, but the other visuals stay the same.
 
     :::image type="content" source="media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png" alt-text="Screenshot of a report in edit mode. The scatter chart shows sales data only for the 030-Kids category. Only that category is selected in the filter." lightbox="media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png":::
 
@@ -98,7 +98,7 @@ To apply a filter to all visuals on a page, you can add a page-level filter.
 
 1. In Power BI Desktop, open the Retail Analysis report.
 
-1. Select **Report view** :::image type="icon" source="media/power-bi-report-add-filter/report-view-icon.png":::, and then go to the **District Monthly Sales** page.
+2. Select **Report view** :::image type="icon" source="media/power-bi-report-add-filter/report-view-icon.png":::, and then go to the **District Monthly Sales** page.
 
     :::image type="content" source="media/power-bi-report-add-filter/power-bi-report-view.png" alt-text="Screenshot of Power BI Desktop. In the upper-left corner, directly below the ribbon, the Report view button pictures a bar chart and is highlighted.":::
 
@@ -106,19 +106,19 @@ To apply a filter to all visuals on a page, you can add a page-level filter.
 
 1. In the Power BI service, open the Retail Analysis report, and then go to the **District Monthly Sales** page.
 
-1. Select **Edit** to open your report in Editing view.
+2. Select **Edit** to open your report in Editing view.
 
     :::image type="content" source="media/power-bi-report-add-filter/power-bi-edit-view.png" alt-text="Screenshot of the menu bar in the Power BI service. On the end, the Edit menu option and pencil button are highlighted.":::
 
 ---
 
-1. Open the **Filters**, **Visualizations**, and **Data** panes, if they're not already open.
+3. Open the **Filters**, **Visualizations**, and **Data** panes, if they're not already open.
 
-1. On the **Data** pane, locate the field that you want to add as a new page-level filter. Drag that field to the **Filters** pane, into the area under **Filters on this page** that's labeled **Add data fields here**. In this example, the **District Manager** field is added to that area.
+4. On the **Data** pane, locate the field that you want to add as a new page-level filter. Drag that field to the **Filters** pane, into the area under **Filters on this page** that's labeled **Add data fields here**. In this example, the **District Manager** field is added to that area.
 
     :::image type="content" source="media/power-bi-report-add-filter/power-bi-page-filter.png" alt-text="Screenshot of a report in edit mode. The District Manager field is highlighted in the Data pane and Filters pane, among other page-level filters." lightbox="media/power-bi-report-add-filter/power-bi-page-filter.png":::
 
-1. On the **Filters** pane, go to the filter for the **District Manager** field. Under **Filter type**, select **Advanced filtering** or **Basic filtering**, and then set the values or conditions you want to use in your filter.
+5. On the **Filters** pane, go to the filter for the **District Manager** field. Under **Filter type**, select **Advanced filtering** or **Basic filtering**, and then set the values or conditions you want to use in your filter.
 
     All the visualizations on the page are redrawn to reflect the change.
 
@@ -142,11 +142,11 @@ To apply a filter to all visuals in a report, you can add a report-level filter.
 
 ---
 
-1. Open the **Filters**, **Visualizations**, and **Data** panes, if they're not already open.
+2. Open the **Filters**, **Visualizations**, and **Data** panes, if they're not already open.
 
-1. On the **Data** pane, locate the field that you want to add as a new report-level filter. Drag that field to the **Filters** pane, into the area under **Filters on all pages** that's labeled **Add data fields here**.
+3. On the **Data** pane, locate the field that you want to add as a new report-level filter. Drag that field to the **Filters** pane, into the area under **Filters on all pages** that's labeled **Add data fields here**.
 
-1. Select the values you want to use in your filter.
+4. Select the values you want to use in your filter.
 
     The visuals on the active page, and on all pages in the report, change to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading view by selecting or clearing values.
 
