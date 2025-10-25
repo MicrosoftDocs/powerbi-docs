@@ -11,13 +11,9 @@ ms.date: 10/24/2025
 ms.custom: references_regions
 ai-usage: ai-assisted
 ---
+# Azure emissions calculation methodology
 
-# Calculation methodology for Azure emissions
-
-[!INCLUDE[announcement-banner-deprecation](includes/announcement-banner-deprecation.md)]
-
-
-Microsoft's cloud carbon calculation methodology calculates the carbon emissions associated with the use of Microsoft’s Azure and Microsoft 365 cloud computing resources. It covers scope 1, 2, and 3 carbon emissions as calculated from the manufacture, packaging, transportation, use, and end-of-life phases of data center hardware in all data centers owned and leased by Microsoft. The emissions and usage measured by this methodology are for Microsoft’s Azure and Microsoft 365 cloud only. The Microsoft 365 methodology is limited to emissions associated with using the following products:
+Microsoft's Azure emissions calculation methodology determines the carbon emissions from Azure and Microsoft 365 cloud computing resources. This methodology covers scope 1, 2, and 3 carbon emissions calculated from the manufacture, packaging, transportation, use, and end-of-life phases of data center hardware in all Microsoft-owned and leased data centers. The emissions and usage measured by this methodology are for Microsoft's Azure and Microsoft 365 cloud only. The Microsoft 365 methodology is limited to emissions associated with using the following products:
 
 - Microsoft Exchange Online
 - Microsoft SharePoint
@@ -26,23 +22,21 @@ Microsoft's cloud carbon calculation methodology calculates the carbon emissions
 - Microsoft Word
 - Microsoft Excel
 - Microsoft PowerPoint
-- Microsoft Outlook
+- Microsoft Outlook 
 
 > [!NOTE]
 > Carbon accounting practices are evolving rapidly. We're committed to evolving, revising, and refining our methodologies over time to incorporate science-based, validated approaches as they become available and relevant to assessing the carbon emissions associated with the Azure cloud.  
 
 The following image shows examples of scope 1, 2, and 3 carbon emission types in the Microsoft cloud value chain.
 
-:::image type="content" source="media/api-scope-valuechain.png" alt-text="Carbon emission types in Microsoft cloud value chain.":::
+:::image type="content" source="./media/azure-emissions-calculation-methodology/api-scope-value-chain.png" alt-text="Screenshot of carbon emission types in Microsoft cloud value chain.":::
 
 ## Standards used for calculation
 
 At Microsoft, we segment our greenhouse gas (GHG) emissions into three categories consistent with the [Greenhouse Gas Protocol](https://ghgprotocol.org/), which is a globally recognized standard for the calculation methodology and reporting of Greenhouse Gas (GHG) emissions:
 
 - **Scope 1**: Direct emissions – Emissions from stationary and mobile combustion, as well as process and fugitive emissions.
-
 - **Scope 2**: Indirect emissions - Emissions from the consumption of electricity, heat, or steam.
-
 - **Scope 3**: Other indirect emissions – Manufacturing phase and end-of-life emissions (supply chain related). The scope of this tool is scope 3 categories 1, 2, 4, 5, 9, and 12.
 
 The API calculations are the result of a life cycle evaluation. This evaluation assessed energy use for cloud computing operations and carbon emissions related to the following activities for Azure and Microsoft 365:
@@ -53,7 +47,7 @@ The API calculations are the result of a life cycle evaluation. This evaluation 
 
 The following image shows carbon accounting scopes by stakeholder:
 
-:::image type="content" source="media/api-stakeholder-scope.png" alt-text="Carbon scopes by stakeholder.":::
+:::image type="content" source="./media/azure-emissions-calculation-methodology/api-stakeholder-scope.png" alt-text="Screenshot of carbon scopes by stakeholder.":::
 
 ## Included emission sources
 
@@ -77,7 +71,7 @@ GHG emissions include emissions from the following activities for hardware devic
 
 This tool includes the emissions from the raw material extraction of the different parts and components that make up the hardware devices and their packaging. It uses material composition and emissions resulting from product life cycle stages.
 
-By their nature, scope 1, 2, and 3 emissions are all relative to the reporting entity; one company’s scope 1 emissions are another’s scope 3 emissions. This tool reflects Microsoft’s combined scope 1, 2, and 3 emissions associated with the delivery of Azure and Microsoft 365 core cloud services. These emissions reflect a customer’s scope 3 emissions from the customer’s use of Microsoft cloud services.
+By their nature, scope 1, 2, and 3 emissions are all relative to the reporting entity; one company's scope 1 emissions are another's scope 3 emissions. This tool reflects Microsoft's combined scope 1, 2, and 3 emissions associated with the delivery of Azure and Microsoft 365 core cloud services. These emissions reflect a customer's scope 3 emissions from the customer's use of Microsoft cloud services.
 
 ## Calculation methodology
 
@@ -85,7 +79,7 @@ As previously stated, Microsoft bases its calculation methodology on principles 
 
 ### Calculation methodology for scope 1 and 2
 
-Power usage for scope 1 and 2 Azure emissions categories include storage, compute, or network. Usage time in these categories assists us in attribution of scope 1 and 2 emissions.
+Power usage for scope 1 and 2 Azure emissions categories includes storage, compute, or network. Usage time in these categories helps us attribute scope 1 and 2 emissions.
 
 The full methodology for scopes 1 and 2 is based on a life cycle evaluation conducted for a 2018 Microsoft study, [The carbon benefits of cloud computing: A study on the Microsoft Cloud in partnership with WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf).
 
@@ -100,58 +94,50 @@ The scope 2 methodology calculates the energy and carbon impacts for each data c
 
 The following image summarizes calculation of scope 3 emissions. It shows the scope 3 emissions allocation methodology.
 
-:::image type="content" source="media/api-lifecycle.png" alt-text="scope 3 allocation":::
+:::image type="content" source="./media/azure-emissions-calculation-methodology/api-lifecycle.png" alt-text="Screenshot of scope 3 emissions allocation methodology showing lifecycle evaluation process.":::
 
 We start with the life cycle evaluation of materials used in our data center infrastructure and calculate carbon emissions by data center. We then segment this sum based on customer usage of each data center.
 
 This methodology for scope 3 emissions calculates the energy and carbon impacts for each data center over time, using the following items:
 
-- Most common materials used to manufacture the IT infrastructure used in our data centers
+- Most common materials used to manufacture the IT infrastructure in our data centers
 - Most common parts that make up cloud infrastructure (hard disks, FPGA, steel racks)
 - Complete inventory of all the assets (as categorized by Microsoft bill of materials) in our data centers by region
 - Carbon factors for cloud infrastructure across life stages (raw material extraction, component aggregation, usage, and end-of-life disposal)
 
 ### Calculation variables
 
-- Lifetime of equipment defaults to six years.
-- Critical infrastructure, such as the data center facility, isn't included in the methodology at this time, but might be added as data becomes available.
-- Microsoft 365 methodology: Proxy usage measures are used in the place of true server-side compute and storage usage to apportion total carbon emissions. They might be replaced as data becomes available.
+- The equipment lifetime defaults to six years.
+- The methodology doesn't currently include critical infrastructure, such as the data center facility, but might add it as data becomes available.
+- The Microsoft 365 methodology uses proxy usage measures instead of true server-side compute and storage usage to apportion total carbon emissions. It might replace these measures as data becomes available.
 
-Validation of our methodology is included in the white paper [A new approach for Scope 3 emissions transparency](https://go.microsoft.com/fwlink/p/?linkid=2161861).
+The white paper [A new approach for Scope 3 emissions transparency](https://go.microsoft.com/fwlink/p/?linkid=2161861) includes validation of our methodology.
 
 ### Customer attributions and calculations for carbon emissions
 
-For Azure customers, emissions are allocated based on their relative Azure usage in a given datacenter region. An algorithm calculates a usage factor that provides emissions per unit of customer usage in a specific Azure data center region, then emissions are directly calculated based on this factor. This process of attribution is shown graphically in the scope 3 emissions allocation methodology image earlier in this article.
+For Azure customers, the methodology allocates emissions based on their relative Azure usage in a given datacenter region. An algorithm calculates a usage factor that provides emissions per unit of customer usage in a specific Azure data center region. The algorithm then uses this factor to directly calculate emissions. The scope 3 emissions allocation methodology image earlier in this article shows this process of attribution graphically.
 
-This step computes emissions for Microsoft 365 commercial applications in each data center region. These emissions values are apportioned across customers based on proxies for server-side resource consumption (including active usage and/or data storage in the included Microsoft 365 applications). A *regional usage factor* is computed for each customer in each data center region that represents their usage relative to other customers. Then emissions are directly calculated based on this factor. Proxy usage measures are used in the place of true server-side compute and storage, and might be replaced as data becomes available. 
+This step computes emissions for Microsoft 365 commercial applications in each data center region. The methodology apportions these emissions values across customers based on proxies for server-side resource consumption, including active usage and data storage in the included Microsoft 365 applications. It computes a *regional usage factor* for each customer in each data center region that represents their usage relative to other customers. The methodology then uses this factor to directly calculate emissions. The methodology uses proxy usage measures instead of true server-side compute and storage, and might replace these measures as data becomes available.
 
 This methodology of segmentation by customer usage is consistent across scope 1, 2, and 3 carbon calculation.
 
 ### Excluded regions
 
-Some regions aren't included in the emissions calculations, including data centers that Microsoft doesn't own. The following table shows the excluded regions.
+The methodology doesn't include some regions in the emissions calculations, including data centers that Microsoft doesn't own. The following table shows the excluded regions.
 
 | Geography | Datacenter region |
 | --- | --- |
 | Azure Government | US DoD Central </br> US DoD East </br> US Gov Arizona </br> US Gov Texas </br> US Gov Virginia </br> US Sec East </br> US Sec West </br> US Sec West Central </br> |
 | China | China East </br> China East 2 </br> China East 3 </br> China North </br> China North 2 </br> China North 3 |
-| Germany | Germany Central (Sovereign) </br> Germany North </br> Germany Northeast (Sovereign) </br> Germany West Central |
-| India | Central India </br> West India |
-| Qatar | Qatar Central |
+| Germany | Germany Central (Sovereign) </br> Germany Northeast (Sovereign) |
 
 ## FAQ
 
-### How is usage calculated?
+### How does Microsoft calculate usage?
 
-Usage is based on a sum of your company’s compute, storage, and data transfer in the Microsoft cloud. Usage for emissions calculations might not equal your Microsoft usage for billing purposes.
+Microsoft calculates usage by adding up your company's compute, storage, and data transfer in the Microsoft cloud. Usage for emissions calculations might not match your Microsoft usage for billing purposes.
 
-### What unit does Microsoft use in measuring carbon emissions?
+### What unit does Microsoft use to measure carbon emissions?
 
-The unit used is metric tons of carbon dioxide equivalent (MTCO<sub>2</sub>E).
-
-
-## Related information
-
-- [Overview of Azure emissions insights](azure-emissions-insights-overview.md)
-
+Microsoft uses metric tons of carbon dioxide equivalent (MTCO<sub>2</sub>E).
 
