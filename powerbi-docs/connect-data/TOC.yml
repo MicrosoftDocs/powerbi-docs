@@ -301,7 +301,7 @@
         href: service-connect-to-services.md
       - name: "Crisis Communication Presence Report"
         href: service-connect-to-crisis-communication-presence-report.md
-      - name: Connect to Emmisions Impact Dashboard
+      - name: Connect to Emissions Impact Dashboard
         items:
         - name: "Emissions Impact Dashboard for Azure"
           href: service-connect-to-emissions-impact-dashboard.md
