@@ -120,7 +120,7 @@ User feedback is important for continued Copilot improvements. After each Copilo
 
 ## Limitations and considerations for app authors
 * Items in apps are versioned upon app update. Copilot uses the version of the item in the app. Update the app to ensure Copilot is reasoning over the latest changes to items in the app.
-* [Verified answers](copilot-prepare-data-ai-verified-answers.md) are supported in Copilot for apps. To ensure verified answers are available to app users, update the app after verified answers s are configured.
+* [Verified answers](copilot-prepare-data-ai-verified-answers.md) are supported in Copilot for apps. To ensure verified answers are available to app users, update the app after verified answers are configured.
 * Copilot only uses items in the app users have access to. Copilot doesn't use items a user doesn't have access to. For example: If a report is built on a semantic model in a workspace not associated with the app, the app doesn't manage user access for that semantic model. Manage user access on the semantic model separately so Copilot can use that item.
 
 Learn more about [publishing and updating apps](../collaborate-share/service-create-distribute-apps.md) for more considerations and limitations.
