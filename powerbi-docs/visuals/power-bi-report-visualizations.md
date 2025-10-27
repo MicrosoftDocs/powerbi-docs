@@ -54,7 +54,7 @@ Once a visual is pinned, it moves up to live with the other default visuals. Thi
 
 ### Remove a visual from the Visualizations pane
 
-If you stop using a visual regularly, you can right-click it and remove it from the Visualizations pane. You can remove type of visual from the Visualizations pane, including default, file, organizational, and AppSource visuals.
+If you stop using a visual regularly, you can right-click it and remove it from the Visualizations pane. You can remove any type of visual from the Visualizations pane, including default, file, organizational, and AppSource visuals.
 
 :::image type="content" source="media/power-bi-report-visualizations/unpin-visual.png" alt-text="Screenshot of option to unpin a visualization from the visualizations pane.":::
 
