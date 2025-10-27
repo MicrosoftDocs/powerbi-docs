@@ -28,7 +28,7 @@ After you've installed the template app and connected to the data sources, you c
 
     :::image type="content" source="media/service-connect-to-power-bi-release-plan/power-bi-release-plan-appsource-icon.png" alt-text="Screenshot of the Power BI Release Plan Report listing in AppSource."
 
-1. When prompted , select **Install**. Once the app has installed, you will see it on your Apps page.
+1. When prompted, select **Install**. Once the app has installed, you will see it on your Apps page.
    
    :::image type="content" source="media/service-connect-to-power-bi-release-plan/power-bi-release-plan-apps-page-icon.png" alt-text="Screenshot of the Power BI Release Plan Report on App page.":::
 
