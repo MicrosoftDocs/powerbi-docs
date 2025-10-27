@@ -47,7 +47,7 @@ Waterfall charts are a great choice for many scenarios:
 
 - Visualizing and tracking progress of project steps.
 
-- Analyzing data defects and identify their causes.
+- Analyzing data defects and identifying their causes.
 
 - Understanding an organization's workings and the connections between departments.
 
