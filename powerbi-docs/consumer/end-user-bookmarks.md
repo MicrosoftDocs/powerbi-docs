@@ -71,7 +71,7 @@ Configure a report page the way you want it to appear in the bookmark. The follo
 
 1. **Date** is changed to include All dates.
 2. **Region** filter is changed to include only **West** .
-3. A specific data point on the doughnut chart visual is selected. This selection cross-filters and cross-highlights the other visuals on the report canvas.
+3. A specific data point on the donut chart visual is selected. This selection cross-filters and cross-highlights the other visuals on the report canvas.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personal.png" alt-text="A screenshot showing a report with filters applied." lightbox="media/end-user-bookmarks/power-bi-personal.png#lightbox":::
 

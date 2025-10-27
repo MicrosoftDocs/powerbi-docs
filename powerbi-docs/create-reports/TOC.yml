@@ -406,8 +406,8 @@
       href: ../visuals/power-bi-visualization-basic-area-chart.md
     - name: Combo charts
       href: ../visuals/power-bi-visualization-combo-chart.md
-    - name: Doughnut charts
-      href: ../visuals/power-bi-visualization-doughnut-charts.md
+    - name: Pie and donut charts
+      href: ../visuals/power-bi-visualization-pie-donut-chart.md
     - name: Funnel charts
       href: ../visuals/power-bi-visualization-funnel-charts.md
     - name: KPI visuals

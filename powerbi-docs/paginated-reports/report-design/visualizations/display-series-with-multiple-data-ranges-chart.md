@@ -53,7 +53,7 @@ Charts use the minimum and maximum values of a series to calculate the axis scal
   
 - The value axis minimum or maximum has been explicitly set.  
   
-- The chart type is polar, radar, pie, doughnut, funnel, pyramid, or any stacked chart.  
+- The chart type is polar, radar, pie, donut, funnel, pyramid, or any stacked chart.  
   
  An example of chart with scale breaks is available as a sample report. For more information about downloading this sample report and others, see [Power BI Report Builder and Report Designer sample reports](https://go.microsoft.com/fwlink/?LinkId=198283).  
 

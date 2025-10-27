@@ -27,7 +27,7 @@ To try setting the axis interval with sample data, see [Tutorial: Add a Column C
 > This topic doesn't apply to:
 >
 >- Date or time values on the category axis. Be default, **DateTime** values appear as days. You can specify a different date or time interval, such as a month or time interval. For more information, see [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](format-axis-labels-dates-currencies-report-builder.md).
->- Pie, doughnut, funnel or pyramid charts, which don't have axes.
+>- Pie, donut, funnel or pyramid charts, which don't have axes.
   
 ## Show all the category labels on the x-axis  
 
