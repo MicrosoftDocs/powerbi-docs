@@ -27,9 +27,9 @@ Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getap
 
 [!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Select **Smartsheet** \> **Get it now**.
-1. In **Install this Power BI App?** select **Install**.
-1. In the **Apps** pane, select the **Smartsheet** tile.
+3. Select **Smartsheet** \> **Get it now**.
+4. In **Install this Power BI App?** select **Install**.
+5. In the **Apps** pane, select the **Smartsheet** tile.
 
     :::image type="content" source="media/service-connect-to-smartsheet/power-bi-smartsheet-tile.png" alt-text="Screenshot of Power BI Smartsheet app tile.":::
 
