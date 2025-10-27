@@ -21,9 +21,9 @@ In the Power BI service, you can create, share, and manage cloud connections for
 - Paginated reports
 - Datamarts
 - Dataflows
-- Power Query Online experiences that you access by selecting **Get data**.
+- Power Query Online experiences that you access by selecting **Get data**
 
-This article shows you how to create a shareable cloud connection and share that connection with others. Creating and sharing shareable cloud connections have many advantages, as described in [advantages of shareable cloud connections](service-connect-cloud-data-sources.md#advantages-of-shareable-cloud-connections).
+This article shows you how to create a shareable cloud connection and share that connection with others. Creating and sharing shareable cloud connections have many advantages, as described in [Advantages of shareable cloud connections](service-connect-cloud-data-sources.md#advantages-of-shareable-cloud-connections).
 
 ## Create a shareable cloud connection
 
@@ -31,17 +31,20 @@ To create a shareable cloud connection, take the following steps:
 
 1. Go to the Power BI service, select **Settings** :::image type="icon" source="media/service-create-share-cloud-data-sources/settings-icon.png":::, and then select **Manage connections and gateways**.
 
-   :::image type="content" source="media/service-create-share-cloud-data-sources/service-settings-manage-connections.png" alt-text="Screenshot of the home page of the Power BI service. In the expanded Settings menu, Manage connections and gateways is highlighted." lightbox="media/service-create-share-cloud-data-sources/service-settings-manage-connections.png.png":::
+   :::image type="content" source="media/service-create-share-cloud-data-sources/service-settings-manage-connections.png" alt-text="Screenshot of the home page of the Power BI service. In the expanded Settings menu, Manage connections and gateways is highlighted." lightbox="media/service-create-share-cloud-data-sources/service-settings-manage-connections.png":::
 
-1. On the **Manage Connections and Gateways** page, go to the **Connections** tab, select **New**, and then select **Cloud**.
+1. On the **Manage Connections and Gateways** page, go to the **Connections** tab, and then select **New**.
+
+1. In the **New connection** dialog, take the following steps:
+   1. Select **Cloud**.
+   1. Under **Connection name**, enter a name for the new connection.
+   1. Under **Connection type**, select an appropriate type.
 
    :::image type="content" source="media/service-create-share-cloud-data-sources/new-connection-dialog-select-cloud.png" alt-text="Screenshot of the New connection dialog in the Power BI service. Three types of connections are listed. Among them, Cloud is highlighted.":::
 
-1. In the **New connection** dialog, take the following steps:
-   1. Under **Connection name**, enter a name for the new connection.
-   1. Under **Connection type**, select an appropriate type.
-   1. In the fields that appear, enter the connection details for your data source.
-   1. Select **Create**.
+   The dialog expands as several fields are added for configuring the connection.
+
+1. In the expanded **New connection** dialog, enter connection information for your data source, and then select **Create**.
 
    :::image type="content" source="media/service-create-share-cloud-data-sources/new-connection-dialog-enter-information.png" alt-text="Screenshot of the New connection dialog. Fields like the name, type, and server are filled out. An authentication method of Basic is selected." lightbox="media/service-create-share-cloud-data-sources/new-connection-dialog-enter-information.png":::
 
