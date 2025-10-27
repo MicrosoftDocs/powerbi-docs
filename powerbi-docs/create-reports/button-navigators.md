@@ -2,13 +2,13 @@
 title: Create page and bookmark navigators
 description: Using Power BI built-in navigators, you can quickly build page and bookmark navigation experiences with just a few clicks.
 author: julcsc
-ms.author: juliacawthra
-ms.reviewer: sunaraya
+ms.author: jacinda-eng
+ms.reviewer: jacindaeng
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-RWRCPO
-ms.date: 10/02/2023
+ms.date: 10/27/2025
 LocalizationGroup: Create reports
 ---
 
@@ -190,16 +190,22 @@ Create a page navigation button and select the conditional formatting option for
 
 To ensure your approach of using the bookmark navigator is accessible and meets requirements, follow these best practices:
 
-- Name the bookmark buttons clearly and use alt text appropriately:
-   - Use clear, descriptive labels for bookmark buttons so all users understand what content will be modified.
-   - Use the **Alt text** field to provide an accessible name that gives screen reader users the same clarity.
-   - Whenever possible, tie both to the name of the data grid or its containing group (for example, the Bookmark button's label is "Sales details" and alt text is "Show sales details data.")
-- Ensure logical focus order:
-   - The bookmark buttons and the content they control should be positioned so that users navigating by keyboard can move directly between them.
-   - Avoid placing unrelated focusable elements (such as slicers) between the bookmark navigator and the content it adjusts to ensure smooth navigation and help users quickly associate the button with its corresponding data.
-- Use meaningful names for data grids:
-   - Each data grid should have a clear name that reflects which button is currently active.
-   - The group containing the grid can have a consistent name, whereas the grid itself updates (for example, "Summary data" or "Detailed data").
+#### Label bookmark buttons and navigators clearly
+
+- Use clear, descriptive labels for bookmark buttons to ensure all users understand the purpose of each button.
+
+- Use the **Alt text** field to provide an accessible name for the bookmark navigator. This helps screen reader users to clearly understand what content is being modified.
+      For example, if a bookmark navigator includes buttons labeled “**Sales details**” and “**Sales summary**,” and these bookmarks modify a table visual that is named “**2025 sales data**,” then the alt text for the bookmark navigator should be “**2025 sales data modifier**.”
+
+#### Maintain logical focus order for accessibility
+
+- Position bookmark buttons and the content they modify close together in the report layout. This ensures that keyboard users can navigate directly between them (e.g., tabbing from the bookmark navigator to the visual).
+- Avoid placing unrelated focusable elements (such as slicers) between the bookmark navigator and the modified content. This helps maintain smooth navigation and reinforces the connection between the bookmark and its associated data.
+
+#### Name visuals to match bookmark context
+
+- Each visual should have a clear and descriptive name (alt text) that aligns with the labels used in the bookmark navigator (see the example in the first bullet).
+- Ideally, this name should also appear as the visual’s title. Displaying it as a heading helps assistive technology users locate and understand the visual more easily.
 
 ## Considerations and limitations
 
