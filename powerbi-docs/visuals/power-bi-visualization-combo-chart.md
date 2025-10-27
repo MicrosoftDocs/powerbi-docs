@@ -168,5 +168,5 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 
 ## Related content
 
-- [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
+- [Pie and donut charts in Power BI](power-bi-visualization-pie-donut-chart.md)
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

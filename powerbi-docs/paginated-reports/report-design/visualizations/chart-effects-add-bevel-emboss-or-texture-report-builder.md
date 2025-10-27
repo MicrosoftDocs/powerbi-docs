@@ -15,17 +15,17 @@ ms.reviewer: monaraya
 
   When using certain chart types in a Power BI paginated report, you can specify a drawing effect to increase the visual impact of your chart. These drawing effects are only applied to the series of your chart. They have no effect on any other chart element.  
   
- When you are using any variant of a pie or doughnut chart, you can specify a soft edge or concave drawing style, similar to bevel or emboss effects that can be applied to an image.  
+ When you are using any variant of a pie or donut chart, you can specify a soft edge or concave drawing style, similar to bevel or emboss effects that can be applied to an image.  
   
  When you are using any variant of a bar or column chart, you can apply texture styles, such as cylinder, wedge, and light-to-dark, to the individual bars or columns.  
   
  In addition to these drawing styles, you can add borders and shadows to many chart elements to give the illusion of depth. For more information on other ways to format the chart, see [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md).  
 
-## Add bevel or emboss styles to a pie or doughnut chart  
+## Add bevel or emboss styles to a pie or donut chart  
   
 1. On the **View** tab, select **Properties** to open the Properties pane.  
   
-1. Select the pie or doughnut chart that you want to enhance. Select a data field in the chart, not the entire chart.  
+1. Select the pie or donut chart that you want to enhance. Select a data field in the chart, not the entire chart.  
   
 1. In the Properties pane, expand the **CustomAttributes** node.  
   
