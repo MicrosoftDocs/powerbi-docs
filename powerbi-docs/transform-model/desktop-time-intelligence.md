@@ -56,7 +56,7 @@ Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are
 - [**Calendar-based time intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations.
 
 > [!NOTE]
-> You need to [set your table as a date table](desktop-date-tables.md#benefits-of-setting-your-own-date-table) for specific scenarios.
+> You need to [set your table as a date table](desktop-date-tables.md#how-to-set-your-own-date-table) for specific scenarios.
 
 ## Classic time intelligence
 
@@ -606,7 +606,7 @@ You can use the `truncation` parameter to influence how the shift is performed:
 - Performance of this preview feature isn't representative of the end product.
 - You can't author calendars in the Power BI Service yet.
 - You shouldn't use [auto date/time](desktop-auto-date-time.md) tables with custom calendars.
-- You can't use calendars with Live connect, Direct Lake, or composite models.
+- You can't use calendars with live connected or composite models.
 - We recommend you associate only the columns in your calendar that you want to use in time intelligence calculations.
 - Calendars are subject to both [real-time](#real-time-validations) and [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 - Each calendar must have a unique name within the data model
@@ -671,6 +671,8 @@ ADDCOLUMNS (
     "Date", [Date]
 )
 ```
+
+For more information and more options see [Date tables](../guidance/model-date-tables.md).
 
 ## Related content
 
