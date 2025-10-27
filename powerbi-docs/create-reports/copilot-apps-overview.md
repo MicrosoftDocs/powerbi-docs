@@ -50,8 +50,8 @@ App-scoped Copilot is available in tenants where Copilot is enabled and the app 
 > [!NOTE]
 > **Copilot in apps is on by default** and can be managed per app.
 >
-> For more information on Copilot availability see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview).
-> For more information on turning Copilot on and off generally for Power BI,or specifically for Copilot on reports (also shown on reports in apps), see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
+> For more information on Copilot availability, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview).
+> Learn more about turning Copilot on and off generally for Power BI, or specifically for Copilot on reports (also shown on reports in apps), see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 
 To open app-scoped Copilot, click Copilot in the app navigation:
 
@@ -73,19 +73,19 @@ Copilot can provide summaries about an entire report or a specific topic within 
 Summaries in the app-scoped Copilot experience include both textual insights and relevant visuals within the narrative. Currently, summaries are only available for reports, not for semantic models. Learn more about [summarizing a report or topic](copilot-pane-summarize-content.md).
 
 #### Asks questions and get answers based on an item in the app
-The app-scoped Copilot experience can summarize data from reports and use the report visuals to answer specific questions.  If the answer can't be found in the report, it will default to using the semantic model to generate rich answers for users.
+The app-scoped Copilot experience can summarize data from reports and use the report visuals to answer specific questions. If the answer can't be found in the report, Copilot defaults to using the semantic model to generate rich answers for users.
 Learn more about [asking questions about your data](copilot-ask-data-question.md).
 
 
 #### Attach an item from the app to summarize or ask questions
-At times you may want to ask questions about your data based on a specific items. In app-scoped Copilot, you can attach a specific report for Copilot to reference.
+At times, you may want to ask questions about your data based on a specific items. In app-scoped Copilot, you can attach a specific report for Copilot to reference.
 
 If you know exactly which report, attach it to your chat using the **Add items for better results** option.
 
 Then it appears in the Copilot conversation and is used to answer your questions.
 
 ## Clear chat
-The “clear chat” button removes the contents of the current conversation and any previous context set throughout the conversation. Clearing the chat is essentially the same as starting a new chat. Chats are also cleared when navigating away from app-scoped Copilot.
+The "clear chat" button removes the contents of the current conversation and any previous context set throughout the conversation. Clearing the chat is essentially the same as starting a new chat. Chats are also cleared when navigating away from app-scoped Copilot.
 
 See more how clear chat works for Copilot in Power BI.
 
@@ -98,7 +98,7 @@ User feedback is important for continued Copilot improvements. After each Copilo
 * Clicking an item link opens the item in a new browser tab.
 * Clicking a citation link opens the item in a new browser tab outside the app.
 * Conversations are cleared when navigating away from or closing Copilot in apps.
-* App-scoped Copilot and report-scoped Copilot in apps are separate functionality, prompts and responses in each Copilot may differ and are not shared between each Copilot.
+* App-scoped Copilot and report-scoped Copilot in apps are separate functionality. Prompts and responses in each Copilot may differ and are not shared between each Copilot.
 * App-scoped Copilot is available for workspace apps only, not org apps (preview).
 * Report-scoped Copilot in apps is available in both workspace apps and org apps (preview).
 
