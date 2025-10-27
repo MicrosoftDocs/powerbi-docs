@@ -18,6 +18,8 @@ Copilot is available in apps two ways:
 1. A report-scoped Copilot that can help users with summaries of the report in view or answer questions based on that report in view
 2. An app-scoped Copilot (preview) that can help users find items in the app based on their interests, summarize an item in the app, or answer questions based on items in the app.
 
+:::image type="content" source="media/copilot-apps-overview/app-copilot-and-report-copilot.png" alt-text="Screenshot of app-scoped Copilot and report-scoped Copilot" lightbox="media/copilot-apps-overview/app-copilot-and-report-copilot.png":::
+
 ## Report-scoped Copilot in apps
 Report Copilot is available in workspace apps and org apps (the new version of apps in preview). Report Copilot, when opened, is scoped to the report in view only. See [Copilot for Power BI reports](copilot-reports-overview.md) for information on how report Copilot works.
 
