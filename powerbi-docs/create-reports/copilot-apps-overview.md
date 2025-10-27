@@ -69,7 +69,7 @@ If the app author chose for the app navigation to be collapsed by default, users
 App users Copilot activity must be linked to a capacity. Learn more about the [general requirements for Copilot use](copilot-introduction.md#general-requirements) and how [capacity assignment and autoselection works](copilot-introduction.md#link-to-a-fabric-copilot-capacity).
 
 #### Find items in the app
-You can ask Copilot to find reports you have access to in the app. In response, you get a hyperlinked list of relevant items, with helpful details to make it easy for you to find the right thing. Learn more about [searching for items](copilot-search-new-content.md) Selecting an item listed in the results will open that item in a new tab within the app.
+You can ask Copilot to find reports you have access to in the app. In response, you get a hyperlinked list of relevant items, with helpful details to make it easy for you to find the right thing. Learn more about [searching for items](copilot-search-new-content.md) Selecting an item listed in the results opens that item in a new tab within the app.
 
 :::image type="content" source="media/copilot-apps-overview/app-copilot-find-item-then-open-item.png" alt-text="Screenshot of item search results from app-scoped Copilot with an item opened after selection." lightbox="media/copilot-apps-overview/app-copilot-find-item-then-open-item.png":::
 
@@ -78,7 +78,7 @@ You can ask Copilot to find reports you have access to in the app. In response, 
 
 #### Summarize an item in the app
 Copilot can provide summaries about an entire report or a specific topic within that report. You can use prompts like:
-* "Give me a summary about customer sentiment on Zava smart materials."
+* "Give me a summary about customer sentiment on smart materials."
 * "Summarize trends in sales last year."
 
 :::image type="content" source="media/copilot-apps-overview/app-copilot-summary-close-up.png" alt-text="Screenshot of request to summarize customer sentiment, selecting a report, and summary returned by app-scoped Copilot" lightbox="media/copilot-apps-overview/app-copilot-summary-close-up.png":::
