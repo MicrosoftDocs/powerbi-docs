@@ -31,7 +31,7 @@ App-scoped Copilot supports the following item types included in an app:
 * Power BI reports
 * Semantic models
 
-> [!NOTE] App authors, consider the following for Copilot in apps:
+> [!NOTE] App authors, consider the following specifics for Copilot in apps:
 > * Power BI apps version the report items included in an app. App authors, to ensure Copilot uses the latest changes to a report, update the app.
 > * Copilot can only use the items a user has access to. Power BI workspace apps manage access to reports and semantic models in the workspace associated with the app. For reports that use semantic models in a separate workspace, manage access separately.
 > 
@@ -45,13 +45,13 @@ There are item types support by apps that app-scoped Copilot does not support:
 * * Including link embedded Power BI items, like reports
  
 ### How to use app-scoped Copilot (preview)
-App-scoped Copilot is available in tenants where Copilot is enabled and the app author has app-scoped Copilot enabled and visible in the app navigation.
+App-scoped Copilot is available in tenants where Copilot is enabled and the app author enabled app-scoped Copilot and visible in the app navigation.
 
 > [!NOTE]
 > **Copilot in apps is on by default** and can be managed per app.
 >
-> For more information on Copilot availability, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview).
-> For more information on turning Copilot on and off, generally for Power BI or specifically for Copilot on reports (also shown on reports in apps), see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
+> For more information on Copilot availability see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview).
+> For more information on turning Copilot on and off generally for Power BI,or specifically for Copilot on reports (also shown on reports in apps), see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 
 To open app-scoped Copilot, click Copilot in the app navigation:
 
@@ -73,30 +73,30 @@ Copilot can provide summaries about an entire report or a specific topic within 
 Summaries in the app-scoped Copilot experience include both textual insights and relevant visuals within the narrative. Currently, summaries are only available for reports, not for semantic models. Learn more about [summarizing a report or topic](copilot-pane-summarize-content.md).
 
 #### Asks questions and get answers based on an item in the app
-The app-scoped Copilot experience can summarize data from reports, as well as use the report visuals to answer specific questions.  If the answer can't be found in the report, it will then default to using the semantic model to generate rich answers for users.
+The app-scoped Copilot experience can summarize data from reports and use the report visuals to answer specific questions.  If the answer can't be found in the report, it will default to using the semantic model to generate rich answers for users.
 Learn more about [asking questions about your data](copilot-ask-data-question.md).
 
 
-#### Attach item(s) from the app to summarize or ask questions of specific item(s)
-At times you may want to ask questions about your data based on specific items(s). In app-scoped Copilot, you can attach a specific report for Copilot to reference.
+#### Attach an item from the app to summarize or ask questions
+At times you may want to ask questions about your data based on a specific items. In app-scoped Copilot, you can attach a specific report for Copilot to reference.
 
 If you know exactly which report, attach it to your chat using the **Add items for better results** option.
 
 Then it appears in the Copilot conversation and is used to answer your questions.
 
 ## Clear chat
-The “clear chat” button will remove the contents of the current conversation and any previous context set throughout the conversation. This is essentially the same as starting a new chat. Chats are also cleared when navigating away from app-scoped Copilot.
+The “clear chat” button removes the contents of the current conversation and any previous context set throughout the conversation. Clearing the chat is essentially the same as starting a new chat. Chats are also cleared when navigating away from app-scoped Copilot.
 
 See more how clear chat works for Copilot in Power BI.
 
 ## Share feedback
-User feedback is important for continued Copilot improvements. After each Copilot response users can provide feedback on the response by selecting the feedback buttons corresponding with their sentiment.
+User feedback is important for continued Copilot improvements. After each Copilot response, users can provide feedback on the response by selecting the feedback buttons corresponding with their sentiment.
 
 
 ## Limitations and considerations for app users
 * In select cases app-scoped Copilot uses item names that app authors configure. The original item name may differ from the name shown in the app and used in app-scoped Copilot responses.
-* Clicking an item link will open the item in a new browser tab.
-* Clicking a citation link will open the item in a new browser tab outside the app.
+* Clicking an item link opens the item in a new browser tab.
+* Clicking a citation link opens the item in a new browser tab outside the app.
 * Conversations are cleared when navigating away from or closing Copilot in apps.
 * App-scoped Copilot and report-scoped Copilot in apps are separate functionality, prompts and responses in each Copilot may differ and are not shared between each Copilot.
 * App-scoped Copilot is available for workspace apps only, not org apps (preview).
@@ -104,7 +104,7 @@ User feedback is important for continued Copilot improvements. After each Copilo
 
 ## Limitations and considerations for app authors
 * Items in apps are versioned upon app update. Copilot uses the version of the item in the app. Update the app to ensure Copilot is reasoning over the latest changes to items in the app.
-* [Verified answers][copilot-prepare-data-ai-verified-answers.md] are supported by Copilot in apps. To ensure verified answers are available to app users, update the app after verified answers s are configured.
-* Copilot only uses items in the app users have access to. Copilot will not use items a user does not have access to. For example: If a report is built on a semantic model in a workspace not associated with the app, the app will not manage user access for that semantic model. Manage user access on the semantic model separately so Copilot can use that item.
+* [Verified answers][copilot-prepare-data-ai-verified-answers.md] are supported in Copilot for apps. To ensure verified answers are available to app users, update the app after verified answers s are configured.
+* Copilot only uses items in the app users have access to. Copilot does not use items a user does not have access to. For example: If a report is built on a semantic model in a workspace not associated with the app, the app does not manage user access for that semantic model. Manage user access on the semantic model separately so Copilot can use that item.
 
-Learn more about [publishing and updating apps](../collaborate-share/service-create-distribute-apps.md) for additional considerations and limitations.
+Learn more about [publishing and updating apps](../collaborate-share/service-create-distribute-apps.md) for more considerations and limitations.
