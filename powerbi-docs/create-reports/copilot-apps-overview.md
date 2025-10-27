@@ -23,7 +23,7 @@ Report Copilot is also available in workspace apps and in org apps (the new vers
 
 # App-scoped Copilot (preview)
 
-App-scoped Copilot is available in workspace apps. Copilot for apps is similar to standalone Copilot for Power BI. While standalone Copilot is scoped to all Copilot-supported items types a user has access to in Power BI, app-scoped Copilot scoped to only the Copilot-supported item types in the app. See [standalone Copilot for Power BI](/copilot-chat-with-data-standalone.md) for information on how standalone Copilot works. Continue to read this article for more information on how app-scoped Copilot works similarly for an app.
+App-scoped Copilot is available in workspace apps. Copilot for apps is similar to standalone Copilot for Power BI. While standalone Copilot is scoped to all Copilot-supported items types a user has access to in Power BI, app-scoped Copilot scoped to only the Copilot-supported item types in the app. See [standalone Copilot for Power BI](create-reports/copilot-chat-with-data-standalone.md) for information on how standalone Copilot works. Continue to read this article for more information on how app-scoped Copilot works similarly for an app.
 
 ## Item types supported by app-scoped Copilot (preview) 
 
