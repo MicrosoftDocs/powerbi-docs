@@ -19,7 +19,7 @@ Copilot is available in apps two ways:
 2. An app-scoped Copilot (preview) that can help users find items in the app based on their interests, summarize an item in the app, or answer questions based on items in the app.
 
 ## Report-scoped Copilot in apps
-Report Copilot is also available in workspace apps and in org apps (the new version of apps in preview). Report Copilot, when opened, is scoped to the report in view only. See [Copilot for Power BI reports](copilot-reports-overview.md) for information on how report Copilot works.
+Report Copilot is available in workspace apps and org apps (the new version of apps in preview). Report Copilot, when opened, is scoped to the report in view only. See [Copilot for Power BI reports](copilot-reports-overview.md) for information on how report Copilot works.
 
 ## App-scoped Copilot (preview)
 
@@ -58,7 +58,7 @@ To open app-scoped Copilot, click Copilot in the app navigation:
 
 If the app author chose for the app navigation to be collapsed by default, users need to expand the app navigation to view the app navigation and see Copilot:
 
-App users Copilot activity must be linked to a capacity. Learn more about the [general requirements for Copilot use](/copilot-introduction#general-requirements) and how [capacity assignment and autoselection works](/copilot-introduction#link-to-a-fabric-copilot-capacity).
+App users Copilot activity must be linked to a capacity. Learn more about the [general requirements for Copilot use](/copilot-introduction.md#general-requirements) and how [capacity assignment and autoselection works](copilot-introduction.md#link-to-a-fabric-copilot-capacity).
 
 #### Find items in the app
 You can ask Copilot to find reports you have access to in the app. In response, you get a hyperlinked list of relevant items, with helpful details to make it easy for you to find the right thing. Learn more about [searching for items](copilot-search-new-content.md)
