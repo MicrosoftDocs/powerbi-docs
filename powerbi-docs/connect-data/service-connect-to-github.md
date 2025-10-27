@@ -17,14 +17,14 @@ Connect your GitHub account to Power BI using the template app to explore reposi
 
 :::image type="content" source="media/service-connect-to-github/service-github-app-report.png" alt-text="Screenshot of GitHub template app report showing insights and data visualizations.":::
 
-After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
+After you install the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
 
 Connect to the [GitHub template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
 
 You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). It installs real GitHub data about the public repo for the Power BI documentation.
 
 > [!NOTE]
-> This template app requires the GitHub account to have access to the repo. More details on requirements below.
+> This template app requires the GitHub account to have access to the repo.
 >
 > This template app does not support GitHub Enterprise.
 
@@ -62,7 +62,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
    :::image type="content" source="media/service-connect-to-github/power-bi-github-authenticate-process.png" alt-text="Screenshot of Power BI GitHub authenticate process.":::
 
-Once you've finished filling out the connection dialogs and signed in to GitHub, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
+Once you finish filling out the connection dialogs and signed in to GitHub, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you're viewing sample data.
 
 :::image type="content" source="media/service-connect-to-github/service-github-app-refresh-monitor.png" alt-text="Screenshot of Power BI GitHub app refresh in progress.":::
 
@@ -79,7 +79,7 @@ For information about editing items in the workspace, see
 * [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-Once you are done making any changes you wish to the items in the workspace, you are ready to publish and share the app. See [Create and publish your app](../collaborate-share/service-create-distribute-apps.md) to learn how to do this.
+Once you're done making any changes you wish to the items in the workspace, you're ready to publish and share the app. See [Create and publish your app](../collaborate-share/service-create-distribute-apps.md) to learn how to do this.
 
 ## What's included in the app
 
@@ -88,8 +88,8 @@ The following data is available from GitHub in Power BI:
 | Table name | Description |
 | --- | --- |
 | Contributions |The contributions table gives the total additions, deletions, and commits authored by the contributor aggregated per week. The top 100 contributors are included. |
-| Issues |List all issues for the selected repo and it contains calculations like total and average time to close an issue, Total open issues,  Total closed issues. This table will be empty when there are no issues in the repo. |
-| Pull requests |This table contains all the Pull Requests for the repo and who pulled the request. It also contains calculations around how many open, closed, and total pull requests, how long it took to pull the requests and how long the average pull request took. This table will be empty when there are no pull requests in the repo. |
+| Issues |List all issues for the selected repo and it contains calculations like total and average time to close an issue, Total open issues,  Total closed issues. This table is empty when there are no issues in the repo. |
+| Pull requests |This table contains all the Pull Requests for the repo and who pulled the request. It also contains calculations around how many open, closed, and total pull requests, how long it took to pull the requests and how long the average pull request took. This table is empty when there are no pull requests in the repo. |
 | Users |This table provides a list of GitHub users or contributors who have made contributions, filed issues, or solved Pull requests for the repo selected. |
 | Milestones |It has all the Milestones for the selected repo. |
 | DateTable |This table contains dates from today and for years in the past that allow you to analyze your GitHub data by date. |
@@ -99,7 +99,7 @@ The following data is available from GitHub in Power BI:
 ## System requirements
 
 * The GitHub account that has access to the repo.  
-* Permission granted to the Power BI for GitHub app during first login. See details below on revoking access.  
+* Permission granted to the Power BI for GitHub app during first login. See details on revoking access on this page.  
 * Sufficient API calls available to pull and refresh the data.
 
 > [!NOTE]
@@ -107,7 +107,7 @@ The following data is available from GitHub in Power BI:
 
 ### Deauthorize Power BI
 
-To de-authorize Power BI from being connected to your GitHub repo, you can Revoke access in GitHub. See this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic for details.
+To deauthorize Power BI from being connected to your GitHub repo, you can Revoke access in GitHub. See this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic for details.
 
 <a name="FindingParams"></a>
 
@@ -129,10 +129,10 @@ The first part "Azure" is the owner and the second part "azure-sdk-for-php" is t
 
 If you cannot find the GitHub app in your Power BI Apps list, consider the following:
 
-1. **The app must be installed first**: The GitHub app will only appear in your Apps list after you have installed it. Use the installation link provided in the [Install the app](#install-the-app) section above to access and install the app from AppSource.
+1. **The app must be installed first**: The GitHub app only appears in your Apps list after you have installed it. Use the installation link provided in the [Install the app](#install-the-app) section to access and install the app from AppSource.
 1. **Check template app permissions**: Your organization's Power BI administrator may have restricted the ability to install template apps. Contact your administrator to verify that template app installation is enabled for your tenant. See [template app settings](../admin/service-admin-portal-template-app.md) for more information.
 1. **AppSource availability**: If you cannot access the app through AppSource, try using the direct installation link: [GitHub template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
-1. **Look in the correct location**: In the Power BI service, select **Apps** from the navigation pane to view your installed apps. If you haven't installed the GitHub template app yet, it won't appear in this list.
+1. **Look in the correct location**: In the Power BI service, select **Apps** from the navigation pane to view your installed apps. If you haven't installed the GitHub template app yet, it isn't in this list.
 
 ### Verifying GitHub credentials
 
