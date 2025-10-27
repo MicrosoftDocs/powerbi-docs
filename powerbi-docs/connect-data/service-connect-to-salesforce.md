@@ -35,7 +35,7 @@ In this article we walk through the app using sample data to give you an idea of
 
     :::image type="content" source="media/service-connect-to-salesforce/service-salesforce-analytics-appsource-icon.png" alt-text="Screenshot of the app in AppSource.":::
 
-1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
+1. When prompted, select **Install**. Once the app has installed, you will see it on your Apps page.
 
    :::image type="content" source="media/service-connect-to-salesforce/service-salesforce-analytics-apps-page-icon.png" alt-text="Screenshot of the app on the Apps page.":::
 
