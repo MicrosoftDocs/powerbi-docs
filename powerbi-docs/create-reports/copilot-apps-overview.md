@@ -38,7 +38,7 @@ App-scoped Copilot supports the following item types included in an app:
 > 
 > See more about [publishing and updating apps](../collaborate-share/service-create-distribute-apps.md) for access considerations.
 
-There are item types support by apps that app-scoped Copilot does not support:
+There are item types support by apps that app-scoped Copilot doesn't support:
 * Paginated reports
 * Dashboards
 * Workbooks
@@ -79,7 +79,7 @@ Learn more about [asking questions about your data](copilot-ask-data-question.md
 
 
 #### Attach an item from the app to summarize or ask questions
-At times, you may want to ask questions about your data based on a specific items. In app-scoped Copilot, you can attach a specific report for Copilot to reference.
+At times, you may want to ask questions about your data based on a specific item. In app-scoped Copilot, you can attach a specific report for Copilot to reference.
 
 If you know exactly which report, attach it to your chat using the **Add items for better results** option.
 
@@ -106,6 +106,6 @@ User feedback is important for continued Copilot improvements. After each Copilo
 ## Limitations and considerations for app authors
 * Items in apps are versioned upon app update. Copilot uses the version of the item in the app. Update the app to ensure Copilot is reasoning over the latest changes to items in the app.
 * [Verified answers][copilot-prepare-data-ai-verified-answers.md] are supported in Copilot for apps. To ensure verified answers are available to app users, update the app after verified answers s are configured.
-* Copilot only uses items in the app users have access to. Copilot does not use items a user does not have access to. For example: If a report is built on a semantic model in a workspace not associated with the app, the app does not manage user access for that semantic model. Manage user access on the semantic model separately so Copilot can use that item.
+* Copilot only uses items in the app users have access to. Copilot doesn't use items a user doesn't have access to. For example: If a report is built on a semantic model in a workspace not associated with the app, the app doesn't manage user access for that semantic model. Manage user access on the semantic model separately so Copilot can use that item.
 
 Learn more about [publishing and updating apps](../collaborate-share/service-create-distribute-apps.md) for more considerations and limitations.
