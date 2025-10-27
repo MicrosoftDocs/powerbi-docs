@@ -64,7 +64,7 @@ When the content in your workspace is ready, you can start the publishing proces
 1. Select **Next: [Add content](#add-content-to-the-app)**.
 
 #### Manage app-scoped Copilot (preview) availability
-These requirements pertain to using Copilot in Power BI apps, the full-page Copilot experience accessible from app navigation. Copilot in Power BI apps is scoped to reports and semantic models users have access to in the app.
+These requirements pertain to using [Copilot in Power BI apps](../create-reports/copilot-apps-overview.md), the full-page Copilot experience accessible from app navigation. Copilot in Power BI apps is scoped to reports and semantic models users have access to in the app.
 
 :::image type="content" source="media/service-create-distribute-apps/workspace-app-copilot-in-app-nav.png" alt-text="Screenshot of app-scoped Copilot in the app nav.":::
 
