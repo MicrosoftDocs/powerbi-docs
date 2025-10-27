@@ -1,9 +1,9 @@
 ---
-title: Create Page and Bookmark Navigators
-description: Find out how to use Power BI built-in navigators to quickly build page and bookmark navigation experiences in just a few steps.
-author: julcsc
-ms.author: jacinda-eng
-ms.reviewer: jacindaeng
+title: Create page and bookmark navigators
+description: Using Power BI built-in navigators, you can quickly build page and bookmark navigation experiences with just a few clicks.
+author: jacinda-eng
+ms.author: jacindaeng
+ms.reviewer: julcsc
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
