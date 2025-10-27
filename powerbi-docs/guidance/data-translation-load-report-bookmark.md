@@ -89,4 +89,4 @@ report.on("loaded", async (event: any) => {
 
 ## Related content
 
-- [Guidance for Power BI](overview.md)
+- [Guidance for Power BI](index.yml)
