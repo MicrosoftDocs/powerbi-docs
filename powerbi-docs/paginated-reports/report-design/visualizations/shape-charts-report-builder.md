@@ -47,7 +47,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 - Shape chart types cannot be combined with any other chart type in the same chart area. If you have to show comparisons between data displayed on a shape chart, and data displayed on another chart type, you need to add a second chart area.  
   
-- You can apply more drawing styles to pie and doughnut charts for increased visual impact. See [Formatting series colors on a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs) for more information.  
+- You can apply more drawing styles to pie and donut charts for increased visual impact. See [Formatting series colors on a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs) for more information.  
   
 ## Related content
 
