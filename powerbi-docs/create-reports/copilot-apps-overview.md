@@ -99,7 +99,7 @@ User feedback is important for continued Copilot improvements. After each Copilo
 * Clicking an item link opens the item in a new browser tab.
 * Clicking a citation link opens the item in a new browser tab outside the app.
 * Conversations are cleared when navigating away from or closing Copilot in apps.
-* App-scoped Copilot and report-scoped Copilot in apps are separate functionality. Prompts and responses in each Copilot may differ and are not shared between each Copilot.
+* App-scoped Copilot and report-scoped Copilot in apps are separate functionality. Prompts and responses in each Copilot may differ and aren't shared between each Copilot.
 * App-scoped Copilot is available for workspace apps only, not org apps (preview).
 * Report-scoped Copilot in apps is available in both workspace apps and org apps (preview).
 
