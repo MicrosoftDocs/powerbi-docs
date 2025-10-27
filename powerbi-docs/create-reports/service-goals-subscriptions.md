@@ -12,7 +12,7 @@ ms.date: 12/10/2024
 #customer intent: As a Power BI user I want to learn about and how to create email subscriptions for my scorecards and in the Power BI service.
 ---
 
-# Create email subscriptions for your scorecards in Power BI (preview)
+# Create email subscriptions for your scorecards in Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
