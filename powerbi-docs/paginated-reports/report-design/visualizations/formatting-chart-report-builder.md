@@ -17,7 +17,7 @@ ms.reviewer: monaraya
   
  All properties that relate to the chart are located in the Properties pane, but you can set many of these properties from a dialog box. If you are formatting the series, you can specify series-specific properties using custom attributes, which can only be found in the **CustomAttributes** category of properties, located in the Properties pane.  
   
- To effectively format the chart using a minimal number of steps, change the default border style, palette and drawing style. These three features produce the largest visible change on the chart. Drawing styles are only applicable to pie, doughnut, bar and column charts.  
+ To effectively format the chart using a minimal number of steps, change the default border style, palette and drawing style. These three features produce the largest visible change on the chart. Drawing styles are only applicable to pie, donut, bar and column charts.  
 
 ## In this section
 
