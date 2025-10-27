@@ -152,6 +152,12 @@
           href: desktop-bookmarks.md
         - name: Create page and bookmark navigators
           href: button-navigators.md
+    - name: Themes in Power BI reports
+      items: 
+        - name: Use organizational themes (preview)
+          href: desktop-organizational-themes.md
+        - name: Use report themes in Power BI
+          href: desktop-report-themes.md            
     - name: Translytical task flows
       items: 
         - name: Understand translytical task flows
@@ -166,8 +172,6 @@
       href: desktop-certificate-revocation.md     
     - name: Evaluation configuration settings
       href: desktop-evaluation-configuration.md     
-    - name: Work with report themes
-      href: desktop-report-themes.md
     - name: Apply grouping and binning
       href: desktop-grouping-and-binning.md
     - name: Apply gridlines and snap-to-grid
@@ -385,23 +389,11 @@
       - name: (new) Card visual considerations and limitations
         href: ../visuals/power-bi-visualization-card-visual-considerations.md
     - name: Button slicer
-      items: 
-      - name: Create a button slicer (preview)
-        href: ../visuals/power-bi-visualization-button-slicer.md
-      - name: Button slicer considerations and limitations
-        href: ../visuals/power-bi-visualization-button-slicer-considerations-limitations.md
-    - name: List slicer
-      items: 
-      - name: Create a list slicer (preview)
-        href: ../visuals/power-bi-visualization-list-slicer.md
-      - name: List slicer considerations and limitations
-        href: ../visuals/power-bi-visualization-list-slicer-considerations-limitations.md
-    - name: Text slicer
-      items: 
-      - name: Create a text slicer (preview)
-        href: ../visuals/power-bi-visualization-text-slicer.md
-      - name: Text slicer considerations and limitations
-        href: ../visuals/power-bi-visualization-text-slicer-considerations-limitations.md                                
+      href: ../visuals/power-bi-visualization-button-slicer.md
+    - name: List slicer (preview)
+      href: ../visuals/power-bi-visualization-list-slicer.md
+    - name: Text slicer (preview)
+      href: ../visuals/power-bi-visualization-text-slicer.md
     - name: Column charts
       items: 
       - name: Create a column chart visual

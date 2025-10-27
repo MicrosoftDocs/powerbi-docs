@@ -23,7 +23,7 @@ There are many uses for bookmarking. For example, you can create a collection of
 ## Other articles about bookmarks
 
 - In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, read about [personal bookmarks in the Power BI service](../consumer/end-user-bookmarks.md#use-personal-bookmarks-to-save-insights-and-build-stories-in-power-bi).
-- After you create your report bookmarks, you and your report readers can do more with them. You can quickly build a [bookmark navigation experience](button-navigators.md#bookmark-navigator) with a few more clicks.
+- After you create your report bookmarks, you and your report readers can do more with them. You can quickly build a [bookmark navigation experience](button-navigators.md#create-a-bookmark-navigator) with a few more clicks.
 
 ## Create report bookmarks
 
@@ -137,7 +137,7 @@ It's important to note that slicers continue to filter a report page, regardless
 
 ## Assign bookmarks to buttons
 
-You can link bookmarks to shapes and images. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. Read more about [using buttons in Power BI](desktop-buttons.md). Consider also creating a [bookmark navigator](button-navigators.md#bookmark-navigator), which creates a set of buttons all linked automatically to a group of bookmarks.
+You can link bookmarks to shapes and images. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. Read more about [using buttons in Power BI](desktop-buttons.md). Consider also creating a [bookmark navigator](button-navigators.md#create-a-bookmark-navigator), which creates a set of buttons all linked automatically to a group of bookmarks.
 
 ## Power BI Desktop Bookmark
 

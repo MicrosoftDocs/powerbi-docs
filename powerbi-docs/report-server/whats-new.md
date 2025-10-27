@@ -20,6 +20,44 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 Reminder: [How you can find your report server product key](find-product-key.md)
 
 
+## September 2025
+
+Read the Power BI blog post, [Power BI Report Server September 2025 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-september-2025-feature-summary/) for details.
+
+### General announcements
+#### SQL Server 2025 Updates
+
+Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server (PBIRS). No new versions of SQL Server Reporting Services (SSRS) will be released. PBIRS becomes the default on-premises reporting solution for SQL Server.
+
+### Visualizations
+
+- Drill Down Line PRO by ZoomChart
+- Date Picker by Powerviz
+- Stacked Bar Chart with Line by JTA – a Data Scientist’s Visualization Tool
+- Linear Gauge by Powerviz
+- Drill Down Shape Map PRO by ZoomCharts
+- Inforiver Premium Table – High-Performance, Formatted, and Scalable Table Visual for Power BI
+- Inforiver Analytics+ 4.7 is here with 100+ Charts, Gantt, KPI Cards, and Tables
+- Drill Down Waterfall PRO by ZoomCharts
+- Network Graph by Powerviz
+- Revenue Filter by JTA – a Data Scientist’s Visualization Tool
+- Decomposition Tree – All Expanding
+- DANDELION CHART
+- Dynamic Radial Bar Chart by JTA
+- Action dots are here an innovative way to visualize variances in Zebra BI Tables
+- KPI by Powerviz
+- Drill Down Timeline PRO by ZoomCharts
+- PowerGantt Chart by Nova Silva
+- Profitbase Gantt revamped
+
+### Reporting
+
+- Customize line segment colors in line charts
+- Additional Base Map customization options for Azure Maps Visual
+- Upcoming Azure Maps Tenant Settings & Layer Ordering Updates
+- Upcoming changes to the Power BI app in Teams Navigation Menu
+- Visual updates for semantic models with discourage implicit measures enabled
+
 ## May 2025
 
 Read the Power BI blog post, [Power BI Report Server May 2025 Feature Summary](https://powerbi.microsoft.com/es-es/blog/power-bi-report-server-may-2025-feature-summary/) for details.
@@ -964,7 +1002,7 @@ When authoring reports, you can use tooltips to specify text for each element on
 
 #### Azure Active Directory Application Proxy support
 
-With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps. See [Remote access to on-premises applications through Azure Active Directory's Application Proxy](/azure/active-directory/manage-apps/application-proxy) for more information.
+With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps.
 
 #### Custom headers
 
