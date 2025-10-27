@@ -129,15 +129,15 @@ To get the preceding values, follow these steps:
 1. Go to the application's original workspace.
 1. Open the **Release Management** pane.
 
-    :::image type="content" source="media/template-apps-auto-install/release-management-001.png" alt-text="Screenshot of Release Management pane.":::
+    :::image type="content" source="media/template-apps-auto-install/release-management-pane.png" alt-text="Screenshot of Release Management pane.":::
 
 1. Select the app version, and get its installation link.
 
-    :::image type="content" source="media/template-apps-auto-install/release-management-002.png" alt-text="Screenshot of Release Management button.":::
+    :::image type="content" source="media/template-apps-auto-install/release-management-button.png" alt-text="Screenshot of Release Management button.":::
 
 1. Copy the link to the clipboard.
 
-    :::image type="content" source="media/template-apps-auto-install/release-management-003.png" alt-text="Screenshot of Get link button.":::
+    :::image type="content" source="media/template-apps-auto-install/release-management-get-link.png" alt-text="Screenshot of Get link button.":::
 
 1. This installation URL holds the three URL parameters whose values you need. Use the **appId**, **packageKey**, and **ownerId** values for the application. A sample URL will be similar to what is shown here.
 
@@ -156,11 +156,11 @@ To get the application ID, follow these steps:
 1. On the All services page, in the **Identity** section, select > **App registrations**.
 1. Select the application that needs the **application ID**.
 
-    :::image type="content" source="media/template-apps-auto-install/embed-sample-for-customers-006.png" alt-text="Screenshot of choosing an app.":::
+    :::image type="content" source="media/template-apps-auto-install/embed-sample-choose-app.png" alt-text="Screenshot of choosing an app that needs application ID.":::
 
 1. There's an application ID that's listed as a GUID. Use this application ID as the **applicationId** value for the application.
 
-    :::image type="content" source="media/template-apps-auto-install/embed-sample-for-customers-007.png" alt-text="Screenshot of applicationId value.":::
+    :::image type="content" source="media/template-apps-auto-install/embed-sample-application-id-value.png" alt-text="Screenshot of applicationId value.":::
 
 #### Get the application secret
 
@@ -172,7 +172,7 @@ To get the application secret, follow these steps:
 1. From the portal menu, select **All services**.
 1. On the All services page, in the **Identity** section, select > **App registrations**.
 
-    :::image type="content" source="media/template-apps-auto-install/embed-sample-for-customers-0038.png" alt-text="Screenshot of choosing an app.":::
+    :::image type="content" source="media/template-apps-auto-install/embed-sample-choose.png" alt-text="Screenshot of choosing an app.":::
 
 1. Select **Certificates and secrets** under **Manage**.
 1. Select **New client secret**.
