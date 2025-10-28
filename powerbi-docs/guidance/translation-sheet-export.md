@@ -1,12 +1,13 @@
 ---
-title: Export translation sheets in Translations Builder
+title: Export Translation Sheets in Translations Builder
 description: Learn how to export translations sheets in Translations Builder. Human translators use these .csv files as the source to localize Power BI reports.
 author: JulCsc   
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
-ms.date: 07/24/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Export translation sheets in Translations Builder
 

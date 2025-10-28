@@ -1,6 +1,6 @@
 ---
 title: Waterfall Charts in Power BI
-description: Learn how to create and configure waterfall charts in the Power BI service and Power BI Desktop.
+description: Learn how to create and configure waterfall charts in Power BI to visualize running totals, analyze sequential changes in values, and understand how initial values are affected by increases and decreases.
 author: miguelmyersMS
 ms.author: miguelmyers
 ms.reviewer: juliacawthra
@@ -10,6 +10,7 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 10/01/2025
 ms.custom: sample-Retail-Analysis
+ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---
 
@@ -19,9 +20,9 @@ LocalizationGroup: Visualizations
 
 Waterfall charts show a running total as Power BI adds and subtracts values. These charts are useful for understanding how an initial value (like net income) is affected by a series of positive and negative changes.
 
-Each measure of change is a column on the chart. The columns are color-coded so you can quickly notice increases and decreases across the data.
+Each measure of change is a column on the chart. The columns are color coded so you can quickly notice increases and decreases across the data.
 
-The initial and final value columns are often configured to [start from the horizontal axis](https://support.microsoft.com/office/create-a-waterfall-chart-8de1ece4-ff21-4d37-acd7-546f5527f185#bkmk_float). The intermediate values are floating columns. A starting point for an intermediate column can be on the horizontal axis or on another axis parallel to the main axis.
+The initial and final value columns often start from the horizontal axis, while the intermediate values are floating columns. A starting point for an intermediate column can be on the horizontal axis or on another axis parallel to the main axis.
 
 The position of the intermediate columns can fluctuate between the initial and final values. The resulting view creates a picture similar to a concave or convex wave or a random waterfall cascade. Waterfall charts are also called *bridge charts*.
 
@@ -31,28 +32,19 @@ The position of the intermediate columns can fluctuate between the initial and f
 
 Waterfall charts are a great choice for many scenarios:
 
-- Representing changes for a measure across time, a series, or different categories.
-
-- Auditing major changes that contribute to a total value.
-
-- Plotting your company's annual profit by showing various sources of revenue and arrive at the total profit (or loss).
-
-- Illustrating the beginning and ending headcount for your company in a year.
-
-- Visualizing how much money you earn and spend each month and the running balance for your account.
+- Represent changes for a measure across time, a series, or different categories.
+- Audit major changes that contribute to a total value.
+- Plot your company's annual profit by showing various sources of revenue and arrive at the total profit (or loss).
+- Illustrate the beginning and ending headcount for your company in a year.
+- Visualize how much money you earn and spend each month, and the running balance for your account.
 
 - Visualizing the steps and relationships of business processes.
 
-- Monitoring and controlling data quality.
-
-- Visualizing and tracking progress of project steps.
-
-- Analyzing data defects and identifying their causes.
-
-- Understanding an organization's workings and the connections between departments.
-
-> [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, you need to save the report in Premium capacity to enable sharing. For more information, see [Share a filtered Power BI report](../collaborate-share/service-share-reports.md).
+- When you want to visualize the steps and relationships of business processes.
+- When you want to monitor and control data quality.
+- When you want to visualize and track the progress of project steps.
+- To analyze data defects and identify their causes.
+- To understand the workings of the organization and the connections between departments.
 
 ## Prerequisites
 
@@ -63,10 +55,8 @@ Review the following prerequisites for using waterfall charts in Power BI Deskto
 This tutorial uses the Retail Analysis Sample PBIX file.
 
 1. Download the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
-
 1. In Power BI Desktop, select **File** > **Open report**.
-
-1. Browse to and select the **Retail Analysis Sample PBIX** file, then select **Open**.
+1. Browse to and select the **Retail Analysis Sample PBIX** file, and then select **Open**.
 
    The **Retail Analysis Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
@@ -77,9 +67,7 @@ This tutorial uses the Retail Analysis Sample PBIX file.
 This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 1. Sign in to the Power BI service (`app.powerbi.com`).
-
 1. Select **Learn** in the navigation pane.
-
 1. On the **Learning center** page, under **Sample reports**, locate and select the **Retail Analysis Sample** to download it. The sample opens in report view.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-retail-analysis-sample.png" alt-text="Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service." lightbox="media/power-bi-visualization-waterfall-charts/power-bi-retail-analysis-sample-expanded.png" border="false":::
@@ -98,7 +86,7 @@ The following steps create a waterfall chart to display sales variance (estimate
 
 1. On the **Data** pane, expand **Sales** and select the **Total Sales Variance** checkbox. By default, Power BI presents the data as a clustered column chart.
 
-   This action configures the *Total Sales Variance* data as the **Y-axis** for the chart on the **Visualizations** pane.
+   This action configures the _Total Sales Variance_ data as the **Y-axis** for the chart on the **Visualizations** pane.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-select-total-sales-variance.png" alt-text="Screenshot that shows the Total Sales Variance checkbox selected and the default chart visual created by Power BI." border="false":::
 
@@ -120,11 +108,11 @@ When Power BI creates the waterfall chart, the data is displayed in ascending or
 
 You can change the sort order to view different perspectives of the data.
 
-1. On the *Total Sales Variance* chart, select **More options (...)** > **Sort axis** > **FiscalMonth**.
+1. On the _Total Sales Variance_ chart, select **More options (...)** > **Sort axis** > **FiscalMonth**.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png" alt-text="Screenshot that shows how to configure sort axis settings for the waterfall chart." border="false":::
 
-   This action changes the sort order of the FiscalMonth category to *descending* by month. Notice that August has the largest variance and January has the smallest variance.
+   This action changes the sort order of the FiscalMonth category to _descending_ by month. Notice that August has the largest variance and January has the smallest variance.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-fiscal-month-options.png" alt-text="Illustration that compares the waterfall charts for FiscalMonth data in descending and ascending sort order." lightbox="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-fiscal-month-options.png"  border="false":::
 
@@ -154,7 +142,7 @@ Let's take a closer look at the data to see what's contributing most to the chan
 
 1. Expand the waterfall chart's width to see more of the data.
 
-   Power BI uses the **Territory** value in the **Breakdown** section to add more data to the visualization. The chart now includes the top five contributors to increases or decreases for each fiscal month. Notice the month of February now has six data points instead of only one.  
+   Power BI uses the **Territory** value in the **Breakdown** section to add more data to the visualization. The breakdown feature splits each monthly total into separate segments showing contributions from different territories. The chart now includes the top five contributors to increases or decreases for each fiscal month. Notice the month of February now has six data points instead of only one.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-expanded.png" alt-text="Screenshot that shows an expanded view of the waterfall chart with the extra Territory data." border="false":::
 
@@ -162,7 +150,7 @@ Let's take a closer look at the data to see what's contributing most to the chan
 
 1. On the **Visualizations > Format your visual** pane, select **Breakdown**, and set the **Maximum breakdowns** value to **2**.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png" alt-text="Screenshot that shows the effect of changing the maximum breakdowns to two in the waterfall chart." border="false":::
+   The **Maximum breakdowns** setting controls how many breakdown categories are displayed for each data point in the waterfall chart. By setting this value to **2**, Power BI shows only the top two contributors (based on absolute value) for each fiscal month, grouping all other territories into an "Other" category.   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png" alt-text="Screenshot that shows the effect of changing the maximum breakdowns to two in the waterfall chart." border="false":::
 
    The updated chart reveals Ohio (OH) and Pennsylvania (PA) as the top two territories that are the largest contributors to increases and decreases.
 

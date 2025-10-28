@@ -1,12 +1,13 @@
 ---
-title: "Add a Localized Labels table to a Power BI report"
+title: "Add a Localized Labels Table to a Power BI Report"
 description: Learn how report label translations provide localized values for text elements on a report that aren't directly associated with a data model object.
 author: JulCsc   
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/24/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Add a Localized Labels table to a Power BI report
 
@@ -137,7 +138,6 @@ The example multiple-language project uses a *Rectangle* shape to display the lo
 The **Text** property of a shape can be configured with a hard-coded string. You must avoid hard-coding text values into the report layout when you create multiple-language reports. To use a localized measure, follow these steps.
 
 1. In Power BI Desktop, select the shape, a Rectangle, in this example.
-
 1. Under Format, select **Shape** > **Text**. In the **Text** pane, select the ***fx*** button.
 
    :::image type="content" source="./media/translation-builder-localize-label/text-function-button.png" alt-text="Screenshot shows the function button next to the text box for this rectangle.":::

@@ -1,6 +1,6 @@
 ---
-title: Display images in a table, matrix, or slicer in a report
-description: Learn how to create a column with hyperlinks to images in Power BI Desktop. Then, in either Power BI Desktop or the Power BI service, add those hyperlinks to a report table, matrix, slicer, or multi-row card to display the image.
+title: Display Images in a Table, Matrix, or Slicer in a Report
+description: Learn how to create a column with hyperlinks to images in Power BI Desktop and add those hyperlinks to report tables, matrices, slicers, or multi-row cards to display images dynamically based on your data.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -8,7 +8,8 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/14/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
@@ -25,15 +26,16 @@ A good way to enhance your reports is to add images to them. Static images on th
 
 1. Select that column. On the **Column tools** ribbon, for **Data category**, select **Image URL**.
 
-    ![Screenshot of the Data category menu, highlighting Image URL.](media/power-bi-images-tables/power-bi-set-url-image.png)
+   :::image type="content" source="media/power-bi-images-tables/power-bi-set-url-image.png" alt-text="Screenshot of the Data category menu with Image URL highlighted.":::
 
 1. Add the column to a table, matrix, slicer, or multi-row card.
 
-    ![Screenshot of a slicer with example images.](media/power-bi-images-tables/power-bi-url-images-slicer.png)
+   :::image type="content" source="media/power-bi-images-tables/power-bi-url-images-slicer.png" alt-text="Screenshot of a slicer with example images.":::
 
 ### Format the images
 
-1. In the **Visualizations** pane, select the paintbrush icon to format the images. 
+1. In the **Visualizations** pane, select the paintbrush icon to format the images.
+
 1. On the **Visual** tab, expand **Image size**, and set **Height** and **Width**.
 
     :::image type="content" source="media/power-bi-images-tables/image-size-height-width.png" alt-text="Screenshot showing setting image height and width.":::
@@ -62,6 +64,6 @@ Images in your report need to be anonymously accessible. However, for images tha
 
 ## Related content
 
-* [Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
-* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
-* More questions? [Try the Power BI community](https://community.powerbi.com/)
+- [Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+- More questions? [Try the Power BI community](https://community.powerbi.com/)

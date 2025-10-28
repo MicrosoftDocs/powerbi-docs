@@ -1,14 +1,15 @@
 ---
-title: External tools in Power BI Desktop
-description: Learn how to extend the use of Power BI Desktop with external tools developed by community contributors.
+title: External Tools in Power BI Desktop
+description: Learn how to use external tools in Power BI Desktop, including DAX Studio, Tabular Editor, ALM Toolkit, and Metadata Translator to extend data modeling, analysis, and lifecycle management capabilities.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 09/04/2024
+ms.date: 10/01/2025
 ms.custom: FY25Q1-Linter
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn about external tools in Power BI Desktop.
 ---
@@ -25,18 +26,14 @@ The **External Tools** ribbon provides easy access to external tools that are in
 
 External tools generally fall into one of the following categories:
 
-**Semantic modeling** - Open-source tools such as DAX Studio, ALM Toolkit, Tabular Editor, and Metadata Translator extend Power BI Desktop functionality for specific data modeling scenarios such as Data Analysis Expressions (DAX) query and expression optimization, application lifecycle management (ALM), and metadata translation.
-
-**Data analysis** - Tools for connecting to a model in read-only to query data and perform other analysis tasks. For example, a tool might launch Python, Excel, and Power BI Report Builder. The tool connects the client application to the model in Power BI Desktop for testing and analysis without having to first publish the Power BI Desktop (*pbix*) file to the Power BI service. Tools to document a Power BI semantic model also fall into this category.
-
-**Miscellaneous** - Some external tools don’t connect to a model at all, but instead extend Power BI Desktop to make helpful tips and make helpful content more readily accessible. For example, PBI.tips tutorials, DAX Guide from sqlbi.com, and the PowerBI.tips Product Business Ops community tool, make installation of a large selection of external tools easier. These tools also assist registration with Power BI Desktop, including DAX Studio, ALM Toolkit, Tabular Editor, and many others easy.
-
-**Custom** - Integrate your own scripts and tools by adding a *.pbitool.json document to the Power BI Desktop\External Tools folder.
+- **Semantic modeling** - Open-source tools such as DAX Studio, ALM Toolkit, Tabular Editor, and Metadata Translator extend Power BI Desktop functionality for specific data modeling scenarios such as Data Analysis Expressions (DAX) query and expression optimization, application lifecycle management (ALM), and metadata translation.
+- **Data analysis** - Tools for connecting to a model in read-only to query data and perform other analysis tasks. For example, a tool might launch Python, Excel, and Power BI Report Builder. The tool connects the client application to the model in Power BI Desktop for testing and analysis without having to first publish the Power BI Desktop (*pbix*) file to the Power BI service. Tools to document a Power BI semantic model also fall into this category.
+- **Miscellaneous** - Some external tools don’t connect to a model at all, but instead extend Power BI Desktop to make helpful tips and make helpful content more readily accessible. For example, PBI.tips tutorials, DAX Guide from sqlbi.com, and the PowerBI.tips Product Business Ops community tool, make installation of a large selection of external tools easier. These tools also assist registration with Power BI Desktop, including DAX Studio, ALM Toolkit, Tabular Editor, and many others easy.
+- **Custom** - Integrate your own scripts and tools by adding a *.pbitool.json document to the Power BI Desktop\External Tools folder.
 
 Before installing external tools, keep the following notes in mind:
 
 - External tools aren't supported in Power BI Desktop for Power BI Report Server.
-
 - External tools are provided by external, third-party contributors. Except for the underlying public Microsoft APIs, Microsoft doesn't provide support or documentation for external tools. Microsoft does provide support if the issue can be reproduced with Microsoft tools. These tools include SQL Server Management Studio (SSMS), or sample code that uses the public Microsoft APIs.
 
 ## Featured open-source tools
