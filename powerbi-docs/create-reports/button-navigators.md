@@ -205,7 +205,7 @@ To help ensure your approach of using the bookmark navigator meets accessibility
 - **Label bookmark buttons clearly and use meaningful alt text:**
   - Use clear, descriptive labels for bookmark buttons to ensure all users understand the purpose of each button.
   - Use the **Alt text** field to provide an accessible name for the bookmark navigator. This helps screen reader users to clearly understand what content is being modified.
-  - For example, if a bookmark navigator includes buttons labeled “**Sales details**” and “**Sales summary**,” and these bookmarks modify a table visual named “**2025 sales data**,” then the alt text for the bookmark navigator should be “**2025 sales data modifier**.”.
+  - For example, if a bookmark navigator includes buttons labeled “**Sales details**” and “**Sales summary**,” and these bookmarks modify a table visual named “**2025 sales data**,” then the alt text for the bookmark navigator should be “**2025 sales data modifier**.” 
 - **Maintain logical focus order for accessibility**:
   - Position bookmark buttons and the content they modify close together in the report layout. This ensures that keyboard users can navigate directly between them (e.g., tabbing from the bookmark navigator to the visual).
   - Avoid placing unrelated focusable elements (such as slicers) between the bookmark navigator and the modified content. This helps maintain smooth navigation and reinforces the connection between the bookmark and its associated data.
