@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.date: 10/06/2025
+ms.date: 10/01/2025
 ---
 
 # Use shortcuts in the Power BI Android app

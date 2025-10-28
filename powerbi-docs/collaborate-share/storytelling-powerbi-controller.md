@@ -8,7 +8,7 @@ ms.reviewer: mayabendov
 ms.topic: concept-article
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 10/16/2025
+ms.date: 10/01/2025
 ---
 
 # Manage multiple add-ins with the Power BI Controller (preview)

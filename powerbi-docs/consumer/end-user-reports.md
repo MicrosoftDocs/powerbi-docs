@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with reports
 ms.topic: how-to
-ms.date: 10/14/2025
+ms.date: 10/01/2025
 LocalizationGroup: Reports
 ---
 

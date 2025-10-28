@@ -8,7 +8,7 @@ ms.custom: FY25Q1-Linter
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/13/2025
+ms.date: 10/01/2025
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user, I want to find out how to create my own parameters for variables in my Power BI reports so that I can interact with my data.
 ---

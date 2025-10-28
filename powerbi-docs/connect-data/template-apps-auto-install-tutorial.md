@@ -1,23 +1,22 @@
 ---
-title: Automate template app installation with an Azure function
-description: Use a sample application to learn how to automatically install and configure template apps for your customers.
+title: Automate Template App Installation with Azure
+description: Learn how to automate Power BI template app installation and configuration for customers using Azure Functions. Includes sample code and step-by-step tutorial.
 author: JulCsc
 ms.author: juliacawthra
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/08/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ms.custom: sfi-image-nochange
 #Customer intent: As an ISV developer, I want to develop a mechanism whereby my customers can click a link that automatically installs and configures a template app that I own.
 ---
 
-# Tutorial: Automate configuration of template app installation using an Azure function
+# Automate template app installation with Azure
 
-Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data. The template apps provide customers with prebuilt reports that they can customize if they so desire.
+Automate template app installation to streamline the Power BI deployment process for your customers. Template apps provide prebuilt reports that connect to customer data, but manual configuration can be challenging for users unfamiliar with connection details.
 
-Customers aren't always familiar with the details of how to connect to their data. Having to provide these details when they install a template app can be a pain point for them.
-
-If you're a data services provider and have created a template app to help your customers get started with their data on your service, you can make it easier for them to install your template app. You can automate the configuration of your template app's parameters.
+This tutorial shows data services providers how to automate template app parameter configuration using Azure Functions. When customers click a preconfigured link, the automation gathers necessary information, sets parameters, and redirects them to install the app—requiring only authentication to complete setup.
 
 When the customer signs in to your portal, they select a special link you've prepared. This link:
 
@@ -29,7 +28,7 @@ All they have to do is select **Install** and authenticate against their data so
 
 The customer experience is illustrated here.
 
-![Illustration of user experience with an auto-installation application.](media/template-apps-auto-install/high-level-flow.png)
+:::image type="content" source="media/template-apps-auto-install/high-level-flow.png" alt-text="Screenshot of user experience with an auto-installation application.":::
 
 In this tutorial, you'll use an automated installation Azure Functions sample that we've created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It encapsulates the setup of an Azure function to use Power BI APIs for installing a template app and automatically configuring it for your users.
 
@@ -42,17 +41,13 @@ Our simple application uses an Azure function. For more information about Azure 
 The following basic flow lists what the application does when the customer launches it by selecting the link in your portal.
 
 1. The user signs in to the ISV's portal and selects the supplied link. This action initiates the flow. The ISV's portal prepares the user-specific configuration at this stage.
-
 1. The ISV acquires an *app-only* token based on a [service principal (app-only token)](./../developer/embedded/embed-service-principal.md) that's registered in the ISV's tenant.
-
 1. Using [Power BI REST APIs](/rest/api/power-bi/), the ISV creates an *install ticket*, which contains the user-specific parameter configuration as prepared by the ISV.
-
 1. The ISV redirects the user to Power BI by using a ```POST``` redirection method, which contains the install ticket.
-
 1. The user is redirected to their Power BI account with the install ticket and is prompted to install the template app. When the user selects **Install**, the template app is installed for them.
 
->[!Note]
->While parameter values are configured by the ISV in the process of creating the install ticket, data source-related credentials are only supplied by the user in the final stages of the installation. This arrangement prevents them from being exposed to a third party and ensures a secure connection between the user and the template app data sources.
+> [!NOTE]
+> While parameter values are configured by the ISV in the process of creating the install ticket, data source-related credentials are only supplied by the user in the final stages of the installation. This arrangement prevents them from being exposed to a third party and ensures a secure connection between the user and the template app data sources.
 
 ## Prerequisites
 
@@ -62,7 +57,7 @@ The following basic flow lists what the application does when the customer launc
 - To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
 - A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
-## Set up your template apps automation development environment
+## Set up your automation development environment
 
 Before you continue setting up your application, follow the instructions in [Quickstart: Create an Azure Functions app with Azure App Configuration](/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure function along with an Azure app configuration. Create your app configuration as described in the article.
 
@@ -88,14 +83,14 @@ After you've created your template app and it's ready for installation, save the
 
 - *Parameter names* as they're defined in the template app's semantic model. Parameter names are case-sensitive strings. They can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) or from the semantic model settings in Power BI.
 
->[!NOTE]
->You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi). Before you distribute your template app by using the automated installation application you're creating, be sure to [publish it to Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+> [!NOTE]
+> You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi). Before you distribute your template app by using the automated installation application you're creating, be sure to [publish it to Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ## Install and configure your template app
 
 In this section, you'll use an automated installation Azure Functions sample that we created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It allows you to use an [Azure function](/azure/azure-functions/functions-overview) and [Azure App Configuration](/azure/azure-app-configuration/overview) to easily deploy and use the automated installation API for your template apps.
 
-### Download [Visual Studio](https://www.visualstudio.com/) (version 2017 or later)
+### Download Visual Studio
 
 Download [Visual Studio](https://www.visualstudio.com/) (version 2017 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
 
@@ -103,7 +98,7 @@ Download [Visual Studio](https://www.visualstudio.com/) (version 2017 or later).
 
 Download the [automated installation Azure Functions sample](https://github.com/microsoft/Template-apps-examples) from GitHub to get started.
 
-![Screenshot that shows the automated installation Azure Functions sample.](media/template-apps-auto-install/azure-function-sample.png)
+:::image type="content" source="media/template-apps-auto-install/azure-function-sample.png" alt-text="Screenshot of automated installation Azure Functions sample.":::
 
 ### Set up your Azure app configuration
 
@@ -120,10 +115,9 @@ The keys are also defined in the **Constants.cs** file.
 | TemplateAppInstall:ServicePrincipal:ClientSecret | Service principal [application secret](#get-the-application-secret) |
 |||
 
-
 The **Constants.cs** file is shown here.
 
-![Screenshot that shows the Constant.cs file.](media/template-apps-auto-install/constants-app-configuration.png)
+:::image type="content" source="media/template-apps-auto-install/constants-app-configuration.png" alt-text="Screenshot of Constant.cs file.":::
 
 #### Get the template app properties
 
@@ -132,20 +126,18 @@ Fill in all relevant template app properties as they're defined when the app is 
 To get the preceding values, follow these steps:
 
 1. Sign in to [Power BI](https://app.powerbi.com).
-
 1. Go to the application's original workspace.
-
 1. Open the **Release Management** pane.
 
-    ![Screenshot that shows the Release Management pane.](media/template-apps-auto-install/release-management-001.png)
+    :::image type="content" source="media/template-apps-auto-install/release-management-pane.png" alt-text="Screenshot of Release Management pane.":::
 
 1. Select the app version, and get its installation link.
 
-    ![Screenshot that shows the Release Management button.](media/template-apps-auto-install/release-management-002.png)
+    :::image type="content" source="media/template-apps-auto-install/release-management-button.png" alt-text="Screenshot of Release Management button.":::
 
 1. Copy the link to the clipboard.
 
-    ![Screenshot that shows the Get link button.](media/template-apps-auto-install/release-management-003.png)
+    :::image type="content" source="media/template-apps-auto-install/release-management-get-link.png" alt-text="Screenshot of Get link button.":::
 
 1. This installation URL holds the three URL parameters whose values you need. Use the **appId**, **packageKey**, and **ownerId** values for the application. A sample URL will be similar to what is shown here.
 
@@ -160,18 +152,15 @@ Fill in the **applicationId** information with the application ID from Azure. Th
 To get the application ID, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-
 1. From the portal menu, select **All services**.
-
 1. On the All services page, in the **Identity** section, select > **App registrations**.
-
 1. Select the application that needs the **application ID**.
 
-    ![Screenshot that shows choosing an app.](media/template-apps-auto-install/embed-sample-for-customers-006.png)
+    :::image type="content" source="media/template-apps-auto-install/embed-sample-choose-app.png" alt-text="Screenshot of choosing an app that needs application ID.":::
 
 1. There's an application ID that's listed as a GUID. Use this application ID as the **applicationId** value for the application.
 
-    ![Screenshot that shows the applicationId value.](media/template-apps-auto-install/embed-sample-for-customers-007.png)
+    :::image type="content" source="media/template-apps-auto-install/embed-sample-application-id-value.png" alt-text="Screenshot of applicationId value.":::
 
 #### Get the application secret
 
@@ -179,19 +168,15 @@ Fill in the **ApplicationSecret** information from the **Keys** section of your 
 
 To get the application secret, follow these steps:
 
- 1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
+1. From the portal menu, select **All services**.
+1. On the All services page, in the **Identity** section, select > **App registrations**.
 
- 1. From the portal menu, select **All services**.
+    :::image type="content" source="media/template-apps-auto-install/embed-sample-choose.png" alt-text="Screenshot of choosing an app.":::
 
- 1. On the All services page, in the **Identity** section, select > **App registrations**.
-
-    ![Screenshot shows choosing an app.](media/template-apps-auto-install/embed-sample-for-customers-0038.png)
-
- 1. Select **Certificates and secrets** under **Manage**.
-
- 1. Select **New client secret**.
-
- 1. Enter a name in the **Description** box, and select a duration. Then select **Add** to get the value for your application, which you'll see under the **Value** heading for the client secret.
+1. Select **Certificates and secrets** under **Manage**.
+1. Select **New client secret**.
+1. Enter a name in the **Description** box, and select a duration. Then select **Add** to get the value for your application, which you'll see under the **Value** heading for the client secret.
 
 ## Test your function locally
 
@@ -199,7 +184,7 @@ Follow the steps as described in [Run the function locally](/azure/azure-functio
 
 Configure your portal to issue a ```POST``` request to the URL of the function. An example is ```POST http://localhost:7071/api/install```. The request body should be a JSON object that describes key-value pairs. Keys are *parameter names* as defined in Power BI Desktop. Values are the desired values to be set for each parameter in the template app.
 
->[!Note]
+> [!NOTE]
 > In production, parameter values are deduced for each user by your portal's intended logic.
 
 The desired flow should be:
@@ -209,8 +194,13 @@ The desired flow should be:
 1. If everything is configured properly, the browser should automatically redirect to the customer's Power BI account and show the automated installation flow.
 1. Upon installation, parameter values are set as configured in steps 1 and 2.
 
-## Related content
-
 ### Publish your project to Azure
 
 To publish your project to Azure, follow the instructions in the [Azure Functions documentation](/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure). Then you can integrate template app automated installation APIs into your product and begin testing it in production environments.
+
+## Related content
+
+- [Automate configuration of a template app installation](template-apps-auto-install.md)
+- [Create a template app in Power BI](service-template-apps-create.md)
+- [Tips for authoring template apps](service-template-apps-tips.md)
+- [Embed Power BI content with service principal and an application secret](./../developer/embedded/embed-service-principal.md)

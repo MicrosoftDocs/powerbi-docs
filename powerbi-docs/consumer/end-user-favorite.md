@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View your Favorites
 ms.topic: how-to
-ms.date: 10/06/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Common tasks
 # customer intent: As a Power BI custome using the Power BI service, I want to know how to create and remove favorite content. 

@@ -1,13 +1,14 @@
 ---
-title: Using calculations options in Power BI Desktop
-description: Learn how to use various calculations in Power BI Desktop.
+title: Using Calculations Options in Power BI Desktop
+description: Learn how to use various calculation options in Power BI Desktop, including custom columns, calculated columns, calculated tables, measures, and visual calculations to transform and analyze your data effectively.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/16/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Model your data
 ---
 # Using calculations options in Power BI Desktop
@@ -34,9 +35,9 @@ The following sections go into detail about the use of each of the calculation o
 
 You can create your own custom columns using the Power Query M formula language. Similar to creating calculated columns in DAX, Power Query M custom columns have the following features and capabilities:
 
-* Extend the table by evaluating an expression on a row-by-row basis
-* Are static, meaning they don't change with the user interaction on the report
-* Are computed as part of the data refresh and the results are stored in the model file, which means they take time to evaluate at data refresh, and increase the size of the model.
+- Extend the table by evaluating an expression on a row-by-row basis
+- Are static, meaning they don't change with the user interaction on the report
+- Are computed as part of the data refresh and the results are stored in the model file, which means they take time to evaluate at data refresh, and increase the size of the model.
 
 Although custom columns can aggregate rows from other tables, computed columns may result in better performance, since aggregation is done on the data source.
 
@@ -51,7 +52,6 @@ Calculated columns are stored in the model and can, unlike visual calculations a
 Calculated columns can be used in slicers, filters, rows, and columns on a visual.
 
 You can [learn more about calculated columns](desktop-calculated-columns.md).
-
 
 ## Measures
 
@@ -73,18 +73,15 @@ You can [learn more about calculated tables](desktop-calculated-tables.md).
 
 Visual calculations differ from the other calculations options in DAX in that they aren't stored in the model, and rather are stored on the visual. Visual calculations make it easier to create calculations that were previously hard to create, leading to simpler DAX, easier maintenance, and better performance.
 
-Visual calculations can only refer to what's on the visual. Anything that's in the model needs to be added to the visual before the visual calculation can refer to it, which means that visual calculations don't have to worry about the complexity of filter context and the model. 
+Visual calculations can only refer to what's on the visual. Anything that's in the model needs to be added to the visual before the visual calculation can refer to it, which means that visual calculations don't have to worry about the complexity of filter context and the model.
 
 Visual calculations combine the simplicity of context from calculated columns with the on-demand calculation flexibility from measures. Compared to measures, visual calculations operate on aggregated data, instead of the detail level, often leading to performance benefits. Since visual calculations are part of the visual, they can refer to the visual structure, which leads to more flexibility.
 
 You can [learn more about visual calculations](desktop-visual-calculations-overview.md).
 
+## Related content
 
-## Next steps
-
-The following articles may be useful when learning and using visual calculations: 
-
-* [Custom columns in Power Query](/power-query/add-custom-column)
-* [Calculated columns (DAX)](desktop-calculated-columns.md)
-* [Create measures for data analysis in Power BI Desktop](desktop-measures.md)
-* [Using visual calculations (preview)](desktop-visual-calculations-overview.md)
+- [Custom columns in Power Query](/power-query/add-custom-column)
+- [Calculated columns (DAX)](desktop-calculated-columns.md)
+- [Create measures for data analysis in Power BI Desktop](desktop-measures.md)
+- [Using visual calculations (preview)](desktop-visual-calculations-overview.md)

@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/22/2025
+ms.date: 10/01/2025
 ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
