@@ -85,7 +85,7 @@ The X-axis labels display below the columns in the chart. Right now, they're lig
 
    Here, we selected the second option and grabbed one of the resize bars to make the visualization wider. It now accommodates the 14-point text without needing to display the text on an angle or with a scrollbar.
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stretch.png" alt-text="Screenshot of the formatting pane and the chart with horizontal X-axis labels. The resize bar on the left side of the chart is highlighted."::
+   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stretch.png" alt-text="Screenshot of the formatting pane and the chart with horizontal X-axis labels. The resize bar on the left side of the chart is highlighted.":::
 
 ### Customize the X-axis title
 
@@ -97,7 +97,7 @@ When the X-axis title is **On**, the X-axis title displays below the X-axis labe
 
    The first thing you might notice is that your visualization now has a default X-axis title. In this case, it's *FiscalMonth*.
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title.png" alt-text="Screenshot of the chart with title "FiscalMonth" displayed along the bottom.":::
+   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title.png" alt-text="Screenshot of the chart with title 'FiscalMonth' displayed along the bottom.":::
 
 1. Format the x-axis title text, font size, and font color:
 
