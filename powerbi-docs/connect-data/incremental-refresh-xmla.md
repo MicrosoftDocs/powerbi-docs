@@ -24,6 +24,9 @@ When you first publish a model to the Power BI service, each table in the new mo
 
 When you perform the *first* refresh operation, tables with no incremental refresh policy refresh all rows contained in that table's default single partition. For tables with an incremental refresh policy, refresh and historical partitions are automatically created and rows are loaded into them according to the date/time for each row. If the incremental refresh policy includes getting data in real time, Power BI also adds a DirectQuery partition to the table.
 
+> [!IMPORTANT]
+> When using incremental refresh with real-time data (hybrid mode), tables related to the hybrid table should use Dual storage mode to avoid performance penalties. Additionally, visual caching can delay live updates until visuals re-query the data. For more information, see [Troubleshoot incremental refresh and real-time data](incremental-refresh-troubleshoot.md).
+
 This first refresh operation can take quite some time depending on the amount of data that needs to be loaded from the data source. The complexity of the model can also be a significant factor because refresh operations must do more processing and recalculation. This operation can be bootstrapped. For more information, see [Prevent timeouts on initial full refresh](#prevent-timeouts-on-initial-full-refresh).
 
 Partitions are created for and named by period granularity: Years, quarters, months, and days. The most recent partitions, the *refresh* partitions, contains rows in the refresh period you specify in the policy. Historical partitions contain rows by complete period up to the refresh period. If real time is enabled, a DirectQuery partition picks up any data changes that occurred after the end date of the refresh period. Granularity for refresh and historical partitions is dependent on the refresh and historical (store) periods you choose when defining the policy.
@@ -39,6 +42,16 @@ As whole periods close, partitions are merged. For example, if a one-day refresh
 A model always retains partitions for the entire historical store period plus whole period partitions up through the current refresh period. In the example, a full three years of historical data are retained in partitions for 2018, 2019, 2020, and also partitions for the 2021Q101 month period, the 2021Q10201 day period, and the current day refresh period partition. Because the example retains historical data for three *years*, the 2018 partition is retained until the first refresh on January 1, 2022.
 
 With Power BI incremental refresh and real-time data, the service handles the partition management for you based on the policy. While the service can handle all of the partition management for you, by using tools through the XMLA endpoint, you can selectively refresh partitions individually, sequentially, or in parallel.
+
+### Common partition refresh patterns
+
+When working with XMLA endpoint operations, consider these common patterns for managing refresh operations:
+
+- **Frequent small refreshes**: Run multiple small, targeted refresh operations during business hours using XMLA partition commands or the enhanced REST API to keep recent data current without processing the entire table.
+- **Selective historical backfills**: Perform larger historical partition refreshes or one-off data corrections during off-hours using TMSL with `applyRefreshPolicy: false` to rebuild specific historical periods without affecting the automatic policy behavior.
+- **Staged initial loads**: For very large historical periods, break the initial refresh into smaller batches by processing partitions incrementally to avoid timeouts and manage resource consumption.
+
+These patterns allow you to balance real-time data freshness with system performance and resource constraints.
 
 ## Refresh management with SQL Server Management Studio
 
@@ -77,6 +90,14 @@ These parameters can be used with the TMSL refresh command to override the defau
 ```
 
 To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+
+### Managing policies with Tabular Editor
+
+In addition to SSMS, you can use [Tabular Editor](https://tabulareditor.com/) to create and modify incremental refresh policies directly against semantic models through the XMLA endpoint. This allows you to adjust policy settings—such as refresh periods, historical periods, and source expressions—without needing to republish the model from Power BI Desktop. Tabular Editor can also be used to apply refresh policies to existing tables and manage `RangeStart` and `RangeEnd` parameter expressions. For more information, see [Incremental refresh](https://docs.tabulareditor.com/te2/incremental-refresh.html) in the Tabular Editor documentation.
+
+## Refresh orchestration and automation
+
+Beyond using SSMS, TMSL, and TOM for managing refreshes through the XMLA endpoint, you can also orchestrate semantic model refresh operations using the [Power BI REST API](/rest/api/power-bi/datasets/refresh-dataset). The enhanced refresh API provides additional capabilities including table-level and partition-level refresh, retry logic, cancellation, and custom timeout management. This approach is particularly useful for integrating refresh operations into automated workflows and CI/CD pipelines. For detailed guidance, see [Enhanced refresh with the Power BI REST API](asynchronous-refresh.md).
 
 ## Ensuring optimal performance
 
@@ -261,7 +282,10 @@ namespace Hybrid_Tables
 
 ## Related content
 
+- [Configure incremental refresh and real-time data](incremental-refresh-configure.md)
+- [Troubleshoot incremental refresh and real-time data](incremental-refresh-troubleshoot.md)
+- [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)
+- [Enhanced refresh with the Power BI REST API](asynchronous-refresh.md)
 - [Partitions in tabular models](/analysis-services/tabular-models/partitions-ssas-tabular?view=power-bi-premium-current&preserve-view=true)
 - [External tools in Power BI Desktop](../transform-model/desktop-external-tools.md)
 - [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)
-- [Troubleshoot incremental refresh and real-time data](incremental-refresh-troubleshoot.md)
