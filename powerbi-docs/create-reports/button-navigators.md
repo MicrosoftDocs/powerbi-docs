@@ -202,16 +202,16 @@ To complete the experience, use conditional formatting to link a page-navigation
 
 To help ensure your approach of using the bookmark navigator meets accessibility requirements, follow these best practices:
 
-- Name the bookmark buttons clearly and use alt text appropriately:
-  - Use clear, descriptive labels for bookmark buttons so all users understand what content the buttons modify.
-  - Use each **Alt text** field to provide an accessible name that makes it clear to users of screen readers what the button does.
-  - Whenever possible, include the name of the data grid or its containing group. For example, if the bookmark button's label is *Sales details*, its alt text might be *Show sales details data*.
-- Ensure logical focus order:
-  - Position the bookmark buttons and the content they control so that users navigating by keyboard can move directly between them.
-  - Avoid placing unrelated focusable elements, such as slicers, between the bookmark navigator and the content it adjusts. Omitting unrelated elements makes navigation smoother and helps users quickly associate each button with its corresponding data.
-- Use meaningful names for data grids:
-  - Give each data grid a clear name that reflects the currently active button.
-  - Give the group that contains the grid a consistent name that covers all grid updates, such as *Summary data* or *Detailed data*.
+- **Label bookmark buttons clearly and use meaningful alt text:**
+  - Use clear, descriptive labels for bookmark buttons to ensure all users understand the purpose of each button.
+  - Use the **Alt text** field to provide an accessible name for the bookmark navigator. This helps screen reader users to clearly understand what content is being modified.
+  - For example, if a bookmark navigator includes buttons labeled “**Sales details**” and “**Sales summary**,” and these bookmarks modify a table visual named “**2025 sales data**,” then the alt text for the bookmark navigator should be “**2025 sales data modifier**.”.
+- **Maintain logical focus order for accessibility**:
+  - Position bookmark buttons and the content they modify close together in the report layout. This ensures that keyboard users can navigate directly between them (e.g., tabbing from the bookmark navigator to the visual).
+  - Avoid placing unrelated focusable elements (such as slicers) between the bookmark navigator and the modified content. This helps maintain smooth navigation and reinforces the connection between the bookmark and its associated data.
+- **Name visuals to reflect bookmark context**:
+  - Each visual should have a clear and descriptive name (alt text) that aligns with the labels used in the bookmark navigator (see the example in the first bullet).
+  - Ideally, this name should also appear as the visual’s title. Displaying it as a heading helps assistive technology users locate and understand the visual more easily.
 
 ## Considerations and limitations
 
