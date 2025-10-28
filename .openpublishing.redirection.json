@@ -6939,6 +6939,11 @@
       "source_path": "powerbi-docs/visuals/power-bi-visualization-button-slicer-considerations-limitations.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualization-button-slicer",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/guidance/overview.md",
+      "redirect_url": "/power-bi/guidance/index",
+      "redirect_document_id": false
     }
   ]
 }                           
