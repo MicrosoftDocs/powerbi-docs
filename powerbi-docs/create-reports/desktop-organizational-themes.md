@@ -7,7 +7,7 @@ ms.reviewer: jacindaeng
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/14/2025
+ms.date: 10/01/2025
 LocalizationGroup: Create reports
 #customer intent: As a Power BI administrator, I want to learn how to create and manage organizational themes so I can enforce consistent branding across all reports in my organization.
 ---

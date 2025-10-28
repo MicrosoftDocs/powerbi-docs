@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/13/2025
+ms.date: 10/01/2025
 LocalizationGroup: Connect to services
 ---
 # Connect to Snowflake in the Power BI service

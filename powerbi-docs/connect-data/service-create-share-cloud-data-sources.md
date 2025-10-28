@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 LocalizationGroup: Connect to data
 ms.custom: sfi-image-nochange
 # customer intent: As a Power BI user, I want to find out how to use shareable cloud connections in the Power BI service so that I can set up multiple connections to the same data source, share my connections with others, and centralize data source connection management.

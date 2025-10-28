@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 10/20/2025
+ms.date: 10/01/2025
 ---
 
 # What's new in Power BI collaboration and integration
