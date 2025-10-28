@@ -1,6 +1,6 @@
 ---
-title: Customize the Visualizations pane in Power BI Desktop and the Power BI service 
-description: Personalize the report Visualizations pane in Microsoft Power BI.
+title: Customize the Visualizations Pane in Power BI Desktop and the Power BI Service
+description: Learn how to personalize the Visualizations pane in Power BI by adding, removing, and managing visual types, including custom visuals from AppSource and organizational visuals.
 author: miguelmyersMS
 ms.author: miguelmyers
 ms.reviewer: juliacawthra
@@ -8,8 +8,9 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/25/2023
-LocalizationGroup: Visualizations 
+ms.date: 10/01/2025
+ai-usage: ai-assisted
+LocalizationGroup: Visualizations
 ---
 
 # Customize the Visualizations pane in Power BI Desktop and the Power BI service 
@@ -79,7 +80,6 @@ In the Power BI service, when you have the visualization the way you want it, yo
 ## Considerations and limitations
 
 - Depending on the data source and the number of fields (measures or columns), a visual may load slowly. We recommend limiting visuals to 10-20 total fields, both for readability and performance reasons.
-
 - The upper limit for visuals is 100 fields (measures or columns). If your visual fails to load, reduce the number of fields.
 
 ## Related content
