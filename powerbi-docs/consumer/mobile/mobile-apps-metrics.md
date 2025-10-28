@@ -26,7 +26,7 @@ To read more about metrics, see [Get started with metrics in Power BI](../../cre
 
 ## Metrics hub
 
-The metrics hub is a centralized place where you can see and update your important metrics as well as navigate to scorecards you have access to.
+The metrics hub is a centralized place where you can see and update your important metrics and navigate to scorecards you have access to.
 
 Tap the **Metrics** tab on the app's home page to display the metrics hub.
 
@@ -42,12 +42,12 @@ You can easily update a metric by tapping the ellipsis at the upper right corner
 
 :::image type="content" source="media/mobile-apps-metrics/power-bi-mobile-app-metrics-hub-update.png" alt-text="Screenshot of check-in from the metrics hub.":::
 
-You'll get a number of options:
+Your options include:
 
-- **Quick check-in**: Allows you to check in a value for the current date and to update metric status. Quick check-in is not available for metrics with connected reports.
-- **New check-in**: Allows you to check in a value for a date you choose, update metric status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
+- **Quick check-in**: Allows you to check in a value for the current date and to update metric status. Quick check-in isn't available for metrics with connected reports.
+- **New check-in**: Allows you to check in a value for a date you choose, update metric status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They receive [notification](#notifications) that a check-in is flagged for their attention.
 - **Connected report (current)**: Opens the report that is connected to the metric's "current" value. You'll only see this option if the metric's current value is connected to a report.
-- **Connected report (target)**: Opens the report that is connected to the metric's "target" value. You'll only see this option if the metric's target value is connected to a report.
+- **Connected report (target)**: Opens the report that is connected to the metric's "target" value. You only see this option if the metric's target value is connected to a report.
 
 ## Scorecards
 
@@ -57,7 +57,7 @@ A scorecard has a summary that shows the number of metrics in the scorecard and 
 
 :::image type="content" source="media/mobile-apps-metrics/power-bi-mobile-app-scorecard-status-filters.png" alt-text="Screenshot of a scorecard that shows the number of metrics in the scorecard, the number of metrics in each status, and a list of all the metrics.":::
 
-Tap the status buttons in the summary to filter for the metrics with the selected status. You can select multiple filters. Tap the **Metrics** button to clear the filters. The image above shows the scorecard filtered by Completed and Behind status.
+Tap the status buttons in the summary to filter for the metrics with the selected status. You can select multiple filters. Tap the **Metrics** button to clear the filters. The previous image shows the scorecard filtered by Completed and Behind status.
 
 In the scorecard, metrics are represented by cards.
 
@@ -86,17 +86,17 @@ A metric’s detail pane has a chart of the metric’s progress and lists all th
 
 :::image type="content" source="media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane.png" alt-text="Screenshot of a metric detail pane that shows a chart of the metric's progress and lists all the activity on the metric.":::
 
-**Action buttons**: Tap an action button to update the metric or to start/stop following it. You will have several options:
+**Action buttons**: Tap an action button to update the metric or to start/stop following it. You have several options:
 
-- **Quick check-in**: Allows you to check in a value for the current date and to update metric status. Quick check-in is not available for metrics with connected reports.
-- **New check-in**: Allows you to check in a value for a date you choose, update metric status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
+- **Quick check-in**: Allows you to check in a value for the current date and to update metric status. Quick check-in isn't available for metrics with connected reports.
+- **New check-in**: Allows you to check in a value for a date you choose, update metric status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They receive [notification](#notifications) that a check-in has been flagged for their attention.
 - **Follow/Unfollow**: Allows you to start/stop following the metric in order to keep up to date with activity on the metric.
 
 **Activity/Details toggle**: Use the toggle to switch between views of check-in activity on the metric and details such as connected reports or other info that the scorecard creator has configured.
 
 :::image type="content" source="media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane-toggle.png" alt-text="Screenshot of a metric detail pane that showing the activity/details toggle.":::
 
-Tap on a connected report to open it. If you don't see the name of the report, but only the word "Report", it means you don't have access to the report. Tap on the report to request access.
+Tap on a connected report to open it. If you don't see the name of the report, but only the word "Report," it means you don't have access to the report. Tap on the report to request access.
 
 ### Add a note to an existing check-in
 
@@ -104,7 +104,7 @@ Generally, you add note as part of a new check-in, but you can also add a note t
 
 :::image type="content" source="media/mobile-apps-metrics/mobile-apps-add-note.png" alt-text="Screenshot of the add note option for an existing check-in.":::
 
-As mentioned, in a note you can @mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
+As mentioned, in a note you can @mention a person if you want to get their attention. They receive [notification](#notifications) that a check-in has been flagged for their attention.
 
 ### Edit or delete a check-in
 
@@ -116,8 +116,8 @@ To edit or delete a check-in on iOS devices, slide the check-in to the left and 
 
 Notifications help you stay up to date with information that requires your immediate attention. The Mobile apps support two types of notification that are related to metrics:
 
-- **Metric assignment notification**: When someone assigns you a metric, you'll receive a metric assignment notification on your mobile device. This way you'll never miss when you've become a metric owner and are now accountable for that metric.  
-- **Notifications for \@mentions**: Whenever you're @mentioned in a note attached to a new or existing check-in, you'll receive a notification on your mobile device. This way, you won't miss it when someone @mentions you to get your attention.
+- **Metric assignment notification**: When someone assigns you a metric, you receive a metric assignment notification on your mobile device. This way you never miss when you've become a metric owner and are now accountable for that metric.  
+- **Notifications for \@mentions**: Whenever you're @mentioned in a note attached to a new or existing check-in, you receive a notification on your mobile device. This way, you don't miss it when someone @mentions you to get your attention.
 
 For both kinds of notification, tapping the notification takes you right to the metrics details pane inside the scorecard, where you can see all the necessary information.
 
@@ -133,7 +133,7 @@ To see all the metrics you're following, tap the metrics display dropdown in the
 
 :::image type="content" source="media/mobile-apps-metrics/power-bi-mobile-app-show-followed-metrics.png" alt-text="Screenshot showing how to display followed metrics in the Power BI mobile app's Metrics tab.":::
 
-It makes no difference whether the metric was marked for following in the Power BI service or in the mobile app - you'll see them all. Likewise, in the Power BI service you'll also be able to see all your followed metrics - including those that you started following from the mobile app.
+It makes no difference whether the metric was marked for following in the Power BI service or in the mobile app - you see them all. Likewise, in the Power BI service you can also see all your followed metrics - including those that you started following from the mobile app.
 
 ## Related content
 

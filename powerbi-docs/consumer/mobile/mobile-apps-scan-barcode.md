@@ -21,7 +21,7 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 
-Say your organization has reports containing data that has been [tagged as barcode data in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md). When you scan a product barcode using the Power BI mobile app's camera, you'll get a list of the reports that have barcode data. You can open the report you're looking for, automatically filtered to the information you need.
+Say your organization has reports containing data that was [tagged as barcode data in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md). When you scan a product barcode using the Power BI mobile app's camera, you get a list of the reports that have barcode data. You can open the report you're looking for, automatically filtered to the information you need.
 
 :::image type="content" source="media/mobile-apps-scan-barcode/power-bi-barcode-scanner.png" alt-text="Screenshot of a product barcode scan, showing the scanner over the barcode of a colored beverage.":::
 
@@ -30,8 +30,8 @@ Say your organization has reports containing data that has been [tagged as barco
 
 Here are examples of two scenarios where barcode scanning is useful:
 
-- Imagine you're checking inventory in a large supermarket and while you're out in the aisles you need to get information about particular products, such as how many the store has in stock, or what departments the items are stocked in. You can just open the Power BI scanner on your mobile device and scan an item's barcode. You'll get a list of reports that have barcode data. You choose the relevant report and the report opens, filtered to the relevant data.
-- Say the machines on a factory floor are identified with barcodes, and the telemetry from those machines is being processed and sent to Power BI. When engineers are out on the floor checking machine status, they can easily scan a machine's barcode and get to a KPI report about its performance and status.
+- Imagine you're checking inventory in a large supermarket and while you're out in the aisles you need to get information about particular products, such as how many the store has in stock, or what departments the items are stocked in. You can just open the Power BI scanner on your mobile device and scan an item's barcode. You get a list of reports that have barcode data. You choose the relevant report and the report opens, filtered to the relevant data.
+- Say the machines on a factory floor are identified with barcodes, and the telemetry from those machines is being processed and sent to Power BI. When engineers are out on the floor checking machine status, they can easily scan a machine's barcode and get to a key performance indicator (KPI) report about its performance and status.
 
 ## Scan a barcode with the Power BI scanner
 
@@ -39,18 +39,18 @@ Here are examples of two scenarios where barcode scanning is useful:
 
     :::image type="content" source="media/mobile-apps-scan-barcode/power-bi-camera.png" border="false" alt-text="Screenshot of the More options on the navigation pane, showing the scanner selection.":::
 
-1. If your camera is not enabled, you'll need to approve the Power BI app to use the camera. This is a one-time operation.
-1. Point the scanner at a barcode on the item you're interested in. You will see a list of reports that have barcode fields.
-1. Find the report you're looking for and tap to open it on your device, automatically filtered according to the barcode you scanned. If the report doesn't contain the barcode, you'll get the message "Couldn't filter report". In that case you can go back to the list and try another report.
+1. If your camera isn't enabled, you need to approve the Power BI app to use the camera. This is a one-time operation.
+1. Point the scanner at a barcode on the item you're interested in. You'll see a list of reports that have barcode fields.
+1. Find the report you're looking for and tap to open it on your device, automatically filtered according to the barcode you scanned. If the report doesn't contain the barcode, you get the message "Couldn't filter report." In that case you can go back to the list and try another report.
 
-    Note that the **Barcode** icon in the report's action bar is active, not greyed out. This indicates that the report is currently filtered by the barcode.
+    The **Barcode** icon in the report's action bar is active, not greyed out. This indicates that the report is currently filtered by the barcode.
 
     Select the **Clear Barcode** icon if you want to clear the filter and return to the unfiltered report.  
 
     :::image type="content" source="./media/mobile-apps-scan-barcode/barcode-icon-active.png" alt-text="Screenshot showing active barcode icon in the report's action bar, indicating that the barcode filter is active." border="false":::
 
     > [!NOTE]
-    > If there is only one report with a barcode field, you won't get a list of reports, but rather the report will open directly, filtered according to the barcode you scanned. If the report doesn't contain the barcode you scanned, you will get the message "Couldn't filter report".
+    > If there's only one report with a barcode field, you don't get a list of reports. Instead, the report opens directly, filtered according to the barcode you scanned. If the report doesn't contain the barcode you scanned, you get the message "Couldn't filter report."
 
 ## Filter by other barcodes while in a report
 
@@ -66,7 +66,7 @@ A floating scanner opens with a small menu.
 
 - Focus the scanner on the new item to change the filter of the report to a different barcode value.
 - Tap **Clear barcode filter** to go back to the unfiltered report.
-- Tap **Filter by recent barcodes** to change the report filter to one of the barcodes you've scanned within the current session.
+- Tap **Filter by recent barcodes** to change the report filter to one of the barcodes you scanned within the current session.
 
 ## Considerations and limitations
 
@@ -84,10 +84,10 @@ The mobile apps support Barcode filtering for reports that have only one barcode
 Here are some issues you might encounter when you scan a barcode on an item.
 
 - You get a message **Couldn't filter report - Looks like this barcode doesn't exist in the report data**: This means that the value of the barcode you scanned doesn't appear in the data model of the report you chose to filter. This might be the case, for instance, if the product whose barcode you scanned isn't included in the report. You can scan a different product, choose a different report (if more than one report is available), or view the report unfiltered.
-- You get a message **Looks like you don't have any reports that can be filtered by barcodes**: This means you don't have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**. Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
+- You get a message **Looks like you don't have any reports that can be filtered by barcodes**: This means you don't have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**. Make sure you or the report owner tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
 - Filtering returns an empty state. This could mean that the barcode value you scanned exists in your model, but all or some of the visuals in your report don't contain this value. In this case, try looking at other report pages or edit your reports in Power BI Desktop to contain this value.
 - You get a message **Can't scan the barcode**. (Android users only): Verify that Google Play services is up to date.
-- Barcode scanning functionality is not supported for reports based on Datamarts or default Power BI semantic models in Microsoft Fabric.
+- Barcode scanning functionality isn't supported for reports based on Datamarts or default Power BI semantic models in Microsoft Fabric.
 
 ## Related content
 
