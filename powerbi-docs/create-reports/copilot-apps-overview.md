@@ -15,21 +15,21 @@ ms.collection: ce-skilling-ai-copilot
 # Overview of Copilot for Power BI apps
 
 Copilot is available in apps two ways: 
-1. A report-scoped Copilot that can help users with summaries of the report in view or answer questions based on that report in view
-2. An app-scoped Copilot (preview) that can help users find items in the app based on their interests, summarize an item in the app, or answer questions based on items in the app.
+* A report-scoped Copilot that can help users with summaries of the report in view or answer questions based on that report in view
+* An app-scoped Copilot (preview) that can help users find items in the app based on their interests, summarize an item in the app, or answer questions based on items in the app.
 
-:::image type="content" source="media/copilot-apps-overview/app-copilot-and-report-copilot.png" alt-text="Screenshot of app-scoped Copilot and report-scoped Copilot" lightbox="media/copilot-apps-overview/app-copilot-and-report-copilot.png":::
+:::image type="content" source="media/copilot-apps-overview/app-copilot-and-report-copilot.png" alt-text="Screenshot of app-scoped Copilot and report-scoped Copilot." lightbox="media/copilot-apps-overview/app-copilot-and-report-copilot.png":::
 
 ## Report-scoped Copilot in apps
 Report Copilot is available in workspace apps and org apps (the new version of apps in preview). Report Copilot, when opened, is scoped to the report in view only. See [Copilot for Power BI reports](copilot-reports-overview.md) for information on how report Copilot works.
 
-:::image type="content" source="media/copilot-apps-overview/report-copilot-in-app.png" alt-text="Screenshot of report-scoped Copilot open within an app" lightbox="media/copilot-apps-overview/report-copilot-in-app.png":::
+:::image type="content" source="media/copilot-apps-overview/report-copilot-in-app.png" alt-text="Screenshot of report-scoped Copilot open within an app." lightbox="media/copilot-apps-overview/report-copilot-in-app.png":::
 
 ## App-scoped Copilot (preview)
 
 App-scoped Copilot is available in workspace apps. Copilot for apps is similar to standalone Copilot for Power BI. While standalone Copilot is scoped to all Copilot-supported items types a user has access to in Power BI, app-scoped Copilot scoped to only the Copilot-supported item types in the app. See [standalone Copilot for Power BI](copilot-chat-with-data-standalone.md) for information on how standalone Copilot works. Continue to read this article for more information on how app-scoped Copilot works similarly for an app.
 
-:::image type="content" source="media/copilot-apps-overview/app-scoped-copilot-open-in-app.png" alt-text="Screenshot of app-scoped Copilot open within an app" lightbox="media/copilot-apps-overview/app-scoped-copilot-open-in-app.png":::
+:::image type="content" source="media/copilot-apps-overview/app-scoped-copilot-open-in-app.png" alt-text="Screenshot of app-scoped Copilot open within an app." lightbox="media/copilot-apps-overview/app-scoped-copilot-open-in-app.png":::
 
 ### Item types supported by app-scoped Copilot (preview) 
 
@@ -48,8 +48,7 @@ There are item types support by apps that app-scoped Copilot doesn't support:
 * Paginated reports
 * Dashboards
 * Workbooks
-* Linked or link-embedded content
-* * Including link embedded Power BI items, like reports
+* Linked content, including link-embedded Power BI items such as reports.
  
 ### How to use app-scoped Copilot (preview)
 App-scoped Copilot is available in tenants where Copilot is enabled and the app author enabled app-scoped Copilot and visible in the app navigation.
@@ -81,7 +80,7 @@ Copilot can provide summaries about an entire report or a specific topic within 
 * "Give me a summary about customer sentiment on smart materials."
 * "Summarize trends in sales last year."
 
-:::image type="content" source="media/copilot-apps-overview/app-copilot-summary-close-up.png" alt-text="Screenshot of request to summarize customer sentiment, selecting a report, and summary returned by app-scoped Copilot" lightbox="media/copilot-apps-overview/app-copilot-summary-close-up.png":::
+:::image type="content" source="media/copilot-apps-overview/app-copilot-summary-close-up.png" alt-text="Screenshot of request to summarize customer sentiment, selecting a report, and summary returned by app-scoped Copilot." lightbox="media/copilot-apps-overview/app-copilot-summary-close-up.png":::
 
 Summaries in the app-scoped Copilot experience include both textual insights and relevant visuals within the narrative. Currently, summaries are only available for reports, not for semantic models. Learn more about [summarizing a report or topic](copilot-pane-summarize-content.md).
 
