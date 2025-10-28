@@ -15,7 +15,7 @@ no-loc: [Copilot]
 
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
-See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+See [What's new in Power BI](whats-new.md) for more information about new features. 
 
 ## September 2025 QFE 2 
 
@@ -967,7 +967,7 @@ Bug fixes:
 
 ## Related content
 
-- [What's new in Power BI](desktop-latest-update.md)
+- [What's new in Power BI](whats-new.md)
 - [Previous monthly updates to Power BI](desktop-latest-update-archive.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

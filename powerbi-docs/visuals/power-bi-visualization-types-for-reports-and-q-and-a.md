@@ -80,13 +80,13 @@ For more information, see [Combo charts in Power BI](power-bi-visualization-comb
 
 The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It's also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for exploration and conducting root cause analysis.
 
-## Doughnut charts
+## Donut charts
 
-:::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/donut-small.png" alt-text="Screenshot of a Doughnut chart.":::
+:::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/donut-small.png" alt-text="Screenshot of a donut chart.":::
 
-Doughnut charts are similar to pie charts. They show the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
+donut charts are similar to pie charts. They show the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
-For more information, see [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md).
+For more information, see [Pie and donut charts in Power BI](power-bi-visualization-pie-donut-chart.md).
 
 ## Funnel charts
 

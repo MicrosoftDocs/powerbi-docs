@@ -17,7 +17,7 @@ Power BI Mobile app versions are released on a monthly cadence. The latest versi
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
-* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+* [What's new in Power BI](../../fundamentals/whats-new.md)
 
 ## September 2025
 
@@ -1386,7 +1386,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 ### February 2016
 #### Android
-View dashboards in [landscape mode on Android phones](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
+View dashboards in [landscape mode on Android phones](mobile-apps-view-dashboard.md). 
 
 #### Power BI app for Windows 10 devices
 View [reports on your Windows 10 phone](mobile-reports-in-the-mobile-apps.md).

@@ -30,7 +30,7 @@ There are two types of Power BI bookmarks: *personal* and *report*. Report desig
 
 This article explains how to create and use personal bookmarks. It also explains how to interact with report bookmarks that someone else creates and shares with you. Viewing shared reports and report bookmarks requires one or both of the following prerequisites:
 
-- a Power BI Pro or a Premium Per User (PPU) license [Which license do I have?](../fundamentals/end-user-license.md)
+- a Power BI Pro or a Premium Per User (PPU) license. See [Which license do I have?](../fundamentals/end-user-license.md).
 - a report that is saved in Premium capacity and shared with you.
 
 If you're designing reports and creating report bookmarks for others to use, see [Create report bookmarks](../create-reports/desktop-bookmarks.md).
@@ -38,7 +38,7 @@ If you're designing reports and creating report bookmarks for others to use, see
 ## Other articles about bookmarks
 
 - In the Power BI service and Power BI Desktop, report owners can create report bookmarks. For more information, read about [report bookmarks](../create-reports/desktop-bookmarks.md).
-- If you have edit permissions for the report, you can quickly build a [bookmark navigation experience](../create-reports/button-navigators.md#bookmark-navigator). Bookmark navigation is available for both personal and report bookmarks. Each bookmark converts to a customizable button or dropdown menu.
+- If you have edit permissions for the report, you can quickly build a [bookmark navigation experience](../create-reports/button-navigators.md#create-a-bookmark-navigator). Bookmark navigation is available for both personal and report bookmarks. Each bookmark converts to a customizable button or dropdown menu.
 
 ## Use personal bookmarks to save insights and build stories in Power BI
 
@@ -71,7 +71,7 @@ Configure a report page the way you want it to appear in the bookmark. The follo
 
 1. **Date** is changed to include All dates.
 2. **Region** filter is changed to include only **West** .
-3. A specific data point on the doughnut chart visual is selected. This selection cross-filters and cross-highlights the other visuals on the report canvas.
+3. A specific data point on the donut chart visual is selected. This selection cross-filters and cross-highlights the other visuals on the report canvas.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personal.png" alt-text="A screenshot showing a report with filters applied." lightbox="media/end-user-bookmarks/power-bi-personal.png#lightbox":::
 

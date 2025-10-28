@@ -1,31 +1,30 @@
 ---
-title: Use Kerberos for single sign-on (SSO) to Teradata
-description: Learn how to configure your Teradata server to successfully enable single sign-on from the Power BI service.
+title: Configure Kerberos SSO for Teradata in Power BI
+description: "Learn how to configure Kerberos SSO for Teradata in Power BI. Step-by-step guide to enable single sign-on authentication with gateway settings."
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/08/2024
+ms.date: 10/27/2025
+ai-usage: ai-assisted
 LocalizationGroup: Gateways
-#customer intent: As a Power BI user I want to learn how to configure SSO for my Teradata server using Power BI. 
+#customer intent: As a Power BI user I want to learn how to configure SSO for my Teradata server using Power BI.
 ---
 
-# Use Kerberos for SSO to Teradata
+# Configure Kerberos SSO for Teradata in Power BI
 
-This article describes a specific added requirement to successfully enable single sign-on (SSO) to Teradata from the Power BI service.
+This article explains how to configure Kerberos single sign-on (SSO) for Teradata in Power BI. Learn the specific gateway configuration requirements needed to enable SSO authentication based on how your Teradata server identifies user accounts.
 
 - If Teradata identifies user accounts by using *sAMAccountNames*, you must set `FullDomainResolutionEnabled` on the gateway to `True`.
-
 - If Teradata identifies user accounts by using *User Principal Names (UPNs)*, keep `FullDomainResolutionEnabled` on the gateway set to `False`.
 
-## Enable SSO for Teradata
+## Configure gateway settings for Teradata SSO
 
 To change the `FullDomainResolutionEnabled` configuration on the gateway to enable SSO for Teradata:
 
 1. In the on-premises gateway directory at *%ProgramFiles%\On-premises data gateway*, open the configuration file *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
-
 1. In the file, find the `FullDomainResolutionEnabled` property and change its value to `True`.
 
    ```xml

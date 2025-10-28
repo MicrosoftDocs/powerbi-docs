@@ -26,7 +26,7 @@ highlightedContent:
     # Card
     - title: Learn about the latest release
       itemType: whats-new
-      url: fundamentals/desktop-latest-update.md
+      url: fundamentals/whats-new.md
     # Card
     - title: Download Power BI Desktop for free
       itemType: get-started
