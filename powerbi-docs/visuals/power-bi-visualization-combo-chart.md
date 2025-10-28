@@ -8,7 +8,7 @@ ms.custom: video-removed, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 10/21/2025
+ms.date: 10/01/2025
 LocalizationGroup: Visualizations
 ---
 

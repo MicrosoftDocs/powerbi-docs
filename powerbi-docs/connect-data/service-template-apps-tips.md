@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 #customer intent: As a Power BI developer, I want to understand best practices for creating template apps to ensure they are robust, efficient, and provide a great user experience.
 ---

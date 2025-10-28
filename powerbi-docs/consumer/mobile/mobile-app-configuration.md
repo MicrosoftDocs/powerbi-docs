@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 10/06/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 ---
 

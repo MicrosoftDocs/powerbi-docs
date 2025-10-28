@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 ms.custom: sample-retail-analysis
 LocalizationGroup: Visualizations

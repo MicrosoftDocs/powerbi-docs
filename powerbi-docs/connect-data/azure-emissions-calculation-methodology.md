@@ -7,7 +7,7 @@ ms.reviewer: lsuresh, mamaza
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/24/2025
+ms.date: 10/01/2025
 ms.custom: references_regions
 ai-usage: ai-assisted
 ---

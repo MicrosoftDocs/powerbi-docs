@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 #customer intent: As a Power BI template app developer, I want to manage my published template app by updating, deleting, and extracting it without interfering with the app in production, so that I can ensure a smooth and uninterrupted experience for my users.
 ---

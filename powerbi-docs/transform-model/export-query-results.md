@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
-ms.date: 10/16/2025
+ms.date: 10/01/2025
 ms.custom: dFY26Q1-Linter
 LocalizationGroup: Transform and shape data
 ai-usage: ai-assisted
