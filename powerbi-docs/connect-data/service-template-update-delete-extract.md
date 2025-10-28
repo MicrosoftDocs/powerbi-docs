@@ -1,38 +1,34 @@
 ---
-title: Manage your published Power BI template app
-description: Learn how to update, delete, and extract your Power BI template app without interfering with the app in production.
+title: Manage Published Power BI Template Apps
+description: "Learn to update, delete, and extract Power BI template apps without disrupting production. Step-by-step guide for app developers. Start managing your apps today."
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/17/2024
-#customer intent: As a Power BI template app developer, I want to manage my published template app by updating, deleting, and extracting it without interfering with the app in production, so that I can ensure a smooth and uninterrupted experience for my users. 
+ms.date: 10/27/2025
+ai-usage: ai-assisted
+#customer intent: As a Power BI template app developer, I want to manage my published template app by updating, deleting, and extracting it without interfering with the app in production, so that I can ensure a smooth and uninterrupted experience for my users.
 ---
 
 # Manage your published template app
 
-If you have a Power BI template app in production, when you want to make changes to the app, you can do so without disrupting the current user experience. This article tells you how to start over in the test phase, without interfering with the app in production.
+When you have a Power BI template app in production, you can update, delete, or extract it without disrupting the user experience. This article explains how to manage your published template app by making changes in the test phase while keeping the production version stable.
 
 ## Update your app
 
 Go to the template app workspace. Then, if you made your changes in Power BI Desktop, start at Step 1. If you didn't make any changes in Power BI Desktop, start at Step 2.
 
 1. Upload your updated semantic model and **make sure to overwrite the existing semantic model**.
-
    - If the *.pbix* file you're uploading has the same name as the semantic model and report used in the app, uploading overwrites the existing semantic model.
-
    - If you're changing the name of the semantic model and report used in the app, and the *.pbix* file you want to upload has a different name than the semantic model and report used in the app, do the following:
-
      - Rename the semantic model and report used in the app so that their names exactly match the name of your updated *.pbix* file.
      - Upload your *.pbix* file and overwrite the existing semantic model and report that you just renamed.
 
-     In either case, to upload a local *.pbix* file to the service, select **Upload** > **Browse**, navigate to the file, and select **Open**. A dialog asks for your permission to overwrite the semantic model the app uses. If you don't overwrite the existing semantic model, customers won't be able to install your updated app.
+     In either case, to upload a local *.pbix* file to the service, select **Upload** > **Browse**, navigate to the file, and select **Open**. A dialog asks for your permission to overwrite the semantic model the app uses. If you don't overwrite the existing semantic model, customers can't install your updated app.
 
-   ![Screenshot that shows the dialog requesting permission to overwrite the semantic model with the same name.](media/service-template-apps-update-extract-delete/overwrite-dialog.png)
-
-   >[!IMPORTANT]
+   > [!IMPORTANT]
    > Never delete the semantic model the app uses. Deleting the semantic model makes it impossible for customers to update their copies of the app.
 
 1. In the **Release management** pane for the app, select **Create app**.
@@ -40,20 +36,16 @@ Go to the template app workspace. Then, if you made your changes in Power BI Des
 1. After you set **Branding**, **Navigation**, **Control**, **Parameters**, **Authentication**, and **Access**, select **Create app** again to save your changes, and then select **Close**.
 1. Select **Release management** again.
 
-   In the **Release management** pane, you now see two versions of the app: The version in **Production**, plus a new version in **Testing**.
-
-   ![Screenshot that shows two versions of a template app.](media/service-template-apps-update-extract-delete/power-bi-template-app-update1.png)
+   In the **Release management** pane, you now see two versions of the app: The version in **Production** plus a new version in **Testing**.
 
 1. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app** next to **Testing**.
 
    You now have a version in **Production** and a version in **Pre-production**.
 
-   ![Screenshot that shows two versions of a template app with Promote app greyed out.](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
-
    Your link is now live.
 
-   >[!NOTE]
-   >The **Promote app** button at the pre-production stage is disabled. Disabling the button prevents accidentally overwriting the live production link with the current app version before the Cloud Partner Portal (CPP) validates and approves the new app version.
+   > [!NOTE]
+   > The **Promote app** button at the pre-production stage is disabled. Disabling the button prevents accidentally overwriting the live production link with the current app version before the Cloud Partner Portal (CPP) validates and approves the new app version.
 
 1. Submit your link again to the CPP by following the steps at [Power BI App offer update](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the CPP, you must publish your offer again and have it validated and approved. If you've changed the name of the app, be sure to also change the name in the CPP. When your offer is approved, the **Promote app** button becomes active again.
 
@@ -66,7 +58,7 @@ Go to the template app workspace. Then, if you made your changes in Power BI Des
 - When a template app is overwritten and updates, it first reverts back to sample data, and automatically reconnects using the installer's configuration parameters and authentication. Until refresh is complete, the reports, dashboards, and organizational app display the sample data banner.
 - If you added a new query parameter to the updated semantic model that requires user input, you must select the **Required** checkbox. This selection prompts the installer with the connection string after updating the app.
 
-  ![Screenshot that shows Required under Parameters.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset-4.png)
+:::image type="content" source="media/service-template-apps-update-extract-delete/parameters-required-checkbox.png" alt-text="Screenshot of the Required checkbox under Parameters in Power BI template app settings.":::
 
 ## Extract workspace
 
@@ -74,11 +66,11 @@ It's easy to roll back to the previous version of a template app with the extrac
 
 1. In the **Release Management** pane, next to an app version, select **More options (...)** and then select **Extract**.
 
-   ![Screenshot that shows the Release Management pane with Extract selected.](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png)
+   :::image type="content" source="media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png" alt-text="Screenshot of Release Management pane with Extract selected.":::
 
 1. In the confirmation dialog box, enter a name for the extracted workspace, and select **Extract**. Power BI adds a new workspace for the extracted app.
 
-   ![Screenshot that shows the confirmation message to Extract this app.](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
+   :::image type="content" source="media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png" alt-text="Screenshot of confirmation message to Extract this app.":::
 
 Your new workspace versioning resets, and you can continue to develop and distribute the template app from the newly extracted workspace.
 
@@ -88,14 +80,14 @@ A template app workspace is the source of an active distributed template app. To
 
 1. In the **Release Management** pane, next to the app version you want to delete, select **More options (...)** and then select **Delete**.
 
-   ![Screenshot that shows the Release Management pane with Delete selected.](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
+   :::image type="content" source="media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png" alt-text="Screenshot of Release Management pane with Delete selected.":::
 
 1. In the confirmation dialog box, select **Delete**.
 
-   ![Screenshot that shows confirmation message to Delete this app.](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
+   :::image type="content" source="media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png" alt-text="Screenshot of confirmation message to Delete this app.":::
 
->[!NOTE]
->Make sure not to delete app versions that customers or AppSource are using, or they will no longer work.
+> [!NOTE]
+> Make sure not to delete app versions that customers or AppSource are using, or they will no longer work.
 
 ## Related content
 
