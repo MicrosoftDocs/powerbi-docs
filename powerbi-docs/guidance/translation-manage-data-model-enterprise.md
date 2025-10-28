@@ -1,12 +1,13 @@
 ---
-title: Manage data model translations at the enterprise level
+title: Manage Data Model Translations at the Enterprise Level
 description: Learn how to organize your multiple-language projects to reuse your translations efforts in multiple Power BI projects.
 author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/24/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Manage data model translations at the enterprise level
 
