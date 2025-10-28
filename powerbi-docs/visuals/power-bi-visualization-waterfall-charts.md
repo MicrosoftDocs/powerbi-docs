@@ -24,7 +24,7 @@ Each measure of change is a column on the chart. The columns are color coded so 
 
 The initial and final value columns often start from the horizontal axis, while the intermediate values are floating columns. A starting point for an intermediate column can be on the horizontal axis or on another axis parallel to the main axis.
 
-The position of the intermediate columns can fluctuate between the initial and final values. The resulting view creates a picture similar to a concave or convex wave or a random waterfall cascade. Waterfall charts are also called _bridge charts_.
+The position of the intermediate columns can fluctuate between the initial and final values. The resulting view creates a picture similar to a concave or convex wave or a random waterfall cascade. Waterfall charts are also called *bridge charts*.
 
 :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-chart.png" alt-text="Screenshot that shows an example of a waterfall chart in Power BI." border="false":::
 
@@ -38,8 +38,7 @@ Waterfall charts are a great choice for many scenarios:
 - Illustrate the beginning and ending headcount for your company in a year.
 - Visualize how much money you earn and spend each month, and the running balance for your account.
 
-> [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+- Visualizing the steps and relationships of business processes.
 
 - When you want to visualize the steps and relationships of business processes.
 - When you want to monitor and control data quality.
@@ -61,7 +60,7 @@ This tutorial uses the Retail Analysis Sample PBIX file.
 
    The **Retail Analysis Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
-1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
+1. At the bottom, select the **green plus symbol** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -77,7 +76,7 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-edit-report.png" alt-text="Screenshot that shows how to select Edit to modify the report in the Power BI service." border="false":::
 
-1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
+1. At the bottom, select the **green plus symbol** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 ---
 
@@ -141,7 +140,7 @@ Let's take a closer look at the data to see what's contributing most to the chan
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-add-territory.png" alt-text="Screenshot that shows the effect of adding the Territory data to the waterfall chart." border="false":::
 
-1. Expand the width of the waterfall chart to see more of the data.
+1. Expand the waterfall chart's width to see more of the data.
 
    Power BI uses the **Territory** value in the **Breakdown** section to add more data to the visualization. The breakdown feature splits each monthly total into separate segments showing contributions from different territories. The chart now includes the top five contributors to increases or decreases for each fiscal month. Notice the month of February now has six data points instead of only one.
 
@@ -149,7 +148,7 @@ Let's take a closer look at the data to see what's contributing most to the chan
 
    Let's say you're only interested in the top two contributors. You can configure the chart to highlight that information.
 
-1. On the **Visualizations > Format visual** pane, select **Breakdown**, and set the **Maximum breakdowns** value to **2**.
+1. On the **Visualizations > Format your visual** pane, select **Breakdown**, and set the **Maximum breakdowns** value to **2**.
 
    The **Maximum breakdowns** setting controls how many breakdown categories are displayed for each data point in the waterfall chart. By setting this value to **2**, Power BI shows only the top two contributors (based on absolute value) for each fiscal month, grouping all other territories into an "Other" category.   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png" alt-text="Screenshot that shows the effect of changing the maximum breakdowns to two in the waterfall chart." border="false":::
 
@@ -159,5 +158,5 @@ Let's take a closer look at the data to see what's contributing most to the chan
 
 ## Related content
 
-- [Change how visuals interact](../create-reports/service-reports-visual-interactions.md) in a Power BI report.
-- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+- [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md)
+- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
