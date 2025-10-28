@@ -1,14 +1,15 @@
 ---
-title: Advanced incremental refresh and real-time data with the XMLA endpoint in Power BI
-description: Find out about advanced incremental refresh and real-time data features with the XMLA endpoint in Power BI.
+title: Advanced Incremental Refresh and Real-Time Data With the XMLA Endpoint in Power BI
+description: Discover advanced incremental refresh and real-time data features with the XMLA endpoint in Power BI, including partition management, custom queries for detecting data changes, and metadata-only deployments for Premium capacities.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/22/2022
-LocalizationGroup: 
+ms.date: 10/01/2025
+ai-usage: ai-assisted
+LocalizationGroup:
 ---
 
 # Advanced incremental refresh and real-time data with the XMLA endpoint
@@ -43,13 +44,13 @@ With Power BI incremental refresh and real-time data, the service handles the pa
 
 SQL Server Management Studio (SSMS) can be used to view and manage partitions created by the application of incremental refresh policies. By using SSMS you can, for example, refresh a specific historical partition not in the incremental refresh period to perform a back-dated update without having to refresh all historical data. SSMS can also be used when bootstrapping to load historical data for large models by incrementally adding/refreshing historical partitions in batches.
 
-![Screenshot shows the Partitions window in SSMS.](media/incremental-refresh-xmla/ssms-partitions.png)
+:::image type="content" source="media/incremental-refresh-xmla/ssms-partitions.png" alt-text="Screenshot of the Partitions window in SSMS.":::
 
 ### Override incremental refresh behavior
 
 With SSMS, you also have more control over how to invoke refreshes by using [Tabular Model Scripting Language](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) and the [Tabular Object Model](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true). For example, in SSMS, in Object Explorer, right-click a table and then select the **Process Table** menu option, and then select the **Script** button to generate a TMSL refresh command.
 
-![Screenshot shows the Script button in Process Table dialog.](media/incremental-refresh-xmla/ssms-process-table.png)
+:::image type="content" source="media/incremental-refresh-xmla/ssms-process-table.png" alt-text="Screenshot of the Script button in the Process Table dialog.":::
 
 These parameters can be used with the TMSL refresh command to override the default incremental refresh behavior:
 
