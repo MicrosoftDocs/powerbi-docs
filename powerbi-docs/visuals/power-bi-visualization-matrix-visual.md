@@ -78,6 +78,23 @@ In this quick and easy three-step guide, let’s create a matrix visual starting
 ---
 Great job! Congratulations on successfully creating a matrix visual with Power BI. Next, take time to familiarize yourself with the comprehensive list of **[Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)** and other related articles in the **[Related content](#related-content)** section.
 
+## Working with the matrix
+### Expand / collapse row headers
+Use expand and collapse icons provided to combine groups or to show more detail.
+
+:::image type="content" source="media/power-bi-visualization-matrix-visual/matrix-visual-expand-and-collapse-row-headers.png" alt-text="Screenshot showing the expand and collapse icons in the row headers of a matrix." lightbox="media/power-bi-visualization-matrix-visual/matrix-visual-expand-and-collapse-row-headers.png":::
+
+### Freeze row headers
+By default row headers are frozen, which ensures they stay visible when you scroll horizontally:
+
+:::image type="content" source="media/power-bi-visualization-matrix-visual/matrix-visual-frozen-row-headers.png" alt-text="Screenshot showing a matrix visual with frozen row headers." lightbox="media/power-bi-visualization-matrix-visual/matrix-visual-frozen-row-headers.png":::
+
+To unfreeze them, and therefore hide them as you scroll horizontally, right-click on the row headers and select **Unfreeze row headers**. Now, the row headers will disappear as needed when you scroll horizontally:
+
+:::image type="content" source="media/power-bi-visualization-matrix-visual/matrix-visual-unfrozen-row-headers.png" alt-text="Screenshot showing a matrix visual with unfrozen row headers." lightbox="media/power-bi-visualization-matrix-visual/matrix-visual-unfrozen-row-headers.png":::
+
+To refreeze them right-click on the row headers again and select **Freeze row headers**.
+
 ## Related content
 
 - [Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)
