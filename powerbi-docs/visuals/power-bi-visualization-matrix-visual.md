@@ -79,7 +79,7 @@ In this quick and easy three-step guide, let’s create a matrix visual starting
 Great job! Congratulations on successfully creating a matrix visual with Power BI. Next, take time to familiarize yourself with the comprehensive list of **[Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)** and other related articles in the **[Related content](#related-content)** section.
 
 ## Working with the matrix
-### Expand / collapse row headers
+### Expand and collapse row headers
 Use expand and collapse icons provided to combine groups or to show more detail.
 
 :::image type="content" source="media/power-bi-visualization-matrix-visual/matrix-visual-expand-and-collapse-row-headers.png" alt-text="Screenshot showing the expand and collapse icons in the row headers of a matrix." lightbox="media/power-bi-visualization-matrix-visual/matrix-visual-expand-and-collapse-row-headers.png":::
