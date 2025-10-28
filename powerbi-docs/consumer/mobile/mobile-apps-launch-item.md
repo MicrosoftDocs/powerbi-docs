@@ -1,12 +1,13 @@
 ---
-title: Choose start-up view
+title: Choose Start-Up View
 description: Learn how to choose an item that will load automatically whenever you open your Power BI mobile app.
 author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/30/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Choose a launch item for your Power BI mobile app
 
@@ -64,9 +65,9 @@ In the settings, you see your personal launch item, if any, and any item that th
 
 :::image type="content" source="./media/mobile-apps-launch-item/launch-item-settings.png" alt-text="Screenshot of Launch item settings." border="false":::
 
-* Use the radio buttons to choose which launch item to use.
-* Use the **Open app and item together** toggle to enable/disable the launch item functionality.
-* Use the **Open in full screen** toggle to control whether the launch item opens by default in full screen mode (toggle on) or normal mode (toggle off).
+- Use the radio buttons to choose which launch item to use.
+- Use the **Open app and item together** toggle to enable/disable the launch item functionality.
+- Use the **Open in full screen** toggle to control whether the launch item opens by default in full screen mode (toggle on) or normal mode (toggle off).
 
 ## Related content
 

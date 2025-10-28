@@ -1,12 +1,13 @@
 ---
-title: 'Shared device mode for the Power BI mobile app'
+title: Shared Device Mode for the Power BI Mobile App
 description: Learn about running the Power BI mobile app in shared device mode to support your organization's frontline workers who use shared devices.
 author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/09/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # Shared device mode for the Power BI mobile app
@@ -25,25 +26,26 @@ Here's how shared device mode works, using the Power BI mobile app as an example
 
 Using the Power BI mobile app in shared device mode is just like using the app in standard, single user mode, with a few minor differences to better suit the frontline worker scenario:
 
-* The welcome experience and intro tips are suppressed to enable an uninterrupted workflow for frontline workers.
-* Notifications are generalized to exclude confidential and sensitive information such as specific data and personal information.
+- The welcome experience and intro tips are suppressed to enable an uninterrupted workflow for frontline workers.
+- Notifications are generalized to exclude confidential and sensitive information such as specific data and personal information.
 
 > [!NOTE]
-> * **Shortcuts**: Shortcuts created by a user remain after they sign out, and can be used by all users. Users can access the items the shortcuts point to if they have the required permissions.
-> * **Apple watch**: Apple watch integration isn't possible for devices running in shared device mode.
+>
+> - **Shortcuts**: Shortcuts created by a user remain after they sign out, and can be used by all users. Users can access the items the shortcuts point to if they have the required permissions.
+> - **Apple watch**: Apple watch integration isn't possible for devices running in shared device mode.
 
 ## Set up shared device mode
 
 If your organization is already using shared device mode, no special configuration is required for the Power BI mobile apps. If shared device mode hasn't been set up, contact your organization's mobile device management team about getting it set up. Refer them to the following articles if they're unfamiliar with the feature:
 
-* [Overview of shared device mode](/azure/active-directory/develop/msal-shared-devices)
-* [Manage devices for frontline workers](/microsoft-365/frontline/flw-devices)
+- [Overview of shared device mode](/azure/active-directory/develop/msal-shared-devices)
+- [Manage devices for frontline workers](/microsoft-365/frontline/flw-devices)
 
 ## Related content
 
-* [Overview of shared device mode](/azure/active-directory/develop/msal-shared-devices)
-* [Shared device mode for iOS devices](/azure/active-directory/develop/msal-ios-shared-devices)
-* [Shared device mode for Android devices](/azure/active-directory/develop/msal-android-shared-devices)
-* [Manage devices for frontline workers](/microsoft-365/frontline/flw-devices)
-* Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Join the conversation at the [Power BI Community](https://community.powerbi.com/)
+- [Overview of shared device mode](/azure/active-directory/develop/msal-shared-devices)
+- [Shared device mode for iOS devices](/azure/active-directory/develop/msal-ios-shared-devices)
+- [Shared device mode for Android devices](/azure/active-directory/develop/msal-android-shared-devices)
+- [Manage devices for frontline workers](/microsoft-365/frontline/flw-devices)
+- Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
+- Join the conversation at the [Power BI Community](https://community.powerbi.com/)
