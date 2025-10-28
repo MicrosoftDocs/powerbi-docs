@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Connect to services
 #customer intent:  As a healthcare emergency manager, I want to connect to and use the Hospital Emergency Response Decision Support Dashboard so that I can make timely and informed decisions based on aggregate data across the health system.

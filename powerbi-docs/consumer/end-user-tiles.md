@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Dashboard tiles in Power BI
 ms.topic: how-to
-ms.date: 10/06/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---

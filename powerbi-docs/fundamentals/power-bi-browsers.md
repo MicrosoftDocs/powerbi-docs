@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/15/2025
+ms.date: 10/01/2025
 LocalizationGroup: Get started
 ---
 # Supported browsers for Power BI and Fabric

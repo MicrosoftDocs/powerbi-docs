@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 ms.custom: sfi-image-nochange
 #Customer intent: As an ISV developer, I want to develop a mechanism whereby my customers can click a link that automatically installs and configures a template app that I own.

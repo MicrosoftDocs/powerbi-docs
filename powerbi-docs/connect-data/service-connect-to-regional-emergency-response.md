@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Connect to services
 #customer intent: As a regional organization admin, I want to connect to the Regional Government Emergency Response Dashboard so that I can quickly view important data and metrics to make efficient decisions.

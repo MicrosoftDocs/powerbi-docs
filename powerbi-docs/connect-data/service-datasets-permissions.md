@@ -7,7 +7,7 @@ ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
 #customer intent: As a Power BI user, I want to understand the different levels of semantic model permissions and how to acquire them so that I can effectively manage access and ensure proper data security within my organization.

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user, I want to reduce the size of my Excel workbook so that I can upload it to Power BI and view it without issues.
