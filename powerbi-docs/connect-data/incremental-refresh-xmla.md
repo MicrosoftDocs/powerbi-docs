@@ -284,7 +284,6 @@ namespace Hybrid_Tables
 
 - [Configure incremental refresh and real-time data](incremental-refresh-configure.md)
 - [Troubleshoot incremental refresh and real-time data](incremental-refresh-troubleshoot.md)
-- [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)
 - [Enhanced refresh with the Power BI REST API](asynchronous-refresh.md)
 - [Partitions in tabular models](/analysis-services/tabular-models/partitions-ssas-tabular?view=power-bi-premium-current&preserve-view=true)
 - [External tools in Power BI Desktop](../transform-model/desktop-external-tools.md)
