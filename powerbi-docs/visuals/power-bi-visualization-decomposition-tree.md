@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/15/2025
+ms.date: 10/01/2025
 ms.custom: sample-supply-chain
 LocalizationGroup: Visualizations
 ---

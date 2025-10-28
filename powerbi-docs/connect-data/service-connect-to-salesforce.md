@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Connect to services
 ---

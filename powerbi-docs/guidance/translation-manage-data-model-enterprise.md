@@ -32,4 +32,4 @@ Because the **Import Translations** command creates the **Localized Labels** tab
 
 ## Related content
 
-- [Guidance for Power BI](overview.md)
+- [Guidance for Power BI](index.yml)

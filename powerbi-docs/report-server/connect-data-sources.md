@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/06/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 ---
 # Paginated report data sources in Power BI Report Server

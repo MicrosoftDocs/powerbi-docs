@@ -9,7 +9,7 @@ ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started, sampl
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---

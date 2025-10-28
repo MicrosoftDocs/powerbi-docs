@@ -1,13 +1,14 @@
 ---
-title: Use Kerberos single sign-on to SAP BW using CommonCryptoLib
-description: Configure your SAP BW server to enable SSO from Power BI service using CommonCryptoLib (sapcrypto.dll)
+title: "Kerberos SSO for SAP BW with CommonCryptoLib"
+description: "Learn how to configure SAP BW server for Kerberos single sign-on (SSO) with Power BI service using CommonCryptoLib (sapcrypto.dll). Enable secure, seamless report refresh."
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/17/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Gateways
 ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to configure my SAP BW server to enable Kerberos single sign-on using CommonCryptoLib so that I can securely and seamlessly refresh SAP BW-based reports in the Power BI service.
@@ -15,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Use Kerberos single sign-on for SSO to SAP BW using CommonCryptoLib (sapcrypto.dll)
 
-This article describes how to configure your SAP BW data source to enable single sign-on (SSO) from the Power BI service by using CommonCryptoLib (sapcrypto.dll).
+This article describes how to configure your SAP BW data source to enable Kerberos single sign-on (SSO) from the Power BI service using CommonCryptoLib (sapcrypto.dll). By configuring SSO, you can securely and seamlessly refresh SAP BW-based reports in Power BI without repeatedly entering credentials.
 
 > [!NOTE]
 > Before you attempt to refresh an SAP BW-based report that uses Kerberos SSO, complete both the steps in this article and the steps in [Configure Kerberos-based SSO](service-gateway-sso-kerberos.md). Using CommonCryptoLib as your Secure Network Communications (SNC) library enables SSO connections to both SAP BW Application Servers and SAP BW Message Servers.
@@ -44,10 +45,9 @@ This article describes how to configure your SAP BW data source to enable single
 
    SLC isn't supported for use on Windows Server machines. For more information, see [SAP Note 2780475](https://launchpad.support.sap.com/#/notes/2780475) (s-user required).
 
-   ![SAP Secure Login Client](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sap-secure-login-client.png)
+   :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sap-secure-login-client.png" alt-text="Screenshot of SAP Secure Login Client.":::
 
 1. If you uninstall SLC or select **Log Out** and **Exit**, open a cmd window and enter `klist purge` to clear any cached Kerberos tickets before you attempt an SSO connection through the gateway.
-
 1. Download 64-bit CommonCryptoLib (sapcrypto.dll) version *8.5.25 or greater* from the SAP Launchpad, and copy it to a folder on your gateway machine. In the same directory where you copied sapcrypto.dll, create a file named sapcrypto.ini, with the following content:
 
     ```
@@ -61,29 +61,24 @@ This article describes how to configure your SAP BW data source to enable single
 
     Both the gateway service user and the Active Directory (AD) user that the service user impersonates need read and execute permissions for both files. We recommend granting permissions on both the .ini and .dll files to the Authenticated Users group. For testing purposes, you can also explicitly grant these permissions to both the gateway service user and the AD user you use for testing. In the following screenshot we've granted the Authenticated Users group **Read &amp; execute** permissions for sapcrypto.dll:
 
-    ![Authenticated users](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/authenticated-users.png)
+    :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/authenticated-users.png" alt-text="Screenshot of Authenticated users.":::
 
 1. If you don't already have an SAP BW data source associated with the gateway you want the SSO connection to flow through, add one on the **Manage Connections and Gateways** page in the Power BI service. If you already have such a data source, edit it:
     - Choose **SAP Business Warehouse** as the **Data Source Type** if you want to create an SSO connection to a BW Application Server.
     - Select **Sap Business Warehouse Message Server** if you want to create an SSO connection to a BW Message Server.
-
 1. For **SNC Library**, select either the **SNC\_LIB** or **SNC\_LIB\_64** environment variable, or **Custom**.
-
    - If you select **SNC\_LIB**, you must set the value of the **SNC\_LIB\_64** environment variable on the gateway machine to the absolute path of the 64-bit copy of sapcrypto.dll on the gateway machine. For example, *C:\Users\Test\Desktop\sapcrypto.dll*.
-
    - If you choose **Custom**, paste the absolute path to *sapcrypto.dll* into the Custom SNC Library Path field that appears on the **Manage gateways** page.
-
 1. For **SNC Partner Name**, enter the SNC Name of the BW server. Under **Advanced settings**, ensure that **Use SSO via Kerberos for DirectQuery queries** is checked. Fill in the other fields as if you were establishing a Windows Authentication connection from PBI Desktop.
-
 1. Create a **CCL\_PROFILE** system environment variable and set its value to the path to sapcrypto.ini.
 
-    ![CCL\_PROFILE system environment variable](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/ccl-profile-variable.png)
+    :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/ccl-profile-variable.png" alt-text="Screenshot of CCL_PROFILE system environment variable.":::
 
     The sapcrypto .dll and .ini files must exist in the same location. In the above example, sapcrypto.ini and sapcrypto.dll are both located on the desktop.
 
 1. Restart the gateway service.
 
-    ![Restart gateway service](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/restart-gateway-service.png)
+    :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/restart-gateway-service.png" alt-text="Screenshot of Restart gateway service.":::
 
 1. [Run a Power BI report](service-gateway-sso-kerberos.md#section-3-validate-configuration)
 
@@ -94,22 +89,21 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 ### Gateway logs
 
 1. Reproduce the issue.
+1. Open the [gateway app](/data-integration/gateway/service-gateway-app), and select **Export logs** from the **Diagnostics** tab.
 
-2. Open the [gateway app](/data-integration/gateway/service-gateway-app), and select **Export logs** from the **Diagnostics** tab.
-
-      ![Export gateway logs](media/service-gateway-sso-kerberos/export-gateway-logs.png)
+      :::image type="content" source="media/service-gateway-sso-kerberos/export-gateway-logs.png" alt-text="Screenshot of Export gateway logs.":::
 
 ### CPIC tracing
 
 1. To enable CPIC tracing, set two environment variables: **CPIC\_TRACE** and **CPIC\_TRACE\_DIR**.
 
    The first variable sets the trace level and the second variable sets the trace file directory. The directory must be a location that  members of the Authenticated Users group can write to. 
- 
-2. Set **CPIC\_TRACE** to *3* and **CPIC\_TRACE\_DIR** to whichever directory you want the trace files written to. For example:
 
-   ![CPIC tracing](media/service-gateway-sso-kerberos/cpic-tracing.png)
+1. Set **CPIC\_TRACE** to *3* and **CPIC\_TRACE\_DIR** to whichever directory you want the trace files written to. For example:
 
-3. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files.
+   :::image type="content" source="media/service-gateway-sso-kerberos/cpic-tracing.png" alt-text="Screenshot of CPIC tracing.":::
+
+1. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files.
 
     CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here's a snippet from a CPIC trace file where a .dll load error occurred:
 
@@ -162,18 +156,16 @@ If you're unable to refresh the report in the Power BI service, you can use gate
     ccl/trace/directory=<drive>:\logs\sectrace
     ```
 
-2. Change the `ccl/trace/directory` option to a location to which members of the Authenticated Users group can write.
-
-3. Alternatively, create a new .ini file to change this behavior. In the same directory as sapcrypto.ini and sapcrypto.dll, create a file named sectrace.ini with the following content. Replace the `DIRECTORY` option with a location on your machine that members of the Authenticated Users group can write to:
+1. Change the `ccl/trace/directory` option to a location to which members of the Authenticated Users group can write.
+1. Alternatively, create a new .ini file to change this behavior. In the same directory as sapcrypto.ini and sapcrypto.dll, create a file named sectrace.ini with the following content. Replace the `DIRECTORY` option with a location on your machine that members of the Authenticated Users group can write to:
 
     ```
     LEVEL = 5
     DIRECTORY = <drive>:\logs\sectrace
     ```
 
-4. Reproduce the issue and verify that the location pointed to by **DIRECTORY** contains trace files.
-
-5. When you're finished, turn off CPIC and CCL tracing.
+1. Reproduce the issue and verify that the location pointed to by **DIRECTORY** contains trace files.
+1. When you're finished, turn off CPIC and CCL tracing.
 
     For more information on CommonCryptoLib tracing, see [SAP Note 2491573](https://launchpad.support.sap.com/#/notes/2491573) (SAP s-user required).
 
@@ -193,7 +185,7 @@ Delegation issues usually appear in the Power BI service as generic errors. To d
 
 **Symptom**: In the Power BI service, you might encounter an unexpected error similar to the one in the following screenshot. In *GatewayInfo[date].log* you'll see *[DM.GatewayCore]* ingesting an exception during the ADO query execution attempt for *clientPipelineId* and the import *[0D_NW_CHANN]* matches no exports.
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-01.png" alt-text="Screenshot of unhelpful error":::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-01.png" alt-text="Screenshot of unhelpful error.":::
 
 In the *Mashup[date].log* you see the generic error **GSS-API(maj): No credentials were supplied**.
 
@@ -240,7 +232,7 @@ The error becomes clearer in the sectraces from the gateway machine *sec-Microso
 
 You can also see the issue if you look at WireShark traces.
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-02.png" alt-text="Screenshot of tracing program showing an error":::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-02.png" alt-text="Screenshot of tracing program showing an error.":::
 
 > [!NOTE]
 > The other errors **KRB5KDC_ERR_PREAUTH_REQUIRED** can be safely ignored.
@@ -249,7 +241,7 @@ You can also see the issue if you look at WireShark traces.
 
 You might run into a similar, but not identical error that manifests in WireShark traces as the following error **KRB5KDC_ERR_BADOPTION**:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-03.png" alt-text="Screenshot of WireShark program showing a different error":::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-03.png" alt-text="Screenshot of WireShark program showing a different error.":::
 
 This error indicates the **SPN SAP/BW5** could be found, but it's not under *Services to which this account can present delegated credentials* in the Delegation tab for the gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md).
 
@@ -282,9 +274,9 @@ There are different resolutions, based on the symptoms you see in the data sourc
 **Resolution**: Check whether the Kerberos external ID for the User match what the sectraces are showing.
 
 1. Open SAP Logon.
-2. Use the SU01 transaction.
-3. Edit the user.
-4. Navigate to the **SNC** tab and verify that the SNC name matches what is shown in your logs.
+1. Use the SU01 transaction.
+1. Edit the user.
+1. Navigate to the **SNC** tab and verify that the SNC name matches what is shown in your logs.
 
 **Validation**: When properly completed, you'll be able to create and refresh reports in the Power BI service.
 

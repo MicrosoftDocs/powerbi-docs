@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 10/13/2025
+ms.date: 10/01/2025
 LocalizationGroup: Gateways
 ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user, I want to learn how to connect to on-premises data in SQL Server so that I can import and refresh data from a relational database in my local network.
