@@ -207,8 +207,8 @@ With a visualization that's complex, it helps to add axes titles. Titles help yo
 
 1. Format the titles. In this example, we shortened one of the titles and reduced the font size for both.
 
+   - Shortened the **Title text** for the first Y-axis (the column chart) to *Sales last year & This year*.
    - Font size: **9**
-   - Shortened the **Axis title** for the first Y-axis (the column chart) to *Sales last year & This year*.
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png" alt-text="Screenshot of the combo chart displaying both y-axis titles.":::
 
@@ -218,7 +218,7 @@ With a visualization that's complex, it helps to add axes titles. Titles help yo
 
 For line, bar, column, area, and combo charts, you can invert the y-axis, putting positive values going down and negative values going up.
 
-- In the **Format visual** pane, select **Visual**. Expand the **Y-axis** section, expand the **Range** section, and slide **Invert range** to **On**.
+- In the **Format visual** pane, select **Visual**. Expand the **Y-axis** section, expand the **Range** section, and move the **Invert range** slider to **On**.
 
   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-invert.png" alt-text="Screenshot of the column chart with values on the y axis inverted.":::
 
