@@ -1,5 +1,5 @@
 ---
-title: White papers for Power BI
+title: White Papers for Power BI
 description: White papers allow you to explore Power BI topics at a deeper level.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/25/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # White papers for Power BI
 
