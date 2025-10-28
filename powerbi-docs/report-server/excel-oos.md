@@ -13,9 +13,9 @@ ms.date: 10/19/2021
 # Configure your report server to host Excel workbooks using Office Online Server (OOS)
 
 > [!WARNING]
-> Office Online Server is scheduled to be [retired on December 31, 2026](https://techcommunity.microsoft.com/blog/officeeos/announcing-the-retirement-for-office-online-server/4462402). As a result, Report Server will no longer support hosting Excel workbooks with Office Online Server after this date. Customers who rely on this feature should consider switching to the Excel desktop application or migrating to the Power BI service to continue accessing their workbooks.
+> Microsoft has [announced](https://techcommunity.microsoft.com/blog/officeeos/announcing-the-retirement-for-office-online-server/4462402) that Office Online Server (OOS) will be retired effective December 31, 2026. As a result, PBIRS users will no longer be able to host Excel workbooks in PBIRS using OOS after November 2026, in accordance with the PBIRS Support Timelines Policy. Additionally, beginning with the January 2026 PBIRS release, configuration of PBIRS to use OOS for hosting Excel workbooks will no longer be supported. Visit this [deprecation announcement blog](https://powerbi.microsoft.com/en-us/blog/deprecation-announcement-office-online-server-retirement-and-what-it-means-for-power-bi-report-server-users/) for more details.
 
-In addition to viewing Power BI reports in the web portal, Power BI Report Server can host Excel workbooks by using [Office Online Server](/officeonlineserver/office-online-server-overview) (OOS). Your report server becomes a single location to publish and view self-service Microsoft BI content.
+In addition to viewing Power BI reports in the web portal, Power BI Report Server can host Excel workbooks by using [Office Online Server](https://learn.microsoft.com/en-us/officeonlineserver/office-online-server-overview) (OOS). Your report server becomes a single location to publish and view self-service Microsoft BI content.
 
 ![Excel reports viewed from the report server web portal](media/excel-oos/excel-in-pbirs.png)
 
