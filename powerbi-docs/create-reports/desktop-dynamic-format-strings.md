@@ -19,7 +19,7 @@ With *dynamic format strings for measures*, you can determine how measures appea
 Dynamic format strings overcome an inherent disadvantage of using the FORMAT function. With FORMAT, even numeric data types are returned as strings, which might not work with visuals like charts that require numeric values.
 When using dynamic format strings, the measure keeps its data type and isn't forced to change to a string data type. This applies different format strings to the measure depending on the context.
 
-You can also use dynamic format strings with calculation groups. You can use the same DAX patterns that work with calculation groups in dynamic format strings for measures, but the scope is limited to individual measures instead of all measures in the model. To learn more, see [Calculation groups - Dynamic format strings](/analysis-services/tabular-models/calculation-groups?view=power-bi-premium-current#dynamic-format-strings).
+You can also use dynamic format strings with calculation groups. You can use the same DAX patterns that work with calculation groups in dynamic format strings for measures, but the scope is limited to individual measures instead of all measures in the model. To learn more, see [Calculation groups - Dynamic format strings](/analysis-services/tabular-models/calculation-groups#dynamic-format-strings).
 
 ## Create dynamic format strings
 
@@ -30,7 +30,7 @@ You can also use dynamic format strings with calculation groups. You can use the
 
     :::image type="content" source="media/desktop-dynamic-format-strings/format-dropdown.png" alt-text="Screenshot of Format dropdown." lightbox="media/desktop-dynamic-format-strings/format-dropdown.png":::
 
-1. Overwrite the string with a DAX expression that outputs the correct format string for your measure. For example, the following expression looks up the currency format string we want from a *Country Currency Format Strings* table:
+1. Overwrite the string with a DAX expression that outputs the correct format string for your measure. For example, the following expression looks up the currency format string we want from a *Country/Region Currency Format Strings* table:
 
     :::image type="content" source="media/desktop-dynamic-format-strings/format-dynamic-measure.png" alt-text="Screenshot of Dynamic format measure expression." lightbox="media/desktop-dynamic-format-strings/format-dynamic-measure.png":::
 
@@ -50,9 +50,9 @@ The sample model doesn't contain all the data necessary to create and use dynami
 
 1. On the **Home** ribbon, select **Enter data**.
 
-1. In the **Create Table** dialog, enter **Country Currency Format Strings** in the **Name** field, then copy and paste the following table:
+1. In the **Create Table** dialog, enter **Country/Region Currency Format Strings** in the **Name** field, then copy and paste the following table:
 
-    | Country        | Currency | Format    |
+    | Country/Region        | Currency | Format    |
     |----------------|----------|-----------|
     | Australia      | Dollar   | AU$#,0.00 |
     | Canada         | Dollar   | C$#,0.00  |
@@ -72,7 +72,7 @@ The sample model doesn't contain all the data necessary to create and use dynami
 
     Table name: **Yearly Average Exchange Rates**
 
-    | Country        | Currency | Year | Yearly Average Exchange Rate |
+    | Country/Region        | Currency | Year | Yearly Average Exchange Rate |
     |----------------|----------|------|------------------------------|
     | Australia      | Dollar   | 2022 | 1.442                        |
     | Australia      | Dollar   | 2021 | 1.332                        |
@@ -135,22 +135,22 @@ A new Year column is needed in the existing Date table.
 
 #### Create relationships
 
-Relationships are needed between your new Yearly Average Exchange Rates and Country Currency Format Strings tables, and between Yearly Average Exchange Rates table and the existing Date table.
+Relationships are needed between your new Yearly Average Exchange Rates and Country/Region Currency Format Strings tables, and between Yearly Average Exchange Rates table and the existing Date table.
 
-1. If you have Autodetect for relationships on (on the **Column tools** tab, select **Manage relationships**, then select **Autodetect**), the relationship between **Country Currency Format Strings** and **Yearly Average Exchange Rates** on the **Country** column might have been created for you. If not, then create this relationship by using the **New relationship** button in **Column tools** > **Manage relationships**:
+1. If you have Autodetect for relationships on (on the **Column tools** tab, select **Manage relationships**, then select **Autodetect**), the relationship between **Country/Region Currency Format Strings** and **Yearly Average Exchange Rates** on the **Country/Region** column might have been created for you. If not, then create this relationship by using the **New relationship** button in **Column tools** > **Manage relationships**:
     - Table 1: **Yearly Average Exchange Rates**
-    - Table 1 Column: **Country**
+    - Table 1 Column: **Country/Region**
     - Cardinality: **Many to one**
-    - Table 2: **Country Currency Format Strings**
-    - Table 2 Column: **Country**
+    - Table 2: **Country/Region Currency Format Strings**
+    - Table 2 Column: **Country/Region**
     - Make this relationship active: **Yes**
     - Cross filter direction: **Single**
 
     The relationship should look like this:
 
-    :::image type="content" source="media/desktop-dynamic-format-strings/ccfs-year-relationship.png" alt-text="Screenshot of Relationship properties between Country Currency Format Strings and Yearly Average Exchange Rates." lightbox="media/desktop-dynamic-format-strings/ccfs-year-relationship.png":::
+    :::image type="content" source="media/desktop-dynamic-format-strings/ccfs-year-relationship.png" alt-text="Screenshot of Relationship properties between Country/Region Currency Format Strings and Yearly Average Exchange Rates." lightbox="media/desktop-dynamic-format-strings/ccfs-year-relationship.png":::
 
-1. If you have Autodetect for relationships on, a relationship between **Country Currency Format Strings** and **Sales territory** on the **Country** column might have been created. This relationship, however, isn't correct for our model. Delete this relationship.
+1. If you have Autodetect for relationships on, a relationship between **Country/Region Currency Format Strings** and **Sales territory** on the **Country/Region** column might have been created. This relationship, however, isn't correct for our model. Delete this relationship.
 
 1. Instead, create a relationship between **Yearly Average Exchange Rates** and **Date**  on the **Year** column.
     - Table 1: **Yearly Average Exchange Rates**
@@ -196,8 +196,8 @@ A measure group helps you organize different measures by having them in a single
     ```dax
     Exchange Rate (Yearly Avg) = 
     IF (
-        ISBLANK ( SELECTEDVALUE ( 'Country Currency Format Strings'[Country] ) )
-            || SELECTEDVALUE ( 'Country Currency Format Strings'[Country] ) = "United States",
+        ISBLANK ( SELECTEDVALUE ( 'Country/Region Currency Format Strings'[Country/Region] ) )
+            || SELECTEDVALUE ( 'Country/Region Currency Format Strings'[Country/Region] ) = "United States",
         1,
         AVERAGE ( 'Yearly Average Exchange Rates'[Yearly Average Exchange Rate] )
     )
@@ -205,7 +205,7 @@ A measure group helps you organize different measures by having them in a single
     ```
 
     It should look like this:
-    :::image type="content" source="media/desktop-dynamic-format-strings/exchange-rate-dax-formula.png" alt-text="Screenshot of Exchange rate dax formula in DAX editor." lightbox="media/desktop-dynamic-format-strings/exchange-rate-dax-formula.png":::
+    :::image type="content" source="media/desktop-dynamic-format-strings/exchange-rate-dax-formula.png" alt-text="Screenshot of Exchange rate DAX formula in DAX editor." lightbox="media/desktop-dynamic-format-strings/exchange-rate-dax-formula.png":::
 
 1. Now, create another measure to convert the **Sales Amount** measure to other currencies. Right-click **Sales measures**, select **New measure**, enter the following expression into the DAX formula bar, and press **Enter**:
 
@@ -233,9 +233,9 @@ A measure group helps you organize different measures by having them in a single
 
     :::image type="content" source="media/desktop-dynamic-format-strings/copy-line-chart-visual.png" alt-text="Screenshot of Copy line chart visual." lightbox="media/desktop-dynamic-format-strings/copy-line-chart-visual.png":::
 
-1. Add a list slicer visual to your report page by selecting **List slicer** in the **Visualizations** pane. In the **Data** pane, select **Country** from the **Country Currency Format Strings** table to add it to the slicer.
+1. Add a list slicer visual to your report page by selecting **List slicer** in the **Visualizations** pane. In the **Data** pane, select **Country/Region** from the **Country/Region Currency Format Strings** table to add it to the slicer.
 
-    :::image type="content" source="media/desktop-dynamic-format-strings/country-slicer.png" alt-text="Screenshot of Country slicer." lightbox="media/desktop-dynamic-format-strings/country-slicer.png":::
+    :::image type="content" source="media/desktop-dynamic-format-strings/country-slicer.png" alt-text="Screenshot of Country/Region slicer." lightbox="media/desktop-dynamic-format-strings/country-slicer.png":::
 
 1. Rearrange the visuals until they have a better layout, something like this:
 
@@ -247,14 +247,14 @@ A measure group helps you organize different measures by having them in a single
 
     - **Visual** tab > **Slicer settings** > **Single select** > **On**
     - **General** tab > **Properties** > **Padding**: 10 px, all edges
-    - **General** tab > **Effects** > **Visual border**: **On**, light grey, 10 px rounded corners
+    - **General** tab > **Effects** > **Visual border**: **On**, light grey, 10-px rounded corners
     - **General** tab > **Title**: **Off**
     - **Visual** tab > **Buttons** > **Border**: #333333, 6 line width
 
     **Table**
 
     - **General** tab > **Properties** > **Padding**: 10 px, all edges
-    - **General** tab > **Effects** > **Visual border**: **On**, light grey, 10 px rounded corners
+    - **General** tab > **Effects** > **Visual border**: **On**, light grey, 10-px rounded corners
     - **Visual** tab > **Grid** > **Horizontal gridlines**: **On**, White, 2 width
     - **Visual** tab > **Grid** > **Vertical gridlines**: **On**, White, 2 width
     - **Visual** tab > **Grid** > **Border**: White
@@ -284,7 +284,7 @@ A measure group helps you organize different measures by having them in a single
 
 #### Create a dynamic format string
 
-Selecting different **Country** names in the slicer shows the Converted Sales Amount measure result in visuals, but not in the right format for that country or region.
+Selecting different **Country/Region** names in the slicer shows the Converted Sales Amount measure result in visuals, but not in the right format for that country/region.
 
 1. In the **Data** pane, under **Sales measures**, select **Converted Sales Amount**.
 
@@ -293,14 +293,14 @@ Selecting different **Country** names in the slicer shows the Converted Sales Am
 1. The drop-down to the left of the formula bar should now say **Format**, and the formula in the formula bar should have a format string. Replace the format string with the following DAX expression, then press **Enter**:
 
     ```dax
-    SELECTEDVALUE ( 'Country Currency Format Strings'[Format], "\$#,0.00;(\$#,0.00);\$#,0.00" )
+    SELECTEDVALUE ( 'Country/Region Currency Format Strings'[Format], "\$#,0.00;(\$#,0.00);\$#,0.00" )
     ```
 
     It should look like this:
 
-    :::image type="content" source="media/desktop-dynamic-format-strings/country-currency-format-strings-dynamic-formula.png" alt-text="Screenshot of Country Currency Format Strings dynamic formula." lightbox="media/desktop-dynamic-format-strings/country-currency-format-strings-dynamic-formula.png":::
+    :::image type="content" source="media/desktop-dynamic-format-strings/country-currency-format-strings-dynamic-formula.png" alt-text="Screenshot of Country/Region Currency Format Strings dynamic formula." lightbox="media/desktop-dynamic-format-strings/country-currency-format-strings-dynamic-formula.png":::
 
-1. Select a different country in the slicer. The table and line chart visuals should now show the converted currency amount, in the correct format, for that country or region. Try selecting a different country/region in the slicer to see how the visuals change.
+1. Select a different Country/Region in the slicer. The table and line chart visuals should now show the converted currency amount, in the correct format, for that Country/Region or region. Try selecting a different country/region in the slicer to see how the visuals change.
 
     :::image type="content" source="media/desktop-dynamic-format-strings/converted-sales-amount-visual.png" alt-text="Screenshot of Converted sales amount visual." lightbox="media/desktop-dynamic-format-strings/converted-sales-amount-visual.png":::
 
@@ -316,7 +316,7 @@ Selecting different **Country** names in the slicer shows the Converted Sales Am
 - Dynamic format strings for measures are only for model measures. *Report measures* you can add to a live connect report can't have dynamic format strings for measures.
 - With DirectQuery for Analysis Services, when you select **Make changes to this model** on a live connect report, it shifts the connection to the DirectQuery over Analysis Services. In general, you can make changes to the format strings of the remote model measures. With dynamic format strings for measures:
   - Remote model measures with dynamic format strings defined are blocked from making format string changes to a static format string or to a different dynamic format string DAX expression.
-  - You can't change emote model measures from a static format string to a dynamic format string DAX expression defined in the local model.
+  - You can't change remote model measures from a static format string to a dynamic format string DAX expression defined in the local model.
   - Local model measures are blocked from using dynamic format strings for measures.
 
 ## Related content
