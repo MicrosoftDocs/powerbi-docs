@@ -13,7 +13,7 @@
       href: manage-support-ticket.md
       displayName: "Manage support ticket "
     - name: Best practices when creating a support ticket
-      href: best-practices-creating-sr.md
+      href: best-practices-creating-support-ticket.md
       displayName: support, support case, best practices
     - name: Consent to access customer data
       href: access-customer-data.md

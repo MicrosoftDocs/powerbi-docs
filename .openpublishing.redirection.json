@@ -6944,6 +6944,11 @@
       "source_path": "powerbi-docs/guidance/overview.md",
       "redirect_url": "/power-bi/guidance/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/support\best-practices-creating-sr.md",
+      "redirect_url": "/power-bi/support\best-practices-creating-support-ticket",
+      "redirect_document_id": true
     }
   ]
 }                           
