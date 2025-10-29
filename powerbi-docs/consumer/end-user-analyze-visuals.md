@@ -1,5 +1,5 @@
 ---
-title: Use the Analyze feature to explain fluctuations in visuals
+title: Use the Analyze Feature to Explain Fluctuations in Report Visuals
 description: Learn how to use the Analyze feature in the Power BI service to explain fluctuations in report visuals.
 ms.custom: Sales and marketing sample
 author: julcsc
@@ -8,10 +8,11 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 07/17/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
-# Use the Analyze feature to explain fluctuations in report visuals
+# Use the analyze feature to explain fluctuations in report visuals
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
@@ -26,8 +27,6 @@ You can ask the Power BI service to explain increases, decreases, or unusual dis
 :::image type="content" source="media/end-user-analyze-visuals/power-bi-decrease.png" alt-text="Screenshot of a line chart visual with the Analyze feature open and selected.":::
 
 The Analyze feature is contextual, and is based on the immediately previous data point&mdash;such as the previous bar or column.
-
-
 
 ## Which factors and categories are chosen
 
@@ -107,18 +106,20 @@ The **Analyze** feature isn't available for all visual types.
 
 The following list is the collection of currently unsupported scenarios for the **Analyze** feature **(Explain the increase, Explain the decrease, Find where the distribution is different)**:
 
-* TopN filters
-* Include or exclude filters.
-* Measure filters
-* Non-numeric measures
-* Use of "Show value as."
-* Filtered measures. Filtered measures are visual level calculations with a specific filter applied (for example, *Total Sales for France*) and are used on some of the visuals created by the insights feature.
-* Categorical columns on X-axis unless it defines a sort by column that is scalar. If using a hierarchy, then every column in the active hierarchy has to match this condition.
-* RLS (Row Level Security) or DirectQuery enabled data models
+- TopN filters
+- Include or exclude filters
+- Measure filters
+- Non-numeric measures
+- Use of "Show value as"
+- Filtered measures
+  - Visual-level calculations with a specific filter applied (for example, *Total Sales for France*) and are used on some of the visuals created by the insights feature
+- Categorical columns on X-axis unless it defines a sort by column that is scalar
+  - If using a hierarchy, then every column in the active hierarchy has to match this condition
+- Row-level security (RLS) or DirectQuery enabled data models
 
 ## Related content
 
-* [Waterfall charts in Power BI](../visuals/power-bi-visualization-waterfall-charts.md)
-* [Scatter charts, bubble charts, and dot plot charts in Power BI](../visuals/power-bi-visualization-scatter.md)
-* [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
-* [Create ribbon charts in Power BI](../visuals/desktop-ribbon-charts.md)
+- [Waterfall charts in Power BI](../visuals/power-bi-visualization-waterfall-charts.md)
+- [Scatter charts, bubble charts, and dot plot charts in Power BI](../visuals/power-bi-visualization-scatter.md)
+- [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
+- [Create ribbon charts in Power BI](../visuals/desktop-ribbon-charts.md)
