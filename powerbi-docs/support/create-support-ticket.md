@@ -92,4 +92,4 @@ Users who open support cases through PPAC might see the option to start a live c
 
 ## Related content
 
-- [Best practices when creating a support ticket](support\best-practices-creating-support-ticket.md)
+- [Best practices when creating a support ticket](best-practices-creating-support-ticket.md)

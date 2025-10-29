@@ -69,7 +69,7 @@ Depending on your specific issue, you might be asked to provide the following in
 
 1. Gateway logs
 
-    Gateways logs are required when troubleshooting any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](../data-integration/gateway/service-gateway-performance). For more information, see [export logs for a support ticket](../connect-data/service-gateway-onprem-tshoot.md#export-logs-for-a-support-ticket).
+    Gateways logs are required when troubleshooting any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](/data-integration/gateway/service-gateway-performance). For more information, see [export logs for a support ticket](../connect-data/service-gateway-onprem-tshoot.md#export-logs-for-a-support-ticket).
 
 1. Diagnostic information
 
