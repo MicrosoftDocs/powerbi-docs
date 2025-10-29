@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/11/2025
+ms.date: 10/01/2025
 LocalizationGroup: Connect to data
 ---
 

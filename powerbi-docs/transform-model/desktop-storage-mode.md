@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
-ms.date: 10/17/2025
+ms.date: 10/01/2025
 LocalizationGroup: Transform and shape data
 # customer intent: As a Power BI user, I want to become familiar with table storage modes so that I can control whether data is cached in memory for reports.
 ---

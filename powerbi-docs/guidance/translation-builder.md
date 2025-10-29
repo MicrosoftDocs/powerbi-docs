@@ -1,12 +1,13 @@
 ---
-title: "Create multiple-language reports with Translations Builder"
+title: "Create Multiple-Language Reports with Translations Builder"
 description: Learn how Translations Builder can add multiple-language support to Power BI project files. Use best practices to localize Power BI reports.
 author: JulCsc   
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/21/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Create multiple-language reports with Translations Builder
 

@@ -1002,7 +1002,7 @@ When authoring reports, you can use tooltips to specify text for each element on
 
 #### Azure Active Directory Application Proxy support
 
-With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps.
+With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps. See [Remote access to on-premises applications through Azure Active Directory's Application Proxy](/entra/identity/app-proxy/) for more information.
 
 #### Custom headers
 
