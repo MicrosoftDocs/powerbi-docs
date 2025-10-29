@@ -1,6 +1,6 @@
 ---
 title: Advanced Incremental Refresh and Real-Time Data With the XMLA Endpoint in Power BI
-description: Discover advanced incremental refresh and real-time data features with the XMLA endpoint in Power BI, including partition management, custom queries for detecting data changes, and metadata-only deployments for Premium capacities.
+description: Discover advanced incremental refresh and real-time data features with the XML for Analysis (XMLA) endpoint in Power BI. The advantages include, partition management, custom queries for detecting data changes, and metadata-only deployments for Premium capacities.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: chwade
@@ -25,7 +25,7 @@ When you first publish a model to the Power BI service, each table in the new mo
 When you perform the *first* refresh operation, tables with no incremental refresh policy refresh all rows contained in that table's default single partition. For tables with an incremental refresh policy, refresh and historical partitions are automatically created and rows are loaded into them according to the date/time for each row. If the incremental refresh policy includes getting data in real time, Power BI also adds a DirectQuery partition to the table.
 
 > [!IMPORTANT]
-> When using incremental refresh with real-time data (hybrid mode), tables related to the hybrid table should use Dual storage mode to avoid performance penalties. Additionally, visual caching can delay live updates until visuals re-query the data. For more information, see [Troubleshoot incremental refresh and real-time data](incremental-refresh-troubleshoot.md).
+> When you use incremental refresh with real-time data (hybrid mode), tables related to the hybrid table should use Dual storage mode to avoid performance penalties. Additionally, visual caching can delay live updates until visuals requery the data. For more information, see [Troubleshoot incremental refresh and real-time data](incremental-refresh-troubleshoot.md).
 
 This first refresh operation can take quite some time depending on the amount of data that needs to be loaded from the data source. The complexity of the model can also be a significant factor because refresh operations must do more processing and recalculation. This operation can be bootstrapped. For more information, see [Prevent timeouts on initial full refresh](#prevent-timeouts-on-initial-full-refresh).
 
@@ -49,7 +49,7 @@ When working with XMLA endpoint operations, consider these common patterns for m
 
 - **Frequent small refreshes**: Run multiple small, targeted refresh operations during business hours using XMLA partition commands or the enhanced REST API to keep recent data current without processing the entire table.
 - **Selective historical backfills**: Perform larger historical partition refreshes or one-off data corrections during off-hours using TMSL with `applyRefreshPolicy: false` to rebuild specific historical periods without affecting the automatic policy behavior.
-- **Staged initial loads**: For very large historical periods, break the initial refresh into smaller batches by processing partitions incrementally to avoid timeouts and manage resource consumption.
+- **Staged initial loads**: For large historical periods, break the initial refresh into smaller batches by processing partitions incrementally to avoid timeouts and manage resource consumption.
 
 These patterns allow you to balance real-time data freshness with system performance and resource constraints.
 
@@ -93,11 +93,11 @@ To learn more about overriding default incremental refresh behavior with TMSL, s
 
 ### Managing policies with Tabular Editor
 
-In addition to SSMS, you can use [Tabular Editor](https://tabulareditor.com/) to create and modify incremental refresh policies directly against semantic models through the XMLA endpoint. This allows you to adjust policy settings—such as refresh periods, historical periods, and source expressions—without needing to republish the model from Power BI Desktop. Tabular Editor can also be used to apply refresh policies to existing tables and manage `RangeStart` and `RangeEnd` parameter expressions. For more information, see [Incremental refresh](https://docs.tabulareditor.com/te2/incremental-refresh.html) in the Tabular Editor documentation.
+In addition to SSMS, you can use [Tabular Editor](https://tabulareditor.com/) to create and modify incremental refresh policies directly against semantic models through the XMLA endpoint. This method allows you to adjust policy settings—such as refresh periods, historical periods, and source expressions—without needing to republish the model from Power BI Desktop. Tabular Editor can also be used to apply refresh policies to existing tables and manage `RangeStart` and `RangeEnd` parameter expressions. For more information, see [Incremental refresh](https://docs.tabulareditor.com/te2/incremental-refresh.html) in the Tabular Editor documentation.
 
 ## Refresh orchestration and automation
 
-Beyond using SSMS, TMSL, and TOM for managing refreshes through the XMLA endpoint, you can also orchestrate semantic model refresh operations using the [Power BI REST API](/rest/api/power-bi/datasets/refresh-dataset). The enhanced refresh API provides additional capabilities including table-level and partition-level refresh, retry logic, cancellation, and custom timeout management. This approach is particularly useful for integrating refresh operations into automated workflows and CI/CD pipelines. For detailed guidance, see [Enhanced refresh with the Power BI REST API](asynchronous-refresh.md).
+Beyond using SSMS, TMSL, and TOM for managing refreshes through the XMLA endpoint. You can also orchestrate semantic model refresh operations using the [Power BI REST API](/rest/api/power-bi/datasets/refresh-dataset). The enhanced refresh API provides more capabilities including table-level and partition-level refresh, retry logic, cancellation, and custom timeout management. This approach is useful for integrating refresh operations into automated workflows and CI/CD pipelines. For detailed guidance, see [Enhanced refresh with the Power BI REST API](asynchronous-refresh.md).
 
 ## Ensuring optimal performance
 
