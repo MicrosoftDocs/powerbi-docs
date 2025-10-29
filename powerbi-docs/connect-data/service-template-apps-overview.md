@@ -106,14 +106,13 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 
 | Feature | Known Limitation |
 |---------|---------|
-| Contents: Semantic models | Exactly one semantic model should be present. Only semantic models built into Power BI Desktop (*.pbix* files) are allowed. Not supported: Semantic models from other template apps, cross-workspace semantic models, Direct Lake on OneLake semantic models, paginated reports (*.rdl* files), and Excel workbooks. |
+| Contents: Semantic models | Exactly one semantic model should be present. Only semantic models built into Power BI Desktop (*.pbix* files) are allowed. Not supported: Semantic models from other template apps, cross-workspace semantic models, semantic models with direct lake connections, paginated reports (*.rdl* files), and Excel workbooks. |
 |Contents:  Reports   | A single template app can't include more than 20 reports. |
 |Contents: Dashboards | Real-time tiles aren't allowed. In other words, no support for push or streaming datasets. |
 |Contents: Dataflows | Not supported: Dataflows. |
 |Contents from files | Only *.pbix* files are allowed. Not supported: *.rdl* files (paginated reports) and Excel workbooks. |
 | Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. Not supported: Live connections, on-premises data sources (personal and enterprise gateways aren't supported), real time (no support for push dataset), and composite models. |
 | Semantic model: cross-workspace | No cross-workspace semantic models are allowed. |
-| Direct Lake semantic models | Not supported: Direct Lake on OneLake semantic models. |
 | Query parameters | Not supported: Parameters of type *Any*, *Date*, or *Binary* type block refresh operation for semantic model. |
 | Incremental refresh | Template apps don't support incremental refresh. |
 | Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-organization.md) aren't supported. |
