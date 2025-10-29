@@ -39,11 +39,11 @@ A filled in filter icon indicates there are active filters on the page. You can 
 
 1. Tap the filter icon in the report footer. The filters appear in panels on the filter pane. Active filters are highlighted.
 
-    :::image type="content" source="./media/mobile-apps-view-phone-report/power-bi-iphone-active-filters.png" alt-text="Screenshot of phone BI phone report filters pane.":::
+    :::image type="content" source="./media/mobile-apps-view-phone-report/power-bi-iphone-active-filters.png" alt-text="Screenshot of Power BI phone report filters pane.":::
 
 1. Tap a filter to open it. You can then change the filter, choose between basic and advanced filtering, etc.
 
-    :::image type="content" source="./media/mobile-apps-view-phone-report/power-bi-iphone-basic-advanced-filtering.png" alt-text="Screenshot of phone BI phone report basic and advanced filtering.":::
+    :::image type="content" source="./media/mobile-apps-view-phone-report/power-bi-iphone-basic-advanced-filtering.png" alt-text="Screenshot of Power BI phone report basic and advanced filtering.":::
 
 The filters pane supports filter customizations done by the report creator.
 

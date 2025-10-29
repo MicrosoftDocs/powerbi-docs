@@ -129,25 +129,26 @@ See the article [Share Power BI reports and dashboards with coworkers and others
 
 Sometimes app designers release new versions of their apps. How you get the new version depends on how you received the original.
 
-- If you got the app from your organization, the update to the new version is automatic and you don't have to do anything.
-- If you got a template app from AppSource, the next time you open the app you'll see a notification banner. The notification lets you know that a new version is available.
+If you got the app from your organization, the update to the new version is automatic and you don't have to do anything.
 
-    1. Select **Get it** to update.  
+If you got a template app from AppSource, the next time you open the app, you see a notification banner. The notification lets you know that a new version is available. To install the update, follow these steps:
 
-        <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
+1. Select **Get it** to update.  
 
-    1. When prompted to install the updated app, select **Install**.
+   <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
 
-        ![Screenshot of the dialog to install and update an app.](./media/end-user-app-view/power-bi-installs.png)
+1. When prompted to install the updated app, select **Install**.
 
-    1. Because you already have a version of this app, you can decide whether you want to replace the existing version, update only the workspace content *without* updating the app, or install the updated app in a new workspace.
+   :::image type="content" source="./media/end-user-app-view/power-bi-installs.png" alt-text="Screenshot of the dialog to install and update an app.":::
 
-        :::image type="content" source="./media/end-user-app-view/power-bi-already-installed.png" alt-text="Screenshot of the Update app dialog with the option called update the workspace and the app selected.":::
+1. Because you already have a version of this app, you can decide whether you want to replace the existing version, update only the workspace content *without* updating the app, or install the updated app in a new workspace.
 
-     > [!NOTE]
-     > Installing a new version overwrites any changes you might have made to the app's reports and dashboards. To keep your updated reports and dashboards, save them under a different name or in a different location before installing.
+   :::image type="content" source="./media/end-user-app-view/power-bi-already-installed.png" alt-text="Screenshot of the Update app dialog with the option called update the workspace and the app selected.":::
 
-    1. Once you've installed the updated version, select **Update app** to complete the update process.
+   > [!NOTE]
+   > Installing a new version overwrites any changes you might have made to the app's reports and dashboards. To keep your updated reports and dashboards, save them under a different name or in a different location before installing.
+
+1. Once you've installed the updated version, select **Update app** to complete the update process.
 
 ## Considerations and troubleshooting
 

@@ -94,7 +94,7 @@ A metric’s detail pane has a chart of the metric’s progress and lists all th
 
 **Activity/Details toggle**: Use the toggle to switch between views of check-in activity on the metric and details such as connected reports or other info that the scorecard creator has configured.
 
-:::image type="content" source="media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane-toggle.png" alt-text="Screenshot of a metric detail pane that showing the activity/details toggle.":::
+:::image type="content" source="media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane-toggle.png" alt-text="Screenshot of a metric detail pane that shows the activity/details toggle.":::
 
 Tap on a connected report to open it. If you don't see the name of the report, but only the word "Report," it means you don't have access to the report. Tap on the report to request access.
 
@@ -137,7 +137,7 @@ It makes no difference whether the metric was marked for following in the Power 
 
 ## Related content
 
-- [Introducing metrics in Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-goals-in-power-bi/)
+- [Introducing metrics in Power BI](https://powerbi.microsoft.com/blog/introducing-goals-in-power-bi/)
 - [Get started with metrics in Power BI](../../create-reports/service-goals-introduction.md)
 - [Stay on top of your metrics in Power BI](../../create-reports/service-goals-check-in.md)
 - [Create scorecards and manual metrics in Power BI](../../create-reports/service-goals-create.md)

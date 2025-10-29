@@ -44,8 +44,7 @@ Device search, powered by Siri, also includes suggestions based on your frequent
 
 ## Related content
 
-Learn more about the Power BI mobile app by doing the following:
-
-- Downloading the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
-- Following [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-- Joining the conversation at the [Power BI Community](https://community.powerbi.com/)
+- [What are the Power BI mobile apps?](mobile-apps-for-mobile-devices.md)
+- [View dashboards in the Power BI mobile apps](mobile-apps-view-dashboard.md)
+- [Get started with the Power BI mobile app on iOS devices](mobile-iphone-app-get-started.md)
+- [What's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md)

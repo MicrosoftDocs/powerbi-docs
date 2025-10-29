@@ -43,7 +43,7 @@ Here are examples of two scenarios where barcode scanning is useful:
 1. Point the scanner at a barcode on the item you're interested in. You'll see a list of reports that have barcode fields.
 1. Find the report you're looking for and tap to open it on your device, automatically filtered according to the barcode you scanned. If the report doesn't contain the barcode, you get the message "Couldn't filter report." In that case you can go back to the list and try another report.
 
-    The **Barcode** icon in the report's action bar is active, not greyed out. This indicates that the report is currently filtered by the barcode.
+    The **Barcode** icon in the report's action bar is active, not grayed out. This indicates that the report is currently filtered by the barcode.
 
     Select the **Clear Barcode** icon if you want to clear the filter and return to the unfiltered report.  
 

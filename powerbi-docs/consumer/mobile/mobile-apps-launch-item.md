@@ -33,7 +33,7 @@ To mark an item as the launch item, open the desired item, tap **More options (â
 
 Select **Always open the item in full screen** if you want the launch item to always open in full screen mode.
 
-:::image type="content" source="./media/mobile-apps-launch-item/always-open-full-screen.png" alt-text="Screenshot of showing how to select the always open the item in full screen mode option." border="false":::
+:::image type="content" source="./media/mobile-apps-launch-item/always-open-full-screen.png" alt-text="Screenshot of the option to always open item in full screen mode." border="false":::
 
 When done, choose **Set**.
 

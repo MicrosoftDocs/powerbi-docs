@@ -47,5 +47,3 @@ If your organization is already using shared device mode, no special configurati
 - [Shared device mode for iOS devices](/azure/active-directory/develop/msal-ios-shared-devices)
 - [Shared device mode for Android devices](/azure/active-directory/develop/msal-android-shared-devices)
 - [Manage devices for frontline workers](/microsoft-365/frontline/flw-devices)
-- Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-- Join the conversation at the [Power BI Community](https://community.powerbi.com/)

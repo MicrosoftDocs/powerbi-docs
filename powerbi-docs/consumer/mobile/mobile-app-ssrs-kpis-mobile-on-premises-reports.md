@@ -117,7 +117,7 @@ Power BI reports and KPIs are displayed in the same folders they're in on the Re
 
 - Tap a KPI to see it in focus mode.
   
-  :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png" alt-text="Screenshot of a KPI in focus mode in the Power BI mobile app..":::
+  :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png" alt-text="Screenshot of a KPI in focus mode in the Power BI mobile app.":::
 
 ## View your favorite KPIs and reports
 

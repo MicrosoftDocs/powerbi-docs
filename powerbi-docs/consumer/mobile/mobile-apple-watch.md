@@ -89,8 +89,7 @@ Given the small space on the Apple Watch face, the Power BI Apple Watch app lets
 
 ## Related content
 
-Your feedback will help us decide what to implement in the future, so please don't forget to vote for other features that you would like to see in Power BI mobile apps.
-
-- Download the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
-- Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-- Join the conversation at the [Power BI Community](https://community.powerbi.com/)
+- [What are the Power BI mobile apps?](mobile-apps-for-mobile-devices.md)
+- [View dashboards in the Power BI mobile apps](mobile-apps-view-dashboard.md)
+- [Get started with the Power BI mobile app on iOS devices](mobile-iphone-app-get-started.md)
+- [What's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md)

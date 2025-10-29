@@ -50,7 +50,7 @@ Now that you have an insight open, continue exploring.
 
 - You can run insights on the insight card itself. Insights on insights is often referred to as **related insights**. To generate related insights, select an insight card to make it active. It moves to the left side of the report canvas, and new cards, based solely on the data in that single insight, display along the right. Filters are available for the new insight card as well.
 
-   :::image type="content" source="./media/end-user-insights/power-bi-insights-card.png" alt-text="Screenshot of a related insight (highlighted) with the filter menu expanded":::
+   :::image type="content" source="./media/end-user-insights/power-bi-insights-card.png" alt-text="Screenshot of a related insight (highlighted) with the filter menu expanded.":::
 
 To return to your report, select **Exit Focus mode**, located in the upper left corner of the screen.
 

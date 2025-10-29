@@ -192,7 +192,9 @@ Here's how to set the model language.
    :::image type="content" source="media/supported-languages-locations/power-bi-supported-model-languages.png" alt-text="Screenshot of Power BI Desktop showing how to set the model language.":::
 
 > [!NOTE]
-> Once created, the language of a Power BI model can't be changed.### Choose the DAX separators in Power BI Desktop
+> Once created, the language of a Power BI model can't be changed.
+
+### Choose the DAX separators in Power BI Desktop
 
 By default, DAX uses commas (,) to separate items in a list and periods (.) to indicate the decimal place in a number. While we do recommend using the defaults, you can use the DAX separators based on your Windows locale settings.
 
@@ -227,7 +229,7 @@ Help is localized in these 10 languages:
 
 ## Related content
 
-- [Locale settings for paginated reports.](/sql/reporting-services/report-design/set-the-locale-for-a-report-or-text-box-reporting-services?view=sql-server-ver16&preserve-view=true)
-- Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps.](../consumer/mobile/mobile-apps-supported-languages.md) for details.
+- [Locale settings for paginated reports.](/sql/reporting-services/report-design/set-the-locale-for-a-report-or-text-box-reporting-services)
+- Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](../consumer/mobile/mobile-apps-supported-languages.md) for details.
 - Questions? Try asking the [Power BI Community](https://community.powerbi.com/).
-- Still have an issue? Visit the [Power BI support page.](https://powerbi.microsoft.com/support/).
+- Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
