@@ -380,13 +380,11 @@
       href: service-reports-visual-interactions.md
     - name: Customize x-axis and y-axis properties
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-    - name: Card visuals
+    - name: Card visual
       items: 
-      - name: Create a (new) card visual
+      - name: Create a card visual
         href: ../visuals/power-bi-visualization-new-card.md
-      - name: (new) Card visual format settings
-        href: ../visuals/power-bi-visualization-card-visual-new-format-settings.md
-      - name: (new) Card visual considerations and limitations
+      - name: Card visual considerations and limitations
         href: ../visuals/power-bi-visualization-card-visual-considerations.md
     - name: Button slicer
       href: ../visuals/power-bi-visualization-button-slicer.md

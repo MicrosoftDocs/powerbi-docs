@@ -1,55 +1,40 @@
 ---
-title: (new) Card visual considerations & limitations
-description: This article provides a clear overview of the considerations and limitations for the (new) Card visual in Power BI Desktop.
-author: JulCsc
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+title: Card visual considerations & limitations
+description: This article provides a clear overview of the considerations and limitations for the Card visual in Power BI.
+author: jacinda-eng
+ms.author: jacindaeng
+ms.reviewer: JulCsc
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 09/27/2024
+ms.date: 10/28/2025
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to know about any considerations or limitations for the (new) Card visual so that I'm always aware of the nuances of the (new) Card visual in Power BI Desktop.
+#customer intent: As a Power BI user, I want to know about any considerations or limitations for the Card visual so that I'm always aware of the nuances of the Card visual in Power BI.
 ---
-# (new) Card visual considerations and limitations
+# Card visual considerations and limitations
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 ## Overview
 
-As a Power BI user, the awareness of any considerations and limitations for the (new) Card visual is helpful when creating effective and visually appealing data visualizations.
+As a Power BI user, the awareness of any considerations and limitations for the Card visual is helpful when creating effective and visually appealing data visualizations.
 
-Understanding the considerations and limitations allow you to make informed decisions and use the full potential of the (new) Card visual in Power BI. Whether you're a novice or an experienced user, this article aims to enhance your knowledge by keeping you up-to-date with practical insights and tips for any known issues.
+Understanding the considerations and limitations allow you to make informed decisions and use the full potential of the Card visual in Power BI. Whether you're a novice or an experienced user, this article aims to enhance your knowledge by keeping you up-to-date with practical insights and tips for any known issues.
 
 ## Considerations and limitations
 
-This article provides a list of known considerations and limitations, designed to help you navigate the nuances of the (new) Card visual in Power BI Desktop.
+This article provides a list of known considerations and limitations, designed to help you navigate the nuances of the Card visual in Power BI Desktop.
 
-### Preview feature
+### Format settings
 
-#### Power BI service
-
-Users are unable to see the (new) Card visual in Power BI service because it's currently a preview feature exclusive to Power BI Desktop.
-
-The (new) Card visual is in the Preview phase and is only available within the Power BI Desktop environment. This limitation is a common practice for features that are still under development, allowing users to test and provide feedback before a broader release. Although the (new) Card visual isn't directly available in the Power BI service, any (new) Card visuals created in Power BI Desktop can be published, making them visible in the Power BI service. This capability allows users to take advantage of the new features while ensuring compatibility and stability within the Service environment.
-
-#### Format settings
-
-When you're formatting a (new) Card visual, you might notice that some of the [format settings](power-bi-visualization-card-visual-new-format-settings.md) are in a different location, or the name of the setting is changed. Often, new settings or controls are added from one product update to the next. Such changes are expected as Preview features are continuously under development. They're subject to modifications that enhance functionality and user experience. It's the responsibility of report creators to stay informed about these changes when using Preview features. Keeping abreast of product updates ensure the effective use of these features in your reports.
-
-#### Accessibility
-
-During the preview phase, certain Accessibility features such as keyboard navigation and screen-reader support might not be fully operational. However, we're committed to ensuring that all functionalities comply with Accessibility standards upon the conclusion of the Preview period.
-
-### Capabilities
-
-#### Alerts
-
-The (new) Card visual currently lacks the functionality to set alerts for specific cards. Due to the (new) Card visual’s ability to contain multiple callout tiles within a single container, implementing alerts presented a development challenge. The development team is actively seeking a solution to integrate this feature effectively. No workaround is currently available for setting alerts on the (new) Card visual. The only alternative is to use the existing card visual, which supports alert functionality.
+- The **(new) Card visual** became generally available as the **Card visual** with the November 2025 Power BI release. If you used the Card visual during the Public Preview phase, you may notice behavior or formatting changes that reflect the improvements that are included in the General Availibility release.
+- When formatting the Card visual, you might notice that some of the format settings are in a different or new location, or the name of the setting is changed.
+- In earlier versions of the Card visual, the **Callout** image was available as part of the **Image card**. This now been moved to the **Callout** section of **Format** pane.
+- Certain **Layout** arrangements may impact existing reports that used the Card visual during its Public Preview phase. This is due to updates made to all card components as part of the General Availability release, including enhancements to layout, styling, and image handling.
+- Users who previously relied on the Image card layout should update their visuals accordingly using the Format pane to access and configure the Callout image settings.
 
 ## Related content
 
-* [Create a (new) Card visual](power-bi-visualization-new-card.md)
-* [(new) Card visual format settings](power-bi-visualization-card-visual-new-format-settings.md)
-* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
+- [Create a Card visual](power-bi-visualization-new-card.md)
+- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

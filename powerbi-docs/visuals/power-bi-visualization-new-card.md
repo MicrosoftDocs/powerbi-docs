@@ -46,7 +46,7 @@ For this quick three-step guide, let's use the first option:
 
     :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-1.png" alt-text="Screenshot with the Insert ribbon, New visual button, Visualizations pane, Build visual icon, and the Card visual icon, all highlighted." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-1.png":::
 
-2. To add data to the visual, let’s use the **Data pane** in this example. Adding data can be done by selecting each field in the **Data pane**, or dragging the fields to the field wells on the **Visualizations pane**, or dragging the fields directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **StoreCount**, then expand the **TotalSalesTY** subgroup, and add **Value**. You'll notice that each data field you add is displayed as its own card. 
+2. To add data to the visual, let’s use the **Data pane** in this example. Adding data can be done by selecting each field in the **Data pane**, or dragging the fields to the field wells on the **Visualizations pane**, or dragging the fields directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **StoreCount**, then expand the **TotalSalesTY** subgroup, and add **Value**. You'll notice that each data field you add is displayed as its own card.
 
     :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-2.png" alt-text="Screenshot: Data pane, Sales group expanded, StoreCount + TotalSalesTV measures highlighted, selected, and added to Data field in Visualizations pane." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-2.png":::
 
