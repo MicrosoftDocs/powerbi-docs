@@ -31,7 +31,7 @@ For example, if today's date is February 2, 2021 and our **FactInternetSales** t
 
 :::image type="content" source="media/incremental-refresh-xmla/partition-naming.png" border="false" alt-text="Diagram shows the partition naming granularity described in the text.":::
 
-With each refresh operation, only the partitions for the refresh period are refreshed. The date filter of the DirectQuery partition is updated to include only those changes that occur after the current refresh period. A new refresh partition is created for new rows with a new date/time within the updated refresh period, and existing rows with a date/time already within existing partitions in the refresh period are refreshed with updates. Rows with a date/time older than the refresh period are no longer refreshed.
+With each refresh operation, only the partitions for the refresh period are refreshed. The date filter of the DirectQuery partition is updated to include only those changes that occur after the current refresh period. A new refresh partition is created for new rows with a new date/time within the updated refresh period. Existing rows with a date/time already within existing partitions in the refresh period are refreshed with updates. Rows with a date/time older than the refresh period are no longer refreshed.
 
 As whole periods close, partitions are merged. For example, if a one-day refresh period and three year historical store period is specified in the policy, on the first day of the month, all day partitions for the previous month are merged into a month partition. On the first day of a new quarter, all three previous month partitions are merged into a quarter partition. On the first day of a new year, all four previous quarter partitions are merged into a year partition.
 
@@ -49,7 +49,7 @@ SQL Server Management Studio (SSMS) can be used to view and manage partitions cr
 
 With SSMS, you also have more control over how to invoke refreshes by using [Tabular Model Scripting Language](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) and the [Tabular Object Model](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true). For example, in SSMS, in Object Explorer, right-click a table and then select the **Process Table** menu option, and then select the **Script** button to generate a TMSL refresh command.
 
-:::image type="content" source="media/incremental-refresh-xmla/ssms-process-table.png" alt-text="Screenshot shows the Script button in Process Table dialog.":::
+:::image type="content" source="media/incremental-refresh-xmla/ssms-process-table.png" alt-text="Screenshot shows the Script button in the Process Table dialog.":::
 
 These parameters can be used with the TMSL refresh command to override the default incremental refresh behavior:
 
@@ -96,7 +96,7 @@ Bootstrapping the initial refresh operation allows the service to create partiti
 
 The open-source [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) tool provides an easy way to bootstrap an initial refresh operation. After publishing a model with an incremental refresh policy defined for it from Power BI Desktop to the service, connect to the model by using the XMLA endpoint in Read/Write mode. Run **Apply Refresh Policy** on the incremental refresh table. With only the policy applied, partitions are created but no data is loaded into them. Then connect with SSMS to refresh the partitions sequentially or in batches to load and process the data. For more information, see [Incremental refresh](https://docs.tabulareditor.com/te2/incremental-refresh.html) in the Tabular editor documentation.
 
-:::image type="content" source="media/incremental-refresh-xmla/tabular-editor.png" alt-text="Screenshot show the Tabular Editor with Apply Refresh Policy selected.":::
+:::image type="content" source="media/incremental-refresh-xmla/tabular-editor.png" alt-text="Screenshot shows the Tabular Editor with Apply Refresh Policy selected.":::
 
 ### Power Query filter for empty partitions
 
@@ -106,7 +106,7 @@ Before publishing the model to the service, in Power Query Editor, add another f
 
 After selecting **Close & Apply** in Power Query Editor, defining the incremental refresh policy, and saving the model, the model is published to the service. From the service, the initial refresh operation is run on the model. Partitions for the **FactInternetSales** table are created according to the policy, but no data is loaded and processed because all data is filtered out.
 
-After the initial refresh operation is complete, back in Power Query Editor, the other filter on the `ProductKey` column is removed. After selecting **Close & Apply** in Power Query Editor and saving the model, the model *is not published again*. If the model is published again, it overwrites the incremental refresh policy settings and forces a full refresh on the model when a subsequent refresh operation is performed from the service. Instead, perform a [metadata only deployment](#metadata-only-deployment) by using the Application Lifecycle Management (ALM) Toolkit that removes the filter on the `ProductKey` column from the *model*. SSMS can then be used to selectively process partitions. When all partitions are fully processed, which must include a process recalculation on all partitions, from SSMS, subsequent refresh operations on the model from the service refresh only the incremental refresh partitions.
+After the initial refresh operation is complete, back in Power Query Editor, the other filter on the `ProductKey` column is removed. After selecting **Close & Apply** in Power Query Editor and saving the model, *the model isn't published again*. If the model is published again, it overwrites the incremental refresh policy settings and forces a full refresh on the model when a subsequent refresh operation is performed from the service. Instead, perform a [metadata only deployment](#metadata-only-deployment) by using the Application Lifecycle Management (ALM) Toolkit that removes the filter on the `ProductKey` column from the *model*. SSMS can then be used to selectively process partitions. When all partitions are fully processed, which must include a process recalculation on all partitions, from SSMS, subsequent refresh operations on the model from the service refresh only the incremental refresh partitions.
 
 > [!TIP]
 > Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.
@@ -121,7 +121,7 @@ TMSL and TOM can be used to override the detected data changes behavior. This me
 
 The `pollingExpression` is intended to be a lightweight M expression or name of another M query. It must return a scalar value and is executed for each partition. If the value returned is different to what it was the last time an incremental refresh occurred, the partition is flagged for full processing.
 
-The following example covers all 120 months in the historical period for backdated changes. Specifying 120 months instead of 10 years means data compression might not be quite as efficient, but avoids having to refresh a whole historical year, which would be more expensive when a month would be sufficient for a backdated change.
+The following example covers all 120 months in the historical period for backdated changes. Specifying 120 months instead of 10 years means data compression might not be as efficient. However, it avoids having to refresh a whole historical year, which would be more expensive when a month would be sufficient for a backdated change.
 
 ```json
 "refreshPolicy": {
@@ -144,11 +144,11 @@ The following example covers all 120 months in the historical period for backdat
 
 ## Metadata only deployment
 
-When publishing a new version of a *.pbix* file from Power BI Desktop to a workspace, if a model with the same name already exists, you're prompted to replace the existing model.
+When you publish a new version of a *.pbix* file from Power BI Desktop to a workspace. You see the following prompt to replace the existing model, if a model with the same name already exists.
 
 :::image type="content" source="media/incremental-refresh-xmla/replace-dataset-prompt.png" alt-text="Screenshot shows the Replace model dialog.":::
 
-In some cases, you might not want to replace the model, especially with incremental refresh. The model in Power BI Desktop could be much smaller than the one in the Power BI service. If the model in the Power BI service has an incremental refresh policy applied, it might have several years of historical data that will be lost if the model is replaced. Refreshing all the historical data could take hours and result in system downtime for users.
+In some cases, you might not want to replace the model, especially with incremental refresh. The model in Power BI Desktop could be considerably smaller than the one in the Power BI service. If the model in the Power BI service has an incremental refresh policy applied, you might lose several years of historical data if the model is replaced. Refreshing all the historical data could take hours and result in system downtime for users.
 
 Instead, it's better to perform a metadata only deployment, which allows deployment of new objects without losing the historical data. For example, if you only add a few measures you can deploy just the new measures without needing to refresh the data, saving time.
 
