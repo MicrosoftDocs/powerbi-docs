@@ -1,5 +1,5 @@
 ---
-title: Tips and tricks for asking questions with Q&A
+title: Tips for Asking Questions in Power BI Q&A
 description: Use the following tips and tricks to quickly and accurately ask questions with Q&A in the various Power BI apps.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: Mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/15/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Ask questions of your data
 ---
 
@@ -27,7 +28,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |Category  |Keywords  |
 |---------|---------|
 |**Aggregates**     | total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min          |
-**Articles**     |  a, an, the              |
+|**Articles**     |  a, an, the              |
 |**Blank and Boolean**     |   blank, empty, null, prefixed with "non" or "non-", empty string, empty text, true, t, false, f          |
 |**Comparisons**     |   vs, versus, compared to, compared with            |
 |**Conjunctions**     |  and, or, each of, with, versus, &, and, but, nor, along with, in addition to       |
@@ -60,7 +61,7 @@ Q&A does its best to understand and answer the question being asked. It tries to
 - Restates the question based on the data in the underlying semantic models. Q&A replaces the words you used with synonyms from the underlying semantic models. By reading the restatement, you know whether Q&A understood your question or not.
 - Adds a double underline to words it tries to understand.
 - Adds a single underline to words it does understand.
-- Adds a dotted underline to words it doesn't understand. These words might be in the [Recognized words list](#words-and-terminology-that-qa-recognizes) that you expect Q&A to understand. But, you might have used that word in an unexpected way. 
+- Adds a dotted underline to words it doesn't understand. These words might be in the [Recognized words list](#words-and-terminology-that-qa-recognizes) that you expect Q&A to understand. But, you might have used that word in an unexpected way.
 - Allows you to contact the report or dashboard owner when your term isn't found or your question doesn't get results.
 
 ## Tell Q&A which visual to use
@@ -69,7 +70,7 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 "***sales by state as treemap***"
 
-:::image type="content" source="media/end-user-q-and-a-tips/qa-treemap.png" alt-text="Screenshot that shows a Q&A search for sales figures in a treemap format.":::
+:::image type="content" source="media/end-user-q-and-a-tips/qa-treemap.png" alt-text="Screenshot of Q&A search for sales by state displayed in a treemap format.":::
 
 ## Don't stop now
 

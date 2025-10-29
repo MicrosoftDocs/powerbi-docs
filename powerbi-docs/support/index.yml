@@ -55,7 +55,7 @@ landingContent:
           - text: Create a support ticket
             url: create-support-ticket.md
           - text: Be efficient with support requests
-            url: best-practices-creating-sr.md
+            url: best-practices-creating-support-ticket.md
           - text: Access customer data
             url: access-customer-data.md
           - text: Capture diagnostic information

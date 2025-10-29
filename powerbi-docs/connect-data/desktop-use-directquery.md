@@ -1,13 +1,14 @@
 ---
 title: Use DirectQuery in Power BI Desktop
-description: See how to create and publish reports that use DirectQuery data sources, and some benefits, limitations, and recommendations.
+description: Learn how to use DirectQuery in Power BI Desktop to connect directly to data sources without importing data, with guidance on benefits, limitations, performance considerations, and best practices.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/28/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI user, I want to understand how to use DirectQuery in Power BI Desktop so that I can connect to data sources without importing data and always view current data in my visualizations.
 ---
@@ -21,7 +22,6 @@ To determine whether a data source supports DirectQuery, view the full listing o
 Here are the differences between using Import and DirectQuery connectivity modes:
 
 - **Import**: A copy of the data from the selected tables and columns imports into Power BI Desktop. As you create or interact with visualizations, Power BI Desktop uses the imported data. To see underlying data changes after the initial import or the most recent refresh, you must import the full semantic model again to refresh the data.
-
 - **DirectQuery**: No data imports into Power BI Desktop. For relational sources, you can select tables and columns to appear in the Power BI Desktop **Data** pane. For multidimensional sources like SAP Business Warehouse (SAP BW), the dimensions and measures of the selected cube appear in the **Data** pane. As you create or interact with visualizations, Power BI Desktop queries the underlying data source, so you're always viewing current data.
 
 With DirectQuery, when you create or interact with a visualization, you must query the underlying source. The time that's needed to refresh the visualization depends on the performance of the underlying data source. If the data needed to service the request was recently requested, Power BI Desktop uses the recent data to reduce the time required to show the visualization. Selecting **Refresh** from the **Home** ribbon refreshes all visualizations with current data.
@@ -33,9 +33,7 @@ Many data modeling and data transformations are available when using DirectQuery
 Some benefits of using DirectQuery include:
 
 - DirectQuery lets you build visualizations over very large semantic models, where it would be infeasible to import all the data with pre-aggregation.
-
 - DirectQuery reports always use current data. Seeing underlying data changes requires you to refresh the data, and reimporting large semantic models to refresh data could be infeasible.
-
 - The 1-GB semantic model limitation doesn't apply with DirectQuery.
 
 ## Connect using DirectQuery
@@ -43,25 +41,19 @@ Some benefits of using DirectQuery include:
 To connect to a data source with DirectQuery:
 
 1. In the **Home** group of the Power BI Desktop ribbon, select **Get data**, and then select a data source that DirectQuery supports, such as **SQL Server**.
-
 1. In the dialog box for the connection, under **Data Connectivity mode**, select **DirectQuery**.
-
-![Import and DirectQuery options, SQL Server Database dialog, Power BI Desktop](media/desktop-use-directquery/directquery_sqlserverdb.png)
 
 ## Publish to the Power BI service
 
 You can publish DirectQuery reports to the Power BI service, but you need to take extra steps for the Power BI service to open the reports.
 
 - To connect the Power BI service to DirectQuery data sources other than Azure SQL Database, Azure Synapse Analytics (formerly SQL Data Warehouse), Amazon Redshift, and Snowflake Data Warehouse, install an [on-premises data gateway](service-gateway-onprem.md) and register the data source.
-
 - If you used DirectQuery with cloud sources like Azure SQL Database, Azure Synapse, Amazon Redshift, or Snowflake Data Warehouse, you don't need an on-premises data gateway. You still must provide credentials for the Power BI service to open the published report. Without credentials, an error occurs when you try to open a published report or explore a semantic model created with a DirectQuery connection.
 
 To provide credentials for opening the report and refreshing the data:
 
 1. In the Power BI service, go to the workspace and locate the semantic model that uses DirectQuery in the workspace content list.
-
 1. Select the **More options** three horizontal dots icon next to the name of the semantic model, then choose **Settings**.
-
 1. Under **Data source credentials**, provide the credentials to connect to the data source.
 
 > [!NOTE]
@@ -77,9 +69,9 @@ DirectQuery sends all requests to the source database, so the required refresh t
 
 Load on the source database also depends on the number of Power BI users who consume the published report, especially if the report uses row-level security (RLS). The refresh of a non-RLS dashboard tile shared by multiple users sends a single query to the database, but refreshing a dashboard tile that uses RLS requires one query per user. The increased queries significantly increase load and potentially affect performance.
 
-### 1 million-row limit
+### Million-row limit
 
-DirectQuery defines a 1 million-row limit for data returned from cloud data sources, which are any data sources that aren't on-premises. On-premises sources are limited to a defined payload of about 4 MB per row, depending on proprietary compression algorithm, or 16 MB for the entire visual. Premium capacities can set different maximum row limits, as described in the blog post [Power BI Premium new capacity settings](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity).
+DirectQuery defines a one-million-row limit for data returned from cloud data sources, which are any data sources that aren't on-premises. On-premises sources are limited to a defined payload of about 4 MB per row, depending on proprietary compression algorithm, or 16 MB for the entire visual. Premium capacities can set different maximum row limits, as described in the blog post [Power BI Premium new capacity settings](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity).
 
 Power BI creates queries that are as efficient as possible, but some generated queries might retrieve too many rows from the underlying data source. For example, this situation can occur with a simple chart that includes a high cardinality column with the aggregation option set to **No Calculation**. The visual must have only columns with a cardinality below 1 million, or must apply the appropriate filters.
 
@@ -96,13 +88,9 @@ If you need per-user security implemented with DirectQuery sources, either use R
 Some other limitations of using DirectQuery include:
 
 - If the Power Query Editor query is overly complex, an error occurs. To fix the error, you must either delete the problematic step in Power Query Editor, or switch to Import mode. Multidimensional sources like SAP BW can't use the Power Query Editor.
-
 - Automatic date/time hierarchy is unavailable in DirectQuery. DirectQuery mode doesn't support date column drilldown by year, quarter, month, or day.
-
 - For table or matrix visualizations, there's a 125-column limit for results that return more than 500 rows from DirectQuery sources. These results display a scroll bar in the table or matrix that lets you fetch more data. In that situation, the maximum number of columns in the table or matrix is 125. If you must include more than 125 columns in a single table or matrix, consider creating measures that use `MIN`, `MAX`, `FIRST`, or `LAST`, because they don't count against this maximum.
-
 - You can't change from Import to DirectQuery mode. You can switch from DirectQuery mode to Import mode if you import all the necessary data. It's not possible to switch back, mostly because of the feature set that DirectQuery doesn't support. DirectQuery models over multidimensional sources, like SAP BW, can't be switched from DirectQuery to Import mode either, because of the different treatment of external measures.
-
 - Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication are supported in the Power BI service with an assigned [shareable cloud connection](service-create-share-cloud-data-sources.md) and/or [granular access control](service-create-share-cloud-data-sources.md#granular-access-control).
 
 <!-- Cannot repro. `is` and `is not` 12/31/9999 filters fine. Version: 2.111.581.0 64-bit (November 2022)
