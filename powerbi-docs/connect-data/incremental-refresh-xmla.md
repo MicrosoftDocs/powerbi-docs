@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/22/2022
+ms.date: 10/29/2025
 LocalizationGroup: 
 ---
 
