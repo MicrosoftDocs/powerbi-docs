@@ -1,5 +1,5 @@
 ---
-title: Create a dynamic subscription for a Power BI report 
+title: Create a Dynamic Subscription for a Power BI Report 
 description: Learn how to create per-recipient report subscriptions based on filters that you select.
 author: julcsc
 ms.author: juliacawthra
@@ -19,20 +19,17 @@ ms.custom:
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-
 Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which filters are applied to their version of the report.
 
 Dynamic per recipient subscriptions are available for paginated reports and for Power BI reports. This article pertains to Power BI reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
 
 The dynamic subscription filters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective filters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what filters applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
 
-
 ## Prerequisites
 
 - A report to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses)).
 - Build permissions to a Power BI semantic model that contains recipient data. This data includes the email addresses of your recipients and filter values that should be applied for each recipient.  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
-
 - The user cannot be a [guest user](/fabric/enterprise/powerbi/service-admin-entra-b2b). Guest users [cannot subscribe others](/power-bi/collaborate-share/end-user-subscribe?tabs=creator) and dynamic subscriptions can always bring in "others" through datasets. Therefore, guest users cannot create dynamic subscriptions. 
 
 ## Create a dynamic subscription
@@ -102,7 +99,7 @@ In the **Set the schedule** window, create a schedule for your dynamic subscript
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You might choose daily, weekly, or monthly. You also can adjust your time zone.
 
     > [!TIP]
-   > To receive a subscription email only on certain days, select Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
+    > To receive a subscription email only on certain days, select Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
 1. Choose a scheduled time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone.
 
@@ -130,8 +127,7 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 - This feature supports single value filters and doesn't support filters with multiple value options.
 - If the names of columns or tables are changed in the semantic model while the subscription is processing, dynamic filters might not be applied properly.
 - Resolutions below 400px are not supported for Dynamic per recipient subscriptions.
-- SSAS Live Connection is not supported
-
+- SSAS Live Connection isn't supported
 
 ## Related content
 
