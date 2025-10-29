@@ -33,13 +33,13 @@ Depending on your specific issue, you might be asked to provide the following in
     Data source information is always relevant for a service request. Each data source has certain issues only relevant to itself. Where multiple sources are used, use trial and error to identify which sources are contributing to the issue.
 
     Power BI also behaves differently when different storage modes are used. The three main storage mode options are:
-    - [Import](/connect-data/service-dataset-modes-understand.md#import-mode)
-    - [Direct Query](/connect-data/service-dataset-modes-understand.md#directquery-mode)
-    - [Live connection](/connect-data/service-live-connect-dq-datasets.md)
+    - [Import](../connect-data/service-dataset-modes-understand.md#import-mode)
+    - [Direct Query](../connect-data/service-dataset-modes-understand.md#directquery-mode)
+    - [Live connection](../connect-data/service-live-connect-dq-datasets.md)
 
     There are also two special cases:
-    - [Mixed modes storage (composite models)](/transform-model/desktop-composite-models.md)
-    - [Direct Query for PBI Datasets and Analysis Services](/connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+    - [Mixed modes storage (composite models)](../transform-model/desktop-composite-models.md)
+    - [Direct Query for PBI Datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
 
     To identify data sources being used in the Power BI Desktop, select **Data source settings** > **Data sources** in the current file. In the Power BI service, navigate to the settings page under Data source credentials or via the lineage view. You can access this information by selecting '**View lineage**' or changing the workspace view from list to lineage.
 
@@ -69,11 +69,11 @@ Depending on your specific issue, you might be asked to provide the following in
 
 1. Gateway logs
 
-    Gateways logs are required when troubleshooting any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](/data-integration/gateway/service-gateway-performance). For more information, see [export logs for a support ticket](/connect-data/service-gateway-onprem-tshoot.md#export-logs-for-a-support-ticket).
+    Gateways logs are required when troubleshooting any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](../data-integration/gateway/service-gateway-performance). For more information, see [export logs for a support ticket](../connect-data/service-gateway-onprem-tshoot.md#export-logs-for-a-support-ticket).
 
 1. Diagnostic information
 
-    Follow the steps in [Power BI Desktop diagnostics collection](/fundamentals/desktop-diagnostics.md) to view and collect diagnostic information.
+    Follow the steps in [Power BI Desktop diagnostics collection](../fundamentals/desktop-diagnostics.md) to view and collect diagnostic information.
 
 1. Dataflow JSON
 
