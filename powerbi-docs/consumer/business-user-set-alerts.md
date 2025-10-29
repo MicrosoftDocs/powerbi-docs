@@ -1,5 +1,5 @@
 ---
-title: Set alerts on Power BI reports (public preview)
+title: Set Alerts on Power BI Reports (Public Preview)
 description: Set alerts on Power BI reports with Activator.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: juliacawthra, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 02/21/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Get started
 ---
 
@@ -17,11 +18,17 @@ LocalizationGroup: Get started
 
 With Fabric Activator, you can set data alerts on the reports that you're interested in following. Read more about it in [What is Activator?](/fabric/real-time-intelligence/data-activator/activator-introduction)
 
+> [!NOTE]
+> This article covers Fabric Activator alerts for **reports** (preview feature). If you want to set alerts on **dashboard tiles** (gauges, KPIs, and cards), see [Set data alerts on Power BI service dashboards](end-user-alerts.md).
+
 ## Prerequisites
 
-- You need to have write permission for a workspace with a Fabric capacity license.
+To set Activator alerts on reports, you need:
 
-You can sign up for a [Microsoft Fabric free trial](https://aka.ms/try-fabric).
+- Write permission for a workspace with a Fabric capacity license (F64 or higher) or Premium capacity
+- Access to a Power BI report in that workspace
+
+If you don't have access to a Fabric capacity workspace, you can sign up for a [Microsoft Fabric free trial](https://aka.ms/try-fabric).
 
 ## Set a data alert
 
@@ -58,3 +65,5 @@ For more information, read the [Activator](/fabric/real-time-intelligence/data-a
 ## Related content
 
 - [Fabric Activator](/fabric/real-time-intelligence/data-activator/activator-introduction)
+- [Set data alerts on Power BI service dashboards](end-user-alerts.md) - For traditional dashboard tile alerts
+- [Create Fabric Activator alerts in Power BI reports](/fabric/real-time-intelligence/data-activator/activator-get-data-power-bi) - For designers creating report alerts

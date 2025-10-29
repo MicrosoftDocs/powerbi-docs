@@ -1,5 +1,5 @@
 ---
-title: Overview of bookmarks in Power BI service reports
+title: Overview of Bookmarks in Power BI Service Reports
 description: In the Power BI service, learn how to open, create, and share personal bookmarks and report bookmarks.
 author: julcsc
 ms.author: juliacawthra
@@ -7,15 +7,14 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/15/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 
 # Bookmarks in the Power BI service
 
 [!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
-
-## Introduction to bookmarks
 
 A bookmark captures the state of a report page. It includes the changes you made to filters, slicers, and visuals on that page. After the report page is set the way you want, give it a friendly name. Now you can easily return to that state of the report page. Select a bookmark, and Power BI takes you back to that view.
 
@@ -30,8 +29,8 @@ There are two types of Power BI bookmarks: *personal* and *report*. Report desig
 
 This article explains how to create and use personal bookmarks. It also explains how to interact with report bookmarks that someone else creates and shares with you. Viewing shared reports and report bookmarks requires one or both of the following prerequisites:
 
-- a Power BI Pro or a Premium Per User (PPU) license. See [Which license do I have?](../fundamentals/end-user-license.md).
-- a report that is saved in Premium capacity and shared with you.
+- A Power BI Pro or a Premium Per User (PPU) license. See [Which license do I have?](../fundamentals/end-user-license.md)
+- A report that is saved in Premium capacity and shared with you
 
 If you're designing reports and creating report bookmarks for others to use, see [Create report bookmarks](../create-reports/desktop-bookmarks.md).
 
@@ -70,19 +69,16 @@ If you have edit permissions for a report, you can set and save other elements t
 Configure a report page the way you want it to appear in the bookmark. The following example has filters applied to the default report page:
 
 1. **Date** is changed to include All dates.
-2. **Region** filter is changed to include only **West** .
-3. A specific data point on the donut chart visual is selected. This selection cross-filters and cross-highlights the other visuals on the report canvas.
+1. **Region** filter is changed to include only **West** .
+1. A specific data point on the donut chart visual is selected. This selection cross-filters and cross-highlights the other visuals on the report canvas.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personal.png" alt-text="A screenshot showing a report with filters applied." lightbox="media/end-user-bookmarks/power-bi-personal.png#lightbox":::
 
 #### Create the first bookmark
 
 1. After your report page and visuals are arranged how you want them, select the bookmarks icon :::image type="icon" source="media/end-user-bookmarks/power-bi-bookmark.png"::: and choose **Show more bookmarks** to open the **Bookmarks** pane.
-
 1. From the **Bookmarks** pane, select **Personal bookmarks** > **Add**.
-
 1. The personal bookmark gets a generic name, or you can enter a name. If you want this bookmarked view to be your default view, select the **Make default** check box.
-
 1. Select **Save**. To edit your bookmark, select the ellipses next to the bookmark's name and choose **Update**, **Make default**, **Rename**, or **Delete**.
 
 > [!NOTE]
@@ -95,7 +91,6 @@ Configure a report page the way you want it to appear in the bookmark. The follo
     :::image type="content" source="media/end-user-bookmarks/power-bi-second-bookmark.png" alt-text="A screenshot showing the Bookmarks pane. One of the listed bookmarks is outlined.":::
 
 1. Now that you have two bookmarks, switch between them by selecting the bookmark in the **Bookmarks** pane or in the bookmarks menu.
-
 1. To return to the original published view of the report, select the **Reset** icon, and then select **Reset** on the dialog.
 
     :::image type="content" source="media/end-user-bookmarks/power-bi-revert.png" alt-text="A screenshot showing the revert icon on the action bar.":::
@@ -147,7 +142,6 @@ Here are a few ways you can share your view with others:
     :::image type="content" source="media/end-user-bookmarks/power-bi-share-changes.png" alt-text="A screenshot showing the Share dialog with Include my changes outlined.":::
 
 - **Chat in teams**. Like the previous method, with a personal bookmark active, you can share a report in Microsoft Teams. Select **Chat in Teams** from the top menu. In the **Share to Microsoft Teams** dialog, enter the name of the person, group, or channel that you want to share to. The URL automatically appears in the **Say something about this** box; you can enter additional information and edit the way the report link appears, and then select **Share**. For more information, see [Share a filtered Power BI report](../collaborate-share/service-share-reports.md).
-
 - **Use the comment feature**. With a personal bookmark active, add a comment. When other users select the comment, they see your personal bookmark view. For more information, see [Add comments to a dashboard or reports](end-user-comment.md).
 
 If you make changes to your personal bookmark after you share a report, it has no effect on your recipients' view. For example, if you share a report with a 2021 date filter applied and then change the year to 2022 in your bookmark, your recipient still sees the 2021 filter.
@@ -166,13 +160,9 @@ From the upper-right corner of your report canvas, select **Reset to default**. 
 In this release of **personal bookmarks**, there are a few considerations and limitations to keep in mind.
 
 - The bookmark captures the state of the page at the time the bookmark is created. When someone selects the bookmark, Power BI attempts to show them that bookmark in its original report state. However, there are situations where showing the bookmark isn't possible. For example, if the report owner changes the name of a field that the bookmark uses, Power BI no longer displays visuals, filters, or slicers that use that field. Certain visuals display no data for the renamed field. Filtered or sliced visuals revert to the default view.
-
 - Most Power BI custom visuals should work well with personal bookmarking. If you run into trouble with bookmarking and a Power BI custom visual, contact the creator of that visual, and ask them to add support for bookmarks.
-
 - Generally, your personal bookmarks aren't affected if the report designer updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a personal bookmark, you'll receive an error message the next time you attempt to open that bookmark.
-
 - Report bookmarks and personal bookmarks created in Power BI Desktop or in the Power BI service are recognized in the Power BI mobile apps for iOS and Android tablets and phones. However, you can't create bookmarks in these apps. For information about using bookmarks in the Power BI mobile apps, see [Explore reports in the Power BI mobile apps - bookmarks](./mobile/mobile-reports-in-the-mobile-apps.md#bookmarks).
-
 - Because personal bookmarks capture the exploration state of the current page, personal bookmarks don't capture changes to other pages. For example, if you have sync-slicers in your report and you personalize the sync-slicer to use a different field and capture a personal bookmark, then the personal bookmark only captures the slicer change on the current page.
 
 - You can create up to 20 bookmarks for a single report.

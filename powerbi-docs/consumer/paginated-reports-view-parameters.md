@@ -1,5 +1,5 @@
 ---
-title: "View parameters for paginated reports in the Power BI service"
+title: View Parameters for Paginated Reports in the Power BI Service
 description: In this article, you learn how to interact with parameters for paginated reports in the Power BI service.
 author: julcsc
 ms.author: juliacawthra
@@ -8,7 +8,8 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View parameters for paginated reports
 ms.topic: how-to
-ms.date: 02/16/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # View parameters for paginated reports in the Power BI service
@@ -19,16 +20,12 @@ When you view a report that has parameters, the report viewer toolbar displays e
 
 ## Parameters pane in the Power BI service
 
-![Screenshot showing View paginated report with parameters.](media/paginated-reports-view-parameters/power-bi-paginated-view-parameters.png)
+:::image type="content" source="media/paginated-reports-view-parameters/power-bi-paginated-view-parameters.png" alt-text="Screenshot of paginated report with parameters showing Parameters pane, Organization parameter, Date From and Date To parameters, View Report button, and default values.":::
 
 1. **Parameters pane** Select **Parameters** to show or hide the Parameters pane.
-  
 1. **Organization parameter** The Organization parameter is set to allow you to select only one value.
-
 1. **Date From / Date To parameters** The two date parameters have default values. To change the date, type a date in the text box, choose a date in the calendar, or select **Go to today**.  
- 
 1. **View Report**  After you enter or change parameter values, select **View Report** to run the report. 
-
 1. **Default values** If all parameters have default values, the report runs automatically on first view. The parameters in this report have default values, so you see the report with those values.  
 
 ## Considerations and limitations 

@@ -1,15 +1,15 @@
 ---
-title: Create reports from data in Microsoft Teams
-description: Learn to create, explore, and enhance Power BI reports from a semantic model in your organization in Microsoft Teams. 
+title: Create Reports from Data in Microsoft Teams
+description: Learn to create, explore, and enhance Power BI reports from a semantic model in your organization in Microsoft Teams.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: juliacawthra, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Get started
-
 ---
 
 # Create reports from data in Microsoft Teams
@@ -37,7 +37,6 @@ If you have a table with data, such as an Excel spreadsheet, and want to try vis
 ### Create an automatic report with the Power BI service
 
 1. Open the Power BI service.
-
 1. Select the **New report** button.
 
     :::image type="content" source="media/business-user-teams-create-reports/power-bi-new-report.png" alt-text="Screenshot of the Power BI service open and the New Report button selected." lightbox="media/business-user-teams-create-reports/power-bi-new-report.png":::
@@ -47,7 +46,6 @@ If you have a table with data, such as an Excel spreadsheet, and want to try vis
     :::image type="content" source="media/business-user-teams-create-reports/power-bi-create-paste-manually.png" alt-text="Screenshot of the Power BI service open and the Paste or manually enter data option selected." lightbox="media/business-user-teams-create-reports/power-bi-create-paste-manually.png":::
 
 1. Copy the data or spreadsheet you want to visualize, then select the first cell in the Power Query dialog box and paste the data.
-
 1. Select **Use first row as headers** from the dropdown menu if you want to apply the setting. Then name your table and choose **Auto-create report**.
 
     :::image type="content" source="media/business-user-teams-create-reports/power-bi-paste-auto-create.png" alt-text="Screenshot of the Power Query dialog box and the options to generate an Auto-create report." lightbox="media/business-user-teams-create-reports/power-bi-paste-auto-create.png":::
@@ -63,7 +61,6 @@ If you have a table with data, such as an Excel spreadsheet, and want to try vis
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-auto-created-report-personalize-visual.png" alt-text="Screenshot of a visual and the Personalize this visual icon selected.":::
 
 1. **Save** the report.
-
 1. After you save the report, you can customize the whole report by selecting **Edit**.
 
     :::image type="content" source="media/business-user-teams-create-reports/power-bi-edit-auto-created-report.png" alt-text="Screenshot of the visualizations the Power BI service automatically created with the Edit option selected." lightbox="media/business-user-teams-create-reports/power-bi-edit-auto-created-report.png":::

@@ -1,5 +1,5 @@
 ---
-title: Change the display size and ratio of a report page
+title: Change the Display Size and Ratio of a Report Page
 description: Learn how to change the display settings for a page in a Power BI report by using the View menu or browser settings.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Reports
 ---
 
@@ -68,4 +69,4 @@ The next example shows a visual in Full screen mode.
 ## Related content
 
 - [Compare focus mode and full screen mode](end-user-focus.md)
-- [Take a tour of the report Filters pane](end-user-report-filter.md) 
+- [Take a tour of the report Filters pane](end-user-report-filter.md)
