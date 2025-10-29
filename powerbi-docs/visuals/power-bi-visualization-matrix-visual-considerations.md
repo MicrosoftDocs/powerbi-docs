@@ -22,6 +22,7 @@ Understanding the considerations and limitations allow you to make informed deci
 ## Considerations and limitations
 
 This article provides an updated list of known considerations and limitations for matrix visuals, designed to help you navigate the nuances of matrix visuals in both Power BI Desktop and the Power BI service.
+You can also use the [auto-size width options that are available in the Column Headers settings](power-bi-visualization-matrix-visual-format-settings.md#column-headers-settings).
 
 ### Column headers
 
