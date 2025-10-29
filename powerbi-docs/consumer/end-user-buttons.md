@@ -1,5 +1,5 @@
 ---
-title: Learn how buttons work in the Power BI service
+title: Learn How Buttons Work in the Power BI Service
 description: Learn how to recognize buttons to launch actions including in-report navigation, drill through, and cross-report drill through.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/11/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Reports
 # customerintent: As a Power BI business user, I want to be able to identify a button and understand how to use a button in a report that has been shared with me.
 ---
@@ -34,7 +35,6 @@ A back button can have an arrow icon. When you select it, Power BI takes you to 
     :::image type="content" source="media/end-user-buttons/power-bi-drillthrough.png" alt-text="Screenshot of a report with Word, drillthrough, and Market basket analysis highlighted.":::
 
 1. Power BI opens the *Market basket analysis* report page and uses the selections made on the source page to filter what displays on the destination page. In this example, the **Market basket analysis** report page is filtered for **Word**.
-
 1. Select the back button labeled **Go back** to return to the previous page.
 
     :::image type="content" source="media/end-user-buttons/power-bi-back.png" alt-text="Screenshot of the Market basket analysis report page with the go back button highlighted.":::
