@@ -1,6 +1,6 @@
 ---
-title: "View a paginated report in the Power BI service"
-description: Learn how you can view a paginated report in the Power BI service that has parameters and then export it to  a different format.  
+title: View a Paginated Report in the Power BI Service
+description: Learn how you can view a paginated report in the Power BI service that has parameters and then export it to a different format.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: nirusrin
@@ -8,7 +8,8 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View a paginated report
 ms.topic: how-to
-ms.date: 01/08/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # View a paginated report in the Power BI service
@@ -44,11 +45,11 @@ You can also export paginated reports to many formats:
     :::image type="content" source="media/paginated-reports-view-power-bi-service/paginated-report-page-through.png" alt-text="Screenshot of the Page through feature to view the report highlighted.":::
 
 1. To **Search**, type all or part of the content you're looking for in the report. You're searching for the content across all the pages of the report.
-   
+
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-search.png" alt-text="Screenshot of Search highlighted.":::
 
 1. You can also sort by selecting the **sort** icon on the report. 
-   
+
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-sort.png" alt-text="Screenshot of sort highlighted.":::
 
    > [!NOTE]
