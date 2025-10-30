@@ -1,0 +1,184 @@
+name: Freshness (manual export + runtime ms.date check)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/engagement-latest.xlsx'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  TARGET_BRANCH: main
+  WORKING_BRANCH_PREFIX: chore/freshness
+  DOCSET_ROOT: powerbi-docs
+  REPORT_XLSX: data/engagement-latest.xlsx
+  STALE_FILE_LIST: tools/stale-files.txt
+  BATCH_LIMIT: "50"
+  FRESH_WINDOW_DAYS: "365"
+  PR_LABELS: "freshness,automation,doc-hygiene"
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas openpyxl python-dateutil pyyaml
+
+      - name: Generate stale batch from XLSX + runtime ms.date check
+        run: |
+          python tools/generate-stale-list.py \
+            --input "${{ env.REPORT_XLSX }}" \
+            --output "${{ env.STALE_FILE_LIST }}" \
+            --docroot "${{ env.DOCSET_ROOT }}" \
+            --limit "${{ env.BATCH_LIMIT }}" \
+            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}"
+
+      - name: Show batch
+        run: |
+          echo "Files to process:"
+          cat "${{ env.STALE_FILE_LIST }}" || true
+          echo ""
+          echo "Summary:"
+          head -n 10 "${{ env.STALE_FILE_LIST }}.summary.csv" || true
+          echo ""
+          echo "Skipped:"
+          head -n 10 "${{ env.STALE_FILE_LIST }}.skipped.csv" || true
+
+      - name: Run DocuMentor passes (placeholder)
+        shell: bash
+        run: |
+          if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
+            echo "No files selected; skipping DocuMentor."
+            exit 0
+          fi
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            echo "→ DocuMentor on $f"
+            # Replace with your real CLI commands:
+            # ./documentor fix --file "$f" --rules "learn-markdown,frontmatter"
+            # ./documentor optimize --file "$f" --prompts "seo,geo"
+          done < "${{ env.STALE_FILE_LIST }}"
+
+      # ───────── PR via your fork (robust, no blocked actions) ─────────
+
+      - name: Meta (branch label)
+        id: meta
+        shell: bash
+        run: echo "label=$(date -u +'%Y%m%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Detect changes
+        id: detect
+        shell: bash
+        run: |
+          if git status --porcelain | grep -q .; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit locally
+        if: ${{ steps.detect.outputs.changed == 'true' }}
+        id: commit
+        shell: bash
+        run: |
+          set -e
+          git config user.name "docs-automation"
+          git config user.email "docs-automation@users.noreply.github.com"
+          BRANCH="${WORKING_BRANCH_PREFIX}/${{ steps.meta.outputs.label }}"
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+          git checkout -b "$BRANCH" "origin/${TARGET_BRANCH}"
+          git add -A
+          git commit -m "Freshness automation (runtime ms.date check + DocuMentor placeholders)"
+
+      - name: Push branch to fork (JulCsc/powerbi-docs-pr)
+        if: ${{ steps.detect.outputs.changed == 'true' }}
+        env:
+          FORK_PR_TOKEN: ${{ secrets.FORK_PR_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # --- Config ---
+          FORK_OWNER="JulCsc"
+          FORK_REPO="powerbi-docs-pr"
+          BRANCH="${{ steps.commit.outputs.branch }}"
+          FORK_URL="https://x-access-token:${FORK_PR_TOKEN}@github.com/${FORK_OWNER}/${FORK_REPO}.git"
+
+          # 1) Prevent the checkout token from overriding our PAT auth
+          git config --global http.https://github.com/.extraheader ""
+
+          # 2) Add or update the 'fork' remote idempotently
+          if git remote | grep -q "^fork$"; then
+            git remote set-url fork "${FORK_URL}"
+          else
+            git remote add fork "${FORK_URL}"
+          fi
+
+          # 3) Verify permissions (read) before push
+          if ! git ls-remote --heads fork >/dev/null 2>&1; then
+            echo "ERROR: Cannot access fork via provided token. Check FORK_PR_TOKEN scopes and repo access." >&2
+            exit 128
+          fi
+
+          # 4) Create the branch on fork (force-with-lease handles existing branch safely)
+          git push --force-with-lease fork "${BRANCH}:${BRANCH}"
+
+      - name: Install jq (for JSON body)
+        if: ${{ steps.detect.outputs.changed == 'true' }}
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Open PR from fork → upstream (GitHub REST)
+        if: ${{ steps.detect.outputs.changed == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          UPSTREAM_OWNER="${{ github.repository_owner }}"
+          UPSTREAM_REPO="${{ github.event.repository.name }}"
+          HEAD="JulCsc:${{ steps.commit.outputs.branch }}"
+          BASE="${{ env.TARGET_BRANCH }}"
+          TITLE="Freshness: automated pass (forked PR) – ${{ steps.meta.outputs.label }}"
+
+          read -r -d '' BODY <<'EOF'
+This PR was generated by the freshness workflow.
+
+**What happened**
+- Built a batch from the engagement export/report
+- Re-checked each file’s current **ms.date**; skipped those already fresh
+- Ran DocuMentor passes (if configured)
+
+**Run artifacts**
+- Processed: `tools/stale-files.txt`
+- Summary:   `tools/stale-files.summary.csv`
+- Skipped:   `tools/stale-files.skipped.csv`
+EOF
+
+          # Create PR
+          RESP=$(curl -sS -X POST \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${UPSTREAM_OWNER}/${UPSTREAM_REPO}/pulls" \
+            -d "$(jq -n --arg t "$TITLE" --arg h "$HEAD" --arg b "$BASE" --arg body "$BODY" '{title:$t, head:$h, base:$b, body:$body}')")
+
+          echo "$RESP" | jq -r '.html_url // "PR creation response logged above."' || true
+
+      - name: No-op note
+        if: ${{ steps.detect.outputs.changed != 'true' }}
+        run: echo "No changes detected; skipping PR creation."
