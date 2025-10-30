@@ -44,11 +44,11 @@ For this quick three-step guide, let's use the first option:
 
 1. In the **Insert** ribbon, select **New visual**. When the visual placeholder appears on the report canvas, expand the **Visualizations** pane and select the **Card visual** icon in the **Build visual** menu.
 
-    :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-1.png" alt-text="Screenshot with the Insert ribbon, New visual button, Visualizations pane, Build visual icon, and the Card visual icon, all highlighted." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-1.png":::
+    :::image type="content" source="media/power-bi-visualization-card/build-card-desktop-step-1.png" alt-text="Screenshot with the Insert ribbon, New visual button, Visualizations pane, Build visual icon, and the Card visual icon, all highlighted." lightbox="media/power-bi-visualization-card/build-card-desktop-step-1.png":::
 
 2. To add data to the visual, let’s use the **Data pane** in this example. Adding data can be done by selecting each field in the **Data pane**, or dragging the fields to the field wells on the **Visualizations pane**, or dragging the fields directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **StoreCount**, then expand the **TotalSalesTY** subgroup, and add **Value**. You'll notice that each data field you add is displayed as its own card.
 
-    :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-2.png" alt-text="Screenshot: Data pane, Sales group expanded, StoreCount + TotalSalesTV measures highlighted, selected, and added to Data field in Visualizations pane." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-2.png":::
+    :::image type="content" source="media/power-bi-visualization-card/build-card-desktop-step-2.png" alt-text="Screenshot: Data pane, Sales group expanded, StoreCount + TotalSalesTV measures highlighted, selected, and added to Data field in Visualizations pane." lightbox="media/power-bi-visualization-card/build-card-desktop-step-2.png":::
 
 3. To customize your visual, select the Format visual icon in the Visualizations pane, granting you access to all available settings. This allows you to tailor the chart's appearance and functionality to your specific requirements as shown in the example.
 
@@ -56,15 +56,23 @@ For this quick three-step guide, let's use the first option:
 
 Congratulations! You've successfully created a card visual with Power BI Desktop.
 
-### Additional updates
+### Key features of the Card visual
 
-#### Image
+#### Working with images
 
-The Card visual now includes Image Hero support, allowing you to add a prominent image to the card to visually represent the data or category being displayed. This feature is especially useful for dashboards that benefit from visual storytelling or branding. You can enable and customize the image through the Format pane under Image settings, where options include image placement (for example, overlay or side-by-side), size adjustments, and alignment controls. This enhancement helps make your visuals more engaging and contextually rich.
+The Card visual supports two distinct image formatting options, but each serving a different purpose and located in separate sections of the **Format** pane under the **Visual** tab.
 
-#### Collage layout
+The first image option is located within the **Image card**. Here, you can add a static image to the Card visual ideal for decorative or branding purposes, such as a logo or background visual. This image is not tied to specific data points and is ideal for consistent design elements across multiple cards. You can add an image by uploading from your device, linking to a public URL, or selecting from data. Styling options include image fit, transparency, effects, background, and Alt text.
 
-The Card visual introduces a new **Collage layout** option. This layout arranges multiple cards in a dynamic, freeform style that breaks away from traditional grid-based designs. It’s ideal for dashboards that aim for a more creative or informal presentation. You can activate this layout by navigating to the **Format pane**, selecting **Layout**, and choosing **Collage** under the **Arrangement** dropdown. The collage layout automatically adapts to the content and available space, offering a visually appealing alternative to standard layouts.
+The second image option is located within the **Callout card**, where you can add a more prominent, data-driven image that visually represents the metric or category being displayed. This image can be uploaded from your device, linked via URL, or selected from data, and it supports styling options like image fit, transparency, placement, size, alignment, corner radius, visual effects, and Alt text.
+
+Together, these two image options allow you to create visually rich cards that combine static branding with dynamic storytelling.
+
+#### Dynamic collage layout
+
+The Card visual includes a dynamic **Collage layout** that arranges multiple cards in a freeform style, offering a visually engaging alternative to traditional grid-based designs. This layout is ideal for dashboards that benefit from a more creative or informal presentation, as it automatically adapts to the content and available space.
+
+You can enable it by navigating to the **Format pane**, selecting **Cards**, and choosing **Collage** under the **Layout** dropdown. The layout allows you to highlight one section while the other two share the remaining space, and it allows customization of the display order for the callout area, reference label, and image, ensuring your most important insights are always front and center.
 
 #### Additional styling capabilities
 
