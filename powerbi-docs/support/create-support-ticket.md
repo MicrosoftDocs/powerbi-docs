@@ -47,7 +47,7 @@ The steps you take to create a support ticket vary, depending on your role.
    > Administrators can also navigate to the [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/) with their admin credentials to create a support ticket.
 
    > [!CAUTION]
-   > **For GCC and other national/regional cloud customers:** The standard Fabric support page workflow may redirect you to the commercial Power BI page, which will prevent you from submitting your support ticket. If you are a GCC, GCC High, DoD, or China cloud customer, you must use the dedicated [National Cloud Support](https://www.microsoft.com/power-platform/products/power-bi/clouds#Support) portal to create your support case based on your specific environment.
+   > **For GCC and other national/regional cloud customers:** The standard Fabric support page workflow might redirect you to the commercial Power BI page, which prevents you from submitting your support ticket. If you're a GCC, GCC High, DoD, or China cloud customer, you must use the dedicated [National Cloud Support](https://www.microsoft.com/power-platform/products/power-bi/clouds#Support) portal to create your support case based on your specific environment.
 
 1. In the "Other resources" card, select **Get Microsoft help.**
 
@@ -64,7 +64,7 @@ The steps you take to create a support ticket vary, depending on your role.
 
    :::image type="content" source="media/create-support-ticket/provide-issue-description.png" alt-text="Screenshot of the How can we help screen, showing where to find the issue description field.":::
 
-1. If you don't find the correct solution, answer a few additional questions to see possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
+1. If you don't find the correct solution, answer a few more questions to see possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
 
    :::image type="content" source="media/create-support-ticket/solutions-and-contact-support.png" alt-text="Screenshot of the Solutions tab, showing the Recommended solutions and Recommended documentation lists.":::
 
