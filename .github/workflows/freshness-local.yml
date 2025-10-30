@@ -140,9 +140,18 @@ jobs:
 
       # Flag SME-needed cases
       - name: SME detection
+        shell: bash
+        continue-on-error: true
+
         run: |
           OUTFILE="tools/sme-flags.csv"
           echo "File,Reason" > "$OUTFILE"
+
+          if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
+            echo "No stale file list found or empty; skipping SME detection."
+            exit 0
+          fi
+
           while IFS= read -r FILE; do
             [ -z "$FILE" ] && continue
             [ -f "$FILE" ] || continue
@@ -150,6 +159,7 @@ jobs:
               echo "$FILE,Contains preview/deprecation/feature-flag language" >> "$OUTFILE"
             fi
           done < "${{ env.STALE_FILE_LIST }}"
+
           echo "SME flagging complete. See $OUTFILE"
 
           # Ensure blobs for targeted files are available when using filter: blob:none
