@@ -162,159 +162,159 @@ jobs:
 
           echo "SME flagging complete. See $OUTFILE"
 
-          # Ensure blobs for targeted files are available when using filter: blob:none
-          - name: Materialize blobs for batch (blobless safety)
-            if: ${{ hashFiles(env.STALE_FILE_LIST) != '' }}
-            shell: bash
-            run: |
-              # If Git did a blobless partial clone, make sure we have the file contents
-              # for the paths we’re about to edit/commit.
-              if [ -f "${{ env.STALE_FILE_LIST }}" ]; then
-                while IFS= read -r p; do
-                  [ -z "$p" ] && continue
-                  [ -f "$p" ] || continue
-                  git checkout -- "$p" || true
-                done < "${{ env.STALE_FILE_LIST }}"
-              fi
+      # Ensure blobs for targeted files are available when using filter: blob:none
+      - name: Materialize blobs for batch (blobless safety)
+        if: ${{ hashFiles(env.STALE_FILE_LIST) != '' }}
+        shell: bash
+        run: |
+          # If Git did a blobless partial clone, make sure we have the file contents
+          # for the paths we’re about to edit/commit.
+          if [ -f "${{ env.STALE_FILE_LIST }}" ]; then
+            while IFS= read -r p; do
+              [ -z "$p" ] && continue
+              [ -f "$p" ] || continue
+              git checkout -- "$p" || true
+            done < "${{ env.STALE_FILE_LIST }}"
+          fi
 
-          # Show what actually changed (diagnostic)
-          - name: Git status (pre-commit)
-            shell: bash
-            run: |
-              git status --porcelain
-              echo
-              echo "Current branch:"
-              git rev-parse --abbrev-ref HEAD || true
-              echo
-              echo "Diff summary:"
-              git diff --name-status || true
+      # Show what actually changed (diagnostic)
+      - name: Git status (pre-commit)
+        shell: bash
+        run: |
+          git status --porcelain
+          echo
+          echo "Current branch:"
+          git rev-parse --abbrev-ref HEAD || true
+          echo
+          echo "Diff summary:"
+          git diff --name-status || true
 
-          # Detect changes (avoid exit-1 on empty commit)
-          - name: Detect changes
-            id: detect
-            shell: bash
-            run: |
-              if git status --porcelain | grep -q .; then
-                echo "changed=true" >> $GITHUB_OUTPUT
-              else
-                echo "changed=false" >> $GITHUB_OUTPUT
-              fi
+      # Detect changes (avoid exit-1 on empty commit)
+      - name: Detect changes
+        id: detect
+        shell: bash
+        run: |
+          if git status --porcelain | grep -q .; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
 
-          # Commit locally on a unique branch (avoid branch name collisions)
-          - name: Commit locally (unique branch)
-            if: ${{ steps.detect.outputs.changed == 'true' }}
-            id: commit
-            shell: bash
-            run: |
-              set -e
-              git config user.name  "docs-automation"
-              git config user.email "docs-automation@users.noreply.github.com"
+      # Commit locally on a unique branch (avoid branch name collisions)
+      - name: Commit locally (unique branch)
+        if: ${{ steps.detect.outputs.changed == 'true' }}
+        id: commit
+        shell: bash
+        run: |
+          set -e
+          git config user.name  "docs-automation"
+          git config user.email "docs-automation@users.noreply.github.com"
 
-              DATE="$(date -u +'%Y%m%d')"
-              RUNID="${GITHUB_RUN_ID}"
-              BASE="${{ env.TARGET_BRANCH }}"
-              BRANCH="${{ env.WORKING_BRANCH_PREFIX }}/${DATE}-run${RUNID}"
-              echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+          DATE="$(date -u +'%Y%m%d')"
+          RUNID="${GITHUB_RUN_ID}"
+          BASE="${{ env.TARGET_BRANCH }}"
+          BRANCH="${{ env.WORKING_BRANCH_PREFIX }}/${DATE}-run${RUNID}"
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
-              # Create the branch off the configured base
-              git checkout -b "$BRANCH" "origin/${BASE}"
+          # Create the branch off the configured base
+          git checkout -b "$BRANCH" "origin/${BASE}"
 
-              # Stage & commit
-              git add -A
-              git commit -m "Freshness: deterministic hygiene + flags (run ${RUNID})"
+          # Stage & commit
+          git add -A
+          git commit -m "Freshness: deterministic hygiene + flags (run ${RUNID})"
 
-          # Decide push target: fork vs upstream
-          # If this workflow runs IN YOUR FORK, 'origin' already points at JulCsc/powerbi-docs-pr.
-          # If it runs in upstream, set up a fork remote and push there instead.
-          - name: Determine push target
-            id: where
-            shell: bash
-            run: |
-              REPO_FULL="${GITHUB_REPOSITORY}"   # e.g., owner/repo
-              OWNER="${REPO_FULL%%/*}"
-              if [ "$OWNER" = "JulCsc" ]; then
-                echo "remote_name=origin"   >> $GITHUB_OUTPUT
-                echo "remote_url="          >> $GITHUB_OUTPUT
-                echo "fork_owner=JulCsc"    >> $GITHUB_OUTPUT
-                echo "repo_context=fork"    >> $GITHUB_OUTPUT
-              else
-                echo "remote_name=fork"     >> $GITHUB_OUTPUT
-                echo "remote_url=https://x-access-token:${{ secrets.FORK_PR_TOKEN }}@github.com/JulCsc/powerbi-docs-pr.git" >> $GITHUB_OUTPUT
-                echo "fork_owner=JulCsc"    >> $GITHUB_OUTPUT
-                echo "repo_context=upstream" >> $GITHUB_OUTPUT
-              fi
+      # Decide push target: fork vs upstream
+      # If this workflow runs IN YOUR FORK, 'origin' already points at JulCsc/powerbi-docs-pr.
+      # If it runs in upstream, set up a fork remote and push there instead.
+      - name: Determine push target
+        id: where
+        shell: bash
+        run: |
+          REPO_FULL="${GITHUB_REPOSITORY}"   # e.g., owner/repo
+          OWNER="${REPO_FULL%%/*}"
+          if [ "$OWNER" = "JulCsc" ]; then
+            echo "remote_name=origin"   >> $GITHUB_OUTPUT
+            echo "remote_url="          >> $GITHUB_OUTPUT
+            echo "fork_owner=JulCsc"    >> $GITHUB_OUTPUT
+            echo "repo_context=fork"    >> $GITHUB_OUTPUT
+          else
+            echo "remote_name=fork"     >> $GITHUB_OUTPUT
+            echo "remote_url=https://x-access-token:${{ secrets.FORK_PR_TOKEN }}@github.com/JulCsc/powerbi-docs-pr.git" >> $GITHUB_OUTPUT
+            echo "fork_owner=JulCsc"    >> $GITHUB_OUTPUT
+            echo "repo_context=upstream" >> $GITHUB_OUTPUT
+          fi
 
-          # Push branch (handles both contexts; avoids force unless we must rename)
-          - name: Push branch
-            if: ${{ steps.detect.outputs.changed == 'true' }}
-            id: push
-            shell: bash
-            env:
-              REMOTE_NAME: ${{ steps.where.outputs.remote_name }}
-              REMOTE_URL:  ${{ steps.where.outputs.remote_url }}
-            run: |
-              set -euo pipefail
-              BRANCH="${{ steps.commit.outputs.branch }}"
+      # Push branch (handles both contexts; avoids force unless we must rename)
+      - name: Push branch
+        if: ${{ steps.detect.outputs.changed == 'true' }}
+        id: push
+        shell: bash
+        env:
+          REMOTE_NAME: ${{ steps.where.outputs.remote_name }}
+          REMOTE_URL:  ${{ steps.where.outputs.remote_url }}
+        run: |
+          set -euo pipefail
+          BRANCH="${{ steps.commit.outputs.branch }}"
 
-              # Clear checkout’s extraheader so PAT/token is honored when needed
-              git config --global http.https://github.com/.extraheader ""
+          # Clear checkout’s extraheader so PAT/token is honored when needed
+          git config --global http.https://github.com/.extraheader ""
 
-              # Ensure we have the right remote configured
-              if [ -n "${REMOTE_URL}" ]; then
-                if git remote | grep -q "^${REMOTE_NAME}$"; then
-                  git remote set-url "${REMOTE_NAME}" "${REMOTE_URL}"
-                else
-                  git remote add "${REMOTE_NAME}" "${REMOTE_URL}"
-                fi
-              fi
+          # Ensure we have the right remote configured
+          if [ -n "${REMOTE_URL}" ]; then
+            if git remote | grep -q "^${REMOTE_NAME}$"; then
+              git remote set-url "${REMOTE_NAME}" "${REMOTE_URL}"
+            else
+              git remote add "${REMOTE_NAME}" "${REMOTE_URL}"
+            fi
+          fi
 
-              # Try push (no force). If it collides, suffix with short SHA and re-push.
-              set +e
-              git push -u "${REMOTE_NAME}" "${BRANCH}:${BRANCH}"
-              RC=$?
-              set -e
-              if [ $RC -ne 0 ]; then
-                ALT="${BRANCH}-${GITHUB_SHA::7}"
-                echo "Remote branch exists or not fast-forward; pushing as ${ALT}"
-                git push -u "${REMOTE_NAME}" "${BRANCH}:${ALT}"
-                echo "pushed_branch=${ALT}" >> $GITHUB_OUTPUT
-              else
-                echo "pushed_branch=${BRANCH}" >> $GITHUB_OUTPUT
-              fi
+          # Try push (no force). If it collides, suffix with short SHA and re-push.
+          set +e
+          git push -u "${REMOTE_NAME}" "${BRANCH}:${BRANCH}"
+          RC=$?
+          set -e
+          if [ $RC -ne 0 ]; then
+            ALT="${BRANCH}-${GITHUB_SHA::7}"
+            echo "Remote branch exists or not fast-forward; pushing as ${ALT}"
+            git push -u "${REMOTE_NAME}" "${BRANCH}:${ALT}"
+            echo "pushed_branch=${ALT}" >> $GITHUB_OUTPUT
+          else
+            echo "pushed_branch=${BRANCH}" >> $GITHUB_OUTPUT
+          fi
 
-          # Install jq for JSON body
-          - name: Install jq
-            if: ${{ steps.detect.outputs.changed == 'true' }}
-            run: sudo apt-get update && sudo apt-get install -y jq
+      # Install jq for JSON body
+      - name: Install jq
+        if: ${{ steps.detect.outputs.changed == 'true' }}
+        run: sudo apt-get update && sudo apt-get install -y jq
 
-          # Open PR (fork → upstream if running upstream, or origin → origin if running in fork)
-          - name: Open PR
-            if: ${{ steps.detect.outputs.changed == 'true' }}
-            env:
-              GH_TOKEN: ${{ github.token }}
-            shell: bash
-            run: |
-              set -euo pipefail
-              REPO_FULL="${GITHUB_REPOSITORY}"
-              OWNER="${REPO_FULL%%/*}"
-              REPO="${REPO_FULL##*/}"
-              BASE="${{ env.TARGET_BRANCH }}"
-              BR="${{ steps.push.outputs.pushed_branch }}"
-              TITLE="Freshness: deterministic hygiene + flags ($(date -u +'%Y%m%d'))"
+      # Open PR (fork → upstream if running upstream, or origin → origin if running in fork)
+      - name: Open PR
+        if: ${{ steps.detect.outputs.changed == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          REPO_FULL="${GITHUB_REPOSITORY}"
+          OWNER="${REPO_FULL%%/*}"
+          REPO="${REPO_FULL##*/}"
+          BASE="${{ env.TARGET_BRANCH }}"
+          BR="${{ steps.push.outputs.pushed_branch }}"
+          TITLE="Freshness: deterministic hygiene + flags ($(date -u +'%Y%m%d'))"
 
-              if [ "$OWNER" = "JulCsc" ]; then
-                # PR within your fork (main ← your branch)
-                HEAD="JulCsc:${BR}"
-                UPSTREAM_OWNER="$OWNER"
-                UPSTREAM_REPO="$REPO"
-              else
-                # Cross‑repo PR from fork back to upstream
-                HEAD="JulCsc:${BR}"
-                UPSTREAM_OWNER="${{ github.repository_owner }}"
-                UPSTREAM_REPO="${{ github.event.repository.name }}"
-              fi
+          if [ "$OWNER" = "JulCsc" ]; then
+            # PR within your fork (main ← your branch)
+            HEAD="JulCsc:${BR}"
+            UPSTREAM_OWNER="$OWNER"
+            UPSTREAM_REPO="$REPO"
+          else
+            # Cross‑repo PR from fork back to upstream
+            HEAD="JulCsc:${BR}"
+            UPSTREAM_OWNER="${{ github.repository_owner }}"
+            UPSTREAM_REPO="${{ github.event.repository.name }}"
+          fi
 
-              BODY=$'This PR was generated by the deterministic freshness workflow.\n\n'\
+          BODY=$'This PR was generated by the deterministic freshness workflow.\n\n'\
           $'**What happened**\n'\
           $'- Updated `ms.date` for stale docs\n'\
           $'- Ran markdownlint + Prettier (deterministic)\n'\
