@@ -107,9 +107,9 @@ When you're satisfied with the report, you save the report just like any other r
 There are limitations related to creating pages in specific semantic model scenarios.
 
 - **Q&A feature switch**: The Q&A feature switch for your model must be turned on to use Copilot for report creation and editing.
-- **Real-Time Streaming Models**: Report pages can't be created by Copilot for semantic models utilizing real-time streaming.
-- **Live Connection to Analysis Services**: Semantic models connected live to Analysis Services aren't supported by page creation.
-- **Semantic models with implicit measures disabled**: In scenarios where implicit measures are disabled in your semantic model, Copilot cannot create report pages.
+- **Real-Time Streaming Models**: Copilot can't create report pages for semantic models utilizing real-time streaming.
+- **Live Connection to Analysis Services**: Page creation doesn't support semantic models connected live to Analysis Services.
+- **Semantic models with implicit measures disabled**: In scenarios where implicit measures are disabled in your semantic model, Copilot can't create report pages.
 - **Custom visuals**: Custom visuals aren't currently supported.
 - **Styling changes**: Styling or formatting changes aren't supported through Copilot.
 - **Complex visuals**: Changing complex visuals may result in some loss of detail or formatting.

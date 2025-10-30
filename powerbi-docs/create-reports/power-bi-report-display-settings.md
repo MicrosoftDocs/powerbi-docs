@@ -1,5 +1,5 @@
 ---
-title: Page display settings in a Power BI report
+title: Page Display Settings in a Power BI Report
 description: Page display settings and page view settings for a report
 author: julcsc
 ms.author: juliacawthra
@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/08/2022
+ms.date: 10/28/2025
 ms.custom: video-removed
 LocalizationGroup: Reports
 ---
@@ -18,7 +18,7 @@ LocalizationGroup: Reports
 
 We understand it's critical to keep your report layout precise. Sometimes, it can be challenging, because you and your colleagues may view those reports on screens with different aspect ratios and sizes.
 
-The default display view is **Fit to page** and the default display size is **16:9**. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: ***Page view*** settings and ***Page size*** settings.
+The default display view is **Fit to page**, and the default display size is **16:9**. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: ***Page view*** settings and ***Page size*** settings.
 
 ## Where to find page view settings
 
@@ -32,7 +32,7 @@ In Report view, select the **View** tab to open Page view settings as well as ph
 
 # [Power BI service](#tab/powerbi-service)
 
-In the Power BI service (app.powerbi.com), open a report, select **Edit**, then select **View** from the upper left menu bar.
+In the Power BI service (app.powerbi.com), open a report, select **Edit**, and then select **View** from the upper left menu bar.
 
 ![Screenshot showing service page view settings.](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
@@ -42,14 +42,14 @@ In the Power BI service (app.powerbi.com), open a report, select **Edit**, then 
 
 The first set of Page view settings controls the display of your report page relative to the browser window. Choose between:
 
-* **Fit to page** (default): Contents are scaled to best fit the page
-* **Fit to width**: Contents are scaled to fit within the width of the page
-* **Actual size**: Contents are displayed at full size
+* **Fit to page** (default): Contents are scaled to best fit the page.
+* **Fit to width**: Contents are scaled to fit within the width of the page.
+* **Actual size**: Contents are displayed at full size.
 
 The second set of Page view settings controls the positioning of objects on the report canvas. Choose between:
 
 * **Show gridlines**: Turn on gridlines to help you position objects on the report canvas.
-* **Snap to grid**: Use with **Show gridlines** to precisely position and align objects on the report canvas. 
+* **Snap to grid**: Use with **Show gridlines** to precisely position and align objects on the report canvas.
 * **Lock objects**: Lock all objects on the canvas so that they can't be moved or resized.
 * **Selection pane**: The **Selection** pane lists all objects on the canvas. You can decide which to show and which to hide.
 
@@ -59,7 +59,7 @@ The second set of Page view settings controls the positioning of objects on the 
 
 ![Screenshot showing change canvas settings.](media/power-bi-report-display-settings/power-bi-canvas-settings.png)
 
-**Canvas** settings, formerly called *page size* settings are in the **Visualizations** pane. They control the display ratio and actual size (in pixels) of the report canvas:
+**Canvas** settings, formerly called *page size* settings, are in the **Visualizations** pane. They control the display ratio and actual size (in pixels) of the report canvas:
 
 * 4:3 ratio
 * 16:9 ratio (default)
