@@ -25,17 +25,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout optimized for speed
-      - name: Checkout (sparse, shallow)
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          sparse-checkout: |
-            powerbi-docs
-            tools
-            data
-          sparse-checkout-cone: true
-          filter: blob:none
+    - name: Checkout (sparse, shallow, blobless)
+      uses: actions/checkout@v4
+      with:
+        # Pull only the latest commit
+        fetch-depth: 1
+    
+        # Limit the working tree to what this workflow needs
+        sparse-checkout: |
+          powerbi-docs
+          tools
+          data
+        sparse-checkout-cone-mode: true
+
+    # Defer blob download until needed (speeds up big repos)
+    filter: blob:none
+
+    # Keep these off unless you explicitly need them
+    submodules: false
+    lfs: false
 
       - name: Setup Python
         uses: actions/setup-python@v5
