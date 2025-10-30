@@ -78,7 +78,7 @@ If you select **Market Basket Analysis** in the tooltip, you drill through to th
 
 ## Updated styling
 
-Once you upgrade to the new tooltips, you might notice an updated styling that's based on the report’s [theme colors](desktop-report-themes.md#set-structural-colors):
+Once you upgrade to the new tooltips, you might notice an updated styling that's based on the report's [theme colors](desktop-report-themes.md#set-structural-colors):
 
 - The background of the tooltips default to the **Background elements**.
 - The text and icon color of the tooltips default to the **First-level elements**.
@@ -88,11 +88,11 @@ For example, this tooltip has the **Default** theme style:
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Screenshot of a modern visual tooltip with the default theme.":::
 
-Here’s an example with the **Innovate** theme:
+Here's an example with the **Innovate** theme:
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-innovate.png" alt-text="Screenshot of a modern visual tooltip with the Innovate theme.":::
 
-Here’s an example with the **Frontier** theme:
+Here's an example with the **Frontier** theme:
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-frontier.png" alt-text="Screenshot of a modern visual tooltip with the Frontier theme.":::
 

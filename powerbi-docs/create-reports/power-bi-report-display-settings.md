@@ -43,18 +43,6 @@ In the Power BI service (app.powerbi.com), open a report, select **Edit**, and t
 
 The first set of Page view settings controls the display of your report page relative to the browser window. Choose between:
 
-<<<<<<< HEAD
-* **Fit to page** (default): Contents are scaled to best fit the page.
-* **Fit to width**: Contents are scaled to fit within the width of the page.
-* **Actual size**: Contents are displayed at full size.
-
-The second set of Page view settings controls the positioning of objects on the report canvas. Choose between:
-
-* **Show gridlines**: Turn on gridlines to help you position objects on the report canvas.
-* **Snap to grid**: Use with **Show gridlines** to precisely position and align objects on the report canvas.
-* **Lock objects**: Lock all objects on the canvas so that they can't be moved or resized.
-* **Selection pane**: The **Selection** pane lists all objects on the canvas. You can decide which to show and which to hide.
-=======
 - **Fit to page** (default): Contents are scaled to best fit the page
 - **Fit to width**: Contents are scaled to fit within the width of the page
 - **Actual size**: Contents are displayed at full size
@@ -65,9 +53,8 @@ The second set of Page view settings controls the positioning of objects on the 
 - **Snap to grid**: Use with **Show gridlines** to precisely position and align objects on the report canvas.
 - **Lock objects**: Lock all objects on the canvas so that they can't be moved or resized.
 - **Selection pane**: The **Selection** pane lists all objects on the canvas. You can decide which to show and which to hide.
->>>>>>> 7ebedc6ce0767b4abfd27bd124c37c8ad764bde9
 
-    :::image type="content" source="media/power-bi-report-display-settings/power-bi-selection-pane.png" alt-text="Screenshot of the Selection pane.":::
+:::image type="content" source="media/power-bi-report-display-settings/power-bi-selection-pane.png" alt-text="Screenshot of the Selection pane.":::
 
 ## Canvas settings
 
