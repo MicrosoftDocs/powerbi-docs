@@ -1,0 +1,93 @@
+name: Freshness (manual export + runtime ms.date check)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/engagement-latest.xlsx'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  TARGET_BRANCH: main
+  WORKING_BRANCH_PREFIX: chore/freshness
+  DOCSET_ROOT: powerbi-docs
+  REPORT_XLSX: data/engagement-latest.xlsx
+  STALE_FILE_LIST: tools/stale-files.txt
+  BATCH_LIMIT: "50"
+  FRESH_WINDOW_DAYS: "365"
+  PR_LABELS: "freshness,automation,doc-hygiene"
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas openpyxl python-dateutil pyyaml
+
+      - name: Generate stale batch from XLSX + runtime ms.date check
+        run: |
+          python tools/generate-stale-list.py \
+            --input "${{ env.REPORT_XLSX }}" \
+            --output "${{ env.STALE_FILE_LIST }}" \
+            --docroot "${{ env.DOCSET_ROOT }}" \
+            --limit "${{ env.BATCH_LIMIT }}" \
+            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}"
+
+      - name: Show batch
+        run: |
+          echo "Files to process:"
+          cat "${{ env.STALE_FILE_LIST }}" || true
+          echo ""
+          echo "Summary:"
+          head -n 10 "${{ env.STALE_FILE_LIST }}.summary.csv" || true
+          echo ""
+          echo "Skipped:"
+          head -n 10 "${{ env.STALE_FILE_LIST }}.skipped.csv" || true
+
+      - name: Run DocuMentor passes (placeholder)
+        run: |
+          if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
+            echo "No files selected; skipping DocuMentor."
+            exit 0
+          fi
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            echo "→ DocuMentor on $f"
+            # Replace with your real CLI commands:
+            # ./documentor fix --file "$f" --rules "learn-markdown,frontmatter"
+            # ./documentor optimize --file "$f" --prompts "seo,geo"
+          done < "${{ env.STALE_FILE_LIST }}"
+
+      - name: Commit changes and open PR
+        run: |
+          git config user.name "docs-automation"
+          git config user.email "docs-automation@users.noreply.github.com"
+          BRANCH="${WORKING_BRANCH_PREFIX}/$(date -u +'%Y%m%d')"
+          git checkout -b "$BRANCH" "origin/${TARGET_BRANCH}"
+          if ! git status --porcelain | grep -q .; then
+            echo "No changes; skipping PR."
+            exit 0
+          fi
+          git add -A
+          git commit -m "Freshness: manual export + runtime ms.date check"
+          git push --set-upstream origin "$BRANCH"
+          gh api repos/{owner}/{repo}/pulls -X POST \
+            -f title="Freshness: automated pass (manual export)" \
+            -f head="$BRANCH" -f base="${TARGET_BRANCH}" \
+            -f body="$(printf "Built batch from manual export.\nSkipped docs already fresh.\nArtifacts:\n- tools/stale-files.summary.csv\n- tools/stale-files.skipped.csv")"
