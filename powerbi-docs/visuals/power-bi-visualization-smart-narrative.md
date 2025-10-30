@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 10/24/2025
 ms.custom: video-01UrT-z37sw, sample-2020SU09-Blog-Demo
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
