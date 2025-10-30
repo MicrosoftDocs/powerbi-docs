@@ -1,5 +1,5 @@
-name: Freshness (manual export + runtime ms.date check)
-# This workflow processes an engagement export/report XLSX file to identify stale docs,
+name: Freshness (deterministic hygiene + image/SME flags)
+
 on:
   workflow_dispatch:
   push:
@@ -25,10 +25,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      # Checkout optimized for speed
+      - name: Checkout (sparse, shallow)
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
+          sparse-checkout: |
+            powerbi-docs
+            tools
+            data
+          sparse-checkout-cone: true
+          filter: blob:none
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -40,7 +47,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl python-dateutil pyyaml
 
-      - name: Generate stale batch from XLSX + runtime ms.date check
+      # Generate stale batch from XLSX + runtime ms.date check
+      - name: Generate stale batch
         run: |
           python tools/generate-stale-list.py \
             --input "${{ env.REPORT_XLSX }}" \
@@ -60,131 +68,105 @@ jobs:
           echo "Skipped:"
           head -n 10 "${{ env.STALE_FILE_LIST }}.skipped.csv" || true
 
-      - name: Run DocuMentor passes (placeholder)
-        shell: bash
+      # Hygiene: ms.date refresh
+      - name: Update ms.date
         run: |
-          if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
-            echo "No files selected; skipping DocuMentor."
-            exit 0
-          fi
-          while IFS= read -r f; do
-            [ -z "$f" ] && continue
-            echo "→ DocuMentor on $f"
-            # Replace with your real CLI commands:
-            # ./documentor fix --file "$f" --rules "learn-markdown,frontmatter"
-            # ./documentor optimize --file "$f" --prompts "seo,geo"
+          TODAY=$(date +%Y-%m-%d)
+          while IFS= read -r FILE; do
+            [ -z "$FILE" ] && continue
+            [ -f "$FILE" ] || continue
+            if grep -q '^ms\.date:' "$FILE"; then
+              sed -i "s/^ms\.date:.*/ms.date: $TODAY/" "$FILE"
+            else
+              awk -v today="$TODAY" '
+                BEGIN{infront=0}
+                NR==1 && /^---\s*$/ {print; print "ms.date: "today; infront=1; next}
+                {print}
+              ' "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
+            fi
           done < "${{ env.STALE_FILE_LIST }}"
 
-      # ───────── meta: unique branch label ─────────
-      - name: Meta (unique labels)
-        id: meta
-        shell: bash
+      # Install deterministic tools
+      - name: Install lint/format tools
         run: |
-          echo "date=$(date -u +'%Y%m%d')" >> "$GITHUB_OUTPUT"
-          echo "run=${GITHUB_RUN_ID}"       >> "$GITHUB_OUTPUT"
-          echo "sha=${GITHUB_SHA::7}"       >> "$GITHUB_OUTPUT"
+          npm install -g markdownlint-cli@0.40.0 prettier@3.3.3
 
-      # detect whether we actually changed files
-      - name: Detect changes
-        id: detect
-        shell: bash
+      # Run markdownlint
+      - name: Markdownlint
         run: |
-          if git status --porcelain | grep -q .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
+          xargs -a "${{ env.STALE_FILE_LIST }}" -r -d '\n' markdownlint || true
 
-      # commit locally (base new branch on upstream target)
-      - name: Commit locally
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        id: commit
-        shell: bash
+      # Prettier format
+      - name: Prettier format
         run: |
-          set -e
-          git config user.name  "docs-automation"
+          xargs -a "${{ env.STALE_FILE_LIST }}" -r -d '\n' prettier --write
+
+      # Flag outdated images (heuristic)
+      - name: Check for outdated images
+        run: |
+          OUTFILE="tools/outdated-images.csv"
+          echo "File,ImagePath,Reason" > "$OUTFILE"
+          while IFS= read -r FILE; do
+            [ -z "$FILE" ] && continue
+            [ -f "$FILE" ] || continue
+            # Heuristic: look for img tags or markdown images
+            grep -Eo '!\[[^]]*\]\([^)]*\)' "$FILE" | while read -r IMG; do
+              ALT=$(echo "$IMG" | sed -E 's/^!\[([^]]*)\].*/\1/')
+              SRC=$(echo "$IMG" | sed -E 's/.*\(([^)]*)\).*/\1/')
+              # Flag if alt text mentions old UI keywords
+              if echo "$ALT" | grep -qiE 'classic|old ribbon|legacy'; then
+                echo "$FILE,$SRC,Alt text suggests outdated UI" >> "$OUTFILE"
+              fi
+              # Flag if filename hints old UI
+              if echo "$SRC" | grep -qiE 'classic|old|legacy'; then
+                echo "$FILE,$SRC,Image filename suggests outdated UI" >> "$OUTFILE"
+              fi
+            done
+          done < "${{ env.STALE_FILE_LIST }}"
+          echo "Outdated image check complete. See $OUTFILE"
+
+      # Flag SME-needed cases
+      - name: SME detection
+        run: |
+          OUTFILE="tools/sme-flags.csv"
+          echo "File,Reason" > "$OUTFILE"
+          while IFS= read -r FILE; do
+            [ -z "$FILE" ] && continue
+            [ -f "$FILE" ] || continue
+            if grep -qiE 'public preview|private preview|deprecated|retired|feature flag|breaking change' "$FILE"; then
+              echo "$FILE,Contains preview/deprecation/feature-flag language" >> "$OUTFILE"
+            fi
+          done < "${{ env.STALE_FILE_LIST }}"
+          echo "SME flagging complete. See $OUTFILE"
+
+      # Commit changes and open PR to fork
+      - name: Commit and push
+        run: |
+          git config user.name "docs-automation"
           git config user.email "docs-automation@users.noreply.github.com"
-          BRANCH="${WORKING_BRANCH_PREFIX}/${{ steps.meta.outputs.date }}-run${{ steps.meta.outputs.run }}"
-          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+          BRANCH="${WORKING_BRANCH_PREFIX}/$(date -u +'%Y%m%d')"
           git checkout -b "$BRANCH" "origin/${TARGET_BRANCH}"
           git add -A
-          git commit -m "Freshness automation (runtime ms.date check + DocuMentor placeholders)"
+          git commit -m "Freshness deterministic hygiene + flags"
+          git push --set-upstream origin "$BRANCH"
 
-      # push to your fork (fast-forward only; auto-rename if collision)
-      - name: Push branch to fork (JulCsc/powerbi-docs-pr)
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        id: pushfork
-        env:
-          FORK_PR_TOKEN: ${{ secrets.FORK_PR_TOKEN }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          FORK_OWNER="JulCsc"
-          FORK_REPO="powerbi-docs-pr"
-          BRANCH="${{ steps.commit.outputs.branch }}"
-          FORK_URL="https://x-access-token:${FORK_PR_TOKEN}@github.com/${FORK_OWNER}/${FORK_REPO}.git"
+      - name: Open PR
+        uses: dotnet/actions-create-pull-request@v4
+        with:
+          token: ${{ github.token }}
+          base: ${{ env.TARGET_BRANCH }}
+          head: ${{ env.WORKING_BRANCH_PREFIX }}/$(date -u +'%Y%m%d')
+          title: "Freshness: deterministic hygiene + flags"
+          labels: ${{ env.PR_LABELS }}
+          body: |
+            **What happened**
+            - Updated ms.date for stale docs
+            - Ran markdownlint + Prettier
+            - Flagged outdated images (see tools/outdated-images.csv)
+            - Flagged SME-needed cases (see tools/sme-flags.csv)
 
-          # Remove checkout's auth header so PAT takes effect
-          git config --global http.https://github.com/.extraheader ""
-
-          # Add or update 'fork' remote
-          if git remote | grep -q "^fork$"; then
-            git remote set-url fork "${FORK_URL}"
-          else
-            git remote add fork "${FORK_URL}"
-          fi
-
-          # Sanity: verify token can read the fork
-          git ls-remote --heads fork >/dev/null
-
-          # Try to create the branch in fork (no force)
-          set +e
-          git push -u fork "${BRANCH}:${BRANCH}"
-          RC=$?
-          set -e
-
-          if [ $RC -ne 0 ]; then
-            echo "Initial push failed (likely existing branch). Using unique suffix…"
-            ALT="${BRANCH}-${{ steps.meta.outputs.sha }}"
-            git push -u fork "${BRANCH}:${ALT}"
-            echo "branch=${ALT}" >> $GITHUB_OUTPUT
-          else
-            echo "branch=${BRANCH}" >> $GITHUB_OUTPUT
-          fi
-
-      # install jq for JSON body
-      - name: Install jq (for JSON body)
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        run: sudo apt-get update && sudo apt-get install -y jq
-
-      # open PR from fork → upstream (using GitHub REST; no third-party actions)
-      - name: Open PR from fork → upstream (GitHub REST)
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          UPSTREAM_OWNER="${{ github.repository_owner }}"
-          UPSTREAM_REPO="${{ github.event.repository.name }}"
-          HEAD="JulCsc:${{ steps.pushfork.outputs.branch }}"
-          BASE="${{ env.TARGET_BRANCH }}"
-          TITLE="Freshness: automated pass (forked PR) – ${{ steps.meta.outputs.date }}"
-
-          BODY=$'This PR was generated by the freshness workflow.\n\n'\
-          $'**What happened**\n'\
-          $'- Built a batch from the engagement export/report\n'\
-          $'- Re-checked each file’s current ms.date; skipped those already fresh\n'\
-          $'- Ran DocuMentor passes (if configured)\n\n'\
-          $'**Run artifacts**\n'\
-          $'- Processed: `tools/stale-files.txt`\n'\
-          $'- Summary:   `tools/stale-files.summary.csv`\n'\
-          $'- Skipped:   `tools/stale-files.skipped.csv`\n'
-
-              RESP=$(curl -sS -X POST \
-                -H "Authorization: Bearer ${GH_TOKEN}" \
-                -H "Accept: application/vnd.github+json" \
-                "https://api.github.com/repos/${UPSTREAM_OWNER}/${UPSTREAM_REPO}/pulls" \
-                -d "$(jq -n --arg t "$TITLE" --arg h "$HEAD" --arg b "$BASE" --arg body "$BODY" '{title:$t, head:$h, base:$b, body:$body}')")
-
-              echo "$RESP" | jq -r '.html_url // .message'
+            **Artifacts**
+            - tools/stale-files.summary.csv
+            - tools/stale-files.skipped.csv
+            - tools/outdated-images.csv
+            - tools/sme-flags.csv
