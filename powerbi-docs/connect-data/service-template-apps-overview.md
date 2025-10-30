@@ -106,7 +106,7 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 
 | Feature | Known Limitation |
 |---------|---------|
-| Contents: Semantic models | Exactly one semantic model should be present. Only semantic models built into Power BI Desktop (*.pbix* files) are allowed. Not supported: Semantic models from other template apps, cross-workspace semantic models, paginated reports (*.rdl* files), and Excel workbooks. |
+| Contents: Semantic models | Exactly one semantic model should be present. Only semantic models built into Power BI Desktop (*.pbix* files) are allowed. Not supported: Semantic models from other template apps, cross-workspace semantic models, semantic models with direct lake connections, paginated reports (*.rdl* files), and Excel workbooks. |
 |Contents:  Reports   | A single template app can't include more than 20 reports. |
 |Contents: Dashboards | Real-time tiles aren't allowed. In other words, no support for push or streaming datasets. |
 |Contents: Dataflows | Not supported: Dataflows. |
