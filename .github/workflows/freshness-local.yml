@@ -100,10 +100,19 @@ jobs:
         run: |
           xargs -a "${{ env.STALE_FILE_LIST }}" -r -d '\n' markdownlint || true
 
-      # Prettier format
       - name: Prettier format
         run: |
-          xargs -a "${{ env.STALE_FILE_LIST }}" -r -d '\n' prettier --write
+          if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
+            echo "No files to format; skipping Prettier."
+            exit 0
+          fi
+          # Filter only existing .md files
+          FILES=$(grep -E '\.md$' "${{ env.STALE_FILE_LIST }}" | xargs -r ls 2>/dev/null || true)
+          if [ -z "$FILES" ]; then
+            echo "No matching Markdown files found; skipping Prettier."
+            exit 0
+          fi
+          echo "$FILES" | xargs prettier --write
 
       # Flag outdated images (heuristic)
       - name: Check for outdated images
