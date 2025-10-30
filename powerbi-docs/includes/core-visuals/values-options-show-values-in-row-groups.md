@@ -11,6 +11,6 @@ ms.date: 06/24/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-##### Show values in row groups rather than columns
+##### Switch values to rows
 
 Enabling this toggle will switch the display of your values from columns to rows within the matrix.
