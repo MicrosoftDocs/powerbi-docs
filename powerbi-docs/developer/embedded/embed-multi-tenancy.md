@@ -245,7 +245,7 @@ When buying a capacity, consider the limit on the number of parallel refreshes, 
 
 This article explains how to use profiles to create a separate semantic model for each customer. Alternatively, ISV applications can store all their customers' data in one large semantic model and use [Row-level security (RLS)](embedded-row-level-security.md) to protect each customer's data. This approach can be convenient for ISVs that have relatively few customers and small to medium-sized semantic models because:
 
-* They only have ot maintain one report and one semantic model
+* They only have to maintain one report and one semantic model
 * The onboarding process for new customers can be simplified
 
 Before using RLS, however, make sure you understand its limitations. All the data for all customers are in one large Power BI semantic model. This semantic model runs in a single capacity with its own scaling and other limitations.
