@@ -1,6 +1,6 @@
 ---
-title: Page Display Settings in a Power BI Report
-description: Page display settings and page view settings for a report
+title: Apply Page Display Settings in a Power BI Report
+description: Learn how to configure page display and view settings in Power BI reports to control layout, aspect ratios, and object positioning for optimal viewing across different screens.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -10,6 +10,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/28/2025
 ms.custom: video-removed
+ai-usage: ai-assisted
 LocalizationGroup: Reports
 ---
 # Apply page display settings in a Power BI report
@@ -28,13 +29,13 @@ Page view settings are available in both the Power BI service and Power BI Deskt
 
 In Report view, select the **View** tab to open Page view settings as well as phone layout settings.
 
-  ![Screenshot showing Desktop page view settings.](media/power-bi-report-display-settings/power-bi-desktop-view-settings.png)
+:::image type="content" source="media/power-bi-report-display-settings/power-bi-desktop-view-settings.png" alt-text="Screenshot of Desktop page view settings.":::
 
 # [Power BI service](#tab/powerbi-service)
 
 In the Power BI service (app.powerbi.com), open a report, select **Edit**, and then select **View** from the upper left menu bar.
 
-![Screenshot showing service page view settings.](media/power-bi-report-display-settings/power-bi-change-page-view.png)
+:::image type="content" source="media/power-bi-report-display-settings/power-bi-change-page-view.png" alt-text="Screenshot of service page view settings.":::
 
 ---
 
@@ -42,6 +43,7 @@ In the Power BI service (app.powerbi.com), open a report, select **Edit**, and t
 
 The first set of Page view settings controls the display of your report page relative to the browser window. Choose between:
 
+<<<<<<< HEAD
 * **Fit to page** (default): Contents are scaled to best fit the page.
 * **Fit to width**: Contents are scaled to fit within the width of the page.
 * **Actual size**: Contents are displayed at full size.
@@ -52,28 +54,37 @@ The second set of Page view settings controls the positioning of objects on the 
 * **Snap to grid**: Use with **Show gridlines** to precisely position and align objects on the report canvas.
 * **Lock objects**: Lock all objects on the canvas so that they can't be moved or resized.
 * **Selection pane**: The **Selection** pane lists all objects on the canvas. You can decide which to show and which to hide.
+=======
+- **Fit to page** (default): Contents are scaled to best fit the page
+- **Fit to width**: Contents are scaled to fit within the width of the page
+- **Actual size**: Contents are displayed at full size
 
-    ![Screenshot showing selection pane.](media/power-bi-report-display-settings/power-bi-selection-pane.png)
+The second set of Page view settings controls the positioning of objects on the report canvas. Choose between:
+
+- **Show gridlines**: Turn on gridlines to help you position objects on the report canvas.
+- **Snap to grid**: Use with **Show gridlines** to precisely position and align objects on the report canvas.
+- **Lock objects**: Lock all objects on the canvas so that they can't be moved or resized.
+- **Selection pane**: The **Selection** pane lists all objects on the canvas. You can decide which to show and which to hide.
+>>>>>>> 7ebedc6ce0767b4abfd27bd124c37c8ad764bde9
+
+    :::image type="content" source="media/power-bi-report-display-settings/power-bi-selection-pane.png" alt-text="Screenshot of the Selection pane.":::
 
 ## Canvas settings
 
-![Screenshot showing change canvas settings.](media/power-bi-report-display-settings/power-bi-canvas-settings.png)
+:::image type="content" source="media/power-bi-report-display-settings/power-bi-canvas-settings.png" alt-text="Screenshot of canvas settings options.":::
 
 **Canvas** settings, formerly called *page size* settings, are in the **Visualizations** pane. They control the display ratio and actual size (in pixels) of the report canvas:
 
-* 4:3 ratio
-* 16:9 ratio (default)
-* Letter
-* Custom (height and width in pixels)
+- 4:3 ratio
+- 16:9 ratio (default)
+- Letter
+- Custom (height and width in pixels)
 
 ## Related content
 
-* [Report view in Power BI Desktop](desktop-report-view.md)
-
-* [Change Page view and Page size settings in your own Power BI reports](../consumer/end-user-report-view.md)
-
-* Read more about [reports in Power BI](../consumer/end-user-reports.md)
-
-* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Report view in Power BI Desktop](desktop-report-view.md)
+- [Change Page view and Page size settings in your own Power BI reports](../consumer/end-user-report-view.md)
+- Read more about [reports in Power BI](../consumer/end-user-reports.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

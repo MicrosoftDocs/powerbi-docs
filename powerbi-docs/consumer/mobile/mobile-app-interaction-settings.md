@@ -1,5 +1,5 @@
 ---
-title: Configure report interaction settings
+title: Configure Report Interaction Settings
 description: Learn how to override the default interaction settings for reports in the Power BI mobile app.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,19 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 11/30/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # Configure report interaction settings
-
-## Overview
 
 The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define how some elements in the Power BI mobile app behave. The following table shows the interaction settings that are currently available and the devices which have them.
 
 | Setting | Android phone | iPhone | Android tablet  | iPad |
 |---------|:-:|:-:|:-:|:-:|
 | [Single versus double tap interaction on report visuals](#single-tap) |✔|✔|||
-| [Multi-select versus single select of data points on report visuals](#multi-select) |✔|✔|✔|✔|
+| [Multiselect versus single select of data points on report visuals](#multiselect) |✔|✔|✔|✔|
 | [Docked versus dynamic report footer](#docked-report-footer) |✔|✔|||
 | [Button-initiated report refresh versus pull-to-refresh](#report-refresh) |✔||||
 | [Improve link opening](#improve-link-opening-ios) ||✔||✔|
@@ -38,14 +37,14 @@ When you download the Power BI mobile app, it is set for single tap interaction.
 
 If you prefer, you can switch off single tap interaction. You then have double-tap interaction. With double tap interaction, you first tap on a visual to select it, and then tap again in the visual to perform your desired action.
 
-### Multi-select
+### Multiselect
 
-The multi-select option makes it possible to select multiple data points on a report page. When multi-select is turned on, each data point you tap gets added to the other selected data points, with the combined results automatically highlighted in all the visuals on the page. When multi-select is off, when you tap to select a data point, the new selection replaces the current selection.
+The multiselect option makes it possible to select multiple data points on a report page. When multiselect is turned on, each data point you tap gets added to the other selected data points, with the combined results automatically highlighted in all the visuals on the page. When multiselect is off, when you tap to select a data point, the new selection replaces the current selection.
 
 To unselect a data point, tap it again.
 
->[!NOTE]
->Multi-select is not supported for Power BI custom visuals.
+> [!NOTE]
+> Multiselect is not supported for Power BI custom visuals.
 
 ### Docked report footer
 

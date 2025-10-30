@@ -75,4 +75,4 @@ The report now has no visible tabs when you publish it to the Power BI service. 
 
 ## Related content
 
-- [Guidance for Power BI](overview.md)
+- [Guidance for Power BI](index.yml)

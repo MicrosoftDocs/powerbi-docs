@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/23/2025
+ms.date: 10/01/2025
 LocalizationGroup: Reports
 # customer intent: As a Power BI user, I want to find out how to add a filter to a visual, a page, and a report in Power BI so that I can limit displayed results to categories, date ranges, and other characteristics that I specify.
 ---

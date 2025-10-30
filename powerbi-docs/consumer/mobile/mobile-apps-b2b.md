@@ -1,5 +1,5 @@
 ---
-title: View Power BI content as an external guest user (Microsoft Entra B2B)
+title: View Power BI Content as an External Guest User (Microsoft Entra B2B)
 description: Learn how to use the Power BI mobile app to view content shared with you from an external organization.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 10/22/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # View Power BI content shared with you from an external organization
@@ -16,7 +17,7 @@ Power BI integrates with Microsoft Entra business-to-business (Microsoft Entra B
 
 Applies to:
 
-| :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png"::: |
+| :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png" border="false":::| :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png" border="false":::| :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png" border="false":::| :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png" border="false":::|
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 

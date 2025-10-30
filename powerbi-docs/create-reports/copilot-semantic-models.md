@@ -108,7 +108,7 @@ The image shows the following prompt: *What was the profit % for the Australia s
 
 Aside from user prompts, the *Ask data questions* experience can also produce incorrect or unexpected results due to the quality or organization of the underlying semantic model. Examples of when your semantic model produces poor results include:
 
-- **Poor model design or implementation:** If your semantic model doesn't follow common best practices (such as a [star schema design](../guidance/star-schema.md)), then you're likely to get poor results with any consumption tool or experience. You should always strive for quality semantic models to get the most out of Power BI and Fabric. See also [Data modeling guidance for Power BI](../guidance/overview.md#data-modeling) for more tips and guidance to improve your Power BI semantic models.
+- **Poor model design or implementation:** If your semantic model doesn't follow common best practices (such as a [star schema design](../guidance/star-schema.md)), then you're likely to get poor results with any consumption tool or experience. You should always strive for quality semantic models to get the most out of Power BI and Fabric. See also [Data modeling guidance for Power BI](../guidance/index.yml) for more tips and guidance to improve your Power BI semantic models.
 
 - **Poor naming conventions:** If your fields have inconsistent or excessive naming conventions (such as acronyms, abbreviations, and punctuation), then users are more likely to make mistakes in their prompts and Copilot will get confused when referring to these fields. Copilot works best when tables, columns, and measures have names in human-readable English.
 

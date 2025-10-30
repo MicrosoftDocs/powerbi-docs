@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting tile errors
-description: See explanations and solutions for common errors you might encounter with tile refresh in the Power BI service.
+title: Troubleshoot Power BI Tile Refresh Errors
+description: "Learn how to troubleshoot common tile refresh errors in Power BI. Find explanations and solutions for issues like data access problems, permission errors, and visual resource limits. Get help resolving tile errors today."
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: kayu
@@ -8,12 +8,21 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 10/30/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Troubleshooting
 ---
-# Troubleshoot tile errors
+# Troubleshoot Power BI tile refresh errors
 
-This article lists and explains the common errors that can occur with tile refresh in Power BI. If an error that's not listed causes you problems, you can ask for assistance on the [Power BI community site](https://community.powerbi.com/) or file a [support ticket](https://powerbi.microsoft.com/support).
+Tile refresh errors in Power BI can prevent your dashboards from displaying current data. This article lists and explains common tile refresh errors you might encounter in the Power BI service, providing solutions to help you quickly resolve issues and restore your dashboard functionality.
+
+## Need help?
+
+If an error that's not listed causes you problems or you need additional assistance:
+
+- Ask for help on the [Power BI community site](https://community.powerbi.com/)
+- File a [support ticket](https://powerbi.microsoft.com/support)
+- Learn how to [create a support ticket](/power-bi/support/create-support-ticket)
 
 ## Error list
 
@@ -29,7 +38,7 @@ The following list explains and offers solutions for common tile refresh errors.
 
 - **You don't have permission to view this tile or open the workbook.**
 
-  Contact the dashboard owner to make sure the data sources and model exist and are accessible for your account.
+  Contact the dashboard owner to make sure the data sources and model exist and your account has access to them.
 
 - **Power BI visuals have been disabled by your administrator.**
 
@@ -41,7 +50,7 @@ The following list explains and offers solutions for common tile refresh errors.
 
 - **Can't display the data because Power BI can't determine the relationship between two or more fields.**
 
-  You'e trying to use two or more fields from tables that aren't related. You need to remove the unrelated fields from the visual and then create a relationship between the tables. Once you create the relationship, you can add the fields back to the visual. You can use Power BI Desktop or Power Pivot for Excel for this process. For more information, see [Create and manage relationships in Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md).
+  You're trying to use two or more fields from tables that aren't related. You need to remove the unrelated fields from the visual and then create a relationship between the tables. After you create the relationship, you can add the fields back to the visual. You can use Power BI Desktop or Power Pivot for Excel for this process. For more information, see [Create and manage relationships in Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md).
 
 - **The groups in the primary axis and the secondary axis overlap. Groups in the primary axis can't have the same keys as groups in the secondary axis.**
 
@@ -49,19 +58,30 @@ The following list explains and offers solutions for common tile refresh errors.
 
 - **This visual has exceeded the available resources. Try filtering to decrease the amount of data displayed.**
 
-  The visual has tried to query too much data for Power BI to complete the result with available resources. Try filtering the visual to reduce the amount of data in the result.
+  The visual has tried to query too much data for Power BI to complete the result with available resources. To resolve this issue:
+
+  1. Add filters to the visual to limit the date range or reduce the number of categories displayed.
+  1. Remove unnecessary fields from the visual that aren't essential to your analysis.
+  1. Use aggregated data instead of detailed row-level data when possible.
+  1. Consider breaking the visual into multiple smaller visuals, each showing a subset of the data.
+  1. If the visual displays data from a large semantic model, work with the semantic model owner to optimize the data model or add aggregations.
+
+  For more information about optimizing visual performance, see [Optimization guide for Power BI](/power-bi/guidance/power-bi-optimization).
+
+  > [!TIP]
+  > Power BI has resource limits to ensure optimal performance. Visuals that attempt to return very large datasets may exceed these limits. Design your visuals to query only the data you need.
 
 - **We are not able to identify the following fields: {0}. Please update the visual with fields that exist in the semantic model.**
 
-  The field was probably deleted or renamed. You can remove the broken field from the visual, add a different field, and repin it.
+  The field was probably deleted or renamed. You can remove the broken field from the visual, add a different field, and repin the tile.
 
 - **Couldn't retrieve the data for this visual. Please try again later.**
 
   This issue is usually transient. If you try again later and still see this message, [contact support](https://support.powerbi.com).
 
-- Tiles continue to show unfiltered data after you enable single-sign on (SSO).
+- Tiles continue to show unfiltered data after you enable single sign-on (SSO).
 
-  This issue can happen if the underlying semantic model uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this issue, the tiles continue to show unfiltered data after you enable SSO for the data source, until the next tile refresh. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
+  This issue can happen if the underlying semantic model uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this case, the tiles continue to show unfiltered data after you enable SSO for the data source until the next tile refresh. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
 
   To see the filtered data immediately, you can force a tile refresh. Select the **Refresh** icon at the upper right of a Power BI dashboard.
 
@@ -69,6 +89,14 @@ The following list explains and offers solutions for common tile refresh errors.
 
   > [!NOTE]
   > **Automatic dashboard tile and metric refresh** is available only for semantic models in DirectQuery or Live Connection modes. Semantic models in Import mode don't need a separate tile refresh because the tiles refresh automatically during the next scheduled data refresh.
+
+## Need to download or export reports?
+
+If you're looking to download reports or export data rather than troubleshoot tile errors, see:
+
+- [Download a report from the Power BI service to Power BI Desktop](/power-bi/create-reports/service-export-to-pbix)
+- [Export reports to file](/power-bi/developer/embedded/export-to)
+- [Export data from Power BI visuals](/power-bi/visuals/power-bi-visualization-export-data)
 
 ## Support contact
 

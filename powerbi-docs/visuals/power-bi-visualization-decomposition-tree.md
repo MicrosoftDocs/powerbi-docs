@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/15/2025
+ms.date: 10/01/2025
 ms.custom: sample-supply-chain
 LocalizationGroup: Visualizations
 ---
@@ -169,5 +169,5 @@ Other limitations:
 
 ## Related content
 
-- [Create and use doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
+- [Create and use pie and donut charts in Power BI](power-bi-visualization-pie-donut-chart.md)
 - [Customize the Visualizations pane in Power BI Desktop and the Power BI service](power-bi-report-visualizations.md)
