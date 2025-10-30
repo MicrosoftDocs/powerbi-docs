@@ -16,14 +16,16 @@ env:
   DOCSET_ROOT: powerbi-docs
   REPORT_XLSX: data/engagement-latest.xlsx
   STALE_FILE_LIST: tools/stale-files.txt
-  BATCH_LIMIT: "50"
+  BATCH_LIMIT: "25"
   FRESH_WINDOW_DAYS: "365"
   PR_LABELS: "freshness,automation,doc-hygiene"
 
 jobs:
   freshness:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        chunk: [0, 1, 2, 3, 4] # 5 PRs per run
     steps:
       # Checkout optimized for speed
       - name: Checkout (sparse, shallow, blobless)
@@ -36,8 +38,6 @@ jobs:
             data
           sparse-checkout-cone-mode: true
           filter: blob:none
-
-          # Keep these off unless you explicitly need them
           submodules: false
           lfs: false
 
@@ -51,7 +51,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl python-dateutil pyyaml
 
-      # Generate stale batch from XLSX + runtime ms.date check
+      # Generate stale batch with offset for chunk
       - name: Generate stale batch
         run: |
           python tools/generate-stale-list.py \
@@ -59,10 +59,12 @@ jobs:
             --output "${{ env.STALE_FILE_LIST }}" \
             --docroot "${{ env.DOCSET_ROOT }}" \
             --limit "${{ env.BATCH_LIMIT }}" \
-            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}"
+            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}" \
+            --offset $(( ${{ matrix.chunk }} * ${{ env.BATCH_LIMIT }} ))
 
       - name: Show batch
         run: |
+          echo "Chunk: ${{ matrix.chunk }}"
           echo "Files to process:"
           cat "${{ env.STALE_FILE_LIST }}" || true
           echo ""
@@ -106,7 +108,6 @@ jobs:
             echo "No files to format; skipping Prettier."
             exit 0
           fi
-          # Filter only existing .md files
           FILES=$(grep -E '\.md$' "${{ env.STALE_FILE_LIST }}" | xargs -r ls 2>/dev/null || true)
           if [ -z "$FILES" ]; then
             echo "No matching Markdown files found; skipping Prettier."
@@ -114,23 +115,20 @@ jobs:
           fi
           echo "$FILES" | xargs prettier --write
 
-      # Flag outdated images (heuristic)
+      # Flag outdated images
       - name: Check for outdated images
         run: |
-          OUTFILE="tools/outdated-images.csv"
+          OUTFILE="tools/outdated-images-${{ matrix.chunk }}.csv"
           echo "File,ImagePath,Reason" > "$OUTFILE"
           while IFS= read -r FILE; do
             [ -z "$FILE" ] && continue
             [ -f "$FILE" ] || continue
-            # Heuristic: look for img tags or markdown images
             grep -Eo '!\[[^]]*\]\([^)]*\)' "$FILE" | while read -r IMG; do
               ALT=$(echo "$IMG" | sed -E 's/^!\[([^]]*)\].*/\1/')
               SRC=$(echo "$IMG" | sed -E 's/.*\(([^)]*)\).*/\1/')
-              # Flag if alt text mentions old UI keywords
               if echo "$ALT" | grep -qiE 'classic|old ribbon|legacy'; then
                 echo "$FILE,$SRC,Alt text suggests outdated UI" >> "$OUTFILE"
               fi
-              # Flag if filename hints old UI
               if echo "$SRC" | grep -qiE 'classic|old|legacy'; then
                 echo "$FILE,$SRC,Image filename suggests outdated UI" >> "$OUTFILE"
               fi
@@ -138,20 +136,16 @@ jobs:
           done < "${{ env.STALE_FILE_LIST }}"
           echo "Outdated image check complete. See $OUTFILE"
 
-      # Flag SME-needed cases
+      # SME detection
       - name: SME detection
-        shell: bash
         continue-on-error: true
-
         run: |
-          OUTFILE="tools/sme-flags.csv"
+          OUTFILE="tools/sme-flags-${{ matrix.chunk }}.csv"
           echo "File,Reason" > "$OUTFILE"
-
           if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
             echo "No stale file list found or empty; skipping SME detection."
             exit 0
           fi
-
           while IFS= read -r FILE; do
             [ -z "$FILE" ] && continue
             [ -f "$FILE" ] || continue
@@ -159,182 +153,31 @@ jobs:
               echo "$FILE,Contains preview/deprecation/feature-flag language" >> "$OUTFILE"
             fi
           done < "${{ env.STALE_FILE_LIST }}"
-
           echo "SME flagging complete. See $OUTFILE"
 
-      # Ensure blobs for targeted files are available when using filter: blob:none
-      - name: Materialize blobs for batch (blobless safety)
-        if: ${{ hashFiles(env.STALE_FILE_LIST) != '' }}
-        shell: bash
+      # Commit and push unique branch per chunk
+      - name: Commit and push
         run: |
-          # If Git did a blobless partial clone, make sure we have the file contents
-          # for the paths we’re about to edit/commit.
-          if [ -f "${{ env.STALE_FILE_LIST }}" ]; then
-            while IFS= read -r p; do
-              [ -z "$p" ] && continue
-              [ -f "$p" ] || continue
-              git checkout -- "$p" || true
-            done < "${{ env.STALE_FILE_LIST }}"
-          fi
-
-      # Show what actually changed (diagnostic)
-      - name: Git status (pre-commit)
-        shell: bash
-        run: |
-          git status --porcelain
-          echo
-          echo "Current branch:"
-          git rev-parse --abbrev-ref HEAD || true
-          echo
-          echo "Diff summary:"
-          git diff --name-status || true
-
-      # Detect changes (avoid exit-1 on empty commit)
-      - name: Detect changes
-        id: detect
-        shell: bash
-        run: |
-          if git status --porcelain | grep -q .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
-
-      # Commit locally on a unique branch (avoid branch name collisions)
-      - name: Commit locally (unique branch)
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        id: commit
-        shell: bash
-        run: |
-          set -e
-          git config user.name  "docs-automation"
+          git config user.name "docs-automation"
           git config user.email "docs-automation@users.noreply.github.com"
-
-          DATE="$(date -u +'%Y%m%d')"
-          RUNID="${GITHUB_RUN_ID}"
-          BASE="${{ env.TARGET_BRANCH }}"
-          BRANCH="${{ env.WORKING_BRANCH_PREFIX }}/${DATE}-run${RUNID}"
-          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
-
-          # Create the branch off the configured base
-          git checkout -b "$BRANCH" "origin/${BASE}"
-
-          # Stage & commit
+          BRANCH="${WORKING_BRANCH_PREFIX}/$(date -u +'%Y%m%d')-chunk${{ matrix.chunk }}"
+          git checkout -b "$BRANCH" "origin/${TARGET_BRANCH}"
           git add -A
-          git commit -m "Freshness: deterministic hygiene + flags (run ${RUNID})"
+          git commit -m "Freshness: chunk ${{ matrix.chunk }} (deterministic hygiene)"
+          git push --set-upstream origin "$BRANCH"
 
-      # Decide push target: fork vs upstream
-      # If this workflow runs IN YOUR FORK, 'origin' already points at JulCsc/powerbi-docs-pr.
-      # If it runs in upstream, set up a fork remote and push there instead.
-      - name: Determine push target
-        id: where
-        shell: bash
-        run: |
-          REPO_FULL="${GITHUB_REPOSITORY}"   # e.g., owner/repo
-          OWNER="${REPO_FULL%%/*}"
-          if [ "$OWNER" = "JulCsc" ]; then
-            echo "remote_name=origin"   >> $GITHUB_OUTPUT
-            echo "remote_url="          >> $GITHUB_OUTPUT
-            echo "fork_owner=JulCsc"    >> $GITHUB_OUTPUT
-            echo "repo_context=fork"    >> $GITHUB_OUTPUT
-          else
-            echo "remote_name=fork"     >> $GITHUB_OUTPUT
-            echo "remote_url=https://x-access-token:${{ secrets.FORK_PR_TOKEN }}@github.com/JulCsc/powerbi-docs-pr.git" >> $GITHUB_OUTPUT
-            echo "fork_owner=JulCsc"    >> $GITHUB_OUTPUT
-            echo "repo_context=upstream" >> $GITHUB_OUTPUT
-          fi
-
-      # Push branch (handles both contexts; avoids force unless we must rename)
-      - name: Push branch
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        id: push
-        shell: bash
-        env:
-          REMOTE_NAME: ${{ steps.where.outputs.remote_name }}
-          REMOTE_URL:  ${{ steps.where.outputs.remote_url }}
-        run: |
-          set -euo pipefail
-          BRANCH="${{ steps.commit.outputs.branch }}"
-
-          # Clear checkout’s extraheader so PAT/token is honored when needed
-          git config --global http.https://github.com/.extraheader ""
-
-          # Ensure we have the right remote configured
-          if [ -n "${REMOTE_URL}" ]; then
-            if git remote | grep -q "^${REMOTE_NAME}$"; then
-              git remote set-url "${REMOTE_NAME}" "${REMOTE_URL}"
-            else
-              git remote add "${REMOTE_NAME}" "${REMOTE_URL}"
-            fi
-          fi
-
-          # Try push (no force). If it collides, suffix with short SHA and re-push.
-          set +e
-          git push -u "${REMOTE_NAME}" "${BRANCH}:${BRANCH}"
-          RC=$?
-          set -e
-          if [ $RC -ne 0 ]; then
-            ALT="${BRANCH}-${GITHUB_SHA::7}"
-            echo "Remote branch exists or not fast-forward; pushing as ${ALT}"
-            git push -u "${REMOTE_NAME}" "${BRANCH}:${ALT}"
-            echo "pushed_branch=${ALT}" >> $GITHUB_OUTPUT
-          else
-            echo "pushed_branch=${BRANCH}" >> $GITHUB_OUTPUT
-          fi
-
-      # Install jq for JSON body
-      - name: Install jq
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        run: sudo apt-get update && sudo apt-get install -y jq
-
-      # Open PR (fork → upstream if running upstream, or origin → origin if running in fork)
+      # Open PR
       - name: Open PR
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          REPO_FULL="${GITHUB_REPOSITORY}"
-          OWNER="${REPO_FULL%%/*}"
-          REPO="${REPO_FULL##*/}"
-          BASE="${{ env.TARGET_BRANCH }}"
-          BR="${{ steps.push.outputs.pushed_branch }}"
-          TITLE="Freshness: deterministic hygiene + flags ($(date -u +'%Y%m%d'))"
+        uses: dotnet/actions-create-pull-request@v4
+        with:
+          token: ${{ github.token }}
+          title: "Freshness: chunk ${{ matrix.chunk }} (25 docs)"
+          body: |
+            **Chunk:** ${{ matrix.chunk }}
+            - Updated ms.date for stale docs
+            - Ran markdownlint + Prettier
+            - Flagged outdated images → tools/outdated-images-${{ matrix.chunk }}.csv
+            - Flagged SME-needed cases → tools/sme-flags-${{ matrix.chunk }}.csv
+          reviewers: "" # optional
+          team-reviewers: "" # optional
 
-          if [ "$OWNER" = "JulCsc" ]; then
-            # PR within your fork (main ← your branch)
-            HEAD="JulCsc:${BR}"
-            UPSTREAM_OWNER="$OWNER"
-            UPSTREAM_REPO="$REPO"
-          else
-            # Cross‑repo PR from fork back to upstream
-            HEAD="JulCsc:${BR}"
-            UPSTREAM_OWNER="${{ github.repository_owner }}"
-            UPSTREAM_REPO="${{ github.event.repository.name }}"
-          fi
-
-          BODY=$'This PR was generated by the deterministic freshness workflow.\n\n'\
-          $'**What happened**\n'\
-          $'- Updated `ms.date` for stale docs\n'\
-          $'- Ran markdownlint + Prettier (deterministic)\n'\
-          $'- Flagged possible outdated images → `tools/outdated-images.csv`\n'\
-          $'- Flagged potential SME-needed cases → `tools/sme-flags.csv`\n\n'\
-          $'**Artifacts**\n'\
-          $'- `tools/stale-files.summary.csv`\n'\
-          $'- `tools/stale-files.skipped.csv`\n'\
-          $'- `tools/outdated-images.csv`\n'\
-          $'- `tools/sme-flags.csv`\n'
-
-              RESP=$(curl -sS -X POST \
-                -H "Authorization: Bearer ${GH_TOKEN}" \
-                -H "Accept: application/vnd.github+json" \
-                "https://api.github.com/repos/${UPSTREAM_OWNER}/${UPSTREAM_REPO}/pulls" \
-                -d "$(jq -n --arg t "$TITLE" --arg h "$HEAD" --arg b "$BASE" --arg body "$BODY" '{title:$t, head:$h, base:$b, body:$body}')")
-
-              echo "$RESP" | jq -r '.html_url // .message'
-
-          # No-op message if nothing changed
-          - name: No changes (skip PR)
-            if: ${{ steps.detect.outputs.changed != 'true' }}
-            run: echo "No changes detected; nothing to commit or push."
