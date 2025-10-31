@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 10/28/2025
 ms.custom: video-removed
 ai-usage: ai-assisted
 LocalizationGroup: Reports
@@ -19,7 +19,7 @@ LocalizationGroup: Reports
 
 We understand it's critical to keep your report layout precise. Sometimes, it can be challenging, because you and your colleagues may view those reports on screens with different aspect ratios and sizes.
 
-The default display view is **Fit to page** and the default display size is **16:9**. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: ***Page view*** settings and ***Page size*** settings.
+The default display view is **Fit to page**, and the default display size is **16:9**. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: ***Page view*** settings and ***Page size*** settings.
 
 ## Where to find page view settings
 
@@ -33,7 +33,7 @@ In Report view, select the **View** tab to open Page view settings as well as ph
 
 # [Power BI service](#tab/powerbi-service)
 
-In the Power BI service (app.powerbi.com), open a report, select **Edit**, then select **View** from the upper left menu bar.
+In the Power BI service (app.powerbi.com), open a report, select **Edit**, and then select **View** from the upper left menu bar.
 
 :::image type="content" source="media/power-bi-report-display-settings/power-bi-change-page-view.png" alt-text="Screenshot of service page view settings.":::
 
@@ -54,13 +54,13 @@ The second set of Page view settings controls the positioning of objects on the 
 - **Lock objects**: Lock all objects on the canvas so that they can't be moved or resized.
 - **Selection pane**: The **Selection** pane lists all objects on the canvas. You can decide which to show and which to hide.
 
-    :::image type="content" source="media/power-bi-report-display-settings/power-bi-selection-pane.png" alt-text="Screenshot of the Selection pane.":::
+:::image type="content" source="media/power-bi-report-display-settings/power-bi-selection-pane.png" alt-text="Screenshot of the Selection pane.":::
 
 ## Canvas settings
 
 :::image type="content" source="media/power-bi-report-display-settings/power-bi-canvas-settings.png" alt-text="Screenshot of canvas settings options.":::
 
-**Canvas** settings, formerly called *page size* settings are in the **Visualizations** pane. They control the display ratio and actual size (in pixels) of the report canvas:
+**Canvas** settings, formerly called *page size* settings, are in the **Visualizations** pane. They control the display ratio and actual size (in pixels) of the report canvas:
 
 - 4:3 ratio
 - 16:9 ratio (default)
