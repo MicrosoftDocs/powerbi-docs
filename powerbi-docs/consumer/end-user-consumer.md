@@ -1,13 +1,14 @@
 ---
-title: What is a Power BI business user?
-description: Overview of the Power BI service for business users or end users. Learn who a business user is and how to safely work with data.
+title: The Power BI Service for Business Users
+description: Learn what a Power BI business user is and how to use the Power BI service to analyze data, create insights, and make decisions. Get started with Power BI today.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 02/08/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer or business user so I know if I am a consumer/business user (versus designer, admin, creator, or dev) and, as such, what I can accomplish with the Power BI service.
 ms.custom: intro-overview
@@ -39,10 +40,11 @@ The content isn't static, so you can dig in and look for trends, insights, and o
 
 How you interact with Power BI depends on your job role. As a consumer or business user, you receive content, like dashboards, reports, and apps, from colleagues. You work in the Power BI service, which is the online or mobile version of Power BI. You review and interact with your content to make business decisions.
 
-As a business user, you might not have access to all the capabilities of Power BI. That's ok, because your job isn't building semantic models and reports. You use the Power BI service for analysis, monitoring, exploration, and decision making.
+As a business user, you might not have access to all the capabilities of Power BI. That's okay, because your job isn't building semantic models and reports. You use the Power BI service for analysis, monitoring, exploration, and decision making.
 
-You might hear the term "Power BI Desktop" or just "Desktop." Designers use this stand-alone tool to build and share dashboards and reports. It's important to know that there are other Power BI tools out there. But if you're a business user, you typically work only with the Power BI service.
-Because you're working with content that is shared with you, at least one of the following scenarios is true: 
+You might hear the term "Power BI Desktop" or just "Desktop." Designers use this stand-alone tool to build and share dashboards and reports. It's important to know that there are other Power BI tools. But if you're a business user, you typically work only with the Power BI service.
+Because you're working with content that is shared with you, at least one of the following scenarios is true:
+
 - You have a Power BI Pro or Premium Per User (PPU) license.
 - Your organization has a Power BI Premium subscription, and the content being shared with you comes from Premium capacity.
 
@@ -57,14 +59,12 @@ As you filter, slice, subscribe, and export, your work doesn't impact the underl
 
 You can't corrupt your data. Power BI is a great place to explore and experiment without worrying that you might break something.  
 
-That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, select the **Reset** button.  
+That limitation doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, select the **Reset** button.  
 
 :::image type="icon" source="media/end-user-consumer/power-bi-reset.png":::
 
 ## Related content
 
-[Take a tour of the Power BI service for business users.](end-user-reading-view.md)  
-
-[Power BI service training for business users.](/training/paths/consume-data-with-power-bi/)  
-
-[Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Take a tour of the Power BI service for business users.](end-user-reading-view.md)  
+- [Power BI service training for business users.](/training/paths/consume-data-with-power-bi/)  
+- [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)

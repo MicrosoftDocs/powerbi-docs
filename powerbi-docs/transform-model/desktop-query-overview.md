@@ -1,14 +1,15 @@
 ---
-title: Query overview in Power BI Desktop
-description: Learn how to work with queries to shape and transform data to meet your needs in this overview of the tools included in Power BI Desktop.
+title: Query Overview in Power BI Desktop
+description: Learn how to use Power Query Editor in Power BI Desktop to connect to data sources, shape and transform data, and create queries with comprehensive ribbon tools and formatting options.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
-ms.date: 09/04/2024
+ms.date: 10/01/2025
 ms.custom: dFY25Q1-Linter
+ai-usage: ai-assisted
 LocalizationGroup: Transform and shape data
 #customer intent: As a Power BI user I want to learn abou the Power Query Editor.
 ---
@@ -20,9 +21,9 @@ With Power BI Desktop you can connect to the world of data, create compelling an
 
 Power BI Desktop has three views:
 
-* **Report** view – You can use queries that you create to build compelling visualizations, arranged as you want them to appear, and with multiple pages, that you can share with others.
-* **Table** view – See the data in your report in data model format, where you can add measures, create new columns, and manage relationships.
-* **Model** view – Get a graphical representation of the relationships that are established in your data model, and manage or modify them as needed.
+- **Report** view – You can use queries that you create to build compelling visualizations, arranged as you want them to appear, and with multiple pages, that you can share with others.
+- **Table** view – See the data in your report in data model format, where you can add measures, create new columns, and manage relationships.
+- **Model** view – Get a graphical representation of the relationships that are established in your data model, and manage or modify them as needed.
 
 Access these views by selecting one of the three icons along the left side of Power BI Desktop. In the following image, **Report** view is selected, indicated by the yellow band beside the icon.  
 
@@ -48,10 +49,10 @@ After a query is loaded, Power Query Editor view becomes more interesting. If yo
 
 Here's how Power Query Editor appears after a data connection is established:
 
-* In the ribbon, many buttons are now active to interact with the data in the query.
-* In the left pane, queries are listed and available for selection, viewing, and shaping.
-* In the center pane, data from the selected query is displayed and available for shaping.
-* The **Query Settings** pane appears, listing the query's properties and applied steps.  
+- In the ribbon, many buttons are now active to interact with the data in the query.
+- In the left pane, queries are listed and available for selection, viewing, and shaping.
+- In the center pane, data from the selected query is displayed and available for shaping.
+- The **Query Settings** pane appears, listing the query's properties and applied steps.  
 
    :::image type="content" source="media/desktop-query-overview/query-overview-with-data-connection.png" alt-text="Screenshot of Power BI Desktop showing the Query Settings pane in Power Query Editor.":::
 
@@ -73,10 +74,10 @@ For more information about available data sources, see [Data Sources](../connect
 
 The **Transform** tab provides access to common data transformation tasks, such as:
 
-* Adding or removing columns
-* Changing data types
-* Splitting columns
-* Other data-driven tasks
+- Adding or removing columns
+- Changing data types
+- Splitting columns
+- Other data-driven tasks
 
 :::image type="content" source="media/desktop-query-overview/query-overview-transform-ribbon.png" alt-text="Screenshot of Power BI Desktop showing the Transform tab.":::
 
@@ -146,8 +147,8 @@ To save your work, select **File** \> **Save** (or **File** \> **Save As**), as 
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
-* [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Connect to data sources in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
-* [Tutorial: Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Perform common query tasks in Power BI Desktop](desktop-common-query-tasks.md)
+- [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+- [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
+- [Connect to data sources in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
+- [Tutorial: Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+- [Perform common query tasks in Power BI Desktop](desktop-common-query-tasks.md)

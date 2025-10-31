@@ -1,19 +1,20 @@
 ---
-title: Use the Power BI mobile app side by side with another app
+title: Use the Power BI Mobile App Side by Side with Another App
 description: Learn about using the Power BI mobile app side by side with another app on an iPad or Android tablet.
 author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/06/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # Work side by side with other apps
 
 This article applies to the following:
 
-|:::image type="icon" source="./media/mobile-apps-split-screen/ios-logo-40-px.png"::: |:::image type="icon" source="././media/mobile-apps-split-screen/android-logo-40-px.png"::: |
+|:::image type="icon" source="./media/mobile-apps-split-screen/ios-logo-40-px.png" border="false":::|:::image type="icon" source="././media/mobile-apps-split-screen/android-logo-40-px.png" border="false":::|
 |:--- |:--- |
 |iPads |Android tablets |
 

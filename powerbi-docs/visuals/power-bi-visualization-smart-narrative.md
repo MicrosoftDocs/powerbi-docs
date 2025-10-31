@@ -1,14 +1,15 @@
 ---
-title: Create smart narrative summaries
-description: 'Create smart narrative visualizations in Power BI to provide a quick text summary of visuals and reports.'
+title: Create Smart Narrative Summaries
+description: Learn how to create and customize smart narrative visualizations in Power BI to generate automatic text summaries of visuals and reports with dynamic values, formatting options, and interactive insights.
 author: aphilip94
 ms.author: anphil
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 02/22/2023
+ms.date: 10/24/2025
 ms.custom: video-01UrT-z37sw, sample-2020SU09-Blog-Demo
+ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---
 # Create smart narrative summaries
@@ -29,14 +30,13 @@ This article describes how to add:
 
 ## Watch the video
 
-Watch Justyna show how to use smart narratives, then try it out yourself using the sample file, below the video.
+Watch Justyna show how to use smart narratives, then try it out yourself using the sample file, following the video.
 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
-
 > [!VIDEO https://www.youtube.com/embed/01UrT-z37sw]
 
-## Get started 
+## Get started
 
 To follow along in Power BI Desktop, download the [sample online-sales scenario dataset](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix).
 
@@ -65,50 +65,44 @@ For example, the Transactions page in the sample file has a summary of the scatt
 :::image type="content" source="media/power-bi-visualization-smart-narratives/5.gif" alt-text="Animation showing a smart narrative that summarizes a scatter chart.":::
 
 ## Edit the summary
- 
+
 The smart narrative summary is highly customizable. You can edit or add to the existing text by using the text box commands. For example, you can make the text bold or change its color.
- 
+
 :::image type="content" source="media/power-bi-visualization-smart-narratives/6.png" alt-text="Screenshot showing text-formatting commands on a toolbar.":::
 
-  
-To customize the summary or add your own insights, use *dynamic values*. You can map text to existing fields and measures or use natural language to define a new measure to map to text. For example, to add information about the number of returned items in the sample file, add a value. 
+To customize the summary or add your own insights, use *dynamic values*. You can map text to existing fields and measures or use natural language to define a new measure to map to text. For example, to add information about the number of returned items in the sample file, add a value.
 
-As you type a value name, you can choose from a list of suggestions as you do in a Q&A visual. So, in addition to asking questions of your data in a Q&A visual, you can now create your own calculations without even using Data Analysis Expressions (DAX). 
+As you type a value name, you can choose from a list of suggestions as you do in a Q&A visual. So, in addition to asking questions of your data in a Q&A visual, you can now create your own calculations without even using Data Analysis Expressions (DAX).
   
 :::image type="content" source="media/power-bi-visualization-smart-narratives/7.gif" alt-text="Screenshot showing how to create a dynamic value for a smart narrative visualization.":::
 
-  
-You can also format dynamic values. For example, in the sample file, you can show values as currency, specify decimal places, and choose a separator for thousands. 
-   
+You can also format dynamic values. For example, in the sample file, you can show values as currency, specify decimal places, and choose a separator for thousands.
+
 :::image type="content" source="media/power-bi-visualization-smart-narratives/8.gif" alt-text="Screenshot showing how to format a dynamic value.":::
 
-   
-To format a dynamic value, select the value in the summary to see your editing options on the **Review** tab. Or in the text box, next to the value that you want to edit, select the edit button. 
-   
+To format a dynamic value, select the value in the summary to see your editing options on the **Review** tab. Or in the text box, next to the value that you want to edit, select the edit button.
+
 :::image type="content" source="media/power-bi-visualization-smart-narratives/9.png" alt-text="Screenshot showing the text box, with the Value tab selected. Next to the value name, the edit button is highlighted.":::
 
-   
 You can also use the **Review** tab to review, delete, or reuse previously defined values. Select the plus sign (+) to insert the value into the summary. You can also show automatically generated values by turning on the option at the bottom of the **Review** tab.
 
 Sometimes a hidden-summary symbol appears in the smart narrative. It indicates that current data and filters produce no result for the value. A summary is empty when no insights are available. For example, in the sample file's line chart, a summary of high and low values might be empty when the chart's line is flat. But the summary might appear under other conditions. Hidden-summary symbols are visible only when you try to edit a summary.
 
-
 :::image type="content" source="media/power-bi-visualization-smart-narratives/10.png" alt-text="Screenshot showing two hidden-summary symbols inside a smart narrative summary.":::
 
-   
 ## Visual interactions
+
 A summary is dynamic. It automatically updates the generated text and dynamic values when you cross-filter. For example, if you select electronics products in the sample file's donut chart, the rest of the report is cross-filtered, and the summary is also cross-filtered to focus on the electronics products.  
 
 In this case, the visits and revenues have different trends, so the summary text is updated to reflect the trends. The count-of-returns value that we added is updated to $4196. Empty summaries can be updated when you cross-filter.
-   
+
 :::image type="content" source="media/power-bi-visualization-smart-narratives/11.gif" alt-text="Screenshot showing how a selection on a chart can cross-filter a summary.":::
 
-   
 You can also do more advanced filtering. For example, in the sample file, look at the visual of trends for multiple products. If you're interested only in a trend for a certain quarter, then select the relevant data points to update the summary for that trend.
-   
+
 :::image type="content" source="media/power-bi-visualization-smart-narratives/12.gif" alt-text="Screenshot showing how to select a trend line to filter the summary to show only that trend.":::
 
-There's a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates up to four summaries per visual and up to 16 per page. The summaries that are generated for a page depend on the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that aren't present while summarizing the whole page.
+There's a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates up to four summaries per visual and up to 16 per page. The summaries that are generated for a page depend on the location and size of visuals, and it avoids generating the same kind of summaries for different visuals. Therefore, summarizing just the visual can generate more summaries that aren't present while summarizing the whole page.
 
 ## Add a smart narrative icon to a visual
 
@@ -119,31 +113,30 @@ You can add an optional icon to the header of a visual that triggers an on-deman
 
     :::image type="content" source="media/power-bi-visualization-smart-narratives/visual-smart-narrative-icon-on.png" alt-text="Screenshot showing how to set the Smart narrative icon to On.":::
 
-When your report readers hover over that visual, they can see and select the **Smart narrative** icon, to expose a text explanation of the visual. Unlike the other smart narratives, they can't pin this narrative to the report.
+When your report readers hover over that visual, they can see and select the **Smart narrative** icon to expose a text explanation of the visual. Unlike the other smart narratives, they can't pin this narrative to the report.
 
 :::image type="content" source="media/power-bi-visualization-smart-narratives/visual-smart-narrative-icon-selected.png" alt-text="Screenshot showing selecting the Smart narrative icon.":::
 
 ## Considerations and limitations
 
 The smart narrative feature doesn't support the following functionality:
-- Pinning to a dashboard 
+
+- Pinning to a dashboard
 - Using dynamic values and conditional formatting (for example, data bound title)
 - Publish to Web
 - Power BI Report Server
 - On-premises Analysis Services
 - Live Connection to Azure Analysis Services or SQL Server Analysis Services
-- MultiDimensional Analysis Services data sources 
+- MultiDimensional Analysis Services data sources
 - Key influencers visual with a categorical metric or unsummarized numerical field as 'Analyze' field from a table:
-    - that contains more than one primary key 
-    - without a primary key, and measures or aggregates as 'Explain by' fields
+  - that contains more than one primary key
+  - without a primary key, and measures or aggregates as 'Explain by' fields
 - Map visual with non-aggregated latitude or longitude
 - Multi-row card with more than three categorical fields
 - Cards with non-numeric measures
-- Tables, matrices, R visuals or Python visuals, custom visuals 
-- Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
+- Tables, matrices, R visuals, Python visuals, or custom visuals
+- Summaries of visuals with columns grouped by other columns and for visuals that are built on a data group field
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
 - Summaries of visuals that contain on-the-fly calculations like QnA arithmetic, complex measures such as percentage of grand total and measures from extension schemas.
 - [Calculation groups](/analysis-services/tabular-models/calculation-groups)
-
-   

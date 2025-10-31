@@ -1,5 +1,5 @@
 ---
-title: Run and view insights on dashboard tiles
+title: View Data Insights on Dashboard Tiles with Power BI
 description: Learn how to run, view, interact, and troubleshoot data insights on a dashboard tile with Power BI.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 02/14/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ms.custom: sample-
 # As a Power BI end user, I want to learn how to get insights about my dashboard tiles.
 LocalizationGroup: Dashboards
@@ -43,11 +44,13 @@ When you run insights on a dashboard tile, Power BI searches just the data used 
 
 Now that you have an insight open, continue exploring.
 
-* Filter the visual on the canvas. To see the filters, go to the Filter's pane and select the arrow in the upper right corner.
-         :::image type="content" source="./media/end-user-insights/power-bi-filter.png" alt-text=" Screenshot of a tile and the insights cards with the filter menu expanded and highlighted.":::
+- Filter the visual on the canvas. To see the filters, go to the Filter's pane and select the arrow in the upper right corner.
 
-* You can run insights on the insight card itself. Insights on insights is often referred to as **related insights**. To generate related insights, select an insight card to make it active. It moves to the left side of the report canvas, and new cards, based solely on the data in that single insight, display along the right. Filters are available for the new insight card as well.
-             :::image type="content" source="./media/end-user-insights/power-bi-insights-card.png" alt-text="Screenshot of a related insight (highlighted) with the filter menu expanded":::
+   :::image type="content" source="./media/end-user-insights/power-bi-filter.png" alt-text=" Screenshot of a tile and the insights cards with the filter menu expanded and highlighted.":::
+
+- You can run insights on the insight card itself. Insights on insights is often referred to as **related insights**. To generate related insights, select an insight card to make it active. It moves to the left side of the report canvas, and new cards, based solely on the data in that single insight, display along the right. Filters are available for the new insight card as well.
+
+   :::image type="content" source="./media/end-user-insights/power-bi-insights-card.png" alt-text="Screenshot of a related insight (highlighted) with the filter menu expanded.":::
 
 To return to your report, select **Exit Focus mode**, located in the upper left corner of the screen.
 
@@ -57,5 +60,5 @@ To return to your report, select **Exit Focus mode**, located in the upper left 
 
 ## Related content
 
-* [Use the Analyze feature to explain fluctuations in report visuals](end-user-analyze-visuals.md)
-* [Types of insights supported by Power BI](end-user-insight-types.md)
+- [Use the Analyze feature to explain fluctuations in report visuals](end-user-analyze-visuals.md)
+- [Types of insights supported by Power BI](end-user-insight-types.md)

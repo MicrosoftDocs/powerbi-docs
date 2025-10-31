@@ -31,7 +31,7 @@ ms.reviewer: saurkumar
   
 -   [Area Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/area-charts-report-builder.md): All except the 3D area charts  
   
--   [Pie Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/pie-charts-report-builder.md): And doughnut charts, both flat and 3D, but not the other shapes such as funnel and pyramid charts.  
+-   [Pie Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/pie-charts-report-builder.md): And donut charts, both flat and 3D, but not the other shapes such as funnel and pyramid charts.  
   
 -   [Range Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/range-charts-report-builder.md): The stock, candlestick, error bar, and box plot charts.  
   

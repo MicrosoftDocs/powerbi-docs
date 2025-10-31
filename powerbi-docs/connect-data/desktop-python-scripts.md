@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date:  10/08/2025
+ms.date: 10/01/2025
 LocalizationGroup: Connect to data
 #customer intent: As a developer, I want to learn how to run Python scripts in Power BI Desktop and import the resulting datasets into a data model so that I can create reports and share them on the Power BI service.
 ---

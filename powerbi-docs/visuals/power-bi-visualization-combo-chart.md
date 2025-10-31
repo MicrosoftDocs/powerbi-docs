@@ -8,7 +8,7 @@ ms.custom: video-removed, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 10/21/2025
+ms.date: 10/01/2025
 LocalizationGroup: Visualizations
 ai-usage: ai-assisted
 ---
@@ -168,5 +168,5 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 
 ## Related content
 
-- [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
+- [Pie and donut charts in Power BI](power-bi-visualization-pie-donut-chart.md)
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
