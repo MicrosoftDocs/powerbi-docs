@@ -126,6 +126,7 @@ def main():
     ap.add_argument("--docroot", default="powerbi-docs")
     ap.add_argument("--limit", type=int, default=50)
     ap.add_argument("--fresh-window-days", type=int, default=int(os.environ.get("FRESH_WINDOW_DAYS", "365")))
+    ap.add_argument("--offset", type=int, default=0)
     args = ap.parse_args()
 
     src = pathlib.Path(args.input)
@@ -159,6 +160,8 @@ def main():
 
     # Iterate and build selection until we reach limit
     selected, summary_rows, skipped_rows = [], [], []
+    start = args.offset
+    for _, r in df.iloc[start:].iterrows():
     window = args.fresh_window_days
     cutoff = (datetime.date.today() - datetime.timedelta(days=window)).isoformat()
 
