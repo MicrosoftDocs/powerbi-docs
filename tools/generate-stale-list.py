@@ -162,8 +162,8 @@ def main():
     selected, summary_rows, skipped_rows = [], [], []
     start = args.offset
     for _, r in df.iloc[start:].iterrows():
-    window = args.fresh_window_days
-    cutoff = (datetime.date.today() - datetime.timedelta(days=window)).isoformat()
+        window = args.fresh_window_days
+        cutoff = (datetime.date.today() - datetime.timedelta(days=window)).isoformat()
 
     for _, r in df.iterrows():
         if len(selected) >= args.limit:
