@@ -1,5 +1,5 @@
 ---
-title: Create a dynamic subscription for a Power BI report 
+title: Create a Dynamic Subscription for a Power BI Report 
 description: Learn how to create per-recipient report subscriptions based on filters that you select.
 author: julcsc
 ms.author: juliacawthra
@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/09/2024
+ms.date: 10/30/2025
 LocalizationGroup: Common tasks
 ms.custom:
   - retail analysis sample
@@ -19,21 +19,18 @@ ms.custom:
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-
 Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which filters are applied to their version of the report.
 
 Dynamic per recipient subscriptions are available for paginated reports and for Power BI reports. This article pertains to Power BI reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
 
-The dynamic subscription filters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective filters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what filters applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
-
+The dynamic subscription filters are stored in a separate Power BI semantic model. The semantic model defines the mapping between the recipients and their respective filters. When you send out the report, the latest data available in your semantic model determines who receives a subscription and what filters are applied to it. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
 
 ## Prerequisites
 
 - A report to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses)).
 - Build permissions to a Power BI semantic model that contains recipient data. This data includes the email addresses of your recipients and filter values that should be applied for each recipient.  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
-
-- The user cannot be a [guest user](/fabric/enterprise/powerbi/service-admin-entra-b2b). Guest users [cannot subscribe others](/power-bi/collaborate-share/end-user-subscribe?tabs=creator) and dynamic subscriptions can always bring in "others" through datasets. Therefore, guest users cannot create dynamic subscriptions. 
+- The user can't be a [guest user](/fabric/enterprise/powerbi/service-admin-entra-b2b). Guest users [can't subscribe others](/power-bi/collaborate-share/end-user-subscribe?tabs=creator) and dynamic subscriptions can always bring in "others" through datasets. Therefore, guest users can't create dynamic subscriptions.
 
 ## Create a dynamic subscription
 
@@ -43,9 +40,9 @@ For users familiar with SQL Server Reporting Services (SSRS), this feature is si
 
 ### Connect to recipient data
 
-1. The sample *Regional sales* report has a table that we can use. The stacked column chart **By team + user** has data for managers and their employees. Select **By Team + User** if it isn't already active. Right click one of the bars and select **Drill down** to see the employees for that manager.
+1. The sample *Regional sales* report has a table that we can use. The stacked column chart **By team + user** has data for managers and their employees. Select **By Team + User** if it isn't already active. Right-click one of the bars and select **Drill down** to see the employees for that manager.
 
-    :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-drill-subscription.png" alt-text="Screenshot of the Power BI service showing Subscribe to report button.":::  
+    :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-drill-subscription.png" alt-text="Screenshot of the Power BI service showing the Subscribe to report button.":::  
 
 1. Select **Subscribe to report** > **Create a subscription**.
 
@@ -59,7 +56,7 @@ For users familiar with SQL Server Reporting Services (SSRS), this feature is si
 
     In some organizations, there might be a corporate employee Power BI semantic model that fits the purpose. Or, you might need to create a new semantic model that contains email addresses, and values for report filters. The critical piece of data is the email addresses. In order for you to set the filters on a per-recipient basis, the semantic model needs to include the email addresses of all potential recipients. Select **Next**. In this example, our mapping semantic model is named **Contoso sales employees**.
 
-    :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-employee.png" alt-text="Screenshot of the Power BI service showing Connect to recipient data step of the wizard, with employee data outlined in red.":::
+    :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-employee.png" alt-text="Screenshot of the Power BI service showing the Connect to recipient data step of the wizard, with employee data outlined in red.":::
 
 ### Select and filter data
 
@@ -89,7 +86,7 @@ In this example, we use dynamic content for **Recipients** and **Email subject**
 
 Use the **Map your data** window to set dynamic filters. To use the current state of the report as your starting point, select **Include my changes**. This selection creates the subscription with updates you made to filters, spotlights, drill states, and more. If you don't want dynamic filters to be applied to the current state of the report, uncheck **Include my changes**. Unchecking this option uses the default state of the report. 
 
-Select which report field is used to map to a value in the *Contoso sales employee* semantic model. In this example, both fields have the same name which isn't the case in most situations.
+Select which report field is used to map to a value in the *Contoso sales employee* semantic model. In this example, both fields have the same name, which isn't the case in most situations.
 
 :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-map-data.png" alt-text="Screenshot of the Power BI service showing the Map your data screen.":::
 
@@ -102,7 +99,7 @@ In the **Set the schedule** window, create a schedule for your dynamic subscript
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You might choose daily, weekly, or monthly. You also can adjust your time zone.
 
     > [!TIP]
-   > To receive a subscription email only on certain days, select Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
+    > To receive a subscription email only on certain days, select Weekly and then select the weekday checkboxes. If you select Monthly, enter the days of the month you wish to receive the subscription email.
 
 1. Choose a scheduled time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone.
 
@@ -124,14 +121,13 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 
 ## Considerations and limitations
 
-- Rendering the report uses some of your capacity. It's classified as an **interactive** activity.
-- Your recipient semantic model has a limit of 1000 rows of recipients. If the recipient list exceeds 1000 rows at any point, only the first 1000 recipients receive the subscription email, and the subscription creator receives an error email.
+- Rendering the report is classified as an **interactive** activity, so it uses some of your capacity.
+- Your recipient semantic model has a limit of 1,000 rows of recipients. If the recipient list exceeds 1,000 rows at any point, only the first 1,000 recipients receive the subscription email, and the subscription creator receives an error email.
 - Receiving the subscription email doesn't guarantee access to the report. Report access is set separately.
 - This feature supports single value filters and doesn't support filters with multiple value options.
 - If the names of columns or tables are changed in the semantic model while the subscription is processing, dynamic filters might not be applied properly.
-- Resolutions below 400px are not supported for Dynamic per recipient subscriptions.
-- SSAS Live Connection is not supported
-
+- Resolutions below 400 px aren't supported for Dynamic per recipient subscriptions.
+- SQL Server Analysis Services (SSAS) Live Connection isn't supported.
 
 ## Related content
 
