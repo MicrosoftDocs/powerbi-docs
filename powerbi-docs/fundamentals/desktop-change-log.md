@@ -24,7 +24,7 @@ See [What's new in Power BI](whats-new.md) for more information about new featur
 Bug fixes/improvements:
 
 - Feature update to treat calculated tables as refreshable.
-- Resolved an issue where the user sees an error "This query contains transformations that can't be used for DirectQuery" when using the Snowflake connector in DirectQuery mode. Also resolved the "This step results in a query that is not supported in DirectQuery mode. Switch all tables to Import mode" error seen in the Snowflake connector.
+- Resolved an issue where the user sees the "This query contains transformations that can't be used for DirectQuery" error when using the Snowflake connector in DirectQuery mode. Also resolved the "This step results in a query that is not supported in DirectQuery mode. Switch all tables to Import mode" error seen in the Snowflake connector.
 - Fixed scenarios when the user opens PBIP files with the connection or file errors and the Power BI Desktop hangs in the noninitialized state.
 
 ## September 2025 QFE 2 
