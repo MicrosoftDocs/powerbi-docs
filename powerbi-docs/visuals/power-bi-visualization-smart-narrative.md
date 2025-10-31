@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 10/24/2025
 ms.custom: video-01UrT-z37sw, sample-2020SU09-Blog-Demo
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
@@ -30,11 +30,10 @@ This article describes how to add:
 
 ## Watch the video
 
-Watch Justyna show how to use smart narratives, then try it out yourself using the sample file, below the video.
+Watch Justyna show how to use smart narratives, then try it out yourself using the sample file, following the video.
 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
-
 > [!VIDEO https://www.youtube.com/embed/01UrT-z37sw]
 
 ## Get started
@@ -71,7 +70,7 @@ The smart narrative summary is highly customizable. You can edit or add to the e
 
 :::image type="content" source="media/power-bi-visualization-smart-narratives/6.png" alt-text="Screenshot showing text-formatting commands on a toolbar.":::
 
-To customize the summary or add your own insights, use *dynamic values*. You can map text to existing fields and measures or use natural language to define a new measure to map to text. For example, to add information about the number of returned items in the sample file, add a value.
+To customize the summary or add your own insights, use *dynamic values*. You can map text to existing fields and measures or use natural language to define a new measure to map to text. For example, to add information about the number of returned items in the sample file, add a value.
 
 As you type a value name, you can choose from a list of suggestions as you do in a Q&A visual. So, in addition to asking questions of your data in a Q&A visual, you can now create your own calculations without even using Data Analysis Expressions (DAX).
   
@@ -103,7 +102,7 @@ You can also do more advanced filtering. For example, in the sample file, look a
 
 :::image type="content" source="media/power-bi-visualization-smart-narratives/12.gif" alt-text="Screenshot showing how to select a trend line to filter the summary to show only that trend.":::
 
-There's a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates up to four summaries per visual and up to 16 per page. The summaries that are generated for a page depend on the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that aren't present while summarizing the whole page.
+There's a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates up to four summaries per visual and up to 16 per page. The summaries that are generated for a page depend on the location and size of visuals, and it avoids generating the same kind of summaries for different visuals. Therefore, summarizing just the visual can generate more summaries that aren't present while summarizing the whole page.
 
 ## Add a smart narrative icon to a visual
 
@@ -114,7 +113,7 @@ You can add an optional icon to the header of a visual that triggers an on-deman
 
     :::image type="content" source="media/power-bi-visualization-smart-narratives/visual-smart-narrative-icon-on.png" alt-text="Screenshot showing how to set the Smart narrative icon to On.":::
 
-When your report readers hover over that visual, they can see and select the **Smart narrative** icon, to expose a text explanation of the visual. Unlike the other smart narratives, they can't pin this narrative to the report.
+When your report readers hover over that visual, they can see and select the **Smart narrative** icon to expose a text explanation of the visual. Unlike the other smart narratives, they can't pin this narrative to the report.
 
 :::image type="content" source="media/power-bi-visualization-smart-narratives/visual-smart-narrative-icon-selected.png" alt-text="Screenshot showing selecting the Smart narrative icon.":::
 
@@ -135,8 +134,8 @@ The smart narrative feature doesn't support the following functionality:
 - Map visual with non-aggregated latitude or longitude
 - Multi-row card with more than three categorical fields
 - Cards with non-numeric measures
-- Tables, matrices, R visuals or Python visuals, custom visuals
-- Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field
+- Tables, matrices, R visuals, Python visuals, or custom visuals
+- Summaries of visuals with columns grouped by other columns and for visuals that are built on a data group field
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
 - Summaries of visuals that contain on-the-fly calculations like QnA arithmetic, complex measures such as percentage of grand total and measures from extension schemas.
