@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/22/2025
+ms.date: 10/31/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,16 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](whats-new.md) for more information about new features. 
+
+## October 2025 QFE 1
+
+*Version  2.148.1226.0 Released: October 28, 2025*
+
+Bug fixes/improvements:
+
+- Feature update to treat calculated tables as refreshable.
+- Resolved an issue where the user sees an error "This query contains transformations that can't be used for DirectQuery" when using the Snowflake connector in DirectQuery mode. Also resolved the "This step results in a query that is not supported in DirectQuery mode. Switch all tables to Import mode" error seen in the Snowflake connector.
+- Fixed scenarios when the user opens PBIP files with the connection or file errors and the Power BI Desktop hangs in the noninitialized state.
 
 ## September 2025 QFE 2 
 
