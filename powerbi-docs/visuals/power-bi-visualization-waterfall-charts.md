@@ -12,7 +12,6 @@ ms.date: 10/01/2025
 ms.custom: sample-Retail-Analysis
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
-ai-usage: ai-assisted
 ---
 
 # Waterfall charts in Power BI
