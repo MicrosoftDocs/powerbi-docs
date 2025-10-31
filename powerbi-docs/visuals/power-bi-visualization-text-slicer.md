@@ -7,7 +7,6 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-LocalizationGroup: Visualizations
 ai-usage: ai-assisted
 ms.date: 10/01/2025
 LocalizationGroup: Visualizations
