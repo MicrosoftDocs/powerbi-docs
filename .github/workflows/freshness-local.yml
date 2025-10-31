@@ -24,6 +24,7 @@ jobs:
   freshness:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false         # <— keep all 5 chunks running
       matrix:
         chunk: [0, 1, 2, 3, 4] # 5 PRs per run
     steps:
@@ -41,18 +42,43 @@ jobs:
           submodules: false
           lfs: false
 
+      - name: Verify export exists
+        id: has_xlsx
+        run: |
+          if [ -f "${{ env.REPORT_XLSX }}" ]; then
+            echo "present=true" >> $GITHUB_OUTPUT
+          else
+            echo "::warning::${{ env.REPORT_XLSX }} not found on $GITHUB_REF_NAME; skipping this chunk."
+            echo "present=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Materialize export blob (blobless safety)
+        if: ${{ steps.has_xlsx.outputs.present == 'true' }}
+        run: git checkout -- "${{ env.REPORT_XLSX }}" || true 
+        
+      - name: Cache pip (optional)
+        if: ${{ steps.has_xlsx.outputs.present == 'true' }}
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          # If you don’t have a requirements file, a static key is fine; change when deps change
+          key: ${{ runner.os }}-pip-v1
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install Python deps
+        if: ${{ steps.has_xlsx.outputs.present == 'true' }}
         run: |
           python -m pip install --upgrade pip
           pip install pandas openpyxl python-dateutil pyyaml
 
-      # Generate stale batch with offset for chunk
       - name: Generate stale batch
+        if: ${{ steps.has_xlsx.outputs.present == 'true' }}
         run: |
           python tools/generate-stale-list.py \
             --input "${{ env.REPORT_XLSX }}" \
