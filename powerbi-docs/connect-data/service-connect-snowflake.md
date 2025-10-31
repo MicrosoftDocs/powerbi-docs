@@ -59,7 +59,7 @@ To turn on SSO for a semantic model:
 
    :::image type="content" source="media/service-connect-snowflake/dataset-settings-2.png" alt-text="Screenshot of semantic models and dataflows in a workspace with more and settings highlighted.":::
 
-1. Select **Data source credentials** and sign in. You can sign the semantic model into Snowflake with Basic or OAuth2 (Microsoft Entra ID) credentials. By using Microsoft Entra ID, you can enable SSO in the next step.
+1. Select **Data source credentials** and sign in. You can sign the semantic model into Snowflake with Basic, KeyPair, or OAuth2 (Microsoft Entra ID) credentials. By using Microsoft Entra ID, you can enable SSO in the next step.
 1. Select the **End users use their own OAuth2 credentials when accessing this data source via DirectQuery** option. This setting enables Microsoft Entra SSO. The Microsoft Entra credentials are sent for SSO.
 
    :::image type="content" source="media/service-connect-snowflake/snowflake-sso-cred-ui.png" alt-text="Screenshot of the configuration dialog with OAuth2 selected as the authentication method.":::
