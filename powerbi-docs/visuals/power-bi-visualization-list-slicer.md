@@ -10,8 +10,8 @@ ms.topic: how-to
 LocalizationGroup: Visualizations
 ai-usage: ai-assisted
 ms.date: 10/01/2025
-LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to learn about the List slicer (preview)  feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.---
+#customer intent: As a Power BI user, I want to learn about the List slicer (preview)  feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
+---
 
 # Create and use a List slicer (preview)
 
