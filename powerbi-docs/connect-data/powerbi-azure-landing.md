@@ -48,4 +48,4 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
 
 **Enrich Power BI with Azure Machine Learning**:
 
-- [Azure Machine Learning and Power BI](/power-bi/transform-model/dataflows/dataflows-machine-learning-integration)
+- [Azure Machine Learning and Power BI](/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services)

@@ -53,7 +53,7 @@ There are all sorts of interesting things you can do with dataflows. For more in
 * [Configure and consume a dataflow](dataflows/dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows/dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows/dataflows-premium-features.md)
-* [AI with dataflows](dataflows/dataflows-machine-learning-integration.md)
+* [Power BI implementation planning - Integration with other services](../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 
 There are also articles about **Power BI Desktop** that you might find useful:
 

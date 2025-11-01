@@ -500,8 +500,8 @@
       href: desktop-insights.md
     - name: Use insights to discover how distributions vary
       href: desktop-insights-find-where-different.md
-    - name: Use Machine Learning and Cognitive Services with dataflows
-      href: ../transform-model/dataflows/dataflows-machine-learning-integration.md 
+    - name: Power BI implementation planning - Integration with other services
+      href: ../guidance/powerbi-implementation-planning-integration-with-other-services.md 
     - name: Anomaly detection
       href: ../visuals/power-bi-visualization-anomaly-detection.md
     - name: Decomposition tree visuals
