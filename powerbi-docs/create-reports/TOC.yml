@@ -500,7 +500,7 @@
       href: desktop-insights.md
     - name: Use insights to discover how distributions vary
       href: desktop-insights-find-where-different.md
-    - name: Power BI implementation planning - Integration with other services
+    - name: Integration with other services
       href: ../guidance/powerbi-implementation-planning-integration-with-other-services.md 
     - name: Anomaly detection
       href: ../visuals/power-bi-visualization-anomaly-detection.md
