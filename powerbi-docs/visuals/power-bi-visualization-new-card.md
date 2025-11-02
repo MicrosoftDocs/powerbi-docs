@@ -12,7 +12,7 @@ ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the card visual so that I can effectively and more easily build card visuals in Power BI Desktop.
 ---
-
+<!-- markdownlint-disable MD024 -->
 # Create a Card visual in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
@@ -56,61 +56,60 @@ Before we begin, if you haven't already done so, refer to the **[Prerequisites](
 
 There are three similar ways to create a Card visual:
 
-- Start from the Insert ribbon, and select New visual, then select the Card visual icon from the Visualizations pane, or
-- Start from the Visualizations pane, and select the Card visual icon, or lastly,
-- Expand the Data pane, and select the necessary data fields, and then select the Card visual icon from the Visualizations pane.  
+- Start from the **Insert** ribbon, and select **New visual**, then select the **Card visual** icon from the **Visualizations** pane, or
+- Start from the **Visualizations** pane, and select the **Card visual** icon, or lastly,
+- Expand the **Data** pane, and select the necessary data fields, and then select the **Card visual** icon from the **Visualizations** pane.  
 
 For this quick three-step guide, let's use the first option:
 
 1. In the **Insert** ribbon, select **New visual**. When the visual placeholder appears on the report canvas, expand the **Visualizations** pane and select the **Card visual** icon in the **Build visual** menu.
 
-    :::image type="content" source="media/power-bi-visualization-card/build-card-desktop-step-1.png" alt-text="Screenshot with the Insert ribbon, New visual button, Visualizations pane, Build visual icon, and the Card visual icon, all highlighted." lightbox="media/power-bi-visualization-card/build-card-desktop-step-1.png":::
+   :::image type="content" source="media/power-bi-visualization-card-visual/build-card-desktop-step-1.png" alt-text="Screenshot with the Insert ribbon, New visual button, Visualizations pane, Build visual icon, and the Card visual icon, all highlighted." lightbox="media/power-bi-visualization-card-visual/build-card-desktop-step-1.png":::
 
-2. To add data to the visual, let’s use the **Data pane** in this example. Adding data can be done by selecting each field in the **Data pane**, or dragging the fields to the field wells on the **Visualizations pane**, or dragging the fields directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **StoreCount**, then expand the **TotalSalesTY** subgroup, and add **Value**. You'll notice that each data field you add is displayed as its own card.
+2. To add data to the visual, let’s use the **Data** pane in this example. Adding data can be done by selecting each field in the **Data** pane, or dragging the fields to the field wells on the **Visualizations** pane, or dragging the fields directly to the visual placeholder in the report canvas. Expand the **Sales** group, then drag **StoreCount** and **TotalSalesLY** to the **Value** field well. You'll notice that each data field you added is displayed as its own card.
 
-    :::image type="content" source="media/power-bi-visualization-card/build-card-desktop-step-2.png" alt-text="Screenshot: Data pane, Sales group expanded, StoreCount + TotalSalesTV measures highlighted, selected, and added to Data field in Visualizations pane." lightbox="media/power-bi-visualization-card/build-card-desktop-step-2.png":::
+   :::image type="content" source="media/power-bi-visualization-card-visual/build-card-desktop-step-2.png" alt-text="Screenshot: Data pane highlighted, StoreCount + TotalSalesLY measures highlighted under Sales group, and added to Value field well in Visualizations pane." lightbox="media/power-bi-visualization-card-visual/build-card-desktop-step-2.png":::
 
-3. To customize your visual, select the Format visual icon in the Visualizations pane, granting you access to all available settings. This allows you to tailor the chart's appearance and functionality to your specific requirements as shown in the example.
+3. To customize your visual, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available settings under that **Visual** and **General** tabs. This allows you to tailor the chart's appearance and functionality to your specific requirements as shown in the example.
 
-    :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-3.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-3.png":::
+   :::image type="content" source="media/power-bi-visualization-card-visual/build-card-desktop-step-3.png" alt-text="Screenshot: Visualizations pane selected, Format visual icon selected. Visual + General tabs highlighted, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/build-card-desktop-step-3.png":::
 
 # [Power BI service](#tab/powerbi-service)
 
 Before we begin, if you haven't already done so, refer to the **[Prerequisites](#prerequisites)** section above, and follow the steps under the tab for **Power BI Desktop**.
 
-There are three similar ways to create a Card visual:
+There are two ways to create a Card visual:
 
-- Start from the Insert ribbon, and select New visual, then select the Card visual icon from the Visualizations pane, or
-- Start from the Visualizations pane, and select the Card visual icon, or lastly,
-- Expand the Data pane, and select the necessary data fields, and then select the Card visual icon from the Visualizations pane.  
+- Start from the **Visualizations** pane, and select the **Card visual** icon, or
+- Expand the **Data** pane, and select the necessary data fields, and then select the **Card visual** icon from the **Visualizations** pane.  
 
 For this quick three-step guide, let's use the first option:
 
-1. In the **Insert** ribbon, select **New visual**. When the visual placeholder appears on the report canvas, expand the **Visualizations** pane and select the **Card visual** icon in the **Build visual** menu.
+1. From the **Visualizations** pane, ensure the **Build visual** tab is selected, then select the **Card visual** icon in the visual gallery.
 
-    :::image type="content" source="media/power-bi-visualization-card/build-card-desktop-step-1.png" alt-text="Screenshot with the Insert ribbon, New visual button, Visualizations pane, Build visual icon, and the Card visual icon, all highlighted." lightbox="media/power-bi-visualization-card/build-card-desktop-step-1.png":::
+    :::image type="content" source="media/power-bi-visualization-card-visual/build-card-service-step-1.png" alt-text="Screenshot with Visualizations pane, Build visual icon, and the Card visual icon, all highlighted." lightbox="media/power-bi-visualization-card-visual/build-card-service-step-1.png":::
 
-2. To add data to the visual, let’s use the **Data pane** in this example. Adding data can be done by selecting each field in the **Data pane**, or dragging the fields to the field wells on the **Visualizations pane**, or dragging the fields directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **StoreCount**, then expand the **TotalSalesTY** subgroup, and add **Value**. You'll notice that each data field you add is displayed as its own card.
+2. To add data to the visual, let’s use the **Data pane** in this example. Adding data can be done by selecting each field in the **Data pane**, or dragging the fields to the field wells on the **Visualizations pane**, or dragging the fields directly to the visual placeholder in the report canvas. Expand the **Sales** group, then drag **StoreCount** and **TotalSalesLY** to the **Value** field well. You'll notice that each data field you added is displayed as its own card.
 
-    :::image type="content" source="media/power-bi-visualization-card/build-card-desktop-step-2.png" alt-text="Screenshot: Data pane, Sales group expanded, StoreCount + TotalSalesTV measures highlighted, selected, and added to Data field in Visualizations pane." lightbox="media/power-bi-visualization-card/build-card-desktop-step-2.png":::
+    :::image type="content" source="media/power-bi-visualization-card-visual/build-card-service-step-2.png" alt-text="Screenshot: Data pane highlighted, Sales group expanded, StoreCount + TotalSalesLY measures highlighted and added to Value field well in Visualizations pane." lightbox="media/power-bi-visualization-card-visual/build-card-service-step-2.png":::
 
-3. To customize your visual, select the Format visual icon in the Visualizations pane, granting you access to all available settings. This allows you to tailor the chart's appearance and functionality to your specific requirements as shown in the example.
+3. To customize your visual, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available settings under that **Visual** and **General** tabs. This allows you to tailor the chart's appearance and functionality to your specific requirements as shown in the example.
 
-    :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-3.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-3.png":::
+   :::image type="content" source="media/power-bi-visualization-card-visual/build-card-service-step-3.png" alt-text="Screenshot: Visualizations pane, Format visual icon, and Visual + General tabs all highlighted, with Visual tab displaying format controls." lightbox="media/power-bi-visualization-card-visua;/build-new-card-service-step-3.png":::
 
 ---
 
 Congratulations! You've successfully created a card visual with Power BI. Now that you understand how to build a Card visual, let's explore some of the other key features that this visual offers.
 
-### Key features of the Card visual
+## Key features of the Card visual
 
-#### Working with images
+### Working with images
 
 The Card visual in Power BI allows users to create visually appealing cards that combine metrics with two image options for better context and branding.
 
-Callout images are designed for subtle enhancements that are perfect for branding elements or small visual cues without overwhelming the metric display. 
+Callout images are designed for subtle enhancements that are perfect for branding elements or small visual cues without overwhelming the metric display.
 
-On the other hand, adding hero images, a term widely used by designers to describe a large, prominent image that captures attention, allows report creators to showcase impactful visuals such as product photos, campaign graphics, or branded imagery directly within the card.
+On the other hand, adding 'hero' images, a term widely used by designers to describe a large, prominent image that captures attention, allows report creators to showcase impactful visuals such as product photos, campaign graphics, or branded imagery directly within the card.
 
 In the following steps, you’ll learn how to set up and customize the Card visual in Power BI, ensuring your report delivers a visually rich and intuitive experience. This will help you combine data with images in an easy to follow guide that includes how to:
 
@@ -120,43 +119,114 @@ In the following steps, you’ll learn how to set up and customize the Card visu
 
 1. **Build a Card visual**
 
-    From the **Visualizations** pane, ensure the **Build visual** icon is selcted, and choose the **Card visual** from the gallery. This adds a visual placeholder to the canvas.
+    From the **Visualizations** pane, ensure the **Build visual** icon is selcted, and choose the **Card visual** from the gallery to add a visual placeholder to the canvas.
 
-    Then, from the **Data** pane, expand the **Sales** dropdown, and drag the **Store count** measure to the **Value** field well to create your first card.
+    Then, from the **Data** pane, expand the **Sales** group, and drag the **Store count** measure to the **Value** field well to create your first card.
+
+    :::image type="content" source="media/power-bi-visualization-card-visual/build-card-images-step-1.png" alt-text="Screenshot: Visualizations pane, Build visual icon, Card visual icon, all highlighted, plus Store Count highlighted in Data pane and dragged to Value field well ." lightbox="media/power-bi-visualization-card-visual/build-card-images-step-1.png":::
 
 2. **Add data the the visual**
 
-    Continuing from the **Data** pane, drag the **DM** (*District Managers*) measure from the **District** dropdown, and add it to the **Categories** field well to display multiple cards showing the various managers.
+    Continuing from the **Data** pane, drag **DM** (*District Managers*) from the **District** group, and add it to the **Categories** field well to display multiple cards showing the various managers.
 
-    Then, to narrow down what appears in the Card visual, from the **Filters** pane, expand the filter card, and select only the first two district managers. This keeps your Card visual focused on the selected data.
+    Then, to narrow down what appears in the Card visual, from the **Filters** pane, expand the **DM** filter card, and select only the first two district managers. This keeps your Card visual focused on the selected data.
+
+    :::image type="content" source="media/power-bi-visualization-card-visual/build-card-images-step-2.png" alt-text="Screenshot: Data pane with DM field highlighted and dragged to Categories field well, plus Filter pane and DM filter highlighted with first two DM names selected." lightbox="media/power-bi-visualization-card-visual/build-card-images-step-2.png":::
 
 3. **Add a hero image**
 
-    Now it’s time to make the visual pop. With the Card visual still selected on the canvas, from the **Visualizations** pane, select the **Format visual** icon. Under the **Visual** tab, expand the **Image** card, and turn on the **Image toggle**.
+    Now it’s time to make the visual pop. With the Card visual still selected on the canvas, from the **Visualizations** pane, select the **Format visual** icon. Under the **Visual** tab, expand the **Image** card, and in the **Apply setting to** section, select **Store Count** in the **Cards** dropdown.
 
-    Next, choose **Select from data** as the **Image source**, and drag the **DM_Pic_fl** field into the **Data** field well. This adds a hero image below your metric area creating a strong visual cue.
+    Next, expand the **Image** controls, and turn on the **Image toggle**. For the **Image source** choose **Select from data** and drag the **DM_Pic_fl** field into the **Data** field well. This adds a hero image below your metric area creating a strong visual cue.
+
+    > [!TIP]
+    > A 'hero' image is a term widely used by designers to describe a large, prominent image that captures attention
+
+    :::image type="content" source="media/power-bi-visualization-card-visual/build-card-images-step-3.png" alt-text="Screenshot: Visualizations pane, Format visual icon, Visual tab all highlighted, Store count selected in Image>Apply settings to>Cards, Image toggle ON, Source is Data, DM_pic_fl field placed in Data field well." lightbox="media/power-bi-visualization-card-visual/build-card-images-step-3.png":::
+
+    > [!TIP]
+    > You may need to resize the Card visual on the canvas to see everything clearly and avoid truncated text or images.
 
 4. **Add a callout image**
 
-    Here’s where the **Callout image** comes in. From the **Visualizations** pane, with the **Format visual** icon selected, expand the **Callout** card, and ensure **Store Count** is selected in the **Cards** section of **Apply settings to**.
+    Here’s where the **Callout image** comes in. From the **Visualizations** pane, with the **Format visual** icon selected, expand the **Callout** card, and ensure **Store Count** is selected from the **Cards** dropdown in the **Apply settings to** control.
 
-    Then, turn on the **Image toggle** in the **Image** controls, and select **Upload Image** as the **Image type**. Browse your device for an approiate image, and select **Open** to add the image to the visual. This image sits in the Callout section, making it perfect for subtle branding or quick visual hints without cluttering the card.
+    Then, expand the **Image** controls, turn on the **Image toggle**, and select **Upload Image** as the **Image type**. Browse your device for an approiate image, and select **Open** to add the image to the visual. This image sits in the Callout section, making it perfect for subtle branding or quick visual hints without cluttering the card.
 
-5. **Adjust image position**
+    :::image type="content" source="media/power-bi-visualization-card-visual/build-card-images-step-4.png" alt-text="Screenshot: Visual tab highlighted, Store count is selected in Callout card > Apply settings to > Cards, Image toggle on, Image selected and uploaded from device." lightbox="media/power-bi-visualization-card-visual/build-card-images-step-4.png":::
 
-    Under Callout settings, pick Store Count, turn on the image toggle, and click Image Browse to upload a small logo or indicator. This image sits in the callout section, making it perfect for subtle branding or quick visual hints without cluttering the card.
+5. **Adjust image settings**
 
-#### Dynamic collage layout
+   Finally, let's tweak the image layout by setting the **Position** to **Left of text** and reducing the **Image are size** ao it complements your metric without stealing the spotlight.
 
-The Card visual includes a dynamic **Collage layout** that arranges multiple cards in a freeform style, offering a visually engaging alternative to traditional grid-based designs. This layout is ideal for dashboards that benefit from a more creative or informal presentation, as it automatically adapts to the content and available space.
+   :::image type="content" source="media/power-bi-visualization-card-visual/build-card-images-step-5.png" alt-text="Screenshot: Visualizations pane expanded, Format visual icon and Visual tab displayed, Image position set to Left of text, and Image area size set to 20%." lightbox="media/power-bi-visualization-card-visual/build-card-images-step-5.png":::
 
-You can enable it by navigating to the **Format pane**, selecting **Cards**, and choosing **Collage** under the **Layout** dropdown. The layout allows you to highlight one section while the other two share the remaining space, and it allows customization of the display order for the callout area, reference label, and image, ensuring your most important insights are always front and center.
+Now that you have learned about these image features, try your adding images to your Card visuals to make them more engaging and informative. Use 'hero' images for full visual storytelling and callout images for small, meaningful touches like logos or indicators. When used thoughtfully, these features turn plain metrics into polished, professional visuals that stand out.
 
-#### Additional styling capabilities
+### Card visual layout features
 
-The Card visual also brings expanded styling capabilities, giving you more control over the appearance of each card. These enhancements include advanced font settings (such as typeface, weight, and size), customizable backgrounds and borders, and conditional formatting options for both text and images. These settings are accessible in the **Format** pane under sections like **General** > **Style** and **Visual** > **Callout value**. With these tools, you can tailor the visual design to match your report themes, improve readability, and highlight key metrics more effectively.
+Now that you've learned about images in the previous section ([Working with images](#working-with-images)), let's continue our progress and dive into layout features that will make your visuals more organized and visually appealing. These settings allow you to control how multiple cards are displayed, adjust spacing, and customize the overall look and feel of your report.
 
-Take the time to familiarize yourself with the [Considerations and limitations](power-bi-visualization-card-visual-considerations.md) for card visuals.
+In the following steps, you’ll learn how to configure multi-card layouts, adjust gaps and scrolling behavior, and explore additional layout options like vertical and horizontal arrangements, to ensure your report looks clean, professional, and easy to navigate.
+
+> [!TIP]
+> Before learning about **Card visual layout features**, please take time to review the previous section, **[Working with images](#working-with-images)**.
+
+1. **Continuing from previous section, [Working with images](#working-with-images)**
+
+   After learning how to work with images, let's start learning about layout features by continuing the same card visual you created earlier.
+
+   Ready? Let's go. From the **Filters** pane, expand the **DM** filter card, and choose **Select all** district managers to give yourself a broader view. Then, in the **Data** pane, drag the **District** field into the **Values** field well, so that it is below the  field. This creates a second card inside each category, giving you a richer multi-card visual.
+
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-1.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-1.png":::
+
+2. **Switch to Multi-card layout**
+
+   From the **Visualizations** pane, select the **Format visual** icon, and under **Visual** tab, expand **Multi-category layout** card. In the **Layout** controls, change the **Style** dropdown to **Tiles**, and set the number of **Rows** to **2**. This instantly makes your layout more compact and visually appealing.
+
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-2.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-2.png":::
+
+3. **Adjust gaps and scrolling**
+
+   Expand the **Gap** control and set the **Vertical gap** to **20 px** for better spacing between cards. Then, in the **Overflow** control, switch the **Overflow style** to **Continuous Scroll**. This creates a smooth scrolling experience and keeps your report clean.
+
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-3.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-3.png":::
+
+4. **Explore table laout**
+
+   While still on the **Multi-card layout** card in the **Visualizations** pane, go back to the **Layout** controls and change the **Style** back to **Table**, and set the number of **Columns** to **2**. This gives you another way to view multiple cards side by side for better comparison.
+
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-4.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-4.png":::
+
+5. **Customize padding and background**
+
+   Expand the **Padding** control and set **Uniform padding** to **20 px**, then use the **Background** control and change the color to **Gray** for a subtle, professional look that can make your cards stand out.
+
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-5.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-5.png":::
+
+6. **Horizontal layout arrangement**
+
+   From the **Visualizations** pane, lets go back to **Cards** section, and use the **Layout** control to change the **Arrangement** to **Horizontal**. This is another layout option that can make your report feel more dynamic, and tailored to your design preferences.
+
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-6.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-6.png":::
+
+7. **Explore more formatting options**
+
+   Finally, now that you have learned about several card viisual layout features, take some time to explore  all the format settings under the **Format visual** tab. You’ll find multiple options to customize your card visuals, including everything from layout tweaks to color adjustments, so you can design a report that fits your exact requirements.
+
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-7.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-7.png":::
+
+Now that you've explored these layout settings, try customizing your Card visuals to create more organized and visually compelling reports. Use layout properties to group related metrics, guide the viewer’s eye, and add polish to your design. With just a few thoughtful adjustments, your Power BI visuals can go from functional to intuitive, so that things are smoother and more impactful.
+
+## Considerations and limitations
+
+### Format settings
+
+- The **(new) Card visual** became generally available as the **Card visual** with the November 2025 Power BI release. If you used the Card visual during the Public Preview phase, you may notice behavior or formatting changes that reflect the improvements that are included in the General Availibility release.
+- When formatting the Card visual, you might notice that some of the format settings are in a different or new location, or the name of the setting is changed.
+- In earlier versions of the Card visual, the **Callout** image was available as part of the **Image card**. This now been moved to the **Callout** section of **Format** pane.
+- Certain **Layout** arrangements may impact existing reports that used the Card visual during its Public Preview phase. This is due to updates made to all card components as part of the General Availability release, including enhancements to layout, styling, and image handling.
+- Users who previously relied on the Image card layout should update their visuals accordingly using the Format pane to access and configure the Callout image settings.
 
 ## Related content
 
