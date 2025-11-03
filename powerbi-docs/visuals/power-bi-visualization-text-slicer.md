@@ -7,6 +7,7 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
+ai-usage: ai-assisted
 ms.date: 10/01/2025
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the Text slicer (preview) feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
@@ -34,8 +35,7 @@ In the following guide, use the [Retail Analysis Sample PBIX file](https://downl
 1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.
 1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view.
 
-> [!NOTE]
-> To share your report with a Power BI colleague, both of you need individual Power BI Pro licenses, or you need to save the report in Premium capacity.
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Create a text slicer
 
