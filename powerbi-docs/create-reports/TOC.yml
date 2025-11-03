@@ -396,6 +396,8 @@
       href: ../visuals/power-bi-visualization-list-slicer.md
     - name: Text slicer (preview)
       href: ../visuals/power-bi-visualization-text-slicer.md
+    - name: Image visual
+      href: ../visuals/power-bi-visualization-image-visual.md
     - name: Column charts
       items: 
       - name: Create a column chart visual
