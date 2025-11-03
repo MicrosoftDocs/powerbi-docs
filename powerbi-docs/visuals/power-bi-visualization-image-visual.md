@@ -13,9 +13,9 @@ LocalizationGroup: Visualizations
 ---
 <!-- markdownlint-disable MD024 -->
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+# Create an Image visual in Power BI
 
-# Image visual overview
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 The **Image visual** is a dedicated visual introduced in Power BI to display static images directly into reports with greater flexibility and control than previous methods.
 
