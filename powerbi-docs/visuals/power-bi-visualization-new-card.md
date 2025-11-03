@@ -182,39 +182,39 @@ In the following steps, you’ll learn how to configure multi-card layouts, adju
 
 2. **Switch to Multi-card layout**
 
-   From the **Visualizations** pane, select the **Format visual** icon, and under **Visual** tab, expand **Multi-category layout** card. In the **Layout** controls, change the **Style** dropdown to **Tiles**, and set the number of **Rows** to **2**. This instantly makes your layout more compact and visually appealing.
+   From the **Visualizations** pane, select the **Format visual** icon, and under the **Visual** tab, expand the **Multi-category layout** card. In the **Layout** controls, change the **Style** dropdown to **Tiles**, and set the number of **Rows** to **2**. This instantly makes your layout more compact and visually appealing.
 
-   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-2.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-2.png":::
+      :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-2.png" alt-text="Power BI Format pane with Multi-category layout expanded; Layout Style set to Tiles and Rows set to 2." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-2.png":::
 
 3. **Adjust gaps and scrolling**
 
    Expand the **Gap** control and set the **Vertical gap** to **20 px** for better spacing between cards. Then, in the **Overflow** control, switch the **Overflow style** to **Continuous Scroll**. This creates a smooth scrolling experience and keeps your report clean.
 
-   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-3.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-3.png":::
+      :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-3.png" alt-text="Visualizations pane showing Multi-card layout with Vertical gap 20 px and Overflow style Continuous Scroll." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-3.png":::
 
 4. **Explore table laout**
 
    While still on the **Multi-card layout** card in the **Visualizations** pane, go back to the **Layout** controls and change the **Style** back to **Table**, and set the number of **Columns** to **2**. This gives you another way to view multiple cards side by side for better comparison.
 
-   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-4.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-4.png":::
+      :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-4.png" alt-text="Visuslizations pane: Multi-card layout set to Table, Columns 2; Visual tab visible; neutral tone." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-4.png":::
 
 5. **Customize padding and background**
 
    Expand the **Padding** control and set **Uniform padding** to **20 px**, then use the **Background** control and change the color to **Gray** for a subtle, professional look that can make your cards stand out.
 
-   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-5.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-5.png":::
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-5.png" alt-text="Visualizations pane: Multi-card layout expanded, Uniform padding 20 px, Background color is grey." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-5.png":::
 
 6. **Horizontal layout arrangement**
 
    From the **Visualizations** pane, lets go back to **Cards** section, and use the **Layout** control to change the **Arrangement** to **Horizontal**. This is another layout option that can make your report feel more dynamic, and tailored to your design preferences.
 
-   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-6.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-6.png":::
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-6.png" alt-text="Visualizations pane: Cards expanded, Apply settings to is set to All, Layout Arrangement is Horizontal." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-6.png":::
 
 7. **Explore more formatting options**
 
    Finally, now that you have learned about several card viisual layout features, take some time to explore  all the format settings under the **Format visual** tab. You’ll find multiple options to customize your card visuals, including everything from layout tweaks to color adjustments, so you can design a report that fits your exact requirements.
 
-   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-7.png" alt-text="Screenshot: Visualizations pane selected, expanded, Format visual icon selected. Visual + General tabs displayed, Visual tab displays format controls." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-7.png":::
+   :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-7.png" alt-text="Visualizations pane: Format visual, Visual tab selected, all Format controls highlighted." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-7.png":::
 
 Now that you've explored these layout settings, try customizing your Card visuals to create more organized and visually compelling reports. Use layout properties to group related metrics, guide the viewer’s eye, and add polish to your design. With just a few thoughtful adjustments, your Power BI visuals can go from functional to intuitive, so that things are smoother and more impactful.
 
