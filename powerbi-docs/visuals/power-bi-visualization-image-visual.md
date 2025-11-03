@@ -7,7 +7,7 @@ ms.reviewer: julcsc
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/30/2026
+ms.date: 10/30/2025
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the Image visual feature in Power BI Desktop, including how to create and customize the visual, so I can enhance my reports with interactiveImage visuals.
 ---
@@ -60,26 +60,26 @@ Before we begin, if you haven't already done so, refer to the **[Prerequisites](
 
 For this example, let’s create an Image visual starting from the Visualizations pane in Power BI Desktop.
 
-1. From the **Visualizations** pane, select any **Image visual** icon, and a visual placeholder is immediately added to the canvas.
+1. From the **Visualizations** pane, first select the **Build visual** icon, then select the **Image visual** icon, and a visual placeholder will be added to the canvas.
 
-   :::image type="content" source="../includes/media/power-bi-visualization-image-visual/build-image-visual-desktop-step-1.png" alt-text="Screenshot of the Visualizations pane highlighted, along with the Build visual icon and the Image visual icon also highlighted.":::
+   :::image type="content" source="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-1.png" alt-text="Insert ribbon, Image element, Visualizations pane, Build visual tab, Image visual icon, all highlighted, visual placeholder on canvas." lightbox="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-1.png":::
 
-2. To add an image to your Image visual, first expand the **Style card** from the **Image tab** on the **Format image** pane.
+2. To add an image to your Image visual, we'll use the **Format image** pane, and from the **Image tab**, let's expand the **Style card**.
 
-   Then, expand the **Image** controls to  access the **Image source** dropdown. Images can be added by selecting an option from the Image source dropdown: choose **Upload image** to add a file from your device, **Enter URL** to link to an online image, or **Select from data** to bind the image visual to an image in your data model.
+   Then, expand the **Image** controls to access the **Image source** dropdown. Choose **Upload image** to add a file from your device, **Enter URL** to link to an online image, or **Select from data** to bind the image visual to an image in your data model.
 
-   For this guide, let's select **Upload image** and choose any image you have readily available on your device.
+   For this guide, choose **Upload image** and pick an image from your local device.
 
    > [!TIP]
    > Large image files may affect report performance.
 
-   :::image type="content" source="../includes/media/power-bi-visualization-image-visual/build-column-image-visual-step-2.png" alt-text="Screenshot of the Format image pane highlighted, along with Image tab, Style card, Image control, and Image source all highlighted with Upload image selected in dropdown.":::
+   :::image type="content" source="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-2.png" alt-text="Power BI Format image pane: Image tab with Style card open, Image source set to Upload image, Open file dialog on canvas." lightbox="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-2.png":::
 
-3. After uploading an image from your device, let's customize the image. With the **Image** controls still expanded, you can modify Image Fit, Transparency, Image effects, and Alt text.
+3. After uploading an image from your device, while still on the **Format image** pane, you have access to a full suite of controls to customize the image from the **Image** tab.
 
-   For even greater customization, you can specifiy a Corner radius using the Shape controls, or stylize a border use the Border controls, or a include a Background color using the Background controls. This allows you to tailor the image's appearance and functionality to your specific requirements.
+   Take some time to explore all the customization options available. You can specifiy a **Corner radius** using the **Shape** controls, stylize a border use the **Border** controls, or a include a **Background color** using the **Background** controls. This array of options allows you to tailor the image's appearance and functionality to your specific requirements, as shown in the example.
 
-   :::image type="content" source="../includes/media/power-bi-visualization-image-visual/build-image-visual-desktop-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+   :::image type="content" source="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-3.png" alt-text="Both Format image pane and Image tab highlighed, Style card expanded displaying controls, with a formated image on canvas." lightbox="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-3.png"::::
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -89,24 +89,24 @@ For this example, let’s create a Image visual starting from the **Visualizatio
 
 1. To create your Image visual, we'll start in the **Visualizations pane**. With the **Build visual** icon selected, choose the **Image visual** icon, and a visual placeholder is added to the canvas.
 
-   :::image type="content" source="../includes/media/power-bi-visualization-image-visual/build-image-visual-service-step-1.png" alt-text="Screenshot of the Visualizations pane, with Build visual icon highlighted, and the three Image visual icon also highlighted.":::
+   :::image type="content" source="media/power-bi-visualization-image-visual/build-image-visual-service-step-1.png" alt-text="Visualizations pane, Build visual tab, Image visual icon, all highlighted, visual placeholder on canvas." lightbox="media/power-bi-visualization-image-visual/build-image-visual-service-step-1.png":::
 
-2. To add an image to your Image visual, first expand the **Style card** from the **Image tab** on the **Format image** pane.
+2. To add an image to your Image visual, we'll use the **Format image** pane, and from the **Image tab**, let's expand the **Style card**.
 
-   Then, expand the **Image** controls to  access the **Image source** dropdown. Images can be added by selecting an option from the Image source dropdown: choose **Upload image** to add a file from your device, **Enter URL** to link to an online image, or **Select from data** to bind the image visual to an image in your data model.
+   Then, expand the **Image** controls to access the **Image source** dropdown. Choose **Upload image** to add a file from your device, **Enter URL** to link to an online image, or **Select from data** to bind the image visual to an image in your data model.
 
-   For this guide, let's select **Upload image** and choose any image you have readily available on your device.
+   For this guide, choose **Upload image** and pick an image from your local device.
 
    > [!TIP]
    > Large image files may affect report performance.
 
-   :::image type="content" source="../includes/media/power-bi-visualization-image-visual/build-image-visual-service-step-2.png" alt-text="Screenshot of the Data pane highlighted, along with selected fields and the axes containing data fields also highlighted.":::
+   :::image type="content" source="media/power-bi-visualization-image-visual/build-image-visual-service-step-2.png" alt-text="Power BI Format image pane: Image tab with Style card open, Image source set to Upload image, Open file dialog on canvas." lightbox="media/power-bi-visualization-image-visual/build-image-visual-service-step-2.png":::
 
-3. After uploading an image from your device, let's customize the image. With the **Image** controls still expanded, you can modify Image Fit, Transparency, Image effects, and Alt text.
+3. After uploading an image from your device, while still on the **Format image** pane, you have access to a full suite of controls to customize the image from the **Image** tab.
 
-   For even greater customization, you can specifiy a Corner radius using the Shape controls, or stylize a border use the Border controls, or a include a Background color using the Background controls. This allows you to tailor the image's appearance and functionality to your specific requirements.
+   Take some time to explore all the customization options available. You can specifiy a **Corner radius** using the **Shape** controls, stylize a border use the **Border** controls, or a include a **Background color** using the **Background** controls. This array of options allows you to tailor the image's appearance and functionality to your specific requirements, as shown in the example.
 
-   :::image type="content" source="../includes/media/power-bi-visualization-image-visual/build-image-visual-desktop-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+   :::image type="content" source="media/power-bi-visualization-image-visual/build-image-visual-service-step-3.png" alt-text="Both Format image pane and Image tab highlighed, Style card expanded displaying controls, with a formated image on canvas." lightbox="media/power-bi-visualization-image-visual/build-image-visual-service-step-3.png"::::
 
 ---
 
@@ -129,6 +129,8 @@ The **Apply settings to** dropdown under the Style card lets you define how the 
 
 These states are especially useful when the image is interactive, allowing you to guide user behavior with visual cues like borders, shadows, or color changes.
 
+   :::image type="content" source="media/power-bi-visualization-image-visual/image-visual-features-1.png" alt-text="Format Image pane and Image tab highlighted, Style card and Apply setting to controls expanded, displaying options for image State." lightbox="media/power-bi-visualization-image-visual/image-visual-features-1.png"::::
+
 ### Interactive behavior
 
 When the **Action toggle** is turned on in the **Action card**, the Image visual becomes an interactive element, and the **Type** dropdown offers several options for defining what happens when interacting with the image:
@@ -143,9 +145,13 @@ When the **Action toggle** is turned on in the **Action card**, the Image visual
 
 These options allow the image to function like a button, enhancing navigation, interactivity, and user engagement.
 
+   :::image type="content" source="media/power-bi-visualization-image-visual/image-visual-features-2.png" alt-text="Format Image pane and Image tab highlighted, Action card expanded and toggled On, Action controls displaying options for action Type." lightbox="media/power-bi-visualization-image-visual/image-visual-features-2.png"::::
+
 ### Contextual tooltips
 
 The **Tooltip** control lets you add helpful text that appears when hovering over the image. You can enter static descriptions or use conditional formatting to display dynamic, data-driven content. Tooltips are a great way to provide context, instructions, or additional insights without taking up space on the report canvas.
+
+   :::image type="content" source="media/power-bi-visualization-image-visual/image-visual-features-3.png" alt-text="Format Image pane and Image tab highlighted, Action card expanded and toggled On, Tooltip control toggled On, showing text input box and Conditional formatting button." lightbox="media/power-bi-visualization-image-visual/image-visual-features-3.png"::::
 
 ## Considerations and limitations
 
@@ -155,7 +161,7 @@ Here is a list of any known considerations and limitations for  the Image visual
 
 ### Image file label behavior
 
-- When uploading a report that includes an image to the Power BI service, the original image file name will not be displayed; instead, the image control will show the label "Uploaded file" beneath the visual.
+- When uploading a report that includes an image to the Power BI service, the original image file name will not be displayed; instead, the **Image** control will show the file name as "Uploaded file".
 
 ## Related content
 
