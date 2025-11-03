@@ -230,6 +230,5 @@ Now that you've explored these layout settings, try customizing your Card visual
 
 ## Related content
 
-- [Card visual considerations and limitations](power-bi-visualization-card-visual-considerations.md)
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
