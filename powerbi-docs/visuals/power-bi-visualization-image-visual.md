@@ -3,7 +3,7 @@ title: Create an Image visual in Power BI
 description: Learn how to create, customize, and use Image visuals in Power BI.
 author: jacinda-eng
 ms.author: jacindaeng
-ms.reviewer: julcsc
+ms.reviewer: JulCsc
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
