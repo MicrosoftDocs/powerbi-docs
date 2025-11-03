@@ -95,7 +95,7 @@ For this quick three-step guide, let's use the first option:
 
 3. To customize your visual, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available settings under that **Visual** and **General** tabs. This allows you to tailor the chart's appearance and functionality to your specific requirements as shown in the example.
 
-   :::image type="content" source="media/power-bi-visualization-card-visual/build-card-service-step-3.png" alt-text="Screenshot: Visualizations pane, Format visual icon, and Visual + General tabs all highlighted, with Visual tab displaying format controls." lightbox="media/power-bi-visualization-card-visua;/build-card-service-step-3.png":::
+   :::image type="content" source="media/power-bi-visualization-card-visual/build-card-service-step-3.png" alt-text="Screenshot: Visualizations pane, Format visual icon, and Visual + General tabs all highlighted, with Visual tab displaying format controls." lightbox="media/power-bi-visualization-card-visual/build-card-service-step-3.png":::
 
 ---
 
