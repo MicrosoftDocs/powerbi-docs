@@ -32,19 +32,18 @@ The position of the intermediate columns can fluctuate between the initial and f
 
 Waterfall charts are a great choice for many scenarios:
 
-- Represent changes for a measure across time, a series, or different categories.
-- Audit major changes that contribute to a total value.
-- Plot your company's annual profit by showing various sources of revenue and arrive at the total profit (or loss).
-- Illustrate the beginning and ending headcount for your company in a year.
-- Visualize how much money you earn and spend each month, and the running balance for your account.
-
+- Representing changes for a measure across time, a series, or different categories.
+- Auditing major changes that contribute to a total value.
+- Plotting your company's annual profit by showing various sources of revenue and arriving at the total profit (or loss).
+- Illustrating the beginning and ending headcount for your company in a year.
 - Visualizing the steps and relationships of business processes.
+- Monitoring and controlling data quality.
+- Visualizing and tracking the progress of project steps.
+- Analyzing data defects and identifying their causes.
+- Understanding the workings of the organization and the connections between departments.
+- Visualizing how much money you earn and spend each month and the running balance for your account.
 
-- When you want to visualize the steps and relationships of business processes.
-- When you want to monitor and control data quality.
-- When you want to visualize and track the progress of project steps.
-- To analyze data defects and identify their causes.
-- To understand the workings of the organization and the connections between departments.
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Prerequisites
 

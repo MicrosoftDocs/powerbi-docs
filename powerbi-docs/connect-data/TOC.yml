@@ -59,6 +59,8 @@
     items: 
     - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
+    - name: "Connect to the Power BI Release Plan report"  
+      href: service-connect-to-power-bi-release-plan.md
     - name: "Connect to cloud data sources in the Power BI service"
       href: service-connect-cloud-data-sources.md      
     - name: "Create and share cloud data sources in the Power BI service"
