@@ -1,0 +1,79 @@
+﻿========================================
+ORPHANED ARTICLES REPORT
+========================================
+Generated: 11/03/2025 16:03:47
+Documentation Path: c:\repos\powerbi-docs-pr\powerbi-docs
+
+SUMMARY:
+========================================
+
+MARKDOWN FILES:
+- Total markdown files checked: 1257
+- Referenced in TOCs: 1240
+- Orphaned (not in any TOC): 17
+- Total size of orphaned markdown: 0.07 MB
+
+YML FILES (excluding index.yml and toc.yml):
+- Total YML files checked: 12
+- Referenced in TOCs: 8
+- Orphaned (not in any TOC): 4
+- Total size of orphaned YML: 1.13 KB
+
+========================================
+ORPHANED MARKDOWN FILES:
+========================================
+connect-data\service-connect-to-power-bi-release-plan.md (4.22 KB)
+consumer\mobile\mobile-share-dashboard-from-the-mobile-apps.md (8.05 KB)
+consumer\mobile\tutorial-mobile-apps-ios-qna.md (6.12 KB)
+create-reports\performance-analyzer.md (10.34 KB)
+developer\visuals\formatting-model-alignmentgroup.md (3.47 KB)
+developer\visuals\formatting-model-colorpicker.md (2.08 KB)
+developer\visuals\formatting-model-dropdown.md (4.24 KB)
+developer\visuals\formatting-model-flagselection.md (4.56 KB)
+developer\visuals\formatting-model-fontcontrol.md (3.65 KB)
+developer\visuals\formatting-model-fontpicker.md (2.06 KB)
+developer\visuals\formatting-model-marginpadding.md (3.28 KB)
+developer\visuals\formatting-model-numupdown.md (3.21 KB)
+developer\visuals\formatting-model-slider.md (2.98 KB)
+developer\visuals\formatting-model-textarea.md (2.06 KB)
+developer\visuals\formatting-model-textinput.md (2 KB)
+developer\visuals\formatting-model-toggleswitch.md (3.26 KB)
+guidance\using-rdl-migration-tool.md (4.18 KB)
+
+========================================
+ORPHANED YML FILES:
+========================================
+collaborate-share\context\context.yml (0.27 KB)
+consumer\context\context.yml (0.27 KB)
+create-reports\context\context.yml (0.3 KB)
+paginated-reports\context\context.yml (0.29 KB)
+
+========================================
+FULL PATHS - ORPHANED MARKDOWN FILES:
+========================================
+C:\repos\powerbi-docs-pr\powerbi-docs\connect-data\service-connect-to-power-bi-release-plan.md
+C:\repos\powerbi-docs-pr\powerbi-docs\consumer\mobile\mobile-share-dashboard-from-the-mobile-apps.md
+C:\repos\powerbi-docs-pr\powerbi-docs\consumer\mobile\tutorial-mobile-apps-ios-qna.md
+C:\repos\powerbi-docs-pr\powerbi-docs\create-reports\performance-analyzer.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-alignmentgroup.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-colorpicker.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-dropdown.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-flagselection.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-fontcontrol.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-fontpicker.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-marginpadding.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-numupdown.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-slider.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-textarea.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-textinput.md
+C:\repos\powerbi-docs-pr\powerbi-docs\developer\visuals\formatting-model-toggleswitch.md
+C:\repos\powerbi-docs-pr\powerbi-docs\guidance\using-rdl-migration-tool.md
+
+========================================
+FULL PATHS - ORPHANED YML FILES:
+========================================
+C:\repos\powerbi-docs-pr\powerbi-docs\collaborate-share\context\context.yml
+C:\repos\powerbi-docs-pr\powerbi-docs\consumer\context\context.yml
+C:\repos\powerbi-docs-pr\powerbi-docs\create-reports\context\context.yml
+C:\repos\powerbi-docs-pr\powerbi-docs\paginated-reports\context\context.yml
+
