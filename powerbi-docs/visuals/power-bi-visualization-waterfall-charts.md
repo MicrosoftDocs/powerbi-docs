@@ -37,13 +37,13 @@ Waterfall charts are a great choice for many scenarios:
 - Plotting your company's annual profit by showing various sources of revenue and arriving at the total profit (or loss).
 - Illustrating the beginning and ending headcount for your company in a year.
 - Visualizing the steps and relationships of business processes.
-- Monitoring and controling data quality.
+- Monitoring and controlling data quality.
 - Visualizing and tracking the progress of project steps.
 - Analyzing data defects and identifying their causes.
 - Understanding the workings of the organization and the connections between departments.
 - Visualizing how much money you earn and spend each month and the running balance for your account.
 
-[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Prerequisites
 

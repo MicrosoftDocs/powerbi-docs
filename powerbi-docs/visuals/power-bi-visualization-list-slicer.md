@@ -35,7 +35,7 @@ In the following guide, use the [Retail Analysis Sample PBIX file](https://downl
 1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.
 1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view.
 
-[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Create a list slicer
 

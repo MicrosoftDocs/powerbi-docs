@@ -32,7 +32,7 @@ Tables are a great choice for several scenarios:
 - Displaying data as a matrix or in a tabular format with rows and columns.
 - Reviewing and comparing detailed data and exact values rather than visual representations.
 
-[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Get the sample
 

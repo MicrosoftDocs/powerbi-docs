@@ -35,7 +35,7 @@ Combo charts are a great choice:
 
 <a name="create"></a>
 
-[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 

@@ -82,7 +82,7 @@ This tutorial uses the Opportunity Analysis Sample in the Power BI service.
 
 ---
 
-[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Create a basic funnel chart
 

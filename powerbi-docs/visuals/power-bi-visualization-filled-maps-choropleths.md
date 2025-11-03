@@ -94,7 +94,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
 ---
 
-[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Create a filled map
 

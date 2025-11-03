@@ -412,7 +412,7 @@ The visualization evaluates all explanatory factors together. A factor might be 
 - If house size is fixed at 1,500 square feet, it's unlikely that a continuous increase in the number of bedrooms dramatically increases the house price.
 - Bedrooms might not be as important of a factor as it was before house size was considered.
 
-[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Related content
 

@@ -31,23 +31,15 @@ In this example, a car retailer is tracking the sales team's average sales per m
 Radial gauges are a great choice in many scenarios:
 
 - Show progress toward a goal.
-
 - Represent a percentile measure, like a KPI.
-
 - Show the health of a single measure.
-
 - Display information that's easy to scan and understand.
 
-## Prerequisites
-
-[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Download the sample data
 
 To follow along with the procedure, download the Financial Sample Excel file. Then you can open it either in Power BI Desktop or in the Power BI service. See the article [Download the Financial Sample Excel workbook for Power BI](../create-reports/sample-financial-download.md) for details. 
-
-
-
 
 ## Create a gauge chart
 

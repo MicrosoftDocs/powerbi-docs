@@ -28,7 +28,7 @@ This tutorial uses two examples:
 
 For Power BI Desktop, you can download the [supply-chain scenario semantic model](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix). If you'd like to use the Power BI service, download *Supply Chain Sample.pbix*, then upload it to a workspace in the Power BI service.
 
-[!INCLUDE[sharing-license-requirements](../includes/sharing-license-requirements.md)]
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Get started
 
