@@ -8,8 +8,9 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 09/30/2025
 LocalizationGroup: Connect to data
+ai-usage: ai-assisted
 ---
 
 # Automatic page refresh in Power BI
@@ -171,9 +172,12 @@ Power BI *workspaces* reside within capacities. They represent security, collabo
 
 Here are details for the two workspace scenarios:
 
-**Shared workspaces**. For regular workspaces (workspaces that aren't part of a Premium capacity), automatic page refresh has a minimum interval of 30 minutes (the lowest interval allowed). Change detection refresh type isn't available in shared capacities.
+**Shared workspaces (shared capacity / Pro)**. For regular workspaces (workspaces that aren't part of a dedicated capacity), automatic page refresh has a minimum interval of 30 minutes (the lowest interval allowed). Change detection refresh type isn't available in shared capacities.
 
-**Premium workspaces**. The availability of automatic page refresh in Premium workspaces (both for fixed interval and change detection) depends on the workload settings your Premium administrator has set up for the Power BI Premium capacity. There are two variables that might affect your ability to set up automatic page refresh:
+**Dedicated capacity workspaces (Fabric F / Premium P / PPU)**. The availability of automatic page refresh in dedicated capacity workspaces (both for fixed interval and change detection) depends on the workload settings your capacity administrator has set up for that capacity. There are two variables that might affect your ability to set up automatic page refresh:
+
+> [!NOTE]
+> Premium Per User (PPU) workspaces behave like dedicated capacity for Automatic Page Refresh limits. Treat PPU the same as Fabric F / Premium P when planning refresh intervals.
 
  - **Feature on/off**. If your capacity administrator has disabled the feature, you won't be able to set up any type of page refresh in your published report. Fixed interval and change detection can be turned on and off separately.
 
