@@ -138,6 +138,8 @@
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
     - name: "Increase interaction and productivity"
       items:
+      - name: "Share a dashboard or report"
+        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Work with metrics"
         href: mobile/mobile-apps-metrics.md
       - name: "Create a deep link"
@@ -152,6 +154,8 @@
         href: mobile/mobile-apps-scan-barcode.md
       - name: "Use NFC tags"
         href: mobile/mobile-apps-nfc-tags.md
+      - name: "Ask questions with Q&A virtual analyst"
+        href: mobile/tutorial-mobile-apps-ios-qna.md
       - name: "Dark mode"
         href: mobile/mobile-apps-dark-mode.md
     - name: "Manage offline access, security, and administration"

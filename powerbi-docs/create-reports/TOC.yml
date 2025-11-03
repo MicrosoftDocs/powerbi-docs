@@ -100,8 +100,8 @@
           href: jupyter-quick-report.md
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
-    - name: Examine report elements with Performance Analyzer
-      href: desktop-performance-analyzer.md     
+    - name: Examine report with Performance Analyzer
+      href: performance-analyzer.md     
     - name: Add visual elements to reports
       href: desktop-visual-elements-for-reports.md   
     - name: Power Automate button visual
