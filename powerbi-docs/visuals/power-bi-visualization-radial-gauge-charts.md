@@ -8,9 +8,10 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 12/25/2023
+ms.date: 09/30/2025
 LocalizationGroup: Visualizations
 ms.custom: sample-financialsample
+ai-usage: ai-assisted
 ---
 
 # Radial gauge charts in Power BI
@@ -30,23 +31,15 @@ In this example, a car retailer is tracking the sales team's average sales per m
 Radial gauges are a great choice in many scenarios:
 
 - Show progress toward a goal.
-
 - Represent a percentile measure, like a KPI.
-
 - Show the health of a single measure.
-
 - Display information that's easy to scan and understand.
 
-## Prerequisites
-
-If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both of you don't have individual Power BI Pro licenses, you need to save the report to a workspace in a Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Download the sample data
 
 To follow along with the procedure, download the Financial Sample Excel file. Then you can open it either in Power BI Desktop or in the Power BI service. See the article [Download the Financial Sample Excel workbook for Power BI](../create-reports/sample-financial-download.md) for details. 
-
-
-
 
 ## Create a gauge chart
 

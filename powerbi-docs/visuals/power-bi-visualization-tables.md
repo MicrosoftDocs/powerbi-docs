@@ -32,8 +32,7 @@ Tables are a great choice for several scenarios:
 - Displaying data as a matrix or in a tabular format with rows and columns.
 - Reviewing and comparing detailed data and exact values rather than visual representations.
 
-> [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, you need to save the report in Premium capacity to enable sharing. For more information, see [Share a filtered Power BI report](../collaborate-share/service-share-reports.md).
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Get the sample
 
