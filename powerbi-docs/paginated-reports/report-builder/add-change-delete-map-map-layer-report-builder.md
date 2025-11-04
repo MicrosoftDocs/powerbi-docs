@@ -16,13 +16,12 @@ ms.reviewer: saurkumar
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
 > [!IMPORTANT]
-> Following the __[announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps)__, the migration of paginated reports map visuals from Bing Maps to Azure Maps has begun. This migration will occur in two phases: first, migrating to Azure Maps in PBIRB, followed by migration to Azure Maps for paginated reports in the service. The initial phase is complete. Beginning with the September release of PBIRB, users can create map visuals powered by Azure Maps by default. However, paginated reports published in the service will continue to use Bing Maps until phase two is completed.
-> Paginated reports authors can revert back to Bing Maps for authoring in PBIRB until both phases are complete. To enable this, users must set the “RevertToBingMaps” registry key located in the “Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Report Builder” folder to 1. If the “Microsoft Power BI Report Builder” folder does not exist, it should be manually created before setting the registry key.
+> Following the [announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps), we have migrated map visuals in paginated reports from Bing Maps to Azure Maps. With the September release of PBIRB, paginated report authors will, by default, create map visuals using Azure Maps. Additionally, all map visuals published to the service will use Azure Maps.
 
-  A map is a collection of layers. When you add a map to a Power BI paginated report, you define the first layer. You can create additional layers by using the map layer wizard.  
-  
- The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, select in the map on the report design surface. The following figure displays the parts of the pane:  
-  
+A map is a collection of layers. When you add a map to a Power BI paginated report, you define the first layer. You can create additional layers by using the map layer wizard.  
+
+The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, select in the map on the report design surface. The following figure displays the parts of the pane:  
+
  ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/map-layer-zone.png)  
   
  Map layers are drawn from bottom to top in the order that they appear in the Map pane. In the previous figure, the tile layer is drawn first and the polygon layer is drawn last. Layers that are drawn later might hide map elements on layers that are drawn earlier. You can change the order of layers by using the arrow keys on the Map pane toolbar. To show or hide layers, toggle the visibility icon. You can change the transparency of a layer on the **Visibility** page of the **Layer Data** properties dialog box.  
