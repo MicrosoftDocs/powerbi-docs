@@ -6949,6 +6949,16 @@
       "source_path": "powerbi-docs/support/best-practices-creating-sr.md",
       "redirect_url": "/power-bi/support/best-practices-creating-support-ticket",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-column-chart-format-settings.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-column-charts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-column-charts-considerations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-column-charts",
+      "redirect_document_id": false
     }
   ]
 }                           
