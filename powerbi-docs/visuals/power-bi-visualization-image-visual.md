@@ -157,7 +157,7 @@ The **Tooltip** control lets you add helpful text that appears when hovering ove
 
 As a Power BI user, the awareness of any Image visual considerations and limitations is helpful when creating effective and visually appealing visualizations. Understanding the considerations and limitations allow you to make informed decisions and leverage the full potential of Power BI Image visuals. Whether you're a novice or an experienced user, this information aims to enhance your experience by keeping you up-to-date with practical insights and tips for any known issues.
 
-Here is a list of any known considerations and limitations for  the Image visual, designed to help you navigate the nuances of image visuals in both Power BI Desktop and the Power BI service.
+Here is a list of any known considerations and limitations for the Image visual, designed to help you navigate the nuances of image visuals in both Power BI Desktop and the Power BI service.
 
 ### Image file label behavior
 
