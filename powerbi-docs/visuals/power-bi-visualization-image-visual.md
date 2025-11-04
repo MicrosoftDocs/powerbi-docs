@@ -9,7 +9,7 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 10/30/2025
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to learn about the Image visual feature in Power BI Desktop, including how to create and customize the visual, so I can enhance my reports with interactiveImage visuals.
+#customer intent: As a Power BI user, I want to learn about the Image visual feature in Power BI Desktop, including how to create and customize the visual, so I can enhance my reports with interactive Image visuals.
 ---
 <!-- markdownlint-disable MD024 -->
 
