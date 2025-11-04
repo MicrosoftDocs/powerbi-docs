@@ -397,13 +397,7 @@
     - name: Text slicer (preview)
       href: ../visuals/power-bi-visualization-text-slicer.md
     - name: Column charts
-      items: 
-      - name: Create a column chart visual
-        href: ../visuals/power-bi-visualization-column-charts.md
-      - name: Column chart format settings
-        href: ../visuals/power-bi-visualization-column-chart-format-settings.md
-      - name: Column chart considerations and limitations
-        href: ../visuals/power-bi-visualization-column-charts-considerations.md
+      href: ../visuals/power-bi-visualization-column-charts.md
     - name: Basic area charts
       href: ../visuals/power-bi-visualization-basic-area-chart.md
     - name: Combo charts
