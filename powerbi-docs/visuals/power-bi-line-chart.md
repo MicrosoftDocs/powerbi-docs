@@ -21,32 +21,34 @@ Line charts display continuous data as points connected by lines, making them id
 
 Power BI offers four line chart variants:
 
-- **Line chart** - Basic line connecting data points
-- **Area chart** - Line with filled area beneath
-- **Stacked area chart** - Multiple series stacked vertically
-- **100% stacked area chart** - Series showing percentage of total
+- **Line chart** :::image type="icon" source="media/power-bi-line-chart/icon-line-chart.png":::
+- **Area chart** :::image type="icon" source="media/power-bi-line-chart/icon-area-chart.png":::
+- **Stacked area chart** :::image type="icon" source="media/power-bi-line-chart/icon-stacked-area-chart.png":::
+- **100% stacked area chart** :::image type="icon" source="media/power-bi-line-chart/icon-100-stacked-area-chart.png":::
 
 ## Prerequisites
 
-This article uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+In the following guide, you use the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-1. Download and open the Retail Analysis Sample PBIX file in Power BI Desktop.
-1. Select the **+** icon at the bottom to add a new report page.
+> [!IMPORTANT]
+> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
+
+1. Launch **Power BI Desktop**.
+1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.
+1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view.
 
 # [Power BI service](#tab/powerbi-service)
 
-1. Sign in to the [Power BI service](https://app.powerbi.com/).
-1. Select **Learn** in the left navigation.
-1. On the **Learning center** page, locate and select **Retail Analysis Sample**.
-1. Select **Edit** to open the report editor.
-1. Select the **+** icon to add a new report page.
+1. Sign in to the Power BI service (`app.powerbi.com`).
+1. From the left-side navigation pane, select **Learn**.
+1. On the **Learning center** page, under **Sample reports**, locate and select **Retail Analysis Sample**. It opens in Reading mode and adds the dashboard, report, and semantic model to your workspace.
+1. At the top of the report, select **Edit** to switch to the Report editor (Edit mode).
 
 ---
 
-> [!NOTE]
-> To share your report with a colleague, both of you need individual Power BI Pro licenses, or you need to save the report in Premium capacity.
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Create a line chart
 
