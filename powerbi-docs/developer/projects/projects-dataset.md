@@ -146,10 +146,9 @@ For more information, see the [settings.json schema document](https://github.com
 
 #### examplePrompts.json
 
-Contains Copilot example prompts set up for the semantic model.
+Contains example prompts set up for the semantic model used by Copilot **Zero Prompt** experiences.
 
-> [!NOTE]
-> This metadata file is not currently used by Copilot and is included for future features.
+For more information, see the [examplePrompts.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/copilot/examplePrompts).
 
 #### version.json
 
