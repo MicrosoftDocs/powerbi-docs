@@ -79,7 +79,7 @@ For this example, let’s create an Image visual starting from the Visualization
 
    Take some time to explore all the customization options available. You can specify a **Corner radius** using the **Shape** controls, stylize a border use the **Border** controls, or a include a **Background color** using the **Background** controls. This array of options allows you to tailor the image's appearance and functionality to your specific requirements, as shown in the example.
 
-   :::image type="content" source="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-3.png" alt-text="Both Format image pane and Image tab highlighed, Style card expanded displaying controls, with a formated image on canvas." lightbox="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-3.png"::::
+   :::image type="content" source="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-3.png" alt-text="Both Format image pane and Image tab highlighted, Style card expanded displaying controls, with a formated image on canvas." lightbox="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-3.png"::::
 
 # [Power BI service](#tab/powerbi-service)
 
