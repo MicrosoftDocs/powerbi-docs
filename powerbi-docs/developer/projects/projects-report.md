@@ -272,6 +272,25 @@ The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* f
 
 If you select to **Keep current** format, Desktop won't prompt again to upgrade.
 
+### Service conversion
+
+New reports created in the Service will use the PBIR format by default. Existing reports that are edited will also be automatically converted to PBIR format.
+
+During the Public Preview, administrators can choose to opt out of PBIR by disabling the tenant setting: **Automatically convert and store reports in the Power BI enhanced metadata format (PBIR)**.
+
+:::image type="content" source="./media/projects-report/pbir-tenantsetting.png" alt-text="Screenshot of PBIR tenant setting.":::
+
+> [!IMPORTANT]
+> When PBIR reaches General Availability (GA), it will become the only supported report format, and conversion will be mandatory. We recommend that customers begin preparing for this migration ahead of GA.
+
+#### Restore to PBIR-Legacy
+
+When a report is converted to PBIR in the Service, a backup copy in the **PBIR-Legacy** format is automatically created and retained for 28 days. You can restore the report to its PBIR-Legacy version by opening the **Report settings** from the workspace and selecting **Restore as PBIR-Legacy**.
+
+:::image type="content" source="./media/projects-report/pbir-service-restore.png" alt-text="Screenshot of PBIR restore setting.":::
+
+A restored report will not be automatically converted back to PBIR. To re-enable automatic conversion, open the report settings and select **Enable PBIR**.
+
 ### PBIR folder and files
 
 The report definition is stored inside the `definition\` folder with the following structure:
