@@ -109,9 +109,8 @@ As a Power BI user, being aware of any image visual considerations and limitatio
 
 The following list presents known considerations and limitations for the image visual. It helps you navigate the nuances of image visuals in both Power BI Desktop and the Power BI service.
 
-### Image file label behavior
-
-- When you upload a report that includes an image to the Power BI service, the original image file name doesn't appear. Instead, the **Image** control shows the file name as "Uploaded file".
+- **Image file label behavior**:
+  - When you upload a report that includes an image to the Power BI service, the original image file name doesn't appear. Instead, the **Image** control shows the file name as "Uploaded file".
 
 ## Related content
 
