@@ -7,7 +7,7 @@ ms.reviewer: JulCsc
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/30/2025
+ms.date: 11/05/2025
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the Image visual feature in Power BI Desktop, including how to create and customize the visual, so I can enhance my reports with interactive Image visuals.
 ---
@@ -110,7 +110,7 @@ For this example, let’s create a Image visual starting from the **Visualizatio
 
 ---
 
-Congratulations! You've successfully created a Image visual with Power BI. Now, let's discover some of the other Image visual features.
+You've successfully created a Image visual with Power BI. Now, let's discover some of the other Image visual features.
 
 ## Image visual features
 
