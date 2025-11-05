@@ -54,7 +54,7 @@ In the following guide, you use the [Retail Analysis Sample PBIX file](https://
 
 1. From the **Visualizations** pane, select the **Line chart** icon to add a visual placeholder to the canvas. (In the Power BI service, select **Build visual** first, then choose the icon.)
 
-:::image type="content" source="media/power-bi-line-chart/create-line-chart.png" alt-text="Screenshot of Power BI canvas with a line chart placeholder added, showing the Visualizations pane and Line chart icon selected." lightbox="media/power-bi-line-chart/create-line-chart.png":::
+   :::image type="content" source="media/power-bi-line-chart/create-line-chart.png" alt-text="Screenshot of Power BI canvas with a line chart placeholder added, showing the Visualizations pane and Line chart icon selected." lightbox="media/power-bi-line-chart/create-line-chart.png":::
 
 1. Add data to your chart by using one of these combinations:
    - One field on **X-axis** and one measure on **Y-axis**
