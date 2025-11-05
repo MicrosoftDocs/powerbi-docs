@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 04/22/2025
+ms.date: 11/05/2025
 LocalizationGroup: Data refresh
 ---
 
@@ -128,6 +128,12 @@ This error indicates you have too many semantic models running refresh at the sa
  
 This error indicates a system error in Power BI Premium based on semantic models residing on a given physical node. You can retry the refresh operation, or reschedule the refresh time to address this error.
 
+## Low memory situations
+
+Load balancing across semantic models is managed automatically by the system. In some cases, the capacity might temporarily run low on memory during high-demand periods. When this occurs, you might encounter memory-related errors. The system typically recovers quickly as resources become available. If you receive a memory error, wait a moment and retry your operation.
+
+If memory errors occur frequently or persist, your capacity might require additional resources. In such cases, contact Microsoft Support to investigate capacity sizing and optimization options for your workload.
+
 ## Dataflows or datamart failures in Premium workspaces
 
 Some connectors aren't supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you might receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
@@ -191,7 +197,7 @@ If this error appears, the following steps can address the issue:
   ```
 These steps remove the introduced blank row and restores the original behavior. If you have multiple calculated tables that uses *SummarizeColumns*, changes for all tables should be submitted together in a single transaction which requires the [Tabular Editor](https://www.sqlbi.com/tools/tabular-editor/) to make the modifications, since Power BI Desktop cannot batch multiple table changes into a single transaction.
 
-## Connection errors when refreshing from Semantic Models
+## Connection errors when refreshing from semantic models
 
 The Analysis Services connector may encounter the error ```The connection either timed out or was lost```. This error is usually a transient error when the network connection fails, and a retry will succeed. 
  
