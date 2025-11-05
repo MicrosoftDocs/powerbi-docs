@@ -272,7 +272,7 @@ The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* f
 
 If you select to **Keep current** format, Desktop won't prompt again to upgrade.
 
-### Service conversion
+### PBIR in Service
 
 New reports created in the Service will use the PBIR format by default. Existing reports that are edited will also be automatically converted to PBIR format.
 
