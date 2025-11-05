@@ -103,7 +103,7 @@ By default, the report server uses the virtual service account. If you try to cr
 
 To work around the error, you can change the service account to either **Network Service** or a domain account. Changing the service account to **Network Service** applies rights in the context of the machine account for the report server.
 
-:::image type="content" source="media/install-report-server/service-account-page.png" alt-text="Screenshot of the Service Account page in Report Server Configuration Manager. For the built-in account, Network Service is selected and highlighted.":::
+:::image type="content" source="media/install-report-server/service-account-page.png" alt-text="Screenshot of the Service Account page in Report Server Configuration Manager. For the built-in account, Network Service is selected and highlighted." lightbox="media/install-report-server/service-account-page.png":::
 
 For more information, see [Configure the report server service account (Report Server Configuration Manager)](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager).
 
