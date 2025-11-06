@@ -32,13 +32,13 @@ In **Power BI service** open a report and select **Edit**. When editing a report
 
 :::image type="content" source="media/performance-analyzer/performance-analyzer-in-web.png" alt-text="Screenshot of the View menu, highlighting Performance Analyzer when editing a report in the Power BI service." lightbox="media/performance-analyzer/performance-analyzer-in-web.png":::
 
-Once selected, Performance Analyzer is displayed in its own pane to the right of the report canvas in either Power BI Desktop or the Power BI service.
+Once selected, performance analyzer is displayed in its own pane to the right of the report canvas in either Power BI Desktop or the Power BI service.
 
 ## Use Performance Analyzer
 
-Performance Analyzer measures the processing time (including the time to create or update a visual) required to update report elements initiated as a result of any user interaction that results in running a query. For example, adjusting a slicer requires the slicer visual to be modified, a query to be sent to the data model, and affected visuals to be updated as a result of the new settings.
+Performance analyzer measures the time to load a visual. Including when the visuals reloads as a result of any user interaction. For example, adjusting a slicer requires the slicer visual to be modified, a query to be sent to the data model, and displayed again.
 
-To have Performance Analyzer begin recording, select **Start recording**.
+To have performance analyzer begin recording, select **Start recording**.
 
 ![Screenshot of Performance Analyzer, highlighting Start recording.](media/desktop-performance-analyzer/performance-analyzer-03.png)
 
@@ -46,11 +46,9 @@ Any actions you take in the report are displayed and logged in the performance a
 
 Once you start recording, the **Start recording** button is grayed out (inactive, since you've already begun recording) and the **Stop** button is active.
 
-Performance Analyzer collects and displays the performance measurement information in real time. Each time you select a visual, move a slicer, or interact in any other way, Performance Analyzer immediately displays the performance results in its pane.
+Performance analyzer collects and displays information in real time. Each time you select a visual, move a slicer, or interact in any other way, performance analyzer logs the new duration.
 
-If the pane has more information than can be displayed, a scroll bar appears to navigate to additional information.
-
-Each interaction has a section identifier in the pane, describing the action that initiated the log entries. In the following image, the interaction was that the users changed a slicer.
+Each interaction has a section identifier in the pane, describing the action that initiated the new entries. In the following image, the interaction was changing a slicer.
 
 ![Screenshot of the Performance Analyzer pane, highlighting the Changed a slicer interaction type.](media/desktop-performance-analyzer/performance-analyzer-04.png)
 
@@ -71,13 +69,13 @@ After you've interacted with the report, you can select the **Stop** button. The
 To clear out the information in the Performance Analyzer pane, select **Clear**. All information is erased and isn't saved when you select **Clear**. To learn how to save information in logs, see the following section.
 
 > [!TIP]
-> The DAX query can be impacted by the complexity of the calculations, the number of tables involved, the relationships between them, and your computer hardware.
+> The DAX query performance is impacted by the complexity of the calculations, the number of tables involved, and the relationships between them.
 
 ## DAX queries in visuals
 
 Visuals in Power BI reports display data from the semantic model. The data is accessed with a DAX query. You can see the DAX query of each visual by selecting **Copy query** in performance analyzer. For tables using DirectQuery table storage mode, this query includes the DAX query and the translated query in SQL or KQL.
 
-**Run in DAX query view** in performance analyzer runs the DAX query in [DAX query view](/power-bi/transform-model/dax-query-view). The result grid shows the data the visual uses and you can inspect the logic of the DAX query itself. This option isn't available in the Power BI service, but the copied DAX query can be run after navigating to DAX query view in the service. From the report, select open data model which opens the web modeling experience. From web modeling, select DAX query view and run the query.
+**Run in DAX query view** in performance analyzer runs the DAX query in [DAX query view](/power-bi/transform-model/dax-query-view). The result grid shows the data the visual uses and you can inspect the logic of the DAX query itself. This option isn't available in the Power BI service, but the copied DAX query can be run after navigating to DAX query view in the service. From the report, select **open data model**, which opens the web modeling experience. From web modeling, select DAX query view and run the query.
 
 The structure of a DAX query from a visual is more verbose and structured than necessary to get the same result. The visual DAX query structure helps as you change visuals from one type to another when building a report. [Fabric Copilot to write and explain DAX queries](/dax/dax-copilot) in DAX query view can help structure the visual DAX query into a simpler form with the following prompt.
 
@@ -90,15 +88,15 @@ Learn more about DAX queries in the [DAX queries learn documentation](/dax/dax-q
 
 ## Refreshing visuals
 
-You can select **Refresh visuals** in the Performance Analyzer pane to refresh all visuals on the current page of the report and thereby have Performance Analyzer gather information about all such visuals.
+You can select **refresh visuals** in the **performance analyzer** pane to gather timing information about all the visuals on the current report page.
 
-You can also refresh individual visuals. When Performance Analyzer is recording, you can select **Analyze this visual**, found in the top-right corner of each visual, to refresh that visual and capture its performance information.
+You can also refresh individual visuals. When **performance analyzer** is recording, you can select **analyze this visual**, found in the top-right corner of each visual, to refresh that visual and capture its performance information.
 
 ![Screenshot of a visual, highlighting the Analyze this visual icon.](media/desktop-performance-analyzer/performance-analyzer-07.png)
 
 ## Save performance information
 
-You can save the information that Performance Analyzer creates about a report by selecting the **Export** button. Selecting **Export** creates a .json file with information from the Performance Analyzer pane.
+You can save the information that **performance analyzer** creates about a report by selecting the **export** button. Selecting **export** creates a .json file with information from the **performance analyzer** pane.
 
 ![Screenshot of the Save As window, showing the creation of a .json file.](media/desktop-performance-analyzer/performance-analyzer-05.png)
 
