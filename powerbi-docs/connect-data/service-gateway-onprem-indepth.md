@@ -1,5 +1,5 @@
 ---
-title: On-premises data gateway in-depth
+title: On-premises Data Gateway In-depth
 description: Use these resources about how the Power BI service works with Microsoft Entra ID and your local Active Directory when working with Analysis Services. 
 author: arthiriyer
 ms.author: arthii
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 12/30/2022
+ms.date: 11/06/2025
 LocalizationGroup: Gateways
 ---
 
@@ -45,7 +45,7 @@ See [Row-level security](service-gateway-enterprise-manage-ssas.md#row-level-sec
 
 ## What about Microsoft Entra ID?
 
-See [Microsoft Entra ID](/data-integration/gateway/service-gateway-onprem-indepth#azure-active-directory).
+See [Microsoft Entra ID](/data-integration/gateway/service-gateway-onprem-indepth#microsoft-entra-id).
 
 ## How do I tell what my UPN is?
 
@@ -59,22 +59,11 @@ See [Map user names for Analysis Services data sources](service-gateway-enterpri
 
 ## Synchronize an on-premises Active Directory with Microsoft Entra ID
 
-See [Synchronize an on-premises Active Directory with Microsoft Entra ID](/data-integration/gateway/service-gateway-onprem-indepth#synchronize-an-on-premises-active-directory-with-azure-active-directory).
-
-## What to do next?
-
-See the articles on data sources:
-
-- [Add or remove a gateway data source](service-gateway-data-sources.md)
-- [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-- [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
-- [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
-- [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
-- [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
+See [Synchronize an on-premises Active Directory with Microsoft Entra ID](/data-integration/gateway/service-gateway-onprem-indepth#synchronize-an-on-premises-active-directory-with-microsoft-entra-id).
 
 ## Where things can go wrong
 
-See [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot) and [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md).
+See [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot) and [Troubleshoot on-premises data gateways - Power BI](service-gateway-onprem-tshoot.md).
 
 ## Sign in account
 
@@ -86,21 +75,32 @@ See [Change the on-premises data gateway service account](/data-integration/gate
 
 ## Ports
 
-See [Ports](/data-integration/gateway/service-gateway-communication#ports).
+See [Required Ports for the gateway to function](/data-integration/gateway/service-gateway-communication#required-ports-for-the-gateway-to-function).
 
-## Forcing HTTPS communication with Azure Service Bus
+## Force HTTPS communication with Azure Relay
 
-See [Force HTTPS communication with Azure Service Bus](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
+See [Force HTTPS communication with Azure Relay](/data-integration/gateway/sservice-gateway-communication#force-https-communication-with-azure-relay).
 
-## Support for TLS 1.2
+## Support for TLS 1.3
 
-See [TLS 1.2 for gateway traffic](/data-integration/gateway/service-gateway-communication#tls-12-for-gateway-traffic).
+See [TLS 1.3 for gateway traffic](/data-integration/gateway/service-gateway-communication#tls-13-for-gateway-traffic).
 
 ## How to restart the gateway
 
-See [Restart a gateway](/data-integration/gateway/service-gateway-restart).
+See [Restart an on-premises data gateway](/data-integration/gateway/service-gateway-restart).
+
+## What's next?
+
+See the articles on data sources:
+
+- [Add or remove a gateway data source](service-gateway-data-sources.md)
+- [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+- [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
+- [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
+- [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
+- [Manage your data source - import and scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
 
 ## Related content
 
-- [What is the on-premises data gateway?](service-gateway-onprem.md)
-- More questions? [Try the Power BI Community](https://community.powerbi.com/)
+- [What is an on-premises data gateway?](service-gateway-onprem.md)
+- More questions? [Try the Power BI Community](https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi)
