@@ -79,7 +79,7 @@ See [Required Ports for the gateway to function](/data-integration/gateway/servi
 
 ## Force HTTPS communication with Azure Relay
 
-See [Force HTTPS communication with Azure Relay](/data-integration/gateway/sservice-gateway-communication#force-https-communication-with-azure-relay).
+See [Force HTTPS communication with Azure Relay](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-relay).
 
 ## Support for TLS 1.3
 
