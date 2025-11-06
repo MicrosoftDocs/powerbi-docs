@@ -16,37 +16,39 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-You can enhance your Power BI reports by adding images to them. Static images on the page are good for some purposes. However, sometimes you want images that relate to the data in your report. This article shows you how to display images in a table, matrix, slicer, or multi-row card.
+You can enhance your Power BI reports by adding images to them. Static images on the page are suitable for some purposes. However, sometimes you want images that relate to the data in your report. This article shows you how to display images in a table, matrix, slicer, or multi-row card.
 
-![Screenshot of URL images in a table.](media/power-bi-images-tables/power-bi-url-images-table.png)
+:::image type="content" source="media/power-bi-images-tables/power-bi-matrix-url-images.png" alt-text="Screenshot of a matrix in Power BI Desktop that shows crop yields by state. Each row lists a crop and an image. Each column lists a state." lightbox="media/power-bi-images-tables/power-bi-matrix-url-images.png":::
 
 ## Add images to your report
 
-1. Create a column with the URLs of the images. See [Considerations](#considerations) later in this article for requirements.
+1. Create a column with the URLs of the images. For image requirements, see [Considerations](#considerations), later in this article.
 
-1. Select that column. On the **Column tools** ribbon, for **Data category**, select **Image URL**.
+1. In **Table** view, select that column. On the ribbon, go to the **Column tools** tab. Next to **Data category**, select **Image URL**.
 
-   :::image type="content" source="media/power-bi-images-tables/power-bi-set-url-image.png" alt-text="Screenshot of the Data category menu with Image URL highlighted.":::
+   :::image type="content" source="media/power-bi-images-tables/power-bi-set-url-image.png" alt-text="Screenshot of Table view in Power BI Desktop. A column of image URLs is selected. In the expanded Data category list, Image URL is highlighted." lightbox="media/power-bi-images-tables/power-bi-set-url-image.png":::
 
 1. Add the column to a table, matrix, slicer, or multi-row card.
 
-   :::image type="content" source="media/power-bi-images-tables/power-bi-url-images-slicer.png" alt-text="Screenshot of a slicer with example images.":::
+   :::image type="content" source="media/power-bi-images-tables/power-bi-url-images-card-slicer.png" alt-text="Screenshot of a slicer that lists crop images and a card that shows crop yields. Each card line lists a crop, the yield, and an image of the crop." lightbox="media/power-bi-images-tables/power-bi-url-images-card-slicer.png":::
 
 ### Format the images
 
-1. In the **Visualizations** pane, select the paintbrush icon to format the images.
+1. On the canvas, select the visual that contains images.
 
-1. On the **Visual** tab, expand **Image size**, and set **Height** and **Width**.
+1. On the **Visualizations** pane, select the paintbrush :::image type="icon" source="media/power-bi-images-tables/paintbrush-icon.png":::, and then go to the **Visual** tab.
 
-    :::image type="content" source="media/power-bi-images-tables/image-size-height-width.png" alt-text="Screenshot showing setting image height and width.":::
+1. Expand **Image size**, and then set the **Height** and **Width** values.
+
+   ::image type="content" source="media/power-bi-images-tables/image-size-height-width.png" alt-text="Screenshot of a table visual next to the Visualizations pane. On the pane, the expanded Image size section contains Height and Width settings." lightbox="media/power-bi-images-tables/image-size-height-width.png":::
 
 ### Add images from a personal OneDrive storage
 
 Images in your report need to be anonymously accessible. However, for images that are hosted on a personal OneDrive storage, you may be able to get an embed code that points directly to them. The Power BI mobile apps don't support such images, however. For the Power BI mobile apps to be able to display an image, the image URL must be anonymously accessible, regardless of whether or not the image uses an embed code.
 
-1. On your OneDrive site, open an image and select **More options (...)** > **Embed**.
+1. On your OneDrive site, open an image, select **More** :::image type="icon" source="media/power-bi-images-tables/more-icon.png":::, and then select **Embed**.
 
-    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed.png" alt-text="Screenshot of an image on OneDrive, highlighting the More Options dropdown menu and the Embed selection.":::
+    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed.png" alt-text="Screenshot of an image on OneDrive. The More icon is highlighted. In its shortcut menu, Embed is highlighted.":::
 
 1. Select **Generate**.
 
