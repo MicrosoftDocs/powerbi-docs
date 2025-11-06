@@ -14,11 +14,11 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In Power BI reports, you can find out how each of your report elements, such as visuals and DAX formulas, are performing. By using the **Performance Analyzer**, you can see and record logs that measure how each of your report elements performs when users interact with them and which aspects of their performance are most (or least) resource intensive.
+In Power BI reports, you can find out how each of your report visuals are performing. By using the **performance analyzer**, you can see how long each visual takes to load. Each load time is further broken down category, such as time the DAX query took to run. The DAX query for each visual can be copied, and ran in **DAX query view** in Power BI Desktop. The **performance analyzer** is a pane available in **Report view** of Power BI Desktop or when editing a report in the web.
 
 :::image type="content" source="media/desktop-performance-analyzer/performance-analyzer-01-inline.png" alt-text="Screenshot that shows Performance Analyzer." lightbox="media/desktop-performance-analyzer/performance-analyzer-01-expanded.png":::
 
-Performance Analyzer inspects and displays the duration necessary for updating or refreshing all visuals that user interactions initiate. It also presents the information so that you can view, drill down, or export the results. Performance Analyzer can help you identify visuals that affect the performance of your reports and identify the reason for the impact.
+Performance Analyzer displays the load duration of all the visuals. Including when visuals load from different interactions, such as applying filters from slicers. It also presents the information so that you can view, drill down, or export the results to a file. Performance Analyzer can help you identify visuals that affect the performance of your reports and identify the reason for the impact.
 
 ## Display the Performance Analyzer pane
 
