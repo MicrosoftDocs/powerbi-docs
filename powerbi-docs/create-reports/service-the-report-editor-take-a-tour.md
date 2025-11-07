@@ -8,7 +8,7 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/01/2023
+ms.date: 11/07/2025
 LocalizationGroup: Reports
 ---
 
