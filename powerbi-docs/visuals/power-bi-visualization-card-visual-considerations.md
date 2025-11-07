@@ -27,7 +27,7 @@ This article provides a list of known considerations and limitations, designed t
 
 ### Format settings
 
-- The **(new) Card visual** became generally available as the **Card visual** with the November 2025 Power BI release. If you used the Card visual during the Public Preview phase, you may notice behavior or formatting changes that reflect the improvements that are included in the General Availibility release.
+- The **(new) Card visual** became generally available as the **Card visual** with the November 2025 Power BI release. If you used the Card visual during the Public Preview phase, you may notice behavior or formatting changes that reflect the improvements that are included in the General Availability release.
 - When formatting the Card visual, you might notice that some of the format settings are in a different or new location, or the name of the setting is changed.
 - In earlier versions of the Card visual, the **Callout** image was available as part of the **Image card**. This now been moved to the **Callout** section of **Format** pane.
 - Certain **Layout** arrangements may impact existing reports that used the Card visual during its Public Preview phase. This is due to updates made to all card components as part of the General Availability release, including enhancements to layout, styling, and image handling.
