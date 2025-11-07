@@ -140,43 +140,6 @@ When you mark your semantic model **Prepped for AI**, the standalone Copilot age
 
 Authors can also turn on an admin setting to [only search data that is marked **Prepped for AI**](/fabric/admin/service-admin-portal-copilot#only-show-ai-prepped-items-in-the-standalone-copilot-in-power-bi-experience-preview) within the standalone Copilot experience.
 
-## Upgrade to Copilot tooling format
-
-If your semantic model still uses the [Q&A tooling](/power-bi/natural-language/q-and-a-tooling-intro) format (using [Linguistic Schema](/power-bi/natural-language/q-and-a-tooling-advanced#whats-a-linguistic-schema)) to store Copilot metadata, the next time you open **Prep data for AI**, you see a prompt to migrate to the new Copilot experience.
-
-:::image type="content" source="media/copilot-prep-data/copilot-migrate-from-qa-desktop.png" alt-text="Screenshot of the Prep data for AI migration from Q&A." lightbox="media/copilot-prep-data/copilot-migrate-from-qa-desktop.png":::
-
-You need this upgrade to keep editing Copilot metadata and to use upcoming Copilot features. It also improves integration with development tools when using [**Power BI Project (PBIP)**](/power-bi/developer/projects/projects-overview), since all Copilot metadata is now stored using the new [Copilot tooling file format](#copilot-tooling-file-format).
-
-For new semantic models, the new Copilot tooling format is used by default when you enable the **Prep data for AI** preview feature.
-
-> [!NOTE]
-> When you upgrade to the Copilot tooling format, [Copilot indexing](copilot-prepare-data-ai-settings.md#copilot-indexing) is automatically enabled. This feature helps Copilot answer data questions faster and more accurately by indexing model metadata and column values.
-
-### Upgrade impact to Q&A features
-
-When you upgrade to the new Copilot tooling format, you permanently disable Q&A features for the model and any connected reports. For example, if a Power BI report includes the [Q&A visual](/power-bi/visuals/power-bi-visualization-q-and-a), the visual shows an error message that says Q&A isn't supported anymore.
-
-:::image type="content" source="media/copilot-prep-data/copilot-migrate-from-qa-desktop-qa-error.png" alt-text="Screenshot of the Q&A visual after migration to Copilot tooling file format." lightbox="media/copilot-prep-data/copilot-migrate-from-qa-desktop-qa-error.png":::
-
-For more information about all Q&A features, see [Q&A in Power BI documentation](/power-bi/consumer/end-user-q-and-a).
-
-**The following Q&A tooling metadata is migrated to the new Copilot tooling format**. Other metadata, such as [Linguistic Relationships](/power-bi/natural-language/q-and-a-tooling-intro#relationships), isn't migrated. If you want to keep that metadata, you can [export the linguistic schema](/power-bi/natural-language/q-and-a-tooling-advanced#export-then-import-a-yaml-file) before upgrading.
-
-- [Synonyms](/power-bi/natural-language/q-and-a-tooling-intro#field-synonyms)
-- [Suggested questions](/power-bi/natural-language/q-and-a-tooling-intro#suggest-questions)
-
-After you upgrade to the new Copilot tooling format, you can't go back to using Q&A (LSDL) or turn on Q&A features again. During the upgrade, Power BI automatically creates a backup of your semantic model in the following locations.
-
-**Upgrade in Power BI Desktop:**
-
-- Microsoft Store version: `%USERPROFILE%\Microsoft\Power BI Desktop Store App\TempSaves\Backups`  
-- Executable installer version: `%USERPROFILE%\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Backups`
-
-**Upgrade in Power BI service:**
-
-- A new version is saved to [version history](/power-bi/transform-model/service-semantic-model-version-history).
-
 ## Copilot tooling file format
 
 When you save as a [**Power BI Project (PBIP)**](/power-bi/developer/projects/projects-overview), all Copilot metadata is stored in a single `Copilot/` folder. This structure makes it easier to edit Copilot settings by using code editors and enables seamless collaboration through Git.
@@ -202,6 +165,44 @@ PBIP/
 ```
 
 Learn more about these files in [Power BI Project documentation](/power-bi/developer/projects/projects-dataset#copilot-folder).
+
+## Upgrade to Copilot tooling format
+
+If your semantic model still uses the [Q&A tooling](/power-bi/natural-language/q-and-a-tooling-intro) format (using [Linguistic Schema](/power-bi/natural-language/q-and-a-tooling-advanced#whats-a-linguistic-schema)) to store Copilot metadata, the next time you open **Prep data for AI**, you see a prompt to migrate to the new Copilot experience.
+
+:::image type="content" source="media/copilot-prep-data/copilot-migrate-from-qa-desktop.png" alt-text="Screenshot of the Prep data for AI migration from Q&A." lightbox="media/copilot-prep-data/copilot-migrate-from-qa-desktop.png":::
+
+You need this upgrade to keep editing Copilot metadata and to use upcoming Copilot features. It also improves integration with development tools when using [**Power BI Project (PBIP)**](/power-bi/developer/projects/projects-overview), since all Copilot metadata is now stored using the new [Copilot tooling file format](#copilot-tooling-file-format).
+
+For new semantic models, the new Copilot tooling format is used by default when you enable the **Prep data for AI** preview feature.
+
+> [!NOTE]
+> - When you upgrade to the Copilot tooling format, [Copilot indexing](copilot-prepare-data-ai-settings.md#copilot-indexing) is automatically enabled. This feature helps Copilot answer data questions faster and more accurately by indexing model metadata and column values.
+> - To upgrade to the Copilot tooling format, the [Linguistic Schema](/power-bi/natural-language/q-and-a-tooling-advanced#whats-a-linguistic-schema) must be valid. If it isn’t, the upgrade will fail. You can resolve the issue by fixing the schema using the [export/import feature](/power-bi/natural-language/q-and-a-tooling-advanced#export-then-import-a-yaml-file) or by removing it in [TMDL view](/power-bi/transform-model/desktop-tmdl-view) — script the culture definition, delete the `linguisticMetadata` property, and apply the updated script.
+
+### Upgrade impact to Q&A features
+
+When you upgrade to the new Copilot tooling format, you permanently disable Q&A features for the model and any connected reports. For example, if a Power BI report includes the [Q&A visual](/power-bi/visuals/power-bi-visualization-q-and-a), the visual shows an error message that says Q&A isn't supported anymore.
+
+:::image type="content" source="media/copilot-prep-data/copilot-migrate-from-qa-desktop-qa-error.png" alt-text="Screenshot of the Q&A visual after migration to Copilot tooling file format." lightbox="media/copilot-prep-data/copilot-migrate-from-qa-desktop-qa-error.png":::
+
+For more information about all Q&A features, see [Q&A in Power BI documentation](/power-bi/consumer/end-user-q-and-a).
+
+**The following Q&A tooling metadata is migrated to the new Copilot tooling format**. Other metadata, such as [Linguistic Relationships](/power-bi/natural-language/q-and-a-tooling-intro#relationships), isn't migrated. If you want to keep that metadata, you can [export the linguistic schema](/power-bi/natural-language/q-and-a-tooling-advanced#export-then-import-a-yaml-file) before upgrading.
+
+- [Synonyms](/power-bi/natural-language/q-and-a-tooling-intro#field-synonyms)
+- [Suggested questions](/power-bi/natural-language/q-and-a-tooling-intro#suggest-questions)
+
+After you upgrade to the new Copilot tooling format, you can't go back to using Q&A (LSDL) or turn on Q&A features again. During the upgrade, Power BI automatically creates a backup of your semantic model in the following locations.
+
+**Upgrade in Power BI Desktop:**
+
+- Microsoft Store version: `%USERPROFILE%\Microsoft\Power BI Desktop Store App\TempSaves\Backups`  
+- Executable installer version: `%USERPROFILE%\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Backups`
+
+**Upgrade in Power BI service:**
+
+- A new version is saved to [version history](/power-bi/transform-model/service-semantic-model-version-history).
 
 ## Turn off the preview features in Desktop
 
