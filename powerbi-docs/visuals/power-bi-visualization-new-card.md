@@ -119,7 +119,7 @@ In the following steps, you’ll learn how to set up and customize the Card visu
 
 1. **Build a Card visual**
 
-    From the **Visualizations** pane, ensure the **Build visual** icon is selcted, and choose the **Card visual** from the gallery to add a visual placeholder to the canvas.
+    From the **Visualizations** pane, ensure the **Build visual** icon is selected, and choose the **Card visual** from the gallery to add a visual placeholder to the canvas.
 
     Then, from the **Data** pane, expand the **Sales** group, and drag the **Store count** measure to the **Value** field well to create your first card.
 
