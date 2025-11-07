@@ -125,7 +125,7 @@ In the following steps, you’ll learn how to set up and customize the Card visu
 
     :::image type="content" source="media/power-bi-visualization-card-visual/build-card-images-step-1.png" alt-text="Screenshot: Visualizations pane, Build visual icon, Card visual icon, all highlighted, plus Store Count highlighted in Data pane and dragged to Value field well ." lightbox="media/power-bi-visualization-card-visual/build-card-images-step-1.png":::
 
-2. **Add data the the visual**
+2. **Add data to the visual**
 
     Continuing from the **Data** pane, drag **DM** (*District Managers*) from the **District** group, and add it to the **Categories** field well to display multiple cards showing the various managers.
 
