@@ -151,7 +151,7 @@ In the following steps, you’ll learn how to set up and customize the Card visu
 
     Here’s where the **Callout image** comes in. From the **Visualizations** pane, with the **Format visual** icon selected, expand the **Callout** card, and ensure **Store Count** is selected from the **Cards** dropdown in the **Apply settings to** control.
 
-    Then, expand the **Image** controls, turn on the **Image toggle**, and select **Upload Image** as the **Image type**. Browse your device for an approiate image, and select **Open** to add the image to the visual. This image sits in the Callout section, making it perfect for subtle branding or quick visual hints without cluttering the card.
+    Then, expand the **Image** controls, turn on the **Image toggle**, and select **Upload Image** as the **Image type**. Browse your device for an appropriate image, and select **Open** to add the image to the visual. This image sits in the Callout section, making it perfect for subtle branding or quick visual hints without cluttering the card.
 
     :::image type="content" source="media/power-bi-visualization-card-visual/build-card-images-step-4.png" alt-text="Screenshot: Visual tab highlighted, Store count is selected in Callout card > Apply settings to > Cards, Image toggle on, Image selected and uploaded from device." lightbox="media/power-bi-visualization-card-visual/build-card-images-step-4.png":::
 
