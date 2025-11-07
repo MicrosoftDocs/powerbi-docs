@@ -46,17 +46,17 @@ You can enhance your Power BI reports by adding images to them. Static images on
 
 Images in your report need to be anonymously accessible. However, for images that are hosted on a personal OneDrive storage, you may be able to get an embed code that points directly to them. The Power BI mobile apps don't support such images, however. For the Power BI mobile apps to be able to display an image, the image URL must be anonymously accessible, regardless of whether or not the image uses an embed code.
 
-1. On your OneDrive site, open an image, select **More** :::image type="icon" source="media/power-bi-images-tables/more-icon.png":::, and then select **Embed**.
+1. On your OneDrive site, locate the image that you want to add to a report. Next to the image name, select **More Actions** :::image type="icon" source="media/power-bi-images-tables/more-actions-icon.png":::, and then select **Embed**.
 
-    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed.png" alt-text="Screenshot of an image on OneDrive. The More icon is highlighted. In its shortcut menu, Embed is highlighted.":::
+   :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed.png" alt-text="Screenshot of a personal OneDrive folder. Next to an image file, the More Actions icon is highlighted. In its shortcut menu, Embed is highlighted.":::
 
 1. Select **Generate**.
 
-    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-generate.png" alt-text="Screenshot of the Embed window, highlighting Generate.":::
+    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-generate.png" alt-text="Screenshot of the Embed window. Text states that no sign-in is needed to view the image via the embed code. The Generate button is highlighted.":::
 
-1. Copy the URL and paste it in the **Image URL** column.
+1. Select **Copy embed code** to copy the URL, and then paste it in the **Image URL** column.
 
-    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-copy-url.png" alt-text="Screenshot of the generated embed image URL.":::
+    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-copy-url.png" alt-text="Screenshot of the Embed window that shows the image and a URL. The Copy embed code button is highlighted.":::
 
 ## Considerations
 
