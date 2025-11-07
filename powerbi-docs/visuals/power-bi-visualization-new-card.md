@@ -212,7 +212,7 @@ In the following steps, you’ll learn how to configure multi-card layouts, adju
 
 7. **Explore more formatting options**
 
-   Finally, now that you have learned about several card viisual layout features, take some time to explore  all the format settings under the **Format visual** tab. You’ll find multiple options to customize your card visuals, including everything from layout tweaks to color adjustments, so you can design a report that fits your exact requirements.
+   Finally, now that you have learned about several card visual layout features, take some time to explore all the format settings under the **Format visual** tab. You’ll find multiple options to customize your card visuals, including everything from layout tweaks to color adjustments, so you can design a report that fits your exact requirements.
 
    :::image type="content" source="media/power-bi-visualization-card-visual/multi-card-layout-step-7.png" alt-text="Visualizations pane: Format visual, Visual tab selected, all Format controls highlighted." lightbox="media/power-bi-visualization-card-visual/multi-card-layout-step-7.png":::
 
