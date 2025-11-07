@@ -157,7 +157,7 @@ In the following steps, you’ll learn how to set up and customize the Card visu
 
 5. **Adjust image settings**
 
-   Finally, let's tweak the image layout by setting the **Position** to **Left of text** and reducing the **Image are size** ao it complements your metric without stealing the spotlight.
+   Finally, let's tweak the image layout by setting the **Position** to **Left of text** and reducing the **Image area size** so it complements your metric without stealing the spotlight.
 
    :::image type="content" source="media/power-bi-visualization-card-visual/build-card-images-step-5.png" alt-text="Screenshot: Visualizations pane expanded, Format visual icon and Visual tab displayed, Image position set to Left of text, and Image area size set to 20%." lightbox="media/power-bi-visualization-card-visual/build-card-images-step-5.png":::
 
