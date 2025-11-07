@@ -1,5 +1,5 @@
 ---
-title: Radial gauge charts in Power BI  
+title: Radial Gauge Charts in Power BI  
 description: Learn how to create radial gauge charts in Power BI Desktop and Power BI service.
 author: miguelmyersMS
 ms.author: miguelmyers
@@ -53,7 +53,7 @@ Let's begin by creating a simple radial gauge chart in Power BI. We can track gr
 
    The **Financial Sample Excel** file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
-1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
+1. At the bottom, select the plus symbol icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -61,9 +61,9 @@ Let's begin by creating a simple radial gauge chart in Power BI. We can track gr
 
 1. Select **Export workbook data to Power BI**.
 
-1. You may need to sign in to the Power BI service (`app.powerbi.com`). Select **Go to Power BI**.
+1. You might need to sign in to the Power BI service (`app.powerbi.com`). Select **Go to Power BI**.
 
-    The Power BI service opens in Edit mode with a blank page and the Financials data in the Data pane.
+   The Power BI service opens in Edit mode with a blank page and the Financials data in the Data pane.
 ---
 
 4. In the **Data** pane, expand **financials** and select the **Gross Sales** checkbox.
@@ -105,7 +105,7 @@ You can modify the gauge chart to show a target value. This action creates a _ne
 
    :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-needle.png" alt-text="Screenshot that shows the updated gauge chart with a needle that represents the target value.":::
 
-   Power BI calculates the target value as $146.65K. The position of the gauge needle shows that the average of the _Gross Sales_ and _COGS_ values exceeds the target.
+   Power BI calculates the target value as $146.65 K. The position of the gauge needle shows that the average of the _Gross Sales_ and _COGS_ values exceeds the target.
 
    > [!NOTE]
    > You can manually specify a target value rather than using the calculation from Power BI. For more information, see the [Use manual options to set values](#use-manual-options-to-set-values) section.
@@ -130,7 +130,7 @@ Let's see how you can set the maximum value to the highest gross sales number in
 
 You can also use manual settings in Power BI to configure the maximum, minimum, and target values for your gauge chart.
 
-1. On the **Visualizations** > **Build** visual pane, remove the **Max of Gross Sales** value from the **Maximum value** option.
+1. On the **Visualizations** > **Build visual** pane, remove the **Max of Gross Sales** value from the **Maximum value** option.
 
 1. Select the paint brush icon to open the **Format** visual section.
 
