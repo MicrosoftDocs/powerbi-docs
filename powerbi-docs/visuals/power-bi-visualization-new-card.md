@@ -22,7 +22,7 @@ The Card visual in Power BI is a versatile tool for presenting key metrics in a 
 The Card visual is useful in business and finance for showcasing critical performance indicators, as well as in marketing for highlighting metrics like customer engagement and conversion rates. With its sleek design and enhanced functionality, the Card visual enables users to interact with their data more effectively and make informed decisions based on real-time insights.
 
 > [!NOTE]
-> The **(new) Card visual** became generally available as the **Card visual** with the November 2025 Power BI release. If you used this visual during Public Preview, you may notice behavior or formatting changes that reflect improvements included in the General Availibility release. You can customize the visual using the Format pane.
+> The **(new) Card visual** became generally available as the **Card visual** with the November 2025 Power BI release. If you used this visual during Public Preview, you may notice behavior or formatting changes that reflect improvements included in the General Availability release. You can customize the visual using the Format pane.
 
 ## Prerequisites
 
