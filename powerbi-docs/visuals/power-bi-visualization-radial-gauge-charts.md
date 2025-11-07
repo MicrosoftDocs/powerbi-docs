@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 09/30/2025
+ms.date: 11/07/2025
 LocalizationGroup: Visualizations
 ms.custom: sample-financialsample
 ai-usage: ai-assisted
@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A radial gauge chart uses a circular arc to show how a single value progresses toward a goal or a Key Performance Indicator (KPI). The gauge line (or _needle_) represents the goal or target value. The shading represents the progress toward the goal. The value inside the arc represents the progress value. Power BI spreads all possible values evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
+A radial gauge chart uses a circular arc to show how a single value progresses toward a goal or a Key Performance Indicator (KPI). The gauge line (or *needle*) represents the goal or target value. The shading represents the progress toward the goal. The value inside the arc represents the progress value. Power BI spreads all possible values evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
 The following example shows a radial gauge chart for tracking car sales.
 
@@ -39,7 +39,7 @@ Radial gauges are a great choice in many scenarios:
 
 ## Download the sample data
 
-To follow along with the procedure, download the Financial Sample Excel file. Then you can open it either in Power BI Desktop or in the Power BI service. See the article [Download the Financial Sample Excel workbook for Power BI](../create-reports/sample-financial-download.md) for details. 
+To follow along with the procedure, download the Financial Sample Excel file. Then you can open it either in Power BI Desktop or in the Power BI service. See the article [Download the Financial Sample Excel workbook for Power BI](../create-reports/sample-financial-download.md) for details.
 
 ## Create a gauge chart
 
@@ -68,7 +68,7 @@ Let's begin by creating a simple radial gauge chart in Power BI. We can track gr
 
 4. In the **Data** pane, expand **financials** and select the **Gross Sales** checkbox.
 
-   By default, Power BI creates a clustered column chart to display the data. On the **Visualizations** > **Build visual** pane, the **Y-axis** option is aligned to the **Gross Sales** value. Notice that by default, Power BI uses the _sum_ value for the selected field.
+   By default, Power BI creates a clustered column chart to display the data. On the **Visualizations** > **Build visual** pane, the **Y-axis** option is aligned to the **Gross Sales** value. Notice that by default, Power BI uses the *sum* value for the selected field.
 
    :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-sum.png" alt-text="Screenshot that shows the default cluster column chart for the selected data field.":::
 
@@ -84,28 +84,28 @@ Let's begin by creating a simple radial gauge chart in Power BI. We can track gr
 
    Notice the changes to the **Visualizations** pane. The **Average of Gross Sales** value is now listed under the **Value** option. Several other value options are listed, including the **Minimum**, **Maximum**, and **Target**.
 
-   By default, Power BI sets the current value (in this case, **Average of Gross Sales**) as the halfway point on the gauge. Because the **Average of Gross Sales** value is $184.21 K, the start point on the gauge (**Minimum value**) is set to 0. The end point on the gauge (**Maximum value**) is set to double the current value.
+   By default, Power BI sets the current value (in this case, **Average of Gross Sales**) as the halfway point on the gauge. Because the **Average of Gross Sales** value is *184.21 K*, the start point on the gauge (**Minimum value**) is set to 0. The end point on the gauge (**Maximum value**) is set to double the current value.
 
    :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge.png" alt-text="Screenshot of the initial gauge chart in Power BI that shows the average of gross sales as the gauge value.":::
 
    > [!NOTE]
    > Depending on when you download the Financial Sample Excel file, your chart might show different values.
 
-## Add a target value 
+## Add a target value
 
-You can modify the gauge chart to show a target value. This action creates a _needle_ on the gauge chart to identify the target.
+You can modify the gauge chart to show a target value. This action creates a *needle* on the gauge chart to identify the target.
 
 1. On the **Data** pane, select and drag the **COGS** field to the **Target value** option on the **Visualizations** > **Build visual** pane.
 
-   Power BI changes the chart view to show _Average of Gross Sales_ and _COGS_ (Sum).
+   Power BI changes the chart view to show *Average of Gross Sales* and *COGS* (Sum).
 
 1. On the **Visualizations** pane under the **Value** option, open the drop-down menu for the **Sum of COGS** value and select **Average**.
 
-   By default, Power BI calculates the average of the two values _Gross Sales_ and _COGS_ to determine the target value. Power BI adds a needle to the gauge to represent the target.
+   By default, Power BI calculates the average of the two values *Gross Sales* and *COGS* to determine the target value. Power BI adds a needle to the gauge to represent the target.
 
    :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-needle.png" alt-text="Screenshot that shows the updated gauge chart with a needle that represents the target value.":::
 
-   Power BI calculates the target value as $146.65 K. The position of the gauge needle shows that the average of the _Gross Sales_ and _COGS_ values exceeds the target.
+   Power BI calculates the target value as *146.65 K*. The position of the gauge needle shows that the average of the *Gross Sales* and *COGS* values exceeds the target.
 
    > [!NOTE]
    > You can manually specify a target value rather than using the calculation from Power BI. For more information, see the [Use manual options to set values](#use-manual-options-to-set-values) section.
