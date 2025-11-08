@@ -1,5 +1,5 @@
 ---
-title: Tour the Power BI report editor
+title: Tour the Power BI Report Editor
 description: Learn how to use the report editor and design the reports your end users see in Power BI Desktop and the Power BI service.
 author: julcsc
 ms.author: juliacawthra
@@ -8,9 +8,10 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/01/2023
+ms.date: 11/07/2025
 LocalizationGroup: Reports
 ---
+
 # Tour the report editor in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
@@ -25,19 +26,19 @@ In the Power BI service, the report editor is only available in Editing View. To
 
 The Power BI report editor is divided into several main sections:
 
-* The ribbon
-* The report canvas
-* The Filters pane
-* The Visualizations pane
-* The Fields pane
+- The ribbon
+- The report canvas
+- The Filters pane
+- The Visualizations pane
+- The Fields pane
 
 ## The ribbon
 
-The ribbon is the only part of the report editor that's not the same in Power BI Desktop and the Power BI service. The actions available from the ribbon vary,  depending on what you have selected on the canvas. New actions are being added all the time. For information about a particular action, use the Power BI documentation table of contents, or the Search box.
+The ribbon is the only part of the report editor that's not the same in Power BI Desktop and the Power BI service. The actions available from the ribbon vary, depending on what you select in the report canvas. New actions are frequently added. For information about a particular action, use the Power BI documentation table of contents, or the Search box.
 
 ## The report canvas
 
-The report canvas is where your work displays. When you use the Fields, Filters, and Visualizations panes to create visuals, the visuals are built and displayed on your report canvas. Each tab at the bottom of the canvas represents a page in the report. Select a tab to open that page.
+The report canvas is where your work displays. When you use the Fields, Filters, and Visualizations panes to create visuals, the visuals are built and displayed on your report canvas. Each tab at the bottom of the canvas represents a page in the report. To open that page, select a tab.
 
 ### The report editor panes
 
@@ -93,7 +94,7 @@ You can download custom visualizations to Power BI Desktop. Their icons show up 
 
 :::image type="content" source="media/service-the-report-editor-take-a-tour/power-bi-visualization-field-manager-2.png" alt-text="Screenshot of the Visualizations pane.":::
 
-The buckets, sometimes called *wells*, in this pane vary depending on the type of visualization you've selected. For example, if you've selected a bar chart, you see Axis, Legend, and Values. When you select a field or drag it onto the canvas, Power BI adds that field to one of the buckets. You can also drag fields from the Fields list directly into the buckets. Some buckets are limited to certain types of data. For example, **Values** don't accept non-numeric fields. Therefore, if you drag a **Category** field into the **Values** bucket, Power BI changes it to **Count of Category**.
+The buckets, sometimes called *wells*, in this pane vary depending on the type of visualization you select. For example, if you've select a bar chart, you see Axis, Legend, and Values. When you select a field or drag it onto the canvas, Power BI adds that field to one of the buckets. You can also drag fields from the Fields list directly into the buckets. Some buckets are limited to certain types of data. For example, **Values** don't accept non-numeric fields. Therefore, if you drag a **Category** field into the **Values** bucket, Power BI changes it to **Count of Category**.
 
 For more information, see [Add visuals to a Power BI report](../visuals/power-bi-report-add-visualizations-i.md).
 
@@ -107,9 +108,9 @@ Select the paint brush icon to display the Format visual pane. The options avail
 
 To learn more, explore on your own, or see the following articles:
 
-* [Getting started with the formatting pane](../visuals/power-bi-visualization-customize-title-background-and-legend.md)
-* [Color formatting](../visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
-* [Customizing x-axis and y-axis properties](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
+- [Getting started with the formatting pane](../visuals/power-bi-visualization-customize-title-background-and-legend.md)
+- [Color formatting](../visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
+- [Customizing x-axis and y-axis properties](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### Add analytics to your visualizations
 
@@ -123,9 +124,9 @@ With the Analytics pane in the Power BI service, you can add dynamic reference l
 
 The Fields pane displays the tables, folders, and fields in your data that are available for you to use to create visualizations.
 
-* Drag a field onto the page to start a new visualization. You can also drag a field onto an existing visualization to add the field to that visualization.
-* When you add a checkmark next to a field, Power BI adds that field to the active or new visualization. It also decides which bucket to place that field into. For example, should the field be used as a legend, axis, or value? Power BI makes a best-guess, and you can move it from that bucket to another if necessary.
-* Either way, each selected field is added to the Visualizations pane in the report editor.
+- Drag a field onto the page to start a new visualization. You can also drag a field onto an existing visualization to add the field to that visualization.
+- When you add a checkmark next to a field, Power BI adds that field to the active or new visualization. It also decides which bucket to place that field into. For example, should the field be used as a legend, axis, or value? Power BI makes a best-guess, and you can move it from that bucket to another if necessary.
+- Either way, each selected field is added to the Visualizations pane in the report editor.
 
     :::image type="content" source="media/service-the-report-editor-take-a-tour/power-bi-fields-list-2.png" alt-text="Screenshot showing the Fields pane with example selections.":::
 
@@ -137,9 +138,9 @@ Power BI uses many different icons to indicate the types of fields in a report. 
 
 ## Related content
 
-* [Create a report from an Excel file in the Power BI service](service-report-create-new.md)
-* [Work with Report view in Power BI Desktop](desktop-report-view.md)
-* [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md)
-* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Create a report from an Excel file in the Power BI service](service-report-create-new.md)
+- [Work with Report view in Power BI Desktop](desktop-report-view.md)
+- [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
