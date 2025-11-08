@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/06/2025
+ms.date: 11/08/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -41,8 +41,12 @@ When you ask questions about your data, Copilot will work with you to understand
  - Use full sentences.
  - Include contextual details to help Copilot find the right source.
  - Respond thoughtfully to follow-up questions.
+
+:::image type="content" source="media/copilot-introduction/copilot-communication-tips.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing output of the request for a visual of monthly trends." lightbox="media/copilot-introduction/copilot-communication-tips.png":::
  
 Although the additional reasoning may require a short wait, getting an your answer from a reliable source is worth the pause. Alternately, if you know exactly which report or semantic model you want to reference, you can attach it to your chat using the **+** option. Then it appears in the Copilot conversation and is used to answer your questions.
+
+:::image type="content" source="media/copilot-introduction/copilot-ask-questions-about-data.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing the prompt and suggested results for asking questions about your data." lightbox="media/copilot-introduction/copilot-ask-questions-about-data.png":::
 
 ### Delivering answers, visuals, and summaries
 
@@ -52,12 +56,13 @@ The standalone Copilot experience can summarize data from reports (learn more ab
 
 You can ask Copilot to find reports, semantic models, apps, and data agents that you have access to. In response, you get a hyperlinked list of relevant items, with helpful descriptions to make it easy for you to find the right thing. Learn more about [searching for items](copilot-search-new-content.md)
 
+:::image type="content" source="media/copilot-introduction/copilot-find-reports-sales.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing output of the request for finding reports about sales." lightbox="media/copilot-introduction/copilot-find-reports-sales.png":::
+
 ### Use a Fabric data agent
 
 You can use [Fabric data agents](/fabric/data-science/concept-data-agent) to get answers without leaving the standalone Copilot experience. Fabric data agents are custom-built experts in specific topics, trained by a developer within your organization.
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-fabric-data-agent.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing the use of a Fabric data agent to answer a question." lightbox="media/copilot-introduction/copilot-standalone-fabric-data-agent.png":::
-
 
 ### Prep data for AI
 
