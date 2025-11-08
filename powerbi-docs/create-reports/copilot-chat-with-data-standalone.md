@@ -34,7 +34,7 @@ Copilot in Power BI is available as a full-screen, standalone Copilot experience
 
 The standalone Copilot experience in Power BI offers a range of powerful capabilities to help you interact with your data more effectively. Copilot provides a conversational interface that simplifies data exploration and analysis. Here are some key features available in this experience.
 
-### Finding the right data to answer your question
+### Find the right data to answer your question
 
 When you ask questions about your data, Copilot will work with you to understand your topic of interest and use that context to identify the right report, semantic model, or data agent to use as its source. If it finds an item that's a strong match for your question, it will select it in the background and deliver you an answer right away. When more context is needed, Copilot will ask simple clarifying questions to narrow it down. For best results, instead of typing a few keywords like we do with search engines, communicate like you would with a colleague:
 
@@ -48,11 +48,11 @@ Although the additional reasoning may require a short wait, getting an your answ
 
 :::image type="content" source="media/copilot-introduction/copilot-ask-questions-about-data.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing the prompt and suggested results for asking questions about your data." lightbox="media/copilot-introduction/copilot-ask-questions-about-data.png":::
 
-### Delivering answers, visuals, and summaries
+### Deliver answers, visuals, and summaries
 
 The standalone Copilot experience can summarize data from reports (learn more about  [summarizing a report or topic](copilot-pane-summarize-content.md) here), and use the report visuals to answer specific questions. If the answer can't be found in the report, Copilot will then use the measures and other data fields in your semantic model (or even create new DAX calculations) to generate the answer for you. Learn more about [asking questions about your data](copilot-ask-data-question.md). 
 
-### Searching for items
+### Search for items
 
 You can ask Copilot to find reports, semantic models, apps, and data agents that you have access to. In response, you get a hyperlinked list of relevant items, with helpful descriptions to make it easy for you to find the right thing. Learn more about [searching for items](copilot-search-new-content.md)
 
