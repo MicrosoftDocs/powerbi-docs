@@ -26,7 +26,7 @@ Copilot in Power BI is available as a full-screen, standalone Copilot experience
 >
 > **Data must be prepped for Copilot:** Copilot works best when the report author has prepared the data specifically for Copilot, and marked the model as approved for Copilot. If that setup hasn’t been done, answers may be limited or inaccurate. For more information, see [Prepare your data for AI](copilot-prepare-data-ai.md).
 >
-> **Approve your data for Copilot:** Semantic model authors have the ability to approve a model for use with Copilot in model settings. This impacts the appearance of content warnings for end users. For more information, see [Approve your model for use with AI](copilot-prepare-data-ai.md#mark-your-model-as-prepped-for-ai).
+> **Approve your data for Copilot:** Semantic model authors have the ability to approve a model for use with Copilot in model settings. This impacts the appearance of content warnings for end users. For more information, see [Approve your model for use with AI](copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot).
 >
 > **Warnings on data not set as approved for Copilot:** Models that aren't approved for Copilot will appear with warnings that the answer quality could be low.
 
