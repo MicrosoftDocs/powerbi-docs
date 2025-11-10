@@ -130,9 +130,9 @@ After you prepare your semantic model for AI and it's ready for consumption, you
 1. Expand the **Approved for Copilot** section.
 1. Select the **Approved for Copilot** box, and then select the **Apply** button.
 
-:::image type="content" source="media/copilot-prep-data/copilot-ai-preparation.png" alt-text="Screenshot of the AI preparation settings in Power BI service that showcases the option to mark a model Prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
+:::image type="content" source="media/copilot-prep-data/copilot-approved-for-copilot.png" alt-text="Screenshot of the approved for Copilot settings in Power BI service that showcases the option to mark a model Prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
 
-When you mark your semantic model as **approved for Copilot**, the standalone Copilot agent doesn't apply any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai) to answers from that model. Also, reports that use that semantic model will be considered **approved for Copilot**.
+When you mark your semantic model as **approved for Copilot**, the standalone Copilot agent doesn't apply any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai-and-mark-as-approved-for-Copilot) to answers from that model. Also, reports that use that semantic model will be considered **approved for Copilot**.
 
 > [!NOTE]
 > When you mark a semantic model as **approved for Copilot**, the friction treatment in standalone Copilot for associated reports should be removed.
