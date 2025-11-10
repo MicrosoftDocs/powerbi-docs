@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 10/01/2025
+ms.date: 11/10/2025
 ---
 
 # What's new in Power BI collaboration and integration
@@ -19,6 +19,12 @@ This article summarizes new or updated Power BI features that are designed to he
 **To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/whats-new.md).**
 
 ## October 2025
+
+### Power BI in Teams: Content shared in chats now opens in a dedicated window
+
+When you share Power BI content in Teams chats, it now opens in a separate, focused window within Teams. This improves usability by keeping the chat context intact while giving you a full experience for interacting with reports or dashboards.
+
+To learn more about this feature, see [Link preview cards in Microsoft Teams chats and channels](service-teams-link-preview.md) and the ["Power BI in Teams – Content Shared in Teams Chats Now Opens a Dedicated Separate Window Within Teams" blog post](https://powerbi.microsoft.com/blog/power-bi-in-teams-content-shared-in-teams-chats-now-opens-a-dedicated-separate-window-within-teams/).
 
 ### Power BI Controller (preview)
 
