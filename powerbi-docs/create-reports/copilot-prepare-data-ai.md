@@ -141,7 +141,7 @@ When you mark your semantic model as **approved for Copilot**, the standalone Co
 >
 > There's currently *no way* to mark a report, dashboard, or app **approved for Copilot**.
 
-Authors can also turn on an admin setting to [only search data that is marked **approved for Copilot**](/fabric/admin/service-admin-portal-copilot#only-show-ai-prepped-items-in-the-standalone-copilot-in-power-bi-experience-preview) within the standalone Copilot experience.
+Authors can also turn on an admin setting to [only search data that is marked **approved for Copilot**](/fabric/admin/service-admin-portal-copilot#only-show-approved-for-copilot-items-in-the-standalone-copilot-in-power-bi-experience-preview) within the standalone Copilot experience.
 
 ## Turn off the preview features in Desktop
 
