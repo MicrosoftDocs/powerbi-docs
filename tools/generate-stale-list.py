@@ -76,14 +76,18 @@ def main():
     ap.add_argument("--input", required=True)
     ap.add_argument("--output", required=True)
     ap.add_argument("--docroot", default="powerbi-docs")
-    ap.add_argument("--limit", type=int, default=50)
+    ap.add_argument("--batch-size", type=int, default=10)
     ap.add_argument("--fresh-window-days", type=int, default=int(os.environ.get("FRESH_WINDOW_DAYS","365")))
     a = ap.parse_args()
 
     src = pathlib.Path(a.input)
     if not src.exists():
         print(f"Input not found: {src}", file=sys.stderr); sys.exit(0)
-    df = pd.read_excel(src, engine="openpyxl")
+    # Auto-detect Excel format based on file extension
+    if src.suffix.lower() == '.xls':
+        df = pd.read_excel(src, engine="xlrd")
+    else:
+        df = pd.read_excel(src, engine="openpyxl")
 
     col_url   = find(df, "Url")
     col_views = find(df, "PageViews","Views")
@@ -113,13 +117,66 @@ def main():
         summary.append({"Path": path,"Title": r.get(col_title,""),"PageViews": r[col_views],
                         "Freshness (report)": r.get(col_fresh,""),"LastReviewed (report)": r.get(col_lr,""),
                         "LastReviewed (file)": msd.isoformat() if msd else ""})
-        if len(selected) >= a.limit: break
 
+    # Group files by subfolder for batching
+    from collections import defaultdict
+    folders = defaultdict(list)
+    for i, path in enumerate(selected):
+        # Extract subfolder (e.g., "developer", "create-reports")
+        parts = path.split("/")
+        if len(parts) > 1:
+            subfolder = parts[1]  # Skip "powerbi-docs/"
+        else:
+            subfolder = "root"
+        folders[subfolder].append((i, path))
+
+    # Create batches within each subfolder
+    batch_num = 1
+    all_batches = []
+    for subfolder, files in folders.items():
+        # Sort by page views (descending) within subfolder
+        files_with_views = [(i, path, summary[i]["PageViews"]) for i, path in files]
+        files_with_views.sort(key=lambda x: x[2], reverse=True)
+        
+        # Create batches of batch_size within this subfolder
+        for i in range(0, len(files_with_views), a.batch_size):
+            batch_files = [path for _, path, _ in files_with_views[i:i+a.batch_size]]
+            batch_summary = [summary[idx] for idx, _, _ in files_with_views[i:i+a.batch_size]]
+            all_batches.append({
+                "batch_num": batch_num,
+                "subfolder": subfolder,
+                "files": batch_files,
+                "summary": batch_summary
+            })
+            batch_num += 1
+
+    # Write output files
     out = pathlib.Path(a.output); out.parent.mkdir(parents=True, exist_ok=True)
+    
+    # Write all selected files
     out.write_text("\n".join(selected), encoding="utf-8")
+    
+    # Write summary
     pd.DataFrame(summary).to_csv(str(out.with_suffix(".summary.csv")), index=False)
+    
+    # Write batch information
+    batch_info = []
+    for batch in all_batches:
+        for file_path in batch["files"]:
+            batch_info.append({
+                "BatchNum": batch["batch_num"],
+                "Subfolder": batch["subfolder"],
+                "FilePath": file_path
+            })
+    pd.DataFrame(batch_info).to_csv(str(out.with_suffix(".batches.csv")), index=False)
+    
     if skipped:
         pd.DataFrame(skipped).to_csv(str(out.with_suffix(".skipped.csv")), index=False)
-    print(f"Selected {len(selected)} files. Skipped {len(skipped)}.")
+    
+    print(f"Selected {len(selected)} files in {len(all_batches)} batches. Skipped {len(skipped)}.")
+    print(f"Batches by subfolder:")
+    for subfolder, files in folders.items():
+        batch_count = (len(files) + a.batch_size - 1) // a.batch_size  # Ceiling division
+        print(f"  {subfolder}: {len(files)} files -> {batch_count} batches")
 if __name__ == "__main__":
     main()
