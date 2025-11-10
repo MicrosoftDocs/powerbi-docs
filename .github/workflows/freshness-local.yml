@@ -1,4 +1,4 @@
-﻿name: Freshness Batch Processing
+﻿name: Freshness Batch Processing (Test Mode)
 on:
   workflow_dispatch:
 
@@ -14,6 +14,7 @@ env:
   STALE_FILE_LIST: tools/stale-files.txt
   BATCH_SIZE: "10"
   FRESH_WINDOW_DAYS: "365"
+  TEST_MODE: "true"  # Set to "false" to process all batches
 
 jobs:
   freshness:
@@ -80,8 +81,15 @@ jobs:
           
           echo "Processing batches..."
           
-          tail -n +2 "${{ env.STALE_FILE_LIST }}.batches.csv" | while IFS=, read -r batch_num subfolder file_count files; do
-            echo "Processing batch $batch_num: $subfolder ($file_count files)"
+          if [ "${{ env.TEST_MODE }}" = "true" ]; then
+            echo "🧪 TEST MODE: Processing only the first batch"
+            tail -n +2 "${{ env.STALE_FILE_LIST }}.batches.csv" | head -n 1 | while IFS=, read -r batch_num subfolder file_count files; do
+              echo "Processing batch $batch_num: $subfolder ($file_count files)"
+          else
+            echo "📦 FULL MODE: Processing all batches"
+            tail -n +2 "${{ env.STALE_FILE_LIST }}.batches.csv" | while IFS=, read -r batch_num subfolder file_count files; do
+              echo "Processing batch $batch_num: $subfolder ($file_count files)"
+          fi
             
             BRANCH="${{ env.WORKING_BRANCH_PREFIX }}/batch-$batch_num-$(echo $subfolder | sed 's|/|-|g')"
             git checkout -b "$BRANCH" "origin/${{ env.TARGET_BRANCH }}"
@@ -124,6 +132,16 @@ jobs:
             fi
             
             git checkout "${{ env.TARGET_BRANCH }}"
+            
+            # In test mode, exit after first batch
+            if [ "${{ env.TEST_MODE }}" = "true" ]; then
+              echo "🧪 Test mode: Stopping after first batch"
+              break
+            fi
           done
           
-          echo "Batch processing complete!"
+          if [ "${{ env.TEST_MODE }}" = "true" ]; then
+            echo "✅ Test mode complete! Review the PR before enabling full processing."
+          else
+            echo "📦 Full batch processing complete!"
+          fi
