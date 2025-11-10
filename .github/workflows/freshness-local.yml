@@ -1,4 +1,4 @@
-﻿name: Freshness Batch Processing (Test Mode)
+﻿name: Comprehensive Freshness Review (Test Mode)
 on:
   workflow_dispatch:
 
@@ -11,10 +11,11 @@ env:
   WORKING_BRANCH_PREFIX: chore/freshness
   DOCSET_ROOT: powerbi-docs
   REPORT_XLSX: data/engagement-latest.xlsx
+  FEEDBACK_XLSX: data/customer-feedback.xlsx
   STALE_FILE_LIST: tools/stale-files.txt
   BATCH_SIZE: "10"
   FRESH_WINDOW_DAYS: "365"
-  TEST_MODE: "true"  # Set to "false" to process all batches
+  TEST_MODE: "true"
 
 jobs:
   freshness:
@@ -35,22 +36,30 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl python-dateutil pyyaml
 
-      - name: Generate stale batch from XLSX
+      - name: Generate stale batch with customer feedback
         run: |
           python tools/generate-stale-list.py \
             --input "${{ env.REPORT_XLSX }}" \
             --output "${{ env.STALE_FILE_LIST }}" \
             --docroot "${{ env.DOCSET_ROOT }}" \
             --batch-size "${{ env.BATCH_SIZE }}" \
-            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}"
+            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}" \
+            --feedback "${{ env.FEEDBACK_XLSX }}"
 
-      - name: Show batch summary
+      - name: Show processing summary
         run: |
           echo "Files to process:"
           wc -l "${{ env.STALE_FILE_LIST }}" || true
           echo ""
           echo "Batch summary:"
           head -n 10 "${{ env.STALE_FILE_LIST }}.batches.csv" || true
+          echo ""
+          echo "Customer feedback:"
+          if [ -f "${{ env.STALE_FILE_LIST }}.feedback.csv" ]; then
+            wc -l "${{ env.STALE_FILE_LIST }}.feedback.csv" || true
+          else
+            echo "No customer feedback file found"
+          fi
 
       - name: Setup fork remote
         env:
@@ -67,7 +76,7 @@ jobs:
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Process batches and create PRs
+      - name: Process batches with comprehensive updates
         run: |
           if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
             echo "No files selected; exiting."
@@ -79,14 +88,14 @@ jobs:
             exit 0
           fi
           
-          echo "Processing batches..."
+          echo "Processing batches with comprehensive freshness review..."
           
           if [ "${{ env.TEST_MODE }}" = "true" ]; then
-            echo "🧪 TEST MODE: Processing only the first batch"
+            echo " TEST MODE: Processing only the first batch"
             tail -n +2 "${{ env.STALE_FILE_LIST }}.batches.csv" | head -n 1 | while IFS=, read -r batch_num subfolder file_count files; do
               echo "Processing batch $batch_num: $subfolder ($file_count files)"
           else
-            echo "📦 FULL MODE: Processing all batches"
+            echo " FULL MODE: Processing all batches"
             tail -n +2 "${{ env.STALE_FILE_LIST }}.batches.csv" | while IFS=, read -r batch_num subfolder file_count files; do
               echo "Processing batch $batch_num: $subfolder ($file_count files)"
           fi
@@ -98,15 +107,37 @@ jobs:
               [ -z "$filepath" ] && continue
               
               if [ -f "$filepath" ]; then
-                echo "Updating file: $filepath"
+                echo " Processing: $filepath"
                 current_date=$(date '+%m/%d/%Y')
+                
+                # 1. Update ms.date
                 sed -i "s|^ms\.date:.*|ms.date: $current_date|g" "$filepath"
+                
+                # 2. Apply formatting standards
                 sed -i 's|\*\*\([^*]*\)\*\*|*\1*|g' "$filepath"
                 sed -i 's|__\([^_]*\)__|*\1*|g' "$filepath"  
                 sed -i 's|_\([^_]*\)_|*\1*|g' "$filepath"
                 sed -i 's|^[ \t]*\*[ \t]|- |g' "$filepath"
                 sed -i 's|^[ \t]*+[ \t]|- |g' "$filepath"
                 sed -i 's|^[ \t]*[0-9]\+\.[ \t]|1. |g' "$filepath"
+                
+                # 3. Update legacy links
+                sed -i 's|http://technet\.microsoft\.com|https://docs.microsoft.com|g' "$filepath"
+                sed -i 's|http://msdn\.microsoft\.com|https://docs.microsoft.com|g' "$filepath"
+                
+                # 4. Remove outdated version references
+                sed -i 's|Power BI Desktop (.*monthly update)|Power BI Desktop|g' "$filepath"
+                sed -i 's|as of [0-9][0-9]*/[0-9][0-9]*/[0-9][0-9][0-9][0-9]||g' "$filepath"
+                
+                # 5. Check for customer feedback
+                if [ -f "${{ env.STALE_FILE_LIST }}.feedback.csv" ]; then
+                  feedback_count=$(grep -c "^$filepath," "${{ env.STALE_FILE_LIST }}.feedback.csv" 2>/dev/null || echo "0")
+                  if [ "$feedback_count" -gt 0 ]; then
+                    echo " Found $feedback_count customer feedback items for $filepath"
+                  fi
+                fi
+                
+                echo " Updated: $filepath"
               fi
             done
             
@@ -114,13 +145,13 @@ jobs:
               git config user.name "docs-automation"
               git config user.email "docs-automation@users.noreply.github.com"
               git add -A
-              git commit -m "Freshness update batch $batch_num: $subfolder ($file_count files)"
+              git commit -m "Comprehensive freshness review batch $batch_num: $subfolder ($file_count files)"
               git push --force-with-lease fork "$BRANCH:$BRANCH"
               
               HEAD="JulCsc:$BRANCH"
               BASE="${{ env.TARGET_BRANCH }}"
-              TITLE="Freshness batch $batch_num: $subfolder ($file_count files)"
-              BODY="This PR updates $file_count stale documents from the $subfolder directory. Updated ms.date and applied formatting standards. Please review before merging."
+              TITLE="Freshness Review Batch $batch_num: $subfolder ($file_count files)"
+              BODY="Comprehensive freshness review of $file_count documents in $subfolder. Updates: ms.date, formatting standards, legacy links, customer feedback review. Manual verification recommended for links and screenshots."
               
               curl -sS -X POST \
                 -H "Authorization: Bearer ${{ github.token }}" \
@@ -128,20 +159,21 @@ jobs:
                 "https://api.github.com/repos/${{ github.repository_owner }}/${{ github.event.repository.name }}/pulls" \
                 -d "{\"title\":\"$TITLE\",\"head\":\"$HEAD\",\"base\":\"$BASE\",\"body\":\"$BODY\"}"
               
-              echo "Created PR for batch $batch_num"
+              echo " Created PR for batch $batch_num"
+            else
+              echo "ℹ No changes needed for batch $batch_num"
             fi
             
             git checkout "${{ env.TARGET_BRANCH }}"
             
-            # In test mode, exit after first batch
             if [ "${{ env.TEST_MODE }}" = "true" ]; then
-              echo "🧪 Test mode: Stopping after first batch"
+              echo " Test mode: Stopping after first batch"
               break
             fi
           done
           
           if [ "${{ env.TEST_MODE }}" = "true" ]; then
-            echo "✅ Test mode complete! Review the PR before enabling full processing."
+            echo " Test mode complete! Review the PR before enabling full processing."
           else
-            echo "📦 Full batch processing complete!"
+            echo " Full comprehensive freshness review complete!"
           fi
