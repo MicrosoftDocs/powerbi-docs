@@ -70,11 +70,11 @@ You must [prepare your data for it to work well with Copilot](copilot-prepare-da
 
 Once your data is prepared for AI, you should mark the semantic model as **approved for Copilot**. If your data is not marked as approved for Copilot, you get a warning that the answer might be low quality. You can choose to explore the data or view the answer anyway.
 
-:::image type="content" source="media/copilot-introduction/copilot-standalone-friction-treatment-warning.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a warning about low quality answers." lightbox="media/copilot-introduction/copilot-standalone-answer-quality-warning.png":::
+:::image type="content" source="media/copilot-introduction/copilot-standalone-friction-treatment-warning.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a warning about low quality answers." lightbox="media/copilot-introduction/copilot-standalone-friction-treatment-warning.png":::
 
 If you select the **View answer** button, the response appears in chat.
 
-:::image type="content" source="media/copilot-introduction/copilot-standalone-view-answer-result.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a warning about low quality answers for a visual." lightbox="media/copilot-introduction/copilot-standalone-visual-answer-quality-warning.png":::
+:::image type="content" source="media/copilot-introduction/copilot-standalone-view-answer-result.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a warning about low quality answers for a visual." lightbox="media/copilot-introduction/copilot-standalone-standalone-view-answer-result.png":::
 
 Once your data is set as [approved for Copilot](copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot), responses appear in the chat without the warning.
 
