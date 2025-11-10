@@ -71,6 +71,136 @@ def is_fresh_by_msdate(msdate: datetime.date, fresh_window_days: int) -> bool:
     cutoff = today - datetime.timedelta(days=fresh_window_days)
     return msdate >= cutoff
 
+def process_customer_feedback(feedback_file, docroot):
+    """Process customer feedback Excel file and return actionable feedback by file."""
+    if not feedback_file or not os.path.exists(feedback_file):
+        print("No customer feedback file found, skipping feedback processing")
+        return {}
+    
+    try:
+        # Auto-detect Excel format
+        if feedback_file.endswith('.xls'):
+            feedback_df = pd.read_excel(feedback_file, engine="xlrd")
+        else:
+            feedback_df = pd.read_excel(feedback_file, engine="openpyxl")
+        
+        feedback_map = {}
+        
+        # Look for common column names (case insensitive)
+        cols = {col.lower(): col for col in feedback_df.columns}
+        
+        # Try to find relevant columns
+        file_col = None
+        verbatim_col = None
+        rating_col = None
+        
+        for col in cols:
+            if any(x in col for x in ['file', 'path', 'url', 'page']):
+                file_col = cols[col]
+            elif 'verbatim' in col or 'comment' in col or 'feedback' in col:
+                verbatim_col = cols[col]
+            elif any(x in col for x in ['rating', 'score', 'helpful', 'satisfaction']):
+                rating_col = cols[col]
+        
+        if not file_col or not verbatim_col:
+            print("Could not find required columns in feedback file")
+            return {}
+        
+        print(f"Processing customer feedback from {len(feedback_df)} entries...")
+        
+        for _, row in feedback_df.iterrows():
+            file_path = str(row[file_col]) if pd.notna(row[file_col]) else ""
+            verbatim = str(row[verbatim_col]) if pd.notna(row[verbatim_col]) else ""
+            rating = row[rating_col] if rating_col and pd.notna(row[rating_col]) else None
+            
+            # Skip if no meaningful feedback
+            if not verbatim or len(verbatim.strip()) < 10:
+                continue
+            
+            # Look for negative feedback (low rating or negative keywords)
+            is_negative = False
+            if rating is not None:
+                try:
+                    rating_num = float(rating)
+                    is_negative = rating_num <= 2  # Assuming 1-5 scale
+                except:
+                    pass
+            
+            # Check for negative keywords in verbatim
+            negative_keywords = ['wrong', 'incorrect', 'outdated', 'error', 'broken', 'doesn\'t work', 
+                               'not working', 'missing', 'unclear', 'confusing', 'bad', 'poor']
+            
+            verbatim_lower = verbatim.lower()
+            if any(keyword in verbatim_lower for keyword in negative_keywords):
+                is_negative = True
+            
+            if not is_negative:
+                continue
+            
+            # Try to extract file path from URL or direct path
+            if 'http' in file_path:
+                # Extract from URL
+                parts = file_path.split('/')
+                for i, part in enumerate(parts):
+                    if part == docroot and i + 1 < len(parts):
+                        relative_path = '/'.join(parts[i:])
+                        break
+                else:
+                    continue
+            else:
+                relative_path = file_path
+            
+            # Normalize path
+            if relative_path.startswith('/'):
+                relative_path = relative_path[1:]
+            
+            # Store actionable feedback
+            if relative_path not in feedback_map:
+                feedback_map[relative_path] = []
+            
+            feedback_map[relative_path].append({
+                'verbatim': verbatim,
+                'rating': rating,
+                'is_actionable': is_actionable_feedback(verbatim)
+            })
+        
+        print(f"Found feedback for {len(feedback_map)} files")
+        return feedback_map
+        
+    except Exception as e:
+        print(f"Error processing customer feedback: {e}")
+        return {}
+
+def is_actionable_feedback(verbatim):
+    """Determine if feedback is actionable without SME input."""
+    import re
+    verbatim_lower = verbatim.lower()
+    
+    # Actionable indicators
+    actionable_patterns = [
+        'link.*broken', 'link.*not.*work', 'dead link', 'link.*error',
+        'typo', 'spelling', 'grammar',
+        'image.*missing', 'screenshot.*outdated', 'picture.*wrong',
+        'code.*doesn.*work', 'example.*broken', 'sample.*error',
+        'date.*wrong', 'version.*old', 'updated.*need'
+    ]
+    
+    # Non-actionable (requires SME)
+    non_actionable_patterns = [
+        'need.*more.*detail', 'should.*explain', 'missing.*information',
+        'want.*example', 'how.*do', 'why.*not', 'feature.*request'
+    ]
+    
+    for pattern in non_actionable_patterns:
+        if re.search(pattern, verbatim_lower):
+            return False
+    
+    for pattern in actionable_patterns:
+        if re.search(pattern, verbatim_lower):
+            return True
+    
+    return False
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", required=True)
@@ -78,6 +208,7 @@ def main():
     ap.add_argument("--docroot", default="powerbi-docs")
     ap.add_argument("--batch-size", type=int, default=10)
     ap.add_argument("--fresh-window-days", type=int, default=int(os.environ.get("FRESH_WINDOW_DAYS","365")))
+    ap.add_argument("--feedback", help="Customer feedback Excel file to process")
     a = ap.parse_args()
 
     src = pathlib.Path(a.input)
@@ -117,6 +248,11 @@ def main():
         summary.append({"Path": path,"Title": r.get(col_title,""),"PageViews": r[col_views],
                         "Freshness (report)": r.get(col_fresh,""),"LastReviewed (report)": r.get(col_lr,""),
                         "LastReviewed (file)": msd.isoformat() if msd else ""})
+
+    # Process customer feedback
+    feedback_map = {}
+    if a.feedback:
+        feedback_map = process_customer_feedback(a.feedback, a.docroot)
 
     # Group files by subfolder for batching
     from collections import defaultdict
@@ -172,6 +308,22 @@ def main():
     
     if skipped:
         pd.DataFrame(skipped).to_csv(str(out.with_suffix(".skipped.csv")), index=False)
+    
+    # Write customer feedback data
+    if feedback_map:
+        feedback_data = []
+        for file_path, feedbacks in feedback_map.items():
+            for fb in feedbacks:
+                if fb['is_actionable']:  # Only include actionable feedback
+                    feedback_data.append({
+                        "FilePath": file_path,
+                        "Verbatim": fb['verbatim'],
+                        "Rating": fb['rating'],
+                        "IsActionable": fb['is_actionable']
+                    })
+        if feedback_data:
+            pd.DataFrame(feedback_data).to_csv(str(out.with_suffix(".feedback.csv")), index=False)
+            print(f"Found {len(feedback_data)} actionable customer feedback items.")
     
     print(f"Selected {len(selected)} files in {len(all_batches)} batches. Skipped {len(skipped)}.")
     print(f"Batches by subfolder:")
