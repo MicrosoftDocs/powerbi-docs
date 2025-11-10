@@ -209,6 +209,7 @@ def main():
     ap.add_argument("--batch-size", type=int, default=10)
     ap.add_argument("--fresh-window-days", type=int, default=int(os.environ.get("FRESH_WINDOW_DAYS","365")))
     ap.add_argument("--feedback", help="Customer feedback Excel file to process")
+    ap.add_argument("--max-batches", type=int, default=10, help="Maximum number of batches to create (default: 10)")
     a = ap.parse_args()
 
     src = pathlib.Path(a.input)
@@ -285,6 +286,14 @@ def main():
                 "summary": batch_summary
             })
             batch_num += 1
+            
+            # Stop if we've reached the maximum number of batches
+            if len(all_batches) >= a.max_batches:
+                break
+        
+        # Break out of outer loop too if max batches reached
+        if len(all_batches) >= a.max_batches:
+            break
 
     # Write output files
     out = pathlib.Path(a.output); out.parent.mkdir(parents=True, exist_ok=True)
@@ -325,10 +334,26 @@ def main():
             pd.DataFrame(feedback_data).to_csv(str(out.with_suffix(".feedback.csv")), index=False)
             print(f"Found {len(feedback_data)} actionable customer feedback items.")
     
-    print(f"Selected {len(selected)} files in {len(all_batches)} batches. Skipped {len(skipped)}.")
-    print(f"Batches by subfolder:")
-    for subfolder, files in folders.items():
-        batch_count = (len(files) + a.batch_size - 1) // a.batch_size  # Ceiling division
-        print(f"  {subfolder}: {len(files)} files -> {batch_count} batches")
+    total_files_in_batches = sum(len(batch["files"]) for batch in all_batches)
+    
+    print(f"Selected {total_files_in_batches} files in {len(all_batches)} batches (limited to max {a.max_batches} batches). Skipped {len(skipped)}.")
+    
+    if len(all_batches) >= a.max_batches:
+        remaining_files = len(selected) - total_files_in_batches
+        print(f"⚠️  BATCH LIMIT REACHED: {remaining_files} files remain for future runs.")
+        print(f"💡 Tip: Re-run after merging these PRs to process more files.")
+    
+    print(f"Batches created:")
+    batch_counts = {}
+    for batch in all_batches:
+        subfolder = batch["subfolder"]
+        batch_counts[subfolder] = batch_counts.get(subfolder, 0) + 1
+    
+    for subfolder, count in batch_counts.items():
+        files_in_subfolder_batches = sum(len(batch["files"]) for batch in all_batches if batch["subfolder"] == subfolder)
+        print(f"  {subfolder}: {files_in_subfolder_batches} files -> {count} batches")
+    
+    if len(all_batches) < a.max_batches:
+        print(f"✅ All stale files included in this run.")
 if __name__ == "__main__":
     main()
