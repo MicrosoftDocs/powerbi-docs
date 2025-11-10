@@ -120,7 +120,7 @@ After you test and confirm your **Prep data for AI** enhancements, you can publi
 
 ## <a name = "mark-your-model-as-approved-for-copilot"></a> Mark your model as Approved for Copilot
 
-After you prepare your semantic model for AI and it's ready for consumption, you can mark your model **Prepped for AI** by following these steps:
+After you prepare your semantic model for AI and it's ready for consumption, you can mark your model **Approved for Copilot** by following these steps:
 
 > [!NOTE]
 > This setting was previously called **prepped for AI** but has been renamed to **approved for Copilot** for more clarity.
