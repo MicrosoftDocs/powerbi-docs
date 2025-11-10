@@ -1,0 +1,129 @@
+﻿name: Freshness Batch Processing
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  TARGET_BRANCH: main
+  WORKING_BRANCH_PREFIX: chore/freshness
+  DOCSET_ROOT: powerbi-docs
+  REPORT_XLSX: data/engagement-latest.xlsx
+  STALE_FILE_LIST: tools/stale-files.txt
+  BATCH_SIZE: "10"
+  FRESH_WINDOW_DAYS: "365"
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas openpyxl python-dateutil pyyaml
+
+      - name: Generate stale batch from XLSX
+        run: |
+          python tools/generate-stale-list.py \
+            --input "${{ env.REPORT_XLSX }}" \
+            --output "${{ env.STALE_FILE_LIST }}" \
+            --docroot "${{ env.DOCSET_ROOT }}" \
+            --batch-size "${{ env.BATCH_SIZE }}" \
+            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}"
+
+      - name: Show batch summary
+        run: |
+          echo "Files to process:"
+          wc -l "${{ env.STALE_FILE_LIST }}" || true
+          echo ""
+          echo "Batch summary:"
+          head -n 10 "${{ env.STALE_FILE_LIST }}.batches.csv" || true
+
+      - name: Setup fork remote
+        env:
+          FORK_PR_TOKEN: ${{ secrets.FORK_PR_TOKEN }}
+        run: |
+          FORK_URL="https://x-access-token:${FORK_PR_TOKEN}@github.com/JulCsc/powerbi-docs-pr.git"
+          git config --global http.https://github.com/.extraheader ""
+          if git remote | grep -q "^fork$"; then
+            git remote set-url fork "${FORK_URL}"
+          else
+            git remote add fork "${FORK_URL}"
+          fi
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Process batches and create PRs
+        run: |
+          if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
+            echo "No files selected; exiting."
+            exit 0
+          fi
+          
+          if [ ! -f "${{ env.STALE_FILE_LIST }}.batches.csv" ]; then
+            echo "No batch file found; exiting."
+            exit 0
+          fi
+          
+          echo "Processing batches..."
+          
+          tail -n +2 "${{ env.STALE_FILE_LIST }}.batches.csv" | while IFS=, read -r batch_num subfolder file_count files; do
+            echo "Processing batch $batch_num: $subfolder ($file_count files)"
+            
+            BRANCH="${{ env.WORKING_BRANCH_PREFIX }}/batch-$batch_num-$(echo $subfolder | sed 's|/|-|g')"
+            git checkout -b "$BRANCH" "origin/${{ env.TARGET_BRANCH }}"
+            
+            echo "$files" | tr ';' '\n' | while IFS= read -r filepath; do
+              [ -z "$filepath" ] && continue
+              
+              if [ -f "$filepath" ]; then
+                echo "Updating file: $filepath"
+                current_date=$(date '+%m/%d/%Y')
+                sed -i "s|^ms\.date:.*|ms.date: $current_date|g" "$filepath"
+                sed -i 's|\*\*\([^*]*\)\*\*|*\1*|g' "$filepath"
+                sed -i 's|__\([^_]*\)__|*\1*|g' "$filepath"  
+                sed -i 's|_\([^_]*\)_|*\1*|g' "$filepath"
+                sed -i 's|^[ \t]*\*[ \t]|- |g' "$filepath"
+                sed -i 's|^[ \t]*+[ \t]|- |g' "$filepath"
+                sed -i 's|^[ \t]*[0-9]\+\.[ \t]|1. |g' "$filepath"
+              fi
+            done
+            
+            if git status --porcelain | grep -q .; then
+              git config user.name "docs-automation"
+              git config user.email "docs-automation@users.noreply.github.com"
+              git add -A
+              git commit -m "Freshness update batch $batch_num: $subfolder ($file_count files)"
+              git push --force-with-lease fork "$BRANCH:$BRANCH"
+              
+              HEAD="JulCsc:$BRANCH"
+              BASE="${{ env.TARGET_BRANCH }}"
+              TITLE="Freshness batch $batch_num: $subfolder ($file_count files)"
+              BODY="This PR updates $file_count stale documents from the $subfolder directory. Updated ms.date and applied formatting standards. Please review before merging."
+              
+              curl -sS -X POST \
+                -H "Authorization: Bearer ${{ github.token }}" \
+                -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/${{ github.repository_owner }}/${{ github.event.repository.name }}/pulls" \
+                -d "{\"title\":\"$TITLE\",\"head\":\"$HEAD\",\"base\":\"$BASE\",\"body\":\"$BODY\"}"
+              
+              echo "Created PR for batch $batch_num"
+            fi
+            
+            git checkout "${{ env.TARGET_BRANCH }}"
+          done
+          
+          echo "Batch processing complete!"
