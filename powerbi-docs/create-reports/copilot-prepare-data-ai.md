@@ -127,7 +127,7 @@ After you prepare your semantic model for AI and it's ready for consumption, you
 
 1. Go to the Power BI service and find your semantic model.
 1. Select the **Settings** icon in the upper-left corner.
-1. Expand the **AI preparation** section.
+1. Expand the **Approved for Copilot** section.
 1. Select the **Approved for Copilot** box, and then select the **Apply** button.
 
 :::image type="content" source="media/copilot-prep-data/copilot-ai-preparation.png" alt-text="Screenshot of the AI preparation settings in Power BI service that showcases the option to mark a model Prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
