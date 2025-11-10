@@ -24,11 +24,11 @@ Copilot in Power BI is available as a full-screen, standalone Copilot experience
 > [!NOTE]
 > **Admins need to turn on the tenant setting:** To try it out, admins need to [enable Copilot in Power BI](copilot-enable-power-bi.md), and additionally enable the following new tenant setting: Users can access a standalone, cross-item Power BI Copilot experience.
 >
-> **Data must be prepped for Copilot:** Copilot works best when the report author has prepared the data specifically for Copilot. If that setup hasn’t been done, answers may be limited or inaccurate. For more information, see [Prepare your data for AI](copilot-prepare-data-ai.md).
+> **Data must be prepped for Copilot:** Copilot works best when the report author has prepared the data specifically for Copilot, and marked the model as approved for Copilot. If that setup hasn’t been done, answers may be limited or inaccurate. For more information, see [Prepare your data for AI](copilot-prepare-data-ai.md).
 >
 > **Approve your data for Copilot:** Semantic model authors have the ability to approve a model for use with Copilot in model settings. This impacts the appearance of content warnings for end users. For more information, see [Approve your model for use with AI](copilot-prepare-data-ai.md#mark-your-model-as-prepped-for-ai).
 >
-> **Warnings on unprepped data:** Models that aren't approved for Copilot will appear with warnings that the answer quality could be low.
+> **Warnings on data not set as approved for Copilot:** Models that aren't approved for Copilot will appear with warnings that the answer quality could be low.
 
 ## Capabilities
 
@@ -64,11 +64,11 @@ You can use [Fabric data agents](/fabric/data-science/concept-data-agent) to get
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-fabric-data-agent.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing the use of a Fabric data agent to answer a question." lightbox="media/copilot-introduction/copilot-standalone-fabric-data-agent.png":::
 
-### Prep data for AI
+### Prep data for AI and mark as approved for Copilot
 
 You must [prepare your data for it to work well with Copilot](copilot-prepare-data-ai.md). Preparing your data for AI creates the foundation for high-quality, grounded, and context-aware AI experiences. When data is unstructured or ambiguous, AI systems can struggle to interpret it correctly - leading to generic, inaccurate, or even misleading outputs.
 
-If your data isn't prepared for Copilot, you get a warning that the answer might be low quality. You can choose to explore the data or view the answer anyway.
+Once your data is prepared for AI, you should mark the semantic model as **approved for Copilot**. If your data is not marked as approved for Copilot, you get a warning that the answer might be low quality. You can choose to explore the data or view the answer anyway.
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-answer-quality-warning.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a warning about low quality answers." lightbox="media/copilot-introduction/copilot-standalone-answer-quality-warning.png":::
 
@@ -76,7 +76,7 @@ If you select the **View answer** button, the response appears in chat.
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-visual-answer-quality-warning.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a warning about low quality answers for a visual." lightbox="media/copilot-introduction/copilot-standalone-visual-answer-quality-warning.png":::
 
-Once your data is [marked as prepped for AI](copilot-prepare-data-ai.md#mark-your-model-as-prepped-for-ai), responses appear in the chat without the warning.
+Once your data is set as [approved for Copilot](copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot), responses appear in the chat without the warning.
 
 ## Copilot requirements
 
