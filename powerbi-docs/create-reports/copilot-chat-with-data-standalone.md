@@ -74,7 +74,7 @@ Once your data is prepared for AI, you should mark the semantic model as **appro
 
 If you select the **View answer** button, the response appears in chat.
 
-:::image type="content" source="media/copilot-introduction/standalone-view-answer-result.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a warning about low quality answers for a visual." lightbox="media/copilot-introduction/standalone-standalone-view-answer-result.png":::
+:::image type="content" source="media/copilot-introduction/standalone-view-answer-result.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a warning about low quality answers for a visual." lightbox="media/copilot-introduction/standalone-view-answer-result.png":::
 
 Once your data is set as [approved for Copilot](copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot), responses appear in the chat without the warning.
 
