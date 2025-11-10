@@ -1,6 +1,6 @@
 ---
 title: Power BI Add-in for PowerPoint - Admin Info
-description: See information about the Power BI add-in for PowerPoint that Power BI administrators need to be aware of.
+Learn how to manage the Power BI add-in for PowerPoint in your organization. Get essential admin guidance on requirements, licensing, deployment, and tenant settings.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -9,16 +9,15 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/03/2025
+ms.date: 11/10/2025
 ---
 
 # Power BI add-in for PowerPoint - Admin info
 
-The Power BI add-in for PowerPoint enables users to add live, interactive data from Power BI to PowerPoint presentations. This article targets Fabric administrators and presents information they need to know to manage the add-in in their tenant.
+The Power BI add-in for PowerPoint enables users to add live, interactive data from Power BI to PowerPoint presentations. This article provides Fabric administrators with essential information to manage the add-in in their tenant, including requirements, licensing considerations, and deployment options.
 
-* If you're looking for information about how to add live Power BI data to a PowerPoint presentation using the add-in, see [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md).
-
-* If you're looking for information about working with embedded Power BI data in your presentation, see [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md).
+- If you're looking for information about how to add live Power BI data to a PowerPoint presentation using the add-in, see [Add live Power BI data to PowerPoint](service-power-bi-powerpoint-add-in-install.md).
+- If you're looking for information about working with embedded Power BI data in your presentation, see [View and present live Power BI data in PowerPoint](service-power-bi-powerpoint-add-in-view-present.md).
 
 ## Requirements
 
@@ -30,51 +29,54 @@ In national/regional clouds, the add-in must be deployed as an admin-managed add
 
 To be able to view live Power BI data in PowerPoint, users must have an active Power BI account and a Fabric Free  license, and access to the data. If the Power BI report isn't located in a Premium capacity or Fabric F64 or greater capacity, a Power BI Pro license is needed.
 
-If autolicensing for Power BI is enabled, users without a Power BI account will be signed up automatically when they open a presentation containing a live Power BI report page or visual. **This may impact the assignment and availability of licenses in your organization**. For more information, see [Power BI license assignment](../enterprise/service-admin-disable-self-service.md).
+If autolicensing for Power BI is enabled, users without a Power BI account are signed up automatically when they open a presentation containing a live Power BI report page or visual. **This may impact the assignment and availability of licenses in your organization**. For more information, see [Power BI license assignment](/fabric/enterprise/powerbi/service-admin-disable-self-service).
 
-If autolicensing isn't enabled, users without Power BI accounts will be requested to sign up.
+If autolicensing isn't enabled, users without Power BI accounts are prompted to sign up.
 
 ## Power BI entry points
 
 By default, the Power BI service includes entry points that enable users to insert the add-in into new PowerPoint presentations directly from Power BI. Power BI admins can disable this functionality by turning off the **Enable Power BI add-in for PowerPoint** tenant setting. For details, see [Enable Power BI add-in for PowerPoint](/fabric/admin/service-admin-portal-export-sharing#enable-power-bi-add-in-for-powerpoint).
 
->[!NOTE]
-> Disabling this functionality in Power BI does not prevent people from adding Power BI report pages and visuals to PowerPoint slides starting from PowerPoint. To completely block adding live Power BI report pages and visuals to PowerPoint slides using the add-in, the functionality must be disabled in both Power BI and PowerPoint.
+> [!NOTE]
+> Disabling this functionality in Power BI doesn't prevent people from adding Power BI report pages and visuals to PowerPoint slides starting from PowerPoint. To completely block adding live Power BI report pages and visuals to PowerPoint slides using the add-in, the functionality must be disabled in both Power BI and PowerPoint.
 
 Power BI entry points for the add-in aren't available in national/regional, government, and air-gapped clouds. See the [Microsoft Office documentation](/office/dev/add-ins/publish/government-cloud-guidance) for information about the availability of the add-in in PowerPoint in these clouds.
+
+> [!NOTE]
+> The rollout of the Power BI add-in for PowerPoint depends on the update cadence of your organization's Microsoft 365 subscription. Hence the add-in might not immediately be available in your organization. To ensure availability of the add-in, use the latest version of Microsoft 365.
 
 ## Power BI add-in button in PowerPoint Insert ribbon (*PowerPoint desktop for Windows only*)
 
 If your organization has a Microsoft 365 Office subscription, a button for the add-in appears in the PowerPoint ribbon when using the desktop application for Windows. This doesn't apply to PowerPoint for the web or if you're using a Mac.
 
-![Screenshot of Power BI add-in for PowerPoint button on Insert ribbon.](media/service-power-bi-powerpoint-add-in-admin/power-bi-addin-powerpoint-button.png)
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-admin/power-bi-addin-powerpoint-button.png" alt-text="Screenshot of the Power BI add-in button located on the Insert ribbon in PowerPoint desktop application.":::
 
-The button is a shortcut to the add-in offering in the Office add-in store. The button itself doesn't provide access to the store. If the user doesn't have access to the store, the button won't work.
+The button is a shortcut to the add-in offering in the Office add-in store. The button itself doesn't provide access to the store.
 
->[!NOTE]
-> The rollout of the Power BI add-in for PowerPoint depends on the update cadence of your organization's Microsoft 365 subscription. Hence the add-in may not immediately be available in your organization. To ensure availability of the add-in, use the latest version of Microsoft 365.
+> [!NOTE]
+> If access to the Office store is blocked in your organization, the Power BI button might not open a working experience for end users **unless** the add-in is deployed by your admin. When the Power BI add-in is provided through **Centralized Deployment**, the button works as expected without requiring users to browse the store.
 
 ## Deploy the add-in in national/regional clouds
 
-In national/regional clouds, the add-in is supported as an admin-managed add-in only. If you're a Power BI admin in a tenant located in a national/regional cloud, you must download the add-in from Power BI in your national/regional cloud and deploy it using Centralized Deployment. The add-in that is available from the public cloud won't work in national/regional clouds. Users in national/regional clouds must use the add-in you've deployed.
+In national/regional clouds, the add-in is supported as an admin-managed add-in only. If you're a Power BI admin in a tenant located in a national/regional cloud, you must download the add-in from Power BI in your national/regional cloud and deploy it using Centralized Deployment. The add-in that's available from the public cloud doesn't work in national/regional clouds. Users in national/regional clouds must use the add-in you deployed.
 
 To download and deploy the add-in:
 
 1. Sign into the Power BI service with an admin account.
-1. Select the **Download** icon and choose **Power BI for PowerPoint** to download the add-in. You'll have this option only if your tenant is in a national/regional cloud.
+1. Select the **Download** icon and choose **Power BI for PowerPoint** to download the add-in. You have this option only if your tenant is in a national/regional cloud.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-admin/power-bi-powerpoint-addin-download-option.png" alt-text="Screenshot of the Power BI for PowerPoint add-in download option.":::
 
 1. Deploy the add-in according to the instructions in [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins).
 
-For a summary of the ways the add-in differs when deployed in a national/regional cloud from when it's deployed in a public cloud, see [The Power BI add-in for PowerPoint in national/regional clouds](./service-power-bi-powerpoint-add-in-national-clouds.md).
+For a summary of the ways the add-in differs when deployed in a national/regional cloud from when it's deployed in a public cloud, see [The Power BI add-in for PowerPoint in national/regional clouds](service-power-bi-powerpoint-add-in-national-clouds.md).
 
 ## Related content
 
-* [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
-* [The Power BI add-in for PowerPoint in national/regional clouds](./service-power-bi-powerpoint-add-in-national-clouds.md)
-* [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
-* [Add data point annotations to visuals](./service-power-bi-powerpoint-add-in-annotate.md)
-* [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
-* [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
-* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [About storytelling with Power BI in PowerPoint](service-power-bi-powerpoint-add-in-about.md)
+- [The Power BI add-in for PowerPoint in national/regional clouds](service-power-bi-powerpoint-add-in-national-clouds.md)
+- [Add live Power BI data to PowerPoint](service-power-bi-powerpoint-add-in-install.md)
+- [Add data point annotations to visuals](service-power-bi-powerpoint-add-in-annotate.md)
+- [View and present live Power BI data in PowerPoint](service-power-bi-powerpoint-add-in-view-present.md)
+- [Troubleshoot the Power BI add-in for PowerPoint](service-power-bi-powerpoint-add-in-troubleshoot.md)
+- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
