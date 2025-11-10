@@ -13,7 +13,7 @@ env:
   DOCSET_ROOT: powerbi-docs
   REPORT_XLSX: data/engagement-latest.xlsx
   STALE_FILE_LIST: tools/stale-files.txt
-  BATCH_LIMIT: "50"
+  BATCH_SIZE: "10"
   FRESH_WINDOW_DAYS: "365"
   PR_LABELS: "freshness,automation,doc-hygiene"
 
@@ -43,34 +43,56 @@ jobs:
             --input "${{ env.REPORT_XLSX }}" \
             --output "${{ env.STALE_FILE_LIST }}" \
             --docroot "${{ env.DOCSET_ROOT }}" \
-            --limit "${{ env.BATCH_LIMIT }}" \
+            --batch-size "${{ env.BATCH_SIZE }}" \
             --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}"
 
-      - name: Show batch
+      - name: Show batch summary
         run: |
           echo "Files to process:"
-          cat "${{ env.STALE_FILE_LIST }}" || true
+          wc -l "${{ env.STALE_FILE_LIST }}" || true
           echo ""
-          echo "Summary:"
-          head -n 10 "${{ env.STALE_FILE_LIST }}.summary.csv" || true
+          echo "Batch summary:"
+          head -n 10 "${{ env.STALE_FILE_LIST }}.batches.csv" || true
           echo ""
-          echo "Skipped:"
-          head -n 10 "${{ env.STALE_FILE_LIST }}.skipped.csv" || true
+          echo "First 10 files:"
+          head -n 10 "${{ env.STALE_FILE_LIST }}" || true
+          echo ""
+          echo "Skipped files:"
+          wc -l "${{ env.STALE_FILE_LIST }}.skipped.csv" || true
 
-      - name: Run DocuMentor passes (placeholder)
+      - name: Create freshness review checklists
         shell: bash
         run: |
           if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
-            echo "No files selected; skipping DocuMentor."
+            echo "No files selected; skipping checklist creation."
             exit 0
           fi
-          while IFS= read -r f; do
-            [ -z "$f" ] && continue
-            echo "→ DocuMentor on $f"
-            # Replace with your real CLI commands:
-            # ./documentor fix --file "$f" --rules "learn-markdown,frontmatter"
-            # ./documentor optimize --file "$f" --prompts "seo,geo"
+          
+          # Create directory for checklists
+          mkdir -p freshness-checklists
+          
+          # Create checklist for each file
+          while IFS= read -r filepath; do
+            [ -z "$filepath" ] && continue
+            
+            # Create safe filename for checklist
+            safe_name=$(echo "$filepath" | sed 's|/|-|g')
+            checklist_file="freshness-checklists/${safe_name}-checklist.md"
+            
+            # Get file basename for template
+            file_name=$(basename "$filepath")
+            
+            # Replace placeholders in template
+            sed -e "s|{file_path}|$filepath|g" \
+                -e "s|{file_name}|$file_name|g" \
+                -e "s|{ms_topic}|TODO: Extract from file frontmatter|g" \
+                -e "s|{date}|$(date '+%Y-%m-%d')|g" \
+                tools/freshness-checklist-template.md > "$checklist_file"
+            
+            echo "Created checklist: $checklist_file"
           done < "${{ env.STALE_FILE_LIST }}"
+          
+          echo "Created checklists for all files"
 
       # ───────── PR via your fork (robust, no blocked actions) ─────────
 
