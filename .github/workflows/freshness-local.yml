@@ -71,6 +71,10 @@ jobs:
           # Create directory for checklists
           mkdir -p freshness-checklists
           
+          # Copy formatting guide to checklists directory for reference
+          cp tools/markdown-formatting-guide.md freshness-checklists/
+          echo "Copied formatting guide to freshness-checklists/"
+          
           # Create checklist for each file
           while IFS= read -r filepath; do
             [ -z "$filepath" ] && continue

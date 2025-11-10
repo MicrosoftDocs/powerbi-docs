@@ -37,6 +37,10 @@
   - [ ] Checked [ms.topic taxonomy list](../platform/metadata-taxonomies/mstopic.md)
   - [ ] Current value: `{ms_topic}` ☐ Valid ☐ Needs update
 
+- [ ] **Update ms.date in correct format**
+  - [ ] Updated to: `ms.date: MM/DD/YYYY` (e.g., `ms.date: 11/10/2025`)
+  - [ ] ⚠️ **CRITICAL**: Use forward slashes, not dashes or other formats
+
 ## Full Pass Additional Requirements
 
 ### Content Review
@@ -64,6 +68,32 @@
 - [ ] **Use the Learn Linter to check format and structure**
   - [ ] Installed Learn Linter VS Code extension
   - [ ] Reference: [Learn Linter documentation](../platform/linter-description.md)
+
+### Markdown Formatting Standards (CRITICAL)
+- [ ] **Verify all markdown formatting follows Microsoft Learn standards**
+- [ ] **📖 Reference**: See `markdown-formatting-guide.md` in this directory for complete details
+
+**Formatting Requirements:**
+- [ ] **Bold text**: Use `**text**` (asterisks), not `__text__` (underscores)  
+- [ ] **Italic text**: Use `*text*` (single asterisk), not `_text_` (underscore)
+- [ ] **Bullet lists**: Use `-` (dash), not `*` (asterisk) or `+` (plus)
+- [ ] **Numbered lists**: Use `1.` for ALL items (auto-numbering), not `1.`, `2.`, `3.`
+- [ ] **ms.date format**: Use `ms.date: MM/DD/YYYY` (e.g., `ms.date: 11/10/2025`)
+- [ ] **Code blocks**: Always specify language (e.g., ` ```yaml `, ` ```powershell `)
+
+**Example Correct Formatting:**
+```markdown
+**This is bold text**
+*This is italic text*
+
+- First bullet point
+- Second bullet point
+- Third bullet point
+
+1. First numbered item
+1. Second numbered item  
+1. Third numbered item
+```
 
 ## Content Dissatisfaction Drivers Addressed
 
