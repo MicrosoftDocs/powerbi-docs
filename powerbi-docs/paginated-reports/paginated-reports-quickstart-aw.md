@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Create a paginated report and upload it to the Power BI service"
+title: "Tutorial: Create a Paginated Report and Upload it to the Power BI Service"
 description: Learn how to connect to a sample Azure SQL database, use a wizard in Report Builder to create a paginated report, then upload it to any workspace in the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
@@ -41,7 +41,7 @@ Here are the prerequisites for creating the paginated report:
 License requirements for publishing Power BI paginated reports (.rdl files) are the same as for Power BI reports (.pbix files).
 
 - With a free license, you can publish paginated reports to My Workspace in the Power BI service. For more information, see [Feature availability for users with free licenses in the Power BI service](../consumer/end-user-features.md#licenses).
-- With a Power BI Pro license or a PPU license, you can publish paginated reports to other workspaces. You also need at least a [contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) in the workspace.
+- With a Power BI Pro license or a Power BI Premium Per User (PPU) license, you can publish paginated reports to other workspaces. You also need at least a [contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) in the workspace.
 
 ## Create the matrix with a wizard
 
@@ -89,7 +89,7 @@ License requirements for publishing Power BI paginated reports (.rdl files) are 
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-connection-properties.png" alt-text="Screenshot of the Connection Properties dialog box, showing where to find the Connect to a database options." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-connection-properties.png":::
 
-1. Select **Test Connection**. You see the **Test results** message that **Test connection succeeded**.
+1. Select **Test Connection**. You see the **Test results** message, showing that **Test connection succeeded**.
 
 1. Select **OK** > **OK**.
 
@@ -152,15 +152,15 @@ Let's pause for a moment to look at the results of the wizard.
 
 1. In the **Report Data** pane, you see the embedded Azure data source and the embedded dataset based on it, both of which you created.
 
-2. The design surface is about 6 inches wide. On the design surface, you see the matrix, displaying column headings and placeholder values. The matrix has six columns and appears to be only five rows tall.
+1. The design surface is about 6 inches wide. On the design surface, you see the matrix, displaying column headings and placeholder values. The matrix has six columns and appears to be only five rows tall.
 
-3. **Order Qty**, **Unit Price**, and **Line Total** are all sums, and each row group has a subtotal.
+1. **Order Qty**, **Unit Price**, and **Line Total** are all sums, and each row group has a subtotal.
 
     You still don't see actual data values. You need to run the report to see them.
 
-4. In the **Properties** pane, the selected matrix is called Tablix1. A *tablix* in Report Builder is a data region that displays data in rows and columns. It can be either a table or a matrix.
+1. In the **Properties** pane, the selected matrix is called Tablix1. A *tablix* in Report Builder is a data region that displays data in rows and columns. It can be either a table or a matrix.
 
-5. In the **Grouping** pane, you see the three row groups you created in the wizard:
+1. In the **Grouping** pane, you see the three row groups you created in the wizard:
 
    - CompanyName
    - Sales Order
@@ -174,7 +174,7 @@ To see the actual values, you need to run the report.
 
 1. Select **Run** in the **Home** toolbar.
 
-   Now you see the values. The matrix has many more rows than you saw in Design view. Note that Report Builder says it's page **1** of **2?**. Report Builder loads the report as quickly as possible, so it only retrieves enough data for a few pages at a time. The question mark indicates that Report Builder is still loading the data.
+   Now you see the values. The matrix has many more rows than you saw in Design view. Report Builder lists the page as **1** of **2?**. Report Builder loads the report as quickly as possible, so it only retrieves enough data for a few pages at a time. The question mark indicates that Report Builder is still loading the data.
 
    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png" alt-text="Screenshot of a report, showing where to find the page number and page navigation arrows.":::
 
@@ -190,7 +190,7 @@ Typically a paginated report is formatted for printing, and a typical page is 8 
 
 1. Drag the ruler to make the design surface 7 inches wide. The default margins are 1 inch on each side, so the side margins need to be narrower.
 
-1. Click in the gray area around the design surface to show the **Report** properties.
+1. Select in the gray area around the design surface to show the **Report** properties.
 
     If you don’t see the **Properties** pane, select the **View** tab > **Properties**.
 
@@ -202,13 +202,13 @@ Typically a paginated report is formatted for printing, and a typical page is 8 
 
 1. Select the words **Click to add title** at the top of the page, then type **Sales by Company**.
 
-2. Select the title text, and in the **Properties** pane under **Font**, change **Color** to **Blue**.
+1. Select the title text, and in the **Properties** pane under **Font**, change **Color** to **Blue**.
 
 ### Add a page number
 
 You noticed the report has a date and time stamp in the footer. You can add a page number to the footer, too.
 
-1. At the bottom of the design surface, you see **[&ExecutionTime]** on the right in the footer.
+1. At the bottom of the design surface, you see **[&ExecutionTime]** on the right side in the footer.
 
 1. In the **Report Data** pane, expand the **Built-in Fields** folder. Drag **Page Number** to the left side of the footer, at the same height as **[&ExecutionTime]**.
 
@@ -216,7 +216,7 @@ You noticed the report has a date and time stamp in the footer. You can add a pa
 
 1. On the **Insert** tab, select **Text Box**.
 
-1. Click to the right of **[&PageNumber]**, type "of", then make the text box square.
+1. Select to the right of **[&PageNumber]**, type "of", then make the text box square.
 
 1. Drag **Overall Total Pages** to the footer, to the right of "of", then drag its right side to make it square, too.
 
@@ -228,7 +228,7 @@ Now you can make the matrix wide enough to fill the width of the page, and make 
 
 1. Select the matrix, then select the **Company Name** column.
 
-1. Hover over the gray bar at the top of the matrix at the right edge of the **Company Name** column. Drag to the right, until the column ends at 1 3/8 inches.
+1. Hover over the gray bar at the top of the matrix at the right edge of the **Company Name** column. Drag towards the right, until the column ends at 1 3/8 inches.
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-drag-column.png" alt-text="Screenshot showing where to drag the edge of a column to make it wider.":::
 
@@ -272,7 +272,7 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 1. Select **Run** on the **Home** tab.
 
-1. Select **Print Layout**, if it's not already selected. Now the report has 29 pages. Scroll through a few pages. You see the currency is formatted, the columns have headings on every page, and the report has a footer with page numbers and date and time stamp on every page.
+1. Select **Print Layout**. Now the report has 29 pages. Scroll through a few pages. You see the currency is formatted, the columns have headings on every page, and the report has a footer with page numbers and date and time stamp on every page.
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png" alt-text="Screenshot of a sample report with Print Layout selected.":::
 
@@ -292,7 +292,7 @@ Now that you created this paginated report, you can upload it to the Power BI se
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-app-list.png" alt-text="Screenshot showing where the report appears in the Reports list on the App list page.":::
 
-1. Select the report to view it.
+1. Select the report and view it.
 
 1. If you get an error, you might need to reenter your credentials. Select the ellipses to the right of the report, then choose **Manage**.
 
