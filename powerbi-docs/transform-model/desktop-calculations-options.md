@@ -1,8 +1,8 @@
 ---
 title: Use Calculation Options in Power BI Desktop
 description: Become familiar with calculation options in Power BI Desktop. Find out when to use which option to transform and analyze your data effectively.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

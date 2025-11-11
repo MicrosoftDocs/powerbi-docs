@@ -1,10 +1,8 @@
 ---
 title: 'Tutorial: Import and analyze data from a webpage'
 description: 'This tutorial shows you how to import and analyze data from a webpage using Power BI Desktop. Learn how to create and customize a map and a pie chart.'
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
-ms.custom: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial

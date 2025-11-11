@@ -1,8 +1,8 @@
 ---
 title: Advanced Incremental Refresh and Real-Time Data With the XMLA Endpoint in Power BI
 description: Discover advanced incremental refresh and real-time data features with the XML for Analysis (XMLA) endpoint in Power BI. The advantages include, partition management, custom queries for detecting data changes, and metadata-only deployments for Premium capacities.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources

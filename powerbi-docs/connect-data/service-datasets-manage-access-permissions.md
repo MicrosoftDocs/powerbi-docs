@@ -1,8 +1,8 @@
 ---
 title: Manage Semantic Model Access Permissions in Power BI
 description: "Learn how to review and manage semantic model access permissions in Power BI. Control direct access, manage shared report links, and secure your sensitive data. Start managing access today."
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources

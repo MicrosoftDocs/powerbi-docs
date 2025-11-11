@@ -1,8 +1,8 @@
 ---
 title: "Connect to Smartsheet: Power BI Integration"
 description: "Learn how to connect Smartsheet to Power BI using template apps. Import dashboards, reports, and data to visualize your Smartsheet account. Get started today."
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps

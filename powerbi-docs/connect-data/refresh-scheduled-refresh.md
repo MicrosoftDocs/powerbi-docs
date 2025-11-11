@@ -1,8 +1,8 @@
 ---
 title: Configure scheduled refresh
 description: Learn how to select a gateway connection and configure scheduled refresh for a semantic model in the Power BI service.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

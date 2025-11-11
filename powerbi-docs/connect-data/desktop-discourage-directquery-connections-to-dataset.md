@@ -3,7 +3,7 @@ title: Manage DirectQuery connections to a published semantic model
 description: Learn how to manage DirectQuery connections to a published semantic model in Power BI. Also, learn how to discourage DirectQuery connections from happening.
 author: jeroenterheerdt
 ms.author: jterh
-ms.reviewer: ''
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual

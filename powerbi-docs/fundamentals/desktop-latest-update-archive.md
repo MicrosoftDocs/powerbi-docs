@@ -5503,7 +5503,7 @@ Here were the updates in the Power BI service.
 
 * New Power Automate action to refresh Power BI semantic models.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
-* General availability of [Automated Machine Learning](../transform-model/dataflows/dataflows-machine-learning-integration.md)
+* General availability of [Automated Machine Learning](../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 * Public preview of Power BI data lineage view.
 
 ---

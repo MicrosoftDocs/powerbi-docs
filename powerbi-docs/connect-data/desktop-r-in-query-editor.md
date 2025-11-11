@@ -1,10 +1,8 @@
 ---
 title: Use R in Power Query Editor
 description: Use R in Power BI Desktop Power Query Editor for advanced analytics. You can prepare data models, create reports, and do data cleansing.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
-ms.custom: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to

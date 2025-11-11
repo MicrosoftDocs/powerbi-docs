@@ -1,8 +1,8 @@
 ---
 title: Implement a Data Translation Strategy 
 description: Understand when to choose data translation for your multiple-language project in Power BI and what elements to consider.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

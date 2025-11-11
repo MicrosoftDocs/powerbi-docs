@@ -1,8 +1,8 @@
 ---
 title: Managing query refresh
 description: Learn how to use the Enable load to report and Include in report refresh options in the Power BI Desktop Power Query Editor.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

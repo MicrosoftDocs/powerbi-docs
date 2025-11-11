@@ -1,8 +1,8 @@
 ---
 title: Use DirectQuery in Power BI Desktop
 description: Learn how to use DirectQuery in Power BI Desktop to connect directly to data sources without importing data, with guidance on benefits, limitations, performance considerations, and best practices.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

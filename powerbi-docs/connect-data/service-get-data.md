@@ -1,8 +1,8 @@
 ---
 title: Data sources for the Power BI service
 description: Learn about different data sources and how to get and refresh data sources and semantic models in the Power BI service.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

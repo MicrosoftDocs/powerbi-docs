@@ -1,8 +1,8 @@
 ---
 title: Connect to Crisis Communication Presence Report
 description: Learn how to install and connect the Crisis Communication Presence Report Power BI template app to track worker locations during emergencies. Get step-by-step setup instructions.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

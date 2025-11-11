@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot Power BI Tile Refresh Errors
 description: "Learn how to troubleshoot common tile refresh errors in Power BI. Find explanations and solutions for issues like data access problems, permission errors, and visual resource limits. Get help resolving tile errors today."
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.custom: ''
 ms.service: powerbi

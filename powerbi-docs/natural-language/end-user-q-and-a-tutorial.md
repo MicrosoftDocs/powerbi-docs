@@ -1,8 +1,8 @@
 ---
 title: Q&A tutorial for Power BI dashboards
 description: Learn how to explore a sample in the Power BI service and create a visual by using natural language in Q&A.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai

@@ -1,8 +1,8 @@
 ---
 title: Connect to Snowflake with Power BI
 description: Learn about how you can connect to Snowflake in Power BI and configure with Microsoft Entra ID for SSO authentication or a gateway.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-data-sources
