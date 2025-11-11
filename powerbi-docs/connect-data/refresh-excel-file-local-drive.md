@@ -1,8 +1,8 @@
 ---
 title: Refresh a dataset created from an Excel workbook - local
 description: Learn how to use Refresh Now and Schedule Refresh for datasets created from Excel workbooks imported from a local drive.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

@@ -1,8 +1,8 @@
 ---
 title: Connect to an Oracle Database with Power BI Desktop
 description: Learn how to connect to an Oracle database with Power BI Desktop using the Oracle Client for Microsoft Tools and on-premises data gateway.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

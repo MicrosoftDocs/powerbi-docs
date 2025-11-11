@@ -1,8 +1,8 @@
 ---
 title: Use semantic model version history (preview)
 description: Learn how to access and recover items from semantic models using semantic model version history.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

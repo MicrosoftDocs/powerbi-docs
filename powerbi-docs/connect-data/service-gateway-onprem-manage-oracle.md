@@ -3,7 +3,7 @@ title: Manage your data source - Oracle
 description: Learn how to manage the on-premises data gateway and Oracle data sources that belong to that gateway.
 author: arthiriyer
 ms.author: arthii
-ms.reviewer: ''
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

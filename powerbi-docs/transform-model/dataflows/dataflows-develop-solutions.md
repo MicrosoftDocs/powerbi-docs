@@ -1,8 +1,8 @@
 ﻿---
 title: Develop solutions with dataflows
 description: Learn how to use Power BI data flows in some common scenarios to enable an ecosystem of data for your organization.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

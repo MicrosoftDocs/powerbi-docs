@@ -1,8 +1,8 @@
 ---
 title: Introduction to Semantic Models Across Workspaces
 description: Learn about semantic model sharing and discovery for workspaces. Users across the organization can build reports based on your semantic model in their own workspaces.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

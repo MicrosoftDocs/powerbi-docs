@@ -1,8 +1,8 @@
 ---
 title: Semantic Models in the Power BI Service
 description: Learn about Power BI semantic models, including types, external-hosted models, Power BI Desktop models, Excel workbooks, row-level security, and ownership considerations for effective data management and reporting.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources

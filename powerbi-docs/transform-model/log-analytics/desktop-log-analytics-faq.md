@@ -1,8 +1,8 @@
 ---
 title: Azure Log Analytics in Power BI - FAQ
 description: Learn about how Power BI is integrating with Azure Log Analytics and the answers to frequently asked questions about the changes.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

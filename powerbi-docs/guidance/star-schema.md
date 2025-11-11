@@ -3,7 +3,7 @@ title: "Understand star schema and the importance for Power BI"
 description: "Understand star schema design and its relevance to developing Power BI semantic models optimized for performance and usability."
 author: denglishbi
 ms.author: daengli
-ms.reviewer: daengli
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

@@ -1,8 +1,8 @@
 ---
 title: Add Semantic Model Descriptions in Power BI
 description: Learn how to add semantic model descriptions in Power BI to help users discover and reuse datasets. Improve collaboration with clear, informative descriptions.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual

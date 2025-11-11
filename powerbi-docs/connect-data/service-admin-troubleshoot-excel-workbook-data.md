@@ -1,8 +1,8 @@
 ---
 title: "Fix Excel Workbook Data Error in Power BI"
 description: "Resolve the 'We couldn't find any data in your Excel workbook' error when importing to Power BI. Learn how to format data as a table and fix import issues. Get step-by-step solutions now."
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

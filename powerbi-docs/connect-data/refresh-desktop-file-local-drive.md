@@ -1,8 +1,8 @@
 ---
 title: Refresh semantic models created from local Power BI Desktop files
 description: Refresh semantic models created from Power BI Desktop files that are imported from a local drive.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

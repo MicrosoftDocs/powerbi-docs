@@ -1,10 +1,8 @@
 ---
 title: Troubleshooting OData sign-in errors in Power BI Desktop
 description: Learn about solutions to common sign-in issues with OData connections, including credential type not supported error and access denied errors.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
-ms.custom: 
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting

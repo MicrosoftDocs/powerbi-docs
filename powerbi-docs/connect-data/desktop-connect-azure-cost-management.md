@@ -1,8 +1,8 @@
 ---
 title: Connect to Microsoft Cost Management data in Power BI Desktop.
 description: Learn how to connect to Azure with Power BI Desktop to visualize and gain insights about your cost and usage
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.custom:
 ms.service: powerbi

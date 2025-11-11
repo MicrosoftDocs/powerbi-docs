@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot scheduled refresh for Azure SQL databases
 description: Troubleshoot scheduled refresh errors for Azure SQL databases in Power BI. Fix error code 400 and configure firewall rules for successful data refresh.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
