@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With the **relative date slicer** or **relative date filter**, you can apply time-based selections in a slicer using a date column from your data model. For example, you can use the **relative date slicer** to show only sales data from within the last 30 days or last calendar month. When you view the report, the relative date period is applied and the specified range filters the other visuals on the page.
+With the **relative date slicer** or **relative date filter**, you can apply time-based selections to the slicer or filter using a date column from your data model. For example, you can use the **relative date slicer** to show only sales data from within the last 30 days or last calendar month. When you view the report, the relative date period is applied and the specified range filters the other visuals on the page.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png" alt-text="Screenshot showing a sales report and a relative date slicer with the date slicer called out." lightbox="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png":::
 
@@ -24,7 +24,7 @@ With the **relative date slicer** or **relative date filter**, you can apply tim
 You can use the relative date slicer just like any other slicer or visual when editing a report in Power BI. Select a **Slicer** visual to add it to your report page and then select a date column for the **Field** value. In the following image, we selected the *Date* column.
 
 >[!Note]
->If your report has a Date hierarchy with your data column from the [auto date/time feature](../transform-model/desktop-auto-date-time.md), the date column must be used instead of the date hierarchy to use the slicer in relative date mode.
+>If your report has a hierarchy with your data column from the [auto date/time feature](../transform-model/desktop-auto-date-time.md), the date column itself must be used instead of the hierarchy to use the slicer in relative date mode.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png" alt-text="Screenshot of the Visualizations pane with the slicer visual icon and the Field well called out.":::
 
@@ -76,7 +76,7 @@ If you select **Months** instead, to make it the last 2 months, here's what happ
 In comparison, if you selected **Months (Calendar)**, the visuals constrained would show data from May 1 through June 30. The setting corresponds to the last two complete calendar months. 
 
 >[!Tip]
->To avoid showing partial month in reports are comparing each month to prior months, use the **months (calendar)** setting to ensure only full months are selected.
+>To avoid showing the partial current month in reports comparing months to prior months, use the **months (calendar)** setting to ensure only full months are selected.
 
 ## Create the relative date range filter
 
