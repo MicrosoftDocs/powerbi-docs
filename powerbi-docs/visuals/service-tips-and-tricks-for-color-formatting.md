@@ -11,25 +11,13 @@ ms.date: 10/01/2025
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
-# Tips and tricks for formatting in reports
+# Tips and tricks for formatting color in reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Power BI provides many different ways to customize the styling in your reports. This article details a collection of tips to make your Power BI visualizations more compelling, interesting, and customized to your needs.
+Power BI provides many different ways to customize the formatting and colors used in your report visuals. This article provides some tips to make your Power BI visualizations more compelling, interesting, and customized to your needs.
 
-We cover the following tips in this article. Have another great tip? Great. Send it our way.
-
-* Apply a theme to the entire report
-* Change the color of a single data point
-* Conditional formatting
-* Base the colors of a chart on a numeric value
-* Base the color of data points on a field value
-* Customize colors used in the color scale
-* Use diverging color scales
-* Add color to table rows
-* How to undo in Power BI
-
-To make any changes, you must have edit permissions for the report. 
+To make any changes, you must be editing your report.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
