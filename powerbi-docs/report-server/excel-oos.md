@@ -12,8 +12,15 @@ ms.date: 10/19/2021
 
 # Configure your report server to host Excel workbooks using Office Online Server (OOS)
 
+> [!NOTE]
+> This article applies to PBIRS releases prior to January 2026. Starting with the January 2026 PBIRS release, OOS-based Excel hosting is removed.
+
 > [!WARNING]
-> Microsoft has [announced](https://techcommunity.microsoft.com/blog/officeeos/announcing-the-retirement-for-office-online-server/4462402) that Office Online Server (OOS) will be retired effective December 31, 2026. As a result, PBIRS users will no longer be able to host Excel workbooks in PBIRS using OOS after November 2026, in accordance with the PBIRS Support Timelines Policy. Additionally, beginning with the January 2026 PBIRS release, configuration of PBIRS to use OOS for hosting Excel workbooks will no longer be supported. Visit this [deprecation announcement blog](https://powerbi.microsoft.com/en-us/blog/deprecation-announcement-office-online-server-retirement-and-what-it-means-for-power-bi-report-server-users/) for more details.
+> Microsoft has [announced](https://techcommunity.microsoft.com/blog/officeeos/announcing-the-retirement-for-office-online-server/4462402) that Office Online Server (OOS) will be retired effective December 31, 2026. As a result:
+> - **OOS-based Excel hosting is removed** starting with the January 2026 PBIRS release. Once that release is applied, Excel workbooks will no longer render via OOS.
+> - **Support for prior PBIRS versions** that still include OOS-based Excel hosting capability ends in November 2026.
+>
+> Visit this [deprecation announcement blog](https://powerbi.microsoft.com/en-us/blog/deprecation-announcement-office-online-server-retirement-and-what-it-means-for-power-bi-report-server-users/) for more details.
 
 In addition to viewing Power BI reports in the web portal, Power BI Report Server can host Excel workbooks by using [Office Online Server](https://learn.microsoft.com/officeonlineserver/office-online-server-overview) (OOS). Your report server becomes a single location to publish and view self-service Microsoft BI content.
 
@@ -165,6 +172,9 @@ To avoid firewall issues, you may need to open the ports 2382 and 2383. You can 
 
 ## Configure Power BI Report Server to use the OOS Server
 
+> [!NOTE]
+> In the January 2026 PBIRS release and later versions, the Office Online Server discovery URL setting is removed/ignored, and Excel workbooks will no longer be rendered via OOS.
+
 On the **General** page of **Site settings**, enter the OOS discovery url. The OOS discovery url is the *InternalUrl*, used when deploying the OOS server, followed by */hosting/discovery*. For example, `https://servername/hosting/discovery`, for HTTP. And, `https://server.contoso.com/hosting/discovery` for HTTPS.
 
 To get to **Site settings**, select the **gear icon** in the upper right and select **Site settings**.
@@ -179,6 +189,15 @@ After you enter the discovery url, and select **Apply**, selecting an Excel work
 
 - You will have read only capability with workbooks.
 - Scheduled refresh isn't supported for Excel workbooks in Power BI Report Server.
+
+## Alternatives and migration options
+
+With the removal of OOS-based Excel hosting in PBIRS, consider the following alternatives:
+
+- **Microsoft 365 Excel**: Use Excel for the web in Microsoft 365 for viewing and interacting with Excel workbooks.
+- **Migrate to Power BI service**: Move your Excel-based BI content to the Power BI service for enhanced capabilities and continued support. For guidance on migration, see [Migrate to Power BI](../guidance/powerbi-migration-overview.md).
+
+For more information about the deprecation and transition options, visit the [deprecation announcement blog](https://powerbi.microsoft.com/en-us/blog/deprecation-announcement-office-online-server-retirement-and-what-it-means-for-power-bi-report-server-users/).
 
 ## Related content
 
