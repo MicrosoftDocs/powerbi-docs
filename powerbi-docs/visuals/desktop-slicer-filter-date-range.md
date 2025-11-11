@@ -40,14 +40,14 @@ For the first setting, you have the following choices:
 - Next
 - This
 
-In the screenshot below, **Last** has been selected.
+In the screenshot, **Last** is selected.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png" alt-text="Screenshot of the Relative config options with the first setting called out.":::
 
 
 In the second (middle) setting in the relative date slicer, you enter a number to define the relative date range. This is only available for **Last** or **Next**, and disabled for **This** from the first setting. 
 
-In the screenshot below **2** is selected. 
+In the screenshot, **2** is selected. 
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04a.png" alt-text="Screenshot of the Relative config options with the second setting called out.":::
 
@@ -61,7 +61,7 @@ In the third setting, you pick the date part. You have the following choices:
 - Years
 - Years (Calendar)
 
-In the screenshot below, **Years** is selected. This reads, **in the last 2 years** and the date column is filtered to only dates in the last 2 years for the other visuals on the report page.
+In the screenshot, **Years** is selected. The settings are read as **in the last 2 years** and the date column is filtered to only dates in the last 2 years for the other visuals on the report page.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png" alt-text="Screenshot of the Relative config options with the third setting called out.":::
 
@@ -73,7 +73,10 @@ If you select **Months** instead, to make it the last 2 months, here's what happ
   - The data included in visuals constrained by the slicer shows data for the previous two months,
   - Starting on May 21 and going through July 20 (today's date).
 
-In comparison, if you selected **Months (Calendar)**, the visuals constrained would show data from May 1 through June 30. This corresponds to the last two complete calendar months.
+In comparison, if you selected **Months (Calendar)**, the visuals constrained would show data from May 1 through June 30. The setting corresponds to the last two complete calendar months. 
+
+>[!Tip]
+>To avoid showing partial month in reports are comparing each month to prior months, use the **months (calendar)** setting to ensure only full months are selected.
 
 ## Create the relative date range filter
 
