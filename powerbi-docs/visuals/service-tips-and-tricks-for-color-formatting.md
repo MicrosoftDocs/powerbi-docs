@@ -75,7 +75,7 @@ Once selected, the **Small Business** data point is a nice shade of orange, and 
 
 If you expect to add new columns to the chart and want to maintain the same color scheme, be sure to set the **Default color** to blue.
 
-Changing the bar chart to a different chart, such as a column chart, keeps **Small Business** orange.
+If you change the bar chart to a different visual, such as a column chart, the visual keeps **Small Business** colored orange.
 
 
 ## Add conditional formatting for visuals color
@@ -104,7 +104,7 @@ In this example, we apply a **gradient** format style and select the **Sum of Sa
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-new.png" alt-text="Screenshot of the Default color pane.":::
 
-This setting applies the conditional formatting to the bar colors. Selecting the **fx button** opens the dialog to adjust the conditional formatting, and selecting the **Eraser button** clears the conditional formatting. The previously selected for **Small Business** is removed.
+This setting applies the conditional formatting to the bar colors. Selecting the **fx button** opens the dialog to adjust the conditional formatting, and selecting the **Eraser button** clears the conditional formatting. The previously selected color for **Small Business** is removed.
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-default-colors.png" alt-text="Screenshot of column chart with default colors applied.":::
 
