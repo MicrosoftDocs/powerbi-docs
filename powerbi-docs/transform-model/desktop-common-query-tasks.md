@@ -1,8 +1,8 @@
 ---
 title: Perform common query tasks in Power BI Desktop
 description: Learn how to perform common query tasks by using the Power Query Editor in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

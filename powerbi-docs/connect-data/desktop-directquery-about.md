@@ -1,8 +1,8 @@
 ---
 title: "DirectQuery in Power BI: When to Use, Limitations, Alternatives"
 description: Learn when to use DirectQuery in Power BI versus Import, Hybrid tables, Direct Lake, or live connections, and get guidance to optimize performance.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

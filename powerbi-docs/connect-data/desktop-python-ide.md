@@ -3,7 +3,7 @@ title: Use an external Python IDE with Power BI
 description: Learn how you can launch and use an external Python IDE with Power BI Desktop to create and refine Python scripts.
 author: otarb
 ms.author: otarb
-ms.reviewer: ''
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to

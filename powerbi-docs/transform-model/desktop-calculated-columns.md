@@ -1,8 +1,8 @@
 ---
 title: Using calculated columns in Power BI Desktop
 description: Learn how to create calculated columns using Data Analysis Expressions (DAX) formulas in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

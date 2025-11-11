@@ -3,6 +3,7 @@ title: Edit Q&A linguistic schema and add phrasings in Power BI Desktop
 description: Learn how to edit the linguistic schema, add phrasings, and import and export .yaml files to improve Q&A in Power BI Desktop.
 author: mohaali
 ms.author: mohaali
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual

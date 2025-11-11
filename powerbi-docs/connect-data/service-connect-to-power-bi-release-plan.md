@@ -3,6 +3,7 @@ title: Connect to Power BI Release Plan Report
 description: Learn how to install the Power BI Release Plan template app and connect to data sources. Get step-by-step guidance to customize and share release plan reports.
 author: itsnotaboutthecell
 ms.author: alpowers
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

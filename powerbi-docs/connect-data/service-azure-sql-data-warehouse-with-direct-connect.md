@@ -1,8 +1,8 @@
 ---
 title: Azure Synapse Analytics (formerly SQL Data Warehouse) with DirectQuery
 description: Learn how to connect to a SQL Server database with the Azure Synapse Analytics connector in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to

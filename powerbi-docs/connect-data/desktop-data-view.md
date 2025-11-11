@@ -1,8 +1,8 @@
 ---
 title: Table view in Power BI Desktop
 description: Learn how the Table view helps you inspect, explore, and understand data in your Power BI Desktop model. 
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

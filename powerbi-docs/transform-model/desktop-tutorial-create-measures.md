@@ -1,8 +1,8 @@
 ---
 title: 'Tutorial: Create your own measures in Power BI Desktop'
 description: Learn how to use measures in Power BI Desktop to help you perform calculations on your data as you interact with your reports.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

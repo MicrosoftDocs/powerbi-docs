@@ -1,8 +1,8 @@
 ---
 title: Work with value filter behavior in Power BI
 description: Learn how to use value filter behavior in Power BI.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

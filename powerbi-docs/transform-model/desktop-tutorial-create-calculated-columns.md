@@ -1,8 +1,8 @@
 ---
 title: 'Tutorial: Create calculated columns in Power BI Desktop'
 description: Learn how to create calculated columns to enrich your data and provide easier insights in this Power BI Desktop tutorial.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

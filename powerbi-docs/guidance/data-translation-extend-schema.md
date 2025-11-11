@@ -1,8 +1,8 @@
 ---
 title: Extend the Data Source Schema to Support Data Translations
 description: Learn how to use the strategy for implementing multiple-language data translations made possible by the Power BI Desktop feature called field parameters.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

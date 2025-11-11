@@ -1,8 +1,8 @@
 ---
 title: Dataflows Considerations and Limitations
 description: Learn about limitations, restrictions, and supported connectors and features of dataflows in Power BI
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -176,5 +176,5 @@ The following articles provide more information about dataflows and Power BI:
 - [Configure and consume a dataflow](dataflows-configure-consume.md)
 - [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 - [Premium features of dataflows](dataflows-premium-features.md)
-- [AI with dataflows](dataflows-machine-learning-integration.md)
+- [Power BI implementation planning - Integration with other services](../../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 - [Dataflows best practices](dataflows-best-practices.md)

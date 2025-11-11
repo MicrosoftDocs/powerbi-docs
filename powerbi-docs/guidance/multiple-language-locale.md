@@ -1,8 +1,8 @@
 ---
 title: "Use Locale Values in Multiple-Language Power BI Reports"
 description: Learn how to use locale values in multiple-language reports in Power BI, including translation of measures and several locales for the same language.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

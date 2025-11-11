@@ -1,8 +1,8 @@
 ---
 title: Formula editor in Power BI Desktop
 description: Learn how to use keyboard shortcuts to create and edit Data Analysis Expressions (DAX) formulas in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

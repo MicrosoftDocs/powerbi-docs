@@ -1,8 +1,8 @@
 ---
 title: Automate Template App Installation with Azure
 description: Learn how to automate Power BI template app installation and configuration for customers using Azure Functions. Includes sample code and step-by-step tutorial.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer

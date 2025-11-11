@@ -1,8 +1,8 @@
 ---
 title: Azure Emissions Calculation Methodology
 description: "Learn how Microsoft calculates scope 1, 2, and 3 carbon emissions for Azure cloud services. Understand the Greenhouse Gas Protocol methodology and emission sources."
-author: julcsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: lsuresh, mamaza
 ms.service: powerbi
 ms.subservice: powerbi-template-apps

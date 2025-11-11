@@ -1,8 +1,8 @@
 ---
 title: Azure and Power BI
 description: Learn how to turn your data processing efforts into analytics and reports that provide real-time insights into your business with Azure and Power BI.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

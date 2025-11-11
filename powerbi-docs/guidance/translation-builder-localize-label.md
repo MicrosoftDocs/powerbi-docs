@@ -1,8 +1,8 @@
 ---
 title: "Add a Localized Labels Table to a Power BI Report"
 description: Learn how report label translations provide localized values for text elements on a report that aren't directly associated with a data model object.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

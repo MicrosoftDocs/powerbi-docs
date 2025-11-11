@@ -3,7 +3,7 @@ title: "Design guidance for date tables in Power BI Desktop"
 description: "Techniques and guidance for creating date tables in Power BI Desktop."
 author: denglishbi
 ms.author: daengli
-ms.reviewer: daengli
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

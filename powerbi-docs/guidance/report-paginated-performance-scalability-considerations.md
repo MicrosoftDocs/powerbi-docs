@@ -5,7 +5,7 @@ description: "Guidance for improving performance and scalability of paginated re
 
 author: nidenyse
 ms.author: dniwenshuti
-ms.reviewer: 
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
