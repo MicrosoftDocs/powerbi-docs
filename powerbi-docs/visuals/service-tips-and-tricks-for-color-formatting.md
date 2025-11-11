@@ -53,7 +53,7 @@ When the **Filters** and **Visualizations** panes appear along the right side of
 
 In Power BI Desktop, you can apply design changes to your entire report. With themes, you can use corporate colors, change icon sets, or apply new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme. To learn more, see [Use report themes in Power BI Desktop](../create-reports/desktop-report-themes.md).
 
-A tenant admin include organizational themes in the list for all users in addition the ones provided. To learn more, see [Use organizational themes](../create-reports/desktop-organizational-themes.md).
+A tenant admin can include organizational themes in the list for all users in addition the themes provided. To learn more, see [Use organizational themes](../create-reports/desktop-organizational-themes.md).
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-themes.png" alt-text="Screenshot of theme options in the View menu.":::
 
@@ -116,7 +116,7 @@ In this example, we apply a **gradient** format style and select the **Sum of Sa
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-new.png" alt-text="Screenshot of the Default color pane.":::
 
-The applies the conditional formatting to the bar colors. Selecting the **fx button** opens the dialog to adjust the conditional formatting, and selecting the **Eraser button** clears the conditional formatting. The previous color I had selected for **Small Business** is removed.
+This applies the conditional formatting to the bar colors. Selecting the **fx button** opens the dialog to adjust the conditional formatting, and selecting the **Eraser button** clears the conditional formatting. The previous color I had selected for **Small Business** is removed.
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-default-colors.png" alt-text="Screenshot of column chart with default colors applied.":::
 
