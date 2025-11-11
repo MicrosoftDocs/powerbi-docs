@@ -1,5 +1,5 @@
 ﻿---
-title: Line charts in Power BI
+title: Line Charts in Power BI
 description: Learn how to create and customize line charts in Power BI to visualize trends and patterns over time.
 author: miguelmyersMS
 ms.author: miguelmyers
@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/04/2025
+ms.date: 11/10/2025
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn how to create and customize line charts so I can effectively visualize trends and time-series data in my reports.
@@ -57,20 +57,20 @@ In the following guide, you use the [Retail Analysis Sample PBIX file](https://
    :::image type="content" source="media/power-bi-line-chart/create-line-chart.png" alt-text="Screenshot of Power BI canvas with a line chart placeholder added, showing the Visualizations pane and Line chart icon selected." lightbox="media/power-bi-line-chart/create-line-chart.png":::
 
 1. Add data to your chart by using one of these combinations:
-   - One field on **X-axis** and one measure on **Y-axis**
-   - One field on **X-axis**, one measure on **Y-axis**, and one field in **Legend**
-   - One or more fields on **X-axis** and multiple measures on **Y-axis** (charts with multiple measures don't support legends)
+   - One field on **X-axis** and one measure on **Y-axis**.
+   - One field on **X-axis**, one measure on **Y-axis**, and one field in **Legend**.
+   - One or more fields on **X-axis** and multiple measures on **Y-axis** (charts with multiple measures don't support legends).
 
    For this example:
 
-   - Drag **This Year Sales > Value** to the **Y-axis** field well
-   - Drag **Time > Month** to the **X-axis** field well
+   - Drag **This Year Sales > Value** to the **Y-axis** field well.
+   - Drag **Time > Month** to the **X-axis** field well.
 
 1. To customize your chart, select **Format visual** in the Visualizations pane to access formatting options under the **Visual** and **General** tabs.
 
 ## Drill into line chart data
 
-Line charts support drill actions that let you explore data hierarchies. Configure your chart with a date hierarchy (Year > Quarter > Month > Day) to enable drilling through different time levels.
+Line charts support drill actions that let you explore data hierarchies. To enable drilling through different time levels, configure your chart with a date hierarchy (Year > Quarter > Month > Day).
 
 To set up drill functionality:
 
@@ -82,10 +82,10 @@ To set up drill functionality:
 
 Four drill icons appear near the visual:
 
-- **Drill up** - Move to a higher level in the hierarchy
-- **Drill down** - Enable drill mode to select individual data points
-- **Go to next level** - Expand all points to the next hierarchy level
-- **Expand all** - Show next level grouped under each category
+- **Drill up** - Move to a higher level in the hierarchy.
+- **Drill down** - Enable drill mode to select individual data points.
+- **Go to next level** - Expand all points to the next hierarchy level.
+- **Expand all** - Show next level grouped under each category.
 
 ### Use drill down mode
 
@@ -95,8 +95,8 @@ Four drill icons appear near the visual:
 
 ### Navigate hierarchy levels
 
-- **Go to next level**: Expands all data points simultaneously to show the next level (for example, all months across all quarters)
-- **Expand all**: Maintains grouping while showing the next level of detail beneath each category
+- **Go to next level**: Expands all data points simultaneously to show the next level (for example, all months across all quarters).
+- **Expand all**: Maintains grouping while showing the next level of detail beneath each category.
 
 ## Use zoom sliders
 
@@ -111,14 +111,14 @@ To enable zoom sliders:
 1. Expand the **Zoom slider** card and toggle it to **On**.
 1. Enable **X-axis** and **Y-axis** options to show sliders on both axes.
 1. Optionally enable:
-   - **Slider tooltips** - Shows values as you drag slider handles
-   - **Slider labels** - Displays the full range of values available on each axis
+   - **Slider tooltips** - Shows values as you drag slider handles.
+   - **Slider labels** - Displays the full range of values available on each axis.
 
 Drag the slider handles to adjust the visible data range dynamically. The chart updates to show only data within the selected range.
 
 ## Customize line segments
 
-Apply targeted formatting to specific portions of your line to highlight trends or emphasize key data points.
+To highlight trends or emphasize key data points, apply targeted formatting to specific portions of your line.
 
 :::image type="content" source="media/power-bi-line-chart/line-chart-line-segment.png" alt-text="Screenshot of the Format visual pane with the Lines card expanded and the Apply settings to dropdown set to 'Aug'." lightbox="media/power-bi-line-chart/line-chart-line-segment.png":::
 
@@ -129,9 +129,9 @@ To format line segments:
 1. In the **Apply settings to** dropdown, select a specific category (such as "Aug") or choose **All**.
 1. Change the **Color** to highlight the selected segment.
 1. Set the **Segment type** to:
-   - **Both** - Colors both sides of data points (default)
-   - **Left** - Colors only the left side of each point
-   - **Right** - Colors only the right side of each point
+   - **Both** - Colors both sides of data points (default).
+   - **Left** - Colors only the left side of each point.
+   - **Right** - Colors only the right side of each point.
 1. Toggle **Shade area** to **On** to fill the area beneath the line.
 
 > [!NOTE]
@@ -155,20 +155,20 @@ The chart adds a second line with its own axis scale. This feature makes it easi
 
 - **Maximum number of lines**:
   - While Power BI doesn't impose a strict line limit, too many lines (typically beyond 10-15) can reduce readability and performance. For complex comparisons, consider:
-    - Using small multiples
-    - Adding slicers for dynamic filtering
-    - Choosing alternative chart types better suited for high-volume data
+    - Using small multiples.
+    - Adding slicers for dynamic filtering.
+    - Choosing alternative chart types better suited for high-volume data.
 - **Conditional formatting**:
   - Line charts don't natively support conditional formatting for lines, shaded areas, or markers. While some users find workarounds by applying conditional formatting to a column chart first and then switching to a line chart, this method isn't officially supported. Results can vary.
 - **Line segment behavior**:
   - **Single series only**: Segment formatting (color, shade area) works with only one series. Multiple series disable this feature.
   - **Gaps in data**: How gaps appear depends on axis type:
-    - **Categorical axis**: Shows gaps as discrete breaks when "Show items with no data" is enabled
-    - **Continuous axis**: Connects points with a line even when values are missing
+    - **Categorical axis**: Shows gaps as discrete breaks when "Show items with no data" is enabled.
+    - **Continuous axis**: Connects points with a line even when values are missing.
 - **Analytics features**:
   - Advanced features like **Anomaly detection** and **Forecasting** require:
-    - A single-series chart
-    - A continuous X-axis
+    - A single-series chart.
+    - A continuous X-axis.
   - Area chart variants (Area, Stacked Area, 100% Stacked Area) have varying support for analytics features. Test your configuration before relying on these tools in production reports.
 
 ## Related content
