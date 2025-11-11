@@ -24,7 +24,7 @@ With the **relative date slicer** or **relative date filter**, you can apply tim
 You can use the relative date slicer just like any other slicer or visual when editing a report in Power BI. Select a **Slicer** visual to add it to your report page and then select a date column for the **Field** value. In the following image, we selected the *Date* column.
 
 >[!Note]
->If your report has a Date hierarchy with your data column from the [auto date/time feature](/transform-model/desktop-auto-date-time), the date column must be used instead of the date hierarchy to use the slicer in relative date mode.
+>If your report has a Date hierarchy with your data column from the [auto date/time feature](/powerbi/transform-model/desktop-auto-date-time), the date column must be used instead of the date hierarchy to use the slicer in relative date mode.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png" alt-text="Screenshot of the Visualizations pane with the slicer visual icon and the Field well called out.":::
 
@@ -105,4 +105,4 @@ The following considerations and limitations apply before showing the relative o
 
 - [Create a relative time slicer and filter in Power BI](../create-reports/slicer-filter-relative-time.md)
 - [Slicers in Power BI](power-bi-visualization-slicers.md)
-- [Auto date/time in Power BI](/transform-model/desktop-auto-date-time)
+- [Auto date/time in Power BI](/powerbi/transform-model/desktop-auto-date-time)
