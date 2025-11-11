@@ -41,7 +41,7 @@ When the **Filters** and **Visualizations** panes appear along the right side of
 
 In Power BI Desktop, you can apply design changes to your entire report. With themes, you can use corporate colors, change icon sets, or apply new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme. To learn more, see [Use report themes in Power BI Desktop](../create-reports/desktop-report-themes.md).
 
-A tenant admin can include organizational themes in the list for all users in addition the themes provided. To learn more, see [Use organizational themes](../create-reports/desktop-organizational-themes.md).
+A tenant admin can include organizational themes in the list for all users in addition to the themes provided. To learn more, see [Use organizational themes](../create-reports/desktop-organizational-themes.md).
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-themes.png" alt-text="Screenshot of theme options in the View menu.":::
 
@@ -51,7 +51,7 @@ Here, we applied the **Innovate** theme to the report.
 
 Report themes are also available in the Power BI service.
 
-:::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-service-themes.png" alt-text="Screenshot of theme options in the View menu when editing a report in the web.":::
+:::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-service-themes.png" alt-text="Screenshot of theme options in the View menu when editing a report on the web.":::
 
 You can undo a theme change with CTRL Z or using the undo buttons.
 
@@ -59,7 +59,7 @@ You can undo a theme change with CTRL Z or using the undo buttons.
 
 Sometimes you want to highlight one particular data point. Perhaps it's a sales figure for the launch of a new product, or improvements in quality scores after launching a new program. With Power BI, you can highlight a particular data point by changing its color.
 
-The following visualization show sales by segment. 
+The following visualization shows sales by segment. 
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-format.png" alt-text="Screenshot of data colors changed to one color.":::
 
@@ -96,9 +96,9 @@ First, select the image you want to adjust. Open the **Format your visual** pane
 
 Format style gives you three ways to set the conditional formatting of this color. 
 
-1. **Rules** let's you specify the color based on the value as a list of rules.
-2. **Gradient** let's you specify the color based on a minimum or maximum value with option to have a middle color.
-3. **Field value** let's you choose a measure or data column in your data model with the color, as a text data type.
+- **Rules** lets you specify the color based on the value as a list of rules.
+- **Gradient** lets you specify the color based on a minimum or maximum value with option to have a middle color.
+- **Field value** lets you choose a measure or data column in your data model with the color, as a text data type.
 
 In this example, we apply a **gradient** format style and select the **Sum of Sales** for the field we should base this on. Then we choose light blue for the **Lowest value** and dark blue for **Highest value**. 
 
