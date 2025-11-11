@@ -1,8 +1,8 @@
 ---
 title: Import and display KPIs in Power BI
 description: Learn how to import KPIs from an excel workbook and display them in Power BI Desktop to highlight trends, progress, or other important indicators.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

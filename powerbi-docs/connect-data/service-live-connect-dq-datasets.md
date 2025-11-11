@@ -1,8 +1,8 @@
 ---
 title: What's the difference between live connections and DirectQuery?
 description: See a comparison between live connections and DirectQuery
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

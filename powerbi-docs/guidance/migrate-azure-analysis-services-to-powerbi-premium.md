@@ -67,7 +67,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | **Premium workloads** |||
 | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md), which are ideal for reports that are designed to be printed, especially when table data overflows to multiple pages | No | Yes |
 | [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md), which store fragments of data intended for use in a Power BI semantic model | No | Yes |
-| [AI with dataflows](../transform-model/dataflows/dataflows-machine-learning-integration.md), which use artificial intelligence (AI) with Cognitive Services, Automated Machine Learning, and Azure Machine Learning (AML) integration | No | Yes |
+| [Power BI implementation planning - Integration with other services](../guidance/powerbi-implementation-planning-integration-with-other-services.md), which use artificial intelligence (AI) with Cognitive Services, Automated Machine Learning, and Azure Machine Learning (AML) integration | No | Yes |
 | [Metrics](../create-reports/service-goals-introduction.md), which curate key business measures and allow tracking them against objectives | No | Yes |
 | **Business enablement** |||
 | Unlimited report distribution to anyone (even outside the organization) | No | Yes |

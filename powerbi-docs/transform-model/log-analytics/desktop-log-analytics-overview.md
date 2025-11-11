@@ -1,8 +1,8 @@
 ---
 title: Using Azure Log Analytics in Power BI
 description: Overview of how to use log analytics in Power BI
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

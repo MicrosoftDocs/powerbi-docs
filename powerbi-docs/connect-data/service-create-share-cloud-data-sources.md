@@ -1,8 +1,8 @@
 ---
 title: Create and Share Cloud Data Sources in the Power BI Service
 description: Find out how to create a shareable cloud connection in the Power BI service, share that connection with others, and assign it to a semantic model. 
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot Nested Values Returned as Text
 description: Fix nested values converted to text in Power BI service. Learn how to resolve data source privacy errors and prevent Table/Record conversion issues. Troubleshoot today.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi

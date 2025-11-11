@@ -1,8 +1,8 @@
 ---
 title: Configure Kerberos SSO for Teradata in Power BI
 description: "Learn how to configure Kerberos SSO for Teradata in Power BI. Step-by-step guide to enable single sign-on authentication with gateway settings."
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways

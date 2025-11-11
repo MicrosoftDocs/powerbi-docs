@@ -1,8 +1,8 @@
 ---
 title: "Generate Machine Translations Using Azure Translator Service"
 description: Learn how Translations Builder generates machine translations by using the Azure Translator Service. 
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to

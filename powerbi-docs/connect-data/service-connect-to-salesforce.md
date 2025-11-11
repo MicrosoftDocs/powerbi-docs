@@ -1,9 +1,8 @@
 ---
 title: Connect to Salesforce with Power BI Desktop
 description: "Learn how to connect to Salesforce Analytics for Sales Managers in Power BI. Install the template app to analyze sales pipelines, accounts, leads, and KPIs with interactive visuals."
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

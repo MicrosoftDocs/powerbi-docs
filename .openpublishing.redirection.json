@@ -4627,12 +4627,12 @@
     },
     {
       "source_path": "powerbi-docs/transform-model/service-cognitive-services.md",
-      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+      "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
       "redirect_document_id": true
     },
     {
       "source_path": "powerbi-docs/transform-model/service-dataflows-add-cdm-folder.md",
-      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+      "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
       "redirect_document_id": false
     },
     {
@@ -4707,12 +4707,12 @@
     },
     {
       "source_path": "powerbi-docs/transform-model/service-machine-learning-automated.md",
-      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+      "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
       "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/transform-model/service-machine-learning-integration.md",
-      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+      "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
       "redirect_document_id": false
     },
     {
@@ -6802,7 +6802,7 @@
     }, 
     {
         "source_path": "powerbi-docs/transform-model/dataflows/dataflows-machine-learning-integration.md",
-        "redirect_url": "/power-bi/transform-model/",
+        "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
         "redirect_document_id": false
     }, 
     {

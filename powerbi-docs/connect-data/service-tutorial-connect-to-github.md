@@ -1,8 +1,8 @@
 ---
 title: 'Tutorial: Connect to a GitHub repo with Power BI'
 description: Learn how to connect to real data in the GitHub service from Power BI and then examine the data in the workspace reports.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: pbi-data-sources

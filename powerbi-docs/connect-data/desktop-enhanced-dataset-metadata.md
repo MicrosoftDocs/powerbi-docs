@@ -1,8 +1,8 @@
 ---
 title: Using enhanced semantic model metadata in Power BI Desktop
 description: Learn about enhanced semantic model metadata in Power BI Desktop, which uses a format similar to what is used for Analysis Services tabular models.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

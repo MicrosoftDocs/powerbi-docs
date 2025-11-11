@@ -1,8 +1,8 @@
 ---
 title: Import Excel workbooks into Power BI Desktop
 description: You can import Excel workbooks that contain Power Query queries, Power Pivot models, and Power View models into Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

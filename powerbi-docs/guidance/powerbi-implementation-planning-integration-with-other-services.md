@@ -95,7 +95,7 @@ You can invoke specific AI functions in Power Query by using Azure AI Services. 
 
 Similarly to how you can use Azure AI Services, you can apply machine learning models to your data by invoking dynamic Power Query functions. These machine learning models must have schema files generated in Python by the model creator.
 
-Dataflow Gen1 creators can also use [AutoML](../transform-model/dataflows/dataflows-machine-learning-integration.md#work-with-automl) to create their own machine learning models by using Power BI during data preparation. Creators can choose a specific type of model, either [binary prediction](../transform-model/dataflows/dataflows-machine-learning-integration.md#binary-prediction-models), [general classification](../transform-model/dataflows/dataflows-machine-learning-integration.md#classification-models), or [regression](../transform-model/dataflows/dataflows-machine-learning-integration.md#regression-models). Next, they train these models with input data, and evaluate the results before they [apply the model](../transform-model/dataflows/dataflows-machine-learning-integration.md#apply-the-automl-model) to new or updated data after dataflow refresh.
+Dataflow Gen1 creators can also use AutoML to create their own machine learning models by using Power BI during data preparation. Creators can choose from different types of models including binary prediction, general classification, or regression models. Next, they train these models with input data, and evaluate the results before applying the model to new or updated data after dataflow refresh.
 
 Use cases for Azure Machine Learning integration with a semantic model or dataflow Gen1 include:
 

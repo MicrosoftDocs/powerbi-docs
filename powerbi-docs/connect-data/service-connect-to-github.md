@@ -1,8 +1,8 @@
 ---
 title: Connect to GitHub with Power BI
 description: "Learn how to connect your GitHub account to Power BI using the template app. Explore repository insights, contributions, issues, and pull requests with interactive dashboards and reports."
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

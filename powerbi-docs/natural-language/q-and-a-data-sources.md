@@ -3,6 +3,7 @@ title: Data sources for natural language Q&A
 description: Learn about import, live connect, and DirectQuery data sources for Power BI natural language Q&A. Understand Q&A indexing and caching.
 author: mohaali
 ms.author: mohaali
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual

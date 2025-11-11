@@ -1,8 +1,8 @@
 ---
 title: "Template App Authoring Tips: Power BI"
 description: Use these tips about authoring queries, data models, reports, and dashboards for making good template apps.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps

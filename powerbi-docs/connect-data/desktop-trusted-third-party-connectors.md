@@ -1,9 +1,8 @@
 ---
 title: Trusted Third-Party Connectors in Power BI Desktop
 description: Learn how to trust a signed third-party connector in Power BI Desktop by editing values in the Registry Editor.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
