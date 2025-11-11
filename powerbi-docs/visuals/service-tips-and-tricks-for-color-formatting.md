@@ -75,7 +75,7 @@ Once selected, the **Small Business** data point is a nice shade of orange, and 
 
 If you expect to add new columns to the chart and want to maintain the same color scheme, be sure to set the **Default color** to blue.
 
-Even if you change visualization types and then return, Power BI remembers your selection and keeps **Small Business** orange.
+Changing the bar chart to a different chart, such as a column chart, keeps **Small Business** orange.
 
 
 ## Add conditional formatting for visuals color
@@ -97,14 +97,14 @@ First, select the image you want to adjust. Open the **Format your visual** pane
 Format style gives you three ways to set the conditional formatting of this color. 
 
 1. **Rules** let's you specify the color based on the value as a list of rules.
-2. **Gradient** let's you specify the color based on a minimum or maximum value with option to have a middle color. These can have a range based on the values displayed or specific range.
+2. **Gradient** let's you specify the color based on a minimum or maximum value with option to have a middle color.
 3. **Field value** let's you choose a measure or data column in your data model with the color, as a text data type.
 
 In this example, we apply a **gradient** format style and select the **Sum of Sales** for the field we should base this on. Then we choose light blue for the **Lowest value** and dark blue for **Highest value**. 
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-new.png" alt-text="Screenshot of the Default color pane.":::
 
-This applies the conditional formatting to the bar colors. Selecting the **fx button** opens the dialog to adjust the conditional formatting, and selecting the **Eraser button** clears the conditional formatting. The previous color I had selected for **Small Business** is removed.
+This setting applies the conditional formatting to the bar colors. Selecting the **fx button** opens the dialog to adjust the conditional formatting, and selecting the **Eraser button** clears the conditional formatting. The previously selected for **Small Business** is removed.
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-default-colors.png" alt-text="Screenshot of column chart with default colors applied.":::
 
