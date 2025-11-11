@@ -53,7 +53,7 @@ When the **Filters** and **Visualizations** panes appear along the right side of
 
 In Power BI Desktop, you can apply design changes to your entire report. With themes, you can use corporate colors, change icon sets, or apply new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme. To learn more, see [Use report themes in Power BI Desktop](../create-reports/desktop-report-themes.md).
 
-A tenant admin include organizational themes in the list for all users in addition the ones provided. To learn more, see [Use organizational themes](../create-reports/desktop-organizational-themes).
+A tenant admin include organizational themes in the list for all users in addition the ones provided. To learn more, see [Use organizational themes](../create-reports/desktop-organizational-themes.md).
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-themes.png" alt-text="Screenshot of theme options in the View menu.":::
 
@@ -145,6 +145,6 @@ Do you have a tip you want to share? Send it our way.
 
 - [Get started formatting report visualizations](service-getting-started-with-color-formatting-and-axis-properties.md)
 - [Use report themes](../create-reports/desktop-report-themes.md)
-- [Use organizational themes](../create-reports/desktop-organizational-themes)
+- [Use organizational themes](../create-reports/desktop-organizational-themes.md)
 - [Share a filtered Power BI report](../collaborate-share/service-share-reports.md)
 - [Apply conditional formatting in tables and matrix visuals](../create-reports/desktop-conditional-table-formatting.md)
