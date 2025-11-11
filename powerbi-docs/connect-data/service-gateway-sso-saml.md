@@ -3,7 +3,7 @@ title: Use SAML for SSO from Power BI to on-premises sources
 description: Learn how to configure SAML for single sign-on (SSO) from Power BI to on-premises data sources using the gateway. Includes setup steps and troubleshooting.
 author: arthiriyer
 ms.author: arthii
-ms.reviewer: ''
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

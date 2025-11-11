@@ -1,8 +1,8 @@
 ---
 title: Get started with datamarts (preview)
 description: Begin using datamarts with sample data and examples
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

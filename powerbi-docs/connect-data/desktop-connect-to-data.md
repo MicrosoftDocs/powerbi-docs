@@ -1,8 +1,8 @@
 ---
 title: Connect to data in Power BI Desktop
 description: Practice how to bring connect to data and transform it for use in Power BI Desktop by using sample data from the internet.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi

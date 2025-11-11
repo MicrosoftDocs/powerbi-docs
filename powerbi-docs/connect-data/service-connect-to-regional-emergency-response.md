@@ -1,8 +1,8 @@
 ---
 title: Connect to the Regional Emergency Response Dashboard
 description: Learn how to install the Regional Government Emergency Response Dashboard template app for Power BI and connect to your data sources to view critical emergency metrics.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

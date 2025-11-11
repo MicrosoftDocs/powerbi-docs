@@ -1,8 +1,8 @@
 ---
 title: Refresh a semantic model created from an Excel workbook - cloud
 description:  Learn how to refresh a semantic model created from an Excel workbook on OneDrive for work or school or SharePoint Online.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

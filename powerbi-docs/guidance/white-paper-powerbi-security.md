@@ -1,9 +1,8 @@
 ---
 title: Power BI security white paper
 description: A white paper that discusses and describes security architecture and implementation for Power BI.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

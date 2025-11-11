@@ -3,7 +3,7 @@ title: Edit semantic models in the Power BI service
 description: Learn how to edit semantic models in the Power BI service, including editing relationships, creating DAX measures, managing RLS, and more.
 author: emlisa
 ms.author: emlisa
-ms.reviewer: ''
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Manage Published Power BI Template Apps
 description: "Learn to update, delete, and extract Power BI template apps without disrupting production. Step-by-step guide for app developers. Start managing your apps today."
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps

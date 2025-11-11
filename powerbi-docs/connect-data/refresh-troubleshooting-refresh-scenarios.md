@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot refresh scenarios
 description: This article provides ways to troubleshoot issues with refreshing data within the Power BI service, for various data sources and conditions.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

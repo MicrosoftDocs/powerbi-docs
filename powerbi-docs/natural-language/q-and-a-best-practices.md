@@ -3,6 +3,7 @@ title: Best practices to optimize Q&A
 description: Learn how to optimize Power BI Q&A by organizing tables, renaming columns, adding synonyms to terms, and adjusting settings.
 author: mohaali
 ms.author: mohaali
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to

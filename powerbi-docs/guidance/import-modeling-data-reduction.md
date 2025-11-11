@@ -3,7 +3,7 @@ title: "Data reduction techniques for Import modeling"
 description: "Understand different techniques to help reduce the data loaded into Import data models."
 author: denglishbi
 ms.author: daengli
-ms.reviewer: daengli
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

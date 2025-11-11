@@ -1,9 +1,8 @@
 ---
 title: Connect to Project Web App with Power BI
 description: Learn how to connect to Microsoft Project Web App using the Power BI template app. Unlock insights for project portfolio management. Get started now.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

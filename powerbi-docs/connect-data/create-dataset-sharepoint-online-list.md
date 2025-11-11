@@ -1,8 +1,8 @@
 ---
 title: Create a semantic model from a SharePoint List
 description: Learn how to create a Power BI semantic model directly from a SharePoint Online list.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

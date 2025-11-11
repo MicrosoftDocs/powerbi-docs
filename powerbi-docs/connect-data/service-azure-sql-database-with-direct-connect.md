@@ -1,8 +1,8 @@
 ---
 title: Azure SQL Database with DirectQuery
 description: Learn to connect directly to Azure SQL Database and create reports that use live data. You can keep your data at the source and not in Power BI.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to

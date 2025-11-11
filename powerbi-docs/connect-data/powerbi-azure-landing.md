@@ -3,6 +3,7 @@ title: Power BI for Azure users
 description: Learn how to get the most out of Power BI. See resources for embedding Power BI in apps, adding AI to Power BI, and using Power BI to analyze Azure data.
 author: willthom
 ms.author: willthom
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: landing-page

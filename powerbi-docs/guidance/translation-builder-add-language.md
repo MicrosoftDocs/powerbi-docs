@@ -1,8 +1,8 @@
 ---
 title: "Add a Language to a Power BI Report in Translations Builder"
 description: Learn how to add a secondary language and translations to a Power BI report by using Translations Builder.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
