@@ -110,8 +110,10 @@
     - name: "Interact with parameters"
       href: paginated-reports-view-parameters.md
   - name: "Use Power BI on mobile"
-    expanded: false
+    expanded: true
     items:
+    - name: "Standalone Copilot in mobile apps"
+      href: mobile/mobile-standalone-copilot.md
     - name: "Review basics and overview"
       items:
       - name: "What are the mobile apps?"
