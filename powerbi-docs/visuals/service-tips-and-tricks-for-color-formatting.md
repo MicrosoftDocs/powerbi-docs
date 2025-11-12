@@ -63,7 +63,7 @@ The following visualization shows sales by segment.
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-format.png" alt-text="Screenshot of data colors changed to one color.":::
 
-Imagine you want to call out the **Small Business** segment to show how well this brand new segment is performing by using color. Here are the steps:
+Imagine you want to call out the **Small Business** segment to show how well this new segment is performing by using color. Here are the steps:
 
 For each visual type, there are many color options. You can color text, gridlines, backgrounds, and more. The path to the **Color** option that you want might not be the same across visuals. For that reason, select the visual and then use the Search bar to find the chart feature that you want to color. For a column chart, search for **Column**. The color option we want is on the **Columns** card. 
 
@@ -86,7 +86,7 @@ The following sections demonstrate different ways to base color on a numeric val
 
 ### Base the color of data points on a value
 
-First, select the image you want to adjust. Open the **Format your visual** pane by selecting the **paint brush** icon and then search for the **Colors** card. Since our example uses a column chart, scroll down to **Columns**. Next to **Default**, select the **fx** icon. 
+First, select the visual you want to adjust. Open the **Format your visual** pane by selecting the **paint brush** icon and then search for the **Colors** card. Since our example uses a column chart, scroll down to **Columns**. Next to **Color**, select the **fx** icon. 
 
 >[!Note]
 >Not all visuals will have the option to conditionally format the color, such as the color on a line visual.
