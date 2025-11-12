@@ -274,7 +274,7 @@ If you select to **Keep current** format, Desktop won't prompt again to upgrade.
 
 ### PBIR in Service
 
-New reports created in the Service will use the PBIR format by default. Existing reports that are edited will also be automatically converted to PBIR format.
+New reports created in the Service use the PBIR format by default. Existing reports that are edited will also be automatically converted to PBIR format.
 
 During the Public Preview, administrators can choose to opt out of PBIR by disabling the tenant setting: **Automatically convert and store reports in the Power BI enhanced metadata format (PBIR)**.
 
