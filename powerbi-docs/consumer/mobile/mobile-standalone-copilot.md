@@ -15,11 +15,14 @@ ai-usage: ai-assisted
 
 # Standalone Copilot in Power BI mobile apps (preview)
 
+> [!IMPORTANT]
+> This feature is in preview.
+
 | :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: |
 |:---:|:---:|:---:|:---:|
 | iPhones | iPads | Android phones | Android tablets |
 
-The standalone Copilot in Power BI mobile apps provides a full-screen chat experience that you can use to ask questions about your data directly from the app's home page. Unlike the in-report Copilot button, this standalone experience enables you to query any report, semantic model, or data agent in your organization without first opening a specific item. Copilot analyzes your question, suggests relevant data sources, and generates instant insights with both textual summaries and interactive visuals.
+The standalone Copilot in Power BI mobile apps provides a full-screen chat experience that you can use to ask questions about your data directly from the app's home page. Unlike the in-report Copilot button, this standalone experience enables you to query any report, semantic model, or data agent in your organization without first opening a specific item. Copilot analyzes your question, suggests relevant data sources, and generates instant insights with both textual summaries and interactive visuals. This mobile experience mirrors the [standalone Copilot available in the Power BI service](../../create-reports/copilot-chat-with-data-standalone.md).
 
 ## Access the standalone Copilot
 
@@ -36,32 +39,24 @@ The full-screen Copilot chat interface opens, ready to accept your questions.
 
 You can ask Copilot questions about any accessible report, semantic model, or data agent. Copilot processes your query and identifies relevant data sources.
 
+### Voice input (iPhone and iPad)
+
+On iPhone and iPad devices, you can dictate questions by using voice input. Tap the **microphone icon** in the Copilot chat box, speak your question clearly, and Copilot transcribes and processes it the same as typed input.
+
 ### Query reports and semantic models
 
 To ask a question:
 
-1. In the Copilot chat interface, type your question in the text box, or dictate using the microphone. For example, you can ask, "What is the total spending by island in tourism?"
+1. In the Copilot chat interface, type your question in the text box. For example, you can ask, "What is the total spending by island in tourism?"
 1. Select **Send**.
 
    Copilot displays a list of relevant items that match your query.
-
-   :::image type="content" source="./media/mobile-standalone-copilot/copilot-search-results.png" alt-text="Screenshot of Copilot search results displaying relevant data sources with verified answer labels." border="false":::
 
    Reports and semantic models that are verified (marked as endorsed for use with AI) are labeled as **Verified answer**.
 
 1. Select an item from the list by tapping the suggestion pill.
 
 Copilot generates a response based on the selected item.
-
-#### Voice input (iPhone and iPad)
-
-On iPhone and iPad devices, you can dictate questions by using voice input:
-
-1. Tap the **microphone icon** in the Copilot chat box.
-1. Speak your question clearly. For example, "Show me humidity trend for Glacier National Park."
-1. Copilot transcribes your question and processes it the same as typed input.
-
-:::image type="content" source="./media/mobile-standalone-copilot/voice-dictation.png" alt-text="Screenshot showing the microphone icon for voice dictation in the chat interface." border="false":::
 
 ### Review Copilot responses
 
@@ -71,8 +66,6 @@ When you ask questions about metrics or key performance indicators (KPIs), Copil
 - **Interactive visual**: A chart or graph representing the data (commonly generated for metric and KPI queries)
 - **Copy option**: An icon to copy the response to your clipboard for sharing
 - **References**: Citations linking to the visuals used to formulate the answer
-
-:::image type="content" source="./media/mobile-standalone-copilot/copilot-response-visual.png" alt-text="Screenshot of Copilot response with textual summary and interactive chart visualization." border="false":::
 
 ## Interact with visuals
 
@@ -101,7 +94,7 @@ To ask a data agent a question:
 
 1. In the Copilot chat, ask Copilot to find the data agent. For example, you can ask, "Find Movies Analysis data agent."
 1. Copilot displays a numbered list of matching data agents.
-1. Ask your question referencing the data agent number. For example, reply, "Use #2 - Which 5 movies have earned the highest gross revenue?"
+1. Ask your question referencing the data agent number. For example, reply, "Use 1. Tourism Analysis Overview."
 
 Copilot queries the data agent and returns the response directly in the mobile app.
 
