@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
-ms.date: 06/28/2024
+ms.date: 11/11/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-This tutorial explains how to connect to a sample Azure SQL database, use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages, and then upload the paginated report to any workspace in the Power BI service.
+This tutorial explains how to create a paginated report and upload it to the Power BI service. You begin by connecting to a sample Azure SQL database. You then use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages. Finally, you upload the paginated report to any workspace in the Power BI service.
 
 :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png" alt-text="Screenshot showing a paginated report in the Power BI service." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png":::
 
@@ -47,7 +47,7 @@ License requirements for publishing Power BI paginated reports (.rdl files) are 
 
 1. Start Power BI Report Builder from your computer.
 
-     The **Getting Started** dialog box opens.
+    The **Getting Started** dialog box opens.
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-get-started.png" alt-text="Screenshot showing the Report Builder Getting Started screen." lightbox="media/paginated-reports-quickstart-aw/power-bi-get-started.png":::
   
@@ -61,7 +61,7 @@ License requirements for publishing Power BI paginated reports (.rdl files) are 
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-new-data-source-connection.png" alt-text="Screenshot showing where to select New for a data source connection.":::
 
-     The **Data Source Properties** dialog box opens.
+    The **Data Source Properties** dialog box opens.
 
 1. You can name a data source anything you want, using characters and underscores. For this tutorial, in the **Name** box, type **MyAzureDataSource**.
 
@@ -71,17 +71,15 @@ License requirements for publishing Power BI paginated reports (.rdl files) are 
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png" alt-text="Screenshot showing where to select the Build option in Data source properties.":::
 
-     The **Connection Properties** dialog box opens.
+    The **Connection Properties** dialog box opens.
 
-1. **In the Azure portal:** Go back to the Azure portal and select **SQL databases**.
+1. In the Azure portal, select the Azure SQL database you created in the quickstart "Create an Azure SQL database sample in the Azure portal" in the Prerequisites section of this article.
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-azure-portal.png" alt-text="Screenshot showing the SQL database in the Azure portal Resources list." lightbox="media/paginated-reports-quickstart-aw/power-bi-azure-portal.png":::
 
-1. Select the Azure SQL database you created in the quickstart "Create an Azure SQL database sample in the Azure portal" in the **Prerequisites** section of this article.
+1. On the **Overview** tab for your Azure SQL database, copy the value in the **Server name** box.
 
-1. On the **Overview** tab, copy the value in the **Server name** box.
-
-1. **In Report Builder**: Go back to Report Builder. In the **Connection Properties** dialog box, under **Server name**, paste the server name you copied.
+1. Go back to **Report Builder**, and in the **Connection Properties** dialog box, under **Server name**, paste the server name you copied.
 
 1. For **Log on to the server**, make sure **Use SQL Server Authentication** is selected, then type the user name and password you created in Azure for the sample database.
 
@@ -91,19 +89,17 @@ License requirements for publishing Power BI paginated reports (.rdl files) are 
 
 1. Select **Test Connection**. You see the **Test results** message, showing that **Test connection succeeded**.
 
-1. Select **OK** > **OK**.
+1. Select **OK**.
 
-   Now in the **Connection string** box, Report Builder displays your new connection string.
+    Now in the **Connection string** box, Report Builder displays your new connection string.
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-connection-string.png" alt-text="Screenshot showing where to find the Connection string on the Data Source Properties screen." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-connection-string.png":::
 
 1. Select **OK**.
 
-1. In the **Choose a connection to a data source** page, you see "(in this Report)" under your new data source connection. Select that data source > **Next**.
+1. In the **Choose a connection to a data source** page, you see "(in this Report)" under your new data source connection. Select that data source, and select **Next**.
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-my-azure-data-source.png" alt-text="Screenshot showing where to select the data source.":::
-
-1. Enter the same user name and password in the box > **Next**.
 
 1. In the **Design a query** page, expand **SalesLT**, expand **Tables**, and select these tables:
 
@@ -140,7 +136,7 @@ License requirements for publishing Power BI paginated reports (.rdl files) are 
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-drag-fields.png" alt-text="Screenshot of the Arrange fields screen, showing where to find the Row groups and Values sections." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-drag-fields.png":::
 
-1. In the **Choose the layout** page, keep all the default settings, but clear the checkbox next to **Expand/collapse groups**. In general, the expand/collapse groups feature is great, but this time you want the table to wrap to multiple pages.
+1. Select **Next**. In the **Choose the layout** page, keep all the default settings, but clear the checkbox next to **Expand/collapse groups**. In general, the expand/collapse groups feature is great, but this time you want the table to wrap to multiple pages.
 
 1. Select **Next** > **Finish**. The table is displayed on the design surface.
 
@@ -158,7 +154,7 @@ Let's pause for a moment to look at the results of the wizard.
 
     You still don't see actual data values. You need to run the report to see them.
 
-1. In the **Properties** pane, the selected matrix is called Tablix1. A *tablix* in Report Builder is a data region that displays data in rows and columns. It can be either a table or a matrix.
+1. If you don’t see the **Properties** pane, select the **View tab > Properties**. In the **Properties** pane, the selected matrix is called Tablix1. A *tablix* in Report Builder is a data region that displays data in rows and columns. It can be either a table or a matrix.
 
 1. In the **Grouping** pane, you see the three row groups you created in the wizard:
 
@@ -282,13 +278,13 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 Now that you created this paginated report, you can upload it to the Power BI service.
 
-1. In the [Power BI service](https://app.powerbi.com) nav pane, select **Workspaces** > **Create workspace**.
+1. In the [Power BI service](https://app.powerbi.com) nav pane, select **Workspaces** > **+ New workspace**.
 
-1. Name your workspace **Azure AW** or other unique name. You're the only member for now.
+1. In **Create a workspace**, name your workspace **Azure AW** or other unique name. You're the only member for now. Select **Apply**.
 
-1. In your new workspace, select **Upload** > **Browse**. Navigate to where you saved the file > **Open**.
+1. In your new workspace, select **Browse** from the left-hand menu. Select your file from the list, or navigate to where you saved the file and open it.
 
-   Power BI imports your file, and you see it under **Reports** on the App list page.
+    Power BI imports your file, and you see it under **Reports** on the App list page.
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-app-list.png" alt-text="Screenshot showing where the report appears in the Reports list on the App list page.":::
 
