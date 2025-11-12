@@ -168,7 +168,7 @@ Let's pause for a moment to look at the results of the wizard.
 
 To see the actual values, you need to run the report.
 
-1. Select **Run** in the **Home** toolbar.
+- Select **Run** in the **Home** toolbar.
 
    Now you see the values. The matrix has many more rows than you saw in Design view. Report Builder lists the page as **1** of **2?**. Report Builder loads the report as quickly as possible, so it only retrieves enough data for a few pages at a time. The question mark indicates that Report Builder is still loading the data.
 
@@ -270,7 +270,7 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 1. Select **Print Layout**. Now the report has 29 pages. Scroll through a few pages. You see the currency is formatted, the columns have headings on every page, and the report has a footer with page numbers and date and time stamp on every page.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png" alt-text="Screenshot of a sample report with Print Layout selected.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png" alt-text="Screenshot of a sample report with Print Layout selected." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png":::
 
 1. Save the report to your computer.
 
@@ -296,7 +296,7 @@ Now that you created this paginated report, you can upload it to the Power BI se
 
 1. Select **Edit credentials** and enter the credentials you used in Azure when you created the Azure database.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png" alt-text="Screenshot showing where to select Edit credentials.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png" alt-text="Screenshot showing where to select Edit credentials." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png":::
 
 1. Now you can view your paginated report in the Power BI service.
 
