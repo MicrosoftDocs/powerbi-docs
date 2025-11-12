@@ -68,7 +68,7 @@ For working samples of user data functions, see [Translytical task flow examples
 
 Translytical task flows are currently in public preview, and also rely on other features in public preview. Make sure that the required features are enabled in Power BI Desktop.
 
-In Power BI Desktop, you need to enable translytical task flows and text, list, or button slicers.
+In Power BI Desktop, you need to enable translytical task flows, text slicers, and list slicers.
 
 Use the following steps to enable preview features in Power BI:
 
@@ -78,7 +78,7 @@ Use the following steps to enable preview features in Power BI:
 
    * **Translytical task flows**
    * **Text slicer visual** for scenarios that require freeform input.
-   * **Button slicer visual** or **List slicer visual** for scenarios that require slicer selection.
+   * **List slicer visual** for scenarios that require slicer selection.
 
 Translytical task flows work by using [user data functions in Fabric](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to invoke functions on the underlying Fabric data sources.
 
