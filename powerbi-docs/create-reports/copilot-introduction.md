@@ -127,11 +127,11 @@ The following requirements pertain to the full-screen standalone Copilot experie
 
 :::image type="content" source="media/copilot-introduction/copilot-access-standalone-enabled.png" alt-text="Screenshot of the standalone Copilot admin screen with options enabled." lightbox="media/copilot-introduction/copilot-access-standalone-enabled.png":::
 
-#### You must have access to a Copilot-supported capacity
+#### Access to a Copilot-supported capacity
 
-To use the standalone Copilot experience, your activity must be linked to a capacity. The recommended approach is to use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI is automatically billed to a single, centralized capacity. If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot (i.e. it is linked to an F2 capacity or higher, in a supported region, and enabled for Copilot) for usage tracking and billing. *If you don't have access to an FCC or access to a workspace backed by a capacity that supports Copilot, you won't be able to use the standalone Copilot experience.* 
+To use the standalone Copilot experience, **you must have access to a Copilot-supported capacity.** The recommended approach is to use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI is automatically billed to a single, centralized capacity. If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot (that is, it's linked to an F2 capacity or higher, it's in a supported region, and it's enabled for Copilot) for usage tracking and billing. *If you don't have access to an FCC or access to a workspace backed by a capacity that supports Copilot, you aren't able to use the standalone Copilot experience.* 
 
-#### Auto-selection of a copilot workspace
+#### Autoselection of a Copilot workspace
 
 We automatically select a workspace from a partially randomized list of eligible workspaces, weighted toward workspaces with more available capacity. This approach helps balance usage and prevents overloading any single capacity. This selection persists across sessions as long as the workspace remains Copilot-enabled and has available capacity. If the workspace becomes disabled for Copilot or reaches its capacity limit, we automatically reassign a new one and notify the user. If an FCC becomes available, it always overrides the autoselected workspace. Users receive a dismissible notification showing the chosen workspace and a direct option to change it.
 
@@ -139,7 +139,7 @@ We automatically select a workspace from a partially randomized list of eligible
 
 #### Change your Copilot workspace
 
-You can update your Copilot workspace anytime via **More > Manage workspace** in the standalone Copilot experience. Once you manually select a workspace, we only override it if an FCC becomes available. If your chosen workspace becomes disabled or reaches its capacity limit, we alert you and provide options to select a new workspace manually or through autoselection.
+You can update your Copilot workspace anytime via **More > Manage workspace** in the standalone Copilot experience. Once you manually select a workspace,  only override it if an FCC becomes available. If your chosen workspace becomes disabled or reaches its capacity limit, we alert you and provide options to select a new workspace manually or through autoselection.
 
 :::image type="content" source="media/copilot-introduction/workspace-manage.png" alt-text="Screenshot of the standalone Copilot more menu with the option to manage workspace." lightbox="media/copilot-introduction/workspace-manage.png":::
 
