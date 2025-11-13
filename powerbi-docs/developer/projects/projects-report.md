@@ -281,7 +281,9 @@ During the Public Preview, administrators can choose to opt out of PBIR by disab
 :::image type="content" source="./media/projects-report/pbir-tenantsetting.png" alt-text="Screenshot of PBIR tenant setting.":::
 
 > [!IMPORTANT]
-> When PBIR reaches General Availability (GA), it will become the only supported report format, and conversion will be mandatory. We recommend that customers begin preparing for this migration ahead of GA.
+> - When PBIR reaches General Availability (GA), it will become the only supported report format, and conversion will be mandatory. We recommend that customers begin preparing for this migration ahead of GA.
+> - The PBIR in the Power BI service may not yet be available in your tenant. The tenant setting primarily exists to let you opt out before the feature is fully enabled. For the latest updates, visit the [Power BI Blog](https://powerbi.microsoft.com/en-us/blog/).
+
 
 #### Restore to PBIR-Legacy
 
@@ -290,6 +292,9 @@ When a report is converted to PBIR in the Service, a backup copy in the **PBIR-L
 :::image type="content" source="./media/projects-report/pbir-service-restore.png" alt-text="Screenshot of PBIR restore setting.":::
 
 A restored report will not be automatically converted back to PBIR. To re-enable automatic conversion, open the report settings and select **Enable PBIR**.
+
+> [!IMPORTANT]
+> The **PBIR-Legacy** service backup is only created for reports upgraded directly in the Power BI service. If you upgrade your report by publishing from Power BI Desktop or by uploading a PBIX file and need to restore the **PBIR-Legacy** version, use the backup created by Power BI Desktop.
 
 ### PBIR folder and files
 
