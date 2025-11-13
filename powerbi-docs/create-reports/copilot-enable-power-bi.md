@@ -176,8 +176,7 @@ We always welcome your feedback about our products. Especially during public pre
 ## Related content
 
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
-- [Create a report with Copilot in the Power BI service](copilot-create-report-service.md)
-- [Create a report with Copilot in Power BI Desktop](copilot-create-desktop-report.md)
+- [Create a report with Copilot in Power BI](copilot-create-report.md)
 - [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Write Copilot prompts for creating narrative visuals in Power BI](copilot-prompts-narratives.md)

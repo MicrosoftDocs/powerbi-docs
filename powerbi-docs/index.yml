@@ -34,7 +34,7 @@ highlightedContent:
     # Card
     - title: Create report pages with Copilot
       itemType: how-to-guide
-      url: create-reports/copilot-create-report-service.md
+      url: create-reports/copilot-create-report.md
     # Card
     - title: Microsoft Fabric for Power BI users
       itemType: tutorial
@@ -88,7 +88,7 @@ conceptualContent:
             - url: create-reports/copilot-evaluate-data.md
               itemType: concept
               text: Update your data model to work with Copilot
-            - url: create-reports/copilot-create-report-service.md
+            - url: create-reports/copilot-create-report.md
               itemType: tutorial
               text: Create report pages with Copilot for Power BI
           # footerLink (optional)

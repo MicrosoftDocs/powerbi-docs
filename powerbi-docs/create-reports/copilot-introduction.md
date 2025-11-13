@@ -75,7 +75,7 @@ Business users can also include [summaries when setting up subscriptions to repo
 
 Report authors can use Copilot in many ways, such as the following tasks:
 
-- [Suggest content for a report](copilot-create-report-service.md#get-started-using-copilot)
+- [Suggest content for a report](copilot-create-report.md)
 - Create a [report page](copilot-prompts-report-pages.md)
 - [Summarize the underlying semantic model](copilot-reports-overview.md#summarize-the-underlying-semantic-model)
 - [Create a summary visual on the report itself](copilot-create-narrative.md)
@@ -145,7 +145,7 @@ These requirements pertain to using Copilot within Power BI reports, including t
 - **Power BI Desktop**:
   - You need *write access* to a workspace that is on a paid Fabric capacity or Power BI Premium in the Power BI service, where you plan to publish the report. Read more about using [Copilot in Power BI Desktop](copilot-power-bi-desktop.md).
 - **Power BI service**:
-  - The report must be located in a workspace linked to either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or a paid [Fabric](/fabric/enterprise/licenses) capacity. [Learn how to check your license type](copilot-create-report-service.md#use-copilot-in-the-power-bi-service-for-the-first-time).
+  - The report must be located in a workspace linked to either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or a paid [Fabric](/fabric/enterprise/licenses) capacity. [Learn how to check your license type](copilot-create-report.md#use-copilot-in-the-power-bi-service-for-the-first-time).
   - To generate summarized insights in reports, you need at least *read access* to the workspace, report, or app.
   - To add a narrative visual to a report or generate Copilot reports, you need *edit access* to the workspace or report, or *build access* to the semantic model
 

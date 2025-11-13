@@ -54,4 +54,4 @@ The following table lists other criteria that can help you create accurate [Data
 ## Related content
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)
-- [Create a report with Copilot for Power BI](copilot-create-report-service.md)
+- [Create a report with Copilot for Power BI](copilot-create-report.md)
