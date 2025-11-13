@@ -66,7 +66,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Use Copilot to create a report
-            url: copilot-create-report.md
+            url: copilot-create-reports.md
           - text: Use Copilot to evaluate data
             url: copilot-evaluate-data.md
           - text: Use Copilot prompts for report pages

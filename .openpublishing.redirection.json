@@ -6962,12 +6962,12 @@
     },
     {
       "source_path": "powerbi-docs/create-reports/copilot-create-desktop-report.md",
-      "redirect_url": "/power-bi/create-reports/copilot-create-report",
+      "redirect_url": "/power-bi/create-reports/copilot-create-reports",
       "redirect_document_id": true
     },
     {
       "source_path": "powerbi-docs/create-reports/copilot-create-report-service.md",
-      "redirect_url": "/power-bi/create-reports/copilot-create-report",
+      "redirect_url": "/power-bi/create-reports/copilot-create-reports",
       "redirect_document_id": false
     }
   ]

@@ -67,6 +67,6 @@ Try the different modes and see which you prefer.
 
 ## Related content
 
-- [Create reports in Power BI with Copilot](copilot-create-report.md)
+- [Create reports in Power BI with Copilot](copilot-create-reports.md)
 - [Mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
 - [Dark mode in Power BI Mobile](../consumer/mobile/mobile-apps-dark-mode.md)

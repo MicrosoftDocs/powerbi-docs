@@ -283,7 +283,7 @@
       - name: Copilot features for creators
         items:        
         - name: Create reports in Power BI with Copilot
-          href: copilot-create-report.md
+          href: copilot-create-reports.md
         - name: Write prompts for Copilot report pages
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page

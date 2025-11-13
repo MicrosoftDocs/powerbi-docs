@@ -66,14 +66,14 @@ See [Create report subscriptions with Copilot summaries](copilot-summaries-in-su
 
 Copilot can help you get started on a new report by suggesting topics based on your data. When you select this option directly in the chat, Copilot evaluates the data and provides a report outline with suggested pages that you can explore and choose to create for you.
 
-- A [report outline of suggested pages for your report](copilot-create-report.md): for example, what each page in the report is about, and how many pages it creates.
+- A [report outline of suggested pages for your report](copilot-create-reports.md): for example, what each page in the report is about, and how many pages it creates.
 - The visuals for the individual pages.
 
 :::image type="content" source="media/copilot-reports-overview/copilot-suggest-content.png" alt-text="Screenshot of Copilot suggesting content for a Power BI report based on data." lightbox="media/copilot-reports-overview/copilot-suggest-content.png":::
 
 ### Create a report page
 
-Copilot for Power BI can help you [create a report page](copilot-create-report.md)  by identifying the tables, fields, measures, and charts for your data. If you give Copilot a high-level prompt that's specific to your data, it can generate a report page that you can then customize and modify, using the existing editing tools. Copilot can help you get started on your report page quickly and save you a lot of time and effort in the process.
+Copilot for Power BI can help you [create a report page](copilot-create-reports.md)  by identifying the tables, fields, measures, and charts for your data. If you give Copilot a high-level prompt that's specific to your data, it can generate a report page that you can then customize and modify, using the existing editing tools. Copilot can help you get started on your report page quickly and save you a lot of time and effort in the process.
 
 Here are some examples of high-level prompts to get you started:
 
