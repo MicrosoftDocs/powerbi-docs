@@ -84,5 +84,4 @@ Read about [requirements to use the standalone Copilot experience](copilot-intro
 
 ## Considerations and limitations
 
-The standalone Copilot experience is only available to customers with home tenants in geos that support Fabric—so **it's only available** for customers with home tenants in [this list](/fabric/admin/region-availability#all-workloads). You don’t need to have Fabric enabled to use Copilot, they just need to have home tenants in one of the listed regions.
-
+- The standalone Copilot experience is only available to customers with home tenants in geographical regions that support Fabric—so **it's only available** for customers with home tenants in [this list](/fabric/admin/region-availability#all-workloads). You don't need to have Fabric enabled to use Copilot, they just need to have home tenants in one of the listed regions.
