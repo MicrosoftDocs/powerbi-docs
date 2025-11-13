@@ -161,7 +161,7 @@ These requirements pertain to using Copilot within Power BI reports, including t
 These requirements pertain to using [app-scoped Copilot in Power BI apps](copilot-apps-overview.md), the full-page Copilot experience accessible from app navigation.
 
 - Meet the [**general requirements for Copilot**](#general-requirements), including the setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
-- Like standalone Copilot, app-scoped Copilot uses an [FCC](/fabric/enterprise/fabric-copilot-capacity) or an [autoselected workspace](#use-an-autoselected-copilot-workspace) for usage tracking and billing. Or you can [manually select a workspace](#change-your-copilot-workspace).
+- Like standalone Copilot, app-scoped Copilot uses an [FCC](/fabric/enterprise/fabric-copilot-capacity) or an [autoselected workspace](#autoselection-of-a-copilot-workspace) for usage tracking and billing. Or you can [manually select a workspace](#change-your-copilot-workspace).
 - The setting for showing Copilot in the app navigation must be enabled. This setting is unique per app and is managed while [publishing or updating an app](../collaborate-share/service-create-distribute-apps.md) under *Advanced settings* > *Show Copilot in app navigation*.
 
 
