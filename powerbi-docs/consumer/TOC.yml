@@ -91,8 +91,6 @@
       href: end-user-q-and-a.md
     - name: "Tips and tricks for Q&A"
       href: end-user-q-and-a-tips.md
-    - name: "Use Copilot to generate summaries and insights (mobile)"
-      href: mobile/mobile-apps-copilot.md
   - name: "Set alerts, subscriptions, and notifications"
     items:
     - name: "Create a dashboard alert"
@@ -114,6 +112,8 @@
     items:
     - name: "Standalone Copilot in mobile apps"
       href: mobile/mobile-standalone-copilot.md
+    - name: "In-report Copilot in mobile apps"
+      href: mobile/mobile-apps-copilot.md
     - name: "Review basics and overview"
       items:
       - name: "What are the mobile apps?"
