@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/12/2025
+ms.date: 11/13/2025
 LocalizationGroup: Connect to data
 #customer intent: As a data analyst or report developer, I want to learn how to apply the Assume referential integrity setting in Power BI Desktop so that I can improve query efficiency when using DirectQuery.
 ---
