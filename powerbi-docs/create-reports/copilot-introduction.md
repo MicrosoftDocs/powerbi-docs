@@ -75,8 +75,8 @@ Business users can also include [summaries when setting up subscriptions to repo
 
 Report authors can use Copilot in many ways, such as the following tasks:
 
-- [Suggest content for a report](copilot-create-reports.md)
-- Create a [report page](copilot-prompts-report-pages.md)
+- [Create and edit a report](copilot-create-reports.md)
+  - Learn how to [Write Copilot prompts for creating report pages](copilot-prompts-report-pages.md)
 - [Summarize the underlying semantic model](copilot-reports-overview.md#summarize-the-underlying-semantic-model)
 - [Create a summary visual on the report itself](copilot-create-narrative.md)
 - Write [DAX queries](/dax/dax-copilot)
