@@ -168,7 +168,7 @@ Example using `byConnection`:
 
 ##### Multiple *.pbir files
 
-When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always exports definitions with a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always exports definitions with a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple `*.pbir` files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
 
 ```md
   ├── definition\
@@ -278,7 +278,7 @@ New reports created in the Service use the PBIR format by default. Existing repo
 
 During the Public Preview, administrators can choose to opt out of PBIR by disabling the tenant setting: **Automatically convert and store reports in the Power BI enhanced metadata format (PBIR)**.
 
-:::image type="content" source="./media/projects-report/pbir-tenantsetting.png" alt-text="Screenshot of PBIR tenant setting.":::
+:::image type="content" source="./media/projects-report/pbir-tenant-setting.png" alt-text="Screenshot of PBIR tenant setting.":::
 
 > [!IMPORTANT]
 > - When PBIR reaches General Availability (GA), it will become the only supported report format, and conversion will be mandatory. We recommend that customers begin preparing for this migration ahead of GA.
