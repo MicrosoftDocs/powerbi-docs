@@ -22,7 +22,7 @@ ms.date: 02/04/2025
 The in-report Copilot in the Power BI mobile apps makes it possible to get AI-generated summaries and insights about the report you're currently viewing. You can access Copilot directly from any open report by tapping the Copilot icon in the report header. This helps you make data-driven decisions on the go, anytime, anywhere, without spending time analyzing the data yourself.
 
 > [!TIP]
-> Looking for the standalone Copilot that works across all your Power BI content? See [Standalone Copilot in Power BI mobile apps](mobile-standalone-copilot.md) to learn about the full-screen Copilot experience accessible from the app's home page.
+> Looking for the standalone Copilot that works across all your Power BI content? See [Standalone Copilot in Power BI mobile apps (preview)](mobile-standalone-copilot.md) to learn about the full-screen Copilot experience accessible from the app's home page.
 
 This article shows you how to use the in-report Copilot feature. The images illustrate the feature as it appears on phones. The experience on iPads and Android tablets is similar.
 

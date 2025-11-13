@@ -25,7 +25,7 @@ ai-usage: ai-assisted
 The standalone Copilot in Power BI mobile apps provides a full-screen chat experience that you can use to ask questions about your data directly from the app's home page. Unlike the in-report Copilot button, this standalone experience enables you to query any report, semantic model, or data agent in your organization without first opening a specific item. Copilot analyzes your question, suggests relevant data sources, and generates instant insights with both textual summaries and interactive visuals. This mobile experience is based on the [standalone Copilot available in the Power BI service](../../create-reports/copilot-chat-with-data-standalone.md).
 
 > [!TIP]
-> Looking for Copilot within a specific report? See [Copilot in the Power BI mobile apps](mobile-apps-copilot.md) to learn about the in-report Copilot experience that provides summaries and insights for the report you're currently viewing.
+> Looking for Copilot within a specific report? See [In-report Copilot in Power BI mobile apps (preview)](mobile-apps-copilot.md) to learn about the in-report Copilot experience that provides summaries and insights for the report you're currently viewing.
 
 ## Access the standalone Copilot
 
