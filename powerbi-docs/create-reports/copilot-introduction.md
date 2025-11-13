@@ -39,7 +39,7 @@ Copilot in Power BI offers a range of capabilities designed to enhance productiv
 
 ### Copilot for business users: Chat with your data
 
-For business users, chatting with your data can mean many things. It might involve finding content. It could include asking for ad-hoc analyses or insights. You can also quickly create and analyze visuals. You might even get summaries of entire reports or focus on specific topics. All similar to what you might ask your analyst to do when you have follow-up questions about a report they made. When a question is related to data in the semantic model, Copilot uses the semantic model to answer the question, otherwise it may answer from the large language model's (LLM) [general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have three chat-with-your-data experiences for business users: the standalone Copilot experience, the Copilot pane for reports, and Copilot in apps.
+For business users, chatting with your data can mean many things. It might involve finding content. It could include asking for ad-hoc analyses or insights. You can also quickly create and analyze visuals. You might even get summaries of entire reports or focus on specific topics. All similar to what you might ask your analyst to do when you have follow-up questions about a report they made. When a question is related to data in the semantic model, Copilot uses the semantic model to answer the question, otherwise it may answer from the large language model's (LLM) [general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have three chat-with-your-data experiences for business users: the standalone Copilot experience, the Copilot pane for reports, and Copilot in apps (scoped to curated app content and supports verified answers by app authors).
 
 #### The standalone Copilot experience (preview): Find data and ask questions about any item
 
@@ -53,12 +53,20 @@ The standalone Copilot can help with the following tasks:
 - [Summarize a report or topic](copilot-pane-summarize-content.md)
 - [Answer questions about your data](copilot-ask-data-question.md)
 - [Answer questions using a Fabric data agent](/fabric/data-science/concept-data-agent)
+
+#### Copilot in apps (preview): Ask questions and get summaries scoped to an app
+
+The app-scoped Copilot experience is accessible from an app's left navigation, allowing users to search and ask questions based on the curated content included in that app—such as reports, dashboards, and related artifacts. Unlike the report-scoped Copilot pane (which is limited to the open report), app-scoped Copilot operates across the app's curated scope, providing summaries of app content and answers to questions based on what users have access to within the app.
+
+App-scoped Copilot supports verified answers prepared by app authors. When verified answers exist for common questions, Copilot can surface those author-provided responses to increase reliability and consistency. [Learn more about Copilot in apps](copilot-apps-overview.md).
  
 ### Considerations and limitations
 
 Newly purchased capacity or capacity scale-up operations may take up to 24 hours for Copilot to recognize and become available for use.
 
 The standalone Copilot and Copilot in apps experiences aren't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West. While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use isn't officially supported at this time.
+
+Responses in app-scoped Copilot are limited to the app's included content and the permissions users have within the app. When verified answers are available, they may be prioritized and returned for matching questions.
 
 #### The Copilot pane: Ask questions about an open report
 
@@ -154,7 +162,7 @@ These requirements pertain to using Copilot within Power BI reports, including t
 These requirements pertain to using [app-scoped Copilot in Power BI apps](copilot-apps-overview.md), the full-page Copilot experience accessible from app navigation.
 
 - Meet the [**general requirements for Copilot**](#general-requirements), including the setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
-- Like standalone Copilot, app-scoped Copilot uses an [FCC](/fabric/enterprise/fabric-copilot-capacity) or an [autoseleccted workspace](#use-an-autoselected-copilot-workspace). Or you can [manually select a workspace](#change-your-copilot-workspace).
+- Like standalone Copilot, app-scoped Copilot uses an [FCC](/fabric/enterprise/fabric-copilot-capacity) or an [autoselected workspace](#use-an-autoselected-copilot-workspace) for usage tracking and billing. Or you can [manually select a workspace](#change-your-copilot-workspace).
 - The setting for showing Copilot in the app navigation must be enabled. This setting is unique per app and is managed while [publishing or updating an app](../collaborate-share/service-create-distribute-apps.md) under *Advanced settings* > *Show Copilot in app navigation*.
 
 
