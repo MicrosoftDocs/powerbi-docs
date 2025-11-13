@@ -32,8 +32,17 @@ If this is your first time using Copilot in Power BI, see [Overview of Copilot f
     > If you don't see **Copilot**, it's possible your admins haven't enabled it in Microsoft Fabric, or you might not have selected a semantic model. Select a semantic model to see it.
 
 1. In the Copilot pane, you can either select **Suggest content for this report** to have Copilot evaluate your data and makes suggestions, or enter a prompt directly to describe the report or visuals you want Copilot to create.
+
+   :::image type="content" source="media/copilot-create-report/copilot-create-start.png" alt-text="Screenshot of the Copilot pane in Power BI with prompt input field and suggest content button.":::
+
 1. Copilot generates a report page based on your request.
+
+   :::image type="content" source="media/copilot-create-report/copilot-create-new-page.png" alt-text="Screenshot of Copilot pane displaying a generated Power BI report page with visualizations.":::
+
 1. You can further edit the report by prompting Copilot to add, delete, or change visuals.
+
+   :::image type="content" source="media/copilot-create-report/copilot-create-page-edits.png" alt-text="Screenshot of Copilot pane in Power BI showing options to add, change, or delete report visuals.":::
+
 1. If you need help with writing prompts, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
 ## Create and edit reports
