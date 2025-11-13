@@ -28,11 +28,17 @@ In **Power BI Desktop** select the **Optimize** ribbon, and then select **Perfor
 
 ## Display the Performance Analyzer pane in the web
 
-In **Power BI service** open a report and select **Edit**. When editing a report, select the **View** menu, and then select **Performance Analyzer** to display the Performance Analyzer pane.
+In the **Power BI service**, open a report and select **Edit**. When editing a report, select the **View** menu, and then select **Performance Analyzer** to display the Performance Analyzer pane.
 
-:::image type="content" source="media/performance-analyzer/performance-analyzer-in-web.png" alt-text="Screenshot of the View menu, highlighting Performance Analyzer when editing a report in the Power BI service." lightbox="media/performance-analyzer/performance-analyzer-in-web.png":::
+:::image type="content" source="media/performance-analyzer/performance-analyzer-in-web.png" alt-text="Screenshot of the View menu, highlighting the Performance Analyzer option when editing a report in the Power BI service." lightbox="media/performance-analyzer/performance-analyzer-in-web.png":::
 
-Once selected, performance analyzer is displayed in its own pane to the right of the report canvas in either Power BI Desktop or the Power BI service.
+Once selected, the Performance Analyzer pane appears to the right of the report canvas, similar to how it works in Power BI Desktop.
+
+> [!NOTE]  
+> The Performance Analyzer in the Power BI service is being rolled out gradually and might not yet be available in all regions.
+
+To enable the option manually, add the query parameter `webPerformancePane=1` to the URL.  
+For example: [https://app.powerbi.com?webPerformancePane=1](https://app.powerbi.com/?webPerformancePane=1)
 
 ## Use Performance Analyzer
 
