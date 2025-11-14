@@ -168,7 +168,7 @@ Example using `byConnection`:
 
 ##### Multiple *.pbir files
 
-When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always exports definitions with a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always exports definitions with a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple `*.pbir` files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
 
 ```md
   ├── definition\
@@ -271,6 +271,30 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
 The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* folder containing the PBIR representation of the report.
 
 If you select to **Keep current** format, Desktop won't prompt again to upgrade.
+
+### PBIR in Service
+
+New reports created in the Service use the PBIR format by default. Existing reports that are edited will also be automatically converted to PBIR format.
+
+During the Public Preview, administrators can choose to opt out of PBIR by disabling the tenant setting: **Automatically convert and store reports in the Power BI enhanced metadata format (PBIR)**.
+
+:::image type="content" source="./media/projects-report/pbir-tenant-setting.png" alt-text="Screenshot of PBIR tenant setting.":::
+
+> [!IMPORTANT]
+> - When PBIR reaches General Availability (GA), it will become the only supported report format, and conversion will be mandatory. We recommend that customers begin preparing for this migration ahead of GA.
+> - The PBIR in the Power BI service may not yet be available in your tenant. The tenant setting primarily exists to let you opt out before the feature is fully enabled. For the latest updates, visit the [Power BI Blog](https://powerbi.microsoft.com/en-us/blog/).
+
+
+#### Restore to PBIR-Legacy
+
+When a report is converted to PBIR in the Service, a backup copy in the **PBIR-Legacy** format is automatically created and retained for 28 days. You can restore the report to its PBIR-Legacy version by opening the **Report settings** from the workspace and selecting **Restore as PBIR-Legacy**.
+
+:::image type="content" source="./media/projects-report/pbir-service-restore.png" alt-text="Screenshot of PBIR restore setting.":::
+
+A restored report will not be automatically converted back to PBIR. To re-enable automatic conversion, open the report settings and select **Enable PBIR**.
+
+> [!IMPORTANT]
+> The **PBIR-Legacy** service backup is only created for reports upgraded directly in the Power BI service. If you upgrade your report by publishing from Power BI Desktop or by uploading a PBIX file and need to restore the **PBIR-Legacy** version, use the backup created by Power BI Desktop.
 
 ### PBIR folder and files
 
@@ -439,6 +463,7 @@ PBIR is currently in **preview**. Keep the following in mind:
 - Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back. Although a backup is created at the moment of conversion.
 - Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
 - [Visual automatic filters](../../create-reports/power-bi-report-filter-types.md#automatic-filters) are persisted to the PBIR `visual.json` file only after the filter pane has been expanded at least once while editing the report.
+- Not supported in [Template App workspaces](/power-bi/connect-data/service-template-apps-overview)
 
 PBIR size limitations enforced by the service:
 
