@@ -80,10 +80,10 @@ To set a verified answer, follow these steps:
        - All basic, categorical filters.
        - Advanced categorical filters: `startsWith`, `contains`, `>`, `<`, `>=`, and `<=`.
        - Date range filters like *between Jan 2024 and July 2025* or *before 3/4/2025*. Relative date filters, such as *YTD* (year to date), *last three months*, or *next five years* aren't supported.
+       - Limit of 10 filter permutations per verified answer.
      - **Filter limitations**:
        - Existing hardcoded values like *Region = North* can't be overridden.
-       - User prompts can only invoke three filters on a verified answer at a time.
-
+       
    If you want a filter to appear in the **Available to users** section, it must already exist in the report. It can exist at the visual, page, or report level. In addition, the filter can't have a specific value applied.
 
    For example:
@@ -123,12 +123,12 @@ To manage verified answers, including deleting and editing, follow these steps:
 1. Edit your verified answers. Editing includes adding or editing existing trigger phrases and filters. Delete unwanted verified answers by using the trash can icon.
 1. Select **Apply** to save your changes to the model.
 
-Copilot now uses the verified answers set on the model when users invoke a trigger phrase.  
+Copilot now uses the verified answers set on the model when users enter a Copilot prompt similar to a trigger phrase.
 
 Either publish your report from Desktop, or save it if you're in the Power BI service.
 
 > [!NOTE]
-> Each time you add, edit, or delete a verified answer, refresh the Copilot pane by closing and reopening it.
+> Each time you add, edit, or delete a verified answer, refresh the Copilot pane by closing and reopening it, or clearing the chat history.
 
 ## Consume verified answers
 
@@ -145,6 +145,7 @@ When users interact with a verified answer, Copilot provides key visual indicato
 
 - **Verified checkmark**: Indicates the response is human-reviewed and approved.
 - **Matched trigger phrase**: Displays the specific phrase that Copilot matched, whether it's exact or semantically similar. The phrase helps users understand how their prompt was interpreted and gives them a starting point to adjust or refine their question, if needed.
+- **Textual answer**: Displays an AI summary of the data displayed in the verified answer for easy consumption.
 - **How Copilot arrived at this**: Offers insight into the underlying data and logic, including applied filters. This transparency helps users validate the answer and understand its context.
 
 ## Considerations and limitations
@@ -183,25 +184,19 @@ These guidelines can help ensure that your verified answers are reliably trigger
 ### Limitations
 
 - Git integration isn't supported.
-- Any filters on the visual (visual, page, or report level) that are applied upon verified answer setup are applied to the data in the verified answer.
-- Drill-through filters aren't supported.
+- Any slicers or filters (visual, page, or report level) that are applied upon verified answer setup are inherited into to the verified answer and cannot be overwritten.
 - Row-level security (RLS) and object-level security (OLS) aren't fully supported as security features for verified answers. In most cases, if a verified answer contains data protected by RLS or OLS, it isn't matched on or returned to users. This practice prevents broken visuals from appearing. In these situations, Copilot responds without the verified answer. However, there are scenarios where data may still be exposed (for example, through the file format in Git). During preview, we don't recommend that you rely on this functionality as a security feature, even though it functions correctly in the majority of cases.
-- Cross-highlighting and cross-filtering aren't supported.
-- Slicers aren't included in verified answer states. Slicers that are applied on the report don't persist in the verified answer.
-- Verified answers don't work if fields in the verified answer are hidden in the model, because there's no entry point on the visual.
-- You must select the visual to enable the setup experience in the context menu (must be in a selected state).
+- Only 10 filter permutations can be set up per verified answer.
+- Verified answers don't work if fields in the verified answer are hidden in the model.
 - Verified answers don't work with visuals that contain report measures.
 - Verified answers are stored as part of the semantic model, so they're presented as Copilot responses for any downstream items (reports) that use that model.
 - Verified answer visuals aren't synced or attached to the visuals on the report page. When a verified answer is set up, the visual on the report can be changed or deleted without affecting the verified answer. To edit an existing verified answer, you need to go through the AI setup dialog, not the visual entry point, because that creates a new verified answer.
-- Git edits (third-party tools) can't yet be synced in desktop experience, though updates appear in service.
 - Report themes aren't yet supported in verified answers.
-- Field parameters don't work with verified answers.
 - In authoring scenarios, trigger phrases might invoke authoring Copilot skills such as Data Analysis Expressions (DAX) answers or page creation, which might affect quality testing. Make sure to use the skill selector when you test in Desktop and disable **create page** skills.
 - We highly recommend five to seven trigger phrases per verified answer.
 
 Unsupported visual types include:
 
-- New card visuals.
 - Textbox visuals.
 - Data Q&A.
 - AI visuals.
@@ -224,6 +219,7 @@ Verified answers support:
 - 250 verified answers per model.
 - 15 trigger prompts per verified answer.
 - A 500-character limit for trigger prompts.
+- 10 filter permutations per verified answer.
 - A visual size that's the same as report visuals limits.
 
 For a comprehensive list of considerations and limitations, see [Prepare your data for AI](copilot-prepare-data-ai.md#considerations-and-limitations).
