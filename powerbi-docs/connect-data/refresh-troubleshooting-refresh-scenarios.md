@@ -132,7 +132,7 @@ This error indicates a system error in Power BI Premium based on semantic models
 
 Load balancing across semantic models is managed automatically by the system. In some cases, the capacity might temporarily run low on memory during high-demand periods. When this occurs, you might encounter memory-related errors. The system typically recovers quickly as resources become available. If you receive a memory error, wait a moment and retry your operation.
 
-If memory errors occur frequently or persist, be sure to try [all of the solutions listed previously](#refresh-operation-throttled-by-power-bi-premium). If these solutions don't work, file a [support ticket](https://powerbi.microsoft.com/support).
+If memory errors occur frequently or persist, be sure to try [all of the suggested solutions](#refresh-operation-throttled-by-power-bi-premium). If these solutions don't work, file a [support ticket](https://powerbi.microsoft.com/support).
 
 ## Dataflows or datamart failures in Premium workspaces
 
