@@ -993,7 +993,7 @@
     {
       "source_path": "powerbi-docs/power-bi-visualization-card.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/power-bi-visualization-combo-chart.md",
@@ -6964,8 +6964,12 @@
       "source_path": "powerbi-docs/visuals/power-bi-visualization-card-visual-considerations.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-card-visual-new-format-settings.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
+      "redirect_document_id": false
     }
   ]
 }                           
-,
     
