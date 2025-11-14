@@ -62,7 +62,7 @@ For this article, use the first option:
 1. From the **Visualizations** pane, make sure the **Build visual** tab is selected, then select the **card visual** icon in the visual gallery.
 1. Use the **Data** pane to add data to the visual. You can add data by selecting each field in the **Data** pane, dragging the fields to the field wells on the **Visualizations** pane, or dragging the fields directly to the visual placeholder on the report canvas. Expand the **Sales** group, then drag **StoreCount** and **TotalSalesLY** to the **Value** field well. You see that each data field you added is displayed as its own card.
 
-   :::image type="content" source="media/power-bi-visualization-card-visual/build-card.png" alt-text="Screenshot of the Data pane with StoreCount and TotalSalesLY measures added to the Value field well in the Visualizations pane." lightbox="media/power-bi-visualization-card-visual/build-card.png"::::::
+   :::image type="content" source="media/power-bi-visualization-card-visual/build-card.png" alt-text="Screenshot of the Data pane with StoreCount and TotalSalesLY measures added to the Value field well in the Visualizations pane." lightbox="media/power-bi-visualization-card-visual/build-card.png":::
 
 1. To customize your visual, select the **Format visual** icon in the **Visualizations** pane. You can access all available settings under the **Visual** and **General** tabs. This access allows you to tailor the chart's appearance and functionality to your specific requirements.
 
