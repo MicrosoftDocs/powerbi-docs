@@ -38,7 +38,7 @@ Once selected, the Performance Analyzer pane appears to the right of the report 
 > The Performance Analyzer in the Power BI service is being rolled out gradually and might not yet be available in all regions.
 
 To enable the option manually, add the query parameter `webPerformancePane=1` to the URL.  
-For example: [https://app.powerbi.com?webPerformancePane=1](https://app.powerbi.com/?webPerformancePane=1)
+For example: [https://app.powerbi.com/?webPerformancePane=1](https://app.powerbi.com/?webPerformancePane=1)
 
 ## Use Performance Analyzer
 
