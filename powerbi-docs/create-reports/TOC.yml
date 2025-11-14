@@ -383,7 +383,7 @@
     - name: Customize x-axis and y-axis properties
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
     - name: Card visual
-      href: ../visuals/power-bi-visualization-new-card.md
+      href: ../visuals/power-bi-visualization-card.md
     - name: Button slicer
       href: ../visuals/power-bi-visualization-button-slicer.md
     - name: List slicer (preview)
