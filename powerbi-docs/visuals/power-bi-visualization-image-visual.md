@@ -1,13 +1,13 @@
 ---
 title: Create an Image Visual in Power BI
 description: Learn how to create, customize, and use image visuals in Power BI Desktop and Power BI service. Add logos, photos, and graphics to enhance your reports with step-by-step guidance.
-author: jacinda-eng
-ms.author: jacindaeng
-ms.reviewer: JulCsc
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: jacindaeng
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/05/2025
+ms.date: 11/18/2025
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the image visual feature in Power BI Desktop, including how to create and customize the visual, so I can enhance my reports with interactive image visuals.
 ---
@@ -17,9 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The **Image visual** in Power BI is a dedicated visual that displays static images directly in reports with greater flexibility and control than previous methods. Whether you're adding a company logo, product photo, or illustrative graphic, this visual enhances data storytelling by integrating rich media elements seamlessly into the report canvas.
-
-Beyond simple image placement, the image visual supports dynamic formatting and interactive behavior, enabling report creators to design visuals that respond to user engagement.
+The **Image visual** in Power BI is a dedicated visual that displays images directly in reports with greater flexibility and control than previous methods. Whether you're adding a company logo, product photo, or illustrative graphic, this visual enhances data storytelling by integrating rich media elements seamlessly into the report canvas.
 
 Beyond simple image placement, the image visual supports dynamic formatting and interactive behavior, enabling report creators to design visuals that respond to user engagement. This makes it ideal for creating branded dashboards, intuitive navigation elements, and visually guided experiences.
 
@@ -59,12 +57,12 @@ For this example, create an image visual starting from the Visualizations pane.
 
    :::image type="content" source="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-1.png" alt-text="Screenshot showing the Visualizations pane with the Build visual tab and image visual icon highlighted, and a visual placeholder on the canvas." lightbox="media/power-bi-visualization-image-visual/build-image-visual-desktop-step-1.png":::
 
-1. To add an image to your image visual, use the **Format image** pane. From the **Image** tab, expand the **Style** card. Then, expand the **Image** controls to access the **Image source** dropdown. Choose **Upload image** to add a file from your device, **Enter URL** to link to an online image, or **Select from data** to bind the image visual to an image in your data model. For this guide, choose **Upload image** and pick an image from your local device.
+1. To add an image to your image visual, use the **Format** pane. From the **Image** tab, expand the **Style** card. Then, expand the **Image** controls to access the **Image source** dropdown. Choose **Upload image** to add a file from your device, **Enter URL** to link to an online image, or **Select from data** to bind the image visual to an image in your data model. For this guide, choose **Upload image** and pick an image from your local device.
 
    > [!TIP]
    > Large image files might affect report performance.
 
-1. After uploading an image from your device, while still on the **Format image** pane, you have access to a full suite of controls to customize the image from the **Image** tab. Take some time to explore all the customization options available. You can specify a **Corner radius** using the **Shape** controls, stylize a border with the **Border** controls, or include a **Background color** using the **Background** controls. This array of options allows you to tailor the image's appearance and functionality to your specific requirements.
+1. After uploading an image from your device, while still on the **Format** pane, you have access to a full suite of controls to customize the image from the **Image** tab. Take some time to explore all the customization options available. You can specify a **Corner radius** using the **Shape** controls, stylize a border with the **Border** controls, or include a **Background color** using the **Background** controls. This array of options allows you to tailor the image's appearance and functionality to your specific requirements.
 
 You successfully created an image visual with Power BI. Now, let's discover some of the other image visual features.
 
@@ -84,24 +82,6 @@ The **Apply settings to** dropdown under the Style card lets you define how the 
 - **Pressed**: Styling when the image is clicked or tapped.
 
 These states are especially useful when the image is interactive. They allow you to guide user behavior with visual cues like borders, shadows, or color changes.
-
-### Interactive behavior
-
-When you turn on the **Action toggle** in the **Action card**, the image visual becomes an interactive element. The **Type** dropdown offers several options for defining what happens when interacting with the image:
-
-- **Back**: Returns to the previous report page.
-- **Bookmark**: Navigates to a saved view or layout.
-- **Page navigation**: Switches to another report page.
-- **Q&A**: Opens a Q&A visual for natural language queries.
-- **Web URL**: Opens a specified website in a browser.
-- **Apply all slicers**: Applies slicer selections across the report.
-- **Clear all slicers**: Resets slicer selections across the report.
-
-These options let the image function like a button, enhancing navigation, interactivity, and user engagement.
-
-### Contextual tooltips
-
-The **Tooltip** control lets you add helpful text that appears when hovering over the image. You can enter static descriptions or use conditional formatting to display dynamic, data-driven content. Tooltips are a great way to provide context, instructions, or other insights without taking up space on the report canvas.
 
 ## Considerations and limitations
 
