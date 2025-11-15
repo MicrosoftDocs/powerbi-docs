@@ -16,9 +16,9 @@ LocalizationGroup: Transform and shape data
 Calculation groups can significantly reduce the number of redundant measures you have to create, by allowing you define DAX expressions as calculation items that apply to the existing measures in your model. More information about calculation groups is available in the [Calculation groups](/analysis-services/tabular-models/calculation-groups) article.
 
 
-## Add a new calculation group
+## Add a new calculation group in model view
 
-In **Power BI Desktop** when you have a local model open, navigate to **Model view** and select the **Calculation group** button in the ribbon. If you're not already in **Model explorer**, the **Data** pane opens to the **Model** view.
+In **Power BI** when edit a semantic model, navigate to **Model view** and select the **Calculation group** button in the ribbon. If you're not already in **Model explorer**, the **Data** pane opens to the **Model** view.
 
 :::image type="content" source="media/calculation-groups/calculation-groups-01.png" alt-text="Screenshot of calculation groups button in the ribbon.":::
 
@@ -40,6 +40,37 @@ Once you select **Yes**, or if you already have enabled the discourage implicit 
 SELECTEDMEASURE() is a DAX function that acts as a placeholder for the measure to which the calculation item will apply. You can learn about the [SELECTEDMEASURE DAX function](/dax/selectedmeasure-function-dax) from its article.  
 
 :::image type="content" source="media/calculation-groups/calculation-groups-04.png" alt-text="Screenshot of DAX formula bar and calculation group." lightbox="media/calculation-groups/calculation-groups-04.png":::
+
+### Add a calculation group by using Power BI TMDL view
+
+You can create a calculation group in the Tabular Model Definition Language or **TMDL view** of Power BI Desktop. Edit the semantic model and use this TMDL script.
+
+```TMDL
+createOrReplace
+
+	table 'Calculation group'
+
+		calculationGroup
+			precedence: 1
+
+			calculationItem 'Calculation item' = SELECTEDMEASURE()
+
+		column 'Calculation group column'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: Name
+			sortByColumn: Ordinal
+
+			annotation SummarizationSetBy = Automatic
+
+		column Ordinal
+			dataType: int64
+			formatString: 0
+			summarizeBy: sum
+			sourceColumn: Ordinal
+
+			annotation SummarizationSetBy = Automatic
+```
 
 ## Time intelligence example
 
@@ -146,6 +177,33 @@ You can learn more about calculation groups precedence in the [Calculation group
 
 ## Selection expressions for calculation groups
 You can set selection expressions for calculation groups to get fine-grained control over what the calculation group returns if users make multiple, invalid or no selections on the calculation group. See [selection expressions](/analysis-services/tabular-models/calculation-groups/#selection-expressions).
+
+## Considerations
+
+### Model measures change to variant data type
+As soon as a calculation group is added to a semantic model, Power BI reports will use the **variant** data type for all measures. If afterwards, all calculation groups are removed from the model the measures will be returned to their original data types again.
+
+This may cause [dynamic format strings for measures](/power-bi/create-reports/desktop-dynamic-format-strings) using a measure for re-use to show an error. Use the [FORMAT](/dax/format-function-dax) DAX function to force the variant measure to be recognized as a string data type again.
+
+```DAX
+FORMAT([Dynamic format string], "")
+```
+Alternatively, you can re-use your expression for dynamic format strings with a [DAX user-defined function](/power-bi/transform-model/desktop-user-defined-functions-overview) instead.
+
+### Visuals error when a calculation item applies a math operation on a non-numeric measure
+
+Non-numeric measures are commonly used for dynamic titles in visuals and in dynamic format strings for measures. The error **Cannot convert value <expression> of type Text to type Numeric.** shows on visuals impacted. The calculation item expression can avoid this by adding a check to see if the measure is numeric before applying the math operation. Use the [ISNUMERIC](/dax/isnumeric-function-dax) in the calculation item.
+
+```DAX
+Calculation item safe = 
+    IF ( 
+        // Check the measure is numeric
+        ISNUMERIC( SELECTEDMEASURE() ),
+            SELECTEDMEASURE() * 2,
+            // Don't apply the calculation on a non-numeric measure
+            SELECTEDMEASURE()
+        )
+```
 
 ## Related content
 
