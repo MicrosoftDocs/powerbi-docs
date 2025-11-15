@@ -18,7 +18,7 @@ Calculation groups can significantly reduce the number of redundant measures you
 
 ## Add a new calculation group in model view
 
-In **Power BI** when edit a semantic model, navigate to **Model view** and select the **Calculation group** button in the ribbon. If you're not already in **Model explorer**, the **Data** pane opens to the **Model** view.
+In **Power BI**, when editing a semantic model, navigate to **Model view** and select the **Calculation group** button in the ribbon. If you're not already in **Model explorer**, the **Data** pane opens to the **Model** view.
 
 :::image type="content" source="media/calculation-groups/calculation-groups-01.png" alt-text="Screenshot of calculation groups button in the ribbon.":::
 
@@ -35,7 +35,7 @@ A measure or explicit measure occurs when you create a **New measure** and defin
 > [!NOTE]
 > Calculation items can be created in a way that they ignore an explicit measure by the measure name for scenarios when you have a measure you don't want the calculation item to change.
 
-Once you select **Yes**, or if you already have enabled the discourage implicit measures property, a calculation group is added, and you can start defining the DAX expression of the first calculation item in the DAX formula bar.
+Once you select **Yes**, or if you already have enabled the **discourage implicit measures** property, a calculation group is added and you can start defining the DAX expression of the first calculation item in the DAX formula bar.
 
 SELECTEDMEASURE() is a DAX function that acts as a placeholder for the measure to which the calculation item will apply. You can learn about the [SELECTEDMEASURE DAX function](/dax/selectedmeasure-function-dax) from its article.  
 
@@ -138,7 +138,7 @@ To use your new calculation group in a Report, go to the **Report** view, create
 1. **Orders** measure to the **Values**
 
 > [!NOTE]
-> If the measure *Orders* is not created in the mode, you can use a different measure or go to the ribbon and choose New Measure with this DAX expression. 
+> If the measure *Orders* is not created in the model, you can use a different measure or go to the ribbon and choose **New Measure** to create it with this DAX expression. 
 
 `Orders = DISTINCTCOUNT('Sales Order'[Sales Order])`
 
@@ -192,7 +192,7 @@ Alternatively, you can re-use your expression for dynamic format strings with a 
 
 ### Visuals error when a calculation item applies a math operation on a non-numeric measure
 
-Non-numeric measures are commonly used for dynamic titles in visuals and in dynamic format strings for measures. The error **Cannot convert value <expression> of type Text to type Numeric.** shows on visuals impacted. The calculation item expression can avoid this by adding a check to see if the measure is numeric before applying the math operation. Use the [ISNUMERIC](/dax/isnumeric-function-dax) in the calculation item.
+Non-numeric measures are commonly used for dynamic titles in visuals and in dynamic format strings for measures. The error **Cannot convert value <expression> of type Text to type Numeric** shows on visuals impacted. The calculation item expression can avoid this by adding a check to see if the measure is numeric before applying the math operation. Use the [ISNUMERIC](/dax/isnumeric-function-dax) in the calculation item.
 
 ```DAX
 Calculation item safe = 
