@@ -22,6 +22,8 @@ For a quick summary of the September features, read on. For a detailed look at t
 
 > **Download** the [November 2025 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
+To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
+
 ## Events and announcements
 
 - **Fabric Data Days**: Two months of learning, contests, live sessions, and community connection start November 4. See the [full schedule](https://aka.ms/fabricdatadays).

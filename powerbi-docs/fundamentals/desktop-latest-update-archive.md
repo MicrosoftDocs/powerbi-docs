@@ -20,7 +20,7 @@ This article describes previous updates to **Power BI Desktop** and the **Power 
 
 The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
 
-## October 2025 update
+## October 2025 update (version 2.148.1226.0)
 
 The October update brings exciting opportunities for learning and community engagement, including the upcoming Fabric Data Days and the return of FabCon in Atlanta next spring. Notably, Power BI is making strides in mapping capabilities by transitioning from Bing Maps to Azure Maps, ensuring users have access to the latest features and support. Read on to get a concise overview of the October 2025 Power BI update—key reporting, Copilot, performance, connectivity, and visualization changes. For more information, visit the [Power BI October 2025 Feature Summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2025-feature-summary/).
 
@@ -96,7 +96,7 @@ For a quick summary of the September features, read on. For a detailed look at t
 |---|---|
 | **Bing Maps visual icon will be removed from the default visuals list of the visualization pane** | Beginning with the October release, the Bing Maps visual icon will be removed from the default visuals list in the Power BI visualization pane. |
 
-## Copilot and AI
+### Copilot and AI
 
 | Feature | Details and related documentation |
 |---|---|
