@@ -22,13 +22,15 @@ Understanding the considerations and limitations allow you to make informed deci
 ## Considerations and limitations
 
 This article provides an updated list of known considerations and limitations for matrix visuals, designed to help you navigate the nuances of matrix visuals in both Power BI Desktop and the Power BI service.
-You can also use the [auto-size width options that are available in the Column Headers settings](power-bi-visualization-matrix-visual-format-settings.md#column-headers-settings).
 
 ### Column headers
 
 #### Column size
 
 Users expressed the need for consistent column header sizes in Power BI matrix visuals, as there's currently no feature to set a fixed pixel width for all columns. Power BI matrix visuals don't offer an option to apply a uniform width across all column headers using a fixed number of pixels. The common workaround is to manually adjust each column header and disable the autosize width feature to maintain the desired size. While this workaround method isn't ideal, it allows users to achieve a consistent look across all column headers.
+
+> [!NOTE]
+> You can also use the [auto-size width options that are available in the Column Headers settings](power-bi-visualization-matrix-visual-format-settings.md#column-headers-settings).
 
 #### Dynamic column header text
 
