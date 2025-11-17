@@ -388,6 +388,8 @@
       href: ../visuals/power-bi-visualization-list-slicer.md
     - name: Text slicer (preview)
       href: ../visuals/power-bi-visualization-text-slicer.md
+    - name: Image visual
+      href: ../visuals/power-bi-visualization-image-visual.md
     - name: Column charts
       href: ../visuals/power-bi-visualization-column-charts.md
     - name: Basic area charts
