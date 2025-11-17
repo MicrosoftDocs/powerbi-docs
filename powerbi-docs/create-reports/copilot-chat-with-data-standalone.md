@@ -44,7 +44,7 @@ When you ask questions about your data, Copilot will work with you to understand
 
 :::image type="content" source="media/copilot-introduction/copilot-communication-tips.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing output of the request for a visual of monthly trends." lightbox="media/copilot-introduction/copilot-communication-tips.png":::
  
-Although the additional reasoning may require a short wait, getting an your answer from a reliable source is worth the pause. Alternately, if you know exactly which report or semantic model you want to reference, you can attach it to your chat using the **+** option. Then it appears in the Copilot conversation and is used to answer your questions.
+Although the additional reasoning may require a short wait, getting your answer from a reliable source is worth the pause. Alternately, if you know exactly which report or semantic model you want to reference, you can attach it to your chat using the **+** option. Then it appears in the Copilot conversation and is used to answer your questions.
 
 :::image type="content" source="media/copilot-introduction/copilot-ask-questions-about-data.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing the prompt and suggested results for asking questions about your data." lightbox="media/copilot-introduction/copilot-ask-questions-about-data.png":::
 
