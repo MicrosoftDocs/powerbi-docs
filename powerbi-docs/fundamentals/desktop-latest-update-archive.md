@@ -46,9 +46,9 @@ For a quick summary of the September features, read on. For a detailed look at t
 |**Standalone Copilot to default-on**|The standalone Copilot experience for Power BI, a full-screen, chat-based AI interface, will be enabled by default for all tenants with Copilot turned on starting September 5, 2025. Users can opt out via the admin portal. For more information, see [Standalone Copilot experience in Power BI](../create-reports/copilot-chat-with-data-standalone.md).|
 |**Autoselection of Copilot workspaces**|Copilot will automatically assign a workspace to users without Fabric Copilot Capacity, simplifying access while maintaining user control. For more information, see [Standalone Copilot experience in Power BI](../create-reports/copilot-chat-with-data-standalone.md).|
 |**Save explorations to pro workspaces**|Explorations can now be saved to Pro workspaces, making it easier to share insights. For more information, see [Use Explore in the Power BI service](../consumer/explore-data-service.md)|
-|**Find Power BI reports in Microsoft 365**|Search for Power BI reports in Microsoft 365 by title, description, or chart details, improving discovery in M365 Copilot and Office search. For more information, see [Share data with your Microsoft 365 services](/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services#how-to-turn-sharing-with-microsoft-365-services-on-and-off).|
+|**Find Power BI reports in Microsoft 365**|Search for Power BI reports in Microsoft 365 by title, description, or chart details, improving discovery in Microsoft 365 Copilot and Office search. For more information, see [Share data with your Microsoft 365 services](/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services#how-to-turn-sharing-with-microsoft-365-services-on-and-off).|
 |**Copilot search improvements**|Copilot search now boosts content marked as "Prepped for AI," provides descriptive captions for reports, and supports workspace and item type hints. For more information, see [Find content with Power BI Copilot search](../create-reports/copilot-search-new-content.md).|
-|**Prep data for AI coming soon to the Power BI service**|Prepare semantic models for AI directly in the Power BI service, including Direct Lake models. Features include schema selection, verified answers, and AI instructions. For more information, see [Mark your model as prepped for AI](../create-reports/copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot).|
+|**Prep data for AI for the Power BI service**|Prepare semantic models for AI directly in the Power BI service, including Direct Lake models. Features include schema selection, verified answers, and AI instructions. For more information, see [Mark your model as prepped for AI](../create-reports/copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot).|
 
 ### Reporting
 
@@ -174,7 +174,7 @@ For a quick summary of the July features, read on. For a detailed look at these 
 
 ### General
 
-- **Expanded data sharing with M365**: Power BI improves integration with Microsoft 365 by sharing more detailed metadata, like chart titles and descriptive text, so users find reports and make data-driven decisions.
+- **Expanded data sharing with Microsoft 365**: Power BI improves integration with Microsoft 365 by sharing more detailed metadata, like chart titles and descriptive text, so users find reports and make data-driven decisions.
 - **PBIRS will consolidate on-premises reporting services from SQL Server 2025**: Starting with SQL Server 2025, all on-premises reporting services unify under Power BI Report Server (PBIRS), which is the default solution for all paid SQL Server editions. Microsoft doesn't release new versions of SQL Server Reporting Services (SSRS).
 
 ### Copilot and AI
@@ -5471,7 +5471,7 @@ The following updates are new to **Power BI Desktop** this month:
 
 ### Data connectivity
 * Sagra Emigo connector generally available [[video]](https://youtu.be/A8A9baUQsXQ?t=778)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#sagraEmigo) 
-* Azure cost Management connector updated [[video]](https://youtu.be/A8A9baUQsXQ?t=805)  [[article]](../connect-data/desktop-connect-azure-cost-management.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#azureCostManagement) 
+* Microsoft Cost Management connector updated [[video]](https://youtu.be/A8A9baUQsXQ?t=805)  [[article]](../connect-data/desktop-connect-azure-cost-management.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#azureCostManagement) 
 * New Workplace Analytics connector [[video]](https://youtu.be/A8A9baUQsXQ?t=830)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#workplaceAnalytics) 
 
 
@@ -6012,7 +6012,7 @@ The following updates were new to **Power BI Desktop** in March:
 
 * PDF connector now supports tables spanning multiple pages (preview) [[video]](https://youtu.be/rBPGH6eYlT0?t=990)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#PDFconnector) 
 * Intelligent Plant's Industrial App Store connector  [[video]](https://youtu.be/rBPGH6eYlT0?t=1035)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#IntelligentPlantsIndustrialAppStore) 
-* Azure Cost Management connector [[video]](https://youtu.be/rBPGH6eYlT0?t=1085)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#AzureCostManagement) 
+* Microsoft Cost Management connector [[video]](https://youtu.be/rBPGH6eYlT0?t=1085)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#AzureCostManagement) 
 
 
 
