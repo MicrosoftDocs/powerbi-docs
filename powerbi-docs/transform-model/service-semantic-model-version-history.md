@@ -1,5 +1,5 @@
 ---
-title: Use semantic model version history (preview)
+title: Use semantic model version history
 description: Learn how to access and recover items from semantic models using semantic model version history.
 author: kgremban
 ms.author: kgremban
@@ -122,7 +122,7 @@ There is no additional charge for the storage used to capture versions in the se
 
 ## Considerations and limitations
 
-Semantic model version history is currently in preview. Keep the following in mind:
+Keep the following in mind:
 
 * Up to five versions are saved per model. Saving versions once reaching the five-version limit will overwrite the oldest version in version history.
 * Restoring versions older than 14 days is not supported. Note that this limitation isn't currently enforced by the product.
@@ -147,10 +147,10 @@ A semantic model may fail to convert to the large semantic model storage format 
 
 ## Related content
 
-This article provided information about the preview for semantic model versions. For more information on data modeling in Power BI, see the following resources:
+This article provided information about semantic model version history. For more information on semantic modeling in Power BI, see the following resources:
 
-* [Edit data models in the Power BI service (preview)](service-edit-data-models.md#capacity-utilization-and-reporting)
-* [Direct Lake in Power BI Desktop (preview)](/fabric/get-started/direct-lake-power-bi-desktop)
+* [Edit data models in the Power BI service](service-edit-data-models.md#capacity-utilization-and-reporting)
+* [Direct Lake in Power BI Desktop](/fabric/get-started/direct-lake-power-bi-desktop)
 * [Get started with Git integration in Microsoft Fabric](/fabric/cicd/git-integration/intro-to-git-integration)
 * [Power BI Desktop projects Git integration](../developer/projects/projects-git.md)
 
