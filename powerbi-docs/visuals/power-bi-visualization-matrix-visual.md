@@ -99,4 +99,5 @@ To refreeze them right-click on the row headers again and select **Freeze row he
 
 - [Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)
 - [Matrix visual considerations and limitations](power-bi-visualization-matrix-visual-considerations.md)
+- [Table visual](power-bi-visualization-tables.md)
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

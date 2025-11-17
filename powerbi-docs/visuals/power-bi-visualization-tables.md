@@ -283,28 +283,7 @@ Sometimes Power BI truncates a column heading in a report and on a dashboard. To
 
 ### Automatic adjustment
 
-The **Grow to fit** feature automatically expands your columns to fill the visual container for a more balanced layout. When **Grow to fit** is enabled, any leftover horizontal space is distributed evenly to each column.
-
-> [!NOTE]
-> Columns that were manually resized don't change.
-
-The [manual resize](#adjust-column-width) and **Autosize width** (fitting to content) options size each column to its contents, but you might still have some unused space in the visual container:
-
-   :::image type="content" source="media/power-bi-visualization-tables/table-unused-space.png" alt-text="Screenshot of table visual with columns that don’t fill the entire width of the container, leaving empty space." border="false":::
-
-**Grow to fit** expands the table to the full visual width:
-
-   :::image type="content" source="media/power-bi-visualization-tables/fill-space-grow-fit.png" alt-text="Screenshot of table visual with columns evenly expanded to fill the full width of the container after enabling Grow to fit." border="false":::
-
-To enable **Grow to fit**:
-
-   1. Select the table visual.
-   1. Open the **Format** pane.
-   1. Expand **Column headers**, then expand **Options**.
-   1. Toggle **Autosize width** to *On*.
-   1. From the **Resize behavior** dropdown, select **Grow to fit**.
-
-   :::image type="content" source="media/power-bi-visualization-tables/grow-fit-autosize-toggle.png" alt-text="Screenshot of Columns headers card expanded, Options are expanded, autosize width is enabled, and resize behavior dropdown displaying Fit to content and Grow to fit." border="false":::
+[!INCLUDE [column-headers-options-auto-size-width](../includes/core-visuals/column-headers-options-auto-size-width.md)]
 
 ## Considerations and troubleshooting
 
@@ -317,6 +296,7 @@ Review the following considerations for working with tables in Power BI.
 ## Related content
 
 - [Treemaps in Power BI](power-bi-visualization-treemaps.md).
+- [Matrix visual](power-bi-visualization-matrix-visual.md)
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
 - [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md).
 - [Apply data point limits and strategies by visual type](power-bi-data-points.md).
