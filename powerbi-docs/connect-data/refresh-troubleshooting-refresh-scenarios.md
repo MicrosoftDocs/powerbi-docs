@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 04/22/2025
+ms.date: 11/14/2025
 LocalizationGroup: Data refresh
 ---
 
@@ -104,7 +104,7 @@ If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try
 
 ## Refresh operation throttled by Power BI Premium
 
-A Premium capacity might throttle data refresh operations when too many semantic models are being processed concurrently. [Throttling](/fabric/enterprise/throttling) can occur in Power BI Premium capacities. Consider the following best practices to reduce the likelihood of refresh throttling:
+A Premium capacity might throttle data refresh operations when too many semantic models are being processed concurrently. Throttling can occur in Power BI Premium capacities. Consider the following best practices to reduce the likelihood of refresh throttling:
 
 * Refresh during nonpeak times. Performing refresh operations during non-business hours or other non-peak times helps ensure that the overall usage in the capacity remains relatively low. Use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly placed.
 * Enable [semantic model scale-out](../enterprise/service-premium-scale-out-configure.md). Semantic model scale-out can help by adding a read-only replica for refresh isolation. The read/write replica performs the semantic model during refresh while interactive queries are executed on the read-only replica.
@@ -127,6 +127,12 @@ This error indicates you have too many semantic models running refresh at the sa
 *Node level limit exceeded.*
  
 This error indicates a system error in Power BI Premium based on semantic models residing on a given physical node. You can retry the refresh operation, or reschedule the refresh time to address this error.
+
+## Low memory situations
+
+Load balancing across semantic models is managed automatically by the system. In some cases, the capacity might temporarily run low on memory during high-demand periods. When this occurs, you might encounter memory-related errors. The system typically recovers quickly as resources become available. If you receive a memory error, wait a moment and retry your operation.
+
+If memory errors occur frequently or persist, be sure to try [all of the suggested solutions](#refresh-operation-throttled-by-power-bi-premium). If these solutions don't work, file a [support ticket](https://powerbi.microsoft.com/support).
 
 ## Dataflows or datamart failures in Premium workspaces
 
@@ -191,7 +197,7 @@ If this error appears, the following steps can address the issue:
   ```
 These steps remove the introduced blank row and restores the original behavior. If you have multiple calculated tables that uses *SummarizeColumns*, changes for all tables should be submitted together in a single transaction which requires the [Tabular Editor](https://www.sqlbi.com/tools/tabular-editor/) to make the modifications, since Power BI Desktop cannot batch multiple table changes into a single transaction.
 
-## Connection errors when refreshing from Semantic Models
+## Connection errors when refreshing from semantic models
 
 The Analysis Services connector may encounter the error ```The connection either timed out or was lost```. This error is usually a transient error when the network connection fails, and a retry will succeed. 
  
