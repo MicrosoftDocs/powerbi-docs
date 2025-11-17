@@ -64,6 +64,8 @@ For this example, create an image visual starting from the Visualizations pane.
 
 1. After uploading an image from your device, while still on the **Format** pane, you have access to a full suite of controls to customize the image from the **Image** tab. Take some time to explore all the customization options available. You can specify a **Corner radius** using the **Shape** controls, stylize a border with the **Border** controls, or include a **Background color** using the **Background** controls. This array of options allows you to tailor the image's appearance and functionality to your specific requirements.
 
+:::image type="content" source="media/power-bi-visualization-image-visual/create-image-visual.png" alt-text="Screenshot showing the output of the image that was created." lightbox="media/power-bi-visualization-image-visual/create-image-visual.png":::
+
 You successfully created an image visual with Power BI. Now, let's discover some of the other image visual features.
 
 ## Image visual features
