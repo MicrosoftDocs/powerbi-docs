@@ -53,9 +53,9 @@ In the following guide, you use the [Retail Analysis Sample PBIX file](https://d
 
 You can create a card visual in several ways:
 
-- Start from the **Visualizations** pane and select the **card visual** icon
-- Expand the **Data** pane, select the necessary data fields, then select the **card visual** icon from the **Visualizations** pane
-- In Power BI Desktop, you can also start from the **Insert** ribbon, select **New visual**, then select the **card visual** icon from the **Visualizations** pane
+- Start from the **Visualizations** pane and select the **card visual** icon.
+- Expand the **Data** pane, select the necessary data fields, then select the **card visual** icon from the **Visualizations** pane.
+- In Power BI Desktop, you can also start from the **Insert** ribbon, select **New visual**, then select the **card visual** icon from the **Visualizations** pane.
 
 For this article, use the first option:
 
@@ -68,38 +68,34 @@ For this article, use the first option:
 
 You successfully created a card visual with Power BI. Now that you understand how to build a card visual, let's explore some of the other key features that this visual offers.
 
-## Key features of the card visual
+## Customize the card visual layout
 
-### Working with images
+Let's dive into layout features that make your visuals more organized and visually appealing. Under the **Visual** tab, you can find different parts of the card visual to customize. The **Multicategory layout** formats the organization of the category headers (such as Canada, Germany). The **Multicard layout** customizes the layout of the cards within each category. Each card can have three sections: callout, hero image, and reference label. To understand the difference between callouts and hero images, see the [Add an image](#add-an-image) section. Reference labels layout controls how each of the reference labels are organized.
 
-The card visual in Power BI lets you create visually appealing cards that combine metrics with two image options for better context and branding.
-
-Callout images provide subtle enhancements that work well for branding elements or small visual cues without overwhelming the metric display.
-
-A hero image - that is, a large, prominent image that captures attention - lets report creators showcase impactful visuals such as product photos, campaign graphics, or branded imagery directly within the card.
-
-To add images to your card visual:
-
-1. **Add a hero image**: With the card visual selected on the canvas, select the **Format visual** icon in the **Visualizations** pane. Under the **Visual** tab, expand the **Image** card, select your card in the **Cards** dropdown, turn on the **Image toggle**, choose **Select from data** as the **Image source**, and drag your image field into the **Data** field well. This step adds a hero image below your metric area, creating a strong visual cue.
-1. **Add a callout image**: From the **Visualizations** pane, with the **Format visual** icon selected, expand the **Callout** card, ensure your card is selected in the **Apply settings to** control, expand the **Image** controls, turn on the **Image toggle**, and select **Upload Image** as the **Image type**. Browse your device for an appropriate image to add to the visual. This image sits in the Callout section, making it perfect for subtle branding or quick visual hints without cluttering the card.
-1. **Adjust image settings**: Tweak the image layout by setting the **Position** to **Left of text** and reducing the **Image area size** so it complements your metric without stealing the spotlight.
-
-Now that you understand these image features, try adding images to your card visuals to make them more engaging and informative. Use hero images for full visual storytelling and callout images for small, meaningful touches like logos or indicators. When used thoughtfully, these features turn plain metrics into polished, professional visuals that stand out.
-
-### Card visual layout features
-
-Now that you learned about images in the previous section ([Working with images](#working-with-images)), let's dive into layout features that make your visuals more organized and visually appealing. These settings allow you to control how multiple cards are displayed, adjust spacing, and customize the overall look and feel of your report.
+Within each of these parts of the card, you can further customize the look and feel including gaps, padding, backgrounds, and more.
 
 :::image type="content" source="media/power-bi-visualization-card-visual/multicard-layout.png" alt-text="Screenshot of the Visualizations pane with Format visual and Visual tab selected, all Format controls highlighted." lightbox="media/power-bi-visualization-card-visual/multicard-layout.png":::
 
-To configure layout features:
+## Add an image
 
-1. **Multicard layout**: From the **Visualizations** pane, select the **Format visual** icon, and under the **Visual** tab, expand the **Multicategory layout** card. In the **Layout** controls, change the **Style** dropdown to **Tiles** or **Table**, and adjust the number of **Rows** or **Columns**. This setting makes your layout more compact and visually appealing.
-1. **Adjust gaps and scrolling**: Expand the **Gap** control and set the **Vertical gap** for better spacing between cards. In the **Overflow** control, switch the **Overflow style** to **Continuous Scroll** for a smooth scrolling experience.
-1. **Customize padding and background**: Expand the **Padding** control and set **Uniform padding**, then use the **Background** control to change the color for a professional look that makes your cards stand out.
-1. **Layout arrangement**: From the **Visualizations** pane, go to the **Cards** section, and use the **Layout** control to change the **Arrangement** to **Horizontal** or **Vertical**. This layout option can make your report feel more dynamic and tailored to your design preferences.
+The card visual in Power BI lets you create visually appealing cards that combine metrics with two image options for better context and branding.
 
-Next, try customizing your card visuals to create more organized and visually compelling reports. Use layout properties to group related metrics, guide the viewer's eye, and add polish to your design. With just a few thoughtful adjustments, your Power BI visuals can go from functional to intuitive, so that things are smoother and more impactful.
+- **Callout**: A value, label, or image that provides subtle enhancements that work well for branding elements or small visual cues without overwhelming the metric display.
+- **Hero image**: A large, prominent image that can showcase product photos, campaign graphics, or branded imagery directly within the card.
+
+To add images to your card visual:
+
+1. **Add a hero image**: With the card visual selected on the canvas, select the **Format visual** icon in the **Visualizations** pane. Under the **Visual** tab, expand the **Image** card, select your card in the **Cards** dropdown, and turn on the **Image toggle**.
+1. **Add a callout image**: From the **Visualizations** pane, with the **Format visual** icon selected, expand the **Callout** card. Ensure your card is selected in the **Apply settings to** control. Expand the **Image** controls, and turn on the **Image toggle**.
+
+For both image types, you can add it by uploading from your local device, pasting an image URL, or selecting an image from a data column. You can also customize the fit of the image and choose different image effects to enhance its appearance.
+
+:::image type="content" source="media/power-bi-visualization-card-visual/add-image.png" alt-text="Screenshot of the Visual pane with the Image selections shown to upload an image and customize it." lightbox="media/power-bi-visualization-card-visual/add-image.png":::
+
+## Apply enhanced formatting customizations 
+
+The card visual introduces a dynamic *collage* layout, letting you highlight one section while the other two share the remaining space. You can also customize the display order of the callout, reference label, and hero image. You can also choose different background colors for all three of these sections.  
+:::image type="content" source="media/power-bi-visualization-card-visual/enhanced-layout.png" alt-text="Screenshot of the Image pane with the card and image settings you can apply." lightbox="media/power-bi-visualization-card-visual/enhanced-layout.png":::
 
 ## Considerations and limitations
 
