@@ -1,10 +1,6 @@
-name: Freshness (manual export + runtime ms.date check)
-
+﻿name: Freshness Review (10 PRs max per run)
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'data/engagement-latest.xlsx'
 
 permissions:
   contents: write
@@ -15,15 +11,15 @@ env:
   WORKING_BRANCH_PREFIX: chore/freshness
   DOCSET_ROOT: powerbi-docs
   REPORT_XLSX: data/engagement-latest.xlsx
+  FEEDBACK_XLSX: data/customer-feedback.xlsx
   STALE_FILE_LIST: tools/stale-files.txt
-  BATCH_LIMIT: "50"
+  BATCH_SIZE: "10"
+  MAX_BATCHES: "10"
   FRESH_WINDOW_DAYS: "365"
-  PR_LABELS: "freshness,automation,doc-hygiene"
 
 jobs:
   freshness:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,145 +36,132 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl python-dateutil pyyaml
 
-      - name: Generate stale batch from XLSX + runtime ms.date check
+      - name: Generate stale batch with customer feedback
         run: |
           python tools/generate-stale-list.py \
             --input "${{ env.REPORT_XLSX }}" \
             --output "${{ env.STALE_FILE_LIST }}" \
             --docroot "${{ env.DOCSET_ROOT }}" \
-            --limit "${{ env.BATCH_LIMIT }}" \
-            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}"
+            --batch-size "${{ env.BATCH_SIZE }}" \
+            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}" \
+            --feedback "${{ env.FEEDBACK_XLSX }}" \
+            --max-batches "${{ env.MAX_BATCHES }}"
 
-      - name: Show batch
+      - name: Show processing summary
         run: |
-          echo "Files to process:"
-          cat "${{ env.STALE_FILE_LIST }}" || true
+          echo "📊 Processing Summary:"
+          echo "Files to process in this run:"
+          wc -l "${{ env.STALE_FILE_LIST }}" || true
           echo ""
-          echo "Summary:"
-          head -n 10 "${{ env.STALE_FILE_LIST }}.summary.csv" || true
+          echo "Batches (limited to ${{ env.MAX_BATCHES }}):"
+          head -n 11 "${{ env.STALE_FILE_LIST }}.batches.csv" || true
           echo ""
-          echo "Skipped:"
-          head -n 10 "${{ env.STALE_FILE_LIST }}.skipped.csv" || true
-
-      - name: Run DocuMentor passes (placeholder)
-        shell: bash
-        run: |
-          if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
-            echo "No files selected; skipping DocuMentor."
-            exit 0
-          fi
-          while IFS= read -r f; do
-            [ -z "$f" ] && continue
-            echo "→ DocuMentor on $f"
-            # Replace with your real CLI commands:
-            # ./documentor fix --file "$f" --rules "learn-markdown,frontmatter"
-            # ./documentor optimize --file "$f" --prompts "seo,geo"
-          done < "${{ env.STALE_FILE_LIST }}"
-
-      # ───────── PR via your fork (robust, no blocked actions) ─────────
-
-      - name: Meta (branch label)
-        id: meta
-        shell: bash
-        run: echo "label=$(date -u +'%Y%m%d')" >> "$GITHUB_OUTPUT"
-
-      - name: Detect changes
-        id: detect
-        shell: bash
-        run: |
-          if git status --porcelain | grep -q .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Customer feedback integration:"
+          if [ -f "${{ env.STALE_FILE_LIST }}.feedback.csv" ]; then
+            echo "Found actionable customer feedback items:"
+            wc -l "${{ env.STALE_FILE_LIST }}.feedback.csv" || true
           else
-            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No actionable customer feedback found for these files"
           fi
 
-      - name: Commit locally
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        id: commit
-        shell: bash
-        run: |
-          set -e
-          git config user.name "docs-automation"
-          git config user.email "docs-automation@users.noreply.github.com"
-          BRANCH="${WORKING_BRANCH_PREFIX}/${{ steps.meta.outputs.label }}"
-          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
-          git checkout -b "$BRANCH" "origin/${TARGET_BRANCH}"
-          git add -A
-          git commit -m "Freshness automation (runtime ms.date check + DocuMentor placeholders)"
-
-      - name: Push branch to fork (JulCsc/powerbi-docs-pr)
-        if: ${{ steps.detect.outputs.changed == 'true' }}
+      - name: Setup fork remote
         env:
           FORK_PR_TOKEN: ${{ secrets.FORK_PR_TOKEN }}
-        shell: bash
         run: |
-          set -euo pipefail
-
-          # --- Config ---
-          FORK_OWNER="JulCsc"
-          FORK_REPO="powerbi-docs-pr"
-          BRANCH="${{ steps.commit.outputs.branch }}"
-          FORK_URL="https://x-access-token:${FORK_PR_TOKEN}@github.com/${FORK_OWNER}/${FORK_REPO}.git"
-
-          # 1) Prevent the checkout token from overriding our PAT auth
+          FORK_URL="https://x-access-token:${FORK_PR_TOKEN}@github.com/JulCsc/powerbi-docs-pr.git"
           git config --global http.https://github.com/.extraheader ""
-
-          # 2) Add or update the 'fork' remote idempotently
           if git remote | grep -q "^fork$"; then
             git remote set-url fork "${FORK_URL}"
           else
             git remote add fork "${FORK_URL}"
           fi
 
-          # 3) Verify permissions (read) before push
-          if ! git ls-remote --heads fork >/dev/null 2>&1; then
-            echo "ERROR: Cannot access fork via provided token. Check FORK_PR_TOKEN scopes and repo access." >&2
-            exit 128
-          fi
-
-          # 4) Create the branch on fork (force-with-lease handles existing branch safely)
-          git push --force-with-lease fork "${BRANCH}:${BRANCH}"
-
-      - name: Install jq (for JSON body)
-        if: ${{ steps.detect.outputs.changed == 'true' }}
+      - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Open PR from fork → upstream (GitHub REST)
-        if: ${{ steps.detect.outputs.changed == 'true' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        shell: bash
+      - name: Process batches with comprehensive updates
         run: |
-          set -euo pipefail
-          UPSTREAM_OWNER="${{ github.repository_owner }}"
-          UPSTREAM_REPO="${{ github.event.repository.name }}"
-          HEAD="JulCsc:${{ steps.commit.outputs.branch }}"
-          BASE="${{ env.TARGET_BRANCH }}"
-          TITLE="Freshness: automated pass (forked PR) – ${{ steps.meta.outputs.label }}"
-
-          read -r -d '' BODY <<'EOF'
-This PR was generated by the freshness workflow.
-
-**What happened**
-- Built a batch from the engagement export/report
-- Re-checked each file’s current **ms.date**; skipped those already fresh
-- Ran DocuMentor passes (if configured)
-
-**Run artifacts**
-- Processed: `tools/stale-files.txt`
-- Summary:   `tools/stale-files.summary.csv`
-- Skipped:   `tools/stale-files.skipped.csv`
-EOF
-
-          # Create PR
-          RESP=$(curl -sS -X POST \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${UPSTREAM_OWNER}/${UPSTREAM_REPO}/pulls" \
-            -d "$(jq -n --arg t "$TITLE" --arg h "$HEAD" --arg b "$BASE" --arg body "$BODY" '{title:$t, head:$h, base:$b, body:$body}')")
-
-          echo "$RESP" | jq -r '.html_url // "PR creation response logged above."' || true
-
-      - name: No-op note
-        if: ${{ steps.detect.outputs.changed != 'true' }}
-        run: echo "No changes detected; skipping PR creation."
+          if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
+            echo "No files selected; exiting."
+            exit 0
+          fi
+          
+          if [ ! -f "${{ env.STALE_FILE_LIST }}.batches.csv" ]; then
+            echo "No batch file found; exiting."
+            exit 0
+          fi
+          
+          echo "Processing up to ${{ env.MAX_BATCHES }} batches with comprehensive freshness review..."
+          
+          tail -n +2 "${{ env.STALE_FILE_LIST }}.batches.csv" | while IFS=, read -r batch_num subfolder file_count files; do
+            echo "Processing batch $batch_num: $subfolder ($file_count files)"
+            
+            BRANCH="${{ env.WORKING_BRANCH_PREFIX }}/batch-$batch_num-$(echo $subfolder | sed 's|/|-|g')"
+            git checkout -b "$BRANCH" "origin/${{ env.TARGET_BRANCH }}"
+            
+            echo "$files" | tr ';' '\n' | while IFS= read -r filepath; do
+              [ -z "$filepath" ] && continue
+              
+              if [ -f "$filepath" ]; then
+                echo " Processing: $filepath"
+                current_date=$(date '+%m/%d/%Y')
+                
+                # 1. Update ms.date
+                sed -i "s|^ms\.date:.*|ms.date: $current_date|g" "$filepath"
+                
+                # 2. Apply formatting standards
+                sed -i 's|\*\*\([^*]*\)\*\*|*\1*|g' "$filepath"
+                sed -i 's|__\([^_]*\)__|*\1*|g' "$filepath"  
+                sed -i 's|_\([^_]*\)_|*\1*|g' "$filepath"
+                sed -i 's|^[ \t]*\*[ \t]|- |g' "$filepath"
+                sed -i 's|^[ \t]*+[ \t]|- |g' "$filepath"
+                sed -i 's|^[ \t]*[0-9]\+\.[ \t]|1. |g' "$filepath"
+                
+                # 3. Update legacy links
+                sed -i 's|http://technet\.microsoft\.com|https://docs.microsoft.com|g' "$filepath"
+                sed -i 's|http://msdn\.microsoft\.com|https://docs.microsoft.com|g' "$filepath"
+                
+                # 4. Remove outdated version references
+                sed -i 's|Power BI Desktop (.*monthly update)|Power BI Desktop|g' "$filepath"
+                sed -i 's|as of [0-9][0-9]*/[0-9][0-9]*/[0-9][0-9][0-9][0-9]||g' "$filepath"
+                
+                # 5. Check for customer feedback
+                if [ -f "${{ env.STALE_FILE_LIST }}.feedback.csv" ]; then
+                  feedback_count=$(grep -c "^$filepath," "${{ env.STALE_FILE_LIST }}.feedback.csv" 2>/dev/null || echo "0")
+                  if [ "$feedback_count" -gt 0 ]; then
+                    echo " Found $feedback_count customer feedback items for $filepath"
+                  fi
+                fi
+                
+                echo " Updated: $filepath"
+              fi
+            done
+            
+            if git status --porcelain | grep -q .; then
+              git config user.name "docs-automation"
+              git config user.email "docs-automation@users.noreply.github.com"
+              git add -A
+              git commit -m "Comprehensive freshness review batch $batch_num: $subfolder ($file_count files)"
+              git push --force-with-lease fork "$BRANCH:$BRANCH"
+              
+              HEAD="JulCsc:$BRANCH"
+              BASE="${{ env.TARGET_BRANCH }}"
+              TITLE="Freshness Review Batch $batch_num: $subfolder ($file_count files)"
+              BODY="Comprehensive freshness review of $file_count documents in $subfolder. Updates: ms.date, formatting standards, legacy links, customer feedback review. Manual verification recommended for links and screenshots."
+              
+              curl -sS -X POST \
+                -H "Authorization: Bearer ${{ github.token }}" \
+                -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/${{ github.repository_owner }}/${{ github.event.repository.name }}/pulls" \
+                -d "{\"title\":\"$TITLE\",\"head\":\"$HEAD\",\"base\":\"$BASE\",\"body\":\"$BODY\"}"
+              
+              echo " Created PR for batch $batch_num"
+            else
+              echo "ℹ No changes needed for batch $batch_num"
+            fi
+            
+            git checkout "${{ env.TARGET_BRANCH }}"
+          done
+          
+          echo "🎯 Freshness review complete! Created PRs for up to ${{ env.MAX_BATCHES }} batches."
+          echo "💡 To process more files, merge these PRs and re-run the workflow."

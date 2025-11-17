@@ -3,7 +3,7 @@ title: Overview of single sign-on for on-premises data gateways
 description: Learn how to configure your gateway to enable single sign-on from Power BI to on-premises data sources.
 author: arthiriyer
 ms.author: arthii
-ms.reviewer: ''
+ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
@@ -38,6 +38,7 @@ Power BI supports the following data sources:
 * Azure SQL (Microsoft Entra ID)
 * Azure Synapse Analytics (Microsoft Entra ID)
 * Denodo (Kerberos)
+* Dremio Cloud (Microsoft Entra ID)
 * Hive LLAP (Kerberos)
 * Impala (Kerberos)
 * Oracle (Kerberos)

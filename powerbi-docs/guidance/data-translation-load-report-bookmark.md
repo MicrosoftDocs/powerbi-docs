@@ -1,8 +1,8 @@
 ---
 title: Load Multiple-Language Reports
 description: Learn how to load multiple-language reports by using bookmarks or embedding reports that implement data translations in Power BI.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to

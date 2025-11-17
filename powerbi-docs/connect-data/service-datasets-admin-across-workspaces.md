@@ -1,8 +1,8 @@
 ---
 title: Control the use of semantic models across workspaces - Power BI
 description: Learn how to restrict the flow of information in the Power BI tenant.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin

@@ -1,9 +1,8 @@
 ---
 title: "Quickstart: Connect to data in Power BI Desktop"
 description: In this quickstart, find out how to connect to the data sources available in Power BI Desktop by importing data from an Excel spreadsheet.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: quickstart

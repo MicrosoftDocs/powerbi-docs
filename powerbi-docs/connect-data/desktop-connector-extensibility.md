@@ -1,8 +1,8 @@
 ---
 title: Connector Extensibility in Power BI
 description: Learn about connector extensibility features, security settings, signing, and certification so you can safely use custom data connectors in Power BI. Get started.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

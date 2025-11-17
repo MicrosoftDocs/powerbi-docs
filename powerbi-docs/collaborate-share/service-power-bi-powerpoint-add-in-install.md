@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/10/2025
+ms.date: 11/10/2025
 ---
 
 # Add live Power BI data to PowerPoint
@@ -143,6 +143,11 @@ Use the following procedure to create a shareable link to a report in your prese
 1. Select the **Insert** button, and the report loads into the slide. The report is now accessible to everyone who views the presentation.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/insert-shareable-link.gif" alt-text="Screenshot of inserting the direct link into the add-in and then changing it to a shareable link.":::
+
+## Considerations and limitations
+
+- **Sensitivity labels aren't automatically applied to exported presentations**: When you export a Power BI report with a sensitivity label to PowerPoint, the label isn't automatically applied to the resulting presentation. To help protect your data, manually apply the appropriate sensitivity label to the PowerPoint file after export.
+For more information, see [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
 
 ## Related content
 

@@ -1,8 +1,8 @@
 ---
 title: Dataflows best practices
 description: Learn about where you can find more information about Power BI best practices and get guidance for dataflows.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -62,5 +62,5 @@ The following articles provide more information about dataflows and Power BI:
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
-* [AI with dataflows](dataflows-machine-learning-integration.md)
+* [Power BI implementation planning - Integration with other services](../../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)

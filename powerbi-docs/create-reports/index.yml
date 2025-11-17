@@ -65,10 +65,8 @@ landingContent:
             url: insights.md
       - linkListType: how-to-guide
         links:
-          - text: Use Copilot to create a report in the service
-            url: copilot-create-report-service.md
-          - text: Use Copilot to create a report in Desktop
-            url: copilot-create-desktop-report.md
+          - text: Use Copilot to create a report
+            url: copilot-create-reports.md
           - text: Use Copilot to evaluate data
             url: copilot-evaluate-data.md
           - text: Use Copilot prompts for report pages

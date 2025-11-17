@@ -1,8 +1,8 @@
 ---
 title: Reduce the size of an Excel workbook to view it in Power BI
 description: Learn how to reduce the size of your Excel workbook to upload it to Power BI. Discover techniques to manage contents and meet the 1 GB size limit.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

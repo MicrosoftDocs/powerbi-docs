@@ -1,8 +1,8 @@
 ---
 title: Connect to Hospital Emergency Response Dashboard
 description: "Install the Hospital Emergency Response Decision Support Dashboard template app and connect to your healthcare data. Get step-by-step setup instructions now."
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to

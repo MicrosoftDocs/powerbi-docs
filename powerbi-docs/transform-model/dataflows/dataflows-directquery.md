@@ -1,8 +1,8 @@
 ---
 title: Using DirectQuery with dataflows
 description: Learn how to connect Power BI Desktop to the semantic models in your Power BI dataflows by using DirectQuery.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

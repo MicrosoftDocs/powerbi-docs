@@ -1,8 +1,8 @@
 ---
 title: Introduction to datamarts
 description: Overview of datamarts and how to use them
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

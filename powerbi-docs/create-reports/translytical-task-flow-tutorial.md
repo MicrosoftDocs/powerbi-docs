@@ -30,7 +30,7 @@ If you don't have an existing Fabric capacity, [start a Fabric trial](/fabric/fu
 
 ## Prerequisites
 
-* Enable [required preview features](./translytical-task-flow-overview.md) in Power BI and Fabric.
+* Enable [required preview features](./translytical-task-flow-overview.md) in Power BI Desktop.
 * Power BI Desktop. If you don't have Power BI Desktop installed on your device, follow the instructions in [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md).
 
 ## Overview
@@ -65,7 +65,7 @@ Create a user data function in a workspace.
 
 1. Navigate to the workspace of your choice in Power BI or Fabric.
 1. Select **New item**.
-1. Select **User data functions (preview)** from the **Develop data** group.
+1. Select **User data functions** from the **Develop data** group.
 
    :::image type="content" source="./media/translytical-task-flow-tutorial/new-item-user-data-functions.png" alt-text="A screenshot that shows the user data functions tile on the new item menu.":::
 

@@ -1,8 +1,8 @@
 ---
 title: Semantic model permissions
 description: Learn about the different levels of semantic model permissions in Power BI and how users can acquire them.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources

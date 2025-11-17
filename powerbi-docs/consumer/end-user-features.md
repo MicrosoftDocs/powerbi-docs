@@ -7,7 +7,7 @@ ms.reviewer:  juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: concept-article
-ms.date: 09/30/2025
+ms.date: 11/14/2025
 ms.custom: licensing support
 ai-usage: ai-assisted
 LocalizationGroup: consumers
@@ -54,7 +54,7 @@ When an organization has a qualifying capacity subscription (Fabric F64+ or Prem
 
 Each Power BI service user has at least one of the following: a free license, a Power BI Pro license, or a Premium Per User (PPU) license. As long as your colleagues use capacity workspaces (Fabric F64+ or Premium) to share content, free users can view and interact with that content.
 
-To find out what type of license is assigned to your account, select your profile picture from the page header in [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you can share content with other users. When **Free** is shown, you can only create content in My Workspace and consume content that is hosted in a Premium workspace. Select **View account** to see more details about your account.
+To find out what type of license is assigned to your account, select your profile picture from the page header in [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you can share content with other users. When **Free** is shown, you can only create content in My Workspace and consume content that's hosted in a Premium workspace, unless the **Enable Microsoft Fabric for your organization** admin setting is enabled. When this setting is enabled, you can create Fabric content in capacity workspaces regardless of your license type. Select **View account** to see more details about your account.
 
    :::image type="content" source="media/end-user-features/power-bi-licenses.png" alt-text="Screenshot showing license type displayed with account profile.":::
 

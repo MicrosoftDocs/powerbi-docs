@@ -3,7 +3,7 @@ title: "Microsoft Fabric adoption roadmap"
 description: "The overview of the Microsoft Fabric adoption roadmap series of articles."
 author: denglishbi
 ms.author: daengli
-ms.reviewer: daengli
+ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat

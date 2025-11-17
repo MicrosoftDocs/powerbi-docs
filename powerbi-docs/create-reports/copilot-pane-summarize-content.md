@@ -209,7 +209,7 @@ We always welcome your feedback about our products. Your feedback helps us impro
 ## Next steps
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)
-- [Create a report with Copilot for Power BI](copilot-create-report-service.md)
+- [Create a report with Copilot for Power BI](copilot-create-reports.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
 - [Frequently asked questions about Copilot for Power BI and Fabric](/fabric/get-started/copilot-faq-fabric)
