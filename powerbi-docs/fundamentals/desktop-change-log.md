@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/31/2025
+ms.date: 11/17/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,14 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](whats-new.md) for more information about new features. 
+
+## October 2025 QFE 2
+
+*Version  2.148.1477.0 Released: November 10, 2025*
+
+Bug fixes/improvements:
+
+- Fixed the issue where calculated tables were previously omitted from the refresh process.
 
 ## October 2025 QFE 1
 
