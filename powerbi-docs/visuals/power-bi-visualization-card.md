@@ -83,18 +83,10 @@ The card visual in Power BI lets you create visually appealing cards that combin
 - **Callout**: A value, label, or image that provides subtle enhancements that work well for branding elements or small visual cues without overwhelming the metric display.
 - **Hero image**: A large, prominent image that can showcase product photos, campaign graphics, or branded imagery directly within the card.
 
-To **add a callout image** to your card visual: 
+To add images to your card visual: 
 
-1. From the **Visualizations** pane, select the **Format visual** icon, then expand the **Callout** card.
-1. Ensure your card is selected in the **Apply settings to** control.
-1. Expand the **Image** controls, and turn on the **Image toggle**.
-
-To **add a hero image** to your card visual: 
-
-1. Select the card visual on the canvas.
-1. From the **Visualizations** pane, select the **Format visual** icon,
-1. Under the **Visual** tab, expand the **Image** card.
-1. Select your card in the **Cards** dropdown, and turn on the **Image toggle**.
+- **Add a hero image:** With the card visual selected on the canvas, select the **Format visual** icon in the **Visualizations** pane. Under the **Visual** tab, expand the **Image** card. Select your card in the **Cards** dropdown, and then set the **Image** toggle to *on*. 
+- **Add a callout image**: From the **Visualizations** pane, select the **Format visual** icon. Under the **Visual** tab, expand the **Callout** card. Ensure your card is selected in the **Apply settings**, expand the **Image** controls, and then set the **Image** toggle to *on*. 
 
 For both image types, you can add it by uploading from your local device, pasting an image URL, or selecting an image from a data column. You can also customize the fit of the image and choose different image effects to enhance its appearance.
 
