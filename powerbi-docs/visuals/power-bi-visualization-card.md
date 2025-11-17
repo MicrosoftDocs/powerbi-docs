@@ -70,7 +70,7 @@ You successfully created a card visual with Power BI. Now that you understand ho
 
 ## Customize the card visual layout
 
-Let's dive into layout features that make your visuals more organized and visually appealing. Under the **Visual** tab, you can find different parts of the card visual to customize. The **Multicategory layout** formats the organization of the category headers (such as Canada, Germany). The **Multicard layout** customizes the layout of the cards within each category. Each card can have three sections: callout, hero image, and reference label. To understand the difference between callouts and hero images, see the [Add an image](#add-an-image) section. Reference labels layout controls how each of the reference labels are organized.
+Let's dive into layout features that make your visuals more organized and visually appealing. Under the **Visual** tab, you can find different parts of the card visual to customize. The **Multicategory layout** formats the organization of the category headers (such as Canada, Germany). The **Multicard layout** customizes the layout of the cards within each category. Each card can have three sections: callout, hero image, and reference label. To understand the difference between callouts and hero images, see the [Add an image](#add-an-image) section. **Reference labels layout** controls how the reference labels are organized.
 
 Within each of these parts of the card, you can further customize the look and feel including gaps, padding, backgrounds, and more.
 
@@ -78,15 +78,23 @@ Within each of these parts of the card, you can further customize the look and f
 
 ## Add an image
 
-The card visual in Power BI lets you create visually appealing cards that combine metrics with two image options for better context and branding.
+The card visual in Power BI lets you create visually appealing cards that combine metrics with two image options for better context and branding:
 
 - **Callout**: A value, label, or image that provides subtle enhancements that work well for branding elements or small visual cues without overwhelming the metric display.
 - **Hero image**: A large, prominent image that can showcase product photos, campaign graphics, or branded imagery directly within the card.
 
-To add images to your card visual:
+To **add a callout image** to your card visual: 
 
-1. **Add a hero image**: With the card visual selected on the canvas, select the **Format visual** icon in the **Visualizations** pane. Under the **Visual** tab, expand the **Image** card, select your card in the **Cards** dropdown, and turn on the **Image toggle**.
-1. **Add a callout image**: From the **Visualizations** pane, with the **Format visual** icon selected, expand the **Callout** card. Ensure your card is selected in the **Apply settings to** control. Expand the **Image** controls, and turn on the **Image toggle**.
+1. From the **Visualizations** pane, select the **Format visual** icon, then expand the **Callout** card.
+1. Ensure your card is selected in the **Apply settings to** control.
+1. Expand the **Image** controls, and turn on the **Image toggle**.
+
+To **add a hero image** to your card visual: 
+
+1. Select the card visual on the canvas.
+1. From the **Visualizations** pane, select the **Format visual** icon,
+1. Under the **Visual** tab, expand the **Image** card.
+1. Select your card in the **Cards** dropdown, and turn on the **Image toggle**.
 
 For both image types, you can add it by uploading from your local device, pasting an image URL, or selecting an image from a data column. You can also customize the fit of the image and choose different image effects to enhance its appearance.
 
@@ -94,7 +102,8 @@ For both image types, you can add it by uploading from your local device, pastin
 
 ## Apply enhanced formatting customizations 
 
-The card visual introduces a dynamic *collage* layout, letting you highlight one section while the other two share the remaining space. You can also customize the display order of the callout, reference label, and hero image. You can also choose different background colors for all three of these sections.  
+The card visual introduces a dynamic *collage* layout, letting you highlight one section while the other two share the remaining space. You can also customize the display order of the callout, reference label, and hero image and give them each different background colors.  
+
 :::image type="content" source="media/power-bi-visualization-card-visual/enhanced-layout.png" alt-text="Screenshot of the Image pane with the card and image settings you can apply." lightbox="media/power-bi-visualization-card-visual/enhanced-layout.png":::
 
 ## Considerations and limitations
