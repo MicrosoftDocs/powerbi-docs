@@ -57,7 +57,7 @@ With org app items, you can create **multiple org apps per workspace**.
 
 With org app items, you can package up items from the **same workspace** and share them with others in your organization who don't have access to the workspace. 
 
-Once you create an org app item, you can include **Power BI reports, paginated reports, Fabric notebooks, and real-time dashboards** in the org app. **These items are referred to as included items**.
+Once you create an org app item, you can include **Power BI reports, paginated reports, Fabric notebooks, maps, and real-time dashboards** in the org app. **These items are referred to as included items**.
 
 When you give users access to the org app item, **at a minimum they gain read access** to the included items as well. For Power BI reports in an org app, **users gain read access to the semantic models associated with the report**. For new org apps in preview, **even if a semantic model is in a different workspace** users gain access to that model.
 
@@ -107,7 +107,7 @@ Name your app
 
 ![Name a new org app modal.](media/org-app-items/org-app-name-new-item.png)
 
-Select **Add content** and select reports and notebooks from your workspace, then select **Add to app.**
+Select **Add content** and select org app-supported items from your workspace, then select **Add to app.**
 
 ![Add content button.](media/org-app-items/org-app-add-content.png)
 
@@ -276,7 +276,7 @@ Want to grant extra permissions to a user? Find the user you would like to manag
 
 ![Org app permissions modification menu.](media/org-app-items/org-app-item-permissions-modification-menu.png)
 
-- **Add reshare** allows users to share the org app item, included items, and underlying items with others. This means they can grant others access to the org app and propagate access to all items the org app is dependent on. Items like included reports, notebooks, and real-time dashboards. Plus the underlying semantic models the report items depend on.
+- **Add reshare** allows users to share the org app item, included items, and underlying items with others. This means they can grant others access to the org app and propagate access to all items the org app is dependent on. Items like included reports, paginated reports, notebooks, maps, and real-time dashboards. Plus the underlying semantic models the report items depend on.
 - **Remove reshare** removes a user's ability to share the org app item with others. Though anyone who has access to the org app by that user maintains access. 
 - **Remove access** removes that user's access to the org app item, the included report items, and the semantic model items that reports in the org app source from. Unique to new org app items, access to the underlying semantic model items is removed when a user loses access to an org app. However, if a user has another form of access to an item, such as a semantic model, they maintain access to that item. Only their org app-based access is removed.
 
@@ -286,9 +286,9 @@ Want to grant extra permissions to a user? Find the user you would like to manag
 
 Here are the items an org app propagates and revokes access to:
 - The org app item itself 
-  - Included report and paginated report items
+  - Included Power BI report and paginated report items
     - The underlying semantic model for a report or paginated report item (for a model in the same workspace or separate workspace)
-  - Included notebook or real-time dashboard items
+  - Included Fabric notebook, map, or real-time dashboard items
  
 Refer to the list for included items and underlying items org apps propagate and revoke access to. There are underlying item scenarios, like the RDL visual scenario noted, where org apps don't propagate or revoke access. Other scenarios included Fabric sources like lakehouses and data warehouses. For those scenarios, manage access on those underlying sources directly.
  
