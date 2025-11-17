@@ -326,7 +326,7 @@ There are still many functional gaps between the model view in Power BI desktop 
 
 
 Additionally, keep in mind the following: 
-* As you make changes to your semantic model, your changes will be automatically saved. [Semantic model version history](../transform-model/service-semantic-model-version-history.md) is supported for semantic models edited in the web and is still in preview. This feature allows you to recover from critical mistakes.
+* As you make changes to your semantic model, your changes will be automatically saved. [Semantic model version history](../transform-model/service-semantic-model-version-history.md) is supported for semantic models edited in the web. This feature allows you to recover from critical mistakes.
 * Editing on the web isn't available in collaborative workspaces if converting the model to [large semantic model storage format fails](https://go.microsoft.com/fwlink/?linkid=2309615). In this case you can still use Viewing mode to view but not edit the model.
 * The *Edit in Desktop* option from the Viewing/Editing mode toggle is available only for Direct Lake models. This launches live editing of the Direct Lake semantic model in Power BI Desktop, and it's supported only on Windows machines. All requirements for [live editing Direct Lake models in Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2314634) apply.
 
