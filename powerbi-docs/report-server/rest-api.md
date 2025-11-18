@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/06/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 
 # Develop with the REST APIs for Power BI Report Server

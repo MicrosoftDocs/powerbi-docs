@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/17/2024
+ms.date: 11/01/2025
 ms.custom: intro-whats-new
+ai-usage: ai-assisted
 ---
 
 # What's new in Power BI Report Server

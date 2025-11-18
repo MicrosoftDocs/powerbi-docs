@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/16/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 
 # Row-level security (RLS) in Power BI Report Server
@@ -24,7 +25,7 @@ By default, row-level security filtering uses single-directional filters, regard
 
 - Select the relationship and check the **Apply security filter in both directions** checkbox. 
 
-    ![Apply security filter](media/row-level-security-report-server/rls-apply-security-filter.png)
+    :::image type="content" source="media/row-level-security-report-server/rls-apply-security-filter.png" alt-text="Screenshot showing how to apply security filter.":::
 
 Check this box when implementing dynamic row-level security based on user name or login ID. 
 
@@ -44,7 +45,7 @@ After you save your report in Power BI Report Server, you manage security and ad
 
 3. Select **Manage** > **Row-level security**. 
 
-     ![Manage row-level security](media/row-level-security-report-server/power-bi-report-server-rls-dialog.png)
+     :::image type="content" source="media/row-level-security-report-server/power-bi-report-server-rls-dialog.png" alt-text="Screenshot showing how to manage row-level security.":::
 
     On the **Row-level security** page, you add members to a role you created in Power BI Desktop.
 
@@ -52,7 +53,7 @@ After you save your report in Power BI Report Server, you manage security and ad
 
 1. Enter the user or group in the text box in the Username format (DOMAIN\user) and select the roles you wish to assign to them. The member has to be within your organization.   
 
-    ![Add member to role](media/row-level-security-report-server/power-bi-report-server-add-members.png)
+    :::image type="content" source="media/row-level-security-report-server/power-bi-report-server-add-members.png" alt-text="Screenshot showing how to add member to role.":::
 
     Depending on how you have Active Directory configured, entering the User Principal Name here also works. In that case, the Report Server shows the corresponding username in the list.
 
@@ -60,7 +61,7 @@ After you save your report in Power BI Report Server, you manage security and ad
 
 8. To remove members, check the box next to their names and select **Delete**.  You can delete multiple members at a time. 
 
-    ![Delete members](media/row-level-security-report-server/power-bi-report-server-delete-members.png)
+    :::image type="content" source="media/row-level-security-report-server/power-bi-report-server-delete-members.png" alt-text="Screenshot showing how to delete members.":::
 
 
 ## username() and userprincipalname()

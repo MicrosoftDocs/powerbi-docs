@@ -7,7 +7,8 @@ ms.reviewer: cfinlan
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 # Always Encrypted in Power BI Report Server
 
@@ -31,8 +32,8 @@ At this time, Power BI Report Server doesn't restrict access to Always Encrypted
 
 The account that requires access to the certificate is the service account. The certificate should be stored in the local computer certificate store. For more information, see:
 
-- [Configure the Report Server Service Account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) (Configuration Manager)
-- [Making certificates available to applications and users](/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted#making-certificates-available-to-applications-and-users) section in the SQL Server article "Create and store column master keys for Always Encrypted."
+1. [Configure the Report Server Service Account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) (Configuration Manager)
+1. [Making certificates available to applications and users](/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted#making-certificates-available-to-applications-and-users) section in the SQL Server article "Create and store column master keys for Always Encrypted."
 
 ### Column encryption strategy
 

@@ -7,16 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/14/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 
 # Hardware and software requirements for installing Power BI Report Server
 
 This article lays out the minimum hardware and software requirements to install and run Power BI Report Server. See [Capacity planning guidance for Power BI Report Server](capacity-planning.md) for more details.
 
-## Processor, Memory, and Operating System Requirements
+> [!NOTE]
+> Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server. No new versions of SQL Server Reporting Services (SSRS) will be released. Power BI Report Server is now the default on-premises reporting solution for SQL Server.
 
-This are the requirments for the latest generally available (GA) version. 
+## Processor, memory, and operating system requirements
+
+These are the requirements for the latest generally available (GA) version. 
 
 | Component | Requirement |
 | --- | --- |
@@ -30,12 +34,12 @@ This are the requirments for the latest generally available (GA) version.
 > [!NOTE]
 > Installation of Power BI Report Server is supported on x64 processors only.
 
-
 ## Database server version requirements
 
 SQL Server is used to host the report server databases. The SQL Server Database Engine instance can be a local or remote instance. The following are the supported versions of SQL Server Database Engine that can be used to host the report server databases:
 
 * Azure SQL Managed Instance (Power BI Report Server January 2020 version and later)
+* SQL Server 2025
 * SQL Server 2022
 * SQL Server 2019
 * SQL Server 2017

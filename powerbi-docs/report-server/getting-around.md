@@ -7,12 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 05/24/2018
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 # Manage content in the web portal 
 The Power BI Report Server web portal is an on-premises location for viewing, storing and managing your Power BI, mobile, and paginated reports, and KPIs.
 
-![Report Server web portal](media/getting-around/report-server-web-portal.png)
+:::image type="content" source="media/getting-around/report-server-web-portal.png" alt-text="Screenshot showing Report Server web portal.":::
 
 You can view the web portal in any modern browser. In the web portal, reports and KPIs are organized in folders, and you can mark them as favorites. You can also store Excel workbooks there. From the web portal, you can launch the tools you need to create reports:
 
@@ -29,7 +30,7 @@ The web portal application runs in a browser. When you start the web portal, the
 1. Open your web browser.
    
     See this list of [supported web browsers and versions](browser-support.md).
-2. In the address bar, type the web portal URL.
+1. In the address bar, type the web portal URL.
    
     By default, the URL is <em>https://[ComputerName]/reports</em>.
    
@@ -51,11 +52,11 @@ Power BI Report Server offers detailed control of the items you store on the web
 
 1. Select **More options** (...) in the upper-right corner of an item, then select **Manage**.
    
-    ![Select Manage](media/getting-around/report-server-web-portal-manage-ellipsis.png)
-2. Choose the property or other feature you want to set.
+    :::image type="content" source="media/getting-around/report-server-web-portal-manage-ellipsis.png" alt-text="Screenshot showing Select Manage.":::
+1. Choose the property or other feature you want to set.
    
-    ![Select a property](media/getting-around/report-server-web-portal-manage-properties.png)
-3. Select **Apply**.
+    :::image type="content" source="media/getting-around/report-server-web-portal-manage-properties.png" alt-text="Screenshot showing Select a property.":::
+1. Select **Apply**.
 
 Read more about [working with subscriptions in the web portal](/sql/reporting-services/working-with-subscriptions-web-portal).
 
