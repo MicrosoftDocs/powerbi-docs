@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/12/2025
+ms.date: 11/18/2025
 ms.custom: 
 LocalizationGroup: Transform and shape data
 #customer intent: As a Power BI user I want to learn how to use semantic model version history in Power BI.
 ---
 
-# Use semantic model version history (preview)
+# Use semantic model version history
 
-Power BI automatically configures semantic model version history for semantic models [edited on the web](service-edit-data-models.md). With version history, self-service users can recover from the most critical mistakes when editing their semantic models on the web. For full source control and support of more versions, use [git integration](/fabric/cicd/git-integration/git-get-started), which can be used in combination with version history for the same semantic model.
+Power BI automatically configures semantic model version history for semantic models [edited on the web](service-edit-data-models.md) or when live editing Direct Lake semantic models in Power BI Desktop. With version history, self-service users can recover from the most critical mistakes when editing their semantic models. For full source control and support of more versions, use [git integration](/fabric/cicd/git-integration/git-get-started), which can be used in combination with version history for the same semantic model.
 
 ## Open the version history pane
 
