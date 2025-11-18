@@ -86,11 +86,11 @@ Enabling this setting allows users to access the standalone, cross-item Power BI
 >- **Copilot must be enabled at the tenant level:** *"Users can use Copilot and other features powered by Azure OpenAI"* must be enabled at the **tenant level** to use the standalone Copilot experience. It's not sufficient to enable it at the capacity level (that is, if it's been delegated).
 > - **Not all regions are supported:** The standalone Copilot experience is only available to customers with home tenants in geos that support Fabric—so it's only available for customers with home tenants in [this list](/fabric/admin/region-availability#all-workloads).
 
-## Only show AI-prepped items in the standalone Copilot in Power BI experience (preview) 
+## Only show approved items in the standalone Copilot in Power BI experience (preview) 
 
-Enabling this setting limits the standalone Power BI Copilot experience to [searching ](/power-bi/create-reports/copilot-search-new-content)for content that has been marked as Prepped for AI.
+Enabling this setting limits the standalone Power BI Copilot experience to only [searching ](/power-bi/create-reports/copilot-search-new-content)for content that has been marked as **Approved for Copilot**.
 
-![Screenshot of the tenant setting to limit the standalone Power BI Copilot to items prepped for AI.](media/copilot-enable-power-bi/limit-to-prepped.png)
+![Screenshot of the tenant setting to limit the standalone Power BI Copilot to items approved for Copilot.](media/copilot-enable-power-bi/admin-setting-only-show-approved-items.png)
 
 > [!IMPORTANT]
 > The setting is delegated to workspace admins to determine when workspaces have sufficient high-value content to be broadly searched by Copilot.
