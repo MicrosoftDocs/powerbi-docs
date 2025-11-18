@@ -65,7 +65,7 @@ To open app-scoped Copilot, click Copilot in the app navigation:
 If the app author chose for the app navigation to be collapsed by default, users need to expand the app navigation to view the app navigation and see Copilot:
 :::image type="content" source="media/copilot-apps-overview/expand-app-nav.png" alt-text="Screenshot of button to select for expanding app nav with app nav then expanded.":::
 
-App users Copilot activity must be linked to a capacity. Learn more about the [general requirements for Copilot use](copilot-introduction.md#general-requirements) and how [capacity assignment and autoselection works](copilot-introduction.md#link-to-a-fabric-copilot-capacity).
+App users Copilot activity must be linked to a capacity. Learn more about the [general requirements for Copilot use](copilot-introduction.md#general-requirements) and how [capacity assignment and autoselection works](copilot-introduction.md#access-to-a-copilot-supported-capacity).
 
 #### Find items in the app
 You can ask Copilot to find reports you have access to in the app. In response, you get a hyperlinked list of relevant items, with helpful details to make it easy for you to find the right thing. Learn more about [searching for items](copilot-search-new-content.md) Selecting an item listed in the results opens that item in a new tab within the app.

@@ -93,7 +93,7 @@ Now you can begin creating data models or reports, and share them with others on
 
 The following list provides the minimum requirements to run Power BI Desktop:
 
-* Windows 10 or Windows Server 2016 or later.
+* Windows 10 or Windows Server 2016 or later. For Windows on ARM, the 2025-09 Cumulative Update is required [(KB5065789)](https://support.microsoft.com/topic/september-29-2025-kb5065789-os-builds-26200-6725-and-26100-6725-preview-fa03ce47-cec5-4d1c-87d0-cac4195b4b4e).
 * .NET 4.7.2 or later.
 * Microsoft Edge browser (Internet Explorer is no longer supported)
 * Memory (RAM): At least 2 GB available, 4 GB or more recommended.

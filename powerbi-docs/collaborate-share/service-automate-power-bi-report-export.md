@@ -97,6 +97,10 @@ Optionally, if you want to send the report based on row-level security (RLS), yo
 
 - **Identities Roles Item - 1** = RLS name defined in the report
 
+## Considerations & limitations
+
+- The exported files will reflect the saved default slicer values (even if the slicer selection is changed in subsequent user actions). To update the default slicer values, re-save the report. To generate exports with updated slicer selection, values should be set explicitly via[ API calls](/connectors/powerbi/).
+
 ## Related content
 
 - [Integrate Power BI data alerts with Power Automate](service-flow-integration.md)

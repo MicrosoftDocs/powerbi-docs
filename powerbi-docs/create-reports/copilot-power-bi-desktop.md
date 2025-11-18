@@ -56,7 +56,7 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-settings-error.png" alt-text="Screenshot of the Copilot settings with the error message." lightbox="media/copilot-enable-power-bi/copilot-settings-error.png":::
 
-1. Now you're ready to [create a report with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
+1. Now you're ready to [create a report with Copilot in Power BI](copilot-create-reports.md).
 1. Open a Power BI report and select **Copilot** in the ribbon. The Copilot pane appears and prompts you to select a **workspace**.
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-button-ribbon.png" alt-text="Screenshot of the Copilot pane in Power BI desktop." lightbox="media/copilot-enable-power-bi/copilot-button-ribbon.png":::
@@ -90,8 +90,7 @@ We always welcome your feedback about our products. Especially during public pre
 ## Related content
 
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
-- [Create a report with Copilot in the Power BI service](copilot-create-report-service.md)
-- [Create a report with Copilot in Power BI Desktop](copilot-create-desktop-report.md)
+- [Create a report with Copilot in Power BI](copilot-create-reports.md)
 - [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Write Copilot prompts for creating narrative visuals in Power BI](copilot-prompts-narratives.md)

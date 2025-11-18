@@ -120,27 +120,30 @@ After you test and confirm your **Prep data for AI** enhancements, you can publi
 
 <a id="mark-your-model-as-prepped-for-ai"></a>
 
-## Mark your model Prepped for AI
+## Mark your model as approved for Copilot
 
-After you prepare your semantic model for AI and it's ready for consumption, you can mark your model **Prepped for AI** by following these steps:
+After you prepare your semantic model for AI and it's ready for consumption, you can mark your model **Approved for Copilot** by following these steps:
+
+> [!NOTE]
+> This setting was previously called **prepped for AI** but has been renamed to **approved for Copilot** for more clarity.
 
 1. Go to the Power BI service and find your semantic model.
 1. Select the **Settings** icon in the upper-left corner.
-1. Expand the **AI preparation** section.
-1. Select the **Prepped for AI** box, and then select the **Apply** button.
+1. Expand the **Approved for Copilot** section.
+1. Select the **Approved for Copilot** box, and then select the **Apply** button.
 
-:::image type="content" source="media/copilot-prep-data/copilot-ai-preparation.png" alt-text="Screenshot of the AI preparation settings in Power BI service that showcases the option to mark a model Prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
+:::image type="content" source="media/copilot-prep-data/copilot-approved-for-copilot.png" alt-text="Screenshot of the approved for Copilot settings in Power BI service that showcases the option to mark a model Prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
 
-When you mark your semantic model **Prepped for AI**, the standalone Copilot agent doesn't apply any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai) to answers from that model. Also, reports that use that semantic model can be considered **Prepped for AI**.
+When you mark your semantic model as **approved for Copilot**, the standalone Copilot agent doesn't apply any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai-and-mark-as-approved-for-Copilot) to answers from that model. Also, reports that use that semantic model will be considered **approved for Copilot**.
 
 > [!NOTE]
-> When you mark a semantic model **Prepped for AI**, the friction treatment in standalone Copilot for associated reports should be removed.
+> When you mark a semantic model as **approved for Copilot**, the friction treatment in standalone Copilot for associated reports should be removed.
 >
 > In most cases, changes are fully reflected within an hour, but it can take up to 24 hours if the model has a lot of reports attached. To force an update to a specific report, you can speed up the process by manually saving a small change to a report.
 >
-> There's currently *no way* to mark a report, dashboard, or app **Prepped for AI**.
+> There's currently *no way* to mark a report, dashboard, or app **approved for Copilot**.
 
-Authors can also turn on an admin setting to [only search data that is marked **Prepped for AI**](/fabric/admin/service-admin-portal-copilot#only-show-ai-prepped-items-in-the-standalone-copilot-in-power-bi-experience-preview) within the standalone Copilot experience.
+Authors can also turn on an admin setting to [only show **approved items** in the standalone Copilot experience](/power-bi/create-reports/copilot-enable-power-bi#only-show-approved-items-in-the-standalone-copilot-in-power-bi-experience-preview).
 
 ## Turn off the preview features in Desktop
 

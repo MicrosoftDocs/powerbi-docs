@@ -39,7 +39,7 @@ Copilot in Power BI offers a range of capabilities designed to enhance productiv
 
 ### Copilot for business users: Chat with your data
 
-For business users, chatting with your data can mean many things. It might involve finding content. It could include asking for ad-hoc analyses or insights. You can also quickly create and analyze visuals. You might even get summaries of entire reports or focus on specific topics. All similar to what you might ask your analyst to do when you have follow-up questions about a report they made. When a question is related to data in the semantic model, Copilot uses the semantic model to answer the question, otherwise it may answer from the large language model's (LLM) [general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have three chat-with-your-data experiences for business users: the standalone Copilot experience, the Copilot pane for reports, and Copilot in apps.
+For business users, chatting with your data can mean many things. It might involve finding content. It could include asking for ad-hoc analyses or insights. You can also quickly create and analyze visuals. You might even get summaries of entire reports or focus on specific topics. All similar to what you might ask your analyst to do when you have follow-up questions about a report they made. When a question is related to data in the semantic model, Copilot uses the semantic model to answer the question, otherwise it may answer from the large language model's (LLM) [general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have three chat-with-your-data experiences for business users: the standalone Copilot experience, the Copilot pane for reports, and Copilot in apps (scoped to curated app content and supports verified answers by app authors).
 
 #### The standalone Copilot experience (preview): Find data and ask questions about any item
 
@@ -53,12 +53,20 @@ The standalone Copilot can help with the following tasks:
 - [Summarize a report or topic](copilot-pane-summarize-content.md)
 - [Answer questions about your data](copilot-ask-data-question.md)
 - [Answer questions using a Fabric data agent](/fabric/data-science/concept-data-agent)
+
+#### Copilot in apps (preview): Ask questions and get summaries scoped to an app
+
+The app-scoped Copilot experience is accessible from an app's left navigation, allowing users to search and ask questions based on the curated content included in that app—such as reports, dashboards, and related artifacts. Unlike the report-scoped Copilot pane (which is limited to the open report), app-scoped Copilot operates across the app's curated scope, providing summaries of app content and answers to questions based on what users have access to within the app.
+
+App-scoped Copilot supports verified answers prepared by app authors. When verified answers exist for common questions, Copilot can surface those author-provided responses to increase reliability and consistency. [Learn more about Copilot in apps](copilot-apps-overview.md).
  
 ### Considerations and limitations
 
 Newly purchased capacity or capacity scale-up operations may take up to 24 hours for Copilot to recognize and become available for use.
 
 The standalone Copilot and Copilot in apps experiences aren't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West. While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use isn't officially supported at this time.
+
+Responses in app-scoped Copilot are limited to the app's included content and the permissions users have within the app. When verified answers are available, they may be prioritized and returned for matching questions.
 
 #### The Copilot pane: Ask questions about an open report
 
@@ -75,8 +83,8 @@ Business users can also include [summaries when setting up subscriptions to repo
 
 Report authors can use Copilot in many ways, such as the following tasks:
 
-- [Suggest content for a report](copilot-create-report-service.md#get-started-using-copilot)
-- Create a [report page](copilot-prompts-report-pages.md)
+- [Create and edit a report](copilot-create-reports.md)
+  - Learn how to [Write Copilot prompts for creating report pages](copilot-prompts-report-pages.md)
 - [Summarize the underlying semantic model](copilot-reports-overview.md#summarize-the-underlying-semantic-model)
 - [Create a summary visual on the report itself](copilot-create-narrative.md)
 - Write [DAX queries](/dax/dax-copilot)
@@ -119,13 +127,12 @@ The following requirements pertain to the full-screen standalone Copilot experie
 
 :::image type="content" source="media/copilot-introduction/copilot-access-standalone-enabled.png" alt-text="Screenshot of the standalone Copilot admin screen with options enabled." lightbox="media/copilot-introduction/copilot-access-standalone-enabled.png":::
 
-#### Link to a Fabric Copilot capacity
+#### Access to a Copilot-supported capacity
 
-To use the standalone Copilot experience, your activity must be linked to a capacity. The recommended approach is to use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI is automatically billed to a single, centralized capacity. 
+To use the standalone Copilot experience, **you must have access to a Copilot-supported capacity.** The recommended approach is to use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI is automatically billed to a single, centralized capacity. If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot (that is, it's linked to an F2 capacity or higher, it's in a supported region, and it's enabled for Copilot) for usage tracking and billing. *If you don't have access to an FCC or access to a workspace backed by a capacity that supports Copilot, you aren't able to use the standalone Copilot experience.* 
 
-#### Use an autoselected Copilot workspace
+#### Autoselection of a Copilot workspace
 
-If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot. This workspace must meet Copilot requirements (linked to an F2 capacity or higher, in a supported region, and enabled for Copilot) and is used for usage tracking and billing.
 We automatically select a workspace from a partially randomized list of eligible workspaces, weighted toward workspaces with more available capacity. This approach helps balance usage and prevents overloading any single capacity. This selection persists across sessions as long as the workspace remains Copilot-enabled and has available capacity. If the workspace becomes disabled for Copilot or reaches its capacity limit, we automatically reassign a new one and notify the user. If an FCC becomes available, it always overrides the autoselected workspace. Users receive a dismissible notification showing the chosen workspace and a direct option to change it.
 
 :::image type="content" source="media/copilot-introduction/workspace-autoselection.png" alt-text="Screenshot of the standalone Copilot confirmation that the workspace was autoassigned via autoselection." lightbox="media/copilot-introduction/workspace-autoselection.png":::
@@ -145,7 +152,7 @@ These requirements pertain to using Copilot within Power BI reports, including t
 - **Power BI Desktop**:
   - You need *write access* to a workspace that is on a paid Fabric capacity or Power BI Premium in the Power BI service, where you plan to publish the report. Read more about using [Copilot in Power BI Desktop](copilot-power-bi-desktop.md).
 - **Power BI service**:
-  - The report must be located in a workspace linked to either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or a paid [Fabric](/fabric/enterprise/licenses) capacity. [Learn how to check your license type](copilot-create-report-service.md#use-copilot-in-the-power-bi-service-for-the-first-time).
+  - The report must be located in a workspace linked to either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or a paid [Fabric](/fabric/enterprise/licenses) capacity. [Learn how to check your license type](copilot-enable-power-bi.md#use-copilot-for-power-bi-in-the-service).
   - To generate summarized insights in reports, you need at least *read access* to the workspace, report, or app.
   - To add a narrative visual to a report or generate Copilot reports, you need *edit access* to the workspace or report, or *build access* to the semantic model
 
@@ -154,7 +161,7 @@ These requirements pertain to using Copilot within Power BI reports, including t
 These requirements pertain to using [app-scoped Copilot in Power BI apps](copilot-apps-overview.md), the full-page Copilot experience accessible from app navigation.
 
 - Meet the [**general requirements for Copilot**](#general-requirements), including the setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
-- Like standalone Copilot, app-scoped Copilot uses an [FCC](/fabric/enterprise/fabric-copilot-capacity) or an [autoseleccted workspace](#use-an-autoselected-copilot-workspace). Or you can [manually select a workspace](#change-your-copilot-workspace).
+- Like standalone Copilot, app-scoped Copilot uses an [FCC](/fabric/enterprise/fabric-copilot-capacity) or an [autoselected workspace](#autoselection-of-a-copilot-workspace) for usage tracking and billing. Or you can [manually select a workspace](#change-your-copilot-workspace).
 - The setting for showing Copilot in the app navigation must be enabled. This setting is unique per app and is managed while [publishing or updating an app](../collaborate-share/service-create-distribute-apps.md) under *Advanced settings* > *Show Copilot in app navigation*.
 
 

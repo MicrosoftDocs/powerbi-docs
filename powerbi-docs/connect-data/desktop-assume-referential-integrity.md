@@ -1,5 +1,5 @@
 ---
-title: Assume Referential Integrity setting in Power BI Desktop
+title: Assume Referential Integrity Setting in Power BI Desktop
 description: Learn how to have Power BI Desktop assume referential integrity, which enables queries to use INNER JOIN statements.
 author: kgremban
 ms.author: kgremban
@@ -7,20 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/25/2024
+ms.date: 11/13/2025
 LocalizationGroup: Connect to data
 #customer intent: As a data analyst or report developer, I want to learn how to apply the Assume referential integrity setting in Power BI Desktop so that I can improve query efficiency when using DirectQuery.
 ---
+
 # Apply the Assume Referential Integrity setting in Power BI Desktop
 
 When connecting to a data source using DirectQuery, you can use the **Assume referential integrity** selection to enable running more efficient queries against your data source. This feature has a few requirements of the underlying data, and it's only available when using DirectQuery, or in Direct Lake mode in Microsoft Fabric's semantic model.
 
 > [!NOTE]
-> Assume Referential Integrity setting for Microsoft Fabric's semanic model can only be set through the service using a web browser. It cannot be set by using Power BI Desktop.
+> Assume Referential Integrity setting for Microsoft Fabric's semantic model can only be set through the service using a web browser. It can't be set by using Power BI Desktop.
 
 Setting **Assume referential integrity** enables queries on the data source to use *INNER JOIN* statements rather than *OUTER JOIN*, which improves query efficiency.
 
-![Screenshot of an Edit Relationship dialog to select Assume Referential Integrity.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+:::image type="content" source="media/desktop-assume-referential-integrity/assume-referential-integrity-1.png" alt-text="Screenshot of an Edit Relationship dialog to select Assume Referential Integrity.":::
 
 ## Requirements for using Assume referential integrity
 
@@ -37,25 +38,25 @@ The following example demonstrates how **Assume referential integrity** behaves 
 
 - In the following image that shows the **Orders** table and the **Products** table, referential integrity exists between **Orders[ProductID]** and **Products[ProductID]**. The **[ProductID]** column in the **Orders** table is never *Null*, and every value also appears in the **Products** table. As such, **Assume referential integrity** should be set to get more efficient queries. Using this setting doesn't change the values shown in visuals.
 
-  ![Screenshot of Orders table and Products table.](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
+    :::image type="content" source="media/desktop-assume-referential-integrity/assume-referential-integrity-2.png" alt-text="Screenshot showing the Orders table and Products table.":::
 
-- In the next image, notice that no referential integrity exists between **Orders[DepotID]** and **Depots[DepotID]**, because the **DepotID** is *Null* for some *Orders*. As such, **Assume referential integrity** should *not* be set.
+- In the next image, notice that no referential integrity exists between **Orders[DepotID]** and **Depots[DepotID]**, because the **DepotID** is *Null* for some *Orders*. As such, **Assume referential integrity** *shouldn't* be set.
 
-  ![Screenshot of Orders table and Depots table.](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
+    :::image type="content" source="media/desktop-assume-referential-integrity/assume-referential-integrity-3.png" alt-text="Screenshot showing the Orders table and Depots table.":::
 
-- Finally, no referential integrity exists between **Orders[CustomerID]** and **Customers[CustID]** in the following tables. The **CustomerID** contains a value, *CustX*, that doesn't exist in the *Customers* table. As such, **Assume referential integrity** should *not* be set.
+- Finally, no referential integrity exists between **Orders[CustomerID]** and **Customers[CustID]** in the following tables. The **CustomerID** contains a value, *CustX*, that doesn't exist in the *Customers* table. As such, **Assume referential integrity** *shouldn't* be set.
 
-  ![Screenshot of Orders table and Customers table.](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
+    :::image type="content" source="media/desktop-assume-referential-integrity/assume-referential-integrity-4.png" alt-text="Screenshot showing the Orders table and Customers table.":::
 
 ## Setting Assume referential integrity
 
 To enable this feature, select **Assume referential integrity** as shown in the following image.
 
-![Screenshot of an Edit Relationship dialog that allows you to select Assume Referential Integrity.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+:::image type="content" source="media/desktop-assume-referential-integrity/assume-referential-integrity-1.png" alt-text="Screenshot of an Edit Relationship dialog that allows you to select Assume Referential Integrity.":::
 
-When selected, the setting is validated against the data to ensure there are no *Null* or mismatched rows. However, for cases with a very large number of values, the validation isn't a guarantee that there are no referential integrity issues.
+When selected, the setting is validated against the data to ensure there are no *Null* or mismatched rows. However, for cases with a large number of values, the validation isn't a guarantee that there are no referential integrity issues.
 
-In addition, the validation occurs at the time of editing the relationship, and does *not* reflect any subsequent changes to the data.
+In addition, the validation occurs at the time of editing the relationship, and *doesn't* reflect any subsequent changes to the data.
 
 ## What happens if you incorrectly set Assume referential integrity?
 
