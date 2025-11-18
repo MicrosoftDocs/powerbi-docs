@@ -61,7 +61,7 @@ When you ask questions about your data, Copilot works with you to understand you
 
 The standalone Copilot experience can summarize data from reports, and use the report visuals to answer specific questions. If the answer can't be found in the report, Copilot will then use the measures and other data fields in your semantic model (or even create new DAX calculations) to generate the answer for you.
 
-:::image type="content" source="./media/mobile-standalone-copilot/copilot-search-results.png" alt-text="Screenshot of Copilot search results displaying relevant data sources with verified answer labels." border="false":::
+:::image type="content" source="media/mobile-standalone-copilot/copilot-search-results.png" lightbox="media/mobile-standalone-copilot/copilot-search-results.png" alt-text="Screenshot of Copilot search results displaying relevant data sources with verified answer labels." border="false":::
 
 ### Get Copilot responses
 
@@ -78,7 +78,7 @@ The standalone Copilot response might include:
 - **Copy option**: An icon to copy the response to your clipboard for sharing
 - **Feedback**: Thumbs up or thumbs down icons to provide feedback on the response
 
-:::image type="content" source="./media/mobile-standalone-copilot/copilot-response-visual.png" alt-text="Screenshot of Copilot response with textual summary and interactive chart visualization." border="false":::
+:::image type="content" source="media/mobile-standalone-copilot/copilot-response-visual.png" lightbox="media/mobile-standalone-copilot/copilot-response-visual.png" alt-text="Screenshot of Copilot response with textual summary and interactive chart visualization." border="false":::
 
 You can share Copilot responses and visuals with colleagues:
 
@@ -91,11 +91,11 @@ Great answers start with great data. The clearer and more structured your data i
 
 When querying semantic models or reports that haven't been prepped for AI, Copilot displays a warning message indicating the results should be carefully checked for accuracy.
 
-:::image type="content" source="./media/mobile-standalone-copilot/review-warning.png" alt-text="Screenshot of Copilot data verification warning message for nonendorsed semantic models." border="false":::
+:::image type="content" source="media/mobile-standalone-copilot/review-warning.png" lightbox="media/mobile-standalone-copilot/review-warning.png" alt-text="Screenshot of Copilot data verification warning message for nonendorsed semantic models." border="false":::
 
 Answers from models that haven't been prepped are clearly marked with this message to ensure you're aware of potential limitations before proceeding. You can still view and interact with the answer by tapping **View answer**, and the response will appear inline. However, you should review the results carefully to ensure accuracy.
 
-:::image type="content" source="./media/mobile-standalone-copilot/copilot-view-answer.png" alt-text="Screenshot of Copilot view answer button and the answer that appears after selecting the button." border="false":::
+:::image type="content" source="media/mobile-standalone-copilot/copilot-view-answer.png" lightbox="media/mobile-standalone-copilot/copilot-view-answer.png" alt-text="Screenshot of Copilot view answer button and the answer that appears after selecting the button." border="false":::
 
 ## Limitations and considerations
 
