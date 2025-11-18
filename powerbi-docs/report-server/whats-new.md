@@ -29,6 +29,15 @@ Read the Power BI blog post, [Power BI Report Server September 2025 Feature Summ
 
 Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server (PBIRS). No new versions of SQL Server Reporting Services (SSRS) will be released. PBIRS becomes the default on-premises reporting solution for SQL Server.
 
+#### Power BI Desktop for Power BI Report Server - 64-bit Only
+
+Starting with the September 2025 release, Power BI Desktop for Power BI Report Server is now **64-bit only**. The 32-bit variant is deprecated and no longer supported.
+
+**Migration guidance:**
+- Administrators and authors should migrate from 32-bit to 64-bit Power BI Desktop for Report Server.
+- Download the latest 64-bit version from the [Power BI Report Server download page](download-powerbi-report-server.md).
+- For supported architectures and system requirements, see [Hardware and software requirements for installing Power BI Report Server](system-requirements.md).
+
 ### Visualizations
 
 - Drill Down Line PRO by ZoomChart
