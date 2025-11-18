@@ -269,7 +269,7 @@
         - name: Copilot in Power BI Desktop
           href: copilot-power-bi-desktop.md
         - name: Copilot in Power BI Mobile apps
-          href: ../consumer/mobile/mobile-standalone-copilot.md
+          href: ../consumer/mobile/mobile-copilot-overview.md
       - name: Copilot features for business users
         items:
         - name: Summarize a report

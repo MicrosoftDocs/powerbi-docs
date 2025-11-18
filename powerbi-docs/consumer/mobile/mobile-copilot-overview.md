@@ -1,6 +1,6 @@
 ---
 title: Overview of Copilot in Power BI Mobile Apps
-description: Learn about the Copilot features available in Power BI mobile apps, including in-report Copilot and standalone Copilot experiences.
+description: "Discover AI-powered Copilot features in Power BI mobile apps: in-report and standalone experiences. Get instant insights on the go. Start using Copilot today."
 author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
@@ -13,21 +13,22 @@ ms.date: 11/18/2025
 
 # Overview of Copilot in Power BI mobile apps (preview)
 
-| :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false" alt-text="Screenshot of iOS logo."::: | :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false" alt-text="Screenshot of iOS logo."::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false" alt-text="Screenshot of Android logo."::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false" alt-text="Screenshot of Android logo."::: |
+| :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: |
 |:---:|:---:|:---:|:---:|
 | iPhones | iPads | Android phones | Android tablets |
 
-Copilot in Power BI mobile apps brings AI-powered insights directly to your mobile device, helping you make data-driven decisions on the go. Whether you're reviewing a specific report or exploring data across your organization, Copilot provides intelligent assistance through natural language interactions.
+Copilot in Power BI mobile apps brings AI-powered insights directly to your mobile device, helping you make data-driven decisions on the go. Whether you're reviewing a specific report or exploring data across your organization, Copilot provides intelligent assistance through natural language interactions, delivering instant summaries, answers, and visualizations.
 
-The Power BI mobile apps offer two distinct Copilot experiences, each designed for different scenarios:
+The Power BI mobile apps offer two distinct Copilot experiences, each designed for different scenarios: an [in-report Copilot](#in-report-copilot-preview) experience and a [standalone Copilot](#standalone-copilot-preview) experience.
 
 ## Copilot features in Power BI mobile apps
 
-### In-report Copilot
+### In-report Copilot (preview)
 
 The in-report Copilot provides context-aware assistance for the report you're currently viewing. Access it by tapping the Copilot icon in any open report header.
 
 **Key capabilities:**
+
 - Generate AI-powered summaries of report data
 - Get insights about the current report's content
 - Ask questions about the specific report you're viewing
@@ -35,13 +36,14 @@ The in-report Copilot provides context-aware assistance for the report you're cu
 
 **Best for:** Quick insights and summaries when you're already viewing a specific report.
 
-[Learn more about in-report Copilot →](mobile-apps-copilot.md)
+[Learn more about in-report Copilot](mobile-apps-copilot.md).
 
-### Standalone Copilot
+### Standalone Copilot (preview)
 
-The standalone Copilot offers a full-screen chat experience accessible from the app's home page. It can query any report, semantic model, or data agent in your organization without opening a specific item first.
+The standalone Copilot provides a full-screen chat experience that you can access from the app's home page. It can query any report, semantic model, or data agent in your organization without needing to open a specific item first.
 
 **Key capabilities:**
+
 - Ask questions about any accessible data in your organization
 - Query reports, semantic models, and data agents from one place
 - Get answers with both textual summaries and interactive visuals
@@ -50,9 +52,9 @@ The standalone Copilot offers a full-screen chat experience accessible from the 
 
 **Best for:** Exploring data across multiple sources or when you don't know which specific report to open.
 
-[Learn more about standalone Copilot →](mobile-standalone-copilot.md)
+[Learn more about standalone Copilot](mobile-standalone-copilot.md).
 
-## Choosing the right Copilot experience
+## Choose the right Copilot experience
 
 | Scenario | Use this Copilot |
 |----------|------------------|
@@ -65,10 +67,10 @@ The standalone Copilot offers a full-screen chat experience accessible from the 
 
 ## Requirements
 
-To use Copilot in Power BI mobile apps:
+To use Copilot in Power BI mobile apps, you need to meet the following requirements:
 
 - **Admin enablement:** Your administrator must enable Copilot in Power BI. For standalone Copilot, the "Users can access a standalone, cross-item Power BI Copilot experience" tenant setting must also be enabled.
-- **Data preparation:** Copilot works best when data has been prepared for AI by report and semantic model authors.
+- **Data preparation:** Copilot works best when report and semantic model authors prepare data for AI.
 - **Geographic availability:** Your organization's home tenant must be in a [supported geographic region](/fabric/admin/region-availability#all-workloads).
 
 For detailed requirements, see the [Overview of Copilot for Power BI](../../create-reports/copilot-introduction.md).
