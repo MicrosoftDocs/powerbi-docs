@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/24/2021
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 # PDF Rendering Extension conformance to ISO 14289-1 - paginated reports
 

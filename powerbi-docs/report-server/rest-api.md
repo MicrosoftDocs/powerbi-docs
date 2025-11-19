@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/06/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 
 # Develop with the REST APIs for Power BI Report Server
 
 Power BI Report Server support Representational State Transfer (REST) APIs. The REST APIs are service endpoints that support a set of HTTP operations (methods), which provide create, retrieve, update, or delete access for resources within a report server.
 
-The REST API provides programmatic access to the objects in a Power BI Report Server catalog. Examples of objects are folders, reports, KPIs, data sources, datasets, refresh plans, subscriptions, and more. Using the REST API, you can, for example, navigate the folder hierarchy, discover the contents of a folder, or download a report definition. You can also create, update, and delete objects. Examples of working with objects are upload a report, execute a refresh plan, delete a folder, and so on.
+The REST API provides programmatic access to the objects in a Power BI Report Server catalog. Examples of objects are folders, reports, KPIs, data sources, datasets, refresh plans, subscriptions, and more. Using the REST API, you can, for example, navigate the folder hierarchy, discover the contents of a folder, or download a report definition. You can also create, update, and delete objects. Examples of working with objects are uploading a report, executing a refresh plan, deleting a folder, and so on.
 
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
@@ -26,24 +27,24 @@ A REST API request/response pair can be separated into five components:
   
   * URI scheme: Indicates the protocol used to transmit the request. For example, `http` or `https`.
   * URI host: Specifies the domain name or IP address of the server where the REST service endpoint is hosted, such as `myserver.contoso.com`.
-  * Resource path: Specifies the resource or resource collection, which may include multiple segments used by the service in determining the selection of those resources. For example: `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` can be used to get the specified properties for the CatalogItem.
-  * Query string (optional): Provides additional simple parameters, such as the API version or resource selection criteria.
+  * Resource path: Specifies the resource or resource collection, which can include multiple segments used by the service in determining the selection of those resources. For example: `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` can be used to get the specified properties for the CatalogItem.
+  * Query string (optional): Provides other simple parameters, such as the API version or resource selection criteria.
 * HTTP request message header fields:
   
-  * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Reporting Services REST APIs support DELETE, GET, HEAD, PUT, POST, and PATCH methods.
-  * Optional additional header fields, as required by the specified URI and HTTP method.
+  * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you're requesting. Reporting Services REST APIs support DELETE, GET, HEAD, PUT, POST, and PATCH methods.
+  * Other optional header fields, as required by the specified URI and HTTP method.
 * Optional HTTP **request message body** fields, to support the URI and HTTP operation. For example, POST operations contain MIME-encoded objects that are passed as complex parameters. For POST or PUT operations, the MIME-encoding type for the body should be specified in the `Content-type` request header as well. Some services require you to use a specific MIME type, such as `application/json`.
 * HTTP **response message header** fields:
   
-  * An [HTTP status code](https://www.w3.org/Protocols/HTTP/HTRESP.html), ranging from 2xx success codes to 4xx or 5xx error codes. Alternatively, a service-defined status code may be returned, as indicated in the API documentation.
-  * Optional additional header fields, as required to support the request's response, such as a `Content-type` response header.
+  * An [HTTP status code](https://www.w3.org/Protocols/HTTP/HTRESP.html), ranging from 2xx success codes to 4xx or 5xx error codes. Alternatively, a service-defined status code might be returned, as indicated in the API documentation.
+  * Other optional header fields, as required to support the request's response, such as a `Content-type` response header.
 * Optional HTTP **response message body** fields:
   
-  * MIME-encoded response objects are returned in the HTTP response body, such as a response from a GET method that is returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the `Content-type` response header.
+  * MIME-encoded response objects are returned in the HTTP response body, such as a response from a GET method that's returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the `Content-type` response header.
 
 ## API documentation
 
-A modern REST API calls for modern API documentation. The REST API is built on the OpenAPI specification (a.k.a. the swagger specification) and documentation is available on [Microsoft Learn](/rest/api/power-bi-report/).
+A modern REST API calls for modern API documentation. The REST API is built on the OpenAPI specification (also known as the swagger specification) and documentation is available on [Microsoft Learn](/rest/api/power-bi-report/).
 
 ## Testing API calls
 

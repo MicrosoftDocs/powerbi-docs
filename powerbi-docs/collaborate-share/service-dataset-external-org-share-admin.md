@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/07/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Administration
 ---
 
@@ -41,7 +42,7 @@ Microsoft Entra B2B guest users can access semantic models shared with them in t
 As a Power BI admin, you can specify which users or user groups can share semantic models externally with guests from a different tenant through the in-place mechanism. Disabling this setting prevents any user from sharing semantic models externally by restricting the ability of users to turn on external sharing for semantic models they own or manage.  
 
 > [!NOTE]
-> The **Allow specific users** setting is on by default for customers. However, external users won't be able access any semantic models shared in-place if the setting **Allow specific users to turn on external data sharing** is off.  
+> The **Allow specific users** setting is on by default for customers. However, external users will not be able access any semantic models shared in-place if the setting **Allow specific users to turn on external data sharing** is off.  
 
 1. In the admin portal, go to **Tenant settings**.
 

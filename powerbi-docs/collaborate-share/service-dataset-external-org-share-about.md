@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/12/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Administration
 ---
 
@@ -27,17 +28,17 @@ This article provides a basic introduction to in-place semantic model sharing in
 
 - Existing limitations for Microsoft Entra B2B in Power BI and B2B collaboration in Microsoft Entra ID still apply to in-place semantic model sharing.  
 
-- Live connect mode isn't currently supported for in-place semantic model sharing. Power BI will need to change queries in the DirectQuery mode, which consumes resources on shared capacity or a Premium capacity. For more information on DirectQuery versus LiveConnect, see [Data refresh in Power BI](../connect-data/refresh-data.md#semantic-models-in-directquery-mode).
+- Live connect mode is not currently supported for in-place semantic model sharing. Power BI will need to change queries in the DirectQuery mode, which consumes resources on shared capacity or a Premium capacity. For more information on DirectQuery versus LiveConnect, see [Data refresh in Power BI](../connect-data/refresh-data.md#semantic-models-in-directquery-mode).
 
-- If **Private Links** and **Block Public Internet Access** are enabled for a Provider’s Power BI tenant, consumers won't see semantic models shared by this provider in their own tenant. 
+- If **Private Links** and **Block Public Internet Access** are enabled for a Provider's Power BI tenant, consumers cannot see semantic models shared by this provider in their own tenant.
 
 - Semantic models hosted in My Workspace, V1 Workspace (classic), or Admin Monitoring workspaces aren't supported. Only V2 (new) workspaces are supported for in-place sharing.
 
-- For Azure Analysis services (AAS), customers are expected to connect directly to the AAS instance. Live connection to AAS data sources isn't supported.
+- For Azure Analysis services (AAS), customers are expected to connect directly to the AAS instance. Live connection to AAS data sources is not supported.
 
-- This capability isn't supported for composite models, meaning, consumers can't build content for external semantic models that are composite models.
+- This capability is not supported for composite models, meaning, consumers cannot build content for external semantic models that are composite models.
 
-- Only pro and premium users can share semantic models externally. However, pro trial users won't be able to use this capability. In-place semantic model sharing isn't available for free users.  
+- Only pro and premium users can share semantic models externally. However, pro trial users cannot use this capability. In-place semantic model sharing is not available for free users.  
 
 - All composite model limitations apply. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md#considerations-and-limitations). 
 
