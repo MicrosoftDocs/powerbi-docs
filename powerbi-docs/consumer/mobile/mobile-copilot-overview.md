@@ -19,24 +19,9 @@ ms.date: 11/18/2025
 
 Copilot in Power BI mobile apps brings AI-powered insights directly to your mobile device, helping you make data-driven decisions on the go. Whether you're reviewing a specific report or exploring data across your organization, Copilot provides intelligent assistance through natural language interactions, delivering instant summaries, answers, and visualizations.
 
-The Power BI mobile apps offer two distinct Copilot experiences, each designed for different scenarios: an [in-report Copilot](#in-report-copilot-preview) experience and a [standalone Copilot](#standalone-copilot-preview) experience.
+The Power BI mobile apps offer two distinct Copilot experiences, each designed for different scenarios: a [standalone Copilot](#standalone-copilot-preview) experience and an [in-report Copilot](#in-report-copilot-preview) experience.
 
 ## Copilot features in Power BI mobile apps
-
-### In-report Copilot (preview)
-
-The in-report Copilot provides context-aware assistance for the report you're currently viewing. Access it by tapping the Copilot icon in any open report header.
-
-**Key capabilities:**
-
-- Generate AI-powered summaries of report data
-- Get insights about the current report's content
-- Ask questions about the specific report you're viewing
-- Receive responses based on the current state of filters and slicers
-
-**Best for:** Quick insights and summaries when you're already viewing a specific report.
-
-[Learn more about in-report Copilot](mobile-apps-copilot.md).
 
 ### Standalone Copilot (preview)
 
@@ -54,6 +39,19 @@ The standalone Copilot provides a full-screen chat experience that you can acces
 
 [Learn more about standalone Copilot](mobile-standalone-copilot.md).
 
+### In-report Copilot (preview)
+
+The in-report Copilot provides context-aware assistance for the report you're currently viewing. Access it by tapping the Copilot icon in any open report header.
+
+**Key capabilities:**
+
+- Generate AI-powered summaries of report data
+- Get insights about the current report's content
+
+**Best for:** Quick insights and summaries when you're already viewing a specific report.
+
+[Learn more about in-report Copilot](mobile-apps-copilot.md).
+
 ## Choose the right Copilot experience
 
 | Scenario | Use this Copilot |
@@ -63,17 +61,17 @@ The standalone Copilot provides a full-screen chat experience that you can acces
 | I have a question but don't know which report to open | Standalone Copilot |
 | I want to explore data across multiple reports or semantic models | Standalone Copilot |
 | I want to use voice to ask questions (iOS only) | Standalone Copilot |
-| I want to share AI-generated insights with colleagues | Standalone Copilot |
+| I want to share AI-generated insights with colleagues | Standalone Copilot or In-report Copilot |
 
 ## Requirements
 
-To use Copilot in Power BI mobile apps, you need to meet the following requirements:
+To use Copilot in Power BI mobile apps, you need to meet the requirements outlined in [Copilot requirements](../../create-reports/copilot-introduction.md#copilot-requirements). This includes the requirements for the standalone Copilot experience.
 
-- **Admin enablement:** Your administrator must enable Copilot in Power BI. For standalone Copilot, the "Users can access a standalone, cross-item Power BI Copilot experience" tenant setting must also be enabled.
-- **Data preparation:** Copilot works best when report and semantic model authors prepare data for AI.
-- **Geographic availability:** Your organization's home tenant must be in a [supported geographic region](/fabric/admin/region-availability#all-workloads).
+## Data preparation
 
-For detailed requirements, see the [Overview of Copilot for Power BI](../../create-reports/copilot-introduction.md).
+Great answers start with great data. The clearer and more structured your data is, the better Copilot can help. Semantic model authors have tooling features to help [prepare your data for AI](../../create-reports/copilot-prepare-data-ai.md).
+
+When querying semantic models or reports that haven't been prepped for AI, Copilot displays a warning message indicating the results should be carefully checked for accuracy.
 
 ## Related content
 
