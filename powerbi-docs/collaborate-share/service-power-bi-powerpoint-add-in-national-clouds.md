@@ -8,9 +8,10 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ms.custom: references_regions
 LocalizationGroup: Share your work
-ms.date: 02/25/2024
 ---
 
 # The Power BI add-in for PowerPoint in national/regional clouds

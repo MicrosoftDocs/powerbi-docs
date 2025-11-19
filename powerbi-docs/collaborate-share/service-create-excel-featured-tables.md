@@ -7,7 +7,8 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/16/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ---
 # Set featured tables in Power BI Desktop to appear in Excel
@@ -22,13 +23,13 @@ In the Data Types Gallery in Excel, users can find data from *featured tables* i
 
 1. In Power BI Desktop, go to Model view.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Screenshot that highlights where to select the model view.":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Screenshot showing the model view selection.":::
  
 2. Select a table, and set **Is featured table** to **Yes**.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Screenshot that highlights the Is feature table option.":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Screenshot showing the Is featured table option.":::
 
-4. In the **Set up this featured table** dialog box, provide the required fields:
+3. In the **Set up this featured table** dialog box, provide the required fields:
 
     - A **Description**. 
         > [!TIP]
@@ -36,7 +37,7 @@ In the Data Types Gallery in Excel, users can find data from *featured tables* i
     - A **Row label**. The Row label field value is used in Excel so users can easily identify the row. It appears as the cell value for a linked cell, in the **Data Selector** pane, and in the **Information** card. 
     - A **Key column**. The Key column field value provides the unique ID for the row. This value enables Excel to link a cell to a specific row in the table.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Screenshot that shows how to set up featured table.":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Screenshot showing how to set up a featured table.":::
 
 1. After you publish or import the semantic model to the Power BI service, the featured table appears in the Excel Data Types Gallery. You and other report creators can also create reports built on this semantic model.
 
@@ -50,7 +51,7 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 
 - Row matching is based on text columns in the featured table. It uses the same indexing as Power BI Q&A capability, which is optimized for the English-language search. Searching in other languages might not result in accurate matches. 
 - Featured tables use Power BI Q&A indexing when users query data in those tables. For more information, see [How does indexing work with Q&A](../natural-language/q-and-a-data-sources.md#how-does-indexing-work-with-qa).
-- Most numerical columns aren't considered for matching. If the Row label or Key column is numeric, they're included for matching.
+- Most numerical columns are not considered for matching. If the Row label or Key column is numeric, they're included for matching.
 - Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
 
     - Rows with text columns whose values exactly match “Orange” or “County” are returned. 
@@ -70,21 +71,21 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 Here are the current limitations:
 
 - The integration is available in Excel in the current channel.
-- Featured tables in Power BI semantic models that use the following capabilities aren't shown in Excel: 
+- Featured tables in Power BI semantic models that use the following capabilities are not shown in Excel: 
 
     - DirectQuery semantic models
     - Semantic models with a live connection
 
-- Excel shows only data in columns, calculated columns, and measures defined in the featured table. The following aren't provided:
+- Excel shows only data in columns, calculated columns, and measures defined in the featured table. The following are not provided:
 
     - Measures defined on related tables
     - Implicit measures calculated from relationships
 
 - Power BI returns at most 100 row suggestions for each cell.
 - Some symbols aren't supported.
-- Setting or updating the featured table isn't supported in the XMLA endpoint.
+- Setting or updating the featured table is not supported in the XMLA endpoint.
 - Changing the Table name, Row Label, or Key Column in the featured table may impact Excel users with linked cells to rows in the table. 
-- Excel shows when the data was retrieved from the Power BI semantic model. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a semantic model. For example, say a semantic model in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
+- Excel shows when the data was retrieved from the Power BI semantic model. This time is not necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a semantic model. For example, say a semantic model in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
 - See [Considerations and limitations](service-excel-featured-tables.md#considerations-and-limitations) in the article "Access Power BI featured tables in Excel" for other Excel considerations.
 
 ## Related content
