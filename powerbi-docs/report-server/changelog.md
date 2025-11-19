@@ -26,11 +26,11 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ### Power BI Report Server
 
 - *Version: 1.24.9392.34333 (build 15.0.1119.107), Released: September 22, 2025*
- - Fixed issue where custom authentication didn't re-authenticate upon cookie expiration 
- - Fixed issue with exporting Power BI visual to excel caused an error
- - Resolved several accessibility issues
- - Custom Visual API shipped with release - version v5.10.0
- - Security updates
+	- Fixed issue where custom authentication didn't re-authenticate upon cookie expiration 
+	- Fixed issue with exporting Power BI visual to excel caused an error
+	- Resolved several accessibility issues
+	- Custom Visual API shipped with release - version v5.10.0
+	- Security updates
 
 ### Power BI Desktop (optimized for Power BI Report Server)
 
