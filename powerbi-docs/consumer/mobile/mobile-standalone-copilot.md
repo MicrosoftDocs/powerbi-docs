@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 > [!IMPORTANT]
 > This feature is in preview.
 
-| :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: |
+| :::image type="icon" source="media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: | :::image type="icon" source="media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: |
 |:---:|:---:|:---:|:---:|
 | iPhones | iPads | Android phones | Android tablets |
 
@@ -34,7 +34,7 @@ To start using the standalone Copilot:
 1. Open the Power BI mobile app on your device to view the home page.
 1. Select the **Copilot** button in the bottom navigation bar.
 
-   :::image type="content" source="./media/mobile-standalone-copilot/copilot-button-nav.png" alt-text="Screenshot of Power BI mobile app showing the Copilot button in the bottom navigation bar." border="false":::
+   :::image type="content" source="media/mobile-standalone-copilot/copilot-button-nav.png" lightbox="media/mobile-standalone-copilot/copilot-button-nav.png" alt-text="Screenshot of Power BI mobile app showing the Copilot button in the bottom navigation bar." border="false":::
 
 The full-screen Copilot chat interface opens, ready to accept your questions.
 
