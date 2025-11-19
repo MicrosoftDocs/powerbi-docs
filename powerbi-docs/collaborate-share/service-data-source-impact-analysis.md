@@ -7,7 +7,8 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 01/21/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: 
 ---
 
@@ -24,16 +25,16 @@ To perform data source impact analysis:
 1. Go to the workspace that contains the data source you're interested in and open [lineage view](service-data-lineage.md).
 1. Find the data source's card and select the impact analysis icon.
 
-    :::image type="content" source="media/service-data-source-impact-analysis/data-source-impact-analysis-button.png" alt-text="Screenshot of data source card that shows the impact analysis button.":::
+    :::image type="content" source="media/service-data-source-impact-analysis/data-source-impact-analysis-button.png" alt-text="Screenshot showing data source card that shows the impact analysis button.":::
 
 The impact analysis side panel opens.
 
-:::image type="content" source="media/service-data-source-impact-analysis/data-source-impact-analyis-side-pane.png" alt-text="Screenshot of data source impact analysis side pane.":::
+:::image type="content" source="media/service-data-source-impact-analysis/data-source-impact-analyis-side-pane.png" alt-text="Screenshot showing data source impact analysis side pane.":::
 
 * **Data source type**: Indicates the data source type.
 * **Path to data source**: Path to the data source as defined in Power BI Desktop. In this example, the path to the SQL server database data source is the connection string *twitterDB-yaronctestingdb1.database.windows.net*, as defined in Power BI Desktop, shown in the following image. It consists of the database name *twitterDB* and the server name *yaronctestingdb1.database.windows.net*.
 
-    :::image type="content" source="media/service-data-source-impact-analysis/connection-string-definition-in-desktop.png" alt-text="Screenshot of connection string definition in Power BI Desktop.":::
+    :::image type="content" source="media/service-data-source-impact-analysis/connection-string-definition-in-desktop.png" alt-text="Screenshot showing connection string definition in Power BI Desktop.":::
 
 * **Impact summary**: The number of potentially impacted workspaces, dataflows, and semantic models. This count includes workspaces you don't have access to.
 * **Usage breakdown**: For each workspace, the names of the impacted dataflows and semantic models. To further explore the impact on a particular workspace, select the workspace name to open the workspace. Then use [semantic model impact analysis](service-dataset-impact-analysis.md) to see the usage details about connected reports and dashboards.
@@ -44,7 +45,7 @@ If you make a change to a data source or are thinking about making a change, you
 
 1. Select **Notify contacts** in the impact analysis side pane. The notify contacts dialog appears.
 
-    :::image type="content" source="media/service-data-source-impact-analysis/notify-contacts-dialog.png" alt-text="Screenshot of data source notify contacts dialog.":::
+    :::image type="content" source="media/service-data-source-impact-analysis/notify-contacts-dialog.png" alt-text="Screenshot showing data source notify contacts dialog.":::
 
 1. In the text box, provide some detail about the change.
 

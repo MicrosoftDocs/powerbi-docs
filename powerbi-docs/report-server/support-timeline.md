@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 
 # Support timeline for Power BI Report Server
@@ -19,7 +20,7 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 * Security and Critical Updates servicing phase - When running the latest current version of Power BI Report Server, you receive both Security and Critical updates.
 * Security Updates (Only) servicing phase - After the release of a new version, support for older versions reduces to Security updates only for the rest of the 12-month support lifecycle (shown in figure 1).
 
-    ![Graph illustrating the support timeframe](media/support-timeline/report-server-support-timeline-overall.png)
+    :::image type="content" source="media/support-timeline/report-server-support-timeline-overall.png" alt-text="Screenshot of a graph illustrating the support timeframe.":::
 
 To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 

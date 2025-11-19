@@ -100,6 +100,18 @@ The card visual introduces a dynamic *collage* layout, letting you highl
 
 ## Considerations and limitations
 
+### Default behavior changes from public preview
+
+During preview, the card visual's default behavior was different to how it now behaves in general availability. At general availablity, we made updates to enhance layout consistency, visual alignment, and overall user experience. 
+
+- **Callout image alignment:** During preview, the callout image aligned was contrained to the callout label text which could have left part of the the callout container empty. Now the image aligns to the callout container. 
+
+- **Background image fit:** During preview, the background image could repeat to fill the container. We've updated the **image fit** options to align with other visual image options. Fit, stretch, fill, and center.  
+   
+- **Reference label outer padding:** During preview, **reference labels** had an **outer padding** setting that unintentionally affected the callout area by pushing elements out of place around the divider. We've removed the **outer padding** setting from **reference labels**.
+
+- **Autogrid columns:** During preview, the visuals would leave an empty column to match the specified number of columns. With the addition of **autogrid**, it arranges cards to fill the visual container based the cards present. This setting can be toggled off to return to previous behavior.
+
 ### Format settings
 
 - The **(new) card visual** is generally available as the **card visual** with the November 2025 Power BI release. If you used the card visual during the public preview phase, you might notice behavior or formatting changes that reflect the improvements in the general availability release.

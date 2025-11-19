@@ -7,7 +7,8 @@ ms.reviewer: nikhilga
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/16/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ---
 # Feature recommended content on colleagues' Power BI Home page

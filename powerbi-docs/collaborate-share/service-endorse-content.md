@@ -6,7 +6,8 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/23/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ---
 # Endorse your content
