@@ -1,0 +1,24 @@
+- name: "Power BI MCP server documentation"
+  href: index.yml
+  expanded: true
+  items:
+  - name: Overview
+    items:
+    - name: "What are the Power BI MCP servers?"
+      href: mcp-servers-overview.md
+  - name: Get started
+    items:
+    - name: "Get started with the remote Power BI MCP server"
+      href: remote-mcp-server-getting-started.md
+    - name: "Get started with the Power BI Modeling MCP server"
+      href: https://github.com/microsoft/powerbi-modeling-mcp
+  - name: Developer features
+    items:
+    - name: "Remote Power BI MCP server tools"
+      href: remote-mcp-server-tools.md
+  - name: Reference
+    items:
+    - name: "Model Context Protocol specification"
+      href: https://modelcontextprotocol.io/specification/latest
+    - name: "VS Code MCP Documentation"
+      href: https://code.visualstudio.com/docs/copilot/customization/mcp-servers
