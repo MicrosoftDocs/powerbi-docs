@@ -51,9 +51,9 @@ The full-screen Copilot chat interface opens, ready to accept your questions.
 
 When you ask questions about your data, Copilot works with you to understand your topic of interest and use that context to identify the right report, semantic model, or data agent to use as its source. You can ask Copilot questions about any accessible report, semantic model, or data agent, and Copilot processes your query and identifies relevant data sources.
 
-The standalone Copilot experience can summarize data from reports, and use the report visuals to answer specific questions. If the answer can't be found in the report, Copilot will then use the measures and other data fields in your semantic model (or even create new DAX calculations) to generate the answer for you.
+:::image type="content" source="media/mobile-standalone-copilot/copilot-ask-question.png" lightbox="media/mobile-standalone-copilot/copilot-ask-question.png" alt-text="Screenshot of Copilot confirming that it will provide a response to the given question." border="false":::
 
-:::image type="content" source="media/mobile-standalone-copilot/copilot-search-results.png" lightbox="media/mobile-standalone-copilot/copilot-search-results.png" alt-text="Screenshot of Copilot search results displaying relevant data sources with verified answer labels." border="false":::
+The standalone Copilot experience can summarize data from reports, and use the report visuals to answer specific questions. If the answer can't be found in the report, Copilot will then use the measures and other data fields in your semantic model (or even create new DAX calculations) to generate the answer for you.
 
 ### Voice input (iPhone and iPad)
 
@@ -69,8 +69,8 @@ The standalone Copilot response might include:
   - From the drawer, you can also share the visual as a screenshot.
 - **References**: Items such as reports, apps, data agents, or semantic models that the answer is based on
   - Tap the **References** button to open a drawer with the referenced items and related information
-- **How Copilot arrived at this (when applicable)**: Details about how Copilot generated the response
-- **DAX query (when applicable)**: The query used to generate the answer
+- **How Copilot arrived at this** (when applicable): Details about how Copilot generated the response
+- **DAX query** (when applicable): The query used to generate the answer
 - **Copy option**: An icon to copy the response to your clipboard for sharing
 - **Feedback**: Thumbs up or thumbs down icons to provide feedback on the response
 
@@ -84,15 +84,13 @@ Great answers start with great data. The clearer and more structured your data i
 
 When querying semantic models or reports that haven't been prepped for AI, Copilot displays a warning message indicating the results should be carefully checked for accuracy.
 
-:::image type="content" source="media/mobile-standalone-copilot/review-warning.png" lightbox="media/mobile-standalone-copilot/review-warning.png" alt-text="Screenshot of Copilot data verification warning message for nonendorsed semantic models." border="false":::
-
 Answers from models that haven't been prepped are clearly marked with this message to ensure you're aware of potential limitations before proceeding. You can still view and interact with the answer by tapping **View answer**, and the response will appear inline. However, you should review the results carefully to ensure accuracy.
 
 :::image type="content" source="media/mobile-standalone-copilot/copilot-view-answer.png" lightbox="media/mobile-standalone-copilot/copilot-view-answer.png" alt-text="Screenshot of Copilot view answer button and the answer that appears after selecting the button." border="false":::
 
-## Requirements
+## Copilot requirements
 
-To use the standalone Copilot in Power BI mobile apps, you need to meet the requirements outlined in [Requirements for the standalone Copilot](../../create-reports/copilot-introduction.md#requirements-for-the-standalone-copilot).
+Read about [requirements to use the standalone Copilot experience](../../create-reports/copilot-introduction.md#requirements-for-the-standalone-copilot).
 
 ## Limitations and considerations
 
