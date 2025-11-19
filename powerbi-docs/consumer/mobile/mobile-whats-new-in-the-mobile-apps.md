@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 09/08/2025
+ms.date: 11/18/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -16,8 +16,14 @@ Power BI Mobile app versions are released on a monthly cadence. The latest versi
 
 For related "What's New" information, see:
 
-* [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
-* [What's new in Power BI](../../fundamentals/whats-new.md)
+- [What's new in Power BI](../../fundamentals/whats-new.md)
+- [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
+
+## November 2025
+
+### Standalone Copilot comes to Power BI mobile apps (preview)
+
+The standalone Copilot experience is now available in the Power BI mobile apps. Access it from the Copilot button in the bottom navigation bar to ask questions about any report, semantic model, or data agent in your organization. Get AI-powered answers with textual summaries and interactive visuals, all without opening a specific report first. On iPhone and iPad, you can even use voice input to dictate your questions. This full-screen chat experience makes it easier than ever to explore your data on the go. For more information, see [Standalone Copilot in Power BI mobile apps (preview)](./mobile-standalone-copilot.md).
 
 ## September 2025
 
