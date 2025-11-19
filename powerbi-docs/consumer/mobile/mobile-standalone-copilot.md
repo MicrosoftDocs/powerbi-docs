@@ -66,17 +66,16 @@ The standalone Copilot response might include:
 - **Textual summary**: A written answer to your question
 - **Interactive visual**: A screenshot of a chart or graph representing the data
   - Tap the **visual** to open it in a drawer where you can interact with it in live mode, select elements, use tooltips, and drill down into the data.
-  - From the drawer, you can also share the visual as a screenshot.
 - **References**: Items such as reports, apps, data agents, or semantic models that the answer is based on
   - Tap the **References** button to open a drawer with the referenced items and related information
 - **How Copilot arrived at this** (when applicable): Details about how Copilot generated the response
 - **DAX query** (when applicable): The query used to generate the answer
-- **Copy option**: An icon to copy the response to your clipboard for sharing
+- **Copy option**: An icon to copy responses and visuals to your clipboard for sharing with colleagues
+  - Select the **Copy** icon at the top of any Copilot response to copy the text to your clipboard. You can then paste it into email, Teams, or other platforms.
+  - Open a visual in the drawer view and select the **Share** option to send it as a screenshot via email, Teams, messaging apps, or other sharing methods.
 - **Feedback**: Thumbs up or thumbs down icons to provide feedback on the response
 
 :::image type="content" source="media/mobile-standalone-copilot/copilot-response-visual.png" lightbox="media/mobile-standalone-copilot/copilot-response-visual.png" alt-text="Screenshot of Copilot response with textual summary and interactive chart visualization." border="false":::
-
-You can share Copilot responses and visuals with colleagues by selecting the **Copy** icon at the top of any Copilot response to copy the text to your clipboard, or by opening a visual in the drawer view and selecting the **Share** option to send it as a screenshot via email, Teams, messaging apps, or other sharing methods.
 
 ## Prep data for AI
 
