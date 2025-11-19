@@ -7,7 +7,8 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ms.custom: sfi-image-nochange
 ---
@@ -26,17 +27,20 @@ To learn how to create featured tables in Power BI, see [Set featured tables in 
 
 Featured tables from Power BI semantic models appear as *data types* on the **Data** ribbon, in the Excel **Data Types** gallery.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Screenshot of the Data Types gallery in the Excel Data ribbon.":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Screenshot showing the Data Types gallery in the Excel Data ribbon."
+:::
 
 When expanded, the gallery shows the generic data types such as **Stocks** and **Geography**. You also see the top 10 **Organization** data types available to you, from featured tables in Power BI semantic models.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Screenshot of Excel Data Types Gallery.":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Screenshot showing Excel Data Types Gallery."
+:::
 
 ## Search for Power BI data in the Data Types Gallery
 
 To search for data in a Power BI featured table, select a cell or a range in your Excel sheet containing a value that matches the value in a featured table. Select the **More** arrow next to the Data Types gallery.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-types-more.png" alt-text="Screenshot of the More icon in Excel Data Types Gallery.":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-types-more.png" alt-text="Screenshot showing the More icon in Excel Data Types Gallery."
+:::
 
 If you see the table you're looking for, select it. Otherwise, select **More from your organization**. Excel displays all the featured tables you have access to in the pane.
 
@@ -48,7 +52,8 @@ In the **Data Selector** pane, type in the **Filter** box to narrow your options
  
 If Excel finds matching rows with high confidence, the cells are immediately linked to those rows. The linked item icon indicates the cells are linked to the rows in Power BI.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-card-icon.png" alt-text="Screenshot of Linked item icon.":::
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-card-icon.png" alt-text="Screenshot showing Linked item icon."
+:::
 
 If a cell has more than one potential matching row, the cell shows a question mark icon, and the **Data Selector** pane opens. In the following example, we selected a range from *B3:B9*, then selected the Power BI featured table **Store**. All the rows had matches except cell B9, "508 - Pasadena Lindseys". The **Data Selector** shows two possible matches, the same value in two different tables.
 
@@ -60,7 +65,8 @@ The *Organization* data option can return rows from multiple featured tables. Ex
  
 For each suggestion, select the row name in the **Data Selector** pane to see more details within the row to help you pick the right row. Once you’ve found it, press **Select** to link the row to the cell in Excel. 
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-details.png" alt-text="Screenshot of Data Selector details.":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-details.png" alt-text="Screenshot showing Data Selector details."
+:::
 
 ## Explore related data
 

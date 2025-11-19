@@ -8,7 +8,8 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/30/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Common tasks
 ms.custom:
   - retail analysis sample
@@ -49,9 +50,6 @@ For users familiar with SQL Server Reporting Services (SSRS), this feature is si
     :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-create-dynamic-subscription.png" alt-text="Screenshot of the Power BI service showing the Create subscription window.":::
 
 1. Select **Dynamic per recipient**.
-
-    :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-dynamic-subscription.png" alt-text="Screenshot of the Power BI service showing the New subscriptions screen and the option for Dynamic per recipient.":::
-
 1. Highlight the Power BI semantic model that contains your recipient data. Recipient data includes columns for email address, filters that can be varied per recipient, and optionally, attachment type and email subject.
 
     In some organizations, there might be a corporate employee Power BI semantic model that fits the purpose. Or, you might need to create a new semantic model that contains email addresses, and values for report filters. The critical piece of data is the email addresses. In order for you to set the filters on a per-recipient basis, the semantic model needs to include the email addresses of all potential recipients. Select **Next**. In this example, our mapping semantic model is named **Contoso sales employees**.
