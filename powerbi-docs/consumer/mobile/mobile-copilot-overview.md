@@ -63,15 +63,13 @@ The in-report Copilot provides context-aware assistance for the report you're cu
 | I want to use voice to ask questions (iOS only) | Standalone Copilot |
 | I want to share AI-generated insights with colleagues | Standalone Copilot or In-report Copilot |
 
-## Requirements
+## Copilot requirements
 
-To use Copilot in Power BI mobile apps, you need to meet the requirements outlined in [Copilot requirements](../../create-reports/copilot-introduction.md#copilot-requirements). This includes the requirements for the standalone Copilot experience.
+Read about [requirements to use the standalone Copilot experience](../../create-reports/copilot-introduction.md#requirements-for-the-standalone-copilot).
 
 ## Data preparation
 
-Great answers start with great data. The clearer and more structured your data is, the better Copilot can help. Semantic model authors have tooling features to help [prepare your data for AI](../../create-reports/copilot-prepare-data-ai.md).
-
-When querying semantic models or reports that haven't been prepped for AI, Copilot displays a warning message indicating the results should be carefully checked for accuracy.
+**Data needs to be prepared to work with Copilot.** Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs. Learn how to [prep your data](../../create-reports/copilot-prepare-data-ai.md).
 
 ## Related content
 
