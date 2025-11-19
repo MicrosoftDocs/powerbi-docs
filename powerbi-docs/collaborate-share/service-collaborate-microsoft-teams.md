@@ -8,15 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
-ms.date: 03/01/2023
+ms.date: 11/01/2025
 ---
 
 # Collaborate with Power BI in Microsoft Teams, Outlook, and Office
 
 Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office to enable remote work and keep employees in sync. This article outlines options for sharing and collaborating on interactive Power BI content in Microsoft Teams, Outlook, and Office.
 
-:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power BI report embedded in a Microsoft Teams channel." lightbox="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png":::
+:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot showing a Power BI report embedded in a Microsoft Teams channel." lightbox="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png":::
 
 > [!NOTE]
 > The Power BI app is generally available in Microsoft Teams. The Power BI app is in public preview in Microsoft Outlook and Microsoft Office. Learn more about the [public preview](#OutlookOffice).
@@ -35,7 +36,7 @@ Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office t
 In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
 - Ensure the Power BI app is enabled in the Teams Admin center apps list.
-- Your users with a Fabric (Free) license can access content shared to them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
+- Your users with a Fabric (Free) license can access content shared to them from a workspace that's part of a [Power BI Premium capacity (P SKU)](/fabric/enterprise/powerbi/service-premium-what-is) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
 - Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
 - Users need to sign in within the Power BI app for Teams or the Power BI service to activate their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
@@ -59,20 +60,20 @@ You can integrate a Power BI report in Teams and share it with external users. H
 
 ## Known issues and limitations
 
-- Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within the embedded report.
-- Power BI dashboards can't be embedded in the **Power BI** tab for Microsoft Teams.
+- Power BI does not support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within the embedded report.
+- Power BI dashboards can not be embedded in the **Power BI** tab for Microsoft Teams.
 - Users without a Power BI license or permission to access the report see a "Content isn't available" message.
 - You might have issues if you use Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../fundamentals/power-bi-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
-- [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
+- [URL filters](service-url-filters.md) are not supported with the **Power BI** tab for Microsoft Teams.
 - In US Government Community Cloud, the Power BI app for Microsoft Teams and the new tab are available. However, the following experiences aren't available:
 
   - Power BI messaging extension, which provides link previews, search, and link unfurling
   - Power BI activity feed notifications
   - Chat in Microsoft Teams
 
-- In other national/regional clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support workspaces or reports in Power BI apps.
-- After you save the tab, you can't change the tab name through the tab settings. Use the **Rename** option to change it.
-- Link previews don't work in meeting chat or private channels.
+- In other national/regional clouds, the new **Power BI** tab is not available. An older version might be available that does not support workspaces or reports in Power BI apps.
+- After you save the tab, you can not change the tab name through the tab settings. Use the **Rename** option to change it.
+- Link previews do not work in meeting chat or private channels.
 - The messaging extension may process request and response data in a region that's different from your Power BI tenant home region.
 
 ## <a id="OutlookOffice"></a>Power BI app in Outlook and Office
@@ -84,11 +85,11 @@ The Power BI app for Microsoft Teams is available in Microsoft Outlook and Micro
 
 In Outlook and Office, the preview app has some additional limitations:
 
-- File downloads aren't supported yet. This means export options and file downloads don't download files. 
-- On the **Create** tab, the **Paste or manually enter data** option isn't supported yet.
-- Viewing items in full screen option isn't supported yet.
-- Deep links aren't supported yet in Outlook and Office. Items open in a new browser tab.
-- In Outlook, generating link previews for URLs that you paste into email isn't supported yet.
+- File downloads are not supported yet. This means export options and file downloads do not download files. 
+- On the **Create** tab, the **Paste or manually enter data** option is not supported yet.
+- Viewing items in full screen option is not supported yet.
+- Deep links are not supported yet in Outlook and Office. Items open in a new browser tab.
+- In Outlook, generating link previews for URLs that you paste into email is not supported yet.
 
 ## Microsoft Power Platform in Microsoft Teams
 

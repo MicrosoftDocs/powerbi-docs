@@ -7,13 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/06/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ---
 
 # Embed a report in a secure portal or website
 
-With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](/fabric/security/service-admin-row-level-security) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or iframe. 
+With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](/fabric/security/service-admin-row-level-security) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). The secure embedding ensures that only authenticated and authorized users can access reports. They provide no-code embedding into any portal that accepts a URL or iframe. 
 
 The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals by using a low-code approach that requires only basic HTML and JavaScript knowledge.
 
@@ -42,8 +43,10 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 6. When you use an iframe, you might need to edit the **height**, and **width** values to have it fit in your portal's web page.
 
 ```html
-<iframe width="1080" height="760" src="https://app.powerbi.com/reportEmbed?reportId=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&autoAuth=true" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="1080" height="760" src="https://app.powerbi.com/reportEmbed?reportId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb&autoAuth=true" frameborder="0" allowFullScreen="true"></iframe>
 ```
+
+   In this example, `aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` represents your report's unique ID (GUID). Replace this with your actual report ID, which you'll find in the embed code dialog when you select **Embed report** > **Website or portal**.
 
 ## Grant report access
 
@@ -71,13 +74,18 @@ You can find the **pageName** value at the end of report's URL when you view a r
 1. Open the report from the Power BI service in your web browser, and then copy the address bar URL.
 
     ```http
-    https://app.powerbi.com/groups/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/reports/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/ReportSection2
+    https://app.powerbi.com/groups/me/reports/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/ReportSection2
     ```
+
+    In this example:
+    - `me` indicates the report is in your personal workspace (or replace with a workspace ID for a shared workspace)
+    - `aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` represents the report ID (replace with your actual report ID)
+    - `ReportSection2` is the page name
 
 2. Append the **pageName** property and its value to the end of the URL.
 
     ```http
-    https://app.powerbi.com/reportEmbed?reportId=/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&autoAuth=true&pageName=ReportSection2
+    https://app.powerbi.com/reportEmbed?reportId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb&autoAuth=true&pageName=ReportSection2
     ```
 
 ## Filter report content by using URL filters 
@@ -119,8 +127,17 @@ report.src = newUrl;
 ```
 
 ```http
-https://app.powerbi.com/reportEmbed?reportId=/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&autoAuth=true&pageName=ReportSection&filter=Industries/Industry eq 'Energy'
+https://app.powerbi.com/reportEmbed?reportId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb&autoAuth=true&pageName=ReportSection&$filter=Industries/Industry eq 'Energy'
 ```
+
+   In this example:
+   - `reportId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` - Your unique report ID (replace with your actual report ID)
+   - `autoAuth=true` - Enables automatic authentication
+   - `pageName=ReportSection` - Opens a specific page
+   - `$filter=Industries/Industry eq 'Energy'` - Filters to show only Energy industry data
+
+> [!IMPORTANT]
+> URL filters are **not a security feature** and should not be used to restrict access to sensitive data. Users can modify or remove URL parameters to view unfiltered data or data with different filters. URL filters are only for convenience and initial view customization. To properly secure data and restrict what users can see based on their identity or permissions, use [row-level security (RLS)](/fabric/security/service-admin-row-level-security) or [object-level security (OLS)](/analysis-services/tabular-models/object-level-security) in your data model.
 
 You can add as many buttons as you'd like to create a low-code custom experience. 
 
