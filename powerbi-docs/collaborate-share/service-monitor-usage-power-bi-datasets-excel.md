@@ -27,8 +27,7 @@ To identify users connecting to Power BI semantic models from Excel desktop or E
     Get-PowerBIActivityEvent - StartDateTime '2022-03-15T00:00:00' -EndDateTime '2022-03-15T23:59:59' -ActivityType 'AnalyzedByExternalApplication' 
     ```
 
-    :::image type="content" source="media/service-monitor-usage-power-bi-datasets-excel/power-bi-audit-logs-excel.png" alt-text="Screenshot showing PowerShell Get-PowerBIActivityEvent cmdlet."
-    :::
+    :::image type="content" source="media/service-monitor-usage-power-bi-datasets-excel/power-bi-audit-logs-excel.png" alt-text="Screenshot showing PowerShell Get-PowerBIActivityEvent cmdlet.":::
 
 ## Related content
 
