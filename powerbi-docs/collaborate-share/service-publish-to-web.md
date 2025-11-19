@@ -7,7 +7,8 @@ ms.reviewer: Ben.Zulauf
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/22/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ---
 
@@ -28,6 +29,7 @@ With the Power BI **Publish to web** option, you can easily embed interactive Po
 - Publish to web is available for reports you can edit in your My Workspace and workspaces.  
 - It isn't available for reports shared with you, or ones relying on row-level security to secure data. 
 - Your report viewers don't need to be Power BI users.
+- **Your Power BI administrator must enable the Publish to web tenant setting.** If you're an administrator, see [Enable Publish to web as an administrator](#enable-publish-to-web-as-an-administrator).
 
 See the [**Considerations and limitations**](#considerations-and-limitations) section below for a complete list of cases where Publish to web isn't supported. 
 
@@ -39,13 +41,13 @@ Follow these steps to use Publish to web. Review the **Warning** earlier in this
 
    ![Screenshot of Publish to web on More options.](media/service-publish-to-web/power-bi-more-options-publish-web.png)
    
-2. If your Power BI admin hasn't allowed you to create embed codes, you may need to contact them.
+1. If your Power BI admin hasn't allowed you to create embed codes, you may need to contact them.
 
    ![Screenshot of Contact your Power BI admin.](media/service-publish-to-web/publish_to_web_admin_prompt.png)
    
-   For help with finding the person who can enable Publish to web in your organization, see [How to find your Power BI administrator](#find-your-power-bi-administrator) later in this article.
+   For help with finding the person who can enable Publish to web in your organization, see [How to find your Power BI administrator](#find-your-power-bi-administrator) later in this article. If you're the administrator, see [Enable Publish to web as an administrator](#enable-publish-to-web-as-an-administrator) for instructions.
 
-3. Review the dialog content and select **Create embed code**.
+1. Review the dialog content and select **Create embed code**.
 
    ![Screenshot of Review Embed in a public website.](media/service-publish-to-web/publish_to_web2_ga.png)
 
@@ -176,6 +178,31 @@ For smaller organizations or individuals who signed up for Power BI, you may not
 Established organizations usually already have a Power BI administrator. Users with the Fabric administrator role in Microsoft Entra ID can act as a Power BI administrator.
 
 You need to [find one of these people](/microsoft-365/business-video/admin-center-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](/fabric/admin/service-admin-portal-export-sharing#publish-to-web) in the admin portal.
+
+## Enable Publish to web as an administrator
+
+If you're a Power BI administrator and want to enable Publish to web for your organization, follow these steps:
+
+1. Sign in to the [Power BI admin portal](https://app.powerbi.com/admin-portal).
+
+1. In the admin portal, select **Tenant settings**.
+
+1. Under **Export and sharing settings**, locate **Publish to web**.
+
+1. Toggle the setting to **Enabled**.
+
+1. Choose who can create embed codes:
+   - Select **The entire organization** to allow all users to create publish to web embed codes.
+   - Select **Specific security groups** to limit this capability to designated groups, then add the appropriate security groups.
+
+1. Select **Apply**.
+
+After enabling this setting, users in your organization can create public embed codes for their reports. Keep in mind that published reports are accessible to anyone on the internet without authentication.
+
+> [!CAUTION]
+> As an administrator, carefully consider who should have the ability to create publish to web embed codes. This feature makes reports publicly accessible on the internet without any authentication, which could lead to unintentional data exposure if not properly managed.
+
+For more information about this setting, see [Publish to web tenant settings](/fabric/admin/service-admin-portal-export-sharing#publish-to-web).
 
 ## Considerations and limitations
 
