@@ -110,14 +110,6 @@
   - name: "Use Power BI on mobile"
     expanded: true
     items:
-    - name: "Copilot in Power BI mobile apps"
-      items:
-      - name: "Overview of Copilot in mobile apps"
-        href: mobile/mobile-copilot-overview.md   
-      - name: "Standalone Copilot in mobile apps"
-        href: mobile/mobile-standalone-copilot.md
-      - name: "In-report Copilot in mobile apps"
-        href: mobile/mobile-apps-copilot.md
     - name: "Review basics and overview"
       items:
       - name: "What are the mobile apps?"
@@ -142,6 +134,14 @@
         href: mobile/mobile-apps-org-apps.md
       - name: "View on-premises KPIs and reports"
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+    - name: "Copilot in Power BI mobile apps"
+      items:
+      - name: "Overview of Copilot in mobile apps"
+        href: mobile/mobile-copilot-overview.md   
+      - name: "Standalone Copilot in mobile apps"
+        href: mobile/mobile-standalone-copilot.md
+      - name: "In-report Copilot in mobile apps"
+        href: mobile/mobile-apps-copilot.md
     - name: "Increase interaction and productivity"
       items:
       - name: "Share a dashboard or report"
