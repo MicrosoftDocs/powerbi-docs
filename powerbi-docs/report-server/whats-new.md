@@ -9,6 +9,7 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/18/2025
 ms.custom: intro-whats-new
+ai-usage: ai-assisted
 ---
 
 # What's new in Power BI Report Server
@@ -1472,7 +1473,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. F
 - Power BI Report Server Preview made available
 - Ability to publish Power BI reports on-premises
   - support for Power BI visuals
-  - Support for **Analysis Services live connections*- only with more data sources to come.
+  - Support for **Analysis Services live connections** - only with more data sources to come.
   - Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 - Enhanced collaboration in reports with comments
 
