@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/14/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Get started
 ms.custom: sfi-image-nochange
 ---
@@ -24,14 +25,16 @@ In this task, we use a template to create a flow that's triggered by a Power BI 
 1. Sign in to Power Automate (https://flow.microsoft.com).
 2. Select **Templates**, search for **Power BI** > **Send an e-mail to any audience when a Power BI data alert is triggered**.
    
-    :::image type="content" source="media/service-flow-integration/power-automate-templates.png" alt-text="Screenshot of the Power Automate Send an e-mail to any audience when a Power BI data alert is triggered template option.":::
+    :::image type="content" source="media/service-flow-integration/power-automate-templates.png" alt-text="Screenshot showing the Power Automate Send an e-mail to any audience when a Power BI data alert is triggered template option."
+    :::
 
 ### Build the flow
 This template has one trigger, a Power BI data alert, and one action, to send an email. As you select a field, Power Automate displays dynamic content that you can include.  In this example, we include the tile value and the tile URL in the message body.
 
 1. Select **Continue**.
 
-    :::image type="content" source="media/service-flow-integration/power-automate-power-bi-mail.png" alt-text="Screenshot of the Power Automate, Power BI to mail option.":::
+    :::image type="content" source="media/service-flow-integration/power-automate-power-bi-mail.png" alt-text="Screenshot showing the Power Automate, Power BI to mail option."
+    :::
 
 1. In the **Alert ID** box, select a Power BI data alert. To learn how to create an alert, see [Data alerts in Power BI](../create-reports/service-set-data-alerts.md).
    
@@ -47,10 +50,10 @@ This template has one trigger, a Power BI data alert, and one action, to send an
     If Power Automate finds errors, it lets you know. 
 2. Select **Edit flow** to fix the errors. Otherwise, select **Done** to run the new flow.
    
-   ![Screenshot of the Power Automate success message.](media/service-flow-integration/power-bi-flow-running.png)
+   ![Screenshot showing the Power Automate success message.](media/service-flow-integration/power-bi-flow-running.png)
 5. When a change triggers a data alert, Power Automate sends an email to the addresses you indicated.  
    
-   ![Screenshot of the Power Automate alert email.](media/service-flow-integration/power-bi-flow-email2.png)
+   ![Screenshot showing the Power Automate alert email.](media/service-flow-integration/power-bi-flow-email2.png)
 
 ## Create a flow from scratch
 In this task, we create a simple flow from scratch that is triggered by a Power BI data alert (notification).
@@ -80,10 +83,10 @@ In this task, we create a simple flow from scratch that is triggered by a Power 
    ![Screenshot that shows where to continue to build the flow.](media/service-flow-integration/power-bi-flow-event.png)
 5. Select **Create flow** when done.  Power Automate saves and evaluates the flow. If there are no errors, select **Done** to run this flow.  The new flow is added to your **My flows** page.
    
-   ![Screenshot of the message that indicates the flow is now running.](media/service-flow-integration/power-bi-flow-running.png)
+   ![Screenshot showing the message that indicates the flow is now running.](media/service-flow-integration/power-bi-flow-running.png)
 6. When your Power BI data alert triggers the flow, you'll receive an Outlook event notification similar to this one.
    
-    ![Screenshot of the Power Automate triggers Outlook notification.](media/service-flow-integration/power-bi-flow-notice.png)
+    ![Screenshot showing the Power Automate triggers Outlook notification.](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## Related content
 

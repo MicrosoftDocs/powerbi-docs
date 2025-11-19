@@ -7,7 +7,8 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 02/17/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: 
 ---
 
@@ -27,7 +28,8 @@ You can perform semantic model impact analysis on both shared and unshared seman
 
 In lineage view, you can tell the difference between shared semantic models and unshared semantic models by the icon that appears in the upper left-hand corner of the semantic model's card.
 
-:::image type="content" source="media/service-dataset-impact-analysis/shared-unshared-icon.png" alt-text="Screenshot of shared and unshared semantic model icons.":::
+:::image type="content" source="media/service-dataset-impact-analysis/shared-unshared-icon.png" alt-text="Screenshot showing shared and unshared semantic model icons."
+:::
 
 ## Perform semantic model impact analysis
 
@@ -35,11 +37,13 @@ You can perform impact analysis on any semantic model in the workspace, whether 
 
 To perform semantic model impact analysis, select the impact analysis button on the semantic model card.
 
-:::image type="content" source="media/service-dataset-impact-analysis/open-analysis-pane-button.png" alt-text="Screenshot of the semantic model impact analysis button.":::
+:::image type="content" source="media/service-dataset-impact-analysis/open-analysis-pane-button.png" alt-text="Screenshot showing the semantic model impact analysis button."
+:::
 
 The impact analysis side panel opens.
 
-:::image type="content" source="media/service-dataset-impact-analysis/service-impact-analysis-pane.png" alt-text="Screenshot of the impact analysis side pane.":::
+:::image type="content" source="media/service-dataset-impact-analysis/service-impact-analysis-pane.png" alt-text="Screenshot showing the impact analysis side pane."
+:::
 
 * The **impact summary** shows you the number of potentially impacted workspaces, reports, and dashboards, as well as the total number of views for all the downstream reports and dashboards that are connected to the semantic model.
 * The **notify contacts** link opens a dialog where you can create a message about any semantic model changes you make, and send it to the contact lists of the affected workspaces. 
@@ -55,7 +59,8 @@ If you've made a change to a semantic model or are thinking about making a chang
 
 1. Select **Notify contacts** in the impact analysis side pane. The notify contacts dialog appears.
 
-    :::image type="content" source="media/service-dataset-impact-analysis/notify-contacts-dialog.png" alt-text="Screenshot of the Notify contacts dialog box.":::
+    :::image type="content" source="media/service-dataset-impact-analysis/notify-contacts-dialog.png" alt-text="Screenshot showing the Notify contacts dialog box."
+    :::
 
 1. In the text box, provide some detail about the change.
 1. When the message is ready, select **Send**.
@@ -73,7 +78,8 @@ Even if you don't have access to some workspaces, you still see summarized usage
 
 When you make a change to a semantic model in Power BI Desktop and then republish it to the Power BI service, a message shows you how many workspaces, reports, and dashboards are potentially impacted by the change, and asks you to confirm that you want to replace the currently published semantic model with the one you modified. The message also provides a link to the full semantic model impact analysis in the Power BI service, where you can see more information and take action to mitigate the risks of your change.
 
-:::image type="content" source="media/service-dataset-impact-analysis/service-dataset-impact-analysis-desktop-warning.png" alt-text="Screenshot of the impact analysis message.":::
+:::image type="content" source="media/service-dataset-impact-analysis/service-dataset-impact-analysis-desktop-warning.png" alt-text="Screenshot showing the impact analysis message."
+:::
 
 > [!NOTE]
 > The information shown in the message only indicates potential impact. It doesn't necessarily indicate that anything has broken. Semantic model changes often have no adverse effect on their downstream reports and dashboards. Still, you get this message that gives you clarity concerning potential impact.
