@@ -116,7 +116,7 @@ Specify smaller refresh and store periods in the policy. For example, if you spe
 
 The filter on the date column is used to dynamically partition the data into period ranges in the Power BI service. Incremental refresh isn't designed to support cases where the filtered date column is updated in the source system. An update is interpreted as an insertion and a deletion, not an actual update. If the deletion occurs in the historical range and not the incremental range, it isn't picked up, which can cause data refresh failures due to partition-key conflicts.
 
-## Hybrid mode in the service (Preview)
+## Hybrid mode in the service
 
 When Power BI applies an incremental refresh policy with real-time data, it turns the incrementally refreshed table into a hybrid table that operates in both import and DirectQuery mode. Notice the DirectQuery partition at the end of the following partitions list of a sample table. The presence of a DirectQuery partition has implications for related tables and report visuals that query this table.
 
