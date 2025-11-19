@@ -20,12 +20,12 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 Reminder: [How you can find your report server product key](find-product-key.md)
 
-
 ## September 2025
 
 Read the Power BI blog post, [Power BI Report Server September 2025 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-september-2025-feature-summary/) for details.
 
 ### General announcements
+
 #### SQL Server 2025 Updates
 
 Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server (PBIRS). No new versions of SQL Server Reporting Services (SSRS) will be released. PBIRS becomes the default on-premises reporting solution for SQL Server.
@@ -1463,7 +1463,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. F
 - Power BI Report Server Preview made available
 - Ability to publish Power BI reports on-premises
   - support for Power BI visuals
-  - Support for **Analysis Services live connections*- only with more data sources to come.
+  - Support for **Analysis Services live connections** - only with more data sources to come.
   - Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 - Enhanced collaboration in reports with comments
 

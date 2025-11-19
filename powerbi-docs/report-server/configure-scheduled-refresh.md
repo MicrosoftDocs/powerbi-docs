@@ -21,7 +21,7 @@ To refresh data in your Power BI report in Power BI Report Server, you must crea
 
 You need the necessary permissions to create a scheduled refresh plan. Permissions are defined in the role definitions for the report server. See [Role definitions - predefined roles](/sql/reporting-services/security/role-definitions-predefined-roles) in the SQL Server Reporting Services documentation for details.
 
-Prior to creating a schedule data refresh plan, you need to set the credentials for **each data source** used in your Power BI report.
+Before creating a schedule data refresh plan, you need to set the credentials for **each data source** used in your Power BI report.
 
 1. In the web portal, right-click on the Power BI report and select **Manage**.
 
@@ -41,7 +41,7 @@ Follow these steps to create a scheduled refresh plan.
     :::image type="content" source="media/configure-scheduled-refresh/manage-power-bi-report.png" alt-text="Screenshot of selecting Manage from the Power BI report context menu.":::
 
 1. In the left menu, select the **Scheduled refresh** tab.
-1. On the **Scheduled refresh** page, select **New scheduled refresh plan".
+1. On the **Scheduled refresh** page, select **New scheduled refresh plan**.
 
     :::image type="content" source="media/configure-scheduled-refresh/new-scheduled-refresh-plan.png" alt-text="Screenshot showing the New scheduled refresh plan option.":::
 
@@ -77,12 +77,12 @@ View the status of a schedule refresh plan in the web portal.
     :::image type="content" source="media/configure-scheduled-refresh/manage-power-bi-report.png" alt-text="Screenshot showing the Select Manage option from the Power BI report context menu.":::
 
 1. In the left menu, select the **Scheduled refresh** tab.
-1. On the **Scheduled refresh** page, the right most column displays the status of a plan.
+1. On the **Scheduled refresh** page, the rightmost column displays the status of a plan.
 
    | **Status** | **Description** |
    | --- | --- |
-   | New Scheduled Refresh Plan |The plan has been created but has not ran. |
-   | Refreshing |The refresh process has started. |
+   | New Scheduled Refresh Plan |The plan was created but didn't yet run. |
+   | Refreshing |The refresh process started. |
    | Streaming model to Analysis Server |Copying the model from the report server catalog database to the hosted Analysis Services instance. |
    | Refreshing data |Refreshing the data within the model. |
    | Removing credentials from the model |Removed the credentials used to connect to the data source from the model. |
@@ -90,7 +90,7 @@ View the status of a schedule refresh plan in the web portal.
    | Completed: Data Refresh |Refresh is done. |
    | Error: |An error occurred during refresh and is displayed. |
 
-The web page must be refreshed to see the current status. The status will not change automatically.
+The web page must be refreshed to see the current status. The status doesn't change automatically.
 
 ## Related content
 

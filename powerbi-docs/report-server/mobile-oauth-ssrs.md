@@ -24,13 +24,13 @@ In order for users to be able to add a report server connection to their Power B
 
 <a name="windows-server-upgrade-note"></a>
 > [!NOTE]
-> As of March 1st, 2025, the Power BI Mobile app will no longer be able to connect to Report Server using the OAuth protocol through AD FS configured on Windows Server 2016. Customers who use OAuth with AD FS configured on Windows Server 2016 and Web Application Proxy (WAP) will have to upgrade their AD FS server to Windows Server 2019 or later, or use [Microsoft Entra application proxy](./microsoft-entra-application-proxy.md). After the Windows Server upgrade, Power BI Mobile app users may have to re-sign in to Report Server.
+> As of March 1, 2025, the Power BI Mobile app will no longer be able to connect to Report Server using the OAuth protocol through AD FS configured on Windows Server 2016. Customers who use OAuth with AD FS configured on Windows Server 2016 and Web Application Proxy (WAP) will have to upgrade their AD FS server to Windows Server 2019 or later, or use [Microsoft Entra application proxy](./microsoft-entra-application-proxy.md). After the Windows Server upgrade, Power BI Mobile app users might have to sign in again to Report Server.
 >
 > This upgrade is necessitated by a change in the authentication library used by the mobile app. The change in no way affects Microsoft support for AD FS on Windows Server 2016, but rather only the ability of the Power BI Mobile app to connect to it.
 
 ## Domain Name Services (DNS) configuration
 
-The public URL is the URL that the Power BI mobile app will connect to. For example, it might look similar to the following.
+The public URL is the URL that the Power BI mobile app connects to. For example, it might look similar to the following.
 
 ```https
 https://reports.contoso.com
@@ -80,7 +80,7 @@ For more information, see [Modify a Reporting Services Configuration File](/sql/
 You need to configure AD FS on a Windows server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
 > [!IMPORTANT]
-> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through AD FS configured on Windows Server 2016. See the [note](#windows-server-upgrade-note) at the beginning of this article.
+> As of March 1, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through AD FS configured on Windows Server 2016. See the [note](#windows-server-upgrade-note) at the beginning of this article.
 
 ### Create an application group
 
@@ -116,7 +116,7 @@ You can create the application group with the following steps.
    :::image type="content" source="media/mobile-oauth-ssrs/adfs-application-group-wizard2.png" alt-text="Screenshot showing AD FS Application Group Wizard 02.":::
 7. Select **Next**.
 
-8. Supply the URL for your Report Server. The URL is the external URL that will hit your Web Application Proxy. It should be in the following format.
+8. Supply the URL for your Report Server. The URL is the external URL that hits your Web Application Proxy. It should be in the following format.
 
    > [!NOTE]
    > This URL is case sensitive!
@@ -185,7 +185,7 @@ To configure constrained delegation, you want to do the following steps.
 9. Select the SPN for Reporting Services and then select **OK**.
 
    > [!NOTE]
-   > You may only see the NetBIOS SPN. It will actually select both the NetBIOS and FQDN SPNs if they both exist.
+   > You might only see the NetBIOS SPN. It will actually select both the NetBIOS and FQDN SPNs if they both exist.
 
    :::image type="content" source="media/mobile-oauth-ssrs/wap-contrained-delegation3.png" alt-text="Screenshot showing WAP Constrained 03.":::
 
@@ -197,7 +197,7 @@ To configure constrained delegation, you want to do the following steps.
 
 ### Add WAP Application
 
-While you can publish applications within the Report Access Management Console, we'll want to create the application via PowerShell. Here's the command to add the application.
+While you can publish applications within the Report Access Management Console, we want to create the application via PowerShell. Here's the command to add the application.
 
 ```powershell
 Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "AA11BB22CC33DD44EE55FF66AA77BB88CC99DD00" -BackendServerUrl https://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
@@ -234,7 +234,7 @@ Within the Power BI mobile app, you want to connect to your Reporting Services i
 
 :::image type="content" source="media/mobile-oauth-ssrs/powerbi-mobile-app1.png" alt-text="Screenshot showing Type the server address.":::
 
-When you select **Connect**, you'll be directed to your AD FS sign-in page. Enter valid credentials for your domain.
+When you select **Connect**, you're directed to your AD FS sign-in page. Enter valid credentials for your domain.
 
 :::image type="content" source="media/mobile-oauth-ssrs/powerbi-mobile-app2.png" alt-text="Screenshot showing Sign-in to AD FS.":::
 
@@ -242,13 +242,13 @@ After you select **Sign in**, you see the elements from your Reporting Services 
 
 ## Multifactor authentication
 
-You can enable multifactor authentication to enable additional security for your environment. To learn more, see [Configure Microsoft Entra multifactor authentication as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
+You can enable multifactor authentication to enable more security for your environment. To learn more, see [Configure Microsoft Entra multifactor authentication as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
 ## Troubleshooting
 
 ### You receive the error "Failed to sign in to SSRS server"
 
-:::image type="content" source="media/mobile-oauth-ssrs/powerbi-mobile-error.png" alt-text="Screenshot showing Failed to login to SSRS Server error.":::
+:::image type="content" source="media/mobile-oauth-ssrs/powerbi-mobile-error.png" alt-text="Screenshot showing Failed to log in to SSRS Server error.":::
 
 You can set up [Fiddler](https://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to set up the [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
 

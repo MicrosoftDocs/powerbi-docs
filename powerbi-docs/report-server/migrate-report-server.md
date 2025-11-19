@@ -21,7 +21,7 @@ Migration is defined as moving application data files to a new Power BI Report S
 * You want to move from SQL Server Reporting Services to Power BI Report Server
   
   > [!NOTE]
-  > There is not an inplace upgrade from SQL Server Reporting Services to Power BI Report Server. A migration is necessary.
+  > There isn't an in-place upgrade from SQL Server Reporting Services to Power BI Report Server. A migration is necessary.
 
 * You have a large-scale deployment or update requirements
 * You're changing the hardware or topology of your installation

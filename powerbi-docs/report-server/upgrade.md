@@ -21,7 +21,7 @@ Learn how to upgrade Power BI Report Server.
 To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 > [!NOTE]
-> Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server. No new versions of SQL Server Reporting Services (SSRS) will be released. Power BI Report Server is now the default on-premises reporting solution for SQL Server.
+> Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server. No new versions of SQL Server Reporting Services (SSRS) are being released. Power BI Report Server is now the default on-premises reporting solution for SQL Server.
 
 ## Before you begin
 
@@ -36,8 +36,8 @@ Back up the encryption keys when you configure a report server installation for 
 Because a report server is a stateless server, all application data is stored in the **reportserver** and **reportservertempdb** databases that run on a SQL Server Database Engine instance. You can back up the **reportserver** and **reportservertempdb** databases using one of the supported methods for backing up SQL Server databases. These recommendations are specific to report server databases:
 
 - Use the full recovery model to back up the **reportserver** database.
-- Use the simple recovery model to back up the **reportservertempdb** database.
-- You can use different backup schedules for each database. The only reason to back up the **reportservertempdb** is to avoid having to recreate it if there is a hardware failure. In case of hardware failure, you don't need to recover the data in **reportservertempdb**, but you do need the table structure. If you lose **reportservertempdb**, the only way to get it back is to recreate the report server database. If you recreate the **reportservertempdb**, it's important that it have the same name as the primary report server database.
+- Use the recovery model to back up the **reportservertempdb** database.
+- You can use different backup schedules for each database. The only reason to back up the **reportservertempdb** is to avoid having to recreate it if there's a hardware failure. If there's hardware failure, you don't need to recover the data in **reportservertempdb**, but you do need the table structure. If you lose **reportservertempdb**, the only way to get it back is to recreate the report server database. If you recreate the **reportservertempdb**, it's important that it has the same name as the primary report server database.
 
 For more information about backup and recovery of SQL Server relational databases, see [Back Up and Restore of SQL Server Databases](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 

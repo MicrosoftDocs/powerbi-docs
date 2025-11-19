@@ -19,20 +19,20 @@ This article discusses how to use Web Application Proxy (WAP) and Active Directo
 <a name="windows-server-upgrade-note"></a>
 
 > [!NOTE]
-> As of March 1st, 2025, the Power BI Mobile app will no longer be able to connect to Report Server using the OAuth protocol through AD FS configured on Windows Server 2016. Customers who use OAuth with AD FS configured on Windows Server 2016 and Web Application Proxy (WAP) will have to upgrade their AD FS server to Windows Server 2019 or later, or use [Microsoft Entra application proxy](./microsoft-entra-application-proxy.md). After the Windows Server upgrade, Power BI Mobile app users may have to re-sign in to Report Server.
+> As of March 1, 2025, the Power BI Mobile app will no longer be able to connect to Report Server using the OAuth protocol through AD FS configured on Windows Server 2016. Customers who use OAuth with AD FS configured on Windows Server 2016 and Web Application Proxy (WAP) need to upgrade their AD FS server to Windows Server 2019 or later, or use [Microsoft Entra application proxy](microsoft-entra-application-proxy.md). After the Windows Server upgrade, Power BI Mobile app users might have to sign in again to Report Server.
 >
 > This upgrade is necessitated by a change in the authentication library used by the mobile app. The change in no way affects Microsoft support for AD FS on Windows Server 2016, but rather only the ability of the Power BI Mobile app to connect to it.
 
 > [!NOTE]
-> The configuration described in this article is no longer the preferred method of connecting to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Configure the connection using using Microsoft Entra application proxy instead, as described in [Configure Power BI Report Server with Microsoft Entra application proxy](./microsoft-entra-application-proxy.md)
+> The configuration described in this article is no longer the preferred method of connecting to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Configure the connection using Microsoft Entra application proxy instead, as described in [Configure Power BI Report Server with Microsoft Entra application proxy](./microsoft-entra-application-proxy.md)
 
 ## Prerequisites
 
 ### Domain Name Services (DNS) configuration
 
-- Determine the public URL that the user will connect to. It may look similar to this example: `https://reports.contosolab.com`.
+- Determine the public URL that the user connect to. It might look similar to this example: `https://reports.contosolab.com`.
 - Configure your DNS record for the host name, `reports.contosolab.com`, for example, to point to the public IP address of the Web Application Proxy (WAP) server.
-- Configure a public DNS record for your AD FS server. For example, you may have configured the AD FS server with the following URL: `https://adfs.contosolab.com`.
+- Configure a public DNS record for your AD FS server. For example, you might have configured the AD FS server with the following URL: `https://adfs.contosolab.com`.
 - Configure your DNS record to point to the public IP address of the Web Application Proxy (WAP) server, for example `adfs.contosolab.com`. It's published as part of the WAP application.
 
 ### Certificates
@@ -70,7 +70,7 @@ For more information, see [Modify a Reporting Services Configuration File](/sql/
 You need to configure AD FS on a Windows server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
 > [!IMPORTANT]
-> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through AD FS configured on Windows Server 2016. See the [note](#windows-server-upgrade-note) at the beginning of this article.
+> As of March 1, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through AD FS configured on Windows Server 2016. See the [note](#windows-server-upgrade-note) at the beginning of this article.
 
 On the AD FS server, using AD FS Management App, complete these steps.
 
@@ -109,12 +109,12 @@ You want to enable the Web Application Proxy (Role) Windows role on a server in 
 
 To transition from Forms authentication to Windows authentication, we need to use constrained delegation with protocol transitioning. This step is part of the Kerberos configuration. We already defined the report server SPN within the report server configuration.
 
-We need to configure constrained delegation on the WAP Server machine account within Active Directory. You may need to work with a domain administrator if you don't have rights to Active Directory.
+We need to configure constrained delegation on the WAP Server machine account within Active Directory. You might need to work with a domain administrator if you don't have rights to Active Directory.
 
 To configure constrained delegation, follow these steps.
 
 1. On a machine that has the Active Directory tools installed, launch **Active Directory Users and Computers**.
-1. Find the machine account for your WAP server. By default, it will be in the **Computers** container.
+1. Find the machine account for your WAP server. By default, it's in the **Computers** container.
 1. Right-click the WAP server and go to **Properties**.
 1. On the **Delegation** tab, select **Trust this computer for delegation to specified services only** and then **Use any authentication protocol**.
 
@@ -126,12 +126,12 @@ To configure constrained delegation, follow these steps.
     :::image type="content" source="media/connect-adfs-wap-report-server/report-server-adfs-trust-add.png" alt-text="Screenshot showing AD FS Add trust option.":::
 
 1. Select **Users or Computers**.
-1. Enter the service account that you are using for the report server. This account is the same one you used to add the HTTP SPN in the earlier [report server configuration](#1-configure-the-report-server) section. 
+1. Enter the service account that you're using for the report server. This account is the same one you used to add the HTTP SPN in the earlier [report server configuration](#1-configure-the-report-server) section. 
 
 1. Select the HTTP SPN for the report server, then select **OK**.
 
     > [!NOTE]
-    > You may only see the NetBIOS SPN. It will actually select both the NetBIOS and FQDN SPNs, if they both exist.
+    > You might only see the NetBIOS SPN. It actually selects both the NetBIOS and FQDN SPNs, if they both exist.
 
 1. When you select the **Expanded** check box, the result should look similar to the following example.
 
@@ -149,15 +149,15 @@ To configure constrained delegation, follow these steps.
 
     :::image type="content" source="media/connect-adfs-wap-report-server/report-server-preauthentication-new-app-wizard.png" alt-text="Screenshot showing Preauthorization option.":::
 
-1. Select **Web and MSOFBA** preauthentication as we are going to set up just the Browser access for the report server, and not mobile app access.
+1. Select **Web and MSOFBA** preauthentication as we're going to set up just the Browser access for the report server, and not mobile app access.
 
     :::image type="content" source="media/connect-adfs-wap-report-server/report-server-supported-clients-publish-new-app-wizard.png" alt-text="Screenshot showing Supported clients option.":::
 
-1. Add the **Relying Party** that we created in the AD FS server as shown below, then select **Next**.
+1. Add the **Relying Party** that we created in the AD FS server, then select **Next**.
 
     :::image type="content" source="media/connect-adfs-wap-report-server/report-server-relying-party-publish-new-app-wizard.png" alt-text="Screenshot showing Relying Party publish option.":::
 
-1. In the **External URL** section, put in the publicly accessible URL configured on the WAP server. Add the URL configured with the report server (Report Server Configuration Manager) as shown below in the **Backend Server URL** section. Add the SPN of the report server in the **Backend server SPN** section.
+1. In the **External URL** section, put in the publicly accessible URL configured on the WAP server. Add the URL configured with the report server (Report Server Configuration Manager) as shown in the **Backend Server URL** section. Add the SPN of the report server in the **Backend server SPN** section.
 
     :::image type="content" source="media/connect-adfs-wap-report-server/report-server-publishing-settings-new-app-wizard.png" alt-text="Screenshot showing Publishing settings.":::
 
@@ -172,7 +172,7 @@ To configure constrained delegation, follow these steps.
 
 ## Connect to the report server through the browser
 
-You can then access the Public WAP URL, for example, `https://reports.contosolab.com/ReportServer` for the web service and `https://reports.contosolab.com/Reports` for the web portal from the browser. When you've authenticated successfully, you can view the reports.
+You can then access the Public WAP URL, for example, `https://reports.contosolab.com/ReportServer` for the web service and `https://reports.contosolab.com/Reports` for the web portal from the browser. When you're authenticated successfully, you can view the reports.
 
 :::image type="content" source="media/connect-adfs-wap-report-server/report-server-adfs-sign-in.png" alt-text="Screenshot showing AD FS sign in.":::
 
