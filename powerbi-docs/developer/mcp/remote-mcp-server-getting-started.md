@@ -26,8 +26,8 @@ This article shows you how to:
 
 > [!TIP]
 > **Advanced scenario:** For custom agents using Service Principal authentication, see:
-> - [Azure AI Foundry MCP tools](https://learn.microsoft.com/azure/ai-foundry/agents/how-to/tools/model-context-protocol)
-> - [Power BI service principal setup](https://learn.microsoft.com/power-bi/developer/embedded/embed-service-principal?tabs=azure-portal#step-3---enable-the-power-bi-service-admin-settings)
+> - [Azure AI Foundry MCP tools](/azure/ai-foundry/agents/how-to/tools/model-context-protocol)
+> - [Power BI service principal setup](/power-bi/developer/embedded/embed-service-principal?tabs=azure-portal#step-3---enable-the-power-bi-service-admin-settings)
 
 
 ## Prerequisites
@@ -38,7 +38,7 @@ Before you begin, ensure you have:
 - **Visual Studio Code** - [Download VS Code](https://code.visualstudio.com/download)
 - **GitHub Copilot** - [Enable GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
 - **Semantic model access** - Build permissions on at least one Power BI semantic model
-- (Recommended) **Optimized models** - [Prepare your semantic models for AI](https://learn.microsoft.com/power-bi/create-reports/copilot-prepare-data-ai) to improve query generation quality
+- (Recommended) **Optimized models** - [Prepare your semantic models for AI](/power-bi/create-reports/copilot-prepare-data-ai) to improve query generation quality
  
 
 ## Set up the remote Power BI MCP server in VS Code
@@ -102,7 +102,7 @@ Once configured, verify the setup is working:
 6. **Review the response**
    - Copilot will query your model and return results
 
-**Tip:** For best query results, [prepare your semantic models for AI](https://learn.microsoft.com/power-bi/create-reports/copilot-prepare-data-ai) by adding AI instructions and verified answers.
+**Tip:** For best query results, [prepare your semantic models for AI](/power-bi/create-reports/copilot-prepare-data-ai) by adding AI instructions and verified answers.
 
 **Troubleshooting:** [Manage MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_manage-installed-mcp-servers)
 
@@ -119,6 +119,6 @@ Now that your MCP server is configured, explore the available tools and capabili
 - [What are the Power BI MCP servers?](mcp-servers-overview.md)
 - [Remote Power BI MCP server tools](remote-mcp-server-tools.md)
 - [Power BI Modeling MCP server on GitHub](https://github.com/microsoft/powerbi-modeling-mcp)
-- [Prepare your data for AI](https://learn.microsoft.com/power-bi/create-reports/copilot-prepare-data-ai)
+- [Prepare your data for AI](/power-bi/create-reports/copilot-prepare-data-ai)
 - [MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
 

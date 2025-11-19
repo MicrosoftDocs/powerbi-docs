@@ -43,7 +43,7 @@ landingContent:
           - text: "Remote Power BI MCP server tools"
             url: remote-mcp-server-tools.md
           - text: "Available tools and endpoints"
-            url: remote-mcp-server-tools.md#available-tools-and-endpoints
+            url: remote-mcp-server-tools.md#available-tools
           - text: "Limitations and considerations"
             url: remote-mcp-server-tools.md#limitations-and-considerations
       - linkListType: how-to-guide

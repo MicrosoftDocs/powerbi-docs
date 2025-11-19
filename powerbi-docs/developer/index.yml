@@ -131,7 +131,7 @@ conceptualContent:
           text: Get started with the remote MCP server
         - url: mcp/remote-mcp-server-tools.md
           itemType: concept
-          text: Remote Power BI MCP Server tools
+          text: Remote Power BI MCP server tools
       # footerLink (optional)
       footerLink:
         url: mcp/index.yml

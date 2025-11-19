@@ -32,9 +32,9 @@ Retrieves comprehensive metadata for a semantic model, including:
 - Tables, columns, measures, and relationships
 - Data types and hierarchies
 - AI-optimized metadata when configured by the model author:
-  - [AI data schema](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-data-schema#set-an-ai-data-schema) - Semantic descriptions of data
-  - [AI instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-instructions) - Guidance for AI query generation
-  - [Verified answers](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-verified-answers) - Pre-validated query examples
+  - [AI data schema](/power-bi/create-reports/copilot-prepare-data-ai-data-schema#set-an-ai-data-schema) - Semantic descriptions of data
+  - [AI instructions](/power-bi/create-reports/copilot-prepare-data-ai-instructions) - Guidance for AI query generation
+  - [Verified answers](/power-bi/create-reports/copilot-prepare-data-ai-verified-answers) - Pre-validated query examples
 
 **Required input:** Semantic model ID
 
@@ -48,7 +48,7 @@ Generates optimized DAX queries from natural language prompts using Copilot in P
 - Relevant schema context as determined by the agent (tables, columns, measures)
 
 **Requirements:**
-- [Copilot license](https://learn.microsoft.com/power-bi/create-reports/copilot-enable-power-bi) for the user or organization
+- [Copilot license](/power-bi/create-reports/copilot-enable-power-bi) for the user or organization
 
 **Note:** If you prefer not to consume Copilot capacity, disable this tool in your MCP client configuration and rely on your client's LLM to generate DAX directly.
 
@@ -62,14 +62,14 @@ Executes a DAX query against a semantic model and returns the results to the AI 
 - DAX query expression
 
 **Permissions:**
-- Users must have at least [Build permissions](https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-build-permissions) on the semantic model
+- Users must have at least [Build permissions](/power-bi/connect-data/service-datasets-build-permissions) on the semantic model
 - Queries execute in the context of the authenticated user
 
 **Security considerations:**
-- [Row-level security (RLS)](https://learn.microsoft.com/fabric/security/service-admin-row-level-security) is enforced for user authentication
+- [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) is enforced for user authentication
 - RLS is currently not supported when using Service Principal authentication
 
-**See also:** [Execute Queries REST API](https://learn.microsoft.com/rest/api/power-bi/datasets/execute-queries)
+**See also:** [Execute Queries REST API](/rest/api/power-bi/datasets/execute-queries)
 
 
 ## Best practices
@@ -98,7 +98,7 @@ Semantic model URLs follow this format:
 https://app.powerbi.com/groups/{workspaceId}/datasets/{semanticModelId}
 ```
 
-You can also retrieve semantic model IDs programmatically using the [Power BI REST API](https://learn.microsoft.com/rest/api/power-bi/datasets/get-datasets-in-group).
+You can also retrieve semantic model IDs programmatically using the [Power BI REST API](/rest/api/power-bi/datasets/get-datasets-in-group).
 
 
 ## Limitations and considerations
@@ -111,7 +111,7 @@ You can also retrieve semantic model IDs programmatically using the [Power BI RE
 ### Query generation
 
 - **Complex DAX:** Highly complex calculations or nested logic may not translate perfectly from natural language prompts.
-- **Model optimization:** Query generation quality improves significantly when you [prepare your data for AI](https://learn.microsoft.com/power-bi/create-reports/copilot-prepare-data-ai).
+- **Model optimization:** Query generation quality improves significantly when you [prepare your data for AI](/power-bi/create-reports/copilot-prepare-data-ai).
 
 ### Performance
 
@@ -128,7 +128,7 @@ You can also retrieve semantic model IDs programmatically using the [Power BI RE
 
 - [What are the Power BI MCP servers?](mcp-servers-overview.md)
 - [Get started with the remote Power BI MCP server](remote-mcp-server-getting-started.md)
-- [Prepare your data for AI](https://learn.microsoft.com/power-bi/create-reports/copilot-prepare-data-ai)
+- [Prepare your data for AI](/power-bi/create-reports/copilot-prepare-data-ai)
 - [Power BI REST APIs](/rest/api/power-bi/)
 - [DAX reference](/dax/)
 - [Model Context Protocol specification](https://modelcontextprotocol.io/specification/latest)
