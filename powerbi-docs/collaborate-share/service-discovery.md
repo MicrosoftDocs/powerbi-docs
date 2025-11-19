@@ -30,8 +30,7 @@ If you have an [Admin or Member role](service-roles-new-workspaces.md) in the wo
 
 1. In the dialog, select the **Make discoverable** checkbox. The checkbox will only be active if the semantic model is promoted or certified.
 
-    :::image type="content" source="media/service-discovery/dataset-make-discoverable-checkbox.png" alt-text="Screenshot showing the Make discoverable checkbox under semantic model settings."
-    :::
+    :::image type="content" source="media/service-discovery/dataset-make-discoverable-checkbox.png" alt-text="Screenshot showing the Make discoverable checkbox under semantic model settings.":::
 
 When a semantic model is marked as discoverable, users who don't yet have access to it can find it in the OneLake data hub and request access to it.
 
