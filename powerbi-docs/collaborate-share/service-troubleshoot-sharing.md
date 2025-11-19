@@ -20,8 +20,7 @@ Here are some common issues that might come up when you share a dashboard or rep
 
 The people you share with might see a locked tile in a dashboard, or a "Permission required" message when they try to view a report.
 
-:::image type="content" source="media/service-share-dashboards/power-bi-locked_tile_small.png" alt-text="Screenshot showing the Power BI locked tile."
-:::
+:::image type="content" source="media/service-share-dashboards/power-bi-locked_tile_small.png" alt-text="Screenshot showing the Power BI locked tile.":::
 
 If so, you need to grant them permission to the underlying semantic model.
 
@@ -29,18 +28,15 @@ If so, you need to grant them permission to the underlying semantic model.
 
 1. Select **More options (...)** next to a semantic model, then choose **Manage permissions**.
 
-    :::image type="content" source="media/service-troubleshoot-sharing/power-bi-sharing-manage-permissions.png" alt-text="Screenshot showing where to select More options and then choose Manage permissions."
-    :::
+    :::image type="content" source="media/service-troubleshoot-sharing/power-bi-sharing-manage-permissions.png" alt-text="Screenshot showing where to select More options and then choose Manage permissions.":::
 
 1. Select **Add user**.
 
-    :::image type="content" source="media/service-troubleshoot-sharing/power-bi-share-dataset-add-user.png" alt-text="Screenshot showing where to select Add user."
-    :::
+    :::image type="content" source="media/service-troubleshoot-sharing/power-bi-share-dataset-add-user.png" alt-text="Screenshot showing where to select Add user.":::
 
 1. Enter the full email addresses for individuals, distribution groups, or security groups that you want to add. You can't share dashboards or reports with dynamic distribution lists. Decide if the users can **share this semantic model** or **build content with the data associated with this semantic model**, and if you want to **send an email notification**.
 
-    :::image type="content" source="media/service-troubleshoot-sharing/power-bi-add-user-dataset.png" alt-text="Screenshot showing where to add the email addresses and to grant access privileges."
-    :::
+    :::image type="content" source="media/service-troubleshoot-sharing/power-bi-add-user-dataset.png" alt-text="Screenshot showing where to add the email addresses and to grant access privileges.":::
 
 1. Select **Grant access**.
 
@@ -48,8 +44,7 @@ If so, you need to grant them permission to the underlying semantic model.
 
 To share a dashboard or report, you need permission to reshare the underlying content; that is, any related reports and semantic models. If you see a message saying you cannot share, ask the report author to give you reshare permission for those reports and semantic models.
 
-:::image type="content" source="media/service-share-dashboards/power-bi-sharing-unable-to-share.png" alt-text="Screenshot showing the message that indicates you cannot share the underlying content."
-:::
+:::image type="content" source="media/service-share-dashboards/power-bi-sharing-unable-to-share.png" alt-text="Screenshot showing the message that indicates you cannot share the underlying content.":::
 
 ## I don't have access to a dashboard or report
 
