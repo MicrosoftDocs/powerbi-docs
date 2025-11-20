@@ -10,6 +10,7 @@ ms.date: 10/01/2025
 LocalizationGroup: Connect to services
 ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
+robots: NOINDEX
 ---
 # Connect to GitHub with Power BI
 

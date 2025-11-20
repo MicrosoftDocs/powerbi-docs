@@ -7,7 +7,8 @@ ms.reviewer: 'kayu'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 09/11/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ms.topic: how-to
 LocalizationGroup: Reports
 ---
@@ -39,7 +40,19 @@ With parameters, you can filter the report for one or more values, even if those
 
 If the filter parameter isn't the first parameter in the query string, you join it to the previous parameter with an ampersand (&), for example:
 
-*URL?reportId=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&pageName=ReportSection*&filter=*Table*/*Field* eq '*value*'
+*URL?reportId=aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb&pageName=ReportSection*&filter=*Table*/*Field* eq '*value*'
+
+### Important syntax rules
+
+When constructing URL filters, keep these critical rules in mind:
+
+1. **Field names with spaces:** Use `_x0020_` to represent spaces in table or field names. For example, if your table is named "Sales Data", use `Sales_x0020_Data` in the URL filter.
+
+1. **Quoting field values:** Only surround text field values with single apostrophes. Numeric values take no surrounding characters.
+   - Text values: `filter=Product/Category eq 'Electronics'`
+   - Numeric values: `filter=Product/Price eq 487`
+
+1. **Preexisting filters:** Any preexisting filters need to be unfiltered (or set to All) before the URL filter is passed in. Otherwise, the existing filters and new URL filters create an AND relationship that can result in zero records in the dataset.
 
 ### Field types
 
