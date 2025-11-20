@@ -11,6 +11,7 @@ ms.topic: tutorial
 ms.date: 07/24/2024
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 LocalizationGroup: Connect to services
+robots: NOINDEX
 ---
 # Tutorial: Connect to a GitHub repo with Power BI
 
