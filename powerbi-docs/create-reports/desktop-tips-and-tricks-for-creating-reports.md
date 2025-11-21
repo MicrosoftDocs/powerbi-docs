@@ -138,8 +138,8 @@ When tracking all incidents and work items that relate to a specific CustomerNam
 
 Often, data sets contain columns with null or blank values. This issue can cause problems when you try to use relationships. You have two options for addressing these issues.
 
-1. Remove the rows that have null or blank values. Use either the filter feature in the Power Query Editor or, if you're merging queries, select the **keep only matching rows** option.
-1. Replace the null or blank values with values that work in relationships, typically strings like "NULL" and "(Blank)".
+- Remove the rows that have null or blank values. Use either the filter feature in the Power Query Editor or, if you're merging queries, select the **keep only matching rows** option.
+- Replace the null or blank values with values that work in relationships, typically strings like "NULL" and "(Blank)".
 
 There's no right approach here. Filtering out rows at the query stage removes rows and can affect summary statistics and calculations. Replacing values preserves data rows but can make unrelated rows appear related in the model leading to miscalculations. If you adopt this second option, ensure you use filters at the View/Chart where appropriate to ensure you're getting accurate results. Most importantly, evaluate which rows are kept or removed, and understand the overall effect on the analysis.
 
