@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/22/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 # DirectQuery optimization scenarios with the Optimize ribbon
@@ -38,7 +39,7 @@ Without Pause visuals, each time a measure is added or moved around in the Field
 
 In the **Optimize** ribbon, we select **Pause visuals**. We then add a new **Matrix** visual from the **Visualization** pane, and then add **Trips**, **Day of week**, and **Time of the day** to our new Matrix visual. When paused, the Matrix visual enters a *pending* state - no queries are sent. Now, we reorder the fields, but again, no queries are sent. Let's open the **Filter** pane, bring in the **Year**, and then filter to the year **2013**. At this point seeing the visual will be helpful before making any more changes. We can select **Refresh** in the pending visuals banner or open the **Selection** pane to refresh the visual there. We've only sent one query, and the query was pre-filtered, speeding up the return time and reducing impact on the data source. We can make formatting changes to the visual and even in the report paused state these changes show because a DAX query isn't needed. However, adding a background color formatting change *does* need a query so the visual enters the *pending* state. When ready, we can refresh or resume visual queries to see the final Matrix visual.
 
-**Using Pause visuals when creating new visuals**
+**Pause visuals when creating new visuals**:
 
 :::image type="content" source="media/desktop-optimize-ribbon-scenarios/2-create-new-visuals.gif" alt-text="Create new visuals":::
 
@@ -48,7 +49,7 @@ Without using Pause visuals, each time a measure or column is added or moved aro
 
 Just like with the previous scenario, in the **Optimize** ribbon, we select **Pause visuals** to have the report enter a paused state. Normally, in a DirectQuery report, anytime a new measure is created all the visuals on the report page will refresh. But, with the report in a paused state, we can create new measures without queries being sent. The visuals are instead in a pending state. We can add the measures to the pending visuals. We can then refresh an individual visual to see results with the new measures or simply resume visual queries when done.
 
-**Using Pause visuals when creating new measures**
+**Pause visuals when creating new measures**:
 
 :::image type="content" source="media/desktop-optimize-ribbon-scenarios/3-create-measures-in-a-directquery-model-without-the-visuals-refreshing-until-you-are-ready.gif" alt-text="Create measures in a DirectQuery model without the visuals refreshing until you're ready animation":::
 
@@ -58,7 +59,7 @@ Without using Pause visuals, each time a measure is created, all the visuals sen
 
 To edit a relationship between two DirectQuery tables in Model view in Power BI Desktop, we can now simply select on the relationship line between those tables to edit it in the **Properties** pane! We can change the table, column, cardinality, direction, make it active or inactive, and even turn on referential integrity if confident each table isn't missing values present in the other one. When done, we select **Apply changes**. We can also hold down **Ctrl** to select multiple relationships to make bulk changes in the properties pane, or delete them by using the **Delete** key.
 
-**Edit relationships in the Properties pane**
+**Edit relationships in the Properties pane**:
 
 :::image type="content" source="media/desktop-optimize-ribbon-scenarios/4-relationship-editing-in-properties-pane.gif" alt-text="Relationship editing in properties pane animation":::
 
@@ -90,7 +91,7 @@ Apply buttons are added to the Filter pane. The Filter pane button added control
 
 In the **Optimize** ribbon, we select **Optimization presets**, and then select **Customize** to change any of the settings. In our report the slicers are for single select and the Apply buttons are more useful in multiple select, so we can keep the other settings and return the slicers to instantly apply with Customize.
 
-**Revert to instantly apply slicers**
+**Revert to instantly apply slicers**:
 
 :::image type="content" source="media/desktop-optimize-ribbon-scenarios/6-optimization-presets-customize.gif" alt-text="Optimization presets customize animation":::
 
@@ -98,7 +99,7 @@ In the **Optimize** ribbon, we select **Optimization presets**, and then select 
 
 In the **Optimize** ribbon, we select **Optimization presets**, and then select **Interactivity** for our report. These are the default settings in Power BI Desktop, so if we've chosen **Query reduction** or **Customized** to change the Optimization presets, this is how we return to the default. The dialogue confirms our settings.
 
-**Setting the Interactivity optimization preset.**
+**Set the Interactivity optimization preset**:
 
 :::image type="content" source="media/desktop-optimize-ribbon-scenarios/7-optimization-presets-interactivity.gif" alt-text="Optimization presets interactivity animation":::
 
