@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: follow your goals
 ms.topic: how-to
-ms.date: 12/10/2024
+ms.date: 11/01/2025
 #customer intent: As a Power BI user I want to learn how to follow my goals in my scorecards in the Power BI Service.
 ---
 # Follow your goals
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Use the _Follow_ functionality to quickly access goals you’re interested in and stay up to date on the activity on these goals. You can follow goals as you’re browsing through different scorecards and later access all your followed goals in one place. So, you can get a quick overview of the goals you care about, without having to navigate to different scorecards often.
+Use the *Follow* functionality to quickly access goals you're interested in and stay up to date on the activity on these goals. You can follow goals as you're browsing through different scorecards and later access all your followed goals in one place. So, you can get a quick overview of the goals you care about, without having to navigate to different scorecards often.
 
 To follow, hover over the goal in the scorecard to select the **Follow metric** icon.
 

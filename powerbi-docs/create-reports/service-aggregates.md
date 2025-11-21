@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/03/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ms.custom: 'sample=Sales&Returns'
 LocalizationGroup: Reports
 ---
