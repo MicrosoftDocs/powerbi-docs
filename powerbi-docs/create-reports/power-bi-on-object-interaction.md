@@ -8,7 +8,8 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/21/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
