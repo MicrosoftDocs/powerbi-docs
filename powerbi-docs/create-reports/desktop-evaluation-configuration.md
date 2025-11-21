@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/13/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 # Evaluation configuration settings
@@ -69,7 +70,7 @@ You can change these settings in the user interface in Power BI Desktop. On the 
 - Maximum number of simultaneous evaluations
 - Maximum memory used per simultaneous evaluation (MB)
 
-:::image type="content" source="media/desktop-evaluation-configuration/desktop-evaluation-configuration-settings.png" alt-text="Changing data loading parallelization settings in Power BI Desktop":::
+:::image type="content" source="media/desktop-evaluation-configuration/desktop-evaluation-configuration-settings.png" alt-text="Screenshot of changing data loading parallelization settings in Power BI Desktop.":::
 
 #### In registry settings
 
@@ -121,7 +122,7 @@ You can change this setting in the user interface in Power BI Desktop. On the **
 - One. This limits the maximum number of concurrent jobs to 1 and effectively disables parallel loading of tables.
 - Custom. You can enter any positive number between 1-30. However, for Pro semantic models any number greater than 6 is not applied. Specifying a number less than the 6, the same as default, can constrain parallelization.
 
-:::image type="content" source="media/desktop-evaluation-configuration/desktop-evaluation-configuration-settings-concurrent-jobs.png" alt-text="Screenshot that shows the changing maximum number of concurrent jobs data loading parallelization settings in Power BI Desktop.":::
+:::image type="content" source="media/desktop-evaluation-configuration/desktop-evaluation-configuration-settings-concurrent-jobs.png" alt-text="Screenshot of the changing maximum number of concurrent jobs data loading parallelization settings in Power BI Desktop.":::
 
 ## Interaction between maximum number of simultaneous evaluations and maximum number of concurrent jobs
 
