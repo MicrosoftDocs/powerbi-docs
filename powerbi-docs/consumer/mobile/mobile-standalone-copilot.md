@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 11/12/2025
+ms.date: 11/23/2025
 ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 #customer intent: As a Power BI mobile user, I want to use a full-screen Copilot experience to ask questions about my data from anywhere in the app without needing to open specific reports first.
@@ -49,7 +49,7 @@ The full-screen Copilot chat interface opens, ready to accept your questions.
 
 ## Ask questions about your data
 
-When you ask questions about your data, Copilot works with you to understand your topic of interest and use that context to identify the right report, semantic model, or data agent to use as its source. You can ask Copilot questions about any accessible report, semantic model, or data agent, and Copilot processes your query and identifies relevant data sources.
+When you ask questions about your data, Copilot works to understand your topic of interest and use that context to identify the most relevant and accessible report, semantic model, or data agent to use as its source. 
 
 :::image type="content" source="media/mobile-standalone-copilot/copilot-ask-question.png" lightbox="media/mobile-standalone-copilot/copilot-ask-question.png" alt-text="Screenshot of Copilot confirming that it will provide a response to the given question." border="false":::
 
@@ -66,7 +66,7 @@ The standalone Copilot response might include:
 - **Textual summary**: A written answer to your question
 - **Interactive visual**: A screenshot of a chart or graph representing the data
   - Tap the **visual** to open it in a drawer where you can interact with it in live mode, select elements, use tooltips, and drill down into the data.
-  - Open a visual in the drawer view and select the **Share** option to send it as a screenshot via email, Teams, messaging apps, or other sharing methods.
+  - Tap the **Share** option in the visual drawer to send it as a screenshot via email, Teams, messaging apps, or other sharing methods.
 - **References**: Items such as reports, apps, data agents, or semantic models that the answer is based on
   - Tap the **References** button to open a drawer with the referenced items and related information
 - **How Copilot arrived at this** (when applicable): Details about how Copilot generated the response
@@ -89,13 +89,14 @@ Answers from models that haven't been prepped are clearly marked with this messa
 
 ## Copilot requirements
 
-Read about [requirements to use the standalone Copilot experience](../../create-reports/copilot-introduction.md#requirements-for-the-standalone-copilot).
+Read about the [requirements to use Copilot in Power BI](../../create-reports/copilot-introduction.md#copilot-requirements).
 
 ## Limitations and considerations
 
 - Voice dictation is available only on iPhone and iPad devices.
 - Conversation context is maintained only during the current session and is cleared when you close the app or clear the chat.
 - The standalone Copilot experience is only available to customers with home tenants in geographical regions that support Fabric—so **it's only available** for customers with home tenants in [this list](/fabric/admin/region-availability#all-workloads). You don't need to have Fabric enabled to use Copilot, they just need to have home tenants in one of the listed regions.
+- Mobile standalone Copilot doesn't support Microsoft Entra B2B integration, which means that the Copilot button isn't available when user opens the external org from the mobile app.
 
 ## Related content
 
