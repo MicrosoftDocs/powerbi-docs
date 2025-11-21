@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/18/2025
+ms.date: 11/23/2025
 #customer intent: As a Power BI mobile user, I want to understand what Copilot features are available in the mobile apps so I can use AI to get insights from my data on the go.
 ---
 
@@ -63,13 +63,13 @@ The in-report Copilot provides context-aware assistance for the report you're cu
 | I want to use voice to ask questions (iOS only) | Standalone Copilot |
 | I want to share AI-generated insights with colleagues | Standalone Copilot or In-report Copilot |
 
-## Copilot requirements
-
-Read about [requirements to use the standalone Copilot experience](../../create-reports/copilot-introduction.md#requirements-for-the-standalone-copilot).
-
 ## Data preparation
 
 **Data needs to be prepared to work with Copilot.** Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs. Learn how to [prep your data](../../create-reports/copilot-prepare-data-ai.md).
+
+## Copilot requirements
+
+Read about [requirements to use the standalone Copilot experience](../../create-reports/copilot-introduction.md#copilot-requirements).
 
 ## Related content
 
