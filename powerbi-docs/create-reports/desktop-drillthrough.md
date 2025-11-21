@@ -48,7 +48,7 @@ To create a drillthrough page:
 
 To use drillthrough from a visual, follow these steps:
 
-1. Select a data point in a visual.
+1. Right-click a data point in a visual.
 1. Select the drillthrough page from the context menu.
 1. The drillthrough page opens and is filtered to the selected value.
 
