@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/28/2022
+ms.date: 11/21/2025
 LocalizationGroup: Reports
 ---
 # Types of filters in Power BI reports

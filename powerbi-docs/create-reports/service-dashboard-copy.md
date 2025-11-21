@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/27/2023
+ms.date: 11/21/2025
 LocalizationGroup: Dashboards
 ---
 # Create a copy of a dashboard in the Power BI service

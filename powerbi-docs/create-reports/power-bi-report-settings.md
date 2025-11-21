@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/25/2024
+ms.date: 11/21/2025
 LocalizationGroup: Reports
 ---
 # Change settings for Power BI reports

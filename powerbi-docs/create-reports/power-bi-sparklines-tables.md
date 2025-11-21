@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/21/2024
+ms.date: 11/21/2025
 LocalizationGroup: Visualizations
 ---
 # Create sparklines in a table or matrix in a Power BI report

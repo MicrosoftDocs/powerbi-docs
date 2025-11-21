@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/07/2023
+ms.date: 11/21/2025
 LocalizationGroup: Reports
 ---
 # Create a QR code for a report in Power BI to use in the mobile apps
