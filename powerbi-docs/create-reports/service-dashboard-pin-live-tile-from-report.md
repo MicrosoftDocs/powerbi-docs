@@ -8,8 +8,9 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/25/2024
+ms.date: 11/01/2025
 ms.custom: video-removed
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 
@@ -52,7 +53,7 @@ Open the dashboard to see the pinned live tile:
 
 1. From the nav pane, select the dashboard with the new live tile. There you can do things like [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned report page.
 
-1. Interact with the live tile. In the following screenshot, you can see how selecting a bar on the column chart cross-filters and cross-highlights the other visualizations on the tile.
+1. Interact with the live tile. In the following screenshot, selecting a bar on the column chart cross-filters and cross-highlights the other visualizations on the tile.
 
     :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png" alt-text="Screenshot showing dashboards with a live tile." lightbox="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png":::
 

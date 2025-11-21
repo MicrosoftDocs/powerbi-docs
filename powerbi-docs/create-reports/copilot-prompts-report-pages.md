@@ -7,7 +7,8 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/25/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -25,7 +26,7 @@ Before your business can start using Copilot capabilities in Power BI, your admi
 
 Here are some examples of prompts that work well with Copilot for Power BI. Use these prompts as examples.
 
-Each sample prompt is paired with a report page that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they may not produce a page that's exactly what you want. It's a starting point for report page creation. Use the user interface to modify the report page that Copilot created. 
+Each sample prompt is paired with a report page that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they might not produce a page that's exactly what you want. It's a starting point for report page creation. Use the user interface to modify the report page that Copilot created. 
 
 ## Sales performance by product
 

@@ -6,7 +6,8 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: best-practice #Don't change
-ms.date: 06/05/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 
 #customer intent: As a Power BI report creator, I want use best practices so as to get the best results when I create my mobile-optimized layout of a Power BI report..
 
