@@ -84,25 +84,26 @@ Once configured, verify the setup is working:
    - Ensure the Power BI MCP server shows as connected
 
 2. **Open GitHub Copilot**
-   - Launch the chat window in VS Code
-   - Enable agent mode
+   1. Launch the chat window in VS Code
+   2. Enable agent mode
 
 3. **Provide your semantic model ID**
-   - Get your semantic model ID from the Power BI service (see [Find your semantic model ID](remote-mcp-server-tools.md#find-your-semantic-model-id))
-   - Share the ID with Copilot in your conversation
+   1. Get your semantic model ID from the Power BI service (see [Find your semantic model ID](remote-mcp-server-tools.md#find-your-semantic-model-id))
+   2. Share the ID with Copilot in your conversation
 
 4. **Ask a question**
    - Example: "What tables are in this semantic model?"
    - Example: "Show me the top 10 products by sales"
 
 5. **Authorize the tool**
-   - When prompted, allow Copilot to use the MCP server
-   - Authenticate with your Microsoft credentials when requested
+   1. When prompted, allow Copilot to use the MCP server tool
+   2. Authenticate with your Microsoft credentials if requested
 
 6. **Review the response**
-   - Copilot will query your model and return results
+   1. Copilot will query your model and return results
 
-**Tip:** For best query results, [prepare your semantic models for AI](/power-bi/create-reports/copilot-prepare-data-ai) by adding AI instructions and verified answers.
+> [!TIP]
+> For best query results, [prepare your semantic models for AI](/power-bi/create-reports/copilot-prepare-data-ai) by adding AI instructions and verified answers.
 
 **Troubleshooting:** [Manage MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_manage-installed-mcp-servers)
 

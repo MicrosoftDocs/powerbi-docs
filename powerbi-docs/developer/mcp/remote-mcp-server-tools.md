@@ -50,7 +50,8 @@ Generates optimized DAX queries from natural language prompts using Copilot in P
 **Requirements:**
 - [Copilot license](/power-bi/create-reports/copilot-enable-power-bi) for the user or organization
 
-**Note:** If you prefer not to consume Copilot capacity, disable this tool in your MCP client configuration and rely on your client's LLM to generate DAX directly.
+> [!NOTE]
+> If you prefer not to consume Copilot capacity, disable this tool in your MCP client configuration and rely on your client's LLM to generate DAX directly.
 
 
 ### Execute Query

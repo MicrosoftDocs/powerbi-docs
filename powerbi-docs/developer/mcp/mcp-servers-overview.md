@@ -40,7 +40,7 @@ The Modeling MCP server runs locally and provides AI agents with comprehensive s
 
 The remote Power BI MCP server is a hosted endpoint that enables AI agents to query Power BI semantic models. It generates and executes DAX queries using Copilot's intelligence, enabling natural language conversations with your data.  
 
-### Key capabilities:
+### Key capabilities
 
 - **Custom agent development** - Build agents that answer user questions by querying semantic models
 - **Schema-aware querying** - Agents automatically learn model structure to generate accurate queries
