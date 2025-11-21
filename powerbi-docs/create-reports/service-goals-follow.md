@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: follow your goals
 ms.topic: how-to
-ms.date: 12/10/2024
+ms.date: 11/01/2025
 #customer intent: As a Power BI user I want to learn how to follow my goals in my scorecards in the Power BI Service.
 ---
 # Follow your goals
