@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/01/2023
+ms.date: 11/21/2025
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
