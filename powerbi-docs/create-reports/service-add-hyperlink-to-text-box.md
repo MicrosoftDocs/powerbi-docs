@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/21/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ms.custom: video-_3q6VEBhGew
 LocalizationGroup: Visualizations
 ---

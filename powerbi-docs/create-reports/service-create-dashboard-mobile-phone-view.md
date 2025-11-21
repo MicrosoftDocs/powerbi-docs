@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/21/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 # Optimize a dashboard for mobile phones with Power BI

@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/21/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Ask questions of your data
 #customer intent: As a Power BI user I want to learn how to create question and answer visuals in Power Bi.
 ---
