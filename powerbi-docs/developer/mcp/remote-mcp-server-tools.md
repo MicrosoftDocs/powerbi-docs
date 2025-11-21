@@ -23,7 +23,7 @@ The remote Power BI MCP server provides tools that enable AI agents to chat with
 
 ## Available tools
 
-The MCP server provides the following tools for AI agents to invoke. For connection details, see [Get started with the remote Power BI MCP server](remote-mcp-server-getting-started.md).
+The MCP server provides the following tools for AI agents to invoke. For connection details, see [Get started with the remote Power BI MCP server](remote-mcp-server-get-started.md).
 
 ### Get Semantic Model Schema
 
@@ -128,7 +128,7 @@ You can also retrieve semantic model IDs programmatically using the [Power BI RE
 ## Related content
 
 - [What are the Power BI MCP servers?](mcp-servers-overview.md)
-- [Get started with the remote Power BI MCP server](remote-mcp-server-getting-started.md)
+- [Get started with the remote Power BI MCP server](remote-mcp-server-get-started.md)
 - [Prepare your data for AI](/power-bi/create-reports/copilot-prepare-data-ai)
 - [Power BI REST APIs](/rest/api/power-bi/)
 - [DAX reference](/dax/)

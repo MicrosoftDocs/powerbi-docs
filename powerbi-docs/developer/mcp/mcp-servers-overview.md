@@ -56,7 +56,7 @@ The Remote MCP server is ideal for enhancing personal AI assistants like GitHub 
 - Generate ad-hoc analyses through conversational queries
 - Explore data relationships and patterns using natural language
 
-**Get started:** [Set up the Remote MCP server](remote-mcp-server-getting-started.md)
+**Get started:** [Set up the Remote MCP server](remote-mcp-server-get-started.md)
 
 ## About the Model Context Protocol
 
@@ -82,7 +82,7 @@ You should follow Microsoft security guidance for MCP servers, including enablin
 Choose your path based on your scenario:
 
 > [!div class="nextstepaction"]
-> [Get started with the Remote MCP server](remote-mcp-server-getting-started.md)
+> [Get started with the Remote MCP server](remote-mcp-server-get-started.md)
 
 > [!div class="nextstepaction"]
 > [Get started with the Modeling MCP server](https://github.com/microsoft/powerbi-modeling-mcp)

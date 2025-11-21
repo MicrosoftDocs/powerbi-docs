@@ -100,7 +100,7 @@ Once configured, verify the setup is working:
    2. Authenticate with your Microsoft credentials if requested
 
 6. **Review the response**
-   1. Copilot will query your model and return results
+   - Copilot will query your model and return results
 
 > [!TIP]
 > For best query results, [prepare your semantic models for AI](/power-bi/create-reports/copilot-prepare-data-ai) by adding AI instructions and verified answers.

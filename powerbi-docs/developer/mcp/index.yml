@@ -31,7 +31,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: "Get started with the remote Power BI MCP server"
-            url: remote-mcp-server-getting-started.md
+            url: remote-mcp-server-get-started.md
           - text: "Get started with the Power BI Modeling MCP server"
             url: https://github.com/microsoft/powerbi-modeling-mcp
 
@@ -49,7 +49,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: "Set up in Visual Studio Code"
-            url: remote-mcp-server-getting-started.md#set-up-the-remote-power-bi-mcp-server-in-vs-code
+            url: remote-mcp-server-get-started.md#set-up-the-remote-power-bi-mcp-server-in-vs-code
 
   # Card
   - title: Modeling MCP server

@@ -9,7 +9,7 @@
   - name: Get started
     items:
     - name: "Get started with the remote Power BI MCP server"
-      href: remote-mcp-server-getting-started.md
+      href: remote-mcp-server-get-started.md
     - name: "Get started with the Power BI Modeling MCP server"
       href: https://github.com/microsoft/powerbi-modeling-mcp
   - name: Developer features

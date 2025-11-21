@@ -126,7 +126,7 @@ conceptualContent:
         - url: mcp/mcp-servers-overview.md
           itemType: overview
           text: What are the Power BI MCP servers?
-        - url: mcp/remote-mcp-server-getting-started.md
+        - url: mcp/remote-mcp-server-get-started.md
           itemType: get-started
           text: Get started with the remote MCP server
         - url: mcp/remote-mcp-server-tools.md
