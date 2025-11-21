@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-RWRVzC
-ms.date: 04/11/2023
+ms.date: 11/21/2025
 LocalizationGroup: Reports
 ---
 # Visualize your data quickly from Power Apps and Dynamics 365 apps

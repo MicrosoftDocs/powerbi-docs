@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/01/2025
+ms.date: 11/21/2025
 LocalizationGroup: Visualizations
 ---
 # Show the data used to create a Power BI visual

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 04/18/2024
+ms.date: 11/21/2025
 #customer intent: As a Power BI developer, I want to learn how to create a Power BI report quickly in the Jupyter environment so that I can easily tell the story of my data using Power BI's visualization capabilities as part of my notebook experience.
 ---
 

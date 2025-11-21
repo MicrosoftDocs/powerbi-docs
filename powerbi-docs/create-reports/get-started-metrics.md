@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: concept-article
-ms.date: 03/10/2025
+ms.date: 11/21/2025
 LocalizationGroup: Get started
 #customer intent: As a Power BI user, I want to learn how to use and manage metric sets so that I can ensure accuracy, consistency, and reliability in my organization's reports and analysis.
 ---

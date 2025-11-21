@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/11/2025
+ms.date: 11/21/2025
 ms.author: juliacawthra
 
 LocalizationGroup: Troubleshooting

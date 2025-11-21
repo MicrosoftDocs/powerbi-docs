@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 09/29/2025
+ms.date: 11/21/2025
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn how to create hover-based tooltips for visual reports.
 ---
