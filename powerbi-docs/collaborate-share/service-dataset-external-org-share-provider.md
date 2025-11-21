@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/21/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Administration
 ---
 
@@ -26,14 +27,14 @@ Data providers can use in-place semantic model sharing (preview) to share semant
 
 1. To access semantic model settings, go to **File** and select **Settings**. 
 
-1. Scroll to the bottom of the page and select on the dropdown for **External sharing**. 
+1. Scroll to the bottom of the page and select the dropdown for **External sharing**. 
 
 1. Turn on the external sharing switch and select **Apply**. This allows external users (who have at least *build* access to this semantic model) to discover, connect to, and work with this semantic model within their own Power BI tenant.
 
      ![Screenshot of the semantic model settings with the external sharing settings set to apply.](media/service-dataset-external-org-share-provider/external-sharing-dataset.png)
 
 > [!NOTE] 
-> If **Allow specific users to turn on external data sharing** is disabled by the Power BI admin for the specific user/user groups, they won't be able to turn on this semantic model property.  
+> If **Allow specific users to turn on external data sharing** is disabled by the Power BI admin for the specific user/user groups, they can't turn on this semantic model property.  
 
 ## Share the Semantic model 
 
@@ -42,12 +43,12 @@ Data providers can use in-place semantic model sharing (preview) to share semant
 1. Share the semantic model with an external user. 
 
     > [!NOTE] 
-    > Only registered guest users in your Microsoft Entra tenant can access the shared semantic model. Registered guest users will be tagged as **EXT** in their domain name to show they're an external guest.
+    > Only registered guest users in your Microsoft Entra tenant can access the shared semantic model. Registered guest users are tagged as **EXT** in their domain name to show they're an external guest.
 
-1. External users need to have at least “Build” access to the semantic model to access semantic models in their own tenant. So, select the **Allow recipients to build content with the data associated with this semantic model** checkbox. 
+1. External users need to have at least *Build* access to the semantic model to access semantic models in their own tenant. So, select the **Allow recipients to build content with the data associated with this semantic model** checkbox. 
 
     > [!NOTE] 
-    > The **Allow recipients to modify this semantic model** option isn't supported for B2B external sharing. So, guests won't be able to modify the source semantic model. This means that even if this option is checked, external guests can't change the semantic model. 
+    > The **Allow recipients to modify this semantic model** option isn't supported for B2B external sharing. So, guests can't modify the source semantic model. This means that even if this option is checked, external guests can't change the semantic model. 
 
 1. Select **Grant access**. 
 

@@ -36,11 +36,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "powerbi-docs/visuals/power-bi-visualization-card.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-new-card",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "powerbi-docs/create-reports/power-bi-change-owner.md",
       "redirect_url": "/power-bi/create-reports/",
       "redirect_document_id": false
@@ -998,7 +993,7 @@
     {
       "source_path": "powerbi-docs/power-bi-visualization-card.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/power-bi-visualization-combo-chart.md",
@@ -6959,6 +6954,32 @@
       "source_path": "powerbi-docs/visuals/power-bi-visualization-column-charts-considerations.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualization-column-charts",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-new-card.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-card-visual-considerations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-card-visual-new-format-settings.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/copilot-create-desktop-report.md",
+      "redirect_url": "/power-bi/create-reports/copilot-create-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/copilot-create-report-service.md",
+      "redirect_url": "/power-bi/create-reports/copilot-create-reports",
+      "redirect_document_id": false
     }
   ]
 }                           
+    

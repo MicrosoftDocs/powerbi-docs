@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 04/22/2025
+ms.date: 11/18/2025
 LocalizationGroup: Transform and shape data
 ---
 
@@ -212,7 +212,8 @@ When you save your work as a Power BI project (PBIP), you gain access to your se
 
 You can seamlessly integrate both experiences. For instance, you can update the TMDL definition in PBIP for quick changes without launching Power BI Desktop, and utilize the TMDL view when Power BI Desktop is already open to efficiently implement a series of changes to the semantic model using TMDL. Both approaches offer a rich and consistent TMDL coding experience.
 
-
+> [!TIP]
+> For an enhanced TMDL authoring experience when editing TMDL files externally in Visual Studio Code, use the [TMDL Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=CPIM.TMDL-language-support). This extension provides DAX and Power Query semantic highlighting, autocomplete, diagnostics, code actions, code formatting, breadcrumb navigation, and localization support for TMDL documents.
 
 ## Common use cases for TMDL view
 
@@ -293,6 +294,3 @@ The following articles describe more about TMDL and its uses.
 * [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview)
 * [Power BI Desktop projects (preview)](../developer/projects/projects-overview.md)
 * [Power BI Desktop project semantic model folder](../developer/projects/projects-dataset.md)
-
-
-

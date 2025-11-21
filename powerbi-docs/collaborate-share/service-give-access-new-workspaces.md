@@ -7,7 +7,8 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
@@ -15,6 +16,9 @@ LocalizationGroup: Share your work
 # Give users access to workspaces in Power BI
 
 After you [create a workspace](service-create-the-new-workspaces.md) in Power BI, or if you have an admin role in a workspace, you can give others access to it by adding them to the different roles. Workspace creators are automatically admins. For an explanation of the different roles, see [Roles in workspaces](service-roles-new-workspaces.md).
+
+> [!IMPORTANT]
+> You must have the **Admin** role in a workspace to manage access and add users. If you don't see the **Manage access** button, verify that you have the Admin role for the workspace. Only workspace admins can add or remove users and manage permissions.
 
 > [!NOTE]
 > To enforce row-level security (RLS) for Power BI Pro users who browse content in a workspace, assign them the Viewer Role.
@@ -26,6 +30,9 @@ After you [create a workspace](service-create-the-new-workspaces.md) in Power BI
 1. Because you have the Admin role in the workspace, on the workspace content list page, you see **Manage access**.
 
     :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png" alt-text="Screenshot that shows the Workspaces content list.":::
+
+    > [!NOTE]
+    > If you don't see the **Manage access** button, you can access user management through **Workspace settings** (the gear icon or ellipsis menu) and then select **Manage access** or **Access** from the settings pane.
 
 1. Select **Manage access** and then select **+ Add people or groups**.
 

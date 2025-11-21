@@ -282,10 +282,8 @@
           href: copilot-ask-data-question.md
       - name: Copilot features for creators
         items:        
-        - name: Create reports in the Power BI service with Copilot
-          href: copilot-create-report-service.md
-        - name: Create reports in Power BI Desktop with Copilot
-          href: copilot-create-desktop-report.md
+        - name: Create reports in Power BI with Copilot
+          href: copilot-create-reports.md
         - name: Write prompts for Copilot report pages
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page
@@ -384,20 +382,16 @@
       href: service-reports-visual-interactions.md
     - name: Customize x-axis and y-axis properties
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-    - name: Card visuals
-      items: 
-      - name: Create a (new) card visual
-        href: ../visuals/power-bi-visualization-new-card.md
-      - name: (new) Card visual format settings
-        href: ../visuals/power-bi-visualization-card-visual-new-format-settings.md
-      - name: (new) Card visual considerations and limitations
-        href: ../visuals/power-bi-visualization-card-visual-considerations.md
+    - name: Card visual
+      href: ../visuals/power-bi-visualization-card.md
     - name: Button slicer
       href: ../visuals/power-bi-visualization-button-slicer.md
     - name: List slicer (preview)
       href: ../visuals/power-bi-visualization-list-slicer.md
     - name: Text slicer (preview)
       href: ../visuals/power-bi-visualization-text-slicer.md
+    - name: Image visual
+      href: ../visuals/power-bi-visualization-image-visual.md
     - name: Column charts
       href: ../visuals/power-bi-visualization-column-charts.md
     - name: Basic area charts

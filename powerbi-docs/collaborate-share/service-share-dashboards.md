@@ -7,7 +7,8 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/30/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ms.custom: sfi-image-nochange
 ---
@@ -69,12 +70,14 @@ Power BI offers several ways to collaborate and share Power BI reports, dashboar
 
 ### Share outside your organization
 
+To share content with external users, your Power BI administrator must enable external sharing in the tenant settings. See [tenant settings for guest users](/fabric/admin/service-admin-portal-export-sharing#guest-users-can-access-microsoft-fabric) for details.
+
 - Enter the external user's email address (Microsoft Entra B2B guests recommended).
 - Recipients must sign in to Power BI to view shared content.
 - Only direct recipients can access the shared content; forwarding the link does not grant access.
 - If RLS is implemented, external users only see data they're permitted to view.
 
-See [Microsoft Entra B2B guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b) for more.
+For more information, see [Distribute Power BI content to external guest users with Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b).
 
 ### Share with large groups
 
