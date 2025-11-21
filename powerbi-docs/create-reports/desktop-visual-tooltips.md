@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/30/2025
+ms.date: 11/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
