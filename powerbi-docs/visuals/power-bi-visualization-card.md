@@ -135,7 +135,7 @@ Padding can be set in a custom theme file or added to your own custom theme file
   }
 }
 ```
-See the [Power BI report themes](./create-reports/desktop-report-themes) documentation or more information.
+See the [Power BI report themes](/create-reports/desktop-report-themes) documentation or more information.
 
 
 **Why is there a reference label area on cards without a reference label?**
@@ -171,7 +171,7 @@ This setting can be set in a custom theme file or added to your own custom theme
   }
 }
 ```
-See the [Power BI report themes](./create-reports/desktop-report-themes) documentation or more information.
+See the [Power BI report themes](/create-reports/desktop-report-themes) documentation or more information.
 
 **Why can’t I see my image settings in the format pane?**
 
