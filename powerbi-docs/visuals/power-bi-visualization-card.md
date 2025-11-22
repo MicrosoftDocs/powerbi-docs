@@ -23,7 +23,7 @@ The **card visual** in Power BI is a versatile tool for presenting summary measu
 Combining multiple measures and reference labels in one visual improves the report performance by reducing visual load time and optimizing underlying queries to the semantic model.
 
 > [!NOTE]
-> The **(new) card visual** became generally available as the **card visual** with the November 2025 Power BI release. If you created or published a report using this visual during preview, you might notice changes to card. You can adjust the visual by editng the report and using the Format pane. More information is available in the FAQ section.
+> The **(new) card visual** became generally available as the **card visual** with the November 2025 Power BI release. If you created or published a report using this visual during preview, you might notice changes to card. You can adjust the visual by editing the report and using the Format pane. More information is available in the FAQ section.
 
 ## Prerequisites
 
@@ -86,7 +86,7 @@ The card visual in Power BI lets you create visually appealing cards that combin
 
 To add images to your card visual: 
 
-- **Add a hero image:** With the card visual selected on the canvas, select the **Format visual** icon in the **Visualizations** pane. Under the **Visual** tab, expand the **Image** card. Select your card in the **Cards** dropdown, and then set the **Image** toggle to *on*. 
+- **Add a hero image:** With the card visual selected, select the **Format visual** icon in the **Visualizations** pane. Under the **Visual** tab, expand the **Image** card. Select your card in the **Cards** dropdown, and then set the **Image** toggle to *on*. 
 - **Add a callout image**: From the **Visualizations** pane, select the **Format visual** icon. Under the **Visual** tab, expand the **Callout** card. Ensure your card is selected in the **Apply settings**, expand the **Image** controls, and then set the **Image** toggle to *on*. 
 
 For both image types, you can add it by uploading from your local device, pasting an image URL, or selecting an image from a data column. You can also customize the fit of the image and choose different image effects to enhance its appearance.
@@ -198,9 +198,9 @@ Differences between Desktop and the service can happen in two scenarios.
 
 ### Default behavior changes from public preview
 
-During preview, the card visual's default behavior was different to how it now behaves in general availability. At general availablity, we made updates to enhance layout consistency, visual alignment, and overall user experience. 
+During preview, the card visual's default behavior was different to how it now behaves in general availability. At general availability, we made updates to enhance the layout consistency, visual alignment, and overall user experience. 
 
-- **Callout image alignment:** During preview, the callout image aligned was contrained to the callout label text, which may leave part of the the callout container empty. Now the image aligns to the callout container. 
+- **Callout image alignment:** During preview, the callout image aligned was constrained to the callout label text, which may leave part of the the callout container empty. Now the image aligns to the callout container. 
 
 - **Background image fit:** During preview, the background image could repeat to fill the container. Now the **image fit** options align with other visual image options of fit, stretch, fill, and center.  
    
