@@ -175,7 +175,7 @@ See the [Power BI report themes](/power-bi/create-reports/desktop-report-themes)
 
 **Why can’t I see my image settings in the format pane?**
 
-During preview, the image was adding using the image section of the format pane and added in the callout area next to the callout text. After November 2025, those images previously added were kept in the callout area, and their settings move to  **Callout** > **Image** in the format pane. Setting the **image** section of the format pane now adds a new image to the card with its own area. 
+During preview, the callout image was added using the **image** section of the format pane and showed in the callout area next to the text. After November 2025, those images previously added were kept in the callout area, and their settings move to **Callout** > **Image** section in the format pane. Setting the **image** section of the format pane now adds a new hero image to the card with its own area. 
 
 **Why is my image now zoomed in?**
 
