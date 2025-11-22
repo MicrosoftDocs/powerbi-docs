@@ -18,16 +18,16 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The **card visual** in Power BI is a versatile tool for presenting key metrics in a visually appealing format. Each card can display a specific metric, such as total sales or profit growth, and you can customize it to reflect your objectives and key results (OKRs). This flexibility allows you to group multiple cards within a single container, giving you full control over every component of each card and a comprehensive overview of important data points at a glance.
+The **card visual** in Power BI is a versatile tool for presenting summary measures in a visually appealing format. Each card can display a specific measure, such as total sales or profit growth, and you can customize it to reflect your objectives and key results (OKRs). This flexibility allows you to group multiple cards within a single visual, format them to match your report, and share a comprehensive overview in each card.
 
-The card visual is useful in business and finance for showcasing critical performance indicators. It's also helpful in marketing for highlighting metrics like customer engagement and conversion rates. With its sleek design and enhanced functionality, the card visual enables you to interact with your data more effectively and make informed decisions based on real-time insights.
+Combining multiple measures and reference labels in one visual improves the report performance by reducing visual load time and optimizing underlying queries to the semantic model.
 
 > [!NOTE]
 > The **(new) card visual** became generally available as the **card visual** with the November 2025 Power BI release. If you created or published a report using this visual during preview, you might notice changes to card. You can adjust the visual by editng the report and using the Format pane. More information is available in the FAQ section.
 
 ## Prerequisites
 
-In the following guide, you use the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
+In the following guide, you use the [Retail Analysis Sample file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -146,14 +146,14 @@ During preview, the **reference labels** were part of the callout area when the 
 
 During preview, the **reference labels** were part of the callout area. After November 2025, the **reference labels** have their own area. They also now take up 50% of the card by default. 
 
-To adjust this, go to **Cards**, make sure the **Apply setting to** control is set to **All**, then in **Layout** adjust the **Callout size** %.
+To adjust the card area sizes, go to **Cards**, make sure the **Apply setting to** control is set to **All**, then in **Layout** adjust the **Callout size** %.
 
 **Why is there a background color added to the card reference label?**
 During preview, the background color only showed when the reference label had a divider. The divider gave the reference labels their own area in the card to then apply a background to. After the November 2025 release, reference labels always have their own area with or without a divider, and a default background is used. 
 
-The background can be turned off by going to reference labels layout > background in the format pane and toggling the setting off.
+The background can be turned off by going to reference labels layout > background in the format pane and toggling off the setting.
 
-This can be set in a custom theme file or added to your own custom theme file to apply them to all cards in your report. 
+This setting can be set in a custom theme file or added to your own custom theme file to apply them to all cards in your report. 
 
 ```json
 {
@@ -181,30 +181,30 @@ During preview, the image was adding using the image section of the format pane 
 
 During preview, the default settings for size of the image had some bugs corrected by the November 2025 update. Depending on your initial settings, the image can look “zoomed in” or different from before.
 
-To fix this, in the format pane, adjust the **Callout** > **Image** settings for **image fit** to be **fit**, or check the **size** and **image area size** controls in the same formatting section. Note this is a new location, and the top-level image section is now for the hero image.
+To fix the image, in the format pane, adjust the **Callout** > **Image** settings for **image fit** to be **fit**, or check the **size** and **image area size** controls in the same formatting section. Note this setting is in a new location, and the top-level image section is now for the hero image.
 
 **Where did the legacy card and multi-card visuals go?**
 
-The legacy single card and multi-card visuals will reappear if you go to the three dots in the visualization pane and choose **Restore default visuals**. In a report having one of these visuals they may show in the unpinned area of the visualization pane, where you generally find custom visuals.  
+The legacy single card and multi-card visuals reappear if you go to the three dots in the visualization pane and choose **Restore default visuals**. In a report having one of these visuals they may show in the unpinned area of the visualization pane, where you generally find custom visuals.  
 
 **Why does the new card visual in a published report look different than it looks in Desktop?**
 
 Differences between Desktop and the service can happen in two scenarios.
 
-1.	You are using a version of Desktop before November 2025, when the card was in preview. When published to the service it was upgraded to be the generally available version of the new card visual. To correct this, either update your Power BI Desktop or edit the report in the web after publishing to adjust the style.
+1.	You are using a version of Desktop before November 2025, when the card was in preview. When published to the service it was upgraded to be the generally available version of the new card visual. Either update your Power BI Desktop or edit the report in the web after publishing to adjust the style.
    
-1.	You are using November 2025 version of Power BI Desktop, and the update for the generally available card has not yet reached your region in the service. Once the service is updated, the card will look the same. This should only happen in a few regions in late November 2025.
+1.	You are using November 2025 version of Power BI Desktop, and the update for the generally available card isn't in your service region. Once the service region is updated, the card looks the same. This behavior should only happen in a few regions in late November 2025.
 
 
 ### Default behavior changes from public preview
 
 During preview, the card visual's default behavior was different to how it now behaves in general availability. At general availablity, we made updates to enhance layout consistency, visual alignment, and overall user experience. 
 
-- **Callout image alignment:** During preview, the callout image aligned was contrained to the callout label text which could have left part of the the callout container empty. Now the image aligns to the callout container. 
+- **Callout image alignment:** During preview, the callout image aligned was contrained to the callout label text, which may leave part of the the callout container empty. Now the image aligns to the callout container. 
 
-- **Background image fit:** During preview, the background image could repeat to fill the container. We've updated the **image fit** options to align with other visual image options. Fit, stretch, fill, and center.  
+- **Background image fit:** During preview, the background image could repeat to fill the container. Now the **image fit** options align with other visual image options of fit, stretch, fill, and center.  
    
-- **Reference label outer padding:** During preview, **reference labels** had an **outer padding** setting that unintentionally affected the callout area by pushing elements out of place around the divider. We've removed the **outer padding** setting from **reference labels**.
+- **Reference label outer padding:** During preview, **reference labels** had an **outer padding** setting that unintentionally affected the callout area by pushing elements out of place around the divider. Now the **outer padding** setting is removed from **reference labels**.
 
 - **Autogrid columns:** During preview, the visuals would leave an empty column to match the specified number of columns. With the addition of **autogrid**, it arranges cards to fill the visual container based the cards present. This setting can be toggled off to return to previous behavior.
 
