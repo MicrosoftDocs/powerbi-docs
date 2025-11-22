@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/12/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 # Publish semantic models and reports from Power BI Desktop
@@ -22,24 +23,29 @@ Publishing from Power BI Desktop has the same effect as using **Get Data** in Po
 > Any changes you make to the report in Power BI won't be saved back to the original Power BI Desktop file. This includes when you add, delete, or change visualizations in reports.
 
 ## To publish a Power BI Desktop semantic model and reports
+
+> [!NOTE]
+> The user interface and button locations in Power BI Desktop may vary depending on your version. If the screenshots don't match what you see, look for the **Publish** option in the **File** menu or on the **Home** ribbon.
+
 1. In Power BI Desktop, choose **File** > **Publish** > **Publish to Power BI** or select **Publish** on the **Home** ribbon.
 
-   ![Screenshot of the Power BI Home ribbon, highlighting Publish.](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
+   :::image type="content" source="media/desktop-upload-desktop-files/pbid_publish_publishbutton.png" alt-text="Screenshot of the Power BI Home ribbon, highlighting Publish.":::
 
 
-2. Sign in to Power BI if you aren't already signed in.
-3. Select the destination. You can search your list of available workspaces to find the workspace into which you want to publish. The search box lets you filter your workspaces. Select the workspace, and then click the **Select** button to publish.
+1. Sign in to Power BI if you aren't already signed in.
+1. Select the destination. You can search your list of available workspaces to find the workspace into which you want to publish. The search box lets you filter your workspaces. Select the workspace, and then click the **Select** button to publish.
 
-   ![Screenshot of the Publish to Power BI dialog.](media/desktop-upload-desktop-files/pbid_publish_select_destination.png)
+   :::image type="content" source="media/desktop-upload-desktop-files/pbid_publish_select_destination.png" alt-text="Screenshot of the Publish to Power BI dialog.":::
 
 When publishing is complete, you receive a link to your report. Select the link to open the report in your Power BI site.
 
-![Screenshot of the successful Publishing to Power BI dialog.](media/desktop-upload-desktop-files/pbid_publish_success.png)
+:::image type="content" source="media/desktop-upload-desktop-files/pbid_publish_success.png" alt-text="Screenshot of the successful Publishing to Power BI dialog.":::
 
 > [!NOTE]
 > If your Desktop file has a sensitivity label, the semantic model and report that are published will inherit that label, and the label will be considered automatically or manually applied depending on whether the label on the Desktop file was automatically or manually applied. This affects the behavior of sensitivity label downstream inheritance from the semantic model to its associated report. See [Downstream inheritance between semantic models and reports published from *.pbix* files](/fabric/governance/service-security-sensitivity-label-downstream-inheritance#downstream-inheritance-between-semantic-models-and-reports-published-from-.pbix-files) for detail.
 
 ## Republish or replace a semantic model published from Power BI Desktop
+
 The semantic model, and any reports you created in Power BI Desktop, upload to your Power BI site when you publish a Power BI Desktop file. When you republish your Power BI Desktop file, the semantic model in your Power BI site is replaced with the updated semantic model from the Power BI Desktop file.
 
 This process is straightforward, but you should know the following:
@@ -48,15 +54,16 @@ This process is straightforward, but you should know the following:
 * Two or more semantic models in Power BI with the same name as the Power BI Desktop file could cause publishing to fail. Make sure you have only one semantic model in Power BI with the same name. You can also rename the file and publish, creating a new semantic model with same name as the file.
 * If you rename or delete a column or measure, any visualizations you already have in Power BI with that field could be broken.
 * Power BI ignores some format changes of existing columns. For example, if you change a column’s format from 0.25 to 25%.
-* Say you have a refresh schedule that is configured for your existing semantic model in Power BI. When you add new data sources to your file and then republish, you’ll have to sign into them before the next scheduled refresh.
+* Say you have a refresh schedule that is configured for your existing semantic model in Power BI. When you add new data sources to your file and then republish, you'll have to sign into them before the next scheduled refresh.
 * When you republish a semantic model published from Power BI Desktop and have a refresh schedule defined, a semantic model refresh is started as soon as you republish.
+
 * When you make a change to a semantic model and then republish it, a message shows you how many workspaces, reports, and dashboards are potentially impacted by the change. The message then asks you to confirm that you want to replace the currently published semantic model with the one you modified. The message also provides a link to the full semantic model impact analysis in the Power BI service. From there, you can see more information and take action to mitigate the risks of your change.
 
-   ![Screenshot of a Replace this semantic model warning dialog.](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
+   :::image type="content" source="media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png" alt-text="Screenshot of a Replace this semantic model warning dialog.":::
 
 * If the semantic model (and, if one exists, the report) in the Power BI service that you're overwriting has sensitivity labels that differ from the label in your *.pbix* file, a dialog appears. The dialog will prompt you to choose whether to keep the existing labels or overwrite them with the ones coming from your *.pbix* file.
 
-    ![Screenshot of the dialog for choosing to keep or overwrite sensitivity labels in the service.](media/desktop-upload-desktop-files/pbid-dataset-overwrite-labels-desktop-dialog.png)
+    :::image type="content" source="media/desktop-upload-desktop-files/pbid-dataset-overwrite-labels-desktop-dialog.png" alt-text="Screenshot of the dialog for choosing to keep or overwrite sensitivity labels in the service.":::
 
 
    [Learn more about semantic model impact analysis](../collaborate-share/service-dataset-impact-analysis.md).
@@ -66,7 +73,7 @@ This process is straightforward, but you should know the following:
 
 ## Publish semantic models and reports from Power BI Desktop to a folder in a workspace (preview)
 
-The ability to publish reports and semantic models from Power BI Desktop into a folder in a workspace is now in preview, and enabled by default. To use this feature, follow the established pattern for publishing a semantic model and report. The workspace navigator provides the option for you to select a folder within a workspace to which it will publish. Folders are organizational units inside a workspace that enable users to efficiently organize and manage artifacts in the workspace. 
+The ability to publish reports and semantic models from Power BI Desktop into a folder in a workspace is now in preview, and enabled by default. To use this feature, follow the established pattern for publishing a semantic model and report. The workspace navigator provides the option for you to select a folder within a workspace to which it publishes. Folders are organizational units inside a workspace that enable users to efficiently organize and manage artifacts in the workspace.
 
 To turn the capability off, deselect the **Publish dialogs support folder selection** setting using the **Options and settings > Options > Preview features** menu in Power BI Desktop.
 
@@ -77,8 +84,8 @@ To learn more about creating folders in Microsoft Fabric workspaces, read the [c
 * Directly publishing a protected .pbix file from Power BI Desktop to the Power BI service is not supported for guest users, even if they have higher-level permissions. To update or publish reports from a protected .pbix file, guest users need to start from the Power BI service, using **Get Data**, for example.
 
 * The following storage mode conversions are not supported during republish:
-   * If you first publish a report using Import mode, you won't be able to overwrite the report and the semantic model with a DirectQuery or Live Connect based report. This will not work.
-   * If you first publish a report using a live connection, then change the storage mode or the target semantic model in Power BI Desktop, you won't be able to overwrite the report when you republish.
+  * If you first publish a report using Import mode, you won't be able to overwrite the report and the semantic model with a DirectQuery or Live Connect based report. This will not work.
+  * If you first publish a report using a live connection, then change the storage mode or the target semantic model in Power BI Desktop, you won't be able to overwrite the report when you republish.
 
 ## Related content
 

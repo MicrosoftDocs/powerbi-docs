@@ -60,6 +60,10 @@ You can create a card visual in several ways:
 For this article, use the first option:
 
 1. From the **Visualizations** pane, make sure the **Build visual** tab is selected, then select the **card visual** icon in the visual gallery.
+
+   > [!NOTE]
+   > Selecting the Card icon creates the new Card visual introduced with the November 2025 general availability release. If you need to maintain legacy behavior, continue using existing legacy Card visuals in your reports. For more information, see the [Legacy Card visual](#legacy-card-visual) section under Considerations and limitations.
+
 1. Use the **Data** pane to add data to the visual. You can add data by selecting each field in the **Data** pane, dragging the fields to the field wells on the **Visualizations** pane, or dragging the fields directly to the visual placeholder on the report canvas. Expand the **Sales** group, then drag **StoreCount** and **TotalSalesLY** to the **Value** field well. You see that each data field you added is displayed as its own card.
 
    :::image type="content" source="media/power-bi-visualization-card-visual/build-card.png" alt-text="Screenshot of the Data pane with StoreCount and TotalSalesLY measures added to the Value field well in the Visualizations pane." lightbox="media/power-bi-visualization-card-visual/build-card.png":::
@@ -115,10 +119,15 @@ During preview, the card visual's default behavior was different to how it now b
 ### Format settings
 
 - The **(new) card visual** is generally available as the **card visual** with the November 2025 Power BI release. If you used the card visual during the public preview phase, you might notice behavior or formatting changes that reflect the improvements in the general availability release.
+- The new Card visual includes updated default styling. Newly created cards may look different from legacy cards and from cards created during Public Preview, while existing visuals remain unchanged.
 - When formatting the card visual, you might notice that some of the format settings are in a different or new location, or the name of the setting is changed.
 - In earlier versions of the card visual, the **Callout** image was available as part of the **Image card**. This image is now in the **Callout** section of the **Format** pane.
 - Certain **Layout** arrangements might affect existing reports that used the card visual during its public preview phase. This effect is due to updates made to all card components as part of the general availability release, including enhancements to layout, styling, and image handling.
 - If you previously relied on the Image card layout, update your visuals accordingly by using the Format pane to access and configure the Callout image settings.
+
+### Legacy Card visual
+
+The previous (legacy) Card visual remains available for backward compatibility. Existing reports using the legacy Card visual continue to render without changes. The new Card visual is recommended for new reports. When you select the Card icon in the Visualizations pane, it creates the new Card visual introduced in the November 2025 general availability release. Users who need to maintain legacy behavior should continue using existing legacy Card visuals in their reports.
 
 ## Related content
 

@@ -1,0 +1,88 @@
+### YamlMime:Landing
+
+title: Power BI MCP server documentation
+summary: Learn about the Power BI Model Context Protocol (MCP) servers and how they enable AI assistants to interact with Power BI semantic models for intelligent data insights and automated task completion.
+
+metadata:
+  title: Power BI MCP server documentation
+  description: Learn about the Power BI Model Context Protocol (MCP) servers, an integration solution that enables AI assistants to interact with Power BI semantic models.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: sgodderidge
+  ms.author: sgodderidge
+  ms.date: 11/19/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "What are the Power BI MCP servers?"
+            url: mcp-servers-overview.md
+      - linkListType: get-started
+        links:
+          - text: "Get started with the remote Power BI MCP server"
+            url: remote-mcp-server-get-started.md
+          - text: "Get started with the Power BI Modeling MCP server"
+            url: https://github.com/microsoft/powerbi-modeling-mcp
+
+  # Card
+  - title: Remote Power BI MCP server
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Remote Power BI MCP server tools"
+            url: remote-mcp-server-tools.md
+          - text: "Available tools and endpoints"
+            url: remote-mcp-server-tools.md#available-tools
+          - text: "Limitations and considerations"
+            url: remote-mcp-server-tools.md#limitations-and-considerations
+      - linkListType: how-to-guide
+        links:
+          - text: "Set up in Visual Studio Code"
+            url: remote-mcp-server-get-started.md#set-up-the-remote-power-bi-mcp-server-in-vs-code
+
+  # Card
+  - title: Modeling MCP server
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "Power BI Modeling MCP server"
+            url: mcp-servers-overview.md#power-bi-modeling-mcp-server
+      - linkListType: reference
+        links:
+          - text: "Modeling MCP server GitHub repository"
+            url: https://github.com/microsoft/powerbi-modeling-mcp
+
+  # Card
+  - title: Core concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "About the Model Context Protocol"
+            url: mcp-servers-overview.md#about-the-model-context-protocol
+      - linkListType: reference
+        links:
+          - text: "Model Context Protocol specification"
+            url: https://modelcontextprotocol.io/specification/latest
+
+  # Card
+  - title: Related resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Power BI REST APIs"
+            url: /rest/api/power-bi/
+          - text: "DAX reference"
+            url: /dax/
+          - text: "VS Code MCP Documentation"
+            url: https://code.visualstudio.com/docs/copilot/customization/mcp-servers

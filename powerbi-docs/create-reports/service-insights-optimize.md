@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 02/28/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 # Optimize your data for Power BI Quick Insights

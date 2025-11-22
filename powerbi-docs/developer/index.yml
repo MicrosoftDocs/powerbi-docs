@@ -120,6 +120,22 @@ conceptualContent:
       footerLink:
         url: projects/index.yml
         text: See more
+    # Card
+    - title: Power BI MCP servers
+      links:
+        - url: mcp/mcp-servers-overview.md
+          itemType: overview
+          text: What are the Power BI MCP servers?
+        - url: mcp/remote-mcp-server-get-started.md
+          itemType: get-started
+          text: Get started with the remote MCP server
+        - url: mcp/remote-mcp-server-tools.md
+          itemType: concept
+          text: Remote Power BI MCP server tools
+      # footerLink (optional)
+      footerLink:
+        url: mcp/index.yml
+        text: See more
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:

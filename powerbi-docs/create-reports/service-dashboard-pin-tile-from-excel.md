@@ -8,7 +8,8 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 
@@ -25,7 +26,7 @@ For in-depth information about how Excel and Power BI work together, see [Get da
 
 When you choose **Connect**, your workbook appears in Power BI just like it would in Excel Online. However, unlike Excel Online, you have some great features to help you pin elements from your worksheets right to your dashboards.
 
-You can’t edit your workbook in Power BI, but if you need to make some changes, you can select **Edit** from the **Workbooks** tab of your workspace. Then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
+You can't edit your workbook in Power BI, but if you need to make some changes, you can select **Edit** from the **Workbooks** tab of your workspace. Then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make save to the workbook on OneDrive.
 
 1. Upload your workbook to your OneDrive for work or school.
 
@@ -47,7 +48,7 @@ You can’t edit your workbook in Power BI, but if you need to make some changes
 
 One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is from within an Excel workbook in Power BI. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for work or school or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
 
-1. Highlight the cells that you'd like to pin to a dashboard.
+1. Highlight the cells that you want to pin to a dashboard.
 
     :::image type="content" source="media/service-dashboard-pin-tile-from-excel/pbi_selectrange.png" alt-text="Screenshot showing selected cells in an Excel workbook.":::
 
@@ -86,7 +87,7 @@ Selecting a workbook tile opens the linked workbook in Power BI. Since the workb
 
 ## Considerations and troubleshooting
 
-Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel aren't supported in Excel Services REST API, they aren't seen on tiles in Power BI, for example: Sparklines, icon set conditional formatting, and time slicers. For a full list of unsupported features, see [Unsupported Features in Excel Services REST API](/sharepoint/dev/general-development/unsupported-features-in-excel-services-rest-api).
+Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel aren't supported in Excel Services REST API, they aren't visible on tiles in Power BI, for example: Sparklines, icon set conditional formatting, and time slicers. For a full list of unsupported features, see [Unsupported Features in Excel Services REST API](/sharepoint/dev/general-development/unsupported-features-in-excel-services-rest-api).
 
 ## Related content
 

@@ -8,7 +8,8 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/24/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---
 # Create sparklines in a table or matrix in a Power BI report
@@ -30,7 +31,7 @@ Watch this video showing how to add sparklines, and then try it yourself.
 
 ## Add a sparkline
 
-You can add sparklines to both your table and matrix visuals. 
+You can add sparklines to both your table and matrix visuals.
 
 1. Create a table or matrix.
 1. Select the dropdown arrow next to one of the numeric fields, and select **Add a sparkline**.
@@ -52,7 +53,9 @@ You can add sparklines to both your table and matrix visuals.
 
 ## Combining sparklines and calculation groups
 
+
 When using [calculation groups](../transform-model/calculation-groups.md) and sparklines together, you can decide how to apply a calculation group to the sparkline. Two options are available:
+
 
 - **Individual values**. This is the default value and applies the calculation group to each individual value on the sparkline.
 - **Entire sparkline**. This applies the calculation group to the entire sparkline as a whole, not to the individual values. Calculation groups that perform arithmetic operations are not supported in this mode.

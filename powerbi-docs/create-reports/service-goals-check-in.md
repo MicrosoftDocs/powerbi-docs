@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Stay on top of your goals
 ms.topic: how-to
-ms.date: 12/11/2024
+ms.date: 11/01/2025
 
 #customer intent: As a Power BI user I want to learn how to show the follow and keep track of my goals on Power BI scorecards.
 ---
@@ -32,11 +32,11 @@ The goals Details pane provides the entire history for the metric from the start
 
 You can filter scorecards to goals labeled as a particular status. Selecting the summary cards at the top of the scorecard makes it easy to see what is on track or at risk. 
 
-This metric is _at risk_.
+This metric is *at risk*.
 
 :::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Screenshot of goals filtered to status at risk via summary card.":::
 
-This metric is _behind_.
+This metric is *behind*.
 
 :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Screenshot of goals filtered to status behind via summary card.":::
 
@@ -46,7 +46,7 @@ The scorecard before filtering.
 
 :::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Screenshot Indicating location of keyword search on scorecard.":::
 
-The scorecard filtered to _Premium_.
+The scorecard filtered to *Premium*.
 
 :::image type="content" source="media/service-goals-check-in/keyword-premium.png" alt-text="Screenshot of Keyword search results for premium product SKU.":::
 
