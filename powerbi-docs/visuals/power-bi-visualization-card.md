@@ -103,13 +103,13 @@ The card visual introduces a dynamic *collage* layout, letting you highl
 
 ### Frequently asked questions for cards used in reports during preview
 
-**Why is the column setting reset to 5 or row setting reset to 3 when I had it previously set to a different number?**
+#### Why is the column setting reset to 5 or row setting reset to 3 when I had it previously set to a different number?
 
 During preview, you could set a column or row number for a grid, vertical, or horizontal arrangement of cards. After the November 2025 release, only the grid arrangement setting is kept. Vertical and horizontal arrangements reset to 5 columns and 3 rows on existing reports, including published reports. Scrollbars may appear in your existing card visuals to accommodate these settings. Only reports published or created with the card visual during preview are impacted. 
 
 To return your cards to the previous column and row number, update these settings in the November 2025 Power BI Desktop and publish the report or edit the report in the web.
 
-**Why do the cards take up more space?**
+#### Why do the cards take up more space?
 
 During preview, the default settings had less padding in the cards. After the November 2025 release, more padding and padding options were added to the card. The new default is 12px. 
 
@@ -138,17 +138,17 @@ Padding can be set in a custom theme file or added to your own custom theme file
 See the [Power BI report themes](/power-bi/create-reports/desktop-report-themes) documentation or more information.
 
 
-**Why is there a reference label area on cards without a reference label?**
+#### Why is there a reference label area on cards without a reference label?
 
 During preview, the **reference labels** were part of the callout area when the **divider** was turned off. After November 2025, the **reference labels** have their own area. Once an area is used in at least one card, the other cards keep that area available to maintain consistency across cards. 
 
-**Why is the reference label obscuring the text in the callout?**
+#### Why is the reference label obscuring the text in the callout?
 
 During preview, the **reference labels** were part of the callout area. After November 2025, the **reference labels** have their own area. They also now take up 50% of the card by default. 
 
 To adjust the card area sizes, go to **Cards**, make sure the **Apply setting to** control is set to **All**, then in **Layout** adjust the **Callout size** %.
 
-**Why is there a background color added to the card reference label?**
+#### Why is there a background color added to the card reference label?
 During preview, the background color only showed when the reference label had a divider. The divider gave the reference labels their own area in the card to then apply a background to. After the November 2025 release, reference labels always have their own area with or without a divider, and a default background is used. 
 
 The background can be turned off by going to reference labels layout > background in the format pane and toggling off the setting.
@@ -173,21 +173,21 @@ This setting can be set in a custom theme file or added to your own custom theme
 ```
 See the [Power BI report themes](/power-bi/create-reports/desktop-report-themes) documentation or more information.
 
-**Why can’t I see my image settings in the format pane?**
+#### Why can’t I see my image settings in the format pane?
 
 During preview, the callout image was added using the **image** section of the format pane and showed in the callout area next to the text. After November 2025, those images previously added were kept in the callout area, and their settings move to **Callout** > **Image** section in the format pane. Setting the **image** section of the format pane now adds a new hero image to the card with its own area. 
 
-**Why is my image now zoomed in?**
+#### Why is my image now zoomed in?
 
 During preview, the default settings for size of the image had some bugs corrected by the November 2025 update. Depending on your initial settings, the image can look “zoomed in” or different from before.
 
 To fix the image, in the format pane, adjust the **Callout** > **Image** settings for **image fit** to be **fit**, or check the **size** and **image area size** controls in the same formatting section. Note this setting is in a new location, and the top-level image section is now for the hero image.
 
-**Where did the legacy card and multi-card visuals go?**
+#### Where did the legacy card and multi-card visuals go?
 
 The legacy single card and multi-card visuals reappear if you go to the three dots in the visualization pane and choose **Restore default visuals**. In a report having one of these visuals they may show in the unpinned area of the visualization pane, where you generally find custom visuals.  
 
-**Why does the new card visual in a published report look different than it looks in Desktop?**
+#### Why does the new card visual in a published report look different than it looks in Desktop?
 
 Differences between Desktop and the service can happen in two scenarios.
 
