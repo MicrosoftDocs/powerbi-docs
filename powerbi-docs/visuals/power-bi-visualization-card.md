@@ -23,7 +23,7 @@ The **card visual** in Power BI is a versatile tool for presenting summary measu
 Combining multiple measures and reference labels in one visual improves the report performance by reducing visual load time and optimizing underlying queries to the semantic model.
 
 > [!NOTE]
-> The **(new) card visual** became generally available as the **card visual** with the November 2025 Power BI release. If you created or published a report using this visual during preview, you might notice changes to card. You can adjust the visual by editing the report and using the Format pane. More information is available in the FAQ section.
+> The **(new) card visual** became generally available as the **card visual** with the November 2025 Power BI release. 
 
 ## Prerequisites
 
