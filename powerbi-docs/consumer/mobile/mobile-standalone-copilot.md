@@ -89,7 +89,7 @@ Answers from models that haven't been prepped are clearly marked with this messa
 
 ## Copilot requirements
 
-Read about the [requirements to use Copilot in Power BI](../../create-reports/copilot-introduction.md#copilot-requirements).
+Read about the [requirements to use the standalone Copilot experience](../../create-reports/copilot-introduction.md#requirements-for-the-standalone-copilot).
 
 ## Limitations and considerations
 
