@@ -69,7 +69,7 @@ The in-report Copilot provides context-aware assistance for the report you're cu
 
 ## Copilot requirements
 
-Read about [requirements to use the standalone Copilot experience](../../create-reports/copilot-introduction.md#copilot-requirements).
+Read about the [requirements to use Copilot in Power BI](../../create-reports/copilot-introduction.md#copilot-requirements).
 
 ## Related content
 
