@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 04/11/2025
+ms.date: 11/22/2025
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -65,14 +65,14 @@ To download the Power BI Desktop executable from the Download Center, select **D
   :::image type="content" source="media/desktop-get-the-desktop/download-desktop-exe.png" alt-text="Screenshot of Download Center showing the 64-bit Power BI Desktop download selected.":::
 
 > [!IMPORTANT]
-> The 32-bit version of Power BI Desktop will no longer be supported after July 31, 2025. Upgrade to the 64-bit version of Power BI Desktop to continue receiving updates and support.
+> The 32-bit version of Power BI Desktop is no longer supported. Upgrade to the 64-bit version of Power BI Desktop to continue receiving updates and support.
 
 
 ## Install Power BI Desktop after download
 
 You're prompted to run the installation file after you finish downloading it.
 
-Power BI Desktop ships as a single *.exe* installation package that contains all supported languages, with separate *.exe* files for the 32-bit and 64-bit versions. The 32-bit version will no longer be supported after June 30, 2025. You need the executable for installation. This approach makes distribution, updates, and installation easier and more convenient, especially for administrators. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#use-command-line-options-during-installation).
+Power BI Desktop ships as a single *.exe* installation package that contains all supported languages, with separate *.exe* files for the 32-bit and 64-bit versions. The 32-bit version is no longer supported. You need the executable for installation. This approach makes distribution, updates, and installation easier and more convenient, especially for administrators. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#use-command-line-options-during-installation).
 
 After you launch the installation package, Power BI Desktop installs as an application and runs on your desktop.
 
