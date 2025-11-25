@@ -8,9 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 Ms.custom: 
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 11/25/2025
 ms.custom: licensing support
 LocalizationGroup: consumers
+ai-usage: ai-assisted
 
 #customer intent: As a business user, I understand the license options for Power BI service and I can look up my current license. 
 ---
@@ -46,7 +47,12 @@ For details about licenses and subscriptions, see [License types for Power BI an
 
 Premium is an organizational subscription that lets you store content in a virtual container called a Power BI Premium capacity. With Premium capacity, anyone with permissions, whether they're inside or outside your organization, can use content stored in this virtual container. This use includes users with free licenses.
 
-Premium capacity lets users with paid licenses share content widely without needing paid licenses for people who view the content. The person who creates content in Premium capacity uses a paid license to connect to data sources, model data, and create reports, dashboards, and apps that are saved to a workspace in Premium capacity. Users without a paid license can use a workspace in Power BI Premium capacity, as long as they have a [role in that workspace](../consumer/end-user-workspaces.md). When users with a free license try to use a workspace in Premium capacity, and they aren't assigned a role in that workspace, they see a prompt to upgrade their license to Pro, PPU, or a trial. 
+Premium capacity lets users with paid licenses share content widely without needing paid licenses for people who view the content. The person who creates content in Premium capacity uses a paid license to connect to data sources, model data, and create reports, dashboards, and apps that are saved to a workspace in Premium capacity. Users without a paid license can use a workspace in Power BI Premium capacity, as long as they have a [role in that workspace](../consumer/end-user-workspaces.md).
+
+> [!IMPORTANT]
+> For free users to access reports, both the report and its underlying semantic model must be in Premium capacity. If the report is in Premium capacity but the semantic model is in a workspace that isn't in Premium capacity, free users will receive a prompt to upgrade their license to Pro, PPU, or a trial.
+
+When users with a free license try to use a workspace in Premium capacity, and they aren't assigned a role in that workspace, they see a prompt to upgrade their license to Pro, PPU, or a trial.
 
 Within workspaces in Premium capacity, creators assign roles, like **Viewer**, **Contributor**, **Member**, and **Administrator**. The roles creators assign to their colleagues, and the licenses the colleagues have, determine how those colleagues can interact with the content. For more information, see [workspace permissions and roles](../consumer/end-user-workspaces.md#permissions-in-the-workspaces).
 
