@@ -35,7 +35,7 @@ A measure or explicit measure occurs when you create a **New measure** and defin
 > [!NOTE]
 > Calculation item expressions can be written to ignore a measure by the name, or by data type, for scenarios when you have measures you don't want the calculation item to change.
 
-Once you select **Yes** to enabled the **discourage implicit measures** property, a calculation group is added and you can start defining the DAX expression of the first calculation item in the DAX formula bar. The dialog won't show if you already have **discourage implicit measures** enabled.
+Once you select **Yes** to enable the **discourage implicit measures** property, a calculation group is added and you can start defining the DAX expression of the first calculation item in the DAX formula bar. The dialog won't show if you already have **discourage implicit measures** enabled.
 
 `SELECTEDMEASURE` is a DAX function that acts as a placeholder for the measure in the calculation item expression. You can learn about the [SELECTEDMEASURE DAX function](/dax/selectedmeasure-function-dax) from its article.  
 
