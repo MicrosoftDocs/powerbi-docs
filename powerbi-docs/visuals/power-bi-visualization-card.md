@@ -181,6 +181,10 @@ During preview, the default settings for size of the image had some bugs correct
 
 To fix the image, in the format pane, adjust the **Callout** > **Image** settings for **image fit** to be **fit** or **center**, and check the **size** and **image area size** controls in the same formatting section. Note this setting is in a new location, and the top-level **image** section is now for the hero image.
 
+#### Why is my category header image gone?
+
+Go to **Category header** settings and turn back on **add image**. Your image should still be there.
+
 #### Where did the legacy card and multi-card visuals go?
 
 The legacy single card and multi-card visuals reappear if you go to the three dots in the visualization pane and choose **Restore default visuals**. In a report having one of these visuals they may show in the unpinned area of the visualization pane, where you generally find custom visuals.  
@@ -198,7 +202,7 @@ Differences between Desktop and the service can happen in two scenarios.
 
 During preview, the card visual's default behavior was different to how it now behaves in general availability. At general availability, we made updates to enhance the layout consistency, visual alignment, and overall user experience. 
 
-- **Callout image alignment:** During preview, the callout image aligned was constrained to the callout label text, which may leave part of the the callout container empty. Now the image aligns to the callout container. 
+- **Callout image alignment:** During preview, the callout image aligned was constrained to the callout label text, which may leave part of the callout container empty. Now the image aligns to the callout container. 
 
 - **Background image fit:** During preview, the background image could repeat to fill the container. Now the **image fit** options align with other visual image options of fit, stretch, fill, and center.  
    
