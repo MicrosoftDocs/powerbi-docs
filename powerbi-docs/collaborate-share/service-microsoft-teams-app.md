@@ -28,7 +28,7 @@ Also, there's a feature in the Power BI app in Teams that you don't see when you
 There are a few features that you can access only in the Power BI service in a browser. For details, see the [Known issues and limitations](#known-issues-and-limitations) section of this article.
 
 > [!NOTE]
-> When you install the Power BI app in Microsoft Teams, if you are in Microsoft 365 Targeted Release or Office Insiders Beta Channel, then the public preview of the Power BI app in Microsoft Outlook and Microsoft Office is also installed. For details, see [public preview in Outlook and Office](service-collaborate-microsoft-teams.md#OutlookOffice).
+> When you install the Power BI app in Microsoft Teams, if you are in Microsoft 365 Targeted Release or Office Insiders Beta Channel, then the public preview of the Power BI app in Microsoft Outlook and Microsoft Office is also installed. For details, see [public preview in Outlook and Office](service-power-bi-outlook-office.md).
 
 ## Requirements
 
