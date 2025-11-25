@@ -23,7 +23,7 @@ The **card visual** in Power BI is a versatile tool for presenting summary measu
 Combining multiple measures and reference labels in one visual improves the report performance by reducing visual load time and optimizing underlying queries to the semantic model.
 
 > [!NOTE]
-> The **(new) card visual** became generally available as the **card visual** with the November 2025 Power BI release. 
+> The **(new) card visual** became generally available as the **card visual** with the November 2025 Power BI release. Reports with the legacy card visual continue to use the legacy card visual.
 
 ## Prerequisites
 
@@ -113,7 +113,7 @@ To return your cards to the previous column and row number, update these setting
 
 During preview, the default settings had less padding in the cards. After the November 2025 release, more padding and padding options were added to the card. The new default is 12px. 
 
-To find and adjust these settings, search for “Padding” in the format pane and adjust as needed.
+To find and adjust these settings, search for “Padding” in the format pane and adjust as needed. In some cases, toggling on **individual padding** can restore previous padding settings.
 
 Padding can be set in a custom theme file or added to your own custom theme file to apply them to all cards in your report.
 
@@ -126,8 +126,6 @@ Padding can be set in a custom theme file or added to your own custom theme file
       "*": {
         "*": [{
             "$id": "default",
-            "paddingAfterDivider": 0,
-            "paddingBeforeDivider": 0,
             "paddingUniform": 0        
         }]
       }
@@ -151,7 +149,7 @@ To adjust the card area sizes, go to **Cards**, make sure the **Apply setting to
 #### Why is there a background color added to the card reference label?
 During preview, the background color only showed when the reference label had a divider. The divider gave the reference labels their own area in the card to then apply a background to. After the November 2025 release, reference labels always have their own area with or without a divider, and a default background is used. 
 
-The background can be turned off by going to reference labels layout > background in the format pane and toggling off the setting.
+The background can be turned off by going to **reference labels layout** > **background** in the format pane and toggling **off** the setting.
 
 This setting can be set in a custom theme file or added to your own custom theme file to apply them to all cards in your report. 
 
@@ -181,7 +179,11 @@ During preview, the callout image was added using the **image** section of the f
 
 During preview, the default settings for size of the image had some bugs corrected by the November 2025 update. Depending on your initial settings, the image can look “zoomed in” or different from before.
 
-To fix the image, in the format pane, adjust the **Callout** > **Image** settings for **image fit** to be **fit**, or check the **size** and **image area size** controls in the same formatting section. Note this setting is in a new location, and the top-level image section is now for the hero image.
+To fix the image, in the format pane, adjust the **Callout** > **Image** settings for **image fit** to be **fit** or **center**, and check the **size** and **image area size** controls in the same formatting section. Note this setting is in a new location, and the top-level **image** section is now for the hero image.
+
+#### Why is my category header image gone?
+
+Go to **Category header** settings and turn back on **add image**. Your image should still be there.
 
 #### Where did the legacy card and multi-card visuals go?
 
@@ -200,7 +202,7 @@ Differences between Desktop and the service can happen in two scenarios.
 
 During preview, the card visual's default behavior was different to how it now behaves in general availability. At general availability, we made updates to enhance the layout consistency, visual alignment, and overall user experience. 
 
-- **Callout image alignment:** During preview, the callout image aligned was constrained to the callout label text, which may leave part of the the callout container empty. Now the image aligns to the callout container. 
+- **Callout image alignment:** During preview, the callout image aligned was constrained to the callout label text, which may leave part of the callout container empty. Now the image aligns to the callout container. 
 
 - **Background image fit:** During preview, the background image could repeat to fill the container. Now the **image fit** options align with other visual image options of fit, stretch, fill, and center.  
    
