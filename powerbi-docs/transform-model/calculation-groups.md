@@ -26,7 +26,7 @@ If the **discourage implicit measures** property is turned off, you're prompted 
 
 :::image type="content" source="media/calculation-groups/calculation-groups-02.png" alt-text="Screenshot of dialog window prompting you to enable implicit measures.":::
 
-An *implicit measure* occurs when, in the **Report view**, you use a data column from the **Data** pane directly in the visual. The visual allows you to aggregate it as a SUM`, AVERAGE`, MIN`, MAX`, or some other basic aggregation, which becomes an implicit measure. When a calculation group in added to a model, Power BI discourages the creation of implicit measures by no longer showing the summation symbol next to the data columns in the Data pane, and blocks adding the data columns to the visuals directly as values. Existing implicit measures already created in visuals continue to work. The **Discourage implicit measures** property must be enabled because calculation items don't apply to implicit measures. Calculation items only apply to measures or explicit measures. 
+An *implicit measure* occurs when, in the **Report view**, you use a data column from the **Data** pane directly in the visual. The visual allows you to aggregate it as a `SUM`, `AVERAGE`, `MIN`, `MAX`, or some other basic aggregation, which becomes an implicit measure. When a calculation group in added to a model, Power BI discourages the creation of implicit measures by no longer showing the summation symbol next to the data columns in the Data pane, and blocks adding the data columns to the visuals directly as values. Existing implicit measures already created in visuals continue to work. The **Discourage implicit measures** property must be enabled because calculation items don't apply to implicit measures. Calculation items only apply to measures or explicit measures. 
 
 :::image type="content" source="media/calculation-groups/calculation-groups-03.png" alt-text="Screenshot of Report view and creation of implicit measures." lightbox="media/calculation-groups/calculation-groups-03.png":::
 
@@ -37,7 +37,7 @@ A measure or explicit measure occurs when you create a **New measure** and defin
 
 Once you select **Yes** to enabled the **discourage implicit measures** property, a calculation group is added and you can start defining the DAX expression of the first calculation item in the DAX formula bar. The dialog won't show if you already have **discourage implicit measures** enabled.
 
-SELECTEDMEASURE` is a DAX function that acts as a placeholder for the measure in the calculation item expression. You can learn about the [SELECTEDMEASURE DAX function](/dax/selectedmeasure-function-dax) from its article.  
+`SELECTEDMEASURE` is a DAX function that acts as a placeholder for the measure in the calculation item expression. You can learn about the [SELECTEDMEASURE DAX function](/dax/selectedmeasure-function-dax) from its article.  
 
 :::image type="content" source="media/calculation-groups/calculation-groups-04.png" alt-text="Screenshot of DAX formula bar and calculation group." lightbox="media/calculation-groups/calculation-groups-04.png":::
 
