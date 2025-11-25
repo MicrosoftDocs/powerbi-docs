@@ -192,7 +192,7 @@ Alternatively, you can re-use your expression for dynamic format strings with a 
 
 ### Visuals error when a calculation item applies a math operation on a non-numeric measure
 
-Non-numeric measures are commonly used for dynamic titles in visuals and in dynamic format strings for measures. The error **Cannot convert value <expression> of type Text to type Numeric** shows on visuals impacted. The calculation item expression can avoid this by adding a check to see if the measure is numeric before applying the math operation. Use the [ISNUMERIC](/dax/isnumeric-function-dax) in the calculation item.
+Non-numeric measures are commonly used for dynamic titles in visuals and in dynamic format strings for measures. The error **Cannot convert value ... of type Text to type Numeric** shows on visuals impacted. The calculation item expression can avoid this by adding a check to see if the measure is numeric before applying the math operation. Use the [ISNUMERIC](/dax/isnumeric-function-dax) in the calculation item.
 
 ```DAX
 Calculation item safe = 
