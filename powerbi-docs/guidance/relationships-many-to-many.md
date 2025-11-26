@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 12/27/2024
+ms.date: 11/26/2025
 ---
 
 # Many-to-many relationship guidance
@@ -38,10 +38,6 @@ The first table is named `Account`, and it contains two columns: `AccountID` and
 Two one-to-many relationships are added to relate the tables. Here's an updated model diagram of the related tables. A fact table named `Transaction` has been added. It records account transactions. The bridging table and all identifier columns have been hidden.
 
 :::image type="content" source="media/relationships-many-to-many/bank-account-customer-model-related-tables-1.svg" alt-text="Diagram showing that a model diagram comprising four tables. One-to-many relationships have been added to relate all tables." border="false":::
-
-To help describe how the relationship filter propagation works, the model diagram has been modified to reveal the table rows.
-
-:::image type="content" source="media/relationships-many-to-many/bank-account-customer-model-related-tables-2.svg" alt-text="Diagram showing the model tables and their rows. The row details for the four tables are described in the following paragraph." border="false":::
 
 The row details for the four tables are presented in the following bulleted list:
 
