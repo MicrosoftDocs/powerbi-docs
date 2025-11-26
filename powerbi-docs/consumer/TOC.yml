@@ -91,8 +91,6 @@
       href: end-user-q-and-a.md
     - name: "Tips and tricks for Q&A"
       href: end-user-q-and-a-tips.md
-    - name: "Use Copilot to generate summaries and insights (mobile)"
-      href: mobile/mobile-apps-copilot.md
   - name: "Set alerts, subscriptions, and notifications"
     items:
     - name: "Create a dashboard alert"
@@ -110,7 +108,7 @@
     - name: "Interact with parameters"
       href: paginated-reports-view-parameters.md
   - name: "Use Power BI on mobile"
-    expanded: false
+    expanded: true
     items:
     - name: "Review basics and overview"
       items:
@@ -136,6 +134,14 @@
         href: mobile/mobile-apps-org-apps.md
       - name: "View on-premises KPIs and reports"
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+    - name: "Copilot in Power BI mobile apps"
+      items:
+      - name: "Overview of Copilot in mobile apps"
+        href: mobile/mobile-copilot-overview.md   
+      - name: "Standalone Copilot in mobile apps"
+        href: mobile/mobile-standalone-copilot.md
+      - name: "In-report Copilot in mobile apps"
+        href: mobile/mobile-apps-copilot.md
     - name: "Increase interaction and productivity"
       items:
       - name: "Share a dashboard or report"

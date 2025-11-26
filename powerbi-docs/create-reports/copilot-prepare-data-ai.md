@@ -118,7 +118,9 @@ You can troubleshoot changes through **Access the download diagnostic** on the *
 
 After you test and confirm your **Prep data for AI** enhancements, you can publish your report to the Power BI service for broad consumption.
 
-## <a name = "mark-your-model-as-approved-for-copilot"></a> Mark your model as Approved for Copilot
+<a id="mark-your-model-as-prepped-for-ai"></a>
+
+## Mark your model as approved for Copilot
 
 After you prepare your semantic model for AI and it's ready for consumption, you can mark your model **Approved for Copilot** by following these steps:
 
