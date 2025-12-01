@@ -13,12 +13,12 @@ LocalizationGroup: Transform and shape data
 
 # Create calculation groups
 
-Calculation groups can significantly reduce the number of redundant measures you have to create, by allowing you define DAX expressions as calculation items that apply to the existing measures in your model. More information about calculation groups is available in the [Calculation groups](/analysis-services/tabular-models/calculation-groups) article.
+Calculation groups can significantly reduce the number of redundant measures you have to create, by allowing you define Data Analysis Expressions (DAX) formulas as calculation items. Calculation items can be applied to existing measures in your model. More information about calculation groups is available in the [Calculation groups](/analysis-services/tabular-models/calculation-groups) article.
 
 
-## Add a new calculation group
+## Add a new calculation group in model view
 
-In **Power BI Desktop** when you have a local model open, navigate to **Model view** and select the **Calculation group** button in the ribbon. If you're not already in **Model explorer**, the **Data** pane opens to the **Model** view.
+In **Power BI**, when editing a semantic model, navigate to **Model view** and select the **Calculation group** button in the ribbon. If you're not already in **Model explorer**, the **Data** pane opens to the **Model** view.
 
 :::image type="content" source="media/calculation-groups/calculation-groups-01.png" alt-text="Screenshot of calculation groups button in the ribbon.":::
 
@@ -26,24 +26,55 @@ If the **discourage implicit measures** property is turned off, you're prompted 
 
 :::image type="content" source="media/calculation-groups/calculation-groups-02.png" alt-text="Screenshot of dialog window prompting you to enable implicit measures.":::
 
-An *implicit measure* occurs when, in the **Report view**, you use a data column from the **Data** pane directly in the visual. The visual allows you to aggregate it as a SUM, AVERAGE, MIN, MAX, or some other basic aggregation, which becomes an implicit measure. Creating a calculation group discourages the creation of such implicit measures by no longer showing the summation symbol next to the data columns in the Data pane, and blocks adding the data columns to the visuals directly on aggregation axis or as values. Existing implicit measures already created in visuals will continue to work. The **Discourage implicit measures** property must be enabled because calculation items don't apply to implicit measures. Calculation items only apply to measures or explicit measures. 
+An *implicit measure* occurs when, in the **Report view**, you use a data column from the **Data** pane directly in the visual. The visual allows you to aggregate it as a `SUM`, `AVERAGE`, `MIN`, `MAX`, or some other basic aggregation, which becomes an implicit measure. When a calculation group is added to a model, Power BI discourages the creation of implicit measures by no longer showing the summation symbol next to the data columns in the Data pane, and blocks adding the data columns to the visuals directly as values. Existing implicit measures already created in visuals continue to work. The **Discourage implicit measures** property must be enabled because calculation items don't apply to implicit measures. Calculation items only apply to measures or explicit measures. 
 
 :::image type="content" source="media/calculation-groups/calculation-groups-03.png" alt-text="Screenshot of Report view and creation of implicit measures." lightbox="media/calculation-groups/calculation-groups-03.png":::
 
 A measure or explicit measure occurs when you create a **New measure** and define the DAX expression to aggregate a data column. Explicit measures can also have conditional logic and filters, taking full advantage of what you can do with DAX. Tutorial: You can learn how to [Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md).
 
 > [!NOTE]
-> Calculation items can be created in a way that they ignore an explicit measure by the measure name for scenarios when you have a measure you don't want the calculation item to change.
+> Calculation item expressions can be written to ignore a measure by the name, or by data type, for scenarios when you have measures you don't want the calculation item to change.
 
-Once you select **Yes**, or if you already have enabled the discourage implicit measures property, a calculation group is added, and you can start defining the DAX expression of the first calculation item in the DAX formula bar.
+Once you select **Yes** to enable the **discourage implicit measures** property, a calculation group is added and you can start defining the DAX expression of the first calculation item in the DAX formula bar. The dialog won't show if you already have **discourage implicit measures** enabled.
 
-SELECTEDMEASURE() is a DAX function that acts as a placeholder for the measure to which the calculation item will apply. You can learn about the [SELECTEDMEASURE DAX function](/dax/selectedmeasure-function-dax) from its article.  
+`SELECTEDMEASURE` is a DAX function that acts as a placeholder for the measure in the calculation item expression. You can learn about the [SELECTEDMEASURE DAX function](/dax/selectedmeasure-function-dax) from its article.  
 
 :::image type="content" source="media/calculation-groups/calculation-groups-04.png" alt-text="Screenshot of DAX formula bar and calculation group." lightbox="media/calculation-groups/calculation-groups-04.png":::
 
+### Add a calculation group by using Power BI TMDL view
+
+You can create a calculation group in the Tabular Model Definition Language or **TMDL view** of Power BI Desktop. Edit the semantic model and use this TMDL script.
+
+```TMDL
+createOrReplace
+
+	table 'Calculation group'
+
+		calculationGroup
+			precedence: 1
+
+			calculationItem 'Calculation item' = SELECTEDMEASURE()
+
+		column 'Calculation group column'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: Name
+			sortByColumn: Ordinal
+
+			annotation SummarizationSetBy = Automatic
+
+		column Ordinal
+			dataType: int64
+			formatString: 0
+			summarizeBy: sum
+			sourceColumn: Ordinal
+
+			annotation SummarizationSetBy = Automatic
+```
+
 ## Time intelligence example
 
-There's a Time Intelligence example of a calculation group available at in the [Calculation groups in Analysis Services tabular models](/analysis-services/tabular-models/calculation-groups) article, which we can use to populate some calculation items. The example can be added to any model with values by date and a Date table that is marked as a date table, or you can download the Adventure Works DW 2020 PBIX from [DAX sample model - DAX](/dax/dax-sample-model). 
+There's a Time Intelligence example of a calculation group available at in the [Calculation groups in Analysis Services tabular models](/analysis-services/tabular-models/calculation-groups) article, which we can use to populate some calculation items. The example can be added to any model with a **Date** table, or you can download the Adventure Works DW 2020 PBIX from [DAX sample model - DAX](/dax/dax-sample-model). 
 
 
 ### Rename a calculation group
@@ -54,7 +85,7 @@ To rename the calculation group, double-click it in the **Data** pane, or you ca
 
 ### Rename a calculation group column
 
-To rename the calculation group column, double-click it in the **Data** pane, or you can select it and use the **Properties** pane. The column you select is the column you'll use on visuals or in slicers to apply a specific calculation item. 
+To rename the calculation group column, double-click it in the **Data** pane, or you can select it and use the **Properties** pane. The column you select is the column you use on visuals or in slicers to apply a specific calculation item. 
 
 :::image type="content" source="media/calculation-groups/calculation-groups-06.png" alt-text="Screenshot of how to rename a calculation group column.":::
 
@@ -64,15 +95,15 @@ The first calculation item was created as SELECTEDMEASURE() so it can be renamed
 
 :::image type="content" source="media/calculation-groups/calculation-groups-07.png" alt-text="Screenshot of how to rename a calculation item.":::
 
-### Create additional calculation items
+### Create more calculation items
 
-To create additional calculation items, you can use the right-click context menu of the **Calculation items** section or the calculation group itself and choose **New calculation item**, or use the **Properties pane** of the **Calculation items** section.
+To create more calculation items, you can use the right-click context menu of the **Calculation items** section or the calculation group itself and choose **New calculation item**, or use the **Properties pane** of the **Calculation items** section.
 
 :::image type="content" source="media/calculation-groups/calculation-groups-08.png" alt-text="Screenshot of how to create a new calculation item.":::
 
-Once I've added all the Time intelligence calculation items, my calculation group looks like the following image.
+Once all the Time intelligence calculation items are added, the calculation group looks like the following image.
 
-:::image type="content" source="media/calculation-groups/calculation-groups-09.png" alt-text="Screenshot of calculation groups once all time intelligence items have been added.":::
+:::image type="content" source="media/calculation-groups/calculation-groups-09.png" alt-text="Screenshot of calculation group with all time intelligence calculation items.":::
 
 Notice the red triangle icons indicating errors. The errors are there because the example DAX expressions use the Date table called *DimDate*, so I need to update the DAX expressions to use the name *Date* instead. The following image shows the DAX expression before the correction.
 
@@ -94,7 +125,7 @@ To reorder the calculation items in whatever logical way you prefer, you can sel
 
 ### Add a dynamic format string to a calculation item
 
-Calculation items use the underlying measure formatting by default. We might want to instead display *YOY%* as a percentage. To do so, select the *YOY%* calculation item, then turn on **Dynamic format string** in the properties pane, which allows you to specify a DAX expression to create a format string. For this example, it doesn’t require any conditional elements, so simply *#,##0.00%* will change the format to a percentage when this calculation item is applied, as shown in the following image.
+Calculation items use the underlying measure formatting by default. We might want to instead display *YOY%* as a percentage. To do so, select the *YOY%* calculation item, then turn on **Dynamic format string** in the properties pane, which allows you to specify a DAX expression to create a format string. For this example, it doesn’t require any conditional elements, so simply *#,##0.00%* changes the format to a percentage when this calculation item is applied, as shown in the following image.
 
 :::image type="content" source="media/calculation-groups/calculation-groups-14.png" alt-text="Screenshot of changing format of underlying data items." lightbox="media/calculation-groups/calculation-groups-14.png":::
 
@@ -107,7 +138,7 @@ To use your new calculation group in a Report, go to the **Report** view, create
 1. **Orders** measure to the **Values**
 
 > [!NOTE]
-> If the measure *Orders* is not created in the mode, you can use a different measure or go to the ribbon and choose New Measure with this DAX expression. 
+> If the measure *Orders* is not created in the model, you can use a different measure or go to the ribbon and choose **New Measure** to create it with this DAX expression. 
 
 `Orders = DISTINCTCOUNT('Sales Order'[Sales Order])`
 
@@ -122,9 +153,9 @@ Calculation items on the **Columns** in the **Matrix** visual are showing the me
 
 ### Using the calculation item in measures
 
-You can create a new measure with a DAX expression that will utilize a calculation item on a specific measure.
+You can create a new measure with an expression utilizing a calculation item on a specific measure.
 
-To create an *[Orders YOY%]* measure you can use the calculation item with CALCULATE.
+To create an *[Orders YOY%]* measure, you can use the calculation item with CALCULATE.
 
 
 ```dax
@@ -138,7 +169,7 @@ Orders YOY% =
 
 ### Setting calculation group precedence
 
-Finally, if you add additional calculation groups to the model and you want to specify the order in which they apply to measures, you can adjust the calculation group precedence in the **Calculation groups section** properties pane, as shown in the following image.
+Finally, if you add more calculation groups to the model you can specify the order in which they apply to a measure with the precedence property. You can adjust the calculation group precedence in the **Calculation groups section** properties pane, as shown in the following image.
 
 :::image type="content" source="media/calculation-groups/calculation-groups-17.png" alt-text="Screenshot of setting calculation group precedence.":::
 
@@ -146,6 +177,33 @@ You can learn more about calculation groups precedence in the [Calculation group
 
 ## Selection expressions for calculation groups
 You can set selection expressions for calculation groups to get fine-grained control over what the calculation group returns if users make multiple, invalid or no selections on the calculation group. See [selection expressions](/analysis-services/tabular-models/calculation-groups/#selection-expressions).
+
+## Considerations
+
+### Model measures change to variant data type
+As soon as a calculation group is added to a semantic model, Power BI reports use the **variant** data type for all measures. If afterwards, all calculation groups are removed from the model the measures revert to their original data types again.
+
+The variant data type may cause [dynamic format strings for measures](/power-bi/create-reports/desktop-dynamic-format-strings) using a measure for re-use to show an error. Use the [FORMAT](/dax/format-function-dax) DAX function to force the variant measure to be recognized as a string data type again.
+
+```DAX
+FORMAT([Dynamic format string], "")
+```
+Alternatively, you can re-use your expression for dynamic format strings with a [DAX user-defined function](/power-bi/transform-model/desktop-user-defined-functions-overview) instead.
+
+### Visuals error when a calculation item applies a math operation on a non-numeric measure
+
+Non-numeric measures are commonly used for dynamic titles in visuals and in dynamic format strings for measures. The error **Cannot convert value ... of type Text to type Numeric** shows on visuals impacted. The calculation item expression can avoid this error by adding a check to see if the measure is numeric before applying the math operation. Use the [ISNUMERIC](/dax/isnumeric-function-dax) in the calculation item.
+
+```DAX
+Calculation item safe = 
+    IF ( 
+        // Check the measure is numeric
+        ISNUMERIC( SELECTEDMEASURE() ),
+            SELECTEDMEASURE() * 2,
+            // Don't apply the calculation on a non-numeric measure
+            SELECTEDMEASURE()
+        )
+```
 
 ## Related content
 
