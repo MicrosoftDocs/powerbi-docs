@@ -1,0 +1,303 @@
+[
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "blank-rows-border-border-position.md",
+    "old_text": "[!INCLUDE [blank-rows-border-border-position](../includes/core-visuals/blank-rows-border-border-position.md)]",
+    "new_text": "##### Border position\n\nThis setting offers four options to specify the position of the Border:\n\n- **Top**\n- **Bottom**\n- **Top and bottom**",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "cell-elements-background-color-toggle.md",
+    "old_text": "[!INCLUDE [cell-elements-background-color-toggle](../includes/core-visuals/cell-elements-background-color-toggle.md)]",
+    "new_text": "##### Background color\n\nThis toggle, when enabled, allows you to customize the background color using conditional formatting.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "cell-elements-data-bars-toggle.md",
+    "old_text": "[!INCLUDE [cell-elements-data-bars-toggle](../includes/core-visuals/cell-elements-data-bars-toggle.md)]",
+    "new_text": "##### Data bars\n\nThis toggle, when enabled, lets you use conditional formatting to create horizontal bars that reflect the magnitude of data points. For example, longer bars for higher values.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "cell-elements-font-color-toggle.md",
+    "old_text": "[!INCLUDE [cell-elements-font-color-toggle](../includes/core-visuals/cell-elements-font-color-toggle.md)]",
+    "new_text": "##### Font color\n\nThis toggle, when enabled, allows you to customize the font color using conditional formatting.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "cell-elements-icons-toggle.md",
+    "old_text": "[!INCLUDE [cell-elements-icons-toggle](../includes/core-visuals/cell-elements-icons-toggle.md)]",
+    "new_text": "##### Icons\n\nThis toggle, when enabled, lets you use conditional formatting to add visual indicators from a predefined set of icons or custom icons. For example, an up arrow for positive growth and a down arrow for negative growth.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "cell-elements-series.md",
+    "old_text": "[!INCLUDE [cell-elements-series](../includes/core-visuals/cell-elements-series.md)]",
+    "new_text": "##### Series\n\nAllows you to select which data series that you want to apply formatting options to.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "cell-elements-web-url.md",
+    "old_text": "[!INCLUDE [cell-elements-web-url](../includes/core-visuals/cell-elements-web-url.md)]",
+    "new_text": "##### Web URL\n\nThis toggle, when enabled, lets you use conditional formatting to embed web URLs, creating clickable links that lead to external websites or internal resources. For instance, link a product name to its detailed page on an internal or external website.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "column-headers-header-alignment.md",
+    "old_text": "[!INCLUDE [column-headers-header-alignment](../includes/core-visuals/column-headers-header-alignment.md)]",
+    "new_text": "##### Header alignment\n\nThis setting controls the header alignment, allowing you to choose between left, center, or right.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "column-headers-title-alignment.md",
+    "old_text": "[!INCLUDE [column-headers-title-alignment](../includes/core-visuals/column-headers-title-alignment.md)]",
+    "new_text": "##### Title alignment\n\nThis setting controls the title alignment, allowing you to choose between left, center, or right.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "column-subtotals-apply-settings-to-column-level.md",
+    "old_text": "[!INCLUDE [column-subtotals-apply-settings-to-column-level](../includes/core-visuals/column-subtotals-apply-settings-to-column-level.md)]",
+    "new_text": "##### Column level\n\nUse this menu to set subtotal options for the entire column.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "column-subtotals-apply-settings-to-per-column-level.md",
+    "old_text": "[!INCLUDE [column-subtotals-apply-settings-to-per-column-level](../includes/core-visuals/column-subtotals-apply-settings-to-per-column-level.md)]",
+    "new_text": "##### Per column level\n\nThis toggle, when enabled, lets you customize subtotals for individual columns.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "global-value-decimal-places.md",
+    "old_text": "[!INCLUDE [global-value-decimal-places](../includes/core-visuals/global-value-decimal-places.md)]",
+    "new_text": "##### Value decimal places\n\nAllows you to specify the number of decimal places for values, with a selectable range from 0 to 15.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "grid-border-border-position.md",
+    "old_text": "[!INCLUDE [grid-border-border-position](../includes/core-visuals/grid-border-border-position.md)]",
+    "new_text": "##### Border position\n\nThis setting offers four options to specify the position of the Border:\n- **Top**\n- **Bottom**\n- **Left**\n- **Right**",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "grid-border-selection.md",
+    "old_text": "[!INCLUDE [grid-border-selection](../includes/core-visuals/grid-border-selection.md)]",
+    "new_text": "##### Selection\n\nThis menu allows you to define the borders for different sections of the matrix. Here\u2019s what each option in the Section menu means:\n- **All:** This option applies the border settings to the entire matrix, including column headers, row headers, and the values section\n- **Column header:** Selecting this option will apply the border settings only to the column headers of the matrix.\n- **Row header:** This option will apply the border settings exclusively to the row headers of the matrix.\n- **Values section:** This option will apply the border settings only to the area of the matrix where the data values are displayed.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "grid-options-global-font-size.md",
+    "old_text": "[!INCLUDE [grid-options-global-font-size](../includes/core-visuals/grid-options-global-font-size.md)]",
+    "new_text": "##### Global font size\n\nThis setting changes the font size for all text within the matrix visual. Increasing the font size can improve readability, especially when presenting to an audience or for users with visual impairments, while decreasing it can allow more data to be displayed on the screen.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "grid-options-row-padding.md",
+    "old_text": "[!INCLUDE [grid-options-row-padding](../includes/core-visuals/grid-options-row-padding.md)]",
+    "new_text": "##### Row padding\n\nThis setting controls the amount of space between rows, often making the matrix easier to read by adding more white space, while decreasing it can make the matrix more compact.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "image-size-height.md",
+    "old_text": "[!INCLUDE [image-size-height](../includes/core-visuals/image-size-height.md)]",
+    "new_text": "##### Height\n\nThis setting allows you to define the height of the image, offering a range of 8 to 512 pixels.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "image-size-width.md",
+    "old_text": "[!INCLUDE [image-size-width](../includes/core-visuals/image-size-width.md)]",
+    "new_text": "##### Width\n\nThis setting allows you to define the width of the image, offering a range of 8 to 512 pixels.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "layout-and-style-presets-layout.md",
+    "old_text": "[!INCLUDE [layout-and-style-presets-layout](../includes/core-visuals/layout-and-style-presets-layout.md)]",
+    "new_text": "##### Layout\n\nThe Layout menu offers three options for customizing the presentation of your data:\n- **Compact:** The default space-saving layout where row labels are displayed in a single column, and the hierarchy is represented through indentation, useful for displaying more data in less space.\n- **Outline:** Separates each level of the hierarchy into its own column, similar to the way a traditional pivot table displays data, making it easier to read and understand the hierarchy at a glance.\n- **Tabular:** Similar to the outline layout but without indentation. Each hierarchy level is still in its own column, but the data is presented in a flat structure.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "layout-and-style-presets-repeat-row-headers.md",
+    "old_text": "[!INCLUDE [layout-and-style-presets-repeat-row-headers](../includes/core-visuals/layout-and-style-presets-repeat-row-headers.md)]",
+    "new_text": "##### Repeat row headers\n\nThis toggle controls whether the row headers are repeated on each page of a paginated report. When enabled, the row headers will appear at the top of each page, which can be particularly useful when you have a matrix that spans multiple pages, ensuring that the context of the data is not lost when moving between pages.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "layout-and-style-presets-style.md",
+    "old_text": "[!INCLUDE [layout-and-style-presets-style](../includes/core-visuals/layout-and-style-presets-style.md)]",
+    "new_text": "##### Style\n\nThe Style setting allows you to choose from a set of predefined styles with unique combinations of colors and formatting that can be applied with a single click to change the overall look of your matrix visual. These styles include:\n- **Default**\n- **None**\n- **Minimal**\n- **Bold header**\n- **Alternating rows**\n- **Contrast alternating rows**\n- **Flashy rows**\n- **Bold header flashy rows**\n- **Sparse**\n- **Condensed**",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual.md",
+    "include_file": "prerequisites-desktop-download-latest-version-pbi.md",
+    "old_text": "[!INCLUDE [prerequisites-desktop-download-latest-version-pbi-desktop](../includes/core-visuals/prerequisites-desktop-download-latest-version-pbi.md)]",
+    "new_text": "- Always make sure you have the latest version of [**Power BI Desktop**](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual.md",
+    "include_file": "prerequisites-desktop-download-retail-analysis-sample-pbix.md",
+    "old_text": "[!INCLUDE [prerequisites-desktop-download-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-desktop-download-retail-analysis-sample-pbix.md)]",
+    "new_text": "In the following guide, we're using the [**Retail Analysis Sample PBIX**](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file. After downloading the file, let's get started:\n\n1. Launch **Power BI Desktop**.\n1. On the left-side navigation pane, select **Open**, otherwise on the top-left of the window, select **File** > **Open**.\n1. Locate and select your copy of the **Retail Analysis Sample PBIX** file. The file will open in report view, ready for you to begin.\n\n   :::image type=\"content\" source=\"../media/power-bi-visualization-column-charts/desktop-retail-analysis-sample-report-view.png\" alt-text=\"Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service.\" lightbox=\"../media/power-bi-visualization-column-charts/desktop-retail-analysis-sample-report-view-expanded.png\" border=\"false\":::\n\n1. Select the + icon at the bottom of the window to add a new page to the report.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual.md",
+    "include_file": "prerequisites-desktop-preview-features-on-object-unselected.md",
+    "old_text": "[!INCLUDE [prerequisites-desktop-preview-features-on-object-unselected](../includes/core-visuals/prerequisites-desktop-preview-features-on-object-unselected.md)]",
+    "new_text": "- For the purposes of this guide, in Power BI Desktop's **Global options**, under the **Preview features** section, the **On-object interaction** feature is *not enabled*.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual.md",
+    "include_file": "prerequisites-service-open-retail-analysis-sample-pbix.md",
+    "old_text": "[!INCLUDE [prerequisites-service-open-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-service-open-retail-analysis-sample-pbix.md)]",
+    "new_text": "In the following guide we\u2019re using the Retail Analysis Sample PBIX in the Power BI service. Let\u2019s get started:\n\n1. Sign in to the [**Power BI service**](https://app.powerbi.com).\n1. Select **Learn** in the left navigation.\n1. On the **Learning center** page, under **Sample reports**, scroll to the right to locate and select the **Retail Analysis Sample**. The file will open in report view.\n\n   :::image type=\"content\" source=\"../media/power-bi-visualization-column-charts/service-retail-analysis-sample-report-view.png\" alt-text=\"Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service.\" lightbox=\"../media/power-bi-visualization-column-charts/service-retail-analysis-sample-report-view-expanded.png\" border=\"false\":::\n\n1. At the top of the window, select **Edit** to open the report editor.\n1. Select the **+** icon at the bottom of the window to add a new page to the report.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "row-headers-icons-size.md",
+    "old_text": "[!INCLUDE [row-headers-icons-size](../includes/core-visuals/row-headers-icons-size.md)]",
+    "new_text": "##### Size\n\nWith this setting, you can customize the size, offering a range of 8 to 60 pixels.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "row-headers-text-banded-row-color.md",
+    "old_text": "[!INCLUDE [row-headers-text-banded-row-color](../includes/core-visuals/row-headers-text-banded-row-color.md)]",
+    "new_text": "##### Banded row color\n\nThis toggle, when enabled, extends the color settings from the Values section, and applies the same color format settings to the row headers in your matrix.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "row-subtotals-apply-settings-to-per-row-level.md",
+    "old_text": "[!INCLUDE [row-subtotals-apply-settings-to-per-row-level](../includes/core-visuals/row-subtotals-apply-settings-to-per-row-level.md)]",
+    "new_text": "##### Per row level\n\nThis toggle, when enabled, lets you customize subtotals for individual rows.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "row-subtotals-apply-settings-to-row-level.md",
+    "old_text": "[!INCLUDE [row-subtotals-apply-settings-to-row-level](../includes/core-visuals/row-subtotals-apply-settings-to-row-level.md)]",
+    "new_text": "##### Row level\n\nUse this menu to set subtotal options for the entire row hierarchy.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "row-subtotals-rows-position.md",
+    "old_text": "[!INCLUDE [row-subtotals-rows-position](../includes/core-visuals/row-subtotals-rows-position.md)]",
+    "new_text": "##### Position\n\nThis setting allows you to specify the position of the Subtotal labels:\n- **Top**\n- **Bottom**",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "specific-column-apply-settings-to-series.md",
+    "old_text": "[!INCLUDE [specific-column-apply-settings-to-series](../includes/core-visuals/specific-column-apply-settings-to-series.md)]",
+    "new_text": "##### Series\n\nThis menu allows you to select individual columns (series) within your matrix, and apply specific formatting, allowing you to customize colors, font sizes, or conditional formatting rules for each column separately.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "specific-column-apply-to-header.md",
+    "old_text": "[!INCLUDE [specific-column-apply-to-header](../includes/core-visuals/specific-column-apply-to-header.md)]",
+    "new_text": "##### Apply to header\n\nWhen this toggle is enabled, any formatting settings you apply will affect the column headers (the labels at the top of each column). You can adjust font styles, alignment, and other visual properties for the headers.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "specific-column-apply-to-subtotals.md",
+    "old_text": "[!INCLUDE [specific-column-apply-to-subtotals](../includes/core-visuals/specific-column-apply-to-subtotals.md)]",
+    "new_text": "##### Apply to subtotals\n\nEnabling this toggle will apply formatting settings to the subtotal rows within your matrix. Customize how subtotals are displayed, including font colors, background colors, and font sizes.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "specific-column-apply-to-total.md",
+    "old_text": "[!INCLUDE [specific-column-apply-to-total](../includes/core-visuals/specific-column-apply-to-total.md)]",
+    "new_text": "##### Apply to total\n\nSimilar to subtotals, this option lets you format the total row (if you have one) in your matrix. You can control font styles, colors, and other visual aspects for the total row.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "specific-column-apply-to-values.md",
+    "old_text": "[!INCLUDE [specific-column-apply-to-values](../includes/core-visuals/specific-column-apply-to-values.md)]",
+    "new_text": "##### Apply to values\n\nWhen turned on, this toggle applies formatting rules to the actual data values within the matrix cells. You can set up conditional formatting, color scales, or other visual cues based on the data values.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "specific-column-yaxis-values-display-units.md",
+    "old_text": "[!INCLUDE [specific-column-yaxis-values-display-units](../includes/core-visuals/specific-column-yaxis-values-display-units.md)]",
+    "new_text": "###### Display units\n##### Display units\n\nThe menu offers several options for defining the Display units:\n\n- **None**: Displays the value as is, without any unit.\n- **Thousands**: Divides the value by 1,000 and appends a \"K\" suffix.\n- **Millions**: Divides the value by 1,000,000 and appends an \"M\" suffix.\n- **Billions**: Divides the value by 1,000,000,000 and appends a \"B\" suffix.\n- **Trillions**: Divides the value by 1,000,000,000,000 and appends a \"T\" suffix.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "url-icon-column-headers.md",
+    "old_text": "[!INCLUDE [url-icon-column-headers](../includes/core-visuals/url-icon-column-headers.md)]",
+    "new_text": "##### Column headers\n\nThis toggle, when enabled, lets you replace the column header text with a clickable hyperlink icon. This is useful when you want to link to additional information related to the column or provide context-specific URLs.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "url-icon-row-headers.md",
+    "old_text": "[!INCLUDE [url-icon-row-headers](../includes/core-visuals/url-icon-row-headers.md)]",
+    "new_text": "##### Row headers\n\nThis toggle, when enabled, lets you replace the row header text with a clickable hyperlink icon. Users can click on the icon to access relevant URLs associated with each row.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "url-icon-values.md",
+    "old_text": "[!INCLUDE [url-icon-values](../includes/core-visuals/url-icon-values.md)]",
+    "new_text": "##### Values\n\nThis toggle, when enabled, lets you to create hyperlinks within individual cells. You can associate a URL field with specific data points for users to navigate to external web pages or resources.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "values-options-show-values-in-row-groups.md",
+    "old_text": "[!INCLUDE [values-options-show-values-in-row-groups](../includes/core-visuals/values-options-show-values-in-row-groups.md)]",
+    "new_text": "##### Switch values to rows\n\nEnabling this toggle will switch the display of your values from columns to rows within the matrix.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "values-values-alternate-background-color.md",
+    "old_text": "[!INCLUDE [values-values-alternate-background-color](../includes/core-visuals/values-values-alternate-background-color.md)]",
+    "new_text": "##### Alternate background color\n\nThis setting allows you to customize the color for alternating rows by selecting colors from the color palette.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "values-values-alternate-text-color.md",
+    "old_text": "[!INCLUDE [values-values-alternate-text-color](../includes/core-visuals/values-values-alternate-text-color.md)]",
+    "new_text": "##### Alternate text color\n\nThis setting allows you to customize the color for alternating rows by selecting colors from the color palette.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  },
+  {
+    "file": "visuals\\power-bi-visualization-matrix-visual-format-settings.md",
+    "include_file": "values-values-text-wrap.md",
+    "old_text": "[!INCLUDE [values-values-text-wrap](../includes/core-visuals/values-values-text-wrap.md)]",
+    "new_text": "##### Text wrap\n\nThis toggle, when enabled, allows longer text to be displayed on multiple lines within a cell, preventing it from being cut off.",
+    "full_path": "c:\\repos\\powerbi-docs-pr\\powerbi-docs\\visuals\\power-bi-visualization-matrix-visual-format-settings.md"
+  }
+]
