@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/10/2025
 ms.custom: Sales and marketing app, Retail analysis
 LocalizationGroup: Ask questions of your data

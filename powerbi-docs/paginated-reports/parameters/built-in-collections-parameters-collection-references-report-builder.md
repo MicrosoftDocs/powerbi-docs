@@ -4,7 +4,7 @@ description: Discover how to use parameters in an expression to customize pagina
 ms.date: 01/25/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ---

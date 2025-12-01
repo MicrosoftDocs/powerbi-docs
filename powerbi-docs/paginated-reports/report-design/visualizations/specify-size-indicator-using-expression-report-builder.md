@@ -4,7 +4,7 @@ description: Discover ways to use size, in addition to color, direction, and sha
 ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

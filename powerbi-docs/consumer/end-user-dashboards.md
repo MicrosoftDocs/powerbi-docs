@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with dashboards
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/06/2025
 LocalizationGroup: Dashboards
 ms.custom: intro-overview

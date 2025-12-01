@@ -7,7 +7,7 @@ services: power-bi
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/30/2025
 ai-usage: ai-assisted
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they're reading about or performing and they don't get confused or frustrated and instead get the result they expect.

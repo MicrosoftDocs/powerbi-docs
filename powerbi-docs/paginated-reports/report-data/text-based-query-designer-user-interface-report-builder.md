@@ -4,7 +4,7 @@ description: Use the text-based query designer to specify a query using the quer
 ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

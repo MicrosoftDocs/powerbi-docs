@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.search.form: Visualization types in Power BI
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/24/2025
 ms.custom: retail-analysis-sample-PBIX
 LocalizationGroup: Visualizations

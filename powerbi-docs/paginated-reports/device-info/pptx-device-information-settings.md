@@ -4,7 +4,7 @@ description: Learn details about the device information settings for rendering P
 ms.date: 06/28/2024
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ---

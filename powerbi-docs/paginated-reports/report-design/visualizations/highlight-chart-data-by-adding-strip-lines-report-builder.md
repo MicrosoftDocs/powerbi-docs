@@ -4,7 +4,7 @@ description: Use strip lines in horizontal or vertical ranges in a Power BI pagi
 ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

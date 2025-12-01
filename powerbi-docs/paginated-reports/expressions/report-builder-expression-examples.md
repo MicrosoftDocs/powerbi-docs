@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.date: 01/05/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 ---
 # Expression examples in Power BI Report Builder

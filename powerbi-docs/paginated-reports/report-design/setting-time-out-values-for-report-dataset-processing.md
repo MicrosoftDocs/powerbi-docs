@@ -4,7 +4,7 @@ description: In paginated reports, you can specify time-out values to set limits
 ms.date: 07/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: joshger

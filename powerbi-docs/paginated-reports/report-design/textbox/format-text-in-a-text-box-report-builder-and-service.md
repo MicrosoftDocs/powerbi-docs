@@ -4,7 +4,7 @@ description: Discover how to format text in a text box in paginated reports, and
 ms.date: 01/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

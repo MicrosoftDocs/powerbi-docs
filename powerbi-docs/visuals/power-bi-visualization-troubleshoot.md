@@ -6,7 +6,7 @@ ms.author: miguelmyers
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/10/2024
 ms.custom: TSG - Troubleshooting Guide
 LocalizationGroup: Visualizations

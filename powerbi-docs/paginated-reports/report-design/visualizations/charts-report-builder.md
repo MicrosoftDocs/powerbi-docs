@@ -4,7 +4,7 @@ description: Use chart data regions to help readers of your Power BI paginated r
 ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

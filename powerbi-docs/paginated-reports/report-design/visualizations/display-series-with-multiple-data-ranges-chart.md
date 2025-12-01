@@ -4,7 +4,7 @@ description: Discover ways to improve readability of your Power BI paginated rep
 ms.date: 04/23/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

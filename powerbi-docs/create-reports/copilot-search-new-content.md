@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: Maggie.Tsang
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/06/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]

@@ -4,7 +4,7 @@ description: Add visual interest, highlight key information, or provide related 
 ms.date: 04/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

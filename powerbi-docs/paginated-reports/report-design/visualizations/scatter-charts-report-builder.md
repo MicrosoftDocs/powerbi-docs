@@ -4,7 +4,7 @@ description:  Find out how to use scatter charts in a Power BI paginated report,
 ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

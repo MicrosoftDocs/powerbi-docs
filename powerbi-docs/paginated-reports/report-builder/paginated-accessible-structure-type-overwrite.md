@@ -4,7 +4,7 @@ description:  Learn about using the StructureTypeOverwrite property to improve a
 ms.date: 10/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rvpatkar

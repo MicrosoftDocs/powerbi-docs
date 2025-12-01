@@ -4,7 +4,7 @@ description: Discover how 3D effects in Power BI paginated reports can be used t
 ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

@@ -4,7 +4,7 @@ description: Learn details about the various device information settings you can
 ms.date: 01/05/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ---

@@ -4,7 +4,7 @@ description: Explore the types and characteristics of data regions and maps to d
 ms.date: 02/13/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 helpviewer_keywords: 
   - "data regions"
 author: JulCsc

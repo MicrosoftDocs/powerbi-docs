@@ -6,7 +6,7 @@ ms.author: zoedouglas
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/01/2025
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations

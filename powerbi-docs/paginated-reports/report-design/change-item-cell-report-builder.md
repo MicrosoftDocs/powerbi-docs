@@ -4,7 +4,7 @@ description: Replace a non-container item, such as a text box, line, or image, i
 ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

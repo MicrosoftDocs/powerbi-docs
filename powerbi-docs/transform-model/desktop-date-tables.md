@@ -6,7 +6,7 @@ ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/15/2025
 LocalizationGroup: Model your data
 ---

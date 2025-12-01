@@ -4,7 +4,7 @@ description: Learn about indicators, the small gauges that convey the state of a
 ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

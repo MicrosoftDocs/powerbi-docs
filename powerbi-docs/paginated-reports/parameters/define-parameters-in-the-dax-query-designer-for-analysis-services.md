@@ -4,7 +4,7 @@ description: In this article, you learn how to define query parameters in the DA
 ms.date: 04/11/2025
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: nidenyse
 ms.author: dniwenshuti
 ms.reviewer:

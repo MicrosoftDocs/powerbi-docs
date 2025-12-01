@@ -5,7 +5,7 @@ author: denglishbi
 ms.author: daengli
 ms.reviewer: sngun
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/15/2025
 ---
 
@@ -68,7 +68,7 @@ The diagram consists of the following parts and processes:
 | **Item** | **Description** |
 |---|---|
 | **1** | The user provides an input to Copilot, which could be a written prompt or another interaction that generates a prompt. All interactions with Copilot are user specific. The user can interact with Copilot in Power BI either using the Power BI mobile app, Power BI Desktop, or in a Fabric workspace. |
-| **2** | In the Power BI mobile app, users can view reports in Power BI apps or Fabric Org Apps, or reports that they have access to from a workspace. In the Copilot chat pane in the mobile app, users can ask questions about reports and their data. |
+| **2** | In the Power BI mobile app, users can access a standalone Copilot experience from the app home screen on phones and tablets to chat with data without first opening a specific report. Users can generate summaries, key insights, and auto-generated visuals with citations, share results with colleagues, and use voice dictation for prompts on iOS. Users can also view reports in Power BI apps or Fabric Org Apps and ask questions about specific reports using the in-report Copilot. For more information, see [Overview of Copilot in Power BI mobile apps](../consumer/mobile/mobile-copilot-overview.md). |
 | **3** | In Power BI Desktop, users can use Copilot while they develop semantic models. They can ask data questions, generate DAX queries in the DAX query view, or generate synonyms for Q&A linguistic modeling or measure descriptions for the semantic model.<br><br>To use Copilot in Power BI Desktop, users have to connect to a supported workspace on Fabric capacity. |
 | **4** | In a workspace that uses a license mode of a supported Fabric capacity, users can use Copilot with semantic models and reports that they Publish from Power BI Desktop, upload via Git integration, or create in Fabric. Users might also use notebooks to help develop and manage semantic models by using semantic link and could use Copilot in those notebooks (even though notebooks are not an item of the Power BI workload). |
 | **5** | In Power BI Desktop, users can connect to a semantic model from any workspace and create reports. They might use Copilot to ask data questions, generate DAX, visuals, or summaries to support the report creation process.<br><br>To use Copilot in Power BI Desktop, users have to connect to a supported workspace on Fabric capacity. |
@@ -89,13 +89,15 @@ There are also several other noteworthy scenarios to consider:
 
 - **Cross-capacity consumption:** Fabric administrators can [delegate Copilot consumption to a Fabric Copilot capacity (FCC)](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/11/19/accelerate-app-innovation-with-an-ai-powered-data-platform/#:~:text=Fabric%20billing%20and%20consumption%20updates). This can be a useful way to prevent Copilot usage from impacting your main Fabric capacity that other Fabric workloads and items need to support business-critical processes or decision making.
 
+- **Mobile apps:** Copilot interactions in the Power BI mobile apps require a supported Fabric capacity. Copilot activity from mobile is billed against Fabric capacity, including when delegated to a Fabric Copilot capacity (FCC).
+
 ## Responsible use of Copilot in Power BI
 
 The following considerations are important to keep in mind when you use Copilot in Power BI:
 
 - **Governance:** Ensure that you set up security groups and allow access to Copilot in Power BI only once users have completed training or demonstrated their understanding of the technology, its limitations, and its use cases. If you're enabling Copilot for the first time, use this approach to incrementally roll out Copilot in Power BI in phases when you're ready.
 
-- **Preparation of semantic models:** Significant effort must go into preparing your semantic model to work well with Copilot. These preparations include ensuring proper naming conventions, field descriptions, following good modeling practices, setting up linguistic modeling, and other steps. Neglecting these preparations can lead to Copilot producing more unhelpful and inaccurate results.
+- **Preparation of semantic models:** Significant effort must go into preparing your semantic model to work well with Copilot. These preparations include ensuring proper naming conventions, field descriptions, following good modeling practices, setting up linguistic modeling, and other steps. Neglecting these preparations can lead to Copilot producing more unhelpful and inaccurate results. The standalone Copilot experience in Power BI mobile apps surfaces clear warnings when a semantic model isn't prepared for AI and directs users to [preparation guidance](copilot-prepare-data-ai.md).
 
 - **Preparation of business users:** If business users should use Copilot in Power BI, you should explain to them when to use Copilot and when to simply look at and use their reports. Encouraging business users to use Copilot instead of interacting with reports can lead to increased capacity usage and inefficiency, as they might spend more time writing prompts and reading outputs than reading and interpreting visuals. Instead, they can use Copilot to help them find and interpret information in busy reports, particularly when they can't find what they need.
 
@@ -114,6 +116,7 @@ There are different Copilot experiences in Power BI which you can use with eithe
 
 - [Use Copilot with semantic models](copilot-semantic-models.md)
 - [Use Copilot with Power BI reports](copilot-reports-overview.md)
+- [Standalone Copilot in Power BI mobile apps](../consumer/mobile/mobile-standalone-copilot.md): A consumption experience accessible from the Power BI mobile home screen that lets you chat with your data, get summaries and insights, receive auto-generated visuals with citations, share results, and use voice dictation on iOS.
 
 > [!NOTE]
 > See [Where to find the Copilot experiences in Fabric](/fabric/fundamentals/copilot-fabric-overview#copilot-experiences) for a full overview of each experience by item and workload.

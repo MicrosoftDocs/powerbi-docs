@@ -4,7 +4,7 @@ description: Find out how to rotate a text box in different directions in your p
 ms.date: 01/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

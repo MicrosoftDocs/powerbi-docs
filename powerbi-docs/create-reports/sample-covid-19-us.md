@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---

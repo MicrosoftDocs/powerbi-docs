@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.date: 01/18/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 ---
 # Design tips for reports in Power BI Report Builder

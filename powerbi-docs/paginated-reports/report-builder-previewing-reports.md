@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.date: 12/18/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
 ---
 # Preview reports in Power BI Report Builder

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/07/2025
 LocalizationGroup: Reports
 ---

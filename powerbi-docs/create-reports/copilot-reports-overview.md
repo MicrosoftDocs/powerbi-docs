@@ -5,7 +5,7 @@ author: denglishbi
 ms.author: daengli
 ms.reviewer: juliacawthra
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/07/2025
 ---
 # Use Copilot with Power BI reports and semantic models

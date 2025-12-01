@@ -4,7 +4,7 @@ description: Learn details about the various device information settings for ren
 ms.date: 1/5/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ---

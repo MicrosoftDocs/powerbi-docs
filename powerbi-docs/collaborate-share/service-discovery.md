@@ -5,7 +5,7 @@ author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Share your work

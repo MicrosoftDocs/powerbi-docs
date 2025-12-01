@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/01/2025
 ai-usage: ai-assisted
 ---
@@ -17,6 +17,9 @@ This article lays out the minimum hardware and software requirements to install 
 
 > [!NOTE]
 > Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server. No new versions of SQL Server Reporting Services (SSRS) will be released. Power BI Report Server is now the default on-premises reporting solution for SQL Server.
+
+> [!IMPORTANT]
+> Starting with the May 2025 version of Power BI Desktop for RS, your CPU must support Advanced Vector Extensions (AVX) instructions. If your CPU doesn't support AVX instructions, you might encounter unexpected errors when running Power BI Desktop. Even if your CPU supports AVX, the host machine's BIOS or virtualization settings could have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration.
 
 ## Processor, memory, and operating system requirements
 

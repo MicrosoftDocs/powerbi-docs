@@ -4,7 +4,7 @@ description: Learn how you can add the Moving Average formula price indicator to
 ms.date: 11/07/2024
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

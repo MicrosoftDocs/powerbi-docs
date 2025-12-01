@@ -4,7 +4,7 @@ description: Learn details about Report Definition Language (RDL). You'll learn 
 ms.date: 03/22/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

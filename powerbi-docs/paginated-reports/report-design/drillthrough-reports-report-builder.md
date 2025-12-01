@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.date: 02/08/2024
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Drillthrough reports in a paginated report (Power BI Report Builder)

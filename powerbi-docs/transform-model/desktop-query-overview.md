@@ -6,7 +6,7 @@ ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: concept-article
+ms.topic: overview
 ms.date: 10/01/2025
 ms.custom: dFY25Q1-Linter
 ai-usage: ai-assisted
