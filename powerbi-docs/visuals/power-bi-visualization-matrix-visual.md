@@ -98,6 +98,10 @@ To unfreeze row headers, and therefore hide them as you scroll horizontally, rig
 
 To refreeze the row headers, right-click on the row headers again and select **Freeze row headers**.
 
+### Adjust column width
+
+[!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
+
 ## Related content
 
 - [Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)
