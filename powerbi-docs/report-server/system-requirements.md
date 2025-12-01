@@ -18,6 +18,11 @@ This article lays out the minimum hardware and software requirements to install 
 > [!NOTE]
 > Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server. No new versions of SQL Server Reporting Services (SSRS) will be released. Power BI Report Server is now the default on-premises reporting solution for SQL Server.
 
+
+z
+
+
+
 ## Processor, memory, and operating system requirements
 
 These are the requirements for the latest generally available (GA) version. 
