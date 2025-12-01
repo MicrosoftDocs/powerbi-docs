@@ -25,13 +25,24 @@ The matrix visual's ability to aggregate data and support hierarchical structure
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-[!INCLUDE [prerequisites-desktop-download-latest-version-pbi-desktop](../includes/core-visuals/prerequisites-desktop-download-latest-version-pbi.md)]
-[!INCLUDE [prerequisites-desktop-preview-features-on-object-unselected](../includes/core-visuals/prerequisites-desktop-preview-features-on-object-unselected.md)]
-[!INCLUDE [prerequisites-desktop-download-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-desktop-download-retail-analysis-sample-pbix.md)]
+- Always make sure you have the latest version of [**Power BI Desktop**](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
+- For the purposes of this guide, in Power BI Desktop's **Global options**, under the **Preview features** section, the **On-object interaction** feature is *not enabled*.
+In the following guide, we're using the [**Retail Analysis Sample PBIX**](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file. After downloading the file, let's get started:
+
+1. Launch **Power BI Desktop**.
+1. On the left-side navigation pane, select **Open**, otherwise on the top-left of the window, select **File** > **Open**.
+1. Locate and select your copy of the **Retail Analysis Sample PBIX** file. The file will open in report view, ready for you to begin.
+1. Select the + icon at the bottom of the window to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
 
-[!INCLUDE [prerequisites-service-open-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-service-open-retail-analysis-sample-pbix.md)]
+In the following guide we’re using the Retail Analysis Sample PBIX in the Power BI service. Let’s get started:
+
+1. Sign in to the [**Power BI service**](https://app.powerbi.com).
+1. Select **Learn** in the left navigation.
+1. On the **Learning center** page, under **Sample reports**, scroll to the right to locate and select the **Retail Analysis Sample**. The file will open in report view.
+1. At the top of the window, select **Edit** to open the report editor.
+1. Select the **+** icon at the bottom of the window to add a new page to the report.
 
 ---
 > [!NOTE]

@@ -5,7 +5,7 @@ services: powerbi
 author: JulCsc
 ms.author: juliacawthra
 ms.topic: include
-ms.date: 07/11/2022
+ms.date: 12/01/2025
 ms.custom: include file, service-premium-what-is.md, embedded-capacity.md
 ---
 
