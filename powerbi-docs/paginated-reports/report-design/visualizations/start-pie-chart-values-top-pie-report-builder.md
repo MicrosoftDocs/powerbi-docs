@@ -4,7 +4,7 @@ description: Learn how to start pie chart values at the top of the chart in a Po
 ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

@@ -4,7 +4,7 @@ description: Learn how to change the sort order of data in a data region in a Po
 ms.date: 06/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

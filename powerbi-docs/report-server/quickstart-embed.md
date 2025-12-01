@@ -4,7 +4,7 @@ description: This article shows how to embed a Power BI Report Server report in 
 author: JulCsc
 ms.author: juliacawthra
 ms.date: 11/01/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc

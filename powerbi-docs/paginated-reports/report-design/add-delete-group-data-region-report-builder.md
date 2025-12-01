@@ -4,7 +4,7 @@ description: Consider adding a group to a data region in a Power BI paginated re
 ms.date: 06/27/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

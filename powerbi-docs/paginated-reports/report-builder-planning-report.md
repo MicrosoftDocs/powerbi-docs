@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.date: 01/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 ---
 # Plan a paginated report in Power BI Report Builder

@@ -4,7 +4,7 @@ description: Display detail data or grouped data by using a single field or mult
 ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

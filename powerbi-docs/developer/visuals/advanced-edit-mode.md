@@ -6,7 +6,7 @@ ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/05/2025
 ---
 

@@ -4,7 +4,7 @@ description:  Learn about Power BI Report Builder accessibility features that he
 ms.date: 05/22/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: cookiemccray

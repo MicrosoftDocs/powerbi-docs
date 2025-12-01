@@ -4,7 +4,7 @@ description:  Add properties of your Power BI paginated report including page nu
 ms.date: 06/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

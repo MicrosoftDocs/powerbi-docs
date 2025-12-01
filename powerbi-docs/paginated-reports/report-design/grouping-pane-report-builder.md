@@ -4,7 +4,7 @@ description: Display row groups and column groups for a currently selected tabli
 ms.date: 06/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

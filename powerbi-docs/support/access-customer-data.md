@@ -5,7 +5,7 @@ author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: royrubinstein
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/01/2025
 ai-usage: ai-assisted
 ---

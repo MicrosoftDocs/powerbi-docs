@@ -4,7 +4,7 @@ description: Add or remove margins from a Column or Scatter chart in Power BI Re
 ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

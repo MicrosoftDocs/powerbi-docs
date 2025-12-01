@@ -4,7 +4,7 @@ description: Find out how to use multiple series on a Power BI paginated report 
 ms.date: 03/29/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya 

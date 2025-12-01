@@ -6,7 +6,7 @@ ms.author: petebro
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/28/2025
 keywords:
   - "install pbirs, download pbirs, latest pbirs"

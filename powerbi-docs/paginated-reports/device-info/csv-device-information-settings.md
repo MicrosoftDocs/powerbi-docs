@@ -4,7 +4,7 @@ description: "In Power BI paginated reports, the device information settings for
 ms.date: 01/05/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ---

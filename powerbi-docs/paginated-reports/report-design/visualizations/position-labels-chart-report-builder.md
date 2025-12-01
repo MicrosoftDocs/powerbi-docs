@@ -4,7 +4,7 @@ description: Determine the type of chart you're using in your Power BI paginated
 ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

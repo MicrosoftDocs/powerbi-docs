@@ -4,7 +4,7 @@ description: Arrange your table or matrix data regions in a paginated report by 
 ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

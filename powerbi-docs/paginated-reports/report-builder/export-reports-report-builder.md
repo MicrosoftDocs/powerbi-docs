@@ -4,7 +4,7 @@ description: You can export a Power BI paginated report to another file format, 
 ms.date: 03/02/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

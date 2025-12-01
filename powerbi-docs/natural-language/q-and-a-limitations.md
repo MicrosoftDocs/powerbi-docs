@@ -5,7 +5,7 @@ author: kgremban
 ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/04/2024
 ---
 # Limitations of Power BI Q&A

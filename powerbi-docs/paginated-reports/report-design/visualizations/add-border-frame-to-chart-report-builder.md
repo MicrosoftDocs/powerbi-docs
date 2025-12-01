@@ -4,7 +4,7 @@ description: Learn how to give a chart more visual impact using a border frame a
 ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

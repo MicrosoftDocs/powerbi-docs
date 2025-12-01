@@ -4,7 +4,7 @@ description:  Improve the user experience of data and display in a paginated rep
 ms.date: 10/01/2025
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

@@ -4,7 +4,7 @@ description: Improve readability of your Power BI paginated reports with format 
 ms.date: 06/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

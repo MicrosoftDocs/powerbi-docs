@@ -5,7 +5,7 @@ author: kgremban
 ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/03/2025
 LocalizationGroup: Conceptual
 ---

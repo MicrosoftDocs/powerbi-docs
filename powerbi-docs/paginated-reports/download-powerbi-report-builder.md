@@ -6,7 +6,7 @@ ms.author: petebro
 ms.reviewer: petebro
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/08/2025
 keywords:
   - "install pbirb, download pbirb, latest pbirb"

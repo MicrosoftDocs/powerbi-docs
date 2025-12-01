@@ -6,7 +6,7 @@ ms.author: jaimeta
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/01/2025
 ---
 

@@ -6,7 +6,7 @@ ms.author: dniwenshuti
 ms.date: 04/11/2025
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
 ms.reviewer: jonhp

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.custom: intro-whats-new
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/18/2025
 LocalizationGroup: Get started
 no-loc: [Copilot]

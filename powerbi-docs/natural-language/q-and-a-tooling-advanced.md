@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/12/2023
 ---
 # Edit Q&A linguistic schema and add phrasings in Power BI Desktop 

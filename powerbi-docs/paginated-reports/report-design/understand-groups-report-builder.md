@@ -4,7 +4,7 @@ description: Gain an understanding of how a group organizes a view of a report d
 ms.date: 06/29/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

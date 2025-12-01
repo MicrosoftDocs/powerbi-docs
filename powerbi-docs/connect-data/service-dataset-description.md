@@ -5,7 +5,7 @@ author: kgremban
 ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Share your work

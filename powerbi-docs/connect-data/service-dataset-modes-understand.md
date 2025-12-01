@@ -7,7 +7,7 @@ manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/28/2025
 ---
 
