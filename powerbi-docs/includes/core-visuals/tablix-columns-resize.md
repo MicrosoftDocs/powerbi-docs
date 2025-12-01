@@ -20,7 +20,7 @@ Sometimes Power BI shortens a column heading in a report or dashboard. To displa
 #### Resize by dragging
 Move to the space just to the right of the column heading until the resize arrows appear. Once the arrows are visible, adjust the column width by moving the resize handle left or right.
 
-:::image type="content" source="media/power-bi-visualization-tables/resize-table.gif" alt-text="Animation showing how to resize a column in Power BI.":::
+:::image type="content" source="../visuals/media/power-bi-visualization-tables/resize-table.gif" alt-text="Animation showing how to resize a column in Power BI.":::
 
 #### Resize using menu options
 Select the column you want to adjust. From the available options, choose **Widen column** or **Narrow column** to change its width by 10px.
