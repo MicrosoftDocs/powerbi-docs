@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 11/10/2025
+ms.date: 11/30/2025
 ---
 
 # What's new in Power BI collaboration and integration
@@ -17,6 +17,20 @@ ms.date: 11/10/2025
 This article summarizes new or updated Power BI features that are designed to help you collaborate and integrate Power BI into other products.
 
 **To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/whats-new.md).**
+
+## November 2025
+
+### Power BI app is available in Teams in Microsoft 365 Operated by 21Vianet
+
+Starting in November 2025, Power BI users in Microsoft 365 Operated by 21Vianet can now use the Power BI app for Teams. Users can get the app from the app store, or admins can get it for them. Access your Power BI content directly within Teams using the tailored experience built for Teams, and pin Power BI content to chats and channels using Tabs. After you install it, you can do almost everything in Microsoft Teams that you can do in the Power BI service.
+
+The following features aren't available in this release:
+
+- Power BI notifications in Microsoft Teams
+- Power BI adaptive cards
+- Content sharing through Microsoft Teams
+
+To learn more, see [Power BI service in Microsoft 365 Operated by 21Vianet](/fabric/enterprise/powerbi/regions-power-bi-china-cloud).
 
 ## October 2025
 
