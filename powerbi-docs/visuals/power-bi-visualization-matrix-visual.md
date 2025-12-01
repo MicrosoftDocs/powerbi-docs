@@ -32,9 +32,6 @@ In the following guide, we're using the [**Retail Analysis Sample PBIX**](https:
 1. Launch **Power BI Desktop**.
 1. On the left-side navigation pane, select **Open**, otherwise on the top-left of the window, select **File** > **Open**.
 1. Locate and select your copy of the **Retail Analysis Sample PBIX** file. The file will open in report view, ready for you to begin.
-
-   :::image type="content" source="../media/power-bi-visualization-column-charts/desktop-retail-analysis-sample-report-view.png" alt-text="Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service." lightbox="../media/power-bi-visualization-column-charts/desktop-retail-analysis-sample-report-view-expanded.png" border="false":::
-
 1. Select the + icon at the bottom of the window to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
@@ -44,9 +41,6 @@ In the following guide we’re using the Retail Analysis Sample PBIX in the Powe
 1. Sign in to the [**Power BI service**](https://app.powerbi.com).
 1. Select **Learn** in the left navigation.
 1. On the **Learning center** page, under **Sample reports**, scroll to the right to locate and select the **Retail Analysis Sample**. The file will open in report view.
-
-   :::image type="content" source="../media/power-bi-visualization-column-charts/service-retail-analysis-sample-report-view.png" alt-text="Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service." lightbox="../media/power-bi-visualization-column-charts/service-retail-analysis-sample-report-view-expanded.png" border="false":::
-
 1. At the top of the window, select **Edit** to open the report editor.
 1. Select the **+** icon at the bottom of the window to add a new page to the report.
 
