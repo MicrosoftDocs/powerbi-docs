@@ -4,7 +4,7 @@ description: "Learn about tablix data region areas in a Power BI paginated repor
 ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

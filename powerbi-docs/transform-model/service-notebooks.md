@@ -6,7 +6,7 @@ ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/31/2025
 LocalizationGroup: Transform and shape data
 ---

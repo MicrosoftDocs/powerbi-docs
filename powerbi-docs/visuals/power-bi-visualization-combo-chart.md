@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.custom: video-removed, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/01/2025
 LocalizationGroup: Visualizations
 ai-usage: ai-assisted

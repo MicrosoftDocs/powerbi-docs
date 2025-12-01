@@ -6,7 +6,7 @@ ms.author: jaimeta
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/01/2025
 ---
 
@@ -24,6 +24,11 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ## September 2025
 
 ### Power BI Report Server
+
+- *Version: 1.24.9466.3830 (build 15.0.1119.121), Released: December 1, 2025*
+    - Added support for SQL Server 2025 Product IDs (keys).
+    - Added telemetry and changed error code when Power BI Desktop for RS uploads a file that's too large.
+    - Added telemetry and changed error code when Power BI Desktop for RS uploads a file that's for a newer Desktop release.
 
 - *Version: 1.24.9392.34333 (build 15.0.1119.107), Released: September 22, 2025*
 	- Fixed issue where custom authentication didn't re-authenticate upon cookie expiration 

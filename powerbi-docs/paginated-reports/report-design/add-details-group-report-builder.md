@@ -4,7 +4,7 @@ description: Find out about adding a details group to an existing tablix data re
 ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

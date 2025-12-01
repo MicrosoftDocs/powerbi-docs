@@ -4,7 +4,7 @@ description:  Learn about displaying data as a proportion of the whole with the 
 ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

@@ -5,7 +5,7 @@ author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/29/2025
 ---
 

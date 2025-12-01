@@ -7,7 +7,7 @@ ms.reviewer: mihirwagle
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Roles in workspaces
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/25/2024
 LocalizationGroup: Share your work
 ms.custom:

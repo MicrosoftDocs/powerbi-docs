@@ -4,7 +4,7 @@ description: Discover how to visually represent hierarchical data in a Power BI 
 ms.date: 03/29/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

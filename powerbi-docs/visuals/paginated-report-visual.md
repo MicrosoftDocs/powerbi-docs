@@ -6,7 +6,7 @@ ms.author: miguelmyers
 ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/07/2023
 ---
 

@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Create reports

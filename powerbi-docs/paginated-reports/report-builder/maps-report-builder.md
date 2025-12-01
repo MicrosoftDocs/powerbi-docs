@@ -4,7 +4,7 @@ description: Get acquainted with how to add a map to your paginated report showi
 ms.date: 02/13/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

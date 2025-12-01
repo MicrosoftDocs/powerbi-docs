@@ -6,7 +6,7 @@ ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/26/2025
 LocalizationGroup: Connect to data
 ---

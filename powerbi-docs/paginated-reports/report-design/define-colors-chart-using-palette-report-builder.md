@@ -4,7 +4,7 @@ description: Change the color palette for a Power BI paginated report chart by s
 ms.date: 06/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

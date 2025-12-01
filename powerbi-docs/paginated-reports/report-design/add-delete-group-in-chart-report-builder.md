@@ -4,7 +4,7 @@ description: Find out how to add or delete groups, and how to create groups or n
 ms.date: 09/07/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

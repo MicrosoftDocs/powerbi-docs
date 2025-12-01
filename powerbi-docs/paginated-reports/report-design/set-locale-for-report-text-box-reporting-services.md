@@ -4,7 +4,7 @@ description: Use the Language property on a text box to provide the locale setti
 ms.date: 03/13/2024
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

@@ -5,7 +5,7 @@ author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---

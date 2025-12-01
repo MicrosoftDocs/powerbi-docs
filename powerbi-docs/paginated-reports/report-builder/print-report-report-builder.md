@@ -7,7 +7,7 @@ ms.reviewer: saurkumar
 ms.date: 06/15/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Print a report (Power BI Report Builder)
 

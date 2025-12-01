@@ -4,7 +4,7 @@ description: Learn how to use area charts in Power BI paginated report. Area cha
 ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

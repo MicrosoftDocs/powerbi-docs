@@ -4,7 +4,7 @@ description: Find out about images as items in paginated reports in Power BI Rep
 ms.date: 04/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

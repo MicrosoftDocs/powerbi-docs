@@ -4,7 +4,7 @@ description: In Power BI Report Builder, the PDF rendering extension renders Pow
 ms.date: 08/26/2024
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

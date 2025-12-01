@@ -4,7 +4,7 @@ description: Discover how to add a page break to rectangles, data regions, or gr
 ms.date: 06/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

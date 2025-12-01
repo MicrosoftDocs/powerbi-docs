@@ -4,7 +4,7 @@ description: Enable your users to change the sort order of values in a Power BI 
 ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

@@ -4,7 +4,7 @@ description: Resolve blocked self-service sign-up, trial, or purchase attempts t
 author: julcsc
 ms.author: juliacawthra
 services: powerbi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: powerbi
 ms.custom:
 ms.subservice: pbi-fundamentals

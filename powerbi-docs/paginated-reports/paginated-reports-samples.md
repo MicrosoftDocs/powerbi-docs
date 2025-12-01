@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/27/2022
 ---
 

@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/30/2025
 ms.custom: licensing support
 ai-usage: ai-assisted

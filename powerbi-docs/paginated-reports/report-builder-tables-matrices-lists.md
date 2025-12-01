@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.date: 01/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
 ---
 # Tables, matrixes, and lists in Power BI Report Builder

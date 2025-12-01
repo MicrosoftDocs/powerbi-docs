@@ -6,7 +6,7 @@ ms.author: petebro
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 9/17/2024
 ---
 

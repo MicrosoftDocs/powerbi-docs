@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.date: 04/10/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Drilldown action in a paginated report (Power BI Report Builder)
 

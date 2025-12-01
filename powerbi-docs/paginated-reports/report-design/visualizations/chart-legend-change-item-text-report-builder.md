@@ -4,7 +4,7 @@ description: Find out how to change the text of a legend item in Power BI pagina
 ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

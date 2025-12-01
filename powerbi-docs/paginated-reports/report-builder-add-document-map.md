@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.date: 09/18/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
 ---

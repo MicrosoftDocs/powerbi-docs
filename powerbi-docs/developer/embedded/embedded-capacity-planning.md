@@ -6,7 +6,7 @@ ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/03/2025
 ms.custom: engagement-fy23
 ---

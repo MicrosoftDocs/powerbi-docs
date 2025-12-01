@@ -5,7 +5,7 @@ author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: ""
 ms.date: 01/18/2023
 ---

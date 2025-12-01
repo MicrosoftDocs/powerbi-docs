@@ -7,7 +7,7 @@ ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/12/2023
 ---
 # Introduction: Use natural language to explore data with Power BI Q&A

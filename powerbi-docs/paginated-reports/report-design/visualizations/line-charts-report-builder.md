@@ -4,7 +4,7 @@ description: Use line charts in a Power BI paginated report to represent large a
 ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

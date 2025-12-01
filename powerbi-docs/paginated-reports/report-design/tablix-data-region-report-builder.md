@@ -4,7 +4,7 @@ description: See how to display paginated report data in cells. Organize data in
 ms.date: 09/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

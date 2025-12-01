@@ -4,7 +4,7 @@ description: Specify or calculate values with paginated report expressions for p
 ms.date: 09/21/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 76b9ed31-5aec-40fc-bb88-a1c1b0ab3fc3
 author: JulCsc
 ms.author: juliacawthra

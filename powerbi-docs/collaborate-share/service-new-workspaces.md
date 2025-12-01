@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Workspaces in Power BI, Get started with workspaces
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/30/2025
 ai-usage: ai-assisted
 ms.custom: fabric

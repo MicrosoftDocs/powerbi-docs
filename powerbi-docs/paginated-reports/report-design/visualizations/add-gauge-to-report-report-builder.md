@@ -4,7 +4,7 @@ description: Learn how to summarize data in a Power BI paginated report in a vis
 ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
