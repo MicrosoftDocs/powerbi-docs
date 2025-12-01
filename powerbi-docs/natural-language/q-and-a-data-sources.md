@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/10/2024
 ms.custom: kr2b-contr-experiment
 ---

@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/10/2025
 LocalizationGroup: Dashboards
 ms.custom: sfi-image-nochange

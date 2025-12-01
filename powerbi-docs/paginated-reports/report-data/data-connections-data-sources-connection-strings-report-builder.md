@@ -4,7 +4,7 @@ description: Learn how to create data connection strings and learn important inf
 ms.date: 09/25/2024
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

@@ -5,7 +5,7 @@ author: julcsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 10/01/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]

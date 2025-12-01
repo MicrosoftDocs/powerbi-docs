@@ -6,7 +6,7 @@ ms.author: miguelmyers
 ms.reviewer: 'miguelmyers'
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: pbibetadocbug, intro-get-started, sample-salesandmarketingsample
 ms.date: 12/19/2023
 LocalizationGroup: Visualizations

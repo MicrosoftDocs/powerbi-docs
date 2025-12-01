@@ -6,7 +6,7 @@ ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/30/2024
 ms.custom:
   - fabric-cat

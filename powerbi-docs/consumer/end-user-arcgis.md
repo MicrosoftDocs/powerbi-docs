@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/01/2025
 ai-usage: ai-assisted
 ---

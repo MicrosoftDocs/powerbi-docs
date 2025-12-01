@@ -6,7 +6,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 
 
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

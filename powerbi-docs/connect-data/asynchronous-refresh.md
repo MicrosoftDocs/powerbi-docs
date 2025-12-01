@@ -5,7 +5,7 @@ author: kgremban
 ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/07/2025
 ---
 

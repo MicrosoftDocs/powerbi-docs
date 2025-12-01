@@ -4,7 +4,7 @@ description: Learn about report embedded datasets so you can create expressions 
 ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

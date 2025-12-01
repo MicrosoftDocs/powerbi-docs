@@ -3,7 +3,7 @@ title: Automate configuration of template app installation
 description: Learn how to automate template app installation configuration for Power BI customers. Simplify data connections with preconfigured parameters and streamlined setup.
 author: kgremban
 ms.author: kgremban
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 10/01/2025

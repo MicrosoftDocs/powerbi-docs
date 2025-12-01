@@ -4,7 +4,7 @@ description: Use the information in this article about the Oracle connection typ
 ms.date: 10/09/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

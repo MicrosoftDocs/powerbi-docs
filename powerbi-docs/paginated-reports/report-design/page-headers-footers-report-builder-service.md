@@ -4,7 +4,7 @@ description: Discover the many paginated report items you can add to headers and
 ms.date: 03/22/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

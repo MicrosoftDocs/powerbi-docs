@@ -4,7 +4,7 @@ description: Find out about different types of formatting of data points on char
 ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

@@ -6,7 +6,7 @@ ms.author: daengli
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat, video-RWUWA9
 ms.date: 12/30/2024
 ---

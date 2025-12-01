@@ -4,7 +4,7 @@ description: Learn how to set a no data message to show in a rendered report in 
 ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

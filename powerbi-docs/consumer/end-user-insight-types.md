@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/09/2025
 LocalizationGroup: Dashboards
 ---

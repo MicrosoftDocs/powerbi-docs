@@ -8,7 +8,7 @@ ms.author: dniwenshuti
 ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: 
 ms.date: 04/01/2025
 ---

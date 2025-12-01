@@ -5,7 +5,7 @@ author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual #Don't change
+ms.topic: concept-article #Don't change
 ms.collection: ce-skilling-ai-copilot
 ms.date: 11/18/2025
 ai-usage: ai-assisted

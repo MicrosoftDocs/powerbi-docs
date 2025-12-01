@@ -5,7 +5,7 @@ author: denglishbi
 ms.author: daengli
 ms.reviewer: sngun
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/15/2025
 ---
 

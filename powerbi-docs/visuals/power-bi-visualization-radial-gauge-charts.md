@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/07/2025
 LocalizationGroup: Visualizations
 ms.custom: sample-financialsample

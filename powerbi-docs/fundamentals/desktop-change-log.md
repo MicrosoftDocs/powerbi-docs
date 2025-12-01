@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/17/2025
 no-loc: [Copilot]
 ---

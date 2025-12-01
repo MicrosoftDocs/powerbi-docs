@@ -5,7 +5,7 @@ author: kgremban
 ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/02/2023
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot

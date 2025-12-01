@@ -4,7 +4,7 @@ description: Find out how to set properties to render headers and footers with d
 ms.date: 03/22/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

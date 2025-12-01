@@ -6,7 +6,7 @@ manager:
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/01/2025
 ai-usage: ai-assisted
 ms.author: juliacawthra

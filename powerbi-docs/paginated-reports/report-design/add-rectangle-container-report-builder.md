@@ -4,7 +4,7 @@ description: Separate or emphasize areas of a report or provide a background for
 ms.date: 09/07/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Share your work

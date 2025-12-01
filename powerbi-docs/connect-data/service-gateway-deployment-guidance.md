@@ -6,7 +6,7 @@ ms.author: arthii
 ms.reviewer: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/23/2024
 LocalizationGroup: Gateways
 ---

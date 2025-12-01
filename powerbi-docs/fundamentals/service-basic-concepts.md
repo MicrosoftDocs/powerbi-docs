@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/14/2025
 LocalizationGroup: Get started
 ---

@@ -4,7 +4,7 @@ description: Find out about cells in a table or matrix that also contain text bo
 ms.date: 01/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar

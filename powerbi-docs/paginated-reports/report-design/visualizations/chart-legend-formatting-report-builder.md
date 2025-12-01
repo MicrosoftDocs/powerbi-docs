@@ -4,7 +4,7 @@ description: Learn how to format a legend on a Power BI paginated report chart i
 ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

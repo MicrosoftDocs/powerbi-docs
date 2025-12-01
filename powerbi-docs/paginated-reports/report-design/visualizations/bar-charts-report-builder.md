@@ -4,7 +4,7 @@ description: Display data horizontally with a bar chart to represent data in a p
 ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya

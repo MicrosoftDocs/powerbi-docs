@@ -4,7 +4,7 @@ description: Add a text box to the paginated report body to display information 
 ms.date: 02/06/2025
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
