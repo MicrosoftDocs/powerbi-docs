@@ -127,22 +127,42 @@
     },
     {
       "source_path": "powerbi-docs/consumer/get-started-metrics.md",
-      "redirect_url": "/power-bi/create-reports/get-started-metrics",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/get-started-metrics.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/create-metric-sets.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
       "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/consumer/create-metric-sets.md",
-      "redirect_url": "/power-bi/create-reports/create-metric-sets",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
       "redirect_document_id": false
     },
     {
-      "source_path": "powerbi-docs/consumer//view-explore-metrics.md",
-      "redirect_url": "/power-bi/create-reports//view-explore-metrics",
+      "source_path": "powerbi-docs/consumer/view-explore-metrics.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/view-explore-metrics.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
       "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/consumer/use-monitor-metrics.md",
-      "redirect_url": "/power-bi/create-reports/use-monitor-metrics",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/use-monitor-metrics.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
       "redirect_document_id": false
     },
     {
