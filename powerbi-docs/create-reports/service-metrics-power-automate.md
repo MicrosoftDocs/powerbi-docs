@@ -1,20 +1,17 @@
 ---
-title: Use Power Automate to update metrics automatically
+title: Use Power Automate to update goals automatically
 description: Automate business flows from a scorecard.
-author: julcsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: 'cnews'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 11/30/2024
-#customer intent: As a Power BI user, I want to learn how to use power automate to automatically update my metrics.
+#customer intent: As a Power BI user, I want to learn how to use power automate to automatically update my goals.
 ---
-# Use Power Automate to update metrics automatically
-
-> [!WARNING]
-> Metric sets are going away. Starting October 25th, creating new metric sets will no longer be possible, but you can access existing metric sets until November 15, 2025. Please note that scorecards and all associated datasets or measures will not be impacted by this change.
+# Use Power Automate to update goals automatically
 
 Many organizations want to use scorecards in processes that help them achieve results more quickly. However, manually monitoring scorecards can be resource intensive and error prone. In this documentation, we go over how you automate business processes when important changes happen within your scorecard. It helps organization quickly respond to changing conditions by keeping everyone up to date, and taking automated actions to improve outcomes. This new capability is easy to use: You launch Power Automate right from your scorecard and immediately construct your automated flow.
 
@@ -26,13 +23,13 @@ Many organizations want to use scorecards in processes that help them achieve re
 
 1. Then, select the **Create a flow** button in the ribbon.
 
-:::image type="content" source="media/service-goals-create/flow-from-ribbon.png" alt-text="Screenshot of Access power automate by selecting the Create a flow button in the ribbon.":::
+:::image type="content" source="media/service-goals-create/flow-from-ribbon.png" alt-text="Screenshot of Access Power Automate by selecting the Create a flow button in the ribbon.":::
 
 ## Actions and triggers
 
 For now, we're offering standalone actions and triggers. To get started, select **Create your own flow**, search for *Power BI* in the connector search area, and select **Power BI**.
 
-:::image type="content" source="media/service-goals-create/PBI-connector.png" alt-text="Screenshot of A list of actions and triggers after selecting the PBI connector.":::
+:::image type="content" source="media/service-goals-create/PBI-connector.png" alt-text="Screenshot of A list of actions and triggers after selecting the Power BI connector.":::
 
 On the **Actions** tab, browse the list of actions.
 
@@ -44,7 +41,7 @@ On the **Triggers** tab, browse the list of triggers.
 
 ### Actions
 
-The following is a list of actions:
+The following list of actions is available for your automated flows:
 
 - Create a goal (Preview)
 - Create a check-in (Preview)
@@ -74,18 +71,7 @@ You can also see all the documentation by going to the **Actions** section of th
 
 :::image type="content" source="media/service-goals-create/docs-for-goals.png" alt-text="Screenshot of A snapshot of the documentation screen for each action and trigger.":::
 
-## Templates
-
-Templates will allow you to choose a flow that matches your complex business scenarios, and ensure you have the building blocks to automate your process. Templates will be rolling out in the coming weeks. We'll update the documentation then. A sneak peek at just a few of the scenarios we'll be enabling:  
-  
-- Triggering a teams notification when a status changes to *behind* or *at risk*.  
-- Sending reminders to team members at specific intervals with links to scorecards or metrics to review.
-- Notifying a specific team member when they're assigned to a new metric and should perform a check-in.
-- Sending a Forms survey that gets added as a check-in note on a metric at a specified interval.
-- Sending a congratulations email when a team completes a goal.
-
 ## Related content
 
-- For more information on creating flows, see the [Power automate](/power-automate/getting-started) documentation.
-- [Get started with metrics](get-started-metrics.md)
-- [Get started with Goals in Power BI](service-goals-introduction.md)
+- For more information on creating flows, see the [Power Automate](/power-automate/getting-started) documentation.
+- [Get started with goals in Power BI](service-goals-introduction.md)

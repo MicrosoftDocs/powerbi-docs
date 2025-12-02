@@ -120,7 +120,6 @@ You can re-use a shared semantic model by using the following downstream item ty
   - [AI skills](/fabric/data-science/concept-ai-skill)
   - [Copilot](../create-reports/copilot-ask-data-question.md)
   - [Explorations](../consumer/explore-data-service.md)
-  - [Metric sets](../create-reports/create-metric-sets.md)
   - [Notebooks](/fabric/data-science/read-write-power-bi-python) (via the [Semantic Link](/fabric/data-science/semantic-link-power-bi?tabs=sql) and [semantic-link-labs](https://github.com/microsoft/semantic-link-labs) libraries)
 
 The following sections give an overview of important considerations when you use semantic models with some of these items.
@@ -211,7 +210,6 @@ When you plan to create paginated reports on a semantic model, you might need to
 There are also other ways to consume semantic models. Some examples are below:
 
 - **Activator (formerly Reflex):** You can use a semantic model to automate data alerts and trigger downstream flows, such as those you create by using Power Automate.
-- **Metric sets:** You can create a metric set, which includes measures and recommended dimensions from multiple semantic models in one place. Metric sets can improve data discovery for users.
 - **Explorations:** Aside from creating explorations from reports and Copilot outputs, users can also create explorations from a semantic model. 
 
 ### Distribution and sharing of Reports
