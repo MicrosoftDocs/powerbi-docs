@@ -84,5 +84,4 @@ Templates allow you to choose a flow that matches your complex business scenario
 ## Related content
 
 - For more information on creating flows, see the [Power Automate](/power-automate/getting-started) documentation.
-- [Get started with metrics](get-started-metrics.md)
-- [Get started with Goals in Power BI](service-goals-introduction.md)
+- [Get started with goals in Power BI](service-goals-introduction.md)
