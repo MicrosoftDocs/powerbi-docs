@@ -4,9 +4,9 @@
  services: powerbi
  author: JulCsc
  ms.service: powerbi
- ms.topic: include
- ms.date: 10/17/2020
- ms.author: juliacawthra
+ms.topic: include
+ms.date: 12/01/2025
+ms.author: juliacawthra
  ms.custom: include file
 ---
 

@@ -273,17 +273,7 @@ To copy the values for more than one cell:
 
 ## Adjust column width
 
-Column width in Power BI tables can be adjusted to improve readability and presentation. You can manually resize columns or use automatic options to optimize how your data appears in the report.
-
-### Manual adjustment
-
-Sometimes Power BI truncates a column heading in a report and on a dashboard. To show the entire column name, hover over the space to the right of the heading to reveal the double arrows icon. Select and move the double arrows icon to resize the column.
-
-:::image type="content" source="media/power-bi-visualization-tables/resize-table.gif" alt-text="Screenshot of a video that shows how to resize a column.":::
-
-### Automatic adjustment
-
-[!INCLUDE [column-headers-options-auto-size-width](../includes/core-visuals/column-headers-options-auto-size-width.md)]
+[!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
 
 ## Considerations and troubleshooting
 
