@@ -117,7 +117,6 @@ The **Microsoft Fabric** category provides the following data connections:
 * Warehouses
 * Lakehouses
 * KQL Databases
-* Metric Sets
 
 ### Power Platform data sources
 
