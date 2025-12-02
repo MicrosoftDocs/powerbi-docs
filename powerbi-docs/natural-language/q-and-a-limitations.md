@@ -71,7 +71,7 @@ Teach Q&A allows you to define unrecognized terms by assigning a word to a field
 - Products equal 100
 - Products < 100
 
-Currrently, redefining a recognized term or defining other types of conditions or phrases isn't supported.
+Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported.
 
 ### Statements not supported
 
