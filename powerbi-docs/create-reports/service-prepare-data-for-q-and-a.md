@@ -13,6 +13,9 @@ LocalizationGroup: Ask questions of your data
 ---
 # Make Excel data work well with Q&A in Power BI
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 If you create data models or build Excel workbooks for Power BI, this article can help you.
 
 In Power BI, Q&A can search structured data and choose the right visualization for your question.

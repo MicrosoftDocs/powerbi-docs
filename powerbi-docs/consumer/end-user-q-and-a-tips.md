@@ -1,8 +1,8 @@
 ---
 title: Tips for Asking Questions in Power BI Q&A
 description: Use the following tips and tricks to quickly and accurately ask questions with Q&A in the various Power BI apps.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: Mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
@@ -15,6 +15,9 @@ LocalizationGroup: Ask questions of your data
 # Tips for asking questions in Power BI Q&A
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 ## Words and terminology that Q&A recognizes
 

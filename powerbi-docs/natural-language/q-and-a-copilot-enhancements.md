@@ -14,6 +14,9 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 Before your business can start using Copilot capabilities in Power BI, you need to enable Copilot in Microsoft Fabric.
 
 The Q&A visual and its natural language processing capabilities don't rely on generative AI. However, you can quickly improve the Q&A visual's ability to understand user questions by using Copilot for Power BI.

@@ -15,6 +15,9 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 Q&A is a Power BI tool for exploring your data by using natural language. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
 In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md) in the Power BI service, ask a question by using natural language to create a visualization, and pin that visualization to the dashboard. Dashboards aren't available in Power BI Desktop. For information on using Q&A with other Power BI tools and content, see the [Power BI Q&A overview](../consumer/end-user-q-and-a.md).
@@ -31,7 +34,7 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
 1. Open a dashboard that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any semantic model that has a tile pinned to that dashboard.
 1. In the question box at the top of your dashboard, start typing what you want to know about your data.
 
-:::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png" alt-text="Screenshot of the question and answer question box.":::
+   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png" alt-text="Screenshot of the question and answer question box.":::
 
 1. For example, as you type "year over year revenue", the question box gives you suggestions. Select a suggestion or press Enter.
 
