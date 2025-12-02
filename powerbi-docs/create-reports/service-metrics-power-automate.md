@@ -71,16 +71,6 @@ You can also see all the documentation by going to the **Actions** section of th
 
 :::image type="content" source="media/service-goals-create/docs-for-goals.png" alt-text="Screenshot of A snapshot of the documentation screen for each action and trigger.":::
 
-## Templates
-
-Templates allow you to choose a flow that matches your complex business scenarios, and ensure you have the building blocks to automate your process. Templates will be rolling out in the coming weeks. We'll update the documentation then. A sneak peek at just a few of the scenarios we'll be enabling:  
-  
-- Triggering a teams notification when a status changes to *behind* or *at risk*.  
-- Sending reminders to team members at specific intervals with links to scorecards or metrics to review.
-- Notifying a specific team member when they're assigned to a new metric and should perform a check-in.
-- Sending a Forms survey that gets added as a check-in note on a metric at a specified interval.
-- Sending a congratulations email when a team completes a goal.
-
 ## Related content
 
 - For more information on creating flows, see the [Power Automate](/power-automate/getting-started) documentation.
