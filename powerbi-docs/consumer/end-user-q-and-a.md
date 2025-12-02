@@ -15,6 +15,9 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yynn.md)]
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 ## What is Q&A?
 
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "show total units by year and product manufacturer."

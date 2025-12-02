@@ -13,6 +13,9 @@ ms.custom: kr2b-contr-experiment
 
 # Data sources for natural language Q&A
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 The Q&A feature in Power BI lets you quickly get answers about your data by using natural language to ask questions about the data. This article describes supported configurations for Q&A, and how indexing and caching improve performance for each configuration.
 
 ## Supported data sources

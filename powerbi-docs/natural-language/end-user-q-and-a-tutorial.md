@@ -15,6 +15,9 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 Q&A is available throughout Power BI, and this article focuses on using Q&A on a dashboard. We import a sample and use Q&A to explore our data and pin interesting findings to our dashboard.
 
 ## Prerequisites  

@@ -12,6 +12,9 @@ ms.date: 09/12/2023
 ---
 # Introduction: Use natural language to explore data with Power BI Q&A
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 Sometimes the fastest way to get an answer from your data is to perform a search over your data using natural language. The Q&A features in Power BI let you explore your data in your own words by using natural language. Q&A is interactive, even fun. Often, one question leads to others as the visualizations reveal interesting paths to pursue. Asking the question is just the beginning. Travel through your data, refining or expanding your question, uncovering new information, zeroing in on details, or zooming out for a broader view. The experience is interactive and fast, powered by an in-memory storage. 
 
 Power BI Q&A is free and available to all users. Use these links to find the article that you need. 

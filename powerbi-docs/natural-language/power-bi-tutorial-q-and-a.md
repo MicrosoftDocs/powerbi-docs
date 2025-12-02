@@ -14,6 +14,9 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words. Q&A is available on dashboards in the Power BI service and can be added to reports in the Power BI service or Power BI Desktop. This article is written for business users, and explains how to use the Q&A feature in a report. The examples used are from the Power BI service, but the process is almost identical in Desktop Report view. For an introduction to Q&A, see [Q&A for Power BI business users](../consumer/end-user-q-and-a.md).
 
 These articles cover using Q&A in other scenarios in Power BI:

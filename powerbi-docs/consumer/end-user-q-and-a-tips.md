@@ -16,6 +16,9 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 ## Words and terminology that Q&A recognizes
 
 The list of keywords on this page isn't exhaustive. The best way to see if Power BI recognizes a keyword is to try it out by typing it in the question box. If the word or term is grayed out, then Power BI doesn't recognize it. Even when Power BI doesn't recognize a word, it makes a best guess. 
