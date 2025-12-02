@@ -12,7 +12,7 @@ ms.date: 01/06/2023
 # Best practices to optimize Q&A in Power BI
 
 > [!IMPORTANT]
-> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 It's powerful to use common phrases and natural language to ask questions of your data. It's even more powerful when your data answers, which is what the Q&A feature in Power BI does.
 

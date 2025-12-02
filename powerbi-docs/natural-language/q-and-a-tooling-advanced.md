@@ -12,7 +12,7 @@ ms.date: 01/12/2023
 # Edit Q&A linguistic schema and add phrasings in Power BI Desktop 
 
 > [!IMPORTANT]
-> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 It's powerful to use common phrases and natural language to ask questions of your data. It's even more powerful when your data answers. When you ask Power BI Q&A a question, it makes a best effort to answer correctly. You can edit the linguistic schema to improve the Q&A answers for even better interactions.
 
