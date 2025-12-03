@@ -535,7 +535,7 @@
   - name: Natural language Q&A
     items: 
     - name: Q&A introduction
-      href: ../consumer/end-user-q-and-a.md
+      href: ../consumer/end-user-q-and-a.md?toc=/power-bi/create-reports/toc.json
     - name: Get started with Q&A
       href: ../natural-language/q-and-a-intro.md
     - name: Use Power BI Q&A on a dashboard
@@ -559,7 +559,7 @@
     - name: Q&A best practices
       href: ../natural-language/q-and-a-best-practices.md
     - name: Use Q&A to explore your data
-      href: power-bi-tutorial-q-and-a.md
+      href: ../natural-language/power-bi-tutorial-q-and-a.md
     - name: Create a Q&A visual in a dashboard
       href: power-bi-visualization-introduction-to-q-and-a.md
     - name: Make Excel data work well with Q&A

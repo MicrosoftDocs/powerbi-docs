@@ -1,9 +1,8 @@
 ---
 title: Create Q&A featured questions for Power BI dashboards
 description: Learn how to create and add featured questions for the Power BI Q&A by using the Retail Analysis sample.
-author: julcsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
@@ -14,6 +13,9 @@ LocalizationGroup: Ask questions of your data
 # Create Q&A featured questions for Power BI dashboards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 If you have edit permission for a semantic model, you can add your own featured questions to that semantic model. Power BI Q&A will show those questions to colleagues who consume dashboards based on that semantic model. Featured questions give your colleagues ideas about the types of questions they can ask about the semantic model. The featured questions you add are up to you. You can add popular questions, questions that display interesting results, or questions that might be hard to phrase.
 
