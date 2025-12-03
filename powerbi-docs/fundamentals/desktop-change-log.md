@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: concept-article
-ms.date: 11/17/2025
+ms.date: 12/03/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,23 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](whats-new.md) for more information about new features. 
+
+## November 2025 QFE 2 
+
+*Version 2.149.1252.0, Released: December 1, 2025*
+
+Bug fixes/improvements: 
+
+- Live connect sessions are currently generating local resources and data indexing. Implemented a fix for Live connect sessions to use remote resources and interpret for QnA features.
+
+## November 2025 QFE 1 
+
+*Version 2.149.1203.0, Released: November 25, 2025*
+
+Bug fixes/improvements: 
+
+- Added enhanced error handling for browser runtime exceptions during page load, treating them as fatal errors.
+- Bug fix addressing the issue of alternate visual names not being recognized.
 
 ## October 2025 QFE 2
 
