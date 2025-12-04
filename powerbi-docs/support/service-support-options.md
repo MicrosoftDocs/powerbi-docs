@@ -234,7 +234,7 @@ As a Power BI or Fabric customer, you can also take advantage of the following o
 
 - **Power BI Clinic**. This offering presents how you can optimize your Power BI workload. Use this clinic as a proactive service to help optimize performance before deploying Power BI, or as a reactive service to alleviate existing bottlenecks. You have an opportunity to work with a Microsoft SME (subject matter expert) on performance tuning and optimization of slow running Power BI reports, with a focus on report models and DAX. You also have an opportunity to work on slow semantic model refresh with a focus on refresh performance in the Power BI cloud service or Power BI Report Server.
   
-Contact your Microsoft Customer Account Manager for details. If you don't already have a Microsoft Premier or Unified support contract, learn more at [Premier and Unified support](https://www.microsoft.com/en-us/unifiedsupport).
+Contact your Microsoft Customer Account Manager for details. If you don't already have a Microsoft Premier or Unified support contract, learn more at [Premier and Unified support](https://www.microsoft.com/unifiedsupport).
 
 ## Related content
 

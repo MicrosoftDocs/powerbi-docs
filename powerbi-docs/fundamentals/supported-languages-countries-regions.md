@@ -232,4 +232,4 @@ Help is localized in these 10 languages:
 - [Locale settings for paginated reports.](/sql/reporting-services/report-design/set-the-locale-for-a-report-or-text-box-reporting-services)
 - Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](../consumer/mobile/mobile-apps-supported-languages.md) for details.
 - Questions? Try asking the [Power BI Community](https://community.powerbi.com/).
-- Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+- Still have an issue? Visit the [Power BI support page](https://support.fabric.microsoft.com/support/).

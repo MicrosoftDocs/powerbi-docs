@@ -237,7 +237,7 @@ If your semantic model already contains latitude and longitude data, Power BI ha
 
 :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-set-latitude-longitude.png" alt-text="Screenshot that shows how to set the latitude and longitude options for a filled map in Power BI." border="false":::
 
-If you don't have access to latitude and longitude data, but you have edit access to the semantic model, follow the instructions in [Maps in Power View](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7) to update your semantic model.
+If you don't have access to latitude and longitude data, but you have edit access to the semantic model, follow the instructions in [Maps in Power View](https://support.microsoft.com/office/maps-in-power-view-8a9b2af3-a055-4131-a327-85cc835271f7) to update your semantic model.
 
 For more information about map visualizations in Power BI, see [Tips and tricks for map visualizations](./power-bi-map-tips-and-tricks.md).
 

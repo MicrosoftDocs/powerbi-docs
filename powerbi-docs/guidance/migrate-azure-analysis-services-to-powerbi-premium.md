@@ -168,7 +168,7 @@ AAS offers the **D** and **B** SKUs at lower cost with reduced service-level agr
 
 For more information, see:
 
-- [Power BI pricing](https://powerbi.microsoft.com/pricing/)
+- [Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
 - [Purchase A SKUs for testing and other scenarios](https://azure.microsoft.com/products/power-bi)
 

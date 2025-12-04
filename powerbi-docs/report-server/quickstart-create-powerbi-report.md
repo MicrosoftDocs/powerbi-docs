@@ -25,7 +25,7 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
     :::image type="content" source="media/install-powerbi-desktop/report-server-download-web-portal.png" alt-text="Screenshot showing how to download Power BI Desktop from the web portal.":::
    
-   Or, go to the [Power BI Report Server](https://powerbi.microsoft.com/report-server/) home page and select **Advanced download options**.
+   Or, go to the [Power BI Report Server](https://www.microsoft.com/power-platform/products/power-bi/report-server) home page and select **Advanced download options**.
 
 2. In the Download Center page, select **Download**.
 

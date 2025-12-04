@@ -62,5 +62,5 @@ Here are things to keep in mind when you connect to Power BI semantic models in 
 - [Create Excel workbooks with refreshable Power BI data](service-analyze-in-excel.md)
 - [Design refreshable reports in Excel with Power BI data](service-analyze-power-bi-datasets-excel.md)
 - [Monitor usage of Power BI semantic models in Excel](service-monitor-usage-power-bi-datasets-excel.md)
-- Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
+- Read about [using Excel data types from Power BI](https://support.microsoft.com/office/use-excel-data-types-from-power-bi-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)

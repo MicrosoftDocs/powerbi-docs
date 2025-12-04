@@ -99,7 +99,7 @@ landingContent:
           - text: "Power BI REST APIs"
             url: /rest/api/power-bi/
           - text: Developer center
-            url: https://powerbi.microsoft.com/developers/
+            url: https://www.microsoft.com/power-platform/products/power-bi/developers
           - text: "Power BI libraries"
             url: https://www.nuget.org/profiles/powerbi
           - text: "Power BI embedded analytics Client APIs"

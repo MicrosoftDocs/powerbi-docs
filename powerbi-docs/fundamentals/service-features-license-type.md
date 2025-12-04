@@ -63,7 +63,7 @@ Learn more about capacity options in [Microsoft Fabric capacity licenses](/fabri
 | Power BI Pro | Publish content to other workspaces, share dashboards, subscribe to dashboards and reports, share with users who have a Pro license | Distribute content to users who have free or PPU licenses |
 | Power BI Premium Per User (PPU) | Publish content to other workspaces, share dashboards, subscribe to dashboards and reports, share with *users who have a PPU license* | Distribute content to users who have free and Pro licenses |
 
-For a comparison of Power BI Pro and Power BI Premium, see the *Power BI features comparison* section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
+For a comparison of Power BI Pro and Power BI Premium, see the *Power BI features comparison* section of [Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing).
 
 To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](end-user-license.md).
 

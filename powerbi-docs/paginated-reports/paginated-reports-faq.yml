@@ -106,7 +106,7 @@ sections:
         answer: |
           Currently, paginated reports don't support the following items:
           
-          - Shared data sources. Consider using a similar feature called named connections on Power BI service, [learn more](https://powerbi.microsoft.com/en-us/blog/streamlining-cloud-connection-management-for-datasets-paginated-reports-and-other-artifacts/).
+          - Shared data sources. Consider using a similar feature called named connections on Power BI service, [learn more](https://powerbi.microsoft.com/blog/streamlining-cloud-connection-management-for-datasets-paginated-reports-and-other-artifacts/).
           - Shared datasets
           - Linked reports
           - Custom fonts

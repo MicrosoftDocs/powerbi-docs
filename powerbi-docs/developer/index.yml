@@ -157,7 +157,7 @@ additionalContent:
         # Card
         - title: Power BI developer center
           summary: Build with Power BI.
-          url: https://powerbi.microsoft.com/developers/
+          url: https://www.microsoft.com/power-platform/products/power-bi/developers
         # Card
         - title: Samples of Power BI visuals
           summary: A collection of Power BI samples and their code libraries.

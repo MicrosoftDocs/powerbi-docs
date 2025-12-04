@@ -29,7 +29,7 @@ In this article, you learn how to:
 
 Before you start developing your Power BI visual, verify that you have everything listed in this section.
 
-* A **Power BI Pro** or **Premium Per User (PPU)** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
+* A **Power BI Pro** or **Premium Per User (PPU)** account. If you don't have one, [sign up for a free trial](https://www.microsoft.com/power-platform/products/power-bi/pricing).
 * An integrated development environment (IDE) for developing JavaScript and TypeScript applications. [Visual Studio Code (VS Code)](https://www.visualstudio.com/) is ideal for developing visuals.
 * [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://support.apple.com/guide/terminal/welcome/mac) (for Mac).
 

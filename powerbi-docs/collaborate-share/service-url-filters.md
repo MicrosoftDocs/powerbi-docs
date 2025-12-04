@@ -263,6 +263,6 @@ URL filters are supported in some embedding scenarios and not in others.
 ## Related content
 
 - [Pin a visualization to a dashboard](../create-reports/service-dashboard-create.md)  
-- [Sign up for a free trial](https://powerbi.microsoft.com/get-started/)
+- [Sign up for a free trial](https://www.microsoft.com/power-platform/products/power-bi/getting-started-with-power-bi)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

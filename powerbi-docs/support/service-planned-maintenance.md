@@ -29,7 +29,7 @@ Maintenance is planned to happen outside of normal business hours to help minimi
 ## Postmaintenance steps for admins and users
 
 - Users should refresh any open browser windows.
-- Power BI Mobile app users will need to verify they're using the most recent version and sign out then sign back into the app. Check your phone's app store or check our [Power BI Mobile](https://powerbi.microsoft.com/mobile/) page.
+- Power BI Mobile app users will need to verify they're using the most recent version and sign out then sign back into the app. Check your phone's app store or check our [Power BI Mobile](https://www.microsoft.com/power-platform/products/power-bi/mobile) page.
 - Customers who were actively editing or publishing reports that use organizational visuals, whether locally or from OneDrive and SharePoint locations, will need to either reimport the visual via the organization visual store or download an updated PBIX before republishing. For more information about organizational visuals, see  [Organization visuals](../admin/organizational-visuals.md).
 - Links to Power BI embedded in content might fail to connect when maintenance is done. For example, an embedded link in SharePoint or Teams may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used. For more information about embedded links, see [Embed a report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md) and [Collaborate in Microsoft Teams with Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
 - Some of the usage data collected before maintenance isn't available after maintenance completes. This usage data includes:

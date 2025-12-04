@@ -16,13 +16,13 @@ ai-usage: ai-assisted
 
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
-Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://www.microsoft.com/power-platform/products/power-bi/report-server).
 
 Reminder: [How you can find your report server product key](find-product-key.md)
 
 ## September 2025
 
-Read the Power BI blog post, [Power BI Report Server September 2025 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-september-2025-feature-summary/) for details.
+Read the Power BI blog post, [Power BI Report Server September 2025 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2025-feature-summary/) for details.
 
 ### General announcements
 
@@ -71,7 +71,7 @@ Starting with the September 2025 release, Power BI Desktop for Power BI Report S
 
 ## May 2025
 
-Read the Power BI blog post, [Power BI Report Server May 2025 Feature Summary](https://powerbi.microsoft.com/es-es/blog/power-bi-report-server-may-2025-feature-summary/) for details.
+Read the Power BI blog post, [Power BI Report Server May 2025 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2025-feature-summary/) for details.
 
 ### Visualizations
 - Table with custom and grouped headers by JTA – a Data Scientist’s Visualization Tool
@@ -98,7 +98,7 @@ Read the Power BI blog post, [Power BI Report Server May 2025 Feature Summary](h
 
 ## January 2025
 
-Read the Power BI blog post, [Power BI Report Server January 2025 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-january-2025-feature-summary/) for details.
+Read the Power BI blog post, [Power BI Report Server January 2025 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2025-feature-summary/) for details.
 
 ### Modeling
 
@@ -171,7 +171,7 @@ Add or update multiple measures in DAX query view
 
 ## May 2024
 
-Read the Power BI blog post, [Power BI Report Server May 2024 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2024-feature-summary/) for details.
+Read the Power BI blog post, [Power BI Report Server May 2024 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2024-feature-summary/) for details.
 
 ### Reporting
 
@@ -353,7 +353,7 @@ In the following figure, the size of each country represents Urban Population, w
 
 ## May 2023
 
-This release has a number of new features like the Report Server accessibility tagging for screen-reader report consumers, new accessibility for matrix navigation and selection, and updates to existing features for modeling and reporting. See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for all the details. 
+This release has a number of new features like the Report Server accessibility tagging for screen-reader report consumers, new accessibility for matrix navigation and selection, and updates to existing features for modeling and reporting. See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary) blog for all the details. 
 
 ### Report Server
 - [Accessibility options for row properties](#accessibility-options-for-row-properties)
@@ -370,27 +370,27 @@ Text box properties work similarly to row properties. They allow report authors 
 
 #### Reporting
 
-See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for details about these feature updates.
+See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary) blog for details about these feature updates.
 
-- [Set conditional formatting rules based on string fields](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917169).
-- [Format image dimensions individually in tables and matrixes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917170).  
-- [Decide which report pages are visible in the Page navigator visual](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917171).
-- [Visual container improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917174)
+- [Set conditional formatting rules based on string fields](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917169).
+- [Format image dimensions individually in tables and matrixes](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917170).  
+- [Decide which report pages are visible in the Page navigator visual](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917171).
+- [Visual container improvements](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917174)
 
     - Turn on a subtitle that can be used to add extra context to your visuals.
     - Add a divider line to visually separate the visual header from its contents.
     - Control the space below each component.
 
-- [Apply all slicers button, Clear all slicers button, and Optimization presets update](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917175)
-- [Format Pane – new styling](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917176)
-- [New tooltip auto-scale](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917177)
-- [Measure-driven data labels](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917178)
-- [Mobile formatting options](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917182)
+- [Apply all slicers button, Clear all slicers button, and Optimization presets update](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917175)
+- [Format Pane – new styling](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917176)
+- [New tooltip auto-scale](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917177)
+- [Measure-driven data labels](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917178)
+- [Mobile formatting options](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917182)
 
 **Accessibility improvements**
 
-- [New accessible report themes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917172) provide good contrast across their colors.
-- [Matrix accessibility improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917173).
+- [New accessible report themes](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917172) provide good contrast across their colors.
+- [Matrix accessibility improvements](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917173).
 - Improved keyboard navigation and new keyboard shortcuts.
 - A two-toned focus outline.
 - New support for screen reader announcements.
@@ -1462,7 +1462,7 @@ We’ve published a [walkthrough of how to add Office Online Server (OOS) to you
 
 ### Support for new table and matrix visuals
 
-Power BI Report Server now supports the new Power BI table and matrix visuals. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
+Power BI Report Server now supports the new Power BI table and matrix visuals. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://www.microsoft.com/power-platform/products/power-bi/report-server), select **Advanced download options**.
 
 ## June 2017
 

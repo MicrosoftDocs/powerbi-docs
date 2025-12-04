@@ -16,7 +16,7 @@ LocalizationGroup: Data refresh
 This article describes different scenarios you might encounter when refreshing data within the Power BI service.
 
 > [!NOTE]
-> If you encounter an issue or scenario not listed in this article you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> If you encounter an issue or scenario not listed in this article you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://support.fabric.microsoft.com/support/).
 
 You should always ensure that basic requirements for refresh are met and verified:
 

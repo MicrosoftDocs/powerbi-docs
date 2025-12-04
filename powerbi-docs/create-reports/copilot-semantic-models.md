@@ -262,7 +262,7 @@ From here, you can add synonyms or relationships manually, or add suggested syno
 
 For more information about using the Q&A setup menu, see [Intro to Q&A tooling to train Power BI Q&A](/power-bi/natural-language/q-and-a-tooling-intro).
 
-Instead of using the Q&A setup window, you can also add synonyms and relationships by using linguistic schema YAML files. For more information, see the blog post [Editing Q&A linguistic schemas](https://powerbi.microsoft.com/en-us/blog/editing-q-a-linguistic-schemas/).
+Instead of using the Q&A setup window, you can also add synonyms and relationships by using linguistic schema YAML files. For more information, see the blog post [Editing Q&A linguistic schemas](https://powerbi.microsoft.com/blog/editing-q-a-linguistic-schemas/).
 
 We recommend that you use Copilot to generate synonyms as the first step when performing linguistic modeling for your semantic model. Then, you can curate the suggested synonyms, removing the ones that don't make sense, and adding additional synonyms where necessary. Ensure that you [share useful synonyms with your organization](../natural-language/q-and-a-tooling-intro.md#synonym-sharing) to reuse them.
 

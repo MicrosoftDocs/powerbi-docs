@@ -2524,7 +2524,7 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 The following updates are new to Power BI Desktop this month:
 
-https://powerbi.microsoft.com/en-us/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917169
+https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917169
 
 
 ### Reporting
@@ -3287,7 +3287,7 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 
-https://powerbi.microsoft.com/en-us/blog/19024/preview/#post-19024-_Toc100064173
+https://powerbi.microsoft.com/blog/19024/preview/#post-19024-_Toc100064173
 
 ### Reporting
 * New Format pane updates (preview)  [[video]](https://youtu.be/RDy9B0MIbs4?t=18)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064173)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
