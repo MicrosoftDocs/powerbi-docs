@@ -20,7 +20,7 @@ We enable the ability to update connections for Power BI reports for DirectQuery
 
 ## Prerequisites
 
-- Download the latest release of [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+- Download the latest release of [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://www.microsoft.com/power-platform/products/power-bi/report-server).
 - A report saved with Power BI Desktop optimized for Report Server, with **Enhanced DataSet Metadata** enabled.
 - A report that uses parameterized connections. Only reports with parameterized connections and databases can be updated after publishing.
 - This example uses the Reporting Services PowerShell tools. You can achieve the same  by using the new REST APIs.

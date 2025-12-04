@@ -298,7 +298,7 @@ Power BI is available in separate national/regional clouds. These clouds offer t
 - US Department of Defense
 - China
 
-For more information, see [national/regional clouds](https://powerbi.microsoft.com/clouds/).
+For more information, see [national/regional clouds](https://www.microsoft.com/power-platform/products/power-bi/clouds).
 
 ## Considerations and limitations
 

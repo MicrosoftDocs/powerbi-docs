@@ -70,7 +70,7 @@ If you don't have a gateway, [install an on-premises data gateway](/data-integra
     >[!NOTE]
     > SSO for Import queries is available only for the SSO data sources that use [Kerberos constrained delegation](service-gateway-sso-kerberos.md).
 
-1. Under **General** > **Privacy level**, optionally set a [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for the data source. This setting doesn't apply to [DirectQuery](desktop-directquery-about.md).
+1. Under **General** > **Privacy level**, optionally set a [privacy level](https://support.microsoft.com/office/privacy-levels-power-query-cc3ede4d-359e-4b28-bc72-9bee7900b540) for the data source. This setting doesn't apply to [DirectQuery](desktop-directquery-about.md).
 
     :::image type="content" source="media/service-gateway-data-sources/privacy-level.png" alt-text="Screenshot of privacy level selections for data sources.":::
 

@@ -13,7 +13,7 @@ ms.date: 06/03/2024
 
 # Package a Power BI visual
 
-Before you can load your custom visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you need to package it. Using this tutorial, you will:
+Before you can load your custom visual into [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you need to package it. Using this tutorial, you will:
 
 * [Provide property values](#enter-property-values) and metadata for the visual.
 * [Update the icon](#update-the-icon-optional).

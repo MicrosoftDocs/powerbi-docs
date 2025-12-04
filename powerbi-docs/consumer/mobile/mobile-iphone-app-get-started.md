@@ -32,7 +32,7 @@ Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile
 You can run the Power BI mobile app for iOS on any device running iOS/iPadOS 17 or later.
 
 ## Sign up for the Power BI service
-If you haven't already signed up, go to [powerbi.com](https://powerbi.microsoft.com/get-started/), and select **Try Power BI for free**.
+If you haven't already signed up, go to [powerbi.com](https://www.microsoft.com/power-platform/products/power-bi/getting-started-with-power-bi), and select **Try Power BI for free**.
 
 
 ## Get started with the Power BI app

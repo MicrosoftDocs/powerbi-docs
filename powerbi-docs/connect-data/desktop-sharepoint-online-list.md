@@ -28,7 +28,7 @@ If your purpose is to quickly create a semantic model in the Power BI service, y
 
 ## Part 1: Connect to your SharePoint List
 
-1. If you don't have it already, download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+1. If you don't have it already, download and install [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop).
 2. Open Power BI Desktop and in the **Home** tab of the ribbon, then select **Get data** > **More**.
 3. Select **Online Services**, and then select **SharePoint Online List**.  
 

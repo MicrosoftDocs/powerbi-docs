@@ -28,8 +28,8 @@ When installing Hospital Emergency Response Power Platform solution, take note o
 
 ## Install the app
 
-1. Select the following link to get to the app: [Hospital Emergency Response Decision Support Dashboard template app](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.pphersapp)
-1. On the AppSource page for the app, select [**Get it now**](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.pphersapp).
+1. Select the following link to get to the app: [Hospital Emergency Response Decision Support Dashboard template app](https://appsource.microsoft.com/product/dynamics-365/mscrm.pphersapp)
+1. On the AppSource page for the app, select [**Get it now**](https://appsource.microsoft.com/product/dynamics-365/mscrm.pphersapp).
 
     :::image type="content" source="media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png" alt-text="Screenshot of Hospital Emergency Response Decision Support Dashboard app in AppSource.":::
 

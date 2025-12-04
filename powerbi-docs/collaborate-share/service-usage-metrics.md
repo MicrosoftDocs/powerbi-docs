@@ -158,7 +158,7 @@ See [Audit and usage tenant settings](/fabric/admin/service-admin-portal-audit-u
 
 ## Usage metrics in national/regional clouds
 
-Power BI is available in separate national/regional clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Because of this unique model for local regulations, usage metrics aren't available in national/regional clouds. For more information, see [national/regional clouds](https://powerbi.microsoft.com/clouds/).
+Power BI is available in separate national/regional clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Because of this unique model for local regulations, usage metrics aren't available in national/regional clouds. For more information, see [national/regional clouds](https://www.microsoft.com/power-platform/products/power-bi/clouds).
 
 ## Considerations and limitations
 

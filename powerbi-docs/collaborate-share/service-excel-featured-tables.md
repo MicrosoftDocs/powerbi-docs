@@ -176,6 +176,6 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 ## Related content
 
 - [Set featured tables in Power BI Desktop.](service-create-excel-featured-tables.md)
-- Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
+- Read about [using Excel data types from Power BI](https://support.microsoft.com/office/use-excel-data-types-from-power-bi-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
 - Questions? [Ask the Power BI Community.](https://community.powerbi.com/)
 

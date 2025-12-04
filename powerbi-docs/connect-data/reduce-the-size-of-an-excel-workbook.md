@@ -23,16 +23,16 @@ This article explains practical techniques to reduce your Excel workbook size so
 Here are some elements that can make the core worksheet contents larger than 30 MB:
 
 - Images
-- [Shaded cells](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e)
-- [Colored worksheets](https://support.office.com/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8)
+- [Shaded cells](https://support.microsoft.com/office/add-or-change-the-background-color-of-cells-in-excel-ac10f131-b847-428f-b656-d65375fb815e)
+- [Colored worksheets](https://support.microsoft.com/office/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8)
 - Text boxes
 - Clip art
 
 Consider removing these elements, if possible.
 
-If the report has a data model, you can reduce the overall size of the report using information in [Create a memory-efficient Data Model using Excel and the Power Pivot add-in](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70).
+If the report has a data model, you can reduce the overall size of the report using information in [Create a memory-efficient Data Model using Excel and the Power Pivot add-in](https://support.microsoft.com/office/create-a-memory-efficient-data-model-using-excel-and-the-power-pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70).
 
-You can also refer to [File size limits for Excel workbooks in SharePoint](https://support.office.com/article/File-size-limits-for-workbooks-in-SharePoint-Online-9e5bc6f8-018f-415a-b890-5452687b325e).
+You can also refer to [File size limits for Excel workbooks in SharePoint](https://support.microsoft.com/office/file-size-limits-for-workbooks-in-sharepoint-9e5bc6f8-018f-415a-b890-5452687b325e).
 
 ## Use the workbook size optimizer tool
 
@@ -40,5 +40,5 @@ If your workbook contains a data model, you can run the workbook size optimizer 
 
 ## Related content
 
-- [Create a memory-efficient Data Model by using Excel and the Power Pivot add-in](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)
+- [Create a memory-efficient Data Model by using Excel and the Power Pivot add-in](https://support.microsoft.com/office/create-a-memory-efficient-data-model-using-excel-and-the-power-pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)
 - [Use OneDrive for work or school links in Power BI Desktop](desktop-use-onedrive-business-links.md)

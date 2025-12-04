@@ -91,5 +91,5 @@ Here are the current limitations:
 ## Related content
 
 - [Access Power BI featured tables in Excel](service-excel-featured-tables.md)
-- Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
+- Read about [using Excel data types from Power BI](https://support.microsoft.com/office/use-excel-data-types-from-power-bi-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)

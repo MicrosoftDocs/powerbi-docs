@@ -22,7 +22,7 @@ When you use the **Embed in SharePoint Online** option, the embedded reports res
 
 For **Embed report in SharePoint Online** reports to work:
 
-* The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
+* The Power BI web part for SharePoint Online requires [Modern Pages](https://support.microsoft.com/office/allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To use an embedded report, users must sign in to the Power BI service to activate their Power BI license.
 * To embed a web part in SharePoint Online, you need a Power BI Pro or Premium Per User (PPU) license.
 * For [Embedding for your organization (user owns data)](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-organization) customers, a SKUs equivalent to [F64 or higher](/fabric/enterprise/licenses#capacity-and-skus) is needed to allow free Power BI users to consume a report. If you have a SKU smaller than F64, then a Pro license or Premium Per User (PPU) is required for each user who will view the embedded content.
@@ -191,7 +191,7 @@ You can activate Copilot for embedded reports by selecting the "Enable Copilot" 
 
 ## Related content
 
-* [Allow users to create modern pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
+* [Allow users to create modern pages](https://support.microsoft.com/office/allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 * [Publish an app in Power BI](service-create-distribute-apps.md)  
 * [Share Power BI reports and dashboards with coworkers and others](service-share-dashboards.md)  
 * [What is Power BI Premium?](../enterprise/service-premium-what-is.md)

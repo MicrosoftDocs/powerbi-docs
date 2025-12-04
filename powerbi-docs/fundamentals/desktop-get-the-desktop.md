@@ -36,7 +36,7 @@ There are a few ways to access the most recent version of Power BI Desktop from 
 
       :::image type="content" source="media/desktop-get-the-desktop/getpbid_downloads.png" alt-text="Screenshot of Microsoft Store showing the Power BI Desktop download option.":::
 
-   * Go to the [Power BI Desktop product page](https://powerbi.microsoft.com/desktop/), and then select **Download Free**.
+   * Go to the [Power BI Desktop product page](https://www.microsoft.com/power-platform/products/power-bi/desktop), and then select **Download Free**.
   
 2. After you've landed on the **Power BI Desktop** page of the Microsoft Store, select **Install**.
 

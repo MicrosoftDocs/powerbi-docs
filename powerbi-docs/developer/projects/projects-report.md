@@ -282,7 +282,7 @@ During the Public Preview, administrators can choose to opt out of PBIR by disab
 
 > [!IMPORTANT]
 > - When PBIR reaches General Availability (GA), it will become the only supported report format, and conversion will be mandatory. We recommend that customers begin preparing for this migration ahead of GA.
-> - The PBIR in the Power BI service may not yet be available in your tenant. The tenant setting primarily exists to let you opt out before the feature is fully enabled. For the latest updates, visit the [Power BI Blog](https://powerbi.microsoft.com/en-us/blog/).
+> - The PBIR in the Power BI service may not yet be available in your tenant. The tenant setting primarily exists to let you opt out before the feature is fully enabled. For the latest updates, visit the [Power BI Blog](https://powerbi.microsoft.com/blog/).
 
 
 #### Restore to PBIR-Legacy

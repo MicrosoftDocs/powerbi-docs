@@ -40,7 +40,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 * A Premium capacity. See [what size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.yml#what-capacity-size-do-i-need-for-paginated-reports-)
 
-If you don't have **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+If you don't have **Power BI Pro**, [sign up for a free trial](https://www.microsoft.com/power-platform/products/power-bi/pricing) before you begin.
 
 ---
 

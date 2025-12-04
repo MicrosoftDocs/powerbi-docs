@@ -59,7 +59,7 @@ In another article, you can see how to configure Azure Log Analytics to work wit
 ## Considerations and limitations
 Keep the following considerations and limitations in mind when working with Azure Log Analytics and Power BI:
 
-* [Sovereign cloud](https://powerbi.microsoft.com/clouds/) support is currently limited to US Department of Defense and US Government Community Cloud High.
+* [Sovereign cloud](https://www.microsoft.com/power-platform/products/power-bi/clouds) support is currently limited to US Department of Defense and US Government Community Cloud High.
 * Only Premium workspaces are supported.
 * Only Workspace v2 support Log Analytics connections.
 * Azure Log Analytics doesn't support tenant migration.
