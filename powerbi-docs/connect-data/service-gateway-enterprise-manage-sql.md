@@ -41,7 +41,7 @@ Follow these instructions to add a SQL Server data source to your on-premises da
    - [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud)
    - [Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md).
 
-1. Configure the **Privacy level** for your data source. This setting controls how data can be combined for scheduled refresh only. The privacy level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+1. Configure the **Privacy level** for your data source. This setting controls how data can be combined for scheduled refresh only. The privacy level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.microsoft.com/office/privacy-levels-power-query-cc3ede4d-359e-4b28-bc72-9bee7900b540).
 
 1. Select **Create**.
 

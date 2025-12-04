@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 ---
 # Share a Power BI dashboard that links to an Excel file in OneDrive
 
-In Power BI, you can [connect to Excel workbooks on OneDrive for work or school](../connect-data/service-excel-workbook-files.md) and pin tiles to a dashboard from that workbook. When you share that dashboard, selecting the tile opens the workbook inside Power BI. The workbook only opens if your colleagues have at least [read permissions](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) to the workbook on OneDrive for work or school.
+In Power BI, you can [connect to Excel workbooks on OneDrive for work or school](../connect-data/service-excel-workbook-files.md) and pin tiles to a dashboard from that workbook. When you share that dashboard, selecting the tile opens the workbook inside Power BI. The workbook only opens if your colleagues have at least [read permissions](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07) to the workbook on OneDrive for work or school.
 
 ## Share a dashboard that contains workbook tiles
 To share a dashboard that links back to an Excel workbook on OneDrive for work or school, see [Share a dashboard](service-share-dashboards.md). The difference is that you can modify the permissions for the linked Excel workbook before sharing.
@@ -23,7 +23,7 @@ To share a dashboard that links back to an Excel workbook on OneDrive for work o
 
 1. Enter the email addresses for your colleagues you want to share the workbook with.
 2. To enable your colleagues to view the Excel workbook from Power BI, select **Go to OneDrive for work or school to set workbook permissions**.
-3. In OneDrive, [modify the permissions](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) as needed.
+3. In OneDrive, [modify the permissions](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07) as needed.
 4. Select **Share**.
 
 >[!NOTE]
