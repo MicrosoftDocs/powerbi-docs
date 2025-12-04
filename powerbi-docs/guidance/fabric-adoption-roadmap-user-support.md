@@ -122,7 +122,7 @@ Refer to the comprehensive [Fabric documentation](/fabric/). It's an authoritati
 
 ### Power BI Pro and Premium Per User end-user support
 
-Licensed users are eligible to [log a support ticket with Microsoft](https://powerbi.microsoft.com/support/pro/).
+Licensed users are eligible to [log a support ticket with Microsoft](https://support.fabric.microsoft.com/support/pro/).
 
 > [!TIP]
 > Make it clear to your internal user community whether you prefer technical issues to be reported to the internal help desk. If your help desk is equipped to handle the workload, having a centralized internal area collect user issues can provide a superior user experience versus every user trying to resolve issues on their own. Having visibility and analyzing support issues is also helpful for the [COE](fabric-adoption-roadmap-center-of-excellence.md).

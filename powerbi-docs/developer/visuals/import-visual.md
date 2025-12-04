@@ -13,7 +13,7 @@ ms.date: 01/12/2025
 
 # Import a Power BI visual from AppSource into your workspace
 
-Power BI comes with many out-of-the-box visuals that are available in the **Visualizations** pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI Service](https://app.powerbi.com).
+Power BI comes with many out-of-the-box visuals that are available in the **Visualizations** pane of both [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) and [Power BI Service](https://app.powerbi.com).
 
 Many more certified Power BI visuals are available from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). These visuals are created by Microsoft and Microsoft partners, and are validated by the AppSource validation team. You can [download these visuals](#import-a-power-bi-visual-directly-from-appsource) directly to your **Visualizations** pane.
 
@@ -23,7 +23,7 @@ If you download or receive a Power BI visual file, you have to [import](#import-
 
 ## Import a Power BI visual directly from AppSource
 
-1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com).
+1. Open your report in [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) or [Power BI service](https://app.powerbi.com).
 1. Select the ellipsis from the **Visualizations** pane.
 
    :::image type="content" source="media/import-visual/ellipsis.png" alt-text="Screenshot of the Power BI Visualizations Pane, which shows the ellipses icon is highlighted.":::
@@ -57,7 +57,7 @@ If you download or receive a Power BI visual file, you have to [import](#import-
 
 Power BI visuals are packaged as *.pbiviz* files that can be stored on your computer. You can share these files with other Power BI users. You can download visual files from AppSource onto your computer, but you can also get custom visuals from a trusted friend or colleague. Custom visuals that come from sources other than official Microsoft sources should be imported only if you trust the source.
 
-1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com).
+1. Open your report in [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) or [Power BI service](https://app.powerbi.com).
 1. Enable [developer mode](./environment-setup.md#enable-developer-mode) for Power BI Desktop. This setting stays enabled for the current session only and must be repeated every time you import a visual from a file.
 1. Select the ellipsis from the visualizations pane.
 

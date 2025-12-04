@@ -55,7 +55,7 @@ Sign in to the Power BI service and try to upload the Power BI report from the t
 
 ### Error: "The remote server returned an error: (400) Bad Request."
 
-This error can occur if you have a Power BI Pro license and are trying to publish a report that has a data model that's larger than one GB. The model memory size limit is one GB for Power BI Pro. If you want to publish larger reports, you need either a Premium per user license or a Premium capacity subscription. For more information, see [Power BI pricing](https://powerbi.microsoft.com/pricing/).
+This error can occur if you have a Power BI Pro license and are trying to publish a report that has a data model that's larger than one GB. The model memory size limit is one GB for Power BI Pro. If you want to publish larger reports, you need either a Premium per user license or a Premium capacity subscription. For more information, see [Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing).
 
 ### Error: "Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host."
 

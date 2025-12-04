@@ -241,7 +241,7 @@
   - name: Resources
     items:
     - name: "Dev Center"
-      href: https://powerbi.microsoft.com/developers/
+      href: https://www.microsoft.com/power-platform/products/power-bi/developers
     - name: "Custom Visuals Git Repo"
       href: https://github.com/MicrosoftDocs/powerbi-docs/blob/live/powerbi-docs/developer/visuals/samples.md
     - name: "Creating SSL certificate"

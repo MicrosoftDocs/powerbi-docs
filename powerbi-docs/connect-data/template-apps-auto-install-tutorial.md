@@ -55,7 +55,7 @@ The following basic flow lists what the application does when the customer launc
 - A [service principal (app-only token)](./../developer/embedded/embed-service-principal.md) registered in the preceding tenant.
 - A parameterized [template app](service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Microsoft Entra ID. For more information, see [Tips for authoring template apps](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md).
 - To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
-- A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+- A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://www.microsoft.com/power-platform/products/power-bi/pricing) before you begin.
 
 ## Set up your automation development environment
 

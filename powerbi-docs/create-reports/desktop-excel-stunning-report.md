@@ -38,7 +38,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-- Before you start, you need to [download Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+- Before you start, you need to [download Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop).
 - If you're planning to publish your report to the Power BI service and you aren't signed up yet, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web).
 
 ## Get data

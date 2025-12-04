@@ -22,7 +22,7 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 
     :::image type="content" source="media/support-timeline/report-server-support-timeline-overall.png" alt-text="Screenshot of a graph illustrating the support timeframe.":::
 
-To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://www.microsoft.com/power-platform/products/power-bi/report-server).
 
 ## Related content
 

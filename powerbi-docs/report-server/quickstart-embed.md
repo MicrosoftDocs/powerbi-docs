@@ -18,7 +18,7 @@ In this article, you learn how to embed a Power BI Report Server report by using
 :::image type="content" source="media/quickstart-embed/quickstart_embed_01.png" alt-text="Screenshot of iFrame sample.":::
 
 ## Prerequisites
-* [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installed and configured.
+* [Power BI Report Server](https://www.microsoft.com/power-platform/products/power-bi/report-server) installed and configured.
 * [Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md) installed.
 * A [SharePoint Server 2013, 2016, 2019, or Subscription Edition environment](/sharepoint/install/install) installed and configured.
 * Internet Explorer 11 is only supported if the document mode is set to IE11 (Edge) mode or when using SharePoint Online. You may use other supported browsers with SharePoint on-premises and SharePoint Online.

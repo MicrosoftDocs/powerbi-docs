@@ -21,7 +21,7 @@ There may be times when connecting Excel to Power BI data that you get an unexpe
 > - [Start in Power BI with Analyze in Excel](service-analyze-in-excel.md).
 > - [Start in Excel to connect to Power BI semantic models](service-connect-excel-power-bi-datasets.md).
 >
-> If you encounter a scenario that's not listed below, ask for assistance on the [Power BI community site](https://community.powerbi.com/), or create a [support ticket](https://powerbi.microsoft.com/support/).
+> If you encounter a scenario that's not listed below, ask for assistance on the [Power BI community site](https://community.powerbi.com/), or create a [support ticket](https://support.fabric.microsoft.com/support/).
 
 If you need to troubleshoot an issue with Power BI data in Excel, see the following sections:
 

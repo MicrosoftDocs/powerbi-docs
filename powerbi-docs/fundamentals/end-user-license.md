@@ -122,10 +122,10 @@ Power BI Pro creators share and collaborate with other Pro users in either works
 
     :::image type="content" source="media/end-user-license/power-bi-ppu-trial.png" alt-text="Screenshot showing the dialog for a Power BI Pro free trial.":::
 
-  When the trial ends, your license goes back to the previous version, either free or Pro. You can't use features that need a paid license. If you want to keep a paid license, contact your admin or IT Help Desk to buy an upgrade. If you don't have an admin or IT Help Desk, go to the [Power BI pricing page](https://powerbi.microsoft.com/pricing/).
+  When the trial ends, your license goes back to the previous version, either free or Pro. You can't use features that need a paid license. If you want to keep a paid license, contact your admin or IT Help Desk to buy an upgrade. If you don't have an admin or IT Help Desk, go to the [Power BI pricing page](https://www.microsoft.com/power-platform/products/power-bi/pricing).
 
   > [!TIP]
-  > To compare Power BI license options and see current pricing, visit the [Power BI pricing page](https://powerbi.microsoft.com/pricing/).
+  > To compare Power BI license options and see current pricing, visit the [Power BI pricing page](https://www.microsoft.com/power-platform/products/power-bi/pricing).
 
 - If you sign up for a free license by selecting a **Try it free** button, it doesn't expire unless you cancel it. If your trial upgrade ends or your organization removes your Pro or Premium license, your free license is still available.
 
@@ -134,5 +134,5 @@ Power BI Pro creators share and collaborate with other Pro users in either works
 ## Related content
 
 - [Am I a Power BI business user?](../consumer/end-user-consumer.md)  
-- [Purchase Power BI](https://powerbi.microsoft.com/pricing/?pbi_source=pbidocs-purchasing-power-bi-pro)  
+- [Purchase Power BI](https://www.microsoft.com/power-platform/products/power-bi/pricing)  
 - [Features for free users](../consumer/end-user-features.md)

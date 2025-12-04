@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 > [!NOTE]
 > This article is a high-level overview of the navigation experience for business users. For creation tasks, see [Tutorial: Get started creating in the Power BI service](../fundamentals/service-get-started.md). For details about interactions like filtering, focus mode, exporting, Q&A, alerts, and subscriptions, see [Interact with reports and dashboards](end-user-reading-view.md).
 
-You know the [basics of the Power BI service](../fundamentals/service-basic-concepts.md). Here's how to get around the **Power BI service**. Some teammates work in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) to combine data and build reports, dashboards, and apps for others. They're *designers* and *creators*. You work in the Power BI service to view and interact with content they publish. You're a *business user*, and this overview is for business users.
+You know the [basics of the Power BI service](../fundamentals/service-basic-concepts.md). Here's how to get around the **Power BI service**. Some teammates work in [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) to combine data and build reports, dashboards, and apps for others. They're *designers* and *creators*. You work in the Power BI service to view and interact with content they publish. You're a *business user*, and this overview is for business users.
 
 ## Prerequisites
 

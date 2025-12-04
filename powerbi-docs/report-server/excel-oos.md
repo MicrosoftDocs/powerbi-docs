@@ -207,4 +207,4 @@ With the deprecation of Office Online Server integration, consider these recomme
 - **Power BI Service**: For a cloud-first experience with enhanced collaboration features, migrate your reports and workbooks to the Power BI service.
 - **Export to Excel**: Continue to use Power BI Report Server for Power BI reports and export data to Excel when needed.
 
-For existing implementations using OOS, plan your migration before November 2026 to avoid service disruption. See the [deprecation announcement blog](https://powerbi.microsoft.com/en-us/blog/deprecation-announcement-office-online-server-retirement-and-what-it-means-for-power-bi-report-server-users/) for detailed migration guidance and timeline.
+For existing implementations using OOS, plan your migration before November 2026 to avoid service disruption. See the [deprecation announcement blog](https://powerbi.microsoft.com/blog/deprecation-announcement-office-online-server-retirement-and-what-it-means-for-power-bi-report-server-users/) for detailed migration guidance and timeline.

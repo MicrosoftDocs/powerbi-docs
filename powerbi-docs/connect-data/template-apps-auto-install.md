@@ -48,7 +48,7 @@ The basic flow for automating the configuration of a template app installation p
 
 To provide a preconfigured installation experience for your template app, the following prerequisites are required:
 
-- A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+- A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://www.microsoft.com/power-platform/products/power-bi/pricing) before you begin.
 - Your own Microsoft Entra tenant setup. For instructions on how to set one up, see [Create a Microsoft Entra tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
 - A **service principal (app-only token)** registered in the preceding tenant. For more information, see [Embed Power BI content with service principal and an application secret](./../developer/embedded/embed-service-principal.md). Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. From this process, you need to save the *application ID* (ClientID) and *application secret* (ClientSecret) for later steps.
 - A **parameterized template app** that's ready for installation. The template app must be created in the same tenant in which you register your application in Microsoft Entra ID. For more information, see [Template app tips](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md). From the template app, you need to note the following information for the next steps:
