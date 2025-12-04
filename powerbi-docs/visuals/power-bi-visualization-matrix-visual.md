@@ -25,7 +25,7 @@ The matrix visual's ability to aggregate data and support hierarchical structure
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-- Always make sure you have the latest version of [**Power BI Desktop**](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
+- Always make sure you have the latest version of [**Power BI Desktop**](https://www.microsoft.com/download/details.aspx?id=58494) installed before proceeding.
 - For the purposes of this guide, in Power BI Desktop's **Global options**, under the **Preview features** section, the **On-object interaction** feature is *not enabled*.
 In the following guide, we're using the [**Retail Analysis Sample PBIX**](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file. After downloading the file, let's get started:
 

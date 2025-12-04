@@ -57,7 +57,7 @@ To provide a preconfigured installation experience for your template app, the fo
 - To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
 
     > [!NOTE]
-    > You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi). Before you distribute your template app by using the automated installation application you're creating, be sure to [publish it to Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+    > You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi). Before you distribute your template app by using the automated installation application you're creating, be sure to [publish it to Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ## Main steps and APIs
 

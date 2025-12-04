@@ -75,6 +75,6 @@ The primary cause for a **Token expired** error is that you haven't recently use
 
 - [Analyze in Excel](service-analyze-in-excel.md)
 - [Tutorial: Create your own measures in Power BI Desktop](../transform-model/desktop-tutorial-create-measures.md)
-- [Measures in PowerPivot](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)
+- [Measures in PowerPivot](https://support.microsoft.com/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)
 - [Create a Measure in PowerPivot](https://support.microsoft.com/office/create-a-measure-in-power-pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
 - [Add worksheet data to a Data Model using a linked table](https://support.microsoft.com/office/add-worksheet-data-to-a-data-model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)

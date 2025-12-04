@@ -29,7 +29,7 @@ We support additional data sources with [Kerberos](service-gateway-sso-kerberos.
 For SAP HANA, we recommend that you enable encryption before you establish a SAML SSO connection. To enable encryption, configure the HANA server to accept encrypted connections, and then configure the gateway to use encryption to communicate with your HANA server. Because the HANA ODBC driver doesn't encrypt SAML assertions by default, the signed SAML assertion is sent from the gateway to the HANA server *in the clear* and is vulnerable to interception and reuse by third parties.
 
 > [!IMPORTANT]
-> Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
+> Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
 
 > [!NOTE]
 > The following instructions reference OpenSSL commands for certificate creation. While these commands are shown for illustrative purposes, SAP now recommends using CommonCryptoLib. Consult SAP documentation for current best practices.

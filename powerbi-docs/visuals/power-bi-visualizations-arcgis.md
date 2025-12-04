@@ -293,7 +293,7 @@ For more information, see [Pin a location](https://doc.arcgis.com/en/power-bi/la
 
 When you use Power BI data to create an ArcGIS for Power BI map visualization, you're creating a *data layer*. You can then add *reference layers* that provide context to your data. For example, if your data layer shows the location of fast-food restaurants, you can add a reference layer showing the proximity of nearby schools, the consumer spending habits of the community, or the age demographic of the surrounding neighborhood.
 
-Reference layers can consist of regional demographic data, such as income, age, and educational attainment. They can also include publicly shared feature layers available from [ArcGIS Online](https://www.esri.com/en-us/arcgis/products/arcgis-online/overview) that provide various types of information about areas surrounding the locations on your map. Reference layers add context to help you see broader patterns.
+Reference layers can consist of regional demographic data, such as income, age, and educational attainment. They can also include publicly shared feature layers available from [ArcGIS Online](https://www.esri.com/arcgis/products/arcgis-online/overview) that provide various types of information about areas surrounding the locations on your map. Reference layers add context to help you see broader patterns.
 
 After you add a reference layer to a map, you can create a join between the reference layer and Power BI data attributes to gain more insight into your data. To learn more about joining layers, visit the [ArcGIS for Power BI help](https://doc.arcgis.com/en/power-bi/design/join-layers.htm).
 
@@ -508,6 +508,6 @@ This table compares standard features for all Power BI users and features for si
 - [Interact with an ArcGIS map that has been shared with you](../consumer/end-user-arcgis.md)
 - [ArcGIS for Power BI blog posts announcing ArcGIS for Power BI updates](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI)  
 - More questions? Try asking the [Esri ArcGIS for Power BI Community](https://community.powerbi.com/t5/Desktop/ArcGIS-Maps-for-Power-BI-Preview-Discussion/td-p/72947).
-- [Esri's ArcGIS Maps for Power BI documentation](https://www.esri.com/en-us/arcgis/products/arcgis-for-power-bi/resources)
+- [Esri's ArcGIS Maps for Power BI documentation](https://www.esri.com/arcgis/products/arcgis-for-power-bi/resources)
 - [Esri's ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
 - [Esri's Community site for Power BI](https://geonet.esri.com/groups/powerbi)

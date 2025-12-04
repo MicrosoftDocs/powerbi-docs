@@ -32,7 +32,7 @@ In the following guide, you use the [Retail Analysis Sample file](https://downlo
 # [Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
-> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
+> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494) installed before proceeding.
 
 1. Launch **Power BI Desktop**.
 1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.

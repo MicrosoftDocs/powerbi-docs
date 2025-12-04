@@ -14,7 +14,7 @@ LocalizationGroup: Connect to data
 ---
 # Connect to LinkedIn Sales Navigator in Power BI Desktop
 
-In Power BI Desktop, you can connect to *LinkedIn Sales Navigator* to help find and build relationships just like any other data source in Power BI Desktop, and create ready-made reports about your progress.  This article tells you how to install [LinkedIn Sales Navigator](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.linkedin_navigator) and how to use it once it's connected to your data.
+In Power BI Desktop, you can connect to *LinkedIn Sales Navigator* to help find and build relationships just like any other data source in Power BI Desktop, and create ready-made reports about your progress.  This article tells you how to install [LinkedIn Sales Navigator](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.linkedin_navigator) and how to use it once it's connected to your data.
 
 :::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png" alt-text="Screenshot shows LinkedIn Sales Navigator Usage tab in the Power BI service." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png":::
 
@@ -42,7 +42,7 @@ When you download the app, you can select whether to connect to your data, or ex
 
 You can get the **LinkedIn Sales Navigator** template app from the following link:
 
-* [LinkedIn Sales Navigator template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.linkedin_navigator)
+* [LinkedIn Sales Navigator template app](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.linkedin_navigator)
 
 The template app provides four tabs to help analyze and share your information:
 

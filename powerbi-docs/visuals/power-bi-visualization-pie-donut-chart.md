@@ -26,7 +26,7 @@ In the following guide, you use the [Retail Analysis Sample PBIX file](https://d
 # [Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
-> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
+> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494) installed before proceeding.
 >
 > For the purposes of this guide, in Power BI Desktop's **Global options**, under the **Preview features** section, the **On-object interaction** feature is *not enabled*.
 
