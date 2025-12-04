@@ -224,7 +224,7 @@ ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com). When you p
 
 **What is an ArcGIS account?**
 
-Esri offers an Esri [ArcGIS account](https://www.esri.com/arcgis/products/arcgis-for-power-bi/buy) through ArcGIS for Power BI. Adding an ArcGIS account to Power BI can greatly enhance your mapping visualization capabilities by adding an extensive library of data reference layers and geo enrichment.
+Esri offers an Esri [ArcGIS account](https://www.esri.com/en-us/arcgis/products/arcgis-for-microsoft/arcgis-for-microsoft-365) through ArcGIS for Power BI. Adding an ArcGIS account to Power BI can greatly enhance your mapping visualization capabilities by adding an extensive library of data reference layers and geo enrichment.
 
 :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-sign-up.png" alt-text="Screenshot of the Map tool menu with the sign-up screen feature open.":::
 
