@@ -47,9 +47,9 @@ Use the following steps to create a Power BI dataset from a Log Analytics query:
    Your semantic model is created, and you're taken to the details page of the new semantic model. From there you can do all the things you can do with a regular Power BI semantic model - refresh the data, share the semantic model, create new reports, and more. For more information, see [semantic model details](./service-dataset-details-page.md).
 
    > [!NOTE]
-   > If you've connected to Log Analytics from Power BI before, you're asked to choose which credentials to use to for the connection between Power BI and Log Analytics. For help deciding which credentials to use, see [Choose which credentials to authenticate with](#choose-which-credentials-to-authenticate-with).
+   > If you've connected to Log Analytics from Power BI before, you're asked to choose which credentials to use for the connection between Power BI and Log Analytics. For help deciding which credentials to use, see [Choose which credentials to authenticate with](#choose-which-credentials-to-authenticate-with).
 
-   :::image type="content" source="./media/create-dataset-log-analytics/dataset-details-page.png" alt-text="Screenshot of the semantic model details page of the newly created semantic model.":::
+   :::image type="content" source="./media/create-dataset-log-analytics/dataset-details-page.png" alt-text="Screenshot of the semantic model details page of the newly created semantic model." lightbox="./media/create-dataset-log-analytics/dataset-details-page.png":::
 
 To keep the data fresh after you create the semantic model, either refresh the data manually or set up scheduled refresh.
 
@@ -69,7 +69,7 @@ If you get the following dialog, it means that you established a connection to L
 
 ### Why is this choice important?
 
-The permissions of the account that established the connection determines the Power BI view of the Log Analytics data.
+The permissions of the account that established the connection determine the Power BI view of the Log Analytics data.
 
 If you let Power BI use the sign-in details that you used last time for the connection, the data you see in the semantic model you're creating might differ from what you see in Log Analytics. This difference happens because the data that appears in the semantic model is what the account with the credentials you used last time can see in Log Analytics.
 
