@@ -1,7 +1,7 @@
 ---
 # Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
+# For more information, see https://review.learn.microsoft.com/help/platform/learn-editor-add-metadata?branch=main
+# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main
 
 title: Manage support case
 description: How to manage Fabric and Power BI support tickets

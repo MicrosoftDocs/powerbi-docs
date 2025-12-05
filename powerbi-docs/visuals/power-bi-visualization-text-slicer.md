@@ -29,7 +29,7 @@ This article shows you how to create and customize text slicers to enhance your 
 In the following guide, use the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
 > [!IMPORTANT]
-> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) installed before proceeding.
+> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494) installed before proceeding.
 
 1. Launch **Power BI Desktop**.
 1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.

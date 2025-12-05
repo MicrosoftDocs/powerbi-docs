@@ -47,7 +47,7 @@ To connect to either a multidimensional or tabular Analysis Services data source
    > [!NOTE]
    > The Windows account you enter must be a member of the Server Administrator role on the Analysis Services instance you're connecting to. If this account's password is set to expire, users get a connection error unless you update the data source password. For more information about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
-1. Configure the **Privacy level** for your data source. This setting controls how data can be combined for scheduled refresh. The privacy-level setting doesn't apply to live connections. To learn more about privacy levels for your data source, see [Set privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+1. Configure the **Privacy level** for your data source. This setting controls how data can be combined for scheduled refresh. The privacy-level setting doesn't apply to live connections. To learn more about privacy levels for your data source, see [Set privacy levels (Power Query)](https://support.microsoft.com/office/privacy-levels-power-query-cc3ede4d-359e-4b28-bc72-9bee7900b540).
 
    :::image type="content" source="media/service-gateway-enterprise-manage-ssas/privacy-level-setting.png" alt-text="Screenshot of the Privacy level setting." :::
 

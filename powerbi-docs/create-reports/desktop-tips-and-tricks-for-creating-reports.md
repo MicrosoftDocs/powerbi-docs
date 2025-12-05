@@ -19,7 +19,7 @@ To get the most out of your data, sometimes you need a little extra help. This a
 
 Query Editor in Power BI Desktop is similar to the Power Query add-in capability in Excel 2013. While there are several helpful articles in Power BI Support, you might also want to review the Power Query documentation on support.office.com to get started.
 
-You can get additional information from the [Power Query Resource Center](https://support.office.com/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94).
+You can get additional information from the [Power Query Resource Center](https://support.microsoft.com/office/power-query-for-excel-help-2b433a85-ddfb-420b-9cda-fe0e60b82a94).
 
 You can also view the [Formula Reference](https://support.microsoft.com/office/create-power-query-formulas-in-excel-6bc50988-022b-4799-a709-f8aafdee2b2f).
 

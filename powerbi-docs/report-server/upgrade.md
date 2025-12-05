@@ -18,7 +18,7 @@ Learn how to upgrade Power BI Report Server.
 
  **Download** :::image type="icon" source="media/upgrade/download.png" border="false":::
 
-To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://www.microsoft.com/power-platform/products/power-bi/report-server).
 
 > [!NOTE]
 > Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server. No new versions of SQL Server Reporting Services (SSRS) are being released. Power BI Report Server is now the default on-premises reporting solution for SQL Server.

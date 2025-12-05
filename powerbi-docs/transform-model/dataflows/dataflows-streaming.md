@@ -22,7 +22,7 @@ Analysts usually need technical help to deal with streaming data sources, data p
 You can mix and match streaming data with batch data if you need to through a user interface (UI) that includes a *diagram view* for easy data mashup. The final item produced is a dataflow, which can be consumed in real time to create highly interactive, near real-time reporting. All of the data visualization capabilities in Power BI work with streaming data, just as they do with batch data.
 
 > [!IMPORTANT]
-> Streaming dataflows has been retired, and is no longer available. [Azure Stream Analytics](/azure/stream-analytics/no-code-stream-processing) has merged the functionality of streaming dataflows. For more information about the retirement of streaming dataflows, see the [retirement announcement](https://powerbi.microsoft.com/en-us/blog/announcing-the-retirement-of-streaming-dataflows/).
+> Streaming dataflows has been retired, and is no longer available. [Azure Stream Analytics](/azure/stream-analytics/no-code-stream-processing) has merged the functionality of streaming dataflows. For more information about the retirement of streaming dataflows, see the [retirement announcement](https://powerbi.microsoft.com/blog/announcing-the-retirement-of-streaming-dataflows/).
 :::image type="content" source="media/dataflows-streaming/dataflows-streaming-01.png" alt-text="Diagram showing an example of mixed streaming and batch data in a simple workflow that creates real-time reports in Power BI.":::
 Users can perform data preparation operations like joins and filters. They can also perform time-window aggregations (such as tumbling, hopping, and session windows) for group-by operations.
 Streaming dataflows in Power BI empower organizations to:

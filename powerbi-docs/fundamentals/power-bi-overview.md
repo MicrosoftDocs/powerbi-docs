@@ -56,7 +56,7 @@ The following table summarizes the key features of Power BI and how they compare
 
 ## Power BI: Step-by-step
 
-> **Quick start**: [Sign up for Power BI](https://powerbi.microsoft.com/get-started/) | [Download Power BI Desktop](https://powerbi.microsoft.com/desktop/) | [Access Power BI service](https://app.powerbi.com/)
+> **Quick start**: [Sign up for Power BI](https://www.microsoft.com/power-platform/products/power-bi/getting-started-with-power-bi) | [Download Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) | [Access Power BI service](https://app.powerbi.com/)
 
 Follow these steps to get started with Power BI:
 

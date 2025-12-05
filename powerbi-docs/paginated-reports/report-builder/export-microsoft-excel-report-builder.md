@@ -45,7 +45,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
 -   If the report item that controls whether another item is toggled isn't in the previous or next row or column of the item being toggled, the outline is disabled also.  
   
- For more details about Excel limitations, see [Excel specifications and limits](https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3).  
+ For more details about Excel limitations, see [Excel specifications and limits](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3).  
   
 ### Text boxes and text  
  The following limitations apply to text boxes and text:  

@@ -21,7 +21,7 @@ There may be times when connecting Excel to Power BI data that you get an unexpe
 > - [Start in Power BI with Analyze in Excel](service-analyze-in-excel.md).
 > - [Start in Excel to connect to Power BI semantic models](service-connect-excel-power-bi-datasets.md).
 >
-> If you encounter a scenario that's not listed below, ask for assistance on the [Power BI community site](https://community.powerbi.com/), or create a [support ticket](https://powerbi.microsoft.com/support/).
+> If you encounter a scenario that's not listed below, ask for assistance on the [Power BI community site](https://community.powerbi.com/), or create a [support ticket](https://support.fabric.microsoft.com/support/).
 
 If you need to troubleshoot an issue with Power BI data in Excel, see the following sections:
 
@@ -54,8 +54,8 @@ Excel connects to Power BI through an external OLAP model. When these applicatio
 If this issue still arises, you have a few options: 
 
 - [Create measures in your data model in **Power BI Desktop**](../transform-model/desktop-tutorial-create-measures.md). Then, publish the data model to the **Power BI service** and access that published semantic model from Excel.
-- [Create measures in your data model from Excel PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198).
-- If you imported data from an Excel workbook that had only tables and no data model, then you can [add the tables to the data model](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42). Then, follow the steps in the previous step to create measures in your data model.
+- [Create measures in your data model from Excel PowerPivot](https://support.microsoft.com/office/create-a-measure-in-power-pivot-d3cc1495-b4e5-48e7-ba98-163022a71198).
+- If you imported data from an Excel workbook that had only tables and no data model, then you can [add the tables to the data model](https://support.microsoft.com/office/add-worksheet-data-to-a-data-model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42). Then, follow the steps in the previous step to create measures in your data model.
 
 Once you define your measures in the model in the Power BI service, you can use them in the **Values** area in Excel PivotTables.
 
@@ -75,6 +75,6 @@ The primary cause for a **Token expired** error is that you haven't recently use
 
 - [Analyze in Excel](service-analyze-in-excel.md)
 - [Tutorial: Create your own measures in Power BI Desktop](../transform-model/desktop-tutorial-create-measures.md)
-- [Measures in PowerPivot](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)
-- [Create a Measure in PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
-- [Add worksheet data to a Data Model using a linked table](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
+- [Measures in PowerPivot](https://support.microsoft.com/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)
+- [Create a Measure in PowerPivot](https://support.microsoft.com/office/create-a-measure-in-power-pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
+- [Add worksheet data to a Data Model using a linked table](https://support.microsoft.com/office/add-worksheet-data-to-a-data-model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)

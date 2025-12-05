@@ -52,7 +52,7 @@ The following are some key points to emphasize about the on-premises reporting s
 
 ### Report creator experience
 
-Content creators use a specific tool named [Power BI Desktop for Report Server](https://powerbi.microsoft.com/report-server/). This version of Power BI Desktop is updated three times per year and is compatible with the Power BI Report Server release cycle.
+Content creators use a specific tool named [Power BI Desktop for Report Server](https://www.microsoft.com/power-platform/products/power-bi/report-server). This version of Power BI Desktop is updated three times per year and is compatible with the Power BI Report Server release cycle.
 
 > [!NOTE]
 > For report creators who create content for both the Power BI service and Power BI Report Server, the two versions of Power BI Desktop can be installed side by side.

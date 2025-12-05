@@ -112,7 +112,7 @@ Optionally, test your visual in the following browsers.
 
 ## Desktop testing
 
-Test your visual in the current version of [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+Test your visual in the current version of [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop).
 
 | Test case | Expected results
 | --------- | ----------------

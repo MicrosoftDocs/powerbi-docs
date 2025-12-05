@@ -19,7 +19,7 @@ ms.custom: sfi-image-nochange
 This article describes how to configure Kerberos single sign-on (SSO) for your SAP HANA data source in the Power BI service. By enabling Kerberos SSO, users can securely access SAP HANA without repeatedly entering credentials, streamlining authentication and improving security.
 
 > [!IMPORTANT]
-> Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
+> Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
 
 > [!NOTE]
 > Before you attempt to refresh an SAP HANA-based report that uses Kerberos SSO, complete the steps in both this article and [Configure Kerberos-based SSO](service-gateway-sso-kerberos.md).
@@ -123,7 +123,7 @@ When you investigate further by using Wireshark traces, you reveal the error `KR
 
 #### Resolution for SPN issues
 
-To resolve SPN issues like this one, you must add an SPN to a service account. For more information, see the SAP documentation in [Configure Kerberos for SAP HANA database Hosts](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/en-US/c786f2cfd976101493dfdf14cf9bcfb1.html).
+To resolve SPN issues like this one, you must add an SPN to a service account. For more information, see the SAP documentation in [Configure Kerberos for SAP HANA database Hosts](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/c786f2cfd976101493dfdf14cf9bcfb1.html).
 
 In addition, follow the resolution instructions described in the next section.
 

@@ -56,7 +56,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Python scripts and visuals | No | Yes | [Create Python scripts](../connect-data/desktop-python-scripts.md) and visuals in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with Python scripts or visuals to Power BI Report Server. |
 | Preview features | No | Yes |   |
 | Power BI visuals | Yes | Yes | [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) |
-| Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop for the Power BI service](https://aka.ms/pbidesktopstore) |
+| Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://www.microsoft.com/power-platform/products/power-bi/report-server) <br><br> [Power BI Desktop for the Power BI service](https://aka.ms/pbidesktopstore) |
 | Data Privacy Levels | No | Yes | [Data Privacy Levels](../enterprise/desktop-privacy-levels.md) are available for reports in the Power BI service. In Power BI Report Server, use [Role definitions](/sql/reporting-services/security/role-definitions-predefined-roles). |
 | Sensitivity Labels | No | Yes | [Sensitivity Labels](../enterprise/service-security-sensitivity-label-overview.md) |
 | Template apps | No | Yes | [Install and distribute template apps in your organization](../connect-data/service-template-apps-install-distribute.md) |

@@ -338,7 +338,7 @@ For more information, see [Strategy for file locations](powerbi-implementation-p
 
 ### Custom visuals
 
-Power BI custom visuals, which developers can create by using the [Power BI visuals SDK](https://powerbi.microsoft.com/developers/custom-visualization/), allow Power BI report creators to work beyond the built-in core visuals. A custom visual can be created and released by Microsoft, software developers, vendors, or partners.
+Power BI custom visuals, which developers can create by using the [Power BI visuals SDK](https://www.microsoft.com/power-platform/products/power-bi/developers), allow Power BI report creators to work beyond the built-in core visuals. A custom visual can be created and released by Microsoft, software developers, vendors, or partners.
 
 To use a custom visual in Power BI Desktop, it must first be installed on the machine of the content creator. There are several ways to distribute visuals to users.
 

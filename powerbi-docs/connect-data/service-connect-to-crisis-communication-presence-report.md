@@ -29,8 +29,8 @@ When installing the Crisis Communication sample, take note of the [SharePoint li
 
 ## Install the app
 
-1. Click the following link to get to the app: [Crisis Communication Presence Report template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.crisiscomms)
-1. On the AppSource page for the app, select [**Get it now**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.crisiscomms).
+1. Click the following link to get to the app: [Crisis Communication Presence Report template app](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.crisiscomms)
+1. On the AppSource page for the app, select [**Get it now**](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.crisiscomms).
 
     :::image type="content" source="media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-appsource-get-it-now.png" alt-text="Screenshot of Crisis Communication Presence Report app in AppSource.":::
 

@@ -55,7 +55,7 @@ The following basic flow lists what the application does when the customer launc
 - A [service principal (app-only token)](./../developer/embedded/embed-service-principal.md) registered in the preceding tenant.
 - A parameterized [template app](service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Microsoft Entra ID. For more information, see [Tips for authoring template apps](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md).
 - To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
-- A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+- A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://www.microsoft.com/power-platform/products/power-bi/pricing) before you begin.
 
 ## Set up your automation development environment
 
@@ -84,7 +84,7 @@ After you've created your template app and it's ready for installation, save the
 - *Parameter names* as they're defined in the template app's semantic model. Parameter names are case-sensitive strings. They can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) or from the semantic model settings in Power BI.
 
 > [!NOTE]
-> You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi). Before you distribute your template app by using the automated installation application you're creating, be sure to [publish it to Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+> You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi). Before you distribute your template app by using the automated installation application you're creating, be sure to [publish it to Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ## Install and configure your template app
 
