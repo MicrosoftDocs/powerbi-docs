@@ -157,7 +157,7 @@ Organization Expenditures is a self-contained paginated report sample. The scena
 
 Data source: Included in the .rdl
   
-## Next steps
+## Related content
 
 [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 

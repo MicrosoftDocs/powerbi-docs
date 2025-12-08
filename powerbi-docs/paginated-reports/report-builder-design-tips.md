@@ -3,11 +3,13 @@ title: "Design tips for reports in Power BI Report Builder"
 description: Use the following tips to help design and control the appearance of your paginated reports in Power BI Report Builder. 
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 01/18/2023
+ms.reviewer: ''
+ms.date: 12/08/2025
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
+ai-usage: ai-assisted
 ---
 # Design tips for reports in Power BI Report Builder
 

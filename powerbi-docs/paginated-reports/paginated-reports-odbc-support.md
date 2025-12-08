@@ -7,8 +7,9 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 09/28/2023
+ms.date: 12/08/2025
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Power BI gateway and Report Builder support for ODBC data sources
@@ -31,7 +32,7 @@ You need a Power BI gateway version February 2021 or later. We recommend install
 The latest version of Power BI Report Builder already contains the ODBC data extension.
 
 1. Install the latest version of [Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
-2. Install the 64-bit ODBC driver that you plan to use with Power BI Report Builder.
+1. Install the 64-bit ODBC driver that you plan to use with Power BI Report Builder.
 
 ## Install Power BI gateway, configure ODBC data sources
 
@@ -42,8 +43,8 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
     >[!NOTE]
     >Personal gateways aren't supported for paginated reports, because they require DirectQuery support.
 
-2. Refer to the article [What is an on-premises data gateway?](../connect-data/service-gateway-onprem.md) for information on setting it up.
-3. Install the 64-bit ODBC driver that you plan to use on the gateway computer.
+1. Refer to the article [What is an on-premises data gateway?](../connect-data/service-gateway-onprem.md) for information on setting it up.
+1. Install the 64-bit ODBC driver that you plan to use on the gateway computer.
 
     >[!NOTE]
     >File DSNs aren't supported. If you'd like to use a DSN, create a 64-bit [System DSN](/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the gateway computer.

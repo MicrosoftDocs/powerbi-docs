@@ -3,11 +3,13 @@ title: "Tables, matrixes, and lists in Power BI Report Builder"
 description: Learn how to use tables, matrixes, and lists in Power BI Report Builder to display paginated report data in cells organized into rows and columns.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 01/24/2023
+ms.reviewer: ''
+ms.date: 12/08/2025
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
+ai-usage: ai-assisted
 ---
 # Tables, matrixes, and lists in Power BI Report Builder
 

@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 01/24/2023
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ---
 
 # Get around Report Design View for paginated reports
@@ -19,11 +20,11 @@ Report Design View in Power BI Report Builder is the design space for creating p
 :::image type="content" source="report-design/media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png" lightbox="report-design/media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png" alt-text="Screenshot of the Report Builder Report Design View.":::
 
 1. [Report Data pane](#1-report-data-pane) 
-2. [Report design surface](#2-report-design-surface)  
-3. [Parameters pane](#3-parameters-pane) 
-4. [Properties pane](#4-properties-pane) 
-5. [Grouping pane](#5-grouping-pane) 
-6. [Current report status bar](#6-current-report-status-bar)  
+1. [Report design surface](#2-report-design-surface)  
+1. [Parameters pane](#3-parameters-pane) 
+1. [Properties pane](#4-properties-pane) 
+1. [Grouping pane](#5-grouping-pane) 
+1. [Current report status bar](#6-current-report-status-bar)  
   
 ## 1. Report Data pane  
 From the Report Data pane, you define the report data and report resources that you need for a report before you design your report layout. For example, you can add data sources, datasets, calculated fields, report parameters, and images to the Report Data pane.  
@@ -102,7 +103,7 @@ For more information, see [Group visuals in Power BI Desktop reports](../create-
 
 The current report status bar shows the name of the server the report is connected to, or it shows "No current report server." You can select **Connect** to connect to a server.
 
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md) 
 
