@@ -424,7 +424,7 @@ For more considerations and guidance, refer to [composite model guidance](../gui
 
 ### Tenant considerations
 
-You must publish any model with a DirectQuery connection to a Power BI semantic model or to Analysis Services in the same tenant. This requirement is especially important when accessing a Power BI semantic model or an Analysis Services model by using B2B guest identities, as shown in the following diagram. To find the tenant URL for publishing, see [Guest users who can edit and manage content](../admin/service-admin-guest-users.md#tenant-url-for-publishing).
+You must publish any model with a DirectQuery connection to a Power BI semantic model or to Analysis Services in the same tenant. This requirement is especially important when accessing a Power BI semantic model or an Analysis Services model by using B2B guest identities, as shown in the following diagram.
 
 Consider the following diagram. The numbered steps in the diagram are described in the following paragraphs.
 
