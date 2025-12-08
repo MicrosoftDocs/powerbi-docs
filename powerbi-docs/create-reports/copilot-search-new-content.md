@@ -116,7 +116,7 @@ Here are some best practices to make your items more discoverable in the standal
 Workspace admins control whether Copilot can search all workspace content or just content that has been Approved for Copilot. Workspace admins can make this change themselves in Workspace settings under __Delegated settings__ under the heading __Copilot and Azure OpenAI service__. Tenant admins can also make a default selection for the entire tenant, using the tenant setting **Only show approved items in the standalone Copilot in Power BI experience (preview)**. Changes to these settings will take up to 24 hours to reflect in the search experiences. 
 
 
-![Delegated workspace setting to limit search to prepped content.](media/copilot-search-new-content/workspace-settings-limit-to-prepped.png)
+![Delegated workspace setting to limit search to prepped content.](media/copilot-search-new-content/workspace-setting-approved-for-copilot.png)
 
 ### When is an item Approved for Copilot?
 - For search purposes, Fabric data agents are always considered approved for Copilot. 
