@@ -42,11 +42,11 @@ For more information, see [Understanding report data in Power BI Report Builder]
 
 1. On the toolbar in the **Report Data** pane, select **New** > **Data Source**. The **Data Source Properties** dialog box opens.
 
-   ![Screenshot of New Data Source in the Report Data pane.](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png)
+   :::image type="content" source="media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png" alt-text="Screenshot of New Data Source in the Report Data pane.":::
   
 1. In the **Name** text box, type a name for the data source or accept the default.  
 
-   ![Screenshot of the Data Source properties dialog box.](media/paginated-reports-embedded-data-source/power-bi-select-connection.png)
+   :::image type="content" source="media/paginated-reports-embedded-data-source/power-bi-select-connection.png" alt-text="Screenshot of the Data Source properties dialog box.":::
   
 1. From the **Select connection type** list, select a data source type. 
 
@@ -60,7 +60,7 @@ For more information, see [Understanding report data in Power BI Report Builder]
   
 1. Select **Credentials**.  
 
-   ![Screenshot of the credentials tab in Data Source properties.](media/paginated-reports-embedded-data-source/power-bi-select-credentials.png)
+   :::image type="content" source="media/paginated-reports-embedded-data-source/power-bi-select-credentials.png" alt-text="Screenshot of the credentials tab in Data Source properties.":::
   
    Specify the credentials to use for this data source. The owner of the data source chooses the type of credentials that are supported. For more information, see [Specify credential and connection information for Report Data sources](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
   
@@ -82,7 +82,7 @@ Paginated reports that connect to Power BI semantic models follow the rules for 
 |Row-level security | You need *Read* permission assigned for each user viewing the report at the dataset level to have it enforced   |
 |Using hidden datasets | Not supported. |
 
-## Next steps
+## Related content
 
 - [Create an embedded dataset for a paginated report in the Power BI service](paginated-reports-create-embedded-dataset.md).
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

@@ -97,7 +97,7 @@ As with any other Power BI report, if the paginated report data source is on pre
 
 - Maximum file size of a paginated report file with extension .rdl is 20 MB. If your RDL file is larger, it is typically due to using large embedded images in which case consider using external images or reducing size of the embedded images.
 
-## Next steps
+## Related content
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

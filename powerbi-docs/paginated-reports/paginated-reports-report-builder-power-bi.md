@@ -30,7 +30,7 @@ Here are some quick links if you're ready to get started:
 
 Paginated reports often have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice, and repeating headers and footers.
 
-![Paginated](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+:::image type="content" source="media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png" alt-text="Screenshot of a paginated report page showing invoice details.":::
 
 You can preview your report in Report Builder, then publish it to the Power BI service, app.powerbi.com.
 
