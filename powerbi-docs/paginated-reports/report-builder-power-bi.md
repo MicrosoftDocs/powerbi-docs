@@ -3,7 +3,9 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder lets you author paginated, print-ready reports and publish them to the Power BI service, showing all data across multiple pages with precise layout control.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 09/25/2025
+ms.reviewer: ''
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

@@ -1,13 +1,14 @@
 ---
 title: "Troubleshoot paginated report execution issues"
 description: In this article, diagnose and fix processing and rendering issues with paginated reports.
-author: julcsc
+author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 01/08/2024
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ---
 # Troubleshoot paginated report execution issues
 

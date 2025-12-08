@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ---
 
 # Enter data directly into a paginated report in Report Builder
@@ -128,7 +129,7 @@ Now that paginated reports are supported in the Power BI service, you can upload
 
 ## Upload the paginated report to a report server
 
-You can also upload your paginated report to a Power BI Report Server or SQL Server Reporting Services 2016 or 2017 report server. Before you do, you need to add the following item to your *RsReportServer.config* as an additional data extension. Back up your *RsReportServer.config* file before you make the change, in case you run into any issues.
+You can also upload your paginated report to a Power BI Report Server or SQL Server Reporting Services (2016 or later) report server. Before you do, you need to add the following item to your *RsReportServer.config* as an additional data extension. Back up your *RsReportServer.config* file before you make the change, in case you run into any issues.
 
 ```xml
 <Extension Name="ENTERDATA" Type="Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions">

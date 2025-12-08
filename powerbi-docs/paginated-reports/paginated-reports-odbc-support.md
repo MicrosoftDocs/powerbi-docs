@@ -7,8 +7,9 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 09/28/2023
+ms.date: 12/08/2025
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Power BI gateway and Report Builder support for ODBC data sources

@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 12/08/2025
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Publish a paginated report to the Power BI service

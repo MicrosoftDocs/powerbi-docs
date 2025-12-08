@@ -8,13 +8,16 @@ ms.custom: video-removed, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 09/24/2025
+ms.date: 12/08/2025
 ai-usage: ai-assisted
 ---
 
 # What are paginated reports in Power BI?
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+
+> [!NOTE]
+> Some screenshots in this article may show an earlier version of the Power BI user interface. The Power BI service and Report Builder UI are updated regularly. While the core concepts and procedures remain accurate, some visual elements may appear differently in the current version.
 
 *Paginated reports* are designed for printing or sharing. You can preview your report in Report Builder, then publish it to the Power BI service, `app.powerbi.com`. Paginated reports display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service.
 
@@ -45,7 +48,7 @@ You can view a demonstration of a similar table being printed in the two report 
 
 ## Create reports in Power BI Report Builder
 
-Paginated reports have their own design tool, Power BI Report Builder. It's a new tool that shares the same foundation as the tools you previously used to create paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS). In fact, paginated reports that you create for SSRS 2016 and 2017 or for Power BI Report Server on-premises, are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available. See [Considerations and limitations](#considerations-and-limitations) in this article for details.
+Paginated reports have their own design tool, Power BI Report Builder. It shares the same foundation as the tools previously used to create paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS). Paginated reports created for SSRS (2016 and later versions) or for Power BI Report Server on-premises are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available. See [Considerations and limitations](#considerations-and-limitations) in this article for details.
 
 ## Apply sensitivity labels to paginated reports
 
@@ -55,7 +58,7 @@ Read more about [sensitivity label support for pagination reports](/fabric/gover
 
 ## Report from a variety of data sources
 
-A single paginated report can have a number of different data sources. Unlike Power BI reports, it doesn't have an underlying data model. You create embedded data sources and datasets in the paginated report itself. You can't use shared data sources or datasets. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are some of the data sources you can connect to:
+A single paginated report can have a number of different data sources. Unlike Power BI reports, it doesn't have an underlying data model. You create embedded data sources and datasets in the paginated report itself. Power BI paginated reports don't support SSRS-style shared data sources or shared datasets (.rds/.rsd files), but you can use Power BI semantic models as data sources. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are some of the data sources you can connect to:
 
 - Azure SQL Database and Azure Synapse Analytics (via Basic and oAuth)
 - Azure Analysis Services (via SSO)

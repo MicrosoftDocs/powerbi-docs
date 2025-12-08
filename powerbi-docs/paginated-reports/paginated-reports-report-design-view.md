@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 01/24/2023
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ---
 
 # Get around Report Design View for paginated reports
