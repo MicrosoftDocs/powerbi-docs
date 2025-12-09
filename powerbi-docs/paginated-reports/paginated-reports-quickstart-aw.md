@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
-ms.date: 11/11/2025
+ms.date: 12/08/2025
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Tutorial: Create a paginated report and upload it to the Power BI service

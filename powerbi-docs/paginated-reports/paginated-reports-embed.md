@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/31/2023
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ---
 
 # Embed a paginated report

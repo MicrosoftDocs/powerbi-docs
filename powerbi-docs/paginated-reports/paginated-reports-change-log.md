@@ -1,13 +1,14 @@
 ---
 title: Power BI Report Builder change log
 description: In this article, you learn about new features and functionality in Power BI paginated reports for the Power BI service.
-author: petebro
-ms.author: petebro
-ms.reviewer: ''
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: petebro
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 9/17/2024
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ---
 
 # Power BI Report Builder change log
@@ -88,7 +89,7 @@ Version 15.7.1807.730, released March 24, 2024
 - Various bug fixes. 
 
 ### Features
-- Power Query Online connectivity to hundreds of new data sources is now in preview.
+- Power Query Online connectivity to hundreds of new data sources (now generally available as of September 2024).
 - Added support for TLS 1.3.
 
 ## July 2023

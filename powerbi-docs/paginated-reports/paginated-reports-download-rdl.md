@@ -7,7 +7,8 @@ ms.reviewer: mibruhje
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ---
 
 # Create a paginated report from a Power BI report or dataset

@@ -19,11 +19,11 @@ This article discusses the effect of the physical page size and the report layou
 
 Access the **Report Properties** pane in Report Builder by clicking the area outside the report body.
 
-![Screenshot of the Report Properties pane.](media/paginated-reports-pagination/power-bi-report-properties.png)
+:::image type="content" source="media/paginated-reports-pagination/power-bi-report-properties.png" alt-text="Screenshot of the Report Properties pane.":::
 
 Access the **Page Setup** dialog box by selecting **Run** on the Home tab, and then choose **Page Setup** on the Run tab.
 
-![Screenshot of the Page Setup dialog box.](media/paginated-reports-pagination/power-bi-page-setup.png)
+:::image type="content" source="media/paginated-reports-pagination/power-bi-page-setup.png" alt-text="Screenshot of the Page Setup dialog box.":::
 
 > [!NOTE]  
 >  If you've designed a report to be one page wide, but it renders across multiple pages, check that the width of the report body, including margins, isn't larger than the physical page size width. To prevent empty pages from being added to your report, you can reduce the container size by dragging the container corner to the left.  
@@ -46,19 +46,17 @@ You can override the physical page size that's defined in the report. Specify th
 
 Report Builder draws margins from the edge of the physical page dimensions inward to the specified margin setting. If a report item extends into the margin area, it's clipped so that the overlapping area isn't rendered. If you specify margin sizes that cause the horizontal or vertical width of the page to equal zero, the margin settings default to zero. You specify margins in the **Report Properties** pane or **Page Setup** dialog box, or by changing the *TopMargin*, *BottomMargin*, *LeftMargin*, and *RightMargin* properties in the **Properties** pane. To override the margin size defined in the report, specify the margin size using the Device Information settings for the specific renderer that you're using to export the report.  
   
-The *usable page area* is the area of the physical page that remains after allocating space for margins, column spacing, and the page header and footer. Margins are only applied when you render and print reports in hard-page-break renderer formats. The following image indicates the margin and usable page area of a physical page.  
+The *usable page area* is the area of the physical page that remains after allocating space for margins, column spacing, and the page header and footer. Margins are only applied when you render and print reports in hard-page-break renderer formats. The following image indicates the margin and usable page area of a physical page.
   
-![Diagram of physical page with margins and usable area.](media/paginated-reports-pagination/power-bi-paginated-rs-page-margins.png) 
+:::image type="content" source="media/paginated-reports-pagination/power-bi-paginated-rs-page-margins.png" alt-text="Diagram of physical page with margins and usable area.":::
   
 ### Newsletter-style columns  
 
 Your report can be divided into columns, like columns in a newspaper. Columns are treated as *logical* pages rendered on the same *physical* page. They're arranged from left to right, top to bottom, and are separated by white space between each column. If the report is divided into more than one column, each physical page is divided vertically into columns. Each column is considered a logical page. For example, suppose you have two columns on a physical page. The content of your report fills the first column and then the second column. If the report doesn't fit entirely within the first two columns, the report then fills the first and second column on the next page. Columns continue to be filled, from left to right, top to bottom, until all report items are rendered. If you specify column sizes that cause the horizontal width or vertical width to equal zero, the column spacing defaults to zero.  
   
-You specify columns in the **Report Properties** pane or **Page Setup** dialog box, or by changing the *TopMargin*, *BottomMargin*, *LeftMargin*, and *RightMargin* properties in the **Properties** pane. To use a margin size that isn't defined, specify the margin size using the Device Information settings for the specific renderer where you're exporting the report. Columns are only applied when you render and print reports in PDF or Image formats. The following image indicates the usable page area of a page containing columns.  
+You specify columns in the **Report Properties** pane or **Page Setup** dialog box, or by changing the *TopMargin*, *BottomMargin*, *LeftMargin*, and *RightMargin* properties in the **Properties** pane. To use a margin size that isn't defined, specify the margin size using the Device Information settings for the specific renderer where you're exporting the report. Columns are only applied when you render and print reports in PDF or Image formats. The following image indicates the usable page area of a page containing columns.
   
-![Diagram of physical page with columns.](media/paginated-reports-pagination/power-bi-paginated-rs-page-columns.png)
-  
-> [!NOTE]
+:::image type="content" source="media/paginated-reports-pagination/power-bi-paginated-rs-page-columns.png" alt-text="Diagram of physical page with columns.":::> [!NOTE]
 > Newsletter-style column reports aren't supported in subreports. For more information, see [Subreports in Power BI paginated reports](./subreports.md).
 
 ## Page breaks and page names
@@ -101,7 +99,7 @@ These properties are useful when you export reports to Excel workbooks. Use the 
   
 For more information about how these properties work when reports are exported to Excel, see [Exporting to Microsoft Excel](report-builder/export-microsoft-excel-report-builder.md).  
   
-## Next steps
+## Related content
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [Avoid blank pages when printing paginated reports](../guidance/report-paginated-blank-page.md)
