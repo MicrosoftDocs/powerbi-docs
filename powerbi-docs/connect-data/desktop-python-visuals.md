@@ -84,7 +84,7 @@ Create a scatter plot to see if there's a correlation between age and weight.
 
 1. In the **Python script editor**, under **Paste or type your script code here**, enter this code:
 
-       ```python
+   ```python
    import matplotlib.pyplot as plt 
    dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
    plt.show() 
