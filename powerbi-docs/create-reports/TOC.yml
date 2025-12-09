@@ -570,11 +570,11 @@
     items:
     - name: Get started with goals
       href: service-goals-introduction.md
-    - name: Create connected goals
-      href: service-goals-create-connected.md
     - name: Create scorecards and manual goals
       href: service-goals-create.md
-    - name: Goals and Power Automate
+    - name: Create connected goals
+      href: service-goals-create-connected.md
+    - name: Update goals with Power Automate
       href: service-metrics-power-automate.md
     - name: Refresh goals and scorecards
       href: service-metrics-scorecard-refresh.md
