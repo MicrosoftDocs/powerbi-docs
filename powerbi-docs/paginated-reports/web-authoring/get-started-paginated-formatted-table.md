@@ -6,7 +6,8 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 09/22/2023
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ---
 
 # Get started creating paginated reports in the Power BI service
@@ -77,7 +78,10 @@ To create a paginated report from the Power BI service, you can start in a numbe
 - You can create a paginated report in any workspace.
 - You can't create a paginated report from Power BI semantic models based on a live connection to SQL Server Analysis Service (SSAS) or Azure Analysis Service (AAS). In this case, you should connect your paginated report directly to the underlying SSAS/AS database.
 
-- The online editor does *not* replicate all existing Power BI Report Builder functionality.  
+- The online editor does *not* replicate all existing Power BI Report Builder functionality.
+
+> [!IMPORTANT]
+> The web authoring experience creates *new* paginated reports. It doesn't add paginated report functionality to existing Power BI reports (.pbix files). Paginated reports and Power BI reports are separate report types with different capabilities and use cases. To create a paginated report, you must start a new report using one of the methods described in this article.  
 
 ## Related content
 

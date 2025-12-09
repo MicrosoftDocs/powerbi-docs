@@ -3,22 +3,24 @@ title: "Create a paginated report based on a Power BI shared dataset"
 description: Create a paginated report in Power BI Report Builder based on a Power BI shared dataset.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 04/12/2023
+ms.reviewer: ''
+ms.date: 12/08/2025
 ms.service: powerbi
 ms.subservice: report-builder
 ms.custom: video-removed
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # Create a paginated report based on a Power BI shared dataset
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-You can use a dataset that you create in Power BI Desktop as a data source for Power BI Report Builder paginated reports. Picture this scenario: You've created a Power BI report in Power BI Desktop. You spent a lot of time designing the data model, then created a beautiful Power BI report with all sorts of great visuals. Your report has a matrix with many rows, so you have to scroll to see them all. Your report readers want a report they can print out, that will show all the rows in that matrix.
+You can use a dataset that you create in Power BI Desktop as a data source for Power BI Report Builder paginated reports. Picture this scenario: You've created a Power BI report in Power BI Desktop. You spent a lot of time designing the data model, then created a beautiful Power BI report with all sorts of great visuals. Your report has a matrix with many rows, so you have to scroll to see them all. Your report readers want a report they can print out, that shows all the rows in that matrix.
 
-A Power BI paginated report can do that: print a table or matrix that runs to multiple pages, with page headers and footers and a perfect page layout that you design. It will complement the Power BI Desktop report. You want them to be based on the exact same data, with no discrepancies, so you use the same dataset.
+A Power BI paginated report can do that: print a table or matrix that runs to multiple pages, with page headers and footers and a perfect page layout that you design. It complements the Power BI Desktop report. You want them to be based on the exact same data, with no discrepancies, so you use the same dataset.
 
-![Screenshot of Report Builder paginated report printed from Power BI Desktop.](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
+:::image type="content" source="media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png" alt-text="Screenshot of Report Builder paginated report printed from Power BI Desktop.":::
 
 ## What you need
 
@@ -33,7 +35,7 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
 
 If you want to follow along with this article, download the [Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop, and add a table with many columns. In the **Format** pane, slide the toggle under **Totals** to the off position.
 
-![Screenshot of Totals toggled to off position in the Format pane.](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
+:::image type="content" source="media/report-builder-shared-datasets/power-bi-desktop-totals-off.png" alt-text="Screenshot of Totals toggled to off position in the Format pane.":::
 
 Then [publish the report to a workspace](../create-reports/desktop-upload-desktop-files.md) in the Power BI service.
 

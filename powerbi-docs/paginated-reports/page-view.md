@@ -3,11 +3,12 @@ title: "Set report views for paginated reports in the Power BI service"
 description: Learn about the different report views, including the Print Layout view, available for paginated reports in the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer:
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ---
 
 # Set report views for paginated reports in the Power BI service
@@ -44,15 +45,15 @@ When you open a paginated report, it renders in the default interactive view. If
 
     :::image type="content" source="media/page-view/power-bi-paginated-page-view-dropdown.png" alt-text="Screenshot showing the Print Layout button under the View menu.":::
 
-2. You can change the view settings by selecting **Page Settings** in the **View** menu on the toolbar. 
+1. You can change the view settings by selecting **Page Settings** in the **View** menu on the toolbar. 
 
     :::image type="content" source="media/page-view/power-bi-paginated-page-settings-dropdown.png" alt-text="Screenshot showing the Page Settings button.":::
 
     The **Page Settings** dialog box has options to set **Page Size** and **Orientation** for the Print Layout. After you apply page settings, the same options apply when you print the page later.
    
-    ![Screenshot showing the Page Settings dialog box.](media/page-view/power-bi-paginated-page-settings-dialog.png)
+    :::image type="content" source="media/page-view/power-bi-paginated-page-settings-dialog.png" alt-text="Screenshot showing the Page Settings dialog box.":::
 
-3. To switch back to the interactive view, select **Web Layout** in the **View** dropdown box.
+1. To switch back to the interactive view, select **Web Layout** in the **View** dropdown box.
 
 ## Browser support
 
@@ -61,7 +62,7 @@ Print Layout is supported in Google Chrome and Microsoft Edge browsers. Make sur
 Print Layout isn't supported in Internet Explorer and Safari, so the option is disabled. It also isn't supported in browsers on mobile devices, or in the native Power BI mobile apps.  
 
 
-## Next steps
+## Related content
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

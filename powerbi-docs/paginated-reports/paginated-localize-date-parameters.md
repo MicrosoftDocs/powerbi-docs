@@ -18,7 +18,7 @@ There are differences between the way date type parameters behave for reports in
 
 In Power BI Report Builder, date parameters are seen in the format of the clients' operating system. For instance, if your operating system is set to a German locale, the format of the parameter is dd/mm/yyyy. But when you publish the report to the Power BI service, the drop-down values for the multi-value parameter are in US format, mm/dd/yyyy. This change is because the host server that generates the parameter value is always in US format, for consistent report processing across regions of the world.
 
-When you have available values, the multi value checkbox control will display.
+When you have available values, the multi value checkbox control displays.
 
 :::image type="content" source="media/paginated-localize-date-parameters/multi-value-select-all.png" alt-text="Screenshot showing multi-select dropdown calendar.":::
 
@@ -121,7 +121,7 @@ After you publish the report to the Power BI service, the date parameter that yo
 > [!TIP]
 > To test different locales easily in the Power BI service, add `&language="xx-XX"` to the URL. The Power BI service takes almost any two-part locale. This example uses New Zealand, "en-NZ". 
 
-## Next steps
+## Related content
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
