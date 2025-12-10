@@ -1202,6 +1202,8 @@ The following table shows which packages aren't supported in the Power BI servic
 
 - R visuals with HTML and XML packages with fail to render due to Out Of Memory (OOM) limits. Migrate the visual with the [PbiViz tool](../developer/visuals/develop-power-bi-visuals.md#power-bi-visual-packages). The visual must render to be considered successfully migrated. 
 
+
+
 ## Related content
 
 For more information about R in Power BI, take a look at the following articles:
