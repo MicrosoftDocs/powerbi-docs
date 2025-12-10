@@ -1202,6 +1202,8 @@ The following table shows which packages aren't supported in the Power BI servic
 
 - R visuals with HTML and XML packages with fail to render due to Out Of Memory (OOM) limits. Migrate the visual with the [PbiViz tool](../developer/visuals/develop-power-bi-visuals.md#power-bi-visual-packages). The visual must render to be considered successfully migrated. 
 
+> [!IMPORTANT]
+> As of May 2026, Power BI will end support for the ability to embed reports and dashboards containing R or Python visuals using Power BI [Embed for your customers](/power-bi/developer/embedded/embedded-analytics-power-bi) solution (also known as __app owns data__) and Publish to web scenarios. Embed for your customers typically involves a custom app which manages authentication directly, and for which app users do not need Power BI licenses. This change does __not__ impact customers leveraging [secure embeddings](/power-bi/developer/embedded/embedded-analytics-power-bi) to Sharepoint, Website or Portal. [Embed for your organization](/power-bi/developer/embedded/embedded-analytics-power-bi) (also known as __user owns data__) scenarios are also not impacted.
 
 
 ## Related content
