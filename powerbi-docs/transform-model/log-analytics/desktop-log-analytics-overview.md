@@ -55,7 +55,7 @@ These examples highlight the various ways you can use Azure Log Analytics with P
 In another article, you can see how to configure Azure Log Analytics to work with Power BI, with specific steps and requirements to get your logging working properly.
 
 > [!NOTE]
-> Analyzing Paginated reports using Log Analytics is not supported instead consider using Audit logs.
+> Analyzing Paginated Reports using Log Analytics is not supported instead consider using Azure audit logs.
 
 ## Considerations and limitations
 Keep the following considerations and limitations in mind when working with Azure Log Analytics and Power BI:
