@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/05/2025
+ms.date: 12/10/2025
 LocalizationGroup: Create reports
 ms.custom: sfi-image-nochange
 # Customer intent: As a Power Bi user I want to create a Power Automate visual.
@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-When you create a Power Automate visual in a Power BI report, your end-users can run an automated flow, just by clicking a button in your report. Furthermore, the flow can be data contextual, meaning that the flow inputs can be dynamic, based on the filters the end-users set.
+When you create a Power Automate visual in a Power BI report, your end-users can run an automated flow by clicking a button in your report. Furthermore, the flow can be data contextual, meaning that the flow inputs can be dynamic, based on the filters the end-users set.
 
 :::image type="content" source="media/power-bi-automate-visual/power-automate-visual-resized-repositioned-report.png" alt-text="Screenshot shows Flow button resized and repositioned on the report.":::
 
@@ -26,7 +26,7 @@ Use the following procedure to add the Power Automate visual:
 
 ### Power BI Desktop
 
-* Select the Power Automate icon from the **Visualizations** pane.
+- Select the Power Automate icon from the **Visualizations** pane.
 
     :::image type="content" source="media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png" alt-text="Screenshot of selecting the Power Automate icon from the Visualizations pane":::
 
@@ -34,7 +34,7 @@ Use the following procedure to add the Power Automate visual:
 
     :::image type="content" source="media/power-bi-automate-visual/create-power-automate-button.png" alt-text="Screenshot of selecting the Power Automate icon from the Insert ribbon.":::
 
-    Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
+    When you select the visual, Power BI automatically adds it to your current report page, with getting started instructions.
 
 ### Power BI service
 
@@ -42,13 +42,13 @@ Use the following procedure to add the Power Automate visual:
 
     :::image type="content" source="media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png" alt-text="Screenshot of selecting the Power Automate icon from the Visualizations pane.":::
 
-1. Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
+1. When you select the visual, it automatically adds to your current report page, with getting started instructions.
 
 1. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
 
    :::image type="content" source="media/power-bi-automate-visual/power-automate-steps.png" alt-text="Screenshot showing Flow button resized and repositioned on the report.":::
 
-1. After you review the instructions, resize the button and place it where you’d like on the report.
+1. After you review the instructions, resize the button and place it where you want on the report.
 
 ## Change the environment in which your flow is created
 
@@ -62,7 +62,7 @@ Use the following procedure to edit the flow:
 
 ### Edit the flow for Power BI Desktop
 
-1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
+1. With the flow selected, add any data fields to the **Power Automate Data** region, to use as dynamic inputs for the flow.
 
     :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual-desktop.png" alt-text="Screenshot shows control to add any fields you want as dynamic inputs.":::
 
@@ -72,7 +72,7 @@ Use the following procedure to edit the flow:
 
 ### Edit the flow for Power BI service
 
-1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
+1. With the flow selected, add any data fields to the **Power Automate Data** region, to use as dynamic inputs for the flow.
 
     :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual-desktop.png" alt-text="Screenshot shows control to add any fields you want as dynamic inputs.":::
 
@@ -80,7 +80,7 @@ Use the following procedure to edit the flow:
 
     :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual-service.png" alt-text="Screenshot shows Edit selected in the Power Automate visual.":::
 
-1. In edit mode of the visual, either select an existing flow to apply to the button, or create a new flow to be applied to the button.
+1. In edit mode of the visual, either select an existing flow to apply to the button, or create a new flow to apply to the button.
 
    :::image type="content" source="media/power-bi-automate-visual/apply-power-automate-flow.png" alt-text="Screenshot shows Create a flow for a SharePoint list in Power B I.":::
 
@@ -92,11 +92,11 @@ Use the following procedure to edit the flow:
 
    :::image type="content" source="media/power-bi-automate-visual/create-flow-from-scratch.png" alt-text="Screenshot shows start creating a flow from scratch.":::
 
-1. Here, you can choose a subsequent action or specify a Control if you want to specify more logic to determine the subsequent action.
+1. Here, you can choose a subsequent action or specify a Control if you want to add more logic to determine the subsequent action.
 
    :::image type="content" source="media/power-bi-automate-visual/choose-actions-for-flow.png" alt-text="Screenshot shows choose actions for the flow.":::
 
-1. Optionally, you can reference the data field(s) as dynamic content if you want the flow to be data contextual. This example uses the Region data field to create an item in a SharePoint list. Based on the end-user’s selection, Region could have multiple values or just one.
+1. Optionally, you can reference the data fields as dynamic content if you want the flow to be data contextual. This example uses the Region data field to create an item in a SharePoint list. Based on the end-user’s selection, Region could have multiple values or just one.
 
    :::image type="content" source="media/power-bi-automate-visual/include-dynamic-content-for-flow-inputs.png" alt-text="Screenshot shows Add dynamic content for the flow.":::
 
@@ -146,7 +146,7 @@ To test the flow in edit mode of the report, select Back to report, and then pre
 
 ## Share the flow
 
-When the flow is running successfully, you can share it with your report readers.
+When the flow runs successfully, you can share it with your report readers.
 
 1. Select **Edit** in the **Run only users** section:
 
@@ -166,19 +166,20 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 
 ## Considerations and limitations
 
-- Other manual inputs to the button aren't supported.  
+- The button doesn't support other manual inputs.  
 - The visual isn't supported for [embedded analytics](./../developer/embedded/embedded-analytics-power-bi.md).
 - The visual doesn't work in Publish to Web (public) scenarios, because Power Automate doesn't support unauthenticated scenarios.
 - The visual doesn't support export scenarios.
-- The Power Automate visual is limited to process a maximum of 1,000 records.
-- The user running the flow within the Power BI report needs to have permissions to run the flow. Grant these permissions through direct sharing by the user or by sharing to a Microsoft Entra group.
+- The Power Automate visual can process a maximum of 1,000 records.
+- The user running the flow within the Power BI report needs permission to run the flow. Grant these permissions through direct sharing by the user or by sharing to a Microsoft Entra group.
 - Create flows that you'll **use** with the Power BI button trigger **directly within the Power BI report**. **Avoid** going directly to Power Automate to create these flows, as the trigger has no access to the data fields necessary for creating the flow.
-- Power BI data is sent to, and processed in, a geography where the flow is deployed.
-- Data selected in the Power Automate **Data** region is only included in the **Body** input when actively used within the flow. If selected fields aren't referenced in flow actions, they won't be available in the body. This behavior optimizes performance by only transmitting data that's used in flow operations.
+- Power BI data is sent to, and processed in, the geography where you deploy the flow.
+- Data selected in the Power Automate **Data** region is only included in the **Body** input when the flow actively uses it. If selected fields aren't referenced in flow actions, they aren't available in the body. This behavior optimizes performance by only transmitting data that's used in flow operations.
+- The Power Automate visual isn't supported on Azure Government (GCC + GCC High) tenants.
 
 ## Related content
 
-For more information about Power Automate, take a look at the following articles:
+For more information about Power Automate, see the following articles:
 
 - [Integrate Power BI data alerts with Power Automate](../collaborate-share/service-flow-integration.md)
 - [Export and email a Power BI report with Power Automate](../collaborate-share/service-automate-power-bi-report-export.md)
