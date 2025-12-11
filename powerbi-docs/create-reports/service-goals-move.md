@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 12/10/2024
 #customer intent: As a Power BI user I want to learn how to customize Power BI scorecards.
 ---
-# Arrange columns, goals, and scorecards (preview)
+# Arrange columns, goals, and scorecards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -23,7 +23,7 @@ In some scenarios, you can hide a column, or put the columns in a different orde
 
 :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
 
-## Reorder the goals in a scorecard (preview)
+## Reorder the goals in a scorecard
 
 To reorder goals on the scorecard, or make them subgoals:
 
@@ -35,7 +35,7 @@ To reorder goals on the scorecard, or make them subgoals:
 
   :::image type="content" source="media/service-goals-move/power-bi-moved-metric.png" alt-text="Screenshot that shows the moved subgoal.":::
 
-## Hide or move a column (preview)
+## Hide or move a column
 
 1. Open the scorecard in edit mode, and select the arrow icon next to the column you want to hide or move > **Column settings**.
 1. Select **Move right**, **Move left**, or **Hide this column**.
