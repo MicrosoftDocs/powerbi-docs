@@ -7009,6 +7009,11 @@
       "source_path": "powerbi-docs/create-reports/copilot-create-report-service.md",
       "redirect_url": "/power-bi/create-reports/copilot-create-reports",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/service-quick-create-sharepoint-list.md",
+      "redirect_url": "/power-bi/connect-data/create-dataset-sharepoint-online-list",
+      "redirect_document_id": false
     }
   ]
 }                           
