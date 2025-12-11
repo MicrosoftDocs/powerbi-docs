@@ -1,8 +1,8 @@
 ---
 title: Create connected goals in Power BI
 description: Learn how to create connected goals.
-author: julcsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -23,7 +23,7 @@ Metrics in Power BI let customers curate their goals and track them against key 
 - Connect either the current or target value to data in an existing Power BI report.
 - Connect both values to data in an existing Power BI report.
 
-This article is about connecting the values to data in an existing Power BI report. Connected values change whenever the underlying data is updated. To learn about creating manual values, see [Create a manual goal](service-goals-create.md#step-2-create-a-manual-metric) in the article **Create scorecards and manual goals**. 
+This article is about connecting the values to data in an existing Power BI report. Connected values change whenever the underlying data is updated. To learn about creating manual values, see [Create a manual goal](service-goals-create.md#step-2-create-a-goal) in the article **Create scorecards and manual goals**. 
 
 ## Connect values to data
 
