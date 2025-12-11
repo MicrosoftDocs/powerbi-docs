@@ -29,8 +29,6 @@ landingContent:
         links:
           - text: Create a report from Excel
             url: service-from-excel-to-stunning-report.md
-          - text: Create a quick report from SharePoint
-            url: service-quick-create-sharepoint-list.md
 
   - title: Design and format your reports
     linkLists:

@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
-ms.date: 04/10/2025
+ms.date: 12/10/2025
 LocalizationGroup: Dashboards
 ms.custom: sfi-image-nochange
 ---
@@ -211,6 +211,16 @@ It can take up to 24 hours for data to update.
 ### There are four reports in the workspace but the usage metrics report only displays three.
 
 The usage metrics report only includes reports (or dashboards) that have been accessed in the past 90 days. If a report or dashboard doesn't show up, it likely hasn't been used in more than 90 days.
+
+### How do I delete and recreate a GCC Usage Metrics Report?
+
+For Government Community Cloud (GCC) environments, you might need to delete and recreate a usage metrics report to refresh the data or resolve issues. To delete the usage metrics report:
+
+1. Go to the workspace containing the usage metrics report.
+1. Select **More options (...)** next to the usage metrics report.
+1. Select **Delete** to remove the report.
+
+To recreate the report, open the original dashboard or report and select **View usage metrics report** again. The system generates a new usage metrics report with current data.
 
 ## Related content
 
