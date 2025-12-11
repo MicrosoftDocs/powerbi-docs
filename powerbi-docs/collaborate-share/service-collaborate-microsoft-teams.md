@@ -10,7 +10,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: article
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
-ms.date: 11/01/2025
+ms.date: 12/10/2025
 ---
 
 # Collaborate with Power BI in Teams
@@ -65,15 +65,14 @@ You can integrate a Power BI report in Teams and share it with external users. F
 - You might have issues if you use Internet Explorer 10. 
 - The **Power BI** tab for Microsoft Teams doesn't support [URL filters](service-url-filters.md).
 - In US Government Community Cloud, the Power BI app for Microsoft Teams and the new tab are available. However, the following experiences aren't available:
-
   - Power BI messaging extension, which provides link previews, search, and link unfurling
   - Power BI activity feed notifications
   - Chat in Microsoft Teams
-
 - In other national or regional clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support workspaces or reports in Power BI apps.
 - After you save the tab, you can't change the tab name through the tab settings. Use the **Rename** option to change it.
 - Link previews don't work in meeting chat or private channels.
 - The messaging extension might process request and response data in a region that's different from your Power BI tenant home region.
+- Fabric items appear in catalogs in the Power BI app but can't be opened in the app. They open in the browser. Fabric items can't be embedded in the Power BI tab.
 
 ## Microsoft Power Platform in Teams
 

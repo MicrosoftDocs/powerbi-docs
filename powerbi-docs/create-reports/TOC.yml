@@ -92,8 +92,6 @@
           href: service-quick-create-report.md
         - name: Create a report from Excel in the service
           href: service-report-create-new.md
-        - name: Create a report quickly from a SharePoint list
-          href: service-quick-create-sharepoint-list.md
         - name: Visualize data quickly from Power Apps and Dynamics 365 apps
           href: dynamics-quick-create-report.md
         - name: Create a quick report in Jupyter
@@ -572,11 +570,11 @@
     items:
     - name: Get started with goals
       href: service-goals-introduction.md
-    - name: Create connected goals
-      href: service-goals-create-connected.md
     - name: Create scorecards and manual goals
       href: service-goals-create.md
-    - name: Goals and Power Automate
+    - name: Create connected goals
+      href: service-goals-create-connected.md
+    - name: Update goals with Power Automate
       href: service-metrics-power-automate.md
     - name: Refresh goals and scorecards
       href: service-metrics-scorecard-refresh.md

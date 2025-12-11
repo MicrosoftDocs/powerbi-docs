@@ -97,6 +97,6 @@ When going through this creation process, you’re creating a model behind the s
 
 - [Reports in Power BI](../consumer/end-user-reports.md)
 - [Create auto-generated "quick" reports](service-quick-create-report.md) in the Power BI service
-- [Create a report quickly from a SharePoint list](service-quick-create-sharepoint-list.md) in the Power BI service
+- [Create a Power BI semantic model directly from a SharePoint list](../connect-data/create-dataset-sharepoint-online-list.md)
 - [Create a report quickly from Dynamics 365](dynamics-quick-create-report.md)
 - More questions? [Try the Power BI Community](https://community.powerbi.com/)

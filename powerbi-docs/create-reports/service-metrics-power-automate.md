@@ -8,68 +8,38 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/30/2024
+ms.date: 12/09/2025
 #customer intent: As a Power BI user, I want to learn how to use power automate to automatically update my goals.
 ---
 # Use Power Automate to update goals automatically
 
 Many organizations want to use scorecards in processes that help them achieve results more quickly. However, manually monitoring scorecards can be resource intensive and error prone. In this documentation, we go over how you automate business processes when important changes happen within your scorecard. It helps organization quickly respond to changing conditions by keeping everyone up to date, and taking automated actions to improve outcomes. This new capability is easy to use: You launch Power Automate right from your scorecard and immediately construct your automated flow.
 
-## Get started
+## Create a flow
 
-1. On the **Metrics** hub page, select the **Scorecards** tab.
+1. On the **Metrics** hub page, select the scorecard you want to update.
 
-1. Select the scorecard you want to update.
+1. Select the **Create a flow** button in the ribbon.
 
-1. Then, select the **Create a flow** button in the ribbon.
+   :::image type="content" source="media/service-metrics-power-automate/flow-from-ribbon.png" alt-text="Screenshot of Access Power Automate by selecting the Create a flow button in the ribbon.":::
 
-:::image type="content" source="media/service-goals-create/flow-from-ribbon.png" alt-text="Screenshot of Access Power Automate by selecting the Create a flow button in the ribbon.":::
+   Power Automate opens the **Power BI** connector page.
 
-## Actions and triggers
+   :::image type="content" source="media/service-metrics-power-automate/power-bi-connector.png" alt-text="Screenshot of the Power BI connector page in Power Automate.":::
 
-For now, we're offering standalone actions and triggers. To get started, select **Create your own flow**, search for *Power BI* in the connector search area, and select **Power BI**.
-
-:::image type="content" source="media/service-goals-create/PBI-connector.png" alt-text="Screenshot of A list of actions and triggers after selecting the Power BI connector.":::
-
-On the **Actions** tab, browse the list of actions.
-
-:::image type="content" source="media/service-goals-create/goals-actions.png" alt-text="Screenshot of A list of the available actions in Power BI Metrics.":::
-
-On the **Triggers** tab, browse the list of triggers.
-
-:::image type="content" source="media/service-goals-create/goals-triggers.png" alt-text="Screenshot of A list of the available triggers in Power BI Metrics.":::
-
-### Actions
-
-The following list of actions is available for your automated flows:
-
-- Create a goal (Preview)
-- Create a check-in (Preview)
-- Add a note to a check-in (Preview)
-- Create a scorecard (Preview)
-- Update a check-in (Preview)
-- Update a goal (Preview)
-- Get scorecards (Preview)
-- Get goal check-ins (Preview)
-
-### Triggers
-
-- When a goal changes, for example, the status of the goal.
-- When someone adds or edits a check-in.
-- When an owner is assigned to a goal.
-- When a data refresh for a goal fails.
+1. Select a trigger to start your flow.
 
 From here, you can create and customize your flows to help automate business processes related to your scorecards. Using Power Automate with your Power BI metrics helps your teams and organization respond more quickly to changing conditions, and use data to take better actions.
 
- :::image type="content" source="media/service-goals-create/example-goals-flow.png" alt-text="Screenshot of An example of a flow you set up in Power Automate for your scorecard.":::
+ :::image type="content" source="media/service-metrics-power-automate/example-goals-flow.png" alt-text="Screenshot of An example of a flow you set up in Power Automate for your scorecard." lightbox="media/service-metrics-power-automate/example-goals-flow.png":::
 
 For more information on what each action and trigger does, see the documentation for each one by selecting the information icon to the right of each item, and selecting **Learn more**.
 
-:::image type="content" source="media/service-goals-create/more-info-goals.png" alt-text="Screenshot of Information icon highlighted next to each action and trigger.":::
+:::image type="content" source="media/service-metrics-power-automate/more-info-goals.png" alt-text="Screenshot of Information icon highlighted next to each action and trigger.":::
 
-You can also see all the documentation by going to the **Actions** section of the [Power BI connectors](/connectors/powerbi/#actions) article.
+## Actions and triggers
 
-:::image type="content" source="media/service-goals-create/docs-for-goals.png" alt-text="Screenshot of A snapshot of the documentation screen for each action and trigger.":::
+Power Automate offers standalone actions and triggers for your automated flows. For a complete list, see [Power BI > Actions](/connectors/powerbi/#actions) and [Power BI > Triggers](/connectors/powerbi/#triggers)
 
 ## Related content
 
