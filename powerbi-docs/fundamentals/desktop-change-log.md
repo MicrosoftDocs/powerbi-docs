@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: concept-article
-ms.date: 12/03/2025
+ms.date: 12/11/2025
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,14 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](whats-new.md) for more information about new features. 
+
+## November 2025 QFE 3 
+
+*Version 2.149.1429.0, Released: December 5, 2025*
+
+Bug fixes/improvements: 
+
+- Addressed a regression where an empty schema was being returned when using more two or more models that contained only tables (with no measures or relationships). This caused errors such as "Something went wrong" or Copilot indicating no models or schema were available in multimodel authoring scenarios.
 
 ## November 2025 QFE 2 
 
