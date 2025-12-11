@@ -94,6 +94,7 @@ Paginated reports time out after 600 seconds when using a Power BI DirectQuery d
           
 For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI semantic model.
 
+## Why do I get an 
   
 
 ## Related content
