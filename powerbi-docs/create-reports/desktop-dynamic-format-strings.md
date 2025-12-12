@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 12/11/2025
 LocalizationGroup: Create reports
 ai-usage: ai-assisted
+ms.custom: references_regions
 ---
 
 # Create dynamic format strings for measures
