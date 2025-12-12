@@ -27,7 +27,12 @@ Learn more about PBIP format in [Power BI Desktop projects (PBIP)](./projects-ov
 
 ## Why fabric-cicd for PBIP deployment?
 
-fabric-cicd is specifically designed for deploying source-controlled, Fabric artifcats and offers several advantages:
+fabric-cicd is specifically designed for deploying source-controlled Fabric artifacts and offers several advantages:
+
+* **Uses Fabric native REST APIs** - Built on official Microsoft Fabric APIs, ensuring compatibility and long-term support
+* **Format-agnostic** - Deploy TMDL or BIM semantic models without conversion
+* **Integrated deployment** - Deploy semantic models and reports together from PBIP projects  
+* **Python-native** - Seamless integration with modern Python-based DevOps workflows
 
 * **Complete deployment**: Deploys both semantic models and reports in a single operation
 * **Parameterization**: Built-in support for environment-specific configurations (workspace IDs, data sources, connection strings)
@@ -42,11 +47,11 @@ Before you begin, ensure you have:
 * [Python](https://www.python.org/) (version 3.9 to 3.12)
 * A Power BI Desktop project saved in PBIP format
 * Your PBIP files in source control (Git, Azure DevOps, or GitHub)
-* Access to a Microsoft Fabric workspace with Contributor or Admin role
+* Access to a Microsoft Fabric workspace with Contributor role
 
 For automated deployments, you also need:
 
-* A service principal with Contributor or Admin role on target Fabric workspaces
+* A service principal with at least the Contributor role on target Fabric workspaces
 * Access to Azure DevOps or GitHub Actions
 
 ## Quick start
@@ -63,20 +68,24 @@ pip install fabric-cicd
 
 ### 2. Prepare your PBIP project
 
-Ensure your PBIP project is saved with the following structure:
+Ensure your PBIP project includes the required files. A typical PBIP project structure:
 
 ```
 my-powerbi-project/
 ├── SalesAnalytics.Report/
-│   └── definition.pbir
+│   ├── definition.pbir          # Required
+│   └── definition/              # Required for PBIR format
+│       └── pages/
 ├── SalesAnalytics.SemanticModel/
-│   ├── definition.pbism
-│   └── definition/              # TMDL format files
+│   ├── definition.pbism         # Required
+│   └── definition/              # Required for TMDL format
 │       ├── model.tmdl
 │       ├── tables/
 │       └── ...
 └── SalesAnalytics.pbip
 ```
+
+For detailed information on required files and formats, see [Power BI Desktop project report folder](./projects-report.md) and [Power BI Desktop project semantic model folder](./projects-dataset.md).
 
 > [!TIP]
 > To create a PBIP project, open your PBIX file in Power BI Desktop and save it using **File > Save As > Power BI Project (.pbip)**. See [Power BI Desktop projects](./projects-overview.md) for more details.
@@ -143,7 +152,9 @@ For complete documentation on these features, see the [fabric-cicd documentation
 
 ## Azure DevOps automation
 
-Automate PBIP deployments with Azure Pipelines. Create `.azuredevops/deploy-pipeline.yml` in your repository:
+Automate PBIP deployments with Azure Pipelines. This example shows how to deploy to different workspaces based on the branch.
+
+Create `.azuredevops/deploy-pipeline.yml` in your repository:
 
 ```yaml
 trigger:
@@ -155,7 +166,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  - group: fabric-prod-credentials
+  - group: fabric-credentials
 
 steps:
   - task: UsePythonVersion@0
@@ -172,7 +183,8 @@ steps:
       azureSubscription: 'fabric-service-connection'
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
-      inlineScript: python deploy.py
+      inlineScript: |
+        python deploy.py
     env:
       AZURE_TENANT_ID: $(AZURE_TENANT_ID)
       AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
@@ -207,17 +219,22 @@ publish_all_items(target_workspace)
 ### Set up Azure DevOps
 
 1. **Create a service principal** in Azure AD with Contributor or Admin role on your Fabric workspaces
-2. **Create a variable group** named `fabric-prod-credentials` with:
+2. **Create a variable group** named `fabric-credentials` with:
    - `AZURE_TENANT_ID`: Your Azure tenant ID
    - `AZURE_CLIENT_ID`: Service principal client ID
    - `AZURE_CLIENT_SECRET`: Service principal secret (mark as secret)
    - `FABRIC_WORKSPACE_ID`: Target workspace ID
 3. **Create an Azure service connection** in Azure DevOps project settings
-4. **Commit the pipeline YAML** to your repository
+4. **Commit the pipeline YAML** and deployment script to your repository
+
+> [!TIP]
+> For advanced scenarios like pre-deployment validation, orphan cleanup, or environment-specific parameterization, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
 
 ## GitHub Actions automation
 
-Automate PBIP deployments with GitHub Actions. Create `.github/workflows/deploy.yml` in your repository:
+Automate PBIP deployments with GitHub Actions. This example shows how to deploy to different workspaces based on the branch.
+
+Create `.github/workflows/deploy.yml` in your repository:
 
 ```yaml
 name: Deploy PBIP to Fabric
@@ -257,65 +274,10 @@ jobs:
    - `AZURE_CLIENT_ID`: Service principal client ID
    - `AZURE_CLIENT_SECRET`: Service principal secret
    - `FABRIC_WORKSPACE_ID`: Target workspace ID
-3. **Commit the workflow YAML** to your repository
+3. **Commit the workflow YAML** and deployment script to your repository
 
-## Best practices
-
-### Development workflow
-
-* **Use PBIP format**: Save your Power BI Desktop files as PBIP projects for better source control integration
-* **Source control**: Commit PBIP files to Git (Azure DevOps or GitHub) for version history and collaboration
-* **Branch strategy**: Use feature branches for development and merge to main for production deployments
-* **Pull requests**: Require PR reviews before deploying to production workspaces
-
-### Security
-
-* **Service principal**: Use dedicated service principals for automated deployments (not personal accounts)
-* **Least privilege**: Grant Contributor role on target workspaces (Admin only if necessary)
-* **Secret management**: Store credentials in Azure Key Vault, GitHub Secrets, or Azure DevOps variable groups
-* **Rotate secrets**: Regularly rotate service principal client secrets
-
-### Deployment
-
-* **Deploy to dev first**: Always test deployments in development workspace before production
-* **Test after deployment**: Open reports and semantic models in Fabric portal to verify deployment success
-* **Combine with validation**: Use fabric-cicd with [Azure DevOps build pipelines](./projects-build-pipelines.md) for automated quality checks before deployment
-
-## Troubleshooting
-
-### Authentication errors
-
-**Issue**: `ClientAuthenticationError: Unauthorized`
-
-**Solutions**:
-* For local: Use `InteractiveBrowserCredential` or run `az login`
-* For CI/CD: Verify service principal has Contributor or Admin role on the workspace
-
-### Items not deploying
-
-**Issue**: Semantic models or reports aren't appearing in the workspace
-
-**Solutions**:
-* Verify `item_type_in_scope` includes the items you want: `["SemanticModel", "Report"]`
-* Check that folders end with correct extensions (.SemanticModel, .Report)
-* Review deployment logs for specific errors
-
-### Report not connecting to semantic model
-
-**Issue**: Report deploys but shows "Can't connect to the data model"
-
-**Solutions**:
-* Ensure semantic model is deployed before or with the report
-* Check that the report's definition.pbir references the correct semantic model
-* Verify workspace IDs match if using parameterization
-
-## Next steps
-
-* [Power BI Desktop projects (PBIP)](./projects-overview.md) - Learn about PBIP format
-* [Power BI Desktop project semantic model folder](./projects-dataset.md) - Understand the semantic model structure
-* [Power BI Desktop project report folder](./projects-report.md) - Understand the report structure
-* [Azure DevOps build pipelines for validation](./projects-build-pipelines.md) - Add automated quality checks
-* [Git integration with Power BI Desktop projects](./projects-git.md) - Use Git for version control
+> [!TIP]
+> For advanced scenarios like pre-deployment validation, orphan cleanup, or environment-specific parameterization, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
 
 ## Related content
 
