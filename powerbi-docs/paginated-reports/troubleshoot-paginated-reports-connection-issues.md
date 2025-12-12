@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot paginated report session issues"
+title: "Troubleshoot paginated report connection issues"
 description: In this article, diagnose and fix connection issues with paginated reports.
 author: JulCsc
 ms.author: juliacawthra
@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 ---
 # Troubleshoot paginated report connection issues
 
-Before the report processor can retrieve the report data a session must be created. Then connection to underlying data sources must be created.
+Before the report processor can retrieve the report data a session must be created. Then connections to underlying data sources must be created.
 
 Use this topic to help troubleshoot issues specific to report specific connection issues.
 
