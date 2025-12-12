@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot paginated report session issues"
-description: In this article, diagnose and fix session creation issues with paginated reports.
+description: In this article, diagnose and fix connection issues with paginated reports.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
@@ -10,11 +10,11 @@ ms.topic: troubleshooting
 ms.date: 12/12/2025
 ai-usage: ai-assisted
 ---
-# Troubleshoot paginated report session issues
+# Troubleshoot paginated report connection issues
 
-Before the report processor can retrieve the report data a session must be created. 
+Before the report processor can retrieve the report data a session must be created. Then connection to underlying data sources must be created.
 
-Use this topic to help troubleshoot issues specific to report session creation.
+Use this topic to help troubleshoot issues specific to report specific connection issues.
 
 ## Why do I get a "Your session has expired" message?
 
