@@ -18,7 +18,7 @@ LocalizationGroup: Reports
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 > [!IMPORTANT]
-> **This article is for Power BI service users who don't have edit permissions for a report or semantic model. If you're a report designer, administrator, or owner, see [Sort one column by another column in Power BI](../create-reports/desktop-sort-by-column.md) for information that is more relevant to you**.
+> **This article is for Power BI service users who don't have edit permissions for a report or semantic model and are viewing reports in a web browser (app.powerbi.com) or mobile app. If you're using Power BI Desktop or you're a report designer, administrator, or owner, see [Sort one column by another column in Power BI](../create-reports/desktop-sort-by-column.md) for information that is more relevant to you**.
 
 In the Power BI service, you can highlight important information in a visual by sorting data fields. Some fields contain numeric data (such as sales figures) and some contain text data (such as state names). After you sort a visual, you can [save a personalized version](#save-your-sort-order-changes) of your changes. The Power BI service provides flexibility and quick menus that allow you to efficiently sort your visuals.
 
@@ -26,7 +26,12 @@ In a Power BI report, you can sort most visuals by one, and sometimes two fields
 
 ## Get started
 
-To choose a sorting option, open any report that you created or that is shared with you. Select a visual that can be sorted, and choose **More options** (...). Depending on the type of visual, the sorting options are **Sort descending**, **Sort ascending**, **Sort by,** and **Sort axis**.
+To choose a sorting option, open any report that you created or that is shared with you. Select a visual that can be sorted, and choose **More options** (...).
+
+> [!NOTE]
+> If you don't see the **More options** (...) menu, you might be viewing a dashboard instead of a report. Sorting options are only available in reports, not on dashboard tiles. If you're in a report and still don't see sorting options, the visual type might not support sorting, or the report designer might have restricted this feature.
+
+Depending on the type of visual, the sorting options are **Sort descending**, **Sort ascending**, **Sort by,** and **Sort axis**.
 
 :::image type="content" source="media/end-user-change-sort/power-bi-actions.png" alt-text="Screenshot showing the visual's More options menu. The sorting options are outlined.":::
 
@@ -62,7 +67,7 @@ Power BI reports retain the filters, slicers, sorting, and other data view chang
 
 ![Screenshot showing the reset to default button.](media/end-user-change-sort/power-bi-reset-green.png)
 
-The report designer can prevent changes from being saved. If they do, the **Reset to default** button is greyed out.
+The report designer can prevent changes from being saved. If they do, the **Reset to default** button is greyed out and you can't save your sort changes.
 
 You can also save your changes with [bookmarks](end-user-bookmarks.md), if the report designer enables the **Personalize visual** feature for the report. You can change the sort order of a visual and save it as a bookmark. If you see the personalize visual icon :::image type="icon" source="media/end-user-change-sort/power-bi-personalize-visual-icon.png"::: in the visual's header, this feature is enabled. You don't need edit permissions to use this feature.
 

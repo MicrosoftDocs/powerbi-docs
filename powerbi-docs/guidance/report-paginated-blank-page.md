@@ -20,7 +20,7 @@ This article targets you as a report author designing Power BI [paginated report
 Report page size properties determine the page orientation, dimensions, and margins. Access these report properties by:
 
 - Using the report **Property Page**: Right-click the dark gray area outside the report canvas, and then select _Report Properties_.
-- Using the [**Properties** pane](../paginated-reports/paginated-reports-report-design-view.md#4-properties-pane): Click the dark gray area outside the report canvas to select the report object. Ensure the **Properties** pane is open.
+- Using the [**Properties** pane](../paginated-reports/paginated-reports-report-design-view.md#properties-pane): Click the dark gray area outside the report canvas to select the report object. Ensure the **Properties** pane is open.
 
 The **Page Setup** page of the report **Property Page** provides a friendly interface to view and update the page setup properties.
 
