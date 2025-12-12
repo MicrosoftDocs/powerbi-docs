@@ -96,7 +96,7 @@ For paginated reports running longer than 10 minutes, we recommend using  the XM
 
 ## Why do I get a "There was an error when attempting to create a new session" message?
 
-We’re having trouble connecting to the service. Please check your network connection or VPN settings, then try again. If the issue continues, there may be a network policy or firewall blocking required access. [Learn more](./troubleshoot-paginated-reports-execution-issues.md)
+We’re having trouble connecting to the service. Please check your network connection or VPN settings, then try again. If the issue continues, there may be a network policy or firewall blocking required access.
   
 
 ## Related content
