@@ -136,7 +136,7 @@ One quick way to create a table is to use the Table Wizard.
 
 1. To make a flat table, select the fields you want in **Available fields**. You can select multiple fields at a time by selecting the first one you want, holding the Shift key, and selecting the last one.
 
-    :::image type="content" source="media/report-builder-shared-datasets/power-bi-report-builder-select-fields.png" alt-text="Screenshot of the available fields available in the Table Wizard.":::
+    :::image type="content" source="media/report-builder-shared-datasets/power-bi-report-builder-select-fields.png" alt-text="Screenshot of the fields available in the Table Wizard.":::
 
 1. Drag the fields to the **Values** box > **Next**.
 
