@@ -96,7 +96,7 @@ For paginated reports running longer than 10 minutes, we recommend using  the XM
 
 ## Why do I get a "There was an error when attempting to create a new session" message?
 
-We’re having trouble connecting to the service. Please check your network connection or VPN settings, then try again. If the issue continues, there may be a network policy or firewall blocking required access.
+This error occurs when something unexpected occurs when conecting to the service during the rendering of a report. Please check your network connection, VPN settings, network policies and firewall rules to ensure there is nothing that would block traffic back to the Power BI service.
   
 
 ## Related content
