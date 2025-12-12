@@ -1252,6 +1252,8 @@
         href: ../paginated-reports/subreports-troubleshoot.md
       - name: Troubleshoot paginated report execution issues
         href: ../paginated-reports/troubleshoot-paginated-reports-execution-issues.md
+      - name: Troubleshoot paginated report connection issues
+        href: ../paginated-reports/troubleshoot-paginated-reports-connection-issues.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
