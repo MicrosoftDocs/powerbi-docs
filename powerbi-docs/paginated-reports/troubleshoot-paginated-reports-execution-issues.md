@@ -80,25 +80,6 @@ For soft page-break renderers, to view all the data on one page, in Report prope
   
 For more information about categories of renderers, see [Rendering Behaviors](./report-design/render-behaviors-report-builder-service.md).
 
-## Why do I get a "Your session has expired" message?
-
-When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with a "Your session has expired" notification.
-
-The session times out after 10 minutes of inactivity, or earlier when the device is locked or inactive.
-
-## Why do I get an "Error communicating with Analysis Service" message?
-
-Paginated reports time out after 600 seconds when using a Power BI DirectQuery dataset as a source. After 600 seconds, you receive this error: 
-          
-"There was an error communicating with Analysis Services. Please verify that the data source is available and your credentials are correct. The connection either timed out or was lost." 
-          
-For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI semantic model.
-
-## Why do I get a "There was an error when attempting to create a new session" message?
-
-This error occurs when something unexpected occurs when conecting to the service during the rendering of a report. Please check your network connection, VPN settings, network policies and firewall rules to ensure there is nothing that would block traffic back to the Power BI service.
-  
-
 ## Related content
 
 - [Troubleshoot Design Issues With Paginated Reports](./troubleshoot-paginated-reports-design-issues.md)
