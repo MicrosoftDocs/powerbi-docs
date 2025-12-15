@@ -7,7 +7,7 @@ ms.reviewer: tebercov , shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 02/14/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI developer, I want to learn how to use on-object formatting utils in Power BI custom visuals, so that I can create custom visuals that support on-object formatting.
 ---
 

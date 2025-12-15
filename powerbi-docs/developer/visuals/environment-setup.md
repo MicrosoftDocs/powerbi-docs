@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/20/2024
+ms.date: 12/15/2025
 ms.custom: engagement-fy23
 #customer intent: As a Power BI visual developer, I want to learn how to set up my environment so that I can develop a Power BI visual.
 ---

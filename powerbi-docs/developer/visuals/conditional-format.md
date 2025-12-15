@@ -7,7 +7,7 @@ ms.reviewer: Jenny, Aleksei
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 08/19/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to apply conditional formatting to my custom visual so I can customize the visual appearance based on the data values.
 ---
 

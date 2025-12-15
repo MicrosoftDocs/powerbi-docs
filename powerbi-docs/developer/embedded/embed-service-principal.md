@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/14/2024
+ms.date: 12/15/2025
 ms.custom:
   - ""
   - sfi-image-nochange

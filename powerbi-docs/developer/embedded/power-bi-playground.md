@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 03/03/2024
+ms.date: 12/15/2025
 ms.custom: intro-overview
 #customer intent: As a developer, I want to learn about the Power BI embedded analytics playground so that I can explore and try out Power BI embedded analytics.
 ---

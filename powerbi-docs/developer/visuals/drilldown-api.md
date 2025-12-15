@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/19/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to create a Power BI custom visual that can drill down into the data so I can explore my data in depth in Power BI embedded analytics.
 ---
 

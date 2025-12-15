@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/09/2024
+ms.date: 12/15/2025
 #customer intent: As a developer, I want to learn how to publish my Power BI visual to the Microsoft commercial marketplace so that others can discover and use it.
 ---
 

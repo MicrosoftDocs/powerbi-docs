@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 01/10/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI developer, I want to learn how to use tooltip utils to simplify tooltip customization in my Power BI visuals.
 ---
 # Tooltip utils

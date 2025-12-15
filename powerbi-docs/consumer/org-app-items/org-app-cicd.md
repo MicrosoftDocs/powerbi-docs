@@ -7,7 +7,7 @@ ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/04/2025
+ms.date: 12/15/2025
 #customer intent: As a Power BI user, I want to learn how to set up continuous integration and delivery (CI/CD) for org apps in Microsoft Fabric so that I can automate the deployment process.
 ---
 

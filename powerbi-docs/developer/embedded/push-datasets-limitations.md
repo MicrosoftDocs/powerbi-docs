@@ -8,7 +8,7 @@ reviewer: Eklavya Mirani
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 06/04/2024
+ms.date: 12/15/2025
 ---
 
 # Push semantic model limitations
