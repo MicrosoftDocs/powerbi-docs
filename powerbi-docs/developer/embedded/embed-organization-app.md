@@ -6,7 +6,7 @@ ms.author: billmath
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 06/03/2024
+ms.date: 12/15/2025
 ---
 
 # Tutorial: Embed a Power BI report in an application for your organization

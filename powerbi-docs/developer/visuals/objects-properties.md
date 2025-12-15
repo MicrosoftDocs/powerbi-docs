@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 10/11/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn about the objects and properties of Power BI visuals so that I can customize my visuals.
 ---
 

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom:
-ms.date: 03/07/2024
+ms.date: 12/15/2025
 ---
 
 # Tutorial: Embed Power BI content into your application for national/regional clouds

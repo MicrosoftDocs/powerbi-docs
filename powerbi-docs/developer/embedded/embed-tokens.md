@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
-ms.date: 10/10/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI developer, I want to learn which tokens my app needs to authenticate against Azure and Power BI service so that I can embed Power BI content in my app.
 ---
 

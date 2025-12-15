@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/17/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to add a landing page to my visual so that I can display information in the visual card before the card gets data.
 ---
 

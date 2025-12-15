@@ -7,7 +7,7 @@ ms.reviewer: v-asemenov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 1/31/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to create a visual that doesn't require data binding so that I can create visuals that don't need data roles.
 ---
 

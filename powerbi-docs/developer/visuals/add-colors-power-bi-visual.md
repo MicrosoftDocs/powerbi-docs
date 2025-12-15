@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 3/10/2025
+ms.date: 12/15/2025
 # Customer intent: As a developer, I want to learn how to add colors to my custom visuals in Power BI so that I can create more visually appealing reports.
 ---
 

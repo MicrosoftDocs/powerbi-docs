@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 01/24/2024
+ms.date: 12/15/2025
 ms.custom:
   - has-azure-ad-ps-ref
   - azure-ad-ref-level-one-done

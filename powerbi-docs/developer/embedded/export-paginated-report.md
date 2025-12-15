@@ -6,7 +6,7 @@ ms.author: billmath
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/23/2024
+ms.date: 12/15/2025
 #customer intent: As a developer, I want to export a paginated report to a file so that I can share it with others.
 ---
 
