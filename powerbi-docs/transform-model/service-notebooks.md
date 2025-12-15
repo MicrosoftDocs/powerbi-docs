@@ -62,7 +62,6 @@ The following requirements and permissions settings apply to notebooks:
 
 The following considerations and limitations should be taken into account when working with notebooks:
 
-* Notebooks use Python, which is currently a [preview experience](/fabric/data-engineering/using-python-experience-on-notebook). For a General Availability experience, you can change the language to PySpark from the language dropdown menu in the **Home** tab.
 * Notebooks fail to run if the semantic model name ends with a whitespace.
 
 
