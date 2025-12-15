@@ -3,8 +3,7 @@ title: Create connected goals in Power BI
 description: Learn how to create connected goals.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: ''
-featuredvideoid: ''
+ms.reviewer: monicacl
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -20,10 +19,9 @@ ms.custom: sample-salesandmarketing
 Metrics in Power BI let customers curate their goals and track them against key business objectives. When choosing values for your goals, you have the choice to:
 
 - Manually enter the current and target values.
-- Connect either the current or target value to data in an existing Power BI report.
-- Connect both values to data in an existing Power BI report.
+- Connect the current value, the target value, or both to data in an existing Power BI report.
 
-This article is about connecting the values to data in an existing Power BI report. Connected values change whenever the underlying data is updated. To learn about creating manual values, see [Create a manual goal](service-goals-create.md#step-2-create-a-goal) in the article **Create scorecards and manual goals**. 
+This article is about connecting the values to data in an existing Power BI report. Connected values change whenever the underlying data is updated.
 
 ## Connect values to data
 
@@ -31,15 +29,18 @@ You can connect either the current or the target value, or both, to a value in a
 
 1. [Create a goal or edit an existing goal](service-goals-create.md) in a scorecard.
 
-1. In the **Current** or **Target** field, select **Connect to data**.
+1. In the **Current value** or **Final target** field, select **Connect to data**.
 
-1. In the dialog, search for the report with the data that you want to track, select it > **Next**.
+   :::image type="content" source="media/service-goals-create-connected/connect-to-data.png" alt-text="Screenshot that shows selecting connect to data for the current value of a goal." lightbox="media/service-goals-create-connected/connect-to-data.png":::
 
-    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-report.png" alt-text="Screenshot of Select the report that contains the data value you want to connect to.":::
+1. In the dialog, search for the report with the data that you want to track. Select the report, then select **Next**.
 
-    This list contains all the reports that you have access to, across all workspaces, in Power BI.  
+   :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-report.png" alt-text="Screenshot of Select the report that contains the data value you want to connect to.":::
+
+   This list contains all the reports that you have access to, across all workspaces, in Power BI.  
 
 1. In the report that you selected, navigate to the visual that contains the data you want to track.
+
 1. Select the data point or visual. Power BI displays the measure card, summarizing all the filters applied to the selection.
 
     :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-data-point.png" alt-text="Screenshot of Select the data point you want to use as your Current or Target.":::

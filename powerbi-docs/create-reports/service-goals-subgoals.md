@@ -28,11 +28,11 @@ You can define one or more subgoals for a goal. Like their parent goals, subgoal
 
    * Select the goal you want to create a subgoal for, then select **New** > **Add subgoal**.
 
-    :::image type="content" source="media/service-goals-subgoals/power-bi-goals-add-subgoal-button.png" alt-text="Screenshot showing how to select the Add Subgoal button.":::
+     :::image type="content" source="media/service-goals-subgoals/power-bi-goals-add-subgoal-button.png" alt-text="Screenshot showing how to select the Add Subgoal button.":::
 
    * Hover over the goal you want to create a subgoal for, then select **More options (...)** > **New subgoal**.
 
-    :::image type="content" source="media/service-goals-subgoals/power-bi-goals-add-subgoal-more-options.png" alt-text="Screenshot showing how to select more options, then add subgoal.":::
+     :::image type="content" source="media/service-goals-subgoals/power-bi-goals-add-subgoal-more-options.png" alt-text="Screenshot showing how to select more options, then add subgoal.":::
 
 1. Repeat the previous step as needed to create more subgoals.
 
