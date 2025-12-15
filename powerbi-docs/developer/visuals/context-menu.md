@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/22/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to add a context menu to my visual so that I can perform various operations on the visual.
 ---
 

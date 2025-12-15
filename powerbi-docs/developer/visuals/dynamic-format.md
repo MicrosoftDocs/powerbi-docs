@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/12/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to use dynamic format strings in my custom visual so that I can process values with dynamic formatting.
 ---
 

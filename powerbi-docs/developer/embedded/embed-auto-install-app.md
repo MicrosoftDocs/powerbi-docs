@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom:
-ms.date: 01/07/2025
+ms.date: 12/15/2025
 # customer intent: As a developer, I want to learn how to set up automatic app installation for Power BI apps when embedding content from apps for my organization.
 ---
 

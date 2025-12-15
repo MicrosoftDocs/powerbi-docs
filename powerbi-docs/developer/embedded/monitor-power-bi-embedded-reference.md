@@ -1,7 +1,7 @@
 ---
 title: Monitoring data reference for Power BI Embedded
 description: Learn about using Power BI Embedded to monitor critical applications and business processes that rely on Azure resources.
-ms.date: 07/30/2024
+ms.date: 12/15/2025
 ms.custom: horz-monitor, engagement-fy23
 ms.topic: reference
 author: billmath

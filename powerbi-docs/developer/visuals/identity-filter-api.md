@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/17/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to create a visual that can filter categorical data using a semantic query so that I can explore different types of data in depth in Power BI embedded analytics.
 ---
 

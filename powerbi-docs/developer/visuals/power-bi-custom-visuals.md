@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 11/2/2024
+ms.date: 12/15/2025
 LocalizationGroup: Visualizations
 ms.custom: intro-overview, engagement-fy23
 #customer intent: As a Power BI user, I want to learn about the different sources for acquiring custom visuals so that I can enhance my Power BI reports.

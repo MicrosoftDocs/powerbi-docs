@@ -7,7 +7,7 @@ ms.reviewer: tebercov , shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 02/19/2024
+ms.date: 12/15/2025
 ---
 
 # Subselection API (preview)

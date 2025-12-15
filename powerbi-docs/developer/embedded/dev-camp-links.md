@@ -6,7 +6,7 @@ ms.author: billmath
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 02/02/2025
+ms.date: 12/15/2025
 ---
 
 # Power BI Dev Camp

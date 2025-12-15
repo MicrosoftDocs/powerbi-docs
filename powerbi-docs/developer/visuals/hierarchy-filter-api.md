@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/17/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to use the hierarchical identity filters API to filter data on multiple fields at a time based on data points that use a hierarchy structure.
 ---
 

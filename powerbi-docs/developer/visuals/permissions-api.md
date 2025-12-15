@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/28/2024
+ms.date: 12/15/2025
 ---
 
 # Check permissions API

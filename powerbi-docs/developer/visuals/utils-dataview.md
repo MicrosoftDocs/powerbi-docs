@@ -8,7 +8,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 01/13/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to use DataViewUtils to simplify parsing of the DataView object for Power BI visuals.
 ---
 

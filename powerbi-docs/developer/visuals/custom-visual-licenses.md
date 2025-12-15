@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 06/05/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI user, I want to understand how the licenses for Power BI visuals purchased on AppSource are enforced so that I can use the visuals correctly.
 ---
 

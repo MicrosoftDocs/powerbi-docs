@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 12/17/2023
+ms.date: 12/15/2025
 ---
 
 # Visual API

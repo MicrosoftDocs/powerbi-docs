@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/12/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to enable sorting options for my visual so that users can sort data in the visual.
 ---
 

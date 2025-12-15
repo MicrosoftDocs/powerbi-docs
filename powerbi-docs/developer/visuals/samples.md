@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 10/13/2024
+ms.date: 12/15/2025
 #customer intent: As a developer, I want to learn about various Power BI visuals available on GitHub so that I can use them in my projects.
 ---
 
