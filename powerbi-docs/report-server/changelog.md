@@ -49,6 +49,9 @@ Note: This is the first release of Power BI Desktop for RS that will not include
 
 ### Power BI Report Server
 
+> [!IMPORTANT]
+> Starting with the May 2025 version of Power BI Desktop for RS, your CPU must support Advanced Vector Extensions (AVX) instructions. If your CPU doesn't support AVX instructions, you might encounter unexpected errors when rendering visuals in Power BI Desktop or Power BI Report Server. Even if your CPU supports AVX, the host machine's BIOS or virtualization settings could have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration. 
+
 - *Version: 1.23.9316.13987 (build 15.0.1118.134), Released: July 9, 2025*
   - Bug fixes
     - Fixed issue with document map not expanding when viewing paginated reports.
