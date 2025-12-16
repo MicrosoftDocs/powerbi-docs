@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/22/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI developer, I want to learn how to check whether Power BI visuals should allow visual interactions so that I can create effective interactive visuals.
 ---
 

@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/11/2024
+ms.date: 12/15/2025
 ms.custom: sfi-image-nochange
 
 #customer intent: As a Power BI visual developer, I want to learn how to set up authentication for third party ISVs in Microsoft Entra for single sign-in users.

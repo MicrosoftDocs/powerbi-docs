@@ -6,7 +6,7 @@ ms.author: billmath
 ms.topic: concept-article
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 06/03/2024
+ms.date: 12/15/2025
 ---
 
 # Connect a report to a semantic model using dynamic binding

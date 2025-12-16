@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
 ms.custom: engagement-fy23
-ms.date: 01/02/2025
+ms.date: 12/15/2025
 # Customer intent: As a developer, I want to generate an embed token so that I can embed Power BI content in my application.
 ---
 

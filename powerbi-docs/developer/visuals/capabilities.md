@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 12/12/2023
+ms.date: 12/15/2025
 #customer intent: To understand the capabilities.json file and properties of Power BI visuals.
 ---
 

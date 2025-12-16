@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/19/2023
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to enable the support multiple visual selection feature in my visual so that users can apply a selection to multiple visuals in a report.
 ---
 

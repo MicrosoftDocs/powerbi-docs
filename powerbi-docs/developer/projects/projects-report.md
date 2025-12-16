@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: article
-ms.date: 09/10/2025
+ms.date: 12/15/2025
 ---
 
 # Power BI Desktop project report folder

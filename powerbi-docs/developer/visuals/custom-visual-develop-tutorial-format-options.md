@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 10/10/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to add formatting options to my custom visual so I can customize the visual appearance.
 ---
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
-ms.date: 04/04/2025
+ms.date: 12/15/2025
 ---
 
 # Service principal profiles for multitenancy apps in Power BI Embedded

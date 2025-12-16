@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 07/03/2024
+ms.date: 12/15/2025
 ---
 
 # Power BI visuals API changelog

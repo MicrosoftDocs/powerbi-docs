@@ -6,7 +6,7 @@ ms.author: billmath
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 03/13/2025
+ms.date: 12/15/2025
 ms.custom: intro-overview
 #customer intent: As a developer, I want to learn about Power BI embedded analytics so that I can embed Power BI content in my applications.
 ---
