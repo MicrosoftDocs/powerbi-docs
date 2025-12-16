@@ -27,7 +27,7 @@ These are the requirements for the latest generally available (GA) version.
 
 | Component | Requirement |
 | --- | --- |
-| .NET Framework |4.8<br><br>If the server doesn't have internet access, you can manually install the .NET Framework from [Microsoft .NET Framework 4.8 (Offline Installer) for Windows](https://support.microsoft.com/help/4503548/).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.8 see [.NET Framework Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers).<br/> |
+| .NET Framework |4.8 or later<br><br>If the server doesn't have internet access, you can manually install the .NET Framework from [Microsoft .NET Framework 4.8 (Offline Installer) for Windows](https://support.microsoft.com/help/4503548/).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.8 see [.NET Framework Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers).<br/> |
 | Hard Disk |Power BI Report Server requires a minimum of 1 GB of available hard-disk space.<br><br>Addition space will be required on the database server that is hosting the report server database. |
 | Memory |**Minimum:** 1 GB<br/><br/> **Recommended:** At least 4 GB |
 | Processor speed |**Minimum:** x64 Processor: 1.4 GHz<br/><br/> **Recommended:** 2.0 GHz or faster |
@@ -47,7 +47,7 @@ SQL Server is used to host the report server databases. The SQL Server Database 
 * SQL Server 2019
 * SQL Server 2017
 * SQL Server 2016
-* SQL Server 2014
+* SQL Server 2014 SP3
 
 When you create the report server database on a remote computer, you have to configure the connection to use a domain user account or a service account with network access. If you decide to use a remote SQL Server instance, consider carefully which credentials the report server should use to connect to the SQL Server instance. For more information, see [Configure a Report Server Database Connection](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
