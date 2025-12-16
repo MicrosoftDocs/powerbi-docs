@@ -49,6 +49,8 @@ Note: This is the first release of Power BI Desktop for RS that will not include
 
 ### Power BI Report Server
 
+note
+
 - *Version: 1.23.9316.13987 (build 15.0.1118.134), Released: July 9, 2025*
   - Bug fixes
     - Fixed issue with document map not expanding when viewing paginated reports.
