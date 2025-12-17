@@ -77,6 +77,8 @@ In this table, a custom app refers to a web app created using embedded analytics
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✔        |✖        |✔         |
 
 >[!NOTE]
+> Azure Embedded (F SKU) capacities aren't supported in the GCC environment. Only EM and P SKUs are available for use in GCC. Azure Embedded capacities are supported in GCC High and DoD environments.
+>
 > To read more about **F SKU**s see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Capacity considerations
