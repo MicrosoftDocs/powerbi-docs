@@ -181,7 +181,7 @@ Add a new page to your report. The new report page canvas is blank and shows the
 
    :::image type="content" source="media/service-get-started/open-new-dashboard.png" alt-text="Screenshot of the Pinned to dashboard dialog with the option to go to the new dashboard." border="false":::
 
-   Your dashboard shows the tiles you pinned earlier when you were using Coplot plus the line chart that you created. 
+   Your dashboard shows the tiles you pinned earlier when you were using Copilot plus the line chart that you created. 
 
    :::image type="content" source="media/service-get-started/power-bi-dashboard-tiles.png" alt-text="Screenshot that shows the dashboard with a pinned visualization tile." :::
 
