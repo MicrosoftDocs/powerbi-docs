@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 11/23/2025
+ms.date: 12/18/2025
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,12 @@ For related "What's New" information, see:
 
 - [What's new in Power BI](../../fundamentals/whats-new.md)
 - [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
+
+## December 2025
+
+### Attach a report or semantic model to Copilot chat
+
+Now you can attach a report or semantic model to your Copilot chat for more relevant answers. Just tap **+** or type **/** in the chat field to find and select an item, then Copilot focus its answers on your data. For more information, see [Attach an item as reference](./mobile-standalone-copilot.md#attach-an-item-as-reference).
 
 ## November 2025
 

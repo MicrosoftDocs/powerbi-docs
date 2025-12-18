@@ -7,11 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
-ms.date: 10/01/2025
+ms.date: 12/18/2025
 ai-usage: ai-assisted
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
 ---
-# Tutorial: Ask questions with the Q&A virtual analyst in the Power BI iOS apps
+# Tutorial: Ask questions by using the Q&A virtual analyst in the Power BI iOS apps
+
+> [!IMPORTANT]
+> Q&A experiences retire in December 2026. Use [Copilot for Power BI](../../create-reports/copilot-introduction.md), which provides a more advanced and integrated way to query your data by using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 The easiest way to learn about your data is to ask questions in your own words. In this tutorial, you use the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad or iPhone to ask questions and view featured insights about sample data.
 
@@ -35,7 +38,7 @@ In this tutorial, you:
 
 ## Q&A virtual analyst
 
-Use a conversational BI experience that suggests initial insights, lets you type or speak natural language questions, and returns visuals you can expand, annotate, or mark as favorite.
+Use a conversational BI experience that suggests initial insights, lets you type or speak natural language questions, and returns visuals you can expand, annotate, or mark as a favorite.
 
 Key capabilities:
 
@@ -46,9 +49,9 @@ Key capabilities:
 
 ## Ask questions
 
-1. Type “show sales”.
-1. Add “by item”.
-1. Add “as column chart” or select a chart icon.
+1. Type "show sales".
+1. Add "by item".
+1. Add "as column chart" or select a chart icon.
 1. Select and hold the visual, then select **Expand**.
 
 ## Use voice
@@ -58,14 +61,14 @@ Key capabilities:
 1. Select **Send** to show the answer.
 1. Select **Clear text** (X) to start a new question.
 
-## Help & feedback
+## Help and feedback
 
 - Type "help" or "hi" for tips.
-- Select and hold a visual, then select positive or negative feedback to improve future responses (feedback is anonymous).
+- Select and hold a visual, then select positive or negative feedback to improve future responses. Feedback is anonymous.
 
 ## Improve results
 
-Enhance synonyms, descriptions, and default aggregations to improve Q&A interpretation. Learn more in [Make your data work well with Q&A and the Q&A virtual analyst](../../create-reports/service-prepare-data-for-q-and-a.md).
+Enhance synonyms, descriptions, and default aggregations to improve Q&A interpretation. For more information, see [Make your data work well with Q&A and the Q&A virtual analyst](../../create-reports/service-prepare-data-for-q-and-a.md).
 
 ## Prerequisites
 
@@ -78,13 +81,11 @@ After you complete the prerequisites and download the sample data, view the samp
 ## Try featured insights
 
 1. On your iPhone or iPad, open the Power BI app and sign in with the same Power BI credentials you use in the browser.
-
 1. On the home page, tap the **Workspaces** icon.
 
     :::image type="content" source="./media/tutorial-mobile-apps-ios-qna/power-bi-qna-open-myworkspace.png" alt-text="Screenshot of Power BI iOS app showing the Workspaces icon selected to open My Workspace.":::
 
 1. In **My Workspaces**, select the **Opportunity Analysis Sample** dashboard.
-
 1. On the Opportunity Analysis Sample dashboard, tap the Q&A virtual analyst icon.
 
     :::image type="content" source="./media/tutorial-mobile-apps-ios-qna/power-bi-qna-open-qna.png" alt-text="Screenshot of Opportunity Analysis Sample dashboard with the Q&A virtual analyst icon highlighted.":::
@@ -109,10 +110,10 @@ After you complete the prerequisites and download the sample data, view the samp
 
 ## Clean up resources
 
-After you finish the tutorial, delete the Opportunity Analysis sample dashboard, report, and semantic model. For instructions, see [Clean up resources](../../fundamentals/service-get-started.md#clean-up-resources).
+When you finish the tutorial, delete the Opportunity Analysis sample dashboard, report, and semantic model. For instructions, see [Clean up resources](../../fundamentals/service-get-started.md#clean-up-resources).
 
 ## Related content
 
-Try the Q&A virtual analyst in the Power BI iOS mobile app to explore sample insights, then learn more about Q&A in the Power BI service.
+Try the Q&A virtual analyst in the Power BI iOS mobile app to explore sample insights. Then, learn more about Q&A in the Power BI service.
 > [!div class="nextstepaction"]
 > [Q&A in the Power BI service](../end-user-q-and-a.md)
