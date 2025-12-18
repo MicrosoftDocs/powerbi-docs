@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 11/23/2025
+ms.date: 12/18/2025
 ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 #customer intent: As a Power BI mobile user, I want to use a full-screen Copilot experience to ask questions about my data from anywhere in the app without needing to open specific reports first.
@@ -54,6 +54,16 @@ When you ask questions about your data, Copilot works to understand your topic o
 :::image type="content" source="media/mobile-standalone-copilot/copilot-ask-question.png" lightbox="media/mobile-standalone-copilot/copilot-ask-question.png" alt-text="Screenshot of Copilot confirming that it will provide a response to the given question." border="false":::
 
 The standalone Copilot experience can summarize data from reports, and use the report visuals to answer specific questions. If the answer can't be found in the report, Copilot will then use the measures and other data fields in your semantic model (or even create new DAX calculations) to generate the answer for you.
+
+### Attach an item as reference
+
+You can also attach an item (report or semantic model) to Copilot chat as a grounded reference. To add a reference:
+
+1. Open Copilot in your Power BI mobile app.
+1. In the chat field, tap the **+** icon or type **/** to search for an item.
+1. Select the report or semantic model you want to use as a reference.
+
+The selected item appears in the chat and is used by Copilot for grounding its answers.
 
 ### Voice input (iPhone and iPad)
 
