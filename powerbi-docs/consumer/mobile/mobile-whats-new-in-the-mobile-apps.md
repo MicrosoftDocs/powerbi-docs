@@ -23,7 +23,7 @@ For related "What's New" information, see:
 
 ### Attach a report or semantic model to Copilot chat
 
-Now you can attach a report or semantic model to your Copilot chat for more relevant answers. Just tap **+** or type **/** in the chat field to find and select an item, then Copilot focus its answers on your data. For more information, see [Attach an item as reference](./mobile-standalone-copilot.md#attach-an-item-as-reference).
+Now you can attach a report or semantic model to your Copilot chat for more relevant answers. Just tap **+** or type **/** in the chat field to find and select an item, then Copilot focuses its answers on your data. For more information, see [Attach an item as reference](./mobile-standalone-copilot.md#attach-an-item-as-reference).
 
 ## November 2025
 
