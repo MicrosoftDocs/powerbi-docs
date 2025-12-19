@@ -30,7 +30,7 @@ Goals are a Pro feature. Users can access various aspects of the experience depe
 |View scorecards and goals  | Power BI Premium or Fabric F64 or greater capacity + Free user <br><br>OR <br><br>Power BI Pro license |
 |View scorecard samples and author scorecards in My Workspace  |  Free user |
 
-If you don't meet the minimum requirements for any of these permissions, contact your Power BI administrator before you begin.    
+If you don't meet the minimum requirements for any of these permissions, contact your Power BI administrator before you begin.
 
 ## Explore the Metrics hub page
 
@@ -46,7 +46,7 @@ The **Recommended** section contains all the goals that matter the most to you. 
 
 A goal must have at least two values, **Current value** and **Final target**, to show up in this section.
 
-### Recent, Favorites, Shared with me, and All Scorecards
+### Recent, Favorites, Shared with me, and All scorecards
 
 The next section is a tabbed list.
 
@@ -81,7 +81,7 @@ Power BI doesn't pull in the history of time series data if it only has a partia
 Goals might not update over time in your scorecard for several reasons:
 
 - **Manual goals**: Manual goals aren't updated automatically because they're not connected to a data source with regular refreshes. To create a history for a manual goal, do regular check-ins.
-- **No scheduled refresh**: Goal values only update as often as the semantic model refreshes. If you don't have a scheduled refresh on your semantic model, you don't see any updates in the goal value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
+- **No scheduled refresh**: Goal values only update as often as the semantic model refreshes. If you don't have a scheduled refresh on your semantic model, you don't see any updates in the goal value. For more information, see [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
 - **Push datasets**: Goals created from a push dataset don't get updated automatically.
 
 You can only update values in manual goals. If a goal value is connected to data, you can't update it manually. The data is pulled directly from the report and is updated as often as the semantic model refreshes.
@@ -92,7 +92,7 @@ Goals only update as often as the data updates in the semantic model. Power BI s
 
 ### Access permissions
 
-If you see a yellow warning icon when trying to connect a goal to a report, make sure you have build permissions for that report. Learn about [build permissions](../connect-data/service-datasets-build-permissions.md).
+If you see a yellow warning icon when you try to connect a goal to a report, make sure you have build permissions for that report. Learn about [build permissions](../connect-data/service-datasets-build-permissions.md).
 
 If you share a scorecard with other users, they need to have edit permissions for the scorecard to add check-ins.
 
@@ -122,4 +122,4 @@ Now that you understand what goals are and how to navigate the Metrics hub, you'
 **For administrators:**
 - [Configure Metrics admin settings](/fabric/admin/service-admin-portal-goals-settings)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/).
+Have more questions? [Try the Power BI Community](https://community.powerbi.com/).
