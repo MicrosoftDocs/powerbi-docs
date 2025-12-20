@@ -17,7 +17,7 @@ ms.date: 11/01/2025
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Goals in Power BI let you curate your metrics and track them against key business objectives, all in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, and make notes on important events. This article covers these features. You can also [follow your goals](service-goals-follow.md), to be notified when they change.
+Scorecards in Power BI let you curate your goals and track them against key business objectives, all in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, and make notes on important events. This article covers these features. You can also [follow your goals](service-goals-follow.md), to be notified when they change.
 
 ## View goal details
 
@@ -28,7 +28,7 @@ To access the details pane, open a scorecard and select the goal name. Power BI 
 
 ## Filtering and keyword search
 
-You can filter scorecards to view the goals that are labeled as a particular status. Select the summary cards at the top of the scorecard to see what is on track or at risk. 
+You can filter scorecards to view the goals that are labeled as a particular status. Select the summary cards at the top of the scorecard to see what is on track or at risk.
 
 In the following screenshot, the highlighted goals are *at risk*.
 
@@ -38,13 +38,13 @@ In the following screenshot, the highlighted goal is *behind*.
 
 :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Screenshot of goals filtered to status behind via summary card." lightbox="media/service-goals-check-in/filtered-behind.png":::
 
-There's also a keyword search that filters the scorecard down to goals that match the keyword.  Select the **Filter** icon above the first goal and type the keywords you're looking for.  The scorecard filters to show those results, without losing the context of any parent or child goal relationships, making it easy to quickly find a particular goal and see how it's doing.
+There's also a keyword search that filters the scorecard down to goals that match the keyword. Select the **Filter** icon above the first goal and type the keywords you're looking for. The scorecard filters to show those results, without losing the context of any parent or child goal relationships, making it easy to quickly find a particular goal and see how it's doing.
 
 The following screenshot shows a scorecard before filtering.
 
 :::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Screenshot Indicating location of keyword search on scorecard." lightbox="media/service-goals-check-in/keyword-highlighted.png":::
 
-The following screenshot shows a scorecard filtered with the keywork *attrition*.
+The following screenshot shows a scorecard filtered with the keyword *attrition*.
 
 :::image type="content" source="media/service-goals-check-in/keyword-premium.png" alt-text="Screenshot of Keyword search results for goals related to attrition." lightbox="media/service-goals-check-in/keyword-premium.png" :::
 
@@ -76,7 +76,7 @@ The following screenshot shows a scorecard filtered with the keywork *attrition*
 1. In the **Details** pane, select **New check-in**.
 1. Complete the following actions:
 
-   * Choose a **date**. Choosing a date auto-populates the value for that day. You can't override a connected value.
+   * Choose a **date**. Choosing a date autopopulates the value for that day. You can't override a connected value.
 
    * Select a **status**.
 
