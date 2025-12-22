@@ -578,8 +578,6 @@
       href: service-metrics-scorecard-refresh.md
     - name: Create subgoals
       href: service-goals-subgoals.md
-    - name: Create linked goals
-      href: service-metrics-linked-metrics.md
     - name: Create automated status rules
       href: service-goals-status-rules.md
     - name: Create custom statuses

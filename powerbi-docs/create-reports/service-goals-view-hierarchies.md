@@ -1,8 +1,8 @@
 ---
 title: View hierarchies in Power BI Scorecards
 description: You can view  and interact with hierarchies for a scorecard two different ways.
-author: julcsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -27,9 +27,9 @@ To view your hierarchical scorecard, you can use the slicer to navigate to which
 
 :::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-cross-section.png" alt-text="Screenshot of a scorecard showing a hierarchy setup." lightbox="media/service-goals-get-started-hierarchies/hierarchies-cross-section.png":::
 
-All connected values, mapped owners, and statuses dictated by rules reflect the appropriate data at each hierarchy level, so long as the relationships exist. There needs to be a relationship between the hierarchy level fields in the underlying semantic models to correctly filter the values. Manual goals are shown through an information icon showing which values are manual for that metric.
+All connected values, mapped owners, and statuses dictated by rules reflect the appropriate data at each hierarchy level, so long as the relationships exist. There needs to be a relationship between the hierarchy level fields in the underlying semantic models to correctly filter the values. Manual goals are shown through an information icon showing which values are manual for that goal.
 
-:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-manual-info-icon.png" alt-text="Screenshot of hover text indicating a manual metric.":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-manual-info-icon.png" alt-text="Screenshot of hover text indicating a manual goal.":::
 
 You can view intersections of multiple hierarchies. For example, you can look at a cross section between one selection from product, and one selection from the geography hierarchy. You can see the example in the slicer name as shown in the following images:
 
@@ -45,7 +45,7 @@ By selecting **Heatmap** from the view options, you can start to build a custom 
 
 :::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-heatmap-view.png" alt-text="A screenshot of a heatmap view of a hierarchical scorecard." lightbox="media/service-goals-get-started-hierarchies/hierarchies-heatmap-view.png":::
 
-You can also customize what information to show in each metric box by selecting the slicer dropdown, then selecting **Open display settings**. This is a great view to use in business reviews.
+You can also customize what information to show in each goal box by selecting the slicer dropdown, then selecting **Open display settings**. This is a great view to use in business reviews.
 
 :::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-heatmap-display-settings-entry-point.png" alt-text="A screenshot of heatmap view display settings entry point.":::
 
@@ -62,12 +62,12 @@ Customize the heatmap view in the **Display settings** dialog box.
   - Up to five hierarchies
   - Up to five levels per hierarchy
 
-- Permissions can't be set at a hierarchy level – metric level permissions are set at the scorecard and applied to all hierarchy views.
-- Data connections are evaluated by impersonating the hierarchy owner/creator where row-level security (RLS) might apply. THis evaluation doesn't change metric level permissions.
+- Permissions can't be set at a hierarchy level – goal level permissions are set at the scorecard and applied to all hierarchy views.
+- Data connections are evaluated by impersonating the hierarchy owner/creator where row-level security (RLS) might apply. This evaluation doesn't change goal level permissions.
 - Dynamic and static RLS is supported but is routed through the hierarchy creator. All scorecard viewers impersonate the hierarchy creator’s access.
-- Hierarchy permissions can't be set at a specific hierarchy level. Metric level permissions are inherited from the original scorecard and are applied at all levels, and RLS via the hierarchy creator dictate permissions.
+- Hierarchy permissions can't be set at a specific hierarchy level. Goal level permissions are inherited from the original scorecard and are applied at all levels, and RLS via the hierarchy creator dictate permissions.
 - Non-admin users might experience refresh issues when setting up hierarchies on a semantic model with dynamic RLS.
-- Manual goals are indicated by an information icon showing which values are manual for that metric.
+- Manual goals are indicated by an information icon showing which values are manual for that goal.
 - Notifications regarding status changes on child scorecard levels aren't triggered.
 - There's a limit of one selection per hierarchy for viewing a hierarchical scorecard.
 - History for hierarchical goals isn't supported. Data is always queried live from the semantic model, instead of cached when the semantic model refreshes.

@@ -1,8 +1,8 @@
 ---
-title: Refresh Metrics and Scorecards in the Power BI Service Automatically
-description: Learn how to refresh Power BI metrics and scorecards automatically using scripts and Power Automate. Keep your KPIs updated with the latest data.
-author: julcsc
-ms.author: juliacawthra
+title: Refresh goals and scorecards in the Power BI Service Automatically
+description: Learn how to refresh Power BI goals and scorecards automatically using scripts and Power Automate. Keep your KPIs updated with the latest data.
+author: kgremban
+ms.author: kgremban
 ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -11,64 +11,61 @@ ms.date: 08/12/2025
 ai-usage: ai-assisted
 ---
 
-# Refresh metrics and scorecards in the Power BI service automatically
+# Refresh goals and scorecards in the Power BI service automatically
 
-Metrics and scorecards in Power BI help organizations track key performance indicators (KPIs) and business goals. While manual updates are supported, many users rely on automated refreshes to keep metrics aligned with the latest data.
+Goals and scorecards in Power BI help organizations track key performance indicators (KPIs) and business goals. While you can update them manually, many users rely on automated refreshes to keep goals aligned with the latest data.
 
 This article shows you how to:
 
-- Set up automatic refresh for metrics and scorecards
-- Use PowerShell scripts to refresh all metrics in a workspace
+- Set up automatic refresh for goals and scorecards
+- Use PowerShell scripts to refresh all goals in a workspace
 - Integrate Power Automate for event-based updates
-- Troubleshoot common refresh issues
+- Troubleshoot common refresh problems
 
-## Refresh metrics
+## Refresh goals
 
-Metrics connected to a semantic model or report visual can be refreshed automatically when the underlying dataset is refreshed. However, in some cases, metrics might not update as expected due to configuration or timing issues.
+You can automatically refresh goals connected to a semantic model or report visual when the underlying dataset refreshes. However, configuration or timing problems might prevent goals from updating as expected.
 
-### Common scenarios
+If connected goals aren't updating:
 
-- **Connected metrics not updating**: If your scorecard metric is linked to a report visual, ensure the dataset refresh is complete and the metric is properly bound.
-- **Manual refresh**: You can manually trigger a refresh from the scorecard UI, but doing this might not resolve issues with stale data.
+- If your scorecard goal is linked to a report visual, ensure the dataset refresh is complete and the goal is properly bound.
+- You can manually trigger a refresh from the scorecard UI, but this action might not resolve problems with stale data.
 
-### Automate bulk refresh with PowerShell
+### Automate goal refresh with PowerShell
 
-To refresh all metrics in a workspace automatically, use the PowerShell script from the [Power BI community blog](https://community.fabric.microsoft.com/t5/Power-BI-Community-Blog/Power-BI-Metrics-Pro-Tip-Refresh-all-metrics-script/ba-p/3139257).
+To automatically refresh all goals in a workspace, use the PowerShell script from the [Power BI community blog](https://community.fabric.microsoft.com/t5/Power-BI-Community-Blog/Power-BI-Metrics-Pro-Tip-Refresh-all-metrics-script/ba-p/3139257).
 
 This script helps you:
 
-- Refresh multiple metrics simultaneously
-- Schedule automated updates
-- Reduce manual maintenance overhead
+- Refresh multiple goals simultaneously.
+- Schedule automated updates.
+- Reduce manual maintenance overhead.
 
 ## Refresh scorecards
 
-Scorecards aggregate multiple metrics and might require a coordinated refresh strategy.
+Scorecards aggregate multiple goals and might require a coordinated refresh strategy.
 
-### PowerShell automation
+### Automate scorecard refresh with PowerShell
 
 To automate scorecard refreshes across workspaces, use the PowerShell script from the [developer community blog](https://community.fabric.microsoft.com/t5/Developer/Powershell-script-to-automatically-refresh-scorecards/m-p/3494120).
 
-Key benefits:
+This script helps you:
 
-- Refresh scorecards across multiple workspaces
-- Schedule regular updates without manual intervention
-- Integrate with existing automation workflows
+- Refresh scorecards across multiple workspaces.
+- Schedule regular updates without manual intervention.
+- Integrate with existing automation workflows.
 
-### Power Automate integration
+## Power Automate integration
 
-You can also use [Power Automate](service-metrics-power-automate.md) to trigger metric updates based on events like dataset refresh, status changes, or check-ins.
+You can also use [Power Automate](service-metrics-power-automate.md) to trigger goals updates based on events like dataset refresh, status changes, or check-ins.
 
 ## Best practices
 
-- Ensure semantic models are refreshed before triggering metric updates.
+- Ensure semantic models are refreshed before triggering goals updates.
 - Use service principals or managed identities for automation scripts.
 - Monitor refresh logs and error messages for troubleshooting.
 
 ## Related content
 
-- [Create scorecards and manual metrics](service-goals-create.md)
-- [Use Power Automate to update metrics automatically](service-metrics-power-automate.md)
-- [Get started with metrics in Power BI](service-goals-introduction.md)
-- [Create connected metrics in Power BI](service-goals-create-connected.md)
-- [Stay on top of your metrics in Power BI](service-goals-check-in.md)
+- [Use Power Automate to update goals automatically](service-metrics-power-automate.md)
+- [Stay on top of your goals in Power BI](service-goals-check-in.md)

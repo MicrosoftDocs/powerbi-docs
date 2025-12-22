@@ -1,15 +1,14 @@
 ---
 title: Get started with goals in Power BI
 description: Get started with an introduction to goals in Power BI
-author: julcsc
-ms.author: juliacawthra
-ms.reviewer: ''
-featuredvideoid: ''
+author: kgremban
+ms.author: kgremban
+ms.reviewer: monicacl
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with goals
-ms.topic: how-to
-ms.date: 12/10/2024
+ms.topic: feature-guide
+ms.date: 12/11/2025
 ms.custom: intro-get-started
 #customer intent: As a Power BI user I want to learn what goals are and how to use Goals in my Power BI scorecards.
 ---
@@ -17,7 +16,7 @@ ms.custom: intro-get-started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Goals in Power BI let customers curate their goals and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
+By using scorecards in Power BI, you can curate your goals and track them against key business objectives, all in a single view. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
 :::image type="content" source="media/service-goals-introduction/power-bi-goals-hub.png" alt-text="Screenshot of goals page with goals, scorecards, and samples.":::
 
@@ -31,105 +30,96 @@ Goals are a Pro feature. Users can access various aspects of the experience depe
 |View scorecards and goals  | Power BI Premium or Fabric F64 or greater capacity + Free user <br><br>OR <br><br>Power BI Pro license |
 |View scorecard samples and author scorecards in My Workspace  |  Free user |
 
-If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  
+If you don't meet the minimum requirements for any of these permissions, contact your Power BI administrator before you begin.
 
 ## Explore the Metrics hub page
 
-After you sign in to the Power BI service, select Metrics from the navigation pane. Power BI displays your Metrics hub page. The layout and content in the Metrics page is different for every user. As a new user, your Metrics hub page is empty, as shown in the following image.
+After you sign in to the Power BI service, select **Metrics** from the navigation pane. Power BI displays your Metrics hub page. As a new user, your Metrics hub page is empty until you create your first scorecard.
 
-:::image type="content" source="media/service-goals-introduction/power-bi-metrics-new-home.png" alt-text="Screenshot of The new, empty Metrics home page.":::
+Ready to create your first scorecard? Learn how in [Create scorecards and manual goals in Power BI](service-goals-create.md).
 
-### Recommended Scorecards
+### Recommended scorecards
 
-The top section contains all the goals that matter the most to you, and the scorecard samples. Power BI curates these scorecards automatically, based on goals that you're assigned to, you edited, or you performed a recent check-in. If you don't have any scorecards yet, you see the samples there.
+The **Recommended** section contains all the goals that matter the most to you. Power BI automatically curates these scorecards based on goals that you're assigned to, goals you edited, or goals where you performed a recent check-in. If you don't have any scorecards yet, you see sample scorecards that you can explore.
 
 :::image type="content" source="media/service-goals-introduction/scorecard-samples-recommended.png" alt-text="Screenshot of Top section contains all the goals that matter the most to you.":::
 
-A goal must have at least two values, **Current** and **Target**, to show up in this section.
+A goal must have at least two values, **Current value** and **Final target**, to show up in this section.
 
-### Recent, Favorites, Shared with me, and All Scorecards
+### Recent, Favorites, Shared with me, and All scorecards
 
 The next section is a tabbed list.
 
 :::image type="content" source="media/service-goals-introduction/power-bi-goals-recent.png" alt-text="Screenshot of Recent goals on the scorecards tab.":::
 
-- **Recent** are the scorecards you visited most recently. Each item has a timestamp.
-- **Favorites** are the scorecards you starred.
+- **Recent**: The scorecards you visited most recently. Each item has a timestamp.
+- **Favorites**: The scorecards you starred.
 
-    :::image type="content" source="media/service-goals-introduction/power-bi-goals-favorites.png" alt-text="Screenshot of Star your favorite scorecards.":::
+  :::image type="content" source="media/service-goals-introduction/power-bi-goals-favorites.png" alt-text="Screenshot of Star your favorite scorecards.":::
 
-- **Shared with me** contains scorecards that your colleagues shared with you.
-- **All scorecards** lists all the scorecards you have access to.
+- **Shared with me**: Scorecards that your colleagues shared with you.
+- **All scorecards**: All the scorecards that you have access to.
 
 ## Change the scorecard view
 
-When you're viewing your scorecard, you can also change the view from **List view** to **Compact view**, which is currently in preview.
+When you're viewing your scorecard, you can change the view from **List view** to **Compact view**, which is currently in preview.
 
 :::image type="content" source="media/service-goals-introduction/metrics-compact-view.png" alt-text="Screenshot showing Compact view menu item.":::
 
 Compact view adjusts to various screen sizes and supports resizing columns. You can do everything you can do in list view, except editing and creating a new goal.
 
-## Frequently asked questions (FAQ)
+## Troubleshoot common issues
 
-**Why don’t I see history for my goal when I connect to a Power BI data point?**
+### Goal history
 
-You don’t see a history for a single data point because we only pull history for time series data. To see the history of your goal when you connect to time series data, select **Track all data in this time series** when you connect. 
+If you don't see a history for your goal when you connect to a Power BI data point, it's because Power BI only pulls history for time series data. To see the history of your goal when you connect to time series data, select **Track all data in this time series** when you connect.
 
-**I'm connecting to time series data and still don’t see the history of the goal. Why not?**
+Power BI doesn't pull in the history of time series data if it only has a partial date, such as day of the week or month. Power BI can only pull in the history of a time series when it has a full date to track, such as day, month, and year.
 
-We don't pull in the history of time series if we only have a partial date, for example, day of the week or month. We can only pull in the history of a time series when we have a full date to track, such as day, month, and year.  
+### Update goals
 
-**Why aren't my goals getting updated over time in my scorecard?**
+Goals might not update over time in your scorecard for several reasons:
 
-There are a few reasons why your goal might not be getting updated:
-
-- It’s a manual goal: Manual goals aren't updated automatically as they're not connected to a data source with regular refreshes. To create a history for a manual goal, do regular check-ins.
-- You don't have scheduled refresh for the semantic model: Goal values are only updated as often as the semantic model is refreshed. If you don’t have a scheduled refresh on your semantic model, you don't see any updates in the goal value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
-- Goals don’t get updated if they're created from a push dataset. 
-
-**I'm trying to create a goal but I can’t connect to a report. Why do I see a yellow warning icon?**
-
-To connect your current value or target to data, you need build permissions for that report. Learn about [build permissions](../connect-data/service-datasets-build-permissions.md). 
-
-**I shared a scorecard, but my users can’t do check-ins and add notes. Why not?**
-
-Currently, users need to have edit permissions for the scorecard to add check-ins.
-
-**Why can’t I update the value as part of my check-in?**
+- **Manual goals**: Manual goals aren't updated automatically because they're not connected to a data source with regular refreshes. To create a history for a manual goal, do regular check-ins.
+- **No scheduled refresh**: Goal values only update as often as the semantic model refreshes. If you don't have a scheduled refresh on your semantic model, you don't see any updates in the goal value. For more information, see [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
+- **Push datasets**: Goals created from a push dataset don't get updated automatically.
 
 You can only update values in manual goals. If a goal value is connected to data, you can't update it manually. The data is pulled directly from the report and is updated as often as the semantic model refreshes.
 
-**How often do goals update in the scorecard?**
+Changing the tracking cycle only changes the trend that you see below your value and target area. Changing this setting doesn't affect refreshes on the data or when your data is updated in the goals.
 
-Goals only update as often as the data updates in the semantic model. We support connecting via import, live connection, and DirectQuery. Additionally, we take snapshots of the goals data at a maximum daily cadence, and always retain the last updated value for a given day. The snapshots are always available in the underlying semantic model we create, which you can then build content on top of.
+Goals only update as often as the data updates in the semantic model. Power BI supports connecting via import, live connection, and DirectQuery. Additionally, Power BI takes snapshots of the goals data at a maximum daily cadence, and always retains the last updated value for a given day. The snapshots are always available in the underlying semantic model Power BI creates, which you can then build content on top of.
 
-**I changed the tracking cycle of my goal. Why does the data still look the same?**
+### Access permissions
 
-Changing the tracking cycle only changes the trend that you see below your value/target area. Changing this setting doesn't affect refreshes on the data or when your data is updated in the goals.
+If you see a yellow warning icon when you try to connect a goal to a report, make sure you have build permissions for that report. Learn about [build permissions](../connect-data/service-datasets-build-permissions.md).
 
-**Why don’t I see the Power BI workspace I’m looking for when I create a scorecard?**
+If you share a scorecard with other users, they need to have edit permissions for the scorecard to add check-ins.
 
-In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+To create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
-Scorecards do have goal-level permissions roles. While workspace permissions give view or build access to the workspace, goal-level permissions restrict access. Certain people can only see certain goals and perform check-ins within a scorecard. Read more about [goal-level permissions in scorecards](service-goals-set-permissions.md).
+Scorecards have goal-level permissions roles. While workspace permissions give view or build access to the workspace, goal-level permissions restrict access. Certain people can only see certain goals and perform check-ins within a scorecard. Read more about [goal-level permissions in scorecards](service-goals-set-permissions.md).
 
-## Issues and limitations 
+## Issues and limitations
   
 - Goals don't support bring your own key (BYOK).
 - Goals don't support row-level security (RLS).
 - The maximum number of subgoal levels is four.
 - Goals don't support publish-to-web.
-- The scorecard visual does not work in Sharepoint embed
+- The scorecard visual doesn't work in SharePoint embed.
 - Business-to-business sharing (sharing across tenants) isn't supported.
 - Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md).
 - Scorecards aren't supported in [embedded analytics](../developer/embedded/embedded-analytics-power-bi.md).
 
-## Related content
+## Next steps
+
+Now that you understand what goals are and how to navigate the Metrics hub, you're ready to create your first scorecard:
 
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
-- [Create connected goals in Power BI](service-goals-create-connected.md)
-- [Stay on top of your goals in Power BI](service-goals-check-in.md)
-- [Protect your scorecard with goal-level permissions](service-goals-set-permissions.md)
-- [Metrics admin settings](/fabric/admin/service-admin-portal-goals-settings)
+- [Set permissions for your scorecards](service-goals-set-permissions.md)
+- [Connect goals to data sources](service-goals-create-connected.md)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/).
+**For administrators:**
+- [Metrics hub tenant settings](/fabric/admin/service-admin-portal-goals-settings)
+
+Have more questions? [Try the Power BI Community](https://community.powerbi.com/).
