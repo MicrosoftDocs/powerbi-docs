@@ -16,7 +16,7 @@ ms.custom: sample-salesandmarketing
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics in Power BI let you curate your goals and track them against key business objectives. When you choose values for your goals, you can:
+Scorecards in Power BI let you curate your goals and track them against key business objectives. When you choose values for your goals, you can:
 
 - Manually enter the current and target values.
 - Connect the current value, the target value, or both to data in an existing Power BI report.

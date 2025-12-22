@@ -34,7 +34,7 @@ If you don't meet the minimum requirements for any of these permissions, contact
 
 ## Explore the Metrics hub page
 
-After you sign in to the Power BI service, select **Metrics** from the navigation pane. Power BI displays your Metrics hub page. The layout and content in the Metrics page is different for every user. As a new user, your Metrics hub page is empty until you create your first scorecard.
+After you sign in to the Power BI service, select **Metrics** from the navigation pane. Power BI displays your Metrics hub page. As a new user, your Metrics hub page is empty until you create your first scorecard.
 
 Ready to create your first scorecard? Learn how in [Create scorecards and manual goals in Power BI](service-goals-create.md).
 
@@ -120,6 +120,6 @@ Now that you understand what goals are and how to navigate the Metrics hub, you'
 - [Connect goals to data sources](service-goals-create-connected.md)
 
 **For administrators:**
-- [Configure Metrics admin settings](/fabric/admin/service-admin-portal-goals-settings)
+- [Metrics hub tenant settings](/fabric/admin/service-admin-portal-goals-settings)
 
 Have more questions? [Try the Power BI Community](https://community.powerbi.com/).
