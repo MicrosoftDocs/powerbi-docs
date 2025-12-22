@@ -1,8 +1,8 @@
 ---
 title: Create email subscriptions for your scorecards in Power BI (preview)
 description: Set up subscriptions to receive email notifications and stay up to date on the scorecards that matter most to you and your team.
-author: julcsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: 'anphil'
 featuredvideoid: ''
 ms.service: powerbi
@@ -44,7 +44,7 @@ Set up subscriptions to receive email notifications and stay up to date on the s
 
 After you save it, you can edit the subscription, turn it on or off, or delete the subscription.
 
-Recipients receive an email from Power BI with a table containing the scorecard data such as metric name, status, values, and due date. The table shows up to 50 metrics.
+Recipients receive an email from Power BI with a table containing the scorecard data such as goal name, status, values, and due date. The table shows up to 50 goals.
 
 ## Manage subscriptions
 
