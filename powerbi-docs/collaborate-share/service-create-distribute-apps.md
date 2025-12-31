@@ -7,8 +7,8 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
-ms.date: 03/12/2025
-
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ms.custom: sfi-image-nochange
 ---
@@ -143,7 +143,7 @@ On the **Content** tab, you add the content from the workspace to the app.
 
 #### Add Power BI reports with paginated report visuals
 
-If you include Power BI reports that have paginated report visuals, we recommend including the referred paginated reports in the app. The published Power BI report will then work with the published version of the paginated report instead of the report stored in the workspace.
+If you include Power BI reports that have paginated report visuals, we recommend including the referred paginated reports in the app. The published Power BI report then works with the published version of the paginated report instead of the report stored in the workspace.
 
 During publishing, Power BI can detect reports with visuals that reference missing paginated reports:
 
