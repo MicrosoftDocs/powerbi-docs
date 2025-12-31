@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/18/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.custom: Sample-Retail Analysis Sample
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn how to save views and settings in reports.
