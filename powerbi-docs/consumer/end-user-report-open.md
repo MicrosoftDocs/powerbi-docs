@@ -7,7 +7,8 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/09/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 #This article teaches business users how to find and open a report if it has been shared directly or shared via an app, so that the consumer can view and interact with the report.
 ---
 # Open a report in the Power BI service

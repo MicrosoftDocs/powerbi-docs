@@ -9,7 +9,8 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/07/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 
 # Embed a report web part in SharePoint Online
@@ -25,7 +26,7 @@ For **Embed report in SharePoint Online** reports to work:
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.microsoft.com/office/allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To use an embedded report, users must sign in to the Power BI service to activate their Power BI license.
 * To embed a web part in SharePoint Online, you need a Power BI Pro or Premium Per User (PPU) license.
-* For [Embedding for your organization (user owns data)](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-organization) customers, a SKUs equivalent to [F64 or higher](/fabric/enterprise/licenses#capacity-and-skus) is needed to allow free Power BI users to consume a report. If you have a SKU smaller than F64, then a Pro license or Premium Per User (PPU) is required for each user who will view the embedded content.
+* For [Embedding for your organization (user owns data)](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-organization) customers, a SKUs equivalent to [F64 or higher](/fabric/enterprise/licenses#capacity-and-skus) is needed to allow free Power BI users to consume a report. If you have a SKU smaller than F64, then a Pro license or Premium Per User (PPU) is required for each user who views the embedded content.
 * For [Embedding for your customers (app owns data)](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) customers, there are no licensing requirements for the end user.
 * SharePoint Embed is now supported in air gap environments.
 
@@ -121,7 +122,7 @@ Now the end user can go to the team site in SharePoint Online and view the repor
 If your Power BI environment requires you to sign in using multifactor authentication, you might be asked to sign in with a security device to verify your identity. This can occur if you didn't sign in to SharePoint Online using multifactor authentication. Your Power BI environment requires a security device to validate an account.
 
 > [!NOTE]
-> Power BI doesn't support multifactor authentication with Microsoft Entra ID 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
+> Power BI doesn't support multifactor authentication with Microsoft Entra ID 2.0. Users see an error message. If the user signs in again to SharePoint Online using their security device, they might be able to view the report.
 
 ## Web part settings
 
