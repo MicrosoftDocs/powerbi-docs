@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
-ms.date: 12/16/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI
@@ -259,7 +260,7 @@ In this scenario, the **Internet Sales measure** isn't impacted by the calculati
 
 ## Composite models on Power BI semantic models and Analysis Services
 
-By using composite models with Power BI semantic models and Analysis Services, you can build a composite model by using a DirectQuery connection to connect to Power BI semantic models, Azure Analysis Services (AAS), and SQL Server 2022 Analysis Services. With a composite model, you can combine the data in these sources with other DirectQuery and imported data. Report authors who want to combine the data from their enterprise semantic model with other data they own, such as an Excel spreadsheet, or want to personalize or enrich the metadata from their enterprise semantic model, will find this functionality especially useful. 
+By using composite models with Power BI semantic models and Analysis Services, you can build a composite model by using a DirectQuery connection to connect to Power BI semantic models, Azure Analysis Services (AAS), and SQL Server 2022 Analysis Services. With a composite model, you can combine the data in these sources with other DirectQuery and imported data. Report authors who want to combine the data from their enterprise semantic model with other data they own, such as an Excel spreadsheet, or want to personalize or enrich the metadata from their enterprise semantic model, find this functionality especially useful. 
 
 ### Managing composite models on Power BI semantic models
 
@@ -346,7 +347,7 @@ A user viewing reports that use **Composite Model A** must have **Read** permiss
 > [!NOTE]
 > For more information, see [permissions required for composite models on Power BI semantic models and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
 
-If any dataset in the chain is in a Premium Per User workspace, the user accessing it needs a [Premium Per User license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license). If any dataset in the chain is in a Pro workspace, the user accessing it needs a [Pro license](../fundamentals/service-features-license-type.md#pro-license). If all the datasets in the chain are on [Premium capacities](../fundamentals/service-features-license-type.md#premium-capacity) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus), a user can access it by using a [Free license](../fundamentals/service-features-license-type.md#free-per-user-license).
+If any semantic model in the chain is in a Premium Per User workspace, the user accessing it needs a [Premium Per User license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license). If any semantic model in the chain is in a Pro workspace, the user accessing it needs a [Pro license](../fundamentals/service-features-license-type.md#pro-license). If all the semantic models in the chain are on [Premium capacities](../fundamentals/service-features-license-type.md#premium-capacity) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus), a user can access it by using a [Free license](../fundamentals/service-features-license-type.md#free-per-user-license).
 
 ### Security warning
 

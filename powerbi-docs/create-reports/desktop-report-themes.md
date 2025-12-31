@@ -6,7 +6,8 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/18/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 #customer intent: As a Power Bi user I want to learn how to use report themes to create a custom color palette.
 ---
@@ -636,7 +637,7 @@ In this next example, 'Demo Preset 2' moves the legend to the right side and cha
 
    :::image type="content" source="media/desktop-report-themes/style-presets-example-02.png" alt-text="Screenshot of the Style presets menu displaying Demo Preset 2.":::
 
-An error message appears when the definition of a style preset is not found for the specific visual. This author-only error message indicates the report lost reference to your custom style preset definitions and your custom style preset can't be found.
+An error message appears when the definition of a style preset isn't found for the specific visual. This author-only error message indicates the report lost reference to your custom style preset definitions and your custom style preset can't be found.
 
    :::image type="content" source="media/desktop-report-themes/style-presets-example-error.png" alt-text="Screenshot of the Style presets menu displaying an error message indicating that the custom style preset can't be found.":::
 
