@@ -1,5 +1,5 @@
 ---
-title: Sort one column by another column in Power BI
+title: Sort One Column by Another Column in Power BI
 description: Learn how to change the look of a Power BI visual by sorting it by data fields. Use one column to define the sort order of another column.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: 'sunaraya'
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/25/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 #customer intent: 
 ---
@@ -18,7 +19,7 @@ LocalizationGroup: Create reports
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 When you're editing a report in Power BI, you can choose a column to define the sort order of another column.
-Here's a common example. You have a Month Name column, and when you add it to a visual, the months are being sorted alphabetically: April, August, December, February, and so on. However, you want them to be sorted chronologically. This article shows how to set the sort order of one column by a different column, in Power BI Desktop or in the Power BI service.
+Here's a common example. You have a Month Name column, and when you add it to a visual, the months are being sorted alphabetically: April, August, December, February. However, you want them to be sorted chronologically. This article shows how to set the sort order of one column by a different column, in Power BI Desktop or in the Power BI service.
 
 :::image type="content" source="media/desktop-sort-by-column/power-bi-alphabetical-sort-chart.png" alt-text="Screenshot of a line chart in Power BI Desktop.":::
 
@@ -79,7 +80,7 @@ To set a different column to sort by in the Power BI service, both columns need 
 This functionality is no longer active.
 
 ## Getting back to default column for sorting
-You can sort by any column you'd like, but there may be times when you want the visual to return to its default sorting column. For a visual that has a sort column selected, open the **More options** menu and select that column again. The visualization returns to its default sort column.
+You can sort by any column you'd like, but there might be times when you want the visual to return to its default sorting column. For a visual that has a sort column selected, open the **More options** menu and select that column again. The visualization returns to its default sort column.
 
 For example, here's the previous chart:
 
@@ -94,12 +95,12 @@ With so many options for sorting your visuals, creating just the chart or image 
 
 ## Considerations
 
-* If a column sorted by another is marked as a key column, its sort order is ignored and defaults are used.
+- If a column sorted by another is marked as a key column, its sort order is ignored and defaults are used.
   
 ## Related content
 
 You might also be interested in the following articles:
 
-* [Change how a chart is sorted in a Power BI report](../consumer/end-user-change-sort.md)
-* [Use cross-report drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)
+- [Change how a chart is sorted in a Power BI report](../consumer/end-user-change-sort.md)
+- [Use cross-report drillthrough in Power BI Desktop](desktop-drillthrough.md)
+- [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)
