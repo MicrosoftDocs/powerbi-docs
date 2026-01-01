@@ -1,7 +1,8 @@
 ---
-title: "Display a series with multiple data ranges on Power BI paginated report chart | Microsoft Docs"
+title: Display a Series with Multiple Data Ranges on Power BI Paginated Report Chart
 description: Discover ways to improve readability of your Power BI paginated report charts using scale breaks, filters, and by separating the data ranges in Power BI Report Builder. 
-ms.date: 04/23/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -16,7 +17,7 @@ ms.reviewer: saurkumar
 
 Charts use the minimum and maximum values of a series to calculate the axis scale in a Power BI paginated report. When a series on your chart contains more than one range of data, the data points can become obscured, and only a few data points to be seen easily on the chart. For example, suppose a report displays daily sales totals over a period of 30 days.  
   
- ![Screenshot of a chart with multiple data ranges.](./media/paginated-reports-visualizations/multiple-data-ranges-chart.gif "multiple-data-ranges-chart")  
+ :::image type="content" source="./media/paginated-reports-visualizations/multiple-data-ranges-chart.gif" alt-text="Screenshot of a chart with multiple data ranges." lightbox="./media/paginated-reports-visualizations/multiple-data-ranges-chart.gif":::  
   
  For most of the month, the sales are between 10 and 40. However, a one-week sales marketing campaign has caused a sudden sales increase at the beginning of April. This change in sales data produces an uneven distribution of data points that reduces the overall readability of the chart.  
   
@@ -34,7 +35,7 @@ Charts use the minimum and maximum values of a series to calculate the axis scal
 
  When you enable a scale break, the chart calculates where to draw a line across the chart. You must have sufficient separation between ranges to draw a scale break. By default, a scale break can be added only if there is a separation between the data ranges of at least 25% of the chart.  
   
- ![Screenshot of a Chart with scale break.](./media/paginated-reports-visualizations/multiple-data-ranges-chart-scale-break.gif "multiple-data-ranges-chart-scale-break.")  
+ :::image type="content" source="./media/paginated-reports-visualizations/multiple-data-ranges-chart-scale-break.gif" alt-text="Screenshot of a Chart with scale break." lightbox="./media/paginated-reports-visualizations/multiple-data-ranges-chart-scale-break.gif":::  
   
 > [!NOTE]  
 > You cannot specify where to place a scale break on a chart. You can, however, modify how the scale break is calculated, described later in this topic.  

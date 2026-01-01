@@ -1,7 +1,8 @@
 ---
-title: "CSV device information settings for Power BI paginated reports"
+title: CSV Device Information Settings for Power BI Paginated Reports
 description: "In Power BI paginated reports, the device information settings for the CSV rendering extension allow delimiters and qualifiers to be changed and line break handling to be specified."
-ms.date: 01/05/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -34,4 +35,4 @@ The following table lists the device information settings for rendering in Text 
 
 ## Related content
 
-- [Specify device information settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
+- [URL parameters in paginated reports](../report-builder-url-parameters.md)

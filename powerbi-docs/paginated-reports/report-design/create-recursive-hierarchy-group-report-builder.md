@@ -1,7 +1,8 @@
 ---
-title: "Create a recursive hierarchy group in a Power BI paginated report | Microsoft Docs"
+title: Create a Recursive Hierarchy Group in a Power BI Paginated Report
 description: Learn about organizing data in a Power BI paginated report, from a single report dataset that includes hierarchical levels, by using a recursive hierarchy group.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

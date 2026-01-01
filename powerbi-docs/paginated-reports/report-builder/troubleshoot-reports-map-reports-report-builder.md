@@ -1,7 +1,8 @@
 ---
-title: "Troubleshoot reports: Map reports in a Power BI paginated report | Microsoft Docs"
+title: "Troubleshoot Reports: Map Reports in a Power BI Paginated Report"
 description: Explore troubleshooting ideas for situations that can result when you customize, add a layer, or publish a paginated report with a map in Power BI Report Builder.
-ms.date: 02/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

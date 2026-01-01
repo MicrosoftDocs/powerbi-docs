@@ -1,7 +1,8 @@
 ---
-title: "Change an item in a cell in a Power BI paginated report | Microsoft Docs"
+title: Change an Item in a Cell in a Power BI Paginated Report
 description: Replace a non-container item, such as a text box, line, or image, in Power BI paginated reports with a new report item in Power BI Report Builder.
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

@@ -1,5 +1,5 @@
 ---
-title: Create Excel workbooks with refreshable Power BI data
+title: Create Excel Workbooks with Refreshable Power BI Data
 description: Learn how to build refreshable reports in Excel with Power BI data so you can analyze it like a local semantic model.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/20/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 #customer intent: As a Power BI user I want to create Excel workbooks with refreshable Power BI data
 ---
@@ -22,9 +23,9 @@ In this article, you learn how to create Excel workbooks containing connected Po
 The following are prerequisites you need before proceeding.
 
 - Your organization’s tenant administrator must enable the **Users can work with Power BI semantic models in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-semantic-models-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
-- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
+- For on-premises semantic models, your organization's tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
 - You must have **Build** permission to the Power BI semantic model or have at least a **Contributor** role in the Power BI workspace containing your semantic model.
-- You must have a Power BI license: Fabric Free, Pro, or Premium Per User (PPU). Fabric Free license users can only work with datasets in My workspace or a Power BI Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
+- You must have a Power BI license: Fabric Free, Pro, or Premium Per User (PPU). Fabric Free license users can only work with semantic models in My workspace or a Power BI Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
 ## Evaluate in Excel choose Power BI data
@@ -115,7 +116,8 @@ You can use the Power BI Excel add-in to insert connected PivotTables and connec
 
 > [!NOTE]
 > To use the Power BI Excel Add-in, ensure that in Excel Trust Center the following settings aren't checked:
-> - Disable all Application Add-ins (may impair functionality)
+>
+> - Disable all Application Add-ins (might impair functionality)
 > - Don't allow any web add-ins to start.
 > [!NOTE]
 
@@ -134,13 +136,13 @@ Starting on the **Data ribbon**:
 - Expand the **From Power Platform** menu
 - Select **From Power BI (Microsoft)**
 
-The Power BI add-in **Datasets Pane** opens in Excel and provides the following capabilities:
+The Power BI add-in **Semantic models pane** opens in Excel and provides the following capabilities:
 
 - List of Power BI semantic models that you have at build or edit permission on.
 - Search for semantic models
 - Open OneLake Data Hub in Power BI service in a new browser window
 - Open semantic model in Power BI service in a new browser window
-- See metadata for datasets like the workspace, owner, and the last refreshed date.
+- See metadata for semantic models like the workspace, owner, and the last refreshed date.
 - See the tables in the semantic model
 - See the related reports you have access to and open them in a new browser window.
 - **Insert PivotTable** which lets you create a connected PivotTable just like Analyze in Excel does starting from the service.
@@ -161,10 +163,10 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 - Analyze in Excel and Export with live connection aren't available for Power BI semantic models with a live connection to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS).
 - Say you have a Power BI report that's built on a live connection to a data source, and you add other measures to the report in Power BI. If you use the Export with live connection option to export data from a visual in that report, the measures that you added won't be available in the data you export to Excel. Only measures from the data source are available in the exported data.
 - Mac users can only use Excel for the web to explore Excel workbooks containing Power BI semantic models.
-- The column name and order in a Power BI visual may not be preserved when data is exported to Excel from that visual.
+- The column name and order in a Power BI visual might not be preserved when data is exported to Excel from that visual.
 - If the 'User Datasets Across Workspaces' tenant admin switch is off, users need to use **Write** permissions to use the semantic model. Learn more about [using semantic models across workspaces](/power-bi/connect-data/service-datasets-admin-across-workspaces).
-- If you're facing issues with exporting a summarized data card with live connection, please uncheck the "Show items with no data" option and try exporting again.
-- If a measure is included in a visual in the form of a format string (e.g. custom number of decimal places), this will not be visible on the visual but will be included in the Query Table (Connected Table) in Excel as part of the Export Data with Live Connection.
+- If you're facing issues with exporting a summarized data card with live connection, uncheck the "Show items with no data" option and try exporting again.
+- If a measure is included in a visual in the form of a format string (for example, custom number of decimal places), this isn't visible on the visual but is included in the Query Table (Connected Table) in Excel as part of the Export Data with Live Connection.
 
 ## Related content
 

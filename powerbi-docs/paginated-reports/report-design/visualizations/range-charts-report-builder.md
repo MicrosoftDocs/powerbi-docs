@@ -1,10 +1,10 @@
 ---
-title: "Range charts in Power BI paginated report | Microsoft Docs"
+title: Range Charts in Power BI Paginated Report
 description: Display a set of data points in a Power BI paginated report that are each defined by multiple values for the same category by using range charts in Power BI Report Builder. 
-ms.date: 03/30/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-
 
 ms.topic: article
 author: JulCsc
@@ -19,7 +19,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows a plain range chart with three series.  
   
- ![Screenshot of a Range chart](./media/paginated-reports-visualizations/range-chart.gif "range-chart")  
+ :::image type="content" source="./media/paginated-reports-visualizations/range-chart.gif" alt-text="Screenshot of a Range chart." lightbox="./media/paginated-reports-visualizations/range-chart.gif":::  
   
   
   
@@ -43,7 +43,7 @@ ms.reviewer: saurkumar
   
 -   Displaying markers on each data point is not supported on the range chart.  
   
--   Like the area chart, in a plain range chart, if the values in multiple series are similar, the series will overlap. In this scenario, you may want to use a column range or bar range chart instead of a plain range chart.  
+-   Like the area chart, in a plain range chart, if the values in multiple series are similar, the series will overlap. In this scenario, you might want to use a column range or bar range chart instead of a plain range chart.  
   
 -   Gantt charts can be created using a range bar chart.  
   

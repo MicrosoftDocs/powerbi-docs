@@ -1,7 +1,8 @@
 ---
-title: "Keep headers visible when scrolling through a paginated report"
+title: Keep Headers Visible When Scrolling Through a Paginated Report
 description: Freeze the row or column headings to prevent row and column labels from scrolling out of view after rendering a paginated report in Power BI Report Builder. 
-ms.date: 03/22/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -25,11 +26,11 @@ To prevent row and column labels from scrolling out of view after rendering a pa
   
  The following image shows a table.  
   
- ![Screenshot of a table.](media/paginated-reports-report-design-view/table.png "Table")  
+ :::image type="content" source="media/paginated-reports-report-design-view/table.png" alt-text="Screenshot of a table." lightbox="media/paginated-reports-report-design-view/table.png":::  
   
  The following image shows a matrix.  
   
- ![Screenshot of a matrix.](media/paginated-reports-report-design-view/matrix.png "Matrix")  
+ :::image type="content" source="media/paginated-reports-report-design-view/matrix.png" alt-text="Screenshot of a matrix." lightbox="media/paginated-reports-report-design-view/matrix.png":::  
   
   
 ## Keep matrix group headers visible while scrolling  
@@ -44,7 +45,7 @@ To prevent row and column labels from scrolling out of view after rendering a pa
   
 1. On the design surface, select anywhere in the table to display static members, as well as groups, in the grouping pane.  
   
-     ![Screenshot showing Grouping pane.](media/paginated-reports-report-design-view/group-pane-updated.png "Grouping pane")  
+     :::image type="content" source="media/paginated-reports-report-design-view/group-pane-updated.png" alt-text="Screenshot showing Grouping pane." lightbox="media/paginated-reports-report-design-view/group-pane-updated.png":::  
   
      The Row Groups pane displays the hierarchical static and dynamic members for the row groups hierarchy, and the Column groups pane shows a similar display for the column groups hierarchy.  
   
@@ -52,7 +53,7 @@ To prevent row and column labels from scrolling out of view after rendering a pa
   
 1. Click the static member (row or column) that you want to remain visible while scrolling. The Properties pane displays the **Tablix Member** properties.  
   
-     ![Screenshot showing Tablix member properties.](media/paginated-reports-report-design-view/group-pane-tablix-member-updated.png "Tablix Member properties")  
+     :::image type="content" source="media/paginated-reports-report-design-view/group-pane-tablix-member-updated.png" alt-text="Screenshot showing Tablix member properties." lightbox="media/paginated-reports-report-design-view/group-pane-tablix-member-updated.png":::  
   
 1. In the Properties pane, set **FixedData** to **True**.  
   

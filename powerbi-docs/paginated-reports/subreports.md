@@ -1,5 +1,5 @@
 ---
-title: "Subreports in Power BI paginated reports"
+title: Subreports in Power BI Paginated Reports
 description: Learn about supported data sources for paginated reports in the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 
@@ -19,7 +19,7 @@ A *subreport* is a paginated report item that displays another paginated report 
 
 In the following screenshot, the contact information displayed in the main Sales Order report actually comes from a Contacts subreport.  
   
-:::image type="content" source="media/subreports/paginated-report-subreport.png" alt-text="Screenshot showing a subreport in a paginated report.":::
+:::image type="content" source="media/subreports/paginated-report-subreport.png" alt-text="Screenshot showing a subreport in a paginated report." lightbox="media/subreports/paginated-report-subreport.png":::
   
 You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. 
 
@@ -31,11 +31,11 @@ You create and modify paginated report definition (.rdl) files in Power BI Repor
 
 Power BI Report Builder can work with paginated reports on your computer, known as local reports, or with reports on the Power BI service.  When you open Report Builder for the first time, you're asked to sign into your Power BI account. If not, select **Sign In** at the upper-right corner.
 
-:::image type="content" source="media/subreports/report-builder-sign-in.png" alt-text="Screenshot showing Sign in to Power BI.":::
+:::image type="content" source="media/subreports/report-builder-sign-in.png" alt-text="Screenshot showing Sign in to Power BI." lightbox="media/subreports/report-builder-sign-in.png":::
 
 After signing in, you see a **Power BI Service** option in Power BI Report Builder for the **Open** and **Save As** options on the **File** menu. When you select the **Power BI Service** option to save a report, you create a live connection between Power BI Report Builder and the Power BI service. 
 
-:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Screenshot showing Open from the Power BI service.":::
+:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Screenshot showing Open from the Power BI service." lightbox="media/subreports/report-builder-subreport-open-service.png":::
 
 ## Save a local report to the Power BI service
 
@@ -43,16 +43,16 @@ Before you can add a subreport to a main report, first create the two reports an
 
 1. To open an existing local report, on the **File** menu, select **Open** > **This PC** and select an .rdl file.  
 
-2. On the **File** menu, select **Save As** > **Power BI Service**. For more information, see [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md).
+1. On the **File** menu, select **Save As** > **Power BI Service**. For more information, see [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md).
 
     > [!NOTE]
     > You can also upload a report by starting in the Power BI service. The same article, [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md), has details.
 
-3. In the **Save As** dialog box, select a Power BI workspace where you can store your paginated reports.
+1. In the **Save As** dialog box, select a Power BI workspace where you can store your paginated reports.
 
-    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Screenshot showing Save as to the Power BI service.":::
+    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Screenshot showing Save as to the Power BI service." lightbox="media/subreports/report-builder-subreport-save-as-service.png":::
 
-4. Select **Save**.
+1. Select **Save**.
 
 ## Add a subreport to a report
 
@@ -60,13 +60,13 @@ After you save both reports to the same workspace, you can add one to the other 
 
 1. On the **Insert** ribbon, select the **Subreport** button, or right-click on the report canvas and select **Insert** > **Subreport**.
 
-    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Screenshot showing Insert a subreport in a report.":::
+    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Screenshot showing Insert a subreport in a report." lightbox="media/subreports/report-builder-insert-subreport.png":::
 
     The **Subreport Properties** dialog box opens.  
 
-2. Select the **Browse** button > navigate to the report you want to use as the subreport > specify the name of the subreport in the **Name** text box.
+1. Select the **Browse** button > navigate to the report you want to use as the subreport > specify the name of the subreport in the **Name** text box.
 
-3. Configure other properties as needed, including [parameters](#use-parameters-in-subreports).
+1. Configure other properties as needed, including [parameters](#use-parameters-in-subreports).
 
 ## Use parameters in subreports  
 
@@ -85,7 +85,7 @@ You can preview your reports in Report Builder.
 
 - On the **Home** ribbon, select **Run**. 
 
-Because Report Builder is a design tool, previewing the report may look different from rendering the report in the Power BI service.
+Because Report Builder is a design tool, previewing the report might look different from rendering the report in the Power BI service.
 
 ### Notes about previewing
 
@@ -94,6 +94,8 @@ Because Report Builder is a design tool, previewing the report may look differen
 - If Report Builder encounters an error during preview, it returns a generic message.  If the error is hard to debug, consider rendering the report in the Power BI service.  
 
 ## Considerations
+
+Keep the following points in mind when working with subreports.
 
 ### Maintain the connection
 

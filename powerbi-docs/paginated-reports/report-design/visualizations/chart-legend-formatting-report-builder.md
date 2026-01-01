@@ -1,7 +1,8 @@
 ---
-title: "Format the legend on a Power BI paginated report chart | Microsoft Docs"
+title: Format the Legend on a Power BI Paginated Report Chart
 description: Learn how to format a legend on a Power BI paginated report chart in Report Builder with the Legend Properties dialog box or by using the Properties pane.
-ms.date: 03/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -15,7 +16,7 @@ ms.reviewer: monaraya
 
 The chart legend contains descriptions for each category in a Power BI paginated report chart. A legend always contains one or more legend items, where each legend item consists of a colored box that represents the series, and a text string that describes the series, as indicated in the following illustration.  
   
- ![Screenshot showing chart legend.](media/paginated-reports-visualizations/legend-diagram.png "Diagram of a chart legend")  
+ :::image type="content" source="media/paginated-reports-visualizations/legend-diagram.png" alt-text="Screenshot showing chart legend." lightbox="media/paginated-reports-visualizations/legend-diagram.png":::  
   
  A legend item is connected to an individual series on the chart, except for Shape charts, where the legend is connected to individual data points. The chart automatically adds items into the legend based on the series that are generated from your data.  
   
@@ -62,4 +63,3 @@ The chart legend contains descriptions for each category in a Power BI paginated
 - [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
 - [Hide Legend Items on the Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-hide-items-report-builder)   
 - [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/define-colors-on-a-chart-using-a-palette-report-builder-and-ssrs)  
-  

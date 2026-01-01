@@ -1,20 +1,20 @@
 ---
-title: Request or grant access to dashboards or reports
-description: Learn how to request access if someone sends you a link to a dashboard or a report, but doesn't share it with you. Learn how to grant access if someone requests it.
+title: Request or Grant Access to Shared Dashboards or Reports
+description: Learn how to request access to Power BI dashboards or reports when you receive a link without permission, and how to grant access when someone requests it.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/01/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ms.custom: sfi-image-nochange
 ---
 # Request or grant access to shared dashboards or reports
 
-If someone sends you a link to a dashboard or a report, but it's not shared with you, you can request access if the feature is enabled. If you don't see a "Request access" option, see [What to do if you don't see "Request access"](#what-to-do-if-you-dont-see-request-access). If you share a dashboard or a report with someone, you need to [grant them access](#grant-access).
+If someone sends you a link to a dashboard or a report, but they didn't share it with you, you can request access if the feature is enabled. If you don't see a **Request access** option, see [What to do if you don't see "Request access"](#what-to-do-if-you-dont-see-request-access). If you share a dashboard or a report with someone, you need to [grant them access](#grant-access).
 
 ## Request access
 
@@ -33,18 +33,18 @@ If someone sends you a link to a dashboard or a report, but it's not shared with
 
 ## What to do if you don't see "Request access"
 
-If you select a link to a report or dashboard but don't see a **Request access** option, this can happen for several reasons:
+If you select a link to a report or dashboard but don't see a **Request access** option, this situation can happen for several reasons:
 
 ### Why "Request access" might not be available
 
 - **The owner disabled request access:** Report or dashboard owners can disable the request access feature for their content.
 - **External sharing restrictions:** Your organization's tenant settings might prevent external users or certain groups from requesting access.
-- **The content was deleted or moved:** The report or dashboard might no longer exist or might have been moved to a different workspace.
+- **The content was deleted or moved:** The report or dashboard might no longer exist or might be moved to a different workspace.
 - **You already have access:** You might already have access to the content but through a different workspace or app.
 
 ### Alternative ways to request access
 
-If the **Request access** button is not available, try these alternatives:
+If the **Request access** button isn't available, try these alternatives:
 
 #### Find out who the owner is
 
@@ -56,7 +56,7 @@ If you don't know who owns the report or dashboard:
 
 1. **Ask your Power BI administrator to identify the owner.** Your organization's Power BI administrator can look up who owns specific content and can either grant you access or connect you with the owner.
 
-1. **Check if you have any existing access to the workspace.** Navigate to the Workspaces list in Power BI to see if you already have access to the workspace where the content is located. If you do, you might be able to see the workspace members list to identify who has Admin permissions.
+1. **Check if you have any existing access to the workspace.** Go to the Workspaces list in Power BI to see if you already have access to the workspace where the content is located. If you do, you might be able to see the workspace members list to identify who has Admin permissions.
 
 #### Request access from the owner
 
@@ -68,15 +68,15 @@ Once you know who the owner is, or if you already know:
 
 1. **Check if it's available through an app.** Ask the owner if the content is available through a Power BI app they can share with you. Apps provide curated access to multiple reports and dashboards.
 
-1. **Contact your Power BI administrator.** If you believe you should have access but cannot request it, contact your organization's Power BI administrator for assistance.
+1. **Contact your Power BI administrator.** If you believe you should have access but can't request it, contact your organization's Power BI administrator for assistance.
 
 1. **Verify the link is correct.** Confirm with the sender that the link they sent is still valid and points to the correct content.
 
 ## Grant access
 
-If you're a report owner, you might receive an email from **Microsoft Power BI** saying that someone has requested access to your report.
+If you're a report owner, you might receive an email from **Microsoft Power BI** saying that someone requested access to your report.
 
-1. In the email, select **Grant access**.
+1. Select **Grant access** in the email.
 
    The user’s **Pending** access request opens automatically. Select one of the options:
 
@@ -87,7 +87,7 @@ If you're a report owner, you might receive an email from **Microsoft Power BI**
 
     :::image type="content" source="media/service-request-access/manage-access-fabric.png" alt-text="Screenshot of pending access requests.":::
 
-1. After you've approved the user’s request, you can select the **Direct access** tab to modify their permissions and give them **Reshare** permissions as well.
+1. After you approve the user’s request, select the **Direct access** tab to modify their permissions and give them **Reshare** permissions as well.
 
     :::image type="content" source="media/service-request-access/power-bi-add-reshare-permission.png" alt-text="Screenshot of permission options for direct access.":::
 

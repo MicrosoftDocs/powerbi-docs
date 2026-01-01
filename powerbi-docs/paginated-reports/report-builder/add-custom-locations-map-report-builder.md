@@ -1,10 +1,10 @@
 ---
-title: "Add custom locations to a map in a Power BI paginated report | Microsoft Docs"
+title: Add Custom Locations to a Map in a Power BI Paginated Report
 description:  Learn how to add custom locations to a map you have added to a Power BI paginated report in Power BI Report Builder. 
-ms.date: 02/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-
 
 ms.topic: concept-article
 author: JulCsc
@@ -30,25 +30,25 @@ ms.reviewer: saurkumar
   
 1.  On the report design surface, select the map to select it and display the Map pane.  
   
-2.  On the toolbar, select **Add Layer**.  
+1.  On the toolbar, select **Add Layer**.  
   
-3.  From the drop-down list, select **Add Point Layer**. A point layer with no points is added to the map. By default, the point layer is ready for embedded points.  
+1.  From the drop-down list, select **Add Point Layer**. A point layer with no points is added to the map. By default, the point layer is ready for embedded points.  
   
 ## Add a custom point  
   
 1.  On the report design surface, select the map to select it and display the Map pane.  
   
-2.  In the Map pane, right-click a point layer that has type **Embedded**, and then select **Add Point**. The cursor changes to crosshairs.  
+1.  In the Map pane, right-click a point layer that has type **Embedded**, and then select **Add Point**. The cursor changes to crosshairs.  
   
-3.  To add a point, select a location on the map. An embedded point is added to the selected layer at the location where you select.  
+1.  To add a point, select a location on the map. An embedded point is added to the selected layer at the location where you select.  
   
 ## Customize the display for an embedded point  
   
 1.  Right-click the point, and then select **Point Properties**. The **Map Embedded Point Properties** dialog box opens.  
   
-2.  Select **Override point options for this layer**. Multiple property pages appear in the left pane.  
+1.  Select **Override point options for this layer**. Multiple property pages appear in the left pane.  
   
-3.  Select the pages and set the display properties that you want to apply to this point.  
+1.  Select the pages and set the display properties that you want to apply to this point.  
   
 ## Related content
 

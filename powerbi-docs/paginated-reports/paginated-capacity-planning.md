@@ -1,5 +1,5 @@
 ---
-title: Paginated reports capacity planning for Power BI Premium
+title: Paginated Reports Capacity Planning for Power BI Premium
 description: Plan your Power BI Premium capacity for using it with paginated reports.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Premium
 ---
@@ -18,9 +18,9 @@ LocalizationGroup: Premium
 
 Learn how to plan your [Premium capacity](./../enterprise/service-premium-what-is.md) to get the best performance out of your [paginated reports](paginated-reports-report-builder-power-bi.md), at a minimum cost. If you're migrating to Power BI from a different business intelligence tool, consider reading the articles listed below before you decide which capacity to use.
 
-* [Power BI migration overview](./../guidance/powerbi-migration-overview.md).
+- [Power BI migration overview](./../guidance/powerbi-migration-overview.md).
 
-* [Migrate SQL Server Reporting Services reports to Power BI](./../guidance/migrate-ssrs-reports-to-power-bi.md) - Aimed at report authors and Power BI administrators who are interested in migrating Report Definition Language (*.rdl*) reports to Power BI from SQL Server Reporting Services (SSRS).
+- [Migrate SQL Server Reporting Services reports to Power BI](./../guidance/migrate-ssrs-reports-to-power-bi.md) - Aimed at report authors and Power BI administrators who are interested in migrating Report Definition Language (*.rdl*) reports to Power BI from SQL Server Reporting Services (SSRS).
 
 ## Capacity planning
 
@@ -30,23 +30,23 @@ Before you start planning which capacity you need, review the [Capacities and SK
 
 When you plan your capacity, consider the following:
 
-* The complexity of the report design. Nested [tablix](report-builder-tables-matrices-lists.md), multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources.
+- The complexity of the report design. Nested [tablix](report-builder-tables-matrices-lists.md), multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources.
 
-* The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
+- The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 
-* The way your report retrieves data. When you use connectors, drivers or gateways, data retrieval might take longer, require more resources and as a result become more expensive.
+- The way your report retrieves data. When you use connectors, drivers or gateways, data retrieval might take longer, require more resources and as a result become more expensive.
 
-* When you export large reports into formats such as Excel and PDF, it requires more resources than reading every page, using toggles, and searching within the reports.
+- When you export large reports into formats such as Excel and PDF, it requires more resources than reading every page, using toggles, and searching within the reports.
 
 ### How many users can a SKU handle?
 
-To test paginated reports on different capacities, we executed three different types of workloads against different SKU sizes. Each workload consisted of a concurrently rendering single report, with different sizes.
+To test paginated reports on different capacities, three different types of workloads were executed against different SKU sizes. Each workload consisted of a concurrently rendering single report, with different sizes.
 
-* **Small** – Data aggregation table built over 100 rows from an Azure SQL data source.
+- **Small** – Data aggregation table built over 100 rows from an Azure SQL data source.
 
-* **Medium** – Data aggregation table built over 100,000 rows from an Azure SQL data source.
+- **Medium** – Data aggregation table built over 100,000 rows from an Azure SQL data source.
 
-* **Large** - Data aggregation table built over 250,000 rows from an Azure SQL data source.
+- **Large** - Data aggregation table built over 250,000 rows from an Azure SQL data source.
 
 Our analysis for Power BI Premium shows that the number of concurrent users at any given time, including daily peak times, doesn't tend to exceed five percent of the total user base.  
 
@@ -58,15 +58,15 @@ Based on the five percent concurrency ratio, the following table describes the a
 | **Medium** | 1,900 users    | 3,800 users     |
 | **Large**  | 1,300 users     | 2,600 users     |
 
-Take into consideration that the numbers in the table refer to designated capacities that don't run other operations. Your capacity may already use CPU resources for operations such as:
+Take into consideration that the numbers in the table refer to designated capacities that don't run other operations. Your capacity might already use CPU resources for operations such as:
 
-* Data retrieval and processing
+- Data retrieval and processing
 
-* Other workload and background operations
+- Other workload and background operations
 
-* Complex data grouping and reshaping
+- Complex data grouping and reshaping
 
-* Data filtering
+- Data filtering
 
 ## Concurrent requests
 
@@ -78,17 +78,17 @@ To avoid congestion, plan your concurrent requests load in advance. If you excee
 
 Using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) you can estimate the impact of your paginated report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
 
-To test your paginated report, we suggest that you use a dedicated clean capacity. A clean capacity helps isolate results from the impact of other users and workloads.
+To test your paginated report, use a dedicated clean capacity. A clean capacity helps isolate results from the impact of other users and workloads.
 
 Depending on the targeted test scenario, for example average or maximum usage validation, select or create a report representative of the anticipated resource consumption, and upload it to a Premium/Fabric workspace in the capacity you created for the test.
 
 Run the report several times, and use the metrics app to get the average CPU seconds spent to run your report. When calculating the time it took to run your report, consider the following:
 
-* The app shows aggregate values, you might need to divide the results by the number of times you run the report.
+- The app shows aggregate values, you might need to divide the results by the number of times you run the report.
 
-* There are multiple Power BI items and operations that might be involved in report rendering. You might need to sum their CPU consumption.
+- There are multiple Power BI items and operations that might be involved in report rendering. You might need to sum their CPU consumption.
 
-* There are multiple Power BI items and operations that might be involved in report rendering as renders may take a long time. A long running operation in the *Timepoint* page can be displayed as a list of operations, with none of the durations longer than 30 seconds. You might need to sum the render operations CPU consumption. Sorting by the start time can help display the full history of the render.
+- There are multiple Power BI items and operations that might be involved in report rendering as renders might take a long time. A long running operation in the *Timepoint* page can be displayed as a list of operations, with none of the durations longer than 30 seconds. You might need to sum the render operations CPU consumption. Sorting by the start time can help display the full history of the render.
 
 ### Calculate the max report renders
 
@@ -145,12 +145,11 @@ The formulas for an *F64* or a *P1* SKU will be:
 
 ## Related content
 
-* [What is Power BI Premium?](./../enterprise/service-premium-what-is.md)
+- [What is Power BI Premium?](./../enterprise/service-premium-what-is.md)
 
-* [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 
-* [Performance smoothing](/fabric/enterprise/throttling)
+- [Performance smoothing](/fabric/enterprise/throttling)
 
-* [Using Autoscale with Power BI Premium](./../enterprise/service-premium-auto-scale.md)
-
+- [Using Autoscale with Power BI Premium](./../enterprise/service-premium-auto-scale.md)
 

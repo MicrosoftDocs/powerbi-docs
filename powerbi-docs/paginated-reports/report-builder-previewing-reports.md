@@ -1,9 +1,10 @@
 ---
-title: "Preview reports in Power BI Report Builder"
+title: Preview Reports in Power BI Report Builder
 description: While you're creating a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 12/18/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -17,11 +18,11 @@ While you're creating a Report Builder paginated report, it's helpful to preview
 
 To preview your report, select **Run**.
 
-:::image type="content" source="media/report-builder-previewing/paginated-run-button-preview.png" alt-text="Screenshot showing the Run button in Report Builder.":::
+:::image type="content" source="media/report-builder-previewing/paginated-run-button-preview.png" alt-text="Screenshot showing the Run button in Report Builder." lightbox="media/report-builder-previewing/paginated-run-button-preview.png":::
 
 The report renders in preview mode.
 
-:::image type="content" source="media/report-builder-previewing/paginated-report-preview.png" alt-text="Screenshot showing preview of paginated report in Report Builder.":::
+:::image type="content" source="media/report-builder-previewing/paginated-report-preview.png" alt-text="Screenshot showing preview of paginated report in Report Builder." lightbox="media/report-builder-previewing/paginated-report-preview.png":::
 
 > [!NOTE]  
 > There are some differences between previewing in Report Builder and viewing in a browser. For example, a calendar control, which is added to a report when you specify a Date/Time type parameter, is different in Report Builder and in a browser.

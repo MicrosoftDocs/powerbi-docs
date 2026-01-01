@@ -1,7 +1,8 @@
 ---
-title: "Add or delete an indicator in Power BI paginated report | Microsoft Docs"
+title: Add or Delete an Indicator in Power BI Paginated Report
 description: Learn how to add or delete an indicator in your Power BI paginated reports to convey the state of a single data value in Power BI Report Builder.
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -29,7 +30,7 @@ ms.reviewer: saurkumar
   
  Because an indicator is positioned inside the gauge panel, you need to select the indicator instead of the panel when you want to configure the indicator by using the **Indicators Properties** dialog box or the **Properties** pane. The following picture shows a selected indicator in its gauge panel.  
   
- ![Screenshot of a gauge panel with indicator.](./media/paginated-reports-visualizations/gauge-panel-with-indicator.gif "gauge-panel-with-indicator")  
+ :::image type="content" source="./media/paginated-reports-visualizations/gauge-panel-with-indicator.gif" alt-text="Screenshot of a gauge panel with indicator." lightbox="./media/paginated-reports-visualizations/gauge-panel-with-indicator.gif":::  
   
 > [!NOTE]  
 > Depending on column width and the length of data values, the text in table or matrix cells might wrap and display text on multiple lines. When this occurs, the indicator icon might be stretched and change shape. This can make the indicator icon less readable. Place the indicator inside a rectangle to ensure that the icon is never stretched.  
@@ -38,21 +39,21 @@ ms.reviewer: saurkumar
   
 1.  Open an existing report or create a new report that contains a table and matrix with the data you want to display. For more information, see [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs) or [Matrices](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs).  
   
-2.  Insert a column in your table or matrix. For more information, see [Insert or Delete a Column &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/insert-or-delete-a-column-report-builder-and-ssrs).  
+1.  Insert a column in your table or matrix. For more information, see [Insert or Delete a Column &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/insert-or-delete-a-column-report-builder-and-ssrs).  
   
-3.  Optionally, on the **Insert** tab, select **Rectangle**, and then select a cell in the new column.  
+1.  Optionally, on the **Insert** tab, select **Rectangle**, and then select a cell in the new column.  
   
-4.  On the **Insert** tab, select **Indicator**, and then select a cell in the new column.  
+1.  On the **Insert** tab, select **Indicator**, and then select a cell in the new column.  
   
      If you added a rectangle to a cell, select that cell.  
   
-5.  In the **Select Indicator Style** dialog box, in the left pane, select the indicator type you want, and then select the indicator set.  
+1.  In the **Select Indicator Style** dialog box, in the left pane, select the indicator type you want, and then select the indicator set.  
   
-6.  Select **OK**.  
+1.  Select **OK**.  
   
-7.  Select the indicator. The **Gauge Data** pane opens.  
+1.  Select the indicator. The **Gauge Data** pane opens.  
   
-8.  In the **Values** area, in the **(Unspecified)** drop-down list, select the field whose values you want to display as an indicator.  
+1.  In the **Values** area, in the **(Unspecified)** drop-down list, select the field whose values you want to display as an indicator.  
   
      The indicator is configured to use default values. By default, indicators are configured use percentages as measurement units and the percentage ranges are evenly distributed across the members of the indicator and the value that the indicator conveys uses the scope of the nearest group.  
   
@@ -63,7 +64,7 @@ ms.reviewer: saurkumar
     > [!NOTE]  
     >  An indicator might be positioned inside a gauge panel that contains other indicators or gauges. If the gauge panels contain multiple items, be sure to select the indicator to delete it, not the gauge panel. If you select and then delete the gauge panel, the gauge panels and all the items in it are deleted.  
   
-2.  Select **Delete**.  
+1.  Select **Delete**.  
   
 ## Related content  
 

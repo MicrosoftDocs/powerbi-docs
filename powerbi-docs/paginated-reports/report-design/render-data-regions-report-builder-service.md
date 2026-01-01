@@ -1,7 +1,8 @@
 ---
-title: "Render data regions in a Power BI paginated report"
+title: Render Data Regions in a Power BI Paginated Report
 description: Learn about the pagination and rendering behaviors of various parts of a data region in a paginated report in Power BI Report Builder.
-ms.date: 04/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -18,7 +19,7 @@ In addition to the general rendering behaviors that apply to all Power BI pagina
 
 ## Tablix data regions
 
- The *tablix* data region, which enables you to create tables, matrices, and lists, is rendered as a grid comprised of columns and rows. The intersection of a row and a column is a cell. When rendered, this cell can contain data or other report items, such as images, rectangles, text boxes, or subreports. A tablix data region can grow vertically and/or horizontally. In addition, the corner cell, the data region header cells, and the data region body cells may grow based on their contents. If the data region spans multiple pages, report items that are set to repeat with the data region are rendered on every page on which the data region is displayed. For more information, see [Tables, Matrices, and Lists &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs).  
+ The *tablix* data region, which enables you to create tables, matrices, and lists, is rendered as a grid comprised of columns and rows. The intersection of a row and a column is a cell. When rendered, this cell can contain data or other report items, such as images, rectangles, text boxes, or subreports. A tablix data region can grow vertically and/or horizontally. In addition, the corner cell, the data region header cells, and the data region body cells might grow based on their contents. If the data region spans multiple pages, report items that are set to repeat with the data region are rendered on every page on which the data region is displayed. For more information, see [Tables, Matrices, and Lists &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs).  
   
 ### Right to left
 
@@ -48,12 +49,12 @@ In addition to the general rendering behaviors that apply to all Power BI pagina
   
 ## Related content
 
-* [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
-* [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
-* [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
-* [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
-* [Tables, matrixes, and lists in Power BI Report Builder](../report-builder-tables-matrices-lists.md)   
-* [Charts &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
-* [Gauges &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
+- [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
+- [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
+- [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+- [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
+- [Tables, matrixes, and lists in Power BI Report Builder](../report-builder-tables-matrices-lists.md)   
+- [Charts &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
+- [Gauges &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
   
   

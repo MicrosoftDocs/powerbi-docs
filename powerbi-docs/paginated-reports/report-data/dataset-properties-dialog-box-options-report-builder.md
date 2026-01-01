@@ -1,7 +1,8 @@
 ---
-title: "Dataset Properties, Options dialog box (Power BI Report Builder)"
+title: Dataset Properties, Options Dialog Box (Power BI Report Builder)
 description: Learn how to use the Dataset Properties dialog box to change data options, such as collation options and treating subtotals as detail data.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

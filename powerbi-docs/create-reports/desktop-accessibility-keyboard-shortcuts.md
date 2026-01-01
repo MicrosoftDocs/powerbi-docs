@@ -1,5 +1,5 @@
 ---
-title: Keyboard shortcuts in Power BI Desktop
+title: Keyboard Shortcuts in Power BI Desktop
 description: Learn how to navigate Power BI Desktop by using keyboard commands and shortcuts. The tables in this article describe the shortcuts available.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 # Keyboard shortcuts in Power BI Desktop
@@ -18,16 +19,16 @@ Keyboard shortcuts are helpful for moving around in Power BI reports using a key
 
 When using Power BI Desktop, you can press **Shift + ?** to show keyboard shortcuts, as shown in the following image.
 
-![Screenshot of the keyboard shortcuts in Power BI Desktop.](media/desktop-accessibility/accessibility-03.png)
+:::image type="content" source="media/desktop-accessibility/accessibility-03.png" alt-text="Screenshot of the keyboard shortcuts dialog in Power BI Desktop.":::
 
 In addition to using these keyboard shortcuts in **Power BI Desktop**, these shortcuts work in the following experiences as well:
 
-* **Q&A Explorer** dialog
-* **Getting Started** dialog
-* **File** menu and **About** dialog
-* **Warning** bar
-* **File Restore** dialog
-* **Frowns** dialog
+- **Q&A Explorer** dialog
+- **Getting Started** dialog
+- **File** menu and **About** dialog
+- **Warning** bar
+- **File Restore** dialog
+- **Frowns** dialog
 
 In our continued effort to improve accessibility, the previous list of experiences also supports screen readers and high contrast settings.
 
@@ -208,19 +209,19 @@ In our continued effort to improve accessibility, the previous list of experienc
 
 There are a few known issues and limitations with the accessibility features. You can view descriptions of those issues and limitations in the following list:
 
-* When using screen readers with **Power BI Desktop**, you'll have the best experience if you open your screen reader before opening any files in **Power BI Desktop**.
-* If you're using Narrator, you'll have some limitations around navigating **Show data** as an HTML table.
+- When using screen readers with **Power BI Desktop**, you have the best experience if you open your screen reader before opening any files in **Power BI Desktop**.
+- If you're using Narrator, you have some limitations around navigating **Show data** as an HTML table.
 
 ## Related content
 
 The collection of articles for Power BI accessibility are the following:
 
-* [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
-* [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
-* [Consume Power BI reports by using accessibility features](desktop-accessibility-consuming-tools.md)
-* [Creating reports in Power BI using accessibility tools](desktop-accessibility-creating-tools.md)
-* [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
+- [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
+- [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
+- [Consume Power BI reports by using accessibility features](desktop-accessibility-consuming-tools.md)
+- [Creating reports in Power BI using accessibility tools](desktop-accessibility-creating-tools.md)
+- [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
 
 You might also be interested in the following:
 
-* [Use Report Themes in Power BI Desktop](desktop-report-themes.md)
+- [Use Report Themes in Power BI Desktop](desktop-report-themes.md)

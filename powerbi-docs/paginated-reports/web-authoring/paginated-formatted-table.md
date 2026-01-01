@@ -1,12 +1,13 @@
 ---
-title: "Create paginated reports that you can export in the Power BI service (Preview)"
+title: Create Paginated Reports That You Can Export in the Power BI Service (Preview)
 description: In this article, you learn how to create a paginated report using the interactive editor in the Power BI service, and then export it.
 author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/16/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 
 # Create paginated reports that you can export in the Power BI service (Preview)
@@ -31,7 +32,7 @@ No matter which way you start, the new paginated report online editing experienc
 
 To create the table, select field names in the **Data** pane on the right.  This pane gives you a table-and-column based view of the chosen dataset.  When you find a column that you wish to add to your table, select the column.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-data-list.png" alt-text="Screenshot of selecting fields.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-data-list.png" alt-text="Screenshot of selecting fields." lightbox="media/paginated-formatted-table/power-bi-formatted-table-data-list.png":::
 
 The selected columns appear in the **Editor** portion of the canvas. Give the editor a few moments to run the query on the dataset. The formatted table shows up in the **Preview** section of the canvas.
 
@@ -43,9 +44,9 @@ If columns are in the wrong order in the **Build** pane, don't worry.  You can e
 
 :::image type="content" source="media/paginated-formatted-table/paginated-authoring-build-pane.png" alt-text="Screenshot of dragging items." lightbox="media/paginated-formatted-table/paginated-authoring-build-pane.png":::
 
-When you select a field, we use the default aggregate set on the field. You can change the aggregate behavior. Select the arrow next to the field item in the **Build** pane.
+When you select a field, the default aggregate is used set on the field. You can change the aggregate behavior. Select the arrow next to the field item in the **Build** pane.
 
-:::image type="content" source="media/paginated-formatted-table/formatted-table-aggregations.png" alt-text="Screenshot of possible aggregations.":::
+:::image type="content" source="media/paginated-formatted-table/formatted-table-aggregations.png" alt-text="Screenshot of possible aggregations." lightbox="media/paginated-formatted-table/formatted-table-aggregations.png":::
 
 ## Format the table
 
@@ -61,7 +62,7 @@ In the **Editor**:
   
 1. To resize the width of the columns, hover over the edge of a column header, and drag the double-headed arrow that appears.
 
-    :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns-1.png" alt-text="Screenshot of resizing the width of the columns.":::
+    :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns-1.png" alt-text="Screenshot of resizing the width of the columns." lightbox="media/paginated-formatted-table/paginated-table-resize-columns-1.png":::
    
 1. To edit the text in a column header select the header you would like to edit, double-click and make your changes.
 
@@ -77,7 +78,7 @@ In the **Editor**:
 
 1. Insert textboxes, images, headers and footers from the ribbon.
 
-    :::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-ribbon.png" alt-text="Screenshot of insert ribbon in authoring.":::
+    :::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-ribbon.png" alt-text="Screenshot of insert ribbon in authoring." lightbox="media/paginated-formatted-table/paginated-authoring-insert-ribbon.png":::
 
     > [!NOTE]
     > To revert to using the original column header based on your data source, remove and add the field again in the **Data** pane.
@@ -88,10 +89,12 @@ In the **Editor**:
 
 If you are **Viewing** a paginated report that you've *authored in the Power BI service*, you have the option to edit the report by switching to  **Editing**
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-edit-1.png" alt-text="Screenshot of Edit button.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-edit-1.png" alt-text="Screenshot of Edit button." lightbox="media/paginated-formatted-table/power-bi-formatted-table-edit-1.png":::
  
 
 ## Add images to the paginated report
+
+You can add images to different locations in your paginated report.
 
 ### Add images to the body of the paginated report
 
@@ -99,7 +102,7 @@ For any paginated report that you *author in the Power BI service*, you can inse
 
 1. To add an image to the body of your report, select **Insert**, then **Image**.
 
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-insert.png" alt-text="Screenshot of insert image button.":::
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-insert.png" alt-text="Screenshot of insert image button." lightbox="media/paginated-formatted-table/rdl-web-authoring-image-insert.png":::
 
     > [!NOTE]
     > At this time, you can only insert images from your local machine or external images that are available over the internet without needing authentication.
@@ -107,7 +110,7 @@ For any paginated report that you *author in the Power BI service*, you can inse
 
 1. After you insert the image, you can use the **Picture format** tab to set an Alternate text for the image, set padding options, or set the display size option.
 
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-picture-format.png" alt-text="Screenshot of picture format options.":::
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-picture-format.png" alt-text="Screenshot of picture format options." lightbox="media/paginated-formatted-table/rdl-web-authoring-image-picture-format.png":::
 
 To learn more about external images, refer to [Add external images to paginated reports](../report-design/add-external-image-report-builder-service.md).
 
@@ -131,7 +134,7 @@ For any paginated report you author in the Power BI service, you can insert text
 
 1. To add a text box to your report, select **Insert** and then **Text box**.
 
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-add-text-box.png" alt-text="Screenshot of insert text box button.":::
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-add-text-box.png" alt-text="Screenshot of insert text box button." lightbox="media/paginated-formatted-table/rdl-web-authoring-add-text-box.png":::
 
     > [!NOTE]
     > When you insert a new text box or select a text box, you're immediately editing the text in the text box.
@@ -144,19 +147,19 @@ For any paginated report you author in the Power BI service, you can insert text
 
 1. To move a selected text box, select and drag the move indicator on the text box outline.
 
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-textbox-move.png" alt-text="Screenshot of moving a text box.":::
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-textbox-move.png" alt-text="Screenshot of moving a text box." lightbox="media/paginated-formatted-table/rdl-web-authoring-textbox-move.png":::
 
 
 1. To resize a text box, select the text box itself and then select and drag any sizing handle. Alternatively, press the SHIFT + arrow keys to resize horizontally or vertically.
 
     > [!NOTE]
-    > Text that doesn't fit within the text box area may show only while the text box is selected. Text outside the text box area doesn't show in the final design of your report. Resize the text box area to show the text you would like visible.
+    > Text that doesn't fit within the text box area might show only while the text box is selected. Text outside the text box area doesn't show in the final design of your report. Resize the text box area to show the text you would like visible.
 
 ### Format and style text in a text box
 
 1. After you select a text box, the **Text box format** tab is displayed. From this tab you can format the font style, including font, color, size, and text decoration like bold, italics, and underline. 
     
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-textbox-formatting.png" alt-text="Screenshot of text styling options.":::    
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-textbox-formatting.png" alt-text="Screenshot of text styling options." lightbox="media/paginated-formatted-table/rdl-web-authoring-textbox-formatting.png":::    
 1. You can format font styles at the character and line level while you're editing the text box. Or select the text box to highlight all text and format all text within the text box at once.
 
 ### Delete a text box
@@ -171,21 +174,21 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
 
 1. To add a header to the report, select **Header** from the **Insert** option on the ribbon.
 
-   :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-header-footer.png" alt-text="Screenshot of header/footer.":::    
+   :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-header-footer.png" alt-text="Screenshot of header/footer." lightbox="media/paginated-formatted-table/rdl-web-authoring-header-footer.png":::    
 
    
 2. You can add a textbox, images, page numbers or execution times in the header/footer. You can also unselect **Show on first page** or **Show on last page** if you don't want the header/footer to be displayed on those pages.
 
-   :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-header-footer-options.png" alt-text="Screenshot of header footer options.":::    
+   :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-header-footer-options.png" alt-text="Screenshot of header footer options." lightbox="media/paginated-formatted-table/rdl-web-authoring-header-footer-options.png":::    
    
 3. Once you are done creating your header/footer, you can exit either by selecting the **Close Header** or **Close Footer** option or double clicking outside the header or footer area.
 
-   :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-close-header-footer-options.png" alt-text="Screenshot of close header footer options.":::   
+   :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-close-header-footer-options.png" alt-text="Screenshot of close header footer options." lightbox="media/paginated-formatted-table/rdl-web-authoring-close-header-footer-options.png":::   
 
 ### Considerations and limitations when working with headers and footers
 
 1. You must exit the header or footer before you can continue editing the body of the report.
-2. The format of the page number is limited. We only support absolute page numbers.
+2. The format of the page number is limited. Only absolute page numbers are supported.
    
 ## Export your report
 
@@ -193,7 +196,7 @@ You can export the table before or after you save it. Paginated reports have ric
 
 For the table, DataElementName is generated using CLS-compliant format of <table_name>_<column_name>. In CSV, this controls the name of the CSV column header. To update the value for the generated DataElementName, download the report and edit it with Power BI Report Builder. To learn more, see [data renderer formats](../report-design/render-data-report-builder-service.md#data-renderer-formats).
 
-:::image type="content" source="media/paginated-formatted-table/formatted-table-export.png" alt-text="Screenshot of list of export formats available.":::
+:::image type="content" source="media/paginated-formatted-table/formatted-table-export.png" alt-text="Screenshot of list of export formats available." lightbox="media/paginated-formatted-table/formatted-table-export.png":::
 
 ## Save your report
 
@@ -201,11 +204,11 @@ You can save the report to any workspace.
 
 1. On the **File** menu, save, download, or print your report.
 
-    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-file-menu.png" alt-text="Screenshot of File menu.":::
+    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-file-menu.png" alt-text="Screenshot of File menu." lightbox="media/paginated-formatted-table/power-bi-formatted-table-file-menu.png":::
 
 2. In **Save your report**, give your report a name and select a workspace.
 
-    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-save-dialog-1.png" alt-text="Screenshot of Save menu.":::
+    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-save-dialog-1.png" alt-text="Screenshot of Save menu." lightbox="media/paginated-formatted-table/power-bi-formatted-table-save-dialog-1.png":::
 
 After you save the report, you see a success or failure notification in the top right of the editor.
 

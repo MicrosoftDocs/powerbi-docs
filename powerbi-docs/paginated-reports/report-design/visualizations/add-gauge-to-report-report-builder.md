@@ -1,7 +1,8 @@
 ---
-title: "Add a gauge to a Power BI paginated report | Microsoft Docs"
+title: Add a Gauge to a Power BI Paginated Report
 description: Learn how to summarize data in a Power BI paginated report in a visual format by creating a gauge data region and dragging report dataset fields to a pane on the gauge in Power BI Report Builder.
-ms.date: 03/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

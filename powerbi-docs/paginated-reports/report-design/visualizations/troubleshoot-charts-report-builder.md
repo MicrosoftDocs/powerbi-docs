@@ -1,8 +1,9 @@
 ---
-title: "Troubleshoot charts in Power BI paginated reports | Microsoft Docs"
+title: Troubleshoot Charts in Power BI Paginated Reports
 
 description: Use fields with numeric data types along the value axis, rather than formatted numbers, to display a numeric value in a Power BI paginated report.
-ms.date: 03/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

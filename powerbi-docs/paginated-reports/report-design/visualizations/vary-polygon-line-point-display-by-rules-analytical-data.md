@@ -1,7 +1,8 @@
 ---
-title: "Vary polygon, line, and point display in Power BI paginated reports | Microsoft Docs"
+title: Vary Polygon, Line, and Point Display in Power BI Paginated Reports
 description:  Control display for polygons, lines, and points in a Power BI paginated report by setting options and rules, or by overriding options for embedded map elements in Power BI Report Builder.
-ms.date: 03/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

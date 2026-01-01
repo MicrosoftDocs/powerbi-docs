@@ -1,7 +1,8 @@
 ---
-title: "Add, move, or delete a table, matrix, or list in a Power BI paginated report | Microsoft Docs"
+title: Add, Move, or Delete a Table, Matrix, or List in a Power BI Paginated Report
 description: Arrange your table or matrix data regions in a paginated report by using the New Table Wizard or New Matrix Wizard in Power BI Report Builder. 
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -21,19 +22,19 @@ ms.reviewer: saurkumar
   
 1.  On the **Insert** tab, select **Table** or **Matrix**, and then select **Table Wizard** or **Matrix Wizard**.  
   
-2.  Follow the steps in the **New Table** or **New Matrix** wizard.  
+1.  Follow the steps in the **New Table** or **New Matrix** wizard.  
   
-3.  On the **Home** tab, select **Run** to see the rendered report.  
+1.  On the **Home** tab, select **Run** to see the rendered report.  
   
-4.  On the **Run** tab, select **Design** to continue working on the report.  
+1.  On the **Run** tab, select **Design** to continue working on the report.  
   
 ## Add a data region  
   
 1.  On the **Ribbon**, in the **Data Regions** group, select the data region to add.  
   
-2.  Select the design surface, and then drag to create a box that is the desired size of the data region.  
+1.  Select the design surface, and then drag to create a box that is the desired size of the data region.  
   
-3.  Drag a report dataset field from the Report Data pane onto a data region cell. The data region is now bound to data from the report dataset.  
+1.  Drag a report dataset field from the Report Data pane onto a data region cell. The data region is now bound to data from the report dataset.  
   
 ## Select a data region  
   

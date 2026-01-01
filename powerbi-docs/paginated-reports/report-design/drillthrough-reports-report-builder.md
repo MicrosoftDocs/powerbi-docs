@@ -1,9 +1,10 @@
 ---
-title: "Drillthrough reports in a Power BI paginated report"
+title: Drillthrough Reports in a Power BI Paginated Report
 description: Discover drillthrough reports, which open when you select a link in a Power BI paginated report to get details about an item in an original summary report in Power BI Report Builder.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 02/08/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -15,7 +16,7 @@ ms.topic: concept-article
 
 A drillthrough report is a report that a user opens by clicking a link within another Power BI paginated report. Drillthrough reports commonly contain details about an item that is contained in an original summary report. For example, in this illustration, the sales summary report lists sales orders and totals. When a user clicks an order number in the summary list, another report opens that contains details about the order.  
 
-:::image type="content" source="media/paginated-drill-through/paginated-drillthrough.gif" alt-text="Screenshot showing drillthrough report.":::
+:::image type="content" source="media/paginated-drill-through/paginated-drillthrough.gif" alt-text="Screenshot showing drillthrough report." lightbox="media/paginated-drill-through/paginated-drillthrough.gif":::
   
  The data in the drillthrough report is not retrieved until the user clicks the link in the main report that opens the drillthrough report. If the data for the main report and the drillthrough report must be retrieved at the same time, consider using a subreport. For more information, see [Subreports in Power BI paginated reports](../subreports.md).
   
