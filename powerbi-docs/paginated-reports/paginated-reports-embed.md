@@ -1,5 +1,5 @@
 ---
-title: "Embed a paginated report"
+title: Embed a Paginated Report
 description: Learn how to embed a Power BI paginated report
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 
@@ -25,25 +25,25 @@ A Power BI report is always bound to a single data source. However, a paginated 
 
 There are some special considerations when generating an embed token for a paginated report with an [Embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) solution. If the paginated report has one or more Power BI semantic models configured as its data sources, you must create a [GenerateTokenRequestV2Dataset](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) object for each semantic model, with the following parameters:
 
-* `xmlaPermissions` must be set to `ReadOnly`
+- `xmlaPermissions` must be set to `ReadOnly`
 
-* `allowEdit` must be set to `false`
+- `allowEdit` must be set to `false`
  
 ## Unsupported features
 
 Before embedding a paginated report, consider the following Power BI features which aren't supported:
 
-* Edit mode or any type of self-service authoring
+- Edit mode or any type of self-service authoring
 
-* Client-side [events](/javascript/api/overview/powerbi/handle-events) such as `loaded` and `rendered`
+- Client-side [events](/javascript/api/overview/powerbi/handle-events) such as `loaded` and `rendered`
 
-* [Dynamic binding](/javascript/api/overview/powerbi/bind-report-datasets)
+- [Dynamic binding](/javascript/api/overview/powerbi/bind-report-datasets)
 
-* Reading or updating [filter settings](/javascript/api/overview/powerbi/control-report-filters)
+- Reading or updating [filter settings](/javascript/api/overview/powerbi/control-report-filters)
 
-* [Page navigation](/javascript/api/overview/powerbi/page-navigation)
+- [Page navigation](/javascript/api/overview/powerbi/page-navigation)
 
-* Retrieving a parameter value that’s been updated by the user using an API
+- Retrieving a parameter value that’s been updated by the user using an API
  
 ## Code example
 

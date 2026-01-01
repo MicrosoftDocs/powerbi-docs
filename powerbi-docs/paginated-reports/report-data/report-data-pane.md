@@ -1,7 +1,8 @@
 ---
-title: Report Data pane (Power BI Report Builder)
+title: Report Data Pane (Power BI Report Builder)
 description: Learn how to use the Report Data pane to view the currently defined parameters, data sources, datasets, field collections, and images in your report.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

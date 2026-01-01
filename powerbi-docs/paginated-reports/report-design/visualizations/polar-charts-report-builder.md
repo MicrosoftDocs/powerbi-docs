@@ -1,7 +1,8 @@
 ---
-title: "Polar charts in Power BI paginated report | Microsoft Docs"
+title: Polar Charts in Power BI Paginated Report
 description: Discover the use of a Power BI paginated report polar chart with points grouped by category on a circle and values represented by the length of a point from the center of the circle.
-ms.date: 03/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: article
@@ -45,7 +46,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
  The following illustration shows an example of a radar chart based on the data presented.  
   
- ![Screenshot of a Radar chart.](media/paginated-reports-visualizations/radar-chart.gif "Radar chart")  
+ :::image type="content" source="media/paginated-reports-visualizations/radar-chart.gif" alt-text="Screenshot of a Radar chart." lightbox="media/paginated-reports-visualizations/radar-chart.gif":::  
   
 ## Related content
 

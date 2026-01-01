@@ -1,7 +1,8 @@
 ---
-title: "Accessibility in Power BI paginated reports | Microsoft Docs"
+title: Accessibility in Power BI Paginated Reports
 description:  Learn how to create paginated reports with accessibility in mind to make it usable by as many individuals as possible, including individuals with visual or physical impairments.
-ms.date: 05/12/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -15,7 +16,7 @@ ms.reviewer: cookiemccray
 
 You can create paginated reports for people of all abilities. Creating a paginated report with accessibility in mind makes it usable by as many individuals as possible, including individuals with visual or physical impairments. Users can consume these reports with the use of screen readers or keyboard navigation. 
 
-:::image type="content" source="media/paginated-accessibility-overview/high-contrast-paginated-report.png" alt-text="Screenshot of viewing a paginated report in high-contrast mode.":::
+:::image type="content" source="media/paginated-accessibility-overview/high-contrast-paginated-report.png" alt-text="Screenshot of viewing a paginated report in high-contrast mode." lightbox="media/paginated-accessibility-overview/high-contrast-paginated-report.png":::
 
 Power BI Report Builder has many accessibility features to enable report creators create an accessible user experience. These features are in line with Microsoft’s commitment to making its products and services easier for everyone to use. Using these features in creating reports not only gives everyone equal access to your report but also improves everyone’s experience. The report becomes accessible to the users on the web or as an accessible PDF when exported using the **Accessible PDF** export option. These accessibility features are also available for paginated reports in the service.
 
@@ -27,7 +28,6 @@ This article provides an overview of accessibility and paginated reports. These 
 - [Accessibility features in paginated reports (Power BI Report Builder)](paginated-create-accessible-reports.md)
 - [Use accessibility tools to interact with paginated reports (Power BI Report Builder)](paginated-consume-accessible-reports.md)
 - [Detailed list of keyboard shortcuts for paginated reports](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder)
-
 
 ## Accessibility standards
 

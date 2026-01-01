@@ -1,5 +1,5 @@
 ---
-title: "Sample Power BI Paginated Reports"
+title: Sample Power BI Paginated Reports
 description: Learn how to download and use sample Power BI paginated reports from GitHub, including invoice, label, mailing letter, transcript, and sales performance templates.
 author: JulCsc
 ms.author: juliacawthra
@@ -30,7 +30,7 @@ To successfully download the reports, you need to download the repo as a zip fil
 1. Open the [Reporting Services GitHub repo](https://github.com/microsoft/Reporting-Services).
 1. Select the arrow on the green **Code** button > **Download ZIP**.
 
-    :::image type="content" source="media/paginated-reports-samples/paginated-report-download-zip.png" alt-text="Screenshot of the GitHub repo containing the sample Power BI paginated reports.":::
+    :::image type="content" source="media/paginated-reports-samples/paginated-report-download-zip.png" alt-text="Screenshot of the GitHub repo containing the sample Power BI paginated reports." lightbox="media/paginated-reports-samples/paginated-report-download-zip.png":::
 
 1. Open the file, select **Extract all**, and choose a location for the files. By default, the folder name is **Reporting-Services-master**.
 1. Open the **Reporting-Services-master** folder, then open the **PaginatedReportSamples** folder.
@@ -43,7 +43,7 @@ To successfully download the reports, you need to download the repo as a zip fil
 
 ## Invoice
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of the sample Power BI paginated report invoice.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of the sample Power BI paginated report invoice." lightbox="media/paginated-reports-samples/paginated-report-invoice.png":::
 
 This paginated report is a self-contained invoice. The scenario for this report is that you want a print-ready invoice. It needs to show the total sales with details listing item descriptions, quantities, discounts, and cost.
 
@@ -58,7 +58,7 @@ Data source: Included in the .rdl file
 
 ## Labels
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-labels.png" alt-text="Screenshot of the sample Power BI paginated report labels.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-labels.png" alt-text="Screenshot of the sample Power BI paginated report labels." lightbox="media/paginated-reports-samples/paginated-report-labels.png":::
 
 This is a self-contained paginated report sample. It's a multicolumn report perfectly sized to fit the print layout of the mailing label template.
 
@@ -68,13 +68,13 @@ When you run this report in Report Builder, it appears to have only one column.
 
 - Select **Print Layout** to see what it looks like when you print it.
 
-    :::image type="content" source="media/paginated-reports-samples/report-builder-print-layout.png" alt-text="Screenshot of the Print Layout option in Report Builder.":::
+    :::image type="content" source="media/paginated-reports-samples/report-builder-print-layout.png" alt-text="Screenshot of the Print Layout option in Report Builder." lightbox="media/paginated-reports-samples/report-builder-print-layout.png":::
 
 Likewise, when you upload this report to the Power BI service and open it, it opens with only one column.
 
 - Select **View** > **Print Layout** to see the multicolumn view.
 
-    :::image type="content" source="media/paginated-reports-samples/paginated-view-print-layout.png" alt-text="Screenshot of the View menu with the Print Layout option.":::
+    :::image type="content" source="media/paginated-reports-samples/paginated-view-print-layout.png" alt-text="Screenshot of the View menu with the Print Layout option." lightbox="media/paginated-reports-samples/paginated-view-print-layout.png":::
 
 ### Report characteristics
 
@@ -88,7 +88,7 @@ Data source: Included in the .rdl
 
 ## Mailing letter
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Screenshot of the sample Power BI paginated report letter.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Screenshot of the sample Power BI paginated report letter." lightbox="media/paginated-reports-samples/paginated-report-letter.png":::
 
 This self-contained paginated report sample is designed for creating real world mailing letters. The scenario for this report is that you want a print-ready letter with dynamic content.
 
@@ -104,7 +104,7 @@ Data source: Included in the .rdl
 
 ## Transcript
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Screenshot of the sample Power BI paginated report transcript.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Screenshot of the sample Power BI paginated report transcript." lightbox="media/paginated-reports-samples/paginated-report-transcript.png":::
 
 The scenario for this report is that you want a print-ready transcript. It needs to contain dynamic content listing program description details and dates for each student.
 
@@ -118,7 +118,7 @@ Data source: Included in the .rdl
 
 ## Sales Performance
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-sales-performance.png" alt-text="Screenshot of the sample Power BI paginated report for Sales Performance.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-sales-performance.png" alt-text="Screenshot of the sample Power BI paginated report for Sales Performance." lightbox="media/paginated-reports-samples/paginated-report-sales-performance.png":::
 
 Country Sales Performance is a self-contained paginated report sample. The scenario for this report is that you want a print-ready invoice to see total sales and details. It showcases these features:
 
@@ -133,7 +133,7 @@ Data source: Included in the .rdl
 
 ## Regional Sales
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-regional-sales.png" alt-text="Screenshot of the sample Power BI paginated report for Regional Sales.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-regional-sales.png" alt-text="Screenshot of the sample Power BI paginated report for Regional Sales." lightbox="media/paginated-reports-samples/paginated-report-regional-sales.png":::
 
 Regional Sales is a self-contained paginated report sample. The scenario for this report is that you want a print-ready report to see total sales versus quota. It showcases these features:
 
@@ -147,7 +147,7 @@ Data source: Included in the .rdl
 
 ## Organization Expenditures
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-organization-expenditures.png" alt-text="Screenshot of the sample Power BI paginated report for Organization Expenditures.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-organization-expenditures.png" alt-text="Screenshot of the sample Power BI paginated report for Organization Expenditures." lightbox="media/paginated-reports-samples/paginated-report-organization-expenditures.png":::
 
 Organization Expenditures is a self-contained paginated report sample. The scenario for this report is that you want a print-ready expense report to see a breakdown of expenses in your organization. It showcases these features:
 

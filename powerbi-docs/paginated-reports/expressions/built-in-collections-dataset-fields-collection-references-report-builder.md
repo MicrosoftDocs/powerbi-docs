@@ -1,10 +1,11 @@
 ---
-title: "Dataset Fields collection references in a paginated report"
+title: Dataset Fields Collection References in a Paginated Report
 description: Create a dataset for display of individual or summarized values in the Report Data pane of Power BI Report Builder in a paginated report. 
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/21/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -26,7 +27,7 @@ ms.update-cycle: 1825-days
   
  To display summarized values for a field collection in a text box directly on the design surface (not part of a data region), you must specify the dataset name as a scope for the aggregate function. For example, for a dataset named `SalesData`, the following expression specifies the total of all values for the field `Sales`: `=Sum(Fields!Sales,"SalesData")`.  
   
- When you use the **Expression** dialog box to define a simple field reference, you can select the Fields collection in the Category pane and see the list of available fields in the **Field** pane. Each field has several properties, including Value and IsMissing. The remaining properties are predefined extended field properties that may be available to the dataset depending on the data source type.  
+ When you use the **Expression** dialog box to define a simple field reference, you can select the Fields collection in the Category pane and see the list of available fields in the **Field** pane. Each field has several properties, including Value and IsMissing. The remaining properties are predefined extended field properties that might be available to the dataset depending on the data source type.  
   
 ### Detecting Nulls for a Dataset Field  
  To detect a field value that is null (**Nothing** in Visual Basic), you can use the function **IsNothing**. When placed in a text box in a table details row, the following expression tests the field `MiddleName` and substitutes the text "No Middle Name" when the value is null, and the field value itself when the value is not null:  
@@ -82,7 +83,7 @@ End Function
 ### Using Extended Field Properties  
  Extended field properties are additional properties defined on a field by the data processing extension, which is determined by the data source type for the dataset. Extended field properties are predefined or specific to a data source type. For more information, see [Extended Field Properties for an Analysis Services Database &#40;Paginated Reports&#41;](/sql/reporting-services/report-data/extended-field-properties-for-an-analysis-services-database-ssrs).  
   
- If you specify a property that is not supported for that field, the expression evaluates to **null** (**Nothing** in Visual Basic). If a data provider does not support extended field properties, or if the field is not found when the query is executed, the value for the property is **null** (**Nothing** in Visual Basic) for properties of type **String** and **Object**, and zero (0) for properties of type **Integer**. A data processing extension may take advantage of predefined properties by optimizing queries that include this syntax.  
+ If you specify a property that is not supported for that field, the expression evaluates to **null** (**Nothing** in Visual Basic). If a data provider does not support extended field properties, or if the field is not found when the query is executed, the value for the property is **null** (**Nothing** in Visual Basic) for properties of type **String** and **Object**, and zero (0) for properties of type **Integer**. A data processing extension might take advantage of predefined properties by optimizing queries that include this syntax.  
   
 ## Next steps
 

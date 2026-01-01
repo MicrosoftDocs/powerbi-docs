@@ -1,7 +1,8 @@
 ---
-title: "Oracle connection type (Power BI Report Builder)"
+title: Oracle Connection Type (Power BI Report Builder)
 description: Use the information in this article about the Oracle connection type to learn how to build a data source.
-ms.date: 10/09/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -16,7 +17,7 @@ ms.reviewer: rpatkar
 To use data from an Oracle database in your report, you must have a dataset that's based on a report data source of type Oracle. This built-in data source type uses the Oracle Data Provider directly and requires an Oracle client software component. This article explains how to download and install drivers for Power BI Report Builder.
 
 > [!IMPORTANT]
-> The following commands that use Oracle's OraProvCfg.exe tool to register Oracle's Managed and Unmanaged ODP.NET drivers are provided as examples for use with the above Microsoft products. For the configuration of the ODP.NET drivers specific to your environment, you may need to contact Oracle support or reference Oracle's documentation for [Configuring Oracle Data Provider for .NET](https://docs.oracle.com/en/database/oracle/oracle-database/19/odpnt/InstallConfig.html#GUID-1F689B90-2CC4-4907-B8FE-A5F4EE36F673).
+> The following commands that use Oracle's OraProvCfg.exe tool to register Oracle's Managed and Unmanaged ODP.NET drivers are provided as examples for use with the above Microsoft products. For the configuration of the ODP.NET drivers specific to your environment, you might need to contact Oracle support or reference Oracle's documentation for [Configuring Oracle Data Provider for .NET](https://docs.oracle.com/en/database/oracle/oracle-database/19/odpnt/InstallConfig.html#GUID-1F689B90-2CC4-4907-B8FE-A5F4EE36F673).
 
 ## 32-bit drivers for Power BI Report Builder
 
@@ -24,13 +25,13 @@ To use data from an Oracle database in your report, you must have a dataset that
 
 1. On the Oracle download site, install the [Oracle "ODAC with Oracle Developer Tools for Visual Studio - OUI" (32-bit)](https://www.oracle.com/database/technologies/dotnet-odacdev-downloads.html).
 
-2. Register ODP.NET Managed Client to GAC:
+1. Register ODP.NET Managed Client to GAC:
 
    ```
    C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:gac /providerpath:C:\oracle32\product\18.0.0\client_1\odp.net\managed\common\Oracle.ManagedDataAccess.dll
    ```
 
-3. Add ODP.NET Managed Client entries to machine.config:
+1. Add ODP.NET Managed Client entries to machine.config:
 
    ```
    C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:config /force /product:odpm /frameworkversion:v4.0.30319 /providerpath:C:\oracle32\product\18.0.0\client_1\odp.net\managed\common\Oracle.ManagedDataAccess.dll
@@ -70,7 +71,7 @@ For more connection string examples, see [Create data connection strings - Power
 ##  <a name="Credentials"></a> Credentials  
 Credentials are required to run queries, to preview the report locally, and to preview the report on Power BI web portal.  
   
-After you publish your report, you may need to bind it to a Power BI Gateway connection. For more information, see [Manage your data source - Oracle](../../connect-data/service-gateway-onprem-manage-oracle.md)
+After you publish your report, you might need to bind it to a Power BI Gateway connection. For more information, see [Manage your data source - Oracle](../../connect-data/service-gateway-onprem-manage-oracle.md)
 
   
 ##  <a name="Query"></a> Queries  
@@ -92,7 +93,7 @@ Before you can connect an Oracle data source, the system administrator must have
 
 When you use an Oracle data source, if the paginated report has query type set as Stored Procedure, it fails to execute in the Power BI service due to a Power BI Gateway limitation. As a workaround, if you're using Oracle 12 or above, set query type to text and call the stored procedure inline, as in the following example.
 
-![Screenshot of the Dataset properties dialog.](../media/paginated-reports-create-embedded-dataset/power-bi-dataset-query-type.png)
+:::image type="content" source="../media/paginated-reports-create-embedded-dataset/power-bi-dataset-query-type.png" alt-text="Screenshot of the Dataset properties dialog." lightbox="../media/paginated-reports-create-embedded-dataset/power-bi-dataset-query-type.png":::
 
 ```
 DECLARE OUT_RPT_DATA SYS_REFCURSOR;
@@ -105,7 +106,6 @@ END;
 ### Platform and version information  
 
 For more information about platform and version support, see [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md).
-
 
 ## Related content
 

@@ -1,7 +1,8 @@
 ---
-title: "Understand groups in a Power BI paginated report | Microsoft Docs"
+title: Understand Groups in a Power BI Paginated Report
 description: Gain an understanding of how a group organizes a view of a report dataset in a paginated report in Power BI Report Builder. 
-ms.date: 06/29/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -17,7 +18,7 @@ ms.reviewer: saurkumar
   
  To help visualize what a group is, refer to the following figure that shows the tablix data region in Preview. In this figure, the row groups categorize the dataset by product type and the column groups categorize the dataset by geographic region and year.  
   
- ![Screenshot showing tablix data region areas.](../report-design/media/tablix-areas.gif "Tablix data region areas.")  
+ :::image type="content" source="../report-design/media/tablix-areas.gif" alt-text="Screenshot showing tablix data region areas." lightbox="../report-design/media/tablix-areas.gif":::  
   
  The following sections help describe the various aspects of groups.  
 

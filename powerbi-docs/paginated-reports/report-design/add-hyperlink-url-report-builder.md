@@ -1,7 +1,8 @@
 ---
-title: "Add a hyperlink to a URL in a Power BI paginated report | Microsoft Docs"
+title: Add a Hyperlink to a URL in a Power BI Paginated Report
 description: Discover how to add hyperlink actions to text boxes, images, charts, and gauges in paginated reports in Power BI Report Builder.
-ms.date: 06/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -17,11 +18,11 @@ Learn how to add hyperlink actions to text boxes, images, charts, and gauges in 
 
  You can add a hyperlink action to any item that has an **Action** property, for example, a text box, an image, or a calculated series in a chart. When the user selects that report item, the action that you define takes place.  
   
-* You can **add a hyperlink that will open a browser with a URL** that you specify. The hyperlink can be a static URL or an expression that evaluates to a URL. If you have a field in a database that contains URLs, the expression can contain that field, resulting in a dynamic list of hyperlinks in the report. Make sure your report readers have access to the URL that you provide.  
+- You can **add a hyperlink that will open a browser with a URL** that you specify. The hyperlink can be a static URL or an expression that evaluates to a URL. If you have a field in a database that contains URLs, the expression can contain that field, resulting in a dynamic list of hyperlinks in the report. Make sure your report readers have access to the URL that you provide.  
    
-* You can also **specify URLs to create drillthroughs** to any reports in the Power BI service that you and your users have permission to view using URL requests. 
+- You can also **specify URLs to create drillthroughs** to any reports in the Power BI service that you and your users have permission to view using URL requests. 
  
- * You can **add a bookmark to a specific place** in the same report. 
+- You can **add a bookmark to a specific place** in the same report. 
   
 Try adding hyperlinks with sample data in [Tutorial: Format Text (Power BI Report Builder)](/sql/reporting-services/tutorial-format-text-report-builder).  
   
@@ -89,8 +90,8 @@ You can link to bookmarks to a location in the current report. To link to a book
   
 ## Related content
 
-* [Add a drillthrough action on a paginated report](../../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md)
-* [Add a bookmark to a report](add-bookmark-report-report-builder.md)
+- [Add a drillthrough action on a paginated report](../../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md)
+- [Add a bookmark to a report](add-bookmark-report-report-builder.md)
 
   
   

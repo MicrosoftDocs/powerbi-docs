@@ -1,7 +1,8 @@
 ---
-title: "Add 3D effects to a Power BI paginated report chart | Microsoft Docs"
+title: Add 3D Effects to a Power BI Paginated Report Chart
 description: Provide depth and add visual impact to charts in your Power BI paginated report with three-dimensional effects in Power BI Report Builder.
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -21,19 +22,19 @@ ms.reviewer: saurkumar
   
 1.  Right-click anywhere inside the chart area and select **3D Effects**. The **Chart Area Properties** dialog box appears.  
   
-2.  In **3D Options**, select the **Enable 3D** option.  
+1.  In **3D Options**, select the **Enable 3D** option.  
   
-3.  (Optional) In **3D Options**, you can set a variety of properties relating to 3D angles and scene options. For more information about these properties, see [Chart effects: 3D, bevel, and others in Power BI paginated reports (Power BI Report Builder)](chart-effects-3d-bevel-other-report-builder.md).  
+1.  (Optional) In **3D Options**, you can set a variety of properties relating to 3D angles and scene options. For more information about these properties, see [Chart effects: 3D, bevel, and others in Power BI paginated reports (Power BI Report Builder)](chart-effects-3d-bevel-other-report-builder.md).  
   
-4.  Select **OK**.  
+1.  Select **OK**.  
   
 ## Apply 3D effects to a funnel chart  
   
 1.  Right-click anywhere inside the chart area and select **3D Effects**. The **Chart Area Properties** dialog box appears.  
   
-2.  In **3D Options**, select the **Enable 3D** option. Select **OK**.  
+1.  In **3D Options**, select the **Enable 3D** option. Select **OK**.  
   
-3.  (Optional) To customize the funnel chart visual appearance, you can go to the Properties pane and change properties specific to the funnel chart.  
+1.  (Optional) To customize the funnel chart visual appearance, you can go to the Properties pane and change properties specific to the funnel chart.  
   
     1.  Open the Properties pane.  
   
@@ -49,25 +50,25 @@ ms.reviewer: saurkumar
   
 1.  Right-click anywhere inside the chart area and select 3D Effects. The **Chart Area Properties** dialog box appears.  
   
-2.  In **3D Options**, select the **Enable 3D** option. Select **OK**.  
+1.  In **3D Options**, select the **Enable 3D** option. Select **OK**.  
   
-3.  (Optional) In **Rotation**, type an integer value that represents the horizontal rotation of the pie chart.  
+1.  (Optional) In **Rotation**, type an integer value that represents the horizontal rotation of the pie chart.  
   
-4.  (Optional) In **Inclination**, type an integer value that represents the vertical tilt rotation of the pie chart.  
+1.  (Optional) In **Inclination**, type an integer value that represents the vertical tilt rotation of the pie chart.  
   
-5.  Select **OK**.  
+1.  Select **OK**.  
   
 ## Apply 3D effects to a bar or column chart  
   
 1.  Right-click anywhere inside the chart area and select **3D Effects**. The **Chart Area Properties** dialog box appears.  
   
-2.  Select the **Enable 3D** option. Select **OK**.  
+1.  Select the **Enable 3D** option. Select **OK**.  
   
-3.  (Optional) Select the **Enable series clustering** option. If your chart contains multiple bar or column chart series, this option will display the series as clustered. By default, multiple bar or column series are shown side-by-side.  
+1.  (Optional) Select the **Enable series clustering** option. If your chart contains multiple bar or column chart series, this option will display the series as clustered. By default, multiple bar or column series are shown side-by-side.  
   
-4.  Select **OK**.  
+1.  Select **OK**.  
   
-5.  (Optional) To add cylinder effects to a bar or column chart, follow these steps:  
+1.  (Optional) To add cylinder effects to a bar or column chart, follow these steps:  
   
     1.  Open the Properties pane.  
   

@@ -1,7 +1,8 @@
 ---
-title: "Embed an image in a Power BI paginated report"
+title: Embed an Image in a Power BI Paginated Report
 description: Make an image readily available to a paginated report. Use an image that's embedded in the report and listed in the Report Data pane of Power BI Report Builder.
-ms.date: 04/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

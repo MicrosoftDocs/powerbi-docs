@@ -1,7 +1,8 @@
 ---
-title: "Page layout and rendering in Power BI paginated reports"
+title: Page Layout and Rendering in Power BI Paginated Reports
 description: Design or improve your paginated reports with rendering extensions for page layout, page breaks, and paper size in Power BI Report Builder.
-ms.date: 04/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -26,13 +27,13 @@ This article explains Power BI Report Builder rendering extensions for paginated
 
 Report items are layout elements that are associated with different types of report data. 
  
-* Table, matrix, list, chart, and gauge are data region report items that each link to a report dataset. When the report is processed, the data region expands across and down the report page to display data. 
+- Table, matrix, list, chart, and gauge are data region report items that each link to a report dataset. When the report is processed, the data region expands across and down the report page to display data. 
 
 Other report items link to and display a single item. 
 
-* An **Image** report item links to a picture. 
-* A **Text Box** report item contains either simple text like a title or an expression that can include references to built-in fields, report parameters, or dataset fields. 
-* The **Line** and **Rectangle** report items provide simple graphical elements on the report page. The **Rectangle** can also be a container for other report items. 
+- An **Image** report item links to a picture. 
+- A **Text Box** report item contains either simple text like a title or an expression that can include references to built-in fields, report parameters, or dataset fields. 
+- The **Line** and **Rectangle** report items provide simple graphical elements on the report page. The **Rectangle** can also be a container for other report items. 
 
 A report can also contain subreports.  
   
@@ -56,11 +57,11 @@ A report can also contain subreports.
 
  Reporting Services includes a set of renderers, also referred to as rendering extensions, that you can use to export reports to different formats. There are three types of renderers:  
   
-* **Data renderers** Data renderers strip all formatting and layout information from the report and display only the data. The resulting file can be used to import the raw report data into another file type, such as Excel, or another database, an XML data message, or a custom application. The available data renders are CSV and XML.   
+- **Data renderers** Data renderers strip all formatting and layout information from the report and display only the data. The resulting file can be used to import the raw report data into another file type, such as Excel, or another database, an XML data message, or a custom application. The available data renders are CSV and XML.   
   
-* **Soft page-break renderers** Soft page-break renderers maintain the report layout and formatting. The resulting file is optimized for screen-based viewing and delivery, such as on a Web page. The available soft page-break renderers are Microsoft Excel, Microsoft Word, Web archive (MHTML), and HTML.  
+- **Soft page-break renderers** Soft page-break renderers maintain the report layout and formatting. The resulting file is optimized for screen-based viewing and delivery, such as on a Web page. The available soft page-break renderers are Microsoft Excel, Microsoft Word, Web archive (MHTML), and HTML.  
   
-* **Hard page-break renderers** Hard page-break renderers maintain the report layout and formatting. The resulting file is optimized for a consistent printing experience, or for viewing the report online in a book format. The available hard page-break renderers are IMAGE, Microsoft PowerPoint, PDF and Accessible PDF.  
+- **Hard page-break renderers** Hard page-break renderers maintain the report layout and formatting. The resulting file is optimized for a consistent printing experience, or for viewing the report online in a book format. The available hard page-break renderers are IMAGE, Microsoft PowerPoint, PDF and Accessible PDF.  
   
  When you preview a report in Power BI Report Builder or run a report on Power BI service, the report is first rendered in their respective default renderers. After you run the report, you can export it to different file formats. For more information, see [Export Reports &#40;Power BI Report Builder and service&#41;](../report-builder/export-reports-report-builder.md).
   
@@ -68,11 +69,11 @@ A report can also contain subreports.
 
  Depending on the renderer you select, certain rules are applied when rendering the report. How report items fit together on a page is determined by the combination of these factors:  
   
-* Rendering rules.  
-* The width and height of report items.  
-* The size of the report body.  
-* The width and height of the page.  
-* Renderer-specific support for paging.  
+- Rendering rules.  
+- The width and height of report items.  
+- The size of the report body.  
+- The width and height of the page.  
+- Renderer-specific support for paging.  
   
  For example, reports rendered to HTML and MHTML formats are optimized for a computer screen-based experience where pages can be various lengths.  
   
@@ -92,17 +93,17 @@ A report can also contain subreports.
 
  This section lists procedures that show you, step by step, how to work with pagination in reports.  
   
-* [Add a page break &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-a-page-break-report-builder-and-ssrs)  
+- [Add a page break &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-a-page-break-report-builder-and-ssrs)  
   
-* [Display row and column headers on multiple pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs)  
+- [Display row and column headers on multiple pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs)  
   
-* [Add or remove a page header or footer &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-or-remove-a-page-header-or-footer-report-builder-and-ssrs)  
+- [Add or remove a page header or footer &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-or-remove-a-page-header-or-footer-report-builder-and-ssrs)  
   
-* [Keep headers visible when scrolling through a report &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/keep-headers-visible-when-scrolling-through-a-report-report-builder-and-ssrs)  
+- [Keep headers visible when scrolling through a report &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/keep-headers-visible-when-scrolling-through-a-report-report-builder-and-ssrs)  
   
-* [Display page numbers or other report properties &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-page-numbers-or-other-report-properties-report-builder-and-ssrs)  
+- [Display page numbers or other report properties &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-page-numbers-or-other-report-properties-report-builder-and-ssrs)  
   
-* [Hide a page header or footer on the first or last page &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/hide-a-page-header-or-footer-on-the-first-or-last-page-report-builder-and-ssrs)  
+- [Hide a page header or footer on the first or last page &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/hide-a-page-header-or-footer-on-the-first-or-last-page-report-builder-and-ssrs)  
   
 ##  <a name="InThisSection"></a> In this section  
 

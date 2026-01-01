@@ -1,9 +1,10 @@
 ---
-title: "Add a drillthrough action on a Power BI paginated report"
+title: Add a Drillthrough Action on a Power BI Paginated Report
 description: Improve query performance with the addition of a drillthrough action link in a text box, an image, or data points on a chart in a Power BI paginated report.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 04/10/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

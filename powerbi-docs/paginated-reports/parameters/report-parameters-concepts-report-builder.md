@@ -1,10 +1,10 @@
 ---
-title: "Report parameter concepts in Power BI paginated reports | Microsoft Docs"
+title: Report Parameter Concepts in Power BI Paginated Reports
 description: Find out how to add parameters to link related Power BI paginated reports, to control a report appearance, to filter report data, or to narrow the scope in Power BI Report Builder. 
-ms.date: 01/25/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-
 
 ms.topic: concept-article
 author: JulCsc

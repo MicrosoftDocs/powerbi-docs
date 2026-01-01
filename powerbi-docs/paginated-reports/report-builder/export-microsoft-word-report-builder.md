@@ -1,6 +1,7 @@
 ---
-title: "Export Power BI paginated report to Microsoft Word (Power BI Report Builder) | Microsoft Docs"
-ms.date: 09/20/2023
+title: Export Power BI Paginated Report to Microsoft Word (Power BI Report Builder)
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 description: The Word rendering extension renders Power BI paginated reports to the Microsoft Word format (.docx). The format is Office Open XML.
@@ -33,7 +34,7 @@ The Word rendering extension renders Power BI paginated reports to the Microsoft
  Newsletter-style column reports are not rendered in Word. Report body and page background images and colors are not rendered.  
   
 ##  <a name="Pagination"></a> Pagination  
- After the report is opened in Word, Word repaginates the entire report again based on the page size. Repagination may cause page breaks to be inserted in locations where you did not intend to add them and, in some instances, may cause the exported report to have two successive page breaks in a row or add blank pages. You can try to change Word's pagination by adjusting the page margins.  
+ After the report is opened in Word, Word repaginates the entire report again based on the page size. Repagination might cause page breaks to be inserted in locations where you did not intend to add them and, in some instances, might cause the exported report to have two successive page breaks in a row or add blank pages. You can try to change Word's pagination by adjusting the page margins.  
   
  This renderer supports only logical page breaks.  
   
@@ -129,19 +130,19 @@ See [Create a document map or table of contents (Power BI Report Builder)](/sql/
 ##  <a name="WordLimitations"></a> Word limitations  
  The following limitations are applied by Microsoft Word:  
   
--   Word tables support a maximum of 63 columns. If your report has more than 63 columns and you try to render it, Word splits the table. The additional columns are placed adjacent to the 63 columns displayed in the report body. Therefore, the report columns may not line up as expected.  
+-   Word tables support a maximum of 63 columns. If your report has more than 63 columns and you try to render it, Word splits the table. The additional columns are placed adjacent to the 63 columns displayed in the report body. Therefore, the report columns might not line up as expected.  
   
--   Word supports a maximum page width of 22 inches wide and 22 inches high. If your content is wider than 22 inches, some data may not be displayed in Print Layout view.  
+-   Word supports a maximum page width of 22 inches wide and 22 inches high. If your content is wider than 22 inches, some data might not be displayed in Print Layout view.  
   
 -   Word ignores page header and footer height settings.  
   
--   After the report is exported, Word paginates the report again. This may cause additional page breaks to be added to the rendered report.  
+-   After the report is exported, Word paginates the report again. This might cause additional page breaks to be added to the rendered report.  
   
 -   Word does not repeat header rows on page two and greater, although you set the RepeatOnNewPage property of the static header row in a tablix (table, matrix, or list) to **True**. You can define explicit page breaks in your report to force header rows to appear on new pages. However, because Word applies its own pagination to the rendered report exported to Word, results might vary and the header row might not repeat predictably. The static header row is the row that contains the column headings.  
   
 -   Text boxes grow when they contain non-breaking spaces.  
   
--   When text is exported to Word, text with font decoration in certain fonts may generate unexpected or missing glyphs in the rendered report.  
+-   When text is exported to Word, text with font decoration in certain fonts might generate unexpected or missing glyphs in the rendered report.  
   
 ##  <a name="WordBenefits"></a> Benefits of using the Word renderer  
  In addition to making the features that are new in Microsoft Word .docx files available to exported reports, *.docx files of exported reports tend to be smaller. Reports exported by using the Word renderer are typically significantly smaller than the same reports exported by using the Word 2003 renderer.  

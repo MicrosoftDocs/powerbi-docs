@@ -1,7 +1,8 @@
 ---
-title: "Link multiple data regions to the same dataset in a Power BI paginated report | Microsoft Docs"
+title: Link Multiple Data Regions to the Same Dataset in a Power BI Paginated Report
 description: Find out how to add multiple data regions to a Power BI paginated report to provide different views of data from the same report dataset in Power BI Report Builder.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

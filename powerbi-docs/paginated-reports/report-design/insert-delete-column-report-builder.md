@@ -1,7 +1,8 @@
 ---
-title: "Insert or delete a column in a Power BI paginated report | Microsoft Docs"
+title: Insert or Delete a Column in a Power BI Paginated Report
 description: Add or delete columns in a tablix data region in a Power BI paginated report. In Power BI Report Builder, the tablix data region can be a table, a matrix, or a list.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

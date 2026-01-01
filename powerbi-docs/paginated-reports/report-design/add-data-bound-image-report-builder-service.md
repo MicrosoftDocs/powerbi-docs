@@ -1,7 +1,8 @@
 ---
-title: "Add a data-bound image to a Power BI paginated report"
+title: Add a Data-Bound Image to a Power BI Paginated Report
 description: Learn how to reference an image that is stored in a database to display the image in your paginated reports in Power BI Report Builder.
-ms.date: 04/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

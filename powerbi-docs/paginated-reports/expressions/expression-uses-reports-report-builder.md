@@ -1,7 +1,8 @@
 ---
-title: Expression uses in Power BI paginated reports | Microsoft Docs
+title: Expression Uses in Power BI Paginated Reports
 description: Specify or calculate values with paginated report expressions for parameters, queries, filters, and text box properties in Power BI Report Builder.
-ms.date: 09/21/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

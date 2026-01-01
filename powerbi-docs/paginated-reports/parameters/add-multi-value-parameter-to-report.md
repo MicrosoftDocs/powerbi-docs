@@ -1,7 +1,8 @@
 ---
-title: "Add a multi-value parameter to a paginated report | Microsoft Docs"
+title: Add a Multi-Value Parameter to a Paginated Report
 description: Learn how to add a parameter to a paginated report that allows the user to select more than one value for the parameter in Power BI Report Builder.
-ms.date: 06/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -21,9 +22,9 @@ ms.author: juliacawthra
   
 1.  In Power BI Report Builder, open the report that you want to add the multi-value parameter to.  
   
-2.  Right-click the report dataset, and then click **Dataset Properties**  
+1.  Right-click the report dataset, and then click **Dataset Properties**  
   
-3.  Add a variable to the dataset query by either editing the query text in the **Query** box, or by adding a filter by using the query designer. For more information, see [Build a Query in the Relational Query Designer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/build-a-query-in-the-relational-query-designer-report-builder-and-ssrs).  
+1.  Add a variable to the dataset query by either editing the query text in the **Query** box, or by adding a filter by using the query designer. For more information, see [Build a Query in the Relational Query Designer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/build-a-query-in-the-relational-query-designer-report-builder-and-ssrs).  
   
     ```  
     WHERE  
@@ -37,11 +38,11 @@ ms.author: juliacawthra
   
     A dataset parameter for an embedded dataset or a shared dataset is created automatically for the query variable. A report parameter is created automatically for the dataset parameter.  
   
-4.  In the **Report Data** pane, expand the **Parameters** node, right-click the report parameter that was automatically created for the dataset parameter, and then click **Parameter Properties**.  
+1.  In the **Report Data** pane, expand the **Parameters** node, right-click the report parameter that was automatically created for the dataset parameter, and then click **Parameter Properties**.  
   
-5.  In the **General** tab, select **Allow multiple values** to allow a user to select more than one value for the parameter.  
+1.  In the **General** tab, select **Allow multiple values** to allow a user to select more than one value for the parameter.  
   
-6.  (Optionally) In the **Available** values tab, specify a list of available values to display to the user.  
+1.  (Optionally) In the **Available** values tab, specify a list of available values to display to the user.  
   
      An available values list limits the choices a user can make to only valid values for the parameter. For multiple values, the top of the list begins with a **Select All** feature so the user can select or clear all values with a single click. If you choose to get the available values for the report parameter from a dataset query, be sure to select a dataset that does not contain the query variable that is associated with the same report parameter.  
   
@@ -55,7 +56,7 @@ ms.author: juliacawthra
 
 ## Related content
 
-* [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)   
-* [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-available-values-for-a-report-parameter)  
+- [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)   
+- [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-available-values-for-a-report-parameter)  
   
   

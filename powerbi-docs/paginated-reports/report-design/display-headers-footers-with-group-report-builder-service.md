@@ -1,7 +1,8 @@
 ---
-title: "Display headers and footers with a group in a paginated report"
+title: Display Headers and Footers with a Group in a Paginated Report
 description: Find out how to set properties to render headers and footers with dynamic rows that are associated with a group in a tablix data region in a paginated report.
-ms.date: 03/22/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -23,7 +24,6 @@ ms.reviewer: rpatkar
   
 > [!NOTE]  
 > **KeepWithGroup**, **KeepTogether**, and **RepeatOnNewPage** are group member properties that you can set by using the **Advanced Mode** of the Grouping pane. For more information, see [Grouping Pane &#40;Report Builder&#41;](/sql/reporting-services/report-design/grouping-pane-report-builder).
-
 
 ## Keep a static row with a set of dynamic rows associated with a row group  
   
