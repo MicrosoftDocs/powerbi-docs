@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: From Excel workbook to stunning report in Power BI Desktop"
+title: "Tutorial: From Excel Workbook to Stunning Report in Power BI Desktop"
 description: This tutorial shows how you can quickly create a stunning report in Power BI Desktop from an Excel workbook.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 12/11/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Data from files
 #customer intent: As a business analyst, I want to create a visually appealing and informative report from Excel data in Power BI Desktop so that I can effectively communicate key insights and performance metrics to my manager and colleagues.
@@ -67,7 +67,11 @@ In the dialog that opens, choose **Load sample data**.
 
 You can also download the sample workbook directly.
 
-1. Download the [Financial Sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962).
+1. Download the [Financial Sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962). The file downloads automatically when you select the link.
+
+   > [!TIP]
+   > **Having trouble downloading?** If the download doesn't start automatically, try right-clicking the link and selecting **Save link as** or **Save target as**. You can also copy and paste this direct URL into your browser: `https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Financial%20Sample.xlsx`
+
 1. Open Power BI Desktop.
 1. On the **Home** page, select **Excel workbook**.
 1. Go to the folder where you saved the sample workbook and select **Open**.
@@ -75,6 +79,9 @@ You can also download the sample workbook directly.
 ## Prepare your data
 
 In **Navigator**, you can *transform* or *load* the data. The preview lets you verify you have the expected range and detected data types. If you need to make changes, transform your data before loading. To make the visualizations easier to read later, transform the data for this exercise. As you make each transformation in Power Query Editor, you see it added to the list under **Query Settings** in **APPLIED STEPS**.
+
+> [!IMPORTANT]
+> Before you can load or transform data, you must select the checkbox next to the table or tables you want to use. If you skip this step, the **Load** and **Transform Data** buttons remain inactive.
 
 1. Select the checkbox for the **financials** table, and then select **Transform Data**.
 
@@ -114,6 +121,9 @@ In **Navigator**, you can *transform* or *load* the data. The preview lets you v
 
 Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression to create a new measure, and another expression to create a whole table.
 
+> [!IMPORTANT]
+> **DAX expressions not working?** If you're using a non-English locale (such as Spanish, French, or German), you might need to use semicolons (`;`) instead of commas (`,`) to separate function arguments in DAX formulas. For example, use `DATE(2013;01;01)` instead of `DATE(2013,01,01)`. Also, make sure the table name in your formula matches exactly what appears in your Data pane (it should be **financials** if you followed the earlier steps).
+
 ### Create a new measure
 
 1. On the **Home** ribbon, select **New measure**.
@@ -144,6 +154,12 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
     ```dax
     Calendar = CALENDAR(DATE(2013,01,01),DATE(2014,12,31))
+    ```
+
+    If your locale uses semicolons as list separators, use this version instead:
+
+    ```dax
+    Calendar = CALENDAR(DATE(2013;01;01);DATE(2014;12;31))
     ```
 
 1. Select the check mark to commit.
@@ -188,9 +204,21 @@ Build the final report, one visual at a time.
 Create a line chart to see which month and year had the highest profit.
 
 1. From the Data pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit.
-1. Drag the **Date** field to the same visual. Power BI updates the column chart to show monthly profit for the two years.
 
-   If you created a Calendar table in [Extra credit: Create a new table](#create-a-new-table) earlier in this article, expand the **Date** field in the Data pane, then select the checkbox for **Date Hierarchy**. Expand the field, then clear the checkboxes next to the **Quarter** and **Day** fields to display only Year and Month on the chart. Alternatively, remove the fields from where they're listed in the **X-axis** well on the **Build visual** tab of the **Visualizations** pane.
+1. Drag the **Date** field to the same visual. Power BI updates the column chart to show profit over time.
+
+1. Configure the chart to show data by month and year (not individual dates):
+
+   1. In the **Visualizations** pane, look at the **X-axis** well on the **Build visual** tab.
+   
+   1. Select the dropdown arrow next to the **Date** field in the X-axis well.
+   
+   1. Select **Date Hierarchy** from the menu. This groups your data by Year, Quarter, Month, and Day levels.
+   
+   1. In the X-axis well, clear the checkboxes next to **Quarter** and **Day** to show only **Year** and **Month** on the chart.
+
+   > [!TIP]
+   > If you created a Calendar table in [Extra credit: Create a new table](#create-a-new-table) earlier in this article, use the **Date** field from that Calendar table instead of the financials table for better hierarchy support.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-chart-date.png" alt-text="Screenshot of column chart showing profit by month for two different years." lightbox="media/desktop-excel-stunning-report/power-bi-column-chart-date.png":::
 
@@ -204,10 +232,14 @@ Create a line chart to see which month and year had the highest profit.
 
 Create a map to see which country/region had the highest profits.
 
-1. From the Data pane, drag the **Country** field to a blank area on your report canvas to create a map.
-1. Drag the **Profit** field to the map.
+1. From the Data pane, drag the **Country/Region** field to a blank area on your report canvas. Power BI automatically creates a map visual.
 
-    Power BI adds bubbles representing the relative profit of each location to the map visual.
+1. Drag the **Profit** field to the map. Power BI adds bubbles representing the relative profit of each location to the map visual.
+
+1. Verify the map shows bubbles on each country/region. If you see a different map style (such as a filled/shaded map), select the visual, then in the **Visualizations** pane, select the **Map** icon (globe with dots) to switch to a bubble map.
+
+   > [!NOTE]
+   > The map visual type depends on your Power BI settings and region. If you see an Azure Maps visual or a different style, the steps still work the same way. The key result is seeing relative profit sizes for each country/region.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of map visual showing profit by country." lightbox="media/desktop-excel-stunning-report/power-bi-map-visual.png":::
 
@@ -285,7 +317,7 @@ With the appropriate visual selected, make the following changes on the **Visual
 
 1. Select Visual 4, the clustered column chart showing sales by product and segment. Under **Format visual** > **General**, expand the **Title** section. Change the **Font** size to **16**. Expand **Effects** and toggle **Shadow** to **On**.
 
-1. Select Visual 5, the year slicer. Under **Format visual** > **Visual**, expand **Slicer settings** > **Selection** and toggle **Show "Select all" option** to **On**. In the **Slicer header** section, increase the **Font** size to **16**.
+1. Select Visual 5, the year slicer. Under **Format visual** > **Visual**, expand **Slicer settings**. Expand the **Selection** section (you might need to scroll down) and toggle **Show "Select all" option** to **On**. If you don't see the **Selection** section, make sure you have a hierarchy slicer (the slicer created from the Calendar table's Date Hierarchy). In the **Slicer header** section, increase the **Font** size to **16**.
 
 #### Add a background shape for the title
 

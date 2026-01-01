@@ -1,5 +1,5 @@
 ---
-title: Show Items With No Data in Power BI
+title: Show Items with No Data in Power BI
 description: Find out how to use the Power BI Show items with no data feature to display items with no data in visualizations. Understand how the feature works.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/03/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Data from files
 # customer intent: As a Power BI user, I want to find out how the Show items with no data feature works so that I can use it to display items with no data in visualizations.
@@ -27,10 +27,14 @@ When you create a visual, Power BI doesn't display all possible data by default.
 To turn on the **Show items with no data** feature, follow these steps:
 
 1. Select a visual.
-1. Go to the **Visualizations** pane and locate the **X-axis** or **Y-axis** field well.
-1. Right-click the field in the well, and then select **Show items with no data**.
+1. In the **Visualizations** pane, select the **Build visual** tab (if not already selected).
+1. Locate the field well that contains the field you want to modify (such as **X-axis**, **Y-axis**, **Rows**, **Columns**, **Legend**, or **Category**).
+1. Select the dropdown arrow next to the field name, or right-click the field, and then select **Show items with no data**.
 
 :::image type="content" source="media/desktop-show-items-no-data/select-show-items.png" alt-text="Screenshot of the Visualizations pane. In the X-axis field well, Year is highlighted. Show items with no data is highlighted in its shortcut menu." lightbox="media/desktop-show-items-no-data/select-show-items.png":::
+
+> [!NOTE]
+> The exact location of the **Show items with no data** option might vary slightly depending on your Power BI version. If you don't see the option when right-clicking, try selecting the dropdown arrow next to the field name in the field well. The option appears in the field's context menu.
 
 The **Show items with no data** feature doesn't have any effect in the following circumstances:
 
