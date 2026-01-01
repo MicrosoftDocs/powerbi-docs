@@ -52,6 +52,28 @@ Dashboards are a great way to monitor your business, find answers, and see your 
 
 A dashboard isn't just a pretty picture, it's an interactive canvas. The tiles update as the underlying data changes.
 
+## Try it: Explore a sample dashboard
+
+The best way to understand dashboards is to explore one yourself. Power BI provides built-in samples you can use to follow along with this article.
+
+### Get the Sales and Marketing sample
+
+1. Open the Power BI service at [app.powerbi.com](https://app.powerbi.com) and sign in.
+1. In the navigation pane, select **Learn**.
+1. On the **Learning center** page, under **Sample reports**, find **Sales and Marketing Sample** and select it.
+1. Power BI installs the sample in your **My workspace**. Select the **Sales and Marketing Sample** dashboard to open it.
+
+### Explore the dashboard
+
+Now that you have the sample dashboard open, try these actions:
+
+- **View a tile's source**: Hover over a tile and select **More options (...)** > **Open report** to see the report page where the visualization was created.
+- **Ask a question**: At the top of the dashboard, select the Q&A box and type "total units this year" to see how Power BI answers with a visualization.
+- **See tile details**: Hover over any tile to see a tooltip with more information about the data.
+- **Resize your view**: Use the browser zoom controls to see how the dashboard adapts to different screen sizes.
+
+As you explore, notice how the dashboard brings together key metrics from multiple report pages onto a single canvas, making it easy to monitor business performance at a glance.
+
 ## Dashboards vs. reports for Power BI business users
 
 How you interact with Power BI depends on your job role. As a consumer or business user, you receive content like dashboards, reports, and apps from colleagues who are designers. Reports can be confused with dashboards because they're both canvases filled with visualizations, but there are major differences from a Power BI business user's point of view. The following table shows an overview of the different capabilities of dashboards and reports.
