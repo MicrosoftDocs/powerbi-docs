@@ -41,6 +41,20 @@ You can have more than one license at the same time. The service gives you the e
 > [!NOTE]
 > You need a paid license, either [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml), to publish content to a Power BI app workspace, edit content, and share content with others.
 
+### Understanding license capabilities
+
+| Capability | Free license | Pro license | PPU license |
+|------------|--------------|-------------|-------------|
+| View shared content in Premium capacity | Yes | Yes | Yes |
+| View shared content in non-Premium workspaces | No | Yes | Yes |
+| Create content in My workspace | Yes | Yes | Yes |
+| Publish to app workspaces | No | Yes | Yes |
+| Share content with others | No | Yes | Yes |
+| Use PPU-only features | No | No | Yes |
+
+> [!TIP]
+> If you have a free license and want to share reports or publish to workspaces outside your personal My workspace, you need to upgrade to Pro or PPU. You can start a trial or purchase a license from your Account manager.
+
 For details about licenses and subscriptions, see [License types for Power BI and Fabric](service-features-license-type.md).
 
 ## Power BI Premium capacity subscription

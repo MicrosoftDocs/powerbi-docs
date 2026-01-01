@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Get started creating in the Power BI service"
+title: "Tutorial: Get Started Creating in the Power BI Service"
 description: Learn how to get started with the Power BI online service (app.powerbi.com) by following the steps in this tutorial.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 09/30/2025
+ms.date: 12/01/2025
 ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
@@ -90,6 +90,13 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 After you connect data to build a report, you're ready to start exploring. When you find an interesting item, you can save it on the report canvas. From the report canvas, you can pin the item to a dashboard to monitor the data for changes over time.
 
 We can start by asking Copilot to review our data and suggest some visuals.
+
+> [!NOTE]
+> **If Copilot isn't available:** Copilot requires your organization to enable it and may not be available in all regions or for all license types. If you don't see Copilot:
+>
+> - Check with your administrator to see if Copilot is enabled for your organization.
+> - You can still complete this tutorial by creating visuals manually (skip to the [Create report visuals from scratch](#create-report-visuals-from-scratch) section).
+> - For more information about Copilot availability, see [Copilot for Power BI overview](../create-reports/copilot-introduction.md).
 
 ### Switch between report views
 
@@ -302,6 +309,6 @@ When you delete a semantic model, the Power BI service also deletes all reports 
 
 ## Related content
 
-* [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
-* Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
-* Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).
+- [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
+- Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+- Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).
