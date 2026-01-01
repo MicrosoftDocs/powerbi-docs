@@ -1,6 +1,6 @@
 ---
-title: Get started with goals in Power BI
-description: Get started with an introduction to goals in Power BI
+title: Get Started with Goals in Power BI
+description: Learn about goals and scorecards in Power BI to track key business objectives, promote accountability, and improve visibility for teams and initiatives.
 author: kgremban
 ms.author: kgremban
 ms.reviewer: monicacl
@@ -8,8 +8,9 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with goals
 ms.topic: feature-guide
-ms.date: 12/11/2025
-ms.custom: intro-get-started
+ms.date: 12/01/2025
+ms.custom:
+ai-usage: ai-assisted intro-get-started
 #customer intent: As a Power BI user I want to learn what goals are and how to use Goals in my Power BI scorecards.
 ---
 # Get started with goals in Power BI
@@ -82,7 +83,7 @@ Goals might not update over time in your scorecard for several reasons:
 
 - **Manual goals**: Manual goals aren't updated automatically because they're not connected to a data source with regular refreshes. To create a history for a manual goal, do regular check-ins.
 - **No scheduled refresh**: Goal values only update as often as the semantic model refreshes. If you don't have a scheduled refresh on your semantic model, you don't see any updates in the goal value. For more information, see [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
-- **Push datasets**: Goals created from a push dataset don't get updated automatically.
+- **Push semantic models**: Goals created from a push semantic model don't get updated automatically.
 
 You can only update values in manual goals. If a goal value is connected to data, you can't update it manually. The data is pulled directly from the report and is updated as often as the semantic model refreshes.
 
@@ -92,13 +93,13 @@ Goals only update as often as the data updates in the semantic model. Power BI s
 
 ### Access permissions
 
-If you see a yellow warning icon when you try to connect a goal to a report, make sure you have build permissions for that report. Learn about [build permissions](../connect-data/service-datasets-build-permissions.md).
+If you see a yellow warning icon when you try to connect a goal to a report, make sure you have build permissions for that report. For more information, see [build permissions](../connect-data/service-datasets-build-permissions.md).
 
 If you share a scorecard with other users, they need to have edit permissions for the scorecard to add check-ins.
 
-To create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+To create a scorecard in a workspace, you need a contributor or owner role in that workspace. For more information, see [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
-Scorecards have goal-level permissions roles. While workspace permissions give view or build access to the workspace, goal-level permissions restrict access. Certain people can only see certain goals and perform check-ins within a scorecard. Read more about [goal-level permissions in scorecards](service-goals-set-permissions.md).
+Scorecards have goal-level permissions roles. While workspace permissions give view or build access to the workspace, goal-level permissions restrict access. Certain people can only see certain goals and perform check-ins within a scorecard. For more information, see [goal-level permissions in scorecards](service-goals-set-permissions.md).
 
 ## Issues and limitations
   
@@ -120,6 +121,7 @@ Now that you understand what goals are and how to navigate the Metrics hub, you'
 - [Connect goals to data sources](service-goals-create-connected.md)
 
 **For administrators:**
+
 - [Metrics hub tenant settings](/fabric/admin/service-admin-portal-goals-settings)
 
 Have more questions? [Try the Power BI Community](https://community.powerbi.com/).
