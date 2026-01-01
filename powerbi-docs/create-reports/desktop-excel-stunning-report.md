@@ -232,7 +232,7 @@ Create a line chart to see which month and year had the highest profit.
 
 Create a map to see which country/region had the highest profits.
 
-1. From the Data pane, drag the **Country** field to a blank area on your report canvas. Power BI automatically creates a map visual.
+1. From the Data pane, drag the **Country/Region** field to a blank area on your report canvas. Power BI automatically creates a map visual.
 
 1. Drag the **Profit** field to the map. Power BI adds bubbles representing the relative profit of each location to the map visual.
 
