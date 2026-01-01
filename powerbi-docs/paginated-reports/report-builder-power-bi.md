@@ -1,10 +1,10 @@
 ---
-title: "Power BI Report Builder"
+title: Power BI Report Builder
 description: Power BI Report Builder lets you author paginated, print-ready reports and publish them to the Power BI service, showing all data across multiple pages with precise layout control.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
-ms.date: 12/11/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
@@ -24,7 +24,7 @@ Prefer videos? See the [Power BI Paginated Reports in a Day course](../learning-
 
 The following sample invoice report is one of several you can download. For more information, see [sample Power BI paginated reports](paginated-reports-samples.md).
 
-:::image type="content" source="media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png" alt-text="Screenshot of a sample invoice-style paginated report showing header, detail rows, and totals in Power BI Report Builder.":::
+:::image type="content" source="media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png" alt-text="Screenshot of a sample invoice-style paginated report showing header, detail rows, and totals in Power BI Report Builder." lightbox="media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png":::
 
 ## Key capabilities (at a glance)
 

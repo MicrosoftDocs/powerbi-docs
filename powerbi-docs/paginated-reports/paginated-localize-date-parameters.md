@@ -1,5 +1,5 @@
 ---
-title: "Localize date parameters in the Power BI service and Power BI Report Builder"
+title: Localize Date Parameters in the Power BI Service and Power BI Report Builder
 description: You can localize date parameters in paginated reports in Power BI Report Builder and the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: 'bradsy'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 07/21/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 
 # Localize date parameters in the Power BI service and Power BI Report Builder
@@ -20,15 +21,15 @@ In Power BI Report Builder, date parameters are seen in the format of the client
 
 When you have available values, the multi value checkbox control displays.
 
-:::image type="content" source="media/paginated-localize-date-parameters/multi-value-select-all.png" alt-text="Screenshot showing multi-select dropdown calendar.":::
+:::image type="content" source="media/paginated-localize-date-parameters/multi-value-select-all.png" alt-text="Screenshot showing multi-select dropdown calendar." lightbox="media/paginated-localize-date-parameters/multi-value-select-all.png":::
 
-There are three variants of how date parameters are displayed in a paginated report. The first variant is the control mentioned previously, when the parameter has available values set. The second variant is for when you don't have available values, may have some default values, and allow multiple values. The parameters are displayed in a multiline editable text box.
+There are three variants of how date parameters are displayed in a paginated report. The first variant is the control mentioned previously, when the parameter has available values set. The second variant is for when you don't have available values, might have some default values, and allow multiple values. The parameters are displayed in a multiline editable text box.
 
-:::image type="content" source="media/paginated-localize-date-parameters/multi-value-default-values.png" alt-text="Screenshot showing multi-value default values.":::
+:::image type="content" source="media/paginated-localize-date-parameters/multi-value-default-values.png" alt-text="Screenshot showing multi-value default values." lightbox="media/paginated-localize-date-parameters/multi-value-default-values.png":::
 
-The third variant is when you have a single value parameter. The date value is displayed in a date picker control. The date picker control is a localized control. We've added logic to display the parameter value in the browser's client locale.
+The third variant is when you have a single value parameter. The date value is displayed in a date picker control. The date picker control is a localized control. Logic was added to display the parameter value in the browser's client locale.
 
-:::image type="content" source="media/paginated-localize-date-parameters/date-picker-control.png" alt-text="Screenshot showing calendar control.":::
+:::image type="content" source="media/paginated-localize-date-parameters/date-picker-control.png" alt-text="Screenshot showing calendar control." lightbox="media/paginated-localize-date-parameters/date-picker-control.png":::
 
 The first control mentioned, multi-value select all control is the target of this article. When the date parameter is bound to a multi-value dataset, there's no way for you as the report author to write an expression to modify the parameter label. Only a dataset value is used. But that doesn't mean the parameter label and the parameter values need to be the same value. The label can be any string you'd like. One example is "EndOfMonth". But the most common case is the date value that's going to be processed to run the report.
 
@@ -36,7 +37,7 @@ Here's an example of the parameter label with a dataset field different from the
 
 :::image type="content" source="media/paginated-localize-date-parameters/parameter-properties-available-values-pane.png" alt-text="Screenshot showing dataset parameter properties dialog." lightbox="media/paginated-localize-date-parameters/parameter-properties-available-values-pane.png":::
 
-Often, you have no control over the data and must get creative with the report data to make it useful to all consumers. You can change or add data when the report is executed. Most data sources allow adding new fields to the dataset when executing a query. This article uses an example with DAX to add a new column to a Power BI semantic model so that we can properly localize the label of a multi-value date parameter. 
+Often, you have no control over the data and must get creative with the report data to make it useful to all consumers. You can change or add data when the report is executed. Most data sources allow adding new fields to the dataset when executing a query. This article uses an example with DAX to add a new column to a Power BI semantic model so that you can properly localize the label of a multi-value date parameter. 
 
 ## Localize the displayed value of date parameters
 
@@ -110,7 +111,7 @@ Edit your report parameter. Change the label to use the new "FormattedDate" fiel
 
 The internal parameter must be ahead of the date parameter. If it isn't, you hit a forward dependency error and the report doesn't render.
 
-:::image type="content" source="media/paginated-localize-date-parameters/report-data-move-parameter.png" alt-text="Screenshot showing in the Report Data pane, move the parameter.":::
+:::image type="content" source="media/paginated-localize-date-parameters/report-data-move-parameter.png" alt-text="Screenshot showing in the Report Data pane, move the parameter." lightbox="media/paginated-localize-date-parameters/report-data-move-parameter.png":::
 
 ## Publish the updated report 
 

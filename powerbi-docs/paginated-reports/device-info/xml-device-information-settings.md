@@ -1,7 +1,8 @@
 ---
-title: "XML device information settings for Power BI paginated reports"
+title: XML Device Information Settings for Power BI Paginated Reports
 description: Learn details about the various device information settings you can use to render Power BI paginated reports in XML format.
-ms.date: 01/05/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -27,9 +28,9 @@ ms.author: juliacawthra
 |**FileExtension**|The file extension to use for the generated file.||  
 |**Schema**|A value of **true** indicates that an XML schema is rendered. The default value is **false**.|Indicates whether the XML schema definition (XSD) is rendered or whether the actual XML data is rendered.|  
   
-## Next steps
+## Related content
 
-- [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
+- [URL parameters in paginated reports](../report-builder-url-parameters.md)
 
   
   

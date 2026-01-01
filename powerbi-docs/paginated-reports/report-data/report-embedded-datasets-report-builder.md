@@ -1,7 +1,8 @@
 ---
-title: "Report embedded datasets (Power BI Report Builder)"
+title: Report Embedded Datasets (Power BI Report Builder)
 description: Learn about report embedded datasets so you can create expressions that evaluate to the actual data when the report runs.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -21,21 +22,21 @@ ms.reviewer: rpatkar
   
  A dataset also includes parameters, filters, and data options that specify character sensitivities, such as case, kana type, width, accent, and collation information.  
   
- ![Diagram that shows the different elements of the embedded dataset.](../media/report-builder-data/paginated-dataset-story.png)
+ :::image type="content" source="../media/report-builder-data/paginated-dataset-story.png" alt-text="Diagram that shows the different elements of the embedded dataset." lightbox="../media/report-builder-data/paginated-dataset-story.png":::
   
 1. **Datasets in the Report Data pane** A dataset appears in the Report Data pane after you create an embedded dataset. A dataset is based on a data source.  
   
-2. **Query Designer** When you design a dataset query, the query designer that is associated with the data source type opens.  
+1. **Query Designer** When you design a dataset query, the query designer that is associated with the data source type opens.  
   
-3. **Query command** The query designer helps you build a query command. The command syntax is determined by the data provider.  
+1. **Query command** The query designer helps you build a query command. The command syntax is determined by the data provider.  
   
-4. **Data Extension/Data Provider** Connecting to the data can be through multiple data access layers.  
+1. **Data Extension/Data Provider** Connecting to the data can be through multiple data access layers.  
   
-5. **External data sources** Retrieve data from relational databases, multidimensional data bases, etc.  
+1. **External data sources** Retrieve data from relational databases and multidimensional databases.  
   
-6. **Query results** You can run the query and see an example result set. You must have design time credentials to run a query.  
+1. **Query results** You can run the query and see an example result set. You must have design time credentials to run a query.  
   
-7. **Metadata from schema** The data provider runs a schema query command separate from the query to retrieve metadata for the dataset field collection. For example, a Transact-SQL **SELECT** statement returns the column names for a database table. Use the Report Data pane to expand the dataset to view the dataset field collection.  
+1. **Metadata from schema** The data provider runs a schema query command separate from the query to retrieve metadata for the dataset field collection. For example, a Transact-SQL **SELECT** statement returns the column names for a database table. Use the Report Data pane to expand the dataset to view the dataset field collection.  
  
 ##  <a name="Overview"></a> Understand report datasets and queries
 
@@ -59,13 +60,13 @@ ms.reviewer: rpatkar
 
 - A result set from any registered and configured .NET Framework data provider.  
 
- When the report is processed at run time, the actual result set returned for a query may have zero or more rows. It is also possible that the columns defined in the query may be missing from the data source. Null values from the data source are mapped to the .NET Framework value **System.DBNull.Value**.  
+ When the report is processed at run time, the actual result set returned for a query might have zero or more rows. It is also possible that the columns defined in the query might be missing from the data source. Null values from the data source are mapped to the .NET Framework value **System.DBNull.Value**.  
   
  For more information about dataset fields, see [Dataset Fields Collection (Power BI Report Builder)](./dataset-fields-collection-report-builder.md).
   
 ### Dataset query
 
- When you run a dataset query in a query designer at design time, you see a row set from the data source that shows you example data. At run time, when a user views the report, the dataset query may produce different values because the data on the data source has changed. Each time the report is processed, new data may appear.  
+ When you run a dataset query in a query designer at design time, you see a row set from the data source that shows you example data. At run time, when a user views the report, the dataset query might produce different values because the data on the data source has changed. Each time the report is processed, new data might appear.  
   
  When you define each dataset, Power BI Report Builder opens the query designer that corresponds to the type of data source to help you design queries. For example, to define a query for data from a SQL Server relational database, the Table/Matrix, Chart, and Map wizards open a simple graphical interface that helps you build the query; all you need to do is select the fields that you want in your dataset.  
   
@@ -155,7 +156,7 @@ ms.reviewer: rpatkar
   
 ##  <a name="NoRows"></a> Display a message when no rows of data are available
 
- During report processing, when the query for a dataset runs, the result set may contain no rows. In the rendered report, a data region linked to an empty dataset displays as an empty data region. You can specify text to display in the rendered report in place of the empty data region. You can also specify a message for subreports when the queries for all datasets produce no data at run time. For more information, see [Set a No Data Message for a Data Region (Power BI Report Builder)](./set-no-data-message-data-region-report-builder.md).
+ During report processing, when the query for a dataset runs, the result set might contain no rows. In the rendered report, a data region linked to an empty dataset displays as an empty data region. You can specify text to display in the rendered report in place of the empty data region. You can also specify a message for subreports when the queries for all datasets produce no data at run time. For more information, see [Set a No Data Message for a Data Region (Power BI Report Builder)](./set-no-data-message-data-region-report-builder.md).
   
 ##  <a name="Options"></a> Set dataset options
 

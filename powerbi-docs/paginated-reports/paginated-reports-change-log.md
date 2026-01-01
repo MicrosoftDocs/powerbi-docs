@@ -1,5 +1,5 @@
 ---
-title: Power BI Report Builder change log
+title: Power BI Report Builder Change Log
 description: In this article, you learn about new features and functionality in Power BI paginated reports for the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: petebro
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 
@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/whats-new.md).
+Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. This article is updated with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/whats-new.md).
 
 Ready to get started? [Get Power BI Report Builder](./download-powerbi-report-builder.md).
 
@@ -117,7 +117,6 @@ Version 15.7.1803.54, released May 30, 2023
 - Introduced new accessibility property that enables accessible headers to tables and Heading levels to text boxes.
 - Bug fixes
 
-
 ## April 2023
 
 Version 15.7.1802.126, released April 4, 2023
@@ -126,7 +125,7 @@ Version 15.7.1802.126, released April 4, 2023
 
 - Fix issue which caused crash when adding chart visuals.
 - Fix issue with Finnish localization.
-- Fix issue with DAX query designer used against PBI datasets.
+- Fix issue with DAX query designer used against Power BI semantic models.
 - Accessibility fixes.
 
 ## November 2022
@@ -203,7 +202,6 @@ Version 15.7.01740.0001, released October 7, 2021
 
 - ODBC is no longer in preview. Strings have been updated to reflect this.
 
-
 ## September 2021 
 
 Version 15.7.01704.0001, released September 1, 2021 
@@ -224,7 +222,7 @@ Version 15.7.01678.0001, released August 6, 2021
 
 ### Features
 
-- Moved to 64-bit architecture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers may need to be updated to their x64 bit versions.
+- Moved to 64-bit architecture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers might need to be updated to their x64 bit versions.
 - Enhanced support for DAX DateTime parameters.
 
 ## June 2021 
@@ -273,7 +271,7 @@ Version 15.6.01340.0002, released September 3, 2020
 
 ### Features
 
-- Enabled new authentication type support for Azure SQL DB and Azure Synapse. It uses Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) to align with the Power BI service.
+- Enabled new authentication type support for Azure SQL DB and Azure Synapse. It uses Microsoft Entra multifactor authentication to align with the Power BI service.
 - Enabled connectivity to Dataverse through the SQL data connection. This connectivity supports the use of the native relational query designer for SQL. 
 - Enabled auto expansion of parameter drop-down to support even the largest item in the list. 
 - Enabled better support for multi-value parameter for DAX. 
@@ -287,5 +285,4 @@ See the September 2020 Power BI Report Builder blog post for the complete list o
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
 - [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md)
-
 

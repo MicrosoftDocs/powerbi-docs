@@ -1,7 +1,8 @@
 ---
-title: "Use accessibility tools to interact with Power BI paginated reports | Microsoft Docs"
+title: Use Accessibility Tools to Interact with Power BI Paginated Reports
 description:  Learn about the accessibility tools available for consuming paginated reports.
-ms.date: 05/19/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -39,17 +40,17 @@ You can navigate the Power BI report service interface with the <kbd>Tab</kbd> k
 1. Page navigation
 1. Subscribe to report
 
-:::image type="content" source="media/paginated-consume-accessible-reports/paginated-accessible-tab-keyboard-nav.png" alt-text="Screenshot showing Keyboard navigation for the Power BI service interface.":::
+:::image type="content" source="media/paginated-consume-accessible-reports/paginated-accessible-tab-keyboard-nav.png" alt-text="Screenshot showing Keyboard navigation for the Power BI service interface." lightbox="media/paginated-consume-accessible-reports/paginated-accessible-tab-keyboard-nav.png":::
 
 ## Keyboard navigation for the Power BI service menu bar
 
 You can access the menu bar in Power BI service by using the <kbd>Tab</kbd> key. When you open a report link, press the <kbd>Tab</kbd> key until you reach the first item on the menu bar, which is the **File** menu.
 
-:::image type="content" source="media/paginated-consume-accessible-reports/paginated-file-menu.png" alt-text="Screenshot showing Paginated menu bar.":::
+:::image type="content" source="media/paginated-consume-accessible-reports/paginated-file-menu.png" alt-text="Screenshot showing Paginated menu bar." lightbox="media/paginated-consume-accessible-reports/paginated-file-menu.png":::
  
 To switch between the menu options, use <kbd>Left</kbd> and <kbd>Right</kbd> arrow keys. Use the <kbd>Space bar</kbd> or <kbd>Enter</kbd> key when focus is on any of the menu options, to view the items under that menu group. The following image shows the items under the Home tab.
  
-:::image type="content" source="media/paginated-consume-accessible-reports/paginated-home-menu.png" alt-text="Screenshot showing Paginated Home menu.":::
+:::image type="content" source="media/paginated-consume-accessible-reports/paginated-home-menu.png" alt-text="Screenshot showing Paginated Home menu." lightbox="media/paginated-consume-accessible-reports/paginated-home-menu.png":::
 
 Pressing the <kbd>Tab</kbd> key moves focus to the first item on that menu group, you can then use the <kbd>Left</kbd> and <kbd>Right</kbd> arrow keys to switch between the items displayed. To select any of the options, use the <kbd>Space bar</kbd> or <kbd>Enter</kbd> key.
 
@@ -61,7 +62,7 @@ To access any of the report parameters, navigate to the report parameters pane b
 1. Parameter 2
 1. View Report button
 
-:::image type="content" source="media/paginated-consume-accessible-reports/paginated-accessible-parameter-pane.png" alt-text="Screenshot showing Paginated report parameters pane.":::
+:::image type="content" source="media/paginated-consume-accessible-reports/paginated-accessible-parameter-pane.png" alt-text="Screenshot showing Paginated report parameters pane." lightbox="media/paginated-consume-accessible-reports/paginated-accessible-parameter-pane.png":::
  
 When focus is any of the parameters, you can use the <kbd>Down</kbd> arrow key to open the list and use the <kbd>Up</kbd> and <kbd>Down</kbd> arrow keys to navigate through the available value options. To select any value press <kbd>Space bar</kbd> or <kbd>Enter</kbd> keys. For the text parameters, you can directly write the values in the textbox.
 
@@ -73,7 +74,7 @@ You can zoom in on the report body by pressing the <kbd>Ctrl</kbd> and <kbd>+</k
 
 You can switch pages by using the pagination control in the Home tab. The image of the pagination control can be seen in the following image. Navigate to the Home tab using the <kbd>Tab</kbd> key, use the <kbd>Space bar</kbd> or <kbd>Tab</kbd> key to move to the submenu options of the Home tab. Use the arrow keys to move focus to the paginated control. Use the <kbd>Tab</kbd> key to change the page number, use the <kbd>Space bar</kbd> or <kbd>Enter</kbd> key to select the desired page number.
 
-:::image type="content" source="media/paginated-consume-accessible-reports/paginated-pagination-control.png" alt-text="Screenshot showing Pagination control.":::
+:::image type="content" source="media/paginated-consume-accessible-reports/paginated-pagination-control.png" alt-text="Screenshot showing Pagination control." lightbox="media/paginated-consume-accessible-reports/paginated-pagination-control.png":::
  
 > [!NOTE]
 > Moving focus from one report object to another isn't supported in the Power BI service. You can't move the cursor pointer from on object to another to place focus on it.

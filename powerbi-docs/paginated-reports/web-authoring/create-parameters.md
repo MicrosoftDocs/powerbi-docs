@@ -1,12 +1,13 @@
 ---
-title: "Create parameters for paginated reports in the Power BI service"
+title: Create Parameters for Paginated Reports in the Power BI Service
 description: In this article, you learn how to create parameters for a paginated report using the interactive editor in the Power BI service.
 author: julcsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 07/02/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 
 # Create parameters for paginated reports that you create in the Power BI service
@@ -21,19 +22,19 @@ See the Prerequisites section of [Get started creating paginated reports in the 
 
 1. To create/define a parameter, you must have a field in the **Filters** pane.
 
-   :::image type="content" source="media/paginated-formatted-table/paginated-field-in-filter-pane.png" alt-text="Screenshot of fields in filter pane.":::
+   :::image type="content" source="media/paginated-formatted-table/paginated-field-in-filter-pane.png" alt-text="Screenshot of fields in filter pane." lightbox="media/paginated-formatted-table/paginated-field-in-filter-pane.png":::
 
-2. Select **Create parameter** under More options **(...)** in the Filters pane.
+1. Select **Create parameter** under More options **(...)** in the Filters pane.
 
-   :::image type="content" source="media/paginated-formatted-table/paginated-create-parameter.png" alt-text="Screenshot to create parameter.":::
+   :::image type="content" source="media/paginated-formatted-table/paginated-create-parameter.png" alt-text="Screenshot to create parameter." lightbox="media/paginated-formatted-table/paginated-create-parameter.png":::
 
-3. This will promote the field as a parameter which will appear in the **Preview** portion of the screen.
+1. This will promote the field as a parameter which will appear in the **Preview** portion of the screen.
 
-   :::image type="content" source="media/paginated-formatted-table/paginated-create-parameter-preview.png" alt-text="Screenshot of parameters in the Preview pane.":::
+   :::image type="content" source="media/paginated-formatted-table/paginated-create-parameter-preview.png" alt-text="Screenshot of parameters in the Preview pane." lightbox="media/paginated-formatted-table/paginated-create-parameter-preview.png":::
 
-4. You can create several parameters by repeating the steps described above.
+1. You can create several parameters by repeating the steps described above.
 
-   :::image type="content" source="media/paginated-formatted-table/paginated-create-multiple-parameters-preview.png" alt-text="Screenshot of multiple parameters in the Preview pane.":::
+   :::image type="content" source="media/paginated-formatted-table/paginated-create-multiple-parameters-preview.png" alt-text="Screenshot of multiple parameters in the Preview pane." lightbox="media/paginated-formatted-table/paginated-create-multiple-parameters-preview.png":::
 
 ## Save report
 
@@ -43,13 +44,12 @@ To save the report with parameters, select **Save** in the File menu.
 
 To remove a parameter, click on more options **(...)** and Remove parameter in the Filter pane.
 
-:::image type="content" source="media/paginated-formatted-table/paginated-remove-parameter-preview.png" alt-text="Screenshot of remove parameters in the Preview pane.":::
+:::image type="content" source="media/paginated-formatted-table/paginated-remove-parameter-preview.png" alt-text="Screenshot of remove parameters in the Preview pane." lightbox="media/paginated-formatted-table/paginated-remove-parameter-preview.png":::
  
  ## Considerations and limitations
 
 1. You can't define default or hidden parameters for paginated reports create on the Power BI service.
-2. Cascading parameters aren't supported.
-3. After a field has been promoted to a parameter, you can't use it as a filter.  
+1. Cascading parameters aren't supported.
+1. After a field has been promoted to a parameter, you can't use it as a filter.  
  
-
 

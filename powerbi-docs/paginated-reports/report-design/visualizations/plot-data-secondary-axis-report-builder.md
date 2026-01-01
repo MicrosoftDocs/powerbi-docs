@@ -1,10 +1,10 @@
 ---
-title: "Plot data on a secondary axis in Power BI paginated report | Microsoft Docs"
+title: Plot Data on a Secondary Axis in Power BI Paginated Report
 description:  Find out about the uses for the secondary axis type in a Power BI paginated report for comparing two distinct data ranges in Power BI Report Builder. 
-ms.date: 03/30/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-
 
 ms.topic: concept-article
 author: JulCsc
@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
 
 The Power BI paginated report chart has two axis types: primary and secondary. The secondary axis is useful when comparing two value sets with two distinct data ranges that share a common category.  
   
- For example, suppose you have a chart that calculates Revenue vs. Tax for the year 2008. In this case, the 2008 time period is common to both value sets. However, when both series are plotted on the same y-axis, we cannot make a useful comparison because the scale of the y-axis is optimized for the largest values in the dataset. If we show Revenue on the primary axis, and Tax on the secondary axis, we can display each series on its own y-axis with its own scale of values. The series still share a common x-axis.  
+ For example, suppose you have a chart that calculates Revenue vs. Tax for the year 2008. In this case, the 2008 time period is common to both value sets. However, when both series are plotted on the same y-axis, you can't make a useful comparison because the scale of the y-axis is optimized for the largest values in the dataset. If you show Revenue on the primary axis and Tax on the secondary axis, you can display each series on its own y-axis with its own scale of values. The series still share a common x-axis.  
   
  In situations where there are more than two series to be compared, consider a different approach for comparing and displaying multiple series in a chart. For more information, see [Multiple Series on a Chart](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs).  
   
@@ -30,7 +30,7 @@ The Power BI paginated report chart has two axis types: primary and secondary. T
   
 1.  Right-click the series in the chart or right-click on a field in the **Values** area that you want to display on the secondary axis and click **Series Properties**. The **Series Properties** dialog box appears.  
   
-2.  Click **Axes and Chart Area**, and select which of the secondary axes you want to enable, the value axis or the category axis.  
+1.  Click **Axes and Chart Area**, and select which of the secondary axes you want to enable, the value axis or the category axis.  
 
 ## Related content
 

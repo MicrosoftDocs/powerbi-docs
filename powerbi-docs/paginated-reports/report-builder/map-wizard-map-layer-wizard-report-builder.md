@@ -1,10 +1,10 @@
 ---
-title: "Map Wizard and Map Layer Wizard (Power BI Report Builder) | Microsoft Docs"
+title: Map Wizard and Map Layer Wizard (Power BI Report Builder)
 description: Find out how to automate creating a map, adding a map layer, or changing map layer options with the Map Wizards or Map Layer Wizard in Power BI Report Builder.
-ms.date: 02/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-
 
 ms.topic: reference
 author: JulCsc
@@ -58,7 +58,7 @@ ms.reviewer: saurkumar
     -   [What does embedding spatial data do?](#Embed)  
    - [What is an Azure maps tile background?](#Tiles)  
       
-3.  [Choose map visualization](#Visualization). Choose the type of map to create.  
+1.  [Choose map visualization](#Visualization). Choose the type of map to create.  
   
     -   [What is the difference between a Basic Map, a Bubble Map, and an Analytical Map?](#MapType)  
   
@@ -68,19 +68,19 @@ ms.reviewer: saurkumar
   
     -   Choose map visualization: Points  
   
-4.  Choose a connection to a data source Choose map visualization: Points. Choose a data source connection or create one to an external data source that contains analytical data to display on the map.  
+1.  Choose a connection to a data source Choose map visualization: Points. Choose a data source connection or create one to an external data source that contains analytical data to display on the map.  
   
-5.  Design a query. Build a query that specifies the analytical data.  
+1.  Design a query. Build a query that specifies the analytical data.  
   
-6.  [Choose the analytical dataset](#AnalyticalData). Specify a data source for the analytical data.  
+1.  [Choose the analytical dataset](#AnalyticalData). Specify a data source for the analytical data.  
   
     -   [What is the difference between spatial data and analytical data?](#Diff)  
   
-7.  [Specify the match fields for spatial and analytical data](#SpecifyMatchFields). Build a relationship between the spatial data and analytical data so that the appearance of map elements can vary based on data.  
+1.  [Specify the match fields for spatial and analytical data](#SpecifyMatchFields). Build a relationship between the spatial data and analytical data so that the appearance of map elements can vary based on data.  
   
     -   [What is a match field?](#MatchFields)  
   
-8.  [Choose color theme and data visualization](#ThemeandVisualization). To specify how to visualize your data against the map background, specify the map theme, the fields to visualize, and what to vary: color, size, and/or marker type.  
+1.  [Choose color theme and data visualization](#ThemeandVisualization). To specify how to visualize your data against the map background, specify the map theme, the fields to visualize, and what to vary: color, size, and/or marker type.  
   
     -   [What does the theme do?](#Theme)  
   

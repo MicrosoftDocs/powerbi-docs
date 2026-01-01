@@ -1,7 +1,8 @@
 ---
-title: "Multiple series on a Power BI paginated report chart | Microsoft Docs"
+title: Multiple Series on a Power BI Paginated Report Chart
 description: Find out how to use multiple series on a Power BI paginated report chart when showing two related series of data like price and volume, or income and tax in Power BI Report Builder.
-ms.date: 03/29/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -27,8 +28,9 @@ ms.reviewer: monaraya
 ## Using Chart Areas  
  The chart is the top-level container that includes the outer border, the chart title, and the legend. By default, the chart contains one default chart area. The chart area is not visible on the chart surface, but you can think of the chart area as a container that includes only the axis labels, the axis title, and the plotting area of one or more series. The following illustration shows the concept of chart areas within a single chart.  
   
- ![Screenshot showing a diagram of a chart area.](media/paginated-reports-visualizations/
-chart-areas-diagram.png "Shows a diagram of a chart area")  
+ :::image type="content" source="media/paginated-reports-visualizations/
+chart-areas-diagram.png" alt-text="Screenshot showing a diagram of a chart area." lightbox="media/paginated-reports-visualizations/
+chart-areas-diagram.png":::  
   
  Using the **Chart Area Properties** dialog box, you can specify the 2D and 3D orientation of all series contained in the chart area, align multiple chart areas within the same chart, and format the colors of the plotting area. When a new chart area is defined on a chart that contains only one default chart area, the available space for a chart area is horizontally divided by two and the new chart area is positioned below the first chart area.  
   
@@ -40,7 +42,7 @@ chart-areas-diagram.png "Shows a diagram of a chart area")
   
 -   Create a new chart area and move one or more of the series from the default chart area into the newly created chart area.  
   
- The multiple chart area on a single chart feature is also useful if you are trying to compare data that has different scales of values. For example, if your first series contains data in the range of 10 to 20 and your second series contains data in the range of 400 to 800, the values in your first series may become obscured. Consider separating each series into a different chart area. For more information, see [Specify a Chart Area for a Series &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-chart-area-for-a-series-report-builder-and-ssrs).  
+ The multiple chart area on a single chart feature is also useful if you are trying to compare data that has different scales of values. For example, if your first series contains data in the range of 10 to 20 and your second series contains data in the range of 400 to 800, the values in your first series might become obscured. Consider separating each series into a different chart area. For more information, see [Specify a Chart Area for a Series &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-chart-area-for-a-series-report-builder-and-ssrs).  
   
 ## Using Range Charts  
  Range charts have two values per data point. If your chart contains two series that share the same category (x) axis, you can use a range chart to show the difference between the two series. Range charts are best suited for displaying high-low or top-bottom information. For example, if your first series contains the highest sale for each day in January, and your second series contains the lowest sale for each day in January, you can use a range chart to show the difference between the highest and lowest sale for each day. For more information, see [Range Charts &#40;Report Builder&#41;](/sql/reporting-services/report-design/range-charts-report-builder-and-ssrs).  

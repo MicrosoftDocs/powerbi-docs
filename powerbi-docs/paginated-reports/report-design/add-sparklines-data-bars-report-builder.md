@@ -1,7 +1,8 @@
 ---
-title: "Add sparklines and data bars in a Power BI paginated report | Microsoft Docs"
+title: Add Sparklines and Data Bars in a Power BI Paginated Report
 description: "Add sparklines and data bars in a paginated report."
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

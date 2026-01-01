@@ -1,7 +1,8 @@
 ---
-title: "Tablix data region in a Power BI paginated report | Microsoft Docs"
+title: Tablix Data Region in a Power BI Paginated Report
 description: See how to display paginated report data in cells. Organize data into rows and columns with a tablix data region in Power BI Report Builder.
-ms.date: 09/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -23,13 +24,13 @@ ms.reviewer: saurkumar
   
  To understand the tablix data region, it helps to understand the following:  
   
-*   The difference between detail data and grouped data.  
+-   The difference between detail data and grouped data.  
   
-*   Groups, which are organized as members of group hierarchies on the horizontal axis as row groups and on the vertical axis as column groups.  
+-   Groups, which are organized as members of group hierarchies on the horizontal axis as row groups and on the vertical axis as column groups.  
   
-*  The purpose of tablix cells in the four areas of a tablix data region: the body, the row group headers, the column group headers, and the corner.  
+-  The purpose of tablix cells in the four areas of a tablix data region: the body, the row group headers, the column group headers, and the corner.  
   
-*  Static and dynamic rows and columns, and how they relate to groups.  
+-  Static and dynamic rows and columns, and how they relate to groups.  
   
  This article spells out these concepts to explain the structure that Report Builder and Report Designer add for you when you add templates and create groups, so you can modify the structure to suit your own needs. Report Builder and Report Designer provide multiple visual indicators to help you recognize tablix data region structure. For more information, see [Tablix Data Region Cells, Rows, and Columns &#40;Power BI Report Builder&#41;](tablix-data-region-cells-rows-columns-report-builder.md).  
   
@@ -72,9 +73,9 @@ ms.reviewer: saurkumar
   
 ## Related content
 
-* [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](linking-multiple-data-regions-to-same-dataset-report-builder.md)   
-* [Control the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](control-tablix-data-region-display-report-page.md)   
-* [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md)   
-* [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
+- [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](linking-multiple-data-regions-to-same-dataset-report-builder.md)   
+- [Control the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](control-tablix-data-region-display-report-page.md)   
+- [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md)   
+- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

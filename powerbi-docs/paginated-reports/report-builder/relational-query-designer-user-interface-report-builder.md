@@ -1,7 +1,8 @@
 ---
-title: "Relational query designer user interface (Power BI Report Builder) | Microsoft Docs"
+title: Relational Query Designer User Interface (Power BI Report Builder)
 description: Learn to use the graphical query designer in Power BI Report Builder to explore the metadata, interactively build a query, and view the results for your query.
-ms.date: 01/27/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.reviewer: rpatkar
@@ -31,11 +32,11 @@ Power BI Report Builder provides both a graphical query designer and a text-base
   
  The following figure shows the graphical query designer when it is used with tables or views.  
   
- ![Screenshot showing Graphical designer for queries.](../media/report-builder-power-bi/rsqd-relational-graphical.png "Graphical designer for queries")  
+ :::image type="content" source="../media/report-builder-power-bi/rsqd-relational-graphical.png" alt-text="Screenshot showing Graphical designer for queries." lightbox="../media/report-builder-power-bi/rsqd-relational-graphical.png":::  
   
  The following figure shows the graphical query designer when it is used with stored procedures or table-valued functions.  
   
- ![Screenshot showing Stored procedure in graphical query designer.](../media/report-builder-power-bi/rs-relational-graphical-sp.png "Stored procedure in graphical query designer")  
+ :::image type="content" source="../media/report-builder-power-bi/rs-relational-graphical-sp.png" alt-text="Screenshot showing Stored procedure in graphical query designer." lightbox="../media/report-builder-power-bi/rs-relational-graphical-sp.png":::  
   
  The following table describes the function of each pane.  
   

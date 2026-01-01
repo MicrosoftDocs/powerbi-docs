@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot paginated report execution issues"
+title: Troubleshoot Paginated Report Execution Issues
 description: In this article, diagnose and fix processing and rendering issues with paginated reports.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 # Troubleshoot paginated report execution issues
@@ -28,12 +28,12 @@ In addition, the report expressions that are evaluated at run time must follow a
   
 Use the following list to help determine the cause of the error:
 
-* When a report has more than one dataset, an aggregate expression in a text box on the report body must specify a scope parameter. For example, `=First(Fields!FieldName.Value, "DataSet1")`.  
+- When a report has more than one dataset, an aggregate expression in a text box on the report body must specify a scope parameter. For example, `=First(Fields!FieldName.Value, "DataSet1")`.  
   
 To specify a scope parameter, provide the name of a dataset, data region, or group that is in scope for the report item. For more information, see these articles:
 
-* [Understanding Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md), and
-* [Expression Reference (Power BI Report Builder)](./expressions/report-builder-expressions.md)
+- [Understanding Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md), and
+- [Expression Reference (Power BI Report Builder)](./expressions/report-builder-expressions.md)
   
 ### Names of objects must be greater than 0 and less than or equal to 256 characters
 

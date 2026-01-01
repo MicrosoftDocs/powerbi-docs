@@ -1,7 +1,8 @@
 ---
-title: "Empty and null data points in Power BI paginated report charts | Microsoft Docs"
+title: Empty and Null Data Points in Power BI Paginated Report Charts
 description: Learn about Power BI paginated report chart processing for empty values, use of placeholders, and how empty and null data points display in Power BI Report Builder. 
-ms.date: 03/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -14,7 +15,7 @@ ms.reviewer: monaraya
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
-If you are displaying fields with empty or null values in a chart in your paginated report, the chart may not look as you expect. Charts process empty values differently depending on the specified chart type:  
+If you are displaying fields with empty or null values in a chart in your paginated report, the chart might not look as you expect. Charts process empty values differently depending on the specified chart type:  
   
 - If the chart type is a linear chart type (bar, column, scatter, line, area, range), empty values are displayed as empty spaces or "gaps" in the chart. If you want to indicate empty points, you must add empty point placeholders. For more information, see [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](add-empty-points-chart-report-builder.md).  
 - If the chart type is a contiguous, linear chart type (area, bar, column, line, scatter), empty data points are added to the chart to maintain continuity in the series.  

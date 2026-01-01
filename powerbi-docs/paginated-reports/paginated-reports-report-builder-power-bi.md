@@ -1,5 +1,5 @@
 ---
-title: What are paginated reports in Power BI?
+title: What Are Paginated Reports in Power Bi?
 description: Learn about paginated reports in Power BI - pixel-perfect reports designed for printing and sharing. Discover how to create, publish, and distribute reports that display all data across multiple pages with exact layout control.
 author: JulCsc
 ms.author: juliacawthra
@@ -8,7 +8,7 @@ ms.custom: video-removed, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 
@@ -17,7 +17,7 @@ ai-usage: ai-assisted
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
 > [!NOTE]
-> Some screenshots in this article may show an earlier version of the Power BI user interface. The Power BI service and Report Builder UI are updated regularly. While the core concepts and procedures remain accurate, some visual elements may appear differently in the current version.
+> Some screenshots in this article might show an earlier version of the Power BI user interface. The Power BI service and Report Builder UI are updated regularly. While the core concepts and procedures remain accurate, some visual elements might appear differently in the current version.
 
 *Paginated reports* are designed for printing or sharing. You can preview your report in Report Builder, then publish it to the Power BI service, `app.powerbi.com`. Paginated reports display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service.
 
@@ -30,7 +30,7 @@ Here are some quick links if you're ready to get started:
 
 Paginated reports often have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice, and repeating headers and footers.
 
-:::image type="content" source="media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png" alt-text="Screenshot of a paginated report page showing invoice details.":::
+:::image type="content" source="media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png" alt-text="Screenshot of a paginated report page showing invoice details." lightbox="media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png":::
 
 You can preview your report in Report Builder, then publish it to the Power BI service, app.powerbi.com.
 
@@ -70,6 +70,8 @@ A single paginated report can have a number of different data sources. Unlike Po
 See [Supported data sources for Power BI paginated reports](paginated-reports-data-sources.md) for a complete list.
 
 ## Design your report  
+
+Power BI Report Builder provides multiple layout options and customization features for your paginated reports.
 
 ### Create paginated reports with matrix, chart, and free-form layouts
 
@@ -121,7 +123,7 @@ Here are some other features that aren't supported:
 
 Paginated reports have memory limits that vary by license type. These limits affect report processing and rendering operations:
 
-- Reports with large datasets or complex formatting may encounter memory constraints.
+- Reports with large datasets or complex formatting might encounter memory constraints.
 - Export operations to formats like PDF or Excel are subject to these same memory limits.
 - For specific memory limits by license type, contact your Power BI administrator or Microsoft support.
 

@@ -1,7 +1,8 @@
 ---
-title: "Add an external image to a Power BI paginated report"
+title: Add an External Image to a Power BI Paginated Report
 description: Learn how to add an image to your paginated report from an external source in Power BI Report Builder. 
-ms.date: 04/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

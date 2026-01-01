@@ -1,7 +1,8 @@
 ---
-title: "Add empty points to a chart in Power BI paginated report | Microsoft Docs"
+title: Add Empty Points to a Chart in Power BI Paginated Report
 description: Specify empty points on a chart in a Power BI paginated report. These points are calculated in Power BI Report Builder by taking the average of the previous and next data points that contain a value. 
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -23,20 +24,20 @@ Null values are shown on the chart as empty spaces or gaps between data points i
   
 1.  Open the Properties pane.  
   
-2.  On the design surface, right-click the series that contains null values. The properties for the series are displayed in the Properties pane.  
+1.  On the design surface, right-click the series that contains null values. The properties for the series are displayed in the Properties pane.  
   
-3.  Expand the **EmptyPoint** node.  
+1.  Expand the **EmptyPoint** node.  
   
-4.  Select a color value for the Color property.  
+1.  Select a color value for the Color property.  
   
-5.  In the **EmptyPoint** node, expand the Marker node.  
+1.  In the **EmptyPoint** node, expand the Marker node.  
   
-6.  Select a marker type for the MarkerType property.  
+1.  Select a marker type for the MarkerType property.  
   
     > [!NOTE]  
     >  You must select a marker type to add empty points to a bar, column or scatter chart. However, for area, line and radar charts, selecting a marker type is optional because the chart fills in the empty space or gap without requiring a marker to be specified.  
   
-7.  Set the value of the empty point.  
+1.  Set the value of the empty point.  
   
     1.  In the Properties pane, expand the **CustomAttributes** node.  
   

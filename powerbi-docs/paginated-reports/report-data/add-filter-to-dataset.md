@@ -1,7 +1,8 @@
 ---
-title: "Add a filter to a dataset (Power BI Report Builder)"
+title: Add a Filter to a Dataset (Power BI Report Builder)
 description: Learn how to add a filter to a dataset to limit the data in a report after the data is retrieved from an external data source.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

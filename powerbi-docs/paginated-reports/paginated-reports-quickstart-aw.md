@@ -56,11 +56,11 @@ The license requirements for publishing Power BI paginated reports (.rdl files) 
 
 1. In the **Choose a dataset** page, select **Create a dataset** > **Next**.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png" alt-text="Screenshot showing where to find the Create a dataset option.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png" alt-text="Screenshot showing where to find the Create a dataset option." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png":::
 
 1. In the **Choose a connection to a data source** page, select **New**.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-new-data-source-connection.png" alt-text="Screenshot showing where to select New for a data source connection.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-new-data-source-connection.png" alt-text="Screenshot showing where to select New for a data source connection." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-new-data-source-connection.png":::
 
     The **Data Source Properties** dialog box opens.
 
@@ -70,7 +70,7 @@ The license requirements for publishing Power BI paginated reports (.rdl files) 
 
 1. Select **Build** next to the **Connection string** box.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png" alt-text="Screenshot showing where to select the Build option in Data source properties.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png" alt-text="Screenshot showing where to select the Build option in Data source properties." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png":::
 
     The **Connection Properties** dialog box opens.
 
@@ -100,7 +100,7 @@ The license requirements for publishing Power BI paginated reports (.rdl files) 
 
 1. In the **Choose a connection to a data source** page, you see "(in this Report)" under your new data source connection. Select that data source, and select **Next**.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-my-azure-data-source.png" alt-text="Screenshot showing where to select the data source.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-my-azure-data-source.png" alt-text="Screenshot showing where to select the data source." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-my-azure-data-source.png":::
 
 1. In the **Design a query** page, expand **SalesLT**, expand **Tables**, and select these tables:
 
@@ -173,7 +173,7 @@ To see the actual values, run the report.
 
    Now you see the values. The matrix has many more rows than you saw in Design view. Report Builder lists the page as **1** of **2?**. Report Builder loads the report as quickly as possible, so it only retrieves enough data for a few pages at a time. The question mark indicates that Report Builder is still loading the data.
 
-   :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png" alt-text="Screenshot of a report, showing where to find the page number and page navigation arrows.":::
+   :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png" alt-text="Screenshot of a report, showing where to find the page number and page navigation arrows." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png":::
 
 ## Format the report
 
@@ -193,7 +193,7 @@ Typically, you format a paginated report for printing, and a typical page is 8.5
 
 1. Expand **Margins** and change **Left** and **Right** from 1 inch to 0.75 inches.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-set-margins.png" alt-text="Screenshot of report properties, showing where to see and edit the report margins.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-set-margins.png" alt-text="Screenshot of report properties, showing where to see and edit the report margins." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-set-margins.png":::
 
 ### Add a report title
 
@@ -217,7 +217,7 @@ You noticed the report has a date and time stamp in the footer. You can add a pa
 
 1. Drag **Overall Total Pages** to the footer, to the right of "of", and drag its right side to make it square, too.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-add-page-numbers.png" alt-text="Screenshot of the Report Data pane, showing where to drag a build-in field into a footer.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-add-page-numbers.png" alt-text="Screenshot of the Report Data pane, showing where to drag a build-in field into a footer." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-add-page-numbers.png":::
 
 ### Make the table wider
 
@@ -227,7 +227,7 @@ Now you can make the matrix wide enough to fill the width of the page, and make 
 
 1. Hover over the gray bar at the top of the matrix at the right edge of the **Company Name** column. Drag towards the right, until the column ends at 1 3/8 inches.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-drag-column.png" alt-text="Screenshot showing where to drag the edge of a column to make it wider.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-drag-column.png" alt-text="Screenshot showing where to drag the edge of a column to make it wider." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-drag-column.png":::
 
 1. Drag the right edge of **Product Name** until the column ends at 3 3/4 inches.
 
@@ -239,15 +239,15 @@ If you noticed when you ran the report, the dollar amounts aren't formatted as c
 
 1. Select the upper-left **[Sum(OrderQty)]** cell, hold down the Shift key, and select the lower-right **[Sum(LineTotal)]** cell.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png" alt-text="Screenshot showing where to select cells with currency values.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png" alt-text="Screenshot showing where to select cells with currency values." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png":::
 
 1. On the **Home** tab, select the dollar sign (**$**) currency symbol, and then select the arrow next to **Placeholder styles** > **Sample Values**.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png" alt-text="Screenshot showing where to select Sample Values.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png" alt-text="Screenshot showing where to select Sample Values." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png":::
 
     Now you can see the values are formatted as currency.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-display-sample-values.png" alt-text="Screenshot showing report values formatted as currency.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-display-sample-values.png" alt-text="Screenshot showing report values formatted as currency." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-display-sample-values.png":::
 
 ### Add column headers on each page
 
@@ -259,7 +259,7 @@ Before you publish the report to the Power BI service, make one more formatting 
 
 1. Select the top **Static** bar in the **Row Groups**. You see that the **Company Name** cell in the matrix is selected.
 
-   :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-static-group.png" alt-text="Screenshot showing where to select the Static bar.":::
+   :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-static-group.png" alt-text="Screenshot showing where to select the Static bar." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-static-group.png":::
 
 1. In the **Properties** pane, you're looking at the properties for **Tablix Member**. Set **KeepWithGroup** to **After** and **RepeatOnNewPage** to **True**.
 
@@ -287,13 +287,13 @@ Now that you created this paginated report, upload it to the Power BI service.
 
     Power BI imports your file, and you see it under **Reports** on the App list page.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-app-list.png" alt-text="Screenshot showing where the report appears in the Reports list on the App list page.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-app-list.png" alt-text="Screenshot showing where the report appears in the Reports list on the App list page." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-app-list.png":::
 
 1. Select the report and view it.
 
 1. If you get an error, you might need to reenter your credentials. Select the ellipses to the right of the report, and then choose **Manage**.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png" alt-text="Screenshot showing where to select Manage to manage your report.":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png" alt-text="Screenshot showing where to select Manage to manage your report." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png":::
 
 1. Select **Edit credentials** and enter the credentials you used in Azure when you created the Azure database.
 

@@ -1,5 +1,5 @@
 ---
-title: "Create embedded data sources for paginated reports in the Power BI service"
+title: Create Embedded Data Sources for Paginated Reports in the Power BI Service
 description: Learn how to create and modify an embedded data source in a paginated report in the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
 ---
@@ -31,7 +31,6 @@ Paginated reports connect to on-premises data sources by way of a [Power BI gate
 
 For more information, see [Understanding report data in Power BI Report Builder](report-builder-data.md).
 
-
 ## Prerequisites 
 
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
@@ -42,11 +41,11 @@ For more information, see [Understanding report data in Power BI Report Builder]
 
 1. On the toolbar in the **Report Data** pane, select **New** > **Data Source**. The **Data Source Properties** dialog box opens.
 
-   :::image type="content" source="media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png" alt-text="Screenshot of New Data Source in the Report Data pane.":::
+   :::image type="content" source="media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png" alt-text="Screenshot of New Data Source in the Report Data pane." lightbox="media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png":::
   
 1. In the **Name** text box, type a name for the data source or accept the default.  
 
-   :::image type="content" source="media/paginated-reports-embedded-data-source/power-bi-select-connection.png" alt-text="Screenshot of the Data Source properties dialog box.":::
+   :::image type="content" source="media/paginated-reports-embedded-data-source/power-bi-select-connection.png" alt-text="Screenshot of the Data Source properties dialog box." lightbox="media/paginated-reports-embedded-data-source/power-bi-select-connection.png":::
   
 1. From the **Select connection type** list, select a data source type. 
 
@@ -60,7 +59,7 @@ For more information, see [Understanding report data in Power BI Report Builder]
   
 1. Select **Credentials**.  
 
-   :::image type="content" source="media/paginated-reports-embedded-data-source/power-bi-select-credentials.png" alt-text="Screenshot of the credentials tab in Data Source properties.":::
+   :::image type="content" source="media/paginated-reports-embedded-data-source/power-bi-select-credentials.png" alt-text="Screenshot of the credentials tab in Data Source properties." lightbox="media/paginated-reports-embedded-data-source/power-bi-select-credentials.png":::
   
    Specify the credentials to use for this data source. The owner of the data source chooses the type of credentials that are supported. For more information, see [Specify credential and connection information for Report Data sources](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
   
