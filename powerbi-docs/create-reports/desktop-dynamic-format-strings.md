@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/11/2025
+ms.date: 12/01/2025
 LocalizationGroup: Create reports
 ai-usage: ai-assisted
 ms.custom: references_regions
@@ -18,6 +18,9 @@ ms.custom: references_regions
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 By using *dynamic format strings for measures*, you can control how measures appear in visuals. Conditionally apply a format string by using a separate Data Analysis Expression (DAX) formula.
+
+> [!NOTE]
+> Dynamic format strings for measures is available in Power BI Desktop and Power BI Report Server (January 2025 and later). If you're using Power BI Report Server, make sure you have the latest version installed. For more information, see [What's new in Power BI Report Server](../report-server/whats-new.md).
 
 Dynamic format strings solve a problem with the FORMAT function. FORMAT returns all results as strings, even numeric data types. This behavior can cause problems with visuals like charts that need numeric values.
 

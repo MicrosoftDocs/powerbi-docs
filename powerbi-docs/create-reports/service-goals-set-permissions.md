@@ -1,14 +1,15 @@
 ---
-title: Protect your scorecards with goal-level permissions
+title: Protect Your Scorecards with Goal-Level Permissions
 description: Set up goal-level permissions.
-author: julcsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: 'cnews'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/10/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 #customer intent: As a Power BI user I want to learn how to protect my scorecards with goal-level permissions in the Power BI service.
 ---
 # Protect your scorecards with goal-level permissions
@@ -31,7 +32,7 @@ Follow these steps to get started setting up your permissions.
 1. Select the new **Permissions** tab.
 1. Select **Add role** or select **More options (...)** for an existing role to open the  **Role settings** page.
 
-    :::image type="content" source="media/service-goals-set-permissions/goals-permissions-settings-pane.png" alt-text="Screenshot of opening goal-level permissions by accessing the scorecard settings and selecting permissions.":::
+    :::image type="content" source="media/service-goals-set-permissions/goals-permissions-settings-pane.png" alt-text="Screenshot of opening goal-level permissions by accessing the scorecard settings and selecting permissions." lightbox="media/service-goals-set-permissions/goals-permissions-settings-pane.png":::
 
 On the **Role settings** page, you  can create roles with different permission sets and assign those roles to specific user groups. We support different types of permissions at the goal level:
 
@@ -43,7 +44,7 @@ You can select any combination of the following options:
     - **Status**: Grants access to update status in a check-in.
     - **Current**: Grants access to update the current value in a check-in.
 
-:::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-role.png" alt-text="Screenshot of the goal-level permission settings open and editable.":::
+:::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-role.png" alt-text="Screenshot of the goal-level permission settings open and editable." lightbox="media/service-goals-set-permissions/goals-permissions-create-role.png":::
 
 ### Inheritance
 
@@ -51,13 +52,13 @@ The last checkbox for permission settings is **Set for all**. This checkbox supp
 
 ## Set a default
 
-Another aspect of goal-level permissions is enabling a *default* permission model that applies to anyone accessing the scorecard.  You can create a role with any combination of permissions you choose. If you make that the default permissions, then anytime anyone lands on the scorecard, they see exactly what the scorecard author selects.    
+Another aspect of goal-level permissions is enabling a *default* permission model that applies to anyone accessing the scorecard. You can create a role with any combination of permissions you choose. If you make that the default permissions, then anytime anyone lands on the scorecard, they see exactly what the scorecard author selects.
 
-The default permissions apply to anyone accessing the scorecard who isn't a member of another role already. If someone is a member of another role, they assume those permissions over the default permissions. 
+The default permissions apply to anyone accessing the scorecard who isn't a member of another role already. If someone is a member of another role, they assume those permissions over the default permissions.
 
 - Select **More options (...)** in the role card and then select **Set as default**.
 
-    :::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-default.png" alt-text="Screenshot of setting a role to become the default role from the More options menu.":::
+    :::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-default.png" alt-text="Screenshot of setting a role to become the default role from the More options menu." lightbox="media/service-goals-set-permissions/goals-permissions-create-default.png":::
 
 Goal-level permissions roles apply to the underlying scorecard semantic model we generate, except for the default role. For example, say you create a role and assign the sales team view access to five goals on the scorecard. Those five goals are the ones they see in the underlying semantic model as well.
 

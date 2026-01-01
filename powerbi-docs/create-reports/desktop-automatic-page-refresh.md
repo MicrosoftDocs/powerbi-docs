@@ -1,5 +1,5 @@
 ---
-title: Automatic page refresh in Power BI Desktop 
+title: Automatic Page Refresh in Power BI Desktop 
 description: Learn how to automatically refresh pages for DirectQuery and LiveConnect sources in Power BI Desktop.
 author: JulCsc
 ms.author: juliacawthra
@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 12/01/2025
 LocalizationGroup: Connect to data
 ai-usage: ai-assisted
 ---
@@ -37,13 +37,16 @@ This refresh type allows you to refresh visuals on a page based on detecting cha
 
 Automatic page refresh is available for [DirectQuery sources](../connect-data/desktop-directquery-about.md) and some LiveConnect scenarios, so it will only be available when you're connected to a supported data source. This restriction applies to both automatic page refresh types.
 
+> [!IMPORTANT]
+> **Can't find the Page refresh option?** The **Page refresh** card only appears in the Formatting pane when your report is connected to a [DirectQuery source](../connect-data/desktop-directquery-about.md). If your report uses Import mode, the Page refresh option isn't available. To use automatic page refresh, you must change your data connection to DirectQuery.
+
 To use automatic page refresh in Power BI Desktop, select the report page for which you want to enable automatic page refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find the **Page refresh** section near the bottom of the pane.
 
 ![Page refresh location](media/desktop-automatic-page-refresh/automatic-page-refresh-01.png)
 
 1. Turns page refresh on or off.
-2. Refresh type
-3. Inputs and information (depending on refresh type)
+1. Refresh type
+1. Inputs and information (depending on refresh type)
 
 The **Page refresh** card will only be available if you're connected to a [DirectQuery source](../connect-data/desktop-directquery-about.md). To enable automatic page refresh, the toggle needs to be on the "On" position. The inputs needed and information provided will depend on the refresh type selected.
 
@@ -142,8 +145,8 @@ When configuring automatic page refresh for reports in the Power BI service, the
 ![Page refresh location in the service](media/desktop-automatic-page-refresh/automatic-page-refresh-08.png)
 
 1. Turns page refresh on or off.
-2. Refresh type.
-3. Inputs and information (depending on refresh type).
+1. Refresh type.
+1. Inputs and information (depending on refresh type).
 
 > [!NOTE]
 > When you publish your automatic page refresh-enabled report from Power BI Desktop to the service, you'll have to provide the credentials for the DirectQuery data source on the semantic model settings menu. You can set up the credentials so that report viewers access this data source with their own identities, respecting any security setup at the source. A change detection measure is evaluated with the author's credentials.
@@ -179,11 +182,11 @@ Here are details for the two workspace scenarios:
 > [!NOTE]
 > Premium Per User (PPU) workspaces behave like dedicated capacity for Automatic Page Refresh limits. Treat PPU the same as Fabric F / Premium P when planning refresh intervals.
 
- - **Feature on/off**. If your capacity administrator has disabled the feature, you won't be able to set up any type of page refresh in your published report. Fixed interval and change detection can be turned on and off separately.
+- **Feature on/off**. If your capacity administrator has disabled the feature, you won't be able to set up any type of page refresh in your published report. Fixed interval and change detection can be turned on and off separately.
 
- - **Minimum refresh interval**. When enabling automatic page refresh for a fixed interval, your capacity administrator needs to set up a minimum refresh interval (the default value is five minutes). If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
+- **Minimum refresh interval**. When enabling automatic page refresh for a fixed interval, your capacity administrator needs to set up a minimum refresh interval (the default value is five minutes). If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
 
- - **Minimum execution interval**. When enabling change detection, your capacity administrator needs to set up a minimum execution interval (default value is five seconds). If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
+- **Minimum execution interval**. When enabling change detection, your capacity administrator needs to set up a minimum execution interval (default value is five seconds). If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
 
 > [!WARNING]
 > When enabled in your semantic model, the change detection measure will open a connection to your DirectQuery data source to calculate the measure and poll for changes. This connection is different from the low priority refresh connections Power BI already makes.
@@ -206,7 +209,7 @@ This table describes with more detail where this feature is available and the li
 
 *Table legend:*
 1. *FI: Fixed interval*
-2. *CD: Change detection*
+1. *CD: Change detection*
 
 > [!IMPORTANT]
 > *Admin override* can only increase the refresh interval, and can't be used to set it below the minimum interval.
@@ -229,9 +232,9 @@ If the semantic model has a large number of uses with Write permissions, for exa
 
 There are a few things to keep in mind when you use automatic page refresh in Power BI Desktop or in the Power BI service:
 
-* Import storage mode isn't supported for automatic page refresh, but open reports update automatically if the underlying semantic model is refreshed and the user has Write permissions. Refer to the [previous section](#impact-of-model-refresh-on-open-reports-when-using-import-mode) for situations when the refresh may become unreliable.
-* Composite models that have at least one DirectQuery data source are supported.
-* You can only have one change detection measure per semantic model.
+- Import storage mode isn't supported for automatic page refresh, but open reports update automatically if the underlying semantic model is refreshed and the user has Write permissions. Refer to the [previous section](#impact-of-model-refresh-on-open-reports-when-using-import-mode) for situations when the refresh may become unreliable.
+- Composite models that have at least one DirectQuery data source are supported.
+- You can only have one change detection measure per semantic model.
 
 ### Performance diagnostics
 
@@ -245,7 +248,7 @@ To prevent undue load on data sources, Power BI has the following safeguards:
 There are two areas where you could still encounter performance bottlenecks:
 
 1. **The capacity**. The query first hits the Premium capacity, which will fold and evaluate the DAX query generated from the report visualizations into the source queries.
-2. **The DirectQuery data source**. The translated queries in the previous step are then run against the source. The source would be your SQL Server instances, SAP Hana sources, and so on.
+1. **The DirectQuery data source**. The translated queries in the previous step are then run against the source. The source would be your SQL Server instances, SAP Hana sources, and so on.
 
 By using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) that's available to admins, you can visualize how much of the capacity is being used by low-priority queries.
 
@@ -264,16 +267,16 @@ If your capacity is overloaded with low-priority queries, you can take these act
 
 **I'm a report author. I defined my report refresh interval to one second on Power BI Desktop, but after publishing, my report isn't refreshing in the service.**
 
-* Ensure that automatic page refresh is turned on for the page. Because this setting is per page, you need to ensure it's turned on for each page in the report you want to refresh.
-* Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, your refresh interval will be locked at 30 minutes for fixed interval, and it will not be available for change detection.
-* If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum refresh interval for the capacity is equal or lower than the interval for your report. This applies separately for both fixed interval and change detection
+- Ensure that automatic page refresh is turned on for the page. Because this setting is per page, you need to ensure it's turned on for each page in the report you want to refresh.
+- Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, your refresh interval will be locked at 30 minutes for fixed interval, and it will not be available for change detection.
+- If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum refresh interval for the capacity is equal or lower than the interval for your report. This applies separately for both fixed interval and change detection
 
 **I'm a capacity admin. I changed the settings for my automatic page refresh interval, but the changes aren't reflected. Reports are still refreshing at a rate they shouldn't be, or they are not refreshing even though I turned on automatic page refresh.**
 
-* It takes up to 5 minutes for automatic page refresh setting changes made in the capacity admin UI to propagate to reports.
-* In addition to turning on automatic page refresh for the capacity, you also need to turn it on for the pages of a report where you want to enable it.
-* Both refresh types are managed separately, so make sure that the type of refresh you're enabling is turned on.
-* For more information on enabling and configuring workloads in a Premium capacity, visit [Configure workloads in a Premium capacity](../enterprise/service-admin-premium-workloads.md).
+- It takes up to 5 minutes for automatic page refresh setting changes made in the capacity admin UI to propagate to reports.
+- In addition to turning on automatic page refresh for the capacity, you also need to turn it on for the pages of a report where you want to enable it.
+- Both refresh types are managed separately, so make sure that the type of refresh you're enabling is turned on.
+- For more information on enabling and configuring workloads in a Premium capacity, visit [Configure workloads in a Premium capacity](../enterprise/service-admin-premium-workloads.md).
 
 **My report is operating in mixed mode. (Mixed mode means the report has a DirectQuery connection and an Import data source.) Some visuals aren't refreshing.**
 
@@ -282,39 +285,39 @@ If your capacity is overloaded with low-priority queries, you can take these act
 
 **My report was refreshing in the service, but then it suddenly stopped.**
 
-* Try refreshing the page to see if the problem resolves itself.
-* Check with your capacity admin. The admin might have turned off the feature or raised the minimum refresh interval. (See the second question in this section.)
+- Try refreshing the page to see if the problem resolves itself.
+- Check with your capacity admin. The admin might have turned off the feature or raised the minimum refresh interval. (See the second question in this section.)
 
 **I'm a report author. My visuals aren't refreshing at the cadence I specified. They're refreshing at a slower rate.**
 
-* If your queries are taking longer to run, your refresh interval will be delayed. Automatic page refresh waits for all queries to finish before running new ones.
-* Your capacity admin might have set a minimum refresh interval that's higher than the one you set in your report. Ask your capacity admin to lower the minimum refresh interval.
+- If your queries are taking longer to run, your refresh interval will be delayed. Automatic page refresh waits for all queries to finish before running new ones.
+- Your capacity admin might have set a minimum refresh interval that's higher than the one you set in your report. Ask your capacity admin to lower the minimum refresh interval.
 
 **Are automatic page refresh queries served from the cache?**
 
-* No. All automatic page refresh queries bypass any cached data.
+- No. All automatic page refresh queries bypass any cached data.
 
 **My change detection measure is not triggering any updates**
 
-* Ensure that change detection is turned on for the page. Because this setting is per page, you need to ensure it's turned on for each page in the report you want to refresh.
-* Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, change detection won't work.
-* If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum execution interval for the capacity is equal or lower than the interval for your report.
-* If you have checked for all of the items mentioned before, check in Power BI Desktop or in edit mode if the measure is changing at all. To do this, drag it into the canvas and check if the value changes. If it doesn't, the measure might not be a good choice to poll for data source changes.
+- Ensure that change detection is turned on for the page. Because this setting is per page, you need to ensure it's turned on for each page in the report you want to refresh.
+- Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, change detection won't work.
+- If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum execution interval for the capacity is equal or lower than the interval for your report.
+- If you have checked for all of the items mentioned before, check in Power BI Desktop or in edit mode if the measure is changing at all. To do this, drag it into the canvas and check if the value changes. If it doesn't, the measure might not be a good choice to poll for data source changes.
 
 **When connected to analysis services, I cannot see the APR toggle**
 
-* Make sure your Analysis Services model is in [Direct Query mode](/analysis-services/tabular-models/directquery-mode-ssas-tabular).
+- Make sure your Analysis Services model is in [Direct Query mode](/analysis-services/tabular-models/directquery-mode-ssas-tabular).
 
 
 ## Related content
 
 For more information, see these articles:
 
-* [Using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
-* [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
-* [Use Performance Analyzer to examine report element performance](desktop-performance-analyzer.md)
-* [Deploying and managing Power BI Premium capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
-* [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)
-* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)
+- [Using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
+- [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
+- [Use Performance Analyzer to examine report element performance](desktop-performance-analyzer.md)
+- [Deploying and managing Power BI Premium capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
+- [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
+- [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+- [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)
+- [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

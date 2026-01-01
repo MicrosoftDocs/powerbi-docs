@@ -1,5 +1,5 @@
 ---
-title: Create Apply all and Clear all slicers buttons in reports 
+title: Create Apply All and Clear All Slicers Buttons in Reports 
 description: You can add buttons in Power BI reports that apply all the slicers or clear all the slicers on the page.
 author: julcsc
 ms.author: juliacawthra
@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/06/2024
+ms.date: 12/01/2025
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 # Create Apply all and Clear all slicers buttons in Power BI reports
@@ -17,7 +18,7 @@ LocalizationGroup: Create reports
 
 If you have a report page with a number of slicers, consider adding *Apply all slicers* and *Clear all slicers* buttons to the page. These buttons apply all the slicers or clear all the slicers on a page, with one click, reducing the number of unnecessary visual queries the slicers send.
 
-![Screenshot showing Apply all slicers button in Power BI.](media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-slicers-button.png)
+:::image type="content" source="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-slicers-button.png" alt-text="Screenshot showing Apply all slicers button in Power BI." lightbox="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-slicers-button.png":::
 
 ## Why add an Apply all slicers button
 
@@ -33,13 +34,13 @@ See [Optimize Power BI Desktop](desktop-optimize-ribbon.md) for more ways to imp
 
 In Power BI Desktop, on the **Insert** ribbon, select **Buttons** to reveal a drop-down menu, then select the **Apply all slicers** button.
 
-![Screenshot showing Add an Apply all slicers button control in Power BI Desktop.](media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown.png)
+:::image type="content" source="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown.png" alt-text="Screenshot showing Add an Apply all slicers button control in Power BI Desktop." lightbox="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown.png":::
 
 ### [Power BI service](#tab/powerbi-service)
 
 In the Power BI service, open the report in Editing view. Select **Buttons** in the top menu bar to reveal a drop-down menu, then select the **Apply all slicers** button.
 
-![Screenshot showing Apply all slicers button control in the Power BI service.](media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown-service.png)
+:::image type="content" source="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown-service.png" alt-text="Screenshot showing Apply all slicers button control in the Power BI service." lightbox="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown-service.png":::
 
 ---
 
@@ -58,17 +59,17 @@ You might want to let your report consumers decide how they want to apply their 
 1. On the **View** tab > **Show panes**, select **Selection**.
 1. Select the **Apply all slicers** button on the canvas, so it's highlighted in the Selection pane.
 
-    :::image type="content" source="media/buttons-apply-all-clear-all-slicers/selection-pane-button.png" alt-text="highlighting the Apply all slicers button.":::
+    :::image type="content" source="media/buttons-apply-all-clear-all-slicers/selection-pane-button.png" alt-text="Screenshot highlighting the Apply all slicers button." lightbox="media/buttons-apply-all-clear-all-slicers/selection-pane-button.png":::
 
 1. On the **View** tab > **Show panes**, select **Bookmarks**.
 1. In the Bookmarks pane, select **Add**.
 1. Adjust the new bookmark to **Selected visuals**, then **Update** and rename to **Apply all slicers**.
 
-    :::image type="content" source="media/buttons-apply-all-clear-all-slicers/bookmark-selected-visuals.png" alt-text="Bookmarks pane, Selected visuals.":::
+    :::image type="content" source="media/buttons-apply-all-clear-all-slicers/bookmark-selected-visuals.png" alt-text="Screenshot of Bookmarks pane, Selected visuals." lightbox="media/buttons-apply-all-clear-all-slicers/bookmark-selected-visuals.png":::
 
 1. In the Selection pane, select the little eye next to the button to hide it on the report page. You see a warning that "This change will affect slicer behavior."
 
-    :::image type="content" source="media/buttons-apply-all-clear-all-slicers/hide-apply-all-slicer-button.png" alt-text="hide Apply all slicer button.":::
+    :::image type="content" source="media/buttons-apply-all-clear-all-slicers/hide-apply-all-slicer-button.png" alt-text="Screenshot of hide Apply all slicer button." lightbox="media/buttons-apply-all-clear-all-slicers/hide-apply-all-slicer-button.png":::
 
 1. In the Selection pane, select the now hidden Apply all slicers button again so it's highlighted.
 1. In the Bookmarks pane, select **Add** again, then adjust the bookmark to **Selected visuals**, then **Update** and finally rename to **Instantly apply**.
@@ -79,7 +80,7 @@ You might want to let your report consumers decide how they want to apply their 
 
 1. If you want the bookmarks to look like little tabs above your left section, change the shape to a trapezoid with 10 px rounding and 20% slant. Then for the default state you make the text DIN 8 centered top with 8 px padding in black with a grey 0% transparent fill and no border. For the selected state you make it the same, except with a white 0% transparent fill. Then you position it behind your left section and change it to maintain layer order.
  
-    :::image type="content" source="media/buttons-apply-all-clear-all-slicers/hidden-apply-all-slicer-button.png" alt-text="hidden Apply all slicers button.":::
+    :::image type="content" source="media/buttons-apply-all-clear-all-slicers/hidden-apply-all-slicer-button.png" alt-text="Screenshot of hidden Apply all slicers button." lightbox="media/buttons-apply-all-clear-all-slicers/hidden-apply-all-slicer-button.png":::
 
 1. Because you're in Power BI Desktop, you need to press Ctrl + click to engage either bookmark.
 
