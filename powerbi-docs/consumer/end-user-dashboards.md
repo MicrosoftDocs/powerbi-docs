@@ -22,6 +22,16 @@ A Power BI *dashboard* is a single page, often called a canvas, that uses visual
 > [!TIP]
 > **Key takeaway:** Dashboards display visualizations from one or more reports on a single page. Unlike reports, dashboards don't support filtering or slicing, but they do support Q&A natural language queries and data alerts.
 
+## Key concepts for understanding dashboards
+
+Before exploring dashboards, here are some essential terms:
+
+- **Tile**: A single visualization (chart, number, image) displayed on a dashboard. Tiles are pinned from reports.
+- **Pin**: The action of adding a visualization from a report to a dashboard.
+- **Semantic model**: The underlying data that powers reports and dashboards.
+- **Report**: A multi-page collection of visualizations based on a single semantic model.
+- **Q&A**: A feature that lets you ask questions about your data in natural language.
+
 :::image type="content" source="media/end-user-dashboards/power-bi-full-dashboard.png" alt-text="Screenshot showing the Sales and Marketing Sample dashboard." lightbox="media/end-user-dashboards/power-bi-full-dashboard.png#lightbox":::
 
 The visualizations on the dashboard are called *tiles*. Report designers *pin* tiles to the dashboard. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, start with [Basics of the Power BI service](../fundamentals/service-basic-concepts.md) to get a good foundation. Hovering over an element on a dashboard displays a tooltip.

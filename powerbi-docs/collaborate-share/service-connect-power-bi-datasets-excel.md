@@ -28,7 +28,27 @@ When you access Power BI semantic models in Excel, the Excel file automatically 
 
 Using Power BI semantic models in Excel allows you to leverage the powerful data analysis capabilities of Excel while ensuring data governance and security provided by Power BI. This integration helps you make better decisions and supports business goals by using accurate and authoritative data.
 
-Connect to Power BI semantic models in Excel by starting in the Power BI service or in Excel for the web or the Excel desktop app.  
+## How to connect Excel to Power BI semantic models
+
+You can connect to Power BI semantic models in Excel by starting in the Power BI service or in Excel for the web or the Excel desktop app. Here are the primary methods:
+
+### Connect from the Power BI service
+
+1. Open the Power BI service (app.powerbi.com) and navigate to the semantic model you want to connect to.
+1. Select the **More options (...)** menu for the semantic model.
+1. Select **Analyze in Excel**.
+1. Power BI generates an Excel file with a live connection to the semantic model and downloads it to your computer.
+1. Open the downloaded file in Excel to start analyzing your data.
+
+### Connect from Excel
+
+1. Open Excel (desktop or web).
+1. Go to the **Data** tab and select **Get Data** > **From Power BI**.
+1. Browse or search for the semantic model you want to connect to.
+1. Select the semantic model and choose **Connect**.
+1. Use PivotTables or tables to explore and analyze the data.
+
+For detailed instructions, see the following resources:  
 
 - Start in Power BI with [Analyze in Excel](service-analyze-in-excel.md).
 - Start in [Excel for the web or the Excel desktop app](service-connect-excel-power-bi-datasets.md).

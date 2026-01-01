@@ -1,5 +1,5 @@
 ---
-title: Filter a report using query string parameters in the URL
+title: Filter a Report Using Query String Parameters in the URL
 description: Learn how to filter a report using URL query string parameters, including filtering on more than one field.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: 'kayu'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 11/01/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ms.topic: how-to
 LocalizationGroup: Reports
@@ -48,11 +48,16 @@ When constructing URL filters, keep these critical rules in mind:
 
 1. **Field names with spaces:** Use `_x0020_` to represent spaces in table or field names. For example, if your table is named "Sales Data", use `Sales_x0020_Data` in the URL filter.
 
+1. **Field names with special characters:** For any non-ASCII characters, leading numbers, or special characters like `@`, `+`, `[`, or `]`, use Unicode escape codes. The format is `_x` followed by the four-digit Unicode value and another underscore. See [Special characters in table and column names](#special-characters-in-table-and-column-names) for a complete reference and examples.
+
 1. **Quoting field values:** Only surround text field values with single apostrophes. Numeric values take no surrounding characters.
    - Text values: `filter=Product/Category eq 'Electronics'`
    - Numeric values: `filter=Product/Price eq 487`
 
 1. **Preexisting filters:** Any preexisting filters need to be unfiltered (or set to All) before the URL filter is passed in. Otherwise, the existing filters and new URL filters create an AND relationship that can result in zero records in the dataset.
+
+> [!TIP]
+> If your URL filter isn't working as expected, check for spaces or special characters in your table and field names. These are common issues when filters appear not to work. See [Special characters in URL filters](#special-characters-in-url-filters) for encoding guidance.
 
 ### Field types
 
