@@ -9,8 +9,8 @@ ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with goals
 ms.topic: feature-guide
 ms.date: 12/01/2025
-ms.custom:
-ai-usage: ai-assisted intro-get-started
+ms.custom: intro-get-started
+ai-usage: ai-assisted
 #customer intent: As a Power BI user I want to learn what goals are and how to use Goals in my Power BI scorecards.
 ---
 # Get started with goals in Power BI
