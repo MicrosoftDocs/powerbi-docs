@@ -1,8 +1,9 @@
 ---
 title: Create a Fabric and Power BI Support Ticket
 description: Learn how to create a support ticket for Microsoft Fabric and Power BI based on your role. Includes steps for administrators and users to submit support requests.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
+ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting 

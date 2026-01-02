@@ -4,7 +4,6 @@ description: Learn about the Power BI Model Context Protocol (MCP) servers and h
 author: billmath
 ms.author: billmath
 ms.reviewer: sgodderidge
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview

@@ -4,7 +4,6 @@ description: Learn how to set up and configure the remote Power BI MCP server to
 author: billmath
 ms.author: billmath
 ms.reviewer: sgodderidge
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: get-started

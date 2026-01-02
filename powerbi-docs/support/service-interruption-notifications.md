@@ -1,9 +1,9 @@
 ---
 title: Power BI Service Interruption Notifications
 description: Learn how to enable Power BI service interruption notifications for outages and incidents. Configure email alerts to stay informed about service health and disruptions.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: eric-urban
+ms.author: eur
+ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
