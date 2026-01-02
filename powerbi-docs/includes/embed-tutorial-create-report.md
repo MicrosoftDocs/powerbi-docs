@@ -2,8 +2,8 @@
 title: Embedded analytics tutorial create a report
 description: Create a Power BI report for the embedded analytics tutorials.
 services: powerbi
-author: juliacawthra
-ms.author: JulCsc
+ms.author: juliacawthra
+author: JulCsc
 ms.topic: include
 ms.date: 01/02/2025
 ms.custom: include file

@@ -1,8 +1,8 @@
 ---
 title: Dark mode in Power BI Mobile
 description: Learn about dark mode, the differences between light mode and dark mode, and how to turn dark mode on and off on Power BI services.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to

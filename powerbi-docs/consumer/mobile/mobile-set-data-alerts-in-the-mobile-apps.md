@@ -1,8 +1,8 @@
 ---
 title: Set Data Alerts in the Power BI Mobile Apps  
 description: Learn how to set data alerts in the Power BI mobile apps to get notified when dashboard metrics cross thresholds you define; stay informed and act fast.  
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

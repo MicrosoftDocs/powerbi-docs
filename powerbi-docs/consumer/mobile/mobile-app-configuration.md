@@ -1,8 +1,8 @@
 ---
 title: Configure Power BI Mobile App Settings With MDM
 description: Configure Power BI mobile app settings remotely with an MDM tool to enforce security, interaction, and launch options. Learn keys and deploy today.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to

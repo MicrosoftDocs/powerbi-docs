@@ -1,9 +1,9 @@
 ---
 title: "Tutorial: Microsoft Fabric for Power BI users"
 description: Learn how to use Microsoft Fabric with Power BI by creating a dimensional model and building a report.
-author: itsnotaboutthecell
-ms.author: alpowers
-ms.reviewer: ''
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial

@@ -1,8 +1,8 @@
 ---
 title: Share a Dashboard or Report From Power BI Mobile Apps
 description: Share dashboards and reports from Power BI mobile apps by sending secure links to coworkers; learn steps and start sharing today.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Fabric adoption roadmap: System oversight"
 description: "Apply system oversight consisting of administrative activities to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
 ms.topic: concept-article
 ms.custom: fabric-cat

@@ -1,9 +1,9 @@
 ---
 title: "Migrate from Azure Analysis Services to Power BI Premium or Power BI Embedded"
 description: "Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium or Power BI Embedded."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

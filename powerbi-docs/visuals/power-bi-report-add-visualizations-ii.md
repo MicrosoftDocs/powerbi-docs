@@ -1,9 +1,9 @@
 ---
 title: Add visualizations to a Power BI report (part 2)
 description: Learn how to create a visualization in a report. Part 2 in a series.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

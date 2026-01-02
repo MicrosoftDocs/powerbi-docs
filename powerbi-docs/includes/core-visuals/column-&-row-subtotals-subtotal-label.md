@@ -1,9 +1,9 @@
 ---
 title: Subtotal label
 description: Setting - Subtotal label (Column & Row Subtotals, Subtotal label)
-ms.reviewer: juliacawthra
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include

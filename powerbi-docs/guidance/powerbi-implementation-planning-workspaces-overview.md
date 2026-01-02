@@ -1,9 +1,9 @@
 ---
 title: "Implementation Planning: Workspaces"
 description: "Learn about a series of articles that describe Power BI implementation planning for workspaces inside Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: overview

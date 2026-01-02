@@ -1,9 +1,9 @@
 ---
 title: Copilot in Power BI tutorial - Prepare semantic model for AI
 description: This article provides an overview of preparing semantic models for AI using Power BI Desktop and publishing to the cloud service.
-ms.reviewer: juliacawthra
-ms.author: alpowers
-author: itsnotaboutthecell
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -1,8 +1,8 @@
 ---
 title: 'Quickstart: Explore dashboards and reports in the mobile apps'
 description: Explore Power BI mobile dashboards and reports with this quickstart tutorial. Learn to view, interact with, and share the Retail Analysis Sample on iOS and Android devices. Get started now.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

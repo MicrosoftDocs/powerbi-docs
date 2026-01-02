@@ -1,8 +1,8 @@
 ---
 title: Explore Power BI Data in the Mobile App on Your Apple Watch
 description: Learn how to install and use the Power BI Apple Watch app to view and Power BI content on your watch.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

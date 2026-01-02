@@ -1,9 +1,9 @@
 ---
 title: Customize the Visualizations Pane in Power BI Desktop and the Power BI Service
 description: Learn how to personalize the Visualizations pane in Power BI by adding, removing, and managing visual types, including custom visuals from AppSource and organizational visuals.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals

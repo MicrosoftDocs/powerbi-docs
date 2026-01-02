@@ -1,9 +1,9 @@
 ---
 title: Get started formatting report visualizations
 description: Getting started using the formatting options with report visualizations
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: 'miguelmyers'
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

@@ -1,9 +1,9 @@
 ---
 title: Use report readers to change visuals
 description: Learn how to let report readers dynamically change the visuals in a report by using field parameters.
-author: jeroenterheerdt
-ms.author: jterh
-ms.reviewer: ''
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.custom: video-RE4Y8Jv
