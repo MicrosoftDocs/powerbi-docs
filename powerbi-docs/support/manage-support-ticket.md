@@ -1,15 +1,12 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main
-
 title: Manage support case
 description: How to manage Fabric and Power BI support tickets
-author:      royrubinstein # GitHub alias
-ms.author:   rrubinstein # Microsoft alias
+author: eric-urban
+ms.author: eur
+ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.topic: troubleshooting
-ms.date:     03/03/2025
+ms.date: 03/03/2025
 ---
 
 # Manage a support ticket in Fabric

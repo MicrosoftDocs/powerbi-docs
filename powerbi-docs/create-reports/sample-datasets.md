@@ -1,5 +1,5 @@
 ---
-title: What are Power BI samples
+title: What Are Power BI Samples
 description: Explore built-in samples, .pbix files, Excel datasets, and SQL databases in Power BI to learn its functionality and get started quickly.
 author: julcsc
 ms.author: juliacawthra
@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/11/2025
+ms.date: 12/01/2025
 LocalizationGroup: Samples
 ai-usage: ai-assisted
 #customer intent: As a Power BI customer I want to learn about built-in samples and apps in Power BI.
@@ -41,7 +41,13 @@ Some samples are available as Power BI *.pbix* files. The *.pbix* files are desi
 
 Each of the built-in samples is also available as an Excel workbook. The Excel workbooks are designed to be used as a data source in the Power BI service or Power BI Desktop. If you're an advanced Excel user, you can explore or edit the data models in the Power Pivot add-in to Excel.
 
-1. Select an **.xlsx** link from the table to download the sample file.
+To download an Excel sample file:
+
+1. In the [sample files table](#download-and-understand-power-bi-sample-files) later in this article, find the sample you want and select the **.xlsx** link to download the file directly.
+
+   > [!TIP]
+   > **Download not starting?** If the file doesn't download automatically when you select the link, try right-clicking the link and selecting **Save link as** or **Save target as**. For GitHub-hosted files, selecting the link takes you to the GitHub page—select the **Download raw file** button (down arrow icon) to download the file.
+
 1. You can use the files as data sources in Power BI Desktop, or Publish to Power BI from Excel to the Power BI service.
 1. In the Power BI service (`app.powerbi.com`), navigate to **My workspace** or to another workspace of your choice.
 1. In the upper-left corner of the workspace, select **Upload**, then select one of the sources.

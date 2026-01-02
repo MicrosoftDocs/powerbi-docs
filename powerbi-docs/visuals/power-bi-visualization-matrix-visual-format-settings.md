@@ -1,15 +1,16 @@
 ---
-title: Matrix visual format settings
+title: Matrix Visual Format Settings
 description: This document explains all available Format settings for matrix visuals in Power BI Desktop and Power BI Service.
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/18/2024
+ms.date: 12/01/2025
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for matrix visuals so that I can effectively and more easily format my matrix visuals in Power BI Desktop and Power BI Service.
+ai-usage: ai-assisted
 ---
 
 # Matrix visual format settings
@@ -189,7 +190,7 @@ This setting controls the title alignment, allowing you to choose between left, 
 ##### Banded row color
 
 This toggle, when enabled, extends the color settings from the Values section, and applies the same color format settings to the row headers in your matrix.
-[!INCLUDE [global-alignment-text-&-values](../includes/core-visuals/global-alignment-text-&-values.md)]
+[!INCLUDE [global-alignment-text-values](../includes/core-visuals/global-alignment-text-values.md)]
 [!INCLUDE [global-text-wrap](../includes/core-visuals/global-text-wrap.md)]
 
 #### +/- icons
@@ -214,8 +215,8 @@ Use this menu to set subtotal options for the entire column.
 
 #### Columns
 
-[!INCLUDE [column-&-row-subtotals-show-subtotal](../includes/core-visuals/column-&-row-subtotals-show-subtotal.md)]
-[!INCLUDE [column-&-row-subtotals-subtotal-label](../includes/core-visuals/column-&-row-subtotals-subtotal-label.md)]
+[!INCLUDE [column-row-subtotals-show-subtotal](../includes/core-visuals/column-row-subtotals-show-subtotal.md)]
+[!INCLUDE [column-row-subtotals-subtotal-label](../includes/core-visuals/column-row-subtotals-subtotal-label.md)]
 
 #### Values
 
@@ -239,8 +240,8 @@ Use this menu to set subtotal options for the entire row hierarchy.
 
 #### Rows
 
-[!INCLUDE [column-&-row-subtotals-show-subtotal](../includes/core-visuals/column-&-row-subtotals-show-subtotal.md)]
-[!INCLUDE [column-&-row-subtotals-subtotal-label](../includes/core-visuals/column-&-row-subtotals-subtotal-label.md)]
+[!INCLUDE [column-row-subtotals-show-subtotal](../includes/core-visuals/column-row-subtotals-show-subtotal.md)]
+[!INCLUDE [column-row-subtotals-subtotal-label](../includes/core-visuals/column-row-subtotals-subtotal-label.md)]
 ##### Position
 
 This setting allows you to specify the position of the Subtotal labels:
@@ -276,11 +277,11 @@ This setting allows you to specify the position of the Subtotal labels:
 
 #### Values
 
-If no grand total text color is explicitly defined, the subtotal text color is automatically inherited by the grand total.  
-* The grand total text color does **not** support an 'undefined' state.
+If no grand total text color is explicitly defined, the subtotal text color is automatically inherited by the grand total.
+- The grand total text color does **not** support an 'undefined' state.
 
-Similarly, if the grand total background color is not explicitly set, it will **inherit** the background color from the subtotal. 
-* Unlike text color, the grand total background color **does** support an 'undefined' option.
+Similarly, if the grand total background color is not explicitly set, it will **inherit** the background color from the subtotal.
+- Unlike text color, the grand total background color **does** support an 'undefined' option.
 
 > [!NOTE]
 > These color inheritance behaviors are currently under review and may change in future versions. Developers are strongly encouraged to **explicitly define** any grand total colors to avoid unintended styling
@@ -309,7 +310,7 @@ When turned on, this toggle applies formatting rules to the actual data values w
 
 [!INCLUDE [global-text-color](../includes/core-visuals/global-text-color.md)]
 [!INCLUDE [global-background-color](../includes/core-visuals/global-background-color.md)]
-[!INCLUDE [global-alignment-text-&-values](../includes/core-visuals/global-alignment-text-&-values.md)]
+[!INCLUDE [global-alignment-text-values](../includes/core-visuals/global-alignment-text-values.md)]
 ###### Display units
 ##### Display units
 

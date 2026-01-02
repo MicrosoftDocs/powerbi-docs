@@ -22,6 +22,16 @@ A Power BI *dashboard* is a single page, often called a canvas, that uses visual
 > [!TIP]
 > **Key takeaway:** Dashboards display visualizations from one or more reports on a single page. Unlike reports, dashboards don't support filtering or slicing, but they do support Q&A natural language queries and data alerts.
 
+## Key concepts for understanding dashboards
+
+Before exploring dashboards, here are some essential terms:
+
+- **Tile**: A single visualization (chart, number, image) displayed on a dashboard. Tiles are pinned from reports.
+- **Pin**: The action of adding a visualization from a report to a dashboard.
+- **Semantic model**: The underlying data that powers reports and dashboards.
+- **Report**: A multi-page collection of visualizations based on a single semantic model.
+- **Q&A**: A feature that lets you ask questions about your data in natural language.
+
 :::image type="content" source="media/end-user-dashboards/power-bi-full-dashboard.png" alt-text="Screenshot showing the Sales and Marketing Sample dashboard." lightbox="media/end-user-dashboards/power-bi-full-dashboard.png#lightbox":::
 
 The visualizations on the dashboard are called *tiles*. Report designers *pin* tiles to the dashboard. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, start with [Basics of the Power BI service](../fundamentals/service-basic-concepts.md) to get a good foundation. Hovering over an element on a dashboard displays a tooltip.
@@ -41,6 +51,28 @@ The visualizations on a dashboard come from reports, and each report is based on
 Dashboards are a great way to monitor your business, find answers, and see your most important metrics at a glance. The visualizations on a dashboard can come from one or more underlying semantic models or reports. A dashboard can combine on-premises and cloud data, which provides a consolidated view regardless of where the data lives.
 
 A dashboard isn't just a pretty picture, it's an interactive canvas. The tiles update as the underlying data changes.
+
+## Try it: Explore a sample dashboard
+
+The best way to understand dashboards is to explore one yourself. Power BI provides built-in samples you can use to follow along with this article.
+
+### Get the Sales and Marketing sample
+
+1. Open the Power BI service at [app.powerbi.com](https://app.powerbi.com) and sign in.
+1. In the navigation pane, select **Learn**.
+1. On the **Learning center** page, under **Sample reports**, find **Sales and Marketing Sample** and select it.
+1. Power BI installs the sample in your **My workspace**. Select the **Sales and Marketing Sample** dashboard to open it.
+
+### Explore the dashboard
+
+Now that you have the sample dashboard open, try these actions:
+
+- **View a tile's source**: Hover over a tile and select **More options (...)** > **Open report** to see the report page where the visualization was created.
+- **Ask a question**: At the top of the dashboard, select the Q&A box and type "total units this year" to see how Power BI answers with a visualization.
+- **See tile details**: Hover over any tile to see a tooltip with more information about the data.
+- **Resize your view**: Use the browser zoom controls to see how the dashboard adapts to different screen sizes.
+
+As you explore, notice how the dashboard brings together key metrics from multiple report pages onto a single canvas, making it easy to monitor business performance at a glance.
 
 ## Dashboards vs. reports for Power BI business users
 

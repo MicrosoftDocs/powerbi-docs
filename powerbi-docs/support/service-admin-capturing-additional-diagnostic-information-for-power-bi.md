@@ -1,9 +1,9 @@
 ---
 title: Capture Power BI Diagnostic Information
 description: Learn how to capture diagnostic information from Power BI service for Microsoft Support. Includes browser traces, HAR files, and console logs. Get step-by-step instructions to troubleshoot issues.
-author: julcsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: eric-urban
+ms.author: eur
+ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting

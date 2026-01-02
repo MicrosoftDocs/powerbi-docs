@@ -1,9 +1,9 @@
 ---
 title: Show Data Used to Create Power BI Visuals
 description: Learn how to display and export the underlying data used to create Power BI visualizations. Show data as tables and export to .csv files.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

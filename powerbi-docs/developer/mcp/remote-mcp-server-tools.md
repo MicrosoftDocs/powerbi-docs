@@ -1,9 +1,9 @@
 ---
 title: Remote Power BI MCP server tools
 description: Learn about the available tools in the remote Power BI MCP server for querying semantic models through AI agents.
-author: sgodderidge
-ms.author: sgodderidge
-ms.reviewer: ''
+author: billmath
+ms.author: billmath
+ms.reviewer: sgodderidge
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article

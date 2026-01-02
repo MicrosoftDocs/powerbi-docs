@@ -1,9 +1,9 @@
 ---
 title: Interact with Small Multiples in Power BI
 description: "Learn how to interact with small multiples in Power BI: select data points, scroll through categories, cross-highlight visuals, and sort multiple aspects. Start exploring trellising today."
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

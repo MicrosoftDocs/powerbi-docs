@@ -1,9 +1,9 @@
 ---
 title: Visualization types in Power BI
 description: Learn about all visualization types available in Power BI, including charts, maps, tables, and custom visuals to create effective reports and dashboards.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.search.form: Visualization types in Power BI

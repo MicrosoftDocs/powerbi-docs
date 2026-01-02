@@ -1,9 +1,9 @@
 ---
 title: TextInput formatting slice
 description: This article describes how to implement TextInput slice in custom visuals using the formatting model utils
-author: kullJul
-ms.author: v-ikulagina
-ms.reviewer: juliacawthra
+author: billmath
+ms.author: billmath
+ms.reviewer: mgolan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to

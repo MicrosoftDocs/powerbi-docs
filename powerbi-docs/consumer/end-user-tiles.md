@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Dashboard tiles in Power BI
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
@@ -22,6 +22,9 @@ Dashboard tiles are snapshots of your data that designers pin to dashboards in t
 :::image type="content" source="./media/end-user-tiles/power-bi-dashboards.png" alt-text="Screenshot of a Power BI dashboard with several tiles.":::
 
 In addition to tiles pinned from reports, designers can add standalone tiles directly to the dashboard using **Add tile**. Standalone tiles include text boxes, images, videos, streaming data, and web content.
+
+> [!NOTE]
+> The **Add tile** option is available only to users who have edit permissions for the dashboard. To add a tile: open the dashboard in edit mode, select **Edit** from the top menu, then select **Add a tile**. If you don't see this option, you might not have edit permissions for the dashboard, or you may need to switch to edit mode.
 
 Need help understanding the Power BI building blocks? See [Basics of the Power BI service](../fundamentals/service-basic-concepts.md).
 

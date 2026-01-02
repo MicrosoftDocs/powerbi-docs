@@ -1,8 +1,8 @@
 ---
 title: Shared Device Mode for the Power BI Mobile App
 description: Learn about running the Power BI mobile app in shared device mode to support your organization's frontline workers who use shared devices.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to

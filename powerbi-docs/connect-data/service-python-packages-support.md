@@ -1,9 +1,9 @@
 ---
 title: Learn which Python packages are supported
 description: Learn which Python packages are supported for Power BI visualizations. You can suggest support for a Python package.
-author: otarb
-ms.author: otarb
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: otarb 
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

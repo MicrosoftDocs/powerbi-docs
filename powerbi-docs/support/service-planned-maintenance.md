@@ -1,9 +1,9 @@
 ---
 title: Fabric and Power BI Planned Maintenance Guide
 description: Learn how Fabric and Power BI planned maintenance affects your organization. Find out what admins should do before, during, and after maintenance windows to minimize impact.
-author: julcsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: eric-urban
+ms.author: eur
+ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting

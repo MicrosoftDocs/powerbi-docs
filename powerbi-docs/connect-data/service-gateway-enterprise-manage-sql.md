@@ -1,9 +1,9 @@
 ---
 title: Manage a SQL Server data source
 description: Learn how to add and manage a SQL Server data source for an on-premises data gateway in Power BI.
-author: miquelladeboer
-ms.author: mideboer
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: mideboer
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

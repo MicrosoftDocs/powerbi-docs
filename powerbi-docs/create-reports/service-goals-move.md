@@ -1,14 +1,15 @@
 ---
-title: Arrange columns, goals, and scorecards
+title: Arrange Columns, Goals, and Scorecards
 description: Learn how to customize your Power BI scorecards to meet your teams' needs by arranging columns, goals, and scorecards effectively for your team.
-author: julcsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/10/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 #customer intent: As a Power BI user I want to learn how to customize Power BI scorecards.
 ---
 # Arrange columns, goals, and scorecards
@@ -21,7 +22,7 @@ In some scenarios, you can hide a column, or put the columns in a different orde
 - Decide which columns that your scorecard users see
 - Decide the order columns are in
 
-:::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
+:::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane." lightbox="media/service-goals-move/power-bi-goals-edit-columns.png":::
 
 ## Reorder the goals in a scorecard
 
@@ -29,18 +30,18 @@ To reorder goals on the scorecard, or make them subgoals:
 
 1. Select a goal and drag it up or down. Indent it slightly to make it a subgoal of another goal.
 
-  :::image type="content" source="media/service-goals-move/power-bi-move-metric.png" alt-text="Screenshot that shows moving a goal, and making it a subgoal.":::
+  :::image type="content" source="media/service-goals-move/power-bi-move-metric.png" alt-text="Screenshot that shows moving a goal, and making it a subgoal." lightbox="media/service-goals-move/power-bi-move-metric.png":::
 
 1. When you make it a subgoal, it takes the color of the goal it's under.
 
-  :::image type="content" source="media/service-goals-move/power-bi-moved-metric.png" alt-text="Screenshot that shows the moved subgoal.":::
+  :::image type="content" source="media/service-goals-move/power-bi-moved-metric.png" alt-text="Screenshot that shows the moved subgoal." lightbox="media/service-goals-move/power-bi-moved-metric.png":::
 
 ## Hide or move a column
 
 1. Open the scorecard in edit mode, and select the arrow icon next to the column you want to hide or move > **Column settings**.
 1. Select **Move right**, **Move left**, or **Hide this column**.
 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-move-columns.png" alt-text="Screenshot of Move or Hide columns.":::
+    :::image type="content" source="media/service-goals-move/power-bi-goals-move-columns.png" alt-text="Screenshot of Move or Hide columns." lightbox="media/service-goals-move/power-bi-goals-move-columns.png":::
 
 ## Show a hidden column
 
@@ -48,7 +49,7 @@ To reorder goals on the scorecard, or make them subgoals:
 1. Select **Show/Hide columns**.
 1. In **Edit view columns**, select **Reset to default** or select the column you want to view.
 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-edit-view-columns.png" alt-text="Screenshot of moving a column in the Edit view columns pane.":::
+    :::image type="content" source="media/service-goals-move/power-bi-goals-edit-view-columns.png" alt-text="Screenshot of moving a column in the Edit view columns pane." lightbox="media/service-goals-move/power-bi-goals-edit-view-columns.png":::
 
 1. You can also re-order columns in this view by dragging them up or down.
 1. Select **Apply**.
@@ -59,19 +60,19 @@ Many organizations have template scorecards that different departments or busine
 
 1. On the **File** menu, select **Move scorecard** or **Copy scorecard**.
 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-scorecard.png" alt-text="Screenshot of move and copy scorecard options in File menu.":::
+    :::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-scorecard.png" alt-text="Screenshot of move and copy scorecard options in File menu." lightbox="media/service-goals-move/power-bi-goals-move-copy-scorecard.png":::
 
-2. You see a dropdown list of workspaces you have access to. Select the workspace you’d like to move or copy the scorecard to > **Continue**.
+1. You see a dropdown list of workspaces you have access to. Select the workspace you'd like to move or copy the scorecard to > **Continue**.
 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-move-scorecard.png" alt-text="Screenshot of move scorecard dialog.":::
+    :::image type="content" source="media/service-goals-move/power-bi-goals-move-scorecard.png" alt-text="Screenshot of move scorecard dialog." lightbox="media/service-goals-move/power-bi-goals-move-scorecard.png":::
 
     When you copy a scorecard, you can include or exclude check-in history. So you can reuse the same scorecard for a newer time period (for example, for fiscal year scorecards) so you don't have to do it all over again.
 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-copy-scorecard.png" alt-text="Screenshot of copy the scorecard dialog.":::
+    :::image type="content" source="media/service-goals-move/power-bi-goals-copy-scorecard.png" alt-text="Screenshot of copy the scorecard dialog." lightbox="media/service-goals-move/power-bi-goals-copy-scorecard.png":::
 
  You get a notice when the move or copy operation is complete. It can take a few seconds. Select **Open Scorecard** to open the scorecard in the selected workspace.
 
-:::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-toast.png" alt-text="Screenshot of notice on completion of move and copy scorecard.":::
+:::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-toast.png" alt-text="Screenshot of notice on completion of move and copy scorecard." lightbox="media/service-goals-move/power-bi-goals-move-copy-toast.png":::
 
 ## Related content
 

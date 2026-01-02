@@ -1,9 +1,9 @@
 ---
 title: Use Copilot with semantic models
 description: Discover how to use Copilot in Power BI to enhance data analytics, streamline semantic model development, and improve report consumption experiences.
-author: denglishbi
-ms.author: daengli
-ms.reviewer: sngun
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: daengli
 ms.service: powerbi
 ms.topic: concept-article
 ms.date: 04/15/2025

@@ -1,8 +1,8 @@
 ---
 title: Move Your Power BI Tenant to a Different Region
 description: Learn how to move your Power BI tenant between regions with Microsoft support. Follow step-by-step guidance to migrate your data location.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: hfeng
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting

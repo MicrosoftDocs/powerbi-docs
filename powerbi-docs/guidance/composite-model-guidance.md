@@ -1,9 +1,9 @@
 ---
 title: "Composite model guidance in Power BI Desktop"
 description: "Guidance for developing Power BI composite models."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

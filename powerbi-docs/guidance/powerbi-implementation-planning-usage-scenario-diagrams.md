@@ -1,9 +1,9 @@
 ---
 title: "Power BI usage scenario diagrams"
 description: "Download the Power BI implementation planning usage scenario diagrams."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

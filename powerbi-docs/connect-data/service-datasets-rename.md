@@ -1,9 +1,9 @@
 ---
 title: "New name for Power BI datasets"
 description: "Microsoft has renamed the Power BI dataset content type to semantic model."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article

@@ -1,9 +1,9 @@
 ---
 title: "Power BI implementation planning: Tenant-level monitoring"
 description: "Learn about tenant-level monitoring planning for Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

@@ -1,9 +1,9 @@
 ---
 title: Customize Power BI Visualization Titles
 description: "Learn how to customize Power BI visualization titles, backgrounds, labels, and legends. Follow step-by-step instructions to format your reports. Start customizing today."
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 featuredvideoid: removed
 ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started, sample-retailanalysissample
 ms.service: powerbi

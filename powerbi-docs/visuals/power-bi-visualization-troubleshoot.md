@@ -1,16 +1,17 @@
 ---
-title: Troubleshoot visualizations in Power BI
+title: Troubleshoot Visualizations in Power BI
 description: Troubleshoot visualizations in Power BI, including common problems and workarounds to overcome known obstacles or potential problems.
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: concept-article
-ms.date: 10/10/2024
+ms.date: 12/01/2025
 ms.custom: TSG - Troubleshooting Guide
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to be aware of the various considerations, limitations, and workarounds to overcome known obstacles or potential problems with Power BI visualizations, so that I can effectively and easily identify solutions in both Power BI Desktop and the Power BI service.
+ai-usage: ai-assisted
 ---
 # Troubleshoot visualizations in Power BI
 
@@ -191,6 +192,5 @@ Likewise, Power BI mobile apps display only if the image URL is anonymously acce
 ## Related content
 
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-- [Add visuals to a Power BI report (part 1)](power-bi-report-add-visualizations-i.md)
-- [Add visuals to a Power BI report (part 2)](power-bi-report-add-visualizations-ii.md)
+- [Add visuals to a Power BI report](power-bi-report-add-visualizations.md)
 - [Get started formatting report visualizations](service-getting-started-with-color-formatting-and-axis-properties.md)

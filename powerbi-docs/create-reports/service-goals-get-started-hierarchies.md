@@ -1,16 +1,17 @@
 ---
-title: Get started with hierarchies in Power BI Scorecards
+title: Get Started with Hierarchies in Power BI Scorecards
 description: You can set up a hierarchy for a scorecard and map the Power BI semantic models referenced by your metrics to the hierarchy levels and owner fields, automatically creating a new scorecard view for each slice of your data.
-author: julcsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with hierarchies in scorecards
 ms.topic: how-to
-ms.date: 11/30/2024
+ms.date: 12/01/2025
 ms.custom: intro-get-started
+ai-usage: ai-assisted
 #customer intent: As a Power BI user I want to learn about how to get started with hierarchies in Power BI.
 ---
 
@@ -45,11 +46,11 @@ In this image, the filter is open exposing the hierarchy slicer and filters appl
 
  In scorecard edit mode, select **Set up a hierarchy** from the **New** menu.
 
-:::image type="content" source="media/service-goals-get-started-hierarchies/new-set-up-hierarchy.png" alt-text="Screenshot of New hierarchy on the New menu.":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/new-set-up-hierarchy.png" alt-text="Screenshot of New hierarchy on the New menu." lightbox="media/service-goals-get-started-hierarchies/new-set-up-hierarchy.png":::
 
 You can also select **Manage hierarchies** from the **All** slicer.
 
-:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-entry-point-1.png" alt-text="Screenshot of First entry point in hierarchy slicer.":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-entry-point-1.png" alt-text="Screenshot of First entry point in hierarchy slicer." lightbox="media/service-goals-get-started-hierarchies/hierarchies-entry-point-1.png":::
 
 ### Map hierarchy levels to data
 
@@ -57,25 +58,25 @@ Start setting up your hierarchy by giving it a name, building the levels, and ma
 
 In the setup experience, you see all the semantic models that are connected to metrics in the scorecard.
 
-:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-map-datasets.png" alt-text="Screenshot of UI showing how users can name hierarchy levels.":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-map-datasets.png" alt-text="Screenshot of UI showing how users can name hierarchy levels." lightbox="media/service-goals-get-started-hierarchies/hierarchies-map-datasets.png":::
 
 Map the data in your underlying semantic models to your hierarchy levels. If there are fields you don’t want to bring into the mapping, you can deselect them using the checkboxes in the fields list.  
 
-:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-map-datasets-2.png" alt-text="Screenshot of UI showing how users can map hierarchy levels to connected semantic models.":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-map-datasets-2.png" alt-text="Screenshot of UI showing how users can map hierarchy levels to connected semantic models." lightbox="media/service-goals-get-started-hierarchies/hierarchies-map-datasets-2.png":::
 
 As you map your semantic models to the corresponding data in each hierarchy level, you see a preview on the right-hand pane to double check you’re on the right track.
 
-:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-preview.png" alt-text="Screenshot of the hierarchy preview pane showing the hierarchy tree.":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-preview.png" alt-text="Screenshot of the hierarchy preview pane showing the hierarchy tree." lightbox="media/service-goals-get-started-hierarchies/hierarchies-preview.png":::
 
 There's also an option in the upper right to view related metrics, showing an overview of the metrics on your scorecard, which values are connected to data, and which semantic model they come from.
 
-:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-related-metrics.png" alt-text="Screenshot of the hierarchy related metrics pane showing the connected metrics from the scorecard.":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-related-metrics.png" alt-text="Screenshot of the hierarchy related metrics pane showing the connected metrics from the scorecard." lightbox="media/service-goals-get-started-hierarchies/hierarchies-related-metrics.png":::
 
 ### Map owners
 
 You can map owners in the **assign owners** section so the owner column dynamically changes with each slice of the data. Owners are mapped per hierarchy, so for an owner mapping to work correctly, there needs to be a relationship between the owner field and the hierarchy data in the underlying semantic models. Owner mappings apply per hierarchy level, not per metric.
 
-:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-map-owner.png" alt-text="Screenshot of the UI showing how you can assign owners from data.":::
+:::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-map-owner.png" alt-text="Screenshot of the UI showing how you can assign owners from data." lightbox="media/service-goals-get-started-hierarchies/hierarchies-map-owner.png":::
 
 Save your hierarchy and watch as all the connected values and owners dynamically change. Hierarchies support manual goals (goals not connected to data) as well – manual goals show up on child scorecards but show the manual values as blank. These goals can be checked-in and updated on the child scorecard views.
 
