@@ -192,5 +192,5 @@ Likewise, Power BI mobile apps display only if the image URL is anonymously acce
 ## Related content
 
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-- [Add visuals to a Power BI report](power-bi-report-add-visualizations-i.md)
+- [Add visuals to a Power BI report](power-bi-report-add-visualizations.md)
 - [Get started formatting report visualizations](service-getting-started-with-color-formatting-and-axis-properties.md)

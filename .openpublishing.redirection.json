@@ -976,19 +976,19 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "powerbi-docs/power-bi-report-add-visualizations-i.md",
-      "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations-i",
-      "redirect_document_id": true
+      "source_path": "powerbi-docs/power-bi-report-add-visualizations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/power-bi-report-add-visualizations-ii.md",
-      "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations-i",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/visuals/power-bi-report-add-visualizations-ii.md",
-      "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations-i",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/power-bi-report-change-visualization-type.md",

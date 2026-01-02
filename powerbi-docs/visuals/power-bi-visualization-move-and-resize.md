@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 Report designers and owners can move and resize visualizations. If you're working in the Power BI service (app.powerbi.com), you'll need to open the report in [Editing view](../create-reports/service-interact-with-a-report-in-editing-view.md).
 
 ## Open the report
-In Power BI Desktop, open a report with at least one visualization, or [create a new visualization](power-bi-report-add-visualizations-i.md).
+In Power BI Desktop, open a report with at least one visualization, or [create a new visualization](power-bi-report-add-visualizations.md).
 
 ## Move the visualization
 
