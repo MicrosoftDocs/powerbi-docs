@@ -1,9 +1,9 @@
 ---
 title: "Monitor report performance in Power BI"
 description: "Guidance on how to monitor report performance in Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

@@ -1,8 +1,8 @@
 ---
 title: Scan Barcode from the Power BI Mobile App
 description: Learn how to scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

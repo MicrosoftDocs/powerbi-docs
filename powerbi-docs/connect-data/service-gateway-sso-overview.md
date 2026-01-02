@@ -1,9 +1,9 @@
 ---
 title: Overview of single sign-on for on-premises data gateways
 description: Learn how to configure your gateway to enable single sign-on from Power BI to on-premises data sources.
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

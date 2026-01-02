@@ -1,9 +1,9 @@
 ---
 title: Sharing reports with a Power BI colleague
 description: Prerequisite - Sharing reports with a Power BI colleague
-ms.reviewer: juliacawthra
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include

@@ -1,9 +1,9 @@
 ---
 title: Matrix visual format settings
 description: This document explains all available Format settings for matrix visuals in Power BI Desktop and Power BI Service.
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

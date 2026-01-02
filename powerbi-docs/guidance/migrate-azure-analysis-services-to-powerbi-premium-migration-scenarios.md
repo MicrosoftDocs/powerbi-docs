@@ -1,9 +1,9 @@
 ---
 title: "Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios"
 description: "Scenario-based guidance to help you determine the right type and number of Power BI Premium licenses when migrating from Azure Analysis Services."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

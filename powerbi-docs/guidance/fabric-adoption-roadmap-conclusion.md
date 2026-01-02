@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Fabric adoption roadmap conclusion"
 description: "The conclusion and extra resources of the Microsoft Fabric adoption roadmap series of articles."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
 ms.topic: concept-article
 ms.custom: fabric-cat

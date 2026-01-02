@@ -1,9 +1,9 @@
 ---
 title: 'Org apps in the Power BI mobile apps'
 description: This article explains how to work with org apps in the mobile app.
-author: mayabendov
-ms.author: mayabendov
-ms.reviewer: ''
+author: dknappettmsft 
+ms.author: daknappe 
+ms.reviewer: mayabendov
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart

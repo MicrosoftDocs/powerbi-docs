@@ -1,9 +1,9 @@
 ---
 title: Apply to labels
 description: Setting - Apply to labels (global use)
-ms.reviewer: juliacawthra
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include

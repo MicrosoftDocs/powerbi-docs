@@ -1,8 +1,8 @@
 ---
 title: Metrics in the Power BI Mobile Apps
 description: This article explains how to work with scorecards and metrics in the mobile app.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

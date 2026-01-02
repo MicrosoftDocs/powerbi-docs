@@ -1,9 +1,9 @@
 ---
 title: "Show Value as: Display Percentages in Visuals"
 description: "Learn how to display data as percentages in Power BI visuals using Show value as. Transform raw values into percent of grand total, row total, or column total. Improve your reports today."
-author: jeroenterheerdt 
-ms.author: jterh
-ms.reviewer: juliacawthra
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

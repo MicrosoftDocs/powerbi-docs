@@ -1,9 +1,9 @@
 ---
 title: Try a Real-Time Intelligence sample
 description: Describes the entry point from Power BI to the Real-Time Intelligence sample experience.
-author: YaelSchuster
-ms.author: yaschust
-ms.reviewer: tzgitlin
+author: kgremban
+ms.author: kgremban
+ms.reviewer: yaschust
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

@@ -1,9 +1,9 @@
 ---
 title: "Power BI implementation planning: Subscriptions, licenses, and trials"
 description: "This article helps you to plan for subscriptions, licenses, and trials for Power BI and Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

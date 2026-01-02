@@ -1,9 +1,9 @@
 ---
 title: "One-to-one relationship guidance"
 description: "Guidance for understanding, developing, and working with one-to-one model relationships in Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

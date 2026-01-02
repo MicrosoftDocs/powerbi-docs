@@ -1,9 +1,9 @@
 ---
 title: Troubleshoot custom visuals in Power BI Desktop for Power BI Report Server
 description: This article discusses resources available to troubleshoot issues with custom visuals in Power BI Desktop for Power BI Report Server.
-author: jeroenterheerdt
-ms.author: jterh
-ms.reviewer: juliacawthra
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: troubleshooting

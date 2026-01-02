@@ -1,9 +1,9 @@
 ---
 title: On-premises Data Gateway In-depth
 description: Use these resources about how the Power BI service works with Microsoft Entra ID and your local Active Directory when working with Analysis Services. 
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

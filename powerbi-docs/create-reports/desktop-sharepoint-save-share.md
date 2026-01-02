@@ -1,9 +1,9 @@
 ---
 title: Power BI Desktop OneDrive and SharePoint integration
 description: Learn how to open, save, and share Power BI files to OneDrive, and SharePoint, including collaboration and versioning features.
-author: lafaberMSFT
-ms.author: lafaber
-ms.reviewer: ''
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: lafaber
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article

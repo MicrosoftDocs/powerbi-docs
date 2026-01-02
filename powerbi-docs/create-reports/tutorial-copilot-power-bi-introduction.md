@@ -1,9 +1,9 @@
 ---
 title: Copilot in Power BI tutorial introduction
 description: This article provides an overview of Copilot in Power BI and the integrations involved in an end-to-end scenario for the tutorial.
-ms.reviewer: juliacawthra
-ms.author: alpowers
-author: itsnotaboutthecell
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -1,9 +1,9 @@
 ---
 title: "Troubleshoot report performance in Power BI"
 description: "Troubleshooting guide to diagnose slow report performance in Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: troubleshooting

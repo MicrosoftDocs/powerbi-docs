@@ -1,8 +1,9 @@
 ---
 title: What are the Power BI MCP servers?
 description: Learn about the Power BI Model Context Protocol (MCP) servers and how they enable AI assistants to interact with Power BI.
-author: sgodderidge
-ms.author: sgodderidge
+author: billmath
+ms.author: billmath
+ms.reviewer: sgodderidge
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

@@ -1,9 +1,9 @@
 ---
 title: Copilot in Power BI integration
 description: Discover how Copilot in Power BI enhances data analytics by assisting with report creation and enabling data exploration.
-author: denglishbi
-ms.author: daengli
-ms.reviewer: sngun
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: daengli
 ms.service: powerbi
 ms.topic: concept-article
 ms.date: 04/15/2025
