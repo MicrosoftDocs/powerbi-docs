@@ -1,5 +1,5 @@
 ---
-title: Apply data point limits and strategies by visual type
+title: Apply Data Point Limits and Strategies by Visual Type
 description: Power BI strategies used to render visualizations include data reduction, dynamic limits, and data limits for visuals.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,8 +7,9 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 03/26/2024
+ms.date: 12/01/2025
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 
 # Apply data point limits and strategies by visual type
@@ -27,13 +28,13 @@ Each visual controls the parameters on those strategies to influence the overall
 
 For each strategy, there are defaults based on the shape and type of visualized data. To provide the right user experience, you can override defaults in the Power BI Formatting pane.
 
-* **Data Windowing** (Segmentation): Allow users to scroll through the data in a visual by progressively loading fragments of the overall semantic model.
-* **TopN**: Show only the first N items.
-* **Simple Sample**: Show the first, last, and N evenly distributed items in between.
-* **BottomN**: Show only the last N items. Useful for monitoring frequently updated data.
-* **High-density sampling**: An improved sampling algorithm that better respects outliers and/or the shape of a curve.
-  * **Binned line sampling**: Sample data points based on outliers in bins across an axis.
-  * **Overlapping points sampling**: Sample data points based on overlapping values to preserve outliers.
+- **Data Windowing** (Segmentation): Allow users to scroll through the data in a visual by progressively loading fragments of the overall semantic model.
+- **TopN**: Show only the first N items.
+- **Simple Sample**: Show the first, last, and N evenly distributed items in between.
+- **BottomN**: Show only the last N items. Useful for monitoring frequently updated data.
+- **High-density sampling**: An improved sampling algorithm that better respects outliers and/or the shape of a curve.
+  - **Binned line sampling**: Sample data points based on outliers in bins across an axis.
+  - **Overlapping points sampling**: Sample data points based on overlapping values to preserve outliers.
 
 ## Statistics
 
@@ -51,9 +52,9 @@ This also means that dynamic limits are responsive if only one of the grouping c
 
 Dynamic limits are automatically applied when the server is capable:
 
-* In Power BI Desktop, with On-premises SSAS version 2016 or higher, [using the SuperDax capabilities of the server](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3).
-* In Desktop and Power BI service, when using an imported model, Direct Query, live connect to the service or live connect to AS PaaS.
-* In the Power BI service, when connecting through an on-premises gateway to on-premises SSAS version 2016 or higher, [using the SuperDax capabilities of the server](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3).
+- In Power BI Desktop, with On-premises SSAS version 2016 or higher, [using the SuperDax capabilities of the server](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3).
+- In Desktop and Power BI service, when using an imported model, Direct Query, live connect to the service or live connect to AS PaaS.
+- In the Power BI service, when connecting through an on-premises gateway to on-premises SSAS version 2016 or higher, [using the SuperDax capabilities of the server](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3).
 
 ## Strategies and data point limits by visual type
 
@@ -65,17 +66,17 @@ For more information about area chart visuals, see [How the new line sampling al
 
 ### Bar or column chart
 
-* In categorical mode:
-  * Categories: Virtualization by using Window of 500 rows at a time
-  * Series: Top 60
-* In scalar mode (could use dynamic limits):
-  * Max points: 10,000
-  * Categories: Sample of 500 values
-  * Series: Top 20 values
+- In categorical mode:
+  - Categories: Virtualization by using Window of 500 rows at a time
+  - Series: Top 60
+- In scalar mode (could use dynamic limits):
+  - Max points: 10,000
+  - Categories: Sample of 500 values
+  - Series: Top 20 values
 
 ### Card (multirow)
 
-* Values: Virtualization by using Window of 200 rows at a time.
+- Values: Virtualization by using Window of 200 rows at a time.
 
 ### Combo chart
 
@@ -87,31 +88,31 @@ Power BI visuals can get up to 30,000 data points, but it's up to the visual aut
 
 ### Donut chart
 
-* Max points: 3,500
-* Legend only:
-  * Legend: Top 1000
-* Legend and details:
-  * Legend: Top 500
-  * Details: Top 20
+- Max points: 3,500
+- Legend only:
+  - Legend: Top 1000
+- Legend and details:
+  - Legend: Top 500
+  - Details: Top 20
 
 ### Filled map choropleth
 
 The filled map can use statistics or dynamic limits. Power BI tries to use reduction in the following order: dynamic limits, statistics, and configuration.
 
-* Max points: 3,500
-* Categories: Top 500
-* Series (when both X and Y are present): Top 20
+- Max points: 3,500
+- Categories: Top 500
+- Series (when both X and Y are present): Top 20
 
 ### Funnel chart
 
-* Max points: 3,500
-* Categories: Top 3,500
+- Max points: 3,500
+- Categories: Top 3,500
 
 ### KPI
 
 Trend axis limits:
 
-* Bottom 3,500
+- Bottom 3,500
 
 ### Line chart
 
@@ -123,31 +124,31 @@ For more information, see [High-density line sampling in Power BI](../create-rep
 
 ### Map
 
-* Max points: 3,500
+- Max points: 3,500
 
 Depending on the configuration, a map can have:
 
-* Location: Top 3,500
-* Location, Size: Top 3,500
-* Location, latitude, and longitude aggregates (+/-Size): Top 3,500
-* Latitude, longitude: For more information, see [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md)
-* Latitude, longitude, Size: Top 3,500
-* Legend, latitude, longitude: For more information, see [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md)
-* Legend, latitude, longitude, Size: Top 233 legends, Top 15 latitude, and longitude (could use statistics or dynamic limits)
-* Location, legend, latitude, and longitude as aggregates (+/-Size): Top 233 locations, Top 15 legends (could use statistics or dynamic limits)
+- Location: Top 3,500
+- Location, Size: Top 3,500
+- Location, latitude, and longitude aggregates (+/-Size): Top 3,500
+- Latitude, longitude: For more information, see [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md)
+- Latitude, longitude, Size: Top 3,500
+- Legend, latitude, longitude: For more information, see [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md)
+- Legend, latitude, longitude, Size: Top 233 legends, Top 15 latitude, and longitude (could use statistics or dynamic limits)
+- Location, legend, latitude, and longitude as aggregates (+/-Size): Top 233 locations, Top 15 legends (could use statistics or dynamic limits)
 
 ### Maps: Azure Maps
 
-* Latitude, longitude: 30,000
-* Location: 30,000
+- Latitude, longitude: 30,000
+- Location: 30,000
 
 For more information, see [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md).
 
 ### Matrix
 
-* Rows: Virtualization by using Window of 500 rows at a time
-* Columns: Top 100 grouping columns
-* Values: Multiple values don't count against the data reduction
+- Rows: Virtualization by using Window of 500 rows at a time
+- Columns: Top 100 grouping columns
+- Values: Multiple values don't count against the data reduction
 
 ### PowerApps visuals
 
@@ -159,7 +160,7 @@ No reduction strategy.
 
 ### Slicer
 
-* Values: Virtualization by using Window of 200 rows at a time.
+- Values: Virtualization by using Window of 200 rows at a time.
 
 ### Scatter chart (high density)
 
@@ -169,12 +170,12 @@ For more information, see [High-density sampling in Power BI scatter charts](../
 
 ### Pie chart
 
-* Max points: 3,500
-* Legend only:
-  * Legend: Top 1000
-* Legend and details:
-  * Legend: Top 500
-  * Details: Top 20
+- Max points: 3,500
+- Legend only:
+  - Legend: Top 1000
+- Legend and details:
+  - Legend: Top 500
+  - Details: Top 20
 
 ### R & Python visuals
 
@@ -182,42 +183,42 @@ R & Python visuals are limited to 150,000 rows. If you select more than 150,000 
 
 ### Ribbon chart
 
-* In categorical mode:
-  * Categories: Virtualization (data windowing) by using Window of 500 rows at a time
-  * Series: Top 60
-* In scalar mode (could use dynamic limits):
-  * Max points: 10,000
-  * Categories: Sample of 500 values
-  * Series: Top 20 values
+- In categorical mode:
+  - Categories: Virtualization (data windowing) by using Window of 500 rows at a time
+  - Series: Top 60
+- In scalar mode (could use dynamic limits):
+  - Max points: 10,000
+  - Categories: Sample of 500 values
+  - Series: Top 20 values
 
 ### Shape map (Preview)
 
 The shape map can use statistics or dynamic limits.
 
-* Max points: 1,500
-* Categories: Top 500
+- Max points: 1,500
+- Categories: Top 500
 
 ### Table
 
-* Values: Virtualization (data windowing) by using Window of 500 rows at a time.
-* Max columns: 150
+- Values: Virtualization (data windowing) by using Window of 500 rows at a time.
+- Max columns: 150
 
 
 ### Tree map (could use statistics or dynamic limits)
 
-* Max points: 3,500
-* Group: Top 500
-* Details: Top 20
+- Max points: 3,500
+- Group: Top 500
+- Details: Top 20
 
 ### Waterfall chart
 
-* Category bucket (only):
-  * Max points: 3,500
-  * Category only - top 3,500
-* Both category and breakdown are present:
-  * Category: Virtualization (data windowing) by using Window of 30 rows at a time
-  * Breakdown - Top 200 values
+- Category bucket (only):
+  - Max points: 3,500
+  - Category only - top 3,500
+- Both category and breakdown are present:
+  - Category: Virtualization (data windowing) by using Window of 30 rows at a time
+  - Breakdown - Top 200 values
 
 ## Related content
 
-* [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)

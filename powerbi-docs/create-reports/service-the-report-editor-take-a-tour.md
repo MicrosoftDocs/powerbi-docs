@@ -97,7 +97,7 @@ You can download custom visualizations to Power BI Desktop. Their icons show up 
 
 The buckets, sometimes called *wells*, in this pane vary depending on the type of visualization you select. For example, if you select a bar chart, you see **Axis**, **Legend**, and **Values**. When you select a field or drag it onto the canvas, Power BI adds that field to one of the buckets. You can also drag fields from the Fields list directly into the buckets. Some buckets are limited to certain types of data. For example, **Values** don't accept non-numeric fields. Therefore, if you drag a **Category** field into the **Values** bucket, Power BI changes it to **Count of Category**.
 
-For more information, see [Add visuals to a Power BI report](../visuals/power-bi-report-add-visualizations-i.md).
+For more information, see [Add visuals to a Power BI report](../visuals/power-bi-report-add-visualizations.md).
 
 This part of the pane also has options to control [drillthrough](desktop-drillthrough.md) and filter behavior.
 

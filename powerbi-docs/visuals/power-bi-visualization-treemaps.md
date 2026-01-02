@@ -7,9 +7,10 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/25/2023
+ms.date: 12/01/2025
 ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 
 # Treemaps in Power BI
@@ -59,7 +60,7 @@ Treemaps are a great choice for many scenarios:
 - Identify patterns, outliers, most-important contributors, and exceptions.
 
 > [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+> If you want to share your report with a colleague, you both need to have individual Power BI Pro or Premium Per User (PPU) licenses. If both parties don't have individual paid licenses, the report needs to be saved in Premium capacity or Fabric F64 or greater capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Get the sample
 

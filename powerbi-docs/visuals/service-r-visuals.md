@@ -1,5 +1,5 @@
 ---
-title: Create advanced analytics and visualizations using R scripts
+title: Create Advanced Analytics and Visualizations Using R Scripts
 description: Use R scripts in Power BI Desktop to create advanced analytics and advanced visualizations.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,15 +7,16 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/20/2024
+ms.date: 12/01/2025
 ms.custom: sample-RVisual
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 # Create and use R visuals in Power BI
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R ](../create-reports/desktop-r-visuals.md).
+R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R](../create-reports/desktop-r-visuals.md).
 
 ## Viewing R visuals in the Power BI service
 
@@ -62,7 +63,7 @@ As another example, the following image shows the error message that appears whe
 
 ## Licensing
 
-R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. Users of free Power BI can consume only reports that are shared with them in Premium workspaces. 
+R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. Users with a Microsoft Fabric (Free) license can consume reports shared with them only when those reports are in Premium capacity or Fabric F64 or greater capacity workspaces.
 
 The following table describes R visuals capabilities based on licensing.
 
@@ -73,7 +74,7 @@ The following table describes R visuals capabilities based on licensing.
 |**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported* for Fabric/Premium workspaces|
 |**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported*    |
 
-Note: (*) Python visuals in the service are supported in Fabric regions. This means that reports published to workspaces will display the Python chart visual when the workspace has (1) a Fabric license, (2) a Pro or PPU license, or (3) a premium license and the PBI home tenant is in a region with [Fabric Spark workload availability](/fabric/admin/region-availability). Python visuals are supported in Desktop for all users.  
+\* *R visuals in the service are supported in Fabric regions. This means that reports published to workspaces will display the R chart visual when the workspace has a Fabric license, a Pro or PPU license, or a premium license and the PBI home tenant is in a region with [Fabric Spark workload availability](/fabric/admin/region-availability). R visuals are supported in Desktop for all users.*  
   
 For more information about Power BI Pro licenses and how they differ from free licenses, see [Purchase and assign Power BI Pro user licenses](/fabric/enterprise/powerbi/service-admin-purchasing-power-bi-pro).
 
@@ -89,52 +90,48 @@ R visuals in the **Power BI service** are supported by the packages found in the
 
 There are a handful of requirements and limitations for R packages:
 
-* The Power BI service supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
-* The Power BI service supports packages published in CRAN. The service doesn't support private or custom R packages. We encourage users to make their private packages available on CRAN before requesting the package be available in the Power BI service.
-* For **Power BI Desktop** has two variations for R packages:
-  
-  * For R visuals, you can install any package, including custom R packages.
-  * For Custom R visuals, only public CRAN packages are supported for autoinstallation of the packages.
-* For security and privacy reasons, we currently don't support R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service. Networking is blocked for such attempts. For more information, see [R packages in the Power BI service](../connect-data/service-r-packages-support.md) for a list of supported and unsupported R packages.
-* The approval process for including a new R package has a tree of dependencies; some dependencies required to be installed in the service can't be supported.
+- The Power BI service supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
+- The Power BI service supports packages published in CRAN. The service doesn't support private or custom R packages. We encourage users to make their private packages available on CRAN before requesting the package be available in the Power BI service.
+- For **Power BI Desktop** has two variations for R packages:
+  - For R visuals, you can install any package, including custom R packages.
+  - For Custom R visuals, only public CRAN packages are supported for autoinstallation of the packages.
+- For security and privacy reasons, we currently don't support R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service. Networking is blocked for such attempts. For more information, see [R packages in the Power BI service](../connect-data/service-r-packages-support.md) for a list of supported and unsupported R packages.
+- The approval process for including a new R package has a tree of dependencies; some dependencies required to be installed in the service can't be supported.
 
-### Supported Packages:
+### Supported packages
 
 For a long list of supported R packages (and the short list of unsupported packages), see the following article:
 
-* [R packages in the Power BI service](../connect-data/service-r-packages-support.md)
+- [R packages in the Power BI service](../connect-data/service-r-packages-support.md)
 
 ## Considerations and limitations
 
-* R visuals support is limited to the packages identified [in Learn which R packages are supported](../connect-data/service-r-packages-support.md). There currently is no support for custom packages.
-* Data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image. Additionally, the input data has a limit of 250 MB.
-* If the input semantic model of an R Visual has a column that contains a string value longer than 32766 characters, that value is truncated.
-* All R visuals are displayed at 72 dots per inch.
-* Only plotting to the default device is supported. 
-* If an R visual calculation exceeds 60 seconds, the script times out and displays an error.
-* R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and doesn't support tool tips.
-* R visuals respond to highlighting other visuals, but you can't select elements in the R visual in order to cross filter other visuals.
-* R visuals are currently not supported for the *Time* data type. Use Date/Time instead.
-* R visuals don't display when using **Publish to web**.
-* R visuals don't support renaming input columns. During script execution, columns will be referred to by their original name.
-* R visuals don't print with reports printing.
-* R visuals aren't supported in the DirectQuery mode of Analysis Services.
-* R visuals have the ability to convert text labels into graphical elements. Doing so in the Power BI service requires the following extra step:
-  
-  * Add the following line at the beginning of the R script:
+- R visuals support is limited to the packages identified [in Learn which R packages are supported](../connect-data/service-r-packages-support.md). There currently is no support for custom packages.
+- Data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image. Additionally, the input data has a limit of 250 MB.
+- If the input semantic model of an R Visual has a column that contains a string value longer than 32766 characters, that value is truncated.
+- All R visuals are displayed at 72 dots per inch.
+- Only plotting to the default device is supported.
+- If an R visual calculation exceeds 60 seconds, the script times out and displays an error.
+- R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and doesn't support tool tips.
+- R visuals respond to highlighting other visuals, but you can't select elements in the R visual in order to cross filter other visuals.
+- R visuals are currently not supported for the *Time* data type. Use Date/Time instead.
+- R visuals don't display when using **Publish to web**.
+- R visuals don't support renaming input columns. During script execution, columns will be referred to by their original name.
+- R visuals don't print with reports printing.
+- R visuals aren't supported in the DirectQuery mode of Analysis Services.
+- R visuals have the ability to convert text labels into graphical elements. Doing so in the Power BI service requires the following extra step:
+  - Add the following line at the beginning of the R script:
 
      ```powerbi_rEnableShowText =  1```
 
-* Chinese, Japanese, and Korean fonts require all of the following steps to work properly in the Power BI service:
+- Chinese, Japanese, and Korean fonts require all of the following steps to work properly in the Power BI service:
 
   1. Install the R package *showtext* and all of its dependencies. You can install it by running the following script:
 
      ```install.packages("showtext")```
 
   1. Add the following line at the beginning of the R script:
-    
+
     ```R script
       powerbi_rEnableShowTextForCJKLanguages =  1
     ```
-
-
