@@ -87,7 +87,7 @@ Now, when you change the field parameter from Category to Class, what happens de
 
 |Persist hierarchy level setting **on**|Persist hierarchy level setting **off**|
 |---|---|
-|:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are still expanded after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png":::|:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are collapsed after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png":::| 
+|:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are still expanded after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png":::|:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are collapsed after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png":::|
 
 ## Limitations
 
