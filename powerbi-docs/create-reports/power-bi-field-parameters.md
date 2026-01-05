@@ -86,6 +86,7 @@ To illustrate the difference, consider a matrix showing a field parameter called
 Now, when you change the field parameter from Category to Class, what happens depends on the Persist hierarchy level setting. If it's on, the matrix remains expanded, keeping the Year column visible; If it's off, the matrix collapses and displays only values for Class. Below is a comparison showing both behaviors based on whether the toggle is enabled or disabled. 
 
 |Persist hierarchy level setting **on**|Persist hierarchy level setting **off**|
+|---|---|
 |:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are still expanded after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png":::|:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are collapsed after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png":::|
 
 ## Limitations
