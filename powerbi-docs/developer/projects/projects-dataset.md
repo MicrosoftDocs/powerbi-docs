@@ -22,11 +22,14 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [editorSettings.json](#pbieditorsettingsjson)
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [definition.pbism](#definitionpbism)<sup>[1](#required1)</sup>
-- [model.bim](#modelbim)<sup>[2](#required2)</sup>
+- [Copilot\ folder](#copilot-folder)
+- [DAXQueries\ folder](#daxqueries-folder)
+- [TMDLScripts\ folder](#tmdlscripts-folder)
 - [definition\ folder](#definition-folder)<sup>[3](#required3)</sup>
+- [model.bim](#modelbim)<sup>[2](#required2)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
 - [.platform](#platform)
+- [definition.pbism](#definitionpbism)<sup>[1](#required1)</sup>
 
 <a name="required1">1</a> - This file is required.  
 <a name="required2">2</a> - This file is required when saving using TMSL format.  
@@ -103,6 +106,72 @@ Contains diagram metadata that defines the structure of the semantic model assoc
 Fabric platform file that holds properties vital for establishing and maintaining the connection between Fabric items and Git.
 
 To learn more, see [Git integration automatically generated system files](/fabric/cicd/git-integration/source-code-format#automatically-generated-system-files).
+
+### Copilot\ folder
+
+Contains all the [Copilot tooling](/power-bi/create-reports/copilot-prepare-data-ai) metadata and settings configured for the semantic model. 
+
+#### Instructions\instructions.md
+
+Contains the [AI instructions](/power-bi/create-reports/copilot-prepare-data-ai-instructions) configured for the semantic model, stored as a markdown file.
+
+#### schema.json
+
+Contains the [Schema selection](/power-bi/create-reports/copilot-prepare-data-ai-data-schema) and field synonyms configured for the semantic model. 
+
+For more information, see the [schema.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/copilot/schema).
+
+#### VerifiedAnswers\ folder
+
+Contains the configured [Verified answers](/power-bi/create-reports/copilot-prepare-data-ai-verified-answers) for the semantic model, using [PBIR format](/power-bi/developer/projects/projects-report?tabs=v2%2Cdesktop#pbir-format)
+
+Each verified answer is stored in its own folder within the `definitions\` directory:
+
+```text
+Copilot/
+├── VerifiedAnswers/
+│   ├── definitions/
+│   │   ├── [verified answer ID]/
+│   │   │   ├── definition.json
+│   │   │   ├── filters.json
+│   │   │   ├── visualSource.json
+│   ├── version.json
+```
+
+#### settings.json
+
+Contains top level Copilot tooling settings. 
+
+For more information, see the [settings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/copilot/settings).
+
+#### examplePrompts.json
+
+Contains Copilot example prompts set up for the semantic model.
+
+> [!NOTE]
+> This metadata file is not currently used by Copilot and is included for future features.
+
+#### version.json
+
+This file tracks the version of the feature’s file structure. The version is updated whenever the file representation changes, such as when a new file is added.
+
+For more information, see the [version.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/version).
+
+### DAXQueries\ folder
+
+Contains a file for each **DAX query view** query tab saved as a `[Tab name].dax` DAX file.
+
+#### .pbi\daxQueries.json
+
+Contains **DAX query view** editor settings such as defaultTab or tab order.
+
+### TMDLScripts\ folder
+
+Contains a file for each **TMDL view** script tab saved as a `[Tab name].tmdl` TMDL file.
+
+#### .pbi\tmdlscripts.json
+
+Contains **TMDL view** editor settings such as defaultTab or tab order.
 
 ## TMDL format
 
