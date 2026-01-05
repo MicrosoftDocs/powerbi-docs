@@ -1,12 +1,12 @@
 ---
-title: Standalone Copilot experience in Power BI (preview)
+title: Standalone Copilot Experience in Power BI (preview)
 description: Learn how business users can chat with data using the standalone Copilot experience in Power BI (preview).
 author: julcsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 11/08/2025
+ms.date: 01/13/2026
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -23,10 +23,9 @@ The first entry point is Copilot icon on the left navigation bar.
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-screen.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a chat interface for interacting with data." lightbox="media/copilot-introduction/copilot-standalone-screen.png":::
 
-The second entry point is on Power BI Home page. This entry point will show up automatically when Standalone Copilot is enabled by your tenant admin and there's a valid Copilot capacity available. If you prefer the classic view, you can switch back to **Recommended content** using the picker at the top of the Home page. 
+The second entry point is on the Power BI Home page. This entry point appears automatically when the standalone Copilot is enabled by your tenant admin and there's a valid Copilot capacity available. If you prefer the classic view, you can switch back to **Recommended content** using the picker at the top of the Home page. 
 
 :::image type="content" source="media/copilot-introduction/standalone-on-home.png" alt-text="Screenshot of the standalone Copilot experience in Power BI home page." lightbox="media/copilot-introduction/standalone-on-home.png":::
-
 
 > [!NOTE]
 > **Admins need to turn on the tenant setting:** To try it out, admins need to [enable Copilot in Power BI](copilot-enable-power-bi.md), and additionally enable the following new tenant setting: Users can access a standalone, cross-item Power BI Copilot experience.
