@@ -45,9 +45,22 @@ Alternatively, the developer can sign the connector with a certificate and give 
 
 Uncertified custom connectors range from small, business-critical APIs to large, industry-specific services that don't yet have a Microsoft connector. Vendors distribute many connectors. If you need an industry- or business-specific connector, contact the vendor.
 
+The default Power BI Desktop data extension security setting is to allow only Microsoft certified and other trusted third-party extensions to load. With this setting, if uncertified custom connectors are on your system, the **Uncertified Connectors** dialog box appears at startup and lists the connectors that can't load. For example:
+
+:::image type="content" source="media/desktop-connector-extensibility/data-extension-security-2.png" alt-text="Screenshot of the Uncertified Connectors dialog box listing blocked custom connectors.":::
+
+If you don't need these connectors in this session, select **OK** to dismiss the error.
+
+To prevent the uncertified connectors error, change your **Data Extensions** security setting or remove the uncertified connectors from your *Custom Connectors* folder.
+
+> [!IMPORTANT]
+> Use only one custom connector data source in DirectQuery mode. Multiple custom connector data sources don't work with DirectQuery.
+
+### Allow uncertified custom connectors
+
 To use an uncertified custom connector:
 
-1. Copy the connector file (*.pq*, *.pqx*, *.m*, or *.mez*) into your user Documents–scoped custom connectors folder:
+1. Copy the connector file (`.pq`, `.pqx`, `.m`, or `.mez`) into your user Documents–scoped custom connectors folder:
 
    `[Documents]\Microsoft Power BI Desktop\Custom Connectors`
 
@@ -55,7 +68,8 @@ To use an uncertified custom connector:
 
    > [!NOTE]
    > If your organization enables OneDrive sync or Known Folder Move, the effective Documents path might be redirected. For example:
-   > `C:\Users\<user>\OneDrive - Fabrikam\Documents`
+   > `C:\Users\<user>\OneDrive - Fabrikam\Documents`.
+   >
    > Don’t assume `%USERPROFILE%\Documents`. To reliably locate the correct folder in PowerShell:
    >
    > ```powershell
@@ -66,25 +80,15 @@ To use an uncertified custom connector:
    > Place the connector files there, then restart Power BI Desktop.
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Security** to adjust the data extension security settings.
-1. Under **Data Extensions**, select **(Not Recommended) Allow any extension to load without validation or warning**.
-1. Select **OK**, then restart Power BI Desktop.
+1. Under **Data Extensions**, select **(Not Recommended) Allow any extension to load without validation or warning**, then select **OK**.
 
-:::image type="content" source="media/desktop-connector-extensibility/data-extension-security-1.png" alt-text="Screenshot of Data Extension Security options showing the setting to allow noncertified custom connectors.":::
+   :::image type="content" source="media/desktop-connector-extensibility/data-extension-security-1.png" alt-text="Screenshot of Data Extension Security options showing the setting to allow noncertified custom connectors.":::
 
-The default Power BI Desktop data extension security setting is **(Recommended) Only allow Microsoft certified and other trusted third-party extensions to load**. With this setting, if uncertified custom connectors are on your system, the **Uncertified Connectors** dialog box appears at startup and lists the connectors that can't load.
-
-:::image type="content" source="media/desktop-connector-extensibility/data-extension-security-2.png" alt-text="Screenshot of the Uncertified Connectors dialog box listing blocked custom connectors.":::
-
-If you don't need these connectors in this session, select **OK** to dismiss the error.
-
-Prevent the error by changing your **Data Extensions** security setting or removing the uncertified connectors from your *Custom Connectors* folder.
-
-> [!IMPORTANT]
-> Use only one custom connector data source in DirectQuery mode. Multiple custom connector data sources don't work with DirectQuery.
+1. Restart Power BI Desktop.
 
 ## Sign custom connectors
 
-If you sign a `.mez` package by using a trusted code signing certificate, users can load the connector without enabling the **allow any extension** setting.
+If you sign a `.mez` package by using a trusted code signing certificate, users can load the connector without enabling the **allow any extension** data extension setting.
 
 A properly signed connector from a trusted publisher loads under the recommended security setting. Unsigned or self-signed connectors trigger the uncertified dialog unless the permissive setting is enabled.
 
@@ -98,7 +102,7 @@ Microsoft certifies a limited set of custom data extensions. Microsoft distribut
 
 In Power BI Desktop, certified third-party connectors appear in the **Get Data** dialog box with generic and common connectors. You don't need to change security settings to use certified connectors.
 
-## Troubleshooting custom connector problems
+## Troubleshoot custom connector problems
 
 The following table lists common problems you might encounter when working with custom connectors and provides guidance for resolving them.
 
@@ -117,4 +121,4 @@ The following table lists common problems you might encounter when working with 
 
 ## Related content
 
-- See [Power Query Connector Certification](/power-query/connectorcertification) to certify a custom connector.
+- See [Power Query connector certification](/power-query/connectorcertification) to certify a custom connector.
