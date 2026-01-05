@@ -1,5 +1,5 @@
 ---
-title: Create Modern Visual Tooltips (Preview)
+title: Create Visual Tooltips
 description: Learn how modern visual tooltips in Power BI Desktop and Power BI service let you create rich hover-based tooltips with drill actions and theme-based styling for visuals in your reports.
 author: julcsc
 ms.author: juliacawthra
@@ -12,63 +12,25 @@ ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 
-# Create modern visual tooltips (preview)
+# Create visual tooltips
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The public preview of modern visual tooltips includes data point drill actions and updated styling to match your report theme.
+Visual tooltips in Power BI are designed to improve usability, accessibility, and interactivity across visuals.  
+
+When hovering over a visual data point, a tooltip shows the field name and value. By default, the fields used in the visual show in the tooltip. Additional fields can be shown in the tooltip by adding them to the visual's **Tooltip** field well. Actions, such as [drill down and drill through](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions) are also available on the tooltip when a visual has these actions available. 
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Screenshot of an example of a modern visual tooltip.":::
 
-## Video
+The tooltip for any visual can be turned off in the visual formatting options. And if you want full control of a visual tooltip, you can create a [visual tooltip report page](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-tooltips) to use instead of the default tooltip. 
 
-Sujata demonstrates how the modern visual tooltips work in this video.
+## Actions footer
 
-[!INCLUDE [video-note-earlier-versions](../includes/video-note-earlier-versions.md)]
+The optional tooltip **Actions** footer shows drill down and up, along with drill through on a data point without having to use the right-click menu or the header icons for the visual. 
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9f19b72a-c54e-4e20-be26-17c8ce9483c7]
+:::image type="content" source="media/desktop-visual-tooltips/drill-down-and-through-tooltips.png" alt-text="Screenshot of the Actions footer with the Drill down and Drill through options outlined.":::
 
-## Turn on the new tooltips
-
-When you enable this preview, new reports have modern tooltips enabled by default. However, to have the new tooltips in existing reports, you need to enable them for each report.
-
-## [For new reports in Power BI Desktop](#tab/desktop-new)
-
-1. In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Preview features**.
-1. Select the **Modern visual tooltips** checkbox.
-
-    :::image type="content" source="media/desktop-visual-tooltips/power-bi-desktop-preview-visual-tooltip.png" alt-text="Screenshot of the Options dialog with Modern visual tooltips checkbox highlighted.":::
-
-1. Restart Power BI Desktop.
-
-## [For existing reports in Power BI Desktop](#tab/desktop-existing)
-
-1. Go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**.
-1. Select the checkbox under **Modern visual tooltips**.
-
-    :::image type="content" source="media/desktop-visual-tooltips/power-bi-desktop-preview-visual-tooltip-existing.png" alt-text="Screenshot of the Options dialog with the Modern visual tooltips checkbox highlighted in Report settings.":::
-
-## [For reports in the Power BI service](#tab/web)
-
-1. Go to **File** > **Settings**.
-
-    :::image type="content" source="media/desktop-visual-tooltips/power-bi-service-preview-visual-tooltip-first-step.png" alt-text="Screenshot of the File dropdown menu with Settings highlighted.":::
-
-1. Switch the **Modern visual tooltips** toggle on.
-
-    :::image type="content" source="media/desktop-visual-tooltips/power-bi-service-preview-visual-tooltip-second-step.png" alt-text="Screenshot of the Settings dialog with the Modern visual tooltip toggle highlighted." lightbox="media/desktop-visual-tooltips/power-bi-service-preview-visual-tooltip-second-step.png":::
-
----
-
-## Drill actions
-
-When you enable these new tooltips, you can drill down and up, and drill through on a data point without having to use the right-click menu or the header for the visual.
-
-For example, when you hover over the *Word* data point in a bar chart, you can **Drill down** on the data point or **Drill through**. If you select **Drill down**, the visual updates to display the next level in the hierarchy and filter to *Word*.
-
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-drill-down.png" alt-text="Screenshot of a tooltip with Drill down option highlighted.":::
-
-If you select **Drill through**, you see which pages you can drill through to. In this example, choose either the Market Basket Analysis or the Category Details page.
+For example, when you hover over the Word data point in a bar chart, you can **Drill down** on the data point or **Drill through**. If you select **Drill down**, the visual updates display the next level in the hierarchy and filter to *Word*. If you select **Drill through**, you see which pages you can drill through to. In this example, choose either the Market Basket Analysis or the Category Details page.
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-drill-through.png" alt-text="Screenshot of a tooltip with Drill through options highlighted.":::
 
@@ -76,9 +38,13 @@ If you select **Market Basket Analysis** in the tooltip, you drill through to th
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-drill-through-market-basket.png" alt-text="Screenshot of the drill through to the Market Basket Analysis page." lightbox="media/desktop-visual-tooltips/power-bi-visual-tooltip-drill-through-market-basket.png":::
 
-## Updated styling
+If a report author would like to enable or disable the **Actions** footer at any time for a new or existing report, they can do so using the **Format** pane.  
 
-Once you upgrade to the new tooltips, you might notice an updated styling that's based on the report's [theme colors](desktop-report-themes.md#set-structural-colors):
+:::image type="content" source="media/desktop-visual-tooltips/actions-format-pane.png" alt-text="Screenshot of the format pane options for the tooltip with Actions outlined." lightbox="media/desktop-visual-tooltips/actions-format-pane.png":::
+
+## Styling and color
+
+With visual tooltips, the styling and color is based on the report's [theme colors](desktop-report-themes.md#set-structural-colors):
 
 - The background of the tooltips default to the **Background elements**.
 - The text and icon color of the tooltips default to the **First-level elements**.
@@ -98,21 +64,33 @@ Here's an example with the **Frontier** theme:
 
 To customize the styling further in Power BI Desktop, you can update the **Tooltip** theme in the **Customize theme** dialog:
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-customize-theme.png" alt-text="Screenshot of the Customize theme dialog showing Tool tip customizations.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-customize-theme.png" alt-text="Screenshot of the Customize theme dialog showing Tooltip customizations.":::
 
 Additionally, you can format tooltips per visual by customizing the settings in the **Format** pane:
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-desktop-visual-tooltip-format.png" alt-text="Screenshot of the Visualizations pane Tooltips dropdown menu.":::
 
+## Visual tooltip update in January 2026 impact to new and existing reports 
+
+The visual tooltips were updated in January 2026 with the modern tooltips feature general availability. All tooltips now use the updated visual tooltip experience.  
+
+- For new reports, tooltips will include the theme colors and style with the **Actions** footer enabled by default. 
+
+- For existing reports, the display of the tooltip will remain unchanged. The **Actions** footer, if not previously enabled, will remain disabled. 
+
+- If you wish to **reset the default** of an existing report not using the updated visual tooltips, a dialog will appear asking if you would like to upgrade the tooltip. 
+    - Choosing **Upgrade to modern defaults** updates all visuals in your report with the **Actions** footer enabled.
+    - Choosing **Use old tooltips** keeps the tooltips unchanged.  
+
+
 ## Considerations and limitations
 
-Drill actions aren't available in the tooltip for the following scenarios:
+The tooltip actions footer isn't available in the following scenarios: 
 
-- Report page tooltips
-- AppSource visuals (custom visuals)
-- Decomposition trees
+- [Report page tooltips] (https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-tooltips)
+- [Custom visuals] (https://learn.microsoft.com/en-us/power-bi/developer/visuals/develop-power-bi-visuals) (AppSource visuals)
+- [Decomposition trees] (https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-decomposition-tree)
 
-We don't have visual-level control to turn on or off the drill actions for the tooltips. You can enable or disable this capability for a whole report.
 
 ## Related content
 
