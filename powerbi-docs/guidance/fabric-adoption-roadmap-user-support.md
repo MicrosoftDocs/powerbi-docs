@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Fabric adoption roadmap: User support"
 description: "Support users to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
 ms.topic: concept-article
 ms.date: 12/30/2024

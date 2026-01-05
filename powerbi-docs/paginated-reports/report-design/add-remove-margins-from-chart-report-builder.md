@@ -1,7 +1,8 @@
 ---
-title: "Add or remove margins from a Power BI paginated report chart | Microsoft Docs"
+title: Add or Remove Margins From a Power BI Paginated Report Chart
 description: Add or remove margins from a Column or Scatter chart in Power BI Report Builder. Improves the readability or appearance of Power BI paginated reports. 
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

@@ -1,9 +1,9 @@
 ---
 title: Set visual query limits in Power BI Desktop
 description: Learn how to define timeouts and memory limits for visual queries in Power BI Desktop. 
-author: msftrien
-ms.author: rien
-ms.reviewer: ''
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: rien
 ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

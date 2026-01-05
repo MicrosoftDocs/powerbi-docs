@@ -1,9 +1,9 @@
 ---
 title: Enable Fabric Copilot for Power BI
 description: Enable Fabric Copilot for Power BI in your organizational tenant.
-author: shannonlindsay
-ms.author: shlindsay
-ms.reviewer: juliacawthra
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

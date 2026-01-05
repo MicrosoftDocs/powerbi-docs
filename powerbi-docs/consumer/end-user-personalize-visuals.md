@@ -1,5 +1,5 @@
 ---
-title: Personalize visuals in a report
+title: Personalize Visuals in a Report
 description: Learn how to create, share, and bookmark your own view of a Power BI report visual, without actually altering it.
 author: julcsc
 ms.author: juliacawthra
@@ -7,8 +7,9 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/12/2024
+ms.date: 12/01/2025
 LocalizationGroup: Reports
+ai-usage: ai-assisted
 ---
 
 # Personalize visuals in a report
@@ -129,7 +130,7 @@ Currently the feature has a few limitations to be aware of.
 - **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have permissions to personalize a visual, check with your Power BI admin or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
-- This feature is not available in Report Server. 
+- This feature isn't available in Report Server. 
 
 ## Related content
 

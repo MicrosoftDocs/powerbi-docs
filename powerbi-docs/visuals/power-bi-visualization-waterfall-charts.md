@@ -1,9 +1,9 @@
 ---
 title: Waterfall Charts in Power BI
 description: Learn how to create and configure waterfall charts in Power BI to visualize running totals, analyze sequential changes in values, and understand how initial values are affected by increases and decreases.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-visuals

@@ -1,7 +1,8 @@
 ---
-title: "3D, bevel, and other effects in Power BI paginated report charts | Microsoft Docs"
+title: 3D, Bevel, and Other Effects in Power BI Paginated Report Charts
 description: Discover how 3D effects in Power BI paginated reports can be used to provide depth and add visual impact to charts in Power BI Report Builder. 
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -10,7 +11,6 @@ ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Chart effects: 3D, bevel, and others in Power BI paginated reports (Power BI Report Builder)
-
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 

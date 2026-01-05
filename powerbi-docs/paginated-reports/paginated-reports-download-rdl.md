@@ -1,5 +1,5 @@
 ---
-title: "Create a paginated report from a Power BI report or dataset"
+title: Create a Paginated Report From a Power BI Report or Dataset
 description: Learn how to create a paginated report from a Power BI report or a shared dataset in the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: mibruhje
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/11/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 
@@ -32,19 +32,19 @@ This article explains how to create a paginated report from a Power BI report or
 
     In list view, select **More options (...)** for a Power BI report, and then choose **Create paginated report**.
 
-    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-download-rdl.png" alt-text="Screenshot of Create a paginated report from a Power BI report in the Power BI service.":::
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-download-rdl.png" alt-text="Screenshot of Create a paginated report from a Power BI report in the Power BI service." lightbox="media/paginated-reports-download-rdl/power-bi-paginated-download-rdl.png":::
 
     Or in list view, select **More options (...)** for a dataset, and then select **Create paginated report**.
 
-    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-dataset.png" alt-text="Screenshot of Create a paginated report from a shared dataset in the Power BI service.":::
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-dataset.png" alt-text="Screenshot of Create a paginated report from a shared dataset in the Power BI service." lightbox="media/paginated-reports-download-rdl/power-bi-paginated-dataset.png":::
 
     Or from the navigation pane, select **More options (...)** for a dataset, and then select **Create paginated report**.
 
-    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-dataset-navigation.png" alt-text="Screenshot of Create a paginated report from a shared dataset in the navigation pane in the Power BI service.":::
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-dataset-navigation.png" alt-text="Screenshot of Create a paginated report from a shared dataset in the navigation pane in the Power BI service." lightbox="media/paginated-reports-download-rdl/power-bi-paginated-dataset-navigation.png":::
 
 1. You see a message that you need some Power BI Report Builder updates. Select **Download**.
 
-    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-updates.png" alt-text="Screenshot of installing Power BI Report Builder updates.":::
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-updates.png" alt-text="Screenshot of installing Power BI Report Builder updates." lightbox="media/paginated-reports-download-rdl/power-bi-report-builder-updates.png":::
 
     If you know you have the most recent version of Power BI Report Builder, select **I've already installed these updates**.
 
@@ -53,15 +53,15 @@ This article explains how to create a paginated report from a Power BI report or
     1. Select **Open file** and go through the steps in the Power BI Report Builder Setup Wizard.
 1. After the Report Builder installation finishes, go back to the Power BI service and select **Create paginated report**.
 
-    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-finished-installing.png" alt-text="Screenshot of Create a paginated report dialog box.":::
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-finished-installing.png" alt-text="Screenshot of Create a paginated report dialog box." lightbox="media/paginated-reports-download-rdl/power-bi-report-builder-finished-installing.png":::
 
 1. Select **Open** in the browser window.
 
-    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-open-file.png" alt-text="Screenshot of selecting Open File in a browser.":::
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-open-file.png" alt-text="Screenshot of selecting Open File in a browser." lightbox="media/paginated-reports-download-rdl/power-bi-paginated-open-file.png":::
 
 1. Power BI Report Builder opens with an automatically generated title, and the Power BI semantic model .pbix file in the **Data Sources** folder. The data source has the same name as the Power BI semantic model.
 
-    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-design-canvas.png" alt-text="Screenshot of the Power BI Report Builder in Design view.":::
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-design-canvas.png" alt-text="Screenshot of the Power BI Report Builder in Design view." lightbox="media/paginated-reports-download-rdl/power-bi-report-builder-design-canvas.png":::
 
     The design surface also features a link to the [Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md) video-based course. If you're new to paginated report creation, the course is a good way to get up to speed.  You can delete it when you start designing your report.
 

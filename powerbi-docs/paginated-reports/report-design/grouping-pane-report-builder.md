@@ -1,7 +1,8 @@
 ---
-title: "Grouping pane in a Power BI paginated report | Microsoft Docs"
+title: Grouping Pane in a Power BI Paginated Report
 description: Display row groups and column groups for a currently selected tablix data region in a Power BI paginated report. Find out about the grouping pane in Report Builder. 
-ms.date: 06/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -31,11 +32,11 @@ ms.reviewer: saurkumar
  
  The following figure shows a tablix data region with nested row groups and nested and adjacent column groups.  
   
- ![Screenshot showing Tablix, nested and adjacent row and column groups.](../report-design/media/basic-tablix-design-grouping-pane.gif "Tablix, nested and adjacent row and column groups")  
+ :::image type="content" source="../report-design/media/basic-tablix-design-grouping-pane.gif" alt-text="Screenshot showing Tablix, nested and adjacent row and column groups." lightbox="../report-design/media/basic-tablix-design-grouping-pane.gif":::  
   
  The Grouping pane displays the corresponding row and column groups. In the following figure, the group based on subcategory has been selected in the Row Groups pane, and the [Subcat] grouping cell is selected in the tablix data region:  
   
- ![Screenshot showing Grouping pane for nested row and column groups.](../report-design/media/basic-tablix-design-grouping-pane-default-view.gif "Grouping pane for nested row and column groups")  
+ :::image type="content" source="../report-design/media/basic-tablix-design-grouping-pane-default-view.gif" alt-text="Screenshot showing Grouping pane for nested row and column groups." lightbox="../report-design/media/basic-tablix-design-grouping-pane-default-view.gif":::  
   
  In the Row Groups pane, the group based on subcategory is a child of the group based on category. In the Column Groups pane, the country/region group is a child of the geography group. The year group and the country/region groups are adjacent groups.  
   

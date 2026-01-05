@@ -1,15 +1,16 @@
 ---
-title: Get started formatting report visualizations
+title: Get Started Formatting Report Visualizations
 description: Getting started using the formatting options with report visualizations
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: 'miguelmyers'
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.custom: pbibetadocbug, intro-get-started, sample-salesandmarketingsample
-ms.date: 12/19/2023
+ms.date: 12/01/2025
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 # Get started formatting report visualizations
 
@@ -31,24 +32,24 @@ When you select **Format**, the area below the icon displays the customizations 
 
 You can customize many elements of each visualization. The options available depend on the visual selected. Some of those options are:
 
-* Legend
-* X-axis
-* Y-axis
-* Data colors
-* Data labels
-* Total labels
-* Shapes
-* Plot area
-* Title
-* Background
-* Lock aspect
-* Border
-* Shadow
-* Tooltip
-* Visual header
-* Shapes
-* Position
-* Zoom
+- Legend
+- X-axis
+- Y-axis
+- Data colors
+- Data labels
+- Total labels
+- Shapes
+- Plot area
+- Title
+- Background
+- Lock aspect
+- Border
+- Shadow
+- Tooltip
+- Visual header
+- Shapes
+- Position
+- Zoom
 
 > [!NOTE] 
 > You don’t see all these elements with each visualization type. The visualization you select affects which customizations are available. For example, you don’t see an X-axis if you have a pie chart selected because pie charts don’t have an X-axis.
@@ -57,12 +58,12 @@ Also note that if you don’t have any visualization selected, **Filters** appea
 
 The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible number of options available, and new ones being added all the time. It's just not possible to describe all formatting options in one article. But to get you started, let's review a few together. 
 
-* [Change colors used in the visual](#change-colors-in-a-visual)
-* [Apply a style](#apply-a-style-to-a-table)
-* [Change axis properties](#change-axis-properties)
-* [Add data labels](#add-data-labels)
-* [Customize data labels](#customize-data-labels)
-* [Add total labels](#add-total-labels)
+- [Change colors used in the visual](#change-colors-in-a-visual)
+- [Apply a style](#apply-a-style-to-a-table)
+- [Change axis properties](#change-axis-properties)
+- [Add data labels](#add-data-labels)
+- [Customize data labels](#customize-data-labels)
+- [Add total labels](#add-total-labels)
 
 ## Change colors in a visual
 
@@ -117,11 +118,11 @@ It’s often useful to modify the X-axis or the Y-axis. Similar to working with 
 
 The following example illustrates making the following formatting changes to the Y axis:
 
-* Move the labels to the right side of the visualization.
-* Change the starting value to zero.
-* Change the label font color to black.
-* Increase the label font size to 12.
-* Add a Y-axis title.
+- Move the labels to the right side of the visualization.
+- Change the starting value to zero.
+- Change the label font color to black.
+- Increase the label font size to 12.
+- Add a Y-axis title.
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-axis-changes.png" alt-text="Screenshot showing Same column chart but with lots of formatting of Y-axis.":::
 
@@ -159,10 +160,10 @@ Data labels have some enhanced formatting capabilities, giving you extended cust
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/bar-column-chart-enhanced-data-labels.png" alt-text="Screenshot showing customizing data labels." lightbox="media/service-getting-started-with-color-formatting-and-axis-properties/bar-column-chart-enhanced-data-labels.png":::
 
-* **Title**: The new Title card feature enables you to display legend fields on your data labels, so you can omit the legend for a cleaner look. You can also customize data label titles using different data fields, adjustable font style, color, and transparency.
-* **Value**: Spot the active field for your data label in the field well. Modifying it to another field is easy, with customization options like font, color, transparency, and more, plus a new feature for blank value display.
-* **Detail**: The new detail card feature lets you add a secondary metric to your data labels. Choose any field to add an extra value, with the full range of formatting options.
-* **Visual label layout**: Choose between a sleek single-line data label or a multi-line data label, as needed.
+- **Title**: The new Title card feature enables you to display legend fields on your data labels, so you can omit the legend for a cleaner look. You can also customize data label titles using different data fields, adjustable font style, color, and transparency.
+- **Value**: Spot the active field for your data label in the field well. Modifying it to another field is easy, with customization options like font, color, transparency, and more, plus a new feature for blank value display.
+- **Detail**: The new detail card feature lets you add a secondary metric to your data labels. Choose any field to add an extra value, with the full range of formatting options.
+- **Visual label layout**: Choose between a sleek single-line data label or a multi-line data label, as needed.
 
 ## Add total labels
 
@@ -188,7 +189,7 @@ These are just a few of the formatting tasks that are possible. Open a report in
 
 For more information, see the following articles:
 
-* [Sharing reports](../collaborate-share/service-share-reports.md)
+- [Sharing reports](../collaborate-share/service-share-reports.md)
 
-* [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)  
-* [Conditional formatting in tables](../create-reports/desktop-conditional-table-formatting.md)
+- [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)
+- [Conditional formatting in tables](../create-reports/desktop-conditional-table-formatting.md)

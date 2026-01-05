@@ -1,9 +1,9 @@
 ---
 title: Active Directory (AD) SSO
 description: Configure your gateway for connecting to your on-premises data sources that have Active Directory configured.
-author: miquelladeboer
-ms.author: mideboer
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: mideboer
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

@@ -1,9 +1,9 @@
 ---
 title: "Query folding guidance in Power BI Desktop"
 description: "Guidance for achieving Power Query query folding in Power BI Desktop."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

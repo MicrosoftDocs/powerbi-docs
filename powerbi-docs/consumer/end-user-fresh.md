@@ -1,5 +1,5 @@
 ---
-title: How to be sure that content is up to date
+title: How to Be Sure That Content Is Up to Date
 description: Learn how Power BI ensures you're working with the latest version of the data, report, dashboard, and app.
 author: julcsc
 ms.author: juliacawthra
@@ -8,7 +8,8 @@ ms.subservice: pbi-explore
 ms.reviewer: juliacawthra
 ms.custom:  
 ms.topic: how-to
-ms.date: 01/09/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
@@ -69,7 +70,7 @@ The dashboard title menu shows a contact, but not a timestamp. However, you can 
 
     :::image type="content" source="media/end-user-fresh/power-bi-last-refreshed.png" alt-text="Screenshot showing the last refresh date in wide browser view.":::
 
-2. Open a dashboard, select **More actions (...)**, and then choose **See related content** from the Power BI upper menu bar.
+1. Open a dashboard, select **More actions (...)**, and then choose **See related content** from the Power BI upper menu bar.
 
     :::image type="content" source="media/end-user-fresh/power-bi-related.png" alt-text="Screenshot showing See related content on the More options menu.":::
 

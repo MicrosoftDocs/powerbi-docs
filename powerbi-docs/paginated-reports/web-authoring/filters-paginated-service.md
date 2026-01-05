@@ -1,7 +1,8 @@
 ---
-title: "Add filters when you create paginated reports in the Power BI service | Microsoft Docs"
+title: Add Filters When You Create Paginated Reports in the Power BI Service
 description:  Learn how to add filters while you author a paginated report on the service.
-ms.date: 10/09/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi 
 ms.subservice: report-builder
 ms.topic: how-to

@@ -1,7 +1,8 @@
 ---
-title: "Customize the display of a map or map layer in a Power BI paginated report"
+title: Customize the Display of a Map or Map Layer in a Power BI Paginated Report
 description:  Improve the user experience of data and display in a paginated report with changes to legends, color, labels, and resolution in Power BI Report Builder. 
-ms.date: 10/01/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

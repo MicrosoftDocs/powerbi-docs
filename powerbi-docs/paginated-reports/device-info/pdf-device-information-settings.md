@@ -1,7 +1,8 @@
 ---
-title: "PDF device information settings for Power BI paginated reports"
+title: PDF Device Information Settings for Power BI Paginated Reports
 description: Learn about the device information settings that are available for rendering Power BI paginated reports in PDF format.
-ms.date: 06/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -33,5 +34,5 @@ ms.author: juliacawthra
   
 ## Related content
 
-- [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
+- [URL parameters in paginated reports](../report-builder-url-parameters.md)
  

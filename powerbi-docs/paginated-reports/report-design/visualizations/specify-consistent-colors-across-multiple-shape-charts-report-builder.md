@@ -1,7 +1,8 @@
 ---
-title: "Specify consistent colors in multiple shape charts in Power BI paginated report | Microsoft Docs"
+title: Specify Consistent Colors in Multiple Shape Charts in Power BI Paginated Report
 description: Find out how choosing colors for a shape chart in Power BI paginated report results in mapping each color in the palette to a data point in the dataset.
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -17,7 +18,7 @@ ms.reviewer: saurkumar
   
  If a data point has no value, it is omitted from display on a shape chart. This means that the data point is skipped from being colored. For example, if point 2 has a value of zero, point 1 will be mapped to the first color in the palette, and point 3 will be mapped to the second color in the palette. This approach is useful because the empty points in the dataset of a pie chart do not unnecessarily use a palette color when the empty point does not need to be drawn.  
   
- As a side effect, when multiple pie charts are displayed in a report, the pie charts may display different colors for data points that have the same category grouping. To resolve this, you need to define individual colors that map to a category group instead of individual data values. How you do this depends on if the shape charts are sparklines in a table or matrix, or if they are shape charts in the report itself.  
+ As a side effect, when multiple pie charts are displayed in a report, the pie charts might display different colors for data points that have the same category grouping. To resolve this, you need to define individual colors that map to a category group instead of individual data values. How you do this depends on if the shape charts are sparklines in a table or matrix, or if they are shape charts in the report itself.  
   
  The legend is connected to the series, so any color you specify for the series will automatically be shown on the legend.  
   
@@ -27,15 +28,15 @@ ms.reviewer: saurkumar
   
 1.  Select the chart to display the Chart Data pane.  
   
-2.  In the **Category Groups** area, right-click a category and select **Category Group Properties**.  
+1.  In the **Category Groups** area, right-click a category and select **Category Group Properties**.  
   
-3.  On the General tab, in the **Synchronize groups in** box, select the name of the category for which you would like to synchronize colors, and then select **OK**.  
+1.  On the General tab, in the **Synchronize groups in** box, select the name of the category for which you would like to synchronize colors, and then select **OK**.  
   
 ## Specify consistent colors across multiple shape charts  
   
 1.  Right-click outside the body of the report, and select **Report Properties**.  
   
-2.  In **Code**, type the following code into the textbox.  
+1.  In **Code**, type the following code into the textbox.  
   
     ```  
     Private colorPalette As String() = {"Color1", "Color2", "Color3"}  
@@ -55,13 +56,13 @@ ms.reviewer: saurkumar
     > [!NOTE]  
     >  You will need to replace the "Color1" strings with your own colors. You can use named colors, for example "Red", or you can use six-digit hexadecimal value that represent the color, such as "#FFFFFF" for black. If you have more than three colors defined, you will need to extend the array of colors so that the number of colors in the array matches the number of points in your shape chart. You can add new colors to the array by specifying a comma-separated list of string values that contain named colors or hexadecimal representations of colors.  
   
-3.  Select **OK**.
+1.  Select **OK**.
   
-4.  Right-click on the shape chart and select **Series Properties**.  
+1.  Right-click on the shape chart and select **Series Properties**.  
   
-5.  In **Fill**, select the **Expression** (*fx*) button to edit the expression for the **Color** property.  
+1.  In **Fill**, select the **Expression** (*fx*) button to edit the expression for the **Color** property.  
   
-6.  Type the following expression, where "MyCategoryField" is the field that is displayed in the **Category Groups** area:  
+1.  Type the following expression, where "MyCategoryField" is the field that is displayed in the **Category Groups** area:  
   
     ```  
     =Code.GetColor(Fields!MyCategoryField)  

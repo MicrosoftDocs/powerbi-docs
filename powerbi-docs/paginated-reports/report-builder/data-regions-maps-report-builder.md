@@ -1,7 +1,8 @@
 ---
-title: "Data regions and maps in a Power BI paginated report | Microsoft Docs"
+title: Data Regions and Maps in a Power BI Paginated Report
 description: Explore the types and characteristics of data regions and maps to design the display from your paginated report datasets in Power BI Report Builder.  
-ms.date: 02/13/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article

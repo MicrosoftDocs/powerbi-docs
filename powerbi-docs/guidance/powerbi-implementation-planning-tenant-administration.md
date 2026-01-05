@@ -1,9 +1,9 @@
 ---
 title: "Power BI implementation planning: Tenant administration"
 description: "This article introduces key considerations for administering a Fabric tenant."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

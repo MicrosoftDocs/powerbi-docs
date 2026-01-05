@@ -1,7 +1,8 @@
 ---
-title: "Specify an axis interval in a Power BI paginated report | Microsoft Docs"
+title: Specify an Axis Interval in a Power BI Paginated Report
 description: Find out how to change the number of labels and tick marks on the category (x) axis in a chart in a Power BI paginated report by setting the axis interval in Power BI Report Builder.
-ms.date: 03/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -33,24 +34,24 @@ To try setting the axis interval with sample data, see [Tutorial: Add a Column C
 
 In this column chart, the horizontal label interval is set to Auto.
 
-![Screenshot showing report builder column chart preview with the x-axis interval set to Auto.](media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-auto.png "Screenshot showing report builder column chart preview with the x-axis interval set to Auto.")
+:::image type="content" source="media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-auto.png" alt-text="Screenshot showing report builder column chart preview with the x-axis interval set to Auto." lightbox="media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-auto.png":::
   
 1. Right-click the category axis and select **Horizontal Axis Properties**.   
 
-    ![Screenshot of a report builder column chart showing how to set x-axis labels.](media/paginated-reports-visualizations/column-chart-x-axis-labels.png "Screenshot of a report builder column chart showing how to set x-axis labels.")
+    :::image type="content" source="media/paginated-reports-visualizations/column-chart-x-axis-labels.png" alt-text="Screenshot of a report builder column chart showing how to set x-axis labels." lightbox="media/paginated-reports-visualizations/column-chart-x-axis-labels.png":::
   
 1. In the **Horizontal Axis Properties** dialog box > **Axis Options** tab, set **Interval** to **1** to show every category group label. To show every other category group label on the x-axis, type **2**. 
 
-     ![Screenshot of a report builder column chart showing how to set the x-axis interval to one.](media/paginated-reports-visualizations/column-chart-x-axis-interval-one.png "Screenshot of a report builder column chart showing how to set the x-axis interval to one.")
+     :::image type="content" source="media/paginated-reports-visualizations/column-chart-x-axis-interval-one.png" alt-text="Screenshot of a report builder column chart showing how to set the x-axis interval to one." lightbox="media/paginated-reports-visualizations/column-chart-x-axis-interval-one.png":::
   
 1. Select **OK**.
 
      Now the column chart displays all its horizontal axis labels.
 
-     ![Screenshot of the report builder column chart preview showing x-axis labels.](media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-one.png "Screenshot of the report builder column chart preview showing x-axis labels.")
+     :::image type="content" source="media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-one.png" alt-text="Screenshot of the report builder column chart preview showing x-axis labels." lightbox="media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-one.png":::
 
      > [!NOTE]  
-     >  When you set an axis interval, all automatic labeling is disabled. If you specify a value for the axis interval, you may see unpredictable labeling behavior, depending on how many categories are on the category axis.  
+     >  When you set an axis interval, all automatic labeling is disabled. If you specify a value for the axis interval, you might see unpredictable labeling behavior, depending on how many categories are on the category axis.  
 
 ## Change the label interval in properties pane
 
@@ -60,13 +61,13 @@ You can also set the label interval in the Properties pane.
 
 1. In the Properties pane, set LabelInterval to **1**.
 
-    ![Screenshot of the report builder column chart showing how to set the label interval.](media/paginated-reports-visualizations/column-chart-set-label-interval.png "Screenshot of the report builder column chart showing how to set the label interval.")
+    :::image type="content" source="media/paginated-reports-visualizations/column-chart-set-label-interval.png" alt-text="Screenshot of the report builder column chart showing how to set the label interval." lightbox="media/paginated-reports-visualizations/column-chart-set-label-interval.png":::
 
     The chart looks the same in design view. 
 
 1. Select **Run** to preview the report.
 
-    ![Screenshot of the report builder column chart preview showing the label interval of one.](media/paginated-reports-visualizations/column-chart-label-interval-one-preview.png "Screenshot of the report builder column chart preview showing the label interval of one.")
+    :::image type="content" source="media/paginated-reports-visualizations/column-chart-label-interval-one-preview.png" alt-text="Screenshot of the report builder column chart preview showing the label interval of one." lightbox="media/paginated-reports-visualizations/column-chart-label-interval-one-preview.png":::
 
     Now the chart displays all its labels.
   

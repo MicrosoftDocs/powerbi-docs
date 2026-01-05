@@ -1,16 +1,16 @@
 ---
-title: Embed a new Power App in a Power BI Report.
-description: Embed an app that uses the same data source and can be filtered like other report items. 
-author: miguelmyersMS
-ms.author: miguelmyers
-manager: kvivek
-ms.reviewer: 'tapan maniar'
+title: Embed a New Power App in a Power BI Report
+description: Embed an app that uses the same data source and can be filtered like other report items.
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/08/2024
+ms.date: 12/01/2025
 ms.custom: sample-opportunityanalysissample
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 
 
@@ -30,9 +30,9 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* [Google Chrome](https://www.google.com/chrome/browser/) or [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) browser
-* A [Power BI subscription](../fundamentals/service-self-service-signup-for-power-bi.md), with the [Opportunity Analysis Sample](../create-reports/sample-opportunity-analysis.md#get-the-built-in-sample) installed
-* An understanding of how to [create apps in Power Apps](/powerapps/maker/canvas-apps/data-platform-create-app-scratch) and how to [edit Power BI reports](../create-reports/service-the-report-editor-take-a-tour.md)
+- [Google Chrome](https://www.google.com/chrome/browser/) or [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) browser
+- A [Power BI subscription](../fundamentals/service-self-service-signup-for-power-bi.md), with the [Opportunity Analysis Sample](../create-reports/sample-opportunity-analysis.md#get-the-built-in-sample) installed
+- An understanding of how to [create apps in Power Apps](/powerapps/maker/canvas-apps/data-platform-create-app-scratch) and how to [edit Power BI reports](../create-reports/service-the-report-editor-take-a-tour.md)
 
 ## Create a new app
 
@@ -104,5 +104,5 @@ For troubleshooting information, see [Power Apps visual for Power BI.](/powerapp
 
 ## Related content
 
-* [Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)    
-* [Tutorial: Embed a Power Apps visual in a Power BI report](/powerapps/maker/canvas-apps/powerapps-custom-visual)
+- [Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Tutorial: Embed a Power Apps visual in a Power BI report](/powerapps/maker/canvas-apps/powerapps-custom-visual)

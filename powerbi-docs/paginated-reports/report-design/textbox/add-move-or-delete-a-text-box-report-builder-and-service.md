@@ -1,7 +1,8 @@
 ---
-title: "Add, move, or delete a text box in a Power BI paginated report"
+title: Add, Move, or Delete a Text Box in a Power BI Paginated Report
 description: Add a text box to the paginated report body to display information such as titles, parameter choices, built-in fields, and dates in Power BI Report Builder. 
-ms.date: 02/06/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -26,24 +27,24 @@ ms.reviewer: rpatkar
   
 1. On the **Insert** tab, select **Text Box**.  
   
-2. On the design surface, select and then drag a text box to the desired size.  
+1. On the design surface, select and then drag a text box to the desired size.  
   
 ## Add a text box in a list  
   
 1. On the **Insert** tab, select **List**.  
   
-2. On the design surface, select and then drag a box to the desired size of the list.  
+1. On the design surface, select and then drag a box to the desired size of the list.  
   
-3. On the **Insert** tab, select **Text Box**.  
+1. On the **Insert** tab, select **Text Box**.  
   
-4. On the design surface, select and then drag a box to the desired size of the text box inside the list you added in step 1.
+1. On the design surface, select and then drag a box to the desired size of the text box inside the list you added in step 1.
   
-5. To confirm the text box is correctly nested inside the list, select the text box.  
+1. To confirm the text box is correctly nested inside the list, select the text box.  
   
     > [!NOTE]  
     > If you select inside the text box and are in edit mode, press ESC to select the text box. The four-headed arrow icon is visible on the text box's border when it's selected.
   
-6. In the Properties pane, verify that the **Parent** property is the rectangle that was automatically added to the list data region.  
+1. In the Properties pane, verify that the **Parent** property is the rectangle that was automatically added to the list data region.  
   
     > [!NOTE]  
     > If the Properties pane isn't visible, check **Properties** on the **View** tab.  
@@ -55,7 +56,7 @@ ms.reviewer: rpatkar
     > [!NOTE]  
     > If you select within the text box and are in edit mode, press ESC to select the text box. The four-headed arrow icon is visible on the text box's border when it's selected.
   
-2. Select the text box handle and drag the text box to the new location.
+1. Select the text box handle and drag the text box to the new location.
 
     Alternatively, use the arrow keys to move a selected text box horizontally or vertically. To move the text box in smaller increments on the design surface, hold down CTRL plus the arrow keys.  
   
@@ -63,7 +64,7 @@ ms.reviewer: rpatkar
   
 - On the design surface, right-click any empty space within the text box to select it and open a local menu with the **Delete** command.
 
-    :::image type="content" source="../media/report-builder-delete-text-box.png" alt-text="Screenshot of a text box selected in Report Builder and the delete command highlighted in a local menu.":::
+    :::image type="content" source="../media/report-builder-delete-text-box.png" alt-text="Screenshot of a text box selected in Report Builder and the delete command highlighted in a local menu." lightbox="../media/report-builder-delete-text-box.png":::
   
     Alternatively, select any empty space within the text box, and then press DELETE.
 

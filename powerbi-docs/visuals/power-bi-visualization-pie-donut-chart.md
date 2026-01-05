@@ -1,9 +1,9 @@
 ---
 title: Create and use pie and donut charts in Power BI
 description: Learn how to create pie and donut charts in Power BI to visualize proportions and relationships. Step-by-step guide with examples. Get started today.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

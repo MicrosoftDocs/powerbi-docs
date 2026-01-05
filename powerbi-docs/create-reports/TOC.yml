@@ -350,10 +350,8 @@
     items: 
     - name: Visualization types in Power BI
       href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-    - name: Add visuals to a report (part 1)
-      href: ../visuals/power-bi-report-add-visualizations-i.md
-    - name: Add visuals to a report (part 2)
-      href: ../visuals/power-bi-report-add-visualizations-ii.md
+    - name: Add visuals to a report
+      href: ../visuals/power-bi-report-add-visualizations.md
     - name: Customize the Visualization pane
       href: ../visuals/power-bi-report-visualizations.md
     - name: Customize visual titles, backgrounds, legends, and more
@@ -580,8 +578,6 @@
       href: service-metrics-scorecard-refresh.md
     - name: Create subgoals
       href: service-goals-subgoals.md
-    - name: Create linked goals
-      href: service-metrics-linked-metrics.md
     - name: Create automated status rules
       href: service-goals-status-rules.md
     - name: Create custom statuses

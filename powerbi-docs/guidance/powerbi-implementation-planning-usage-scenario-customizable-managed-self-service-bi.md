@@ -1,9 +1,9 @@
 ---
 title: "Power BI usage scenarios: Customizable managed self-service BI"
 description: "Learn how Power BI customizable managed self-service BI is about creating new specialized semantic models by extending and personalizing existing semantic models."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

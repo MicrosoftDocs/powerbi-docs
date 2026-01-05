@@ -1,10 +1,10 @@
 ---
-title: "Add or modify default values for a Power BI paginated report parameter | Microsoft Docs"
+title: Add or Modify Default Values for a Power BI Paginated Report Parameter
 description: Use these steps to customize your reports with added, changed, or deleted default values for Power BI paginated report parameters.
-ms.date: 01/23/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-
 
 ms.topic: concept-article
 author: JulCsc
@@ -28,9 +28,9 @@ ms.reviewer: saurkumar
     > [!NOTE]  
     >  If the Report Data pane is not visible, click **View** and then click **Report Data**.  
   
-2.  Click **Default Values**.  
+1.  Click **Default Values**.  
   
-3.  Select a default option:  
+1.  Select a default option:  
   
     -   To manually provide a value or list of values, click **Specify values**. Click **Add** and then enter the value in the **Value** text box. You can write an expression for a value. The data type must match the data type of the parameter. Field names cannot be used in an expression for a parameter.  
   
@@ -40,17 +40,17 @@ ms.reviewer: saurkumar
   
          In **Value field**, choose the name of the field that provides parameter values.  
   
-4.  Select **OK**.
+1.  Select **OK**.
   
 ## Remove the default values for a report parameter  
   
 1.  In the Report Data pane, expand the **Parameters** node. Right-click the parameter and click **Edit**. The **Report Parameter Properties** dialog box opens.  
   
-2.  Click **Default Values**.  
+1.  Click **Default Values**.  
   
-3.  In **Select from one of the following options**, click **No default value**.  
+1.  In **Select from one of the following options**, click **No default value**.  
   
-4.  Select **OK**.
+1.  Select **OK**.
   
 ## Related content
 

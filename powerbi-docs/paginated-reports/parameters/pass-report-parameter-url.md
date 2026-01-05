@@ -1,7 +1,8 @@
 ---
-title: "Pass a report parameter within a URL for a Power BI paginated report | Microsoft Docs"
+title: Pass a Report Parameter Within a URL for a Power BI Paginated Report
 description: Learn how to pass report parameters directly to the report processing engine by including them in a report URL for a Power BI paginated report.
-ms.date: 01/25/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -83,7 +84,7 @@ https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d
 ## Considerations and limitations
   
 - If your report contains a report parameter that has a default value, and the value of the Prompt property is false (that is, the Prompt User property isn't selected in Power BI Report Builder), then you can't pass a value for that report parameter within a URL. This provides administrators the option of preventing end users from adding or modifying the values of certain report parameters.
-- Power BI doesn't support a query string of more than 2,000 characters. You may inadvertently exceed this value if you use URL parameters to view your paginated report, especially if your query string contains multiple parameter values. To properly load the report, reduce the number of characters to under 2,000.
+- Power BI doesn't support a query string of more than 2,000 characters. You might inadvertently exceed this value if you use URL parameters to view your paginated report, especially if your query string contains multiple parameter values. To properly load the report, reduce the number of characters to under 2,000.
 - The limit in the query string is evaluated after you're signed in to Power BI. If you open the report before signing in, the limit is reduced.
 - The supported date formats for passing report parameters within a URL are ISO (YYYY-MM-DD) and en-US (MM/DD/YYYY).
   

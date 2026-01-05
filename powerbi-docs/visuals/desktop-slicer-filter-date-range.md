@@ -1,14 +1,15 @@
 ---
-title: Create a relative date slicer or filter in Power BI
+title: Create a Relative Date Slicer or Filter in Power BI
 description: Learn how to use a slicer or filter to constrain relative date ranges in Power BI.
-author: DataZoeMS
-ms.author: zoedouglas
-ms.reviewer: 'rien'
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/04/2024
+ms.date: 12/01/2025
 LocalizationGroup: Create reports
+ai-usage: ai-assisted
 ---
 
 # Create a relative date slicer and filter in Power BI
@@ -98,8 +99,8 @@ The following considerations and limitations apply before showing the relative o
 
 - The data type for the column used in the slicer must be a date.
 - The date hierarchy for auto date/time in Power BI can't be used. Use the date column directly.
-- Date columns in **Power BI** don't include time zone info. 
-- When the report is published, slicer and filter relative options are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. 
+- Date columns in **Power BI** don't include time zone info.
+- When the report is published, slicer and filter relative options are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data.
 
 ## Related content
 

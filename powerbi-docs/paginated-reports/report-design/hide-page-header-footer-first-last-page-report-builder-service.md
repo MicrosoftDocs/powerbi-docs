@@ -1,7 +1,8 @@
 ---
-title: "Hide page header or footer on first or last page of a paginated report"
+title: Hide Page Header or Footer on First or Last Page of a Paginated Report
 description: Do you want a header or footer on the first or last page of your report? If not, find out how to turn off display of the header or footer in Power BI Report Builder.
-ms.date: 03/22/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

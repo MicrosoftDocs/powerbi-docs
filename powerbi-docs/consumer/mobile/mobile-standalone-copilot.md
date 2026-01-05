@@ -1,8 +1,8 @@
 ---
 title: Standalone Copilot in Power BI Mobile Apps (Preview)
 description: Learn how to use standalone Copilot in Power BI mobile apps to ask questions about your data and get instant insights. Access reports, semantic models, and data agents.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile

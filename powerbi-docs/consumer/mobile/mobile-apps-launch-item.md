@@ -1,8 +1,8 @@
 ---
 title: Choose Start-Up View
 description: Learn how to choose an item that will load automatically whenever you open your Power BI mobile app.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to

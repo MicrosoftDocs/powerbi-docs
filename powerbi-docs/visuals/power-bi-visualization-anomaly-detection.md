@@ -1,9 +1,9 @@
 ---
 title: Anomaly detection tutorial
 description: Learn how to use Anomaly detection of Power BI Desktop to add anomalies, format anomalies, and view and configure explanations.
-author: aphilip94
-ms.author: anphil
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: anphil
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: video-RE4M2hp

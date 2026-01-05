@@ -1,14 +1,15 @@
 ---
-title: Working with visualizations (visuals) as a business user
-description: Learn about Power BI terms and concepts and the most common interactions with the visuals on dashboards, in reports, or in Q&A.
+title: Interact with Visuals in Reports, Dashboards, and Apps
+description: Learn about Power BI visualizations and how business users can interact with visuals on dashboards, in reports, and in Q&A to uncover insights.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/11/2025
+ms.date: 12/01/2025
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 
 # Interact with visuals in reports, dashboards, and apps
@@ -22,9 +23,9 @@ You can find visuals on dashboards and in reports, and you can create them insta
 :::image type="content" source="media/end-user-visualizations/power-bi-dashboards.png" alt-text="Screenshot of a Power BI service window showing a dashboard in the main pane." lightbox="media/end-user-visualizations/power-bi-dashboards.png":::
 
 > [!TIP]
-> We recommend reading the overview topic [Basics of the Power BI service](../fundamentals/service-basic-concepts.md) before reading this more detailed content.
+> It's recommended to read the overview topic [Basics of the Power BI service](../fundamentals/service-basic-concepts.md) before reading this more detailed content.
 
-## What can I do with visuals
+## What can I do with visuals?
 
 Report and dashboard designers create and share visuals with colleagues. The designer assigns different permissions to their colleagues, depending on how each colleague uses the report or dashboard. For example, the designer can assign a *developer* different permissions than a *business user*.
 
@@ -65,3 +66,6 @@ The administrator or the designer can disable your ability to see or use these f
 - [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 - [Open a report in the Power BI service](end-user-report-open.md)
 - [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+> [!TIP]
+> **Want to practice creating your own reports?** Power BI includes built-in sample datasets you can use for hands-on learning. See [Get samples for Power BI](../create-reports/sample-datasets.md) to download sample files or connect to sample data directly in the Power BI service.

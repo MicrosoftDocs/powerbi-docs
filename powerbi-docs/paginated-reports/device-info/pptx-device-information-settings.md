@@ -1,7 +1,8 @@
 ---
-title: "PPTX device information settings for Power BI paginated reports"
+title: PPTX Device Information Settings for Power BI Paginated Reports
 description: Learn details about the device information settings for rendering Power BI paginated reports in the PPTX format. 
-ms.date: 06/28/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -32,7 +33,4 @@ ms.author: juliacawthra
   
 ## Related content
 
-- [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
-
-  
-  
+- [URL parameters in paginated reports](../report-builder-url-parameters.md)

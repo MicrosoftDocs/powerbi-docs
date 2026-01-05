@@ -7,7 +7,7 @@ ms.reviewer: petebro
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 keywords:
   - "install pbirb, download pbirb, latest pbirb"
@@ -35,7 +35,7 @@ PBIRB September 2025 is the current generally available (GA) version.
 - Build number: 15.7.1815.334
 - Release date: September 11, 2025
 
-## System Requirements
+## System requirements
 
 - Supported Operating Systems:
   - Windows 10

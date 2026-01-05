@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 12/01/2025
 ms.custom: licensing support
 LocalizationGroup: Get started
 
@@ -142,11 +142,22 @@ You can also purchase Pro or PPU licenses from the [Microsoft Power BI pricing s
 
 Common blockers and next steps:
 
-- Self-service sign-up or purchase disabled: Contact a Billing admin to request a license or enable self-service.
-- Self-service upgrades disabled: Purchase directly (if permitted) via in-product prompt or pricing site; you receive a limited Microsoft 365 admin view to assign seats you buy.
-- Internal process required: Follow your organization's custom request workflow rather than the standard flows shown here.
-- No existing subscription for your domain: Email validation may route you through an alternate sign-up or tenant creation experience.
-- Feature still prompts for upgrade after sign-in: Your current license is Fabric (Free) and the feature requires Pro or PPU (or PPU-only workspace access).
+- **Self-service sign-up or purchase disabled:** Contact a Billing admin to request a license or enable self-service.
+- **Self-service upgrades disabled:** Purchase directly (if permitted) via in-product prompt or pricing site; you receive a limited Microsoft 365 admin view to assign seats you buy.
+- **Internal process required:** Follow your organization's custom request workflow rather than the standard flows shown here.
+- **No existing subscription for your domain:** Email validation may route you through an alternate sign-up or tenant creation experience.
+- **Feature still prompts for upgrade after sign-in:** Your current license is Fabric (Free) and the feature requires Pro or PPU (or PPU-only workspace access).
+
+### Additional troubleshooting
+
+If the screenshots or options in this article don't match what you see in the Power BI service, it might be because:
+
+- **UI updates:** The Power BI interface is updated regularly. The location of buttons and menus may change slightly from what's shown in screenshots.
+- **License or tenant differences:** Your organization's configuration affects what options appear. The account menu and available upgrade paths vary by organization.
+- **Browser or cached data:** Try clearing your browser cache or using an incognito/private window.
+- **Regional differences:** Some features roll out at different times in different regions.
+
+If you still can't find the option you're looking for, contact your organization's IT administrator or visit the [Power BI Community](https://community.powerbi.com/) for help.
 
 For a broader Q&A set, see the [self-service licensing and trial FAQ](service-self-service-sign-up-help.md).
 

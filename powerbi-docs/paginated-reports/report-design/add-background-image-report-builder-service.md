@@ -1,7 +1,8 @@
 ---
-title: "Add a background image to a Power BI paginated report"
+title: Add a Background Image to a Power BI Paginated Report
 description: Discover how to embed an image in the paginated report definition to add the image to a variety of report items including text boxes, lists, and page header.
-ms.date: 04/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

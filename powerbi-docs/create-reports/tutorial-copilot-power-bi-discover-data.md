@@ -1,9 +1,9 @@
 ---
 title: Copilot in Power BI tutorial - Discover data and ask questions
 description: This article provides an overview of using Copilot in Power BI to ask questions and get insights using natural language inputs.
-ms.reviewer: juliacawthra
-ms.author: alpowers
-author: itsnotaboutthecell
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

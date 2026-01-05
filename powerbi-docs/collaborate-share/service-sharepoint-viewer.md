@@ -1,5 +1,5 @@
 ---
-title: View Power BI files in OneDrive and SharePoint
+title: View Power BI Files in OneDrive and SharePoint
 description: Learn how to view and interact with Power BI Desktop files directly in SharePoint document libraries and OneDrive without downloading.
 author: JulCsc
 ms.author: juliacawthra
@@ -9,7 +9,8 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: View Power BI file in SharePoint and OneDrive
 ms.topic: concept-article
 ms.custom: 
-ms.date: 02/21/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 #customer intent: As a Power BI user I want to learn how to view Power BI Desktop files in SharePoint and OneDrive.
 ---
@@ -19,17 +20,17 @@ LocalizationGroup: Share your work
 You can quickly view Power BI files in OneDrive and SharePoint without needing to install Power BI Desktop or download the file locally. Viewing Power BI files in your browser enables collaboration and a streamlined workflow before publishing through the Power BI Service.
 
 > [!NOTE]
-> This is public preview documentation and some capabilities may not be available in your tenant.
+> This feature is in public preview, and some capabilities might not be available in your tenant.
 
 ## Enable viewing Power BI files in OneDrive and SharePoint
 
 Viewing Power BI files in OneDrive and SharePoint is enabled **by default**.
 
-If you **do not** want this capability on in your tenant, your admin needs to [**disable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
+If you **don't** want this capability on in your tenant, your admin needs to [**disable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
 
-If the capability isn't turned on in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the best viewing experience and to ensure you always have a backup of your file in the cloud, we encourage admins to turn on the functionality. 
+If the capability isn't turned on in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the best viewing experience and to ensure you always have a backup of your file in the cloud, admins should turn on the functionality.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png" alt-text=" A screenshot of capability disabled view." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png" alt-text="Screenshot of the capability disabled view in OneDrive." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png":::
 
 ## Open a Power BI file stored in a OneDrive or SharePoint library
 
@@ -51,7 +52,7 @@ Once the report is open, you can interact with the visuals and explore the under
 
 ## Share a link to the report with others
 
-You can share a link to a Power BI file with others in two ways. 
+You can share a link to a Power BI file with others in two ways.
 
 - On the **File** menu, select **Share** from the left-hand menu > **Share a link**.
 
@@ -59,7 +60,7 @@ You can share a link to a Power BI file with others in two ways.
 
 - You can also share a link to the report with others by selecting the **Share** button at the top right of the report.
 
-    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="A screenshot of share button in browser." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png":::
+    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of the share button in browser." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png":::
 
 Power BI uses the standard Microsoft 365 share dialog box to help you share your file. This dialog enforces your permissions in OneDrive and SharePoint and any policies that apply to the OneDrive folder or SharePoint document library where the file is saved.
 
@@ -127,7 +128,7 @@ The preview provides a limited experience with options to download the .pbix fil
 
 ## Version history
 
-You can also use the built-in Microsoft 365 version history capability to track report activity and return to old versions of a file. From your OneDrive and SharePoint document library, select the ellipsis **(...)** next to the Power BI file name and select **Version history** from the options. After selecting **Version history**, you'll be able to store, track, and restore the file whenever a change is made.
+You can also use the built-in Microsoft 365 version history capability to track report activity and return to old versions of a file. From your OneDrive and SharePoint document library, select the ellipsis **(...)** next to the Power BI file name and select **Version history** from the options. After selecting **Version history**, you can store, track, and restore the file whenever a change is made.
 
 :::image type="content" source="media/service-sharepoint-viewer/powerbi-onedrive-version-history.png" alt-text="Screenshot of version history." lightbox="media/service-sharepoint-viewer/powerbi-onedrive-version-history.png":::
 
@@ -197,7 +198,7 @@ The new capabilities respect the OneDrive and SharePoint organizational settings
 
 The first time anyone opens a Power BI file in a browser through a OneDrive or SharePoint document library, a system workspace is created in the Power BI service and the report selected is published behind the scenes. This process results in a longer initial loading time. After that initial report viewing, loading time decreases significantly. The creation of the workspace to view a file stored in OneDrive or SharePoint has no implications on your Power BI Premium capacity storage.
 
-Admins can see the workspaces created in the Power BI service on the **Workspaces** tab in the Admin portal. Created workspaces have the word **OneDrive** at the end of the workspace name. They're also listed as **PBIX in OneDrive Folder** in the description column. 
+Admins can see the workspaces created in the Power BI service on the **Workspaces** tab in the Admin portal. Created workspaces have the word **OneDrive** at the end of the workspace name. They're also listed as **PBIX in OneDrive Folder** in the description column.
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png" alt-text="Screenshot of Power BI admin workspace creation naming." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png":::
 

@@ -1,9 +1,9 @@
 ---
 title: Configure Kerberos SSO for SAP HANA
 description: Learn how to configure Kerberos single sign-on (SSO) for SAP HANA in Power BI service. Includes step-by-step setup and troubleshooting guidance.
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

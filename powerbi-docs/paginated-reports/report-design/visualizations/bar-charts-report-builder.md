@@ -1,7 +1,8 @@
 ---
-title: "Bar charts in a Power BI paginated report | Microsoft Docs"
+title: Bar Charts in a Power BI Paginated Report
 description: Display data horizontally with a bar chart to represent data in a paginated report with a finite start and end date in Power BI Report Builder.
-ms.date: 04/12/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: article
@@ -19,7 +20,7 @@ ms.reviewer: monaraya
   
  The following illustration shows a bar chart. The bar chart is well suited for this data because all three series share a common time period, allowing for valid comparisons to be made.  
   
- ![Screenshot showing bar chart.](media/paginated-reports-visualizations/bar-chart.gif "Bar chart")  
+ :::image type="content" source="media/paginated-reports-visualizations/bar-chart.gif" alt-text="Screenshot showing bar chart." lightbox="media/paginated-reports-visualizations/bar-chart.gif":::  
 
 ## Variations of the bar chart  
   
@@ -37,11 +38,11 @@ ms.reviewer: monaraya
   
 - Bar and column charts are most commonly used to show comparisons between groups. If more than three series are present on the chart, consider using a stacked bar or column chart. You can also collect stacked bar or column charts into multiple groups if you have several series on your chart.  
   
-- A bar chart displays values from left to right, which may be more intuitive when displaying data related to durations.  
+- A bar chart displays values from left to right, which might be more intuitive when displaying data related to durations.  
   
 - If you are looking to add bars to a table or matrix within the report, consider using a linear gauge instead of a bar chart. The linear gauge is designed to show one value instead of multiple groups, so it is more flexible for use within a list or table data region. For more information, see [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md).  
   
-- You can add special drawing styles to the individual bars on a bar chart to increase its visual impact. Drawing styles include wedge, emboss, cylinder, and light-to-dark. These effects are designed to improve the appearance of your 2D chart. If you are using a 3D chart, the drawing styles will still be applied, but may not have the same effect. For more information about how to add a drawing style to a bar chart, see [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-bevel-emboss-or-texture-report-builder.md).  
+- You can add special drawing styles to the individual bars on a bar chart to increase its visual impact. Drawing styles include wedge, emboss, cylinder, and light-to-dark. These effects are designed to improve the appearance of your 2D chart. If you are using a 3D chart, the drawing styles will still be applied, but might not have the same effect. For more information about how to add a drawing style to a bar chart, see [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-bevel-emboss-or-texture-report-builder.md).  
   
 - Stacked bar charts place series on top of each other to create one bar stack. You have the option of separating the stacked bar chart into multiple sets of stacks for each category. The grouped stacked chart is displayed side-by-side. You can have any number of grouped stacked series in a chart.  
   

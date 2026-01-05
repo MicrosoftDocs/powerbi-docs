@@ -1,9 +1,9 @@
 ---
 title: "BI solution architecture in the Center of Excellence"
 description: "Learn what to consider when designing and developing a robust BI platform."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

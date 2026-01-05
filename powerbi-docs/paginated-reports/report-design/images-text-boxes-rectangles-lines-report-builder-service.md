@@ -1,7 +1,8 @@
 ---
-title: "Images, text boxes, rectangles, and lines in a Power BI paginated report"
+title: Images, Text Boxes, Rectangles, and Lines in a Power BI Paginated Report
 description: Add visual interest, highlight key information, or provide related information in Power BI Report Builder. Add images, text boxes, rectangles, and lines in a paginated report. 
-ms.date: 04/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: article

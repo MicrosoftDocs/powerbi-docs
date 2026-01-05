@@ -1,7 +1,8 @@
 ---
-title: "Format lines, colors, and images in a Power BI paginated report"
+title: Format Lines, Colors, and Images in a Power BI Paginated Report
 description: Explore ways to use lines, colors, data regions, and images in a paginated report. Visually tie items together to improve readability in Power BI Report Builder.
-ms.date: 04/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

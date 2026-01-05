@@ -1,7 +1,8 @@
 ---
-title: "Page headers and footers in a paginated report"
+title: Page Headers and Footers in a Paginated Report
 description: Discover the many paginated report items you can add to headers and footers, including text, images, rectangles, borders, background color, and expressions in Power BI Report Builder. 
-ms.date: 03/22/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: article
@@ -96,7 +97,7 @@ A paginated report can contain a header and footer that run along the top and bo
 ## Design reports with page headers and footers for specific renderers  
  When a report is processed, data and layout information are combined. When you view a report, the combined information is passed to a renderer that determines how much report data fits on each report page.  
   
- If you view a report on the report server using a browser, the HTML renderer controls the content on the report pages that you see. If you plan to deliver reports in a different format than you use for viewing, or if you plan to print reports in a specific format, you may want to optimize the report layout for the renderer you plan to use for the final report format. For more information about report pagination, see [Pagination in Reporting Services &#40;Report Builder  and service&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).
+ If you view a report on the report server using a browser, the HTML renderer controls the content on the report pages that you see. If you plan to deliver reports in a different format than you use for viewing, or if you plan to print reports in a specific format, you might want to optimize the report layout for the renderer you plan to use for the final report format. For more information about report pagination, see [Pagination in Reporting Services &#40;Report Builder  and service&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).
   
 ## Work with page headers and footers in Excel
 

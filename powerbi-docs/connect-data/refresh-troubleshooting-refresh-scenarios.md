@@ -9,6 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 11/14/2025
 LocalizationGroup: Data refresh
+ai-usage: ai-assisted
 ---
 
 # Troubleshoot refresh scenarios
@@ -178,15 +179,18 @@ If this error appears, the following steps can address the issue:
 2. For each *SummarizeColumns* expression, make the following changes:
 
   For a *SummarizeColumns* expression with *GB* on *Product* and *Geography*, for example:
-  ```
+
+  ```sql
   SummarizeColumns(
   Product[Color],
   Geography[Country],
   ...
   )
   ```
+
   Add *Product* and *Geography* as filters into *SummarizeColumns* so it looks like the following expression:
-  ```
+
+  ```sql
   SummarizeColumns(
   Product[Color],
   Geography[Country],
@@ -195,6 +199,7 @@ If this error appears, the following steps can address the issue:
   ...
   )
   ```
+
 These steps remove the introduced blank row and restores the original behavior. If you have multiple calculated tables that uses *SummarizeColumns*, changes for all tables should be submitted together in a single transaction which requires the [Tabular Editor](https://www.sqlbi.com/tools/tabular-editor/) to make the modifications, since Power BI Desktop cannot batch multiple table changes into a single transaction.
 
 ## Connection errors when refreshing from semantic models
@@ -202,6 +207,20 @@ These steps remove the introduced blank row and restores the original behavior. 
 The Analysis Services connector may encounter the error ```The connection either timed out or was lost```. This error is usually a transient error when the network connection fails, and a retry will succeed. 
  
 In some circumstances, this error can be more permanent when the results of the query are being used in a complex M expression, and the results of the query are not fetched quickly enough during execution of the M program. For example, this error can occur when a data refresh is copying from a Semantic Model and the M script involves multiple joins. In such scenarios, data might not be retrieved from the outer join for extended periods, leading to the connection being closed with the above error. To work around this issue, you can use the ```Table.Buffer``` function to cache the outer join table.
+
+## Dataflow refresh completes quickly without updating data
+
+If a dataflow refresh appears to complete in an unusually short time without throwing any errors, but the data isn't actually being updated, consider the following causes:
+
+* **All data already processed**: If you're using incremental refresh, the dataflow may have already processed all available new or changed data in a previous refresh. The refresh completes quickly because there's nothing new to process. Check your incremental refresh policy and the date range it covers.
+
+* **Incremental refresh filter issue**: Verify that your incremental refresh filter is correctly configured. If the filter excludes all data, the refresh completes without processing any rows.
+
+* **Linked or dependent dataflows**: If your dataflow references another dataflow and that upstream dataflow hasn't changed, Power BI might skip the refresh of dependent entities. Check whether any upstream dataflows have actually refreshed.
+
+* **No data changes at the source**: The dataflow might be connecting to a data source where no new data has been added or changed since the last refresh. In this case, the refresh completes successfully but no data is updated.
+
+To troubleshoot, download the refresh history CSV to view the **Rows processed** and **Bytes processed** metrics. If these values are zero or significantly lower than expected, it indicates that no new data was processed during the refresh. You can also manually trigger a full refresh (if not using incremental refresh) to verify that the dataflow can retrieve data properly.
 
 ## Related content
 

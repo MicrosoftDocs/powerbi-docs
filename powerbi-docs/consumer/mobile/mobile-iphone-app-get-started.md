@@ -1,8 +1,8 @@
 ---
 title: Get started with the Power BI mobile app for iOS
 description: Learn how the Microsoft Power BI mobile app for iOS app brings Power BI to your pocket, with mobile access to business information on premises and in the cloud.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

@@ -1,7 +1,8 @@
 ---
-title: "Teradata connection type for Power BI paginated reports| Microsoft Docs"
+title: Teradata Connection Type for Power BI Paginated Reports
 description: Use the information in this article about the Teradata connection type to learn how to build a Power BI paginated report using this data source.
-ms.date: 01/27/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.reviewer: rpatkar

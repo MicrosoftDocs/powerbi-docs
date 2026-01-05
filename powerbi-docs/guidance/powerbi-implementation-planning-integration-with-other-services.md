@@ -1,9 +1,9 @@
 ---
 title: "Power BI implementation planning: Integration with Other Services"
 description: "This article helps you to plan how and when to integrate Power BI and Microsoft Fabric with other services."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: asaxton
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

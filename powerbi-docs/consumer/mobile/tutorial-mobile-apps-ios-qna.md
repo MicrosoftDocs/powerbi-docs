@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Ask Questions with Q&A Virtual Analyst in the Power BI iOS Apps"
 description: Learn how to use the Q&A virtual analyst in the Power BI iOS mobile app to ask natural language questions about sample data and explore insights.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

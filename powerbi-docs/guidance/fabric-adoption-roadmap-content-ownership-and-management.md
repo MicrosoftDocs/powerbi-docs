@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Content ownership and management"
 description: "Develop strategies about how data, analytics, and BI content is owned and managed to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
 ms.topic: concept-article
 ms.custom: fabric-cat

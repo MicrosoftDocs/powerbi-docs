@@ -1,8 +1,9 @@
 ---
 title: 'Artificial Intelligence sample for Power BI: Take a tour'
 description: The Artificial Intelligence sample a report for a fictitious company to show features of reports in the Power BI service and Power BI Desktop.
-author: itsnotaboutthecell
-ms.author: alpowers
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article

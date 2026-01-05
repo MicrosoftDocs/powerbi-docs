@@ -1,7 +1,8 @@
 ---
-title: "Export Power BI paginated report to Microsoft Excel (Power BI Report Builder) | Microsoft Docs"
+title: Export Power BI Paginated Report to Microsoft Excel (Power BI Report Builder)
 description: In Power BI Report Builder, the Excel rendering extension renders a Power BI paginated report to the Office Open XML format to use with Microsoft Excel.
-ms.date: 03/02/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -24,7 +25,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
  See [Export reports &#40;Power BI Report Builder&#41;](export-reports-report-builder.md) for details on how to export to Excel.  
   
 > [!IMPORTANT]  
->  When you define a parameter of type **String**, the user is presented with a text box that can take any value. If a report parameter is not tied to a query parameter and the parameter values are included in the report, it is possible for a report user to type expression syntax, script, or a URL into the parameter value, and render the report to Excel. If another user then views the report and selects the rendered parameter contents, the user may inadvertently execute the malicious script or link.  
+>  When you define a parameter of type **String**, the user is presented with a text box that can take any value. If a report parameter is not tied to a query parameter and the parameter values are included in the report, it is possible for a report user to type expression syntax, script, or a URL into the parameter value, and render the report to Excel. If another user then views the report and selects the rendered parameter contents, the user might inadvertently execute the malicious script or link.  
 >   
 >  To mitigate the risk of inadvertently running malicious scripts, open rendered reports only from trusted sources. For more information about securing reports, see [Secure reports and resources](/sql/reporting-services/security/secure-reports-and-resources).  
   
@@ -56,7 +57,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
 -   The text effect "Overline" is not supported in Excel.  
   
--   Excel adds a default padding of approximately 3.75 points to the left and right sides of cells. If a text box's padding settings are less than 3.75 points and is just barely wide enough to accommodate the text, the text may wrap in Excel.  
+-   Excel adds a default padding of approximately 3.75 points to the left and right sides of cells. If a text box's padding settings are less than 3.75 points and is just barely wide enough to accommodate the text, the text might wrap in Excel.  
   
     > [!NOTE]  
     >  To work around this issue, increase the width of the text box in the report.  
@@ -98,20 +99,22 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
 ### Report row groups and column groups  
  Reports that include row groups or column groups contain empty cells when exported to Excel. Imagine a report that groups rows on commute distance. Each commute distance can contain more than one customer. The following picture shows the report.  
   
- ![Screenshot of the Report in the Reporting Services web portal.](../media/paginated-reports-export/excel-export.png "Report in the Reporting Services web portal.")  
+ :::image type="content" source="../media/paginated-reports-export/excel-export.png" alt-text="Screenshot of the Report in the Reporting Services web portal." lightbox="../media/paginated-reports-export/excel-export.png":::  
 
   
  When the report is exported to Excel, the commute distance appears only in one cell of the Commute Distance column. Depending on the alignment of the text in the report (top, middle, or bottom) the value is in the first, middle, or last cell. The other cells are empty. The Name column that contains customer names has no empty cells. The following picture shows the report after it is exported to Excel. The red cell borders were added for emphasis. The gray boxes are the empty cells. (Neither the red lines nor the gray boxes are part of the exported report.)  
   
- ![Screenshot of the Report exported to Excel, with lines.](../media/paginated-reports-export/exported-excel-lines.png "Report exported to Excel, with lines.")  
+ :::image type="content" source="../media/paginated-reports-export/exported-excel-lines.png" alt-text="Screenshot of the Report exported to Excel, with lines." lightbox="../media/paginated-reports-export/exported-excel-lines.png":::  
   
  This means that reports with row groups or column groups require modification after exporting to Excel and before you can display the exported data in pivot table. You must add the group value to cells in which they are missing to make the worksheet a flat table with values in all cells. The following picture shows the updated worksheet.  
   
- ![Screenshot of the Report exported to Excel, flattened.](../media/paginated-reports-export/excel-export-no-matrix.png "Report exported to Excel, flattened.")  
+ :::image type="content" source="../media/paginated-reports-export/excel-export-no-matrix.png" alt-text="Screenshot of the Report exported to Excel, flattened." lightbox="../media/paginated-reports-export/excel-export-no-matrix.png":::  
   
  So if you create a report for the specific purpose of exporting it to Excel for further analysis of the report data, consider not grouping on rows or columns in your report.  
   
 ## Excel renderer  
+
+Power BI supports multiple Excel file format renderers.
   
 ### Current (.xlsx) Excel file renderer  
  In Reporting Services, the defaultExcel renderer is the version compatible with current (.xlsx) Microsoft Excel files. This is the **Excel** option on the **Exporting** menus in the Power BI Services web portal and SharePoint list.  

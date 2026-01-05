@@ -1,9 +1,9 @@
 ---
 title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
-author: jtarquino
-ms.author: jaimeta
-ms.reviewer: juliacawthra
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: jaimeta
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: concept-article
@@ -49,9 +49,6 @@ Note: This is the first release of Power BI Desktop for RS that will not include
 
 ### Power BI Report Server
 
-> [!IMPORTANT]
-> Starting with the May 2025 version of Power BI Desktop for RS, your CPU must support Advanced Vector Extensions (AVX) instructions. If your CPU doesn't support AVX instructions, you might encounter unexpected errors when rendering visuals in Power BI Desktop or Power BI Report Server. Even if your CPU supports AVX, the host machine's BIOS or virtualization settings could have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration. 
-
 - *Version: 1.23.9316.13987 (build 15.0.1118.134), Released: July 9, 2025*
   - Bug fixes
     - Fixed issue with document map not expanding when viewing paginated reports.
@@ -77,8 +74,11 @@ Note: This is the first release of Power BI Desktop for RS that will not include
     - Additional screen reader support for the tree view.
 
 ### Power BI Desktop (optimized for Power BI Report Server)
+> [!IMPORTANT]
+> Starting with the May 2025 version of Power BI Desktop for RS, your CPU must support Advanced Vector Extensions (AVX) instructions. If your CPU doesn't support AVX instructions, you might encounter unexpected errors when rendering visuals in Power BI Desktop or Power BI Report Server. Even if your CPU supports AVX, the host machine's BIOS or virtualization settings could have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration. 
 
-Note: This is the last release of Power BI Desktop for RS that will include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+> [!NOTE]
+> This is the last release of Power BI Desktop for RS that will include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
 
 - *Version: 2.143.4379.0  (May 2025), Released: October 6, 2025*
      - Security updates

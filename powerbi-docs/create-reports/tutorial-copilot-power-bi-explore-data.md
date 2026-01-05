@@ -1,9 +1,9 @@
 ---
 title: Copilot in Power BI tutorial - Explore data and get more insights
 description: This article provides an overview of understanding data using Copilot in Power BI in the cloud service.
-ms.reviewer: juliacawthra
-ms.author: alpowers
-author: itsnotaboutthecell
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

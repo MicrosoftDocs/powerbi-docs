@@ -1,7 +1,8 @@
 ---
-title: "Add bevel, emboss, and texture styles to a Power BI paginated report chart | Microsoft Docs"
+title: Add Bevel, Emboss, and Texture Styles to a Power BI Paginated Report Chart
 description: Learn how to specify a drawing effect, such as bevels, embossing, or textures, to increase the visual impact of your paginated report chart in Power BI Report Builder. 
-ms.date: 04/12/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -34,7 +35,7 @@ ms.reviewer: monaraya
 > [!NOTE]  
 >  You can't have 3D and bevel or emboss styles on the same chart. If you have enabled 3D for the chart, you will not see the PieDrawingStyle property.  
   
- ![Screenshot showing pie chart with concave drawing style.](media/paginated-reports-visualizations/pie-drawing-effects-concave.gif "Pie chart with concave drawing style.")  
+ :::image type="content" source="media/paginated-reports-visualizations/pie-drawing-effects-concave.gif" alt-text="Screenshot showing pie chart with concave drawing style." lightbox="media/paginated-reports-visualizations/pie-drawing-effects-concave.gif":::  
   
 ## Add texture styles to a bar or column chart  
   
@@ -49,7 +50,7 @@ ms.reviewer: monaraya
 > [!NOTE]  
 >  You can't have 3D and bevel or emboss styles on the same chart. If you have enabled 3D for the chart, you won't see the PieDrawingStyle property.  
   
- ![Screenshot showing bar chart with Light-To-Dark drawing effect.](media/paginated-reports-visualizations/bar-drawing-effects-light-to-dark.gif "Bar chart with Light-To-Dark drawing effect.")  
+ :::image type="content" source="media/paginated-reports-visualizations/bar-drawing-effects-light-to-dark.gif" alt-text="Screenshot showing bar chart with Light-To-Dark drawing effect." lightbox="media/paginated-reports-visualizations/bar-drawing-effects-light-to-dark.gif":::  
   
 ## Related content
 

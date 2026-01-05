@@ -1,9 +1,9 @@
 ---
 title: Create Smart Narrative Summaries
 description: Learn how to create and customize smart narrative visualizations in Power BI to generate automatic text summaries of visuals and reports with dynamic values, formatting options, and interactive insights.
-author: aphilip94
-ms.author: anphil
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: anphil
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to

@@ -1,5 +1,5 @@
 ---
-title: "Send large report subscriptions to OneDrive SharePoint"
+title: Send Large Report Subscriptions to Onedrive Sharepoint
 description: Subscribe to deliver your full Power BI and paginated reports to the OneDrive SharePoint location when you set up your subscription.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 03/10/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.custom: sfi-image-nochange
 #customer intent: The customer is looking to set up subscriptions to deliver large Power BI and paginated reports to OneDrive SharePoint.
 ---
@@ -41,9 +42,9 @@ Here's how you subscribe to a full report to be delivered to OneDrive SharePoint
 
 1. Select **Create a subscription**. 
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-create-subscription.png" alt-text="Screenshot showing subscribe to paginated" lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-create-subscription.png":::
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-create-subscription.png" alt-text="Screenshot showing subscribe to paginated." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-create-subscription.png":::
 
-1. We currently support Standard subscriptions. Select **Standard**.  
+1. Currently, only Standard subscriptions are supported. Select **Standard**.  
 
     :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-standard.png" alt-text="Screenshot showing in the Subscriptions pane, create a standard subscription." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-standard.png":::
 
@@ -98,7 +99,6 @@ Learn more about [subscribing to OneDrive SharePoint](/sharepoint/onedrive-overv
 
 - [Microsoft Entra Business-to-Business (B2B) guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b) can't choose OneDrive SharePoint. 
 - Premium per user accounts can't choose OneDrive SharePoint.
-
 
 ## Related content
 
