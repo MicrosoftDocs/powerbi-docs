@@ -87,9 +87,9 @@ The visual tooltips were updated in January 2026 with the modern tooltips featur
 
 The tooltip actions footer isn't available in the following scenarios: 
 
-- [Report page tooltips] (https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-tooltips)
-- [Custom visuals] (https://learn.microsoft.com/en-us/power-bi/developer/visuals/develop-power-bi-visuals) (AppSource visuals)
-- [Decomposition trees] (https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-decomposition-tree)
+- [Report page tooltips](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-tooltips)
+- [Custom visuals](https://learn.microsoft.com/en-us/power-bi/developer/visuals/develop-power-bi-visuals) (AppSource visuals)
+- [Decomposition trees](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-decomposition-tree)
 
 
 ## Related content
