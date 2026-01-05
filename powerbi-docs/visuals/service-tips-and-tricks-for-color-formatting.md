@@ -125,6 +125,18 @@ In the **Format pane settings** or ellipsis (...) at the top, you can **Reset al
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png" alt-text="Screenshot of Formatting card showing Reset to default.":::
 
+
+## Color Picker Experience in Power BI
+Power BI report creators can customize colors in visuals with a theme color picker and custom color picker. We have added additional capabilities to this release.
+•	A clear indicator for the currently selected theme color. 
+•	A simple way to reset colors to their default settings.
+:::image type="content" source="" alt-text="Screenshot of theme color picker user interface in Power BI.":::
+ 
+•	A back button to return from custom colors to theme colors.
+:::image type="content" source="" alt-text="Screenshot of custom color picker in Power BI.":::
+ 
+
+
 ## Give us your feedback
 
 Do you have a tip you want to share? Send it our way.
