@@ -3,7 +3,7 @@ title: Create and use filled maps (choropleth maps) in Power BI
 description: Learn how to create and use filled maps (choropleth maps) in Power BI Desktop and the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
+ms.reviewer: zoedouglas
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
