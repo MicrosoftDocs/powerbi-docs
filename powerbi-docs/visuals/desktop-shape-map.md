@@ -28,7 +28,7 @@ The **Shape map** visual is only available in Power BI Desktop and not in Power 
 
 ## Create a Shape map
 
-You can test the **Shape map** control with the maps that ship with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use custom maps**. **Shape map** visuals are based on maps that you can find on the Internet, create yourself, or convert to the TopoJSON format. See the section below to learn more. Examples of custom maps are: geographical, seating arrangements, floor plans, and others.
+You can test the **Shape map** control with the maps that ship with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use custom maps**. **Shape map** visuals are based on maps that you can find on the Internet, create yourself, or convert to the TopoJSON format. Examples of custom maps are: geographical, seating arrangements, floor plans, and others.
 
 In Power BI Desktop, after **Shape map visual** is enabled, select the **Shape map** icon from the **Visualizations** pane.
 
@@ -47,7 +47,7 @@ Take the following steps to create a **Shape map**:
 
    :::image type="content" source="media/desktop-shape-map/power-bi-shape-map-selections.png" alt-text="Screenshot of data fields selected to build a shape map.":::
 
-1. In the **Format** pane, expand **Map settings**, and change the **Map type**. In this example, we've selected Italy, and the rendering appears, as shown in the following image.
+1. In the **Format** pane, expand **Map settings**, and change the **Map type**. In this example, we select Italy.
 
    :::image type="content" source="media/desktop-shape-map/power-bi-italy-map.png" alt-text="Screenshot of a shape map of Italy.":::  
 
@@ -74,7 +74,7 @@ To use a **TopoJSON** map file, add a Shape map visual to your report. Under **M
 
 ### Sample custom map
 
-The *Offices of the United States Attorneys* release an annual fiscal report on their litigation and caseload data. We've converted some of their district data into .json files and added them to this sample PBIX.
+The *Offices of the United States Attorneys* release an annual fiscal report on their litigation and caseload data. We convert some of their district data into .json files and added them to this sample PBIX.
 
 [Custom shape map demo .PBIX file](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
@@ -82,7 +82,7 @@ If you'd like to experiment with custom maps, download this PBIX file and follow
 
 1. From Power BI Desktop, select **File** > **Open report**.
 
-2. Since states can be divided into multiple districts, we have to use a custom shape map for districts.  By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below uses a custom map named *2000_districts_extra_simplified_CONUS.json* file.
+2. Since states can be divided into multiple districts, we have to use a custom shape map for districts. By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below uses a custom map named *2000_districts_extra_simplified_CONUS.json* file.
 
     :::image type="content" source="media/desktop-shape-map/power-bi-custom-maps.png" alt-text="Screenshot of custom map dropdown to choose districts.":::
 
