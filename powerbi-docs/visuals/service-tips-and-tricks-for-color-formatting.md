@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: concept-article
-ms.date: 10/01/2025
+ms.date: 01/12/2026
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
@@ -112,7 +112,6 @@ You can also format the color of the visual using a measure or column that isn't
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png" alt-text="Screenshot of Column chart with multiple shades of blue.":::
 
-
 ## Undo in Power BI
 
 Like many other Microsoft services and software, Power BI provides an easy way to undo your last change. For example, let's say you change the color of a data point, or a series of data points, and you don't like the color when it appears in the visualization. You don't recall exactly which color it was before, but you know you want that color back.
@@ -125,6 +124,19 @@ In the **Format pane settings** or ellipsis (...) at the top, you can **Reset al
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png" alt-text="Screenshot of Formatting card showing Reset to default.":::
 
+## Color Picker Experience in Power BI
+
+Power BI report creators can customize colors in visuals with a theme color picker and custom color picker. We added more capabilities to this release:
+
+- A clear indicator for the currently selected theme color.
+- A simple way to reset colors to their default settings.
+
+   :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/theme-color-picker.jpg" alt-text="Screenshot of theme color picker user interface in Power BI.":::
+ 
+- A **Back** button to return from custom colors to theme colors.
+
+   :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/custom-color-picker.png" alt-text="Screenshot of custom color picker in Power BI.":::
+ 
 ## Give us your feedback
 
 Do you have a tip you want to share? Send it our way.
