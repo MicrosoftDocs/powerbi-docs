@@ -373,7 +373,7 @@ Use the following **Region keys** in this preview release to test **Shape map**.
 | `nl-ut` | `NL-UT` | `Utrecht` | `Utrecht` |
  | `nl-ov` | `NL-OV` | `Overijssel` | `Overijssel` |
 | `nl-nh` | `NL-NH` | `Noord-Holland` | `North Holland` |
- | `nl-nb` | `NL-NB` | `Noord-Brabant` | `North Brabrant` |
+ | `nl-nb` | `NL-NB` | `Noord-Brabant` | `North Brabant` |
 | `nl-li` | `NL-LI` | `Limburg` | `Limburg` |
  | `nl-gr` | `NL-GR` | `Groningen` | `Groningen` |
 | `nl-ge` | `NL-GE` | `Gelderland` | `Gelderland` |
