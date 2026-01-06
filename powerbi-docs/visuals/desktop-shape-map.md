@@ -22,7 +22,6 @@ Create a **Shape map** visual to compare regions on a map using color. Unlike th
 
 :::image type="content" source="media/desktop-shape-map/power-bi-shape-map.png" alt-text="Screenshot of a shape map example.":::
 
-<<<<<<< HEAD
 The **Shape map** visual can only be added to a report in Power BI Desktop. The visual shows in the report when published in the web or Power BI mobile app.
 
 Since it is in preview, it must be enabled before you can use it. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape map visual** checkbox. You'll need to restart Power BI Desktop after you make the selection.
@@ -32,19 +31,6 @@ Since it is in preview, it must be enabled before you can use it. To enable **Sh
 ## Create a Shape map
 
 You can test the **Shape map** control with the maps that ship with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use custom maps**. **Shape map** visuals are based on maps that you can find on the Internet, create yourself, or convert to the TopoJSON format. Examples of custom maps are: geographical, seating arrangements, floor plans, and others.
-=======
-The Shape map visual is available only in Power BI Desktop (not the service or mobile). If it’s still in preview in your version, enable it first (see Prerequisites).
-
-:::image type="content" source="media/desktop-shape-map/power-bi-preview-features.png" alt-text="Screenshot of preview features in the Options pane.":::
-
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI paid licenses or that the report is saved in Premium capacity.
-
-## Prerequisites
-
-- Power BI Desktop (current version)
-- A dataset with a geographic column (for example, state, region, or district names)
->>>>>>> 270f4917eeaa1d985fde7ab187ddf923137d4296
 
 ## Enable the Shape map visual (preview)
 
@@ -77,15 +63,11 @@ Power BI Desktop adds an empty Shape map visual to the report canvas.
 
    :::image type="content" source="media/desktop-shape-map/power-bi-italy-map.png" alt-text="Screenshot of a shape map of Italy.":::
 
-<<<<<<< HEAD
 1. In the **Format** pane, expand **Map settings**, and change the **Map type**. In this example, we select Italy.
 
    :::image type="content" source="media/desktop-shape-map/power-bi-italy-map.png" alt-text="Screenshot of a shape map of Italy.":::  
 
 1. To display the map keys of the currently selected map, select **View map type key**. In this example, we're using a map of Mexico and the Map keys displays the values being used to build the map.
-=======
-1. (Optional) Select **View map type key** to display the region keys used by the selected map.
->>>>>>> 270f4917eeaa1d985fde7ab187ddf923137d4296
 
    :::image type="content" source="media/desktop-shape-map/power-bi-map-keys.png" alt-text="Screenshot of map key values used to build the shape map.":::
 
@@ -125,14 +107,8 @@ The *Offices of the United States Attorneys* release an annual fiscal report on 
 
 If you'd like to experiment with custom maps, download this PBIX file and follow along.
 
-<<<<<<< HEAD
-1. From Power BI Desktop, select **File** > **Open report**.
-
-2. Since states can be divided into multiple districts, we have to use a custom shape map for districts. By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below uses a custom map named *2000_districts_extra_simplified_CONUS.json* file.
-=======
 1. From Power BI Desktop, select **File > Open report**.
 1. Since states can be divided into multiple districts, we have to use a custom shape map for districts. By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below uses a custom map named *2000_districts_extra_simplified_CONUS.json* file.
->>>>>>> 270f4917eeaa1d985fde7ab187ddf923137d4296
 
     :::image type="content" source="media/desktop-shape-map/power-bi-custom-maps.png" alt-text="Screenshot of custom map dropdown to choose districts.":::
 
@@ -237,33 +213,32 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 ### Canada: Provinces
 
 | ID | ISO | Name | Postal |
- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | ca-nu | CA-NU | Nunavut | NU |
- | ca-nt | CA-NT | Northwest Territories | NT |
+| ca-nt | CA-NT | Northwest Territories | NT |
 | ca-yt | CA-YT | Yukon | YT |
- | ca-sk | CA-SK | Saskatchewan | SK |
+| ca-sk | CA-SK | Saskatchewan | SK |
 | ca-qc | CA-QC | Quebec | QC |
- | ca-pe | CA-PE | Prince Edward Island | PE |
+| ca-pe | CA-PE | Prince Edward Island | PE |
 | ca-on | CA-ON | Ontario | ON |
- | ca-ns | CA-NS | Nova Scotia | NS |
+| ca-ns | CA-NS | Nova Scotia | NS |
 | ca-nl | CA-NL | Newfoundland and Labrador | NL |
- | ca-nb | CA-NB | New Brunswick | NB |
+| ca-nb | CA-NB | New Brunswick | NB |
 | ca-mb | CA-MB | Manitoba | MB |
- | ca-bc | CA-BC | British Columbia | BC |
+| ca-bc | CA-BC | British Columbia | BC |
 | ca-ab | CA-AB | Alberta | AB |
 
 ### France: Regions
 
-<<<<<<< HEAD
- | ID | Name | Name-en |
- | --- | --- | --- |
- | Auvergne-Rhone-Alpes | | |
- | Bourgogne-Franche-Comte | | |
- | Bretagne | Bretagne | Brittany |
- | Centre-Val de Loire | Centre-Val de Loire | Centre-Val de Loire |
- | Corse | Corse | Corsica |
- | Grand Est | | |
- | Guadeloupe | | |
+| ID | Name | Name-en |
+| --- | --- | --- |
+| Auvergne-Rhone-Alpes | | |
+| Bourgogne-Franche-Comte | | |
+| Bretagne | Bretagne | |
+| Centre-Val de Loire | Centre-Val de Loire | Centre-Val de Loire |
+| Corse | Corse | Corsica |
+| Grand Est | | |
+| Guadeloupe | | |
 | Hauts-de-France | | |
 | Ile-de-France | Île-de-France | Ile-de-France |
 | La Reunion | | |
@@ -274,26 +249,6 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 | Pays de la Loire | Pays de la Loire | Pays de la Loire |
 | Provence-Alpes-Cote d'Azur | Provence-Alpes-Côte d'Azur | Provence-Alpes-Cote d'Azur |
 | | | |
-=======
-| ID | Name | Name-en |
-| --- | --- | --- |
-| Auvergne-Rhone-Alpes |  |  |
-| Bourgogne-Franche-Comte |  |  |
-| Bretagne |Bretagne | |
-| Centre-Val de Loire |Centre-Val de Loire |Centre-Val de Loire |
-| Corse |Corse |Corsica |
-| Grand Est |  |  |
-| Guadeloupe | |   |
-| Hauts-de-France |  |  |
-| Ile-de-France |Île-de-France |Ile-de-France |
-| La Reunion |  |  |
-| Mayotte  |  |  |
-| Normandie |Normandie |  |
-| Nouvelle-Aquitaine |  |  |
-| Occitanie  |  |  |
-| Pays de la Loire |Pays de la Loire |Pays de la Loire |
-| Provence-Alpes-Cote d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Cote d'Azur |
->>>>>>> 270f4917eeaa1d985fde7ab187ddf923137d4296
 
 ### Germany: States
 
