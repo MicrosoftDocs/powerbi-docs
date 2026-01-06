@@ -1,9 +1,9 @@
 ---
-title: Overview of map visualizations in Power BI
+title: Overview of Map Visualizations in Power BI
 description: Learn about the different types of map visualizations available in Power BI.
-author: DataZoeMS
-ms.author: zoedouglas
-ms.reviewer: 'zoedouglas'
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: overview
@@ -26,28 +26,28 @@ Power BI provides multiple map visualization options to suit various analytical 
 **Azure maps** for Power BI visual provides enterprise-grade mapping capabilities powered by Microsoft's Azure Maps platform. It supports bubble, 3D column, heat map, filled, and reference layers. You can add pie chart overlays and use clustering.
 
 > [!NOTE]
-> The Azure map visual must be enabled by administrators in the **Power BI Admin Portal** under **Integration** settings.
+> Administrators must enable the Azure map visual in the **Power BI Admin Portal** under **Integration** settings.
 
 For detailed guidance, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context).
 
-### Shape maps (Preview)
+### Shape maps (preview)
 
 **Shape map** visuals compare regions using color-coding rather than showing precise locations. They support both standard geographic maps and custom TopoJSON maps for non-traditional visualizations like floor plans, seating arrangements, or custom territories.
 
 > [!NOTE]
-> Shape maps are currently in preview and only be added when editing a report in Power BI Desktop. They must be enabled in **Preview Features** before use.
+> Shape maps are currently in preview. You can add them only when editing a report in Power BI Desktop. You must enable them in **Preview Features** before use.
 
 For detailed instructions, see [Create Shape Map visualizations in Power BI Desktop (preview)](desktop-shape-map.md).
 
 ### Basic maps (Bing maps)
 
-Basic **map** visuals display data points as bubbles on a map, with bubble sizes representing measure values. They use Bing Maps integration for automatic geocoding and work with addresses, cities, states, countries, or longitude/latitude coordinates. 
+Basic **map** visuals display data points as bubbles on a map, with bubble sizes representing measure values. They use Bing Maps integration for automatic geocoding and work with addresses, cities, states, countries/regions, or longitude/latitude coordinates. 
 
 For detailed guidance, see [Tips and tricks for Power BI map visualizations](power-bi-map-tips-and-tricks.md).
 
-### Filled maps (Choropleth Bing maps)
+### Filled maps (choropleth Bing maps)
 
-**Filled map** visuals use shading, color intensity, or patterns to show how values differ across geographic regions. They excel at displaying regional variations and comparing aggregated data by country, state, county, or other geographic boundaries.
+**Filled map** visuals use shading, color intensity, or patterns to show how values differ across geographic regions. They excel at displaying regional variations and comparing aggregated data by country/region, state, county, or other geographic boundaries.
 
 For more information, see [Create and use filled maps (choropleth maps) in Power BI](power-bi-visualization-filled-maps-choropleths.md).
 
@@ -57,44 +57,44 @@ For more information, see [Create and use filled maps (choropleth maps) in Power
 
 For comprehensive information, see [Create ArcGIS maps in Power BI](power-bi-visualizations-arcgis.md).
 
-## Geocoding and Bing Maps integration
+## Geocoding and Bing maps integration
 
 Basic and filled Power BI map visualizations integrate with Bing Maps to provide automatic geocoding. Geocoding is the process of converting location descriptions (like addresses, cities, or postal codes) into geographic coordinates. When you add location data to a map visualization, Power BI uses Bing Maps to identify the correct locations.
 
-### What is sent to Bing Maps
+### What Power BI sends to Bing Maps
 
-When you create a map visualization, certain data is sent to Bing Maps for geocoding:
+When you create a map visualization, Power BI sends certain data to Bing Maps for geocoding:
 
-- **Basic maps**: Data in the **Location** bucket is sent unless latitude and longitude are provided
-- **Filled maps**: Data in **Location**, **Latitude**, or **Longitude** buckets is sent to Bing
+- **Basic maps**: Power BI sends data in the **Location** bucket unless you provide latitude and longitude values.
+- **Filled maps**: Power BI sends data in the **Location**, **Latitude**, or **Longitude** buckets to Bing Maps.
 
-To learn more about geocoding and how to improve its accuracy, see [Tips and tricks for Power BI map visualizations](power-bi-map-tips-and-tricks.md).
+For more information about geocoding and how to improve its accuracy, see [Tips and tricks for Power BI map visualizations](power-bi-map-tips-and-tricks.md).
 
 ### Privacy considerations
 
-You or your administrator may need to update firewall settings to allow access to Bing Maps geocoding services. For privacy information, see [Bing Maps privacy](https://go.microsoft.com/fwlink/?LinkID=248686).
+You or your administrator might need to update firewall settings to allow access to Bing Maps geocoding services. For privacy information, see [Bing Maps privacy](https://go.microsoft.com/fwlink/?LinkID=248686).
 
 ## Common features across map types
 
 All Power BI map visualizations share common capabilities:
 
-- **Interactivity**: Maps support cross-filtering and cross-highlighting with other visuals on your report page
-- **Tooltips**: Hover over locations to see detailed information
-- **Zoom and pan**: Navigate to specific areas of interest
-- **Formatting options**: Customize colors, labels, titles, and backgrounds
-- **Data categorization**: Power BI automatically categorizes geographic data fields
+- **Interactivity**: Maps support cross-filtering and cross-highlighting with other visuals on your report page.
+- **Tooltips**: Hover over locations to see detailed information.
+- **Zoom and pan**: Navigate to specific areas of interest.
+- **Formatting options**: Customize colors, labels, titles, and backgrounds.
+- **Data categorization**: Power BI automatically categorizes geographic data fields.
 
 ## Getting started with maps
 
 To create any map visualization:
 
-1. In Power BI Desktop or Power BI service, open or create a report
-2. Select the map visualization icon from the **Visualizations** pane
-3. Add geographic fields to the **Location** field well
-4. Add measures or values to display on the map
-5. Format and customize the map as needed
+1. In Power BI Desktop or Power BI service, open or create a report.
+1. Select the map visualization icon from the **Visualizations** pane.
+1. Add geographic fields to the **Location** field well.
+1. Add measures or values to display on the map.
+1. Format and customize the map as needed.
 
-For step-by-step tutorials on creating specific map types, refer to the individual articles linked in this overview.
+For step-by-step tutorials on creating specific map types, see the individual articles linked in this overview.
 
 ## Related content
 
