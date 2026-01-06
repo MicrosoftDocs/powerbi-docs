@@ -95,6 +95,16 @@ Here are a few tips for working with colors. The numbers in the following list a
 
 Don't like the change you just made? Use **CTRL+Z** to undo, as you’re used to doing.
 
+## Reset to default options
+Format pane reset to default quickly let’s report creators undo customizations made to a visual. You can reset default with finer control: 
+•	Reset to default for the whole visual.
+•	Reset to default each section of the format pane.
+:::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-visual&sectionresettodefault.png" alt-text="Screenshot showing Data color section with color palette open.":::
+
+•	Reset this group settings to default within each section.
+•	Reset group settings without impacting the rest of the section. 
+:::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-resettodefaultgroup.png" alt-text="Screenshot showing Data color section with color palette open.":::
+
 ## Apply a style to a table
 
 Some Power BI visualizations have a **Style** option. One click applies a full set of formatting options to your visualization, all at once. 
