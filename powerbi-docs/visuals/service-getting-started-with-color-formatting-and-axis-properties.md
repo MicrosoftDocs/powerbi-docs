@@ -94,7 +94,7 @@ Don't like the change you just made? Use **CTRL+Z** to undo, as you’re used to
 
 ## Reset to default options
 
-Format pane reset to default quickly let’s report creators undo customizations made to a visual. You can reset default with finer control: 
+Format pane reset to default quickly lets report creators undo customizations made to a visual. You can reset default with finer control: 
 
 - Reset to default for the whole visual.
 - Reset to default for each section of the format pane.
